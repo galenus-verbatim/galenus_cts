@@ -1,43 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<teiHeader xml:lang="eng">    
-		<fileDesc>
-			<titleStmt>
-				<title xml:lang="lat">Praesagitio omnino vera expertaque</title>
-				<author>Galen</author>
-				<editor>Karl Gottlob Kühn</editor>
-				<funder>Institut Universitaire de France</funder>
-				<respStmt>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Praesagitio omnino vera expertaque</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <respStmt>
           <resp>Published original versions of the electronic texts</resp>
-          <orgName>Galenus Verbatim, funded by the Institut Universitaire de France</orgName>
-          <persName>Natahalie Rouseau, Sorbonne Université</persName>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Project Manager (Sorbonne Université)</resp>
-          <persName>Natahalie Rouseau</persName>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+		  <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
-		<respStmt>
-          <resp>Lead Developer (ORTEOS)</resp>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital editor</resp>
+          <resp>Digital Editor, Galenus verbatim</resp>
           <persName>Cahal Taaffe</persName>
         </respStmt>
       </titleStmt>
       <publicationStmt>
-				<authority>Galenus Verbatim, funded by the Institut Universitaire de France</authority>
-				<publisher>Sorbonne Université</publisher>
-				<pubPlace>Paris</pubPlace>
-				<idno type="filename">tlg0530.tlg023.1st1K-grc1.xml</idno>
-				<availability>
-					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
-						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-				</availability>
-				<date>2022</date>
-			</publicationStmt>
-			<sourceDesc>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno>filenametlg0530.tlg023.1st1K-grc1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
 				<biblStruct>
 					<monogr>
 						<title xml:lang="lat">Claudii Galeni Opera Omnia</title>
@@ -52,27 +51,190 @@
 							<date>1830</date>
 						</imprint>
 					</monogr>
-					<ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé</ref>
+					<ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x00">BIU Santé, Medica</ref>
 				</biblStruct>
 			</sourceDesc>
-		</fileDesc>
-		<encodingDesc>
-			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
-				Architecture.</p>
-			  <refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-			</refsDecl>
-		</encodingDesc>
-		<profileDesc>
-			<langUsage>
-				<language ident="grc">Greek</language>
-				<language ident="lat">Latin</language>
-			</langUsage>
-		</profileDesc>
-	</teiHeader>
-	<text>
-		<body>
-		           
-        </body>
-    </text>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg023.1st1K-grc1">
+<pb n="512"/>
+<div type="textpart" subtype="book" n="1">
+
+
+
+
+
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>ΓΑΛΗΝΟΥ ΠΡΟ·ΓΝΩΣΙΣ ΠΕΗΕΙΡΑΜΕΝΗ ΚΑΙ ΠΑΝΑΛΗΘΗΣ.</head>
+
+
+
+<p rend="indent">Τὸν θέλοντα προγινώσκειν οὐ μόνον τήν
+<lb/>ἡμέραν τοῦ θανάτου, ἀλλὰ καὶ τὴν ὥραν σκοπεῖν χρή ἐν
+<lb/>τίνι μάλιστα καιρῷ τοῦ παροξυσμοῦ βαρύνοιτο μεγάλως ὁ
+<lb/>κάμνων. εἰ μὲν γὰρ κατὰ τήν εἰσβολήν αὐτοῦ καταψύχει,
+<lb/>τότε σφοδρῶς καὶ δυσεκθέρμαντος καὶ ἄχρους ἄχρι πλείστου
+<lb/>μένει καὶ μικρόσφυκτος γένοιτο καὶ κοιμηθῇ νωθρῶς καὶ
+<lb/>κωματώδης ἤ τι τοιοῦτον ἕτερον πάσχοι · τοῦτον ὑφορᾶσθαι
+<lb/>μάλιστα τὸν καιρὸν , εἰ καὶ οὗτος μέτριος εἴη. περὶ δὲ τήν
+<lb/>ἀκμὴν ἢν τε καταφερόμενον τὸν ἄρρωστον ἢ παραπαίοντα
+</p>
+<pb n="513"/>
+
+<p>ἢ ἀλύοντα βλέπῃς ἢ τοῦ πυρετοῦ τὸ μέγεθος οὐχ ύπομἐνοντα·
+<lb/>διακαιόμενόν τε σφοδρῶς καὶ σκοτοδινιῶντα καὶ
+<lb/>κεφαλαλγοῦντα καὶ καρδιώσσοντα ἤ τι τοιοῦτο, ἕτερον πάσχοντα,
+<lb/>τοῦτον ὑποπτεύειν μάλιστα τὸν καιρὸν, εἰ δὲ καὶ
+<lb/>τῆς ἀρχῆς τοδ παρο- <milestone unit="ed2page" n="896"/> ξυσμοῦ καὶ τῆς ἀκμῆς μετρίας
+<lb/>γινομένης. περὶ δὲ τὴν παρακμὴν, λιποψυχίας τε καὶ ἱδρῶτας
+<lb/>ἀνωμάλους ἢ ψυχροὺς ἢ περὶ κεφαλήν ἢ στέρνον ἐπιφέροιτο
+<lb/>καὶ τοὺς σφυγμοὺς ἀμυδροὺς καὶ μικροὺς ἐργάζοιτο
+<lb/>καὶ τὰ τούτοις ἐοικότερα, τοῦτον ὑφορᾶσθαι μάλιστα τὸν
+<lb/>καιρόν. καὶ μήν εἰ τοῦτο διορισθείη, οὐδὲν ἔτι χαλεπὸν
+<lb/>οὐδὲ τήν ἡμέραν εἰπεῖν τοῦ θανάτου. καὶ γὰρ εἰ τῆς δευτέρας
+<lb/>ἡμέρας, εἰ τύχῃ, τὸν σφοδρότερον παροξυσμὸν ἐνεγκοῦσης
+<lb/>ὑπὲρ τῆς πρώτης τε καὶ τρίτης καὶ πέμπτης, εἰς τήν
+<lb/>ἕκτην ἡμέραν ὁ θάνατος προδηλωθείη.</p>
+
+
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+
+<p rend="indent">Διὰ πέντε ἢ διὰ πρόσθεσιν ἐπιτηδείας ὕλης
+<lb/>ἢ διὰ κίνησιν ἢ διὰ στέγνωσιν ἢ διὰ σῆψιν ἢ διὰ προσομιλίαν
+<lb/>ἑτέρου θερμοῦ. καὶ διὰ μὲν πρόσθεσιν, ὡς ὅταν
+<lb/>προσενεχθῇ τῷ θερμήν ἔχοντι κρᾶσιν , οἷον πέπερι , νᾶπυ,
+</p>
+<pb n="514"/>
+
+<p>σκόροδον καὶ τὰ τούτοις ὅμοια · καὶ ἀναδοθῇ τούων ἢ
+<lb/>ποιότης ἐν τῇ καρδία καὶ ἐκπυρώσει τὸ ἐν αὐτῇ ἔμφυτον
+<lb/>θερμὸν καὶ ἐξάψει πυρετόν. διὰ δὲ κίνησιν διχῇ, ἢ γὰρ
+<lb/>ψυχικῶς ἢ σωματικῶς · καὶ ψυχικῶς μὲν ὡς ἐπὶ θυμῷ καὶ
+<lb/>φροντίδι, σωματικῶς δὲ ὡς ἐπὶ ἀμέτρῳ κόπῳ. διὰ δὲ
+<lb/>στέγνωσιν ὅταν διὰ γλισχρότητα ἢ διὰ παχύτητά τινα ξηρανθῶσι
+<lb/>καὶ ἐμφραχθῶσιν οἱ ἄδηλοι πόροι τοῦ σώματος ἢ
+<lb/>τὰ πέρατα τῶν ἀγγείων καὶ ἐπὶ τῇ διαπνευστίᾳ τοῦ βαθους
+<lb/>ἐξαφθῇ πυρετός. διὰ δὲ σῆψιν, ὡς ὅταν ἢ ὑποκειμένη καὶ
+<lb/>πλεονεκτοῦσα ὕλη σαπῇ ἐν τῷ βάθει, καὶ ἀναδοθῇ τῇ καρδίᾳ
+<lb/>καὶ ἀνάψῃ πυρετόν. διά δὲ προσομιλίαν ἑτέρου θερμοῦ,
+<lb/>ὡς ὅταν ἐν ἡλιοκαία ὑπερφλεχθείη ἡ κεφαλὴ καὶ μάλιστα
+<lb/>τὸ δικτυοειδὲς πλέγμα καὶ διὰ τῶν ἀρτηριῶν μεταδοθῇ τῇ
+<lb/>καρδίᾳ καὶ ἀνάψῃ πυρετόν.</p>
+
+
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+
+<p rend="indent">Σημεῖα δὲ εἰσβολῆς πυρετοῦ χάσμαι, φρῖκαι,
+<lb/>σκορδινισμοὶ , εἴλουν ἀποδιακλασμοὶ, ναυτίαι, καταφορὰ
+<lb/>ὕπνου, βηχῶν μικρὸν καὶ ὑπότραχυ, ἄκρων κατάψυξις καὶ
+</p>
+<pb n="515"/>
+
+<p>ταῦτα μὲν ἔξωθεν τὰ γνωρίσματα. ἀπὸ δὲ τῶν σφυγμῶν
+<lb/>ἔκ τε τῆς σμικρότητος καὶ τῆς ἀνωμαλίας διαγινώσκεται καλ
+<lb/>τὸ διαλεῖπον. καὶ ἐν μὲν τῇ εἰσβολῇ κατεπάγει μᾶλλον ἢ
+<lb/>συστολὴ τοῦ σφυγμοῦ κατά τινος ἀνωμαλίας καὶ σμικρότητος.
+<lb/>ἐν δὲ τῇ ἀναβάσει μοχθηροί πώς εἰσιν ἐπαυξομένης τῆς
+<lb/>διαστολῆς μέχρι τελείας ἀκμῆς, ἐπιτεινομένης δὲ τῆς θερμασίας
+<lb/>πρῶτον τὸ μέγεθος αὔξεται, εἶτα προσλαμβάνεται καὶ
+<lb/>τὸ τάχος. ὕλαν γὰρ ἱκανῶς ἐκπυρωθῇ ὁ πυρετὸς, μεγάλους
+<lb/>ἄμα καὶ ταχεῖς ἐργάζεται τούς σφυγμούς · ἢν δὲ ἐπὶ πλεῖον,
+<lb/>καὶ πυκνούς. καὶ ποίῳ τρόπῳ πρὸ τῶν πυρετῶν αἱ χάσμαι
+<lb/>προγίνονται; χασμῶνται πρὸ τῶν πυρετῶν οἱ νοσοῦντες καὶ
+<lb/>διακινουμένων καὶ βίᾳ διατεινόντων αὐτούς. ὡσπερ γὰρ ἐκ
+<lb/>τῶν λεβήτων ἀτμὸς ἀνέρχεται πολὺς ἐφεψημένου τοῦ ἐν αὐτοῖς
+<lb/>ὕδατος , οὕτω καὶ ἐκ τῶν ἔνδοθεν τοῦ σώματος ἀναβαινόμενος
+<lb/>ὁ ἀτμὸς διατείνει καὶ διασείει καὶ συστρέφει τοὺς
+<lb/>μύας τοῦ σώματος. εἰώθασι γὰρ τὰ νεῦρα χλιαινόμενα διΐστασθαι
+<lb/>καὶ οὕτως αἱ χάσμαι γίνονται.</p>
+
+<p><milestone unit="ed2page" n="897"/> </p>
+
+
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+
+<p>Ὅταν αἱ φλέβες πλησθῶσι καὶ πρι-
+</p>
+<pb n="516"/>
+
+<p>σθῶσιν ὑπὸ τῶν πνευμάτων, ἐξοιδαινόμεναι τούς πόνους
+<lb/>ἐπιφέρουσι περὶ τήν κεφαλὴν τῇ βία καὶ τάσει τῶν ἀναπεμπομένων
+<lb/>ἔνδον πνευμάτων. τὸν δὲ διὰ τῶν ἱδρώτων
+<lb/>μέλλοντα λυθήσεσθαι πυρετὸν γνωσόμεθα ἐκ τοῦ τὸ νόσημα
+<lb/>εἶναι διακαέστατον, οἷον ὁ προσαγορευόμενος καῦσος. χολῶδες
+<lb/>γὰρ τοῦτο δηλονότι τὸ νόσημα καὶ ὁπόταν μέλλει σφοδρῶς
+<lb/>κινεῖσθαι, ῥῖγος ἐργάζεται · καὶ εἰ μὲν οὑν ἐπισχεθείη
+<lb/>γαστήρ ἢ σύρα τῆς κρίσεως ἐγγύς οὔσης, ἐλπίζειν χρή ῥῖγος ·
+<lb/>εἰ δὲ καὶ ἀμφοτέρων ἢ ἐπίσχεσις γέγονε καὶ οὐ πάρεστιν
+<lb/>ἔμετος ἢ αἱμορραγία, ἱδρὼς ἐξ ἀνάγκης ἔσται πολὺς καὶ
+<lb/>μᾶλλον ἐπειδὰν οἱ κάμνοντες παραπέσωσιν ἐπιδιδόντος τοῦ
+<lb/>παροξυσμοῦ καὶ θερμότεροι ἐκ τούτου γινόμενοι καί τις ἀτμὸς
+<lb/>ἐκ τοῦ σώματος ἀνείη θερμὸς, οἷος οὐ πρόσθεν ἐγένετο
+<lb/>ἐπὶ τῶν νεωστὶ λελουμένων, οἵ τε σφυγμοὶ μεγάλοι καὶ
+<lb/>ὑψηλοὶ καὶ ταχεῖς καὶ εἰς διαστολὴν μᾶλλον ἐπιγινόμενοι
+<lb/>καὶ οἷον κυματώδεις. ὅ τε τῆς ἀρτηρίας χιτὼν μαλακός τε
+<lb/>καὶ δίυγρος φαίνεται, ἡ δὲ ἐπιφάνεια τοῦ παντὸς σώματος
+<lb/>κνησμώδης καὶ μαλθακή καὶ κατά τινας ὥρας ἐρυθραινο-
+</p>
+<pb n="517"/>
+
+<p>μὲνη· καὶ ταῦτα μὲν ἐν τῷ κριτικῷ παροξυσμῷ γιγνόμενα
+<lb/>πέψεως προηγησαμένης καὶ τῆς κριτικῆς ἡμέρας ἀγαθῆς
+<lb/>οὔσης σωτηρίων καὶ λυτικῶν ἱδρώτων ἔσται δηλωτικά · δῆλον
+<lb/>δ᾽ ὅτι θερμὸν εἶναι δεῖ συμμέτρως τὸν λυτικὸν ἱδρῶτα
+<lb/>καὶ δι᾽ ὄλου τοῦ σώματος συνιστάμενον καὶ πρὸς λόγον κουφίζοντα
+<lb/>καὶ εὐφορώτερον ἀποφαίνοντα τὸν ἄνθρωπον. οἱ
+<lb/>δὲ ψυχροὶ ἱδρῶτες σὺν μὲν ἀξεῖ πυρετῷ γινόμενοι θάνατον
+<lb/>σημαίνουσι, σὺν δὲ πρηυτέρῳ, μῆκος νόσου. ἱδρῶτες πυρεταινόντων
+<lb/>ἢν ἄρξωνται ἀγαθοὶ καὶ τριταῖοι καὶ πεμπταῖον
+<lb/>καὶ ἑβδομαῖοι καὶ ἐναταῖοι καὶ ἑνδεκαταῖοι καὶ τεσσαρεσκαιδεκαταῖοι
+<lb/>καὶ εἰκοστῇ ἑβδόμῃ καὶ τριακοστῇ τετάρτῃ
+<lb/>· οὗτοι γὰρ οἱ ἱδρῶτες νόσους κρίνουσιν, εἰ δὲ μὴ
+<lb/>οὕτω γιγνόμενοι, πόνον σημαίνουσι καὶ μῆκος νόσου καὶ
+<lb/>ὑποτροπιασμόν · καὶ ὄλου ἔνι τοῦ σώματος ἱδρὼς , ἐκεῖ
+<lb/>φράζε τήν νοῦσον · καὶ ὅκου ἔνι τοῦ σώματος ψυχρὸν ἢ
+<lb/>θερμὸν, ἐνταῦθα ἢ νοῦσος · καὶ ὅκου ἐν ὅλῳ τῶ σώματι
+<lb/>μεταβολή καὶ ἢν τὸ σῶμα ψύχηται ἢ αὖθις θερμαίνηται ἢ
+<lb/>χρῶμα ἕτερον ἐξ ἑτέρου γίγνηται, μῆκος νόσου σημαίνει.
+</p>
+<pb n="518"/>
+
+<p>ἱδρὼς ἐξ ὕπνου γιγνόμενος ἄνευ φανερῆς αἰτίης τὸ σῶμα
+<lb/>σημαίνει, ὅτι πλείονι τροφῇ χρῆται · ἢν δὲ τροφήν μὴ
+<lb/>λαμβάνοντι τοῦτο γίνηται, σημεῖον ὅτι κενώσεως δεῖται τὰ
+<lb/>σώματα. πυρέσσοντι ἱδρὼς ἐπιγενόμενος μηδὲ ἐκλείπων τὸν
+<lb/>πυρετὸν κακόν. μηκύνει γὰρ ἢ νόσος καὶ ὑγρασίαν πλείω
+<lb/>σημαίνει.</p>
+
+</div>
+
+
+</div></div></body>
+  </text>
 </TEI>
