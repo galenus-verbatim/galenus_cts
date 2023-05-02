@@ -1,5 +1,4 @@
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader xml:lang="eng">
     <fileDesc>
       <titleStmt>
@@ -46,13 +45,39 @@
               <publisher>Cnobloch</publisher>
               <pubPlace>Lipsiae</pubPlace>
               <biblScope unit="vol">19</biblScope>
-              <biblScope unit="ed1vol">4</biblScope>
-              <biblScope unit="ed2vol">5</biblScope>
               <biblScope unit="pp" from="158" to="181">158-181</biblScope>
               <date>1830</date>
+			  <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x00">BIU Santé, Medica</ref>
             </imprint>
           </monogr>
-          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x00">BIU Santé, Medica</ref>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Joachim Camerarius</editor>
+            <editor>Leonhart Fuchs</editor>
+            <editor>Hieronymus Gemusaeus</editor>
+            <imprint>              
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="406" to="410">406-410</biblScope>
+              <date>1538</date>
+			  <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+            </imprint>
+          </monogr>
+		  <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>René Chartier</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+			  <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="334" to="341">334-341</biblScope>
+              <date>1639</date>
+			  <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x05">BIU Santé, Medica</ref>
+            </imprint>
+          </monogr>
         </biblStruct>
       </sourceDesc>
     </fileDesc>
@@ -75,12 +100,8 @@
       <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg002.1st1K-grc1">
         <pb n="19.158"/>
         <div type="textpart" subtype="book" n="1">
-          <p>
-            <milestone unit="ed2page" n="334"/>
-            <milestone unit="ed1page" n="406"/>
-          </p>
           <div type="textpart" subtype="chapter" n="1">
-            <head>ΓΑΛΗΝΟΥ ΕΙ ΖΩΟΝ ΤΟ ΚΑΤΑ
+            <milestone unit="ed2page" n="5.334"/><milestone unit="ed1page" n="4.406"/><head>ΓΑΛΗΝΟΥ ΕΙ ΖΩΟΝ ΤΟ ΚΑΤΑ
 <lb/>ΓΑΣΤΡΟΣ.
 </head>
             <p>
@@ -106,11 +127,11 @@
 <lb n="11"/>χωρία, ὑμεῖς δ᾽ ἕξετε τὴν διὰ παντὸς εἰς .πάντα αἰώνιον
 <lb n="12"/>εὔνοιαν καὶ τὴν προς τὸ ομοφυλον ἀνεπίφθονον ὰρετήν.
 <lb n="13"/>ἀλλὰ γὰρ ὥσπερ περὶ σμικροῦ κόσμου τοῦ ἀνθρώπου μέλλοντες
-<lb n="14"/>λέγειν, τὴν ἀρχὴν ἀπὸ τοῦ <milestone unit="ed2page" n="335"/> μεγάλου ποιησὁμεθα
+<lb n="14"/>λέγειν, τὴν ἀρχὴν ἀπὸ τοῦ <milestone unit="ed2page" n="5.335"/> μεγάλου ποιησὁμεθα
 <lb n="15"/>, οὔπερ οἶον δάνεισμα καὶ μόρια ὑπάρχομεν. προκατιισκιυασθεἄτης
 <lb n="16"/>δὲ παρ᾽ ἡμῖν τῆς περὶ τουτου φύσεως, εὑἐηλοτέρα
 <lb n="17"/>η ἀνθρωπεία γενήσεται συστασις. περὶ αὐτοῦ
-<lb n="18"/>ἐὴ πρό- <milestone unit="ed1page" n="407"/> τερον τοῦ, ὅ τι ποτ᾽ ἐστὶν ὁ κόσμος ὁρισόμιθα. 
+<lb n="18"/>ἐὴ πρό- <milestone unit="ed1page" n="4.407"/> τερον τοῦ, ὅ τι ποτ᾽ ἐστὶν ὁ κόσμος ὁρισόμιθα. 
 <pb n="19.160"/>
 <lb n="1"/>συστησεται γὰρ ῥἢστα η ουσία τοῦ ὅλου ὅρου τὸ
 <lb n="2"/>πᾶν σημαναντος. προ δὲ τῆς ὑπαρξεως αὐτοῦ τί ἐστι ζῶον
@@ -164,7 +185,7 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="2">
-            <milestone unit="ed2page" n="356"/>
+            <milestone unit="ed2page" n="5.356"/>
             <p>
 <lb n="13"/>Ἀλλὰ · καὶ ὅτι ἦν ὁ κόσμος ζῶον
 <lb n="14"/>καὶ διὰ τοῦτο καὶ νῦν ἐστιν εἰρηκοτες ἐπὶ τὸν περὶ ἀνθρὡπου
@@ -227,7 +248,7 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="3">
-            <milestone unit="ed2page" n="537"/>
+            <milestone unit="ed2page" n="5.537"/>
             <p>
 <lb n="17"/>Ὡς μὲν οὖν ἀπεικότως τινὲς εἶπον
 <lb n="18"/>οὐ ζῶον τὸ καιὰ γαστρὸς ἐκ τῶν εἰρημένων τεκμαίρεσθαι. 
@@ -290,7 +311,7 @@
 <lb n="13"/>ἐγγινόμενον ἔχει. δῆλον ουν κἀν τουτῳ ως ἅμα τῇ του
 <lb n="14"/>σπέρματος εἰς τὴν μήτραν ἐξακοντίσει συγκατέσπειρεν ὁ
 <lb n="15"/>τῶν ὅτων δημιουργὸς καὶ τὴν ψυχὴν, ἴνα ,τῷ σώματι καὶ
-<lb n="16"/>τὴν διοικοῦσαν αὐτῷ δύναμιν ἔχῃ. <milestone unit="ed2page" n="338"/> ἢ γὰρ οὐκ ἴσμεν
+<lb n="16"/>τὴν διοικοῦσαν αὐτῷ δύναμιν ἔχῃ. <milestone unit="ed2page" n="5.338"/> ἢ γὰρ οὐκ ἴσμεν
 <lb n="17"/>τοὺς ἔξωθεν δημιουργοῦντας τινων οργανων κατασκευὴν
 <lb n="18"/>ποιουμένους πρός τινων ἐνεργειῶν πραξεις,· τρόπιν μὲν τον 
 <pb n="19.169"/>
@@ -357,7 +378,7 @@
 <lb n="4"/>ὰποστρέφεται, καὶ υπεραναβαίνει τὸν ἀέρα, καὶ πυρὸς
 <lb n="5"/>ἀνωτέρα γίνεται. καὶ τῆς οὐρανίου θεότητος τυγχάνει. καὶ
 <lb n="6"/>τὸν ὑπερουράνιον πολλακις βλέπει τοπον, συμπαραστατεῖ τῷ
-<lb n="7"/>τῶν ὅλων δεσποτῃ περίοδος τῶν ἄνω γίνεται. <milestone unit="ed2page" n="339"/> πολλάκις
+<lb n="7"/>τῶν ὅλων δεσποτῃ περίοδος τῶν ἄνω γίνεται. <milestone unit="ed2page" n="5.339"/> πολλάκις
 <lb n="8"/>τοῖς αὐτοῖς ὁμοιοειδέσι τυγχάνει, οἶδε κάν ἐν σώματι
 <lb n="9"/>γίνηται πόθεν ἐστὶ καὶ ὅθεν. καὶ ὅτι σύνεστι τοῖς ὅλοις ὁ
 <lb n="10"/>τῶν παντων παιηρ τουτοις τοῖς ὄμμασιν, ἐν οἶς ἀν καθιδρύσηιαι
@@ -375,7 +396,7 @@
 <lb n="3"/>μυας τε καὶ σκώληκας οἶον ἐν μήτρα τῇ ὕλη ὁρῶντες
 <lb n="4"/>γινόμενα ὀνομάζομεν ζῶα ἀποβλέποντες ἰλυσπώμενα,
 <lb n="5"/>κἀκεῖνα δὲ, οἶμαι; τῆς προνοούσης αὐτῶν δυνάμεως ἐπιστατούσης.
-<lb n="6"/>ἀμφισβητοῦμεν δὲ αὐτὴν περὶ τῶν <milestone unit="ed1page" n="409"/> ἐν μήτρα
+<lb n="6"/>ἀμφισβητοῦμεν δὲ αὐτὴν περὶ τῶν <milestone unit="ed1page" n="4.409"/> ἐν μήτρα
 <lb n="7"/>ζωουμένων, εἰ δεῖ σαφῶς ζῶον καλεῖν; καὶ ταῦτα κηρύττοντος
 <lb n="8"/>Ἱπποκράτους. ζωοῦται τὰ μὴ ζῶα ἐν τῶν ζώων
 <lb n="9"/>φύσιες παντων ἀδίδακτοι. δέον γὰρ εἰπεῖν, μὴ ζῶα, ἢ εἰπεῖν,
@@ -420,7 +441,7 @@
 <lb n="7"/>σκώληκες γίνονται η αφ ἵππων καὶ βοῶν οἱ σφῆκες καὶ
 <lb n="8"/>μέλιτται ῥαδιον ημῖν λέγειν, αλλ υπο τῆς φυὸεως απλῶς
 <lb n="9"/>γίνεται. οὐδὲ γὰρ τούς ὄρνεις πέτεσθαι διδάσκει τις, οὐδὲ
-<lb n="10"/>τό νοεῖν ἡμὰς ἢ ἀκοὑειν ἢ βλέπειν, <milestone unit="ed2page" n="340"/> ἀλλ᾽ ὅμως καὶ
+<lb n="10"/>τό νοεῖν ἡμὰς ἢ ἀκοὑειν ἢ βλέπειν, <milestone unit="ed2page" n="5.340"/> ἀλλ᾽ ὅμως καὶ
 <lb n="11"/>τούς ὄρνιθας ὁρῶμεν πεττομένους καὶ ἡμᾶς αὐτοὺς χωρὶς
 <lb n="12"/>μαθήσεως νοεῖν τε καὶ βλέπειν. ἀπόρρητος γάρ τις καὶ
 <lb n="13"/>κεκρυμμένη καὶ πολὺ τῆς ἡμετέρας διανοίας βυθιωτέρα ἡ
@@ -482,7 +503,7 @@
 <lb n="12"/>φύσει τὴν αἰτίαν προστιθέντες , τοῦ δ ευ ζῆν μετὰ τῆς
 <lb n="13"/>ψυχῆς αὐτοὶ τὴν προσβασιν αναδεξαμενοι νομοθετοῦσι. τοῦτο
 <lb n="14"/>γάρ εἰσιν οἱ νόμοι, κωλύειν μὲν τὰ κακὰ πράττεσθαι, φυλάττειν
-<lb n="15"/>δὲ τὰ ἤδη ὄντα καλὰ, <milestone unit="ed2page" n="341"/> ἢ τὰ μέλλοντα ἢ τὰ
+<lb n="15"/>δὲ τὰ ἤδη ὄντα καλὰ, <milestone unit="ed2page" n="5.341"/> ἢ τὰ μέλλοντα ἢ τὰ
 <lb n="16"/>παρόντα προσποιεῖν, τιθέμενον τοὺς νόμους δύο τοῖς μεγίστοις
 <lb n="17"/>ἀπεδείξαμεν εἶναι τὰ ἐν τῇ γαστρὶ ζῶα · ἐνὶ μἐν τῷ
 <lb n="18"/>προσθεῖναι τιμωρίαν τῷ αἰτίῳ τῆς ἒξαμβλὡσεως γινομένῳ, 
@@ -501,7 +522,7 @@
 <lb n="12"/>Κρησὶν ὁ κεὐς καὶ Λακεδαιμονίοις ὁ Πύθιος καὶ Ἀθηναίοις
 <lb n="13"/>ἡ Παλλάς. οἱ οὖν τούτων μαθηταὶ νομοθέται Λυκοῦργος
 <lb n="14"/>καὶ Σόλων βεβαία,ς ἡμῖν δι᾽ ὦν προεῖπον κεφαλοῦον
-<lb n="15"/>δύο <milestone unit="ed1page" n="110"/> τὴν ὑπὲρ τῶν ἐμβρύων αναμφισβήτητον
+<lb n="15"/>δύο <milestone unit="ed1page" n="4.110"/> τὴν ὑπὲρ τῶν ἐμβρύων αναμφισβήτητον
 <lb n="16"/>παρέσχον ὑπόθεσιν. εί γὰρ ὅταν μὴ ζῶα ην, οὐκ ἀν ἐκόλασαν
 <lb n="17"/>τοῖς νόμοις φανερῶς τιμωρησάμενοι τοὺς αἰτίους τῆς
 <lb n="18"/>ἐξαμβλώσεως , ἐπειδὴ δὲ ἔφησαν ζῶα εἶναι, τὴν τιμωρίαν 

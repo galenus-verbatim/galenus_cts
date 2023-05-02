@@ -1,5 +1,4 @@
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader xml:lang="eng">
     <fileDesc>
       <titleStmt>
@@ -46,13 +45,39 @@
               <publisher>Cnobloch</publisher>
               <pubPlace>Lipsiae</pubPlace>
               <biblScope unit="vol">19</biblScope>
-              <biblScope unit="ed1vol">4</biblScope>
-              <biblScope unit="ed2vol">8</biblScope>
               <biblScope unit="pp" from="574" to="601">574-601</biblScope>
               <date>1830</date>
+			  <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref>
             </imprint>
           </monogr>
-          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x00">BIU Santé, Medica</ref>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Joachim Camerarius</editor>
+            <editor>Leonhart Fuchs</editor>
+            <editor>Hieronymus Gemusaeus</editor>
+            <imprint>              
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="410" to="414">410-414</biblScope>
+              <date>1538</date>
+			  <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+            </imprint>
+          </monogr>
+		  <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>René Chartier</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+			  <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">8</biblScope>
+              <biblScope unit="pp" from="337" to="348">337-348</biblScope>
+              <date>1639</date>
+			  <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x08">BIU Santé, Medica</ref>
+            </imprint>
+          </monogr>
         </biblStruct>
       </sourceDesc>
     </fileDesc>
@@ -76,7 +101,7 @@
         <pb n="19.574"/>
         <div type="textpart" subtype="book" n="1">
           <p>
-            <milestone unit="ed2page" n="337"/>
+            <milestone unit="ed2page" n="8.337"/>
           </p>
           <div type="textpart" subtype="chapter" n="1">
             <head>ΓΑΛΗΝΩ ΠΡΟΣΓΡΑΦΟΛΙΕΝΟΝ
@@ -111,7 +136,7 @@
             <p>
 <lb n="9"/>Τὸ δὲ παχύ καὶ αὐτὸ παραπλησίως τῷ λεπτῶ
 <lb n="10"/>η ουρεῖται παχύ καὶ μένει παχυ · καθίσταται δὲ καὶ
-<lb n="11"/>γίνεται λεπτόν. <milestone unit="ed2page" n="338"/> καὶ δηλοῖ τὸ μὲν πρότερον ἄλιμαζειν,
+<lb n="11"/>γίνεται λεπτόν. <milestone unit="ed2page" n="8.338"/> καὶ δηλοῖ τὸ μὲν πρότερον ἄλιμαζειν,
 <lb n="12"/>τὸ δὲ δεύτερον τὴν τῶν παχέων χυμῶν ζύμωσιν, ἄρχεσθαι
 <lb n="13"/>δὲ την διακρισιν. καὶ αὗται μὲν αἱ τοῦ χύματος
 <lb n="14"/>ἐν συστάσει διαφοραί^ ἀλλ᾽ ἐπειδή τούτου ποιούμενοι τὴν
@@ -156,7 +181,7 @@
 <lb n="12"/>καὶ ἔμφραξιν, ώς ἐπὶ τοῖς φρενιτικοῖς ἐπιφαινόμενον ἐνδεἰκνυται.
 <lb n="13"/>καὶ ἐπὶ τῶν τεταρταίων πάλιν ὲν ταῖς ἀρχαῖς τοιοῦτον
 <lb n="14"/>οὐρούμενον ἔμφραξιν σημαίνει. τὸ γὰρ τῶν μελαγχολικῶν
-<lb n="15"/>τῇ παχύτητι τὰς ὁδοὺς σφῆνον, <milestone unit="ed1page" n="411"/> ὡσπερ διηθισμένον
+<lb n="15"/>τῇ παχύτητι τὰς ὁδοὺς σφῆνον, <milestone unit="ed1page" n="4.411"/> ὡσπερ διηθισμένον
 <lb n="16"/>τὸ σύρον, φαίνεται λεπτὸν καὶ λευκόν. ἕτερον
 <lb n="17"/>δὲ μέγιστον σημαίνει κακὸν καὶ τὸ τοιοῦτον ούρον. κάν γὰρ 
 <pb n="19.578"/>
@@ -230,7 +255,7 @@
 <lb n="8"/>διὰ τὸ ἐκκαθαίρεσθαι τὸν μελαγχολικὸν χυμόν. οὗτος
 <lb n="9"/>δὲ γεώδης τῇ οὐσίᾳ καὶ παχύς κατὰ σύστασιν. οὐκοῦν καὶ
 <lb n="10"/>τὰ οὔρα ποιεῖ παχέα. ὁμοίως δὲ καὶ τὰ ἐξ ὑπεροπτήσεως
-<lb n="11"/>αἵματος μέλανα γινό- <milestone unit="ed2page" n="340"/> μενα οὔρα παχέα τυγχάνει.
+<lb n="11"/>αἵματος μέλανα γινό- <milestone unit="ed2page" n="8.340"/> μενα οὔρα παχέα τυγχάνει.
 <lb n="12"/>εἰ γὰρ ὄπτησις ἀνικμᾶται τὴν ὑγρότητα τοῦ αἵματος, εὕδηλον
 <lb n="13"/>ώς παχύνει την σύστασιν. καὶ φανερὸν ὅτι καὶ τὰ οὐρα
 <lb n="14"/>παχέα γίνεται. ἢ γὰρ τοῦ χρὼματος μεταλαμβάνει καὶ
@@ -289,7 +314,7 @@
 <lb n="11"/>μή δύνασθαι διὰ παντὸς ὁμοτίμως πέττειν τήν ὕλην.
 </p>
             <p>
-<lb n="12"/>.<milestone unit="ed2page" n="341"/>
+<lb n="12"/>.<milestone unit="ed2page" n="8.341"/>
             </p>
           </div>
           <div type="textpart" subtype="chapter" n="16">
@@ -305,7 +330,7 @@
 <lb n="2"/>ἡμέρα , χεῖρον ὑπάρχει. τὸν αὐτὸν τρόπον καὶ τὰ διεσπασμένα
 <lb n="3"/>τῶν πρώτων χείρονα, εἵ γ᾽ ἐν μιᾳ πέψει διακοπήν
 <lb n="4"/>φυσεως δηλοῖ. διακόπτει δὲ τήν φύσιν πνεῦμα παρεμπεσον
-<lb n="5"/><milestone unit="ed1page" n="412"/> καὶ διασπᾂ τήν συνέχειαν τοῦ πεμπομένου χυμοῦ.
+<lb n="5"/><milestone unit="ed1page" n="4.412"/> καὶ διασπᾂ τήν συνέχειαν τοῦ πεμπομένου χυμοῦ.
 <lb n="6"/>ἐπεὶ οὑν ὑπεθέμεθα κατὰ φύσιν τὸ παρυφιστάμενον
 <lb n="7"/>ἔν τε χροιά καὶ ἐν τόπῳ, παρὰ φύσιν δὲ ἐν τῆ συστάσει,
 <lb n="8"/>δῆλον ὅτι τοῦ ταῦτ᾽ ἔχοντος οὕτως ἐν τῆ συστάσει ἢ ὁμαλοτης
@@ -353,7 +378,7 @@
 <lb n="1"/>τέψει λεπτυνθῇ τὸ πνεῦμα , ἀλλὰ τοῦ παρισταμένου ὄντος
 <lb n="2"/>χποκλυσθῇ διὰ παχύτητα, ὠθεῖ τοῦτο καὶ φέρει μετέωρον
 <lb n="3"/>τρὸς ἄκραν ἐπιφάνειαν καὶ καλεῖται νεφέλη. η πρὸς μέσην
-<lb n="4"/>χώραν <milestone unit="ed2page" n="342"/> καὶ καλεῖται ἐναιὼρημα. ἢ οὐδ᾽ ὅλως ἐστὶ
+<lb n="4"/>χώραν <milestone unit="ed2page" n="8.342"/> καὶ καλεῖται ἐναιὼρημα. ἢ οὐδ᾽ ὅλως ἐστὶ
 <lb n="5"/>τνεῦμα καὶ τῷ βάθει φαίνεται κάτω καὶ όνομάζεται ὑπόΙτασις.
 <lb n="6"/>περὶ μὲν ἐναιωρήματος εἴρηται τοσαῦτα.
 </p>
@@ -418,7 +443,7 @@
 <lb n="2"/>τήν σύγκρισιν.
 </p>
             <p>
-<lb n="3"/><milestone unit="ed2page" n="343"/>
+<lb n="3"/><milestone unit="ed2page" n="8.343"/>
             </p>
           </div>
           <div type="textpart" subtype="chapter" n="23">
@@ -449,7 +474,7 @@
 <lb n="3"/>διαδίδοσθαι αὐτήν ἀπὸ τῶνδε τῶν φλεβῶν ὑπὸ τὰ συνέγγυς
 <lb n="4"/>κἀκεῖθεν ὑπὸ τὰ πλησίον καὶ μετὰ χρόνον ὑπὸ τοὺς νεφροὺς
 <lb n="5"/>καὶ τήν κύστιν εὔδηλον ὅτι μετὰ πολύν ἐκκρίνεται
-<lb n="6"/>χρόνον. ἐπὶ δὲ τῶν <milestone unit="ed1page" n="413"/> νεφρῶν διὰ τὸ συνέγγυς ταῖς
+<lb n="6"/>χρόνον. ἐπὶ δὲ τῶν <milestone unit="ed1page" n="4.413"/> νεφρῶν διὰ τὸ συνέγγυς ταῖς
 <lb n="7"/>διεξόδοις ταχέως ἐκκρίνεται, τὸ γὰρ ἀθρόη παρὰ τῷ Ἱπποκράτει
 <lb n="8"/>νῦν ἐπὶ τοῦ ταχέως εἴρηται. καὶ περὶ μὲν ἐλαιωδῶν
 <lb n="9"/>οὕρων ἱκανῶς διώρισται.
@@ -483,7 +508,7 @@
           </div>
           <div type="textpart" subtype="chapter" n="27">
             <p>
-<lb n="10"/><milestone unit="ed2page" n="344"/>Ὅταν δὲ ὁ πυρετὸς ἐν τῷ βάθει
+<lb n="10"/><milestone unit="ed2page" n="8.344"/>Ὅταν δὲ ὁ πυρετὸς ἐν τῷ βάθει
 <lb n="11"/>τῶν ἀγγείων καταδῇ, γίνονται πιτυρώδεις αἱ ὑποστάσεις,
 <lb n="12"/>στενωτεραι μὲν τῶν πεταλωδῶν, ἀλλὰ παχύτεραι. καὶ τὰ
 <lb n="13"/>τοιαῦτα δὲ παλτν τῆς κυστεως σημαντικά. ἀλλὰ καὶ τοῖς
@@ -535,7 +560,7 @@
 <lb n="6"/>ἢ γὰρ λεπτότης ἔνδειαν ὕλης σημαίνει, πῶς ὑπὸ τούτων
 <lb n="7"/>ἔχομεν ὑποθέσθαι γινομένην ὑπόστασιν; ἀλλ᾽ οὐδ ᾽ ἀν ὠχρὸν
 <lb n="8"/>γεύηται ἢ πυρρὸν ἢ ξανθὸν, μένον δὲ λεπτὸν ὑφίσταταί τε.
-<lb n="9"/><milestone unit="ed2page" n="345"/> ἐπὶ τούτων γὰρ ἡ φύσις ἀποροῦσα ὕλης εἰς χρῶμα
+<lb n="9"/><milestone unit="ed2page" n="8.345"/> ἐπὶ τούτων γὰρ ἡ φύσις ἀποροῦσα ὕλης εἰς χρῶμα
 <lb n="10"/>μεταβάλλει τὸ οὑρον, ῶστε θέλοντας ἐργάσασθαι συμπλοκἀς
 <lb n="11"/>ὁμοῦ τε τοῦ χυματος καὶ τοῦ παρυφισταμένου, τὸ λεπτὸν
 <lb n="12"/>ἐκβαλλωμεν καὶ ὑποθοίμεθα τὸ παχύ.
@@ -599,7 +624,7 @@
           </div>
           <div type="textpart" subtype="chapter" n="37">
             <p>
-<lb n="12"/><milestone unit="ed2page" n="346"/>Πελιδναὶ καὶ μέλαιναι καὶ ζοφῶδεις
+<lb n="12"/><milestone unit="ed2page" n="8.346"/>Πελιδναὶ καὶ μέλαιναι καὶ ζοφῶδεις
 <lb n="13"/>, ποικίλαι, διεσπασμέναι, κριμνώδεις, δίαιμοι, πυρετὼδἑις
 <lb n="14"/>καὶ χολεραῆ φλεγματώδεις καὶ δυσώδεις. τὰ δὲ ἀνυπόστατα
 <lb n="15"/>οὔρα πονηρὰ πάντως. καὶ ταῦτα μὲν τὰ εἴδη
@@ -653,7 +678,7 @@
 <lb n="18"/>ἄπεπτον ἐν τῷ βάθει πνεῦμα πρὸς τὴν ἄνω ἐπιφάνειαν τοῦ 
 <pb n="19.597"/>
 <lb n="1"/>χύματος φἔμει τήν ὑπόστασιν καὶ ποιεῖ τήν καλουμετην νεφέλην.
-<lb n="2"/><milestone unit="ed2page" n="347"/> ἒξύ ὅσον οὔν ἰσχύει τὸ πνεῦμα καὶ μερίζει καὶ
+<lb n="2"/><milestone unit="ed2page" n="8.347"/> ἒξύ ὅσον οὔν ἰσχύει τὸ πνεῦμα καὶ μερίζει καὶ
 <lb n="3"/>μετεωρίζει την υποστασιν, ἐπὶ τοσοῦτον ἀπεπτότερον γίνεται
 <lb n="4"/>το σῦρον. ἐπὶ δὲ τῶν ἀκριβῶν τριταίων καὶ τῶν ἐφημέρων
 <lb n="5"/>πυρετῶν η νεφὲλη μόνη ἢ ἐναιώρημα πολλάκις ἤρκεσε πρὸς
@@ -713,7 +738,7 @@
             <p>
 <lb n="7"/>Ἄπεψίαν σημαίνει, οὐ θάνατον, ἀλλὰ χρόνου
 <lb n="8"/>δεῖται εἰς πέψιν. ἔστι δὲ ἐξ αἵματος ἰχωροειδοῦς μή
-<lb n="9"/>ποτε λείαν πέψιν <milestone unit="ed2page" n="348"/> λαβόντος μηδὲ τήν ἰδίαν χροιὰν
+<lb n="9"/>ποτε λείαν πέψιν <milestone unit="ed2page" n="8.348"/> λαβόντος μηδὲ τήν ἰδίαν χροιὰν
 <lb n="10"/>καὶ διὰ τοῦτο χρονιώτερον σημαίνει τὸ νόσημα. ἐπὶ δὲ
 <lb n="11"/>των συνεχῶν πυρετῶν ἐπὶ πλήθει αἵματος συνιστάμενον ἐκκρίνεται
 <lb n="12"/>σῦρον ἐρυθρὸν καὶ παχυ. δηλονότι τοιοῦτόν ἐστι
@@ -721,7 +746,7 @@
 <lb n="14"/>παρυφιστάμενον ἄπτεται.
 </p>
             <p>
-<lb n="15"/><milestone unit="ed1page" n="144"/>
+<lb n="15"/><milestone unit="ed1page" n="4.414"/>
             </p>
           </div>
           <div type="textpart" subtype="chapter" n="44">
