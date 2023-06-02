@@ -30,9 +30,9 @@ This script suppose normalized <lb/>
     use="generate-id(preceding::tei:pb[1])"/>
   
   <!-- First copy all -->
-  <xsl:template match="node()|@*" mode="lb">
+  <xsl:template match="node()|@*">
     <xsl:copy>
-      <xsl:apply-templates select="node()|@*" mode="lb"/>
+      <xsl:apply-templates select="node()|@*"/>
     </xsl:copy>
   </xsl:template>
 
@@ -53,12 +53,12 @@ This script suppose normalized <lb/>
     </xsl:variable>
     <xsl:text>    </xsl:text>
     <xsl:copy>
+      <xsl:copy-of select="@*"/>
       <xsl:if test="string(number($n)) != 'NaN'">
         <xsl:attribute name="n">
           <xsl:value-of select="$n"/>
         </xsl:attribute>
       </xsl:if>
-      <xsl:copy-of select="@*"/>
       <xsl:apply-templates select="node()"/>
     </xsl:copy>
   </xsl:template>
