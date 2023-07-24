@@ -31,7 +31,7 @@ Specific Galenus, section numerotation
     <xsl:copy>
       <xsl:copy-of select="@*"/>
       <xsl:attribute name="n">
-        <xsl:number/>
+        <xsl:number count="tei:div[@n = '']"/>
       </xsl:attribute>
       <xsl:apply-templates select="node()"/>
     </xsl:copy>
