@@ -19,14 +19,14 @@ This script suppose normalized <lb/>
   xmlns:ext="http://exslt.org/common" 
   extension-element-prefixes="ext"
 >
-  <xsl:output encoding="UTF-8" method="xml" indent="yes" omit-xml-declaration="no"/>
+  <xsl:output encoding="UTF-8" method="xml" indent="no" omit-xml-declaration="no"/>
   <!--
   <xsl:strip-space elements="tei:div,tei:head,tei:l,tei:p,tei:quote "/>
   DO NOT <xsl:strip-space elements="*"/>, lose spaces between inlines
   -->
   <xsl:variable name="lf" select="'&#10;'"/> 
   <!-- A handle on each line breaks by its page to count lines -->
-  <xsl:key name="line-by-page" match="tei:list[@rend='row'] | tei:l | tei:lb"
+  <xsl:key name="line-by-page" match="tei:list[@rend='row'] | tei:l | tei:lb | tei:head"
     use="generate-id(preceding::tei:pb[1])"/>
   
   <!-- First copy all -->
@@ -41,7 +41,7 @@ This script suppose normalized <lb/>
   </xsl:template>
   
   <!-- numbering lines -->
-  <xsl:template match="tei:lb | tei:l | tei:list">
+  <xsl:template match="tei:head | tei:lb | tei:l | tei:list">
     <xsl:variable name="id" select="generate-id(.)"/>
     <xsl:variable name="pb" select="generate-id(preceding::tei:pb[1])"/>
     <xsl:variable name="n">
@@ -51,14 +51,11 @@ This script suppose normalized <lb/>
         </xsl:if>
       </xsl:for-each>
     </xsl:variable>
-    <xsl:text>    </xsl:text>
     <xsl:copy>
       <xsl:copy-of select="@*"/>
-      <xsl:if test="string(number($n)) != 'NaN'">
-        <xsl:attribute name="n">
-          <xsl:value-of select="$n"/>
-        </xsl:attribute>
-      </xsl:if>
+      <xsl:attribute name="n">
+        <xsl:value-of select="$n"/>
+      </xsl:attribute>
       <xsl:apply-templates select="node()"/>
     </xsl:copy>
   </xsl:template>
