@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 Build::init();
-Build::id();
-// echo Build::toc();
+// Build::id();
+Build::toc();
 
 
 class Build
@@ -37,15 +37,17 @@ class Build
         self::$dom->load(__DIR__ . '/galenus_toc.xsl');
         self::$trans->importStyleSheet(self::$dom);
 
-        echo "<h1>Galenus Verbatim, tabula<h1>\n";
+        echo "<article><h1>Galenus Verbatim, tabula</h1>\n";
         self::scan(function($file){
-            $pos = strlen(__DIR__);
+            $pos = strlen(dirname(__DIR__));
             $path = str_replace('\\', '/', substr($file->getPathname(), $pos + 1)) ;
             self::$trans->setParameter("", "path", $path);
+            self::$trans->setParameter("", "name", pathinfo($file->getFilename(), PATHINFO_FILENAME));
             self::$dom->load($file->getPathname());
             // echo $path . "\n";
-            echo  self::$trans->transformToXml(self::$dom);
+            echo self::$trans->transformToXml(self::$dom);
         });
+        echo "</article>";
     }
     public static function scan($callback)
     {
