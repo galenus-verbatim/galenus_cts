@@ -1,12 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
-/* ?
-$teinte = dirname(__DIR__) . '/teinte/';
-include_once($teinte . 'php/autoload.php');
-*/
-
 echo Read::scan();
 
 
