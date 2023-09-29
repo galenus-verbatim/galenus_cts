@@ -1,5 +1,61 @@
 # galenus_cts
 
+## [lat]
+
+| CTS     |
+| ------: |
+|[urn:cts:greekLit:tlg0057.tlg002.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg002/tlg0057.tlg002.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg010.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg010/tlg0057.tlg010.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg011.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg011/tlg0057.tlg011.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg017.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg017/tlg0057.tlg017.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg018.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg018/tlg0057.tlg018.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg021.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg021/tlg0057.tlg021.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg025.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg025/tlg0057.tlg025.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg028.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg028/tlg0057.tlg028.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg032.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg032/tlg0057.tlg032.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg036.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg036/tlg0057.tlg036.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg037.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg037/tlg0057.tlg037.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg044.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg044/tlg0057.tlg044.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg045.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg045/tlg0057.tlg045.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg052.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg052/tlg0057.tlg052.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg056.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg056/tlg0057.tlg056.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg057.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg057/tlg0057.tlg057.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg060.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg060/tlg0057.tlg060.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg061.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg061/tlg0057.tlg061.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg062.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg062/tlg0057.tlg062.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg064.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg064/tlg0057.tlg064.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg065.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg065/tlg0057.tlg065.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg066.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg066/tlg0057.tlg066.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg072.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg072/tlg0057.tlg072.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg075.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg075/tlg0057.tlg075.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg076.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg076/tlg0057.tlg076.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg077.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg077/tlg0057.tlg077.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg078.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg078/tlg0057.tlg078.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg079.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg079/tlg0057.tlg079.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg083.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg083/tlg0057.tlg083.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg085.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg085/tlg0057.tlg085.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg086.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg086/tlg0057.tlg086.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg087.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg087/tlg0057.tlg087.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg088.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg088/tlg0057.tlg088.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg089.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg089/tlg0057.tlg089.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg090.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg090/tlg0057.tlg090.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg091.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg091/tlg0057.tlg091.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg092.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg092/tlg0057.tlg092.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg095.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg095/tlg0057.tlg095.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg096.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg096/tlg0057.tlg096.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg099.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg099/tlg0057.tlg099.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg100.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg100/tlg0057.tlg100.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg101.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg101/tlg0057.tlg101.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0057.tlg106.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg106/tlg0057.tlg106.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0530.tlg005.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0530/tlg005/tlg0530.tlg005.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0530.tlg012.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0530/tlg012/tlg0530.tlg012.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0530.tlg022.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0530/tlg022/tlg0530.tlg022.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0530.tlg029.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0530/tlg029/tlg0530.tlg029.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0530.tlg041.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0530/tlg041/tlg0530.tlg041.verbatim-lat1.xml)|
+|[urn:cts:greekLit:tlg0530.tlg043.verbatim-lat1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0530/tlg043/tlg0530.tlg043.verbatim-lat1.xml)|
+
+## [grc]
+
 | N° | CTS     |
 | -: | ------: |
 |1.|[urn:cts:greekLit:tlg0057.tlg001.1st1K-grc1](https://galenus-verbatim.github.io/galenus_cts/data/tlg0057/tlg001/tlg0057.tlg001.1st1K-grc1.xml)|

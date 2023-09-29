@@ -1,0 +1,2494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Introductio seu medicus</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg012.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Pseudo-Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">14</biblScope>
+              <biblScope unit="pp" from="674" to="797">674-797</biblScope>
+              <date>1827</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x14">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="372" to="390">372-390</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="360" to="399">360-399</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x02">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg012.verbatim-lat1">
+<pb n="14.674"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="14.674"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENO ASCRIPTA INTRODUCTIO
+<lb/>SEU MEDICUS.</head>
+
+
+<p rend="indent">Quomodo inventa sit medicina.] Inventiones
+<lb/>artium Graeci vel deorum filiis vel quibusdam
+<lb/>eorum propinquis, quibus dii artem primi communicaverunt
+<lb/>omnem, referunt acceptas; hac igitur ratione medicluant
+<lb/>primum Aefculapium ab Apolline patre didicisse
+<lb/>et hominibus tradidisse dicunt et ideo primus ejus videtur
+<lb/>inventor; porro ante illum nondum inter .Immines erat
+<lb/>medimna, fed veteres medicamentorum et herbarum experientiam
+<pb n="14.675"/>
+<lb/>quandam habuere, qualem apud Graecos Cl. iron
+<lb/>Centaurus et ab eo heroes eruditi noverant, quae
+<lb/>Aristeo, Melampodi et Polyeido adscribuntur. Apud Aegyptios
+<lb/>sane praeter herbas aliam quoque medicamentorum
+<lb/>rationem in usu fuisse Humerus hunc in modum
+<lb/>testatur :</p>
+<p>.Fertilis Aegyptus rerum , medicamina mixta,
+<lb/>optima multa, simul deterrima plurima, gignit.</p>
+<p>Porro ex cadaverum dissectione,. quam in condiendis iis
+<lb/>habere moris erat , multa etiam , quae manu administrantur,
+<lb/>apud primos medicos inventa esse videntur. Qnaedam
+<lb/>dicuntur ex casu observata fuisse, ut suffusus pungere,
+<lb/>inde quod capra quaepiam ex suffusione male habens,
+<lb/>junco aculeato in oculum impacto, vitum receperit. Quin
+<lb/>et clysteria usum ab ibi profectum esse scribunt. Haec
+<lb/>enim colli cute tanquam clysteriis .utre marina Nilique
+<lb/>aqua impleta, rostro eam sibi ipsi per anum indit. Scribit
+<lb/>etiam Herodotus historicus quondam aegris per compita
+<pb n="14.676"/>
+<lb/>expositis , illos qui iisdem aliquando morbis laboraverant,
+<lb/>referre solitos quibus. unusquisque usus sanitatem recuperasset:
+<lb/>atque hoc modo. ex multorum usu ac experimentis
+<lb/>rem medicam conflatam esse. Sed haec quidem
+<lb/>experientia ratione vacua nondumqtie rationalis fuit. Caeterum
+<lb/>perfectam medicinam es omnibus numeris suis abfolutam
+<lb/>nimirum divinam aio, Aesculapius fotus invenit,
+<lb/>illam vero quae inter homines vertatur, hujus successores
+<lb/>Asclepiadae posteris acceptum tradiderunt, maxime Hippocrates,
+<lb/>qui omnibus facile praecelluit primusque perfeetam
+<lb/>apud Graecos. medicinam in lucem protulit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">[ Quae medicinae principia. ] Principia
+<lb/>medicinae tria funi, unum inventionis, alterum constitutionis
+<lb/>, tertium interpretationis. Inventionis igitur medicinae,
+<lb/>ut simpliciter dicam, vetustissimum plane citraque
+<lb/>rationem principium experientia est, quemadmodum apud
+<lb/>Aegyptios et reliquos omnes barbaros. Redigendi vero in
+<lb/>artis constitutionem, sicut Afclepiadarum medicinam, ratio
+<pb n="14.677"/>
+<lb/>et experientia. Interpretationis, ut scribit Athenaeus, vel
+<lb/>traditionis, quemadmodum quidam dicunt, initium naturatis
+<lb/>est speculatio. Enimvero simpliciter et Hippocrates^
+<lb/>dixit, Medicinae rationis initium primum natura est; nam
+<lb/>a naturae inspectione dogmatici auspicantur,. quoniam ex
+<lb/>iis , quae secundum naturam fiant et illa quae contra ha- .
+<lb/>bent, possunt cognoscere, at fine naturalium cognitione
+<lb/>illa, quae a naturali habitu recedunt, scire nemo potest.
+<lb/>Quin etiam in curando naturae speculationem finaliter requirent;
+<lb/>quandoquidem ex naturali admovendorum auxiliorum
+<lb/>potentia, quae cuilibet morbo idonea sunt, accipiunt.
+<lb/>Qui vero ex aliis tectis naturae contemplationem
+<lb/>aspernantur, utrique a quibus praesidia afferendi habitum
+<lb/>finxere, incipiunt. Methodici ex communitatum indicatione,
+<lb/>empirici ex observatione experimentali. Qua enim
+<lb/>ratione dogmaticis medicae rationis natura, eadem empiricis
+<lb/>experientia plerumque et fere semper in iisdem et
+<lb/>pari modo contingens principium existit. Ab hac fiquidem
+<lb/>historiam quoque suam exordiuntur et secundum hanc
+<pb n="14.678"/>
+<lb/>ah alio ad aliud simile transeunt. Sed metbodicis evrdentinm
+<lb/>similitudinis inspectio . vel communitatum appareotium
+<lb/>cognitio principium dicitur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">[ Quot saetae medicorum, quaeque earum
+<lb/>notae,] Sectae medicorum tres sunt, rationalis, empirica
+<lb/>et methodica. Rationalis naturae rationem praebet, morhorum
+<lb/>causas inquirit et signis ad illarum inventionem
+<lb/>utitur, curationem capit a contrario, prout causae exigunt.
+<lb/>Nam contrariorum contraria sunt remedia. Quatuor
+<lb/>ergo sunt, quae rationalem sectam designant, naturae inspretio,
+<lb/>causarum ratio ac signorum aestimatio, et quartum
+<lb/>, nempe quod causae ipsis curationem dictant. Empirica
+<lb/>ad assidentium accidentium concursus, quae aegris
+<lb/>aiiunt, . respicit et convenientem accidentibus curationem
+<lb/>observat, idque nec morbo cognito, nec caula inquisita.
+<lb/>Contenta est autem observatione in accidentibus , per eorum
+<lb/>quae admoventur experientiam facta et historia prius
+<lb/>expertorum utitur: tum a compertis ad incomperta, sed
+<pb n="14.679"/>
+<lb/>similia fecundum apparentem speciem transit. Quae enim
+<lb/>ipfimet usu ac experientia in multis et saepissime ac femper
+<lb/>in iisdem et pari modo experti tuus , aut quae cafu
+<lb/>quopiam observarunt, eaque femper atque eodem modo
+<lb/>habentia, haec- confidenter usurpant, non adeo c urio fe facultates
+<lb/>ex eorum qualitatibus disquirentes. Credunt et
+<lb/>vetustissimis, qui rerum per experimenta sibi observatarum
+<lb/>historiam, quam vocant, memoriae prodiderunt. Utuntur
+<lb/>etiam a simili transitu ad ea, quae nondum explorarunt;
+<lb/>quum similia speciei, quae ad manum est, apparent, ut
+<lb/>malva, blitum., beta et lapathum. Itidem in cerealibus;
+<lb/>ut alica et orysa. Rursus in arborum fructibus, ut pyrum
+<lb/>et malum cotoneum. Notant igitur empiricam haeresim
+<lb/>est concursus symptomatum, non ad morbum, neque ad
+<lb/>cautas , respectus : deinde in concursibus medicaminum
+<lb/>congruentium per usum observatio: tertio, expertorum
+<lb/>ante historia: quarto a simili transitus. Methodica communitatibus
+<pb n="14.680"/>
+<lb/>et similis speculationi adhaeret, omnes enim
+<lb/>particulares affectus ad generales duos reducunt, astrictum
+<lb/>et fluentem, quas communitates vocant. Cognoscunt eas
+<lb/>per obortas circa corpus affectiones in utroque evidenter
+<lb/>conspicuas. Quare notas non desiderant, exempli gratia
+<lb/>astrictum inde oriri, . quod totum corpus dentatum sic et
+<lb/>profluvium ipsius .sistatur, omnisque evidens excretio impediatur;
+<lb/>fluentem vero lude, quod summa corporis cutis
+<lb/>rara evafierit et cujusque corporis partis excretiones fensibiles
+<lb/>intentae sint. Duplicem igitur curationis speciem
+<lb/>generales duo corporis morbi ipsis indicant; nempe si corpus
+<lb/>astrictum est, laxandum esse : fi profluvio laborat,
+<lb/>comprimendum: si vitium mixtum habet, occurrendum ei
+<lb/>quod urget. Caeterum communitates omnes nominant evi-.
+<lb/>dentes : harum autem alias passivas, ut estrictum et fluens:
+<lb/>alias curativae, ut resolvere et tenere: quasdam tempora.les,
+<lb/>initium, incrementum, vigorem seu statum et incli-</p>
+<p rend="indent">natloneun Porro .medicinae, quae manu medetur communitates,
+<pb n="14.681"/>
+<lb/>in ejus ablatione, quod alienum est, consistunt.
+<lb/>Duplex autem alienum est, vel extrinsecus, vel in corpure.
+<lb/>Quod extrinsecus, simplex quidem: illius vero quod
+<lb/>in corpore est, tres numerantur species. Atqui extrinsecus,
+<lb/>ut spiculum, telum, quodcunque aliud id genus existit
+<lb/>perlectam eductionem ostendit. Eorum quae in corpore
+<lb/>funi, aliud loco alienum, ut suffusio, laxatio et fractura,
+<lb/>quae transpofitionem vel restitutionem in proprium locum
+<lb/>indicant. Aliud magnitudine, ut abscessus omnes, scroti
+<lb/>tumores, penales verrucae j phymata et condylomata: quorum
+<lb/>nonnulla divisionem solam requirunt, nonnulla persectam
+<lb/>superfluorum^ praecisionem demonstrant. Aliud desuctu
+<lb/>alienum; non ut supervacaneum, fed veluti deficiens
+<lb/>dicitur, cuiusmodi mutila et curta omnia, sicut in labris
+<lb/>oculisque cernitur. Unde quidam leporinos oculos et lepotina
+<lb/>labra habentes nominantur. Pari modo etiam se
+<lb/>habent fistulae et vitia profunda, Unus, ulcera al iaque
+<lb/>hujusmodi omnia, quae ex defectu repletionem desiderant
+<pb n="14.682"/>
+<lb/>atque indicant. Jam vero praeter quatuor chirurgorum
+<lb/>communitates est et species quam praescrvatricem appellant.
+<lb/>Apponitur autem et ipsa, ut communitas, in deletersis
+<lb/>et toxicis bestiisque omnibus quae virus emittunt,
+<lb/>tum venenosis volatilibus et terrestribus. aquatilibusque.
+<lb/>Nam commune omnium genus, ut sint exitialia, non tamen
+<lb/>ad astrictum et fluens referuntur,. sed aliud est praefer
+<lb/>haec genus. Quare et curatoria ipforum communitas
+<lb/>alia praeter illam habetur, dicta praeservatum. Methodieam
+<lb/>quoque tectam primum designat similis in evidentibus
+<lb/>consideratio, sed non in latentibus feu abditis, quemadmodum
+<lb/>in rationali secta. Hoc unum intercedit discriminis,
+<lb/>quod in illa quoque similium inspectio, sed in obscuris
+<lb/>consistit : secundum ex simili in evidentibus, affectus,
+<lb/>auxilia, tempora, particularia omnia generalia reducit.
+<lb/>Attamen non evidentia. tantum empiricorum more auimadvertunt,
+<lb/>sed particularibus, nullo generali cognito, insistunt.
+<lb/>Tertium est ex communitatum indicatione curationem ac- cipere:
+<pb n="14.683"/>
+<lb/>nec caulas, ut rationalibus in usu est, exponere,
+<lb/>neque facta in concursibus observatione eorum quae per
+<lb/>experientiam conveniunt, ut empirici faciunt, contentos
+<lb/>esse.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">[Qui trium sectarum principes extiterint.]
+<lb/>Rationalis tectae et auctor et princeps Hippocrates Cous
+<lb/>fuit. Post hunc Diocles Carystius, Praxagoras Cous, Heropbilus
+<lb/>Chalcedonius, Erasistratus Chius, Mnesitheus ;
+<lb/>Atheniensis ,. Asclepiades Bithyuus, Cianos, qui et Prostas
+<lb/>dictus esu Empiricae praefuit Philinus Cous, qui primus
+<lb/>eam a rationali separarit, occasione ab- Herophilo fuo
+<lb/>praeceptore accepta. Quum autem suam vellent suetam
+<lb/>antiquiorem fingere,. Acronem Agrigentinum, quo rationali
+<lb/>esset antiquior, ei dedisse initium dixerunt.. A Philino
+<lb/>Serapion Alexandrinus ea lecta floruit: dein Apollonii duo,
+<lb/>pater et filius, Antiocheni: hos secuti Menodotus et Sextus
+<lb/>eam plane stabilierunt. Methodicen Themifon Laediceus
+<pb n="14.684"/>
+<lb/>Syrius incepit, qui ab Asclepiade rationali occasiorues
+<lb/>nactus ad methodicae sectae inventionem fe contulit.
+<lb/>Thessalus Trallianus eam absolvit. Post hos Mnafeas, Dionysius,
+<lb/>Proctus, Antipater. In ea autem de quibusdam
+<lb/>dissenserunt olympiaetts Milesius, Menemachus Aphrodifeus
+<lb/>et Seranus Ephesius. - Fuerunt nonnulli etiam adjuncti,
+<lb/>ut Leonides Alexandrinus; quidam delecti, ut Archigenes
+<lb/>Apameus Syrius.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">[Medicina scientiane sit, an ars. ] Rationales
+<lb/>aliqui, e quorum numero est etiam Erafistratus, medicinam
+<lb/>partim srientiam, cujusmodi est causarum notitia,
+<lb/>item naturae inspectio: partim coniecturam, ut curationem
+<lb/>et signa habere censuerunt. Methodici et in universum
+<lb/>scientiam ipsam esse praedicant, fed utrique a vero, maximeque
+<lb/>methodici aberrarunt. Scientia enim est conveniens,
+<lb/>firma et nunquam a ratione declinans cognitio:
+<lb/>eam neque apud philosophos, praesertim dum rerum naturas
+<pb n="14.685"/>
+<lb/>perscrutantur, invenias: multo Iane minus in re
+<lb/>medica: imo ut verbo expediam, ne ad homines .quidemvenit.
+<lb/>Quamobrem medicina ars merito dici potest: si
+<lb/>quidem artis nomine comprehensionum et opinionum ad
+<lb/>finem quendam vitae utilem spectantium collectionem certa
+<lb/>qualitate et quantitate commeditatam intelligimus. Compreheusiones
+<lb/>igitur humanas et quae numero constitutionemquandam
+<lb/>procreare queant, alioquin .et commeditatas , hoc.
+<lb/>est sibi concordes ac conspuas cohaerentesque, medicina
+<lb/>habet: quo fit ut artis vocabulum, cujus definitio ei convenit,
+<lb/>optimo jure commerentur, comprehensionesque in
+<lb/>ea ad vitae commoditatem pertinent. Quippe ut servaret
+<lb/>homines ac sanos tueretur, in vilem prodiit. Sed artium
+<lb/>duplex est doctrina: quaedam enim finem. tuum semper
+<lb/>consequuntur, ut fabrilis, navium compactoria, aedificatoria.
+<lb/>Quaedam finem tuum, ceu scopum appetunt, contingunt
+<lb/>autem non semper, sed plurimum. Unde conjemurales
+<lb/>quoque dicuntur : exi quarum numero medicina
+<pb n="14.686"/>
+<lb/>fuerit: quemadmodum rhetorica, gubernatoria et saginandi
+<lb/>ars. Est et alia doctrina et ipsis duplex: quoniam aliquae,
+<lb/>dum fiunt, furi et simulatque ah actione destiterint, -nihil
+<lb/>quod perfecerint ostenditur, cuiusmodi saltatoria citharis
+<lb/>stica, palaestrica et quaevis alia ars musica. Nonnullae in
+<lb/>actione evidens opus plane nullum habent, sied tanquam
+<lb/>futuri cujusdam praeparatoriae existunt; ubi Vero a functione
+<lb/>cessaverint, tunc quid effecerint apparet: qualis
+<lb/>ilatuaria, pictura et fabrilis, tum aliae , quarum opera post
+<lb/>actionem perdurant. Inter has medicinam quoque numeres
+<lb/>licet. In medendo enim nondum ejus finis innotescit,
+<lb/>quippe quae adversus morbos semper laboret: at, ubi curationem
+<lb/>absolverit, tunc homini sanitatem. restituisse eam
+<lb/>videre esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">[ Quid. sit medicina.] Definitionibus rationales
+<lb/>usi sunt e t descriptionibus empirici: de quibus
+<lb/>quaestionem instituere philosophis suium convenit; enimvero
+<lb/>veteres etiam medici hoc modo medicinam simpliciter-
+<pb n="14.687"/>
+<lb/>vel definierunt, vel descripserunt. Medicina est, ex
+<lb/>Hippocratis sententia, adjectis et detractio. Admotio quidem
+<lb/>deficientis , detractio autem superantis in hominum
+<lb/>corporibus. Quam enim definitionem medicinae nonnulli
+<lb/>putaverunt, revera non est; aegros videlicet morbis non
+<lb/>prorsus liberare, dolores - lenire morbique vehementiam
+<lb/>retundere, malo victis manum non admoliri. Non enim
+<lb/>ex iis, quae artes non possunt, fed ex bis quae possunt
+<lb/>ipsarum definitiones sunt, quae enim ipfa non potest dicit;
+<lb/>non quae ipsi insunt definit.. Recentiores hujusmodi definitionem
+<lb/>usurparunt. Medicina est scientia sanitatis conservatrix,
+<lb/>morborum depultrix. Non recte habet:. non
+<lb/>enim ipsa haec efficit, fed ex. illis quae efficit,. haec proveniunt,
+<lb/>idque non semper. Quapropter non ex his, sed
+<lb/>illis, quae ab ea semper accipiuntur, constituta est. Haec
+<lb/>autem sunt adjectio et detractio. Proinde quae capit medirina,
+<lb/>haec ipsam esse dixit Hippocrates, quibus et in
+<lb/>fanis utitur, eum fecundam ipsorum valetudinem contervat
+<pb n="14.688"/>
+<lb/>et in aegrotis, ut morbis liberet. Quae igitur semper
+<lb/>sarit, ea ipsam constituunt, non illa, quae ab his efficiuntur.
+<lb/>Aliud namque ars, aliud ejus finis esu Quod enim
+<lb/>appetit, id aliud ab ipsis est, adque non perpetuo Tecum
+<lb/>habet. Quo fit, ut quatenus ipsum non contingit, neque
+<lb/>sinis ejus, sed sceptri dicatur v quum autem contigerit, sinis.
+<lb/>Ita gubernatoria et sagittandi ars non a sine, quem non
+<lb/>temper contingunt, ted ab aliis, quibus constitutae fiant
+<lb/>et per quae, ut finem assequantur, iunctiones obeunt,
+<lb/>definitionem sortiuntur. Porro definitio haec omnibus fere
+<lb/>post Hippocratem proba esse videtur. Herophilo medicina
+<lb/>lest scientia salubrium , insalubrium et neutrorum.
+<lb/>Trium enim horum cognitionem habet. Salubrium, quae
+<lb/>corporis humani constitutionem ita praeparant, ut ex eis
+<lb/>pulchre invicem aptatis sanitas concilietur: insalubrium,
+<lb/>quae salubrem convenientiam dissolvunt. Neutrorum omnis
+<lb/>tunt auxilia, quae aegris afferuntur et eorum materia.
+<pb n="14.689"/>
+<lb/>Haec enim prius quam a medico excepta sint, neutra, nec
+<lb/>salubria nec insalubria funi,</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">[ Quot partes medicinae.] Partes mesucinae
+<lb/>principes sunt physiologia, aetiologia, patbologia,
+<lb/>diaeta sanorum; semeiotice, therapeutice. Athenaeus pro.
+<lb/>femeiotice materiam constituit, quae in therapeutice reperitur,
+<lb/>nam sine materia curatio fieri non potest. Semeiotice
+<lb/>et ad curationem quidem necessaria, non tamen ipfa
+<lb/>est curatio: materiae enim beneficio curatio absolvitur et
+<lb/>materia quidem sine -curatione nihil aliud confert. Semeiotice
+<lb/>etiam et sine curatione necessaria, ut quae curabilia
+<lb/>quaeque sive incurabilia. cognoscamus, ut in iis haereamus,
+<lb/>ne quum susceperimus impossibilia, hall urinentur.
+<lb/>Iam vero quinque partium medicinae cujusque subdivisio
+<lb/>quaedam esu Physiologia igitur pars quidem illius est, in
+<lb/>qua de hominis natura disserimus : dividitur autem in tradationem
+<lb/>elementorum , quibus homo componitur, tum in
+<lb/>eam, quae de generatione et formatione foetus , tertio in
+<pb n="14.690"/>
+<lb/>interiorum et exteriorum corporis partium speculationem,
+<lb/>cum cadavera disseramus ossiumque rationes perscrutamur :
+<lb/>aetiologia quae et pathologia, in qua quae praeter naturam
+<lb/>sunt inquirimus et morborum causas investigamus et symptomatum
+<lb/>concurfus , affectuum fletus diligenter indagamus.
+<lb/>His enim incognitis nemo recte noverit, quomodo morbos
+<lb/>curare conveniat: medicinae pars ea quae diaeta sanorum
+<lb/>dividitur in eam quae sanitatem tuetur et in eam quae
+<lb/>morbos arcet praecavendo, ac in eam quae a morbis surgentes
+<lb/>reficit. Semeiotice in tres partes dirimitur, in praeteritorum
+<lb/>cognitionem, in praesentium inspectlonem et futu.rorum
+<lb/>providentiam. Similiter et ipsa therapeutice in tres
+<lb/>partes dividitur, in diaetam, chirurgiam et pharmaciae,.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">[An medicinae divisio in quinque partes
+<lb/>necestaria sit.] Tractare igitur res quidem naturales necestarium
+<lb/>est, quoniam haud possibile est quae praeter naturam
+<lb/>sunt, illum cognoscere, qui non prius noverit ea
+<pb n="14.691"/>
+<lb/>quae tuus secundum naturam: nam praeter illorum naturam
+<lb/>morbi consistunt. De causis autem et morbis agere
+<lb/>necessarium quoque est, cum ut affectuum caulas, quibus
+<lb/>resistere convenit, intelligamus: tum ut etiam ipfos afsectus
+<lb/>a veteribus appellatos eorumque status cognofcamus.
+<lb/>. Utilis tane et symptomatum quae assectus comitantur
+<lb/>cognitio est, nam ab horum congressu , quem empirici
+<lb/>concurfu vocant, corporis vitia speciem nanciscuntur.
+<lb/>Quanquam iidem empirici in concursibus , quae cuique
+<lb/>accidenti conveniant, observarunt. Methodicis autem curationem
+<lb/>affectus indicant, quemadmodum rationalibus
+<lb/>causae, licet ipsi .nihilominus tum; affectus tum concursus
+<lb/>inquirant, Totum autem causis attribuunt, quarum nonnullae
+<lb/>evidentes, aliae continentes, quaedam. coadiuvantes,
+<lb/>aliquae concausae, reliquae antecedentes dicuntur. Evidentes
+<lb/>sunt quae ubi adversam valetudinem crearunt, feparantur,
+<lb/>ut frigus, labor, sutis exustio, cruditas. Contineutes,
+<lb/>cum praesentes sunt et morbi quoque adsunt:
+<pb n="14.692"/>
+<lb/>cum tolluntur, morbi etiam discedunt, ut spina et telum.
+<lb/>Concautae, quae affectum tua vi possunt generare : generant
+<lb/>vero et alteri cohaerentes, ut lapis in vesica et inflammatio.
+<lb/>Nam ambae urinae fuppressionis causae sunt,
+<lb/>etsi per te utraque illam generare possit. Coadjutrices
+<lb/>causttrum partes quae tua virtute morbum efficere non postfiunt.,
+<lb/>ted alteri auxiliantur, ut libido articularem morbum
+<lb/>promovet et remigatio sanguinis eruptionem. Antecedentes,
+<lb/>quae ab evidentibus vel praeparantur vel coadjuvantur,
+<lb/>ut sanguinis abundantia, alimenti coplae soboles
+<lb/>esu Praecedit autem Erasistrati coincidentiam, quae omnium
+<lb/>morborum cauta est conjuncta,- verum citra autecedentem
+<lb/>non accidit. Porro diaeta fimorum non siclum ut
+<lb/>pars medicinae, sed tanquam potior ea, quae medetur, ei
+<lb/>praeponitur. Multo enim praestat morbum prorstrs non
+<lb/>admittere quam morbo liberare; quemadmodum et guber- natari
+<lb/>longe praestabilius est, ante quam in tempestatem
+<lb/>incidat, iter absolvere, quam cum iactatus pericli tatusque
+<pb n="14.693"/>
+<lb/>fuerit evadere. . Atqui differunt rutilis in salubri diaeta
+<lb/>sanitatem tueri et morbos incessentes longius arcere. Etenim
+<lb/>primum consueta victus ratione administratur: alterum
+<lb/>jam indiget curatoriis auxiliis, ut morbum, qui conflari
+<lb/>debet, supprimat ac dissolvere anticipet-: siquidem
+<lb/>quae jam ortis affectibus medentur, eadem quoque prius
+<lb/>quam oriantur prohibent illos constitere. Similiter para
+<lb/>quam- refectricem appellant, differentiae cum illis nonuihil
+<lb/>habet. Qui enim recreat vires recolligitque, ut non
+<lb/>amplius praeter naturam, ita secundum naturam fe
+<lb/>nondum habet , sed ab eo , qui praeter naturam.
+<lb/>est, nuper habitu solutus ad naturalem migrat. Quamobrem
+<lb/>aliam victus rationem destiterat, nec curatoriam,
+<lb/>non enim aegrotat: nec eam, qua sani utuntur, ut
+<lb/>qui nondum absoluta fruatur sanitate. Quo fit ut nec
+<lb/>qualitate nec quantitate paria sanis possit assumere: quae
+<lb/>autem pars medicinae scmeiotice dicitur, curationi morhorum
+<lb/>per victum summe est necessaria ; nam praeterita
+<pb n="14.694"/>
+<lb/>et praefentia symptomata ad morbi causam inveniendam
+<lb/>diligenter inspicimus. Insuper maxima ejus necessitas est
+<lb/>ad praesagiendum, mors, an talus expectanda sit. Pari
+<lb/>modo medicina , quae manu medetur, tum illa, quae medicamentis
+<lb/>auxiliatur, sine indiciorum observatione non
+<lb/>absolvitur : quippe praesagia .eodem modo desiderant, quibus
+<lb/>scias, quae curationem non admittunt, quaeque eam
+<lb/>recipiunt quidem, sied vehementer aut offendunt aegrum,
+<lb/>si curentur, aut e medio tollunt. Quum vero therapeutice
+<lb/>dividatur in diaetam, -pharmaciam et chirurgiam, diaeta
+<lb/>auxiliorum, quae digerendi, apponendi et concoquendi
+<lb/>facultatem habent, est administratio: quae omnibus quidem
+<lb/>aegrotis , fed praecipue febrientibus in usu esu Chirurgia
+<lb/>pars amatoriae est: ea incisionibus, ustionibus et
+<lb/>ossium in tuam sedem deductione homines curat. Pharmacra
+<lb/>nudis medicamentis interiores affectus et exteriores
+<lb/>sanat: victus enim convenientem rationem, quandoque
+<lb/>vero manuum opus requirit, quemadmodum chirurgia et
+<lb/>victus ratio medicatione utuntur. Itaque a rerum naturae
+<pb n="14.695"/>
+<lb/>contemplatione altius auspicabimur n quoniam nec in sanis
+<lb/>secundam valetudinem tueri, nec in aegris morbi causam
+<lb/>cognoscere, nec signis quid deprehendere, nec curare recte.
+<lb/>possis, ignorans quibus homo elementis constet ecquo-.,
+<lb/>modo his immutatis amatura quam obtinebant prius morbi
+<lb/>nuscuntur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p>[De elementis hominem constituentibus q
+<lb/>Constat igitur homo, quemadmodum docuit Hippocrates in
+<lb/>libro donatura humana, ex primis mundi elementis:- ex
+<lb/>igne, aereo aqua., terra, non quod ex his ipsis, sed proportione
+<lb/>ipsis respondentibus homo constituatur. Atqui
+<lb/>ex ipsius Hippocratis sententia, dum dissolvitur,- iu haec
+<lb/>prima resolvitur et unumquodque rursus in suam ipsius
+<lb/>naturam, homine vita defuncto; redire necesse est, siccum
+<lb/>in siccum, frigidum in frigidum, calidum in. calidum,
+<lb/>humidum in humidum. Hujusmodi tum animantium tum
+<lb/>aliorum universorum natura est : omnia fimiliter oriuntur
+<pb n="14.696"/>
+<lb/>et desinunt similiter: conflatur enim ex his praedictis eo-,
+<lb/>rum natura et ex praedictis in eadem finit. Unde singula
+<lb/>originem nacta sunt; eo quoque revertuntur, quemadmodum
+<lb/>Humerus inquit,</p>
+<p rend="indent">Vos aqua, vos tellus cunctos aliquando tenebit.</p>
+<p>innuens dissolutionem in haec futuram. Caeterum homi- .
+<lb/>nem velut ex secundis et humanae naturae vicinis quatuor
+<lb/>humoribus, sanguine, pituita, bile tum flava tum .
+<lb/>atra constitutum esse physici pronuntiant: quoniam foetus
+<lb/>in prima fui formatione ex genitura et sanguine, qui e
+<lb/>matre per urachum influit, auspicium coepit: in his autem
+<lb/>quatuor humores erant. Hi vero ex tribus et compositis
+<lb/>hominem jam genitum, ex hisce tribus constare
+<lb/>affirmant, humidis, ficcis et spiritibus, quae. Hippocrates
+<lb/>continentia, contenta et impetum facientia appellat. Confluentia
+<lb/>igitur sunt stolida omnia, ut ossa, nervi, venae,
+<pb n="14.697"/>
+<lb/>arteriae, ex quibus et musculi et carnes tutaque corporis
+<lb/>moles compacte est, ad haec interiorum exteri orumque
+<lb/>concretiones. Contenta vero humida sunt , quae lu
+<lb/>vasis per totum corpus dispersa feruntur. Atque haec
+<lb/>quatuor praedictos .humores vocat Hippocrates. lmpetum
+<lb/>facientia spiritus sunt , quos veteres duos; animalem et
+<lb/>naturalem numerant: Stoici tertium invehunt, quem hecticum
+<lb/>nominanti Erafistratusvafa triplicia, nervos, venas,
+<lb/>arterias, omissis spiritibus et humidis, tanquam initia. et
+<lb/>totius corporis elementa constituit. Nam duplici materia
+<lb/>regi animal affirmat, sanguine tanquam alimento, spiritu
+<lb/>tanquam naturae functionibus obeundis coadiutore : non
+<lb/>autem ea ut principia accipit. Multae sane aliae corpurum
+<lb/>fpecies non ex tribus illis compositae inveniuntur,
+<lb/>ut verbi gratia cerebrum, medulla atque ossa j omnia.
+<lb/>Cerebrum igitur vel- medullam nutrimenti allusionem audet
+<lb/>appellare, sicut adipem, jecinoris, lienis et pulmonis
+<lb/>consistentiam. At ossa neque nutrimenti effusionem neque
+<pb n="14.698"/>
+<lb/>ex praedictis vasis triplicibus com; sita esse dicere possit.
+<lb/>Asclepiadi. hominis elementa. sunt corpuscula. manantis,
+<lb/>fragiliaque: et invisibilis foramina. Secundum Athenaei
+<lb/>sententiam non. quatuor illa prima corpora, ignis, aer;
+<lb/>aqua, terra, sed eorum qualitates, calidum, frigidum, siccum
+<lb/>et humidum. li -Ex t quibus duo causarum efficientium
+<lb/>munere fungi, pula calidum et .frigidum.:- duo materialium,
+<lb/>siccum et humidum supponit..: Quintum vero ex Stoicomm
+<lb/>opinione .introducit spiritum cuncta penetrantem; a
+<lb/>quo omnia contineantur et gubernentur. Hippocrates cum
+<lb/>trifariam hominis elementa divisisset,. in continentia, contenta
+<lb/>et ea quae impetum faciunt,. quibus omnia post
+<lb/>ipfum: - elementis comprehendit , nec non . naturae demetitorum
+<lb/>tractationem, eorum quae praeter naturam sunt
+<lb/>causas , haud scio quomodo successores ejus unam illam
+<lb/>re. vera divinam Aefculapii medicinam in tres partus sibi
+<lb/>cohaerentes distribuerint atque divulferint. Alii enim
+<lb/>humidis tum eorum, quae fecundum naturam habent, construtionem,
+<pb n="14.699"/>
+<lb/>tum causam eorum, quae praeter naturam, folis
+<lb/>attribuere, ut Praxagoras et Herophilus: alii solidis
+<lb/>corporibus initia et elementa attribuentes, ex his, tum
+<lb/>quae natura consistunt, tum morborum causas inde capiunt,
+<lb/>ut Frustratus et Asclepiades. Athenaeus vero et Archigenes
+<lb/>spiritu solo ea penetrante tum naturalia consistere
+<lb/>ac gubernari, tum morbos universos hoc prius offenso
+<lb/>creari dixerunt. Unde et spiritales, veluti qui omnia spiritibus
+<lb/>attribuant, nuncupantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">[ Exteriorum corporis partium appellationes.]
+<lb/>He externis corporis partibus seu particulis et
+<lb/>quae earum nomina sint, primus Aristoteles docuisse simul
+<lb/>ac conscripsisse creditus est. Temporis autem processu medicis
+<lb/>quoque ipsis posterioribus de iisdem tractare necessaxium
+<lb/>visum est, ne manu allata quamque partem aut
+<lb/>particulam ostenderent, sed ex appellatione sufficientem
+<lb/>earum notitiam haberent: quorum in numero id maxime
+<pb n="14.700"/>
+<lb/>fuerunt Erasistrati sectatores aemulati, ut Apollonius Mempliiles
+<lb/>et boe prior Xenophon. Dividunt igitur totum
+<lb/>corpus Aegyptii medici quadrifariam, in caput, manus,
+<lb/>thoracem et crura. Alii has quatuor partes ru plures siiducunt,
+<lb/>nempe in alias totius partes , non ut illarum parsiculas.
+<lb/>Capitis igitur tota . latitudo pars ipsius corporis
+<lb/>dicetur. . Hujus particulae:: funi hae. Anterior superposita
+<lb/>superciliis, pilis nuda, inter utramque aurem sita frons
+<lb/>nominatur. Hac superior capillis intecta sinciput. Part
+<lb/>em ab utroque sincipitis latere supra aures sitam tempora
+<lb/>appellamus. In media capitis regione sinciput superanteest
+<lb/>vertex: unde. velut a centro circulus capitlorum
+<lb/>exortus incipere videtur. Post verticem a posteriore
+<lb/>capitis parte. ad usque tendones, occiput descendit.
+<lb/>A priore tusi tota fronte, auribus, oculis, naso et ore ad
+<lb/>mentum usque circumscripta, a fuperriliis incipiens, facies
+<lb/>dicitur... Ubi enim frons: a superioribus defcendens destnit,
+<lb/>supercilia ceu termini ejus eminentes et pilis consiti
+<pb n="14.701"/>
+<lb/>eam excipiunt Qua autem frons ad tempora porrigitur,
+<lb/>in ipsius terminis aures sitae funi, quarum pars a.perta
+<lb/>ala dicitur, refracta ab anteriori in posterius ipsis
+<lb/>summitatibus inflexis cubiformis, fusi qua semicirculus rotundus
+<lb/>in mucronem exurgens scalper appellatur. Hujus
+<lb/>acumini concavum, quod subiacet, conchula. In hujus
+<lb/>medio rotundum foramen meatus auditorius vocatur, fub
+<lb/>quo particula pinguis ah aure suspensa tubus est teu auricula,
+<lb/>superior pinna. oculi superciliis fubjacent, quae
+<lb/>et lumina dicuntur, nempe tota figura cum ipsis perticulis.
+<lb/>Superius inferiusque interiores tunicas .contegentes palpebrae
+<lb/>appellantur, haec inferior, illa superior. Commi tu
+<lb/>tuntur invicem crebro et extremo tactu ad vitus recreationem
+<lb/>et ad prohibendum, ne quid extrinsecus violenter
+<lb/>oculis incidat; maxime vero, quemadmodum in somnis,
+<lb/>risoriae virtutis avertendae gratia, quo melius homo conquiescat.
+<lb/>Partes autem juxta oculos totos sitae , qua pali
+<lb/>pebrae invicem committuntur, sarsi nominantur: unde pili
+<pb n="14.702"/>
+<lb/>proveniunt, quos cilia nuncupant, a quibus orta sunt,
+<lb/>ducto noruine. Facti autem in hoc funt pili isti, ut viforium
+<lb/>spiritum vel, ut quidam ajunt, radios interiore
+<lb/>parte effusos perspiciendi gratia dirigant. His itaque
+<lb/>elapsu vel retortis, nequaquam animans similiter in rectum
+<lb/>vel in longum videre potest. Interiores oculi termani,
+<lb/>ubi palpebrae coalescunt, anguli dicuntur, qui quidem
+<lb/>ad nasum magnus, qui ad aures parvus. Quod in
+<lb/>horum medio consistit, oculi candidum Hujus rutilis
+<lb/>medium iris circulus coloribus varius occupat t unde et
+<lb/>a similitudine, quam cum caelesti illa lride habet , nomen
+<lb/>accepit. Hujus rursus media pars, per quam visus pera-.
+<lb/>gitur, pupilla esu Naias inter oculos situs esit: ejus partes
+<lb/>utrinque silae nares vocantur, quibus animalia retorrant
+<lb/>et.olsaciunti Exteriores autem narium partes plonolae
+<lb/>sive alae nominantur, quod autem eas. discriminat,
+<lb/>interfeptum vocamus. In utraque nest parte, quae proprie
+<lb/>concava sunt tuli oculis sita, concava nuncupamus:
+<pb n="14.703"/>
+<lb/>unde quidam concavi nominantur. Per morbum autem
+<lb/>haec attolluntur ob hominis cruditatem velo displicentem
+<lb/>dispositionem. His autem superiores inter- natum et, ames
+<lb/>malae , quae bene coloratis et ingenuis pudore suffusis rubent.
+<lb/>Hinc maxillae ad mentum usque descendunt et hac
+<lb/>in mucronem desinunt. Mentum id omne est, quod. labro
+<lb/>inferiori longa orbiculari figura fubjacet. Superior pars
+<lb/>labri fusi naribus mystax Humero hypene appellatur. Quod
+<lb/>intra labra describitur et ab eis constituitur et continetur,
+<lb/>os est. Videntur enim haec quasi connata, post diducta os
+<lb/>efficere; quare etiam veluti nuper divifa apparent. Quod
+<lb/>caput excipit et ad humeros usque pertinet, id. totum
+<lb/>cervix dicitur; hujus posteriores partes proprie tendines
+<lb/>appellantur. Dein sub cervice humeri utrinque prominent
+<lb/>quorum verticem summum humerum nominant, quod ab
+<lb/>-hoc prorsum vergit, claviculae .existunt, inter quas jugulum
+<lb/>habetur. Ab humeris manus incipiunt, utraque ex
+<pb n="14.704"/>
+<lb/>suo latere propensa: herum pars ab humero ad cubitum
+<lb/>usque pertendens brachium vocatur: cubitus autem qua
+<lb/>tota manus flectitur: cujus exteriorem partem corona et
+<lb/>olecranum nominatur. Dein cubitus, quo et homines metiuntur.
+<lb/>Ubi hic desinit et cum summa manu articulum
+<lb/>facit , carpus dicitur. Succedens huic pars metacarpium.
+<lb/>lude nodi , a quibus digiti incipiunt. Digitorum maximus,
+<lb/>pollex est, quod toti summae manui cooperans aequipolleat.
+<lb/>Post hunc index, nomen ab usu, ut apparet, fortitus :
+<lb/>dein medius-: hunc medio. proximus sequitur, medicis
+<lb/>dicatus , atque ab iis nomen sortitus. Postremus parvus
+<lb/>dicitur, quod omnibus sit inferior. . Itaque a carpo summa
+<lb/>manus dicitur: cujus supinae pars juxta pollicem assurgens
+<lb/>vola nominatur, huic pars opposita salivosa vocatur.
+<lb/>Verum unde digiti procedunt, pectus manus esu Quod
+<lb/>medium horum omnium est, manus concavum dicitur.
+<lb/>Supra vero thorax ea pars appellatur, quae a collo tuto
+<pb n="14.705"/>
+<lb/>ad ilia usque ex anteriore parte protenditur. Hujus pars,
+<lb/>quae sub claviculis utrinque et manibus habetur, costae
+<lb/>sunt: ex quibus et latus utrumque dicitur. In harum medio
+<lb/>pectus. Hujus rursus medium. usque ad cartilaginem,
+<lb/>sub qua ventriculi os delitescit, sternunt : idem locus etiam
+<lb/>extrinsecus itu appellatur. Hinc epigestrium oritur. . Quae
+<lb/>sub ventriculi ore ad partem exteriorem apparent, hypochondria
+<lb/>nominamus, quoniam fecundum rectitudinem. fusi
+<lb/>cartilagine veluti post ipsam habentur-. Sunt autem musculi,
+<lb/>qui expansi peritonaeo subiacent v extrinsecus - vero
+<lb/>cute conteguntur., Aequivoco autem cum his vocabuloetiam
+<lb/>interiora. viscera vocamus hypochondria : quoniam .
+<lb/>et ipsa Iuli cartilaginibus nothorum costarum ab interiore
+<lb/>parte existunt: Ied exteriora proprio. Quod ante ilia
+<lb/>hypochondria comprehendit, abdomen est: quod utrinque
+<lb/>est, ilia. Ilium medium occupat umbilicus. Sub hocsuh
+<lb/>men. Postea pubes sequitur , quae et aqualiculus dicitur,
+<lb/>in quem thorax finit: ubi et masculorum pudenda confittuta
+<pb n="14.706"/>
+<lb/>sinit: tum foeminarum ad femoris utriusque oxortnm,
+<lb/>uf sub hoc occultentur. Maris pars prominens colea
+<lb/>vocatur, summitas ejus glans: qua foramen habet ad
+<lb/>exere tion em, urethra ab usu nuncupatur. Cutis quae
+<lb/>eam contegit, praeputium dicitur. Inferior pars colis in
+<lb/>longitudinem ejus vergens futura vocata esu Quae vero
+<lb/>adusque fellem producitur, taurus. Testiculi duplici no-.
+<lb/>mine didymi et testes, intus et foris appellantur. Quod
+<lb/>testiculos ambit, scrotum vocanti Muliebris autem pndendi
+<lb/>(sic enim ipfum nominaverunt antiqui) sinus ipse
+<lb/>pecten vocatur. At quae sinum ambiunt, alae vocantur,
+<lb/>inter has autem caruncula ad fissuram exorta, nympha
+<lb/>quam, quod multo promineat, Aegyptii in virginibus exeidere
+<lb/>consueverunt. Porro recti intestini orificium per
+<lb/>sedem prodiens, quo exeretionem, quum lubet, retinemus;
+<lb/>annulus a figura, ab officio sphincter vocatus est. Caeteruta
+<lb/>posteriores corporis partes, quae collo subjacent,
+<pb n="14.707"/>
+<lb/>hunc situm et appellationem habent: totum dorsum vocatur :
+<lb/>inde .utroque ri n latere scapulae habentur. Media
+<lb/>aptarum pars inter scapulium, cui etiam stomachus intus
+<lb/>fubjacet. Rursus media totius dorsi sedes superne ad clunes
+<lb/>usque spina dicitur. Hujus partem, quae recto tramite
+<lb/>sub dorio habetur inscalptam Humerus nominavit,
+<lb/>manifesto aliis dictionibus exponens,</p>
+<p rend="indent">---κατ ἄκνηστιν μέσα νῶτα,
+<lb/>quoniam et juxta rectitudinem longitudinis media funt
+<lb/>dorsi, mediumque est interscapulii et lumbi. Spinam
+<lb/>lumbi, qui ilium ossa nominati funt, qua cingimur, exorpinus.
+<lb/>Hi in os Iactum terminantur : in cujus utraque
+<lb/>parte coxae funt: in quibus nates, quoniam quae his
+<lb/>fubjiciuntur, maxima ossa funt. Inde canneta ipsis corpora
+<lb/>substrata funt. Quorum gibbae partes, quod urbicolares
+<lb/>funt, globosae natium spartes nominantur. Inde corpus
+<lb/>unum in duos exit processus. Nam in duo crura
+<pb n="14.708"/>
+<lb/>nominata bipartitur, quorum divisionem veteres bisulcam
+<lb/>nominant: atque haec tota ad extrema usque crura dicuntur:
+<lb/>quae vero a coxis itatim incipiunt, femora: ubi
+<lb/>vero artus postea committuntur inferioribus articulumque
+<lb/>efficiunt, genua nominamus. Eorum partes retrorsum speorantes,
+<lb/>poplites vel ancyle; inde ad ima maximi artus
+<lb/>tibiae; quarum anterior pars ocrea, posterior fura noninanum
+<lb/>Postremum ossium tibiae in utrumque latus excedens
+<lb/>talus est : ab hoc profecti , pedes proprie appellantur:
+<lb/>quibus etiam mensuram sibi aliam homines attollentes
+<lb/>pedem invenerunt. Penis pars posterior calx; prior a talo
+<lb/>usque ad digitos tersus vocatur. lnterior autem quasi
+<lb/>pedibus invicem fe aspicientibus ab interiore talo. versus
+<lb/>magnum digitum procedens, pedium appellatur. Quod fui,
+<lb/>hac statim in .medio.- imi .pedis habetur, concavum dicitur.
+<lb/>Infimum, quo terram. contingimus et ambulamus., planta
+<lb/>vocatur. Quod post concavum ad digitos assurgit, pectus
+<pb n="14.709"/>
+<lb/>pedis nuncupatur. Deinde digiti numero manuum digitis.
+<lb/>pares. Non autem eadem sortiti nomina, quoniam nec
+<lb/>eosdem praestant utus, quanquam magnitudine aut situs
+<lb/>ordine conveniant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">[Partium interiorum anatome.] Anatome
+<lb/>abusive quidem dicitur etiam exteriorum corporis partium
+<lb/>et particularum commemoratio, quae verbis uniuscujusque
+<lb/>ipforum naturalem situm, ordinem, usum , quem animanti
+<lb/>praebent, propriam - cuique illorum appellationem, de quibus
+<lb/>jam retulimus, percenset: proprie vero anatome interiorum
+<lb/>cum scrrnone explicatio dicitur. Siquidem oculis
+<lb/>eas indicatas esse, anatome non est; sed cujusque notiliam
+<lb/>ex sermone ac verbis accepisse et naturales actiones,
+<lb/>quomodo ipsas obeant, didicisse, praeterea quam invicem
+<lb/>communionem viscera aliaeque corporis partes per venas
+<lb/>habeam. Cerebrum itaque ex nullo eorum, quae praediximus,
+<lb/>principali vafe compositum esse videtur Erasistratu,
+<lb/>eoque nutrimenti allusio ipsi esse videtur. Est autem corpus
+<pb n="14.710"/>
+<lb/>simplex, atque ob id omnium, quae humano contrnentur
+<lb/>corpore et praecipuum et princeps. Quapropter
+<lb/>Plato et Hippocrates animi principatum in eo constituunt. .
+<lb/>Comprehenditur sane membranis duabus : una contigua
+<lb/>et mssimili, quae choroeides appellatur venosiorque est:
+<lb/>altera. quae huic superiacet, calvariae quibusdam partibus
+<lb/>magis adhaerescit, Sed haec nervosicr existit. Ex sirperiore
+<lb/>igitur parte venae nutrimentum a corde juxta eum locum,
+<lb/>qui torcular dicitur, ex arteriis, quae ad basse
+<lb/>lunt, acceptum jn id derivant, inde et nervi exortus
+<lb/>principium ex eo capiunt, unde et animales functiones
+<lb/>nniverfo corpori communicant. Nervorum autem species
+<lb/>duae firnt, upa mutuos. ossium connexus colligat continetque
+<lb/>, altera sentiendi movendique pro arbitrio facultatem
+<lb/>toti. corpori transmittit. Atque hinc etiam musculorum
+<lb/>proventus est. oculorum meatus, et ipsi ab ima cerebri
+<lb/>parte proveniunt et per eos viforius spiritus oculis impertitur.
+<lb/>Inde vero nares etiam processus habent, per
+<pb n="14.711"/>
+<lb/>quos et olfacimus et cerebrum expurgatur. Ad aures processes
+<lb/>non sunt, verum a posteriore parte tenuis membrana,
+<lb/>quam meningem vocant, perforata est, atque in vermis
+<lb/>speciem processum habet: per quam similiter ipsae
+<lb/>repurgantur. In illius principio cerebri pars coniformis
+<lb/>appeIIata, sedem habet. Jam vero illinc et spinalis medulia
+<lb/>incipit. Caeterum duos habet cerebrum ventriculos,
+<lb/>fecundum aliquos vero unum, ubi animi principatus residet.
+<lb/>At calvariae ossa superiore parte sub cute, membrana,
+<lb/>quae per suturas e meningibus prodiit, pericranium
+<lb/>appellata, conteguntur. Estque haec origo membranae
+<lb/>costas fuccingentis et septi transversi et peritonaei et
+<lb/>omnis membranae nervosae. Oculus ex Hippocrate sententia
+<lb/>habet duas tunicas, quas Hippocrates meniugas,
+<lb/>quod ex illis provenerint, appelIat. Recentiores tres ponunt,
+<lb/>nonnulli quatuor. Ex quibus prima exterior est
+<lb/>cornea vocata. Ea reliqua sui parte alba est, pupilIae loco
+<lb/>extenuatur, perspicuumque subjectum colorem reddit, quatenus
+<pb n="14.712"/>
+<lb/>niger vel caesius vel fulvus apparet. Secunda,
+<lb/>qua pupilla est,- modico foramine concava, quae quod
+<lb/>parte interiore sit acino uvae similis, nominatur. Tertia
+<lb/>retis modo sinum habens, retiformis nuncupatur: perinde
+<lb/>quasi in summo quartam tunicam a nonnullis invectam
+<lb/>excipiat, sanam minus apparentem vocant. Est etenim
+<lb/>membrana minima simul et tenuissima, sed prima et secunda
+<lb/>firmae membranae -crassa eque tunicae -sunt : tertia vero
+<lb/>et quarta tenuissimae. Quare et Hippocrates priores solas
+<lb/>cognovit, oculus, inquiens, membranas duas habet. Porro
+<lb/>triplicem hae tunicae continent humorem. - Hunc ab aquae
+<lb/>similitudine aqueum vocant. Illum vitreum, quod vitro
+<lb/>quiddam simile referat. Tertium crystallinum. Palpebrarum
+<lb/>interiores partes cannulae: mediae eartilaginosae, extutiores
+<lb/>mute teguntur.-: At quoniam cartilago media dura
+<lb/>est, -adeps subjecta est lenimenti, malagmatisve instar, quae
+<lb/>frequenter exuperans vesiculas aqua plenas parit. Lingua
+<lb/>maxime carnofa est, lu quam duplex nervorum genus ab
+<pb n="14.713"/>
+<lb/>ima parte cerebri prodiens inseritur. Alti molles appeblati;gustandi
+<lb/>scnfum. ad principium alii duri, motum arbitrarium
+<lb/>ad ipsam deducunt. Ad hujus radicem exigua
+<lb/>inhaeret epiglottis, quae cum deglutimus, recurrens arterram
+<lb/>claudit, ne quid ex solidioribus aut humidis in
+<lb/>ipsam delabatur. Cujus rei quoque causa tonsillae numero
+<lb/>quatuor creatae sunt: duae ad linguae radicem, -utrinque
+<lb/>conspicuae: duae his proximae, penitiores. Nominantur
+<lb/>eaedem etiam paristhmia, quoniam locus ad quem sitae
+<lb/>sunt, isthmo, praesertim cum per inflammationem intumuerunt;
+<lb/>eoque transitum hunc arctum nimis reddunt, figura.
+<lb/>refpondeut. Porro quum duabus animal materiis gubernet.
+<lb/>tur ,. alimento et spiritu; ad hunc quidem percipiendum
+<lb/>nares, os, fauces, aspera arteria et pulmo, partes furit
+<lb/>aptissimae. Nares Iane et os respirationi serviunt: gurgu110,
+<lb/>ne frigidus. lu fauces aer cumulatim irrumpatrafpera
+<lb/>arteria, ut eundem in pulmonem deducat cujus in pectore
+<lb/>(edes est : per hunc et omnis sit respiratio, submittentem
+<pb n="14.714"/>
+<lb/>quidem te, ut spiritus emittatur, attollentem vero, ut idem
+<lb/>recipiatur. Quare actione similitudinem quandam cum fabrorum
+<lb/>follibus habere videtur, figuram vero ungulae bubulae
+<lb/>fervat. .Porro ex spiritu; in pulmone elaborate
+<lb/>quicquid maxime .necessarium est, .ad sinistrum cordis ventriculum
+<lb/>defertur,. quicquid inutile est, illac., qua iufpiravimus,
+<lb/>efflatur.. Nutrimenti vasa ad excipiendum et instrumenta
+<lb/>ad elaborationem instituta -haec sunt, os, dentes,.
+<lb/>stomachus, .ventriculus, jejunmn et tenuia intestina. .Os
+<lb/>quidem et dentes cibum extenuant moluntque... Stomachus
+<lb/>appetit et deglutit; appensus autem asperae arteriae ad
+<lb/>septum usque transversum porrigitur, .ventriculus omnis
+<lb/>est ad concoctionem, incipit velut a media cartilagine, ubi
+<lb/>ventris os situm dicitur, subsidet leviter jecinori , latitudi.ne
+<lb/>sigma literam referens et altero; extremo in sinistram
+<lb/>partem vergit ; ubi est et pylorus , quoniam portae modo,
+<lb/>ne nutrimentum .ex eo confertim delabatur, prohibet. Jejunutn
+<lb/>et tenue intestinum digestioni dicatum est, in sinus
+<pb n="14.715"/>
+<lb/>multos implicitum: committitur autem mefaraeo seu metentorio,
+<lb/>quod venae .ru id descendentes iutertexunt, per
+<lb/>quas digestio .plurima. fit ad portus hepatis. Ei vero teunius
+<lb/>intestinum est ita connexum, ut pars ejus. esse videatur,
+<lb/>quippe jejuno explicato persimile esu. offert tamen
+<lb/>quod nec vacuum sit, nec vasorum copiam habeat,
+<lb/>Deinde caecum intestinum alimento recipiendo accommodatum.
+<lb/>Huic adhaerescit laxius intestinum, quod excrementa
+<lb/>ex distributione segregata suscipi t. Pertendens autem
+<lb/>in dextram supra umbilicum inter jecur et lienem,
+<lb/>deorfirm ructus fertur , totumque amplexum abdomen in
+<lb/>rectum intestinum desinit. Quum igitur duo meatus a lato
+<lb/>oris spatio incipiant, alterum juxta priorem colli partem
+<lb/>bronchum vel asperam arteriam nominamus-: alterum
+<lb/>stomachum. Unde vero initium capit arteria et ubi aperitur,
+<lb/>pharyugem vel laryngem vocanti Caeterum totus
+<lb/>meatus ex cartilaginibus annuli modo vel circuli compotilis
+<lb/>constat, quo firmus continuae animantis respirationi
+<pb n="14.716"/>
+<lb/>maneat nec comprimatur, quale etiam ostium ejus semper
+<lb/>patescit. Nam cibi abstinentiam -tolerare potes diutissime,
+<lb/>non infpirare, ne minimum quidem temporis potes.
+<lb/>Hujus rei gratia purum hunc spiritui transitum natura dedit,
+<lb/>ne impedimenti quid sentiat. Enimvero si quid vel
+<lb/>cibi vel potus in arteriam imprudentibus delabitur, strangtilationes
+<lb/>et tusses statim excitantur donec a spiritus impetu
+<lb/>excussum efferatur. Jam vero afpera arteria spiritum
+<lb/>pulmoni transmittit, .desinitque in ejusdem arterias asperas,
+<lb/>quas ipsas quoque bronchia nominant. Stomachus inte-^
+<lb/>ruis quam arteria existens, cervicis vertebris annexus,
+<lb/>longissime cum atpera arteria porrigitur. Sed bronchus
+<lb/>illi adjunetus, eum cibum deglutimus, recurrens, exacte
+<lb/>ipsum lingula cooperit,- quae ex linguae radice trahit originem;
+<lb/>Porro haec- lingula non modo os claudit, fed etiam
+<lb/>cibum a lingua velut ventilabro purgatum et arteriae orisitio
+<lb/>superimpositum ad stomachum, pontis modo dejicit.
+<lb/>Stomachus pro naturali functione appetendi facultatem
+<pb n="14.717"/>
+<lb/>habet. Dum appetit quidem , fe attollit et quae offeruutur
+<lb/>deglutiti dum autem accepta quasi elidit et ad fubjeclas
+<lb/>pertua expellit, ac ventriculi orificio contiguo per
+<lb/>transversum septum tradit, submittitur. Per quem angustum
+<lb/>existentem meatum in ventrem alimenta descendunt:
+<lb/>Ventriculi naturale officium est, ut alimentum sibI.com-,
+<lb/>missum concoquat,. quod a concoctione primum ptissanae
+<lb/>cremori persimile est: verum per eum quem pylorum appellam
+<lb/>diximus, qui adhuc arctior est, alimentum jejuno
+<lb/>instillatur, quod cum tenue su intestinum, in flexuosissimos
+<lb/>orbes natura implicavit, ne ex facili videlicet dissecaretur
+<lb/>divellereturque. Mefaraeum : seu mesenterium
+<lb/>amfractus et orbes ejus amplectitur, atque ipsos sustentat:
+<lb/>quamquam id non fotum hunc praestat usum,.fed etiam
+<lb/>venas duas sub iecinore emergentes fulcit, quae post in
+<lb/>diversas partes diducuntur et mefaraeo inferuntur, quo et
+<lb/>aptae, sunt. enim tenues; ruptionis periculum effugiant..
+<lb/>Sustinentur autem. ab..intexto eidem. fulcimento, huic innitentes
+<pb n="14.718"/>
+<lb/>et veluti substrato allevatae finiunt. Atque hoc
+<lb/>pacto in singulis . amfractibus ad hirudinum similitudinem
+<lb/>compositis., aperto ore jejuno inhiantes, omnem in eo alimoniam
+<lb/>in succum conversam exugunt. Simul autem inter
+<lb/>exugendum protinus ipsum in sanguinem mutant, qui
+<lb/>succus antea erat, dum in jejuno esset. Non enim aliunde
+<lb/>vel pituitae vel sanguinis vel alterius cujusdam vas esse
+<lb/>natura indicati Rursus igitur duae factae ex multis venae)
+<lb/>a mefaraeo acceptum, ad hepar per dictas ejus portas digerunt.
+<lb/>In jecinore quum sanguinis naturam nutrimentum
+<lb/>induit, recrementa singula pariter secernuntur. Flava
+<lb/>bilis ad vesicam ei inhaerentem defertur: atra ad lienem.
+<lb/>Jam vero ah hepate versum in sanguinem alimentum in
+<lb/>dextrum cordis ventriculum distribuitur, A corde fanguis
+<lb/>per jugulares venas ad superiores corporis partes derivat.
+<lb/>Per cavam autem venam in universum corpus diffunditur.
+<lb/>Ab hac rami duo, sanguine jam a fero discreto , ad renes
+<lb/>perreptant, qui lumbis fusi clonium carnibus, per quas
+<pb n="14.719"/>
+<lb/>urina destillat, inhaerent. Ad vesicam autem per ureteras
+<lb/>proficiscitur. Vesica corpore suo urinam recipit et per
+<lb/>colem foras excernit; testiculi vero substantia .glandulosi
+<lb/>sunt, conceptacula et officinae feminis, quod per cremasteres
+<lb/>ad eos fertur. In quos etiam alia vasa ipsus nutrienti
+<lb/>a descendunt. Caelorum duabus tunicis conteguntnr,
+<lb/>quarum tenuiorem erythroidem, valentiorem darium
+<lb/>appellant. Ab his est, quod scrotum dicitur. Foeminis
+<lb/>autem vulva scroti conversi similitudinem refert. Venae in
+<lb/>partem . ejus interiorem quam plurimae aperiuntur, per
+<lb/>quas sanguis expurgatur: qui in conceptibus retinetur, ceditque
+<lb/>in alimentum foetus et formationem. Nam a venis,
+<lb/>quae fecundas implicant; binae aliae prodeuntes venae, ab
+<lb/>arteriis ibidem sitis binae arteriae et a nervis unus nervus
+<lb/>mutuo in unum congressu urachum appellatum absolvunt,
+<lb/>qui infantis umbilico inferitur, ex quo et enafcitur
+<lb/>et suspensus esu Ah umbilico autem venae ad jecineris
+<pb n="14.720"/>
+<lb/>portas sanguinem in foetibus transmittunt: arteriae
+<lb/>vero juxta vesicam, crassiori arteriae; nervus hic
+<lb/>spinae inferitur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">[ne osieolqgm. ] ossium duplex compositio,
+<lb/>una ad motum accommodata nomen articuli habet:
+<lb/>altera ad stabilitatem, synarthrosis appellaturi Hujus autem
+<lb/>. tres sunt species , sutura , fymphysis et gemphosis.
+<lb/>Suturis igitur capitis ossa constant. lnveniuntur autem
+<lb/>suturae in plurimis quinque. Pruna per sinciput, coronatis.
+<lb/>Altera per verticem sagittatis. Tertia per accipitium,
+<lb/>lambdoidea littera. Duae temporales, in utroque
+<lb/>temporum una. Ossa calvariae septem numerantur, coci-.
+<lb/>nitis unum, verticis duo, temporum item duo, frontis
+<lb/>unum, multiformis unum. Cerebrum duos ab utraque
+<lb/>cerebelli parte processus obtinet quae coronae vocantur,
+<lb/>qui in primae vertebrae cavitates insinuantur, in qua velut
+<lb/>centro, secundae vertebrae caput in latera movetur, annuit;
+<lb/>renuitque, deinde ossei dicti processus duo, paululum .invicem
+<pb n="14.721"/>
+<lb/>dissidentes , per quos tendines et nervi deorsum feruntur.
+<lb/>Post alia duo ossa super foramina, per quae facultas
+<lb/>audiendi est, emergunt, jugalia appellata. Sub .his.
+<lb/>rursus alia duo petrosa. Priore capitis parte processus
+<lb/>sunt stiliformes. Facti autem sunt ad faucium divisionem.
+<lb/>Ubi summae eorum partes cartilagine committuntur, os
+<lb/>hyoeideum appellatur. Quae vero super his sunt, nomen
+<lb/>desiderant. Quorum in priore.parte situm est os multiforme.
+<lb/>Porro superioris maxillae ossa symphysi constant.
+<lb/>Facies item iympbyses novem habet. Prima in lato utroque
+<lb/>oculorum spatio situm obtinet: duae a latere narium
+<lb/>utroque. alia medias nares recta intersecat. Malae quoque
+<lb/>singulas habent. Duae rursus obliquae palatum secant,
+<lb/>unaque in rectum idem palatum dividit. Communes autem
+<lb/>faciei et capiti sunt in ossibus iugalibus. Jam quidem
+<lb/>faciei duodecim ossa sunt, narium duo , oculorum
+<lb/>quoque totidem, malarum singula, palati quatuor, dentium
+<lb/>receptaculorum duo, alis similia. Maxilla inferior quo-.
+<pb n="14.722"/>
+<lb/>rundam sententia duo in mento connata habet ossa, non-nullorum
+<lb/>unum. Caeterum dentes gomphofi junguntur,
+<lb/>quippe alveolis infixi sunt. Sunt autem numero triginta
+<lb/>duo. Ex his quaterni primi in superiore atque inferiore
+<lb/>maxilla, quia secant, incisores nominantur: canini quatuor,
+<lb/>maxillares seu molares viginti sunt. Reliquorum ossium
+<lb/>claviculae ad summum humerum coeuntes deligantur: . ad
+<lb/>pectus autem articuli et fymphyfeos mixtionem facere videntur
+<lb/>et Romanae literae S, ejusque simplicis figuram bilindant.
+<lb/>Dein costae duodecim utroque latere habentur.
+<lb/>Septem. ex eis cum spinae vertebris, cumque osse pectorali
+<lb/>utrinque coeunti Reliquae quinque a posteriori parte fpinae
+<lb/>inferuntur, .parte anteriori in fele invicem resupinatae,
+<lb/>cartilagine colligantur. Vertebrae vero omnes quatuor
+<lb/>et viginti sunt,. Septem in cervice, dorsi duodecim,
+<lb/>quinque lumborum: post omnes os sacrum, quod ex vertebris
+<lb/>invicem symphyfi iunctis conflere videtur. Quin
+<lb/>et pectus similiter ex septem ossibus fymphysi coniunctis
+<pb n="14.723"/>
+<lb/>ensis figura structum esse apparet. At brachium utrumque
+<lb/>cum humero coniungitur articulo. Porro suo ipsius capite
+<lb/>oblique in scapularum sinum immittitur, Caeterum
+<lb/>scapulae musculis qui posteriore parte costis substernun- .
+<lb/>tur incumbunt. Cubitus et radius fymphyfi quidem fele
+<lb/>contingunt, articulo vero alteri brachii capiti committuntur.
+<lb/>Tribus enim fui condylis brachium in cubiti sigmoeidem
+<lb/>cavitatem inferitur. Quarto jam condylo radius veluti
+<lb/>circa axem volvitur. Carpi ossa tria mutua fymphyfi
+<lb/>deligata sunt: ad cubitum tamen et radium articulum
+<lb/>apte faciunt. M etacarpii quinque ossa videre licet; artrculum
+<lb/>cum carpi ossibus, quibus connata sunt, explentis.
+<lb/>Carpi ossa invicem et metacarpi ossibus fymphysi jtmguntur
+<lb/>eontinenturque. Caeterum cum primis digitorum intermediis
+<lb/>articulo junguntur .digitorum vere internodia
+<lb/>singulorum tria, quae articulo componuntur. Femoris os
+<lb/>unum est, cujus caput leniter reflexum in coxae profundum
+<lb/>sicum coniicitur. Quam commissuram nervus, qui e
+<pb n="14.724"/>
+<lb/>medio sinu prodit et in medium femoris caput inferitur,
+<lb/>continet. Coxae , quae duo sunt ossa a posteriore parte,
+<lb/>cum osse sacro; priore inter fe coalescentiam habent; ubi
+<lb/>et pubis ossa vel pectinis nominantur. Tibiae utriusque
+<lb/>ossa duo, nempe tibiae et fibulae: non pervenit autem
+<lb/>fibula ad genu articulum, verum fala tibiae summitas
+<lb/>quatuor in te superficiales sinus obtinens; quibus duos
+<lb/>femoris nodos excipit. His incumbit ab anteriore parte
+<lb/>parvum os rotundum, sublatum, sonti brevis instar, commissuram
+<lb/>eorum continens, quod in summo coarctetur.
+<lb/>Fibulae superior extremitas anteriori tibiae parti sub insertione
+<lb/>connectitur: juxta malleolos autem, qua desinunt
+<lb/>utraque tibiae ossa, ligamento nerveo cartilaginosoque
+<lb/>invicem colligantur; caeterum intus talo. incumbit intra
+<lb/>fe ossa continens. Talus, juxta pedis longitudinem situs,
+<lb/>fibulae insidet erque firmiter coaptatus esu Caeterum tibiae
+<pb n="14.725"/>
+<lb/>ossibus, tum navilormi, in anteriore ipsius parte articulo
+<lb/>committitur. Rmfirs naviforme, ubi cum talo coit,
+<lb/>excavatum est, ut scaphae speciem referre videatur. E
+<lb/>regione gibbum calles tres habet, quibus ossa chalcoeidea,
+<lb/>quae tria sunt, ..inseruntur : porro cuboides extrinsecus
+<lb/>situm est: coarctatum est autem naviformi ossi et calui.
+<lb/>Processum quoque ex interiori ad priorem partem obtinet,
+<lb/>quam plantae os retinendi ipsius gratia saluit. Deinde
+<lb/>os dictum metatarius et ipsimi quinque conflat ossibus.
+<lb/>Tum deinde quinque pedis digiti habentur, ex tribus
+<lb/>omnes internodiis, similiter iis, qui in manu sunt, compositis,
+<lb/>si magnum excipias: is enim solus duobus constat.
+<lb/>Contrahunt autem horum juncturas membranula quaedam
+<lb/>ligamenta: talum et calcem valida admodum et quaedam
+<lb/>ex iis rotunda, simul et .nervea cartilaginosaque.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p>[De humoribus, facultatibus, morbis,
+<pb n="14.726"/>
+<lb/>eorum differentiis , causis ac curationibus. I Humores
+<lb/>corporis ex prima. generatione quatuor, commixti invicem
+<lb/>et contemperati sunt corpori. Exuperat autem alius in
+<lb/>alio magis loco, sanguis in corde, pituita in capite; flava
+<lb/>bilis in jecinore, atra in liene. Caeterum. duplex spiritus
+<lb/>innati species, alius -naturalis, alius animalis. Non desunt
+<lb/>tamen qui et tertium hecticum introducant. - Hecticus
+<lb/>igitur est .spiritus, qui lapides continet. Naturalis animautia
+<lb/>et stirpes nutrit. Animalis sentiendi omnisque
+<lb/>motus facultatem animanti exhibet; fitus autem est in animantibus ;
+<lb/>nam his tribus animalium natura conflet. Itaque
+<lb/>animalis in capite sedem habet, naturalis in corde:
+<lb/>hecticus in toto corpore vertatur. Naturae actiones sunt,
+<lb/>a prima generatione impraegnatio foetusque formatio : in
+<lb/>editis appetitus, cibi deglutitio; in ventriculo concoctio,
+<lb/>digestio, in sanguinem alteratio, segregatio, nutritio et actio.
+<lb/>Excernuntur autem in corpore stercus , pituita., utraque
+<pb n="14.727"/>
+<lb/>bilis, urina, sudores, muci, .saliva et lac. Animalis vero
+<lb/>facultates, senfus et voluntas. Sensus quidem funi quin-.
+<lb/>que ,. quibus animantia per corporis instrumenta funguntur,
+<lb/>visus, auditus, gustus, odoratus et tactus. Eligit autem
+<lb/>anima quaedam fine corpore, ut quum ratiocinatur
+<lb/>vel reminiscitur. Cum corpore vero, ubi id ad quorumdam
+<lb/>receptionem vel excretionem vel ad loca movet.
+<lb/>Respiratio composita quaedam actio esse videtur, partim.
+<lb/>ex arbitrio, partim sponte et naturaliter, ut in fomitis
+<lb/>facta. Sanus igitur homo est, primis, unde constat, elementis
+<lb/>et secundis, unde formatus est, quatuor humoribus,
+<lb/>tum quantitate, tum qualitate mediocriter invicem
+<lb/>contemperatis: stolidis autem partibus, ex quibus cotnpositus
+<lb/>est, nec divisis, nec condensatis, nec e loco luo
+<lb/>motis t spiritibus nec intensis nimium, ut in phreneticis,
+<lb/>nec dissolutis, ut in lethargicis; vel in iis, qui cardiaco
+<lb/>affectu tenentur. His enim hecticus spiritus resolvi videtur.
+<pb n="14.728"/>
+<lb/>Sanus autem homo conservandus est consuetis exercitiis
+<lb/>et cibis patriis quolibet auni tempore observatis, copia
+<lb/>eorum solum vitanda est , ex qua cruditates oriuntur,
+<lb/>quae morbos pariunt. Praecavendi morbi sunt, vel qui
+<lb/>jam imminent , vel futuri sunt. Si exi plenitudine proveniant,
+<lb/>inedia vel purgatione vel venae incisione curandi
+<lb/>sunt. Si ex labore et indigentia, quieti corpus
+<lb/>dare et nutrire convenit. Verum universi morbi ex Hippocratis
+<lb/>sententia partim extrinsecus ex aere nos ambiente,
+<lb/>partim intrinsecus ex cibis et potu proficiscuntur:
+<lb/>a quibus humorum aliquis vel abundat, vel deficit, vel
+<lb/>qualitatem commutat. .Ab his etiam spiritus insiti nunc
+<lb/>intenduntur nimis, nunc plus aequo relaxantur. Solida vero
+<lb/>corpora foris et intrinsecus multas causas habent
+<lb/>plures affectus sustinendi. Erasistratus autem et Asclepiades
+<lb/>in universum unam omni morbo causam tribuunt:
+<lb/>hic sanguinis in arterias coincidentiam, ille corporeae
+<pb n="14.729"/>
+<lb/>molis in raritate extensionem. Plenitudinis morbum famentis
+<lb/>notae sunt vaforum tumor, faciei rubor, totius corporis
+<lb/>tumor et pulsuum magnitudo cum robore. Indigenriae
+<lb/>signa, moliis corporeae concidentis, gracilitas in facie
+<lb/>et exiguus pulsus cum imbecillitate. ltaque febrim veteres
+<lb/>ipsam per fe affectum arbitrantur. Erafiftratus et recens
+<lb/>tiorum nonnulli symptoma. Febris igitur est nativi caloris
+<lb/>in ardentiorem conversio, eo quod intro averfus perspirare
+<lb/>prohibeatur. Indicia febricitantium colligimus ex
+<lb/>calore intenso et intolerabili; tum in accessionis principio,
+<lb/>ex. languido , inaequali et crebro pulsuum motu; in fletu,
+<lb/>ex vehementissimo motu elato et veloci admodum. Juniores
+<lb/>calorem naturali magis ardentem, mordacem, acrem
+<lb/>et constantem, cum pulsuum frequentia et duritie, ex alto
+<lb/>venientem, febrem esse definiunt. Sunt autem duae ejus
+<lb/>species ex omnium mente continua et intermittens. Continua
+<lb/>est quae non ad integritatem prius quam morbus ex
+<pb n="14.730"/>
+<lb/>toto solutus sit venit. Intermittentis rursum sex spec
+<lb/>cies invenimus apud veteres,- quotidianam, tertianam,
+<lb/>quartanam, quintanam, septimanam et nonanam. Quotidiana
+<lb/>est, quae singulis diebus aut noctibus accessionem
+<lb/>vel decessionem facit. Tertiana unum diem praestat iutegrutn
+<lb/>, tertio restiti Quartana duos dies intermittit, deinde
+<lb/>revertitur. Quintana tres: septimana quinque. Nonana
+<lb/>Ieptem. Nam semitertiana modo inter continuas,- modo
+<lb/>inter intermittentes ponitur. Jam vero reliquorum morborum
+<lb/>duo genera sunt; vel cum febribus, vel sine febribus.
+<lb/>Quidam enim acuti , quidam longi fonti Acuti quidem
+<lb/>hi, phrenitis, febris ardens, angina, pleuritis, peripneumonia,
+<lb/>cardiacus affectus, regius morbus, cholera, volvulus,
+<lb/>celicus dolor, apoplexia , tetanus, opisthotonos, emprosthotonus.
+<lb/>Acuti igitur a sanguine fere et flava bile,
+<lb/>in nonnullis corporis partibus, quas ii male habent btrmores,
+<lb/>superfluis et in deterius versis constituuntur. Longi
+<lb/>a pituita et atra bile, similiter vel copiosioribus quam
+<pb n="14.731"/>
+<lb/>naturae modus exigit, vel in acerrimam qualitatem immutalis.
+<lb/>Qui jam ex copia laborant, victus ratione vel
+<lb/>inedia vel purgatione vel venae incisione curandi fiunt.
+<lb/>Qui ex abstinentia in morbum incidere , alimentis eos restatuere
+<lb/>convenit. Quibus incoctio et humorum animonia
+<lb/>morbi cautam fecerunt, iis fomentis et cataplasmatis
+<lb/>concoctio paranda esu Acria contemperanda funt et cibis
+<lb/>boni succi atque humectantibus uti oportet. Caeterum
+<lb/>quatuor in .toto morbo particularibusque accessionibus
+<lb/>tempora auxiliis afferendis dicata sunt, initium, incrementum,
+<lb/>vigor et inclinatio. Principio totius morbi inedia
+<lb/>triduana convenit, quibus et in totum abstinere triduo
+<lb/>conducit. Venae sectionem in initio recentiores ad tertium
+<lb/>usque diem statuunt: veteres etiam post tertium diem
+<lb/>praecipiunt, si vires suppetant et morbus postulet. Nutrimenti
+<lb/>tempus a triduo juniores : antiqui non omnibus,
+<lb/>fed iis, qui copia laborant, tum junioribus tum tentoribus
+<lb/>instituunt. Pueros statim morbo invadente nutriunt.
+<pb n="14.732"/>
+<lb/>Praeterea illos, quibus hujusmodi consuetudo est, vel lori
+<lb/>vel aeris circumflui gratia. Ante cibum , post triduum
+<lb/>primum , pertusiones capitis et praecordiorum ex ufu sunt;
+<lb/>sequentibus diebus cataplasmata et clysteres. Perfusiones
+<lb/>igitur in praecordiis calidas semper assumere oportet et
+<lb/>simplices ex cumini vel xylanethi decoctor ad caput
+<lb/>calefacientes quidem in lethargo et in omni grani sopore:
+<lb/>refrigerantes autem in phrenitide et quavis acuta sebre
+<lb/>conveniunt. Cataplasmata quaedam solo melle et oleo conficiuntur,
+<lb/>vocanturque emollientia. Quaedam ex aqua,
+<lb/>cui oleum sit adiectum, fiunt, quae crudam dilationem
+<lb/>nominant. Alia his insperguntur, veluti pollen, lini semen
+<lb/>et foenumgraecum. clysteres hydrelaeo, melle, sale -et
+<lb/>nitro modico praeparantur. Tempus eorum ante cibum
+<lb/>est, dum accessiones remittuntur et inclinant. In continuis
+<lb/>morbis diluculum. Phrenitis est mentis alienatio. Notae
+<lb/>iunxi insania vehemens, temeraria manuum gesticulatio,
+<pb n="14.733"/>
+<lb/>floccorum et festucarum collectio et febris acuta. Causam
+<lb/>habet magna ex parte bilem. Constituitur in cerebro vel
+<lb/>ejus membranis vel in Cepto transversio; quod diaphragma
+<lb/>nominatur. Curatio haec convenit. Initio si praescius
+<lb/>fueris, venae incisio, cucurbitulae conveniunt, subtractio
+<lb/>et clyster et abstinentia conveniens: instante autem morbo
+<lb/>pertusiones soporiferae, inunctiones, quibus somnus accersitur
+<lb/>et humectantes cibi conducunt. Cautus febris fpecies
+<lb/>ab Hippocrate quidem inter acutus, ut quartana inter
+<lb/>longos morbos refertur, a recentioribus nun ritum.
+<lb/>Oritur ex bile non nimis sicca, circa venas quae ad jecur
+<lb/>funi. Curatur in principio sanguinis missione: in statu
+<lb/>frigidae tum aliorum, quae refrigerandi vim obtinent,.
+<lb/>potio confert, vel epithema cujusmodi ex ferventi hydre- ,
+<lb/>laeo praeparatur. Angina est circa cervicem inflammatio.
+<lb/>Ejus speciem unam cynanchen appellant, quae in interiore
+<lb/>ipsius. parte orta subito strangulat: alteram fynanchen:
+<lb/>haec in exteriorem partem incumbit, eoque minus stran-.
+<pb n="14.734"/>
+<lb/>gulat minusque periculosa esu Uterque affectus vel a bile
+<lb/>vel a pituita falsa nascitur, idque nonnunquam cum febre
+<lb/>acuta, nonnunquam sine febri. Remedium et generosissimnm
+<lb/>et praesentissimum est sanguinis statim in principio
+<lb/>missio: deinde medicamenta pituitam per os educentia et
+<lb/>cerata foris imposita. Asclepiades ultimum auxilium pofuit
+<lb/>.in iis qui maxime suffocantur laryngem incidere.
+<lb/>Pleuritis lateris ab interiore parte inflammatio esu Huic
+<lb/>febris acuta, dolor vehemens et tussis accedit: a bile potiffimum
+<lb/>generatur. Praefinio est in initio adhibita venae
+<lb/>incisio : deinde cataplasmata et sicca fomenta , nempe. milii
+<lb/>et falis: postremo medicamenta intrinsecus purgantia,
+<lb/>quae pleuritica nominantur. Cavenda vero in his sunt
+<lb/>ventris profluvia. .Peripneumonia . nonnullis auctoribus
+<lb/>inflammatio gravis est circa pulmonem, idque gravitate
+<lb/>ostenditur. Quibusdam pulmo inflammationem pati non
+<lb/>posse videtur, fed vicina ejus loca, cum in dispositione
+<lb/>ejusmodi sunt, ea ut. ita .nominetur faciunt. Habet autem
+<pb n="14.735"/>
+<lb/>hic morbus febrem acutam comitem. Eadem ipsius
+<lb/>cauta, quae pleuritidem concitat, fecundum alios tamen
+<lb/>pituita. Remedium fere huic eum superiore malo cominune
+<lb/>esu Cordis affectus nominatur, non quod in corde
+<lb/>.affectus sit, sed quoniam stomachum veteres cor appellahaut,
+<lb/>quo in febri acula resaluto, aegrotus immodice disifulvi
+<lb/>contingit. Accidit fere ex immodica abstinentia vel
+<lb/>parum tempestiva venarum tectione vel cum aliquid praeter
+<lb/>rationem corpori adimitur. Quare alimento, quod facilo
+<lb/>distribui queat et recalsacere, succurrendum est: quemadmodum
+<lb/>ex vino ac nive: cibo qui ex valentiore materia
+<lb/>est et stomachum corroborare potest. Est cum visitevibus
+<lb/>inflammatis, potissimum jecloore, hic morbus eveniat:
+<lb/>cum e contrario ablatione et cataplasmatis inflatumationi
+<lb/>dicatis opus esu Regius morbus est bilis in
+<lb/>fummam cutem redundantia. Interim cum febri acuta
+<lb/>oboritur, interim sine illa, cum interiorum adustione et
+<lb/>stomachi vitio. Si praecordis inflammantur, cataplasmata
+<pb n="14.736"/>
+<lb/>primum desiderant: si copia subsit, -venae sectionem: sin
+<lb/>minus, medicamenta, quae bilem evacuant aut ventris
+<lb/>ductione et intestinorum , aut per urinas aut per sudores
+<lb/>aut per nares. Cholera duplex est fecundum Hippocratem :
+<lb/>altera humida, in qua, uti omnes norunt, vehemens
+<lb/>est excretio, bilis supra infraque erumpit, intestina graniter
+<lb/>torquentur. Accedunt convulsiones, saepe etiam
+<lb/>crurum turae contrahuntur.. Remedlo contractionibus sunt
+<lb/>perfusiones calidae in iis, quae contrahuntur, balneum post
+<lb/>expurgationem, tum alimenta, quae ex facili disponuntur
+<lb/>digerun torque et stomachum adiuvant. Alteram siccam
+<lb/>choleram vocat Hippocrates, ab eadem provenientem nausia
+<lb/>ac circa eadem consistentem, at citra ventris fluorem et
+<lb/>vomitum. Ideoque remissionem praecedentem et per cataplasmata
+<lb/>requirit, nec cibi ingestione, Ied contra inedia
+<lb/>opus esu Volvulus et culleus dolor intestinorum inflammationes
+<lb/>Iunxi quorum alter tenuioris, alter plenioris.
+<lb/>Quare dejectiones includuntur et flatus intestinis involuti,
+<pb n="14.737"/>
+<lb/>eo quod exitum non habent, dolores vehementes et tormina
+<lb/>concitant. Valvulas autem dispositione et accidentibus
+<lb/>acutior, magisque periculosus est. Alterutro autem
+<lb/>morbo extreme laborantibus vomitus concitantur. Auxilium
+<lb/>est volvuli maxime sanguinis missio per initium, plerumque
+<lb/>abstinentia et cataplasmata mitigantis et inflammationem
+<lb/>discutientis. Efficacius juvant medicamenta, quae
+<lb/>colica nominant, intro per fidem immissa. Nam dolores
+<lb/>auferunt, strumum conciliant et alvum movent. Apoplexia
+<lb/>ex humorum crassiorum copia generatur; qui capitiis vasa,
+<lb/>unde corpori sentiendi movendique facultas advenit, obstruunt.
+<lb/>Quamobrem apoplexia correpti sensu, voce et
+<lb/>motu privantur. Hippocrates de hoc vitio scribit, Apoplenium,
+<lb/>inquiens, .validam salvere non licet, imbecillem
+<lb/>haud facile. Sanguis mittendus statim jam oppressis , si
+<lb/>modo et aetas consentiat et vires sustineant. Tetanus,
+<lb/>opisthotonos et emprosthotonus , nervorum morbi existunt:
+<lb/>verum utraque species est convulsionis nervorum, qui a
+<pb n="14.738"/>
+<lb/>capite descendentes corpori motum distribuunt. Nam si
+<lb/>viscosi humores eos obstruant, affectio talis oritur. . Quae
+<lb/>si scapulis caput annectat, quo minus possit annuere,
+<lb/>opisthotonum: quum mentum pectori contrahit, ut renuere
+<lb/>nequeas, emprosthotonum: quum rectam et immobilem
+<lb/>cervicem tendit, tutanum appellant. Sanat venae sectio,
+<lb/>si copia subest: ut videre licet apud Hippocratem in illo,
+<lb/>qui prolapsus vulnus in caput acceperat. Medetur enim
+<lb/>eis et frigidae copiosae infusio, si aestas sit, praesertim si
+<lb/>non gracilis, test quadratus existat aeger: nam caloris revocationem
+<lb/>molitur. Multi Iane ceratis modice recalfacientibus
+<lb/>et relaxantibus utuntur, ad haec inunctionibus
+<lb/>similibus, necnon lanis oleo imbutis, atque impositis et
+<lb/>fomentis et cataplasmatis calidis. Longi morbi interioribus
+<lb/>accidunt hi, cephalaea, morbus comitialis-, vertigines,
+<lb/>oculorum caligationes, insania, melancholia, lethargus, distillatio,
+<lb/>raucitas; gravedo, sanguinis eruptio, suppuratio
+<lb/>in thorace, tabes, abscessus in medio latere, abscessus in
+<pb n="14.739"/>
+<lb/>claviculis, jecinoris affectus , tenesmus , dysenteria, lumbrici
+<lb/>lati, lumbrici rotundi, afcarides: coxarum dolor, articularis
+<lb/>morbus, podagra, elephautiasis ad exteriores partes
+<lb/>spectare videntur. Ex longis morbis cephalaea internus
+<lb/>capitis dolor est, qui in circuitu. interdum affligit a
+<lb/>pituita nascens: interim unam capitis partem infestat: tunc
+<lb/>heterocraniarn nominanti Auxilium utriusque est fanguinis
+<lb/>detractio, vel cucurbitulae occipitio impositae, eductio
+<lb/>pituitae per os, per alvum purgatio et epithemata ,. quae
+<lb/>inter cataplasmata vel malagmata vel illitus inscribuntur,
+<lb/>postremo causa ejus siuapismo restruatur. Morbus comitialis,
+<lb/>quem et sacrum vocant, circa nervorum, qui a capite
+<lb/>descendentes tensum motumque universe corpori distribuunt,.
+<lb/>originem consistit. cautam ejus Plato et Hippocrates
+<lb/>pituitam et bilem atram indicant. Homo concidit,
+<lb/>qui hoc malo detinetur, quoniam ei sentiendi movendique
+<lb/>meatus obturantur, spuma iis os ob humorum commotionem,
+<lb/>quae a nervorum convulsione provenit. Qua de
+<pb n="14.740"/>
+<lb/>causa interim urina sine voluntate prorumpit. Praesidium
+<lb/>affert pueris impuberibus natura circa pubertatem essiorefcens
+<lb/>et morbum humoribus nativo calore exiccati^ ter-.
+<lb/>minat. Qui pubertatem excesserunt , aegre aut nunquam
+<lb/>fanantur. Caligines oculis offusae. et vertigines cognata
+<lb/>sunt vitia morbo comitiali, ab eisdemque causis prodeunt,
+<lb/>atque easdem fedos: occupant. Hoc tamen intercedit difertminis,
+<lb/>quod illae in superficie corporis, non intus accidant,
+<lb/>ob quod facilius, quam hic, curantur alvi ductione,
+<lb/>praesertim per hleram , administrata, deinde apopblegmatismis
+<lb/>et vomitibus per circuitum partim a coena, partim
+<lb/>jejunis adhuc excitatis. omnium maxime veratro succurritur.
+<lb/>Mentis alienatio duplici specie insigni constat: tuania
+<lb/>.et melancholia. Complures vero et harum existunt
+<lb/>differentiae, nominum adhuc indigae. Constituitur itaque
+<lb/>mentis alienatio circa totum caput, Caput insaniae flava
+<lb/>bilis esu ob hoc qui tali vitio laborant, tumultuosi, praecipites,
+<lb/>manu prompti contumeliosique fiunt. Melancholia
+<pb n="14.741"/>
+<lb/>nascitur ex atra bile, humore frigido et tenebroso. Unde
+<lb/>melancholici tenebriones ac lucisogae tristesque apparent,
+<lb/>de omnibus suspiciosi, hominum consuetudinem
+<lb/>oderunt, solitudinibus gaudent, quemadmodum Bellerophontes
+<lb/>a Poeta describitur.</p>
+<p rend="indent">Qui miser in campis. errabat salus Aleis, .</p>
+<p rend="indent">ipsa suum cor edens, hominum .vestigia vitans. p
+<lb/>Medetur per ventrem purgatio et maxime, quae per vomitum
+<lb/>excitatur: adhuc his magis utrumque veratrum solviti
+<lb/>Lethargus morbus est phrenitidi contrarius; est enim.
+<lb/>profunda in somnum delatio et inexcitabili^ Hoc vitio
+<lb/>correpti omnium quae dicuntur obliviscuntur, atque haec
+<lb/>in febri ipsus comitantur. Locus igitur affectionis caput
+<lb/>est: nam in membranis cerebri constituitor. Caula ipsius .
+<lb/>pituita est, humor frigidus, frigiditate ac humiditate somnum
+<lb/>inducens. Curatio conveniens ea est, quae contraria ei
+<lb/>quae phrenitidi. Frictio superiorum corporis partium per
+<lb/>acria quaedam et pungentia et admotio rerum fuaveolenfiunt.
+<pb n="14.742"/>
+<lb/>Cibi similiter discutientes fecantesque pituitam
+<lb/>perfusiones capiti admoventur, quae exsiccandi vim obtinent
+<lb/>et cataplasma aliquando praecordiis. Crebro namque
+<lb/>haec inflammatione vexata nervorum quoque in capite
+<lb/>principium constringunt gravantque. Gravedo, raucitas
+<lb/>et catarrhus fiunt affectus qui fiunt ab humore qui ab oppleto
+<lb/>cerebro decumbit; quum in nares, vocatur gravedo,
+<lb/>quum in asperam arteriam, raucitas nominatur, quum in
+<lb/>thoracem,. catarrhus appellatur. Gravedini itaque facile
+<lb/>et brevi succurritur, deinde raucitati modico sane et culido
+<lb/>victu, qui frumentacei generis existat. Destillatio in
+<lb/>thoracem non ex facili curatur, imo saepe immedicabilis
+<lb/>esu Nam ab ea acri et salsa partibus exesis , sanguinis
+<lb/>eductio sequitur: cujus tres causae referuntur. Vel enim
+<lb/>vnsa erosionem passa sunt, ideoque fanguis lo asperam urferiam
+<lb/>descendens per os rejicitur: vel rupta sunt violenter:
+<lb/>vel ob imbecillitatem non continent, fed adaperta
+<lb/>oscula eum transmittunt. Differunt sanguinis excretio et
+<pb n="14.743"/>
+<lb/>rejectio. Haec etenim vel a pulmone vel aspera arteria
+<lb/>provenit: ilia a stomacho et fanguis apparet nigriora Qui
+<lb/>ex thorace rejicitur, flavus magis et spumans: deinde hic
+<lb/>cum tusse, alter sine ilia spuitur. Saepenumero etiam a
+<lb/>capite per palati foramina in os defertur fanguis, pravbetqne
+<lb/>eductionis fassam imaginem. Loci, ex quibus proprie sanguis
+<lb/>educitur, tres lunI. Primus fauces, unde minore
+<lb/>cum periculo fanguis rejicitur, faciliusque sistitur. Secundua
+<lb/>aspera arteria, atque hic morbus curationem dissiculter
+<lb/>accipit, plenusque periculi est. Tertius pulmo, ubi
+<lb/>minus omnibus praesidii, plus periculi affectus habet.
+<lb/>Comitatur enim maxime suppuratio et tabes, ut ait Hippocrates,
+<lb/>cujus verba haec sunt. Sanguinis spuiuonem
+<lb/>puris spuitio, hujus sepultionem tabes, tabem mors sequitur.
+<lb/>Nonnulli etiam ex latere sanguinem educi arbitrantur. At
+<lb/>hoc ambiguum est. Salus vitii hujus est, sanguinem reprimore
+<lb/>vel venae sectione alio ducentem , idque polistimuni
+<lb/>in juvenibus, vel polos sistentem vel inedia copiam
+<pb n="14.744"/>
+<lb/>ejus imminuentem ; vel simplici quodam medicamento, ut
+<lb/>acacia, hypocistide, balaustio, plantaginis succo, atque id
+<lb/>genus aliis. Suppurationis. praesidium vetus- funt serramenta
+<lb/>candentia, quae thoracem exiccent; fluoremque in
+<lb/>exteriores partes dirigant. Recentiores consueverunt mitigare
+<lb/>cataplasmatis et delingendis medicaminibus, deinde
+<lb/>cito repurgare medicamentis per os assumptis prius, quam
+<lb/>corpus exedatur. Inscribuntur autem proprie medicamenta
+<lb/>ad purulentus. Quae suppurationes medio latere conitituuntur,
+<lb/>reiectae proprie ad linamentum, humoris exeretionem
+<lb/>habent: quae si universirm fiat, hominem interimiti
+<lb/>Accidunt vero suppurationes quoque sub transverso
+<lb/>septo i quaere intus occultantes abscessus nominantur, non
+<lb/>ex aequo periculosi, nec curationi resistentes, plerumque
+<lb/>intus rupti hac excernuntur; vel partibus exterioribus divisis.
+<lb/>Diocles memorat- etiam thoracis suppurationes erumpentes
+<lb/>interim in arteriam, quae ad renes- ac vesicam
+<lb/>tendit, simul cum urinis excerni^ q Tabes proprie: dicitur
+<pb n="14.745"/>
+<lb/>in pulmone. ver in thorace, corporis ob suppurationes
+<lb/>colliquatio: difficilis ejus salus est aut nulla. Lactis usus
+<lb/>potui datur, dum consistit: loca sicciora conveniunt Superior
+<lb/>Aegyptus et Libya maxime huic malo medentur.
+<lb/>Hippocrates tabis cuiusdam coxendicum meminit, Ischiadicam
+<lb/>vocans, qua in suppurationibus circa os saerum accrdentibus
+<lb/>corpora colliquescunt. similiter alterius renum
+<lb/>nephriticae. Porro jecinoris et lienis inflammationes si in
+<lb/>pus vertuntur et ipsae mediocriter corpus consumunt. At
+<lb/>hae suppurationes multo citius curantur, minusque pericaldae
+<lb/>sunt, quam quae pulmonem affligunt. Verum si
+<lb/>minus in suppurationes mutantur inflammationes, .sed crudae
+<lb/>et in scicrhi natura permanserint, malum habitum
+<lb/>corpori afferentes; tandem aquam inter cutem afferunt.
+<lb/>Quatenus autem simplices extiterint, in jecinore, febres
+<lb/>continuas afferunt: in liene, quartanas magna ex parte ;
+<lb/>nam hujus speciei causa bilis atra est, quae in liene tanquam
+<lb/>vale continetur. -Unde quartanae auxilium est, ante
+<pb n="14.746"/>
+<lb/>rigorem Intumas partes .propter humoris frigiditatem fomentis
+<lb/>-tueri. In intermissionibus eductio per vomitum.
+<lb/>Hydropis tres sunt species ex sententia neotericorum, . asicites,
+<lb/>tympanites et anafarca. Hippocrates duas statuit, nam
+<lb/>tympanites et ascites furi ejusdem speciei, quoniam in
+<lb/>utraque nutrimentum in aquam redactum inter intestina
+<lb/>et peritunaenm tranato n ditor. Sed in hac aquae plus,
+<lb/>quam spiritus, in unum lotus contrahitur: in. illa copiosior
+<lb/>.spiritus , minor humiditas est: in .reliqua stolidae totius
+<lb/>corporis partes in aquae naturam transeunt: hanc et
+<lb/>Hippocrates. medicabilem esse scribit, vocatur autem et leucophlegmatia.
+<lb/>Causa vero cujusque hydropis est, auctore
+<lb/>Erafistrato, inflammatio jecinoris vel lienis, temporis fpatio
+<lb/>in fcicrhum indurata. ,Nam quum alimenti in his
+<lb/>visceribus confectionem atque lu .totum corpus digestionem
+<lb/>impediat, in aquae substantia ipsum commutat, quod
+<lb/>ita refrigeratum inter intestina et peritunaenm transnat;
+<lb/>titur. Hoc quoque malum Hippocrati salutis spem. nullam
+<pb n="14.747"/>
+<lb/>habet. Quod si vel absque inflammatione hydrops , praefertim
+<lb/>an asiaces eveniat , calore genuino refrigerato, neo
+<lb/>alimentum in venis amplius edomante, . sanguis caloris
+<lb/>inops aquae naturam induit et ex venis, ceu oleum ex
+<lb/>utribus desinit. Quousque enim sanguis exactus in vanis
+<lb/>est, ab earum corpore continetur. Ubi vero in eo pingue
+<lb/>exupera verit, ut in .obesis, fanguis effusus adipem generat
+<lb/>, aut in aquam versus, aut dum non continetur, diffluit
+<lb/>in locum qui medius est f uter intestina et perito-.
+<lb/>naeum, aut per universum corpus effunditur. Tolluntur
+<lb/>duo alii hydropes vel ex malagmatis exiccantibus, vel medicameutis
+<lb/>urinas cientibus, vel hypelatis purgandi lacuitate
+<lb/>praeditis. Renes affecti dolores magnos pariunt. Loeus
+<lb/>autem male. habens non ex facili potest discerni, quod
+<lb/>exterioribus partibus cohaereat et colon ipsis incumbat,
+<lb/>quare. dum in eis est abscessus, vel inflammationis partium
+<lb/>externarum vel colici doloris speciem praebent. Non
+<lb/>raro eodem affecto intestino renes consentientes dolent.
+<pb n="14.748"/>
+<lb/>Assectus autem, qui in eis consistunt; hi sunt, inflammatio,
+<lb/>exulceratio, calculi, imbecillitas. Quum inflammatio
+<lb/>renes exercet, nihil. per urinam innotescit, : fed dolores
+<lb/>excitantur potius, non exacte locum primum dolentem
+<lb/>ostendentes, ob eam, quam dixi, rationem, verum intolerabiles:
+<lb/>quippe qui nec cataplasmatis cedant,nec detra-. aliene
+<lb/>per cucurbitulas facta remittantur: fola medicamenta
+<lb/>nephritica intus accepta praesidio sunt. Si exulceratio eos
+<lb/>infestat, interdum purulenta per urinas excernuntur, luturdum
+<lb/>cruenta. Quum inest calculus, aliquando cruenta,
+<lb/>partibus videlicet ab eo exasperatis, ejiciuntur, aliquando
+<lb/>arenulae. in. urina subsident, si friabilis sit lapis vel etiam
+<lb/>recens modo .nascatur. - In imbecillitate sanguinolenta
+<lb/>f trina redditur, quasi nondum segregata. Vesicae assectus
+<lb/>hi sunt, imbecillitas, furiuratio, calculus, exulceratio, circa
+<lb/>collum maxime. His accedit urinae suppressio ejusque
+<lb/>difficultas et stillicidiutn. Exiliis vero aliisque causis proficiscuntur.
+<pb n="14.749"/>
+<lb/>Inflammationis notae funt circa pubem dolores,
+<lb/>urinae excernendae difficultas. Solvitur cataplasmatis,
+<lb/>perfusionibus et a cibo abstinentia. Quod si excedat, suitguinem
+<lb/>quoque per venam mittere convenit. Exuleeralienis
+<lb/>iudicia sunt, sanguinolenta excretio interdum, interdum
+<lb/>purulenta, nonnunquam muttis et cfrca pubem
+<lb/>dolores. Auxiliantur epithemata, maximeque dulcis bousque
+<lb/>succi alimentum ad haec, quae intus adhibentur</p>
+<p rend="hanging">.. adversus ulcerationem vesicae et Byssini medicamentum.
+<lb/>Imbecillitatem vesicae innuit et urina, cum citra mejentis
+<lb/>voluntatem effluit. Difficilem morbus curationem, aut
+<lb/>nullam recipit. Lapidem in vesica esse, digiti in rectum
+<lb/>intestinum per sedem immissi exquisitissime deprehendunt,
+<lb/>sed ita, ut iudex ad medium in summo reflectatur, atque
+<lb/>in priorem vesicae partem, ubi et lapidem innatantem
+<lb/>contingunt, reseruntque in vesicae cervicem. Calculorum .
+<lb/>differentiae plures.sunt; quidam enim illorum adnati sunt,
+<lb/>alii possunt auferri. Rursus aliqui facile frangi possunt,
+<pb n="14.750"/>
+<lb/>nonnulli non possunt. Itaque magna ex parte adnati
+<lb/>difficulter curantur, alii qui facile franguntur, alii qui difficile;
+<lb/>itaque vix sanabiles sunt ut plurimum adnati. Ex
+<lb/>aliis autem, qui facile franguntur, dissolventibus medicamentis
+<lb/>excerni possunt. Duros vero et vix sulubiles chirurgi
+<lb/>tollunt, carunculam dividentes vesicae cervicis. lscburia
+<lb/>summa est urinarum retentio: stranguria urinae stillicidium:
+<lb/>dysuria urinae difficultas. Atque haec .multis e
+<lb/>causis proveniunt, aliquando calculo vesicae cervini impacto
+<lb/>, ac meatum in totum obstruente , vel si intus qnippiam
+<lb/>relictum sit aut vesicae innatet. Urinae retentio
+<lb/>propter vesicae inflammationem nimiam aut repletionem
+<lb/>immodicam accidit, vesica scilicet ad excretionem imbecilla,
+<lb/>aut cervice vehementer ex urinarum acrimonia per
+<lb/>morfum contracta , aut ex grumis sanguinis iter occludentibus,
+<lb/>aut ex minarum adhaerentium crassitie. Coctis igi-.
+<lb/>tur iis quae excernuntur, ejusmodi crassitiem trahere oportet,
+<lb/>grumum vero medicamentis liquefaclendi vim habentibus
+<pb n="14.751"/>
+<lb/>dissolvere. Plenitudinem vacuare ferramento, quod
+<lb/>Erasistratus catheterem nominat Romanae literae S simili.
+<lb/>Stomachus ventris et intestinorum principium est, sive naruraliter,
+<lb/>sive praeter naturam afficiantur. stomachi igi- .
+<lb/>tur vitis tunt, inflammatio, exulceratio, sanguinis eductio,
+<lb/>inflatio, humiditas flaccida, cibi fastidium, ingesto rum cihorum
+<lb/>incontinentia. Inflammationem ergo notat dolor
+<lb/>incumbens. Succurritur perfusionibus et cataplasmatis, alimentis
+<lb/>frumentariis et quae facile possint digeri. Exulcerationem
+<lb/>in stomacho notant proprie putredo, m or d i catio,
+<lb/>deglutiendi difficultas. Auxiliantur his extrinsecus
+<lb/>imposita, cibique probe succulenti. Sanguinis e stomacho
+<lb/>eductio iisdem medicamentis sistitur, quibus ex thorace:
+<lb/>ejusdem remotio, iis quae superius adnotata sunt. Inflationem
+<lb/>dissolvunt discutientis et quae ructus movent. Humiditatem
+<lb/>siccorum usus et absinthii potio tollunt. Cibi
+<lb/>fastidium aut ex.pituita adjaceute oritur, ideoque exiccare
+<lb/>illam ex usu est: aut a bile supernatante, unde .stomachus
+<pb n="14.752"/>
+<lb/>purgandus est: aut non potente naturali functione appetitum
+<lb/>reddere. Nam oculi quoque propter spiritus viforii
+<lb/>imbecillitatem siallucinantur. Adversum cibi fastidium hujusmodi
+<lb/>adhibenda funi, quae appetitum provocentyfuppeditentque.
+<lb/>Stomachus autem non conticet accepta propter
+<lb/>humiditatem, maxime vero ob impotentiam ac imbecillitat
+<lb/>em, sicut dimissa manus non continet, quae attingit.
+<lb/>Expedit igitur- corroborare, fortioremque ipfu m reddere,
+<lb/>tum universum corpus reficere. .Ventrem multa vitia stomacho
+<lb/>communia infestant, praeterquam appetentiae pravitas.
+<lb/>Sed concoctionis male obita functio ventriculo
+<lb/>propria tribuitur, ut quae potissimum in eo administretur:
+<lb/>quem affectum diarrhoea loquitur. Reliqua igitur pari
+<lb/>modo cum iis , quae stomachum cruciant, curabis. Fluxus
+<lb/>exacte difquirendus est, cur alimento incocto accidat: et
+<lb/>si inflammatio eam pepererit, cataplasmatis et profusionibus
+<lb/>occurretur. Si pituita humiditatis illius flaccidae pareus
+<lb/>, victus ratione exiccanda est. Si bilis exuperet, eam
+<pb n="14.753"/>
+<lb/>purgare utile esu Si. ex imbecillitate provenit, ut insirmis,
+<lb/>robur corpori faciendum esu .Si : ab ipsa qualitate
+<lb/>eorum , quae . concoctu difficilia assumpta sunt vel quae
+<lb/>prompte corrumpuntur ver quid alienum habent, posticorationem
+<lb/>talia: oportet interdicere. r Dysenteria intestinurum
+<lb/>est assectus generatus in ventris profluvio, humoris
+<lb/>busb corruptis immorantibus , erodentibus et exulcerantibus
+<lb/>intestina.- Fit etiam sine fluxu, primum ab humore acri
+<lb/>intestina intus exedenti. Est cum .in morbidecessione dysenteria
+<lb/>contingat, quam curari Hippocrates prohibet; ne
+<lb/>suppressio alium quempiam morbum majorem accersat.
+<lb/>lam quae ex: fluore nata est, reprimentibus et sistentibus
+<lb/>fluorem medicatus: aliam, cujus origo ex acris cuiusdam
+<lb/>humoris rosione est,- dulcorantibus et quae mitigarepossint;
+<lb/>abluendo ipsa exulcerata , similibus. Diuturno tamen
+<lb/>morbo depasta ulceris .ramenta et putrida solent dejiei,
+<lb/>tum prosunt immissi pastilli ex sandaracha, calce, auris
+<lb/>pigmento., atque id genus aliis compositi. Ubi vero non
+<pb n="14.754"/>
+<lb/>sit ramentofa ulceris dejectio, non. his utendum est, quousam
+<lb/>convulsionem -faciunt. Quod si talis intestinorum
+<lb/>.exulceratio in superiore quoque parte consistat, neque sic
+<lb/>pastillorum usus est: non enim statim ad affectos locos
+<lb/>perveniunt; nam ubi sanos .contingunt .perniciem cissaciunt:.
+<lb/>verum medicamentis utendum. est, quae fuperiorihus
+<lb/>locis. conveniunt, quorumque titulus est adversus dyfenteriam
+<lb/>inditus. Ex dyscnteria intestinorum laevitas
+<lb/>oritur, ubi. ex magna ulceratione multae cicatrices iute;
+<lb/>struis oboriuntur, propter quas cibum non retinent : unde
+<lb/>ex intestinorum laevitate vocata est leienteria. Quamobrem
+<lb/>talis est insanabilis , cicatrices namque non sanescunt. Si
+<lb/>vero ex intestini imbecillitate contigerit, tum. quoque
+<lb/>gravis est, nec ex facili tollitur.- Remedium autem erit,
+<lb/>si moliaris robur univerit, corpori ac intestinis adjungere.
+<lb/>Caeterum causa .etiam morbi plluitaest, intestinis lubri-citatum
+<lb/>illuendo generans. Succurrit. media resiccando et
+<lb/>cibi pituitae contrarii. Teneamus proprie morbus est recti
+<pb n="14.755"/>
+<lb/>intestini. Hoc enim inflammatione laborans , crebrae
+<lb/>inanesque egerendi cupiditates et impetus exercent. Prosunt
+<lb/>ei fomenta parti inferiori adhibita, stringentia, tum
+<lb/>alimentum ex frumen tacea materia et reprimens. Quod si
+<lb/>perseveret nihiIque imminuatur, enematibus ex ptisanae
+<lb/>cremore et hircina adipe utendum est. humbri cor n m qui
+<lb/>intestina excruciant triplex est species. Quidam enim
+<lb/>teretes, paImi Iongitudine vel etiam majore, ad stomachum
+<lb/>usque proserpunt. Quidam breves et minusculis vermibus
+<lb/>similis, ascaIides appellantur, circa rectum vero intestinum
+<lb/>generantur nonnulli lati et oblongi adeo ut in totum exporrigantur
+<lb/>intestinum: quos fascias vocant, quod similes
+<lb/>fasciis sint. Teretes itaque ad remedia faciles, maxime
+<lb/>autem in pueris i afcarides in iis, qui sub pubertatem sunt,
+<lb/>abundant: aeg^e praesidiis cedunt et excernuntur, nili cibis
+<lb/>acrioribus et medicamentis ex lucra compofi is et helenio
+<lb/>maxima ex parte injectis. lschias, arthritis vitia et
+<lb/>podagrae sola inter fe magnitudine differunt: caeterum
+<pb n="14.756"/>
+<lb/>causis et locis, qui affectum primum sentiunt, iisdem
+<lb/>constant: a pituita namque plerumque fiunt: circa nereus
+<lb/>consistunt, quibus articuli conseruntur, motumquc recipiunt.
+<lb/>Ac ischias in ipsius coxae articulo ortus ad talos usque
+<lb/>non raro extenditur. Praesidio erit sanguis ex talo miflus,
+<lb/>cucurbitulae coxis admotae, clysteres actes, quique
+<lb/>intestinorum tormina quodammodo faciunt. Et foris cataplasmata
+<lb/>acopa et malagmata adhibita prosunt. Podagra
+<lb/>solus pedes astligit. In statu quidem fabrilis dolor intenditor,
+<lb/>coque refrigerantibus opus est. In declinatione
+<lb/>torpor cum frigore hominem occupat, ob quod calesacientia
+<lb/>conducunt. At arthritis vera praedictis similis assectus
+<lb/>est, circa articulos omnes consistens: medicamenta
+<lb/>curatoria, mitiganda ceromata et victus rationem aptam
+<lb/>desiderant. EIephantiasis affectus est, qui ab elephanti
+<lb/>similitudine nomen sortitus est. Nam qui hoc vitio
+<lb/>borant, cutem crassam, duram, elephantorum modo asperatam
+<lb/>habenI. Originem mali excitat pituita crassa et assa
+<pb n="14.757"/>
+<lb/>bilis vel mucosa, maxime disseminata. Hi enim humores
+<lb/>ferinum. ipsum denunciant. Quare solum veratrum sive
+<lb/>nigrum, sive album, praesens elephantiasis est remedi u me
+<lb/>Quidam ex veterioribus affectum illum in sex partes dividunt,
+<lb/>in elephantiasin , leontiasin , ophiasin , alopeciam
+<lb/>et mutilationem. Elephantiasin igitur appellunt affectum
+<lb/>in cute et pedibus elephanti simiIem , hi enim crassas pedes
+<lb/>habent qui scilicet hoc morbo corripiuntur non secus
+<lb/>ac illi. Leontiasi vero laborare dicunt eos qui tumentes
+<lb/>eruptiones habent aut oedematosas et qui leonum instar
+<lb/>fulvi sunt. Ophiasin autem vocant affectum, quo correpti
+<lb/>peste ut serpentes exuuntur. Alopeciam vero deducta metaphora
+<lb/>ab illis animalibus. Mutilationem, quae summa
+<lb/>manuum et pedum labefacit, privatos quoque ejusmodi
+<lb/>partibus, mutilatos appellamus. Lepram quae cutem exasperat,
+<lb/>quemadmodum in leprosis fieri videmus. Impetigo
+<lb/>vero et ipsa cutis affectus est. Impetiginis duae species
+<pb n="14.758"/>
+<lb/>sunt, quae cutem molestant:. una tolerabilis mitiorque.
+<lb/>est:- altera effera, quae difficrllus tollitur. . Squamulae. inhis
+<lb/>ex cute abscedunt, fub quibus locus rubicundior fereque
+<lb/>. exulceratus apparet, Gignitur assectus a -pituita salia
+<lb/>et flava bile: unde, ceu in salsugine vasis fictilibus, ex
+<lb/>cute secedunt squamae. Succurritur medicamentis pituitam
+<lb/>. moventibus et quae extrinsecus corpori illinuntur.
+<lb/>Lepra quoque cutis .vitium est, fed magis subalbidum
+<lb/>asperiusque apparet. Ea vero asperitas est veluti pfydraciorum
+<lb/>erumpentium. Picra vero exulcerata magis esu
+<lb/>Pituita falsa utrumque malum proprie producit. Medicamenta
+<lb/>pituitam olentia,- tum quae extrinsecus illinuntur,
+<lb/>quibus ad lepram et scabiem titulus est, iisdem succurrunt.
+<lb/>Uitiligo duas habet species, albam et nigram. Haec
+<lb/>ab atra bile generatur, ob quod magna eit partu medicamina
+<lb/>melancholiae dicata conveniunt: alba a pituita non
+<lb/>salia. Leuce habet quiddam simile vitiligini albae, test
+<lb/>magis colore terram albissimam refert : a lepra variat,
+<pb n="14.759"/>
+<lb/>quod lenior huic cutis minusque aspera quam in illa fui
+<lb/>omnia hujusmodi curant medicamenta pituitae trahendae
+<lb/>idonea, tum smegmata foris adhibita. t roui -i</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="indent">[De optimae purgationis compositione.]:
+<lb/>Componitur autem ad internos humores purgans medica-.
+<lb/>mentum ex deobstmentibus, incidentibus , attenuantibus,
+<lb/>vias reserantibus, impellentibus, purgantibus et edomantisbus
+<lb/>vitium medicamentis et stomacho utilibus et itnmbde-:
+<lb/>ratum profluvium compefcen tibus. Deobstruentia itaque,
+<lb/>funt quaecunque laxant et corpora meabilia efficiunt. In-.
+<lb/>ridentia vero; quae humores incidunt et alios quidem in-.
+<lb/>crassando, alios vero attenuandononcoquunt.. Vias autum:
+<lb/>referantia funt, quae deducunt ac praemittunt: medicamenta
+<lb/>in quas volumus partes, ut ad heparquum purgare
+<lb/>volumus, sandala, ad lienem veno fcolopendrium; ad renes
+<lb/>vero et ischia centaurium et thlaspi; ad posteriorem
+<lb/>capitis partem paeonia e t:.stoechas; ad anteriorem: -vero ob
+<lb/>fanrpsuchus et similia; ad sternunt et pulmonem et thuracem
+<pb n="14.760"/>
+<lb/>ret cor et metaphrenum et intestina glycirrltixa, styrax,
+<lb/>femen foenugraeci, amygdala,- crocus et femen mercuria.lis ;
+<lb/>ad commissuras et articulos uterque hermodactylus et
+<lb/>adallas partes alia,.quae. ex dictis coniicienda fune Impellentia
+<lb/>sunt quaecunque medicamenta movent ac impellunt,
+<lb/>ut agaricum, eris, rheum Indicum , stachys, interior
+<lb/>pars .colocynthidis, tragacantha , fcamouium, aloe vel suceus
+<lb/>brassicae vel rosarum vel semina; similiter sal fossile;
+<lb/>epithymum., quemadmodum euphorbium , bdellium et helleborus,
+<lb/>radiculae femen, lurpetum, chryfirbalanus et my.robalana,
+<lb/>bryonia .et elaterion sal , quibus quidem annumeramus
+<lb/>pytyufae radicem, hermodactylunr rotundum
+<lb/>et aliis peraeque similibus,. quae in libris de optima eompositione
+<lb/>secundum. partes declaravimus; ac quae defunt
+<lb/>inde ducenda tuus. - Purgantia vero fiunt quaecunque hic
+<lb/>purgant et quae in opere de simplicibus medicamentis a
+<lb/>nobis scripta sunt. Edomantis autem malitiam funi quaecunque
+<lb/>medicamentorum: noxis advertantur proprie, ut
+<pb n="14.761"/>
+<lb/>agarici noxae zingiber, tueri scammoniae, mastiche veI
+<lb/>gummi Arabicum vel caphura vel malorum cotoneorum
+<lb/>succus, colocynthidis vero amygdalinum oleum; turpeti
+<lb/>autem fynapium; ut hellebori castorium vel mulsa et enpborbii
+<lb/>cinnamomum. Alosis vero mastiche, quemadmodum
+<lb/>ipsam promovet smyrnium et .caetera quae a nobis
+<lb/>in opere de optima compositione dictumest... Eustomacha
+<lb/>sive quae stomachum roborant, ephectica quae immoderatam
+<lb/>medicamentorum vacuationem reprimunt,. quae roborant
+<lb/>ac continent -et suscitant naturales facultates. Sed
+<lb/>in particulari, ut ea quae modum excedunt eximant, jam
+<lb/>a nobjs demonstratum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p rend="indent">[De curationis per .medicamenta divisione.]
+<lb/>Pharmacia duplex esu .Prima. .interior es. morbos
+<lb/>curat, qua potissimum victus ratione sanans utitur: altera
+<lb/>exteriores, citraque illam manu nihil peragitur. .Medicaminum
+<lb/>ad interiora pertinentium species duodecim. existunt.
+<lb/>Quaedam capitis affectibus dicata medicamina: quaedam
+<pb n="14.762"/>
+<lb/>oris vitiis accommoda dicuntur. Alia concoquunt : alia
+<lb/>bechica. Alia anodyna, alia alexipharmaca sunt: alia purgant.
+<lb/>Nonnulla proprie hepatica, sic fplenica, nephritica.
+<lb/>Sunt quae adverfus vesicae calculos et ulcera nomen habent,
+<lb/>similiter ad vulvam. Jam vero stomatica sunt, quae
+<lb/>ad gingivas cruentas, putridas , erosas .et dentes faciunt.
+<lb/>Eodem referuntur, quae aphthas et crustas, tum quae uvam
+<lb/>descendentem fanant. Quae concoquunt., partim ad stomachi
+<lb/>vel. ventriculi imbecillitatem conducunt, partim ad
+<lb/>horum inflammationem, quaedam ad sanguinis rejectionem
+<lb/>e pectore. . Quaedam ad pleuriticos vel peripneumonicos:
+<lb/>alia ad tabidos, alia ad asthmaticos vel quiorthop nosci
+<lb/>vocantur; Aliqua ex his asperitatem ameriae et vocis ahscissionem
+<lb/>auferunt. Porro. anodyna nunc. renum assectus
+<lb/>fedant, nunc: ventris profluvia v alias dysenterias, alias colicum
+<lb/>dolorem, coli et ileum., id est communiter omnia
+<lb/>quemuis dolorem mitigant extinguntque. Alexipharmaca
+<lb/>simplicia, alia ad aliud venenum usurpamus: theriace adversus
+<pb n="14.763"/>
+<lb/>omnis et prius et post sumitur. Inter purgantia
+<lb/>quaedam per fsuperiores. . corporis partes agunt, quemadmodum
+<lb/>quae veratro constant, vomitumque. cientis omnia.
+<lb/>Per inferiores, quae ex scammonia, aloe, elaterio, colocynthide,
+<lb/>euphorbio, cocco gnidio atque luis similibus.
+<lb/>Tertio ordine ab his ponantur quae lumhricos latos repellunt:
+<lb/>cujusmodi medicamentum est quod cerri cornu,
+<lb/>menta et pipere praeparatur. Est et quarta species caput
+<lb/>tantum per os atque nares purgantium, quae in capitis
+<lb/>oculorutnque affectibus proprie sumuntur. Ad haec quae
+<lb/>in arquato crebro in. usu sunt. Convenit autem per su-.
+<lb/>puriora purgatio morbis longis demoliendis. Tempus hujus
+<lb/>est, cum morbi intermittunt. lnferiori parte adhibita,
+<lb/>acutis, ut pleuritidi et peripneumoniae. Tempus vero
+<lb/>univerfae est particularium accessionum remissio. Exteriornm
+<lb/>remedia .undecim species continent, alia discutiunt,
+<lb/>alia concoquunt, alia cruentis statim imponuntur, alia pus
+<lb/>movent, alia repurgant, alia implent, alia reprimunt, alia
+<pb n="14.764"/>
+<lb/>cicatricem inducunt, alia oculis, alia universa corpori
+<lb/>adhibentur, alia adurunt, erysipelatis, herpetibus carbunculis
+<lb/>idonea. Alia sunt, quae illinuntur, acopa et exeas
+<lb/>facientia, quae ad nervorum resolutiones faciunt, articalorum
+<lb/>morbos, podagras, tetanos, opisthotonos omnemque
+<lb/>nervorum morbum. AIia pistulas summa cute orientes
+<lb/>leucen , alphum ,t impetiginem et lepram abstergunt. Quae
+<lb/>digerunt et concoquunt, phymatis et cuilibet id genus
+<lb/>abscessum auxilio sunt. Digerentia sunt omnia, quae constant
+<lb/>sale et quaecunque etiam nitro, ut CtesiphonIis compositio
+<lb/>testatur. Concoquenda,. resina, galbano, ammoniaco
+<lb/>thymiamate. Quae cruentis imponuntur pharmace, fusci
+<lb/>coloris, ad recentia corporis vulnera valent. Quae Proprie
+<lb/>viridia et nigra sunt, ut barbarum, capitis maIa et
+<lb/>canum morsus sanant. In ulceribus partim pus educentibus
+<lb/>in his, quae laborant inflammatione , utendum eIIt
+<lb/>ut tetrapharmaco : in sordidis vero repurgantibus, ut viridi
+<lb/>diluto: in caVis replentibus: in carne fupercrescenti
+<pb n="14.765"/>
+<lb/>reprimentibus, ut quae ex misy et squama conficiuntur,
+<lb/>in vehementi quoque sanguinis fluore sistendo non parum
+<lb/>efficacibus. Adurentibus interim in diducendis partibus
+<lb/>ac aperiendis utimur, veluti n abscelsuum comprehensione,
+<lb/>interim in paIpebris quum summa cutis relaxatur et procidit
+<lb/>vice suturae pilis mediocriter ablatis, partem relaxatam
+<lb/>retrahimus. Aliquando in cephalaea per altas crustas
+<lb/>humores in exteriorem educentes assumimus. Adurentium
+<lb/>materia, lixivium, calx viva, auripigmentum^
+<lb/>sandaracha, saccina, atque id genus alia. Ex cepbalicis
+<lb/>medicamentis, t ad achoras, capitis furfures et eruptiones
+<lb/>valent alia: ad capitis dolorem et heterocraniam alia.
+<lb/>Aurium remedia partim earum inflammationem, partim
+<lb/>exulcerationem, partim puris effluxum , partim difficilem
+<lb/>auditum, partim contusionem juvant. Oculorum pharmaca
+<lb/>septem species habent. Quaedam enim ad incipientes lippitudines,
+<lb/>ut quae ex gIaucio et ex croco et cycnaria inscribuntur.
+<lb/>Quaedam ad eorum dispositiones, ut nardina
+<pb n="14.766"/>
+<lb/>et theodotia appellata. Quaedam ad fluorem, quae ex thure,
+<lb/>acacia et ericae fructu componuntur. Quaedam ad sestbritiem
+<lb/>, ut ex metaIIis confecta, nempe usto aere, chalcitide
+<lb/>et aeris squama. Quinta ad siccam lippitudinem et
+<lb/>scabiosum collyriorum species est, tum siccorum oxvdercicon,
+<lb/>ejusdem cum superioribus materiae. Sexta humidorum,
+<lb/>quae ad suffusiones inscribuntur, ex saliis generibus
+<lb/>hyaenaeque potissimum composita. Septima cataplasmatum
+<lb/>fpecies in ocuIis vehementer inflammatis et circundoIentibus
+<lb/>usurpatur, ex meliIoto, pasto, foenugr.leco similibusque
+<lb/>materiis confecta. Oblinimus paIpebras initio repeIlentibus
+<lb/>et eujnsmodi sunt quae ex gIaucio et croco medicamina:
+<lb/>etiam soIo ipso gIaucio. Interius asseclis
+<lb/>exiccantia lenientiaqne admovemus, ut nardina, theodotia.
+<lb/>Quae vero ad colorem decoremque formae conciliandum
+<lb/>illinuntur, qualia hedychroo et fandice constituuntur, non
+<lb/>medicinae, sed artis cultui ac elegantiae dicatae sunt
+<lb/>propria.
+</p>
+<pb n="14.767"/>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+
+
+<p rend="indent">[De oculorum aspectibus.] Assectus,
+<lb/>qui totum oculum exercent, hi sunt, perturbatio, lsppitudo,
+<lb/>epiphora, inflammatio, oedema, inflatio, durities, chymosis,
+<lb/>carbunculus, strabismus, convulsio, palpitatio, myopiasis
+<lb/>, gangraena, putredo, incus, fistula, xerophthaImia,
+<lb/>psorophthaImia , sderophthalmia , procidentia, atrophia. lnl
+<lb/>membranis hi consistunt, ruptura, exesto, distentio, anastomosis,
+<lb/>crassities, densitas, corrugatio, extensio, raritas.
+<lb/>Interiores palpebrarum partes infestant aspritudo, crassities,
+<lb/>sycosis, tylosis, durities, chaIaxosis, pladarotes , mydesis,
+<lb/>famosis, pori a sis. Exteriores hydatides, inhiatis,
+<lb/>phthiriasis, meliceris , gangraena, pbymata, colobomata.
+<lb/>In corona crithe, posthia , trichiasis, distichia, tristichia,
+<lb/>phalangosis, pyrosis, ptilosis, psoriasis, madarotes, paralysis.
+<lb/>Communes toti palpebrae paralysis, procidentia, inversio.
+<lb/>Angulis hi accidunt, encanthis, ancyle, pterygion
+<lb/>, rhoeas, prosphysis. Extrinsecus aegilops, anchilops.
+<pb n="14.768"/>
+<lb/>Album affigunt psydracion ulcus, hyposphagma , ablues
+<lb/>sus, chemosis, cocloma , pterygion , phacosis , icterus, to.
+<lb/>phus. Itidem oculi infestant, argemon, nephelion, achlys
+<lb/>epicauma, ulcus, bothrlun , phIyctis, myocephalon , sta
+<lb/>phyIoma, hypopyon , ruptura, cicatrix, Ieucoma, coeloma
+<lb/>proptoma, unguis, pyolis, exulceratio. In popilia etsi
+<lb/>lolent effusio, gIaucosis, mydriasis, phthisis, synchvsis,
+<lb/>platycoriasis , amaurosis , rhytidosis , nyctaIops, hameralops,
+<lb/>mvopiasts, diapyes. Meatus exercent aporrhexis, paremptolis,
+<lb/>symptosis, helcosis, anthracosis. Perturbatio igitur
+<lb/>est, quum oculus leviter ac mediocriter commotus tandem
+<lb/>rubicundior evadit. Ophthalmia vero est quum album
+<lb/>rubescit et palpebrae attolluntur, cum dolore cunnivent
+<lb/>aegreque manus admotas ferunt. Inflammatione
+<lb/>oculorum rubor intenditur, palpebrae magis elevantur. ut
+<lb/>non nisi magno negotio queas suspicere. Epiphora tum
+<lb/>inflammationis magnae universo litatae corpori, tum
+<lb/>largae fluxioni commune nomen est: proprie vero de oculis
+<pb n="14.769"/>
+<lb/>effertur, ubi cum maxima inflammatione etiam humoris
+<lb/>copia influxerit. oedema nominant, quum elevatus
+<lb/>apparet oculus et colorem amisit , vel etiam aegre movetur:
+<lb/>interim album quoque supra nigrum attollitur. Instatio
+<lb/>dicitur, cum subito tumefcens oculus decolor fit,
+<lb/>exuperante pituita;. ut plerumque senibus aestate potissimum
+<lb/>solet accidere. sicicrofis ex inflammationis diuturnae
+<lb/>vehementia oritur, carne increscente et sublivida. Rheumatismo
+<lb/>laborat oculus, cum non solum rubet, sed multas
+<lb/>quoque lachrymas excernit. Xerophthalmia est, cum
+<lb/>anguli ulcera et aspritudinem pruritumque contraxerunt,
+<lb/>palpebrae rubent et lacrima falsa et nitrosa profluit;
+<lb/>Sclerophthalmia est cum palpebrae duriores sunt, oculis
+<lb/>rubent et cum difficultate quadam moventur. Proptofis
+<lb/>appellatur ubi cum inflammatione moti sede sua - procidunt.
+<lb/>Atrophiam nominant, cum ex longa imbecillitate,
+<lb/>vel alia quadam latente cauta paululum quasi propulsus,
+<lb/>deinde cavatus ad radicem cum dolore minor evadit, obfcureque
+<pb n="14.770"/>
+<lb/>aut nihil omnino videt. Asperae dicuntor palpebrae
+<lb/>, cum eversae fauguinulectiores apparent et magis
+<lb/>asperae carnofaeque et fici acinis similes. Crassae vocauitur,
+<lb/>ubi eveum duriores iis, quae naturaliter se habent,
+<lb/>existunt et fcabris .magis cernofae. Sycofis accidit, cum
+<lb/>in palpebrarum parte interiore carni .quid simile enatum
+<lb/>fuerit, quod emineat et oculus totus aegre moveatur. Tylosis
+<lb/>est, cum in palpebris aspritudines ex senectute crasflores,
+<lb/>albidiores et parum sensiles extiterint, eoque minus
+<lb/>deteri possunt sid er rasis est tumor palpebrae cum
+<lb/>rubore sioloreque , difficulter aboletur ; durat magis quam
+<lb/>inflammatio. Chalazia vel chal asofis orlucularia quaedam
+<lb/>intra palpebras tubercula sunt circumscripta: nomen a simili
+<lb/>sudine grandinis acceperunt, Pladarotes sunt mollia veluti
+<lb/>corpora vetusta, decolora, palpebrarum parte interna
+<lb/>nondum atpredinem habentia, propterea pladarotes vocat
+<lb/>ur. Mydefis commune nomen est partium, quae ex pur
+<pb n="14.771"/>
+<lb/>trefactione corrumpuntur. Palpebrae .quoque eadem laborant,
+<lb/>ubi et tumeo Hores apparent et assidue dissinunt, adipem
+<lb/>paulo copiosiorem sortitae. Crithe, quae et postula
+<lb/>dicitur, quum parte interna palpebrarum lu ambitu supputatum
+<lb/>oblongum, figura hordeo simile fit, unde appellatum
+<lb/>est. Generantur alia quoque majora in mediis palpeloris
+<lb/>eodem appellata nomine. Lithiasis, albida quaedam
+<lb/>et crassa, callis lapillisque similia, quae eculum pungunt
+<lb/>in palpebris retortis offendit. Phthiriasim vocamus, quum
+<lb/>paIpebrarum pilos multi, lati exiguique pediculi infestant.
+<lb/>Ditrichiasi laborat oculus, quum pilis naturalibus alii fubnascentes
+<lb/>ipsimi pungunt fluoremque concitant. Ptilosis
+<lb/>est, quum alii quidem subnascuntur, naturales autem collapsi
+<lb/>fractique stimulant ac pungunt. Phalangiis, quum
+<lb/>pilorum subnascentium duplex triplexve acies vel in superiere
+<lb/>vel in inferiore palpebra provenit. Resolutus aculus
+<lb/>elicitus, ubj naturali motu destitutus, neque sursum
+<pb n="14.772"/>
+<lb/>neque deorsum intendi potest, verum sentiendi expers consistit:
+<lb/>frequenter hoc mali partibus etiam oculi accidit.
+<lb/>Inverti autem dicuntur palpebrae, quum ex ulceratis oculis
+<lb/>plus extra feruntur. Encanthis, ubi ex ulcere caro
+<lb/>in angulis juxta nares supercreverit; nautae ac piscatores
+<lb/>hoc vitii peculiare habent. Unguis vero est in albo oculi
+<lb/>praeter modum exulcerato, cameque oppleto membranula
+<lb/>tenuis et nervosa: quae orta ab angulorum aliquo ad nigrum
+<lb/>et verticem ejus pervenit. Rhoeas, cum angulus ex
+<lb/>latente quadam causa secesserit, aut prava curatione sublatus
+<lb/>fuerit, ut - lacrimas continere non amplius possit,
+<lb/>fed humorem dimittat. Cohaerescunt palpebrae cum albo
+<lb/>oculi vel nigro ex ulceratione. Et si nigro cohaereant,
+<lb/>villis omnino prohibetur: sin albo, minus. Hoc malum
+<lb/>augylosim appellanti ^egilops vel anchilops abscessus quidam
+<lb/>est ad angulum, qui naribus propior est, pus conlinens,
+<lb/>quod erumpens aut os exedit aut ad angulum
+<pb n="14.773"/>
+<lb/>vel usque ad nares distillat. Pfydracion communi vocabulo
+<lb/>circa corpus totum et circa album oculi fit. Est autem
+<lb/>velut pustula in summo rubicundum. Ulcus oritur
+<lb/>in albo vel nigro, quum cuticula divisa lunae figuram
+<lb/>veh rotundam cavam, similis moleris vel subalbidi acceperit.
+<lb/>Hypofphagma vocant, quum vasis in prima tunica
+<lb/>ruptis ab ictu fanguis intra albi fortium et interiorem
+<lb/>tunicam coierit, atque oculi color statim cruentus, post
+<lb/>lividus exisset. Chemofis ex inflammatione vehementiore
+<lb/>utrasque palpebras in exteriorem partem detorquet, ne tutum
+<lb/>oculum contegant. Proprie vero chemofis dicitur,
+<lb/>quum album utraque iridis parte inflammatione afficitur,
+<lb/>juxta irim autem cavum spatularum similitudine apparet.
+<lb/>Coelomata suntrotunda et cava ulcera, bothriis latiora, quae
+<lb/>in oculis circa irim nascuntur.- Argemon, in iridis circulo
+<lb/>vel in albo, interdum etiam nigro, ulcus rotundum
+<lb/>et .subalbidum oritur. Nephelion summae cutis ulcus paulo
+<pb n="14.774"/>
+<lb/>rnajus argemo et albidum. Aclilys est circa totum nigrum
+<lb/>a superficiaria ulceratione cicatricula tenuissima , aeri caliginoso
+<lb/>assimilis. Epicduma; quum in superficie cuticula
+<lb/>adusta ulcus contraxerit vel etiam paulo prosundior fiat ex
+<lb/>epiphora magna originem habens. Bbthrion est ulcus cavum,
+<lb/>purum, angustum, puncturis rotundis simile, ulcufculo
+<lb/>altius. Phlyctaenam vocant, .tibi per exulcerationem
+<lb/>vel etiam fine hac exterior corneae tunicae membrana
+<lb/>tenuissima etsublimis. elata intra fe humorem collegerit,
+<lb/>aut tub tunicae spatio^ crassior humor currens phlyctaenam
+<lb/>pariat. Myocephalon morbus est, quum tunica priore
+<lb/>juxta irim, .exulcerationis vitio exesa, fecunda prociderit,
+<lb/>ut ceu muris caput r eterne videatur. Staphyloma dicitur,
+<lb/>quapdo oculi pupilla cum inflammatione et dolore attollitur
+<lb/>et album colore et acino uvae simile redditur. Hypopyon
+<lb/>universam irim pure occupat, vel ejus dimidium.
+<pb n="14.775"/>
+<lb/>Rhexis est exulceratio ab ictu vel alia quadam caula
+<lb/>in alto totas fubinde membranas dividens, ut etiam humores,
+<lb/>quibus videndi facultas administratur, effundat. Cicatrix
+<lb/>appellatur, irbf nigro oculi ex alto ulcere membranae
+<lb/>crassities superveniret color albior apparet; accidit quoque
+<lb/>albae membranae dictae, sed non perspicitur. Albugo
+<lb/>nihil a cicatrice differt, nisi quod ex ulcere major cicatrix.
+<lb/>simul et crassior. in iride nascitur, quam albuginem nominant.
+<lb/>Clavus est carnosus nigri excessus fetidus , cum
+<lb/>levi albaque velut cicatrice , frequenter etiam lu albo nigro
+<lb/>cohaerenti consurgens. Suffusionem quidam interpretantur,
+<lb/>quum humor quidam in pupillam destillaverit,
+<lb/>concreveritque saepe adeo, ut. vitum offendat vel in apparentibus
+<lb/>hebetet. Glaucosis est humoris crystallini in
+<lb/>.album atque aqueum colorem mutatio, cujus gratia visus
+<lb/>impeditur. M ydriasis dicitur, quum pupilla quidem nihil
+<pb n="14.776"/>
+<lb/>colore variat, dilatatur autem magis quam natura puteat,
+<lb/>ut iridis circulo fiat proxima et visioni noceat. Phthisis
+<lb/>appellatur, dum pupilla arcte coit vel stimulo assimilis fit;
+<lb/>tum rugosior aut ex imbecillitate periculosa , aut ex capitis
+<lb/>dolore vehementi. Confusio, dum humores oculorum
+<lb/>sim loco non consistunt; proprium ordinem servantes, sed
+<lb/>huc illucque feruntur. Hebetudo summa visionis sine causa
+<lb/>evidenti offensio. Nyctalopes vocantur qui die vident
+<lb/>obtusius, fele occiduo acrius, nocte magis adhuc: vel contra
+<lb/>die parum, vesperi aut nocte protius nihil. Myopes
+<lb/>vicina vident, remota non item. Suppuratio humor exiguus
+<lb/>in pupilla collectus, qui difficulter evaporat ac discutis
+<lb/>tur, suffusione siccior. Abruptio est, quando meatura cerebro
+<lb/>et meninge in oculum descendens ex ictu capitis
+<lb/>vel calli ex alto diruptus est ita ut absolutam caecitatem
+<lb/>afferat. Coincidentia, ubi in meatum, qui a basi cerebri
+<pb n="14.777"/>
+<lb/>veniens oculo videndi facultatem tribuit, humor adaperto
+<lb/>vel rupto vase incidit, obturatque eum: unde cum dolore
+<lb/>visus offenditur. Symptosis accidit, quum meatus ex atrophia
+<lb/>vel resolutione fit arctior conciditque. Quod vitium
+<lb/>ut rarum est, fic remediis aegre cedit. Carbunculus crustosum
+<lb/>est ulcus, depascens cum fluore et bubone, aliquando
+<lb/>etiam cum febribus, interdum in toto corpore,
+<lb/>interdum in oculis factum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+
+
+<p rend="indent">[De exterioribus capitis assertivus.]
+<lb/>Circa capitis exteriores partes consistunt ii, qui inter longos
+<lb/>ascripti non sunt. CaIvariae autem sracturarum disserentiae
+<lb/>quinque existunt, rhogme , engisoma, ecpiesma,
+<lb/>apechema et camarosis, dissensio suturarum, hydrocephalon,
+<lb/>arbores, pitvriasis, meliceris, atheroma, favus. Porro
+<lb/>eam partem, quae capillo tegitur et mentum occupant
+<lb/>alopecia, opinatis, calvities, madarosis. Pili omnes fluunt,
+<pb n="14.778"/>
+<lb/>extenuantur, quassantur, scinduntur, fquallescunt, in pulverem
+<lb/>rediguntur, fubflavescunt , canescunt. Oculorum
+<lb/>morbi separatim conscripti sunt. Aurium contusio, pterygomata,
+<lb/>fractura cartilaginis, sordium vel exuperantia
+<lb/>vel defectus, gravis auditus, surditas, puris fluor, fluxus
+<lb/>graveolens. Nares excruciant oTaena , polypus, ulcus,
+<lb/>fractura, perversio, compressio, simitas. Os infestat gingivarum
+<lb/>putredo, dentium erosio, eorumque dolor et cum
+<lb/>sede sua excidunt, abscessus in lingua, epulis, parulis,
+<lb/>aphthae, crustae, tonsillae, uva, ficus. Faciem occupant
+<lb/>ephelis, vari, lentigo, ossium fractura, distentio commissurarum
+<lb/>, luxationes maxiliae inferioris a superiore gena.
+<lb/>Cervicem habent fynanche, cynanche, strangulatio, verteinarum
+<lb/>expulsio, strumae, steatomata. Humeros male habet
+<lb/>verticis ipsarum fractura, distentio. luncturam cubiti
+<lb/>occupant meliceris , atheroma , steatoma , humor aqueus.
+<lb/>Carpum ganglia. Digitos manus et pedis chimethla, reduvis.
+<pb n="14.779"/>
+<lb/>Quamcunque corporis partem inflammatio, oedema,
+<lb/>inflatio, durities, abscessus, ulcus purum, ulcus sordidum,
+<lb/>cavum, carne supercrescens, crustulum, siccum, fluens,
+<lb/>subpascens, callosum, fistulosum, mydesis, phyma, dothien,
+<lb/>therminthes, phygethIon, chalosa, phagedaena, phlyctides,
+<lb/>carbunculi, epinyctides, erysipelas, herpetes. Mammillas
+<lb/>peculiariter, tum naturaliter sexus utriusque vexant carcinomata.
+<lb/>Quamlibet corporis partem impetunt carpinoma
+<lb/>occultum, carcinoma ulceratum, therioma. Inguina
+<lb/>bubones simplices, phymata purulenta invadunt. Genu
+<lb/>gonyaIgiae, rheumatismi, tophi. Poplites steatomata, anLyle.
+<lb/>Tibiam varices. Suram scirrhoma, chironia ulcera.
+<lb/>Summam pedis partem nigredines, necrosis, podagra,
+<lb/>fistulae. Calcem squamae.</p>
+</div>
+<div type="textpart" subtype="chapter" n="18">
+
+
+<p rend="indent">[De cutis affectibus.] Cutem totiusque
+<lb/>corporis partes exagitant lepra, plura, alphos albus,
+<lb/>alphos niger, fauce, impetigo simplex, impetigo fera, dracontrusis,
+<pb n="14.780"/>
+<lb/>acroehordones , thymi, myrmeciae, clavi, calli.
+<lb/>Quaedam horum ex podagra et articulari morbo, quaedam
+<lb/>ex tele oriuntur. Sedem afficiunt haemorrhoides caecae,
+<lb/>fissurae, procidentia, condylomata, pylides. Advenit etiam
+<lb/>tuti vulvae procidentia, cum in exteriora procidit. Serotum
+<lb/>habent enterocele , cirsocele, epiplocele, sarcocele,
+<lb/>porocele , steatocele. Totius corporis ossa patiuntur cariem,
+<lb/>fphacelum, fracturam sine vulnere vel cum vulnere, ecbyrsosin.
+<lb/>Eracturarum differentiae quinque sunt. Prima
+<lb/>fchidacedon facta, per rectitudinem; altera per transversum
+<lb/>, cauledon. Tertia raphani in morem, raphanedon,
+<lb/>Quarta caryedon, in modum nucis. Postremo alphitedon
+<lb/>in fpeciem farinae. Nigrescunt interdum ossa in fracturis
+<lb/>interdum sine his. Articulis omnibus accidunt paragoge,
+<lb/>e fede propria motio, luxatic, intertrigo, colligatio, perofis,
+<lb/>rheumatismi, distentio commissurarum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="19">
+
+
+<p rend="indent">[De chirurgiae speciebus.] Chirurgia
+<lb/>est alieni, ut proprie vocant, per incisiones concinnationesque
+<lb/>cum via quadam et ratione ablatio ; ad haec vul- .
+<pb n="14.781"/>
+<lb/>nerunt atque ulcerum curatio: quae in corpore humano
+<lb/>administratur. Primariae ejus actiones duae funt, compositio
+<lb/>et divisio. Harum ructus multae sunt species.
+<lb/>Compositionis quidem fractorum ossium fynthetifmus et
+<lb/>delibatio, arthrembolum luxatorum, intestinorum quae prociderunt
+<lb/>taxis, ad haec vulvae et recti intestini. Gestrorraphia.
+<lb/>Cuntorum epagoge, ut in naribus, labris atque
+<lb/>auribus. Diaerefeos species, simplex incisio, periaeresis,
+<lb/>hypospathismus, perifcythismus , angeiologla, eccope, adustio,
+<lb/>rasio, limatio, lectio per serram. Simplici sectione
+<lb/>in abscessibus universis utimur. Dividendum vero membrum
+<lb/>est recta linea, non transversa. Periaeresi locus est
+<lb/>in alis, inguinibus , naribus et ano instar myrti adbibitae.
+<lb/>Hypofpathismo in fronte, cum oculi fluunt. Periscythismo
+<lb/>in sincipite et colis pellicula, quam praeputium
+<lb/>vocant, nigricante. Eccope in membris nigrescentibus et
+<lb/>capitis fracturis. In omnibus autem, quae ad osia pectinent,
+<lb/>aliisque multis ustio, rasio, limatio, terrae usus utiles
+<pb n="14.782"/>
+<lb/>sunt. Ustio candentia ferramenta requirit, proprie in iis
+<lb/>jam malis omnibus, quae depascuntur et oculis rheumaticis,
+<lb/>coxis vel etiam interioribus. Etenim in tabidis candentis
+<lb/>ferramenta assumuntur et in lienosis: tum in bracl.iis,
+<lb/>quae in alam . excidere consueverunt; insuper in
+<lb/>aegilope, in nigricantibus verris quae resecantur, propterea
+<lb/>quod aperiantur vasta: postremo in aliis sanguinis profluxionibus.
+<lb/>Haec itaque in capite consistunt, quibus man.us
+<lb/>auxiliantur. Fracturarum autem capitis genera sunt
+<lb/>quinque; rhogme, engifoma, ecpiesiua, apocherna et camarosis.
+<lb/>Nonnullorum sententia additur .et sexta, trichiasis,
+<lb/>per summa ossium inscriptio. Hydrocephalon quatuor
+<lb/>species obtineo- unam cum intra cerebrum et meniugem
+<lb/>humor subsidet: alteram, cum inter meningem et ossa:
+<lb/>tertiam , cum intra os .et pericranium : reliquam .ubi os et
+<lb/>cutem interiacet. Circa cutem oriuntur iudiceris, atheroma
+<lb/>et extrinsecus alopeciasis. Itaque alopecias laniamus;
+<lb/>meliceridas et atheromata myrti modo vel simpliciter si: mr
+<lb/><pb n="14.783"/>
+<lb/>mam cutem dividentes, deinde tunicas digitis avellentes,
+<lb/>cum ipsis humoribus, qui insunt, auferimus. Hydrocephalon
+<lb/>sub cute et pericranio duabus vel tribus rectis
+<lb/>lineis incidentes evacuamus. Quod fub ossibus est, exuiulmus.
+<lb/>Quod tandem intra meningem cerebrumque incidit,
+<lb/>insanabile est. omnis fracturarum calvariae species,
+<lb/>excisione administratur, excitoribus id, quod in ossibus
+<lb/>fractum est, auferentibus. Veteres igitur modiolis per
+<lb/>circum versionem secantes ipfa excidebant. Posteri tere- .
+<lb/>bris usi funi, aegros in fenile, tum sectores collocantes.
+<lb/>Hac tempestate excisoribus tantum sedem exhibent. Ex
+<lb/>oculorum vitiis haec manus praesidium expetunt, trichiasis,
+<lb/>hydatides, encanthides, ungues, staphylomata, fuffusiones,
+<lb/>fluores diuturni et excedentes, palpebrarum calculi,
+<lb/>coagmentatio oculos ambientium in idem, aegilops. Palpebras
+<lb/>itaque relaxatas confuimus, fasciolatn ah ipsis anferentes,
+<lb/>quantam commensuratio juxta palpebrarum figuranr
+<lb/>postulat. In palpebris .non relaxatis pilos per acum
+<pb n="14.784"/>
+<lb/>illaqueamus. Hydatidas singulatim tollimus. Encanthides,
+<lb/>ungues et staphylomata praecidimus- et auferimus. Stapbylomata
+<lb/>quidem filo transmisso ablaqueantes. Ungues
+<lb/>et encanthrdas vel lino vel hamulo attrahimus. Sussusiones
+<lb/>deducimus pungentes circa irim ex minori angulo,
+<lb/>donec acus penetrarit et loco vacuo excipiatur; deinde
+<lb/>per obliquum ad iridem perducentes summa ejus parte
+<lb/>compactum circa pupillam humorem deducimus, deligamtes
+<lb/>et stringentes, ut non atulerat. Hypospathifrnus , periscythismus
+<lb/>et angerologia fluorem sistunt. Hypuspathisinus
+<lb/>itaque tribus fit supra frontem divisionibus. Deinde lato
+<lb/>specillo per corpora quae interiacent .transmisso. Periscythssmus
+<lb/>est, quum transversis lineis. coronae modo frons
+<lb/>secatur. Altera ipsius parte paulo superius , quam tempora
+<lb/>sunt, quaedam triangula amputantur,- litterae A sunilia.
+<lb/>Angeiologia perficitur vasis latentibus a tempore ad
+<pb n="14.785"/>
+<lb/>tempus in profundum divisis. Palpebrarum calculis medemur
+<lb/>magna ipferum divisione, qua lapides integre auferrmus.
+<lb/>Concinnatas palpebras scalpello aperientes fubjectis
+<lb/>linamentis diducimus. Aegilopas ad os usque excidentes
+<lb/>ferramentis candentibus adurimus. Sunt autem qui loco
+<lb/>ferramentorum candentium terebra os forant usque ad
+<lb/>nares. Polypum, qui in naribus nascitur, angusto specillulo
+<lb/>ab r osse resolvimus et raforio cultello postea radices
+<lb/>abradimus. osaenae raro ad sanitatem perducuntur :
+<lb/>curatio Vero earum in iisdem versatur. In ole epulidas
+<lb/>et parulidas dividimus pubi suppuratio fe ostenderit. Uvas
+<lb/>demissas sive collapsas nimium incidimus, volsella prehehsientes.
+<lb/>Dentes eximimus fcarificatione circa eos facta.
+<lb/>Adenas excedentes naturam in tonsillis adversis planis
+<lb/>amputamus. In cervice steatomata et strumas, cute divifa
+<lb/>et digitis avulsa, tum valorum complexu dissoluto tollemus.
+<lb/>Ganglia, quae in metacarpiis magna ex parte evenrunt
+<lb/>et mulieribus lana victum quaeritantibus, plerumque
+<pb n="14.786"/>
+<lb/>extendimus , interim ceratis mollita curamus. In aliis
+<lb/>phymata et strumas praecidimus : fimiliter in inguinibus.
+<lb/>Abfcessus in spatio rntercostali dividentes non universim,
+<lb/>sed moderate- paulatimque puris excretionem molimur.
+<lb/>Sunt et qui medicamentis aridis. scindant fimus et adurant
+<lb/>eos. Carcinomata in multis corporis partibus, maxime
+<lb/>circa mammas oriuntur. Praecidimus uticunque fuerint
+<lb/>et ferramentis peruruntur non admodum ignitis. Non desunt
+<lb/>qui rasoriis ferramentis ignitis simul locantibus .et
+<lb/>adurentibus utuntur. Exomphali omnes quibus umbilicus
+<lb/>exuberat, appellantur. Differentia triplici comprehenduntur,
+<lb/>quidam enim pneumatomphali. Alii . enteromphalI.
+<lb/>Reliqui hydromphali. omnes differentiae manu sanantur,
+<lb/>lino duplici per acum immisso et umbilico circumstrictu.
+<lb/>Hydropicos paululum fub umbilico a sinistris pungimus,
+<lb/>ferro instar myrti facto , donec inania penetraverit. Appeltarum
+<lb/>duplex curatio, horum, qui intrinsecus excoriantur,
+<pb n="14.787"/>
+<lb/>illorum, qui extrinsecus orbiculatim in summa cute
+<lb/>dividuntur; ut praeputium intus attrahatur. Qui per angestias
+<lb/>praeputii exerere glandem nequeunt, lunata ejus
+<lb/>pellicula quantum licet retracta, dein callis,. qui in confpectum
+<lb/>prodeunt, scalpello per summa avulsis curantur.
+<lb/>Hypofpadei sunt, qui ex generatione urinae iter inferius
+<lb/>sub dicto cane habent: curantur autem summa glande
+<lb/>perforata et canaliculo immisso. Qui dicuntur arieti, sive
+<lb/>foramen habeant tenue, sive nullum omnino, auxilium
+<lb/>capiunt hoc pacto: acuto specilli immisso adaperimus, deinde
+<lb/>digitum submittentes undique absolvimus. Lapides in vesica
+<lb/>habentes secamus , calculum in vesicae collum adigentes,
+<lb/>qui rei incidendae supponitur, lapide utentes, semel
+<lb/>superjacentes particulas dividimus et instrumento lapidi
+<lb/>excipiendo idoneo calculum auferimus. Quoquo modo
+<lb/>factos rhyadicos, si magnus callus fuerit, praecidendo
+<lb/>ipsum curamus. Quibus urina propter copiam non redditur,
+<pb n="14.788"/>
+<lb/>vesica distenta, ut remittere se nequeat, per cathetera
+<lb/>urinam elicimus. Porro huic instrumento ad Romanae literae
+<lb/>S figuram facto, quod in urinae iter usque ad vesicam
+<lb/>demittitur, inditur filum, quod in summo habens
+<lb/>lanae paululum procumbens, urina madefactum, deinde
+<lb/>foras extrahitur, quod urina tanquam ducem viae sequitur.
+<lb/>Tumorum qui scroto accidunt septem species sunt, hydrocele
+<lb/>, porocele, steatocele, farcocele, epiplocele, cirsocele,
+<lb/>enterocele. A quibusdam hae complicatae adduntur,
+<lb/>hydrenterocele, sarcoepiplocele. In his qui hydrocele laboram,
+<lb/>scrotum diducendum est et ubi maxime venosum
+<lb/>est, inventaque tunica, humorem ea comprehensum evacuare
+<lb/>oportet et tunicae supervacanea auferre: in quibus
+<lb/>sine tunica est, excernere humores sufficit. Steatocelas et
+<lb/>porocelas similiter sinistra mano scrotum extendentes fecare
+<lb/>convenit, postea in superficie diducere, donec adipi
+<lb/>vel callo vel alii cuicunque incidamus et hoc. auferamus.
+<pb n="14.789"/>
+<lb/>Pari modo farcocelici tractantur. oportet autem subjacentum
+<lb/>carnem albicantem praecidere, rubram excoriare
+<lb/>et detrahere, ac tunc reliquias adimere expedit. In cirsocelis
+<lb/>extendes varicem hamulo in superficie divisum, exceptumque
+<lb/>avelles, relicta ceu digiti parvi latitudine, reliqnum
+<lb/>extensum abieca. Cura vero non mediocris adhifienda
+<lb/>est in illis complicatis cremesteribus - et testiculis.
+<lb/>Enterocelicos et epiplocelicos ita. secamus, reprimentes intestiuum
+<lb/>vel omentum diligenter, mox seminarium meatum
+<lb/>auferemus quam fieri poterit commode : sic minus
+<lb/>peritonaeum attrahentes et laqueo excipientes praecidimus.
+<lb/>Haemorrhoides lino duplici per ipsarum hales traducentes
+<lb/>constrlugentesque post horas duas abscindimus. Fistularum
+<lb/>nonnullae perforatae non sunt, os tantum habentes.
+<lb/>Quaedam perforatae vel intus in anum vel extrinsecus.
+<lb/>ln perforatis in anum specillum immittes, mox digitum
+<lb/>in sudem inferes , intestinum attrahes mucrone fpecilli,
+<pb n="14.790"/>
+<lb/>rdque amputabis, ab inferiore loco incipiens, similiter et
+<lb/>in exterioribus ani. In non perforatis specilli acumine
+<lb/>omnes fanas particulas penetrare convenit. Sunt qui loco
+<lb/>recisionis praecisionisque partium foramina interiacentium
+<lb/>lino byssino in summitate specilli conversio divisa avellunt,
+<lb/>intermedias partes quotidie circumtendentes fila amputant
+<lb/>et callum mollientes medicamento Aegyptio cicatricem inducunt.
+<lb/>Hic. modus primum ab Hippocrate conscriptus
+<lb/>esu Varices in cruribus primum extrinsecus incisuris per
+<lb/>totum insignitos, deinde inclinantes firmum cute prehensa,
+<lb/>ipsam primam dividimus et mox hamulo attractum varicem
+<lb/>illigamus, quo post omnes divisiones facto vel varicum
+<lb/>extractorio instrumento eximimus stimma difcindentes.
+<lb/>vel bicipiti specillo exceptum lino per ipsius ventriculum
+<lb/>fecundum eversionem extrahimus. Dracontia varicibus
+<lb/>similia sunt, magnum vero dolorem, dum paululum
+<lb/>prominentes moventur, concitanti oportet autem divisis,
+<pb n="14.791"/>
+<lb/>ut varicibus, summam cutem detrahere sicque praecidere.
+<lb/>Clavos, callos ; acrochordonas , thymos, myrmecias excindentes
+<lb/>adurimus vel p surico illinimus. Curta in naribus,
+<lb/>auribus, oculis hoc modo ad ^naturalem habitum restituuntur:
+<lb/>labra scalpello undique deradentes cruentemus,
+<lb/>deinde adducentes densius fuimus : juxta maxillas autem
+<lb/>ex utroque labrorum extremo, qua invicem coeunt, intus
+<lb/>et extrinsecus dividimus distendimusque vossellis, ne caro
+<lb/>inde relaxetur. Quae auribus vel naribus curta accidunt,
+<lb/>quum fuerit cartilago divisis, producere aliam convenit,
+<lb/>sicque consuere lanae filo.</p>
+</div>
+<div type="textpart" subtype="chapter" n="20">
+
+
+<p rend="indent">[ De artubus conpactis partibusque a
+<lb/>suo articulo dimotis.] Fracti artus ex distentione quidem
+<lb/>in rectum restituuntur: ex deligatum callo .obducuntur.
+<lb/>Calvariae ergo fractiones quot modis accidant et
+<lb/>quomodo curentur, diximus. Et si in faciem fractura
+<lb/>contingat, ut in capite sanare convenit, osse quod assectum
+<pb n="14.792"/>
+<lb/>est exosso. Sciendum autem est quae osia fracta
+<lb/>curationem non recipiant. Si igitur nares confractae
+<lb/>sunt, non recte possunt restitui. Aurem etiam frangi serii
+<lb/>bit Hippocrates, quoniam et cartilago imitatur os, aegerrimeque
+<lb/>in pristinam figuram reducitur. Verum si ex palato
+<lb/>fracturam accipiant nares, simae, ut inquit, evadunt
+<lb/>et insanabiles; Porro si clavicula frangatur vel jugulum
+<lb/>vel costa aliqua, et haec frequenter refarciri non possunt.
+<lb/>Epithemata in jugulo adhibenda Eunt, ipfumque ah ala
+<lb/>ad alam deligandum est. Caeterum si quod malarum
+<lb/>membrorum fractum sit vel minorum partium aliqua, ut
+<lb/>digitorum nodi vel ossa cerpi vel metacarpii vel tersi,
+<lb/>omnia quidem in magna frusta cauledon vel raphanedon
+<lb/>et fchidacedon franguntur : in minuta caryedon vel alphitedon.
+<lb/>omnia ergo fracta deligantes extendentesque admodum
+<lb/>vehementer et valide diducere et multum iuvicem
+<lb/>scparare oportet , ut justum situm pristinamque figuram
+<lb/>recipiant. Non autem in rectum omnia restitui debent,
+<pb n="14.793"/>
+<lb/>fed ad proximi cui cohaerent membri figuram.
+<lb/>At si os rectum sit, id rectum:- si obliquum vel alio ἠυοvis
+<lb/>modo curvum, simili modo. Modus autem deligationis
+<lb/>ad omnia praeparandae hic esu Fulcra est linteis veturibus
+<lb/>facienda, quae tum latitudine, tum magnitudine
+<lb/>membro respondeat. Latitudine quidem in maximis; .digitorum
+<lb/>quatuor vel quinque. lu tenuioribus non minus
+<lb/>digitorum trium Delirationis haec ratio. Prima fascia
+<lb/>ter nobis in fractum sursum verius fertur, ut plurimum.
+<lb/>Altera dimidio longior ab eodem loco incipit, evariantibus
+<lb/>deligationibus deorsum quidem tribuitur, fed ad superiora
+<lb/>reducitur: irrigari hydrelaeo vel oenelaeo vel glycelaeo
+<lb/>adusque triduum expedit; post cerato diluto et liquido,
+<lb/>ut oleum crassam rideatur. Verum fascis ita paretur
+<lb/>ut non nimium premat, ne membrum emoriatur, fed
+<lb/>quoad adjacet apteque adhaereat; neque sit laxa, ut contineat
+<lb/>et repellat influxus, ne oboriatur inflammatio. Post
+<lb/>splenia triplicia quadrupliciaque adhibeantur, quae artus
+<pb n="14.794"/>
+<lb/>crassitiem impleant; quo nec sibi mutuo incidant., nec difsidentes
+<lb/>intervallum relinquant. Ab his fascis convenit
+<lb/>triplex , quae a fractura deorsum veniens sursum feratur,
+<lb/>inique finiat. Solutiones membri primae - tertio - quoque
+<lb/>die faciendae: post septimum vero diebus intermissis pluribus,
+<lb/>prout necessitas exiget. Inde licebit ferulas circumpouere;
+<lb/>fed ita ut ad ultimam fafciam lana apponatur et
+<lb/>ex intervallis ferulae collocentur, quum membrum ab inflammatione
+<lb/>est prorsus immune, curva ipsarum parte extrintecus
+<lb/>sublata, leri autem intus deligatione iniecta;
+<lb/>quibus firperligabuntur vel chordulae vel nauticum filum.
+<lb/>In fracturis cum vulnere pro his omnibus splenia duplicia
+<lb/>vel triplicia facientes per singula crassitiem membri
+<lb/>circulatim implebimus, ut termini ipsius invicem incumbentes
+<lb/>separentur, totumque .membrum his contineatur.
+<lb/>Primum sane ex praedictis imposita madida esse convenit:
+<lb/>deinde lanas propofitas et fulcias post lanas habere per
+<lb/>subjectum tedem canalis aperti. Maxime is modus detigationis
+<pb n="14.795"/>
+<lb/>confert iis, quae alphitedon fracta sunt cum vulneribus
+<lb/>et multa contusione musculorum, in quibus etiam
+<lb/>linamenta liquoribus competentibus madentia imponenda
+<lb/>sunt. Linamentorum sunt quinque species, aliud flexile,
+<lb/>aliud rasile, aliud vulforium, aliud lucernarium, aliud
+<lb/>priapiscotum appellant. In luxatis vero distentione quidem
+<lb/>antecedente opus est: repositio pro quolibet membro
+<lb/>propria assumitur: omnia in Hippocratico subsellio restituuntur,
+<lb/>simuI et tensa et commissa. Caput luxetur, nam
+<lb/>prima cervicis vertebra coarctatur ad secundam. Maxilla
+<lb/>inferior ex jugali, quod est ad malas, excidit; solis autem
+<lb/>manibus in sedem fuam compellitur , hinc illincque ad
+<lb/>superiorem adducta. Humerus in alam tantum excidit,
+<lb/>capitulo rotundo et leniter cavo , cum distensione in sedem
+<lb/>reducitur. Sunt et aliae inferiores, quas palaestricus
+<lb/>nominant. Quatuor sunt excisionum cubiti differentiae;
+<lb/>una ad intra, astet a ad extra, tertia ad anteriora, quarta
+<lb/>ad posteriora. Cubitus in omnes quatuor partes excidere
+<pb n="14.796"/>
+<lb/>potest: si in exteriorem interioremve , cum distensione
+<lb/>dimota ossa sic reponimus: si in priorem vel posteriorem,
+<lb/>sine distensione restituimus: nam haec ex subita inflexione
+<lb/>quodam imposito flexurae cubiti consistit: ilia extensione
+<lb/>vehementiori. Carpus et melacarpium, ad haec digiti luxati
+<lb/>, modica distensione reponuntur. Quaevis spinae perversio
+<lb/>, curvitas et inclinatio et dissensio instaurari non
+<lb/>possunt. Femur ad coxas vel intro ad peritonaeum , ut
+<lb/>extra ad oppositam partem proluditur, retro ad clunes et
+<lb/>ante in inguina, atque hae quatuor differentiae immodicabiles.
+<lb/>Genu quoque crebro in exteriorem partem prolabitur
+<lb/>et facile ex flexura restituitur: minus in interiora
+<lb/>excidit, reditque multo rarius in posteriora, in anteriora
+<lb/>nunquam : quippe ossa propter patelIam , quae continet
+<lb/>[nisi et ipsa fracta fuerit) nullo tempore elabuntur. Talus
+<lb/>modice prolapsus aegre restituitur. Si magna sit taxatio
+<lb/>et violenta, ne sustinet quidem instaurationem. Periculosa
+<pb n="14.797"/>
+<lb/>enim nimis et si cum vulnere accidit. In digitis nihil
+<lb/>ultra fieri debet quam quod in iis, qui sunt in manu,
+<lb/>positum esu omnes vero coagmen talionum eorum separationes,
+<lb/>ut in facie, cubito et radio, tibia et fura, metacarpio,
+<lb/>tarsc, in veterem figuram restituuntur. Porro
+<lb/>quae membra nigrescunt vel. depascuntur, sive ex fracturis
+<lb/>sive violenta astrictione, tota saepe resecamus. Similiter
+<lb/>in iis facimus, quos venenatae ferae momorderunt,
+<lb/>mox ferramentis prope candentibus pastionem sistimus, post
+<lb/>ferramenta, porro viridi cum sale illinimus. Deinde ubi
+<lb/>crustae ablatae fuerint, tanquam ulcera curamus. Venenatorum
+<lb/>morsus neque cito ad cicatricem ducimus, sed
+<lb/>frequentius ulcera diu stillare in iis curamus.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>
