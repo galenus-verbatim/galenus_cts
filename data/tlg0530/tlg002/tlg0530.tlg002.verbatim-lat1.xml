@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">An animal sit quod est in utero</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg002.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+        <monogr>
+          <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+          <author>Pseudo-Galen</author>
+          <editor>Kühn, Karl Gottlob</editor>
+          <imprint>
+            <publisher>Cnobloch</publisher>
+            <pubPlace>Lipsiae</pubPlace>
+            <biblScope unit="vol">19</biblScope>
+            <biblScope unit="pp" from="158" to="181">158-181</biblScope>
+            <date>1830</date>
+          </imprint>
+        </monogr>
+        
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+        <monogr corresp="Basel">
+          <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+          <author>Galenus</author>
+          <editor>Camerarius, Joachim</editor>
+          <editor>Fuchs, Leonhart</editor>
+          <editor>Gemusaeus, Hieronymus</editor>
+          <imprint>
+            <publisher>Cratander</publisher>
+            <pubPlace>Basel</pubPlace>
+            <biblScope unit="vol">4</biblScope>
+            <biblScope unit="pp" from="406" to="410">406-410</biblScope>
+            <date>1538</date>
+          </imprint>
+        </monogr>
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+        <monogr corresp="Chartier">
+          <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+          <author>Galen</author>
+          <editor>Chartier, René</editor>
+          <imprint>
+            <publisher>[s.n.]</publisher>
+            <pubPlace>Paris</pubPlace>
+            <biblScope unit="vol">5</biblScope>
+            <biblScope unit="pp" from="334" to="341">334-341</biblScope>
+            <date>1639</date>
+          </imprint>
+        </monogr>
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x05">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg002.verbatim-lat1">
+<pb n="19.158"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="19.158"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI LIBER FALSO ADSCRI.
+<lb/>PTUS AN ANIMAL SIT ID, QUOD
+<lb/>IN UTERO EST.</head>
+
+
+<p rend="indent">Quod physicis omnibusque philosophis quaestionem
+<lb/>de natura universitatis praebet in hunc usque
+<lb/>diem, id Asclepiadis sectatoribus liorumque posteris est incerta
+<lb/>de intante qui in utero fit constituiturque sententia.
+<lb/>Ut enim qui de universitate scrutati sunt utrum animal
+<lb/>sit necne nihir aperte definiverunt: sic artis medicae
+<lb/>principes de puero qui nuscitur incertam .reliquere doctrinam.
+<pb n="19.159"/>
+<lb/>Quum igitur res difficilis nec perceptu facilis neque
+<lb/>dum stabilita sit, iis quae de ea dicta sunt communem
+<lb/>praebere auditum oportet. Ego enim qui dico , volane
+<lb/>qui judices estis, naturam humanam secundum Socratem
+<lb/>sortiti fumus; quapropter oportet iis quae dicuntur potius
+<lb/>esse contentos quam plus nisio etiam quaerere.. Quae
+<lb/>enim propositam rem superant, dens ipse primus novit,
+<lb/>deique assecla et quiripsi, ut inquit Plato, amicus homo
+<lb/>esu Porro amor sit absitque simul invidia vel convitium
+<lb/>ab iis qui talia conantur, sic enim nos quidem amantius
+<lb/>ad locos hujusmodi progrediemur; vos vero perpetuo henevolentiam
+<lb/>in omnia secula habebitis ipfamque in ejusdem
+<lb/>generis rem non invidam virtutem. Sed enim de
+<lb/>homine quasi de parvo mundo dicturi initium a magno
+<lb/>cujus veluti foenora ac partes fumus faciemus; praeparata
+<lb/>vero apud nos hujus natura perspicua magis humana fiet
+<lb/>constitutio. . Hoc ipfum sane prius quid mundus sit destalemus :
+<lb/>facillime enim quum definitio totum significet,
+<pb n="19.160"/>
+<lb/>universi substantia constituetur. Sed ante quam haec posita
+<lb/>sit quid sit animal dicamus, ut praemissa propositae
+<lb/>rei definitione ipsius universi naturae perspicua semina
+<lb/>sint. Animal igitur substantia est animae particeps et fensitiva,
+<lb/>quod genere de omnibus quae fissi ipfo situs simpliciter
+<lb/>dicitur. Quoad igitur tale dicatur, omnia in fe
+<lb/>complectens habet; quum vero id quod speciem efficit
+<lb/>adjectum cuique sit, tum genus ut differat effectum est in
+<lb/>species divisum. Videamus igitur num mundus animal sit,
+<lb/>ac num primum quidem genitus sit, deinde vero integram
+<lb/>naturam assumpserit. Mundus igitur ex coelo terraque ac
+<lb/>mediis naturis aqua et aere coagmentatio est habensque
+<lb/>per omnia haec principem ac primogenitum diffusum fpiritum
+<lb/>, quem philosophorum soboles aut animam aut unitatem
+<lb/>aut .atomum, id esit individuum corpus, aut ignem
+<lb/>aut communi ei genere nomine spiritum primum vocat.
+<lb/>Haec quidem ante fuerunt quam cognomen hoc assumerent;
+<lb/>fed tunc confusi erant et inter fe differentia et, ut
+<pb n="19.161"/>
+<lb/>quidam dicunt, materia nominabantur v nunc vero mundus
+<lb/>, propterea quod apte ordinatimque ac veluti ih consonantia
+<lb/>atque ornatu fieri motum ipsum efficiat: immobiles
+<lb/>enim esse putabo similesque lapidibus eos, qui
+<lb/>ipsum hoc universum immobile dicunt. Mundus igitur ex
+<lb/>integris integer concinnatus est atque ex perfectis perfectus
+<lb/>et ex absolutis absolutus: fuitque et erit animal,
+<lb/>quod movetur. Sed tum quidem satam vim ipsiusque universi
+<lb/>rationem habentem possidebat : discretus vero atque
+<lb/>e tenebris prodiens insitam feminum virtutem patefecit,
+<lb/>hic quidem te terram ostendens, illic aquam; ubi vero
+<lb/>ignem cum aere sete quacunque porrexit incrementi modo
+<lb/>atque elementorum natura , ipsum universum sole ac luna
+<lb/>quasi oculis illuminans et luce ho-um claroque splendore
+<lb/>motui cuique dux effectus : etenim ei commixtus est et
+<lb/>sic ab initio genito et in natura prima . constituto : nam
+<lb/>et- primum animal et spirans et intelligens mundus hic et
+<lb/>tunc erat et nunc apparet. Quemadmodum igitur audax
+<pb n="19.162"/>
+<lb/>nemo eum animal tum esse negaret cum effingebatur, integrum
+<lb/>enim ex integris perfectumque ex perfectis ipsum
+<lb/>demonstravimus ; quomodo enim integra praeberet, ni integet
+<lb/>esset? sic quod in utero est animal esse quispiam
+<lb/>non negaret: sicut aerarium aut ferrarium fabrum aut
+<lb/>statuarium aut navium fabricatorem aut alium id genus
+<lb/>quempiam nihil ex operibus ruis perfectum praebere aut
+<lb/>integrum diceres , quum quidpiam deest aut statuae manus
+<lb/>pesve aut cuspis gladio aut navi clavus: quod vero nulla
+<lb/>in re mutilum est partibusque omnibus aequatum, cum
+<lb/>nihil deficit, id perfectum est; sic et mundus et quod in
+<lb/>utero est nunquam perfecti rationem habuisset, nisi quum
+<lb/>primum essentiam acceperunt, tum ipsius universi subsintfiam
+<lb/>accepissent.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Sed mundum fuisse animal et propter hanc
+<lb/>causam nunc quoquelesse quum dixerimus, de homine qui
+<lb/>post ipsum mundum fecundus est dicamus. Ante a nobis
+<lb/>definitum animal est, quibus de causis quum in utero puer
+<pb n="19.163"/>
+<lb/>esset animalis usum praeberet, dicente ac veluti ex Delphico
+<lb/>tripode praedivinante ac praedicante Hippocrate e
+<lb/>genere Afclepiadarum ; ejus enim constitutionem primam
+<lb/>ac veluti animalitatem ex integris constituit, quum non
+<lb/>aliter ipfum absolutum praebere posse videret, nisi ab ipsis
+<lb/>perfectis animal generari acciperet. Decidit, inquit, ab
+<lb/>omni corporis parte famen, a salubris salubre, a morbosis
+<lb/>vero morbosum. Ab omni parte dixit totum a toto :
+<lb/>tantumque abfuit ne animal diceret, ut dicentis contra
+<lb/>ipfum quae mutilata tunt non esse perlecta crimina felvelit:
+<lb/>quum enim nollet dubitari quin animal sit, dixit
+<lb/>salubria quidem corpora ipftrm universum sicut nihil desit
+<lb/>habentia integrum semen deponere : impedita vero
+<lb/>cum deiectu. Quod difficultatem non habet: quomodo
+<lb/>enim cum ipsum non sit, in generatione sanum fieri poterit?
+<lb/>hoc enim unius ejus est, quod iptum quidem est,
+<lb/>nondum vero genitum, fanum autem potentia ac eam ob
+<lb/>caulam generationem suscipit. Etenim eorum quae manifeste
+<pb n="19.164"/>
+<lb/>non tuus alia sic genita sunt, alia vero possunt:
+<lb/>quemadmodum neutrum quoque accidit c itemque femen
+<lb/>aliud ut animal fieri possit habet, tunc vero actu est,
+<lb/>quum pro homine praebeatur; aliud vero neque est neque
+<lb/>fieri potest neque rationem habet, tanquam id ipfum
+<lb/>natura non sit: hoc enim neque ejus quod est, neque ejus
+<lb/>quod loturum est, rationem suscipit. Recte igitur siecundum
+<lb/>Hippocratem id quod in utero est animal dicetur et
+<lb/>iptum qui ex totis seminat et vim totius ei praebet. Non
+<lb/>suium vero id et ex ipfo universo et animal este declaravit,
+<lb/>sied etiam in numero ostendit principia ipsius hahere
+<lb/>universi similemque potestatem eorum e quibus radicem
+<lb/>habet, cum inquit: gemini ex unico concubitu sumi:
+<lb/>sinus vero et claustra uteri habent. Hic enim aperte intelligere
+<lb/>licet hanc vim in uterum femen immissum hahere,
+<lb/>quod natura animalis erat: quum enim parvae molis
+<lb/>sit, multum potentia fit et principem causam ostendit
+<lb/>tpsamque animalitatis substantiam. Ac quemadmodum qui
+<pb n="19.165"/>
+<lb/>in silice aut incalce ignis insitus est, hunc nemo ignem
+<lb/>idcirco esse negaret, quia non urit, tunc enim ignis actu
+<lb/>fit, cum materiae aliquid assumit et ab ipso universo exsirinfecus
+<lb/>venientis inspirationis, sic quod in mulieres injectum
+<lb/>femen est, id animal esse vere quispiam dicet: etenim
+<lb/>iptum jam potentia animal est: actu vero tum fit,
+<lb/>quum ab utero prodiens te iptum coniungit ei quod principrum
+<lb/>praebuit. Quum enim pars et divulsum membrum
+<lb/>magni animalis, hoc est mundi, sit dum in sinibus eonditum
+<lb/>est ac latitat, miscellae rationem retinet: ab hoc autem
+<lb/>separatum protundo , quod tanquam chaos est atque
+<lb/>erutum cognatam fimilemque naturam ipsis operationibus
+<lb/>amplectitur: nam ex te moveri incipit luciserosque oculos
+<lb/>perpetuo fotis lunaeque naturam imitans tendit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p>Ut igitur immerito quidam quod in utero
+<lb/>est animal esse negarunt, ex iis quae dicta simt coniectari
+<pb n="19.166"/>
+<lb/>licet: quae vero et qualia animal faciat nunc dicam. Cum
+<lb/>igitur animal ab anima et a natura regatur itemque nutrimento
+<lb/>et spiritu, nutritur enim anima spiritu, humidis
+<lb/>vero siccisque nutrimentis natura, omnibus his quod in
+<lb/>utero est administrationibus utens reperiemus et quae ad
+<lb/>motum animae attinent et quae ad naturae incrementum.
+<lb/>Nam devorat et, ut Hippocrati videtur, spirat, ore enim
+<lb/>nafoque respirationem desitper fieri scribit: ipsumque ex
+<lb/>Asclepiadis quidam sugere quae in utero tunt cotyledonas
+<lb/>ac coquere dicunt, siquidem ea quae devorata sunt -coctio
+<lb/>necessario sequitur, etsi quam maxime jam consectum ab
+<lb/>utero nutrimentum assumat: apponi vero id nisi natura
+<lb/>suscipiat non potest neque assimilari, antequam .necessario
+<lb/>nutrientem rem ei quae nutritur pueri natura assimilet:
+<lb/>ac tum opera naturae praebet ac recipit et ad secretionem
+<lb/>promptum est et ad id quod alienum eft separandum:
+<lb/>hanc enim ob rem bilis et humores omnes secreto nutri-,
+<lb/>mento fiunt: non enim ab ea fidum quae per umbilicum
+<pb n="19.167"/>
+<lb/>ad portas in jecur e fecundis fertur materia nutriri puta- tur,
+<lb/>etenim per has quoque vias alitur, maxime vero per
+<lb/>eas quae perfectiores funt: ac per quascunque defertur,
+<lb/>nutrimento fruitur. Neque enim putabis Hippocratem dicentem,
+<lb/>quod antiquius esi nutrimentum per abdomen qua
+<lb/>umbilicus est invehi , ignorasse num id ore nutriatur :
+<lb/>etenim de hac quoque via locutus est, ut ante propositum
+<lb/>esu Quod vero in utero ore nutrimentum fumat, testis
+<lb/>est post partum protinus mammae appetitio: neque enim
+<lb/>nisi antea huic viae assuetus esset tam cito ad mammam
+<lb/>ferretur. ln vapores vero et spiritus secretum nutrimentum
+<lb/>fundit facileque singulis partibus apponit mutatque
+<lb/>id quod e femine est in humores, quod ex humoribus in
+<lb/>carnes venafque et nervos ac arterias et ossa vifceraque
+<lb/>et adipem, itemque quod e pauco est in multum, et quod
+<lb/>. parvum est magnum fit ipfum ad proprios usque incramenti
+<lb/>terminos extendente terminanteque augendi virtute.
+</p>
+<pb n="19.168"/>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Quae igitur naturae opera sim t, ea ab iis
+<lb/>quae in utero funt fieri sistis a nobis demonstratum est:
+<lb/>quod vero et animae et rationis participia sint deinceps
+<lb/>monstrare conabor. Quum enim tentoria ad animales invehendas
+<lb/>facultates natura molita sit, oculos quidem ad
+<lb/>visivam, aures vero ad audiendum, linguam autem nafumque
+<lb/>ut per haec gustandi facultas et olfaciendi vehatur,
+<lb/>per manus vero et reliquum contrectans corpus quae ad
+<lb/>tactum attinet, patet locum vacuum nullum relinqui : fed
+<lb/>praedicta loca etiam quum infans in utero est animae
+<lb/>substantiam habebunt, ipfumque hujus domicilium cerebrum
+<lb/>ab initio etiam constitutum in intimo capite locatum
+<lb/>habent. Eo perspicuum est una cum jacto in uterum
+<lb/>temine insitam a creatore universi esse animam, ut gubernandi
+<lb/>vim corporis haberet. Nam an non scimus extrinsecos
+<lb/>opifices lostrumenta quaedam ad certas actiones fabricari?
+<lb/>ut fentinam navis opificem quo parte hac navis
+<pb n="19.169"/>
+<lb/>subnatat , vallum vero ad violentos fluctus cohibendos,
+<lb/>tum tutum parietem feptumque ob taxa , quae sub mari
+<lb/>latitant: tibiae vero opificem materiam aeneam in longas
+<lb/>fistulas excavantem ad illabentes spiritus suscipiendos:
+<lb/>musicum vero fides extendentem ad sonos modniandos :
+<lb/>medicum autem paeonica medicamenta ad morbos pollendos
+<lb/>parantem: imperatorem acies ante conflictum instruendas
+<lb/>perdocentem ass sustinendum hostem. Ut igitur qui
+<lb/>talia moliuntur alienius rei gratia ea parant, sic quae in
+<lb/>nobis sunt singula natura effingit tanquam instrumentum
+<lb/>certae rei tutorum. Sic quoque nervorum natura, quae
+<lb/>animae domicilium est, a principe parte una cum spiritu
+<lb/>orta animam constitui simul cum corporis constitutione
+<lb/>declarat. Etenim si nondum oculus videt, siingua vero
+<lb/>gustat, voces auris suscipit, calidum aut frigidum humidumve
+<lb/>aut siccum tangendi instrumenta non sentiunt idque
+<lb/>actu, fed quidem latitare haec posita tuus, verum
+<pb n="19.170"/>
+<lb/>paulo post infante jam orto agere possunt, auderem ipfam
+<lb/>quietem actum dicere : compositas enim paIpebras tenere,
+<lb/>quum adhuc in utero puer est, ac contractum natum ausesque
+<lb/>non audientes imperantis animae opus esu Linguam
+<lb/>vero iis quae utero geruntur gustare negaret nemo
+<lb/>itemque qualitatem suscipere, quum res i pla ex certo assectu
+<lb/>perspicua sit; ictinus enim in uteris saepe foetus emori
+<lb/>quum vitium per os adhibiti nutrimenti aversantes renuunt:
+<lb/>siquidem natura de linguae facultate quae gustandi est ad
+<lb/>conservandum foetum solicita est, et respirare foetum quod
+<lb/>opus animae est, ore enim, ut paulo ante dictum est, respirat.
+<lb/>Ex eo perspicuum est quod anima femini una
+<lb/>cum natura inest: nam animalem actionem. medicorum
+<lb/>foboles plurima insum respirationem statuit, non autem
+<lb/>naturalem : puerile enim est putare eam extra opera animae
+<lb/>praescribi, quum sine voluntate respirare dormiens
+<lb/>dicitur: siquidem respirandi actio voluntaria esu Quemadmodum
+<pb n="19.171"/>
+<lb/>enim quum vigilat animaI propterea quod omnes
+<lb/>actiones insunt, videt enim et audit ac per reliqua
+<lb/>sensoria agit, movetur anima et has actiones per sensoria
+<lb/>perficit seque ipsam ptr organa per quae opportuna peragit
+<lb/>extendens diffundensque negotium omne sustinet, sic
+<lb/>noctu contracta collectaque neque a visis rebus turbata
+<lb/>neque ab auditis territa neque a gustatis alienata neque
+<lb/>ab olsactis eversis neque ab iis quae tactui occurrunt alferale
+<lb/>nec curio ambulationeve aut alia exercitatione fatigata
+<lb/>.neque in his versans respirationis actionem obit:
+<lb/>aut naturam quidem sponte et non affectam quae opportona
+<lb/>lunt tacere credimus: animam autem divinius quidpiam
+<lb/>sortitam non operas proprias assequi. Quin mortalis
+<lb/>natura est atque terrestris et intelligentiae expers, quae
+<lb/>neque rationem habet et mortalem selom circuitum novit
+<lb/>operamque interitui obnoxiam accipit, anima autem ab
+<pb n="19.172"/>
+<lb/>universis animis et coelesti choro delapsa scientiam snscipit:
+<lb/>semper vero viam quae ad simile ducit sequens terram
+<lb/>quidem superat: ab erroribus aquae fele avertit;
+<lb/>transscendit aerem, fit igne superior et coelestem divinitatem
+<lb/>attingit: taepeque trans coelestem locum intuetur,
+<lb/>rerum omnium domino assistit: superas res circumstat:
+<lb/>saepe occurrit iis quibuscum commune genus habet: novit
+<lb/>unde sit quamvis in corpore fit, ipsomque rerum omnium
+<lb/>patrem universis rebus inesse his in quibus ab illo locata
+<lb/>est, utens oculis. Ne igitur respirationem dicant nescia
+<lb/>anima fieri temno languente corpore; ad omnia enim
+<lb/>anima magis -quam natura idonea est vimque majorem
+<lb/>habet. Ergo poterit natura vigilante aeque ac dormiente
+<lb/>animali agere: coquit enim in utroque tempore ac distribuit
+<lb/>secerni tque et apponit et auget: anima vero fala
+<lb/>vigiliis ea quae corpori conveniunt operari; in fomno
+<lb/>autem similia non poterit? Absurdum vero est quum jam
+<pb n="19.173"/>
+<lb/>fatis monstratum sit quod in utero est id esse animal, nisi
+<lb/>ex rebus extrinsecus fides de iis quae dicta fiunt fiat.
+<lb/>Mures enim ac vermes in materia quasi in utero fieri ridentes
+<lb/>animalia nominamus ea limo involuta spectantes,
+<lb/>sed haec quoque fiunt, arbitror, providente eorum praeside
+<lb/>facultate: ea vero quae in utero animalia fiunt an
+<lb/>aperte animalia vocari conveniat dubitamus?. Praesertim
+<lb/>praedicante haec Hippocrate, quae non animalia sunt,
+<lb/>ab animalibus animalia siunt naturae omnium indociles.
+<lb/>Decuit enim dicere non animalia aut partes fieri : perfecto
+<lb/>autem nomine usus est, ut animalia simul esse et constitui
+<lb/>intelligeremus. Magnificum vero illud et a controversia
+<lb/>longissime remotum quest divinitus edixit, naturae omnium
+<lb/>indociles; ut si modus a quopiam aut ratio animalis
+<lb/>creandi quaeratur, in ipfam omnia indocte gignentem naturam
+<lb/>referat. Atqui natura latis est, quae protius haud
+<lb/>credentium sententias excludat et animalia esse negantium:
+<lb/>si enim rebus omnibus ut hae sint fines ipfa praebet,
+<pb n="19.174"/>
+<lb/>certe ei quod utero geritur periectionem ut animal sit
+<lb/>affert. Cur vero non amentia est quod animal est, id
+<lb/>animam simul- et corpus dicere, rei autem nomen auferre?
+<lb/>Siquidem id haud aliter est, quam si rei cuipiam ignis
+<lb/>inducta forma, quod est ut vim urendi habeat, rem quidem
+<lb/>quispiam fateatur, nomen autem neget:. aut quum a
+<lb/>fole. illustrantur tenebrae factum quidem concedatur, dlem
+<lb/>vero id nomine essenegetur :. aut siquis humidas res folidasque
+<lb/>in unum coactas nutrire dicat, id vero nutrimentum
+<lb/>dici non concedat: aut aes scrrumve ferare, nomen
+<lb/>autem gladii fugere aut sectionem secantis. Verum neque
+<lb/>quispiam tenebrosi aeris a fole illuminati rem solam infp
+<lb/>salens id ipfum diem esse negaret, neque quod ignis
+<lb/>usum habet, id ignem dici: nec quod secantis actionem
+<lb/>huic nomen esse gladio, nec ei quod animatur femen et
+<lb/>animationem suscipit nomen quispiam auferet.
+</p>
+<pb n="19.175"/>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Ut igitur et naturae et animae particeps
+<lb/>foetus sit utriusque actionum et quomodo animal sit et
+<lb/>fatis demonstravimus. Reliquum autem est ut quod uteri
+<lb/>sinubus -adhuc incumbit,. id animal esse monstremus. Si
+<lb/>quispiam vero a nobis naturae rationes quaerat, eam omnia
+<lb/>a fe ipfa doctam ex feque discentem agere sciat. Neque
+<lb/>enim quo pacto vermes in plantis. gignuntur aut ex
+<lb/>equis bobusque vespae atque apes facile nos dicere licet,
+<lb/>verum a natura simpliciter fiunt. Nam neque aves docet
+<lb/>volare quispiam neque nos intelligere aut audire videreve,
+<lb/>fed tamen et aves volare videmus et nos ipsius sine difciplina
+<lb/>intelligere atque videre; ineffabilis enim est atque
+<lb/>recondita. longeque nostra cogitatione profundior ipfa per
+<lb/>fe naturae operatio. Ne igitur foetus qui vivificantur
+<lb/>animari diffidamus; neque enim hi post partum proprias
+<lb/>operas ab aliquo discunt, fed in uteris contenti devorant
+<lb/>coquuntque ac expurgant distributum alimentum , apponuntque
+<lb/>quod purgatum est ac supervacuum depellunt, ut
+<pb n="19.176"/>
+<lb/>postquam in lucem prodierint, quod supervacuum est excernant.
+<lb/>Meconium enim vocatum quum excrementum sit,
+<lb/>ex toto foetus nutrimento est humorque is qui in uracho
+<lb/>esu Ventriculus enim , inquit ille antiquus, ea infpiratione
+<lb/>quae ore fit inflatur intestinaque et in cyssaron via
+<lb/>quaedam deducitur: paulatim enim quod supervacuum est
+<lb/>incidens, in rectum intestinum pervenit; nam cyssaron
+<lb/>rectum intestinum appellavit. Atqui nemo id objiciat,
+<lb/>ideo foetum ore ali non posse, quia amnium membranam
+<lb/>sibi appositam habet: natura enim idonea est, quae per
+<lb/>foramina facultatem viamque ad id quod convenit aptam
+<lb/>praebeat. Democritus vero hominem ex homine excuti,
+<lb/>canem ex cane, ex bove bovem dicit. Vir qui coelestem
+<lb/>speculationem novit naturamque nostram speculatur, non
+<lb/>potest tam ignarus esse , ut eum oporteat quod in utero
+<lb/>est id animal esse negare, quum totum ex toto qui spuitur
+<lb/>constituit faciat : * etenim id ipfum quod fit hominis
+<lb/>rationem non haberet, nisi quum omnes in fe perfectas
+<pb n="19.177"/>
+<lb/>rationes contineret, tum omnia facturum esset qualia fo ut,
+<lb/>a. quibus femen fuit seminatum. Quemadmodum enim jacta
+<lb/>femina quibus vitiosa quantitas aut qualitas est eos foetus
+<lb/>excipiunt , quibus pars aut superest aut deest aut formam
+<lb/>alienam habent; sic quae integra ac expurgata femina
+<lb/>Iunt perfectis animalis rationem retinent:. quod enim deest
+<lb/>impedimentum totius naturae accepit et foetus haud
+<lb/>integros: ac propter id ipsimi non impeditum animalia in
+<lb/>femine fiunt. Nemo igitur philosophus ut divinarum rerum
+<lb/>ignarus , non medicus Asclepiadis discipulus ut tpecalatione
+<lb/>privatus a natura hominis foetus abdicet atque
+<lb/>excludat: fed ipsis prius in fe speculetur ac aut a senioribus
+<lb/>dilcat aut a parentibus memoria repetat spsnm quoque
+<lb/>olim. foetum fuisse; itaque tum a matre perfecte prius
+<lb/>in utero formatum atque radicem essentiae e femine tumpsisse,
+<lb/>ac naturam sine ratione agere non debere. Non
+<pb n="19.178"/>
+<lb/>aliud enim- est quam ejus jura violare , quum quae ab
+<lb/>eadem e terra creantur, omnia idem principium generatiouis
+<lb/>habentia atque ipsis in sinubus nutrita animalia
+<lb/>esse dicuntur, quae autem in utero nutriuntur non animalia
+<lb/>esse. An e tritico triticum e ceterisque seminibus
+<lb/>ea quae similia fiunt atque e plantis plantae gignuntur
+<lb/>omnia eandem cum gignentibus naturam habentia, homo
+<lb/>autem ceteris divinius quidpiam sortitus et rebus universis
+<lb/>melior deoque potestate similis non eandem cum parentibus
+<lb/>divinitatem excipiet? Ac jam quidem et lege et per
+<lb/>accidentia ipsa foetus animalia esse ostendamus. Qui vivere
+<lb/>in naturam ut in causam referunt: in ipsus vero legiflatores
+<lb/>ab anima tamen occasione sumpta bene vivere,
+<lb/>etenim leges hae sunt quae mala quidem sunt prohibere
+<lb/>ne fiant: custodire autem ea quae honesta jam funt quaeque
+<lb/>aut futura funt aut jam instant asciscere, ii duabus
+<lb/>maximis quas ipsi tulerunt legibus quae in utero funt
+<lb/>animalia esse demonstrarunt; altera ei qui abortus caula
+<pb n="19.179"/>
+<lb/>fuisset poenam statuente; altera qui nondum nati erant
+<lb/>hos haeredes institui posse jubente. Videbant enim ex.actius
+<lb/>quam multi ut qui demum facta imitabantur: legem
+<lb/>enim ferre in primis demum est: siquidem rerum omnium
+<lb/>pater inter deos omnia lege disposuit. Nam mundus
+<lb/>illius imperio. movetur stellaeque errantes propriis
+<lb/>singulae orbibus in praescriptum tempus et fol ipfe et luna
+<lb/>cursibus desinitis; terra ut radix opificis jussit posita est;
+<lb/>fusa aqua, expansus est aer, permeat ignis; singula proprias
+<lb/>actiones servantia metu legis propriae praetereundae.
+<lb/>Leges Cretensibus Iupiter dedit; Lacedaemoniis Pythius
+<lb/>ipsis, Pallas Atheniensibus. Horum igitur discipuli legislatores
+<lb/>Lycurgus et Solon per haec quae modo dixi capita
+<lb/>duo firmum nobis de foetu ac indubitatum argumentum
+<lb/>praebuerunt: nisi enim animalia essent, non in ipsus
+<lb/>abortus auctores legibus aperte proposita poena animadvertissent;
+<lb/>quoniam vero animalia esse dicebant, idcirco
+<pb n="19.180"/>
+<lb/>poenam instituerunt. Quis perfectus jam ac indubitatus
+<lb/>homo jus exigens caula ejus qui in utero non homo ac
+<lb/>ne animatus quidem est unquam haereditatem dimittet,
+<lb/>ignarus an animal sit quod in utero est? Quid igitur
+<lb/>animal esse quod in utero est negare contendis? Quis
+<lb/>successore utitur eo quem nondum esse credimus? Quis
+<lb/>sibi dominum dicet eum de quo dubitatio est? Nondum
+<lb/>natus erat Pericles olympius et jam Graecos omnes ob
+<lb/>infomnium terrebat: nondum Pisistratus et tyrannus erat r
+<lb/>Alexander ex olympiade nondum natus ab omnibus jam
+<lb/>Amnonis filius dicebatur et regni princeps; Cyptelusque
+<lb/>cum adhuc generaretur et- si Bacchiadis non videbatur
+<lb/>terrente ipsius spectro; Hecuba quoque ante partum fornudasse
+<lb/>Alexandrum dicitur gravi visione perterrita, ac ipsi
+<lb/>Phryges omnes ex igne dandum genito . calamitates accepisse;
+<lb/>itemque AIcmena Herculem procreans terrorem adversatus
+<lb/>ac ut diffiderent hostes effecit quum adhuc in-.
+<lb/>fantem utero gereret. Tantum igitur abest ut suetus non
+<pb n="19.181"/>
+<lb/>animal dicatur, ut non modo animal sit, sed etiam humanae
+<lb/>naturae vim habeat, quamvis adhuc utero radicitus
+<lb/>haereat. Sed jam ad suetum ipfum tanquam animal id
+<lb/>scrutatum ut nihil ipsi quo minus homo sit desit, nostra
+<lb/>vertatur oratio. Prodite quaeso e sinubus nihil timentes,
+<lb/>o foetus , neque generis demissionem neque carissimos
+<lb/>alienatos neque opes auterendas. Non vos multorum
+<lb/>calumnia neque horum.qui naturam ipsam iniuria afficiunt
+<lb/>excludit malignitas. Quapropter eos poenis vos adicietis,
+<lb/>ut Pericles, ut Pisistratus, ut Paris illoque Macedon Alexander
+<lb/>atque Hercules.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

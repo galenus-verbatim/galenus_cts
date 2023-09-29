@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De sectis ad eos qui introducuntur</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg004.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="64" to="105">64-105</biblScope>
+              <date>1821</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x01">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="10" to="16">10-16</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x01">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="286" to="298">286-298</biblScope>
+              <date>1638</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x02">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg004.verbatim-lat1">
+<pb n="1.64"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="1.64"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE SECTIS AD EOS QVI
+<lb/>INTR.ODVCVNTVR.</head>
+
+
+<p rend="indent">Medicae artis suppus sanitas est; finis
+<lb/>ipsius adeptio. At medicis necessarium est cognofcere,
+<lb/>ex quibus quis aut absentem sanitatem restituat, aut
+<lb/>praesentem tueatur. Vocantur autem ea, quae absentem
+<lb/>revocant, remedia et auxilia; quae vero praesentem conservant,
+<lb/>salubris victus ratio. Hac igitur ratione et ipIam
+<lb/>medicinam salubrium insalubriunrque scientiam prisca
+<lb/>definitio asserit: salubria quidem vocans, tum quae
+<lb/>praesentem sanitatem tuentur, tum quae deperditam
+<pb n="1.65"/>
+<lb/>restituunt: insalubria vero, quae his contraria tunc Ambo,
+<lb/>runcentur cognitione medicus indiget, ut illa eligat, haec
+<lb/>vitet. Unde vero horum scientiam facile comparet, nondum
+<lb/>peraeque ab omnibus concessum est. Sed alii quidem
+<lb/>solam. experientiam sutis esse arti pronuntiant; aliis vero
+<lb/>et ratio non exigua videtur conferre. Nominantur autem,
+<lb/>qui experientiam solam profitentur, Empirici nomine
+<lb/>ab illa . deducto ; similiter, qui ratione nituntur,
+<lb/>nationales. Atque hae duae principes artis medendi
+<lb/>sectae sunt; una. quidem experimentis ad remediorum
+<lb/>inventionem tonuit; altera vero per indicationem Et
+<lb/>fectis etiam nomina imposuerunt, F.mpiricen et Rationaleni.
+<lb/>. vocare autem consuerunt. Empiriceu quidem observatricem,.
+<lb/>et memorem et mnemoneuticen , Rationalem
+<lb/>vero . dogmaticam et analogisticam. Atque viros peraeque
+<lb/>ac saetas constituebant; eosque vocitabant et Empirices,
+<lb/>et observatores, et apparentium memores, quicunque
+<lb/>experientiam sectabantur; qui vero rationem profitebantar;
+<lb/>eos .Rationales, et dogmaticos., et analogistioos. i
+</p>
+<pb n="1.66"/>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Enimvero artem Empirici hunc in modum
+<lb/>constitutam esse pronuntiant, quoniam mullos hominibus
+<lb/>affectus viderent ohorici, nonnullos quidem tua sponte
+<lb/>communes tum aegris, tum fanis, ut sanguinis fluxus:
+<lb/>ex naribus, vel fusiores, vel aliti profluvia, vel aliud
+<lb/>hujusmodi quippiam, quod vel noxam, vel opem asterat,
+<lb/>non tamen causam effectricem. lentibus objectam habeat;
+<lb/>alios vero, quorum causa quidem apparuit, non
+<lb/>tamen ex nostro instituto, sed castu aliquo;. ut si eri
+<lb/>. collapsi, vel icto, aut aliter vulnerato, contigerit langui.
+<lb/>nem fluere, et aviditati quum obsequitur, in morbo fiigidam
+<lb/>aquam bibere, aut vinum., aut id genus asis,
+<lb/>quorum quodque ad utilitatem noxamve cessit. Priorem
+<lb/>itaque speciem iuvantium vel laedentium naturalem vocabant;
+<lb/>alteram vero fortuitam. Utriusque autem ipsitum
+<lb/>primam inspectionem, fortuitam occasionum, lea incidentiam
+<lb/>nominabant., quod rebus inconsulto mcidat,
+<lb/>nomen imponentes. Incidens igitur experientiae species
+<lb/>talis est. Ultranea Acro est, quum ultro vel summis ni.
+<pb n="1.67"/>
+<lb/>moniti, vel alia ducti opinione ad experientiam accesserint.
+<lb/>Quinetiam tertia experientiae species est imitatoria,.
+<lb/>quum ex lis, quae quodcunque iuverint aut Iaeierint,
+<lb/>vel natura, vel casu, vel fuomet instinctu,
+<lb/>statim in ipsis affectibus ad experientiam ducitur. Atque
+<lb/>haec est, quae artem ipfiorum potissimum constituerit;
+<lb/>non enim bis duntaxat, aut ter, verum saepius id, quod
+<lb/>ante profuit, imitati sunt; postea in. iisdem affectibus
+<lb/>idem facere ut plurimum comperientes talem memoriam,
+<lb/>praeceptum vocantes, jam id probabile, artisque partem
+<lb/>ducunt Quum autem multa- ejusmodi praecepta ab ipsis
+<lb/>collecta fuissent, universa illa collectio erat equidem medicina;
+<lb/>qui vero collegisset, medicus. At ejusmodi collectio
+<lb/>propria cujusque inspectio ab ipsis appellata est, quae
+<lb/>memoria quaedam est eorum, quae multoties simllique
+<lb/>modo conspecta sunt. Id vero ipfum experientiam quoqae
+<lb/>nominabant: ejus autem documentum, historiam.
+<lb/>lilem id ipfum ei, qui observaverit, ipsa inspectio est:
+<lb/>discenti vero, quod observatum est, historia. At quia
+<pb n="1.68"/>
+<lb/>etiam in morbos quosdam incidebant interdum antea non
+<lb/>visos, vel aliquos cognitos quidem, sed in iis locis, ubi
+<lb/>nulla esset remediorum copia , quae experientia observarint,
+<lb/>instrumentum aliquod auxiliis inveniendis fecerunt,
+<lb/>nempe ad similis transitum; quo plerumque usi etiam ab
+<lb/>affectu ad affectum similem idem praesidium transferunt;
+<lb/>item a. loco ad locum, a remedio prius cognito ad simile
+<lb/>aliquod deveniunt. Ab affectu quidem ad affectum, ut
+<lb/>si ab erysipelate ad herpetem transeant. A loco vero
+<lb/>ad Iocum, ut a brachio ad femur. .Ab auxilio ad auxiIium
+<lb/>, ut in nixi profluviis a cydonio malo. ad mefpilmn.
+<lb/>Atqui omnis hujusmodi transitus ad inventionem via est.
+<lb/>Verum inventio nondum ante experientiam est; sed statim
+<lb/>ubi, quod speratur, in experimentum deductum est,
+<lb/>id jam side dignum est, cujus testimonium experientia perLibuit,
+<lb/>non minus ac si plerumque pari modo fe habere
+<lb/>observatum fuerit. Porro experientiam hanc, quae similimo
+<lb/>transitum sequitur, exercitatoriam vocant, quod eam,
+<lb/>qui hac ratione. quid inventurus sit, in arte exercitatum ac .
+<pb n="1.69"/>
+<lb/>astrictum este oporteat. Ac priora cuncta experimenta,
+<lb/>quae experientiam praecesserunt , quibus ars ad Ini conftitutionem
+<lb/>mulgebat, etiam lu quibuslibet fieri possunt.
+<lb/>Talis equidem per experimentum ad artis finem via est.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">At quae ratione procedit, corporis natutam,
+<lb/>cui mederi conatur, jubet perdiscere; ad haec
+<lb/>omnium caularum vires, quibus affectum quotidie corpus
+<lb/>aut salubrius , aut insalubrius evadit. Post haec
+<lb/>jam et ariis, aquarum, regionum , studiorum , ciborum,
+<lb/>potuum et consuetudinum naturam nosse messicum oportere
+<lb/>proferunt; quo morborum omnium causas, et rea
+<lb/>mediorum facultates inveniat; praeterea coniicere possit,
+<lb/>et ratiocmari , medicamentum hujusmodi facultate praeditum
+<lb/>, si tali causae speciei adhibeatur , tale quippiam estlecturum
+<lb/>esse. Nam priusquam in his omnibus. varie fe
+<lb/>exercuerit m edicas, fieri non posse ajunt , utremediorum
+<lb/>copiam consequatur. Esto scilicet, ut exiguo-exemplo
+<pb n="1.70"/>
+<lb/>totum id condsscas, pars corporis aliqua dolens, et
+<lb/>dura, et renitens, et in tumore maiori. Hic cautam medicttm
+<lb/>invenire oportet, primum quidem, quod humor aliquis
+<lb/>naturali copiosior in eam partem fluens ipsam extulit,
+<lb/>et distendens in dolorem adduxit. Deinde vero, si
+<lb/>quid adhuc influat, prohibere ab influxu; sin minus,
+<lb/>partem jam evacuare. Qua igitur ratione, quod instuit,
+<lb/>adhuc sistes, et, quod continetur, vacuabis? Hoc
+<lb/>rtaque pacto ab ipso assectu ejus, quod confert, indicatio
+<lb/>ipsis oboritur. Non tamen hanc solam esse satis
+<lb/>ajunt, sed et ab aegrotantis viribus alteram indicationem
+<lb/>sumi; et ab aetate aliam; et a propria ipsius
+<lb/>aegri natura aliam: ita vero et ab auni tempestate,
+<lb/>et regionis natura, et a studiis, et a consuetudine
+<lb/>peculiari singulis , ejus , quod conIert , indicationes
+<lb/>fieri. Verbi gratia, [ut hoc quoque exemplo fiat
+<lb/>dilucidius,) concedatur aliquem acute febricitare, ad
+<pb n="1.71"/>
+<lb/>motum fegnem esse, gravitatem corporis sentire; sit vere,
+<lb/>tumidus magis nunc, quam prius, et rubicundior appareat,
+<lb/>ad haec sint et ipsi venae tumidiores; .cuique patet,
+<lb/>sanguinis calidioris plenitudinem huic redundare. Quod
+<lb/>igitur remedium? au constat, evacuationem id esse? hoc
+<lb/>namque remedium plenitudini contrarium. At contrariorum
+<lb/>contraria sunt remedia. Quomodo igitur ipsum
+<lb/>evacuabimus, aut quousque? Hoc. nondum a. causa sula
+<lb/>constare potest. Nam vires , aetas , anni tempestas , regio;
+<lb/>aliaque paulo ante commemorata prius inspicienda sunt.
+<lb/>liam st validis fit viribus, et aetate florente, et tempus
+<lb/>anni vernum, et regio temperata, non erraveris, si vena
+<lb/>incisa tantum vacues sanguinis , quantum causa postulet.
+<lb/>Imbecillis autem viribus, aetate vel puero admodum.
+<lb/>parvo, vel feni multum, in regione frigidiore; qualis est.
+<lb/>Seythiapaut calidiore, ut Aethiopia, et anni tempore vel
+<lb/>insigniter frigido, vel admodum calido, nemo adhuc
+<pb n="1.72"/>
+<lb/>venam incidere ausus suerit. Ita vero et consuetudinem,
+<lb/>et studia; et naturas corporum inspicere praecipiunt,
+<lb/>siquidem ejus, quod ipsis conducit, propriam ex omnibus
+<lb/>illisa indicationem fieri volunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">A quibus autem rei conserentis indicatio
+<lb/>Methodicis est, ab iisdem Empiricis observatio. Praedicta
+<lb/>-enim symptomatum congeries in febricitante, quam syndromen
+<lb/>vel concursum vocare consueverunt, Dogmatica
+<lb/>quidem vacuationem indicat, Empirico observationis reconlationem.
+<lb/>Etenim in hujusmodi affectibus quum
+<lb/>evacuationem- saepe profuisse viderit, .nunc quoque,. si
+<lb/>utatur, eandem profuturam sperati Quin etiam. florentes
+<lb/>aetate idoneam vacuationem haud moleste ferre conspexit,
+<lb/>ex quibus id crebro advertit. Sic vere magis, quam aestate,
+<lb/>et in loco temperato, .tum si consuetudo quaepiam vaortandi
+<lb/>aegro fuerit,. nempe per haemorrhoidas, vel per
+<lb/>nares , Dogmaticus quidem eam ob . rem plus sanguinis
+<lb/>arei natura incitatus adimit; Empiricus autem, quod
+<pb n="1.73"/>
+<lb/>ita observaverit. Ac universe loquendo, eadem remedia
+<lb/>m eisdem affectibus et Dogmatici et Empirici assumunt,.
+<lb/>de ipsorum inventionis modo dissentientes. Nam in ipsis
+<lb/>apparentibus in corpore symptomatis indicatio quidem
+<lb/>causae fit Dogmaticis, ex qua curationem inveniunt;
+<lb/>Empiricis vero recordatio eorum, quae multoties eodem
+<lb/>modo observata sunt. In quibus autem nullum evidens
+<lb/>symptoma, quod causam indicet, Dogmatici habent, in
+<lb/>his non verentur quaerere causam evidentem, quam procatarcticam
+<lb/>nominant , ut si canis rabidus . momorderit, aut
+<lb/>vipera, aut aliud quid ejusmodi. Siquidem. ulcus ipsum
+<lb/>nihilo magis ab aliis ulceribus diversum semper apparet,
+<lb/>quam omnino per initia. Nam in rabido cane perpetuo
+<lb/>simile iis, qui ab -alio quodam morsi sunt; verum in
+<lb/>viperis prunis diebus aliis simile; postea, quum jam deterras
+<lb/>habuerint, affectiones quaedam corporis ipsis permelosae
+<lb/>oboriuntur.. Et hujusmodi symptomata omnia,
+<pb n="1.74"/>
+<lb/>quae ab animalibus virus jaculantihus fiunt, si non probe
+<lb/>statim ab initio curentur, extreme perniciosa evadunt
+<lb/>Quae igitur recta curatio? An videlicetvenenum, quod
+<lb/>simul cum morsu corpori incidit, evacuandum est? lien
+<lb/>itaque cicatrix obducenda, neque ejusmodi vulnera fissiito
+<lb/>claudenda sunt; sed e contrario, si parvo fuerint,
+<lb/>saepe omnino incidenda; imo jam et calidis, et aeribus,
+<lb/>otiis, quae trahere siccare que virus possunt, medicamentis
+<lb/>ob eandem .causam uti convenit. Eadem vero
+<lb/>medicamenta et Empirici- adhibent, non a rei ipsius natura
+<lb/>ad ipsorum inventionem ducti , sed recordatione
+<lb/>corum, quae per experientiam comperta sunt. Quemadmodunf
+<lb/>enim in aetatibus; et anni tempestatibus, et
+<lb/>regionibus uniuscujusque dictorum curatio per experientiam
+<lb/>ipsis nota ac comperta erat:- sic etiam causis
+<lb/>evidentibus, quas vocant procatarcticas. Itaque fi jam
+<lb/>utrasque inventionis vias esse veras invicem concederent,
+<lb/>. ipsis haud pluribus verbis opus esset.
+</p>
+<pb n="1.75"/>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Quoniam vero. experientiam- Dogmatici
+<lb/>damnant, alii tanquam inconstantem, alii ut imper-,
+<lb/>tectam, reliqui ut artis expertem, rationem autem
+<lb/>rursus Empirici tanquam probabilem, non autem veram
+<lb/>reprehendunt; proinde duplex utrisque sermo longusque
+<lb/>admodum protenditur, dum se mutuo partim accusant,
+<lb/>partimque defendunt. Nam quae contra experientiam
+<lb/>ab Asclepiade-, . demonstrante , nihil saepe eodem videri
+<lb/>modo posse .dicta sunt,- inconstantem prorsus ipsam esse;
+<lb/>neque vel minimum quicquam posse invenire idoneam
+<lb/>esse declarant. Quae vero ab Erasistrato dicta sunt, qui
+<lb/>simplicia quidem etiam in simplicibus experientia invc-.
+<lb/>niri fatetur, ut portulacam quoque dentiunt stupori remedium.
+<lb/>esse, non tamen composita. quoque in compositis
+<lb/>itidem concedat, haud ineptam quidem ipsam tuti inve-:
+<lb/>ciendo, sed non ad omnia sufficere affirmant.. Haec vero
+<lb/>dicta eorum, qui per experientiam quidem talia inveniri
+<lb/>concedunt, fed vituperant: eandem, quod incerta vagetur,
+<lb/>ac in nullo sistat praescripto; tum quod longa et amethodos,
+<pb n="1.76"/>
+<lb/>ut ipsi ajunt, id est, sine via et ratione consistat;
+<lb/>delude sic rationem inducunt, non ceu inconstantem,
+<lb/>neque infirmam , sed experientiam veluti rem quandam
+<lb/>inartificiosum esse arguunt. Vicissim Empirici rationalium
+<lb/>dicteria revellentes, experientiam consistentem,
+<lb/>artificiosam, et quae satis cuique Iaciat, ostendere conantur
+<lb/>rationem multis adeo modis reprehendere, ut
+<lb/>rarIus ad lingulas accusationis species Dogmaticos refpondere
+<lb/>sit necessarium. Nam hi quum et staturam
+<lb/>corporis, et morborum omnium generationes, et reme..
+<lb/>istorum Iacultates cognoscere se profiteantur , Empirici
+<lb/>cominus progressi, omnia illorum calumniantur , tanquam
+<lb/>probabilia, similiaque vero tantum, nullam autem sirmam
+<lb/>cognitionem habentia. Nonnunquam vero, quum
+<lb/>ipsorum cognitionem concedunt, eorum nullum esse usum
+<lb/>ostendere nituntur. Et si quando id esse permiserint,
+<lb/>rursus ut supervacaneum reprehendunt. Talia sane ge.neratim
+<lb/>sibi mutuo objiciunt, contenduntque et Empirici
+<lb/>et Dogmatici. Particulatam vero multa in unoquoqtse
+<pb n="1.77"/>
+<lb/>ipsarum, ut in quaestionibus de abditarum causarum iuventiotte,
+<lb/>dum hi dissectionem corporum et indicationem.
+<lb/>et dialecticam speculationem commendant; instruo
+<lb/>menta enim haec ipsis .fiunt, quibus abdita indagantur;
+<lb/>Empirici vero .neque inveniri quicquam dissectione. admittunt,
+<lb/>neque, si etiam inveniatur, necessarium ad artem
+<lb/>hoc esse ; imo neque indicationem omnino exsistere, neque
+<lb/>alterum ex altero cognofci posse contendunt. r .Omnia
+<lb/>enim firi cognitionem requirere, neque esse aliquod ullius
+<lb/>rei natura obscurae indicium ; . imo ne dialecticen
+<lb/>quidem ullam artem desiderare. Postea etiam adversus
+<lb/>dialecticae suppositiones atque definitiones quippiam commentantur.
+<lb/>Ad haec neutiquam rei cuiusuis natura latentis
+<lb/>demonstrationem esse pronuntiant. latu vero et de
+<lb/>vitiosis demonstrationis modis, quibus Dogmatici uti
+<lb/>consuerunt, de omnique ratiocinatione nonnulla dicunt,
+<lb/>et quod non possit invenire, quod promittat, et quod
+<lb/>neque alia quaedam ars .ex ea constituatur; neque vita
+<lb/>hominum secundum -..eam transigatur... At epilogismus;
+<pb n="1.78"/>
+<lb/>quem evidentem rationem esse. proferunt, latentium infigulum
+<lb/>caularum utilis est; sic enim hi vocant,. quae
+<lb/>quidem ex sensilium genere sunt, nondum tamen apparuerunt.
+<lb/>Utilis etiam est arguendis iis; qui adversas
+<lb/>manifesta quicquam audent pronunciare. Sed et utilis
+<lb/>est ad indicandum, quod in apparentibus praetermittitm;
+<lb/>et ad occurrendum falsis argumentationibus; ut qui
+<lb/>ab evidentibus nunquam recedat , verum in his perpetuo
+<lb/>versetur. . Non tamen hujusmodi est analogismus, ajunt,
+<lb/>sed a manifestis incipit, in obscura vero .semper desinit,
+<lb/>ob idque multiformis est. - Nam ab evidentibus ipsis ad
+<lb/>abdita alia atque alia proficiscitur. Atque hic contraveritam
+<lb/>iniudicatam proponunt, quam indicium esse dicunt
+<lb/>iucompreheusionis. Sic enim ipsi veram quidem
+<lb/>firmamque^ cognitionem vocant comprehensionem, incomprehensionem
+<lb/>vero contrariam. Atque incomprehenlienem
+<lb/>discordiae iiijudicatae causam esse ajunt; discondiam
+<lb/>rursus incompreheusi.onis signum; iniudicatam
+<pb n="1.79"/>
+<lb/>vero de latentibus quae est dissensionem, non quae de
+<lb/>perspicuis, enunciant. Nam unumquodque hic apparens
+<lb/>vera sequentibus testimonium exhibet, mentientes coarguit.
+<lb/>Hoc genus sex millia Empirici et Rationales mutuo
+<lb/>sibi obiiciunt; curationem in eisdem assectibus eandem
+<lb/>molientes, qui in utraque secta legitime exercitati sunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Qui Methodici vocantur (sic enim seipsos
+<lb/>nominarunt, tanquam non etiam priores Dogmatici artem
+<lb/>methcdo tractare profiteantur) ne verbotenus quidem
+<lb/>eunt priscis sedis contendere videntur, sed etiam multa
+<lb/>artis opera innovare; qui neque locum assuetum ad curationis
+<lb/>indicationem prodesse quicquam ajunt, neque
+<lb/>causam, neque aetatem, neque tempus, neque regionem,
+<lb/>neque virium aegrotantis inspectionem, vel naturae,
+<lb/>veI ipsius habitus, respuunt autem auni tempestates,
+<lb/>loca et consuetudines , a solis assectionibus remedii
+<lb/>indicatione petita contenti, cumque sufficere dicentes;
+<lb/>nihil autem ab his speciatim, sed communiter univer-,
+<pb n="1.80"/>
+<lb/>sim que statuunt. Atque jam communitates vocant, quae
+<lb/>simul ipsa particularia omnia comprehendunt. Nonnulli
+<lb/>quidem morborum omnium , qui ex victus ratione proveniunt
+<lb/>, nonnulli vero omnium sermone absoluto duas
+<lb/>communitates, et tertiam aliquam mixtam indicare nitunturi
+<lb/>Nominavero ipsis imposuerunt astrictionem et fluorem,
+<lb/>et quemlibet morbum dicunt vel astrictum vel fiuentem
+<lb/>esse, vel ex ambobus compositum. Si enim naturale,
+<lb/>corporum evacuationes retinentur , astrictionem ; fi autem
+<lb/>magis efferuntur, fluorem vocant; quum autem et retinentur
+<lb/>et. efferuntur, complexus morborum- in hoc constituitur;
+<lb/>quemadmodum in oculo inflammatione simul et desiuxiune
+<lb/>.laborante. Inflammationem enim, quae astrictus est
+<lb/>affectus,  quoniam non sola nunc, sicd cum fluore circa
+<lb/>unum eundem que locunr oborta est; -totum facere affectum
+<lb/>complexum fotu compositum.  Conferentis vero
+<lb/>remedii indicationem in astrictis laxationem, in fluidis
+<lb/>suppressionem esse. Genu, verbi gratia, si. inflammationem
+<lb/>patiatur, .laxandum; ventriculum vel oculum profluentem
+<pb n="1.81"/>
+<lb/>. comprimendum , tenendumque. esse praecipiunt.
+<lb/>si mixtum nnplexumque. vitium habet, ei, quod urget,
+<lb/>resistendum, ut. magis infestanti periculumque inserenti.
+<lb/>Hoc autem est, quod. vehementiori occurrendum esse pcetius
+<lb/>quam alteri dictitanti Cur igitur non Dogmaticos
+<lb/>se nuncuparunt, . quum ludicationi praesidia tribuant?
+<lb/>sima, inquiunt, id, quod abditum est, scrutantur Dogmatici;
+<lb/>nos autem in manifestis Versamur: Denique et
+<lb/>fectam fuam totam ita definiunt, communitatum; quae
+<lb/>omnibus apparent, . cognitionem. Et ne aliis omnibus
+<lb/>artibus eadem conveniat definitio , .(etenim et illas cominmutatum
+<lb/>apparentium notitias esse judicant) ideo apponunt,
+<lb/>medicmae finem consequentium. Quidam illonun
+<lb/>non consequentium,  sed ipsius simi consonantium
+<lb/>adiecerunt. Complures utrisque addicti methodum esse
+<lb/>ajunt manllestaruin communitatum, concordantium. et
+<lb/>consequentium medicinae. finem notitiam. Nonnulli,
+<lb/>sicut Thessalus quoque , cohaerentium et necessariarum ad
+<lb/>sanitatem. Atque haec jam est ratio, cur se Dogmaticos
+<pb n="1.82"/>
+<lb/>appellari nolint; quippe latentibus ac obscuris fe non
+<lb/>indigere, ut illi profitentur; neque Empiricis annianerari
+<lb/>volunt, etsi quammaxirne in evidenti versentur.
+<lb/>Nam indicatione ab ipsis separati sunt. Nec tamen in
+<lb/>ipso circa evidens exercendi modo fe cum Empiricis
+<lb/>convenire dicunt. Illos enim ab obscuris tanquam incertis
+<lb/>et dubiis recedere; te vero quasi ab inutilibus.
+<lb/>Praeterea Empiricos in apparentibus observationem, ipsas
+<lb/>indicationem habere. Atque in his utrosque a se ipsis disi
+<lb/>sentire dicunt, et maxime, in quibus anni tempora, aetsies,
+<lb/>loca, et hoc genus universa tollunt, quae nullum
+<lb/>Aplane, ut ipsi putant, medicinae usum exhibent, solum
+<lb/>vero prioribus medicis ostentationis gratia plurimi sunt
+<lb/>aestimata. Et hoc stannum methodicae tectae bonum
+<lb/>esse praedicant. Quin etiam ob hoc gloriantur, seque
+<lb/>admiratione dignos censent. Insuper eum, qui vitata
+<lb/>esse brevem, longam vero artem dicat, increpant. 1.
+<lb/>contrario namque artem quidem esse brevem, ritam vero
+<pb n="1.83"/>
+<lb/>longam. siquidem omnibus, quae artem juvare falso
+<lb/>putata funt, ablatis, et ad fusas communitates nobis respicientibus,
+<lb/>neque longam adhuc medicinam, neque
+<lb/>difficilem, test facillimam et perspicuam esse, quae tota
+<lb/>lex mensibus promptissime perdisci queat. Hoc pactu
+<lb/>enim in morbis, qui victus ratione sanantur, universum
+<lb/>m angustum adeo coactum esse; similiter in iis, qui ex
+<lb/>nianuer medicamentis. auxilium capiunt. Quin in illis
+<lb/>quoque generatim quasdam communitates adinvenire student,
+<lb/>ad haec remediorum. sicopos numero paucos staluunt.
+<lb/>Unde mihi non in decantatis sex illis mensibus,
+<lb/>sed multo etiam citius tota illorum ars disici posse videtur.
+<lb/>Atque gratia illis habenda est de tam compendiosa
+<lb/>disciplina, si modo non mentiantur.. Mentientes autem
+<lb/>negligentiae accusandi sunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Verum ut potissimum aliquis jusie milii
+<lb/>rideatur judicare, ipsius vel in utilibus hallucinari, vel solos
+<lb/>supervacua recte fugere, jam aperiam. Enimvero neque
+<lb/>exigua consideratio haec mihi esse videtur, neque ad
+<pb n="1.84"/>
+<lb/>verba - tantum procedere, quemadmodum Empiricis- et
+<lb/>Dogmaticis, quum de prima auxiliorum inventione contendunt,
+<lb/>de praesenti usu invicem convenientes, verum
+<lb/>Methodicam sectam vel artis opera multum offendere,
+<lb/>vel juvare multum necesse est. Quum autum duplex in
+<lb/>rebus judicium sit, unum .a ratione sola, alterum ab
+<lb/>evidenter manifestis. profectum, prius majus est, quam
+<lb/>medicinae candidatis conveniat. Quare de hoc dicere
+<lb/>nunc. opportunum non est. Alterum, quod in fola evi.
+<lb/>dentis consistit, omnium hominum commune est. Quid
+<lb/>igitur prohibet hac priore uti, quae simulet medicans
+<lb/>candidatis sit manifesta,. et ab ipsis Methodicis m.pretio
+<lb/>habita? . Nihil enim aliud, quam quod apparet, semper
+<lb/>laudibus extollunt, atque hoc ubique profitentur, latertia
+<lb/>vero omnia in nullo usu esse referunt. Age nunc
+<lb/>primum causas procatarcticas dictas inspiciamus, pro judicii
+<lb/>regula , id quod Ieusibus apparet , constituentes,
+<lb/>prirnusque Methodicus in medium progressus. hunc. is
+<pb n="1.85"/>
+<lb/>modum loquatur : Quid tandem, o Dogmatici et Empirici,
+<lb/>frigus, aestum, ebrietatem, cruditatem; plenitudinem,
+<lb/>mdigentiam,. lassitudines, operationes, ciborum
+<lb/>qualitates, et consuetudinum mutationes frustra tam euride
+<lb/>inquiritis? Utrum haec, allectionibus corporum. neglectis,
+<lb/>medicaturi estis, quae nequaquam adsunt amplius,
+<lb/>sed ipsa quidem abeunt? quod autem ab ipsis generatum
+<lb/>est, in corpore manet, atque huic ^assectus enim. est)
+<lb/>remedium exhibere operiet. inspiciendum igitur est,
+<lb/>qualenam existat. Si enim estrictus morbus, solvendum
+<lb/>corpus est; si ... sinens, retinendum, a quacunque causa
+<lb/>generatus sit uterque. Ad quid igitur adhuc causa confert,
+<lb/>quum fluidum solutione nunquam -indigeat, neque
+<lb/>astoctum retentione? Prorsus ad nihil, ut res ipsa declarat.
+<lb/>similia de obscuris et continentibus causis Metbodici
+<lb/>loquuntur. . Nam illas quoque supervacuas esse
+<lb/>affirmanti, morbo videlicet propriam curationem indicaute,
+<lb/>etiam caula, quae ipsum fecit, incognita. Eodem
+<pb n="1.86"/>
+<lb/>dicendi modo ad anni tempestates , aetates erilem defrendunt,
+<lb/>admirantes, ec lue veteres medicos rem tara
+<lb/>claram ignorare. .Nam inflammatio, quum morbus sit
+<lb/>adstrictus, ut inquiunt, non quidem, aestate si oboriatur,
+<lb/>laxantibus auxiliis opus habet, hieme vero aliis quibusdam,
+<lb/>sed lu utroque tempore eisdem. Neque in pueritia
+<lb/>relaxantibus, in senectute reprimentibus, neque is
+<lb/>Aegypto resolventibus, Athenis cohibentibus. Contra
+<lb/>quum inflammationi fluens morbus ausit, nunquam stlveutibus,
+<lb/>verum perpetuo reprimentibus, et .hieme, et
+<lb/>aestate, et vere, et autumno, et quum aegrotus puer
+<lb/>est, et quum juvenis, ficu florens aetate, et quum fenex,
+<lb/>sive in Thracia, vel Scythia, vel Aethiopis fuerint
+<lb/>Quare nullum ex talibus ad quiduis conducere pronatiflant
+<lb/>, scilicet omnia haec frustra disquiri investigariqae.
+<lb/>Quid jam corporis partium inspectio? Nonne et haec
+<lb/>ad curationis indicationem supervacua est et mutilis l
+<pb n="1.87"/>
+<lb/>Quisquamne audeat dicere, inflammationem lu nervosa
+<lb/>parte solvendam esse, in arteriosa, aut venosa, aut carnosa
+<lb/>comprimendam? An omnino tam impudeus quispiam
+<lb/>fit, qui astrictam corporis partem non digerendam
+<lb/>esse, profluvio laborantem non continendam dictitet? Si
+<lb/>igitur partis natura nihil curationis modum immutat,
+<lb/>fed auxilia ex affectus genere inveniuntur, inutilis plane
+<lb/>est partis inspectio. At Methodicus quidem talis est, ut
+<lb/>formula quadam loquendi utar.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Accedat autem post hunc fecundus Empilleus,
+<lb/>hunc in modum. inquiens; Ego quidem evidenlibas
+<lb/>nihil neri praestantius, nec sapientius quicquam
+<lb/>profiteor iis, quae saepenumero conspexi Siequidem,
+<lb/>quod evidens est, id parvi ducas, . quemadmodum prius
+<lb/>aliquem sophistam audisse mihi rideor, et nobis ad eos,
+<lb/>qui evidens ipsum celebrant, discedendi tempus sit,
+<lb/>tton utique Cadmeam victoriam referas. At si, ut ab
+<lb/>mitio abs te audivimus, cuiuslibet abditi nullum esse
+<pb n="1.88"/>
+<lb/>usum dicas, evidentia sequi consessus, forfan ostendero
+<lb/>in manifesti mentione,. quod tu praeteristi Homines duo
+<lb/>a rabioso cane morsi ad medicos familiares sibi .remedia
+<lb/>petituri concesserunt. Sed exiguum adeo utriusque vul- .
+<lb/>nus . erat , ut ne cutis quidem tota esset diviia. alter
+<lb/>itaque medicorum sulius vulneris curationem moliebatur,.
+<lb/>de nulla re. alia solicitus, et quidem paucis diebus par-.
+<lb/>tem lanam reddidit. Alter vero, quum rabire .canent
+<lb/>cognovisset, contrarium a priore semper egit, . vulnus
+<lb/>multo majus faciens, validis diu acribusque medicamentis
+<lb/>usus , tum medicamentum interim adversus rabiem consectum,
+<lb/>ut ipse dicebat, aegrum assumere coegit,.
+<lb/>tantum abest , ut cicatricem vulneri statuo - seduxerit.
+<lb/>Tu nunc, quem utriusque curatio eventum habuerit, ,
+<lb/>audi. Qui medicamenta bibit, sanitati pristinae restimtus
+<lb/>esu Alter, qui nihll se mali habere putabat, subito
+<lb/>aquam expavit, .et convulsus periit. Numquid. hic eridens
+<lb/>caufa.in iis : supervacuo tibi inquisita este videtur?
+<pb n="1.89"/>
+<lb/>An ob esiam vir ille mortuus est , quam- medici uegli-. .
+<lb/>gentiani, qui nihil de morbi causa sciscitatus sit, neque
+<lb/>remedium ad eam observatam administrarit? Haec sula,
+<lb/>non alia, meo quidem sedicio, causa mortis illius extitit.
+<lb/>Quoniam vero manifesta lector, id genus causarum
+<lb/>nullam praeterire possum, pari modo nec aetatem omittere,
+<lb/>aut parvi facere. Nam et hic quoque mihi fidem
+<lb/>iacit id, quod apparet, dum iidem plane. affectus non
+<lb/>eandem semper curationem habeant, sed interim in iliversis
+<lb/>aetatibus .tantum differre , ut non quantitate sulum,
+<lb/>vel modo auxiliorum, sed toto genere varient.
+<lb/>Novi namque saepius multis aetate florentibus , pleuriti- .
+<lb/>cis et validis etiam a nobis sanguinem missum , verum
+<lb/>nulli vel senio plane consecto , vel adhuc puero admodum.
+<lb/>Neque vos ausi estis per venam vacuare, neo
+<lb/>ullus alius unquam. Quid autem sibi vult Hippocrates,
+<lb/>quum ait: sub canicula, et ante eam purgationes disi.
+<lb/>siciies. Rursus : Aestate superiores , per hyemem infe- .
+<pb n="1.90"/>
+<lb/>mores partes expurgare convenit. Verano an fassa νοbis
+<lb/>dicere videtur? Ad utrumque enim quid respondestis,
+<lb/>non habere vos arbitror. Nam si mentiri eum direritis,
+<lb/>evidentia minus aestimabitis, quae vobis in pretio
+<lb/>esse fingitis. Apparet enim, sic veritatem habere, ut
+<lb/>Hippocrates scribit. Sin autem vera loqui eum ccnfeatis,
+<lb/>tempora quoque et loca, quae supervacanea esse
+<lb/>contendistis, admittetis. At puto, vos nunquam a patria
+<lb/>vestra longe peregrinatos esse , neque locorum diversitatum
+<lb/>usu didicisse. Sciretis. utique , eos, qui septentrioni
+<lb/>subjacent, copiosas sanguinis evacuationes ferre non
+<lb/>posse, sicut nec illos, qui Aegyptum aut meridianatu
+<lb/>plagam totam incolunt. Qui vero medii hos interiacent,
+<lb/>iis venae incisionem saepe magno fuisse praesidio. porro
+<lb/>quod nec corporis partus inspicitis, non possum non de.
+<lb/>mirari, vehementerque absurdum est, nec veris modo,
+<lb/>sed. etiam illis , quae vosmet - agitis , contrarium.
+<lb/>Quaesto per dees, si inflammatio contingat vel in crure,
+<pb n="1.91"/>
+<lb/>vel in aure; vel in ore, vel in oculo, eademne erit
+<lb/>curandi ratio ? Curnam igitur crurum inflammationes scalpello
+<lb/>vos dividentes crebro conspexi, oleoque perfundentes,
+<lb/>oculos non item ? Cur rursus oculos inflammatione laborantes
+<lb/>adstringentibus medicamentis curatis, non tamen
+<lb/>eisdem crura perungitis ? Cur non itidem aures inflammatioue
+<lb/>vexatas oculorum auxiliis sanatis ? Cur non oculos
+<lb/>aurium praesidiis? Sed aliud aurium, aliud oculorum
+<lb/>inflammationis medicamentum est. Acetum siquidem cum
+<lb/>oleo rosaceo aurium inflammationis praesens est reme- ,
+<lb/>dium. Neminem tamen .puto idem exhibiturum oculis
+<lb/>inflammatis. Quodsi quis tam sit temerarius, non meliceri
+<lb/>ostrina certo noni temeritatem luam .experturum.
+<lb/>Et gurgulioni inflammatione obsesso pulchre succurrit
+<lb/>fpinae Aegyptiae fructus: sic quoque alumen fissile. Num
+<lb/>igitur haec quoque oculis inflammationi obnoxiis et auvibus
+<lb/>profuerint? An plane e contrario magnum detrimentum
+<lb/>attulerint? Atque haec omnia dico, primam
+<pb n="1.92"/>
+<lb/>vobis hypothesin concedens ; crurum videlicet et manuum
+<lb/>inflammationes digerendae esse, nec tamen oculorum,
+<lb/>aut gurgulionis, aut aurium. lam vero si crurum manuumque
+<lb/>luflammationes non quovis modo laxandas esse
+<lb/>monuero, forsan in mentem vobis veniet, fi sapiatis,
+<lb/>quantum a scopo aberra veritis. Erit autem praesens ser- .
+<lb/>nto ejus, quod apparet, commemoratio. Qui enim ex
+<lb/>nullo ictu, sed ultro in parte quacunque inflammationem
+<lb/>sortiuntur, ubi plethorica adsit affectio, nullius partis
+<lb/>laxationem prius desiderat , quam corpus totum evacuatum
+<lb/>sit. Non enim inflammationem praesentem, .si id
+<lb/>feceris, .imminues, sed potius augebis. Unde hoc tempure
+<lb/>.adstringentia refrigerantlaque parti admovemus.
+<lb/>Simulatque vero totum corpus evacua vertimus, tunc
+<lb/>etiam paor luflannuatione affecta - sustinebit laxantia.
+<lb/>Sin autem haec vobis non persuadeo, quod in orationis
+<lb/>exordio dixi, ad illos, a quibus in pretio est id, quod
+<lb/>apparet, digredi nos tempus postulat.
+</p>
+<pb n="1.93"/>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Haec Empirico commemorante; Dogmaticas
+<lb/>accedat, et hunc fa modum orationem instituat:
+<lb/>.Nimirum si .quid mentis haberes, haec abunde satis te
+<lb/>erudirent, nec aetatem, nec loca, nec caulas procatarcticas,
+<lb/>nec aliquam partem corporis inutilem existimari.
+<lb/>caeterum si nondum Empiricus evidentium enarratione
+<lb/>hoc tibi persuasit, fed alia adhuc oratione opus
+<lb/>est, eam apponere nunc ego cogito, quo tectae tuae
+<lb/>hypothesin infirmam esse demonstrem. Audio enim, vos
+<lb/>licere cognitionem apparentium communitatum. Interrogavi
+<lb/>autem crebro, in qua re potissimum haec communitas
+<lb/>consistat, quoque modo eam . cognoscamus ; dsiquidem
+<lb/>cognofcere me etiamnum posse non videor., caulam
+<lb/>verboteuus eandem omnes tractatis , rebus vero non consentitis;
+<lb/>.nonnulli enim vestrum excretionibus secundum
+<lb/>naturam adstrictum et fluens adnumerant. Quum quidem
+<lb/>retinentur excrementa, adstrictionem; quum ruimoderate
+<lb/>excernuntur, fluorem affectionem appellant.
+<lb/>.Alii quidam e vestro coetu inter reliquas corporum con-stitutiones
+<pb n="1.94"/>
+<lb/>affectus esse pronuntiant, querunturque de iis
+<lb/>vehementer, qui ad corpus, quod. evacuatur, resticiunt.
+<lb/>At quomodo milli utraque pars errare videatur,
+<lb/>fortassis jam ostendero. Ad eos autem sermo noster prius
+<lb/>dirigatur, qui excretionibus praeter naturam assectus astribuunt.
+<lb/>Nam demiror ipsus, si neque sudores unquam, neque
+<lb/>urinas, neque vomitus, neque dejectiones plures, quam
+<lb/>naturalis status exigit, in morbis probas vacuari viderunt,
+<lb/>et quod omnium absurdissimum est, si neque ex naribus
+<lb/>fluorem aliquando morbum judicasse conspexerunt.
+<lb/>Hujus siquidem non mosto quantitas , sed totum genas
+<lb/>praeter naturam est Sudorum, urinarum, et eorum,
+<lb/>quae per alvum aut vomitum proruunt, genus non praeter
+<lb/>naturam est. Sic tamen immodica est interdum copia,
+<lb/>.ut ego viderim nonnullos tantum sudorem proiadisse,
+<lb/>ut etiam culcitras madesecerlut, alios rursus supra
+<lb/>hemluas triginta per sedem dejecisse. Sed nihil horum
+<lb/>ridebatur cessare, quia id, quod ostendebat, evacuatatnr,
+<lb/>etsi haec symptomata naturalibus -excretionibus ubique
+<pb n="1.95"/>
+<lb/>regula utenti evitanda erant. Quamobrem probabis
+<lb/>hores quodammodo esse videntur, qui affectiones corporum
+<lb/>ipforum communitates statuunt. Sed hos quoque
+<lb/>demiror,, quomodo apparentes eas appellere ausi sint.
+<lb/>liam si,. quod ex alvo pro fluit, non est fluxus, verum
+<lb/>corporis affectio, ex .quo ipsum est fluens, nulli autem
+<lb/>fenfui haec apparere potest, qua ratione adhuc communitates
+<lb/>dixeris evidentes? In colo enim fluoris dispositio
+<lb/>esse potest, et tenuioribus intestinis, et jejuno, et
+<lb/>ventre, et mefaraeo , aliisque multis interaneis, quorum
+<lb/>nullum neque ipsimi, neque ipsius affectum sensu possis
+<lb/>percipere. Quomodo igitur adhuc apparentes dici pussint
+<lb/>communitates, nisi. etiam per signa cognosci apparere
+<lb/>quis volet vocarat .Sed si hoc ita est, quonam discrimine
+<lb/>a veteribus medicis adhuc differrent, ignoro.
+<lb/>Quomodo rursus statim et in semestri artem se perdocere
+<lb/>promittunt? Etenim non methodus exigua ad al,quid,
+<lb/>quod sensum effugit, cognoscendum desideratur.
+<pb n="1.96"/>
+<lb/>Quin etiam anatomes usus pulchre hoc administranti necessarius
+<lb/>est , ut quae cujusque partis interioris naturata
+<lb/>ut habet, edoceat j et naturalis speculationis haud parum
+<lb/>singularum munus et usum inspiciat. Priusqunn
+<lb/>enim haec inveneris, nullius in alto sitae partis corpora
+<lb/>affectum licet cognoscere. Quid opus est verbis, quod
+<lb/>etiam hic dialecticae usus magnus est, ut ex quibus
+<lb/>quid colligitur, palam comprehendas, nec sophismatibus
+<lb/>circumveniaris aut ab aliis , aut abs te ipso : quoniam
+<lb/>interdum nobismet vel inritis illudi ridere licet. Atqti
+<lb/>profluvium quid sibi velit, lubens rex eis quaererem, li
+<lb/>disserendi facultatem didicissent. Non enim hoc solum credo
+<lb/>fatis esse, quod a quibusdam illorum lictum est, prosiavium
+<lb/>videlicet affectum nominari praeter naturam. Rani
+<lb/>nisi ; quis sit affectus , teneamus , nihil amplius adeo
+<lb/>cognoverimus, an relaxatio, aut mollities; aut raritas sit
+<lb/>Nihil siquidem vel ipsis dicentibus manifesti audies; fed
+<lb/>quod eis lu mentem venerit, nunc hoc; nunc istud,
+<pb n="1.97"/>
+<lb/>plerumque simul omnia, tanquam nihil differentia. Quod
+<lb/>fi quis ipsas, quomodo haec intec se varient, quodque
+<lb/>singula propriam requirant inspectionem, docere conetur,
+<lb/>eum nullo pacto audite sustinent, scd veteres incessanti
+<lb/>calummanturque , tanquam frustra hujusmodi definientes:
+<lb/>tam otiosi ac segnes in veritatis inquisitione reperiuntur;
+<lb/>Imo nec quod laxo densum, molli durum, raro densum
+<lb/>existat contrarium, dicere nos patiuntur. Insuper ad
+<lb/>haec omnia, aliud esse naturales excretiones contineri,
+<lb/>aliud fluere; quemadmodum ab Hippocrate etiam universa
+<lb/>haec definita sunt ; verum temere , nullo judieio , et
+<lb/>clausis oculis de sus sententiam proferunt, et iusiammationem
+<lb/>(sic autem vocant durum, renitentem, dolore
+<lb/>plenum et calidum tumorem) prompte admodum et
+<lb/>inconsulto affectum esse astrictum pronunciant. Deinde
+<lb/>porro mflanunationes alias nominant implicitas, velut
+<lb/>oculorum inflammationes , ubi cum fluore fuerint, item
+<lb/>tonsillarum, gurgulionis, palati et gingivarum. Postea lupponunt
+<pb n="1.98"/>
+<lb/>meatus alios raros, alios patentes; ideoque utros..
+<lb/>que assectus Infuisse. Quosdam vero non pudet dicere/
+<lb/>in uno eodemque meatu et fluorem et astrictionem posse
+<lb/>consistere ; quod ne cogitare quidem Iacite est. Tam
+<lb/>sunt in omni re audacter temerarii. At pauci quidam
+<lb/>ex ipsis, ubi paulo copiosius de his omnibus tum audire,
+<lb/>tum disceptare pro viribus sustinuerint , vix tandem
+<lb/>poenitentia ducti ad veritatem se convertunt. His igitur,
+<lb/>qui accuratius de primis generalibus assectibus cupiunt
+<lb/>discere, seorsum commentarios scripsimus. Porro
+<lb/>ut praesens recentioribus medicinae candidatis frugem
+<lb/>aliquam adserat, pauca adversus eos dicere aequum luerit.
+<lb/>Optarem Iane et illos functum aliquem inde rcserre :
+<lb/>et reservent haud dubie , si , contentione relicta,
+<lb/>sermonem ipsum apud se paulisper examinarent. Sermo
+<lb/>ita habet. Inflammatio , ut ipsi vocant , tumor est praeter
+<lb/>naturam, doloriltcus, renitens tactui, durus, et calidns,
+<lb/>nullam magis partem pro sua ipsius ratione vet
+<pb n="1.99"/>
+<lb/>rariorem, quam fuit antea,- vel duriorem, vel deusiorenr
+<lb/>reddens , sed humore superfluo repletam , eoque intenti
+<lb/>sam.- Non tamen,. si quid omnino tensum est, iniquoque
+<lb/>densius aut durius,. ac antea, evadit Discas hoc in
+<lb/>coriis, loris et crinibus,. fi vehementer distendere coneris.
+<lb/>stari ratione humorum, qui inflammatam partem
+<lb/>occuparunt, remedium est evacuatio. Haec enim repletioni
+<lb/>contraria esu Nam, evacuatis humoribus, partes
+<lb/>statim laxiores fiunt Tentio certe repletas necessario,
+<lb/>sicut relaxatio evacuatas , sequitur. Densitas autem vel
+<lb/>raritas neutrum ex necessitate comitatur, quin nec fluor,
+<lb/>nec retentio. Neque enim, si rarum jam quippiam, id
+<lb/>ride quoque fluere prorsus necessitas postulat. Quid
+<lb/>enim, fi crassam et modicum fuerit id, quod continetar?
+<lb/>Neque, si densum, retineri: qui acopiosum et tenue
+<lb/>etiam per densos effluit meatus. Satius igitur esset ipsus
+<lb/>ex veterum libris relectis didicisse, quot modis id, quod
+<lb/>prius in parte continebatur, denuo excernitur. Etenim
+<pb n="1.100"/>
+<lb/>rarefcente eo, quod ipsimi continet, et eo, quod censinetur,
+<lb/>attenuato, majoreque reddito, et vehementius
+<lb/>moto, hun ab exteriorum aliquo attracto vel ab aliquo
+<lb/>interiorum impulsu, et velut a quibusdam internis reforpto.
+<lb/>Iam vero si quispiam, his omnibus neglectis,
+<lb/>unam vacuationis causam. meatuum raritatem esse putaverit
+<lb/>, is ne apparentia quidem cognoscere ridebitur.
+<lb/>Nam. lanam, vel spongiam, vel hujusmodi rarum quippiam
+<lb/>manifesto ridemus; si parum lutus in fe humeris
+<lb/>habeant, retinere id, nec dimittere, si multum, refandere.
+<lb/>Cur igitur non de oculis quoque, et naribus, et
+<lb/>ore., aliisque non minus reris id ipsum considerarunt?
+<lb/>nempe fieri posse, et in humoris, qui ipsis inest, copia,
+<lb/>nunquam nili ob meatuum raritatem quippiam effluere?
+<lb/>Quin etiam figulares ollas subinde ridemus adeo raras,
+<lb/>ut aqua lu eas insula percolatur: non perinde met
+<lb/>Crassior etenim mellis substantia est ollae meatibus. bu
+<lb/>igitur vero dissimile erat, si frequenter tenuitatis cauti
+<pb n="1.101"/>
+<lb/>quid effluere dixerim , licet corpus ipsum continens
+<lb/>a natura perforatum non sit ? Sed nec , quod natura
+<lb/>saepe, quae animal gubernat, impetu vehementiore
+<lb/>usa, omne supervacuum expurgat, quasi exprimens propuIfansque,
+<lb/>quae igitur difficultas est in artis operibus
+<lb/>diligenter vertito diu hoc intelligere? Quippe morborum
+<lb/>judicia hac fere ratione fiunt. Praetereo nunc reliquas
+<lb/>evacuationum causas; similiter retentionum, pares numero,
+<lb/>his contrarias. Non enim talis sermo de illis
+<lb/>pertractare accommodus est. Quod autem profuturum
+<lb/>aliquando putem, eo revertor; nempe oculum interim
+<lb/>polle flere, vel humore copiola, vel tenui reddito, vel
+<lb/>a natura per hanc partem expulso, nihil ipsis corpori^
+<lb/>bus supra naturalem habitum magis immutatis. Oportet
+<lb/>sane tenuem humorem crassem reddere , crassem atte- .
+<lb/>unare :. naturae impetum, si opportune contingat, excipere,
+<lb/>nihil circa oculorum corpora ipsa molientem, ut
+<lb/>quae fluoris causam non praebuerint. Caeterum aliam
+<pb n="1.102"/>
+<lb/>inflammatlonem astrictum esse affectum arbitrari, aliam
+<lb/>implicitam, insignis est dementiae; quandoquidem plimum
+<lb/>orationis tuae obliti sunt, scilicet fluens- non eraerratione
+<lb/>aestimandum esse, aut - retentionibus astrictum;
+<lb/>verum ad ipsas corporum assectiones respiciendum. Quum
+<lb/>itaque suuiles. omnino inter fe existant, et nullo praeiens
+<lb/>inflammatio a priore differre videatur alio uomice,
+<lb/>quam quod ex his quippiam defluit, ex illa non, quomodo
+<lb/>non insigniter absurdum est , aliam inflammationem
+<lb/>implicitam, aliam estrictanr nominare? Deinde quo pacto,
+<lb/>nec hoc, quod erat promptissimum, illis lu mentem venit
+<lb/>ratiocinari, nec in manui videlicet, nec in pede,
+<lb/>nec lu cubito, nec in brachio; nec in tibia, nec in femore,
+<lb/>nec in alia qualibet corporis- partu talem aliquando
+<lb/>inflammationis speciem, qua foras aliquid essiueret,
+<lb/>inventam esse; fotis autem, quae os, oculos et
+<lb/>nares infestant, hoc evenire? Utrum lupiter omnibus
+<lb/>implicitis communitatibus instituit, ut earum nulla unquam
+<pb n="1.103"/>
+<lb/>in aliam corporis partum fe immittat, fixi oculos
+<lb/>solum, et naftrm et os infestet? <hi rend="u">Infl</hi>ammatio siquidem
+<lb/>omnia potest occupare ; quae ejus generationis causae recipiendae
+<lb/>sunt idonea. - Quoniam vero quaestum natura
+<lb/>fiunt rara, quaedam densa, ex his quidem aliquid fluo-.
+<lb/>tris manat, in illis retinetur. Nam si utrem vel aliud
+<lb/>quid ita obstructum humida substantia repleas, nihil efstueti
+<lb/>Si vero spongiam, aliud id genus rarum, quic-.
+<lb/>quid est superflui, effundetur. Quid negotii ergo est, si
+<lb/>cognoscas, quanto omnis alia pellis sit astrictior- ea,
+<lb/>quae oculos, nares et os contegit p particularum naturae
+<lb/>causam attribuere, multis verborum ambagibus et nugis
+<lb/>omissis? Quod enim hoc sic habet, innuunt cum exulcenatione
+<lb/>ini aliis partibus factae inflammationes ; quia
+<lb/>illarum quod tenuius. est -et subtilius, emanat , quemadu
+<lb/>modum lu oculis, naso et ore. Donec autem cutis inoffensa
+<lb/>et astricta prorsus fuerit, ejus, quod .nihil rea
+<pb n="1.104"/>
+<lb/>fundit, haec causa, non inflammationis species est;
+<lb/>quemadmodum rursus, si melle, aut pice liquida, non
+<lb/>ita, it copiam spectes, immodica spongiam aut lanam
+<lb/>imbuas, nihil propter liquidi crassitiem effluit, vel si
+<lb/>aqua, vel aliquo tam tenui, rea hoc paucissimo, eadem,
+<lb/>arbitror, ratione ex oculis non usquequaque aliquid profunditur,
+<lb/>aut propter humorum crassitiem, aut quod
+<lb/>tron redundent , quemadmodum in iis , qui secundum
+<lb/>naturam habent- Quare eadem inflammationis species
+<lb/>non alia re discrepans; quam substantiae influentis crafsitie,
+<lb/>lippitudiuem sine fluxu generare potest, quam fapientissimi
+<lb/>Methodici astrictam nominant, creduntque
+<lb/>cum implicita huic esse discrimen verborum suorum obliti
+<lb/>, quae furtum et deorsum transferunt, corporeas ast
+<lb/>fectuum praeparationes esse, non in humoribus consistere
+<lb/>autumantes. Quonam igitur pacto , si in corporibus eadem
+<lb/>sit affectio , mulsa re alia differens , falam vero humorum
+<lb/>tenuium vel crassiorum naturam sequatur, ut interdum
+<lb/>aliquid effluat interdum retineatur, diversa,
+<pb n="1.105"/>
+<lb/>esse communitates existimatis? Haud Pecus implicitum
+<lb/>mixtumque vestrum non est intelligibile. Quantum vero
+<lb/>jam particulatim non solum lu ea medicinae parte, quae
+<lb/>victum curat, sed etiam in ea, quae manu, et quae
+<lb/>medicamentis medetur, aberretis, iterum forsan discetis,
+<lb/>si iis nondum fidem adhibeatis. In praesentia vero,
+<lb/>quoniam haec medicinae recens initiatis sufficiunt, libro
+<lb/>huic praesenti finem imponam.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De affectuum renibus insidentium dignotione et curatione</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg045.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Pseudo-Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">19</biblScope>
+              <biblScope unit="pp" from="643" to="698">643-698</biblScope>
+              <date>1830</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="415" to="423">415-423</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">10</biblScope>
+              <biblScope unit="pp" from="527" to="545">527-545</biblScope>
+              <date>1679</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x10">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg045.verbatim-lat1">
+<pb n="19.643"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="19.643"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>CALENI DE AFFECTUUM RENIBUS
+<lb/>INSIDENTIUM DIGNOTIONE
+<lb/>ET CURATIONE LIBER ADSCRIPTITIUS.
+<lb/></head>
+
+
+<p>De renum substantia.</p>
+<p rend="indent">Substantia renum propria nullique alteri parti communis
+<lb/>ex febris et carne constructa est, carne, inquam,
+<lb/>densa. Talis autem creata est, ut qui fanguis ad renes
+<lb/>defertur haud facile defluat, effundatur abeatque cum
+<pb n="19.644"/>
+<lb/>urina. Ipfa carnosa substantia multos habet in fe valvulos:
+<lb/>et quia in singulis substantiae valvulis calculi plerumque
+<lb/>gignuntur, propterea graves in eis oriuntur dolores.
+<lb/>Atque haec de. renum substantia dieta funt.</p>
+<p>ne renum sigura.</p>
+<p rend="indent">Figuram autem habent renes sigmoideam, in medio
+<lb/>cavitas existit, .quae per venas et arterlas ferctum exerementum
+<lb/>excipit. Nam ad renes non solae majores venae,
+<lb/>quarum aliae in cavitatem inferuntur, aliae in -membranam
+<lb/>ipsos circuintegentem , fed et alia vascula capillacia
+<lb/>deferuntur. Cur ren dexter sublimior et sinister demissior?
+<lb/>Ne in functione alter attrahat, alter alio rapiat. Qua in
+<lb/>parte corporis siti funt? Siti funt ad spinam renes paulo
+<lb/>altius quam ilia. Ex his autem oriuntur ureteres qui
+<lb/>urinam in vesicam deducunt. Ureterum substantia propria
+<lb/>est nullique alteri parti communis. Cur non unicus,
+<pb n="19.645"/>
+<lb/>sed duo renes a natura proCreati suntï Quod serosum
+<lb/>excrementum alia corporis excrementa ubertate exsuperet
+<lb/>ipsisque renibus usus sit serosum id excrementum attrahere.
+<lb/>Scire namque oportet a cava venam descendentem
+<lb/>ad partes inseriores deferri duosque in ramos eam secari;
+<lb/>atque eorum alterum furfum, alterum deorsum decurrere.
+<lb/>Qui deorsum abit, rurfum tres in venas manifeste
+<lb/>dividitur. Prior enim cruralia ad crura; altera pu..,
+<lb/>denda ad testeS ; posterior renaliS ad renes porrigitur.
+<lb/>Procedunt quoque e corde arteriae, quae serosum exerementum
+<lb/>caloremque eiaculantur, ut ab eiS renes calefiant.
+<lb/>Quandoquidem reneS ex feroso excremento sunt frigentque
+<lb/>ut lien ex melancholico humore ob idque a dictis
+<lb/>arteriiS calor renibus Suggeritur ut eorum frigus evinceret.
+<lb/>Postquam vero ferosum id excrementum renes attraxerunt,
+<lb/>utilem sanguinem retinent ex eoque nutriuntur; serosum
+<lb/>autem excrementum tanquam inutile ab excretrice facultate
+<lb/>expellitur. Sed quamdiu in venis et arteriiS cum
+<pb n="19.646"/>
+<lb/>sanguine moratur scrotum excrementum dicitur ; . quum
+<lb/>autem ex his expulsum est urina nominatur. Proinde
+<lb/>quod in sanguine utile est hi retinent, ex eoque nutriuntus;
+<lb/>quod vero inutile, id expellunt. Et quemadmodum
+<lb/>vesicata Pellis bile oblectatur et lien humore melancholico :
+<lb/>sic et hi renes serofo excremento.</p>
+<p>De renum actione.</p>
+<p rend="indent">Renibus functio est fero tu m humorem a sanguine fecernere
+<lb/>et percolere. Atque hic quidam functionis eorum
+<lb/>usus est,. At non fotum renis, fed et cujusque partis funotio
+<lb/>perquiritur; quum enim ea laeditur quae fit pars
+<lb/>affecta ipsa indicat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">omnis ipsius renis affectus nephritis dicitur sive simitaris
+<lb/>sit sive organicos sive communis ; proprie tamen
+<lb/>nephritis lithiasis appellatur.
+<pb n="19.647"/>
+<lb/>calculi causue.<space type="tab">    </space>si</p>
+<p rend="indent">Calculi vero causae quatuor funt, efficiens, materialis,
+<lb/>instrumentalis et finalis. Hoc ab externis rebus ediscis:
+<lb/>quod res externae aut frigus aut calor lapidis concretionem
+<lb/>efficiant ; quemadmodum in cuniculis et canalibus
+<lb/>quum calor ex materia minime perflata exsuscitatur; veluti
+<lb/>etiam quum aqua in canali substat, calor praeter natutam
+<lb/>accenditur. Hoc autem calore tenuem coenosae
+<lb/>aquae portionem discutiente crassior portio in terram durefcit
+<lb/>eoque manens in alveo substantiae lapidis adlicitur
+<lb/>atque ita lapis procreatur. Aliud etiam manifestum sit
+<lb/>exemplum. In lebete saepenumero lapides coalescere confpicimus
+<lb/>tenuiore aquae portione absumta , terrestri vero
+<lb/>et crassiore permanente, quae sic lebetis aut alterius aeris
+<lb/>substantiae adhaerescit lapisque procreatur. ln nobis
+<lb/>autem frigus lapidem non construit. Fieri siquidem nequit
+<lb/>ut vivo in corpore tantum frigus stabuletur, ut iris.
+<lb/>gus lapidem in nobis construere valeat, ut in externis rebus
+<pb n="19.648"/>
+<lb/>accidere cernimus. At a calore in nobis generatur
+<lb/>lapis eoque. vel vehementi vel tepido. Enimvero si crassa
+<lb/>sit materia, tunc sufficere . potest et tepidus et moderatus
+<lb/>et qui naturalis est ipsa calor ad hanc materiam firmatus
+<lb/>dam ac terrae modo indurandam; ut crassa namque ad
+<lb/>lapidis procreationem idonea .esu Sin tenuior sit., tum
+<lb/>plane vehementiori indiget calore , tum eo qui fecundum
+<lb/>naturam tum qui praeter naturam est, quo. ipsa in terram
+<lb/>concrescat. Solet enim calor tenuiorem ipsius materiae
+<lb/>portionem discutere atque ita prout valuerit, lapidem efformare.
+<lb/>Ideoque simpliciter a calore sit in nobis calcolus.
+<lb/>Materiatis vero causa aut crassius aut lentus humor
+<lb/>est aut uterque. lnstrumentalis autem cauta est ren aut
+<lb/>vesica aut alia para idonea. Finalis denique praeter ipfum
+<lb/>lapidem nulla hic dicenda esu Qui fanguis in ipsus renes
+<lb/>fertur aut seipsa crassior est aut ei plus inest pituitae
+<lb/>aut humoris melancholici aut flavae. bilis. Ad eos autem
+<lb/>per venas . et arterias vel in cavitatem vel substantiam deducitur
+<lb/>eoque deductus si quantitate aut qualitate aut.
+<pb n="19.649"/>
+<lb/>consistentia excedat, obturatur, remoratur caloremque
+<lb/>praeter naturam color amplius incrassat, agglutinat, torret
+<lb/>vehementius et in terream substantiam humorem illum
+<lb/>immutat lapidemque efformat. At quicunque arbitrantur
+<lb/>in ventriculo creari calculos; in sola ad ureteres trajectione
+<lb/>doloribus cruciari laborantes asserunt.^ Qui vero in
+<lb/>ipfa renum carne calculos quemadmodum in arthriticis
+<lb/>nodos gigni existimant, non in sola trajeetione, verum
+<lb/>etiam quo tempore ibi gerantur et quo in renum ventriculum
+<lb/>transseruntur , calculosos doloribus affici profitentur.
+<lb/>Fieri vero utroque modo potest, quum lentus crafsusque
+<lb/>humor in ipsis aliquo tempore terretur mrefcitque.
+<lb/>Demonstratum enim est in -libris de naturalibus faeultatibus
+<lb/>renem ad se trahere quidquid in venis scrotum ac
+<lb/>tenue sanguini permixtum est. Quum enim ejusmodi meatus
+<lb/>in ejus ventriculum illud transfundunt latiusque aperiuntur,
+<lb/>crassius quiddam una colatur, quod in renis ventriculo
+<lb/>torrefactum arefectumque lapidosam concretionem
+<pb n="19.650"/>
+<lb/>assequitur. Si itaque renis facultas excretrix id omnes
+<lb/>per urinas expulerit , arenosum in ipsis sediruentum creatur.
+<lb/>Si vero id impactum et solutu difficile sit; quod
+<lb/>renis ventriculo excipitur, ad eum aliud consimile ex
+<lb/>vena cava scaturiens majus dat incrementum : obducitur
+<lb/>namque continuo ab eo quod assuit, id quod prius stabulatum
+<lb/>est; atque ita calculus magnitudine insignis coagmentatur.
+<lb/>Ad hoc quoque potissimum juvat renum ipscrum
+<lb/>temperamentum, quum videlicet igneus et acris suerit
+<lb/>naturalis calor. At si laxior quidem sit ad renem a
+<lb/>cava vena ductus emulgens, fluidus vero fanguis neque
+<lb/>crassius neque lentus, cruenta hoc modo redditur urina.
+<lb/>Si itaque ex pituita fala lenta et crassa concretio fiat,
+<lb/>tophaceorum et calculoforum quae in renibus coguntur
+<lb/>corporum cinereus inerit color. Colore consimiles in
+<lb/>aquis vividis si tepidiores contemperatis sint, coagmentari
+<lb/>lapides conspiciuntur. Iisdem itaque causis pueri in vesica,
+<pb n="19.651"/>
+<lb/>juvenes vero in renibus calculos procreare deteguntur.
+<lb/>Quum enim. pueris functiones omnes naturales vasidae
+<lb/>sint, crassior humorum portio eis fusa ac dissoluta
+<lb/>est. Ea vero contra aetate provectis quum functiones
+<lb/>imbecillae luat, coacta. sistitur. Apparet autem id quoque
+<lb/>lu externis quae naturali constitutione crassa tenues quosdam
+<lb/>meatus trajicere decernimus. llla siquidem quum a
+<lb/>calore fusa aut liquata sunt, facili celeritati pervadunt;
+<lb/>minime vero fusa haud exeunt. Hujusmodi materiae ereatpla
+<lb/>nobis funt pix, resina, sebum, cera atque mel. Quum
+<lb/>itaque pueri multum calidi innati validasque functiones
+<lb/>habeant, fusis in eis materiae crassamentum in renes delabitur
+<lb/>ob idque facile in vesicam detruditur, non parum
+<lb/>etiam adiuvante ad traiectionis celeritatem ipso functionis
+<lb/>robore. At enim in vesica existente frigida r quod membranofa
+<lb/>sit paucoque sanguine irroretur quodque maximam
+<lb/>in fe amplitudinem habeat, etiamnum coagmentatur concrescitque
+<lb/>trajectum in ipsam crassamentum, quod quemadmodum
+<pb n="19.652"/>
+<lb/>paulo ante disserui, exordium ejusmodi conc.retionis
+<lb/>fumis; quum diutius in vesica commoratum Lentum
+<lb/>siquidemxid: crassamentum ;mrt probabilius est, in
+<lb/>pueris amativo ip forum- calore in unum coalescit, ooagmetuatur
+<lb/>concresci tque. Addamus praeterea crassitudinis
+<lb/>urinarum quaero pueris conspicitur lausam. Ea vero est
+<lb/>tum ipsorum voracitas tum ab assumpto. cibo intempestivus
+<lb/>motus, quo ludentes et saltantes agitantur.- In lactentihus
+<lb/>autemetiamnum ipfa materia ad hoc contribuit. Ex
+<lb/>adultis etiam qui casei similiumque esu uberius nutriuntur,
+<lb/>iis in .vesica. et renibus calculos fieri agnovimus. -Itaque
+<lb/>puerilis est vesicae morbuslithiafis. Haud enim potest
+<lb/>tam angusta vesicae cervix iumajorllrus corporibus esse, ut
+<lb/>crassiorem numerem remoretur. t.Non tamen hoc etiam
+<lb/>dumtaxat ad calculorum generationem idoneum conducere
+<lb/>arbitrandum est, test et intemperiem ita calidam, ut igneum
+<lb/>calorem habeat , non temperatum aut moderatum. In
+<lb/>puellis vesicae cervix ad vulvae collum i afa perstrata est,
+<lb/>quae ita brevis simul est et lata ; ut per eam urinarum
+<pb n="19.653"/>
+<lb/>crassamen ta facile cum lotis excernuntur, quae dum in
+<lb/>pueris masculis retinentur, .ob cervicis vesicae tum longitudinem
+<lb/>tum angustiam vesicae aestuanti ad calculorum
+<lb/>generationem materiam praebent.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Signorum alia scientifica funt, alia artificialia, alia
+<lb/>propria. Signum proprium constans ac perpetuum est,
+<lb/>quod nullo medio morbum indicat, nimirum calculum in
+<lb/>renibus, si arenae in matula subsideant, tunc plane dignoIcitur
+<lb/>in renibus esse calculum. Ecce et proprium et
+<lb/>certissimum signum. Quia vero implicantur affectus, communia
+<lb/>quoque signa narrabimus. Communia signa haec
+<lb/>sunt; si cruentae quae excernuntur urinae sint, id commune
+<lb/>esse potest signum aut quod vasorum apertio sit vel
+<lb/>ruptio vel erosio vel imbecillitas vel dilatatio vel quid
+<lb/>aliud. Quod ruptio exquisiti et confertim fusi. sanguinis
+<lb/>vacuationem moliatur. Apertio vero paulatim cedat et
+<pb n="19.654"/>
+<lb/>tenuissimum trajiciat sanguinem et fubcruentam urinam
+<lb/>efficiat-.. Si quocunque tempore et momento fanguis effluat,
+<lb/>imbecillitas est; si cum sanguine aliae quoque crassitudines
+<lb/>excludantur , dilatatio; si aquosus sit sanguis manifestum
+<lb/>est certumque calculum consistere. Si qui Iangula
+<lb/>excernitur sit crassius; manifestum est sanguinis crassitudinem
+<lb/>in calculum violenta coactione in lapidem abituram
+<lb/>esse. Nam in ea sanguinis evacuatione frigidam
+<lb/>propinamus ut. coarctetur vena et arteria proindeque non
+<lb/>alium amplius sanguinem f n renes devehat qui cogi possit.
+<lb/>Profecto in his etiam curandis error fi- Nam venam
+<lb/>coarctat frigida ut alium sanguinem inferre non sinant,
+<lb/>quae sanguinis in renibus commorantis causa est; proinde
+<lb/>si frigida exhibeas, venam- coarctabis, neque amplius Iangula.
+<lb/>d evehetur , fed qui. jam his renibus illatus est, eun
+<lb/>mox ferreum- induratus. Ex stupore cruris e directo dis-:
+<lb/>cere poteris quis ren laboret, nam si dextri erutus stupor
+<lb/>adsit, ren dexter aegrotat; si sinistri, sinister. Stupor au-:
+<lb/>tem est .sentiendi . et movendi in parte . difficultas. Fit
+<pb n="19.655"/>
+<lb/>autem quod vena quae ad partes inferiores fertur, triplici
+<lb/>ramo dividatur. Prior cum, arteriis ad testiculos ret. ad
+<lb/>vasa spermatica migrat; alter renes ingreditur; posterior
+<lb/>lu crura distribuitur. Quum igitur in renibus calculus
+<lb/>generatur, haec quoque simul patitur vena quae ad eruca
+<lb/>descendit: .ah ipsa namque sunt unius propaginis ambae.
+<lb/>Enimvero repletur vena quae ad crura porrigitur, ea vero
+<lb/>repleta multoties nervum -aut masculum comprimit; quum
+<lb/>nervus comprimitur, animalemfpiritum ad cruranon init-.
+<lb/>fit, sensti erus privatur, stupor .oboritur. Ex testiculo feoundum
+<lb/>rectitudinem retracto scire poteris quis ren assioratur;
+<lb/>si namque dexter testiculus retrahatur, ren dexter
+<lb/>aegrotat; si sinister, sinister.</p>
+<p rend="hanging">Quod a jecore et corde seruntur in renes vena et arteria,
+<lb/>ac in ipsum eorum cavitatem inseruntur.</p>
+<p rend="indent">Vasa autem spermatica ad testes feruntur. Quum igitur
+<pb n="19.656"/>
+<lb/>lapis in renibus procreamur, vena illa et arteria distenduntur
+<lb/>et spermatica vasta ad testes ducuntur atque ita
+<lb/>per consensum testes retrahuntur) .Asserunt quidam doloris-
+<lb/>ratione tantam esse violentiam , uti et vigilias et
+<lb/>vomitum existat. Debebant itaque podagrici et lippientes
+<lb/>et qui vehementer doloribus ac vigiliis exercentur vomere.
+<lb/>Verum pronterea noni vomunt, fed propter situm
+<lb/>renum. Ii namque fecundum spinam post intestina et
+<lb/>ventriculum positi funt.. Si itaque fiat vehemens ipsorum
+<lb/>tensio, per medias compagines affectio tdintestina ac ventriculum
+<lb/>peragrat indeque affectione accedente sequitur
+<lb/>subversio.</p>
+<p rend="hanging">Quod ex calculi attritu spiritus acres accurrant, promitant
+<lb/>ac concitent pruritum instar naturae partem assi-etam
+<lb/>indicantis. . .</p>
+<p rend="indent">Quandoquidem quum lapis subest quaedam veluti titillatio
+<lb/>oritur, quamque natura ad rei molestae expulsionem
+<pb n="19.657"/>
+<lb/>stimulatur, spiritus accurrunt, quibus irrumpentibus
+<lb/>in fist.ulofam pudendorum partem ipsam immaniter imendunt :
+<lb/>in omni enim motione naturali sanguis et sprrituu
+<lb/>concurrunt, qui funi ipsuisnatuiae .vehicula.</p>
+<p rend="hanging">Vulgus dolorem gravem voqqtmolesium consensum, medici
+<lb/>vehementissimum.</p>
+<p rend="indent">Demonstratum est cor, jecur et renes in cavitate non
+<lb/>sentire; in superficie eas lingulas partes sentire-; -quoniam
+<lb/>in superficiem nervi sentientes feruntur^ in .cavitatem non
+<lb/>feruntur. Quomodoigiturihaec dolorem patiuntur? Quod
+<lb/>cavitas gravetur, dolor exsurgit : extenditur namque membrana
+<lb/>exterior undique quod cavitas repleta sit , atque cirsumtendens
+<lb/>a membrana dolorem facit. In renum itaque
+<lb/>substantia etiamnum eodem modo generatur dolor, quod
+<lb/>cavitas lapide gravetur et circumtendatur proferatque
+<lb/>simul tensum doloris in superficiem, ut quae nervos tentientes
+<lb/>et membranam habeat, in armariis meatibus quod
+<pb n="19.658"/>
+<lb/>nervosi .et sensibus praestiti sint dolor fit vehementissimus.
+<lb/>Ad hacc dolor fit vehementissimus . in renibus, propterea
+<lb/>quod renum cavitates haud lataersint, sed angustae et renes
+<lb/>ob soliditatem non diducantur ut vesica. ..Quamobrem
+<lb/>in renibus lapides utplurimum minores sunt aequales et
+<lb/>molliores , ut qui nimirum diuturni non sunt. At calculosis
+<lb/>urinae per initia sunt.aquosae ; quum enim obstructio
+<lb/>sit, per .transfusionem effluunt; deinde arenolae; postremo
+<lb/>denique calculus quum dolor cessaverit excernitur;</p>
+<p rend="hanging">Quod confertim feratur calculus, eo circa lumbos steri
+<lb/>gravitatis consensum.</p>
+<p rend="indent">Quemadmodum in mulieribus parientibus ad foetus
+<lb/>egt estum partes dilatantur; ita hic violentia renum sub-.
+<lb/>stantia dispanditur et egreditur lapis; quumque egreditur
+<lb/>et ad ipsarum cavitatem. circa membranam accurato sensu
+<lb/>donatam decumbit, vehementem dolorem molitur multoque
+<pb n="19.659"/>
+<lb/>vehementius quum ureteres ingreditur excruciat, propter
+<lb/>eorum angustiam exquisitumque senium Quum enim
+<lb/>in renum substantia stabulatur , non multum dolorem .exeitat,
+<lb/>quoniam ipsorum substantis; ut dictum est, vix fensibilis
+<lb/>est. Saepe enim qui prae magnitudine in vesicae
+<lb/>collo cunctantur lapides in extremum periculum dolorum
+<lb/>acumine laborantes agunt, ut ne etiam urinas excernere
+<lb/>sinant. Vidi quendam hominem ob lapidem alias quideni
+<lb/>vias perlapsum, fed in pudendi extremo .inter septum
+<lb/>metendi difficultate feu dysuria et acutissimo dolore propemodum
+<lb/>interiisse, nisi angesto forcipe lapidem; apium
+<lb/>eximere potuissemus , sectionem in longitudinem porroetam
+<lb/>superne moliti. Nam urinae meatum nisi ingens
+<lb/>urgeat necessitas incidere.non oportet:- nam fistula omnino
+<lb/>fieret et per eam urina sensim proflueret. At quidam
+<lb/>neque ullum dolorem habent neque sanguinem mingunt,
+<lb/>quibus meatus quidem coacti non sunt et tenues urinae
+<lb/>non magno negotio excernuntur; hi vero minime fe aegrotare
+<lb/>arbitrantur, quod nimirum doloribus non cruciertur.
+<pb n="19.660"/>
+<lb/>.Verum nihil hic contemnendum, omnia namque
+<lb/>tempore graviora -e produnt. Lapides et arenulae colore
+<lb/>lifferunt tum pb calorem tum ob materiam. Nam quod
+<lb/>eorum longiori tempore retinetur, id rufum aut flavum
+<lb/>aut rubrum aut nigrum efficit multus color. Eodem modo
+<lb/>et ab humoribus lapides procreantur et arenae, qui colorelu
+<lb/>vel faudarachae similem vel nigrum vel pallidum vel
+<lb/>alium colorem pro bum rum varietate prae fe ferunt.
+<lb/>Construuntur autem in renibus .lapides, in eorum inquam
+<lb/>cavitatibus ac substantia et uticunque procreandi opportunitatem
+<lb/>sortiuntur vel parvi vel maiusculi interdumque
+<lb/>auctores, interdum plures. Lifferunt magnitudine, figura,
+<lb/>colore, asperitate et multitudine. Etenim nigri repertum.
+<lb/>tur et fubalbi et pallidi ; ac rotundi et leves et parvi
+<lb/>facile excernuntur; maiores vero vel quovis modo sigurati
+<lb/>et maxume oblongi et asperi- difficile excluduntur.
+<lb/>Arenulae suras prodeunt et cum lotio minguntur in iptatum
+<lb/>generatione; post autem ex his lapis procreatur,
+<pb n="19.661"/>
+<lb/>quem foras excludere .fieri non potest, quod occalluerit,
+<lb/>nisi . natura ipsa per. fe ipsum conterat et evacuet. Atque
+<lb/>culleus dolor et nephr-iticm simul ut plurimum incidunt.
+<lb/>Deprehenduntur autem propriis signis; nam alui vacuatio
+<lb/>collem doloribus medetur, nephriticos quoque per initia
+<lb/>mitigat. At jam quidam mesti camenium quo alvus fubducta
+<lb/>est dederunt dolorque cessavit primo, fecundo et
+<lb/>tertio die, quarto vero lapis foras prodiit. Quum. autem
+<lb/>simul inciderint nephriticus .et colinus affectus, tum sibi
+<lb/>mutuo partes tensione et remissione communicant. Tenduntur
+<lb/>enim inster funiculi ob continuitatem ac neque
+<lb/>sursum ructus neque deorfum siclus exit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p>De calculi et reliquorum .renum. affectuum curatione.-</p>
+<p rend="indent">Si derepente nephriticus invadat affectus aegerque paulo
+<lb/>ante comederit et edulia omnino incocta prout eo praefumpfit
+<pb n="19.662"/>
+<lb/>aut semicocta fuerint et humorum praecesserit
+<lb/>multitudo, ante omnem curationem aut potius mitigationem
+<lb/>, si nihil obstaculo sit, vomitus provocandus est. Si
+<lb/>excrementa intestinis insint, haec idoneis clysteribus vacuanda,
+<lb/>modo nihil reluctetur. Deinde si universum corpus
+<lb/>repletum fuerit, scrutandum est quis humor ipsum
+<lb/>repleverit; quod si sanguis, quum nihil prohibeat, vacuatio
+<lb/>molienda est:- vacuatio vero paulo minor sit quam
+<lb/>plenitudo postulet. Quid ita.? Quoniam non omnino
+<lb/>consentaneum est ex tempore lapidem excidere ac potissimum
+<lb/>si magnus sit ideoque oportet pleniorem sanguinis
+<lb/>evacuationem cavere, ne tempore corporis corrumptio obortura
+<lb/>sit. Si quatuor humores exuberent, prius vena
+<lb/>secanda est ante purgationem quam purgandum ante venae
+<lb/>sectionem.</p>
+<p>cur ante purgationem venam secamus</p>
+<p rend="indent">Quoniam si prius per venae sectionem vacaverimus,
+<pb n="19.663"/>
+<lb/>quod datur purgans medicamentum venas et arterias et
+<lb/>vacuas regiones non repletas invenit et libere totum corpus
+<lb/>permeat et humores trahit eorumque facilis est vaeuatio
+<lb/>propter vastorum amplitudinem .humorumque fusionem
+<lb/>ac tenuitatem. Sed si vasta sanguine repleta sint et
+<lb/>purgans dederis medicamentum, ob plenitudinem permeare
+<lb/>non poterit ; imo substat nihilque molitur aut prave ntolitor
+<lb/>quod efficit. Ecce ex medico purgans medicamentum.
+<lb/>Ex natura vero totum negotium pendet. Haec enim
+<lb/>purgante medicamento stimulata .facultatem secretiorem
+<lb/>convocat et ah inutilibus utilia secernit; ac utilia quidem
+<lb/>retentrix facultas retinet, inutilia vero expultrix facultas
+<lb/>expellit. .Non oportet autem simul venam iocare et purgare;
+<lb/>sed primum venam secare, deinde perbelle faculta- .
+<lb/>tem instaurare; quoniam ipfa nos gubernat et medicamentis
+<lb/>auxiliatur. .Non enim agunt per fe medicamenta proptereaqpe
+<lb/>ipsa facultas roboranda est ; ut natura ipsis quae
+<lb/>offeruntur medicamentis ceu instrumento uti queat et quod
+<pb n="19.664"/>
+<lb/>deceat efficere. Animadvertas cum sanguine vitalis spicitus
+<lb/>multum simul excerni eoque exorato universum cor-.
+<lb/>pus refrigerari omnesque naturales functiones deteriores
+<lb/>fieri. Ea propter vires prius recreandae funt sicque purgans
+<lb/>medicamentum exhibendum. ..</p>
+<p rend="hanging">Quod e cubito quidem si humoris adhuc esuuxu ren vexetur
+<lb/>, fanguis sit detrahendus ; e poplite vero si stet quod
+<lb/>asiluit. Atque .vena quae intra genu est incidenda sit t
+<lb/>ea namque universali venae viribus est aequalis; si vero
+<lb/>de ea sis anceps, ipsius propagines incidendae.</p>
+<p rend="indent">Quandoquidem affectus est nepbriticus et crassa quae
+<lb/>lapidem construit materia, ad partes superiores crassa materia
+<lb/>revelli non potest , sed ipsius impetum spectando
+<lb/>deorsum vacuanda. Quod si validae sint vires , poplitis
+<lb/>aut malleoli vena aperienda; si imbecilles, quae in cubito.
+<lb/>Si namque fractis viribus deorsum vacuaverimus , retentrix
+<lb/>facultas ob suam imbecillitatem non retinebit, fed
+<pb n="19.665"/>
+<lb/>tota in praeceps rapietur partemque assiduo defluxu itnpetet,
+<lb/>humoribus in locum imbecillem procumbentibus. c
+<lb/>Quapropter si robur virium adsit, vena poplitis incidenda
+<lb/>est, si vites infirmae, ad superiora revellendum. Quamobrem?
+<lb/>Ne materiae plusfn renes derivetur. Si nam-.
+<lb/>qne cibaria et pituitam et humorem vomitionibus vacuareris
+<lb/>levatio fit. Vacuatur namque cibus et pituita qnae
+<lb/>ventriculum gravant et ventriculo renes premuntur et
+<lb/>ureteres graviusque dolent. Atque haec primum diluenda
+<lb/>sunt, quae stomachus excipiens ceu debilior distendebatur
+<lb/>et premebatur ; his evacuatis levatio sequitur, nondum
+<lb/>tamen perfecta liberatio. Vacuamus etiam clystere sterens,
+<lb/>ne colo et reliquis intestinis pressis et gravatis ren
+<lb/>prematur, coarctetur vehementinsqne doleat. Patet autem
+<lb/>quod stercoris obstructione saepe renes exacerbari innotuerit
+<lb/>et injecto enemate dolorem nephriticum mitigatum
+<lb/>fuisse; aut quod a vacuatione .ren non amplius compressi
+<lb/>tus sit ; aut quod nulli ex stercore procreentur flatus; qui
+<pb n="19.666"/>
+<lb/>senem incurrere soliti ut imbecillem opprimunt ipfumque
+<lb/>distendunt: Sed neque sanguinem aut alium humorem
+<lb/>quam oporteat uberiorem in corpore morari sinendum est,
+<lb/>ne multa .renis veta distenta plus doloris concitent. Quidquid
+<lb/>enim dolet et calet et distenditur per vehementes
+<lb/>et acutos dolores materias accersunt. Proinde doloribus
+<lb/>derepente in renem aut paulatim incursantibus ex commemoratis
+<lb/>paulo ante causis , illico, nisi quid prohibeat,
+<lb/>alvus proluenda decocto caricarum, foeno Graeci, aristolochiae
+<lb/>et similium. Quod si prout deceat vacuata sit, sit
+<lb/>satis; sin minus bis et ter et saepe enemate vacuanda est
+<lb/>ex lis, quae conducibilia et aegrotantis naturae familiaria
+<lb/>funt, ne renes et ureteres opprimantur. Postquam autem
+<lb/>alvus fatis excrevit, iniicienda funt quae urinae meatus
+<lb/>dilatare, renes laxare , .calculum deprimere et mortus demulcere
+<lb/>queant. Utilis. ad haec materia est oleum anethinum,
+<lb/>in quo eliquatus fit gallinaceus adeps valde recens
+<lb/>potissimumque phasiani vel butyrum recens vel similium
+<pb n="19.667"/>
+<lb/>aliquid. Quae si non prostent, foenu graecum et althaeae
+<lb/>radicem vel femen aut similium aliquid elixautes oleo
+<lb/>iniiciemus. . Haec enim omnia meatus dilatant et lapides
+<lb/>deprimunt nec non vehementes dolores mitigant.- Horum
+<lb/>usus frequentius assequetur is qui magis exploratum habet
+<lb/>naturalium facultatum vigorem. Immoderata namque emolIitio
+<lb/>et laxatio virium robur exsolvit,. qua demulcetur
+<lb/>univerfus dolor perfecteque curatur. Post vomitus autem
+<lb/>et clysteres pars affecta ex humectantibus et laxantibus
+<lb/>fovenda est, quamdiu calculus in rene stabuletur; neque
+<lb/>his, ut dictum est, abutendum. Sed cucurbitulae quoque
+<lb/>juvant quae saepe celeriter adeo calculum transferunt, ut
+<lb/>subitam levationem advehant, calculo in ampliorem locum
+<lb/>translato. Quapropter supra a renibus initium faciendum
+<lb/>est procedendumque ad inguina per obliquum ilium situm,
+<lb/>quo loco frequenter dolores incedunt. Satius autem est
+<lb/>dictis fomentis partes calefacere , deinde ita cucurbitulas
+<pb n="19.668"/>
+<lb/>admovere. Quandoquidem interdum magnus compertus
+<lb/>lapis vehementer inculcatur, qui quum vehementia trabi-tur,
+<lb/>nonnumquam periculum quoque doloribus accersit.
+<lb/>Postea ita fovere nominatis incessibus si adusque pudenda
+<lb/>malum per consensum procedat,. ex foenu graeco, althaea,
+<lb/>femine lini, anethi comis et similibus aqua probe coctis et
+<lb/>dulci oleo inlusis. Cataplasma admovere conferet ex triticea
+<lb/>farina aut hordeacea eum lini semine , foeno graeco
+<lb/>et melle et oleo anethino vel gleucino. Haec autem cum
+<lb/>decoctione praedicta elixabimus inspergentes in cataplafmatis
+<lb/>ebullitione althaeae radicem probe tutam probeque
+<lb/>cribro excussam, in fine decoctionis etiam terebinthinam
+<lb/>resinam addemus et quaedam^ femina flatus discutientis , si
+<lb/>inflatio sit veluti anethi et apii femina, foeniculum, ligufiscum
+<lb/>et quaedam his similia pro laborantis temperamento.
+<lb/>Optimum fit cataplasma etiam ex lupinorum farina cum
+<lb/>mesto decocta; sed a decoctione peucedani radicem tuundissime
+<pb n="19.669"/>
+<lb/>laevigatatn et chamaemelum admisceamus. Bonum
+<lb/>etiam est panem musto incoquere et cataplasma lumbis et
+<lb/>ilibus imponere. .Neque minus idoneum est vesicae et imo
+<lb/>ventri cataplasma admovere. Crebro vero alia atque alia
+<lb/>priusquam primum frigidum fuerit, admovenda funt. Sed
+<lb/>si id non liceat, caldario foris altero ne refrigescat operiendum.
+<lb/>Id autem fiet superpositis cataplasmati fomentis
+<lb/>aut calida aqua in testaceo vate vel aeneo excepta. Post
+<lb/>saetam alvi scortum deorsirmque, ut dictum est, evacuationem,
+<lb/>venae sectionem, purgationem , fomenta, insessus, si
+<lb/>dolores adhuc perseverent, aquarum dulcium balneis utendum
+<lb/>est. Quidam etenim ante venae sectionem reliquamque
+<lb/>curationem. Balnea Iane quamprimum humectant et
+<lb/>calefaciunt. Calida siquidem aqua levationem cum calefactioue
+<lb/>affert. Si quis vero frequentius fe in eam conjiciat
+<lb/>inefcatus, doloris lenimento corporis vires exfolvit,
+<lb/>quibus cautae omnes molestae propulsantur. Quo itaque
+<pb n="19.670"/>
+<lb/>tempore dolor abierit, auferenda fiunt balnea partesque
+<lb/>fovendae, fed congruis laborantis naturae meurcamentis.
+<lb/>Sed si excessu. doloris homo: periclitetur, opportunius erit
+<lb/>stupefacientibus uti ; aliter: enim ea non usurpes. Haec
+<lb/>enim dolores. non. solvunt fed peculiari temperamento doIoris
+<lb/>ferrum lolluntipfumque fallunt, quae affectio possea
+<lb/>multam- curam postulat. Que d ss quis etiam flatus crassius,
+<lb/>qui una eum calculo erueret, suspectus nobis fuerit, praedictis
+<lb/>fomentis et cataplasmatibus admifcebimus, quae flatus
+<lb/>discutiendi facultatem obtinent, sicut rutam, anethum, nigellam
+<lb/>et similia laevigata post perlectam ebullitionem atque
+<lb/>citra laev igationem aquae - ad fomenta et clystere^
+<lb/>incoquimus. Verum si omnibus his peractis adhuc lapidesfixi
+<lb/>haereant, prohibenda sunt uberiora et aegrotantis na-.
+<lb/>curae dissentanea tum edulia tum. pocula , ne venter his
+<lb/>repletus, gravatus inflatusque sit cibis aut humoribus aut
+<lb/>flatibus ipfosque renes repletione premat dolorumque vehementiam
+<pb n="19.671"/>
+<lb/>concitet. Sint vero omnia modica et labora ntis
+<lb/>naturae tum qualitate tum quantitate consentanea. At
+<lb/>si calidior aegrotantis esset natura. et sitis vehemens,. vacuato.
+<lb/>prius toto corpore et ab excrementis repurgato
+<lb/>sique frigidae potandae esset consuetudo et phlegmone
+<lb/>nullum viscus laboraret nec imbecillum existeret, frigidam
+<lb/>aegrotanti multoties copiofe exhibuimus, quum nihil rev
+<lb/>luctaretur celeriterque roboratis renibus lapidem impactum
+<lb/>expulimus. In .plethoricis vero et excrementosis corporibus
+<lb/>et quibus viscus aliquod. imbecille subjacet et caetera
+<lb/>forte simili donatis aquae potionem praecavere jubent.
+<lb/>Sed si post haec omnia praedicta lufixus inhaereat etiamnmn
+<lb/>lapis , conterentibus medicamentis utendum tepidam
+<lb/>facultatem habentibus. Nam calida et urinam provoeantia
+<lb/>lapidem induranti Quae vero tepidae funt facultatis,
+<lb/>paulatim comminuunt, .neque eum duriorem reddunt.
+<lb/>Haec autem funt damasonium, petroselinum, polytrichum
+<lb/>et quae his facultate funt similia. Ac forfan aliquis dubitavit,
+<pb n="19.672"/>
+<lb/>quomodo si haec tepidae sint facultatis , lapidem
+<lb/>comminuere valeant? Cui respondemus: quum lapis ab
+<lb/>intemperie et vehementi calore induruerit, meritu quae
+<lb/>tepentis sunt facultatis exhibemus uti intemperiei lapidem
+<lb/>astruenti contraria, quo multo tempore ipsum attenuamus,
+<lb/>conteramus, superemus. Nam tepida ceu minus calida
+<lb/>fune valde calidis contraria. -Diureticis ergo et valde calidis
+<lb/>uti non poteris; amplius enim crassam materiam induiaveris
+<lb/>sceleri terque ex ea lapidem formaveris. Quum
+<lb/>vero lapis nondum constititneque magnus est, fed tantum
+<lb/>obstructio -sit ab arenis velcrassis et lentis humoribus,
+<lb/>tunc calida et aperientia dabis haud veritus eam materiam
+<lb/>lapidescere. Arenulae namque sunt quae obstructionem.
+<lb/>faciunt atque si aperientia et calida, quale medicamentum
+<lb/>est ex anisio et pipere, apium, phu et similia dederis,
+<lb/>eas evacuabis et excludes.
+</p>
+<pb n="19.673"/>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Ad caetera jam progrediendum ac de praeservandi
+<lb/>ratione pauca disserenda sunt, ne qui curationem potenter
+<lb/>consequuti sunt, eos lapidum procreatio rursum adoriatur.
+<lb/>Quoniam autem calculo laborantium alii curati funt,
+<lb/>alii minime; maximi momenti est ad praecautionem cum
+<lb/>ciborum moderatio tum probae coctiones. Satietas enim et
+<lb/>cruditas non solum hunc exacerbant morbum, verum etiam
+<lb/>non existente procreant. Quapropter nihil serendum assem
+<lb/>at ur, quod renes aut vesicam calefaciat. Cavendum quoque
+<lb/>ab eduliis est substantia duris et aegre dividuis, quae substantiam
+<lb/>pleniorem habent; quae multum nutriunt; quae
+<lb/>celeriter distribuuntur ante perfectionem concoctionis ; quae
+<lb/>fluitant; quae difficile secedunt ; quae flatus pariunt; quae
+<lb/>vias obstruunt aut aliter corporibus pertinacius adhaerefcunI.
+<lb/>Nam ventriculus talibus alimentis gravatus cruda
+<lb/>haec jecori et renibus distribuit quodque crudum confestim
+<pb n="19.674"/>
+<lb/>expulsum est, male trajicitur atque cum tumultu semel
+<lb/>atque iterum ad renes traductum in calculos concrescit ob
+<lb/>diuturnam renis percussionem. Vinum autem sit tenue
+<lb/>admodum et album, non valde vetustum; dulcia vina et
+<lb/>nigra calculosis sunt inepta. Aqua vero in universa victus
+<lb/>ratione purissima sit oportet et expurgata. Nam fluviales
+<lb/>palustres et omnes stagnantes aquae et quae segniter fluunt,
+<lb/>quod non expurgentur lapides procreare queunt. At ut
+<lb/>concise loquar, victus omnis frigidioribus temperamento
+<lb/>et carnosis esto valde extenuans; calidioribus et gracilibus
+<lb/>inter extenuantia et crassescere facientia medius. Ab
+<lb/>aliorum omnium satietate cavere oportet ac potissimum
+<lb/>dulcium et crustaceorum alimentorum et crassiorum et lentorum
+<lb/>et adsposorum. Undecunque adversissima existimanda
+<lb/>est cruditas, in quam siquis inciderit, is somno
+<lb/>diutius aut quieti prorsus indulgeat et hypochondria propriis
+<lb/>manibus calefaciat, donec probe cocta sint omnia et
+<lb/>infra subsidant. In temperatis locis et puro aere sint
+<pb n="19.675"/>
+<lb/>consuetudines quibus horae sunt integrae; irae promoveant
+<lb/>tur, deambulationes et exercitationes ad aegrotantis naturam
+<lb/>commoderatae sint, desidia namque noxia. Alvum
+<lb/>liberam habere perpetuo oportet nisi quid aliud obsistat,
+<lb/>quum enim haec probe excernit libere profluent urinae.
+<lb/>Unctionibus autem si uti oporteat et quum oportet, sint
+<lb/>quae partes ab affectu tueri queant, ut sint phoenigmi,
+<lb/>diopaces et sinapismi. Aquarum etiam sponte natarum usus
+<lb/>prodest, si nihil prohibeat. Accurate vero perpendenti,
+<lb/>quum tulerit tempus, opportune vena secanda est si sanguis
+<lb/>exuberare videatur, qui namque exuberat, eum nisi
+<lb/>vacuaverit in partem imbeciIIiorem omnino confluet. Sed
+<lb/>purgationibus uti necessarium est in iis, qui pravis scatent
+<lb/>humoribus. Qui aliquantulum inordinate degunt humoremque
+<lb/>crudum in superiori ventrIcuIo multum colligunt,
+<lb/>ii frequenter a coena evoment, nisi quid ipsis obstiterit.
+<lb/>Post adhibitam universo corpori providentiam per locos
+<lb/>communes offerenda funt medicamenta quae renes expurgen
+<pb n="19.676"/>
+<lb/>t, ut aperientia quae urinas crassissimas, lentas, foetidas
+<lb/>et copiosas a venis, renibus, ureteribus et vesica educunt,
+<lb/>ut sunt radicis cardui decoctum et alia praedicta.
+<lb/>Saepenumero etiam usui funt quae urinas movent. Haec
+<lb/>itaque communiter ad memoriam cunctis hominibus neque
+<lb/>ad perfectam doctrinam exposita sunt. Sed tibi gratia
+<lb/>est habenda, quoniam propter te sunt omnia tradita.
+<lb/>Quum autem mihi non sit satis, ex solo affectu persectam
+<lb/>et accuratam curationem assequutum fuisse, sed nos praeterea
+<lb/>aliis genere similibus indigere, eorum iterum metuinisse
+<lb/>oportet. Variatur enim curatio pro diversis causis,
+<lb/>aetatibus, regionibus, anni tempestatibus habitibusque et
+<lb/>dispositionibus, moribus, consuetudinibus, temperamentis,
+<lb/>sensus facilitate et difficultate, partium permutationibus,
+<lb/>posituris et quibusdam caeteris. Quamobrem optimum
+<lb/>medicum accurate id nosse oportet , quod secundum natuIam
+<lb/>est. Qui namque quod secundum naturam est exquisite
+<lb/>novit, quod praeter naturam est celeriter agnoscet.
+<pb n="19.677"/>
+<lb/>Quum autem non solum praedictae causae curationem variant,
+<lb/>verum etiam peculiares naturae, propter quas medicamenta
+<lb/>ut plurimum probata haud congruunt; plerumque
+<lb/>enim sunt irrita. Cujus rei gratia observare oportet,
+<lb/>quae nisi curationi obtemperent ob naturae proprietatem
+<lb/>vel affectus apparatum vel aliud quidpiam, his relictis ad
+<lb/>alia plane utilia transire necessarium est. ldque non fotum
+<lb/>in medicamentis, verum etiam aliis omnibus cum
+<lb/>auxiliis tum vivendi institutis faciendum est. Verum commemoratas
+<lb/>prius proprietates et alia quae narrata non
+<lb/>sunt, non omnes qui ad artem accedunt , etiamsi caeteris
+<lb/>argutiores sint, sed qui perpetuo laborantibus assident
+<lb/>naturacque motus explorant, assequuntur. Quod si ob abditam
+<lb/>et propriam facultatem artificialem conjecturam
+<lb/>medicamenta saliant, oportet propter rei prementis veheIncutiam
+<lb/>ad veterum abdita et a tota substantia agentia
+<lb/>descendere, quae experimento et irrationali exercitatione
+<lb/>comperta funt, ut passer troglodytes, leporina pellis eremala,
+<lb/>sanguis hircinus et alia infinita tam simplicia quam
+<lb/>composita medicamenta; quorum multa abominanda sunt,
+<pb n="19.678"/>
+<lb/>quae exercitatio irrationalis invenit vel natura vel fortuna
+<lb/>vel ex tempore vel imitatione vel in somnio vel oraculis
+<lb/>vel traditione vel aliis quibusdam ex quibus empirice
+<lb/>constat. Quum autem abdita haec omnia apud nos sint,
+<lb/>in his non magnopere fidendum est, quod utilitatis eorum
+<lb/>ratio ignoretur. Quod si ob quandam necessitatem his
+<lb/>utamur, his abutendum non est, ne quemadmodum abdita
+<lb/>facultate nos juvarunt, abdita quoque laedant. Qui autem
+<lb/>evasurus est medicus, eum ratione agere oportet et in iis,
+<lb/>quae manifeste agunt, qualitatibus, facultatibus et actionibus
+<lb/>gloriose versari et fiduciam ponere; quemadmodum et
+<lb/>nosse methodi facultatem calidi, frigidi, sicci, humidi;
+<lb/>acerborum quoque, austerorum, acinorum, dulcium, fassorum
+<lb/>, amarorum, acrium, qualitatis expertium; nec non
+<lb/>quem effectum praestent quae crassarum sunt partium, quae
+<lb/>tenuium^ quae aperiunt, quae attrahunt, quae emplastica
+<lb/>funt et alia sigillatim. Quoniam vero utplurimum contesentium
+<lb/>lapides medicamentorum materia manifesta ac definita
+<lb/>est, hac uti magis oportet, quam quorum facultas
+<pb n="19.679"/>
+<lb/>est abdita ; veluti damasonio, petroselino, polytricho et
+<lb/>his facultate similibus; sed et quae tepidam habent facuItatem
+<lb/>specie haud improbanda. Atque haec quum multoties
+<lb/>fuerint irrita, decet etiam nos Christianos ad maxima
+<lb/>quae apud nos sunt vere arcana confugere. His enim
+<lb/>ego credo et confiteor non solum corporis affectus et de
+<lb/>quibus omnes medici defperarint , fugari; verum etiam
+<lb/>animi pathemata penitus exstirpari. Reliquum sermonem
+<lb/>ad te peculiariter tanquam bypothesin convertemus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Quum multa sint, quae sanitatem tuentur instaurantque,
+<lb/>ab alimento necessario exordiendum est; nam aliis
+<lb/>auxiliis quocunque tempore non utimur, fed citra alimentum
+<lb/>neque sani neque aegrotantes vivere plane non possumus.
+<lb/>Quoniam vero unica tutior est et compendiosissima
+<lb/>via ad affectus propulsationem victus ratio , aliorum medicamentorum
+<pb n="19.680"/>
+<lb/>abusus et permutatio multis, ut plerumque
+<lb/>conspexi, morbos invexerunt. Quum itaque calidius et
+<lb/>humidius temperamentum sortitus sis, sol animae meae, et
+<lb/>aetatem puerilem, vires imbecillas ; habitum gracilem, dispositionem
+<lb/>raram, praetereaque exquisitum sensum, tibi ob
+<lb/>temperamentum, aetatem, habitum et dispositionem qualitate
+<lb/>simflia tum alimenta tum poculenta et quaecunque
+<lb/>possis concoquere, assumenda sunt; sed ea ob virium illibecillitatem
+<lb/>pauca et saepe ; pauca quidem ob imbeciIlitatem,
+<lb/>bajulo namque per onus idoneumque este decet;
+<lb/>saepe vero ob urgentem usum, Athletis enim , viatoribus,
+<lb/>militibus et quibuscunque valida exercitia obeuntibus et
+<lb/>citra laesionem valentibus non conceditur eligere tum cibaria,
+<lb/>tum pocula, quae afferenda sunt ; his enim uti necesse
+<lb/>est, quae suppetunt. At bi non tantum ita debent
+<lb/>vivere; verum etiam qui urbanis negotiis impliciti sunt,
+<lb/>aut vitam ducunt laboriosam, peristaticam vocatam. Quoniam
+<lb/>vero hodie res tuas quietus agis , hieme comedes
+<pb n="19.681"/>
+<lb/>plurima; plurima dico non pro tuis viribus, sed pro reliquatum
+<lb/>anni tempestatum ratione. Id et Hippocrates
+<lb/>nostrae artis princeps imperat: aestate et autumno cibos
+<lb/>gravissime ferunt, hieme facillime, vere minus. ldem
+<lb/>rursus in alio ait: ventres hieme et vere calidissimi
+<lb/>natura sunt et somni longissimi. In his itaque tempestatibus
+<lb/>plura alimenta exhibenda sunt; etenim calor innatus
+<lb/>multus est, ideo pleniori alimento indigent. Indicio sunt
+<lb/>aetates et athletae. Bibendum quoque paucissimum pro
+<lb/>caeterarum anni tempestatum ratione. Sitqne potus vinum
+<lb/>album et tenue neque admodum vetus. Opsonia eo
+<lb/>tempore ut plurimum cocta sunt. Oleribus et Ieguminibus
+<lb/>parce utendum. Haec autem frequentius calida et
+<lb/>sicca nos propter temperamentum et aetatem accipienda
+<lb/>sunt, sed propter tempestatis ametriam. Succedente vere
+<lb/>potus uberior diIatiorque paulatim admittendus et esculenta
+<lb/>molliora et pauciora. Opsonia quoque ex astis in
+<pb n="19.682"/>
+<lb/>elixa commutanda. Olera etiam consequenti ferie usarpanda.
+<lb/>Verum ad horum translationem non universe, sed
+<lb/>particulatim te accedere oportet, ne ex universa ac subita
+<lb/>mutatione laesionem iubeas, ut loquitur Hippocrates: confartim
+<lb/>et repente vacuare vel implere vel calefacere vel
+<lb/>resrigerare vel utcunque aliter corpus movere, periculosum;
+<lb/>nam omne nimium naturae inimicum est; verum quod
+<lb/>paulatim fit, securum est, cum alias, tum maxime siquis
+<lb/>ab alio ad aliud transierit. Uberiorem dico et aquosiorem
+<lb/>potum, non plurimum neque aquosissimus Plurimum
+<lb/>enim et aquosissimum aestate prout impero bibatur, quod
+<lb/>tempus hiemi contrarium est. Ver autem ut inter haec
+<lb/>duo extrema medium est,. ita mediam quoque vivendi rationem
+<lb/>requirit. Haec autem vivendi ratio tibi conducit,
+<lb/>non ob anni tempus solum, sed ob tuum etiam temperamentum
+<lb/>atque aetatem. Haecque verno tempore vivendi
+<lb/>ratio tibi servanda est; ceteris autem anni tempestatibus
+<lb/>paulo diversa , non propter aetatem tuam et temperamentum
+<pb n="19.683"/>
+<lb/>solum, fed et tempestatum anni intemperiem. Quemadmodum
+<lb/>vero tempestatum differentiae differentem victus
+<lb/>rationem indicant, ita et corporis habitus. Carnosi siquidem
+<lb/>et molles frigidiqne et humidi ut plurimum siccius
+<lb/>alimentum postulant; qui contrario modo fe habent conIra
+<lb/>O Iun. Tibi vero, quod utcunque medio sis et pridie
+<lb/>temperato habitu, majori plerumque tempore victus rutio
+<lb/>temperata sequenda est. Quae namque fecundum naturam
+<lb/>sunt, utpIurimum similibus indigent; quae praeter naturam,
+<lb/>contrariis. Nam puerorum temperamentum calidum
+<lb/>est et humidum , quum nequeat incrementum et centormalio
+<lb/>alio in temperamento fieri quam puerili. Ob id
+<lb/>igitur similia te oportet et copiosa alimenta usurpare,
+<lb/>quo multa et varia concoquere assuescas. Ita enim natura
+<lb/>ventrem et jecur ampla et capacia efformabit et alias
+<lb/>partes. Quod si plus humiditatis habeas quam pro saltitate
+<lb/>tuenda deceat, non tamen ut ceteri siccari debes.
+<lb/>Nam incremento adversatur siccitas. Hujus rei gratia tibi
+<lb/>vitanda sunt quaecunque exsiccant, calefaciunt et extenuant;
+<pb n="19.684"/>
+<lb/>ut haec innoxie tua propria natura ferat. Senes
+<lb/>aubem propter partium duritiem frigidi sunt et sicci; propte
+<lb/>r excrementa frigidi et humidi. Itaque ipsi partium
+<lb/>quidem solidarum frigiditate contrariorum contraria postulabunt,
+<lb/>in cibariis, poculentis et reliquis; evacuationem
+<lb/>veri I pro vicissitudine commodam propter eadem exerementa.
+<lb/>In his paucum nutrimentum desideratur ob viriutn
+<lb/>imbecillitatem , ut Hippocrates tradidit. Qui cresum
+<lb/>It plurimum habent calorem innatum, plurimo igitur
+<lb/>alimento indigent, alioqui corpus absumitur; senibus autent
+<lb/>parum innati caloris inest, paucis sane propterea
+<lb/>son litibus ^indigent. Et ipse rursus: senes facillime jejunutu
+<lb/>ferunt. Panes disserunt materia, fermentatione et
+<lb/>ratione coquendi. Eorum primus siligineus nominatur;
+<lb/>secundus similagineus, tertius cibarius seu comportatus,
+<lb/>quartus furfuraceus. Ego vero eorum noxas et effectus
+<lb/>docebo. Inter eos omnes plurimi est alimenti siligineus,
+<lb/>qui et diutissime in corpore moratur et efficacissimus est.
+<pb n="19.685"/>
+<lb/>Inter omnes secundum ordinem obtinet similagineus. His
+<lb/>insertor est medius comportatus. Omnium imbecillimus
+<lb/>furfuraceus est. Tu autem unicum mihi caput quum sanitate
+<lb/>frueris, siligineo utitor; quum dolor nephriticus te
+<lb/>infestat, ^quod nolim, in morbo ab hoc abstine; et si te
+<lb/>moveat edendi desiderium, furfuraceis mediisque citra Iaesionem
+<lb/>utere: nam id genus utilius tibi est, nisi quid prohibeat,
+<lb/>quod pauci sit nutrimenti et in ventre facit excrementa,
+<lb/>quibus ad excretionem descendit expeditius.
+<lb/>Nam detergentis facultatis ut furfur est particeps, quamobrem
+<lb/>celerius deicietur intestinis ad excretionem irritatis.
+<lb/>Alvum namque solutam habere perpetuo bonum est.
+<lb/>Quum enim perbene is subducitur, urinae puriores reddi
+<lb/>queunt. Panes reliqui siligineus et similagineus contrario
+<lb/>modo alvum sistunt , ejus excretionem retardant et hepatis
+<lb/>et renum obstructiones moliuntur, etiamsi multum nutriant
+<lb/>magisque roborent. Ex volucribus inter attenuantia
+<lb/>et incrassa facientia laudantur. Sunt autem haec
+<pb n="19.686"/>
+<lb/>perdices, attagenes, galli, gallinae, columbi et phasianorum
+<lb/>animalium multitudo et passerum et ante alias quae torritae
+<lb/>vocantur; naturalem enim efficaciam sortiuntur. E
+<lb/>terrestribus optimi succi est caro suissa et omnium maxitne
+<lb/>hominibus familiaris, maxime nutritis proindeque
+<lb/>maxime roborans, sed lentum quid habet et crasso m ,
+<lb/>quum autem haec in eduliis copiosior est et jecur et re..
+<lb/>nes obstruit atque longioribus propterea intervaIIis ab ea
+<lb/>abstinendum.^ Parvorum autem porculorum carnibus si
+<lb/>parum et assidue utaris, nihil oblaedent. Cervina quoque
+<lb/>caro vitanda ut dura aut cocto difficilis et meIancholica.
+<lb/>Ovilla quoque ex intervallis, quod magis excrementosa
+<lb/>sit et mali succi. Agnorum vero hoedorumque carnibus
+<lb/>quoties volueris, uteris. Ex aquatilibus animalibus qui
+<lb/>pisces saxatiles vocantur, ipsi tibi obtati erunt utiles. Hi
+<lb/>vero sicut gobii, muli, cartilaginei et ceteri qui boni
+<lb/>succi sunt. Ad haec pelagiorum quidam et qui mollem
+<lb/>testam habent, gammari, p ag uri , cancri, carabi, carabides
+<pb n="19.687"/>
+<lb/>et quibus dura testa est. De fructibus quid dicendum
+<lb/>est? Neque enim ceu alimentum ipsorum plerique nobis
+<lb/>idonei sunt; sed tanquam medicamenta quae stomachum
+<lb/>et ventriculum corroborent assumuntur. De cibariis hacctenus.
+<lb/>De potu autem jam nunc disserendum, atque in
+<lb/>primis de vino. Ceteri namque liquores vel nihil ad nutritionem
+<lb/>conserunt vel etiam nutritioni plerumque adverfantur.
+<lb/>Solum autem vinum nutrire potest, quoniam inter
+<lb/>omnia liquida plurimam habet cum nostris corporibus
+<lb/>familiaritatem. Habent enim aliquam cum oleum tum
+<lb/>mel, sed non tantam, quantam Vinum. At differentiis
+<lb/>discernitur; hujus prima est in colore, secunda in gustandi
+<lb/>qualitate; tertia in consistentia; quarta in odore; quinta in
+<lb/>viribus; sed de his sigiIlatim disserere supervacaneum est;
+<lb/>dicendumque est quale vinum tibi peculiariter magis conducat.
+<lb/>Aliud enim aliis vinum confert; idemque rursus
+<lb/>alteri minime. Tibi vero conducit tenue et album, quodque
+<lb/>pauxillum aquae ferat. Nam ejusmodi vinum facile
+<pb n="19.688"/>
+<lb/>distribuitur et humores, qui nobis insunt, attenuat et per
+<lb/>urinas excernit et vires corroborat. Reliqua vina tibi sic
+<lb/>inutilia, quemadmodum aliis utilia sunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">De aqua vero pauca sermonibus consectari decet ; ea
+<lb/>namque et fanis et aegrotantibus commune solatium et
+<lb/>maxime necessaria est, quod et mundi et singularium elemediorum,
+<lb/>ex quibus universis tota nostri corporis constitutio
+<lb/>conflata est, hoc unum sit; quamobrem de ea non
+<lb/>otiose a nobis disseretur. Aqua purissima tribus sensibus
+<lb/>judicatur, gustu, visu, olfactu. Gustu, si nullam sibi asciverit
+<lb/>qualitatem, sed plane qualitatis expers apparuerit.
+<lb/>Visu, si pura et sincera vel exquisite limpida. Olfactu,
+<lb/>si nihil ipsi eorum insit, quae vitiosis aquis adsunt. Hae
+<lb/>namque acoris vel putredinis vel acrimoniae vel salsedinis
+<lb/>aut cujusvis alterius vitii abditi sunt participes. Tibi
+<lb/>vero aqua in omni victus ratione purissima sit oportet,
+<pb n="19.689"/>
+<lb/>desoecata, levis et fontana. Haec autem et frigida sua
+<lb/>ipsius natura est; et sane si celeriter hypochondria permeet,
+<lb/>alteram nullum salubriorem quaeras. Et quemadmodum
+<lb/>vino, cibis, exercitiis, vigiliis, somno pro aetatum
+<lb/>et temperamentorum diversitate aliis atque aliis, sic etiam
+<lb/>eadem aqua frui nequaquam decet. Imo quae nunc optima
+<lb/>prodita est, ea citra periculum uti poteris et puer et adolefcens
+<lb/>et senex. et quacunque natura sis praeditus. Quia
+<lb/>vero aqua una aItera frigidior reperitur, propterea non
+<lb/>omnibus indifferenter uti potu confert: verum supra modum
+<lb/>calidis , pinguibus et carnosis sive naturali temperamento
+<lb/>sive ascitilio et his qui fe vehementer exercent, quique
+<lb/>consueverunt, innoxium est srigidam bibere. Quod si
+<lb/>aliter se habeant, frigidi minus bibant. Qui vero juvenili
+<lb/>sunt aetate et in rebus civilibus versantur, ita ut et
+<lb/>exerceri ordinate et victitare nequeant, fontanam relicta
+<lb/>nive sumant. Haec namque nix etiamsi iuvenilia corpora
+<pb n="19.690"/>
+<lb/>mox laedere non videatur, noxa videlicet, quae paulatim
+<lb/>increscit non percepta, procedente tamen tempore quitur
+<lb/>aetas declinat, vix sanabiles aut incurabiles plane morbos
+<lb/>invehere solet in nervis et articulis et visceribus. Atque
+<lb/>affectum subit pars illa corporis, quae natura est imbecillima.
+<lb/>Quamobrem tibi fontanis aquis utendum est usque
+<lb/>defaecatis,- eammque copia quam vini uberior assumenda.
+<lb/>Atque de aqua paucis hactenus. Tempus mihi nunc est
+<lb/>de exercitiis reliquam habere orationem. Enimvero corpus
+<lb/>vehementius exercete non oportet, quoad vires prostratae
+<lb/>sint ; neque certe imperfectum etiamnum inire
+<lb/>exercitium, quod paries discutere nequeat, sed cujusque
+<lb/>viribus consonum esse. Quippe vehementia relatione ad
+<lb/>aliquid est; ita ut motio eadem alteri sit exercitatio, alteri
+<lb/>non exercitatio. Utile vero est unicuique consuetum
+<lb/>eligere , neque pugilum aut cursorum aut luctatorum exercitium
+<lb/>subire. Ab exercitatione vero tria in primis commoda
+<lb/>proveniunt. Nam organorum duritiem dum sere
+<pb n="19.691"/>
+<lb/>mutuo affricant, innati caloris incrementum concitationemque
+<lb/>spiritus motum efficit. Quae tria universae utilitates
+<lb/>aliae sigillatim sequuntur, quae per ea corporibus
+<lb/>oboriuntur. organorum namque duritiem sequitur ipforum
+<lb/>dyfpathia et ad actiones obeundas robur. - Incrementum
+<lb/>caloris sequitur robusta alimentorum distribuendorum
+<lb/>attractio, promtior alteratis,, commodior nutritio et exerementorum
+<lb/>fusio, qua fusione stolida corpora mollescere
+<lb/>contingit; liquida vero attenuari et discuti et patentes
+<lb/>meatus fieri. Ex valido spiritus motu expurgari meatus
+<lb/>necesse est et evacuari excrementa^ Quum autem. haec
+<lb/>efficiant exercitia, utendi tempus invenire difficile non esu
+<lb/>Quod enim alimenti..distributiones adjuect crudorum et
+<lb/>incoctorum tum ciborum tum humorum multitudinem vel
+<lb/>in ventre. vel mesaraicis.. venis vel- hepate vel reliquis vasis
+<lb/>retineri non oportet, quia periculum. ..esset ne ipsi ecncocti
+<pb n="19.692"/>
+<lb/>fierent utiles, ad omnes animalis partes effunderentur.
+<lb/>Et quia meatus expurgant et excrementa vacuant,
+<lb/>opportunius est ante cibum exercitia usurpare. Impura
+<lb/>enim corpora , inquit Hippocrates , quo plus nutrireris,
+<lb/>eo magis- laeseris. Quare ex enarratis clarum est hoc
+<lb/>exercitationum tempus esse optimum. Praecipue vero cura
+<lb/>adhibenda est in quocunque exercitio , ut in salubri loco
+<lb/>et puro aere perficiatur. Haec itaque de exercitiis fusticiant.
+<lb/>Balneis autem utendum crebris, temperatis et coueisis
+<lb/>non propter morbum; fed quod haec ad iucrementum
+<lb/>, nutritionem conformatlonemque concurrant. At
+<lb/>optimum balneorum tempus habetur, quum hesternum
+<lb/>alimentum. integre confectum est et subivit et alterius
+<lb/>alimenti sumendi obsidet opportunitas, quumque in jecore
+<lb/>et venis peraeque concoctio facta fuerit. Haec sciet qui
+<lb/>tibi assidet tuique perpetuo curam gerit medicus , nituirum
+<lb/>perfectam alvi coctionem ex deiectionibus, jecoris et
+<lb/>venarum ex naturalibus urinis; proinde non a cibo te
+<pb n="19.693"/>
+<lb/>balneum inire oportet, ne renum et jecoris obstructio oboriatur.
+<lb/>A balneo etiam quamprimum .vini assumptio vitanda
+<lb/>est; caput enim tentatvinum; aqua temperata prius
+<lb/>haurienda esu Igitur nem frigidae aquae, non vini, noni
+<lb/>sythi vel alterius sicerae potio citra laesionem est. Laedant
+<lb/>namque manifeste ipsa ventriculum , jecur et nervos,
+<lb/>si non temperie, tactu saltem. Profuerit quoque. tibi non
+<lb/>statim ubi a somno surrexeris lavare, fed prius uti rnotione
+<lb/>quadam , interdum etiam mediocri exercitio licet.
+<lb/>Moderata namque exercitia et alterna , tuae naturae utilia,
+<lb/>concoctionem , sanguificationem et nutritionem meliorem
+<lb/>conficiunt, ob idque ad bonam educationem et ad virium
+<lb/>robur et ad perfectam tertiae concoetionis actionem conferunt.
+<lb/>De his quoque haec sufficiant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Quod si derepente tibi neptuniis oboriatur, nuper pastus
+<lb/>et nauseas percipias, omnia evome aut natura aut
+<pb n="19.694"/>
+<lb/>ante provocatus; prout tuo medico rideatur atque somno
+<lb/>teipsum committe. Quod si . duriora in alvo excrementa
+<lb/>et diuturna esse suspiceris, haec nisi quid prohibeat, clystere
+<lb/>vacuatus. Si intolerabili dolore crucieris, in calidam
+<lb/>te projice. Ne tamen ipsa, ut paulo ante diximus , abutare.
+<lb/>.Nam calidae perfusio dolores quodammodo mitigat
+<lb/>quidem, ted vires nostras exsolvit ^quibus morbi causa et
+<lb/>quidquid inutile est propulsatur. Post vomitus et clysteres
+<lb/>fomentis et cataplasmatis partes affectae naturae congruis
+<lb/>medicamentis levare oportet. At fi infixus reni lapis sit,
+<lb/>acetum , saccharum , acetum scilliticum et quae absolute
+<lb/>lapides conterunt, assumenda fiunt, quale est decoctum radicis
+<lb/>graminis, damasonii, adianti, trichomaues et similium.
+<lb/>Quae si nihil proficiant , lapidibus destruentibus utere,
+<lb/>ut sunt regiorum asparagorum radices, bdellium Arabiae,
+<lb/>altheae fiemen, lithospermum, betonica, faxifragum , pulegium,
+<lb/>capparis Aegyptiae radix, ficuum domesticarum
+<pb n="19.695"/>
+<lb/>femina et his consimilia. Quod si etiam haec eodem modo
+<lb/>sint irrita, potenter lapides frangentibus utor; potenter
+<lb/>autem frangit .lapidem Iapis ludamus, .et.si fixus in rene
+<lb/>sit calculus, masculo utor ; fi in vesica et ob magnitudinem
+<lb/>non excernatur, foemineum usurna; nam mafculus calcu-</p>
+<p rend="indent">lum in renibus conterit, femineus in vesica. Vitrum
+<lb/>ustum, lapis Cappadox et paliuri semen; atque. haec vioIeutius
+<lb/>calculos frangunt. Si crassius humor insit corpori
+<lb/>et urinarum crassarum evacuatione sit opus, crassas urinas
+<lb/>ducunt cardui radices, rubia et similia. .quod fi frequentes
+<lb/>urinas ducere fuerit opus, frequenter urinas movent</p>
+<p rend="indent">acorus, pastinaca, asserum, ammi et similia. Si natura
+<lb/>quodammodo in urinarum refusione pigra fuerit, naturam
+<lb/>excitabunt scordium, chamaedaphne, bryoniae cauliculi et
+<lb/>quae his paria sunt facultatibus. Diuretica vehementiorem
+<lb/>facultatem lapidibus abdicandam habent. Quod si
+<lb/>diureticorum temperamentum acre sit ob idque calidum
+<lb/>et siccum, praeterea quoque funt facultatis cogentis et
+<pb n="19.696"/>
+<lb/>secernentis collectam ferositatem. Sed quae ignitas constitutiones
+<lb/>in fe non habent, idonea funt; nam incidunt
+<lb/>opportune et minimum calorem obtinent. Calor enim
+<lb/>exsiccando calculosam concretionem absumit, non incidit,
+<lb/>non dividit. Quae vero minus calida cum hoc quod incidendi
+<lb/>facultate polleant, meliora funt, qualia quae praedicta
+<lb/>sunt. Quae vero urinam cient, calida futuat sicca
+<lb/>atque acria ; quamobrem secernunt quidem scrotum fanguiuem,
+<lb/>sied hujus crassamentum cogunt; proindeque calculosis
+<lb/>non idonea. Haec tamen si tanquam ductoribus
+<lb/>et vectoribus usu quandoque fuerimus, juvant. At post
+<lb/>calculi excretionem idoneis medicamentis contemperantis
+<lb/>bus utere ob viae a calculo inductam rosionem, asperitatem
+<lb/>et fervorem; magisque, si magnus et angulosus is
+<lb/>exstiterit. Postquam vero corpus ante commemoratis contemperantibus
+<lb/>maxime attemperatum fuerit, praefervantibus
+<lb/>remediis tum internis tuor externis uteris. Sed haec
+<lb/>non tantum ut remediorum fumosam asciscunt; imo quoties
+<lb/>praescrvationi studueris, idoneis et conferentibus tam
+<pb n="19.697"/>
+<lb/>cibis quam potibus et quae concoquere valeas utitor. Ex
+<lb/>his enim naturae tuae congruis alimentis, potibus, balneis
+<lb/>exercitiis et similibus vires roborantur, quemadmodum et
+<lb/>ex contrariis dejiriuntur. ob virium autem robur fimilium
+<lb/>usus desideratur. His enim roboratis quidquid morbum
+<lb/>creat ac noxium est , profligatur. Haec autem pauca
+<lb/>non ad institutionem , sed ad brevem recordationem tuus
+<lb/>ego tervus offero. Perfectam enim omnium traditionem
+<lb/>vetustissimi sapientes docuerunt et exposuerunt. Qui medicus
+<lb/>tibi praeest tuique perpetuo curam gerit, meus
+<lb/>contervus et haec et veterum scripta et tuae naturae
+<lb/>congrua me magis et aliis pro viribus humanis contequutus
+<lb/>est, quibus edoctus est et ob accuratam naturae
+<lb/>tuae cognitionem consequi poterit. Quare te huic soli
+<lb/>committe. Nam ita te sedulo curat, deo teste, ac si quis
+<lb/>alius. Nam qui norit praecipue quod secundum naturam
+<lb/>est, celerius caetera noverit, etiam quae praeter naturam
+<lb/>funt. Mihi erat animus logica paucis scribere, led in</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

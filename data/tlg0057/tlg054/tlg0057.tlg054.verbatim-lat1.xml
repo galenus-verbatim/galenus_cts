@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>De tumoribus praeter naturam</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg054.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title>Claudii Galeni Opera Omnia</title>
+            <author>Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="705" to="732">705-732</biblScope>
+              <date>1824</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x07">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="353" to="357">353-357</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="312" to="322">312-322</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x07">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg054.verbatim-lat1">
+<pb n="7.705"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="7.705"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE TVMORIBVS PRAETER
+<lb/>NATVRAM LIBER.</head>
+
+
+<p rend="indent">Quae res tumoris voce signisicatm, unum
+<lb/>quoddam est accidentium, quae corporibus eveniunt. Sic
+<lb/>enim quod fpatium in longum; latum et profundum extenditur,
+<lb/>Graeci nominant.- Nonnunquam etiam incremena
+<lb/>tum naturalem statum .excedens tumorem vocitant, qui
+<lb/>non folum morbo laborantibus quacunque in paete, verum
+<lb/>etiam similate fruentibus . adest. Etenim crassi fupra eum,
+<lb/>qui secundum naturam est, statum in latum et profundum
+<lb/>aucti sunt , nondum tamen jam praeter naturam te habent.
+<pb n="7.706"/>
+<lb/>Nam, ut plerumque dictum est, tertius quidam existit corportnn
+<lb/>non natura affectorum status, tum in eorum quae
+<lb/>secundum naturam tum eorum quaepraeter naturam se
+<lb/>habent messio quodam consistens. Crassus aut gracilis
+<lb/>non praeter naturam, sed fimpliciterduntaxat, ille quidem
+<lb/>exuperantem secundum naturam, lue vero deficientem secundum
+<lb/>naturam statum obtinet; uterque autem non natura ;
+<lb/>qui vero ex hydero tumorem aut qui ex tabe maciem adeptus
+<lb/>est , contra naturam uterque affectus esu Nunc autem
+<lb/>in praesenti libro de tumoribus praeter naturam corpus universum.
+<lb/>et quamcunque ejus partem occupantibus disserere
+<lb/>proposuimus, tantum -distinguentes , quod affectuum non
+<lb/>natura incidentium exuperantiae praeter naturam existunt.
+<lb/>Eorum autem exuperantiae terminus actionis est laesio.
+<lb/>Verum de his tumoribus longiori oratione non opus est.
+<lb/>Nam ab universis hominibus , non tantum melicis , carnis
+<lb/>et pinguedinis .ametria cognoscitur , quae ipsorum generationenr
+<lb/>efficit; caeteros vero tumores, qui pro ipsorum
+<lb/>corporum affectu, non quantitate modo primaria; ab eo qui
+<pb n="7.707"/>
+<lb/>secundum naturam est. statu decesserunt;. jam speculemur,
+<lb/>ab luflammatione ducto exordio.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Hoc phlegmones nomen Graecis dici- confuevit
+<lb/>de carnosis partibus majorem in molem,. cum teusione,
+<lb/>renixu, dolore pulfatorio, t calore et rubore extuberantibus.
+<lb/>At quae causa fit, qua haec oboriantur symptomata,
+<lb/>non vulgo, imo nec ipfis medicis omnibus innotuitr
+<lb/>Neque enim via quadam plures fusurum indagationem moliuntur,
+<lb/>sed quod risum ipfis suerit ^absolute pronunciante
+<lb/>Talis autem esset consideratio, si quis via et ratione procederet.
+<lb/>Major tumor in nullo unquam corpore contigerit,
+<lb/>nisi horum duorum alterutrum substantiae ejus accidat-,- vel
+<lb/>ut a copioso calore ceu inservescens fundatur , .- vel extrinsecus
+<lb/>recentiorem aliquam substantiam conquirat. Fusa namque
+<lb/>in spiritum: abit iusiaturque, et refrigerata eadem pristinam
+<lb/>molem facile .recuperat. t Sed neque spiritus eontentus
+<lb/>in .partibus phlegmone laborantibus conspicitur, quem-admodum
+<lb/>in multis aliis tumoribus; et refrigeratae ad priorem:
+<pb n="7.708"/>
+<lb/>statum neque. statim neque ex integro revertuntur.
+<lb/>Quod autem spiritus non contineatur; ex sectione patet.
+<lb/>Apparet enim manifesse, si pars laborans phlegmone tecta
+<lb/>suerit, fanguis permultas essiuere, et locus universus fani.
+<lb/>guine plenus, quemadmodum spongiae madentes; spiritus
+<lb/>autem. neque statim. excidere neque poflea. .d At .et solus
+<lb/>color sanguinis proprius simulet inseparabilis est; nulla si- .
+<lb/>quidem corporis pars -alid, r. nullus ve humor praeterquam
+<lb/>caro et sanguis rubet. . verum inflammationis allectus corputentia
+<lb/>non est, et siquando corpulentia sola in corpore^
+<lb/>citra sanguinis copiam consistat, tumor naturali statu major
+<lb/>extat, color intra sanitatis. fines permanet, nec a pristina
+<lb/>natura recedit. . Quippe nulli; quod fecundum substantiam
+<lb/>augescit ,. . color primus intenditur. . Sic enim nix candidior,
+<lb/>pix nigrior, et aurum flavum magis evaderet. Quamobrem
+<lb/>substantiae incrementum ab alteratione diversum esu Augestit
+<lb/>enim secundum. quantitatem , alteratus secundum qualitatum.
+<lb/>Estefane et color qualitatis substantiae, non quanlitatis
+<pb n="7.709"/>
+<lb/>indicium. His .igitur rationibus ab inflammatione
+<lb/>differt corpulentia. ob haec autem eadem aliquis faugui-.
+<lb/>nem humorem in ipsa exuberare censuerit. Interdum vero.
+<lb/>et cum ulceribus etiam maximae oriuntur lustammationes;
+<lb/>videturquesanies quaedam tenuis aquae modo effluere, loco
+<lb/>circum cruento apparente. Quare in beccarius densitatum,.
+<lb/>quam lu vulneris terminis sibi compararit,. eo symmetriae,
+<lb/>venise necessarium est, ut saniem elabi sinat, sanguinem
+<lb/>lutus in se contineat. Et sane quanto sanies tenuior san-.
+<lb/>guine, tanto etiam vel magis adhuc spiritu crassior existit.:
+<lb/>Proinde si in vulnere caro famem excidere permittit, certe.
+<lb/>spiritum quoque permiscrit; quo semel evacuato , statim
+<lb/>etiam inflammationis tumor subsidet. Nimirum sic fieri conspicitur
+<lb/>lu partibus,ubi spiritus vere collectus suerit. Ipsis.
+<lb/>enim incisis, tumor omnis coercetur. . Quin et vulneribus
+<lb/>fuccedens inflammatio hoc .testatur. Etenim in principio
+<lb/>recentibus adhuc vulneribus excidit copia. sanguinis ; rursus
+<pb n="7.710"/>
+<lb/>autem supprimitur, aut nobis refrigerantibus, aut tua sponte
+<lb/>ab ambiente refrigeratus. Imo etiam nobis manibus conprimontibus,
+<lb/>vel deligentibus, effluere prohibitus retinetur.
+<lb/>Delude in vasorum divisorum orificiis retentus et obstructus
+<lb/>coit et concrescit: cui simile quippiam grumo accidit,. nisi
+<lb/>quod grumus acervata sanguinis concretio sit scusibilis ; quod
+<lb/>vero in ulceribus sit , non ita confertim , verum paulatim,
+<lb/>et in multis divisurum vasorum terminis sistit et crassam
+<lb/>reddit. sanguinem.. Quum igitur- .simul hic crassior, simul
+<lb/>vasorum extremum angustius evadit, retinetur quidem jam
+<lb/>sanguis; excidit autem sanies. Haec. omnia. maxima sunt
+<lb/>indicia partes iusiannnatione laborantes sanguinis copiam obtinere.
+<lb/>Quapropter in affectis ita partibus calidior quidem
+<lb/>est eo, qui secundum naturam est, non tamen fautu calidior,
+<lb/>ut sula lusione tam magnum tumorem effecerit. . Multae vero
+<lb/>tibi et hujus rei fuerint coniecturae. Prima febres ardentrssimae;
+<lb/>quanto namque calor in his vehementior. est eo, qui
+<lb/>inflammatas. partes. obsidet, tanto .majorem esse tumorem
+<pb n="7.711"/>
+<lb/>oportebat. Secunda coniectura ex sanguinis substantia suruitur;
+<lb/>non enim ut pix, resina et cera a frigore concrevit,
+<lb/>sed est semper et natura calidior. Illis igitur incalescentibus,
+<lb/>in contrarium transmutatio est; .sanguini, seeundum
+<lb/>naturam calido existenti , tumor aliquantulo major
+<lb/>extiterit, non tamen tanto , quantum inflammationes partes
+<lb/>affectas attollunt Et si pix quoque , resina et cera in
+<lb/>tantum calorem prodeuntia, in quantum veniunt inflammatione
+<lb/>laborantes partes, paululum supra pristinum flatum
+<lb/>adaugentur. Ac non lexis haec quoque tibi suerit coujectura
+<lb/>, praeter eas , quae dictae sunt , inflammatarum partium
+<lb/>tumorem non ob solam fusionem contingere. Etenim mo- .
+<lb/>dica est in calore sanguinis alteratio , tumor non paulo major.
+<lb/>Quod autem evidens est, id idoneum indicium tibi
+<lb/>esto. Non enim quemadmodum pix, resina et cera vehementius
+<lb/>incalescentes plurimum fusione fluunt, sic etiam
+<lb/>fanguis ; fed etiamsi lu igne coquatur , priorem molem scrvat,
+<lb/>aut nullo modo, aut certe inminimam magnitudinem
+<pb n="7.712"/>
+<lb/>reducatur. Antea quoque mihi dictum est , -iusiammationes
+<lb/>refrigeratas non semper subsidere.. Nam. rigentes et magnas,
+<lb/>inquilina fluor impactus. est,. t etiamsi plurimum refrigeraris,
+<lb/>non auferes tumorem,.. :fed lividam partem reddes etfiigidam,
+<lb/>in srirrlrumque vertes affectuum .At .minimo negotio
+<lb/>priusquam fluxio lurpacta.su, refrigerantibus et astrui gentibus
+<lb/>repellitur, et maxime quum modica suerit.. Porro
+<lb/>contumaciter ante impacta, astringentibus refrigerantibusque
+<lb/>nihil juvatur, sed evacuari postulat. Proinde inventum
+<lb/>est a medicis tunc non solum calefacientibus esse discutiendunr,
+<lb/>verum etiam ex sanguine quippiam sensibiliter evacuandum
+<lb/>, scarificationibus in cute. factis. Hac igitur omnes
+<lb/>notae.sunt,; partem inflammatam humore sanguineo esse re;
+<lb/>pletam. Calida vero immodice non protinus abnuitis, .sed
+<lb/>tempore fit, perspiratione. pristina propter meatuum .omniunr
+<lb/>obstructionem suppresse. . Necessarium igitur.fanguisnemdiu
+<lb/>immorantem.computrescere. . Omnia siquidem calida
+<lb/>et humida corpora .in calidunr collecta locum, . si. u.eque
+<pb n="7.713"/>
+<lb/>evacuentur, neque refrigerentur, facile putrescunt ; quapropter
+<lb/>ex ejus.putredine accedit calor ei , quem prius obtiuebat.
+<lb/>Quod igitur -in vasis partium inflammatarum sanguis
+<lb/>copiosus collectus fit., ex tumoribus ipsarum licet conjicerepnec
+<lb/>minus inde p quod venae in ipsis antea ob parvitatemvifum
+<lb/>effugientes couspiciantur , non generatae vide.licet.
+<lb/>in inflammatione, verum ex sanguinis repletione m
+<lb/>magnitudinem tantam elatae, ut sensibus pateant. Hoc in
+<lb/>oculis potissimum accidere ridetur et praeputio et natimis.
+<lb/>Ad haec. universam carnem, cuius jam et praecipuo .
+<lb/>iusiammatio affectus est,. fluore sanguinolento repleri, ttum
+<lb/>color. tum ipse tumor indicat. . .Ob id vero humida omnis
+<lb/>cero et madescens instar lanae et spongiae apparet. Atque
+<lb/>hujus testimonium sanies effluens perlubet, ubi iusiammatio
+<lb/>orificium. acceperit. Merito etiam, mea sententia, cutis
+<lb/>cum subiectarum partium tumoribus attollitur -ac circumtenditur,
+<lb/>et temporis processu ipsa quoque fluxionem suscipit,
+<lb/>quemadmodum vasorum tunicae. Sic esiam inflammatae
+<pb n="7.714"/>
+<lb/>partis membranae., insuper nervi et teudines inflammationem
+<lb/>temporis spatio experiuntur.; interdum sane ipsis vulnecatis,
+<lb/>vel etiam aliter affectis , mali principium debetur.
+<lb/>In universum nihil in parte inflammata secundum naturam
+<lb/>exacte se habens permanet, si inflammatio diuturna sit.,- verum
+<lb/>omnes simul cum eame fluxionem participant. Quamobrern
+<lb/>ossa quoque nonnunquam inflammatio attingit, ut et
+<lb/>ex ipfis aliquando primario affectis movetitr. Quum itaque
+<lb/>fecundum naturam se habet cutis , in minime crassis laxa est,
+<lb/>et locus melius in quem incidit, vacuus est. Eodem modo
+<lb/>carnium spatia, de quibus in anatomicis administrationibus
+<lb/>satius. dictum est, vacua existunt omnia, praesertim quae
+<lb/>circa arterias orbiculatim earum diestolis incumbunt. In
+<lb/>inflammationibus autem omnia sanguine replentur, ex vasis
+<lb/>per earum tunicas resudante, in omni vero camis sparte
+<lb/>roris iusiar permixto.
+</p>
+<pb n="7.715"/>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p>-At quum temporis processu natura fusterior
+<lb/>evaserit, fluor autem universus concoctus. suerit, et
+<lb/>pps evaserit , extra carnem pellitur ab ejus facultate alieno-:
+<lb/>rum expultrice. Ubi ergo vel meatus naturalis notabilis
+<lb/>est, veluti quidam efstuxiorns excrementorum rivus praeparatus,
+<lb/>vel ipsa regio indidem rora, aliud ex pure perspiret,
+<lb/>aliud seusibiliter essiuit. Ubi vero cutis densa duraque circumjacet,
+<lb/>veluti exterior nostra est, pus ibi retinetur, et
+<lb/>a carne ei subjecta recessit ; deinde etiam acrimonia erodit,
+<lb/>vulnerat, et foras erumpit , nisi quis fcarificatione protinus
+<lb/>ipsam antevertat. Verum natura a fluore devicta, non
+<lb/>amplius in pus, sed in alienam aliquam mutationem alias
+<lb/>aliam sanguis pervenit. Vocantur hujusmodi omnia vulgo
+<lb/>a plerisque medicis. abscessus, maxime quae intus in altu jacent.
+<lb/>Quidam .non omnes sic appellandas censent, sed illas
+<lb/>duntaxat , quae in aliam quandam corruptionem , non in
+<lb/>consuetum bonumque. pus immutantur ; quemadmodum. omv
+<pb n="7.716"/>
+<lb/>nia suppurantia quidam vomicas, nonnulli suppurationes.
+<lb/>appellitant, ut et ipsum vomicas excitare et suppurareAliqui
+<lb/>vero non sic, verum quum in viscere ejusmodi quippiam
+<lb/>factum est, illud fotum appellant suppuratum , et hoc
+<lb/>sic affectos , suppuratus et purulentus. Rursum et alii qnidam
+<lb/>medici illos solos empyos purulentas vocari censent,
+<lb/>quibus in menia luter thoracem etpulmonemregionepuscullectum
+<lb/>esu Itaque nominum , quod semper, ego diri , tanta
+<lb/>est habenda ratio , quanta rei manifesto exponendae sufficitIpsus
+<lb/>res, de quibus agitur, invenire sic conandum est, ut
+<lb/>nulla ex eis subterfugiat. Haec enim omnia ad medendi
+<lb/>methodum praeparant, lu qua affectibus, non vocabulis
+<lb/>ipsorum medemur. Horum igitur femper memores , ad resiqua
+<lb/>rursus veniemus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Quum corpora pus excoriat, et coutinentia
+<lb/>asubjectis separat, ac diducit, dein eo quomodocunque
+<lb/>evacuato, separata pristinum statum recuperare nequeunt,
+<pb n="7.717"/>
+<lb/>affectio surus appellatur. Nisi vero quis celeriter eum curet,
+<lb/>callo obducitur, durusque temporis progressu efficitur, et
+<lb/>tubis ctis sibi partibus agglutinari non potest. .t Attamen tum
+<lb/>medicamentis tum victus ratione exiccatus committitur ita,
+<lb/>ut pars sana citra laesionem esse videatur. Si quidem actarato
+<lb/>quis rictu semper. usus, sanum vere corpus obtinet,
+<lb/>et recrementorum expers, sinus commissus conjunctusque
+<lb/>manet. At ubi excrementum quoddam succreverit, mox
+<lb/>repletur, et qui abscessus ab initio erat, rursus efficitur;
+<lb/>atque iterum, ut per est, medentibus, evacuatur siccaturque
+<lb/>et committitur; tum haec omnia multo faciliora semper
+<lb/>ei contingunt, quam quae prius abscesserant. Neque enim
+<lb/>divulsae partes dolent, diductae enim jam sunt; et citissime
+<lb/>replentur , sinu fluxionem facile suscipiente ; quinetiam evacuatur
+<lb/>celerius; essiuxiouibus sim viis ipsi patefactis; ut
+<lb/>quum ipsae partes coierint , ubi abscessus rumpitur, ructus
+<lb/>doleant. At non solum ex iirflammatione abscessibus ortus
+<lb/>est, sed etiam protinus a principio interdum, ob alium
+<pb n="7.718"/>
+<lb/>quemcunque humorem sensim excoriantem et a fubjectis
+<lb/>continentia diducentem. Ac proinde incisi .universas, non
+<lb/>humorum modo, verum etiam solidorum quorundam corporum
+<lb/>species intus continere conspiciuntur. Etenim coeno,
+<lb/>urinae, grumo, melleo mucofoque succo ; ossibus , lapidibus,
+<lb/>cassis obduratis, unguibus f et pllis similia corpora
+<lb/>lu abscessibus reperiuntur ; quin et multoties inventa sunt
+<lb/>animalcula , prope omnibus , quae ex putredine generationem
+<lb/>habent, simillimae</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">At vero quae fistula vocaturan gustus oblongusque
+<lb/>sinus est, qui peraeque caeteris finibus contrahi-tur,
+<lb/>ac rurfus ob excrementorum iusiuxum diducitur,
+<lb/>quemadmodum illu Atheromata vero, et steatomata, et
+<lb/>melicerides , et hujusmodi caeteras assectiones alii luter abscessus
+<lb/>reponunt, quidam ad aliud genus referunt. Ipforum vero
+<lb/>natura ex nominibus constat. Nam in atheromatis pulticulae
+<lb/>simile quid invenitur ; melli lu meliceribus ; fevo in sicatomalis.
+<lb/>Caeterum hujusmodi universa tunica quaedam membranosa
+<pb n="7.719"/>
+<lb/>saepe comprehendit. Atque lu omnes tumores
+<lb/>praeter naturam sunt. Accedunt huc carbunculi, gangraenae,
+<lb/>herpetes, erysipelata, fcirrln, oedemata, cancri, et
+<lb/>inflationes; quae nec ipsa medicum ignorare oportet, sed
+<lb/>cujusque generationem et substantiam accurate perscrutari.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Enimvero gangraena et carbunculi procreantur
+<lb/>, quum fanguis tanquam fervens atque inflammatioui
+<lb/>propinquus cutem perusserit. Quapropter et cum emsta
+<lb/>fiunt, et pustulae ulcus praecedunt, quemadmodum lu
+<lb/>ambustis, febremque acutissimam inserunt .et imminens
+<lb/>ritae periculum Nigra vero protius ac cluerea carbunculormn
+<lb/>ulceris. apparet crusta; non tamen color <hi rend="u">infl</hi>ammationis
+<lb/>circumpositae similiter aliis ruber est, fed ad nigriorem
+<lb/>propendent, alio modo quam ecchymosi laborantibus,
+<lb/>vel a gelu refrigeratis ; quia non adeo livens , quemadmodum
+<lb/>in istis, tumor est, fed etiam quid splendidum habet,
+<lb/>veluti bitumen et pix. Talis est quoque sincera bilis atra.
+<pb n="7.720"/>
+<lb/>Unde profecto ulcerum lu carbunculis malignitas emergit.
+<lb/>Nam sanguis vel statim ab initio , vel in fervore assatus,
+<lb/>melancholicus fieri videtur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">At lusis atra sine ebullitione cancros facit;
+<lb/>et cum ulcere, si acrior contigerit. Quamobrem et
+<lb/>nigriores colore inflammatis femper apparent minimeque
+<lb/>calidi; venae in ipfis replentur ac tenduntur magis quam
+<lb/>in inflammationibus. Humor enim cancros generans minus
+<lb/>ob crassitiem ex vasis in circumpositam carnem exeruit;
+<lb/>non tamen venae sicut in inflammationibus rubrae funi,
+<lb/>verum et hae pro humoris infestantis ratione.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Magnas inflammationes gangraena vocata
+<lb/>fequitur, quae partis affectae mortificatio est. Hanc nisi
+<lb/>quis cito sanaverit, pars sic laborans facile emoritur, nec
+<lb/>non alias continuas invadit ac hominem perimit. Quum
+<lb/>enim vehementer obstructa tunt in maximis inflammationibus,
+<pb n="7.721"/>
+<lb/>tum vasorum orificia, tum omnes meatus naturali
+<lb/>perspiratione -destituti, sic aegrotantia corpora prompte emorimatur.
+<lb/>Adprimum qui coloris flos inflammationibus adsuerat
+<lb/>, in ipfis extinguitur ; deinde dolor et pulsus abeunt,
+<lb/>nequaquam sedato affectu, verum sensu emortuo. Pulsus
+<lb/>autem ingentis iusiammatiouis inseparabile fymptoma est;
+<lb/>sic autem videntur veteres appellare motum arteriarum ipsi
+<lb/>aegrotanti sensibilem, sive citra dolorem sive cum eo accuiati
+<lb/>Quare nonnisi in inflammationis symptomatis pulsui
+<lb/>hoc addunt, cum dolore. Haec illis de nomine disceptatio
+<lb/>est. Praestat hoc neglecto originem eorum cognoicere.
+<lb/>Certe in naturali statu arteriarum motus nobis non
+<lb/>percipitur, in inflammationibus cum dolore sentitur. -- Percutis
+<lb/>enim arteria, dum dilatatur, circumiacentes partes,
+<lb/>ex cujus ictu propter inflammationem dolemus. Ubi vero
+<lb/>ipsa quoque tunica inflammatione jam conflictatur; percu.tiens
+<pb n="7.722"/>
+<lb/>simul et percussa dolorem congeminat. De his quidem
+<lb/>abunde fatis dictum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">De biliosis autem fluxionibus deinceps
+<lb/>disserendum Vicit enim haud sitio qua ratione medicorum
+<lb/>confuetudo , sive bilem simpliciter sive biliosum humorem
+<lb/>nominemus, inaudite nos pallidam et umerum , non
+<lb/>. acidam et nigram, quandoquidem illam semper cum adjectione
+<lb/>nominant, humoris appellationi colorem adjungentes.
+<lb/>Quum igitur. blliqsus humor aliquo decubuerit, <hi rend="u">sin</hi>.
+<lb/>ceras quidem cutem exulcerat; qui vero aqueae saniei aut
+<lb/>.. fangmni mixtus , minus est acris et magis partem in temorem
+<lb/>attulit, quam exulcerat. Hoc itaque erysipelas appellatur,
+<lb/>alterum herpes. Procreantem vero humorem
+<lb/>. affectuum tum color tum calor proditi Quum autem et
+<lb/>rursus acris fluoris hic minus , ille magis talis existit, fciendum,
+<lb/>ex acriore herpetenf dlhiomenum i. .e. depascentem
+<lb/>-constitui, sic enim Hippocrates ipsum nominarit., ex altero
+<lb/>alterum , cui et nounulli post Hippocratem miliaris nomen
+<pb n="7.723"/>
+<lb/>posuerunt, quod. miliis. similes eminentias .in cute procreet.
+<lb/>Milli vero talis fluor pituitae commixtus; alter vero exactae
+<lb/>bilis esse ridetur; ideoque cum erofione accidit, affectu cutis
+<lb/>continuitatem semper prehendentem unde nomen quoque
+<lb/>sortitus est. Si vero- fanguis aequaliter bili sit permixtus,
+<lb/>in utriusque medio, inflammationis et prysipelatis , specie
+<lb/>et natura hic assectus esu At si alter multum exuperet, ali
+<lb/>exuperante assectus nomen est ; praedicatur vero quod ei
+<lb/>mixtum esu Erysipelas quidem phlegmonodes ob flavam
+<lb/>bilem praepollentem ; phlegmone vero erysipelatodes Ianguine
+<lb/>superante dicitur. Jam vero aliarum mixtionum similis
+<lb/>est interpretatio, phlegmone scirrhodes et scirrhus
+<lb/>phlegmonodes, -oedema phlegmonodes- et phlegmone cedematodes.
+<lb/>Etenim quatuor hi assectus assidue ex humorum
+<lb/>fluxione generantur, erysipelas, oedema, phlegmone et
+<lb/>scirrhus. Erysipelas igitur, biliosa fluxione, ut dictum
+<lb/>est, exuperante; phlegmone, sanguinea; oedema, pituita
+<pb n="7.724"/>
+<lb/>consistentia tenui ; quemadmodum ex crassa lentaque una
+<lb/>scirrhorunr species; nam alteram limus sanguinis efficit.
+<lb/>Atque haec certe duplex est ; altera quidem species, quam
+<lb/>atram Hippocrates nominat; altera vero similiter atra est,
+<lb/>fed propriam appellationem obtinet, nominatur etenim atra
+<lb/>bilis. Hujus quidem cancri suboles sunt p alterius vero uigrae
+<lb/>una quaedam scirrhorum species. Verum posterior
+<lb/>a pituitosa colore distinguitur. Utrisque communia sunt
+<lb/>major quam secundum naturam deceat tumor, tum doloris
+<lb/>expers tum durus. . Atque amborum generatio - mterduin
+<lb/>a principio , nonnunquam ex permutatione aut inflammationis,
+<lb/>aut eryfipelatis, aut oedematis, quum immoderatius .
+<lb/>refrigerata sint.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Vicina scirrhis funi quae ecchymomata et</p>
+<p rend="hanging">melasmata vocantur, maxime renibus ex venis contusis accidentia.
+<lb/>Sunt autem horum quaedam; ut diximus, nigra,
+<lb/>et haec senibus potissimum leves ob causas oriuntur.- Quaedam
+<lb/>inter rubrum et nigrum consistunt, quos -livores votitanti
+<pb n="7.725"/>
+<lb/>Sed hi omnes tumores sanguine ex venis effuso pro,
+<lb/>veniunt; interdum. ob tunicas contusas,. interdum in extremis
+<lb/>reseratas.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">At vero arteriae adapertae affectus aneurysma
+<lb/>vocatur; fit autem quum ipsius vulneratae eircumpofita
+<lb/>cutis ad cicatricem quidem pervenit, manet autem
+<lb/>vulnus, arteria nec coeunte, nec conglutinata, nec carne
+<lb/>obstructa. Dignoscuntur sane .hujusmodi pathemata pulfibus
+<lb/>quos edunt arteriae, verum quum etiam comprimuntur,
+<lb/>tumor omnis delitescit, substantia, quae ipsum efficit, in
+<lb/>arterias recurrente ; quam alibi ostendimus tenuem et stavum
+<lb/>esse sanguinem quempiam, una cum spiritu tenui et.
+<lb/>copioso permixtum; hic vero fanguis longe calidior est eo,
+<lb/>qui in venis continetur, et vulnerato aneurysmate erumpit,
+<lb/>ut vix sisti possit. Caeterum in .oedematis materia prementibus
+<lb/>cedit digitis , et pars in fossulam cavatur , at nec pulfuf
+<lb/>in hac affectione .est, sed color albidior ; etoedema multo
+<pb n="7.726"/>
+<lb/>satius majusque est aneurysmate , nisi quum grumus quispiam
+<lb/>innatus ex aneurysmate sphacelum gignat. Voco sic
+<lb/>omnem solidarum partium corruptelam, ut etiam ossibus incidat;
+<lb/>nedum carnibus aut valis. Gangraena vero folidorum.
+<lb/>corporum mortificatio ipsa est, sed neque ossibus advenit,
+<lb/>et magnas inflammationes comitatur, species una
+<lb/>sphaceli existens, sed proprium nomen et singulare praeter
+<lb/>commune sortita. - Haec igitur satis distincta sunt; reliquum
+<lb/>jam tempus postulat, ut de melancholicis fluxionibus verba
+<lb/>faciamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">Quum vero atra bilis in carnem decumae- ,
+<lb/>rit, mordax quidem cutem circumpositam erodit et ulcus
+<lb/>efficit; moderatior autem cancrum sine ulceratione molitur.
+<lb/>Dictum est antea, venas ab eo magis quam ab inflammatioilibus
+<lb/>in tumorem attolli, et qualis species ipsarum coloris
+<lb/>fit. Non solum autem cancrosam ulcus, verum etiam. alia
+<lb/>pleraque cum tumoribus corporum ea continentium conitituuntur,
+<pb n="7.727"/>
+<lb/>omnia pravi humoris soboles, aut biliosi cujusdam
+<lb/>, aut melancholici , aut alias utcunque virulenti ac ritiosi
+<lb/>ex majore corruptela ortum adepti.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">Quae vero ex ipsis depascuntur. et ciri.
+<lb/>cumpofitas laedunt peries, sanum corpus ambiens erodentia,
+<lb/>haec universa phagedaeuica nominantur. Quae in ambobus
+<lb/>consistunt, ulcere et tumore ambiente, phagedaenam appellant.
+<lb/>Depascitur quidem et herpes vicina erodens, verum;
+<lb/>siolius cutis est exulceratio; plragedaena vero cum cute etiam
+<lb/>subjecta attingit Chirouia vero et Telephia ulcera vocare
+<lb/>supervacuum est. Sufficit enim. omnia communi vocabulo
+<lb/>cacoethe i. e. maligna nuncupare. Ad haec plora et lepra.
+<lb/>melancholici cutis solius assectus sunt; nam fi in venis et.
+<lb/>cerne proveniunt, cancer appellatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="indent">Elephas quoque melancholicus affectus
+<lb/>est, ex sanguine melancholico primam ducens originem;
+<lb/>tempore vero bilis atra sanguine copiosior redditur, ac tum
+<lb/>tali morbo obnoxii graviter olent, et aspectu sunt molesti.
+<lb/>Quibusdam ipsorum ulcera quoque accedunt. Hoc mali
+<pb n="7.728"/>
+<lb/>dum incipit, fatyriasmum vocant; quia satyris similes facie
+<lb/>redduntur. - Nonnulli osseas in temporibus eminentias
+<lb/>sic nominant; fiunt quoque in caeteris partibus tales ossium,
+<lb/>eminentiae , quas nonnulli exostofes vocitant; quemadmodum
+<lb/>et pudendorum tentiones praeter naturam non re-,
+<lb/>mittentes. quidam fatyriasmum, quidam priapismum appellant.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p rend="indent">Est et achor parvum in cute capitis uIens;
+<lb/>conieceris ipsimi pituitae falsae et nitrosae sobolem esse.
+<lb/>Effluit igitur ex eo fames quaedam, nun omnino aquosa.
+<lb/>neque jam crassa, ut mel, quemadmodumin favis appellatis.
+<lb/>Nam et haec cum tumore quodam et foraminibus plo.-.
+<lb/>rimis eveniunt, humore melleo essiuente. .. Parvus horum
+<lb/>quoque tumor est, fed non adeo, ut acharis. Insuper his
+<lb/>minores praeter naturam tumores in cutenafcuntur, myrmecrae,-
+<lb/>acrochordones, pfydraces et epinyctides, affectus
+<lb/>omnibus cogniti.. n. Notus non minime et furunculus est,
+<pb n="7.729"/>
+<lb/>mitis fune, quom in ipsit cute sola consistit; malignus aulum,
+<lb/>quum magis ab. alto exurgit; nam fic tuberculo similis est,
+<lb/>differt tamen a tuberculo sula duritie ejusmodi dothien; ambo
+<lb/>pblegmonodes affectus sunt. Tertius sus successit bubo,
+<lb/>et quartus- quem panum nonnulli vocant,. calore simul et
+<lb/>generationis celeritate ab aliis tuberculis distinguentes. Suus
+<lb/>quoque qui in inguinibus etatis duntaxat oriri phygethla dicant,.
+<lb/>quaerunt glan stillarum inflammationes... Struma est,
+<lb/>ubi hae partes scirrlmnr contraxerint, quemadmodum testium
+<lb/>scirrhis morbi nomen farcocelen I. e. carneum rami-.
+<lb/>ceor imposuerunt; ut; quum humor aqueus in testium tuutris
+<lb/>acervatur,- hydrocelen vocitant, et epiplocelen, et
+<lb/>enlerocelen., ad haec compositum ex ambabus vocabulum
+<lb/>magis quam convenitimplexum , enteroepiplocelen, recentlorum
+<lb/>medicorum est, qui universos testium tumores κήλας
+<lb/>I.. e. ramices appellant, per η elementum prima syllaba,
+<lb/>uonper a,. ut ab.Athenienfibus, prolata. Quemadmodum
+<pb n="7.730"/>
+<lb/>vero unumquodque praedictorum nominum partis morbum
+<lb/>indicat, de qua dicitur; ita quoque cirsocele recentius nomen
+<lb/>morbum istius notat, de quo prolatum esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+
+
+<p rend="indent">Atqui omnes reliquas venas , quae dilatantur,
+<lb/>elisus i. e. varices antiqui nominant; medici recentiores
+<lb/>cirsos et has vocant , elementum i post κ literam
+<lb/>ponentes, non quemadmodum Athenienses ; proveniunt varices
+<lb/>et in cruribus ob imbecillitatem earum, quae illic- sunt,
+<lb/>venarum , et magis quum sanguis crassius in corpore exuberat.
+<lb/>At peritonaeo vulnerato vel rupto , deinde non coalescente,
+<lb/>mollis tumor sedem illam occupat; fi in inguine
+<lb/>fiat, bubonocelen vocant; si in unrbilico is accidat, eo asse
+<lb/>fectos medicorum nonnulli exomphalos appellant. At:
+<lb/>nullus ex his affectibus solius peritunaei est, verum aponeurosin
+<lb/>quoque musculi affici oportet, quam in anatomicis administrationibus,
+<lb/>qualisnam fit, indicavimus. Igitur -hi:affectus
+<lb/>transversorum musculorum sunt; in inguinevero
+<lb/>ramices obliquorum , vel rupta , vel dilatata ea in regione
+<pb n="7.731"/>
+<lb/>eorum aponeurosi simul cum peritonaeo tunica. Fiunt et
+<lb/>alii harum sedium tumores propter subjectum aliquod viscus
+<lb/>lu altum sese attollens. Affectiones autem, quae ipsorum
+<lb/>tumores concitant, dictae sunt; inflammationes enim sunt,
+<lb/>fcirrhi, abscessus, atque sus similes. In hydropicis autem
+<lb/>eo in loco copia coacervatur, aquosa in estatis; flatulenta
+<lb/>in tympanicis ; pituitosa in anasarca et leuco phlegmatis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+
+
+<p rend="indent">Jam vero alii tumores propria nomina
+<lb/>adepti sunt, nihil eximium obtinentes , cuiusmodi epulides,
+<lb/>parulides , thymi et ejusmodi caeteri carnosi surculi sunt ;
+<lb/>velut rursus uvae , paristhmia, tonsillae, aliud nihil praeterquam
+<lb/>inflammationes existentes ; uvae quidem gurguliorus;
+<lb/>tonsillae glandularum, quae in faucium principio libi
+<lb/>invicem opponuntur; quemadmodum.paristhmia corporum,
+<lb/>quae in ipsis fantibus consistunt. Hippocrates autem videtur
+<lb/>non omnem inflammationem faucium uvam appellare,
+<lb/>sed unam solam speciem, lu qua terminus gurgulionis acino
+<pb n="7.732"/>
+<lb/>uvae similis existit. Verum et polypi vel ex inflammatione,
+<lb/>veI tuberculo, vel excrescentia quadam, vel quomodocunque
+<lb/>aliquis nominare voluerit, in naribus consistente
+<lb/>generantur; phlegmouodes vero sunt et humidi ob loci
+<lb/>naturam. Sic encanthis insta tumor aliquis praeter naturam
+<lb/>in magnis oculorum angulis oritur, Pon .est autem toto genere
+<lb/>praeter naturam, fed sola magnitudine. Pterygion
+<lb/>membrana oculis extrinsecus adnata est, quae a periostio
+<lb/>ambiente delata, ad iridis coronam pervenit. Staphylomata
+<lb/>vero quae vocantur , usia solo situ , alia affectione praeter
+<lb/>naturam sunt. Dictum est alibi de omnibus hujusmodi affectibus
+<lb/>, qui in oculis cousistunt. Opportunum itaque jam
+<lb/>est lue sermonem finire, quum nulla supersit adhuc tumorum
+<lb/>praeter naturam species, quae commemorata non
+<lb/>fuerit.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

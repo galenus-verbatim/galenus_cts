@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>De sophismatis seu captionibus penes dictionem</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg082.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title>Claudii Galeni Opera Omnia</title>
+            <author>Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">14</biblScope>
+              <biblScope unit="pp" from="582" to="598">582-598</biblScope>
+              <date>1827</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x14">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="32" to="34">32-34</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="73" to="78">73-78</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x02">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg082.verbatim-lat1">
+<pb n="14.582"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="14.582"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE SOPHISMATIS SEU
+<lb/>CAPTIONIBUS PENES
+<lb/>DICTIONEM.</head>
+
+
+<p rend="indent">[Sex modis sophismata in dictione contiagere,
+<lb/>Aristotelis auctoritate.] .Aristoteles philosophus doeens
+<lb/>nos in libro de sophisticis elenchis (captiosis argumenti
+<lb/>) quot modis in dictione sophismata seu captiones
+<lb/>contingant, modos sex quidem numero esse asserit, eosquita
+<lb/>exponit: in aequivocatione, in ambiguitate, in accentus
+<lb/>in compositione, in divisione, in dictionis figura. Sophismata
+<pb n="14.583"/>
+<lb/>in aequivocatione vocat, ubi nomina in oratione
+<lb/>posita plura significant, ut canem venatus sum: plura enim
+<lb/>haec oratio significat ob id vocabulum, canem. Sophiamata
+<lb/>vero in ambiguitate, quum orationi ipsi in se duplex
+<lb/>sensus est, ut haec fe habet, hunc licet capere me:
+<lb/>hic nominum quidem nullum ambiguum, fed oratio ipsa
+<lb/>per se capere et capi significat. At in accentu, quum
+<lb/>duplex contingit, ut hac in dictione, ^λρος έστηκε , mons
+<lb/>aut terminus stabat; ipsum enim nomen duplex ob duplicem
+<lb/>accentum, qui in principio ponitur aut tollitur. Sophisma
+<lb/>autem in compositione et divisione quum ipsae
+<lb/>significationis differentiam faciunt, ut</p>
+<p rend="indent">Quinquaginta utrum centenos liquit Achilles.</p>
+<p>Differentia namque est dictioni, virum, aut compositae
+<lb/>cum quinquaginta aut a quinquaginta divisae. Denique
+<lb/>in dictionis figura quum aliud dictio vere significat, aliud
+<lb/>vero propter speciem et figuram significare videtur, ut
+<pb n="14.584"/>
+<lb/>verbum audio: est quidem passionis cum actionis esse videatur,
+<lb/>propter prolationem, id est figuram similem iis
+<lb/>quae verborum actionis sunt, ut curro et intelligo. Trahet
+<lb/>enim ad utramque partem sophisticus homo; ad passionem,
+<lb/>quoniam ita est; ad actionem, quia ita videtur.
+<lb/>His vero sex enumeratis modis deinceps ostendit nuIIum
+<lb/>esse ab eo praetermissum , neque posse aliquod in verbo
+<lb/>sophisma extra modos propositos cadere. Verba vero,
+<lb/>quibus id ostendit, haec sunt: Hujus rei fides est et ea,
+<lb/>quae per inductionem fit et syllogismus et si alius aliquis
+<lb/>sumatur et quod tot modis, nominibus iisdem et orationibus
+<lb/>non eandem rem significamus. Ea igitur, quae de
+<lb/>inductione loquitur, contextus pars manisesta est: si enim
+<lb/>siuguIa in verbo sophismata percurras sumasque nec usa
+<lb/>lum horum appareat extra praedictos modos cadere, perspico
+<lb/>u m jam ita est, nullum praetermissum esse modum:
+<lb/>quod vero sequitur, omnino obscurum est quid velit quum
+<lb/>dicit et syllogismus et si alius aliquis sumatur et quod tot
+<pb n="14.585"/>
+<lb/>modis, nominibus iisdem et orationibus non eandem rem
+<lb/>significamus, siquidem nec quonam modo alium aliquem
+<lb/>sumamus syllogismum dictum est: id vero et quod tot
+<lb/>modis, nominibus iisdem et orationibus non eandem rem
+<lb/>significamus, syllogismi conclusioni magis simile est quam
+<lb/>syllogismo: consueta vero est haec huic philosopho dicendi
+<lb/>brevitas et veluti per signa expromere multa, quia ad
+<lb/>hos qui jam adfuerant, scribebantur. Qui igitur eum exposuerunt,
+<lb/>alii haec accurate tractare, quod decebat ne
+<lb/>tentarunt quidem: alii non consequuti sunt: nos vero ten-.
+<lb/>temus non Aristotelis causa, neque ut orationi ejus opem
+<lb/>feramus , sed causa nostra. Philosophi enim est non solum
+<lb/>assumptis propositionibus ratiocinari, ut multorum mos
+<lb/>est , sed etiam conclusione posita propositiones ipsas construeree
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">[Penes ipsum duplex omnia in dictione fophasmata
+<lb/>accidere.] Quoniam vero monstrare propositum
+<lb/>est, tot modis in verbo sophismata fieri, quae penes
+<lb/>ipsum duplex sunt, quot modis Aristoteles dixit, patet duo
+<pb n="14.586"/>
+<lb/>haec a nobis demonstranda esse, alterum, omnia in verbo
+<lb/>sophismata penes ipsum duplex esse, alterum tot esse
+<lb/>numero penes ipsum duplex. Perspicuumque illud omnibus
+<lb/>est, omnia in verbo sophismata ex vitio hujus contingere
+<lb/>necesse esse: hoc enim tanquam principium sequentes
+<lb/>sophistae decipiunt in ea re minus versatos et
+<lb/>qui captionis fraudem non animadvertunt. Si vero recte
+<lb/>volumus quot in verbo sophismata contingunt accipere,
+<lb/>quot vitia sunt, sumendum est: quod cognoveris, si virtutam
+<lb/>sumas unicam esse aut plures: error enim a virtute
+<lb/>esse vitium videtur: qua recte cognita statim hoc
+<lb/>quoque cognoscitur. Quoniam vero, ut alibi demonstratum
+<lb/>est, ipsum bonum virtusque in eo est, ad quod nata
+<lb/>aut facta res est, ut hominis in vivendo, gladii in sciadendo,
+<lb/>idcirco ad quod nata aut facta est dictio sumendum
+<lb/>est: manifestum vero est ad unum hoc, ut significeI.
+<lb/>Patet igitur, in hoc et bonum et vitium esse; patet quoque
+<lb/>solam e virtutibus hanc in dictione esse per sa: resiquas
+<pb n="14.587"/>
+<lb/>vero per accidens extrinsecusque esse, nec rei ipsius,
+<lb/>ut concinnitas et apta literarum formatio ; haec enim et
+<lb/>si quibusdam se bona ostendant, non tamen secundum rem
+<lb/>se habent; sed perinde ac si ensis manubrio eburneo sit
+<lb/>aut fucatus oculus: haec etenim his extrinseca sunt: quae
+<lb/>vero sunt per se, ea in scindendo et in cernendo sunt.
+<lb/>Si igitur uniuscujnsqne rei virtus est, sive ut dicitur in
+<lb/>eo posita est, ad quod nata res aut facta est, patet quod
+<lb/>et virtutum numerum hinc quis noverit quantus sit; si
+<lb/>enim ad muIta res genita sit, plures iliae sunt: li ad unum,
+<lb/>una virtus est. Apparet sane dictio ad unum nata, hoc
+<lb/>est ad significandum. Si igitur bonum ipsum in hoc positum
+<lb/>est, hoc ipsum non significare aut non recte lignificare,
+<lb/>vitium erit: nam considerandum videtur, an, quae
+<lb/>non significat, ea dictio statuenda sit: non enim tibicen
+<lb/>li est, qui tibia natura non aptus est usto modo canere,
+<lb/>nec malus igitur tibicen est: sic nec dictio est, quae non
+<lb/>est ad lignisicandum apta: quare nec vitium dictionis erit
+<lb/>non significatio. Hoc vero protinus signum, solam eam
+<pb n="14.588"/>
+<lb/>quae nunc a nobis dicta est, virtutem esse dictionis per
+<lb/>fe: in quo enim unaquaeque res esse habet, in hoc ipsa
+<lb/>virtus est: dictio autem habet in significando esse, coque
+<lb/>corrupto, neque dictio est: igitur in hoc ipso virtus effi
+<lb/>Quare haec una cum significatione deperditur, reliquae
+<lb/>vero, propterea quod non secundum rem ipsam sunt, non
+<lb/>impediuntur circa hanc esse, quae non significat, ut concinnitas
+<lb/>et apta scriptura. Has ob res, quae linguae barharae
+<lb/>sunt, earum alteram meliorem altera dicimus, ut
+<lb/>Persicam Aethiopica, quanquam nihil nobis significantem:
+<lb/>causa vero est, quia potius vox est quam dictio; fed etsi
+<lb/>vitium videatur, non significatio, cum propter limilitudinem
+<lb/>nominis decipiantur, patet non propter hoc vitium
+<lb/>sophisma contingere. Quis enim est, qui consentiat aut
+<lb/>quis est, qui proponat dictionem significatione privatam et
+<lb/>ignotam ? Restat igitur, ut propterea contingat sophisma,
+<lb/>quia non recta significatio sit: haec vero talis est, quia
+<lb/>duplex; in hoc enim Iulo dictio habet quidem quod
+<lb/>significet, verum non recte: canis enim nomen aliquid
+<lb/>significat, non tamen hoc aliquid, neque definitum quidquam,
+<pb n="14.589"/>
+<lb/>quod erat recte significare. Illud vero recte a Plalune
+<lb/>dicitur, quaecunque proprio vitio corrupta sunt, horum
+<lb/>omnium dictionem corrumpit: ducit enim in obscuram
+<lb/>significationem quodam modo, sed non simpliciter, ut
+<lb/>ea quae nihil significant: obscura vero significatio prius
+<lb/>dicta est perfecta esse dictionis corruptio : quapropter solum
+<lb/>vitium est ipsum duplex: nisi quis ea quoque vitia
+<lb/>putet, defectum, longitudinem, superfluitatem dicendi: latere
+<lb/>autem hunc arbitror deceptum et ignarum, nullum
+<lb/>horum esse simpliciter dictionis vitium, nisi obscuritatem
+<lb/>aut duplicitatem efficiat: si vero solum hoc dictionis vitium
+<lb/>est et recte supra dictam est omnia, quae in verbo
+<lb/>sophismata sunt, ex ejus vitio fieri, propter ipsum duplex
+<lb/>erunt omnia, quae in verbo sophismata contingunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">[ Ipsum duplex sex tantum modis in dietione
+<lb/>fieri. Quid sit oratio. ] Post vero demonstrandum
+<lb/>est, propter quid tot modis ipsum duplex accidat, quot
+<lb/>Aristoteles scribit: id vero si recte inveniri debet, sumendum
+<pb n="14.590"/>
+<lb/>prius est, quid sit oratio et ex orationibus orationem
+<lb/>esse, etenim et ipsae propositiones orationes sunt: harum
+<lb/>alicui aut aliquibus quaerimus ipsum duplex. Oratio
+<lb/>sane erit, quod in praefanti dicere sat est, nominum cossipositio:
+<lb/>voco vero nomina, etsi verba sint signisicentque
+<lb/>omnino aliquid, propterea, quod sic notius vocabulum est;
+<lb/>necesse est ipsum duplex aut in aliquo horum nominum
+<lb/>esse, aut in oratione ipsa: nuIIum enim habemus tertium
+<lb/>quomodo constituatur: quemadmodum neque in lapidibus
+<lb/>praeter aut singulus seorsum aut illorum simul compositionem
+<lb/>, eamque aut actu aut potentia aut apparentia nibit
+<lb/>aliquis excogitare potest: praeter haec enim nihil est,
+<lb/>quod esse aut dici quispiam inveniat, ut alibi demonstratum
+<lb/>est. Omnia vero haec comprehendentes modi praedicti
+<lb/>habent. Ipsum enim actu duplex modus habet, et
+<lb/>qui secundum aequivocationem est et qui secundum amdignitatem :
+<lb/>sed in nomine duplicitatem is habet qui secundum
+<lb/>aequivocationem est, in oratione qui secundum
+<pb n="14.591"/>
+<lb/>ambiguitatem: actu vero esse dicuntur, quoniam revera
+<lb/>res duas significant. Potentia vero, dum accentu duplices
+<lb/>fiunt, compositioneque et divisione; hi enim non plura
+<lb/>significant, sed prorsus unum: propterea vero quod ad
+<lb/>utrumque verti licet duplices dicuntur: quare hos potentia
+<lb/>dicimus: taIe enim est hoc ipsum potentia esse. ld
+<lb/>ipsum vero rursus, ut supra quoque divisum est, vel in
+<lb/>nominibus vel in oratione est: in nominibus accentus duplicitatem
+<lb/>efficit: trahit enim ad utramque partem nomen
+<lb/>accentus, ut in oratione, hoc Cpoq εστηκεν, hoc est mons
+<lb/>uel terminus stabat, accentus aspiratus facit, in principio
+<lb/>cum aut ponitur aut abeII. ln oratione vero compofitio
+<lb/>et divisio duplicitatem facit: in compositis quoque nominibus
+<lb/>eandem facere potest, quia orationi similia sunt, ut
+<lb/>in nomine NeapoIis et καλὸς κἀγαγὸς, id est probus, mutaret
+<lb/>ea quis loco simplicium non in nomen, hoc enim
+<lb/>solus accentus facit, sed in orationem ut in hac voce αύλητρἰς
+<lb/>videlicet, id est tibicina, sicut rursus et ipsam
+<lb/>orationem in nomen componeret, ut est in proposito nomine ;
+<lb/>videbitur autem nihilominus absurdum fortassis id,
+<pb n="14.592"/>
+<lb/>quod propter accentum compofitionemque et divisionem
+<lb/>sophismata contingere dicamus: siquidem haec propter
+<lb/>ipsum duplex, ut supra dictum est, contingunt: accentus
+<lb/>vero et quae ejus ^generis sunt ipsum duplex iis quae
+<lb/>facultate duplicia sunt eripiunt: etenim ut haec alterum
+<lb/>significent efficiunt: sed tamen nihilominus vere dicuntur
+<lb/>propter haec sophismata contingere: qnia enim oratio per
+<lb/>eadem haec ipsum duplex accipit, alterum in principio
+<lb/>sophistae sumunt, alterum concludunt, orationem per ea
+<lb/>ipsa mutantes , prorsus enim non aliter sophisma contiageret,
+<lb/>ratiocinantes vero tanquam idem accipientes : quale
+<lb/>est unum quid rationale nomen est: proprium hominis
+<lb/>est ipsum rationale: igitur unum proprium hominis est.
+<lb/>Praeterea li ὸρος, hoc est terminus, hic stabat is qui agros
+<lb/>separat, ὸρος autem, hoc est mons, hic non stabat: sed
+<lb/>neminem lateret id quod sic aduIterinum est: verum ut
+<lb/>ubique etiam ad minimum apta oratio sit sophistae stndent:
+<lb/>nam et in iis, quae actu duplicia sunt, hi istud
+<lb/>idem faciunt, ut aliud sumentes aliud concludentes ratiocinentur:
+<pb n="14.593"/>
+<lb/>sed ibi obscurius, quoniam quicquid significet
+<lb/>sermo, ipse sibi consentiat: hic vero maniseste: quare suis
+<lb/>nominibus et orationibus Aristoteles dixit: Etenim ii foph
+<lb/>illae sunt, qui speciem violant. Cum jam habeamus
+<lb/>id ipsum, quod actu dicitur, itemque quod potentia, quod
+<lb/>reliquum est, ad apparentiam attinet: quae secundum figuram
+<lb/>dictionis est, ut est supra dictum: ostenditur enim
+<lb/>ipsum nomen, similiterque oratio, non aliud duplex adeo
+<lb/>habere, nec in singulis, quae praedicta sunt; adeo quis
+<lb/>exempla ex Eudemo ex aliisve caperet. Cum igitur jam
+<lb/>collectos modos omnes habeamus, quibus duplex ipsum
+<lb/>fieri possit, habemus omnia in dictione contingentia fophismata:
+<lb/>haec enim penes ipsum duplex sunt: sequitur
+<lb/>vero id , quod. tot modis nominibus ipsis et orationibus
+<lb/>non eandem rem significamus : nam aut actu aut potentia
+<lb/>aut apparentia id facimus: manifestum vero est et fyllogismi
+<lb/>modum ,, modo habita divisio sit, fieri posse, utrumvis
+<lb/>quis eligat aut e directo aut ad impossibile ducentem:
+<lb/>si enim poflibile est alium haberi modum, is erit neque
+<pb n="14.594"/>
+<lb/>in nomine neque in oratione neque actu neque potentis
+<lb/>neque apparentia: praeter haec autem nihil sermo
+<lb/>ostendit: fecundum igitur ipsum definitum sit in hun^
+<lb/>modum : quod vero non ex ejus divisione invenimus, non
+<lb/>enim Aristotelis gratia nunc scribimus, fed omnia haec
+<lb/>methodo scripta sunt, perspicuum est: nam aut in nomine
+<lb/>aut in oratione ipsum duplex esse oportere aperte ipst
+<lb/>dixit, cum dixit, quod ipsis nominibus et orationibus
+<lb/>ipfum vero actu esse aut potentia aut apparentia notum
+<lb/>ex ipso ordine est: scripta igitur separatim iunt in singulis
+<lb/>generibus, quae ejusdem funt generis, primaque qua^
+<lb/>ad actum attinet: fecunda quae ad potentiam: tertio loso
+<lb/>quae ad apparentiam, ut decuit: aut cur haec non iueIe
+<lb/>confusa ? fed fortasse ridiculum est his fidem aliam afferte
+<lb/>conari, quam eam quae a re deducitur: etenim si sic
+<lb/>habent, ut Ars, qualis Medicina est, artisque sunt, divisionem
+<lb/>ullam fortuito aut casu factam non reciperent. sisd
+<lb/>de his satia haec in praesenti sint.
+</p>
+<pb n="14.595"/>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">[Ambiguitatis et reliquorum sophismatum
+<lb/>modi.] Dictum quoque a fulicis aliquid est de partitionis
+<lb/>dignitate, nosse, si quis modus extra propositos cadat
+<lb/>tentantibus: erit enim inductio fides haec. Et alias aequum
+<lb/>est nullam probatorum virorum opinionem obiter
+<lb/>ponere: ambiguitatis igitur definitionem, quanquam cum
+<lb/>multis nostris pugnare videtur, in praesentia tamen praeterminemus:
+<lb/>de his enim considerare alterius negotii est:
+<lb/>quae vero ambiguitates dicuntur, harum differentiae sumendae
+<lb/>sunt. Sunt quidem apud graviores viros numero octo.
+<lb/>Una est, quam communem et ei quod dictum est et divisibili
+<lb/>nominant, qualis est, quae αύλητρὶς, id est tibicina,
+<lb/>puella existens , communis enim haec et ipsius αύλητρὶς
+<lb/>nominis est atque ejus quod dictum est. Altera, quae in
+<lb/>simplicibus est, ut virilis: aut enim tunica aut homo. Tertia
+<lb/>vero ad ipsam in compositis aequivocatIonem attinet,
+<lb/>ut homo est: ambiguus enim sermo est, utrum substantiam
+<lb/>an casum esse significat. Quarta ex defectu est, ut tui
+<pb n="14.596"/>
+<lb/>est: deest enim quod ad medium locum attinet, ut domini</p>
+<p>aut patris. Quinta ex superabundantia, quale est, ei ut
+<lb/>non navigaret denegavit: adjecta enim ea negatio, non,
+<lb/>ambiguam orationem facit, utrum navigare negavit an
+<lb/>non navigare. Sextam esse dicunt eam, quae haud notum
+<lb/>facit, quae cum qua significatione carens pars ordinata
+<lb/>sit, ut illud est, et nunc et non appulit: pars enim ea
+<lb/>non disjunctiva esse potest. Septima est, quae ignotum
+<lb/>reliquit, quae cum qua significativa pars constructa sit,
+<lb/>quale est:</p>
+<p rend="indent">Quinquaginta utrum centenos liquit Achilles.</p>
+<p>Octava est, quae non declarat quid ad quid reseratur, quale
+<lb/>est, Dion Theon est: incertum enim efa utrum ad utriusque
+<lb/>existentiam verbum, est, reseratur, an ad id, ut Dion
+<lb/>fit Theon: aut contra. Hi sunt a gravissimis viris astaerati
+<lb/>modi. Quicunque vero non obiter, quae supra dicta
+<lb/>funt audivit, manifestum est ei, eos omnes in hos cadere
+<pb n="14.597"/>
+<lb/>modos, qui a nobis numerati sunt: carereque methodo et
+<lb/>arte perspicuum est: neque enim ex iis, quae dicta sunt,
+<lb/>demonstrationem quis ceperit, nullum alium modum ambiguum
+<lb/>constitui posse : in connexisque aequivocationem
+<lb/>contingere dicere, hominis est in nominis intelligentia
+<lb/>parum versati : non ineptum vero est generalibus differentiis
+<lb/>speciales enumerare, ut ea, quae ad divisionem attinet,
+<lb/>per partem significatione carentem et per significantem
+<lb/>dividatur: sic enim quis speciales differentias plures acciperet :
+<lb/>quin etiam ad hunc modum quis aequivocationis
+<lb/>differentias speciales dictas plures faceret: quia ille secundum
+<lb/>id, quod a fortuna: hae vero secundum analogiam
+<lb/>aut similitudinem , aut alium aliquem modum constituant
+<lb/>tur: quin et aequivocationis ejus, quam ipsi in oratione
+<lb/>dicunt plures modi casibus similibus appositis fiunt, quale
+<lb/>illud est, futurum est Socratem vincere: caeteri vero modi
+<lb/>minores sunt. Id vero dubitatione dignum est, quo modo
+<lb/>quae ad apparentiam attinent duplicia sunt: magisque
+<pb n="14.598"/>
+<lb/>quo modo quae ad accentum: qui enim secundum compositionem
+<lb/>duplex ponunt, quo modo non secundum accentum?
+<lb/>ut ilia per continuationem totius et per silentium
+<lb/>ad ipsum duplex trahi potest, sic ipsum nomen pes
+<lb/>accentum: quemadmodum orationis extrmfecum , inane
+<lb/>tempus cum sit, nec ejus pars, eam tamen facere duplicem
+<lb/>potest, sic accentus quoque: itemque sophistae ut illu, sic
+<lb/>hoc ad contentiones utuntur: et quis secum cogitans, quemadmodum
+<lb/>secundum compositionem et divisionem contendunt,
+<lb/>sic secundum etiam accentum idem fieri polle cognoscet.
+<lb/>Manifestum vero in scriptis orationibus est, cum
+<lb/>non adjecta sunt dividentia puncta: ut enim his egent ad
+<lb/>divisionem, sic accentu quoque, non semper tamen etiam
+<lb/>propter hunc duplex oratio fuerit.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>Quos quibus catharticis medicamentis et quando purgare oporteat</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg073.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title>Claudii Galeni Opera Omnia</title>
+            <author>Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">11</biblScope>
+              <biblScope unit="ed1vol">2</biblScope>
+              <biblScope unit="ed2vol">10</biblScope>
+              <biblScope unit="pp" from="343" to="356">343-356</biblScope>
+              <date>1826</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x11">BIU Santé, Medica</ref></biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg073.verbatim-lat1">
+<pb n="11.343"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="11.343"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENIQVOS, QVIBVS CATHARTICIS
+<lb/>.MEDICAMENTIS ET QVANDO
+<lb/>PVRGARE OPORTEAT</head>
+
+
+<p rend="indent">Sana sortientes corpora purgare operosum
+<lb/>est: etenim vertigines incurrunt et torminibus cruciantur
+<lb/>graviterque ipsis purgatio procedit, ac praeterea etiamnum
+<lb/>celeriter exsolvuntur. Haec autem oboriuntur omnia , dum
+<lb/>purgans medicamentum samiliarem sibi humorem attrahere
+<lb/>desiderat; quod autem eo destituatur, sanguinem carnesque
+<lb/>coliiquat et absumit, ut ex illis proprium eliciat. Qui autem
+<pb n="11.344"/>
+<lb/>sani adhucfunt, ted nisi vacuati fuerint, aegrotaturi, ad praecautionem
+<lb/>vacuandifunt, ineunte vere aut venae sectione, si
+<lb/>a plenitudine; aut purgatione, si ab humorum corruptione
+<lb/>.oborientilurs morbis corripi consueverint. Nos itaque et
+<lb/>podagram et arthritidem incipientem , quae nondum circa
+<lb/>articulos nodos produxerat, ejusmodi vacuatione annis jam
+<lb/>multis fieri prohibuimus. Eodem modo apoplexiam, epilepsiam
+<lb/>, melancholiam aliosque ejusmodi diuturnos assectus
+<lb/>dicta vacuatione plerisque lu hominibus depulimus. Nonnullis
+<lb/>itaque pituitosos humores evacuari confert; nonnullis
+<lb/>biliosus; quibusdam melancholicos; quibusdam scrotum
+<lb/>excrementum pro affectuum, qui ipsis accidere consueverunt,
+<lb/>substantia. Jam primum melaucholia quidam; nisi
+<lb/>purgatus fuerit , quotanuis corripitur ; atque ipsum non folum
+<lb/>vere, fed autumno quoque purgo.: Ita et mulierem
+<lb/>quandam in mamma cancrum affectum habentem, singulis
+<lb/>annis per veris initia. similiter vacuo, quam medicamento
+<lb/>atram bilem purgante vehementer vacuatam persanavi. Ac
+<pb n="11.345"/>
+<lb/>si quandoque purgatio adsumta non suerit, dolor. in alto
+<lb/>ipfi^ oboritur. Elephantem alteri incipientem per initia
+<lb/>sane venae sectione.et purgatione sanavi ; huicque unicapnrgatio
+<lb/>quotannis iterando fufsicit; ipsa vero intermissa^ quam
+<lb/>primum assectus se prodit. Proinde ejusmodi morbi nigrorum
+<lb/>humorum purgatione indigent; epileptici autem, apoplectici et
+<lb/>asthmatici pituitosormn ; arthritiri cum multo calore biliosurum;
+<lb/>cum tumoribus frigidis pituitosormn. Alius quidam
+<lb/>aestiva tempestate tertianis febribus semper corripi solitus
+<lb/>multis jam annis non febricitavit,. quod sub veris decessum
+<lb/>flavam bilem per nos purgari praeveniret. Ita namque
+<lb/>satius est tales evacuare , quemadmodum epilepticos, artbriticos,
+<lb/>melancholicos; item qui caeteri ob crassas Immotus
+<lb/>aegrotant, eos inchoante vere. vacuari .praestat. At ante.
+<lb/>purgantia medicamenta, tum humores crassius .lentosque
+<lb/>prius attenuare acincidere, tum meatus per quos .hi traji- .
+<lb/>eiantur trahanturque reserare ac aperite decet, li purgatio
+<lb/>modis omnibus successura sit , .lis .praesertim qui veratrum
+<pb n="11.346"/>
+<lb/>assumunt. Contentio namque turbationum catharticarum
+<lb/>quum humores affectis partibus contumaciter impactos ejicit,
+<lb/>ob idque diuturnos affectus favet, id opus facilius attenuatis
+<lb/>prius humoribus perficiet. Haec autem si negligant,
+<lb/>molestae purgationes occurrent, interdum cum interiorum
+<lb/>torsionibus, quibusdam singultibus, caliginosis vertiginibus,
+<lb/>multa Iactatione, .pravo pulsu, virium defectione et molestia.
+<lb/>Qui autem elleborum assumturi sunt, eorum natura prius
+<lb/>exploranda est, quomodo ad purgationes per superiora, h. o.
+<lb/>per vomitus , fete habeat. Exploratio vero fiet vomitoriis
+<lb/>medicamentis, quae moderata fini. Nifi enim facile pmgari
+<lb/>videatur is homo, quin praeparatus suerit, ad elleborum
+<lb/>minime ducendus esu Id autem fiet; fi tum .illis tum continnis
+<lb/>vomitibus .elleborum assumturus .prompte vomere
+<lb/>assueverit. opportunius quoque fiet praelio m ematis corposilius.
+<lb/>Haec autem praehumectantur tum uberiore cibo
+<lb/>tum quiete. Quodigitur ad quietem spectat patet. Quemadmodum
+<lb/>enim exercitia siccare nata sunt, ita etiam quies,
+<pb n="11.347"/>
+<lb/>h. e. otium et ab exercitiis vacatio , humiditates servare.
+<lb/>At alimentum non simpliciter uberius humectare solet , sied
+<lb/>quod vehementis qualitatis .expers, h.erquod neque acerbum
+<lb/>neque aere, -neque salsum, neque amarum sit. Nonnun-.
+<lb/>quam radiculas .ex oxymelite dedimus , ipsis ellebori albi
+<lb/>ramusculis per integrum diem ac noctem transfixas; fuerisque
+<lb/>haec imbecilla ex elleboro facta purgatio. Caeterum
+<lb/>qui angustum habent pectus., ob idque pulmonem comprefsum,
+<lb/>adeas, quae vomiturus medicamentis fiunt purgationes,
+<lb/>cum ad alias , tum maxime ex albo . veratro .comparatas
+<lb/>ineptissimi sunt; his enim vas fpirabilium organorum aliquod
+<lb/>rumpitur. Praeterea biliosum humorem per superiora;
+<lb/>pituitam per inferiora purgare decet; licet interdum contrarrum
+<lb/>moliendum fit, si in Ventriculo quidem pituitosus, in
+<lb/>intestinis vero biliosus acervatus fit. At melancholicus perperno
+<lb/>per inferiora educendus. De auni autem tempestatibus
+<lb/>in Hippocratis aphorismis scriptum est;. Aestate saperiores,
+<pb n="11.348"/>
+<lb/>hieme inferiores ventres purgandos esse. Quod
+<lb/>anni tempestatibus regionum est analogum, calore et frigore
+<lb/>distinguentes considerare oportet: ita quoque de. aetatibus
+<lb/>sentiendum. Ac certe etiam consuetudo ad vacuationis ju-.
+<lb/>dicationem non parum conserti . Nam qui vomere consueverunt
+<lb/>, purgationes per superiorem ventrem minus moleste
+<lb/>ferunt; insueti vero haud citra periculum magisque in
+<lb/>veratro. Praeterea morbi speciem spectare conducit. Nam
+<lb/>in leucophlegmatia hydrope medicamento pituitam educente
+<lb/>opus est, primo sane per ventrem inferiorem, deinde
+<lb/>vomitionibus, postremo apophlegmatismis. , Quum enim
+<lb/>redundans humor per universum corpus est diffusus , omnes.
+<lb/>evacuationes promovehimus. At in ascite hydrope hydragogum
+<lb/>aliquod medicamentum dabimus, quemadmodum
+<lb/>etiam in ictericis cliolagoguin. Atque his multifariam bilis
+<lb/>sursum, deorsum, per urinas, per palatum et per nares purganda
+<lb/>esu Pari modo si melancholicus humor redundaverit,
+<lb/>ut in melancholia, cancro, et elephantiasi quod atram
+<pb n="11.349"/>
+<lb/>bilem medicamentum evacuet offerimus. Epilepsias vero
+<lb/>pituitam educentibus purgamus. Ex quibus constat, morbi
+<lb/>constitutionem tum humorem vacuandum, tum locum per
+<lb/>quem his humor vacuandus est, prodere. Exempli gratiis,
+<lb/>iis quibus hepar inflammatur, ubi concocti fuerint humores,
+<lb/>purgationem moliuntur ; per inseriorem fune ventrem quum
+<lb/>in concavis ipsius partibus fuerit affectus; per urinas, quum
+<lb/>in convexis. Ite et in caeteris considerabis et humorem
+<lb/>qui exuberat, etlocum affectum, ex quo tanquam causa morbus
+<lb/>ortum durit. Haec enim tibi et humorem vacuandum
+<lb/>et vernationis modum et .locum , per . quem vacuare deceat;
+<lb/>et cum sus omnibus vacuandi occasionem indicabunt. Per
+<lb/>initia namque serofos tenuesque humores vacuabis; in craffis
+<lb/>autem ac lentis, quales natura sunt et pituitae et atrae
+<lb/>bilis, concoctionem expectabis. Jam ab accessionibus consilium
+<lb/>sumes ad modi vernationis indicationem; per sirperiora
+<lb/>quidem in accessionibus vacuationes moliens , per iuleriora
+<pb n="11.350"/>
+<lb/>in remissionibus quas appellant. Etenim quae tua
+<lb/>sponte. moventur , ita j ovant; quum in accessionibus multi
+<lb/>et vomant et per nares .sanguinem fundant; in remissionibus
+<lb/>. autem urinae et deiectiones excernuntur.- At maxime tumpus
+<lb/>dierum accelloriorum et criticorum, quum deorsum
+<lb/>copiusa purgare aggrederis , cavere oportet. Ubi enim. humorum
+<lb/>impetus sursum .vergit, medicamenti purgantis iacuitas
+<lb/>impedietur. .In iis autem qui jam aegrotant, si morbi
+<lb/>diuturni sunt , semper eorum maturatio exspectanda est:. sin
+<lb/>autem acuti quum turgent humores, per .initia medicamentis
+<lb/>uti licet; idque ipsum multa cum religione et circumspectione
+<lb/>efficiendum est. Nam .in morbis acutis. male purgari
+<lb/>periculum haud leve esui Quod omnia purgantia medicameuta
+<lb/>calida facultatibus existant, labris autem , qua febris
+<lb/>est, fui ratione non fusum non siccantibus et calidis., .sed
+<lb/>maxime ipsis contrariis , nempe humectantibus refrigeranti-.
+<lb/>busque indigeat. Quare nec ipsius febrilis caloris gratia
+<lb/>purgatio nobis assumi tus; hunc enim quantum per fe laedat
+<pb n="11.351"/>
+<lb/>scimus, fed humorum cauta, qui illum efficiunt. . Convenit
+<lb/>igitur majus commodum ex nodorum. humorum evacuatione
+<lb/>provenire, quam laesionem, quae a medicamentis purgantibus
+<lb/>necessario corpori obvenit.: est autem commodum , si
+<lb/>noxius humor et citra molestiam et totus evacuetur. vj.uod
+<lb/>ut fiat, primum sane dispiciendum venit, num aeger ad ejusrnodi
+<lb/>purgationem sit idoneus. Nam qui ex cruditatibus
+<lb/>multis aut lentis crassisve cibis laborant ; item quibus hypochondria
+<lb/>distenta sunt iuflataque, aut urina fupra modum
+<lb/>calida et ignea, aut -si etiam inibi viscerum quaedam iustammalio
+<lb/>assiigat, omnes lu ad purgationes inepti sunt. Proinde
+<lb/>et haec abesse et humores quam maxime licet aegrotantis
+<lb/>fluidos esse oportet, lue. tenues et nullius lentoris participes,
+<lb/>meatusque, per quos purgatio futura est, adapertus:
+<lb/>Haec enim et nos antea praeparamus purgaturi aliquem. At
+<lb/>in morbis acutis statim per initia vel primo dic vel non
+<lb/>ultra fecundum, si purgationibus usuri fimus; quum pruriunt,
+<pb n="11.352"/>
+<lb/>hujusmodi praeparationem fieri non licet, nisi quis
+<lb/>tempus forte habeat ; ut mulsam meracam potui det, in qua
+<lb/>hyssopi aliquid, aut. thymi, aut origani, aut tragorigani,
+<lb/>aut pulegii, aut cuiusdam ita .attenuantium decoctum sit,
+<lb/>Quapropter bona ratione raro in acutis morbis per initia
+<lb/>medicamentorumusus nobis erit, quod neque frequenter
+<lb/>noxii humores per initia turgeant pruriantque, neque suetiam
+<lb/>hoc exiftat; aegrotus ad purgationem sit idoneus p.imo qui
+<lb/>ne tempus quidem nobis praebeat praeparandi idoneum.. At
+<lb/>humores turgere dicuntur, quum motu vehementiori agitati
+<lb/>et a partibus in. partes transflnentes per morbi initia huminem
+<lb/>molestant; dolore afficientes; jactantes, irritantes et
+<lb/>quiescere non permittentes. Tales igitur, h. e. qui in.motu
+<lb/>funt, agitatione et fluore evacuare convenit. Parii autem
+<lb/>alicui infixos , neque alio quodam praesidio movere oportet
+<lb/>neque medicamentis solicitare, priusquam fuerint concocti.
+<lb/>Tunc. enim et naturam vacuationi opitulantem habebimus;
+<lb/>siquidem ea fecundum concoctiones et humores discernere
+<pb n="11.353"/>
+<lb/>et superfluum deponere apparet; quo tempore etiam crisas
+<lb/>accidunt. At ubi absolute quidem ipsa movetur, nihil
+<lb/>opus est medicamentis; ubi Ienius imbecilliusque actionem
+<lb/>obit, id quod deest nos medicamentis adiicere oportet,
+<lb/>quo utriusque, et naturae expellentis et medicamenti traLentis
+<lb/>opera fiat humoris molesti vacuasse. Caeterum
+<lb/>sciendum est humorum transfluxiones ex alia in aliam partem
+<lb/>raro accedere, sed saepius una in parte quadam ipsus
+<lb/>residere, in qua per totum morbi tempus ad Inlusionem
+<lb/>usque concoquuntur. Quum igitur non acutus modo asseotus
+<lb/>fuerit, sed etiam cum fabre vehementissima, cavendum
+<lb/>est purgans medicamentum exhibere, praesertim quum quis
+<lb/>laborantis naturam non compertam habeat. Nonnulli siquidem
+<lb/>natura aegre purgantur, nonnulli vero exigua medicamenti
+<lb/>potione abunde purgantur. Quum itaque febris non
+<lb/>vehemens fuerit norisque aegrotantis naturam , ad medicamenti
+<lb/>dosin descendes , elieboro nigro utens aut aliquo consimili;
+<lb/>in quorum grege est diacolocynthidos, nominant
+<pb n="11.354"/>
+<lb/>ipsam consueto nomine hieram. Quum autem varie ipsa praeparetur,
+<lb/>quae elleborum recepit absque scammonia, optimum
+<lb/>est medicamentum ventri ducendo idoneum. Ubi
+<lb/>purgatio assumta suerit, constat ptisanam supersorbere , ut
+<lb/>ait Hippocrates: iplum etenim purgans medicamentum ut
+<lb/>quod exiguum sit, ad ventriculi fundum pervenit; in transitu
+<lb/>autem stomachus, quantum ad superiorem ventriculi
+<lb/>partem attinet, non modo qualitatis medicamenti purgantis,
+<lb/>sed etiam substantiae inter transeundum adhaerescentia particeps
+<lb/>factus, vehementer ostenditur. Ad quod igitur cremor
+<lb/>ptisanae, si fuperbibatur, conducit, ut qui id quod
+<lb/>in transitu affixum applicatumque est, abstergere et deorsum
+<lb/>trahere, qualitatem vero medicamenti particulis insidentem
+<lb/>contemperare et alterare possit. Propter haec igitur post
+<lb/>purgantis medicamenti potionem ptisanam superIorbere jubet.
+<lb/>At ubi purgatio fieri inceperit, non amplius ptisanam
+<lb/>dari suadet, timens ne purgantis medicamenti actio dissolvatur.
+<lb/>Porro alvus nonnunquam dato medicamento quod
+<pb n="11.355"/>
+<lb/>purget non excernit, vel ob aegri naturae proprietatem, vel
+<lb/>ob medicamenti adhibiti pauritatem. Multoties autem et
+<lb/>stercus impactum, durum, in aliquo intestino, quod clystere
+<lb/>evacuari posset, antequam purgans medicamentum exhibeatur,
+<lb/>vacuationem impedit. Jam fieri potest ut natura
+<lb/>impetum ad urinas faciente purgans nihil proficiat. Interdum
+<lb/>face quum purgantia frustrata fuerint actione, praeterquam
+<lb/>quod nihil corpus laedunt, etiam alimentum animantis
+<lb/>fiunt; quaedam ad corruptionem et deleteriam convertuntur.
+<lb/>At quum omnia purgantia medicamenta ventriculum
+<lb/>vitient et praecipue ipsius os , eo quod maxime sit nervofum
+<lb/>et siensile, odoratorum mixtura excogitata est, ne sula
+<lb/>neque sincera ipsorum facultas os ventricusi attingat. Convenit
+<lb/>autem ea quae miscentur femina ejusmodi esse, quae
+<lb/>et malignitatem possint obtundere et actionem ipforum non
+<lb/>prohibere, attenuante et incidente facultate praedita, qua
+<lb/>orasses humores inridat et rias ipforum , per quas evacuantur,
+<lb/>adaperiant recludantque, At purgantia quae mifceufur,.
+<pb n="11.356"/>
+<lb/>sibi. invicem congenera esse et nulla ex parte dissidere
+<lb/>oportet. Dissident autem non quum aliud bilem verbi
+<lb/>causa,- aliud pituitam evacuat; ambo enim eodem modo
+<lb/>evacuari possunt; verum ubi hoc statim, illud multo postquam
+<lb/>assumptum est, purgationem movere solet: ita enim
+<lb/>inaequalis fit evacuatio ex. illis simul assumtis. Dito autem
+<lb/>inaequalem, quum una jam cessante vacuatione altera
+<lb/>rursus incipit.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

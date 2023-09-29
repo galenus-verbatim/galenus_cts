@@ -1,0 +1,2100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De elementis ex Hippocrate</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg008.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="413" to="508">413-508</biblScope>
+              <date>1821</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x01">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="46" to="59">46-59</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x01">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="1" to="31">1-31</biblScope>
+              <date>1638</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x03">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg008.verbatim-lat1">
+<pb n="1.413"/><pb n="1.413"/>
+<div type="textpart" subtype="book" n="1">
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE ELEMENTIS EX HIPPOCRATE
+<lb/>LIBER PRIMUS.</head>
+
+
+<p rend="indent">Quum elementum minima sit rei particula,
+<lb/>cuiuscunque fuerit elementum; minimum autem non idem
+<lb/>sensui et appareat, et revera sit; multa siquidem prae
+<lb/>tenuitate fenfum effugiunt: liquet, sensum eorum minime
+<lb/>forejudieem, quae et natura, et vere fiunt rei uniuscujusque
+<lb/>elementa. Nam si aeruginem, cadmiam, spumam argenti,
+<lb/>et mify, simul omnia plane triveris et in pulverem
+<lb/>redegeris , et mox sensui discernenda commiseris :
+<lb/>tibi profecto ea univerfa unum esse videbuntur. Nec
+<lb/>modo haec quatuor, verum et alia longe etiam plura,
+<pb n="1.414"/>
+<lb/>si eadem tamen ratione omnia invicem commisceas, sibi
+<lb/>unum esse videbuntur, quantumlibet unum minime sint.
+<lb/>Quamobrem et Hippocrates, quum ejuscemodi humanae
+<lb/>naturae elementa consideranda instituisset, neglectis his,
+<lb/>quae prima sensus judicium simplicissimaque habentur, illa
+<lb/>statim, quae vere et secundum naturam talia sunt, isvestiganda
+<lb/>proposuit: quippe quum ea (ut alibi a nobis
+<lb/>monstratum est) curandis morbis nihilo minus usui sint,
+<lb/>quam haec , quae sensui hujuscemodi apparent. ltaque
+<lb/>concesserit fortasse quispiam, haec familia videri eismenta,
+<lb/>existere vero, non item. Neque enim, fi quippiam
+<lb/>visum fuerit prima rei cujusvis simplicissimaque
+<lb/>particula, illud statim est etiam verum elementum, sed
+<lb/>quod ex ipsa rerum natura habet , ut tale siti Quoniam,
+<lb/>id si statuerimus, vel natura esse elementum, quod casusque
+<lb/>rei minima videatur atque simplicissima particula,
+<lb/>alia nimirum aquilae, et lynci, aut fi quis homo fit alterumve
+<lb/>quodpiam animal, quod visus acumine maxime
+<lb/>praestet , et alia nobis ipsis videbuntur elementa. Re
+<lb/>igitur sic agamus, sed ea inquiramus (si naturae aut
+<pb n="1.415"/>
+<lb/>humanae, aut cujusvis alterius rei exactam scientiam
+<lb/>assequi voluerimus), quae natura prima et simplicissima
+<lb/>stat, quaeque .in alia non amplius dissolvi possunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Quaenam igitur est inventionis horum
+<lb/>anthedus? Nulla, ut quidem mea fert sententia, praeter
+<lb/>eam, quae ab Hippocrate est instituta; nempe ut
+<lb/>primum fit disquirendum, an elementum unum quippiaut
+<lb/>fpecie sit, vel plura potius, varia et tibi invicem
+<lb/>ditsimilia. Quod si non esse unum, sed multa variaque
+<lb/>et dissimilia visum fuerit, quaerendum erit fecundo loeo,
+<lb/>quot illa sint, et quae, et qualia, et quam tandem
+<lb/>inter fe habeant communionem. Quod igitur primum id
+<lb/>elementum, ex quo tum nostrum, tum aliorum omnium
+<lb/>corpora constant, nequaquam sit unum, ex his monstrat
+<lb/>Hippocrates. et melius forsitan fit illius dictionem prituum
+<lb/>adscribere , ac ita mox illam exponere. Ego autem
+<lb/>statuo, quod, si homo esset unum, neutiquam dolea
+<lb/>ret; neque enim,si unum foret, esset ex .quo doleret.
+<lb/>Praestantissime pariter (mea quidem sententia) ac brexissime
+<pb n="1.416"/>
+<lb/>universae suae demonstrationis momentum expusuit,.
+<lb/>qua demonstrandum erat, fieri non posse, ut eismentum
+<lb/>sit specie et potestate unum. lam enim sutis
+<lb/>patet, esse extremae cujusdam absurditatis, et hominis
+<lb/>praeterea, qui nullam rerum evidentium rationem habeat,
+<lb/>statuere, ens esse numero unum ; ut tamen inveniri
+<lb/>facile possint aliqui, qui affirment, omnia potestate ao
+<lb/>specie esse unum, quemadmodum Epicurea et Democritus
+<lb/>individua ea corpora, quae atomos appellanti In
+<lb/>quo item ordine reponendi sunt illi, qui minima quaedatu
+<lb/>et incompacta et imputribilia introducunt elementa.
+<lb/>Itaque adversus hos omnes Hippocrates, communi
+<lb/>opposita ratione; demonstrat, elementum non esse unum,
+<lb/>unum, inquam, tum forma, tum potestate: alioqui enim
+<lb/>eorum ne meminisse quidem voluit, qui omnia etiam
+<lb/>numero esse unum autumant, quod id videatur hominis
+<lb/>esse omnino stupidi. Perpendamus ergo, rectene ille
+<lb/>ratiocinatus sit, atque num merito illis contradicat, qui
+<lb/>asserunt, elementa esse unum natura, ut illis deinde
+<pb n="1.417"/>
+<lb/>liceat id veI atomum appellare, vel minimum, vel
+<lb/>ἄἔαρμσν, quasi incompactum dixerit, vel impartrbile, vel
+<lb/>quod tandem ipsis magis gratum fuerit. Quoniam, si sslud,
+<lb/>quod his omnibus sectis in universum commune est,
+<lb/>everterimus, non erit amplius nobis opus particulatim
+<lb/>eorum differentias persequi. Nempe subiicitur ab his
+<lb/>omnibus, primum elementum usque adeo esse omni penitus
+<lb/>qualitate vacuum , ut nullam vel albedinem innatam
+<lb/>habeat, vel nigredinem, Vel alium quempiam colorem;
+<lb/>non dulcedinem, non amaritudinem; sed neque
+<lb/>calorem, neque frigus; et tandem ut cujusvis alterius
+<lb/>qualitatis sit omnino expers. Lege enim, dicebat Democritus,
+<lb/>color est, lege amarum, lege dulce; vere autem atomus
+<lb/>et vacuum est. Credidit enim ille, sensiles qualitates ex individuorum
+<lb/>illorum corpusculorum conventu per solam ad
+<lb/>nos, qui sentiamus, collationem gigni ; ipsa vero natura
+<lb/>nihil esse album aut nigrum, flavum aut rubrum, amarum
+<lb/>aut dulce. Quippe hoc illi lege, ut ipse inquit,
+<lb/>significabat, ex nostra nimirum existimatione, non ex
+<lb/>ipsa rerum naturat ita etiam illi ἐτεῆ nomen ab ἐτεὸν
+<pb n="1.418"/>
+<lb/>deductum est, quod verum significat; ut universi ferinoriis
+<lb/>illius is saulus sit. Arbitramur quidem nos botrines,
+<lb/>quippiam esse album, veI nigrum, vel dulce, vel
+<lb/>amarum , et quaecunque alia huiusce generis sunt, fid
+<lb/>revera omnia unum funi et nihil. Nam et ille hoc lo..
+<lb/>quitur modo, qui atomos unum appellat, vacuum autem
+<lb/>nihil. ltaque atomi omnes, quae exigua quaedam corpuscula
+<lb/>sunt, omni prorsus qualitate vacant. Vacuant
+<lb/>vero spatium quoddam est, in quo ea omnia corpuscula
+<lb/>furtum atque deotfum agitata perpetua motione, quindoque
+<lb/>simul fecundum aliquem modum complicantur,
+<lb/>nonnunquam mutua inter sese collisione resiliunt; quo
+<lb/>fit postea, ut ex hujusmodi eorum conventu et mutuae
+<lb/>concretiones fiant, atque iterum secretiones; unde voluit
+<lb/>ipse cum aliorum omnium , tum nostrum quoque
+<lb/>ipsorum coagmentari corpora, atque eorum cum affectus,
+<lb/>tum sensus. Statuunt autem prima haec corpora impa.
+<lb/>tlbilia esse. Sed nonnulli deinde ex ipsis, ut Epicurei,
+<lb/>ea prae duritie infringi non posse autumant; alli, qui
+<pb n="1.419"/>
+<lb/>magis Leucsppo addicti sunt, in exilitatem referunt,
+<lb/>quod nuIlam admittant sectionem. Negant praeterea
+<lb/>quoquo modo ea posse quapiam ex his altercationibus alterari,
+<lb/>quas tamen caeteri sere omnes fatentur vel ab
+<lb/>ipsis sensibus edocti. Quippe qui nolint eorum quiaquam
+<lb/>calefieri, aut refrigerari, pariterque nec humectari,
+<lb/>vel siccari, atque adeo longe etiam minus nigrescere,
+<lb/>aut albescere; ut tandem contendant, nullam prorsus ex
+<lb/>ulla mutatione qualitatem suscipere posse. .Iure ergo
+<lb/>illis contrarius est Hippocrates, dum ait, nunquam hominem
+<lb/>doliturum, si haec esset illius natura; quum
+<lb/>mehercule necesse sit, ut id, quod doleat, duabus his
+<lb/>praeditum sit facultatibus; porro ut sit cum sensus, tum
+<lb/>alteratione capax. Quia, si ab omni penitus sit alteratione
+<lb/>alienum , eundem omnino statum , quem a principio
+<lb/>sortitum est, perpetuo servabit: at eundem id, quod
+<lb/>dolet, minime servat. Quod li transmutetur etiam, in
+<lb/>quem tamen modum lapides, et ligna, quae quidem et
+<lb/>calefiunt, et refrigerantur, et scinduntur, fed nulla sit
+<pb n="1.420"/>
+<lb/>illis innata vis sentiendi, nihil propterea magis allectio.
+<lb/>nes, si quae in eo gignantur, poterit, quam lapidet,
+<lb/>fentire. Quum igitur utrumque horum in illis norunt
+<lb/>elementis desideretur (nam neque eam naturam coriequina
+<lb/>sunt eiuscemodi individua corpuscula, ut vel alterari
+<lb/>vel sentire possint)., si ex his atomis, vel quassant
+<lb/>alia simplici ac uniformi natura essemus concreti, nun
+<lb/>utique doleremus; dolemus autem; quare jam manifestant
+<lb/>est, quod nequaquam simus ex ulla simplici uniformique
+<lb/>substantia constituti. Haec est hujusce rationis fati.
+<lb/>ma, quae ut . est admodum his, .qui in logica disciplina
+<lb/>exercitati sunt, aperta, ita propositum etiam hoc fere
+<lb/>modo concludit. Sed quoniam .ii , qui talia introducunt
+<lb/>elementa; non modo sunt disciplinae disserendi rudes,
+<lb/>et praeterea contentiosi , verum et sibi malo fore existi.
+<lb/>man t, si vel in melius sententiam mutaverint: comunt.
+<lb/>nem hanc rationem particularibus aliquibus exemplis
+<lb/>illis .exponamus. Nimirum si quis cutem acu tenuissima
+<lb/>pungat; dolebit animal; acus vero vel unam tantum attinget
+<lb/>atomum, vallinas, veI etiam plures. Sed pons.
+<pb n="1.421"/>
+<lb/>tuus primum, unam tetigisse. At nulla atomus est pene-.
+<lb/>habilis fensnsve capax: non igitur ab acu quicquam patietur:
+<lb/>neque, etiamsi pateretur, illatam noxam propterea
+<lb/>sentiret. Quum enim ex his . duobus imprimis proveniat,
+<lb/>ut aliquid doleat, nempe ut, quod patibile est,
+<lb/>patiatur, atque ut impressas affectiones persentiat; utrius..
+<lb/>que vero istorum sint atomi expertes : profecto , si acus
+<lb/>unam tantum atomum pupugerit, nequaquam animal dorehitr
+<lb/>Fingamus ergo, non amplius unam, sed duas tetigisse.
+<lb/>Atqui statim illa eadem, quae nuper de una, de
+<lb/>duabus etiam poterimus pronunciare. Nam si earum
+<lb/>neutra ex acu fuerit vulnerata, aut, si .etiam vulneretur;
+<lb/>aulia alioquin illis vulnus id sentiendi vis infit: is,
+<lb/>qui pungitur, omni prorsus sensu atque dolore carebit.
+<lb/>tjuemadmodum enim nihil habet acus, cur magis sentiatar,
+<lb/>quum duobus impingitur ossibus, aut duabus cartiliminibus,
+<lb/>aut totidem etiam vel capillis vel quibusque
+<lb/>aliis particulis sensu vacuis; duo siquidem capilli aeque
+<lb/>finia carent, ac unus; ita etiam (ut equidem arbitror)
+<lb/>nihilo magis acus, quae duobus illis individuis corpusculis
+<pb n="1.422"/>
+<lb/>infigitur, si ne alterum quidem ipsorum fit tensa
+<lb/>praeditum, ullum excitabit dolorem. Eadem vero fequeutur
+<lb/>incommoda,- si tria dixerimus vel quatuor teligisse ;
+<lb/>. quippe quia nullam majorem operam ad patiendi
+<lb/>vel sentiendi rationem haec conferre possunt, quam totidem
+<lb/>calculi, vel lapides, vel villi ;. quum fieri nequeat,
+<lb/>ut, si quid ex impatibilibus et lentus expertibus coragonatur,
+<lb/>rensus particeps patibileque tandem evadat: miruna
+<lb/>etenim esset, fi totum et pati et sentire posset, ca.
+<lb/>jus tamen pars nulla aut sentiret, aut pateretur.. Quum
+<lb/>enim duo sint instrumenta, quibus hujuscemodi pratumtiata
+<lb/>invenienda sunt, experientia, inquam, et ratio;
+<lb/>neutrum horum unquam ita illis inserviet, ut aliquid
+<lb/>sint reperturi concretum ex his, quae pariter impatibi-lia
+<lb/>et sine sensu sunt, quod ipsum deinde patibile sit
+<lb/>atque sensus particeps. Porro fi multos adamantes aut
+<lb/>alia quaevis corpora minus etiam ad patiendum idonea
+<lb/>in acervum coacta ferire volueris; nunquam sane .va
+<lb/>acervo ex bis constituto plagam infliges, aut illatam ille
+<lb/>sentiet; nempe nec perpetuis etiam seculis tale quippiam
+<pb n="1.423"/>
+<lb/>poterit unquam experientia reperiri. Atqui ostendimus
+<lb/>paulo antea, quod ratio quoque huic sententiae minime
+<lb/>consentiat. lam enim quis non admiretur, si caro, dum
+<lb/>pungitur, doleat, cujus tamen nulla veI minima particula
+<lb/>aut peri oratur, aut dolet? vel quae unquam ratio
+<lb/>reperietur, quae hoc admittat? into hoc quidem affirmaverim,
+<lb/>quod, quantumlibet illae omnes atomi insitum
+<lb/>haberent sensum, fed essent inpatibiles atque impenetrabites,
+<lb/>ita ut tantummodo ex mutuo earum complexu
+<lb/>caro gigneretur, nihil propterea magis impactam acum
+<lb/>sentiret. Ut enim, fi duos digitos simul jungas, qui ta-.
+<lb/>men sentiendi facultate pollent, ac mox eosdem disjungas,
+<lb/>id absque ullo prorsus dolore feceris: ita etiam (ut
+<lb/>arbitror), si acus atomos dissolvat, aut divellat, modo exi
+<lb/>illis nullam vulneret, nullum unquam in animante dolorem
+<lb/>excitabit. Vel illi nobis hoc ostendant, quando
+<lb/>ex mutua solummodo aliquorum sentientium corporum
+<lb/>commistione ac earumdem deinde separatione ullus unqaam
+<lb/>subsequatur dolor. Nunquam protecti, tale quippiam
+<pb n="1.424"/>
+<lb/>poterunt ostendere, si quae evidentia sunt sequi
+<lb/>voluerint; atque etiam, si rationem , nihil sane ollendent,
+<lb/>quod hoc ipso minus sieri posse videatur. Quum igitur
+<lb/>tum ratio, tum experientia testetur, quod, quanunnlibet
+<lb/>atomis sensum concesserimus , eorum tamen separatio sit
+<lb/>absque dolore sutura; qui sieri quaeso poterit, ut, li eas
+<lb/>praeterea tenso orbatas ponamus, dolere possint? Necessc
+<lb/>enim est, ut paulo ante testati Iunius, duo haec
+<lb/>simul concurrere, ut aliquid doleat, alterationem , inquam,
+<lb/>et sensum; utroque autem carent atomi. Rationi
+<lb/>igitur consonum est, quamvis eorum alterum atomis concesseris
+<lb/>, adhuc tamen eas indolentiam servare. Etenim
+<lb/>si eas impatibiles quidem, sed sensus participes suppo..
+<lb/>nas: nequaquam dolebunt, propterea quia noti patientur.
+<lb/>Quod si pati etiam, verum ita, ut sensus sint expertes
+<lb/>, minime dolebunt, quum minime sentiant; quum
+<lb/>opus sit, ut ante diximus, corpus, quod doliturum sit,
+<lb/>pati atque allectionem persentire. Quare fleti nequit,
+<lb/>ut corpus Facultate sentiendi praeditum ex elementis
+<lb/>ortum habeat, quae pariter impatibilia sensusque experua
+<pb n="1.425"/>
+<lb/>sint; sed neque impatibilibus quidem, verum sensu
+<lb/>praeditis. Nam neque hoc esse in dolore nequam poterit,..
+<lb/>quum non patiatur; erit enim forsitan potestate
+<lb/>sentiens, sed actu nunquam. Quemadmodum sane et
+<lb/>nostrum corpus videmus, quod, quantumlihet manifesto
+<lb/>esiam vim habeat sentiendi, attamen minime sentit, nisi
+<lb/>ab aliquo prius patiatur. Unde et ex hac eadem ratione
+<lb/>clare eorum sententia evertitur, qui inter elementa
+<lb/>homoeomerias (quasi similaritates dicas) introducunt.
+<lb/>Quamvis enim in his ipsorum elementis aliqua sint, quae
+<lb/>vim fentiendi habeant; tamen, quum prorsus sint impatibilia,
+<lb/>nescio quo modo ientiet corpus, quantumlibet sensa
+<lb/>praeditum sit, quod semper futurum est extra omnem
+<lb/>patiendi occasionem. Reliquum igitur erit, ut sentiens
+<lb/>corpus vel ex bis sit, quae pariter vim habeant senfiendi
+<lb/>et. patiendi, vel ex his, quae pati quidem possint,
+<lb/>sed nullum deinde tensum habeant. Nos autem mox perpendemus,
+<lb/>utrum horum verum siti Porro aperte. jam
+<lb/>monstravimus, quod nequeat corpus ullum vi senfitrice
+<lb/>donatum ex elementis gigni simul impatibilibus et sensu
+<lb/>carentibus vel sensu quidem praeditis verum impafissilibus.
+<pb n="1.426"/>
+<lb/>Habent hoc nimirum ambae hae tectae commune,
+<lb/>quod elementa impetibilis statuant. Quodsi elementum
+<lb/>non potest esse impetibile, non erit etiam fpecie
+<lb/>unum; nam neque longiori egemus demonstratione
+<lb/>ad ostendendum, unum esse impetibile; quippe quia,
+<lb/>quotiescunque unum fuerit elementum, nihil praeterea
+<lb/>reliquum erit, in quod transmutari, nihil, a quo pati
+<lb/>possit. Quicquid enim transmutatur, in alterum quip.
+<lb/>piam transmutatur, et quod etiam patitur, ab altera patitur.
+<lb/>Sed quomodo quaeso unum deinde servabitur?
+<lb/>Probe ergo Hippocrates ratiocinatus est, non esse unum
+<lb/>elementum, si res ulla futura sit, quae doleat; nihil erint
+<lb/>erit (ait ille), ex quo doleat, si unum fuerit. Quo sit
+<lb/>deinde, ut elementa omnino sint plura uno.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Verum quotus sit universus ipsorum nurnerus,
+<lb/>hactenus incompertum est. Quare id deinceps
+<lb/>exquiramus. Sed satius sorsitan erit, .de reliquis suabus
+<lb/>siectis, quarum meminimus prius, disserere, quiLus
+<lb/>commune erat, corpus, quod dolere possit, ex his
+<pb n="1.427"/>
+<lb/>primis elementis constituere, quae sint allerationi obnoxia.
+<lb/>Ex divisione enim reperies, omnes opiniones in
+<lb/>quatuor redigi posse ; ita ut prima ea sit , quae ex V
+<lb/>fenta vacuis pariter et impatibilibus; altera., quae
+<lb/>senfu quidem praeditis, sed impatibilibus. Quae ambae
+<lb/>in hoc consentiunt , quod ex impatibilibus statuant;
+<lb/>atque ostendimus, quod hoc esse minime possit, et proinde
+<lb/>eas utrasque missas fecimus. Unde duae supererant;
+<lb/>altera , quae corpus sentiens ex primis elementis facaltatem
+<lb/>cum patiendi tum sentiendi habentibus constituit;
+<lb/>altera, quae ex patibilibus, sed sensus expertibus;
+<lb/>inter quas item ea est communio, qua ambae
+<lb/>ex patibilibus aiunt. lam igitur inspiciamus, an barum
+<lb/>sectarum impossibilis sit altera; an potius aeque utraque
+<lb/>aliquid proferat; quod possibile sit, ut tamen mox
+<lb/>inquiramus , utra earum , , praeter id quod eam proferat
+<lb/>sententiam , quae sit possibilis , veritatem etiam
+<lb/>maxime contineat Itaque si animum diligenter adverteris,
+<lb/>ambas invenies id quod possibile sit proferre.
+<lb/>Si namque ipsas particulas explorare volueris , . rationeque
+<pb n="1.428"/>
+<lb/>examinare, eae, quae corporum sunt vim sentiet:.
+<lb/>di habentium , omnes et patibiles sunt , et sentiendi
+<lb/>facultate praeditae, ut in carne paulo antea exposuimus.
+<lb/>Quod si prima respexeris elementa, facile fieri poterit,
+<lb/>ut, quamvis ea nullum habere tentum supponatur, modo
+<lb/>possint in fe mutuo multisariamque et agere et pati,
+<lb/>aliquod inde, multis intercedentibus particularibus alterationibus
+<lb/>, corpus sensu praeditum gignatur. Quotiescunque
+<lb/>enim ex pluribus quippiam componitur, si
+<lb/>ea, quae in compositionem veniunt, qualia stant, talia ad extremunt
+<lb/>usque duraverint; nunquam id profectu novam
+<lb/>ullam ad venti tiamque. adipiscetur formam , quae in
+<lb/>his non praefuerit, e quibus constituebatur. Quod si
+<lb/>ea multifariam varientur, transmutentur et altercatur,
+<lb/>poterit tunc in composito aliquid suboriri, quod ab
+<lb/>his, quae prius in primis illius elementis reperiebam
+<lb/>tur, sit generis alterius. Sed erit forsitan operae
+<lb/>pretium, perspicuitatis gratia hanc exemplo rationem
+<lb/>explanemus. Aedes nimirum, quae ex lapidibus, latevibus,
+<lb/>lignis, tegulisque constructae sunt, nihil esse
+<pb n="1.429"/>
+<lb/>adeptas dicimus, quod non eodem genere contineretur,
+<lb/>quo ea, quae illis praeerant, unde aptae fabricatae
+<lb/>fant. Durities quippe illis universis sigillatim aderat
+<lb/>gravitasque et magnitudo , .. praeterea figura et color,
+<lb/>quae omnia nec in ipso etiam aedificio desiderantur.
+<lb/>stata duritiem quidem ac gravitatem coloretnque
+<lb/>eundem prorsus cum his habet, e quibus constitutum
+<lb/>est; neque enim id molle est, quum tamen illa. dura
+<lb/>fuerint; aut leve hoc, illa vero gravia; aut hoc atrum,
+<lb/>et illa candida; sed figuram et magnitudinem ob id quidem
+<lb/>habent aedes, quia prius ea habebant, unde illae
+<lb/>compositae funt: verum non eandem omnino aut sisuram
+<lb/>aut magnitudinem habet totum aedificium,
+<lb/>quam partes id componentes habuerunt. At neque hoc
+<lb/>est id, quod quaerimus, an, inquam, domus sit letevibus
+<lb/>major, vel an ea sit oblonga, quum lateres
+<lb/>sint quadrati ; sed potius , an haec propterea sit figurae
+<lb/>particeps ac magnitudinis, quia .haec in his, unde
+<lb/>constituta est, praeerant. Alioqui .enim quis est:, qui
+<lb/>nun norit, rectam lineam ab- angulo ad angulum duetam
+<pb n="1.430"/>
+<lb/>in duos triangulos secare quadratum spatium? qti
+<lb/>deinde duo trianguli, si item in unum coeant, quadratum
+<lb/>iterum absolvunt, ut tamen tam triangulus, quam
+<lb/>quadratum figurae sint; praeterea si duo semicirculi simus
+<lb/>fungantur, integrum circulum complent.. Et proinde
+<lb/>concedimus, posse quidem ex aliis aliud quippiam
+<lb/>gigni, verum non quod ab illis genere divertam sit; sigurarum
+<lb/>enim figurae effectrices sunt, miuoresque maghitudines
+<lb/>malorum ; at figurae magnitudinum, vel
+<lb/>magnitudines figurarum nequaquam. Quare nequit ex
+<lb/>elementis , quae tuas qualitates usquequaque immutatas
+<lb/>fervent, quicquam generis diversi gigni, sed, fi transutatentur,
+<lb/>Iane poterit. Poterit enim, quod hactenus nigrum
+<lb/>fuit, per multas transmutationes medias iterum album
+<lb/>fleri, et quod nunc album, mox fieri nigrum, quod
+<lb/>praeterea lentus expers estl, illius fieri particeps. Unde
+<lb/>qui ex igne, aqua, aere et terra, invicem tiansmutatis.
+<lb/>atque alteratis, et ad temperamentum quoddam redactis,
+<lb/>gigni corpus volunt sensitrice facultate praeditum,;
+<pb n="1.431"/>
+<lb/>hi consentanea pronuntiant. Quivero ex illis
+<lb/>ista ut sunt permanentibus et permixtis tantummodo;
+<lb/>perinde ac triticum, hordeum, eiceres et fabae, in
+<lb/>acervo; hi nimirum ea, quae fieri nequeant, sectantur.
+<lb/>stant nec prorsus quicquam interest, si dicas, ex solo
+<lb/>ignis, aquae, aeris .terraeque conventu corpus sentieus
+<lb/>natet, aut si ex atomis, quod prisci illi affirmabant
+<lb/>Iam enim nullum corpus, quod tensum habeat,
+<lb/>potest ex pluribus elementis constitui simul coeuntibus,
+<lb/>quae tamen impatibilia sint, quum sit monstratum, nihil
+<lb/>in his simul compositis oriri posse generis alterius.
+<lb/>densus vero est omnino e genere diverto a figura, gravitate
+<lb/>et duritie, quae atomis inerant, et ab aliis
+<lb/>queque, quae igni , r et terrae , aerique et aquae ; est
+<lb/>enim lenius alterius cuiusdam generis a colore, sapore,
+<lb/>et odore, et caeteris tandem, quae (ut omnia in
+<lb/>unum colligam) corporibus insita sunt. Non ergo aut
+<lb/>et atomis corpus aliquod, quod vim fenfitricem habiat,
+<lb/>procreari poterit, aut ex igne, et terra, aere,
+<pb n="1.432"/>
+<lb/>et aqua, quae immutata permaneant, ^et talia semper,
+<lb/>qualia ex sua ipsorum natura sunt, nihilque unquam
+<lb/>patiantur. Quare vel ex elementis primis, quibus vis
+<lb/>sentiendi insit, jvel ex illis, quae, licet hac careant,
+<lb/>ea tamen natura sunt, ut alterari et transmutari possint,
+<lb/>erit necesse corpus constitui, quod sensu praeditum
+<lb/>sit. His igitur, et quod uno plura sint omnino
+<lb/>elementa, atque etiam quod pati possint, monstratum
+<lb/>sit. An vero ex his primis elementis, quibus omnibus
+<lb/>vis insit sentiendi, an ex illis potius, quae ea careant,
+<lb/>quum et utrumque horum fieri posse affirment, nondum
+<lb/>monstratum est. Porro nonnulla quidem omni
+<lb/>carere sensu, inde perspicuum est, quod quaedam
+<lb/>etiam concreta hujusmodi sint. Sed quum hoc jam sit
+<lb/>demonstratum, quantum possit iis sufficere, qui didicerunt
+<lb/>demonstrationibus acquiescere, operae pretium sana
+<lb/>erit, ut mox id exponamus, quod non semel, sed
+<lb/>multis in locis commentariorum Hsppocraticorum ostendimus:
+<lb/>ille enim, li aliquando unum quippiam ex eorum
+<lb/>numero proserat, quae eandem naturam continent,
+<lb/>reliqua deinde, quae eandem vim habent, nobis ad
+<pb n="1.433"/>
+<lb/>rationem addenda reliquit. Quod mihi hom quoque loco
+<lb/>servasse videtur, utpote qui ab uno quidem apparente
+<lb/>ducto argumento opinionem hanc nequaquam postibiIem
+<lb/>esse ostenderit, moxque nobis locum reliquerit, ut
+<lb/>id ipsum multifariam ex his , quae eandem cum hoc
+<lb/>vim tenent, demonstraremus. In his enim, quae in nobis
+<lb/>apparent, id unum est, quod nos dolemus^ hoc
+<lb/>vero monstravit minime fieri posse, quin etiam patiamur.
+<lb/>Ex quo sequebatur postea, elementa esse plura
+<lb/>uno, siquidem unum pati nequit, quum nihil praeterea
+<lb/>relinquatur, quod ipsum afficiat. In quem igitur
+<lb/>modum ille ex dolentibus corporibus, in eundem
+<lb/>tu ex his, quae in voluptate sunt, ad hoc idem demonstrationem
+<lb/>depromas; et ut ex his, ita ex illis,
+<lb/>quae sentiunt. Nam et hoc ita a me dedita opera
+<lb/>identidem in hoc libro factitatum est. Unde si nulla
+<lb/>voluptas consequi poterit, ubi impatibilia suerint elementa,
+<lb/>nullusque dolor, ac nullus praeterea sensus:
+<lb/>nulla etiam aderit veI memoria, vel reminiscentia,
+<lb/>vel imaginatio, quum horum omnium sensus sit quasi
+<lb/>radix et fons. At si nihil horum, nulli quoque animi
+<pb n="1.434"/>
+<lb/>functio, et tandem nec ipfe etiam animus. Quis
+<lb/>igitur non admiretur priscorum virorum brevitatem
+<lb/>in lententiis? Nam haec omnia Hippocrates quibusdam^
+<lb/>vel paucis verbis perstrinxit, et valide admodum monstravit,
+<lb/>elementum non esse unum. Verum ut haec
+<lb/>exposita sunt,. transeamus ad alia, et inspiciamus, quo
+<lb/>modo ipse priori rationi sequentem annectat; universa
+<lb/>vero verborum ejus series hoc se habet modo. Ego
+<lb/>autem statuo, quod, si homo esset unum, neutiquam
+<lb/>doleret; nihil enim praeterea esset, ex quo doleret,
+<lb/>si esset unum. Si tamen doleret, esset necesse, et medicamentum
+<lb/>fore unum.<space type="tab">    </space>Si unum (inquit ipfej esset</p>
+<p>homo, minime doleret; quod si doleret, id etiam,
+<lb/>quod illi remedio est, unum esset. Secundum eundem
+<lb/>figurae syllogifticae modum rationem ex curatione
+<lb/>interrogat, fecundum quem et ex dolore depromptam
+<lb/>prius interrogavit. Assumit enim secundum , quod est
+<lb/>primi consequens, cui deinde adiiciens oppositum consequenti
+<lb/>, . tandem concludit oppositum antecedentis.
+<pb n="1.435"/>
+<lb/>Nam si unum homo esset, non doleret; dolet autem;
+<lb/>non igitur est unum. Pari etiam modo rationem ex
+<lb/>curationis counitione desumptam interrogabimus. Si
+<lb/>homo esset unum, qui etiam doleret, modus illi medendi
+<lb/>esset unus ; fed medendi modus non est unus;
+<lb/>ergo si est unum homo, non dolet. Erunt itaque
+<lb/>partes nostrae, ut hunc etiam locum illo tractemus
+<lb/>modo, quo et priorem: quippe ut ostendamus, secum
+<lb/>dum primo consequens esse , atque etiam quod prebe
+<lb/>oppositum consequentis sit acceptum; ut sic et rationem
+<lb/>exponamus, et fidem illi, prout res ipsa poscere vi- detur,
+<lb/>asseramus. . Quum autem satis in superioribus
+<lb/>monstratum fit; quod homo, si unum esset, nunquam
+<lb/>doleret, nunc, quod positu etiam, quod ipse. doleret,
+<lb/>unica tantum sit futura curandi ratio, facile intelliges,
+<lb/>si cogitaveris, quod, si quid a .nulla. re externa pati
+<lb/>potest, reliquum est,. ut tantum interne a sua ipsius
+<lb/>natura patiatur. At vero quum unica fuerit ipsa rei
+<lb/>uniuscujusque natura, unicus etiam statim futurus est
+<pb n="1.436"/>
+<lb/>assectus. Hoc vero ex necessitate sequitur, quod ratio
+<lb/>redeundi in naturalem statum unica sit; at hoc quid.
+<lb/>aliud est, quam ipsinnet curatio ? quare, quod ipsimi
+<lb/>per fe patitur, unicam habebit, qua curari possit, rationem,
+<lb/>sicut unicum etiam est id, quod- curandum
+<lb/>est:. Quae omnia quam aperte falsa sint, nulla nostra
+<lb/>expositione praeterea egent ; led ea primam suppositionem
+<lb/>sequuntur, quam Hippocrates ex abundanti, quamvis
+<lb/>ea ipsa omnes limites excederet eorum, quae
+<lb/>quoquo modo esse possint, introducere voluit, utpote
+<lb/>quia nihilo minus ex hoc etiam supposito id conficistur,
+<lb/>quod ab initio fuerat propositum. Nam quod
+<lb/>nos non doleremus, si unum esset elementum, veriffimum
+<lb/>esu Sed nun ita deinde est verum, si unum
+<lb/>supponatur elementum se quod nos dolituri simus; attamen
+<lb/>ob id et ipsum supponitur, ut ex illismet, qui
+<lb/>hoc iptum suppositum sequuntur , ostendat, principium
+<lb/>illud everti, quum unicus tunc futurus sit morbus,
+<lb/>atque etiam unica medendi forma et unicum praeterea
+<lb/>remedium; fed non unicum est remedium; erit ergo
+<lb/>hypothesis falsa, in qua subiiciebatur unum esse elementum.
+<pb n="1.437"/>
+<lb/>satis enim evidens est, non unicum esse
+<lb/>remedium, quum multi, dum calefiunt, sanitati restituantur;
+<lb/>nec minus etiam reperiantur, qui refrigerati ex
+<lb/>morbo convaluere, vel humectati ; nec- desunt etiam,
+<lb/>quos exiccautia juverint; nec praeterea , quia aliqui
+<lb/>funt acerbis aut amaris medicamentis curati, idcirco
+<lb/>etiam omnes; sunt enim qui duicibus , vel salsis;
+<lb/>atque etiam ut multi his usi, quae alvum astringunt,
+<lb/>iti alii his , quae eandem cient, fani evasere; et
+<lb/>sicut alii densantibus, ita nonnulli rarefacientibus f ut
+<lb/>tandem innui versum hoc affirmare liceat, nullum untuam
+<lb/>reperiri curandi modum, quin et alter illi constatius
+<lb/>statim reperiatur- . Recte igitur asseruit, remelium
+<lb/>non esse unum. Atqui ex hoc ipso pruuuncisto,
+<lb/>et altero, quod ex suppositione desumptum est,
+<lb/>edicitur, non esse elementum unum; ut tandem univeriam
+<lb/>rationem hoc fere modo interrogare oporteat. Si
+<lb/>homo et esset unum et etiam doleret, modus quoque,
+<lb/>quo esset curandus, unus foret: modus vero, quo ,
+<pb n="1.438"/>
+<lb/>curatur, nequaquam est unus igitur nec homo, fi
+<lb/>est unum, dolet. Itaque nihil amplius aut ea, quae
+<lb/>circa hujus operis initia inducta fiunt, inquirere, aut
+<lb/>praeter haec, quae nunc a nobis dicta sunt; alia
+<lb/>quapiam exposititme erit opus , quum ex his facile hujus
+<lb/>viri sententiam habere possimus. Ipse vero ait:
+<lb/>Quicunque eos consueverunt audire, qui de natura humana
+<lb/>disserunt, procul ab eo quod ad medicinam allineat,
+<lb/>illos minime expedit hunc audire sermonem; neque
+<lb/>enim dixerim, hominem esse omnino aerem, neque
+<lb/>ignem, neque aquam, neque terram , neque aliquid
+<lb/>aliud, quod non in homine unicum esse appareat Quae
+<lb/>non eo legenda sunt modo , ut ὲνεον simul ac leni fpiritu
+<lb/>proferatur, quasi unica sit pars orationis, quemadmodutn
+<lb/>multi ex Hippocraticis legere soliti sunt,</p>
+<p>sed potius aspirantes, et in partes duas dividentes, ac
+<lb/>si ita dixerit: Neque enim dixerim, ipsum hominem
+<lb/>esse usquequaque aerem , neque ignem , neque aquam,
+<lb/>neque terram, neque aliquid etiam aliud, quod non appareat
+<pb n="1.439"/>
+<lb/>unum ac solum in homine existens. Nam
+<lb/>quod universus is sermo , quem ipsis priorem habuit,
+<lb/>ob id factus sit, ut probaret, elementum minime esse
+<lb/>unum, tum ex his ostenditur, quae ipse paulo antea
+<lb/>dixit, tum vel maxime ex his, quae statim circa initia
+<lb/>subiungit praecedenti sententiae , quum ait : Dicunt enim,
+<lb/>unum esse id, quod est, atque hoc et unum esse et
+<lb/>omne ; fed inter se non conveniunt deinde nominibus ;
+<lb/>nam ex eis aliqui hoc unum atque omne statuunt esse
+<lb/>aerem, alii aquam, alii terram, alii ignem. Item
+<lb/>paulo post: Ex medicis quoque nonnulli hominem autumant
+<lb/>esse suium sanguinem , quidam vero ipsorum
+<lb/>bilem arbitrantur esse hominem, aliqui pituitam. Post.
+<lb/>modum illos refellere aggressus eam dictionem protulit,
+<lb/>quam ego priorem exposui, quae in universum efficax
+<lb/>plurimum est tam contra medicos, quam contra naturales
+<lb/>philosophos. Mox vero seorsum medicos his
+<lb/>etiam verbis insectatur: Ego vero .censeo, opus esse,
+<lb/>illum, qui affirmet solum sanguinem esse hominem, nec
+<pb n="1.440"/>
+<lb/>quippiam praeterea aliud, ostendere -ipsum , nec for-.
+<lb/>mam. transmutare, nec alio etiam modo variari; et
+<lb/>ut- vel tempus aliquod auni vel aetatis monstret,. quo
+<lb/>unus solusque id homine sanguis conspici possit. Nam
+<lb/>consentaneum rationi videtur , ut aliquo saltem tempore
+<lb/>id, quod in ipso unum est, repraesentet- Et. eadem
+<lb/>ego illis opposuerim , qui volunt hominem salam esse
+<lb/>pituitam, nec non et illis, qui solam bilem. Ac
+<lb/>tandem finem huic rationi facturus haec iterum subinfert.
+<lb/>Necesse igitur primum est, generationem minime
+<lb/>ex uno fieri; qui enim poterit, quod unum est,
+<lb/>nisi alteri cuipiam commisceatur , aliquid aliud gignere?
+<lb/>Atque iterum deinde: Quo unquam modo rationi
+<lb/>consonum est, quicquam ex uno fieri, quum nec ex
+<lb/>pluribus etiam possit quicquam constitui, nisi ea ex
+<lb/>mutuo; temperamento probe se habuerint? Et rursus
+<lb/>postmodum: Quare necesse est, si hujusmodi sit natura
+<lb/>cum hominis , tum aliorum omnium , hominem non
+<lb/>esse unum. Denuoque in sequentibus: Necessarium
+<pb n="1.441"/>
+<lb/>igitur est, quum adeo inter. te et specie et potestate
+<lb/>differant, ea non. esse unum, nisi ignis quoque et aqua
+<lb/>unum fuerint. Itaque in omnibus his et praeterea in
+<lb/>sequentibus etiam nihil aliud agit, praeterquam quod
+<lb/>eos aperte insectatus , qui unum esse elementum decernuut.
+<lb/>. Quare patet, quod idem etiam agit, dum statim.
+<lb/>circa principia hujus sermonis, quae nos etiam
+<lb/>exposuimus, ea profert: hominem, inquam, non esse
+<lb/>solum aerem, neque ignem, nec quicquam aliud, quod non.
+<lb/>in corpore unum esse appareat. Nam et ea parte,
+<lb/>qua ipse. ait; Mihi videntur hi, qui hominem esse unum
+<lb/>autumant, in bane venisse sententiam; explicat, unde
+<lb/>nonnulli inducti sint, ut dicerent, hominem esse
+<lb/>unum. Quos quum mox etiam refellit inquiens: Atqui
+<lb/>primum nullus unquam ex superfluente purgatione
+<lb/>mortuus solam bilem excrevit; nec non .quum de eaeturis
+<lb/>humoribus, de quibus mox disserit, eadem etiam
+<lb/>profert, humanam nimirum naturam non ex uno peultus
+<lb/>humore, hoc est elemento, sed ex quatuor constare;
+<pb n="1.442"/>
+<lb/>nihil aliud omnino agit, nisi .quod id concludit,
+<lb/>quod erat pollicitus statim ab ipsis principio, unum
+<lb/>non esse ipsum hominem. Porro fatua est haec tam
+<lb/>naturalium philosophorum quam medicorum opinio,
+<lb/>qui unum vel hominis vel ipsius etiam universi esse
+<lb/>elementum asserunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Et Iane mirandum est , quo unquam
+<lb/>pacto illi, qui talia introducunt,. aliqua a quibusdam
+<lb/>hominibus existimatlone digni habeantur, quum tamen
+<lb/>neque sit arduum illos confutare. Aggressus attamen
+<lb/>Hippocrates est illis contradicere, non quod se magni
+<lb/>aliquid facturum arbitraretur , sed magis celebritate
+<lb/>eorum motus. Nullas enim vel probabiles, veli quae
+<lb/>solvi facile non possint, rationes hi afferunt, qui unum
+<lb/>esse elementum ponunt ; sed eas tantummodo , quae
+<lb/>fallaciam omnibus expositam quaeque facillime deprehendatur,
+<lb/>habeant. Qui etenim aquam esse elementum
+<lb/>censent, ob id hoc arbitrantur, quod ea densata
+<lb/>et quasi coactu in terram vertatur ; rarefacta vero
+<lb/>ac veluti fusa in . aerem ; quae si praeterea magis
+<lb/>rarescat ac fundatur, in ignem transit; et proinde
+<pb n="1.443"/>
+<lb/>eam esse elementum affirmant. Sed et qui aerem, rpsit
+<lb/>quoque aiunt; illum rariorem factum, ignem effici;
+<lb/>densiorem vero, aquam; qui si etiam densetur magis,
+<lb/>terram gigni. Alii autem, quum terram intuerentur,
+<lb/>quae ss aliquantulum et moderate rarescit et funditur,
+<lb/>in aquam transmutatur: si magis, in aerem; si
+<lb/>maxime, in ignem; hoc argumento probant, terram
+<lb/>ipsum esse elementum. Nec secus etiam agunt, qui
+<lb/>ignem esse elementum statuunt; quia enim; si is densetur
+<lb/>et quasi in fe ipsum cogatur , in -aerem vertitur;
+<lb/>si id .ipsum magis patiatur, magisque densetur,. in
+<lb/>aquam; si quam plurimum densetur, in terram; ideo
+<lb/>efficere volunt et isti, hoc ipsum esse elementum. Attamen
+<lb/>hae istorum rationes perquam apertam et in
+<lb/>promptu absurditatem habent. Porro hi omnes de mutua
+<lb/>elementorum transmutatione verba faciunt ; nec tarnen
+<lb/>se id demonstrare arbitrantur, sed potius id, quod
+<lb/>unusquisque eorum appellat elementum. Non autem idem
+<lb/>est de aeris iguisque, et praeterea terrae et aquae
+<lb/>inter se invicem transmutatione sermonem habere, ar.
+<pb n="1.444"/>
+<lb/>de elementis; utpote quoniam non eo) quod possint invicem
+<lb/>ex natura transmutari, unumquodque ipsorum
+<lb/>elementum est, fed quod primum atque simplicissimum
+<lb/>sit. Unde et Plato in Timaeo ostensurus, his
+<lb/>omnibus communem materiam esse subjectam , de mutua
+<lb/>illorum transmutatione disserit; erat enim ipse peritus
+<lb/>methodi demonstrandi, et proinde primorum corporum
+<lb/>transmutatione probe usus est. At Thales, Anaximenes,
+<lb/>Anaximander, nec non et Heraclitus, ex eorum
+<lb/>mutua transmutatione unum .quodpiam ex illis esse elementum
+<lb/>demonstrare conantur, ita tamen ut alius aliud
+<lb/>introducat. Qui mihi videntur omnes communem illam
+<lb/>somniasse materiam, omnibus elementis subjectam;
+<lb/>et hanc ut unicam videre, ita etiam unum esse elementum
+<lb/>arbitrati fiunt. Sed par quidem deinde erat., ut
+<lb/>dicerent, hocne, quod communi quadam ratione οτηnibus
+<lb/>subjectum est, aeri inquam et igni, terraeque
+<lb/>et aquae, esset id elementum: at illi hoc praetergressi,
+<lb/>unum quodpiam ex his quatuor id elementum. esse pro-.
+<lb/>mulgaverunt; et quidem hi omnes communem habent
+<pb n="1.445"/>
+<lb/>in demonstrando sententiam, non tamen idem postea elementum
+<lb/>constituunt; quos et Hippocrates statim inter
+<lb/>hujus libri initia carpit, dum ita ait: omnes quidem
+<lb/>eadem utuntur sententia , nec tamen eadem deinde
+<lb/>dicunt; moxque haec etiam addit: Et ad id quidem,
+<lb/>quod ipsi sentiunt, eundem asserunt ratiocinii modum,
+<lb/>nec eadem tamen pronunciant. At quisnam erat, quaeso,
+<lb/>is ratiocinii modusst is qui superius a nobis expositus
+<lb/>esu Qui enim terram esse elementum potuit,
+<lb/>inde ratiocinatur, quod ea fusa in aquam vertatur;
+<lb/>quae si magis insuper rarescat, in aerem; et ex hoc
+<lb/>tandem in ignem, si adhuc fiat rarior ; et ex hac ratione
+<lb/>colligunt, terram esse elementum. Et eisdem innituntur,
+<lb/>qui aquam alunt, aut ignem, aut aerem, sicuti
+<lb/>prius a nobis expositum esu Ili igitur omnes, quantumlibet
+<lb/>in variis versentur politionibus, eodem tamen
+<lb/>utuntur epilogo. Et Iane primam non eam inserunt
+<lb/>conclusionem , quae illi propria peculiarisque sit ;
+<lb/>propria enim ea erat, ut dicerent;-. unum est ergo subjectum,
+<lb/>uuaque substantia, quae omnibus pari ratione
+<pb n="1.446"/>
+<lb/>primis corporibus subiicitur. Deinde nec .id animad- .
+<lb/>vertunt, quod omnes unam eandemque demonstrationem
+<lb/>ad quatuor materias accommodare volunt. Et nimirnnr
+<lb/>haec ambo illis objicit Hippocrates, dum alt:
+<lb/>Et astruit suam eorum unusquisque rationem testimoniis
+<lb/>ac coniecturis quibusdam, quae tamen nihil sunt;
+<lb/>aperte insinuat, illos procul ab omni demonstratione nugari,
+<lb/>potiusque se ipsos fallere, quam quod aliquid
+<lb/>conficiant. Et suum praeterea addit, quod in eadem
+<lb/>sententia omnes versantur, nec tamen eadem dicunt,
+<lb/>nempe neque id cognoscunt , hac etiam parte indicat,
+<lb/>eos latere, se rebus diversis ac pugnantibus velle
+<lb/>unam eandemque aptare demonstrationem. Unde ait
+<lb/>deinde ipse: Cujuscunque lingua magis soluta fluens- que
+<lb/>turbae visa fuerit, is in ea disputatione superior
+<lb/>judieatur. Turbam porro rudem imperitorum hominum
+<lb/>multitudinem appellat, qui nec etiam quid sit
+<lb/>demonstratio noverunt unquam ; . unde recte quidem
+<pb n="1.447"/>
+<lb/>haec ipso deinde intulit: Sed (ut mihi ridetur) hi homines
+<lb/>ipsi tuis apiorum, quibus in disserendo utuntur,
+<lb/>verbis fe ipfos prae imperitia in errorem detrudunt,
+<lb/>Melissique sententiam erigunt. Is enim, habito sermone
+<lb/>de universitate, abfurda quaedam pronunciavit, omnia
+<lb/>nimirum esse unum, et id intransmutabile et insutitum.
+<lb/>Unde. ex qua parte aerem aiunt, aut ignem,
+<lb/>aut aquam, aut terram esse unum et omne, ex ea
+<lb/>etiam ratio Melissi firmari videtur. Data namque optione
+<lb/>, ut ex his duobus decretis, adeo tamen absurdis,
+<lb/>alterum eligatur, res periclitari videtur, ne Melissi
+<lb/>sententia sit praeferenda, neque enim ipse id, quod a
+<lb/>principio supposuerat, praecedente disputatione evertit;
+<lb/>quod tamen illi committunt, quippe qui ponunt quidem,
+<lb/>unum esse rerum omnium elementum, mox vero
+<lb/>de ejus transmutatione agunt, ita, ut tandem .quatuor
+<lb/>entia constituant; melius enim foret, id unum intransmutabile
+<lb/>fecisse, si sit revera unum, quoniam, si transmutetur,
+<lb/>quo modo erit amplius unum? Merito igitur
+<lb/>autumat Hippocrates , eos omnes, qui vel aquam unum
+<pb n="1.448"/>
+<lb/>esse elementum inquiunt, vel aerem, vel ignem j vel
+<lb/>terram , Melissi rationem erigere ; quae tamen adeo est
+<lb/>absurda, et ab omni prorsus evidentia semota, ut neque
+<lb/>digna sit, cui contradicat. De ejus tamen absurditate
+<lb/>ab Aristotele- quoque in primo naturalis auscultaIsionis
+<lb/>libro plenius disputatum esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Ime videtur ille ini suarum rationum
+<lb/>forma Hipoocratem imitatus fuisse. Praefatus etenim
+<lb/>ab ipso statim initio , quod considerare quidem , si ens
+<lb/>unum sit et immobile, non est de natura considerare;
+<lb/>atque hoc deinde etiam demonstrato, et proinde, quod
+<lb/>neque sit lepus rationibus Melissi et Parmenidis contradicere,
+<lb/>utpote quia utraeque sint manifesto absurdae,
+<lb/>attamen mox in illius libri processu eos insectari deprehenditur.
+<lb/>Nec tectis etiam Hippocrates ac ille egit, utpete
+<lb/>quem (tametsi primum innuisset, illos, qui ajunt,
+<lb/>unum este elementum, eo medicinam labefactare, ut
+<lb/>neque operae pretium sit eos hunc audire sermonem)
+<pb n="1.449"/>
+<lb/>eorum sententias postmodum refellere comperimus. At
+<lb/>vero, quod ii, qui ens pronunciant esse unum, philofophlae
+<lb/>naturalis principia tollant, ut ait Aristoteles,
+<lb/>atque etiam medicinae, ut Hippocrates, est sane quam
+<lb/>manifestum. Naturalis etenim scientia corpora, quae
+<lb/>generantur ac intereunt, quaeque -prorsus sunt exposita
+<lb/>transmutationi, contemplatur; ea vero, si unum
+<lb/>tantummodo ens fuerit, omnino delentur. Quibus delude
+<lb/>oblatis pariter et medicina tollitur; primum quidem
+<lb/>ob id, quod ea sit quasi generationis et interitus
+<lb/>ministra, et proinde, nisi haec concedantur, illa
+<lb/>etiam tollitur; deinde vero quia ab iis ipsis, qui ens
+<lb/>esse unum opinantur, tot variae multiplicesque tolluatur
+<lb/>medendi rationes : nam vel nihil corpora nostra
+<lb/>tunc paterentur, vel, si paterentur, unus tantum foretpatiendi
+<lb/>modus, et proinde unica etiam esset medelae
+<lb/>ratio. Quod si fuerit, universa porro medicina ruit;
+<lb/>quippe quia , si multa sint remediorum- genera , ad
+<lb/>medicum mor pertinebit -ea excogitare, quae unionique
+<pb n="1.450"/>
+<lb/>morbo conducere possint : at quum una tantummodo
+<lb/>fuerit, ut morbi, ita etiam remediorum ratio,
+<lb/>nullum relinquitur amplius aberrandi periculum. Recte
+<lb/>igitur Hippocrates protinus inter initia ita ait: Quicunque
+<lb/>eos consueverunt audire , qui de natura humana
+<lb/>procul ab eo, quod ad medicinam attineat, disserunt,
+<lb/>illos minime expedit hunc audire sermonem. Et deinde
+<lb/>subinsert; Neque enim dixerim, hominem esse usquequaque
+<lb/>aerem , hoc est, penitus unum et solum.
+<lb/>Quia, si quis id ipsirm affirmare velit, is fertur ulterius,
+<lb/>quam ratio medicinae exposcat , . et artis principia
+<lb/>subvertit. Nam hoc messio inprimis concedi opus
+<lb/>est , multas nimirum esse morborum , multas etiam
+<lb/>praesidiorum species :. quod nisi concesserit, statim e
+<lb/>medio tollet ipsa medicinae principia. Procul igitur
+<lb/>erit is sermo a finibus medicinae. Iam enim nullus
+<lb/>est artifex, qui illis contradicat, qui suae artis principia
+<lb/>destruit, imo hoc ad alium pertinet. Quod facilo
+<lb/>vel ex ipsius Anisio telis verbis perdiscas, quae te in
+<pb n="1.451"/>
+<lb/>hunc modum habent : Ut enim nequit geometra
+<lb/>contra eunt, qui sua tollit principia, disputare, verum
+<lb/>hoc vel alterius scientiae munus est, vel pariter omuiuni :
+<lb/>ita<space type="tab">    </space>nec philosophus naturalis.<space type="tab">    </space>Nam illi, qui</p>
+<p>ea destruunt, quae perspicuo apparent, jure essent coarguendi
+<lb/>ab<space type="tab">    </space>omnibus in<space type="tab">    </space>universum<space type="tab">    </space>hominibus ,<space type="tab">    </space>utpote</p>
+<p>quia ritam<space type="tab">    </space>subvertant:<space type="tab">    </space>aut saltem<space type="tab">    </space>ars<space type="tab">    </space>aliqua<space type="tab">    </space>praeter</p>
+<p>has omnes<space type="tab">    </space>particulares<space type="tab">    </space>instituenda<space type="tab">    </space>est,<space type="tab">    </space>cujus<space type="tab">    </space>sit pro</p>
+<p>principiis artium omnium propugnare: etenim particuiatium
+<lb/>unaquaeque artium ex principiis , quae pro
+<lb/>concessis habentur, progreditur. Unde ridentur tam
+<lb/>Aristoteles, quam etiam Hippocrates, suum eodem fere
+<lb/>modo digessisse sermonem, quem tamen expositores
+<lb/>intelligentia non consequuntur. Siquidem Hippocrates
+<lb/>non ea propter dixit, hunc sermonem illis non convenire,.
+<lb/>qui de humana natura audire consueverunt, ulterius
+<lb/>quam quantum ipsius ad medicinam pertineat,
+<lb/>qnod eos contemnat, qui ignem et terram et aquam
+<lb/>et aerem in elementis ponunt, imo ab initio statim
+<lb/>ad extremum usque eos increpat, qur unum tantum ex
+<pb n="1.452"/>
+<lb/>his ponmrt , quocunque modo sit illusi. .- Id namque
+<lb/>esset prorsus ab omni ratione alienum, si propterea,
+<lb/>quia nullum ex his quatuor- solum sincerumque conspiciatur
+<lb/>in. corpore, velit .etiam negare, ea omnia simul
+<lb/>reperiri. Esset enim hoc perinde, an si quis credere
+<lb/>nollet, medicamentum, quod tetrapharmacum appellatum
+<lb/>est , ex cera ,- resina , piceque et adipe
+<lb/>componi, quoniam eorum nullum integrum surcerumque
+<lb/>contineri rideat. Sed cur de his; quae invicem per teta
+<lb/>miscentur et temperantur, amplius loquimur? quum
+<lb/>neque sicciora medicamenta , ut ea, quae ex cadmia,
+<lb/>aere usio stimmique constant, si illa sint optime laevigata,
+<lb/>videantur ullum ex. his simplex purumque servare :
+<lb/>nec ullam umquam possis , quantumlibet vel
+<lb/>minimam accipias, particulam invenire, ubi quodpiam
+<lb/>ex his sincerum alterique impermixtum inspicias. Igitur,
+<lb/>tametsi nullum etiam e quatuor elementorum numero
+<lb/>integrum sincerumque in animantium corporibus
+<lb/>reperiatur , tamen non propterea dubitandum , qum
+<lb/>illa ex his sint contemperata: neque eum ob causam,
+<pb n="1.453"/>
+<lb/>si mundum ex quatuor elementis constare concedimus,
+<lb/>delude ab hac horum compositione animalia eximamus,
+<lb/>ac si illa minime sint in eo procreata , . sed huc extrinsecus
+<lb/>et aliunde introducta.-; Vel curaest, quaeso;
+<lb/>quod tu a me velis terram in corporibus animantium
+<lb/>ostendi , quae sincera sit atque . impermixta, quum
+<lb/>ejuscemodi ne in universo quidem a te ostendi queat?
+<lb/>quamcunque enim illius particulam acceperis , ea statim
+<lb/>erit alicuius .caloris ac humoris cujusdam, aereae-.
+<lb/>que substantiae particeps, quum tamen ea terra, quam
+<lb/>.etiam esse elementum opinamur , sit quam . maxime
+<lb/>densa, gravisque et.siccar et praeterea frigida. Quod
+<lb/>si tot .in .mundo mihi .lapidem ostenderis terreum rane
+<lb/>corpus, ego tibi illi simile in animantibus. ossium, cartilaginum,
+<lb/>pilorumque genus ostendam.:; ad quod etiam
+<lb/>in testaceis animalibus .id. spectat., quod testa i
+<lb/>appellatur , quod . jam exacte est in speciem
+<lb/>terrae concretum et . exiccatum. Quare si cupis
+<lb/>in animante terram intueri, .eandem habes, qualem
+<pb n="1.454"/>
+<lb/>in universo : eam vero, quae sula sit et cujusque
+<lb/>mixturae expers, -neque in illo facile reperias, quemadmodum
+<lb/>neque aquam puram,- quae aliorum nulli
+<lb/>commixta sit,. nec .ignem, nec. aerem: sunt etenim
+<lb/>.haec omnia quali adulterata, .ec aliis mixta, quae sunt
+<lb/>diversi generis: semperque alterum alterius tum magis,
+<lb/>tum minus particeps est; ut tamen in ipsa mixtione illius
+<lb/>(si quis animum intendat) forma appareat, quod alia
+<lb/>excedit. Ne igitur amplius impermixtum quicquam in
+<lb/>animalium corporibus exquiras , i sed quotiescunque aliquam
+<lb/>rideris particulam frigidam siecamque et densant,
+<lb/>ea sutis sit ad revocandam tibi terram in memoriam.
+<lb/>Satis etiam praeterea sit humidum aliquid vidisse et
+<lb/>rarum. atque fluens ad aquam - mente concipiendam.
+<lb/>Calor quoque, qui plurimus in corpore animantis re-.
+<lb/>peritur, tibi ignis memoriam repraesentet: nec non
+<lb/>et spiritus natura , citra quem animal nequaquam
+<lb/>constare potest, aeris in primis ac mox etiam ignis tibi
+<lb/>asserat memoriam. .tam ne me poposceris terram,
+<lb/>quae ipsa per se. sit , nec aliorum ullum sincerum;
+<pb n="1.455"/>
+<lb/>aut tu mihi prior in tetrapharmaco ceram ostende. Nam
+<lb/>ego non possum sane non admirari, si tu non arbitraris,
+<lb/>triticum, hordeum, glandes, fagos, ficus, leguminaqne
+<lb/>omnia ac fructus ex terra -et aqua gigni,
+<lb/>quum tamen ea maniscsto videas suum inde ortum hahere.
+<lb/>Anne igitur eorum substantia, dum gignitur,
+<lb/>ignis i est et aeris expers ? Atqui si terram aqua maceraveris,
+<lb/>- nihil inde nisi lutum. habebis: legumina tamen
+<lb/>et hujuscemodi fructus non id ipfum sunt, lutum
+<lb/>inquam: utpote quae ab igne et aere simul per
+<lb/>tota temperatis partem habeant. Concedes forsitan tu,
+<lb/>glandes quidem ficusque ex totius universi elementis
+<lb/>cousiare , atque etiam stirpes his ipsis priores :
+<lb/>quippe qui rideas, cujusque eorum femen perexiguum,
+<lb/>quod terrae mandatum est, neque millesimam esse para
+<lb/>riculam totius plantae , quae aliam vel universam
+<lb/>deinde substantiam a totius universi referant elementis.
+<lb/>Sed mox- de animantibus. dubitas , perinde ac si
+<lb/>haec ab illis non alantur: oves enim herbas depulcuntur,
+<pb n="1.456"/>
+<lb/>sues non eas modo, sed et glandes, caprae vero
+<lb/>praeter has arborum quoque teneros ramos. Unde ilIis
+<lb/>sanguis gignitur, atque corpori alimentum accedit,
+<lb/>ac praeterea suetus inde et constant , et| augentur.
+<lb/>Numquid igitur caprae , oves , lues que ex universi
+<lb/>procreatae sunt elementis, caetera vero, quae his ipsis
+<lb/>vescuntur, aliunde primum habent ortum, aut nutricationem,
+<lb/>aut incrementum^ Porro haec omnia et
+<lb/>ab omni ratione aliena, et absurda sunt, atque etiam
+<lb/>multa rerum inscitia relecta. Legumina etenim Iructusque
+<lb/>omnes ex elementis universi suam habent originem,
+<lb/>.e quibus omnia animalia gignuntur, aluntur et
+<lb/>nugentur. Audacterque profitendum est, terram, ignem,
+<lb/>aerem et aquam prima este communiaque rerum omnium
+<lb/>elementa, quum ipsa sint inter ea corpora, qttae
+<lb/>rerum universitate comprehenduntur , omnium prima
+<lb/>atque simplicissima usque adeo, ut alia deinde omnia,
+<lb/>stirpes inquam et animalia, sint ex his concreta. Atque
+<lb/>Hippocrates in processu libri De natura humana non modo
+<pb n="1.457"/>
+<lb/>pronunciat, quod haec sint omnium elementa, quae mundo
+<lb/>-contineantur: verum etiam primus ipse eorum qualitates
+<lb/>definivit, per quas inter se natura agere et pati possunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Quod dum non assequuntur quam plurimi
+<lb/>multiplici verborum significatione confusi, turbantur
+<lb/>, quemadmodum Athenaeo Attalensi contigit , qui
+<lb/>ut calidum, frigidum, humidum. et siccum hominis
+<lb/>esse elementa statuit , ita elementa usque eo esse evideutia
+<lb/>praedicat, ut nullam praeterea demonstrationem
+<lb/>expoIcant: qui ea etiam qualitates nonnunquam ac potestates
+<lb/>appellat , nonnunquam vero esse corpora concedit,
+<lb/>nec audet haec lateri esse ignem, aquam, aërem
+<lb/>et terram : qui, etsi nullus e iunioribus aeque
+<lb/>universam rei medicae rationem, ac ipse, llteris manflaverit
+<lb/>, in hoc tamen et in multis praeterea j aliis
+<lb/>una cum rellqttis sere omnibus errasse deprehenditur.
+<lb/>Nemo enim, quod equidem noverim , antiquam medicinam
+<lb/>accurate tractavit, aut methodos a priscis illic.
+<pb n="1.458"/>
+<lb/>nobis traditas absolvit. Quin etiam ,. si . verum lugenue
+<lb/>fateri liceat, dixerim, multa ex his, quae ab
+<lb/>illis constantissime dicta sunt, . hos detraxisse. Siquidem
+<lb/>Athenaeus alt, elementa ita esse evidentia, ut nuila
+<lb/>egeant demonstratione. Sed libenter ab eo sciscitarer
+<lb/>, hancne evidentiam assecuta sint ea ratione , qua
+<lb/>elementa sunt, .an potius ex ipsis eorum substantiis,
+<lb/>quibus deinde accidit, ut elementa ipsa fint: quoniam,
+<lb/>si ex substantiis, cur non etiam affirmat, salubria morbofaque
+<lb/>esse omnibus hominibus manifesta, quae nulla
+<lb/>propter eorum evidentiam disciplina nullaque demonstratione
+<lb/>egeant ? Iam enim nemo est , qui panem
+<lb/>Ientemque non agnoscat, Ineo non et ptssanam , .. et
+<lb/>carnem , alicamque et multam : fed quos deinde haec
+<lb/>sigillatim possint vel juvare, vel laedere, . non c est
+<lb/>aeque omnibus compertum; inde tamen habent, ut
+<lb/>haec salubria sint, illa vero morbosa. Norunt igitur
+<lb/>omnes panem pristinam que: salubria tamen et mor-
+<lb/>bosa ignorant. Et idem de medicamentis dixerim. Ne-</p>
+<p rend="indent">me fere est, qui veratrum, elaterium, scammoniam,
+<pb n="1.459"/>
+<lb/>epithymum , irim et sidenium tractare non ^possit,
+<lb/>non possit etiam olfacere, inspicere et gustare ir qui
+<lb/>tamen quum ignorent postea, quid commodi, quidve incomnrodi
+<lb/>ea possint afferre; ignorant etiam, quid far
+<lb/>lubre contineant et quid insalubre. Atqui pari etiam
+<lb/>passu quis est, qui evidentissime et ope sensuum omusum
+<lb/>terram non norit, - aquamque, et ignem- et asirem ?
+<lb/>sed quod ea sint elementa , adeo est plerisque
+<lb/>hominum occultum, ut nonnullos quoque ex philoso-.
+<lb/>phis lateat. Dicet forsitan quispiam ex sectatoribus
+<lb/>Athenaei, fe; quoque de his nihil pronunciare, - quippe
+<lb/>quod limites artis medicae excedant : sibi vero satis
+<lb/>esse calidum, frigidum; -humidum et ^siccum, t quae
+<lb/>etiam in animalibus possunt perspicue ostendere, corporum
+<lb/>etiam ac medicinae universae elementa fupponere.
+<lb/>Verum enim vero quam sit ab omni ratione
+<lb/>procul vestes ut animalium, ita medicinae elernenta
+<lb/>statuere calidum , frigidum , humidum; et siccum,
+<lb/>nihil arbitror esse opus, ut a me in praesentia amplius
+<pb n="1.460"/>
+<lb/>explicetur, quum id ipsum dogma a quam pluribus palam
+<lb/>et perinde ac in scena taxetur; jam que. et devisioni
+<lb/>atque infamiae sit; et non parum praeterea de
+<lb/>fide detraxerit sermoni antiquo. Nam quis est, qui unquanr
+<lb/>magis illum prodiderit , quam qui elementa alt
+<lb/>nulla ob evidentiam demonstratione egere, quique ceuret
+<lb/>deinde, haec esse supponenda , tam animantium,
+<lb/>- quom medicluae esse elementa? Ego vero monstrare statui,
+<lb/>. quod hominis sit quasi stupidi et quem omnino
+<lb/>verborum multiplicitates lateant, vereri quidem nominare
+<lb/>aquam,. ignem, terram et aerem; malle autum
+<lb/>calidum , frigidum , humidum et siccum appellare.
+<lb/>Nec id agam, ut Athenaeum erroris damnem: verum
+<lb/>potius ut in cauta sim , ne alii lu eundem cum illo
+<lb/>errorem .labantur ; atque ut interim . etiam ostendam vel
+<lb/>ex ipfismet . rebus , . neminem unquam posse decretum
+<lb/>aliquod accurate constituere absque ope logicae difciplinae.
+<lb/>Deos. autem testor, me non secus haec
+<lb/>narraturum , ac mihi evenerint. Iam ergo narrationem
+<lb/>aggrediar. Quo primum tempore ille., qui haec
+<pb n="1.461"/>
+<lb/>profitebatur dogmata , me Athenaei scientiam docere
+<lb/>nitebatur: lu primis ab illo requirebam, ut uominum
+<lb/>multiplicitatem exquisite distingueret : quippe quum
+<lb/>me profecto lateret, quando ille calidum, vel frigidunr,
+<lb/>vel humidum , vel ficuum , vel aliquod aliud huiusce
+<lb/>generis nomen proferret, in quam subjectum rem illud
+<lb/>foret referendum: dicebam etenim, albus non modo
+<lb/>color ipfe dicitur; fed corpus quoque, quod eo colore
+<lb/>imbutum est: nam ut colorum dicimus hunc album esse,
+<lb/>illum. nigrum, alterum rubeum, alterum vero flavum,
+<lb/>alterum pallidum, ita etiam de corporibus, quae istis
+<lb/>coloribus infecta sunt, loquimur: cygnum enim et lac
+<lb/>album dicimus , . corvum vero et Aethiopem nigrum.
+<lb/>Et eodem, inquam, modo saepe audio, qui corpus ipfum,
+<lb/>utpote ignem, calidum appellent, nonnunquam
+<lb/>solam qualitatem eam, quae illi indita est. Unde quum
+<lb/>album profers , non etiam percipio, quid tu mihi velis
+<lb/>significare, solemne qualitatem, an praeterea et corpus
+<lb/>ea affectum. Ille autem statim ad haec prompte admodum
+<lb/>respondit, fassusque.est, su .non qualitatem folam,
+<pb n="1.462"/>
+<lb/>sed univerfum hoc; corpus inquam .calidum,
+<lb/>sic appellare. .- Verum quum iterum deinde illum percunctarer:
+<lb/>Tune igitur elementum solum id corpus ais,
+<lb/>quod summe calidum est, aut potius nec illa alioquin
+<lb/>ab elementorum numero -eximis,. quae moderate calida
+<lb/>sint? et. hoc idem de frigido quaerebam, humidoque
+<lb/>et sicco ; at ille coepit haesitare , nec amplius ita
+<lb/>expedite respondebat, dixit attamen; Quid, inquit,
+<lb/>hoc tua refert? Plurimum, inquam; tanti nimirum,
+<lb/>quanti , ut vel- infinita sint elementa constituenda , vel
+<lb/>finita. Quoniam, siquis in elementis. vel mediocria calida
+<lb/>, aut frigida , aut humida , aut sicca posuerit,
+<lb/>cogetur statim fateri infinita elementa; sed qui id tam,
+<lb/>tum , quod summum est , non amplius infinita , quum
+<lb/>id lu unoquoque genere unicum sit; ut demum finita
+<lb/>quatuorque futura sint elementa. Igitur , ait ille , tu
+<lb/>quoque hoc modo accipe , finita quatuorque elementa.
+<lb/>Tum ego; Iam ita satis constat, ea et prima esse,
+<lb/>et simplicia , atque sibi qualitates. fummas vendicare.
+<lb/>Tum ille; Et tu cur tandem hoc vel etiam quam par
+<pb n="1.463"/>
+<lb/>sit curiosius scrutaris? Ut id quod dicitur (inquam ego)
+<lb/>exactius apprehendam. ille vero : lta equidem dico,
+<lb/>et tu: quoque ita intellige. sied quum mox iterum
+<lb/>interrogassem: Tu, quaeso, quo pacto jnbes me elemeutum
+<lb/>intelligere summe calidum aut humidum ?
+<lb/>ipsis non parum- perturbatus ac ira incitatus respondit r
+<lb/>Corpus id calidum appello, in quo calor superat, et
+<lb/>eodem etiam modo frigidum, et humidum,. et siccum,
+<lb/>ubi unumquodque eorum ,. quae nunc recensuimus,
+<lb/>excellit et exuperat. Nihil sane vetat (dicebam ego),
+<lb/>quin ita loquamur; nam et panis, et lens, atque
+<lb/>etiam ptisana, .et balueae calidae dicuntur: attamen
+<lb/>nunquam putarim, te hoc a me exigere, ut existimem,
+<lb/>unumquodque horum esse elementum , sied id potius,
+<lb/>quod summe calidum est et humidum, et pari modo
+<lb/>quod summe siccum et frigidum est , quod fit opus,
+<lb/>ut simplex sit elementum et cujuscunque mixturae
+<lb/>expers. Qui ait: Sic tu quoque intelligas, .neque
+<lb/>enim is sum, qui velim asserere, lentem aut ptifanam
+<lb/>esse elementum. Atqui, inquam ego, quotiescumque
+<lb/>existimaverim., id corpus esse elementum, quod summe
+<pb n="1.464"/>
+<lb/>calidum fit , quid aliud putaverim ego quam ipsum.
+<lb/>ignem ? Esto, dixit ille, ignem puta. - Visu e igitur,
+<lb/>dixi, ut ratione eadem, quod summe humidum est,
+<lb/>aquam arbitrer? Vix tandem ille assensit. Quare, inquam,
+<lb/>ad ignem, aerem, aquam et terram, unde maxime inter
+<lb/>initia aufugiebamus , denuo revolvimur? Ille vero
+<lb/>inquit: Tu es, qui istis rationem- conturbas; statimque
+<lb/>ad alios discipulos conversus ait : Hic in dialecticis
+<lb/>studiis educatus ac inde quadam veluti scabie repletus
+<lb/>(ita enim ipse loquebatur] omnia distorquet, .. pervertit
+<lb/>et confundit , nos fallacibus quibusdam rationibus pelens,
+<lb/>ut, quam ipsc sit dialectices peritus, ostendat. Ac-.
+<lb/>cessit- igitur ac postulavit nos arbitrari calidum mula
+<lb/>tiplex habere significatum, primum ut qualitatem signilicet
+<lb/>, quemadmodum album colorem ; deinde vero
+<lb/>corpus id, quod ea qualitate summa affectum est; tertio
+<lb/>loco illud, in quo haec qualitas alias superat, calidurn
+<lb/>nuncupetur , sicuti balneum. Verum nos, qui
+<lb/>nunquam istiusmodi sophismata diluere didicimus, illi,
+<pb n="1.465"/>
+<lb/>qui ea contexuit, solvenda relinquemus, Porro haec
+<lb/>mihi evenere, quum annum agerent decimum nonum.
+<lb/>Postmodum autem, ne contentiosus viderer, plurima
+<lb/>silentio praeteribam, mecum tamen ipse cum atta multa,
+<lb/>tum vel maxime elementorum rationem meditabar, atque
+<lb/>etiam non parum admirabar, Athenaeum non animadvertere,
+<lb/>quam Ic ipsum confundat, dum calidum,
+<lb/>frigidum, humidum et siccum nominare audet, et ea
+<lb/>ignemb aquam , aerem et terram dicere recusat.
+<lb/>Equidem, ait ipse; quippe quum proxima sumere veIim
+<lb/>animalium elementa, non quae corporum omnium
+<lb/>communia sint: proxima vero propria appellat. ita
+<lb/>nimirum ut nullius alterius sint. Ego vero inter hujusce
+<lb/>libri initia praelatus sum , plurimum inter ea,
+<lb/>quae videntur, interesse, et ea, quae vera sunt elementa;
+<lb/>non erit tamen abs re, ut mihi quidem videtur, si de
+<lb/>re hac in praesenti quoque longiorem habuero sermonem.
+<lb/>Etenim si elementttsn minima sit simplicissimaque
+<lb/>rei particula, atque hoc si sensu deinde metiri
+<lb/>oporteat; prosectu os , cartilago, ligamentum, unguis,
+<pb n="1.466"/>
+<lb/>capillus , adeps , caro , nervus , medulla , fibrae,
+<lb/>membrana, en tandem (ut omnia uno simplicique verbo
+<lb/>complectar) similaria cuncta erunt humanorum corporum
+<lb/>elementa. Estne igitur quispiam locus, ubi Athenaeus
+<lb/>reperiatur posuisse haec iit elementis ? Atqui
+<lb/>ille ipse scriptum reliquit, similaria quaeque ex primis
+<lb/>esse consecta elementis, alias postmodum animantis partes
+<lb/>ex similaribus constitui. Qui si etiam interrogaretur,
+<lb/>quaenam essent carnis, exempli gratia, aut pinguedinis
+<lb/>elementa ; calidum proculdubio respondisset,
+<lb/>Irigidumque, humidum, et siccum. Quare pari modo
+<lb/>ossis etiam et cartilaginis , nec non et capilli , diceret
+<lb/>ille, calidum, humidum, fulgidum et siccum este elemeuta.
+<lb/>Iam ergo tempus esset ab eo percunctandi,
+<lb/>qualenam sibi vellet humidum vel siccum, calidum
+<lb/>vel fulgidum ; humidum etenim secundum exuperantiam
+<lb/>caro est; siccum vero cartilago; sicut os fulgidum
+<lb/>et siccum ; adeps calida et humida , atque etiam
+<lb/>caetera similaria ex aliquorum simplicium dominatu
+<pb n="1.467"/>
+<lb/>sigillatim talia erunt vei talia; et proinde, si quis
+<lb/>illud esse elementum statuerit , quod aliquo istorum
+<lb/>excessu calidum sit , aut fulgidum , aut humidum , aut
+<lb/>siccum, porro os, et cartilago, et nervus, nec non
+<lb/>et reliqua huiusce generis prima erunt humano corpori
+<lb/>elementa. At noluit Athenaeus illa esse elementa,
+<lb/>sed ea, quae haec ipsa constituunt. Liquido itaque constat,
+<lb/>quod ille sensum transgreditur, ad eaque progreditur,
+<lb/>quae vere et ex ipsa ratione prima sunt et
+<lb/>simplicia, et quae nequaquam amplius per alicujus in
+<lb/>eis dominationem talia vel talia sunt; siquidem essent
+<lb/>tunc et haec ipsa concreta, et a proposito hilariam
+<lb/>aberraremus. Nam et propterea sensilia missa Iecimus,
+<lb/>ut quippiam, quod simplicius esset, inquireremus, et
+<lb/>tamen nihil proinde in jhii abditis, quod simplicius
+<lb/>esset, assequuti sumus. Etenim in illis evidentibus, si
+<lb/>non aliud, hoc saltem habebatur, quod comperta haec
+<lb/>nobis erant consessaque , quum nemo non Pateatur.
+<lb/>cartilaginem , membranam et adipem caeteraque similarla
+<lb/>primas esse, si sensui attendamus, simplicissimasque
+<pb n="1.468"/>
+<lb/>particulas. Quod si haec ob id aliquis dimittat,
+<lb/>quia natura composita Eunt , quantumlibet sensibus simplicia
+<lb/>videantur, nec postmodum aliud quicquam, quod
+<lb/>simplicius sit, introducat; nescio protecto, quam possit
+<lb/>ille honestam prosarie excusationem, ne inaniter et
+<lb/>supervacanea nugari videatur. Quotiescunque enim voIueri
+<lb/>t calidum frigidumve, similiter humidum et siccum
+<lb/>nominare, quod secundum dominationem tale est;
+<lb/>jam elementa habet, et satis etiam perspecta; nervum,
+<lb/>inquam , membranam , cartilaginem , carnem et ligamentum
+<lb/>, et reliqua etiam illa, quae nuper receuIuimus.
+<lb/>At si illud inquiris, quod natura simplex
+<lb/>sit; oportet statim id haud esse mixtum temperatumve,
+<lb/>et praeterea summa esse qualitate assertum. Iturtum
+<lb/>igitur ad ignem remeas, et aerem, aqttamque,
+<lb/>et terram, quippe quod in his solis qualitates reperire
+<lb/>possis absque ulla mixtura tempericque : in igne nimirum
+<lb/>calorem summum Iummamque siccitatem;
+<lb/>luminum fuigus cum siccitate in terra . et in reliquis
+<lb/>reliquas, prout sua cujusque natura postulat. Porro si
+<pb n="1.469"/>
+<lb/>quatuor elementa nolueris ponere , sed ex his veI
+<lb/>duo, vel tria; possis sorsitan hujus aliquam a fle r re rationem.
+<lb/>At affirmare, esse elementum , quod summe
+<lb/>humidum est, simulque mox arbitrari, illud esse quippiam
+<lb/>ab aqua divertunt , extremae cujusdam ineptiae
+<lb/>est, nisi sersuan solas velis qualitates, nec ipsa illis assecla
+<lb/>corpora, esse elementa;. nam tunc non aqua, sed humiditas
+<lb/>elementum erit, nec ignis, sed summus calor.
+<lb/>Quod si ita fuerit, primum quidem jam ultra ignem
+<lb/>aëremque et aquam et terram tuam prosers rationem,
+<lb/>qui ne ea quidem attingere audebas, utpote quia
+<lb/>medicinam excederent : deinde vero Facile convinceris,
+<lb/>quod ignores, quam ab elemento principium disserat.
+<lb/>Iam enim quod summus calor sit igne simplicior, atque
+<lb/>etiam quod, illo ad materiam accedente, ignis gignatur,
+<lb/>pro consessu ab omnibus philosophis habetur , quos
+<lb/>Athenaeus imitari studet. Et serentur etiam omnes,
+<lb/>quod materia quaedam , quae omnibus elementis subjecta
+<lb/>est, quaeque omni caret qualitate, nec non et
+<pb n="1.470"/>
+<lb/>summus calor in ea procreatus, sint igni sitae generationis
+<lb/>principium ; et praeterea , quod haec eadem
+<lb/>materia sit semper ab omni penitus generatione et interttu
+<lb/>immunis, qualitas vero ea sit, quae in illa gignatur et
+<lb/>intereat; et quod opus sit, ut elementum sit ejusdem generis
+<lb/>cum illo, cujus est elementum. Eo enim elementum a principio
+<lb/>diflert , quod minime sit necesse principia in eodem este
+<lb/>genere cum his, quorum sunt principia, sicut elementa
+<lb/>ad idem semper genus pertinere. Simplex namque
+<lb/>qualitas compositae qualitatis , et [simplex corpus
+<lb/>corporis compositi est elementum. Quod si calidum,
+<lb/>frigidum, atque humidum, et siccussi dicuntur tripliciter ;
+<lb/>nam vel sicuti qualitas, vel sicut corpus impermixttnn,
+<lb/>vel sicut illud, qttod mixtum est, .nec ipsa
+<lb/>deinde qualitas elementum esse videtur, neque etiam
+<lb/>mixtum temperatumqne corpus ; relinquitur, quod elesnentum
+<lb/>sit id corpus, quod est cujusque temperamenti
+<lb/>ac mixturae expers, quodque qualitatibus sit simplex,
+<lb/>et tandem ad ipsum ignem, et terram, et aerem, et
+<lb/>aquam deveniendum est; in quibus primis summus est
+<lb/>calor, et summum frigus, atque etiam humor et siccitas.
+<pb n="1.471"/>
+<lb/>Quod ϋ quis ca non audeat lateri elementum eapropter,
+<lb/>quod ex ipsis nullum aut e corpore detrahimus
+<lb/>, aut eidem imponimus , is summam quandam
+<lb/>praesert stoliditatem. Iam enim quum ea, quae ex eIemeutis
+<lb/>constant, nostris osserimus corporibus, eisdem
+<lb/>quoque elementa omnino adhibemus. At non sincera;
+<lb/>ajunt, neque sola; igitur perverse etiam dictum est,
+<lb/>non detrahi , neque apponi elementum : nam nec ita
+<lb/>absolute proterendum erat, sed potius, quod non foIum,
+<lb/>aut non sine mixtura, aut per se. Verum enimvero
+<lb/>nec quid tandem illi velint conficere, videre
+<lb/>possum ; neque enim ideo elementorum contemplati^
+<lb/>jure inutilis habenda est, quia nullum eorum, quod
+<lb/>quidem mixtum cum altero non sit, nostris offeramus
+<lb/>corporibus. Atque etiam .non ob id perperam pronunciatum
+<lb/>est, ignem, aerem, aquam et terram esse
+<lb/>elementa, quod iila, quae ex his composita sunt, nobis
+<lb/>in usum veniant , nullum vero ipsorum seorsum ab
+<lb/>aliis, solumque et per fle nobis utile sit. AL vero
+<lb/>et ipsis propemodum sinceris hujus universi elementis
+<pb n="1.472"/>
+<lb/>saepe utimur, quemadmodum aqua quotidie, quum
+<lb/>bibimus, aut lavamur, vel alio etiam aliquo modo;
+<lb/>et aere, qui nos undique ambit, dum illum inspirando
+<lb/>attrahimus; igne quoque interdum, quum Erigemus, ut
+<lb/>caleamus, utimur. Ut tandem minime videam, quid
+<lb/>ipsi conficiant, quum ajunt, nunquam ignem, aut
+<lb/>aquam, aut acrem , aut terram vel detrahi e corpore
+<lb/>nostro, vel illi apponi. Etenim ego sacile allirmaverim,
+<lb/>eum, qui alget et ad ignem, ut calefiat, aece,.
+<lb/>dit, ignem corpori adhibere, et aquam illum, qui bibit,
+<lb/>illum etiam, qui respirat, aerem. At quaecunque animantia
+<lb/>quoque vel arena vescuntur, vel terra, vel lapidtbus
+<lb/>, vel luto, vel ossibus, terram manisesto in
+<lb/>corpus introducunt, Quod si qui ob id putent, nullum
+<lb/>Hos corpori osserre elementum, quia nemo eatenus calesiat,
+<lb/>donec uratur, vel bibat, quoad rumpatur, erit
+<lb/>nempe horum hominum mirabilis sapientia, qui. eousque
+<lb/>devenire nequiverunt, ut intelligerent, quod, si veI
+<pb n="1.473"/>
+<lb/>unum elementum intereat omnino, sit etiam statim animal
+<lb/>interiturum. Interibit autem fulgidum elementum,
+<lb/>si comburatur; calidum vero, si nimis reseigeretur ;
+<lb/>similiter etiam, si nimis ardeat corpus, peribit siumidum ;
+<lb/>et siccum, si nimis humectatur. Unde e contrario
+<lb/>se habet haec res , ac illi sentiunt , quia semper
+<lb/>aut eximitur elementum atiquod , aut apponitur.
+<lb/>Verum id fieri moderate oportet ab his, qui animal incolume
+<lb/>esse volunt; siquidem immoderatus eorum usus
+<lb/>ad interitum ducit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Iam autem id omnino aperire aggrediar,
+<lb/>quod in hoc sermone consequens est, quodque istos
+<lb/>imprimis latet. Omnia nimirum corpora, quae generantur
+<lb/>et intereunt, dupIici transmutationi sunt obnoxia,
+<lb/>utpote quorum substantia tum atteretur, tum dissinat.
+<lb/>Atteratur quidem, quum calefit, vel reseigeratur , veI
+<lb/>humectatur, vel exiccatur; hae enim qualitates solae
+<lb/>possunt universam [ut paulo post exposituri sumus) substantiam,
+<lb/>ac illam per totum transmutare. Dissinit vero per exv
+<pb n="1.474"/>
+<lb/>cretiones in sensum cadentes, et per eam, quae insensibilis
+<lb/>perspiratio vocatur. Quo deinde fit, ut duplici egeat procuratione,
+<lb/>si incolumis sit servanda ; altera, qua, quicquid in
+<lb/>qualitatibus modum excesserit, reprimatur ; altera, qua loco
+<lb/>illius, quod evacuatur , restituatur aliquid. Porro excedcntis
+<lb/>immoderationem opposita qualitas emendat ; quod
+<lb/>vero deperditur, nequaquam per oppositam qualitatem
+<lb/>reparatur, quum opus sit, ut id, quod reparatur,
+<lb/>sit priori deperditaeque substantiae quam simillimum
+<lb/>, siquidem in illius locum reficiendum est
+<lb/>in animante. Atque hoc ipsum, nutriri, inquam, corpora,
+<lb/>ex quadam nimirum substantia fit illi simili,
+<lb/>quae prius suerit evacuata. Unde etiam (ut equidem arbitror)
+<lb/>ea substantia alimentum appellata est. At vero quum
+<lb/>solam eam transmutationem in subiecto quaerimus, quae
+<lb/>per qualitates fit, non amplius illa, per quae id ipsum
+<lb/>agimus, alimentum, sed medicamenta potius appellamus.
+<lb/>Sane quum nulla qualitatum seorsum a substantia repertri
+<lb/>queat; proinde cogimur eas una cum substantiis
+<lb/>assumere, ac ita corporibus illis egentibus osserre; quae
+<pb n="1.475"/>
+<lb/>si summas eas exposcant, ipsum elementum adhibemus,
+<lb/>ignem inquam, aut aquam , aut terram, aut aerem ;
+<lb/>ubi vero mediocri sit opus, mixto ex elementis utimur;
+<lb/>unde, si calesacere voluerimus, ejusmodi medicamentum
+<lb/>eligemus, in quo inajor sit ignis quam alicuius illi
+<lb/>contrarii portio ; contra vero, si refrigerandum sitNonnunquam
+<lb/>vero, si utrumque horum procurare iustitucrimus,
+<lb/>alterare, inquam, et alere, . eam tunc substantiam
+<lb/>exquirimus , quae possit utramque operam praestare
+<lb/>, eam nimirum , quam cibus , et eam , quam medicas
+<lb/>mentum. Itaque non amplius hoc exposcant, ut ultumquodque
+<lb/>animal ignem ingerat, aut terram, aut aquam,
+<lb/>aut aerem, aut tandem illud elementum, quod solum
+<lb/>et per se ipsitm sit, et absque ullo aliorum consortio:
+<lb/>quippe quum nihil nos illud vel tanquam medicinam,
+<lb/>vel tanquam cibum osserre cogat: siquidem cibus rei
+<lb/>nutriendae similis est. Et simile composito corpori, atque
+<lb/>ex elementis contemperato , eorumqtte participi id
+<lb/>corpus est (ni me mea sallit - opinio) , quod itidem ex
+<lb/>illis eisdem constitutum sit. Nec sane semper elementum
+<pb n="1.476"/>
+<lb/>ut medicina usui est, nisi eo fortasse tempore
+<lb/>tantummodo, quo corpus summa eget qualitate. Haec
+<lb/>igitur a nobis adversus eos prolata sint, : . qui perperam
+<lb/>Hippocratem intelligunt iamque id etiam praeterea
+<lb/>conspicuum est, elementa in nostros usus semper ventre,
+<lb/>ut tamen ea nonnunquam fota et simplicia veniant,
+<lb/>quandoque vero ut in mixtione vincentia, et tandem
+<lb/>prout corpus id constituunt, quod potest nobis vel alimenti,
+<lb/>vel medicamenti usum praestare.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Quod autem Hippocrates a qualitatibus
+<lb/>in libro de natura humana saepius elementa nominet,
+<lb/>atque calidum non folam ipfam qualitatem appellet, neque
+<lb/>illud etiam, lu quo una quaepiam qualitas alias in
+<lb/>mixtura Inperat; hoc vocet modo, sied potius corpus
+<lb/>id, quod est summo calore affectum, etfrigidunr id, in
+<lb/>quo summum fit frigus, et siccum , in quo siccitas : apta
+<lb/>tibi horum verborum feries facile poterit apertum restdere.
+<lb/>Quum enim ait: Quum interit homo, necesse est
+<lb/>unumquodque rursus ad suam ipsius naturam redire.,
+<pb n="1.477"/>
+<lb/>.siccum ..ad siccum, amundum ad humidum, calidum
+<lb/>-ad calidum, frigidum ad frigidum r- non folas profecto
+<lb/>qualitates siccum, humidum, calidum et. frigrdum
+<lb/>vocat, sed eas substantias, .in quibus hae reperiuntirr
+<lb/>qualitates. Ipsae enim sunt quae, : animali vim defuncto,
+<lb/>abeunt, quaeque elementis universi permisceirtur.
+<lb/>Qualitates. vero possis forsitan didere, animante
+<lb/>mortuo, luterire; ad propriam autem eas naturam redire,
+<lb/>non item. Sed . praeterea haec queque tradit Htppocrates :
+<lb/>Talis autem est tum .animalium, tum .aliorum
+<lb/>omnium natura., . omnisque similiter. oriuntur,
+<lb/>atque . similiter occidunt quippe quorum natura
+<lb/>ex his omnibus, quae diximus, sit constituta: et
+<lb/>unde ununrquodque ortum i habuit, in id ipfum
+<lb/>etiam (ut dictum est) pariter- definit , et proinde
+<lb/>adid ipsum tandem redit. Quo loco .patet,. non. folas
+<lb/>illum . qualitates . appellare calidum, .frigidum „ humi,dum
+<lb/>et siccum, sed. ipsa elementa, quum ab his
+<lb/>universa corpora suam trahant originem, et tandem in
+<pb n="1.478"/>
+<lb/>haec ipsa etiam omnia dissolvantur Quod ut attendas,
+<lb/>quam maxime te monitum velim , quum id quamplutisitos
+<lb/>medicorum latuerit, qui credant, Ilippocratem
+<lb/>praeteriisse, quo minus statuerit omnium, quae gignantur
+<lb/>et intereant, corporum haec esse .elementa. Iit
+<lb/>ista enim nuper a nobis recitata sententia quater reperies
+<lb/>id vocabulum (omnium repetitum : sed et superius,
+<lb/>quum dixit: necesse est, si talis sit cum aliorum omnium,
+<lb/>tum etiam ipsius hominis natura, hominem non esse unum : et
+<lb/>etiam in sequentibus eodem visus est uti modo. M ulti attamen
+<lb/>exibis, qui Hippocratici appellari volunt, hoc conniventibus
+<lb/>oculis praetereunt: qui praeterea etiam putant, Hippocratem
+<lb/>aliud |per ^calidum, fulgidum, humidum et
+<lb/>siccum voluisse praeter communia rerum omnium elementa.
+<lb/>Nam quod ipse nunquam senserit, ipsas istorum
+<lb/>qualitates esse corporum elementa , monstratum esse
+<lb/>existimo ex illis verbis, quae jam a nobis proposita
+<lb/>sunt, atque etiam non minus ex his, dum ait: Item
+<lb/>nisi calidum cum fulgido, i et siccum cum humido se
+<pb n="1.479"/>
+<lb/>moderate et aequaliter^ habuerint, sed alterum, quod
+<lb/>valentius, alterum, quod imbecillius est, plurimum
+<lb/>superet, nulla unquam Iutura est generatio. Quo loco
+<lb/>nunquam velim mihi persuadeant, illum arbitrari, ex qualilatibus
+<lb/>, quae ne seorsum quidem a corporibus consistere
+<lb/>possint, animalia gigni, sed ex corporibus potius,
+<lb/>quibus illae qualitates summae insint: ea quippe
+<lb/>sunt communia omnium elementa. Quae vero calidum,
+<lb/>frigidum, humidum et siccum ob aliquam horum dominationem
+<lb/>dicuntur, propria sunt unleuique. Agedum
+<lb/>, ut de homine nostrum sermonem habeamus , is
+<lb/>ex primis simplicissimisque his sensilibus elementis constat,
+<lb/>quae similaria appellantur; nempe fibra, membrana,
+<lb/>carne, adipe, osse, cartilagine, ligamento, nervo
+<lb/>, medulla , atque etiam omnibus aliis , quorum
+<lb/>universae particulae eandem omnino furinam retiuent:
+<lb/>quae et ipsae quoque ex aliis quibusdam ipsis proximis
+<lb/>gignuntur elementis, ex sanguine nimirum et pituita
+<pb n="1.480"/>
+<lb/>et bile utraque, pallida et atra: quae item ab illis ortum
+<lb/>habent, quibus vescimur, quaeque potamus: at
+<lb/>haec ex aere, igne, aqua et terra gignuntur: ipsa
+<lb/>vero haec ex nullo amplius corpore alio constituta sunt,
+<lb/>nisi quod ex materia et qualitatibus , et proinde has
+<lb/>principia quidem esse ignis, et aquae, aërisque, et
+<lb/>terrae concedimus , elementa vero nequaquam : illa
+<lb/>autem caeterorum omnium elementa este dicimus, utpote
+<lb/>quum rerum omnium primae sint minimaeque
+<lb/>ac etiam simplices particulae. Itaque nullus, unquam,
+<lb/>qui ranae mentis sit, dubitaverit, quod herbae omnes
+<lb/>stirpesque et functus geniti sint ex igne , aëre,
+<lb/>aqua et terra, neque etiam quod haec animantibus omnibus
+<lb/>sint alimenta: sed neque de eo ambiget quispiam,
+<lb/>quod humores, qui natura in nostris conspiciuntur
+<lb/>corporibus, ab his ipsis ortum habeant. Qui vero
+<lb/>sint hi, et quot, siquis ex nobis percunctetur, ad
+<lb/>secundum librum hanc huiusce rei inquisitionem distulimus ;
+<lb/>iam enim caput primo libro imponere properamus.
+<lb/></p>
+<pb n="1.481"/>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p>Ex his nimirum humoribus similaria
+<lb/>quaeque gignuntur:- ipsis vero simul coeuntibus, primuor
+<lb/>id atque simplicissimum instrumentum absolvitur,
+<lb/>quod unius functionis gratia a natura procreatum esu
+<lb/>Mox. autem , quum haec item una componuntur , aliud
+<lb/>majus instrumentum perficitur. Et deinde ex his aliis
+<lb/>simul coagmentatis universi tandem corporis integritas
+<lb/>constituitur. .Quibus de rebus lu dissectoriis administrationibus
+<lb/>actum est: sed seorsum etiam in alio quodam
+<lb/>opere, quam habuerit Hippocrates de rebus, quae per
+<lb/>dissentiones corporum apparent , opinionem , literis
+<lb/>mandavimus. At r in praesentia de supremis elementis
+<lb/>feusum effugientibus, de quibus Hippocrates in libro
+<lb/>de natura humana sermonem instituit, disserere propotui,
+<lb/>qui asserit quidem, eos humores quatuor propria
+<lb/>ac proxima esse nostri corporis elementa; communia
+<lb/>vero omnium humidum, calidum, frigidum et siccum;
+<lb/>ex qualitatibus quippe elementa nominat, ex quibus
+<lb/>etiam habent: quod elementa sint. Quum enim materiale
+<pb n="1.482"/>
+<lb/>summus accedit calor, jam id universum elementum
+<lb/>est; et eodem modo, quum summum frigus , aut humor,
+<lb/>aut siccitas; nam nec quod album .sit, - aut nigrum;
+<lb/>aut leve , aut grave , aut pari etiam ratione quod densum
+<lb/>sit; veI rarum, quodve premat, vel incidat,
+<lb/>vel frangat, (ut tandem in universum loquar) ex nulla
+<lb/>alia qualitate, nisi ex enumeratis illis quatuor, elementum
+<lb/>esse iudicatur. Solae etenim hae, quum rnateriam
+<lb/>subjectum alteram, in causa sunt mutuae inter elementa
+<lb/>transmutationis, suntque praeterea stirpium ac
+<lb/>animalium opifices. Porro Phaleris etiam sectatores ab
+<lb/>ipsa hujus evidentia coacti, tametsi id eorum (ut jam
+<lb/>ostensum est decretis adversetur, .mutuae tamen elemeritorum
+<lb/>transmutationi assensere. Hoc autem concesso,
+<lb/>statim ea sequebatur conclusio, nempe unam communemqne
+<lb/>elementis omnibus esse subjectum substanriam.
+<lb/>Quod quidem et Hippocrates. quoque ea ipsa
+<lb/>dictione, quam priorem . ascripsi , monstravit, quum
+<lb/>inquit, nos neutiquam desituros, si homo unum siti
+<pb n="1.483"/>
+<lb/>Qua, quantnmlibet ea brevissima fit; dicebamus doceri
+<lb/>utrumque eorum , t. nimirum . et elementa plura esse,
+<lb/>et natura ad alterationem habilia. - Hoc ergo, ut aptum
+<lb/>priori fibro finem imponamus, iterum repetendum venit.
+<lb/>Quum substantia suapte .natura alterationi exposita
+<lb/>sit, mox, .quaenam illae sint qualitates, inspiciendum
+<lb/>est, quae hoc efficere possint. Hippocrates itaque
+<lb/>Iulita antiquorum brevitate usus, ut praefatus est, hominem,
+<lb/>si unum sit, nunquam doliturum, statim cafidum
+<lb/>et frigidum et humidum et siccum ad omnes
+<lb/>adhibet alterationes ; : hoc ex . evidentia accipiens,
+<lb/>quod corpora; quae inter fe vicina sunt, nata sint sese
+<lb/>mutuo. transmutare calefaciendo,. vel refrigerando, vel
+<lb/>exsecando , vel humectando. At vero: nec ipsum
+<lb/>latuit., quod,: si prius demonstratum siti universam alterari
+<lb/>substantiam, statim subvertitur eorum sententia,
+<lb/>qui ajunt; .apparentem corporum alterationem quandam
+<lb/>esse concretionem. et secretionem , quemadmodum
+<lb/>sensere Epicurus et Democritus, nec non, quamvis alio
+<pb n="1.484"/>
+<lb/>quodam modo., Anaxageras et Empedocles; horum .enim
+<lb/>alter similaria, alter quatuor quidem elementa, verum
+<lb/>ea intransmutabilia . introduxit. Nos vero eam rationem
+<lb/>explicabimus, ut illam clariorem, et proinde
+<lb/>probabiliorem reddamus, quae talis erit. Si nos dolemus,
+<lb/>neque specie una erit neque impetibilis nostra
+<lb/>substantia; dolemus autem: quare non una secundum
+<lb/>speciem neque impetibilis erit substantia nostra. .Atqui,
+<lb/>si patitur, oportet, ..ut calefacta frigefactave, hnmectata
+<lb/>.aus exiccata patiatur.; . quum nulla alia qualitate
+<lb/>possint, quae sibi invicem proxima sunt, alterari
+<lb/>tota per tota. Nam nec grave, si prope rem levem accedat,
+<lb/>propterea aut grave leve, aut contra .leve grave
+<lb/>reddetur; nec afperum, si laevi fiat ricinum, aut
+<lb/>densum raro, aut crasso tenue; nullum enim horum.
+<lb/>idj quod illi proximum est, totum potest et per tutum
+<lb/>immutare. Sed reliqua- praeterea sunt durum et
+<lb/>molle, . viscidum et friabile: verum ex his molle quidem
+<pb n="1.485"/>
+<lb/>et viscidum ad humidorum, durum vero etfriablle
+<lb/>ad siccorum naturam pertinent ; porro - nullae
+<lb/>aliae praeter istas sunt tactiles qualitates. Quod vero
+<lb/>ma tersae alterationes minime-- visibiles sequantur qualitates,
+<lb/>nec etiam eas, quae ad auditum, gustum- aut
+<lb/>olsactum attinent, jam omnibus satis constat: verum
+<lb/>et hae quidem sunt e genere tactilium qualitatum; sed
+<lb/>ab illis, quae proprie tactiles sunt, hoc differunt, quod
+<lb/>hae necne in omnibus animalium generibus consistunt,
+<lb/>neque substantias transmutanti Quod si hae quibusdam
+<lb/>tantummodo animantibus peculiares sunt , illae vero
+<lb/>universam .substantiam transmutant et atterant , et
+<lb/>natura primae sunt, et rerum omnium communes, et
+<lb/>elementorum constitutrices, manifestum est, quod calor
+<lb/>et frigus humorque et siccitas cujusque rei substantiam
+<lb/>constituant. Et proinde recte Hippocrates non
+<lb/>hominis modo, sed aliorum etiam omnium naturam ex
+<lb/>calido , frigido , humido et sicco eite constitutam
+<lb/>pronunciavit. Siquidem. haec, ut omnes fatentur, mutuo
+<lb/>inter se manifesto agunt; neque n fecretione et
+<pb n="1.486"/>
+<lb/>concretione habent quod agant , sed ex eo potius,
+<lb/>quod ipsa substantia per se ipsam totam patitur et ttlteratur.
+<lb/>Et equidem non possum non Athenaeum adnttrari,
+<lb/>qui nec ista, quae nunc expolita sunt, nec
+<lb/>ea etiam, quae ab Aristotele et Chrysippo addita sunt,
+<lb/>profuere voluerit, sed censuerit potius, absque ulla demonstratjone
+<lb/>elementa esse pro compertis accipiendaAttamen
+<lb/>tibi adversus Afolepiadem disserit, horum, etsi
+<lb/>non prorsus omnium, quoquo modo meminit, neque
+<lb/>tamen sub disceptandi turmula; nam nec ordinem
+<lb/>adhibet, nec logica utitur mcthotso, dum illi adversatur;
+<lb/>eorum enim meminit sine ullo ordine illa discerpens.
+<lb/>Unde et hac parte damnandus est, quod rerum
+<lb/>naturalium disciplinam ab Hippocrate institutam ipse
+<lb/>prodiderit. Mihi vero jam opportunum videtur , ut
+<lb/>primo libro finem imponamus; itam alia, quaecunque
+<lb/>his sedis, quae impatibilem statuunt substantiam, cui
+<lb/>inter.miscent etiam vacuum, obiici possunt, ea partim
+<lb/>trb Aristotele et Pheophrasto explicata sunt, partim a
+<lb/>nobis, quo lotio particulatim unicttique sectae contradiximus.
+<pb n="1.487"/>
+<lb/>Sed illa quidem ex abundanti. Quantum
+<lb/>enim ad demonstrationem scientiis congruentem attinet,
+<lb/>haec ipsa: quae hoc loco diximus, abunde erant: siquidem
+<lb/>neque adversari quisquam potest, quin substantia
+<lb/>per Ie tota non atteretur , quippe quia statim e
+<lb/>medio dolorem tolleremus , voluptatesque praeterea,
+<lb/>et surdum, et memoriam, et rationem, atque etiam
+<lb/>tandem ipsum animum: sed neque quod alia sit quali-.
+<lb/>tas, his quatuor exceptis, quae possit aliquid per totum
+<lb/>transmutare. Quare si res se ita habeat, primus
+<lb/>protecto omnium Hippocrates videtur naturae rerum
+<lb/>omnium elementa excogitasse, atque, quantum satis esse
+<lb/>possit , demonstrasse, Neque vero nos moveat,
+<lb/>quod ille suum commentarium non inscripserit de eIementis,
+<lb/>quemadmodum Asclepiades medicus; nihil enim
+<lb/>hic resert, quum veteres sere omnes videamus sua monumenta
+<lb/>literarum de natura inscripsisse , ut Melissus,
+<lb/>P armeni des , Empedocles , Alcmaeon , Gurgias, Prodicus
+<lb/>, caetertque omnes. Sed Aristotelcs in libris de
+<lb/>caelo et in libris de generatione et interitu agit
+<pb n="1.488"/>
+<lb/>de elementis; Chrysippus in libro de substantia; nec
+<lb/>istorum quispiam libras de elementis inscripsit. Verum
+<lb/>ipsis vocabulis non est plurimum insistendum; vis enim
+<lb/>sermonis potius perpendenda est. Et equidem nihil ego
+<lb/>interesse putaverim, si quis opus hoc de natura ittscriberet,
+<lb/>vel de elementis, vel etiam de generatione et
+<lb/>interitu, vel de substantia. Quum tamen hac tempestate
+<lb/>invaluerit haec consuetudo sere apud omnes, ut
+<lb/>hujuscemodi commentaria de elementis titulum habeant,
+<lb/>nos etiam operae pretium duximus, ut de elementis ex
+<lb/>Hippocrati sententia inlcriberemtts. Iamque videor
+<lb/>primum hunc librum ad calcem deduxisse ; nam si particulam
+<lb/>quampiam ex iis , quae ab Hippocrate scripta
+<lb/>sunt, praeteriimus absque expositione, Iacile id poterit
+<lb/>ex his unusquisque assequi, quae nos jam explicavimus,
+<lb/>sicut illud, quod oporteat generationem non
+<lb/>esse ex uno; et id etiam, quod, nisi calidum et seigidum
+<lb/>et humidum et siccum inter sese moderate
+<lb/>atr aequaliter habuerint, sed alterum nimis alturum
+<pb n="1.489"/>
+<lb/>excellat, sortitis, inquam, id quod imbecillius
+<lb/>est, nulla unquam sutura est generatio. . Hoc enim
+<lb/>loco de eorum agit moderatione atque virium aequalitate,
+<lb/>quae nos tum in Iibris de temperamentis, tum
+<lb/>etiam mox in attis exponemus ; et praeterea quo pacto
+<lb/>ea, quae miscentur, per tota temperentur Inlisae qualitatibus
+<lb/>, ut A r isto telas sensit , an potius ipsis etiam
+<lb/>corporis substantiis in sele mutuo penetrantibus ; quae
+<lb/>tamen non est opus medicum scivisse, et proinde nihil
+<lb/>de his Hippocrates pronunciavit; satis enim ipse habuit,
+<lb/>si monstraret, elementa per totum temperari. Quippe
+<lb/>quoniam haec non parum uIui Iutura sunt, partim ad
+<lb/>librum de temperamentis, quem paulo post prosequemur,
+<lb/>partim ad librum de medicamentis , sed et in Iibro de
+<lb/>curandi methodo de horum usu abunde Eamus sermonem
+<lb/>habituri. Quantum vero ad praesens negotium
+<lb/>attinet, hoc praeterea dixisse satis suerit, quod ea,
+<lb/>quae ab Asclepiade in libro de elementis contra illos
+<pb n="1.490"/>
+<lb/>proteruntur , qui totas substantias per totas misceri
+<lb/>statuunt, minime eos attingunt, qui fidas ajunt qttalitates
+<lb/>temperari. Unde ex hoc saltem capite, si non
+<lb/>ex alio, hoc decretum esset recipiendum, quod tutius
+<lb/>nimirum sit; dicendumque proinde est, quod, si vinum,
+<lb/>exempli gratia, aquae immisceatur, particulae horum
+<lb/>utrorumque in minima infutnguntur , moxque inter se
+<lb/>mutuo agunt et patiuntur, et eo lacibus sibi invicem
+<lb/>qualitates impertiuntur , quo suerint in minutiora redactae;
+<lb/>et propterea, qui id genus res permiscent, diutius
+<lb/>eas commovent, eo commento divisionem in ntinima
+<lb/>molientes. Atqui et ipsa ratio dictat, qualitates
+<lb/>eorum melius simul uniri, quae magis et diutius suerint commixta;
+<lb/>nam tempore opus est, ut eorum, quae commiscentur,
+<lb/>mutuae particulae inter se invicem exacte
+<lb/>agant et patiantur, atque ita totum id unum et sibi
+<lb/>undique et penitus simile evadat. Et hac de causa
+<lb/>nonnulla possunt statim post mixtionem segregari; quae
+<pb n="1.491"/>
+<lb/>si diutius permanserint, et tantisper, donec fotum faorum
+<lb/>fuerit unum, nequit alterum ab altero amplius
+<lb/>divelli. Nos tamen iterum in libro de medicamentis
+<lb/>nonnulla adhuc de ratione temneraturae , quae per totum
+<lb/>est, dicemus.
+</p>
+<pb n="1.492"/>
+</div>
+</div>
+<div type="textpart" subtype="book" n="2">
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE ELEMENTIS, Ex HIPPOCRATE
+<lb/>LIBER SECVNDVS.</head>
+
+
+<p rend="indent">Sed jam opportunum fuerit, ut ad fecundum
+<lb/>librum accedamus. Ut eum Hippocrates demeastravit,
+<lb/>calidum, frigidum, humidum et siccum esse
+<lb/>communia rerum omnium elementa, mox ad alterum
+<lb/>transit elementorum genus, non amplius quidem priurum
+<lb/>aut commune, fed animalium sanguineorum proprimo.
+<lb/>. Sanguis enim pituitaque et bilis utraque flava
+<lb/>ac atra sunt non modo- generationis hominum , fed eaeterorum
+<lb/>etiam animantium sanguine praeditorum elementa.
+<lb/>Hominis vero propria sunt ipsae partes minimae,
+<pb n="1.493"/>
+<lb/>quae similares appellantur: quamvis et in his aliquam
+<lb/>habeat cum nonnullis sanguineorum .animalium communionem,
+<lb/>sicut cum bove; cane, equo et quibuscunque
+<lb/>aliis hujusce generis. Siquidem haec omnia
+<lb/>venas habent et arterias, et nervos, et ligamenta. et
+<lb/>membranas carnesque , attamen non omnia nsqneqnaque
+<lb/>humanis similia; imo quaedam etiam sunt alterius
+<lb/>cujusdam generis , qualia ungulae , aculei , rostra,
+<lb/>fquamae et cortices. Unde quemadmodum communia
+<lb/>omnium elementa erunt calidum, frigidum, humidum
+<lb/>et siccum; ita rursus . propria uniuscujusque animalis
+<lb/>sunt partes illae, quae sensu primae habentur, de quibus
+<lb/>in dissectionum pertractationibus sermo habetur:
+<lb/>inter has vero et illa medium in nobis quidem humores
+<lb/>quatuor locum obtinent; in aliis vero animantibus
+<lb/>quicquid unicuique illorum proxima fuerit generationis
+<lb/>materia : nam hoc sane modo id consueverunt
+<lb/>appellare, ex quo primum fit aliquid, nulla praeterea
+<lb/>media egens transmutatione.
+</p>
+<pb n="1.494"/>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">At vero quod omnes sanguineorum aniorantium
+<lb/>partes ex matris sanguine gignantur, jam fatis
+<lb/>omnibus constat. Et quum sit is pituitae, necnon
+<lb/>et utriusque bilis particeps , non absque ratione ex hoc
+<lb/>capite dissidium ortum est: quippe quod nonnulli fuerint,
+<lb/>qui ex fotu sanguine assererent nos esse genitos,
+<lb/>alii vero ex succis quatuor. Nec aeque est deinde in
+<lb/>his facile veritatem monstrasse, ac .in primis elementis ;
+<lb/>siquidem utraque horum sumentia probabilitate non
+<lb/>vacat.. Ego vero conabor ea explicare, unde addootus
+<lb/>est Hippocrates, ut sentiret, humores quatuor
+<lb/>materiam este generando homini, huic tamen sumpto exordio.
+<lb/>Similaris quidem et caro est, et nervus; verum
+<lb/>caro sanguinea et mollis est, atque etiam calida;
+<lb/>at nervus in his omnibus contra ac illa se habet,. utpote
+<lb/>qui exauguis fit, durus ac frigidus. Verum. enimvero
+<lb/>nec illa omnino mollis et calida est, neque durus
+<lb/>ac frigidus est nervus; fanguis quippe carne molliori
+<lb/>i
+<pb n="1.495"/>
+<lb/>ac calidior est; os autem nervo durius et.frigidius, et
+<lb/>ita caeterae particulae sigillatim fe habent : nam haec
+<lb/>quidem altera frigidior est, illa vero calidior, atque
+<lb/>haec mollior, illa durior. Quid ergo, ex eadem omnia
+<lb/>procreata fiunt substantia , vel potius sagax rerum opifex
+<lb/>natura, quo primum tempore ex sanguine ab ipsa
+<lb/>matre in uterum delato foetum procreabat atque formabat,
+<lb/>quod in eo crassius erat, ad solidiora corpora
+<lb/>constituenda attraxit, quod vero tenuius, ad molliora;
+<lb/>et simili. etiam modo, quod calidius erat, ad calidiora,
+<lb/>et etiam , quod frigidius , ad frigidiora ? Et sane mihi
+<lb/>ridetur quidem longe esse magis naturae consentaneum
+<lb/>et statim ab ipsis initiis- formari foetum, ac subsequenti
+<lb/>etiam tempore universo unamquamque particulam suum
+<lb/>habere alimentum augmentumque ex propria peculiarique
+<lb/>materia Nam fanguis, ut lac etiam, una quaedam.
+<lb/>res videtur; ratio tamen- docet, illum non esse unum,
+<pb n="1.496"/>
+<lb/>sicut nec lac. . Nam in lacte aliquid est, quod omnino
+<lb/>fetosum ac tenue est, aliquid etiam, quod penitus carei
+<lb/>speciem rescrt crassumque est: et dum haec simul erant
+<lb/>contemperata, lac constituebant, quod inter culeum
+<lb/>medium erat et serum : simul autem ut discernuntur et
+<lb/>propria eorum forma inde ostenditur., et praeferea
+<lb/>docetur, lactis naturam unam non esse usquequaque,
+<lb/>red ex contrariis atque - etiam differentibus concretum.
+<lb/>Quemadmodum igitur in lacte et ferum reperitur et careus,
+<lb/>-sic et in sanguine liquor quidam est, qui sero in
+<lb/>facte pro portione respondet; est et id, quod veluti limus
+<lb/>quidam - ac faex sanguinis est , et cafieo in lacte
+<lb/>assimilatur. Sed et fibras in sanguine deferri, nemo est
+<lb/>qui videre non possit : quae si ex eo detrahantur;
+<lb/>jam non concrescit amplius fanguis , qui deinde non
+<lb/>parum, illis exemptis, colore ac substantia differtquippe
+<lb/>quum ex eo -pars quaedam omnino rubra. videatur,
+<lb/>alia vero potius -.flavescet, quaedam etiam magis
+<lb/>ad atrum vergat, nonnunquam vero et aliquid albi- cans
+<lb/>se in illius superficie aperte offert , interdum
+<pb n="1.497"/>
+<lb/>tamen totus tere videtur livens , saepe adeo nigrleat, ut
+<lb/>me hercle purpuram quandam saturam reserre videatur.
+<lb/>Unde sanguis minime unum erit, quia, si esset revera unum,
+<lb/>nimirum (ut mihi quidem videtur in omnibus cum animantibus
+<lb/>tum hominibus usquequaque similis. Attamen qttandoque,
+<lb/>quod crassam nigrumque est, adeo alia lu eo superat, ut
+<lb/>universi corporis color nigrior videatur, cicatricesque nigriores
+<lb/>reddantur atque venae in cruribus varicosae fiant,
+<lb/>et liventi quodam colore sussusae. Quandoque
+<lb/>vero quod flavum est: ut Iacile et ex capillis, et ex
+<lb/>corporis colore, et praeterea ex vomitu et alvi dejectionibus
+<lb/>conspicitur. Nonnunquam etiam id , quod aut
+<lb/>rubrum est, aut album: quae et ipsa tum in colore
+<lb/>totius corporis, tum in vomitu et alvi excrementis notari
+<lb/>possunt. Quod si ipsas etiam venas seces hominibus
+<lb/>, qui prospera adhuc sumuntur valetudine : ab his
+<lb/>quidem flavus profluet sanguis, ab abis ruber, ab aliquibus
+<lb/>nigrior, ab aliis albior. Sed si medicamenttun
+<lb/>insuper exhibeas, quod vim habeat corpus purgatidi:
+<pb n="1.498"/>
+<lb/>illud ejusmodi quidem humorem evacuabit, quaIem
+<lb/>attrahendi vim insitam habet: verum non tantumdem
+<lb/>in quacumque corporis natura, sive Ianum id sit,
+<lb/>sive aegrotet. Nam (ut a morbidis exordiar) si laboranti
+<lb/>morbo regio medicamentum dederis, ex his, inquam,
+<lb/>quae bilem eam, quae flava aut pallida appellatur,
+<lb/>educunt: plurimam ille bilem dejiciet. Si vero id ipsum
+<lb/>ei dederis, qui aqua tenetur intercute, quam leucophlegmatian
+<lb/>vocant : bilis admodum parum educes.
+<lb/>Si rursus medicamentum obtuleris, quod vim habeat solvendi
+<lb/>pituitam: id quidem exiguam ab eo, qui morbo
+<lb/>arquato arreptus est, pituitam detrahet, nec line ingenti
+<lb/>illius noxa : plurimum vero ab illo, qui ea intercute
+<lb/>aqua laborat, quam nuper nominavimus, et absque
+<lb/>ullo incommodo. Atqui et eis , qui morbo elephantiasi
+<lb/>tentarentur , medicamentum purgatorium , quod
+<lb/>atram bilem purgat, tradidimus saepissime, et subinde copiosam
+<lb/>sacil.emque et cum utilitate maxima evacuationem
+<lb/>consequentem vidimus.
+</p>
+<pb n="1.499"/>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">At Asclepiades, qui optima quaeque hujus
+<lb/>artis propter illos admirabiles tumores meatusque sua
+<lb/>oratione evertere sibi proponit, conatur nobis dissttadere,
+<lb/>quod medicamentum quodcumque peculiarem libi humorem
+<lb/>detrahat, Ied illum potius transmutat, convertit,
+<lb/>atterat, ac tandem in sui ipsius naturam id, quod
+<lb/>Ipsum trahit, qualecunque suerit, corrumpit. Nec deinde
+<lb/>juvamen, quod purgationem consequi videmus, ait
+<lb/>ipse evenire propterea, quod id vacuetur, quod infestabat,
+<lb/>sed ex communi potius evacuationis ratione. Sic
+<lb/>igitur Asclepiadis sermo apparentibus imprudenter adversatur.
+<lb/>Porro quod apparet, ut Hippocrates caeterique
+<lb/>medici rent hanc experientiae examine indagando
+<lb/>didicere, ita, ut nos antea diximus, se habet. Nam si
+<lb/>biliosa homini medicamentum, quod pituitam purgandi
+<lb/>sacultatem habeat, exhibere tentaveris, sane non dubito,
+<lb/>quin sis hoc illius decretum non sine damno exper-^
+<lb/>turtis. Praeterea si purgatoria medicamenta ea tantum
+<lb/>ratione juvant, quod evacuant: cur non omnibus venas
+<lb/>Iecatnus hominibus, qualescunque illi sint, graciles
+<pb n="1.500"/>
+<lb/>aut crassi, sive regio morbo teneantur, sive hili atra
+<lb/>vexentur? Atqui ex his. plurimi, qui graciles erant, ex
+<lb/>purgatione humoris, a quo infestabantur, non parum
+<lb/>praesidii reportarunt: quibus, si sanguinem detrahere
+<lb/>auderes, interitum protinus inferres. 0 Sed Asclepiades
+<lb/>ab illis tumoribus mealibusque ac incompactis elementis
+<lb/>cogitur haec proferre : quippe quum hinc sequatur.
+<lb/>ut nulla. sit qualitas nostrae naturae. aliena, adeo .ut
+<lb/>neque .etiam eorum excrementorum , quae quotidie . per
+<lb/>alvum vacuantur: et proinde quum alvus supprimitur,
+<lb/>nos ratione multitudinis laedamur, alique remedio erit
+<lb/>vel porco vesci, vel omnino a cibo fe continere. Et
+<lb/>plurima suis sermonibus Asclepiades commentus est,. quae
+<lb/>cum his pugnant, quae evidentia sunt. Et sane haec
+<lb/>illis quidem i occasionem dubitandi praestant, qui ea iguorant,
+<lb/>quae apparent; at illi, qui horum periti sunt, istius
+<lb/>hominis impudentiam admirantur et stupenti Caeterum
+<lb/>nos contra Asclepiadis audaciam in aliis plura asseremusti-
+<lb/>nunc ad -ea, quae manssesto apparent, redeuntes
+<pb n="1.501"/>
+<lb/>Hippocratis verba sequamur; qui ne vaticinari quidem potnissesi
+<lb/>sere unquam medicum quempiam adeo imperitum
+<lb/>et impudentem. sicut Asclepiades, ut vel ignoraret ea,
+<lb/>quae sunt in artu ita exigua, vel, si calleret ea, negaret
+<lb/>se novisse: quod [ut reor) in causa suit, cur
+<lb/>nostra, dum horum impudentiam insectamur, longior,
+<lb/>quam par sit, evadat oratio: Hippocrati vero brevis
+<lb/>et concita, utpote qui id, quod evidenter apparet, absque
+<lb/>ulla probatione scripserit, quum ne Inspiratus quidem
+<lb/>unquam sit, ullum fore, qui haec ignoraturus aut
+<lb/>etiam negaturus esset-</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Nam adversus eos, qui autumant, hominem
+<lb/>esse solum sanguinem, vel quodvis aliud, quod
+<lb/>unum sit, .illi hoc tantummodo dixisse satis suit, ut
+<lb/>nimirum censeret, eos ostendere hominem, qui nec ser.mam
+<lb/>mutet, nec alioquin varietur, et tum lu aliquo
+<lb/>anni tempore vel aliqua Ini aetate videatur ipsis unus
+<lb/>solusque sanguis. Nam consentaneum rationi videtur
+<lb/>(ait ipse), ut aliquo saltem tempore id, quod in ipso
+<pb n="1.502"/>
+<lb/>unum est , repraesentet. At deinde ut monstraret, bilem
+<lb/>duplicem sanguini semper esse permixtam, flava m (inquam)
+<lb/>et atram , et praeterea tertio loco pituitam,
+<lb/>quae ex natura in aetatibus et temporibus videntur,
+<lb/>explicavit. Si enim [inquit) homini medicinam pirula
+<lb/>tam purgantem exhibueris, ille tibi pituitam evomet:
+<lb/>quod si medicamentum dederis, quod bilem ducat, vomitu
+<lb/>bilis rejic.ietttr: Ii particulam quampiam corporis
+<lb/>tersas ita, ut vulnus infligatur, profluet ab eo sanguis.
+<lb/>Haec vero (ait) tibi evenient, quotiescunque id csteceris,
+<lb/>nocte aut die, hyeme aut aestate. Deinde ostensurus,
+<lb/>his ejus naturam constare, hoc est, quod ex his omnibtts
+<lb/>partes ipsius et procreatae sint, et alantur, haec
+<lb/>profert. Primum quidem homo semper, donec vixerit,
+<lb/>videtur manilesto habere in se ipso haec omnia:
+<lb/>sed et ex homine, in quo sunt haec, genitus est, .et in homine,
+<lb/>ubi ea sunt omnia, quotquot ego affirmo et monstro,
+<lb/>nutritus est. Haec, quotiescunque voluerit quis e medio
+<lb/>temeritatem Asclepiadis aulerre , satis sunt ad iussitstrandum.id,
+<pb n="1.503"/>
+<lb/>quod propositum est: quia, si unum quod-:
+<lb/>que purgantium medicamentorum. humorem quempiam
+<lb/>attrahit, nec aliquo tempore illud dabis; quin proprium
+<lb/>humorem evacuet, liquido jam constat, nullum fore
+<lb/>tempus, quo homo expers fit humorum quatuor. ,Ejus
+<lb/>etiam ortus ex sanguine materno fuit, non quidem puro,
+<lb/>sed cui esset tum pituita, tum duplex intermixta bilis;
+<lb/>quum sit ostensum , hominem . quolibet tempore haec
+<lb/>in se ipso continere. Itaque , si et ex his homo genitus
+<lb/>est, atque etiam ex his tuum habet et alimentum
+<lb/>.et incrementum,. haec ipsa illius quoque natura erunt.
+<lb/>Porro haec sunt hujus sermonis. capita. Sed eorum,
+<lb/>quae particulatim in hoc libri, dicuntur, nonnulla eo
+<lb/>fpectant; ut de transmutatione per aetates agant et anui
+<lb/>tempora; alia . vero fidem faciunt, nec eam exiguam,
+<lb/>quod unumquodque purgantium medicamentorum humorem
+<lb/>sibi peculiarem : attrahat,:. atque etiam; quod homo
+<lb/>egeat quatuor. his jam saepius .dictis humoribus. Iam
+<pb n="1.504"/>
+<lb/>enim ea, quae, dum purgationis modum excedunt, fieri
+<lb/>videmus, ostendunt, cur proprium humorem pharmacum
+<lb/>quodlibet attrahat. Quotiescunque enim quis medicamentnm
+<lb/>hauserit, quod vim habeat bilem vacuandi
+<lb/>, vomitu hujuscemodi humorem ejiciet, mox pituitam
+<lb/>, postmodum bilem atram evomet et postremo
+<lb/>sanguinem purum. Et hoc idem (ait ipse) patiuntur
+<lb/>a medicamentis , quae pituitam evacuant: nam primum
+<lb/>pituitam evomunt, postea bilem flavam, deinde atram,
+<lb/>tandem vero purum sanguinem , ac inde intereunt.
+<lb/>Haec quidem est ejus dictio, ex qua licet manifesto
+<lb/>etiam inlerre, quod unumquodque medicamentum , cui
+<lb/>vis purgatoria inest , proprium attrahit humorem.
+<lb/>Quum enim animal se ipso imbecillius saetam suerit,
+<lb/>et a vi medicamenti omnino victum , ut jam mors inst.et,
+<lb/>tunc prioris humoris evacuatio desinit, ipIamque alterius
+<lb/>mox subsequitur. Atqui, si Asclepiadi assentiamur, ex
+<lb/>duobus alterum necesse est, aut nullum praeterea humorem
+<lb/>evacuari , aut eum ipsum, qui a principio serebatur:
+<pb n="1.505"/>
+<lb/>quia, medicamento quidem, quod jam exbibitum
+<lb/>est, imbecilli Iacto, nullum; eo vero vigente,
+<lb/>et proinde id agente, quod ex natura habet ut agat,
+<lb/>illum serri oportebat,^ quod purgari statim ab initio
+<lb/>coeperat. Nam si prius quidem, dum corpus esset adhuc
+<lb/>robustius, poterat medicamentum colliquatae, et
+<lb/>transmutare illud in quod tua sert natura : an non poterit
+<lb/>hoc idem agere etiam nunc , posteaquam imbecillius
+<lb/>Iactum est( quod tamen agat, patet, quippe
+<lb/>quum nihilominus in praesenti evacuetur, dissolvatur
+<lb/>ac corrumpatur corpus. Unde ibitur est hoc, quod.
+<lb/>humor, qui nunc evacuatur, non amplius priori similis
+<lb/>videtur^! nulla Iane alia de causa, praeterquam
+<lb/>quod univerIus propemodum humor ille e corpore detractus
+<lb/>est , ut deinde neque incolume animal esse pussit
+<lb/>, utpote quod unum omnino ex suis amiserit elementis
+<lb/>, sed dissolvatur potius ac intereat ; mox autem
+<lb/>ex. reliquis prosunt humor ille, qui aptior est, ut
+<lb/>evacuetur. Ob id igitur semper medicamentum, sive
+<lb/>atram bilem vim habeat attrahendi , sive pituitam,
+<pb n="1.506"/>
+<lb/>quum evacuatio modum excedit, flavam bilem educit,
+<lb/>quippe quae et tenuissima sit et calidissima. Quod
+<lb/>si-medicamcu ex his siti,: quae flavam bilem cient, post
+<lb/>eam statim in excedentibus purgationibus pituita censequitur;
+<lb/>delude vero atra bilis , quod ea gravissima sit
+<lb/>crassaque et ad motum inepta; omnium. autem sanguis
+<lb/>postremus ; is enim naturae maxime affinis est.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">mnde et eorum tam philosophorum quam
+<lb/>medicorum laudanda est sententia, qui statuerunt, .anirnal
+<lb/>ex iolo sanguine et gigni et nutriri t utpote
+<lb/>quod consentanea rationi pronunciaverint. Hippocrates
+<lb/>tamen propius ad rerum naturam accessit,. qui in ortum
+<lb/>et alimentum incrementumque nostrorum corporum quatuor
+<lb/>retulit humores.- - Nam (ut prius dictum esij plorimam
+<lb/>in his, qui bene valent, formae corporum
+<lb/>conspiciebat varietatem : quae alioquin , si. unus tantum
+<lb/>esset elementaris humor , nulla esset i f et praeterea
+<lb/>etlam particularum naturas adeo -diversas esse animaivertebat
+<pb n="1.507"/>
+<lb/>, ut minime videretur consentaneum , ipsas
+<lb/>vel inter initia statim ex eadem substantia suille procreatas,
+<lb/>vel deinde unico usas alimento. At IIippo.crates
+<lb/>haec omnia, quae ego modo exposui, ipse brevissima
+<lb/>oratione complexus est, his nimirum verbis:
+<lb/>Quemadmodum enim stirpes et semina terrae mandata
+<lb/>inde eorum unumquodque id, quod tuae naturae- congruum
+<lb/>et alsine in ipsa reperitur, attrahunt [terrae
+<lb/>autem inest et acre, et dulce, et amaruleutum , et
+<lb/>salsum , et cujuscunque alterius generis :  sed id plurimum
+<lb/>ac primum trahunt, quod maiorem habet cum
+<lb/>sua natura affinitatem , mox vero et alia quoque :
+<lb/>nec secus etiam in corpore agunt medicamenta. Porro
+<lb/>hoc sermone, quae ad nutritionem spectant et evacuationem,
+<lb/>quae sit, dum purgamur, exacte nos docuit ; quae
+<lb/>tamen opus erit ut nos Iustus in nostris commentariis
+<lb/>de naturalibus lacunaribus explicemus. Verumenimvero
+<lb/>non erit sorsitan ab re, nunc quoque rem bane
+<lb/>summatim exponere. Sane naturalis quaedam vis rei
+<lb/>uuicuique inest ea attrahendi, quae sibi conveniunt.
+<pb n="1.508"/>
+<lb/>sicuti in magnete .vis est attrahendi ferrum. Atque per
+<lb/>hanc facultatem. cum nutritiones, tum. evacuationes fiunt,
+<lb/>ipsa quidem semper id, quod convenit, attrahente,
+<lb/>si illius copia suppetat , nonnunquam tamen cum
+<lb/>hoc aliquid ejus, quod illi non convenit. quod etiam
+<lb/>purgantibus medicinis evenit. Quippe quae, ubi universum
+<lb/>id bilis aut pituitae, quod in corpore fluitat,
+<lb/>(sic enim dixerim de. his, quae in venis continentur)
+<lb/>attraxerint , ipsum peculiarem solidarum humorem partium
+<lb/>vi et labore attrahunt , eas quasi dissolventes
+<lb/>et ad elementa deducentes, et animal internecioni tradentes.
+<lb/>Violentiam vero illius attractionis alius quis- .
+<lb/>piam humor consequitur illi affinis, qui primum ri attrahebatur.
+<lb/></p>
+</div>
+</div>
+</div></body>
+  </text>
+</TEI>

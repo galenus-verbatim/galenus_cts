@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De plenitudine</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg050.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="513" to="583">513-583</biblScope>
+              <date>1824</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x07">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="342" to="353">342-353</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="322" to="346">322-346</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x07">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg050.verbatim-lat1">
+<pb n="7.513"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="7.513"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE PLENITVDINE LIBER.</head>
+
+
+<p rend="indent">Omnes prope hujusce temporis medicos
+<lb/>aliud nomen quam plenitudinis neque frequentius nominare
+<lb/>, neque eo quicquam aliud magis ignorare deprehendimus.
+<lb/>Quicunque igitur possunt rationem tum reddere, tum percinere,
+<lb/>ipsorum plurimi quid tandem plenitudinem appellent
+<lb/>interrogantibus, id nomen, quemadmodum et multum er
+<lb/>paucum, in relatione ad aliquid dici respondent, proinde
+<lb/>ipsam mensirra definiri non posse. Quod enim alteri mustum
+<lb/>, hoc interdum alteri malus est. Quumque ipsius rogaveris
+<lb/>petendo, ut rem ad quam referri plenitudinem prolitentor,
+<pb n="7.514"/>
+<lb/>explicent, nonnulli quidem magis muti quum pisces
+<lb/>fiunt; quidam vero tam multa et absurda nugantur, ut
+<lb/>quae ah ipsis enunciantur, ea non pollis assequi. Sed paucissum
+<lb/>multum et paucum pro ratione virium intelligi putant;
+<lb/>fique rursum ipfos rogites, quid vires vocitent, nonnulli
+<lb/>nihil prorsus respondent; qui vero pronunciare quid
+<lb/>ausi fuerint, eormn nullus ac alter idem profert; plurimi
+<lb/>autem omnia potius quam vires interpretantur. Sed si quis
+<lb/>inter ipfos reperiatur eousque peritus, ut vires dicat esse
+<lb/>vel effectricem substantiam , vel causam effectricem , rogetur
+<lb/>postea primum, an quaedam fit substantia ejusmodi, quae
+<lb/>animal gubernet, delude fi fit, quid tandem ipfia sit , explicet;.
+<lb/>nequaquam prout interrogatur, controversiam diluit.;
+<lb/>verum aut omnino tacet, aut absurdam adeo profert orationem
+<lb/>, ut tacere satius sit. Siquis vero in sus comperiatur
+<lb/>eousque sapiens ac modestus, ut quae virium sit substantia
+<lb/>proferre nequeat, quod autem sit, ex actionibus augmari
+<lb/>fe dicat; interrogatus iterum is ipsis, an quae ab
+<pb n="7.515"/>
+<lb/>Asclepiade multisque Asclepiadis sectatoribus ac methodicis
+<lb/>de eo scripta fuerunt, quod nullae animantibus infuit vires,
+<lb/>perpenderit discusseritque , apparet utrum ab illis ea prodita
+<lb/>flet, haudquaquam novisse. Rursum prorsum inter
+<lb/>illos ipsus, quicunque vires non esse contendunt, quod relatione
+<lb/>quidem ad ipsas plenitudinem tum intelligi, tum constitui
+<lb/>negent, dilucidius innotescit. Non enim fieri potest,
+<lb/>ut plenitudo comparatione ad imperfectum , qui plane non
+<lb/>existit, habitum et intelligatur et constituatur; ceu ad solas
+<lb/>valorum capacitates et multum et paucum contendunt esse.
+<lb/>Interdum vero per initia neque omnino plenitudinem nominant,
+<lb/>neque ab ea aliquam evacuationis in dicationem accipiunt,
+<lb/>sed a sola constipatione , quam quod nemo illorum
+<lb/>eodem modo recenset, alibi demonstravimus. Est sane tertius
+<lb/>quidam estus chorus illorum , qui neque norunt utrum
+<lb/>et quaedam fint et an minime sint vires, neque se inquirere
+<lb/>fatentur, verum signis quibusdam evidenter. apparentibus
+<lb/>circa aegrotantem obortis longa experientia libi evacuationem
+<lb/>inventam dicunt. Hi fi rogentur, quae tandem sint ea
+<pb n="7.516"/>
+<lb/>signa, valorum distentionem, ruborem, universi corporis
+<lb/>gravitatem, ad motum pigritiam, memhrorumque trusionem
+<lb/>esse pronunciant. Eorum nonnulli et ulcerosum opero-.
+<lb/>fumque lassitudinis tensum adiiciunt; ad haec priorem ritam
+<lb/>in etio et liberaliore eduliorum ac potuum usu transactam,
+<lb/>et consuetarmn excretionum retentione. In hac igitur fyndrome
+<lb/>( sic enim vocant symptomatum congeriem j venae fedionem
+<lb/>ex observationibus factis ajunt prodesse. Hi igitur.
+<lb/>non folum a fe ipsis, verum ab universis aliis hominibus
+<lb/>etiam rationem auferunt, quum experientia omnia reperiri
+<lb/>asserunt. Alii vero, quemadmodum jam nunc dictum est,
+<lb/>ratione utundum esse pronunciant. Hi vires quoque nullas
+<lb/>plane esse ; illi .esse quidem , fed earum substantiam a nullo
+<lb/>cognosci constent; ut paucissimi suit, qui virium aut facultatum
+<lb/>substantiam et essentiam pronunciare audeant; imo
+<lb/>nec harum etiam numerum, nec essentiam eandem omnes
+<lb/>ostendunt. Quinetiam. ex istis qui commentarios posteris.
+<lb/>reliquerunt, quidam minore negotio tanquam de una facule.
+<pb n="7.517"/>
+<lb/>tale animal regente disputant, nulla ratione adhibita; quidant
+<lb/>id probare conantes , plures quam unam non esse ajunt.
+<lb/>Proinde necesse est latu illum, qui in aegrotantis corpore
+<lb/>plenitudinem esse judicet, a medicis empiricis appellatis et
+<lb/>methodicis, sive ad vires, sive ad vasa plenitudo respiciat,
+<lb/>dissensisse.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Jam vero et a nobis adversus empiricos- et
+<lb/>methodicos oratio in aliud tempus disseratur; alios vero aggradiamur,
+<lb/>qui ratione artem administrari dicunt, Sed et
+<lb/>nonnulli hujus tempestatis eo procedunt audaciae, .ut etiam
+<lb/>rectarum nomina sibi nscribant; quum quae ad ipsas spectant,
+<lb/>eorunr nihil quicquam agnoscere possint. . Audire etenim frequenter
+<lb/>licet multos coram aegris dicentes , hic homo plenus
+<lb/>est, ipfique vena incidenda; at ubi de ratione mentio
+<lb/>inciderit, te empiricos vel methodicos appellant. Sed, quod
+<lb/>diximus , ad eos qui analogismo utuntur , digressi , cum eotam
+<lb/>praecipuis disseramus , qui semper exviribus plenitudinem
+<lb/>metiuntur. Arguuntur enim lu neque utres neque culoos
+<pb n="7.518"/>
+<lb/>praetor modum repletos vidisse; imo ne cibi quidem
+<lb/>justo plus aliquando sumpsisse., ut venter distenderetur, neque
+<lb/>urinam in vesica quam deceat copiosiorem , aut. stercus
+<lb/>lu recto intestino collegisse. Nam in omnibus hujusmodi
+<lb/>affectionibus singula quae diximus organa sic evidenter distenduntur,
+<lb/>ut nisi quod exuberat exerementum, celerius
+<lb/>excernunt, laesionem homo lubeat. Non tamen idem extat
+<lb/>tentus rei gravantis aut mordentis , aut abdita quadam qualitate
+<lb/>laedentis. Audimus certe idiotas quoque idem sibi
+<lb/>accidens evidenter citra ullam de dogmate contentionem inter
+<lb/>pr e tar i, ut interdum quidem tanquam alimentis quant<hi rend="u">um</hi>vis
+<lb/>parce assumptis graventur premantmque ; interdum vero
+<lb/>quasi mordeantur ac penitus eroduntur, At saepenumero
+<lb/>quum accurate , quid acciderit , enarrare nesciunt , fe fastidio
+<lb/>laborare proferunt. Nullus siquidem istorum sensuum
+<lb/>propter immodicam ciborum copiam, qua venter extentus
+<lb/>diflentusque plurimum est, idem apud homines illos apparet.
+<lb/>Illuc est , quod in hujusmodi corporis constitutione ventrem
+<pb n="7.519"/>
+<lb/>rumpi metuant, quum nos eum vehementer intentum conspicimus.
+<lb/>Ubi vero gravari dicunt, contractum hrterdunr
+<lb/>videmus. Sic de vesica quoque iudicabis; cujus quidem
+<lb/>alia est affectio , quum humoris plurimum , alia quum paucum
+<lb/>continet, aut quum gravatur; ac proinde exeretiouem,.
+<lb/>dum ex plenitudine tenditur, copiosum conspicere licet;
+<lb/>dum gravatur, pauc<hi rend="u">issim</hi>a m quidem, fed frequentissimam;
+<lb/>non enim impletionis tempus expectat, verum quod molestum
+<lb/>est, quamprimum cupit expellere; quemadmodum quoque
+<lb/>ubi a mordaci illius qualitate stimulatur ; tunc enim continuam
+<lb/>molitur exeretionem. Itaque qumn gravatur, tauquam
+<lb/>ab ea quae continetur sarcula, tunc non recte quis
+<lb/>dixerit, eam male assiri, fed .ipsi copiam oneri esse, tunicam
+<lb/>licet omnino non distendat. Isse jam fi huiusce opiuionis
+<lb/>principes prorsus affirmant, illis, qui contraria sentiunt,
+<lb/>negantibus ; utrique denuo interrogandi sunt , utrum vesica
+<lb/>eodem dolore vexetur, qumn quoquo versum distenditur et
+<pb n="7.520"/>
+<lb/>rumpi periclitatur, quod contentum non amplius perferat,
+<lb/>quumque gravatur ac mordetur. - Hic enim .rursus qui ad
+<lb/>vaforum capacitates plenitudinem semper aestimant; ex facili
+<lb/>concedunt; qui quoad vires, quaestiones hujusmodi moleste
+<lb/>ferunt, snccenfentque variis modis, sursum et deorsum re- .
+<lb/>nitentes, quod nolint hanc osse plenitudinem concedere.
+<lb/>Nos itaque utrosque a contentione liberari cupientes, ad
+<lb/>concordiam adhortati sumus ; hos qui plenitudinem non ad
+<lb/>valla continentis capacitatem unquam relatione diri putent,
+<lb/>quibuscum primis disputationem incepimus, monentes veritati
+<lb/>ne obstreperent, memores, partes dum repletae distemdantur,
+<lb/>eas molestiis affici ; illos, qui solum ita plenitudinem
+<lb/>consistere autumant, ut quod. gravat, corpori, quod gravatur,
+<lb/>plenitudinem esse concederent. Utrosque rursum appareo- .
+<lb/>tibus indiciis flectentes, in mentem revocemus eis praecipue, .
+<lb/>qui quoad vires solum copiam intelligi profitentur, . tum peritunaeum
+<lb/>ruptum, aut edusiorum plenitudine dilatatum,
+<lb/>tum fii rebhs externis demonstremus i utres et vesicas hoc
+<pb n="7.521"/>
+<lb/>pati,: imo nonnunquam dolia ipsa, quum spiritui violento
+<lb/>plena fuerint. Quaeramus autem de his qui e p<hi rend="u">ulm</hi>one
+<lb/>sanguinem propter vasis rupturam, citra ictum, vel cusum,
+<lb/>vel aliam quandam id genus extraneam violentiam extussiunt,
+<lb/>num putent ipsos ab immoderata plenitudine vas distendente
+<lb/>in hunc affectum incidisse ? Caeterum alios separatim admoneamus,
+<lb/>puerum vehementer pusillum idem onus ac adolescentem
+<lb/>bono corporis habitu praeditum ferre nequaquam
+<lb/>posse (quod enim puero, arbitror, suerit gravissimum, hoc
+<lb/>adolescenti levissimum erit j. Utrum igitur neque onus omnino
+<lb/>id, quod quis ferre nequit, neque multum, id quod
+<lb/>gravat adeo , vocabimus ? An onus quidem et gravitatem,
+<lb/>plenitudinem vero nuncupari non permittemus? Verum
+<lb/>ita de dictione, non de re disceptatio erit. At quod ad
+<lb/>alium modum pertinet, ne homo quidem habendus est, qui
+<lb/>se nunquam, viginti licet talenta ejus humeris imposueris,
+<lb/>gravari dicati lis autem qui sese dogmati servili addixerunt,
+<lb/>nihil satis dixi potest:. Quamobrem eos jam omittamus , imo
+<pb n="7.522"/>
+<lb/>si verum oporteat dicere , hinc discedere jnbentes , cum illo;
+<lb/>quicunque ingenuus et veritatis amator extiterit, disseramus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Duas igitur plenitudinis tum notiones tum
+<lb/>relationes suili erimus; hunc ut ad virium robur et facultatem
+<lb/>corporis eam sustinentis ; illam ut ad suscipientem capacitatem.
+<lb/>Atque sus suppositis, tum quot universae animalis
+<lb/>sint facultates, tum qua ratione cujusque aptarum pleuitudiuem
+<lb/>vel cognoscemus, vel curabimus, deinceps inspiciamus ;
+<lb/>hrsnper vero quot universae humorum species existant,
+<lb/>qui vel gravant vires , vel in vasis contineri nequeunt. In
+<lb/>his erum messicum oportet esse et studiofum et excellentem,
+<lb/>non lu evidentibus contemnendis, quae omnis demonstratio,
+<lb/>riis initia sunt. Sed nihil fortassis admiratione dignum ignorari
+<lb/>et id aptum ab istis, qui nihil de demonstratione perpendemus,
+<lb/>nihil invenerunt, nihil didicerunt. nihil exercuernut.
+<lb/>Ita vero imperiti sunt, ut nunc si quis eorum sus
+<lb/>commentariis occurrerit, ferret me primum hoc in opere
+<lb/>demonstraturum, quae omnino eum novisse oportet, qui de
+<pb n="7.523"/>
+<lb/>plenitudine .accurate quid consideraturus sit; delude cujusque
+<lb/>plenitudinis dignotionem et curationem inventurum;
+<lb/>ignorans; si res tam arduae eam haberent naturam, ut uno
+<lb/>libro doceri possent, artem longam non fore. Nos sime,
+<lb/>quod alia quaedam lu arteriis, alia lu nervis et venis sit
+<lb/>facultas , in libris de Hippocratis et Platonis placitis abunde
+<lb/>demonstravimus. In eodem opere docuimus, arteriarum
+<lb/>facultatis veluti fontem quendam esse cor ; nervorum cerebrum;
+<lb/>venarum jecur. Porro lu opere, quod de Elementis
+<lb/>ex Hippoeratis sententia inscripsunus, ludicavimus fubstantiam
+<lb/>generationi et interitui obnoxiam qualitatibus quatuor,
+<lb/>humore, siccitate, calore et frigore per tutam ipsam
+<lb/>immutari ; et propriam corporis cujusque substantiam in certo
+<lb/>quodam harum temperamento consistere; ob idque etiam
+<lb/>facultatum ipsis corpora gubemantiunr essentia temperamenti
+<lb/>proprietas existit. ostendimus haec in libro de naturalibus
+<lb/>facultatibus, necnon alio iir opere privatim. Quinetiam
+<lb/>faece in pluribus commentariis jam a nobis dicta sunt utriusque
+<pb n="7.524"/>
+<lb/>plenitudinis generis dignoscendi signa , et uniuscujusque
+<lb/>sub utroque feorfum. Utriusque autem plenitudinis dico,
+<lb/>tum ad vires, seu facultatem, tum ad enchyma; vocant
+<lb/>enim sic alterum plenitudinis genus, quod locus continens
+<lb/>metitur, consistens non in animantibus stilum, fed etiam in
+<lb/>inanimatis itidem, velut pannis, crinibus, pestibus, vasis
+<lb/>tum -fictilibus tum aereis ferreisque, et caeteris quae ex
+<lb/>aere, argento et stanno fiunt. Haec etenim etiam rumpuntur
+<lb/>, si multum spiritalis substantiae intus in fe conclusum
+<lb/>habeant, nisi quis forsan et eam plenitudinem. relatione ad
+<lb/>contentricenr facultatem velit cousistere, oblitus sententiae,
+<lb/>cujus antea meminimus in facultatis nomine , dicentes eandem
+<lb/>esse causant effectricem , ut nihil intersit aut effectricem
+<lb/>aut essicieutem licere. Neque vero si quis substantiam esse
+<lb/>tum causam effectricem velit licere , reclamamus ; fed illud
+<lb/>tantum hoc in fermone observari volumus, et effectricem
+<lb/>et activam diri, non passivam ct materialem sive caulam sive
+<pb n="7.525"/>
+<lb/>substantiam esse facultatem. Quod si observemus , liquet facultatem
+<lb/>actionis causam fore. Necessitas autem exigit,
+<lb/>actionem, ipsimi quoque esse agentis ad rem patientem motum;
+<lb/>quemadmodum et affectum in patiente motum esse
+<lb/>ab agente ad rem patientem. Quamobrem facultatis notio
+<lb/>in relatione ad aliquid dicitur; substantia lu dispositione ad
+<lb/>aliud versatur. At facere quodcunque, aut agere lu fe
+<lb/>ipsum, praeter notionem est; ita quoque et continere fele.
+<lb/>Qui etenim maxime contentricem facultatem , ut Stoici, invexerunt,
+<lb/>quod continet, aliud, aliud, quod continetur, faciunt.
+<lb/>Nam spirituosum substantiam, quod continet; materialem,
+<lb/>quod consuletur, appellarunt. Huic aerem et
+<lb/>ignem continere dicunt; terram vero et aquam ab illis contineri.
+<lb/>Quanquam nonuulli ex sus qui te nunc Herophileos
+<lb/>nominant, haec quum ne per somnium quidem audiverint,
+<lb/>summa pronunciant cousidentia de contentrice facultate;
+<lb/>constantes quidem fe ignorare, utrum aer, aut ignis, aut
+<lb/>utrumque, lapides, ligna, et quae sunt hujusmodi caetera
+<pb n="7.526"/>
+<lb/>contineat ; affirmantes autem simpliriter facultatem quandam
+<lb/>esse , quae hujusmodi omnia comprehendat ; nam dissolvi ac
+<lb/>distinere oporteret, nisi aliquid ea colligeret et complecteretur.
+<lb/>Postea rogati, nunquid in oratione tali audeant uti
+<lb/>axiomate, Quae existunt omnia, re continente indigere;
+<lb/>nec ne; illico quidem et prompte respondent, quaestionemque
+<lb/>asseverant; at lude ad absurdum abducti, praedictis tribuunt,
+<lb/>et indignantur interrogantibus, tanquam fupervacaneis
+<lb/>sophistis. In usu enim est apud hujus seculi medicos,
+<lb/>fi quid aliud, ut de maximis decretis promptu ferant sensentiam;
+<lb/>reprehensi vero doleant, corripientesque ipsos
+<lb/>sophistas vocitent. Hoc igitur modo orationem in absurdum
+<lb/>quippiam decidere necessarium est, dum nos res omnes .
+<lb/>continentem causam requirere contendimus. .Jam tibi recenseo
+<lb/>contentricem causam, quaenam illa sit, Herophllei
+<lb/>enim ipsam fatentur se ignorare , utrum ex iis quae sinit aliquid,
+<lb/>an ex iis, quae non sunt, eum ipsi accipiunt ? Si
+<lb/>enim ex iis, quae non sunt, admiror virorum sapientiam, si
+<pb n="7.527"/>
+<lb/>et eorum, quae sunt, unumquodque rerum non exissemtium
+<lb/>egere aliqua pronuncient ; si vero lu rebus contemtuicem
+<lb/>causam statuant, meminerint se dixisse, res omnes, ut
+<lb/>sint, contentrice causa suffigere. Accidet enim ita, et causam
+<lb/>ipsam altera quoque causa, quo consistat, egere, et illam
+<lb/>rursus altera, idque sic in infinitum. Quod si entium alia
+<lb/>aliam quandam causam ad esse desiderare , esta vero esse ex
+<lb/>se ipsis habere dixerint ; primum intelligant se nequaquam
+<lb/>axioma, quod ab initio ut longe -erissimum proposuerunt,
+<lb/>observare, ens nimirum omne ad esse causam continentem
+<lb/>requirere; deinde prolixissimam producere orationem, cur
+<lb/>quaedam ea indigeant , quaedam non indigeant , vel qualia
+<lb/>sint ex his ipsis utraque. Nam neque Herophileorum plurique,
+<lb/>neque recentiores Stoici, aliqua demonstratione fpiritum
+<lb/>et ignem tum semet tum alia continere, aquam atque
+<lb/>terram alio continente indigere produnt. Quam etenim
+<lb/>prompta imaginatione durum, renitens, et densum sc continere
+<pb n="7.528"/>
+<lb/> ; rarum vero et molle et cedens alterum; quod contimeat,
+<lb/>postulare dicitur- At hi viri non solum nullam proferentes
+<lb/>demonstrationem tuae ipsorum suppositioni fidem
+<lb/>adhiberi volunt, sed etiam pugnantem in seipsam statuentes
+<lb/>postea non percipiunt. Nam aerem et ignem omnium
+<lb/>tenuissima, mollissima et facillime cedentia, terrae duritiei
+<lb/>et soliditatis esse caulam dicunt; quasi vero aliud alii aut fa.
+<lb/>cultatem, aut naturam, aut actionem, aut qualitatem eam
+<lb/>possit communicare, quam ipsum nondum receperit. Etenim
+<lb/>ah igne non modo nihil contineri, sed etiam omnia
+<lb/>dissolvi , perspicue liquet. Verum contra Stoicorum hypothesim
+<lb/>complura alibi scripsimus. Nunc ad Heropblleos revertor.
+<lb/>Atque adversus hos lu praesentia di<hi rend="u">x</hi>isse satis. erit,
+<lb/>antesignano videlicet illorum et praesidi longe diversa accidisse
+<lb/>, quod in permultis adeo , quae promptas demonstrationes
+<lb/>habeant, addubitet; de -illis. vero, quae demonstrari
+<lb/>nequeunt, quorumque falsa est hypothesis, sententiam proferat.
+<lb/></p>
+<pb n="7.529"/>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Itaque his etiam omissis rursus dicamus,
+<lb/>distentionem et ex plenitudine factam ruptionem, vasorum
+<lb/>ipsorum continentium ; non facultatis cujusdanr affectus esse ;
+<lb/>at gravitatem sentientis facultatis. Nam neque ad hunc totam
+<lb/>ea absolute spectat, naturalis siquidem facultatis asseotus
+<lb/>gravitas non est. Quapropter si recte in commentario
+<lb/>de facultatibus naturalibus demonstravi unam idoneorum attractricem
+<lb/>esse facultatem, alteram eorundem alteratricem,
+<lb/>tertiam retentricem, et quartam alienorum expultricem,
+<lb/>alias quasdam plenitudinis notas in singusis praedictis simul- .
+<lb/>tatibus quaerere oportet, quum gravitas fatis esse non potesu
+<lb/>Non enim quemadmodum imbecillis ventriculus,
+<lb/>quae ipsum gravant, ob eximium sensum percipit, ita venae.
+<lb/>atque arteriae eundem, sed diversum sensum obtinent.. - An
+<lb/>- idem quoque genus in nervis existat, pluris verbis ad fidem.
+<lb/>faciendam opus esu Arteriarum igitur plenitudinis , ut ad
+<lb/>ipsarum vires ; nolae scientificae in opere de pulsibus traditue
+<pb n="7.530"/>
+<lb/>fnnt. Noverunt autem ex his plane nihil, qui ex facili
+<lb/>quotidie plenitudinem nominant. Non tamen pleuitudinis
+<lb/>ad venas signum quoddam scientificum ipse inveni; nec
+<lb/>ab altero scriptum invenire potui; quandoquidem imprimis
+<lb/>nemo ante nos ipsus facultates scienter distinxit. Paucis
+<lb/>enim Philippus et Arcbigenes earum -speculationem attigerunt,
+<lb/>absolute vero ne unus istorum quidem absolvit; sied
+<lb/>praesens hic sermo non haec solum inquirit, verum etiam
+<lb/>cujusque partis plenitudinem , utjechroris, vel cornis, ver
+<lb/>renum, vel coli, vel cerebri, vel ossis. Quae igitur ex
+<lb/>istis aut difficilem aut nullum habent sensum, ea non simili
+<lb/>modo cum ventriculo et vesica in ipsis recrementa sentiunt- .
+<lb/>Quaedam autem prorsus nihil, quaedam aut omnino obscures
+<lb/>aut nihil;- obscure quidem narium, ut lu pleni tudine inunodica;
+<lb/>nihil, ut in modica. Quinetiam pulmoni, jecinori
+<lb/>et renibus gravitatis sensus interdum innascitur. Etiam
+<lb/>quis gravari os ; fed obscure admodum percepit. In cerebr
+<pb n="7.531"/>
+<lb/>o saepe non obfimra solum gravitas, sini manifesta etiam
+<lb/>apparet. In partibus fensu vacuis nullum nec gravitatis,
+<lb/>nec alterius cuiuspiam symptomatis tensum oboriri constat.
+<lb/>Ex ossibus quaedam sensus expertia ridentur , ad haec adeps
+<lb/>, et quaedam glandulae , praeterea medullae omnes inter
+<lb/>partes sensu vacuas existunt. ^Cerebrum et spinalis me-dulia,
+<lb/>ut nonnulli asserunt, ex partibus sunt praeditis fiensit.
+<lb/>Quidam certe carnem circa gibbas jecinoris partes sitam,.
+<lb/>quam plerique medici parenchyma vocant, scusibilem
+<lb/>affirmat; neque enim nervus omnino unquam ei inseritur.
+<lb/>Dubitaverit quoque quispiam de illa, quae simis ejus locis
+<lb/>adlucet. Ita namque exiles sinrt nervi qui jecinoris portis
+<lb/>inseruntur, ut membranam susum ipsius contexere videantur.
+<lb/>Eadem insuper alicui et in liene et renibus, multo magis
+<lb/>in pulmone, dubitatio acciderit. Atque forsan siquis in
+<lb/>hisce visceribus gravitatis sensus exisset , non iptorunr xifce1um,
+<lb/>sed tunicarum membranammque ea continentium esse
+<pb n="7.532"/>
+<lb/>dixeris, praesertim quae a pulmone et jecinore suspensae
+<lb/>pendent, nec firmiter eis adhaerent. Frequenter enim
+<lb/>aegroti manifestam sursum ad claviculam trusionem quandam
+<lb/>, ut in hepatis tumoribus , et ipsius visceris gravitatem
+<lb/>sentiunt. Nam ut totus est felix ille, qui per omnem ritae
+<lb/>fuse aetatem hoc mest nunquam percepit, ita frequenter
+<lb/>omnes eo laborant. Dicit alicubi Hippocrates : Ad renem
+<lb/>dolor gravis; quemadmodum et, in pulmone fit gravitas.
+<lb/>Dicta sunt haec ab omnibus fere medicis, quum viscus inllatnmatione
+<lb/>correptum suerit. Sed horum nihil plerique
+<lb/>medici inquisierunt; imo quidam neque plenitudinem aliquando
+<lb/>in universo animante esse posse, sed in una quavis
+<lb/>parte, aut etiam pluribus, temere de plenitudine pronunciant.
+<lb/>Sed age, si placet, omni dubitatione remota,- in
+<lb/>certioribus exerceamur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Certius autem lesse mihi ridetur, rursus a
+<lb/>gravitate initium capere. Haec enim ficu si tricis facultatis
+<lb/>plenitudinis evidentissimum esse signum apparet. Utrum
+<pb n="7.533"/>
+<lb/>igitur verum est quod dicitur, gravitatem necessario pleniludicis
+<lb/>esse comitem, vel gravitati praeire plenitudinem?
+<lb/>Non enim sime idem est in ratione vel sequi gravitatem vel
+<lb/>praecedere. Verum etenim, cui humorum quorundam
+<lb/>plenitudo est lu corpore , huic gravitatis sensum esse , in .
+<lb/>illis videlicet partibus , in quibus sensu praeditis existentibus
+<lb/>plenitudo extiterit. At verum non est, ubi gravitas .aliqua
+<lb/>in parte est, in illa humorum esse plenitudinem. Fieri enim
+<lb/>potest, facultatem imbecillem a stolidis partibus gravari, ut
+<lb/>in paralysi. Nam musculis totius , quod movebatur, memlui
+<lb/>ex. nervorum resolutione ad ipsius motum ac translationem
+<lb/>factis infirmis, gravitatis sensus paralyticis oboritur.
+<lb/>Non enim sibi ipsi grave apparet, quod aegrotet, veluti musicuius,
+<lb/>vel nervus, vel denique aliud quodlibet corpus primario
+<lb/>partes movens ; sed haec allectio, quum gravitatem
+<lb/>vocant, exsilio aliis advenire nata est, ipscque per su nervus
+<lb/>, vel tundo , vel musculus, vel quaeris pars nos movens,.
+<pb n="7.534"/>
+<lb/>seipsa in validior imbecilliorque fieri potest; gravare autem
+<lb/>seipsum rerum est impossibilimn. Ubi igitur para validior
+<lb/>evadet, validiores prioribus actiones obibit; invalidior, imbecilliores.
+<lb/>Exempli gratia, musculus, si lue sic, qui crus
+<lb/>movet, simus vehementer illam membri partem , cui lufertus
+<lb/>est; attrahet; bono habitu praeditus , vehementissime;
+<lb/>aeger, invalide; viribus resolutus, obscure. Quodsi vero
+<lb/>non musculus,- sed nervus sit , qui musculum ipsum movet,
+<lb/>istius vicissim sanitas et morbus, bonus habitus et imbecillitas
+<lb/>haec in artubus expedient, quae musculus moliri dictus
+<lb/>est. Ita vero si quoque spiritus primum sit crus movens,
+<lb/>de eo haec dicentur. Age igitur, ponamus- perspicuitatis
+<lb/>gratia, a spiritu, qui per nervos scrtur, musculum moveri,
+<lb/>a musculo primum tibiam; cui musculus insertus est , dein
+<lb/>articulum in genu; cui mus totum committitur. Vere siquidem
+<lb/>in hisce hypothesibus dixeris musculum ipsum membruinqum
+<lb/>ipsum totum, nempe tibiam; spiritui imbecillo
+<pb n="7.535"/>
+<lb/>gravitatem auferre. At vero si nervum moveri a spiritu,
+<lb/>a nervo musculum, a musculo russum tibiam statuamus,
+<lb/>spiritus imbecillis ab omnibus hisce enarratis gravabitur.
+<lb/>Quere jam hic liquet fieri non posse, ut, quid primum gravet,
+<lb/>aut gravetur, dignoscas ; nisi quid primario quamque
+<lb/>in nobis partem moveat , antea compertum habeas. Sed id
+<lb/>quoque russiam accuratius examinabimus ; de quo sermo
+<lb/>fuit, ad finem perducatur. Atque nunc perspicuitatis gratia
+<lb/>cum hypothesi fiet enarratio. . -Supponatur itaque musculus
+<lb/>esse prunum movens tum seipsum, tum tibiae os. Is
+<lb/>equidem nequaquam sibi ipsi granis est , ne etiam quum anbeclllimus
+<lb/>existit; test libis illum gravat: utrum autem
+<lb/>moveri suium cupientem, an conquiescentem, alterius non
+<lb/>exiguae speculationis sit, quae in libris de musculorum motu
+<lb/>definita est, citra quam speculationem neque affectionem,
+<lb/>neque locum affectum ex gravitatis fieusibus datur dignoscere.
+<lb/>Protinus enim quibusdam vel membrum unum, veI etiam
+<lb/>universum corpus, dum movere fe volunt, gravatur; quioscentibus
+<pb n="7.536"/>
+<lb/>autem nullus grani satis sensus est; Nonnulli
+<lb/>quoque ante motum se gravari dicunt. Quae igitur utrorumque
+<lb/>horum dispositio sit , nulla ratione queas deprehen-: .
+<lb/>dere, priusquam moventia corpora; quaeque moventur lu
+<lb/>tuto crure, adinveneris. Siquidem nervorum fibrae lu
+<lb/>musculo primae moventur, cum his simul membranosnm
+<lb/>genus, venosum, et arteriorum, ad haec ligamenta rnoventur;
+<lb/>gravitatis equidem ipsi sensus existis aliisque omnibus
+<lb/>, quae lu toto membro consistunt, exorietur. Perpeudemus
+<lb/>autem atque definiemus, membri quando agit ac
+<lb/>movetur, et quando rursus quiescit gravitatem j sine. At si
+<lb/>ligamentorum in eo genus simul cum carnosis moveatur (haec
+<lb/>enim propria musculi est substantia] ex horum neutro gravitatis
+<lb/>sensus unquam evenerit, verum ex venis, vel arteriis,
+<lb/>vel adipe, vel ossibus, vel quibusdam-, vel omnibus.
+<lb/>Atqui manifestum est, in hujusmodi licet distinctionibus hae
+<lb/>dictiones, ex quibusdam, vel ex omnibus, omiserimus, li-.
+<pb n="7.537"/>
+<lb/>bri lectores subaudire tamen ipsas oportere, sinentes in
+<lb/>ejusmodi orationibus coniunctiones non. disiunctivas, sed
+<lb/>adjunctivas esse. Unde jam perspicuum evadit, ut quicunque
+<lb/>partem plenitudine laborantem velit dignoscere , is
+<lb/>accuratam facultatum nos gubernantium , ad haec dissectionis
+<lb/>, et naturae omnium animantis partium notitiam habeat,
+<lb/>esse necessarium. Inde siquidem institutus quispiam plethoricae
+<lb/>partis signa aliquando forsan invenerit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Siquis autem nulla habile veritatis ratione,
+<lb/>familiares studeat decipere, quod sapientiae aliquantulum
+<lb/>sciat, huic quidem ex facili et si quid aliud licet, ea quae
+<lb/>apud Eraflllratum in primo de fanitate tuenda traduntur,
+<lb/>ediscere. In alio enim haud plenitudinis signa exponere
+<lb/>aggressus est. Adhibeamus igitur animum ipsius verbis, in
+<lb/>quibus primum sane quae tandem plethorae ( sic enim vocat
+<lb/>venarum plenitudinem) generatio sit, explicat; delude in
+<lb/>quibus diguotionis signa ostendit. Itaque generatio illi talis
+<lb/>est. si namque alimentum distribuatur,. neque concoquit- .
+<pb n="7.538"/>
+<lb/>tur, neque. pro cuiusque consuetudine elaboretur, aut alio
+<lb/>quovis modo exc eruatur, necesse esi, vasa tum concoctioriis
+<lb/>. tum distributionis repleri, et eorum actiones prohiberi,
+<lb/>Quumque id alimentum quod prius in vasis fuit, nullo
+<lb/>modo consumatur, sed atio ab iis quae nssiimuntur accedente,
+<lb/>.corporis vaso quoque magis distenduntur. At vbi
+<lb/>alimenti accumulationem non amplias vaso recipiunt, aliud
+<lb/>vero alimentum e ventriculo defertur, ea quae jam ipsis
+<lb/>intunt, in vicina spiritus vaso irrumpunt. Hinc igitur
+<lb/>innotescit, de plenitudine ad iufusionem lilium disserere , et
+<lb/>quod ipsimi proprie plostrorum vocet. Ilio enim assectus
+<lb/>plethora suium nominatur, non alius, qui ad vires. fulicatur.
+<lb/>Paululum autem de dignatione progressus haec finibitJtaqueplethorae
+<lb/>astectum .dignoscere, prout diximus, conandiim
+<lb/>effi Quibus igitur per ipsius initia vasu mode, -at e
+<lb/>repleta sunt, ii robustiores. etscrtiores quam antea praeter
+<lb/>consuetudinem apparent ; ubi vero repletio mitior his accesserit,
+<pb n="7.539"/>
+<lb/>brachia, tibiae et manus immoderatius implentur,
+<lb/>quemadmodum illis, qui ab exercitiis in distentionem
+<lb/>ventunt. Quodsi copiosior plethora praecedat, hae partes
+<lb/>ulcerosae, tardiores et ad motum ineptiores sunt, quod
+<lb/>universo corporis functura tanquam lassitudine apparente
+<lb/>tendatur. Jam vero huiusmodi assectus .morbo vicinus est;
+<lb/>nisi quis scite admodum et prudenter eum salvat. In his
+<lb/>Erafistratus diversarum plenitudinum notas comprehendit,
+<lb/>uscribitque nonnullas eis parum necessarias. Series autem
+<lb/>orationis ipsius ab initio suspicienda est ; quum enim. est: a
+<lb/>principio itaque plenitudinis, quibus vasa moderate repleta
+<lb/>semi, ii robustiores scrtioresque quam antea praeter
+<lb/>consuetudinem apparent; neque aliunde sermo necessariam
+<lb/>habet consequentiam , neque ab affectu ad ejus .nolas , neque
+<lb/>.a notis ad affectum. Siquidem vasis moderate repletis, robultiores
+<lb/>illos et scrtiores quam prius videri non est necesfarrum,
+<lb/>neque quum tales apparent, vnsa moderate esse
+<lb/>repleta. Fieri enim potest, ut moderatis horum repletionibus
+<pb n="7.540"/>
+<lb/>imbecilliores etiam aliqui flant, vel ad neutrum. insiguiter
+<lb/>declinent, puta vel ad robur vel ad imbecillitatem.
+<lb/>Si fortiores. quam antea evadant, lris concedimus non Polum
+<lb/>cunr viribus humorum plenitudinem rnerevisse, fed interdum
+<lb/>quoque decrevisse, primamque iirterdum fervere quanlitatum
+<lb/>Nam juxta utramque hypothesur colligitur ex priore
+<lb/>dicto trium esse consequentiam; adauctus quidem humores
+<lb/>robur et imbecillitatem praeter constitutionem priorem
+<lb/>praeterluo facultatis in eisdem terminis permansionem comitari;.
+<lb/>roboris vero accessionem humores et auctos et
+<lb/>imminutus et moderatos sequi Intelligetur autem lu praesenti
+<lb/>commentario idem, sive humores sive sanguinem dixero ;
+<lb/>haec enim in sermonis processu distinguentur. Erasistratus
+<lb/>quidem suppliciter pronunciavit, nulla demonstratione
+<lb/>dictis suis apposita. Nos autem non absolute, fed
+<lb/>cum necessariis demonstrationibus sidenr iis , quae nuper
+<lb/>retulimus, astruentes, exordium denuo lune ab ipsis Erasist.rati
+<lb/>verbis capiemus. Robustiores, ait, et furfures apparent.
+<pb n="7.541"/>
+<lb/>- An divexa significant robustiores et sartiores,
+<lb/>atque nos duo moderatae plenitudinis signa docuit , vel duo
+<lb/>quidem nomina, unum vero signum effatus? Ego sane ne
+<lb/>unam quidem significati differentiam invenio , neque siecunelum
+<lb/>genus, neque secundum speciem , neque demum secumdum
+<lb/>majoris minorisque rationem , sed idem de utroque
+<lb/>significari censeo. At alterum, si lubet, intensionem et incrementum
+<lb/>in altero ostendere ponito. Sive igitur tortiores
+<lb/>de robustioribus , sive robustiores de fortioribus .dicas,
+<lb/>una suuilique specie utriusque significationem omnino complecteris.
+<lb/>Ubi namque auctio est specie manente, ibi non
+<lb/>est duarum significationum disciplina. Patet autem Erasiltratum
+<lb/>alterius plenitudinis generis , quod ad vices pertinet,
+<lb/>ne meminisse quidem prorsus, neque lu hoc libro.
+<lb/>neque in aliis qui de febribus inscribuntur. Nam plotltora
+<lb/>ipsius judicio incidentiae causa est, in qua iuilammationes
+<lb/>consistunt, quamque febris consequitur. Plethorae generationem
+<pb n="7.542"/>
+<lb/>evidenter verbis praescriptis indicavit, ubi cor..
+<lb/>poris vnsa onerari distendique plurimum scribit. His enim
+<lb/>verbis ipsa usus est, quemadmodum otium quod non am;
+<lb/>plius eam sarcinam vafa queant suscipere, exuberantis luimoris
+<lb/>incidentiam lu arterias fieri innuit, iis quae abundant
+<lb/>iuvenis, illuc impetum ducentibus. Omisit ergo lue quoque
+<lb/>in divisione quippiam. Non enim ita licendum erat
+<lb/>absolute, quum venae nom amplius eam, quae acisertur,
+<lb/>sarcinam capiant, eorum, quae in ipsis continentur, ad
+<lb/>spiritus vnsa impetum fieri. Multo autem melius erat lixisse
+<lb/>, duorum alterum praedictam venarum repletionem
+<lb/>conulari, vel tunicae ipsius rupturam, vel sanguinis lu fpivitalia
+<lb/>vnsa transsusionenr. caeterum putare sanguinem
+<lb/>necessario transfundi, quod is a venis contineri nequeat,
+<lb/>obliti Montino est, vasis rupturam aliquando ob plenitudinem
+<lb/>evenire , ut omittam anastomofiu quae sine transfusione
+<lb/>manifeste plermnque fit in sensibilia ac ampla intestinorum,
+<lb/>ventriculi, stomachi, faucium et oris fpatia. At quod in
+<lb/>orationis distinctinctione deluit, non in hoc solum opere
+<pb n="7.543"/>
+<lb/>Erasistrato consuetum est, sed lu aliis commentariis propemodum
+<lb/>omnibus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Quod itaque enunciatum est, quid tandem
+<lb/>sit, de integro inspiciamus. Repletis vasis moderate, seipsis
+<lb/>quam antea robustiores apparent. Utrum, o Erasistrate,
+<lb/>etiamsi cum sanguinis plenitudhre corporis robur
+<lb/>non adaugeatur, an etiam viribus simul adauctis? Ego siquidem
+<lb/>necessarium plane esse dico ad actionis rigorem peraeque
+<lb/>facultatis seu virium robur augeri. Tu vero si iucremento
+<lb/>sanguinis duntaxat facultatis actiones validiores fleri
+<lb/>censeas, Asclepiadis sententias magis evertere, quam sucuslatis
+<lb/>statum estruere videris. Neque enim ille simpliciter
+<lb/>sic loquitur; cui plus sanguinis, omnino hunc robustiorem
+<lb/>esse, cui minus, necessario imbecilliorem ; sed invenies quasdant
+<lb/>eum distinctiones, apparentibus consonas dicere, etsi
+<lb/>nullam in nobis facultatem, aut animalem aut vitalem esse
+<lb/>putet. Conspiciuntur enim quidam seipsis interdum magis
+<pb n="7.544"/>
+<lb/>sanguinei simul et fortiores evasisse , quidam fortiores simul
+<lb/>et minus sanguinei. Quapropter quum neque sanguinis plenitudiue
+<lb/>vires augeri , neque ipsius imminutione has debilitari
+<lb/>necesse fit, negligentius haec quoque se protulisse Erasistratu
+<lb/>existimandum esu Quod si quis eum monuerit illorum,
+<lb/>quae ego nunc recensui, haud inficias iverit functionum
+<lb/>rigorem noti sanguinis incrementum, sed facultatis rohur
+<lb/>consequi. Reddamus itaque nos jam ejus sermonem
+<lb/>perfectiorem iis quae parum integre protulit, reliqua adjicientes.
+<lb/>Erit autum hujusmodi. Augescente sanguine
+<lb/>simul cum viribus actionis quoque robur augescere necesse
+<lb/>esu Equidem si ita loquamur, id verum quidem dicemus,
+<lb/>nihil autem plus nobis ex eo ad res propositas. Quibus
+<lb/>enim utrumque auctum est, et sanguis et facultas, eisdem
+<lb/>actionis robur auctum quoque vere dicetur ; quibus autem
+<lb/>vires increverunt, hisutraque necessario aucta esse, falsum.
+<lb/>Non enim necessario facultas sunul cum sanguine augescente
+<lb/>augetur , accidit autem aliquando , facultatem telam augeri.
+<pb n="7.545"/>
+<lb/>Bonus enim revera gymnastes-, si quempiam susceperit, qui.
+<lb/>sanguinem pituitofum copiosi: prae otio collegerit, et viribus
+<lb/>imbecillior existat, paulo post eum fortiorem , uberiorisque,
+<lb/>quam quum eum accepisset sanguinis compotem, efficiet.
+<lb/>Quemadmodum igitur qui in actionibus fungendis validiores
+<lb/>quam prius facti sunt, eis humores auctos esse necessum
+<lb/>non est; ita qui seipsisin functionibus edendis robustiores
+<lb/>evaserunt, ipsis facultatem robustiorem evasisse necesse est.
+<lb/>At non modo ab actionum rigore auspicatus, ad facultatis
+<lb/>robur, sed etiam a facultate ad actionum vigorem necessario
+<lb/>devenies. Nam facultate validus, in lunctionibus obeundis
+<lb/>robustior est. Quare haec fe invicem sequuntur, rigor
+<lb/>actionum, facultatis robur, actionum rigorem facultatis
+<lb/>quoque robur. Utrum enim ex eis adesse statueris, huic
+<lb/>omnino alterum simul adest; non tamen a copiosiore. Languine
+<lb/>necessaria sumitur consequentia. .Neque enim fi largior
+<lb/>quamprius existat,. necessario robustior homo evadet; neque
+<lb/>si paucior, imbecillior erit; quemadmodum neque si proportione
+<pb n="7.546"/>
+<lb/>reliquis humoribus respondeat, facultas aequaliter
+<lb/>se habebit Proinde ex superioribus clarum est, actionum
+<lb/>rigorem facultatis robustae proprium et inseparabile esse indicium;
+<lb/>sanguinis incrementi neque proprimn neque insuparabile.
+<lb/>Quod autem deinceps Erasistratus dicit, proprimn
+<lb/>non est, sed plethorae inseparabile. Vocat ipsum adimpleri,
+<lb/>apertius tendi dixisset. Etenim gymnasiorum quidam
+<lb/>diligentiores , usiam lassitudinem ulcerosam , aliam tensivam,
+<lb/>aliam phlegmonodem appellantes, nihil aliud innuunt, quam
+<lb/>membra in teusivam lassitudinem incidisse. Tunc enim corporis
+<lb/>sui partem quamcunque adimpletam dicunt, quum tensionem
+<lb/>quandam in se sentiunt; sentiunt itaque in iusiammatione
+<lb/>tensionem, sed pulsus praeter naturam illam vel
+<lb/>semper vel magna ex parte comitatui, quem quis clarior
+<lb/>interpres -dolorem pulsatilern appellarit. Quibus aliud nihil
+<lb/>quam tensio accidit, lis neque inflammatione laborat tensa
+<lb/>pars , neque necessario plethorica est , sed duorum alterum,
+<lb/>vel lassa vel plethorica esu At si lassa, pluribus laboribus
+<pb n="7.547"/>
+<lb/>hic affectus debetur; quod si non laboraverit homo; nequaquam
+<lb/>ob lassitudinem lassa pars ipsa fit, verum aliter. Quamobrem
+<lb/>ut verum fateamur, tensionis sensus sine exercitiis
+<lb/>.omnino plethora est. Fit namque sic loquentibus inseparabile
+<lb/>simul et proprium signum, utrisque se vicissim consefluentibus.
+<lb/>Nam tensio. citra exercitationes plethorae comes
+<lb/>est; fit enim hujus inseparabile signum , quod tanquam
+<lb/>a plethorae causa perimitur. Porro tantum sanguinis incrementum,
+<lb/>ut venae distendi amplius non possint, necdum
+<lb/>plethora dicenda esu Quid igitur Erasistratus in enarratione
+<lb/>brachiorum, tibiarum, manuum que meminit? Etenim lu
+<lb/>collo etiam et dorso et lumbis et thorace et imo ventre
+<lb/>hujusmodi tensio constituitur. Quemadmodum autem s pervacuo
+<lb/>Erasistratus artuum, sic etiam plenius ulcerofi.sensus
+<lb/>mentionem facit. Hic enim plethorae nota non est, verum
+<lb/>ex mordacibus humoribus , partibus velut exulceratis nnscitur,
+<lb/>vel has illorum estque contingente, vel sanie irritante,
+<pb n="7.548"/>
+<lb/>vel medicamento vellrcante , aut ex motionibus solis proveniti
+<lb/>Ut enim propria tensio lu humorum plenitudine continentia
+<lb/>vnsa distendentiunr versatur, ita sensus ulcerosus
+<lb/>mordacem qualitatem sequitur, ideoque multis interdum in
+<lb/>toto corpore accidit, non solum non plethoram, sed ne moderatum
+<lb/>quidem sanguinem habentibus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">His ita sese habentibus., quemadmodum
+<lb/>certe fe habent, opportunum jam nobis ridetur , distluctionem
+<lb/>quorumdam apponere, quae prius quum signa ab Erasistrato
+<lb/>conscripta inspiceremus , ad hanc usque seriem distulimus.
+<lb/>Plenitudinem itaque , sive ad vires , sive ad continentium
+<lb/>valorum capacitatem aestimetur, fatuus erat videlicet
+<lb/>distinguere, utrum in sanguine solo, an etiam aliis omnibus
+<lb/>humoribus cousistere nata sit. Id namque indesuntmn ab
+<lb/>illis relictum esu Quum igitur non solum lu morbi, penuria
+<lb/>et plenitudo , sed etiam prava qualitas, omnes humores
+<lb/>occupet, universos medicos interrogavi, tum qui ad vires
+<lb/>tum -qui ad humorum incrementum plenitudinem aestimant,
+<pb n="7.549"/>
+<lb/>folone aucto. fanguine adeo, ut non contineatur, venas ex.tendi
+<lb/>contingat,. an si pituita vel in alium quum vis partem,
+<lb/>aut etiam venas ipsas, vel simul cum hac, vel sine .hac bilis
+<lb/>.quaepiam, veI sanies, vel spiritus statulentus tanta plenitudine
+<lb/>coacervatus . sit,, ut a vnse. suo contineri magis .nun
+<lb/>possit, num lue quoque tunsionem experiri animal uecessariuin
+<lb/>erit? Si pars, quae. tenditur , sentiat, eam in omni,
+<lb/>quod distendit neque continetur, tensionis sensum animali
+<lb/>excitare necesse est, et hunc affectum ,. tensionem vocitant,
+<lb/>partes occupare , qua satius aucta eam quae tenditur partem
+<lb/>rumpi necessum esu Id mihi quidem rebus manifesto appaaerrtibus
+<lb/>consentire videtur. Conspicimus enim non modo
+<lb/>nervos , vel funiculos tunsionis violentia dirumpi , fed dolia
+<lb/>quoque multutles a musto flatulenta spiritu turgente. Nuper .sane
+<lb/>vas stanneum eousque a medicatnento.ex viperis; quod
+<lb/>.in.eo continebatur, inflatum est; ut etiam pellis ei circumdala.
+<lb/>et funiculus quo deligatum erat dirumperentur et
+<pb n="7.550"/>
+<lb/>operculum curvaretur. Praeterea quod maximis interdum
+<lb/>doloribus quidam corripiuntur, spiritu flatulento nonnullis
+<lb/>animalis partibus insidente, quemadmodum et colo intestino
+<lb/>faece. id accidere,, omnes arbitror movisse, quibus curae est
+<lb/>quotidie .apud aegros visa sequi et confiderere. Praestat
+<lb/>igitur ab omni substantia humida et flatulenta partes in tensivam
+<lb/>affectionem duri existimare , vel siclum ex humoribus
+<lb/>sanguinem exuberantem hujusmodi affectum comitari. Itaque
+<lb/>mrfus ad eos qui plenitudinem tanquam ad vires semper
+<lb/>putant .constitui, digrediamur, rogemusque unum aliquod
+<lb/>longe facillimum , tali quapiam hypothesi exempli modo
+<lb/>proposita. Homines duo onera suis humeris imposita bajulenf,
+<lb/>alter quidem lignum vel lapidem, vel sarcinam estquam
+<lb/>gravissimam, alter vero spinas paucissimas et acutissimas;
+<lb/>deinde in tali spectaculo , r qui ad vj.es plenitudinem
+<lb/>considerant, ab eis. quaeramus, an et .paucas etiamApinas
+<lb/>onus appellent, an quae ab utroque baiulantium onere fit
+<pb n="7.551"/>
+<lb/>molestia commune aliquod hominibus symptoma sit, molestiae
+<lb/>vero species plurimum disserat. . . Hic enim citra punctionem
+<lb/>gravatur, ille sine gravitate pungitur.. In summa,
+<lb/>si quis punctionem, vel morsum, vel quodlibet molestum
+<lb/>onus plenitudinem quoque vocet, cogetur aliquando et
+<lb/>unam spinam, vel acum tenuissimam onus appellare ; quo
+<lb/>quid est magis ridiculum ? Absurda igitur . haec stant et
+<lb/>praeter omnium frontinum opiniones. Nos autem communes
+<lb/>notiones non evertere,. fed conservare statuimus. Proinde
+<lb/>multum, quod gravat, interpretamur; molestum, quod
+<lb/>mordet, vel pungit, vel quomodocunque quis vocare voluerit.
+<lb/>Atqui multos esse humores mordaces, alios lu nobis
+<lb/>ipsis ortum habentes, alios extrinsecus accedentes, id omuibus
+<lb/>perspicuum. Sunt autem quatuor ipsorum lu majoris
+<lb/>miuorisque ratione differentiae. Qui etenim mediocriter rodunt,
+<lb/>pruritum concitant, quemadmodum scilla; vehementius
+<lb/>autem, rodentes, uti caepa; nam si test natura praedito
+<lb/>corpori corpus nostrum paulo diutius admotum fuerit, exr.
+<pb n="7.552"/>
+<lb/>ulcerabitur. Nounulla praeterea hoc acriora sunt, in aximeque
+<lb/>quum ulceratus admoventur, horrorem concitant;
+<lb/>horrore vero extenso aucto que, id symptoma rigor appellafur.
+<lb/>Eadem proportione mordaces in nobis humores quatuor
+<lb/>specierum constituuntur. Pruritum enim inter eosmovent,
+<lb/>qui modice vellicant; sus mordaciores ulcerosum seusum
+<lb/>faciunt; his adhuc vehementius mordentes horrorem ;
+<lb/>mordacissimi rigorem. De sus autem in multis commentariis
+<lb/>dictum est; verum quaein fecundo de symptomatum causis
+<lb/>et quarto de sanitate tuenda tradidimus , ei qui compendium
+<lb/>quoddam illorum velit capere , abunde sufficiunt. At siquis
+<lb/>opus de medicamentorum facultatibus relegerit, et libros
+<lb/>praecedentes de temperamentis, accuratius mordacium humormn
+<lb/>naturam cognoscet. Verum vulgo medicorum simile
+<lb/>quid accidit, quod Hippocrales de istis dixit, qui fracturis,
+<lb/>veI ejus generis affectibus laborantes, praecepta medicorum
+<lb/>non faciunt Etenim illi, etiamsi fani velint degere riincuratione
+<pb n="7.553"/>
+<lb/>tamen laborem non perserunt, quemadmodum nec
+<lb/>hi in discendo. At salutem subito consequi non possunt
+<lb/>folo finis desiderio, nec lu scientiam, nisi tutam illam riam
+<lb/>perfecerint, quam paulo ante indicavimus; Scient enim,
+<lb/>si velint, ulcerosum totius corporis sensum , tum quiobimmoderatiora
+<lb/>exercitia praeter consuetudinem suscepta ecntingit,
+<lb/>tum qui citra exercitia subito oboritur, mordacis
+<lb/>humoris esse sobolem ; ideoque plus aequo exercitatis gymnastae
+<lb/>oleo copiosiore, frictione molli, balueo dulcis aquae
+<lb/>calido adamussim temperato curationem moliuntur, quo
+<lb/>mordaces humores, qui immoderatioribus exercitiis ob adipis
+<lb/>carnisque colliquationem , vel propter ipsos lu corpore humores
+<lb/>vehementer calefactos, generati sunt, discutiuntur.
+<lb/>Quod si quis igitur horum demonstrationes edlscere sustinuerit,
+<lb/>solus ille firmiter persunsum habebit, ulcerosam affectionem
+<lb/>propter mordaces gigni humores; gravitatis, ob
+<lb/>multos, ut ad vires; tunsuram vero, affectionem itidem
+<lb/>propter multos, sed ut ad continentem eos vastorum capacitatem.,
+<pb n="7.554"/>
+<lb/>non ad. corporum, quae continentur, vires, rela-.
+<lb/>tionem habent. Erafistratus in libro primo de sanitate tuenda,
+<lb/>ipsam evidentissime plethorae generationem recensens,
+<lb/>tertiam dicturum affectionem docet, dein ad notas conversus,
+<lb/>non magis de hac, quam aliis conscripsit. Etenim tensio
+<lb/>hujus duntaxat est, quod ille adimpleri nominarit. At ulcerosum
+<lb/>gigni sensum , neque praedictae plenitudinis , neque
+<lb/>istius, quae vires spectat, proprium indicium est; mullo
+<lb/>.minus graviores ad motunrque difficiliores evadere. Siquidem
+<lb/>hoc plenitudinis ad vires peculiare signum esu Parutu
+<lb/>igitur ipsi abfuit, quin omnem propemodum empiricorutu
+<lb/>syndromen nobis descripserit-; postremo partem quandanr
+<lb/>notationis tritemporaneae , quam Herophilei introduxeruut,
+<lb/>peraeque ac empirici, literis prodidit, ita inquiens:
+<lb/>Quum enim alimentum quod distribuitur, neque apponitur,
+<lb/>neque pro .cuiusque consuetudine elaboratur , neque aliter
+<lb/>excernitur. r. Nihil enim refert vel haec dicere, vel. ut
+<pb n="7.555"/>
+<lb/>illi , otiosam ritam, solitormnque excrementorum suppreslienem
+<lb/>otiosam enim priorem ritam indicarit, neque elaboratur,
+<lb/>inquiens , prout quisque consueverat vi excrementorum
+<lb/>suppressionem, dum praescriberet, neque aliter excernitur.
+<lb/>Plenitudinis significatio a tempore sumpta, ex praeterito
+<lb/>quidem tempore otiosum vitam simul cum exerelinitum
+<lb/>suppressione comprehendit; ex praesenti repletionem,
+<lb/>ulcerosumque affectum, et ad motum pigritiam, et.
+<lb/>totius corporis gravitatem, aliaque hujusmodi apponit; ex
+<lb/>futuro, quod hoc vitio laborantes, si evacuentur, .pulchre
+<lb/>convalescunt, id quod Erasistratus omiscrat. Testimonium
+<lb/>etenim hoc rectae diguotionis pariter .et curationis est; efi- .
+<lb/>gnotionis autem, vel ut illi vocant, significationis, nulla
+<lb/>pars suerit, siquidem per signa assectus significare volumus,
+<lb/>-ut idoneam eis curationem inveniamus. Quamobrem fi ex
+<lb/>alio quoniam sanationem commode habere liceret,- superflua
+<lb/>essent signa. At praetentis temporis. memor, ruborem .et
+<pb n="7.556"/>
+<lb/>valorum distentionem praetermisit, quae etiam ipsa empirici
+<lb/>fene omnes, dogmatici non pauci, sicut alia quaedam, uti
+<lb/>diximus, adliciunt. Verum quia et in. sanguine siclo plethorae
+<lb/>generatio statuitur, non male ab illis rubor et vaforum
+<lb/>distentio dignationi apposita fiunt; ad haec tamen
+<lb/>magis, quod brachia, manus, tibias adimpleri dicunt, non
+<lb/>citius carnium et omnium musculorum, quam venarum.plenitudinis
+<lb/>secundum proprias ipsorum hypotheses esse putahimus.
+<lb/>Atqui sic etiam duplicem dignotionem facere nos
+<lb/>oportet, alteram venarum harum sensilium, quas omnes
+<lb/>homines conspicimus ; alteram illarum , quas ipsis solus spectavit.
+<lb/>Arbitror itaque jam constare iis qui animum advertuut,
+<lb/>non parui esse negotii plenitudinem dignoscere. Quum
+<lb/>autem ne verbotenus quidem illam dignoscere promptum sit,
+<lb/>.verum omnino difficillimum, multo minus in actionibus
+<lb/>spontaneis probe se gesserint qui neque quicquam de ipsa</p>
+<p>-.prius meditati. sunt; neque invenerunt.
+</p>
+<pb n="7.557"/>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Ab empiricis itaque orationem de plenitus
+<lb/>dine rursus exordiamur, posteaquam tuto admodum dictas
+<lb/>dubitationes effligere fe putant; fatentes quidem ipsi nihil
+<lb/>omnino de plenitudinis essentia fe novisse , lu tali vero congeris;
+<lb/>quam fyndromeir plethoricam nominant, utilem
+<lb/>fanguinis detractionem observatam esse dicentes. Universis
+<lb/>enim lu unum collectis , quae a singulis dogmaticis enmne-t
+<lb/>rata simt, ex his illorum dubitationes enitare censent: verum
+<lb/>multo magis, quam isti, si quis animum modo verbis
+<lb/>ipsorum attendat, unguuntur : quae rursus omnia ab exordio
+<lb/>recensere praestiterit. Esto igitur in praeterito tempore
+<lb/>consueta eduliorum diaeta, in repletione liberalior aliqua
+<lb/>ex parte quam antea; item excrementorum suppressio , universa
+<lb/>vita otiosa; in praesenti totius corporis vel partium
+<lb/>quarundam tensio, ad motiones pigritia, ad actiones imber
+<lb/>crllitas, et gravitatis et ulcerosae affectionis sensus, simulque
+<lb/>venarum tumor; addatur, fi placet, rubor, quoniam
+<pb n="7.558"/>
+<lb/>hunc quoque nonnulli adscribunt; quinetiam. .totius corporis
+<lb/>inaequalis quidam tumor et lassitudinis affectio. Sunt enim
+<lb/>qui haec adliciunt. . Interrogabimus^ igitur ipsos , quae ego
+<lb/>adolescens adhuc empiricum praeceptorem rogavi, quum
+<lb/>me primum haec doceret ; omniane simul dicta ad evacuatiouis
+<lb/>recordationem, ut ipsi ajunt, coire oportet, an si vel
+<lb/>unum ex iis conspiciant, venam statim mordent? Ad primam
+<lb/>igitur quaestionem prompte mihi. respondit, omnia suquiens
+<lb/>coire necessario p hujusmodi namque rem syndromen
+<lb/>esse, universorum eam complentium congeriem. Postquam
+<lb/>vero primum homines duos lu memoriam revocassem , quibus
+<lb/>ille ipse nuper venam incidere jussit i unum lippitutline
+<lb/>vehementer laborantem, alterum ex vehiculo. delapsum,
+<lb/>deinde loris implexum longius protractum, utpartes quaedant
+<lb/>contunderentur t post haec autum conticente ipso, alterius
+<lb/>cujusdam memini, . cui et ipsi mediocriter febricitanti,
+<lb/>dolorem vero capitis non ferenti , sanguinem. misit; rursus
+<pb n="7.559"/>
+<lb/>alii pleuritico , qui nihilo magis universam praedictum fyudromen
+<lb/>haberet; haesitabat maxime quid responderet.
+<lb/>Proinde plures id genus alios ei produxi ; imo superiorum
+<lb/>tubmonui , quibus non tolum non tutam fyndromen , sed
+<lb/>ne duo quidem symptomata habentibus hominibus, quod ego
+<lb/>affirmarim me meminisse, sanguinem ex vena detraxerit.
+<lb/>Huic etenim, qui ex vehiculo decidit, exercitato quotidie,
+<lb/>et consuetis omnibus excrementis abunde vacuato, mediocriter
+<lb/>edenti, et tuto fere die nobiscum agenti, tum neque
+<lb/>ipsius neque alterius cujuspiam opinione vacuatione indigenti
+<lb/>, quum ex vehiculo delapsus partes quasdam contudistet,
+<lb/>venam incidendam existimavit, nec rubore quopiam
+<lb/>acquisito, nec vatorum tumore, neci alio quolibet ex bis.
+<lb/>quae syndromen absolvant, fed solo partium contusarum.
+<lb/>dolore. Haud secus illos tractavit, qui lippitudine capitisque
+<lb/>dolore affecti, nullum plane dictorum symptomatum
+<lb/>in plethorica illa fyndrome perceperunt.. . Quin alios complures
+<lb/>, qui veI nihil ex plethorica syndrome , vel non om- .
+<pb n="7.560"/>
+<lb/>usa simul quae a nobis dicta sunt, haberent, venae iircisionem
+<lb/>vestro judirio admisisse vidimus. Nunc enim, ajebam,
+<lb/>omnes apud- me memoria repetens, quibus a vobis languinem
+<lb/>missum esse vidimus, nemo adhuc succurrit, qui uuiveriaur
+<lb/>hujusmodi symptomatum syndromeu haberet. Verum
+<lb/>huic quidem , quod lassitudine, nullo alio affectu laborabat,
+<lb/>vena incisa est; illi, quod sebricitarct graviter , vel
+<lb/>oculis doleret, vel capite, vel haemorrhoidum suppressione,
+<lb/>vel fi mulier suerit, menstruorum, non omnibus vero quae
+<lb/>plethorrca syndronre coire postulati Si igitur .universas as-,
+<lb/>sectiones, in quibus venae sectio proluisic observata est,.ple-:
+<lb/>thoricas nomines , nos quoque lippitudinem , plemitim , vehumentem
+<lb/>dolorem, culum e curru, aliaque imrunrera plethoricas
+<lb/>syndromas appellare tempus est. At si horum nihil
+<lb/>lu plethorico concursu comprehendatur , et eorum fymptumatum
+<lb/>congeries , quae supra retulimus , plethorica fyndro-,
+<lb/>me nuncupetur, nulli vena, priusquam omnia illa habeat
+<lb/>incidenda esu Quomodo igitur ille mihi ad haec responde-^
+<lb/>rit, quamque nihil decenter, magni otii negotium, non re-.
+<pb n="7.561"/>
+<lb/>m m a nobis nunc proposuerunt proprium institutum. Ego
+<lb/>autem -quum per otium nugandi tempus in praesentia non
+<lb/>feram , cogitari sturnos curationis universos in libro de venae
+<lb/>sectione ostendere, quos etiam ipsius ne unus quidem accurate
+<lb/>distincteque conscripserit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Itaque relictis in praetenti empiricis, ad
+<lb/>rationales denuo revertamur, singula symptomata, quae
+<lb/>. scripserunt , inspirientes. Nonnulla siquidem ipsorum
+<lb/>plenitudinis ad vires sunt, nonnulla plenitudinis ad enchyma
+<lb/>, usia non : absoluto sermone plenitudinis signa
+<lb/>sunt, ted hujus plenitudinis, alia prorsum nullius plenitudinis,
+<lb/>sed aut vitiosi cormptique humoris, aut imbecillae
+<lb/>sacultatis, aut solidarum partium tumoris. Hoc
+<lb/>ita te habere, mentem fi iis quae dicentur adhibeas,
+<lb/>condisces. Jam sime tensiva affectio quum sine exercitiis
+<lb/>incidit, multam omnino substantiam in sensu praedito
+<lb/>-corpore contineri ostendit; quae autem fit substantia,
+<lb/>aut ejus species, praeterea non ostendit; nempe cunr hac
+<pb n="7.562"/>
+<lb/>parte solum ipsa trusio cuiuslibet substantiae, tenuis, crassiae,
+<lb/>consistentia mediae,. et flatulentae, ad haec calidae,
+<lb/>frigidae, vel mediae communis sit; scd aliis quibusdam ilignofcendi
+<lb/>signis ad hujus distinctionem indiget. Porro
+<lb/>functionum infirmitas facultatem imbecilliorem ostendit,
+<lb/>dum id, quod movet , intercipit, .ut in manuum motu imbecilii;
+<lb/>nam multas dispositiones. comitatur. Sive enim car- .
+<lb/>neam atque adpossim genus cuipiam increverit, facultate
+<lb/>eisdem terminis permanente , motus . imbecilliores fieri ner
+<lb/>cessitas exigit, movente quidem aequali permanente, auctu
+<lb/>vero moto; sive unus aliquis humorum, vel etiam omnes
+<lb/>simul exuberaverint, vires autem cum eis. non adauctae fint,
+<lb/>necesse est hic quoque functiones imbecilliores evadere.; sive
+<lb/>utraque, et quae parenchymata vocantur et humores, facultas
+<lb/>autem non increverit; sive haec eodem modo fele haheant,
+<lb/>facultas imbecillior contigerit .Possent autem utraque
+<lb/>sumsi quoque convenire, tum ut facultas inualidior;. tum
+<pb n="7.563"/>
+<lb/>humores simul cum parenchymatibus vel plures; vel pauciores
+<lb/>fiant , vel horum alterum. Utrum igitur. propterea sunctiones
+<lb/>infirmae magis erunt in unoquoque ipforum acridente
+<lb/>, et duobus , et pluribus , et simul omnibus ? Quandoquidem
+<lb/>ob solidarunt partium nutritionem probam notior
+<lb/>nem aliquando infirmam magis esse factam arbitrari, hominum
+<lb/>est , qui ignorant facultates stolida tuta corpora transue,
+<lb/>fed arterias et .nervos spiritibus tanquam fistulas. et canales
+<lb/>fingunt. Deprehendes opinionis pravitatem ex aliis multis,
+<lb/>maxime duobus nostiis commentariis , de Hippoeratis et Platonis
+<lb/>placitis et de naturalibus facultatibus. Itaque ad bonum
+<lb/>habitum proprie spectat bona solidarum partium nutritio ;
+<lb/>probae carnis et corpulentiae .carnium incrementa propria
+<lb/>sunt. Plerumque igitur proportione adeps liberalius
+<lb/>augebitur; interdum in adipe magis caro, vel sula adeps increscet
+<lb/>Dictum est de sus in commentariis. de temperamenlis.
+<lb/>Quemadmodum autem in carne aliud est proba caro,
+<pb n="7.564"/>
+<lb/>aliud corpulentia, sic in sanguine hoc velut quaedam Ianguinis
+<lb/>.probitas, illud sanguinis copia. Jam vero probitas
+<lb/>fanguinis et qualitate et quantitate adamussim naturalis esse
+<lb/>omnibus manifesta ridetur: Sanguinis copia, polyaemia
+<lb/>dicta, qualitate quidem inculpata est, quantitate culpata est;
+<lb/>verum omnino. aut naturalem habituet, qui a generatione
+<lb/>contigit , exuperat , aut illum qui ad vices fpectat. Etenim
+<lb/>utraque , et facultatis robur , et sanguinis plenitudo aliquando
+<lb/>praeter naturam, quam origine acceptam habent, invicem
+<lb/>augescere possunt, quemadmodum lu probis athletarum habilibus;
+<lb/>humores namque et camelae partes- et vires proportione
+<lb/>mutua in ipsis increscunt. Jam igitur perspicuum
+<lb/>est, quod qui corporis tumorem unum esse plethorae signum
+<lb/>dicunt, falsa praedicanti; riam venarmn tumor plethoricum
+<lb/>suerit signum; carnium vero et adipis tumor , illarum
+<lb/>iptarum plenitudinis, non tamen quam nunc inquirimus;
+<lb/>quae etiam plethora vocatur. De hac enim plenitudine,
+<lb/>quae videlicet evacuationem ostendit, quum aliqui ipsorum
+<pb n="7.565"/>
+<lb/>dicere statuissent, quatenus homonymiis innotescit, erraverunt
+<lb/>adeo , ut in carnium atque adipis plenitudinem delaberentur.
+<lb/>Ita jam pravum ac irritum plenitudinis signum
+<lb/>est: tumor corporis. Ipsarum enim venarum , quae oculis
+<lb/>patent. repletionem notat, non tamen necessario inulto
+<lb/>latentium ; fini fieri aliquando potest exterioribus venis distentis,
+<lb/>interiores non itidem distendi; ut quum subito frigus
+<lb/>ipsas invadit, fanguis in altum relegit, et venae exteriores
+<lb/>ita sanguine destituuntur, ut ne appareant quidem.
+<lb/>Rursus calore exorto, vel in balneo, fanguis alto relicto,
+<lb/>ad summam cutem exterioresque corporis partes defertur.
+<lb/>Quod fi ardens febris extiterit, tunc quoque corpus veluti
+<lb/>fervens necessario uritur, instatur, diffunditur. Proinde
+<lb/>venarum tumor non est inseparabilis humorum copiae nota,
+<lb/>ied primum hujusmodi statum in corpore esse convenit, ut
+<lb/>neque interiores partes exterioribus , neque hae illis calore
+<lb/>praecellant; deinde ne immoderatus in toto animante calor
+<pb n="7.566"/>
+<lb/>consistat. His ante distinctis, venarum tumor sanguineae
+<lb/>plenitudinis, quam modo per excellentiam diximus, signum
+<lb/>aliquando fuerit. Nam .fieri nop potest, tam exacta fanguinem
+<lb/>iirterdum in venis contineri, ut nihil vel bilis , vel
+<lb/>pituitae, vel scrofae saniei inferatur. Unde nos in superiorubus
+<lb/>idem intelligi voluimus, sive humores, sive sanguinem
+<lb/>abundare diceremus. Quippe immixtus et ab assis hiunoribus
+<lb/>sincerus fanguis nunquam in venis comprehenditur. Demonstratum
+<lb/>enim est alibi a nobis de mixto nihil reserre,
+<lb/>humores, an sanguinem appelles, non tamen qualibet, sed
+<lb/>moderata quadam mensura aliis ei admixtis, idque in animasseus
+<lb/>secundum naturam sese habentibus. Universis enim
+<lb/>in naturali symmetria adauctis cum. sanguine per excellentiam,
+<lb/>idem .significat humorum nomen, nullumque dissitimeti
+<lb/>est humores auctos, vel sanguinem dicere, quum oratio
+<lb/>innuat humores id ipsum omnino sibi velle, quod est pro ve-i
+<lb/>teri proportione omnino abundare. Hoc itaque nobis sic
+<pb n="7.567"/>
+<lb/>definitum esto. Iterum ad institutum revertamur. Venarum
+<lb/>fiquidern tumor, neque propter exterioris constitutionis
+<lb/>victoriam, neque persusionem fervoremque obortus,. simgrutis
+<lb/>plenitudinem arguit. At talem particulam nec deciivenr
+<lb/>figurari, nec supra alias recenter esse motam oportet.
+<lb/>Quapropter oratione quadam si quis universus particulares
+<lb/>distinctiones sit complexus , tunc venarum tumorem languinis
+<lb/>plenitudinem indicare dicet, quum omnes simul particulae
+<lb/>eundem statum cum moderato calore obtinent. Si
+<lb/>namque pari omnes modo afficiantur , calor autem immoderatus
+<lb/>existat, fusio humorum, quae venas su tumorem attollat,
+<lb/>interea nascitur, non tamen sanguinis , verum spiritus
+<lb/>plenitudo ostenditur; nam humores calefacti inflantur; cujus
+<lb/>rei gratia qui venarum tumorem, plenitudinem significare
+<lb/>pronrmciarunt, si jam illis venis, quibus haec insint, ipsum
+<lb/>contigisse intelligant, recte dixisse videbuntur. Plenior
+<lb/>enim substantia est necessario, quae venis tumorem conerflavit,
+<lb/>quum prior extitit, etsi qualis tandem plenitudo fit,
+<pb n="7.568"/>
+<lb/>non ile liquido constat. Siquidem omnis substantiae copiosue
+<lb/>tumor praeter naturam communis. est, sive sanguis purus,
+<lb/>sive blliosns, siveferosus , sive pituitosus , sive flatulentus
+<lb/>exulat. Quemadmodum vero hic omnis plenitudinis differentiae
+<lb/>communis est, sic venarum quoque tensio. Etenim
+<lb/>lraec plenitudinis quantitatum , non speciei differentiam fequitur.
+<lb/>Quamobrem tumor sensusque tensurus non magis
+<lb/>humorum, quam spiritus plenitudinem ostendet. Si quis
+<lb/>igitur hunc in modum pronunciaverit : in tensionis sensu
+<lb/>plenitudo est necesario, vere dicet. Quinetiam si hoc pacto
+<lb/>dixerit: sensilium partium plenitudo aisiectum quempiam
+<lb/>inducit, hic quoque verus erili At si quis generali
+<lb/>plenitudinis vel humorum nomine relicto , sanguinem in .
+<lb/>oratione usurpet, veritatum non necessario prolaturus est,
+<lb/>ob eas quas diximus causas. Porro quod neque plenitus
+<lb/>duris sunpliciter, fed ejusdem, pro majoris minorisque ra-.
+<lb/>timne , differentia et in venarum tumoribus et teusiva affedione
+<lb/>versatur, inde est perspicuum. Nulla pars plena,
+<lb/>nisi violentam prius tensionem experta , dolet; si vero lu
+<pb n="7.569"/>
+<lb/>tumorem, non tamen violentius attollatur, nondum tenditur;
+<lb/>quamobrem tumor qui cunr tentione oboritur, majorem
+<lb/>indicabit plenitudinem; qui vero fine tentione, minorem.
+<lb/>Quo igitur modo interdum luitio nullus tumor lu venis apparet;
+<lb/>tensivus autem tensus vehemens est? Nam tensivam
+<lb/>affectionem maximis tumoribus coniunctam esse oportet.
+<lb/>Vel quia interdum tumor in venis latentibus insigniter distendit,
+<lb/>fiquidem plenitudo tum quae ad aliquid relationem
+<lb/>habet, de qua nunc disserimus, tum quae ad vastorum capacitatum
+<lb/>spectat, (quam sarte plenitudinem dicimus, nondum
+<lb/>ipfis tentis j tum quae ad tunicae distentionem refertur, venarum
+<lb/>tumorem generat, sanguine supra naturalem cujusque
+<lb/>symmetriam copiosius increscente, ut ad illam copia
+<lb/>referatur. Tunicae tensio quasi ipsius symmetriae excestum
+<lb/>declarat ; nun enim naturalis est ea tunicae tentio. Uterque
+<lb/>autem fanguis multus est, et qui ex naturali symmetria
+<lb/>et qui ex tunicarum trusione aestimatur. Caeterum Ereststratus
+<pb n="7.570"/>
+<lb/>amborum meminit, non exacte quidem, neque tam
+<lb/>luculenter ut. egq nunc., attamen ita, ut duplicem rei naturanr
+<lb/>esse declaret. Quum etenim dicit: Ab initio itaque.
+<lb/>et vasis mediocriter repletis, . robustiores sartioresque sctpsis
+<lb/>quam prius praeter consuetudinem esse apparent , rndicavrt
+<lb/>immoderationem sanguinis cuique naturae modum
+<lb/>excessisse ; ex quibus deinceps inserens ait : Ubi pleniores
+<lb/>multo evaserint, brachia, mantis et tibiae immoderatius
+<lb/>replentur, ceu tunicarum sanguinem continentium ametriam
+<lb/>innuit. Unde colligitur duos esse terminos sanguinis supra
+<lb/>v naturam adaucti; priorem, quum venis impletis tunicae
+<lb/>ipsarum praeter naturalem cujusque statum in tumorem attolluntur;
+<lb/>alterum, ubi ad hoc tunsio quoque accedit, quum
+<lb/>lu plenitudine, quae ad vices pertinet, ne alterum quidem
+<lb/>conspiciatur. Atque haec quidem de istis dixisse sufficit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p>Verum rubor, cujus et ipsi meminerunt,
+<lb/>non plenitudinis simpliciter, sed sanguineae plenitudinis
+<lb/>nota esu Desiderat autem ipse distinctiones easdem, quas
+<pb n="7.571"/>
+<lb/>tumor; fi namque ob causas externas eveniat, ut ob solem,
+<lb/>vel balneum, vel exercitationem; vel iter, vel ut summatim
+<lb/>dicam, ob calorem, ita vero si ob iracundiam pudoremque
+<lb/>, et quaecumque similia , cuj os generis sunt acutae
+<lb/>febres , jam non sanguinem indicat. Proinde quum aequalis
+<lb/>totius corporis affectio suerit, nullum autem eorum quae
+<lb/>percensuimus adsit, tunc nimirum rubor plenitudinis sanguineae
+<lb/>universi corporis animantis nota extiterit; sin minus,
+<lb/>certe illius partis, in qua apparet. Quin et inflammationrbus,
+<lb/>sive in musculis hae, sive in cute consistant, hujustnodi
+<lb/>color plethoricos morbos comitatur. Sed de rnflammatiouibus
+<lb/>abunde fatis in commentario de tumoribus praeter
+<lb/>naturum disseruimus , demonstrantes ipsos omnes pariter
+<lb/>ab humorum plenitudnre aliis atque aliis interdum partibus
+<lb/>incumbentium constitui. Jam vero non de sus, verum,
+<lb/>uti prius diximus, de illa plenitudine sermo est, quae plethora
+<lb/>vocatur, quaeque redundantia humorum in toto corpore
+<lb/>consistens desinitur. Non autem sic plenitudinem in
+<pb n="7.572"/>
+<lb/>toto corpore constitui dicimus , ut partium genus utrumque,
+<lb/>et vasorum et ceruium, laesionem acceperit. Nonnunquam
+<lb/>enim alterunr duntaxat affici contingit, tanquam suetiam
+<lb/>utralibet pars occupata fit non in una quapiam parte, vel
+<lb/>duabus , verum aut in toto animali , vel pluribus rtobilissimisque
+<lb/>partibus haec eveniat. Eodem modo tumorem,
+<lb/>qualisnam sit, deprehendere, viri est in rebus dignoscendis
+<lb/>exercitatissimi. In carnoso namque genere unus tumor ip- .
+<lb/>sarum carnimn est, alter humorum, carne tanquam lana
+<lb/>quapiam aut spongia supervacuo humore repleta. Atqui
+<lb/>talis in carnibus plenitudo ei, quae ex vasorum infusione
+<lb/>nomen accipit; proportione respondet; altera plenitudo
+<lb/>issi, quae ad vires vel cum gravitate, non est dissimilis; recordantibus
+<lb/>nobis, nihil interesse, decomposita cerne, vel
+<lb/>de musculis disputes; praeterea .si plenitudinis carnium fiat
+<lb/>mentio, musculos, non simplicem illam carnem, quam .parenchyma
+<lb/>nonnulli vocant , inaudiendam esse. In arteriis
+<lb/>farre et venis non fimiliter ad vires plenitudo aegris
+<pb n="7.573"/>
+<lb/>ipsis percipitur, nisi qui natura ad sentiendum suerint accommodatissima;
+<lb/>e;usmodi solis obscura quaepiam ac profunda
+<lb/>gravitas in corpore apparet. Quamobrem aliae quaedam
+<lb/>talis plenitudinis notae manifestiores inquirendae sunt. At
+<lb/>quum plerique medicorum segniter eam tractaverunt, nounullrne
+<lb/>prorsus inspexerint quidem, alii multa omiserint,
+<lb/>nulla certior firmiorque nota arteriarum motu inventa -est,
+<lb/>quem in libris de pulsibus copiose declaravimus. Siquidem
+<lb/>venae una cum- arteriis saepenumero plethora corripiuntur
+<lb/>propter vasorum confluentiam , quam alibi saepe demonstraulmus;
+<lb/>aliquando viscesis vel orastis humoribus in venis collectis,
+<lb/>haud ita facilis eorum in arterias -transsufio comunttitur ;
+<lb/>at hujusmodi rarum est. Nisi enim summe crassi aut
+<lb/>viscosi humores extiterint, omnino transfundemur. Equidem
+<lb/>in ejusmodi affectionibus plenitudinis in venis collectae
+<lb/>nulla evidens nota est, sed ex arteriarum motu licet capere,
+<lb/>etsi quam maxime Nicarcho et Praxagorae ridetur; attamen
+<pb n="7.574"/>
+<lb/>fangmnem arteriis non transmittunt. In alus plethorae assectionibus
+<lb/>pulsuum signis fides adhibenda est, quae privato
+<lb/>opere a nobis explicata sunt. Caeterum species plenitudinis,
+<lb/>quum iit totum corpus aequabiliter humoribus diffusa (
+<lb/>fuerit extensaque, hoc modo distinguendae sunt. Russi-:
+<lb/>cunda siquidem sanguinis plenitudo est; subpallida vero fla-.
+<lb/>vae bilis ; albescens immoderatius ab eo qui secundum natu1
+<lb/>am est statu decessit , quum pituita exuperat ; ut si atra bilis
+<lb/>, magis atra est plenitudo. Porro in singulis quae commemoravmrus
+<lb/>, sanguinem simul auctum esse oportet. Nam
+<lb/>si pallida bilis et flava nominata aliquando exuberaverit, ut
+<lb/>in. regio morbo laborantibus, non adhuc plenitudo,. nec
+<lb/>plethorica affectio, sed vitiosus humor hujusmodi assectus
+<lb/>esit. Hoc pacto in atra bile. et pituita dicendum esu Ubi
+<lb/>.vero , sicut antea diximus , vel gravitas ; vel tumor supra
+<lb/>naturalem statum sit, plethorica quidem talis affectio dicetur;
+<lb/>ex colore autem praepollentis humoris speciem cognoscere
+<lb/>oportet, Verum sula bilis, nullum plenitudinis inseparabile
+<pb n="7.575"/>
+<lb/>fymptoma potest effi cere, neque tumorem certe, neque gravitateuu
+<lb/>Nam altera quaedam ante hanc erit affectio , priust
+<lb/>quam eo corpus increverit. Item pituita, et haec non quaelibet
+<lb/>simpliciter, modo fota suerit, sed ea quae lu hyderis,
+<lb/>quos leucophlegmatiae appellant, lu universo corpore. redundare
+<lb/>poterit. At liquet etiam crudam , quae humoremdus
+<lb/>nominatur , luter pituitae species lu praesenti sermone
+<lb/>ponendam esse. Etenim si diversam ab illo statuamus , praeter
+<lb/>plenitudinis differentias quas nuper retulimus, necesse
+<lb/>est ejusdem quoque humoris discrimen apponere. Est autem .
+<lb/>humor hic pituita crassior , minusque flatulentus, qualis in
+<lb/>minis subsidet, maxime iis, qui copiosum ex voracitate testimentum
+<lb/>elixis fabis simile continenti Atqui tusis humor
+<lb/>saepe illis universim per alvum ductus est , qui ab exercitiis
+<lb/>quidem abstinuerunt, . cibis autem liberalissime ufi sunt,- bale
+<lb/>neisque a pastu. Imo et huic Immori, sicut pituitae, albedo
+<lb/>quaedam decolor in toto corpore subsistit. Inter reliquas
+<pb n="7.576"/>
+<lb/>pituitae species alia dulcis est, alia acida, alia falsa. Dulcis
+<lb/>somnolentos facit; arida quum abundat, famelicos; qrrenradmo
+<lb/>dum et falsa, quum exuperat, sitibundos; cruda vero
+<lb/>praedicta cibos fastidientes parit.. Aliae pituitae praedictae
+<lb/>paulo majorem naturali somnum conciliant. At crudus humor,
+<lb/>quemadmodum dulcis pituita , manifesto somnolentus
+<lb/>efficit. Monstratum namque est alibi , sensuum principio
+<lb/>humectato et frigescente., soporatam sequi affectionem;
+<lb/>quemadmodum siccescente et calescente , vigilias ; hoc medo
+<lb/>et biliosi omnes propter utramque bilem insomnes agunt.
+<lb/>lu atra- praecipue adest morositas , a<hi rend="u">nimi</hi> demissio , et <hi rend="u">sin</hi>e
+<lb/>ratione tristitia. Quod si non universo in corpore praedicti
+<lb/>humores mundaverint, in una vero parte quapiam congesti
+<lb/>sint, tumores praeter naturam in ipsis corporibus generant,
+<lb/>de quibus in alio opere cousideratio instituitur. Atque ipsis.
+<lb/>nunc. illorum symptomata- dicta fiunt, praeter decolorationem
+<lb/>et. .ea quae cerebrum et stomachum occupant. Etenim
+<lb/>vigiliae et somni cerebro,. appetentiae cibi et fastidia, stomacho
+<pb n="7.577"/>
+<lb/>aliis alias affecto accepta feruntur. Clarum vero
+<lb/>est os ventriculi stomachi nomine hic vocatum, in quo
+<lb/>pituita collecta, ut paulo ante recensuimus, appetentiae excitaxit.
+<lb/>Qui flava bile abundant, fitibundi nauseabundique
+<lb/>ob bilem evadent, et os ipsis amarum esu Ex atra,
+<lb/>fubmissi animo, et morosi, horribiles, a potu abstinentes,
+<lb/>saliva pleni; at non omnes cibum refugiunt, test quidam ex
+<lb/>ipsis ; lu vero abunde famelici funt , quibus atra bilis arida
+<lb/>qualitate exuberat. Hoc autem evenit, ubi ipsa malignior
+<lb/>evadit. Caeterum vel ut sanguinis faex tantum est, nondum
+<lb/>exacte arida, praestiterit forsan hujusmodi humorem
+<lb/>non atram bilem, fed melancholicum, quatenus ita diritur,
+<lb/>appellare, quemadmodum consuevimus, ideo quod atrae
+<lb/>hili vicinus sit, ejusque naturam siatim subiturus. At de
+<lb/>vitiosorum humorum differentiis disserendi nunc tempus non
+<lb/>est , quod nec plenitudinem ipsos nominari dixerim ; verum
+<lb/>non simpliciter quod redundat quomodocunque , invenire,
+<lb/>oxnrnus rutu. vrr.
+<pb n="7.578"/>
+<lb/>sed de plenitudine agere nobis est propositum Haec autem
+<lb/>est humorum in animantis corpore redundantia. Neque
+<lb/>igitur particularium tumorum, neque vitiosi humoris species
+<lb/>in hoc.sermone audire desiderandum est, sed quum universi
+<lb/>vel juxta pristinam proportionem increverint, vel exiguum
+<lb/>quendam excelsum unus inter eos acceperit. ltaque sanguis
+<lb/>in plethoricis affectionibus vehementer potest . praecellere ;
+<lb/>aliorum humorum nullus. Etenim cacochymia nunc (quam
+<lb/>vitiosum humorem interpretati sumus) hujusmodi, non plenitndo
+<lb/>adhuc, neque plethora nonnnatm. Quere pulsus
+<lb/>etiam in cacochymiis humorum naturae peculiares omnino
+<lb/>sunt; in superioribus plenitudinibus non .similiter manifestas
+<lb/>servant differentias, quia .humor redundans sanguinis paululum
+<lb/>admixtum prorsus habet. Ubi sane vehementer exuperaverit,
+<lb/>j tales pulsus ob bilem flavam oriri necesse est,
+<lb/>quales loqui diximus exiccata corde et incalescente. Prop
+<lb/>ter. atram rursus ejusmodi, quales, si refrigeretur idem
+<lb/>siccescatque, provenire docuimus. Eadem ratione, siquando
+<pb n="7.579"/>
+<lb/>pituita alios vicerit, pulsus frigidae hnmidaeque affectionis
+<lb/>inlices procreabit Sanguinem adamussim naturali habitu
+<lb/>praeditum nulla pristinae constitutionis immutatio comitatur.
+<lb/>Quum humido magis abundat, pulsus itidem immutantus;
+<lb/>ut et si calidior et frigidior quam antea fiat.
+<lb/>Porro hujus generis universa in opere de pulsibus distincta
+<lb/>sunt. In praesentia tantum dixisse satis est, sanguinem videliceti
+<lb/>ex^ otio humidoque rictu, aquosis recrementisin eo
+<lb/>redundantibus , humidiorem atque prius evadere ; ex iracundia,
+<lb/>exercitus, aestu, frictionibus, medicamento calefaciente,
+<lb/>alimento calido, rino meraciore, vetustioreque
+<lb/>calidiorem; quemadmodum ex frigore quodam recenti frigidiorern.
+<lb/>Quod si quispiam cibis siccioris temperamenti;
+<lb/>alia tamen nulla intemperie praeditis ; plenius usus suerit,
+<lb/>fanguis illi siccior luturus est. Quinetiam^ per coniugium.
+<lb/>humidior et frigidior, vel frigidior et siccior, calidior et
+<lb/>humidior, vel calidior et siccior ob praedictas causas sine
+<pb n="7.580"/>
+<lb/>alterius cujusquam humoris exsuperantia reddetur.. At si
+<lb/>propter illorum mixtionem intemperiem subeat, haec cum
+<lb/>vitioso humore talis intemperies constituetur, quae etiamnum
+<lb/>sanguine vel calidiore, vel frigidiore humidioreque impetidio
+<lb/>fieri dicitur ; pari modo secundum alias fex intemperies
+<lb/>(universae namque numero fiant octo] secus autem quam cum
+<lb/>solus ipse sua natura talis fuit. Jam vero pulsus fecundum
+<lb/>.octo intemperies fperiem illam obtinebunt, qualem <hi rend="u">in</hi> commentario
+<lb/>de pulsibus explicarimus. Verum soliusne fanguinis
+<lb/>sit, an humoris cnjuspiam ei admisti, distinguendum
+<lb/>est praesenti corporis totius colore, aliisque symptomatibus,
+<lb/>quae de somno, vigilia , vel appetentia et cibi fastidio aliisque
+<lb/>ante paulum commemorata fiunt; ad haec praecedente
+<lb/>victus ratione, exercitiis, et iis quae ipsi aegro accidere
+<lb/>consuerunt; insuper anni tempore, regione, et. naturali
+<lb/>corporis deusitate atque raritate. Etenimfatius est ex onec
+<lb/>nibus fidem dignationi astruere, non ex uno., vel duobus,
+<pb n="7.581"/>
+<lb/>quum probe sciamus Polam ipsam in arte plurimum conjecsurae
+<lb/>acceptum ferre, dico jam hanc artis parteni; quae omni
+<lb/>dignationi servit, non modo cacochymiae; vel plenitudini,
+<lb/>quas nunc definire instituimus, siquidem actiones; vel
+<lb/>morborum causae, vel remedia, exactiorem habent notitiam.
+<lb/>Diximus de sus ipsis copiosius alibi. Atque nunc fatis erit,
+<lb/>praeposito abunde definito, in eodem manum supremam
+<lb/>operi imponere. .. Absolutus autem sermo evaserit, fi exemplura
+<lb/>adhuc ei subiungatur. Fingamus -jam homini nulla
+<lb/>febre laboranti venas plenius intumescere, et. universum
+<lb/>.corpus. praeter modum rubere. Cousiderandum igitur venit,
+<lb/>an nulla. calefaciens causa ei accesserit. Si enim appareat,
+<lb/>melius erit, donec ex- illa motus in toto corpore constituatur,
+<lb/>dignotionem differre; quia nec irascentem,. vel lotum , vel
+<lb/>lavantem fe , vel exercitatum , vel vino recenter impletum,
+<lb/>vel alio quovis modo calefactum; dignoscere convenit, sed
+<lb/>motionibus externis. omnibus. in. quiete cessantibus. Nam
+<pb n="7.582"/>
+<lb/>si tunc ejusmodi appareat, sanguinem homini exuberare judicabis.
+<lb/>Inde alia sunt inspicienda ; primo sane , quae maximam
+<lb/>habent facultatem; deinceps reliqua. Ostendimus
+<lb/>gravitatem , tunsionem , . ad motum pigritiam ; mox pulsus,
+<lb/>vigilias, somnos,. appetentius cibi, et sastidia, aliaque fimi-.
+<lb/>lia. Postremo praecedentia lingula, quae plenitudinem
+<lb/>faciunt, au consueta quaepiam excretio suppressa sit, an
+<lb/>exercitatio neglecta, an pleniores multumque nutrientes cibi
+<lb/>continenter assumpti sint, an post alimenta insuetis balucis
+<lb/>usus fuerit, . ad haec quoque an crebro plethoricis morbis
+<lb/>homo corripiatur; accedunt his omnibus inditia a loco et
+<lb/>anni tempestate sumpta, -vel si aliud tale velis apponere;
+<lb/>non aequalem omnibus causam distribuens, ut nec in aliis
+<lb/>artis -partibus. .Nonnullae siquidem notae scientificaefurit;
+<lb/>ut tunsio, gravitas, venarum tumor, pigritia,. color, puls
+<lb/>suum motio, cunctis videlicet accessoriis motibus separatis.
+<lb/>Nonnullae ab his declinant,- velut excrementorum suppressio,
+<pb n="7.583"/>
+<lb/>vita otiota, cibi plures et valentes, atque post nutritionem
+<lb/>baluea. Ubi namque universa conveniunt, scientificis
+<lb/>vicina fiunt. Tertium praeter haec ordinem occupant, si
+<lb/>ex consuetudine plethoricis affectibus homo corripiatur.
+<lb/>Delude loci temporumque ratio est, quae ipsa omnia consti-.
+<lb/>tuit; quoniam hyeme et vere frigidis et temperatis regioni.
+<lb/>bus plenitudinem magis accunmlant; calidis .et siccis anni
+<lb/>temporibus locisque minus ; ita in superficie cutis densi.
+<lb/>crebrius, rariores- parcius.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

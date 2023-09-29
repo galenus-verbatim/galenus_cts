@@ -1,0 +1,2864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Ad Glauconem de methodo medendi</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg067.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">11</biblScope>
+              <biblScope unit="pp" from="1" to="146">1-146</biblScope>
+              <date>1826</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x11">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="197" to="220">197-220</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">10</biblScope>
+              <biblScope unit="pp" from="344" to="391">344-391</biblScope>
+              <date>1679</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x10">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg067.verbatim-lat1">
+<pb n="11.1"/><pb n="11.1"/>
+<div type="textpart" subtype="book" n="1">
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI AD GLAVCONEM DE MEDENDI METHODO LIBER I.</head>
+
+
+<p rend="indent">Non communem solum omnium hominum
+<lb/>naturam o Glauco, sed et cujusque propriam nosse medicum
+<lb/>oportere et ab Hippocrate olim recte enunciatum est et a
+<lb/>nobis in ipsis artis operibus, ut nosti, studiose observatum:
+<lb/>Fieri tamen non potest ut propria cujusque perinde atque
+<lb/>communis scribatur, sed oppofito se habent ordine scripta et
+<lb/>opera cum in aliis plerisque, tum maxime in his quae nunc
+<lb/>docere statuimus. Efflagitasti enim ut tibi universalem medendi
+<pb n="11.2"/>
+<lb/>methodum- delinearemus, haec autem qualitate quantitateque
+<lb/>remedii cujusque et utendi modo ac occasione, quae
+<lb/>horum omnium cognitu difficillima est, perficitur. Citra
+<lb/>quam admodum praecipitem, ut alicubi auctor nobis bonorum
+<lb/>omnium Hippocrates docet, plerumque medicos non
+<lb/>vulgares modo, fed et certe optimos fassi vides. Quin etiam
+<lb/>recta assequi coniectura medicamenti quantitatem pro yirium
+<lb/>ratione corpori accommodandam difficilem esse idem
+<lb/>vir scripsit. Quum igitur ad recte medendum magnopere
+<lb/>conferre- tum occasionem tum quantitatem remediorum constet,
+<lb/>sint autem haec singulis aegrotis propria, nihil vero
+<lb/>quod proprium sit verbis explicari possit, hac ratione quod
+<lb/>commune est scribere cogimur, tametsi id usu sit fecundum.
+<lb/>Plerumque enim aegrotus quosdam inrisimus , quibuscum
+<lb/>antea dum fani essent versati non fuimus, proinde quem colorem
+<lb/>, quam corporis habitudinem, quem nativum calorem
+<lb/>arteriarmnque pulsum ante habuerint ignoramus, quae si
+<lb/>ante perspecta nobis fuissent, morbi utique magnitudinem
+<pb n="11.3"/>
+<lb/>probe judicare potuissemus. Cujusque eum morbi magnitudo
+<lb/>tanta est quantum a naturali statu recedit. Quantum vero
+<lb/>recedat solus is novit, qui naturalem habitum ad amussim tenuerit.
+<lb/>Quod quum in illis ipsis ignoremus, ne omnino haesilemus,
+<lb/>ad id quod commune est confugimus. Nam in hoc
+<lb/>artis peritus imperito plus nonnihil potest. Quid vero plus ?
+<lb/>Hippoerates quidem omnium quos norimus id primus literis
+<lb/>mandarit. Qui autem post hunc fuerunt, ejusque scripta
+<lb/>intellectu confequuti sunt, fusius sunt interpretati, inter
+<lb/>quos suit Muesitheus Atheniensis, vir cum in omnibus aliis
+<lb/>quae ad artem pertinenti non mediocriter eruditus tum in
+<lb/>exercenda arte quantum via ac ratione licet nulli peritia
+<lb/>secundus. Hic Muesitheus a primis snmmisque generibus auspiculus,
+<lb/>ea in alia item genera, species et differentias secanda
+<lb/>esse censuit. Haec denuo in alia similiter, quae rursus eodem
+<lb/>modo distribuerentur , dum ad aliquam talem defcenderemus
+<lb/>speciem, quae divisa in unum numero ac i nui vi-.
+<lb/>duu.m desineret. Mihi vero satis est tibi sententiam mean
+<pb n="11.4"/>
+<lb/>brevibus explicuisse. -Nam ridiculus forem si te tua docerem;
+<lb/>tanquam ea pridem ex Platone non didiceris. De hac re: igitur
+<lb/>meminimus, non ut te .dividendi rationem doceremus,
+<lb/>sed quod ad ea quae post dicentur omnia .non inutilem fore
+<lb/>speraremus , quodque aliter tibi causas, ob quas medicorum
+<lb/>plurimos passim errare contingit, efflagitanti non alia via
+<lb/>melius indicare possemus. Etenim quicquid tum in aliis su- ctis,
+<lb/>tum a multis medicis in morborum curationibus delinquitur,
+<lb/>primam id maximamque causam habet vitiosam dia
+<lb/>visionem. Quidam enim in primis fummisque generibus statim
+<lb/>consistunt, solis indicationibus quae ab illis desumuntur
+<lb/>contenti, quidam quadautenus diridendo processerunt, sed
+<lb/>ad divisionis metam non pervenerunt, multi autem perperam
+<lb/>diviserunt.- . At- quisquis omnia et quae secundum et
+<lb/>praeter naturam sunt ad hanc riam ac rationem revocarit
+<lb/>et ex omnibus iis quae per divisionem inventa sunt integras
+<lb/>sumpserit iudicationes, solus is .quantum per humanas vires t
+<pb n="11.5"/>
+<lb/>licet medendo non erraverit, notus quidem aliis melius, iguotos
+<lb/>vero- quam fieri poterit maxime secundum illos curaverit.
+<lb/>Si quis enim probe distinxerit primum aetatum, deinde temperamentorum
+<lb/>differentias et vires multaque id genus quae
+<lb/>hominibus insunt, cuiusmodi est color, calor, corporis habitus,
+<lb/>arteriarum motus, consuetudo, studia et animi mores , quibus
+<lb/>addiderit maris et foeminae discrimen, et quae ad regiones
+<lb/>anni tempora et alias ambientis nos aeris constitutiones, ad
+<lb/>propriam aegrotantis naturam prope accedet. Verum alia
+<lb/>quidem horum omnium in libris de pulsibus,. alia vero in
+<lb/>libris de temperamentis disputata sunt , quemadmodum et
+<lb/>quae praeter naturam sunt universis, ut inter se. formis ac
+<lb/>generibus differant, in libris de affectibus a nobis definita
+<lb/>sunt. Nunc vero omnis nostra disputatio de iis aegrotis erit,
+<lb/>quos exacte antequam morbum contraherent noveramus,
+<lb/>cum quibus tamen et reliquos omnes, quorum nobis non
+<lb/>erat perspecta natura, intelligemus. Siquidem dllficile- non
+<pb n="11.6"/>
+<lb/>fuerit ex eo quod perfecte distinctum est id etiam quod
+<lb/>tale non sit invenire.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Igitur a febribus, quoniam harum curandarum
+<lb/>methodum habere cupiebas, auspicemur, primumque de
+<lb/>simplicissimis, quas Hippocrates ephemeras vocat, disseramus.
+<lb/>Hae autem ex- lassitudine nascuntur, temulentia, ira, moerore,
+<lb/>excandescentia furoreve , aliisque vehementibus animi curis.
+<lb/>In hoc genere continentur et quae a bubone originem ducunt,
+<lb/>exceptis iis quae fine. manifesto fiunt ulcere. Hae
+<lb/>namque suspicione non vacant, minimeque mites sunt. Sed.
+<lb/>et pervigilium simplicem febrem saepe allusit, quemadmodurn
+<lb/>et algor, nonnunquam et ardor. omnes hae febres folvi
+<lb/>facillime possunt, siquidem ad balneas aliamque usitatam
+<lb/>vivendi rationem aegrotum statim ducere oportet. Itaque qui
+<lb/>multorum sermone celebratam illam diatritou, id est triduanam
+<lb/>inediam, in omnibus iis admittunt, sebresteddunt saepe
+<lb/>acriores , tametsi etiam alioqui delinquunt. Quemadmodum
+<lb/>ex ipsis videre est non paucos, qui quoties aegrotos invisunt
+<pb n="11.7"/>
+<lb/>ita aberrant, ut certe manu factos morbos inducant. Harum
+<lb/>igitur febrium prompta est curatio, sed diligentiam exigit
+<lb/>majorem dignatio, de qua aule nos nemo quantum res poscebat
+<lb/>conscripsiti Itaque mirum non eftm ultos tantum cu-.
+<lb/>rando hallucinari, quantum a dignotione aberraut. Nonnulli
+<lb/>enim casu quodam in graves saepe morbos inciderunt,
+<lb/>velut temulenti vel sole exusti vel refrigerati vel labore. faligati
+<lb/>vel vigilias passi vel furore concitati, aut alia quavis
+<lb/>causa quae pense taedere idonea sitassecti, deinde omnia
+<lb/>ob causam quae antecessit accidere , neque aliam subesse assectionem
+<lb/>arbitrati, negligentius victus rationem instituentes
+<lb/>non intellexerunt scfe in incurabilem aut aegre quidem sunabilem
+<lb/>morbum ruere. ob id igitur adhibenda omnino diligentia
+<lb/>est,. quemadmodum Hippocrates admonet, ut non
+<lb/>solum futura praenuscamus, fed et praeterita et praesentia
+<lb/>cognoscamus. Etenim quod nunc proponimus adeam artis
+<lb/>partem attinet,. quod et nos quam dilucide poterimus oriplicabimus.
+<pb n="11.8"/>
+<lb/>Neque parvi refert an aegrotum jam lavere
+<lb/>confidereque, an sibi cavere ac se tueri jusseris. Accedentes
+<lb/>igitur ad aegrotum in primis quae in ipso sunt praecipua,
+<lb/>deinde vero esta contemplari oportet, ne minimum quiddam,
+<lb/>si fieri omnino possit, omittentes. Siquidem ut indicationi
+<lb/>quae a maximis sumitur magis aut minus credamus,
+<lb/>ex aliorum accessione efficitur.. Maxima vero signa in febricitantibus
+<lb/>omnibus ex pulsibus et urinis petuntur, quibus
+<lb/>alia omnia quae in facie esse docet Hippocrates et quae ah
+<lb/>accubatione et respiratione, quaeque ab excrementis tum
+<lb/>superiorum tum insertorum partium sumuntur , atque etiam
+<lb/>si quod appareat symptoma in quacunque corporis parte
+<lb/>aut ejus actione, qualia ille sescenta an sexcentis locis leripsit,
+<lb/>addenda sunt, .neque ex his ullum oscitantur praeter-.
+<lb/>eundum esu Haec quidem febrium omnium communia sunt.
+<lb/>Itaque in his etiam simplicissimis, de quibus praesens est
+<lb/>disputatio, nullum horum relinquendum est, Perspectis autem
+<pb n="11.9"/>
+<lb/>tum ex pulsibus tum urinis febris moribus; pulsibus
+<lb/>quidem nullam inflammationis notam, nullamque omnino
+<lb/>in uno arteriae percussu inaequalitatem habentibus, aut si
+<lb/>habeaht, prorsus obscuram, urinis vero vel eas quae feeundum
+<lb/>naturam habent omnino imitantibus vel a naturali statu
+<lb/>parum deflectentibus, ad alia quae ante commemoravimus-
+<lb/>omnia veniendum esu Quumque omnia velut concentu
+<lb/>quodam consonent, jam .fidendum est quaerendumque, si lu-bet,
+<lb/>ab aegroto, num qua causa evidens praecesserit, quod
+<lb/>si fateatur aeger,. expectatu prima febris solutione protinus
+<lb/>lavandus est, quum fidelior tibi dignatio fiat ex ipsa solutiouls
+<lb/>forma. Nam tunc arteriarum motus huic omnino, qui in
+<lb/>fanis est; assimilatur; Quum is in nulla alia febre ad natu-ralem
+<lb/>statum redeat; etiamsi temporis spatium inter prioris
+<lb/>accessionis finem et sequentis initium longum sit, velut in
+<lb/>tertianis et quartanis, in quibus iemper febris vestigium re.
+<lb/>linquitur, -In diariis vero. cessante accessione omnia simul
+<pb n="11.10"/>
+<lb/>signa abolentur, harum tamen plurimae in madores folvuntur,
+<lb/>nonnullae in suaves ac lenes sudores , aut omnino ve-lut
+<lb/>vapor aliquis copiosus ex imo corpore exhalat. Sed et
+<lb/>urinae eo tempore longe quam per initia meliores tibi apparebuut.
+<lb/>Neque vero si quis cum febre caput aut partem
+<lb/>aliam dolor occuparit, ic amplius manet. Si vero et aeger
+<lb/>facile morbum ferat, certissimum est indicium, quod velut
+<lb/>impressum quoddam sigillum omnium maxime febris manfuetudinem
+<lb/>exprimet. Quod si, dum lavantur, insolitum fiigeris
+<lb/>horrorem aliamque molestiam non sentiant, ac deinde
+<lb/>post lavationem facile tolerent et bene ferant, cibus offerendus
+<lb/>vinumque potui dandum est sine formidine, quantum
+<lb/>res praesens efflagitat. Nos vero, ut nosti, ab aegroto sciscitari
+<lb/>non sustinentes causam quae praecesserit dicere cuna.mur,
+<lb/>quod maximum est argumentum eum non errare, qui
+<lb/>talem sit adeptus facultatem. ..Si vero manentibus adhuc
+<lb/>animi motibus aegrotum contempleris., maxime ex pultibus,
+<pb n="11.11"/>
+<lb/>ut in libris de pulsibus declaratum est, deinde ex estis dignotio
+<lb/>petenda est. Quod si hi fedati fuerint, affectum vero
+<lb/>reliquerint, ex pulsibus quidem perturbationum quae feluem
+<lb/>attulerunt indicium obscurum habebis, fed reliqua
+<lb/>sine pulsibus tibi sufficient, in omnibus enim ut plurimum
+<lb/>urinae rufae apparent. His vero qui ex moerore laborant
+<lb/>acrimonia potius quam caloris abundantia inest, quemadmodum
+<lb/>contra iis qui ex iracundia. Sedet corporismacies
+<lb/>in his quos moeror quam quos cura conferit manifestior
+<lb/>conspicitur , oculorumque cavitas et insueta quaedam decoloratio
+<lb/>, quae quidem et aliorum qui quomodocunque cogi.talionem
+<lb/>exercuerint communia fiunt. Verum ex oculis
+<lb/>maxime discernere licet, ex quibus et in sanis quoque animi
+<lb/>mores coniicere possis. At in aegrotis perspicua magis tibi
+<lb/>signa erunt, si accurate conspicere queas. Sic illi quidem
+<lb/>ab .affectis moerore distinguendi sunt, qui in disciplinis et
+<lb/>speculationibus mentem exercuerunt. Eos vero, qui ex peri
+<lb/>vigiliis- febricitarant, tum decolorationis differentia ab aliis
+<pb n="11.12"/>
+<lb/>discriminat, ipsis enim fubtumida facies est, tum manifestus
+<lb/>oculorum motus. Vix enim palpebras attollunt, palpehrisque
+<lb/>inest humiditas , nam moerore et cura affectis marefenus.
+<lb/>Caeterum cavitas commune omnium symptoma- est,
+<lb/>nempe tristitiae, vigiliarum et cogitationis et siudii, non tamen
+<lb/>iracundlae in qua nec oculorum cavitas nec decoloratio
+<lb/>manifesta conspicitur. Calor quoque uberior est, ex alto- .
+<lb/>que corpore celeriter erumpit , nec pulsus magnitudo perit,
+<lb/>quemadmodum in vigiliis, moestitia et cogitationibus. Ab iracandia
+<lb/>itaque evidentissime haec distinguuntur, illa vero inter
+<lb/>te quemadmodum ante diximus. Quibus autem lassitudo
+<lb/>febrem intulit, aridior quam in alia quacunque diaria cutis
+<lb/>redditur. Quod omnium quidem ex lassitudine febricitantium
+<lb/>ad accessionis usque vigorem est commune, a quo tempore
+<lb/>plurimis qui quidem immoderate non laborarint, lmmor
+<lb/>aut vapor calidus ex intimo corporeerumpit. . Quibusdam
+<lb/>vero post rigorem siccitas perseverat , praecipueque dabore
+<lb/>vexatis stupra modum aut refrigeratis aut exustis una
+<pb n="11.13"/>
+<lb/>cum defatigatione. Nec .etiam modo eodem habent pulsus in
+<lb/>utrisque. Siquidem immodice defatigati parvos , alii vero
+<lb/>magnos obtinent. Febres vero quae ex cutis densitate nafcuntur,
+<lb/>haec autem densatur .aut frigore- aut qualitate assatim
+<lb/>astringente, velut inico, qui se aluminosa laverat aqua,
+<lb/>omnium solae adstricta fiunt affectio. Has vero tactu depre-.
+<lb/>heu dero licet, quemadmodum et squalidas et quae ex lassitudine
+<lb/>et solis ardore contrahuntur.- Neque enim earum
+<lb/>densitas excerci talum tactum latere potest. Caeterum caloris
+<lb/>motus expromitur, quem quidem primo occursu mitem,
+<lb/>deinde acriorem, si diutius tangendo immoretur, manus sentiet,
+<lb/>urinae tamen rosae non apparent neque corporis moles
+<lb/>concidit,. proinde neque oculi cari sunt neque aridi, verum
+<lb/>in quibusdam humidiores ac prominentiores quam pro naturali
+<lb/>constitutione visuntur. Sed nec pulsus ut in moerore,
+<lb/>cura, .vigiliis aut . immoderatis excerci talionibus minores
+<lb/>sunt. In diariis .vero, quae ex bubone contrahuntur, pulsus
+<pb n="11.14"/>
+<lb/>sunt maximi, celeres ac crebri, calorqne multus et a rigore
+<lb/>statim humor quidam ex alto corpore ad cutem fertur casidus,
+<lb/>sed tamen suavis. Ejusmodi enim febres omnium minime
+<lb/>acres mordacesque sunt: iti his facies omnino rubicunda,
+<lb/>ac tumidiuscula fubalbidaeque urinae apparent. Communis
+<lb/>autem omnibus ephemeris est pulsus aequalitas. In
+<lb/>harum. enim paucis admodum inaequalitas in uno arteriae
+<lb/>percussu conspicitur , sed nec ipsa quidem omnino evidens
+<lb/>neque manifesta. Hactenus de diariarum. notis. .</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Omnes quidem balneo curandae sunt.
+<lb/>Quod si .ex cutis densitate aut bubonibus febricitantes in
+<lb/>balnei aere immorari [usseris, haudquaquam laedes. Resiqui
+<lb/>vero omnes ab aere abducendi quam citissime sunt. At
+<lb/>in aqua diutissime versari, li velint, permittendum. Caeterum
+<lb/>amplius fricandi eum oleo sunt tepente ac largo, mulsibus
+<lb/>manibus maximeque qui ex fatigaticne, post bos qui ex
+<lb/>astricta ente, deinde vero qui ex bubone febricitant. Hi autem
+<pb n="11.15"/>
+<lb/>quam fieri possit creberrime lavandisunt, cibandi vero
+<lb/>saepe qui ex lassitudine laborant, sed non qui ex cutis astrictione
+<lb/>aut bubone, horum autem utrique tenuem efflagitant
+<lb/>victum. Fatigatis vero ea comesse quae probe conficiant imperare
+<lb/>oportet, evitata sola cruditate. Quin etiam vini tantum
+<lb/>bibere quantum concoquere possint. Horum autem .modum .
+<lb/>uti et aliorum omnium ex viribus, aetate, natura, temperie
+<lb/>et consuetudine aegrotantis, anui tempore .regione et id genus
+<lb/>aliis metiri convenit. A rino vero , qui ex bubone febrem
+<lb/>conceperunt, donec is solutus sit, arcendi sunt. At
+<lb/>astricti vel refrigerati , si quidem affectus lenis sit ac humorum
+<lb/>plenitudo^ minime adsit, prohiberi a vino non debenti
+<lb/>Quod si vehementius refrigerati sint aut humorum plenitus
+<lb/>dine laborent; vini abstinentia conserti Qui vero. ex vigiliis
+<lb/>aut aliquo animi affectu in febrem inciderunt, ubi su leverint;
+<lb/>humido et boni succi victu reficiendi sunt. Vinum autein
+<lb/>maxime quidem omnibus iis qui pervigilarint intrepide
+<pb n="11.16"/>
+<lb/>dandum est; praelerquam quibus caput dolore afficitur aut
+<lb/>tempora pulsant. Quod et in omnibus aliis observandum est.
+<lb/>Sed et ira, tristitia et cura affectis. vinum exhibendum est,
+<lb/>excandescentia vero febricitantibus non ante quam ab eo
+<lb/>affectu omnino conquieverint; nam prius vino uti tuto nun
+<lb/>possunt. Perpetuo autum infestanti causae contraria opponenda
+<lb/>sunt remedia, labori quidem quies, vigiliis somnus,
+<lb/>irae; tristitiae et excandescentiae sermones; actiones, spectacula
+<lb/>et rerum narrationes; quae animo voluptatem afferant.
+<lb/>Sic et qui cogitatione laborat, ab. hoc omnino cesset; Et qui
+<lb/>ex bubone febrem contraxit, hunc ipfum curet; atque in
+<lb/>primis ulcus; ex quo ortum bubo habuit. Haec. quidem de
+<lb/>diariarum tum signis tum remediis abunde dieta sint. Aliae
+<lb/>vero .febres aut ex inflammatione aut humoribus accendantur.:
+<lb/>Et quae ex inflammatione ortum habent; iusiammatarum
+<lb/>partium velut symptomata quaedam fiunt, morbusq.ue
+<lb/>ah assecla parte denominationem fere accipit , ut phrenitis, .
+<pb n="11.17"/>
+<lb/>peripneumonia,- pleuritis et alii id genus, de quibus postea
+<lb/>disseremus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Quae vero ex humoribus accenduntur et
+<lb/>eo ipso nomine febres vocantur et sunt; non autem morborum
+<lb/>symptomata, fed ipfae morbi, quarum aliae.sine fymptomatis,
+<lb/>haeque Iane mitissimae sunt; usiae verti una cum
+<lb/>symptomatis infestant. De prioribus quidem quae fymptomatis
+<lb/>carent nostra erit disputatio, in quibus maxime si
+<lb/>fieri possit primo statim die febris qualisnam sit dignuscenda
+<lb/>est, diuturnam an acum, intermittens an continens. Quod
+<lb/>si die primo id assequi non possis , fecundo saltem ejus speclam
+<lb/>invenire tentabis. At si nec eo quidem die certi quinquam
+<lb/>habueris, tertius certe omnino tibi manifestius quid-.
+<lb/>piam adferet. Nam paucae admodum febres ad exactam fui
+<lb/>dignotiouem quartum diem desiderant. Quibus vero siguis
+<lb/>febris species deprehendi possit, quam brevissime fleri poterit
+<lb/>tibi explicabo. Nam de his omnibus alibi fusius atque
+<lb/>manifestius disputatum est.
+</p>
+<pb n="11.18"/>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Quae igitur cum rigore invadunt, non abs
+<lb/>re ex eurum numero esse , quae circuitu quodam repetunt,
+<lb/>duxeris. Tertianae enim atque quartanae omnino cum rigore
+<lb/>accessionem faciunt. Sed tertianae faepe cum vehementi
+<lb/>rigore prima statim accessione incipiunt. Quartanam
+<lb/>vero nunquam cum vehementi rigore incipere vidimus , fed
+<lb/>temporis progressu rigori vehementiam accedere. Adde quod
+<lb/>plerumque ab initio statim haec febris simul non ingruit,
+<lb/>fed aliis antegressis contingit. Quartana igitur erraticis, quas
+<lb/>vocant, febribus ob pituitam succedit. Vix autem citra oris
+<lb/>ventriculi iniuriam fit quotidiana, quemadmodum nec sine
+<lb/>lienis vitio quartana, nec tertiana absque jecoris offensione.
+<lb/>Quin etiam si cum vehementi rigore febris initium coeperit,
+<lb/>tertianam magis quam aliquam aliam esse jure fateberis.
+<lb/>Quod si et alia quae deinceps dicentur consentiant, hanc
+<lb/>quidem statim primo die tertianam esse dignosces. Sin cum
+<lb/>levi rigore inceperit, tum aliae notae potius considerandae
+<pb n="11.19"/>
+<lb/>sunt , quum non quotidiana foluin aut quartana; Ced et semi
+<lb/>tersi ana aut alia ex continuarum genere aliqua esse pussit.
+<lb/>Alia vero indicia ex caloris tum qualitate tum quantitale
+<lb/>arteriarnmqne motu et ex rigoris sensus specie, anni
+<lb/>tempore, regione, aeris conditione, aegrotantis natura ac aesate
+<lb/>atque ex iis quae praecesserunt ac sequuntur petenda
+<lb/>tunt. Natu calor quidem multus acrisque esse debet, pulsus
+<lb/>vero magni et calidi, vehementes; celeres ac frequentes, omnis
+<lb/>inaequalitatis praeter quam febrilis expertes. Rigor
+<lb/>veru, velut quum corpus ab aliquo acuto magis quam siigido
+<lb/>pungitur; quum in quartanis et quotidianis frigidus
+<lb/>rigor fentiatur. Anni vero tempus aestivum sit; quemadmodum
+<lb/>.et regio calida et praescns aeris conditio; laborantis
+<lb/>quoque natura calidior ac biliofior sit ; aetas adolescentia;
+<lb/>praecesseritque exercitatio magis quam otium , aestus quam
+<lb/>refrigeratio, rictus parcus quam largus; Vigiliae quoque et
+<lb/>moerores et lassitudines pertinacesque curae ad id magnum
+<pb n="11.20"/>
+<lb/>habent momentum. Quod si eo tempore multos tertianis corripi
+<lb/>contigerit, marinam ejus febris una cum jam declaralis
+<lb/>argumentum erit. Haec autem omnia si adfuerint aut
+<lb/>eorum maxima et praecipua vehemensque sitis, vomitus
+<lb/>item biliosus veI sudor vel utrumque superveniat, jam tum
+<lb/>fabris perspicue apparebit. Quod si post haec a febre conquieverit
+<lb/>aeger, hac inquam febre, quae ex suo motu omnibus
+<lb/>est cognita, relinquatur vero propria febrium in artetuarum
+<lb/>motu inaequalitas, aeque pro certo hanc esse tertianam
+<lb/>pronuntiare possis, ac si tertio jam die accessionem videas
+<lb/>rediisse.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Quartana vero,. nam et hujus notas tibi
+<lb/>commemorare oportet, evidentissimum quidem fui indicium
+<lb/>praebet f nitio statim accessionis, quando ipsi adhucaegroti
+<lb/>rigent. Pulsus enim admodum raros ac tardos obtinet, feti
+<lb/>necessario dumtud rigorem pervenit-vel adhuc etiam luerescit
+<pb n="11.21"/>
+<lb/>celeres ac crebros; servatur tamen et tunc nativa eo...
+<lb/>rum tarditas ac raritas, si celeritatem et frequentiam adjectam
+<lb/>accessioni confideres. Etenim si quartanae febris vigorem.
+<lb/>cum tertianae rigore compares, multo celerius ac
+<lb/>frequentius in tertiana arteriae tibi micare videbuntur, atqne
+<lb/>unius motus in quartana inaequalitas ejus speciem commonstrat.
+<lb/>Nam communem omnium febrium in uno appulsu
+<lb/>arteriae inaequalitatem evidentissimam in hac invenire licet :
+<lb/>multo enim concitatius principium motus et finem
+<lb/>quam medium invenies, quod in tertianis non ita habet, in
+<lb/>his enim celeritatis excessus maximeque in vigore brevis
+<lb/>est. Quin etiam caliditatis notis hae febres distinguuntur.
+<lb/>Tertianarum enim calorem et ardorem ac tanquam fervorem
+<lb/>in quartanis haudquaquam reperies. Haec quidem maxima
+<lb/>signa sunt, reliqua vero externa, neque haec funt omittenda.
+<lb/>Quin aegrotantis natura consideranda est, num ad
+<lb/>atram bilem magis declinet et an tempus anni autumnus
+<pb n="11.22"/>
+<lb/>sit, praescnsqne aeris constitutio inaequalis. Sic vero et loci
+<lb/>et morborum tum ingruentium natura inspicienda et num
+<lb/>lien intumuerit , febresque inordinatae praecesserint et aetas
+<lb/>xigorem excesserit febrisque in sudores desierit.; in hac enim
+<lb/>vomitus bilis expectandus non est, quemadmodum neque in
+<lb/>quotidianis, quum id tertianarum proprium sit. Quod si
+<lb/>pacata febre febris signum adhuc permaneat et pulsus natupali
+<lb/>sit rarior ac tardior, palam est ipsam quartanam esse.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Quotidianam autum febrem his maxime
+<lb/>notis deprehendes, Calor necessario . humentior est cum
+<lb/>quadam acrimonia , quam non protinus admota manus sed
+<lb/>permanens sentit. Caliditatem enim quandam fumorum cum
+<lb/>largo vapore commistam exire putabis, igne in multa lrumiditate
+<lb/>potius. suffocato , quam ipfo materiam evincente. Sed
+<lb/>et. lrarum pulsus minores sunt quartanarum pulsibus, quam
+<lb/>quartanarum gustus sint tertianarum. Rursus quotidianarum
+<pb n="11.23"/>
+<lb/>pulsus tanto sunt tertianarum pulsibus rariores, quanto
+<lb/>his quartanorum pulsus. At.in utrisque eadem est tarditas.
+<lb/>Verum haec febris minorem adfert sitim : hanc itaque quartana
+<lb/>tantum excedit, quantum quartanam tertiana. Atque
+<lb/>in tertianis quidem lingua totum que corpus aridissimum
+<lb/>est, in luis vero febribus humidissimum, vomitionesque pi-.
+<lb/>lentulae et quicquid per ventrem excernitur frigidius, humidius
+<lb/>, erudias , aquosius et pituitosus est. Et in hisce febribus
+<lb/>universum corpus crudis humoribus fcatet. Siquidem
+<lb/>hae aetatibus, naturis, anni temporibus et temperaturis humidioribus
+<lb/>accidunt. Nunquam enim adolescentem biliosum
+<lb/>ac natura siccum hac febre correptum vidimus. Pueri vero
+<lb/>praesertim natu minores, et ex grandioribus, qui pituitosi tuagis
+<lb/>ac corporis habitu crasso fiunt, vitamque agunt otiofam
+<lb/>gulae indulgentes et ebrietati dedisse crebro balneis maximeque
+<lb/>a cibo utentes quotidianis facile corripiuntur, fed et
+<lb/>locus humidior et tempus hibernum aerisque constitutio
+<pb n="11.24"/>
+<lb/>humidior hanc maxime. febrem invehunt , quae si tunc
+<lb/>etiam in regione grassetur, praeter ante dicta maximam adferet
+<lb/>cognitionem. Verum herum febrium declinationes uti
+<lb/>tertianarum et quartanarum sudoribus non finiuntur, unde
+<lb/>neque ad manifestam febris remissionem paucis quibusdam.
+<lb/>exceptis perveniunt. Urinae autem procedente febre totius
+<lb/>morbi tempora docent, initio vero febris fpecicm ostendunt^
+<lb/>In quotidianis enim aut albae vel tenues vel crassae et tur-.
+<lb/>buleutae .aut rubrae apparent. In tertianis rufae vel lubrufae.
+<lb/>In quartanis vero variae, sed crudae omnes. Atque hae
+<lb/>quidem sunt febrium intermittentium notae.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Febres autem assiduas ex eo quidem maxime
+<lb/>cognosces, quod nullum ex iis signum habeant, quae
+<lb/>debere inesse intermittentibus docuimus, et si intra quatuor
+<lb/>et viginti horas non desinant febres, quaesi inaequale facerint
+<lb/>incrementum, praeter alias nolas maj orem .temporis
+<lb/>diuturnitatem praenunciant, atque adeo si et, quod proprium
+<pb n="11.25"/>
+<lb/>est febrium, evidens in pulsibus signum obtineant. At si neque
+<lb/>ordinem . neque aequalitatem neque numeros scrvent,
+<lb/>argumentum erit tum earum magnitudinis tum quod lex
+<lb/>genere .intermittentium non sint. Quod si tales permaneant
+<lb/>est .tertio die accessio major alvique.. excrementa et urinae
+<lb/>omnino crudae .appareant, non possunt septimo ejusmodi
+<lb/>febres judicari. .Si vero dies quartus tertio similis videatur
+<lb/>et febris velut langueat, nec facies nec universa corporis
+<lb/>habitudo concidat , in longum tempus hoc febris genus protrahi
+<lb/>folet. Atque hae. quidem funt febrium differentiae,
+<lb/>quae sine symptomatis sunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Deinceps vero singularum curatio trade.
+<lb/>tnr ac primum quidem intermittentium, deinde continuarum,
+<lb/>quas vocant febrium. Ex intermittentibus quidem brevissima
+<lb/>simul. et mansuetissima tertiana est, longissima vero
+<lb/>sed tuta quantum in fe est quartana. Quotidiana vero longa
+<lb/>est et periculo non vacat,. Itaque victus. rationem statim ab
+<pb n="11.26"/>
+<lb/>initio instituemus, universum morbi tempus considerantes.
+<lb/>Nam in acutis et qui ad flatum celeriter perveniunt si quis
+<lb/>tenuiter omnino cibum dare velit, haud magnopere laedet,.
+<lb/>su longioribus vero, nisi per initia liberaliorem dederis cilium,
+<lb/>aut una cum morbo hominem necabis aut intempestive
+<lb/>victus ratio mutanda erit. Neque enim accedente statu uberior
+<lb/>rictus quam prius instituendus est, sed contra omnium
+<lb/>qui per morbum exhiberi debeant tenuissimus in id tempus
+<lb/>reservandus est; .hoc quidem omnium commune esu Adhaec
+<lb/>vero quae intermittentibus propria sint, considerare oportet
+<lb/>, velut statim lu tertianis, neque enim male ab his auspicabimur,
+<lb/>distinguendum per initia est, num exquisita ac ut
+<lb/>Ita dicam legitima, an minime exquisita, feti velut fpuria sit,
+<lb/>Tertiana enim exquisita septem ut tardissime circuitibus
+<lb/>judscatur, minimeque periculosa esu Alteram autem non
+<lb/>exquisitam aliquando alni autumno incipere et vere destnere,
+<lb/>postea,- ut par erat tanto tempore, tum quod aegrotus
+<pb n="11.27"/>
+<lb/>imperanti medico non magnopere pareret, nonnihil etiam
+<lb/>delinqueret, tum vero hiemis iniuria male afficeretur, maxime
+<lb/>lien intumuit et hypochondria flatu distenta sunt, tumor
+<lb/>quidem decolor cpm in facie tum maxime in cruribus
+<lb/>apparuit, adeo ut adolescenti timuerimus et majoribus uti
+<lb/>remediis necessum suerit. Itaque haec febris nihil exquisitae
+<lb/>tertianae simile habet, quere ab initio distingui oportere
+<lb/>dico. Nam quantum natura inter fe differunt, tantum rictus
+<lb/>rationem variari aequum est:. Ut autem has optime distinguas,
+<lb/>salis mihi fuerit ea recensere, quae adolescenti accideruat,
+<lb/>quae exemplum documentaque tibi futura sint febrium
+<lb/>non exquisite tertianarum. Medium erat anni tempus inter
+<lb/>vergilianum occasum et quod hunc antecesserat aequinoctium
+<lb/>, in quo adolescentem circa fere ipsam auroram febris
+<lb/>cum horrore corripuerat: quae neque in calore neque in
+<lb/>pulsibus tertianae similis esse videbatur, imo nec vomitus
+<lb/>biliosus scquutus est nec multus sudor, postridie vero ad
+<pb n="11.28"/>
+<lb/>horam -circiter tertiam paucus exiit mador, cum quo et febris
+<lb/>evanuit , sini adeo sensim, ut circa vesperam vix febris
+<lb/>expers aeger rideretur, nimirum relicto tunc in pulsibus
+<lb/>evidente admodum febris ligno. Veram reliqua circa vesperant
+<lb/>ac per totam noctem sacile omnino aeger serebat.
+<lb/>Rursus vero circa tertii. diei auroram secunda recessio
+<lb/>priori in omnibus praeter quam tempore similis rediit i siequente
+<lb/>enim nocte paulo ante diem exhalato vapore febris
+<lb/>decessit circa quarti diei auroram , et reliquo toto autumno
+<lb/>ac hieme, quo tempore aegrotarit, tum reliqua omnia tum
+<lb/>accessionis et solutionis febris tempus eadem permanserunt.
+<lb/>Adolescens- autem annos plus minus octodecim natus erat,
+<lb/>aspectu albus ac pinguis, vitae deditus otiofiori priusque
+<lb/>crebris tum crapulis tum lavationibus usus ac satietatibus,
+<lb/>proinde cibos improbe concoquebat. Accessit vero et linio
+<lb/>pulsus durities mediocris quidem in primo et secundo die,
+<lb/>ini tortio vero et quarto et sequentibus usque ad septimum
+<pb n="11.29"/>
+<lb/>ad tantam pervenit duritiem, ut siquis loli pulsui credidisset,
+<lb/>multorum esse mensium morbum putasset, ac talis permansit
+<lb/>.usque ad veruum aequinoctium, in quo primum mollescere
+<lb/>coepit. Postea rursus quadragesimo die ab hac tertiana prorsus
+<lb/>liberatus esit, paulatim pulsu emollescenteet accessione
+<lb/>decrescente, uriuisque probum sedimentum habentibus, quae
+<lb/>prius vehementer . crudae omnes erant. Haec quidem
+<lb/>certe. maxime contraria est exquisitae tertianae. Resiquas
+<lb/>vero omnes intermedias quae permultae sunt ex
+<lb/>definitis extremis haud difficile invenies. Si enim quae
+<lb/>initio commentationis scripsimus tertianarum signa omnia
+<lb/>adfuerint, exquisitam tertianam esse testabuntur,: cujus
+<lb/>accessionis tempus brevissimum quidem omnino quatuor
+<lb/>aut quinque aut sex horarum est, longissimum vero
+<lb/>undecim aut duodecim. Atque etiam harum urinae tertio
+<lb/>aut omnino quarto die concoctionis indicium ostendunt.
+<lb/>His igitur notis absoluta tertiana et spuria cognoscuntur.
+<pb n="11.30"/>
+<lb/>Ad hunc vero modum quartana et quotidiana distinguuntur.
+<lb/>Cui enim omnia insunt signa, quae prius in febribus
+<lb/>quartanis scripsimus, germana exquifitaque quartana est. .
+<lb/>Sini minus, spuria minimeque exquisita. Et ex quotidianis
+<lb/>legitima quidem est; cui omnia quae diximus insunt,
+<lb/>quae si non adsint, exquisita non est. Itaque febres spuriae
+<lb/>non tam longae sunt quam quartana et quotidiana. Sed
+<lb/>quemadmodum vera tertiana acuta est, sic quartana et quotidiana
+<lb/>diuturnae. Haec quidem lu his quae circuitu repefuni
+<lb/>consideranda fonti In aliis vero febribus urinas, alui
+<lb/>excrementa et universum corporis habitum inspicere oportet;
+<lb/>calorem quoque et arteriarum motum. Ad haec alia
+<lb/>quaecunque Hippocrates longaque experientia contemplanda
+<lb/>esse Iubent, nempe regiones, anni tempora; aeris constitue
+<lb/>lienes, aetates et temperaturas corporum, consuetudines et
+<lb/>antecedentes causas; quaeque una nutu morbis invadunt
+<lb/>quaeque medio tempore apparent.- Omnia quidem ut cuipiam
+<lb/>videri posset monita furit; sied revera haud ita res habet.
+<pb n="11.31"/>
+<lb/>Quandoquidem quod maximum horum omnium est,
+<lb/>dictu autem brevissimum , nondum explicatum esu Quid
+<lb/>vero hoc est? Morbi et virium quantitas, res quidem quae
+<lb/>verbo uno explicari possit.; ad usiam maxima est. Neque .
+<lb/>enim bene praenoscere poteris, nisi horum cujusque qualilitate
+<lb/>diligenter explorata. Non enim an morbus lustralis sit
+<lb/>neo ne nec quando vel mori vel a morbo vindicari potius
+<lb/>homo .debeat nisi omnium qude diximus quantitatem ditigentica
+<lb/>contemplatus, in duo redegeris capita in morbum ipium
+<lb/>et laborantis vires, praescire recte poteris; -Nam si via
+<lb/>res adeo .validae sint, ut morbum evincant,. .necessario fanitati
+<lb/>homo .restituetur. Sin contra omnino morietur. Non.
+<lb/>igitur solum cuiusnam sit generis morbus, sed et quantus
+<lb/>ipse sit inspiciendum est. Hoc autem non parva eget peritia;
+<lb/>cum propter alia, tum quod nec scribi nec verbis explicari
+<lb/>ullo modo eorum cujusque quantitas possit. Si quid igitur
+<lb/>nostrum est, id non tam ex alia re ulla quam ex crebra conjiciendae
+<pb n="11.32"/>
+<lb/>quantitatis exercitatione percipitur, quod ex operibus
+<lb/>et discere et .docere possis. Quae vero qualitate distinguuntur
+<lb/>, diligenter simul ac dilucide quam brevissime fieri
+<lb/>poterit scribemus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Exquisitam autem tertianam, ut lu qua
+<lb/>concitata bilis flava dominetur ; quoad fieri maxime potest
+<lb/>humectare ac refrigerare oportet. Nam contrariorum contraria
+<lb/>sunt remedia, quae quod superat coerceant, quod autem
+<lb/>deest farciant. Flavae autem bilis humor omnium qui
+<lb/>in corpore sunt humorum calidissimus ac siccissimus est. Itaque
+<lb/>adhortandum est, confluentem m ventriculum vomitu,
+<lb/>deorsum vero subeuntem pari modo per inferiorem excretionem
+<lb/>vacuari , quod et sponte exquisitis tertianis accidit.
+<lb/>Per. urinas quoque et sudores iter moliri oportet, fed coti.
+<lb/>moda per inferna bilis purgatio. At mollibus clysteribus
+<lb/>venter subducendus est, urinae vero potionibus iis in quibus
+<lb/>maduerit apium et anethum provocandae. Et si coctionis
+<pb n="11.33"/>
+<lb/>notae apparuerint, jam cum fiducia absinthium dabis,
+<lb/>quod alioqui stomacho quem erodens bilis insistat summum
+<lb/>remedium est, praesertim li ejus comae quantum usus elisagitat
+<lb/>in aqua mulsa maceraris. Sed et balnea calida ex aqua
+<lb/>potabili prosunt, tum quod bilis aliquid educunt, tum quod
+<lb/>fuu qualitate mirifice juven t; ea enim hujusmodi balnea hu^nectant
+<lb/>et facultate resiigerant. Marina vero, salsa, nitrosa,
+<lb/>et fulphurosa plus quidem bilis exigunt, verum minus quam
+<lb/>ex aqua dulci utilia sunt: praestat vero nec ea utilia dicere,
+<lb/>quando plus sua qualitate laedunt quam vacuando prosunt.
+<lb/>Equidem novi quendam, qui falso adductus judicio hisce
+<lb/>balneis utus est ac deinde resiccato corporis habitu eo venit
+<lb/>exitii, ut tabe interierit. Reliqua autem victus ratio illi
+<lb/>bilis vacuationem adaugebat. At contraria qualitas qualitati
+<lb/>praeter naturam excedenli perpetuo objicienda est, et plos
+<lb/>rumque id utilius est quam quovis modo vacuare; verum
+<lb/>ipse nec hoc noverat, neque ex aliis didicerat. lu balneis
+<pb n="11.34"/>
+<lb/>igitur hic scopus sit; ut corpus abluatur ac humescat;
+<lb/>proinde neque nitrum neque sal neque sinapi inspergenda^
+<lb/>funt, id quod factitare plurimos ridere licet aegrotus enecaules.
+<lb/>Ubi autem calente oleo. plurimum perfuderis, in
+<lb/>aquam ducere ac proluere oportet, et si in ea natare velint,
+<lb/>iis quantum possunt permittendum est. Qui vero balneis
+<lb/>delectantur; neque si bis die lavare velis peccabis, sed prae- .
+<lb/>cipue in memoria habeto, ut id opportune fiat. Nam si coa
+<lb/>cticuis morbi signis apparentibus. frequentius laveris, non
+<lb/>erraveris. A vino vero, antequam morbus concoquatur; pr orrus
+<lb/>arcendi sunt; .ubi autem coctionis initium habuerit, paueum,
+<lb/>tenue et dilutum initio dandum est, liberalius vero ubi
+<lb/>in propinquo morbi solutio est. Cibus autem frigidus et humidus
+<lb/>omnis exquisitis tertianis confert .Tantus autem dari
+<lb/>debet quantus optime concoqui possit. Ex oleribus quidem
+<lb/>atriplex:, blitum, rumex, malva, lactuca et cucurbita. Ex aliis
+<lb/>autem cremor hordei et sorbitio ex alica. Ex piscibus vero
+<pb n="11.35"/>
+<lb/>saxatiles. Ex avibus quae molli sinit carne et ex minime
+<lb/>talibus alae, gallorum quoque testiculi et suum pedes: et
+<lb/>cerebra danda. sunt, parvulorumque porcelloriun si illiquefactas
+<lb/>coctura carnes dederis, nihil offendes. Sed et ova. fotbilia
+<lb/>permittuntur et maxime eorum lutea, ut quae quam
+<lb/>album facilius coquantur. Ex. fructuum .autem genere ii
+<lb/>gustari conceduntur, qui omnino coetu difficiles non .sinti
+<lb/>Melle veroi sinapi^ salsamentis et omnibus acribus abstinere
+<lb/>debent, et vinis admodum vetustis. naturaque calidis.: Haec
+<lb/>quidem rictus ratio esto multorunn.ad coniecturam tibi
+<lb/>tradita et exposita. Qui vero molliter non educantur, iis victus
+<lb/>instituendus est qualem me. aliquando in exquisita .tertiana
+<lb/>ex Hippocratis sententia dare vidisti, nempe ptisanae
+<lb/>cremorem usque ad febris judicium.- Haec quidem in exquisi-:
+<lb/>lis tertianis servanda sunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Maxime vero in sus quae exquisitae non
+<lb/>sunt tertianis, quoad fieri. potest prospiciendum est, nemurbus
+<lb/>increscat; dejicianturque vires,, ut quas longiore morbi
+<pb n="11.36"/>
+<lb/>intervallo afflictum iri oporteat, utrumque enim tenere diiflesse
+<lb/>est , quod inedia quantum ad morbi coctionem prodest
+<lb/>tantum vel plus etiam vires offendit, cibi vero quantum ad
+<lb/>aegrotantis vires conserunt, tantum: -coctionem impediunt.
+<lb/>Sed et hic noscendum est, ad quam magnitudinem morbus
+<lb/>perventurus sit et quantum laborantis vires sint duraturae,
+<lb/>ut ea perspiciendo , quae majori auxilio egent, cibi abstinens
+<lb/>tia quidem , ubi valentiores sunt erres et morbus coetu disisicilis,
+<lb/>confidentius utaris, ubi vero imbecilliores vires et
+<lb/>morbus non omnino . coctioni contumax est, largiori cibo.
+<lb/>Haec quidem et in omnibus aliis morbis consideranda sunt.
+<lb/>Neque vero statim per initia in spuriis tertianis lavare fatubreest,
+<lb/>sed ubi primum coctionis signa apparuerint. - Neque
+<lb/>quotidie cibum dare oportet, sed alternis diebus abunde fuerit.
+<lb/>Quies autem et praecordiorum fotus juvat et sorbitio-^
+<lb/>nes^ quae facilem admittant coctionem. -dysteres quoque
+<lb/>non admodum molles alvo indantur. Quod fi sanguinis mis-.
+<pb n="11.37"/>
+<lb/>sume. opus sit, neque ea omittenda est, sed initio statim distinctis
+<lb/>iis quas nosti rebus tantum detrahes, quantum fatis
+<lb/>esse in praesentia videatur. Tota vero ratio rictus sit, non
+<lb/>quae ut in exquisita tertiana refrigeret et humectet, sed
+<lb/>quae vim aliquam incidendi et calefaciendi assumat. His igitur
+<lb/>maxime. prodest ptisanae succus cui infectum piper sit,:
+<lb/>aut nonnunquam etiam hyssopum et origanum et mulsa cui
+<lb/>iniecta nardi spica est et cocta potui datur., aliaque qnaeciendae
+<lb/>urinae vim habent, nisi ea vehementer calefaciant
+<lb/>exficcentque. Frequentissime vero absinthii coma maxime,
+<lb/>post septimum diem danda est, mulsum acetum etiam multis
+<lb/>in potu profuit et aliquod exile quae blande purgant, quibus
+<lb/>nos saepe uti vidisti. Vomitus autem pust cibum adeo.
+<lb/>sane- utilis est illis quibus haec febris inveteraverit, ut multos
+<lb/>norim statim post vomitiones a febre- prorsus esse liberatos.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p>Deinceps autem de- quartanis disseremus;
+<lb/>quas per initia moderate leniterque tractare oportet, nullum
+<pb n="11.38"/>
+<lb/>vehemens medicamentum aut vacuatis nem adhibentes, nisi
+<lb/>fanguis adnrodum exsuperare rideatur. Et si secta vena fanguis
+<lb/>niger ac crassas, qualis maxime in lienosis conspicitur,
+<lb/>profluat, audacter mittendus est, sin flavus ac tenuis, statim
+<lb/>supprimendus. Secanda vero vel interna vel messia sinistri
+<lb/>cubiti vena est et rictus deinceps qui status sit expers pro-.
+<lb/>bumque fuccum. generet adhibeatur, venterque fi fieri potest
+<lb/>consuetis emolliatur; quae si non profecerint, clysteribus per.
+<lb/>initia quidem mollibus, postea vero acrioribus sollicitandus
+<lb/>est. A suilla autem carne cibisqne omnibus glutinosis et lenlis
+<lb/>feni tarde meantibus, quique refrigerant et qui exsiccant
+<lb/>arcendi sirnt aegroti, vino vero albo, tenui et mediocriter
+<lb/>calido utantur. Ex axibus autum quae boni succi fint ac.
+<lb/>non palustres, ex piscibus qui facile coquantur et molli mi-nimeque
+<lb/>glutinosa sint eame dare oportet. Salsamentis vero
+<lb/>ac sinapi utendum est et certis diebus interpositis medicamentum
+<lb/>quod ex triplici pipere est sumendum, aut dlospoliticon
+<pb n="11.39"/>
+<lb/>, folumque piper cum aqua recte quotidie praebebis.
+<lb/>A frictionibus vero, ambulationibus, balucis aliisque consuetis
+<lb/>penitus arcendi non sunt. Verum si a balneis omnino
+<lb/>abstinere possent,. felis contenti frictionibus plurimum juvarentur.
+<lb/>Et si brevis quartana sit minimeque violenta, non
+<lb/>male per accessionum intermissiones aegroti ad inlitas
+<lb/>exercitationes siefe conferent. Haec quidem per initia usque
+<lb/>ad vigorem peragenda sunt. . Quod si in morsu algore constitutus
+<lb/>aeger jam esse videatur, tunc tenuiori quam ante vel
+<lb/>post vietus ratione uti debet, statimque longa quies imperanda
+<lb/>.est, ac. visceribus providendum fotu ac situ, quibus
+<lb/>emolliendi laxandique vis insit. Deinde medicamentis quae
+<lb/>diuretica vocanti urinas evocare oportet, et si coctionis notae
+<lb/>apparuerint, tunc medicamentis quae atram bilem educunt
+<lb/>non siemel, sied saepe purgare, si res ita exigere videatur.
+<lb/>Α cibo vero aegrotum vomere oportet: tunc autum fi
+<lb/>nihil velet, album veratrum. saepe dandum. est primum r a(siculis
+<pb n="11.40"/>
+<lb/>immissum, quod.si nihil profuerit, ipsimi etiam vera-.
+<lb/>tuum, His vero qui vomere nequeunt, vehementius per inferiora
+<lb/>purgatis medicamentum, quod em viperis est temperatum,
+<lb/>dandum est et alia quae adversus has febres com-:
+<lb/>mundantur, in quibus omnium probatissimum habetur, quod
+<lb/>ex liquore Cyrenaico conficitur, nobis usitatum, Qui autem
+<lb/>per initia aliquod ex his medicamentis dederunt aut omniuo
+<lb/>ante morbi statum ex simplici quartana duplicem saepe
+<lb/>aut omnino majorem ac difficiliorem, ex duplici vero triplicem
+<lb/>aut omnino duas ipfas difficiliores ac majores reddiderunt.
+<lb/>Nexi enim medicum quendum, qui tribus quartanis
+<lb/>laboranti medicamentum ex viperis ante morbi vigor
+<lb/>rem dare sit ausus : delude omnibus uf par erat adauctis
+<lb/>assidua febris successit, quae hominem iugulavit</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">ln curanda autem quotidiana primis diebus
+<lb/>tum aceto mulso tum his quae probo urinam cieant est
+<lb/>utendum, ac lu fumma victus ratio. incidendi .vi praedita esse
+<pb n="11.41"/>
+<lb/>debet Circa statum vero de ventre maximeque ejus ore sula
+<lb/>licitum esse oportet: posteaque subere ut a raphanide et cibis
+<lb/>assumptis aeger vomat: susque utatur medicamentis,
+<lb/>quae pituitam eliciant. Reliquam vero victus rationem ex;
+<lb/>communibus scopis facile invenies.</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p>In febribus autem continuis, quibus
+<lb/>morbi rigor non longius septimo futurus est et vices validae
+<lb/>sunt aetasquc consentit, exquisitus. omnino et. tenuis rictus
+<lb/>instituendus esu lu quibus verofongius septimo totius mor,
+<lb/>hi status erit aut virtus imbecilla est, per initia quidem lix
+<lb/>beraltus, instante vero statu parcius, rigente autem morbo
+<lb/>tenuissime alere oportet. . Postea rursus semper ubertus eo-.
+<lb/>dem modo cibum augendo, quo ante statum minuebatur.
+<lb/>Sanguis vero et ob morbi magnitudinem et quibus rubor
+<lb/>major quam naturae conveniat inest et universum corpus
+<lb/>plus polite tumet aut venae eminentes ac distentae stant mittendus
+<lb/>est , nisi vires, aetas et alia quae luitio commemorata
+<pb n="11.42"/>
+<lb/>sunt prohibeant. Quod vero humidus rictus acutis omnibus
+<lb/>febribus conferat olim recte lictum esu Cremor igitur pliranae
+<lb/>in quibus non acescit exhibendus est et mulsa quibus
+<lb/>in bllem non vertitur forbitionesque ex alica et panis ex
+<lb/>aqua aliaque quae aut eundem aut huic proximam facul-.
+<lb/>tatem obtineant. Quod li vehementer calidae sint demantque
+<lb/>febres , . ubi primum coctionis nolae apparuerint, cum
+<lb/>fiducia danda in potu frigida est, cujus modum ex tempore,
+<lb/>regione, aetate, natura et consuetudine metimur. Haec qui-dem
+<lb/>in .universum est curandarum febrium quae accidensilius
+<lb/>carent ratio.</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p rend="indent">Quae vero cum symptomatis fiunt febres,
+<lb/>haud ita simpliciter curantur , sed quoad fieri potest expendere
+<lb/>oportet , quanta febris sit quantumque symptoma, quod
+<lb/>periculum. adferat, ac horum vehementiori molestiorique
+<lb/>insistendum, non neglectu tamen omnino altero. Age igitur
+<lb/>febricitet quispiam citra humorum redundantiam, sed cum
+<lb/>recenti cruditate os ventris mordente prementeque rejecerit
+<pb n="11.43"/>
+<lb/>vomrtione humorem aliquem vitiosum, qui in trausitu ita
+<lb/>vehementer aegrotum laeserit, ut moleste anxieque ferat.
+<lb/>Solemne multitudinem ad sebrem tmn respicientes vacuare
+<lb/>tentabimus, quod citra molestiam alioqui secrssenrus? An
+<lb/>prius ori ventris prospiciemus ac postea ubi recte id habuerit
+<lb/>universum i corpus quantum res ipsa exposcit vacuabimus?
+<lb/>Mihi sane ita videtur. Tales igitur non paucos saepe
+<lb/>vidimus alios quidem interiisse, alios vero in summum periculum
+<lb/>fuisse adactos, quum eos vacuare ventris ore nondum
+<lb/>confirmato medici tentassent. Sed nec si cum alui profluvio
+<lb/>febris suerit alia vacuatione est opus. Verum ipsum
+<lb/>per fe sufficit, etiam si non fit pro plenitudinis ratione, Qui-
+<lb/>cunque enim ab lis tanquam majori inanitione egentibus
+<lb/>vel sanguinem ducere vel ventrem movere ausi. sunt, .lo grayia
+<lb/>pericula praecipitarunt. sit si quis convulsus sit simulque
+<lb/>sanguinis missione egeat, ne sic quidem semel et universim
+<lb/>tantum detrahes quantum affectus exigit, fed et aliquid
+<pb n="11.44"/>
+<lb/>symptomati est relinquendum, quod plerumque sudores movet,
+<lb/>vigilias adfert et robur dejicit aegrotantis. Ad eundem .
+<lb/>autem modum si vehemens vigilia dolorque granis aegrotum
+<lb/>infestet, subitas ac multas vacuationes vitare oportet. Aeris
+<lb/>vero ambientis temperatura, quum omnino calida et sicca
+<lb/>est, qualis inter Canis et Arcturi exortum, fymptomatisLoco
+<lb/>habenda esu Quocirca omnes quibus medici neglecta temporum
+<lb/>ratione venam locare ausi sunt perierunt. Ad eundem
+<lb/>modum , si vehementer admodum frigida fit, nam tum
+<lb/>quoque. a sanguinis missione. est temperandum, quando in
+<lb/>talibus non parva loqui pericula ridemus. Etenim in calidis
+<lb/>vehementer aeris constitutionibus improbe vacuati syncope,
+<lb/>ut vocant, ac resolutione intereunt. At in frigidis per accefsionum
+<lb/>inicia vehementer refrigerati non amplius relevantur.
+<lb/>Igitur. neque in calidis neque in frigidis supra modum
+<lb/>regionibus sanguinem mittere audemus. Quod si regioni
+<lb/>temporis conditio.respondeat, omnino abstinemus, at si non
+<pb n="11.45"/>
+<lb/>consentit; vacuamus quidem, sest longe minus quum si neu-,
+<lb/>trum vetaret. Quin etiam velut symptoma quoddam ad SUfcipiendam
+<lb/>affectionem proclivitas consideranda est. Multi
+<lb/>enim nunquam evacuati. fuerunt, neque ullam pleniorem
+<lb/>vacuationem neque longiorem inediam ferunt, ut quae aliis
+<lb/>omnes corporis vires facile deliciant , alnis statim os ventris
+<lb/>adeo male afficiant, ut a cibis abhorreant et si assumere eogantur,
+<lb/>aut non contineant aut improbe coquant. In hac
+<lb/>dignotionis parte expendenda est aegri temperies. Natura
+<lb/>enim calidi et sicci omnes ab integra vacuatione prompte
+<lb/>laeduntur. Consuetudo quoque non parum habet momenti;
+<lb/>cum ad alia omnia , tum maxime ad vacuationis indicationem.
+<lb/>Alii enim nunquam sunt vacuationem ante experti
+<lb/>neque integram pertulerunt latgoque cibo usi sunt. Alii
+<lb/>contra amplo cibo nec utuntur et vastationibus sunt assueti.
+<lb/>Hos igitur intrepide vacuare oportet, modo reliqua id fa- .
+<lb/>ciendum dictent. Alios vero nempe insolitos non item;
+<pb n="11.46"/>
+<lb/>etiamsi reliqua omnia suadeant. Ad eundem vero modum
+<lb/>et corporis habitus contemplandi sunt. Natu qui densa folidaque
+<lb/>sunt carne, haud facile iis iniuriis patent. Itaque verendum
+<lb/>non est eos semel vacuare si et alia hortemur. Qui
+<lb/>vero mollem et algae modo teneram prompteque disstuentem
+<lb/>hanc habent, in gravem nonam facile ruunt. Quare. ab
+<lb/>his etiamsi omnia alia suadeant, sanguinem ducere non
+<lb/>audemus; verum aliis -vacuationibus, quam moderatissime
+<lb/>promptissimeque fieri potest utimur, Similiter autem et his; .
+<lb/>qui habitu sunt immodice vel obeso vel .gracili venam iaecare
+<lb/>et alio quovis modo affatim vacuare timendum est:
+<lb/>His vero aetas tanquam symptoma quoddam , quod affatim
+<lb/>vacuare prohibeat, annumerari potest, neque enim pueri
+<lb/>neque tenes fine molestia hanc vacuationem sustinere polsunt.
+<lb/>Hos igitur commemoratos omnes efflagitante vacnationem
+<lb/>-affectu non temet nec affatim fed paulatim vacuare
+<lb/>oportet , mediocribus inediis, frictionibus, mollibus clysteribus,
+<lb/>fetibus, cataplasmatis et balneis. Quorum omnium ruri.
+<pb n="11.47"/>
+<lb/>sus indicationes ab iis quae ante memorata sunt desumere
+<lb/>oportet Ad eundem veto modum, si quando duo symptomata
+<lb/>contraria sequantur, utrum eorum sit vehementius
+<lb/>considerandum est. Pari ratione si duo morbi in eodem bomine
+<lb/>pugnantes habent iudicationes , tunc euiur urgenti est
+<lb/>insistendum, sed altero nequaquam, neglecto. Quae autem si
+<lb/>symptomatis et morbis sumuntur indicationes, non simpliciter,
+<lb/>sed pro .causa quae unumquodque attulit considerant
+<lb/>dae fiunt, velut animi defectio ac exlolutio. Sunt enim pro
+<lb/>uba eadem que re ambo haec nomina a medicis usitata , ipsa
+<lb/>quidem res una est, fied ejus causae multae. Anima. enim
+<lb/>deficit ex cholera; diarrhoea, dysenteria, lienteria; fluxu
+<lb/>muliebri; vulneribus, haemorrhoidibus, sanguinis tum ex ore
+<lb/>tum e naribus profusione, immodicisque ex partu purgationibus.
+<lb/>Nonuunquam vero animae defectum attulit magna
+<lb/>eruditas , . praesertim quum alvum immodice subduxit. Et
+<lb/>ingens fames; quae bulimos dicitur, nihil aliud est quam
+<pb n="11.48"/>
+<lb/>animi deliquium. omnem etiam uteri strangulatum antecedit
+<lb/>lipothymia , quemadmodum ejus tum ascensum tum deflexum
+<lb/>in latus tum inflammationes saepe sequitur. i Sed et
+<lb/>apoplexiam, comitialem morbum, si quidem malignus est; rea
+<lb/>solutionem, syncopen et marcorem anteit. Nonnunquam
+<lb/>cum febrium accessionibus non paucis accedit: maxime si
+<lb/>corpus summe aridum sit ac squalidum aut immodice plenum.
+<lb/>Cum febre quoque ardenti ac maligna ; . aliquando et
+<lb/>quibus per febrium accessiones extrema vehementer resti.
+<lb/>gerata sunt, quique ob inflammationis vel jecoris vel stomachi
+<lb/>magnitudinem febricitant, iis per accessionum initia
+<lb/>anima ..desinit, praesertim ubi crudorum minimeque coctorum
+<lb/>.humorum multitudo aut insignis alienius partis obstructio
+<lb/>infestat. Item et quihhs os ventris aut imbecillum
+<lb/>est aut a vitiosis humoribus mordetur aut. massis vel glutinofis
+<lb/>vel humidis VeL frigidis ingravescit. Quin et nonnulli
+<lb/>affectuum animi vehementia deficiunt, praecipue senes
+<lb/>quique ex aliis imbecillitate aliqua laborant. Etenim ipsorum
+<pb n="11.49"/>
+<lb/>non paucis moeror, laetitia ac excandescentia hunc
+<lb/>animi desectum intulerunt. Nonnunquam vero et in tempeRive
+<lb/>erumpentes vapores hoc modo affectis animi deliqaium
+<lb/>induxerunt. Quemadmodum et robustioribus immodici
+<lb/>sudores. Praeterea abscessus eruptio vires vehementer
+<lb/>laedit, maximeque si in ventrem, stomachum aut thoracem
+<lb/>adasim confluit. Et si nos aliquando secto abscessu pus assasim
+<lb/>Vacuemus, necessario deficit anima, quemadmodum si
+<lb/>uberius purgemus vel inaniamus seu clysteribus seu alio
+<lb/>quovis modo idem malum adseremus, neque vero in hydtope
+<lb/>humor, etsi abundet et praeter naturam sit, semel totus
+<lb/>citra noxam vacuari potest, alioqui hominem deficere
+<lb/>animo necesse eII. Sed et doloris vehementia vires prosternit,
+<lb/>nimirum si repente vel morsus incidat vel tormina veI
+<lb/>celicus affectus vel ileos vel aliud malum oboriatur; Porro
+<lb/>vuIneratus nervus et musculi caput animae deliquium indsi-xerunt,
+<lb/>et maligna articulorum ulcera et gangraenosa et
+<lb/>depalcentia omnia ac immoderata quaedam frigiditas aut
+<pb n="11.50"/>
+<lb/>caliditas et vitalis roboris solutio. Hae quidem sunt animae
+<lb/>deficientis causae. Singulae vero earum propriam desiderant
+<lb/>curationem , sed nunc de omnibus scribendi locus non
+<lb/>est. Nam quae affectibus insunt, fine his curari non possunt.
+<lb/>De- his igitur in hac disputatione eatenus disseram, quatenus
+<lb/>dificat aliquis, quomodo repente incidentibus accessionibus occdrrere
+<lb/>possit. Frigida exempli gratia iis spargenda est, qui
+<lb/>ex cholera, alvi profluvio ac aliis multis fuhitisque vacuationibns
+<lb/>exsolvuntur. Nares quoque comprimendaesunt et
+<lb/>osventris perfricandum vomitusque impetendos aut stomaesius
+<lb/>insertis in os. vel digitis. vel plumis lacessendus , sed
+<lb/>brachia et crura vincienda sunt, munus quidem pluribus et
+<lb/>vehementibus vinculis , quum infernae partes vacuantur ut
+<lb/>in haemorrhoidibus, alui fluxione et uteri vacuatione. Nam
+<lb/>tunc crura vehementer revincta deosum saepe aliquid at-.
+<lb/>trahuut. Contra vero in sanguinis e naribus eruptione et
+<lb/>in vomitionibus crura et pluribus et valentioribus ligaturis
+<pb n="11.51"/>
+<lb/>stringenda funi. Quin etiam quibus sanguinem vulnera profundunt,
+<lb/>siquidem id in superioribus partibus accidat, internae,
+<lb/>sin infernis, supernae vinculis adstringendae sunt.
+<lb/>Invenienda enim vulnerato loco figura est quae sursum vergat,
+<lb/>non tamen supra modum, nam. si adeo tendatur ut dolorem
+<lb/>sentiat , non minus quam si deorsum vergeret fluxio
+<lb/>irritabit ur In summa autem ad ea revellere oportet vel
+<lb/>quae communitatem cum affectis partibus habent, vel a quibus
+<lb/>humor decurrit, proinde vehementes uteri fluxiones
+<lb/>admotae mammis cucurbitulae celerrime compescunt, sauguinis
+<lb/>vero e naribus eruptionem, eaedem fenori et lieni
+<lb/>pro nare sanguinem fundente. aut ambobus visceribus; si
+<lb/>cruor ex utraque. nare affatim abundeque profluat, affixae
+<lb/>cohibent. Vinum quoque aqua gelida dilutum animi defectiones
+<lb/>ex immodicis vacationibus sanat, maxima si ad
+<lb/>ventriculum fluxio repat. Considerandum autem est, num
+<lb/>id adhiberi aliquid prohibeat; qualis est visceris ali cujus
+<lb/>inflammatio aut vehemens capitis dolor aut delicatio aut
+<pb n="11.52"/>
+<lb/>ardens febris cum morbo crudo. Magnae enim ac propemodum.
+<lb/>incurabiles ex vini potu noxae sequuntur. Quod fi nihil
+<lb/>prohibeat , deinceps aegrotantis natura, consuetudo, aetas
+<lb/>et ambientis aeris temperies consideranda est, quibus
+<lb/>perspectis aut calidum aut frigidum potum dabis. Nam
+<lb/>qui frigidum bibere non consueverunt, aut eo manifeste laeduntur,
+<lb/>quique natura frigidiores sunt ac extreme senes aut
+<lb/>in regione naturaliter frigida degunt aut hiberno tempore,
+<lb/>a frigido arcendi sunt. Qui vero aliter habent potare intrepide
+<lb/>possunt. Quod si ventriculus fluxione tentetur, vinum
+<lb/>calidum ac tenue, quale Lessiium est, detur. Crassum vero
+<lb/>. ac nigrum acerbumque in sanguinis eruptione. Locis autem
+<lb/>ipsis ventri quidem et utero et stomacho et thoraci
+<lb/>quae robur parti inserere idonea sint admovere oportet.
+<lb/>Capiti vero et fronti tum haec tum quae refrigerent. Et
+<lb/>si qua in summa cute aut naribus rupta vena est, aliquod
+<lb/>ex iis quae. sanguinem sistunt medicamentum imponendum
+<lb/>esu Balneae autem commodissima^ sunt, si defluxionis iniuriam
+<pb n="11.53"/>
+<lb/>venter patiatur, sed sanguinis eruptionem vehementer
+<lb/>irritant. Atque iis etiam adversissima sunt, quibus ex sudoris
+<lb/>copia deficit anima, quando his cutis laxanda non
+<lb/>est, fied adstringenda ac refrigeranda. Vinum quoque frigidum
+<lb/>maxime est adhibendum, nihil vero quod calidum sit
+<lb/>omnino. dandum esu Sed nec membra ligare nec cogere
+<lb/>ad vomitum nec ullo modo movere oportet. Domus porro
+<lb/>aditus refrigeranti aurae expositus sit, aerque in frigidam
+<lb/>denfantemque qualitatem mutetur myrti frondibus, vitium
+<lb/>capreolis ac rosis humi sparsis, nihil horum fluxionibus
+<lb/>quae in ventrem seruntur confert, has enim tantum augent
+<lb/>quantum cutem densant. His igitur qui ex vacuationibus
+<lb/>exsolvuntur, sic in praesens est succurrendum. Qui vero humorum
+<lb/>multitudine animo deficiunt haud ile curantur, verum
+<lb/>illorum artus plurimum fricandi sunt, calefaciendi ac
+<lb/>ligandi. Caeterum a vino et cibis temperare debent, atque
+<lb/>etiam a balneis si febris adsit, contenti mulsae potu, in qua
+<lb/>thymum, origanum, pulegium. vel hyssopum concoctum sit.
+<pb n="11.54"/>
+<lb/>Confert autem et acetum mulsum, Quae porro ex uteri asfectibus
+<lb/>mulieres animo destituuntur , eodem modo curantur,
+<lb/>excepto aceto mulso. His letiam crura potius, quam brachia
+<lb/>deliganda funtatqne perfricanda, et quemadmodum in larga
+<lb/>fluxione mammis cucurbitulas admovemus, sic quibus fursum
+<lb/>revulsus retractusque in latus est uterus angui albus et
+<lb/>femoribus. Naribus quoque objiciendi sunt gravissimi odores,
+<lb/>utero vero suaves. Adhibenda item sunt laxantia ac
+<lb/>calefacientia medicamenta. Si vero ex stomachi imbecillitate
+<lb/>animi deliquium loquatur, imponere quae roborandi vim
+<lb/>obtineant emplastra , qualia fiunt quae ex palmulis conficiuntur,
+<lb/>xino, palentis, croco, aloe et mastiche, perfundere
+<lb/>vero oleo absinthino, melino, mastichiu o, nardino, oenanthino
+<lb/>et vino oportet, Aestuante autem stomacho, aliquid quod
+<lb/>refrigeret miscendum eft, qualis est cucurbitae, lactucae, portulaeae,
+<lb/>solani, feris et uvae acerbae succus. Haec enim non
+<lb/>solum refrigerat, sed et adstringit et aqua frigida ardenti stomacho
+<lb/>plerumque confert onportune data. aliooni magnopere
+<pb n="11.55"/>
+<lb/>laedit. Imbecillo. autem stomacho vinum calidum potius.
+<lb/>dandum est, modo nihil aliud prohibeat, ejusmodi. autem
+<lb/>stomachi frictionibus extremarum partium mirifice iuvantur.
+<lb/>Quod si ex bis nihilo melius habeant, exaestuantes quidem
+<lb/>celerrime ad balneum ducendi sunt. His vero qui alicuius
+<lb/>frigoris tenso afficiuntur, medicamentum quod triplici pipere
+<lb/>constat solumque piper et absinthium in potu dandum est.
+<lb/>Qui vero ex vitiosis humoribus os ventris . mordentibus
+<lb/>exanimantur, epota vel aqua calida vel hydrelaeo vomere
+<lb/>subeantur. At si non facile vomant, prius partes stomacho
+<lb/>adjacentes et manus et pedes calefaciendi funi. Quod si ne
+<lb/>sic quidem vomere possint,immissis in os vel pennis vel digitis
+<lb/>stomachus irritandus est. Sin neque sic vomant, rursus
+<lb/>oleum calidum quam optimum adhibendum esu ld autem
+<lb/>oleum saepe non solum vomitum provocare, scd et ventrem
+<lb/>mollire solet, id quod non parum ad rem de qua agitur facit.
+<lb/>Quocirca nisi (ponte accidat, arte procurare oportet,
+<lb/>maxime vero appositis remediis, ex quibus si facilius vomat,
+<pb n="11.56"/>
+<lb/>absinthii coma aqua mulsa incocta in potu danda est, deinde
+<lb/>vinum, modisque omnibus roborandae partes fiunt tum
+<lb/>medicamentis forinsecus impositis tum absinthii potu. At
+<lb/>non per initia quidem, fed post repurgato jam ventre id
+<lb/>faciendum esse suadeo, quando fi fuccos contineat, adstringendus
+<lb/>non est, fed calefaciendus, ut prius dictum est. SI.
+<lb/>vero multa frigida pituita in ore ventriculi collecta fit, plorimum
+<lb/>fovere oportet oleo, in quo absinthium decoctum sit,
+<lb/>deinde mulsam dare, in qua vel hyssopum vel id genus
+<lb/>aliud maduerit et acetum mulsum et piper, quodque ex triplici
+<lb/>pipere constat medicamentum et diospoliticum. Victus
+<lb/>autem ratio omnino incidendi facultate fit praedita. Ervefrementi
+<lb/>autem refrigeratione defectiones non aliter atque
+<lb/>bulimum curamus, nimirum calefacientes modis omnibus.
+<lb/>Itaque vinum in potu dandum est calida temperatum ribique
+<lb/>calefacere idonei. Fricare quoque ejusmodi aegrotos oportet, .
+<lb/>ad ignemque calefacere. Quae vero ex supervacuo calore
+<lb/>ortum habent lipothymiae, refrigerantia ac roborantis destderant.
+<pb n="11.57"/>
+<lb/>His enim maxime accidunt, qui diutius in aere aeftuoso
+<lb/>et balneis versati sunt. In praesens igitur robm his
+<lb/>restitues, si frigidam inspergas ac. ventiles et aurae exponas,
+<lb/>usque ventris frices ac irrites, postea rino et cibo reficras.
+<lb/>At quibus ob inflammationis magnitudinem aut vehementis
+<lb/>febris malignitatem in accessionibus animus deficit,
+<lb/>quique refrigerantur , eorum artus fricare ac calefacere cruraque
+<lb/>ac luanus ligare, vigilias imperare, cibum potumque
+<lb/>in totum circumcidere oportet. optimum porro in his quid
+<lb/>futurum sit praenosse et ea ante febris accessionem efficere.
+<lb/>Quique ex siccitate per accessionum initia in syncopen labuntur
+<lb/>praenosse optimum.. Nam si duabus trihusve horis
+<lb/>ante accessionem cibum dederis et pedes et manus contineri
+<lb/>jusseris, servari poterit. Cibus autem coetu facilis sit et stomacho
+<lb/>accommodatus. Quod fi vehemens lore periculum suspiceris,
+<lb/>vinum maxime .alicae elixae superfusum dare anticipabis.
+<lb/>Loco autem alicae panis eadem utilitate adhiberi
+<pb n="11.58"/>
+<lb/>potest. Si vero mediocris syncope expectetur, rino opus non
+<lb/>est: sed tunc abunde feceris; ss mala panica vel pyra veI
+<lb/>mala vel pomum aliud quodpiam, adstringendi facultate donatum,
+<lb/>cum cibis miscueris. Post haec vero si moderate accessionem
+<lb/>ierant, quum iterum cibus datur, pomorum usus
+<lb/>necessarius non est. Haec quidem agenda sunt, si quod futuo
+<lb/>rum est praelenferis. Si qui vero inopinato in hoc diteris
+<lb/>men inciderint, vini calidi, panis et alicae cum eo calidae
+<lb/>momentum dare debebis. Nam si largiorem aut coetu difficiliorem
+<lb/>hoc modo affectis cibum dederis, non siclum in fyncopen
+<lb/>perducentur, fed omnino suffocabuntur, Quibus autem
+<lb/>animus ex insignis partis obstructione deficit acetum
+<lb/>mulsum dandum est, potioque ex hyssopo; origano, pulegio.
+<lb/>et melle et cibi ex eorum qui valenter incidunt genere.
+<lb/>Crassi enim ac glutinosi magnopere in hoc affectu laedunt.
+<lb/>Nihil vero obfuerit artus perfricare ac ligare. Sed et utiliter
+<lb/>potiones, quae ciendae urinae facultatem habent, adhibeatur,
+<lb/>quales ex anetho, foeniculo, apio, petroselino, ammi,
+<pb n="11.59"/>
+<lb/>dauco et spica nardi sunt, quae: ubi manifeste juverint,
+<lb/>vino albo. ac tenui non admodum vetere utendum esii
+<lb/>Noscuntur autem hujusmodi obstructiones cum ex aliis
+<lb/>pulsuum inaequalitatibus, tum maxime ex sus quae in magnitudine
+<lb/>et parvitate, vehementia et debilitate inveniuntur,
+<lb/>modo adjuncta syndrome, id .est concursu, quam pleniorieam
+<lb/>vocant, non sit. Ea enim communes cum obstructione
+<lb/>inaequalitates obtinet. In ejusmodi autem affectibus, si quidem
+<lb/>magni sunt, pulsus intermittunt. Uerum haec fusius in
+<lb/>libris de Pulsibus sunt explicata. Nunc vero ad reliquarum
+<lb/>animi defectionum disputationem transeamus, cuiusmodi est,
+<lb/>quae ex abscessus vel ruptione vel sectione et immodica lu
+<lb/>his qui hydero laborant vacuatione fit. Satis enim ad praesehs
+<lb/>fuerit rebus odoris hos reficere, paulo. post autem forbitiones
+<lb/>coetu faciles adhibere. At fi ob tristitiam, laetitiam,
+<lb/>timorem , excandescentiam aut pavoreni animo consternantur,
+<lb/>odoramentis et narium comprehensionibus refocillati ad
+<lb/>vomitum cogendi sunt. Ad eundem modum si qui ex vui-..
+<pb n="11.60"/>
+<lb/>aeribus , purgationibus doloribusque articulorum, nervorum
+<lb/>et tendonum musculorum animo deficiant, in primis reficere,
+<lb/>postea vero idoneum affectui remedium praestare oportet.
+<lb/>Si vero celicos affectus aut lliofos aut eorum aliquem qui vehementer
+<lb/>affligunt animi deliquium sequatur, affectatum
+<lb/>partium fomentis calidis et extremarum frictionibus animus
+<lb/>restituitur. Quae vero ob propriam facultatum corpus nostrum
+<lb/>moderantium imbecillitatem animi defectiones fiunt,
+<lb/>ab intemperie earum partium unde vires proficiscuntur contractam,
+<lb/>contraria intemperie curari debent, nempe frigidam
+<lb/>calefaciendo ,. calidam refrigerando . atque in aliis eadem ratione.
+<lb/>Vitalis quidem vocata facultas, quam e corde prodire
+<lb/>docuimus, ex pulsuum debilitate deprehenditur. Quae autem
+<lb/>ex Iecore oritur, hanc altricem^ vocant, ex cruentis alvi
+<lb/>dejectionibus initio quidem aquosis et tenuibus, deinde vero
+<lb/>amurcae in modum orestis. Quae vero ex cerebro originem
+<lb/>ducit facultas, animalem nonnulli peculiari nomine vocant,
+<pb n="11.61"/>
+<lb/>arbitrarii motus imbecillitate cognoscitur. In alio autem
+<lb/>opere de ejusmodi affectibus, ex quibus multa sunt a medicis
+<lb/>praetermissa, seorsum tibi conscribemus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+
+
+<p rend="indent">Quoniam autem hactenus symptomata
+<lb/>disputando prosequtus sumus, rursus ad ea quae initio proposita
+<lb/>sunt redeamus, unum omnium communem scopum
+<lb/>habentes, nempe causae a qua haec omnia fiant contemplationem,
+<lb/>ipsa enim conveniens remedium tibi ostendet, velut
+<lb/>in capitis dolore, si quis ribum fastidiat et stomachi rosionem
+<lb/>sentiat, vomere jussus, vel bilem vel pituitam vel
+<lb/>utrumque vomitione ejiciet. Nulla vero nota ventris assectum
+<lb/>testante, considerandum num repletio vel obstructio
+<lb/>vel inflammatio aliquam capitis partem obsideat, quod inveniemus
+<lb/>primum quidem interrogantes num dolor in universum
+<lb/>caput sparsus fit, an in parte quapiam vehementius
+<lb/>insideat. Postea vero an cum gravitate, distentione, morsu vel
+<lb/>pullu affligat. Si enim cum gravitate urget, multitudinem,
+<lb/>cum morsu autem, acrimoniam vel vaporis vel humoris,
+<pb n="11.62"/>
+<lb/>cum pulsu inflammationem, cum distentione autem citra
+<lb/>gravitatem quidem , ac pulsum crudi ac flatulenta spiritus
+<lb/>copiam, cum pulsu vero, membranaceae substantiae inflammationem,
+<lb/>cum gravitate vero, retentam in membranis maltitudinem
+<lb/>indicat. His igitur omnibus distinctis causa unde
+<lb/>singula proficiscuntur est consideranda. Si quidem illa curandi
+<lb/>rationem tibi commonstrabit, ut quum vel vaporis
+<lb/>vel humoris copia contineatur, considerandum est, au ob fehris
+<lb/>magnitudinem fusi ac velut fervefacti humores caput
+<lb/>subierint, an propter partis imbecillitatem, an totius corporis
+<lb/>plenitudinem ; hanc etenim facile curaveris nimirum corporis
+<lb/>universi vacuatione. Eam vero quae ob partis fit imbecillitatem
+<lb/>partim quidem revocando ru totum corpus, partim
+<lb/>vero affecto loco remedia adhibendo. Revocamus. quidem
+<lb/>acribus clysteribus et vinculis ac multis infernarum partium
+<lb/>frictionibus sanguinis etiam nonnihil, si ita necessitas urget;
+<lb/>detrahendo. Parti autem medemur, interim dum in corpus
+<pb n="11.63"/>
+<lb/>- totum revellimus, ea capiti inspergentes quae repellendi vim
+<lb/>obtinent, deinde vacuantes, postea vero roborantes. Repellit
+<lb/>quidem oleum omphacinum dictum aut aliquod aliud
+<lb/>simile, quale est oxyrodinum et ipsum rosaceum per fe et
+<lb/>quae ex papaveris calycibus ac teneris oleae termitibus, hederae
+<lb/>.corymbis, viridi menta et sisymbrio comparantur, quibus
+<lb/>in crudiore quidem et frigidiore plenitudine tepidis uti
+<lb/>licet, frigidis vero in calidiore ac biliosiore. Vacuat autem
+<lb/>ac digerit oleum calidum solum, praesertim si vel vetus vel
+<lb/>sicyonium sit aut si anethum in ipso suerit concoctum, haec
+<lb/>enim abunde vacuant humorum plenitudinem, non quidem
+<lb/>omnino crassiorum ac lentorum, sed et si vel spondylium
+<lb/>vel scrpyllum oleo incoxeris vel pulegii comam vel calaminthae
+<lb/>aut menthae et sisymbrii crassiorem etiam humorem
+<lb/>vacuatus. Eadem quoque robur quoddam partibus inferunt
+<lb/>ac debiles confirmant. His itaque continenter usque
+<lb/>ad integram curationem est utendum. Et si res postulat,
+<pb n="11.64"/>
+<lb/>etiam per nares et palatum purgabis sternutamentaque ciehis.
+<lb/>Quod si ad balnea hominem deduxeris, caput siccis linteis
+<lb/>perfricabis falemque et nitrum ac sinapi fine oleo infperges.
+<lb/>Haec quidem sunt dolorum capitis ex ejus partis
+<lb/>imbecillitate remedia. Quum vero ex febris magnitudine
+<lb/>dolor accidit remediaque essiagitat, frigidae tum qualitates..
+<lb/>tum facultates et quae ex hydrelaeo, oxyrodino et papaveris
+<lb/>calicibus fiunt perfusiones auxiliantur. Doloris autem capitis
+<lb/>decretoriam vel sanguinis eruptionem ves vomitionem
+<lb/>nunciantis curatio vestiganda non est, non enim symptoma,
+<lb/>ied salubre signum potius sit existimandus, quemadmodum
+<lb/>et alia non pauca, quae multos quidem ante crisinterrent,
+<lb/>salutem vero promittunt. optimum autem est posse cognosuere
+<lb/>corpus a natula perturbari, tum alias excretiones tum
+<lb/>maxime vomitum ad sanguinis eruptionem moliente, quorum
+<lb/>inseparabilis nota est capitiis dolor. De omnibus autem
+<lb/>in alio opere fusius tractatur. Quantum vero ad praesentem
+<lb/>cognitionem attinet , primum servantes institutum de ipsis
+<pb n="11.65"/>
+<lb/>aliquid breviter dicemus. Primum igitur consideranda fesuium
+<lb/>species . est, an calidae sint ac ardentes. Solent enim
+<lb/>hae excretione judicari, quemadmodum mitiores et velut
+<lb/>languentes diutius durant ac in abscessum plerumque finium
+<lb/>tur. .Deinde vero an morbus salutaris sit, nam quis bonam
+<lb/>crisin in pernicioso morbo speraverit? Tertio ad haec universi
+<lb/>morbi tempus notare oportet. Nam si principii vel iucrementi,
+<lb/>nondum vero status aut coctionis notae apparuerint,
+<lb/>per urinas aut sputum aut alui dejectiones bona crisis
+<lb/>fieri non potest. Haec quidem sunt ex quibus morbum per
+<lb/>excretionem judrcatum iri sperare possis. Jam vero ejus
+<lb/>quod adest nec jam futurum est, hae sunt nolae t in tole- rando
+<lb/>difficultas universam crisin antecedit, noctu quidem
+<lb/>si interdiu morbus judicari debet, interdiu vero si noctu.
+<lb/>Igitur si quid ejusmodi conspexeris, videndum est quotum
+<lb/>morbi diem ducat aeger. Nam funi qui vel parvo naturae
+<lb/>impulsu decernere idonei sunt,. Sed multi ne in vehementibus
+<lb/>quidem commotionibus cognoscere omnino possunt an
+<pb n="11.66"/>
+<lb/>perturbationis magnitudo pro diei natirra fit. Septimus enim
+<lb/>vel exiguo naturae instructu crisin per vacuationem movet.
+<lb/>Sextus vero magno naturae conatu eget atque raro quidem
+<lb/>decernit. Quod si decernat, id cum periculo et sine fide siti
+<lb/>Ad eundem modum aliorum etiam dierum Ungulis propria
+<lb/>quaedam natura inest, quam in libris de diebus decretoriis
+<lb/>explicarimus. Agedum perturbationis magnitudini dies respondeat,
+<lb/>postea considerato qualis futura crisis sit; de aliis
+<lb/>quidem nunc disputare necesse non est. An vero vomitus
+<lb/>futurus sit vel sanguis per nares fluxurus, in ejusmodi enim
+<lb/>crisibus signum unum ullo dicebamus, nempe capitis dolo- rem,
+<lb/>ex iis maxime deprehendere licet : in primis quidem si
+<lb/>ab initio statim non invasit dolor, tanquam morbi fympluma
+<lb/>quoddam, fed in perturbatione crisin praecedente.
+<lb/>Deinde si condolefcat collum et hypochoudrium retrahatur,
+<lb/>fpirandique difficultas quaedam repentina velut presserimtace
+<lb/>suboriatur. Si enim ^omnibus sus inridentibus repente
+<pb n="11.67"/>
+<lb/>p. sus turgescant nec in parvitatem recidant nec debiles
+<lb/>fiant ; jamjam crisis est exspeetaudar Si vero . praeterquam
+<lb/>quod non concidunt etiam in altum attollantur vehemeutioresque
+<lb/>reddantur, jam inspicienda aegrotantis facies est,
+<lb/>lo .qua si pars aliqua. palpitet aut temporum venae micent
+<lb/>aut mala aut naris aut oculus rubicundior appareat; crisis
+<lb/>habendae .maior spes est. Quod si inviti illacriment ana
+<lb/>splendores se cernere. sibi .videantur ac manus velut scabenfes
+<lb/>naribus admoveant, tunc jam non .adfore,. sed adesse fiam
+<lb/>guinis fluxionem conspicies. Statim enim semel ac. .iterum
+<lb/>sementibus sanguis erumpit. In his. vero ne perterrearis
+<lb/>etiamsi delirare ac subsilire hominem rideas. Haec enim
+<lb/>sunt humorum sursum tendentium indicia..Quemadmodum
+<lb/>et spirandi difficultas et hyp.ochondria retracta collumque una
+<lb/>eum capite degravatum , sed et cum . bis delirium. . signum
+<lb/>quoddam sit. Atque haec quidem signa sufficiant. Saepe vero
+<lb/>et cum his accedit aegrotantis aetas et natura quae spem
+<pb n="11.68"/>
+<lb/>confirmat, praeterea anni tempus et praesens aeris constitutio.
+<lb/>Nam si aeger adolescens est aut alioqui calidae natutae
+<lb/>aut copiosi sanguinis, major speCsueriti Quod si prius
+<lb/>eidem aut aegrotanti aut sano faepe sanguis per nares essiuxerit,
+<lb/>vel hoc solum satis fuerit ad sanguinis profusionis
+<lb/>fpem habendam. At si auni tempus aestas est aut si aesias
+<lb/>non est, sed aeris praesens constitutio calida, nonne ex his
+<lb/>indictum aliquod destitues? Jam vere si et multi eo tempore
+<lb/>per sanguinis profusionem crisin habuerint, praeterea sanguine
+<lb/>corpus^ redundet et solitae excretiones supprimantur;
+<lb/>haec quoque spem tibi auxerint. Misti quidem neque omnino.
+<lb/>difficile videtur futuram sanguinis eruptionem posse praesciri,
+<lb/>ubi tot ac talia signa habeas. Absurda vero res est ac
+<lb/>magna imperitis id non praenosce. Sed sunt qui medicorum
+<lb/>hujus tempestatis culpa ac incuria ea .demirentur, quae admiratione
+<lb/>digna non sunt. Sive enim ex laeva sive dextra
+<lb/>nare sanguis fluximus sit, ex jam dictis haud difficulter
+<lb/>praesentias. Verum medicorum non pauci non solum id disfictis
+<pb n="11.69"/>
+<lb/>esse, sed omnino ferri non posse arbitrantur, tametsi
+<lb/>tum hae tum aliae omnes excretiones pvaevideri possint si
+<lb/>duo haec consideraveris, nempe unde naturae impetus fiat
+<lb/>et in quam partem vergat. Quae si noris, defectum supplebis
+<lb/>et immoderatum motum inhibebis, velut exempli gratia
+<lb/>magna cucurbita sinistro hypochondr-io admota ex liene,
+<lb/>dextro vero ex jecore profluentem sanguinem facile retrahet.
+<lb/>Eadem quoque in estis partibus habenda est ratio. Nam
+<lb/>ex uno de omnibus idem colligere licet si universale contempleris.
+<lb/>Quocirca hoc loco praefanti libro finem imponam.
+<lb/>Deinceps vero de febribus, quas phlegmonae accendunt
+<lb/>atque de aliis affectibus, qui in singulis corporis partibus
+<lb/>consistunt disseram. Phlegmonae autem quasi phlogo-.
+<lb/>fes a veteribus dicebantur: a recentioribus vero non omnes.
+<lb/>Neque enim herpes neque erysipelas neque id genus aliud
+<lb/>inflammationibus annumerantur, sed ex calidis affectibus
+<lb/>uni tantum, cujus durus tumor et dolor pulsatilis comes est.
+<pb n="11.70"/>
+<lb/>hoc nomen tribuunt, tametsi non talem solum sed simpliciter
+<lb/>omnes calidos ac velut fervidos affectus, febres ac dolores
+<lb/>sequi videmus. De his igitur atque aliis id genus morbis
+<lb/>deinceps disseremus.
+</p>
+<pb n="11.71"/>
+</div>
+</div>
+<div type="textpart" subtype="book" n="2">
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI AD GLAVCONEM DE ΜΕDENDI
+<lb/>METHODO LIBER II.</head>
+
+
+<p rend="indent">De singularum autem corporis partium affoetibus,
+<lb/>Glauco, deinceps disseremus ab inflammatione exorsi.
+<lb/>Haec etenim et frequentissime incidit et plurimas habet
+<lb/>differentias , hisque omnibus febres accedere solent. Itaque
+<lb/>omnium communis est immoderatus calor ac velut phlogosis,
+<lb/>i. insiammatio, unde et infis phlegmones nomen veteres
+<lb/>indidere. Harum autem cuique suam inveneris differentica,
+<lb/>ex qua ejus tum species cognoscitur, tum idoneum
+<lb/>remedium suppeditatur. Aliam enim herpetes, aliam erysipelata,
+<pb n="11.72"/>
+<lb/>aliam phygethla et aliam aliae inflammationum fpecies
+<lb/>curationem essiagitant. Quocirca hic quoque cognoscendorum
+<lb/>recte affectuum facultas rursus antecedit. Atque boe
+<lb/>primum tibi scribere conabor, ubi omnium inflammationum
+<lb/>differentias ab initio distinctu constituero. Prima itaque inflammatlonis
+<lb/>differentia est, quae in humidam et siccam distinguitm.
+<lb/>Humidam quidem quae in calida defluxione partem
+<lb/>obsidente fit, siccam vero in qua citra ullum deflevium
+<lb/>nativus calor accenditur. Hoc autem quadantenus velut
+<lb/>febris partis ipsius est, quae quum ad immoderatam.jam
+<lb/>caliditatem et siccitatem pervenit, exstinguitur omnino ac
+<lb/>emoritur. Quocirca neque in plura potest dividi, quemadmodum
+<lb/>altera differentia., quae uti dicebamus ex humorum
+<lb/>defluxu in partem aliquam fit. Ejus enim multae sunt fpecies,
+<lb/>una ex sanguinis, altera ex bilis, tertia ex utriusque
+<lb/>simul defluxione. Atque etiam in harum singulis aut jam
+<lb/>computruit quod defluit aut putrescit in parte infantum:
+<lb/>itlqne vel substantia crastina est vel tenue i vel tuave vel
+<pb n="11.73"/>
+<lb/>acre.. Si igitur sanguis bonus ac crassitudine mediocris unit
+<lb/>versim in aliquam partem fluxerit .atque ob multitudinem
+<lb/>constipetur, dolor vehemens, nisi pars omnino hebetem sensum
+<lb/>habeat, hominem corripit, pulsusque in profundo infestat
+<lb/>et distendi partem ipsam usquequaque ac contundi asger
+<lb/>putet, tantinnque sentit calorem, ut deuri rideatur ac
+<lb/>refrigerari cupiat, rubor quoque qualis ex balneis accedit
+<lb/>aut ad ignem efflorescit vel alio quovis modo calefactis in
+<lb/>cute apparet. Affectus hic totius generis appellationem accepit
+<lb/>vocaturque iusiammatio, quemadmodum et aliae multae
+<lb/>species fui generis nomen adoptarunt. oriturque frequenter
+<lb/>ex omni fere caula, etenim et vulneribus convulsionibus,
+<lb/>contusionibus, rupturis, lassitudini quam exercitatio attulit,
+<lb/>luxationlbus, fracturis et sponte natis ulceribus supervenit,
+<lb/>praeter haec omnia quum venae immodice plenae in
+<lb/>eam partem, quae tunc recipere maxime sit idonea, supervacuum
+<lb/>humorem fundunt: ea autem pars caeteris est aut
+<pb n="11.74"/>
+<lb/>imbecillior aut rarior et solutior auni ad attrahendum
+<lb/>promptior aut immobilior, quacunque de causa ad has affectiones
+<lb/>perducta fuerit De hoc. enim disceptare nunc non
+<lb/>-statuimus. Flava bilis, quando suam servans naturam per
+<lb/>universum corpus cum sanguine fertur , arquatum morbum
+<lb/>parit. Herpes vero vocatur, quum sola a sanguine secreta
+<lb/>est, ac in parte aliqua consistit, quae fi crassa sit consistentia
+<lb/>totum cutem usque; ad subjectum carnem exulcerat, atque
+<lb/>ejusmodi herpetas Hippocrates exedentes vocat. Sin tenuior
+<lb/>bilis sit; solam superficiem quasi deurit, atque haec species
+<lb/>generis nomen accepit, simplieiterque . et sine adjectione herpes
+<lb/>nominatur. Harum enim duarum formarum altera modo
+<lb/>commemorata herpes exedens, altera vero miliaris dicitur,
+<lb/>quod pustulae parvae ac multae in summa cute excitentur
+<lb/>milio similes. Fit autem ejusmodi herpes etiam ab ipsa bile,
+<lb/>sed minus quam priores acri e.t calida. Quod si ex sanguine
+<lb/>et flava bile justo calidioribus fluxio mista suerit , aut ex
+<pb n="11.75"/>
+<lb/>sanguine quidem, sed fervido ac substantia tenuissimo assetus
+<lb/>erysipelas vocatur, multo inflammatione calidior aspectnque
+<lb/>flavior. Et si tetigeris , sanguis facile suffugit rursusque
+<lb/>affluit exquisite tenuis et visu rube^ , non tamen aeque
+<lb/>cruciat erysipelas atque inflammatio. Neque secundum nllam
+<lb/>inflammationis speciem aut pulsat aut premit aut distendit.
+<lb/>Verum aliquando moderate omnino infestat et maxime
+<lb/>quum in solam cutem sparsum est, minimeque subjectam
+<lb/>carnem laedit atque magna ex parte tale fit exquisitumque
+<lb/>erysipelas est. Quemadmodum id quod subjectam
+<lb/>carnem invadit, minimeque ex plane tenui fluxione fit falum
+<lb/>erysipelas non est, sed jam mistus ex erysipelate et inflammatione
+<lb/>affectus, in quo quum propria erysipelatis symplumata
+<lb/>praevalent a recentioribus medicis erysipelas phlegmonodes,
+<lb/>quum vero inflammationis, erysipelatodes iustammalio
+<lb/>dicitur. Quod si neutrius luculenter vincant, sed paria
+<pb n="11.76"/>
+<lb/>cernantur, inflammatio et erysipelas mista esse dicuntur.
+<lb/>Itaque exquisitum erysipelas solius cutis est affectus. At iriflammatio
+<lb/>non solumi subjectarum cuti partium quamquam
+<lb/>maxime quidem harum, sed et - cutis aliquando allectus est.
+<lb/>Atque haec quidem non minorem alioqui quam illa dolorem
+<lb/>invenit, sed pulsatione caret Quum vero sanguis admodum
+<lb/>calidus ac crassius est, in quamcunque partem confer tim-fluxerit,
+<lb/>hanc exurit ulcusque cum crusta efficit. Quicquid vero
+<lb/>circumstat, in inflammationem attollit ferventem ap dolore
+<lb/>grani conflictantem. Vocatur autem hujusmodi affectus car:;.
+<lb/>bunculus. Quod si influens sanguis niger sit, crassus, faeculentus
+<lb/>ac -fervidus, qualis est prior, admixtam que saniem
+<lb/>quandam tenuem habeat , pustulae in cutis superficie oriuntur
+<lb/>his quae ex igne fiunt similes , sub quibus ruptis crusussum
+<lb/>ulcus invenitur. - Est et hic affectus etiam carbunculus.
+<lb/>Tot igitur sunt inflammationis specie. fecundum assectus
+<lb/>naturam divllae. Multas vero species quispiam forte putaverit
+<pb n="11.77"/>
+<lb/>esse praetermissas, nominum multitudine hallucinatus,
+<lb/>cujusmodifunt bubones, phymata, phygethla, ophthalmiae,
+<lb/>peripneumoniae, pleuritides et alia multa similiter nuncupata.
+<lb/>omnia enim haec inflammationes quaedam sunt in antedictis
+<lb/>speriebus comprehensae, quarum quaeque diversam fortita
+<lb/>est appellationem. Quoniam qui primi haec nomina indiderunt
+<lb/>compositam intelligentiam tum ipsius assectus tum
+<lb/>partis hunc. continentis, verbo .uno explicare voluerunt.</p>
+<p>Sunt enim. bubo, phyma et phygetblon glandularum assectus.</p>
+<p rend="indent">Bubo. quidem inflammatio, phyma vero affectus est, qui et</p>
+<p rend="indent">celeriter augetur et ad suppurationem festinat, phygetblon</p>
+<p rend="indent">vero phlegmonodes, ut vocant, erysipelas est aut inflammatio
+<lb/>erysipelatodes. Ad eundem modum ophthalmia inflammatio
+<lb/>est ejus membranae, quae corneae adhaeret , pleuritis
+<lb/>ejus. quae costas succingit, angina saucium, peripneumonia.
+<lb/>vero pulmonis, eadem quoque in reliquis est ratio. Quae
+<lb/>igitur in conspicuis corporis partibus inflammationes existunt
+<lb/>prompte. cognosti possunt, quae vero in abditis latent
+<pb n="11.78"/>
+<lb/>atque omnino febres adferunt non aeque, sed misti quidem
+<lb/>videtur ejusmodi cognitio acri judicio egere, peritiaque na.tutae
+<lb/>partium , quam ex anatome simul et exquisita scientia
+<lb/>tum actionum tum usuum nobis comparamus, de quibus
+<lb/>in aliis operibus disputatum esu. Nunc vero deliis quidem
+<lb/>retexere sermonem non vacat, . quando le derepente peregre
+<lb/>proficisci necessitas urget. Qua ratione autem inflammatio-.
+<lb/>nes , quae in summa cute exoriuntur, optime quis curare
+<lb/>possit, tibi primum explicabo. abeo affectu auspicatus, qui
+<lb/>quod plurimum incidat totius generis appellationem meretur.
+<lb/>In quo id in primis quod et in omnibus aliis marimam
+<lb/>vim obtinet considerare oportet, nempe ut morbi
+<lb/>cauta inveniatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Igitur inflammationum quae in conspicuo
+<lb/>fiunt causa una quaedam est non admodum occulta, quae
+<lb/>fluxio appellatur, nisi aliquando cum his copuletur, quae ab
+<lb/>alia evidente ansa fieri videntur. Quando enim nulla harum
+<pb n="11.79"/>
+<lb/>praecedente pars repente inflammatione est obsessa,
+<lb/>causa quae .affectum attulit. rheuma, i. siuxio, morbus vero
+<lb/>affectio rheumatica dicitur. Atque in his praecipue inflantarationibus
+<lb/>optima per initia curatio adhiberi debet. Nam
+<lb/>qui in ipsis error committitur, aut curatu difficiles aut
+<lb/>omnino immedicabiles reddit affectiones. Haec autem duo
+<lb/>maxima sunt errata, nullam totius corporis rationem habere
+<lb/>et partem calefacere ac humectare. At in his duobus medici
+<lb/>maxime delinquunt. Nonnulli enim ex methodica secta
+<lb/>persuasi. et inflammationes omnes affectiones astrictas esse
+<lb/>arbitrati, laxandas esse sibi putaverunt. Sunt. vero qui temere
+<lb/>et inconsiderate illos imitantur, unum mali agendi
+<lb/>habentes patrocinium , nimirum se cum multis errare. Sed
+<lb/>neque ex dogmaticis medicis neque empiricis quispiam ita
+<lb/>sensit. Verum quod et ratio et experientia suadet, corporis
+<lb/>universi congruas vacuationes moliri jubent, partem
+<lb/>vero inflammatam perfundere ac illinire his quae influentis
+<pb n="11.80"/>
+<lb/>humoris repellendi vim habeant, et qui in affecto loco continetur
+<lb/>vacuare, roburque ac vires affectis jam partibus inferere,
+<lb/>Quae autem vacuando observari debeant, antea siiximus
+<lb/>, ac nunc quoque paucis explicabimus , ut deinceps
+<lb/>servata memoria jam te per singulos affectus .vacuationis
+<lb/>indicationes edoceri necesse nun siti Aetatem igitur, tempus,
+<lb/>regionem, praesentem aeris constitutionem, robur aegrotantis,
+<lb/>habitudinem, consuetudinem atque ipsam morbi sperietn
+<lb/>animadvertendam esse diximus. Haec enim quando vacuamdum
+<lb/>.aut minime vacuandum sit et unde et quo modo docent,
+<lb/>velut in subjecto affectu : confluat in genu humor atque
+<lb/>repente vehementer intumescat. Tibi vero universum
+<lb/>corpus sanguine plenum esse videatur, valideque aegrotantis
+<lb/>vires sint, anni tempus ver et regio modice temperata , ado- lescensque
+<lb/>vel juvenis sit aeger, huic sanguinem ex supernis
+<lb/>partibus mittere oportet, secta cubiti vena vel interna vel
+<lb/>media. Quod su superna pars affecta sit, ex interna ducendus
+<pb n="11.81"/>
+<lb/>est sanguis. Nunquam enim incommode flu-xionis impetus
+<lb/>in contrarium revestitur. Cataplasma vero ex sempervivo
+<lb/>et malicorio in rino decoctis, ritu polentaque imponendum
+<lb/>est, ut quod in his optimum sit omnisque quibus
+<lb/>nobis opus est praestare possit. Repellit enim quod influit
+<lb/>et quod jam continetur exsiccat et circumstantes partes confirmat..
+<lb/>Alia autem sexcenta medicamenta eodem modo misicere
+<lb/>potes, quorum componendorum rationem ex libris de
+<lb/>medicamentis didicisti. Unde in singulis unum aliquod tibi .
+<lb/>subscribam; futurum monumentum simul et exemplum ejus
+<lb/>quae in aliis est facultatis. Ejusmodi vero remediis utendum
+<lb/>est, ubi dolor vehemens non est, ubi vero gratiore cum dolore
+<lb/>defluxio. inciderit, neque aqua calida neque oleum neque
+<lb/>cataplasmata ex -.triticea farina adhibenda sunt. . Haec
+<lb/>enim omnia affectibus ex humorum influxu contractis adverfantur,
+<lb/>tametsi levamentum quoddam statim adferre vi-,
+<lb/>deantur. Satis enim suerit, doloris, vehementiam mitigare
+<pb n="11.82"/>
+<lb/>aliquo ex his quae ex passo et rosaceo ac paucula cera cum
+<lb/>his ambobus liquata conficiuntur. Haec autem lana succide,
+<lb/>quae oesypi plurimum habeat excipienda sunt, ac aestate
+<lb/>quidem frigida, hieme vero tepida admovenda. Ad hunc
+<lb/>modum cataplasmata ex arnoglosso, lenticula, pane et rosaceb
+<lb/>adhibenda sunt. Paulo vero supra allectum locum admovenda
+<lb/>est spongia rino acerbo imbuta aut aqua frigida,
+<lb/>momentum autem aceti satius fuerit huic immiscere. Quod
+<lb/>si ex his utilitas aliqua memoratu digna accesserit et nusquam
+<lb/>pus appareat , mollibus quae adversus fluxiones parantur
+<lb/>emplastris utendum est, ex quibus optima sunt, quae
+<lb/>exsiccare simul ac repellere fluentem sanguinem et citra dolorem
+<lb/>possint. Quocirca quae cutem vehementer tendunt
+<lb/>proindeque dolorem adferunt, haec plus laedunt quam exsiccando
+<lb/>prosint. Tale igitur esse debet medicamentum, quale
+<lb/>nobis in usu crebro est, quod ex chaleite constat .rosaceo
+<lb/>temperatum. Si vero lanam mundam vino acerbo madentem
+<lb/>extrinsecus superposueris, majorem utilitatem attuleris. At
+<pb n="11.83"/>
+<lb/>ubi in parte ipsa pus apparuerit, semet aut his cataplasma
+<lb/>ex necessitate imponi debet. Ad praesens vero quod ex polenta
+<lb/>constat utilius admovetur. Similiter autem his aceti
+<lb/>quippiam aut vini admiscendum esu Postmodum vero secta
+<lb/>parte ac pure vacuato cavebis a caeteris, oleum vero sive
+<lb/>aquam exhibebis. Quod si vulnus forte abluere conveniat,
+<lb/>mulsa vel posca, rino et rino mulso utendum esu Si vero partem
+<lb/>adhuc inflammatio occupet, cataplasma ex lenticula
+<lb/>imponendum est. Sin ab hac sit libera, aliquod ex aliis me-.
+<lb/>dicamentis quae emplasta dicuntur et quibus in ejusmodi
+<lb/>sectionibus utimur, eoque potissimum quod ex chalcite constat.
+<lb/>Quibus extrinsecus spongia aut lana rino acerbo imbuta
+<lb/>superponenda esu At si acerbi vini copia non sit, aqua
+<lb/>cui tantum aceti admistum fit, ut bibi possit perfundenda
+<lb/>fpongia est. Ad hoc autem sariunt etiam vina marina. Tu
+<lb/>vero si occasio efflagitet, vinum arte conficere poteris, sale
+<lb/>vino, quod in promptu habueris admisto. Vulneri autem
+<lb/>nullum pingue medicamentum admovendum est, quale est
+<pb n="11.84"/>
+<lb/>Macedonicum et quod tetrapharmacum vocant, diligenter
+<lb/>enim exsiccandum esu sid hunc quidem modum inflammatio
+<lb/>quae ex defluxione est curari debet.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Quae vero ab aliis caulis fiunt, humectare
+<lb/>ac calefacere nihil velat. Et si ad suppurationem has ducere
+<lb/>velis; cataplasma ex triticea farina in oleo et aqua decocta
+<lb/>inducendum esu Neque timenda scarificatio est, si
+<lb/>quando ea opus fit. Quae vero ex humorum defluxu fiunt
+<lb/>iusiammationes, non fine magno malo fcarificantur, maxime
+<lb/>per initia. Veterescentibus autem quae post totius corporis
+<lb/>vacuationem aliamque idoneam curationem duritiem quandam
+<lb/>ac nigrorem in partibus reliquerunt auferre sanguinem
+<lb/>non est absurdum, nam inflammationes amplius existimandae
+<lb/>non sunt, quemadmodum neque erysipelas, si jam livorem
+<lb/>contraxit. Hoc enim per initia refrigerari desiderat, ac
+<lb/>potissimum quum sine manifesta fit causa. Quasido vero jam
+<lb/>fervor abest, confert scarificare et cataplasma ex hordeacea
+<pb n="11.85"/>
+<lb/>farina calidum imponere et ceratum aliudque medicamentum,
+<lb/>quod discutiendi vim obtineat. Non tamen ex
+<lb/>vena sanguis in hisce necessario mittitur, sed ventrem per
+<lb/>interiora pmgare sufficit, adhibito medicamento quod flavam
+<lb/>bilem ducat. Quod fi exigua fit affectio, ne hoc quidem
+<lb/>necessarium est, sed abunde erit acri uti clystere. Quae vero
+<lb/>ex ulceribus fiunt erysipeIata, quaeque similiter manifestas
+<lb/>habent causas , neque si statim cataplasma ex hordeacea sarina
+<lb/>praesertim loco antea scarificato imposueris , laedes.
+<lb/>Inflammationi vero erysipelatodi et eryfipelati phlegmonodi
+<lb/>mista, quoad fieri potest, curatio est adhibenda atque ei
+<lb/>quod magis vinrit semper reluctandum. Bubo vero et
+<lb/>phyma et .phygethlon eadem ratione qua et aliarum partium
+<lb/>similes allectus murari debent, praeterquam in partibus,
+<lb/>quae iisdem affectibus laborantes acriora medicamenta
+<lb/>ferre possunt, cujusmodi sunt glandulae. Herpetes autem
+<lb/>quatenus ad universi corporis yacuationem attinet ut erysipelata
+<lb/>curari debent, quatenus vero ad affectam partem,
+<pb n="11.86"/>
+<lb/>non eadem omnibus cura adhibenda est. Exedentes enim
+<lb/>omnes refrigerari volunt, quemadmodum et alii herpetes et
+<lb/>eryfipelata, non tamen medicamenta ferunt, quae praeterquaor
+<lb/>quod refrigerant etiam humectare idonea sunt, hesi
+<lb/>fotum refrigerantia admittunt, praesertim quae exsiccare postsint.
+<lb/>Quocirca neque lactuca neque polygonum neque lenticula
+<lb/>quae in paludibus nuscitur neque palustris lotus aut
+<lb/>anthyllium aut psyllium aut portulaca aut feris aut sumpervisum
+<lb/>aut aliud id genus quod refrigerare ac humectare
+<lb/>possit est adhibendum, quae quidem erysipelatibus sunt
+<lb/>familiaria. Sed nec spongiae frigida imbutae aliquando nec
+<lb/>falam, fidendum est, tametsi refrigerare ac exsiccare possint,
+<lb/>sed modice, Herpeles vero vehementiorem quam salani siccitatum
+<lb/>expetunt. lgitur per initia imponendi allium capreoli
+<lb/>sunt ec rubi et canini rubi germina et amoglostum.
+<lb/>Deinde lenticula admiscenda est, nonnunquam et mel et polenta,
+<lb/>quod praefcriptum est ad inflammationes ex dessexion.e
+<lb/>cataplasma, si ah eo sempervivum detraxeris, Exulcerata
+<pb n="11.87"/>
+<lb/>autem loca medicamentis ad herpetas in libris pharmaceuticis,
+<lb/>fide compositione medicamentorum inscriptis,
+<lb/>inungere oportet. Ejusmodi enim multa passim habentur in
+<lb/>orbiculos digesta , qui dum usus essiagitat passo diluuntur.
+<lb/>Quod si in promptu passum non sit, vino tenui et albo et
+<lb/>leviter astringente utendum est, quale Falernum est Massilienfe,
+<lb/>Sabinum, Adriaticum et Arsyinum, quae nondum gu.stus
+<lb/>acrimoniam vetustate contraxerint. Et si in horum vicem
+<lb/>interdum posca aquosa utaris , nihil minus consequeris.
+<lb/>Jam vero inveteratis ulceribus neque passo diluendi pastilli
+<lb/>sunt, neque amplius aquosaposcaosse debet. At vina quae
+<lb/>astringendi vim possident plurimum j ovant, maxime quidem
+<lb/>nigra aut si ea desideremus alba. Ex medicamentis vero
+<lb/>quae hoc tempore accommoda sunt optimum est, quod Polyidae
+<lb/>ascribitur, Pusioni, Musae, Androni et alia his similia.
+<lb/>Herpetes vero qui tantum summam cutem exulcerant, nisi
+<lb/>admodum veteraverint, nullo horum inungere oportet,
+<lb/>urunt enim vehementer ac valide exsiccant, fed ejusmodi
+<pb n="11.88"/>
+<lb/>herpetibus sufficiunt, quae glauci; vim habent, maxime aqua
+<lb/>resoluta. Quod si haec nihil profecerint, acetum miscendum
+<lb/>est, utilius autem fuccus folaui et arno fossi additur. Hoc
+<lb/>porro in summa in omni ulcere cognoscendum est , sive id
+<lb/>sponte sive ex casu sive ex vulnere acciderit, nimirum quod
+<lb/>semper exsiccari desideratmedicamento, ut inquit Idippocrates,
+<lb/>non molesto, hoc est neque mordente neque irritante
+<lb/>vehementer; nisi malignum .ac putre siti Namsid genus usa
+<lb/>cera acerrima medicamenta efflagitant et quae igni vires
+<lb/>proximas habent, quale est mify, chalcitis, arsenicum, calx et ,
+<lb/>sandaracbe, ignis enim modo demunt ejusmodi medicamenta,
+<lb/>quae si malo cedunt, saepe ipso igne utendum esu
+<lb/>Quocirca et carbunculis, ut vocant, super ipsam crustam ubi .
+<lb/>pars maxime putrescit commode hoc medicamentorum genus
+<lb/>adhibebis, intactis tamen vicinis partibus, ne imprudens
+<lb/>ea sine ulla necessitate exulceres, sed pastillis aule commemoratis
+<lb/>utendum est, qualis est Andronius. . Quod si rubor
+<pb n="11.89"/>
+<lb/>aliquando locum occupet aut ingens ardor, medicamentum
+<lb/>passo diluendum est vel arnoglossi succo. Sin tumor magnus
+<lb/>sit, primum rino acerbo, deinde adsueto aceto dissolvitur.
+<lb/>Cataplasma autem ex erviua farina et musso aceto imponendum
+<lb/>est, atque in primis initio statim tantum sanguinis
+<lb/>quantum satis esse videbitur, nisi quid vetet, detrahendum
+<lb/>est.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Haec quidem generatim funt ejusmodi afifectuum
+<lb/>remedia., quae pro affectorum instrumentorum natura
+<lb/>mutantrtr. Quatuor autem ab bis sumuntur indicationes,
+<lb/>ex eorum temperamento, conformatione, situ et facultate.
+<lb/>Temperamento quidem, ex iis quaedam sunt natura sicciora,
+<lb/>quaedam humidiora, alia autem frigidiora,- alia vero
+<lb/>.calidiora , et ex copulatis simplicibus aut humidiora et calidiora
+<lb/>aut humidiora et frigidiora aut sicciora et calidiora
+<lb/>aut sicciora et frigidiora aut omnino temperate. Sitque tibi
+<lb/>incusando scopus partis natura. Haec enim docet, quatemis
+<lb/>sit refrigerandum aut exsiccandum. Carnosae enim partes
+<pb n="11.90"/>
+<lb/>inflammatione. obsessae leniter sunt exficcandae, et venosae
+<lb/>quidem licet sint carnosis Hectores, non tamen multum sunt
+<lb/>exficcandae. Ar terrosae vero natura partes fiunt magis quam
+<lb/>venosae, atque his magis nervosae, multo. vero amplius cartilaginosae
+<lb/>et osseae. Non enim ante quam ad propriam
+<lb/>naturam pars reductu sit, finem curationi impositum esse
+<lb/>existimandum est. Ad sicciorem autem temperaturam reducunt
+<lb/>medicamenta natura sicciora, ad frigidiorem vero frigidiora,
+<lb/>Ad eundem quoque modum in reliquis duabus qualitatibus;
+<lb/>ad mediocrem vero, quae in singulis sunt messioerra.
+<lb/>Sic equidem partium temperamenta affectuum variant
+<lb/>curationes. Conformationes vero ad hunc modum: partes
+<lb/>quaedam intra fe, quaedam extra, quaedam autem utraque,
+<lb/>quaedam neutra parte habent spatia, ut ex simplicibus arteriae,
+<lb/>venae et nervi , illae in artubus quidem intra fe, in
+<lb/>peritonaeo vero utraque parte, nervi autem in artubus
+<lb/>neutra, in peritonaeo vero altera parte. Fere autem viscera
+<lb/>omnia tam intra fe, quam extra ampla spatia obtinent. Ad
+<pb n="11.91"/>
+<lb/>haec caro ipsa pulmonis quidem -rara ,.contra vero renum
+<lb/>densissima est post hanc jecoris. Lienis vero substantia tanto
+<lb/>denfior est quam pulmonis , quanto quam jecoris est rarior.
+<lb/>Itaque in omnibus his quaecunque neutra ex parte cavitates
+<lb/>habent, quae fluxionem supervacuam excipiant fortiter sunt
+<lb/>siccandae, tametsi natura admodum siccae non sunt, cujus-,
+<lb/>modi funt nervi et qui in artubus potissimum. Quae vero
+<lb/>tam extra quam intra nonnihil inflammationis laxare poli
+<lb/>sunt, vehementer exsiccantibus ubn egent, praesertim sussin-.
+<lb/>gula earum caro sit, qualis est pulmo. Neque vero praetermittenda
+<lb/>est ea, quae a partis situ struitur indicatio , utpote
+<lb/>quae maxime doceat, per quae et quomodo et unde fieri debeat
+<lb/>vacuatur. Confluentium igitur adhuc humorum revulfio,
+<lb/>quam autifpafin Hippocrates vocat, obsidentium vero jam
+<lb/>partem derivatio est remedium. Utrumque enim vacuationis
+<lb/>genus per communes venas fieri jttbeti Ex utero verbi gratia
+<lb/>revellas, si cubiti venam secueris aut fnb mammis cucurbitulas
+<pb n="11.92"/>
+<lb/>admoveris aut manus calefeceris, fricueris ac ligaveris.
+<lb/>Derivabis autem si quae in poplite sunt aut mal- .
+<lb/>scolis venas diviseris, cucurbitulas femori admoveris, crura
+<lb/>calefeceris, fricueris et ligaveris. Atque si dextra uteri pars
+<lb/>laboret , fanguis ex dextra manu at crure ducendus est. Sin
+<lb/>laeva affecta fit, ex membris illi e directo respondentibus.
+<lb/>Quod enim Kaal ῖξιν Hippocrates vocat, hoc ipsum est sccundum
+<lb/>aequalitatem. Secare autem internas venas Hippocratis^
+<lb/>etiam est, quod hae et viciniores sunt et e directo
+<lb/>magis respondent affectis partibus. Etenim si phlegmone
+<lb/>affecto liene ducererfanguinem velis, manus sinistrae sin
+<lb/>jecore, . dextrae vena interna eodem modo secanda esu Si
+<lb/>vero aliqua ex superioribus partibus inflammatione tentata
+<lb/>sit, ut in angina. et ophthalmia et alia in .quacunque capitis
+<lb/>parte extiterit, externas et quae e directo respondent venas
+<lb/>secabis, membris vero ipsis affectis a coniugibus venis vacuabis,
+<lb/>sive revellere sive derivare velis, nisi inveteratus
+<lb/>affectus sit. Nam tunc ab affecta parte sanguinem . duces.
+<pb n="11.93"/>
+<lb/>Itaque in angina venae fusi lingua incidendae sunt, ubi cor.pus
+<lb/>universum vacuaverimus et inveteratus suerit affectus.
+<lb/>Ad hunc modum et lieni et jecori cucurbitulas admovemus.
+<lb/>Eadem ratione aliam quamcunque partem affectam scarificasiis,
+<lb/>quum humorum fluxio restiterit, alioquin enim hos
+<lb/>magis irritaveris et malum geminaveris. Sed quum jam univerfum
+<lb/>ab humore supervacuo corpus liberum est, neque
+<lb/>jam aliquid affluit, sed ex vetere defluxione impacta loco
+<lb/>affecto portio aliqua esu Quod vero in gibbis jecoris per
+<lb/>urinas , simis vero partibus per alui excrementa ducere
+<lb/>oporteat, visceris- ipsius situs indicat. Quodque thoracem
+<lb/>ac pulmonem tussi repurgare conveniat, ventremque ac stom.achum
+<lb/>vomitu, interanea alui deiectione, quemadmodum
+<lb/>lienem et renes per urinas, uterum per mensus, cerebrum.
+<lb/>vero ac ejus membranas per palatum, gurgulionem, nares
+<lb/>et aures, ex eorum sedibus palam est. Sed et quod partibus
+<lb/>in superficie constitutis tale sit adhibendum .medicamentum,
+<lb/>quale affectus efflagitat; quae vero in alto corpore demersae
+<pb n="11.94"/>
+<lb/>latent, quaeque ex longo intervallo medicamenti virtutem
+<lb/>experturae sunt, his non quale nunc est, sed quale cum eo
+<lb/>pervenerit, tum futurum est, ex situ partium dandum didicimus.
+<lb/>Quocirca medicamenti sive id suris adhiberi sive
+<lb/>devorari aut hauriri debeat vires non praesentes, sed quales
+<lb/>dum ad affectum locum pervenerint suturae sint, considerandae
+<lb/>sunt. Igitur quae in pulmonis inflammationibus
+<lb/>pectori .forinsecus imponuntur medicamenta, longe vehemeutiora
+<lb/>et acriora natura, quam si ipsi vssceri admoveremfur
+<lb/>esse debent. Ejus enim quod per multa corporis membra
+<lb/>intermedia transiens ad locum affectum perventurum est, vires
+<lb/>si quidem per initia essent imbecillae, omnino fatiscerent atque
+<lb/>evanescerent. Tantum igitur adventitii roboris adliciendum
+<lb/>est, quantum transeundo amittunt, ut. quod superest aequale
+<lb/>existat ei quod tactu juvat. Itaque externis pectoris iuflammationibus
+<lb/>abunde faciunt, quae solum laxare possunt, internae
+<lb/>vero, qualis est membrana costas succingens, acriora
+<lb/>desiderant Lienis vero et jecoris omniumque peritonaei
+<pb n="11.95"/>
+<lb/>partium inflammationes eadem ratione curantur. Saepe enim
+<lb/>cutis ab admotis medicamentis ulceratur , effi visceribus
+<lb/>longe durior sit, potentiusque resistat. Quod si ipsis visceribus
+<lb/>medicamenta, quibus assidue egent, admoveri possent, eo
+<lb/>mitiora essent imponenda, quo eorum natura facilius assiritur.
+<lb/>Quae vero et vorare et haurire medicamenta jubent
+<lb/>curandis viscerum affectibus idonea, longe acriora et vehementiora
+<lb/>esse debent, quam quae affectae partes efflagitant,
+<lb/>exceptis his quae ventri et stomacho conferunt; sola enim
+<lb/>haec talia adhibentur, qualia morbus poscit, reliqua vero
+<lb/>omnia acriora et valentiora viribus esse oportet, ac ea maxime
+<lb/>quae ad renum et pulmonum vitia adhibentur. . Considerare
+<lb/>itaque oportet, quot numero partes permeat medicomentum,
+<lb/>quod ad pulmones sertur. Primum quidem per
+<lb/>os transit, deinde fauces et stomachum, postea ventriculum
+<lb/>ipsum et quaedam ex gracilioribus intestinis,- deinde ad
+<lb/>mescnterii venas, post ad Iecoris partium limarum, ex
+<pb n="11.96"/>
+<lb/>quibus ad gibberarum venas pervenit, ex his vero ad cavum,
+<lb/>post quam ad cor, tandem ad -pulmonem. Neque negere
+<lb/>possumus, quin in singulis hisce partibus humoribus
+<lb/>quibusdam id misceatur et mutationem quandam alteratio.n
+<lb/>em que naturae visceris familiarem recipiat. Quapropter
+<lb/>quod de ejus facultate superest minus omnino ac hebetius
+<lb/>est quam ut laetam partem juvare possit. Quae igitur a situ
+<lb/>partis sumitur indicatio, his modis curationem variat, quatenus
+<lb/>autem quae a facultate ducitur,nunc exponemus. Quoniam
+<lb/>autem ex corporis partibus alias quidem influentes,
+<lb/>alias vero congenitae facultates moderantur, atque harum
+<lb/>ipsarum aliae sibi solis, aliae. aliis facultatum sunt origo, et
+<lb/>ex his quidem aliae proprium , aliae publicum habent officium
+<lb/>, necessario curationis forma in unaquaque harum diiferentiarum
+<lb/>mutanda est. Siquidem multa .ex commemoratis
+<lb/>remediis affectumquidem curant, caeterum nativas partium
+<lb/>facultates offendunt,. quarum noxa in universum corpus
+<lb/>transfertur, quod bifariam fit, nimirum quatenus riscus est
+<pb n="11.97"/>
+<lb/>facultatis origo totius corporis partibus communis , aut ejus
+<lb/>munus universo corpori utile est. Iecur enim, cor, cerebrum
+<lb/>et testes principia stant facultatum universo corpori communia.
+<lb/>Venter autem et uterus nativas facultates et nulli
+<lb/>alteri corporis parti communes habenti Caeterum ventris
+<lb/>munus tuti corpori utile est, uteri vero non. item. Plerumque
+<lb/>autem affectionis remedium partis facullatem laedit,
+<lb/>aliud quidem immodice laxando robur solvit proindeque et
+<lb/>partis facultatem , aliud vero immodice refrigerando insitum
+<lb/>calorem exstinguit,. qui fortassis, ut quibusdam tum medicis
+<lb/>tum philosophis celeberrimis vitum est, substantia est facula
+<lb/>tutum aut certe primarium ac necessarium ipsarum insitumentum.
+<lb/>Jam vero et alienae quaedam qualitates vires disisipare
+<lb/>possunt. Nihil igitur horum curando praetermittendum
+<lb/>est, ne forte imprudentes dicamus, morbus quidem curatus
+<lb/>.est, homo vero periit , quod accidere plurimis quotidie
+<lb/>videmus, qui irrationalem experientiam colunt mestodicamqne
+<pb n="11.98"/>
+<lb/>tectam omnia ipsius artis bona pervertentem , quae
+<lb/>rationes quasdam dogmaticas quidem , fed multis erroribus
+<lb/>plenas sectatur. Sub indicatione autem quae a viribus par.tinta
+<lb/>petitur, tensus hebes acutusque continetur. Nam quae
+<lb/>insigniter sentiunt acria medicamenta non ferunt, quemadmodum
+<lb/>nec humores. Si enim acer quidam humor os veutris
+<lb/>occupet, in fyncopen aegri saepe labuntur, quod fi permodice
+<lb/>alliciantur, anxietate et nautea premuntur, aliquando
+<lb/>infestum quidem humorem vomentes, aliquando vero frustra
+<lb/>enitentes, quod in his potissimum affectibus accidit, quibus
+<lb/>os ventris vitioso humore imbuitur. Itidemque quum
+<lb/>in oculos ejusmodi humor affluit, maximum dolorem invehit,
+<lb/>ulcerofasque pustulas curatuque difficiles excitat. Eadem
+<lb/>ratione neque oculi acrium medicamentorum contactum
+<lb/>ob sentiendi praestantiam sustinent, quemadmodum necps
+<lb/>ventris. Neque vero quod degravet, si foris imponas, ejusmodi
+<lb/>partes patiuntur, minusque ventre oculus,. utpote qui
+<lb/>nonnunquam ab iis quae illinuntur medicamentis gravatur.
+<pb n="11.99"/>
+<lb/>Partes vero quae hebetioris funt Pensus tum gravia cataplasinata
+<lb/>tum mordentia medicamenta ferunt..- Sive igitur
+<lb/>quis cum quatuor commemoratis indicationibus eam, quae a
+<lb/>sentiendi facilitate sumitur, quintam numerare velit, sive in.
+<lb/>ea comprehendere quae a facultate sumitur, nihil ad rectam
+<lb/>curationem refert. Hae igitur indicationes femper memoria
+<lb/>tenendae funt in omni parte, quocunque affectu laboret. Nam
+<lb/>ejus temperamentum, conformatio, situs et facultas particulares
+<lb/>nostras actiones immutabunt, ferrato communi scopo,
+<lb/>quem perpetuo ex affectu sumendum esse docuimus. Qui
+<lb/>igitur ex nuda folaque intemperie nascuntur morbi, contraria
+<lb/>qualitate curantur, calida quidem intemperies frigidis
+<lb/>seu primario loco seu ex accidente ea refrigerent , frigida
+<lb/>vero calidis. Ad eundem modum sicca humidis, humida siccis.
+<lb/>De eo autem quod primum aut ex accidente calefacit,
+<lb/>fusissime, ut nosti, in opere de simplicium medicamentorum
+<lb/>facultate disseruimus, ostendentes nonnunquam id ex acridente
+<pb n="11.100"/>
+<lb/>calefacere, quod primario loco refrigerat, ut in frigidae
+<lb/>aspersione, qua intro calor repellitur, et quod calefacit
+<lb/>refrigerare, quum calor calidae aspersione rarefacto corpore
+<lb/>discutitur. Itaque corpus cum a solis agentibus qualitalibus
+<lb/>alteratus, sola calefaciendi et refrigerandi, humeclaudi
+<lb/>ac exsiccandi facultate ad naturalem habitum citra
+<lb/>ullam sensilem vacuationem reducitur. Quum vero sule materiae
+<lb/>ejusque temperatae influxu laborat, sula vacua tione
+<lb/>est opus. Sin intemperata materia sit, vacuationem simul et
+<lb/>alterationem per contrarias qualitates desiderat, vacuassenem
+<lb/>quidem ut affectus , qui rheumatici dicuntur, de quibus
+<lb/>librum unum, ut nosti, conscripsimus, ru quo ab initio
+<lb/>statim monstratum est, ejusmodi affectiones fieri facultate
+<lb/>quae corpus universum alit, imbecillitate laborante, quum
+<lb/>collecta multitudo in omnium partium infirmissimas diffluit.
+<lb/>Quinetiam fluente quidem sanguine quadantenus vitiato in
+<lb/>ejusmodi partes, in rheumaticis affectionibus promiscuus
+<pb n="11.101"/>
+<lb/>oritur affectus, quod perraro fortassis evenit. Semper enim
+<lb/>mihi sanguis sine pituita aut bile vel flava vel atra tenuis
+<lb/>fluere visus est. Quod si alia quapiam causa pars intumescat,
+<lb/>videndum est, an inflammatio, an scirrhus, an oedema ejusm
+<lb/>odi affectus siti. Inflammationem dicimus omnem calidam
+<lb/>ac quasi flammeam affectionem, cujus differentias paulo ante
+<lb/>retulimus. Itaque jam tempus est, ut de oedematis pauca
+<lb/>tibi tradamus, quo in memoriam revoces, quae fusius me
+<lb/>explicante didicisti.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Oedema igitur nominemus tumorem mollem
+<lb/>doloris expertem, quem ex pituitofo humore constare
+<lb/>monstravimus, aut vaporoso spiritu, qualis in cadaveribus
+<lb/>evenit et in pedibus saepe ac cruribus eorum qui hyder.o,
+<lb/>tabe et alio vitiato corporis habitu laborant. Verum in illis
+<lb/>periculosis affectibus ejusmodi oedema symptoma est, nullam
+<lb/>propriam praecipuamque curationem requirens. Sola enim
+<lb/>frictio alias ex oxyrrhodluo , alias ex oleo cum sale aut
+<pb n="11.102"/>
+<lb/>etiam oxyrrhodino salem habente ipsum sedat, atque id genus
+<lb/>alia musta. -At si ex pituitofo humore in partem affluente
+<lb/>oedema factum sit, spongia aqua , quae aceti aliquid
+<lb/>acceperit, madefacta aliquando affectum mitigat, qui si non
+<lb/>quiescat, paulo plus aceti miscebis ita attemperant, ut. bibi
+<lb/>possit. Hoc autem aquofius initio adhibendum est. potissimum
+<lb/>mollibus corporibus, valentius vero robustis ac cntem
+<lb/>duram habentibus et quae primo spongiae imposita
+<lb/>minime juventur. Esto autem spongia prorsus nova, cujus
+<lb/>si copia non adsit, curiofe abluatur aphronitro, nitro et lixivia
+<lb/>dicta stillatitia. Non cedente autem his remediis cedemale,
+<lb/>-aluminis momentum adjiciendum est ac spongia
+<lb/>omnino nova imponenda. Si vero aliquos ex artubus oedema
+<lb/>occupet, spongiam deligabimus ab inferiore parte incipientes
+<lb/>ac superiori finientes, iniectionem, compressionem et
+<lb/>arctationem et omnem distributionem ut in fracturis famenfes.
+<lb/>Curationis autem fcopns in hisce affectibus mistus est,
+<pb n="11.103"/>
+<lb/>alter quidem, ut horum substantiae aliquid discutiatur, alter
+<lb/>ut cogatur stringaturque. Si igitur jam dictis remediis
+<lb/>morbus non sedetur,. tunc vehementiora mistam temperaturam
+<lb/>habentia ex genere supra relatarum .facultatum aditibenda
+<lb/>funt. Ego vero in inveterato oedematode tumore
+<lb/>illitae prius oleo parti spongiam dein ex lixivia admovi, eaque
+<lb/>arctius deligata malum vidi percuratum , non amplius
+<lb/>scilicet hac curandi ratione mistam facultatem quasi scopum
+<lb/>habente , sed ad discutiendam incidendamque materiam declinante
+<lb/>, quod in omnibus fere diuturnis affectibus probari
+<lb/>non ignoramus. Postquam vero abunde ad te quidem de oedematis
+<lb/>scripsimus, de scirrhosis tumoribus deinceps disserendum
+<lb/>esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Exquisitus igitur fcirrbus tumor est praeter
+<lb/>naturam Pensu carens ac durus. Non exquisitus autem
+<lb/>non sine sensu quidem omnino est, sed aegre tamen admodum
+<lb/>fentiti Qui igitur sine sensu est, curationem nor, ad urit.
+<lb/>tit. Qui vero hebetis tensus est, ut insanabilis non est. sic
+<pb n="11.104"/>
+<lb/>neo curatu facilis.. Fit autem icirrhus ex glutinofo et crasso
+<lb/>luuuore fcirrhofis partibus ita infartus, ut facile fulvi non
+<lb/>possit; qui aliquando statim ab initio paulatim concrescit ao
+<lb/>augetur. Saepe vero a medicis vehementer erysipelata ac
+<lb/>inflammationes adstringentibus et , refrigerantibus conflatur.
+<lb/>Si quis igiturmedicamenta vehementer discutientis partibus
+<lb/>fcirrhosis admoverit et icirrhum manifeste minuerit , hio
+<lb/>brevi fe personaturum eum fasso sperabit, ignorans quod.
+<lb/>haec curandi ratio affectum relinquit incurabilem. Resoluta
+<lb/>enim ex ipfo subtiliori humiditate, quod reliquum est exsto- ..</p>
+<p rend="hanging">. catum lapidosum efficitur. Non sunt igitur fcirrhusae partes
+<lb/>medicamento vehementer exsiccante curandae, fied tepidum
+<lb/>calorem habente, humorem vero neque multum neque
+<lb/>omnino paucum. —Quod .enim supra modum humidum est,
+<lb/>nihil prorsus discutit, quod vero minimum, plus quam par
+<lb/>est exsiccat. oportet igitur corpus fcirrlio obsessum a mediramento.
+<lb/>pro future similiter atque haec quae in. sole liquans
+<lb/>tur affici. Vocantur autem hujusmodi medicamenta emorlientia,
+<pb n="11.105"/>
+<lb/>de quibus copiosius in quinto operis de simplicibus
+<lb/>medicamentis proditum est. Exempla quoque eorum tradita
+<lb/>funt, simplicia quidem medullae omnes ac adipes.. Ex med
+<lb/>ullis vero. primas tenet cervina, .deinde vitulina. Ex adipibus
+<lb/>volucrum quidem animalium anserinus, terrestrium
+<lb/>vero leoninus. Gallinaceum autum anserinus, pardalium
+<lb/>vero ac ursinum leoninus antecedit , post quos est taurinus.
+<lb/>His autem crassior est ac siccior caprinus, atque hoc magis
+<lb/>hircinus. Quod autem ejusmodi affectus vehementer siccantibus
+<lb/>non egeat, dictum est ante. De differentia autem quae
+<lb/>ex ceorum tenuitate ac crassitudine sumitur, do culmus quidem,
+<lb/>sed non perspicue. Idcirco in memoriam tibi revocanda
+<lb/>sunt quae inter nos commentabantur dum Cercyllii
+<lb/>puerum curabam, cui ex erysipelate vehementer adstricte et
+<lb/>refrigerato tumor seirrhosus in tuto. femore relictus erat,
+<lb/>cui curandae tenuium partium medicamenta adhibenda esse
+<lb/>existimabamus, proinde pueri femur oleo fovebam in profundo
+<pb n="11.106"/>
+<lb/>fabro fedentis largum oleum Sabinum continentes,.
+<lb/>quod non ignorarem,. majore id .partium tenuitate quam
+<lb/>caetera praepollere. ^Balneo vero nisi pluribus interiectis.
+<lb/>diebus curandi tutius corporis causa prohibebam. Post .vero
+<lb/>dictum Potum medicamenta ex commemoratis medullis et
+<lb/>adipibus affecto loco imponebam, admistis nonnunquam
+<lb/>bdellio Scythico, mastiche Aegyptia et .ammoniaco thymiamate
+<lb/>pingui, .non vetere spec non et .galbano , quibus .praemunitum
+<lb/>totum femur .pinguissimo ammoniaco, aceto acer-.
+<lb/>rica refoluto cireumlevi, deinde .per aliquot dies rursum
+<lb/>panacis liquorem .pinguissimum .aceto acerrimo dissolutum
+<lb/>adieci, cumque recentem, alioqui pinguis non perduraret;
+<lb/>quemadmodum neque bdellium neque .ammoniacum neque
+<lb/>galbanum. Puerum vero alteri cruri innixum saltare jussi,
+<lb/>quo plus in id alimenti ferretur. Postea vero redacto jam.
+<lb/>ad a equali latum scicrhoso tumore veritus ne reliquiae Tuperessent
+<lb/>contraria omnia .feci, famur aliquo ex r.efiuosis
+<pb n="11.107"/>
+<lb/>medicamentis illinens. Perspicue enim videbatur scirrhoia
+<lb/>moles insigniter quidem concidisse medicamentorum , quae
+<lb/>ex aceto constant litu, laxantium veru mollescere, ied non
+<lb/>decrescere. Verum alternatus eorum utus moderatus puerum
+<lb/>curarit. Nam si altero tantum genere medicamentorum
+<lb/>fcirrhum curare tentasses , hunc nequaquam sanasses. Tendones
+<lb/>vero, sic enim nervofas masculorum propagines voco,
+<lb/>ex commemorato medicamentorum usu evidentissime juvari.
+<lb/>videmus, si quae pyrite lapide initur, curandi ratione probe
+<lb/>utamur, hunc autem oportet igni candentem acerrimo aceto
+<lb/>inspergere, deinde affectam partum super hunc dimovere, ut
+<lb/>a vapore turium exhalante foirrhus solvatur. Multae enim
+<lb/>partes jam planae repandae curyataeque hac curandi via
+<lb/>quae sic vertando fit integre sanatae sunt, ita ut incautamentis
+<lb/>similis res esse crederetur. Scirrhosam autem partrsn
+<lb/>remediis aufe dictis emollitam praemunire oportet. Qninetiam
+<lb/>in hac .quae pyrite sit curatione largo oleo Sabino perquam
+<pb n="11.108"/>
+<lb/>calido faepe fovendus affectus est, aut aliquo alio ex
+<lb/>subtilium genere. Nec vero minus proderit anethi potissimum
+<lb/>viridis ac recentis comam oleo incoquere. Quod si pyrites
+<lb/>in promptu non sit, molari est utendum, sic eum lapidem
+<lb/>ex quo molas parant, quibus frumentum molimus;
+<lb/>vocant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Lienem autem scirrhosum non fotum folis
+<lb/>adhibitis vehementibus medicamentis curare oportet, fed
+<lb/>et validissimis potionibus. Nam et has citra molestiam perfert.
+<lb/>Ex his autem optima sunt radicis capparis cortex et
+<lb/>scolopendrii et myricae tum radices tum ramuli. Haec autem
+<lb/>omina in aceto et musso aceto incoquenda sunt. Saepe
+<lb/>vero lien tangenti reniti videtur, tametsi scirrhosus non sit,
+<lb/>sed potius flatulentus. In qdo affectu ubi absinthio prius
+<lb/>locum perfuderis, imponendum est emplastrum mistae sacultatis,
+<lb/>quale est quod ex sulphure et alumine constat. Plorima
+<lb/>profecto id genus remedia in medicamentorum libris
+<pb n="11.109"/>
+<lb/>scripta sunt. . Non simpliciter autem mistorum medicamentorum
+<lb/>viribus animum intendere oportet, sed et quantum
+<lb/>misceatur. Quum enim statu lien aut potius oedemate intumuit,
+<lb/>etiamsi aluminis multum inieceris, nihil offenderis,
+<lb/>At si sciriho occupetur, discutiendi facultas praepollere de..
+<lb/>bet, adstringendi vero exigua portio admisceri Quum vero
+<lb/>unus ex simplicibus sponteque nascentibus medicamentis salis
+<lb/>flos hac vi fit praeditus, scirrhosum lienem sanat suris .in
+<lb/>vesica impositus. Iecoris vero scirrhum recentem saepe curavimus,
+<lb/>inveteratum vero neque ipse sanare potui neque.
+<lb/>alium qui posset novi. omnes enim ita affectos omnino
+<lb/>sequitur hyderus. Plurimi autem longiore temporis spatio
+<lb/>intereunt., Nonnullos vero brevi perire vidi , quibus alvus
+<lb/>multa dejiciebut. Palam igitur est his stipata esse vasorum
+<lb/>ora, per quae cibus ex simis jecoris partibus in convexas
+<lb/>transmittitur. Quod si qui ex his curati. sunt, non alia natione
+<lb/>quam quae in musculofarum partium srirrhis monstrata
+<lb/>est , sanitatem sunt adepti. Non enim hoc risus vetrementia
+<pb n="11.110"/>
+<lb/>medicamenta, uti lien sustinet. Remollientium igitur
+<lb/>missura quae inflammationis ratione visceri admoventur
+<lb/>medicamenta augenda sunt. Erant autem illa ex absinthii
+<lb/>coma et expresso ex unguentaria glande oleo , myrobalanu
+<lb/>plasma vocatur, et utraque nardo, Indica et Celtica, praeturea
+<lb/>croco et oenanthe, mastiche Chia et unguentis ex nardi
+<lb/>spica temperatis, item mastichino, lentiscino, melino et oe- .
+<lb/>nanthino. His igitur si ammoniacum thymiama et bdellium
+<lb/>et commemoratae medullae ac adipes, quaeque incidere idonea
+<lb/>sunt, adjiciantur, jecoris seirrhum sanat commoda viotus
+<lb/>ratione observata una cum medicamentorum potione,
+<lb/>quae obstructionem delent et humorem qui in viscere retinetur
+<lb/>absumunt. Haec autem omnia vim habent comminuendi
+<lb/>etiam renum calculi, quorum materiam multi medici
+<lb/>tractarunt. His autem quodpiam admiscendum est ex illis,
+<lb/>quae urinam movere possunt, quorum materia plurima tum
+<lb/>a multis aliis , tum a nobis in opere de medicamentis soripta
+<lb/>esu Quocirca quae nunc dicta sunt tibi sufficiant.
+</p>
+<pb n="11.111"/>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Ad aliud enim tumoris genus jam trans-i
+<lb/>ire tempus est, cui gignendo flatulentus spiritus materiam
+<lb/>suggerit. Dicitur autem non solum flatulentus, sed et status
+<lb/>ejusmodi spiritus crassius ac vaporatus neque aethereus substantia
+<lb/>neque tenuis, ejus vero naturam intelliges, fi qualis
+<lb/>in austrina qualisque in aquilonia constitutione sit ambiens
+<lb/>aer in memoriam revocaris. Siquidem austrino flatulentus,
+<lb/>aquilonio vero naturalis lu nobis spiritus est siculis, ejusmodi
+<lb/>autem spiritus difflationem corporis etiam densitas
+<lb/>impedit. Quocirca ejus affectus curatio unum ac communem
+<lb/>utrique scopum habebit, nempe densi corporis rarefactioni
+<lb/>et crassi spiritus attenuationi. Nam si medicamentis tenuitate
+<lb/>partium pollentibus utrumque sufficienter calefeceris,
+<lb/>densum quidem rarefactas, crassem vero attenuabis. Asseclarum
+<lb/>autem partium natura ad idoneam remediorum materiam
+<lb/>indicandam conferet, ejusque adhibendae majorem
+<lb/>minoremve modum. Nam id genus spiritus crassius ac vaporofus
+<pb n="11.112"/>
+<lb/>nonnunquam quidem sub membranis ossa tegentibus
+<lb/>collectus continetur , nonnunquam sub peritouaeo, aliquam
+<lb/>do vero in intestinis et ventre. Interdum et sub membranis
+<lb/>musculos circumdantibus, quemadmodum et sub membranosis
+<lb/>tendonibus. Nonnunquam autem- et in spatiis quae cogitutione
+<lb/>percipiuntur tum musculorum tum aliarum corporis
+<lb/>partium, quarum naturam ex anatomicis administrationibus
+<lb/>didicisti. Ad hunc quidem modum et musculus ipsis spiritu
+<lb/>impletur. In ventre quoque aut intestinis flatulentus spiritus
+<lb/>concluditur, qur si vehementer frigidus sit, maximum excitat
+<lb/>doloreum Haec autem omnia curationem quidem, ut diximus,
+<lb/>habent communem ex tenuium partium materia, quaeque
+<lb/>si doloris particeps sit assectus eam habeat naturam, ut
+<lb/>dolorem mitigare possit. Pro differentia vero affectamur
+<lb/>partium tum curationis materia mutatur tum facultas intenditur
+<lb/>ac remittitur. Quum igitur ejusmodi flatus dolorem
+<lb/>ininseriore ventre peperit, oleo tenui una cum medicamentis
+<pb n="11.113"/>
+<lb/>quae in eo cocta suerint infusu, statim eum sedabis. In- .
+<lb/>cocta autem in oleo medicamenta cum partium tenuitate calefaciunt,-
+<lb/>quale est cuminum quod apud nos nascitur et eo
+<lb/>amplius quod Aethiopicum dicitur et apii petroseliuique semen,
+<lb/>foeniculi, finonis, anisi, libystici, seselis, dauci et ,
+<lb/>spondyli. Quod si dolentium partium affectum frigidum esse
+<lb/>conieceris, in eo rutam, foeniculum et lauri baccas.incoques
+<lb/>admifcebisque bitumen atque ipsum oleum laurinum, quae-que
+<lb/>simili calefaciendi facultate fuut praedita. At si infl.ammationem
+<lb/>cum doloribus junctam esse suspiceris , omnia
+<lb/>aeria et vehementer calida demes. Ad ea vero, quaecum
+<lb/>his facultatibus mediocribus laxare possunt^ transibis. Itaque
+<lb/>in oleo incoquendum anethum est, non ruta, miscendusque
+<lb/>adeps anserinus aut gallinaceus, Sed haec quidem. m magnis
+<lb/>doloribus. .Medioeres vero foris adhibito fotu juvantur
+<lb/>maximeque ex milio, ut cujus levitas nullam omnino parti-bus
+<lb/>dolentibus molestiam adferat. Aut si ejus copia non sit
+<lb/>excalefacto fala aut lino crudo aut alio quovis modo. Atque
+<pb n="11.114"/>
+<lb/>magna cucurbita cum larga flamma fine cutis scarificatioue
+<lb/>praesens dolori saepe remedium attulit. Hac autem
+<lb/>cingendus est umbilicus. Quod fi .post haec dolor perseveret,
+<lb/>medicamentis ex opio, quale est Phitonis Tarscnsis omnibus
+<lb/>medicis cognitum, uti non formidabis, etiamsi necessario noxam
+<lb/>aliquam afflictis partibus ex his medicamentis accessuram
+<lb/>non ignores. Sed certe ei quod magis urget obsistendo,
+<lb/>hominem doloris vehementia animo delinquentem cum parva
+<lb/>noxa servare satius erit. Nam sequentibus deinceps diebus
+<lb/>noxam medicamento contractam emendare poteris.
+<lb/>Ejusmodi autem medicamenta, quod dolores sedent, anodyna
+<lb/>vocantur., At ipsorum ferias conciliant, non affectus integre
+<lb/>curant, fed sentiendi facultatem consopiant. Utendum
+<lb/>autem est Philonio et omnibus ex opio confectis medicamentis
+<lb/>non recentibus, fed annotinis aut omnino semestribus.
+<lb/>Maxime igitur ac celerrime . gracilium intestinorum dolores
+<lb/>epotis medicamentis sedantur, quemadmodum iisdem in sedem
+<pb n="11.115"/>
+<lb/>immissis , crassiorum affectus protinus Iuvantur. Caelerum
+<lb/>non exiguam facultatis portionem epota medicamenta
+<lb/>infernis affectis partibus et in sedem indisa supernis dispensanti
+<lb/>Quin etiam in. carnosas partes spiritus flatulentus cola
+<lb/>ligitur aliquando omnino sine dolore et diutius durat, praecipue
+<lb/>juxta articulos, tibi musculi ipsi tum nervofiores tum
+<lb/>compactiores sunt; in. medio vero carnaliores ab rariores.
+<lb/>Tales autem affectus, ut nosti, medicamentis ex pice, resina,
+<lb/>terebinthina et adipe leonino et sero taurino curavi. Prodest
+<lb/>autem et ipsis medicamentum,. quod ex strigmento
+<lb/>et calce paratur et quod ex sycomoro conflat, atque ut
+<lb/>semel dicam insigniter tenuia, quibus ^emollientia sint permista.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Quoniam et de his abunde dicimus; tempus
+<lb/>est, ut de abscessibus difputemus. Sic autem has vocant
+<lb/>affectiones, in quibus ab invicem partium corpora.; quae
+<pb n="11.116"/>
+<lb/>prius mutuo sese tangebant abscedunt. Spatium igitur in
+<lb/>medio vacuum fieri necesse est, quod materiam aliquam aut
+<lb/>statuosam aut humidam aut ex utraque mistam continebit.
+<lb/>Mutantur autem in abscessum et inflammationes quaedam et
+<lb/>erysipelatosi phlegmonosiqne tumores non pauci. Praeter
+<lb/>haec autem et abscessus ex quorundam humorum aut spirituum
+<lb/>vaporosorum abundantia fiunt, sive in affectarunt par-.
+<lb/>tium medio gignantur sive aliunde, eorum modo quae aposcemmata
+<lb/>dicuntur. Sic enim eas affectiones vocant, quum
+<lb/>humores loco quem prius infestabant relicto in alterum
+<lb/>confluunt. Quocunque autem modo fiat abscessus, id spatium
+<lb/>quod abscedentes partes interiacet, humoribus illum
+<lb/>afficientibus impletur. Qui si diutius aliquando maneant, in
+<lb/>verias formas mutantur. Etenim lapidibus, arenis, testis,
+<lb/>lignis, carbonibus, luto, strigmenta, amurcae, feci, multisque
+<lb/>id genus aliis similia corpora saepe in abscessibus contenta
+<lb/>deprehenduntur. Qui igitur sub cute summa consifiunt,
+<pb n="11.117"/>
+<lb/>facillime dignoscuntur nec aegre curantur. Nam tactus
+<lb/>proprietate prompte innotescunt. Curantur vero med:ca
+<lb/>m en lis foris impositis, non .quemadmodum qui in imo
+<lb/>corpore maximeque in visceribus consistunt ea quae potantur
+<lb/>desiderantes. Quod igitur ad dignotiones attinet, premeutibus
+<lb/>digitis abscessus supputantes, more obscssarum inflammatione
+<lb/>partium non renituntur. ltaque manifestum fui
+<lb/>indicium praebent. Habitus autem proprietas alia quidem
+<lb/>in tenuibus, alia vero in massis humoribus est, quemadmodum
+<lb/>in glutino su et mucoso humore. Saepe vero quae abscessit
+<lb/>pars spiritu distenta nobis suspicitur, qua divisa sanguinis
+<lb/>grumus invenitur. Itaque quisquis bis aut ter ejusmodi
+<lb/>affectum viderit, si diligens sit ac memor an grumus in hisce
+<lb/>tumoribus contineatur , cognoscere poterit revocando in
+<lb/>memoriam tensionis et cessionis proprietatem. At forte praestat
+<lb/>non proprietatem , sed quantitatem tensionis et cessionis
+<lb/>dicere. Curantur autem quae per summa sunt inflammationes,
+<pb n="11.118"/>
+<lb/>dum in abscessum vertuntur, initio quidem abscessionis
+<lb/>dolorem sedando ac laxando, ea vero jam procedente ad
+<lb/>maturandi et supputandi, sic enim proprie appellant, rationem
+<lb/>transire oportet, de qua aliisque id genus in quinto de
+<lb/>simplicium medicamentorum facultatibus libro disseruimus.
+<lb/>Aqua igitur liberalius fovenda ac calente oleo -perfundenda
+<lb/>est pars inflammata imponendumve cataplasma ex triticea
+<lb/>farina in aqua et oleo temperate cocta , . celerius enim ad
+<lb/>suppurationem ducit, quam quod ex pane cataplasma conficitur,
+<lb/>Illud enim maxime -difcutit, nimirum quod falam et
+<lb/>fermentum recipiat, exacteque sit coctum. Nihil vero horum
+<lb/>obtinet, quod ex triticea farina fit. . Et quum initio fupputationis
+<lb/>inflammationis curationem moliris, si speres fup-,
+<lb/>putationem prohibere posse, panem cum oleo et aqua permistum
+<lb/>plurimum incoques, aquae autem quam olei major
+<lb/>fit portio. Farina autem. hordeacea eodem modo parata fupputationem
+<lb/>magis impediti in hac autem curatione coneoeta
+<pb n="11.119"/>
+<lb/>sit in aqua, qua locus fovetur althaeae radix. Si vero
+<lb/>cutis partis. inflammatae vehementer distendatur, hanc frequentibus
+<lb/>incisuris per summa fcarificare oportebit, postea
+<lb/>hordeaceam farinam modo declarato coctam imponere. Tentavi
+<lb/>autum saepe in superficie leves omnino incisuras facere,
+<lb/>alias vero his contrarias astas magnasque et alias tertias
+<lb/>inter has longitudine etraltitudine medias. Quae igitur in
+<lb/>summa cute fiebant, exiguam opem ferebant. Alme vero ac
+<lb/>longae plurimum sanguinis fundebant, adeo ut animi fere
+<lb/>deliquium adferrent., atque hae rursus propriam curationem
+<lb/>uti vulnera desiderabant. Intermedias autem a dictis incommodis
+<lb/>fiemper liberas esse deprehendi, quocirca his potius
+<lb/>quam aliis utendum esse duxi. In quibus vero tumor aegre
+<lb/>ad suppurationem ducitur, aegreque discutitur intortos hu..mores
+<lb/>crassiores esse ac tenaciores credendum est. Ejusmodi
+<lb/>autem assectus foli altis testificationibus recte curari -possunt,
+<lb/>quibus et cataplasma quod ex decoctis caricis constat corveniti
+<pb n="11.120"/>
+<lb/>Non autem ipsae caricae, test aqua in qua coquendo
+<lb/>contabuerint sumenda est. Dulces autem ac pingues sint
+<lb/>caricae , ut earum humor melli sit similis, quod fi plurimum
+<lb/>has concoxeris, tenuis mellis crassitudinem decoctum repraetentabit.
+<lb/>Huic igitur aquae miscenda est interdum hordeacea
+<lb/>farina, interdum vero panis fyneomistus, sic enim dicitur
+<lb/>medius inter exquisite purum et quem fursuraoeum appellant,
+<lb/>fynoomistum nonnulli hunc panem autopyrum dicunt,
+<lb/>quoniam in puro quidem farinam non qualis natura est, fed
+<lb/>repurgatam furfure in panificium assumunt. Contra in furfuraoeo
+<lb/>purissima farina eximitur. Cibarius autem panis
+<lb/>qualem triticum natura farinam habet, talem fervat. oportet
+<lb/>autem triticum ex .quo farina sumitur ex iis esse, quae
+<lb/>generosa dicuntur. Quoddam enim plurimum in se furfuris
+<lb/>obtinet, idque ignobile dicitur; aliud vero similaginis, quod
+<lb/>ut dixi generosum vocant. Triticum igitur, ex quo utilis ad
+<pb n="11.121"/>
+<lb/>cataplasma farina sumenda est, surfuraceum non sit, sed ut
+<lb/>diximus similaginofum. Quod fi ex ignobili tritico farina defumatur,
+<lb/>nonnihil furfuris detrahendum erit, atque ita panis
+<lb/>medius conficietur ,- cujus pars -media ac tenera ad cata- .
+<lb/>plasina miscetur, quando ut dixi facultate medium inter hordeaeeam
+<lb/>et triticeam farinam cataplasma temperare in animo
+<lb/>fuerit. Nam triticea farina pus maxime movet ac concoctionem
+<lb/>juvat, hordeacea maxime discutit. . Commemoratus .
+<lb/>vero panis mediam sortitur .facultatem, quemadmodum ejus
+<lb/>larina inter antedictas farinas triticeas est media. Ad hoc
+<lb/>igitur respiciens caricatum decocto misceas, quod commodius
+<lb/>tibi videbitur. sive ex farinis sive ex panibus. Quod si tumor
+<lb/>discutiatur quidem, sed minus quam par sit, cum caricis
+<lb/>incoquendum hyssopum est aut origanum. Quando autem
+<lb/>valentius tumorem exsiccare voles decocto sal adliciendus est,
+<lb/>deinde hordeacea farina ei inspergenda , ex -qua ubi quod
+<lb/>fursuraoeum est totum excusseris, diutius coctum cataplasma
+<pb n="11.122"/>
+<lb/>impones. At in tumoribus qui facilealon discutiuntur timendunr
+<lb/>est, ne reliquiae ru fcirrhum mutentur. Quocirca
+<lb/>diligenter animadvertendum est, quoties solvitur cataplasma,
+<lb/>in quod omnis qui curatur tumor transeat, curandi enim
+<lb/>ratio quae vehementer exsiccantibus obitur, seirrhosum affectum
+<lb/>relinquit, id autem in quaque solutione deprehendes, si
+<lb/>assectam^partenr tractando praesentem ejus statum erim
+<lb/>praecedente comparaveris. Si igitur aliquando hanc conjecturam
+<lb/>habueris; lu aqua cucumeris agrestis radicem aut
+<lb/>bryoniae -aut asteri incoques , saepe quidem has stolas, nonnunquam
+<lb/>vero et adjectis pinguibus caricis, deinde farina
+<lb/>cum aqua miscenda est, cui et adipis maxime anserini aut
+<lb/>gallinacei nonnihil adjicies, quorum si copia non sit, suillus
+<lb/>est addendus. Dictarum autum herbarum et cum his althaeae
+<lb/>radices post mediocrem coctionem. cum pane et adipe centritae
+<lb/>ejusmodi tumores discutiunt .His .vero. valentior est dracunculi
+<lb/>radix, cum qua si quando uti. .voles, .quum
+<pb n="11.123"/>
+<lb/>majore partium tenuitate et .discutiendi facultate, quam quas
+<lb/>modo commemoravimus polleat, admiscendus omnino adeps
+<lb/>est, nisi enim hutnectaveris ac emollieris, sini tantum vestementioribus
+<lb/>medicamentis scirrhosos tumores discutere statueris,
+<lb/>primis quidem diebus hos insigniter minues, simul id
+<lb/>quod relinquitur indurans , quod ubi in duritiem coactum
+<lb/>.fuerit; aegre discutietur. Itaque commodius, ut diximus, valeuter
+<lb/>discutientibus emollientia miscebimus, quum in fcirritum
+<lb/>tumores mutari metuimus, cujus curandi ratio supra
+<lb/>audita est. Rurtus igitur ad supputantes tumores veniamus,
+<lb/>quos ubi discutere posse parum speraveris, cataplasmatis ex
+<lb/>triticea farina utere. Nam ad celeritatem suppurationis plomimum
+<lb/>confert. Deinde plaga facta, si liberae omnino sint
+<lb/>ab inflammatione partes plagae vicinae, medicamentis em-.</p>
+<p>-plastis obeunda . curatio esu Ea autem citra murium exsiccat:tis
+<lb/>sint facultatis ex susque temperentur quae minime adstringant,
+<lb/>sed aut solum blande discutiant aut leviter adstringant.
+<pb n="11.124"/>
+<lb/>lu ejusmodi autem affectibus medicamento quod
+<lb/>ex fermento et crematis conchis temperatur ego persaepe
+<lb/>usus sum. Quod si pars aliqua circa plagam inflammatione
+<lb/>sit obfessa, medicamentum quod ex chalcite constat oleo liqualum,
+<lb/>ubi lentim refrixerit, et in pila contemperatum manibusque
+<lb/>subactum et vino, ut nosti, perfusum commode imponitur.
+<lb/>Hoc autem in plurimis affectibus utor, ut in libris
+<lb/>de Compositione medicamentorum proditum esu opus autem
+<lb/>de affectibus partium corporis fi deo placet confcribemus,
+<lb/>in quo medicamentorum omnium quibus uti scismus .
+<lb/>facultates diligenter exponere atque idoneum usum explicare
+<lb/>conabimur. Sed tu jam horum medicamentorum de .
+<lb/>quibus in hoc opeie memini miscendorum ac temperandorum
+<lb/>rationem ex me didicisti. Quum vero cutis id supparalienibus
+<lb/>amplius extabuerit, ita ut attritis vestium sragmenfis
+<lb/>similis reddatur, haud facile fubjeelis corporibus eoalefcit,
+<lb/>itaque emissario largiore facto ulcus necessario eurandum
+<lb/>est.
+</p>
+<pb n="11.125"/>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">At quum amplius fubjectis corporibus coatestere
+<lb/>cutis non potest, ejusmodi affectus sinus appellatur,
+<lb/>cujus curandi rationem, qua me saepe in multis uti vidisti,
+<lb/>deinceps memoriae tuae suspiciam. In hoc igitur affectu sutius
+<lb/>est fistulam aut aeneam aut corneam recto ductu foratam
+<lb/>ad manumesse, aut fi hujus sacullas non sit, aliquem
+<lb/>pyulcum vocatum, qui latissimum habeat foramen, per quod
+<lb/>medicamenti nostri ex combusta charta temperati exiguam
+<lb/>portionem eum largo rosaceo mistam in sinus immittere suepe
+<lb/>me vidisti, deinde eorum os concerpto linamento claudere.
+<lb/>Emplastra vero rosaceo liquata si in hos insuere tentes,
+<lb/>pyulcum non permeant, fed in his suillae vesicae lati
+<lb/>foraminis fistula adjungenda esu Quae vero liquantur medicamenta
+<lb/>his quae emmota dicuntur acriora esse debent, qua- .
+<lb/>lia sunt apud omnes in usu colore viridia. Haec autem cum
+<lb/>largo oleo liquare oportet, ut indi in sinum possint. In hisce
+<pb n="11.126"/>
+<lb/>autem missoris emmotorutn vis refolvitur. Medicamenta
+<lb/>igitur exquisite ernplasta, quale est Machaerionis et Epigoni
+<lb/>ei quod Ilis nuncupatur, quum in usum emmotorum afferuntur
+<lb/>, cerati admistione egent. Haec enim in sinubus ops.
+<lb/>portuna sunt. Nam ideo nunc sunt commoda, quod admistnm
+<lb/>habeant ceratum. Miscentur autem quoniam si per se
+<lb/>sola sine cerato liquarentur ^viribus mordacia essenti Quum
+<lb/>autem rosaceum oleum multum sit et quod lu oleo liquatur
+<lb/>medicamentum paucum; nullam amplius acrimoniam retinet.
+<lb/>Ubi vero sinus mediocriter carne repletus est, aliquod ex
+<lb/>glutinantibus medicamentis adhibere oportet, perinde ac si
+<lb/>recens vulnus et cruentum curares. Multa autem ejusmodi
+<lb/>medicamenta inveniuntur, alia quidem ex bitumine censeeta
+<lb/>vocanturque nescio qua ratione emplastra barbara, alia
+<lb/>veru quia fulvi et fusci fiunt coloris . cirrba et phaea nomihantur
+<lb/>et ex argenti spuma et aerugine liberalius decocta.
+<lb/>Ad hunc enim modum aerugo fulvescit, quae fi pauxillum
+<lb/>concoquatur, lutea , ut vocant; reddit emplastra. Minime
+<pb n="11.127"/>
+<lb/>vero te latet metallica omnia medicamenta majori partium
+<lb/>tenuitate ac siccandi vi pollere, si plusculum incoquantur.
+<lb/>Fulva vero medicamenta simul atque reposita fuerint et recondita,
+<lb/>subeam quandam orestam foris contrahunt, fusi qua
+<lb/>in profundo medicamentum fuluius quam ab initio esset
+<lb/>confpicitm. Proinde nonnulli dichroma, alii diprosopa, quasi
+<lb/>bicolora ac biformia ejusmodi emplastra vocant. Quo
+<lb/>autem majori partium tenuitate et siccandi facultate praedita
+<lb/>suerint, eo efficacius in sinus injiciuntuxi Horum enim vis
+<lb/>in altum ferri debet, si propositum scopum assequi velimus.
+<lb/>Quae vero recentia et cruenta vulnera glutinant, tametsi
+<lb/>his minus desiccant, labra tamen vulnerum, si quidem, parva
+<lb/>funt minimeque profunda, glutinant. Quocirca facilius ac
+<lb/>celerius quod agendum est perficiunt, Quod si recens vulnus
+<lb/>profundum sit, futuris ac illudis ipsius oras committere
+<lb/>folemus. Itaque non omnis sinus simplex divisio est, sed
+<lb/>frequenter alia atque alia partu laceratus est, quod te latere
+<pb n="11.128"/>
+<lb/>non debet. Quum igitur furium sinus tenuit, facile per ejus
+<lb/>os sanies effluit. Quum vero deorsum vergit, intus retenta
+<lb/>contiguas partes erodit. In quo quidem sinu nisi prius faeta
+<lb/>ad efstuxionem lectione nihil profeceris, sive carnem
+<lb/>generare sive glutinare velis. In alio vero incisione nihil
+<lb/>erit opus, modo situs commodam affectae parti figuram ferves,
+<lb/>qua figura sinus qui sursum vergit; ut deorsum dedinet,
+<lb/>et qui deorsum declinat sursum vergat efficere possis.
+<lb/>Vidisti quidem aliquando me sinum in cubito, cujus os
+<lb/>prope flexum erat et situs sursum spectabat, citra ullam ex
+<lb/>adversio plagam personasse. Et in coxa itidem sinum deorsum
+<lb/>vergentem et ad genu terminatum , cujus os sublime
+<lb/>fupra femoris medium esset, fine ulla eit adversa parte dis
+<lb/>visione ad sanitatem perduxisse, substrato popliti mosti pulvino
+<lb/>, quo demissus inguen quam genu esset. Hujus porro
+<lb/>sinus atque aliorum majoruni, quamlibet profunditatem .ad
+<lb/>conglutinationem aptam fala reddere potest infusa mussa.
+<pb n="11.129"/>
+<lb/>Sunt qui etiam lixivium infundant, ruam ipforum inscitiam
+<lb/>ex his quae prius ad carnem in sinu generandam medicamentis
+<lb/>iniiciebant prodentes. Nova enim caro priori adnasci
+<lb/>non potest; si sordes locum obsederit. Quo modo igitur
+<lb/>aliunde repleto carne sinu glutinans adhibent medicamentum,
+<lb/>si tanquam vehementer sordidum lixiuio detergere
+<lb/>tentent, quum pura caro ne mulsam quidem acrem ferre
+<lb/>possit? Huic enim satisfacit ea quae bibi jucunde possit.
+<lb/>Post mulsae usum sinum deinceps nunc quidem puto vind,
+<lb/>nunc vero musso ante glutinantia medicamenti impositionem
+<lb/>eluere consuevi. Itaque ad detergendam expurgandamque
+<lb/>ejus saniem utilior mulsa , ad glutinandum vero praestantius
+<lb/>vinum esu Id autem medium sit inter dulce et astringens:
+<lb/>Quin etiam post glutinantia medicamenti impositionem sola
+<lb/>spongia nova ex mulso circumponatur quam fieri potest
+<lb/>mollissima, et colligatio a sinus profundo quidem incipiat
+<lb/>et ejus ore finiat. Fasciarum veru fpirae sinus profundum
+<pb n="11.130"/>
+<lb/>sine dolore arctent, quae paulatim usque ad os laxentur,
+<lb/>idque ipsum laxum deligationem habeat medicamenti, circumducto
+<lb/>forinsecus emplastro ad os sinus forficibus
+<lb/>discisso , .ut sanies aliqua effluere possit. Effluet. autem e
+<lb/>sinu superposito aliquo alio parvo emplastro ad solutionem
+<lb/>usque, quam tertio^ quoque die faciens hoc ipsum tanquam
+<lb/>operculum circumpositum auferes, relicto quod totum ambit
+<lb/>sinum medicamento. An vero altae sinus partes coaluerint,
+<lb/>ex manente sanie deprehendes, si ea multa vel pauca, cocta
+<lb/>vel cruda sit; praeterea si neque insuto sinu dolor sentia-tur
+<lb/>nec tumor appareat, fed totus locus. aequabilis sit, siccus
+<lb/>ac doloris expers. Quod siparis probe eo ctiportio exigua
+<lb/>in ore conspiciatur , multo magis de glutinando sinu sperandnm;
+<lb/>est, Quumque spongiam rursus imposueris rnrsusque,
+<lb/>utdiximus, adalligaveris, postero veLterlie dic solvito,ut
+<lb/>dictum est, semper linteolum sinus ori .admotum perrnufans;
+<pb n="11.131"/>
+<lb/>quod eodem emplastro illitum totum os ambitu cisia
+<lb/>gat; neque vero omnino oppressum esse debet; fed ita ut
+<lb/>per id tuta fames vacuari possit. Itaque si primo vel secundo
+<lb/>die tenuis quaedam sanies ex sinu manet, non est omnino
+<lb/>de glutinatione desperandum. Saepe enim vis medicamenti
+<lb/>affectae parti admoti^ ex ipfa cute et fubjecta carne tenuem
+<lb/>humiditatem vehementer exprimit , quoties ejus qui curaturi
+<lb/>corpus ita affectum est sive ex nativa temperie sive
+<lb/>mala victus ratione. Hac humiditate expressa loca mediocriter
+<lb/>resiccata glutinantur. Quod si tertio aut quarto ab
+<lb/>initio die sanies cruda in ore apparuerit , trito sinum noti
+<lb/>esset glutinatum. In primis autem medicamentum , quod
+<lb/>affectae parti circumponitur vehementer quidem exiccet;
+<lb/>sied nec mordeat, nec contrahat utilem; cujusmodi nostrum
+<lb/>est, quod a fulvo colore cirritum dicitur, ex concoctis metallias
+<lb/>medicamentis et oleo ricinino et aceto sine cera
+<lb/>confectum. Idem et cruenta vulnera citra molestiam glutinat
+<pb n="11.132"/>
+<lb/>et sinus exiccat. Hoc autem medicamento fistulam angusti
+<lb/>et longi foraminis,. in qua. nundum callus intus, sed sula
+<lb/>fordes mihi apparuerat, perfanatam vidisti infusu primum
+<lb/>lixivae , quod in fistula tantisper continui, dum sordem
+<lb/>omnem integre extersam esse coniecissem , postea medicamentum
+<lb/>impositi. Ad hunc autem modum sinus, qui Iuli
+<lb/>sula cute erant, nec camis generationem requirerent, inscite
+<lb/>vero a quibusdam curarentur , simulatque curandos suscepi,
+<lb/>hoc medicamento glutinari lixivae, prius ablutos, quum
+<lb/>qui .ulcera curarent nullum ex his quae .expurgandi vim
+<lb/>habent medicamentum adhiberent. Quum vero tumores
+<lb/>qui in abscessum vertuntur tarde inciduntur, aut medici
+<lb/>imperitia aut eorum qui curantur timiditate, sectionem non
+<lb/>admittentium , feti diutius protelando cutem ab ejusmodi
+<lb/>pure erodi sustinentium, hanc universam a congesto in
+<lb/>abscessu pure, attriti panniculi ln modum, vehementer attunuari
+<lb/>saepe contingit; unde a medicis rhacodem appellari
+<pb n="11.133"/>
+<lb/>existimo. Ejusmodi igitur cutis aegre coalescit, maxime si
+<lb/>substantia aridum medicamentum imponatur , ut a quo cutis
+<lb/>tenuior sicciorque in modum attritae vestis reddatur. Itaque
+<lb/>mihi commodum esse ridetur, si quis ad ejus conglutinationem
+<lb/>medicamento substantia humido, facultate .vero sicco
+<lb/>utatur. Diximus autem in libris de medicamentis, medicos
+<lb/>solere medicamenta facultate sicca appellare , quae exiccare
+<lb/>suapte natura idonea sint. omnium autem quae substantia
+<lb/>funt humida, facultate vero sicca, optimum est quod a me ex
+<lb/>argenti spuma, adipe suillo vetere et ohalcite contemperatum
+<lb/>est, quibus vetustissimum oleum admistum siti Ejus
+<lb/>autem vim in hisce affectibus efficaciorem esse sum expertus,
+<lb/>quum neque omnino durum esset, neque plane manus inquinatet.
+<lb/>Sed et si ad eundem modum temperetur, cruenta
+<lb/>quoque vulnera glutinabit, omnisque ulcera ad cicatricem
+<lb/>ducet oleo resolutum , postea cum vino mediocriter vetere
+<lb/>mistum atque his affectibus circumpositum fine molestia saepe
+<pb n="11.134"/>
+<lb/>glutinavit. Confert autem , ut diximus , ubi cutis pellis
+<lb/>attritae modo tenuata est, mel maxime, si ad emplastri crasfomentum
+<lb/>coctum sit. Ejus vero coctionis temperamentum
+<lb/>recte assequi nisi animadvertas, difficile est. Ipsum enim
+<lb/>neque adeo durum esse debet ut aegre decidat, neque adeo
+<lb/>liquidum ut diffluat. Durum enim eadem adlert incommoda
+<lb/>quae dura emplastra. Liquidum vero tanquam calido corpori
+<lb/>admotum nndiquaque effluit aridumque linteolum relinquit;
+<lb/>quod non solum non juvat, sed et glutinandae cuti officit.
+<lb/>Mediocriter autem coctum mel-ejusmodi sinibus commodifflmum
+<lb/>remedium est. Quoniam autem ejus concoctionis mediocritas
+<lb/>facile conjici non potest, satius mihi videtur lliyso
+<lb/>rhae pollinem vel aloes vel thuris vel eorum aliquem,
+<lb/>vel simul omnes inspergere; ac maxime si quod linteolo
+<lb/>inductum est, liquidius appareat. Hos autem per cribrum
+<lb/>inspergere oportet , quod supra mel teneatur sublime. Satis
+<lb/>enim suerit semel aut bis cribrum agitare, ut pollen medioeris
+<pb n="11.135"/>
+<lb/>excutiatur. Aliquando vero et inter coquendum aliquod
+<lb/>ex ante dictis medicamentis melli iufpergo, maxime si sinus.
+<lb/>et major et altior siti Tenue autem centaurium in hunc.
+<lb/>usum mirabile esse remedium sum expertus, deinde symphytum,
+<lb/>postea iris Illyricae radicem,.ad haec ervinaui sarinam..
+<lb/>Neque vero dubium est quin haec contundi et tenui
+<lb/>cribro excerni , postea tenuiter conteri debeant. Melli vero,
+<lb/>dum ab igne tollendum. est, insperguntur tantisper nobis
+<lb/>cunctantibus, dum probe cum illo praeconio uniantur.
+<lb/>Satius autem suerit exempto ah igne carabo omnia haec
+<lb/>inspergere , deinde curiose movere, dum mel ita tepidum
+<lb/>reddatur uti curando corpori imponi possit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Consequens autum est- ut de his quae in
+<lb/>gangraenam transeunt inflammationibus disseramus. d Cangraecas
+<lb/>autem, ut: nosti, vocant quum pars corporis aliqua
+<lb/>obinflammationis magnitudinem nondum emortua est, sed
+<pb n="11.136"/>
+<lb/>adhuc emoritur. Nam quum pars omnino emortua est, ita
+<lb/>nt fi hanc pupugeris vel secueris vel exusseris , ea non ieutiat
+<lb/>quae patitur, ad vivum usque recidenda est qua partem
+<lb/>ranam visuram attingit. At quae sic quidem affecta est nigresitit.
+<lb/>quae vero in medio constituta est tesiditque ad extinctionem,
+<lb/>gangraenosa vocatur. Curatur autem vacuato quam
+<lb/>fieri potest plurimo sanguine, in affecta parte impacto;
+<lb/>cujus occasione ipsa emoritur, arteriis ob loci angustiam
+<lb/>sere dilatare nequeuntibus, reliquo vero corpori perfptrationem
+<lb/>suggerere. Cutis igitur universa vel multis prosundisque
+<lb/>sectionibus una cum fubjecta substantia fecanda est, vel
+<lb/>frequentibus ac altis scarrficationibus incidenda. Ubi vero
+<lb/>manare sanguinem permiserimus , aliquod ex medicamentis
+<lb/>quae ad putria ulcera faciunt imponi debeti cujusmodi est
+<lb/>quod ex. mulso aceto constat et ervina aut loliacea farina ;
+<lb/>vel si harum facultas non .sit,sabucea, atquecipfum per fe.
+<lb/>acetum mulsum. Quo si vehementiore uti. velia, adjiciendus
+<lb/>fal est vel aliquis ex .pastillis .curiose tritus r..qaulis esse Andronis;
+<pb n="11.137"/>
+<lb/>Polyidae et rasionis. Quin etiam Musae medicamen-tum;
+<lb/>quod in Herae temo scriptum est, his commodissime
+<lb/>imponitur. His autem et aliis quae ante commemorata sunt,
+<lb/>considerato aegroti corpore utendum esu Rustici enim corpus,
+<lb/>quod natura durum est; vehementissima remedia efstagitat,
+<lb/>mulieris vero molli carne praeditae imbecilliora. Ad
+<lb/>eundem modum: virile corpus, quod quidem album sit et
+<lb/>molle. et balneis assuetum et .inexercitatum, mollia exposcit.
+<lb/>medicamenta. Neque vero dubium -esii quin et. pueris haec
+<lb/>conveniant. Si vero aliquando putrem ac emortuam partem
+<lb/>excideris securitatis gratia, modo dictis medicamentis utere,
+<lb/>non neglecta tum corporum tum affectae^ partis natura;
+<lb/>quaedam enim partes promptissime putrescunt, easque tutius
+<lb/>est, ubi quod computruit resccueris vel amputaveris tanquam
+<lb/>radicem ejus incolumi parti coniunctam adurere, quemadmodum
+<lb/>saepe in pudendis partibus facere consuevimus.
+<lb/>Aliquando admoto.. quidem partibus affectis candente ferro,
+<pb n="11.138"/>
+<lb/>aliquando prius submisso linamento. Post exustionem vero
+<lb/>porri succo, ut nosti, aut si is non adsit, medicamentis paulo
+<lb/>ante commemoratis uli consuevimus. His autem peractis,
+<lb/>quum finem fecisse putredo libi vita fuerit, ut crusta citius
+<lb/>excidat, medicamento quod cephalicum vocant ex melle
+<lb/>utendum est. Cataplasma autem quod ex pane in hydrelaeo
+<lb/>cocto, aut hordeacea farina eodem modo parata, aut cum ea
+<lb/>admista triticea foris commodius imponitur. Quin etiam medicamentum,
+<lb/>quod tetrapharmacum dicitur, praeterea et
+<lb/>macedonicum tum ad pus movendum tum ad crustas resolvendas
+<lb/>idonea Iun t, quemadmodum et omnia quae ad fuppurgationem
+<lb/>perducunt. Panis vero cum apio aut ocimo iutritus
+<lb/>rumpit ac separat crustas a fanis partibus. Ex simplicibus
+<lb/>autem medicamentis iris ex melle vel radix panacis
+<lb/>aut aristolochiae aut acori. In mollibus autem corporibus
+<lb/>abunde facit ervi farina cum meste aut thure. Ad eundem
+<lb/>modum crustas elidit Machaerionis medicamentum et Ilis
+<pb n="11.139"/>
+<lb/>emmota. Elapsis vero crustis ulcera ejusmodi quibuslibet
+<lb/>idoneis medicamentis carne replentur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">Quoniam autem de his falis diximus, de
+<lb/>cancrosis tumoribus deinceps est disserendum, qui cum in
+<lb/>omnibus corporis partibus fiunt, tum maxime in mulierum
+<lb/>mammis, quaecunque non amplius naturali purgatione pnrgantur,
+<lb/>quae quum opportune fit, integra sanitate mulieres
+<lb/>fruuntur. Omnes igitur hujusmodi tumores praeter naturam
+<lb/>ex atrae bilis redundantia gignuntur, de qua re in commentariis
+<lb/>de facultatibus naturalibus disputatum est. Ubi docuimus
+<lb/>faecis vini simiIem hune humorem, dum in jecore sanguis
+<lb/>conficitur, generari, repurgari vero a liene. Ab hoc
+<lb/>enim humore hoc viscus ali solet. Quum igitur nativa animansis
+<lb/>temperies hunc humorem paucum generat, ad idque
+<lb/>confert victus ratio, et lien ad se quod gignitur valenter
+<lb/>tradit, nihil ejusmodi recrementi in venis colligitur. Quod
+<lb/>si contraria adsint, multa in venis acervantur, ex quibus
+<pb n="11.140"/>
+<lb/>quos docebimus morbos iis. contrahuntur,.. Contraria autem
+<lb/>Itis quae diximus intelligo jecm quidem ad ejusmodi excrementi
+<lb/>procreationem pronum, rictus autum rationem ex
+<lb/>iis alimentis, quae sanguinem crassam ac faeculentum generare
+<lb/>idonea sint, lienem vero natura imbecilliorem, ut qui
+<lb/>ad. fe horum omnium excrementorum proventum attrahere
+<lb/>non possit. lu tali autem corpore turbulentus crassusque efi.
+<lb/>sinitur; qui in venis continetur fanguis. Et nonnunquam venae.excernendi
+<lb/>quod alienum est, facultate praeditae, quemadmodum
+<lb/>et omnes aliae partes, hunc humorem per haemorrhoidas
+<lb/>effundunt, saepe vero ad varices demittunt, est-.
+<lb/>quando auteui ad universam cutem propellunt. Atque haec
+<lb/>quidem est assectus origo, quem elephanta vocanti Aliquando
+<lb/>vero et in alias corporis paries, quae quidem omnium utatime
+<lb/>sunt imbecillae, ejusmodi succus fertur, atque lu ea
+<lb/>parte venae luculenter conspiciuntur atro et crasso sanguine
+<lb/>plenae. Quo autem is crassior ac nigrior suerit; eo affectum
+<lb/>parit deteriorem. In mammis vero tumorem saepe vidimus
+<pb n="11.141"/>
+<lb/>cancro animanti omnino similem. Nam quemadmodum ille
+<lb/>ex utraque corporis parte pedes, sic et hic assectus venas
+<lb/>praeter naturam intumescentes exporrigit, effigiemque cancro
+<lb/>similem reddit. Hunc affectum incipientem quidem saepe
+<lb/>sanavimus. ubi vero in molem insignem erexit, citra esiirurgiam
+<lb/>nun curabis. Itaque universae chirurgiae tumorem
+<lb/>praeter staturam excidentis sicopus est ut ejusmodi tumor,
+<lb/>qua fanis partibus coniungitur, totus circuncidatur. Verum
+<lb/>propter vastorum magnitudinem, maximeque arteriarum, statim
+<lb/>prosusionis sanguinis periculum imminet, quas si laqueis
+<lb/>intercipias, consortii jure aliae partes afficientur. Quod si
+<lb/>ejus mali affectus radices adurere lu animo sit, neque in hoc
+<lb/>parvum erit periculum, si juxta principes partes exustio
+<lb/>fiat. Sed ejusmodi affectum recentem, ut diximus, faepe curavimus,
+<lb/>maxime ubi melancholicus humor non admodum
+<lb/>crassius videbatur. Hic enim purgantibus medicamentis
+<lb/>prompte cedit, unde fit curatio. Certum autem est quod
+<pb n="11.142"/>
+<lb/>quae adhibentur medicamenta vim vacuandi atri humoris
+<lb/>habere debent, quod frequenter faciendum est; donec pars
+<lb/>est naturalem statum omnino sit reducta, victus etiam ratione
+<lb/>observata, quae probum humorem generet. Itaque in
+<lb/>Alexandria plurimi elephantiasi tum ob victus rationem
+<lb/>tum regionis caliditatem laborant. In Germania vero et
+<lb/>Mysia rarissime affectus is grassari visus esit- Et apud lactipotas
+<lb/>Scythas nunquam fere apparet. Sed in Alexandria ob
+<lb/>victus rationem frequenter generatur ; vescuntur enim pulte,
+<lb/>lenticula,- cochleis multisque salsamentis, nonnulli vero et
+<lb/>asinina carne et id genus assis crassem ab atram bilem genenantibus.
+<lb/>Quemadmodum si ambiens aer calidus sit, horum
+<lb/>humorum impetus ad- cutem fertur. Igitur huic affectui dictae
+<lb/>purgationes prosunt. Quod si actas et vires suaferint,
+<lb/>saug.uis prius^ mittendus esu Neque vero in cancris neque
+<lb/>in his, nisi- quid prohibeat; inutile est venam secare, deinde
+<lb/>purgare, atque si mulieres sint, menses ciere, si nimirum
+<pb n="11.143"/>
+<lb/>quinquagesimum annum nondum attingant. In affecta autem
+<lb/>parte folani succus imponatur, hoc enim medicamentum
+<lb/>ejusmodi affectibus utilissimum est. Quod si aegrotus .tam
+<lb/>liquidum medicamentum imponi nolit, praesertim quum domo
+<lb/>exire, solitaque opera exercere cogitur, medicamentum
+<lb/>ex pompholyge imponendum est, quo et .ad ulceratos can-.
+<lb/>eros uti me vidisti; quod si in promptu non sit, nostrum
+<lb/>quod ex chalcile constat est adhibendum. Quatenus vero
+<lb/>ad victus rationem attinet, pleniore ptisanae cremore, fero
+<lb/>lactis et ex oleribus malva, atriplice, blito, et quum per
+<lb/>tempus licuerit, cucurbita utendum esse Ex pifcibus vero
+<lb/>saxatiles avesque omnes praeter palustres dare convenit.
+<lb/>In elephantiasi vero viperae mira utilitate eduntur. Eas vero
+<lb/>eodem modo, quo Mansos parare vidisti; quos, quia aspidisuis
+<lb/>et serpentibus vescuntur, aspidotrophos et theriotrophos
+<lb/>vocant, comesse oportet, . primum quidem cauda et capite ad
+<lb/>quaternorum digitorum longitudinem abscissis; deinde iuteraneis
+<pb n="11.144"/>
+<lb/>omnibus ae cute etiam exemptis, postea aqua abluto
+<lb/>eorum corpore. Sed hactenus quidem nec aliter Iane, quum
+<lb/>antidotum; ut vocant, theriacam temperantes facimus: caeteruui
+<lb/>dissimiliter coquimus. In theriaca quidem anethum et
+<lb/>salis exiguum in aqua miscemus. In elephantiafi vero non
+<lb/>alitur quam anguillas ex albo jure in olla paramus, quod ad
+<lb/>hunc. modula sit. Aqua large in ollam coniicitur et olei exiguum,
+<lb/>cum quo et anethum et porrum. Certum autem est
+<lb/>viperarum carnes tantisper esse incoquendas; dum plane
+<lb/>molles reddantur. Compositum autem ex his medicamentum,
+<lb/>quod theriacam antidotum vocant, utiliter lu ejusmodi assectu
+<lb/>bibitur, atque etiam si lubuerit cuti illinitur. Peractis
+<lb/>enim omnibus his aliquando squama e cute, quemadmodum
+<lb/>quae Senecta dicitur en anguibus, refolvitur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">Aliorum autem tumorum praeter naturam
+<lb/>nullius curandi rationem per chirurgiam ad te fieribendam
+<pb n="11.145"/>
+<lb/>esse duri, quum tu probatissima medicamenta a nobis
+<lb/>acceperis. Ad strumas quidem quae repellere, exiccare et
+<lb/>pus . movere queant. Ad meliceridas vero, et quae has discutiant
+<lb/>et medicamenta pus discutientia et aquam in scroto
+<lb/>et abdomine et ut his in hydropicis uti oporteat didicisti.
+<lb/>Horum autem geminus scopas est, nempe visceris scirrhum
+<lb/>curare et collectam humiditatem per discussionem vacuare.
+<lb/>De scirrhosorum autem viscerum curatione ante disputavimus.
+<lb/>Itaque hyderi curatio ad hos tres scopes reducitur,
+<lb/>nempe ut visceris scirrhum contrahentis scirrhus sanetur,
+<lb/>medicamenta quae humiditatem discutiant imponantur, et
+<lb/>quae urinam cient in potu dentur. Haec quidem tibi ad
+<lb/>longam peregrinationem accincto sat esse arbitror. Si vero,
+<lb/>ut ante diri , opus de medicamentis secundum genera et
+<lb/>affectos locos scripsero, illud quoque a tua peregrinatione
+<lb/>reversus ex me accipies. Aliud autem magnum opus de univerfa
+<lb/>curandi ratione efflagitantibus amicis conscribetur,
+<pb n="11.146"/>
+<lb/>Quod si in ea peregrinatione diutius detinearis, omnes quotquot
+<lb/>scripserimus commentarios ad te mittere non gravabimur.
+<lb/></p>
+</div>
+</div>
+</div></body>
+  </text>
+</TEI>

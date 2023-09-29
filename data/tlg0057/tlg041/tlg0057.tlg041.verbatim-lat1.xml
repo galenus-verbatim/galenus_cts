@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De morborum differentiis</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg041.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">6</biblScope>
+              <biblScope unit="pp" from="836" to="880">836-880</biblScope>
+              <date>1823</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x06">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="199" to="205">199-205</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="1" to="15">1-15</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x07">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg041.verbatim-lat1">
+<pb n="6.836"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="6.836"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE MORBORVM DIFFERENTIIS
+<lb/>LIBER</head>
+
+
+<p rend="indent">Primum dicendum est, quid morbum vocemus,
+<lb/>ut, qua de re liber agit, innotescat. Secundum deinde,
+<lb/>quot sint universi, simplices prirnique morbi, ac veluti
+<lb/>caeterorum elementa. Tertium deinceps, quot ex his compofiti
+<lb/>prodeant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Sumendum profectu etiam lue concessum
+<lb/>principium, universos homines tum se sanitate frui sibi persuadere,
+<lb/>quum partium corporis functiones ritae actionibus
+<lb/>inservientes illaesas sortiuntur, laesa vero ex ipsis aliqua,
+<pb n="6.837"/>
+<lb/>fe illius functionis ministra parte aegrotare augurari. Quod
+<lb/>si haec ita fele habeant, his in duobus faustas quaerenda est;
+<lb/>aut in functionibus fecundum naturam prodeuntibus, aut in
+<lb/>organorum, quibus: functiones edimus, structura, proinde-^
+<lb/>que morbus vel functionis vel structurae laesio esu Verum
+<lb/>quum dormientes, aut alias in tenebris veh otio degentes,
+<lb/>aut plerumque discumbentes neque partem eliquans
+<lb/>movemus, neque quid externum. omnino sentimus , nihilominus
+<lb/>tamen sani sumus. Atque lune patet, non lu actione,
+<lb/>sed lu .agendi potestate sanitatem constitui. At functiones
+<lb/>ex ea, quae fecundum naturam est, structura obire posset-^
+<lb/>mus; lu ea itaque sanitas consistit, proindeque ad functionem
+<lb/>edendam structura causae rationem obtinebit. Quare
+<lb/>sive naturalem omnium partium structuram sanitatem nominare
+<lb/>volueris, sive functionum causam, in idem utraque
+<lb/>incidit oratio. Quod si hoc sit: simitas, constat, ejus contrarimo
+<lb/>esse morbum, aut structuram aliquam praeter naturatu,
+<lb/>aut laetae functionis caulam.- At manifestum est, quod,
+<pb n="6.838"/>
+<lb/>si quoque affectum praeter naturam dixeris, et prisco ustis
+<lb/>fueris nomine, et idem significaveris. Quot vero modis corpora
+<lb/>ab eo, quod fecundum naturam est, in functionibus obeundis
+<lb/>decedentia i n ter turbant ur , si invenerimus, eadem
+<lb/>via jam numerus omnium simplicium morborum nobis coasc
+<lb/>pertua erit. Hic autem principium concedatur; com moderatum
+<lb/>id esse, quod secundum naturam est, non in animali
+<lb/>solum, verum etiam in planta et semine omnique organo;
+<lb/>quod vero rursus praeter naturam est, incommoderatum.
+<lb/>Sit igitur sanitas commoderatio quaedam, morbus Vero incommoderaticla
+<lb/>Quorum ergo incommoderatio morbus sih
+<lb/>deinceps speculandum. An videlicet, quorum sanitas cossimoderatio
+<lb/>est, eorundem morbus incommoderatio existit?
+<lb/>Si itaque in meatuum cotum odoratione simitas sit, in meatuum
+<lb/>incommoderatione morbus erit; si vero in calidi, scigidi,
+<lb/>sicci et humidi temperie sanitas constituatur, in eorundem
+<lb/>intemperie morbum esse necessario consequetur
+<lb/>Hac vero rasione, li in alterius cujusdam generis commederatione
+<lb/>sanitas fuerit, conflat quoque, morbum in ejusdem
+<pb n="6.839"/>
+<lb/>generis incommoderatione constituendum esse. Enimvero
+<lb/>hoc ipsum rursus subtilius contemplemur. . Si quod
+<lb/>corpus simplex ac exacte unum sit, id nunquam inteusionem
+<lb/>et remissionem admitteret, neque eo lu genere alterum
+<lb/>altero melius aut deterius daretur. At si ex pluribus.compositum
+<lb/>sit, multi sane hoc pacto compositionis modi in ipso
+<lb/>erunt tum meliores, tum deteriores. Erunt etiam eadem
+<lb/>ratione ipsa composita et meliora et deteriora. Quod autem
+<lb/>omnium optime constitutum est, id eorum, quae ejusdem
+<lb/>sunt generis, erit optimum. Num igitur lu animalium
+<lb/>corporibus et magis et nunus existit, aleo ut illud optimi
+<lb/>sit habitus, hoc simpliciter boni habitus, non autem optimi,
+<lb/>et hoc quidem sanum, non tamen boni sit habitus, . aliud
+<lb/>praeterea, quod vix morbo reluctetur, aliud denique, quod
+<lb/>jam aegrotat, atque hujus generat alterum leviter, alterum
+<lb/>periculose, illud mediocriter, hoc vehementer aegrotet?
+<lb/>An omnes peraeque affecti sumus tum aegri, tum fani?
+<lb/>Hoc proferre nefas. Itaque non unum est animalium cor-.
+<lb/>pus, veluti Epicuri atomus, aut incompactum aliquod Asulepiadis
+<pb n="6.840"/>
+<lb/>corpusculum. Quamobrem plane compositum erit.
+<lb/>Quod si ex atomis, aut incompactas, aut omnino ex impatibilibus
+<lb/>quibusdam corpusculis construeretur, in compositionis
+<lb/>duntaxat qualitate magis miuusque susciperet domus
+<lb/>instar ex impatibilibus lapidibus constructae, non tamen in
+<lb/>structura etiam omni ex parte rectae. Quod si qua in re
+<lb/>pali posse ipsos lapides contingeret, ut varios patiendi modos,
+<lb/>ita magis miuusque domus ipsa susciperet. At si ipsa
+<lb/>nostrorum corporum elementa et alterari et pali sua natura
+<lb/>consueverint, non Iolum in compositione, ut et partium conformatione,
+<lb/>verum etiam per se ipsa tota magia miuusque
+<lb/>suscipient. Proindcquo ipsa per se tota tot nimirum morborum
+<lb/>generibus, usque simplicibus ac primis et vetuli eaetororum
+<lb/>elementis aegrotabunt, quot suerint ea, quae compolitionem
+<lb/>efficiunt. Haec autem verba, per se tota, impatihilibus
+<lb/>elementis nequaquam accidunt. Non enim concelsum
+<lb/>est, quicquam pati individuam ipsam atomum, sed in
+<lb/>compolitione et conformatione affectionem comperiri.
+</p>
+<pb n="6.841"/>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">At compositio et consormatio in animalium
+<lb/>corporibus est triplex : prima partium, quas vocant, similarium,
+<lb/>arteriarum, venarum, nervorum, ossium, cartilaginum,
+<lb/>ligamentorum, membranarum et ceruium; secunda
+<lb/>vero organicarum, cerebri, cornis, pulmonis,. lupatis, veritrienii,
+<lb/>lienis, oculorum et renum ; tertia denique totius
+<lb/>corporis. Etenim unaquaeque harum partium. organicarum
+<lb/>ex aliis quibusdam simplicibus quoad sensum est constituta;
+<lb/>illarum vero quaeque ex primis conflat elementis. Carnis
+<lb/>igitur ipsius; quatenus caro est, in sola primorum elementorum
+<lb/>compositione differentia consistit; at quatenus pars orgaui,
+<lb/>lu consormatione et. magnitudine. Itaque ipsorum
+<lb/>quoque organorum his in ipfis differentiae sunt. Productis
+<lb/>igitur, quot et qui sint ex prima suppositione, omnibus
+<lb/>similarium corporum morbis, ad secundam deinceps migrabimus,
+<lb/>ad eam nimirum, quae. substantiam totam per se totam
+<lb/>alterari .transurutarique supponit.
+</p>
+<pb n="6.842"/>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Sunt autem duo pruni morbi, alter quaedam
+<lb/>meatuum dilatatio, altor astrictio, fmpatibilibus namque
+<lb/>suppositis prunis elementis, lu compositione stola erunt
+<lb/>morbi. Compositionis autem omnis differentiae prius enarratae
+<lb/>sunt. Quare necesse est unamquamque partium similardum
+<lb/>recte valere, quum commoderatio meatuum ipsius
+<lb/>conservatur, qua labefactata de naturali statu ipsis decessit.
+<lb/>Sed quoniam cujuscunque commoderationis differentia est
+<lb/>duplex, altera exuperantia, altera penuria, liquet, primos
+<lb/>simplicium corporum morbos fore duplices, alterum quandam
+<lb/>meatuum dilationem, alterum astrictionem. os itaque,
+<lb/>caro et aliorum corporum pro tensus sedicio sunplieium
+<lb/>ununrquodque si astrictius aut laxius sit commoderato,
+<lb/>id male affectum esse proferemus. At si lu utriusque
+<lb/>exuperantiae messio sit, ita ut ipsius functionibus maxime
+<lb/>conferat, tunc summe fanum esse pronunciabimus. Breves
+<lb/>autem a medio ad utrumque exquisitae commoderationis extremum
+<lb/>decessiones nequaquam morbos este dicemus, quoad
+<pb n="6.843"/>
+<lb/>manifestam sunetiouis alienius laesionem effecerint; festia his
+<lb/>multum et magis et minus existere, adeo ut, quam magnum sit
+<lb/>intervallum ab incommoderatione morbofa ad exquisite fanam
+<lb/>commoderationem, lu hac tota latitudine fanorum disu
+<lb/>ferentiae consistunt. At lu altero aptum subsequenti intervallo,
+<lb/>quod serrfihilis est incommoderatiouis, morbos collocanrns,
+<lb/>donec ad illum devenerint inconrmoderationem, quae
+<lb/>jam partis corruptionem molitur, Neque enim animalium
+<lb/>corpora quocunque modo astringi dllatarique suapte natura
+<lb/>possunt, ted est quidam hic terminus, ultra quem ipsa citra
+<lb/>elissolutionem corruptionemque progredi nequeant. Atque
+<lb/>haec profecto impatibilium elementorum suppositio ita su
+<lb/>habet.</p>
+<p rend="indent">Qui vero ipsis pati elementa, nilriloque minus in Te
+<lb/>invicem agere, et per se tota commisceri ac temperari sirpponunt,
+<lb/>quot eorum aliquis prima esse elementa snpposnerit,
+<lb/>totidem primos quoque morbos necessario constituet.
+<lb/>Nam concede, prima elementa esse quatuor, calidum, frigis
+<pb n="6.844"/>
+<lb/>dum, siccum. et. hunridum; .ex susque luter fe temperatis,
+<lb/>commoderate quidem, sanitate frui animal, incommoderate
+<lb/>vero, aegrotare. Erunt quoque primi morbi quatuor t primus
+<lb/>calidum praeter naturalem co inmoderationem; fecundus
+<lb/>frigidum; tertius humidum; quartus demum siccum.
+<lb/>Hi tum- ex secunda suppositione morbi partium, quae sunilares
+<lb/>appellantur, atque simplices omnino conspiciuntur, -</p>
+<p rend="indent">Compositorum vero in nobis organorum morbi utrique
+<lb/>suppofitioui communes existunt. Hos igitur paucis per-.
+<lb/>curramus, et hoc aprum in priinis, quomodo sint communes,
+<lb/>demonstremus. Quum sane oporteat corpus omne ad sen-,
+<lb/>fum compofitum, quodque dissimilare appellitant, si probe
+<lb/>suas functiones obiturum fit, non ex qualibuscunque, ut
+<lb/>fors tulerit, partibus simplicibus, neque ex aliquo numero
+<lb/>aut magnitudine. no n congruente constitui, neque fortuitum
+<lb/>hunc esse compofitionis modum, in quatuor his generibus
+<lb/>organorum omuium erunt morbi. At .singulorum generum
+<lb/>hac tuor differentiae: primi quidem generis. enarrari, quum,
+<pb n="6.845"/>
+<lb/>decens partis consorinatio labefactata fuerit, aut figuram non
+<lb/>idoneam, aut caritatem, aut meatum acceperit, aut horum
+<lb/>aliquid perdiderit, quae adesse oportebat. Ex hoc genere
+<lb/>quoque funt asperitas ipfius et laevitas indecenter immutatae.
+<lb/>Secundi vero generis, quod in simplicium primarumque
+<lb/>partium numero continetur, duplex erit morborum dis.
+<lb/>serentia, aut alienius rei, quam inesse congruebat, penuria,
+<lb/>aut rei minime necessariae exuperantia. Tertii quoque ge-.
+<lb/>neris, quod ad magnitudinem spectat, similiter duplex differentia.
+<lb/>Si quid enim majus increverit, . quod nunus esse
+<lb/>oporteat, aut contra nunus evnserit, quod grandius esse decebat,
+<lb/>nequaquam recte te habuerit universum organum
+<lb/>Reliqui demum generis morborum .structurae aut in situ a
+<lb/>naturali fede immutato, aut interturbata partium luter fe
+<lb/>forietale differentiae constituentur. Quemadmodum autum
+<lb/>ex flurplicibus corporibus unumquodque primorum organormn
+<lb/>vel integram vel vitiatam structuram sortitur, atque
+<pb n="6.846"/>
+<lb/>ex his ipsis simitas aut morbus existit, sic rursus ex ipsis
+<lb/>prunis organis fecunda constituuntur. Musculus etenim,
+<lb/>vena et arteria primorum funt organorum, digitus fecundorum,
+<lb/>et hoc magis etiam pes, atque pede magis crus.
+<lb/>Nam in universum, quaecunque ex similaribus partibus congruentibus
+<lb/>unius functionis gratia procreata funt, inter prima
+<lb/>organa numerabuntur. Quae vero rursum ex his componuntur,
+<lb/>etiamsi unam quam maxime organi functionem
+<lb/>obeant, inter secunda ordine collocabuntur. Edem vero
+<lb/>et horum organorum erunt morbi, qui primorum esse enarrati
+<lb/>sunt. Sed de organorum differentiis alio in libro disseruimus,
+<lb/>quae nimirum absolute prima sint, et post haec
+<lb/>sccunda et tertia et quarta collocari conveniat. Nonnulla
+<lb/>siquidem utrinque habent notas, ut tum prima, tum secunda
+<lb/>esse videantur. At praesens oratio ejusmodi accurata tradatione
+<lb/>non indiget. Ad id tamen unum spectare velim,
+<lb/>an simplex quoad tensum, an composita sit pars. Simplicis
+<pb n="6.847"/>
+<lb/>etenim partis primi dicti morbi naturalium elementorum
+<lb/>differentia definiti sunt. Ad compositam autum partum fecundi
+<lb/>spectant, qui utrique suppositioni sunt communes.
+<lb/>Nullum vero morbi genus est, neque in simplicibus corporibus,
+<lb/>neque lu compositis, quod sit utrisque proprium. Divisionis
+<lb/>si quidem methodus id fieri non posse demonstrat.
+<lb/>At unus est praeterea morbus omnibus corporibus tum fimplicibus,
+<lb/>tum compositis communis, sive ea prima sint organa,
+<lb/>sive fecunda, sive tertia, jam nunc explicandus. At
+<lb/>hujusce inventionis morbi via est, quod omnibus dictis partibus
+<lb/>communiter datur. Si quid enim ipsis secundum naturam
+<lb/>fe habentibus lusit commune, quod animanti functionem
+<lb/>aut usum aliquem praestet; id profectu si prorsus alfletur,
+<lb/>communis quidam in ipsis morbus constituetur. Sed
+<lb/>quid hoc, quod omnibus commune tribuitur? Propriarum
+<lb/>partium unitas, qua unumquodque praeditum ununt esse
+<lb/>et unam functionem ufumve perficere dicitur. Haec si qua
+<lb/>occasione fuscatur, id partis morbus esu Quale vero nonren
+<pb n="6.848"/>
+<lb/>singulis in partibus hic morbus sortiatur , paulo^ post
+<lb/>dicemus, ubi dicturum generum differentias in species particulares
+<lb/>diviserimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Atque profecto id jam rursus a priori suppofitione
+<lb/>ducto exordio moliamur. Duo itaque ex hac sappositione
+<lb/>similarium partium morbi positi sunt, qui in meatuum
+<lb/>inconrmoderatione consistunt. Unus quaedam ipsorum
+<lb/>meatuum dilatatio est, alter astrictio. Utriusque vero
+<lb/>eorum differentia duplex. Astrictiouis quidem corporis undique
+<lb/>lu se ipsum cousidentis augustia, atque ipsorum meatuum
+<lb/>obstructio. Dilatationis vero corporis ducta in omnem
+<lb/>partem extensio; ipsorum meatuum veluti quaedam
+<lb/>laxitas ex procidentia elementorum, quae corpora proprie
+<lb/>appellari asseverant, quum simplicia ac prima sint. . Nam
+<lb/>quae ex his componuntur, concreta vocant. Porro ex sccuuda
+<lb/>suppositione duae sunt morborum differentiae : prior,
+<lb/>quum similares partes solis qualitatibus alterantur; posterior,
+<lb/>quum ad ipsas partes aliqua substantia dictis praedita quasitalibus
+<pb n="6.849"/>
+<lb/>fluit. Atque hic secundus modus, quem tumorem in
+<lb/>partibus procreare nemo medicus ignorat. Etenim eryfipelata,
+<lb/>phlegmonae, oedemata, phymata, phygethla, strumae,
+<lb/>elephantiafis, scabies, lepra, vitiligines et scirrhi hujus
+<lb/>funt generis, qui morbi neminem latere possunt. Verum
+<lb/>qui morbi in stola qualitatum ipsarum intemperie consistunt,
+<lb/>difficilius deprehenduntur , nisi magna partis lu statum videlicet
+<lb/>praeter naturam eversio facta suerit. Tunc enim jam
+<lb/>ab omnibus facile cognoscitur quae lu toto corpore febris
+<lb/>appellatur, quum calor exuperet; lu partibus vero luterdum
+<lb/>etiam manifeste fe prodit. Etenim et crura iis, qui
+<lb/>liberalius praeter consuetudinem ambulaverint, et manus, si
+<lb/>quis eas plurimum exercuerit, aut remigando, aut fodiendo,
+<lb/>aut aliquid hujusmodi faciendo, manifeste calidiores apparent
+<lb/>tum ipsis laborantibus, tum externis, qui eos tetigeruit.
+<lb/>Si quis enim magnus tumor partibus adnafcatur, ex tersus
+<lb/>ipsis affluente substantia quadam calida, is ex sccunda
+<pb n="6.850"/>
+<lb/>morborum erit differentia. Ex pruna vero omnes nunc
+<lb/>commemorati scaturriunt, quique vel lu una quacunque parte,
+<lb/>vel in universo animalis corpore, aut ab aestu stolis, aut
+<lb/>ignis calore remanens constituitur affectus; quales fiant et
+<lb/>qui typhodes et febriles nominantur. Morbi vero frigidi cafido
+<lb/>oppositi affectus extremas partes manifesto adeo plerumque
+<lb/>obsidet, ut ipsae emortuae decidant. At hujusmodi
+<lb/>affectus in universo corpore iis oboritur, qui sub vehementi
+<lb/>frigore iter fecerint. Eorum enim plerique in ipso
+<lb/>itinere mortem obierunt; plerique etiam, priusquam domum
+<lb/>appulissent, diversorium assequtus, seminrortui et congelidi
+<lb/>sub conspectum veniunt. Talis affectus apoplecticis, eplleplicis,
+<lb/>tremulis et convulsis multoties accidit. Porro eorum,
+<lb/>qui per iter frigore mortem occubuerunt; alii emprosthotono,
+<lb/>alii opisthotono, alii tetano, alii congelatione vocata
+<lb/>correpti obriguerunt, alii quid apoplexiae simile perpessi
+<lb/>sunt. His lu omnibus sane, quibus aliquod symptoma supervenit,
+<pb n="6.851"/>
+<lb/>id multorum sententiam huc usque distrahit , ut
+<lb/>symptoma morbum, morbum ipfmn symptomatis cautam
+<lb/>esse existiment. Quibus namque functionum laefiones morbi
+<lb/>esse videntur, lu rationis examine et convulsiones et stuperes
+<lb/>et torpores et hujusmodi caetera morbos vocitant. Uerum
+<lb/>nos initio de nominibus ita disseruimus, ut sus omnibus
+<lb/>innotescat, non de. rebus ipsis, sed de nominibus esse dissidium.
+<lb/>Illos siquidem solos aliquis arguet, qui .suum in omnibus
+<lb/>propositum servant; sed quanquam aberrant, sapienter
+<lb/>tamen aliquid facere ridentur. Eos enim audire licet, quum
+<lb/>interdum distinguunt et asserunt, si phlegmonae convulsio
+<lb/>superveniat, ipsam convulsionem phlegmones et consectariam
+<lb/>propaginem esse et symptoma, si vero foli intemperiei
+<lb/>succedat, morbum. Idem quoque de febre statuunt: eam
+<lb/>siquidem symptoma esse ducunt, quum alienius partis sensibilis
+<lb/>affectus supervenit; si vero aliter, et morbum et alscctionem
+<lb/>appellant. Hi sane improbandi sunt, qui, quunr ab
+<pb n="6.852"/>
+<lb/>externis repreheusionem non expectent, ipsi tamen lu fe
+<lb/>ipfos pugnantes decidunt. Qui vero vel functionum laesiones
+<lb/>morbos vocari supponentes perpetuo ita statuunt, vel
+<lb/>quid aliud ejusmodi negligunt, eos in nominibus errare,
+<lb/>neu autem in rebus ipsis peccare, existimandum esu At
+<lb/>omnia nomina ad medicam artem spectantia alibi sufius explicata
+<lb/>sunt: et quicunque recte bis uti velit, tractatum illum
+<lb/>perlegat. Nunc vero quia res ipsius speculari. propofitum
+<lb/>est, praedictum nominum institutum sequentes ea .deinceps
+<lb/>aggrediamur. Equidem de calidis et frigidis citra rnateriam
+<lb/>affiuenlem affectibus a nobis dictum esu Eodemque
+<lb/>modo tum humidi, tum sicci aborientur morbi, quum tota
+<lb/>corporum haud aliquam materiam extrinsecus in teste recipientimn
+<lb/>natura allevatur. Exiguae itaque alterationes difficillime
+<lb/>deprehenduntur , magnas vero conspicue licet
+<lb/>cognoscere, praesertim lu iis quae emoriuntur partibus.
+<lb/>Etenim earum nonnullae veluti sale conditae et admodum
+<pb n="6.853"/>
+<lb/>arefactae conspiciuntur, idque rarius obtingit; quaedam vero
+<lb/>adeo molles atque humidae tum conspicientibus tum
+<lb/>tangentibus quamprimum innotescunt, ut, si earum partes
+<lb/>manu tractare volueris, subitu ipsae defluunt et more siuentis
+<lb/>aquae e digitis excidant. Sic et ossium putridorum quaedatu
+<lb/>velut arena conspiciuntur, lignis vetustate corruptis
+<lb/>similia; quaedam tanquam muscosa, quorum intemperiei
+<lb/>incommoderatio, ob humiditatem vel siccitatem orta, totum
+<lb/>os emortuum reddidit. Caeterae vero omnes partium intemperies
+<lb/>exiles multos latent, quae ab ipsis imbecillitates
+<lb/>nominantur. Quum enim phlegmone vel ulcus aut ejusmodi
+<lb/>alius affectus ventriculo insidet, nullam aliam exquirunt
+<lb/>laetae coctionis causam. Si vero talium morborum
+<lb/>nullus fuerit, ventriculi imbecillitatem esse dicunt, tanquam
+<lb/>quid aliud protulerint ah eo, quod manifestum est, puta cibos
+<lb/>non probe;.concoqui. Quid enim aliud imbecillitatem
+<lb/>eos ulcere coniiciendum praeterquam in actione roboris penuriam
+<pb n="6.854"/>
+<lb/> ? At id non est, quod quaeritur, sed quae sit hujusce
+<lb/>imbecillitatis causa. Cur enim ventriculus lu sua functione
+<lb/>imbecillius agat, quum neque phlegmone, neque frirrho,
+<lb/>neque ulcere, neque quovis alio ejusmodi morbo afficiatur?
+<lb/>Non enimilli profecto citra causam aliquam probe coquendi
+<lb/>facultas erepta est. Itaque aut meatuum incommoderatio,
+<lb/>aut intemperies causa plane dicenda esu Quo etiam manifeste
+<lb/>patet, . nullum primorum morborum, qui partibus fimiIaribus
+<lb/>proprie rusident, ratione curari posse, nisi prunorum
+<lb/>elementorum speculatio accesserit. Verum adversus eos
+<lb/><hi rend="u">alii</hi>s in commentariis, quae decebant, prodita sunt. Id
+<lb/>vero nunc scire oportet, ventriculi imbecillitatem, venae,
+<lb/>arteriae, musculi et cuiuscunque simplicis organi tum vitalis
+<lb/>tum animalis aut propter meatuum luconunoderationem,
+<lb/>aut propter intemperiem omnium consensu necessario
+<lb/>oboriri. Quo pacto vero tales eorum affectus dignoscendi
+<lb/>sint, non est praesentis orationis. Non enim morborum dignotiones,
+<lb/>sed ipsos morbos enumerare mihi propositum est.
+<pb n="6.855"/>
+<lb/>Atque misti videor universos partium similarium morbos
+<lb/>explicasse.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Qui vero sint partium organicarum morbi,
+<lb/>consequens est dicere. In his igitur organis unam quamdam
+<lb/>omnino esse partem actionis causam, huicque ceteras
+<lb/>omnes ad usum aliquem praestandum creatas fuisse, alio lu
+<lb/>opere demonstratum esu Laedetur autem totius organi sunetio
+<lb/>tum maxime ac primum, quum ipsa pars actionis caula
+<lb/>aegrotaverit; jam vero etiam ceterarum partium majores
+<lb/>affectus actionem interturbant. Quicunque igitur affiectus
+<lb/>non per fe, sed laedendo primmn functionis organum actionem
+<lb/>interturbant, lu morborum causae; non ipsi morbi fiunt.
+<lb/>Si vero non laedendo aliquam primum functionis partem
+<lb/>functionem interturbare queunt, morbi jam ejusmodi asseotus
+<lb/>vocandi fiunt. ohorientur autem, ut diximus, vel
+<lb/>quum ea quae secundum naturam est couformatio permutata
+<lb/>est, vel quum salvus non extat decens partium numerosi
+<pb n="6.856"/>
+<lb/>vel non idonea cujusque partis magnitudo servatur, vel non
+<lb/>quo oporteat situ ipsae partes simul positae sunt. Quandoquidem
+<lb/>enim demonstratum est, earum partium nullam a natura
+<lb/>temere procreatam fuisse, sed omnes, ut melius vel tutius
+<lb/>quodcunque functionem obiret organum, necesse omnino
+<lb/>est et earum laesiones, quae vel penitus actionem edi prohibent,
+<lb/>vel ipfas partes interturbant, morbos existimari ; quae vero
+<lb/>ad primae functionis partis laesionem conferunt, eas morbovum
+<lb/>caulas, ut nuper dictum est, appellari.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Quamobrem et vatii et vari, et qui planci
+<lb/>planas pedum habent plantas, deteriorem crurum actionem
+<lb/>moliuntur ob decentis figurae ametriam. Ita vero, quibus
+<lb/>fractura laefis conformatio restituta non est, non recte ipfi
+<lb/>affecto membro actiones .edunt. Male quoque actionibus
+<lb/>funguntur, quibus ob arthritidis vehementiam laxatio oborta
+<lb/>est, aut, perfracto juxta dearticulationem supercilio, prompte
+<lb/>articulus ad superiorem partem exilit ac excidit, aut quum
+<pb n="6.857"/>
+<lb/>callus lu articulo supra modum excrevit lu ejusmodi affectibus,
+<lb/>tota dearticulatio ob spatii angustiant ad motum inepta
+<lb/>est. Haec itaque nscititia sunt figurarum vitia. Congenita
+<lb/>vero incurrunt in utero foetus, quae, prima consormatione
+<lb/>interturbata, in omni corporis parte nuscuntur et aegrotum
+<lb/>illa parte animal esuriunt. oportet enim et cordis et pulmotis
+<lb/>et ventriculi et cerebri et linguae et lienis et renum
+<lb/>caeterarumque omnium partium figuram servari. Si namque
+<lb/>earum alicui laesio oboriatur, propriam quoque totius
+<lb/>organi functionem deteriorem perfici necesse esu Et vero,
+<lb/>nisi etiam caritatum quae partibus lusunt omnium tum maguitudo
+<lb/>tum numerus servetur, eas ob res necessario laedetur
+<lb/>actio. Multi autem hujusmodi morbi sunt, quorum
+<lb/>nonnulli coalitu quodam, nonnulli lentorum ac crassiorum
+<lb/>humorum obstructione consistunt, alii etiam exarescentibus
+<lb/>corporibus, aut aliqua vicluarum partium ipsis incidente
+<lb/>aut comprimente coarctatis oboriuntur. Interdum vero et
+<pb n="6.858"/>
+<lb/>ipsorum corporum ejusmodi meatus continentium substantia,
+<lb/>aut scirrhum, aut phlegmouen, aut sphacelum, aut suppuratum,
+<lb/>aut oedema, aut alio quocunque modo extraneam maguitudinem
+<lb/>adepta, ac deinceps tumorem ad interiores cavitates
+<lb/>refundens, meatus obstruit, qui ab illis meatibus plurimum
+<lb/>disserunt, quos prioris sectae principes ex primorum
+<lb/>atque impatibilium elementorum concursu fieri fupposuerunt.
+<lb/>Num lulestinorum, arteriarum atque omnium
+<lb/>hujusmodi organorum meatus, hos inquam, magnos ac perspicuos,
+<lb/>omnes manifeste cernimus. Quod si ejusmodi meatus
+<lb/>ob parvitatem sensum effugiat, non is ex eodem genere
+<lb/>cum .illis meatibus existit , quos sectarum prior supposuit.
+<lb/>lu ejusmodi omnibus affectibus, lu quibus corporum ipsarum
+<lb/>in aliquem tumorem sublaturum meatus tum obstrui,
+<lb/>tum coarctati contingit, nonnunquam unus. duntaxat est
+<lb/>morbus, obstructio actionem .laedens, nonnunquam et lue,
+<pb n="6.859"/>
+<lb/>et alius corporum affectus obstructionem efficiens. Quum
+<lb/>itaque corpus tumore vexatum nullam propriam suuctionem
+<lb/>sortiatur, unus quidem erit morbus in obstructione,
+<lb/>ejus vero causa non etiamnum morbus est, corporis tumorem
+<lb/>habentis affectus. Si enim tunica (si fors tulerit] venae
+<lb/>lu jecoris concavis positae quocunque ejusmodi morbo asseeta
+<lb/>meatum coarctaverit, quo convexarum hepatis partium
+<lb/>vasa sanguinem assumunt, ita erunt morbi, alter ipsius venae,
+<lb/>quae afficitur, alter meatus obstructio. Interturbat autem
+<lb/>affectus venae probi sanguinis generationem , obstructio vero
+<lb/>distributionem. Utraque horum functio animali necessaria
+<lb/>est. Patet enim, eos affectus, qui functiones primo laedunt,
+<lb/>morbos esse dicendos. leia quidem vena nullo.
+<lb/>morbo affecta, si ob lentos quosdam et orasses humores meatibus
+<lb/>impactos distributio impediatur, hic unicus visiteris
+<lb/>morbus erit obstructio. Sic etiam in intestino si obstructio
+<lb/>fola fuerit, unus erit morbus; at si ipsimi phlegmone laboret,
+<pb n="6.860"/>
+<lb/>ob idque interius spatium occludat ac deorsum tre
+<lb/>excrementa prohibeat, duo erunt quoque morbi. Multoties
+<lb/>enim ab uno morbo morbus oritur, quemadmodum lu praedictis
+<lb/>sc res habet , quandoquidem inflammationibus, eryfipetatis,
+<lb/>herpetibus, carbunculis, vel quibusdam ejusmodi
+<lb/>morbis febris suboritur. Nonnunquum vero, quod efficitur,
+<lb/>functionis est laesio, ip suntque oportet tum pathema, tum
+<lb/>symptoma nominare, ipsius autem causam videlicet morbum;
+<lb/>questa obstructio causa est, ne amplius alimentum
+<lb/>distribuatur, et refrigeratio obtusioris sensus causa est, quae
+<lb/>symptomatis morbus esu Quum autem ipse affectus sunctionem
+<lb/>primo laedat, et ipsius causa primo non laedat, asseerum
+<lb/>quidem morbum, quod vero ipsum efficit, causam
+<lb/>morbi nominare oportet, quemadmodum in lentis humoribus
+<lb/>et obstructione se res habet; ipsa namque obstructio
+<lb/>morbus est, humores vero morbi causae. Quicunque igitur
+<lb/>morbi caritatibus obveniunt, quum hae interdum obstruuntur,
+<pb n="6.861"/>
+<lb/>interdum inconrmoderate dilatantur, ad conformationis
+<lb/>partium genus reducentur. In sus siquidem omnibus naturasis
+<lb/>aliquo modo conformatio impellitur. At certe laevitas
+<lb/>et asperitas non ipsae a natura partes consormante frustra
+<lb/>conditae sunt Hic itaque in omnibus partibus morbi consistent,
+<lb/>quum pars natura laevis ufperatur et aspera laevigatur.
+<lb/>- Eorum evidentissima funt medicis, quae et nsperatis et
+<lb/>laexigatis ossibus acridunt, et quae faucimn ufperitates tusfes
+<lb/>excitanti Hic praeterea agnoscendum est, interdum figuram
+<lb/>partis oblaefam simul per fe aliquem meatum oblaedere.
+<lb/>Quod exempli gratia nafo oboriri conspicitur, qui
+<lb/>quum ab ictu violento nonnunquam simus factus sit, tantopere
+<lb/>meatum coarctavit, ut vel nullo modo, vel aegre
+<lb/>per ipsum respiret Cousiat igitur, in hujusmodi affectis
+<lb/>bus meatus angustiam morbum esse. Primum enim ipsa
+<lb/>respirandi actionem interturbat; praecedens vero ipsius
+<lb/>caula nest similas, quae naturalis ipsius figurae laesio est.
+<pb n="6.862"/>
+<lb/>In genere igitur consormationis, quod a naturali siructura
+<lb/>decessit, ut jam actionem laedat, .praedictae . morborum
+<lb/>differentiae fnborientur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">ln numero partium simplicium, ex quibus
+<lb/>unumquodque construitur organum, duplices erunt primae
+<lb/>morborum differentiae, aut quum aliqua pars deficit, aut
+<lb/>exuperat. In earum utraque aliae deprehenduntur disserentiae.
+<lb/>Ex his, quae exuperant, quaedam ex genere eotum
+<lb/>sunt, quae secundum naturam dicuntur, ut si cui sextus
+<lb/>nascatur digitus, aut lu oculo pterygium, aut in nare
+<lb/>cernis surculus, aut in alio quopiam meatu quoduis aliud
+<lb/>tale genus. Et vero eorum ipsorum nonnulla quidem erunt
+<lb/>morbi, veluti pterygium; quum enim vehementer auctum
+<lb/>est, pupillam obtenebrando visium interturbat; nonnulla
+<lb/>vero morborum causae, ut carnis surculi, qui meatus obstruunt;
+<lb/>primum enim morbus obstructio est, quia pruno
+<lb/>actionem laedit. Quaedam toto genere praeter naturam
+<pb n="6.863"/>
+<lb/>sunt, ut lumbrici, ascarides, lu vesica calculus, in oculo
+<lb/>grando, suffusio; pus, verrucae, ntelicerides, atheromata,
+<lb/>steatomata, vitiliglues, leprae, leucae, cassi, et quae in abscessibus
+<lb/>reperiuntur omnia Quod autem et ex his quaecunque
+<lb/>functionem primo interturbant, morbus dicamus, ut .
+<lb/>suffusionem, quae vero non sunt ejusmodi, morborum canfas,
+<lb/>omnibus manifestum est. Ferum vero quae deficiunt
+<lb/>partium quaedam omnino deperditae sunt, quaedam veluti
+<lb/>e dimissio amputatae ac mutilatae. Et quidem lu prima
+<lb/>generatione ejusmodi plurima fieri latet neminem. A partu
+<lb/>vero ossa saepe integra eximuntur e digitis, artubus, capile
+<lb/>et lateribus ; aufertur etiam nonnunquam digitus, pes,
+<lb/>extrema manus, tibia et cubitus. Extrahuntur praeterea
+<lb/>venae variofae et glandulae siirrho induratae et dentes
+<lb/>exesi. Extrahitur quoque gurgulio, omentum, praeputium,
+<lb/>ipsius pudendi portio , ac multoties penis integer, quemadmodum
+<pb n="6.864"/>
+<lb/>etiam testes. Nuper vero quidam vehementi tutiversi
+<lb/>corporis convulsione correptus anteriorem linguae
+<lb/>partem mordicus. amputavit, delude a convulfione sospes
+<lb/>factus peraeque ac ante loqui non potuit. Hujus generis
+<lb/>Eunt et quae mutilationes vocantur labiorum, narium, anrium,
+<lb/>et quaecunque aliae carnosae partes aut vehementer
+<lb/>avulsae aut putrefactae penitus exectae sunt. Etenim per
+<lb/>hujusmodi miserias qui secundum naturam est partium numerus
+<lb/>imperfectus est, five una pars, sive duae, sive plores
+<lb/>desint, haecne vel omnino deperditae, vel ex parte sublatae.
+<lb/>Quaecunque sane talium functionem interturbant
+<lb/>rui ipsorum ratione, lu morborum genere constituentur;
+<lb/>quae vero aut aliquam partem aliam functionis opificem
+<lb/>refrigerant, aut parcius alimentum distribuunt, morborum
+<lb/>causae; quaedam vero utrumque genus assequuntur et ut
+<lb/>causae et ut morbi vicem, ut gurgulio, qui, quum radicitus
+<lb/>exectus est, et vocem laedit, et pulmones thoracemque refrigerati
+<pb n="6.865"/>
+<lb/>Quum enim ex iunctionum ac usuum meditatione
+<lb/>didiceris, omnium animantis partium alias ad actionem aliquam
+<lb/>tuti animali utilem conferre, alias per te quidem ni-.
+<lb/>nil agere, sed usum quendam actionem obeuntibus praehere,
+<lb/>liquet, quod eorum laesiones, quae in actionem plane
+<lb/>dimicant, primum statues partium animalis esse morbos,
+<lb/>quae vero in aliquem usum, morborum causas. Quare,
+<lb/>quae paries duplicem actionem aut duplicem usum praestant,
+<lb/>interdum in una laesione duplicem aut morbi aut
+<lb/>caulae obtinebunt rationem. At si qua pars utrumque simul
+<lb/>moliatur, tum usum, tum actionem, quemadmodum quibusdant
+<lb/>esse videtur et gurgulio, hujus partis iactura altera
+<lb/>quidem ratione erit morbus, altera vero morbi causa. A tqui
+<lb/>manifestum est, reliquae permanentis ac servatae partile
+<lb/>morbum esse, non ejus, quae amplius non sit: oris enim caparitatis
+<lb/>in illa parte, cui morbus nunc iusidet, particulam
+<lb/>esse profiteberis, id quod uvam et gurgusionem appellamus.
+<pb n="6.866"/>
+<lb/>Quum itaque haec deperdita est, deest .aliquid capacitati;
+<lb/>atque ita id totum unus morbus .est, manente, quod ab inis
+<lb/>fio concessum est, omnem -scilicet actionem a morbo laedi,
+<lb/>Quamobrem aut, non unam aliquam esse animantis actionem
+<lb/>et vocem et inspirationem et .expirationem, denumarandum
+<lb/>est, aut, si ita se res habet, constat, uvulae jacturam
+<lb/>in palmo morbum efficere. Sitnili ratione jactura dentis
+<lb/>oris est morbus, si dens ex iis fuerit, qui manducationi
+<lb/>inserviunt, isque lu illa .parte, ubi manducatio laeta est; fi
+<lb/>vero ex inrisoribus nominatis, et esum et loquutionem interturbat.
+<lb/>Sic etiam; fi linguae. dimidium abscissiun est, residuae
+<lb/>parti praeter naturam mutilatio morbus esu Eodem
+<lb/>modo et omento, et pudendo, et omnibus ita affectis partibus.
+<lb/>Quod si quis id non morbum, fed affectum vel astcctionem
+<lb/>vocare velit, de nomine,. non de re contendet.
+<lb/>Liquet autem, lu lingua,. omento, pudendo, denique omnis
+<pb n="6.867"/>
+<lb/>bus ejusmodi mutilatis organis aliquam esse magnitudinis
+<lb/>- diminutionem ah omnibus enumeratis morbis saetam; ipsi
+<lb/>vero animali diminutionem haud necesse est lore manifestum,
+<lb/>ut mutilatum appareat, fixi aliquis partium numerus erit
+<lb/>ablatus, tametsi et arteriae et venae et nervi et cutis inturdum
+<lb/>et adeps et membranae et cero lu talibus affecti- t
+<lb/>bus auferuntur. lu gurgulione autem et varicosis Vasis
+<lb/>exectis ipsis etiam organis aliquis partium numerus aulertur.
+<lb/>Atque haec omnia ad partium, quae immutantur, nu- .
+<lb/>merum mox referentur. Ubi vero quorunrcunque organorunr
+<lb/>aliqua portio tollitur, non autem eximuntur partes,
+<lb/>haec ad utrumque genus quodammodo referentur. Etenim
+<lb/>deest animanti tum partium simplicium numerus, tum organi
+<lb/>compositi magnitudo, tutum siquidem mutila tum esu
+<lb/>Et sane quod utriusque generis, tum numerii tum maguitudinis,
+<lb/>. fuperius alterum praedicamentum, idque quantitas
+<lb/>tis, statuere liceat, cuique manifestum est, quandoquidem
+<pb n="6.868"/>
+<lb/>quantitas una discreta est, quae etiam quantitas proprie appellatur,
+<lb/>altera continua, quae magnitudo nominatur.. Verum
+<lb/>in praetentis dilucidius mihi vitum est haec ita distinguere,
+<lb/>qui alteram quantitatis differentiam fusi numero, alteram
+<lb/>fusi magnitudine constituerim.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Explicatis autem Itujusce generis morbis,
+<lb/>de iis,. qui ad magnitudinem aut ad partium quantitatem
+<lb/>reducuntur, aut quomodocunque eos nominare placuerit,
+<lb/>disseramus. . Id autem genus non idem ac praedictum est
+<lb/>Nam si, manente secundum naturam partis sigma, magnitudo
+<lb/>vitietur, qumn functio quaedam laeditur, ea de causa
+<lb/>partis accidet morbus, veluti si in prima statim couformatione
+<lb/>lingua talis sit, ut vel ob magnitudluem lu ore nuiIum
+<lb/>habeat conversionem, vel osi parvitatem . omnes ipsius
+<lb/>oris partes non attingat. Verum in jam perfectis praeter
+<lb/>naturam partium incrementa non admodum crebro fieri
+<pb n="6.869"/>
+<lb/>conspiciuntur ; minuuntur tamen saepius , vocatmque lue
+<lb/>morbus a quibusdam aliis macies, ab <hi rend="u">aliis</hi> partis tabes; Partium
+<lb/>incrementa lu ulceribus supercrescente carne fiunt,
+<lb/>atque in priapismo q quem vocitant. Nicomacho Smyrnaeo
+<lb/>adeo totum corpus supra modum nrcrenrentum cepit, ut ne
+<lb/>deinceps movere se ipsum posset; sed ipsum sanitati restifuit
+<lb/>Aesculapius. Linguam cuiusdam quumplurimnm auctam
+<lb/>vidimus, omnis doloris expertem, ut neque oedema,
+<lb/>neque scirrhus, neque phlegmone esse videretur, - Neque
+<lb/>enim prementibus cavata cedebat, neque sensus erat expers,
+<lb/>neque dolebat, sed id ipsum duntaxat incrementum quoddam
+<lb/>incommoderatum erat, illaesa prorsus ipsius partis substantia.
+<lb/>Sic et testes et mammae aliis uterque, ullis alter
+<lb/>supra modum increvit. Quae etiam struma vocatur; huius
+<lb/>generis est, quae, quum immoderatius increvit, non parvam
+<lb/>functionibus laefionem adfert. Similiter etiam angulorum
+<lb/>in oculis sunt ametriae hujus generis, quorum rmmoderatius
+<pb n="6.870"/>
+<lb/>incrementum enoanthis, diminutio rhyas nominatur.
+<lb/>Atque hujusmodi- sunt hujus generis morborum
+<lb/>differentiae.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Quum vero quae secundum naturam est
+<lb/>structura immutatur, oriuntur morbi; a situ quidem lu.
+<lb/>articulorum tum luxationibus, tum dissertionibus, atque in
+<lb/>intestini prolapsu, et omenti procidentia nuncupatis; ab
+<lb/>cavero quae non fecundum naturam est partium adiacentium
+<lb/>coniunctione ligamentum laxatum, aut contensum,
+<lb/>aut abruptum in illa parte dearticulationis motum oblaediti
+<lb/>Hoc in genere sunt et linguae et pudendorum incommoderata
+<lb/>vincula, quibus illa tum lu loquendo., tum mauducando
+<lb/>plurimum interturbatur, pudenda vero lu .ejaeulando
+<lb/>semen, quae ob inversum meatum lu mulieris uteruui
+<lb/>eminus et directe semen- emittere nequeunti Atque
+<lb/>etiam coalitus praeter naturam aut labiorum ulceratorum,
+<lb/>aut palpebrarum, aut digitorum, aut sedis, aut cuiusdam
+<pb n="6.871"/>
+<lb/>ejusmodi alterius .partis, ad hancce disserentium spectanti
+<lb/>Istae sane hujus .generis sunt morborum species, quae a stiuctrlra
+<lb/>proficiscuntur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Superest et quintum morbi genus, unitalis
+<lb/>solutio, sive haec uni cuidam partium simplicium, quas
+<lb/>similares nominant, sive etiam compositis accidat, unde
+<lb/>paulo ante luter communes utrarumque partium morbos
+<lb/>ipsam commemoravimus. Quum enim ligamentum vel
+<lb/>arteria divellitur, communis est et totius organi. et divulsae
+<lb/>partis morbus. Nam utriusque soluta est continuitas ; totius
+<lb/>quidem organi, quum ipsius partes non amplius sibi
+<lb/>cohaerent, neque uniuntur; ipsius vero divulsae partis,
+<lb/>quod non amplius una maneat, sed duae factae sint. Quod
+<lb/>si non plane divulsa sit, sed partu aliqua tantum, non amplius.
+<lb/>id tutius organi morbus est, nisi ex arridenti, quod
+<lb/>pars ipsius affecta sit, sed ipsius duntaxat partis affectae proprius
+<pb n="6.872"/>
+<lb/>ac primarius. Porro continui salutio lu osse quidem
+<lb/>fractura nominatur, lu omnibus vero carnosis partibus
+<lb/>communiter ulcus. Ruptura .et evulsio ejusdem funt generis.
+<lb/>Illa quidem lu carnosa, haec vero in nervosa parte
+<lb/>consistit, divulsis quae in ipsis sunt fibris ab aliqua violenta
+<lb/>contusione aut repentina et effusa trusione. Sed
+<lb/>quae avulfiones vocantur, partium organicarum propriae
+<lb/>sunt affectiones. Atque hae funt universae simplicium morhorum
+<lb/>differentiae.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">Ad compositurum vero morborum differ
+<lb/>rentica jam trausire tempestivum est, a similaribus corporibus
+<lb/>ducto rursum exordio. Erit quidem secundum primam
+<lb/>suppositionem ex dilatatione et coarctatione meatuum morbus
+<lb/>quidam compositus, non quod particulatim singuli
+<lb/>meatus utrumque patiantur, sini quod vicissim corporum alia
+<lb/>coarctentur, alia dilatentur, ile ut nihilo magis dilatationem
+<lb/>meatuum quam coarctationem arguere possis lu tulo
+<pb n="6.873"/>
+<lb/>similiari corpore; neque aliquam esse teusibilem ipsius partem
+<lb/>deprehenderis, cui alterutra duntaxat iusideat; sed
+<lb/>quaecunque pars corripitur, eam ab utroque morbo.semper
+<lb/>affici. Ex secunda vero suppositione, qualitatibus solis a naturati
+<lb/>statu decedentibus, lu unoquoque similari corpore compositi
+<lb/>morbi erunt quatuor, calidus simul et siccus, calidus
+<lb/>simul et humidus , frigidus simul et siccus , frigidus <hi rend="u">sim</hi>ul et
+<lb/>humidus. Affluente vero ipsis aliqua substantia, peraeque alii
+<lb/>quatuor erunt morbi, qui ipsas quatuor qualitatum conjugationes
+<lb/>continent. Quoniam vero et continuitatis divisio non
+<lb/>compositis tantum. organis, verum etiam simplicibus corporibus
+<lb/>inest, implicabitur interdum et haec nunc enarratis
+<lb/>ex utraque suppositione compositis morbis et conscriptis
+<lb/>quoque statim ab initio totius operis simplicibus. Nam fieri .
+<lb/>potest, ulceratum esse simul et eo quod secundum naturum est
+<lb/>temperamento sicciorem vel humidiorem vel frigidiorem vel
+<lb/>calidiorem esse partem , atque ulceratum simul et humidiorem
+<pb n="6.874"/>
+<lb/>existere, nequaquam etiam calidiorem esse. Ulceratae
+<lb/>igitur simulque etiam inflammatae partes tripliciter a
+<lb/>naturali statu decedunt: ob ulcerationem quidem propriarum
+<lb/>p artium unitatem destruunt; quod vero iusiammationem excitent,
+<lb/>ipsius naturali temperie et calidiores et humiliores efficiunt;
+<lb/>praeterea ob tumorem ipsarum, qui, quum ad tantam
+<lb/>magnitudinem attollitur, ut ob id ipfmn functionem oblaedat,
+<lb/>jam morbus existimandus est, estas et symptoma et
+<lb/>affectio duntaxat, quemadmodum etiam dolor. Quaecunque
+<lb/>igitur et iusianrmata simul et ulcerata sunt corpora,
+<lb/>tribus necessario, interdum etiam quatuor morbis aegrotare
+<lb/>-contingit. Nos autem quum iusiammationem nomluamns,
+<lb/>profecto non veluti partium flagrantiam, ut fuit veteribus
+<lb/>loquendi consuetudo, sini rubentem et renitentem et dolenteni
+<lb/>tumorem. Ile et erysipelatis ulcera nonnunquam aceidmrt.
+<lb/>Carbuneusis enim non datur aliter consistere. Inter
+<lb/>hos morbos mediam naturam sortiuntur et herpetes, et
+<pb n="6.875"/>
+<lb/>cancri, qui multoties cum ulceribus, aliquando etiam sine
+<lb/>his consistunt. Omnes igitur hujusmodi. morbi, etiamsi
+<lb/>citra ulcus eveniant, compositi funt . una quidem ratione,
+<lb/>quod omnes a supervacaneo humore vel calido .vel frigido
+<lb/>procreentur; a flava hile erysipelas; ab atra cancer; a
+<lb/>sanguine phlegmone ; a pituita oedema ; altera vero,
+<lb/>quoniam dicti humores, effi specie omnes sunt humidi, facultate
+<lb/>tamen non humidi; nam qui atrae bilis est, siccus
+<lb/>et frigidus; qui flavae, siccus et calidus; qui pituitae,
+<lb/>humidus et frigidus; qui sanguinis, calidus et humidus;
+<lb/>tertia demum ratione, quod omnes sibi invicem implicer,tur,
+<lb/>raroque eorum aliquis sincerus inveniatur. Nam
+<lb/>plerumque iusiammationibus aut quid erysipelatodes, aut
+<lb/>oedematodes, aut scirrlrodes commiscetur; eryfipelatis vero
+<lb/>vel .phlegmonodes, vel oedematodes, vel scirrlrodes, atque
+<lb/>caeterorum similiter cuique. Ergo multis formis compositi
+<lb/>fiunt omnes ejusmodi .morbi Atque de ipsis fusius in
+<pb n="6.876"/>
+<lb/>libro de morborum causis disseretur, et in eo] qui post
+<lb/>ipsum de morborum symptomatis inscribitur, praetereaque
+<lb/>in methodi . medendi opere, cujus gratia haec omnis
+<lb/>conscribuntur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">Quandoquidem implicationis ipsormn
+<lb/>simplicium morborum rationem explicavimus, jam nunc ad
+<lb/>organorum morbos trauseamus et, quomodo hi fiant compofiti,
+<lb/>demonstremus. Imprimis rei per initia pronuncia;tae
+<lb/>meminisse oportet, alios esse primorum corporum fimilarium,
+<lb/>alios et organicorum et compositurum morbos.
+<lb/>Phlegmone quidem primorum est corporum, laxatio vero
+<lb/>organicorum. Quum itaque membrum aliquod simul et
+<lb/>laxatur, .et phlegmone obsidetur, htxatio quidem hujus totius
+<lb/>organi primo morbus est, phlegmone vero non primo,
+<lb/>neque proprie, sed per accidens. Nam quoniam phlegmone
+<lb/>uniuscujusque partium ipsius morbus est, per accidens
+<lb/>quoque erit tutius organi morbus. Ideoque lippitudo iuflammatio
+<lb/>est membranae, quae corneae adnata est, per acridens
+<pb n="6.877"/>
+<lb/>oculi morbus. Accidit autem nonnunquam, ut cornea
+<lb/>tunica ulcus altum habeat, eaqrte mox exesa tota, aliquid
+<lb/>ipsam subsequentis uveae nominatae procidat, .pupillaque
+<lb/>divellatur. Horum trium astectuum quisque oculi
+<lb/>morbus aestimatur, quamvis ulcus et erosio (osius corueae,
+<lb/>procidentia uveae et divulsio pupillae sit. Quare,
+<lb/>ut lictum est, similarium corporum morbi tutius sunt orgarri
+<lb/>secundum acridens. Itaque, quum unum quodcunque
+<lb/>ex iis composito morbo laboraverit, totius organi quoque
+<lb/>hic erit ex accidenti morbus compositus. Quum autem
+<lb/>plures partes sint ascetae, sed unaquaeque uno detineatur
+<lb/>morbo, sic totius organi morbus erit compositus. Sit, si
+<lb/>fors tulerit, in oculo (non enim impossibilis est suppositio)
+<lb/>simul pterygium , simulque lippitudo, et erosio corneae, et
+<lb/>uveae procidentia, etiam aliquod generationis suffusionis
+<lb/>initium. Quod non unus, neque .supplex sit morbus, omnibus
+<pb n="6.878"/>
+<lb/>patet. Quidam etiam compositum oculi morbum vocanit;
+<lb/>altar non unum compositum, fed multos oculo dicet
+<lb/>messe morbos in diversis .ipsurs partibus consistentes.
+<lb/>Nihil vero interest ad ludicationis remediorum varietatem,
+<lb/>cujus gratia haec omnia indagamus, sive unus suerit compositus,
+<lb/>sive plures pugnantibus remediis indigentes. De
+<lb/>his prosectu uberius in methodi medendi libris dissere tus.
+<lb/>Ad praesentem nunc sermonem hoc tanti momenti indicasse
+<lb/>atque declarasse satis est, probabilem utrosque fovere fententiam,
+<lb/>tum qui multus in oculo esse morbos autuntant,
+<lb/>tum qui, quemadmodum unum aegrotat organum, sic et
+<lb/>unum esse morbum censent, compositum vero, quum, ut
+<lb/>dictum est, plures partes affectae sint seorsum Ut igitur
+<lb/>sunpliciurn morborum alius quidem primo totius organi
+<lb/>morbus erat, veluti suffusio, alius vero ex accidenti, velnti
+<lb/>-corneae ulceratio, ita compositorum quoque morbo- .</p>
+<p>. um proprii quidem erunt. totius organi, qui multas simul
+<pb n="6.879"/>
+<lb/>partes moleste afficiunt, ex accidenti vero morbi compositi,
+<lb/>qui lu una ipsius organi parte consistunt, veluti lippitudo,
+<lb/>quae adnatae membranae est inflammatio. Demonstratum siquidem
+<lb/>est, inflammationem compositunr esse morbum. Si
+<lb/>vero ulcus hanc ipsiun membranam obsideat, mullo etiam
+<lb/>magis composito morbo pars obsiduntur; fed nihilommus
+<lb/>totus ipsis oculus composito morbo allici praedicabitur. Tales
+<lb/>equidem ex accidenti totius organi sinit morbi compofiti.
+<lb/>At quum eodem tempore multae partes assiciuntur,
+<lb/>organorum primo fiunt compotus morbi, atque magis,
+<lb/>fi particulatus: unusquisque simplicium non ex acridenti,
+<lb/>sed primo totius organi fuerit morbus, ut in oculo pterygium,
+<lb/>fussufio et rhyas. Nam eorum quique proprius est
+<lb/>oculi morbus, et quum simul omnes accidunt, conrpofitum
+<lb/>oculi morbum proprium officiunt.- Si quis tali methodo
+<lb/>ratiocinetur, omnes omnium organorum compositos morbos
+<pb n="6.880"/>
+<lb/>inveniet. Mihi veru omnes et persequi et componere
+<lb/>supervacaneum videtur. Si quis enim simplices morbos
+<lb/>omnes eorumque modos compositionis didicerit, dignus
+<lb/>erit, qui in reliquis particularibus se ipsum exerceat. Quare
+<lb/>semel tantum, quaecunque hoc in libro scripta sunt, legere
+<lb/>nullius est utilitatis, nisi quis plurimum lu ipsis sete
+<lb/>exercitaturus sit.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

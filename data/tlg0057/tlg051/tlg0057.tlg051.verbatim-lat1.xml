@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De tremore, palpitatione, convulsione et rigore</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg051.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="ed1vol">3</biblScope>
+              <biblScope unit="ed2vol">7</biblScope>
+              <biblScope unit="pp" from="584" to="642">584-642</biblScope>
+              <date>1824</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x07">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="364" to="373">364-373</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="199" to="219">199-219</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x07">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg051.verbatim-lat1">
+<pb n="7.584"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="7.584"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE TREMORE, PALPITATIONE,
+<lb/>CONVOLSIONE ET RIGORE LIBER.</head>
+
+
+<p rend="indent">Quandoquidem Praxagoras Nicarclri filius,
+<lb/>cum in aliis medicinae partibus praestantissimus tum lu naturalibus
+<lb/>speculationibus peritissimus, non recte mihi videtur
+<lb/>de pulsu, palpitatione, convulsione et tremore sentire;
+<lb/>ut qui omnia arteriarum esse assectus , differre autem inter
+<lb/>se maguitudine existimet; idcirco de omnibus ipsis communitur
+<lb/>hoc libro a me tractandum esse putari , non ut Praxagoram
+<lb/>lu iis, lu quibus errorem admittit fallitmque,
+<pb n="7.585"/>
+<lb/>redarguam, (id enim Herophilus ejus discipulus abunde factitavitj
+<lb/>fed ut iis quae recte ille scripsit, ea quae desunt, adjiciam.
+<lb/>De pulsu igitur, quid tandem sitiet quomodo fieri
+<lb/>soleat, in opere de pulsibus demonstratum est, et nunc tantum
+<lb/>dicetur, quantum ad praesentem disputationem utile
+<lb/>este videbitur ; de aliis autem hoc commentario <hi rend="u">sum</hi> tractaturus
+<lb/>, inde sumptu initio.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Motus scusibiles in animantium corporibus,
+<lb/>quum sana sunt, genere duplices apparent; ex impetu sane,
+<lb/>aut arbitrio seu voluntate , aut quomodocunque nominare
+<lb/>velint nominum quidem periti, rerum autem scientiam negligentes;
+<lb/>qui nervis. musculisque fiunt; atque has mediet
+<lb/>voluntarias actiones appellare solent; alii vero motus in animantium
+<lb/>corporibus existunt, tum in arteriis, tum corde,
+<lb/>quos vitales nuncupant, (imo et aliud quoddam tertium motuum
+<lb/>genus in venis habetur, . quod sensibus non percipitur)
+<lb/>de quibus in praescntia dicere opus .non habeo; verum. qui
+<lb/>musculis et nervis perficitur , per quem. et manus et crura
+<pb n="7.586"/>
+<lb/>movemus, in tremoribus, convulsionibus, rigoribus morbidis
+<lb/>, interdum et in palpitationibus apparet. omnes etenim
+<lb/>ejusmodi assectus depravati motus sunt organorum eorundem,
+<lb/>quibus arbitrarii sanorum motus obeuntur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Tremor itaque facultatis corpus vehentis
+<lb/>moventisque infirmitate oboritur. Non enim ex fe ipsis
+<lb/>fcilicet animantium partes, tam graves quum sint deorsum,
+<lb/>que ferri natae, in omnem locum motum .habent; verum
+<lb/>facultas , quae per nervos musculis a principio transmittitur,
+<lb/>tanquam vehiculum quoddam et ala motus ipsis est;
+<lb/>quam quum prorsus perdiderint (perdunt autem resolutae]
+<lb/>deorsum feruntur, et axis cui penuae defluxerint instar.,
+<lb/>concidunt; unde nullus ita affectis partibus motus relinquitur.-
+<lb/>-..Sin autem facultas quidem reliqua suerit, fed pauca
+<lb/>et imbecillis, ut neque corporis partes fatis attollat vehat-que,
+<lb/>aut tanquam grave pondus aliquod ferre nequeat ruocesse
+<lb/>est partem ita dispositam , in tremore conspici; siqui-dem
+<pb n="7.587"/>
+<lb/>motus, qui ab imbecillibus supra vires et violenti et ad
+<lb/>necessitatem fiunt ; tremuli existunt. Puto te saepevidisse
+<lb/>aliquem , qui gravi pondere sublato incedere violenter
+<lb/>conaretur, quam cruribus intremiscat ; quin etiam si manibus
+<lb/>praeter vires grave aliquid portare aggrediatur, manus
+<lb/>habebit tremulas.- . Pari modo homo quum timet oxpavesritque
+<lb/>aliquis, sive manibus quid facere, sive incedere volet,
+<lb/>manus quidem , si sus functionem obire aliquam audeat , tremulas:
+<lb/>tremula vero crura, si conetur incedere, habebit.
+<lb/>Minuit enim et timor nibllommus caeteris virium robur;
+<lb/>quae ubi semel collapsae fuerint et debilitatae , quiduis etiam
+<lb/>multo levissimum grave redditur; quapropter et corpus
+<lb/>animantis , quod prius erat leve , oneris modo ipsas aggravati
+<lb/>Ac senes simili modo ex imbecillitate ut plurimum
+<lb/>tremuli sunt. Praeterea, quibus ex morbo corporis robur
+<lb/>laboravit, nec iis quoque citra tremores motus fiunt. Nam
+<lb/>in omnibus sic se habentibus facultas partes movens atruslensque,
+<lb/>nunc debilitata^ id quod prius attollere solebat,
+<pb n="7.588"/>
+<lb/>amplius non potest, tanquam in motu vacillans. Sivero.
+<lb/>universimr naturae robur. remiserit, tum corpora, facultate
+<lb/>attollente destituta, fuo pondere deorfumferuntur , ac illic.
+<lb/>remanent quemadmodum in parulyfibus, si universum faeni-.
+<lb/>talem robur omnino destituerit; quantum autem ipsius reliquum
+<lb/>est, id rursus vehere corpus conatur; verum neque
+<lb/>nunc quantum vult, prae imbecillitate potest; .sed modice
+<lb/>quidem elevat, magis autem desinit, imperfectum mutilumque
+<lb/>hic quoque motum relinquens. Rursus igitur corporibus
+<lb/>deorsum ferri concedit, quod quum continue fiat, et
+<lb/>deorsum tendens latio sursum vergentem excipiat., rursusque
+<lb/>subiungatur sursum tendens , duplex sane et compositus
+<lb/>totus fit motus , partibus loca semper per alces mutantibus.
+<lb/>Nomen autem affectui est tremor, quo corpora deorsum pondere
+<lb/>suo vergunt, .rursus autem in altum a facultate attollunturc.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Sed et palpitatio , forftm dicet aliquis, .similitet
+<lb/>atque tremor, motus est inuoluntarius ac inritus
+<pb n="7.589"/>
+<lb/>partium, quae quum palpitant, attolluntur et deorsum aguntur.
+<lb/>Quomodo igitur tremor a palpitatione differret ? Hactenus
+<lb/>sime nihil inter fe discrepare ridentur ; verumtamen
+<lb/>discrimen intercedit; neque enim locum affectum eundem
+<lb/>esse trementibus. et palpitantibus, neque causam, neque
+<lb/>symptoma dico. Quippe nemo , qui artus movere non instituerit,
+<lb/>tremet; palpitantes autem partes, etiamsi inquiete
+<lb/>suerunt, etiamsi nullum ipsis motum luduxeris, palpitant.
+<lb/>Decipiuntur. hic quoque multi, dum capita tremula conspiciunt,
+<lb/>ac manum immobilem et crus, ut visum fuerit, extenfum
+<lb/>habentibus nonnullis , deinde nihilominus trementibus.
+<lb/>Quos hanc sententiam docere convenit, quae non a
+<lb/>me nunc primum dicitur, fed etiam a multis veterum, non
+<lb/>quae moveri ridentur, ea moveri sula pronunciantibus.
+<lb/>Multa siquidem citra motum esse ridentur , unum eundemque
+<lb/>locum obtinentia, nihilo autem minus moventur. Siquidem
+<lb/>aves non modo quum sursum et deorsum feruntur,
+<lb/>sed otium .si locum unum in aere occupent, in motu tuno
+<lb/>quoque esse censent. Nam si lu eo loco mortuum axis corpus
+<pb n="7.590"/>
+<lb/>situm fuerit , facile ad terram decidet, pondere suo inestuans.
+<lb/>Unde constat et corpus quod in eodem manebat
+<lb/>loco, motus cujusdam auxilio lu sublimi constitisse, tanto
+<lb/>utique motu, quantum haberet; si finio pondere deorsum
+<lb/>ferretur. Quare quam immobilitatem esse putas , motus est
+<lb/>compositus, ex duobus quibusdam constans , qui corpus lu
+<lb/>contraria loca possunt.abducere ; quorum si alterum furium
+<lb/>vergentem tollas, reliquum ridebis facile corpus in locum
+<lb/>inseriorem deducere. Hoc igitur et Hippocrates his verbis
+<lb/>docet: stare, ulceribus minime conducit. Et alibi: si .
+<lb/>in crure ulcus habeat, neque sedere, neque obambulare,
+<lb/>sed quiescere et otio vacare confere Nam quietem et
+<lb/>otium tanquam profutura commendat ; stare autem et sedere
+<lb/>minime prodesse ait; ut quae a conquiescendo et otiando
+<lb/>sint diversa ; etenim et tunc musculi , qui gestant corpus , et
+<lb/>a terra attollunt eriguntque, intensi. sunt; idcirco flere
+<lb/>nihilo minus, quam obambulare, lassitudinem parit, ut quod
+<lb/>et ipsum motus existat. Anima igitur, quae corpus et. urovet
+<pb n="7.591"/>
+<lb/>et erigit, ablata, statim quod prius rectum erat, in terram
+<lb/>inclinare videbis ; quo conflet etiam quum rectum erat,
+<lb/>non fuisse citra motum, sed habuisse aliquid, quod subleva.ret,
+<lb/>gestaret attolleretque ipsum. Ego itaque ne decumbentem
+<lb/>quidem hominem, si caput sublimius habeat fe pedes
+<lb/>autem humiliores, citra motum omnino esse dixerim; suillaberetur
+<lb/>enim facile ad pedes ex sublimiori lu declive vergens
+<lb/>nisi motu contrario huic propeusioui reniteretur. Haec sane
+<lb/>et Hippocrates asserebat: si vero praeceps agatur, et a
+<lb/>lecto ad pedes delabatur, gravius periculum minatur.
+<lb/>Nam ad pedes sublabi decumbentem, facultatis extreme imbecillis
+<lb/>nota est firmissima. . Stare etenim aut sedere aut furgere
+<lb/>non posse, grave quidem, sed minus grave periculum
+<lb/>timuit; quippe multi aegrotantium adhaec deveniunt destnuntque
+<lb/>, ad extremam nondum iinbeclllitatem prolapsi : at
+<lb/>decumbere non posse viventis modo; sed lue quoque tanquam
+<lb/>mortuum et iirauimatum corpus deorsum ferri , extremum
+<lb/>malum. Hoc Hippocrates in commentario de humoribus
+<pb n="7.592"/>
+<lb/>, ἔρῥιψιν i. e. virium prostrationem appellarit ; quod
+<lb/>interpretes libri non lutelligentes, multa nugati sunt. Nam
+<lb/>prostratum esse instar corporis inanimati, omni robore prorfus
+<lb/>exsoluto et perlito, εῤῥιψιν vocarit; ut non idem sit
+<lb/>prostratum esse ac decumbere , sed quam habet rationem delahi
+<lb/>ad decumbere. Ita etiam in avibus aliud est ad terram
+<lb/>devolare, aliud in terram decidere: etenim illud actio, hoc
+<lb/>assectus esu Sinnliter igitur his actio quidem decubitus est,
+<lb/>assectus autem prostitutio. Quorsum igitur haec misti dicuntur?
+<lb/>eo nempe, ut isses, qui aut crus aut manum in altum
+<lb/>sustulerunt, delude ita ut habent, servant, ne immotos esse
+<lb/>arbitreris, neque fi unum eundemque locum semper quam
+<lb/>maxime occupent. At si nolis , ita dispositis motum adesse
+<lb/>concedere, certe actionem ipsis omnino concedes, et hoc
+<lb/>duplum simplicis actionis robur. Nam in simplicibus unum
+<lb/>musculorum genus, aut flectentium, aut intendentium artus,
+<lb/>operatur; quum vero extensos ipsus conservas , utraque
+<pb n="7.593"/>
+<lb/>musculorum genera- pari robore functionem obeunt.
+<lb/>Quod fi hujus memineris, vera observans, quae prius licehantur,
+<lb/>verba invenies , nempe , quod ei, qui nullum motum
+<lb/>aggreditur, tremor non obveniat; est enim impotentis,
+<lb/>et infirmi motus fymptoma. Unde cuivis constat, corpus;
+<lb/>cui moveri neutiquam licet, id neque circa motum imbecille
+<lb/>et impotens fore.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Palpitatio autem iis etiam , quae non moventur,
+<lb/>partibus accidit. Etenim supercilium, palpebrae
+<lb/>et oculus taepe citra omnem voluntatem attolluntur. Unde
+<lb/>et hoc manifeste arbitror magnam habere vim tum ad asseotus
+<lb/>naturae cognitionem tum. ad exactam a trementibus
+<lb/>distinctionem. Nam quae in palpitantibus partibus elevationes
+<lb/>depressionesque apparent, . distentiones quaedam stant
+<lb/>corporum , ut quae replentur-, et eorundem fubfidentiae,
+<lb/>ut quae rurfus inani untur. - Quae vero trementibus accidmrt,
+<lb/>totius membri motus sunt, quod -interdum deorsum
+<lb/>quidem vergit, rursus autem ad superiora fertur,- fied nullo
+<pb n="7.594"/>
+<lb/>modo dilatatur, neque contrahitur. Eapropter tota sime
+<lb/>pars tremit, quum aliquid facere aggredimur, nullo eorum,
+<lb/>quae lu ea habentur, manente immobili; fed <hi rend="u">simili</hi>ter quidemtnusculi,
+<lb/>similiter his arteriae , nervi., .venae, ipsaque
+<lb/>ossa et cutis nunc sursum, nunc deorsum feruntur. Pal-.
+<lb/>pilant autem non omnia; nervum igitur, aut os, aut certilaginem,
+<lb/>aut aliud quid hujusmodi nunquam videas palpitare ;
+<lb/>non enim habent ventrem , quo vicissim dilatato et
+<lb/>contractu, attolli .quidem quum dilatatur, collabi .autem.
+<lb/>quum contrahitur, partibus liceat. Porro musculorumne
+<lb/>sit .assectus tantum palpitatio, ut Herophilus opinabatur, an
+<lb/>etiam cutis, aut arteriarum, ut censebat Praxagoras, id
+<lb/>rursus considerabimus : siquidem ea speculatio ad lori affecti
+<lb/>inquisitionem magis pertinet. Nunc autem tantillum repeteutes
+<lb/>ad priora digrediemur, nempe quod palpitatio di- ,
+<lb/>latatio quaedam sit et contractio .praeter naturam, tremor
+<lb/>autem motus partimn praeter voluntatem , quo sursum. deorsumque
+<lb/>vicissim feruntur. At idem non .est .neque diistari
+<pb n="7.595"/>
+<lb/>.ac sursum ferri; neque contrahi ac- deorsum vergere.
+<lb/>Etenim quae sursum etdeorsum feruntur; priori suco: relicto
+<lb/>in alium transeunt; quae dilabantur autem et contrahuntur,
+<lb/>pristinam. sedem conservantia partim -ambientem
+<lb/>regionem occupant, partim relinquunt. Quare moveri quia
+<lb/>dem utrisque commune;. tum quae dilatantur contrahunturque
+<lb/>tum quae sursum et deorsumferuntur, peculiare autum
+<lb/>his sane minorem locum aut ampliorem occupare, ita ut veterem
+<lb/>non deserant, istis autum, semper loca mutare ita
+<lb/>ut nunquam in eodemmaneant. -opus autem,- opinor; erit
+<lb/>lue queque distinctione, ut in totum formo verus evadat.
+<lb/>Nam. saepenumero jam pluribus simul musculis aut uno
+<lb/>quodam insigni vehementer palpitante, attollitur quidem
+<lb/>membrum una cum iis quae dilatantur, .concidit autem rursus
+<lb/>cum iis quae contrahuntur. . Hic invitam elevationem
+<lb/>depressionemque membri tremorem vocare non oportet;
+<lb/>nam ridebis manifesto musculos palpitantes , a quibus membrum
+<lb/>movetur; ipscque motus -non : -qualis trementibus
+<pb n="7.596"/>
+<lb/>apparet. Nam in iis, qui membrum fotum in motu propter
+<lb/>musculos palpitantes retinent .propriis et sensilibus extremis
+<lb/>uterque motus circumscribitur; trementium vero affectus
+<lb/>talis non est, sed altero motu adhuc incipiente; ut
+<lb/>ita dicam, contrarium ipsi fubjungi deprehendes , ut ad superiura
+<lb/>latiofemper deorsmn tundentem excipiat; haec autem
+<lb/>ah illa rursus continue impediatur, ita ut imperfecta
+<lb/>semper turium latio , imperfecta quoque deorfum inclinatio
+<lb/>existat. ...Ae.itae.fane affectuum tibi notae erunt, Itis fymplumulis
+<lb/>invicem. differunt. . Reliquum est, ut locum assectum
+<lb/>et causam efficientem consideremus. Palpitationum
+<lb/>causam esse pronuncio. [picitum crassam et vapornsmn, cui
+<lb/>non sit transitus. Hunc autem colligi oportere dico in cavitate
+<lb/>quadam non admodum exigua, si pars dissentionem
+<lb/>sensibilem habitura fit. Atque totum quidem negotium summalim
+<lb/>explicatum esu Caeterum oportet , ut cum tu substantiam
+<lb/>illam esse spiritualem demonstras,. caulae addas,
+<lb/>ob. motus , generationis ac solutionis celeritatem. Quid
+<pb n="7.597"/>
+<lb/>enim tam facile vel congregare vel inaniri potest aliud,
+<lb/>quam fpiritus? Etenim quae hominem constituunt, ut Hippocrates
+<lb/>nos docebat, sunt solida, humida et spiritus.
+<lb/>Meminit autem ipsarum his verbis , Continentia dicens, con-tenta,
+<lb/>et impetu ruentia. Continentia quidem solida nuncupans,
+<lb/>ut quae comprehendant tegautque humida: contenta
+<lb/>autem , humores , ut qui a solidis comprehendantur :
+<lb/>quae impetu feruntur, fpiritus, si quidem in omnem corporis
+<lb/>partem momento temporis et facile et citra impedimentum
+<lb/>perveniunt. Citam igitu r vacuationem , aut replelienem,
+<lb/>aut distentionem , aut contractionem, aut depressionem,
+<lb/>aut elationem, aut alium quendam motum, nullum
+<lb/>ex omnibus praeter fpiritum effecerit. Quare et palpitationum
+<lb/>causa substantia quidem spiritus, qualitas autem
+<lb/>substantiae huniditas est et crassities, ut paulo ante dicehamus,
+<lb/>quum crassem eum vaporosnmque nominavimus.
+<lb/>Si enim aethereas fuerit tenuis et purus, citra impedimentum
+<lb/>transiens , neque replebit unquam , neque vaeuabit partes :
+<lb/>crassior autem , quam meatus corporum exigant , in quibus
+<pb n="7.598"/>
+<lb/>coliigitur, reclusus intus, si quidem cavitatem corpus obtinet,
+<lb/>hanc replens, et excitat et distendit regionem circumfluam;
+<lb/>sin minus, inter duo coliectus corpora, ah uno ad
+<lb/>alterum transit, ascititium sibi linum efficiens. Hic sane
+<lb/>modus secundus dictas etiam in cute crebro palpitationes
+<lb/>excitat; non cute ipsa cavitatem quandam in se sortita, sed
+<lb/>in spatio, quod cutem et corpora sublecta intercedit, spintus
+<lb/>tunc colligitur. Prior autem dictus modus in musculis
+<lb/>potissimum accidit, in his enim cavitates et multae sunt
+<lb/>et exiguae. Praxagoras autem pulsum arteriis attribuit, sicut
+<lb/>nimirum et palpitationem, tremorem et convulsionem
+<lb/>arteriarum assectus esse dicit: ac pulsum sime in naturali
+<lb/>statu, palpitationem vero, tremorem et convulsionem maguitudine
+<lb/>invicem differre, sed motus este l taeter naturam.
+<lb/>Quod autem non recte senserit, solis arteris palpitationem
+<lb/>attribuens, haud difficile est deprehendere; nam manifesto
+<lb/>videre est frequenter et cutem palpitantem et musculos,
+<pb n="7.599"/>
+<lb/>cum nulla in eo loco sit arteria: vel si esse quandam contingat,
+<lb/>ea sit admodum exigua, unde liceat manisesto alicui
+<lb/>cognoscere , tantam distensionem non ex arteriae magnitudone
+<lb/>proficisci. Porro num recte nonnulli musculosis corporibus
+<lb/>solis paIpitationem attribuant, id mihi multo dignius
+<lb/>consideratione videtur. Ego etenim esiam plane existimo,
+<lb/>arteriam manisesto non modo palpitans, sed esiam convulsorium
+<lb/>quid saepe repraesentantem inveniri , quemadmodum
+<lb/>et alii pulsuum perili fatentur. Verum de hoc disputatio
+<lb/>prolixior est, et in libris de pulsibus comprehensa. Jam
+<lb/>plerisque hominum non raro palpitationes in sola cute evidenter
+<lb/>fieri apparent, cum vaporosus spiritos in aliqua ipsius
+<lb/>parte generatus retinetur, et in transitu moratur: ita etiam,
+<lb/>si in musculis aut alio quodam corpore spiritus flatulentus
+<lb/>redundaverit, in ilia palpitationem excitat. Quoniam vero
+<lb/>spiritus crassas , nebulosus, aut caliginosus, aut flatulentus,
+<lb/>aut quomodocumque nominare velis, palpitationis causa est,
+<lb/>ideo et aetates Rigidiores palpitationi obnoxiae sunt , natura
+<pb n="7.600"/>
+<lb/>corporis fulgidior, reglones frigidae, anus tempus hibernum,
+<lb/>Vita otiosa in repletione et ebrietate , cibi frigidi et flatulenta
+<lb/>et ut semel dicam, omnia quae corpus refrigerant. Quae
+<lb/>vero his contraria sunt, palpitationes statim toliunt. Nam
+<lb/>calefacientia spiritum attenuant et corpora reddunt rara
+<lb/>moliiaque; refrigerantia autem densant quidem et contrafiunt,
+<lb/>et corporum meatus cogunt connivere; incrustant autem
+<lb/>eoarctantque et turbidum reddunt spiritum; facile
+<lb/>igitur retinetur, a perfpiratu impeditas tum sua ipsius crassitio
+<lb/>, tum corporum ipsum continentium densitate. Calida
+<lb/>rursus. contrario refrigerantibus modo dum fundunt, laxasti
+<lb/>aperiunt corporum meatus, ipsumque spiritum attenuans
+<lb/>et ad motam facile incitant , faciles ita transitus ipsi efficiunt
+<lb/>Quapropter esiam veteres medici palpitationum remedia ad^
+<lb/>invenere, quae extenuare et calefacere possunt; cuiusmodi
+<lb/>sunt., quae constant euphorbio, pyrethro, limuesia, fid^
+<lb/>phure et pipere, aliaque id genus composita medicamenta ;
+<pb n="7.601"/>
+<lb/>item luter aquas , - quae e terra prosiliunt calidae, atque ex
+<lb/>his. potissimum nitrosae , sulphuratae et bitumiuosae , easque
+<lb/>commendanti Utuntur autem et marina aqua, calefacientes
+<lb/>ipsam, et muria, si marina desit. Tum potui .exbibent
+<lb/>medicamenta calida, praesertim ex castorio consecta.
+<lb/>Hoc sane etiam extrinsecus impositum , non modo epotum,
+<lb/>generosum est medicamentum, ut quod calefacere simul et
+<lb/>extenuare siccareque abunde possit. Palpitationis sane omriis
+<lb/>ex frigido generatio est ; tremoris autem neque una occafiot
+<lb/>neque causa semper frigida est; verum affectio quidem,
+<lb/>facultatis corpus moventis est imbecillitas; causae autem,
+<lb/>quae huc corpus perducere potest, non una species est; fed
+<lb/>yel alimenti inopia , quemadmodum in cholera, valido alui
+<lb/>profluvio , largo sanguinis fluore, aut magno jejunio ; vel
+<lb/>vitali robore folutu , quemadmodum in stomachicis et cardiacis
+<lb/>exolutionrbus ; ver violento et valido frigore occupaule,
+<lb/>aut plenitudine ipsa ponderis modo degravante, imbecilla
+<lb/>ad motus efficitur. Unde neque uria remediorum
+<pb n="7.602"/>
+<lb/>species trementibus, quemadmodumpalpitantibus, adhiberi
+<lb/>potest. Verum si a perfrictione tremorem experiantur, calitium
+<lb/>ipsis praesidio est. Nam qui per hiemem iter faciemtus,
+<lb/>deinde valido frigore correpti, semimortui et tremuli
+<lb/>domum -revertuntur, sacillime ab affectu liberati sunt caloris
+<lb/>beneficio. Similiter his medemur et illis , qui per refrigecantes
+<lb/>febrium insultus et rigent et tremunt. At si disctrssi
+<lb/>fiunt tremuli, ut in deliquiis cardiacis et stomachicis,
+<lb/>calefacere hos extremum malum est; quippe contrarium lu
+<lb/>tris convenit, nempe cutem densare, quae refrigerant; adstringunt
+<lb/>coarctantque meatus, adhibentes, non quae calesaciuirt,
+<lb/>laxant et adaperiunt. Quod si penuria alimenti,
+<lb/>ut in- longis jejuniis aut immoderatis vacuati orribus, tre-mores
+<lb/>oboriantur, hoc ne verbis quidem indiget; cuivis
+<lb/>enim constat, alimentum nos desiderare. Qui autem viribus
+<lb/>humorum copia gravatis tremunt , his vacuationes remedio
+<lb/>sunt; quemadmodum et Hippocrates alicubi docet his verbis :
+<lb/>Hstymargei ancillae , cui neque sanguis finxerat,
+<pb n="7.603"/>
+<lb/>postquam filiam peperisset, os autem vulvae aversum erat,
+<lb/>ac dolor in coxam et erus pertingebat., ex talo sanguis
+<lb/>detractus profuit; etsi tremores totum corpus occuparent.
+<lb/>Sed ad occasionem veniendum et occcasionis fomitem. MuIlaris
+<lb/>niennnit, quae a partu ea puerperii purgatione, quae
+<lb/>fecundae vocantur, non purgata, deinde fremore correpta
+<lb/>est. Hanc, inquit, sanari sanguinee malleolo detracto,
+<lb/>etsi tremores totum corpus occupabunt. Quid ergo aliud luo .
+<lb/>subindicat, quam quod estus sanguinem non misisset? Eri..
+<lb/>gidus enim affectus tremor esse creditur, sanguis vero calidus.
+<lb/>- Noni igitur ausus fuisset aliquis sanguinem vacuare in
+<lb/>affectu, qui calefieri desiderat. Ego tamen, inquit, ausus
+<lb/>sum; et rationem docet. Sed ad causant veniendum est et
+<lb/>ad caulae fomitem. - ld quod infestabat, inquit, et infestamtis
+<lb/>causam noveram. Quod igitur infestabat, sanguinis copia
+<lb/>erat; causa ipsius, vulvae ad coxas hrclinatio, propter
+<lb/>quam mulier purgata non erat Sanguis igitur, quem vaenatum
+<lb/>esse oportebat, non evacuatus, sed in corpore oberrans.,
+<pb n="7.604"/>
+<lb/>naturae pondus erat. Unde tremoris causam intelligens,
+<lb/>sanguinis copiam, fomitem vero causae uteri affectum;
+<lb/>deinde copia quidem vastationem indicante, parte autem
+<lb/>affecta locum per quem vacuare conveniebat, ambo haec
+<lb/>coniungens, sanguinis detractionem ex malleolo molitus est;
+<lb/>sanguinis quidem detractionem; quoniam sanguinem vacuare
+<lb/>volebat; e malleolo autem , quia uterus affligebatur. Quod
+<lb/>igitur. sanguine abundante venam incidere oportet, cuique
+<lb/>arbitror manisestum, siquidem in venis ille continetur. Quod
+<lb/>autem utero affecto , circa malleolum aut in poplite secarecon
+<lb/>venit, nisi prius venarum communiones ex anatome didiceris,
+<lb/>haud poteris id, quod dico, assequi. Alia enim
+<lb/>alii corporis parti vena communicat, oportetque vacuatisnes
+<lb/>semper ex communibus moliri; nam si venas niltil parti
+<lb/>affectae communicantes incideris, neque affectae medebaris,
+<lb/>et simam semper offendes. Necessarium igitur semper videtur,
+<lb/>eum qui recte medebitur, causam ex qua affectus
+<lb/>oritur cognoscere. Verum de tremoris causa haec sussiciun t.
+<pb n="7.605"/>
+<lb/>Locus autem affectus in tremoribus unus necessario nullus
+<lb/>- est ; atque hoc loco carpendi mihi veniunt Praxagoras et</p>
+<p rend="indent">Herophllus; ille, quod arteriarum affectum tremorem dixerit;
+<lb/>Herophllus; quod tremorem lu nervoso ipsi, genere.
+<lb/>semper constitui ostendere contendat. Praxagoras igitur
+<lb/>longe a vero abest; Herophllus autem deceptus ast; dum facultatis
+<lb/>affectum instrumentis attribuit. Quod etenim ner- votum
+<lb/>genus, non arteriofum, motibus voluntariis serviret,
+<lb/>recte intelligebat; quoniam autem non idem nervorum corpus
+<lb/>motus caula existit , fed hoc quidem organum ; cauta
+<lb/>autem movens, facultas est, quae per nervos dispensatur:
+<lb/>lue reprehendendus venit, qui facultatem et organum. non
+<lb/>distinxerit. Si enim distinxisset, statim utique opus laetum
+<lb/>iri, non instrumentorum modo.,. sed etiam facultatum affectu
+<lb/>deprehendisset. lu mortuis igitur neque nervi , neque mufculi
+<lb/>affectus ullos experti sunt, quos pati ipsius et Heroplulus
+<lb/>et Praxagoras arbitrantur; deseruit autem eos omnis
+<lb/>motus protinus una cum anima; at hujus instrumenta musurdi
+<pb n="7.606"/>
+<lb/>sunt et nervi. .Non igitur musculi est neque nervi
+<lb/>movere , sed animae. Neque enim tibiarum opus est tihiciuium
+<lb/>, neque citharae citharista ; sed tibicinium opus
+<lb/>quidem est tibicinis, per instrumenta tibiarum; citharista
+<lb/>vero, musici; instrumentum autem cithara. Depravabitur
+<lb/>autem et tibiae et citharae sonus plerumque propter operum
+<lb/>artifices; interdum autem propter instrumentorum,
+<lb/>quibus utuntur, laesionem; ita et motus in animante arbitransi
+<lb/>opifex quidem artisexque facultas est, quae animal
+<lb/>gubernati instrumenta autem nervi et musculi. Itaque
+<lb/>non moveri et prave moveri . aut ob instrumentorum^ affectum,
+<lb/>aut facultatem sus instrumentis utentem accidet:
+<lb/>Palpitationes igitur, convulsiones et paralyfes instrumentorum
+<lb/>laesiones fiunt, tremores autem facultatis imbecillae
+<lb/>affectus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Ac tremor sane a palpitatione manifeste
+<lb/>dlllinctus est; a rigore autem tremorem hoc paeto distinguas
+<lb/>licet. Prius autem considerandum venit, quid fit rigor.
+<pb n="7.607"/>
+<lb/>etenim et hoc ex iis , quae admodum sunt cognita , esse pufatur;
+<lb/>nihilo tamen nunus difficile dijudicatu est, non eo.
+<lb/>tolum, quod causam invenire, vel affectionem, quae ex ea
+<lb/>corpori obvenit, haud proclive .fit; fed ante haec adhuc,
+<lb/>quod lu ipfa notionis descriptione errare mileo videntur.
+<lb/>Rigorem enim si ita. absolute perfrictionem dixeris , ut nonnulli
+<lb/>pronuntiarunt, error manifestus est ; quum multi quidem
+<lb/>vehementer perfrigerentur, non tamen etiam rigeant:
+<lb/>imo nec si vehementem perfrictionem statuas , ne hoc quidem
+<lb/>verum esu Nam qui stomachice, aut cardiaco laborant,
+<lb/>vehementer quidem frigent, non autem rigent. Jam perfrictionem
+<lb/>cum tremore rigorem dicere, lu quam siententiam
+<lb/>plerique medicorum defcendunt, occasionem habet deceptionis
+<lb/>concussionem corporis ac agitationem , quae vehementibus
+<lb/>rigoribus conjuncta esu Arguitur autem manifesto,
+<lb/>quod neque omnibus rigentibus accidat, sed fo lis vehementer.
+<lb/>rigentibus; neque iis, . quibus accidit, assectus qui advenit,
+<lb/>sit tremor, fed quaedam veluti concussio et agitatio.
+<lb/>Tremor etenim , ut demonstravimus , nisi partem movere
+<pb n="7.608"/>
+<lb/>velit, non accidet; concussio autem j quae validos rigores
+<lb/>comitatur, tam violenta et necessario corporibus incidit,
+<lb/>ut conquiescere non liceat, etiamsi quis strenue admodum
+<lb/>renitatur. Ac tremor sane unius .partis affectus, rigor au-r
+<lb/>tem totius corporis esu Unde mihi et Platonem mirari
+<lb/>fulsit, qui tremorem cum rigore consundat. Si enim ii,
+<lb/>qui rigorem interpretati funt tremorem cum p ^frictione,
+<lb/>aberrarunt, quomodo ipse, idem esse tremere et rigere exifirmans,
+<lb/>vera praedicaverit ? Nam praeter ea, quae dirimus
+<lb/>absurda, etiam hoc adhuc ei refragatur , quod nonnulli
+<lb/>tremant, nullum frigiditatis sensum habentes, non tamen
+<lb/>fieri possit, ut quis citra perfructionis sensum rigeat. Idcirco
+<lb/>neque illi , qui rigorem perfrictionis sensum esse dictitarunt, procul
+<lb/>ab assectus notione abiisse ridentur, non enim idem
+<lb/>sane dixeris perfrixisse et frigus sentire. Quae exitu resoluta
+<lb/>sunt, torpida, difficili aut prorsus nullo sensu praedita,
+<lb/>omnia perfiixerunt; item quod tremorem experitui.su
+<lb/>paraplexiam, epilepsiam, similiter et flatus , et aquam inter
+<pb n="7.609"/>
+<lb/>cutem, et inflationes, et oedema totum frigidum est, fed
+<lb/>nullum ex his frigiditatem quae lu ipso est percipit, unde
+<lb/>neque riget; sin autem sentiat, protinus certe et rigebit.
+<lb/>Quas ob res Platonem dico non recte opinari, idem esse rigorem
+<lb/>et tremorem, neque unius est partis affectus rigere,
+<lb/>ut tremere; neque sensus frigiditatis trementibus, ut rigentibus
+<lb/>, et motus in rigentibus sane citra movendi partes volentatum
+<lb/>omnino inritis est; in trementibus, non citra
+<lb/>movendi arbitrium. Sed Platoni sane aliquis forsan condonayerit
+<lb/>, quod in tam tenuibus et medicis rebus errorem
+<lb/>admittat, quamvis aliorum affectuum corporis prope tumusum
+<lb/>generationem exacte sit persecutus ; Athenaeum autem
+<lb/>Attaleum demirati par est, multo etenim Platone adhuc recentior,
+<lb/>non in causae rationibus modo Platonem sequitur,
+<lb/>id enim tolerari poterat, sed etiam circa notionem similiter
+<lb/>atque ille consusus apparet. Neque enim rigoris tremorisque
+<lb/>notionem distinxit, describensque rigorem in hunc
+<lb/>modum altu Pugnam concussionentque hanc tremor rigorque
+<pb n="7.610"/>
+<lb/>comitatur , totus autem hic asuetus fulgidus , et causo
+<lb/>ejsiciens idem nomen sortita est , ut et Plato (inquit ille) asa
+<lb/>firmat; hic enim ipsum Platonis sententiam protulit. Habet
+<lb/>autem universa hunc in modum: nam humorum corporis
+<lb/>partes grandiores quum in minorum sedes subire nequeant,
+<lb/>compellentes nostros morbosas (suat autem minimi)
+<lb/>extrinsecus alium ex inaequali motum, (neque) immotum
+<lb/>ob aequalitatem et compulsionem facientes, coniungunt,
+<lb/>quod autem praeter naturam cogitur, pugnat secundum
+<lb/>naturam ipsum sibi, in contrarium repellens. .Huic autem
+<lb/>pugnae. et concussioni tremor et rigor nomen positum est,
+<lb/>fulgidus affiectus totus; hoc et ipsius canfu ejsiciens sortita
+<lb/>est nomen. Quod sane neque tremori idem sit rigor, imo nec
+<lb/>perfrictio sunpliciter, neque etiam perfrictio valida, manifesto
+<lb/>ostentum est. Quod autem paulo superius dictum est, nempe
+<lb/>perfrictionem esse, fed sensibilem, discutiamus num fasso prolatum
+<lb/>sit. Nonnulli enim rigorem non sensibilem frigiditatem, fed
+<lb/>molestam esse arbitrantur; si quidem multi etiam exspuis frigere
+<pb n="7.611"/>
+<lb/>admodum fe dicunt, alii sponte refrigerii desiderio diutius in
+<lb/>aqua frigida immorati, quidam autem etiam quia opus habent
+<lb/>in frigida diutius versantur, rigent autem non statim, quemadmodum
+<lb/>nec qui lavit, deinde seipsum in frigidam coniecit;.
+<lb/>neque enim lue, nisi admodum diu immoretur, riget, etsi
+<lb/>frigiditatis qualitatem manifesto -sentiat.<space type="tab">    </space>Quapropter quan-</p>
+<p>tum ad frigiditatis sensum attinet, omnes hi statim rigerent,
+<lb/>si rigor frigiditas esset seusibilis; sed non rigent, merito,
+<lb/>nm, enim est omnibus cum dolore refrigeratio ; sied nonuulli
+<lb/>ipfiorum, qui aestivo tempore validunr calorem non tolerantes
+<lb/>lu frigidam tele coniiciunt, adeo frigiditate oblectantur,
+<lb/>ut tamdiu in ea morentur , donec tangenti tibi glariei modo
+<lb/>refrigerati esse rideantur. An igitur totum jam habebimus,
+<lb/>si rigorem dolorificum frigiditatem definiamus ? an quid adhuc
+<lb/>desideratur? Forte enim non quilibet rigor ita destciendus
+<lb/>venit. In aegrotantibus fiane non idem esse ridetur
+<lb/>rigere ac.horrere, aut frigere; dicimus igitur saepe accessionis
+<pb n="7.612"/>
+<lb/>insultum , huic Pane cum rigore , alteri cum horrore
+<lb/>alii cum fligi ditate sola obortum ; et in omnium medicorum
+<lb/>commentariis idem usus verborum existit. Ita quum quit
+<lb/>nulia concussione corporis et agitatione persrigescit, non
+<lb/>hic riget , verum si affectus rigor appeliari debeat , inaequa^
+<lb/>lem, et praeter voluntatem motum ei accedere oportet i
+<lb/>quod sine hoc accidit , si ne cutem quidem inaequaliter commoveat,
+<lb/>perscictionem nominant; sta autem hanc quidem
+<lb/>perturbet, concutiatque per quosdam insultus, corpus autem
+<lb/>totum non commoveat, horrorem nominant; ut hic
+<lb/>culis solius affectus talis existat, qualis totius corporis rigor.
+<lb/>At in sanis alio modo rigere dicimus , extendentes ad omnem
+<lb/>dolorificum perfrictionem ; sin autem rasione morbi obveniat
+<lb/>rigor, non satis est hoc tantum dixisse, sed totius
+<lb/>corporis perturbationem apponere convenit. Quod aliqui
+<lb/>inducentes, perfrictionem cum tremore ipsum appellarunt;
+<lb/>manifesto autem non sunt interpretati ; tremorem enim nuncupare
+<lb/>neutiquam oportet , sed agitationem quandam praeter
+<pb n="7.613"/>
+<lb/>voluntatem^ aut vibrationem aut concussionem, aut
+<lb/>aliud id genus nomen invenire ; nam tremoris vocabulum
+<lb/>de peculiari affectu eunciatur. Qui igitur morbi rigorem
+<lb/>deliniunt perfrictionem , alium nullum dicere videntur
+<lb/>quam eum, qui sanis accidit; etsi morbosum rigorem, de
+<lb/>quo medici omnino disputant , esiam commemorati viri definire
+<lb/>statuerant: morbidum autem vocamus, quum a nulia
+<lb/>exteriori causa violenta corpus , sed ex se talem obtinet afsectionem.
+<lb/>Ita enim, puto, Hippocrates quoque ajebat:
+<lb/>Quum quis causo asstigitur , si rigor superveniat , liberatur.
+<lb/>Non igitur aqua frigida febricitanti superfusa rigorem
+<lb/>excitabitis, sed quum ex ipsa corporis affectione suscitatur.
+<lb/>In eundem modum et haec sunt pronunciata: Cum rigore
+<lb/>desipientia , malum. Item : oblivio , malum. Rursus t
+<lb/>Sexto die rigores despicite iudicium notant. Item t Rigores
+<lb/>incipiunt mulieribus ex lumbis per spinam potius , fed
+<lb/>et viris potius retro quam ante. In omnibus enim hia
+<lb/>rigor non qui fanis accidit , fed qui aegris , explicatus est,
+<pb n="7.614"/>
+<lb/>qui est perfrictio dolorisica cum quadam inaequali totius corporis
+<lb/>concussione agitationeque. Quum igitur quid tandem
+<lb/>rigor sit noverimus, deinceps inspiciamus et quae causa
+<lb/>sibefliciens, quas potissimum antecedentes caulas comitetur,
+<lb/>etb quibus superveniat affectionibus, ac de universa ipsius
+<lb/>generatione. Quod enim rigor nativi caloris affectus sit,
+<lb/>omnibus fere in confesse est. Requirit autem totus hic fermo
+<lb/>auditorem diligentem , et qui plurimum mensis habeat.
+<lb/>Ego etenim nativi caloris: affectum rigorem esse dixi, ne
+<lb/>quis externi dictam esse ratus, mentiri forsan me opinetur
+<lb/>contra Erasistratum , Praxagoram , Philotimum , Afclepiadem;
+<lb/>aliosque innumeros, qui calorem non insitum, sed
+<lb/>ascititium esse censent. Quomodo enim lu nalivi caloris
+<lb/>affectum dixerint, qui prorsus nativum calorem ignorarunt?
+<lb/>Verum genuinum sane, ut diximus, non omnes calorem este
+<lb/>fatentur; generationem autem ei ascititium molientes, varie
+<lb/>alius aliam, unum hoc omnes concedunt, este aliquod seeundum
+<lb/>naturam in unoquoque animante calidum, in conveniente
+<pb n="7.615"/>
+<lb/>mensura aestimatum; ac circa hoc rigorem, horrerem,
+<lb/>omnemque perfrictionem fieri ajunt. r Asclepiades
+<lb/>igitur, quum non modo calidum, fed ne aliam quidem ullam
+<lb/>facultatem inlitam statuisset, omnem febrem propter
+<lb/>quasdam corpusculorum in meatibus obstructiones semper
+<lb/>constitui dictitat; in magnitudine autem meatu ,- disserentiam
+<lb/>ipfius ponens, molitur ita ostendere; quibus necessario
+<lb/>coniunctus sit rigor , quibus non. . Ac ego quidem nisi lon- .
+<lb/>giorem , quam par est , sermonem fore sperarem , et prae.cipue
+<lb/>iniquum censerem de Asclepiade quidem solo agere,
+<lb/>aliorum vero dicta omittere, : aut rursus omni: -r mentionem^
+<lb/>facere aggrediens ; in longam ac munitam sermonis prolixitatem
+<lb/>incidere; deinceps utique de omnibus opinionibus
+<lb/>contemplatus, unde unaquaeque probabilem occasionem haheret,
+<lb/>quid potissimum eis imponeret, et ubi aberrarent,
+<lb/>quum. ostendissem , ita ad nostram descenderem opinionem.
+<lb/>Verum hoc in aliud tempus differatur. Neque enim Athenanum
+<lb/>laudo, qui de Asclepiade, IIeraclide Pontico, Stratone
+<pb n="7.616"/>
+<lb/>physico aliquid dicat, nullius autem aliorum meruinerit;
+<lb/>etsi non modo horum opiniones de rigore, .sed alias
+<lb/>multo plures .nihilo minus celebres et probabiles explicare
+<lb/>potuisset. Nos igitur initio hoc sumpto, quod omnibus lu
+<lb/>confesso est, nempe rigorem affectum. esse caloris in unoquoque
+<lb/>animante nativi , rideamus quomodo oriatur. Proce
+<lb/>det autem disputatio ex Hippocratis principiis; nec vero
+<lb/>corpuscula et meatus statuemus corporis . nostri elementa ;
+<lb/>rrcque calorem, motus^ aut collisionis aut alterius cujusdam
+<lb/>causae sobolem pronunciabimus ; sed corpus quidem tutum
+<lb/>conspirabile et confluxlle censebimus; calorem autem non
+<lb/>acquisitum , neque animalis generatione posteriorem , verum
+<lb/>ipsum primum , primigenium et insitum. Ac natura sane
+<lb/>et anima nihil aliud, quam lue, existit; quare si subsumriam
+<lb/>per se. et semper mobilem ipsum intelligas, haud errabis.
+<lb/>Singula autem haec scorsum indagemus, etsi de ipsis
+<lb/>alibi discere licet; lu praesentia autem sermonis continuitas
+<lb/>examinanda est. Nam calor lufitus, ceu semper mobilis,
+<pb n="7.617"/>
+<lb/>neque intro solum, neque extra fertur; sed alterum ipsius
+<lb/>motum alter semper excipit Celeriter enim, si intus calor
+<lb/>maneret, in immobilitatem cessaret; si suras efferretur ,. et
+<lb/>hic motus dissiparet ipsum atque hac ratione perderet; modice
+<lb/>autem extinctus et modice accensus, ut Heraclitus
+<lb/>ajebat, semper mobilis ita perseverat. , Incenditur igitur,
+<lb/>quum ad intima inclinat alimenti appetens ; ab intimis vero
+<lb/>elatus et undequaque dispersus, extinguitur. Verum ad
+<lb/>superiora exterroraque lationem, et ut ita dicam explicationem
+<lb/>a suo principio , quod natura calidus sit, experitur;
+<lb/>intro autem et deorsum, hoc est ad proprium principium
+<lb/>eram init, quoniam frigidi aliquatenus particeps est; quippe
+<lb/>ex calido et frigido temperatus. Prima sane calidi ratione
+<lb/>sua sponte movetur, atque hoc potissimum ad actiones indiget;
+<lb/>magnum tamen ipsi usum et frigidum exhibet. Solet
+<lb/>enim calidum in sublime attolli ac secum alimentum
+<lb/>adducere. Si autem frigidum non obstaret, otium longissime
+<lb/>. procederet. Fit autem frigidum hujusmodi caloris motui
+<pb n="7.618"/>
+<lb/>impedimento , ne dispersus aboleatur ; quippe periculum
+<lb/>est, ne ipsis prae lenitate et impetu furium a corporibus
+<lb/>discedat; ted frigidum retinet impeditque , et vehementium
+<lb/>nimii hujus motus tollit. Redeamus igitur ad sincerius infututum,
+<lb/>ostendentes qualisnam nativi caloris assectus sit
+<lb/>rigor. Quod etenim ubi in naturalibus temperamenti terminis
+<lb/>manet, animal sanitate fruatur, verbis non instiget;
+<lb/>hoc est, quum., ut Hippocrates ajebat, calidum et frigidum
+<lb/>mutuo inter fe temperamento mediocriter habent. Sin autcm
+<lb/>alterum altero- sit fortius, animal aegrotare necesse est
+<lb/>ea morbi speciei, quae causae superantis naturae respondeat.
+<lb/>Inflammationes igitur, eryfipelata, herpetes, carbunculi,
+<lb/>affectus testantes fervorem aestunrque igneum , ac omnes febriles
+<lb/>affectus, -quum vis calidi evicerit; contra convulsiones,
+<lb/>tetani, palpitationes, stupores, resolutiones, epilepsiae,
+<lb/>et paraplegiae , frigidi superantis affectus. Ex hujusmodi
+<lb/>affectibus unus est rigor hic, . non simpliciter perfrictio exiflens,
+<lb/>steti cum sensu; unde adliciendum ei- est, subita ac
+<pb n="7.619"/>
+<lb/>universim facta. Praeterea vehementem perfrictionem et
+<lb/>violentam esse oportet , ut mauiseste ac vere definire liceat,
+<lb/>rigorem insiti caloris perfrictionem esse subitam et violentam.
+<lb/>Rursus enim, ut Plato dixit, quodsensim etpauldtim fit,
+<lb/>insensibile; quod autem sensile, necesse est hoc vehementer
+<lb/>moveri et tremere subito. Quere perfrictio quidem insenfilis
+<lb/>longiori temporis spatio et paulatim accidit; cita autem
+<lb/>et emergens admodum, cum sensu prorsus contingit;
+<lb/>neque enim hujusmodi affectus latere poterit. Talis autem
+<lb/>assectus cum frigoris sensu non omnis dolorem adfert, fed
+<lb/>interdum etiam volup latum. Dicebat enim rursus Plato,
+<lb/>astectum praeter naturam et violentum et celeriter oborientem
+<lb/>in nobis dolorificum esse ; qui vero celeriter et -con-.
+<lb/>furtim ad -.-naturam redit; eum seiavem esse. Quare utrique
+<lb/>et suavi et dolorifico .commune est , necessario , ne affectus
+<lb/>lateat; coniunctum ;- praeter hoc autem, quod non
+<lb/>latenter in naturalem statum reducit; suave est; quod autem
+<lb/>extra naturalem statum educit, dolorificum. Unde unum
+<pb n="7.620"/>
+<lb/>et idem numero frigidum , partim oblectat, partim dolorem
+<lb/>inseri; si quidem corpori praeter modum calefacto admoveatur,
+<lb/>omnino oblectet; nam immoderato calore laborans;
+<lb/>per deficientis frigidi ingressum mitigatum , oblectatur quidem
+<lb/>quum mitigatur: suam autem naturam obtinens, si ce-.
+<lb/>leniter et consertior refrigeres , dolore assides , nam ob tumperamenti
+<lb/>immoderationem laborabit. Nam, ut ait Hippocrates,
+<lb/>quibus natura allevatur cormmpiturque , dolores fiunt.
+<lb/>Non solum igitur celerem et .vehementem frigiditatem esse
+<lb/>oportet , ut rigor oboriatur , sed adjicienda huic adhuc est
+<lb/>violentia affectionis, hoc est praeter naturam status; ut
+<lb/>rigor sit subita perfrictio in statum praeter naturam perdueens.
+<lb/>Atque hoc mihi observandum lu hoc sermone videtur,
+<lb/>praesertim si de assectus generatione vera quis promrnciatrnus
+<lb/>est, ubi dixerit, in rigore subitam violentamque
+<lb/>nativi caloris perfrictionem fieri. Refrigeratur itaque etiam
+<lb/>quum dissipatur, robore quod continet ipsum , destituente;
+<lb/>item alimenti, .a quo accendebatur., penuria; led neuter hotum
+<pb n="7.621"/>
+<lb/>affectuum rigorem efficit; aut omnes, qui moriuntur,
+<lb/>rigerent. Quapropter corrumpi calidum, ut ita dicam, omullius
+<lb/>morientibus commune est, non tamen rigent; non
+<lb/>enim absolute calidum refrigerari oportere assero , sed et subitu
+<lb/>et violenter , hoc est robusium ipsum perseverans , neque
+<lb/>substantia neque tenore laesum, ab exteriorum causarum
+<lb/>aliqua iusestarI. Cousiderato mihi fl<hi rend="u">amm</hi>am extrlusecus
+<lb/>interdum materiae unde accendebatur penuria interire, lui
+<lb/>turdum lu solo splendido contabescere ac emori; rursus
+<lb/>ab aqua multa extingui , aut lignorum super eam cumulatim
+<lb/>iiijecturmn copia fustocari; quatuor haec accidentia quatuor
+<lb/>de causis , non eodem omnia modo , flammam afficiunt.
+<lb/>Ejus enim quae in side contabescit, robur dissipatur, aeris
+<lb/>nos ambientis violentia discussum ; nam radiorum solis robur
+<lb/>igne fortius est et dmabilius. Quum vero materiae penu-ria
+<lb/>non amplius accenditur,. substantia deperdita, interit;
+<lb/>quod enim accensum est, semper in motu ad exteriora discutitur
+<lb/>dissipaturque , intro autem inclinans alimenti accipiendi
+<pb n="7.622"/>
+<lb/>gratia, delude eo alimento destituta, imbecilliter adeo fecnnda
+<lb/>vice porrigitur. Materiae autem copia gravata et
+<lb/>respiratione destituta strangulatur. De noxa autem quae
+<lb/>ab aqua provenit, manifestius est quam ut verbis indigeat ;
+<lb/>pugna. enim valida flammae est adversius omnem sinceram et
+<lb/>multam humiditatem, ut si et oleum ipsi cumulatim exhibeas,
+<lb/>necessum .sit, strepitum et concussionem quandam oboriri,
+<lb/>igne propemodum voce violentiam fatente. Talem sane affectum
+<lb/>in calore lusito rigorem intelligite; neque enim,
+<lb/>quum materiae . inopia calidum laborans nec alimentum
+<lb/>fentiens contabescit, nec quum a copia ipsius gravatum
+<lb/>, nec quum imbecille labnscit , rigorem fieri deprehendes;
+<lb/>sed quum validus existit adeo, ut expandi
+<lb/>possit , delude prohibetur. Propter hoc ipsum . etiam
+<lb/>concuti corpus accidit, duplici hic . quoque et composito
+<lb/>motu oborto, ut lu trementibus,. fed diversa ratione. Illic
+<lb/>etenim facultatis corpus moventis imbecillitate mixtus motus
+<lb/>ortus est, prout robur membrum erigens remiserit, partu
+<pb n="7.623"/>
+<lb/>semper deorsum fublabente, nunc autem naturali caloris
+<lb/>motu vi impedito , rigor occurrit. Cupit etenim, utpote
+<lb/>nec substantia nec robore oblaesus , expandi et in omnes
+<lb/>corporis partes distribui ; prohibitus autem et ri in altum
+<lb/>repulsus , ad proprium principium resugit; quum autem ibidem
+<lb/>manere nequeat, nam substantiae semper moblli loco
+<lb/>consistere mors est, sese colligens et veluti in unum congregans,
+<lb/>aequabiliter sane non intro libero motu protenditur,
+<lb/>sed vehementi latione utens et veluti a carceribus exiliens,
+<lb/>nonnunquam insurgit adversus ea, quae motum ipsius prohibent;
+<lb/>illa sane propellere, rias autem sibi puras reddere
+<lb/>contendens. At in ea impingens, a latione sane impetuosa
+<lb/>cohibetur, totum autem corpus eo incursu perturbat... Nam
+<lb/>-praeter alia etiam vaporosae nunc redditus, dum illiditur
+<lb/>in ea, quae obsistunt, intro rursus resilit, ceu ictu rep ercussus,
+<lb/>ac iterum ad principium revertitur; lude rursus
+<lb/>erumpens incidit violentius , iterumque resilit etiam ab hoc
+<pb n="7.624"/>
+<lb/>incursu; idque frequenter per successionem fit, quamdiu
+<lb/>noxia perseverant. Hac itaque ratione assectus dolorificus,
+<lb/>quippe corpore ex ictibus laborante , et motus inaequaliter
+<lb/>invadit, et in utroque motu animal riget.. Nam quum in
+<lb/>naturali statu erat,. counatus noster calor aequalibus et liberis
+<lb/>transituum viis utebatur; tempore etmensmamotus lu se
+<lb/>inclinans, delude se explicans; quum autem riget,. motus
+<lb/>ipsi neque inclinationes neque explicationes existunt; justius
+<lb/>autem dixeris ipsum intro quidem proficiscentem , utar autem
+<lb/>non meis , sed veterum virorum vocabulis, resilire , impelli,
+<lb/>reprimi et concurrere ; foras autem tendentem,
+<lb/>erumpere , excuti , elabi et exilire. Etenim et hae vetustiorum
+<lb/>hominum dictiones sunt, omnes recte prolatae et
+<lb/>affectum accidentem , quam licet maxime , manifesto interprofantes.
+<lb/>Concuti autem dico omnia in corpore, et
+<lb/>agitari turbarique ; ac omnis lu rigore motus inaequalis,
+<lb/>inordinatus , citra voluntatem eveniens , ob inaequalem,
+<pb n="7.625"/>
+<lb/>validum et violentum illapsum invasioncmque et repul-,
+<lb/>tum caloris iirfiti, vaporosi redditi, perficitur. ^Idcirco
+<lb/>corpus post rigores amplius recalescit quam quum in .natu-.
+<lb/>rasi statu calidum erat. Jam effunduntur etiam sudores.
+<lb/>Quuui enim per multos insultus noxia libere propulerit,- et
+<lb/>absolute respiraverit, tribus de causis. corpus incalescere necesse
+<lb/>est; primum, quod frequenter calor aperipiratu exteriori
+<lb/>repressus in alto colligitur; deinde,. quod nunc totus
+<lb/>foras vehementer expansus est; postremo, quod calor
+<lb/>insultu,- ictu violentoque motu accendi soleat. Ac lignum
+<lb/>aut lapidem confricans nonnunquam ignem accendes; . - af
+<lb/>inlitus spiritus, quum natura sit calidus, si vehementer moveatur,
+<lb/>non multo magis accendetur? Sed hoc in naturalibus
+<lb/>motibus evidenter videre licet; nam currentes homines,
+<lb/>luctantes , confricantesque se ac alio quodam modo moventes,
+<lb/>nihilo minus incalescunt quam si quis in fele aestivo
+<lb/>et apud ignem incaluerit.. Saepe sane et in hujusmodi ex
+<lb/>asto reditu calor veluti fervens aliquid humorum consertior
+<pb n="7.626"/>
+<lb/>effundit, quod nempe sudorem appellamus. Quocirca post
+<lb/>rigorem refrigeratum non recalesieri iterum, malum est;
+<lb/>nam calor luter pugnandum victus esu Vincitur autem
+<lb/>nunc causae laedentis robore, nunc quum ipse est imbecillior.
+<lb/>Sic itaque et illud lictum est : Lx rigore perfuga- .
+<lb/>ratio non recalescens, malum. Rursus affectiones utrasque,
+<lb/>ob quas rigores fiunt exitiales, docens, inquit: . Post
+<lb/>oculorum perversionem -in scbre laboriosa rigor perniciofus.
+<lb/>Hic sane rigor vehementis causae soboles est; estus
+<lb/>autem propter facultatis imbecillitatem , lethalis: . si rigor..
+<lb/>incidat scbre non intermittente , aegro jam debili, lethale.</p>
+<p>Verum de his alibi uberius dicetur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">In praesentia vero considerandum venit,
+<lb/>num merito omnes fere rigorem frigidae causae attribuant.
+<lb/>Quod enim frigidus affectus .sit, cuivis constat; an autem et
+<lb/>caula ipsius efficiens talis existat, . inspectione mihi dignum
+<lb/>videtur. Tertianae igitur exquisitae , si quid aliud; certe.
+<lb/>rigor nota est; nam accessiones una cum vehementibus rigo-:
+<pb n="7.627"/>
+<lb/>ribus invadunt, etsi febrem hanc nemo vel insanus ex frigido
+<lb/>constitui humore dixit. Caussis enim est genere tanto. al.tero
+<lb/>causo continuo insertor, quanto calor febris et flammeus
+<lb/>et perurens intermittit. Sitis autem assidua .et refrigerii
+<lb/>desiderium, t bilis merae vomitus , et quod post vomitiones
+<lb/>.aeger melius habet-, quomodo non funt omnia manifeste ob
+<lb/>calorem redundantem ? Quomodo igitur rigent lu tertianis?
+<lb/>qr.imodo in causis continuis , si non intermittentes , sed perpetuo
+<lb/>mentes affligunt, rigor supervenit, et febrem per
+<lb/>crisim solvit? . Caiise namque laboranti, ait Hippocrates,
+<lb/>si. rigor supervenerit, morbus solvitur.^ Imo acre et calidum
+<lb/>medicamentum ulceri admotum, primum sanedolorem
+<lb/>aufert, mox horrorem, deinde rigorem excitat, ac multos
+<lb/>novimus tum. rigasse, tum febricitasse, ob ulcera ab acribus
+<lb/>medicamentis irritata. Sed et inflammationem, quum in
+<lb/>abscessum mutatur, rigorem horroremque c bitari necesse
+<lb/>est. Multarum vero et aliarum affectionum mentionem facerem,
+<lb/>in quibus rigor ob aerem potius quam frigidum
+<pb n="7.628"/>
+<lb/>humorem clare constituitur , nisi sermonis prolixitatem vitarem.
+<lb/>Ne igitur frigido foli coacti rigorem tribuamus,
+<lb/>quoniam et horrendum aliquid auditu et spectatu nonuunquam
+<lb/>et rigorem et horrorem facit. Hoc tane et Plato , non
+<lb/>tantum Hippocrates , sciebat. Qumn igitur de morbis , qui
+<lb/>ob flavam bilem fiunt, dissereret, rigoris etiam meminit;
+<lb/>unde tum aliorum multorum gratia mirari subit medicos p est
+<lb/>illum natos , tum in sermonibus de rigore maxime. Quomodo
+<lb/>enim non grave est, si Plato non medicus norit etiam
+<lb/>ex bile nonnunquam fieri rigorem , causamque invenire studuit,
+<lb/>lu autem tantum ab hujus cognitione omnino absunt,
+<lb/>ut ne ex bile quidem et acri quodam humore excitari rigorem
+<lb/>siciant? Sed difficile est caulam invenire, ronrodo ob acrem
+<lb/>calidumque humorem frigidus affectus constituatur; forsan
+<lb/>autem difficile non est, siquidem nec Plato dubitavit; multo
+<lb/>autem sane satius erat, si re vera <hi rend="u">diffi</hi>cile est, non evertere
+<lb/>conari rem evidenter apparentem, sied caulae ignorantiam.
+<pb n="7.629"/>
+<lb/>faleri. Tollere autem id quod apparet, simile est ac si fatearis
+<lb/>ne ridere quidem nos, eo quod ignoremus quomodo videamus.
+<lb/>Quod igitur nihilonunus ob acrem -et calidum humorem,
+<lb/>quam.frigidum et congelantem, rigor excitatur, longe
+<lb/>verissimum esu Deinde inspiciendum est, num frigidum aut
+<lb/>acre simpli ester abundare oporteat, ut rigorem possit excitare.
+<lb/>Postea autem illud multis incertum definiemus ; nequc
+<lb/>enim simpliciter frigido humore redundante , neque simpliciter
+<lb/>acri, rigor oritur. Sed de frigido sane superius
+<lb/>manifesto ostendi, quum in memoriam revocarem omne quod
+<lb/>oedema, torporem, paralysin et aquam subteri cutem repraesenlat.
+<lb/>De calido autem et acri nunc tibi indicabo;
+<lb/>nam cacochymi, arquati et febricitantes acute causcque
+<lb/>occupati omnes rigerent. Neque igitur. simpliciter aut frigidum
+<lb/>humorem aut acrem ad rigoris generationem abundare
+<lb/>oportet, sed peculiarem utrique ipsorum modum esse opor;
+<lb/>ter Erit autem modus , neque enim totum sermone perse-</p>
+<p rend="indent">qni veri studiosis detrectandum est, aut copiae mensura, aut
+<pb n="7.630"/>
+<lb/>humoris qualitas, aut locus aliquis corporis; lu quo hunc
+<lb/>colligi oportet. Erit autem et in quo loco manet aut mdvetur
+<lb/>et in motus modo haud parva differentia. Ad has
+<lb/>igitur ipsas Plato quoque respiciens dicebat: Quum fibrae
+<lb/>in sanguine hanc sane vim habeant, bilis natura vetus
+<lb/>sanguis saeta, ac rursus ex carnibus in hune liquata; . ca.
+<lb/>lida et . humida paulatim primum incidens , propter fibrarum
+<lb/>facultatem congelatur; congelascens autem et vi resiincta
+<lb/>hiemem tremoremque latus parit, copiosior autem
+<lb/>induens, caliditate, quae ab ea venerat, sibras exuberans,
+<lb/>praeterque modum exaestuans, conservat. In his Plato
+<lb/>omnia conatus est persequi, quae in omnibus affectus generibus
+<lb/>scire convenit. Nam speciem humoris dixit, bilem
+<lb/>ipsum nominans ; indicarit et qualitatem , calidum et humiclam
+<lb/>appellans; uudeetiam hujusmodi bilisexoriatur, nam
+<lb/>ex eame liquescente ipsam fieri protulit; jam et locum in
+<lb/>quem fluit adjecit, ex eo quod indicat bilem influentem a
+<pb n="7.631"/>
+<lb/>fibris in sanguine contentis concrescere. Huic orationi etiam
+<lb/>assectus generatio adjuncta est, ubi hiemem tremoremque
+<lb/>fieri pronunciavit, hiemem tune nominans frigiditatis in
+<lb/>rigoribus sensum, tremorem autem inaequalem concussionem
+<lb/>et agitationem, in qua non hunc modo, sed etiam mea
+<lb/>elicorum plerosque hallucinatos damus. Nos enim superius
+<lb/>motum lu tremore obortum ab eo, qui in rigore accidit,
+<lb/>distinximus. Quum igitur, ait, copiosior iusiuens fibras
+<lb/>evicerit, corpus excalefacit, ad suam ipfius vim fibras transmutans
+<lb/>vice versu, ut ipsa prius ab illis mutabatur. De
+<lb/>veritate igitur eorum, quae Plato dixit, considerare propositum
+<lb/>nunc non est, quum in aliis commentariis fimus tractaturi,
+<lb/>fenteutiamque laturi de iis, quae in Timaeo memoriae
+<lb/>mandavit Quod autem nihil omiserit eorum, quae dici
+<lb/>conveniebat ab illis, qui de rigore pronunciant, id jam ex
+<lb/>verbis ipsius apparet. Etenim humorem dixit, a quo rigor
+<lb/>nascitur, et locum in quem fluit, motusque speciem; praelorea
+<lb/>modum quo refrigeratur et rursus incalescit corpus.
+<pb n="7.632"/>
+<lb/>Itaque de Platonis opinione lu expositione eorum, quae ipsis
+<lb/>in Timaeo medice prodidit, examinabimus. Nunc autem
+<lb/>nostram proscrimus sententiam, accommodantes ea, quae
+<lb/>ex Hippocratis opinione paulo ante dicta sunt. Etenim casiderum
+<lb/>medicaminum applicationibus nonnunquam, solus
+<lb/>horror , saepe et rigor supervenit ; quemadmodum in causis
+<lb/>et tertianis febribus , quum flava bilis non in valorum conceptaculis
+<lb/>, sed per carnes movetur , vel quod copiosior lue
+<lb/>humor in ipsis creatus sit, vel quod per ipsas a natura expurge.tur.
+<lb/>Hae enim ipsa ratione sola ardentes sebres a terthuris
+<lb/>differunt, quod ardentes in vasis bilem habeant, tertianae
+<lb/>extra vasa per sensilia corpora vagantem ; nam dum
+<lb/>per ipsa rapitur, acrimonia laedens , dolorem excitat. Contingit
+<lb/>igitur interea duo quaedam fieri, inclinare.nempe in
+<lb/>corporis altina sanguinem, atque ideo. exteriora ejus refrigerari;
+<lb/>partes autem ipsus. corporis, in quibus bilis est,
+<lb/>unamquanque ipsam a. su ad vicinam excretrice alienorumfacultate
+<pb n="7.633"/>
+<lb/>propellere, usque dum ex omnibus abacta , per sudores
+<lb/>aut vomitus aut etiam per alvum suerit excreta. Hoc
+<lb/>autem et cruditate laborantibus, aut vitioso humore plenis,
+<lb/>aut in selem aestivum aut balneum progressis, aut exercitatis
+<lb/>accidit; horrore itaque statim corripiuntur , nonnulli ipscrum
+<lb/>etiam rigent. oportet enim non modo causam quandam
+<lb/>lu nobis esse mordacem , sed etiam vehementer agiletam ;
+<lb/>fi factura fit rigorem ; ac co<hi rend="u">mm</hi>une hoc utrique caufarum
+<lb/>generi accidit, et quae frigidae, et quae calidae facultatibus
+<lb/>existunt, nempe ut corpus dolorifice moveant.
+<lb/>Ideoque lu quartanis febribus et tertianis rigor fimus invadit,
+<lb/>etsi ab humoribus contrariis facultate constituuntur; frigidus
+<lb/>etenim melancholicus humor, calidus autem flavae bilis.
+<lb/>Non absolute autem abundare ipsos dixi oportere, fi aut rigorem
+<lb/>aut horrorem sunt facturi, fed etiam motu vehementiori
+<lb/>per corpora sensilia serti. Quo autem tempore sanguis
+<lb/>et cum eo etiam nimirum calor in altum corporis et. viscera
+<pb n="7.634"/>
+<lb/>resugrt, cutis partes et crurum manumnque extrema frigida
+<lb/>et exanguia redduntur, ec quod plurimum a visceribus absint.
+<lb/>Si igitur in alto calorem insitum extingui contigerit;
+<lb/>vel suffocatum, quod foras non transpiret, vel a frigidis causis
+<lb/>evictum , animal emoritur. Sin autem lu altum quidem
+<lb/>refugiat, causis autem laedentibus collectus resistat , in hoc
+<lb/>veluti instrumentum efficitur facultatis alienorum expultrieis
+<lb/>, quae in omni corporis parte consistit. Ipsa enim jam
+<lb/>per fe noxia expellere nata, mullo id magis efficit caloris
+<lb/>ex alto emergentis subsidio , qui fimul ea robore lationis lu
+<lb/>quodcunque proclive ei fuerit, elicit. Multoties igitur noxia
+<lb/>per cutem excutit, saepe per vomitus et ventrem iuleriorem.
+<lb/>Caeterum non modo ex flava aut nigra bile rigor,
+<lb/>fed etiam ex frigida admodum pituita fieri folet; vocat autam
+<lb/>hunc hunrorem Praxagoras vitreum. Verum talis rigor
+<lb/>neque vehemens est, etsi diebus nonnunquam plusculis deinceps
+<pb n="7.635"/>
+<lb/>perseverat; conquiescentibus autem et nullo modo
+<lb/>agitatis, ipse quoque cessat; motos vero statim comitatur
+<lb/>pro motus mensura, ob validiores et robustos motus vehe-,
+<lb/>mentior, ob imbecilles lenior. Vili hoc symptoma mulieribus
+<lb/>magis quam viris accidere , actis musieribus, quae
+<lb/>instio maximo degebant, et balueis post cibos utebantur.
+<lb/>Novi et adolescenti cuidam ex nostris condiscipulis in Alexandria
+<lb/>accidere , quum primum illuc appulimus initio autumui.
+<lb/>Ingesserat autem -hic pluribus deinceps diebus palmularum
+<lb/>glandes multus teneras et recentes, et post balnea
+<lb/>et ante haec ; erant autem plures ipsarum non exacte tuasurae.
+<lb/>Accidit itaque ei, ut primum post exercitium et
+<lb/>balneum a vehementi inciperet horrere, propter quem et
+<lb/>opinatus te febricrtatmum decubuit et vestimentis contectus
+<lb/>conquievit. Quum autem tota nocte transacta febre careret,
+<lb/>surrexit mane ad consueta munia revertens.; horrorem inturea
+<lb/>sentiens, iterum decubuit, quievitqne usque ad balnei
+<pb n="7.636"/>
+<lb/>horam. .Ac quum ut ad balneum accederet, rursus furrexisset,
+<lb/>horror vehementior invasit, eratque symptoma rigor
+<lb/>quoque jam exiguus. Tunc igitur omni modo febricitaturnm
+<lb/>te arbitratus , multo adhuc magis in quiete sie continuit.
+<lb/>Quum autem toto die nocteque insequenti experiendo deprehenderet
+<lb/>se ob mediocres motus horrere ; fi quando sargius
+<lb/>moveretur, rigere; cousiIio trostio de iis, quae fieri
+<lb/>expediebat, usus esu Ego itaque memor hujusmodi quiddam
+<lb/>mulieri in Afia nofitra accidisse, familiarem et metu lihera
+<lb/>vi, et adhortatus tum , ut cibis, potionibus et melicamentis
+<lb/>uteretur calefacientibus et crassitiem humorum incidentibus.
+<lb/>Ille igitur hoc pacto convaluit. Postea imiliter
+<lb/>affectis per initia quidem dedi medicamentum ex tripiior
+<lb/>pipere; deinde nostium diacalamiuthes ; postea ex liquore
+<lb/>Cyrenaico .et castorio compofitum , quod etiam quaternariis
+<lb/>ciccuitionibus est utilissimum , praesertim ubi a rigere
+<lb/>vehementi algescuut. -Ne mireris autum, si apud veteres
+<pb n="7.637"/>
+<lb/>medicos scriptum invenias, sebrem comitari neeestarm
+<lb/>rigores, qui sine fulgore obveniunt externo, ex ipsa corporis
+<lb/>astectione prodeuntes.; nihil enim tale veteribus, nec tot
+<lb/>balucis post cibum nec alta otiosa utentibus, accidebat.
+<lb/>Hoc autem tempore ambo haec frequenti in usu habita, etiam
+<lb/>rigorem hunc ; qui quod excalefieri nequeat anecthermantos
+<lb/>appellatur, excitant, novum quoddam et peregrinum fymptoma,
+<lb/>propter victus novitatis rationem; omnibusque ita
+<lb/>affectis vel tensionis vel gravitatis sensus in dextro hypochondrio
+<lb/>oritur, ubi jecur situm est, venis nimirum ipsius
+<lb/>crassitie humorum obstructis. Quemadmodum autem gras
+<lb/>vitatis et tensionis in viscere sensum affecti habent, ita et
+<lb/>rigorem percipiunt , ab eo , qui quartanis et tertianis acri-.
+<lb/>dit, diversum. Nam in quartanis talem sibi rigorem fieri
+<lb/>affirmant, qualem qumu pev frigus validum iter faciunt; in
+<lb/>tertianis item et causis febribus, tanquam ab aciculis acutis
+<lb/>et tenuibus in carnibus lancinantur punganturque, saepe
+<pb n="7.638"/>
+<lb/>sentiunt. Ego itaque et ipfe quartanarum rigorem non exportus
+<lb/>sum, alterum autem expertus, ut qui in Iuventute
+<lb/>quater tertiana febre laboraverim, cauto autem semel; quare
+<lb/>de dicta rigoris. qualitate. lu hujusmodi affectibus testiumaium
+<lb/>ferre possum. Qui autem quartanarum rigorem experti
+<lb/>sunt,. ad ossa usque pertinere dictitant, ubisitvehemeus
+<lb/>, finalem rigoribus , qui ex ambiente nos aere adurodum
+<lb/>frigido nafcuntur. Verum hoc quoque tertianis causisque.
+<lb/>febribus. adjicere possumus, quodquartanis non inest.
+<lb/>Etenim plurimi sitiunt, et calorem per imas partes in ipsi,
+<lb/>rigoris tempore sentiunt, quorum neutrum in quartana febre
+<lb/>rigentibus accidit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Quoniam vero et de rigore abunde dis
+<lb/>ctum est, reliquum fuerit etiam de convulsione adhuc disserere.
+<lb/>Erit autem neque longus neque obscurus ferme. li
+<lb/>quis eorum, quae hactenus recensui , - memor fuerit. Iuripiam
+<lb/>autem etiam nunc a repetitione eorum , quae in libris
+<lb/>de mulculorunr motu demonstrari. . Quum enim omnes arbitrarii
+<pb n="7.639"/>
+<lb/>motus musculis obeuntur, quando ad fua ipsorum
+<lb/>capita contracti, unamquamque partem, cui inseruntur, simul
+<lb/>attraxerint; si assectus aliquis lu tensionem ipsus ducens
+<lb/>acciderit, hunc motus sequitur , similis quidem naturali, sed
+<lb/>citra voluntatem, ac vocatur affectus convulsio. Quod
+<lb/>enim musculus et tendatur et convellatur ad suum principium,
+<lb/>sicut et quod illa corporis pars cui inseritur, cum
+<lb/>ipso simul attrahatur, commune id et sanis et convallis exisiit;
+<lb/>quod autem invito hoc accidat, praeter naturam asse-.
+<lb/>ctis, non fanis. Si igitur a quot causis nervosa corpora
+<lb/>tendantur , invenerimus , finem sane et lue jam sermo nobis
+<lb/>accipiet. Atqui nihil est eorum fere, quae extra corpus
+<lb/>sunt, chordis nervosius, quas quotidie et lu lyris et in
+<lb/>citharis ah artificibus intendi quidem videmus , ubi insim,
+<lb/>mentis usuri sunt; remitti autem, quunr cessantes ea reponunti
+<lb/>At rumpuntur lu immoderatioribus aeris temperamentis,
+<pb n="7.640"/>
+<lb/>in humidis sane et austrinis commadesactae.; in sic-..
+<lb/>eis .autem et. aquiloniis vehementer ficcescentes. Propter.
+<lb/>hoc igitur remittunt ipsas quum seponunt, praesertim ubi.
+<lb/>ambiens fuerit qualis dictus est ; rumpuntur enim utroque
+<lb/>modo tensae. Cousiderato mihi et nervos et tendones in
+<lb/>animalium corporibus vel distentus a superflua humiditate,vel
+<lb/>ficcescentes a causis siccantibus , in tantam perduci ten-,
+<lb/>sionem, in qua sanis motus fiebat arbitrarius. Cousiderato
+<lb/>item fieri posse, ut pars quaedam corporis, quae. aut lusiammarione,
+<lb/>aut alia quadam causa valde fit affecta, nervos
+<lb/>continuos secum attrahat convellatque. Etenim quum has
+<lb/>omnes affectiones mente conceperis, ob quas convulsio oriatur,
+<lb/>invenies. Siquidem hrflammationes uervofarum partium
+<lb/>, ac praesertim quum in nervorum principio aut etiam
+<lb/>prope aptum generantur, nervos continuos attrahentes teudunt,.
+<lb/>quemadmodum artifices extrinsecus chordas.. Si autem
+<lb/>nervosa corpora ab humorum copia madefacta tendantur,
+<pb n="7.641"/>
+<lb/>similis interea assectus oritur, atque chordis, quae
+<lb/>propter ambientis humiditatem vehementius intenduntur.
+<lb/>Contra in malignis febribus ardentibus et valida phreuitide
+<lb/>fieri apparet; ut enim lora prope ignem siccescentis contrahuntur
+<lb/>tenduuturque , eodem modo convulsiones fiunt
+<lb/>ob nimiam morborum .siccitatem , quae nervosum genus admodum
+<lb/>arefacit. In ardentibus igitur febribus id ex sola
+<lb/>siccitate evenit Phrenitides autem et ex principii nervorum
+<lb/>inflammatione symptoma comitatur. Nosti vero jam
+<lb/>hunc affectum, primum .quidem emprosthotonon esse et dici,
+<lb/>alterum opisthotonon, tertium f etanon , omnes habere pro
+<lb/>consesso. Quum sane in anteriora corporis partes tenduntur,
+<lb/>emprosthotonon; quum in posteriora , opisthotonon; quum
+<lb/>denique ad utrasque partes aequali tenore , tetanon. Atque
+<lb/>ex siccitate convulsiones nunquam sanaveris ; quippe ita afsecti
+<lb/>protinus emoriuntur, ne cogitandi quidem remedii
+<lb/>tempus permitrentes; quae autem ex copia, aut inflammatione
+<pb n="7.642"/>
+<lb/>fiunt convulsiones , his medeberis , copiam sane evacuans;
+<lb/>inflammationem vero propriis ipsius remediis persanans
+<lb/>, quae in medendi methodi libris didicisti.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

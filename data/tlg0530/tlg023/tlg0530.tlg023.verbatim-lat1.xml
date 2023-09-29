@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Praesagitio omnino vera expertaque</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg023.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+        <monogr>
+          <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+          <author>Pseudo-Galen</author>
+          <editor>Kühn, Karl Gottlob</editor>
+          <imprint>
+            <publisher>Cnobloch</publisher>
+            <pubPlace>Lipsiae</pubPlace>
+            <biblScope unit="vol">19</biblScope>
+            <biblScope unit="ed2vol">8</biblScope>
+            <biblScope unit="pp" from="512" to="518">512-518</biblScope>
+            <date>1830</date>
+          </imprint>
+        </monogr>
+        
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+        <monogr corresp="Chartier">
+          <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+          <author>Galen</author>
+          <editor>Chartier, René</editor>
+          <imprint>
+            <publisher>[s.n.]</publisher>
+            <pubPlace>Paris</pubPlace>
+            <biblScope unit="vol">8</biblScope>
+            <biblScope unit="pp" from="895" to="897">895-897</biblScope>
+            <date>1639</date>
+          </imprint>
+        </monogr>
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x08">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg023.verbatim-lat1">
+<pb n="19.512"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="19.512"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI OMNINO VERA EXPERTAQUE PRAESAGITIO.</head>
+
+
+<p rend="indent">Qui mortis non modo diem, fed et horam
+<lb/>voluerit praenoscere , eum spectare oportet quo .maxime
+<lb/>tempore accessionis plurimum torqueatur aeger. Etenim si
+<lb/>primo accessionis intuitu frigeat impensius ac difficile inlalescat
+<lb/>et diu male coloratus permaneat pulfusque parvus
+<lb/>fiat fomnumque segniter capiat et comatulus sit aut
+<lb/>aliquid aliud ejusmodi patiatur; id omne tempus falcectum
+<lb/>maxime, etsi moderatum fuerit; esse debet. At circa
+<lb/>vigoretnest dejectum aegrotum delirantem aut anxium videris
+<pb n="19.513"/>
+<lb/>febrisque vehementiam minime ferentem plurimumque.
+<lb/>exaestuantem et vertiginofum capite dolentem nauseabundum
+<lb/>aut tali aliquo vexatum affectu, suspectum id tem-.
+<lb/>pus tibi esse maxime oportet quamvis accessio.: is principium
+<lb/>et vigor sint mediocria. Verum circa vigoris remissionem
+<lb/>si animi defectiones et sudores inaequales aut
+<lb/>frigidos circa caput aut pectus afferat et pulsus imbecilles ac
+<lb/>parvos efficiat aut alia hisce similia, hoc maxime tempus
+<lb/>debet esse suspectum. Atque si hoc definitum fuerit
+<lb/>mortis diem dicere pon erit amplius difficile. Nam secunda
+<lb/>die si contingat accessionem , vehementiorem esse
+<lb/>prima, tertia vel quiuta, mortem texta die sutorum indicabit.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Ex quinque aut propter convenientis materrae
+<lb/>additionem aut propter motum vel propter estrictionemvel
+<lb/>propter putredinem aut propter viciniam altersus
+<lb/>calidi. - Atque ob additionem quidem , ut quum ei
+<lb/>quod .emper-mentum nactum est calidum-; veluti piper,
+<pb n="19.514"/>
+<lb/>sinapi, allium et his similia oblata fuerint et horum qualitas
+<lb/>in cor distributa calorem in eo nativum inflammabit
+<lb/>et febrem accendet. Propter motum autem dupliciter, is
+<lb/>enim vet animi veI corporis est; animi quidem ut in ira
+<lb/>et sollicitudine; corporis autem ut in immodico labore.
+<lb/>Propter adstrictionem autem quum ob lentorem aut crassitiem
+<lb/>quandam inaruerint et obstructi fuerint insensibiles
+<lb/>corporis meatus aut extrema vastorum vel in diffiatione
+<lb/>ejus quod est in profundo, febris est accensa. ob putredinem
+<lb/>ut quum fubjecta. redundansque materia, in profuudo
+<lb/>putruerit atque in cor distributa febrem accenderit.
+<lb/>Propter viuiniam autem alterius calidi, veluti quum in folis
+<lb/>ardore caput exaestuasverri maximeque plerus retisurmis
+<lb/>atque per arterias calor in cor distributus febrem
+<lb/>-ccenderit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Invadentis febris signa funt oscitationes,
+<lb/>horrores, pandiculationes sive animi concitationes, nau-.
+<lb/>reae, delationes in somnum, tussicula tubnspera, extremosum
+<pb n="19.515"/>
+<lb/>persrigerationes atque haec funt extrinfeca signa. A
+<lb/>pulsibus autem ex parvitate et inaequalitate cognoscitur
+<lb/>quod reliquum est. Ac in accessione quidem ipsius pulsus
+<lb/>systole magis urget cum inaequalitate quadam ac parvitate;
+<lb/>at in ipso incremento fere sunt pessimi aucta diastole ad
+<lb/>perfectum usque vigorem, calore autem intenso primum
+<lb/>magnitudo augetur, deinde et celeritas assumitur. Nam
+<lb/>quum sufficienter febris accensa fuerit magnos simul et
+<lb/>celeres pulsus efficit su sin autem impensius etiam -crebros
+<lb/>quo nempe modo ante febres fiunt oscitationes? Oscitant
+<lb/>ante febres aegri ob concussionem et vim ipsus intendens
+<lb/>tem. Nam quemadmodum ex lebetibus vapor multus attollitur,
+<lb/>fervente in ipsis aqua, ita etiam et ex iis quae
+<lb/>sunt intra corpus vapor emissus intendit et concutit ac
+<lb/>evertit corporis mufculos ; solent namque nervi tepefacti
+<lb/>desidere atque ita fiunt oscitationes.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">quando venae implentur et intumescunt
+<pb n="19.516"/>
+<lb/>a flati o us interfectae capitis dolores luserunt, ri ac tensione
+<lb/>flatuum .intus immissorum. Febrem vero per sudores
+<lb/>iri solutum cognoscemus ex eo quod morbus maxime
+<lb/>sit accensus, quemadmodum qui caussis appellatur. Bilioius
+<lb/>namque morbus f s est qui quando movendo: est vehe- .
+<lb/>menter rigorem efficit; ac proinde si suppressa fuerit alvus
+<lb/>urinave, proxima quum fuerit crisis, rigor erit exspenandus,
+<lb/>sin utriusque facta fuerit suppressio neque adsit
+<lb/>vomitus aut fluxus sanguinis, sudor necessario futurus est
+<lb/>plurimus magisque quum aegri prociderint augescente accessione
+<lb/>atque ea .de causa facti fuerint calidiores aut
+<lb/>quispiam calidus e corpore halitus exipiret qualis antea
+<lb/>non fuerit in recenter lavatis. Pulsus. magni alti et celeres
+<lb/>atque in diastolen magis properantes, ac veluti undosi,
+<lb/>quum arteriae tunica mollis appareat et humida, .totius
+<lb/>vero corporis pruriens superficies ac mollis et quibusdam
+<pb n="19.517"/>
+<lb/>horis rubescens; atque haec in accessione critica coutingnnt
+<lb/>praeeunte coctione, ac t, e critico bono salubrium
+<lb/>ac morbos solventium sudorum signa comparebunt ; manifestum
+<lb/>vero est calidum esse moderate debere sudorem qui
+<lb/>morbum soluturus est, ac per omne corpus diffusum et
+<lb/>juxta rationem Levantem alacrioremque hominem reddentem.
+<lb/>At frigidi sonores dum acuta febre erumpentes mortem;
+<lb/>cum mitiore vero morbi longitudinem significant.
+<lb/>Sudores febricitantium boni si incipiant, tertio die, quinto
+<lb/>et septimo et nono et undecimo et quartadecima et vigesimofeptimo
+<lb/>et trioesimoquarto.; hi namque sudores morbos
+<lb/>judicant ; qui vero ejusmodi non fuerint, dolorem
+<lb/>significant morbi longitudinem et recidivam; qua autem in
+<lb/>parte corporis suerit sudor, in ea. morbum esse dicito; et
+<lb/>qua in parte corporis fuerit frigus aut calor, in ea morbus,
+<lb/>et quum in toto corpore mutatio, ac si corpus refrigeretur,
+<lb/>ac statim incalescat aut color ex alio alius generetur,
+<lb/>morbi longitudinem significa.. Sudor erumpens ex
+<pb n="19.518"/>
+<lb/>tomuo sine caufa manifesta cibo corpus uti copiosiore significat;
+<lb/>si vero cibum non assumenti id contingat, vacuatione
+<lb/>indigere corpora ligium esu Febricitanti fultor superveniens
+<lb/>nec solvens febrem malum. Prorogatur .enim
+<lb/>morbus et copiosiorem significat humorem. -</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

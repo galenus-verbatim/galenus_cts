@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De pulsibus ad Antonium disciplinae studiosum et philosophum</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg026.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Pseudo-Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">19</biblScope>
+              <biblScope unit="pp" from="629" to="642">629-642</biblScope>
+              <date>1830</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">8</biblScope>
+              <biblScope unit="pp" from="333" to="336">333-336</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x08">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg026.verbatim-lat1">
+<pb n="19.629"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="19.629"/>
+
+
+
+<p rend="indent">Scopum habemus in praetenti libro de -pulsuum
+<lb/>opere concisam exponere ^tractationem; ac dicere primum
+<lb/>quid .fit pulsus; cur dicatur pulsus; quis pulsususus; et
+<lb/>quid sit arteria. Atque ad scopum accedamus; et a primo
+<lb/>exordiendum. Pulsus est motus cordis et arteriae, qui per
+<lb/>diastolen an fystolen perficitur ad innati caloris refrigerationem
+<lb/>et fuliginosorum excrementorum excretionem. . Dicitur
+<pb n="19.630"/>
+<lb/>autem pulsus^ a pulsando ac movendo. Tria vero
+<lb/>ipfum dividunt, facultas efficiens motum, urgens utus, et
+<lb/>obfequens instrumentum. Sed ad arteriam veniamus. Arteria
+<lb/>pars est corporis oblonga , orbicularis , tubi instar
+<lb/>.bifariam .dividentium quae a corde manans in universum
+<lb/>corpus distribuitur, aerem et fpicit.um vitalem eoutinens.
+<lb/>Arteria vero ΑΑηρεῖν quod vitalem spiritum confervet, at
+<lb/>ipsa e sinistra .cordis auricula. ex ea. quae dicitur aorta
+<lb/>exoritur, quae duas in partes diffinditur, quarum una quidem
+<lb/>deortam fertur per partes interiores inferas, ac dextra
+<lb/>et sinistra . in crura ad extremos usque pedes atque
+<lb/>digitos distribuitur; altera vero rursum ipsius- portio quae
+<lb/>fursum fertur similiter dextra ac .sinistra in manus et caput
+<lb/>repens cervicales quas dicunt arterias efficit; quae
+<lb/>autem in dextras ac sinistras partes intro ducitur in brachia
+<lb/>et cubitos adusque carpum ac manum digitorumque
+<lb/>extrema. His a nobis explicatis deinceps quoque de scopo
+<pb n="19.631"/>
+<lb/>aut proposito disseramus. Huic praesenti libro Inopus est
+<lb/>dignotiones dicere, ac si fieri possit caulas a motu pulfuum
+<lb/>, alias fecundum naturam , alias praeter naturam,
+<lb/>alias non statura constituemus, ut ex ratione temperamentorum
+<lb/>, virorum ,- mulierum , aetatum et aliorum ejusdem
+<lb/>r seriei. Hominum .enim alii mares, alli feminae; et horum
+<lb/>ipsorum alii fecundum naturam calidiores, alii vero frigidiores;
+<lb/>hi quidem graciles natura, illi vero obesi et carnosi.
+<lb/>Ac viri quidem ut plurimum feminis natura casidiores
+<lb/>et vehementiores ; mulierum vero ut frigidiorum
+<lb/>tardiores et imbecilliores. In utrisque autem his aut alterutris,
+<lb/>viris dico et feminis, temperamentum autem
+<lb/>pulsus quoque intendit; si quidem in calidius, majores ac
+<lb/>vehementiores efficit. Calidum certe celeriter movetur;
+<lb/>si vero in frigidius, minores ac tardiores; frigidum namque
+<lb/>tarde movetur. Quod autem ad habitum is in. utrisque
+<lb/>reperitur , qualis est gracilis - etr carnosus. In ipsis
+<pb n="19.632"/>
+<lb/>enim gracilibus altiores ipsi tactui pulsus fubjiciuntur ; in
+<lb/>ipsis autem obesis et carnosis depressiores. o Quin et ea
+<lb/>quae sunt ejusdem generis veniunt observanda, ut tempestat.es,
+<lb/>regiones , aetatum singularum constitutiones; et ut
+<lb/>verbb dicam in ipsis tempestatibus ahui- quae quatuor^
+<lb/>sunt; ver videlicet, aestas, autumnus, hiems; quid harum
+<lb/>duae sunt temperatae, ver et autumnus q duae vero intem-.
+<lb/>peratae , hiems et aestas ; jure igitur in ipfo vere et autumuit
+<lb/>pulsus magni sunt et vehementes propter temperatam
+<lb/>hanc tempestatem. Manifesta esu aetatis analogia:
+<lb/>aestate vero celeres atque crebri propter extrinsecus ambientis
+<lb/>nos aeris calorem ; hieme vero parvi quia facultas
+<lb/>ipsa premitur; in iis quae uterum gerunt crebri et celeres
+<lb/>propter urgentem ufum praegnantis et suetus. In
+<lb/>temno vero fupernutantes. Quomodo fiunt pulsus parvi
+<lb/>et imbecilliores? Fieri clarum est innato calore in prosundum
+<lb/>fe recipiente. In ipsis autem temperamentis adsortitus
+<lb/>simul cum iis quae superveniunt, mutantur et
+<pb n="19.633"/>
+<lb/>temperamenta. Similiter et in macie ut quando quae feeundum^
+<lb/>naturam est facultas in substantia partis cujuspiam
+<lb/>principis laeditur vel ab aliqua causa ipsam efficiente
+<lb/>aut subeunte. Veniamus igitur ad ea quae non natura,
+<lb/>haec sunt exercitia, balnea, cibi multi, vini potus, aquae
+<lb/>multae potus. Similiter etiam et ad ea quae praeter naturam,
+<lb/>haec sunt causae, morbi, quae similiter ac ea quae
+<lb/>dicta prius suere debemus animadvertere. Sciendum vero
+<lb/>est ea quae secundum naturam et quae non natura immoderata
+<lb/>si fuerint, in id quod praeter naturam est pulfus
+<lb/>immutare. De apologia autem omnium et differentia
+<lb/>motuum. Quum igitur ad aegrum vocatus quem nondum
+<lb/>videris antea, primum observa fune mas an femina , ac si
+<lb/>mas suerit mente concipias pulsum maris; si vero femina,
+<lb/>pulsum ipsius feminae. Postea naturam aegrotantis, ejus
+<lb/>aetatem , ac post haec tempestatem anni et regionem ; et
+<lb/>omnia conferens ac conjectans qualem oportebat habere
+<lb/>pulsum ipsum aegrotantem quando sanus erat, tunc absolote
+<pb n="19.634"/>
+<lb/>coguosces.magnitudinem praeter- naturam factae mutalionis
+<lb/>ipsius pulsus, His igitur praemissis pulsuum genera
+<lb/>dicamus . genera pulsuum sunt decem : primum quidem
+<lb/>pulsuum.genus est ex quantitate distentionum: quantitas
+<lb/>vero ex tribus dimensionibus constare videtur, .ex
+<lb/>latitudine et. longitudine et prosunditate. Merito igitur
+<lb/>qui. hoc modo auctus est secundum tres istas dimensiones
+<lb/>et moderationem excedit, dicitur magnus. Secundum genus
+<lb/>pulsuum est ex quantitate motus arteriae secundum
+<lb/>diastolen et sysselen, in quo celer et tardus et moderatus
+<lb/>observantur. Tertium genus pulsuum est secundum robur
+<lb/>ipsius facuIlatis, in quo observantur vehemens et imbecillus
+<lb/>et moderatus: etenim si frequentia nacta fuerit magnitudinem,
+<lb/>pullum efficit vehementem ; quando enim facultas
+<lb/>fuperat causas, tum maxime fit. vehemens et contra.
+<lb/>Quartum genus pulsuum est ex organi constitutione, dico
+<lb/>vero corporis arteriae, in quo observantur durus et mol-lis
+<lb/>et moderatus. . Quintum genus pulsuum est ex quantitate
+<pb n="19.635"/>
+<lb/>quietum, in quo observantur. creber et rarus: breve
+<lb/>enim tempus quietis crebrum indicat; longum vero rarum;
+<lb/>rariores et tardiores pulsus fiunt propter ambientis
+<lb/>frigus vel ob densationem. Similiter vero et in unaquaque
+<lb/>regione pro ejus temperie pulsus immutantur; etenim
+<lb/>si calidior est, magnos efficit et celeres pulsus; sin autem
+<lb/>frigidior ; contrarios. Dicamus et de aetatibus ; quum
+<lb/>igitur et inter fe dissideant aetates, differentes quoque
+<lb/>pullus in his movebuntur; puerorum enim pulsus celeres
+<lb/>sunt; imbecilli et frequentes, fecundum magnitudinem vero
+<lb/>et vehementiam medii-; ac celeres quidem quoniam in ipsis
+<lb/>secundum substantiam abundat calidum innatum. Crebri
+<lb/>vero quia in ipsis fecundum quantitatem nxfuperat caliditas ;
+<lb/>imbecillae vero sunt et.imperfectae facultates in ipsis.
+<lb/>Didicimus enim quod ah imbecillitate facultatis fiant imbecilles.
+<lb/>Senum vero pulsus his contrarii tardiores et
+<lb/>rariores si cum puerorum pulsibus conferantur propter
+<pb n="19.636"/>
+<lb/>eam quae in ipsis est frigiditatem; juvenum vero magni
+<lb/>et vehementissimi, .propterea quod in ipsis facultates funt
+<lb/>vegetiores , similiter autem, et Constitutiones temperamenta
+<lb/>commutant. et. pulsus; quemadmodum enim dictum prius
+<lb/>est continens ipsum commutat secundum i. propriam suam
+<lb/>temperiem id quod in.ec continetur,.quumet.praegnautinm
+<lb/>mulierum. pullus,parvi sunt et crebri ac celeres.
+<lb/>Sextum genus pulsuum. est fecundum aequalitatem aut inaequalitatem,
+<lb/>quae vel in uno vel in pluribus pulsibus
+<lb/>observatur; .lu uno iit in captivante et dicrota feu bis
+<lb/>feriente: quae in pluribus fit vocatur inaequalitas collectiva;
+<lb/>ubi vero fuerit inaequalitas illic ..ut plurimum et
+<lb/>inordinatio; si enim vel unus ictus intercidat et intercaletnr,
+<lb/>atque hoc fiet gravata et. oppressa facultate ab .aliqua
+<lb/>caufa. Septimum genus pulsuum est ah ordine et inordinatione;
+<lb/>quum enim pulsus -f coequalis dividatur in
+<lb/>eum qui circuitibus aequalis est et inaequalis, inordinatus
+<lb/>fit, atque hio rurfusAn uno ictu observatur et fecundum
+<pb n="19.637"/>
+<lb/>reditum ad silent. octavum pulsuum genus .est ex pleni-.
+<lb/>sudine et vacuitate quod est fecundum perfusiones arteriarum;
+<lb/>omne enim vas aut plenum aut vacuum est. Nonum
+<lb/>genus pulsuum^ est a numero quo metimur proportione.n
+<lb/>temporis ad tempus, unde .intercurrentes, deficienfes.
+<lb/>-Decimum pulsuum genus est a calore qui per cor-.
+<lb/>pus diffunditur arteriae, in quo observatur qualitas subjectae
+<lb/>materiae corporis . .per ipfum tactum; qualis est in-temperatus
+<lb/>et mordax. Enarratis autem decem pulsuum
+<lb/>generibus breviter afferamus et paucas causias atque differentias
+<lb/>plerum ; ne forte longior fiat tractatio quae tironibus
+<lb/>.oneri possit esse , si quis enim in perfectam horum
+<lb/>voluerit venire cognitionem, fexdecim funt libri de tota
+<lb/>pulsuum . tractatione. Ego vero prolixitatem aversatus
+<lb/>paucis capitibus paucas qu tsdam differentias et cautas- puti..
+<lb/>suum breviter expono. . Quamob caulam pulsant arteriae?
+<lb/>Ut - fervent nativae commoderationem . caliditatis tum in
+<lb/>corde tum in omnibus pa.tibus. Quid differt palpitatio
+<pb n="19.638"/>
+<lb/>a pulsu? Quod palpitatio ob eruptionem sanguinis et in
+<lb/>omni corpore .fiat ; . pulsus vero vi facultatis moveatur et
+<lb/>in felis arteriis. . Quid differt . magnus pullus a-.vehementi?
+<lb/>Quod magnus quidem in tribus dimensionibus
+<lb/>observatur, vehemens autem in motu, robur enim indicat
+<lb/>facultatis. Quid differt creber pulsus a celari? Secundum
+<lb/>continuitatem et intermissionem. Creber enim dicitur
+<lb/>et continuus, celer vero definitus, quemadmodum quis
+<lb/>currit celeriter et quiescit. Quid differt rarus pulsus^ a
+<lb/>tardo? Quod rarus ab imbecilliori magis facultate fit
+<lb/>et rari pulsus periculosiores. Quot funt differentiae in
+<lb/>pulsus diastole? octo, magnitudo, parvitas,. vehementia,
+<lb/>imbecillitas, celeritas, tarditas, durities, mollities. Quot
+<lb/>lunt efficientes causae pulsus? Duae;. facultas efficiens ac
+<lb/>movens corpus vasis et utilitas ob quam movetur id quod
+<lb/>movetur. Quot funt instrumenta judicandi de pulsibus?
+<lb/>Duo, mens et tensus ; ac tensus quidem de praesentibus,
+<lb/>mens vero de praeteritis judicat et futuris. Quot modis
+<pb n="19.639"/>
+<lb/>observatur pulsus moderatus? Quatuor; secundum magnitudiuem
+<lb/>, secundum celeritatem, secundum vehementiam
+<lb/>et fecundum- crebritatem.^ Quid. differt pulsus inaequalis
+<lb/>ab inordinato ? Quod pulsus inaequalis observatur in uno
+<lb/>pulsu etin pluribus, vel enim secundum unam diastolen
+<lb/>ad fystolen vel secundum plures simul collectas, quae quidem
+<lb/>vocatur inaequalilas collectiva in multitudine pultuum
+<lb/>observata ; inordinatus vero fit fecundum rhythmum.
+<lb/>Quid differunt pulsus intermittentes ab intercisis? Quod
+<lb/>intermittentes ab imbecilliore facultate fiant, oppressa enim
+<lb/>ac dissoluta facultate pulsus fiunt intermittentes: intercisi
+<lb/>vero pugnante adhuc atque resistente, contendit enim feipfam
+<lb/>erigere ea quae molesta funt cupiens extrudere, ac
+<lb/>intercisi pulsus intermittentes esse videntur. Quid differt
+<lb/>pulsus cemvulsivus a vibrato? Quod in pulsu convulsivo
+<lb/>tenditur arteria ad modum extentae chordae; in vibrato
+<lb/>vero in dextram partem et sinistram traducitur arteria.
+<lb/>Quomodo fiunt pulfusnndofi? A redundantia contenti
+<pb n="19.640"/>
+<lb/>humoris percurrentis arteriae corpus quemadmodum in
+<lb/>macilentis.. Quid differt captivans a dicrota? Quod eaprivans
+<lb/>quidem in una systole motus efficit diversus, quemadmodum
+<lb/>subsultans capra pedibus salit in aerem; hoc
+<lb/>autem fit gravata facultate et gravata a causa quadam
+<lb/>ipsam opprimente. Dicrotus vero bis in eodem pullati
+<lb/>hoc autem fit propter siccitatem corporis arteriae, retrocedente
+<lb/>enim et recurrente ac vi quadantenns acto spiritu
+<lb/>mox pulsat iterum, quemadmodum pisa quum in sinuosum
+<lb/>inciderit parietem. Quid differt vermicuIans puIsus a formicante?
+<lb/>Quod vermiculans quidem incurvatur ac mutatur
+<lb/>in melius et manisestam magis habet inaequalitatem,
+<lb/>foruli ca n s vero difficilius in majorem abit, quum subsint
+<lb/>animi defectiones, obscuram vero habet inaequalitatem
+<lb/>propter summam quae in ipso est facultatis concinentiam,
+<lb/>insuper quod et mortem significet. Qui puIIus pessimi?
+<lb/>Rari et intermittentes; intensa enim raritate fiunt intermittentes:
+<pb n="19.641"/>
+<lb/>periculosior autem est raritas max.me in aetate
+<lb/>florentibus. De cognitione pulsus. Pulsum memoria complectere;
+<lb/>si frequenter et plurimum dissendat arteriam, diu
+<lb/>postea morietur. Pulsum memoria teneas et si bis quidem
+<lb/>extra, temet vero intro feratur, ad duos dies vita .
+<lb/>producetur; si vero femel extra et bis intro feratur, inrbecillum
+<lb/>est corpus et sanum; sin autem totum- fuerit
+<lb/>tranquillum, ad mortis fores assistit; De. pulsibus , pulsus
+<lb/>humorum; sanguinis vegetus , magnus, creber et plenus;
+<lb/>atque hujus symptomata funt capitis vehementissimi dolores
+<lb/>et omne corpus febriculofum. Flavae bilis pulsus tenuis,
+<lb/>siccus contingit ; hujus symptomata sunt ventris adstrictio
+<lb/>et circa alvum tormina. Melancholiae pulsus tenuior
+<lb/>et siccior et rarus; ejus autem symptomata sunt
+<lb/>genuum- gravitas et animi defectus. . Pituitae pulsus magnus
+<lb/>et palpitabundus , humidus, aquofus, rarus et aequaIis;
+<pb n="19.642"/>
+<lb/>hujus autum symptomata laterum dolores et quae ab
+<lb/>alvo quotidie feruntur liquida^ dejectiones, vehementissimi
+<lb/>dolores caput prehendunt et febris plurimum protrahitur.
+<lb/>Et in ipso sanguine aegroti vena secetur . quum vero sangula
+<lb/>calidus sit et, .humidus scalas cibus frigidus et humi.Ius
+<lb/>e/su debet et duleis. Melancholia autem frigida et
+<lb/>sicca est et ejus cibus deorsum supra. Diximus calida,
+<lb/>humida et dulcia similiter et aliorum humorum.</p>
+
+
+</div></div></body>
+  </text>
+</TEI>

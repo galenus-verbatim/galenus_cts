@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De venae sectione</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg036.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Pseudo-Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">19</biblScope>
+              <biblScope unit="ed2vol">8</biblScope>
+              <biblScope unit="pp" from="519" to="528">519-528</biblScope>
+              <date>1830</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">8</biblScope>
+              <biblScope unit="pp" from="898" to="900">898-900</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x08">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg036.verbatim-lat1">
+<pb n="19.519"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="19.519"/>
+
+
+
+<p rend="indent">In omni die et noctis hora urgente necessitate venam
+<lb/>secabis , modo respicias in. febrientibus quidem accefsionis
+<lb/>remissionem ; in iis vero quibus aut ob ophthalmiam
+<lb/>aut quid aliud simile , sine febre opus est venae fectione
+<lb/>magnitudinem doloris aut inflammationis obferva : qua
+<lb/>enim hora mitigatum dolorem inspexeris venam sedabis ;
+<lb/>re nulla urgente fatias est mane venam fecere, neque statitn
+<lb/>atque a temno fuerint excitati, verum circiter horam
+<lb/>unam antea vigilantibus. Ac prius abluere aliquos praestiterit
+<lb/>et alios prius ambulare. lu quibus vero praecautionis
+<lb/>ergo venam secamus, etiam postquam aliquid operis
+<pb n="19.520"/>
+<lb/>foliti praestiterint , venam secare licet. Magnitudo vero
+<lb/>morbi et robur facultatis primi sunt venae secandae scopi ;
+<lb/>considerare igitur deinceps. oportet,- quale sit hominis naturale
+<lb/>temperamentum, ec atras quidem venas habentes
+<lb/>et mediocriter tenues, neque albas., neque molles carnes,
+<lb/>tutius vacuabis; his vero contrarios, parcius ; sanguinem
+<lb/>enim habent paucum et carnem quae facile perspiret. Hac
+<lb/>igitur ratione neque pueris venam secabis usque: ad lecimumquartum
+<lb/>annum aetatis. In. maximis vero f nflammationibus
+<lb/>vehemeutissimisoue doloribus nullum noni praestantius
+<lb/>auxilium, quam ad animi deliquium usque vacuare.
+<lb/>In apta igitur purgatione diligenter: advertendum
+<lb/>qualis sit pulsus elevatio, fluente adhuc sanguine, quemadmodum
+<lb/>et in aliis venae sectionibus; deinde quid agere
+<lb/>expediat, ne nos lateat , . quando ex animi deliquio -mortem
+<lb/>invehamus. Sin autem verna suerit tempestas et regio
+<lb/>natura temperata et pueri natura cvmmoda, sanguinem
+<lb/>detrahes ac magis quum imminent pericula, aut iustammatronis
+<pb n="19.521"/>
+<lb/>pulmonis aut anginae aut pleuritidis aut cujuspiam
+<lb/>alterius acuti ac vehementis morbi; venam secare
+<lb/>oportet , ut dictum est, prout pulsus ratio feret ; ad omne .
+<lb/>enim membrum percussum advertes neu annorum sule numero,fed
+<lb/>corporis habitu. ln frigidis autem tempestatibus,
+<lb/>larga vacuati^ vitanda est ob sequentem refrigerationem.
+<lb/>Haud fieri potest ut cuiusque hominis vacuandi
+<lb/>modus -fcriptis definiatur, novi enim in quibusdam fanguinis
+<lb/>detractas lex libras, febri statim restinguendae fuisse
+<lb/>fatis-; neque ullam - confequutam facultatis dissolutionem;
+<lb/>in quibusdam vero- selibram fuisse sine noxa detractam,
+<lb/>in quibus si quis duas detraxisset, maxime nocuisset. Novi
+<lb/>et hoc, quod si una detracta fuisset aut etiam minus pro.fuisset;
+<lb/>propter revulfionem. Qui namque fecundum rectitudinem
+<lb/>venas secaret aegrotantis, confestim manifestam
+<lb/>utilitatem vidisset, Si quispiam ejus qui a medio primus
+<lb/>est, digiti venam locet, nonnulli vero mediam inter medium
+<lb/>et eum qui a medio primus est, digitum, venam fesecant,
+<pb n="19.522"/>
+<lb/>sinentes effluere sanguinem quoad sponte subsisterit,
+<lb/>lienem adjutum fuisse, ut et cubiti Venam secantes
+<lb/>interiorem. Lieni enim male affecto abunde prodest vacuatio
+<lb/>sanguinis ex manu sinistra ; atque adeo in plenriticis
+<lb/>vena e directo lateris affecti secta manifestissimam
+<lb/>saepius exhibuit utilitatem ; at ex opposita manu aut
+<lb/>prorsus obscurant aut tardiorem. lugentibus doloribus
+<lb/>oculorum, siVe humeralis appellata vena aut quae ab ea
+<lb/>propagatur in cubitum secta. In latere dolente vel pulmone
+<lb/>vel diaphragmate vel splene aut hepate aut ventre
+<lb/>secta quae ab axiIla in cubiti articulum deducitur. Secare
+<lb/>vero maxime oportet eam quae in flexum articulaDonis
+<lb/>propagatur, quem scitis humerali vena diffisa subire.
+<lb/>Tres enim hi sunt modi venae sectionis in cubito, scilicet
+<lb/>quae extra et quae intra et quae in medio. Interna autem
+<lb/>prodest partibus quae sunt insta collum affectis ; externa
+<lb/>vero iis quae circa faciem aut circa caput. hl
+<lb/>medius locus quandoque habet utrasque diductas vena^,
+<pb n="19.523"/>
+<lb/>ad partes manus anteriores protensas,- mox et illic. conjunctas;
+<lb/>quandoque fete celeriter invicem subeuntes inflexu
+<lb/>ipsius articulationis; quando igitur propria partis affectae
+<lb/>vena non comparet, . ad -aliquam .e mediis veniendum
+<lb/>eamque ut sedetur incendium potius locare .oportet , quae
+<lb/>sit quasi propriae ramus., Aliquando autem et infra ipsius
+<lb/>cubiti dearticulationem illae, quae circa radium funt,
+<lb/>quas fetare nihil - prohibet non apparentibus iis quae su
+<lb/>cubitu. Ut autem dicta omnia membra, sectis in cubitu
+<lb/>venis .juvantur - ita et in iis quae infra has funt fe res
+<lb/>habet, ut in poplitibus et malleolis; funt autem et eorum
+<lb/>quae dicta fluit quaedem quae inter coxendicem et velieam
+<lb/>et vulvam et renes ambigunt-. Ideo et sectionibus
+<lb/>venarum in cubito nonnunquam ceuunt, quum recens fuerit
+<lb/>inflammatio aut sanguinis exsuperantia. Sin autem is
+<lb/>fueris affectus quem proprie nepbritim appellamus, poplitis
+<lb/>venam oportet secare et eas quae funt in malleolis.
+<lb/>Quae vero lu .vulva fiunt inflammationes venarum quae
+<pb n="19.524"/>
+<lb/>in cruribus sectione non parum juvantur; vacuationibus
+<lb/>enim quae e cubitis.; -si quid aliud-infestum frigus maxime
+<lb/>vitandum et^ad tres aut qhasutiiij dies cibus medlocris offerendus.
+<lb/>Quum -olim gravis pestilentia sisicm invasisset a
+<lb/>qua multi moriebantur, tum ego secundo morbi die nulla
+<lb/>facta remissione, erus scalpenda ad binas libras vacuatieunem
+<lb/>fieri permisi, atque hac ratione periculum effugi.
+<lb/>Multi quoque alii hocce auxilio quum usi fuissent, fuere
+<lb/>servati ac maxime qui larga manu ^sanguinem eduxerunt;
+<lb/>lnfuper etiam- et mediocres capitis. dolores -et faucium
+<lb/>solvit inflammationes , diuturniora autem horum iymptomatum
+<lb/>dissolvuntur sectionibus et scarificationibus. Atque
+<lb/>certe nihil est, quod tantum possit ad perducendos ad
+<lb/>naturalem habitum eos qui a morbis difficile resurgunt,
+<lb/>quam eae quae per scarificationes fiunt, sanguinis vacuationes.
+<lb/>Inter indicem vero et pollicem secta vena atque
+<lb/>fluens sanguis quoad sponte substiterit, diuturnum dolorem,
+<lb/>maxime si illi parti insederit sanati In his vero
+<pb n="19.525"/>
+<lb/>qui purgantur et plus quam par est vacuantur et refrigerantur
+<lb/>et resolvuntur. et convelluntur, vacuationem fiedare
+<lb/>oportet et aquam tepidam offerentes ad vomitum
+<lb/>provocabimus; melius vero fuerit manus et pedes oleo
+<lb/>calido illinere ; sedaretur nihilo minus fomno et balneo. .
+<lb/>Iis vero qui haud fatis purgati sunt, non lavari convenit;
+<lb/>nam. noctu purgantur; hi parcius cibandi sunt. .Iis
+<lb/>autem qui tuto purgat funt, ova et alicam et . surbitiones.
+<lb/>et vinum dulce licet exhibere, quo intestinum ad purga
+<lb/>lienem moveatur per clylmum ; conveniet etiam postridie
+<lb/>lac bibere, cum hircino aut taurino adipe aut dulci vino,
+<lb/>sic enim confluentes colliquationes proluens, absolutam
+<lb/>efficies purgationem.</p>
+<p>EX P .A U L o.</p>
+<p>ne adhibenda cautione su sanguinis detractione.</p>
+<p rend="indent">Qui venam secturus est advertere deuet ne stercoris
+<lb/>multum in intestinis coerceatur. Hoc autem molli clysmate
+<pb n="19.526"/>
+<lb/>vacuamus, ne venae ab intestinis putrluam quandam excrementorum
+<lb/>substantiam eliciant. Ex praetenti igitur
+<lb/>morbo, . quibus sanguinis detractio convenit, quovis tumpore
+<lb/>venam siccabimus. Vigorem et permanentiam in febribus,
+<lb/>particularem accessionem observantes. Sin autem
+<lb/>continua febris fuerit, omnino- matutinum tempus accommodatius,
+<lb/>qui vero quum nondum morbus adest, sed ad
+<lb/>praecautionem , sanguinis vacuationem requirunt, his ver
+<lb/>est commodum. In aetatibus vero usque ad decimumquartum
+<lb/>annum .vacuatio molienda. Quemadmodum et infra
+<lb/>sexaginta annos, nisi nos quaedam effiag.ans urgeat netessitas.
+<lb/>Atque universim omnes qui imbecillam habent
+<lb/>facultatem sunt observandi; atque eas quae fissi lingua
+<lb/>funt venas ut in anginae affectu siccamus oblique adstri.etionem
+<lb/>observantes.; quidam vero et quae in angulis funt,
+<lb/>obscuras venas in diuturnis capitis et oculorum doloribus
+<lb/>dissecant similiter. In pede vero quemadmodum in ischiadicis
+<pb n="19.527"/>
+<lb/>vel ob anum supra interiorem malleolum fecant ad
+<lb/>securitatem.</p>
+<p rend="indent">se, T</p>
+<p>EXHIPPoCHATE.</p>
+<p rend="indent">ln morbis autem acutis venam siccabis, si morbus
+<lb/>gravis appareat et florentem aetatem egerint aegrotantes,
+<lb/>eisque robur adsit. Sin igitur angina fuerit, delige purgationem
+<lb/>vel si quis alius pleuriticorum affectus. Sin
+<lb/>autem imbecilliores appareant ,.. ac si sanguinis -plurimum
+<lb/>detraxeris, clystere alvus tertio quoque die proluenda,
+<lb/>donec in tuto collocatus fuerit aeger, atque inedia utatur.
+<lb/>Vena igitur. interior dextri brachii secanda et Ianguis
+<lb/>ex habitu et aetate , deducta ratione liberalius aut
+<lb/>parcius detrahendus. Istorum pluribus talia contingunt,
+<lb/>faciei rubores, oculorum strabysini, manuum diductiones,
+<lb/>dentium stridores, pulsus, maxillarum contractiones, extremorum
+<lb/>perfrigerationes ; spirituum interceptiones per venas.
+<pb n="19.528"/>
+<lb/>Statim in principiis secanda vena, sublimi existente
+<lb/>laborantium omnium respiratione et fluxione, ad ferendam
+<lb/>enim opem id accommodatius.</p>
+
+
+</div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De causis morborum</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg042.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="1" to="41">1-41</biblScope>
+              <date>1824</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x07">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="205" to="211">205-211</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="16" to="29">16-29</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x07">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg042.verbatim-lat1">
+<pb n="7.1"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="7.1"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE MoRBORVM CAVSIS
+<lb/>LIBER.</head>
+
+
+<p rend="indent">Quot et qui sint omnes morbi, in genera et
+<lb/>species divisi, tum simplices, tum compositi, altero libro dedaratum
+<lb/>est. Licuerit vero deinceps eorum singulorum causas
+<lb/>percurrere, a simplicibus et similaribus, quas appellant, annualis
+<lb/>partibus ducto exordio, ad compositas et organicas emigrabimus.
+<lb/>Posteaquam igitur demonstratum est, ex eorum sententis,
+<lb/>qui substantiam ortui et interitui obnoxiam in unum
+<pb n="7.2"/>
+<lb/>coire alterari que- arbitrantur, omnem <hi rend="u">simil</hi>aris fimplicisque
+<lb/>ad sensum corporis morbum vel intemperiem quandam esse,
+<lb/>vel continuitatis ipsius partium divisionem; ex eorum vero
+<lb/>placitis, qui partesnon in unum. coalescere, sed vacuum
+<lb/>quoddam in omni corporis concretione intextum putant,
+<lb/>mcommoderationem et . sensilis unitatis solutionem : nunc
+<lb/>meatuum incommoderationem et sensilis unitatis .solutionem :
+<lb/>nunc exordiamur .perpendere causas singulorum morborum
+<lb/>prioris sententiae, quam sane veram existere eredidimus.
+<lb/>Erunt autem , arbitror , . quatuor morbi simplices
+<lb/>et quatuor compositi; interdum calido solo vel frigido lucrementi
+<lb/>ametriam consequuto ; aut aliorum alterius oppositionis
+<lb/>aliquo et humido et sicco ; accidit quoque nonnunquam
+<lb/>ex quadam ipsorum immoderatius auctorum coniugatione
+<lb/>calidum simul et siccum, aut frigidum et siccum, aut calidum
+<lb/>et humidum, aut frigidum et humidunr morbum esse.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Itaque quaenam sint procreationis cujusque
+<lb/>praedictorum morborum causae, jam speculemur, exordro
+<lb/>ducto ab intemperie caloris iucommoderati morbo.
+<pb n="7.3"/>
+<lb/>Apparet autem et lu aliis omnibus corporibus quae fe ipsis
+<lb/>calidiora fiunt, aut ex motu quodam aucto calore, aut ex
+<lb/>putredine, aut ex alterius calidioris corporis vicinia, aut
+<lb/>ex cousiipatione, aut ex idoneo alimento. Ex motu quidem
+<lb/>tum lu iis, quae quomodocunque exercitantur, tum lu lapiilibus
+<lb/>aut lignis quum mutuo attritu colliduntur j et flamma
+<lb/>quum ventilatur. Ex putredine vero et aliorum corporum
+<lb/>praescrtimque seminum vel stercorum, ego siquidem nonnunquam
+<lb/>vili columbarum fimum putrentem accensum.
+<lb/>Caeterum quod quoque ex castellorum corporum ricinia
+<lb/>proxuma concalescant, cuique patet, qui et balneas et solem
+<lb/>aestivum et quancunque flammam lu memoriam revocaverit
+<lb/>Ita quoque si hyeme lu ampla domo ignem accenderis,
+<lb/>atque ipsius spiramenta obturaveris, calorem intus
+<lb/>aecum claveris; si vero aperta undecumque patere desumeris,
+<lb/>nihil amplius habueris. Quamobrem et bale eae et
+<lb/>fornaces hac ipsa ratione suum lutus calorem accumulant;
+<pb n="7.4"/>
+<lb/>unde .constat quomodo et constipatio nonuunquam caloris
+<lb/>uberioris causa siti ld quoque patet e materia, quod ilipulae
+<lb/>quidem aridae facile lu altum flammam tollant, ligna
+<lb/>autem viridia, et praesertim si plura super ipsam congesseris,
+<lb/>diu quidem flammam gravant peneque suffocans, sed demum
+<lb/>adaugent. Quo pactu igitur in animalis corpore ea
+<lb/>singula perficiuntur?. Quum quis immoderatius exercitatus
+<lb/>in lassitudinem inciderit. Id autem est immoderatum calorem
+<lb/>subire tum in articusis tum muscusis naturali temperie
+<lb/>vehementiorem. Hae namque sunt partes quae primo moventi.
+<lb/>Quod fi hic immoretur calor, isque solvatur, priusquaui
+<lb/>universum animantis corpus invaserit, assectus ita
+<lb/>procreatus lassitudo duntaxat suerit. Si vero lu universum
+<lb/>extensus sit corpus, febris morbus nominatur ; quae universi
+<lb/>animalis calor quidam immoderatus esu Sic et ira quae
+<lb/>fervor quidam est caloris cor obsidentis ob motum immoderatum,
+<lb/>qui per totum corpus nonnunquam diffusus febrem
+<lb/>acecnnit. Jam et quae putrescunt in animantis corpore, alia
+<lb/>calorem quendam immoderatum his in partibus, in quibus
+<pb n="7.5"/>
+<lb/>putrem, efficiunt, quemadmodum erysipelata, herpetes,
+<lb/>carbuncusi, inflammationes et phygethla, alia autem ubi
+<lb/>simul universum corpus calefecerant, febrem . excitant. ...
+<lb/>Quamobrem tertia caloris immoderati causa. jam ex his .innotescit,
+<lb/>quonam modo animalibus oboriatur, et ex iis
+<lb/>quae exustiones appelluntur. Nam in bubonibus. et inflammationibus
+<lb/>et eryfipelatis atque omnibus adeo calidis.
+<lb/>morbis semper contingens pars atque continua ipsa quidem
+<lb/>primum calorem excipit, deluceps vero et vicinae parti
+<lb/>impertitur, et haec rursus sibi proximae, atque. ita ad iusiti
+<lb/>caloris principium ubi pervenerit intemperies, totum celeriter
+<lb/>corpus principii percipit affectum. .. Diuturnae . quoque
+<lb/>morae in apricis locis nudorum quidem lotam est- .
+<lb/>quando cutem immoderate calefaciunt; indutorum vero ver
+<lb/>stibus folum caput; atque haec exustio appellatur;^ sed..si..
+<lb/>per totum corpus diffundatur, ita febris accendetur. Quar:- .
+<lb/>tum vero causae genus inlitum calorem - immoderate: suc- .
+<lb/>candentis in astrictionibus et. frigoribus fieri conspicitur,
+<pb n="7.6"/>
+<lb/>Nam si quis immoderatius viguerit, aut in aqua aluminosa,
+<lb/>aut cujusdam hujusmodi alterius facultatis participe nata- .
+<lb/>vexit, huic constipabitur densabiturque cutis, et spiramenta
+<lb/>intus coercebuntur, haec autem, si fors tulerit; fuliginofa
+<lb/>acervata:; febrem procreabunt. Quinta vero species accensi
+<lb/>supra modum caloris sunt esculentorum acres ut calidae
+<lb/>qualitates, alliorum, porrorum, caeparum et id genus
+<lb/>caeterorum omnium. Etenim et horum usus immoderatior
+<lb/>febrem aliquando concitavit. Enimvero homines calidis
+<lb/>potionibus veluti vini veteris et acris imbecillo corpori liberalius
+<lb/>propinati, et medicamentis acribus, nuntietis et
+<lb/>venenis lu febres inciderunt, Cur igitur, inquiunt, non
+<lb/>semper ob quancunque dictarum causarum febris fuccenditur ?
+<lb/>Tum quod causae. efficientis impar sit quantitas ; tum
+<lb/>quod affectus, quem ipsa iirtusit corpori, magnam lu majoris
+<lb/>minorisque ratione suscipiat differentiam; praeterea auimantiunr
+<lb/>corpora plurimum alterum ab alterodifferunt,. ut
+<lb/>facile,. aut aegre ab eo,. qui fecundum naturam est, affectu
+<pb n="7.7"/>
+<lb/>decedunt. Quemadmodum-igitur minime ambigis, cur non
+<lb/>omnis motus lassitudinem efficiat, sed planes tibi dilucidum
+<lb/>est, nili iis tum. articulorum tum musculorum natura niajor
+<lb/>ac potentior suerit, nunquam ipsos in lassitudinem procidere,
+<lb/>eadem ratione tibi animadvertendum est, affectum,
+<lb/>qui inducit lassitudinem, nisi effatu dignam tum magnitudinem
+<lb/>tum moram habuerit, universum corpus vitiare non
+<lb/>posse. An exiguus motus lassitudinem moliri non potest,
+<lb/>exigua. vero lassitudo omnino febrem .accendet? aut motus
+<lb/>efficiendi facultatem in relatione ad : aliquid habebit,- lassitudo
+<lb/>non habebit? Quod quidem athletarum corpora diu;
+<lb/>turnos simulque vehementissimos motus xitra lassitudinem
+<lb/>ferunt, mos vero privatos , si paulo vehementius praeter
+<lb/>consuetudinem laboraverimus, quamprimum conqueri, omnes
+<lb/>id etiam. maximeimperiti ac rudes agnoscunt. .Proinde
+<lb/>nihil mirum, si quis lassitudine: correptus haudquaquam
+<lb/>febricitaverit. Aut enim lexis fuit labor, - aut angustioris
+<lb/>temporis, aut corporis viribus insertor; .aut si exercitatio
+<pb n="7.8"/>
+<lb/>brevis fuerit et remisse atque imbecillior quam pro exercitati
+<lb/>natura, non utique lassitudinem efficiet. Lassitudo
+<lb/>vero febrem accendet, etiamsi brevis et exigui temporis
+<lb/>et affecti corporis robore levior su. Id vero etiam in igne
+<lb/>omnium efficacissimo videre est, quod refrigeratos citra tempus
+<lb/>et robur non calefaciat: redeuntes enim e frigore nonnunquam
+<lb/>per maximam flammam manus citra molestiam
+<lb/>ducimus: neque quancunque materiam illico accendit. Nam
+<lb/>aridae stipulae primo stalim occursu aecenduutur, ligna autem
+<lb/>humida viridiaque ut accendantur, longo tempore
+<lb/>vehementique flamma indigent. Quomodo igitur nihiI honun
+<lb/>in igne admiratus, in Iassitudine admiraris, etsi magnitudine
+<lb/>indiget et tempore et corpore quod facile queat accendi?
+<lb/>Verum satius fuerit te non .id mirari, sed intueri
+<lb/>quod animalis corpus natura facile quodque difficile calefieri
+<lb/>possit, Sed id postea audieris; in praesentia autem
+<lb/>nihil mirabile tibi videatur, si quod effecturum est quod I ibet,
+<pb n="7.9"/>
+<lb/>id et tempus et magnitudinem postulet, praetereaque
+<lb/>ut sit ei proximum, quod ad patiendum esu Neque enim
+<lb/>ignis, si haec desint, accendere, neque gladius secare, neque
+<lb/>aliud quicquam efficacissimum aliquid agere -potest in id
+<lb/>quod ipso validius sit, nisi suppetat tempus notatu dignum.
+<lb/>Neque enim lucernae flammam confertim persuades oleo,
+<lb/>nedum aqua, et gladio lapides incidere nequaquam tentaveris,
+<lb/>.nedum adamantem, laborem autem, calorem, frigus
+<lb/>et id genus caetera semper febrem accendere putabis, quamvis
+<lb/>exigua fuerint, quamvis pauco immorentur tempore,
+<lb/>quamvis etiam universum corpus ad calorem suscipiendum
+<lb/>sit, aut minime sit idoneum ? Quod enim jam calidum est,
+<lb/>id ut immoderatius incalescat, paratius est, quemadmodum
+<lb/>et quod frigidum, quo plus fatis refrigeretur. Quod vero
+<lb/>e contrario fe habet, ineptum est. Itaque ita stupida et
+<lb/>rudis est talia scrutantium controversia..: Qui vero nihil
+<lb/>dubitant, sed prompte proterveque enunciant nihil praedictorum
+<lb/>febrem excitare , eorum aut stupiditatis misereri
+<pb n="7.10"/>
+<lb/>oportet, aut contentionem odisse. Ergo solutae sunt eovum
+<lb/>captiones altero volumine, quod de evidentibus causis
+<lb/>seorsum scriptum esu Neque nunc errores refellere tempus
+<lb/>est, sed vera docere propositum. Rursus igitur ad propositum
+<lb/>redeamus. Erat autem, arbitror, propositum fingulorum
+<lb/>simplicium morborum antecedentes causas adusque
+<lb/>evidentes explicare. Non enim absurdum est eos, qui
+<lb/>dllucidioris doctrluae gratia haec vocabula distinxerint, imitari.
+<lb/>Eas igitur quae in animali ipso cousistunt, sive assectus
+<lb/>sint, sive motiones praeter naturam, causas nominant
+<lb/>morborum antecedentes; quae vero extrinsecus accidunt, si
+<lb/>vehementer niterent immutentque corpus, eas evidentes et
+<lb/>externas appellitant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Causas equidem calidi morbi in universum
+<lb/><hi rend="u">dixim</hi>us;- jam ad frigidum transeamus. Sunt autem et
+<lb/>hujus plures numero causae, veluti refriger antium vicinia;
+<lb/>esculentorum et poculentorunr tum quantitas tum qualitas;
+<pb n="7.11"/>
+<lb/>constipatio et raritas; praeterea et otium et motus immodicus.
+<lb/>Enimvero hae caulae ipsum quoque ignem extinguunt.
+<lb/>Nam si exiguae prunae copiosam nivem, aut glaciem
+<lb/>admoveris, aut frigidam aquam insuderis, illico extingues.
+<lb/>Ita si ambiens aer summe frigidus suerit, qualis potissimum
+<lb/>apud Utrum hyeme, non solum lucernam sub dio positam,
+<lb/>sed omnem alium exiguum ignem videbis extingui. . Sic
+<lb/>ignis a rerum praefrigidarum vicinia superatur. Quibus
+<lb/>autem ipsum alendi. facultas data est-, eorum exuperantia,
+<lb/>aut penuria, aut aliena qualitate utique jacturam subit. Si
+<lb/>namque ligna confertim et multa supra exiguam flammam
+<lb/>congesseris, ipsam immoderatae quantitatis exuperantia sufsocabis ;
+<lb/>at fi nulla prorsus aut pauca admodum suppeditaveris,
+<lb/>ob alimenti penuriam, aut paucitatem marcescere conspicies.
+<lb/>Sic lucernae flammam et comminui et in extiuctionis
+<lb/>periculo versari cernimus proprii nutrimenti incommoderatione.
+<lb/>Sive eum oleum minime copiosum adhibeas,
+<lb/>sive affatim plurimum infundas, utroque modo laedes. At
+<pb n="7.12"/>
+<lb/>si uberem ipsi materiam adhibueris , sed vel quae sua natura
+<lb/>accendi prorsus non possit, vel magno cum labore, ipsam
+<lb/>etiam flammam minorem actutunr efficies; quemadmodum
+<lb/>si oleum aquae commixtum in ignem eflundas. Quur etiam
+<lb/>si aerem, qui flammam ambit, coercueris, ac immoderate
+<lb/>rareseceris, flammam eadem ratione quamprimum minorem
+<lb/>fieri ac extinctionem periclitari conspicies. Coereetur quidem,
+<lb/>fi medicam cucurbitulam, aut vaporarium, aut quid
+<lb/>ejusmodi aliud obduxeris; ita quoque si tornacum foramina
+<lb/>obturaveris. Quod si in aprico loco, sole sub ardenti et
+<lb/>aestivo flammam posueris, aut alteri majori apposueris, tunc
+<lb/>quoque imbecilliorem flammam tabescere intueberis, quod
+<lb/>haec ab exteriore flamma potentiore extenuetur vehementerque
+<lb/>dsscutiatur. Neque vero id abditum, quum flammam
+<lb/>ventilaveris, hoc est commoveris, te ipsam aucturum quidem,
+<lb/>si commoderate id effeceris ; si vero. incommoderate
+<lb/>ventilaveris , dissoluturum . ac dissipaturum. itaque hac
+<lb/>ratione ventos magnitudini - flammae - semper respondere
+<lb/>oportet, -ss quod emolumentum ipsi allaturi init; maiores
+<pb n="7.13"/>
+<lb/>autem quam illa postulet, dispergunt, non ventilant. Hinc
+<lb/>patet flammam ad sui. lucrementum motu egere adventitio,
+<lb/>non tamen immoderato.. Nam quae prorsus non ventilatur,
+<lb/>languescit; quae vero ab externo motu immoderatius
+<lb/>irruente agitatur, dissipatur ac discutitur. Secundum igitur
+<lb/>primam causae speciem a quocunque frigido extrinsecus
+<lb/>irruente, partim contactu tantum, partim potentia frigidus
+<lb/>morbus oborietur. lta quidam in frigida natantes aqua,
+<lb/>tum male loti, tum per gelida loca obambulantes laesionem
+<lb/>subierunt. Nounullos etiam vidi, priusquam domum redirent,
+<lb/>peremptos fuisse. ob secundam vero causam nonuulsi
+<lb/>apoplexi, aut epileptici facti, aut lu motu senfuve
+<lb/>laesi, aut esto quodam pactu refrigerati sunt ob ebrietatem ;
+<lb/>quanquam vinum moderatum, ut quod maxime familiare
+<lb/>sit alimentum, nativum calorem adaugeat. Eodem quoque
+<lb/>modo et optimorum et eorum, qui copiosum animanti nutrimentum
+<lb/>praebent, ciborum immoderatus usus morborum
+<lb/>frigidorum causa est. Praeterea quaecunque eduntur ac bibuntur
+<pb n="7.14"/>
+<lb/>natura frigidiora, ea quoque morborum frigidorum
+<lb/>causae sunt. Cujusmodi sunt papaver, mandragora, hyoscyamus,
+<lb/>cicuta, quae fane vehementi frigore etiam enecanti
+<lb/>Extrema denique constipatio (hanc enim tertiam
+<lb/>morborum frigidorum causam sta<hi rend="u">tuim</hi>us] et lepores, et veternos,
+<lb/>et apoplexiae efficit. Atque id est quod ab Hippocrate
+<lb/>enuntiatur; quod quis de repente obmutuerit, venarum
+<lb/>interceptiones corpori vini inferunt. Nam ie cum caetoris
+<lb/>antiquis duo, quibus continetur fanguis, vasorum geuera
+<lb/>venas nominat, non quemadmodum juniores, alterum
+<lb/>duntaxat quod non pulsat. Quum autem interceptae fuerint
+<lb/>animalis arteriae, hoc est ita oppletae sanguine, ut
+<lb/>nullus amplius in ipsis vacuus relinquatur locus, lu quem
+<lb/>dum per diestolen attolluntur, aerem externum attrahere
+<lb/>possint, tunc suffocatur atque extinguitur calor innatus ; et
+<lb/>qui itu affecti sunt, cito sensum motumque totius corporis
+<lb/>amittunt. Demonstratum etenim a nobis est in libro de .
+<pb n="7.15"/>
+<lb/>pulsuum usu, ob eum finem arterias pulsare, ut calor seeundum
+<lb/>naturam in omnibus animalis partibus commoderatus
+<lb/>servetur. lu libro autem de respirationis usu ipsum
+<lb/>quoque commoderatum cordis calorem tueri Quemadmodum
+<lb/>igitur, si externas flammas ab ambientis aeris consortio
+<lb/>defraudes obductione famuli, vel cucurbitulae, vel cujusdam
+<lb/>alterius rei similis , statim extinxeris, eodem modo si
+<lb/>etiam animalibus calorem cohibueris, atque ita interclusaris,
+<lb/>ut nullam cum aere circumfuso habeat communicationem.
+<lb/>statim ipsum perimes. Calor igitur cordis per saucium
+<lb/>meatum aeri ambienti communicat ; quod si hunc in- ..
+<lb/>terceperis, quamprimum praefocatus ipsum atque animal
+<lb/>euecabis. At calor, qui per totam corporis molem in arteriis
+<lb/>continetur, tum per cor ipsum, quatenus faucibus commmncat,
+<lb/>tum per universam cutem, in ambientem nos
+<lb/>aerem respirat; ventilatur quidem .in diastolis, in fystolis
+<lb/>vero quod fuliginosum est retundit; quibus utrisque naturalis
+<lb/>fui ipsius symmetria conservatur. Enimvero confiniatis
+<pb n="7.16"/>
+<lb/>arteriis, aut, ut paulo ante diximus, sanguinis plenitudine,
+<lb/>aut a quibusdam obstructionibus lu earum ofcusis
+<lb/>obortis, ut nequaquam trauspirent, calorem extingui necesse
+<lb/>est, atque ita corpus affectum emori. Quodsi modica
+<lb/>fuerit constipatio , non etiamnum necessario ejusmodi affectus
+<lb/>calorem innatum obsidebit. At si in animalis corpore
+<lb/>veluti suliglunsa quaedam ac fumida excrementa tunc cons
+<lb/>stiterunt, estus erit nativi caloris affectus; alius vero, si foIum
+<lb/>vapor quidam sinaris atque optimus exhalavit. .Atque
+<lb/>horum utrumque bifariam hoc modo discrepat. Quum
+<lb/>enim fanguis plane optimus in corpore fuerit, nullo pravo
+<lb/>excremento turbatus, vapor ex eo incalescente optimus
+<lb/>exurgit, qui nihil aut igneum, aut aere secum invehat.
+<lb/>Tale quidem corpus qumn modice constipatum est, brevi
+<lb/>aut plethorieum, aut praeter naturam calidius reddetur:
+<lb/>pletlioricum quidem in iis, qui laute citra laborem vivunt,
+<lb/>quum intus ea permaneant, quae per exercitationem excerni
+<pb n="7.17"/>
+<lb/>oportebat; calidius vero in iis, qui laboribus exertistantur
+<lb/>, utpote aucto ad motum nativo calore, qui ob corporis
+<lb/>constipationem non transpirat. In constipato vero
+<lb/>corpore quod fumosum alit excrementum, aut febris accendetur,
+<lb/>ob interclusum interius suliginofum vaporem; aut
+<lb/>praefocabitur extinguetmque nativus calor. Horum utrunque
+<lb/>tum excrementorum multitudinem, tum constipatiouis
+<lb/>magnitudinem conloquetur. Nam si fumorum exerentemtum,
+<lb/>quod evacuationem postulabat, plurimum extiterit
+<lb/>atque constipatio vehemens , praefocatum ab excremento
+<lb/>calorem insitum extingui periculum est; si vero paucum
+<lb/>fuerit excrementum et constipatio parva; febris accendetur.
+<lb/>Patet itaque quod et naturales et adventitias corporis estectiones
+<lb/>cognofcere oportet, in quibus aut fuliginofum, aut
+<lb/>sumofum, aut vapidum est id quod transpirat. Sed haec in
+<lb/>opere de medendi methodo explicabuntur. Nunc ad propositum
+<lb/>redeamus. Quemadmodum enim constipatio restigerationis
+<lb/>plerumque causa est eo quo dictum est modo, sic
+<pb n="7.18"/>
+<lb/>et. laxatio quum plusquam deceat discutit dissipatque nativum
+<lb/>calorem, frigidius efficit corpus. Haec autem non
+<lb/>tantum in universo animali, verum etiam in singulis partibus
+<lb/>similiter eveniunt, qmnn vel constipantur vel laxantur.
+<lb/>Si enim quam universum corpus habuit affectionem tum ab
+<lb/>obstructionibus tum .plenitudinibus arteriarum, hanc ipsam
+<lb/>habeat pars ab iis solis quae in ipsa sunt affectis arteriis,
+<lb/>necesse est eam partem peraeque ac ipsum. totum corpus
+<lb/>aegrotare. Equidem quae extrinsecus occurrunt medicamenta,
+<lb/>aut aquae medicabiles et frigidae,. et ipse circumfusus
+<lb/>aer, vel constipationem, vel laxationem immodicam lu parte
+<lb/>efficere poterunt. Praeterea violenta vincula quaedam
+<lb/>interdum ipsi parti, interdum superiacentibus circumposita
+<lb/>aptam interimens atque refrigerabunt, quod eam privent
+<lb/>communicatione partis in animali principis, a qua ipsi et
+<lb/>nativus assiuebat calor et motrix arteriarmu facultas fuppeditabatur.
+<lb/></p>
+<pb n="7.19"/>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">De morbis itaque tum calidis tum frigidis
+<lb/>satis dictum est; de siccis deinceps disseratur. Si quis liberalius.fefe
+<lb/>exerceat ac transpiret, et parcius nutriatur alimentis
+<lb/>. facultate exiccantibus, et siccioris sit temperamenti,
+<lb/>in siccum morbum facile perducetur; ac praesertim si .curis
+<lb/>implicitus suerit, aut immoderatius vigilaverit. Siccae quoque
+<lb/>ambientis nos aeris constitutiones ipsa animalium corpora
+<lb/>exierant; natationes praeterea in aqua nitrosis, siniphurea,
+<lb/>aluminosa, bituminea, aut cujusdam alterius ejusmosti
+<lb/>qu ali tali sparti cipe; denique quaecunque medicamenta
+<lb/>facultate sicca sunt, ea quoque .sive intro assumuntur, sive
+<lb/>suris admoveantur, exiccant. De sus autem lusius lu libris
+<lb/>de medicamentis simplicibus dictum est.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Hac quidem siccorum morborum causae
+<lb/>sunt. Humidorum autem his contrariae .causae fiunt omnes;
+<lb/>eduliorum facultate humidiorum copia; uberiores potus;
+<lb/>mollis omnis victus; animi delectatio; crebra dulcium
+<pb n="7.20"/>
+<lb/>aquarum balnea, praesertimque post cibum t sic et tuta vita
+<lb/>otiosa et laboris expers, imbres plurimi, omnis constitutio
+<lb/>temporum humida, et quae medicamenta hanc ipsam humectandi
+<lb/>facultatem habent.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Constat autem morborum compositurum .
+<lb/>compositus quoque omnino esse caulas. Si namque causa
+<lb/>calida simul et sicca m unum aliquando calidum coierint,
+<lb/>calidum atque siccum morbum procreari necesse est; si calida
+<lb/>et humida, calidum et humidum: ita quoque lu resiqtns
+<lb/>duabus coniugationibus, humida et frigida ac sicca et
+<lb/>frigida. Quod autem hoc in sermone tum addere tum distinguere
+<lb/>necessarium est, id jam explicetur^ saepe quidem
+<lb/>ab omnibus causis specie inter fe similibus corpus alterari ;
+<lb/>saepe vero his sacultale contrariis existentibus ; interdum ex
+<lb/>ipsis eas evincere quae numero plures; interdum quae tempure
+<lb/>diuturniores, interdum quae robore potentiores, interdum
+<lb/>denique ab utrisque corpus peraeque laesionem .accipere.
+<lb/>Etiamsi fieri non posse videatur, ut unum idemque
+<lb/>corpus et calidius simul et frigidius naturali temperamento,
+<pb n="7.21"/>
+<lb/>et rursus humidius ac siccius efficiatur, attamen id oboritur;
+<lb/>meritoque inaequalis nominatur intemperies , de qua etiam
+<lb/>seorsum quae deceant altero in libro prodita sunt. Neque
+<lb/>nunc rursus in his diutius immorandum, sed ad reliqua
+<lb/>morborum genera jam nobis accedendum est, qui ipsorum
+<lb/>causas speculamur. Verum haec eliamnum in mentem revocanda
+<lb/>sunt, quae in libro de morborum differentiis edicta
+<lb/>sunt, quod nonnmtquam solis quatuor qualitatibus ah eo,
+<lb/>qui secundum naturam est, affectu corpora decedunt, nulia
+<lb/>exterius ipsis affluente alia substantia; nonnunquam vero
+<lb/>fluxionibus implentur idea quidem omnino humidis, facultate
+<lb/>autem non humidis. Sed de horum humorum sacultate
+<lb/>dictum est ab an liquis et medicis et philosophis et a nohis
+<lb/>esiam cum in aliis quibusdam commentariis, tum in iis
+<lb/>quos de medicamentis conscripsimus. Quae vero ex his ad
+<lb/>rem praesentem conferunt, etiam nunc dicentur, nimirum
+<lb/>quod flava bilis facultate calida est et sicca; atra bilis scigida
+<lb/>ac sicca; sanguis calidus et humidus; pituita frigida
+<pb n="7.22"/>
+<lb/>et humida; et quod humores singuli influunt aliquando sinceri,
+<lb/>aliquando alus commixti; et partium oedemate, vel
+<lb/>fcirrho, vel phlegmone laborantium affectus istic plurimum
+<lb/>variantur. Nam et carbunculi et cancri et herpetes
+<lb/>et erysipelata et phygethla et gangrenae et phagedaenae et
+<lb/>satyriascs ex hoc genere sunt; praeterea vitiligines et atheromata
+<lb/>et achores et favi et ganglia et steatomata morbi
+<lb/>sunt fluxionum feturae. Differunt autem inter fe tum lu
+<lb/>tam alii omnes praedioli, quod alii ex pituita sola ortum
+<lb/>ducant, alii ex sanguine, alli ex flava bile, alii ex atra,
+<lb/>alii ex alio quodam, qui nondum omnino sit praeter naturam.
+<lb/>Verum lue humor quisquis fuerit, omnino erit ex
+<lb/>quodam praedictorum generum. Non enim contingit ipsum
+<lb/>haudquaquam este calidum et siccum, aut calidum et hunudum,
+<lb/>aut frigidum et siccum, aut frigidum et humidum i
+<lb/>sed quatenus ad crassitiei et frigoris plurimum pervenit, a
+<lb/>naturalis pituitae forma excidit, atque alius humor esse vi^
+<pb n="7.23"/>
+<lb/>detur toto genere praeter naturam. Non tamen ita fe res
+<lb/>habet. Nam quoad frigidus atque humidus sit facultate,
+<lb/>sub pituitae genere continebitur. Eadem quoque ratione
+<lb/>quicunque calidus et siccus fuerit, flavae hili congener esu
+<lb/>De his vero plenius alibi dictum est; quare nunc in his
+<lb/>haud immorandum; nam et de his omnibus copiosius in liluis
+<lb/>methodi medendi disseretur. Quod autem praesentis
+<lb/>est operis, id rursum explicetur. Omnes siquidem hujusmodi
+<lb/>morbi fiunt natura ad partes imbecilliores crebro matersam
+<lb/>exuberantem deponente; id prosecta a multis aliis
+<lb/>antea dictum est. Quis tamen sit depositionis modus, nondum
+<lb/>dictum est; rasionem enim quandam atquesmentem naturae
+<lb/>tribuemus, si ita simpliciter ipsam, quicquid inutile
+<lb/>est, deponere affirmemus ex nobilibus partibus ad ignobiles.
+<lb/>Sed quod quidem in morbis optimae crises ab aliqua ejusmodi
+<lb/>facultate fiant, maniscste apparet. Quis autem bis
+<lb/>fit generationis modus, nondum majorcs nostri accurate docuerunt,
+<pb n="7.24"/>
+<lb/>quoniam neque facultates naturales, de quibus nos
+<lb/>lu aliis commentariis egimus, quot numero et quaenam existant
+<lb/>et quod singulorum sit opus, fatis explanare potuerunt.
+<lb/>Verum nunc ei haudquaquam arduum est de his omnibus
+<lb/>disserere, qui. suppositionibus sus lu commentariis demonstratis
+<lb/>usus suerit. Quum quatuor sint facultates quarum
+<lb/>pars omnis tum animalis , tum plantae est particeps ;
+<lb/>quumque altera sibi familiare alimentum attrahat, alia retineat,
+<lb/>alia niteret, alia supervacaneum excernat; quum
+<lb/>etiam supervacaneum duplex sit genere, aut enim quantitate
+<lb/>supervacaneum est aut qualitate; quum denique omnibus
+<lb/>corporis partibus non aequale sit robur, sied principes statim
+<lb/>ab initio a natura robustiores procreatae sint, rationi consentaneum
+<lb/>est in corporibus impuris et quae excrementis
+<lb/>fcatent, ad ignobiliores partes aliquid desinere. Quum
+<lb/>enim excrementum ab omnibus robustioribus partibus amandetur
+<lb/>ac nullibi consistere queat, in partem omnium imbecillimam
+<lb/>devehitur-. Sed alia propter aliam ejusmodi est,
+<pb n="7.25"/>
+<lb/>Aut enim pars statim lu prima animalis formatione laeta
+<lb/>est; aut postea laeta fuit; aut etiam talis esse natura debuit,
+<lb/>ut cutis. Hanc erum, quum nullius actionis, fed fidius usus
+<lb/>gratia creata sit, iis quae actiones edunt partibus imbecilliorem
+<lb/>esse congruebat. Est enim cutis veluti operculum
+<lb/>quoddam ac nativum animalis involucrum, quum neque
+<lb/>coctionem, neque alimenti distributionem, neque sanguinis
+<lb/>generationem, neque pulsum, neque respirationem,. neque
+<lb/>voluntarium motum, neque demum aliquam animali actionem
+<lb/>suggerat; praeterea quum omnium partium extrema
+<lb/>sit collocata, non citra rationem totius corporis excipit excrementa.
+<lb/>Multa namque organa ad excrementorum purgerionem
+<lb/>natura fabricata est; haecque fala ad sanitatem
+<lb/>tuendam sufficiunt, quum neque ex ambiente nos aere animalis
+<lb/>laesio oboritur, neque ex victus errore totum corpus
+<lb/>excrementis immoderate scatens redditum esu Accidente
+<lb/>autem hujusmodi aliquo errore, tum sula naturalia organa
+<lb/>ad excrementi multitudinem expurgandam non amplius
+<pb n="7.26"/>
+<lb/>sufficiunt; prorndeque fluxiones a robustioribus partibus
+<lb/>depulsae in imbecilliores irruunt. Accidit autem interdum,
+<lb/>constipatis meatibus eas expurgantibus ad alias regiones confluere.
+<lb/>Atque haec generationis praedictorum morborum
+<lb/>omnium exordia sunt. Augetur vero jam in ipsis memhris
+<lb/>vitium, quum sus impacta fiunt excrementa et putrefcunt,
+<lb/>ac ita deteriora fiunt;. quae affluentem postea humorem,
+<lb/>quanquam utilem, simul corrumpunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Verum quoniam similarium partium proprios
+<lb/>explicavimus morbos, licuerit deinceps organicarum
+<lb/>morbos dicere, ac exordiri ab eo, qui primus inter eos in
+<lb/>consormatiouis est genere.- Fit autem hic morbus interdum
+<lb/>quum figura naturalis immutatur ; interdum quum laevitas
+<lb/>quaedam aut asperitas vitiatur. Caulae vero immutationis
+<lb/>figurae naturalis hae sunt. Prima quidem partium ipsarum,
+<lb/>quum in utero adhuc concipiuntur, prava conformaalo,
+<lb/>quae .oboritur, quum materiae copia,. aut minime idonea
+<pb n="7.27"/>
+<lb/>qualitate naturales seminis motus prohibentur. . Secunda
+<lb/>vero, error in partu ipso, aut lu infante sasciando
+<lb/>commistus. Messia si quidem adhuc ac prope dixerim fluxa
+<lb/>quum sint insantium nuper genitorum corpora, facile luvertuntur,
+<lb/>et quum in partu edendo eos non recte obstetrices
+<lb/>excipiunt, neque decenter fasciis involvunt; aut ubi eos
+<lb/>postea nutrices sine modo aut attollunt, aut reponunt, dum
+<lb/>lac praebent, dum lavant, dum fasciis involvunt. In his
+<lb/>si quidem omnibus, nisi quis insontes apte tractaverit, facile
+<lb/>singulorum membrorum sigma naturalis invertitur ac
+<lb/>depravatur. Praeterea vero in universa quae sequitur educatione
+<lb/>partim ab immoderata satietate,partim amotu incompofito,
+<lb/>dum maturius quam deceat et stare et incedere
+<lb/>ipsis conceditur, aut vehementius moveri, multa distorqueri
+<lb/>membra contingit. Satietas siquidem actiones naturales
+<lb/>interturbat, intempestivi autem et vehementiores motus
+<lb/>aliorsum quam deceat artus subducunt ac circumagunt.
+<pb n="7.28"/>
+<lb/>Crura etenim incumbentium eis corporum gravitate aut ad
+<lb/>exteriora aut luteriora distorquentur pro nativa tibiae pro.pensione.
+<lb/>Quibus enim rectiora sunt crura, quam naturae
+<lb/>conveniat, varii magis lucedunt ; quibus autem cariora, vari
+<lb/>efficiuntur. Voco autem varium, cui crus ad exteriora
+<lb/>flectitur; varum, cui lu contrariam partem.- . Thoracis
+<lb/>quoque partes plerumque a nutricibus invertuntur,.. dum
+<lb/>ipsas in prima educatione extrinsecus prave constringunt.
+<lb/>Maxime vero hoc continenter apud nos intueri licet in vir-.
+<lb/>finibus, quibus dum student nutrices eas augere partes,
+<lb/>quae circa coxas sunt ac ilia, quo hae thoracis partibus
+<lb/>majores fiunt,. fasciis quibusdam totum ciccumprehendunt,
+<lb/>atque omnes scapularum ac thoracis partes vehementer constringuut;
+<lb/>hinc, quum faepe inaequalis fit tensio, aut pronum
+<lb/>in anteriora prominet pectus, aut huic oppositae posieritmes
+<lb/>spinae partes gibbae redduntur. Accidit autem nonnunquam
+<lb/>veluti praefractum in obliquum seduci dorsum, ita
+<pb n="7.29"/>
+<lb/>ut altera scapula et non aucta, et parva, et valde compressa;
+<lb/>altera vero prominens, tumida, ac omnino major appareati
+<lb/>Haec omnia figurarum vitia lu thorace consistunt ob
+<lb/>nutricum errorem imperitiamque , aequilibrem deligationem
+<lb/>ignorantium. Sic et melici plerumque. non probe deligantes
+<lb/>cousormantesque attus effractos invertunt; quemadmodum
+<lb/>rursus et citra medici curantis peccatum ipse aegrotus,
+<lb/>si priusquam cestus prorsus sumus constiterit membrum ad
+<lb/>usum accommodet, sibi inuersionis est auctor. Sed et collitae
+<lb/>partes ut nasus et confractae ut supercilia acetabulorunr
+<lb/>et excisa quandoque ossa, aut uberior cero, quae postea
+<lb/>non aequaliter succrescit, naturalem figuram demoliuntur.
+<lb/>Alius autem modus laesionis figurarum ob immoderatam
+<lb/>repletionem, aut alimenti penuriam, quemadmodum aut
+<lb/>ultra modum obelis, aut admodum colliquatis, sive in una
+<lb/>corporis parte, sive in toto corpore oboritur. Nam et qui
+<lb/>morbus elephas appellatus, et qui tabes, plane figuram immutanti
+<lb/>Etenim nasus simus fit, labra crassa, atque aures
+<pb n="7.30"/>
+<lb/>extenuatae ridentur, ac omnino satyris similes fiunt, qui laborant
+<lb/>elephantialI. . At nares acutae, collapsa tempora,
+<lb/>oculi concavi, et in scapusis et brachiis tanquam alae extaruis
+<lb/>eminentes tabidis apparent. Atque his in omnibus
+<lb/>prima ratione figura naturalis depravatur; per accidens autem
+<lb/>vitiatur in his quos paralysis obsidet, aut convulsio, aut
+<lb/>iusiammatio, aut scirrhus, aut quibus nervi aut tendones
+<lb/>secti sunt, aut duris cicatricibus obducti; in his siquidem
+<lb/>omnibus alias ob aliam causam in alienam figuram aliorsum
+<lb/>pars provolvitur ; haec ut in iis, qui altera parte resolvamfur
+<lb/>a musculis actionem obeuntibus attrahitur : sic in convulsionibus,
+<lb/>quae ad alteram contrahunt partem, a musculis
+<lb/>convulsis. Inflammationes etiam, scirrhi, durae creatrices
+<lb/>et quicunque tales affectus partem ad se proximam tendunt,
+<lb/>sic partem pervertunt. In nervis autem et tendonibus dlsfectis,
+<lb/>quemadmodum in resolutis, et oppositorum et fecundum
+<lb/>naturam te habentium actio partem ad fe attrahit.
+<pb n="7.31"/>
+<lb/>Quare hae plures causae ad unam omnes reducuntur, inaequalem.
+<lb/>nimirum tensionem; quae partem aliorsum urgendo
+<lb/>pervertit. Atque de figurarum praefer naturam differens
+<lb/>tris haec dixisse-.sufficiat, Immersas autum partibus cavatates,
+<lb/>. earumque meatus vel omnino interire, vel oblaedi con.tingit
+<lb/>eas ob causas, coalitum, coarctationem, obstructionem,
+<lb/>constrictionem, subfidentiam,. et apertionem. Interdum
+<lb/>enim ulcerata cavitatis interiore superficie, .ac deinceps
+<lb/>coalescentibus ulceratus partibus, conformationis naturalis
+<lb/>eversio oboritur. Inlerdum vero quum aut caro excrevit,
+<lb/>aut aliud quoddam praeter naturam tuberculum, aut frirrhus
+<lb/>constitit, aut phlegmone, aut abscessus in ipsis organorum
+<lb/>corporibus, ac delude tumor praeter naturam internam
+<lb/>caritatem occupat, loci coarctatio oritur. Quin etiam interdum
+<lb/>obstructio ob lentos ac crassas humores, vel ob callos
+<lb/>aliquos, vel grumos orta, ad eundem affectum caritates
+<lb/>ducit. Ile vero fi quid extrinsecus incidens vehementer
+<lb/>comprimat, corpora caritatem continentia ad rpfam interiorem
+<pb n="7.32"/>
+<lb/>simul impelli necesse esu Quod si subsideant in se ipfa
+<lb/>corpora, ut quum ab astringentibus^ coguntur, aut a refrige- .
+<lb/>nantibus densantur, aut ab exiccantibus exarescunt, ortos
+<lb/>quidem meatus imprimis , deinde et apros ventres omnino
+<lb/>constipabunt. Equidem meatuum oscula non solum conitipantur
+<lb/>sist, hujusmodi affectibus, verum etiam multoties
+<lb/>occaecantur. Sed et retentricis, quam appellunt, lucustatis
+<lb/>motus immoderatus, quum meatuum oscula ad extremum
+<lb/>cogit constringitque , constipationis causa redditur; quemadmodum
+<lb/>et laxationis interdum, immoderatus excretricis
+<lb/>facultatis motus, cansa sit. Saepe quoque retentricis imbecillitas,
+<lb/>et medicamentum aut aqua aperiens oscula, aut
+<lb/>quae mollities ipsis accidit organis; aut quae ambientis nos
+<lb/>aeris temperies ad humiditatem et caliditatem immodicam
+<lb/>permutatur. Hae quidem ipsae tunt affectuum tum meatus
+<lb/>tum ventres obsidentium causae. Atque manifestum est, ut
+<lb/>ex jam commemoratis patet, quas et quales velint esse cansus
+<pb n="7.33"/>
+<lb/>morborum similaribus corporibus iusidentium; qui ipsa
+<lb/>ex acerris ac meatibus construi arbitrantur. Milli vero
+<lb/>supervacaneum videtur de his .privatim mentionem facere,
+<lb/>quum tota -eorum suppositio falsa fit. Sed ad propalatum
+<lb/>revertamur reliquormnque morborum caulas explicemus,
+<lb/>a corllormationis genere rursus exordientes. Superest duplex
+<lb/>morborum species, nsperitas praeter naturam organorum
+<lb/>et laenitas. Asperantur autem organa, quae prius
+<lb/>erunt laevia, et laevigantur, quae prius erant aspera. Illa
+<lb/>quidem ab acrimonia humorum aut medicamentorum deterfa,
+<lb/>haec vero a pingui humiditate aut lento hunrore irrigata.
+<lb/>Atque potissimum in ossibus haec manifeste oboriri conspiciuntur,
+<lb/>quum interdum non decenter ab ipsis melicis curantur;
+<lb/>interdum etiam ex humorum animalium corpora
+<lb/>irrorantium natus ortum ducunt. oeusis autem et sancibus
+<lb/>asperitates non ab sus tantum, sed etiam ab acribus vaporibus,
+<lb/>aut pulvere, et fumo contingunt quemadmodum;
+<lb/>arbitror, et stomacho et ventriculo et intestinis a procreatis
+<pb n="7.34"/>
+<lb/>in ipso corpore excrementis atque ab eorum quae eduntur
+<lb/>et bibuntur qualitate; inter quae etiam venena sunt. Liquet
+<lb/>autem exnsperantium causarum singulas, quum valentiores
+<lb/>suerint, in partibus quidem carnosis ulcerationem aliquani
+<lb/>aut erosionem, in ossibus vero cariem inducere. Hae
+<lb/>itaque primi morborum generis couformatiouis causae ex- .
+<lb/>plseatae Eunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">In Iecnudo autem genere, quod ad numerum
+<lb/>pertinet, si perierit pars aliqua quae secundum
+<lb/>naturam adeste debuit, aut tectio quaedam, aut putrefactio,
+<lb/>aut vehemens persiigeratio praecessit. At cautae quidem
+<lb/>perfrigerationis prius explicatae sunt. Putrem autem nonnulla
+<lb/>a medicamentis putrefaciendi facultate praestitis, aut
+<lb/>ab iis , quae in ipsis animalibus generantur, excrementis ;
+<lb/>quaedam ab iis, quae transpiralionem prohibent. Atque
+<lb/>prohibitae transpirationis antecedentes caulae prius enarratae
+<lb/>siunt. Quod si quid eorum, quae fecundum naturam non
+<lb/>adsunt, adnafeatur, equidem morbus est, qui ad numerum
+<pb n="7.35"/>
+<lb/>partium spectat; sed si quod supercrevit, formam naturalem
+<lb/>obtineat, utilis materiae copia causa est; at si praeter
+<lb/>naturam, erit quoque materiae qualitas praeter naturam.
+<lb/>Facultas vero in utrisque robusia sit oportet, estas neque
+<lb/>quod utile est couformasset, neque quod vitiatum erat, extrusisset.
+<lb/>Consumat autem in conceptibus, quum aut fextum
+<lb/>digitum, aut quid aliud ejusmodi construit; in jam
+<lb/>adultis autem, quum exulceratis partibus validas cernes
+<lb/>excrescere molitur, ut lu oculis pturygium. Deponit vero
+<lb/>super vacaneum in gangliis, meliceridibus, steatomatis, allieromatis
+<lb/>ac in ejusmodi omnibus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Praeterea vero magnitudo partium augetur
+<lb/>ab utilis materiae copia et facultatis robore; minuitur
+<lb/>autem a contrariis. causis, quum aut sectio aliqua, aut ultio,
+<lb/>aut putredo, aut ab immoderata perfrigeratione interitus
+<lb/>aliquam organi partem adeo corrumpit, ut ipsius residuum
+<lb/>mutilum maneat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">In situs vero genere morbi nonnulli causas
+<lb/>habent, repentinos ac vehementes, qui praecesserint, motus;
+<pb n="7.36"/>
+<lb/>nonnulli ob humiditatis incommoderationenr in articulis.
+<lb/>oboriuntur, quae ligamenta et madefacit et laxat, totaluque
+<lb/>dearticulationem prae lentitia lubricam labllemque
+<lb/>reddit; quibusdam autum quod acetabulorum supercilia
+<lb/>confracta fuerint, prompta fit elapsis capitibus^ crurum alternario;
+<lb/>nonnullis vero quod quamprimum ab initio supista
+<lb/>et procumbentia et penitus in superficie sint acetabula;
+<lb/>Haec igitur omnia luxationum causae sunt. In en ter ocella
+<lb/>quas appellant et epiplocelis laxari omnino , nonnunquam
+<lb/>et rirmpi eum meatum contingit, qui a peritonaeo ad testiculos.
+<lb/>procedit; sic quoque dein ad ipsum meatum, aut ad
+<lb/>tunicam erythroidem, aut omentum, aut aliquod intestinum
+<lb/>prolabitur. Decedunt etiam de proprio situ intestina, quum
+<lb/>dissecto peritonaeo deciderint. Pulmonis quoque lobus
+<lb/>multoties lu thoracis vulneribus excidit. Et ob erusam
+<lb/>corneam, uvea tunica plurimum laxatur. - Praeterea si visuerunt
+<lb/>lobus interdum aliquis ob vehementes santus, aut
+<pb n="7.37"/>
+<lb/>compressiones complicetur, erit quoque is morbus et situs .
+<lb/>simul et figurae immutatio, a commemoratis causis factus.
+<lb/>In vicinis autem partibus societas depravatur, quum quaedam
+<lb/>luter fe inepte coalescunt, aut quum aliquod appendis
+<lb/>culum, vel vinculum laxatur, vel intenditur, vel abrumpitur.
+<lb/>Ex quibus autem causis lu singusi morbi oriantur, declavatum
+<lb/>esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">At unius adhuc generis morbi omnibus
+<lb/>partibus, sive similares ac omnino simplices, sive compotitae
+<lb/>existant, communis causae effectrices sunt explicandae.
+<lb/>Equidem hoc universum genus unitatis solutionem vocare
+<lb/>consuevi, aut unitatis corruptionem, aut continui solutionem,
+<lb/>vel quomodocunque aliter, prout speraverim sermonem
+<lb/>auditoribus fore. perspicuum. Nullum enim nomen
+<lb/>aliquod a majoribns huic. impositum accepimus, quemadmodum
+<lb/>nomrullis ejus speciebus fracturam quidem et ca-.
+<lb/>1iem vocitant solutam lu osse continuitatem; in narue vero
+<pb n="7.38"/>
+<lb/>ulcus ac vulnus. In ossibus autem capitis plura etiam
+<lb/>funt nomina. Nam ut in caeteris ossibus, sic in his fractura
+<lb/>et fissura et ruptura vocatur. Quae vero ab acuto
+<lb/>quodam ipsis occursante scrro atque incidente fit, excisio
+<lb/>et lucillo et sudes. Nomen autem τερηδόνος, id est carisi)
+<lb/>ε litera abundare videtur; nam παρὰ τὸ τρῆμα, hoc est a i
+<lb/>scramine, derivari creditur, ac si teredon, i. e. peeseratio,
+<lb/>quaedam existat, quae ab aeribus humoribus erodentibus
+<lb/>fit, ac in principio quidem cadit sub aliud morbi genus, et
+<lb/>ossis asperitas potius quam caries nominatur ; majori autum
+<lb/>perforatione facta, et tanquam foramine quodam apparente,
+<lb/>caries appellatur. Et quidem hujus generis est cossisio, quae
+<lb/>in carnosis plerumque fit partibus, nonnunquam vero et in
+<lb/>ossibus capitis, lu pueris maxime ; num in fe ipsum prorsus
+<lb/>cedat oportet quicquid colliditur; idque ipsum molle esse
+<lb/>oportet, non autem absolute durum; quare carnosarum erit
+<lb/>partium tenerorumque ossium, ab aliquo extrinsecus incidente
+<pb n="7.39"/>
+<lb/>violentur et valido et duro corpore collidit Quum igitur
+<lb/>externa partis ita affectae superficies continuitatem etiamnum
+<lb/>fervat, - et in prosundo multae et exilesfiunt divisiones;
+<lb/>collisio et contusio hic morbus nominatur. At apparente
+<lb/>aliqua caritate , quam parti collisae percutiens corpus impresserit,
+<lb/>hic assectus illisio vocatur. Igitur necessarium
+<lb/>omnino est collisam partem sub ipsp ictu in sese compelli
+<lb/>et concavam fieri, alias non collideretur : servari vero cari-.
+<lb/>talem abeunte causa efficiente, necessarium non esu Messia
+<lb/>siquidem omnia, sublata causa scrien te, ad pristinum statum
+<lb/>plerumque redeunt. Si vero non solum intro cesserit os
+<lb/>capitis, verum etiam ruptura quaedam in exteriori superficie
+<lb/>accesserit, jam compositus erit ejusmodi morbus, neque
+<lb/>ullum ei nomen priscum ipsi impositum habemus. Qu<hi rend="u">am</hi>obrem
+<lb/>oratione potius explicandus est, quum numinibus uti
+<lb/>fumme barbaris, qualia multa a sanioribus medicis usurpata
+<lb/>sunt. Caeterum continuitatis solutio etiam est tum ruptura
+<pb n="7.40"/>
+<lb/>tum convulsio; haec in nervosa, illa in carnosa parte
+<lb/>consistens. Horum vero generationis est caula repentinus
+<lb/>quidam vel inaequalis vestem ensque motus, ac tum praecipue
+<lb/>quum neque perfricta, neque aequabilia reddita, neque
+<lb/>calefacta, neque emollita, admotus aguntur corpora. Divelluntur
+<lb/>enim in ejusmodi affectibus plurimae eorum .partes ;
+<lb/>atque ut summatim . dicam, omnes hujus generis mor,
+<lb/>hortum caulae aut extrinsecus irruunt, aut ex ipso. corpore
+<lb/>oriuntur. Extrinsecus quidem adveniunt, quae vulnerare ac
+<lb/>collidere queunt; ex ipso corpore, immoderati ac incompositi
+<lb/>animalis motus, et. quaedam humorum pravitates erodendi
+<lb/>facultatepraeditaei Hae namque stanti caulae morbi omnibus
+<lb/>partibus communes, tum supplicibus ac prinus, quae
+<lb/>similares appellantur , tum . ex iis compositis, quae et organicae
+<lb/>et organa .dicuntur. Compositorum vero morborum
+<lb/>causas non arduum . est invenire, quum. ex jam commenroratis
+<lb/>componuntur. Quare quum quis hoc desideraverit,
+<pb n="7.41"/>
+<lb/>potest sibi hanc causarum copiam parere. Sed tempus me
+<lb/>compellit huic libro finem imponentem de symptomatum
+<lb/>differentiis deinceps disserere.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

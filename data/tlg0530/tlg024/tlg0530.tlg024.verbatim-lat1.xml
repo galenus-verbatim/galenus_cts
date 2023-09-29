@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Prognostica de decubitu ex mathematica scientia</title>
+        <author>Galen</author>
+        <editor>Karl Gottlob Kühn</editor>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg024.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Pseudo-Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">19</biblScope>
+              <biblScope unit="pp" from="529" to="573">529-573</biblScope>
+              <date>1830</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galen</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">8</biblScope>
+              <biblScope unit="pp" from="901" to="915">901-915</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x08">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg024.verbatim-lat1">
+<pb n="19.529"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="19.529"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALERI .PROGNOSTICA DE DECUBITU
+<lb/>EX MATHEMATICA
+<lb/>SCIENTIA.</head>
+
+
+<p rend="indent">Ad probandum quidem essentialem esse
+<lb/>mathematicam scientiam vel ipfa Stoicorum philosophotum
+<lb/>virorum auctoritas sufficiebat, qui tum libros elaborarunt
+<lb/>tum vitam qualis sit ostenderunt. Nihilo minus
+<lb/>tamen , quoniam etiam praeiens sermo nobis est de illis,
+<lb/>quae ars medica pollicetur, necessarium est eorum testimonia
+<lb/>afferre, qui in ea fuere probatissimi, ut notum fiat
+<pb n="19.530"/>
+<lb/>cunctis ipsius etiam medicos quos adfcifcere sibi oportuit
+<lb/>praevisivum. suae artis partem, si quidem non omnes, plerosque
+<lb/>tamen mathematicae scientiae illam tulisse acceptam.
+<lb/>Hippocrates igitur et vetustate admodum notus et
+<lb/>scientia admirandus , inquit, t quicunque exercentes medicinam
+<lb/>physiognomoniae sunt expertes, horum mens in tenebras
+<lb/>devoluta torpida senescit. Non fotum dixit haud
+<lb/>recte facturos verum. etiam creaturos; nam dixit per tenebras
+<lb/>vagari mentem illorum , qui physiognomon^ usi
+<lb/>non fuerint. At physiognomouica pars astrologiae est pars
+<lb/>maxima. Qui igitur aliquam laudavit partem multo magis
+<lb/>celebret ipsum totum. Diocles vero Carystius medicus
+<lb/>et rhetor non solum asserit istic, ut tu quoque nosti,
+<lb/>sed et veteres insuper testatur ah illuminatione et cursu
+<lb/>lunae morborum prognostica solitos esse conficere. Quando
+<lb/>igitur tanti ac tales tum dignitate tum scientia viri non
+<lb/>tantum ejus quae in medicina habetur, praecoguitiouis
+<lb/>haeredes sed etiam facti Inarum sectarum auctores hanc
+<pb n="19.531"/>
+<lb/>admittunt.,., quo pacte homines qui hanc quasi per manus
+<lb/>acceperunt fructumque ex alienis -laboribus capiunt quidquam
+<lb/>de his addubitabunt?^ Quocirca tu quoque, Aphrodisi
+<lb/>carissime, si accurate decubitus elaboraveris modum
+<lb/>et praedictos vrros fueris sectatus, e pulcherrima tuae artis
+<lb/>parte capies fructum praecognofcendo , ac praedicendo
+<lb/>quae sint aegrotantibus eventura. . Huic vero tractationem
+<lb/>inchoemus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Ante omnia lunam considerare oportet,
+<lb/>num ea moveatur addendo an demendo numeris, non luminibus,
+<lb/>sicuti decepti sunt quidam. Si ergo ubi quis decubuerit.
+<lb/>luna in aliquo duodecim sodiacum eo isti tuentium
+<lb/>signorum incipiat propriae magnitudini addendo et propriis
+<lb/>numeris moveri progrediens ad aequipartium ; .est
+<lb/>autem aequipartium idem quod diameter, maximam faciet
+<lb/>eprsemasiam. Maxime vero si etiam coniunctionalis fuerit,
+<lb/>ubi scilicet coniunctione fuluia tendit in plenilunium
+<lb/>et feratur in curius quantitatem majorem fub centesimum
+<pb n="19.532"/>
+<lb/>et octogesimum gradum .interficit: Si vero ubi quis decubuerit,
+<lb/>luna demendo moveatur morbus ufque ad oppositum
+<lb/>faciet commotionem ; post oppositum vero, morbum
+<lb/>in magis salubre convertit. Adverte autem animum ad
+<lb/>motus testitnoniaque stellarum. Si enim ubi quis decubuerit
+<lb/>luna in majus .moveatur, Marti sulique configurata
+<lb/>augebit morbum et periculosum reddet. Si vero luminibus
+<lb/>numerisque augeatur circa Martem, oppositum periculum
+<lb/>proculdubio afferet. Si vero phaetonti Iovi quocunque
+<lb/>modo fuerit configurata, morbos sine periculo faciet:
+<lb/>vel in quadrato facta commotione incolumes reddet ad
+<lb/>oppositum. Si vero phlegethonti Saturno configuretur
+<lb/>numeris demens, circa nonagesimum gradum instabiles reddit
+<lb/>ac periculosos. Quod si coniunctione foluta ad minora
+<lb/>feratur, circa centesimum et octogesimum gradum
+<lb/>absque ullo dubio interimet. Si vero foli vel Marti in
+<lb/>decubitu configuretur, numeris demens vel etiam lumine
+<lb/>deficiens, minuetur morbus ad gradum nonagesimum et
+<pb n="19.533"/>
+<lb/>lacta commotione ad sanitatem convertetur. Quod si conjunctionem
+<lb/>folveriret adhuc minuatur, circa centesimum
+<lb/>et octogesimum- gradum incolumitati restituet. . Verum
+<lb/>assumere reliquas etiam stellas oportebit per singula signa
+<lb/>quo pacto fer habent, illinc etenim duodecim signa luna
+<lb/>permeante causae morborum cognoscuntur. Ante omnia
+<lb/>autem scire oportet si quisnegligenter fe in calculis gefserit,
+<lb/>nihil ei fecundum verum esse- successurum; si vero
+<lb/>non succedat, in ipsi, non in re causam erroris merito futuram.
+<lb/>Numeri autem non sucus ac in ipsa nativitate
+<lb/>disquirantur ex hisce enim veritas certa cognoscetur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Si Iactus fuerit decubitus quando luna
+<lb/>est in ariete et Marti vel foli configuratur , morbus a
+<lb/>capite erit a solis aestu atque meninges dolebunt at erunt
+<lb/>continuae febres et vigiliae et ardor et sitis et afpera
+<lb/>lingua et thoracis incendium vel hepatis dolor et pulsus
+<lb/>elati ac inordinati. His utile fuerit sanguinem educere et
+<pb n="19.534"/>
+<lb/>adhibere omnia, quae frigesacere queant et mitigare, nam
+<lb/>erit delirium atque phrenitis. Quod fi nulla benefica lu-.
+<lb/>nae complicetur habeatque Saturnus eandem figuram usque
+<lb/>ad diem septimum interibit in primo quadrato et
+<lb/>maxime si luna numeris vel lumine augeatur. Si autem
+<lb/>factus decubitus fuerit ubi luna est in ariete et aliqua
+<lb/>maleficarum ex opposito vel quadrato ei configuratur vel
+<lb/>cum ipsa apparet, stellam ipsam videre oportebit quaenam
+<lb/>sit. Ac si quidem fuerit Saturnus, causae in capite sunt,
+<lb/>lethargus fine tenso alto temno oppressi, infrigidati, adhuc
+<lb/>autem inaequales nunc quidem remisso morbo nunc
+<lb/>vero intenso. Quod si illa quoque luminibus vel numeris
+<lb/>vel utrisque demat, ut tibi antea dixi ,. ad dictum gradum
+<lb/>nonagesimum maximam habebit commotionem. Sed et
+<lb/>reliquas quoque .adjunge. Nam si leniter vel fol aliqua
+<lb/>annuerit- configuratione ; in summum veniet discrimen, at
+<lb/>oppositum praetergressus servabitur. Si autem siclus Mercurius
+<lb/>propositae constitutioni configuretur, absque dubio
+<pb n="19.535"/>
+<lb/>morietur. Et si igneus quoque Mars propositae figurae
+<lb/>configuretur, redemptores tu potius existimabis. Quare
+<lb/>oportebit te omni prudentia uti scientem hujusce stellae
+<lb/>frigidiores esse affectus atque rheumaticos. Si vero luna
+<lb/>configuretur Marti vel soli numeris addens vel etiam Iumiui
+<lb/>inducet ea in capite affectus alienationes mentis,
+<lb/>phrenitides, dolores, inflammationes, incendia, cruentationes.
+<lb/>oportet igitur in cunctis uti illis, quae frigefacere
+<lb/>valeant et discutere atque tusce quidem maxime circa
+<lb/>quadratum; nam post tertium diem augeri incipit morbi
+<lb/>magnitudo , affectus vero periculosi erunt et acutissimi usque
+<lb/>ad oppositum. Si autem Mercurius propositae figurae
+<lb/>configuretur, periclitatus servabitur; namque hic consentit
+<lb/>cum Marte, e contra vero a Saturno dissentit. Si vero
+<lb/>ubi factus fuerit decubitus, Jovi vel Mercurio et Veneri
+<lb/>vel etiam alteri ipsorum tantum luna configuretur, morbos
+<lb/>quidem facit inaequales et in divertes affectus devolvuntur,
+<lb/>sed omnino servantur. Te ergo oportet diaetis
+<pb n="19.536"/>
+<lb/>adhibere animum et gestationibus et deambulationibus et
+<lb/>balneis et vino exhibendo; qui enim Saturno configurante
+<lb/>decubuere et balnea cupient et quietem et lectum cibumque
+<lb/>multum et calentem potum. Qui autem Marte potum
+<lb/>frigentem, motum, vinum , ventos. Oportet ergo te
+<lb/>a proprio juxta quamlibet stellam desiderio haud quaquam
+<lb/>retrahere ; quaelibet enim stella quibus rebus delectatur
+<lb/>et optat, his etiam juvat. Ut enim mihi videtur, optime
+<lb/>Aphrodisi, ne putato hujuscemodi curationes medicae rationi
+<lb/>adverfarr. Ego enim qui cognitas habeo stellarum
+<lb/>naturas effatus fum tibi quibus rebus quaelibet delectetur,
+<lb/>ut in cunctis labi non possis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Si quis iero decubuerit quando luna est
+<lb/>in tauro et Satumus in ejus est quadrato vel opposito
+<lb/>vel cum ipsa una praesertim ubi ea et lumini et numeris
+<lb/>demit, morbus etiam in principio a crapula erit et ferculis
+<lb/>et plenitudine; et erunt febres adstrictae et hypochondriorum
+<lb/>dolor et labor articulorum et pullus elati ac
+<pb n="19.537"/>
+<lb/>inordinati et totius corporis inflammatio et in pulmone
+<lb/>ac latere sinistro tensus gravitatis. Hos juvat sanguinis
+<lb/>detractio eaque omnia quae valent habitum demoliri. Si
+<lb/>igitur beneficae usque ad oppositum non complicentur,
+<lb/>procul dubio morietur. Quod si etiam Mars eandem figoram
+<lb/>aut oppositum retineat, in primo quadrato interibit.
+<lb/>At si beneficae adsint lunamque adspiciant, periclitatus fervehitur.
+<lb/>Si vero quis decubuerit quando luna est in
+<lb/>Tauro , praecipue ubi dies est, Mars autem cum ea est simul
+<lb/>vel in ejus opposito aut quadrato morbus erit ex plenitudine
+<lb/>sanguinis et adstrictio et incendium et dolor colli
+<lb/>ossiumque immodicae vigiliae et magnum vini desiderium
+<lb/>et frigidae. His ergo sanguinis detractio conducit et emnia
+<lb/>quae relaxant. Quod si Saturans eandem eum luna
+<lb/>obtineat figuram nullaque benefica complicetur, nonum
+<lb/>diem non superabit; si autem beneficae praefantes adsint
+<lb/>vel configurentur, periclitatus usque ad vigesimum diem
+<pb n="19.538"/>
+<lb/>servabitur. Si vero quis decubuerit quando luna est in
+<lb/>tauro, ac juxta propositam constitutionem et lumina et
+<lb/>numeros imminuit, ipsi vero Saturnus quomodocunque
+<lb/>configuratur, praefestina si Venus una comprehendatur, affectus
+<lb/>juxta sane signi . proprietatem in ipsis initiis tarde
+<lb/>movebuntur et aegre innotescent, veluti si non adsit morbus:-
+<lb/>et corporibus imbecilli et interrupti loquelis et stomacho
+<lb/>nihil appetentes et calefactiones quae tuus in profundo
+<lb/>ostendentes et articulis dolentes et toto corpore
+<lb/>resoluti. Haec autem ego tibi signa totius zodiaci propono,
+<lb/>ut si quod ex illis appareat, facile videas quid de inflamis
+<lb/>sit pronunciandum. Natura enim ipse zodiacus quum
+<lb/>habeat significationes aquarum inducit et terra et mari
+<lb/>tempestates et excitat diversorum turbationes ventorum.
+<lb/>Quare te. capitis curam gerere oportet; boe enim ostendet
+<lb/>tibi principii fixam morbi caulam; unde et nervofum omne
+<lb/>compatietur et noxae stomachi consequentur pulsusque
+<lb/>abditi et fornicantes praecipue per diem. Quamobrem
+<pb n="19.539"/>
+<lb/>nutrire quidem oportet, non autem vereri obspusillauimttatem
+<lb/>et detractiones sanguinis et ventris subductionem
+<lb/>omnisque quae evacuant, ut quae magnam admodum debilitatem
+<lb/>inducant; a quadrato autem usque ad oppositum
+<lb/>diligentius servare. Si enim coniunctione soluta significationes
+<lb/>mutabit in melius, morbus in opposito dissolvetur;
+<lb/>ac fi coniunctione soluta in deterius significationes faciet,
+<lb/>praefertim si nulla benefica in decussim fuerit complicata,
+<lb/>oppositum non praetergredietur. Si vero quis decubuerit
+<lb/>quando riuna est in tauro et Marti vel foli configuratur,
+<lb/>praefertim si plena sit vel gibba utrinque numeris augefcens
+<lb/>in collo et hypochondriis erunt causae ex plenitudine
+<lb/>et febres ardentes ac constrictae et in lingua asperitas
+<lb/>et oris amaror; ipsi vero oculis torve intuentes faciesque
+<lb/>prorsus minabunda ac verbis temerarii et frequentius
+<lb/>in domesticos amarulenti insultant et funt siticolosi.
+<pb n="19.540"/>
+<lb/>oportet itaque. ventris curam gerere ne sit adstrictus,
+<lb/>atque in primis sanguinis detractionibus uti neque
+<lb/>a desiderio frigidi potus admodum retrahere , nam morbi
+<lb/>a principio usque ad quintum sive septimum erunt acuHores.
+<lb/>Oportet autem esse. attentum. Si enim videris
+<lb/>leonem in quarto, erit affectus cardiacus. Quare oportet
+<lb/>in feptimo singulis horis esse attentum et ad viniae fric
+<lb/>gidae potionem praeparari. A septimo. autem si ad deterius
+<lb/>vertatur, ejus salus est desperanda, nam inevitabiliter
+<lb/>morietur Inspicere. autem oportet et horas in hac commotione
+<lb/>quo pacto possis horam adaptare ad beneficas et
+<lb/>nutriendo vel lavando vel vinum exhibendo opitulari.
+<lb/>Si enim in hac commotione cibus detur, medicae id rationi
+<lb/>adversabitur; at si in hora detur benesicarum, magnopere
+<lb/>juverit. Quod si lunae dum ad eum, qui dictus
+<lb/>est, fe habet modum, Iupiter vel Mercurius vel Venus
+<lb/>configuretur sive addat illa numeris sive demat usque ad
+<pb n="19.541"/>
+<lb/>oppositum, manifesta fiet ad salutem conversio. oportet
+<lb/>ergo citra omnem adlectionem diminuendo cibare.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Si vero aliquis decubuerit, quando luna est
+<lb/>in geminis et Saturnus est cum ipfa, vel ex opposito aut
+<lb/>quadrato adspicit , . origo morbi a labore et vigilia erit
+<lb/>vel ru primis ab itinere, si luna lumini demat et numeris,
+<lb/>habebit enim in articulis dolorem ; et paulatim se retegit
+<lb/>morbus et a tertio die incipit augeri usque ad vigesimum ;
+<lb/>febres enim tenues erunt et corporis totius exteuuationes
+<lb/>ob eas quae frequentius noctu fient intensiones et .dolor
+<lb/>(plenis. Quod si nulla benefica complicetur et eandem
+<lb/>igneus Mars figuram obtineat, post trigesimum diem ntorietur.
+<lb/>Sed si adfuerint beneficae ac lunam intueantur,
+<lb/>in diuturnos et periodicos delapsus affectus servabitur. Si
+<lb/>vero aliquis decubuerit, quando luna est in geminis et
+<lb/>Mars vel cum ipfa est vel ex opposito seu quadrato adfpicit
+<lb/>tum autem numeris lumineque augescit, instabilis morbus
+<lb/>ac periculosus erit. Nam continuae erunt febres adstrictaeque
+<pb n="19.542"/>
+<lb/>ac ardentes et pulsus elati ac inordinati. His
+<lb/>igitur conducet detractio sanguinis. Quod si nulla benefica
+<lb/>lunam adspiciat et -eandem Saturius figuram obtineat,
+<lb/>usque ad diametrum morietur. Sed si eam benefica adfpiciat,
+<lb/>periclitatus servabitur. Si vero aliquis decubuerit,
+<lb/>quando luna est in geminis, procataretica morbi cauta a
+<lb/>labore erit e.t balneis ; atque omnis humiditas morbum
+<lb/>retinebit. Quod si configuretur splendens Saturnus seiutillantem
+<lb/>Mercurius assumens ; praecipue si luna conjunctione
+<lb/>numeris demat, scapulas dolebit et lumbos et totum
+<lb/>corpus erit ignitum , ac in superficie velut: ex adrstione
+<lb/>dolens. Erunt autem inutiles sanguinis detractiones
+<lb/>quod quidem ipsi exoptabunt; et contraria eritfrigidae
+<lb/>potio usque ad septimum.^ Quum autem ea conjunctionem
+<lb/>solvit et ad minora movetur, procul dubio interibit.
+<lb/>Si vero in proposita constitutione aliqua beuesica..unr
+<lb/>in decubitu configuretur, ab aliis in alios decidunt
+<lb/>affectus ut lschiadas.et alios quosdam in ipsis articulis dolorea.
+<pb n="19.543"/>
+<lb/>Quantitas autem temporis innotescet tibi ex ipsa
+<lb/>lunae copulatione; hoc est ex ipso stellae beneficae progressu,
+<lb/>nam proculdubio servantur. Eadem autem ratio in
+<lb/>omni signo. Si. vero decubitus fiat omnium carens configuratione
+<lb/>stellarum, inaequales morbi sunt, sub oppositum
+<lb/>autem liberantur. Inaequalitas vero ita tibi statuatur;
+<lb/>quocunque in signo luna exstiterit, in eo ipsam imperium
+<lb/>assumere : indicat enim tibi ipfa stella per singulos dies,
+<lb/>utrum intendetur an remittetur. Si vero in proposita
+<lb/>decubitus constitutione luna suerit in geminis et consigna
+<lb/>retur ei quocunque modo Mars aut sol aut uterque , ac
+<lb/>praecipue si ipfa plena fuerit vel gibba utrinque, feratur
+<lb/>autem in magna suo motu, erit quidem aegroti ea praesumptio
+<lb/>suam ut salutem desiperet; et lachrymantur quod
+<lb/>tali statu sint ; exiliunt autem et sunt in loquendo audaces
+<lb/>simulacluorum imaginationibus insilientes ; quibus omtubus
+<lb/>augescentibus augescit affectus. Interdiu autem et
+<lb/>stomachi est debilitas et affectus circa meningem, ut fiant
+<pb n="19.544"/>
+<lb/>et prostrati et sine pulsu. Oportet ergo colligando atque
+<lb/>fovendo curam gerere extremorum et cogitare^ opportunas
+<lb/>esse sanguinis detractiones ; juxta autem signum et praecipue
+<lb/>si ipsi appetant, adaugere cibos : a coniunctione enim
+<lb/>cognosces signum et salvere morbum audies, si et stomachus
+<lb/>validior tibi esse videbitur et meninx ab affectu liberata,
+<lb/>servabuntur bi procul dubio. Quod si ab oppositione
+<lb/>morbus tendat ad incrementum et per ventrem tenuia
+<lb/>reddantur, procul dubio intereunt. Magnopere autem
+<lb/>conducit, si quae consueta funt exhibeantur. Si autem
+<lb/>beneficae juxta hoc signum propositae constitutioni
+<lb/>configurentur, ac si luna vel demat vel addat omnia qui-,
+<lb/>dem medicamina abdicare oportet, regere autem balneis
+<lb/>simplicibus et tempestivis et gestationibus et exercitamenfis
+<lb/>quae per manus fiunt,. nam absque dubie servantur.
+<lb/>Quidam autem in ipsio quadrato morbo liberantur.
+</p>
+<pb n="19.545"/>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Si vero aliquis decubuerit, quando luna
+<lb/>est in cancro et ei pangitur Saturnus vel ex opposito aut
+<lb/>quadrato adfpicit , morbi origo a balneis erit et frigefaottone.
+<lb/>In thorace erit fluxio et tusses et corporis adstrictio
+<lb/>et febriculae tenues . ac malignae et pulsus tenues
+<lb/>debilesque et lateris dolor. His igitur convenient calesacientia
+<lb/>omnia. Quod si benefica lunant non adspexerit,
+<lb/>morbo producto hic obibit usque ad diem quadragesimum.
+<lb/>Si autem benefica lunam adspexerit multis vexatus malis
+<lb/>servabitur. Si vero aliquis decubuerit quando luna est in
+<lb/>cancro et cum ea est Mars- vel ex opposito aut quadrato
+<lb/>adfpicit, morbi origo a vomitibus erit et cholera ao sicmadii
+<lb/>subversione. His igitur convenient frigesacientia
+<lb/>et adstringentia omnia. Quod si beneficae lunam haud
+<lb/>adspexerint, in primo quadrato interibit, at si benefica
+<lb/>lunam adspexerit, in primo quadrato servabitur. Si vero
+<lb/>quis decubuerit quando luna est in Cancro, morbus erit
+<lb/>ex vini ingurgitatione ac usu immoderato. Incipiet autem
+<pb n="19.546"/>
+<lb/>a . distentione et elevatione membrorum collaborantium ;
+<lb/>et aegri disserendo declarant locum affectum. Erit autem
+<lb/>a frequentioribus vomitibus atque abundantia bilis: aegre
+<lb/>igitur respirat et costas dolent projectantes se valde., ac
+<lb/>volentes frigido in aere esse continenter, ut etiam operimenta
+<lb/>abjiciant et circa artus dolentes frequentius exsurgent
+<lb/>praecipue ah oppositu. Quare oportet non solum
+<lb/>desistere a frigida exhibenda, sed adhibere etiam quae valeant
+<lb/>frigefacere et discutere praecipueque in principiis.
+<lb/>Si vero Marti aut foli aut utrisque quocunque adspectus
+<lb/>mode luna configuretur, erunt febres per additionem et
+<lb/>augmentum et pulsus inaequales, alias quidem aucti, alias
+<lb/>autem attenuati. Quare sanguinis detractio conducit, a
+<lb/>quinto enim gradu usque ad nonagesimum hoc est quadra-.
+<lb/>tum lateris , successivi et maligni affectus consequentur.
+<lb/>Quod si nulla benefica complicetur quousque solverit conjunctionem
+<lb/>in nervoso patiuntur et delirant acclamantes
+<pb n="19.547"/>
+<lb/>ac vociferantes. Naturaliter autem juxta hoc signum in
+<lb/>noctibus superveniunt affectus; Si autem coniunctionem
+<lb/>solverit et ad minora moveatur ac beneficae .copuletur, in
+<lb/>periodicum affectum veluti quartanarum delapsus scrvabitur.-
+<lb/>At si maleficae copuletur modo nihilominus periodico
+<lb/>perdetur. Si vero in praedicta constitutione nulla
+<lb/>fuerit media usque ad oppositum , si luna coniunctionem
+<lb/>solvat et tendat ad minora servabitur. At si a conjunctione
+<lb/>ad majora moveatur, malefica autem media fuerit,
+<lb/>Saturatus inquam, usque ad oppositum periclitatus. ferrabitur..
+<lb/>Naturaliter autem qui hoc in signo decubuerunt
+<lb/>morbis laborabunt, qui aegre intermittant atque malignis,
+<lb/>et quae illis conferre medicationes videntur advertantur.
+<lb/>convenit autem et vini exhibitio et balnea et cibi .qui
+<lb/>celeriter valeant distribui. Si vero in proposita constitotione
+<lb/>Saturans aut Venus configurentur morbi quidem i
+<lb/>remittentur, ut ostensum est tibi, fed restabunt magis dolores
+<lb/>iu articulis auribusque ; quidam autem in pulmone
+<pb n="19.548"/>
+<lb/>vel hepate retinent affectus; ita autem diuturnae erunt
+<lb/>aegritudines. Si ergo in hac figura luna numeris demens
+<lb/>moveatur, diu durant affectus et nihilominus in affectu
+<lb/>morietur. Quod si luna augendo et numeris addat et lumini,
+<lb/>ac Iupiter quocunque modo advocetur, decumbant
+<lb/>tamdiu dum luna ad. decimum a decnbitu signum devenerit.
+<lb/>Si vero nec a maleficis nec a beneficis adspiciatur,
+<lb/>in ipfo signo morbo liberabuntur. Quod si beneficae tantum
+<lb/>atque Mercurius quocunque modo configurentur usque
+<lb/>ad quadratum ipsus solvunt affectus. oportet ergo
+<lb/>a frequentioribus balueis abstinere, converti autem ad
+<lb/>exercitationes gestationesque ; namque hoc modo morbi mitigabuntur.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Si vero quis decubuerit, quando luna est
+<lb/>in leone et Mars cum ea est vel ex opposito aut quadrato
+<lb/>adspicit, morbi initium erit ex plenitudine et cruditate.
+<lb/>Erit enim in pectore ac hypochoudriis dolor et
+<pb n="19.549"/>
+<lb/>erunt intensae febres et caliditas in . profundo , quam in
+<lb/>superficie maturet alvus adstricta. His igitur omnia convenient
+<lb/>quae excalefaciunt et relaxant. Quod si beneficae
+<lb/>lunam haud adspexerint usque ad oppositum interibit.
+<lb/>At si beneficae lunam adspexerint multa passus mala fervabitur.
+<lb/>Si vero quis decubuerit quando luna est in
+<lb/>Leone et simul cum ea est Mars vel ex opposito adspicit
+<lb/>aut quadrato morbi initium a sanguinis plenitudine erit.
+<lb/>Et erunt febres fluidae et pulsus debiles atque abditi et
+<lb/>animi defectus et appetentiae collapsae et gravitas et cataphora
+<lb/>et totius corporis languor et cardiaca dispositio.
+<lb/>His igitur convenient adstringentia et refrigerantia cuncta.
+<lb/>Quod si benefica. nulla lunam adspiciat, usque ad nonum
+<lb/>interibit. At si beneficae eam adspiciant, post oppositum
+<lb/>periclitatus servabitur. Si vero quis decubuerit quando
+<lb/>luna est in leone quocunque In gradu; hoc autem ipfum
+<lb/>in aliis etiam signis advertatur, licet ego de illis non decernam,
+<lb/>in horcscopo existente leone erit morbus ab animali
+<pb n="19.550"/>
+<lb/>parte et molestis laboribus aut negociis et aliis sol- licitudinlbus.
+<lb/>Pectus quidem erit ardens, extrema autem
+<lb/>frigentia et causae r n capite erunt et oculi cavati et naris
+<lb/>contracta et videbuntur sine pulsu esse aegrotantes et .
+<lb/>morbum ostendent diuturnum et quantum ad plenitudinem
+<lb/>viribus valebunt. oportet ergo e vestigio sanguinem detrahere,
+<lb/>si quidem fieri potest, dum luna in ipso signo
+<lb/>movetur et praecipue quidem si inceperit ad majora moveri;
+<lb/>sin minus, usque ad tertium et extrema fricare, ac
+<lb/>exagitare omnia quae sicut infra thoracem. Quod si Mars
+<lb/>et sol , lunae addenti utrisque, nempe numeris ac lumini,
+<lb/>configurentur, cardiacus erit affectus procul dubio usque ad
+<lb/>quintum diem; fub quadratum vero latus si cesset a nu- meris
+<lb/>aut etiam adaugeat , Saturne autem configuretur,
+<lb/>falvus .fiet. Si vero Iupiter aut Venus lunae in decubitu
+<lb/>.onfigurentur ; ubi ipfa luna ad tetragonum venerit, servabitur.
+<lb/>Si vero ipfa quoque sola numeris demens moveatur,
+<lb/>falvus fiet. Utiles autem fuerint ipfae vini exuib
+<pb n="19.551"/>
+<lb/>itiones et balnea et post tertium aut quintum gestatioces.
+<lb/>Si vero io propositu figura quando in decnbitu. luna
+<lb/>est in leone , ac ad magna movetur vel lumini addit, Saturnus
+<lb/>ipsi configuretur ac Venus fuerit in medio coeli
+<lb/>ver beneficorum una ea quidem quae fiunt praedicta usque
+<lb/>ad quadratum evenient, nihilo autem minus dolores
+<lb/>in vesica erunt et stomachi inflationes verum servantur.
+<lb/>Quod si ea a coniunctione majora percurrat procul dubio
+<lb/>servabuntur. Quod si propositae figurae Saturnus et Mars
+<lb/>aut alius quispiam configuretur ipfaqne borealem vertus
+<lb/>tendat, tibi ea ad appositum venerit morbi omnino solutio
+<lb/>fiet. oportet autem haud fovere neque lu locis tenebrosis
+<lb/>habere decumbentes; continenter vero longe a cnpiditate
+<lb/>retrahere. Est vero utile frigidam exhibere; et utiles
+<lb/>cibi qni implere valeant non autem imminuere.- si
+<lb/>veru ipfa luna cunctis sit inconfpeeta ad magna antem
+<lb/>moveatur, ubi venerit ad oppositum, facta crisis conanotione
+<lb/>morbum salvet. Quod si ad minora moveatur aegrotus,
+<pb n="19.552"/>
+<lb/>quoad illa coniunctionem sit praetergressa, inaequali
+<lb/>morbo detentus frequentiusque in morbum relapsus fervabitur.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Si vero aliquis decubuerit quando luna
+<lb/>est in virgine et Saturnus cum ipsa est vel ex opposito
+<lb/>aut quadrato auspicis, morbi origo erit ex tarditate et
+<lb/>cruditate ventris et dolor intestinorum et hypochondriorum
+<lb/>inflammatio ; et febres adstrictae et. in remissione et
+<lb/>intensione inaequales; et pulsus abditi crebrique ac inordinati.
+<lb/>His ergo convenient calefacientia omnia et relaxantia.
+<lb/>Quod si benesicae lunam non adspexerint circa
+<lb/>quadragesimum periclitabitur. Si autem beneficae lunam
+<lb/>adspexerint, longum passus morbum servabitur. Si vero
+<lb/>aliquis decubuerit, quando est in Virgine luna et cum ipsa
+<lb/>est Mars vel opposito aut quadrato adspicit erit morbus a
+<lb/>fluxu ventris et in affectum vertetur dyfentericum et erit
+<lb/>sanguinis fluor ulceratioque in intestinis febres tenues
+<lb/>fluidae et pulsus debiles crebrique et collapsae appetentiae
+<pb n="19.553"/>
+<lb/>et stomachi subversio. Hisce convenient omnia quae constringunt.
+<lb/>Quod fi beneficae lunam non adspexerint, trigesimo
+<lb/>die interibit. Si autem beneficae lunam adfpexerint,
+<lb/>servabitur. Si vero aliquis decubuerit, quando luna
+<lb/>est in Virgine, erit morbus a dispositione coeliaca doloribusque
+<lb/>ac inflatione ventris; atque incipient veluti ex
+<lb/>laesa coctione alia quidem per ventrem acria effluere, .alia
+<lb/>vero per urinas ferri viridia et male olentia ; praecipue
+<lb/>vero punctiones tanquam in diaphragmate fiunt ac stomachus
+<lb/>refolvitur; totum vero nervosum collaborat, ab initio
+<lb/>enim statim oculi sunt assidue vigilantes. Quod si ea
+<lb/>ex minimo etiam cursu impulsa ad majora moveatur, configuretur
+<lb/>autem illi Mars vel Mercurius vel etiam fui,
+<lb/>dolitabunt quoque loquelis impediti. oportet ergo illis
+<lb/>uti quae densare et contrahere humida possint; inutilis
+<lb/>autem frigidae exhibitio et omnis succus frigidus. Quod
+<lb/>si a quadrato ad majora versatur, accuratius a quocunque
+<lb/>frigesaciente arceantur, etenim usque ad diametrum perrdilati
+<pb n="19.554"/>
+<lb/>in affectum coeliacum vel dysenteriam devolvuntur,
+<lb/>atque ita protracto morbo deficiunt. S autem huic constitutioni
+<lb/>Saturnus configuretur- cum Mercurio vel Venere
+<lb/>vel Iove solo, nihilominus erit diuturnus morbus et tplenixi
+<lb/>affectus atque renales nisi quod etiam sic quoque
+<lb/>protracto morbo atque illo afflicti servantur. Si vero aliquis
+<lb/>decubuerit quando luna stola movetur neque adspicitur
+<lb/>sive addat sive demat sive quocunque alio figurae modo
+<lb/>se habeat, sanguinis fluxum patietur. Solvit autem hosce
+<lb/>morbos luna circuitione peracta. Pallidi autem et caloris
+<lb/>atri multo temperer aegrotantes fiunt, nihilo tamen minus
+<lb/>servantur. Si vero Jupiter vel Venus vel Mercurius, vel
+<lb/>quilibet ipsorum vel etiam omnes in decunitu annuant,
+<lb/>nihilominus quae stmt in ventre fluxu laborabunt; in ipto
+<lb/>autem signo usque ad quintum aegritudines solvunt. oportet
+<lb/>vero vini quidem utum indulgere, balneorum autem
+<lb/>devitare.
+</p>
+<pb n="19.555"/>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Si vero aliquis decubuerit quando luna
+<lb/>est in libra et Saturnus cum ipfa est vel ex opposito aut
+<lb/>quadrato adspicit, morbi origo .erit ex potu vini et maxime
+<lb/>ex crapula, si lumini numerisque luna demat fiatque
+<lb/>in nocte decubitus; affectus autem in capite et thorace
+<lb/>erunt, defluxus et tusses a principio et in capite fopor
+<lb/>et inappetentiae et duplices intentiones et continuae febres
+<lb/>et crebrae atque imbecilles. His ergo convenient
+<lb/>calefacientia omnia. Quod si cum Marte quoque eandem
+<lb/>retineat figuram, procul dubio in opposito morietur. Si
+<lb/>vero aliquis decubuerit, quando luna est in libra et Mars
+<lb/>cum ipsis est vel ex opposito aut quadrato adspicit, erit
+<lb/>morbus ex sanguinis abundantia .et erunt febres intentae
+<lb/>et elati pulsus et mentis alienatio et pbrenitis et ^vigilia
+<lb/>immodica et in toto corpore inflammatio. His conveniet
+<lb/>sanguinis detractio ac omnia quae valeant habitum exteunare.
+<lb/>Quod si benesica lunam non adspexerit in diebus
+<lb/>decem interibit. Si autem beneficae adspexerint, usque ad
+<pb n="19.556"/>
+<lb/>oppositum periclitatus servabitur. Si vero aliquis decubuerit
+<lb/>quando .luna est in libra; causa era ad extrema,
+<lb/>dolebunt etenim ipsis et ignea erunt atque eam quae in
+<lb/>pro Iun dolosi magis caliditatem manifestabunt testatim. vero
+<lb/>soporantur e: magis oculos tanquam ad fomnunr con vertunt
+<lb/>et absque appetentia jacent. - Ita ergo naturaliter in
+<lb/>hoc signo morbi fiunt, in quo falluntur aliqui, assiduum
+<lb/>nutrimentum causantes. Si vero quando ipsa movetur ad
+<lb/>minora, Saturans vel Venus vel Mercurius ver quilibet
+<lb/>ipsorum accesserit , usque ad oppositum procul dubio in
+<lb/>phrenitidem incidunt. Quare calefacere oportet atque uti
+<lb/>iis,. quae discutere queant et repellere et asservare in
+<lb/>quiete atque custodia, ne forte aquam furtim bibant. Ita
+<lb/>enim quae sunt in ventre excreta usque ad oppositum,
+<lb/>morbi facient dissolutionem ; nihilo autem minus in longiora
+<lb/>etinaequalia mala devoluti, veluti periodica hocpacto
+<lb/>servabuntur. At si fotus Saturnus fuerit , peribunt.</p>
+<p>- Si autem in praedicta constitutione magno cursu feratur,
+<pb n="19.557"/>
+<lb/>usque ad oppositum ob febrium intensionem et remissio^.
+<lb/>nem multa passi servantur. Si vero quando luna est in
+<lb/>libra, Mars et fol lunae opponantur, caulae lu capite erunt,
+<lb/>cephalatgia et rheumatismos et hemierania. Quod si Mercurius
+<lb/>accedat, causae erunt in oculis, suffusiones, glaucedices
+<lb/>pupillarum dilatationes. oportet ergo ut plurimum
+<lb/>sanguinis detractione uti; utiles autem et excretiones.per
+<lb/>ventrem. Sic vero diu perdurantes nihilominus periclit.abuntur,
+<lb/>in eodem affectu manentes. Quod si Iupiter
+<lb/>aut Venus quocunque configurat unis modo complicentur,
+<lb/>falvi fient .in eisdem affectibus manentes. Quod .si ipsis.
+<lb/>haud adspiciatur ac si decrescat , maligni quidem morbi
+<lb/>erunt et inordinati pulsus qui difficulter .comprehendi .
+<lb/>queant; nihilo tamen minus ubi ad oppositum luna .pervenerit,
+<lb/>morbum solvit. Hoc autem sciatur, in omnibus
+<lb/>tropicis et aequinoctialibus signis malignos esse morbus.
+</p>
+<pb n="19.558"/>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Si vere aliquis decubuerit, quando luna
+<lb/>est in scorpione. et Saturnus est. cum ea vel ex opposito
+<lb/>aut quadrato adspicit, morbi origo erit ab exulceratione
+<lb/>aut inguinum aut locorum. abditorum ad anum vel pudensium.
+<lb/>Quod si luna numeris addat aut lumini, fiervabitur
+<lb/>aegrotus ac praecipue si beneficae intueantur. Si
+<lb/>vero aliquis decubuerit,. quando luna est in scorpione et
+<lb/>cum ea est Mera vel ex opposito aut quadrato adspicit,
+<lb/>lumine autem deficit ac numeris demit, maxime si benesicae
+<lb/>intueantur in. primo quadrato servabitur aut usque
+<lb/>ad oppositum; nam morbi erunt mites et qui facile mutentor.
+<lb/>Scito autem eandem esse rationem in omnibus
+<lb/>signis quando hujuscemodi figurae inciderint. Si ergo aliquis
+<lb/>decubuerit quando luna est in scorpione, morbus erit
+<lb/>ab horroribus minimis. Hi enim contemnentes augebunt
+<lb/>affectus. cauta autem procatarctica erit in vesica et partibus
+<lb/>quae coxas rnterjacent aut etiam ulceratio testis. Ad
+<lb/>tertiam vero usque diem rectus febricitans morbum augebit.
+<pb n="19.559"/>
+<lb/>Quod si numeris addat et praecipue ab oppositione
+<lb/>et cum ipfa sit Mars, per scorpionem et ferrum in occultis
+<lb/>locis noxam patientur. Quod si fol quoque una
+<lb/>fuerit ac configuretur, apostematum ad costas noxam patientur.
+<lb/>Si autem ad majora vertatur, est autem hoc,
+<lb/>quando diurnus lunae motus graduum est circiter quindecio,
+<lb/>per longitudinem, noxam ad cosses accipient et per
+<lb/>vomitiones sanguinem aut excretiones ejicient. oportet
+<lb/>ergo a frigidae potu arcere continenter et in quiete asservare.
+<lb/>Inutiles vero sunt clysteres et quae frigefacere queant
+<lb/>cataplasmata et sanguinis per cucurbitulas detractio :
+<lb/>inutilis etiam balnea. Ubi vero luna usque ad undenituum
+<lb/>venerit tum sic praetergredientes longos faciunt
+<lb/>assectus tum itidem periclitantur. Quod si Iupiter et Venus
+<lb/>una cum luna fuerit aut configuretur, erunt quidem
+<lb/>mala proposita, at mora protracta servabuntur. Temporum
+<lb/>autem vel dicium quantitas a complicatione stellarum
+<lb/>tibi innotefcet, nam durant assectus usque ad earum adrun
+<pb n="19.560"/>
+<lb/>tum</p>
+<p>fpectum. Determinatus enim est decubitus usque ad oppofitum,
+<lb/>praetergressus autem oppositum diuturnas stellae
+<lb/>faciunt aegritudines. Si. -vero aliquis decubuerit quando
+<lb/>luna est in scorpione et Saturum est cum illa aut censiguratur
+<lb/>et minora percurrit vel etiam ad coniunctionem
+<lb/>fertur, procul dubio resolventur ; et devolventur in mala
+<lb/>diuturna veluti qui defluxum circa pudendum aut proxima
+<lb/>fedi loca patiuntur. Quod si nulla benefica applicetur
+<lb/>aut configuretur, in ipsis interibit malis. Quod si luna ad
+<lb/>majora excitetur et m Saturum configuretur, proposite
+<lb/>quidem mala obvenient,. at protracta mora servabuntur.
+<lb/>Naturaliter autem juxta hoc signum sunt inutilia balnea
+<lb/>omnisque quae possint fluxionem ciere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Si vero quis decubuerit, quando luna est
+<lb/>in sagittario et est cum ipfa Saturum aut opposito quadratove
+<lb/>adspicit, erit morbi initium ex humidorum tenuiumque
+<lb/>et aerium fluxionum decubitus Dolebunt autem
+<pb n="19.561"/>
+<lb/>articulos et patientur febres quae cum rigore iuvadunt
+<lb/>et insultus erunt cum rigore ne frigebunt extrema.
+<lb/>(scando. igitur luna lumini numerisque marinae t demit,
+<lb/>duplices erunt insultus et febres adstrictae et abditi. pulIus.
+<lb/>His convenienti ca quae resolvunt et calefaciunt.
+<lb/>Quod si benefica lunam adspexerit periclitatus servabitur,
+<lb/>ubi oppositum praeterierit. At si benefica non adspexerit
+<lb/>usque ad oppositum interibit. . Si vero quis decubuerit
+<lb/>quando luna est in sagittario et cum ipsa est Mars vel
+<lb/>opposito aut quadrato adspicit vel lumine eadem augefcit
+<lb/>et numeris, ex plenitudine et crapula in stabilis erit mor-.
+<lb/>bus et. periculosus. Erunt enim continuae febres intensae
+<lb/>et fluidae et cholerico affectus et ventris fluxiones et debiles
+<lb/>. pulsus. His igitur con venie ut refrigerantia cuncta
+<lb/>et adstringentia. Quod si maleficae lunam adspexerint,
+<lb/>die septimo interibit. At si beneficae. eam adspexerint
+<lb/>usque ad oppositum periclitatus servabitur. Sr vero aliquis
+<lb/>decubuerit quando luna est in sagittario, morbus a
+<lb/>balneo erit et frigido aere et totum corpus rheuma iulestabit
+<pb n="19.562"/>
+<lb/>et erunt in fame pulsus et gingivarum dolor et
+<lb/>dentium; causa autem procatarctica in pectore erit. Quod
+<lb/>.si luna minora percurrat, praecipue veroest ad felem feratur
+<lb/>et cum illusit Saturnus vel Mercuriusconfiguretur,
+<lb/>erunt in pulmone ulcerationes et in scpto trausversc inflammationes
+<lb/>totumque corpus erit inflammatum. oportet
+<lb/>autem adhibere vim. habentia siccandi. Suut vero etiam
+<lb/>utiles . longulum detractiones usque ad quintum. Quod si
+<lb/>etiam a decimotertio gradu ad decimumquartum moves.tur,
+<lb/>affiicti usque ad quintum peribunt. Si autem rupiter
+<lb/>vel Venus propositae constitutioni fuerint praesentes,
+<lb/>futura quidem sunt ea mala quae diximus, fed fervabun.tur.
+<lb/>Quod si luna ad majora moveatur et sula sit, fervantur.
+<lb/>Si vero luna ad majora festinet et illi Mars et
+<lb/>lbl configurentur, maxime quidem frigore aut tussibus
+<lb/>corripientur. Naturaliter autem juxta hoc signum vigiliae
+<lb/>fiunt et noctu mala intenduntur; fiunt autem valde parvi
+<lb/>pulsus. Oportet vero fovere et in obscuro loco habere
+<pb n="19.563"/>
+<lb/>cubantes. Balnea autem funt inutilia .et universa quae
+<lb/>facile resolvunt. S1 igitur beneficae intueantur, periclitatus
+<lb/>servabitur. Quod si luna a beneficis adspicitur aut
+<lb/>ab una ex ipsis. morbi solventur, non admodum vehementes
+<lb/>facti in opposito.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">Si vero aliquis decubuerit quando luna
+<lb/>est in .capricorno atque. tum numeris tum lumini demit
+<lb/>et Saturnus ningitur ei vel opposito. aut quadrato adspicit,
+<lb/>initium morbi a- perfrigeralione erit balneorum et rheumatistenuibus
+<lb/>et in thorace -ierit sensus gravitatis atque
+<lb/>lu pulmone tussesque a principio et insultus cum rigore
+<lb/>et i intensiones . nocturnae et febres intensae. His igitur
+<lb/>calefacientia omnia conveniunt. Quod si beneficae lunam
+<lb/>non adspiciant, vigesimoprimo die .moritur. si vero eam
+<lb/>beneficae adspiciant, -vivet .quidem, fed patietur longum
+<lb/>in pulmone affectum. si .autem decumbat aliquis quando
+<lb/>luna .est in capricorno ac .iungitur ei Mars vel opposito
+<lb/>aut quadrato adspicit, initium morbi .a vomitu erit erebolora
+<pb n="19.564"/>
+<lb/>veI corruptione veI tarda coctione. Morbus igitur
+<lb/>erit periculosus et acutus et nervorum contentio et fluxus
+<lb/>ventris et in ano acrimonia et ulceratio. His convenient
+<lb/>omnia quae refrigerant et adstringunt. Si ergo non adtpiciat
+<lb/>benefica lunam, quinto aut septimo die interibit.
+<lb/>At si eam benefica adspiciat, post septimum periclitatus
+<lb/>servabitur. . Si vero quis decubuerit.- quando luna est in
+<lb/>capricorno, cauta procatarctica a labore erit et indigentia.
+<lb/>Erit .autem in dorso dolor et hortorum insultus et insilituum
+<lb/>frequentiores assignationes .ut et fecunda et tertia
+<lb/>.fiat; et corporis. totius pilorum. erectiones et febres ad-strictae
+<lb/>et ordines interrupti. r Haec ego tibi frequentius
+<lb/>propono, .ut ex hujusmodi signis assequare et conjiclas
+<lb/>aegritudinem. Quod si numeris demat, frangit aegrotis vires.
+<lb/>et morbum adauget et in. loquela balbos reddit et
+<lb/>cum tarditate fursum spectantes. si autem Satumus etiam
+<lb/>configuretur aut sit luna, periclitantur quidem usque ad
+<lb/>oppositum propter febrium intensiones; at si beneficacomplicetur,
+<pb n="19.565"/>
+<lb/>servantur ac diu perdurant in malis. Si vero
+<lb/>in proposita constitutione Mars -vel fol configurentur, assectu
+<lb/>quidem liberabuntur, sed in affectus periodicos iociduut
+<lb/>et ita servantur.-. Quod si luna addendo numeris
+<lb/>angelum sitque ei praeiens Vel configuretur Saturnus aut
+<lb/>fol augescunt mala usque ad oppositum et cum .periculo
+<lb/>aegrotant. Si autem in quiuta augescant, oppositum otus
+<lb/>nino non superabunt. Si vero luna suerit cum Iove vel
+<lb/>Venere vel Mercurio vel .etlantr utrisque, erunt quidem
+<lb/>cautae propositae fed servabuntur. Animum ergo adverte,
+<lb/>naturaliter enim juxta hoc signum morbi periculosi fiunt.
+<lb/>Quare balneis oportet abstinere srigidaeque exhibitione:
+<lb/>ad gestationes vero feu lectos pensiles, unctiones atque
+<lb/>exercitamenta converti.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">Si autem decubuerit aliquis quando luna
+<lb/>est . in aquario numeris addens ac lumini et ei jungitur
+<lb/>Saturnus vel ex opposito aut quadrato adspicit, initium
+<lb/>morbi erit a laboribus vel insomniis vel itinere. Erit
+<pb n="19.566"/>
+<lb/>igitur inaequalis in intensione et remissione morbus; et
+<lb/>usqne ad oppositum servabitur, praesertim si benefica lunam
+<lb/>adspexerit. Si vero aliquis decubuerit quando luna
+<lb/>est in aquario lumini demens ac numeris et Mars juugitur
+<lb/>ei vel opposito. aut quadrato. adspicit, erit morbus
+<lb/>acuti/simorum affectuum i. et periclitatus servabitur post
+<lb/>nonum diem, praesertim st etiam benesicae lunam adspexerint..
+<lb/>si vero aliquis decubuerit, quando luna est in
+<lb/>aquario, erit morbus ex praegressa aliqua causa bubonis
+<lb/>oborti vel ex anterioris nudae partis tibiae aut ex pudeudorum
+<lb/>dolore. Et ita febres erunt ardentes et intenfae
+<lb/>et -in primis incendium extremorum fitibundique ac
+<lb/>frigidae appetentes et frequentius exsurgentes. Quod si
+<lb/>ea per magna teratur et configuretur vel accedat insuper
+<lb/>Mars usque ad quadratum mente permutabitur. Utiles
+<lb/>autem erunt sanguinis detractiones; itemque si non a frigidae
+<lb/>desiderio prohibeantur et si in luce decumbant. Si
+<lb/>vero etiam ad majora percurrat, ubi ea suerit in quadrato
+<lb/>ac nullatenus fuerit morbus imminutus , usque ad oppositum
+<lb/>interibunt. -Si autem propositae constitutioni Jupr
+<pb n="19.567"/>
+<lb/>ter vel Venus veI utrique attestentur et ipfa luna ad
+<lb/>minora- festinabat eo tempore quo decubuit, usque ad oppositum
+<lb/>periclitatus servabitur. Si vero lumini demat et
+<lb/>numeris, configuretur autem Saturnus vel etiam Mercurius
+<lb/>insuper accedat, mala quidem eadem erunt, sed largos fluxus
+<lb/>ad artus patientur; reddet autem mala longiora et
+<lb/>hydropem aliquo pactu ostendet. Et si letiam a media
+<lb/>constitutione per minora moveatur in ipso . affectu ntorientur.
+<lb/>SI. vero luna Iuli decubitum per media percurrat
+<lb/>quae quidem proposita efi causa erit, ubi vero. diu aegrotarint,
+<lb/>servantur. si vero luna a nullo adspiciatis
+<lb/>simae eum Cenere vel Mercurio vel Jove in decubitu ubi
+<lb/>inaequaliter habuerint a morbo servantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="indent">Si vero aliquis decubuerit quando luna
+<lb/>est in piscibus ac lumini demit numerisque et jungitur
+<lb/>illi r Saturnus ver opposito aut quadrato adspicit, morbi
+<lb/>initium erit a balneis st frigesactione vel tenuibus fluxioullius;
+<lb/>Extrema enim crebro frigescent at erunt cum rigore
+<pb n="19.568"/>
+<lb/>febres et inuasiones duplices et capitis constrictio et
+<lb/>punctiones in mammillis et dolor hypochondriorum et
+<lb/>pulsus abditi .tenuesque et .articulorum. dolor; His convenient
+<lb/>cuncta quae calefaciunt et quae. relaxant. Quod si benefica
+<lb/>lunam adspiciat, oppositum praetergressus servabitur^.
+<lb/>habebit autem diuturnum articulorum dolorem. . Si vero
+<lb/>quando est in piscibus suna numeris addens et lumine
+<lb/>augescens, Mars ei ningitur vel opposito aut quadrato adfpicit,
+<lb/>initium morbi erit a plenitudine, vini potu et cruditate.
+<lb/>Incipit enim u die tertio augeri morbus, noctu
+<lb/>autum.erunt intensiones et thoracis ardores et ratiocinationum
+<lb/>interruptio et phrenitis. et in capite constipatio
+<lb/>et febres ardentes et sitis et vini desiderium et pulsus
+<lb/>elati. His conveniet sanguinis detractio .et omnia quae
+<lb/>possunt habitum demoliri. Si ergo: beneficae lunam non
+<lb/>adspexerint, in primo quadrato interibit. At fi lunam
+<lb/>beneficae adspexerint ubi oppositum praetergressus suerit;
+<lb/>periclitatus servabitur. sii vero quis decubuerit quando
+<pb n="19.569"/>
+<lb/>luna est cum Jove vel Venere aut in opposito quadrature
+<lb/>idque si quis in. quolibet. signo decubuerit, usque ad pri-.
+<lb/>mum quadratum vel oppositum servabitur. Ai st malestcae
+<lb/>lunam adspexerint, nullo morbi ordine servato vexatus
+<lb/>usque ad oppositum servabitur. Magnum quid autem in
+<lb/>decubitu conducit etiam hora. Nam fi beneficae in ho-.
+<lb/>rofcopo sint vel corii medio; luna. vero sit cum maleficis.
+<lb/>vel in opposito quadrature, .vitam tutabantur. Si vero.
+<lb/>contra maleficae m horoscopo sint vel coeli medio, luna
+<lb/>vero sit cum beneficis,. ei officiunt qui decubuerit. oportet
+<lb/>igitur optimum medicum mathematicae quidem scleuriae
+<lb/>meminisse;- scrutari autum diligenter diem boramque
+<lb/>decubitus; et mundum contueri quo pacto habeat, nihil
+<lb/>enim fit sine mundi consensit. Si vero aliquis decubuerit
+<lb/>quando luna est in piscibus, causae morbi procatarcticae
+<lb/>a balneis vel frigida potione erunt. Statim enim nervo-,
+<lb/>tum patitur et .sunt. circa stomachum dolores, nudi. autem
+<lb/>discurrunt laterum. dolores et spirant difficulter et febres
+<lb/>adstrictae et in . profundo et pulsus tenues comprehensuquq
+<pb n="19.570"/>
+<lb/>difficiles in invasionibus , . quos tamen intra duas horas
+<lb/>immutant et remissius continenter habent; et quae circa
+<lb/>ventrem tenuia tum, deinde urinae male olent. - Utiles
+<lb/>aulum sunt adhibitae cucurbitulae, at inutiles furei omnes
+<lb/>qui refrigerant. Quod si luna a quadrato ad majora percurrat
+<lb/>Saturne configurata, usque ad oppositum periclitati
+<lb/>servantur. Si vero in proposita constitutione luna per-;
+<lb/>currat Iovi vel Mercurio. vel etiam utrisque configurata,
+<lb/>erunt quidem cautae propositae, ad haec vero ventrem dolent;
+<lb/>ac frequentius exsolvuntur, ut sine pulsu fiant. Quod
+<lb/>si a media figura ad minora feratur configurata Saturne,
+<lb/>ne quidem quadratum praetet ibunt. Si autem Venus quocunque
+<lb/>modo complicetur qui oppositum praeterierint,
+<lb/>decidunt in dysenteriam pallentesque fiunt, ac pedes in-.
+<lb/>tumescunt et carnes collabuntur.;-. quum .autem hoc pacto
+<lb/>diutius vitam traxerint nihilo tamen minus intereunt. si
+<lb/>vero currat ad magna pari.erque Marti vel soli vel utrique
+<lb/>configuretur causae procatarcticae erunt omnes; infuper
+<lb/>tamen et febres intensae et I.stammatio in hepate ac
+<pb n="19.571"/>
+<lb/>toto corpore dolentes., extrema autem ardentia propter invasiones
+<lb/>invicem succedentes. Convenit ergo diaetis uti
+<lb/>quae valeant nutrire; naturaliter enim lu hoc signo neque
+<lb/>sanguinis detractiones per phlebotomiam factae conducent,
+<lb/>Quod si nulla beneficarum complicetur usque ad oppositum
+<lb/>periclitabitur.. At si Jupiter vel Venus adspiciat vel
+<lb/>ipsa luna ad minora feratur, usque ad oppositum valde
+<lb/>vexati. Servantur. Utendum ergo aequalibus remediis et
+<lb/>quae facile adhibeantur. Si vero Jupiter vel Venus configuretur
+<lb/>lunae quae et ipsis Marti vel foli configuretur
+<lb/>numerisque addat et lumini, nihil proderunt beneficae, namque
+<lb/>interibunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p rend="indent">Volo autem nihilominus et hoc te inire,
+<lb/>ea quae circa partus accidunt et catus et vulnera quae
+<lb/>repente fiunt et quaecunque his sunt similia eodem modo
+<lb/>esse incipienda , quo in decuhitibus ostensum est-; ehirurgias
+<lb/>vero quae ex delectu fiunt et quaecunque his similia
+<pb n="19.572"/>
+<lb/>funt nempe chirurgiae in oculis verbi gratia dilatationis
+<lb/>pupillae vel suffusionis vel glaucomatis et quaecunque his
+<lb/>tunt similia, tunc esse exercendas quando luna lumine ac
+<lb/>numeris ad augmentum tendit et ei beneficae configurantur.
+<lb/>Nosse autem ^portet quum augefcit luna et numeris
+<lb/>addit. et funguntur ei Mars aut iol vel configurantur, confumi
+<lb/>corpora illis quibus ignis adhibetur: quum vero illa
+<lb/>minuitur et numeris demit atque ei Saturans vel Mercurius
+<lb/>iunguntur aut configurantur consumi corpora illis
+<lb/>qui refrigerantur. Illud vero tibi adiicio , quando duo
+<lb/>eodem die atque hora decubuerint, hoc pacto considerata
+<lb/>eorum aetates comparando. Atque si luna numeris demat
+<lb/>quando aliqui decubuerint et configuretur Saturnus aut
+<lb/>Venus qui Iunior est prius convalescet, sicuti antea quoque
+<lb/>dixi in superioribus praeceptis; et ultra signi congruentiam
+<lb/>in opposito liberabitur. Qur vero est femur
+<lb/>periclitabitur vel in alios affectus devolvetur pro signi
+<lb/>congruentia; vel morbo diuturno detentus servabitur. Quod
+<pb n="19.573"/>
+<lb/>si luna augeatur numeris et lumine et Mars aut sol configuretur
+<lb/>P periclitabitur junior post quadratum et oppositum
+<lb/>juxta signi in quo luna fuerit congruentiam. Sed si
+<lb/>luna beneficis et in senioribus et in junioribus configuretur
+<lb/>juxta ipsius signi congruentiam servabuntur. Haec
+<lb/>ego tibi idcirco enarravi , ut hac ipsa considerandi ratione
+<lb/>utens nulla in re labi postis.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>
