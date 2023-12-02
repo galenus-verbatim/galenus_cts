@@ -49,8 +49,8 @@
 		  repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We added bibliographical references to the previous editions referred to in Kühn's edition as "Bas." and "Chart.": that of the Γαληνοῦ Ἅπαντα published in Basel 
 		  (hence referred to as #Basel) and the Operum Hippocratis Coi, et Galeni Pergameni of René Chartier (hence referred to as #Chartier); we changed the naming schemes of the milestones indicating the corresponding Basel and Chartier pages in Kühn's edition, and added the corresponding Basel and Chartier volume number. 
 		  The editions other than that of Kühn were given milestones indicating the corresponding Kühn volume and pages when they were missing. We also added elements of structuration that were present in Kühn's edition 
-		  but were missing in the TEI, mainly the division of chapters into sections in some treatises, as well as the titles of those sections. Texts that were separated were joined together in accordance with 
-		  the TLG guidelines.</resp>
+		  but were missing in the TEI, mainly the division of chapters into sections in some treatises, as well as the header for those sections. The text numbered tlg0057.tlg096 that was separately edited was reinserted
+		  in the tlg0057.tlg095 in accordance with its location within Kühn's edition.</resp>
           <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
@@ -135,11 +135,11 @@
       <refsDecl n="CTS">
         <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 		<editorialDecl>
-			<hyphenation>
-			<p></p>
+			<hyphenation eol="none">
+			<p>All end-of-line hyphenation has been removed.</p>
 			</hyphenation>
-			<normalization>
-			<p></p>
+			<normalization method="none">
+			<p>Symbols used by Kühn edition are maintained as they appear within the printed text.</p>
 			</normalization>
 		</editorialDecl>
       </refsDecl>
@@ -150,16 +150,16 @@
       </langUsage>
     </profileDesc>
 	 <revisionDesc>
-		  <change who="Galenus-verbatim" when="2023-xx-xx">Finished all revisions for publication on the Galenus verbatim website.</change>
-		  <change who="Galenus-verbatim">Added bibliographical information on the editions referred to in Kühn's edition as "Bas." and "Chart."</change>
-		  <change who="Galenus-verbatim">Corrected false page and volume number referring to Kühn, Chartier and Basel edition.</change>
-		  <change who="Galenus-verbatim">Added milestone tags for the missing page change of both Basel and Chartier editions when they were missing.</change>
-		  <change who="Galenus-verbatim">Punctual correction to the digitization of Kühn's text.</change>
-		  <change who="Galenus-verbatim">Correction and additions of the sections div level when they were missing to better reflect the structure of Kühn's edition.</change>
-		  <change who="Galenus-verbatim">Modification to the subtype of some div to better reflect Kühn's structure.</change>
-		  <change who="Galenus-verbatim">Replaced abbreviations introduced by the initial transcription by the proper symbols used by Kühn edition.</change>
-		  <change who="Galenus-verbatim">Added line number.</change>
-		  <change who="Galenus-verbatim">Added head tags for the name of chapter and sections where they were missing.</change>
+		  <change who="Galenus_verbatim" when="2023-xx-xx">Finished all revisions for publication on the Galenus verbatim website.</change>
+		  <change who="Galenus_verbatim">Added bibliographical information on the editions referred to in Kühn's edition as "Bas." and "Chart."</change>
+		  <change who="Galenus_verbatim">Corrected and added milestone tags for the missing page changes of both Basel and Chartier editions when they were missing.</change>
+		  <change who="Galenus_verbatim">Punctual correction to the digitization of Kühn's text.</change>
+		  <change who="Galenus_verbatim">Correction and additions of the sections div level when they were missing to better reflect the structure of Kühn's edition.</change>
+		  <change who="Galenus_verbatim">Modification to the subtype of some div to better reflect Kühn's structure.</change>
+		  <change who="Galenus_verbatim">Replaced abbreviations introduced by the initial transcription by the proper symbols used by Kühn edition.</change>
+		  <change who="Galenus_verbatim">Added line number.</change>
+		  <change who="Galenus_verbatim">Added head tags for the name of chapter and sections where they were missing.</change>
+		  <change who="Galenus_verbatim">Revised the Hippocratic quotations reference to the precise text in accordance with the URN.CTS guidelines when they were present.</change>
 	  </revisionDesc>
   </teiHeader>
   <text>
