@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De inaequali intemperie</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg055.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="733" to="752">733-752</biblScope>
+              <date>1824</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x07">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="249" to="251">249-251</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="170" to="177">170-177</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x07">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg055.verbatim-lat1">
+<pb n="7.733"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="7.733"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE INAEQVALI INTEMPERIE
+<lb/>LIBER.</head>
+
+
+<p rend="indent">Inaequalis intemperies -. fit interdum et in
+<lb/>universo animalis corpore , ut in hydrope quem aquam intercutem
+<lb/>vocant, et febribus quas epialas appellant, et
+<lb/>prope caeteris omnibus, iis exceptis quas hecticas nominanti
+<lb/>Oboritur autem et in unaquaque parte, altum ea oedemate,
+<lb/>vel phlegmone , vel gangraena, vel erysipelate, vel cancro
+<lb/>obsidetur ; hujus autem generis est et qui elephas vocatus
+<lb/>et phagedaena et herpes. Verum haec quidem omnia cum
+<lb/>fluxionibus consistunt. Citra vero materiam affluentem,
+<lb/>quum partes folia qualitatibus niterentur, inaequales intemperies
+<pb n="7.734"/>
+<lb/>fiunt, iis utique refrigeratis, aut deustis, aut praeter
+<lb/>modum exercitatis , aut feriatis , aut aliquid ejusmodi perpessis.
+<lb/>Praeterea ex iis quae foris occursant, inaequales
+<lb/>intemperies no suis corporibus oboriuntur; quum calefiunt,
+<lb/>vel refrigerantur, vel siccantur, vel humectantur. Hae
+<lb/>namque simplices intemperies funt, ut in commentariis
+<lb/>de temperamentis demonstratum esu Compositae vero
+<lb/>ex iis usiae quatuor sunt, quum corpora vel calefiunt
+<lb/>simul et. siccantur,. vel calefiunt simul et .humectantur,
+<lb/>vel . refrigerantur simul et siccantur , vel refrigerantur
+<lb/>simul et humectantur. Quod autem ejusmodi intemperies
+<lb/>ab aequalibus eo dissideant; quod in omnibus intemperanter
+<lb/>affecti corporis partibus aequaliter non insint,
+<lb/>id clare liquet. Ergo quis sit omni inaequali intemperiei
+<lb/>generationis modus , in hocce libello enarrare propositum
+<lb/>esu Quo autem clarior evadat oratio , revocare in memoriam
+<lb/>oportet omnes corporis paries, sumpto a maximis ex- .
+<lb/>ordior quae sane et idiotis innotescunt.; manus enim..et
+<lb/>pedes et ventrem et thoracem et caput nemo est qui ignoret
+</p>
+<pb n="7.735"/>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Secetur autem a nobis earum rursus unaquaeque
+<lb/>in sibi continuas integrantes appellatas partes,
+<lb/>verbi gratia erus lu femur, tibiam et pedem,- manus -in
+<lb/>brachium, cubitum et summam manum. Et ver ossurum ae
+<lb/>manus propriae partes funt carpus, metacarpium et digiti;
+<lb/>digitorum praeterea, ossa, cartilagines, ligamenta,- nervi,
+<lb/>arteriae, venae, membranae, carnes, tendones, ungues,
+<lb/>cutis , adeps. Has vero etiamnum in aliam speciem locare
+<lb/>non conceditur , fed sunt similares ac primae j exceptis tamen
+<lb/>arteriis et venis ; hae nanque ex fibris et membranis
+<lb/>sunt conditae , ut in anatomicis administrationibus traditum
+<lb/>est. Quin etiam multa sunt spatia inter ipsas primas et fimilares
+<lb/>partes appellatas, atque bis etiam plura majoraque
+<lb/>luter ipsas organicas et compositas ; aliquando vero et
+<lb/>in unaquaque fimilari parte, ut in. osse cuteque ; atque de
+<lb/>sus quoque omnibus in administrationibus anatomicis dictum
+<lb/>esu Etenim mollia corpora, quum sibi invicem incumbunt,
+<lb/>interpositorum spatiorum sensum adimunt; fed .
+<pb n="7.736"/>
+<lb/>quae dura siccaque sunt, in iis maxime deprehendere spatia
+<lb/>licet, sicuti ossium cavernulas. Continent hae ex natura
+<lb/>in sefe humorem crassmn et album , ad id comparatum , ut
+<lb/>ossa nutriat. Quaein cute foramina sunt; ea qua ratione
+<lb/>fiant, in libris de temperamentis dictum est. Atque haec
+<lb/>monuisse necessarium erat perspicuitatis gratia eorum , quae
+<lb/>a nobis deinceps explicanda sunt. De inaequali vero rntemperie
+<lb/>nunc agendum; tum quaenam ejus natura sit; tum
+<lb/>quot ejus generationis modi. Ergo quod in omnibus corporis
+<lb/>ita allecti partibus una temperies non fit, prius dictum
+<lb/>est ; verum id quidem omnis intemperiei inaequalis est commuue;
+<lb/>differentiae vero ejus ipsam corporum affectormn
+<lb/>naturam sequuntur. Aliter enim simplex caro , aliter universus
+<lb/>musculus ad inaequale temperamentum pervenit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Quum enim fluxio humoris calida in musculum
+<lb/>decubuit, primum majores arteriae venaeque hui.
+<lb/>plentur ac distenduntur ; deinde minores ; idque fit ad usque
+<lb/>minimas; in quibus quum vehementer fluxio impacta
+<pb n="7.737"/>
+<lb/>sit, neque amplius contineri queat, pars quaedam ejus per
+<lb/>ipsarum ora, pars quaedam etiam per tunicas colam foras
+<lb/>transmittitur; tum vero interjecta spatia primorum corporum
+<lb/>ita fluxione implentur, ut undique omnia ab humore
+<lb/>et incalescant et perfundantur. En sinit nervi, ligamenta,
+<lb/>membranae , caro ipsa , anteque haec arteriae et venae,
+<lb/>quae certe primae et praeter caetera vario dolore assiciuntur.
+<lb/>- Etenim interius a fluxione tum calefiunt tum disteuduntur
+<lb/>ac divelluntur; exterius non modo calefiunt, fed
+<lb/>etiam premuntur ac degravantur; reliquae partes aliae incalefcendo
+<lb/>salum, vel comprimendo , aliae utroque genere
+<lb/>laborant ; appellaturque morbus ipsis phlegmone, est autem
+<lb/>inaequalis musculi intemperies; fervet enim jam qui in eo
+<lb/>est fanguis; is tecum calefitrit primum quidem ac maxime
+<lb/>arteriarum et venarum tunicas; mox vero , quae extra has
+<lb/>simt, omnia; quibus circumfunditur. Ita duorum alterum
+<lb/>tequi necesse est, ut, si fluxio vicerit, corruptio loquatur
+<pb n="7.738"/>
+<lb/>victorum corporum; sin fluxio victa fit, ut musculus ad
+<lb/>naturalem statum redeat Vincatur igittun prius fluxio , tu-tuis
+<lb/>enim est a - potentioribus curationem exordiri., .duplex
+<lb/>hic .erit medendi modus, quum. vel discussus suerit totus,
+<lb/>qui decubuit, humor, vel concoctus. Verum discussio
+<lb/>optanda maxime curatio est; concoctionem autem haec .duo.
+<lb/>necessario sequuntur, puris generatio et abscessus. Abscedit
+<lb/>aliquando lu- caritatum proxime accubantium tum maximam
+<lb/>tum abiectissimam, qui sane abscessuum optimus.
+<lb/>est; interdum in maximam, non tamen abiectam ; .velim
+<lb/>abjectam, sed non maximam. Quibus igitur <hi rend="u">in</hi> ventrem
+<lb/>siuxus abscedit, abscessu um is optimus est, qui in internam
+<lb/>ejus amplitudinem abiit,. in quam etiam plerumque erumpunt;
+<lb/>pravus vero, qui iuniperi tona eunt- Ita vero quibus
+<lb/>in cerebrum, bonus est, qui in anteriores ejus ventriculos.
+<lb/>abfeedit, pravus, sub meningas; et qui in posticum ejus:
+<lb/>ventriculum sertum Costarum veno abscessus in thoracis
+<lb/>capacitates erumpunt; musculorum, sub cutem; vifcerunr,
+<pb n="7.739"/>
+<lb/>vel in arterias et venas, quas in se continent, vel in
+<lb/>membranam ambientem , quae tanquam culis quaedam vifceribus
+<lb/>ipsa est. At si victae a fluxione corporis partes
+<lb/>fuerint , in tantam nimirum intemperiem devenient , ut inde
+<lb/>tum earum pereat actio, tum ipsae temporis spatio cornuapantur;
+<lb/>desinent autem tum primum dolere, quum mutatrici
+<lb/>qualitali fuerint assimilatae ; non enim quum mutata est
+<lb/>temperies, sed quum mutator, partes dolent, quemadmodmu
+<lb/>et praeclarus effatur Hippocrates : Dum enim alterat
+<lb/>ur ac corrumpitur natura, dolores fiunt. Asseratur autem
+<lb/>ac corrumpitur cujusque natura, quum veI calefit, vel
+<lb/>refaigeratur , vel siccatur, vel humectatur, vel ejus consinuum
+<lb/>solvitur. In intemperiebus quidem inaequalibus a
+<lb/>calore et frigore potissimum contractis, hae namque efflcacissi
+<lb/>m ae sunt qualitates , deinde vero a siccitate et humidilate ;
+<lb/>ab inedia vero vel sili , quod hic humida , illic sicca
+<lb/>substantia deficiat; a vulnerantibus, erodentibus, tendentibus,
+<lb/>prementibus , et lacerantibus , quod continuitas solvatur.
+</p>
+<pb n="7.740"/>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Itaque fi calor sanguinis in parte phlegmane
+<lb/>laborante mitis sit, et qui sanguis in universo animalis
+<lb/>corpore conlinetnr) moderatam sortiatur temperiem, nequaquam
+<lb/>perfacile una cum affecta parte calefit; si vero ferveat
+<lb/>fanguis vehementius , vel si per totum animalis corpus
+<lb/>biliosus fuerit, illico totus incalescit; multo vero magnt
+<lb/>quum ambo concurrerint , ut et qui fanguis in phlegmon^
+<lb/>conlinetnr, admodum calidus sit, et qui in toto est annumte,
+<lb/>biliofus. Incalescit autem prius qui in arteriis est simanis,
+<lb/>quod is tum natura calidior, tum vero magis spiritalis
+<lb/>Iit; deinde vero esiam qui in venis est. Quod si pars assinis
+<lb/>visceribus sanguine scatentibus obsessa phlegmone fuerih
+<lb/>etiamnum celerius cmn eo universus animalis sanguis iucslefcit ;
+<lb/>unoque verbo , a quocunque calefaciente quicquid stcilo
+<lb/>alterari potest, aut natura est calidum , primum excalefit;
+<lb/>quemadmodum et ab eo quod refrigerat, quicquid
+<lb/>cile alterabile est, veI natura frigidum, id primum rescit
+<lb/>ratur. Ac promptus quidem ad asserendum spiritus
+<pb n="7.741"/>
+<lb/>quod ex tenuissimis constet partibus. Calidissima natura est
+<lb/>flava bilis, frigidissima vero pituita. Reliquorum humorum
+<lb/>sanguis post flavam bilem calidus est, sicut atra bilis
+<lb/>post pituitam frigida. Quin etiam asseratur flava bilis levi
+<lb/>momento a quovis in eam agente; nigra aegre atteratur.
+<lb/>Uno verbo, quicquid tenuium est partium, id prompte alteratur;
+<lb/>contra quod crassarum est partium, difficilem subit
+<lb/>alterationem. Quare multiplices in phlegmonis alterationes
+<lb/>oboriri necesse est, quod multifariam affecta sint corpora.
+<lb/>Primum namque humor, qui phlegmonem excitat, magis
+<lb/>minusve calidus est ; deinde ipsius putrefactio pro ipsius natura
+<lb/>incidit; non minime vero, prout is magis minusve
+<lb/>impactus est. Quae namque non perflantur, celerius putrescunt,
+<lb/>ut et externis accidit omnibus; caeterum quum
+<lb/>calida temperamento sunt et humida, tum utique polistimum
+<lb/>putrenI. Jam pars ipsa phlegmone laborans, vel prope,
+<lb/>vel longe sita est a mulli sanguinis visceribus ; totusque
+<lb/>sanguis vel biliosus est, vel melancholicus, vel pituitosus,
+<lb/>vel statulentus, atque haec omnia magis minusque ; unare
+<pb n="7.742"/>
+<lb/>necesse est multiplices fieri alterationes , sive alterum alteri
+<lb/>sit coliatum, sive idem sibi.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Hae omnes intemperies corporis inaequales
+<lb/>fiunt , maxime quidem inflammato eo qui in phlegmone
+<lb/>est sanguine ; deinde eo qui in visceribus et corde continetur,
+<lb/>eoque potissimum qui in sinistro est ejus ventriculo, in
+<lb/>quem, ut in administrationibus anatomicis scriptum est, si
+<lb/>vivo etiam animante, nec adhuc sebricitante , digitos vehs
+<lb/>conjicere, vehementissimum senties calorem. Non itaque
+<lb/>absurdum est, ubi totum corpus praeter naturam incalescit,
+<lb/>hunc maxime ventriculum ad summum calorem pervenire,
+<lb/>etenim tenuissimum maximeque spirituosum sanguinem habet,
+<lb/>perpetuoque movetur. Verum his in febribus omnibus
+<lb/>calefit quidem interdum universus jam sanguis, qui caIorem
+<lb/>illum praeter naturam ex humorum putredine abortum
+<lb/>concepit; non tamen aut arteriarum, venarumve tumcae,
+<lb/>aut aliud ullum circumjacentium corporum prorsos
+<lb/>jam temperamentum suum mutavit, sed adhuc mutatur^ atque
+<pb n="7.743"/>
+<lb/>incalescens asseratur. Quod si longiori tempore hoc
+<lb/>patiatur, etiam vincetur aliquando, prorsu aque mutabitur,
+<lb/>ita ut non amplius calefiat, sed jam sit praeter naturam
+<lb/>calefactum. Terminus autem alteralionis cuique partium
+<lb/>est functionis ipsius laesio ;. ad quem usque terminum latitudo
+<lb/>reditus est in id quod praeter naturam est, vetuli mixtum
+<lb/>communeque ac medium quiddam ex contrariis utrisque
+<lb/>conflatum , ipso , qui fecundum naturam prorsus est,
+<lb/>affectu, et eo qui jam plane est praeter naturam. Hoc
+<lb/>toto tempore corpus incalescens, alteralionis magnitudini
+<lb/>proportione respondentem habet dolorem. Quum vero
+<lb/>omnes corporis solidae partes absolute incaluerint, ejusmodi
+<lb/>febris hectica vocatur , ceu quae non amplius in humoribus
+<lb/>et spiritibus solum, sad jam et in corporibus habitum habentibus
+<lb/>contineatur ; doloris autem est expers, et qui ea febricitant,
+<lb/>omnino fe non febricitare augurantur; non enim
+<lb/>sentiunt calorem , omnibus eorum partibus aeque calefactis.
+<lb/>Sed et convenit de his inter naturalis scientiae professores
+<pb n="7.744"/>
+<lb/>in iis , quae de sensibus produnt. Neque enim citra alterationem
+<lb/>est. lenius;neque in jam perfecte alteratis dolor.
+<lb/>Itaque etiam hecticae febres omnes tum doloris tum sensus
+<lb/>ipsis laborantibus omnino expertes sunt. Non enim etiamnum
+<lb/>ex eorum partibus haec agit, illa patitur, quum omnes
+<lb/>iuter se jam similes sint redditae ac unicam habeant
+<lb/>consentientem temperiem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Quod si eurum partium alia caliuior.suerit,
+<lb/>alia frigidior, fed eatenus calidior, vel frigidior , ut
+<lb/>vicinam non laedat; alioqui ita partes secundum naturam
+<lb/>se habentes mutuo sese laederent, ut quae ipsis temperamentis
+<lb/>dissideant. Caro namque calida pars est, os frigidum.
+<lb/>Verum tam harum partium, quam reliquarum omnium,
+<lb/>exuperantiae metro doloris est expers inaequalitas.
+<lb/>S10 itaque ambiens nos aer prius haud laedit, quum ad.immoderatum
+<lb/>calorem frigusque fuerit immutatus ; cujus. eas
+<lb/>quaelir messio sunt differentias, tametsi permultas ac. manifestum
+<lb/>excessum inter fe habentes,, citra laesionem senti-.
+<lb/>mus. Unde ex sus periclitatur et oratio illa habere aequitatem,
+<pb n="7.745"/>
+<lb/>ut alicubi et Hippocrates ait, proferens omnes morbas
+<lb/>este ulcera; continuitatis namque solutio ulcus est.
+<lb/>Immoderatus vero calor ac frigus^ proxime accedunt , ut
+<lb/>unitatem solvant; multus quidem calor, dum segregat ac
+<lb/>incidit substantiae continuitatem; summum vero frigus, tum
+<lb/>cogendo, tum introrsum pariter trudendo quaedam exprimit,
+<lb/>quaedam collidit. ..Atque. hunc quispiam terminum
+<lb/>caloris ac frigoris immoderationem statuens, fortassis. non
+<lb/>ultra modum fe percipere duxerit. Seu vero is, feu estus
+<lb/>quidam immoderationis terminus fit, certe consistere omnem
+<lb/>immoderationem in habitudine ad aliquid, jam liquet. Non
+<lb/>enim eodem modo a calidis frigidisve afficitur omne corpus;
+<lb/>ob idque animalium quaedam familiares sibi invicem
+<lb/>succos habent , quaedam non folum non familiares , fed
+<lb/>etiam exitiales; quemadmodum homo atque vipera, quorum
+<lb/>utriusque saliva alteri est perniciosa; ita quoque et scorpium
+<lb/>necaveris, si jejunus isti infpueris. At non homo hominem
+<lb/>morsu interimet, nec xipera viperam, nec. aspis
+<lb/>aspidem. Quod .enim sunile est,. id familiare amicumque
+<pb n="7.746"/>
+<lb/>estr quod con tr anum, id inimicum ac noxium. Augentur
+<lb/>enim ac nutriuntur omnia a similibus; perimuntur vero ac
+<lb/>corrumpuntur a contrariis. Itaque esiam sanitatis confervatio
+<lb/>similibus perficitur; morborum eversio contrarii^
+<lb/>Verum de his alius est sermo. Hecticam vero illam febrem,
+<lb/>quae jam habitum animalis occupavit, minime sensit qui ea
+<lb/>laborat; reliquas febres nemo non sentit; sed aliae magi^
+<lb/>aliae minus aegrotantibus sunt graves. Ipsarum nonnullae
+<lb/>rigorem invehunt; fit enim id quoque symptoma, quemad^
+<lb/>modum alia multa, ab inaequali intemperie. Modum tamen
+<lb/>ejus generationis in praesenti libro tradere non datur,
+<lb/>priusquam de naturalibus facultatibus demonstratum su eri b
+<lb/>quot et quales sint, tum quid agere quaeque nata sit. Verum
+<lb/>in libris de symptomatum causis de omnibus agetur</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">At rurfum ad inaequalis intemperiei differentias
+<lb/>revertor; nam quemadmodum ex phlegmone scr
+<lb/>bris oriatur, tum quod phlegmone omnis ac febris ornus,
+<lb/>praeter hecticas appellatas, ex morbis sint, quibus inaequaIis
+<pb n="7.747"/>
+<lb/>sit intemperies, jam dictum est. Accenditur autem feluis
+<lb/>et citra phlegmonen , ex solis humoribus putrescentibus.
+<lb/>Non enim quae obstruuntur et quae non perflantur,
+<lb/>solum putrescunt, verum haec celerrime ac potissimum;
+<lb/>sed esiam putrescunt alia multa, quae putredini sunt obnoxia.
+<lb/>Dicetur vero de horum opportunitate alio loco.
+<lb/>Jam alio quoque modo inaequalis erit intemperies in toto
+<lb/>corpore, interdum suliginosa difflatione suppressa, interdum
+<lb/>ab exercitalionibus motoribus vel laboribus calorem
+<lb/>adaugentibus, interdum ab ira, quum sanguis immoderalius
+<lb/>servet, vel quum ob deustionem quamvis externam incalescit.
+<lb/>Porro, quod etiam his in omnibus sebribus, quemadmodum
+<lb/>et in phlegmonis prius dictum est, tum pro essicientis
+<lb/>causae viribus, tum pro corporis ipsius affectu, alii
+<lb/>magis, alii minus, alii haudquaquam fabrici tent, apertum
+<lb/>esse arbitror. Peraeque vero, et quod intemperies ipsa
+<lb/>nonnunquam solam spirituum invadat substantiam, nonnunquam
+<lb/>ipsos etiam humores , clarum id quoque non minus
+<lb/>esse reor . et quod omnibus hujusmodi febribus diuturnis
+<pb n="7.748"/>
+<lb/>hectica vocata superveniet. .Iamque sermo noster propemodum
+<lb/>ostendit inaequalem hanc intemperiem aliquando ex
+<lb/>calida lrigidave substantia, quae in pastam aliquam influat,
+<lb/>accidere, quemadmodum in inflammatis dictum est; saepe
+<lb/>vero non ita , sed ipsa corporis temperie in qualitate mutata;
+<lb/>tum quod alterantimn eam quaedam ortum habent ab
+<lb/>ipso corpore, quaedam extrinsecus; utique, quum ex putredine
+<lb/>tantum aliqua vel phlegmone excitatur febris, ab
+<lb/>ipso corpore; quum ah ustione vel exercitatione, extrinfecns.
+<lb/>Dicetur autem et de his fusius rursum in morborum
+<lb/>causis. Quemadmodum autem ex deditione febris accenditur,
+<lb/>alterato corporis temperamento: ita nonnulli saepe ex
+<lb/>frigore rescigerali toto corpore vehementer sunt, aliqui vero
+<lb/>esiam interierunt. .lam quod lu omnes esiam doleant,
+<lb/>nec id quidem lamet.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">At vero dolent et qui ab arduo frigore
+<lb/>vehementer perfrigerati celeriter sese excalefacere properarunt
+<lb/>, multique eorum quum subito ac simul manus igni
+<lb/>admoverunt, ingentem circa unguium radicem dolorem senfiunt.
+<pb n="7.749"/>
+<lb/>Deinde quisquam , quum tam luculenter videat inaequalem
+<lb/>intemperiem doloris esse causam , esiam de interrus
+<lb/>doloribus dubitat , aut miratur quo pacto citra phlegmanem
+<lb/>saepenumero, vel colo intestino, vel dentibus, vel
+<lb/>alia quavis parte homines doleant? Nam nihil talium asa
+<lb/>fectuum mirabile est, nec quemadmodum simul rigeant et
+<lb/>febricitant aegrotantium aliqui. Etenim si pituitosus humor
+<lb/>frigidus, quem Praxagoras vitreum a ppeliat, et bilis
+<lb/>amara et calida simul abundent et per sensibilia corpora
+<lb/>membra moveantur , nihil mirum est utrumque ab aegroto
+<lb/>pari modo sentiri. Neque enim si hominem sub sole calido
+<lb/>statuas et aquam illi frigidam infundas , fieri non potest,
+<lb/>ut simul et a sole calorem et ab aqua frigus sentiat. Verum
+<lb/>hic ambo extrinsecus funt, et magnis porlionibus incidunt;
+<lb/>in febribus vero epialis, tum internis, tum exiguis
+<lb/>porlionibus, ob idque universum corpus ambo sentire videtur.
+<lb/>Quum enim tenuissimis portiunculis aspersum per
+<lb/>corpus tum calidum sit tum frigidum , nullam sensibilem
+<lb/>alterius portiunculam ita parvam defunde, in qua non alterum
+<pb n="7.750"/>
+<lb/>sit comprehensam. ln ipsa tamen accessionis invasisne
+<lb/>nonnulli febricitantium tum Iugent, tum sitiunt, tum
+<lb/>ambo sentiunt frigus immoderatum et calorem, verum non
+<lb/>eodem loco ; nam possunt excalefactas partes a refrigeratis
+<lb/>manifeste discernere ; nam intus et in ipsis visceribus calorem
+<lb/>sentiunt, in externis partibus universis frigus. Tales
+<lb/>etiamnum perpetuo sunt febres quae lipyriae vocantur, et
+<lb/>quoddam ardentium febrium perniciosum genus. Quod igitur
+<lb/>in his majoribus portionibus accidit, hoc in epiasis
+<lb/>confingit minutis. Inaequalis namque est et harum febrium
+<lb/>intemperies; sed inaequalis quoque reliquarum omnium,
+<lb/>exceptis appellatis hecticis. Quin esiam rigentibus, nec febricitantibus
+<lb/>inaequalis intemperies est; rarum enim est id
+<lb/>symptoma ; incidit tamen prorsus tum mulieribus tam quibusdam
+<lb/>aliquando viris. Debet autem omnino deses praecessisse
+<lb/>vita, aut certe ciborum copiam longiore spatio homo
+<lb/>sumpsisse, ex quibus tardus, frigidus, crudus et pinsitoIus
+<lb/>nascatur humor, qualem Praxagoras vitreum existimat.
+<pb n="7.751"/>
+<lb/>Antiquitus autem nemo, ut videtur, ita est affectus, ut qui nec
+<lb/>adeo ociosi, nec in victus saturitate viverent; indeque factum
+<lb/>est, ut scripserint antiqui medici Rigorifebrem supervenire.
+<lb/>Verumtamen tum nos ipsi, tum alii j uni o ru m medicorum
+<lb/>non pauci, saepenumero vidimus rigorem quem
+<lb/>nulia febris sequuta sit. Componitur autem ex hac intemperie
+<lb/>et ea quae sebrscitanlium est epiala; appello ita febrem
+<lb/>iliam, cui ambo semper accidunt; at in qua rigor quidem
+<lb/>praecedit, febris vero sequitur, ut in tertianis et quartanis
+<lb/>, hanc epialam non voco. Proinde ex duplici inaequali
+<lb/>intemperie epiala complicatur, et aliae febres, praeter
+<lb/>hecticas, prope omnes.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Eodem modo qui partis alicujus cum tumore
+<lb/>funt morbi, hi quoque omnes peraeque ac phlegmone
+<lb/>cum inaequali intemperie consistunt, cancer, erysipelas, carbunculus,
+<lb/>herpes, oedema, phagedaena, gangraena. Nam
+<lb/>his omnibus est commune, ut ex humorum fluxione sint
+<lb/>orta; in eo dissident, quod alii ex pituitoso, alii ex bilioso,
+<pb n="7.752"/>
+<lb/>vel melancholico humore; alii ex sanguine, vel calido et
+<lb/>tenui et bulliente , vel frigido et crasso,. vel alio modo assectu
+<lb/>fiant ; de horum namque specialibus differentiis accurate
+<lb/>alibi declarabitur. Quod ad praestentem disceptationem pertinet,
+<lb/>hoc tantum dixisse abunde est, quod qualiscunque fit
+<lb/>fluxio, eadem ratione quemque praedictorum affectuum creet,
+<lb/>qua prius ex calida et sanguinea phlegmonem gigni monstravimus;
+<lb/>quodque etiam sunilarium ac simplicium primornmque
+<lb/>corporum singula; a fluxione affecta, ad inaequalem
+<lb/>intemperiem deveniunt; caeterum extrinsecus pro rhenmatis
+<lb/>ratione, calefacta, refrigerata,. siccata, vel humectata,
+<lb/>ad profundum usque nondum similiter affecta. Quod si
+<lb/>tota per. tota mutata alterataque sint, fiunt quidem illico a
+<lb/>dolore libera; in difficiliori tamen sic constituta sunt statu.
+<lb/>Haec praenovisse. iis .qui opus de medicamentis sunt percepturi
+<lb/>et. post id medendi methodum , abunde mihi latis
+<lb/>ridetur.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

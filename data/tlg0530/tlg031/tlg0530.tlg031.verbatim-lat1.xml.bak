@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De succedaneis</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg031.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Pseudo-Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">19</biblScope>
+              <biblScope unit="ed2vol">13</biblScope>
+              <biblScope unit="pp" from="721" to="747">721-747</biblScope>
+              <date>1830</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">13</biblScope>
+              <biblScope unit="pp" from="965" to="973">965-973</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x08">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg031.verbatim-lat1">
+<pb n="19.721"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="19.721"/>
+
+
+
+<p rend="indent">Quum de succedaneis medicamentis tractatum tum
+<lb/>Diorcorides tum uaxime Philistio et Euryphon construxecin
+<lb/>t, age nos quoque de his pauca dicamus. Ea vero
+<lb/>vocamus succedaneal medicamenta, quae .lu aliorum Iocum
+<lb/>succedunt. De his namque utilis erit ferino iis praecone
+<lb/>qui artis operibus incubuerunt, ac certas neque contemnendas
+<lb/>moliuntur morborum curationes. Multi siquidem
+<lb/>medici medicamentis ad aegros curandos idoneis plerumque.
+<pb n="19.722"/>
+<lb/>indigentes aliena quaedam, neque eandem, quae idoneis
+<lb/>inest, facultatum rationem servantia ingerunt; Atque
+<lb/>eos decet ne ru hujusmodi incidant absurda, de simplicium
+<lb/>medicamentorum facultatibustractationem speculari. Quod
+<lb/>si neque: eam ediscant neque animum propositis rebus intentum
+<lb/>praebeant, in curationibus jure falluntur. Tibi
+<lb/>vero, Diogenrane, veritatis amatori, medicamentorum faunitates
+<lb/>ediscere volenti, paucis explicatis ab iis quae
+<lb/>praeposita sunt exordiar. Erit autem mihi oratio vera ad
+<lb/>te in memoriam revocanti id quod olim mihi contigit
+<lb/>Alexandriam Quum .enim illuc accederem r statim mulier
+<lb/>ad me jam moritura fe .contulit; vehementi. affecta morbo,
+<lb/>cujus narrationem proferre nunc haud propositum est.
+<lb/>Quum autem lyehnidem. quaererem , ut opportunum illi
+<lb/>remedium conciliarem., nisi statim- acanthii semen reperis-^
+<lb/>stem, interiisset derepente . mulier. Verum ut repertum- est
+<lb/>lychnidi analogum succedaneum , quamprimum eo sum
+<lb/>usus quod ad idem convenit. At sequenti die nonnulli
+<pb n="19.723"/>
+<lb/>medicorum, qui prius illam curaverant, accedentes opporlunum
+<lb/>optabant medicamentum audire. Statim igitur auMentes
+<lb/>rogarunt, ut illis de fuccedaneis opus a me ferioeretur.
+<lb/>Incipiamus itaque ab iis quae- praeposuimus, ex
+<lb/>praedicta specie facientes operis initium. ldqueetiam
+<lb/>fecundum literarum ferrem, ut quidam volunt, sacramus. .</p>
+<p>A. s</p>
+<p>Pro acanthii semine , Iychnidis -femen.
+<lb/>pro abrotono; origanum.
+<lb/>pro agallocho, centaurium.</p>
+<p>pro agarico, epithymum vel euphorbium.</p>
+<p>pro agria staphide, dactyli^ Syriaci.
+<lb/>pro anchusa, hyacinthus.</p>
+<p>pro .empervivo, folia veI succus lactucae.</p>
+<p>pro populi gemmis, sampsuchus. pro
+<lb/>acacia, lentisci succus.
+<lb/>pro spina; acanthi siliquae.
+<pb n="19.724"/>
+<lb/>pro acanthi siliquis, spina.</p>
+<p>pro aconito; iridis agrestis radix.</p>
+<p>pro acoro, asari radix.</p>
+<p>pro fambuco , glaucium vel. stercus oris.</p>
+<p>pro.sambuco herba, fpina vel acanthi siliquae.</p>
+<p>pro halicacabo , dorycnii vel solani femen.</p>
+<p>pro fala ammoniaco, far Cappa docicu ur.</p>
+<p>pro tale Cappadocico, sal ammoniacum.</p>
+<p>pro falis flore, tandaracha.</p>
+<p>pro aloe, fimus ibis.</p>
+<p rend="hanging">pro aloe Iudica, aloes viridis folia, glaucium , lycium vei
+<lb/>centaurium. .<space type="tab">    </space>-- oo -</p>
+<p>pro axungia vulpina, axungia ursina:. r .</p>
+<p>pro ameos, anitum.</p>
+<p>pro amianto, aphrofelinum.</p>
+<p>pro amylo, gyris sicca.</p>
+<p>pro amygdalis amaris, absinthium.<space type="tab">    </space>. ; - -</p>
+<p>pro ammoniaco suffitu, propolis.
+<pb n="19.725"/>
+<lb/>pro amomo, acorus.</p>
+<p rend="indent">pro aniso , daucus.</p>
+<p rend="indent">pro araco, sesa num.</p>
+<p rend="indent">pro argemone, seriphium.</p>
+<p rend="indent">pro aristoIochia, clematis arida.</p>
+<p rend="indent">pro aristolochia rotunda , aristolochia longa.</p>
+<p rend="indent">pro junsperi baccis, cyperus.<space type="tab">    </space>t</p>
+<p>pro ruta sylvestri, cardamomum Babylonicum,
+<lb/>pro Armenio lapide, atramentum Indicum.
+<lb/>pro arse n ico , sandaracha.</p>
+<p rend="indent">pro aromatico, calamus odoratus.</p>
+<p rend="indent">pro asaro, zingiber.</p>
+<p rend="indent">pro asbesto, spina quae injicitur in tinctoria.</p>
+<p rend="indent">pro asbesto qui calx viva dicitur, adarces.</p>
+<p rend="hanging">pro Asto lapide , gagates lapis vel sal ammoniacus vel
+<lb/>sandaracha.</p>
+<p rend="indent">pro aspalatho, erices fructus aut viticis semen.
+<pb n="19.726"/>
+<lb/>pro ulphalto, bitumine, pix liquida bruttia vel terra
+<lb/>ampelitis.</p>
+<p>pro asphodelo, succus betae.</p>
+<p>pro absinthio, abrotonum.</p>
+<p>B.</p>
+<p>Pro balaustio,. hypoeistis vel malicorium.</p>
+<p>pro balsamo, albae violae radix.</p>
+<p>pro balsami fuero, myrrhae succus.</p>
+<p>pro bdellio, calamus. odoratus.</p>
+<p>pro besica, semen rutae fylvestris vel domesticae.</p>
+<p>pro bupresti, vermes pacarit vel hirudo.</p>
+<p>pro butyro ,- lac bubulum concretum.</p>
+<p>pro bryonia, aiaci radix.</p>
+<p>pro bruttia pice, coquatur communis cum aceto.</p>
+<p>C.</p>
+<p>Pro gentiana, helenium vel petroselini radix.
+<pb n="19.727"/>
+<lb/>pro gentianae radice, apii odorati radix, quod est petrosa.linum
+<lb/>vel rhaedon, quod helenium esu ...ec.</p>
+<p>pro terra molli vel ampelitide , plumbago.</p>
+<p>pro terra stellari , terra cimelia.</p>
+<p>pro terra Eretria , calx Thebaica.</p>
+<p>pro terra Cretica, terra Eretria..</p>
+<p>pro terra Megarica, aloes spuma.</p>
+<p>pro terra Samia, leucographis Aegyptia.</p>
+<p>pro pulegio, hyssopum.</p>
+<p>pro glycyrrhizae succo , mori succus vel saccharum.</p>
+<p>pro rapa, heliotropii herbae fructus.</p>
+<p>pro stercore vulturis , columbae stercus.</p>
+<p>D.</p>
+<p>Pro damasonio, carpesium aut calamintha vel eryngium.
+<lb/>pro dauci semine, sii semen.</p>
+<p>pro lauri baccis, serpillum aridum.
+<pb n="19.728"/>
+<lb/>pro dictamno,,- pulegium vel saluia.</p>
+<p rend="hanging">pro diphryge, misy crematum vel lapis pbrygius vel aes
+<lb/>ustum vel lapis pyrites.</p>
+<p>pro dorycnioyalterci vel saluiae semen.</p>
+<p>pro dracontio, arum!</p>
+<p>E.</p>
+<p>Pro ebeno , loti arboris lignum.</p>
+<p>pro obiici radice, radix papyri vel mori folia.</p>
+<p>pro olivae lacryma, hypocrstidis iuncus.</p>
+<p>pro olivae Aethiopicae lacryma, acaciae duplum.</p>
+<p>pro oleo cicino, laurinum aut vetus oleum.</p>
+<p rend="hanging">pro oleo vetere, sicyouium, olei duplum, adeps porcina
+<lb/>vetus, duplum oleum coque cum axungia porci veteris.</p>
+<p>pro oleo rosaceo , oleum cydoneum.</p>
+<p>pro oleo pauco, fractos oleae ramulos teneros oleo impone.</p>
+<p>pro oleo chamaemeliuo, oleum rosaceum.
+<pb n="19.729"/>
+<lb/>pro oleo rhaphanino , oleum cicinum.</p>
+<p>pro elaterii succo , porri furiens ficus que succus.</p>
+<p>pro cervino adipe, suillum.</p>
+<p>pro taleis, calanm.tha.</p>
+<p>pro elleboro nigro; struthii aut papyri radix.</p>
+<p>pro enula, costus.</p>
+<p>pro novemfolio , colocynthidis femen vel potamogeton.</p>
+<p>pro epithymo, colocynthidis semen.</p>
+<p>pro faba freta, struthium.</p>
+<p>pro erice , galle immatura vel- omphaeitis.</p>
+<p>pro ericis fructu , hedera immatura.</p>
+<p>pro erini loliis, mori folia ver stercus ibis.</p>
+<p>pro serpyllo, potamogeton vel pyrethrum.</p>
+<p>pro irione, faba fresa vel struthium
+<lb/>pro erucae femine , erysimi femen.
+<lb/>pro eupatorio, chamaepitys.</p>
+<p>pro euphorhio, stercus palumborum vel agaricum.
+<pb n="19.730"/>
+<lb/>Z.</p>
+<p>Pro zingibere, pyrethrum. ,o m:</p>
+<p>H.</p>
+<p>Pro mentha, calaminthe.</p>
+<p>pro heliotropii semine, rapae semen.</p>
+<p>Θ. Th.</p>
+<p>Pro thapsia , cardami vel erucae femen.</p>
+<p>pro thapsiae succo, chamaeleonis nigrisuccus vel elydrium.</p>
+<p>pro thermuntiade , glycophyllum. .</p>
+<p>pro sulfure vivo, fandaracha.</p>
+<p>pro lactuca, intybus.</p>
+<p>Ι.</p>
+<p>Pro visco quercino, chamaeleon niger.</p>
+<p>prt ferri rubigine , argenti spuma vel scoria ferri.</p>
+<p>pro aeris aerugine, fel vulturis vel perdicis.
+<pb n="19.731"/>
+<lb/>pro equitem, chamaepitys.</p>
+<p>pro iride Illyrica , hel eurum odoratum.</p>
+<p>K.</p>
+<p>Pro cadmia , Ieucographis Aegyptia.</p>
+<p>pro calamo aromatico, sphagnus.</p>
+<p>pro calaminthe, sylvestris mentha.</p>
+<p>pro callicero, faenugraecum.</p>
+<p>pro cantharidibus , .phalangia.</p>
+<p>pro capparis radice , erieae radix aut myricae.</p>
+<p>pro cardamomo, xylocarpasum vel cyperis ammoniaca.</p>
+<p>pro cassia, manna, cinnamomum duplum vel labina.</p>
+<p rend="hanging">pro castorio , agallochum vel silphium vel vermis panarii
+<lb/>visicera.</p>
+<p>pro canchry, lauri baccae vel pyrethrum.</p>
+<p>pro cedria, baccae cedri.</p>
+<p>pro cedri baccis, ladanum.</p>
+<p>pro ceraunio, Ieucographis.
+<pb n="19.732"/>
+<lb/>pro cornu cervi, cornu caprinum.</p>
+<p rend="indent">pro cera, faba fresa cum propoli cocta et trita.</p>
+<p rend="indent">pro muricibus, ostrea.</p>
+<p rend="indent">pro citi ricino, sordes a palaestrae</p>
+<p rend="indent">pro galla, myricae fructus.</p>
+<p rend="indent">pro cinnabari, rosei pastini.</p>
+<p rend="hanging">pro cinnamomo , rutae sylvestris duplum triplumve et
+<lb/>melius facit cinnamomo; vel thuris cornicis tantundcm
+<lb/>vel cypereos Atticae tantundem vel calliae fistolae
+<lb/>duplum vel sabinae duplum.</p>
+<p rend="indent">pro pumice, terra Cretica.</p>
+<p rend="indent">pro hederae succo, succus Persicus.</p>
+<p rend="indent">pro clinopodio, heliotropium.</p>
+<p rend="indent">pro cnidospermo, conii semen.</p>
+<p rend="indent">pro carthami semine , viticis femen.</p>
+<p rend="indent">pro colocynthide, cici seu ricini semen.</p>
+<p rend="indent">pro colophonia pice, pix navibus abrasa.</p>
+<p rend="indent">pro comare , ammoniacus suffitus.
+<pb n="19.733"/>
+<lb/>pro stercore aeluri, ichneumonis stercus.</p>
+<p>pro vulturis stercore, columbi stercus.</p>
+<p>pro stercore lupi , canis stercus.</p>
+<p>pro stercore turturis, stercu columbi.</p>
+<p>pro corallio, symphytum vel moly.</p>
+<p>pro costo, ammoniacum, cedri fructus, helenium.</p>
+<p>prro cotyledone, onocardium vel anagallis.</p>
+<p>pro crinanthemo , lilio, aphrodisium, acorus.</p>
+<p>pro croco, crocomagma.</p>
+<p>pro crocomagmate, aloe Indica vel agallochum Indicum.</p>
+<p>prro crocodili adipe , canis marini adeps.</p>
+<p>pro cumino, brassicae femen.</p>
+<p>prro cumino Aethiopico , melanthium.</p>
+<p>pro canirubo, halicacabi semen.</p>
+<p rend="hanging">pro cyperi, iuniperus magna, juniperi baccae vel cardamomum.
+<lb/></p>
+<p>pro cyphi , carica usta.</p>
+<p>pro cicuta , coriandri vel psyllii semen.<pb n="19.734"/>
+<lb/>Pro lepore marino , concha fluvialis vel lepus fluvialis.</p>
+<p>pro ladano, sampsuchum</p>
+<p>pro lathyride, granum cnidium.</p>
+<p>pro lapathi radice, radix pyrethri vel cynarae.</p>
+<p>pro lepidii radice, folia capparis.</p>
+<p>pro lepidio, rubra.</p>
+<p>pro leucini flore. struthium.</p>
+<p>pro temnio sigillo , fandaracha.</p>
+<p>pro libano i. e. thure, terra ampelitis.</p>
+<p>pro thuris cortice , manna thuris.</p>
+<p>pro Iibathro , tractylus.</p>
+<p rend="hanging">pro lapide Asto, lapis gagates, caprae stercus vel sal ammoniacus
+<lb/>crematus vel fandaracha.</p>
+<p>pro lapide magnete, lapis Phrygius.</p>
+<p>pro lapide onychite, lapis achates.</p>
+<p>pro lapide pyrite, lapis pyrobolus.
+<pb n="19.735"/>
+<lb/>pro lapide Phrygio , lapis argyrites vel pyrites.</p>
+<p>pro lapide achate, lapis sardonyx.</p>
+<p>pro lapide Chalcedonio, cyaneus.</p>
+<p>pro lapide hyacintho, lapis beryllus.</p>
+<p>pro lapide smaragdo, lapis iaspis.</p>
+<p>pro lapide spongo, lapis selectus.</p>
+<p>pro lini semine , fabae suCcust.</p>
+<p rend="hanging">pro ligustici semine, radix ligustici Vel semen pastinacae
+<lb/>vel sii.</p>
+<p>pro lychnide, acanthii semen.</p>
+<p>pro loti semine , betae semen.</p>
+<p>M.</p>
+<p>Pro magnete vitreo, spuma Halica.</p>
+<p>vj.o magnete, lapis Phrygias vel haematites.</p>
+<p rend="hanging">aro malabathro, cassia rotunda Vel spica nardi v^I tractylus
+<lb/>vel spica Indica.</p>
+<p>Jro malva, soenu graecum.
+<pb n="19.736"/>
+<lb/>pro mandragora, olivae lacryma.</p>
+<p rend="indent">pro mandragorae succo, dorycnium.</p>
+<p rend="indent">pro manna, thuris cortex.</p>
+<p rend="indent">pro mastiche, lentisci caulis vel terebinthina.</p>
+<p rend="indent">pro meliloto , lotus sylvestris.</p>
+<p rend="indent">pro melle, sapa.</p>
+<p rend="indent">pro mendefio vino , vinum Italicum.</p>
+<p rend="indent">pro papavere, mandragorae succus.</p>
+<p rend="indent">pro malis cydoniis , melilotum.</p>
+<p rend="indent">pro meo , myrobalanum</p>
+<p rend="indent">pro mily usto, diphryges.</p>
+<p rend="indent">pro misy Cyprio , ochra Cypria.</p>
+<p rend="indent">pro misydio , ochra.</p>
+<p rend="indent">pro moIybdaena, lithargyrus.</p>
+<p rend="indent">pro plumbo cremato , cerasa.</p>
+<p rend="indent">pro mori succo, rubi solia.</p>
+<p rend="indent">pro meduIIa cervi, edeps cervi vel medulla vituli.
+<lb/>pro medulla vituli, oesypuS Vel medulla cervi.
+<pb n="19.737"/>
+<lb/>pro muscerda ,- muscae aequalia.
+<lb/>pro myrobalano, peucinum vel glaucium.
+<lb/>pro myrfinite , succus mori vel rhodacinh
+<lb/>pro myrtino oleo, lentiscinum vel cydoniorum.</p>
+<p>N.</p>
+<p>Pro napy, cardami aut rapi semen.
+<lb/>pro napyos semine, rapi semen.
+<lb/>pro nardo Syriaca, juncus odoratus aut schoenanthost
+<lb/>pro nardo sylvestri, nardus Indica.
+<lb/>pro nardo Indica, nardus Celtica.
+<lb/>pro nitro rubro , nardi spica.
+<lb/>pro nitro , spuma nitri vel sal coctum.</p>
+<p>X.</p>
+<p>Pro xylobatsamo , radix leucoii.
+<lb/>pro xiphii gleucii radice, satyrii semen.
+<pb n="19.738"/>
+<lb/>O.</p>
+<p rend="hanging">Pro oenanthes succo , succus ramuli vel ligni vitis vel
+<lb/>omphacium siccum.</p>
+<p>pro oenantheS ligno, vitis lignum.</p>
+<p>pro vino Italiae, vinum Mendesium.</p>
+<p>pro vino Rhodio, austerum vinum.</p>
+<p>pro vino Syriaco , vinum Rhodium.</p>
+<p>pro omphacio, succus rhu.</p>
+<p>pro uva acerba, malicorium vel galla immatura.</p>
+<p>pro onocordio, psyche herba.</p>
+<p rend="hanging">pro succo baIsami, laricis succus, myrrhae gutta, succus
+<lb/>carpasi, fructus baIfami.</p>
+<p>pro succo Thebaico, saccus papaveris.</p>
+<p>pro succo salicis, hederae nigrae fuccuS.</p>
+<p>pro succo carpasi, succus myrti.
+<pb n="19.739"/>
+<lb/>pro succo Cyrenaico, succus Syriacus , talar vel moschi
+<lb/>medulla vel succus lalëfpitii.</p>
+<p>pro succo papaveris , mandragorae succuS.</p>
+<p>pro succo mori, hederae succus.</p>
+<p>su</p>
+<p>pro opopanace, castorium, lac sycamini; pix liquidae</p>
+<p>pro succo Persico, hedera.</p>
+<p>pro succo peucedani , glycyrhizae succusi</p>
+<p>pro succo peucino, dulcis radix.</p>
+<p>pro succo rhododaphnes, viscum quercus;</p>
+<p>pro succo ficus, succus mori.</p>
+<p>pro succo Syriaco, succusi mori;</p>
+<p>pro ormino , lini semen.</p>
+<p>pro ornithogalo , anthyllis.</p>
+<p>pro oryza, hordei farina.</p>
+<p>pro ostreis , buccina.</p>
+<p>P.</p>
+<p>Pro panacis radicis ℥ j , opopanacis Ʒ j.</p>
+<p>pro papyri radice, elleborus nigella
+<pb n="19.740"/>
+<lb/>pro pipere, gingiber.</p>
+<p>pro pipere albo, nigri piperis duplum.</p>
+<p>pro pipere longo, albi duplum.</p>
+<p>pro columbi stercore, turturis vel vulturis stercus.</p>
+<p>pro columbario , chamaelea vel chamaeleuce.</p>
+<p>pro persicae foliis siccis-, rosiae siccae.</p>
+<p>pro peucedano, glycyrrhiζης χυλός.</p>
+<p>pro picino oleo, pix liquida.</p>
+<p>pro pice brutia liquida, bitumen , pix domestica eximia.</p>
+<p>pro pinorum erucis, vespae in cedria putrefactae.</p>
+<p>pro polii femine , erucae tentem</p>
+<p>pro polygoni succo, succus arnoglossi.</p>
+<p>pro polypodio, ehamaeleae vel chamaeleontis radix.</p>
+<p>pro polytricho, absinthium.</p>
+<p>pro pompholyge, cadmia cremata.</p>
+<p>pro potamogetone , serpyllum.</p>
+<p>pro propoli, ladanum vel ammoniacum.
+<pb n="19.741"/>
+<lb/>pro filice , cneori vel urticae femeni</p>
+<p>pro pyrethra, singtber;</p>
+<p>pro pyrethri radice, radix lapathi.</p>
+<p>R.</p>
+<p>Pro rheo , centaurium.</p>
+<p>pro rhaphanino oleo., ricininum oleum.</p>
+<p>pro resina, colophonia^ pix derasa e navibus.</p>
+<p>pro resina picea, terebinthina.</p>
+<p>pro resina pinea sicca, sagapenon,.</p>
+<p>pro resina terebinthina , resina picea.</p>
+<p>pro. radice cappareos, myricae radix.</p>
+<p>pro radice lapathi-, radix cicerae.</p>
+<p>pro cinarae radice, asphodeli radix.</p>
+<p>pro rosis siccis, persicae arida folia.</p>
+<p>pro refers pastillis ,- sinapis.</p>
+<p>pro sum acsi Syriaco, lapathi radix.
+<pb n="19.742"/>
+<lb/>pro rhu coquinario sicco , sumptuosius.
+<lb/>pro rhu tinctorio, ricini fructus.</p>
+<p>S.</p>
+<p rend="indent">Pro sagapeno, galbane vel resina pinus sicca.
+<lb/>pro falamandra, lacerta viridis;</p>
+<p rend="indent">pro sampsucho, ritus coquinarium siccum.</p>
+<p rend="indent">pro santonico , abrotonum.</p>
+<p rend="indent">pro scrapide, paeoniae radix.</p>
+<p rend="indent">pro satyrio, erucae semen vel saluiae.</p>
+<p rend="indent">pro saphino , oleum cicinum.</p>
+<p rend="indent">pro sepiae crusta, pumex.</p>
+<p rend="indent">pro sesamo, lini semen.</p>
+<p rend="indent">pro sesamoide, amarantus expressio.</p>
+<p rend="indent">pro sinapi , nasturcium vel cardamomum.</p>
+<p rend="indent">pro fio , asparagi radix vel ligustici.</p>
+<p rend="indent">pro sisymbrio, ocimum.
+<pb n="19.743"/>
+<lb/>pro scammonia, colocynthis , ricini femina , scillae pars
+<lb/>interior. vel Iathyris.</p>
+<p>pro scinco , satyricus.</p>
+<p>pro scilla, bulbus.<space type="tab">    </space>,</p>
+<p>pro scoria plumbi, argenti fpuma.</p>
+<p>pro scoria Cypria, melan tersa Aegyotia.</p>
+<p>pro myrrha Troglodytica , calamus odoratus.</p>
+<p>pro susiuo, item liliaceo oleo, oleum foeno graeci.</p>
+<p>pro spodio, pompholyx.</p>
+<p>pro cinerula Cypria , cinis foliorum olivae.</p>
+<p>pro uva passa, palmulae Syriacae pulpa.</p>
+<p>pro adipe<space type="tab">    </space>vulpino,<space type="tab">    </space>adeps<space type="tab">    </space>ursinus.</p>
+<p>pro adipe<space type="tab">    </space>cervino,<space type="tab">    </space>adeps<space type="tab">    </space>anserinus.</p>
+<p>pro adipe<space type="tab">    </space>vitulino,<space type="tab">    </space>adeps<space type="tab">    </space>suillus vetus.</p>
+<p>prosudipe<space type="tab">    </space>hyaenae,<space type="tab">    </space>adeps<space type="tab">    </space>anserinus<space type="tab">    </space>vel adeps vulpinus.:</p>
+<p>pro stibio Coptico, aeris squama.</p>
+<p>pro stoechade, chamaedrys.</p>
+<p>pro strobilis, cucumeris sumen.
+<pb n="19.744"/>
+<lb/>pro struthio, euphorbium, elleborus albus.</p>
+<p>pro struthii radice, ellebori nigri radis.</p>
+<p>pro alumine , fal fossilis.</p>
+<p>pro alumine scissili, malicorium.</p>
+<p>pro styrace, castorium.</p>
+<p>pro fymphytu, centaurium.</p>
+<p>pro silone Syriaco, petroselinum Macedonicum.</p>
+<p>pro serico, litbargyrus.</p>
+<p>pro sphagno vel musco, fabina.</p>
+<p>pro musco aromatico, juncus fativus.</p>
+<p>pro faece, fandaracha.</p>
+<p>pro fpondyl1o, ligustri aut foliorum olivae cinis,
+<lb/>pro lentisco, terebinthus.</p>
+<p>pro junco , polygoni radix,</p>
+<p>pro junco odorato, cardamomum vel cinnamomum,.</p>
+<p>pro fori, lithargirus, diphryges aut melantetia.
+<pb n="19.745"/>
+<lb/>T.</p>
+<p>Pro taurino glutino, ichthiocolla.
+<lb/>pro teneri o , trissago.</p>
+<p>pro terebinthina, mastiche vel resina pini.</p>
+<p>pro calce, terra Eretria.</p>
+<p>pro tragacantha, gummi, terebinthina.</p>
+<p>pro tribulo, fatyrium.</p>
+<p>pro troximo, maeounium et maenalium.</p>
+<p>Y.</p>
+<p>Pro hyacintho, flos ifatidis.</p>
+<p>pro liquida pice, opopanax.</p>
+<p>pro hyoscyami semine , canisrubi femen vel fructus.</p>
+<p>pro hypocystide , acaciae foenus.</p>
+<p>pro hypocystidis femine, tragacantha.</p>
+<p>pro hypocystidis fuero , acaciae vel spinae succus.</p>
+<p>pro byperico , anethi femen.</p>
+<p>pro. hyssopi cera, medulla vitulina.
+<pb n="19.746"/>
+<lb/>pro hyssopo , thymum.
+<lb/>pro hyaenes felle , perdicis fel.</p>
+<p>Ph.</p>
+<p>Pro faecula, sandaracba.
+<lb/>pro phu, fphagnus.
+<lb/>pro fuco, anchusa.
+<lb/>pro folio, nardi spica vel iris Illyrica.</p>
+<p>Ch.</p>
+<p>Pro galbano, sagapenum vel terebinthina.
+<lb/>pro vitriolo , aeris squama.
+<lb/>pro cbamaedryos, lapathi agrestis radix.
+<lb/>pro chamaeleonis succo , salicis lucens.
+<lb/>pro chamaemelo , anthemis.
+<lb/>pro felle mustelae., fel cameli.
+<lb/>pro felle viperae, fel ichneumonis.
+<lb/>oro felle cameli , fel ascalaboti.
+<pb n="19.747"/>
+<lb/>pro felle muris aranei, fel simiae.</p>
+<p>pro felle simiae, fel cameli.</p>
+<p>pro felle hyenae, fel perdicis.</p>
+<p>pro fusco chamelaeae , salicis lucens.</p>
+<p>Ps.</p>
+<p>Pro pfyllio, lens palustris.</p>
+<p>pro cerussa, plumbum ustum vel scoria plumbi.</p>
+<p>Ω.</p>
+<p>Pro ocimo , sisymbrium.</p>
+<p>pro ocimoide, menta agrestis.</p>
+<p>pro ochra, mify Cyprium.</p>
+<p>pro ovorum vitellis coctis, medulla cervi.</p>
+<p>pro ovi albo, lac muliebre.</p>
+<p>pro ovorum luteis, mel vel stipa.</p>
+
+
+</div></div></body>
+  </text>
+</TEI>

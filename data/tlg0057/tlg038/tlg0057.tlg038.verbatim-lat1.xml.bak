@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De rebus boni malique suci</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg038.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">6</biblScope>
+              
+              
+              <biblScope unit="pp" from="749" to="815">749-815</biblScope>
+              <date>1823</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x06">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="351" to="361">351-361</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">6</biblScope>
+              <biblScope unit="pp" from="417" to="439">417-439</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x06">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg038.verbatim-lat1">
+<pb n="6.749"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="6.749"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE PR0BIS PRAVISQVE
+<lb/>ALIMENTORVM SVCCIS LIBER.</head>
+
+
+<p rend="indent">Continua non paucos armos ferie grassata
+<lb/>fames apud multas gentes Romanis subditas manifeste declaravit
+<lb/>haud prorsus mente captis, quantum facultatis habeat
+<lb/>lucri pravitas ad morborum procreationem. Qui namque
+<lb/>civitates habitant, ut mos erat ipsis quamprimum aestate
+<lb/>frumentum .parare, quod ad tutum subsequentem anuum fuppeteret,
+<lb/>ex agris omne frumentum una cum hordeis , fabis
+<lb/>ac lentibus capientes, caeteros fructus Cereales (quos legomina
+<pb n="6.750"/>
+<lb/>ac chedropa nominant) rusticis reliquerunt, ex his
+<lb/>etiam ipsis non pauca lu urbem devellentes. Itaque regionis
+<lb/>hujus homines; consumptis hyemeiis; quae relicta suerani,
+<lb/>vere toto succi pravi alimentis uti coacti sunt, vescentes
+<lb/>arborum fruticumque germinibus ac turionibus, bulsusque
+<lb/>et stirpium mali succi radicibus, agrestia praeterea
+<lb/>quae vocant olera, prout cuique Eorum se copia offerebat,
+<lb/>profuse ad saturitatem usque ingerentes, quemadmodum et
+<lb/>herbas virentes totas edebant elixas, quas prius nunquam,
+<lb/>ne periculi quidem faciundi gratia, degustaverant Itaque
+<lb/>ridere erat ex his quosdam ultimo vere, sed prope omnes
+<lb/>ineunte aestate, ulceribus in cute quamplmimis correptos;
+<lb/>quorum non unica esset in omnibus facies ; siquidem eryfipelas
+<lb/>alia, phlegmonen alia referebant, atque alia herpetem,
+<lb/>sicuti impetiginem alia, et psoram et lepram alia. Atque
+<lb/>horum quae mitiora erant, per cutim efflorescentia vj.
+<lb/>tiosum succum e visceribus prosundoque corporis evacuarimt;
+<lb/>aliis vero quibusdam carbunculi et phagedaenae specie
+<pb n="6.751"/>
+<lb/>quum apparuissent cum febre , plurimos interfecere,
+<lb/>paucissimis aegre posumultum temporis servatis: At sine
+<lb/>cutaneis affectibus febres plurimae viguere, - quas ipsas tum
+<lb/>alvi recrementa sequebantur graveolentia et mordacia, dysenteriasque
+<lb/>et tenesmos postremo afferentia, tum acres urinas,
+<lb/>atque eas graviter olentes,quae quorundam vesicam
+<lb/>exulcerarunti Jam nonnulli diiudica^ sudoribus sunt, iisque
+<lb/>ipsis male olentibus, abscessibusve putredinosis. Qui-^
+<lb/>bus nihil horum accidit, interiere- omnes; aut cum manifesta
+<lb/>visceris unius alicuius phlegmone; aut ob vehemetrtianr
+<lb/>et malignitatem febrium. Quumque medici nonnulli
+<lb/>paucis omnino quibusdam sanguinem mittere auderent morbi
+<lb/>initio, (merito enim remedii huiusce usum reformidabant
+<lb/>ob virium jam tum antea imbecillitatem,] nulli eorum animadverti
+<lb/>sanguinem profluxisse probum, qualem ridemus de
+<lb/>sanorum corporibus profluere, sed aut plus justo rufum, aut
+<lb/>nigriorem, aut setosum nimis, aut acrem, ac venam dissectam
+<lb/>ipsam inter fluendum vellicantem mordicus, sic ut
+<lb/>aegre inde ad cicatricem duci vulnus posset. Quosdam vero,
+<pb n="6.752"/>
+<lb/>praesertim morlbundos, etiam cum febribus symptomata
+<lb/>invnserunt mentum .affligentia cum vigiliis una altoque fo-.
+<lb/>pure. Atque nil sane .mirum rideri debet, si quidem con-;
+<lb/>trariis inter fe tum morbis tum .symptomatis correpti sue-.
+<lb/>re, qui tunc aegrotarunt, ut qui non solum natura invicem.
+<lb/>aut. aetate, sed etiam anteacta rictus ratione differrent, ali-.
+<lb/>mentisque usi essent in fame pugnantibus luter fe facultatibus
+<lb/>praestitis. His enim rebus, quarum copia erat, omnes
+<lb/>vescebantur. In diversa porro rerum copia alii cibos ad-.
+<lb/>tribuere succi acidi, acrisve, aut fassi, aut amari, sicut austetis
+<lb/>alii, aut acerbis usi sunt, aut qui evidenter refrigerarent,
+<lb/>aut immodice humidi essent, aut viscidi, aut medicamentosi.
+<lb/>Ipse quosdam novi ex fungorum esu periisse statim,
+<lb/>quosdam ex cicutae, .aut ferulae , -nec sane paucos ex.
+<lb/>sus nix servatos. Ac caeleris quidem omnibus hominibus,
+<lb/>qui ratione niterentur, facile fieri posse videbatur, ut, quemasimo.dmn
+<lb/>forinsecus exulcerationes ac variae apparebant
+<lb/>tumorum facies , phlegnionosorum et oedematoforum. , eocumque
+<pb n="6.753"/>
+<lb/>ad haec, qui erysipelas et scirrlrum referrent, sic
+<lb/>partibus intimis, quaecunque principes magis essent, totidem
+<lb/>accidere affectus potuisse. Soli sunt, qui quiduis aliud potius
+<lb/>quam succos causari audent, quicunque rationis expertes
+<lb/>ab Hippocratica de fuccis- doctrina descivere: equorum
+<lb/>apud me nonnulli clam confessi sunt , manifesto .fe quidem
+<lb/>contendendi cernere cupiditatem adversus Hippocratem
+<lb/>existimantium, nihil esse in fuccis ad sanitatem aut morbum
+<lb/>usus aut detrimenti, pudere tamen eos post quinquagesimum
+<lb/>aetatis annum ad Hippocrate sententiam descendere: sic
+<lb/>enim videri poterimus (dicebant] non suium discipulis, sed
+<lb/>etiam iis, qui tolo praeterito tempore- nobis usi essent, obfuisse.
+<lb/>. Quin in honore fe quoque apud mortalium multos
+<lb/>esse ajebant, ceu vera dogmata professos : quae si ipsa qnoque
+<lb/>prava esse faterentur,. quum indoctiores aliis visum iri
+<lb/>fe , tum vero futurum, ut eorum, qui antea ipsorum opera
+<lb/>utebantur, nullus lu posterum esset usurus. His itaque
+<lb/>multum veniae conducemus par est, non quidem culpato
+<pb n="6.754"/>
+<lb/>eorum instituto, sed de illorum una infortunio miserti, qui,
+<lb/>antequam judicium serre de doctrinis possent, magistros
+<lb/>nacti sint improbos; illi contra odio merito habendi sunt,
+<lb/>qui ob honoris contentionem primi plaritormn sectus erigunt,
+<lb/>quippe qui volentes scientesque homines decipere veste
+<lb/>videantur, non autem per imprudentiam labantur, quum
+<lb/>nullus ad tantum unquam dementiae veniat, ut ignoret,
+<lb/>quantum sit malum contentos in corpore humores in medicamentusas
+<lb/>qualitates converti. Isti ipsi, quibuscum insututus
+<lb/>nobis est sermo, haud Iane saclle vel etiam neutiquam
+<lb/>fieri posse rentur, ut eos, qui ex lethalis medicamenti astumplione
+<lb/>et morboso corporis ipsius affectu periclitantur,
+<lb/>discernamus. Neque vero illud non apertissime videmus,
+<lb/>ut negare nemo audeat, animalium venenum calculantium
+<lb/>succos, quos lu morsu reponunt, alios demersam partem
+<lb/>celeriter mortificare; alios putrefacere, aut phlegmonen
+<lb/>aut dolores vehementissimos ciere, veluti et scorpionem, si
+<lb/>quis ineunt bis terris jejuuus conspuat, statim perire; nam,
+<pb n="6.755"/>
+<lb/>sicuti naturae affines aliae aliis sunt, sic quaedam adversantur
+<lb/>quibusdam, easque perimunt. Porro affinibus nutriri,
+<lb/>a contrariis vero corrumpi contingit: estque de his tractatum
+<lb/>fusius in commentariis de naturalibus facultatibus, tum
+<lb/>de suuplicibus medicamentis; impraesentiarum autem fatis
+<lb/>fit enarrasse etiam, quae compersa vidimus in fame. Quod
+<lb/>si fidem mihi adhibueris, (cui, quamobrem mentiri debeam,
+<lb/>causae nihil sit, contraque permoleste feram, quod auctores
+<lb/>multi suis in libris egregie mentiti sint,] explicabo tibi ea,
+<lb/>quae in universa vita mea experientia longa didici, idque
+<lb/>diis ipsis testibus invocatis. Ego sane patrem habui, qui
+<lb/>ad summum geometriae, architecturae, logistcae, arithmetices
+<lb/>atque astronomiae pervenit, fuitque ab iis, qui illum norant,
+<lb/>aequitate, probitate et temperantia supra philosophos omnes
+<lb/>commendatus. Is me puerum etiamnum morbis intactum
+<lb/>servaverat praescripta victus ratione. Adolescens
+<lb/>deinde laetusquum essem, pater vero in agrum agriculturae
+<pb n="6.756"/>
+<lb/>studiosus concessisset, urgebam ego quidem studia supra condiscipulos
+<lb/>omnes non interdiu solum, sed etiam noctu; toto
+<lb/>vero caniculae tempore, quum omnibus fugacibus. fructibus
+<lb/>me explessem cum aequalibus una meis, autumno in morbum
+<lb/>incili acutum, fio ut sanguinem mittere necesse halare-.
+<lb/>rina. Reverso deinde in urbem patre, meque quum luerepasset,
+<lb/>tum revocata in memoriam .priore rictus ratione,
+<lb/>qua sub ipso usus essem, praecepit, uti de caetero hanc servacem,
+<lb/>aequalium meorum intemperantiam aversatus. Quin
+<lb/>in sequenti quoque anno studiose egit, ut vivendi rationem
+<lb/>meam observaret, ne quid de fugacibus fructibus, nisi tuodice,
+<lb/>attingerem. Agebam tunc temporis aetatis annum
+<lb/>undevigesimum ; quo anno quum incolumis evasissem, sequentique
+<lb/>deinde diem obiisset pater, liberaliter cum aequalibus
+<lb/>una in victu fructibus usus, qui sub caniculae tempus
+<lb/>proveniunt, morbum incurri priori non dissimilem, uti tune
+<lb/>quoque vena mihi necessario secanda suerit. Ex eo stem-:
+<lb/>pore aliquando singulo quoque deinceps anno semper aegrotavi,
+<lb/>aliquando intermisso uno, ad anuum usque vigesimumoctavum:
+<pb n="6.757"/>
+<lb/>quo tempore, quum periculum adiissem, ne, qua
+<lb/>parte fepto transversi, jecm adhaeret, abscessus esset, mihi
+<lb/>ipsi usum interdixi fugacium omnium, praeterquam ficuum
+<lb/>uvarumque exacte maturarum, susque ipsis non immodice,
+<lb/>sicuti antea, sed moderate adhibitis; habehanrque alium
+<lb/>quendam biennio majorem sodalem ejusdem mecum lustituti.
+<lb/>Adhibita itaque diligenti de exercitatione cura, tum
+<lb/>ne quid cruditate laboraremus , immunes hactenus a morbis
+<lb/>perseveravimus annorum multorum spatio. Jam quoseunque
+<lb/>ex amicis aliis perfunsos habui, ut fe exercerent vivendique
+<lb/>servarent ordinem, animadverti ad hanc usque diem
+<lb/>incolumes perstitisse, quosdam annorum vigintiquinque intervallo,
+<lb/>quosdam non totidem quidem annis, sed fatis ta-.
+<lb/>men multis, prout perfossus quisque fuerat, uti sugarihus
+<lb/>fructibus abstineret, reliquisque praeterea vitiosi succi eduliis,
+<lb/>de quibus propositum nobis sit hoc libro pertractare.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Ergo qui exercitatione uti ante cibum pofsunt,
+<lb/>iis haud certe exquisita victus ratio suerit necessaris,
+<pb n="6.758"/>
+<lb/>aliis vero, qui ob negotiorum molem hoc facere prohibentur,
+<lb/>non fedum innocentiore rictu, verum etiam medicamentis
+<lb/>salubribus opus fuerit, .Plurimi quoque lo eo rerum statu
+<lb/>degunt mortales., ut bis neque ante cibum recte exercere se
+<lb/>.liceat, neque opportune satis cibum capere, .neque vero prohe
+<lb/>alimentum conficere: hosce intactos morbis perdurare
+<lb/>diutius impossibile fuerit, nisi consulant fubducta sibi alvo
+<lb/>per intervalla, interdum purgatione etiam validiore, ac
+<lb/>tempestiva sanguinis missione, salubribusque quibusdam ad
+<lb/>haec medicamentis opportuno tempore epotis. Quicunque
+<lb/>vero quietioris vitae institutum ingressi furit, nec coguntur
+<lb/>.ante : lucem adire potentum limina, nec, postquam crebro
+<lb/>fuderint operibus necessariis lectitandis, refrigescere, neque
+<lb/>aliquibus, dum lavantur, assistere, neque alios, quum te domum
+<lb/>iterum conferunt, reducere, ipsi postea lugenti fesiinatione
+<lb/>loti coenatum properare, lusce nos prius victus rationenr
+<lb/>praescribemus, unde sanguinem in primis probum
+<lb/>obtineant; aliisque deinde consulere conabimur, qui negotiosam
+<pb n="6.759"/>
+<lb/>ritam ducunt-. Puerisque necesse, ut lu memoriam
+<lb/>revocentur, quae in tribus commentariis disseruimus de alimentorum
+<lb/>facultatibus conscriptis. lgitur inter frumentaeed
+<lb/>cibum- exhibent succi boni panes puri rite oonfecti, qui et
+<lb/>in clibano sint cocti et antea subacti,- tum fermento constent
+<lb/>modico, salisqrie mixtura i secundas ab his - obtinent firmacei.
+<lb/>Nec sane minus alica inter ea; quae optimi succi sunt,,
+<lb/>censetur, sicuti suilla quoque caro, siquidem isse ventriculus
+<lb/>exquisite concoquat, et lu sanguinem vertat jecmr viscidi
+<lb/>nihilominus nescio quid retinent, quodque ideo jecoris
+<lb/>renum que meatus obducat, quibus astrictiores lu natura
+<lb/>fuerint. Si quis igitur crebrius utatur, gravitatis secundulnpraedictas
+<lb/>jam partes sensum quendam, aut dolorem etiam
+<lb/>nonnunquam praesentiat. Jecinoris porro obstructionem
+<lb/>comitatur distributionis impedimentum, ac plenitudinis collectio
+<lb/>in mesuraei simarumque visceris partium venis ; quor
+<lb/>cnsu periculum .rursus est, ne aut phlegmone sequaturpartiunr,
+<lb/>in quibus facta collectio fuerit, aut redundantium humorum
+<pb n="6.760"/>
+<lb/>ipsorum putredo;. quandoquidem alterutrum sequi
+<lb/>necesse .sit crudos crassosque humores, ut aut.in sanguinem
+<lb/>convertantur^ concocti, aut putrescant, sicuti reliquis quoque
+<lb/>omnibus accidit, quaecunque locis calentibus diutius
+<lb/>moram .trahunt. Proinde inventa medicamenta sunt, sic a
+<lb/>medicis salubria appellata, quae attenuandi. omnia facultate
+<lb/>constant.; horum fi quidem officium est angustiores alas expedrre,
+<lb/>tum abstergere, siquid ex humoribus glutinofi vasis
+<lb/>adhaerescit, humorumqrie crassitiem incidere et extenuare.
+<lb/>Caeterum frequens horum usus sanguinem scrotum, aut bilictum,
+<lb/>aut melancholicum temporis tractu reddiderit; siquidem
+<lb/>solita sint medicamenta haec universa prope, praeter
+<lb/>id,. quod attenuent et incidant, etiam vehementius excalefacere ;
+<lb/>ab iis autum, quae sto calefaciunt, stolidiores partes
+<lb/>exiccantur, humoresque redduntur crassi, unde renum calculi
+<lb/>existant topliacei. Ergo quum corporis constitutio probatissima
+<lb/>ea habeatur , quae simul et temperatissima sit et
+<lb/>humorum transitum expeditum teneat, hac natura praeditum
+<lb/>oossibile sic siquidem fe ante cibos quod satis sit exerceat,
+<pb n="6.761"/>
+<lb/>incolumem assidue praestare, etiam aliquando succi
+<lb/>crassioris cibis plusculum usum ; quod genus, sicuti diximus,
+<lb/>alica est et suilla caro, panesque furnacei et clibanitae, quibus
+<lb/>quidem nec exacta adhibita fuerit praeparatio, qualem
+<lb/>paulo supraretulimus, et imperfecte in clibano decocti sint.
+<lb/>Ejusdem cum alica naturae esit tragus quoque, quem vocant,
+<lb/>qui ipse quoque inter frumentacea alimenta connumeratur,
+<lb/>atque is tamen alica ipsa aegrius in ventriculo concoquitur.
+<lb/>Nec dissimilem ab his plane facultatem obtinet ovorum. natura;
+<lb/>de quibus distinguendum tamen plenius fit, quemadmodmn
+<lb/>de lacte quoque. Docebuntur haec ad amussim in
+<lb/>sermonis progressu haud ita multo posti Prius namque,
+<lb/>quemadmodum horum ipsorum memini, ut alimentorum vel uti
+<lb/>formulam quandam exprimerem, in quibus cum visci-.
+<lb/>ditate una succorum bonitas et malitia inest, ad eundem modum
+<lb/>de iis quoque mentionem faciam, quae mediocriter fe,
+<lb/>habent et natura constant inter incrassantes cibos et attenuantes
+<lb/>media ; de quibus alibi unico libro disserui, qui est
+<pb n="6.762"/>
+<lb/>de attenuante victus rasione. Hujusmodi tamen plurima
+<lb/>medicamenti potius quam alimenti nomine vocentur: at
+<lb/>quae crassas glutinososque succos progignunt edulia, haec
+<lb/>fuerint, quae quum valentissimo alant, tum bonum procreare
+<lb/>sanguinem consueverint, siquidem ea ventriculus ac je^
+<lb/>cur probe conficiat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Ominum tamen minime improbantur edtlu
+<lb/>lia, quae attenuantium et incrassantium in confinio sunt,
+<lb/>ut quae in excessuum meditullio et temperie quadam locent
+<lb/>tur. Hujusce generis^panes optimi sunt, qui quomodo parentur,
+<lb/>fusius dictum a nobis est in primo de alimentorum
+<lb/>facultatibus libro: gallinarumque praeterea carnes gallorumque
+<lb/>gallinaceorum , tum phasianarum avium , perdicum,
+<lb/>columbarum, attagenum, turturum, turdorum, memtarum
+<lb/>et passerculorum omnium, pisciumque ad haec saxalilium
+<lb/>littoraliumque et pelagiorum, et gobiorum, et muraenae,
+<lb/>et buglossi, et asellorum, breviterque piscium flatnium,
+<lb/>quicunque nullam inter edendum nec visciditatem,
+<pb n="6.763"/>
+<lb/>nec saporis sceditatem, nec insuavitatem repraesentant.
+<lb/>Nec farre paucas distinctiones requirit horum omnium natura;
+<lb/>atque de hormn omnium natura tractaturus deinceps
+<lb/>sum, quum de mali succi cibis dicemus, additis prius hoc
+<lb/>loco , quae desunt. Etenim quicunque plurimum exercere
+<lb/>se possunt, somnumque, quantum libuerit, producere,
+<lb/>vitamque delegerunt a civilibus negotiis procul, possunt
+<lb/>sane lu crassi glutinofique succi cibos capere, praesertim si
+<lb/>cui post largum horum esum nullus unquam in dextro hypochondrio
+<lb/>aut ponderis, aut teusionis sensus oboriatur;
+<lb/>quibus vero non licet aut per aetatem, aut ob coufuetudinem
+<lb/>aliquam exercere se ante cibum, abstineant eduliis id
+<lb/>genus omnibus. omnino vero otiosi ne ipsi quidemladmittere
+<lb/>alimenta hujusmodi debuerint, sed vel gestationibus,
+<lb/>vel deambulationibus utantur validioris exercitationis vice;
+<lb/>sicuti namque quies corporis omnimoda maximum est ad
+<lb/>tuendam sanitatem incommodum , sic plane maximum fuerit
+<lb/>in mediocri motione commodum; quando ne aegrotaturus
+<pb n="6.764"/>
+<lb/>quidem omnino aliquis sit, qui, ne quando cruditate laboret,
+<lb/>curam gesserit, nec motu aliquo vehementi a cibo moveatur.
+<lb/>Quemadmodum enim omnium maxime commendatur ad sauitatem
+<lb/>exercitatio ante cibos, sic a cibis motus unusquisque
+<lb/>vel in primis damnatur, eo quod a ventre alimentum ante
+<lb/>concoctionem. distribuatur, crudiorumque ita humorum vis
+<lb/>colligatur lu venis, unde morborum genus omne progigni
+<lb/>foleat, nisi prius aut laboribus pluribus dissipentur ipsi,
+<lb/>aut concoquuntur, inque sanguinem vertantur a jecoris venarnmqne
+<lb/>facultate. Itaque securissimum fuerit cibos cavisse
+<lb/>crassi glutinofique succi, quibus quidem valetudinis
+<lb/>folius bonae cura fit, non autem bene habiti corpore esse
+<lb/>studeant, quod gymnastici sariunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Cibos igitur crassi tueri enumerabo dein-ceps,
+<lb/>quos hactenus sermone non retuli, initio a panibus
+<lb/>fum.pto. Ex quibus qui neque fermenti, quod fatis sit, neque
+<lb/>fatis accepere , neque subacti plurimum , fed nec alihano
+<lb/>probe cocti fuerunt, crasso supra omnes (neco conflent,
+<pb n="6.765"/>
+<lb/>praeter id quod viscidi etiam nonnihil participant:
+<lb/>quod succi genus Praxagoras et Philotimus appellunt glutinosum.
+<lb/>Crassi praeterea succi est culeus omnis, sed recens
+<lb/>succum vitiosum non obtinet, qui inveteratis adest Viscositas
+<lb/>lu eorum quibusdam crassitiei accessit, non tamen in omuibus,
+<lb/>idque ob lactis, unde conficiuntur, naturam; cujus
+<lb/>non pauca sunt discrimina pro animantium diversitate et
+<lb/>alimentorum, quae alibi usia capiunt. Ac plurimus quidem
+<lb/>apud nos est caprini lactis usus, sicuti bubuli apud alias na-.
+<lb/>tiones ; quin et frequenter ovillo utuntur. Crassum tamen
+<lb/>hoc est, asinarum lacti contrario modo fe habens hoc nomine;
+<lb/>pingue bubulum, omnium in messio caprinum, quippe
+<lb/>quod nec immodice pingue, neque vero crassam fit, ideoque
+<lb/>etiam operibus mediocre habetur, quae in humano corpore
+<lb/>edit, quum tenue ferofumque lac, sicuti minus alit,
+<lb/>ile ventrem subducat magis, crassam contra minus quidem
+<lb/>alvum emolliat, at magis luleriur nutriat. Ex tribus namque
+<pb n="6.766"/>
+<lb/>substantiis constat lac quodque dissimilium inter se partium ;
+<lb/>quarum una scrofa est tenuisque, crassa altera ac
+<lb/>caseolo, tertia vero pinguis atque oleosa. Neque in omnibus
+<lb/>tamen. animantibus aequa harum portio est, sed in camelarum
+<lb/>atque asinarum laete serosae humiditatis plurimum,
+<lb/>caseosae lu ovillo , pinguis in bubulo. Caprae pio
+<lb/>reliquis animalium generibus intra excessum omnem mediocriter
+<lb/>fe habent ; illae enim ipsae, siquidem invicem rursus
+<lb/>conserantur, in jam dictas differentias cadunt, quando non
+<lb/>sane parva ea sit, -quae ab aetate sumitur, sicuti nec quae ex
+<lb/>pascuis ducitur atque anui tempore intervalloque insuper
+<lb/>a partu; de quibus ipsis plenius in tertio de alimentorum facultate
+<lb/>libro tractavimus. Illud hoc Ioco dixisse satis sit,
+<lb/>minime tuto sumi caprarum lac absque melle ; multis namque,
+<lb/>qui solum id sumpsissent, in caseum coactum fuit in ventre:
+<lb/>quod quum contingit, mirum, quam hominem gravet
+<lb/>ac suffocet. Hoc ipso admiratione dignius, quod in concreto
+<pb n="6.767"/>
+<lb/>in grumos sanguine fit, si vel lu vulnus defluat, vel
+<lb/>ventrem, vel intestinorum aliquod ; lude enim et exolvturtur
+<lb/>et refrigescunt; pulfusque tum parvi tum mest evadunt.
+<lb/>Quin etiam concretus ad hunc modum in vulneribus sanguis
+<lb/>caula eft, ut putredo celeriter vicinas partes sanas corripiat.
+<lb/>Unde igitur fiat, ut humorum nostrorum omnium
+<lb/>maxime proprius, postquam refrixerit, affectus afferat in-gentes
+<lb/>adeo, disquirendum sane non parum fuerit; inde tamen
+<lb/>aperte colligas, quanta sit pravorum humorum qualitatis
+<lb/>facultas, quorum rationem nullam ducunt, ut rei vilis,
+<lb/>medici quidam hoc tempore, illos fequuti, qui fe primum,
+<lb/>ut ita statuerent, compararunt. Lac certe, ne coaguletur
+<lb/>in ventre, epotam nonnulli addito melle et aqua tertioque
+<lb/>adhaec side. optimi faeci est lac, quod bene habitorum
+<lb/>animalium sit, ac post emulsionem statim bibatur ; at quod
+<lb/>decoctum plus jusio fuerit, succi nimis crassi evadit, potissimunr
+<lb/>si triticeam.. farinam miliumve aut amylum una decoquas.
+<lb/>Cascus cralso succo omnis constat, vetus mali
+<pb n="6.768"/>
+<lb/>etiam tueri est, possis tamen subducendae alvi gratia ante
+<lb/>cibunr recens coagulatos edere cum melle; nam et vetustis
+<lb/>hi crassam minus succum obtinent, ac nequaquam pravum.
+<lb/>Quod ex coactis defluit ferum, satis quidem alvum ducit.
+<lb/>Cibus etiam fuerit crassius, quique eam ob rem jecoris meatus
+<lb/>infarciat, placenta, quam ex lacte. et caseo, quamque ex
+<lb/>simila et lacte parant, aut si qua lagana aut .riryemata addantur.
+<lb/>Nec minus crassi succi funi, quaecunque ex multo
+<lb/>et simila parantur, aut in universum triticea farina. Ipsa
+<lb/>quin etiam per se lagana et rhyemata, omnisque ex tritico
+<lb/>bellaria sine fermento, quoties casei etiam aliquid adlicitur,
+<lb/>crassi valde succi funi; videnturque mihi veteres, quae
+<lb/>nunc lagana et rhyemata vocamus , communi iturorum nomine
+<lb/>appellasse. Crasso succo constant cochleae etiam ovaque
+<lb/>elixatione aut assatione ad summum durata; nam quae
+<lb/>sartagine friguntur, etiam mali succi fiunt, ac in ventriculo
+<lb/>concoctionem sortiuntur nidorofam, et quae reliquos secum
+<pb n="6.769"/>
+<lb/>cibos in corruptelam trahant; proinde inter ea, .quae concoctionem
+<lb/>fugiunt, omnium pessima sunt.. Quae mediocriter
+<lb/>elixa luerunt, eoque vocantur tremula, praestabiliora sunt
+<lb/>et ad concoquendum et ad distributionem lu corpus et ad
+<lb/>nutritionem et ad succi bonitatem, quemadmodum sane et
+<lb/>quae sorbilia vocantur, mediocriter elixa, eam ob rem gutturis
+<lb/>asperitates lenientis,. quoad nondum spissatus eorum
+<lb/>humor concreverit. Ex aquatilibus etiam mollia, quae voeant,
+<lb/>loligines, sepiae, polypi aliaque id genus erasso glutinosoque
+<lb/>succo constant, flenti et cetacei pisces, de quo- .
+<lb/>nun genere habentur thunni; his ipfis moderatiores pelamides.
+<lb/>Crassi valde succi sunt ostrea quoque, . buccinae et
+<lb/>purpurae, ac breviter quaecunque Aristoteles testacea appellat,
+<lb/>matulae, lopades; pectines, pinnae et id genus.
+<lb/>Inter haec purpurae . et buccinae carnem habent duriorem
+<lb/>caeteris ac succi crassioris, reliqua vero humidiorem et
+<lb/>viscidiorem, omniumque maxime ostrea. .Illud .expedit
+<pb n="6.770"/>
+<lb/>scire, horum omnium fuero ventrem fubduci, ut et lactis
+<lb/>sero, solido autem eorum corpore, quod et difficilius concoquatur
+<lb/>et crassi succi fit, crudum progigni succum. ernssumque :
+<lb/>ac frigidum. Brassicae ac lenti idem contingit
+<lb/>manifesto, sicuti permultis aliis obscure: de quibus prolixius
+<lb/>disseruimus commentariis tribus, de alimentorunr facultam
+<lb/>inscriptis. Atque alia quidem, quorum crassam esse
+<lb/>succum pronuncia vimus, glutinosa omnia et viscida sunt,
+<lb/>exceptis testaceis, quae diximus. . Brassica ac lens non ean dem
+<lb/>succi naturam sortitae sunt, sed nitrosum^ et quo alvus
+<lb/>subducatur, sicuti dracunculus acrem et insigniter amarum,
+<lb/>arum autem utrumque quidem, sed obscurius , austerum et
+<lb/>amarum bulbi, quos si elixatione plurima eluas, solidum
+<lb/>relinquitur , quod crassi socri sit. Ex eduliis his omnibus
+<lb/>fungis frigidissimus et glutmosissimus crassusque simul fucens
+<lb/>inest, atque inter hos ex solis boletis nullus fertur interiisse,
+<lb/>qui tamen ipsi choleram etiam nonnullis attulerunt
+<pb n="6.771"/>
+<lb/>non cocti. At reliquorum fungorum esus quibusdam mortem
+<lb/>intulit; nonnulli mortis inde adiere discrimen diarrhoeis
+<lb/>correpti aut choleris, aut strangulatu periclitantes.
+<lb/>Tuber, quod vocant, crasso modice succo praestitum est, non
+<lb/>tamen malo ; ejusdem modi est amylum quoque. His ipsis
+<lb/>crassioris succi plus habet nucleus pluens, qui tamen ne ipse
+<lb/>quidem mali succi est : veteres hunc etiam strobilum appellant.
+<lb/>Inter ea, quae crassi succi sunt, jecnr quoque et renes
+<lb/>et testes censentur.^ iecur tamen.mali sueti non est; renes
+<lb/>ac testes non sane boni, nisi gallinaceorum, praesertim altilium ;
+<lb/>quod .genus suillum quoque .jecur est, quod, quum caricas
+<lb/>ederint, .ficatum vocant. Animalium aliorum lieni
+<lb/>satis malus succus inest et melancholicus , in suibus non
+<lb/>perinde talis. . Cor certe substantia constat visceribus . caeteris
+<lb/>et duriore et fibrosa magis, iniistis namque, . valorum
+<lb/>in medio , substantia quaedam cernitur .concreti sanguinis,
+<lb/>at in corde fibrae visuntur solidae multae longae, quemadmodum
+<pb n="6.772"/>
+<lb/>in musculis , circa quas nemora substantia concrevit.
+<lb/>Proinde sunt qui cor in musculorum genere .reponant,
+<lb/>quorum substantia molem constituit corporis nostri univerfiam,
+<lb/>eamque, quae proprie caro vocatur, quam lu victimis
+<lb/>edimus. Caeterum musculorum principia, quae capita quoque
+<lb/>vocant, quadanlenus nervorum plus habent, dispersis
+<lb/>per haec ligamentis, ex ossibus, unde initium sumunt, ortis ;
+<lb/>sub extrenrunr tendines exoriuntur, quos vocant. Eamque ob
+<lb/>rem extremae musculorum partes utrinque nervofiores sunt,
+<lb/>sicuti camerum, quod mellium est totum, quod et maxime
+<lb/>nutrior vocatirrque caro ab hominibus, qui fibras prae teunitate
+<lb/>inspicere nequeunt, ex ligamentis nervisque per hanc
+<lb/>dispersis enatas ; quumque hoc carnem jam coeperint nominare,
+<lb/>jure musculum vocant principium hujus extremmnque
+<lb/>tantum. Atqui non ita su habet res, -verum musculus
+<lb/>quidem totus circumscriptione propria quadam separatus
+<lb/>cernitur ab aliis, ipse tamen suam. quandam actionem obit
+<lb/>ex- motibus voluntariis, (sic enim vocant has, a naturalibus
+<pb n="6.773"/>
+<lb/>et involuntariis divisas,] partes autem ipsius praedictas disi.
+<lb/>ferentias sortiuntur- Porro extremis animalium. partibus
+<lb/>minimum inest cernis, ossei vero ac nervosi plurimum.; neque
+<lb/>id tamen ob nervum voluntarii motus auctorem, (parvus
+<lb/>enim is est,] sed ob eum, qui colligat, tendonemque praeterea,
+<lb/>sic a veteribus medicis vocatum , a recentioribus autem
+<lb/>aponeuroseos nomine. Viscitla haec immodice et glutinosa
+<lb/>sunt, ubi elixa suerint; atque ideohorum etiam alimentum.
+<lb/>Neque absimilis naturae sunt pedestrium animalium labra;
+<lb/>atque his propinqua, ut quae vrscidum, minus licet massum,
+<lb/>succum generent; id quod vel eli.xatio ipsa declaret, qua
+<lb/>hujuscemodi corpora plurimum intumescunt et dissolvuntur.
+<lb/>Concoctioni tamen haec quoque accommoda sunt, animae
+<lb/>liumque volatilium alae, communi exercitatorum corporum
+<lb/>ratione; quippe quae excrementis vacant omnia, flenti his
+<lb/>abundant, quae otiosa sunt. Pinguium tamen porcellorunr
+<lb/>cutis probe elixa habet illa quidem glutinosum pinguemque
+<lb/>faecum, at non valde crassam,nec qui, ut extremae
+<pb n="6.774"/>
+<lb/>partes, similiter concoquatur, quemadmodum plane nec
+<lb/>aeque bonum atque harum, scd excrementitium magis. Pars
+<lb/>est In animali crasse succi cerebrum quoque et spinalis ssi^
+<lb/>dulia. Tales mediocriter sunt glandulae, atque ob id victimarum
+<lb/>quoque novellarum testes. IHud enim in communi
+<lb/>de universis animantium partibus meminisse convenit, daras
+<lb/>siccasque evadere ac concoctioni rebeHes aetate contectorum,
+<lb/>humidas contra ac molles, et quae ob id sistili
+<lb/>us concoquantur, iuniorum, nisi ab edito statim partu edimtur,
+<lb/>ut quae mucosae omnes sint, praesertim animalium^
+<lb/>quae humidiore carne praedita sunt natura, cuiusmodi agnorum
+<lb/>caro est ac porcellorum; nam hoedorum et vitulorum,
+<lb/>quod animalia haec sicciora natura sint, longe magis et concoctioni
+<lb/>accommoda est et alimento exhibendo. Ad eundem
+<lb/>modum se res habet in testibus et glandulis, nec minus in
+<lb/>lingua; nam et hujus natura aliquo pacto glandulosa est.
+<lb/>Mammarum vero glandulae, quum lac in fe continent, ubera
+<lb/>vocantur, cibum autem praestant crassem; et siquidem b^ue
+<pb n="6.775"/>
+<lb/>habitum animal suerit, multum inde ac boni succi alimentum
+<lb/>existit; etenim hoc quoque, quum ex iis fit, quae i in
+<lb/>universum pronunciantur, praestat semel auditum promptum
+<lb/>habere memoria. Lac quidem optimi -esse succi. ab
+<lb/>omnibus medicis scriptum reperitur; atque ideo sunt, qui
+<lb/>existiment, quibus ulcus in pulmone fuerit, posse solo,hujus
+<lb/>usu sanari, dumtaxat antequam magnum id et callosum: fiatMuliebre
+<lb/>porro lac, ut familiare ejusdemque nobiscum naa
+<lb/>tusae, caeteris praeferunt ad tabificas affectus cum alii quia
+<lb/>dam medici, tum vero Euryphon in .primis: et Herodotus ;
+<lb/>atque ita affectis praeripiunt, mulieris mammam infantimu
+<lb/>ritu exugant, quoniam, ut mammis optimum excidit; propriae
+<lb/>facultatis nonnihil deperdat. Est itaque manifestum;
+<lb/>lac cibis reliquis, ut optimi omnium succi, praelatum. scisse; horum
+<lb/>quidem praecipue, nec minus tamen aliorum quoque
+<lb/>medicorum judicio. Caetermn quod dicebamus sciri oportere
+<lb/>non de his solum, sed etiam de eduliis aliis multis, in
+<lb/>.universum jam accipe. Animalium bene quidem habitorutulae
+<pb n="6.776"/>
+<lb/>boni.succi est; at orale habitorum non aliter, atque
+<lb/>animalis fanguis, mali ; neque enim fieri potest, ut, quum mali
+<lb/>succi corpus totum suerit, boni succi reperiatur lac. Eam ob
+<lb/>reni diximus, in bene habitis animalibus optimum esse ad
+<lb/>succi bonitatem lac; eodemque. modo glandulas succi boni
+<lb/>esse, eum eas ipsas; quae lac continent, tum alias, quae ani-massum
+<lb/>sanorum sunt. Eadem ratione se habent jecur ac
+<lb/>testes ; nam ne haec . quidem lu mali succi animalibus bono
+<lb/>constant succo, ideoque nec in aetate provectis, quorum nul.
+<lb/>sum boni succi sit;. animalia autem, quaecunque etiamnum
+<lb/>lactentia, siquidem bons succi parentis lac fit, ipsa quum
+<lb/>alias partes omnes; siquando alias, assectus optime habent,
+<lb/>tum vero jecur bemi succi. Animalium porro partes reliquae
+<lb/>cujusmodi succum progignant, paulo post dicetur;
+<lb/>nunc enim, postquam coepi de crassi succi cibis disserere, fatius
+<lb/>fuerit, imposito prius orationi huic fine, sic demum ad
+<lb/>alia transire. - Pauca igitur quum reliqua sint hujusmodi,
+<lb/>jam me ad ea conferam, atque ea hic secernam, quae mest
+<pb n="6.777"/>
+<lb/>succi sunt, ab iis, quae boni, siquidem is sit orationis, quam
+<lb/>nunc molimur, usus, proposito sibi hoc scopo, ut succi boni-tatem
+<lb/>invehat, nitet malitiam. Quoniam autem, sicuti ruitio
+<lb/>dixi, esculentorum substantia, quae crassi succi sunt, corpus
+<lb/>aegre perspirabile reddit et obstructiones aliquas sarit,
+<lb/>potissimum jecinoris ac renum, idcirco consulebam, ne afsiduus
+<lb/>esset eorum usus, etiamsi bono essent succo praedita;
+<lb/>nam quae mali succi sunt, fugienda prorsus, orasses ea tenuesve
+<lb/>succos nostros sariunt. Jam illud quoque. diximus,
+<lb/>sus, qui se vehementer exercent, licere. citra noxam, si ri-.
+<lb/>sicera praeterea habuerint bene natura constituta, crassis
+<lb/>viscidisque cibis frequenter uti, caeterorum autem nulli.
+<lb/>lgitur inter crassi succi cibos glandium genus utrunrque est,
+<lb/>tam quas quercus producit, quam quae palmarum fructus
+<lb/>sunt; vocantque palmarum glandes eodem, quo arborem,
+<lb/>nomlue palmas, quas vero quercus fert, cibum hominibus
+<lb/>suavem praebentes caltaneas , quidam castanea neutro genere,
+<pb n="6.778"/>
+<lb/>ut vocant; cives tamen, sicut alii quoque Asiae incolae,
+<lb/>Sardianus eas appellant et Leucenas a reglouibus, lu quibus
+<lb/>multae illae proveniunt. Atque alterum quidem vocabulorum,
+<lb/>aron obscurum est, unde prosectum .sit; at Leucenae a
+<lb/>loco quodam. montis .Idae nomenclaturam. sortitae sunt, quem
+<lb/>plurali numero vocant, ut Thebae. - Ergo glandes, sicuti
+<lb/>diximus, hujusmodi nunc crudas edunt homines, nunc assas,
+<lb/>interdum elixas ; aliae vero, quae figura, ut in palmulis, oblonga
+<lb/>cernuntur, cibus .sunt suibus magis, . quam hominibus,
+<lb/>accommodus, nisi si quando harum ustus ingruat necessarius
+<lb/>valde; id quod lu maxima fame insu venit. Ilicum porro
+<lb/>glandes (Graeci ἀκυλους vocant] , quae austerae ac durae,
+<lb/>ideoque insuaves sunt, vitare expedit, ut concoctioni adversantus
+<lb/>ac crassi succi, etiamsi quis elixas sumat. Quod autem
+<lb/>astringentis succi differentiae quaedam sint ausierus et acerbus
+<lb/>majoris. minorisque ratione/ perspicuum est, astringente
+<lb/>qualitate remissiore in austero, sicuti in acerbo intensiore intensa.
+<pb n="6.779"/>
+<lb/>Sed quanto glandibus acerbae. magis. sunt acyli, tanto
+<lb/>sane magis glandes castaneis ; hae namque estringentem
+<lb/>qualitatem imbecillam valde possident,^ quum inter crassi
+<lb/>succi cibos sint non aliter, atque aliae glandes ; ventrem ta-.
+<lb/>men nunus astringunt et,- quam alterae illae, facilius concoquuntur,
+<lb/>nec mali succi quicquam obtinent. Atque harum
+<lb/>tamen quoque fugienda copia, non eo sudum, quod aeque;
+<lb/>ac dictorum pleraque, crassi lucri sint, sed etiam quod ventrenr
+<lb/>sistant et aegre concoquantur, flatumque procreent.
+<lb/>Caeterum palmarum fructus, quem omnes (uti diximus)
+<lb/>ductu ex arbore nomine palmulas vocant, astringentis dulcisque
+<lb/>lucri particeps est. Sunt ex recentioribus medicis,
+<lb/>qui eas Graece φοινικοβαλάνους appellent voce composita;
+<lb/>neque tamen veteres .Graecos ita no<hi rend="u">min</hi>asse invenio, issi
+<lb/>enim fructum hune palmarum glandes vocarunt, non φοἰνικας,
+<lb/>aut φοινικοβαλανους. Verum proposita nobis hoc tempore
+<lb/>.non est nominum distinctio , quae hominibus in, otio
+<lb/>degentibus studio fit, neque his omnibus, sed lis lentum, quibus
+<pb n="6.780"/>
+<lb/>statutum est, ut veteribus Atticorum vocabulis utantur.
+<lb/>lncolumitate vero omnes quidem opus habent, neque tamen
+<lb/>omnes, qualem deberent, servare rictus rationem possunt
+<lb/>ob intemperantiam, aut negotia, aut eorum, quae peragenda
+<lb/>essent, ignorantiam ; quicunque vero salubrem rictus rationem
+<lb/>intessigere queunt , hujusque legibus vivendum sibi esse
+<lb/>statuerunt, his liber luo componitur. In acylis igitur et
+<lb/>quercuum glandibus et castaneis privatim pro arborum diversitate
+<lb/>non multum inest in fructu discriminis , at <hi rend="u">in</hi> palmulis
+<lb/>inest, quod merito notetur. Nam si Aegyptias pala
+<lb/>mulas, quae durae, ausierae ac siccae habentur, iis, quas
+<lb/>palatas vocant, contuleris, quae praedulces sunt, ac modice
+<lb/>praeterea astringunt, rideri possint contraria inter se esse
+<lb/>natura praeditae ; aliae autem harum in medio locantur,
+<lb/>quae munirem nnnoremve austeritatem aut dulcedinem participent,
+<lb/>harumque succus crassius est et qui facile jecur obstruat.
+<lb/>Illud enim de dulcibus ac crassi lucri cibis sciendum
+<lb/>ac memoria servandum, horum scilicet succo Iecoris
+<pb n="6.781"/>
+<lb/>ac lienis vias impediri. Quod si viscera phlegmone praeterea
+<lb/>laborare paulum coeperint, hanc ipsam valde adaugent, sicuti
+<lb/>sane stationes affectusque srirrhosos et abscessuum exortus
+<lb/>irritanti Atque haec longius fortasse a salubri rictu
+<lb/>recesserint, cujus partem institutus nobis sermo edocet.
+<lb/>Rursus igitur ea aggrediamur, addamusque reliquos crassi
+<lb/>duleisque succi cibos : sunt enim quidam ex iis, quibus crassus
+<lb/>tantummodo succus insit, ut lenti; quidam autem xifcidi
+<lb/>sunt, ut malva; quibusdam utrumque inest, quod genus sunt,
+<lb/>quae Aristoteles ostracoderma testacea et mollia appellat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">optimum conciliatur alimentum corpori
+<lb/>nostro ex iis, quae neque crassi, neque glutinosi succi funt,
+<lb/>unde sanguis generetur consistentia mediocris: nam qui teunis
+<lb/>valde fit, vitiosus certe fuerit; quum enim exiguum
+<lb/>ex hoc alimentum constet, imbecilla ac macilenta fiunt
+<lb/>corpora, quae sic nutriuntur. optime igitur ad incolumitatem
+<lb/>sariunt cibi, qui mediam inter praedictus naturam
+<lb/>sortiti sunt, ut nihil in iis visendi valde aut glutinosi exupereti
+<pb n="6.782"/>
+<lb/>Sed et fumme friabile, sic ut nihil retineat glutinosi fucci,
+<lb/>pravum fuerit. Panes certe, qui ex panico et milio
+<lb/>conficiuntur, quum edit quis, arenam propemodum aut
+<lb/>cinerem mandere sibi videtur. Quamobrem et quum etnos
+<lb/>ex his conficitur, quemadmodum et lecithus, illis pinguia
+<lb/>omnia et viscrda permixta esse oportet. Rustici sane, adjecta
+<lb/>suis pinguedine .et caprarum adipe, edunt haec cum
+<lb/>ovillo bubulove lacto. Etnos appello, quod ex deglubitis
+<lb/>frefisque - leguminibus paratur, lerithum moliturum farinam
+<lb/>aqua elixam, addito pingui aliquo. Porro cibos quos-.
+<lb/>datu si consideres, antequam legitimam praeparationem acquirent,
+<lb/>sive ea elixando, sive assando, sive surgendo, sive
+<lb/>sola maceratione contingat, terrei issi ac duri apparent; si
+<lb/>vero macerentur, aut decoquantur, molles ; cujusmodi luter
+<lb/>frumentaceas fruges hordeum est et triticum , inter arboreos
+<lb/>vero fructus nuclei pinei Est igitur animus .tibi rei
+<lb/>quoque huic adhibendus, non solum quum in alienam regionem
+<pb n="6.783"/>
+<lb/>delatus cibum insuetum aliquem sumpturus es, verum
+<lb/>etiam apud nos ipsos, ut rei cujusque naturam prius tentes
+<lb/>aquae solius maceratione citra decoctionem, aut cum decotione
+<lb/>etiam una et assatione. Semina enim, quae intumoscunt,
+<lb/>fructusque, Equidem pristinam duritiem et siccitatem
+<lb/>rito exuant, ac mollitudinem et humiditatem acquirunt, meliora
+<lb/>omnia habentur, deteriora vero, quae tumorem tuum
+<lb/>et duritiem retinent, ut quae difficulter concoquuntur et
+<lb/>substantia terrea constent, sic ut aegre in sanguinem vertantur,
+<lb/>viribusque egeant praevalidis, ut lu corpore conficiantur,
+<lb/>dum ea venter concoquit .et a jecore venisque in sanguinem
+<lb/>vertuntur. opere itaque utroque frustrantur in
+<lb/>. imbecillo corpore; succus enim ex hujusmodi cibis provenit,
+<lb/>crudum quem vocant, unde morbi genus omne existat.
+<lb/>Quoniam itaque in unaquaque fructus specie multiplex inest
+<lb/>discrimen, prius macerentur quaedam et luterdum decoquantus
+<lb/>consulo eorum, quae edenda sint, ut certum fiat
+<lb/>de ipsorum natura periculum. Pater quidem meus, rerum .
+<pb n="6.784"/>
+<lb/>harum studiosus, hoc pacto amygdalas quoque probabat,
+<lb/>nucesque tum magnas, tum parvas, Ponticas scilicet et avellanas.
+<lb/>Idem adhibebat oleribus quoque experimentum, fabis,
+<lb/>pisis, cicerculis, lupinis, ochris, dolichis et reliquis id
+<lb/>genus omnibus, maceratis prius illis, aut elixis, delude,
+<lb/>quantum tumescerem, inspectu. Jam quorsum attinet plisanae
+<lb/>meminisse ? id enim ne pueri quidem ignorant, omnium
+<lb/>maxime commendari, quae statim intumescit, contra
+<lb/>improbari, quae longo tempore exiguum tumorem acquirit;
+<lb/>prior enim illa liquescit et in succum abit, altera vix colliquabilis
+<lb/>est et, quum lu duritie perflet, pauxillulum omnino
+<lb/>quid tueri remittit. Sunt tamen lu seminibus Cerealibus
+<lb/>quaedam, quae natura minime intumescunt. Graeci
+<lb/>ex veteribus quidam vocarunt haec indomita. Ad hunc
+<lb/>plane modum triticum quoque explorabat genitor , farinaeque
+<lb/>ad haec copia; bonum enim quod est, farinae vim
+<lb/>mulsam edit, quod vero malum, paucam. Quamobrem diligenter
+<lb/>ipsis quoque, quae diximus, ausculta; communiter
+<pb n="6.785"/>
+<lb/>enim ad semina omnia rasio haec pertinet fructusque, quoscunque
+<lb/>tandem reponere possis; quam ego paterque tempore
+<lb/>multo ac diutina experientia exploratam habuimus et
+<lb/>statutam. Porro clarum est, fructus, ut reponi possint, idoneos
+<lb/>me eos esse dicere, qui, antequam putrescant, siccantur;
+<lb/>sunt namque qui hoc serre non possint, ut mora et qui pepones
+<lb/>et melopepones vocantur, tum Persica, et quaeounque
+<lb/>his sunt similia, quae prius, quam siccescant, putrescunt.
+<lb/>Sunt tamen qui cucurbitas in minuta frusta concisas
+<lb/>exiccent, alli citrulos. Fungos quidem malos esse, indicium
+<lb/>inde sumi maximum censent, quod siccari nequeant.
+<lb/>Nam de prunis quid attinet dicere? quae non modo Damasci,
+<lb/>aut in Hispania, verum etiam apud nos reponi, nullus
+<lb/>est qui ignoret, sicut in fructibus paucissimi sunt, qui siccari
+<lb/>non possint, exceptis peponibus ^nti diximus) et melopeponibns,
+<lb/>et Armeniacis, et Persicis, et iis, quae Romani praecocta
+<lb/>vocant. Ficus namque ipsae quoque siccatae perdunant,
+<pb n="6.786"/>
+<lb/>et cucumeres non aliter ac cucurbitae. Caeterum haec
+<lb/>quoque hyeme, quum usui adhibentur, ad eundem modum
+<lb/>exploranda veniunt. - Quae enim. cito ex aqua macerationem
+<lb/>capiunt,. live ea elixos, sive minime, bonitate ejusdem speclei,
+<lb/>caetera vincunt, vitiosa vero sunt, quibus longo tumpone
+<lb/>id contingit, tum tumoris minimum acquirunt.. .Scito
+<lb/>igitur,.cibos, qui cito intumescunt, non solum ad concoquam.
+<lb/>dum potiores esse, sed ad succi etiam bonitatem; cujus gratia.
+<lb/>.singula tractantur- hoc libro; est enim eorum, quae sta-tim
+<lb/>in tumorem assurgunt, .natura melior, quod et facilius
+<lb/>concoquantur,. et laudatores succos procreent. Nihil. enim
+<lb/>aeque. ad; fimei bonitatem facit in cibis omnibus ,. .quam .si
+<lb/>p.robejn ventriculo. concoquantur, ut qui fecundam et leri
+<lb/>tiam-concoctionem facilius - admittant. Nosti autem, fetamdam
+<lb/>concoctionem in jecore ac venis absolvi; tertiam vero
+<lb/>in partibus singulis, quae nutriuntur, cujus causa duabus
+<lb/>illis prioribus egemus. Quaecunque enim- nutriuntur, ita
+<lb/>demum nutrientur, si, quae illa nutriunt, qualitate immutentur,;
+<lb/>et iis, quae nutriuntur, assimilentur ; porro quae
+<pb n="6.787"/>
+<lb/>praeparata atque ante concocta fuerint, crudis promptius
+<lb/>immutantur: etenim mutuo se concoctiones excipiunt; eam,
+<lb/>quae ventriculi est, jecur ; atque hujus ipsius concoctionem
+<lb/>partes, quae nutriuntur; atque ita corporis quidem partibus
+<lb/>omnibus alimentum praeparavit jecur; huicventricuIus
+<lb/>s ventriculo os; ori quaedam assatio, quaedam clinatio,
+<lb/>quaedam frictio in sartagine, aut simplex aliqua maceratio^
+<lb/>omnibus autem his natura gubernatrix plantas fructus ferentes
+<lb/>praeparat; suntque eorum aliqua, quae ipsa profert,
+<lb/>quibus nec clinatione, nec macerationes neque vero praeparatione
+<lb/>alia opus sit. Atque haec in universum meminisse
+<lb/>expedit cibis omnibus communia.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Jam ad alia privatim transeundum, fi qua
+<lb/>dicendo praetermisimus. Sunt haec in animalium quidem
+<lb/>partibus intestina, ventriculus, uterus, auriculae, oculi,
+<lb/>caudae; in seminibus Cerealibus maxima horum ipsorum
+<lb/>pars, sicuti sane olerum quoque ac stirpium, quas fugaces
+<lb/>vocant. Itaque intestina et ventriculus et uterus duriore
+<pb n="6.788"/>
+<lb/>substantia constant, quam caro; et quo duriore, eo etiam
+<lb/>concoctu difficiliore ; minus praeterea, quam carnes, alunt,
+<lb/>minusqne succi boni sunt. Caudae his etiam ipsis duriores
+<lb/>habentur; tum reliqua in lus pro duritie proportione respondent
+<lb/>in concoctione et nutritione, nisi quod excrementiaNacant
+<lb/>pb commotionem. Sunt his non dissimilia volaorium
+<lb/>colla. Avium et pedestrium animalium ventri nihil
+<lb/>convenit; est cnint avium venter crassius, durus, et qui ob
+<lb/>id aegre concoquatur, quique concoctus multum praestet
+<lb/>alimenti ; optimus habetur gallinarum atque anserum, quum
+<lb/>tamen reliquae auferis partes durae sint et concoctioni adversentur
+<lb/>et excrementis redundent praeter alas. lu nugnis
+<lb/>vero struthia, quas nunc structiones appossent, singulae
+<lb/>sunt partes durae, difficiles concoctu et excremen filiae. lu
+<lb/>auribus cartilago pars est, quae neque alat et sicca sit : obducta
+<lb/>his cutis tendis est et sicca, tum quae haud facile concoquatur
+<lb/>et alimenti parum subministret. Oculos pauci
+<lb/>edunt; constant lu ex substantiis inaequalibus, siquidem aha
+<pb n="6.789"/>
+<lb/>sunt natura praeditae tunicae, alia musculi, atque alia crystallinus
+<lb/>humor et vitreus. Ex his musculi soli concoctioni
+<lb/>maxime accommodi sunt in animalibus, quibus natura sit
+<lb/>fucci bonitati idonea, quod genus sunt porcelli aetate convenienti.
+<lb/>Fuerint autem hi hominibus, qui quidem aetate
+<lb/>vigent atque exercentur, adulti, aetate autem inclinantibus
+<lb/>ii, qui etiamnum crescunt: nam tenellorum adhuc porcollorum
+<lb/>caro excrementitia est. Quum autem inter animalia
+<lb/>pedestria optimi sint fucci sues, proximi ab his habentur
+<lb/>hoedi, deinde vituli ; agnina caro humida, glutinosa mucosaque
+<lb/>est. A caeterorum vero animalium, quae pedestria
+<lb/>sunt, esu abstineant, censeo, qui succi bonitatis curam gerunt.
+<lb/>Speciatim horum differentias tractavimus tertio de alimeutorum
+<lb/>facultatibus libro.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">ln seminibus Cerealibus optimi succi cibus
+<lb/>ptisana est probe decocta. intelligimus sane sermone hoc.
+<lb/>una optimum quoque debere osse hordeum; quod nili tale
+<lb/>sit, bene decoqui ptisana non poterit ideo. quod nec mace.
+<pb n="6.790"/>
+<lb/>rasione plurimum intumescat, nec cremorem reddat colos
+<lb/>qualione. Verum de ptisana prolixius diximus in libris de
+<lb/>alimentorum facultatibus et de curandi rasione, jam vero
+<lb/>in commentariis in Hippocrates librum de victu acutorum
+<lb/>confcriplis; nunc autem rei totius caput indicasse satis sit
+<lb/>praesenti orationi necessarium, ptifanam scilicet bene praeparatam
+<lb/>cibum esse omnium minime improbandum tum ad
+<lb/>succi bonitatem, tum ad sanitatis tuteIam; ipsa tamen, etiam
+<lb/>oplima quae sit, minus alit, quam panis; de quo libro primo
+<lb/>de alimentorum facultatibus diximus. Et foenum graecum
+<lb/>quidem, fi quis frequenter eo utatur, succi boni non siti
+<lb/>ptisana vero etiamsi ad saturitatem usque quotidie utaris,
+<lb/>nihil succorum bonitati affeceris. Affirmarem idem de
+<lb/>faba, nisi flatulenta esset; nam nec succum malum procreat
+<lb/>nec meatus infarcit, in quibus salubrium cibormn summa
+<lb/>versatur: inest hoc lili propterea, quod qualitate ac faeditate
+<lb/>praedita sit abstersoria, ut hordeum. Pisum flatus quidem
+<lb/>expers, non aeque tamen, ut laba, abstergit. Ile lente,
+<pb n="6.791"/>
+<lb/>quod et malum et melancholicum succum gignat, nemo fere
+<lb/>nescit: ea ut medicamento utimur plerumque in affectibus
+<lb/>plurimis ; sed non est nunc de his dicendi tempus. Ochri
+<lb/>et dolichi, siculi jam dictis bonitate inferiores sunt, sic cicerculis
+<lb/>praestant. Olyra proxime ab hordeo locatur, ah
+<lb/>hac autem tipha. Panicum vitare perpetuo debes : μελίνην
+<lb/>vocant veterum nonnulli. Milium est quidem semini huic
+<lb/>affine, at minus tamen pravum. Cicer ut alat, salis mali
+<lb/>certe succi est et nihilo secius, quam faba, inflat, coeundi
+<lb/>desiderium auget, scminisque una mustum gignit. Lupinus
+<lb/>succi bene crassi est: idem quod satis alat, liquet, siquidem
+<lb/>crasso constat succo , neque tamen succi mali habetur. I.egmuinum
+<lb/>aliorum ne meminisse quidem convenit in succorussi
+<lb/>bonitatis censu, ut quae mortales, nisi annonae caritas
+<lb/>urgeat, ne ast cibi quidem usum adhibeant. Satisque de legtuninibus
+<lb/>dictum ; deinceps de fructibus dicamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Sunt autem ex iis, quos querens serunt,</p>
+<p rend="indent">omnes fere succi mali, exceptis castaneis glandibus, quas
+<pb n="6.792"/>
+<lb/>vocant; quae, si recte eas conficiat ventriculus, alibiles fiunt
+<lb/>ac crassi succi, minime tamen mali, In caeteris sanctinus ii,
+<lb/>qui fugaces vocantur, mali omnes succi sunt; quod si in
+<lb/>ventriculo praeterea corrumpantur, non longe a venenosa
+<lb/>materia absunt, quemadmodum mora quoque, quae ipfa,
+<lb/>etiamsi Persicis ac prunis minus mala sint, corruptelam
+<lb/>tamen nihilominus iis malam experiuntur. Opora, sic plivatim
+<lb/>a Graecis vocata, qua ficus et uvae continentur, His
+<lb/>quidem melior est; non parum tamen discriminis sortitur,
+<lb/>quod vel exacte maturus fructus fit, vel nondum talis.
+<lb/>Exacte enim maturae ficus prope innoxiae sunt; deinceps ab
+<lb/>lus matura uva; haec porro, si suspendatur, inflationem
+<lb/>omnem ahjicit, prorsusque inculpabilis evadit. De caricis
+<lb/>si quis contraria pronunciet, vera dixisse videri possit, effi
+<lb/>eas tum mali tum boni una succi, morbificas et salubres;
+<lb/>salubres quidem et boni succi, li ventriculum pertranseant,
+<lb/>distributunlque inde alimentum jecur permeet ac renes i
+<pb n="6.793"/>
+<lb/>mali vero lucri, si diutius morentur, et quae pediculorum
+<lb/>vim gignunt Eaedem si cum nucibus, aut eodem etiam
+<lb/>modo cum amygdalis mandantur, c ribum optimum exhibent,
+<lb/>et cum amygdalis quidem; quasi quae obstructiones solvendi
+<lb/>et abstergendi vi polleant, arnon perinde tamen,. ac
+<lb/>nuces, succi -boni sint, nec aeque alunt, cum nuribus autem
+<lb/>usta omnino meliores sunt. Atque ex iis, qui venenorum
+<lb/>compositionem tractarunt, nonnulli omnibus alexeterium
+<lb/>esse affirmarunt, si quis caricas prius cum nucibus usta ac
+<lb/>ruta assumat. Reliqua-fructuum genera , quae in ambitu
+<lb/>lignosum putamen habent, succi mali sunt, maximeque st
+<lb/>fructus sint agrestium arborum -fruticumque, de quibus copiosius
+<lb/>tractavimus in secundo de facultatibus alimentorum
+<lb/>libro. In pomis autem et punicis . pirisqueet mespilis
+<lb/>-usus ut medicamenti est potius, quam alimenti, -stomacho
+<lb/>ventrique corroborandis. . luter fluctus censentur nucume-
+<lb/>res quoque et pepones et melopepones, quorum nulli sue-:
+<lb/>cus bonus infit, eo quod, nisi alvum statim subeant, - corrumpantur
+<lb/>ibi, hnmoremque ex corruptela hac faciunt,.. qui
+<pb n="6.794"/>
+<lb/>non longe a mortiferis venenis absit. In Ructibus hujusmodi
+<lb/>sola est cucurbita, quae culpa vacet; ejusdem tamen,
+<lb/>si in ventre corrumpatur, succus valde malus est; quod i u
+<lb/>moris quoque evenit, quae ipsa etiam, si quidem ante, quam
+<lb/>corrumpantur, statim descenderint, nilul incommodi asserunt,
+<lb/>nisi quis assidue iis utatur ; quod in universum de sugacibus
+<lb/>omnibus scire ac meminisse convenit. Olermn
+<lb/>nullum quidem boni succi est, boni tamen mali que succi in
+<lb/>medio Iactuca fuerit, deinde malva, ab hac deinceps atrip
+<lb/>lex et portulaca et blitum et rumex. Succi summe omnino
+<lb/>mali sunt olera omnia agrestia, quae vocant; lactucae
+<lb/>id genus, chondrilla, scandix, gingidium, seris, cichorium.
+<lb/>Stirpium radices. quae oleraceae sunt, si quae acres suerint,
+<lb/>ut ceparum, porri, allii, radiculae, dauci, malae
+<lb/>omnes; boni malique in confinio ari radices sunt et raporum,
+<lb/>quae βουνιἀδας etiam vocant, ejusque, quem careum
+<lb/>appellant.
+</p>
+<pb n="6.795"/>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p>Avium pisciumque universorum propensodum
+<lb/>succus bonus est, praeterquam eorum, qui ex stagnis et
+<lb/>paludibus coenosisque ac turbulentis fluminibus rictum capiunt;
+<lb/>aere enim utuntur deteriore minoreque natatione
+<lb/>et alimento pejore, maximeque, si ex magna urbe profluat
+<lb/>aqua, qua cloacae, baluca ac culinae repurgentur, aut si
+<lb/>in iis vestes et lintea abluantur. Caro namque animalium
+<lb/>in aquis ejusmodi degentium deterrima ominum sit, potissisilum
+<lb/>quidem, quum in aqua ea tantum victitant; quae si
+<lb/>meliori etiam admisceatur, sic quoque tamen deteriores sunt
+<lb/>piscibus in puro mari degentibus. Culpa edim prope omni
+<lb/>vacant, quicunque in mari versantur dulcis aquae experti,
+<lb/>cuiusmodi sunt, quos pelagios vocamus et saxatiles, qui caeferos
+<lb/>succi bonitate ac cibi suavitate longe anteceHunt. i ales
+<lb/>igitur sumpsisse perpetuo tutissimum suerit. Quod si aliquis
+<lb/>ex istis sit, qui ex aquis utrisque victum capiunt, ut
+<lb/>rapito, lupus, gobius, muraena, cancri, anguillae, quaerendum
+<pb n="6.796"/>
+<lb/>prius , ubinam captus sit , tum judicandum de hoc
+<lb/>ex odoratu et gustu. Nam qui in aqua degunt vitiosa, graviter
+<lb/>olent, insuavesque sunt ac mucosa pinguedinisque ad
+<lb/>haec plus aliis habent, ac cito putrescunt: at qui in mari
+<lb/>versantur puro, quum odore inculpato sunt, tum gustu suaves,
+<lb/>pinguedineque aut minima, aut nulla, ac longissime
+<lb/>perdurant citra putrefactionem , praecipue si quis eos nive
+<lb/>circumdet. Hoc plane nomine commendantur esiam magis,
+<lb/>qui duriores habentur, ut qui carne constent friabili magis,
+<lb/>aeque ac saxatiles et aselli ; quod enim natura his adest, in
+<lb/>dura carne praeditis conciliat nix. Atque hoc causae est,
+<lb/>cur maxime contrariam carnis substantiam habeant capitones,
+<lb/>qui ex puro mari petuntur, et qui in vitiosa aqua deversantur.
+<lb/>Nec dissimiliter se habent gobii lupique, his^
+<lb/>que adhuc etiam magis reliqui. Quin muraenae quoque
+<lb/>ipsae in hujusmodi aquis deterrimae. Anguilla porro,
+<lb/>etiamsi ex aqua sit pura , nedum ex ea, quae Civitatem, uti
+<pb n="6.797"/>
+<lb/>diximus, expurgat, nequaquam succi boni edulium suerit.
+<lb/>Pro alimenti etiam diversurum locorum differentia ipsi se
+<lb/>ipsis pisces meliores deterioresque redduntur, qui gustu faclle.
+<lb/>atque odore deprehenduntur, sicuti muli.: In his enim
+<lb/>pejores sunt, qui .carcinode vescuntur; reliquorum caro
+<lb/>materia constat duriore non modo , quam saxatilium et ascllorum
+<lb/>cero, sed etiam capitonum luporumque et aliorum
+<lb/>pelagiomm; ideoque, quum et aegrius concoquatur et alimenti
+<lb/>plus praestet, succi mali nihil interim obtinet. Traetatum
+<lb/>autem a nobis est prolixius de alimentis omnibus
+<lb/>commentariis tribus de alimentorum facultatibus insciiptis ;
+<lb/>et oportet sane eum, cui salubris victus cura sit, tum
+<lb/>illa in memoriam diligenter revocare, tum omnino opus de
+<lb/>tuenda similate non negligere, cujus pars est de alimentorum
+<lb/>facultate liber. Verum de attenuante quoque rictus
+<lb/>ratione, quae crassem facienti contraria sit, conscriptus est
+<lb/>liber alius, sanitatis studiosis lu primis utilis.
+</p>
+<pb n="6.798"/>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Caeterum illud de operibus- sus memineris
+<lb/>velun.ante omnia: qui alimentorum materiae facultates exacte
+<lb/>teneat, nisi idem corporum naturas cognitas habeat,- quibus
+<lb/>adhibenda ea sint, eum nondum neque auxssioru.:., neque
+<lb/>vero salubris victus rationis scientiam assecutum. Sunt
+<lb/>enim corporum quaedam densa, mee perspicabilis ; quaedam
+<lb/>rara, ecquae facile. difstentur. Ac perora quidem alimento
+<lb/>opus habent humidiorem posteriora vero sicciore; et. haec
+<lb/>quidem glutinofiore, illa tenuiore; haec. minore; illa .alse-.
+<lb/>riore. Ad eundem plane modum, quicunque sanguinem
+<lb/>habent plus justo melancholicum, his alimentismpus est temperamento
+<lb/>calidis et humidis.; sicuti frigidis et humidis iis,
+<lb/>qui biliosiorem ; qui pituitosum, calidis et. siccis. Quibuscuuque
+<lb/>vero sanguis bonus multitudine excedit, iis alimenta
+<lb/>ex usu suerint pauciora illa quidem, sed quae facultate nulla
+<lb/>praestita sint manifesta, quaeque medium teneant,. ut nec
+<lb/>evidenter calefaciant, nec frigefaciant, neque vero huneolent,
+<lb/>aut exiccent, eodemque modo crassitiei ac tenuitatis
+<pb n="6.799"/>
+<lb/>in medio Consistant, . nec. non lentoris qualitatumque huic
+<lb/>ipsi . contrariarum, fragilitatis scilicet et friabili latis. . Inest
+<lb/>fragilitas siccis et duris valde , friabilitas messibus et luter
+<lb/>humiditatem et siccitatem mediis;..utrisque commune, ut nihil
+<lb/>habeant glutinosi. Cui igitur rectus alimentorum constare.usus
+<lb/>debet, is dignofcat oportet principio rarae denfaeque
+<lb/>hominum cutis differentias, . deiucepsque ab his uuiverfam
+<lb/>corporis temperiem, postremo num partes - corporis
+<lb/>singulae temperiem. propriam servent. Contingit enim alia
+<lb/>quando, ut caput jusio calidius sit, ventriculus autem frigidior ;
+<lb/>atque etiam a .diverso saepenumero, ut calidior .ventriculus,
+<lb/>caput frigidius reperiatur; idemque in partibus
+<lb/>aliis accidit. Ac curandi quidem et incolumitatis tuendae
+<lb/>reliqua ratio omnis scopum aeque in omnia dirigit;- quae
+<lb/>vero alimenta tractat, peculiarem hunc habet,- quem primo
+<lb/>intueatur, ut optime ea coquantur; proxinreque, ut diductus
+<lb/>eun cocti asserenti succus .caeterarum partium temperiei
+<pb n="6.800"/>
+<lb/>accommodus sit. Videri itaque ob haec necessarium possit
+<lb/>opus de temperamentis iis, qui recte usuri fuit alimentis.
+<lb/>Tibi igitur, ut lu opere hoc exercitato, addam, quaecunque
+<lb/>restant . de succorum bonitate et vitio necessario scienda,
+<lb/>sumpto a vinis exordio.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Ergo, quaecunque in sus aquosa sunt ac
+<lb/>substantia tenui, urinamque cient, corpori alimentum suggernnt
+<lb/>paucissimum; crassa vero, ut Theraeum et Scybelites;
+<lb/>valde nutriunt; distant tamen invicem majoris minorisque
+<lb/>ratione pro crassitiei modo. Tale reperitur apud nos visunt
+<lb/>Aegis et Perperinae, illis Myricae finitimis, hac Pergamo;
+<lb/>Summe igitur dulcia sunt Theraeum et Scybelites ; ausierurn
+<lb/>una ac dulce Cilicium, Abates, sic. ex loco vocatum; medium
+<lb/>inter haec locum tenet, quod ex Aegis est et Perperina,
+<lb/>ut quod neque exquisite dulce sit, neque vero evidenti
+<lb/>usque adeo, ut Cilicium; astringendi vi polleat. Nullum
+<lb/>est ltormn non nigrum; neque enimvinmn reperias crassam
+<pb n="6.801"/>
+<lb/>una- ac dulce, quod non idem nigrum quoque sit. Certe si..
+<lb/>mustum ex omnium maxime albo alno decoquas usque eo,
+<lb/>ut sapa inde existat, quod nos defrutum vocamus, colorem
+<lb/>nigrum acquirit ad Tlieraei instar. Color est Caryino etiam,
+<lb/>quod ipsum quoque dulce, niger ; . niger et Theriuo, sed non
+<lb/>usque eo, ut Caryino, a quo dulcedine quoque degenerat.
+<lb/>Inter alba rina dulce nullum, sied sunt ex sus quaedam austera
+<lb/>et crassa, quaedam aquosa et tenuia. Fulva flavaque
+<lb/>alia .mediocriter dulcia,. ut Hippodamantium est et. Faustianum
+<lb/>Falernum, alia neutiquam dulcia sunt. His ecassiora
+<lb/>habentur rubra; rubris alia, quae jam colore proxime ad nigra
+<lb/>accedant. Inest alimentum omnibus pro crassitiei ratione ;:
+<lb/>ideoque iis, qui ut reficiantur opus habent, concedendus
+<lb/>est vini dulcis usus, praecipue vero si nihil his vitii suerit
+<lb/>in jecore, liene ac renibus; quibus vero crassior in. venis
+<lb/>humor redundat, iis substantia tenue ex usu est; acre
+<lb/>quidem ac vetustum, si frigidus collectus in venis humor
+<pb n="6.802"/>
+<lb/>fuerit; qui si frigidus non sit, tum, cui neutrum horum adest,
+<lb/>convenit. Ac odorum quidem ad succi bonitatem praestat,
+<lb/>caeterum caput ferit;- tenue .mendae urinae melius, nec
+<lb/>quicquam caput tentat. Vitanda sunt; quae crassa simul et
+<lb/>graveolentia infuaviaque et ausiera fuerint, cujusmodi habetur
+<lb/>vile Bicyum, quod lu magnis lagenis adservatur; in
+<lb/>pernis enim servatum neque insuave, neque graveodorum
+<lb/>est, nec crassam valde; sed nec astringendi facultate praeditum
+<lb/>est acerba; - verum ne ipsum quidem boni succi luerit,
+<lb/>sicuti sane nec mali, sud inter ea, quae malo bonoque succo
+<lb/>constant, menium. Ex iis, quae optimi lucri sunt, Falernum
+<lb/>est, -dulce praesertim; ejusdem generis est fulvum fundites,
+<lb/>quod dulce sit; nam alterum hujus genus reperitur austerum,
+<lb/>quod succi non perinde boni sit, quemadmodum ne
+<lb/>aliud quidem ullum suerit, quod supra modum austerum sit,
+<lb/>etiamsi stomacho resoluto robur addat ventrique, maxime
+<lb/>calida intemperie laborantibus. Hac enim gratia vinis utitnur
+<lb/>austeris, ut citam alvum sistamus, alioqui non usuri,
+<pb n="6.803"/>
+<lb/>quod ea neque alimento diducendo conferant; nec gignendo
+<lb/>sanguini, nec succi bonitati,. nec ciendis urinis, nec fudorihus
+<lb/>promovendis; neque vero subducendae alvo. Sed non
+<lb/>est praesentis instituti vini virtutes . aut .vitia omnia exequi,
+<lb/>praesertim- quae ad morbos faciunt;. quod igitur propofueram,
+<lb/>brevibus summis comprehensum explicabitur. Corporibus
+<lb/>biliosioribus, sive naturalis lu temperies ea fuerit,
+<lb/>sive qualitercunque tandem acquifititia, .nec Falernum nec
+<lb/>Emolitus fulvum dulceque, neque ..Amusium,. nec Leshium
+<lb/>fulvum illud et .odorum, praedictis haud absimile, utiliter
+<lb/>bibuntur; sunt enim hujusmodi calida omnia. . Nec biliosis
+<lb/>igitur vinum tale concedendum est, nec perustis, neque lu
+<lb/>labore multo aut media aut moerore, aut anni tempore, regionibus
+<lb/>vel coeli statu calido. Idem e diverso in iis -probatur,
+<lb/>qui excalesactioue opus habent; ac. pituitosae frigidaeque
+<lb/>intemperiei, crudiorumque humorum copiam colligentibus,
+<lb/>vitam ducentibus otiosam in regione frigida , hymnis tempore;
+<lb/>coeli statu frigido atque humido. His omnibus fulvum
+<pb n="6.804"/>
+<lb/>vinum dulceqne bonum est, malum vero iis, qui contrario
+<lb/>modo fe habent, non quatenus succos. vitiosos creet, sed
+<lb/>quod calefariat, quos refrigerare conveniebat: facile namque
+<lb/>lu, si tale biberint, et caput dolent, et febricitant, et
+<lb/>nervis estque pacto tentantur. In fulvis vero ac mediocriter
+<lb/>dulcibus, (quando fulvum nullum ad summum dulce sit,]
+<lb/>quae ad nigredluem magis ac dulcedinem vergunt, perinde
+<lb/>calida non sunt atque fulva; ergo merito nec capiti noctu.
+<lb/>mentum inserunt, nec nervis, neque, ut fulva, febres accendunt.
+<lb/>Dulcia autem vina crassaque quod alvum subducant,
+<lb/>nullus fere est, qui ignoret, sicuti mustum quoque, quod .scilicet
+<lb/>et flatulentum sit, et concoctu difficile, et crassi succi, id
+<lb/>unum in se boni continens, quod alvum emolliat; quo si
+<lb/>frustretur interdum, noxium adhuc magis evadit. Vinis
+<lb/>omnibus (quae quidem nec crassa valde, nec dulcia natium
+<lb/>sint, ut Thoracum est et Scybelites) commune id est, uttemporis
+<lb/>tractu colorem flavum acquirant et splendescentis nonnihil
+<lb/>habeant ignis instar; nam nigra quoque (cujusmodi
+<pb n="6.805"/>
+<lb/>est apud nos, quod Perperinac provenit) veterascentia in
+<lb/>rubram prius aut fulvam qualitatem, delude in flavum quoque
+<lb/>colorem abeunt : sic album quoque, quale est Bithynum
+<lb/>Aminaeum. Inveteratum ita vinum cecubum R ornans vocant,
+<lb/>cujus tu deinde genus non facile deprehendas. Jam
+<lb/>hujusmodi vinum amarum quoque fuerit, ideoque non perlude
+<lb/>potui accommodum. Vina hujuscemodi eorum mangones,
+<lb/>novellis admixtis, ut vetusta drvendunt, impolluta
+<lb/>facta ex amaritudine iis, qui vini gustum non exacte assequuntur.
+<lb/>Ergo adeo vetustorum potus fugiendus, sicuti novellorum
+<lb/>nimiunt ; haec enim plus jusio, illa neutiquam excalefaciunt.
+<lb/>Maxime autem a vinis natura crassis abstinere
+<lb/>convenit, donec novella sunt, siquidem tantum abest,
+<lb/>ut ad ciborum concoctionem conducant, ut vel ipsa aegre
+<lb/>concoquuntur ; praeterea nec alvum subeunt, nec facile distribuuntur,
+<lb/>neque minas movent, nec sanguificationi, nec
+<lb/>nutritioni conserunt; .tum in ventre diutius moram trahunt
+<lb/>suspeufa, ut aqua ; sique de his paululum quis biberit, promple
+<pb n="6.806"/>
+<lb/>id acescit. Sula ea bona esse possunt, si bibantur, novella,
+<lb/>quae substantia tenuia sunt, quod genus in Italia est,
+<lb/>quod Cauriunr vocant, et Albanum, et eorum, quae in Sabirris
+<lb/>etjThuscis nuscuntur, quaedam; neque enim cuncta
+<lb/>hujusmodi sunt. Sed circa Neapolinr quoque in imminenti
+<lb/>-huic colle natum Aminaeum quamprimum bibi potest. Tale
+<lb/>est in Afia apud nos Libenum, et Ariyinum, deinde etiam
+<lb/>Titacaxenum. Atque haec ego exempli causa retusi. Caeterunr
+<lb/>hujusmodi rina ubique fere gentium reperi, .sed quae
+<lb/>advenae ignorent duplici de causa, tum quod paucissima omuino
+<lb/>proveniunt, tum vero quod longam navigationem non
+<lb/>sustineant, nec possint propterea a mercatoribus in alienas
+<lb/>regiones transvehi.. Promptunr tamen suerit talia vina diguovisse,
+<lb/>omnium quidem in primis quod ea tenuitate ad
+<lb/>aquam proxime accedant, deinde albedine quoque; quin
+<lb/>gestata rideri etiam aquosa possint, quaeque astringendi vim
+<lb/>evidentem nullam obtineant, iuterque diluendum aquae
+<pb n="6.807"/>
+<lb/>multae mixturam non ferant; unde ea veteres medici paucifera
+<lb/>vocarunt. Quin imo, quemadmodum fulva, quae potentia
+<lb/>calida scuti, statim caput replent, sic haec praeter id,
+<lb/>quod nihil unquam noxae asserunt, etiam Iuvant, fedatis
+<lb/>interdum doloribus parvis quibusdam, quos contenti in ventre
+<lb/>humores procreare solent. Nam quum caput non solum
+<lb/>tunc doleat, quum ipsum affectu proprio laborat, sed
+<lb/>etiam ob ventriculum, qui humorum vitiosorum vapores
+<lb/>transmittat, hujusmodi dolor vini pauciferi potione sanatur,
+<lb/>cui pauca lusit astringendi vis; nam quae omnino exulatione
+<lb/>languent, ut Tiberium apud nos, in Italia autem nonnulla
+<lb/>ex Sabinis, tanto sunt iis, quae modice astringunt, deteriora,
+<lb/>quanto aquam bonitate vincunt. Invenias certe quosdam,
+<lb/>quibus ex aquae potu dolore caput corripiatur, praesertim
+<lb/>vero, quum ea vitiosa fuerit, quippe quae quum corrumpitur,
+<lb/>tum nativum ventriculi robur exolvit, qui quum iinhecillus
+<lb/>suerit, solent eo ex corpore deferri humores ex bile
+<lb/>tenues quidam, id quod jejunantibus etiam usu veniti, a quibus
+<pb n="6.808"/>
+<lb/>noxis malisque vinum, quale modo diximus, hominem
+<lb/>liberum facit, primum quidem statimque contemperationis
+<lb/>ratione, tum paulo post:, quod, quum robur addiderit ventrrculo,
+<lb/>is quae nocent a fe deorsum propellat. Nihilo tamen
+<lb/>femus homini temperie calidissima praedito , vel naturali,
+<lb/>vel ex aetate, utilius aqua bibitur, quam vinum ; quod
+<lb/>si quando vino indigeat, dandum, quod. tenue sit et mediocriter
+<lb/>ausierum. Ad eundem plane modum in cibo omni
+<lb/>ac potu praestiterit non simpliciter ita unoquoque uti, nisi
+<lb/>distinctis utentium prius naturis. Maxima porro vini discrimnra
+<lb/>sunt, si quidem speclatim, sicuti distinximus, . considerentur,
+<lb/>pauca in aliis ; neque enim lentem aut brassicam
+<lb/>reperias, quae humectet, sed aliam quidem alia siccantem
+<lb/>minus, quae vero humectet, nullam; longeque adhuc minus
+<lb/>caeparum genus aliquod, aut porri, aut allii reperias, quod
+<lb/>refrigeret, sed magis minusque cuncta calefaciunt, neque
+<lb/>etiam lactucam, quae calefaciat, aut atriplicem, aut blitum,
+<lb/>aut malvam. Neque tamen manis minusque in sus
+<pb n="6.809"/>
+<lb/>permagno discrrmrne distant. At lu vinis veto sii <hi rend="u">Ulmum</hi>,
+<lb/>quod Romani, sicuti diximus, cecubum vocant, ab albo
+<lb/>et austero et novello crassoque vino tantum distat, .ut
+<lb/>alterum vehementissime calefaciat, alterum feusibiliter refrigeret.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">Nec parva fune est in melle differentia.
+<lb/>Pravum certo, quod aut male olet, aut gustatum extraneae
+<lb/>cujusdam qualitatis admixtionem. detegit, nec mel quidem
+<lb/>censendum. lirculpati vero messis differentiae <hi rend="u">in</hi> eo verfantur,
+<lb/>quod magis mhrusque aliud alio dulce atque acre
+<lb/>sit: in quo quod dulcissimum simul atque acerrimum fuerit,
+<lb/>primas virtutis partes obtinet. Mel quidem omne, eo quod
+<lb/>potentia calidum sit, rd commune habet, ut facile in bllem
+<lb/>vertatur in corporibus calidis, ideoque naturis, quae patuitrilores
+<lb/>sunt, cibus est in primis accommodus, sienssique
+<lb/>aetati, sicuti frigidis quoque morbis. Acetum multum aetati
+<lb/>quidem omni et naturae utilissimum ad incolumitatem tuto
+<lb/>servandam, quo riae omnes angustae expediuntur, ut rrusquam
+<pb n="6.810"/>
+<lb/>crassius glutinosusque humor haereat. Eam itidem ob
+<lb/>rem, quae medici salubria medicamenta vocant, ea sunt omnia
+<lb/>attenuandi vi praedita ; atque haec uti ad sanitatis tutelam
+<lb/>tutior est ea, quae cr assum facit, sic certe .habitum bonum
+<lb/>roburque praestare non potest. Sunt autem, qui masint
+<lb/>non admodum tuta valetudine frui, dum bene habiti
+<lb/>sint, quam integram sanitatum possidere, ipsi interim tenues
+<lb/>perpetuo atque imbecilles. Ex iis, qui cum bona una habitrtdine
+<lb/>ac robore sani esse student, alii sibi ipsis vivunt,..
+<lb/>alii militarem aut civilem ritam ingressi noctu surgere eoguntur,
+<lb/>totanrque diem necessariis negotiis obeundis delatigari;
+<lb/>qui, fi modo possint, ante balneum exercere se debent,
+<lb/>tuncque exercitationis parte ea uti, quam gymnastici apotherapium
+<lb/>nominant; multis tamen ob negotia ne hanc quidem
+<lb/>adhibuisse vacat, qui ut perpetuo incolumes perflent,
+<lb/>fieri non potest, quantumvis frugali victu utantur. Qui vero,
+<lb/>quae debent, quoad ejus fieri potest, exequuntur, raro
+<lb/>aegrotanti Ili plane cibos attingant necesse est alimento
+<pb n="6.811"/>
+<lb/>mullo praeditos, qui humores orasses gignunt; id quod
+<lb/>moderate certe faciendmn, eoque tempore opportune, quum
+<lb/>manifesto indigentiam sentiunt; reliquo tempore universo
+<lb/>cibis utendum luter eos , qui valenter parumque nutriunt,
+<lb/>mediis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">Semper tamen ab iis abstinendum, qui
+<lb/>succi mest sunt, nisi si quando tamen necesse sit aestatis
+<lb/>tempore laborantibus corporis totius squalorem caloremque
+<lb/>curare. Quo plane tempore commode sumi prius poma
+<lb/>possunt, et pruna, et mora, et cerula; quin et cucumeris
+<lb/>tunc, et peponis, et melopeponis paululum assum potest,
+<lb/>deque praecoctis, quae vocant, aut Perficis ; tum ex melea,
+<lb/>quam sic Romani vocant, refrigerata et aphrogalacte lacta- riisque
+<lb/>eduliis, cuiusmodi est, quod άργιτρόφημα vocant;
+<lb/>eodemque modo ficus frigidae et cucurbitae accommodae sic
+<lb/>affectis. Atqui temperatus homo aliter omnino possit contractum
+<lb/>ex praedictis laboribus corporis squalorem refrigerare
+<pb n="6.812"/>
+<lb/>atque humectare. Is enim a balneo, epota prius aqua,
+<lb/>deinde etiam rino mediocriter aquofo, tum notione hac omni
+<lb/>vomitione rejecta, assumere prius lactucam poterit, olus
+<lb/>iimoxium juxta ac refrigerans , tum deinde suillum pedem
+<lb/>ex aceto et garo bene elixum, gallinarumque alas aut anseris,
+<lb/>liujusque etiam ventrem, pisciumque mosti carne praeditorum
+<lb/>frictum aliquem. Possit idem, si velit, ex oleraceis
+<lb/>quoque nonnulla attingere, quae succi non mali sint,
+<lb/>qualis est malva et cucurbita, mox vinum bibere frigida
+<lb/>valde dilutum, atque etiam antea salsamentum degustare,
+<lb/>ovaque tremula, quae vocant, ac pisces, ex oleo et garo
+<lb/>qui sumuntur; praestat enim (sicuti diximus j aridam corporis
+<lb/>caliditatum frigida aqua curare, vitatis subinde cibis
+<lb/>fuero malo praeditis. Etiam frigida alica ex mulso et fiigido
+<lb/>vino eidem corporis affectui remedio est sine cacochyuria.
+<lb/>Mihi certe ipsi fatis plerumque fecit in affectu hujusmodi
+<lb/>ptisanae memoris bene refrigerati usus, quo tempore
+<pb n="6.813"/>
+<lb/>paulo aule dicebam frigidam potari. commode posse. Neque
+<lb/>unus -tamen fit nnicuique refrigerantis cibi potusque modus ;
+<lb/>quibus quidem nive uti mos sint., hac ipsa refrigerent
+<lb/>ante, qui vero fontana, eadem hac recenti aqua
+<lb/>utantur, nulla nivis necessitate. Sit porro dilutum- quoque
+<lb/>vinum ad hunc modum ante refrigeratum; sic namque
+<lb/>vocare melici solent vina ita gelidissima aqua refrigerata,
+<lb/>vale videlicet,. quo vinum continetur, in aquam demisso.
+<lb/>Atque haec ego iis- consulo, qui .ritam negotiis..plenam
+<lb/>degunt, cuiusmodi sunt, .qui gentibus ac civitatibus
+<lb/>regendis praesunt, horumque lu primis. ministri, nec sane
+<lb/>nunus, qui militiam exercent, aut iter longinquum ingrediuntur.
+<lb/>At quicunque negotiis his soluti degunt, iis, si
+<lb/>quidem, . ut soliti sunt, se exerceant, perquam raro frigidae
+<lb/>usus necessarius suerit: quod si sese non exerceant, ac. caloris
+<lb/>multum persentiunt aestate rigente, .tuto ii fontanam
+<lb/>biberint, repudiata nive. Nam tametsi ipsa statim nix noxa
+<lb/>sensibili non rideatur juvenum corporibus officere, moreluente
+<pb n="6.814"/>
+<lb/>tamen temporis processu occulto paulatim noxa, vergente
+<lb/>nempe aetate, articuli his nervique ac viscera morbis
+<lb/>corripiuntur vix aut nunquam sanandis; ac verisimile certe
+<lb/>fit, ut unicuique ea potissimum corporis pars afficiatur, quae
+<lb/>natura omnium maxime suerit imbecilla.</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="indent">Maxime autem ad succi mali morliorumque
+<lb/>generationem facit cruditas assidua, sive ea boni, sive
+<lb/>mest succi cibos sequatur; liquet tamen, deteriorem esse
+<lb/>in mali succi cibis. Qui quum bipertiti sint, in iis, qui
+<lb/>succum gignunt tenuem, morbi fiunt acuti cum malignis
+<lb/>una febribus ; sin autem in partem unam aliquando denum- .
+<lb/>bat succus malus, tum erysipelata, tum herpetes, et si quis
+<lb/>alius praeterea est calidus ita assectus : in iis vero, qui erus-.
+<lb/>sum .succum creant, articulares morbi, podagrae, nephritides,
+<lb/>asthmata, lienisque ac jecoris fcirrhosi affectus.- At
+<lb/>quorum succus malus melancholicus suerit, cancri his, et
+<lb/>leprae, et psorae, et quartanae febres, et melancholiae, et
+<lb/>decolorationes accidunt nigrae cum lienis una tumore non
+<pb n="6.815"/>
+<lb/>dissimili, quin et nigras plerisque varices et haemorrhoidas
+<lb/>attulit hujuscemodf suceus. - Assectus vero ex succorum variorum
+<lb/>commixtione herpetas sariunt, ulceraque, quae phagedaeuica
+<lb/>vocant, malignaque omnia, ef acutas febres, quae
+<lb/>ab intermissione r evertuntur,. sic ut iterum. tempore producantur.
+<lb/></p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

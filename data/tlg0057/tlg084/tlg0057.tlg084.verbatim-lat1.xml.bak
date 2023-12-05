@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De substantia facultatum naturalium fragmentum</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg084.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="757" to="766">757-766</biblScope>
+              <date>1822</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x04">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="342" to="343">342-343</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x01">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="3" to="6">3-6</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x05">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg084.verbatim-lat1">
+<pb n="4.757"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="4.757"/>
+
+
+
+<p rend="indent">Ac quisquam fortassis eorum, qui asserunt, calida
+<lb/>quidem esse animalia, frigidas vero plantas, controversia
+<lb/>dignum existimabit, haud intelligens, quod, ubi quis acGuratius
+<lb/>edisserit, id omne, quod quaesito consequens est,
+<lb/>ad perfectam ufque cognitionem persequitur, ubi vero de
+<lb/>re quapiam alia cogitat obiter, de his salis est, si dicat
+<lb/>calidum aut frigidum, quod pervium est sensus. Plato
+<lb/>igitur ipse animata quidem semper appellat animalia, lapides
+<lb/>vero et herbas et ligna, atque, ut generatim dicam,
+<pb n="4.758"/>
+<lb/>stirpes omnes inanimata esse corpora dicit. At cum in
+<lb/>Timaeo naturalem speculationem paucissimis auditoribus
+<lb/>scientificas rationes assequi valentibus scribens, post.habita
+<lb/>vulgi sententia, in mundum totum extensam ipsius
+<lb/>asserit animam, sibi ipsi virum non constare ac pugnantia
+<lb/>.dicere nequaquam putandum esit, uti neque Aristotelem
+<lb/>aut Theophraftum, qui multitudini alia, familiaribus
+<lb/>vero ac sodalibus^ auscultatione conscripsere. Nam dum
+<lb/>aliquod Pensum omnem effugiens dogma, pluribus verbis,
+<lb/>ut demonstretur, indigens, intempestive recitatur, auditores
+<lb/>offendit. Non prius igitur de ejusmodi rebus pronunciare
+<lb/>convenit, -quam paulatim per longam demonstrationem
+<lb/>ad rationis totius conclusionem fuerit perventum, neque
+<lb/>mundi animam per lapides et testas et arenam et flagrantIa
+<lb/>. putrescentia que animalium permeare cadavera.
+<lb/>Nam si simpliciter, ut multi palam audiunt, quidquam id
+<lb/>Tsato dixisset, utique omnes eum . patrocinantes
+<pb n="4.759"/>
+<lb/>condemnarent;. Ego igitur, quibus isse adductus in hanc
+<lb/>opinionem devenerit, alus commentariis aperui, nihil fano
+<lb/>ipsi consentiens aut repugnans. Neque enim ille ipfe ita
+<lb/>pronunciat, quae ad naturalem pertinent speculationem,
+<lb/>sed. usque ad probabile ac verisimile eam progredi inquit.
+<lb/>Quod igitur plantae principium in fe motus habeant et
+<lb/>familiarium sensum atque alienorum, verum esse arbitror,
+<lb/>dicere autem intempestive talia magis fugio quam ilie
+<lb/>ipse, Verum si me quis roget, quid superius animalia
+<lb/>stirpibus -habeant, respondeo et fenfum et appetitionis
+<lb/>motum et vires modo expositas, nempe attractricem et
+<lb/>expultricem et retentricem et alteratricem : quas non
+<lb/>animales, sied naturales voco, cum ex hoc neque medieae
+<lb/>arti, neque morali philosophiae quicquam incommodi
+<lb/>videam accedere. At ubi de naturali moralis philuso.phiae
+<lb/>parte, qualem ducit Plato, dicere mihi fuerit necesse,
+<lb/>nonnulla quidem plane approbo ac viro suffragor:
+<lb/>in quibusdam vero ad probabile usque accedo: quemadmodum
+<pb n="4.760"/>
+<lb/>in quibusdam prorsus addubito, cum in dissoni^
+<lb/>ast alterum eorum, ut quod probabilius sit, nequaquam
+<lb/>inclinet animus. Quemadmodum nos animae compotes
+<lb/>esse omnes homines norunt, quippe qui tum ea palam
+<lb/>Vident, quae per corpus geruntur, cum ambulamus, currinfus,
+<lb/>luctamur, ac variis modis sentimus, tum vero ex
+<lb/>quodam nobis omnibus natura. probato axiomate, quo
+<lb/>nihil sine causa fieri aestimamus, causam horum subesse
+<lb/>aliquam operum concipiunt animo, sed cum, quaenam sit
+<lb/>causa horum operum, non intelligatur, imposito inde nomine,
+<lb/>quod facere ea possit quae facit, vim esse rerum
+<lb/>^uae fiunt singularum effectricem. Sic igitur omnes et
+<lb/>scammonium alvi purgandae, ut mespilum supprimendae,
+<lb/>facultatem obtinere dicunt. At qui naturalem (ut vodant)
+<lb/>speculationem elaboravere, aliter alii sibi persuasorunt:
+<lb/>alii incorporeas quasdam habitare in sensilibus substantiis
+<lb/>facultates dixerunt, alii substantias ipsas pro sita
+<lb/>quamque natura agere, sive ex quatuor elementorum constet
+<pb n="4.761"/>
+<lb/>temperatura, sive ex certa primorum corporum compositione,
+<lb/>quae aliqui atomos, alii autem insecabilia,
+<lb/>quidam similaria inquiunt esse. Etenim nostram quoque
+<lb/>ipsam animam sunt qui incorpoream quandam substantiam,
+<lb/>sunt qui spiritum, sunt alii, qui ne subsistentiam
+<lb/>quidem ejus peculiarem usiam este arbitrentur, sed corporis
+<lb/>substantiae proprietatem eorum, quae facere nata est,
+<lb/>dici facultates habere: cum nullae sint earum propria nar
+<lb/>tura praeditae, sed substantia per fe agens opera sua et a
+<lb/>Te facultates ad ea quae siunt dicatur eorum quae natura
+<lb/>efficere apta esit obtinere. ltaque ego medio quodam
+<lb/>inter hos ordine meipsum statui. Nam cum de caeteris
+<lb/>dogmatis absolute pronunciem, partim quod veritatem
+<lb/>in ipsis norim, partim quod ejus nihil noverim,
+<lb/>in iis, quae modo recensui, usque ad probabilitatem
+<lb/>provehor, statius quidem esse existimans de lis perinde
+<lb/>atque in aliis , uti fenferim , profari , haudquaquam
+<lb/>vero mihi ipsis, id .quod alii faciunt, persuadens horum
+<lb/>certam habere cognitionem, quorum certam demonstrationem
+<pb n="4.762"/>
+<lb/>minime stum consecutus. Libet igitur et de lis omnibus
+<lb/>disserere, quae cognitionem quidem ad corporis sanitatem
+<lb/>aut morales animi virtutes necessariam non habent,
+<lb/>caeterum decus afferrent, si ita certo cognita forent,
+<lb/>quam ea, quae nacta funt absolutionem in medicina ac
+<lb/>morali philofoplua: quam ego fano utilem este <hi rend="u">affir</hi>mo et
+<lb/>quae comparari possit ab omnibus operam navare volentibus :
+<lb/>ac de hoc a me scripti sunt duo libri. Nunc, quod
+<lb/>sum pollicitus, praestabo, utique hinc initio desumpto. .
+<lb/>Corpora quidem, quae apud nos sunt, ex quatuor elementorum
+<lb/>temperatura conflari universa ce^to me scire dico:
+<lb/>et praeterea ex ipsis per ste tota temperatis, non, ut putabat
+<lb/>Empedocles , in exiguas partes comminutis. Num autem
+<lb/>se totas p erva dentibus corporeis invicem substantiis,
+<lb/>an siolis qualitatibus, neque cognitu necessarium arbitror,
+<lb/>neque pronuncio. Caeterum qualitatibus fieri temperamenta
+<lb/>probabilius censeo. Animam vero, an immortalis
+<lb/>corporeis mixta substantiis animalia regat, quemadmodum
+<pb n="4.763"/>
+<lb/>an ulla quoque per fe animae essentia sit, constanter
+<lb/>nosse haudquaquam profiteor. Hlud tamen milli liquido
+<lb/>constat, quod, quamvis introducatur in corpora, inserviat
+<lb/>tamen eorum naturis, quae ex certa, ut dixi, elementorum
+<lb/>temperatione proveniunt. Atque hac in re nihil
+<lb/>Pane medicam artem inde offensum iri puto, quod in animae
+<lb/>vocata immigrasse n e et transmigratione exploranda
+<lb/>hallucinemuL Namque et animam recepturum corpus
+<lb/>idoneum esse oportet, et eo intemperie admodum alterato
+<lb/>animam protinus digredi, tum vehementer algescente in
+<lb/>evacuationibus [anguinis, ac refrigerandum medicaminum
+<lb/>potionibus , cumque ambiens aer frigidus impendio fuerit,
+<lb/>tum immodice quoque per febres calescente et flammae infpiratus,
+<lb/>aut supra modum calefa cientium medicaminum
+<lb/>haustus. Non ita vero solum alterata corporis temperie
+<lb/>animam videmus ab ipfo separari, sed ubi etiam privatam
+<lb/>omnino respiratione fuerit, cum quaedam tunc quoque
+<lb/>alteratio fiat in corpore. Itaque si naturalis in corpore
+<pb n="4.764"/>
+<lb/>aequabilitas servetur temperamenti, animam ab ipso separati
+<lb/>impossibile esse mihi videor intelligere. Proinde
+<lb/>ejus essentiam scire quaenam sit, neque ad morborum
+<lb/>curationes, neque ad sanitatis tutelam necesse est, uti neque
+<lb/>ad moralem philosophiam, aclivamque ac civilem.
+<lb/>eam enim quivis, ut lubet, a contemplatrice distinguens
+<lb/>nominet. Sed satius a me de his in aliis . commentariis
+<lb/>scriptum est. Cum vero, quot quales ve naturales facultates
+<lb/>sint, ostenderimus, quaestio quaedam per consequentiam
+<lb/>oboritur; quomodo familiare eas attrahere dicamus, allos
+<lb/>num autem secernere. Siquidem impossibile esse videtur,
+<lb/>ut, antequam noscant, quale familiare sit, quale alienum,
+<lb/>aut attractionem faciant familiarium, aut alienorum fecretionemy
+<lb/>at agnoscere senforIae facultatis munus esse constaI.
+<lb/>Ob id igitur quaedam in hoc sermone obauditio est,
+<lb/>tametsi Plato aperte dixerit: - Cenus sensionis in plantis
+<lb/>diversum est: cum auditores quandam eis agnoscendorum
+<pb n="4.765"/>
+<lb/>familiarium atque alienorum vim inesse . existiment^
+<lb/>horum enim tantum ipsis dignotio est, quae tum .per. voduptatem,
+<lb/>tum per dolorem , aut aliquos similes his proportioneve
+<lb/>convenientes affectus progignitur, cum sensilium
+<lb/>aliarum cognitionum nequaquam particeps sit vegetans
+<lb/>anima. Neque edim visibilium, neque audibilium, neque
+<lb/>olfactilium, neque gustabilium , neque tactilium qualitatum
+<lb/>cognitionem obtinet, sed eorunTtantum, quae alere vel
+<lb/>non alere possunt. Nam quae alendo fiunt, ad se ipsia trahit,.
+<lb/>desinet, concoquit, et immutat ad id, quod nutriendae
+<lb/>substantiae familiare est: quae autem nutrire non postsunt,
+<lb/>non admittit. ltaque recte dicere mihi Plato videtur,
+<lb/>stirpes fenfu esse praeditas, familiarium videlicet atque
+<lb/>alienorum , eatenufque animalia convenienter dici,
+<lb/>cum non eo motu careant , qui ex ipsis esu Sed cum nec
+<lb/>ejusmodi cognitio ad medicinalem philosophiam necessaria
+<lb/>sit, contentus fum solius gratia consequentiae ad verisimile
+<lb/>ustque progrediens Platonem commendare et plantas
+<pb n="4.766"/>
+<lb/>appellantem animalia et sensus unius, qui familiaria
+<lb/>quidem et aliena discernat, participes asserentem: qui (si
+<lb/>exacte consideres) jucundorum et non jucundorum gene*^
+<lb/>ris esse videbitur. Non enim alia uHa de caula familiare
+<lb/>eas attrahere vel sibi ipsis assimilare, quam ob fruitionem
+<lb/>et ingenitam eis voluptatem, dicere possumus. Verum
+<lb/>scire hoc duntaxat, ut dixi, ad medicinam fatis est,
+<lb/>nempe attrahere familiare, quo etiam aluntur, alienum
+<lb/>autem excernere. Caeterum magis adhuc ad moralem
+<lb/>philosophiam inutilis ejusmodi rerum exquisita cognitio
+<lb/>est : quapropter neque Plato ejus meminit.</p>
+
+
+</div></div></body>
+  </text>
+</TEI>

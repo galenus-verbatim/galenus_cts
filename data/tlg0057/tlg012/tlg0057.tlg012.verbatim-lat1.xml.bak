@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De ossibus ad tirones</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg012.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="732" to="778">732-778</biblScope>
+              <date>1821</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x02">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="719" to="727">719-727</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x05">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="9" to="24">9-24</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x04">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg012.verbatim-lat1">
+<pb n="2.732"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="2.732"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI LIBER DE OSSIBVS AD
+<lb/>TIRONES.</head>
+
+
+<p>Osse singula per se qualia ipsa sint quamque invicem
+<lb/>constructionem habeant, nosse dico melicum oportere, fi
+<lb/>recte ipsorum fracturas et luxationem curaturus esu Perfpicuum
+<lb/>namque est in iis quae medicinae sunt omnibus,
+<lb/>quod fecundum naturam est, id scopum habendum esse.
+<lb/>Quicunque vero hoc ignorat, neque quando partes asteeme
+<lb/>a natura sua excesserint , neque quo pacto ad id
+<lb/>quod fecundum naturam est reducendae sint, intelliget.
+<pb n="2.733"/>
+<lb/>Quare neque nosse morbos, neque recte sanare poterit.
+<lb/>Sunt sane ossa et durissimae et avidissimae partes animalis,.
+<lb/>et (ut dixerit quispiam) maxime terrestres. Caeterae autem
+<lb/>corporis substantiae tanquam sundamenta quaedam ac fuicimenta
+<lb/>subjecta sunt. ossibus siquidem adnata et stabilita
+<lb/>sime omnia. Sunt autem ex ipsis alia quidem magna,
+<lb/>magnas caritates habentia, medullae plena; alia vero et
+<lb/>parva et solida sunt, et medullae expertia, senfilemque .
+<lb/>cavitatem nullam habent. Magnorum autem quamplurimis
+<lb/>epiphyses sunt ad aliorum ossium extremum, ut bracuio
+<lb/>quidem superne, cubitu vero inferne, radio autum
+<lb/>et femori, et tibiae, et surae utrobique. Maxilla autem
+<lb/>inferior medullam habet quidem, at epiphysur non habet,
+<lb/>sed extremorum ipsius inferius quidem per symphyfiu
+<lb/>(coalitum) unitum est, superius autem duas apophyfes
+<lb/>(proeessiis) habet, aliam . coronen, aliam cervicem tantum.
+<lb/>Apophyfis enim ab epipbyfi differt, quod epiphvfis quidem
+<lb/>alterius cum altero unitio sit, at apophysi. totius
+<pb n="2.734"/>
+<lb/>ossis pars. Fortassis autem et de aliis nominibus, quibus
+<lb/>hoc in libro utemur, jam disserendum esit, ne, quum his
+<lb/>in media narratione utimur, aut obscurum fiat quod dicetur,
+<lb/>aut doctrinae tenor nobis intercidatur, quodcumque
+<lb/>occurrerit, explicare semper exoptantibus. optimum autem
+<lb/>milli videtur lune exordiri. ossium in hominibus
+<lb/>omnium inter se connexorum universa quidem compages
+<lb/>sceletus nominatur. Quare nonnulli jam libros
+<lb/>suos, in quibus de ossibus disseruerunt, sic inscripserunt:
+<lb/>De sceleto. Est autem modus compositionis eorum genere
+<lb/>duplex ; alius quidem per articulum, alius vero per symphyfin.
+<lb/>Utriusque autem species et differentiae plures
+<lb/>sunt. Articulus igitur naturalis ossium constructio est; at
+<lb/>fymphysis ossium unio naturalis. Utrique autem definitioni
+<lb/>additur naturalis, quod et parum luxata et omnino
+<lb/>luxata inter se quidem cohaereant, sed non per naturam,
+<lb/>et quaecunque fracta callum produxerunt, uniantur quidem,
+<lb/>sed .non natura. At Hippocrates etiam alterius cohaerentium
+<pb n="2.735"/>
+<lb/>ossium extremum articulum multoties nominat,
+<lb/>non tamen quodcunque, sed et quod rotundum est,
+<lb/>et quod in proximi cavitatem incidit. Articuli autem
+<lb/>differentiae quidem duae sunt, diarthrosis et synarturefis,
+<lb/>quae ab invicem pro motus quantitate discrepant. Diar-/
+<lb/>tbrosis siquidem ossium structura est evidentem luter se motum
+<lb/>habentium, synarthrosis vero ossium quidem et
+<lb/>ipsa compositio est, non tamen evidentem motum neque
+<lb/>magnum, sed et obscurum et captu difficilem habentium.
+<lb/>Quod autum nullum uifcrimen fit, structuram ossium, aut
+<lb/>compositionem, aut cohaerentiam dicere, plane perspicuum
+<lb/>est. Species porro diarthruseos quidem tres sunt. Α recautioribus
+<lb/>autem melicis prima quidem enarthrofis, altera
+<lb/>arthrodia, - tertia ginglymos appellatur. lita igitur
+<lb/>dicta nomina veteribus medicis non fuere admodum consueta
+<lb/>Verum inarticulatum esse, articulate et ginglymi
+<lb/>more committi; praeterque haec et arthrodes articulate
+<lb/>ac ginglymoides invenire licet etiam apud illos conseripta.
+<pb n="2.736"/>
+<lb/>Neque fortassis etiam absurdum sit nomina confingere
+<lb/>perspicuae doctrinae gratia , ab iis , quae jam posita
+<lb/>sunt, derivantes. Enarthrofis igitur est, quum excipiens
+<lb/>caritas. idoneam habet profunditatem , et quod caput in
+<lb/>eam inferitur oblongum existit. Arthrodia vero, quum
+<lb/>caritas superficiaria est et caput depressum. oblongum
+<lb/>autem et depressum caput voco., utrumque ad cervices,
+<lb/>quibus adnata sunt, referens. Cervices autem tenues sunt
+<lb/>ossium apopliyfes seu pro cesses. Definmrt autem in extremum
+<lb/>et erassius et orbiculatum, quod sane caput nominatur.
+<lb/>Quum vero in acutum extremum apophysis
+<lb/>definit, non jam cervix, sed corone vocatur. Nihil au..
+<lb/>tem resert, nec si corouou dixeris. Et vero- cavitatum
+<lb/>capita suscipientium ea, quae profundior est, cotyla (ace-.
+<lb/>tubulum) vocatur, idque cousuetum omnibus melicis nomen ;
+<lb/>at superficiaria <milestone unit="ed1page" n="720"/> glene a nounullis appellatur. Tertia
+<lb/>diarthroseos species , quam gluglymoni nominari nixi- .
+<lb/>mus, fit, quum ossa sese vicissim ingredientia coniungunt
+<pb n="2.737"/>
+<lb/>tur , ut se habet in vertebris et cubiti cum brachio dia
+<lb/>arthrofi, Atque -his -quaedam inest differentia. In vertebris
+<lb/>quidem media in. utramque earum supra infraque
+<lb/>appositam subit; humeri vero ac cubiti mutuus ingressus
+<lb/>est. At fynarthroseos ipsius tres quoque sunt species, sutura,
+<lb/>gomphofis et harmonia. Sutura quidem compositio
+<lb/>est consutis rebus similis, ut in capitis ossibus se res. habet.
+<lb/>Hanc autem explicare studentes, nonnulli serratam
+<lb/>structuram definiunt, alii ad unguem compagem; indicantes
+<lb/>(opinor) uobisque in memoriam revocantes, illi
+<lb/>quidem mutuum serrarum congressum, quum alterutrius
+<lb/>dentes gibbi in proximae simis vicissim inseruntur, hi vero
+<lb/>earum rerum coitionem, quae ad unguem compingi
+<lb/>dicuntur. Ipfa vero fit, quum gibbae partes ungui fignra
+<lb/>similes ad suscipiendum idoneos in simus subeunt.
+<lb/>Harmonia vero syuarthrosis est per simplicem lineam.
+<lb/>Sic autem fe habent inter fe tum superioris maxillae osisium
+<pb n="2.738"/>
+<lb/>nonnulla, tum capitis ad ista. At gomphosis per
+<lb/>impactionem fyuarthrofis est. Id vero jam quodammodo
+<lb/>alternat et symphysi proximum est, ut, quum aliquid penitus
+<lb/>impactum est, ne minimus quidem .motus ei relinquatur,
+<lb/>ut in dentibus. se habet. Sed non esse praesepiolis
+<lb/>suis congerminales hos, indicant ii, qui et eximuntur,
+<lb/>et sponte decidunt. Sed quoniam de articuli differentiis
+<lb/>et speciebus omnibus diximus, deinceps opportunum sit
+<lb/>de symphysi disserere. Sunt autem hujus quoque duae
+<lb/>ac primae differentiae; Alia enim sibi mutuo, alia vero
+<lb/>aliorum ope connascuntur; inter se quidem, quae et laxiora
+<lb/>et molliora sunt, aliorum vero- ope, quae sicciora
+<lb/>et densiora. Hujus porro ipsius, quae aliorum ope fit, syn.arthroseos
+<lb/>tres .sunt omnino differentiae. Earum autem
+<lb/>nomina prisca. rictu sunt. . Siquis tamen recentiorum usi
+<lb/>nominibus velit, appellare licet syuchondrofin, quae per
+<lb/>mediam cartilaginem fit, symphyfin ; quae autem per nervum,
+<lb/>synneuiofin; quae denique per carnem, syssarcosin.
+<lb/>Quum autem nervorum nomen a .nobis commemoratum
+<pb n="2.739"/>
+<lb/>sit, de his quoque distincte agere operae pretium suerit.
+<lb/>Tria initus esse nervorum genera dixerunt. Nihil autem
+<lb/>vetat vel .differentias ea vel species appellare. Vocant
+<lb/>autem quosdam voluntarios,. qui ex- cerebro et dorsi medulla
+<lb/>oriuntur; quosdam vero ligamenta, horum autem
+<lb/>ortus est ab ossibus. Tertia denique eorum differentiatendo
+<lb/>quidem nominatur, qui ex musculis exoritur. . Ut
+<lb/>igitur ne hic quoquo propter homonymiam obscuritas aliqua
+<lb/>oboriatur, quicunque ex cerebro et dorsi medulla
+<lb/>ortum ducunt, nervos. eos voluntarios appellamus; quotquot
+<lb/>ex musculis ; tendones ; .quicunque demum ex ossibus,
+<lb/>ligamenta. Post hocce nominum - pactum tempestivum
+<lb/>jam fuerit de singulis privatim ossibus a crauio (sic
+<lb/>enim os capitis appellant] exordientes disserere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p>Dictum. quidem est etiam antea, tum .os
+<lb/>capitis cramum nominari, tum quasdam lu eo este futuras.
+<lb/>Quot autem eae et quae sint, et quae cujusque
+<lb/>earum forma sit, nondum . quidem . antehac dictum est,
+<pb n="2.740"/>
+<lb/>.verum in praesenti dicetur. Ac primum quidem ad capitis
+<lb/>figuram earum et posituram et numerum variare. - Est
+<lb/>.enim ipsius quae fecundum naturam est figura, oblongae
+<lb/>potissimunr sphaerae assimilis; alia vero, quae acuminata
+<lb/>vocatur. Quae ergo fecundum naturam est, et in autentorem
+<lb/>et in posteriorem partem prominentior existit, quae
+<lb/>tres in se suturas habet; duas quippe transversas, quarunr
+<lb/>altera ad occipitium sita est, ad sinciput altera;
+<lb/>tertiam vero aliam praeter ipsas, per longitudinem capilis
+<lb/>a melia posteriore in mediam anteriorem exporreictam.
+<lb/>At anteriorem quidem coronulam nominant, quandoquidem
+<lb/>in hac potissimum parte capitis coronae circumponuntur;
+<lb/>posteriorem : autem lambdoidem, quod tota
+<lb/>ipsius figura Λ. literae assimilis siti At ipsa suturarum
+<lb/>figura Η maxime literae similis esu Atque ejus quae secundum
+<lb/>naturam est figurae cranii suturae eo quo dictum
+<lb/>est modo se habenti Acuminatae vero ad hunc tuodum
+<lb/>.constitutae.funt. Quum quidem posterior eminentia
+<pb n="2.741"/>
+<lb/>perit, sutura quoque Iambdofdes simul aboletur, Ubi autem
+<lb/>anterior non. adest, coronalis etiam deperditur, fitque
+<lb/>secundum ipsorum utrumque remanentium. suturarum
+<lb/>sigma Τ literae persimilis; utrisque autem eminentiis per-:
+<lb/>euntibus , quae supersunt suturae duae ad rectos fele angulos
+<lb/>secant in. formam Χ literae: Sita autem est transversa
+<lb/>quidem per medium potissimum caput; altera -vero.
+<lb/>per longitudinem a posticis in antica tendit, quemadmodum
+<lb/>in ceteris .orantis omnibus. Haec enim semper fer-,
+<lb/>vatur; reliquae autem cum tota capitis figura variantes
+<lb/>evertuntur. At . sane duae quoque huic parallelae funt
+<lb/>lineae; quae fecundum capitis longitudinem a posterioribus
+<lb/>in anteriora .supra aures. ducuntur. Gignuntur autem
+<lb/>etiam hae ossibus duobus inter fe coeuntibus,. non autem
+<lb/>per suturam,. ut quae antedicta sunt. os enim, quod a.
+<lb/>sincipite descendit, in squamam paulatim attenuatum inferi
+<lb/>ori ab auribus ascendenti substratum .est. Proptereaqec-
+<lb/>nonnulli ne .futuras quidem..eas.simplici ter nominarunt,
+<pb n="2.742"/>
+<lb/>sed vel squamiformes suturas; vel squamiformes agglutinationes ;
+<lb/>a nobis autem perspicui documenti gratia
+<lb/>quae ad ames sunt lepidoides (satiamifermes j suturae vocentur.
+<lb/>Adeo ut propriae quidem capitis futurae quin-.
+<lb/>que fuit, lambdoiscrinis , coronalis, per longitudinem recta,
+<lb/>duae ipsi parallelae, quae in squamiscrmibus ossibus
+<lb/>sunt; aliae vero communes duae et superiori maxillae et
+<lb/>medio utriusque ossi sphenoidi, quod nonnulli capiti attile
+<lb/>linunt, nonnulli <milestone unit="ed1page" n="721"/> superioris esse maxillae efferunt.
+<lb/>Id vero- quale forma sit, et quantum magnitudine, et quo
+<lb/>potissimum in loco situm, tibi jam refero. Inferiora late-.
+<lb/>tum lambdoidis futurae extrema adusque basin capitis
+<lb/>protenduntur , et inter lapidosa ossa et diarthrosin cum
+<lb/>prima vertebra descendunt. Hic vero jungit ea inter fe
+<lb/>linea quaedam exigua, transversam posituram habens. Hanc
+<lb/>primum mecum cogita tum: capitis tum ossis in. narratione
+<lb/>propositi communem Nam utrinque .sursum tendens
+<lb/>ad temporum caritates eodem pe.veuit, i quo ea quae
+<pb n="2.743"/>
+<lb/>hic conveniunt suturae coronalis extrema. Hinc etiam
+<lb/>rursus deorsum versa et ad postremos dentes delata adpalatum
+<lb/>pervenit, intra se comprehendens os id, quod alo
+<lb/>ante dicta sutura circumscribitur, quod veluti cuneus quidam
+<lb/>inter caput et superiorem maxillam fruitum esu Hujus
+<lb/>itaque futurae quicquid sursum ad coronalis extrema
+<lb/>fertur, cum capitis osse commune est; quicquid vero ab
+<lb/>utroque latere ad palatum descendit, ossis sphenoidis (cuneisermisj
+<lb/>et superioris ma<hi rend="u">xilla</hi>e limes est. Ita namque
+<lb/>ob perspicuam doctrnram appellatur. Huic ossi porrigodes
+<lb/>(alatae) apophyies sunt una cum ipsarum utrinque
+<lb/>cavitatibus. Altera autem capitis sutura, quae ipsum a
+<lb/>superiori maxilla secernit, principium quidem habet e
+<lb/>temporum cavitatibus, quo in idem venire cum coronalis
+<lb/>extremis communis capitis et sphenoidis ossis sutura dieta
+<lb/>esu Inde vero ad sedes oculorum processit, perque.
+<lb/>medics ipsos delata ad superciliorum menium sibi ipsi
+<pb n="2.744"/>
+<lb/>jungitur. Ac sane; quum ita se haec habeant; sex ossa efficiruitur
+<lb/>totius capitis praeter fphenoides :. duo quidem sic.
+<lb/>ciphis communem habentia suturam longitudine rectam;</p>
+<p>alia vero duo sus inferiora, unum ad quamque amem;
+<lb/>et quintum praeterea illud: occipitis; et sextum id irimtis.
+<lb/>Terminant autem sincipitis quidem ossa retro certe
+<lb/>latera suturae lambdoidis; ante vero coronalis; inferne
+<lb/>autem squamiformes ; .superne. denique illa per longitudinem
+<lb/>recta. Posthac quae deinceps ad utramque amem.
+<lb/>sunt, supra quidem squamiformes discernunt; retro vero
+<lb/>laterum lambdoidis accrcmenta; ante vero communis et
+<lb/>capitis et sphenoidis futura. Sunt autem sincipitis qui-.
+<lb/>dem ossa quadrilatera; haec vero, quae jam memorata
+<lb/>sunt, trilatera. Quintum autem os capitis, quod ad decipitium
+<lb/>est, sutura quidem lambdoide .una cum illis acerementis,
+<lb/>et ea, quae ipsa adiungere dicta est, sutura tenui-.
+<lb/>natur. lu se autem. maximum capitis foraminum, ..quod
+<pb n="2.745"/>
+<lb/>ad .primam est vertebrato, continet. Reliquum autem os,
+<lb/>quod in fronte est, et coronalis sutura, et ea, quae capiti
+<lb/>cum superiori maxilla communis est, circumscribit. Ac
+<lb/>sime et sex quae memorata sunt ossium, illa quidem sincupitis
+<lb/>rarissima et infirmissima sunt, densissimum autem .
+<lb/>firmllfimumque , quod ad occipitium esit, utrorumque intermedium
+<lb/>illud frontis. Reliquorum autem, quae ad
+<lb/>ames sunt, utrumque multiforme esu Eorum namque
+<lb/>pars quaedam lithoides (petrosa ), sicuti etiam est, nominatur.
+<lb/>Id autem os protensis lambdoidis suturae sinibus
+<lb/>terminatur. ln eo et styloides (columnisermis) apophysis
+<lb/>est,. quam ego et belonoidem (acuifurmem) et graphoidem
+<lb/>(siylisermem) voco, et ea, quae auditus meatum continet.
+<lb/>Altera vero pars deinceps ea est, quae ad ecphyscs (exortus),
+<lb/>quarum et eam mastoidem (mamillarem) vocant, et lilam
+<lb/>eygomatis. Pars praeter has et tertia est ad tempora.
+<lb/>De capitis autem foraminibus in vasorum et nervorutu
+<lb/>dissectionibus dicetur. Horum enim causa effecta
+<pb n="2.746"/>
+<lb/>fiunt, et per unumquodque ipsorum aut arteria quaedam;
+<lb/>aut vena, aut nervus, aut horum aliqua, aut omnia transeunt.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p>Temporali musculo praepositum est os,
+<lb/>quod obliquam media sui parte futuram continet, ut posterior
+<lb/>ejus pars tota capitis offi, quod ad aurem est, conlinens
+<lb/>fit,. anterior . autem extremitati supercilii ei; quae
+<lb/>ad parvum est oculi angulum. Id autem os- universum
+<lb/>xygoma . (fugate ) nominatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Itaque de futuris, quae superiorem maxillamec
+<lb/>a capite et a fphenoide osse discernunt, antea dictum
+<lb/>esu, nunc vero de iis, quae in ipsis maxilla sunt, dicetur.
+<lb/>Sed satius fortassis est suturae nomen explicare,
+<lb/>quomodo. a..recentioribus omnibus anatomicis usurpatum
+<lb/>sit. .Nam et compositiones per harmoniam futuras nominare
+<lb/>consueverunt; idque meritu accidit. Non enim in
+<lb/>omnibus similiter erauiis serratam compositionem reperire
+<lb/>lice; exactam in.futuris omnibus, sed in eadem interdum
+<pb n="2.747"/>
+<lb/>ossium structura in altero quidem crauio suturam
+<lb/>cernas, in altero vero harmoniam. Nos equidem faepenumero,
+<lb/>excisis nonnullis ossibus hujusmodi, in imo sete
+<lb/>mutuo ingredi invenimus, ut eorum . compositio futurae
+<lb/>magis, non harmoniae similis esset ; ita ut ob id suturas
+<lb/>eas nominare omnes verendum fit nemini.. Est autem
+<lb/>prima quidem ea xygomatis infra exortum, et desinit
+<lb/>pars quidem ipfius altera, quae retro fertur, in cavum id,
+<lb/>quod fissi ipfo est xygomate , inique cum ea quae fphenolui
+<lb/>ossi communis est. futura committitur. Altera autem
+<lb/>portio, recta simul et obliqua ad fedos oculorum
+<lb/>ascendens, in mediam ipforunr inferiorem orbitam procedit,
+<lb/>ac tum ibi tres in partus fcissa esu Una quidem para
+<lb/>prope magnum angulum exterius ad medium superciliorum
+<lb/>ascendit. Altera veto, quae proxime .ipsam sita est,
+<lb/>per concavum <milestone unit="ed1page" n="722"/> sisti eundem angulum ad communem
+<lb/>capitis suturam pervenit; ut comprehendatur et ipsis. quur
+<lb/>dem angulus, atque naturale. foramen, quod ipsi subjacet,
+<pb n="2.748"/>
+<lb/>omnium quae hic sunt foraminum maximum sub dictis
+<lb/>suturis duabus esu. Tertia denique portio illius scissurae,
+<lb/>inferiorem fedis. oculi ambitum transcendens, ad imum
+<lb/>intro fertur, inique communi suturae capitis committitur.
+<lb/>Itaque tria sunt in .utraque parte a dextra et sinistra superiuris
+<lb/>maxillae ossa, quibus capiti committitur. Horum
+<lb/>igitur maximum. est id xygonratis. Nam et temporis nonnihil,
+<lb/>et supercilii, et sedis- oculorum comprehendit, et
+<lb/>parvum angulum universum in se continet ad id usque,
+<lb/>quod malum vocatur, procedens. Secundum autem et
+<lb/>situ et magnitudine est id, quod in oculo ,. in quo, qui ad
+<lb/>superiorem maxillam deveniunt nervi, continentur. Minimrun
+<lb/>autem omnium existit, quod circa magnum angulum
+<lb/>esu Nonnulli autem anatomici tria haec unum este
+<lb/>scribunt, quod geminas, quae ad oculorum radicem separantur,
+<lb/>suturas aut prorsus non rideant, aut de industria
+<lb/>tanquam res exiguas praetermittant. . Sub his autem omullius
+<lb/>ad utramque partum os unum .insignis. maguitudinis
+<pb n="2.749"/>
+<lb/>tribus dictis subjunctum est. Etenim et quod malunr
+<lb/>nominant, ejus portio existit, et omnium dentium,
+<lb/>exceptis inuisoribus, alveoli. Haec autem terminant sututae
+<lb/>quatuor; supra quidem ea, quam paulo ante a ju- :
+<lb/>gali ad menium superciliorum ascendere diximus; infra
+<lb/>vero ea recta, quae per medium palatum procedit. At
+<lb/>reliquae duae has copulant , alia, quae a medio quidem
+<lb/>supercilii incipit, ad nares autem fertur, interque caninum,
+<lb/>quem. vocant, dentem et inrisorios dilabitur, et alia partem
+<lb/>quidem ipsarum aliquam habet cum communi sphenoidis,
+<lb/>quantum in circuitu extremum dentem ambit,
+<lb/>reliquam vero propriam , quoad cum recta palati sutura
+<lb/>coierit. His autem ossibus, quae maxima sunt, ut dictum
+<lb/>est, alia duo exigua adjacent, ad quae et nufus ad palatum
+<lb/>perforatus esu Eorum autem fines sunt et pro- .
+<lb/>pria portio praedictae futurae, et transversa ossa sphenoidis,
+<lb/>quae luter extremos est dentes. Istae igitur ea secernunt
+<pb n="2.750"/>
+<lb/>ab ambientibus, inter se. autem reesa palati sumra
+<lb/>dirimuntur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Equidem nasi quoque ossa duo sunt, quae
+<lb/>a suturis a messio superciliorum descendentibus discernun
+<lb/>tus. Has paulo ante in maximorum ossium narratioue
+<lb/>duplices cunctas - numerari. Est enim et in naso
+<lb/>ipso tertia quaedam alia praeter eas sutura propriorum
+<lb/>ipsius ossium communis, quae a medio quidem superciliorum
+<lb/>incipit, recta autem per totum unium fertur. Iulerius
+<lb/>vero hornm ossium extremum epipbyfin habet cartilagineorum
+<lb/>corporum tenuium, quae alae .vocantur Superest
+<lb/>autem os unum in extremo maxillae, in quo tum
+<lb/>incisorum dentium radices, tum alveoli continentur. Id
+<lb/>autem simplex quidem ut plurimum apparet propter fiuceram
+<lb/>ossium ipsum componentium harmoniam. At fune
+<lb/>interdum, et manifeste in admodum exrccatis sceleris sutura
+<lb/>conspicitur , e directo porrecta ei, quae per tutum
+<lb/>palatum fertur. .Perspicuum igitur jam- est; jure. in. controverfiam
+<pb n="2.751"/>
+<lb/>venisse numerum ossium maxillae superioris.
+<lb/>Nonnulli etenim non sex, sed duo prima omnium numerant,
+<lb/>parvula illa, quae intus in oculis sunt, praetereuntes.
+<lb/>Quidam vero ea, quae ad nest foramina sunt, magnis
+<lb/>ossibus ascribunt. Sunt vero et qui lrae.c ab illis quidem
+<lb/>reparent, fed unum ambo ipsa faciant. Illud etiam, quod
+<lb/>in summa est maxilla superiore, uti dictum est, quidam
+<lb/>simplex esse dicunt, quidam ex duobus oonstitutum esse
+<lb/>ossibus ;. praeque his omnibus sphenordes plurimi. superus- .
+<lb/>ris maxillae ossibus adnumerant ; adeo ut, si plurima quis
+<lb/>ea pronunciare velit, quindecim in superiore maxilla
+<lb/>sint, si vero ad minimum numerum cogat, non plura
+<lb/>quam octo. Ac sane omnia ordine percensebo, a prima
+<lb/>orsus divisione, quae in quindecim esu Sex quidem erunt,
+<lb/>quae prima .dicta sunt, . quaeque a communi capitis strtura
+<lb/>et ab ea, . quae a temporibus sub osse jugali et infemoribus
+<lb/>oculorum palpebris ad medium superciliorum
+<lb/>ascendit, continentur. At duo deinceps ex his magna,
+<pb n="2.752"/>
+<lb/>lu quibus et malas et dentes prope omnes fitus esse diximus.
+<lb/>Duo quoque alia, quae ad nati foramina. Tum
+<lb/>praeter ista alia duo ipsius nasi. Deinde alia -insuper
+<lb/>duo in maxillae extremo, in quibus dentes incisores, praeque
+<lb/>iis omnibus sphenuides solum in omnibus non
+<lb/>coniugatum. At divisio in octo universa maxillae superioris
+<lb/>ossa ad hunc se modum habet. Sex quidem illa prima
+<lb/>duo numerantur; unum, quod in extrema est maxllla ;
+<lb/>quemadmodum et id, quod ad nest est foramina; ipsuas
+<lb/>autem nest propria duo; et reliqua omnium lu tota
+<lb/>maxilla ossium maxima, quae ad malas et dentes prope
+<lb/>omnes, ut antea dictum est; et sphenuides, quod solum
+<lb/>ex omnibus coniugationis est expers.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">luter ossa et dentes numerandi sunt, tametii
+<lb/>sophistis quibusdam non placet. Quod fi ipsus ita
+<lb/>vocare nobis non concedant, aliud tamen eis dare nomen jure
+<lb/>tenebantur. Neque enim cartilagines; neque arterias, rreque
+<lb/>venas, neque nervos eos decenter nominandos esse, planum
+<pb n="2.753"/>
+<lb/>utique est; multo vero minus alipes, aut pilos, aut
+<lb/>carnes, aut glandulas, aut ullas simpliciter alias corporis
+<lb/>partes. Ergo si neque in venarum anatome, neque in arteriarum,
+<lb/>neque in nervorum, aut musculorum, aut viscerum
+<lb/>de ipsis agemus, neque etiam in hae quae jam instat
+<lb/>ossium, <milestone unit="ed1page" n="723"/> neque prorsus de ipsis dicemus. His
+<lb/>equidem Sophistis longum valere dicendum. esu Dentes .
+<lb/>vero scxdecim in utraque maxilla sunt; aule quidem quatuor,
+<lb/>qui incisores nominantur; fingatis radicibus omnes
+<lb/>nixi. His vero deluceps utrinque sunt canini .dentes,
+<lb/>ipsique unica fulti radice. Qui deinde eos sequuntur maxillares,
+<lb/>utrinque quini, trrraorces quidem, qui in superiore
+<lb/>maxilla, biradices vero ii, qui in iuseriore, his exceptis,
+<lb/>qui saepe reperiuntur quadriradices quidam ex superioribus,
+<lb/>ex inferioribus autem triradices, maximeque
+<lb/>illi omnium primi interiores duo, rarius vero tertius..
+<lb/>Nonnullis autem non utrinque quini, sed quatuor aut
+<lb/>sex maxillares orti sunt.. At non. solum sic vocantur, sed
+<pb n="2.754"/>
+<lb/>et molae femineo genere seu molares, nomine, opinor, ex
+<lb/>translatione sumpto , quod iis cibos teramus et comminuamus,
+<lb/>veluti molis Cereales fruges. Sed et canini dentes,
+<lb/>canum dentibus persimiles, ab iis sunt nominati. At inciforii,
+<lb/>quod ii incidunt, ut cultello, quicunque cibi incidi
+<lb/>possunt. Possunt autem molles videlicet, ad quos a natura
+<lb/>facti sunt; quemadmodum et ad duros caninos dentes
+<lb/>cousiruxit, non ad incidendum, sed ad confringendum
+<lb/>idoneos. omnes autem in alveolorum fossulis - ceu clavi
+<lb/>impacti sunt. Nam alveoli ossa, quae ipsos continent,
+<lb/>fossulae vero cava, in quibus infixi sunt, nominantur.
+<lb/>Participes vero sunt nervorum mollium, qui a cerebro,
+<lb/>dentes soli e reliquis ossibus; unde et soli manifeste
+<lb/>sentiunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Neque maxillae inferioris os simplex est,
+<lb/>ut cuipiam videatur ; id namque coctum in mento fumrno
+<lb/>laxatus, ut id coaluisse manifeste conspiciatur. At
+<lb/>pars ejus, quae sursum velut ad caput tendit, in duo extrema
+<pb n="2.755"/>
+<lb/>desinit. Et horum extremorum acuto quidem ma,
+<lb/>nantem a temporali musculo tendonem recipit ; altero autem
+<lb/>ad .os capitis fub mammulam apophasim ut tubercnlo
+<lb/>quodam rotundo ibi in glenoidem cavitatem lliarthrosi
+<lb/>recipitur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Spinae totius quatuor et viginti vertebrae
+<lb/>sunt; quibus plures aut pauciores, praeter naturatus
+<lb/>sunt, ut capita acuminata. Universa autem eorum structura
+<lb/>in cervicem, dotium, lumbos et sacrum os drvidrtur.
+<lb/>Cervix itaque capiti ningitur. Dorsum autem deinceps
+<lb/>locatum est, tantum longitudine, quantus et thorax
+<lb/>fuerit. Quod infra reliquum subest, id lumbi appelfantur:
+<lb/>ad quorum extremum, quod os factum vocatur,
+<lb/>situm habet; quidam autem id latum nominant. At vertebrae
+<lb/>quidem in cervice septem numero funt; in dorsi.
+<lb/>vero duodecim; in lumbis autem quinque. De primis
+<pb n="2.756"/>
+<lb/>itaque dicetur, quae in cervice existunt.. . Nihil enim refert
+<lb/>cervicem eam collumye appellere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Quae lu cervice sunt vertebrae, earum
+<lb/>primae quidem duae per eliarthrofin undique articulantur
+<lb/>, aliarum vero quinque anteriorem partem robustum
+<lb/>ligamentum per symphyfin .nectit. Non enim certe per
+<lb/>cartilaginem coalescunt, ut nonnulli arbitrantur; sed ea
+<lb/>membrana, quae geminas spinalis. medullae meningas fi,ris
+<lb/>ambit, lu messiam ipsarum sedem incidens, commune
+<lb/>utrisque vinculum fit. Ita vero se habet in vertebris omnibus,
+<lb/>duabus primis exceptis, uti demonstrabitur. Quum
+<lb/>autem duplex sit motus capitis, alter quidem et annuendi
+<lb/>et abnuendi, alter vero utramque lu partem circumageudi,
+<lb/>priorem quidem secundae vertebrae pyrenoides (turbinata)
+<lb/>apophyfis potissimum efficit; alterum vero secundae
+<lb/>vertebrae cum capitis coronis drarthrofis. Sed isti
+<lb/>quidem per transversas partes fiunt tum primae, tum capilis
+<lb/>ipsius. At pyrenoides apophyfis acclivis est quidem,
+<pb n="2.757"/>
+<lb/>verum ab anterioribus partibus secundae vertebrae
+<lb/>proficiscens capiti praevalido quodam fimulque rotundo
+<lb/>ligamento convincitur. Ac sane et idoneum ipsi locum prima
+<lb/>vertebra. praebet, in quo tuto fulcitur; et transverfum
+<lb/>quoddam aliud ligamentum, in prima.ipsa vertebra
+<lb/>ortum, intro ipsi adjeetum esu Nonnulli quidem ddontojdem
+<lb/>(dentisermem) hanc apophysin vocanti Hippocrates
+<lb/>vero totam etiam secundam vertebrato dentem ab ea appellavit.
+<lb/>Habet autem et alias prima vertebra cavitates
+<lb/>duas superficiarias glenoides in inferioribus sui partibus,
+<lb/>iis, quae. superiores finit, assimiles. Sunt autem merito
+<lb/>superiores quidem majores, ut quae -capiti per diarthrosin
+<lb/>artieulantur ;- minores autem infernae, quae secundam
+<lb/>vertebrato admittunt. Esit autem prima quidem et latissima
+<lb/>et tenuissima; secunda autem ordine angustior nuidem,
+<lb/>sed tamen robustior; atque sic caeterae post eam
+<lb/>omnes: Quanto enim spinae medulla, in nervorum- apephysica
+<lb/>consumpta, se ipsa fit tenuior, tanto et inferiorum
+<pb n="2.758"/>
+<lb/>vertebrarum foramina minuuntur; unumquodque
+<lb/>enim contentae in fe dorsi medullae crassitudini aequale
+<lb/>esu Hoc igitur vertebris omnibus commune est, quemadmodum
+<lb/>sane et illae in transversum apophyfes, praeterque
+<lb/>has acclives et declives apophyfes, per quas inter
+<lb/>fe per diarthrofin nectuntur. lu caeteris autem plurima
+<lb/>quidem his communia, pauca vero diversa, de quibus deinceps
+<lb/>dicam. Posteriorem apophyfin, quam spinam nominant,
+<lb/>omnes habent, excepta prima vertebra. Huic
+<lb/>autem soli in parte anteriore apophysis parva esu E
+<lb/>caeleris autem omnibus transversas apophyscs semper perforatus
+<lb/>habent eae solae, quae in cervice sunt, praeter se.
+<lb/>ptimam, quae sane et ultima earum est. At raro inve.
+<lb/>uras huic quoque perforatas. Easdem porrot apopbyfes
+<lb/>leniter quodammodo bipartitae solae habent eae,
+<lb/>quae in cervice sunt, <milestone unit="ed1page" n="724"/> praeter primas duas ; sus enim
+<lb/>ruat simplices ; at sextae duplices manifeste sunt, et caeterarunr
+<lb/>omnium maximae; ut ipsa maxima est. Sed
+<pb n="2.759"/>
+<lb/>et earum altera, quae intus, adrnodunt lata est. At oblonga
+<lb/>cujusque vertebrae pars anterior , qua etiam luter
+<lb/>sc coalescunt-, iis maxime, quaero cervice sunt , praeter-;
+<lb/>quam primae. Nervis denique, qui e spluali medulla
+<lb/>nascuntur et ad vertebrarum commissuras prodeunt, utraque
+<lb/>e cervicis vertebris peraeque ac primae confert; e.
+<lb/>caeteris autem omnibus quae superior sila est, ea aut,
+<lb/>quamplurimum, aut totum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Duodecim quidem numero thoracis vertebras
+<lb/>esse antea lictum esit, nisi si raro cuipiam deesse
+<lb/>una aut. exuperare reperietur. Atque ex his ipsis ali-:
+<lb/>quam deesse, quam superesse, rarius esu omnibus autem;
+<lb/>ipsis spinae apophyses maximae sunt adusque . decimata.
+<lb/>Perquam magnae etiam sunt transversae, quibus ad ecu stas
+<lb/>annectuntur. Id vero ipsarum corpus in. primo qivj.
+<lb/>dem leniter quodammodo in inferiora oblongum est; rsuiis
+<lb/>vero, quae deinceps sunt, paulatim definiti Hae quidem
+<lb/>et spinam ad decimam usque ver februm cervicis
+<pb n="2.760"/>
+<lb/>spinis similem habent, superne deorsum tendentem. Contra
+<lb/>vero a decima ab imo sursum repens fertur; per duas
+<lb/>quidem, quae ipsam sequuntur, obscure, per alias autem
+<lb/>aperte. Id vero ipsimi et transversae apophyfies patiuntur.
+<lb/>Nam quae stupra decimam sunt, deorsum, quae inira,
+<lb/>sursum repunt. Solae siquidem, quae in decima funt,
+<lb/>neutro inclinanti Sola enim ea vertebra non acclives
+<lb/>stilum, fed et declives apophyses in extrema condylodea
+<lb/>desinentes habet,. sicuti prima cervicis vertebra utrasque
+<lb/>apophyses glenoides. Caeterarum autem iis, quae supra
+<lb/>funt decimam sitae, apopsuses condyloeides quidem sunt
+<lb/>acclives, glenoides vero declives: infra vero locatis contraria
+<lb/>accidunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">De lumborum vertebris caetera quidem
+<lb/>prope jam prius dicta sinat. Etenim quod quinque,
+<lb/>quodque .maximi quidem caeterorum ipsi funt atque crusfissimi;
+<lb/>quod angustum iutus cuiusque foramen, ut et in
+<lb/>ipsis medulla tenuia; quod et apophyses rursum spectantes
+<pb n="2.761"/>
+<lb/>habeant; quod et per solam praepositam nervus dilati
+<lb/>batus, quodque acclivium et declivium apophyseon (in
+<lb/>quibus inter se diarthrosi articulanturj condylodea quidem
+<lb/>extuberent superpositarum extrema, glenordea vero
+<lb/>supposuerunt sinuentur, antea diximus. Si quid vero
+<lb/>ipfis proprium lusit et super alias eximium, hic explicabitur.
+<lb/>Foramina itaque nullo ordine disposita interiore lu .
+<lb/>parte in singulis lumborum vertebris sunt, in quae inseruntur
+<lb/>venae, eaque in celeris quidem aut nullatenus
+<lb/>aut prorsus exigua videas. lu his vero et manifesta et
+<lb/>multa conspiciuntur. . Et sane alia quaedam declivis in
+<lb/>ipfis apophyfis est ab . insigni exortu nervi constitota,
+<lb/>haecque interdum quidem inest omnibus, interdum
+<lb/>vero in postremis aut exigua plane, aut prorsum nulla;
+<lb/>sed superpofitae perpetuo ipsam habent, quemadmodum
+<lb/>et ultimae dorfi duae.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">[De osse sacro.] Atque hoc vertebris respondet
+<lb/>ratione diarthroseos , qua cum superiori posita jungitur.
+<pb n="2.762"/>
+<lb/>Ejus enim declives apophyses suscipit, ut illa acclives eas,
+<lb/>quae supra se. Ac sane et spinam caeteris similem habet.
+<lb/>Sed transversae ipfius apophyses et magnae et latae sunt,
+<lb/>quamvis earum pars exterior quandam glenoidem cavitatem
+<lb/>habeat., quam ilium ossa ingrediuntur. Id autem
+<lb/>ex tribus partibus tanquam ex propriis quibusdam vertebris
+<lb/>constructum est, quibus quartum os aliud in extremo
+<lb/>adjacet, quod coccygem vocitant. omnium autem jcoorione
+<lb/>dissolutorum structura iis vertebrarum similis apparet.
+<lb/>At qui a spinae medulla per ejus foramina nervi
+<lb/>prodeunt, ad suarum veluti vertebrarum structuras in infit
+<lb/>transeunt, quemadmodum et per spinam totam, non
+<lb/>tamen ex transversis quidem partibus , sed ex iis,
+<lb/>quae intus et foris sunt. Sunt autem omnia ipsorum
+<lb/>paria tria.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">ln extremo lati aliud os est, quod coccyx
+<lb/>vocatur ; ex tribus et ipsum propriis partibus constat,
+<lb/>magis cartilagineis quam lati, polissimumque ea, quae
+<pb n="2.763"/>
+<lb/>extremo fubjecta est. Sed et ad earum iuncturas ex posterioribus
+<lb/>partibus et anterioribus nervi prodeunt. Priurum
+<lb/>quidem par ex partibus oritur, quibus latum os coceyx
+<lb/>attingit. Secundum vero ex commissura primae partis
+<lb/>cum secunda ortum ducit. Tertium ex fecunda cum
+<lb/>tertia. Quantum autem spinalis medullae est reliquum,
+<lb/>ad ipsius tertiae partis extremum prodit fotum ime pari.</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p>Sternum, costae et spinae dorsi vertebrae
+<lb/>thoracis ossa sunt, duodecim quidem utrinque - costae,
+<lb/>sicuti et vertebrae. Singulae namque singulis vertebris
+<lb/>per diarthrofin connectuntur. Sterni ossa invicem per
+<lb/>fynartlmofin copulantur; septeni autem numero sunt, quot
+<lb/>et costae, quae cum eo drarthrosi alligantur. Inferiori autem
+<lb/>ejus fini triangula cartilago adnascitur. Jam vero
+<lb/>cujusque costae cum vertebris diarthrofis ita fe habet.
+<lb/>Transversae ipsarum ap.ophyfeos radicem costae principium
+<lb/>eminentia quadam eondylode ingreditur; .<milestone unit="ed1page" n="725"/> at
+<pb n="2.764"/>
+<lb/>quae ipsam suscipit caritas; et superficiaria et parva est;
+<lb/>amboque sursum magis vergunt, tum cavitas, tum costae
+<lb/>principium. lude vero per tutam transversam apophyIlu
+<lb/>costa supervehitur; ac deinde janiad extremunr ipsius
+<lb/>epiphyseos diartluofis illa aliam efficit deorsum repentem
+<lb/>, adeo ut diarthrofis duplex cum vertebra costae fiat.
+<lb/>Rursusque. ad sternunt ipsarum diartluofis obscurior
+<lb/>quidem est, non tamen ei abdita, qui circumiacentia ligamenta
+<lb/>removerit Nam ibi Ungularum in. condylodes caput
+<lb/>desinentium pars . cartilaginosa. singulis sterni ossibus
+<lb/>cavitatem quandam superficialem sortitis diarthrofi connectitm.
+<lb/>Ita vero exiguus ipsarum motus est, ut synarthrofis
+<lb/>quoque nominari queat In multis autem aliis
+<lb/>corporis partibus ossium compositiones ambiguae sunt, ut
+<lb/>dubites, an per diarthrofin eas inter se , an per synarthrofiu
+<lb/>copulari dicendum sit. At tota sterni quidem figura.xiphi
+<lb/>(gladio) fimitis existit, ob idque xiphoidem nonnulli
+<pb n="2.765"/>
+<lb/>ipsimi siernum appellitant, quidam vero non totum
+<lb/>.sternunt, sed eam solam, quae ipsius extremo inest, cartilaginem
+<lb/>sic nominant. Costarum autem non una neque
+<lb/>simplex figura est; nam post ipsarum cum vertebris diarthrosin
+<lb/>in anteriora simul: et inferiora seruntur, mule
+<lb/>tumque intervallum . progressae, denuo sursum ad sternam
+<lb/>repentinum flexum sumentes, recurvantur. Unde jam,
+<lb/>quicquid earum ad sternunt est, non os, sed cartilago exi- .
+<lb/>stiti Reliquae vero quinque nothae. At hae per . symphyfin
+<lb/>diaphragmati et sibi invicem uniuntur, ac in exquisitam
+<lb/>cartilaginem cessant. Postrema ab aliis in fine
+<lb/>ipsarum sola secernitur, ac revera notha est. Nec his,
+<lb/>nec aliis omnibus costis par longitudo est, sed supernae
+<lb/>insemaeque sunt breviores, mediae longiores,</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p rend="indent">Scapulae post thoracem litae sunt;. per r
+<lb/>musculos autem ossi .posteriori capitis, spinae rlracheos,
+<pb n="2.766"/>
+<lb/>thoracis costis praepofitoque laryngis ossi fymphysi connectuntur.
+<lb/>Inaequales autem fiunt admodum et omnibus
+<lb/>fui partibus dissimiles. Foris enim gibbae; intus vero simae.
+<lb/>Ac tenuis quidem et oblonga ipfarum basis infe.
+<lb/>vior; at summa extremitas et crassa et parva esu Eas
+<lb/>vero coniungit multis in locis cartilago, et plurima basis,
+<lb/>a qua humilis ortum ducens spina paulatim adaugescit,
+<lb/>ad usque acromli loca ascendens; ibique ipsi clavis per
+<lb/>fynarthrosin connectitur. Ipfam quidem earum partium
+<lb/>structuram nonuulli anatomici acromium nominant. Quidam
+<lb/>vero praeter haec ambo, quae coniunguntur, aliud
+<lb/>tertium os esse inquiunt, quod in solis hominibus comperitur,
+<lb/>idque cataclida (acclave) et acromium appellunt.. lu
+<lb/>hac vero regione apophyfis quaedam om optatae fubjacet,
+<lb/>cervix autem ouroplatae nominatur; cui ad finem m acetabulam
+<lb/>desinenti brachii caput diarthrosi connectitur.
+<lb/>At vero et alia hic est interna apophyfis acuta et exigua;
+<lb/>ipsam autem vocant nonnulli quidem ancyroidem (anchovariam),
+<pb n="2.767"/>
+<lb/>alii vero coracdidem (cornicularium), quod ejua
+<lb/>extremum ut comicis rostrum exterius promineat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+
+
+<p rend="indent">Clavicula utraque summo sterno diarthrosi
+<lb/>articulatur; cavernosa est, tum figura, tum crassitudine
+<lb/>inaequalis. Etenim pars ipsarum inferior, quae sterno
+<lb/>diarthrofi alligatur, caeteris et crassior et rotundior
+<lb/>est; quae huic succedit, multo quidem gracilior, sed retunda
+<lb/>est. Reliquum omne inaequale est adusque commissuram
+<lb/>cum omoplata, ubi et paulatim quodammodo- dilatatur.
+<lb/>Totius autem ipsius claviculae partes mediae
+<lb/>foris gibbae sunt magisque in ipsis, quae ad omoplatam
+<lb/>repunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+
+
+<p rend="indent">os brachii omnium ossium maximum,
+<lb/>excepto femore, in utroque fui fine, superno ac inferno,
+<lb/>diarthrofi articulatur. In summo equidem humero epiphyfin
+<lb/>habet capitis praegrandis cervici parvae adnatant.
+<lb/>lu eo et quaedam caritas est ceu scissura lata ad auteriores
+<lb/>partes, totum caput in duas portiones dividens constylis
+<pb n="2.768"/>
+<lb/>similes. Finis autem inferior lu condylos inaequalea
+<lb/>definit, quorum externo radii caput diarthrofi anneoritur,
+<lb/>interno autem nullum prorsus os committitur oh
+<lb/>id multo major apparet externo, etsi paulo grandior est.
+<lb/>lu hoc fine inferiori brachii caritas est, iis, quae troehleis
+<lb/>insunt, similis, circa quam cubitus movetur. Ubi autem
+<lb/>haec cavitas. finitur, utrisque in partibus caritas est
+<lb/>altera altero lu fine, anterior posteriore minor. Eae vero
+<lb/>cavitates cubiti coronas excipiunt, lu summis quidem
+<lb/>contractionibus anteriorem anterior, in extensionibus autem
+<lb/>posteriorem posterior. Caeteris vero partibus rotundum
+<lb/>est brachium, non tamen rectum, neque. omnino simile.
+<lb/>Gibbum etenim in anteriora et exteriora, in posteriora
+<lb/>vero et interiora fimum est.</p>
+</div>
+<div type="textpart" subtype="chapter" n="18">
+
+
+<p rend="indent">Totum equidem corpus inter brachium
+<lb/>et carpum pqsitum cubitus vocatur; vocatur vero et allerum
+<lb/>os eorunr, quae in ipsi, corpore sunt, nrajus, quod
+<pb n="2.769"/>
+<lb/>alteri, radio appellato , . subj aceti Hic itaque radius in
+<lb/>superiori fui extremo exteriorem brachii condylum superfiriaria
+<lb/>cavitate amplectitur. - Atque hujus diarthrofeos munus
+<lb/>est tum in pronum tum in supinum situm totam nranum
+<lb/>adducere. Cubitus- vero duas habet apophyfies, easque
+<lb/>duas coronas, minorem quidem anteriorem, majorem vero
+<lb/>alteram ; cavitatem autem cubiti ipsae comprehendunt fig- .
+<lb/>Matnidem, <milestone unit="ed1page" n="726"/> in quam brachii orbita trochlearis inter duos
+<lb/>hujus condylos sita inseritur. Atque hujus diarthroseos
+<lb/>munus est totam manum et extendere. et. flectere. Cubitus
+<lb/>autem lu utroque siti extremo^ validis aeque ligamentis
+<lb/>radio colligatur ; at medio prorsus ab invicem diducuntur.-
+<lb/>Utrumque autem ipsorum juxta carpi partes epiphysin
+<lb/>foris quidem -gibbam, intus vero cavam. habet; cubitas
+<lb/>quidem minimo digito, nadius autem maximo respondentem.
+<lb/>lu ipsam vero cavitatem corpus immittitur,
+<lb/>eique diarthrosi articulatur. - Praeterea insignis. est cubito
+<lb/>apophysis, quae stylotdes vocatur; quaeque carpo. diarthrosi
+<pb n="2.770"/>
+<lb/>articulatur. Sed hujus apophpseos functio quidem
+<lb/>est carpi in obliquum situm deductio, alterius autem in
+<lb/>rectum, quibus summam manum et extendimus et flectimus.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="19">
+
+
+<p rend="indent">Octo construunt ossa carpum, in duos
+<lb/>ordines conferta; dura omnia, et parva, et meduHae expertia,
+<lb/>figuraeque multiplicis. Etenim partim gibba sunt,
+<lb/>partim sima ; partim recta, partim rotunda. Omnia vero
+<lb/>nervicartilagineis ligamentis inter fe per fynarthrosin,
+<lb/>non autem per symphysin (ut quidam autumant) colligantur;
+<lb/>leniter quidem gibba exteriori superficie, interiori
+<lb/>vero cava. Itaque superior carpi feries tribus
+<lb/>constans ossibus quodammodo rotunda sit , quae
+<lb/>cum cubito , radio , styloïde apophysi per diartlirolin
+<lb/>articulatur, praeterquam quod carpi os ad parvum
+<lb/>digitum glenoïde cavitate brevi styloïdem cubiti apophysin
+<lb/>excipit. Medium autem ex iis iliam m<hi rend="u">axi</hi>me
+<lb/>sudem occupavit, ubi et cubitus et radius inter fe coetmI.
+<pb n="2.771"/>
+<lb/>Tertium vero biforme a radio excipitur. At inferior
+<lb/>carpi feries suis quatuor ossibus metacarpio per fynarthrosin
+<lb/>articulatur. Quintum denique sudem habet in
+<lb/>Iliis carpi partibus, quibus inest potissimum styloïdes cubiti
+<lb/>apophysis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="20">
+
+
+<p rend="indent">Interstitium carpi ac digitorum metacarpium
+<lb/>nominatur; quod fynarthrosi quidem carpo, diarthrosi
+<lb/>vero primis digitorum phalangibus ^sic enim digitorum
+<lb/>ossa nominantur, nonnulli vero ipsa scytalidas
+<lb/>appeliant) afligatur, quum solius magni digiti prima
+<lb/>phalanx ipsi metacarpio oblique per diarthrosin annexa
+<lb/>sit. Quare singuli digiti ex tribus constant ossibus, priori
+<lb/>semper phalange in pavitatem subeunte, quae in scquentis
+<lb/>phalangis principio locata est. Consentaneum namqne
+<lb/>est et asserere, magnum digitum ex tribus ossibus
+<lb/>constare, et non metacarpio primam illius phalangem
+<lb/>ascribere, quae ab utrisque fui partibus per diarthrosin
+<pb n="2.772"/>
+<lb/>connexa est, quod primis quidem digitorum; non autem
+<lb/>metacarpii ossibus accidit. Unde nonnullus jure asseruerit,
+<lb/>nretacarpii quidem quatuor .duntaxat, quinque
+<lb/>vere digitorum quindecim osia esse. At qui tertium
+<lb/>os magni digiti metacarpio attribuunt, ii quatuordecim
+<lb/>quidem digitorum, quinque vero metacarpii ossa esse
+<lb/>astruunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="21">
+
+
+<p rend="indent">Lateralibus lati ossis apophyfibus tum
+<lb/>rectis tum magnis duo quaedam ossa connexa stant, quae
+<lb/>nullum nomen libi totis impositum sortiuntur. Superiores
+<lb/>enim ipsorum partes latae ilium ossa vocantur; post aditum
+<lb/>vero scmoris et exteriores et interiores ischiam
+<lb/>ossa; quae vero inde in anteriores partes sursum tendunt,
+<lb/>tenues et personatae, et quae in extremo per lyraphyfin
+<lb/>coniunctae sunt, pubis ossa. Acetabulum autem
+<lb/>utrique inest coxendici praegrande, quod robustissimo ligamento
+<lb/>eumnsemoris capite coniunctum esu,: .
+</p>
+<pb n="2.773"/>
+</div>
+<div type="textpart" subtype="chapter" n="22">
+
+
+<p rend="indent">Os femoris omnium animalis ossium maxitnunr
+<lb/>quidem esu Id autem supra quidem ischio , suira
+<lb/>vero tibiae per diarthrosin articulatur. Ac furium
+<lb/>quidem epipbysiu habet capitis exacte rotundi supra cervicem
+<lb/>oblongam, ad interiores partes repentem; deorsum
+<lb/>vero sensim patescens in duos condylos desinit. Licet
+<lb/>vero hos ita magnos condylos capita vocare.. Ac sane
+<lb/>tibiae colligatur, non membranulis solum ligamentis in
+<lb/>ambitu totam diarthrosin occupantibus, sed et tribus
+<lb/>aliis robustis fimus ac rotundis, .quorum unum quidem ab
+<lb/>exterioribus totius apophyscos partibus, alterum vero ab
+<lb/>interioribus, tertium denique in posterioris ac interioris
+<lb/>regionis medio exporrectum est. At totum femur figura
+<lb/>gibbum quidem est interiore ac exteriore in parte, simum
+<lb/>vero in posteriore ef interiore.. Apophyscs autem habet
+<lb/>duas deorfum sub cervice,. quas trochanteras appellant;
+<lb/>quarum longe majorem externam, quae et nates nominatur,
+<lb/></p>
+<pb n="2.774"/>
+</div>
+<div type="textpart" subtype="chapter" n="23">
+
+
+<p rend="indent">Tibia vocatur quidem fio tum tota
+<lb/>cruris pars, quae inter genu ac talum postta est, tum
+<lb/>vero vocatur in ipsa os majus. Id vero interius situm
+<lb/>est, cui foli femur per diarthrosin articulatur. Exterius
+<lb/>namque os fibula vocatur, quod crassitudine quidem a
+<lb/>tibia multum superatur, nec tamen longitudine ad genu
+<lb/>protenditur. Tibiae autem utroque suo extremo per fynartbrosin
+<lb/>alligatur; in medio autem penitus a fe invicem
+<lb/>abscedunt. At tibia, qua femori connectitur, Istagnam
+<lb/>habens epiphysin in extremo famur excipit, quod
+<lb/>duas ipsius cavitates ingreditur. In medio <milestone unit="ed1page" n="727"/> autem
+<lb/>cavitatum eminentia quaedam nervicartilaginea in me-t
+<lb/>dium conditorum femoris tanquam in [cissuram quan-:
+<lb/>dam profundam inferitur. Quicquid vero in anteriore
+<lb/>tibiae parte carne vacuum, ac tenue efi, anticnennum
+<lb/>(protibiale) nominatur. Quae vero ab ipsorum utraque
+<lb/>parte extrema sunt tibiae ac fibulae, malleoli. Quae
+<lb/>vero gibba rursum hic ac prorsus carnis expertia et
+<pb n="2.775"/>
+<lb/>aliis eminentia, ea talos seu astragalos plerique vocitant,
+<lb/>tuta via aberrantes. Sub his enim astragalus utrinque
+<lb/>comprehenditur, qui midequaque ita contegitur, ut ipsum
+<lb/>minime tetigeris. At malleoli ipsa sunt tum tibiae tum
+<lb/>fibulae apophyseon, extrema, foris quidem gibba,-. ut patet,
+<lb/>lutus vero cava.</p>
+</div>
+<div type="textpart" subtype="chapter" n="24">
+
+
+<p rend="indent">Ad femoris et tibiae diartbrofin exterius
+<lb/>os cartilaginosum , figura rotundum incumbit, quod
+<lb/>gibbas quidem ac veluti coudylodes subjectorum ossiuin
+<lb/>partes aptis caritatibus complectitur, brevi vero quadam
+<lb/>eminentia quod inter. femur et tibiam patet spatium
+<lb/>occupat. Id autem os quidam epigonatidem. (patellam), .
+<lb/>quidam vero molam nominant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="25">
+
+
+<p rend="indent">Ah paulo ante dictis apophyfibus in
+<lb/>imis tibiae et fibulae -extremis astragalus comprehenditur..
+<lb/>Quae pars ejus quadrio vocatur, sursum vergit. Ex caeteris
+<lb/>autem ejus partibus posteriores quidem laeves omnes
+<pb n="2.776"/>
+<lb/>modiceque orbiculatae sunt ac .sursum magis repunt;
+<lb/>anteriores; vero rotundo capite oblongae cervici
+<lb/>adnati, diarthrosi cum osse articulautur, quod fcaphdides
+<lb/>vocatur. Utrinque autem. a dextris et sinistris in
+<lb/>superciliosus eminentias desinens caritatibus fissi tibia ac
+<lb/>fibula factis excipitur, laevem veluti fui parteni interius
+<lb/>habens. Huic vero subjacet os pedis maximum .(calx
+<lb/>autem vocatur); quod rotundas quidem astragali partes recipit
+<lb/>et eminentias quasdam geminas in aptas. ejus cavitatos
+<lb/>inserit. Qua vero gradimur, ipfa leniter rotunda
+<lb/>et lata esu Sed et posterior quoque rotunda est, ob idque
+<lb/>tibiae rectitudinem admodum excedit. Anteriorum
+<lb/>autem ejus partium ea quidem, quae e directo magni digiti
+<lb/>sita est, astragali capiti fubjacet, nullumque fibi conjunctum
+<lb/>os habet. At rursum ejus extremitas , quae m1nimum
+<lb/>digitum adit, cum eo, quod cubaldes. (cubiserme)
+<lb/>appellatur, per synarthrofin connectitur. Id autem ab
+<lb/>exterioribus sui partibus scaphoidi appositum est. Sed
+<pb n="2.777"/>
+<lb/>illud quidem scaphoides, qua cum astragalo articulatur,
+<lb/>cavum est, at cuboides hocce gibbum.. Tria vero deinceps
+<lb/>ossa sunt parvula, quae fcaphoidis. extremitati per
+<lb/>synartbrofin copulantur, cum quibus quoque ipsis exteriori
+<lb/>ex parte cuboides porrigitur. Atque post haec quatuor
+<lb/>tarsirs quidem pedis suritur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="26">
+
+
+<p rend="indent">Quae pedis pars pedium vocatur, incipit
+<lb/>explicari. Jd ex quinque constat ossibus, quibus
+<lb/>succedunt pedis digiti. Ex tribus autem universi phalaugibus
+<lb/>ad eorum qui manus construunt similitudinem,
+<lb/>magno excepto digito, compositi sunt; is enim solus inter
+<lb/>ipsa ex duobus ossibus factus esu Horum autem drarthroses
+<lb/>menrbranofa ligamenta colligant; astragali vero
+<lb/>et calcis ea admodum robusia, quaedam .et rotunda simul
+<lb/>et nervicartilaginea existunt. Haec de ossibus ferre
+<lb/>tironibus satis esse mihi ridetur, horum namque constructio
+<lb/>soeletus est Si quod vero alia in partu os parvum
+<pb n="2.778"/>
+<lb/>comperiatur, quemadmodum in corde, larynge, -na-.
+<lb/>fo et quibusdam sugitis, quae fefamoidea (sesumifermiaj
+<lb/>vocantur, et si quod aliud ejusmodi, id nunc dicere haud
+<lb/>necessarium esu</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,2016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De motu musculorum</title>
+        <author>Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg018.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              
+              
+              <biblScope unit="pp" from="367" to="464">367-464</biblScope>
+              <date>1822</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x04">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="553" to="567">553-567</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x01">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="364" to="396">364-396</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x05">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg018.verbatim-lat1">
+<pb n="4.367"/><pb n="4.367"/>
+<div type="textpart" subtype="book" n="1">
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE MOTU MUSCVLORUM LIBER I.</head>
+
+
+<p rend="indent">Instrumenta motus voluntarii musculi sunt,
+<lb/>quorum sane adeo ingens multitudo est, ut ne numeraro
+<lb/>quidem eos facile sit. Nam et natura ita quidam coalefcunt
+<lb/>inter fele, ut videantur unus esse, et quum unus
+<lb/>aliquis in multos definit tendones, non unus amplius
+<lb/>solus, fed tot, quot sunt tendones, esse videntur. Idcirco,
+<lb/>et quia multiplici sunt figura, et in dissimiles inferuntur
+<lb/>partes, modum motus difficulter comprehensibilem habent.
+<lb/>Erit autem ne id quidem parvum, videlicet ipsus mufculos
+<lb/>innasci partibus, quae moventur, in diversa loca
+<pb n="4.368"/>
+<lb/>et saepenumero contraria: alit emm deorsum, alii furfum,
+<lb/>nonnulli ex anteriori parte, vel posteriori, aut
+<lb/>hinc, aut illisi c inseruntur. Quin etiam omnis musculus
+<lb/>fectus per transversum non valde tenui neque superficiali
+<lb/>factione nocet quidem omnino quibusdam motibus par-r
+<lb/>Hs, in quam inserebatur. Sed quia multiplicia sunt nocumenta,
+<lb/>et hoc etiam pacto modus ipsorum motus disificulter
+<lb/>comprehendi potest. Siquidem musculi, qui in
+<lb/>cruribus sunt, quum alius alias scissus fuerit, vel flectere,
+<lb/>veI extendere L vel extollere, vel demittere, vel convertere
+<lb/>membrum statim nequeunt. Eadem et phlegmone,
+<lb/>et fcirrhi, et putredines, et contusiones eorum, et durilies
+<lb/>cicatricum efficiunt, et in cruribus, et in manibus
+<lb/>maxime: etenim ex musculis manuum patientibus quidam
+<lb/>tollere, vel extendere, vel flectere, vel demittere eas
+<lb/>non amplius possunt; quidam vero in utramque parterh
+<lb/>circumducere, vel convertere retro.. Eadem tensionibus
+<lb/>patientibus fiunt. Vocant autem eos recentiores aponeurofes
+<lb/>musculorum, quoniam, ut puto, musculos in eos
+<pb n="4.369"/>
+<lb/>vident finire. Mixta autem quaedam eorum natura est,
+<lb/>et media inter, ligamentum et nervum ;; ligamentum . enim,
+<lb/>proprie,. non communiter , appellatum, est corpus nervosum,
+<lb/>ex osse quidem omnino ortum habens, infertum
+<lb/>autem in os, aut in musculum; constat etiam, nomen
+<lb/>ei ab usu esse inditum; nervus autem et tonus ex ce.r
+<lb/>rebro aut spinae medulla oriuntur; nuncupatur autem
+<lb/>ab ipsis actionibus unum instrumentum duobus nominihus
+<lb/>, eo quod nutare seu flectere et tendere natum
+<lb/>est. Substantia vero corporis eorum ea est, ac si intelligas
+<lb/>stipatum et densatum ideoque duriusculum factum
+<lb/>cerebrum. Est esiam et spinalis medullae corpus simile
+<lb/>cerebro compacto, et ob id duro facto; nam et ipsius
+<lb/>cerebri posterior pars, quae medullae spinali continuatur,
+<lb/>durior est anteriori; et quicunque nervorum molliores
+<lb/>sunt, hi nihil a medulla spinae differre tibi videbuntur.
+<lb/>Medulla. tamen, quae in aliis, ossibus est, non talis
+<lb/>visitur, sest humida et propemodum fluxisse ; maxime
+<pb n="4.370"/>
+<lb/>vero ipsius mollem substantiam assimilare pinguedini
+<lb/>posses; quapropter nec exoriri ex hac medulla nervum
+<lb/>aliquem invenies, t neque mollem, neque durum; quin
+<lb/>nec cerebri et medullae spinalis tegumentis operta est,
+<lb/>nec praeterea arteriae atque venae intexunt eam; itaque
+<lb/>nullo pacto cerebro et meduHae spinali similis est, nec
+<lb/>ipsi ulla communicatio cum musculis. Sed cum cerebro
+<lb/>et medulla spinae omnibus musculis non parva communicatio
+<lb/>est; nam aut- a cerebro, aut a medulla spinae
+<lb/>nervum accipiant necesse est, qui visu quidem parvus,
+<lb/>sed facultate minime parvus. Cognosces autem ex asseotibus;
+<lb/>nam incisus, oppressius, contusus, laqueo interceplus,
+<lb/>fcirrbis affectus et corruptus aufert musculo omnem
+<lb/>motum et sensum. Quin et nervo inflammato non
+<lb/>pauci convulsione correpti fiunt et mente alienati ; quorum
+<lb/>quidam sic affecti , quum sapientiorem medicum nacti
+<lb/>essent, nervo i nesse statim convulsione et mentis
+<lb/>alienatione liberati sunt, sed postea siiltstllllllll, in quem
+<pb n="4.371"/>
+<lb/>nervus insertus .erat se insensilem atque, inutilem ad motum
+<lb/>habuerunt. Adeo certe magna quaedam vis est in
+<lb/>nervis, superne a magno principio affluens; non enim
+<lb/>ex se ipsis eam neque connatam habent. Cognoscere
+<lb/>esiam potes hinc maxime, si incideris quemcunque istorum
+<lb/>nervorum, aut spinalem ipsam medullam ; quantum
+<lb/>enim superius est incisione, continuum cerebro, id quidein
+<lb/>adhuc conservabit principii facultates; omne autem,
+<lb/>quod inferius est, neque fenfum, neque motum ulli
+<lb/>praebere poterit. Nervi itaque rivorum in morem a
+<lb/>cerebro ceu ex quodam fonte deducunt musculis facultates,
+<lb/>quos quum primum attigerint, scinduntur inultipliciter
+<lb/>in aliam subinde atque aliam sectionem, tandemque
+<lb/>in tenues et membraneas fibras toti soluti tofum
+<lb/>sic musculi corpus e intertexunI. Ligamenta vero, per
+<lb/>quae musculi ossibus colligantur et coalescunt, etmembtanas
+<lb/>circa ipsusi ginu^n t, et quasdam intro propagines
+<lb/>inalipsam carnosa musculorum mittun t; quam veluti quendam
+<pb n="4.372"/>
+<lb/>locum intellige multis rivis irriguum, uno quidem
+<lb/>praedicto nervo, duobus vero aliis, altero sanguinis calidi
+<lb/>et tenuis et vaporosa, . altero frigidioris et crassioris;
+<lb/>vocatur autem ipsorum alter arteria, alter vena.
+<lb/>Isti igitur rivi principium a corde et hepate habentes
+<lb/>corpus musculorum irrigant, quorum gratia non amplius
+<lb/>locus quidam nomine l absoluto, sed jam quasi planta
+<lb/>mufculns fit; jam vero propter tertium rivum, qui a
+<lb/>principio magno deducitur, non planta, sed quoddam
+<lb/>praestantius planta redditur,, assumpto . sedili et motu
+<lb/>voluntario, quibus animat a non animali differt.. Propter
+<lb/>has igitur facultates instrumentum animale musculus fa.ctus
+<lb/>est, quemadmodum propter arteriam et venam naturale:;
+<lb/>etenim motus, qui ex arteria, et vena procedunt,
+<lb/>naturales funt . et . voluntatis expertes, qui autem a musculis
+<lb/>, animales et voluntarii. Sive autem consulto dicas
+<lb/>musculorum fieri .motus, siv^ spontaneos, .aut ..cum
+<lb/>voluntate, nihil .refert:. unum enim in oxiatnfllos his conjectari
+<pb n="4.373"/>
+<lb/>oportet, quomodo videlicet discernas motum spforum
+<lb/>a motu arteriarum et venarum. Itaque, . etiamsi
+<lb/>nequeas in nominibus ostendere doctrinam, abunde falis,
+<lb/>quod vis, significabis. Cur igitur non Pensius instrumentum
+<lb/>esse mufculum diximus, sied m olus duntaxat, quanquam
+<lb/>plane utriusque similiter ipsa sit particeps^ an quia
+<lb/>motus quidem nullus utique fieri posset animalibus voluntarius
+<lb/>absque musculis? Quare proprium ipsius instrumentum
+<lb/>musculus est. Sensus autem inest omnibus siensilibus
+<lb/>partibus etiam sine musculis;. quaecunque enim
+<lb/>ipsarum particeps sit nervi, ea omnino scntiI. Quid igitur
+<lb/>sit mufculus,s clare dictum est, nempe motus voluntarii
+<lb/>instrumentum. Dictum est etiam, unde principium
+<lb/>motus sit ipsi et per quae; puta a cerebro et per nervos.
+<lb/>Dictam praeterea et quemadmodum in ipsum hi.
+<lb/>distribuantur, et quemadmodum ligamenta.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Reliquum autem adhuc esit de natura tendonum
+<lb/>dicere, quo nihil obscurum relinquatur sermonilines
+<pb n="4.374"/>
+<lb/>qui deinceps sequuntur. Quod igitur mixta quaedam
+<lb/>natura tendomim sit ex ligamentis et nervis, dictum
+<lb/>quidem et hoc ante; fed ratiocinatio ejus omissa
+<lb/>est, nunc vero adiungetur. Tendo tanto durior est nervb,
+<lb/>quanto ligamento mollior; quin et mole corporis
+<lb/>talis, -ut qui ex ambobus maxime factus sit. Et ligamentum
+<lb/>quidem omne insen sile ; nervus autem omnis
+<lb/>fenili praeditus ; tendo vero neque infantilis , quia etiam
+<lb/>nervi est particeps, nec ita sensilis, -ut nervus, non enim
+<lb/>nervus est tantum. Quatenus igitur particeps est ligamen
+<lb/>ti naturae, eatenus hebetatur acrimonia fenfus.
+<lb/>Quin etiam , quia nafcitur quidem tendo ex fine musicali,
+<lb/>inseruntur autem in caput ipsius et nervus et .ligamenta,
+<lb/>deinde in totum musculum disperguntur, rationabile est
+<lb/>ex ambobus tensionem esse factum. Clarius autem id
+<lb/>fcire possis per dissectionem. Evidenter^ enim videbis
+<lb/>principium quidem, quod vocant caput -mufculi , magis
+<lb/>nervofum, media vero carnosiora, ubi ventres (ut vocant)
+<pb n="4.375"/>
+<lb/>mufculorum sunt; inde rursus eadem, qua prius, proporlione
+<lb/>multo semper nervosior efficitur; tandem eo
+<lb/>magis nervosus apparet finis inferior, quo etiam apparet
+<lb/>in capite. Nervus autem perveniens ad ipsum in prim
+<lb/>a quidem insertione in pauciores distribuitur portiones;
+<lb/>illis rursus in alias scissis, susque iterum sectis in alias,
+<lb/>eo usque tandem scissura procedit, ut in membraneas
+<lb/>et valde tenues fibras desinat; rursus hae particulae invicem
+<lb/>coeunt, ac nervos mole quidem prioribus majores,
+<lb/>caeterum numero pauciores generant; qui .in fine musculi
+<lb/>et numero et magnitudine pares lis, qui initio
+<lb/>primo locantur, evadunt. Quoniam vero rursus tendo
+<lb/>nascitur multo major nervo, qui in musculum defcendit,
+<lb/>manifestum est, quod non solum ex nervo factus est,
+<lb/>verum etiam aliquid ex natura ligamentorum assumpsit,
+<lb/>nec fane hoc modicum; multis enim locis sexcupla, multis
+<lb/>etiam decupla crassitudine nervum superat. Et mee.
+<pb n="4.376"/>
+<lb/>rito sane Tantus. et talis factus est, ut qui et ligamenti
+<lb/>et nervi usum exhibiturus erat; alligat enim musculum
+<lb/>suhjectis ossibus, in ,quae inferitur, et hac quidem rasione
+<lb/>nihil differt a ligamento; sentit autem et movetur, qua
+<lb/>ratione nervi est particeps- Major autem factus est nervo,
+<lb/>quippe qui os moturus sit; inseritur enim ut plurimum
+<lb/>omnis. tendo in ossis terminum, cartilagine illitum. Sed
+<lb/>non est hic terminus quilibet, nec ipse tendo quivis;
+<lb/>verum spsie quidem dilatatus involvitur circa superiorem
+<lb/>partem ossis, quae vocatur caput: sic enim, quum ipsis
+<lb/>trahitur a musculo, erat contracturus os subjectum, connatum
+<lb/>sibi; vinculo enim tuto quodam erat opus musicum
+<lb/>lo cum osse a fe movendo, nec erat aliud ad hoc aptius
+<lb/>ligamento; nervus autem, qui a cerebro procedit, via
+<lb/>quaedam existens facultatis motricis , ut eam communem
+<lb/>faciat, simul extensus est et commixtus ligamento ; et
+<lb/>ita . tendo factus est ex utrisque.
+</p>
+<pb n="4.377"/>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Omnis igitur tendo in os omnino inferitur;
+<lb/>non tamen omnis musculus^ in tensionem desinit.
+<lb/>ln nullo enim musculorum moventium linguam nascitur
+<lb/>tendo; nullum enim os lingua erat motura, sed vocem
+<lb/>editura articulatam, et sapores dijudicatura, et massicationi
+<lb/>atque deglutitioni adjumento futura. Quod si cui
+<lb/>videtur cor similiter habere, hic non diligenter consideravit
+<lb/>musicali corpus: alioquin cognosceret, ipfum a mufculo
+<lb/>multum differre et crassitudine, et conformatione,
+<lb/>et contextu, duritieque; quin esiam et operibus nequaquam
+<lb/>conveniunt, hoc enim ad duplicem et compositum
+<lb/>motum, qui perpetuo ex diastole et fy.stole consistit
+<lb/>, faciendum minime indiget voluntate animalis,
+<lb/>musculis vero neque motus .similes funt, citraque voluntatem
+<lb/>nunquam fieri possent. Sunt enim quaedam
+<lb/>ligamenta in ventriculis cordis, ad unguem similia tendonibus,
+<lb/>de quorum ufu alibi dicemus; intelligatur aut
+<lb/>em nunc nomen ligamenti fecundum communem significatum.
+<pb n="4.378"/>
+<lb/>At labra oris exacta plane compactione culis
+<lb/>et musculi facta absque osse moventur. . Similiter et ipsi
+<lb/>oculi motum habent voluntarium a musculis; nullum autem
+<lb/>os cum eis movetur. Praeterea et cutis, quae in
+<lb/>fronte et superciliis est , tum plurimae partes faciei,
+<lb/>ossibus quiescentibus , motu moventur voluntario. Ea ta.men
+<lb/>differentia est inter hanc cutem et oculos et fabra,
+<lb/>quod illi quidem pro musculo subjecta est natura .musculusa
+<lb/>tenuis, oculos autem magis musculi movent, labrorum
+<lb/>vero natura cute admixta musculo fit. Quod si
+<lb/>etiam stomachus ventriculi, quem oesophagum vocabant
+<lb/>veteres, musculus est et ipfe, et musculi, officia animalibus
+<lb/>ministrat, erit utique et hic musculus neque in
+<lb/>tendonem desinens, neque os simul movens. At qui in
+<lb/>-cervice vesicae suscipientis urinam est, et substantia corporis
+<lb/>omnino musculo similis est et actione; quemadmodum
+<lb/>Pane et qui in fede, sive illum unum solum
+<pb n="4.379"/>
+<lb/>mufculum, sive plures unitos existimare oportet; movetur
+<lb/>autem ab his os nullum, quemadmodum ne ab illis quidem,
+<lb/>qui in testes et penem defcendunt. ln fumma de
+<lb/>omnibus musculis dicendum, quod motus voluntarii sunt
+<lb/>instrumenta, Tum quandoque se ipsius duntaxat movent
+<lb/>contracti, ut musculi sedis et vesicae, quandoque vero
+<lb/>et cutem, ad principium sinum dum trahuntur, simul at.trahunt,
+<lb/>velut li, qui in labris et fronte, et omnino in
+<lb/>facie Eunt; ab his itaque nullus nascitur tendo. Caeteri
+<lb/>omnes musculi, quicunque ossa movent, in tendones
+<lb/>omnino vel majores vel minores terminantur; qui vero
+<lb/>aliud quidpiam quam os movent, horum quibusdam funttendones,
+<lb/>quibusdam vero non. Movent autem aliud quiddam,
+<lb/>non os, musculi oculorum, linguae, testium et penis, item
+<lb/>etpharyngis, tum qui maxime sunt laryngis; vocatur ita
+<lb/>fuperior terminus asperae ar terrae, quod et caput appellant
+<lb/>branchi et sarynga. Musculi igitur oculorum membraneis
+<pb n="4.380"/>
+<lb/>quidem, fed validis aponeurosibus in duram et
+<lb/>nervosam tunicam adjacentem rhagoidi perveniunt. Penis
+<lb/>autem et testium, nulla aponeurosi facta, carneis ipfo.Illim
+<lb/>partibus innascuntur. Porro musculorum, qui in
+<lb/>pharynge et larynge fiunt, quibusdam obscurae quaedam
+<lb/>aponeuroses, quibusdam omnino non sunt. Motus autem
+<lb/>modus alius alibi existit. In lingua quidem motum omnem
+<lb/>videre possis: sursum enim et deorsum, ante et retro,
+<lb/>sinistrorsum et dextrorsum apparet circumferri, et parTim
+<lb/>quidem quasi replicata et explicata, partim vero
+<lb/>esiam circulariter undique circumducta. Sed in oculis
+<lb/>quatuor quidem sim t recti motus, surfum et deorsum,
+<lb/>dextrorsum et sinistrorsum, duo autem alii circulares.
+<lb/>Duo esiam musculorum circa tempora; firmantibus enim
+<lb/>dentes invicem tenduntur atque curvantur, hiantibus
+<lb/>vero laxantur et porriguntur. Quin etiam motus magni
+<lb/>musculi in brachio fatis perspicuus, dum flectendo cubitum
+<pb n="4.381"/>
+<lb/>curvatur et in fe ipsum coit; in extensionibus autem
+<lb/>laxatur et exporrigitur. Eosdem motus et mufculus
+<lb/>magnus interna parte cubiti evidenter habet ap p arontes;
+<lb/>in flectendis quidem digitis curvatur contrahiturque,
+<lb/>extendentibus vero ipsis quoque extenditur et laxatur
+<lb/>et porrigitur. Sic etiam et alii musculi pene omnes, qui
+<lb/>in artubus sunt, duplices motus videbuntur habere, si
+<lb/>eos denudaveris cute; namque praedicti etiam non denudati
+<lb/>.apparent propter magnitudinem. In macilentis
+<lb/>autem et musculosis corporibus complurium musculorum
+<lb/>motus evidenter apparent prius, quam cutis adimaec
+<lb/>Aur. Sed musculus, qui in fede est, proprium quendam
+<lb/>motum, quoniam et figuram diversam, possedit, contractis
+<lb/>crumenis similem. Caeterum feptum transversum simile
+<lb/>.est tali cuipiam rei, ussi quod non .perforatum esa Hujus
+<lb/>igitur motum evidenter videbis, diviso. quidem peritonaeo,
+<lb/>distractis autem fubjeotis Visceribus; aliorum autem musculorum,
+<pb n="4.382"/>
+<lb/>qui in thorace et toto abdomine sunt, sufficit
+<lb/>cutem tantum auferre. Accidit autem illis, qui funt in
+<lb/>abdomine, contrarium ac iis, qui in artubus et facie locum
+<lb/>obtinent; hi enim, cum tenduntur et ad principium
+<lb/>retrahuntur, curvantur; illi autem, dum tenduntur,
+<lb/>exporriguntur, curvantur .vero, dum laxantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Utrum igitur (id enim ad principio propositum
+<lb/>erat considerare) tot modi motus insunt musculis,
+<lb/>quot etiam apparent et in dissectionibus, et prius quam
+<lb/>denudes partes , an multo quidem pauciores sunt, apparent
+<lb/>autem mulli? Nam, ut alia omittam, absurdum videtur
+<lb/>non unum motum musculis omnibus inesse, tanquam
+<lb/>si et arteriarum alium alius motum quispiam
+<lb/>existere dicat ; semper enim natura videtur per similia
+<lb/>instrumenta similiter operarii Quocirca sex inesse motus
+<lb/>omnibus musculis (quod jam quidam dixerunt) evidenter
+<lb/>redarguitur ; nullus enim musculorum - qui in cruribus
+<lb/>et manibus si.m t, scaber tertium quendam hiatum diversum
+<pb n="4.383"/>
+<lb/>ab extensione et contractione, quemadmodum nec
+<lb/>temporales musculi, evidenter enim et .horum utrique
+<lb/>duo funt motus. Si autem totum membrum in sex loca
+<lb/>musculi transferunt, nullum hinc fano dubium, quin per
+<lb/>singulos eorum duplex fit motus d Si enim unus inusculus
+<lb/>totum membrum moveret, necesse esset, quot sint
+<lb/>membri, tot, esse ..et musculi motus; quoniam vero non
+<lb/>solum lex si Ped et multo plures in unoquoque membro
+<lb/>musculi funt, nihil profecto mirum aliunr ab alio musoulo
+<lb/>ipsi membro fieri motum. Sed puto; linguam eos
+<lb/>decepisse; qui ejusmodi dixerunt, ratos unum musculum
+<lb/>ipsam existere. Quod si vere unus musculus esset, evidenter
+<lb/>utique demonstraretur, unius musculi multos esse
+<lb/>motus; nunc autem (non enim unus est, fed multi muscuti
+<lb/>ipsam movent,) contrarium puto conclusum iri, videlicet
+<lb/>non multos. uniuscujusque musculi esse motus;
+<lb/>alioqui frustra esset eorum multitudo, fi per unum omnes
+<lb/>effici possibile esset. se At uterque oculorum , ajunt, .quatuor
+<pb n="4.384"/>
+<lb/>rectos obtinet motus. Recte, o viri: etenim et
+<lb/>musculi recti quatuor; esset autem unus in utroque, si
+<lb/>omnes movere idoneus esset. Ut igitur , si unus esset,
+<lb/>concluderetur, quatuor esse motus, sic, quoniam tot numero
+<lb/>sunt, quot motus, ab unoquoque ipsorum unum
+<lb/>fieri concludetur, quemadmodum et eorum, qui circumvertunt
+<lb/>ipsum, [utriusque unum. , Atqui apud vos ipsos,
+<lb/>inquiunt, in confesso est, etsi non plures, duos saltem
+<lb/>per singulos musculos motus fieri: quomodo igitur rasio
+<lb/>unum esse vult? Est autem hoc nihil absurdum; motus
+<lb/>enim, ut actio, unus in singulis, contrarius vero per accidens;
+<lb/>siquidem operatur trahens ad fe sestum partem,
+<lb/>quae movetur, non operatur autem, quum in contrarium
+<lb/>locum ab alio musculo abducitur. Ideoque nulia pars,
+<lb/>quae movetur, uno utitur musculo; Ped, si quidem desitper
+<lb/>aliquis innascatur, omnino alius parte inferna contra
+<lb/>innascitur, et si ex dextris, omnino alius ex sinistris,
+<lb/>Unaquaeque edim partium, quae moventur a mufculis,
+<pb n="4.385"/>
+<lb/>veluti a quibusdam habenis in contrarium distracta, vicissim
+<lb/>habet alterum ipsum intensum, alterum laxatum.
+<lb/>Intensus igitur trahit^ ad se, laxatus autem trahitur cum
+<lb/>parte, et propter hoc moventur ambo in utroque motu.
+<lb/>Agere autem est eum, qui movet, intendi, non sequi;
+<lb/>sequitur, quum ipfe otiosus transfertur, sicut quaevis alia
+<lb/>membri pars. Nunquid igitur audemus dicere, unum
+<lb/>omnium musculorum connatum esse motum, an non
+<lb/>prius, quam nobis omnia, quae in ipsis apparent, confessa
+<lb/>fuerint? mihi id longe melius esse videtur. Quae
+<lb/>igitur siunt, quae in ipsis apparent, deinceps dicamus
+<lb/>nihil omittentes. Unum itaque et primum (cujus pars
+<lb/>jam in principio quodammodo dicta est), quod abscissis
+<lb/>quidem ipsis totis per transversum motus penitus perit
+<lb/>in fubjectis partibus, incisis autem laeditur; laesionis autem
+<lb/>quantitas quantitatem sectionis sequitur, magis quidem
+<lb/>pereunte motu in majoribus divisionibus, minus autem
+<lb/>in minoribus. Haec eadem de tendonibus quoque
+<pb n="4.386"/>
+<lb/>mihi dicta esse puta: etenim et hos si quidem totos abscideris
+<lb/>, dissolves motus partium, si vero incideris, tantum
+<lb/>laedes, quantum incidisti. Si itaque motos omnis
+<lb/>periret spartis uno inciso musculo, concluderetur utique,
+<lb/>omnium motuum hunc unum musculum ducem esse; si
+<lb/>vero rursus unus duntaxat motus periret uno incisio musaulo,
+<lb/>concluderetur, opinor, hujus solius ducem esse,
+<lb/>qui esset incisus; sed quia neque unum solum, neque ossines
+<lb/>perire accidit, led omnino duos, concludi videbitur
+<lb/>utique, ab uno musculo duos fieri motus. Sed quia et
+<lb/>musculus ex contrariis partibus Iocatus aut tendo lectum
+<lb/>eosdem duos motus amittit, rursus utique et ilium fore
+<lb/>fecundum eandem rationem dominum earumdem duorum
+<lb/>motuum dicemus , quos tuetur aut laedit pari modo.
+<lb/>Quare, etiamsi unus quivis musculorum pereat, contrariorum
+<lb/>motio simplex peribit; facere autem non similiter
+<lb/>ambo nati sunt, sed uterque alteram solum; namque necesse
+<lb/>est horum alterum verum esse ; utrum autem sib
+<pb n="4.387"/>
+<lb/>conabimur ostendere, quum prius clarius dixerimus, quod
+<lb/>motuum, qui sibi invicem succedunt, necesse est, altero
+<lb/>pereunte , et reliquum simul perire. Finge enim , eum
+<lb/>motum periisse, qui natus est partem extendere; igitur
+<lb/>flectetur quidem primum, manebit autem in hoc statu
+<lb/>semper, quod non amplius extendi possit, quae motu extenforio
+<lb/>privata est; quia autem extendi non amplius
+<lb/>potest, idcirco nec flecti quidem; flectitur enim, quae
+<lb/>antea extenfa fuit. Similiter motum, qui natus est flectere
+<lb/>partem , si accidat perire , extendetur quidem ea
+<lb/>primum, sed immobilis in posterum fiet, quum non amplius
+<lb/>ad flexionem venire potuerit; qua praecedente extensio
+<lb/>sequitur. Id igitur omnium est verissimum, videlicet
+<lb/>motus contrarios sibi invicem succedentes simul corrumpi.
+<lb/>Quamobrem recte se habet quaestio, utrum duo
+<lb/>motus ab utrisque musculis fiant, an unus quidem ab
+<lb/>utroque, tum ne simul reliquus cum altero pereat.
+</p>
+<pb n="4.388"/>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Quo igitur pacto id distinguetur? diversis
+<lb/>symptomatibus. Ut enim communia sunt demonstrativa
+<lb/>alicujus communis, quantum est in ipsis, ideoque incertum
+<lb/>erat, quod proprium erat in utroque, sic quae diversa
+<lb/>siunt, et demonstrationem propriam utriusque mufculorum
+<lb/>actionis, et veritatem manifestam facient. At
+<lb/>propria in utroque musculorum haec insunt. Eo quidem,
+<lb/>qui intus est, abscisse, extensa pars in hac figura perpetuo
+<lb/>manet, eo autem, qui foris, flexa non amplius extenditur.
+<lb/>Quod si tuis manibus capiens flectas extensam,
+<lb/>vel extendas inflexam, utrumque quidem ipsorum facile
+<lb/>efficies,- dimissa autem pars statim in pristinum statum
+<lb/>restituetur. Q did igitur ex his demonstratur? Nempe
+<lb/>flexionem venire a mufculis, qui intus sunt, extensionem
+<lb/>autem ab iis, qui foris TunL Quapropter, si externus vulneratus
+<lb/>amiserit actionem, internus vero maneat adhuc
+<lb/>agens, flectitur pars p tanquam is, qui natus est ipsam
+<lb/>flectere, illaesus existat; si vero, qui intus est, abfcindatur,
+<pb n="4.389"/>
+<lb/>contrarium fit; extenditur quidem membrum, sed
+<lb/>non amplius flectitur. Cur autem in utraque figura permanet
+<lb/>pars immobilis? an quia motus invicem fucceden^
+<lb/>tes corrumpi accidit? Nam musculus flectere natus, si
+<lb/>sanus sit, primum quidem flectit,. fecundo autem. et tertio
+<lb/>non amplius flectere potest, nisi parte mrfns extensi^;
+<lb/>extensae enim flexio est. Qui natus est extendere , eadem
+<lb/>ratione . siemel . quidem extendit, fecundo autem vel
+<lb/>tertio non amplius poterit, nisi pars denuo flectatur I. siev
+<lb/>xae -enim extensio est. Quod si tu tunc amissam , vulnerati
+<lb/>mufcnli actionem imitatus extendas tuis manibus flexam,
+<lb/>videbis, salvum esse motum ei nectendae idoneum; nihiI
+<lb/>enim tua opera indigens sua sponte flectetur, a .musculo
+<lb/>iulus constituto operante tracta; non tamen unquam ah
+<lb/>usio musculo. extendetur, sed semper tua opera ad hoc
+<lb/>indigebit; veluti, si .eum, qui intus est; vulu oraveris, erss
+<lb/>tendetur. quidem semper. pars absque tua opera, non .ta^
+<pb n="4.390"/>
+<lb/>men flectetur ab ullo musculo, sed praeterea motum abs
+<lb/>te requiret- Manifestum igitur ex dictis, quod flectere
+<lb/>quidem officium est musculorum internorum, extendere
+<lb/>autem externorum. Perspicuum autem est, quod tensio
+<lb/>et in fe ipsos contractio insita musculis est actio, extensio
+<lb/>autem et laxatio oppositorum intensorum et ad se
+<lb/>ipsos trahentium. Discas autem id ex aliis apparentibus
+<lb/>non paucis, ut ex hoc primo didicisse Avicularum crura
+<lb/>ab animali exempta tractans extendere tuis digitis tendones,
+<lb/>qui in ipsis sunt, conare, prius quidem internos,
+<lb/>deinde externos ; cernes enim , istis tractis flecti membrum,
+<lb/>tractis vero his extendi. Quin etiam, si crure adhuc
+<lb/>toti corpori adhaerente capto ejusdem mortui animalis
+<lb/>utrumque tendonem aut musculum velis vicissim
+<lb/>extendere , etiam hoc pacto cernas per internos quidem
+<lb/>membrum flecti, per externos vero extendi. Praeterea,
+<lb/>si totum musculum per transversum abscindere velis sive
+<pb n="4.391"/>
+<lb/>in animali mortuo; sive adhuc vivente, partem su jus
+<lb/>aliam sursum, aliam.deorsum . ferri evidenter videbis, ad
+<lb/>sinum terminum utramque tractam scidque, si quavis in
+<lb/>parte totum musculum per transversum abscideris, fieri
+<lb/>evidenter videbis; quo manifestum est L quod omnis ejus
+<lb/>pars connatum .habet motum, in fo ipsam scilicet coitionem.
+<lb/>Etenim et si principium supernum solum abscideris
+<lb/>musculi, totus ad caudam feretur, si finem iinferioPem,
+<lb/>ad caput retrahetur;^ si utrinque abscideris,i eunt
+<lb/>quasi conglobatum videbis et concurrentem ad medium
+<lb/>ex utrisque ^finibus. Scio ergo; quod per unumquodque
+<lb/>dictorum fatis demonstratur, quod erat propositum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p>Verum et propter medicos et philosophos^
+<lb/>qui de omni actionis inventione .dubitare contendunt;
+<lb/>non solum haec i verum etiam qnae^ postea dicenda sunt
+<lb/>omnia adiungentur^ Scirrho enimr genito in musculo,
+<lb/>aut quocunque tendone, eorum quidem; qui parte membrr
+<pb n="4.392"/>
+<lb/>interna constituti sunt, pars flexa non amplius extenditur,
+<lb/>eorum vero, qui foris fiunt, extensa non amplius
+<lb/>flectitur, contrario modo, quam in volucribus sic habebat;
+<lb/>in illis enim in contrariam partem vulneratae pars retrahebatur,
+<lb/>hio autem ad ipsam passam trahitur. Videtur
+<lb/>autem et hoc non modo non repugnare lis , quae antea
+<lb/>dicta sunt, verum etiam mirifice attestari. Omne enim,
+<lb/>quod fcirrhum contraxerit, a tumore praeter naturam
+<lb/>tenditur. Hoc certe P ipsi a morbo accidere videtur, quod
+<lb/>bene valenti ab impetu voluntario, nisi quod ab hoc
+<lb/>motus est spontaneus, ab isso vero non spontaneus. Qua^
+<lb/>re ne tuis quidem manibus ullum eorum, quae ita assecta
+<lb/>sunt, ad contraria retrahere queas, quemadmodum
+<lb/>in vulueribus fieri solebat; contra enim tendit. scirrhus,
+<lb/>vice ligamenti musculo factus, Quare, si possibile esset
+<lb/>manibus nostris in oppositum lucum .duci partem, nihil
+<lb/>utique prohiberet eam et a musculis oppositis abduci,
+<lb/>utpote qui et ipsi naturalem motum obire possint.
+<pb n="4.393"/>
+<lb/>Quae autem .in sGirrhis, eadem in phlegmone fieri cemun-e
+<lb/>fur. Nam et musculi et tendones phlegmonen patientes,
+<lb/>membro ad fe ipsos tracto, saepe motu ipsum privarunt.
+<lb/>Item durities cicatricum nihilominus, quam praepositi
+<lb/>affectus, frequenter ipsum .impedivit. Videntur certe et
+<lb/>haec omnia ipsis accidere, et .his non minus ea, quae
+<lb/>dicentur, simulque multae aliae ambiguitates solvuntur.
+<lb/>Mirum enim videbatur et fere impossibile, quum unum Illisu
+<lb/>dum motus omnes musculi habeant, unum membrum, nempe
+<lb/>manum, aliquando extendi, aliquando vero flecti, interdum
+<lb/>in utramque partem circumduci, et modo furium tendi,
+<lb/>modo deorsum dimitti, et interim .retro ad spinam verti,
+<lb/>Verum non amplius mirum aliquid hujuscemodi videbitur,
+<lb/>quum nobis exploratum jam sit, tendi quidem fursum
+<lb/>et demitti manum, articuli, qui in humero est, et
+<lb/>musculorum ipsum moventium actionem esse , extendi
+<lb/>autem et flecti , brachii ad ulnam , . volvi ad pronum
+<pb n="4.394"/>
+<lb/>aut supinum, brachii ad radium. Quod autem spinam
+<lb/>tangat, et motus manus in tali aclione a quatuor arficulis
+<lb/>simul motis fit, hoc modo, demisso quidem brachio,
+<lb/>flexa autem ulna, circumducto vero radio in pronum,
+<lb/>converso autem carpo. Verum omnes sane per
+<lb/>musculos agentes fiunt: atque inpraesentiarum non est
+<lb/>dicendi tempus, a quo quis fiat; nam et in dissectione
+<lb/>musculorum , et in tractatione de usu partium,
+<lb/>item in anatomicis administrationibus dicetur tum numerus
+<lb/>omnium, tum motus partium, qui a singulis ipsis
+<lb/>sit. Quod autem ad propositum confert, id hic tractatu^
+<lb/>repetit, nihil mirum esse, quomodo, quum unus modus
+<lb/>sit motus ipsis musculis , adeo varie membra figuret.
+<lb/>Nam quod unusquisque trahit ad fe ipsum partem, in
+<lb/>quam inferitur, alter ex dextris ad sinistra circumagere,
+<lb/>alter ex sinistris ad contraria poterit; sic et alius flectit,
+<lb/>allus extendit. Quid igitur mirum est, quum multi mssa
+<pb n="4.395"/>
+<lb/>sculi per multos articulos simul agant, admodum variam
+<lb/>membrorum essd figuram? Nam qui in caput brachii inferuntur,
+<lb/>sursum tendunt ipsum; cubiti os vero extendunt,
+<lb/>qui in cubito sunt foris in ipsum ancona finientes;
+<lb/>radium vero ad pronum, qui intus in cubito sunt, quasi
+<lb/>obliquum circumducunt; carpum extendunt, qui in cubito
+<lb/>sunt, in ipsum extrinsecus desinentes; porro unusquisque
+<lb/>digitorum ab internis tendonibus flectitur. Quod
+<lb/>si digiti omnes sint flexi, tota figura manus iis, qui in
+<lb/>pancratio ipsam protulerint, similis potissimum fiat. Si
+<lb/>autem brachium quidem sursum tensum fuerit mediocriter,
+<lb/>cubitus vero exacte ad supinum sit extensus, radium vero
+<lb/>musculi in cubito foris constituti reflectant, et carpus
+<lb/>una cum digitis extensus sit, figura totius manus similis
+<lb/>extendentibus eam causa recipiendi aliquid fiet. Quod
+<lb/>quum ita habeat, si caeteris servatis solum supinum submutes,
+<lb/>constituasque medium inter exacte supinum et
+<pb n="4.396"/>
+<lb/>pronum, totam formam manus talem efficies, qualis maxime
+<lb/>fit jaculantibus , quum telum jecerint, ut inquit
+<lb/>Hippocrates. Sic quoque et in singulis figuris totius manus
+<lb/>non difficile est invenire singulorum axliculorum constitutionem,
+<lb/>modo illius memineris, quod unusquisque
+<lb/>musculorum, dum tenditur, ad fe ipsum trahit partem,
+<lb/>in quam inseritur. Hoc enim pacto omina manus opera
+<lb/>luctantibus, sagittas evibranlibus, fabricantibus, et quodcunque
+<lb/>aliud agentibus invenies a musculis, qui in ipsa
+<lb/>sunt, perfici. Hoc igitur jam mihi videtur clarum esse,
+<lb/>nec pluribus verbis indigere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Quod autem nondum dictum est, et idcirco
+<lb/>obscurum adhuc est, dicendum deinceps, videlicet
+<lb/>neque omnem manus motum actione fieri musculorum,
+<lb/>neque omnem immobilitatem quiete. Nam et motum
+<lb/>aliquem possibile est invenire omnibus musculis, qui iu
+<lb/>ea sunt, cessantibus ab actione, et quandam quietem
+<lb/>quam plurimis agentibus. Picatur autem prius de motu.
+<pb n="4.397"/>
+<lb/>Sed ut clarior formo sit, recordemur primum in omni
+<lb/>corpore horum duorum motuum, qui quidem inter fe
+<lb/>funt affines, sied non similiter fiunt; vocatur autem alter
+<lb/>ipsiorum reclinatio, alter decidentia; et reclinare quidem
+<lb/>fit voluntarie, decidere cautem non sponte; reclinare rgitur
+<lb/>musculorum actione perficitur, et ideo opus est spontaneum
+<lb/>animalis; decidere autem non est opus, sed affectus
+<lb/>praeter voluntatem, et musculo nuHo agente indiget:
+<lb/>sufficit enim solum omnes musculos a tensione quiescere
+<lb/>permittentes gravitati corporis, quo vergat, ferri. Hac
+<lb/>quidem ratione decidere et reclinare differunt; eaderm.
+<lb/>que et deorfum ferri manum et demitti. Deorfum
+<lb/>enim fertur, cessantibus musculis omnibus, qui in ea funt,
+<lb/>et corporibus ab innata gravitate deorsum tractis ; demittitur
+<lb/>autem, musculis, qui in ala sunt, ad fe ipsos traLentibus
+<lb/>brachium. Tertius igitur hic motus inventus
+<lb/>est musculorum praeter duos antea dictos; illorum enim
+<pb n="4.398"/>
+<lb/>asser, secundum quem agunt, in fe ipsos erat contractio,
+<lb/>alter vero, secundum quem cessant, dum ab oppositis
+<lb/>mufculis extenduntur, non erat quidem ipsis insitus, sed
+<lb/>fecundum aliquod accidens factus erat; at qui nunc inventus
+<lb/>est, nulia in re istis similis est, neque enim in
+<lb/>ipfo contrahitur neque extenditur ulius musculus. Nun
+<lb/>quid igitur nec penitus movetur? atqui fieri non potest,
+<lb/>ut, quum totum membrum deorsum feratur, musculus, qui
+<lb/>est pars membri, immobilis maneat; quare movetur quidem
+<lb/>tunc, non tamen extenditur, neque contrahitur. Quis
+<lb/>igitur modus ipsi motus? qualis videlicet et ossibus, neque
+<lb/>enim haec extensa et contracta simul circumferuntur
+<lb/>cum membris, fed ita moventur, ac si aliquod inanime
+<lb/>corpus ipsis aliigares. Quoniam igitur ex molibus contractio
+<lb/>quidem musculi est tanquam instrumenti animae
+<lb/>actio , extensio autem tanquam instrumenli quidem , non
+<lb/>tamen actio, sed simpliciter motus, qui modo propositus
+<lb/>est tersius motus neque ut viventibus quidem musculi^
+<lb/>inest omnino, sed ut inanimatis ac penitus ex fo ipsis
+<pb n="4.399"/>
+<lb/>immobilibus. Ad reliquum et quartum motum transgressi
+<lb/>consideremus esiam modum ipsius , qui oppositus
+<lb/>quodam modo tertio este videtur. Tertio enim modo
+<lb/>motus musculi demonstrati sunt quiescere, quamvis moveantur;
+<lb/>quarto autem demonstrabuntur agere, quamvis
+<lb/>moveri nequaquam videantur. Fingamus enim, manum
+<lb/>siursnm tensam esse, et deinde in hac figura servari; post
+<lb/>interrogemus iterum nos ipsius, cur jam non deorsum
+<lb/>feratur gravitate vergens ; ac deinde respondeamus , quod
+<lb/>musculorum elevantium ipfam tensio permanet; prius
+<lb/>igitur quam haec exolvatur perfecte, non est possibile
+<lb/>manum transmoveri; cessantibus tamen a tensione, si
+<lb/>nullus alius musculus tendatur, fed omnes quiescant, quo
+<lb/>gravitas eam ducit, eo deseretur, si autem aliquis alius
+<lb/>musculus tensus sit, quo ille trahet, illuc movebitur. Manifestum
+<lb/>igitur, quod, dum manus tensa servatur, tensio
+<lb/>musculorum, qui ipsam constituerunt, in eo statu conservalur.
+<lb/>Nunquid igitur dicendum est, eos agere quidem
+<pb n="4.400"/>
+<lb/>et tendi, fed non moveri? Atqui, si hoc verebimur
+<lb/>dicere, non agere quidem eos dicendum; ab fur dum enim
+<lb/>est fateri, eos agere fecundum innatam et maxime propriam
+<lb/>actionem, moveri autem eos negare. Atqui non
+<lb/>apparent moveri. Cur igitur non oportet etiam contraria
+<lb/>ponere, etiamsi quam maxime ardua et distinctu dissicilis
+<lb/>eorum sit pugna? Si enim argumentandi cupidi in
+<lb/>contraria argueremus, male faceremus; quum autem non
+<lb/>simus de numero eorum, qui ideo movent dubitationes,
+<lb/>ut nihil inveniatur, fed de iis potius, qui undique disigenter
+<lb/>idcirco considerant, ut exacte inveniatur, oportet
+<lb/>alacriter omne, quod in controversiam venit, in medium
+<lb/>proferre nihil formidantes^ Quia namque musculi agunt,
+<lb/>ideo eos moveri dicimus; quia vero nec totum membrum,
+<lb/>cujus pars fiunt, neque ipsi singillatim apparent moveri,
+<lb/>propter hoc rurfus non audemus fateri, eos moveri.
+<lb/>Quam igitur quispiam solutionem dubitationis inveniat?
+<lb/>utrum eam, quam afferunt, qui supponunt motus Ionicos
+<pb n="4.401"/>
+<lb/>appellatos, an aliquam aliam meliorem? An ne de hoc
+<lb/>quidem temere pronunciemus prius, quam accurate consideraverimus
+<lb/>, quidnam tandem dicant? Inibi multo quidem
+<lb/>melius hoc videtur esse.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Atque jam ita agamus, et primum (ut
+<lb/>certe illi docent) sic sermo procedat. Inteliigamus, trahi
+<lb/>aliquod ^corpus inanimatum, ut puta lapidem aut lignum,
+<lb/>ah aliquo; rursus consideremus, ah altero quodam
+<lb/>ad contraria hoc idem iterum retrahi, vincere tamen
+<lb/>robore priorem tractum, et propter hoc sequi illum corpus
+<lb/>, multo autem minus , quam si a nullo in contrarium
+<lb/>traheretur ; tertiam autem constitutionem hujuscemodi
+<lb/>corpori afferamus, quando videlicet aequis viribus in
+<lb/>contraria tenditur. Non igitur prima quidem constitutio
+<lb/>movit ipsiun uno motu, quanto vires moventis poterant,
+<lb/>et in tantam coëgit distantiam progredi , in quantam id,
+<lb/>quod movet, potuit ducere; secunda autem tanto mistos
+<lb/>rem; distantiam priore effecit, quanto alterum moventium
+<pb n="4.402"/>
+<lb/>in contrarium attraxit id, quod movetur; tertia constitutio,
+<lb/>quantum alter motuum trahebat prorsum, tantum alter
+<lb/>retrahens retrorsum in eodem loco corpus manere coegit,
+<lb/>non ut penitus immobile. Manet enim et hoc in eodem
+<lb/>perpetuo, sed non similiter illi; hoc, quia nequaquam
+<lb/>movetur ; illud, quia dupliciter, velut qui adversus cursi.Im
+<lb/>fluvii natat. Hic enim, si viribus aequalis sit vehementiae
+<lb/>cursus, in eodem femper permanet loco, non tanquam
+<lb/>is, qui nullo pacto movetur, sed prorsum proprio
+<lb/>motu fertur tantum, quantum externo retrorsum rapitur.
+<lb/>Nihil autem obfuerit rem ita obscuram pluribus exemplis
+<lb/>, explicari. Sit aliqua avis in sublimi, quae in eodem
+<lb/>loco manere videatur; utrum dicendum est, hanc immobilem
+<lb/>esse, ceu si suspensa superne fuerit, an moveri ad
+<lb/>superiora tantam, quantum gravitas corporis eam d eorsum
+<lb/>duxerit? Mihi fane hoc verius esse videtur; nam si
+<lb/>ipsam privaveris anima, vel vigore musculorum, celeriter
+<pb n="4.403"/>
+<lb/>ad terram deferri cernes: quo manifestum, connatam
+<lb/>lationem gravitati corporis deorsum aequalem ad Luperiora
+<lb/>lationi vigore animi ^essee Utrum igitur in omnibus
+<lb/>hujusmodi constitutionibus alias deorsum, alias fursum
+<lb/>corpus feratur contraria vicissim patiens, quod autem
+<lb/>celeres et momentaneae fiunt mutationes et motus
+<lb/>in brevissimis spatiis ferantur, in eodem loco manere
+<lb/>videatur, an vere unum locum perpetuo obtineat, non
+<lb/>est praefentis temporis disserere, nam in naturalibus de
+<lb/>motu disputationibus^ ejusmodi scrutari est aequius, sed
+<lb/>sufficit in praesenti hoc inventum esse, quod ea actionis
+<lb/>species fiat, quam sive tonicam sive aliter appellare
+<lb/>velis, nihil intererit; quam cognoscere, cujusmodi sit, est
+<lb/>fassus, ne musculi videantur esse otiosi, quum manus
+<lb/>sursum est tensa. Quatuor igitur omnino doctrinae motuum
+<lb/>fiunt in musculis; nam aut contrahuntur, aut extenduntur,
+<lb/>aut tranSscruntur, aut tensi manent: est autem
+<pb n="4.404"/>
+<lb/>ejusdem generis quarta doctrina cum prima, ambae
+<lb/>enim actiones musculi sunt. Quum autem mufculum
+<lb/>mortuum, qui non est amplius particeps animalis vigoris,
+<lb/>totum incidentes per transversum, ad suos fines contrahi
+<lb/>conspiciamus., videbitur utique non immerito hoc esse
+<lb/>officium confutationis corporis ipsius. Atqui si corpus
+<lb/>musculi in seipsum contrahi natum est, qlos dius adhuc
+<lb/>^rrt animalis facultatis ipsum moventis, . nisi ad hoc, ut
+<lb/>musculi mutuo motibus cedant? Nam si, quod .uterque
+<lb/>facere natus erat, id -ageret perpetuo, nihil certe prohiberet
+<lb/>corpus obnoxium .semper esse affectui, qui tetanus
+<lb/>nuncupatur; quin enim aliud tetanus est, quam .quum
+<lb/>partos invitae Incontraria retrahuntur a musculis oppoautem
+<lb/>id non fiat, aliquis forte facultatem animae.caufelur,
+<lb/>dicatqu e, Iubere ipsam musculis otium agere,,
+<lb/>cum oppositos ipsis moveri oporteat. Verum si id
+<lb/>fatebimur, primum quidem contraria iis, quae antea dicta
+<lb/>sunt, dicemus: non enim amplius musculos moveri
+<pb n="4.405"/>
+<lb/>ab animali vigore, fed potius non moveri concedemus;
+<lb/>tum multas quae in ipsis apparent; ^habebimus sibi ipsis
+<lb/>adversantia: Primum fane et maximum, quod nervo
+<lb/>perveniente ad musculum, qui intus est, abscisso statim
+<lb/>musculus ille extensus videtur si ac semper in extensione
+<lb/>manere. Oportet enim, si modo contractio quidem conhata
+<lb/>est ejus corpori, extensio autem anima jubente sicbat,
+<lb/>extensionem perire potius, quam contractionem,
+<lb/>quando is, cui nervus abscissus est, musculus a communione
+<lb/>cum principio est fejunctus : nunc vero contrario
+<lb/>modo fe habet , contrahitur siquidem isse , cui non est
+<lb/>abscissus nervus p qui autem illi est contrarius, extenditur.
+<lb/>Oportebat autem non Polum ejus, cui nervus abscisses
+<lb/>est , extensionem perire , fed ct ejus , cui non est
+<lb/>abscissus, ambo conservari, et extensionem et contratitionem,
+<lb/>si modo extendi quidem a nervo, contrahi vero
+<lb/>a fe ipsis musculi habent. Quomodo igitur et hujus
+<lb/>dubitationis solutionem habebimus? Ex ipsa rerum diveritate
+<lb/>oportet et hic discrimen invenire et motus
+<pb n="4.406"/>
+<lb/>corporis musculorum i et facultatis, quae ipsis utitur.
+<lb/>Quod igitur est discrimen? Abscisso musculo externo aut
+<lb/>tensione statim partem flecti, tametsi flectere ipsam nolimus.
+<lb/>At a quo flectitur? . (neque enim id praeterire
+<lb/>oportet) ab ipfo scilicet musculorum internorum corpore
+<lb/>in fe ipsum natura considente. Quod si flexio . partis non
+<lb/>est voluntatis nostrae, quonam pacto fieri dicatur ab ansa
+<lb/>mali facultate? Ut igitur , discas, quis sit facultatis proprius
+<lb/>motus, jubeto hominem conari partemlaesam impensius
+<lb/>flectere: videbis sane evidenter ipsam flecti. Ruror
+<lb/>SHS jubeto exolvere voluntatium motum. flectendi: videbis
+<lb/>certe iterum. eam extendi, quousque .primam flexionem
+<lb/>resumat, ad quam deducta est absque yolunsario conatu.
+<lb/>Ex his enim, quae apparent, evidenter intelligi potest,
+<lb/>quod in exactam et perfectam flexionem nunquam. corpus
+<lb/>musculi ex fe ipso pervenire posset, nisi ab animali
+<lb/>facultate adiuvaretur. Frustra igitur, forte quispiam dicet,
+<lb/>corpus musculorum ed natufo, ut contrahi possit, factum
+<pb n="4.407"/>
+<lb/>esse, quum ab anima id ipsum perfectius ac melius
+<lb/>efficiat. Sed qui hoc dicet, unus ex iis est, qui de
+<lb/>nullo pronunciare, fed de omnibus dubitare, ut ipsi luquunfur,
+<lb/>solent; quem libenter percunctarer, an partem,
+<lb/>quae nata est extendi, putet aptissimum instrumentum
+<lb/>potentiae, cujus officium est cogere, an contra. Equin
+<lb/>dem ne excogitare quidem possum, quonam pacto quis
+<lb/>instrumentum ineptius ad motam construxisset, quam si
+<lb/>ipsum ad contraria voluntati moventis vergens fecisset;
+<lb/>quod si hoc est ineptum, contrarium profecto est aptissimum
+<lb/>omne quod ex Te ipso inclinat, quo moturum velit.
+<lb/>Quum igitur facultas animalis festinet musculum ad proprium
+<lb/>principium trahere, structura ad hoc apta ipsi fuit.
+<lb/>Hoc quidem. tale esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">lliud vero quis justius quaerat dubitetque,
+<lb/>curnam olnnino. proprium motum dixerimus esse
+<lb/>corpori musculi extremam contractionem, quum et post
+<lb/>perfectam extensionem contrahatur, et post extremam
+<pb n="4.408"/>
+<lb/>contractionem extendatur. Aut enim neutrum ipsi motum
+<lb/>proprium esse dicendum, fed casu ^aliquo fieri, aut utrosque
+<lb/>similiter proprios esse existimandum esu An, quod
+<lb/>plurimum quidem recedit a perfecta extensione, parum
+<lb/>vero a perfecta contractione, idcirco magis propria ei
+<lb/>contractio putanda est? Quum enim duo .sint (ut sic
+<lb/>dixerit aliquis) in figuris excessus, videlicet summa extensio
+<lb/>et perfecta contractio ; si non magis proprium
+<lb/>esset corpori musculi contrahi, quam extendi, mediam
+<lb/>amborum figuram exacte funderet, semperque ad eam dimissus
+<lb/>tenderet ; nunc vero non apparet^, accedit enim
+<lb/>propius ad perfectam membri flexionem quam extenfionelll.
+<lb/>. Verum si hoc concedatur ac dicatur, ut fano
+<lb/>aequum est concedi et dici, (apparet enim ita habere,)
+<lb/>adhuc videtur mihi considerandum esse, cur, extrema
+<lb/>flexione membri voluntaria facta, quum ipfam folverimus,
+<lb/>parum discedere musculus appareat, paulatimque
+<lb/>quodammodo extendi ; id enim haudquaquam erat necesse,
+<pb n="4.409"/>
+<lb/>siquidem natura ipsius corporis ad contractionem vergit.
+<lb/>Quas vero ad hoc rationes adducere possimus , in medio
+<lb/>ponatur considerandum feritatis amatoribus; ut, si quidem
+<lb/>recte demonstraverimus, neque ipsi falli appareant, totum
+<lb/>jam propositum inventum esse dicamus ; sta id minus,
+<lb/>saltem, quum plurima quidem partim jam invenerimus,
+<lb/>partim^ vero. alia diligenter simus perscrutati,
+<lb/>alius quis et alius, quod deest, inveniat. Ut autem
+<lb/>futurus siermo sit dilucidus , . aliqua similitudine est opus,
+<lb/>quam non modo intelligere potes,, verum etiam, si vis,
+<lb/>comparare. Duo enim ossa capiens cujusvis animalis, ad
+<lb/>articulum inter.se conjuncta, duas catenas ex pluribus
+<lb/>nervis connectens, aut conglutinato accurate, in quibus
+<lb/>ego partibus ossium jussero, aut alligato. subeo autem
+<lb/>conglutinare vel alligare , quo loco musculi ossibus inIërebantur:
+<lb/><space type="tab">    </space>Quum autem sit duplex modus insertionis</p>
+<p>omnibus musculis, nihil obest, quominus utrumque ipsorum
+<lb/>per similitudinem imitemur. Conandum esit igitur
+<lb/>clare interpretari duplicem hunc modum; non enim recte
+<pb n="4.410"/>
+<lb/>quis ipsinn imitetur, nisi exacte noverit. Principium
+<lb/>autem hoc orationi iustissimum fuerit. Quum ossa invicem
+<lb/>coeant, ut articulus stat; alterum quidem ipsorum
+<lb/>est, quod movetur, alterum vero veluti Pedes quaedam
+<lb/>ei, quod movetur, esit Tubfirmatum; quomodo cernis
+<lb/>ostiorum cardines Te habere. Quare necessario manenti
+<lb/>quidem cavitas, ei vero, quod movetur, devexitas adesis
+<lb/>Vocatur autem cavitas et cotyle et praeterea glene, devexitas
+<lb/>vero caput et condylos. Tanto autem cotyle,
+<lb/>quam glene, cst profundior, quanto caput condylo est .
+<lb/>longius; utrumque. enim utrique, velut cardini, locum
+<lb/>aptum natura comparavit. Quum vero hoc modo bene
+<lb/>haberent, quae movenda erant , multo adhuc aptius
+<lb/>atque artificiosius eis conjunxit, quae motura erant. Nam .
+<lb/>mufculos, instrumenta motuum, produxit quidem ex stmperiacentibus
+<lb/>ossibus, in quibus sunt cotylae, inseruit
+<lb/>autem in capita subiacentium, quae erant movenda; et
+<lb/>per .stas intensos capitibus sursum . tractis , simul cum eis
+<pb n="4.411"/>
+<lb/>totum membrum sursum trahitur. Quum autem alter
+<lb/>ipsorum majns, alter vero minus os erat moturus, magnitudinem
+<lb/>musculorum, qui moturi sunt, creavit proporlione
+<lb/>parem moli movendorum ossium. Quare alii
+<lb/>quidem jure ex ipsis capitibus aut condylis superjacentiutsi
+<lb/>ossium sunt exorti, alii vero paulo his inferius
+<lb/>juxta cotylem aut glenen, sed non multum; parvi siquidem
+<lb/>hoc pacto penitus fuissent, nec potuissent movero
+<lb/>subjectum os. Haec quidem natura est ossium conjunctarutu
+<lb/>inter sese articulis et musculorum ipsia moventium.
+<lb/>Imitari autem eam recte possis, si catenam ex altero osisiutst
+<lb/>appendens ca parte, qua musculus enascebatur, applices
+<lb/>ejus alium finem in caput alterius ossium, quo musculus
+<lb/>inserebatur, duo haec observans, nempe ut crasfilios
+<lb/>catenae satis sit movendo ac vehendo ossi subjccto,
+<lb/>tum ne in excessibus figurarum catena sit tensa, scd ita
+<lb/>fe habeat, quasi humi jaceret a nullo appensa. Sint igL
+<pb n="4.412"/>
+<lb/>tur duae catenae, quae loca occuparunt oppositorum mufculorum,
+<lb/>qui extendere et flectere membrum nati sunt,
+<lb/>utraque tunc penitus liberata a tensione, quando membrum
+<lb/>extremam habet figuram , altera quidem externa,
+<lb/>cum exacte est extensum, altera autem interna, cum
+<lb/>flexum. His ita structis, ^manifestum, quod catenarum
+<lb/>utraque a manibus^ nostris tracta in extremam extensionem
+<lb/>aut flexionem ducit ossium constructionem; ipsae
+<lb/>vero per fe ipsas dimissae, mediam figuram compositionis
+<lb/>ossium ubi effecerint, postea quiescunt. Adhibere autem
+<lb/>mentem oportet praecipue huic ipsi figurae; media. enim
+<lb/>exacte haec est inter extensionem et . contractionem. Si
+<lb/>tamen alteram catenarum incideris quidem. in aliquo,
+<lb/>non autem abscideris totam , parum omnino ad alteram
+<lb/>partein; mediae figurae transferes ossium constructionem:
+<lb/>quod si penitus abscideris, impensius, non tamen ita, ut
+<lb/>ad ultimam veniat figuram; extremae namque figurae
+<lb/>non aliter fieri videntur, nisi quum catenas manibus Arahas
+<pb n="4.413"/>
+<lb/>ad proprium principium. Eadem haec accidere et
+<lb/>in mufculis evidenter cernuntur, quippe quum musculus
+<lb/>catenae proportione respondeat, anima vero manui litoventi
+<lb/>ipsam; neutra enim catenarum absque manu ad
+<lb/>extremam figuram constructionem ossium deducere potest,
+<lb/>neque ullus musculorum absque animali impetu extremam
+<lb/>flexionem aut summam extensionem partis efficere;
+<lb/>privatis autem musculis quidem animali impetu, catenis
+<lb/>vero manu, mediam videbis figuram ossium inter fe mutuo
+<lb/>fieri. Quod si incideris musculum externum, flecti
+<lb/>membrum ultra mediam figuram videbis, quemadmodum
+<lb/>si catenam externam incidisses: pari modo, si musculum
+<lb/>internum incideris, extendi partem plus medio videbis.
+<lb/>Quaenam igitur causae funt tum horum tum aliorum
+<lb/>omnium affectuum, qui musculis accidunt? Principium
+<lb/>quidem omnium unum est, videlicet musculos perfectam
+<lb/>habere contractionem in excedentibus figuris, quemadmodum
+<lb/>in catenis habebat; reliquae autem omnes hanc
+<pb n="4.414"/>
+<lb/>Consequuntur Principium autem hinc pariter ostendemus,
+<lb/>non enim ex hypothesi quadam nobis incerta SUmendum
+<lb/>est ipfum, sied exquodam fymptomate, quod
+<lb/>evidenter apparet in omnibus musculis. Quidnam autem
+<lb/>est id? cujus certe ante meminimus, quod musculus
+<lb/>tantum contrahitur, quum tendo abscissus a membri capite
+<lb/>fuerit, quantum motu voluntario incitatus in extremam
+<lb/>flexionem duxerit membrum; ostenditur enim
+<lb/>manifeste hujusmodi apparere, musculum suapte natura
+<lb/>in extremam contractionem progredi , quantum in simctura
+<lb/>corporis est positum. Quum enim solutus fuerit
+<lb/>continuitate, quam habet cum osse obnitente, tunc, quasi
+<lb/>vinculis solutus et perfecte liber factus, fuam ipsius naturam
+<lb/>ostendit, quamdiu vero a musculo ex opposito
+<lb/>constrtuto pars retrahitur, qui et ipfe eandem naturam
+<lb/>Labet, ut statim ad extremam contractionem festinet, alter
+<lb/>mufculus ab altero aequaliter privatur coita ita fe
+<pb n="4.415"/>
+<lb/>ipsirm; atque ita accidit oppositorum in membris mnfcual ,
+<lb/>lorum utrumque in dimidio contractionis laedi.- . Porro, t
+<lb/>quod uterque quidem fua natura in extremam contractionem
+<lb/>semper festinet, alligati autem sint e partibus oppositis
+<lb/>capili unius . ossis , omnino necesse est: membrum aequipollentibus
+<lb/>molibus interceptum neutrum sequi. Neutrum
+<lb/>autem sequi idem est, ac si mediam haberet figuram
+<lb/>extremorum ; Iliorum enim utrumque fiebat, altero
+<lb/>ipsorum praevalente; extensio quidem,; externo, flexio
+<lb/>vero, interno. Aequipollens igitur motos ipsius corporis
+<lb/>musculorum fit, quando neuter tonum animalem habet
+<lb/>auxiliarem, non aequipollens vero, quum alter solus
+<lb/>dominatur. Quare necesse est vincat contractio illius .
+<lb/>musculi, qui ab animali facultate adjuvetnr. Trium igior
+<lb/>tur apparentium causas invenimus;, ab uno principio profecti,
+<lb/>quod ne ipsirm quidem ex hypothesi nostra, fed
+<lb/>ex evidenter. apparentibus sumpsimus. Quod enim musculi
+<lb/>videntur accipere extremam contractionem, quum
+<pb n="4.416"/>
+<lb/>soluti fuerint vinculo , quo ad capita membrorum funt
+<lb/>alligati, palam nobis factum est, eos fua natura quidem,
+<lb/>quantum ad structuram eorum pertinet, perfecte contrahi,
+<lb/>fed propter aliud quiddam impediri: quid autem esset,
+<lb/>quod impediret, quaerentes, proximam causam vinculum
+<lb/>invenimus; quo enim abscisso in extremum contrahebantur,
+<lb/>hanc causam priorem, cur non contraherentur, pofuimus.
+<lb/>Vinculum autem non simpliciter, quia vinculum
+<lb/>est, idcirco prohibere invenimus, quo minus musculi
+<lb/>contraherentur, fed quia inferitur in caput ossis, quod in
+<lb/>contrarias partes tenditur, coque assecuti fumus causam
+<lb/>ejus, quod fecundo loco apparet, videlicet quod memhra
+<lb/>mediam figuram accipiunt, quum neuter musculorum
+<lb/>ab animali facultate movetur. Tertium erat ad haec apparens,
+<lb/>videlicet flecti et contrahi aut extendi tunc
+<lb/>membrum, quum alterum duntaxat musculum voluntas
+<lb/>movet; vinci enim interim alterum atque violenter cogi,
+<lb/>ut simul cum toto membro extendatur. Age igitur praeter
+<pb n="4.417"/>
+<lb/>haec et aliorum omnium, quae apparent, causas
+<lb/>recenseamus, ut, si sibi ipsi consentaneae fuerint, credamus
+<lb/>ob id rationibus, quae de ipsis afferuntur, sicubi
+<lb/>vero .dissideant vel in inno quovis, omnes similiter
+<lb/>suspectas habeamus^ Sit itaque praeter dicta primum
+<lb/>quidem hoc .evidens. d Abscisse namque externo musculo,
+<lb/>ultra quidem mediam figuram deflectitur membrum, non
+<lb/>tamen ad extremam; quanquam forte videbitur aequum
+<lb/>esse, quum nullus amplius retrahat sin contraria musculum
+<lb/>internum, oportere eum in extremam venire ...contractionem.
+<lb/>Sed. qui .ita sentit, oblitus est gravitatis, quae
+<lb/>membro inest; quae perfectae contractioni musculi resistit?
+<lb/>Nam et in similitudine, quam fecimus per catenas, similiber
+<lb/>apparet accidere;. neque enim, istarum abscissa exA
+<lb/>terna, reliqua contractio in extremum poterat venire^
+<lb/>prius, quam abscinderetur os, quod ab ipsa movetur;
+<lb/>quamdiu autem continuum erat, retrahebat ad fe spsunr
+<lb/>catenam. Igitur quum esiam musculum internum quht
+<lb/>totum fecuerit, membrum consistit in eo sita, qui est in-^
+<pb n="4.418"/>
+<lb/>ter mediam figuram et extremam extensionem; musculus
+<lb/>enim externus non potest penitus extendere ipsum absque
+<lb/>animali impetu. Quare et haec apparentia lis, quae
+<lb/>antea dicta sunt, et sibi invicem sunt consentanea.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Praeterea, quae ab Hippocrate scripta
+<lb/>funt olim de omnibus figuris, quae in partibus sunt,
+<lb/>nunc quoque ita se habere videntur. Nonne mirifice
+<lb/>haec concordant? primum quidem, quod flectentes penitus
+<lb/>quamcunque partem aut extendentes summe dolemus;
+<lb/>fecundum vero, quod media istarum figura minime
+<lb/>dolorem affert; tertium, quod mutationem celerem in extremis
+<lb/>figuris appetimus; quartum, quod diutissime me-.
+<lb/>diam figuram servamus, nuliam cupientes mutationem;
+<lb/>quintum, quod hanc quoque mutare aliquando desideramus;
+<lb/>sextum, quod omnis figura molesta est summe illibecillis.
+<lb/>Nam figurarum excessus merito dolorem afiërunt,
+<lb/>nempe cum alter musculorum agat, alter praeter
+<lb/>naturam extendatur; media vero istorum figura, et ab
+<pb n="4.419"/>
+<lb/>actione et a nimia tensione utrosque inhibens, merito
+<lb/>est jucundissima. Quare et mutationem figurarum quidem,
+<lb/>quae dolorem afferunt, celerem optamus, ejus vero,
+<lb/>quae dolore caret, tardam. At cur omnino ipsam llilltare
+<lb/>desideramus, quamvis sine dolore sit? quia in hac
+<lb/>esiam figura tensionem quandam musculi sustinent, minorem
+<lb/>tamen, quam in omnibus aliis; eam autem dolore
+<lb/>carere dicimus, non quia nullius penitus doloris sit particeps,
+<lb/>fed quia minimi, et ejus ferme insensibilis prop
+<lb/>ter paucitatem; atque. ipsam mutari tum cupimus, dum
+<lb/>paulatim congestus fit sensilis. Quod autem et in hac
+<lb/>figura tensionem quandam musculi habeant, si eorum Illeminimus,
+<lb/>quae antea diximus , non amplius demonstratione
+<lb/>egemus. Tendi enim eos diximus a membris, in
+<lb/>quae inseruntur, ob eamque causam liberatos .ab illa tensione
+<lb/>, quum tendo est sectus , contractionem fecundum
+<lb/>naturam prompte resumere. Nunquam igitur ullus musiculus
+<lb/>sine tensione est, ne quum. in mediis quidem figuris
+<lb/>consistit; sed quod hanc quidem ut exiguam contemnimus,
+<pb n="4.420"/>
+<lb/>alias vero ut vehementes ac violentas non
+<lb/>ferimus, hanc quidem eligimus, ilias vero fugimus. Quum
+<lb/>autem imbecilli summe fuerimus, ut An stomachicis et:
+<lb/>cardiacis syncopis, tunc nec brevem tensionem ferimus,
+<lb/>neque mediam figuram toleramus; quo fit, ut, quamvis
+<lb/>impotentes simus ad motus, tamen alias alio projicia-mus
+<lb/>partes, aliquam quidem consequi figuram dolore
+<lb/>carentem optantes, sed nihil tale prorsus invenire po^
+<lb/>tentes. Ut igitur, siquis nostrum cogatur lapidem aliquem
+<lb/>non magnum ex cosso suspensum circumferre, robustus
+<lb/>quidem absque molestia ferat, e imbecillus autem redditus
+<lb/>statim tanquam onus deponere desideret, eodem modu
+<lb/>et musculorum quisque. quasi quendam lapidem gestans
+<lb/>appensum os, donec quidem validus est, contemnit; plerumque
+<lb/>ne tantillum quidem gravitatem ejus sentiens,.
+<lb/>quum autem imbecilius fuerit, tunc sentit et aegre fert,
+<lb/>et quasi quoddam onus excutere cupiens alias aliam figuram
+<lb/>appetit. Omnia igitur, quae musculis accidunt^
+<pb n="4.421"/>
+<lb/>omnibus convenire videntur, et communi principio o mnia
+<lb/>haerere, quo demonstrati sunt ex se quidem ipsis
+<lb/>festinare semper in extremam contractionem , sied non
+<lb/>posse hanc consequi, quod tum oppositos in ^contraria
+<lb/>trahentes habeant, tum gravitatem ossium annexam.
+</p>
+<pb n="4.422"/>
+</div>
+</div>
+<div type="textpart" subtype="book" n="2">
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE MOTU MUSCVLORUM LIBER II.</head>
+
+
+<p rend="indent">Quum autem prima nobis ac veluti elementa
+<lb/>musculorum motus demonstrata sint, addamus ipsis
+<lb/>jam quae defunt, ut nihil amplius desideretmsu sed
+<lb/>possit, qui haec omnia accurate legerit, facile omne, quod
+<lb/>de musculo propositum fuerit, invenire. Rursus igitur
+<lb/>incipiamus a figuris, quae in partibus funt, in quibus
+<lb/>superior liber desiit. Ac primum quidem mediam figuram
+<lb/>proponentes dicamus, quod in hac necesse est duplicem
+<lb/>constitutionem inesse musculis , alteram quidem
+<pb n="4.423"/>
+<lb/>antea dictant, qua neuter oppositorum musculorum agitT
+<lb/>alteram Nero, quae nunc dicetur, in qua similiter utrique
+<lb/>agunt. Existit autem prior quidem quiescentibus,
+<lb/>ut Hippocrates nominabat, reliqua vero, quum neque
+<lb/>extendere neque flectere membrum alicui permittimus,
+<lb/>ne fi maximam quidem vim afferat:. fit autem haec, oppositis
+<lb/>musculis actionem tonicam nuncupatam habentibus.
+<lb/>Sic autem, etsi prope mediam figuram utrinque membmm
+<lb/>constitueris , aeque utrisque musculis agere poteris;
+<lb/>quum autem ad aliquam earum, quae excedunt, i figurarum
+<lb/>duxeris ipsum, caeteri musculi fatis esse. possunt
+<lb/>actioni ejusmodi. Non obscurum autem est ne id quidem,
+<lb/>quod in singulis.dictis figuris alias magis, alias minus
+<lb/>tonicam actionem. musculi obeunt; tum quod lisila
+<lb/>dia figura cum tali actione neutra earum, quae excedunt;
+<lb/>est inferior. Ne igitur mediam figuram simpliciter carere
+<lb/>dolore dicamus, fed quae in quiete sit;, media namque
+<lb/>figura cum intensione utrorumque musculorum, aequet^
+<pb n="4.424"/>
+<lb/>extremae, dolorem affert. Quum vero in ipsa quine
+<lb/>media figura partim simpliciter sit, partim non simpliciter,
+<lb/>simpliciter quidem media omnium membri catum
+<lb/>excedunt figurarum; non simpliciter autem  quae alterius
+<lb/>oppositionis solius est. Quae quidem simpliciter media
+<lb/>est, sine defatigatione, ut Hippocrates appellavit, l m su
+<lb/>taxat fuerit; nulla tamen aliarum exacte est sine dcsatigatione.
+<lb/>Demonstratio autem ejus, quod dicitur, fieri
+<lb/>possit maniscfta, quum prius nos statuerimus, et quae
+<lb/>simpliciter sit media figura, et quae non sit ejusmodi.
+<lb/>Fiet autem sermo, quo clarior sit, in manu tanquam
+<lb/>exemplo. Quum igitur in ea extremae figurae quatuor
+<lb/>sint, prona, supina, summa extensio, ac flexio famma,
+<lb/>quae quidem simpliciter media est, omnium istarum est
+<lb/>media; quae autem non simpliciter media est, unius est
+<lb/>media utriusvis oppositionum; alia enim est extensionis
+<lb/>extremae et flexionis, alia vero supinae et pronae
+<lb/>media est. Figura igitur supina manus est, quum con^
+<lb/>aava quidem ejus pars sursum est, devexa autem deorsum;
+<pb n="4.425"/>
+<lb/>prona vero huic contraria; media autem ambarum
+<lb/>quum intrinsecus quidem sit concavum, extrinsecus an
+<lb/>tem devexum , quumque infectus quidem est parvus di
+<lb/>gitus aliis, os vero cubiti ossi radii. Haec certe medit
+<lb/>figura potest quidem extensa perfecte manu, potest etiau
+<lb/>flexa constare ; quemadmodum sane et alterius oppositio.
+<lb/>nis media figura potest quidem constare, quum supina et
+<lb/>manus, potest etiam, quum est prona; terminus aulea
+<lb/>illius figurae est ulna rectum angulum faciens ad bra^
+<lb/>chium , et propter hoc ipfam appellant angularem, Ain
+<lb/>dia itaque simpliciter ex concursu ambarum dictarum
+<lb/>mediarum figurarum fit; aliae vero mediae quatuor quse
+<lb/>dem erunt universae, sed nulla ipsarum simpliciter me^
+<lb/>dia totius membri erit, sed unius duntaxat oppositionis
+<lb/>u.ut enim extensionis et contractionis fotum erit media
+<lb/>aut lupinae et pronae. At quoniam utraque ipsarum
+<lb/>duplex fit juncta vicissim excessibus reliquae oppositionis
+<lb/>Iic necesse est quatuor omnino fiant. ln unaquaque au.
+<pb n="4.426"/>
+<lb/>tem ipsarum aliud quidem commune est omnium, aliud
+<lb/>vero proprium cujusque. Commune quidem, quod om
+<lb/>nino unum aliquod genus musculorum agit, reliqua vero
+<lb/>tria tenduntur quidem per accidens, non autem agunt.
+<lb/>Proprium vero cujusque, angularis quidem et pronae
+<lb/>est, ut agant quidem ii musculi, qui intro convertunt os
+<lb/>radii, alii autem omnes quiescentes tendantur; caeterum
+<lb/>angularis quidem, sed lupinae est proprium, ut, qui exIra
+<lb/>circumducunt, agant, reliqui vero quiescentes tendant
+<lb/>tur; eodem autem modo et in media inter pronam et
+<lb/>supinam, cum summa quidem extensione soli extendeutes
+<lb/>ut agant, est proprium, cum flexione vero sol i fleutentes,
+<lb/>cum caeteri omnes otiosi quidem sint, test teudantur.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Ut autem perspecta claraque fit oratio,
+<lb/>scire prius oportet, a quibus musculis, et quomodo lu
+<lb/>habentibus , et qualem articulum moventibus, quatuor
+<lb/>isti manus motus perficiantur. Est igitur brachium pars
+<lb/>totius manus maxima; termini autem ipsius inferne quidem
+<pb n="4.427"/>
+<lb/>articulus, qui in flexu cubili est, (cubitum autem
+<lb/>vocamus, cui innitimur, ut inquit Hippocrates ,) superne
+<lb/>autem rursus humeri articulus. Altera autem pars totius
+<lb/>manus oblonga nec minima post brachium est, quam ulnam
+<lb/>appetant; terminatur autem et linitur, qua brachio
+<lb/>quidem continua est, per articulum, qui in flexu cubili
+<lb/>est, qua autem carpo, convertitur rursus per ipsum. In
+<lb/>brachio sane unum os apparet magnum, nec non rotundum,
+<lb/>nominatum eodem nomine, quo pars. In ulna
+<lb/>vero quum duo sint osia, alterum quidem ejusdem nominis
+<lb/>est cum tota parte, alterum radius appellatur; dearticulantur
+<lb/>autem ambo ad brachii oram inferiorem , ulna
+<lb/>quidem, ubi medius locus condylorum brachii est, radius
+<lb/>vero externum brachii ipsius condylum amplectitur in
+<lb/>glenen desinens, atque circum ipsum veluti axem quendam
+<lb/>dum vertitur, manus conversiones regit; intro quidem
+<lb/>dum circumagit, prona figura manus, extra vero,
+<lb/>supina sequitur; extendere autem ct flectere manum
+<pb n="4.428"/>
+<lb/>dearticulationis uluae ad brachium est actio. Exacta
+<lb/>autem adeo ossium compositio nesicio si cui aliorum
+<lb/>articulorum Tanta insit:- brachli enim ora inferior dilatata
+<lb/>nodis circumscribitur, ulua vero contra processus duos
+<lb/>flexus faciens sibi invicem oppositos mediamque ipsorum
+<lb/>cavitatem C litterae similem efficiens hac cavitate amplectitur
+<lb/>medium T ocum .condylorum brachii, similem ad
+<lb/>unguem nuncupatis trochlearum rotulis. Quum igitur
+<lb/>cavitas uluae circumfertur circa devexitatem brachii, extendi
+<lb/>atque flecti accidit toti membro. Ut autem in
+<lb/>neutram partem inclinet, sed semper exacta dearliculatio
+<lb/>maneat, supercilia mediae cavitatis causae fiunt, coarctans
+<lb/>tia ulnae apophysies. Quum igitur anterior apophysis
+<lb/>motus dux est, flectitur membrum, extenditur autem,
+<lb/>quum posterior; terminus vero flexionis quidem, ut anterrorem
+<lb/>apophysim affirmet ad os r brachii, extensionis
+<lb/>vero, .ut posteriorem. . Quum vero et brachii os curvum
+<pb n="4.429"/>
+<lb/>sit, et ulnae apophyseon utraque .oblonga, et ob hoc
+<lb/>periculum esset, citius L quam oporteat, ossibus invicem
+<lb/>congredientibus, ne membri motus prohiberetur, exfculpsit
+<lb/>natura utrinque brachii os, ini cujus cavitates
+<lb/>tantam ulnae coronae fe fe demittunt, quatenus extremam
+<lb/>extensionem et flexionem . manus. esses .habitura. Quum
+<lb/>autem major esset posterior uluae corone, multo .prosunt
+<lb/>diorem eo loco cavitatem brachii fecit, ut propter profunditatem
+<lb/>hoc loco tenue admodum os brachii sit, quod
+<lb/>est inter cavitates; non Tamen perforavit .ipsum, quamvis
+<lb/>tenue esset, ne laxus undique t minusque. fumus esset
+<lb/>articulus, neque musculorum mOtuS.nimli. , Si. vero per-A
+<lb/>foratum fuisset, flectere quidem retro .manum liceret^
+<lb/>quae autem extensa ipsa firmiter . agimus,. haec , omnin
+<lb/>longe pejus fierent, et utrorumque musculorum tensione^
+<lb/>essent utique cum magno dolore; quum posteriores quidem
+<lb/>ab animali facultate plus tendantur,- quam sint nall
+<pb n="4.430"/>
+<lb/>contrahi, anteriores vero eousque extendanlur, ut periculum
+<lb/>.sit eos divelli: Talis profecto ars naturae ad dearticulationem
+<lb/>exactam est.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Qualis autem situs musculorum ipfam moventrum
+<lb/>sit, (quorum causa et dearticulationis mensio..
+<lb/>nem fecimus,) deinceps dicatur^ Duo quidem in partibus
+<lb/>anterioribus brachii, duo vero in posterioribus orti
+<lb/>sunt, validis aponeurosibus ulnae inserti. Incipiunt autem
+<lb/>majores quidem eorum a capite brachii , minores
+<lb/>vero multo inferius , ferunturque omnes quatuor recta
+<lb/>ad uluam , et inferuntur in hunc ipsum maxime locum,
+<lb/>unde oriri incipiunt coronae. Posterior sane pars ipfe
+<lb/>ancon est, quem Athenienses quidem olecranum, Dores
+<lb/>yero cubitum nuncupant. Anterior vero, ut dictum est,
+<lb/>qua anterioris corones exortus est. Ab his igitur mufculis
+<lb/>parte anteriore brachii et posteriore sitis ulnam
+<lb/>attrahentibus extensio et flexio fit. Quatuor autem alii
+<lb/>principia quidem habent ex ulna ex utraque parte curvitatis
+<pb n="4.431"/>
+<lb/>ad gibberum , duo quidem extrinsecus , duo vero
+<lb/>intrinsecus. Omnes autem quum sint obliqui, ossi radii
+<lb/>inseruntur, ad finem quidem ipsius inferiorem (ubi dearticulatio
+<lb/>est ad carpum) magni, in medio vero parvi;
+<lb/>qui etiam ipsi, dum tenduntur, ad principia simul attrahunt
+<lb/>radium, et per hunc totam manum pronam quidem
+<lb/>interni, supinam externi efficiunt.. Quum igitur sic
+<lb/>habeat natura musculorum moventium dearliculationes,
+<lb/>quae in gibbero sunt, demonstremus jam propositum,
+<lb/>quod in quatuor differentiis figurarum non simpliciter
+<lb/>mediarum unum quidem genus musculorum semper agit,
+<lb/>omne autem aliud quiescit quidem ab actione, verum extenditur.
+<lb/>Primum igitur proponamus eam, quae etiam
+<lb/>tunc primum dicta est, quam angularem et pronam
+<lb/>vocabamus; in qua de musculis quidem moventibus radium
+<lb/>non est opus longiori sermone, quod videlicet, qui
+<lb/>quidem intus sunt, operantur, qui autem furiae otiosi extenduntur;
+<lb/>sed de musculis ulnam moventibus verbis
+<pb n="4.432"/>
+<lb/>pluribus, est opus, i nam prima imaginatione videbuntur
+<lb/>habere exacte mediam constitutionem., su quod et angularis
+<lb/>media est figura, non- tamen res ita diaboli . Si enim, ut
+<lb/>angularem, t ita etiam figuram mediano inter supinam et
+<lb/>pronam tota manus haberet, tunc vere media constitutio
+<lb/>adesset ipsis ; sed quoniam ejusmodi non habet, necesse
+<lb/>est, etsuos musculos, et alios omnes inverti, quantum
+<lb/>tota manus discedit a. figura fecundum naturam; quantum
+<lb/>autem musculi distorquentur, tantam, puto, circa devexitates
+<lb/>ossium quasi fracti et flexi tenduntur et laborant.
+<lb/>Nam media simpliciter figura, praeterquam quod nullum .
+<lb/>musculum habeat neque agentem, neque qui violenter
+<lb/>moveatur,^ ne aliud quidem eorum, quae .in membris
+<lb/>funt, distorquet; unde ipsi et hoc tanquam praeter eaetera
+<lb/>maximum attestatus est Hippocrates; caeterae vero
+<lb/>omnes, aliae magis, aliae minus, , inversos habent et
+<lb/>musculos^ omnes al et tendones, et nervos V et ad haec
+<lb/>etiam venas et arterias;^ ί omnia enim haec partim extra
+<pb n="4.433"/>
+<lb/>membra, partim intrinsecus existunt. Ut igitur nata
+<lb/>sunt, ita fe habentia haec servant figuram mediam inter
+<lb/>supinam et . pronam. Harum autem utraque admodum
+<lb/>omnia contorquet;^ prona namque (de qua primum propositum
+<lb/>est dicere), quae fit supina, dum musculi ulnae
+<lb/>externi agunt, tantam facit tensionem, ut ipsorum quidem
+<lb/>capita extra membrum sint, ventres autem nominati
+<lb/>superne, insertiones vero -intus. Quod si violentius^
+<lb/>adhuc manum circumvertas, alterum eorum musculum
+<lb/>majorem, qui in finem radii inseritur, adeo videbis fluxum
+<lb/>esse circum membrum, ut ejus partium aliae foris,
+<lb/>aliae intus, aliae superne, aliae deorsum appareant, caput
+<lb/>quidem extra, venter autem nominatus superne,
+<lb/>quod autem ultra hunc est, intus, inferius vero intortio;
+<lb/>adeo violenter fractus est et flexus. Alii vero musculi,
+<lb/>qui ïn brachio sunt, per quos extendere aut flectere
+<lb/>manum possumus, multo quidem minus his caeterisque,
+<lb/>qui in ulna simt, habent tamen aliquid et Ipsi centor-^
+<pb n="4.434"/>
+<lb/>sion.is. Eadem et in Lupinis figuris fiunt :i etenim et in
+<lb/>his musculi quidem, qui. in ulna sunt , summe laborant,
+<lb/>qui autem in brachio .sunt, simul laborant; -sed quum
+<lb/>mediam inter supinam et .pronam efficientes figuram
+<lb/>perfecte extendimus anti flectimus manum, .tunc laborant
+<lb/>quidem valde musculi,, , qui in. hrachio ifnnL, simul autem
+<lb/>cumr .ipsis laborant, qui sin iulita sunt. Sola igitur figura-,
+<lb/>rum simpliciter media, cin nullius excessus participatio
+<lb/>est Tn neutra oppositione, : exacte caret dolore,. caeterae.
+<lb/>vero omnes quatuor partim minus, partim vero magis,
+<lb/>omnese tamen funt doloriflcae. Unam quamque autem
+<lb/>spsarum, quantum discedens ab extrema constitutione du-.
+<lb/>cis membrum ad Inediam., tanto minus dolorificum effi-,
+<lb/>cies figuram. Omnino autem nulla doloris erit expers
+<lb/>prius, quam ad mediam plane accesserit. Quare ex di-,
+<lb/>ctis et hoc jam manifestum .est, quod huic mediae figurae
+<lb/>soli omnium figurarum inest musculos. omnes perfecte.
+<lb/>quiescentes praebere, .aliae autem omnes partim minus,
+<pb n="4.435"/>
+<lb/>partim vero magis, unum certe aliquod genus mufculorum
+<lb/>agens habent.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Non igitur ne dormientes quidem omnes
+<lb/>penitus otiosius mufculos habent; sed quicunque propter
+<lb/>ebrietatem, aut defatigationem, aut infirmitatem virium,
+<lb/>omnes corporis partes omnino exolventes, in sue diam
+<lb/>eas figuram musculis reducere permiserunt, lu tantum
+<lb/>perfecte .mufculos quiescentes habent. Non tamen in extremis
+<lb/>figuris ullam partem quivis potest habere , dum
+<lb/>dormit; valida enim et vehementer intensa actione. mufcudorum
+<lb/>ad hujusmodi indigemus; Quaecunque autem
+<lb/>in medio sunt inter extremas et mediam figuram , in his
+<lb/>ut plurimum somnum capimus; in quacunque enim talium
+<lb/>constituens membrum musculi^. circa ipstum tonice
+<lb/>agentibus. custodiam figurae commiseris, sic servant, adeo
+<lb/>ut. fedentes saepe quidem dormi verint, et nonnulli deambalantes.
+<lb/>Et .hoc equidem audiens antea non credebam ;
+<lb/>quum autem fuit opus aliquando per totam noctem iter
+<pb n="4.436"/>
+<lb/>facere; experientia rem^ ipsam edoctos, coactus sum credero;
+<lb/>ferme enim stadium integrum dormiendo et sinuista
+<lb/>videndo peregi, nec prius excitatus sum, quam in
+<lb/>lapidem imp egerim ; - et lid est profecto, quod non permittit
+<lb/>dormientibus iter facere longum , quia non possunt
+<lb/>exacte laevem viam nancisci. ld igitur Polis expertis
+<lb/>credibile estr Caetera autem omnibus evidenter quotidie
+<lb/>apparent, quae in iis, qui dormiunt sedendo , accidunt^
+<lb/>Et ipforum quoque discumbentium pauci omnino exactam
+<lb/>figuram in unaquaque parte habent. Qui autem in manibus
+<lb/>aliquid fervunt, hi quidem et valde tonicam
+<lb/>actionem ostendunt^ manent enim eorum digiti exacte
+<lb/>dilexi circa parvum t saepe corpus, aurum, aut lapidem,
+<lb/>aut ^aliquem nummum. Quod autem inferiori maxrssae
+<lb/>accidit-, nonne et id manifestum est? ^non enim ^discedit
+<lb/>a superiore, nisi si ebrius aliquis, aut valde ignavus, aut
+<lb/>summe defessus dormiat, Et ipfe quoque stertor propter
+<lb/>hujtPsmodi fieri solet, relaxata quidem inferiore maxilla,
+<pb n="4.437"/>
+<lb/>supino autem jacente homine: etenim et id ipsum, videlioet
+<lb/>supinum Iacere, signum est resolutionis; ob eamque
+<lb/>caufam utique et Hippocrates utrumque damnat , et Tupinum
+<lb/>jacere, et hiare dormientem, decubitus autem in
+<lb/>alterum laterum laudat.. Cognoscere autem. maxime poifes,
+<lb/>quanta actio hujuscemodi decubilibus insit, si corpus
+<lb/>hominis mortuum sic inclinaveris non enim ne minimo
+<lb/>quidem tempore manebit, fed supinum aut pronum
+<lb/>statim fiet, quocunque gravitate verget. ltaque etTupinum
+<lb/>jacere et hiare non absque actione stertendi aut
+<lb/>exolutionis, aut ebrietatis, aut ignaviae iunt signa. ldeo
+<lb/>rursus Hippocrates, quum omnes partes. jubeat luxatas
+<lb/>et contritas in figuris dolore carentibus chirurgia pertracsare,
+<lb/>Cujusmodi; inquit, in inferiori maxilla hominis
+<lb/>mediocriter biantis; qualis enim. in manu angularis. est
+<lb/>figura, talis est in inferiori. maxilla mediocris .hiatus,
+<lb/>haec enim est extremarum media. .Extremae igitur inferieris
+<lb/>maxillae figurae sunt, tum quae maxime hi anti v
+<lb/>bus, tum quae dentes invicem firmantibus fit; quarum
+<pb n="4.438"/>
+<lb/>ilia quidem a musculis, qui in mento et collo sunt, deorsum
+<lb/>trahentibus, altera autem ab iis, qui intra maxsslam
+<lb/>ex palato oriuntur^ .et iis, qui temporales vocans
+<lb/>tur, perficitur I. nisis forte et musculi masticatorii nuncupali,
+<lb/>.qui fiunt ad latera inferioris maxillae, actionem
+<lb/>adjuvant; hoc enim alibi discutiemus. Verum mediocriter
+<lb/>hiando media figura sit , omnibus dictis musculis
+<lb/>quiescentibus. Caeterum et morientibus sponte sua ad
+<lb/>hanc maxilla inferior merito accedit; omnes enim muficini
+<lb/>actione privantur. Manifestum igitur, quod, dum
+<lb/>dormiunt non aperto ore, actio musculorum retrahentium
+<lb/>maxillam conservatur;^ mulli vero extensius aut flexas
+<lb/>ad unguem manus habentes vel etiam crura ido rmiuntj
+<lb/>servantes etiam in his actionem tonicam. P Sed forte longior
+<lb/>sum, quum liceat in memoriam reducere, quae maxime
+<lb/>in promptu sunt. Quis enim nostrum officium -este
+<lb/>negabit scilicet eflluxiones superfluitatum per musculos
+<pb n="4.439"/>
+<lb/>custodiri.? Meatuum enim excretoriorum finibus ceu portis
+<lb/>quibusdam custodes praesunt musculi praevalidi, nihil.
+<lb/>permittentes extra ferri prius, quam ratio jusserit; quin,
+<lb/>et hos in dormientibus videmus sinum officium. tabsquer
+<lb/>visio perficere. Et emittere aliquid superfluitatum invite,
+<lb/>aut resolutis musculis fit, aut ratione depravata; i ut in
+<lb/>phreniticis ,. aut .etiam ratione et musculis gravatis,. utI
+<lb/>in. ebrietatibus;. ^oportet enim aut rationem non praeesse^
+<lb/>aut mufculos agere r non posse, aut utraque. simul esse.
+<lb/>laesa. Temeraria igitur sententia est, quae asserit, ani-P
+<lb/>nIam dormientium quiescere, nisi cessationem hanc non.
+<lb/>perfectam quietem, fed quasi intermissionem quandam r
+<lb/>vigoris dicant; nam si hoc dinant,^ bene dicunt, ipsis que
+<lb/>assentimur; non. enim Tensus expertes penitust. sunt. dor-;
+<lb/>furentes^ sed difficulter fonti entes; cur .enim vocantes
+<lb/>subaudiunt,^. et lumine importato exurgunt., et tangentes
+<lb/>sentiunt^ Quod, si mihi ebrium dicas, nec,;. ubi terrarum
+<pb n="4.440"/>
+<lb/>sit, scientem, et eum, qui prae ignavia Epimenide profundius
+<lb/>dormiat, isti et prius, quam dormirent, prope.
+<lb/>sicuius expertes erant; et magis utique custodiam cujuscunque
+<lb/>rei permitteres viro frugi et strenuo dormienti,
+<lb/>quam hujuscemodi vigilantibus; verumtamen et illi confervant
+<lb/>multas actiones animales.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Non igitur probabilis est oratio, quae afsierit,
+<lb/>actiones , quae fiunt dormientibus et profundiori
+<lb/>siomno oppressis , omnes naturales esse : non enim in univerfum
+<lb/>verum est hoc. Nonne transferunt et movent
+<lb/>varie membra? nonne etiam dormientes loquuntur?. an
+<lb/>et haec naturae opera dicent? At (dicet fortasse quispiam)
+<lb/>non assequimur mente ea fieri. Neque fane palpebrarum
+<lb/>motui semper, neque, quum concionem habes,
+<lb/>aut oras, aut disputas, adhibes mentem omnium partium
+<lb/>molibus, neque, quum Athenas adis ex Piraeeo, omnibus
+<lb/>particularibus crurum actionibus ; nam cogitabundi saepius
+<lb/>imprudenter peregerunt iter, aut etiam praeterierunt
+<pb n="4.441"/>
+<lb/>locum, ad quem principio proficiscebantur. Utrum igitur
+<lb/>ambulatio neque animae actio esu, neque motu voluntario
+<lb/>fit? aeque enim nos et ambulatio praesens videtur
+<lb/>latere, et quae in somnis accidit, motus quidem partium,
+<lb/>quae moventur , actio autem tonica earum , quae non
+<lb/>moventur. Quare, quam caulam in vigilantibus dixeris,
+<lb/>quod saepe noli animadvertunt sigillatim actiones, hanc
+<lb/>esiam et ad dormientes et gravius oppressos transferre
+<lb/>licet, nec amplius admirari, cur multa opera voluntario
+<lb/>et his si.ant;. fed causa ignorantiae prompte pronunciare,
+<lb/>nullum talium operum .voluntario fieri, vide ne temerarium
+<lb/>sili Quod si nullo certiore judicio hujuscemodi
+<lb/>Iudicari queant, utrum ..voluntatis , an naturae sint actiones,
+<lb/>quid aliud concluditur, quam nihil oportere de
+<lb/>his pronunciare? atque aequum potius est de hujusmodi
+<lb/>dubitare, quam temere decernere. Sed si habemus evidentissimum.-
+<lb/>judicium de voluntariis actionibus, sicut certe
+<lb/>habemus , pronunciemus confidenter., non fotum quodquedictorum
+<pb n="4.442"/>
+<lb/>, verum etiam respirationem ipsam motu voluntario
+<lb/>fieri, nimirum quum et ipsa subjici j udi ci o videatur.
+<lb/>Quid igitur est, quo iudicamus opera voluntaria?
+<lb/>Multa tibi confido, non unum judicium me daturum,
+<lb/>omniaque sibi invicem consentanea. Etenim si, quae
+<lb/>fiunt, fedare potes quum vis, et quae non fiunt, facere,
+<lb/>id est motus voluntarius. Si praeterea citius aut tardius,
+<lb/>crebrius aut rarius ea faciendi potestatem habes, nonne
+<lb/>omnibus modis manifestum est, actiones eas parere voluutali?
+<lb/>Arteriae certe motum et cordis neque cohibere,
+<lb/>neque excitare, neque crebriorem, neque rariorem, neque
+<lb/>tardiorem, neque velociorem voluntas facere potest;
+<lb/>idcirco ne animae quidem opera hujuscemodi este dicunt,
+<lb/>sed naturae. Motum autem crurum in his omnibus ratio
+<lb/>regit; nam et fedare, dum fit, et rursus excitare quicluentem
+<lb/>, et velociorem et tardiorem, et rariorem ac
+<lb/>frequentiorem efficere potest. Haec eadem et respirationis
+<lb/>motu fiunt, quae actio quidem est diaphragmatis et
+<pb n="4.443"/>
+<lb/>musculorum thoracis, ut inita, quae de causis respiratio-:
+<lb/>Ilia scripsimus, demonstratur; animae .autem, non naturae,
+<lb/>est opus, siquidem movere musculos animae officium est. t
+<lb/>Non est autem aequum, in quibus causam non reperi-o
+<lb/>mus, in ipsis discedere ab iis, quae evidenter apparent;
+<lb/>evidentia certe sunt jmlicia actionum voluntariarum; cau-t
+<lb/>sam autem non reperimus in iis, quorum particulares
+<lb/>actiones non assequimur. Qui igitur evidentibus fidem
+<lb/>abrogat, sensus est expers; qui vero de dubiis prompte
+<lb/>pronuntiat, temerarius est; qui autem propter obscurrtatem,
+<lb/>quae his inest, ea, quae etiam clara lunt.A habet.
+<lb/>suspecta, de numero eorum est, qui dubitationibus oblectantur;
+<lb/>porro qui non modo suspecta habet, verum
+<lb/>esiam, quae clara sunt, propter obscuritatem dubiorum
+<lb/>studet evertere, extreme fatuus est. Ne igitur sponte ι
+<lb/>sensum nobis ipsi adimamus, neque dubitationis aemuli,
+<lb/>aut fatui, aut aliud ejusmodi quidvis simus; sed, quod
+<lb/>tum rectum est, tum modestrs hominibus convenit , quod
+<lb/>quidem evidens est, prompte accipiamus, quod autem est
+<pb n="4.444"/>
+<lb/>dubium, per otium quaeramus. Evidens igitur est volun-.
+<lb/>tatem respirationi dominari; dubium vero, quam ob can-.
+<lb/>fam plerasque actionum voluntariarum mente non assequamur.
+<lb/>Eo itaque supposito, quod est. evidens , ad vefugandam.
+<lb/>causiam transeamus, non contendentes omnino
+<lb/>quicquam in ea, nec asserentes adime nos invenisse ve-.
+<lb/>ram causam, .tametsi ea dictis antea longe est probabilior.
+<lb/>Caeterum (ut ego arbitror) nemo adhuc causam dixit,.
+<lb/>sed dubitatione sola (cujus jam mentionem feci) adscripta.
+<lb/>causam fe. putaverunt invenisse. Quorum sime. institutum
+<lb/>est laudandum, sive invenerint., sive invenire studuerint,
+<lb/>sied nos ipfos quoque non decet pigros esse ad inveniendum
+<lb/>ea, quae restant. .</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Principium autem inveniendi ea hoc fa-i
+<lb/>ciemus, multos videlicet homines interdum actiones quasdam
+<lb/>egisse, quarum paulo post penitus sunt oblisi, ut,.
+<lb/>qui per metum, aut ebrietatem, -aut aliquidvj.alindl
+<lb/>generis, ejusdem egerunt, nihil amplius. eorum, quae
+<lb/>egerint, dum in .illis constitutionibus erant, recordantur..
+<pb n="4.445"/>
+<lb/>Causa autem, ut milli videtur, est, quod non intenti actionibus
+<lb/>tota mente fuerint. Pars enim animae imaginatrix,
+<lb/>quaecunque ea .sit, haec eadem et recordari videtur; si
+<lb/>itaque insignes impressiones rerum in imaginationibus acceperit,
+<lb/>conservat perpetuo, atque id quidem est memoria
+<lb/>tenere; sin vero^ obscuras et penitus superficiarias,
+<lb/>non conservat, et hoc est oblivisci; et ob hanc causam
+<lb/>in ira, curis, ebrietatibus, timoribus, phrenitidibus, et
+<lb/>omnino in vehementibus animi affectibus nullius eorum,
+<lb/>quae egerint, in. posterum amplius meminerunt. Quid
+<lb/>igitur mirum est in somnis eliauf, obscure agente anima,
+<lb/>obscuras esiam imaginationes fieri, ideoque nec stabiles?^
+<lb/>quid etiam mirum, si in vigiliis, ratione quidem aliquid
+<lb/>meditante, et tota fere circa curam intenta, parva quae-^
+<lb/>dam ejus admodum^ pars circa ambulationem occupata.
+<lb/>impressionem actionis facit obscuram, et idcirco statim
+<lb/>oblita; ne quidem num spontaneo motu opus factum sit,
+<pb n="4.446"/>
+<lb/>amplius meminit? Ut enim , fi nullo pacto recordaremur,
+<lb/>non utique possemus de ulla re praeterita considerare,
+<lb/>sic, in quibus non meminimus, nescimus, qualianam effent;
+<lb/>conservari enim ea prius memoria oportet, ut, qualianam
+<lb/>sint natura, deinde consideremus. Nihil igitur
+<lb/>mirum mihi certe videtur, fi, motu voluntario respirationem
+<lb/>in somnis agente, postquam expergefacti fuerimus,
+<lb/>non possimus dicere, an secundum voluntatem refpiremus;
+<lb/>sed simile profecto accidit, quod illi, qui et pedes
+<lb/>et manus in somnis moverit, et aliquid sit loquutus, postea
+<lb/>illorum oblitus, dicat fieri absque voluntate et
+<lb/>membrorum motam et vocem. Nam et qui mente errant,
+<lb/>loquuntur, et vadunt, et omnes motus voluntarios
+<lb/>obeunt, sed ne lu quidem, quum ad ingenium redierint,
+<lb/>amplius meminerunt, quae egerint. Novi enim quendam
+<lb/>per tredecim dies delirasse hoc pacto: putabat quidem, fe
+<lb/>Athenis, non Romae, jacere; crebro autem familiarem
+<lb/>puerum vocans, jubebat sibi, quae ad gymnasium pertinebant,
+<pb n="4.447"/>
+<lb/>afferri, et pauca intermissione facta, Heus ^inquit)
+<lb/>ad Ptolemaeum dico, decrevi in gymnasio diu lavari; ac
+<lb/>nonnunquam esiam existebat interea, atque indutus ibat
+<lb/>recta ad ostium aulae , ac quum retinerent eum , qui intus
+<lb/>erant, exireque prohiberent, cur prohiberetur, ab eis
+<lb/>percontabatur; hi vero (nihil enim licebat aliud dicere
+<lb/>quam ea, quae erant vera) febricitasse eum dicebant, et
+<lb/>adhuc febricitare ; ipse autem et ad haec valde modeste
+<lb/>respondebat; scire enim et ipse dicebat, quod adhuc
+<lb/>reliquiae sibi febris restabant , sed eas penitus esse exiguas,
+<lb/>nec metuendum, ne a balneo laederetur, ortam
+<lb/>enim sibi totam praesentem febrem ex itinere. An non
+<lb/>recordaris, conversus ad puerum dicebat, quod laboriose
+<lb/>heri iter fecimus a Megaris Athenas? Talia quum diceret,
+<lb/>ac faceret, fluxu sanguinis per nares repente copioso sibi
+<lb/>facto, et post ipsum sudore, statim quidem convaluit, sed,
+<lb/>eorum, quae ante sibi acciderant, nullius amplius recordabatur.
+<lb/>Utrum igitur (hoc enim est, quod a principio
+<pb n="4.448"/>
+<lb/>proposuimus ostendere-, surrexisse, et loculum fuisses et
+<lb/>alvum exonerasse, et minxisse, (haec enim omnia in omnibus
+<lb/>illis diebus-diomo faciebat,) non sint actiones voluntariae,
+<lb/>an id quidem absurdum, (nam si hae non sunt
+<lb/>voluntariae, ne usia alia quidem erit,) non autem eorum
+<lb/>recordabatur, quemadmodum ne sobrii Quidem eorum,
+<lb/>quae ebrii fecerunt, amplius meminerunt? Quid
+<lb/>igitur mirum ita fa habere et in respiratione , ut fiat
+<lb/>quidem ipsa ex voluntate, fed quum alias quidem disigen
+<lb/>tius adhibeamus mentem, alias vero negligentius fegniusque,
+<lb/>idcirco recordemur quidem actionum, quibus
+<lb/>mentem adhibuimus, obliviscamur autem eorum, quae fecus
+<lb/>ste habent? Quoniam vero, cujus rei penitus obliti
+<lb/>fuerimus, hanc ne actam quidem aliquando fuisse putamus,
+<lb/>consequens est; ut, an cum voluntate acta sit, ne
+<lb/>quidem recordemur^ Quod autem totum opus refpirationis
+<lb/>voluntate et sponte ab anima fiat, declaravit servus
+<lb/>barbarus^ qui, quum vehementi ira concitatus mortem sibi
+<pb n="4.449"/>
+<lb/>consciscere decrevisset, prostratus humi, respiratio neque
+<lb/>cohibita, longo quidem tempore immobilis erat, postea
+<lb/>vero paulum volutatus, hoc pacto mortuus est. Quod si
+<lb/>non liceret usquequaque respirationem cohibere, ne idcirco
+<lb/>quidem aliquis negaret, quin ipsa fecundum volunec
+<lb/>tatem fieret. Apparent enim eorum operum, quae motu
+<lb/>voluntario fiunt, alia quidem libera esse, alia vero affectibus
+<lb/>corporis servire. Priora itaque perpetuo absque
+<lb/>impedimento a nobis fiunt, posteriora vero. non perpetuo,
+<lb/>fed in tempore quodam et cum mensium; nam ire ad
+<lb/>aliquem et alloqui et capere aliquid et recipere abfolute
+<lb/>libera sunt; dejicere vero et mingere corporis
+<lb/>affectuum sunt remedia. Atqui nonnulli tacuerunt quidem
+<lb/>annum integrum, et eo amplius, idque sponte sua,
+<lb/>delectionem vero vel urinam retinere non modo annis,
+<lb/>fed ne mensibus quidem, quinimo nec diebus paucis
+<lb/>nemo potuit, adeo enim urgent ac faepe angunt, vel
+<lb/>multitudine gravantia, vel acrimonia mordentia, ut quidam
+<pb n="4.450"/>
+<lb/>ne in locum quidem consuetum abire valuerint. Simile
+<lb/>igitur et his est et respirationis opus, imo multo
+<lb/>magis urget ac celeriorem necessitatem habet; etenim
+<lb/>periculum ..est, ne quis moriatur, nisi respiraverit, atque
+<lb/>extreme molestum est suffocari. . Nihil igitur mirum, si
+<lb/>penitus retinere ipsam arduum sit; neque enim omnes
+<lb/>ad moriendum sunt proclives, etiamsi infinitis malis condictentur,
+<lb/>neque, qui eo progrediuntur, abire e vita summo
+<lb/>cum dolore volunt. Neque igitur quispiam eo, quod
+<lb/>tacere quidem, si velimus, usquequaque possumus, respirationem
+<lb/>vero retinere non possumus, idcirco voluntarium
+<lb/>quidem opus esse vocem; minime autem, fed naturale
+<lb/>quiddam, respirationem existimet. . Hoc certe arbitror
+<lb/>clare demonstratum fuisse. .</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Quod autem reliquum est, toti sermoni
+<lb/>de mediis figuris deinceps addere aequum est. Ut enim
+<lb/>in manibus, quod appellatur angulare, quod exacte medium
+<lb/>summae extensionis et flexionis est, omnis prorsus
+<lb/>doloris est expers, sic videri posset et in cruribus fe
+<pb n="4.451"/>
+<lb/>habere; non tamen ita est, sed quod in bis dolore caret,
+<lb/>consistit inter mediam figuram et extensionem extremam.
+<lb/>Causa autem consuetudo est; plurimum enim extensis
+<lb/>cruribus utimur, hujus edim gratia facta funt, ut
+<lb/>totum corpus ab his sustineretur, stantibus et ambulantibus
+<lb/>nobis; et prius esiam, quam ipsis utamur, in fasciis
+<lb/>extensa formata funt, ideoque et in somnis, et alioqui
+<lb/>discumbentibus, extensa magis, quam flexa funte Quinesiam
+<lb/>multo magis laboramus in extremis .^flexionibus,
+<lb/>quam extensionibus : mulli autem deducere omnino ad
+<lb/>extremam flexionem crus non possumus sine manuum
+<lb/>opera, fed veluti mutilum ad eam acsionem prae insusantia
+<lb/>habemus; siolisque saltatoribus et luctatoribus facile
+<lb/>flectitur, quibus esiam felis perfecte flecti folitum
+<lb/>efa Tantum igitur a media figura ad extensionem progressum
+<lb/>est, quod perfecte caret dolore, quantum a diuturna
+<lb/>consuetudine membrorum est coactum. Haec igitur
+<lb/>duo considerans in omnibus articulis, naturam videlicet
+<pb n="4.452"/>
+<lb/>et consuetudinem , invenies medium et dolore carens.
+<lb/>Videtur autem in idem convenire ubique consuetudo quidem
+<lb/>cum natura, unde pulchre dictum est, rosum esse
+<lb/>naturam acquisititiamL figura vero dolore carens cum.
+<lb/>medio; etenim in cruribus idem est, quod est sine dolore
+<lb/>et medium, siquidem medium motuum, qui infiunt memhriss
+<lb/>neque perfectae extensionis et flexionis medium
+<lb/>feceris si invenies enim, quantum abfumus a flexione exTrema
+<lb/>stantum discedere figuram dolore carentem ad extensionem.
+<lb/>ln universum igitur in omnibus ar siculis extremor
+<lb/>motus considerans invenies mediam figuram et
+<lb/>doloris expertem: UL enim in articulo ad cubitum ea,
+<lb/>qude vocatur angularis, in articulo vero ad genu, quae
+<lb/>propior^ est extensioni, sic in spina ea, quae propior est
+<lb/>flexioni, in articulo vero ad carpum; quae exquisite recfa
+<lb/>est; spinam enim plus curvam aut flexam facere
+<lb/>possumus, brachiale autem reflectimus et flectimus aeque
+<lb/>ad utramque partem recti. dure igitur, quae quidem
+<pb n="4.453"/>
+<lb/>exacte recta -Astute media omnino est. extremorum ullituum),
+<lb/>absque, ullo dolore. penitus esa Sed spinae recta
+<lb/>haud media est, fed aliquantum curva, plus enim habet
+<lb/>motus ad hanc.; quapropter recti magis laboramus particulis
+<lb/>spinae, quam. sedentes, aut secantes, opus est eninr
+<lb/>stantibus quidemsuenfam esse, j ac entibus vero atque sedentibjns
+<lb/>nihil prohibet curvatam esse. Haec in omnibus,
+<lb/>articulis diligenter considerans invenies omnem rationem
+<lb/>sibi ipsi consentaneam. Etenim quicunque. musculi i sine
+<lb/>articulis sunsu etiam in his media constitutio absque dovj.r
+<lb/>lore est, sicuti in ano se habet, vesica et lingua, nam et.
+<lb/>fumme constringere anum et maxime dilatare dolorem
+<lb/>inducunt, item extendere quam longissime linguam, vel
+<lb/>flectere, vel quomodocunque aliter praeter modum cir-l
+<lb/>cumducere, haud absque dolore fiunt. Facillimum igitur
+<lb/>in his invenire medium excessuum, quode tiam sine dolore.
+<lb/>est. Atque omnes homines, quo tempore cessant ab
+<lb/>actionibus vitae necessariis, mediam figuram et. dolose
+<pb n="4.454"/>
+<lb/>carentem in omnibus partibus habent, ita a justa natura
+<lb/>coacti, ut Hippocrates ain ln lingua quidem per conjugationem
+<lb/>omnes musculi orti superne et inferne, et a
+<lb/>dextris atque sinistris: quare nihil mirum, si in contrarios
+<lb/>motus pars deducatur a musculis oppositis. ln musa
+<lb/>fculo vero, qui est ad anum, et eo, qui est ad vesicam,
+<lb/>et qui in phrenibus est, res aliter habet; unus enim est
+<lb/>in singulis his rotundus sine ullo opposito mufculo; unde
+<lb/>perfpicuum est, in contrarios deduci motus has partes
+<lb/>non aeque facile, neque in promptu esse, fed sic tibi
+<lb/>perfuade.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Musiculi quidem, qui est ad vesicam et
+<lb/>anum, officium est non excernere excrementa alimenti,
+<lb/>fed retinere. Qua in re multi statim erraverunt, putantes
+<lb/>causa excemendi excrementa mufcnlos hos factos esse,
+<lb/>neque potuerunt animadvertere , quod resolutis ipsis excernuntur
+<lb/>quidem, verum nobis invitis; quinetiam propter
+<lb/>malam chirurgiam, exciso saepe ultra modum ani
+<pb n="4.455"/>
+<lb/>mufculo, nobis invitis effluit hac stercus, nempe (opinor)
+<lb/>instrumentis, quae effluere prohibent, non manentibus.
+<lb/>Non igitur simpliciter neque primum musculus hic ex.
+<lb/>cretionis instrumentum est; sed ne animali perpetuo id
+<lb/>accidat, quod, quum excisus fuerit ac resolutus, accidit,
+<lb/>hunc musculum custodem intempestivi exitus excrementorum
+<lb/>natura praefecit; quamobrem non modo non agit
+<lb/>quicquam ipsis ad excretionem, fed ne permittit quidem
+<lb/>agentibus. Quae igitur sunt hujus actionis instrumenta?
+<lb/>Plura quidem particularia, sed duplicia genere; eorum
+<lb/>enim alia animae, alia naturae sinat; atque animae quidem
+<lb/>instrumenta motu voluntario semper agunt, insimmenta
+<lb/>vero naturae sine mota voluntario. Diaphragma
+<lb/>quidem et omnes musculi epigastrii instrumenta animae
+<lb/>sunt, intestinorum autem ominum structura una cum
+<lb/>ventriculo naturae. Verum de actione horum alibi d ictum
+<lb/>esu De musculis autem nunc dicemus, quoniam
+<lb/>praesens sermo ipforum motus enarratio est. Musculi
+<pb n="4.456"/>
+<lb/>itaque . omnes epigastrii, quum agentes tenduntur, prer
+<lb/>munt intro naturae instrumenta; haec autem., si diaphragma
+<lb/>ipsis cedat, in illarum locum abeuntia musculorum
+<lb/>violentiam exolvunt; si autem resistant, tunc ceu a duabus
+<lb/>manibus pressa,. extrinsecus a musculis, intrinsecus
+<lb/>a dIaphragmate, ea, quae continentur in cavitatibus ipsorumal
+<lb/>propelluntur. Ad hoc autem adjuvat multum diaphragmatis
+<lb/>obliquitas, alterum. quidem finem ad cartilaginem
+<lb/>pectoris parte anteriore habens , alterum vero ad
+<lb/>spinam lumborum.. Quod igitur excrementa intestinorum
+<lb/>exprimantur, a musculis utrinque agentibus id accidit,
+<lb/>extrinsecus quidem ab iis, qui .in epigastrio sunt, intrinfecus
+<lb/>vero. a dIaphragmate; quod autem infra subeat,
+<lb/>quod premitur, obliquitas sepsi transversi causa est; quo
+<lb/>tempore musculus ani esit otiosus. Quumque plures sint
+<lb/>musculi in ventre, omnesque tendantur in egerendo, magis
+<lb/>quidem, qui in hypochondriis sunt, minus vero, qui
+<lb/>infra, tenduntur, contra quam in mejendo habet, magis
+<pb n="4.457"/>
+<lb/>enim tunc, qui inferius, minus vero; qui in hypochondriis,
+<lb/>agunt. Simul autem cum ambobus extenduntur
+<lb/>musculi servientes respirationi; non quod mictionis aut
+<lb/>excretionis sint instrumenta, id enim a rasione alienissi-^
+<lb/>mum est, sed quia diaphragmatis tensionem oportebat
+<lb/>aequalem esse tensioni musculorum ventris ; erat autem
+<lb/>impossibile, quum ipsum unus musculus sit, cum multis
+<lb/>et magnis certare, pericnlumque in hoc, ne victum in
+<lb/>amplum spatium thoracis everteretur. ldcirco musculi,
+<lb/>qui sunt inter costas, simul tendunt, undique eum constringentes ;
+<lb/>laxus enim thorax prompte cedit diaphragmati^
+<lb/>quum peliitur, ut licet colligere, tendentesi quidem
+<lb/>musculos ventris, et maxime ipsorum inferiores,
+<lb/>exolventes autem a vigore omnes, qui in ipfo funL To-v
+<lb/>tus enim ferme venter in hujusmodi constitutionibus in
+<lb/>amplum thoracis spatium pellitur una cum ipsi) diaphragmate.
+<lb/>Ne igitur hoc fieret, neve egestio ipsa labefactaretur;
+<lb/>totus thorax undique valide constringitur. Atque
+<lb/>ex omnibus jam dictis clarum fit, quod, qui musculi efifluxibus
+<pb n="4.458"/>
+<lb/>excrementorum praesident, coercere quidem ipsa
+<lb/>fuapte natura possunt, idque officium ipsorum est proprium,
+<lb/>excernere autem nequeunt, nisi secundum accidens,
+<lb/>quum agere desierint. Ut igitur in aliis. omnibus
+<lb/>partibus contrariorum motuum contrarii quidem mufculi
+<lb/>sunt duces, hic quoque sic habet; retentio enim excrementorum
+<lb/>istorum musculorum esit actio, excretio autem
+<lb/>eorum, qui in epigastrio funt et diaphragmate.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Hi quidem proportione respondent mufculis.,
+<lb/>qui in aliis partibus funt oppositi; sed diaphragmati
+<lb/>non licet simpliciter dicere musculos esse oppositos;
+<lb/>quatenus enim est instrumentum excernenda superflua,
+<lb/>tum cohibentes ipfa primos , tum maxime alio quodam
+<lb/>modo oppositionis eos, qui in epigastrio sunt, habet; quatenus
+<lb/>autem respirationi servit, partim quidem habet,
+<lb/>partim. autem nequaquam; expirationis enim nulius Illisu
+<lb/>sculus omnino est opifex, fede hoc opus thoracis, aut
+<lb/>potius assectus hic decidentiae a nobis antea nominatae
+<pb n="4.459"/>
+<lb/>est similis. Efflatio autem est spiritus salio simul ac con-.
+<lb/>fertim ducta foras, quae per musculorum intercostalium
+<lb/>acsionem fit; afflationis enim musculi omnes, qui intus
+<lb/>ad costas sunt, opifices sunt; et hoc rursus opus thoracis
+<lb/>simile est prius nominatae quidem in toto corpore rectinationi,
+<lb/>depositioni vero in lingulis partibus. Quum au-.
+<lb/>tem expirationi contraria sit inspiratio , efflatio ni vero
+<lb/>vehemens inspiratio, (nomine enim proprio caret,) priorem
+<lb/>quidem oppositionem solum diaphragma efficit, alteram
+<lb/>vero intercostales cum musculis, qui ad thoracem
+<lb/>perveniunt e scapulis et cosso. Indigent autem ipsa
+<lb/>maxime quidem , tibicines, et tubicines, ac praecones,
+<lb/>quum nuncupatum pedem funt decantaturi; praecipue
+<lb/>vero et qui utres inflant, vel aliud ejus generis insimmentum;
+<lb/>et ut simpliciter dicam, qui plurimum thoracem
+<lb/>transmutare dilatando ac contrahendo ipsum volunti
+<lb/>Quare justius utique quispiam mufculos thoracis externos
+<lb/>iis, qui costarum parte interna sunt, oppositos esse dixerit,
+<pb n="4.460"/>
+<lb/>non diaphragmati, siquidem maxima quidem inspiratio
+<lb/>per externos,. maxima vero expiratio per internos
+<lb/>intercostales efficitur. Demonstrantur autem tum horum,
+<lb/>tum deinceps de musculis thoracis dicendorum alia in
+<lb/>lis libris, quos de respirationis causis conscripsimus, alia
+<lb/>in iis, quos de voce prodidimus, alia in iis, quos de
+<lb/>respirationis usia scripsimus. Verum in praesentia quidem,
+<lb/>quod superest, est absolvendum. Peculiare fano
+<lb/>quiddam diaphragmati praeter alios mufculos accidit tum
+<lb/>ex situ, tum etiam ex figura. Quum agere desierit laxiusque
+<lb/>fuerit, nunc quidem i ipsius devexitas versus spinam
+<lb/>vergit, nunc vero ad ventrem; .multo tamen promptius
+<lb/>versus fpinam fertur, estque in omnibus figuris hominis.
+<lb/>(una excepta prona) superius quidem diaphragma, Anserius
+<lb/>vero fpina constituitur; quare merito ad eam vergit,
+<lb/>tum quod gravatur quidem ab iis, quae anteriori
+<lb/>parte fuperjacent, ex posteriori vero mollissimum et
+<lb/>levissimum omnium viscerum habet:, pulmonem. Verumtamen
+<pb n="4.461"/>
+<lb/>ipsius devexitas ^aliquando excidit in anteriora,
+<lb/>tum in figura prona, tum quum agunt quidem musculi,
+<lb/>qui costis intersunt, quiescunt autem , qui sunt in ventre;
+<lb/>quo manifestum est, quod tunc attolli ventrem contingit,
+<lb/>quod crebro gymnastici post exercitationes facere folenI.
+<lb/>Quod si, ut musculi i uter costales , ita et ventris musculi
+<lb/>egerint, nominant ejusmodi spiritos cohibitionem. Necesse
+<lb/>autem est interim clausam esse superiorem oram
+<lb/>laryngis; si enim, dum praedicti musculi agunt, ^pateat,
+<lb/>efflatio est; sin vero una cum ipsis et mufculi, qui in
+<lb/>[pharynge et larynge fiunt, tensi fuerint se non amplius
+<lb/>efflatio id est, fed jam vox efficitur. Duplex igitur quum
+<lb/>fit tensio omnibus musicalis, una quidem, quum agentes
+<lb/>in se ipsos coeunt, altera vero, quum a musculis opposi
+<lb/>silis extenduntur , priorem quidem diaphragma in inspirationibus
+<lb/>non violentis habet, alteram vero, quae bhu
+<lb/>furiam fit, (quemadmodum et antea^ dictum est,) alias
+<lb/>quidem musculis ventris agentibus, alias vero intereostatibus
+<pb n="4.462"/>
+<lb/>j et his etiam fo lis. In expirationibus autem non
+<lb/>violentis, quas certe vel maxime expirationes vocamus,
+<lb/>separantes eas ab effiationibus , neutram ipfarum habet;.
+<lb/>sed qualem caeteris omnibus diximus adesse constitutionem,
+<lb/>quae in medio extremorum motuum consistit, talem
+<lb/>duplicem diaphragma tantam accipit versus spinam
+<lb/>in aliis quidem figuris spectantes, in pronis autem solis
+<lb/>verPus ventrem. Verum musculi costarum et ventris
+<lb/>devexi quidem perpetuo funt assimilati subiectorum instramentorum
+<lb/>figuris: sed quum quiescunt, hujusmodi
+<lb/>admodum sunt; quum autem agunt, intro cedunt, minusque
+<lb/>curvi fiunt, quum caeteri fere omnes musculi, qui
+<lb/>alias partes movent, contrario modo habeant, nam quiefcentes
+<lb/>quidem recti, quum vero agunt, curvi fiunt.
+<lb/>Causa porro differentiae ipsorum non est obscura. Quunhu
+<lb/>enim quibusdam ipsorum dura et renitens substantia ossium
+<lb/>sit subjecta, quibusdam vero amplum quoddam fpatium
+<lb/>cedat, jure fit, ut musculi quidem omnes, qui ossibus
+<pb n="4.463"/>
+<lb/>incumbunt, dum contrahuntur, tantum in profundiustem
+<lb/>et latitudinem augesicentes, quantum de longitmdine
+<lb/>deperditur, eminentiorem omnem corporis molem
+<lb/>habeant; quibus vero, dum tenduntur versus principium;
+<lb/>mollities fedis cedit, his major pars corporis occultatur.
+<lb/>Non igitur mirum est, si, quum omnes fere musculi, qui
+<lb/>in membris sunt, dum agunt, devexi stant, foli, qui in
+<lb/>thorace atque epigastrio insunt, intro compellantur; foli
+<lb/>enim subjecta spatia laxa cedentiaque habent. Ventre
+<lb/>certe eo usque repleto, ut cum dolore distendatur , -.non
+<lb/>amplius intro cedunt; quod enim aliis perpetuo inest, renitentia
+<lb/>videlicet fubjectae fedis, id, dum repletas est
+<lb/>venter, musculis epigastrii accidit, repletur videlicet
+<lb/>et iis , qui fupra modum sunt repleti , et aqua intercute
+<lb/>laborantibus, et iis, quae utero gerunt. Quibus vero venter
+<lb/>est vacuus, his musculi prius, quam agant, sunt curvi,
+<lb/>quomodo subjecta instrumenta, ad Iliorum enim curvitates
+<lb/>extenduntur; quum vero agunt, intro cedunt, premunt
+<pb n="4.464"/>
+<lb/>enim facile fubjectas cavitates. Quin et musculi,
+<lb/>qui in. thorace funt in locis inter ossa mediis, prius quistem,
+<lb/>quam agant, figuram similem totis costis habent,
+<lb/>curvi quidem extrinsecus, cavi vero intrinsecus; quum
+<lb/>autem agunt, prementes primum quidem et maxime
+<lb/>membranam ipsis subjectum, succingentem nuncupatam,
+<lb/>per ipsam vero et pulmonem, qui moliis est et laxus,
+<lb/>tantum intro cedunt, quantum substantiam sub]cetorum
+<lb/>instrumentorum cedentem habent. Haec quum in universum
+<lb/>quis de musculorum motu tenuerit, particularia
+<lb/>omnia invenire poterit.</p>
+</div>
+</div>
+</div></body>
+  </text>
+</TEI>

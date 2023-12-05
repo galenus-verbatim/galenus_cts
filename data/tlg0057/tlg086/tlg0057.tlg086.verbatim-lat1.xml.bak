@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">In Hippocratis vel Polybi Opus de Salubri Victus Ratione Privatorum Commentarius</title>
+        <author>Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg086.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace xml:lang="lat">Lipsiae</pubPlace>
+              <biblScope unit="vol">15</biblScope>
+              <biblScope unit="pp" from="174" to="223">174-223</biblScope>
+              <date>1822</date>
+            </imprint>
+          </monogr>
+          
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x15">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="29" to="37">29-37</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x05">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">6</biblScope>
+              <biblScope unit="pp" from="220" to="236">220-236</biblScope>
+              <date>1638</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x06">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg086.verbatim-lat1">
+<pb n="15.174"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="15.174"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI IN HIPPOCRATIS VEL
+<lb/>POLYPI OPUS DE SALUBRI VIOTUS
+<lb/>RATIONE PRIVATORUM
+<lb/>COMMENTARIUS.</head>
+
+
+<p>Unus hic liber est peculiari
+<lb/>infcriptus titulo, quemadmodum prima totius superioris
+<lb/>libri pars, qua de hominis natura disserit. Nam abfolutum
+<lb/>in illo est quod titulus enunciavit, nullam adhuc
+<lb/>orationem desiderans. In hoc autem rursus . quae propofuerat
+<lb/>toto commentario perdocet: Quamobrem iis quae
+<pb n="15.175"/>
+<lb/>duobus his libris interiacent sublatis commodam infieriptionem
+<lb/>peculiarem totum opus sortitur; quam nonnulli
+<lb/>de natura humana et victus ratione- indiderunt. At ut
+<lb/>nullum plane vitium habet libellus de -natura humana,
+<lb/>vitiosa autem omnia quae duobus libris interposita stant;
+<lb/>ita commentarius hic de victus ratione salubri in plurimis
+<lb/>culpa ac vitio caret; Hippocratis institutionem de
+<lb/>elementis semper repraesentans. lu quibusdam vero iisque
+<lb/>paucissimis criminari aliquis possit librum. Porro statuamus
+<lb/>esse Polybi, sicut plerisque visum esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p>Idiotas hac vivendi ratione uti oportet.</p>
+<p rend="indent">Quosnam idiotas nominet commentarii interpretes
+<lb/>omiserunt iis quae mihi videre contigit exemplariis; imo
+<lb/>neque ego quum opus ^praeceptores mihi praelegerent, inquirere
+<lb/>unquam cogitavi.- Nunc vero quod hujus explicationem
+<pb n="15.176"/>
+<lb/>scribere mihi proposuerim, male praeceptores
+<lb/>nostros et expesttores existimavi praetermisisse conjiciendum
+<lb/>cousiderandumque quos idiotas vocitet. Liquet enim
+<lb/>deinceps conscriptam victus rationem non universis hominibus,
+<lb/>verum solis privatis Polybum consuluisse. Atqui
+<lb/>si privatis duntaxat praecepta conscripsit, .minus recte in-terpretes
+<lb/>citra distinctionem inaudierunt, quasi omnibus
+<lb/>communiter illa tradiderit. Nam invenimus apud Graecos
+<lb/>non simpliciter, sed relatione ad aliquid, idiotas sive
+<lb/>privatos appellari. Nam alium hujus artis idiotam, alium
+<lb/>illius vitae studii nominant; interdum a populi aut civitaris
+<lb/>gubernatoribus aut certe publico aliquo munere fungentibus,
+<lb/>distinguentes litus qui velut propria curant,
+<lb/>idiotas nuncuparunt. Consideranti jam mihi quos ex .his
+<lb/>Polybus nunc idiotas vocet, athletas palam ab aliis hominibus
+<lb/>sejungere videbatur; quoniam illi nullam victus
+<lb/>rationem in pane et carnium etu praefinitum habent;
+<lb/>quemadmodum nec iis qui militiam sequuntur vel iter saciunt
+<lb/>vel etiam pugnant cibariorum delectus praescribi
+<pb n="15.177"/>
+<lb/>potest quae offerenda aut non offerenda funt, quippe necessitas
+<lb/>cogit assumere quorum quisque copiam habuerit.
+<lb/>Fortan etiam quomodocunque festinam profectionem fuheuntilius,
+<lb/>aut omnino in civilibus negotiis aut ciccumsuranea
+<lb/>vita, aut calamitosa, peristaticam appellant, verfantibus,
+<lb/>certus vivendi modus., ut Polybus jubet, nullus
+<lb/>potest institui. Soliis igitur privata administrantibus , res
+<lb/>suas agentibus dictis, ratio victus quam explicabo convenit.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="hanging">Hieme quidem edere quam plurimum., quam minimum veru
+<lb/>bibere, sed potum este decet vinum quam meraci/stmum,
+<lb/>cibos vero panem; obsonia, asta omnia. oleribus autem
+<lb/>quum pauci/stmis hac tempestate utendum. sic enim
+<lb/>poti/stmum corpus tum calidum tum siccum suerit.</p>
+<p rend="indent">Totius victus summum praefatus reete nimirum fecit,
+<pb n="15.178"/>
+<lb/>qui in sermonis fine ascripserit quamobrem unumquodque
+<lb/>dictorum instituat. Etenim calefaciendum corpus siccandumque
+<lb/>propter immoderatum tempestatis hujus temperamentum
+<lb/>autumat. t Quod si commoderatum sicut veris esset, .
+<lb/>victus modum quoque commoderatum fieri iussisset. Commoderate
+<lb/>namque disposita conservare convenit; quae irnmoderate,
+<lb/>commutare. Sed .mutatio haud aliter quam ex
+<lb/>contrariis ametrirs fieri potest. Nam quod corpus immoderatius
+<lb/>vel calefactum est vel incalescit, refrigerari destderat;
+<lb/>quod vero refrigeratum est aut refrigeratur, calefierI.
+<lb/>Eadem ratione in humidi siccique ametria contrariis
+<lb/>adhibitis morbosas exuperantiae evertere oportet t contrariam
+<lb/>immoderationem offerendo, a medio . tempera toque
+<lb/>tantum recedentem, quantum morbosa inde recessit, Quocirca
+<lb/>per hiemem frigidam humidamque temperamento
+<lb/>quamplurimum quidem edere, quam paucissimum vero bihere
+<lb/>conducit. Verum hoc (quamplurimum non ceu ad
+<lb/>facultatem , rest tanquam ad alias anni tempestates referendum.
+<pb n="15.179"/>
+<lb/>Sic quam parcissime bibere relata ad alia tempura
+<lb/>comparatione protulit. Similiter vero dictum est
+<lb/>vinum meracissimum esse oportere, puta ipsius temperamenti
+<lb/>collatione ad alias anni partes facta. Attamen si
+<lb/>huic modo ad facultatem praefensque commodum relato
+<lb/>animum adhibueris, vinum semper ac cibum commoderatum
+<lb/>dabis.; quemadmodum fomnum, gymnasia, absolute
+<lb/>omnia quae a medicis exercitia vocantur, moderata concedes.
+<lb/>At quod vinum meracius ac carnes assae calefaciant
+<lb/>. siccentque, si cum masa et oleribus conferas, nemo
+<lb/>est qui ignoret. Peri modo panem, si erasae comparetur,
+<lb/>calefacere dices et exiccare. Haec itaque omnia tanquam
+<lb/>exempla ab auctore dicta putandum esu Tu vero legumina
+<lb/>deliges quae calefaciunt et exiccant, ut lenticulam.
+<lb/>Quin et olerum quaedam hac virtute praedita, uti brassieam.
+<lb/>Ad haec carnes cujusmodi funt animantium agrestium
+<lb/>et sale conlisae. Sed haec omnia ego etiam exempli
+<lb/>gratia produxi. ^Caeterum universa alimentorum materia
+<pb n="15.180"/>
+<lb/>tribus nostris commentariis sigillatim tractata est, hunc
+<lb/>titulum continentibus: de alimentorum facultatibus. Quae
+<lb/>ut pulchre de cibis deligendis ac vitandis fecundum qualitates
+<lb/>prodita, sic de ciborum quantitate nihil hic praetermissum
+<lb/>esu Edere namque plurimum, ut ad alias anui
+<lb/>partes, per hiemem concedendum; haud ignaris probe in
+<lb/>aphorismis esse lictum : aestate et autumno cibos ditsicil,
+<lb/>lime ferunt, per hiemem facillime, mox vere. Quod -si
+<lb/>quis jam condiscere cupiat quare haec fiant,. docuit et
+<lb/>hoc Hippocrates in aphorismis quum dicit; ventres hieme
+<lb/>et vere natura calidissimi, quoniam aer nos ambiens fiigidus
+<lb/>constringendo cutem insitum calorem exire probibet
+<lb/>et in alto corpore concludit; qui aestate perspiratu
+<lb/>evaporat; respiratione vero circumstans calidus aer a t tr ahitur.
+<lb/>Nominamus autem respirationem foras ac intro
+<lb/>spiritus peri os tralationem; perfpirationem vero, quae
+<lb/>per totum ex aequo corpus accidit.
+</p>
+<pb n="15.181"/>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">At quum ver accedit, tunc copiosius et dilutius paulatim.
+<lb/>que vinum bibendum est, cibisque mollioribus et paucioribus
+<lb/>utendum, panis subtrahendus et mara offerenda;
+<lb/>eadem que ratione obsonia detrahenda et pro asus elixa
+<lb/>omnia paranda. oleribus etiam paucis vere utendum,
+<lb/>donec ad aestatem homo deveniat; tum molliores omnes
+<lb/>cibos tum obsonia cocta sumendo et olera cocta et cruda ;
+<lb/>similiterque potus plurimos et quam diluti/stmos,
+<lb/>idque sensim, ut ne magna mutatio derepente utenti
+<lb/>contingat.</p>
+<p rend="indent">Vere, inquit, copiosius. et dilutius bibendum est; non
+<lb/>plurimum, neque dilutissimum. Nam plurimum ac dilutissimum
+<lb/>aestate bibere praecipit, ut quae contrarium
+<lb/>hiemi temperamentum obtinet- .Ver autem ut in tummorum
+<lb/>medio temperamentum habet , ita quoque mediam
+<pb n="15.182"/>
+<lb/>victus rationem requirit; frigidiorem sane et humidiorem
+<lb/>ut ad hiemem, calidiorem et sicciorem tanquam ad aestutem.
+<lb/>Ex his igitur liquet quomodo aestatis et autumni
+<lb/>victus ab eo praescriptus inaudiri debeat. Quare id mihi
+<lb/>praeterire visum est. Illis qui saepius commentarium relegunt
+<lb/>mentemque diligenter adhibent, omnia manifesto
+<lb/>dicta comperio, ut nubam hactenus deducta feries interpretationem
+<lb/>desideret.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="hanging">Aestate autem tum molli asina , tum potu copiosa et diluto
+<lb/>obsuniisque omnibus elixis nutriri oportet, inque
+<lb/>ita utendum dum aestas suerit , quo corpus molle sit et
+<lb/>frigidum. Siquidem haec tempestas calida est et sicca,
+<lb/>et corpora aestuosa et suualida reddit. Hac igitur inscruta
+<lb/>victus ratione iis succurrendum esu Eadem vero
+<lb/>ratione quemadmodum ex hieme ad ver, sic etiam ex
+<lb/>vere ad aestatem deveniendum, cibos quidem demendo,
+<pb n="15.183"/>
+<lb/>potum vero augendo , ad cumque modum contraria adhibendo,
+<lb/>ex aestate ad hiemem perveniendum. An autumno
+<lb/>contra cibi quidem majore copia et sicciores
+<lb/>exhibendi et obsonia ad eundem modum; potus etiam
+<lb/>pauciores et meraciores , ut homo commodam degat hiemem
+<lb/>et potibus utatur meracioribus et paucis eiblique
+<lb/>quamplurimis et siccissimis. sta enim cum vel maxime
+<lb/>calebit, tum minime frigus sentiet, quum haec anni
+<lb/>tempestas admodum sit feigida et humida.</p>
+<p rend="indent">Praesens institutio clara est, neo interprete opus habet,
+<lb/>quum PoIybus manifesta omnibus reddiderit, neque
+<lb/>obscurae cujusdam methodi investigatore. Verum ut verba
+<lb/>jacent, ita quoque per se satia innotescunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p>Corporibus cero carnosis, mollioribus, rubris confert sune
+<pb n="15.184"/>
+<lb/>maiorem anni partem sicciore victus ratione uti, humida
+<lb/>namque eorum corporum natura est.</p>
+<p rend="indent">Quemadmodum tempestatum differentiae diversam victus
+<lb/>rationem ostendunt, sic etiam corporum habitus, ad
+<lb/>quorum enarrationem descendit, sermone de anni temperihus
+<lb/>absoluto. Sed ut in anni tempestatibus convenientem
+<lb/>vivendi modum, ita in corporum speciebus ostendit.
+<lb/>Etenim carnosi, molles, rubicundi ex temperamenti humiditate
+<lb/>tales evaserunt. Oppositi vero his affecti, de quibus
+<lb/>mox dicturus est, ob siccitatem. Convenit igitur humidos
+<lb/>sicciore diaeta uti; siccos, humidiore. Atque si
+<lb/>haec vera pronunciata sunt, nimirum temperati, victu
+<lb/>temperato utentur. Voco autem temperatos neque obesios
+<lb/>neque graciles, sed quadratos, bene carnosos appellant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p>Duros vero , graciles , sulcos et nigros humidiore victu
+<pb n="15.185"/>
+<lb/>diuturniori tempore uti oportet. Nam hujusmodi corpora
+<lb/>sicca sunt.</p>
+<p rend="indent">Temperamentorum notas perfecte in commentariis de
+<lb/>temperaturis scripsimus, ubi rigidos, hoc est duros, contractus,
+<lb/>id est graciles,. siccioris esse temperamenti, sicut
+<lb/>nigros quoque docuimus. At rufos non temperamento siccos,
+<lb/>fed his colore ricinos, quos flavos nominant, esse
+<lb/>diximus; quoniam et flava bilis temperamento sicca est.
+<lb/>Verum librorum scriptores nonnulli interdum vocabulis
+<lb/>haud accurate utentes rerum disciplinam confundunt. Sic
+<lb/>enim nonnulli Germanos vocant flavos, etsi tales non sint,
+<lb/>si velit aliquis accurate nuncupare, fed russi Reliqua in
+<lb/>fermone praecedenti vere simulque manifeste dicta fluit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p>Junioribus corporibus confert tum molliori. tum humidiori
+<pb n="15.186"/>
+<lb/>victu uti; haec enim aestas sicca est et eorum corpora
+<lb/>induruerunt. senes vero sicciore victus modo. plurimam
+<lb/>temporis partem degere oportet; nam ea aetate humida,
+<lb/>mollia et su da sunt corpora.</p>
+<p rend="indent">Ad aetates digressus imperfectam divisionem fecit, qui
+<lb/>eas in quatuor, sed duas tantum differentias non secuerit.
+<lb/>Nam si victus modi indicationem ab aetatum - temperamentis
+<lb/>accepturus erat, certe conveniebat, ut quatuor
+<lb/>strui temperamenta; sic aetates quoque in quatuor partes
+<lb/>secare, ac humidam et calidam statuere puerorum, siccam
+<lb/>et calidam florentium, siccam et frigidam declinantium,
+<lb/>humidam et frigidam fenum. At puerorum quidem humistam
+<lb/>esse aetatem convenit, quod in alio temperamento
+<lb/>corporum incrementum fieri nequeat. Florenti vero, quoniam
+<lb/>praeter modum calidior et siccior est, contrario confert
+<lb/>uti rictu, quemadmodum et vigore decrescentibus.
+<pb n="15.187"/>
+<lb/>At de senum aetate non mediocris quaestio est, ab omnibus
+<lb/>propemodum neglecta, de qua post paululum dicturi
+<lb/>fumus, ubi sermonem de prioribus aetatibus absolverimus.
+<lb/>Nam si in confesso est pueros plus humiditatis habere
+<lb/>quam integre fanis conferat; plus item caloris ,. haud
+<lb/>enim simpliciter calidi sunt ut juvenes, fed innato calore;
+<lb/>qui temperatus est, in probo sanguine consistens, media
+<lb/>inter pueros et juvenes, quae est puberum et adolefcentinm
+<lb/>aetas,. in optimo nimirum temperamento consistet.
+<lb/>Quum autem optimum medium est, etiam victum temperamento
+<lb/>medium adhibere convenit, qui nec humidius , nec
+<lb/>siccius, vel calidius, vel frigidius ipforum corpus efficiat.
+<lb/>Puerorum sane corpus etsi humidius quam salubris habitus
+<lb/>postulat, non tamen exiccandum. Hoc enim modo
+<lb/>ne ipsa crescerent prohiberemus. Verum de senibus, quoniam
+<lb/>nonnulli; ipsius humidos, aliqui siccos, utrique indefinite
+<lb/>djxernnt, distinguendum nobis venit quatenus sint
+<lb/>sicci, quatenus humidi. ostentum id est in opere de
+<pb n="15.188"/>
+<lb/>temperamentis. Ipsis enim solidis corporis partibus siccos
+<lb/>esse declaravimus. Quia vero multis ob temperamenti
+<lb/>frigiditatem excrementis abundant, humidi- nominantur.
+<lb/>Ratio igitur est contrariam ac duplicem ab hac aetate
+<lb/>indicationem medicis fieri, tum propter temperamenti partium
+<lb/>solidarum, quae humectari cupiunt, siccitatem ; tum ob
+<lb/>humidorum superfluitatem, quae exiccari postulant. Proinde
+<lb/>quae utraque quonam modo observes-, absolute traditum
+<lb/>est in opere de tuenda valetudine. In praesenti
+<lb/>vero oratione fiatis^ fuerit summam eorum quae isthic descripsimus,
+<lb/>paucis indicare. Cibi quidem et potus alloquor
+<lb/>univerfa [cepum habeant humectandi et calefaciendi, quantum
+<lb/>scilicet humectare et calefacere fenum corporis solidas
+<lb/>partes decet, quae solae etiam proprie nominantibus
+<lb/>partes existunt. Rursus autem de pituitosiorum excrementorum
+<lb/>evacuatione prius considerandum est. Proinde si ex
+<lb/>opere de temperamentis repetas, drfcnsque artificio ac ficientia
+<pb n="15.189"/>
+<lb/>peculiare senum temperamentum frigidum esse et
+<lb/>siccum , humiditatem vero ascititium propter pituitae recrementorum
+<lb/>generationem ipsos . habere ri digressus etiam
+<lb/>inde ad sanitatis tuendae libros una condiscas quis
+<lb/>diaetae modus senibus sit praescribendus ; luculenter intelliges
+<lb/>quodnihilin praescripta aerie definitum drstinctumque
+<lb/>fit. Neque enim bifariam hominum vita dividenda
+<lb/>erat; neque fenum corpora mollia et humida dicere oportehat;
+<lb/>neque quod siccis ipsius temperamento alimentis uti
+<lb/>conveniret. Quum enim. juvenes dixit compacta corpora
+<lb/>habere et temperamento esse siccos, fatis constat de floreutibus
+<lb/>susum verba fecisse et hos nominasse juvenes.
+<lb/>omisit ergo et puerorum aetatem et declinantium, utque
+<lb/>ego arbitror et temperatissimam, quae inter pueros et
+<lb/>florentes media consistit. Atqui obscurum non est, vel
+<lb/>ipfummet orationem suam suspectam habere. rNon enim
+<lb/>simpliciter ait seniores rictu sicciore alendos, sed adjecit,
+<lb/>magna ex parte. ldem namque id erat ac si dixisset, non
+<pb n="15.190"/>
+<lb/>perpetuo; quod certe neque habitui corporis, neque aetati
+<lb/>asteri apposuit; quoniam suam cuique corpori diaetam
+<lb/>semper oportet instituere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="hanging">Quare pro aetate, tempestate, consuetudine, regione, loco,
+<lb/>corporum habitu Dictus ratio instituenda est, reluctandumque
+<lb/>constitutionibus, aestatibus et brumis ; ita namque
+<lb/>optima valetudo consequetur.</p>
+<p rend="indent">Totus hic sermo et vere et clare ab eo dictus est,
+<lb/>jam saepe in pluribus commentariis nobis absolutus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="hanging">Ac hieme quidem celeriter incedendum aestate uero conquiescendum
+<lb/>est, ntst per falis ardorem iter sit facien
+<lb/>dum.
+<pb n="15.191"/>
+<lb/>Quomodo incedendum sit in quaque anni parte docet.
+<lb/>Hieme quidem exiccans calefaciensque ambulatio deligenda;
+<lb/>aestate contrarius Inopus convenit, nisi per fotam,
+<lb/>ait; iter faciendum. Tunc enim iter maturandum, ociusque
+<lb/>eam quae per hunc incessum oboritur. Siccitatem
+<lb/>et calorem vitare oportet.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="hanging">Corpulentos autem celerius, graciles vero lenius iter facere
+<lb/>convenit. Balneis etiam multis per aestatem, at per
+<lb/>hiemem paucis utendum. Duris cero magis quam carnosts.
+<lb/></p>
+<p rend="indent">Celer motus calorem plus fatis inaugens corpus colliquat.
+<lb/>Ex lento calor mediocris tum sanguinem felicius
+<lb/>generat, tum nutrit plenius; eoque animantibus in proham
+<lb/>alimoniam simul vertitur.
+</p>
+<pb n="15.192"/>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="hanging">Et hieme quidem vestes puras indecere convenit, aestate
+<lb/>vero oleo imbutas.</p>
+<p rend="indent">Quid sane scriptor doctius consideravit eo quod ab
+<lb/>omnibus dictum est interpretibus ipsis noverit. Nam si
+<lb/>puras vestes hieme censet gestandas , quod magis calefacis .
+<lb/>aut vel etiam perfpiratum non impediant, oleo autem
+<lb/>infectas per aestatem, aut quod refrigerent, aut quod perfpiratum
+<lb/>obturent, sermonem non probo. Etenim ex puris
+<lb/>vestimentis quae densam ac frequentem filorum texturam
+<lb/>habent, maxime vero si fuerint detrita velamina , restigerant.
+<lb/>His. igitur uti commodius est. Quippe oleo
+<lb/>insueta fordida plane sunt; nemo autem elegantiorem
+<lb/>hominum fordidas vestes sustinet, praesertim aestate. Quin
+<lb/>etiam infecta puris temporis fpatio magis calefaciunt,
+<lb/>licet primo occurfu fuerint frigidissima.
+</p>
+<pb n="15.193"/>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p>Criiijos autem oportet quique tenuessieri volunt eos labo.
+<lb/>res omnes jesunos subire, et adhuc ex labore anhelantes
+<lb/>necdum resmgeratos cibum absumere, unumque prius
+<lb/>bibere dilatum ac non persuigidum. obsonia quoque
+<lb/>ex sesamis aut condimentis aliisque id genus apparata
+<lb/>absumere. Atque sint pinguia quae obsonia offeruntur.
+<lb/>sic enim a paucijsimis bellariis impleantur.</p>
+<p rend="indent">Quod in textus fine dictum est, puta, sic enim pauci/stmis
+<lb/>saturantur, nonnulli de omnibus commemoratis
+<lb/>dictum esse confirmant; quidam de solis obsoniis, quae
+<lb/>ex sesamis et similibus aliisque multis quibusdam praeparari
+<lb/>juhet. Praedicta sunt: sujunum exerceri; hoc enim
+<lb/>manifesto- vacuat, sicut a cibo labor implet. Huc accedit
+<lb/>illud , adhuc ab exercitiis anhelantes cibum assumere,
+<lb/>s calore nondum in eis discusso, neque corpore refrigerato;
+<pb n="15.194"/>
+<lb/>quam causam esse, quo quis celeriter impleatur manifeste
+<lb/>apparet. Si vero alia quadam ratione hujus libri auctor
+<lb/>corpus attenuare conatur; id nobis obscurum esu Quod
+<lb/>tamen plerisque hoc obstructiones in visceribus ac maxime
+<lb/>in hepate produxit, accurate novimus : quemadmodum et
+<lb/>celeres a cibo exercitationes. Adde etiam quod balnea
+<lb/>arctos in jecinore transitus alimenti habentibus obstructiones
+<lb/>efficiunt. Dictum est mihi de his omnibus simul
+<lb/>cum peculiaribus distinctionibus in opere de . sanitate
+<lb/>tuenda. Restat ut de ipsa verborum ferie disceptemus;
+<lb/>ubi ait . et vinum non perfeigidum prius bibere. Ut enim
+<lb/>frigidum esse jubet, non autem insigniter frigidum, ita
+<lb/>fermonem deduxit. Atqui non prorsus copiosum vinum
+<lb/>ab exercitiis statim bibendum censet, fed aquam prius;
+<lb/>quemadmodum athletae faciunt, id experientia edocti.
+<lb/>Caput enim alnum conscendit .et si post balneum statim
+<lb/>ante alios omnes cibos et potus bibatur. Non tamen frigulae
+<lb/>potio ab exercitiis, nisi calidum praebibas, tuta esu
+<pb n="15.195"/>
+<lb/>Nam et ipsa ventrem, tum jecur manifesto laedit, quorumdarn
+<lb/>quoque nervos. Attamen habitus frigidum vinum
+<lb/>corroborat. Vult autem horum scriptor ipsos solvere.
+<lb/>Forsitan alio modo quid scriptum erat; verum peccavit
+<lb/>qui idem postea apposuerit. . Multa siquidem ejusmodi
+<lb/>etiamnum accidere videntur; cum pro eo quod est, neque
+<lb/>ex toto calidum, non peririgidum scribere ipsum convealat.
+<lb/>Nam qui cibum adhuc anhelantibus offerendum
+<lb/>judicat, corpori -videlicet multis vaporibus pleno, volet
+<lb/>etiam vini calidi potione magis sutos implere. Quum
+<lb/>autem perealidum frigido similiter contrahat ventrem et
+<lb/>corroboret, idem efficere observatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="hanging">sed et semel tantum die cibum affimare, supersedere batneis,
+<lb/>duriter cubare nudumque obambulare, quoad ejus
+<lb/>/teri queat, oportet.
+<pb n="15.196"/>
+<lb/>Melius dixisset cibi modicum tumere quam semel
+<lb/>tantum cibum tumere. Quidam enim semel die cibo
+<lb/>utentium multo plura assumunt, quam qui bis eo utuntur.
+<lb/>Quemadmodum lavacrum corpus excalfaciens, praesertim
+<lb/>extrinsecus, ad alimenti distributionem et.distributorum
+<lb/>appositionem conducit; eadem ratione lotionis penuria
+<lb/>contraria perficit. Durum cubile corpus molestat,
+<lb/>contrahit et adstringit, ideoque in omnem partem luerementum
+<lb/>ipsius impedit. Eadem ratione nudum obambulare
+<lb/>omnes intumas ad cutem partes refrigerat; calorem
+<lb/>etiam in altum et. viscera cogit, ut cibi probe quidem
+<lb/>concoquantur; verum in omne corpus ferri prohibet.</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p rend="hanging">Qui vero tenues quum sim crassiore, espci volunt, tum
+<lb/>alia his contraria fecere, tum supinos nullam exercitationem
+<lb/>ipsos subire oportet.
+<pb n="15.197"/>
+<lb/>Contraria superioribus crassis sunt; neque anhelantes
+<lb/>ex labore epulas assumere , sed ubi jam fecundum naturam
+<lb/>respiraverim; neque semel tantum cibum sumere,
+<lb/>verum aut bis aut etiam ter comedere. Sic abstinentiae
+<lb/>balneorum contraria qui facit, bis lavabit, semper autem
+<lb/>ab epulis alterum lavacrum ingrediens, nonnunquam et
+<lb/>primum. Pari modo ad exercitia modica, lenta, aque
+<lb/>post cibum accedet; Eadem vero ratione molliter cubare,
+<lb/>non sine vestibus ambulare in aere his conducit. Propterea
+<lb/>gymnastae nonnulla exercitia, quae manuum confertione
+<lb/>et corporum pugna, sic enim vocant ipsi, contiugunt,
+<lb/>adhibent in iis quos carne implere conantur, vitantes
+<lb/>ne corpore nudo exercendi incedant, neque cum complexu.
+<lb/>E contrario, quos extenuare volunt, celeri exer-citio
+<lb/>et citra primum complexum movent.</p>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+
+
+<p>Pomitionibus autem et infusis alvum cluentibus sic utendum.
+<pb n="15.198"/>
+<lb/>sex hibernis mensibus. vomitus ciendus, id enim
+<lb/>tempus aestivo pituitae plus accumulat et capite morbi
+<lb/>et regionem quae supra septum transversum est, obsident.
+<lb/>At quum aestatis fervor adsit, cataqlysmaiis utendum.
+<lb/>ffaec enim tempestas aestuosa est et corpus biliasum
+<lb/>magis redditur, gravitates etiam lumbos et genua
+<lb/>infestant, calores .oboriuntur, ventris tormina concitantur.
+<lb/>Corpus igitur refrigerandum et qua sursum attole luatur,
+<lb/>deorsum ex istis- locis deducenda.</p>
+<p rend="indent">Quae cataclyfiuata, id est ablutiones, vocet, sequentibus
+<lb/>ipse declaravit; nempe quae ex lacte conficiuntur et eicerutu
+<lb/>decoctionis aquam ; ad haec muriam et marinam.
+<lb/>Diversa namque ab his medicamenta sunt purgantia, quae
+<lb/>universum corpus evacuant. Quemadmodum igitur bal- .
+<lb/>neatores balnea .dicunt abluere, quum lapidum in eis
+<lb/>lutum et sordes abstergent, ita ventris in testi norumque
+<pb n="15.199"/>
+<lb/>infusa pituitam et bilem ipsorum detergenti Quoniam
+<lb/>itaque pituita per hiemem in ventriculo generatur, evaeuari
+<lb/>ipsam vomitu consulit. Aestate .bilem turium conscendentem
+<lb/>deorsum revelli. Attamen ubi totum corpus
+<lb/>purgare volueris, aestate per superiorem, hieme per insumorem
+<lb/>ventrem purgandum est ; sicut in aphorismis diciunt
+<lb/>invenimus. Etenim jam abundantibus purgatio per
+<lb/>loca quo vergunt adhibita medetur. Quippe ducenda quo
+<lb/>vergunt per loca idonea. Quae vero ab incremento prohibere
+<lb/>velis, per opposita revellere conducit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+
+
+<p rend="hanging">sint autem cataclysmata crassioribus quidem et humidisTibiis
+<lb/>magis falsa et tenuiora, siccioribus vero et graniRoribus
+<lb/>et imbecillis pinguiora et eraso ora. At infusu
+<lb/>sunt pinguia et orasse quae exsucto parantur, et aqui
+<pb n="15.200"/>
+<lb/>cicerum cocta caetcraque id genus. Tenuia vero et
+<lb/>fal/a murta, aqua marina et quae sunt esusmodg</p>
+<p rend="indent">Quae magis incidunt cataclysmata corpulentioribus
+<lb/>adhibenda existimat, hi namque sunt pituitosiores. Leuiora
+<lb/>vero gracilibus, ut qui sunt biliofiores. Porro quales
+<lb/>amborum sint materiae, ex verbis proximis constat, adeo
+<lb/>ut interpretationem non requirat. Quamobrem. iis retictis
+<lb/>ad sequentia me convertam.</p>
+</div>
+<div type="textpart" subtype="chapter" n="18">
+
+
+<p rend="hanging">Vomitus autem hoc modo provocandi sunt; Qui homines
+<lb/>obesi sunt ac minime tenues, jesuni vomant a cursu
+<lb/>aut ceteri deambulatione circa meridiem.</p>
+<p rend="indent">Excalefactum esse corpus obesis, qui vomituri sunt,
+<lb/>praecipit, ut humores pituitosi, quos crassi copiosos habent,
+<pb n="15.201"/>
+<lb/>diffundantur. Quin et vasorum adapertio.. omniumque
+<lb/>angustorum meatuum raritas sic potissimum queat
+<lb/>accidere. Caeterum haec omnia ad- vomitum facilem
+<lb/>citraque molestiam excitandum conducunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="19">
+
+
+<p>Hyssopi hemina dimidia in aquae congio contriti potui
+<lb/>- exhibeatur, astuto aceto et addito sule, quo stat
+<lb/>secundissima.</p>
+<p rend="indent">Quod potum incidentem esse cupiat et quam ob cantam
+<lb/>haud obfcurum. Quoniam enim crassi homines
+<lb/>orasses etiam humores et frigidos et quosdam eorum vifcofos
+<lb/>plerumque habent, ideo potionem ipsarum incidentem
+<lb/>esse jubet. Quantam vero copiam illius, unde confinit
+<lb/>potum, exhibeat, non exacte possum dicere; quod
+<lb/>menfura quam interdum congium nominant, non eandem
+<lb/>apud omnes habeat magnitudinem. Si vero Atticum
+<pb n="15.202"/>
+<lb/>bibere praecipiat, non admodum consuetudini consentit.
+<lb/>Multum namque esse mihi videtur; etsi apud veteres moris
+<lb/>erat, sive lactis sero sive hujusmodi quodam cataclysmate
+<lb/>volebant uti, permultum sid exhibere;</p>
+</div>
+<div type="textpart" subtype="chapter" n="20">
+
+
+<p rend="hanging">Ac primum quidem sensim, deinde vero celerius ebibatur.
+<lb/></p>
+<p rend="indent">Si igitur initio bibat affatim, mox evomet ac prius
+<lb/>quam totum ebiberit; projicietquehumores in ventriculo
+<lb/>contentos; num quibus et in primis venis recepti evacuantur.
+<lb/>Quod si primum lentius, dein copiosius. bibat, et
+<lb/>tempore mediocri continere poterit et tempestive ad vomitum
+<lb/>incitabitur; eo quod postea consertior magis
+<lb/>biberit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="21">
+
+
+<p>Graciliores autem et imbecilliores a cibis hunc in modum
+<pb n="15.203"/>
+<lb/>concitent; loti calida meri heminam praebibunt , mox
+<lb/>eiboi cujusiiis generis comedant, neque inter cibos , ne--que
+<lb/>a cibis bibant, sud su contineant quanto tempore
+<lb/>quis quatuor stadia percurrat. Deinde triplex illis
+<lb/>vinum in potum permiscebit , austerum , -dulce et acidum,
+<lb/>primum quidem meracius, sensim et ea magno
+<lb/>intervallo: deinde vero dilutius, celerius et affatim.</p>
+<p rend="indent">Jubet hic calida lotum meracius praebibero; hac, ut
+<lb/>coniicere possum, ratione usus, quod ex calida lotione
+<lb/>totum corpus incalescat et humores diffundantur -vafaq ne
+<lb/>laxiora fiant. Eadem vero haec et vinum meracos efficit;
+<lb/>praeterquam quod facultatem corroborat; cujus rationem
+<lb/>in gracilibus habere oportet. Postea milium varium
+<lb/>assumant, inquit, cujus causam omnes expolitores non
+<lb/>eandem tradiderunt.- Quibusdam enim illorum varia
+<lb/>exhiberi videntur, quod invicem luctantia faciliusvotuitum
+<pb n="15.204"/>
+<lb/>concitent, aliis quod plus ingeratur. Nam simplicia
+<lb/>ejusdemque fpeciei celerius implent. Verum iis statim
+<lb/>bibere non permittit., me cibi mox supernatent; quod
+<lb/>fieri nequaquam velit. Atque ideo tempus aliquod interea,
+<lb/>quod ad nutritionem sufficiat, consumendum praestatit;
+<lb/>nempe quo . .stadia quatuor perficias. His ita praemissis,
+<lb/>potum adlicit, . terna vina, qualitate invicem differemia.
+<lb/>Iubet enim aliquod ipsorum esse austerum, aliud
+<lb/>dulce, aliud acidum ; non relata ne hic quidem causa cur ita
+<lb/>iniunxerit. Qui vero divinant ipsius sententiam; aju n hausterum
+<lb/>instrumentis corroborandis, per quae vomitus accidet,
+<lb/>exhiberi dulce, ut vomitum incitet et humores diffundat;
+<lb/>acidum demum, ut quae ventriculo sunt infixa detergat.
+<lb/>Forsan igitur cibos omnium qualitatum genere
+<lb/>ipfos assumere jussit, ut ventriculum alii confirment, alii
+<lb/>ad. vomitum proritent, alii succos insertos abstergant.
+<lb/>Quod autem saepius dicere scleo in sociorum amicorumque.
+<lb/>consortio, id nunc quoque dicam. Non parum misti
+<pb n="15.205"/>
+<lb/>videntur errare viri qui tectam dogmaticam profitentur,
+<lb/>eo quod citra rationem prolatam, ea quae consulunt,
+<lb/>haud aliter quam regia quaedam decreta pronunciant.
+<lb/>Praestiterat enim cujusque rei vim operis auctorem explicasse,
+<lb/>sicut Hippocrates in libro de ratione victus in morbis
+<lb/>acutis factitavit, ubi ptisanae meminit. Nam viscositas
+<lb/>ejus lenis, continua, jucunda, lubrica et modice laxa est,
+<lb/>sitim arcet et ubi ablutione opus est, facile descendit;
+<lb/>non adstringit, non vellicat graviter, neque in ventre
+<lb/>tumefcit. Sic idem de aqua mulsa, de vino, de oxymelite,
+<lb/>item de lavacris conscripsit. Itaque viae jam nos
+<lb/>principium habemus, qua post auctorem nonnulla ab nisio
+<lb/>praetermissa adsidemus. Atqui dicta sunt omnia praeter
+<lb/>caulae rationem. Siquidem quod vinum bibere meracius
+<lb/>primum, sed modice et paulatim retulerit, postea dilutius,
+<lb/>celerius et copiose , explorare nos oportet qua id sentemtia
+<lb/>ille scripserit. Verum alias exploratio tota res est
+<pb n="15.206"/>
+<lb/>ambigua, maxime vero quum hominis sententia adhuc sit
+<lb/>incognita. Dilutius igitur vinium bibere et ocius, tum
+<lb/>copiose, merito dictum -videbitur de his qui vomitum
+<lb/>expetunt. Siquidem. contraria cohibere ipsum volentibus
+<lb/>et alimentum concoquere funt idonea; puta, meracius,
+<lb/>modice et paulatim bibere. Cur autem omnino ad coercenduru
+<lb/>accommoda primum in eo qui paulo post vomiturus
+<lb/>est, usurpavit, probabile nihil dicere possumus; forsan
+<lb/>hinc auctori probabile videbatur, quod etiam interpretum
+<lb/>nonnullis placet; quia virtutem tenuium hominum,
+<lb/>de quibus haec scribit, dissolvi nolit, ideo primum illam
+<lb/>corroborat; mox ita ad vomitum alentia proficiscitur.
+<lb/>Sed ad vires firmandas tempus a cibis oblatis suffecerat.
+<lb/>Porro ad vires firmandas tempus a cibis oblatis suffecerat.
+<lb/>Porro aliud alii probabile, ut dixi, est, non abiectum,
+<lb/>ceu unum quoddam, sicut necessarium, quod scientificis
+<lb/>demonstrationibus confirmatur.
+</p>
+<pb n="15.207"/>
+</div>
+<div type="textpart" subtype="chapter" n="22">
+
+
+<p rend="hanging">At. vero qui .bis in mensa vomere consuevit, hunc praestat
+<lb/>duobus ex ordine diesi us .vomitum ciere, quam derimo
+<lb/>quinto die. sed alii contrarium plane faciunt.</p>
+<p rend="indent">Et horum rationem ipsum scriptorem maxime adrecrsse.pportebat ;
+<lb/>quoniam de iis qui bis mense uno vourunt,
+<lb/>nulla distinctione sententiam protulit. Quosdam
+<lb/>enim vacuandi gratia vomentes conspicio ; sicut et uno
+<lb/>mensis diem cibis abstinere. Nonnullos horum succum
+<lb/>ventriculo imp.sctum.vel viscidum vel crassam. expurgare.
+<lb/>Nihil autem prohibet utraque ex intervallo, non duobus
+<lb/>continuis diebus facere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="23">
+
+
+<p>Quibus cibos evomere incommodum est, vel quibuscunque
+<lb/>alvi non facile prodeunt, iis omnibus crebro die cibum
+<lb/>sumere et omnis generis cibariis uti confert ac obsenili
+<pb n="15.208"/>
+<lb/>varie apparatis, vinumque duorum aut trium generum
+<lb/>bibere. Quibus vero cibos revomere non conducit,
+<lb/>quique alvos habent humidas, his omnibus contrariam
+<lb/>huic vitae rationem inire confert.<space type="tab">    </space>.<space type="tab">    </space>.</p>
+<p rend="indent">Convenit quidem iis cibos revomere, qui vel alvum
+<lb/>dejicere vel mediocrem totius corporis evacuationem moliuntur.
+<lb/>Consulit autum ipsis frequenter let varia comesse
+<lb/>et vina plura bibere. Contra illis qui neque vomitum
+<lb/>expetunt et alvum humidiorem jusio habent, ut cohiberi
+<lb/>desideret, neque saepius comedere, neque varii generis
+<lb/>tum cibos tum vina assumere. Etenim semel idque simplex
+<lb/>aliquod edulium unumque vinum usurpare ventriculo
+<lb/>ipsis continendis coquendisque opitulatur, contraria
+<lb/>faciunt ut difficilius cibi coquantur maneantque in ventriculo.
+<lb/>Caeterum praeter assumptorum qualitatem et
+<pb n="15.209"/>
+<lb/>exhibitionis ordinem vel in summo natare, vel subsidere
+<lb/>ipsa contingit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="24">
+
+
+<p rend="hanging">At pueros infantes per multum tempus aqua calida lanare
+<lb/>decet, ninumque aquostssimum bibendum iis exhibere,
+<lb/>neque prorsus feigidum, idque dandum quod minime
+<lb/>nentrem attollat et statum creet. Haec autem facienda
+<lb/>sunt, quo minus convulsionibus tententur, magisque adofucant
+<lb/>et coloratiores evadant.</p>
+<p rend="indent">Ipse superioris diaetae scopos explicuit, nempe ut convisionibus
+<lb/>minus infestentur majoresque fiant et coloratiores.
+<lb/>Nam in calida loti pueri diutius molIes permanent, quod ne
+<lb/>convehuntur prodest, quoniam Hippocrates ipse corporibus
+<lb/>intensis potius quam remissis et laxis convulsiones
+<lb/>accidere prodit. Porro augescunt facilius corpora mollia,
+<lb/>quia in omnem quoque dimensionem promptius sequuntur.
+<pb n="15.210"/>
+<lb/>llla vero , quae nec convulsionibus corripiuntur probeque
+<lb/>increscunt, totum habitum salubrem obtinere quis ignorat?
+<lb/>Hoc igitur nota una haud mediocri, nempe boni
+<lb/>coloris, auctor indicavit. Sed etiam vinum ipsos dilutum
+<lb/>bibere praecipit, ne plus aequo calefiant, maxime quia
+<lb/>convulsionibus saepe exercentur. Quod rursus ex nervorum
+<lb/>imbecillitate et voracitate accidit. Atque ideo non
+<lb/>frigidum pueros bibere jubet, verum tale vinum, quod
+<lb/>minime flatulentum est, omnibus ex aequo hominibus,
+<lb/>non modo puerulis conducit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="25">
+
+
+<p rend="hanging">Mulieres autem sicciore victus ratione sic uti oportet.
+<lb/>Sicca namque cibaria ad muliebrium carnium mollitiem
+<lb/>magis sunt idonea et meraciores potus ad uteros et
+<lb/>foetus nutritionem meliores exlstuut.
+<pb n="15.211"/>
+<lb/>Mulieres sicciore vivendi modo uti jubens, qualisnam
+<lb/>is sit, ipfe subscripsit. Habet autem viri opinio controversicm..
+<lb/>Si namque praeter naturam erat mulieribus
+<lb/>humidis esse; sicut in naturis intemperatis et morbosis,
+<lb/>humidus morbus recte eas exiccaret al verum quia hoc
+<lb/>secundum naturam illis adest, conservare id convenit,
+<lb/>nisi quum falubrern symmetriam excesserit. At hoc quoque
+<lb/>in viris consideramus. Etenim et his siccioribus quidem
+<lb/>esse mulieribus, secundum naturam est; quando vero
+<lb/>convenientem siccitatem latius egressi fuerint, tunc ipsi,rum
+<lb/>intemperiem contrariis emendamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="26">
+
+
+<p rend="hanging">Qui exercentur, per hiemem eos currere et luctari cunnenit
+<lb/>et aestate parum quidem luctari, currere vero minime;
+<lb/>sed multum in smgqre deambulare.
+<pb n="15.212"/>
+<lb/>Exercitiorum differentias anni temporibus peculiarium
+<lb/>docet, quae hieme calefacere et siccare possint, per
+<lb/>aestatem facere contraria.</p>
+</div>
+<div type="textpart" subtype="chapter" n="27">
+
+
+<p rend="hanging">Qui cursibus defetigantur, eos luctari oportet, qui uero
+<lb/>lucta defetigantur, iis currendum est. sta enim qui
+<lb/>laborat, corporis parte desutigationi obnoxia calefiat,
+<lb/>componatur et maxime quiescat.</p>
+<p rend="indent">Si ita dogmatici medici omnia scripsissent, nulla esset
+<lb/>loquacitatis occasio interpretibus relicta. Dico autem ita,
+<lb/>si causam adjecissent cur sic nos agere juberent, quod nunc
+<lb/>PoIybus factitavit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="28">
+
+
+<p>Quos quum exercentur diarrhoeae potissimum aspiciunt et
+<lb/>alni excrementa cibos referentia, ac incocta, iis tum
+<pb n="15.213"/>
+<lb/>exercitationum tertia pars non paucior, tum ciborum
+<lb/>dimidia subtrahenda est. Constat enim sanet en tricalum
+<lb/>ciborum copiam ut concoquat concalefucere non
+<lb/>poste. Cibus iis esto panis quam maxime tostus in vino
+<lb/>intritus et potus quam paurigimi et meracissima neque
+<lb/>deambulationibus a cibo utantur. sub hoc vero tempus
+<lb/>sumet duntaxat cibum sumere eos convenit. Aie enim
+<lb/>vel maxime conedlejiat ventriculus et ingestos cibos
+<lb/>superaverit. Hoc autem alvi prostuvii genus corporum
+<lb/>habitui densiori carne praeditos potissimum exercet,
+<lb/>quando ita natura comparatus est homo,. ut ad carnium
+<lb/>esum compellatur. Penae siquidem condensatae cibos
+<lb/>ingestos non recipiunt.</p>
+<p rend="indent">Non de iis qui sanitatis gratia exercentur hunc fer-.
+<lb/>monent instituere videtur, fed de illis qui studium aliquod
+<lb/>gymnasticam subeunt, nec inde prorsus abstinere
+<lb/>possunt, ned in arctum adeo contrahere. ldeo tertiam
+<pb n="15.214"/>
+<lb/>exercitii partem eis adimit, ciborum vero dimidiam.. Tantilium
+<lb/>enim sperat evinci posse, ut nec cruditate,. nec
+<lb/>ventris profluvio laborent. Recte autem fecit et hic, qui
+<lb/>rationem ipforum adscripserit , qua utens tum haecipfa,
+<lb/>tum his explicata consuluit. siquidem hic prosiavii mo.dus,
+<lb/>inquit., densa carne praeditis accidit quum carnes
+<lb/>edere coguntur. Innuit. hic gymnasticos, quibus carnis
+<lb/>esirm praecipiunt Deinde subnectit, venae densatae cibos
+<lb/>ingredientes non excipiunt. obscure hoc protulit, ideoque
+<lb/>suspicari interpretes coacti sunt, densas pro duras
+<lb/>rninusque exporrectus, ut alimentum non recipiant, ipsum
+<lb/>intelligere. Atque hoc significari ajunt inde, quia cibos
+<lb/>non excipiunt, quod distributionem magis quam concoctionem
+<lb/>laedere consuevit. Quare humida non tamen
+<lb/>incocta ipsi deliniunt, etsi auctor praedixerit cibos. referentia
+<lb/>crudaque tales per alvum reddere. Porro cum
+<lb/>ratione addita, cui fidens ille, vita sibi consuluit, dubitatio
+<pb n="15.215"/>
+<lb/>adhuc aliqua relinquatur, quid putandum est in. illis .fieri
+<lb/>sermonibus, abi raufam eorum, quae nobis facere injungit,
+<lb/>omisit? Ego sime nisi densorum meminisset, faterer
+<lb/>me plane haesitare, ut in multis aliis; in quibus quum o
+<lb/>nihir ejusmodi scriptor adjecerit, audacissimi interpretes
+<lb/>quicquid ipsis in mentem venit effutiunt At quia Polybus
+<lb/>ipfie densa carne praeditorum mentionem facit, occasiouem
+<lb/>et ipsis scribendi praebuit; quid hujusmodi naturis
+<lb/>conveniat. -Nam tales celerrime copiam colligunt, parum
+<lb/>perfecte perspirantes , eoque digestione retenta; humidae
+<lb/>omnino deiectiones evadunt, interdum non modo humidae,
+<lb/>fed etiam tenues, praesertim in edacibus. Quum enim
+<lb/>quippiam ex deglutitis distribuitur, promptius venter retiqua
+<lb/>concoquit. Quod si in eo maneat ciborum - copia,
+<lb/>quum interdum ab eis gravetur, omnia ante concoctionem
+<lb/>excutiuntur. Forian ob venarum duritiem alimenti distributio
+<lb/>-impediebatur, ut quae magis extendi nequeant. Verum
+<pb n="15.216"/>
+<lb/>talium naturarum curationem ex contrariis apposuisse
+<lb/>ipsum oportebat. Raritas namque et mollities totius habitudinis
+<lb/>scopi existunt, molli finctione et pinguedine
+<lb/>copiosa in sutile comparatae, . Hic quidem adversus symplumata
+<lb/>tantum pugnat, caeterum ipsius veluti radicem
+<lb/>excindere negligit.- Dictum est hoc quoque ab eo ferie
+<lb/>praeposita. Liquet siquidem ventriculum fovere cibos non
+<lb/>posse. Et profecto, si vere habitus densitatem et venas
+<lb/>non excipientes alimentum causatus est, falso ventrem
+<lb/>causatur. Si quidem hic .ei tanquam vera dicenti concefieris,
+<lb/>indubie etiam infra positam vietus rationem recte
+<lb/>institutam esse concedes. Assum panem, potionem incraeam,
+<lb/>nunus autem temet die cibum capere, non secundum
+<lb/>epulas obambulare, probabis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="29">
+
+
+<p>Haec autem natura quidem est praeceps et ad utramque
+<pb n="15.217"/>
+<lb/>partem vertitur et hujusmodi corporum bonus habitus
+<lb/>exiguo tempore viget.</p>
+<p rend="indent">Lubricam vocarit naturam eorum qui densam carnem
+<lb/>obtinent, ut quae aequali celeritate mutetur.. Nam subjungit,
+<lb/>utrobique vertitur, hoc est in bonam contrariamque
+<lb/>habitudinem. Post haec insuper adjungit et .bonus hujusmodi
+<lb/>corporum habitus exiguo tempore viget. .ostensum
+<lb/>namque est commentariis. in Aphorismos , quod exercitatorum
+<lb/>habitus probus cum sanguinis et carnium repletione
+<lb/>naturalium facultatum robur conservat. Sed quemadmodum
+<lb/>illic habitudinem in summo bonam indicavimus
+<lb/>esse periculosam, quae - non cito raris corporibus advenit,
+<lb/>ita quoque in densioribus quam celerrime, quod
+<lb/>haud ex facili digerantur, accidit. Quippe quum relabi
+<lb/>cogitur, repente tum uritur tum solvitur.
+</p>
+<pb n="15.218"/>
+</div>
+<div type="textpart" subtype="chapter" n="30">
+
+
+<p rend="hanging">Atqui rariores habitus ac hirsuti magis carnium esum
+<lb/>admittunt laboresque magis sustinent diutiusque in bona
+<lb/>corporis habitudine perseverant.</p>
+<p rend="indent">Hirsuta corpora cutem magis raram et carnosum
+<lb/>genus habere in opere de temperamentis didicimus.
+<lb/>Haec itaque merito ait carnis esum magis ferre, ut quae
+<lb/>perspirent, et labores, quoniam minus lassitudinem percipium.
+<lb/>Hoc quoque in libro de sanitate tuenda docuimus.
+<lb/>Si haec ita tolerant, etiam bonos habitus diuturinores
+<lb/>habebunt, ut quae non prompte ad summum
+<lb/>perveniant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="31">
+
+
+<p>Qui postridie cibos eructant et quibus hypochondria cibis
+<lb/>non coctis attolluntur , iis longior somnus confert.
+<lb/>Quin etiam ad alios corporis labores cogi debent, υιnamque
+<pb n="15.219"/>
+<lb/>meracius et copiosius bibere et sub id tempus
+<lb/>paucioribus uti cibariis. Constat enim sane ventriculum
+<lb/>prae imbecillitate et scigiditate ciborum multitudinem
+<lb/>concoquere non poste.</p>
+<p rend="indent">Probe ad sermonis calcem hic adjecit ; - cousiat enim
+<lb/>sane ventriculum ciborum copiam imbecillitatis ac frigiditatis
+<lb/>vitio. concoquere non posse. Quippe huc respiciens
+<lb/>.excalesacere ipfnm conatur, ac ob id diuturniorem
+<lb/>somnumfpsis consulit, item exercitia ac vinum meracius
+<lb/>et copiosius, cibos pauciores tune, quum cruditatem contraxerint.
+<lb/>suam si reliquo tempore exercentur, moventur
+<lb/>vinumque. bibunt, uti diximus, nihil a mediocri ciborum
+<lb/>copia demendum erit.
+</p>
+<pb n="15.220"/>
+</div>
+<div type="textpart" subtype="chapter" n="32">
+
+
+<p rend="hanging">ouos alitem sitis obsidet , iis cibi et labores subtrahendi et
+<lb/>vinum tam aquosum quam maxime fulgidum propinandum.
+<lb/></p>
+<p rend="indent">Nunc quidem calidae naturae notas sic prodidit. At
+<lb/>in texto epidemiorum hisce verbis scriptum est: Jn calida
+<lb/>natura fulgidae potio et quies. Ipsa namque quum corporis
+<lb/>temperamentum nominasset, mox diaetam subjicit,
+<lb/>qua sic affecti utuntur, principale autem refrigerationem
+<lb/>habet, ad quam consequendam victus ratione efficaciora
+<lb/>sunt aquae potio et otium. In praeposita ferie quiescere
+<lb/>aliud appellavit, quum diceret, laboribus demendum , pro
+<lb/>aquae potione scribens, vinum bibant dilutum et peritigidum.
+<lb/>Atque mihi videtur hic rectius laudari. Siquidem
+<lb/>diluta potio et frigida non privata est refrigeratione,
+<lb/>fumit autem ex vino praesidia.
+</p>
+<pb n="15.221"/>
+</div>
+<div type="textpart" subtype="chapter" n="33">
+
+
+<p>Quibus vero viscerum dolores aut ab exercitatione aut
+<lb/>ex alio aliquo itinere suboriuntur, his quiescere et cibis
+<lb/>abstinere confert. Potu autem utantur qui quam paucissima
+<lb/>copia plurimam urinam ducat , ut ne venae,
+<lb/>natura visceribus insitae, copia distendantur. Ex his
+<lb/>enim causis tubercula et febres oriuntur.</p>
+<p rend="indent">De omnibus autem his praeceptis abunde in opere detuenda
+<lb/>vaIetudine disseruimus et nunc memoriae gratia ut sin
+<lb/>superioribus, ita hac oratione exponemus. Multis enim liberis
+<lb/>ab omni febre dolores suboriuntur in visceribus, maxime
+<lb/>jecinore , quum a cibo nos exercitaverimus vel laverimus,
+<lb/>idque propter visceris meatuum angustiam et humorutu
+<lb/>innatantium crassitudinem. Dum enim infarciuntur
+<lb/>retinenturque arctis venarum terminis, per quos sanguinis
+<pb n="15.222"/>
+<lb/>fit transsumptis ex jecinoris cava parte in gibbam,
+<lb/>transitus impediuntur. Atqui distendunt in cavitate videlicet
+<lb/>jecoris venas; quibus ita affectis dolorem sine febre
+<lb/>etiam, persentiscunt. Quiescere hos convenit quo tempore
+<lb/>dolent, item bibere quod minam moveat et .jecm referet.
+<lb/>Nisi enim urinas excernunt, his^pbymata et febres ex hujusmodi
+<lb/>causis oboriuntur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="34">
+
+
+<p rend="hanging">Quibus morbi: ex. cerebro oriuntur, nares primum caput
+<lb/>obsidet, urinam crebro mingit aeger, eademque quaecum
+<lb/>stranguria perpetitur ; isquead dies novem patitur. Et,
+<lb/>si quidem per-nares aut aures aqua vel mucus erumpat,
+<lb/>morbo liberatur et edatur stranguria. Mingit autem
+<lb/>multum et citra dolorem, idque album, quoad viginti.
+<lb/>praeterierint dies, et capitis dolor hominem relinquit,.
+<lb/>sed huic intuenti splendor obscuratur. porro virum
+<pb n="15.223"/>
+<lb/>Non iniuria multis haec oratio suspecta fuit; nonnullss
+<lb/>etiam damnaverunt in universum, ceu eam ne Polybus
+<lb/>quidem, nedum Hippocrates scripserit. Nam orationisi
+<lb/>exordium plane indistinctum est, ut quod a cerehro
+<lb/>stuporem et urinae- stillicidium fleri inferat. Neque
+<lb/>verum esse poterit. quod tradidit, si putes ipsum,, non
+<lb/>omnes morbos qui a cerebro funt, pronunciare tales exiflere
+<lb/>, fed eos solum in quibus circa aures naresque aqua
+<lb/>aut mucus effluens morbum sedarit. Neque enim id
+<lb/>fieri perpetuo neque frequenter apparet.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

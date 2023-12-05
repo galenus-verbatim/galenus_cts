@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De animi cuiuslibet peccatorum dignotione et curatione</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg029.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="58" to="103">58-103</biblScope>
+              <date>1823</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x05">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="360" to="367">360-367</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x01">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">6</biblScope>
+              <biblScope unit="pp" from="537" to="552">537-552</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x06">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg029.verbatim-lat1">
+<pb n="5.58"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="5.58"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE CVIVSQVE ANIMI PECCATORVM
+<lb/>DIGNoTIONE ATQVE MEDELA
+<lb/>LIBELLUS.</head>
+
+
+<p rend="indent">Equidem cujusque animi perturbationum
+<lb/>dignatio ac curatio secundum traditam superiori commentario
+<lb/>rationem enarratu est; at deinceps de peccatis
+<lb/>dicendum erit. Exordior itaque, ac nunc optimo exordio,
+<lb/>quod omnes concedunt, effi non operibus demonstrant;
+<lb/>quid nimirum peccatum vocitent, oratione percurram,
+<lb/>ut nobis procedente oratione ambiguitas nullarelinquatur,
+<pb n="5.59"/>
+<lb/>doceboque, ut omnes Graeci hac uti voce consueverint.
+<lb/>Interdum quidem de iis intelligitur, quae judicio
+<lb/>non recte fiunt, adeo ut sit solius rationalis animae
+<lb/>facultatis; interdum vero communiter, ut cum bruta
+<lb/>facultate coniungatur .<space type="tab">    </space>. . . quid-</p>
+<p>nam sit peccati consensus, omnibus in aperto est; quid
+<lb/>vero imbecillus consensus, non item; siquidem nonnullis
+<lb/>imbecillum hunc assensum inter virtutem vitiumque mediunr
+<lb/>ponere satius esse visum est; imbecillum vero esse
+<lb/>consensum praedicant, quum nobis ipsis nondum ita veram
+<lb/>esse opinionem aliquam persuaserimus, ut exempli
+<lb/>gratia, in utraque manu quinos habere digitos, aut bis
+<lb/>duo quatuor esse. Forsan utique senem quempiam offenderis,
+<lb/>qui in omni vita veris peccatis operam dederit,
+<lb/>vel alicui scientificam demonstrationem habenti infirme
+<lb/>assentiri. Scientia igitur geometrae de his, quae per Enelidis
+<lb/>elementa demonsseata sunt, talis est, qualis partium
+<lb/>est, bis duc quatuor esse: eandem quoque scientiam et.
+<pb n="5.60"/>
+<lb/>deluceps traditorum de sphaera praeceptorum habet, quemadmodum
+<lb/>et omnium fecundum haec resolutorum de turbinatis
+<lb/>figuris atque gnomonicis. Quamobrem, si parum
+<lb/>quis ambigat, neque proprium ipsis consensum praebeat,
+<lb/>quem compreheusionem nonnulli appellant, hoc esse peccatum,
+<lb/>ut hominis videlicet geometrae, quispiam jure
+<lb/>concesserit At ejus, qui in vita peccet bonis malilque
+<lb/>cognoscendis, possidendis, aut evitandis, improbae opiniones
+<lb/>falsaeque consistunt, assensus videlicet aut proclivis,
+<lb/>aut imbecillus. Hic jam igitur periculum impendet, ne
+<lb/>parvum simul et maximum peccatum committatur, si:
+<lb/>falsae de bonis .ac malis opinioni assentiamur Secundum
+<lb/>Academicos plane ac Pyrrhoneos eorum, quae a no-.
+<lb/>bis inquiruntur, scientificam demonstrationem haberi negantes,
+<lb/>omnes qui nunc habentur de re aliqua consumsus,
+<lb/>necessario sunt temerarii, quin etiam et falsi esse
+<lb/>possunt. Ajunt praeterea, philosophorum latas de bonis
+<lb/>malisque inter fe pugnantes sententias veras esse non
+<pb n="5.61"/>
+<lb/>posse; posse tamen fortassis esse falsas omnes, ut neque
+<lb/>voluptas bonum sit, neque perturbationum vacuitas, neque
+<lb/>virtus, neque ab ipsa procedens actio, neque aliud
+<lb/>omnino quicquam eorum, quae a philosophis enumerata
+<lb/>sunt lu primis itaque eum , qui a peccatis mundus esse
+<lb/>cupiat, rei illius ignotae, quam invenire satagit, detnonstratio
+<lb/>sit nec ne, considerare oportet, idque non obiter
+<lb/>modo, fied longo etiam tempore inter veracissimos homines
+<lb/>versantem, qui naturali quadam prudentia praediti
+<lb/>sint, atque in rationalibus disciplinis exercitati, qualis est
+<lb/>demonstrativa rnethodus, speculari conveniet Delude
+<lb/>quum quis ipfam fe invenisse sibi perfunserit, postea longo
+<lb/>temporis intervallo iterum fete exercere debet, antequam
+<lb/>ad maximarum rerum inquisitionem accedat; aut propter
+<lb/>bonum (quod siane et ritae finem nuncupant) comparatum
+<lb/>felices nos, aut beatos, aut quod quis aliter noni.,
+<lb/>pare velit, efficiat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Nonne igitur, per deos, illi, qui prius,
+<lb/>quam demonstrativam methodum sisse invenisse credunt,
+<pb n="5.62"/>
+<lb/>ad maximarum rerum indagationem transeunt, evidenter
+<lb/>temerarii sunt? mihi equidem maxime hujusmodi esse
+<lb/>videntur; isti enim idem faciunt atque illi, qui, antequam
+<lb/>fatis fe in numerorum scientia exercuisse sibi persuulerint,
+<lb/>aliquid de supputatoriis praeceptis atque arithmeticis
+<lb/>enunciare audent. Igitur, ut hos plerumque falli
+<lb/>necesse est, itu et quicunque prius aliqua demonstrare
+<lb/>conantur, quam in demonstrativa methodo versati sint,
+<lb/>quin errores committant, fieri nequit. Etenim quod nonnulli
+<lb/>ex his, qui falsa edocent, quibusdam persuadeant,
+<lb/>sectarum multitudo testatur; quod vero neque illis haec,
+<lb/>nisi aliqua similitudo intercederet, persuadere potuissent,
+<lb/>cuique palam est; neque parvam hanc esse similitudinem
+<lb/>prosectu existimare convenit, nam alioqui facillime depreheuderetur,
+<lb/>neque longo temporis decurfu nedum f
+<lb/>clarissimis viris, sed etiam a vulgaribus examinaretur.
+<lb/>Quod itaque in re medica Hippocrates usu venire ajebat,
+<lb/>illud et in philosophia accidere videtur. . Dicebat autem
+<lb/>Hippocrates, similitudines bonis etiam medicis errores
+<pb n="5.63"/>
+<lb/>difficultatesque parete, utpote non vulgaribus dumtaxat
+<lb/>medicis,. verum etiam nobilissimis ob similitudines in era
+<lb/>rorem labentibus. Quare neque alienum est, in philosophia
+<lb/>etiam optimis philosophis dubitationes erroresque
+<lb/>ex :fimilitudluibus suboriri; gemellorum fimilitudines, quos,
+<lb/>qui cum ipfis versari consueverunt, .facile dignoscunt,
+<lb/>non assueti minime id queunt.. Eadem ratione et illae
+<lb/>quae in rationibus sunt fimilitudines eos, qui sese non
+<lb/>diu neque quotidie in struendis rationibus exercuerunt
+<lb/>, quemadmodum et gemellorum fratrum similitudines,
+<lb/>qui cum iis vivunt et consuetudinem habent, pofsunt
+<lb/>dignoscere. Hoc utique unum primum est eorum
+<lb/>peccatum maximum, qui aliquid fle humanae vitae bonis
+<lb/>malisque. temere pronunciant, natum ex amore sui, aut
+<lb/>apparentis sapientiae, aut jactantiae, aut ambitionis causa ;
+<lb/>siquidem.. nonnulli recte sese opinari sibi persuaserunt,
+<lb/>nonnulli. honoris aut simulationis causa ea proximis probare
+<lb/>conantur, de quibus ipsi. dubitant; peccant sane utri-.
+<lb/>que, secundi scientes ac volentes, quorum vitium ex perturbatione
+<pb n="5.64"/>
+<lb/>animi proficiscitur; primi vero nescientes, ipsi,rumque
+<lb/>error peccatum proprie dici merebitur. Recte
+<lb/>igitur isti fecerint, si Aefopi manticamm meminerint, suasque
+<lb/>rpforum opiniones aliis examinandas concesserint, haud
+<lb/>per Iovem talibus, quales ipsi funt, non suium in demonitrativa
+<lb/>methodo minime verfati, sed etiam aliarum disciplinarum
+<lb/>imperiti, quibus imbutus animus acuitur ac
+<lb/>excitatur, utpote geometria, arithmetica, supputaloria,
+<lb/>aedificatoria et astronomia. Ex his porro nonnulli neque
+<lb/>rhetoris, neque, id quod maxime praesto est, grammatici
+<lb/>doctrina eruditi, sed adeo in sermonibus inexercitati
+<lb/>sunt, ut neque ea, quae a me dicantur, audientes intelligentia
+<lb/>assequi valeant. Quae profecto ego animadvertens
+<lb/>, quum aliquem fermonem feci ipsis , ut dicta mea
+<lb/>repetant, jubeo; tunc enim revera, quemadmodum estur
+<lb/>lyram, ita et isti ea, quae a me dicta funt, neutiquam
+<lb/>percepisse deprehenduntur; nihilominus tamen in .tantum
+<lb/>audaciae vel temeritatis devenerunt, ut ab iis, qui prima
+<lb/>elementa didicerint, eo ludibrio habiti, quod quae audixerint
+<pb n="5.65"/>
+<lb/>recitare nequeant, nihil propterea erubescant;
+<lb/>seipsos tantum veritatem agnoscere, alios disciplinis instructos
+<lb/>tempus frustra perdidisse opinentur; verum non
+<lb/>iIIis quicquam me profuturum sperans, in hunc sermonem
+<lb/>diverti. Plures enim ipsorum, etiamsi velint, nihil subsidii
+<lb/>capere poterunt, quum neque aetatem ipsam amplius
+<lb/>disciplinis percipiendis idoneam habeant. Quisquis
+<lb/>vero natura prudens est, et eatenus primis rudimentis
+<lb/>operam dedit, ut, quae audiverit, maxime quidem ore
+<lb/>Proferre statim, sin id minus, at saltem scriptis mandare
+<lb/>vaIeat, sermonem hunc nostrum sibi subsidio futurum
+<lb/>scito, modo sit cx toto veritatis amator. In hoc enim id
+<lb/>omne momentum positum est ad veritatis cognitionem, ac
+<lb/>Primum oportet natum esse, deinde optima ac liberali
+<lb/>educatione usum fuisse ; at qui in veritatem explorandam
+<lb/>numme natma seratur, et in- flagitiosis inhonestisque studiis
+<lb/>institutum fuerit, nequaquam iste aut sponte commolus,
+<lb/>aut ab alio concitatus, veritatem unquam appetere
+<lb/>valebit. Quocirca neque ego unquam id genus homini
+<pb n="5.66"/>
+<lb/>opem; ferre pollicitus sum, sed, ut modo retuli, veritatis
+<lb/>amico iter illud- ostendere pro viribus conabor, quod in
+<lb/>tuta vita perquisivi, illudque solum esse, . quod .proxime
+<lb/>subiiciam, mihi persuasi.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Nam - dignum puto, inquam, ut, qui didicerintea,
+<lb/>quae f de methodo demonstrativa a majoribus
+<lb/>nostris tradita sunt, in aliis rebus. ante periculum faciant,
+<lb/>nunquid revera aliquod quaesitorum inveniant; esseque
+<lb/>hujusmodi rerum naturam idoneam, ut suis inventoribus
+<lb/>testimonium perhibeat; ut exempli causa in hoc, .datam
+<lb/>rectam aut praeceptas. partes elividere; fortassis. p enitus
+<lb/>rudes, quidnam dicatur, non intelligunt. Ego vero perinde
+<lb/>atque si omnes ipsi adessent,- clarius dicere iuripiam.
+<lb/>Rectam datam fermo noster intelligit lineam reetam
+<lb/>lu plano aliquo absolute aequali propositam, praeceptas
+<lb/>autum partes pro praesumentis arbitrio; si quis.propositam
+<lb/>rectam in quinque aequales partes, aut septem.
+<lb/>aut viginti, aut centum dividi subeat; nam si methodrim
+<pb n="5.67"/>
+<lb/>unam inveneris aut ab alio edoctus usus ea fueris, in quot
+<lb/>velis partes propositam rectam partici, res ipsa tibi testis
+<lb/>erit, omuesque particulae ita dividentibus exquisite cernentur
+<lb/>aequales, atque id genus omnia problemata firme
+<lb/>reperta sunt per ea, quae sunt evidentia; ut quum dato
+<lb/>quadrangulo circulum circumscribere, aut pariter et dato
+<lb/>circulo, quadrangulum ciccum intusve scribere jubemus;
+<lb/>rursus quum dato pentagono aequilatero et aequianguli
+<lb/>circulum circumscribere; si quis etenim singula haec ea,
+<lb/>quam didicit, methodo statim circumscribere poterit, res
+<lb/>ipfa quaesitum jam invenisse testabitur. At non itidem,
+<lb/>genitusue an ingenitus sit mundus, res ipsa testari potest,
+<lb/>quemadmodum neque finitumne sit an infinitum univerfum,
+<lb/>aut quantus sit malis fluctuum numerus; nullum
+<lb/>enim hujusmodi quaesitorum ex ipsa re, quae iuventa
+<lb/>esse rideatur, dijudicari potest, quemadmodum si circulo
+<lb/>figuram duodecim laterum aequalium , rectorumque augolorum
+<pb n="5.68"/>
+<lb/>circum intusque designare iussus id statim feceris;
+<lb/>intus.namque et circumscripta figura evidenter confpicitur,
+<lb/>sicut et circulus huic multangulae figurae intus circumque
+<lb/>designatus agnoscitur. Itaque quum demonstrativam
+<lb/>methodium invenerimus, ad id, quod quaerimus, nos
+<lb/>ducit, ac testimonium ex ipfamet re haud obscurum accipimus;
+<lb/>et exinde probationes haud parvas ipsius veritalis
+<lb/>habebimus, ut aliquando et. in his, quae id .evidenter
+<lb/>testari queant, ea uti audeamus. Neque statim in
+<lb/>rebus maximis a quoquam periculum faciendum esse existimo;
+<lb/>si vero ad felicitatem ducentia maxima sunt, in
+<lb/>aliqua prius materia exerceri convenit, quae illorum errorem,
+<lb/>qui fe quaesitum falso invenisse autumant, redar.guat,
+<lb/>et vere inventoribus fue testimonio faveat Hujusmodi
+<lb/>methodus in geometria reperitur, arithmetica, arte
+<lb/>supputandi, astronomia, et architectonica; nomine autem
+<lb/>architectonicae horologiorum, clepsydrarum, hydrofcopiarum,
+<lb/>et machinamentorum omnium descriptiones amplector,
+<pb n="5.69"/>
+<lb/>inter quae et pneumatica quae. vocantur existunt
+<lb/>Haec prosectu omnia inventoribus suis testimonium perbibent,
+<lb/>ut et astronomiae inventa, quae et ipsa ex.evidentibus
+<lb/>dijudicantur, examinantur , et testimonio confic--,
+<lb/>urantur. Solis namque et lunae defectus, et quaecunque
+<lb/>circa fixas errantefque stellas conspiciuntur, inter ea, quae
+<lb/>manifeste apparent, reponuntur. Manifestum praeterea
+<lb/>est fermon es nostros omnium .illorum animos percellere.
+<lb/>quibus jam provecta aetate non amplius occatio superest,
+<lb/>ut in rebus illis demonstrativam. methodum longo tum-.
+<lb/>pore exerceant, quae ipsam perspicue testari valeant; aut
+<lb/>enim, ut proxime dicebam, proprio amore decepti, aut fa-.
+<lb/>pientes videri volentes, aut honoris inanifque gloriae crtpiditate,
+<lb/>aut arroganti jactantia, aut avaritia perciti, nonnulli
+<lb/>sibi ipsis, nonnulli vero aliis fe aliquid firmi scire per-.
+<lb/>suadent. Quocirca nihil mirum fuerit in proprio unum-::
+<lb/>quemque auditorio suis haec discipulis probare,. quorum
+<lb/>aliqui asinino ingenio sunt, aliqui vero acri, sed in primis
+<pb n="5.70"/>
+<lb/>disciplinis nequaquam exercitato; nam id genus jactantibus
+<lb/>atque ineruditis praeceptoribus expedit, arbitror,
+<lb/>tales habere discipulos; quicunque enim natura prudens,
+<lb/>et in disciplinis antea versatus fuerit, ipsos illico floccifecerit,
+<lb/>sicuti et ego adolescentiae aunos nondum egressus
+<lb/>multos doctores contempsi, qui nonnulla demonstratis
+<lb/>scientifice in geometria repugnantia ostendere audebant,
+<lb/>neque demonstrationis simulacrum unquam cognoverant.
+<lb/>Siquis igitur veritatem . exploraturus prius jactantiam, sui
+<lb/>ipsius amorem, ambitionem, gloriae studium, sapientiae
+<lb/>opinionem, atque avaritiam ex animo suo extirpaverit,
+<lb/>iste plane ad ipsam perveniet non mensibus modo, sed
+<lb/>annis multis postea, quum ante sese exercuerit , .atque
+<lb/>placita ad beatitudinem et ad miseriam ducere valentia
+<lb/>indagaverit; illis vero, quas dixi, perturbationibus furentem
+<lb/>ad tam longum iter pigrum atque impeditum video ;
+<lb/>at illos quidem odio prosequor, qui insidiatorem casumnlatoremque
+<lb/>efficiunt. His enim vitiis suos ipsorum discipulos
+<lb/>praeoccupare ac inficere fetent, ut neque id genus
+<pb n="5.71"/>
+<lb/>serat nibus, quales nos. hactenus fecimus, aures unquam
+<lb/>praebere aequo animo possint. Facillimum autem. est
+<lb/>praeceptorem gravi ac revera .facie dicentem imperitis
+<lb/>adulescentibus . persuadere , fe praeeunte, expeditissimum
+<lb/>esse ad sapientiam iter fecundum Cynicos vocatus phildsophos ;
+<lb/>siquidem et isti placita sua brevem esse ad vim
+<lb/>tutem viam contundunt. At ipsorum nonnulli sententiam
+<lb/>hanc damnantes, non ad virtutem, test .per virtutem
+<lb/>ad beatudinem Cynicam- philosophiam iter esse cousirmant;
+<lb/>caeterum nonnulli verius ipsam declarantes per
+<lb/>imperitam istorum hominum temeritatem ad inanem jactantiam
+<lb/>brevem esse riam testantur. Itaque, ut Cynici omnes,
+<lb/>quos nostra aetate conspeximus,^ ita et -eorum quidam,
+<lb/>qui fe philosophos profitentur, vitare te lu rationali comtemplatione
+<lb/>exercitationem non eunt infitias ; delude,
+<lb/>ituum a nobis discesserint, cum vulgaribus omnibus., capratum
+<lb/>videlicet boumque pastoribus, fosseribus , : atque
+<lb/>messoribus congredi indignum putant, quod . scilicet ea,
+<lb/>quae a te dicantur, isti, utpote .in .ratione disserendi
+<pb n="5.72"/>
+<lb/>nunquam versati:, minime assequantur, perinde atque
+<lb/>si ipsi unquam. in. primis fe disciplinis exercuissent, ac
+<lb/>non repente de .vitae fine, . de bona atque adversis fortuna
+<lb/>a praeceptore demonstrativos, ut ipfe credebat, sermones
+<lb/>aliquos audivissent, ipsisque eo, quod .non essent exereitati,
+<lb/>fidem adhibuissent ; quae plane iis, ut dixi, ob falsarum
+<lb/>verartrmque rationum similitudinem causae falsorum decretorum
+<lb/>. extiterunt. . Similitudines autem exacte illi
+<lb/>dignofcunt, qui singulas integras commentationes diligentissime
+<lb/>tractaverunt; necessarium autem est eum, qui repente
+<lb/>materiam aliquam non exercitata ratione dijudicare
+<lb/>aggreditur, nullo pacto falsas a veris argumentationibus
+<lb/>distinguere feparareque posse. Hujusce rei manifestum
+<lb/>indicium funi vocata sophismata, quae rationes quaedam
+<lb/>falsae tuut ad verarum imaginem dolose constructae.
+<lb/>Harum ergo mendacium ex conclusione, quae vera non
+<lb/>est, aperte deprehenditur. Quoniam vero falsae sunt rationes,
+<lb/>aut assumptum aliquod falsum , aut conclusionem
+<lb/>haud recte illatam habeant necesse est; et haec in foplufcratibus
+<pb n="5.73"/>
+<lb/>hausi ita facile conspicua sunt ; propterea ab illis,
+<lb/>qui in disserendo se non exercuerunt, vix deprehendi
+<lb/>poterunt. Igitur quum rationem mendacem esse concedimus,
+<lb/>quod omnibus conclusionis mendacium evidenter
+<lb/>pateat, nihilominus inexercitatos nodi salutio praeterit,
+<lb/>tutum quidem ipsis esset rationes omnes Inspectas habere,
+<lb/>nulli vero prius assentiri, quam fe. falsarum veratumque
+<lb/>rationum similitudines exquisite distinguere posse sibi persiraserint,
+<lb/>allosque sibi quaestiones proponere patiantur,
+<lb/>volentibus ipsorum eruditionis periculum tacere permittentes.
+<lb/>Non. aliud igitur consulunt, quam quod difcipulis,
+<lb/>ut fe in . sophismatum dissolutione exerceant, praeeipiunt?
+<lb/>Quae nihil aliud, ut antea dicebam, prorsus fuerit,
+<lb/>quam inter veram falfamque rationem similitudinis
+<lb/>agnitio. Necessum itaque sit verarum . prius argumentationum
+<lb/>naturam didicisse; in iis namque versatus, ipsarumque
+<lb/>speciem exacte juxta celeriterque. percipere afsuetus,
+<lb/>haud aegre etiam falsas cognoverit. Ego id re
+<lb/>demonstiavi, qumn adolescentes irr disciplinis versatos
+<pb n="5.74"/>
+<lb/>vetus rationes cognoscere edocui , et alicui ex praescntibus,
+<lb/>cui libuisset, ut aliquod ipsis sophisma proponeret;
+<lb/>jussi. Ipsi enim sophismatum absurditatem deprehenderunt,
+<lb/>quae aut in figurae non syllogisticae inconcinnitate,.
+<lb/>aut in assumptorum salsitate posita esset; ita ut ex hoc
+<lb/>evidenter apparuerit istis, qui sibi sapientes videntur, se-.
+<lb/>nibus, quicunque sophismata haec solvere non possunt,
+<lb/>quod ob verarum rationum ignorantiam hoc subeunt,
+<lb/>deinde extrema condemnatione digni sunt eo, quod ex
+<lb/>temerario assensu miseram degant vitam; falsam enim de
+<lb/>vitae sine opinionem ad miserias calamitatefque ducere
+<lb/>omnes testantur; isti vero homines quidam sunt in discernendis
+<lb/>veris falfisque rationibus nunquam exercitati, in-. .
+<lb/>turdum nonnulli opinionis alienius veritatem intelligere
+<lb/>fe credentes, contingentem quidem rationem fe dixisse
+<lb/>ignorant, tanquam sensibus ea, quae opinantur; evidenter
+<lb/>appareant , nos vero fequi et absque demonstrationibus .
+<lb/>credere jubent: saepe vero, quum sola indicatione oratio
+<lb/>egeat, demonstratione ipsam confirmare nituntur; quidam
+<pb n="5.75"/>
+<lb/>vero, quomodo disserat id, quod eget demonstratione,
+<lb/>ab eo, quod primario atque ex se notum est, ignorantes,
+<lb/>nihilominus tamen de rebus, quibus magna contemplaliene
+<lb/>opus est, temere loqui aggrediuntur. Atqui in his
+<lb/>erroribus multi, qui jamdiu lu philosophia consenuerunt,
+<lb/>versantur. Quid igitur, proli dees , istorumne inscitia apparensque
+<lb/>sapientia tibi facile curari posse videtur? An
+<lb/>etiam, qui triennium aut quadriennium fcirrhum habet
+<lb/>doloris expertem? An fenum istorum unimus inscitiae
+<lb/>apparentisque sapientiae fcirrho triginta jam et quadraginta
+<lb/>annos occupatus ad sanitatem redire poterit? At,
+<lb/>si velis, fac id posse fieri; deinde dierumne spatio, an
+<lb/>mensium, an annorum hujusmodi fcirrhi curatio egeat,
+<lb/>aestimato. Itaque ne amplius mireris, quamobrem multos
+<lb/>istorum, qui fe philosophari praedicant, neque alloqui, neque
+<lb/>cum ipsis disputare dignum existimo; omnes enim
+<lb/>privatos homines, natura- prudentes, eaque disciplina. inllitutos,
+<lb/>quae jampridem a Graecis probata est, istis praestantiores
+<lb/>cognovi. Facile enim, quaecunque ipsi evidenter
+<pb n="5.76"/>
+<lb/>consequuntur, agnoscunt; istos vero altercantes, aut,
+<lb/>quae placitis ipsorum adversentur, percipere^ dissimulatites
+<lb/>plerumque expertus sum. Ergo quum de iis, quae unumquemque
+<lb/>finem consequuntur, millies jam a nobis adversus
+<lb/>plerosque philosophos habita fit oratio, alii quidem
+<lb/>omnes, quod primis rudimentis optime instituti sint, acutum
+<lb/>ingenium habent, ipfique vivendi rationem concordem
+<lb/>suis placitis dicebant, scrmonemque nostrum recte
+<lb/>intelligebant; at reliqui, in quadam inani sapientiae opi-.
+<lb/>nione (ut supra posui) ad senectam usque versati, soli
+<lb/>contraria sentiebant, deinde, quum ab omnibus praesentibus
+<lb/>deriderentur, ad convicia se convertebant. Verum
+<lb/>quae a nobis saepius una cum multis viris de quoque
+<lb/>pro singulis finibus vitae genere explicata sunt, in aliis
+<lb/>habes commentariis tradita; et perspicuum est, quod errorum,
+<lb/>quos isti committunt, exempla in illis scripta sinti
+<lb/>Nam quaecunque isti diversis sectis addicti . per totam
+<lb/>vilem inter se contraria faciunt ac dicunt, ex falso judicio
+<pb n="5.77"/>
+<lb/>proveniunt, perspicuumque est, omnia et male fieri,
+<lb/>et peccata esse, quaecunque in qualibet secta erratu committuntur,
+<lb/>siquidem veridica secta non finem solum, verum
+<lb/>etiam genus ritae fini illi consentaneum adinvenit,
+<lb/>ubi et quid luter peccatum perturbationemque intersit,
+<lb/>apertissime disicerelicet. Aliquis, exempli causa, placitum
+<lb/>lioc instituerit, homines juvare, tanquam verum aut perfectum
+<lb/>aliquibus bene facere; caeterum iste aut somno,
+<lb/>aut socordia, aut voluptatibus, aut aliquo idgenus alio impeditus,
+<lb/>auxiliunt emittens in affectu erravit. Alius vero
+<lb/>quispiam sibi tantum voluptates curarumque vacuitatem
+<lb/>comparare statuens, ac proptera civibus suis aut domesti-cis
+<lb/>iniuriis affectis auxilium denegans, ex prava opinione
+<lb/>.profecto, non ex aliqua perturbatione peccavit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p>Principium equidem peccatorum falsa de
+<lb/>cujusque vitae fine opinio est; ex ea enim tanquam e
+<lb/>.radice quadam singula peccata exoriuntur:. sed potest ali.quis
+<lb/>opinione sicis non deceptus, in aliquo particulari
+<lb/>.consequutionem haud .intelligens aberrare; caeterum tibi
+<pb n="5.78"/>
+<lb/>(ut proxime dicebam) actiones vitae singulis finibus congruentcs
+<lb/>in aliis commentariis satius enumeravi; in praefentia
+<lb/>peccatorum sula capite perstringam, quae et repetere
+<lb/>statius esse duco, ut propositorum compendium quoddam
+<lb/>facile memoriae mandandum considam. Quandoquidem
+<lb/>enim in finis contemplatione felicitatis humanae
+<lb/>praecipuum firmamentum ponitur ac constituitur, merito
+<lb/>in ipsius investigationem omnes incubuerunt; qui seipsius
+<lb/>magni fecerunt, prompte sententiam tuam tulerunt;
+<lb/>prompte autem sententiam tulerunt aut omnes, aut uno
+<lb/>tantum excepto, quem ipsum neque in confesso est id fecisse,
+<lb/>antequam de demonstrationibus iudicatum fit, fintue
+<lb/>revera demonstrationes, au illis ita esse viderentur. Hominem
+<lb/>igitur propria peccata observantem atque- auimad.vertentem
+<lb/>illud ipstrm in prinus cogilare operiet, jusium
+<lb/>esse omnino eos curiose diligenterque audientem , .qui
+<lb/>fete quaefita demonstravisse arbitrantur, postea ipfit dijudicare
+<lb/>conari, atque iterum hoc loco, quum ab ipfis acceperit,
+<lb/>quem lu orationibus judicem veritatis statuant, deinde
+<pb n="5.79"/>
+<lb/>iterum haec ipsa secum, ut sese habere oporteat, reputans
+<lb/>cousideransque, numquid ipsi rursum judicandi instrumentum.
+<lb/>altero . egens instrumento intelligant , deinde
+<lb/>post illud rursum alio, usque ne in infinitum protrahatur
+<lb/>suspicatus valde caute , longo temporis spatio , una cum
+<lb/>viris, qui ipsi maxime veridici videantur, ita primum
+<lb/>omnium judicandi instrumentum contempletur, quod et
+<lb/>clarum est ancipitem quandam occasionem accipientem
+<lb/>omnibus - hominibus in memoriam^ revocare oportere. Id
+<lb/>vero et absque dijudicatione indicare posse palam est,
+<lb/>eandemque- quam omnis demonstratio vim possidet; atque
+<lb/>ita, quod superest, in ipsum respicientem, omnia ad id
+<lb/>particularia redigere convenit, quod sane resolutionem
+<lb/>nonnulli philosophi vocaverunt, veluti ascensum quendam
+<lb/>ab sus, quae media sunt, ad primarium judicatiouis insitumentum,
+<lb/>utpote autem in re valde difficili , quemadmodum.
+<lb/>opere plerumque didicisti in istis vano sapientiae
+<lb/>nomine praeditis, petulantibus, ac ludibrio habitis, propterea
+<lb/>quod neque vulgaria quaesita ad primum illud instrumentum
+<pb n="5.80"/>
+<lb/>judicandi redigere valeanL Sibi ipsi eum
+<lb/>constare oportet, qui scientiae capax esse velit, atque in
+<lb/>multis singularibus, quae ipsius inventoribus testari possint,
+<lb/>ut antea dixi, sese exerceat; hujusmodi autem sunt
+<lb/>ea, quae in arithmetica Iinearumque scientia habentur, quibus
+<lb/>vetuli fundamentis astronomia et architectura nituntur.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Age enim, ut declarandi causa ex architectura
+<lb/>exemplum aliquod promam. Quum urbs condio
+<lb/>t ur, ipsam habitaturis propositum sit non per conjecturas,
+<lb/>sed exacte quotidie scire velle, quantum diei temporis
+<lb/>jam elapsum sit, quantumque usque ad solis occasum supersta
+<lb/>Id problema sane in resolutiva methodo ad princeps
+<lb/>illud iudicatorium redigi opus est, si quis ipsum
+<lb/>-quo dixi modo in gnomonica tractatione invenire debeat,
+<lb/>rursum que ex illu per eandem viam, sed contrario modo
+<lb/>proficiendo componere, quemadmodum et hoc in eadem
+<lb/>tractatione didicimus. Porro in hunc modum communi
+<pb n="5.81"/>
+<lb/>generalique via comperta, nobisique cognoscentibus ex
+<lb/>hujusmodi lineis temporis partium dimensionem fleri necessum
+<lb/>esse, ad corpora delude transire convenit linearu
+<lb/>m descriptionem et gnomonem susceptura; ac primum
+<lb/>quidem investigare, quae corporum figurae ad inventam
+<lb/>descriptionem idoneae sunt; delude in illis singulis, qualisuam
+<lb/>haec descriptio sieri possit, ex resolutione compositioneque
+<lb/>invenire. Ac posteaquam rationalis methosius
+<lb/>evidentem nobis propositurum inventionis confirmationem
+<lb/>praestiterit, mox ad ea exequenda, quae per ipsam inventa
+<lb/>funt, accedentes iterum considerabimus, quomodo depingenui
+<lb/>corporis superficiem planam aequabilemque reddemus;
+<lb/>hoc deinde per resolutionem et compositionem adinvento,
+<lb/>aliquod hujusmodi corpus fabricari per iustrumenta,ipsum
+<lb/>instrumentis designare tentabimu s ; iterumque ex resolotione
+<lb/>ac compositione eo comperto, ejusdem speciei corpora,
+<lb/>qualia nos methodus edocuit, construere enitemur, quumque
+<lb/>postea in multis deinceps figuris delineationem fecerimus,
+<pb n="5.82"/>
+<lb/>concedere hominibus re experiendum jam absolutum
+<lb/>propositum opus. Quando enim prima linea prla
+<lb/>mum felis radium excipit, itidem et postremum ultima,
+<lb/>atque hoc in omnibus solaribus. horologiis depictis appav
+<lb/>ret, jam profecto unum quoddam evidens .indicium, quod
+<lb/>res proposita inventa sit, .habebimus; rursus et alterum,
+<lb/>quum omnia delineata corpora inter fe consentiunt, necnon
+<lb/>et tertium inveniemus, quum aequalis aquae fluxus
+<lb/>ipsis respondet. Hoc etenim depictorum horologiorum veritatis
+<lb/>judicatorium futurum ratio adinvenit. Quod autem
+<lb/>dico, hujusmodi est. Vasculum ex quavis materia conflatum
+<lb/>perforato, primumque fotis radium intuitus aquae
+<lb/>purae imponito ; deinde libii quum pictum horologium
+<lb/>primam horam praeteriisse nunciaverit, tu, quanta vasiculi
+<lb/>portio aqua impleta fuerit adnotato, eaque statim
+<lb/>rursus effusa vasculum eidem aquae imponito, .et quum:
+<lb/>fecundam horam folare horologium significaverit, vasculum
+<lb/>afpicito; postea quum aquam in ipsis ad eandem partem
+<pb n="5.83"/>
+<lb/>pervenisse, ad quam et prima hora pervenit, inveneris,
+<lb/>adnotato celeriter, et exhaustum vasculum iterum lu ean:.
+<lb/>dem aquam immittito , ac rursum observato. Si ad ter:.
+<lb/>fiam usque horam horologium iudicat, ad eandem horam
+<lb/>vasis aquam pervenisse, ad quam prima aut secunda hora
+<lb/>pervenerat, quando igitur ita iactum inveneris, exhaurite
+<lb/>vasculum, et iterum ad quartum usque horam in aquam
+<lb/>demittito, itemque ad eandem vasis partem aquam aloendjsse
+<lb/>conspicatus , ipfam statim .effundite , denuoque in
+<lb/>aquam demisso vasculo, quintam similiter horam explorato;
+<lb/>quumque et in hac ad eundem locum aquam pervenisse
+<lb/>compereris; deinde in sexta et reliquis deinceps
+<lb/>usque ad duodecimam si pretium ita fieri cognoveris,
+<lb/>recte depictum esse horologium tibi persuaseris, quandoquidem
+<lb/>propositum demonstravit; propositum autem erat,
+<lb/>in duodecim aequas portiones totius diei tempus esse distributum.
+<lb/>Porro nunterum hunc tanquam omnium utilissimtun
+<lb/>delegerunt, dimidium enim continet, et duplum,
+<lb/>et quartum, et sextum, et duodecimum, quae nullus alius
+<pb n="5.84"/>
+<lb/>post ipsum numerus usque ad vigesimum quartum conti-.
+<lb/>nere videtur. Hunc sane tanquam longum repudiarunt,
+<lb/>et duodenarium numerum veluti commoderatum judicantes
+<lb/>in tot particulas totius diei tempus diviserunt.
+<lb/>Hanc autem partitionem ex usu esse alii.- multi et Romuni
+<lb/>ipsi experientia comprobantes atque utentes ostenfiunt,
+<lb/>si quidem haereditatem omnem, quum testamentum
+<lb/>condunt, in duodecim portiones distribuunt, et ponderum .
+<lb/>ac mensurarum, quibus in vite opus est, plurimas in
+<lb/>duodecim partes dividunt. Tu vero si subeas, tibi per
+<lb/>methodium horologium depinxero, ac deinde sive in dhodecim
+<lb/>partes, sive in alium quempiam sequentem numerum
+<lb/>integrum diem partiri volueris, lu illo enim id, quod
+<lb/>proposueras, itidem factum esse comperies, quando et
+<lb/>periuraturum vasculorum mensurae respondeat, et omnluo
+<lb/>inter se depicte horologia consentiant, eo quod ultimae
+<lb/>in ipsis lineae diei fines concludunt. Ad hunc sane modum
+<lb/>et clepsydrae descriptionem ratio methodo resolutiva
+<lb/>vestigans invenit, cujus iterum experimentum vel
+<pb n="5.85"/>
+<lb/>plebejis hominibus evidens est. Summa enim ejus linea
+<lb/>duodecimam horam significans altissimum locum habet,.
+<lb/>qua parte clepfydra longissimum diem dimetitur, brevissimum
+<lb/>vero, ubi linea brevissima est.; inter utramque
+<lb/>media est, quae aequinoctialem diem declarabit; ac dein-.
+<lb/>ceps quartam pertransiens perinde omnes anni dies .rnetieris;
+<lb/>quod in medio est ufque ad aequinoctialia foramina
+<lb/>in clepsydrae labro, tibi praedictus quatuor dies
+<lb/>significabit; quibus foraminibus post id, quod longiIsimunr
+<lb/>diem significat, -invenire scilicet incipiam, ufque ad
+<lb/>quam partem altae in clepfydra lineae, hora duodecima
+<lb/>transacta, aqua perveniat; post illa vero rutilis tertia n
+<lb/>duodecima conversione unam illam in clepfydra lineam,
+<lb/>quam altissimam esse dixi, dimetientem reperies; quinetiam
+<lb/>et alias lineas, quaecunque altissima sinat inferiores,
+<lb/>alias horas metientes invenies, quartam quidem a duodecima:
+<lb/>omnibus anni diebusnndecimam horam significant
+<pb n="5.86"/>
+<lb/>fecundum ejus differentes partes, ut de suprema ante dictum
+<lb/>eft; sequentem autem quintam aut fextam horam
+<lb/>fecundum diversas partes significantem, atque item sequentem
+<lb/>septimam, octavam, aut nonam, ac reliquas usque
+<lb/>ad imam lineam: horam primam te invenissent fofaribus
+<lb/>horologiis, clepsydra jam aquae plena tibi patefitquemadmodum
+<lb/>et quarla et reliquae usque ad duodecimam
+<lb/>inter fe quidem aequales singulis quibusque diebus apparent,
+<lb/>ad alias autem aut praeteritas aut futuras relatae
+<lb/>inaequales; deinde methodum hanc inveniens non
+<lb/>cupivisse, heus tu, quid sit coguofcere, - nonne tuam inanem
+<lb/>scientiae persuasionem percepisti, qui proposita haec quum
+<lb/>nescias, non per anui spatium, aut, rectius ut dixerim,
+<lb/>non intumui vita invenire valeas? Neque enim haecunius
+<lb/>hominis vita adinvenit, fed paulatim linearum ficientia
+<lb/>provecta est; primo quidem elementaribus in ipsa
+<lb/>theorematis ab ipsi, petitis; postquam. autem haec inventa
+<pb n="5.87"/>
+<lb/>sunt, posteris hominibus deinceps contemplationem illam
+<lb/>summopere admirabilem, quam resolutivam nominari dixi,
+<lb/>ad illa adlicientibus, Pereque in ipsa et alios, qui voluerint,
+<lb/>quam diutissime exercentibus ; quin etiam nullum
+<lb/>in ipsa hujusmodi manuarium opus, qualia hactenus de
+<lb/>solaribus horologiis atque clepsydris declaravimus, ostendere
+<lb/>potuerunt At neque temerarii erant, neque arrogentes,
+<lb/>qui hujuscemodi res indagabant, quales .isti, qui
+<lb/>sapientiam se quaerere aut invenisse gloriantur; illi antem
+<lb/>verissimo sese honore decorantes facultatem, quam
+<lb/>in anima optimam habebant, exercere et ad finem perducere
+<lb/>cupiebant; clarum autem est, quod rationabilem
+<lb/>dico, qua exercitata et bonum habitum sibi congruentem
+<lb/>adeptu, delectantur magis quam ii, qui corporis voloptatibus
+<lb/>serviunt. Nulla etenim alia facultate ab hircis,
+<lb/>vermibus, porcis, pecudibus atque asinis differimus; neque
+<lb/>ulla alia contemplatio ingenui viri animum vehomentitis
+<lb/>quam haec resolutiva facultas oblectat, quum
+<lb/>praesertim in ipsa quispiam magnos progressus fecerit;
+<pb n="5.88"/>
+<lb/>inter initia vero, quemadmodum et aliae fere omnes
+<lb/>disciplinae, laboriosa est. Quod si nihil etiam delectalienis
+<lb/>afferret, quum tamen lu rebus maximis nobis usui
+<lb/>futura sit, in ipsa exerceri optimum fuerit: quum illud
+<lb/>praecipuum (ut modo diximus) habeat, ut, quantam volup
+<lb/>talem afferat, res per ipsam inventae declarent, quod
+<lb/>in his, quae a philosophia indagata sunt, neutiquam reportum
+<lb/>esu Quocirca eis, qui lu ipsa temere nugantur,
+<lb/>impudentes esse licet; neque enim, ut qui horologium
+<lb/>clepfydramve haud recte designaverit a re ipsa evidenter
+<lb/>coarguitur, sic et philosophiae praecepta evidenti argumento
+<lb/>resutantur, verum; ut quis voluerit, ei dicere licet,
+<lb/>quum semel impudens absque rationali methodo
+<lb/>ab ipsis rebus feste edoceri affirmat. Quod si eos solos
+<lb/>res vocem adeptae allo cutae forent, haud abs re glolitarentur;
+<lb/>at quum res sileant, neque nos, neque. illos
+<lb/>alloquantur, jam fatis patet, solam, quae nobis inest,. tar
+<lb/>lienem rerum naturam inventuram. Res igitur invenire
+<pb n="5.89"/>
+<lb/>potens id pilus in rebus evidenter hoc testantibus demousiret-,
+<lb/>et methodum nobis dicat, cui omne problema
+<lb/>resolutorie subjieiatur, ac verarum falsarumque .rationum
+<lb/>similitudines prius distinguens ostendat, ubi vitium deprehendere
+<lb/>liceat, in rebus autem obscuris non amplius
+<lb/>fide dignus fuerit. omnia haec homlues recte dicta esse
+<lb/>consentiunt praeter istos temerarios et falsa doctrinae
+<lb/>persuasione inflatus, quibus ad veritatem via neque longa
+<lb/>admodum est, neque ejusmodi, qualem Hesiodus ad virtutem
+<lb/>esse cecinit, sed concisa ac brevis, aut potius nulla
+<lb/>est. Etenim, si res ipsae natura sua omnes homines edocent,
+<lb/>non opus est lu rationalibus messionis sese exercenles
+<lb/>atterere. Nonne igitur, o ves, qui vestio judicio
+<lb/>estis sapientissimi, hoc saltem nobis aliis, qui nondum
+<lb/>sapientium vestram assequtus sumus, esse perspicuum concesseritis,
+<lb/>omnes homines operiere omnium rerum veritatem
+<lb/>cognoscere, quandoquidem ipsarum natura seipsam
+<lb/>patefacere abunde valet? Tergiversantur iterum, quum
+<pb n="5.90"/>
+<lb/>ita fuerint interrogati, non omnesque ajunt a rebus edoceti.
+<lb/>Quinam igitur sint isti, quos res ipsae edoceant,
+<lb/>nobis iterum percontantibus, seipsus solos ajunt; quid
+<lb/>enim aliud respondere queant, jactantiam scilicet, quam
+<lb/>initio professi sunt, tueri constituentes ? At prosectu nos
+<lb/>illis de se quicquid velint .pronunciautibus nequaquam
+<lb/>credimus; cur enim, proli dii immortales; solis his res
+<lb/>ipsae naturam propriam declaraverint ? Num idcirco,
+<lb/>quia foli nihil ex primis disciplinis perceperunt? Sed
+<lb/>lioc merum mendacium est, alii etenim plerique illarum
+<lb/>nihil didicerunt. Quod si rationalem animae facultatem
+<lb/>in disciplinis exercuissent, effectus id eos posse
+<lb/>facere testaretur r atqui nondum ejufmodi contemplatioriem
+<lb/>attigerunt. Dicent autem forsan, siclos fe perspicaces
+<lb/>a natura creatus, atque res congruenter cernere,
+<lb/>quemadmodum Lynceus subterranea intuebatur: Quid
+<lb/>igitur, si adeo perspicaci ingenio funt, ini id -genus propositis
+<lb/>excutiendis, quorum inventio veridicos esse inveutores
+<lb/>manifestat, plane ridiculi funt? Nullum -enim
+<pb n="5.91"/>
+<lb/>eorum quisquam ipforum unquam invenire potuit, quin
+<lb/>et eorum inventoribus declarantibus ac edocentibus, alii
+<lb/>siane discunt, isti vero sicli et inexercitati. et ingenio
+<lb/>tardi percipere nequeunt: deinde me provocant, atque
+<lb/>aliquis ex ipsis forte intellexit, non tamen quod dixi
+<lb/>recitare valet. Quaenam itaque caecitas in propriis di.r
+<lb/>gnoscendis vitiis hac istorum ignoratione major est, quod
+<lb/>vulgaribus hominibus sete rudiores quum videant ad ea
+<lb/>percipienda memoriaeque mandanda, quae ab arithmetica,
+<lb/>geometria, architectonica astronomiaque reperta furit,
+<lb/>postea quae philosophiae sunt tam facile invenisse teexistimant,
+<lb/>ut res ipsas sisse ostendere absque demonstra-tione
+<lb/>rationalique methodo contendere audeant? Porro
+<lb/>quod sponte seipsos adulentur, neque veritatem quaerant,
+<lb/>ex eo sinre licet, quod de re aliqua singuli inter tuos
+<lb/>tantum discipulos disserunt, omnefque -alios tanquam aberrantes
+<lb/>calumniantur atque vituperant. Ego vero si
+<pb n="5.92"/>
+<lb/>in unum eos cogam, non ferunt, Ifed statim verecundiam
+<lb/>praetexunt, neque fe coram hominum multitudine fermonem
+<lb/>facere posse consumant quamvis, singulis diebus
+<lb/>ipsorum alius viginti auditores habeat, alius triginta et
+<lb/>nonnumquam plures, neque inter illos dicere erubescant.
+<lb/>Verum ego si tres aut . quatuor eorum collegio interesse
+<lb/>voluerim, exempli causa Platonicos quatuor, tres aut
+<lb/>quatuor Epicureos, totidem numero alios Stoicos et
+<lb/>Peripateticos, ad hos tres Academicos,. aut vocatus
+<lb/>Scepticos, ita ut omnes ex philosophia viri sint viginti,
+<lb/>praeterea ultra enumeratos si totidem adsint, qui rationalem
+<lb/>facultatem in disciplluis exercuerint, sed phllosuphicos
+<lb/>sermones ignorent, tunc nullus istorum ejulmodi.
+<lb/>consessum sustineat. Quod si nonnunquam ab hominibus
+<lb/>nulli sectae addictis, in dicendo autem exercitatis
+<lb/>coacti ejusmodi hominum coetibus interesse non recusent,
+<lb/>dum illi de istis altercantur, suasque rationes conglo-.
+<lb/>metant, saepenumero aliquis geometra supervenit, accesferunt
+<pb n="5.93"/>
+<lb/>et medicorum nonnulli, et alii quidam dicendi
+<lb/>studiosi viri et disciplinis instructi, eas quidem, ut quaestum
+<lb/>facerent, exercentes, et nulli in philosophia sectae
+<lb/>inservientes, ut mihi moris erat, atque tunc ab iis petii,
+<lb/>ut istas rationes dijudicarent ; tum eorum quidam dixit,
+<lb/>optime controversiam fedari posse, si in id, quod nurudum
+<lb/>continere isti ajunt, vacuum profecti experiuntur,
+<lb/>numquid in eo positum corpus una in fede manere, an et
+<lb/>ad alium quoque locum transferri aptum sit. Aliis quidem
+<lb/>omnibus haec dicta placuere,. foli vero philosophi
+<lb/>inter sie noblscumque rixari non destiterunt probabiles
+<lb/>rationes a. necessariis distinguere nequeuntes. Potest enim
+<lb/>unumquodque corpus in vacuo uno loco manere, potest
+<lb/>et non manere, neutra tecta necessariam demonstrationem
+<lb/>habente.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Itaque tempus advenisse ridetur, ut ego
+<lb/>quoque aliquid proferam, quum tamen parvam fpem habeam,
+<pb n="5.94"/>
+<lb/>fore, ut manem scientiae persuasionem stabiliant;
+<lb/>neque tamen id ipsum exiguum esse duxi, ipsam videlicet
+<lb/>non intentatam relinquere. Ob id igitur concediturr
+<lb/>omnem demonstrationem ah evidentissimis inchoari,
+<lb/>sed illico primus ah ipsis ad ignota transitus ab Academicis
+<lb/>et Scepticis non conceditur, inter nos vero id
+<lb/>convenit, quod aliud invenimus, quod illorum ambiguitatem
+<lb/>augeat; Quum .enim ex evidentibus quaedam intellectui,
+<lb/>quaedam sensui evidentia sint, inter fie nonnunquam
+<lb/>haec pugnare videntur, atque in primis hoc
+<lb/>ipsum homine exercitato eget, haec neutiquam inter te
+<lb/>dissidere ostensum Secundum ab hoc maximum est, ab
+<lb/>evidenter apparentibus quae sunt ejusmodi cognoscere;
+<lb/>quidam enim temere, nondum clare apparentibus,
+<lb/>perinde ac talia sint assentientes, falluntur. Sed
+<lb/>quid .mirum, incuties, si ad manifestam intelligentiam
+<lb/>haec temerariis hominibus accidunt, quum id ipsum
+<lb/>cernantur et in singulorum sensuum actionibus quos- .
+<lb/>dam committere, quum ex longiore scilicet intervallo,
+<pb n="5.95"/>
+<lb/>quam ridendi requirat potentia, aliquem accedentem intuitir
+<lb/>exempli .causa,. Dionem esse, qui accedat, tanquam
+<lb/>exacte conspicati affirmant; alenti iste propius accedens
+<lb/>interdum non Dion,- test Theon esse vitus est. , Itaque si
+<lb/>procul et prope visorum imaginatio non differret, minime.
+<lb/>de his; quae procul aspiciuntur, inter te dissidentes neque
+<lb/>redarguerent unquam, neque- redarguerentur; sin alia
+<lb/>vero est prope visorum, alia non prope visorum actio,
+<lb/>ut illis, qui propius intuentur, notum est, meritu fallun-.
+<lb/>tur. Hoc . igitur ante omnia memoriae mandato, antequatn
+<lb/>ad intellectui manisesta transeas, ne et tu incotrsiderate
+<lb/>quandoque..pronuncies, et aliquod visibile pro-.
+<lb/>cul accedens equum esse, verbi caula, dicas, quod, propius
+<lb/>quum .fuerit, Theodorus. esse .cognoscatur ; aut potius
+<lb/>in omni vile hujusmodi .tam facili. assensu abstineas,
+<lb/>quem procidentiam et temeritatem nominant. Ego serui.
+<lb/>tibi uni dico, nullus me unquam ita deceptum esse
+<lb/>ostendere poterit. Ab. adolescentiae namque temporibus
+<pb n="5.96"/>
+<lb/>ita me semper assuefeci, ut tam in his, quae sensui, quam
+<lb/>in his, quae rationi manifesta videntur, ab inconsulto et
+<lb/>praecipiti assensu caverem : ad quae transiens jam tibi
+<lb/>iterum in memoriam revocare hortarique deerevi, ut
+<lb/>nulli falso fidem habeas, ut quotidie permultos amicorum
+<lb/>alicui quaeris loquenti assentiri rideo; quod si duo,
+<lb/>tres, aut quatuor idem dixerint, non renituntur: sed
+<lb/>quum uni assensi plane fuerint, idem tribus aut quatuor
+<lb/>dicentibus temere assentiuntur, neque illud perpendunt,
+<lb/>utrum istos omnes ex una communi causa verum dicere,
+<lb/>aut contra ex una communi causa mentiri liceat. Satius
+<lb/>igitur fuerit hic cunctari, quemadmodum et ego facio, etsi
+<lb/>quam maxime incredulum me, qui temere assentiuntur,
+<lb/>nominent. Igitur amicorum meorum nonnulli sunt, qui, .
+<lb/>quum aliquem peregre advenisse a quopiam audiverint,
+<lb/>statim mihi venisse hominem renuncient; sed paulo post
+<lb/>mendacii convicti, et a me reprehensi, tantum abest, ut in
+<lb/>posterum sete cautiores praestent, ut etiam mihi irascantur,
+<pb n="5.97"/>
+<lb/>dicantque, fe non esse mendacii auctores, sed cuidam
+<lb/>illud dicenti credidisse, ejusque peccatum esse, non
+<lb/>suum, in assentiendo inconsultam temeritatem confiderare
+<lb/>nolentes. Nempe si, ut ego dicere contueri, hominem
+<lb/>hunc misti hac de re hoc dixisse, hunc in modmu
+<lb/>et ipsi sermonem facerent, haud profecto mentirentur.
+<lb/>Nunc vero, dum mendacium referenti credentes falluntur,
+<lb/>non illum modo, verum etiam se ipsos mendaces esse
+<lb/>demonstrant, quum, amicum peregre in patriam rediisse,
+<lb/>ipsis non asserere, sed ab alio id se audiisse, dicere
+<lb/>licet. Quandoquidem igitur, hujusmodi rebus ipsorum
+<lb/>haud multo post mendacium declarantibus, non desistunt
+<lb/>temere assentiri, quid in abstrusis atque reconditis ipsis
+<lb/>accidere putandum fit, quas percipere sane quam diffi-.
+<lb/>olle est? Facilius quidem fuerit unius rei semper meminisse,
+<lb/>quam in ejus exacta cognitione evidenter persistere ;
+<lb/>. difficillimum autem idcirco fuerit , quoniam id
+<pb n="5.98"/>
+<lb/>iptum facere plerique recusanti Mihi vero temeritatis
+<lb/>ipsorum causam quaerenti nonnisi- ingenii excellentia haec
+<lb/>omnia agere nisa est Celeriter enim quoduis aut sensu
+<lb/>aut intelligentia consequi laudabile est, quod solum isti
+<lb/>homines intuentes sese vicino cognitionis celeritate meliores
+<lb/>probaturos esse existimant, quum tamen ignorantiae
+<lb/>potius celeritatem ostendant. Haec itaque. a me generatim
+<lb/>adversus omnes temere aliquid pronunuiantes inventa
+<lb/>dicere volui.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Caeterum ad istos rursum philosophos
+<lb/>revertemur, qui inconsiderate de corporibus in vacuo
+<lb/>stantibus aut descendentibus sermocinantur. Architectus
+<lb/>namque iste non affirmasset prius, quam in ipsum vacuum
+<lb/>e mundo egressus rem experientia comprobasset, atque
+<lb/>unumquodque in ipso positum corpus aut eundem locum
+<lb/>obtinere, aut in alium transinutari apertissime conspexisset.
+<lb/>Ejusmodi namque ad demonstrationes constituendas
+<lb/>principiis evidentibus ac sine controversia ab omnibus
+<pb n="5.99"/>
+<lb/>concessis ipsius r uti cognoscimus; at vos.de iis philoscphantes,
+<lb/>quorum nullam certem notitiam habetis, ea
+<lb/>quam clarissime dignosci posse contenditis. Proxime
+<lb/>duos altercantes philosophos audiri; alteri enim eorum
+<lb/>aqua lignis gravior esse videbatur, contra alter ligna
+<lb/>graviora esse defendebat ; uterque autem furtum ac
+<lb/>deorsum intuens longas rationes asserebat. Praecipuum
+<lb/>autem alterius philosophi argumentum, constrictam denfamque
+<lb/>substantiam graviorem esse, quocirca ligna, quam
+<lb/>aqua, graviora esse; alterius vero, ligna minus vacui
+<lb/>continere. .Haec vero dicebant prolixis sermonibus, non
+<lb/>demonstiativis rationibus sententiam suam roborantes, sinquam
+<lb/>ipsis rem sensu dijudicare (quemadmodum et nos
+<lb/>facere novisti) non liceret. Sed ipsum philosophi adhuc
+<lb/>dicere volentem interrogaverunt, quinam esset modus,
+<lb/>per quem evidenter dignosci posset, utrum ipsorum .gravitis
+<lb/>esset, neque enim lu lancibus id fieri posse dicebant,
+<lb/>quemadmodum neque ex vale pleno; etenim expendere
+<pb n="5.100"/>
+<lb/>lignum possumus, non tamen vas aliquod ipso replere,
+<lb/>quod rursum aqua implere valeamus. Haec igitur istis
+<lb/>(ut soliti sunt) garrientibus, ridens architectus inquit:
+<lb/>Vos omnes sapientes videri volentes ejusmodi semper
+<lb/>estis, quae extra mundum sunt, de .quibus coniectura
+<lb/>notitiam accipere solum contingit, scientifice autem comprehendi
+<lb/>nequeunt, cognoscere vobis persuadentes , haec
+<lb/>autem, quae ad manum suat vel imperitis hominibus interdum
+<lb/>patentia, penitus ignorantes, quemadmodum et
+<lb/>id ipsum in praesentia propositum, aquae saillcet ac
+<lb/>ligni ponderis exquisitio. omnibus igitur, qui ibi aderant,
+<lb/>architectum rogantibus, ut, quo pactu ligni et aquae gravitas
+<lb/>inter se comparari dijudicarique firma ac certa
+<lb/>scientia posset, edoceret, ipse quidem brevi et aperte,
+<lb/>ut omnes, qui aderant, praeter solos philosophos intelligerent,
+<lb/>explanavit; ab illis vero bis et ter eundem sermonent
+<lb/>repetere coactus est, vixque intellexerunt. Qnocirca
+<lb/>jure, inquit architectus, permulti nihil istis praeter
+<pb n="5.101"/>
+<lb/>inanem scientiae persuasionem inesse praedicunt; in-,
+<lb/>docti namque in rebus omnibus obscuris convincuntur,
+<lb/>qui vero sapientes haberi volunt, in notis et aperlissimis
+<lb/>haerent atque hallucinantur. Ego vero hunc siermonem
+<lb/>subjiciens merito id ipsis accidere dixi, quandoquidem,
+<lb/>ut a per se notis ad ignota transeundum sit,
+<lb/>nunquam discere laborarunt, neque in illis sule rebus
+<lb/>exercere, quae recte invenientium veritatum comprobare,
+<lb/>non invenientium autem errorem coarguere queant. At
+<lb/>ut rideatis, inquit, istorumque fastum, quantus sit, cognofcatis,
+<lb/>unum ac duo ex iis; quae hujusmodi homines
+<lb/>supercilia contrahentes inconsiderate proferunt, vobis
+<lb/>recitare decrevj. primumque illud praecipue dixero, quum
+<lb/>Peripateticus quidam philosophus accessisset, unicum esse
+<lb/>mundum asserens, eumque plenum, extra quem nullum
+<lb/>esset vaouum, quemadmodum neque intus; duplici disserentia,
+<lb/>dixi, ab hoc philosopho uterque istorum difcrepat;
+<lb/>ostendebam autem Stoicum philosophum et Epicoreum.
+<pb n="5.102"/>
+<lb/>Stoicus enim in mundo quidem nihil . vacui
+<lb/>,. sed extra mundum vacuum esse locum asserebat;
+<lb/>ambo haec Epicureus- concedens, in alio quo-^
+<lb/>dam ab ipso dissentiebat; neque enim unum esse mundum,
+<lb/>quemadmodum Stoicus, in hoc sane Peripateticis
+<lb/>assentiens, opinatur, sed quemadmodum vacuum magnitudine
+<lb/>infinitum , ita et mundos in ipso multitudine infinitos
+<lb/>esse contendit. Ego vero, quae isti tres suis sumniis
+<lb/>patrocinari volentes dicerent, audivi, ipscsque nulla
+<lb/>ratione demonstrativa, sed probabili et consentanea muniri
+<lb/>exacte cognovi :. interdum vero neque sese , quod
+<lb/>mentiantur, animadvertere, quum eos singulos, ut in hoc
+<lb/>idem propositum aliquam demonstrationem afferrent, provocaremus.
+<lb/>. Sic itaque ea, quae in libris ipsorum scripta
+<lb/>esse novimus , disserebant ; omnibus autem praesentibus
+<lb/>clarissime nullus ipsorum rationem necessariam aut liarearum
+<lb/>demonstrationi consimilem , sed ex argumentatiunculis,
+<lb/>quibus rhetores uti solent, compositam afferre
+<pb n="5.103"/>
+<lb/>visus est. Sed hactenus de divitibus sermo habitus est.
+<lb/>Ad nos igitur ipfos , quicunque divites non sumus, revertamm,
+<lb/>iterumque aliquem ex sapientibus percunctomur,
+<lb/>num aequum sit seipsos solos veritatem cognoscentes
+<lb/>praedicare, ab omnibus aliis tum imperitis, tum
+<lb/>philosophis cognitam. Illud namque gravissimum est. (dicebam),
+<lb/>singulos videlicet philosophos extra proprium
+<lb/>gregem a .nullo alio laudari. Quem igitur alium decet
+<lb/>omnes philosophos judrcem quam ipsa sensibus evidentia
+<lb/>expectare, atque ex. omnibus rationalibus artibus arithmeticos;
+<lb/>ratiocinatores, geometras, astronomos, archis
+<lb/>tectos, jurisconsultus , rhetores-, grammaticos, musicos?
+<lb/>etenim, qui seipsum judicat atque coronat, aliorum judicum
+<lb/>si expectet sententiam, omnibus suffragiis condenotabitur.
+<lb/>Haeer in praesentia de peccatis abunde
+<lb/>dicta sunto.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

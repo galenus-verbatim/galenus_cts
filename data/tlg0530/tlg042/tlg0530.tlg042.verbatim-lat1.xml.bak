@@ -1,0 +1,2432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De historia philosopha</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg042.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+        <monogr>
+          <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+          <author>Pseudo-Galen</author>
+          <editor>Kühn, Karl Gottlob</editor>
+          <imprint>
+            <publisher>Cnobloch</publisher>
+            <pubPlace>Lipsiae</pubPlace>
+            <biblScope unit="vol">19</biblScope>
+            
+            
+            <biblScope unit="pp" from="222" to="345">222-345</biblScope>
+            <date>1830</date>
+          </imprint>
+        </monogr>
+        
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+        <monogr corresp="Basel">
+          <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+          <author xml:lang="lat">Galenus</author>
+          <editor>Camerarius, Joachim</editor>
+          <editor>Fuchs, Leonhart</editor>
+          <editor>Gemusaeus, Hieronymus</editor>
+          <imprint>
+            <publisher>Cratander</publisher>
+            <pubPlace>Basel</pubPlace>
+            <biblScope unit="vol">4</biblScope>
+            <biblScope unit="pp" from="424" to="428">424-428</biblScope>
+            <date>1538</date>
+          </imprint>
+        </monogr>
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+        <monogr corresp="Chartier">
+          <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+          <author xml:lang="lat">Galenus</author>
+          <editor>Chartier, René</editor>
+          <imprint>
+            <publisher>[s.n.]</publisher>
+            <pubPlace>Paris</pubPlace>
+            <biblScope unit="vol">2</biblScope>
+            <biblScope unit="pp" from="21" to="58">21-58</biblScope>
+            <date>1639</date>
+          </imprint>
+        </monogr>
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x02">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg042.verbatim-lat1">
+<pb n="19.222"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="19.222"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE HISTORIA PHILOSOPHICA
+<lb/>LIBER SPURIUS.</head>
+
+
+<p>Qualis philosophia suerit ante socratem quas ipse partes
+<lb/>addiderit; ac de libro proposito.</p>
+<p rend="indent">Quum qui ab initio philosophati tuus ii susum physicam
+<lb/>elegissent eamque suae philosophiae finem confittu
+<lb/>issent, multis post temporibus natus Socrates ipfe id
+<lb/>philosophiae genus hominibus inaccessum esse censuit.
+<lb/>Rerum enim abditarum cognitionem certam assequi perarduum
+<pb n="19.223"/>
+<lb/>esse existimavit. At quaerere quomodo quis emen-
+<lb/>datius viveret et a malis avocaretur necnon bonorum
+<lb/>quam plurimorum particeps fieret, .id magis profuturum.
+<lb/>Quumque hoc utilius judicasset; physicam neglexit ad usum
+<lb/>vitae non multum conferentem ; moralem vero quandam
+<lb/>disciplinam excogitavit quae eorum est , quae bona vel
+<lb/>mala ducuntur, turpia vel honesta, honore digna vel his
+<lb/>contraria arbitratus eos qui haec providissent ab omnihus
+<lb/>vitae incommodis te facile explicaturos. Quamobrem
+<lb/>pars philosophiae ipsis moralis accessit, .quae. eorum quibus
+<lb/>vitum est honestissime vivere propositum astruit. Prospiciens
+<lb/>autem oportere hujus auctorem artem callere suaforianr
+<lb/>et hoc futurum si rationibus dialecticis praeclare
+<lb/>uti videretur apud eos qui eum convenirent, disserendi
+<lb/>facultatem meditatus qua perfossi ab iis quae noxia sunt
+<lb/>liberi ad ea evehimur quae omnino prodesse nata sunt,
+<lb/>eam constituit. Sic itaque a Socrate tres in partes philosophia
+<lb/>divisa est quae prius .sola rerum naturalium speculatione
+<pb n="19.224"/>
+<lb/>circumscripta videbatur. Hoc igitur praefari
+<lb/>oportebat, ut ex quodam initio philosophicam historiam
+<lb/>conderemus. At de .isse materia disserere proposuimus
+<lb/>non quod proprium quid invenerimus, fed quod quae ab
+<lb/>antiquioribus fparlim fufeque dicta funt ea colligentes
+<lb/>dilucide ac concite studuerimus de ea disserere; ut qui
+<lb/>difcendi studio ducti ad haec accesserint interpretibus
+<lb/>non indigeant, fied seipsis quae dicta funt. singula apertius
+<lb/>intelligant. Sed tutius enitamur de eo verba facere captiosis
+<lb/>et multopere exornatis dialecticorum ratiocination
+<lb/>ibas praetermissis. Non enim ostentationis gratia de eo
+<lb/>studium sufcepimus, fed quod voluerimus his honeste prode/su,
+<lb/>qui prius aliquod ex philosophia emolumentum promere
+<lb/>decreverunt arbitrati philosophari non suium detrita
+<lb/>veste indutos, fed et eos- qui consimili ceteris incessu gradientes
+<lb/>mentem maxime philosophicam habere studuerunt.
+<lb/>Paucioribus autem quaecunque ah iis qui nos edocuerunt
+<lb/>audivimus et quae ipsi perlegendo didicimus nunc in unum
+<pb n="19.225"/>
+<lb/>cogere tentavimus, ut ex omnibus alieni notum sit unde
+<lb/>primum philosophia ad Graecos pervenerit, qui ipsam introduxerint,
+<lb/>qui denique doctrina aestimati fuerint prae..
+<lb/>cellere ceteris qui ad haec animum appulerunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p>De successione philosophorum.</p>
+<p rend="indent">Primus est igitur, ut quamplurimi augurantur, qui
+<lb/>philosophiam disciplinam apud Ionas introduxit Thales
+<lb/>Milesius , a quo et sapientiam quae ejus aetatis fuit leni-.
+<lb/>cam omnes appellanti Huic familiaris factus Anaxmander
+<lb/>eodem modo philosophatus est, qui Anaximenetn doctrinae
+<lb/>tuae aemulum successorem constituit et Anaxagorae praeceptorem
+<lb/>fieri curavit. Hic Mileto relicta venit Athenas
+<lb/>et Archelaum Atheniensem primum ad philosuphiam concitavit.
+<pb n="19.226"/>
+<lb/>Cujus auditor fuit Socrates qui in multis posteris
+<lb/>et coaevis cauta fuit ut sincere philosophiae lucumherent.
+<lb/>Qui namque ad ipfum accedebant prope omnes,
+<lb/>ut dicitur, philosophiae desiderio inflammatos dimisit.
+<lb/>Quum autem socratici multi exstiterint, necesse est nunc
+<lb/>solum eorum mentionem facere, qui ejusdem sectae relicti
+<lb/>fuere successores. Plato igitur plurimum ceteris praecelluit
+<lb/>philosophiae adyta ita penetrans, ut quis diceret,
+<lb/>invidia superata Socratici nomen assequutus est, susceptae
+<lb/>veteris academice princeps suit fama celebratissimus. Speusippus
+<lb/>autem brevi aliquo tempore eadem in secta mansit,
+<lb/>sed arthriticis morbis obsessus in suum locum Xenocratem
+<lb/>dogmatum Platonicorum interpretem constituit. Huic autem
+<lb/>successit Polemon qui jurabat in verba Platonis necnou
+<lb/>Crantoris. praeceptor factus est, in quo vetus academia
+<lb/>finem habuit. Crantoris. auditor fuit Arcesilaus qui tue:
+<lb/>diam academiam invexit et epochen, hoc est tacitam fententiam,
+<lb/>excogitavit. Hujus Carneades successor constitutus
+<pb n="19.227"/>
+<lb/>novae academiae principia lustravit, quem fequutus est
+<lb/>Clitomachus. Sunt vero praeter has omnes duae recentissimae
+<lb/>academiae, quarum priori Philo praefuit, posteriori
+<lb/>Anticchus. Quum autem permulti exstiterint Socratici,
+<lb/>plerisque aequalem, inferiorem nemini fuisse Antisthenem
+<lb/>arbitror, qui Cynicam philosophiam vitae addidit; cujus
+<lb/>Diogenes factus est. fectator ac in vitae institutis similis.
+<lb/>Hune zeno Citieus audivit, qui et Stoicam philosophiam
+<lb/>adinvenit. zenonis hujus sententias excepit Cleanthes et
+<lb/>hujus Chrysippus auditor simile vitae institutum fequutus
+<lb/>esu Cbrysippi Diogenes Babylonius auditor factus Antipatri
+<lb/>praeceptor fuit. Antipatrum audivit Posidonius.
+<lb/>Aristippus autem Cyrenaeus a quo philosophiam Cyrenaicam
+<lb/>accepimus Soeraticae auscultationis fuit particeps.
+<lb/>Sed neque aequum est contentiosam dialecticam Megareusium
+<lb/>philosophiam spernere , quam incepit Euclides Megarensis
+<lb/>qui Stilponem docuit quique nulli Socraticorum iogenii
+<lb/>subtilitate inferior factus esu Eorundem dogmatum
+<pb n="19.228"/>
+<lb/>inventor fuit Stilpo Megaricns, quem fequutus est Menedemus
+<lb/>Eretriensis, a quo Eretrica philosophia denominata
+<lb/>esu Phaedonem ElienIem primas obtinuisse inter Socralices
+<lb/>nullus ignoravit, cujus rationes quum memoriae
+<lb/>mandasset Anaxagoras Ahderites Pyrrbonem docuit auctorem
+<lb/>Scepticae philosophiae. Aristoteles autem quum diu
+<lb/>Platonis placitis adhaesisset, aliis. postea feipfum addixit,
+<lb/>qui Theophrastum suae tectae praefecit, qui et Stratonem
+<lb/>adduxit ad peculiarem quandam speculationis physicae formulatn.
+<lb/>Epicurus autem, ut nonnulli tradiderunt, spreta
+<lb/>philosophiae gravitate ad quandam disciplinae rationem
+<lb/>devenit ab accuratis philosophis non omnino approbatam.
+<lb/>Hunc Metrodorus audivit et Hermachus, qui Epicuro
+<lb/>successit.</p>
+<p>De generibui philosophorum.</p>
+<p rend="indent">At duo sunt celebrium philosophorum genera, lenieum
+<lb/>et Italicum. At de Ionico multa fatis jam dictu sunt.
+<pb n="19.229"/>
+<lb/>Italici vero, ejus quidem quod Crotone et Parento viguit,
+<lb/>princeps extitit Pythagoras ; ejus autem quod Elaeae floruit
+<lb/>Xenophanes Colophonius princeps fuit, qui dubitatortae
+<lb/>potius quam dogmaticae philosophiae scctator plerisque
+<lb/>esse videbatur. Postea vero hujus placitis delectati
+<lb/>sunt Melissea et Parmenides, quem rerum abditarum notitiam
+<lb/>adeptum fuisse ferunt. Sed zeno Eleates contentiosae
+<lb/>philosophiae princeps fuisse commemoratur. Hujus
+<lb/>auditor Leucippus Abderites primus atomorum inventionem
+<lb/>excogitavit. Ab eo vero depromptum dogma Democritus
+<lb/>id magis stabilivit. Democriti successor aemulus fuitProtagoras
+<lb/>Abderites, qui oratoriam artem philosophiae coniunxit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p>ce cognominibus philosophiae.</p>
+<p rend="indent">At philosophia quaeque finita est partim quidem a
+<lb/>viro praeceptore, quemadmodum Epicurea quae ab Eprcuro,
+<lb/>et Pythagorica quae a Pythegora, partim ab auctorum
+<pb n="19.230"/>
+<lb/>patria ut Eretrica, Megarica, partim a fine ac dogmate,
+<lb/>ut Eudaemonica. Anaxarchus siquidem tuae probae insti.
+<lb/>tutioris finem esse selicitatem dicebat. Partim ab actione
+<lb/>ut peripatetica; Aristoteles namque quod deambulando familiaretn
+<lb/>ad discipulos sermonem haberet hoc cognomine
+<lb/>tuam philosophiam appellandam censuit. Partim a pugnaci
+<lb/>contentione , ut Cynica et dialectica. Partim a parte
+<lb/>aliqua philosophiae, cui prae ceteris operam dederint, ut
+<lb/>dialectica. Partim a locis in quibus diveriabantur, ut
+<lb/>Stoica et academica. Partim ab affectu quo docentes utebantur,
+<lb/>ut sceptica. Partim ab auctore, dogmate, fine et
+<lb/>patria simul, ut quam Aristippus introduxit, quae quidem
+<lb/>ab ipsi, inventore Aristippica dicta est, Cyrenaica vero ab
+<lb/>ejus patria quam ille habuit, voluptuarla denique a fine
+<lb/>suae philosophiae. Aristippum tamen voluptatem accusasse
+<lb/>et damnasse potius suspicati tunt nonnulli. Et voluptatem
+<lb/>appellasse putarunt non illam quae ex sensuum actione
+<lb/>oritur delectationem, test eum animi statum qui molestia
+<lb/>careat nullisque mulceatur illecebris.
+<pb n="19.231"/>
+<lb/>De logica philosophiae parte.</p>
+<p rend="indent">.. Logicam philosophiae partem ortu posteriorem, ordine
+<lb/>priorem posteriores philosophi constituerunt arbitrantes
+<lb/>accurate philosophaturus oportere non prius aliis partibus
+<lb/>operam navare quam disceptandi peritiam adepti sint et
+<lb/>quid sit eorum quae sunt unumquodque cognoverint. Quidam
+<lb/>enim asseruerunt philosophiam- esse facultatem cogno- .
+<lb/>suendi et efformandi optimam vitam. optimam autem vitam
+<lb/>esse dixerunt unumquemijue secundum virtutem vivere.
+<lb/>Quidam vero exercitationem artis hominibus ad optimam
+<lb/>vitam efformandam necessariae definierunt. At
+<lb/>exercitationem quidem philosophiam omnes existimant;
+<lb/>idoneam vero artem sapientiam, quae divinarum humanammque
+<lb/>rerum comprehensio esu Quidam vero speculativum
+<lb/>habitum eligendi et vitandi quod magis oporteat
+<lb/>conjectarunt ipsamque nominarunt. Eligenda quidem et
+<lb/>bona esse; fugienda vero et mala censuerunt. Bonum
+<lb/>enim esse quod propter te sequendum est et comparatum,
+<lb/>possidenti utilitatis causa fit, malum vero quod propter
+<lb/>fe fugiendum et obtentum damni causa est.
+<pb n="19.232"/>
+<lb/>De philosophiae partibus.</p>
+<p rend="indent">At philosophiae partes quae ex sententia plurium ahsolutissimae
+<lb/>esse creduntur tres deprehendimus; primam
+<lb/>logicam rationalem, qua entium quodque fecundum tubstantiam
+<lb/>et secundum accidens,. mutuas eorum differentias
+<lb/>perdiscimus et alia consimilia cognoscimus. Secundam
+<lb/>physicam naturalem per quam conspicere licet, quaenam
+<lb/>ea caula sit qua et ordine coelestium corporum quaecunque
+<lb/>apparere videntur motus procedit et-quae sit ipforum
+<lb/>inter te tarditas aut velocitas et quaecunque his funt
+<lb/>similia. Tertiam omnium maxime necessariam vitaeque
+<lb/>institutis utilissimam moralem, qua mutuo colloqui et plaride
+<lb/>conversari disicimus; temerarios autem ac elatos non
+<lb/>odio prosequendo, sed eludendo ac miserando contemnere,
+<lb/>bene moratos vero ac mansuetos diligere. At tactiles est
+<lb/>eorum secturi vitam qui mutuas easque probas consuetudines
+<lb/>melius instituunt, quam illorum qui consuetudinem accessu
+<lb/>difficilem prorsusque ab omni societate alienam inducunt.
+<pb n="19.233"/>
+<lb/>De sectis.</p>
+<p rend="indent">Sectam aliqui tribus modis dici arbitrantur, communiter,
+<lb/>proprie et propriissime. Communiter quidem opinlonum
+<lb/>conspirationem esse aliquam in re quae ad vitam degendam
+<lb/>spectat; proprie vero consensum in arte; propriissime
+<lb/>autem consensum in philosophia. Ex notione vero
+<lb/>tectam esse asserunt collectionem multorum dogmatum sibf
+<lb/>invicem concordantium et ad- unum finem tendentium.
+<lb/>Quatuor autem tectae sunt quas maxime generales existimaut
+<lb/>ii qui de earum distinctione curam susceperunt.
+<lb/>Una est dogmatica quae in multis posita et stabilior est;
+<lb/>altera sceptica quae de omnibus rationes inquirit. Tertia
+<lb/>praeterea est contentiosa quae sophismatis superior esse in
+<lb/>concertationibus studet. Sophismata autem ejusmodi existimant
+<lb/>ut : quod ego tum tu non es : at homo tum :
+<lb/>ergo tu non es homo: et id genus lasses pueriles et litigiofas
+<lb/>ratiocinationes. Quartam denique tectam mixtam
+<lb/>appellarunt, quae quibusdam in decretis collocata est ac
+<pb n="19.234"/>
+<lb/>de multis dubitat neque omnia ut approbati edisserit. Dogmaticos
+<lb/>autem Pythagoram stannum et Epicorum Aiheniensum
+<lb/>esse statuunt. Scepticos vero zenonem Elaeatem
+<lb/>et Anaxarchum Abderitam et Pyrrhonem ,- qui quum aporeticam
+<lb/>dubiam tectam esset amplexus, eam quam accurarissime
+<lb/>coluit. Contentiosos vero appellarunt Euclidem
+<lb/>et Menedemum et Clitomachum. Mixtae autem factae
+<lb/>sectatores esse xenophanem , qui de omnibus dubitarit
+<lb/>ac tantum decrevit omnia unum esse idque unum esse
+<lb/>deum et finitum et ratione praeditum et immutabilem,
+<lb/>atque Democritum simili modo qui de nulla re alia suam
+<lb/>protulit sententiam, sed de atomis, de vacuo et de infinito
+<lb/>documentum reliquit.</p>
+<p>Quodnam sit philosophiae principium?</p>
+<p rend="indent">Principium tribus modis dicitur, primum ut -causale,
+<lb/>secundum ut per modum constitutionis, tertium demonstrationis.
+<lb/>Causale igitur principium est quum investigamus,
+<pb n="19.235"/>
+<lb/>quid sit quod primos homines in philosophiae opi-.
+<lb/>nionem venire impulerit. Per modum autem constitutionis
+<lb/>seu constituendi principium quum quaerimus qualis
+<lb/>sit pars quae prior in artem ^redacta suit-. Demonstrationis
+<lb/>vero quum quae a nobis inventa sunt, ea demonstramus.
+<lb/>Porro inventionis philosophiae cauta est secundum
+<lb/>Xenocratem quidquid est in vita turbulentum placare.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p>De signo.</p>
+<p rend="indent">Signum definiunt dialectici enunciatum sanae menti
+<lb/>consentaneum et antecedens concludens quod consequitur.
+<lb/>signorum vero alia sunt indicantia, alia vero admonentia.
+<lb/>Signum indicans est quod rem significatam ita proponit,
+<lb/>ut simul ac illud conspectum est in rei significatae cognitionem
+<lb/>nos adducat, quale in fumo signum esu Eo nunque
+<lb/>confpecto protinus quod ex igne ortum ipsis habeat
+<pb n="19.236"/>
+<lb/>cognoscimus. Signum admonens est quo non nisi prius
+<lb/>observato signo apparenti in rei significatae cognitionem
+<lb/>devenimus, ut quae lac habet eam illico peperisse intelligimus.
+<lb/></p>
+<p>De jyllogismo.</p>
+<p rend="indent">Syllogismus est oratio quae ex concessis responsionibus
+<lb/>de iis quae disseruntur inexspectatam conclusionem
+<lb/>colligit, ut apud Platonem primo de republica. Thrafymaesto
+<lb/>enim concedente Iustum esse potentioris utilitatem
+<lb/>praestare : et id potentius esse quod imperium habet in
+<lb/>quaque civitate: principes autem civitatum singularum
+<lb/>posse quoque aberrare ac sibi inutilia facienda imperare
+<lb/>fubditis. Colligit Socrates id quoque justum esse ipsis
+<lb/>magistratibus utilitatem non praestare,</p>
+<p>De desinitione. .</p>
+<p rend="indent">Definitio autem oratio est concita quae nos ducit in
+<lb/>cognitionem uniuscujusque rei. Uel definitio est oratio,
+<pb n="19.237"/>
+<lb/>quae brevi commemoratione rem propositam nobis dilucidam
+<lb/>efficit. At definitionum aliae quissent sunt essentiales,
+<lb/>aliae vero notionales, speculativae et accidentales.</p>
+<p>De divisione.</p>
+<p rend="indent">Divisionem existimant eorum quae in unum coierint
+<lb/>sejunctionem distinctionemve esse. Dividi vero cenfent
+<lb/>nomina in significantia et non significantia, tutum in particulares
+<lb/>partes, genera in species et differentias lu singusaria
+<lb/>et haec in accidentia, accidentia in seipsa tum in
+<lb/>sublecta.</p>
+<p>De sedicio.</p>
+<p rend="indent">Judicium est rem discernens animadversio. Duplex
+<lb/>autem est judicium, alterum cujus usu vitam ducimus,
+<lb/>alterum quo res existere vel non existere diiudicamus.
+<lb/>Dicitur vero judicium tribus maxime modis, communiter,
+<lb/>proprie et maxime proprie.
+<pb n="19.238"/>
+<lb/>De vero.</p>
+<p rend="indent">Verum est quod alicui oppositum cum re convenit.
+<lb/>Differt autem verum a veritate substantia, constitutione,
+<lb/>potentia. Substantia. quoniam . verum incorporeum est,
+<lb/>effatum enim est et dictum, veritas autem corpus : nam
+<lb/>omnium- rerum scientia est ac praecipue verarum. Princeps
+<lb/>facultas spiritus esse videtur qui meritu corporeus
+<lb/>existimatur: constitutione vero haec- differunt quia evidens
+<lb/>est, ut ego difputo ideo veritatem nobis esse indagandam,
+<lb/>quod universa comprehendat: potentia quoniam verum
+<lb/>pessimo cuique inest: nam vera interdum dicit vel mediocriter
+<lb/>literis instructus:: veritas autem nonnisi probis et
+<lb/>eruditis viris inesse potest.</p>
+<p>De demonstratione.</p>
+<p rend="indent">Quandoquidem ad rationalem philosophiae partem
+<lb/>spectare videtur ferum- de demonstrationibus, consentaneum
+<pb n="19.239"/>
+<lb/>est de iis verba facere. Demonstrationes voco syllogismos,
+<lb/>qui ex evidentibus propositione et assumptione conclusionem
+<lb/>inferunt vel qui nulla alia opus habent probatione.
+<lb/>Sunt autem ejusmodi. Primus quando ex coniuncto antecedentis
+<lb/>consequens infertur, ut dies est, ergo lux esu
+<lb/>Secundus quando ex antecedenti et opposito consequentis
+<lb/>antecedentis oppositum infertur, ut si dies est, lux est,
+<lb/>atqui lux non est, dies igitur non esu Tertius in quo ex
+<lb/>negato connexo et unius partis oppositio alterius partis
+<lb/>oppositum deducitur, ut, si non dies est, nox est, fed dies
+<lb/>est, igitur nox non esu Quartus in quo ex disiuncto et
+<lb/>unius partis opposito reliquum infertur, ut, vel dies est
+<lb/>veI nox esu Atqui dies non est, igitur nox esu Quintus
+<lb/>in quo ex disiuncto et opposito uno eorum quae sunt in
+<lb/>disiuncto oppositi reliquum infertur, ut, dies est, nox non
+<lb/>est: atqui nex non est: ergo dies est.
+</p>
+<pb n="19.240"/>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p>De physica seu rerum naturalium scientia.</p>
+<p rend="indent">Quaecunque igitur par fuit de iis agere quae ad rationalem
+<lb/>philosophiae partem attinent, alio in opere pluribus
+<lb/>verbis enarravimus. Nos autem pauca de his folummodo
+<lb/>perstringentes adhibito quodam disputandi modo
+<lb/>ad ea recensenda properamus, quae de natura rerum auliqui
+<lb/>tradidere. Atque de his si quisquam dicat, licet
+<lb/>omnes facile reprehendamus, non moleste tamen feremus
+<lb/>et hac de re manifesta constitui posse arbitramur et rane
+<lb/>primum discentibus tironibus ab his propter facilitatem
+<lb/>philosophiae exordium capiendum censuerimus. Initium
+<lb/>ergo petemus a primis rerum naturalium principiis tam
+<lb/>efficientibus quam materialibus: quae quidem ut par fuit,
+<lb/>ubi agitavimus animo, aptum esse et consentaneum judicavitnus
+<lb/>varias antiquorum de illis philosophorum opiniones
+<lb/>ac de deo qui est prima et essicientissima rerum omnium
+<pb n="19.241"/>
+<lb/>quae funt quaeque in dies gignuntur cauta et, ut
+<lb/>ita dicam, opifex in medium afferre. Plato siquidem et
+<lb/>zeno Stoicus de dei- essentia disputantes non mundum
+<lb/>ipsum esse dixerunt , ted praeter haec omnia quiddam
+<lb/>aliud i incorporeum quidem deum esse Plato fentit; corpus
+<lb/>vero feu corporeum zeno asseverat. Tamen de ejus
+<lb/>forma nihil statuerunt. Epicurus autem humanam ipsum
+<lb/>habere figuram credidit Stoici propriam quidem eum
+<lb/>femper non retinere, sini igneus spiritus cum sit omnium
+<lb/>quibus affluxerit formam facile fufcipere illisque similem
+<lb/>effici, certum et definitum locum habere et digrediendo
+<lb/>ipsimi moveri Epicurus asseverare conatus esu Stoici insitum
+<lb/>et innatum per omnia penetrare ev singulis rebus
+<lb/>feu naturis similem effectum cum eisdem et moveri et
+<lb/>locum mutare dicunt atque ex ingenita sibi virtute rebus
+<lb/>sibi coniunctis prospicere : iidem quoque deum quidem
+<lb/>cuncta gubernare dixerunt , sed nullius rei curam peculiarrter
+<lb/>habere. At vero Epicurus affirmat beatam incor- ,
+<lb/>ruptibilemque naturam neque ipsam in te molestias ullas
+<lb/>habere neque alicui alteri negotium lacessere, universis
+<pb n="19.242"/>
+<lb/>tamen hominibus bona deum elargiri. Plato autem opinatus
+<lb/>est deum largitorem esse rerum omnium quae ad
+<lb/>vitam spectant, non alium esse tensile Quicunque 1nuudum
+<lb/>genitum esse putaverunt, deum dixerunt ipsius opilicem
+<lb/>fuisse: alii vero qui genitum mundum concesserunt,
+<lb/>non eandem de ipsius fine sententiam habuerunt. Verum
+<lb/>Plato immortalem esse atque interitus expertem propter
+<lb/>opificis industriam existimat. Stoici contra interire mundum
+<lb/>putant atque ignis opera qui in infinitum diffunditur,
+<lb/>ipsius mutationem contingere materia aliquod tempus
+<lb/>quiescente et cessante: rursus vero in contrarium statum
+<lb/>ex igne vergentibus rebus et conversis quoad principia in
+<lb/>aliorum elementorum naturam et ructus coagmentatis atque
+<lb/>a deo in unum corpus redactis ac omnino ex nova
+<lb/>natura in mundum coalescentibus. Ac ceteri quidem omnes
+<lb/>qui deum cunctarum rerum auctorem crediderunt,
+<lb/>ipsum quoque unum horum omnium caulam statuere eonati
+<lb/>sunt. Solus Plato ideas introduxit in quas intuens
+<pb n="19.243"/>
+<lb/>dens potest operari : item materiam introducunt omni qualitate
+<lb/>carentem, ex qua singula quaeque non inaequalia
+<lb/>conficeret , fed ab ipsa omnes gignerentur effectus. rerum
+<lb/>quoniam de efficiente principio sutis multa attulimus,
+<lb/>tempus est ut de materia quoque aliquid dicamus. Cynici
+<lb/>qui de ea locuti sunt principium materiale esse una et
+<lb/>mente et voce omnes consenserunt, quodnam vero sit non
+<lb/>omnes consentiunt. Sed Pherecydes Syrus terram id esse
+<lb/>credidit. Tbales autem aquam. Anaximander infinitum.
+<lb/>Anaximenes et Diogenes Apollouiata aerem. Heraclitus
+<lb/>et Hippastts Metapontiuus ignem. Xenophanes Colaphonius
+<lb/>terram et aquam. Hippo Rheginus ignem et aquam.
+<lb/>Oenopio Chius ignem et aerem. Democritus vero in Sophisticis
+<lb/>terram et ignem et aquam. Stoici quatuor elementa
+<lb/>terram et ignem et aquam et aerem. Aristoteles
+<lb/>autem his addidit corpus quod in orbem agitur. Empedocles
+<lb/>quatuor elementis amicitiam et litem adjungit:
+<lb/>cum enim quatuor sint elementa materialia, amicitia haec
+<pb n="19.244"/>
+<lb/>copulat, lis vero eadem dissolvit et dissipat. Democritus
+<lb/>et Epicurus atomos omnium rerum principia esse opinantur.
+<lb/>Heraclrdes Ponticus et Asclepiades Bithynus rerum
+<lb/>principia .faciunt moles quasdam non compactas. Anaxagoras
+<lb/>ClaTomenius minimas quasdam similes rerum particuias.
+<lb/>Diodorus qui Cronus cognominatus est individua
+<lb/>minimeque corpuscula. Pythagoras numeros. Mathemalici
+<lb/>corporum fines. Strato cognomine physicus qualitates.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p>De principii et causae disserenti</p>
+<p rend="indent">Principium et causam aliqui nihil inter fe differre
+<lb/>putant: aliqui principium quidem rerum omnium originem
+<lb/>praecedere existimant, nun tamen nilum eventus cujuscunque
+<lb/>causam esse dicunt, fed id quo secundum unumquemque
+<lb/>modum res fiunt. Caularum genera quatuor iidem
+<lb/>statuunt. Antecedens quod ab eventu feparari potest
+<pb n="19.245"/>
+<lb/>idque quod jam effecit permanet. Continens quod rem
+<lb/>quam facit non deterit et quo praefecte adest effectus et
+<lb/>cessante immutatur, crescente augescit et decrescente decrescit.
+<lb/>Perfectum quod per fe fotum rem peragit. Adjuvans
+<lb/>quod ceteris pares vires in effectum conscit, ut in
+<lb/>arando videmus, in quo vel plurimum adjuvare videtur,
+<lb/>quod leve et exiguum ad effectum affert momentum, ut
+<lb/>bobus quidem duobus sit opus: attamen arator multo facitius
+<lb/>arabit opusque absolvet, si tertius adducatur qui
+<lb/>aliorum laborem sublevet.</p>
+<p>De elementorum et principii deferentia.</p>
+<p rend="indent">Cum Ionici philosophi elementum a principio nihil
+<lb/>differre arbitrarentur, plurimum Plato interesse judicavit,
+<lb/>nihil enim prius esse censuit principio ex quo gigni poluerit.
+<lb/>Contingit vero elementis priorem esse informem
+<lb/>substantiam, quam alii materiam qualitatis expertem nominant,
+<lb/>alii formam fcu perfectionem et privationem. Praeterea
+<pb n="19.246"/>
+<lb/>elementa aliqui composita et effectus nominant. Principium
+<lb/>vero neutrum horum esse constent. Quamobrem
+<lb/>merito Plato deprehensam in his differentiam demonstrat.</p>
+<p>De natura.</p>
+<p rend="indent">Naturam definiunt aliqui spiritum arte praeditum et
+<lb/>ad aliud aditum facientem. Alii corporum concretionem
+<lb/>et dissolutionem. Aristoteles^ principium motus et quietis
+<lb/>ejus in quo est primo per se et non per accidens esse
+<lb/>existimavit. Naturalia vocat tum elementa quatuor, tum
+<lb/>cetera quae ex eis fiunt, animalia, stirpes, metalla et quae
+<lb/>in aere generantur, imbres et alia id genus.</p>
+<p>De motu.</p>
+<p rend="indent">Motum omnes pene concedunt quicunque paulo diligentius
+<lb/>philosophati sunt locorum commutationem, ut cum
+<lb/>quis a loco ad. locum videtur transire. Physicum cum
+<pb n="19.247"/>
+<lb/>quidam unum ex alio genitum in aliud transire demonstrant.
+<lb/>Tertio ortum cum ex non entibus fit aliquid,
+<lb/>interitum vero quando ex ente ad non ens transit, ut in
+<lb/>animalibus quae corrumpuntur. Motum accretionis ut cum
+<lb/>quid e parvo ad aliquid majus transiti Denique motum
+<lb/>diminutionis ut cum ex majori aliquid breve redditur et
+<lb/>ad minus transmutatur.</p>
+<p>De corpore.</p>
+<p rend="indent">Nonnullis corpus esse dicentibus quodcunque sive agat
+<lb/>sive patiatur. Alii corpus esse definiunt quod triplici dimensione
+<lb/>constat cum renixu. Punctum namque esse cujus
+<lb/>pars nulla : lineam vero longitudinem latitudinis expertem :
+<lb/>superficiem quae longitudinis et latitudinis est particeps.
+<lb/>Hanc vero cum profunditatem assumpserit corpus esse existimant.
+<lb/>Quidam etiam corporum extrema et terminos
+<lb/>corpora esse crediderunt.
+<pb n="19.248"/>
+<lb/>De sigura.</p>
+<p rend="indent">Figura corporis superficies, circumscriptio et terminus
+<lb/>est. Figurarum vero aliae rotundae sunt,, aliae angulares,
+<lb/>quarum insmita pene variatio .est.</p>
+<p>De idea seu farina.</p>
+<p rend="indent">ldea est substantia incorporea , tui similium cauta et
+<lb/>naturalium substantiarum sub sensum cadentium exemplar,
+<lb/>ipfa quidem ex fe non subsistens , fed formis carentes maferias
+<lb/>sibi similes reddens earumque constitutionis causa.
+<lb/>Plato vero concedit quantum fieri potest quaerendas esse
+<lb/>ideas in mente et cogitatione dei. Aristoteles autem formas
+<lb/>quidem et ideas non abstulit, fed eas materiae conjuuctas
+<lb/>esse voluit. Stoici nostras cogitationes ideas app
+<lb/>ellarunt.
+</p>
+<pb n="19.249"/>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p>
+<lb/> De mundo.</p>
+<p rend="indent">Stoici mundum unum esse dixerunt et hunc totum
+<lb/>esse et corporeum. Empedocles velo mundum quidem
+<lb/>unum esse concedit, non tamen universum esse, fed exiguam
+<lb/>quandam universi particulam, reliquum vero otiosam
+<lb/>materiam. Plato mundum unum esse et universum tribus
+<lb/>argumentis consuerat, quia perfectus non esset, si omnia
+<lb/>non contineret nec exemplari, -id est mortali mundo, fimilis
+<lb/>si unicus non esset , nec aeternus si quid extra fe haheret.
+<lb/>Metrodorus praeceptor Epicuri ait absurdum esse
+<lb/>in magno campo fpicam unam produci et unum in infinito
+<lb/>mundum. Quod autem sit infinitus ex eo patet, quod
+<lb/>infinitae sint causae. Etenim si mundus sit finitus, causae
+<lb/>vero illius infinitae ex quibus prodiit, necesse est mundos
+<lb/>dari infinitos. Siquidem ubi omnes causae, ibi etiam tuus
+<lb/>effectus. Caulae autem sunt -atomi et elementa.
+<pb n="19.250"/>
+<lb/>Quomodo constitit mundus.</p>
+<p rend="indent">Constitit igitur mundus rotunda figura formatus hoc
+<lb/>paeto ut gravissima corpora deorsum ferantur, levia vero
+<lb/>furium, circum denique. et in orbem quae ex his sunt
+<lb/>composita;</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p>De deo.</p>
+<p rend="indent">Quae de deo inter initis omisimus, ea nunc dicemus.
+<lb/>Nam ex antiquis philosophis quosdam invenimus qui deos
+<lb/>ignorarunt, ut Protagoram Eleum, Theodorum Cyrenaicum,
+<lb/>Euemermn tifegeatam , non enim deos esse asserere
+<lb/>ausi tunt. Videtur vero hujus opinionis fuisse. Euripides,
+<lb/>quamquam id ipse non dicit ob metum Areopagitarum,
+<lb/>fed Sisyphum id dicentem introducit. Sed istos missos
+<lb/>faciamus et Anaxagoram potius audiamus, qui divinam
+<pb n="19.251"/>
+<lb/>mentem asserit res omnes a primordiis mundi inter se
+<lb/>consutas distinxisse atque ita res omnes procreasse. Plato
+<lb/>vero suppofuit prima corpora non constitisse, fed inordinate
+<lb/>mota a deo in ordinem luisse coacta et ad id quod
+<lb/>erat conveniens revocata. Thales vero mentem mundi .
+<lb/>deum esse putabat. Anaximander autem mentes infinitas
+<lb/>dees esse putat. Democritus autem mentem in igne sphaerico
+<lb/>animam mundi existimat. Pythagoras vero ex priucipiis
+<lb/>unitatem deum et bonum esse putavit, quae sit
+<lb/>unius natura ipsis mens est, indefinitam vero dualitatem
+<lb/>daemonem et malum circa quam mundus est visibilis. Et
+<lb/>Platoni hoc vitum est deum ab omni materia separatum
+<lb/>et nullis passionibus obnoxium. Aristoteles vero supremum
+<lb/>deum formam esse definivit separatam, univerit tamen circulo
+<lb/>inhaerentem: unde et corpus ejusmodi ab ipso aetheseum
+<lb/>et magnum reputatum est, divisum in plures
+<lb/>sphaeras. natura coniunctas, ratione vero separatas, ut aurmal
+<lb/>sit compositum ex corpore et divinitate et hoc aethereum
+<pb n="19.252"/>
+<lb/>motum set in circulum volubile, animam vero
+<lb/>rationem immobilem, causam motus secundum operationem.
+<lb/>Stoici deum esse ignem arte praeditum vel spiritum arniluantur
+<lb/>et via procedentem ad mundi generationem et
+<lb/>omnes omnium. rerum rationes continentem, quibus omnia
+<lb/>fato eveniunt totum mundum pervadere ac appellationes
+<lb/>sortitum pro diversitate materiae in quam diffusus est.
+<lb/>Deum et mundum et stellas et terram esse censent. ld
+<lb/>autem quod omnium supremum est mentem esse et deum.
+<lb/>Enisurus vero deos omnes humana fpecie esse, fota vero
+<lb/>ratione visibiles propter tenuitatem specierum eorum naturae :
+<lb/>hic vero sic alias quatuor naturas secundum genus
+<lb/>incorruptibiles statuit atomosque, infinitum, vacuum et
+<lb/>similitudines, bae vero dicuntur partes similares et elementa.</p>
+<p>Unde dearum notitiam habemus.</p>
+<p rend="indent">Deum definiunt Stoici spiritum intelligibilem, formam
+<lb/>non habentem, qui fe in id quod vult transformat. Dei
+<pb n="19.253"/>
+<lb/>vero cognitionem habemus ex pulchritudine et magnitudine
+<lb/>operum illius quae conspiciuntur: nihil enim temere
+<lb/>aut caio pulchrum oritur, fed opificis sapientis opera:
+<lb/>quamobrem Euripides dixit: stellae in coelo funt ornatus
+<lb/>opificis sapientis. . Devenimus autem in hujusmodi coguitionem
+<lb/>cum ex aliis stellis, tum praecipue ex side et luna,
+<lb/>quae subterraneum iter emensa eodem colore, eadem figura,
+<lb/>eadem magnitudine oriuntur eodemque et tempora et loca
+<lb/>fervunt.</p>
+<p>De heroibus et daemonibus.</p>
+<p rend="indent">Thales, Plato, Pythagoras et cum his Stoici sentiunt
+<lb/>eos esse similes ac Daemones quidem substantias naturales,
+<lb/>Heroas autem animas e corporibus separatas et harum
+<lb/>bonas esse, quae hominum fuerint optime vitam traducentium:
+<lb/>malas autem male viventium. Epicurus tam Daemenas
+<lb/>quam Heroas non concedit.
+</p>
+<pb n="19.254"/>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Multam quidem possumus invenire apud priores philosuphos
+<lb/>de anima ortam controversiam, verumtamen ne
+<lb/>introductionis modum excedere videamur, cum quae de
+<lb/>ea ab omnibus dicta Iun t enarraverimus, quaecunque ab
+<lb/>illustrissimis viris de ea dicta fuisse arbitramur, breviter
+<lb/>commemorare conemur. Animam igitur existimant aliqui
+<lb/>spiritum esse toti corpori annexum, non tamen aequabiliter,
+<lb/>fed. uni membro magis, alteri minus : hoc Asclepiadis tecta
+<lb/>tores dicunt. Eandem alii facultatem qua vivimus arbitrantur.
+<lb/>Quidam principium motus omnium quae fiunt
+<lb/>et fonti Epicurea autem aerem illum quem respirando
+<lb/>attrahimus animam esse credidit. Cujus substantiam alii
+<lb/>incorpoream dixerunt, lu.t Plato, alii corpora movere, ut
+<lb/>zeno, quem foculi Stoici, nam spiritum ipsam esse opinati
+<lb/>sunt. Item mortalem alii, ut Epicurus et Dicaearchus.
+<pb n="19.255"/>
+<lb/>Alii immortalem, ut Plato et Stoici, ipfam existimarunt:
+<lb/>quamquam Plato tuo fe motu semper moventem nec nuquam
+<lb/>interituram ipsam asseveret, sicini contra tamdiu
+<lb/>animam immortalem durare quoad mundus dissolvatur,
+<lb/>tunc enim ipsimi quoque corrumpi. Rursus alii sic an-nexas
+<lb/>corporibus animas ajunt, ut ex eis ipsas- sponte natas
+<lb/>dicant: hocque in causa esse, ut corporis voluptatibus
+<lb/>tantopere delectentur. Alii vero animam volunt der
+<lb/>particulam quandam nec ullum exstare elementum, quod
+<lb/>otiosum sit quodque in compositarum rerum rationem non
+<lb/>veniat. Peccare vero animas inquiunt. Alii quia liberae
+<lb/>cum sint tuopte arbitrio ad malum ferantur: nam cum
+<lb/>voluptates appetant ut eas assequantur, vitia persequi flagitiosnm
+<lb/>esse .non judicant. Alii cuncta fato evenire putantus
+<lb/>animam quoque nulla electione habita delinquere
+<lb/>posse concedunt. Poenas dare sceleratas animas ubi a corporibus
+<lb/>iolutae fuerint existimat Plato: bonorum autem
+<pb n="19.256"/>
+<lb/>ad deum post mortem reverti et in astris habiture; Stoici
+<lb/>nihil horum admittunt, fed postquam, ajunt, scjuuctae a
+<lb/>corporibus fuerint quae intemperanter vixerunt et adhuc
+<lb/>voluptatum avidae funi, corpus aliud iterum subeunti, desideris
+<lb/>voluptatum illectae, quas corporis ministerio assequuntur:
+<lb/>id autem eas tamdiu facere; quoad virtutem
+<lb/>edoctae in cognitionem veri boni deveniant ac meliorem
+<lb/>vitam traducant: a qua statim ubi statutae et jam ab impedimentis
+<lb/>corporis liberae fuerint , ipsis per fefemet interlucentibus
+<lb/>honesti ac decoris ideis uniuntur, a quibus
+<lb/>sic affectae nunquam postea divelluntur. Partes animae
+<lb/>Plato tres fecit, rationem, iracundiam et concupiscentiam.
+<lb/>Aristoteles quartam addidit naturalem et vegetantem. Stoici
+<lb/>et ipsi partes animae quatuor enumerant, ratiocinandi,
+<lb/>fentiendi, loquendi et gignendi facultatem. Alii simplicem
+<lb/>et partibus carere animam arbitrantur: nihil enim
+<lb/>aliud esse quam prudentiam, quam tum mentem tum intellectum
+<pb n="19.257"/>
+<lb/>appellant. Menemachus unus ex sectatoribus
+<lb/>Stoicae disciplinae ubi suspicionem addidit, loquendi. et
+<lb/>gignendi facultatem ademit eas sentiendi facultatibus attribuens.
+<lb/>Nonnulli demum in tentum et rationem animam
+<lb/>diviserunt, quibus aliquis merito potius assentiri poterit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p>
+<lb/> De minimis.</p>
+<p rend="indent">Ante quatuor elementa nonnulli frusta brevissima
+<lb/>sive ramenta quaedam ejusdem rationis similium partium
+<lb/>ceu elementorum elementa exstitisse dicunt. Heraclitus
+<lb/>quoque pustula quaedam tum minima cum individua
+<lb/>cogitatione tantum apprehensibilis inducit.</p>
+<p>De coloribus.</p>
+<p rend="indent">Color est qualitas corporis visibilis. Pythagorici eosurem
+<lb/>appellant superficiem corporis. Empedocles quod
+<pb n="19.258"/>
+<lb/>meatibus oculorum quadraret. Plato flammam e corporibus
+<lb/>prodeuntem, cujus partes oculis responderent. zeno
+<lb/>Stoicus colores esse desinit primos materiae habitus. Qui
+<lb/>Pythagorae successerunt philosophi colorum genera fecerunt
+<lb/>album, nigrum ; rubrum et pallidum. Reliquas autem
+<lb/>colorum differentias ex diversa elementorum commixtione
+<lb/>oriri: animalium vero etiam ex locorum et aeris
+<lb/>diversitate consurgere.</p>
+<p>De mixtione.</p>
+<p rend="indent">Prisci mixtionem elementorum fieri dixerunt ex allocatione
+<lb/>vel temperamento. t naxagoras et Democritus
+<lb/>ex eorum congressu. Empedocles e minimis corpusculis
+<lb/>elementa componi dicit. Plato. tria tantum corpora inter
+<lb/>fe mutari dicit, ignem , aerem et aquam: terram namque
+<lb/>Iosum immutabilem esse.</p>
+<p>De vacuo.</p>
+<p rend="indent">Pythagorici et physici omnes ad Platonem usque in
+<lb/>mundo vacuum esse asserunt. Empedocles intra mundum
+<pb n="19.259"/>
+<lb/>inquit, vacua res nulla nec extra esu Leucippus, Democritas
+<lb/>et Epicurus atomos quidem multitudine, vacuum
+<lb/>autem magnitudine infinitum dicunt. Stoici intra mundum
+<lb/>vacui quidem nihil esse putant, extra vero infinitum.
+<lb/>Aristoteles tantum vacui solummodo extra mundum esse,
+<lb/>quantum ad respirationem mundi faciat: mundum enim,
+<lb/>igneus cum sit, eventilatione indigere.</p>
+<p>ne loco et receptaculo.</p>
+<p rend="indent">Stoici et Epicurei locum a -receptaculo differre ceusunt:
+<lb/>ac locum quidem esse quod corpus totum tangit ut
+<lb/>superstciss ; receptaculum autem quod parte siclum ut in
+<lb/>vests vinariis contingit.</p>
+<p>De tempore.</p>
+<p rend="indent">Pythagoras tempus esse arbitratur ambientis nos coeli
+<lb/>machinam. Plato mobilem aeternitatis imaginem vel intervallum
+<lb/>motus mundi. Eratosthenes fotis iter.
+<pb n="19.260"/>
+<lb/>De temporis essentia.</p>
+<p rend="indent">Temporis autem essentiam Stoici solis mutum existimant.
+<lb/>Plato iter ipsum solis. Ac ceteri quidem ignitum
+<lb/>tempus arbitrantur: Plato vult genitum ex sensus nostri
+<lb/>cogitatione.</p>
+<p rend="indent">De ortu et interitu.</p>
+<p rend="indent">Parmenides , Melissea et zeno Eleata ideo nec generari
+<lb/>nec corrumpi quidquam asseruerunt , quod universum
+<lb/>immobile ponunt. Empedocles, Epicurus et ceteri
+<lb/>quotquot e minutis corpusculis mundum exstruunt, concretionem
+<lb/>et secretionem introducunt. Hi autem neque
+<lb/>orici quidquam neque interire proprie dicunt: nam cumex
+<lb/>congerie, non alteratione gignit es velint, non qnalitatis
+<lb/>sed quantitatis motum .ortus et interitus momentum
+<lb/>praecedere faciunt. Pythagoras et alii quicunque materiam
+<lb/>pati supponunt, ortum et interitum proprie adstruunt cum
+<lb/>elementorum. qualitatibus immutatis nasci res et dissolvi.
+<pb n="19.261"/>
+<lb/>De necesptate.</p>
+<p rend="indent">Thales validissimam esse necessitatem dixit, cum universio
+<lb/>dominetur. Pythagoras autem existimat necessitatem
+<lb/>mundo circumsnndi. Parmenides vero et Democritus omnia
+<lb/>per necessitatem dixerunt evenire, esse vero ipfam fatum,
+<lb/>justitiam, providentiam. Plato vero quaedam in providentiam,
+<lb/>quaedam in necessitatem referri.</p>
+<p>Quae essentia nece/saatts.</p>
+<p rend="indent">Empedocles existimat necessitatem esse causam utentem
+<lb/>principiis et elementis. Democritus autem resistentiam
+<lb/>, motum et impetum materiae. Plato vero nonnunquam
+<lb/>materiam, nonnunquam habitum ejus qui circa ipsam
+<lb/>operatur.</p>
+<p rend="indent">,<space type="tab">    </space> De fati essentia.</p>
+<p rend="indent">Heraclilus essentiam fati rationem esse omnia pervadentem
+<lb/>dicit. Fatum vero est corpus aethereum, femen
+<pb n="19.262"/>
+<lb/>generationis omnium. Plato rationem. aeternam et legem
+<lb/>aeternam naturae totius universi. Chrysippus vim fpiritalem
+<lb/>et ordinem omnia regentem. Et rursus in definilienibus
+<lb/>dicit fatum esse id per quod orta nata fiunt , na- .
+<lb/>fcentia oriuntur, oritura generabuntur. Alii vero Stoici
+<lb/>feriem. Posidouius autem tertium a Iove. Primum enim
+<lb/>Iovem esse, fecundum naturam, tertium fatum.</p>
+<p>De surtuna.</p>
+<p rend="indent">Plato fortunam definit causam per accidens et id quod
+<lb/>inopinato loquitur in iis, quae sicut. cum electione. Arifideles
+<lb/>causam per accidens in iis, quae fecundum appelitum
+<lb/>fiunt finis alienius gratia, incertam eam at instabis
+<lb/>lena. Differre vero fortunam a cafu ex eo quod quae
+<lb/>fortuna fiunt, cafu quoque fiant cum fortuna siclum in
+<lb/>nostris actionibus vertetur: quae autem fiunt natu non
+<lb/>omnia fortuna, in his enim catus consistit quae ad actiones
+<lb/>nostras non attinent; et fortunam fotum esse ratione
+<lb/>praeditorum ; casum vero in ratione praeditis et brutis
+<pb n="19.263"/>
+<lb/>animantibus et corporibus vita carentibus. Epicurus inconstautem
+<lb/>et ipse cautam modis, temporibus et personis
+<lb/>fortunam dicit. Fortunam Anaxagoras et Stoici cautam
+<lb/>quam humanus difcurfus assequi non possit: atque alia
+<lb/>quidem necessitate, alia f ato, alia electione, alia fortuna,
+<lb/>alia caio fieri.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p>
+<lb/> De mundo.</p>
+<p rend="indent">Pythagoras primus hanc rerum omnium congeriem
+<lb/>mundum nominavit propter ordinem qui est in ipfo. Thales
+<lb/>unum esse mundum. Democritus et Epicurus et hujus
+<lb/>magister Leucippus infinitos mundos in infinito vacuo.
+<lb/>Empedocles salis cursum esse circumscriptionem terminorum
+<lb/>mundi. Stoici differre universum et totum: univerfum
+<lb/>enim esse cum vacuo infinitum, adeo ut totum et
+<lb/>univertum non sint idem.
+<pb n="19.264"/>
+<lb/>De stgura mundi.</p>
+<p rend="indent">Stoici rotunda figura mundum constare dicunt , alii
+<lb/>cono, alii ovo similem malunt. Epicurus suscipere harum
+<lb/>singulas. . .</p>
+<p>An mundus sit animatus ?</p>
+<p rend="indent">Ceteri quidem omnes mundum esse animatum et prudentia
+<lb/>gubernari. Democritus vero et Epicurus ac quotquot
+<lb/>atomos et vacuum introducunt horum neutrum concedunt,
+<lb/>fed natura quadam bruta et rationis carente administrari.
+<lb/>Aristoteles neque animatum esse totum per
+<lb/>omnes partes dicit, neque sensu neque ratione neque providentia
+<lb/>praeditum esse mundum existimat; coelestia enim
+<lb/>corpora haec omnia habere , orbes enim continere animatum
+<lb/>et vivens. Terrestria vero horum nihil accipere et
+<lb/>ordinem per accidens iis non per te aut a causa antecedente
+<lb/>contingere.<space type="tab">    </space>.
+<pb n="19.265"/>
+<lb/>An mundus sit incorruptibilis P</p>
+<p rend="indent">Pythagoras et Plato et omnes qui eorum locuti stant
+<lb/>opiniones, existimare fe mundum a deo factum dixerunt
+<lb/>et esse natura fua corruptibilem , sensibilem, providentia
+<lb/>tamen opificis non interiturum. Epicurea autem et Stoici
+<lb/>mundum corruptibilem concedunt quoniam ortus fuit, ut
+<lb/>animal , ut planta. Aristoteles autem mundi partem fublunarem
+<lb/>et passivam et corruptibilem esse et in qua terrestria
+<lb/>corrumpuntur.</p>
+<p>Unde mundus alatur?</p>
+<p rend="indent">Aristoteles putat ipfum mundum si nutriatur interiturum.
+<lb/>Horum vero neutrum mundo contingere. Plato
+<lb/>dicit iis nutriri quae corrumpuntur secundum mutationem.
+<lb/>Philolaus Pythagoricus duplicem esse interitum existitnavit,
+<lb/>unum igne coelesti defluente, alterum aqua lunari
+<lb/>circa stellas superfusum. Atque horum exhalationes esse
+<lb/>alimentum mundi.
+<pb n="19.266"/>
+<lb/>A quo elemento coepti detis mundum facere?</p>
+<p rend="indent">Physici a terra exordium sumpsisse ipsam dicunt tanquam
+<lb/>a centro. Pytbagoras autem ab igne. Empedocles
+<lb/>dicit primum fuisse fecretum aetherem , fecundo ignem
+<lb/>propter quem terra distincta est; postea aquam ex qua
+<lb/>cum in vapores et exhalationes soluta fuerit, generatur
+<lb/>aer; generari autem coelum ex aere, felem vero ex igne.
+<lb/>Plato vero genitum fuisse mundum si generatur ad mundi
+<lb/>intelligibilis exemplar; visibilis autem mundi prius quidem
+<lb/>animam, postea vero speciem corporis. Pytbagoras
+<lb/>corpora solidorum existimavit quae appellat mathematica,
+<lb/>ex cubo enim terram factam fuisse dicit, ignem ex pyramide,
+<lb/>ex octoedra aerem, ex icofaedra aquam, ex dodecaedra
+<lb/>universi sphaeram. Plato autem hac in parte Pythagorae
+<lb/>consentit.
+<pb n="19.267"/>
+<lb/>De ordine mundi.</p>
+<p rend="indent">Parmenides multas corollas esse inter fe complicatas
+<lb/>unam ex raro, aliam ex flento, eas vero quae in medio
+<lb/>sinit ex opaco et lucido mixtas : quae vero ceteras continet
+<lb/>instar muri solidam esse. Leucippus et Democritus
+<lb/>tunicam et membranam quandam mundo circumponunt.
+<lb/>Epicurus quorundam mundorum extremitates raras esse,
+<lb/>quorundam vero densas et horum quasdam mobiles, quasdam
+<lb/>autem immobiles. Plato supremo in loco aethera
+<lb/>collocat, tum ignem, postea aerem, deinde aquam, ultimo
+<lb/>terram; interdum tamen igni conjungit aethera. Aristotelas
+<lb/>aethera primum collocat, quem immutabilem et quintum
+<lb/>corpus facit, ab eo commutabilia disponit, ignem,
+<lb/>aerem, aquam et infimo loco terram. His autem ita metum
+<lb/>tribuit coelis circularem, iis vero quae intra coelos
+<lb/>sunt levibus sursum , gravibus deorsum. Empedocles nec
+<lb/>definita nec eadem loca semper habere senfit elementa:
+<lb/>fed in alterius locum omnia succedere.
+<pb n="19.268"/>
+<lb/>Quae causa inclinationis mundi?</p>
+<p rend="indent">Dlogenes et Anaxagoras post mundi constitutionem
+<lb/>et animalium ex terra generationem sponte sua dicuntmundum
+<lb/>ad austrum inclinasse fortasse providentia divina,
+<lb/>ut quaedam ejus pars sit inhabitabilis, quaedam habitabis
+<lb/>lis propter frigus et calorem. Empedocles aere vi foliis .
+<lb/>agitato ursas inclinatas et boreales plagas in altum sublatas:
+<lb/>australes vero depressas atque ita totum mundum
+<lb/>inclinasse ait,.</p>
+<p>De eo quod est extra mundum et an sit vacuum.</p>
+<p rend="indent">.. Pythagorici extra mundum vacuum esse dixerunt in
+<lb/>quod. et ex quo respiraret mundus. Stoici vacuum esse
+<lb/>in quod mundus infinitus per conflagrationem resolveretur.
+<lb/>Posidonius infinitum non facit, sed sutum tantum
+<lb/>quantum ad mundi dissolutionem sufficit libro primo de
+<lb/>vacuo. Plato et Aristoteles nec intra mundum nec extra
+<lb/>vacuum ponunt.
+<pb n="19.269"/>
+<lb/>Quaenam sit dextra pars mundi.</p>
+<p rend="indent">Pythagoras et Plato et Aristoteles orientalem partem
+<lb/>esse dextram mundi dixerunt, a qua motus incipit, occidentalem
+<lb/>vero sinistram. Empedocles autem dextram esse
+<lb/>eam, quae circa solstitium aestivum, sinistram vero quae
+<lb/>circa hiemale.</p>
+<p rend="indent"/>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p/>
+<p>De coelo quae sit ejus essentia.</p>
+<p rend="indent">Anaximenes extimam mundi circumferentiam terrenam
+<lb/>esse. Empedocles vero coelum folidum esse putavit
+<lb/>et constare ex aere in morem crystalli ab igne durato et
+<lb/>utroque hemisphaerio ignitam aeriamque naturam continere.
+<lb/>Aristoteles ex quinto corpore igneum esse coelum
+<lb/>ex calore et frigore compactum.</p>
+<p>De divisione coeli.</p>
+<p rend="indent">Tholus, Pythagoras et qui ab iis manarunt, coelum
+<lb/>in quinque circulos dividunt, quos sonas appellant: horum
+<pb n="19.270"/>
+<lb/>arcticum unum appellari, qui nobis semper apparet, alium
+<lb/>tropicum aestivum, alium tropicum hiemalem, alium meridianum
+<lb/>, alium antarcticum, qui semper latet: obliquum
+<lb/>vero circulum quem sodiacum appellant, tribus mediis
+<lb/>substerni. Fertur Pythagoras obliquitatem hanc sodiaci
+<lb/>circuli primus excogitasse, quam ut proprium iuventum
+<lb/>sibi arrogat oenopides Chius.</p>
+<p/>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p/>
+<p>De stellarum essentia.</p>
+<p rend="indent">Thales e terra quidem constare stellas existimat, igneas
+<lb/>tamen esse. . E mp edones igneas fotum. Anaxagoras autem
+<lb/>aethera circumfusum acrem inflammatum existimavit
+<lb/>ac circumvolutionis impetu lapides e terra subripuisse
+<lb/>ipfosque inflammatos fieri stellas. Diogenes dicit stellas
+<lb/>esse pumiceas easque putat esse mundi exspirationem.
+<lb/>Plato vero stellas rnajorr. ex parte igneas esse putat, adhaerentes
+<pb n="19.271"/>
+<lb/>tamen aliis elementis instar glutinis. Xenophanes
+<lb/>e nubibus accensis constare stellas arbitratur easque
+<lb/>singulis diebus restingui, noctu vero rutilis accendi
+<lb/>putet quemadmodum carbones. ortum enim et occasum
+<lb/>acceusiones et restructiones esse. Heraclides autem et
+<lb/>Pythagorici unamquamque stellam mundum esse putant
+<lb/>coelum et terram ambientem in aere infinito. Has autem
+<lb/>opiniones in quibusdam hymnis orphei dicunt haberi,
+<lb/>qui unamquamque stellam mundum faciunt: horum nihil
+<lb/>inficiatur Epicurus, cum sint similia his quae contingunt.</p>
+<p>De sigura stellarum.</p>
+<p rend="indent">Stoici stellas rotundas existimant ut et mundum et
+<lb/>folem et lunam. Cleanthes coni figura. Anaximenes tanquam
+<lb/>clavos coelo crystallino- adactos. Quidam vero putant
+<lb/>stellas esse laminas igneas quemadmodum animalia
+<lb/>depicta.
+<pb n="19.272"/>
+<lb/>De ordine stellarum.</p>
+<p rend="indent">Xenophanes fecundum superficiem putat stellas moveri.
+<lb/>Democritus fixas primas esse , deinde post nitas planetas,
+<lb/>in quibus fui. et luna. Plato post fixas Saturnum dicit
+<lb/>primum apparere, deinde Iovem, postea Martem, quartam
+<lb/>Luciferum stellam Veneris, quintam stellam Mercurii, fextam
+<lb/>solis , septimam lunae. Mathematicorum quidam Platonem
+<lb/>sequuntur, quidam vero salem in medio horula
+<lb/>constituunt. Anaximander et Metrodorus Chius atque
+<lb/>Crates supremum locum foli deferunt, proximum lunae ;
+<lb/>fissi his vero fixa et vaga sidera collocant.</p>
+<p>ne motu stellarum.</p>
+<p rend="indent">Auaxagoras et Democritus et Cleanthes ah ortu ad
+<lb/>occatum ferri stellas existimant: Alcmaeou et mathematici
+<pb n="19.273"/>
+<lb/>ex stellis planetas ab occata ad ortum moveri. Anaximander
+<lb/>vehi stellas existimat ab iis circulis et orbibus
+<lb/>quibus instant. Anaximenes eodem pacto sub terra quo
+<lb/>tupra moveri. Plato et mathematici folem, Venerem et
+<lb/>Mercurium eodem modo moverim</p>
+<p>unde illuminentur stellae.</p>
+<p rend="indent">Metrodorus omnes stellas fixas lumen a fele accipere
+<lb/>putat. Heraclitus et Stoici nutriri stellas putant .vaporibus
+<lb/>sursum elevatis. Aristoteles non indigere nutrimento
+<lb/>coelestia dicit, aeterna cum sint et corrumpi nequeant.
+<lb/>Plato et Stoici ut mundo sic stellas a seipsis nutriri sentiti</p>
+<p>De Castore et Polluce.</p>
+<p rend="indent">Xenophanes stellas quae supra apparent nubem esse
+<lb/>dicit, quae certo quodam motu agitata resplendet. Mea trodorus
+<pb n="19.274"/>
+<lb/>existimat esse sulcationem ab oculis videntium
+<lb/>propter metum et consternationem ortam.</p>
+<p>De stellarum significatione.</p>
+<p rend="indent">Plato fidem, lunam et alias stellas tam vagas quam
+<lb/>fixas occasu et ortu tuo tempestates quae aestate et bruma
+<lb/>contingunt , significare putat. Anaximenes non ex aliis,
+<lb/>fed tantum ex sole. Eudoxus et Aratus generatim ex
+<lb/>stellis, dum dicit,</p>
+<p>Jpsu haec altitonans in celsa inserit olympo,
+<lb/>Et totum prudens distinxit signa per annum
+<lb/>Eximia, ut rebus de certis astra monerent.</p>
+<p/>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p>
+<lb/> De natura salis.</p>
+<p rend="indent">Anaximander orbem ejus esse putat octies vigesies
+<lb/>terra majorem similemque rotae plaustri canthum habentem
+<pb n="19.275"/>
+<lb/>, concavum et igne plenum , ac quadam ex parte
+<lb/>ignem ad nos per orificium quasi per canalem emitti et
+<lb/>boe esse selem. Xenophanes e siccis Saporibus igniculos
+<lb/>quosdam convenire^ dicit, qui in unum corpus redacti
+<lb/>solem constituant vel felem accentam nubem. Stoici incendium
+<lb/>mente praeditum ex mari genitum. Plato ex
+<lb/>plurimo igne. Anaxagoras et Democritus et Metrodorus
+<lb/>massam aut lapidem igne candentem. Aristoteles globum
+<lb/>e quinto corpore. Pullulans Pythagoricus corpus vitro.
+<lb/>simile quod lucem acceptam ab igne mundi eandem ad
+<lb/>nos remittat: adeo ut tria. in sule distinguantur, ignis qui
+<lb/>est in coelo, corpus quod ab ipfo igneo -perinde ac tpeculum
+<lb/>quoddam illustrari et ignescere potest: et tertium
+<lb/>radium a speculo ad uos reflexum. Nam et hanc lucem
+<lb/>salem appellamus tanquam simulacrum simulacri. Empedocles
+<lb/>duos finies existimavit, unum praecipuum et. primum,
+<lb/>ignem qui est in opposito et hemisphaerio .mundi
+<lb/>quod replet quique siemper ex adversi, tuae imaginis lucedit;
+<pb n="19.276"/>
+<lb/>alterum eum quem spectamus solem qui repercussio
+<lb/>est luminis ejus, quod est in altera dimidia mundi parte
+<lb/>repleta aere, qui calorem habet admixtum et hunc splendorem
+<lb/>a rotunditate terrae reflecti in solem qui est crystatio
+<lb/>similis et cum motu ignei elementi circumtrahi. Et
+<lb/>ut multa breviter complectar, sol est repercussio ignis qui
+<lb/>circa terram movetur. Epicnrus molem e terra compactam
+<lb/>pumici fpongiaeve similem putat, quam ignis ejus
+<lb/>foramina permeans accendit. Heraclitus fulgorem qui in
+<lb/>oriente accenditur, in occidente exstinguitur.</p>
+<p>De magnitudine solis.</p>
+<p rend="indent">Anaximander solem quidem terrae putat aequalem,
+<lb/>orbem autem a quo respirat et in quo fertur septies vigestes
+<lb/>terra majorem. Anaxagoras multoties Peloponneso
+<lb/>majorem. Heraclitus quanta est humani pedis longitudo.
+<lb/>Epicnrus talem esse qualis apparet ac paulo aut majorem
+<lb/>aut minorem esse.
+<pb n="19.277"/>
+<lb/>De figura falis.</p>
+<p rend="indent">Anaximenes latum esse solem ut folium existimatu
+<lb/>Heraclitus scaphae instar fubeurvum. Stoici globosum ut
+<lb/>coelum est et stellae. Epicurus ipium posse his omnibus
+<lb/>esse figuris admittit.</p>
+<p>De conversionibus salis.</p>
+<p rend="indent">Anaximenes ab aere densato et obnitenti stellas exifirmati
+<lb/>impelli. Anaxagoras ab aeris qui feptentrioni fubest
+<lb/>densatione , quem sini compingens reddit valentiorem. Empedocles
+<lb/>ab orbe qui ipsum continet et Tropicis impediri,
+<lb/>ne recta ad polos progrediatur. Diogenes .quia tol exstingueretur
+<lb/>a frigore calorem oppugnante. Stoici juxta intervallum
+<lb/>alimenti fubjecti solem progredi. oceanum autem
+<lb/>et cetera maria alimentum soli ministrare eam quam
+<lb/>in fe habent humiditatem et terream exhalationem. Plato,
+<pb n="19.278"/>
+<lb/>Pythagoras, Aristoteles ob zodiaci circuli obliquitatem,
+<lb/>qua fol oblique meare cogitur et fecundum. circulos tropicos.
+<lb/>Haec autem omnia sphaera demonstrat.</p>
+<p>De felis desecta scu eclipsi. .</p>
+<p rend="indent">Thales primus dixit felem deficere propter lunam,
+<lb/>quae tota terrestris est , ei ad perpendiculum suppositam
+<lb/>idque ex supposito soli speculo facile discerni. Anaxitnander
+<lb/>clausio foramine per quod ignis exspirat. Heraclitus
+<lb/>conversione partis convexae furium-, gibbae vero deorsum
+<lb/>ad nostrum visium obvertatur. Xenophanes per exstinctionem
+<lb/>solis eclipsim. fieri; rutilis autem vertus orientem
+<lb/>alterum accendi. Narrat etiam felem aliquando integro
+<lb/>mente defecisse et curtus alio tempore sic ex toto defecisse,
+<lb/>ut dies -non appareret. Aristarchus propter terram
+<lb/>orbem fotis dixit inumbrati. Xenophanes multos este foles
+<lb/>, multas lunas fecundum terrae climata, segmenta ac
+<lb/>sonas: quodam autem tempore fotis difcum incidere in
+<pb n="19.279"/>
+<lb/>quandam terrae portionem a nobis non habitatam et sic
+<lb/>tanquam in vacuum delatum deliquium occidere. Idem
+<lb/>siolem in infinitum progredi, nobis autem videri quod
+<lb/>rotetur ob distantiam. Sunt qui nubium condensationem
+<lb/>cantentur, quae ritu non cernente disco stolis obducantur.
+<lb/>Aristarchus solem fixis stellis adjunxit, lunam autem tuo.
+<lb/>veri circum solis orbem et tuis inclinationibus umbram
+<lb/>difco inferre.</p>
+<p/>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p>
+<lb/> De lunae natura.</p>
+<p rend="indent">Anaximander decies novies lunae orbem terra majorem
+<lb/>existimat. Xenophanes autem esse nubem constipatam.
+<lb/>Stoici mixtam ex igne et terra lunam existimant. Plato
+<lb/>ex multo igne. Anaxagoras et Democritus firmamentum
+<lb/>igneum, habens in feipfo campos, montes et valles. Hecaelitus
+<lb/>terram caliginosa nube contentam. Pythagoras
+<lb/>corpus lunae igneanr sequi naturam.
+<pb n="19.280"/>
+<lb/>De magnitudine lunae.</p>
+<p rend="indent">Stoici lunam putant terra esse majorem ut et felem.
+<lb/>Parmenides aequalem loli et ab ipfo illuminari.</p>
+<p>fle sigura lunae.</p>
+<p rend="indent">Stoici rotundam esse lunam ut Polum existimant.
+<lb/>Heraclitus scaphae , Empedocles illico similem, alii instar
+<lb/>cylindri. Figuram autem septem modis assumit luna ;
+<lb/>quando enim nascitur videtur apparere cornuta; tum fierniplena;
+<lb/>mox plusquam dimidia; pestes plena. Rursus
+<lb/>cum revertitur statim apparet gibbosa; mox semiplena; et
+<lb/>iterum cornuta. . Postea- latet donec omnino renovetur.
+<lb/>De ea multa dicuntur. Quidam hoc modo figurari dicunt,
+<lb/>nimirum umbra terrae primum secundum aliquam siti
+<lb/>ipsius partem , aliquando fecundum fe totam confugiente
+<lb/>luna in centrum terrae.
+<pb n="19.281"/>
+<lb/>De illuminatione lunae.</p>
+<p rend="indent">Anaximander ipsam peculiarem lucem habere dicit,
+<lb/>rariorem tamen. Antipbo proprio lunam splendore fuigere
+<lb/>docet : quod si paulatim abscondatur , id illi contingere
+<lb/>telis vicinitate: sic enim a natura comparatum ut
+<lb/>majoris accessu lux minor obruatur; quod etiam reliquis
+<lb/>stellis evenit. Thales et qui iptum sequuti sunt a sole .
+<lb/>lunam dixerunt illuminari. Heraclitus idem lunae quod
+<lb/>soli contingere defendit. Stellae enim quoniam concavae
+<lb/>sunt et vapores excipiunt lucere videntur, ac fui quidem
+<lb/>splendidius cum in puriori aere , luna autem obscurari
+<lb/>videtur quod in aere . turbidior: seratur.</p>
+<p>De lunae defectu seu eclipsi.</p>
+<p rend="indent">Anaximander coniecit lunam deficere qunm osculum
+<lb/>quod circum rotam est obturatur, Berossus ex obversione
+<lb/>lu nos facta restinctae partis. Heraclitus ex gibbae pertis
+<pb n="19.282"/>
+<lb/>conversione. Pythagoreorum aliqui per reflexionem et
+<lb/>obturationem terrae tum nostrae tum oppositae. Plato
+<lb/>autem, Aristoteles, Stoici et mathematici menstruales occuli
+<lb/>at tones ipsam efficere, quando cum siste congreditur
+<lb/>et ejus radiis obruitur ac undique illustratur, deficere
+<lb/>vero quando obumbratur a terra utriusque sideris in medio
+<lb/>constituta aut potius cum ejus illuminationi afficitur
+<lb/>a terra,</p>
+<p>Qui luna terrestris appareat.</p>
+<p rend="indent">Lunam ideo terrestrem existimant Pythagorici, quod
+<lb/>ipsam incolant proceriores arbores et animalia majora atque
+<lb/>praestantiora quam hic apud nos. Esse vero decies
+<lb/>quinquies quae circa ipfam fiunt animalia illa nostris rohustiora
+<lb/>nihilque excremeuti communis emittentia ac tanto
+<lb/>diem esse nostro longiorem. Anaxagoras. ejus inaequalitatem
+<lb/>fieri a concretione frigidi et terrestris quae simul
+<lb/>miscentur, misceri autem igneo caliginosum stellamque lucis
+<pb n="19.283"/>
+<lb/>ementitiae lunam ideo nuncupari. Stoici quoque negant
+<lb/>propter diversas facies ejus substantiae compagem esse
+<lb/>insolubilem.</p>
+<p>De lunae distantia.</p>
+<p rend="indent">Empedocles plus duplo lunam dissere putat a fele
+<lb/>quam a terra. Mathematici decies octies. Eratosthenes
+<lb/>Idem a terra distare quadringentis et octo myriadihus. Luuam
+<lb/>vero a terra distare septuaginta octo millibus stadiorum.</p>
+<p/>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+
+
+<p/>
+<p>De anno quantus cujusque planetarum sit magnus annus.</p>
+<p rend="indent">Annus Saturni annorum est triginta ; Iovis duodecim;
+<lb/>Martis duorum ; solis mensium duodecim ; Veneris et Mercurii-
+<lb/>totidem , nam aequales his curius , lunae triginta
+<lb/>dicium , tot enim diebus mensis absolvitur ab. apparitione
+<pb n="19.284"/>
+<lb/>lunae ad ejns cum sole congressum. Annum quem magnum
+<lb/>appellant quidam octavo quoque anno compleri dieunt,
+<lb/>alii decimo nono, quidam sexagesimo primo. Heraalitus
+<lb/>decem et octo millibus annorum solarium. Dionenes
+<lb/>trecentis sexaginta quinque annis, tantus quantus est
+<lb/>unus annus Heraclito. Nonnulli . septem millibus septingentis
+<lb/>septuaginta teptem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+
+
+<p>De circulo lacteo.</p>
+<p rend="indent">Circulus lacteus nebulosus lest in aere semper apparens
+<lb/>lacteusque est a suo colore nuncupatus. Pythagoreorutu
+<lb/>aliqui crediderunt ipfum esse stellae cuiusdam incendium
+<lb/>quae suis sedibus excidit et locum per quem circumvoluta
+<lb/>est exussit, eo tempore quo Phaethontis incendinm
+<lb/>per illam viam grassabatur: alii .dicunt ah initio
+<lb/>solem illac iter suum peregisse : quidam volunt hoc eriguam
+<lb/>esse apparitionem plurimi caelestis ignis cujus splendor
+<pb n="19.285"/>
+<lb/>ad coelum reflectitur; id quod arcus coelestis nubes
+<lb/>facere consueverunt. Metrodorus propter transitum tolle,
+<lb/>illum enim esse circulum solis existimat. Parmenides ra-.
+<lb/>rum denso commistum lacteum colorem conficere putat.
+<lb/>Anaxagoras terrae putat umbram esse et aliquam coeli
+<lb/>partem occupare, quia cum sol terrae flabelli non illuminat
+<lb/>omnia. Democritus esse splendorem multarum exignarum
+<lb/>et cohaerentium stellarum te invicem collustrantium.
+<lb/>Aristoteles siccae exhalationis incendium quae jugiter
+<lb/>et abunde succedit ac eodem modo fieri crinitum
+<lb/>ignem infra aerem fissi planetis. Stoici ignis aetherei raritatem
+<lb/>ipfumque superiorem planetis. Posidonius ignis acervum
+<lb/>stella clariorem, splendore vero obscuriorem, densiorem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="18">
+
+
+<p/>
+<p>De cometa, stellis discurrentibus et trabibus.</p>
+<p rend="indent">Pylbagoreorum aliqui cometas dicunt esse stella- quae
+<lb/>non. femper apparent, sied certis quibusdam temporibus
+<pb n="19.286"/>
+<lb/>sina revolutione oriuntur: alii repercussionem vitus nostri
+<lb/>ad efolem similem imaginibus quae in speculis cernuntur.
+<lb/>Anaxagoras et Democritus concursura duarum aut plorium
+<lb/>stellarum fete illustrantium. Aristoteles siccae casialationis
+<lb/>congeriem accenfam. Strato sideris alicujus lucem
+<lb/>densa nube comprehensam , id quod et latentis evenit.
+<lb/>Heraclides Ponticus nubem praealtam illic a luce superna
+<lb/>illuminatam: eandem hic barbatis,^ areis, trabibus, columnis
+<lb/>et id Egenus aliis causam assignat; ut omnes peripate-.
+<lb/>tici qui ex accensis vaporibus species lusce fieri dicunt.
+<lb/>Epigenes vaporem terrae commistum, in. altum elevatum
+<lb/>inique accensum. Boethus ardentis aeris id speciem esse
+<lb/>credidit. Diogenes stellas esse cometas putat. Anaxagoras
+<lb/>quas discurrentes stellas vocant, perinde atque scintillas
+<lb/>ex aethereo igne cadere putat et ideo statim quoque exstingui.
+<lb/>Metrodorus ex foliis radiis violenter in nubem,
+<lb/>ut sagitta solet irruentibus discurrentis stellae speciem
+<pb n="19.287"/>
+<lb/>excitari. Xenophanes id genus omnia nubium- accensarum
+<lb/>constitutiones vel incursiones existimat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="19">
+
+
+<p/>
+<p>De tonitruis, coruscationibus, turbinibus et convolutionibus.</p>
+<p rend="indent">Anaximander a statu subeunle haec omnia fieri putat
+<lb/>, quando inclusus densa nube nititur erumpere qua
+<lb/>parte tenuior est et levior; ipsa ruptio sonum edit, ipsa
+<lb/>autem divulsio juxta nigredinem nubis coruscationem.
+<lb/>Metrodorus cum in nubem densitate compactam flatus irruit,
+<lb/>disruptione focum facit, percussione et divulsione
+<lb/>micat; velocitate autem motus a sule calorem accipiens
+<lb/>fulminat: fulminis autem imbecillitas in turbinem degenerat.
+<lb/>Anaxagoras quando calidum in frigidum incidit,
+<lb/>hoc est cum aetherea pars aereae miscetur, coruscationem
+<lb/>facit; colore vero qui est ad nigredinem nebulosae partis
+<pb n="19.288"/>
+<lb/>fulgur; multitudine et magnitudine lucis fulmen; cum
+<lb/>magis in corpus cogitur ignis vorticem ; cum est nubilisfior,-
+<lb/>turbinem. Stoici nubium concursum tonitru definiunt;
+<lb/>coruscationem earumdem inflammationem attritu excitatam;
+<lb/>fulmen vehementer actae nubis incensionem; turbinem
+<lb/>segniorem. Aristoteles autem haec omnia fieri putat
+<lb/>a siccis exhalationibus , quae . cum inciderint in humida,
+<lb/>conantur erumpere, dum igitur impellunt sicca atque difcindunt
+<lb/>humida, tonitru tonus excitatur, accensione siccitatis
+<lb/>fit fulgur , turbinem et vorticem materiae quam
+<lb/>uterque trahit copia generat, calidior tamen turbo, densior
+<lb/>autem est vortex.<space type="tab">    </space>,</p>
+<p>De nubibus, pluviis, nivibus et grandinibus.</p>
+<p rend="indent">Anaximenes dicit fieri nubes ex aere plurimum denfato ;
+<lb/>et ex ipfo magis coacto exprimi pluviam ; nivem
+<lb/>autem fieri quando aqua furtum elevata condensatur a
+<pb n="19.289"/>
+<lb/>frigore; grandinem vero quum a vento comprehenditur
+<lb/>humido-. Et Metrodorus e vaporibus aquosis furium elatis
+<lb/>-nubes coalescere putat ; -Epicurus ex atomis, rotundam
+<lb/>vero reddi grandinem et pluviam fieri cum A longiori
+<lb/>delatione per - aerem repercuti . contingit.</p>
+<p>.ne iride suu arcu coelesti.</p>
+<p rend="indent">Eorum quae in sublimi fiunt quaedam revera fubsistunt
+<lb/>, ut imber et grando, quaedam sunt merum fubstanriae
+<lb/>simulacrum propriam non habentia subsistentiam . eomodo
+<lb/>quo moveri terra nobis. enavigantibus ridetur. Est
+<lb/>autem ereus coelestis tantum species apparens, de quo siicemos,
+<lb/>si prius docuerimus quomodo ipsum videamus.
+<lb/>Videmus autem lineis vertentis vel curvis .vel fractis, ob-.
+<lb/>scutis et quae fiala ratione spectati possint . incorporeis.
+<lb/>Rectis autem lineis videmus ea quae in aere; tunt quae-.
+<lb/>que per lapides: pellucidos et .per. cornua; omnia enim
+<lb/>haec tenuium sunt partium. Curvis autem llueis alpici-i
+<pb n="19.290"/>
+<lb/>mus quae in aquis, visus enim vi propter crassitiem materrae
+<lb/>ipsius aquae incurvatur, ideo remos in mari fractos
+<lb/>eminus videmus. . -Tertius modus videndi refracta est in
+<lb/>fpeculis. Ejusmodi autem arcus coelestis. est fpecies. oportet
+<lb/>enim concipere humidam exhalationem in nubem mutari,
+<lb/>tum statim roris instar ex ipfa minutas guttas manare:
+<lb/>cum igitur sol in.occafu fuerit,. necesse est enim
+<lb/>omnem arcum coelestem ex adversio fotis apparere, cum
+<lb/>vitus in guttulas incidens refrangitur,- ut arcus caelestis
+<lb/>fiat, non sunt autem guttae fpecies figurae fed colores
+<lb/>ridentur : tres autem colores habet arcus coelestis, primum
+<lb/>puniceum , fecundum vlolaceum feu purpureum ; tertium
+<lb/>caeruleum et viridem.. Nonnunquam igitur puniceum quidam.
+<lb/>splendor foliis occurrens fulgorque integer refractus
+<lb/>rubrum ac puniceum parit colorem: secunda autem pars
+<lb/>turbidior splendore a guttis dissoluto purpureum qui rubri
+<lb/>coloris est imminutio ; cum adhuc turbidior nubes rorem
+<pb n="19.291"/>
+<lb/>fundens in viridem transit. Id exemplis comprobare
+<lb/>licet. Si quis e regione radiorum fotis aquam accipiat et
+<lb/>exfpuat, guttae autem a sule refractionem suscipiant, inveniet
+<lb/>factum arcum coelestem et qui ophthalmia laborant
+<lb/>idem patiuntur, si ad lucernam respiciant. Anaximenes
+<lb/>arcum coelestem fieri putat a splendore solis in nube densa,
+<lb/>crassa et nigra, quod non possit ejus superficiem penetrare
+<lb/>ted in ea consistat. Anaxagoras retractionem lucis solaris
+<lb/>esse a nube crassa, quae semper ex adversis parte solis est,
+<lb/>qui in ea tanquam in speculo apparet : eam quoque canfiam
+<lb/>affert cur duo soles frequenter in ponto contingant.
+<lb/>Metrodorus quando in .nube fel fulget , nubem caeruleam
+<lb/>fieri alt, fulgorem vero rubrum.</p>
+<p>De virgis.</p>
+<p rend="indent">Quae circa virgas et feles oppositos contingunt mixliene
+<lb/>subsistentiae et apparitionis fieri putant, cum nubes
+<pb n="19.292"/>
+<lb/>videantur non tamen proprio colore, sed alieno, qui nisui
+<lb/>exhibetur. In his autem omnibus tam qui secundum natutam
+<lb/>quam qui fecundum adumbrationem similes contiagunt
+<lb/>allectus.</p>
+<p/>
+</div>
+<div type="textpart" subtype="chapter" n="20">
+
+
+<p>De ventis.</p>
+<p rend="indent">Anaximander ventum existimat fluxum aeris esse,
+<lb/>motis aut colliquatis a sole quae in eo sunt partibus tenuissimis
+<lb/>et humidissimis. Stoici dicunt esse spicium aeris
+<lb/>arbitran torque pro locorum diversitate varias appellationes
+<lb/>sortiri , nam et ventum qui ab cenatu spirat favonium
+<lb/>appellarunt, qui ab ortu solis subsolanum, a scptentrione
+<lb/>aquilonem, a meridie austrum. Metrodorus autem
+<lb/>aqueam exhalationem propter solis aestum fieri ventorum
+<lb/>impetum. Etesias autem spirare densato aere, qui ad septentrionem
+<lb/>est et tole a nobis recedente solstitio aestivo.
+<pb n="19.293"/>
+<lb/>De hieme et aestate..</p>
+<p rend="indent">Empedocles et Stoici hiemem fieri- dicunt aere praevalente
+<lb/>sursunrque sua te densitate protrudente: aestatem
+<lb/>autem contra igne superante ac fe deorfum ad nos agente.</p>
+<p rend="indent"/>
+</div>
+<div type="textpart" subtype="chapter" n="21">
+
+
+<p/>
+<p>De terra.</p>
+<p rend="indent">Thales et qui ipsum secuti sunt unicam esse terram
+<lb/>existimant. Pythagoreorum aliqui et hanc esse et aliam
+<lb/>huic oppositam dicunt. . Stoici autem dicunt unam esse
+<lb/>terram- eamque finitam. Metrodorus terram esse fedimentum
+<lb/>et tanquam. faecem aquae putat ut folem aeris.</p>
+<p>De siguris terrae.</p>
+<p rend="indent">Thales et qui eum secuti sunt rotundam terram exrdiruant.
+<lb/>. Anaximander autem terram lapideae columnae
+<pb n="19.294"/>
+<lb/>plantae similem. Anaximenes mensae figuram obtinere,
+<lb/>Leucippus tympani, Democritus difco quidem similem lotitudine,
+<lb/>verum in medio concavam putant.</p>
+<p>De situ terrae.</p>
+<p rend="indent">Qui Thaletem secuti fiunt terram in medio positam
+<lb/>existimant. Xenophanes primam .docuit terram in influitam
+<lb/>profunditatem radices mittere ex inferiori parte,
+<lb/>compactam vero ex aere et igne, Philolaus Pythagoricus
+<lb/>ignem esse in medio, ipsum enim esse quasi focum universi.
+<lb/>Secundum ab ipso terram primae oppositam, tertiam vero
+<lb/>habitabilem ex adversio positam et cfrcumduetam terrae
+<lb/>antipodum. Parmenides primus definivit ea loca quae hahitantur
+<lb/>sub duobus tropicis circulis esse terram.</p>
+<p>De inclinatione terrae.</p>
+<p rend="indent">Leucippus terram in partes austrinas propendere putat
+<lb/>ob raritatem quae inest illis partibus, compacta nimirum
+<pb n="19.295"/>
+<lb/>frigere. septentrionali plaga et opposita combusta.
+<lb/>Democritus quod imbecillior sit pars austrina ambitus, ideo
+<lb/>terram mole auctam eo inclinare. Partes enim feutentrionales
+<lb/>sunt, intemperatae, meridionales vero temperatae.
+<lb/>Unde terra eo deprimitur ubi fructibus abundat et incremento.
+<lb/></p>
+<p>De motu terrae.</p>
+<p rend="indent">Alii quidem immotam manere. terram existimanti PhiIolaus
+<lb/>autem Pythagoricus circulariter moveri circum
+<lb/>ignem per obliquum circulum eo modo quo fol et luna.
+<lb/>Heraclides autem Ponticus et Ecphantus Pythagoricus atobilem
+<lb/>terram non ut tuum locum transiliat, fed rotae in-.
+<lb/>dar circumferatur ab occato ad ortum circa proprium
+<lb/>tuum centrum. Democritus initio terram ob tenuitatem
+<lb/>et levitatem errasse dicit, verum procedente tempore densiorem
+<lb/>et gravlorem factam constitisse.
+<pb n="19.296"/>
+<lb/>De divisione terrae.</p>
+<p rend="indent">Quidam e Pythagoreis. terram eadem proportione
+<lb/>qua totius coeli globus divisus est, dividunt in quinque
+<lb/>circulos , septentrionalem , meridionalem, solstitialem aestivam
+<lb/>et hibernum atque aequinoctialem; horum medius
+<lb/>medium terrae torridae definit, atque habitabilis est sona
+<lb/>illa quae media est inter circulum aestivum et hibernum;
+<lb/>quod sit temperata.</p>
+<p rend="indent">De terrae motibus seu concussionibus.</p>
+<p rend="indent">Phalas et Democritus aquae terrae motus causam tribount.
+<lb/>At Stoici dicunt terrae concussionem esse humidi
+<lb/>vaporis e terra .in aerem .descendentis ac erumpentis. impotum.
+<lb/>Anaximenes terrae siccitatem et humiditatem con-.
+<lb/>- cultionis hujus pansam assignat, quarum illam quidem arflores,
+<lb/>hanc vero pluviae gignant. Anaxagoras terrae motum
+<lb/>fieri excussione aeris, qui quum in densitatem superfieret
+<lb/>terrae irrumpat nec expulsionem pati valeat, ambientem
+<lb/>locum tremore concutit. Aristoteles autem fletum
+<pb n="19.297"/>
+<lb/>motionis qui quum intro fluit, extra exhalat ob ambientem
+<lb/>undique frigoris antiperistasin tortum deorfumque ipsi,
+<lb/>circumstante. Nam calidum superius fieri properat, quum
+<lb/>leve sit , ob idque interceptione facta humidae exhalationis
+<lb/>revulfionibus adacti cunei instar oppositisque convolotionibus
+<lb/>terrae concussiones. creari. Metrodorus nullum
+<lb/>in proprio loco corpus moveri, nisi quis impellat aut actu
+<lb/>detrahat. Quamobrem .erram quoque tua in fede morantem
+<lb/>naturaliter moveri- non posse, quaedam tamen ipsius
+<lb/>loca alio tendere. Parmenides et Democritus terram aequaliter
+<lb/>undique recessisse, aequaliter quoque protendere
+<lb/>dicunt, nec habere cautam, ob quam huc potius quam illuc
+<lb/>vergat proindeque concuti tantum, non moveri. Anaximenes
+<lb/>terrae planitiem aeti insidere; alii vero aquis mnatare
+<lb/>instar foliorum platani.aut asserum, ideoque moveri.
+<lb/>Plato omnis motus fax. circumstantias enumerat; furium,
+<lb/>deorsum, dextrarium, .sinistrorsum, antrorsum, retiarium;
+<pb n="19.298"/>
+<lb/>horum vero nullum posse terrae accidere, quum undique
+<lb/>ima sit maneatque immota. Epicurua fieri posse ut terra
+<lb/>aeris fubjecti qui aquosirs est, crassitie impulsa ac quasi
+<lb/>succussa moveatur, fieri etiam posse ut infimis Inis partibus
+<lb/>cavernosa cum sit, spiritu qui per eam dispergitur, in
+<lb/>cavernas antrorum similes incidente quassetur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="22">
+
+
+<p/>
+<p>De mari et cur falsum sit.</p>
+<p rend="indent">Anaximander esse dicit mare prioris humoris reliquum,
+<lb/>cujus calorem portionem ignis exsiccavit, residuum
+<lb/>vero propter exustionem transmutavit. Anaxagoras cum
+<lb/>humor per initia stagnans a solari circumventione esset
+<lb/>adustus exhalassetque pars pinguis, reliquum salsuginem et
+<lb/>amatorem subiisse. Empedocles terrae sudorem a side
+<pb n="19.299"/>
+<lb/>ustae. Antiphon fusiorem calidi a quo excretum est, quod
+<lb/>supererat humidi elixando in salsuginem conversum, quod
+<lb/>in quovis fit sudore. Metrodorus quia mare sit percole-
+<lb/>tum per terram, ideo crassitiem ejus participasse: sicut
+<lb/>evenit iis quae per cinerem colantur. Platonici. aquae
+<lb/>elementaris partem aliam ex aere frigore coactam exstitisse
+<lb/>dulcem, allatu . quae a terra ex ardore et incendio exhalasset
+<lb/>falsam.</p>
+<p rend="indent">tali stant aestus accedentes et recedentes maris.</p>
+<p rend="indent">Aristoteles plures ventos a fele moveri et ciccbmduci
+<lb/>putat iisque ingruentibus Atlanticum mare intumeIcere
+<lb/>aestusque effici recedentes, cessantibus vero illud retrahi
+<lb/>ac subsidere idque esse aestus accedentes. Pytheas
+<lb/>Massiliensis lunae incremento mare increscere, decremento
+<lb/>vero decrescere. Timaeus plures fluvios descendentes in
+<lb/>Atlanticum mare per montes Celticos cautam esse dicit,
+<pb n="19.300"/>
+<lb/>qui iter suum promoventes maris recessum faciunt, cum
+<lb/>vero desinunt, maris accessum fieri.</p>
+</div>
+<div type="textpart" subtype="chapter" n="23">
+
+
+<p/>
+<p>De incremento Nili.</p>
+<p rend="indent">Thales Etesias ventos adverfus .Aegyptum flantes Nili
+<lb/>aquas attollere putat, quod ostia ipsius quibus fe exonerat
+<lb/>maris obtrusi influxu obturentur. Euthymeues Massiliensis
+<lb/>ab aquis oceani et externi maris inundare Nilum existimali
+<lb/>Anaxagoras a nivibus Aethiopiae; quae per hiemem
+<lb/>densatae aestivo tempore liquantur. Democritus putat
+<lb/>fieri a nivibus in partibus septentrionalibus circa solititium
+<lb/>aestivum liquatis et nubes compacta ex halitibus et
+<lb/>ab Etesiis ventis simul advecta vertus meridiem et Aegyptum
+<lb/>vehementes imbres fundere quibus Nisus redundat.
+<lb/>Herodotus aequaliter moveri hieme et aestate propter fontes
+<pb n="19.301"/>
+<lb/> ; id autum minus apparere hieme, quia hac tempestate
+<lb/>sol vicinior Aegypto aquas in vapores redigit. Ephorus
+<lb/>historicus aestate ait relaxari totam Aegyptum ac quasi.
+<lb/>exudare copiosam aquam ac conferre. ad hoc etiam Arabiam
+<lb/>et Africam ob raritatem et fabulosum solum. Eudoxus
+<lb/>ait sacerdotes. imbribus et oppositis temporum anni
+<lb/>rationibus rem impulere : - quando enim apud nos aestas.
+<lb/>est qui sub aestivo habitamus tropico, tum iis qui e regione
+<lb/>sub hiemali circulo degunt hiemem esse, a quibus
+<lb/>tum exundans aqua prorumpat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="24">
+
+
+<p/>
+<p>De sunsm et sensili.</p>
+<p rend="indent">Sensus secundum Stoicos est objecti sensilis per renfiendi
+<lb/>organum comprehensio seu perceptio. Sensus autem
+<lb/>multis modis dicitur. Nam et habitus et facultas et funetio
+<pb n="19.302"/>
+<lb/>et imaginatio apprehendens sentiendi organo fiunt,
+<lb/>ipsa quoque octava animae facultas a quafent.endivis
+<lb/>manat. Rursus autem sensus organa sunt spiritus intelligentes
+<lb/>a principe facultate ad sensuum organa protensi.
+<lb/>Epicurus particula est sensus, quae tum sentiendi facultas
+<lb/>est tum functio ac proinde effectus, adeout ab ipfo dupliciter
+<lb/>dicatur tentus quidem tacultas et sensilis functio.
+<lb/>Plato saulum enuntiat animae et corporis societatem ad
+<lb/>externa cognoscenda. Facultas quidem -est animae, instrumentum
+<lb/>vero corporis; at ambo per imaginationem externa
+<lb/>apprehendunt. Leucippus et Democritus lentum et
+<lb/>intelligentiam obtingere coniiciunt rerum simulacris toris
+<lb/>occursantibus, neutrum autem horum obire posse cui objecti
+<lb/>simulacrum non occurrat.</p>
+<p>An verus sensus veraque sit imaginatio.</p>
+<p rend="indent">Stoici tensus quidem veros arbitrantur, imaginationum
+<lb/>vero quasdam veras, quasdam falsas. Epicurus sensum
+<pb n="19.303"/>
+<lb/>omnem omnemque imaginationem veram; opinionum alias
+<lb/>veras este, alias falsas ; senfusque uno tantum modo falli
+<lb/>in notionibus, imaginationibus vero duobus; etenim et Iensilium
+<lb/>est imaginatio et eorum quae fusi intelligentiam cadunt.
+<lb/>Empedocles et Heraclides pro meatuum commode-ratione
+<lb/>tensus fieri, quum quoduis sensile tuo sensui acommodetur.
+<lb/></p>
+<p>(suo t sint sensus.</p>
+<p rend="indent">Stoici quinque particulares tentus enumerant, vitum,
+<lb/>auditum, odoratum, gustum et tactum. Aristoteles textum
+<lb/>quidem non profert, fed communem Iculum compositarum
+<lb/>specierum judicem constituit, ad quem singuli sensus sinu.
+<lb/>plices propria cuique vita renuntiant, in quo ab altero ad
+<lb/>alterum fit transitus, quemadmodum .figurae et motus osten-ditur.
+<lb/>Democritus plures tensus , brutis quam diis et saalentibus
+<lb/>inesse censuit...
+<pb n="19.304"/>
+<lb/>Quomodo stat sensus, notio, praenotio et interior ratio.</p>
+<p rend="indent">Quum, inquiunt Stoici, homo procreatur, tum principem
+<lb/>habet partem animae ipsius peraeque ac chartam
+<lb/>descriptioni rerum. delineandae.aptam, in ea enim parte
+<lb/>unaquaeque notionum delineatur; Primus autem delineandi
+<lb/>modus per tensus fit; quum enim aliquid fenfu percipitur,
+<lb/>ut alba tunica, ejus remotae memoriam habemus, at quum
+<lb/>multae memoriae ejusdem formae nobis fiunt, tunc .dicimus
+<lb/>nos habere experientiam ; experientia namque est imaginationum
+<lb/>ejusdem generis multitudo. Notionum autem.
+<lb/>aliae natura eo quo. diximus pacto fiunt, non arte; aliae
+<lb/>vero. jam nostra industria et doctrina parantur atque hae
+<lb/>solae notiones vocantur, illae vero. praenotiones; - At ratio
+<lb/>qua rationales. dicimur, ex praenotionibus. primo septena-,.
+<lb/>rio compleri dicitur. Id enim conceptus -mentis. est phan-sesima
+<lb/>intelligentiae animalis ratione praediti. Phantasma
+<pb n="19.305"/>
+<lb/>namque ubi ad rationalem animam accidit, ratiocinio indiget,
+<lb/>quod nomen a mentis ratiocinatione dictum est,
+<lb/>quapropter reliquis brutis animantibus non accidunt phantafmata;
+<lb/>quae vero et diis et nobis, ipfa quoque phantasmata
+<lb/>tantum sunt, quae vero nobis, ea et phantasmata in
+<lb/>genere sunt et in specie notiones: quemadmodum denarii
+<lb/>ac stateres ipsi quidem per fe sunt denarii et stateres, at
+<lb/>si ad navigii conductionem dentur, tunc iis accedit quod
+<lb/>et denarii sint et naula dicantur.</p>
+<p>De phantasiis seu imaginationibus.</p>
+<p rend="indent">Chrysippus inter fe differre . quatuor haec existimat,
+<lb/>phantasiam, phantastum, phantasticum et phantasma. Enimvero
+<lb/>phantasia imago affectio est quae .in anima nascitur
+<lb/>feqne ipsam ac affectionis caulam ostendit; ut quum album
+<lb/>cernimus quo affectio insidet animae per aspectum oborta
+<lb/>qua affecta anima immutatur. Phantasia nomen duxit- ἐκ
+<lb/>τον φαίνεσθαι, quod sumtam affectionisque causam demaret;
+<lb/>vel ἀπὸ τοδ φωτὸς a lumine, nam sicut lumen seipsum
+<pb n="19.306"/>
+<lb/>ostendit et quae cetera ipsum ambiunt, ita phantafla
+<lb/>et sete et quod ipsam affecit demonstrati Phantasium
+<lb/>autem imaginarium est quod p fiant esiam afficit et album
+<lb/>et frigidum et si quid aliud per sensus reliquos animam
+<lb/>movere queat, id phantasium existit. Phantasticum vero
+<lb/>imaginatio inanis tractus, in anima affectio a nullo phanasto
+<lb/>seu imaginario oblecto producta, ut advertitur in
+<lb/>eo qui cum umbra concertat et vacuo aeri manus inserti
+<lb/>Phantasiae namque aliquid subiicitur, phantastico vero nihil.
+<lb/>Phantasma denique imaginabile est ad quod trahimur
+<lb/>inani tractu phantasticae motionis; atque haec in ruelancholicis
+<lb/>et furentibus ut in oreste et Theoclymeno apud
+<lb/>Homerum contingunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="25">
+
+
+<p/>
+<p>De orsu et quomodo videamus.</p>
+<p rend="indent">Democritus et Epicnrus imaginum intromissione ab
+<lb/>absectis visionem fieri arbitrantur.- Alii radiorum effusione
+<pb n="19.307"/>
+<lb/>qui post intensionem ad objectum depulsam rursum ad
+<lb/>oculos revertuntur. Empedocles simulacris radios adjunxit
+<lb/>et quod producitur ad radios simulacri compositi appultavit.
+<lb/>Hipparchus radios, inquit, utroque ab oculo
+<lb/>porrectos suis extremis tanquam manuum apprehensionibus
+<lb/>externis .corporibus lentum alligantibus ad cernendum
+<lb/>adducere. Plato luminis unius quidem effluentis collustratione
+<lb/>ad intervallum quoddam. in consimilem aerem,
+<lb/>alterius vero a corporibus exurgentis ac per intermedium
+<lb/>aerem qui perfunditur ac facile immutatur fete ad igneos
+<lb/>oculos extendentis visionem dimanare protulit. Atque haec
+<lb/>est quae Platonis collustratio dicitur.</p>
+<p>De speculo et speculi imaginibus.</p>
+<p rend="indent">Empedocles speculi imagines sieri censet per rastrorum
+<lb/>quidem in fupersicle fpeculi. coeuntium eflluentias, quae
+<lb/>efficiuntur ab ignea vi a speculo prodeunte appositumque
+<lb/>aerem in quem radiorum effluentiae feruntur sucum tuaheu
+<pb n="19.308"/>
+<lb/>te. Democritus et Epicurus specui aree inspectiones
+<lb/>fieri contendunt ex simulacrorum substantia quae a .nobis
+<lb/>quidem feruntur, in speculo vero consistunt per contrariam
+<lb/>conversionem ut ad nos. Pythagorei ex refracto
+<lb/>visio, ferri namque risum. intensum ut ad aes, laevi vero
+<lb/>denfoque objeeto occurrentem rurfusque . repulsum in fe
+<lb/>ipsum reverti. Ac simile quippiam ei accidat cum manu
+<lb/>quae extenditur et ad. humerum rurium deducitur.</p>
+<p>Utrum videantur tenebrae.</p>
+<p rend="indent">Stoici tenebras videri deprehendunt; ex oculis enim
+<lb/>prodeuntem radium quendam ad ipsas penetraret neque
+<lb/>falli vitum, ab rpfo namque revera cernuntur compreheuduuturque
+<lb/>tenebrae. At excurrunt ex oculis radii ignei
+<lb/>haud nigri vel caliginosi : . tenebrae vero vitum colligunt,
+<lb/>concitant ac obtrudunt: lux autem vitum nostrum difpergit
+<lb/>et ad res ridendas per medium aerem deducit: quamobrem
+<lb/>non in tenebris, fed ipsas tenebras dumtaxat nos
+<pb n="19.309"/>
+<lb/>intueri licet. Chrysippus contentione intermedii aeris
+<lb/>videre nos arbitratur icto quidem a spiritu visorio qui a
+<lb/>principe facultate adusque pupillam exporrigitur, post impulsum
+<lb/>vero ad vicinum aerem ipsimi in coni formam
+<lb/>contendente quum ejusdem sit generis aer.</p>
+<p/>
+</div>
+<div type="textpart" subtype="chapter" n="26">
+
+
+<p>
+<lb/>De auditu.</p>
+<p rend="indent">Empedocles auditum fieri appulsu spirantis aeris in
+<lb/>cartilaginofam auris cochleam, quem cenfet ad interiorem
+<lb/>aurem delatum esse et ad tympani vacuum sublatum et
+<lb/>percussum. Alcmaeon audire nos dicit quod interior auris
+<lb/>vacua sit. Etenim hoc esse quod spiritus impetu perfonat,
+<lb/>omnia namque vacua refonant. Diogenes aere capiti
+<lb/>incluso qui voce percutitur ac commovetur. Plato
+<lb/>quique aptum fequuti funt aerem capiti inclutum percuti,
+<lb/>eum autem ad principem facultatem reflecti auditusque
+<lb/>tensum creari.
+<pb n="19.310"/>
+<lb/>.De odoratu.</p>
+<p rend="indent">Alcmaeon in cerebro principem esse facultatem cenfet
+<lb/>proiudeque quum respiratione attrahit odores ipsam
+<lb/>sentire. Empedocles ab ea quae a pulmone perficitur refpiratione
+<lb/>odores percipi . difcernique : ideoque quum rifpiratio
+<lb/>gravis sit ob scabritiem eum non sentiri , . quemadmodum
+<lb/>in humorum defluxu laborantibus deprehenditur.</p>
+<p>De gustu.</p>
+<p rend="indent">Alcmaeon arbitratur tum humore ac tepore linguae
+<lb/>tum mollitie internosci sapores. Diogenes raritate linguae
+<lb/>et mollitie et propter venas quae a corpore in ipsam derivantur
+<lb/>et diffundi sapores .attractos in sensum et in
+<lb/>principer. facultatem ut a spongia.</p>
+</div>
+<div type="textpart" subtype="chapter" n="27">
+
+
+<p/>
+<p rend="indent">Plato vocem definit spiritum per os ah animo eduorum
+<lb/>impulsumque aerem qui per aures, cerebrum et singuinem
+<pb n="19.311"/>
+<lb/>adusque animam transfunditur. [At inproprie
+<lb/>vox quoque brutis animalibus et rebus inanimis tribuitur,
+<lb/>ut hinnitus, strepitus. Proprie autem vox articulata est
+<lb/>ut quae mentis conceptum in lucem proferat. Epicurus
+<lb/>vocem esse fluxum qui a. rebus loquentibus aut resonantibos
+<lb/>aut strepentibus emittitur; eum autem fluxum in conformis
+<lb/>tegmenta confringi. Conformia vero dicuntur fragmenta
+<lb/>rotunda rotundis et scalena et triangula quae cum
+<lb/>fuis similes sunt ejusdem generis. His autem ad aures
+<lb/>appellentibus impleri vocis- tensum- At hoc manifestum
+<lb/>fieri ex utribus qui effluunt et fullonibus qui vester indant.
+<lb/>Democritus etiam censet aerem in conformia corpora
+<lb/>siecari atque una cum vocis. segmentis ad aures convolui:
+<lb/>graculus enim graculo assidet siemperque similem
+<lb/>prout similem ducit consungitqre dens. Etenim in litioribus
+<lb/>similes calculi iisdem in locis conspiciuntur, in alio
+<lb/>quidem globosi, lu alio vero oblongi, ac inter cribrandum
+<pb n="19.312"/>
+<lb/>congregantur quae Iunt ejusdem generis, adeo ut a ciceribus
+<lb/>fabae secernantur. Ad haec dicere. aliquis possit: quomodo
+<lb/>exigua aeris frustula implere possint theatrum aliquot
+<lb/>hominum millibus refertum.] Stoici dicunt aerem
+<lb/>non ex fragmentis feu atomis compositum, fed per totum
+<lb/>continuum esse nec vacuum habere. Quum autem itupulsus
+<lb/>est aer spiritu fluctuat per rectos circulos innumeros
+<lb/>quoad ambientem impleverit veluti in piscina lapide
+<lb/>percussa, cujus aqua in. circulos ac orbes movetur, verum
+<lb/>aqua circulariter, aer vero sphaerice movetur. Anaximander
+<lb/>vocem creari spiritu in solidum aerem incidente ac
+<lb/>ipsius ictus reflexione adusque aures perveniente, quemadmodum
+<lb/>generatur id quod echo appellatur.</p>
+<p>Utrum incorporea vox et quomodo echo stat.</p>
+<p rend="indent">Pythagoras, Plato et Aristoteles incorpoream esse vocem
+<lb/>existimant, non enim aerem ipfam esse, sed figuram.
+<lb/>in aere et superficiem impulsu quodam fieri vocem. At
+<lb/>omnis superficies incorporea, Etenim eum corporibus quidem
+<pb n="19.313"/>
+<lb/>movetur, ipsa vero incorporea motus est expers,
+<lb/>quemadmodum .in virga cum flectitur nihil quidem superfieies
+<lb/>patitur, at materia flectitur. Stoici corpus esse vocem;
+<lb/>quidquid enim agit ac efficit, id corpus esse: at vox
+<lb/>agit et efficit, eam enim et audimus et sentimus quum ad
+<lb/>aures irruit et aliquid effingit, quomodo annulus cerae
+<lb/>sigillum imprimit. Borium quidquid movet et molestiam
+<lb/>infert corpus est; movet autem nos concentus, molestiam
+<lb/>vero parit discrepantia. Praeterea quidquid movetur corpus
+<lb/>est; vox autem movetur et in loca laevia incidit et
+<lb/>sicut pila in parietem coniecta reflectitur. Itaque pyramidibus
+<lb/>Aegypti una voce edita quatuor aut quinque soni
+<lb/>redduntur.</p>
+<p/>
+</div>
+<div type="textpart" subtype="chapter" n="28">
+
+
+<p/>
+<p>Unde sentiat anima et quae pars ejus sit princeps.</p>
+<p rend="indent">Stoici dicunt Inpremant animae partem esse principem
+<lb/>facultatem effectricem imaginationum , ascensionum,
+<pb n="19.314"/>
+<lb/>fensuum et appetitus ac eam ratiocinationem vocanti Ab
+<lb/>hac autem principe facultate feptem partes funt animae
+<lb/>propagines, quae ut polypi acetabula in corpus propagantur.
+<lb/>Ex his autem -septem animae partibus quinque
+<lb/>sunt quidem proprii sensus , visus , auditus, odoratus, gustus
+<lb/>et tactus; quorum quidem visus est spiritus qui a
+<lb/>principe facultate ad oculos usque protenditur; auditus
+<lb/>autem spiritus qui a principe facultate ad aures usque excurrit ;
+<lb/>odoratus vero spiritus qui a principe facultate ad
+<lb/>usque nares attenuando fefe porrigit; at gustus spiritus
+<lb/>qui a principe parte adusque linguam propagatur; tactus
+<lb/>denique spiritus qui a principe facultate propagatur adusque
+<lb/>superficiem eorum quae siub tactum facile fentientem
+<lb/>incidunt. Reliquarum autem partium altera quidem
+<lb/>feminis procreatrix dicitur quae et ipsa spiritus est, qui
+<lb/>a principe parte adusque parastatas testiculorum adsistes
+<lb/>diffunditur; altera vero vocalis facultas a zenone dicta
+<lb/>quamque vocem vocitant spiritus est qui a principe facultate
+<lb/>adusque pharyngem et linguam et propria vocis
+<pb n="19.315"/>
+<lb/>/armandae organa expanditur. Ista autem princeps facultus
+<lb/>in nostro globulo capite tanquam in mundo stabulatur.</p>
+<p>Quae sit pars princeps animae et in quo sit.</p>
+<p rend="indent">Democritus et Plato principem facultatem in toto
+<lb/>capite collocant. Strato in superciliorum interstitio. Erasistratus
+<lb/>in membrana cerebri quam epicranida vocati flerophilus
+<lb/>in ventriculis cerebri. Parmenides et Enisurus
+<lb/>in toto pectore. Stoici omnes in toto corde vel in cordis
+<lb/>spiritu. Diogenes in artericso cordis ventriculo^ qui est
+<lb/>spiritualis. Empedocles in sanguinis substantia. Quidam
+<lb/>in cervice cordis. Alii in membrana cordis. Alii in fepto
+<lb/>transversio. iuniores quidam a capite adusque diaphragma
+<lb/>exporrigi. Pythagoras vitalem facultatem in
+<lb/>corde, mentem et rationem in capite.</p>
+<p>De motu animae.</p>
+<p rend="indent">Plato femper moveri animam, mentem autem non moveri
+<lb/>locali motu. Aristoteles animam immobilem et omni
+<pb n="19.316"/>
+<lb/>motu priorem, per accidens autem motus participem esse
+<lb/>quemadmodum figurae, termini omninoque corporum formae.
+<lb/>fle immortalitate animae.</p>
+<p rend="indent">Pythagoras et Plato interitus expertem esse animam
+<lb/>cantent, decedentem enim e vivis in confortent universi
+<lb/>animam commigrare. Stoici exeuntem e corpore simul
+<lb/>eum eo concreto interire , eam scilicet quae imbecillior
+<lb/>evadit, quales sint ineruditorum animae, validiorem autem
+<lb/>, quales Iunt sapientum, durare usque ad flagrationem.
+<lb/>Democritus et Epicnrus caducam esse et simul eum
+<lb/>corpore interire. Pythagoras et Plato ratione praeditam
+<lb/>partem immortalem, esse quippe animam non deum fied
+<lb/>opus aeterni dei, brutam vero mortalem arbitrantur.</p>
+<p rend="indent"/>
+</div>
+<div type="textpart" subtype="chapter" n="29">
+
+
+<p>
+<lb/>De respiratione.</p>
+<p rend="indent">- Empedocles primam primi animalis respirationem fieri
+<lb/>autumat, quum humor in foetibus editis secessum comperit
+<pb n="19.317"/>
+<lb/>et ad evacuatum replendum exterioris aeris per aperta
+<lb/>vasa fit aditus. Postea vero quum jam innatus calor educto
+<lb/>foras impetu aerem elideret exspirationem, quum vero
+<lb/>impulsus intro reditu aeri vicissim aditum praeberet inspirationem.
+<lb/>Nunc.autem sanguine ut ad fupe-ficiem effertur
+<lb/>aeremque per nares fuo influxu foras impellente
+<lb/>succedentem ipsius excretionem fieri exspirationem, recurfante
+<lb/>vero aere sed. loca rara ac pervia icissim fele infinuante
+<lb/>inspirationem.. Rem autem ipsam clepsydrae exemplo
+<lb/>memorat Asclepiades, pulmonem quidem in hydriae
+<lb/>loco modum constituit, causam vero respirationis esse cnnfet
+<lb/>eam quae .thoraci inest partium tenuitatem, ad quam
+<lb/>fluit et fertur externus aer qui crassior existit rurfumque
+<lb/>expellitur, quum thorax talis fit ut neque amplius ultro
+<lb/>admittere neque eo carere queat quum. et in corpore aliqua
+<lb/>portio aeris tenuioris perpetuo pauca relinquatur,
+<lb/>non enim totus excluditur , ad hoc turium quod iutus
+<pb n="19.318"/>
+<lb/>remoratur, id gravitate exterioris intro petentis foras
+<lb/>effertur. .Haec autem cucurbitulis cov.parat. Voluntariam
+<lb/>autem fieri dicit respirationem quum qui in pulmonis teunissimi
+<lb/>sunt meatus contrahuntur et bronchia coarctantur.
+<lb/>Haec enim nostrae voluntati obtemperant. Heroplutus
+<lb/>facultatem corporum motricem in nervis, arteriis
+<lb/>et musculis relinquit, pulmonem autem censet fotum diastoleu
+<lb/>et fystolen naturaliter appetere, deinde quoque cetera.
+<lb/>Actionem quidem esse pulmonis attractionem externi
+<lb/>spiritus, ob repletionem autem quae extrinsecus accluit
+<lb/>quum attrahere nequeat in thoracem, supervacaneum
+<lb/>amandare ipsumque foras in aerem expellere prolusi eque
+<lb/>quatuor contingere motus pulmonis; primum quidem quo
+<lb/>ipse .externum excipit aerem; fecundum quo id quod foris
+<lb/>exceptum est intus in thoracem divolvit; tertium aurem
+<lb/>quo id quod a thorace exprimitur rursum ipse recipit ;
+<lb/>quartum denique quo quod ex reversione in ipso sit
+<pb n="19.319"/>
+<lb/>foras ejicit. At horum mortuum duas quidem esse diastolas
+<lb/>unam quidem extrinsecus, alteram vero a thorace : duas
+<lb/>vero systoles; alteram quidem quum thorax spiritum ad
+<lb/>fe attrahit; alteram vero quum ipsa in sinum aerem expellit.
+<lb/>Thoracis enim duo foli funt motus, diastole dilatatio
+<lb/>quidem quum a pulmone aerem ad su trahit, fystole
+<lb/>- vero contractio qhum acceptum ipfum aerem restituit.</p>
+<p rend="indent"/>
+</div>
+<div type="textpart" subtype="chapter" n="30">
+
+
+<p/>
+<p>De affectibus.</p>
+<p rend="indent">Stoici affectus quidem in partibus affectis, tensus vero
+<lb/>in principe animae facultate collocant. Epicurus et asseotus
+<lb/>et tentus in partibus affectis esse , at principem facultatem
+<lb/>affectus expertem existimat. Strato autem et assectus
+<lb/>animae et tentus in ipsis facultate principe non in
+<lb/>partibus affectis constitui ; in illa siquidem tolerantiam
+<pb n="19.320"/>
+<lb/>situm esse ut in doloribus et cruclatibus atque in fortibus
+<lb/>et meticulosis conspicitur.</p>
+<p>ne divinatione:</p>
+<p rend="indent">Plato et Stoici divinationem introducunt: etenim a
+<lb/>deo missum esse quod est divino afflatum .numine et ex
+<lb/>divinitate animae quod .der praesentia vaticinatur, quod
+<lb/>somnia interpretatur, quod astrorum peritiam explicat et
+<lb/>quod auguratur. Xenophanes et Epicnrus divinationem
+<lb/>tollunt. Pythagoras solam haruspicinam non tollit. Aristoteles
+<lb/>et Dicaearchus divinationes solum admittunt quae
+<lb/>ex afflatu numinis et insomniis fiunt: licet enim immortalem
+<lb/>animam non existiment, eam tamen erei alienius siivinae
+<lb/>esse -participem credunt.</p>
+<p>Quomodo stant somnia.</p>
+<p rend="indent">Democritus somnia fieri arbitratur simulacrorum obfervationibus.
+<lb/>Strato bruta quadam natura mentis in fomuls
+<pb n="19.321"/>
+<lb/>quae fensus magis nanciscatur atque ideo magi; etiam
+<lb/>cognoscat. Herophilus ex somniis alia putat necessario
+<lb/>contingere quae a deo mittuntur;. alia vero naturalia quum
+<lb/>anima rerum sibi utilium et futurarum formas effingit ;
+<lb/>alia denique mixta cafu et fortuito fieri occursu, imaginum
+<lb/>quum quae volumus ea spectamus, ut amantibus contingit
+<lb/>qui per somnia amicas amplecti videntur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="31">
+
+
+<p/>
+<p>De suminis essentia.</p>
+<p rend="indent">Aristoteles femen esse. dicit excrementum alimenti ulfimi
+<lb/>aut sanguinem aut quid analogum aut ex his aliquid,
+<lb/>quod facultate pollet movendi ac in scipio producendi,
+<lb/>quoad quid abfolvat- quale .est id unde fuit excretum.
+<lb/>Pythagoras fpumam utilissimi sanguinis vel residuum alimenti:
+<lb/>Alemaeon cerebri partem. Plato spinalis medullae
+<pb n="19.322"/>
+<lb/>effluvium. Epicnrus animae et corporis partem avulsam.
+<lb/>Demoeritus a totis. corporibus ac principibus partibus
+<lb/>semen derivari dicit ut carnibus, ossibus, fibris,</p>
+<p>Utrum sumen sit corpus.</p>
+<p rend="indent">Leucippus et zeno corpus esse dicunt,; semen enim
+<lb/>avulsam esse animae portionem.. Pythagoras et Plato et
+<lb/>Aristoteles incorpoream quidem esse seminis facultatem.
+<lb/>asteverant sicut mentem moventem, corpoream vero matersam
+<lb/>quae effunditur. Strato et Demoeritus facultatem
+<lb/>quoque corpus esse, spiritus quippe est.</p>
+<p>An familiae semen emittant.</p>
+<p rend="indent">Pythagoras, Demoeritus et Epicurus femen putant
+<lb/>feminas effundere quum habeant parastatas invectos, ob
+<lb/>idque eas etiam praeter usum appetere. Aristoteles et zeno .
+<lb/>humidam quidem materiam effundere , ceu ab exercitatione
+<lb/>fudores, non tamen vim seminis habere. Hipponon mi-.
+<pb n="19.323"/>
+<lb/>nus feminis effundere feminas quam mares, nec tamen ad
+<lb/>generationem animalis id conferre quia extra uterum decidit.
+<lb/>Hinc aliquot multoties emittere femen absque viris
+<lb/>maxime viduas et ossa fieri a.. semine. maris,. carnes a femine
+<lb/>feminae.</p>
+<p/>
+</div>
+<div type="textpart" subtype="chapter" n="32">
+
+
+<p/>
+<p>Quomodo conceptiones stant.</p>
+<p rend="indent">Aristoteles conceptionem fieri putat utero a menstruali
+<lb/>purgatione fursumattracto et menstruis ipsis simul attiaflentibus
+<lb/>ab universa mole partem aliquam sanguinis puri
+<lb/>ut accedat ad .fetant maris. Conceptus autem non fieri
+<lb/>propter impuritatem uteri veLinflationem, motum, moestiriam,
+<lb/>infirmitatem mulierum vel propter virorum itupotentiam..- :
+<lb/><pb n="19.324"/>
+<lb/>Quomodo .mares et feminae generentur.</p>
+<p rend="indent">Empedoeles nutat et Asclepiades marem al feminam
+<lb/>procreari a calore et. frigore ; unde narrant primos mares
+<lb/>ad ortum stolis et meridiem e terra procreatos fuisse, feminas
+<lb/>vero in septentrionalibus. Parmenides autem advertatur
+<lb/>docetque mares in septentrione gigni eo quod haepartes
+<lb/>plurimum habeant densitatis, feminas autem in meridie
+<lb/>propter raritatem.Hipponax vel quod femen consistat
+<lb/>et validum sit vel quod .dissinat etimbecillius. -.Anaxagoras
+<lb/>et Parmenides tum masculos procreari dicit quum
+<lb/>ex dextra parte flamen in dextram . uteri inciderit et a
+<lb/>sinistra in sinistram; feminas autem si constitutionis permutatio
+<lb/>facta fuerit. Cleophanes,oujus meminit AristoteIes,
+<lb/>mares a dextro.,.. tentio as n sinistro testiculo prodire
+<lb/>credidit. Leucippus fecundum varietatem partium qua
+<lb/>mas colem, matricem femina habet, tantum enim dumtaxat
+<lb/>dicit. Democrrtus communes partes ex utro conligerint
+<pb n="19.325"/>
+<lb/> : peculiares prout praevaluerint. Hipponax vero, si
+<lb/>femen praevaluerit, marem, si materia sanguinea,. feminam
+<lb/>concipi. existimat.</p>
+<p>Quomodo monstra procreentur.</p>
+<p rend="indent">Empedocles existimat vel abundantia feminis vel defectu
+<lb/>aut a motus initio aut divisione in plura vel quod
+<lb/>alio vergat monstra generari:- sic videtur fere omnes caufas
+<lb/>complexus. Strato propter additionem vel detractionem
+<lb/>vel transpositionem vel. inflationem. Medicorum alle
+<lb/>qui propter uteri distortionem a flatibus.</p>
+<p rend="indent">Cur mulier ex frequenti coitu non concipiat.</p>
+<p rend="indent">Diocles medicus quod vel omnino nullum vel parcius
+<lb/>quam oporteat alienius. femen emittatur aut quod id desit
+<lb/>in quo facultas prolifica fuerit aut calet s vel frigoris
+<lb/>vel humiditatis vei siccitatis exsuperantia aut penuria aut
+<lb/>partium paralysi. Stoici propter obliquitatem partis virilis
+<pb n="19.326"/>
+<lb/>quae recta semen ejaculari nequeat, aut propter partium
+<lb/>incommoderationem ut ad uteri distantiam. Erasistratus
+<lb/>propter uterum, quum callos contraxerit aut magis
+<lb/>carnosus suerit aut laxior aut angustior quam natura exigat.</p>
+<p>Quomodo gemini et trigemini nascantur.</p>
+<p rend="indent">EmpedocIes geminos et trigeminos foetus nasci arbitratur
+<lb/>ubertate et separatione feminis. Asclepiades ob seminum
+<lb/>differentiam, ut hordeaceas spicas duplici aut triplici
+<lb/>granorum serie constantes sic femina esse foecundissima
+<lb/>Erasistratus ob conceptiones fieri ut in brutis animalibus.
+<lb/>Quum enim uterus purgatus est tunc ad conceptionem
+<lb/>semen descendere. Stoici ob uteri loculos ; quum
+<lb/>enim in primum et fecundum incidit femen, tunc fieri fuperfoetationes
+<lb/>et geminos et trigeminos.
+<pb n="19.327"/>
+<lb/>Unde parentum et avorum similitudo procreetur.</p>
+<p rend="indent">Empedocles similitudinem ex seminum potentia oriri
+<lb/>existimat, dissimilitudinem vero ob feminis calorem exiralatum.
+<lb/>Parmenides quum a dextra partu uteri femen excernitur
+<lb/>patrum, quum vero a sinistra, matrum similes nafer.
+<lb/>Stoici a toto corpore et anima fieri femen exprimique
+<lb/>similitudines et effigies ex eadem gente, perinde atque
+<lb/>est pictor rei conspectae similitudinem coloribus similibus
+<lb/>referat; praeterea a muliere quoque semen emitti,
+<lb/>quod si praevaleat, mulieris sumen matri : si viri, patri simrlem
+<lb/>prolem nasci.-</p>
+<p rend="indent">Quomodo suboles aliis quam parentibus similis nascatur.</p>
+<p rend="indent">Medicorum plurimi fortuito et cafu refrigeratis maris
+<lb/>et feminae seminibus dissimiles gigni infantes putant.
+<lb/>Empedocles. imaginatione mulieris inter concipiendum formari
+<pb n="19.328"/>
+<lb/>foetus. Saepe. enim imagines etiam et. statuae fiant
+<lb/>a mulieribus adamatae similisque earum proles in lucem
+<lb/>edita. Stoici ob consensum quendam ac similem animi
+<lb/>affectionem fluxuum et radiorum non imaginum insertione
+<lb/>mutuas similitudines disici.</p>
+<p rend="indent">Quomodo steriles stant mulieres et viri infacundi.</p>
+<p rend="indent">-Medici feminas steriles fieri dicunt aut quod iis userus.
+<lb/>sit angustior aut densior aut rarior aut durior aut ob
+<lb/>callosam concretionem aut cernis excrescentiam aut animi
+<lb/>langorem aut defectum nutritionis, malum habitum, perversionem
+<lb/>figurae . aut evulsionem. DiocIes infecundos
+<lb/>mares fieri arbitratur aut quod femen prorsus quidam non
+<lb/>ejaculentur aut parcius quam oporteat aut quod femen
+<lb/>infecundum aut ob paralysim partium aut talem colis
+<lb/>distortionem, .ut ..in uterum femen ejaculari recta non pofsit
+<lb/>aut ob incommoderationem partium ad uteri: distantrans.
+<lb/>Stoici discrepantes coeuntium facultates et qualitales
+<pb n="19.329"/>
+<lb/>causas esse augurantur, quas si quis separet et tui
+<lb/>generis alteri conjungat; evincet natura foetumque procreabit.
+<lb/></p>
+<p>Cur mali steriles.<space type="tab">    </space>-</p>
+<p rend="indent">n.cmaeoni mulos mares infecundos censet propter
+<lb/>feminis exilitatem et frigiditatem, feminas autem- steriles
+<lb/>quod ipfarutn vulvae furium non dehiscant ; hoc est non
+<lb/>aperiantur. Empedocles ob parvitatem , demissionem et
+<lb/>angustiam vulvae inverte ventri adiunctae ut recta ineam
+<lb/>femen neque evibretur usque fi id fiat excipiatur. Huic
+<lb/>Diocles testimonio annuit qui in dissertionibus multoties
+<lb/>tales fe mularum uteros deprehendisse narrat et .iisdem de
+<lb/>causis mulieres quoque sint steriles.</p>
+</div>
+<div type="textpart" subtype="chapter" n="33">
+
+
+<p/>
+<p>An suetus in utero sit animal.</p>
+<p rend="indent">Plato foetum in utero esse animal arbitratur, nilum
+<lb/>siquidem et moveri in ventre et nutriri et augeri. Stoici
+<pb n="19.330"/>
+<lb/>partem ventris non animal esse foetum. existimant, quemadmodum
+<lb/>enim fructus qui sunt partes plantarum ubi
+<lb/>maturuerint decidunt, ita et foetus. Empedocles foetum
+<lb/>quidem ipfum. animal non esse, fed respirare. in ventre, ac
+<lb/>primum respirationem animalis fieri in parte quum qui
+<lb/>humor in foetu morabatur, facesso m reperit et ad quod
+<lb/>evacuatum est externi aeris per aperta .vasa datur aditus.
+<lb/>Diogenes foetus inanimatos nasici, fed cum calore: unde
+<lb/>calidum innatum statim edito foetu frigidum in pulmonem
+<lb/>attrahere putat. Herophilus motum naturalem ipsi tuetur
+<lb/>relinquit, non autem animalem. Nervi autem fiunt motus
+<lb/>causae. Tunc vero animalia fieri quando in lucem edita
+<lb/>aliquid aeris excipiunt,</p>
+<p>Quomodo suetus in utero nutriatur.</p>
+<p rend="indent">Democritns et Epicnrus in utero per os nutriri suetum
+<lb/>existimant; hinc statim editum ore mammas invadere,
+<pb n="19.331"/>
+<lb/>esse enim in corpore mammas quasdam oppletas et ofcnla
+<lb/>per quae nutritur. Stoici per fecundinam et umbilicum
+<lb/>unde nitunt statim ligant obstetrices et os dilatant, ut
+<lb/>per os manifeste nutriatur. Alcmaeon ali per totum corpus;
+<lb/>ipsum enim ut fpongiam nutritias alimenti partes excipere
+<lb/>censet.</p>
+<p>Quid primum in factu absolvatur.</p>
+<p rend="indent">Stoici totum corpus procreari simul existimanti Aristoteles
+<lb/>primum spinam conflari putat ut navis carinam.
+<lb/>Alcmaeon caput in quo princeps animae facultas residet.
+<lb/>Medici cor in quo venae et arteriae funi. Alii magnum
+<lb/>pedis digitum. i Alii umbilicum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="34">
+
+
+<p/>
+<p>Curscptimestres suetus vitales.</p>
+<p rend="indent">Empedocles quum humanum genus ex terra procreatum
+<lb/>est diem temporis longitudine tantum exstitisse, quod
+<pb n="19.332"/>
+<lb/>lento gradu sol incedat, quantus nunc est dectmestris: procedente
+<lb/>vero tempore tantum fuisse diem quantus nunc
+<lb/>est feptimestris-, ac ea re decimestres ac feptimestres foetus
+<lb/>editos vitales esse natura mundi ita meditata ut foetus
+<lb/>uno die augesceret qui. nocte una fuisset conditus.
+<lb/>rimaeus non decem, inquit, menses, sed novem censeri- aretentione
+<lb/>menstruorum primae conceptionis: sic et septi-.
+<lb/>.mesti es existimari qui septem non funt mensium , novit
+<lb/>enim post conceptionem purgationem desiisse. Polybus,
+<lb/>Diocles, empirica etiam octavum mensem vitalem agnoscunt
+<lb/>, sed foetum esse tum imbecilliorem ac faepenu-.
+<lb/>merolob imbecillitatem multos interire. . Id vero maxime.
+<lb/>universale nullum velle ut octimestres nutriantur, multus
+<lb/>tamen octimestres viros evasisse. Hippocrates et Aristoteles
+<lb/>censent si septem mensibus uterus impleatur, tunc
+<lb/>ipsum deorsum procumbere ei foetum edi vitalem : si vero
+<lb/>procubuerit nec nutriatur debilitato ob laborem umbilico,
+<lb/>foetus impasics edi ac proinde octimestrem foetum non
+<pb n="19.333"/>
+<lb/>vivere. Quod si novem menses in utero maneat, tum procumbens
+<lb/>perfectus editur. Polybus autem dies centum
+<lb/>octoginta duos et dimidium requiri coniicit ut foetus editi
+<lb/>sint vitales : hoc enim esse fex mensium tempus quo etiam
+<lb/>fel a tropico ad tropicum decurrat. Dici autem septimestres
+<lb/>. quum dies qui huic fexto mensi desunt a septimo
+<lb/>assumuntur. Octo vero mensium foetus non vivere, quod
+<lb/>uteri quidem foetu foras -procumbente vehementius umbilicus
+<lb/>distendatur crucieturque : nam foetus alimento
+<lb/>fraudatur, nutritionis siquidem causa est umbilicus. At
+<lb/>mathematici disjuncta habere signa, ob idque omni privatos
+<lb/>esse natalitio sidere pronuntiant, feptimestres vero
+<lb/>coniunctorum esse participes, octimestres autem disjuncta
+<lb/>animalia zodiaci habere domorum dominos sibi adversarios
+<lb/>planetas , siquis enim in his ortum et vitam sortitus fuerit,
+<lb/>eum infortunatum et brevioris aevi fore ipfa portendunt.
+<lb/>Disjuncta vero fiunt xodiacr signa quorum unum
+<lb/>ab altero octavum numeratur ut aries ad scorpium, taurus
+<pb n="19.334"/>
+<lb/>ad sagittarium, gemini ad capricornum; cancer ad
+<lb/>aquarium , leo ad plices , virgo est arietem. Propterea
+<lb/>feptimestres et decimestres vitales esse foetus,. octimestres
+<lb/>vero propter defectum coniunctionum mundi interire.
+<lb/>Timaeus et duodecimestrem asserit aliquem foetum utero
+<lb/>gestari ob suppressionem menstruorum quae ante conceptionem
+<lb/>prodibant , sic et feptimestrem aestimari nor existentem
+<lb/>priusquam conceptio fuerit, fed eum uterus ad menstrua
+<lb/>et post. conceptionem valet. . .</p>
+</div>
+<div type="textpart" subtype="chapter" n="35">
+
+
+<p>. Quomodo generentur ac intereant animalia.</p>
+<p rend="indent">Epteurus si. generatus est mundus et animalia generata
+<lb/>ea quoque interitura protulit: quod si ingenitus est
+<lb/>ex mutua commutatione generari: partes enim. esse mundi
+<lb/>haec ipfa, ut Anaxagoras et Euripides, nihil .eorum quae
+<lb/>generantur- perit , fed ea quum solvuntur alias aliorum.
+<pb n="19.335"/>
+<lb/>formas diverfas inducunt. Anaximander putat in. humido
+<lb/>generata esse prima animalia corticibus spinosis involuta,
+<lb/>processu autem aetatis. sid majorem. siccitatem descivisse
+<lb/>ruptoque cortice ad modicum tempus supervixisse. Empe.docles
+<lb/>animalia primum. edita ac plantas nequaquam integra
+<lb/>exstitisse fed parum convenientibus partibus composita :
+<lb/>fecundo nata sic inter fe partibus puncta dicit ut
+<lb/>simulacri speciem referrent. Tertio - orta ex- membris ex
+<lb/>fele invicem prodeuntibus ; quarto denique non jam ex
+<lb/>similibus ut ex terra et aqua sied ex sese vicissim cum
+<lb/>alimentum aliorum esset densatum , aliis mulierum vennstas
+<lb/>-incitamentum .emittendi seminis attulisset. Animalium
+<lb/>porro-nmuium genera discreta esse pro temperaturae conditione,
+<lb/>alia enim aquas appetunt tanquam naturae f uae
+<lb/>plus accommodas, alia.. ad aerem adspirant - quod ejus in
+<lb/>fe plurimum contineant: alia quae graviora sint ad terram
+<lb/>suo appetitu feruntur: quae autem aequabili funt temperamento.
+<lb/>ex toto pectore vocem effundunt. Demccritus
+<pb n="19.336"/>
+<lb/>genita esse animalia congressu, at fi unum astrum primum
+<lb/>humidi exstiterint animalia gignere. .</p>
+<p>Quot animalium genera et an omnia sensu et ratione
+<lb/>praedita.</p>
+<p rend="indent">Plato et Aristoteles quatuor esse animalium genera
+<lb/>proferunt et ipfum mundum animal esse , terrestria, aquatica,
+<lb/>volatilia et coelestia, etenim astra ipsis animalia esse.
+<lb/>et mundum talum, at animai rationale, immortale. Democritus
+<lb/>et Epicurus coelestia. . Anaxagoras omnia animalia
+<lb/>habere rationem agentem et quodammodo mentem
+<lb/>non habere patientem quae mentis interpres dicitur. Pythagoras
+<lb/>et Plato rationales quidem- esse ceterorum quae
+<lb/>bruta dicuntur animalium animas, non tamen ea rationis
+<lb/>effectus prodere dico tum ob corporum intemperiem tum
+<lb/>quod sermonem eloquentem minime participent; quemadmodum
+<lb/>in simiis et canibus advertitur, quae mente quis
+<lb/>dem concipiunt, fed mentis concepta proferre nequeunt.
+<lb/>Diogenes rationis et aeris partem ea percipere, sed vel
+<pb n="19.337"/>
+<lb/>obcrassitiem vel ob .abundantiam .humoris neque .intelligere
+<lb/>neque. sentire :. ac fere affecta esse eo modo quo fiunt
+<lb/>insanientes qui de mentis exiverunt .potestate.<space type="tab">    </space>.</p>
+</div>
+<div type="textpart" subtype="chapter" n="36">
+
+
+<p>Quanto tempore suetus in uterogormcntur.</p>
+<p rend="indent">Empedocles in hominibus foetuum formationem incipere
+<lb/>ait tricesimo textu die, perfici vero partibus undequinquagesimo
+<lb/>die: Asclepiades masculorum quidem quod
+<lb/>calidiori sint temperamento formationem fieri vigesimo
+<lb/>fexto die, quinquagesimo vero perfici: in mulieribus autem
+<lb/>quatuor- mensibus fieri. conformationem quod caloris sint
+<lb/>inopes : brutorum vero foetus totos et inchoari . et perfici
+<lb/>ex contemperatione elementorum.</p>
+<p>Ex quibus elementis quaeque pars corporis nostri constituitur.
+<lb/></p>
+<p rend="indent">Empedocles cernes quidem ex aequali quatuor- elementorum
+<lb/>mixtione procreari protulit , nervos autem ex
+<pb n="19.338"/>
+<lb/>igne et terra cuia duabus aquae partibus permixtis: at
+<lb/>ungues gigni animalibus ex nervis prout aeri occurrerunt
+<lb/>refrigeratis reliquis elementis. ossa vero videntur ex
+<lb/>aqua et terra interna aequaliter composita, conferunt tamen
+<lb/>e quatuor elementis in quibus ignis et terra dominamur,
+<lb/>sudores . et lacrymas oriri eliquato sanguine, qui
+<lb/>quum attenuatus fuerit, diffunditur.</p>
+<p>Quomodo exorditur perfectionem homo.</p>
+<p rend="indent">Heraclitus et Stoici perfectionem nos exordiri asserunt
+<lb/>transacto fecundo septenario quo tempore spermatica
+<lb/>vasta moventur: etenim arbores perficiuntur quum fructus
+<lb/>ferre incipiunt, imperfectae autem fiunt et immaturae dum
+<lb/>fructu carent. Aristoteles primo septenario quo notitia
+<lb/>oritur rerum honestarum et turpium, quod est disciplinae
+<lb/>initium. Alii denique existimant nos tortio perfici septenatio
+<lb/>quum et pubescimus et virium robore utimur.
+</p>
+<pb n="19.339"/>
+</div>
+<div type="textpart" subtype="chapter" n="37">
+
+
+<p>Quomodo somnus stat et mors.</p>
+<p rend="indent">Alcmaeon sanguinis recessu in venas sanguifluas somnum
+<lb/>fieri censet, diffusione vero ejusdem solutionem: eum
+<lb/>autem qui per frigus plane fit recessum mortem afferre.
+<lb/>Empedocles somnum quidem refrigerationem caloris qui in
+<lb/>sanguine est moderatam esse vult, immoderatam vero mortem
+<lb/>denuntiare. Plato et Stoici somnum quidem sensifico
+<lb/>spiritus quiete oboriri tradunt non relaxatione sicut in
+<lb/>terra, fed quum is ad interstitium superciliorum, id est
+<lb/>ad partem principem, fertur, quum autem prorsus sensus
+<lb/>privatio spiritui sensifico accesserit mortem accedere.</p>
+<p>Utrum somnus et mors corporis aut animae sint.</p>
+<p>Aristoteles somnum corporis et animae esse scripsit,
+<lb/>ipsius vero causam esse vaporem humidum a thorace in
+<pb n="19.340"/>
+<lb/>capitis domicilia assurgentem e subiecto alimento et refrigerationem
+<lb/>caloris in corde, mortem vero absoluta refrigeratione
+<lb/>contingere. Anaxagoras propter corporeae sunctionis
+<lb/>lassitudinem somnum obrepere credidit , corporis
+<lb/>enim esse non animae affectum, animae quoque mortem
+<lb/>accidere ob separationem. Leucippus non solum corporis
+<lb/>fomnum esse; verum, excedente partium tenuiorum temperamento
+<lb/>nimiam animati calidi jacturam causam mortis;
+<lb/>corporis autem haec esse, non animae assectiones. Empedocles
+<lb/>mortem esse separationem partis igneae ab his ex
+<lb/>quibus syntaxis hominis coaluit: ideoque communem esse
+<lb/>corpori animaeque mortem , somnum autem secretione
+<lb/>quadam partis igneae evenire.</p>
+</div>
+<div type="textpart" subtype="chapter" n="38">
+
+
+<p>Utrum stirpes sint. animalia.</p>
+<p rend="indent">Thales et Plato stirpes animatas esse et animalia proferunt.
+<lb/>Patet vero quod ipsae sese commoveant seseque
+<pb n="19.341"/>
+<lb/>cum violentia colligant rursusqne ita -vehementer te expIicent
+<lb/>laxentqne , ut etiam tecum trahant gravia pondera.
+<lb/>Aristoteles eas quidem dixit animatas esse non tamen
+<lb/>animalia, quum animalia sint alia appetendi alia sentiendi
+<lb/>alia ratiocinandi facultate praedita. Stoici et Epicurei
+<lb/>non animatas esse putant : animata enim quaedam esse
+<lb/>animae appetentis et concupiscentis, quaedam vero rationalis.
+<lb/>Plantas autem sponte ac fortuito non animae dote
+<lb/>natas esse.</p>
+<p>Quomodo stirpes augeantur.</p>
+<p>-ac Empedocles arbores prima animalium e terra prodoetas
+<lb/>fuisse profert , priusquam fol circumageretur et priusquam
+<lb/>nox a die discerneretur, ex temperamenti quoque
+<lb/>commoderatione eas tum maris tum feminae rationem habere.
+<lb/>Crescere autem a caloris qui telluri inest distributione,
+<lb/>adeo ut sint terrae partes, ut ipsi foetus in utero
+<lb/>partes funt matris, fructus autem stirpium aquae et ignis
+<lb/>recrementa esse. Iis quidem stirpibus. lolia defluere qui-:
+<pb n="19.342"/>
+<lb/>bus haud integer secernitur humor qui aestate absumitur,
+<lb/>quibus vero in foliis copiosus succus perpetuo manet, eas
+<lb/>semper florere ut in lauro et olea advertimus: succorum
+<lb/>autem differentias oriri ex diversitate cum multitudinis
+<lb/>partium tum plantarum discrepantium a rebus alentibus
+<lb/>quae sibi similia sunt attrahentium , quemadmodum in vitibus
+<lb/>innotescit. Non enim earum differentiae vinorum
+<lb/>diversitatem efficiunt, sed nutrientis soli.</p>
+<p>De nutrimento et incremento.</p>
+<p rend="indent">Empedocles animalia quidem proprii alimenti concretione
+<lb/>nutriri, caloris autem praesentia crescere; utriusque
+<lb/>vero defectu imminui ac tabescere. At nostrae a etatis
+<lb/>homines priscis comparatos infantium instar esse.</p>
+</div>
+<div type="textpart" subtype="chapter" n="39">
+
+
+<p>De febre.</p>
+<p rend="indent">Erasistratus febrem definit obortum sanguinis motum
+<lb/>non sponte in spiritus vasa prolapsi quemadmodum in mari:
+<pb n="19.343"/>
+<lb/>quando enim nullus ventus ipsum agitat quiescit: flante
+<lb/>autem vehementi vento contra naturam tunc totum cogitur
+<lb/>in circulos: sic et in corpore, quando sanguis commotus
+<lb/>suerit, incidit in vasa spirituum ; cum autem incaluerit
+<lb/>totum corpus calefacit. Diocles succedentem assectum
+<lb/>esse sebrem existimat; succedit autem vulneribus et
+<lb/>adenum tumoribus. Herodotus asserit nulla causa praecedente
+<lb/>aliquos interdum febre corripi.</p>
+<p>De sanitate et morbo.</p>
+<p rend="indent">Alcmaeon quidem sentit causam sanitatis continentem
+<lb/>esse aequabilitatem facultatis humidi, calidi, sicci , frigidi,
+<lb/>amari, dulcis ac reliquorum, si qua vero harum qualitatum
+<lb/>soIa praevaIeat ceteris morbi causam efficientem: evertit
+<lb/>enim sanitatem quae sola exsuperat et morborum caula
+<lb/>est : verbi gratia si nimirum possit calor aut frigus aut reliquorum
+<lb/>aliquid deficiat vel abundet ut cum sanguinis
+<lb/>aut cerebri non est fatis: ideoque sanitatem esse temperiem
+<pb n="19.344"/>
+<lb/>qualitatum concinnam, hoc est commoderatam qualitalum
+<lb/>temperiem. Diocles cum ex inaequalitate elementorum
+<lb/>quibus corpus compositum est tum ex aeris constitutione
+<lb/>morbos oboriri existimat. Erasistratus morbos
+<lb/>contingere arbitratur ob alimentum vel mmium vel rucoctum
+<lb/>vel corruptum : sanos vivere si ciborum quantum
+<lb/>sufficiat assumpserimus. Pythagoras dicebat morbos corporis
+<lb/>inde oriri quod aut calidius aut frigidius sit corpus,
+<lb/>calidius quidem est quod ultra temperiem calet, frigidius
+<lb/>vero cum deficit j ustus calor.</p>
+<p>De senectute.</p>
+<p rend="indent">Stoici et medici uno consensu ob caloris recessum
+<lb/>senectutem oboriri proserunt ac qui plus caloris habent
+<lb/>tardius senescere. Asclepiades vero dicit Aethiopas celeriter
+<lb/>senescere, scilicet anno tricesimo, quod eorum corpora
+<lb/>ab aestuante iole adurantur. Britanniae vero incolas ceutesimo
+<lb/>vigesimo anno senescere quod ingenitus eorum caIor
+<pb n="19.345"/>
+<lb/>diutius conservetur. Enimvero Aethiopum corpora
+<lb/>rariora fiunt quod a sole laxentur, Britannorum vero
+<lb/>quod sub ursis degant densiora proindeque diuturnioris
+<lb/>vitae sunt.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

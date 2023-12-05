@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De libris propriis</title>
+        <author>Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg104.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">19</biblScope>
+              <biblScope unit="pp" from="8" to="48">8-48</biblScope>
+              <date>1830</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author>Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="366" to="368">366-368</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author>Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="35" to="48">35-48</biblScope>
+              <date>1638</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x01">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg104.verbatim-lat1">
+<pb n="19.8"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="19.8"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE LIBRIS PROPRIIS
+<lb/>LIBER.</head>
+
+
+<p rend="indent">Re proditum est consilium tuum,
+<lb/>Basse optime, de librorum a me conditorum libello. Nam
+<lb/>in Sandalario .vico, ubi plurimae Romae sunt venalium
+<lb/>librorum officinae, vidimus contendentes quosdam, meusne
+<lb/>is esset qui venibat liber an alterius cujusplam; erat
+<lb/>enim sane inscriptus, Calenus medicus. Quum autem
+<lb/>emeret quidam pro meo, tituli novitate permotus vir quidam
+<lb/>literarum studiosus ejus promissum explorare voluit
+<pb n="19.9"/>
+<lb/>et duobus statim lectis versibus, scriptum id abjecit, hoc
+<lb/>solum effatus, non est ista dictio Caleni et falso hic liber
+<lb/>inscriptus est. Qui igitur id dixit, prima eruditione institutus
+<lb/>erat, qua apud Graecos pueri ab initio imbuehantur.
+<lb/>apud et grammaticos et rhetoras. Plerique. autem
+<lb/>eorum qui nunc ad medicinam aut philosophiam accedunt,
+<lb/>ne bene quidem legere queuntes, ad eos ventitant, qui et
+<lb/>maxima et pulcherrima quae in hominibus sunt praecepta
+<lb/>edoceant, quae et philosophia et medicina docent. Coepta
+<lb/>igitur erat ejusmodi inertia multis ante annis, cum ego
+<lb/>etiam tum adolescentulus essem, at non quantum jam aucta est,..
+<lb/>tantum progressa erat quoad id -temporis. t Propter 1d
+<lb/>igitur ipsum et quia libros meos multifariam mulli labeIactarunt,
+<lb/>alii per alias gentes eos legentes pro suis, cum
+<lb/>etiam alia quidem demerent, alia vero adderent, alia immutarent:
+<lb/>praestare arbitror, ipsius labesactationis primum
+<lb/>cautam aperire, tum de iis qui revera a me sunt scripti,
+<pb n="19.10"/>
+<lb/>quae cujusque ipIorum professio sit. Quod igitur meos
+<lb/>pro tuis multi legant, cautam ipse nosti, Basse optime.
+<lb/>Nam amicis aut discipulis dati erant sine inscriptione, ut
+<lb/>neque ad editionem, fed illis ipsis facti, erim flagitassent,
+<lb/>eorum quae ex me audierant commentarios habere. Mortuis
+<lb/>itaque nonnullis, ii ad quos ab illis devenerant, ipsis
+<lb/>delectati tanquam suos legebant: alii vero nostros habentes
+<lb/>ab iis sibi communicatos qui primum habebant, in
+<lb/>patriam suam profecti, ibique interea morati, alius aliter
+<lb/>fpecimen fui ex ipsis faciebant. omnibus autem tempore
+<lb/>deprehensis, multi eorum qui deinde possedere, nomen
+<lb/>meum inscripserunt: cumque ab iis difierepantia quae penes
+<lb/>erant alios invenissent, ad me detulerunt, ut cerrigerent
+<lb/>rogantes. Cum ergo scripti ii essent, uti dixi, non
+<lb/>ad editionem, sed pro flagitantium ingenio et usu, par videlicet
+<lb/>erat alios quidem prolixos ,. alios vero contractos
+<lb/>esse, et explanationem ipfamque adeo praeceptorum doutrinam
+<lb/>aut perlectam aut mancam esse. Qui igitur iis
+<pb n="19.11"/>
+<lb/>quos memoravi scripti funi, planum est scilicet neque
+<lb/>perfectionem habere doctrinae neque exactam diligentiam,
+<lb/>utpote cum aut opus non haberent ipsi aut non possent
+<lb/>omnia exquisite addiscere, priusquam habitum essent aliquem
+<lb/>in necessariis adepti. Defer mationes igitur ante me
+<lb/>nonnulli libros ejusmodi inscripserunt, ut quidam designationes:
+<lb/>alii porro introductiones aut compactus aut dictata.
+<lb/>Ego vero cum discipulis tantum dedissem, nihil
+<lb/>inscripsi, eaque re, cum ad. multos postea pervenissent,
+<lb/>alius alium iis titulum fecit. Qui igitur ad me ab aliquibus
+<lb/>delati sunt emendandi gratia, ad eos qui introducuntur,
+<lb/>inscribendos censui. De his ergo primum verba
+<lb/>faciam.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Ego igitur neque ipforum omnium exempl
+<lb/>ari a habebam, qui adolescentulis dictati erant disicere
+<lb/>incipientibus aut etiam amicis quibusdam flagitantibus
+<lb/>dati, postea vero cum fecundo veni Romae, ut dictum
+<pb n="19.12"/>
+<lb/>est, ad me emendationis causa delatos adeptus sum et inscriptionem
+<lb/>apposui uni quidem de sectis ad eos qui intraducuntur.
+<lb/>Qui primum legendus fuerit iis qui artis
+<lb/>medicae disciplinam accepturi sunt. In ea enim genere
+<lb/>inter fe differentes sectae docentur. Genere autem dixi,
+<lb/>quia privatim quaedam etiam in ipsis differentiae infunt
+<lb/>in quibus postea plenius instituuntur qui introducti sunt.
+<lb/>Trium autem sectarum nomina jam ferme omnes norunt,
+<lb/>unam quidem et dogmaticam et rationalem appellari, alteram
+<lb/>empiricam^ tertiam vero methodicam. Quaecunque
+<lb/>igitur cujusque funi propria aut etiam in quibus mutuo
+<lb/>differunt, illo in libro scriptum esu Iis autem qui introducuntur,
+<lb/>dictatus est liber de ossibus et de pulsibus. Dati
+<lb/>porro Platonico amico fuut per eam peregrinationem introductorii
+<lb/>libri duo, alter quidem arteriarum et venarum,
+<lb/>alter vero nervorum dissectionem continens, et al teri cui-.
+<lb/>dam empiricae institutionis deformatio, quorum cum haherent
+<lb/>nullum, accepi ab iis qui habebant, cum fecundo
+<pb n="19.13"/>
+<lb/>Romam veni. Aliorum autem quorundam qui tum amicis
+<lb/>scripti sunt, penes me exempla manserunt, quia perfecte
+<lb/>elaborati erant: quorum sunt et de causis respirationis duo
+<lb/>et de voce IV. nuncupati viro cuidam e consularibus nomine
+<lb/>Boetho; Aristotelisl factam philosophanti. Huic quoque
+<lb/>et ii de Ilippocratis anatome i posteaque et de Erasistrati
+<lb/>, nuncupati sunt, ambitiosius scripti, propter Martialem,
+<lb/>cujus duo libri anatomicorum servantur etiamnum
+<lb/>apud multos, qui per id tempus magnopere celebrabantur:
+<lb/>Invidus porro et contentiosus admodum vir iste fuit, tamessi
+<lb/>annos natus plus LXX. Cum ergo audisset, quae .ad
+<lb/>anatomicum problema dicta a me essent et docta publice
+<lb/>ab omnibus qui assequuti essent calorem in modum commendari,
+<lb/>percontatus est amicorum quendam , cujus essem
+<lb/>sectae ; et audito servos appellare me qui te Hippocrateos
+<lb/>reuunciassent aut Praxagoreos aut omnino a quoquam
+<lb/>hominum, eligere autem quae apud quemque bona este n t,
+<pb n="19.14"/>
+<lb/>quaesivit iturum quem de veteribus maxime laudarem,</p>
+<p rend="indent">***** mirabilem autem Erasistratum
+<lb/>et artis .caetera et haec declarant. Propter illum
+<lb/>igitur studiosius fcripsi libros VI. de anatome Hippocratis
+<lb/>et de Erafistrati HI. Cumque aliquando publice dicerem
+<lb/>in veterum medicorum libros, oblato mihi eo Erasistrati
+<lb/>de sanguinis eductione ; et stilo in eum pro more defixo,
+<lb/>tum traducto in eam libri partem in qua venae sectionem
+<lb/>detrectat, plura in eum dixi, ut Martialem urerem, qui
+<lb/>Erasistrateus esse affectabat. Cum autem oratio nostra fatis
+<lb/>probata esset, oravit me amicus quidam ipsi infensus,
+<lb/>ut quae tum dixissem, dictarem ei quem ad me missurus
+<lb/>esset , celeriter notis scribere exercitato , ut si ex urbe
+<lb/>domum proficisceretur, ea posset Martiali dicere in aegroruna
+<lb/>inspectionibus. Postea nesicio quo pacto, cum iterum
+<lb/>Romam veni ab impp. arcessitus, qui a me habuerat, diem
+<pb n="19.15"/>
+<lb/>quidem obierat, librum autem habebant non pauci , pro
+<lb/>illius temporis ambitione compositum, cum publice arguebam.
+<lb/>Etenim et adhuc juvenis id egi, quartum annum
+<lb/>agens et tricesimum. Ex illo porro statui neque amplius
+<lb/>docere publice neque specimen facere, cum maxime in
+<lb/>iis quos curabam major voto me felicitas excepisset. Cum
+<lb/>enim artis aemulos viderem, si laudaretur medicus quispiam
+<lb/>quam inviderent, loglatrum ipfum denominantes,
+<lb/>invidam eorum linguam obturare volui, neque in iis quos
+<lb/>curabam quidquam loquens ultra necessitatem, neque in
+<lb/>turba docens sicut antea, neque ostentans, fed artis operibus
+<lb/>suium , quem in ejus theorematis habitum possidebam
+<lb/>, ostendens. Annos autem alios tres Romae moratus,
+<lb/>cum coepisset magna pestis, ilico urbe excessi in patriam
+<lb/>properans; nemini * * * eo tempore de Hippocratis
+<lb/>quidem et Platonis placitis libros VI. adhortatu ad id me
+<lb/>Boetho scripsi: de partium autem ufu unum, qui primus
+<pb n="19.16"/>
+<lb/>est. Quibus Boethus acceptis prior me urbe digressus est
+<lb/>Palaestinae Syriae tum imperaturus, in qua et mortuus
+<lb/>est: eaqne re multo post tempore utrumque opus coniummavi,
+<lb/>cum mihi occupationes supervenissent post illam domum
+<lb/>reditionem, quarum deinceps mentionem faciam.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Reversus itaque fum Roma in patriam,
+<lb/>completis milii a natu VII. annis et XXX. Tres mihi
+<lb/>porro a quibusdam libri sunt dati, scripti , priusquam
+<lb/>Smyrnam Pergamo migrarem et Pelopis medici et Albini
+<lb/>Platonici gratia. Erat autem unus quidem vulvae disseetio;
+<lb/>parvus libellus: alter autem dignatio affectionum quae
+<lb/>in oculis funl, et ipsis parvus : tertius autem justae magnitudinis
+<lb/>de medica experientia. Datus autem est primus
+<lb/>memoratus obstetrici cuidam; alter autem juveni oculos
+<lb/>curanti: tertius autem cum Pelops adversus Philippum
+<lb/>empiricum biduo disputavit; Pelope quidem per experientiam
+<lb/>totam medicinam considere non posse , Philippo vero
+<pb n="19.17"/>
+<lb/>demonstrante posse: in ordinem itaque redactis utriusque
+<lb/>verbis, exercitationem mihi quandam scripsi quae nescio
+<lb/>quo pacto insciente me evolavit. Tres autem alios de
+<lb/>.pulmonis et thoracis motu, interea dum Smyrnae tum,
+<lb/>tcripsi, condiscipulo gratificatus, qui post peregrinationem
+<lb/>in patriam abiturus erat, ut ad eum librum meditatus
+<lb/>demonstrationem quandam anatomicam faceret. Demortuo
+<lb/>vero interim adolescente, libri apud quosdam erant, mei
+<lb/>habitus esse crediti. Et convictus quidam est, praeposito
+<lb/>iis quopiam prooemio, tum eos quasi tuos legere: horum
+<lb/>librorum tertio ad finem adscripsi quaedam adinventorum
+<lb/>a me professionem continentia. Nam quae in tribus erant
+<lb/>fcripta Pelopis magistri mei placita erant , apud quem
+<lb/>Smyrnae agens eos scripsi. Post illam igitur Roma reversionem
+<lb/>cum in patria consedissem , solita munia . obibam.
+<lb/>Statim autem venerunt Aquileia imperatorum literae me
+<lb/>evocantium. Nam statuerant ipsi peracta hieme in Germaniam
+<pb n="19.18"/>
+<lb/>movere. Necessitate igitur profectus sum, fperans
+<lb/>autem me excusationem consequuturum , audiebam enim
+<lb/>alterum ipsorum natu rnajorem et aequum et moderatum
+<lb/>et clementem et lenem, qui initio quidem Verus vocabatur,
+<lb/>postquam vero Antoninus, qui post Adrianum impcravit,
+<lb/>successorem ipsum fecit imperii, enm quidem qui prius
+<lb/>Lucius nominabatur, consortem fecit et Verum appellavit,
+<lb/>fe vero ipsum Antoninum denominavit. Ingresso igitur
+<lb/>me Aquileiam invasit pestilentia , ut. nondum antea ; ut
+<lb/>impp. quidem Romam ilico confugerint cum militibus
+<lb/>paucis, nos autem vulgus vix multo tempore evaserimus,
+<lb/>cum plurimi periissent non propter pestilentiam tantum,
+<lb/>sied quia media hieme ista gerebantur. Cum autem Lucius
+<lb/>in itinere ex hominibus migrasset, Romam ejus corpore
+<lb/>deportato , relationem ejus inter dens Antoninus fecit ;
+<lb/>posteaque expeditionem in Germanos exsequebatur,
+<lb/>rebus omnibus antehabens abducere me. Sed dimittere
+<lb/>persuasus cum dicentem audiifet; contra subere patrium
+<pb n="19.19"/>
+<lb/>deum Aesculapium , cujus et cultorem me demonstrabam,
+<lb/>ex quo me letali affectione abscessus laborantem servasset;
+<lb/>deum veneratus et reditum suum exspectare jusso me,
+<lb/>sperabat enim te bellum id brevi confecturum, ipse quidem
+<lb/>abiit , filio autem Commodo relicto etiamtum valde
+<lb/>puero, mandavit ejus nutritoribus, conarentur quidem tanum
+<lb/>eum servare, si vero quandoque aegrotasset, ad eum
+<lb/>curandum me vocarent. Eo ergo tempore et collegi et
+<lb/>in habitum stabilem perduxi, quaeque a magistris duliceram,
+<lb/>quaeque ipse inveneram: tum si quid aliqua quaereus
+<lb/>circa ipsorum inventionem habebam, multa scripsi, in
+<lb/>multis me et medicis et philosophis quaestionibus exereens:
+<lb/>quorum pleraque in magno illo incendio, in quo
+<lb/>templum Pacis una cum multis aliis conflagravit. Cumque
+<lb/>diu moratus esset in progressione, praeter spem omnem
+<lb/>Antoninus, totum illud tempus memoratu dignissimam
+<lb/>mihi exercitationem praebuit, ut et opus de usu partium
+<pb n="19.20"/>
+<lb/>in septemdecim libris absolverim et quae deerant illi de
+<lb/>Hippocratis et Platonis decretis addiderim. Praeterque
+<lb/>ea praecepta quaedam anatomica quaerens quae Boetho
+<lb/>dederam, primum scilicet de partium usu , in fecundo demonstratum
+<lb/>est musculos cujusque digiti articulum moventus
+<lb/>a me adinventos esse, ad multum tempus mihi
+<lb/>omnes incognitos , ut et ante me omnibus. Distuli autem
+<lb/>in illa tractatione et de motu superiorum palpebrarum
+<lb/>dicere, quum rursus in ea id tantum demonstrassem, veros
+<lb/>non esse eos qui a nonnullis dicuntur. Postquam autem
+<lb/>et mihi et aliis quibus monstraveram , persuasi et hunc a
+<lb/>me inventum esse et caetera quaecunque in dissectionibus
+<lb/>aut perperam a prioribus dicta aut penitus omissa funi,
+<lb/>tum vero et anatomicas administrationes scripsi. Quumque
+<lb/>illi de partium usu ad multos antea pervenissent et.
+<lb/>studiosi- legerentur ab omnibus prope medicis, quotquot
+<lb/>veterem medicinam tractabant et philosophorum iis , qui
+<lb/>ex A ri fle telis fchola, quia etiam ejusmodi ah illo tractatio
+<pb n="19.21"/>
+<lb/>peracta erat; quidam malevoli per invidiam flagitiosis
+<lb/>urbem rumoribus impleverant, me, ut priores multum viderer
+<lb/>superasse, multa quae nequaquam apparerent, in
+<lb/>anatomicis scribere, nec enim fieri posse, ut omnibus lasuerint.
+<lb/>Ego itaque et ridebam et eos contemnebam. Indignati
+<lb/>autem amici hortabantur ut publice monstrarem
+<lb/>in aliquo e magnis auditoriis veritatem scriptorum a me
+<lb/>anatomicorum praeceptorum. Quumque mihi non perinaderetur,
+<lb/>jam enim ita eram affectus , ut gloriam non curarem,
+<lb/>arbitrati malevoli posse coargui me metuentem, non
+<lb/>contemnentem nugas suas, magnanimitatem assimulare,
+<lb/>neque dicteriis abstinebant; lu templum Pacis venientes
+<lb/>quotidie, ubi etiam antequam destagrasset, congregari omnibus
+<lb/>mos erat, qui artes doctrinarum tractarent. .Coactus
+<lb/>igitur ab amicis, quum dies complures publice demonstrasIem
+<lb/>me quidem nihil mentitum, multa vero priores ignorasse,
+<lb/>scripsi ab iis compulsus commentarios eorum quae
+<pb n="19.22"/>
+<lb/>monstrarant et dixeram. Inscripti vero sunt ii ignoratorum
+<lb/>Lyco in dissectionibus propter hanc causans. Quum
+<lb/>processi monstraturus nihil falsum me in anatomicis com- .
+<lb/>mentariis .prodidisse, in medium proposui omnium anatouncorum
+<lb/>libros data potestate singulis, qui aderant, proponendi
+<lb/>, quam vellent partem dissecari , ostensurum pollieens
+<lb/>quaecunque a prioribus discreparent, verea me fieripta.
+<lb/>Et proposito thorace et ab antiquissimis initium faciente
+<lb/>me et eorum libros proferente rogarunt quidam
+<lb/>praestantium medicorum , primas fedos obtinentes tempus
+<lb/>ne contererem. Sed quum Lycus Macedo, discipulus
+<lb/>Quinti viri summe anatomici, quaecunque ad suum tempus
+<lb/>inventa erant scripsisset; omissis aliis, fala adversiis eos
+<lb/>ab eo scripta cum meis conferrem. Eorum igitur voluutali
+<lb/>morem gerens in omnibus quotidie propositis ita feci,
+<lb/>Quae omnia memorare propterea necesse habui, ut ferrent,
+<pb n="19.23"/>
+<lb/>qui meorum aliquid lecturi essent, qua aetate quodque
+<lb/>scripserim, quaque de cauta, hinc enim cognoscent quaeque
+<lb/>imperfecte scripta tunsi ab iis quae pertecta strui elaborata
+<lb/>discernere, quaeque in arrogantium reprehensione
+<lb/>a doctrinis dijudicare. Haec autem adsignisicabo et in
+<lb/>sequentibus sicubi utus fuerit. Jam vero scriptorum a me
+<lb/>ea quae servata funt indicabo, ducto ab anatomicis initio,</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Primus est in his liber de ossibus scriptus
+<lb/>iis qui introducuntur. Post hunc autem alii sunt libri
+<lb/>ad tirones. Alter quidem eorum, venarum et arteriarum
+<lb/>dissectionem continens, alter vero nervorum. Est autem
+<lb/>et alius musculorum dissectio , compendio exacte docens
+<lb/>quaecunque in anatomicis administrationibus de musculis
+<lb/>fcripta sunt. Si quis autem velit post ossium dissectionem
+<lb/>ad anatomicas statim administrationes venire , potest is et
+<lb/>vasorum et nervorum dissertiones praeterire ut et mufculorum.
+<lb/>omnia quippe quae anatomes funt, in adminisuasionibus
+<pb n="19.24"/>
+<lb/>fcripta funi. Primus igitur in iis de manuum
+<lb/>est musculis et ligamentis. Alter vero de crurum musculis
+<lb/>et ligamentis. At tertius de artuum nervis atque vasis.
+<lb/>Quartus de moventibus genas et labra musculis et de iis
+<lb/>qui circa inferiorem maxillam furit; praeterea etiam de
+<lb/>moventibus caput et cervicem et scapulas. Quintus vero
+<lb/>de thoracis musculis et abdominis et lumborum et fpinae.
+<lb/>Sextus de instrumentis nutritionis, quae sunt intestina et
+<lb/>venter et jecur et lien et renes et vesica et quaeque alia
+<lb/>cum his. Septimus et octavus partium fpirabilium anatomen
+<lb/>continet. Septimus quidem earum, quae ad cor
+<lb/>attinent et pulmonem et arterias et mortui et vivi etiam
+<lb/>animalis. octavus autem earum quae ad totum thoracem.
+<lb/>Nonus vero et cerebri et spinalis medullae dissectionem
+<lb/>habet. At decimus oculorum et linguae et stomachi et
+<lb/>his continentium. Undecimus earum quae ad laryngem
+<pb n="19.25"/>
+<lb/>et quod vocatur os hyoides vel Fsurme et quae ipsis continuantur,
+<lb/>praetereaque nervorum qui ad ea perveniunt.
+<lb/>Duodecimus artori anum et venarum. Decimus tertius nervotum
+<lb/>qui a cerebro oriuntur. Decimus quartus eorum
+<lb/>qui a dorsi medulla. Decimus autem quintus genitalium
+<lb/>partium. Anatomicas igitur speculationis necessaria haec
+<lb/>sunt. At praeter necessaria alia utilia et haec scripta luntr
+<lb/>Librorum anatomicorum Marini XX. in IV. nostris epitome,
+<lb/>quemadmodum et omnium Lyci in duobus. Subfcribam
+<lb/>autem. cujusque ipsorum praecipua capita ac primum
+<lb/>eorum qui in prima tuus epitome, in quo Marini
+<lb/>librorum anatomicorum primi comprehenduntur. Scribit
+<lb/>autem in primo de VI. illis, totius speculationis prooeullum,
+<lb/>tum de cute, tum deinde de pilis, hinc de unguibus
+<lb/>et carnibus et adipe et pinguedine. lu fecundo de
+<lb/>glandulis et membranis et membranulis tunicis et peritouaeo
+<lb/>et subcingente et interscpto. lu tertio autem de
+<lb/>vasis ratione spectabilibus et venarum et arteriarum dessectione
+<pb n="19.26"/>
+<lb/>et an natura in arteriis fanguis contineatur. In
+<lb/>quarto autem, quae iunctio arteriae et quis usus et unde
+<lb/>incipiant, caeteraeque de iis quaestiones, tum deinceps de
+<lb/>ureteribus, de urinariis meatibus et uracho ex quo haeret,
+<lb/>pendetque foetus ad umbilicum et vasis seminariis et bilis
+<lb/>vasis et meatibus et glandulis et de .vate quod est a glandulis,
+<lb/>deque gutture, deque vasis mammarum in quibus
+<lb/>lac , deque tusis in corpore et quae vasis continentur. -Et
+<lb/>qui in quibus humores contineantur et lusa et de alimento.
+<lb/>In V. autem de iis quae in capite sunt, tum
+<lb/>- caeteris tum suturis adeoque de iis quae in facie sunt futuris
+<lb/>et juncturis et cunctis capitis ossibus, deque ipsius
+<lb/>et faciei foraminibus et de inferiori maxilla, ejusque toraminibus
+<lb/>et an sibi ipsi conjuncta siti Et de dentibus
+<lb/>et adjacente capiti gutturis osse et ipsi continuis quae ad
+<lb/>tonsillas tensa sunt. In VI. et de scroto scribit et tacto
+<pb n="19.27"/>
+<lb/>osse et coxendice et latere et pectore et scapulis et armis
+<lb/>summis et de claviculis et brachio et cubito, radio et
+<lb/>ossibus brachialis et digitorum et de femore et de iis quae
+<lb/>utrinque genu sunt ossa cartilaginea. ln II. autem commentariorum
+<lb/>nostrorum, in quo anatomicae Marini speculationis
+<lb/>est epitome. VII. et VIII. et IX. et X. Marini
+<lb/>librorum continentur. Capita vero in VII. qui de oranti
+<lb/>communione cum meningibus et aliis membranis , deque
+<lb/>totius faciei nervis deque crotaphitis. I. temporum muscutis
+<lb/>et mafeteribus et iis qui ad maxillas et labra pertinent
+<lb/>musculis et de praefectorum et qui ad maxillas
+<lb/>funi, musculis, dum de iis qui intra inferiorem maxillam
+<lb/>musculis; deque iis qui circa ipsam fieorsim et de naribus
+<lb/>et iis qui circa exortus earum deque iis qui in lingua,
+<lb/>tum de lingua ejusque musculis, atque etiam de oculorum
+<lb/>musculis. In VIII. autem Marini libro capita haec sunt,
+<lb/>de ore et de labris et dentibus et gingivis et columella
+<pb n="19.28"/>
+<lb/>et frumine et lingula et tonsillis et amygdalis et nato et
+<lb/>naribus et auribus et collo, ejusque musculis et musculo
+<lb/>qui sub latus est; deque eo qui sub. ventrem et de colli
+<lb/>natura. In nono vero de musicalis fepti transversi et
+<lb/>spinae et intercostalibus , I. abdominis; atque etiam de
+<lb/>brachii et scapulae musculis et cubiti et manus extremae.
+<lb/>In decimo vero de cubito et ejus musculis et cruribus,
+<lb/>ipsurumque musculis et articulo qui in genu esu At tertia
+<lb/>epitome undecim et duodecim et quindecim Marini
+<lb/>librorum est; scripsit autem Marinus in undecim quidem
+<lb/>capita. An feratur aliquid humoris a dotto in pulmonem;
+<lb/>et in efu spiritus in ventrem. Secundo vero de stomacho,
+<lb/>postque ipsum de gutture et de pulmone et corde et pericardii
+<lb/>thymo. In duodecimo vero tuae tractationis Ieripsit
+<lb/>Marinus de jecore et quae in eo est, bile et de liene
+<lb/>et ventriculo et mesenterio. In decimo vero tertio de
+<lb/>primis intestinis, tum de renibus et metere et vesica et
+<pb n="19.29"/>
+<lb/>uracho et urinario meatu ; postque ista de cole viri et
+<lb/>pudendo maris et feminae et de matrice et fetibus et
+<lb/>de testibus, quos geminos appellat; postque hos de glandolosis.
+<lb/>lu quarto autem decimo omnium quae fupra sunt
+<lb/>jecur, venarum dissectionem fecit. In X. autem U et de
+<lb/>ea quae a corde in jecur fertur vena, deque omnibus iis,
+<lb/>quae infra interseptum funt, postque ea de omnibus in
+<lb/>toto animali arteriis. At IV. epitome juxta reliquos V.
+<lb/>Marini libros post V. et X. ad XX. usque complectitur.
+<lb/>In texto autem decimo scripta sunt quae de cerebro quaeruntur
+<lb/>et apparent; ut an pulsatilis in ipsi, motus: et an
+<lb/>in ipsum respiremus: tum deinceps de spinae medulla et
+<lb/>involucris ejus. In XVII. de dominatu cerebri verba fecit.
+<lb/>In VIII. autem et X. de motibus ex voluntate et de
+<lb/>particularibus nervorum differentiis et unde quidam ipforum
+<lb/>exoriantur. In IX. vero et X. de nervis ortis a cerebro
+<pb n="19.30"/>
+<lb/>et de odoratu et unde incipiat ejus fenforium: et
+<lb/>de nervis qui ad oculos pertinent, quos et Herophilus et
+<lb/>Ludemus meatus vocant, tum *<space type="tab">    </space>*<space type="tab">    </space>*</p>
+<p>ii de morborum differentia et ille de differentia fymptonratum.
+<lb/>Sequitur autem illum de differentia morborum
+<lb/>liber unus qui horum causas docet. At illum de fymptomatum
+<lb/>disserentis, tres illi de causis fymptomatum et hos
+<lb/>illi de locis affectis, liber de temporibus morborum ex iis
+<lb/>est, qui curatricem tractationem praecedunt. Et is de
+<lb/>differentia febrium et is de plenitudine etis de tumoribus
+<lb/>praeter naturam , praetereaque is de causis evidentibus
+<lb/>et praeter hos is de continentibus et is de tremore
+<lb/>et rigore et palpitatione et convulsione et qui inscriptus
+<lb/>est ars medica.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Quatuordecim fiunt methodi medendi; et
+<lb/>duo curationum ad Glauconem, et de venae sectione tres.
+<pb n="19.31"/>
+<lb/>Primus quidem adversus Erafisttatum. Alter vero adversus
+<lb/>eos qui Romae erant Erasistrateos. Tertius praeter
+<lb/>hos alius curationum ex mea sententia compositus. Est
+<lb/>et is de tabe e therapeuticis. Datus porro est cuidam
+<lb/>amicorum parvus libellus, cujus nunc ad multos delapsi,
+<lb/>exemplum accepi titulum ferens, consilium pro puero
+<lb/>epileptico. Sed therapeutico operi adscripserit quis et
+<lb/>tres de alimentorum facultatibus et eum de attenuante
+<lb/>victus ratione et de probis pravisque alimentorum succis.
+<lb/>Nihilo praedictis minus medendi operis fuerint et ii de
+<lb/>Erasistrati curandi rationibus ; et Glauconi philosopho dati
+<lb/>duo. At is de Hippocratis victus ratione in morbis acutis
+<lb/>et cum his quidem poni queat, ponatur vero et cum
+<lb/>commentariis in Hippocratem factis, in quibus multa medendi
+<lb/>praecepta continentur, quemadmodum et dignoscendi
+<lb/>et praenoscendi.
+</p>
+<pb n="19.32"/>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Primi quidem tres font de diebus criticis,
+<lb/>et praeter hos secundi, tres de crisibus. Tum opus de
+<lb/>pulsibus, in quo primo sunt IV. de ipsorum differentia,
+<lb/>secundo vero alii totidem de dignotione et tertio -prae ter
+<lb/>eos, pari numero de ipforum causis; quarto autem de
+<lb/>praenotione ex ipsis ; fexdecim universi. Et feorfim extra
+<lb/>ipsius is de usu pulsuum tironibus scriptus, in quo nonnulli
+<lb/>quaesierunt, cur febrientium proprius pulsus dictus
+<lb/>non sit? Quibus respondimus majorem esse quam pro
+<lb/>tironibus speculationem, si magnam quaesitionem fortite
+<lb/>sit. Sed initio ejus libri tantum diximus, duas medicis
+<lb/>opiniones fuisse; alteram quidem existimantium sentire te
+<lb/>et arteriarum contractionem, alteram autem insensilem eam
+<lb/>esse affirmantium; et volebamus tironem in faciliori prius
+<lb/>exerceri, in qua insensilia dicitur esse contractio. Porro
+<lb/>juxta hanc sectam perfuasi eramusscbris proprium signum
+<pb n="19.33"/>
+<lb/>in pulsibus nullum esse: juxta alteram vero, quam in
+<lb/>magno librorum XVI. opere scripsi, signum id dictum nobis
+<lb/>esu At qui a praeceptoribus non didicerunt, sed gubernatoribus
+<lb/>ex libro, sicuti est in proverbio, similes ista
+<lb/>quaerunt. Mihi vero sunt et * dictum est, aliam esse
+<lb/>tironum institutionem, aliam eorum qui perfecte omnia
+<lb/>edocentur. Scriptus autem mihi est et alius quidam liber
+<lb/>unus, in quo librorum sexdeoim fynopsin feci. Extra.hos
+<lb/>vere omnes octo libri sunt; Archigenis tractationis de
+<lb/>pulsibus et expositionem et usum continentes. In hac
+<lb/>parte artis et tres de difficultate spirandi quis collocarit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Neque alium quemquam librorum qui a
+<lb/>me Iunt amicis dati, speravi habituros multos, neque libros
+<lb/>eos qui Hippocratis scripta explanant. Primo enim
+<lb/>nullum eorum memet exercens, in istos. unquam commentardos
+<lb/>scripseram ; quemadmodum feci totius medicae speculationis
+<pb n="19.34"/>
+<lb/>in quavis parte paratis mihi iis, quibus omnia,
+<lb/>quae in arte medica ab Hippocrate dicta sunt continentur,
+<lb/>doctrinam habentia et perspicuam simul et undequaque
+<lb/>elaboratam. Seorsim enim de diebus criticis scripsi ex
+<lb/>Hippocratis sententia, privatim vero de crisibus, privatim
+<lb/>autem de difficultate spirandi et unoquoque ceterorum.
+<lb/>Universamque medendi methodum similiter quatuordecim
+<lb/>libris construxi omnes therapeutici ac praeterea, qui ex
+<lb/>illius mente tuus. Quumque in singulas ejus dictiones
+<lb/>scirem expositiones multis ante me non absurde scriptas
+<lb/>esse, si quid mihi non recte dixisse videbantur, arguere
+<lb/>supervacaneum putabam. Id vero ostendi in illis quos
+<lb/>nuper deprecaris dedi; raro quicquam locutus in ipsis contra
+<lb/>eos qui commentarios istos exponunt. Primo enim
+<lb/>neque ipsorum commentarios Romae habebam, quum libri
+<lb/>quos possederam, omnes in Asia mansissent. Si cujus igitur
+<lb/>memineram improbe dicti ab eorum aliquo, ut magnopere
+<lb/>laederent in operibus artis qui ipsis credidissent, id
+<pb n="19.35"/>
+<lb/>annotabam. Cetera autem omnia ex mea sententia dixi,
+<lb/>nulla eorum facta mentione, qui aliter interpretantur. Et
+<lb/>commentarii in aphorismos; et iu eum de fracturis et
+<lb/>eum de articulis; praetereaque in praenotiones; et libros
+<lb/>de victus ratione acutorum; et eum de ulceribus; et capitis
+<lb/>vulneribus, et lu primum epidemiorum ad eum medum
+<lb/>scripti sunt. Postea vero quum quendam audissem,
+<lb/>pravam aphorismi cujusdam expositionem laudantem, aliquibus
+<lb/>quaecunque de cetero dedi, publicam aeditionem
+<lb/>spectans , non proprium tantum ingenium eorum qui acceperaut,
+<lb/>ita compotiri. Ii vero sunt epidemiorum quidem
+<lb/>morborum, qui in secundum et tertium et sextum scripti
+<lb/>sunt commentarii ; et praeter hos ejus de humoribus et
+<lb/>de alimento et praedictione et de natura hominis et de
+<lb/>medici officina; ut et in eum de locis et abice et aquis;
+<lb/>quem ego ajo de habitationibus et aquis et anui tempovibus
+<lb/>et regionibus inscribendum fuisse ; insuper vero VII.
+<lb/>qui in aphorismos, HI. vero in eum de fracturis, IV. autem
+<pb n="19.36"/>
+<lb/>in eum de articulis, HI. vero in praenotiones in eum
+<lb/>porro: de rictus. ratione in acutis, Ili. quidem in germanam
+<lb/>ejus partem:, unum autem in ea, quae ipsi adjacent.
+<lb/>De. ulceribus autem. et de capitis^ vulneribus utrumque
+<lb/>uno libro exposui, Primum autem vulgarium , quemadmodum
+<lb/>et tertium tribus utrumque; secundum vero fex;
+<lb/>octo vero sextum. . In librum autem de humoribus tres
+<lb/>mihi commentarii scripti sunt:- ut et in prognostica et in
+<lb/>eum de medicatrina; et in eum de locis et aere et aquis,
+<lb/>quem - equidem de habitationibus et aquis et anni temporibus
+<lb/>.et locis inscribi oportuisse dico ; in eum autem de
+<lb/>alimento IV. mihi commentarii scripti sunt, in eum vero
+<lb/>de natura hominis duo; quibus jam perfectis, quum aud
+<lb/>isse m a nonnullis traduci librum quasi non germanum
+<lb/>HI. scripsi, hac inscriptione. Quod in aliis. scriptis tuis
+<lb/>videatur Hippocrates eandem habere sententiam cum eo
+<lb/>de natura hominis. Ad Hippocratem autem et haec pertinent.
+<lb/>De ratione victus fecundum Hippocratem in acutis
+<pb n="19.37"/>
+<lb/>morbis; quemadmodum et glossarum ejus expositio; et. advertus
+<lb/>Lycum de aphorismo, cujus initium : quae crescunt
+<lb/>plurimum habent innatum calorem; quemadmodum et contra
+<lb/>Iulianum methodicam, de iis in quibus Hippocrateos
+<lb/>aphorismos incusarat. Ad Hippocratem quoque attinet et
+<lb/>alius liber parvus in quo dico , optimum medicum prorsus
+<lb/>etiam philosophum esse; inscribitur porro liber is et
+<lb/>breviori titulo sic. *</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">n primum quidem Erasistrati de febribus
+<lb/>HI. scripti sunt, HI. autem de febribus primi Erasistrati
+<lb/>operis medendi commentarii sunt: ipsum vero medendi
+<lb/>opus titulum quidem habet, de Erasistrati curandi rationibus
+<lb/>, id autem commentariis V. scriptum est.. Sunt autem
+<lb/>Erasistrati quoque anatomes libri tres et de venae sectione
+<lb/>duo ; et is qui adversus ipsum Erasistratutn scriptus est et
+<lb/>is ad eos, qui Romae erant, Erasistrateos. Ad Erasistratnm
+<pb n="19.38"/>
+<lb/>autem et liber ille attinet, in quo quaerimus an natura
+<lb/>tanguis in arteriis contineatur; quemadmodum et is de
+<lb/>usu respirationis et HI. de naturalibus facultatibus, qui
+<lb/>judicium continent omnium quae in universa dictis de
+<lb/>naturalibus actionibus scripsit Erasistratus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">octo quidem de Afclepiadae placitis infcripti.
+<lb/>Parvus autem alius inscriptionem .habens, de fissistantia
+<lb/>animae fecundum Asclepiadem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Theodae introductionis commentarii v.
+<lb/>de scriptis Menodoti Severo xl. librorum Sempronia contra
+<lb/>tectas duo. Descriptiones empiricae.. De medica experientia.
+<lb/>De empiricorum dissensione HI. Contra objecta
+<lb/>iis de dissensione empiricorum et Theodae summarii
+<lb/>commentarii Ili. In librum Menodoti Severo. Exhortatio
+<lb/>ad medicinam. Synopsis Heraclideorum de empirica
+<lb/>lecta libri VII.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Methodicae tectae libri VI. Ad objecta
+<lb/>Juliani a d vertus aphorismos Hippocratis.
+</p>
+<pb n="19.39"/>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">Quum viderem omnes homines in quibus
+<lb/>contendunt et demonstraturos fe .promittere et alios arguere
+<lb/>conari; nihil ita studui omnium primum addiscere,
+<lb/>ut demonstrativam speculationem. Et postulari a philosoplus,
+<lb/>.illos enim audiebam ipsam docere, si quid aliud
+<lb/>quoque in logica philosophiae parte docerent, id in poRerum
+<lb/>servarent; dolorem autem ceu partus demonstra tionum
+<lb/>desiderii mei sedarent, docentes quae tandem sit
+<lb/>via ac ratio quam qui .didicerit et alio demonstrativum
+<lb/>fermonem dicente, ad amussim cognoscat an re vera talis
+<lb/>sit, an veluti nummus quidam adulterinus probo quidem
+<lb/>similis videatur, re autem vera improbus sit; et ipfe queat
+<lb/>lu singulis de quibus quaeritur via quadam utens ad ea
+<lb/>invenienda pervenire. Quum igitur me omnibus per illud
+<lb/>tempus celebribus et Stoicis et Peripateticis tradidissem,
+<lb/>multa quidem alia didici logica praecepta, quae posteriori
+<lb/>tempore perpendens ad demonstrationes inutilia comperi:
+<lb/>paucissima vero utiliter quidem ipsis quaesitu et propositum
+<pb n="19.40"/>
+<lb/>fcopum contequi desiderantia, sied de quibus etiam illi inter
+<lb/>fe dissentiant, quaedam vero naturalibus notionibus
+<lb/>contraria. Ac per deos quantum in praeceptoribus meis
+<lb/>erat, in Pyrrhoniorum dubitationem ipfe quoque incidissem,
+<lb/>nisi geometriam et numerandi et computandi artem tenuissem;
+<lb/>in quibus plurimum tusi patre edoctus, ab initio
+<lb/>processeram, qui ab avo et proavo contemplationem eam
+<lb/>acceperat. Videns igitur, non siclum evidenter veras mihi
+<lb/>apparere eclipsium praedictiones et horologiorum ac clepfydrarum
+<lb/>constructiones , ceteraque adeo quae in arelliteutonica
+<lb/>excogitata sunt, optimam esse duxi formam geo-.
+<lb/>metricam , demonstratione uti. Etenim et ipfos disserendi
+<lb/>peritissimos et philosophos non modo inter te, ted tecum
+<lb/>etiam dissidentes reperiebam, laudantes tamen omnes pariter
+<lb/>geometricas demonstrationes. Ex eo itaque magis
+<lb/>adhuc intellexi, oportere quidem absistere ab iis quae. illi
+<lb/>dicunt, sequi autem formulam linearum: demonstrationum.
+<pb n="19.41"/>
+<lb/>Inter te quidem discrepare dico philosophos in rationali
+<lb/>speculatione et Peripateticos et Stoicos et Platonicos; a
+<lb/>fe vero ipsis rursum seorsim uniuscujusque earum sectarum
+<lb/>homines : parva tace quaedam est inter Peripateticos dissensio,
+<lb/>magna vero inter Stoicos et Platonicos. Quicunque
+<lb/>ergo volunt in linearibus demonstrationibus exerceri,
+<lb/>institui nonnihil eos in illis contulo: post illas vero nosuram
+<lb/>perlegere de demonstratione tractationem, quam XV.
+<lb/>libris confeci.^ Alia .vero multa scripsi memet exercens,
+<lb/>quorum nonnulla quidem perierunt in eo, quod accidit,
+<lb/>incendio, quum templum Pacis conflagravit; quaedam autem
+<lb/>amicis data apud multos nunc salva fiant, scuemadmodum
+<lb/>et. alia nostra. Verumtamen et eorum conamentortorum
+<lb/>, quos scripsi, alios quidem a me datos amicis,
+<lb/>alios vero a famulis qui furripuerant , editos ab aliis denuo
+<lb/>accepi: funt autem in iis tres quidem in librum de
+<lb/>interpretatione Aristotelis, quatuor vero in priorem de
+<lb/>syllogismis, quemadmodum iane et infecundum totidem
+<pb n="19.42"/>
+<lb/>numero. Inscribunt porro ipsus fere omnes nunc resulutionum
+<lb/>priorum, quemadmodum et posteriorum, eos de
+<lb/>demonstratione : porro ipse Aristoteles priorum quidem
+<lb/>veluti de syllogismo scriptorum a se meminit; posteriorum
+<lb/>autem ut de demonstratione; quorum etiam ipsorum commentarii
+<lb/>mei supersunt, in priorem quidem sex, in fecun.
+<lb/>dum vero quinque. Horum commentariorum omnium
+<lb/>nullus tanquam ad editionem scriptus est, quemadmodum
+<lb/>neque siex ii in Theophrasti librum, quem de affirmatione
+<lb/>et negatione scripsit. At priorem in priorem dictionis
+<lb/>studenti, aliis qui rogarent feci. Decem autem praedicamentorum
+<lb/>nec feci mihi ullum talem commentarium antea
+<lb/>nec aliis dedi : eaque re postea tandem cuidam finialium,
+<lb/>qui poposcerat, commentarios habere eorum quaecunque
+<lb/>istum librum attinent, ad solutiones eorum quae
+<lb/>in ipfo quaeruntur, communicare jussi meos commentarios
+<lb/>iis dumtaxat, qui apud praeceptorem librum eum legissent
+<lb/>aut omnino sane prius introducti fuissent per alios libros
+<lb/>expositionum, quales ii Adrasti et Afpasii fune Puer autem
+<pb n="19.43"/>
+<lb/>etiam tum, quum me primum pater ei qui logicam
+<lb/>speculationem Chrysippi et celebrium Stoicorum doceret,
+<lb/>tradidit, feci insuto Chrysippi syllogisticorum librorum
+<lb/>commentarios. Et hos visi postea quidam sunt qui haberent
+<lb/>, Pergatur quidem relictos cum multis commentariis,
+<lb/>quos adolescentulus feceram , editos autem a famulo quibusdam
+<lb/>qui poposcerant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">Quae autem ego post opus de demonstratione
+<lb/>scripsi, fusius elaborata, iis quae concise in illis dicta
+<lb/>fuerant, haec funti De necessariis ad demonstrationes I. De
+<lb/>propositionibus praetermissis in tractatione demonstrationum
+<lb/>I. De aequipollentibus propositionibus I. De demonstrationibus
+<lb/>propter quid I. De syllogismorum numero I.
+<lb/>De exemplo II. De inductione I. De imagine 1. De
+<lb/>verisimili L De similitudine HI. De principiis ex fuppositione
+<lb/>I. De iis quae secundum genus et speciem et
+<lb/>coujugatis ipsis significatis nobis, spontanea S. extemporali
+<lb/>voce I. De possibili L De iis quae multifariam dicuutur
+<pb n="19.44"/>
+<lb/>III. De communibus et propriis in artibus I. De
+<lb/>sermonibus qui te spias evertunt I. De propositionibus
+<lb/>contingentibus I. De mixtis propositionibus et syllogismis
+<lb/>L Quomodo discernenda sit negotialis quaestio rei ab ea
+<lb/>quae nominis et significati I. De Clitomacbo et demonstrationis
+<lb/>ejus solutionibus I. De communi. ratione II.
+<lb/>De optima doctrina adversus Phavorinum pro Epicteto I.
+<lb/>De usu syllogismorum. De usu praeceptorum ad fy.llo-.
+<lb/>gifmos I. et II. De optima tecta I. De nominum rectitudine
+<lb/>HI. Eie eo quodque eorum quae sunt et unum
+<lb/>esse et plura. De eo quod oppositis unum et idem ex
+<lb/>necessitate consequens esse impossibile sit .I. De demonstrativa
+<lb/>tecta I. De rationali altera et speculatione I.
+<lb/>Dialogi ad philosophum et seorsim de eo quod fecundum
+<lb/>communes notiones. Adversus eos qui contumeliose accipinus
+<lb/>nomina I. De propriis et communibus in artibus.
+<pb n="19.45"/>
+<lb/>De artium constitutione HI. De significatis ex voce, fpeciei
+<lb/>et generis et ipsis adiacentibus. Synopfis demonstrativae
+<lb/>contemplationis I. De judicid discrepantium in de-.
+<lb/>cretis. Quod a prima substantia inseparabilis sit quantitas I.
+<lb/>De priori I. De demonstratione per impossibile I. De
+<lb/>iis quae sui causa sicut I. De iis.quae multipliciter dis
+<lb/>cuntur II. De quaestione fecundum nomen et significatum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="indent">De moralis autem philosophiae quaesitis
+<lb/>quaecunque mihi videntur per intra scriptos libros
+<lb/>declaravi. De propriorum cuique affectuum et peccatorum
+<lb/>dignatione II. .De moribus 1U Adversius Favorinum
+<lb/>pro Socrate. De indolentia I. .De fine secundum
+<lb/>philosophiam I. De eorum congressu qui demonstrant. ad
+<lb/>auditores I. De iis qui clam legunt L De peccatorum
+<lb/>et- poenae aequalitate I. De consolatione .I. De comum-:
+<lb/>ratione Menarchi.rn aula ad Bacchidem et Gyrum L De
+<lb/>congressu in dialogis I. Ad forensies oratores I. De voluptate
+<pb n="19.46"/>
+<lb/>et labore L. De consentaneis cuique vitae generihus
+<lb/>I. De publice dictis adversius fectarios I. De concordis
+<lb/>I. De pudore II. De publice dictis contra adulatores.
+<lb/>II. De calumnia in quo et de vita tua. Saturnales
+<lb/>VII. in uno. Adverfus fectarios. De publice dictis
+<lb/>coram Pertinace I. Quatenus parui ducere oporteat honorem
+<lb/>et gloriam apud vulgus. De testamentorum factione.</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p rend="indent">De Platonis lecta I. De medice dictis
+<lb/>in Platonis Timaeo commentarii IU. . Ad fodales feu
+<lb/>Plato. De propriis opinionibus HI. .De ea quae fecundum
+<lb/>Platonem est rationali contemplatione. Platonicorum
+<lb/>dialogorum compendia UHI. De iis quae in Philebo
+<lb/>funt transitionibus I. De animae partibus et facultatibus
+<lb/>HI. Quod corporis temperamenta animae facultates
+<lb/>sequuntur ll. et alius ex alia editione. De Hippocratis
+<lb/>et Platonis decretis IX.
+</p>
+<pb n="19.47"/>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+
+
+<p rend="indent">In eum de interpretatione commentarii III.
+<lb/>Priorum resolutionem in priorem ultra VI. In priorem
+<lb/>posterioris commentarii VI. in posteriorem commentarii v
+<lb/>In Χ. praedicamenta commentarii 1U In eum Theophrasti
+<lb/>de affirmatione et negatione commentarii fex. In eum
+<lb/>de eo quot modis commentarii HI. In primum movens
+<lb/>immotum. In eum de dictione Eudemi commentarii III.
+<lb/>De demonstrationibus quare I. De contingentibus propositronibus
+<lb/>et syllogismis I. De syllogismis ex mixtis propositionibus
+<lb/>I. De captionibus peues dictionem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+
+
+<p rend="indent">De rationali secundum Chrysippum contemptatione
+<lb/>commentarii 111. Chrysippi syllogisticae primae
+<lb/>commentarii HI. Secundae L De rationali facultate
+<lb/>et contemplatione Uls De usu praeceptorum ad fyllogifmos
+<lb/>1. Quod geometrica resolutio praestantior sit quam
+<lb/>Stoicorum 1. De usu praeceptorum ad syllogismos li.
+</p>
+<pb n="19.48"/>
+</div>
+<div type="textpart" subtype="chapter" n="18">
+
+
+<p rend="indent">De felici fecundum Epicurum et beata
+<lb/>vita II. De caduca voluptate fecundum Epicurum II.
+<lb/>Quod efficientia voluptatem imperfecte ab Epicum dicta
+<lb/>sunt I. De voluptuaria sectari An philologia utilis sit ad
+<lb/>morum philosophiam I. . De iis quae adversius Sophistas I.
+<lb/>Metrodnri epistola ad Celsum Epicureutn. Epistola Pudentiani
+<lb/>Epicurei.<space type="tab">    </space>...</p>
+</div>
+<div type="textpart" subtype="chapter" n="19">
+
+
+<p rend="indent">De vocalibus quae apud Atticos scriptores
+<lb/>XLVI1I. Civilium apud Eupolin vocabulorum Ili.
+<lb/>Civilium vocabulorum quae apud Arista phanem v Civilium
+<lb/>vocabulorum quae apud Cratinum II. Propriorum
+<lb/>comicis vocabulorum .. exempla I; .An utilis lectio sit iis,
+<lb/>qui erudiuntur , vetus comoedia. Ad eos qui reprehendunt
+<lb/>voce foloecissantes VI. in aliis VH. Atticorum insigne
+<lb/>I. De perspicuitate et obscuritate. An possit aliquis
+<lb/>esse criticus et grammaticus I..</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

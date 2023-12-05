@@ -1,0 +1,1700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De fasciis</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg005.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Pseudo-Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">18a</biblScope>
+              <biblScope unit="ed2vol">12</biblScope>
+              <biblScope unit="pp" from="768" to="827">768-827</biblScope>
+              <date>1829</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x18a">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Operum Hippocratis Coi, et Galeni Pergameni archiatrΩn Tomus XII. Continens quae ad chirurgiam spectant. Cum figuris aeneis suo loco insertos. Renatus Charterius, Vindocinensis, Doctor Medicus Paris. Regis Christianissimi Consiliarius Medicus, ac Professor, plurima interpretatus, universa emendavit, instauravit, notavit, auxit, secundum distinctas Medicinae partes in tredecim Tomos digessit, &amp; conjunctim Graecè &amp; Latinè primus edidit</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">12</biblScope>
+              <biblScope unit="pp" from="469" to="499">469-499</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x12">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg005.verbatim-lat1">
+<pb n="18a.768"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="18a.768"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE FASCIIS LIBER.</head>
+
+
+<p rend="indent">Non inconsulto mihi videtur priscus Hippocrates
+<lb/>aliis artibus inspectis ab agendi munditie ducto
+<lb/>exordio pronunciasse. Nobis Iane placet omnino omni
+<lb/>arti mentem incumbere. Etenim quaecunque opera decore
+<lb/>ac recte ministrant, decore. singula recteque efficienda furti
+<lb/>et quae cum munditie etiam munde et quae cum celeritale
+<lb/>celeriter et quae citra dolorem manu facienda funt
+<lb/>perquam Iucunde et cetera eodem modo omnia quae prorimis
+<pb n="18a.769"/>
+<lb/>artis professoribus multo praeclarius agenda sunt.
+<lb/>Etenim, ut nonnullis in operibus videre licet, usu periti
+<lb/>non alia re imperitis et artifices artium expertibus; quam
+<lb/>celeritate et concinnitate praestant. Quapropter faepenumero
+<lb/>prae alio quocunque artifice decet medicum in omnibus
+<lb/>animo contendere, quo probe suo fungatur munere,
+<lb/>quod praecellentem materiam sortiatur. Etenim sive fecet,
+<lb/>sive urat, sive etiam deliget, feu quid aliud manu
+<lb/>moliatur, non modo cum utilitate agere, test munditiei
+<lb/>et concinnitati studeat oportet, quemadmodum et ipse
+<lb/>rursum alibi pronuntiat. Deligatione duae sunt species
+<lb/>et quae. fit et quae facta esu Quae fit, celeriter, citra
+<lb/>dolorem , prompte , concinne efficienda est ; , celeriter quidem
+<lb/>ut absolvatur operatio , citra vero dolorem ut facile
+<lb/>elaboretur, prompte autem ut ad omnia praesto sit, conclune-
+<lb/>denique ut adspectum oblectet. Etenim affectus
+<lb/>quidem. nonnullis corporis partibus aborti congruentem
+<lb/>deligationem .postulant. Postulant vero homines per su
+<lb/>multoties deligationum concinnitatem. Quare tum solitatriorum,
+<pb n="18a.770"/>
+<lb/>tum aliorum omnium sele loro parantium gratia,
+<lb/>idoneas singulis -corporis partibus deligationes tum simplices,
+<lb/>tum. multiplices scire necesse est. Nec. ignorandum
+<lb/>nonnullis quidem partibus utrasque, quibusdam vero
+<lb/>alteram, multiplicem dico.,- .convenire , etiamsi: quibusdam
+<lb/>focus videatur. - Sed consentaneum. est hanc controversiam
+<lb/>primum diluere. Nonnulli multiplicium deligationum inutilitatem
+<lb/>damnant.noxium ipsas usum praestare prulitentes,
+<lb/>dabili quidem demonstratione nulla, feli priscorum
+<lb/>virorum testimoniis ipsi nituntur; atque in primis Hippocratem
+<lb/>introducunt haec pronuntiantem r quamobrem etalia
+<lb/>multa mutilant ac laedunt qui decoris, hoc est mulo
+<lb/>tiplicibus deligationibus delectantur. Deinde Mantiam
+<lb/>qui narrat, quendam vicum cui pharmacopola caput et
+<lb/>faciem. multiplici .deligatione deligaverat, qua deligatione
+<lb/>orali prociderunt; idque ipsis merito contigisse videtur,
+<lb/>propterea quod inaequalis fit fasciarum occursus, qui mus-.
+<lb/>tiplicitate corporis partes in phlegmonas et abscessus potest
+<lb/>adducere. - Rationi consentaneum est eos nosse quae
+<pb n="18a.771"/>
+<lb/>proferunt, haec non a fasciarum multiplicitate, sed lab his
+<lb/>utentium et deligationem constringentium ineptia contigisse.
+<lb/>Oportebat namque^ deligare, quemadmodum pronumciat
+<lb/>Hippocrates. In his autem delirationis sunt compressio
+<lb/>quidem, quo incumbentis neque abscedant, neque
+<lb/>admodum obnitantur, sed fulciantur quidem, non tamen
+<lb/>cogantur.. Ipsas autem decebat testem Hippocratenr adducentes
+<lb/>sententiae residuum addere. Non enim simpliciter
+<lb/>ipsam .extulit, fessi et alia malta -oblaeduntqui decoris
+<lb/>deligatlonibus delectantur; fed hoc apposito citra. menrem.
+<lb/>At ex iis nunc a me docendis perpendant multiplices
+<lb/>deligationes ab Hippocrate non ablegari; nam ipfe
+<lb/>libro- de medici officina, de fasciatione disserens, quum
+<lb/>quae virtus insit deligationi quae fit, ac deinceps deligationi
+<lb/>quae jam facta est pronunciavit, sic eloquitur, recte
+<lb/>ac decore; Illud quidem recte quod conserat posuit, hoc
+<lb/>vero decore quod eleganter exstructa sit deligatio. Postea
+<lb/>t vero est dictionis decore explicationem affert decore quidem,
+<lb/>simpliciter distincte. Simpliciter; non pro tota
+<pb n="18a.772"/>
+<lb/>significatione, sed pro significationis parte posuit, ut simplex
+<lb/>deligatid distincta fit. Id autem dilucidum efficit
+<lb/>his additis aut similibus et aequalibus , aequaliter et simi-.
+<lb/>liter; aut inaequalibus et dissimilibus, inaequaliter et
+<lb/>dissimiliter. Species autem simplex orbicularis, ascia,
+<lb/>sima, oculus, rhombus, semifectum. Congruat species
+<lb/>speciei et membrorum devinciendorum affectioni.. Si qua
+<lb/>namque simplex sit deligatio, haec revera orbicularis debet
+<lb/>esse; si qua vero ascia sit, haec sima existit. Sic
+<lb/>enim quae prorsus aequalis est sibi ipsi erit similis, quae
+<lb/>vero. inaequalis dissimilis. . Utrum sibi persuadent jam Hip-.
+<lb/>pocratem multiplices deligationes aversari et elicere conjici
+<lb/>entes, asciam et oculum et rhombum et semifectum
+<lb/>multiplices esse .deligationes? An praeterea ipsis cummemoremus
+<lb/>historiam de claviculae fractura in libro de articulis
+<lb/>scriptam; qua patet Hippocralem grue varia aleligatione
+<lb/>usum fuisse? Serant autem quod quibusdam in
+<lb/>partibus, ut in femore pristinum in articulum reposito et
+<lb/>brachio et cubito et ceteris pluribus, non alia quom multiplici
+<pb n="18a.773"/>
+<lb/>deligatione uti non detur. verum hactenus dicta
+<lb/>sufficiant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Ad artificem vero tum fasciarum, tum
+<lb/>deligationis doctrinam orationem reducamus; certoque.
+<lb/>sciamus in primis qua in re- discrepent fasciae inter fe
+<lb/>materia, figura, longitudine, latitudine et structura. Materra,
+<lb/>quoniam ipsarum nonnullae fiunt laneae, quaedamlineae,
+<lb/>aliae membraneae, quum ipsarum usus non unus
+<lb/>neque similis, sied silveritis exisset. Propterea conemur
+<lb/>in operum functione congruenter affectui delectum facere.
+<lb/>Quae itaque adstrictione opus habent, lineas in ipsis usarpemus;
+<lb/>quae vero adstrictionem non desiderant., quod haec
+<lb/>quibusdam inflammationibus adversetur et continentiam
+<lb/>solam nixumve aut tegumentum postulent, in his laneas.
+<lb/>Membraneis denique utemur, quemadmodum in nasi et
+<lb/>maxillae fractura agglutinato parii devinclendae fafciae i
+<lb/>extremo usus est Hippocrates. Figura, quo hae convolo-.
+<lb/>tae, illae scissae, aliae consutae sint r convolutae funt
+<lb/>quae ex habena in insignem longitudinem factae funt,
+<pb n="18a.774"/>
+<lb/>quales existunt quae in membrorum fracturis usurpantur.
+<lb/>Scissae quae uno constant linteo, extremis aut aliis etiam
+<lb/>quibusdam partibus discissae, quales capiti perforato admoveutur,
+<lb/>quae cancri vocantur, quadricrures , sex cruces
+<lb/>aut octicrures. Consutae, quae ex pluribus habenis compofitae
+<lb/>salis figuris dissimilibus propugnaculum habent,
+<lb/>quales sunt suspendentes , accingentes aut mammifasciae
+<lb/>aut quae mammis et loco sedem ambienti congruunt.
+<lb/>Longitudine, quod aliae sint oblongiores, aliae breviores.
+<lb/>Latitudine, quod aliae sint angustiores, aliae latiores. At
+<lb/>ut fasciarum longitudo , sic et latitudo partibus devinciendis
+<lb/>pro longitudinis et latitudinis proportione apparanda
+<lb/>est. Structura denique inter fe fasciae differunt^ quod
+<lb/>aliae textae sint , aliae coactae , aliae nexae. Texturum
+<lb/>nonnullae est hoc opus constructae sunt, nonnullae vero
+<lb/>ex tela parantur quae ad alium usum contexta scinditur.
+<lb/>Hasce in vulneribus devinciendis plerumque usurpamus,
+<lb/>illis ad hoc contextis venatores ad crurum devinciendorum
+<pb n="18a.775"/>
+<lb/>tutelam, ut et vocatis manicis utuntur. Coactas
+<lb/>autem ut et aurigae ad laterum continentiam usurpamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Ex omnibus praeceptis illud, sit publicum,
+<lb/>Devincientibus medicis fasciarum copiam suppeteudam esse,
+<lb/>quo prostantibus quam plurimis uti queant. Quum autem
+<lb/>delectus quidam adest, fuluiae eligendae sunt, quemadmodum
+<lb/>praecipit Hippocrates; Ec enim pronunciat: sunto
+<lb/>fasciae decorae, mundae, tenues, leves i molles, integrae,
+<lb/>tensionem ferentes, paullo valentiores, neque futuras,
+<lb/>ncque exstantias habentes. Enimvero mundas esse fascias
+<lb/>oportet, quod sordidae foedae sint, perfusiones non admittant
+<lb/>et aliquam in perfusionum cinno laesionem invehaut.
+<lb/>Sed proprius sit color, ne a purpura aut alia quadam
+<lb/>tinctura idem noxae oboriatur, neve etiam nobis
+<lb/>fluentis sanguinis imaginatio promoveatur aut coloris simiIlludo.
+<lb/>.Tenues, ne majorem distributionibus molem constituant.
+<lb/>Molles,. ne ob duritiem contusio concitetur. Leves
+<lb/>ad huc, ne ob incumbens ipsis grave pondus onerosa detigatlo
+<pb n="18a.776"/>
+<lb/>contingat. t Neque vero saluiae suturas sortiantur
+<lb/>inaequales, ea re contusionem allaturae; imo neque exstantias,
+<lb/>hoc est neque fimbrias, neque institas aut ora-.
+<lb/>rum obversiones fibrarum modo eminentes. Quae namque
+<lb/>exstant inaequalem deligationem reddunt, quae vero eminent
+<lb/>distributionem fieri facile non ferunt. At scindenti
+<lb/>fascias non transversaria villo, fed directe tectione, prout
+<lb/>tela contexitur, scindendum est, ut stamine dirigatur collimanti.
+<lb/>Hoc enim modo - lintea facile scinduntur, fecus
+<lb/>autem ad tramam. Praeterea et quae ducta ad stamen
+<lb/>ferie scinduntur, ad partium devinciendarum posituram
+<lb/>continendam robustiora tuor.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">At vero deligationum, ut antea protulimus,
+<lb/>quaedam tuus simplices, quaedam vero multiplices.
+<lb/>Herum etiamnum aliae a partibus devinciendis, aliae ab
+<lb/>eventis, aliae per effigiei ad animalia translationem appellationem
+<lb/>sortitae funti A partibus itaque devinciendis
+<lb/>-oculus, nasus, inguen atque his consimiles. Ab animalibus
+<pb n="18a.777"/>
+<lb/>cancer, accipiter, aries, lepus, testudo. Ab eventis,
+<lb/>ut vallum tum coniunctum, tum disiunctum, opercula,
+<lb/>habenae atque his similes, At hujusmodi deligationum
+<lb/>quaedam hoc ipso deligationes sunt, ut tholus, basilicus,
+<lb/>scaphula, discrimen; quaedam vero deligationes sunt et
+<lb/>laquei , ut lepus auritus , pastoralis et his similes. Praeterea
+<lb/>deligationum nonnullae ab uno capite, nonnullae a
+<lb/>duobus, quaedam ab uno et duobus capitibus devincientes
+<lb/>ordiuntur. Deligationum etiamnum aliae quibusdam partibus
+<lb/>propriae ceteris minime congruunt, aliae et aliis
+<lb/>partibus sunt communes. Rursus fasciarum aliae sunt
+<lb/>anterius prominentes , quae solas anteriores hominis per-.
+<lb/>tes devinctas demonstrant, aliae posterius. conspicuae,
+<lb/>quae deligatas partes posticas subpetunt oculis; aliae pleraeque
+<lb/>apparentes, quae tum anteriora, tum posteriora
+<lb/>aequaliter devinci produnt. Et haec interdum genere
+<lb/>similia, interdum facie dissimilia conspiciuntur, quae in
+<lb/>particularium deligationum demonstratione dilucide declarabuntur.
+<lb/></p>
+<pb n="18a.778"/>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Rationi consentaneum est prius inspicere,
+<lb/>an ut sors tulerit prima fasciarum iniectio efficienda sit
+<lb/>et ea de re perquirendum est. Qui namque nos praecessi
+<lb/>ferunt omnes quosdam corporis locos definierunt, in qnibus
+<lb/>capitum fasciae positura stabilienda esu Exempli gratiafn
+<lb/>capite cui quamcunque ob causam deligatio debetur
+<lb/>fafc1ae caput supra occipitium collocant, ac inde distributionem
+<lb/>ducentes deligationem conficiunt, spectato nequaquam
+<lb/>affectu ob quem fasciam admovent , an congruenter,
+<lb/>nec ne, ipfam operationem moliantur. In ceteris quoque
+<lb/>partibus aut imperitia aut ignoratione ut creditur hoc
+<lb/>opus obeuntes sedes quodammodo circumscripserunt. oporq
+<lb/>tet enim recte devincientem operam dare, quo non Iosum
+<lb/>Hippocratis edicto speciei speciem , verum etiam partis
+<lb/>devinciendae morbo congruentem deligationem moliatur.
+<lb/>Nos itaque non quo sors tulerit, sed ubi deceat fasciarum
+<lb/>capita collocamus; extrema vero prosit senex imperat imponenda
+<lb/>funt. Quae moventur ut articuli, qua inflectuntur
+<pb n="18a.779"/>
+<lb/>quam minimis ac maxime contractis fasciis, veluti
+<lb/>poples; qua vero extenduntur, tum simplicibus et expassis,
+<lb/>tum latis, veluti rotula, obvolvenda sunt. obvolvere lusuper
+<lb/>oportet . comprehensionis rerum his incumbentium
+<lb/>gratia suspensionis quoque universae fasciae in conqulescentibus
+<lb/>ac subsidentioribus corporis partibus, qualis regio
+<lb/>tum supra, tum infra genu posita esu Atridonea est
+<lb/>capitis quidem humeri ad alteram aristam , . inguinis vero
+<lb/>ad alterum ilium et tibiae supra suram fasciae circutnductio.
+<lb/>Quibuscunque furium quidem fasciae fuga fit,
+<lb/>inferne sit suspensio; quibus deorsum, versa vice.. At
+<lb/>quibus non datur ut lu capite, in his quam maxime
+<lb/>aequali parte comprehensiones faciendae fiunt, minimeque
+<lb/>obliqua fascia utendum, quo stabilissimo postremo obvoluta
+<lb/>erroneos circuitus contineat. Eum quoque apposite deligare
+<lb/>decet qui ad operationum numeros respicit. Quum
+<lb/>enim operationum duae sint species, ut pronunciat Hippoorates:
+<lb/>una quidem qua deligationem perficimus, altera
+<lb/>vero qua perfecimus. In utraque cura suspicienda est, ut
+<lb/>in deligatione obeunda cito, citra dolorem , prompte et
+<pb n="18a.780"/>
+<lb/>concinne operemur. Cito quidem habita operum peragendorum
+<lb/>ratione, citra dolorem quo ipsa facile praestemus,
+<lb/>prompte in omnibus parate, concinne ut adspectum oblactent.
+<lb/>Quae vero deligationem peregerunt, omnes superluces
+<lb/>virtutes enarratas sortiuntur, recte, decore et.
+<lb/>ceteras.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">De fasciarum devincientium usu haec nosse
+<lb/>oportet. Deligationum alias quibusdam topicis medentibns
+<lb/>subservire continendi gratia susceptas; alias non ad
+<lb/>hoc, sed ad operationem per se obeundam usurpatas, in
+<lb/>quibus accuratissime didicisse oportet, ubi partium fasciatinnis
+<lb/>exordium statuendum sit , qua distributiones dueendae
+<lb/>et quo finis ferendus. Quae singula descriptione quidem
+<lb/>plane tradi nequeunt, subsidia tamen praestare postsunt,
+<lb/>quibus qui medicus in particularibus versatus erit,
+<lb/>facile ratiocinatione colliget, se tum singularum partium
+<lb/>naturam prout deligationi , suspensioni et positurae ferendae
+<lb/>sit idonea, tum etiam quid valeat deligatio nosse.. At
+<pb n="18a.781"/>
+<lb/>potest deligatio eas quae abscesserunt partes coniungere,
+<lb/>eversas coercere , distortas dirigere atque omnibus contra-.
+<lb/>ri a praestare. At eas quae- abscesserunt partes ita devincire
+<lb/>oportet, ut sublimia sedem , hoc est stabilem unde
+<lb/>abscesserunt locum contingant, etsi multum sublata sunt,.
+<lb/>non tamenpremat: t. A fana. vero ac integra parte deli-,
+<lb/>gallo ordienda est- et ad ulcus finienda, ut. quod subest
+<lb/>educatur, hoc est excludatur, neque alterum colligatur.
+<lb/>Quibus autem in partibus abscessus et materiam colligi
+<lb/>voluerimus, his in unum cogendis omnia contraria essicienda
+<lb/>sunt. Quibus autem extentas, quod est evertas
+<lb/>partes e longinquo in unum adducere volumus, cetera
+<lb/>eodem modo facienda. E longinquo vero quodam coactio
+<lb/>et ex accessu compressio primum minima, deinde major facienda.
+<lb/>Majoris terminus sit partium contactus et peracta
+<lb/>coniunctio, non tamen fulcimentum. Quibus autem conjuncta
+<lb/>diducenda sunt, in inflammatione supersedenda est
+<lb/>deligatio citra inflammationem eodem apparatu, sed cont
+<lb/>rari a deligatione utendum ; distorta dirigenda sunt et ejusmodicetera.
+<pb n="18a.782"/>
+<lb/>- Quam recesserunt adducenda sunt, contraria
+<lb/>vero contra. Haec omnia medicum tanquam legum: tum
+<lb/>peritum, tum assertorem decet pro singulis affectibus idoneam
+<lb/>ipsis- deligationem eligere, minimeque ad .certos locos
+<lb/>consilium dirigere. Nos autem nunc -partium deligafrosiem
+<lb/>obeuntes ,A quibus fasciae distributio ordienda sit
+<lb/>definimus. Quod enim in- unaquaque operatione- factum
+<lb/>est, id descriptione prodere facile non fuit. Nos tamen
+<lb/>dilucidae doctrinae gratia in fasciarumtractatu locos statiremus,
+<lb/>a quibus deligationem ordiri deceat et quod ipsis
+<lb/>operationibus obeundis consentaneum est eligi conveniat. .</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Commentum linteum acceptum in crura
+<lb/>sex proscindimus , Aedium integrum ac continuum sinentes,
+<lb/>quod vertici cinjrcimus; Atque e cruribus demissis
+<lb/>media assumimus; partem ad aurium aequabilitatem findimus
+<lb/>et mento apposita capita nectimus. Alterius vero
+<lb/>angustae fasciolae medium occipiti admoventes et ad frontrs
+<lb/>fumma adducentes a capitis lateribus nodo vincimus.
+<pb n="18a.783"/>
+<lb/>Sicque reliqua quatuor capita ducentes posteriora quidem
+<lb/>prope angustae fasciolae nedum, anteriora vero supra beciphi
+<lb/>colligamus: nPossumus etiam .absque nodis;- aliis
+<lb/>quidem suppositis, aliis vero incumbentibus postreme fissudas
+<lb/>imponere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">m Linteum lu quatuoer-erura dividimus.
+<lb/>medio continuo- relicto, quod etiam fronti apponimus.
+<lb/>Capita vero anteriora posterioribus capitibus demissis ad
+<lb/>occiput deducimus, linque nodo ligamus pdeindealiaduo
+<lb/>capita turium conversa ad verticem ducimus , ad quem
+<lb/>ligamus. At quae ad verticem feruntur, ea sub mentum
+<lb/>adducta connectere possumus. Hoc schisto ad occiput quoque
+<lb/>utimur capitibus a capitis lateribus nexu revictis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Linteum octo in crura divisum medio
+<lb/>minime scisso -relicto ; quo caput universum tegat amplisudine
+<lb/>toti capiti obvolventes, tum- e cruribus demissis
+<lb/>ad mentum. duo- adducimus eorumque suissa facundum aures
+<pb n="18a.784"/>
+<lb/>continuitate, illic nexu ligamus. Quum autem reliqua
+<lb/>crura posteriora quatuor sint, duo anteriora, posteriorum
+<lb/>ultima super alia frontem versus adducimus: alterum quidem.
+<lb/>ad extremum subiicimus, alterum vero ad fubjecti
+<lb/>comprehensionem inlicimus. Jam vero eodem modo anteriora
+<lb/>crura ad occiput ducimus. Simili quoque ratione
+<lb/>prima capita eodem in loco deligamus eorumque alterum
+<lb/>ad alterum contrahimus ; alia vero duo posteriora ad frontem
+<lb/>adducimus, hoc quidem subjicimus, illud vero attollimus;
+<lb/>istud denique postremum ad capitis latera fibula
+<lb/>deligamus. Hoc schisto citra nodos caput devincrente,
+<lb/>eam quae nodis fit adstrictionem vitamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Meditullium fasciae universum caput operiat
+<lb/>interpositum capitibus, quorum quatuor quidem a
+<lb/>fronte recta propendeant; alia vero quatuor ab occipite.
+<lb/>Quae a fronte propendent, eorum duo interiora scissa ad
+<lb/>occiput deferantur illicque nectentur. Quae vero ab occipite
+<lb/>cum pendulis ad frontem adducantur , ac prope partem
+<pb n="18a.785"/>
+<lb/>nectantur. Eadem serie reliqua duo scissa a fronte
+<lb/>pendula ad occiput, quae denique ab occipite ad frontem
+<lb/>deducantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Quae fascia congruit quibus universtrm
+<lb/>caput tegere; volumus parascepastra vocata est, catochos
+<lb/>vero praelonga fascia est, quae supra fcepastram fecundum
+<lb/>longitudinem in urbem fronti et capiti ad scepastrae comprehensionem
+<lb/>obvolvitur. Catholceus vero ex fascia^ fit
+<lb/>oblonga. Suscipitur autem fasciae deorsum contrahendae
+<lb/>gratia, ne elabatur; ita vero perficitur. Linteum stimatur,
+<lb/>latitudine tam amplum ut universum tegat caput,
+<lb/>longitudine vero duplo amplissimum , ut id efficere queat.
+<lb/>Hujus fasciae caput quidem alterum fuper occipitium locetur,
+<lb/>alterum vero a facie demittatur, tum angustae faleiae
+<lb/>medium sub mentum iniiciatur ; capita vero per genas
+<lb/>ac per sinciput ducantur. Quae ubi cbiafmum facerint,
+<lb/>ad mentum adducantur. Alterius autem angustae
+<lb/>fasciae medium prope frontem, fed capita in orbem ad
+<pb n="18a.786"/>
+<lb/>occiput volvantur illicque inter fe et cum catholceos capitibus
+<lb/>annectantur. A facie vero pendulum in duo crura
+<lb/>adusque intercidunt directe dividatur , quae decussata a
+<lb/>fronte in orbem ad occiput ferantur illicque nectantur.
+<lb/>Possunt autem et catochos et catholceus ex una fasciola
+<lb/>oblongiori hoc modo constitui. Medio sincipita admoto
+<lb/>capita recta per malas sub mentum, deinde sub aurium
+<lb/>fibras ad occiput ferantur, illicque ab occipite ad frontem
+<lb/>decussentur atque a capitis latere nodo nectentur. Hactenus
+<lb/>simplices fasciae.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">Reliquum autem fuerit de variis quoque
+<lb/>sive multiplicibus fasciis disserere, si prius distributionum
+<lb/>aliam rectam, aliam transversam et aliam obliquam nominari
+<lb/>declaraverimus, quales ipsa nomina significat; alia
+<lb/>coronaria, alia frontalis, alia maxillaris, alia mentina,
+<lb/>alia rotunda, alia circularis deligatis, alia denique ascia.
+<lb/>Coronaria quidem est quae coronarum instar super sinetput
+<pb n="18a.787"/>
+<lb/>defertur. Frontalis vero quae frontem circumcludit.
+<lb/>Meutina quae super mentum iniicitur. Atque similiter
+<lb/>maxillaris a parte gena cui imponitur nominata. Ascia
+<lb/>demum quae una quidem parte concava ut luna falcata,
+<lb/>altera vero convexa existit. Haec sunt itaque circuituum
+<lb/>fasciarumve disseubuendarum vocabula.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">Haec deligatio nonnullorum quidem judieio
+<lb/>futurarum diductionibus congruit; quorundam vero
+<lb/>sententia quibus vulnere accepto accumbentes partes abscesserunt
+<lb/>ad ipsarum conglutinationem et ad humorum
+<lb/>quod ulcus comprimatur excretionem. Sic autem cossiestur.
+<lb/>Fasciae caput a capitis latere constituitur, deinde
+<lb/>fafcia obliqua ad verticem ac temporum alterum ducitur,
+<lb/>lude vero genia construitur, obliqua altera- genia primae
+<lb/>opposita est, ut decussis ad occiput fiat. Ab occipite obliqua
+<lb/>a primis circuitibus distans, deinde pareiades ruisuntque
+<lb/>obliqua, quo struatur rhombus in medio formantur.
+<lb/>Postea frontales circuitus prope ipfa ad nudarum
+<lb/>partium operimentum ac tutelam iniiciuntur.
+</p>
+<pb n="18a.788"/>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="indent">Seusirhombus quibus et tholus idoneus
+<lb/>est. Ita vero conficitur. Caput fafciae Iob occiput injicitur.
+<lb/>Deinde fpina subter auris fibram , mox ad sinciput
+<lb/>obliqua et ad occiput ducitur. Ab occipite obliqua ad
+<lb/>sinciput primae opposita mox in oris fibram, tum ad occipus
+<lb/>, indeque frontalis conficitur , quo medium fenusbombus
+<lb/>si tr Extremum vero tum in hac, tum in ceteris
+<lb/>deligatiouibus ad capitis latera fibulis contineri debet.
+<lb/>Licet autem a prima distributiones non inferne furium,
+<lb/>fed contrario modo efficere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p rend="indent">Quadrat quidem quibus verticem et sinciput
+<lb/>simul devincire volumus. Sic autem construitur.
+<lb/>Imposita super occiput fascia spiram recta per verticem
+<lb/>ad frontem ducimus, rllique sinistrae manus nostro indice
+<lb/>digito sistimus, rursum ad occiput spiram primae paralellam
+<lb/>reducimus et ab occipite tertiam ad frontem paralellam
+<lb/>deducimus, quo tempore fasciam obvolutam quae a
+<lb/>eligito retluetur froutalem conficimus.
+</p>
+<pb n="18a.789"/>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+
+
+<p rend="indent">Congruit quibus et camera. Verum
+<lb/>quandam cum . decenti usu praecellentem habet formam.
+<lb/>Supra constructam cameram angustae fastosae caput sub
+<lb/>occipitis circuitibus collocandum est, iudeque obliquum
+<lb/>per verticem ad sinciput ducendum. Frons circuitibus
+<lb/>primae fafciae fibula ad frontem positis involvetur, deinde
+<lb/>obliqua fpira ad sinciput, verticem et -occiput ferenda.
+<lb/>Ab occipite ad auris dextrae fibram et sinciput et ad sinistram
+<lb/>auris fibram et occiput deducenda. Nos autem huic
+<lb/>deligationi frontalem fasciam ad securitatem adlicimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+
+
+<p rend="indent">Constructa camera, digitalis fasciolae
+<lb/>aut etiamnum angustioris capite ad occiput locato circumvolutionem
+<lb/>directo ad verticem . medium sinciput et frontem
+<lb/>ducimus, quam complicatam tupra frontem, turium
+<lb/>super eandem ad occiput reducimus. Atque ab occipite
+<lb/>ad dextram capitis partem reflectentes supra verticem in
+<lb/>sinciput et sinistra tempora ducimus. Duplicata etiam
+<lb/>fascia in sinistris temporibus spiram fuperinjectam obliquam
+<pb n="18a.790"/>
+<lb/>in dextram capitis partem ducimus. Iudeque similiter
+<lb/>reflexam rursum ad tempora ducimus, idque ter
+<lb/>operamur, ut super temporum alterum progressu reflexa
+<lb/>ancylia tria concinnorum ideam prae fe ferant. Quum
+<lb/>autem spica tertio ad dextras occipitis partes appulerit,
+<lb/>ad sinistram convertenda est, quo super temporum alterum
+<lb/>idem fiat. Postremo ad omnes circuitus continendos
+<lb/>frontalem deligationem construimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="18">
+
+
+<p rend="indent">Congruit quibus et Glaucii camera.
+<lb/>Ita vero construitur. Parte quadam mediocri fasciae in
+<lb/>faciem demisse spiram ad sinciput, verticem et occiput
+<lb/>ducito , inique cum ministro ipfam continere imperaverim,
+<lb/>conversa spira frontalem deligationem^ exprimes. Postea
+<lb/>sic a fame demissum caput per primam inmotam per sinciput
+<lb/>ad verticem ac occiput reducito et ad occiput deligato.</p>
+</div>
+<div type="textpart" subtype="chapter" n="19">
+
+
+<p rend="indent">Haec fasciatio omnibus oculis diuturno
+<lb/>rheumatismo exulceratis, diductis partibus coalescendis et
+<lb/>alias ob aliquam causam fupra frontem vulnus subeuntibus
+<pb n="18a.791"/>
+<lb/>idonea esu Sic autem suscipitur. Posito fasciae ad
+<lb/>occiput capite residuum ad auris vel dextrae vel sinistrae
+<lb/>fibram ducimus, cui regioni primum distribui circuitum
+<lb/>judicemus. Ab aure vero ad propinqua tempora oblique
+<lb/>ad sinciput, deinde ad occiput, postea ad alia tempora
+<lb/>sub auris fibram , postremo ad occiput spicam ducimus.
+<lb/>Ab occipitio adstricto fafciae superiniecto capite circuitum
+<lb/>supra aurem ad frontem struimus, quo prior primi circuitus
+<lb/>a sincipite procedentis inferior sit ambitus , utrisque
+<lb/>intro sibi mutuo oppositis repandis prope ipsas circumvolutioues.
+<lb/>Efficitur vero , etiam alter ex duabus coronariis
+<lb/>, altera quidem fusi circuitum , altera vero super
+<lb/>ipsum distribuendis , utrisque introrsum repandis evadentibus.
+<lb/>Hi circuitus ita procedunt, uno quidem inferne
+<lb/>sursum, altero vero superne deorsum ducto.</p>
+</div>
+<div type="textpart" subtype="chapter" n="20">
+
+
+<p rend="indent">Concinna quidem est deligatio, quibus
+<lb/>sinciput et huic proximas partes simul devincire volumus.
+<lb/>Sic autem perficitur. Structa quae-femirhomhus vocatur
+<pb n="18a.792"/>
+<lb/>deligatione citra frontalem fasciam ab occipite praeter
+<lb/>verticem oblique ad frontem circuitum ducimus, curvata
+<lb/>prope frontem lunae falcatae modo fuluia ut concava .pars
+<lb/>ipsius sursum procumbat; connexa vero intercilium speetans
+<lb/>ad oppositus verticis partes et ad occiput spiram
+<lb/>ducimus, sicque frontalem fulciam adji cimus. Haec deligatio
+<lb/>praeter eam quam lepus exhibet utilitatem quodammodo
+<lb/>praeclarior esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="21">
+
+
+<p rend="indent">Idonea est et quibus calvariae deligatio,
+<lb/>sed multo securiori Peracta igitur calvariae deligatione
+<lb/>lepus sine auribus superinjicitur implicaturque , ne copiose
+<lb/>loquar.</p>
+</div>
+<div type="textpart" subtype="chapter" n="22">
+
+
+<p rend="indent">Haec deligatio quibus et sine actore
+<lb/>Thais idonea est. Dico vero sincipiti ac vicinis ejus locis.
+<lb/>sile autem conficitur. Commentam fasciae partem
+<lb/>fuper faciem demissam sinito fpiramque a sincipite directo
+<lb/>quasi ad occiput trabito; inde vero deflectentem fubauris
+<lb/>fibram in sinciput et oblique ad occiput ducito. Ab
+<lb/>occipite oblique ad oppositas partes et ad sinciput ac
+<pb n="18a.793"/>
+<lb/>tempora sub auris fibram , deinde ad occiput. Postea demissum
+<lb/>super faciem. fasciae caput reducendo super frontem
+<lb/>ter in adscensu replicato , quo gradatim sibi mutuo
+<lb/>incumbant, sicque postea in ipsam frontalem fasciam
+<lb/>invehito.</p>
+</div>
+<div type="textpart" subtype="chapter" n="23">
+
+
+<p rend="indent">Haec deligatio iis congruit, quibus
+<lb/>unica parte ob vulnus aut luxationem aut cynicum vocatum
+<lb/>spasmum aut aliam quandam ob caulam maxillam
+<lb/>devincire volumus. Fasciae caput ortum sit ah occipite
+<lb/>obliquum ad verticem, sinciput ac temporum alterum maxillaris
+<lb/>feretur; deinde fusi mentum et auris oppositae
+<lb/>fibram ad occiput. Ab occipite ad mentum et aurium
+<lb/>fibras , atque post mentinam in occiput. Hi in iis sunt
+<lb/>ita circuitus, si superne deorsum devincire conferat. Ipfe
+<lb/>vero deligatio perficitur etiam inferne furium hoc modo.
+<lb/>Caput fasciae ordiatur ab occipitio, fpira sub amis fibram,
+<lb/>sub mentum ducatur; deinde maxillaris, postea obliqua
+<lb/>ad sinciput et occiput, mox mentina et frontalis.
+</p>
+<pb n="18a.794"/>
+</div>
+<div type="textpart" subtype="chapter" n="24">
+
+
+<p rend="indent">Idoneum id comperitur quibus utrarumque
+<lb/>maxillae partium aut luxationes obtigerint aut
+<lb/>quidam alius affectus qui in unimembri capistro numeratus
+<lb/>esu Caput fasciae ad occiput obliqua spira per verticem
+<lb/>ad sinciput et genas sub mentum feratur. Deinde
+<lb/>contraria maxillis incumbens pareias etiam ad sinciput
+<lb/>sirper prius injectam , quoad decussis fiat; postea ad occiput
+<lb/>et sub auris fibram et mentum , ad occiput denique
+<lb/>frontalis circuitus ducatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="25">
+
+
+<p rend="indent">Primum caput fusi auris into orditur
+<lb/>et ad genialem. Deinde pareias et obliqua a vertice ad
+<lb/>occsput sub auris oppositae fibram et fub mentum. Postea
+<lb/>pareias struatur; mox obliqua a sincipite ad occiput, postremo
+<lb/>frontalis fulcra.</p>
+</div>
+<div type="textpart" subtype="chapter" n="26">
+
+
+<p rend="indent">Fasciae medium occipiti imponatur. A
+<lb/>vertice vero oblique ad sinciput circumvolutiones , quo his
+<lb/>chi aimus -fiat. Deinde per malas sub mentum ad aurium
+<lb/>fibras ad occiput, ab occipite in orbem ad frontem et
+<pb n="18a.795"/>
+<lb/>occiput; postea tum maxillarem, tum frontalem fasciam
+<lb/>struito et super ipsas circuitus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="27">
+
+
+<p rend="indent">Medium super frontem, spirae ad occiput
+<lb/>et his chlafmus. Deinde infra aurium fibras stili
+<lb/>mentum. Post:ea fasciae maxillares etiam ad sinciput, obobliquae
+<lb/>ad occiput. Postremo tum maxillaris, tum frontalis
+<lb/>struatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="28">
+
+
+<p rend="indent">Medium supra occiput. Capita fub
+<lb/>aurium fibras ad mentum, deinde maxillaris et reliqua
+<lb/>praecedenti consimiliter struantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="29">
+
+
+<p rend="indent">Caput fasciae super occiput iniiciatur.
+<lb/>Spira sub auris fibram ad tempora ac sinciput ducatur,
+<lb/>oblique ad occiput et frontalem. Circuitus autem super
+<lb/>has partes , plures. Sic deligatio struenda est inferne
+<lb/>sursum vel superne deorsum. Ile deligationes conferunt
+<lb/>ab occipite obliqua ad verticem , sinciput atque tempora
+<lb/>fub auris fibram ad occiput, fiatque frontalis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="30">
+
+
+<p rend="indent">Caput fafciae ab occipitio ordiatur.
+<lb/>Spira fub auris fibram ad tempora et sinciput, oblique
+<pb n="18a.796"/>
+<lb/>ad occiput et frontalis ad externum oculi canthum atque
+<lb/>ad sinciput. Obliqua ad occiput; ab occipite obliqua ad
+<lb/>sinciput ducatur , quae praecedenti opposita sinciput de-cussat;
+<lb/>deinde fusi auris fibram ad occiput feratur, frontalisque
+<lb/>opus perficiat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="31">
+
+
+<p rend="indent">Medium super occiput iniiciatur, capita
+<lb/>per verticem ad sinciput ducta chiafmum ini eo faciunt;
+<lb/>deinde sub aurium fibras ad occiput, postea frontalis admoveatur.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="32">
+
+
+<p rend="indent">Medium fupra occiput struatur, capita
+<lb/>sub aurium fibras ad externos oculorum angulos ducantur;
+<lb/>deinde ad sinciput et occiput, postea frontalis posita
+<lb/>sit fascia,- quidam quoque mentinam admovent.</p>
+</div>
+<div type="textpart" subtype="chapter" n="33">
+
+
+<p rend="indent">Rectum bimembre capistrum devinctum
+<lb/>ultra mentinam in fine ad nest summitatem reducimus,
+<lb/>deinde ad occiput coronariamque adlicimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="34">
+
+
+<p rend="indent">Simili modo coniugatae fasciationi
+<lb/>factae mentinam addimus.
+</p>
+<pb n="18a.797"/>
+</div>
+<div type="textpart" subtype="chapter" n="35">
+
+
+<p rend="indent">Haec iis congruit qui in multis capi-.
+<lb/>fis ac genarum partibus vulnus habent. obliqua fascia
+<lb/>bimembre capistrum convincite; postea quoque Glaucia
+<lb/>stropham , ac deinceps ita bimembra capistra repeles.
+<lb/>Nonnulli hanc deligationem spectaculo celebriorem destdecantes
+<lb/>cephalum comparatum assuunt. Haec alio modo
+<lb/>tum citra capistrum, tum citra mentinas conficitur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="36">
+
+
+<p rend="indent">Quum commoderatam fasciae partem
+<lb/>in faciem pendere siveris, e directo ad occiput spiram
+<lb/>diducito ; indeque rectum capistrum devinciendo confice,
+<lb/>quoad universam genam caputque contexeris. Atque tandem
+<lb/>demissum super faciem caput recta per verticem reflectendo
+<lb/>ad occiput reducito, eodemque modo si velis
+<lb/>fibrae admotum deligato.</p>
+</div>
+<div type="textpart" subtype="chapter" n="37">
+
+
+<p rend="indent">Semichomhus vocatus ames adeptus
+<lb/>ita nominatur. Deligatur autem aut decoris gratia in
+<lb/>gladiatoriis duellis aut ut caput in alicujus faciei fymptomatis
+<lb/>curatione contineatur. At si decoris gratia deligatio
+<pb n="18a.798"/>
+<lb/>fiat, hae breves sint aures oportet et ut in media fronte
+<lb/>eliciendae: sic enim animalis essigiem .scrvant ; si vero
+<lb/>capitis continendi gratia magnae; quo quis curvos digitos
+<lb/>sortitus, etiam in medio continere queat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="38">
+
+
+<p rend="indent">Ita vero perficitur. Qui laqueus
+<lb/>pastoralis aut persicus, concisa libro de laqueis plerumque
+<lb/>tradidimus, ex una fasciae parte in fronte locatur atque
+<lb/>. super hunc perficitur femirhombus aut qui lacerculus vocitatur.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="39">
+
+
+<p rend="indent">Ab occipite. exordium. Spira per
+<lb/>verticem ad sinciput et intercilium ducatur oculum contectura;
+<lb/>deinde sub auris fibram ad oculum etiam ad occipus,
+<lb/>postremo ad frontem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="40">
+
+
+<p rend="indent">Exordium ab occipitio. Circumvolutio
+<lb/>per verticem , sinciput , intercilium ad oculum feratur ;
+<lb/>deinde sub auris fibram ad oculum, ad sinciput, ad occiput;
+<lb/>postremo frontalis sit deligatio.
+</p>
+<pb n="18a.799"/>
+</div>
+<div type="textpart" subtype="chapter" n="41">
+
+
+<p rend="indent">Caput fasciae super occiput iniiciatur.
+<lb/>Circunrvolutio per verticem, sinciput superciliorum instititium
+<lb/>ad oculum; deinde fub auris oppositae fibram ad
+<lb/>oculum alterum , superciliorum interstitium , sinciput et
+<lb/>ad occiput , mox ad frontem. Deligenti licet quoque
+<lb/>primo inverso deligationis ordine inferne furium deligationem
+<lb/>ducere, si id conferat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="42">
+
+
+<p rend="indent">Medium ad occiput iniiciatur. Capita
+<lb/>ad verticem , ad sinciput , glabellum , hoc etiam ipso modo
+<lb/>chiasmum efficiunt ; deinde ad oculos et ad aurium fibras,
+<lb/>ad occiput et ad frontem abit evolutio.</p>
+</div>
+<div type="textpart" subtype="chapter" n="43">
+
+
+<p rend="indent">Medium fasciae super frontem insiciatur,
+<lb/>ad occipitium capita; ab occipite chiafmus fiat, ac
+<lb/>praecedenti hanc similem deligationem effice.</p>
+</div>
+<div type="textpart" subtype="chapter" n="44">
+
+
+<p rend="indent">Medium fasciae super occiput, spira
+<lb/>ad verticem , sinciput et oculum e directo evolvatur, per
+<lb/>triangulum fub mentum, auris fibram ad occiput et
+<lb/>frontem.
+</p>
+<pb n="18a.800"/>
+</div>
+<div type="textpart" subtype="chapter" n="45">
+
+
+<p rend="indent">Prae frontali ab occipitio ad alterum
+<lb/>oculum oppositum ducalur fascia directeque ad labiorum
+<lb/>oras sub mentum in alterum oculum et per oppositam
+<lb/>auris fibram ad occipitium , ac tum frontalis fiat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="46">
+
+
+<p rend="indent">Caput sub occipitio locetur, circumvolutio
+<lb/>sub auris fibram, mox sub mentum in labiorum
+<lb/>oram, oculum ac sinciput et ad occiput; deinde fub auris
+<lb/>fibram et sub mentum et oppositum oris angulum, oculum
+<lb/>et. superciliorum interstitium ibique chiasmus ; postea sula
+<lb/>sinciput et occiput , postremo frontalis condatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="47">
+
+
+<p rend="indent">Quum fasciae medium oculo obliquo
+<lb/>consimili modo super occiput positum fuerit et aut furium
+<lb/>aut deorsum ductis capitibus tusi mentum fasciae . medium
+<lb/>ponitur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="48">
+
+
+<p rend="indent">Tantam latitudinem quaeque scissa
+<lb/>fasciola sortiatur, quanta nasum queat tegere; longitudine
+<lb/>vero tanta sit, ut duplicata a nato recta ad occiput procedere
+<lb/>possit. Caput fasciae super occiput collocamus,
+<lb/>residuum vero e directo ad verticem sincipitis et nest
+<pb n="18a.801"/>
+<lb/>summitatem ducimus. Reliquum autem demissam in fa- .
+<lb/>ciem quod etiam recta linea in duo crura scindimus adusque
+<lb/>fuperius labrum, deinde alterius angustae fasciolae
+<lb/>ob longioris meditullium fub nasi orbiculo et in demissis
+<lb/>in faciem cruribus ponimus. Atque capita fub aurium
+<lb/>fibras, sub occiput, super faciem prius injectam chiasmo
+<lb/>figurato ducimus. Quibus autem ministro commissis ordine
+<lb/>super faciem crura ducimus , his ab utraque nasi parte ad
+<lb/>glabellam reflexis super ipsum decussis fiet et oblique capitibus
+<lb/>supra verticem occiput versus, ad ipsum etiam
+<lb/>extremum alligatis capita a ministro contenta reducimus,
+<lb/>quibus Irontales fascias conficimus, ut extrema inter fe
+<lb/>nodo aut fibula e capitis latere revocentur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="49">
+
+
+<p rend="indent">Linteum in crura quatuor scindimus
+<lb/>medium continuum sinentes, quo fub orbiculo collocato
+<lb/>superposita capita deorsum demittimus, supposita vero primumque
+<lb/>ad genas et externos ad sinciput oculorum angulos
+<pb n="18a.802"/>
+<lb/>ducimus, decussique formata ministro continere iule
+<lb/>paramus. Alia vero duo capita sub fibras ad occiput; ah
+<lb/>occipite in orbem chiasmo delineato ad frontem et capitis
+<lb/>partem revocamus et quae continebantur ea ad occiput
+<lb/>ducta deligamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="50">
+
+
+<p rend="indent">Unum fasciolae medium sub orbiculo positum
+<lb/>sit, capita vero ad externos oculi angulos ac sinciput
+<lb/>et decussata retineantur; alterum medium sub nasi orbiculo;
+<lb/>cetera vero capita et sub fibras aurium et ad occiput
+<lb/>connectuntur, tertium medium super frontem, capita
+<lb/>vero in orbem ad caput ducantur et super capitis partem
+<lb/>nodus fiat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="51">
+
+
+<p rend="indent">Medium sub nasi orbiculo, capita per evternos
+<lb/>oculorum angulos ad sinciput similiter decussata
+<lb/>contineantur; alterum medium super nasi orbiculum, capita
+<lb/>sub aurium fibras ad occiput. Ab occipite circa caput
+<lb/>decussatio fiat, ac in orbem ducta ad frontem serantur i
+<lb/>nodus a capitis lateribus fundam finiat.
+</p>
+<pb n="18a.803"/>
+</div>
+<div type="textpart" subtype="chapter" n="52">
+
+
+<p rend="indent">Altera fuscida recta nato incumbente
+<lb/>ejus medium a p r oj ec t a fronte demissum sinimus; alterum
+<lb/>vero medium a facie pendulum recta linea per verticem
+<lb/>est occiput-- adducimus. Alterius autem fasciolae medio
+<lb/>fub nasi orbiculum iniecto capita fissi aurium fibras etiam
+<lb/>ad occiput ducimus. His in occipite decussatis caput a
+<lb/>facie demissum stupra prius iniectam fasciam recta ad verticem
+<lb/>et occiput adducimus; atque per crura fuper occiput
+<lb/>decussata capita comprehendentes frontalem construimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="53">
+
+
+<p rend="indent">Medium unius fasciae fub nasi orbiculo
+<lb/>redeat; capita vero a nasi lateribus ad glabellum ferantur,
+<lb/>tibi et decussata recta prope verticem ad occiput ducatitur,
+<lb/>inique contineantur. Secundae meditullium fuper
+<lb/>nest orbiculum, capita vero fub aurium fibras ad occiput
+<lb/>vehantur, illicque tum inter fe tum cum- iis quae retinentur
+<lb/>nodo devinciantur.. Tertiae medium fuper frontem,
+<lb/>capita vero in erilem circum caput, nodus autem asi capitis
+<lb/>partem deligationem perficiat.
+</p>
+<pb n="18a.804"/>
+</div>
+<div type="textpart" subtype="chapter" n="54">
+
+
+<p rend="indent">Primae eodem modo fasciae admotae,
+<lb/>secundae quoque rursus similiter ad occipitium deductae
+<lb/>secunda capita decussantur et per ipsa srontaIes consiciaatur,
+<lb/>primae fasciae capitibus aut sub ipsis retensis aut
+<lb/>etiam his ad occiput decussatis; postea sub mentum addocimus
+<lb/>illicque connectimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="55">
+
+
+<p rend="indent">Commoderatam fasciae partem tantum s
+<lb/>facie pendere sinimus, quanta ut ad occiput perveniat
+<lb/>desiderabitur. Tum recta spiram per nasum, glabeIlsm,
+<lb/>sinciput, verticem ad occiput ducimus, ab occipite deflectentes
+<lb/>ad auris fibram oppositam. Retenta ad occiput
+<lb/>spira demissam a facie caput reflectentes recta super plimam
+<lb/>verticis et occipitis fasciam ducimus, deprehenfamqoe
+<lb/>spiram in orbem ad frontem vehi mus; postea ad occipitium
+<lb/>et a capitis latere spiram retinemus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="56">
+
+
+<p rend="indent">Capita in occipitio exordiantur, ipsis
+<lb/>oblique ad verticem, sinciput, parvum oculi angulum ad
+<pb n="18a.805"/>
+<lb/>genam; deinde sub nasi orbiculum et ad oppositam genam
+<lb/>juxta externum canthum ad sinciput, ad verticem primo
+<lb/>circuitur opposita ad occiput ducatur. Ab occipite ad
+<lb/>auris oppositae fibram et ad occiput, ab occipite denique
+<lb/>ad frontem fiat deligatio.</p>
+</div>
+<div type="textpart" subtype="chapter" n="57">
+
+
+<p rend="indent">Caput fasciae super occiput iniiciatur,
+<lb/>spira oblique per verticem ad temporum alterum et externum
+<lb/>canthum suo nasi orbiculum et sub auris fibram
+<lb/>feratur; deinde ad occiput, ab occipite reflexo capite oppositam
+<lb/>primae obliquam ad temporum alterum fub nasi
+<lb/>orbiculum et fub auris oppositae libram ad occiput ducimus;
+<lb/>ab occipite ad auris libram, ad nasi orbiculum et
+<lb/>sub auris fibram, postea ad occiput, ab occipite frontosam
+<lb/>addicimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="58">
+
+
+<p rend="indent">Caput fasciae ab occipitio orditur, spiram
+<lb/>oblique ad verticem , sinciput et glabellum ducimus ;
+<lb/>deinde a nasi lateribus juxta magnum canthum recta linea
+<lb/>ad accubantem nasi pinnulam ad lauris angulum; deinde
+<lb/>sub mentum et sub auris fibram ad occiput ab occipite
+<pb n="18a.806"/>
+<lb/>obliqua per verticem et ad sinciput. opposita primae ad
+<lb/>glabellum, quo super ipfam chiafmus fiat et a nasi late-.
+<lb/>vibus primae opposita ad auris angulum ; postea sub meutum
+<lb/>et auris oppositae fibram , mox ad occiput. Ab o cripite
+<lb/>frontalis fiat et fub nest eminentiam ; postea tub
+<lb/>auris oppositae fibram etiam ad occiput. Huic deligationi
+<lb/>nonnulli mentinam adliciunt; ad haec deligati^ convenit
+<lb/>quibus glabellum et nasi eminentiam convincite volumus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="59">
+
+
+<p rend="indent">Occipiti fasciae caput assideat, circumvolutio^
+<lb/>oblique per verticem, sinciput ad glabellum, per
+<lb/>magnum canthum. ad genam fub auris fibram versus cociput
+<lb/>primo circuitur opposita, quo circa glabellum decussis.
+<lb/>struatur et obliqua per sinciput et verticem ad occipitium
+<lb/>volvatur; ab occipitio ad auris fibram sub naris emineotiam
+<lb/>et ad oppositam auris fibram, postea ad occiput. Ab
+<lb/>occipite ad frontem frontalis struatur. Huic autem nonnulli
+<lb/>ornatus gratia etiam coronariam deligationem adjiciunt.
+<pb n="18a.807"/>
+<lb/>Ipsa quoquo a duobus capitibus devinciri potest,
+<lb/>si usus postulet. Quadrat quibus et praecedens.</p>
+</div>
+<div type="textpart" subtype="chapter" n="60">
+
+
+<p rend="indent">Caput fasciae. super occiput iniiciatur,
+<lb/>spira recta per verticem ad glabellum fupra magnum canthum
+<lb/>a nest lateribus ad ipsum nest orbiculum evolvatur
+<lb/>et prope alterum magnum canthum ad glabellum, ut chiafmus
+<lb/>fuper glabella adstruatur, fascia primae obvolutioni
+<lb/>incumbens ad verticem et occiput feratur ; . ah occipite
+<lb/>deflectentes spiram ad auris fibram, ad nasi orbiculum et
+<lb/>oppositam auris fibram ad occiput. Ab occipite ad frontem
+<lb/>fiat frontalis. Licet vero etiam coronarium adlicere.
+<lb/>Hac deligatione nonnulli concinnitatis gratia vocatum femirhomhum
+<lb/>addiderunt, cujus structuram tradidimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="61">
+
+
+<p rend="indent">Caput sasclae ab occipite ordiatur, fpira
+<lb/>recta ad verticem, sinciput, glabellum, magnum canthum
+<lb/>a nasi lateribus fub orbiculum evolvatur; deinde fusi aurusoppositae
+<lb/>fibram et fuper nasi orbiculum , .postea sic
+<pb n="18a.808"/>
+<lb/>fub auris fibram ad occiput feratur, ab occipite ad frontem
+<lb/>frontalis struatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="62">
+
+
+<p rend="indent">Congruit quibus praecedens deligatis
+<lb/>Sic autem construitur. Membranulae Phoeniciae obIongioris
+<lb/>caput unum glutine aut gummi illitum naso agglutinamus,
+<lb/>qua parte cui obvertitur. Alterum vero caput
+<lb/>sub auris fibram ad occiput adducimus. Ab occipite ad
+<lb/>frontem, quod etiam super frontem similiter agglutinamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="63">
+
+
+<p rend="indent">Medium super aurem injiciatur, capitum
+<lb/>vero sub aure decussatorum alterum quidem per frontem,
+<lb/>alterum vero per verticem ad occiput evolvatur; ab
+<lb/>occipite quod a fronte ducitur super decussim, quod vero
+<lb/>per verticem ad frontem ducatur et prope partem nexu
+<lb/>vinciatur. Subiacentium vero capitum decussatorum alterum
+<lb/>quidem sub mentum, alterum vero retrorsum ad
+<lb/>csput ibique connectantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="64">
+
+
+<p rend="indent">Caput fasciae prope occiput pone asistam
+<lb/>aurem impositum ordiatur, spira vero super ipsum
+<pb n="18a.809"/>
+<lb/>evolvatur, ut si ex parte operta sit auris etiam spira ad
+<lb/>verticem prope frontem et per anteriora prope aurem
+<lb/>oppositam deducatur; deinde sub mentum et super aurem
+<lb/>ad sinciput et posteriorem auris oppositae partem et sub
+<lb/>mentum subque auris fibram ad occiput et ab occipite ad
+<lb/>frontem et ad occiput.</p>
+</div>
+<div type="textpart" subtype="chapter" n="65">
+
+
+<p rend="indent">Caput fasciae in occiput iniiciatur, circumvolutio
+<lb/>sub auris non affectae fibram ad sinciput et
+<lb/>anteriores auris affectae partes et sub mentum volvitur;
+<lb/>a mento fub auris fibram et ad occiput, ab occipite oblique
+<lb/>super aurem , postea fiat frontalis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="66">
+
+
+<p rend="indent">Medium fasciae capitibus interjectum
+<lb/>super locum vinciendum injiciatur. Ex capitibus aliis a
+<lb/>cervice deorsum demissis, aliis vero sursum , ut ad caput
+<lb/>pendulis anteriora ad sinciput nodo ligantur. Media in
+<lb/>vertice tum inter fe, tum etiam cum anterioribus sincipiti
+<lb/>superpositis connectuntur; posteriora denique ad occiput
+<pb n="18a.810"/>
+<lb/>adducta decussantur ac in orbem circa caput et frontem
+<lb/>posita a capitis latere nodo devinciantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="67">
+
+
+<p rend="indent">Medium unius salinae super sinciput
+<lb/>injiciatur, capita vero per genas sub mentum , a mento
+<lb/>per genas primis paralella ad sinciput ilIicque nectantur.
+<lb/>Si vero oculos devincire quoque voluerimus, non per
+<lb/>prima, fed super oculos ducantur; deinde ad sinciput
+<lb/>etiam decussata ad occiput adducantur. Alterius fasciae
+<lb/>medium super occiput ordiatur, capita vero per externos
+<lb/>oculorum angulos ad mentum, ilIicque nodo ligentur.
+<lb/>Tertiae medium super nasi eminentiam , capita vero sub
+<lb/>auris fibram ad occipitium et decussata in orbem ad srontem
+<lb/>volvantur, nodoque a capitis latere vinciantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="68">
+
+
+<p rend="indent">Caput super occipitium injiciatur et
+<lb/>spira ad frontem recta et glabellam ducatur; deinde ad
+<lb/>occiput, ab occipite frontalis ex binis capitibus struatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="69">
+
+
+<p rend="indent">Medium fasciae integrum inferiori Iabis
+<lb/>apponimus; superiora vero capita ad mentum ducimus.
+<pb n="18a.811"/>
+<lb/>A mento ad occiput, ab occipite decussata super glabelIam
+<lb/>et sinciput; quumque ipsa contineri jusseris, reliqua
+<lb/>illic duo capita sub auris fibras ad mentum et decollata
+<lb/>ad frontem ducimus, quae et cum iis quae continebantur
+<lb/>tuto adstruimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="70">
+
+
+<p rend="indent">Medium fasciae supra ipsum labrum
+<lb/>injiciatur, inferiora capita super externos oculorum aligulos
+<lb/>ad sinciput, decussata ad occiput adducantur. Alia
+<lb/>vero capita sub aurium fibras ad occiput et decussata ad
+<lb/>frontem et inter se vincta retineantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="71">
+
+
+<p rend="indent">Caput supra occiput, spira sub amis
+<lb/>fibram ad insertus labrum et sub auris fibram ad occiput.</p>
+</div>
+<div type="textpart" subtype="chapter" n="72">
+
+
+<p rend="indent">Medium super labrum, capita vero
+<lb/>frrb aurium fibras et ad occiput et ad frontem ducantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="73">
+
+
+<p rend="indent">Caput ad occiput, spira per auris
+<lb/>frliram ad labium et oppositam auris fibram ac occiput;
+<lb/>ab occipite per verticem et obliquam ad sinciput et tem-^
+<lb/>porum alterum; postea maxillaris sub mentum et opposita
+<pb n="18a.812"/>
+<lb/>maxillaris ad sinciput, ut super ipsum decussis struatur;
+<lb/>mox ad occiput, ac postremo ad frontem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="74">
+
+
+<p rend="indent">Caput fasciae super occiput, spira
+<lb/>oblique ad sinciput super externum oculi angulum, ad
+<lb/>superius labrum; deinde ad opposita tempora et externum
+<lb/>canthum ad sinciput opposita praecedenti chiasmum esiiciens
+<lb/>ad verticem , deinde ad occiput et circa frontem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="75">
+
+
+<p rend="indent">Medium fasciae super superius labrum,
+<lb/>capita per tempora et adjacentes oculorum angulos ad
+<lb/>sinciput et supra ipsum chiasmo constructo ad occiput serantur;
+<lb/>ab occipite etiam frontalis ducatur et ad occiput
+<lb/>redeat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="76">
+
+
+<p rend="indent">Media fascia super occiput injiciatur;
+<lb/>subjecta vero capita ad genas per externos oculorum angulos
+<lb/>ad sinciput ferantur illicque nexu vinciantur. steliqua
+<lb/>vero sub aurium fibras ad occiput ducuntur, ab
+<lb/>occipite decussata sunt. Quod si breviora fuerint, ad
+<lb/>occiput primis illigantur; sic vero longiora fuerint, etiam
+<lb/>ad frontem ducta frontalem adjiciunt. Appensis capiti et
+<pb n="18a.813"/>
+<lb/>faciei idoneis tum simpluibus tum multiplicibus deligationibus
+<lb/>ad ceteras sequentes digrediamur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="77">
+
+
+<p rend="indent">Haec deligatio dicta quidem est ab
+<lb/>ea quae ad spicas accedit, .similitudine ex suis circuitibus
+<lb/>prodeunte; infert tum cIaviculae fractae, tum brachio
+<lb/>luxato. sec autem modo perficitur. Molli lana
+<lb/>convoluta ipsan axiliae partis devinciendae imponimus ad
+<lb/>cavitatem eos implendam. Deinde obvolutae fasciae tum
+<lb/>latitudine tum longitudine corpori devinciendo analogae
+<lb/>caput celucantes super illaesam axiliam oblique per dorsum
+<lb/>suram ducimus ; postea vero per humeri caput sub
+<lb/>assec^ brachii axillam; mox ad humeri caput, ita ut super
+<lb/>ipsum decussis struatur; mox obliqua per pectus fnb
+<lb/>sulli iliaesam procedit. Ab ala per dorsum obliqua ad
+<lb/>^aviculam fertur, ita ut partes quaedam circuitus partibus
+<lb/>obvoluti superponantur, a clavicula sub axillam et
+<lb/>ad claviculam , quo chiasmns secundus figuretur. Denique
+<lb/>ad illaesam axillam circuitus etiam eadem ratione procedunt.
+</p>
+<pb n="18a.814"/>
+</div>
+<div type="textpart" subtype="chapter" n="78">
+
+
+<p rend="indent">In adstructa spira alterius fasciae
+<lb/>medium quidem sub cubitum anguinum delineatam dueatur;
+<lb/>capita vero recta ad humeri ca,ut illicque decussit
+<lb/>oblique ad illaesam axillam, deinde ita orbem ducta per
+<lb/>latera et brachium affectum, quoad totus. texerint ferantur,
+<lb/>fasciae denique extrema ad integram tam.</p>
+</div>
+<div type="textpart" subtype="chapter" n="79">
+
+
+<p rend="indent">Medium fasciae sub erecti brachii
+<lb/>alam, capita ad humeri caput decussata adducatur; hinc
+<lb/>oblique aliud quidem per dorsum , aliud vero pe sternam
+<lb/>sub illaesam axillam. Simili quoque modo vcvuntur
+<lb/>circuitus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="80">
+
+
+<p rend="indent">Convenit quibus et spica. sta ero
+<lb/>construitur. A spica deligata una fascia in orbetn d o ca
+<lb/>brachio obvolvenda est ; data vero spira ad alam illusam
+<lb/>oblique adducenda est illicque tuto finienda.</p>
+</div>
+<div type="textpart" subtype="chapter" n="81">
+
+
+<p rend="indent">Quadrat quibus et crus. autem
+<lb/>construitur. Spica prius deligata unum ab humcu capta
+<lb/>circuitum recta ad cubitum angulatum figuratum ductmu^
+<pb n="18a.815"/>
+<lb/>ac postea recta russum ad humeri caput, ab humeri capite
+<lb/>oblique ad alam illaesam , mox in orbem per brachium
+<lb/>et axillam volvimus illicque modo adstruimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="82">
+
+
+<p rend="indent">Medium fasciae super axiliam affectam
+<lb/>injiciatur, capita vero recta ad cubitum flexui vicinum
+<lb/>directa; rursum primis paralella super humeri caput,
+<lb/>ab humeri capite sub illaesam axillam, deinde in orbem
+<lb/>ducantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="83">
+
+
+<p rend="indent">Medium super integram axillam injiciatur,
+<lb/>capita vero in orbem ad latera et brachium ferantur;
+<lb/>ac rursum in orbem recurrentes ad alam illaesam;
+<lb/>ab ala obliqua ad affectum humeri caput, ab humeri capite
+<lb/>arrecti a brachio ad cubiti flexum, rursusque a cubiti
+<lb/>flexu ad humeri caput , ab humeri capite ad alam
+<lb/>Illaesam , postremo in orbem circa brachium.</p>
+</div>
+<div type="textpart" subtype="chapter" n="84">
+
+
+<p rend="indent">Congruit utriusque humeri laesionem
+<lb/>serentibus. Ita vero conficitur. Quum simplex spica
+<lb/>constructa fuerit, tum postea fascia in axillam brachii
+<pb n="18a.816"/>
+<lb/>deligati demittenda, quam deinceps obliquam in alterum
+<lb/>brachium et humeri caput ducimus, ita ut supra ipsam
+<lb/>chiasmus fiat , deinde ad oppositam alam atque ipsis circurtus
+<lb/>admoventur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="85">
+
+
+<p rend="indent">Ita quidem simpliciter nominata est,
+<lb/>quod Romanorum thoracibus sit similis, quos cataphractos
+<lb/>vocitant. Iis autem congruit, in quibus clavicularum
+<lb/>regiones et scapuIas aut sternum aut metaphrenum aut
+<lb/>costas deligare volumus. Ad haec delegatio partim est
+<lb/>duplici spicae similis. Sic autem construitur. Caput fub
+<lb/>alam , circumvolutio oblique antrorsum per sternum prope
+<lb/>clavicularum cum osse pectoris connexionem ducitur et
+<lb/>per cervicem ad brachii oppositi scapulam , moxque fisa
+<lb/>adjacentem alam. Ab ala ad cervicem super prius injectam
+<lb/>fasciam, ita ut chiasmus prope cervicem struatur
+<lb/>obliqua super oppositam scapulam, deinde sub asam i ab
+<lb/>ala per cerVtcem ad cossi vertebsam, quo super ipliln
+<lb/>decussatio facta sit. Deinde sub alam prope clavicuIarsim
+<pb n="18a.817"/>
+<lb/>.commissuram, ut et hic chiasmus figuretur, et per cervicem
+<lb/>ad scapulam et ad alam, ut quadruplex chiasmus
+<lb/>conspiciatur. Unus quidem ex anterioribus, alter vero
+<lb/>ex posterioribus, duo denique prope claviculas. Circuitus
+<lb/>autem iisdem modis in orbes circa pectus et costas ita
+<lb/>feruntur, ut universa deligatio thoraci prodeat similis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="86">
+
+
+<p rend="indent">Medium sub axillam injiciatur. Capita
+<lb/>super cIavicuIam adjacentem prope cervicem decussatur;
+<lb/>deinde obliqua sub asam oppositam, ab asa ad oppositam
+<lb/>clavicuIam et super ipsam decussis prope cervicem
+<lb/>struatur et obliqua ad alam adjacentem, deinde circum.
+<lb/>thoracem in orbem ducantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="87">
+
+
+<p rend="indent">Haec ipsis congruit deligatio, quibus
+<lb/>pectus aut metaphrenum aut latera aut thoracem devincire
+<lb/>volumus. Duarum autem fasciolarum medio commensae
+<lb/>longitudinis super humeris posito capita recta deortum
+<lb/>demittimus; deinde convoluta fascia ambitu tum
+<lb/>totum pectus, tum latera deligamus, quo aperta fasciam
+<pb n="18a.818"/>
+<lb/>extremam continentes demissa deorsum capita tum rem
+<lb/>t ror su m, tum antrorsum fasciae circuitus a I lu i tuus, atqtu
+<lb/>si oblongiora sint, ad humeri caput conversa adstruimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="88">
+
+
+<p rend="indent">Praedictae fasciolae non rectae
+<lb/>sed obliquae pendeant , ut id pectore et metaphreno decussis
+<lb/>appareat. Cetera vero rectae deligationi similia perfici
+<lb/>un t ur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="89">
+
+
+<p rend="indent">His quidem congruit, quibus el
+<lb/>axillares. Sic autem construitur. Celebrata a duobus capitibus
+<lb/>cataphracta post multos circuitus fasciae distributiones
+<lb/>thoraci involvendae funt, ut ad umbilicum usque
+<lb/>epigallrium operiant, sicque capita inter se nexu ligamus
+<lb/>ut lupum laqueum construamus. Atque capitum residua
+<lb/>ad iIe dextrum et sinistrum adducta in orbem circuitibus
+<lb/>includimus, extrema pendere sinentes, ac si quatuor difiitorum
+<lb/>longitudinem sortiantur, quo ipsorum forma tanquam
+<lb/>thoracis fimbrias repraesentet.
+</p>
+<pb n="18a.819"/>
+</div>
+<div type="textpart" subtype="chapter" n="90">
+
+
+<p rend="indent">Caput super ile dextrum iniiciatur, spira
+<lb/>vero oblique per latus et sternum ad humerum sive sub
+<lb/>axillam, sive sub humerum, ut in eo decussatio sit. Mox
+<lb/>obliqua per dorsum ad ilia super caput prius injectum,
+<lb/>deinde circuitus circa ventrem ad ile sinistrum, illincque
+<lb/>obliqua super dorsum , ut in eo decussis struatur et ad
+<lb/>humerum dextrum, deinde sub alam et ad humerum, ut
+<lb/>super eo decussis fiat et obliqua per sternum et costas ad
+<lb/>ile dextrum, mox in orbem. Circuitus vero per ipsas
+<lb/>partes ducantur, ut ea quae deligatione devincienda sunt
+<lb/>contegantur omnia.</p>
+</div>
+<div type="textpart" subtype="chapter" n="91">
+
+
+<p rend="indent">Decussato thorace deligatione dicta ac
+<lb/>structa deinceps angusta fasciola unum aut alterum circuitum
+<lb/>per sternum et dorsum obvolve et spirae extremum
+<lb/>fibula retire.</p>
+</div>
+<div type="textpart" subtype="chapter" n="92">
+
+
+<p rend="indent">Congruit quidem quibus et cataphracta.
+<lb/>Sic autem struitur, A dorso caput orditur, spira oblique
+<lb/>per scapulam ad humeri caput sub axillam ; deinde ad
+<pb n="18a.820"/>
+<lb/>humeri caput, ut decussis fuper ipsum struatur et obliqua
+<lb/>per -mammam ad umbilicum. Ab umbilico reflectentes ad
+<lb/>oppositam mammam ducimus, obliquam ad humeri caput, .
+<lb/>ut decussis sirpra ipsum fiat; deinde ad dorsum, mox in
+<lb/>orbem cicca latera, denique his circuitus accubent.</p>
+</div>
+<div type="textpart" subtype="chapter" n="93">
+
+
+<p rend="indent">Congruit quidem quibus dorsum devioetre
+<lb/>volumus. Sic autem construitur. Caput ab ilibus
+<lb/>ordiatur ut sinistris, circum volutio per doctum ad dextrum
+<lb/>humerum et ad alam ; deinde fissi alam et ad humerum,
+<lb/>ab humero obliqua . per dorfum primae opposita ; postea
+<lb/>in orbem circa ilia semel et bis et extremum ipfa conlineat.
+<lb/>Atque haec stella retrorsum spectabilis esse potest,
+<lb/>si quis ipsius circuitus non retrorsum, fed antrorsum locaverit.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="94">
+
+
+<p rend="indent">lis quadrat .quibus et praecedens.
+<lb/>Sumptam igitur fasciam longitudine et latitudine congruentem
+<lb/>in medio scindimus ut caput permeet; extrema
+<lb/>vero demittimus pendula, alterum quidem a dorsi,, alterum
+<pb n="18a.821"/>
+<lb/>vero ab epigastrio, atque decussatum thoracem appellatum
+<lb/>implicamus. Scissa vero ipsius prius suppositae salinae extrema
+<lb/>deorsum ad finem pendere sinimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="95">
+
+
+<p rend="indent">Idonea quidem est deligatio; quibus
+<lb/>alteram cervicis partem devincire volumus. Caput per
+<lb/>lateris medium orditur, circumvolutis oblique a dorso ad
+<lb/>cervicem ac sternam ; deinde ad latus super caput primo
+<lb/>iniectum , postea per thoracem in orbem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="96">
+
+
+<p rend="indent">Caput sub alam iniiciatur; spira obiique
+<lb/>per storium ad cervicem , inde ad pectus et alam , ad
+<lb/>oppositam alam et obliqua ad pectus et cervicem ut super
+<lb/>ipsa decussis struatur et obliqua per dorsum ad alam in
+<lb/>orbem feratur. Hisque modis eant circuitus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="97">
+
+
+<p rend="indent">Dentur duae fafciae duorum digitorum
+<lb/>latitudine et longitudine commoderatae , quarum medicusliis
+<lb/>super humeros iniectis capita quidem ad umbilicum.
+<pb n="18a.822"/>
+<lb/>quae supra dorsum decussata inter se fibula jungimus,
+<lb/>Deinde quasilliformem gruem vocatam obvolvimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="98">
+
+
+<p rend="indent">Confert sane quibus et praecedens.
+<lb/>Construitur autem tum ex duplici trachelistro, tum ex
+<lb/>quasilliformi geranidc constitutis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="99">
+
+
+<p rend="indent">Caput ad ilia. .Distributio oblique ad
+<lb/>claviculam , ad scapulam ; deinde sub axillam et ad clariculum,
+<lb/>ut decussis fupra humeri caput struatur; .mox
+<lb/>transversa ad collum et oppositam claviculam sub alam et
+<lb/>ad claviculam, ut decussis etiam illic fiat et obliqua per
+<lb/>mammam ad ilia opposita, ut decussis quoque fuper pectus
+<lb/>figuretur; postea in orbem circa ilia feratur, mox circa
+<lb/>dorsum obliqua et per humeri caput ad alam, ac rursus
+<lb/>ad humeri caput; inde transversa ex anterioribus per davicularum
+<lb/>commissuram etiam ad humeri caput, atque
+<lb/>obliquo a dorso ad ilia, postremo in orbem ipsi implicatur
+<lb/>crus duplex vei decussatus trachelister vel etiam duplex
+<lb/>dicta deligatio.
+</p>
+<pb n="18a.823"/>
+</div>
+<div type="textpart" subtype="chapter" n="100">
+
+
+<p rend="indent">Congruit quibus tum sub pectus, tum dorsum
+<lb/>devincire volumus. Haec autem deligatio ex cuspide
+<lb/>et stella construitur, extremis, quae sine in cuspide inter
+<lb/>fe per fibulam pungebantur, . ad ilia adductis illicque
+<lb/>suspensis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="101">
+
+
+<p rend="indent">Praesumptis ad humerorum capita fasciolis
+<lb/>quas in cuspide explicavimus, adjice duas species trachelisterem
+<lb/>qui duplex est, deinde gruen quesilliformem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="102">
+
+
+<p rend="indent">Quum theatralis deligatio constructa est
+<lb/>rectis arae parvae angulis similis evadat. Primum deligato
+<lb/>trachelistere quasillisormi grui consimili pectoralem Sostrati
+<lb/>deligationem rectam cum suspendentibus fasciolis adlicimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="103">
+
+
+<p rend="indent">Ipsa etiam theatralis iisdem congruit
+<lb/>deligatio; recta iterum Sostrati deligatione facta pectoralem
+<lb/>deligationem, quam quidem quadrigam vocitant, construimus.
+<lb/></p>
+<pb n="18a.824"/>
+</div>
+<div type="textpart" subtype="chapter" n="104">
+
+
+<p rend="indent">Duabus fasciolis dorso superpositis, quemadmodum
+<lb/>recta Sostrati deligatione simplicem rhombum
+<lb/>obvolviurus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="105">
+
+
+<p rend="indent">Caput fasciae a latere ordiatur, spira oblique
+<lb/>per sternuat ad humeri caput siub alam volvatur;
+<lb/>deinde transversis ad humeri caput, mox transversa per
+<lb/>collum in oppositum humeri caput et sub axillam a parte
+<lb/>anteriori in posteriorem et ad ipsum humeri caput et obIiqua
+<lb/>ad sternunt, postea in orbem ad ilia. Eadem deligatio
+<lb/>retrorsum spectabilis redditur nobis immutantibus,
+<lb/>anteriores quidem circuitus posteriores, posteriores vero
+<lb/>anteriores facientibus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="106">
+
+
+<p rend="indent">Congruit quibus costae deligandae sunt.
+<lb/>Sic autem construitur. Medium fasciae in collum injicitur;
+<lb/>capita vero obliqua per sternuat sibi ipsis implicita
+<lb/>sub alas ad dorsum illicque rursum implicita adducantur.
+<lb/>Sicque quoad totum thoracem deligaveriut, modo retrorsum,
+<lb/>modo autiorfum injiciantur. Fasciae vero extrema
+<pb n="18a.825"/>
+<lb/>inter fe nexu ligentur. Hacce deligatione aurigae utuutur
+<lb/>costarum continendarum gratia. Expositis quae thoraci
+<lb/>obvolvuntur deligationibus ceteras deinceps renitemus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="107">
+
+
+<p rend="indent">Idonea quidem est inguini deviuciendo.
+<lb/>Ita vero construitur. Caput fasciae ab ilibus ordiatur;
+<lb/>opposita vero distributio obliqua per clunem inguinis asseoti
+<lb/>vicinum, deinde ad perinaeum inferne furium et obsiqua
+<lb/>ad inguen ; postea in orbem per ischium et per ilia
+<lb/>super caput iniectum, circuitus denique interne furtum
+<lb/>obvolvuntur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="108">
+
+
+<p rend="indent">Caput fuper epigastrium iniiciatur,
+<lb/>obvolutio oblique per coxam sirper perinaeum ad inguen
+<lb/>infernum ducatur juxta caput primo iniectum ad ischium
+<lb/>et inguen per perinaeum et femoris acetabulum inferne
+<lb/>furium et ad imum ventrem Circuitus vero his disicinituntur,
+<lb/>ut utrumque inguen obtegatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="109">
+
+
+<p rend="indent">Medium fasciae ab inguine ducit exordium
+<lb/>, capita vero ad femoris acetabulum feruntur illicque
+<lb/>decussata alterum quidem ad inguen, alterum vero extra;
+<pb n="18a.826"/>
+<lb/>deinde in unum adducantur, eadem ratione procedant
+<lb/>circuitus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="110">
+
+
+<p rend="indent">Brevioris capitis fere duae tresve partes
+<lb/>super inguen demittuntur ; spira vero per illa ad ifchium
+<lb/>et epigastrium ducitur; deinde oblique ad femoris acetabulum
+<lb/>et inguen inferne furium et - ad ilia et ifchium et
+<lb/>opposita ilia et epigastrium. Quamobrem demissum caput
+<lb/>ad inguen reflectitur , ut super eo sinus fiat, qui altera
+<lb/>circumvolutioue comprehendatur. Deinde etiamnum inguiui
+<lb/>immittitur , postea per ifchium et epigastrium, ac
+<lb/>deinde primum superne dentium obvolutae fasciae in sinus
+<lb/>contrahitur et circumvolutione comprehenditur et ita deligatur
+<lb/>continuo quoad deligatio peracta fuerit, altera
+<lb/>quidem implicata, altum vero super obvoluta; extremum
+<lb/>denique fibula nectitur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="111">
+
+
+<p rend="indent">Medium fasciolae super lumbos injiciatur,
+<lb/>capita vero per inguen, quemadmodum in simplici altera
+<lb/>deligatione remisimus. Capita vero super epigastrium et
+<pb n="18a.827"/>
+<lb/>construitur duplex inguinaria deligatio demissis deorsum
+<lb/>fafeiis , quas ut in duplici dictum est duplicamus. A o.</p>
+</div>
+<div type="textpart" subtype="chapter" n="112">
+
+
+<p rend="indent">Medium salinae .sumbis iniiciatur , capita
+<lb/>super epigastrium nexu ligentur; deinde fasciae obvolutae
+<lb/>caput sub xonam, spira sub caulem; deinde ad
+<lb/>sonam fuperne deorsum, postea sub caulem et ad sonam;
+<lb/>postremo sub testiculos et sub sonam deligationem absolvit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="113">
+
+
+<p rend="indent">Circumvoluta sona fasciae caput ad
+<lb/>caulem- injiciatur; in circuitus lu.nrbem. circa ipsum quoad
+<lb/>obtexerit; deinde ad venam ferantur, mox fusi caulem et
+<lb/>ad sonam ; postremo fusi testiculos et ad sonam.</p>
+</div>
+<div type="textpart" subtype="chapter" n="114">
+
+
+<p rend="indent">Linteum consentaneum sumptum in
+<lb/>quatuor crura scindimus , medium integrum sinentes cauli
+<lb/>subiicimus; capita vero ad alteram partem ducentes prope
+<lb/>caulem scindimus. Per hanc autem - parteni alias ad sonam
+<lb/>ductas trajicimus et trapetas nodo alligamus.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

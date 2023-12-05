@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De nervorum dissectione</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg014.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="831" to="856">831-856</biblScope>
+              <date>1821</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x02">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="204" to="206">204-206</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x05">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="241" to="250">241-250</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x04">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg014.verbatim-lat1">
+<pb n="2.831"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="2.831"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>CALENI DE NERVORVM DISSECTIONE LIBER.</head>
+
+
+<p>Quod siane nulla partium animalis neque
+<lb/>motum , quem voluntarium nominamus , neque fienfurn
+<lb/>sine nervo habeat, quodque, si nervus incisus fuerit,
+<lb/>tensu ac motu statim pars privetur, jam ab omuibus
+<lb/>concessum est medicis. Quod autem principium nervormn
+<lb/>sit . ipsorum cerebrum , quemadmodum et ipsius
+<lb/>etiam dorsalia medullae , quodque nervi alii quidem ex
+<lb/>ipsi, cerebro, alii ex dorsali medulla oriantur, non omrubus
+<lb/>certe. compertum est, quamvis id, quod ex dissisitione
+<lb/>apparet, hoc fe habeat modo.
+</p>
+<pb n="2.832"/>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Ipsi quidem anteriores iit cerebro ventriculi,
+<lb/>dum ad priorem procedunt partem, paulatim ad
+<lb/>modum figurae coni coarctantur, quousque ad nasi prinëipium
+<lb/>perveniant, perpetuo libi mutuo appositi sescque
+<lb/>contingentes, ut nihil inter ipsos sit medium, nisi
+<lb/>tenuis meninx membrana ve. Ab utraque autem horum
+<lb/>ventriculorum parte alter dextra, alter sinistra est nervus
+<lb/>crassitudine notabilis ac prope omnibus aliis nervis
+<lb/>mollior, qui a cerebro exoriens in oculos extra calvariam
+<lb/>per quoddam procedit seramen , quod tanta prorsus
+<lb/>latitudine, quanta nervus crassitudine, est. Collocatum
+<lb/>nutent est hoc Foramen , qua primum oculorum regio oriri
+<lb/>incipit; tibique nervi hi, Ii inspexeris, veluti quae..
+<lb/>dant oculota.un radices esse videbuntur. Dissolvuntur auIent
+<lb/>nuit in multas sane fibras, quemadmodum caeteri
+<lb/>omnes nervi, qui instrumentis eos suscipientibus distribuuntur,
+<lb/>sed admirabili quodam alio modo, quem nec
+<lb/>verbis sacile est explicare, nec, si audias, prius fortasse
+<pb n="2.833"/>
+<lb/>credes , quam tuis oculis hoc spectaculum intuitus fueris.
+<lb/>Nam uterque, dum intra oculum sibi e regione situm
+<lb/>immergitur, in latum sese extendit, ipsum que, qui in
+<lb/>oculo est vitreus humor vocatus, sphaerae modo in orhem
+<lb/>circuit, nihil etiamnum a cerebri natura inibi differens.
+<lb/>Quin et solis his nervis ante, quam in oculos
+<lb/>inserantur, aperte intus sensibilis quidam meatus adest;
+<lb/>unde et hos ipsos nonnulli dissectionis professores meatus,
+<lb/>non nervos, appellant; nonnulli vero nervos opticos
+<lb/>(visorius ) , ab actione nimirum imponentes nomen. Et
+<lb/>hanc coniugationem primam nervorum a cerebro provenientium,
+<lb/>omnium aliorum existentem mollissimam, numeranI.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Alia vero deinceps est coniugatio, quae;
+<lb/>musculis oculos moventibus distribuitur, multo profecto,.
+<lb/>quam praedicta , durior et minor. Et sane foras e casu
+<lb/>varia excidit prope illos, quos tenuissimum os distetminat.
+<lb/></p>
+<pb n="2.834"/>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Huic ipsa non in primo ejus exortu, scd
+<lb/>.dum per calvariam progreditur, tertia adjacet coniugatio
+<lb/>nervorum; vocant autem ipsius molles; qui tibi, fi mentem
+<lb/>eis diligentius adhibeas, quamplures in prima statim
+<lb/>radice esse videbuntur; at si negligentius inspexeris, emnes
+<lb/>unus esse apparebunt. Molliores igitur re vera sunt
+<lb/>nervi lu, quam in secunda nuper dicta ac quarte ac.
+<lb/>ulla alia deinceps sequenti coniugatione habentur. Ad.
+<lb/>hucque etiam magis tales apparent, quod, cum plures
+<lb/>numero sint ac capillorum modo tenues, mutuo -sibi
+<lb/>citra usiam aut compressionem aut complicationem adv
+<lb/>haerent.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Quarta vero nervorum a cerebro proveurentium
+<lb/>coniugatio , paulo iis durior,. post exortum statim
+<lb/>tertiae permiscetur, simulque praetergreditur primuni
+<lb/>quidem crassam ipsam cerebri membranam, postea.
+<lb/>yero ipsum etiam capitis os; deinde rursus ad oris palatum
+<lb/>secedit. Tertia porro coniugatio , quemadmodum
+<pb n="2.835"/>
+<lb/>ex multis primo ridetur radicibus componi, ita quoque
+<lb/>multifariam discinditur- Nihil enim interest, sive solvi a
+<lb/>se ipsis invicem praedictam nervorum collectionem elixeris,
+<lb/>sive discindi totum, quum partes- dehiscant: nec sccus
+<lb/>intererit , sive paries ipsas a su ipsis mutuo - drscriminari
+<lb/>dicas, sive earum unamquamque a tota collectione
+<lb/>nasci. Prima igitur ipsorum particula secedit in inferiorem
+<lb/>capitis partem tendens, id quod dissectionis profui-.
+<lb/>fores latuit. Commune autem est crauii foramen , per
+<lb/>quod tum haec nervorum portio deorsum fertur, tum ipsina
+<lb/>carotinis seu foporariae reliquum ad cerebrum aloendit;
+<lb/>ab utroque certe latere una. Nam fi hoc quandoque
+<lb/>in oratione non dicatur, subaudiendum tamen a vohis
+<lb/>perpetuo est; ut qui semel nuper audieritis, nullum
+<lb/>vel a cerebro - vel doriali medulla prodeuntium nervorum
+<lb/>non coniugatum esse; (ultimo eo excepto, qui a
+<lb/>dorsali medulla progrediente enascitur , ille enim solus sine
+<lb/>coniugio est; propterea quod storialis medulla jam in nervos
+<lb/>-absumpta suerit,] sed semper a dextra alterum, alterum
+<lb/>a .sinistra, mutua sibi. ipsis magnitudine - exquisite aequales.
+<pb n="2.836"/>
+<lb/>exoriri. Quo igitur modo nervi hi per collum ac thoracem
+<lb/>ad eas quae infra septum transversum sunt partes ferantur,
+<lb/>et quaenam eorum fit distributio, procedens oratio
+<lb/>declarabit p nunc ad reliquas tertiae coniugationis partes
+<lb/>revertamur. Nam. quum illa e calvaria excidit, secundum
+<lb/>quidem attingit, non ei tamen permiscetur, quemadmodum
+<lb/>aliae quaedam,,; uti .narrabimus , sed varie, veluti
+<lb/>jam diximus, scludrtur. Confestim igitur excidit particola
+<lb/>ipsius ad. maxillae dearticulationem in anteriorem
+<lb/>aurium partem, nervis a quinta coniugatione provenientibus
+<lb/>permixta; quo autum modo permisceatur, paulo
+<lb/>post audies. Haec porro exigua quaedam ipsius est partieula...
+<lb/>Atqui veluti truncus est omnium ab ipso nascentium
+<lb/>partium, quae et ipfae ramorum. ac virgultorum
+<lb/>rationem obtinent; bifariam primo scinditur; deinde
+<lb/>utrumque ipsorum membrum in multas secatur particulas.
+<lb/>Et alterum quidem ..tum lu musculos temporales
+<lb/>et mansorius distribuitur,. tum in omnes etiam alios,
+<lb/>qui. a superiori maxilla .exoriuntur; gingivis praeterea
+<pb n="2.837"/>
+<lb/>dentibusque ac cuti, quae circa faciem est, per hos nervos
+<lb/>tensus esu Alterum vero membrum . tum ad dentium,
+<lb/>qui in inferiori funt maxilla, radices scinditur,
+<lb/>eadem nimirum proportione , . qua prius membrum in fuperioris
+<lb/>maxillae musculos scindebatur, tum ipsis etiam
+<lb/>gingivis ac labris inferioribus distributiones ac propaglires,
+<lb/>perinde ac illud superioribus, .mittit Plurima
+<lb/>autem ejus pars in linguae tunicam dissipatur. Et hoc
+<lb/>nervorum par gustatorium aliqui appellant, quandoquidem
+<lb/>per hos gestandi fit sensus. Talis igitur est tertiae
+<lb/>coniugationis distributio. Dictum praeterea est et de
+<lb/>quarta, quam recte a tertia fejunctam et ad palatum
+<lb/>pervenientem invenit Marinus; de qua et nes quoque
+<lb/>in libris de administrationibus anatomicis disserimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p>Deinceps vero altera est nervorum coujugatio,
+<lb/>quam Marinus quintam nominat; quamvis non
+<lb/>ex una exquisite radice exurgat , .sed sibi- mutuo-vicinae.
+<lb/>sunt alterque ex altera exoritur nervus. sic in anteriori
+<pb n="2.838"/>
+<lb/>quidem magis parte, qui auditorius vocatur, qui una cum
+<lb/>dura cerebri meninge simul exoriente in auditus foramen
+<lb/>incidit, cum qua in latitudinem sese explicans mealum
+<lb/>sublinit. A posteriori vero parte alter in aliud
+<lb/>quoddam petrosi ossis foramen incidit, quod caecum appellatur:
+<lb/>sic enim veteres anatomici hoc foramen nominant,
+<lb/>propterea quod anfractum illum, per quem nervus
+<lb/>foras post aures excidit, haud possent perfecte perforare.
+<lb/>Statim vero et hic nervus lili tertiae conjugationis
+<lb/>nervo, qui foras excidere apud maxillae deartinutationem
+<lb/>dictus est, permiscetur; non quod iHe ad
+<lb/>hunc perveniat, sed quod hunc ipsum ad se adventantem
+<lb/>expectet. Ex utrisque autem commixtis maxima
+<lb/>pars vel , ut melius dicam , totum fere in latum
+<lb/>musculum scinditur, qui cuti subnascens buccam line
+<lb/>maxilla movet ; qui sane a nobis unus nimirum , et ipse
+<lb/>utrinque existens, inventus est. Nam te semper hoc
+<lb/>meminisse oportet, et in omnibus per coniugationem intelligas
+<lb/>, licet quandoque in oratione praetermittatur.
+<pb n="2.839"/>
+<lb/>Ejusmodi igitur est distributio quintae coniugationis.; nam
+<lb/>licet manifeste duplex existat, una tamen propter Mari..:
+<lb/>num esse concedatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Sexte vero nervorum a cerebro orientium
+<lb/>coniugatio una: quidem utitur scramine, quod
+<lb/>prope inferius futurae lambdosideos extremum suum esu
+<lb/>Quum priinum tamen ex cerebro oritur , trium habet
+<lb/>principia nervorum, qui cum extra calvariam excidunt,
+<lb/>varie tum inter seipsos, tum cum adjacentihus, de quibus
+<lb/>paulo post dicam , noscentur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">At septima reliqua est coniugatio nervorum
+<lb/>a cerebro orientium , quae maxima sui ipsorum
+<lb/>partu in linguae musculos distribuitur, nam quaedam
+<lb/>parva ipsorum particula in eos quidem semper pervenit
+<lb/>musculos , qui. thyroidi (scutifurmi j laryngis cartilagini,
+<lb/>tum humilibus lambdosidis offis lateribus communes sunt;
+<lb/>in alios autem quosdam non semper.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Commiscentur autem, ut diximus, inter
+<lb/>sese nervi infra caput tundentes, tum .qui a tertia conjugatione,
+<pb n="2.840"/>
+<lb/>tum etiam qui a duabus novissime dictis proveniunt.
+<lb/>Quin etiam nervorum a doriali medulla nafcentiurn
+<lb/>prima et fecunda coniugatio multam cum his
+<lb/>nervis commixtionem -facit ; tibique faep ius quidem, quod
+<lb/>ex altero ad alterum pervenit, veluti vinculum quoddam
+<lb/>duntaxat ambobus commune esse videbitur, nonnunquam
+<lb/>vero id ipsum alterum quidem nervorum auget, tanquam
+<lb/>ad illum accesserit, fefe cum eo admlscens, alterum
+<lb/>vero minorem reddit, .tanquam ab ipsi, recesserit. Quapropter
+<lb/>.in. his nervis cognoscendis confusi sunt omnes
+<lb/>anatomici, et inter fete maximopere discreparunt , ac ur
+<lb/>unoquoque plurimum ignorarunt. Num quaedam, quae
+<lb/>non sutum lu cunctis animalibus non apparent perpetuo,
+<lb/>fed ne in simiis quidem fotis ; ipsi,. ac si nunquam aliter
+<lb/>ea fete haberent , asseveranter scripserunt ; quaedam
+<lb/>vero non in simiis stilum, fed in aliis etiam animalibus,
+<lb/>quorum sex esse genera in libris de anatomicis administrationibus
+<lb/>ostendo , similiter^ perpetuo te habere , . emnluo
+<lb/>ignorarunt. Exempli caula omnibus propriis gutturis
+<pb n="2.841"/>
+<lb/>musculis nervi a texta coniugatione secundum tres
+<lb/>ab utroque latere insertiones -distributi sunt, ut eae omnes
+<lb/>fiex numero existant. Noverunt autem nonnulli quidem
+<lb/>duas duntaxat ipsarum; nonnulli vero neque has.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Sane laryngis musculi , qur cum aliis partibus
+<lb/>communes fiunt, non semper a texta coniugatione
+<lb/>nervos suscipiunt, quemadmodum nec qui os lanrbdoides
+<lb/>et hyosides dictum sterno connectunt, de quibus
+<lb/>lu libris de administrationibus anatomicis exquifite pertractatur.
+<lb/>In quibus etiam libris de trium illorum nervorem
+<lb/>distributione traditur, qui per id foramen, quod
+<lb/>prope finem suturae lambduideos est, dicuntur exoriri,
+<lb/>quamvis omnes fere lu utroque latere unum esse, carotidibus
+<lb/>(soporantis] nimirum arteriis inhaerefcentem, existiruent,
+<lb/>quem si laqueo intercipias, mutum eoufestim reddetur
+<lb/>animal. Ab sus igitur nervis etiam laryngis mufculi
+<lb/>propagmes suscipiunt. Reliquorum vero duorum
+<lb/>alter tum in faucium musculos, tum in linguae radicem,
+<pb n="2.842"/>
+<lb/>alter tum in fcapulae musculum et latum, tum alios
+<lb/>quosdam, qui inibi sunt, pervenit. Ipsus etiam auatomicos
+<lb/>latuerunt non paucae propagines eorum nervorum
+<lb/>arteriis carotidibus inhaerescentium,. quos stilos plurimi
+<lb/>(ut dixi] sextam esse coniugationem existimant; quas qui:
+<lb/>dem propagines illi, dum per collum et thoracem feruntur,
+<lb/>faciunt, antequam ori ventriculi, in quod plurima
+<lb/>istorum nervorum portio inferitur ac disseminatur,
+<lb/>incidunt. Illud certe admiratione est dignum, quod
+<lb/>quasdam ex his nervis particulas lu septum transversum.
+<lb/>distribui dicant, quum tamen ipsimi ne minimam quidem
+<lb/>omnino ex hae coniugatione portionem suscipiat
+<lb/>At quod vicissim ex medio thorace nonnullae horum
+<lb/>nervorum portiones ad quosdam laryngis musculos veniaut,
+<lb/>non etiam dicunt, nec quam facultatem hi nervi
+<lb/>habeant; .quanquam si hi laesi fuerint, causae sunt; ut
+<lb/>animali vox deficiat. Et magna nervorum arteriis inhaer
+<lb/>entium coniugatio propterea, quod hi eorum particulae
+<lb/>sunt., vocem destruere. si laedatur, potest Varia autem
+<pb n="2.843"/>
+<lb/>est horum nervorum infra septum transversum distributidt
+<lb/>- Nam et quasdam particulas a dorsali medulla , quae
+<lb/>illic est, suscipit, et ad viscera, quae inibi sunt, disseminatur,
+<lb/>et iis etiam, quos superius a tertia coniugatio-.
+<lb/>ne per collum ac thoracem deferri diximus, admiscetur.
+<lb/>Quanquam rursus hi ipsi nervi , qui ad costarum
+<lb/>radices deferuntur , . sextae coniugationis esse propagines
+<lb/>ab omnibus existimantur. Varia- igitur est et hormn
+<lb/>nervorum commixtio tum eum: intercostalium nervis,
+<lb/>tum iis fere .omnibus , .qui ad lumbos parvi feruntur;
+<lb/>tum postremo cum- eorum nervorum reliquiis, qui ad
+<lb/>ventriculi os veniunt.. Varia denique est et quae intra
+<lb/>peritonaei regionem est distributio, quam nunc mihi ad
+<lb/>exquisitam diligentiam elaborare non est propositum. Sed
+<lb/>fatis est, si non ignoremus , quod ad jecur et lienem et
+<lb/>renes, adhucque etiam ante haec ad tutum ventrem ac
+<lb/>ad omnia viscera .nervi a cerebro partim a tertia (ut
+<lb/>dictum est) coniugatione, partim a .fenta pervenire conspicruntur.
+<pb n="2.844"/>
+<lb/>Quod autum pulmo ac cor a texta conjugatione
+<lb/>quandam nervorum portionem lu collo suscipiunt,
+<lb/>omnes certe novere. Verum de nervis a cerebro. prodeuntibus
+<lb/>haec iis, qui instituuntur,- sufficiunt. He
+<lb/>iis vero, qui a donati medulla proveniunt, deluceps agendum,
+<lb/>in quibus omnes dissertionis professores erraverunt.
+<lb/>Erratorem autum can fas nunc non est tempus proloqui,
+<lb/>quandoquidem jam eas in administrationibus anatomicis
+<lb/>narravimus. Antiquorum tamen ob id cogor meminisse,
+<lb/>quod iis, qui eorum quidem libros legunt, haud tamen
+<lb/>mecum quae per dissertiones apparent inspiciunt, lutertum
+<lb/>esse ridebitur, utrum omnes illi, an ego lotus peccaverim.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Prima igitur coniugatio nervorum ex dorPali
+<lb/>medulla prodeuntium exoritur perforata prima vertebra
+<lb/>foraminibus diversis ab iis, quae primarum sex vertebrarum
+<lb/>communia sunt. Illa enim lu transversis sunt
+<lb/>processibus ac nequaquam medullam tangunt; quae vero
+<pb n="2.845"/>
+<lb/>tangunt, duo sunt alia, per quae prima nervorum conjngatio
+<lb/>excidit, quae unam quidem radicem apud medullam
+<lb/>habet, mox bipartito scinditur, ac altera quidem
+<lb/>ejus particula retro, altera adfatus fertur. Itaque parva
+<lb/>est. haec nervorum. coniugatio infis animalibus, in qui;
+<lb/>bus primae vertebrae sunt parvae, veluti in tinnis; ma-.
+<lb/>gna veno, . in quibus magnae, veluti in serratos dentes.
+<lb/>habentibus et cornigeris; lu sus ergo ob ipsam certe magnitudinem
+<lb/>nervorum exortus ad latera perveniens in
+<lb/>plnres musculos dispergitur , quos in anatomicis administrati
+<lb/>opibus diximus. lu simiis vero, quae homini tum.
+<lb/>lu plurimis aliis particulis, tum collo simillimae sunt, in.
+<lb/>eos tantum prima coniugatio distribuitur musculos , qui
+<lb/>circa capitis deartieulationem sunt ; qui nec ipsi exacte
+<lb/>ab anatomicis cogniti. suere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">Secunda vero nervorum a dorfali medulla
+<lb/>nascentium coniugatio a posterioribus quidem et
+<lb/>ipsa. emergit. partibus, non tamen per ulla sane for<hi rend="u">amin</hi>a,
+<pb n="2.846"/>
+<lb/>quemadmodum prima. Nam ; in utraque spinae parte
+<lb/>Iocus quidam est ossibus, quae sunt in vertebris, laudatus,
+<lb/>in medio primae et secundae vertebrae : per quem nerri
+<lb/>exoriuntur; qui et ipsi quadam sui parte per latera ad
+<lb/>anteriora feruntur, nervis primae et tertiae coniugationis
+<lb/>a cerebro prodeuntibus (sicuti etiam tertia coniugatio)
+<lb/>complicati. Plurima vero sui ipforum portione pullarioribus
+<lb/>colli musculis distribuuntur, a quibus primarum
+<lb/>vertebrarum inter su et cum capite motiones fiunt; simul
+<lb/>etiam quippiam latis musculis buccas .moventibus nuper-.
+<lb/>tientes. Quicquid vero reliquum est ipsorum; ad caput
+<lb/>ascendit, posteriorem ipsius tutam regionem pertexens,
+<lb/>partes -etiam, quae circa ames sunt, quaeque ad verticem
+<lb/>et sincipitis ossis initium pertinent. Ita farre et quod
+<lb/>antrorsum fertur, propemodum et ipsum in totam auteriorem
+<lb/>capitis partem - disseminatur. r</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p>Tertia autem coniugatio nervorum a
+<pb n="2.847"/>
+<lb/>dorsali medulla venientium ex transversis partibus oritur,
+<lb/>ubi fecunda .et tertia vertebra inter fe mutuo cono
+<lb/>gredi entes commune rutundum efficiunt foramen, quod
+<lb/>nervi crassitudini latitudine est aequale. Statim vero
+<lb/>fcinditur, ac altera quidem parte retrorsum fertur, distributiones
+<lb/>quasdam per profundum musculorum, qui inibi
+<lb/>ruat, exhibens;-- postea ad ipfius spinae apicem exurgit,
+<lb/>indeque rursus nervus hic obliquus in anteriora tendit,
+<lb/>in musculos, qui poli aurem fiunt, disseminatus, ab utraque
+<lb/>parte unus ; nam id semper , licet noli dicam, te animo
+<lb/>concipere volo. Altera vero parte, quae in anteriora
+<lb/>fertur, tertia haec coniugatio, de qua nunc habetur fermo,
+<lb/>vicinis exortibus permiscetur, distributionesque quas-.
+<lb/>dam tum aliis, quae illic sunt, corporibus, tum -latis muscalis,
+<lb/>tum vero iis etiam, qui sunt ante aurem, .mittit;
+<lb/>mtiseuiisque buccas moventibus et iis , qui colium totum
+<lb/>cum universo capite retro erigunt, difiribuisur. Pars
+<lb/>vero., quae ante -fertur, utrique.consugationi, secundae
+<pb n="2.848"/>
+<lb/>scilicet, cuius jam meminimus, et quartae, de qua mox
+<lb/>loquemur, permiseetur. Porro accuratam distributionem,
+<lb/>quam in anterioribus colli partibus: habet earum conumctm
+<lb/>, alibi explicabimus. . Nunc vero . id modo intellexisse
+<lb/>satia erit, tertiam quartamque. coniugationem nervos
+<lb/>communibus colli capitisque musculis, ac praeterea musaulis
+<lb/>buccas moventibus, quemadmodum certe et partibus,
+<lb/>quae sunt post aulas , suppeditare. ,</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="indent">Quae vero subsequuntur coniugationes,
+<lb/>commune quidem habent omnes, quod per foramen duabus
+<lb/>vertebris commune nervi excidant; commune vero et
+<lb/>in his, quod statim in exortu scindantur, quodque altera
+<lb/>parte, quae minor est, ad anteriora, altera, quae major,
+<lb/>per profundum ferantur; ac primo quidem in. spinae. apicem
+<lb/>, inde vero in anteriora rursus feruntur per latum
+<lb/>mufculunr, qui buccas una cum labiis, .citra hoc quod
+<lb/>maxillae inferioris os moveat, ad. latera abducit,. quem
+<lb/>neque susum anatomici noyere, evidentissimam licet actionem
+<pb n="2.849"/>
+<lb/>habeat. Commune hoc praeterea est omnibus deinceps
+<lb/>coniugationibus , ut post primum statim exortum
+<lb/>brevem quandam nervorum distributionem in musculos
+<lb/>spinales exhibeant. ..Quinetiam omnibus his nervis
+<lb/>commune est, ut ad spinam retrorsum ferantur ac nonnullas
+<lb/>propagines musculis colli et capitis communibus
+<lb/>impertiant. omnes enim tum qui in partibus colli antutioribus,
+<lb/>tum qui ad ejusdem latura sunt musculi, nervos
+<lb/>ab his coniugationibus capiunt, praetor eos musculos,
+<lb/>in quos a cerebri coniugationibus distribui nervos diximus.
+<lb/>Haec igitur omnium nervorum, qui in toto collo
+<lb/>habentur, communia sunt; quod certe collum in omnibus
+<lb/>iis animalibus, quae non admodum diversam ah homine
+<lb/>naturam obtinent, septem constat vertebris.</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p rend="indent">Quae vero propria sunt in singulis, tum
+<lb/>accurate quidem in anatomicis administrationibus dicta
+<lb/>fuere, tum vero nunc quoque per capita ac summatim
+<lb/>ea nos dicere, brevissimo quo possumus sermone comprehendentes,
+<pb n="2.850"/>
+<lb/>est necessarium. omnes sane, tam qui in anterioribus,
+<lb/>quam qui in lateralibus colli partibus sunt
+<lb/>musculi, - ab his coniugationibus nervos suscipiunt, iis
+<lb/>musculis exceptis, ad quos a coniugationibus ex cerebro
+<lb/>prodeuntibus aliquid distribui praediximus. His igitur
+<lb/>-praecognitis jam clarum erit,. quidquid lu unaquaque
+<lb/>subsequenti coniugatione est proprium, cui tu animum
+<lb/>adverte. A quarta con jugatione , quae inter tertiam et
+<lb/>quartam vertebram enascitur, brevis admodum in simiis
+<lb/>nervulos ad succedentem pervenit coniugationem , illi,
+<lb/>qua primum excidit, permixtus. . lu caeteris autem
+<lb/>animalibus haud frequenter sane hanc permixtionem fieri
+<lb/>conspicimus. Post hanc vero deinceps quinta coniugatio
+<lb/>.post quartam vertebram exoritur. Ac ejus sane una
+<lb/>quaedam parva portiuncula declivis fertur; quae si parvas
+<lb/>quasdam a succedentibus coniugationibus portiones as.sumpserit,
+<lb/>septi transverti nervus evadet. Ex quarta vero
+<lb/>coniugatione portionem quandam araneosam ad septum
+<lb/>transversum natura transmisit; ex quinta vero notabilem;
+<pb n="2.851"/>
+<lb/>deinde aliam ex sexta ; sed hujus minorem, prioris vero
+<lb/>majorem. Altera vero hac major particula ad summum
+<lb/>scapulae ascendit ; - reliquum autem totum . in communi
+<lb/>scissionis ratione dierum est. Ex succedentibus porro
+<lb/>coniugationibus sexta quidem post quintam vertebrato,
+<lb/>septima. post sextam, octava post feptimam ex comumnibus,
+<lb/>ut dictum est, foraminibus excidit, quae postea
+<lb/>sibi mutuo permixtae ad scapulae sima et ad brachium
+<lb/>peri axillam tendunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+
+
+<p rend="indent">Alia vero deinceps coniugatio ex thoracis
+<lb/>jam vertebris inter primam nimirum ac fecundam
+<lb/>exoriens plurimam supradictis coniugationibus sui ipsius
+<lb/>partem permiscet. Portioque sane non exigua ipsius in
+<lb/>primum intereostale discinditur ac ad spinales musculos
+<lb/>retro pervenit; reliqua vero tota, super primam costam
+<lb/>extensa, nervo, qui post septimam colli vertebrato est,
+<lb/>copulatur. Deincepsque hoc modo cum ambae hae, tum
+<lb/>caeterae praedictae partes per axillam^ in scapularum
+<pb n="2.852"/>
+<lb/>sima et brachium feruntur, luter sisse quodammodo permixtae
+<lb/>ac complicatae. Ac magna eorum pars in linaclui
+<lb/>et cubiti musculos distribuitur. Quod vero adhuc
+<lb/>reliquum est, lu summam manum disseminatur. E direclo
+<lb/>autem quodammodo potissimum sunt ultimae quidem
+<lb/>praedictarum propagini, quicunque ad summam manum
+<lb/>pertingunt nervi; ei vero, quae stupra hunc est, nervi,
+<lb/>qui in cubito sunt; quicunque autem in brachio sunt, et
+<lb/>quicunque his adhuc sunt sublimiores ad scapulamque
+<lb/>perveniunt nervi, superioribus coniugationibus sunt e dis
+<lb/>recto. Qualenam vero itur per lotam manum faciant, ac
+<lb/>quomodo in singulos musculos distribuantur, lu anatomicis
+<lb/>administrationibus jam dictum est. . Eodem etiam modo
+<lb/>ex omnibus thoracis vertebris nervi exoriuntur, fimiIcm
+<lb/>omnes distributionem sortiti, eo excepto, qui in feeundo
+<lb/>est intercostali. Inde enim manifeste nervus excidit,
+<lb/>ad brachii cutem accedens. Caeterae vero omnes
+<lb/>coniugationes statim quidem lu exortu portionem quandam
+<pb n="2.853"/>
+<lb/>spinalibus musculis tribuunt aliisque, qui in dorso
+<lb/>fuot, veluti tum iis, qui scapulas movent, tum etiam
+<lb/>iis, qui ad humeri dearticulationem ascendunt. Parte
+<lb/>vero sui ipsarum reliqua universa ac maxima per intercostalia
+<lb/>ad os usque pectoris progredientes, tum eos, qui
+<lb/>iutercostalibus sunt, musculos per texunt; tum eos etiam,
+<lb/>qui extrinsecus thoraci impositi sunt, suas ipsarum particulas
+<lb/>per medium eorum emittentes; de quarum singulis
+<lb/>particulatim in anatomicis admlurstrationibus lictum esu
+<lb/>Porro, quae a dorsali medulla ad costas nothas accedunt
+<lb/>nervorum coniugationes , propterea quod costae nothae
+<lb/>ad sternunt non perveniunt, parum quiddam sane singulae
+<lb/>intercostali sibi respondenti distribuunt, reliqua
+<lb/>vero tuta sui parte ad bypochondrium excidunt, tum
+<lb/>in eos distributae musculos, qui primi lustrati sunt, extrinseci
+<lb/>nimirum et obliqui superneque ex thoracedelati,
+<lb/>tum in eos etiam, qui recta descendunt carnofique
+<lb/>sunt.
+</p>
+<pb n="2.854"/>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+
+
+<p rend="indent">Post has vero sunt, quae lu lumborum
+<lb/>regione habentur nervorum propagines, non ex communi
+<lb/>foramine , quemadmodum quae in collo sunt. Nam fuperior
+<lb/>dumtaxat vertebra hic perforata commodum nervo
+<lb/>praebet exitum communi illo soramine, quod in collo
+<lb/>ex ambabus vertebris fiebat, paulatim. transposito ad superiurem;
+<lb/>ita ut primo quidem illius exculpatur multum
+<lb/>in ipsa , postea vero totum , deinde etiam conscendat ab
+<lb/>extremo vertebrae ac propago ipsa .fiat supra finem.
+<lb/>Commune autem omnibus his nervis est, quod ad spmales
+<lb/>musculos et abdomen et pluas vadunt. Ex primis
+<lb/>autem post diaphragma vertebris iis etiam, qui superne
+<lb/>descendunt a cerebro, nervis nervus quidam parvus permiscetur
+<lb/>ab .unaquaque ; in ultimis autem lumborum verfebris
+<lb/>duae propagines maxime gignuntur nervorum ad
+<lb/>crura tendentium; ipsis autem aliae parvae permiscentur,
+<lb/>quarum una superposita est,. altera vero infra primum
+<pb n="2.855"/>
+<lb/>foramen in osse sacro vocato positum exoritur. Hae
+<lb/>igitur statim recedente.. primis musculis dearticulationem
+<lb/>coxendicis moventibus inseruntur; reliqua vero tota pars
+<lb/>ad crura tenuit ad finem usque ipsorum discissa in
+<lb/>unumquemque musculum- eadem proportione, qua in manuum
+<lb/>musculis fiebat ( quemadmodum in anatomicis administrationibus
+<lb/>explicatum jam est. Nunc enim veluti
+<lb/>quandam subfigurationem et- compendium eorum , quae
+<lb/>accurate in istis libris scripta fuere, utilem tironibus futuram
+<lb/>fecimus. Sic sane etiam, quicunque per reliqua
+<lb/>ossis lati foramina propagationem habent nervi, mulculisque,
+<lb/>qui mihi sunt, disseminantur, in illo tractatu exquifile
+<lb/>narravimus. Nunc hoc tantum dixisse fatis sit, fedis,
+<lb/>pudendi et vesicae musculis, ipfique etiam pudendo, ac
+<lb/>praeterea musculis, qui ab osse lato et ab luterna ossis
+<lb/>pubis parte exoriuntur, omnibusque etiam corporibus extrinsccus
+<lb/>juxta hoc iptum os latum ac sacrum appellatum
+<pb n="2.856"/>
+<lb/>incumbentibus ex internis extemisque ejusdem ossis
+<lb/>facti foraminibus nervorum propagines a dorfali medulla
+<lb/>gigni, ut os coccyga vocatum terminantes.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

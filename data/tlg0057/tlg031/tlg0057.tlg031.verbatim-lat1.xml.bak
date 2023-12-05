@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De usu pulsuum</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg031.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="149" to="180">149-180</biblScope>
+              <date>1823</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x05">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="154" to="159">154-159</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="434" to="443">434-443</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x05">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg031.verbatim-lat1">
+<pb n="5.149"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="5.149"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>CALENI DE PVLSVVM VSU
+<lb/>LIBER</head>
+
+
+<p rend="indent">Quis utus pulsuum? an qui et respira-.
+<lb/>tionis, ut prope omnibus tum medicis tum philofophis
+<lb/>vifum est, an praeter hunc alius? Non enim certe ipsis
+<lb/>inexplorate credendum, quum adversari rideantur
+<lb/>ex aliis quibusdam evidentibus non pauca, idque potilisimum
+<lb/>, quod nunc sum proditurus Enimvero respiratione
+<lb/>privati quamprimum morimur, at pulsu orbatus
+<lb/>multas partes citra magnam laesionem efficies. Si
+<lb/>namque eas, vel quae per inguina ad crura defcendunt,
+</p>
+<pb n="5.150"/>
+<p/>
+<p>vel quae per axillas ad manus repunt, arterias laqueo intercipere
+<lb/>volueris, pulsu quidem illico privatas reddes
+<lb/>quae lu .artubus .sunt universas, non tamen his artubus
+<lb/>voluntarium motum adimes, ut nec etiam sensum. Si
+<lb/>vero temporis decurio torpidi, frigidi, pallidi et tabidi
+<lb/>evadant, fortassis id sympathia magis quam pulsuum
+<lb/>damno accidit. At si nervos laqueis interceperis, immobiles
+<lb/>prorsus et insensibiles partes extemplo efficies.
+<lb/>oportebat itaque et arterias eodem modo ac nervos vitiatas,
+<lb/>singulis quibus prius opitularentur partibus, eas quoque
+<lb/>celeriter oblaedere. Sed sane id omnium absurdissimum:
+<lb/>ss cervicis arterias laqueis interceperis, haud manifeste
+<lb/>animal oblecteris, tametsi connectunt ipsae cor
+<lb/>cerebro , princeps vitalium actionum organum principi
+<lb/>animalium. Si igitur adeo pernecessariarum arteriarum
+<lb/>laesio nullam manifestam animalis laesionem adserat,
+<lb/>multo minus et aliarum. aliqua oblaeserit. At si, quum
+<pb n="5.151"/>
+<lb/>afficiuntur, nihil laedant, undique constat, etsi valentes
+<lb/>sint, eas minime conferre. Quomodo igitur ex pulsibus
+<lb/>maxime praenoscimus? non ut ex causis mulsa vi pollentibus
+<lb/>(dicet aliquis), sed ut ex signis pernecessariis,
+<lb/>quemadmodum si quis ex incurvescentibus unguibus et
+<lb/>nigrantibus de morte coniiciat. Quum enim ea, quae
+<lb/>usum vitae praestant, quaedam necessario sequuntur, periculum
+<lb/>quidem in ejus, quod usum vitae praestat, laesione
+<lb/>est , tum quod ex necessitate sequitur, signum fit
+<lb/>periculi. Princeps quidem viteus est cor, ex quo ena-.
+<lb/>scuntur arteriae, quae et eodem quo ipsum modo moventur,
+<lb/>proindeque eodem modo laeduntur, atque ita magnum
+<lb/>quid indicare natae sunt, At vero monstratum est, non idem
+<lb/>esse magna indicare ac magna posse. Unde igitur tum medicis
+<lb/>omnibus, tum philosophis in mentem venit, ut ad
+<lb/>eundem usum et respirationem et pulsus adduxerint,
+<lb/>quum illa quidem ad magnum usum excellere nobis
+<lb/>appareat, hi vero vel ad prorsus nullum, vel plane exiguum?
+<lb/>Mihi equidem videntur, quemadmodum et en
+<pb n="5.152"/>
+<lb/>ipsis plures scribunt, quod consimilibus conversionibus ab
+<lb/>iisdem causis convertuntur, inde communem esse eorum
+<lb/>usum animo concepisse. Nam et qui exercitantur, et
+<lb/>qui in balneo lavantur, et qui aliter quovis modo excalfiunt,
+<lb/>eorum non modo respirationem celeriorem
+<lb/>frequentiorem que ac majorem contueri licet, fed etiam
+<lb/>pulsus pari modo mutatos. Praeterea qui algent aliterve
+<lb/>quolibet modo sunt refrigerati , horum . sicut respiratio
+<lb/>rarior,- tardior ac minor visitur, ita et pulsus.
+<lb/>Atque in ardentibus febribus maxime et celerrime et
+<lb/>densissime respirant, et maximos, velocissimos et denfissimos
+<lb/>.pulsus habenti Quod si ab immodicis alimentis
+<lb/>pulsus visantur majores, respirationes minores, ne id
+<lb/>quidem scrupulum rationi iniicit. Quippe minorem
+<lb/>hi respirationem, quam pulsum, habent propter diapbragmatis
+<lb/>compressionem. Caeterum quanto minerem,
+<lb/>tanto hanc habent et crebriorem, scilicet refpirationis
+<lb/>parvitatem actionis contiuuilate compensantes.
+<pb n="5.153"/>
+<lb/>Quod enim aeris natura, thorace nequeunte se latissime aperive,
+<lb/>ex minori respiratione amisit, id densitate restituit.
+<lb/>Ideoque tantundem minor simul et frequentior respiratio
+<lb/>potest, quantum major fimus atque rarior. Diximus autem
+<lb/>hoc loco rariorem pulsum eum, qui comestioni succedit,
+<lb/>non utique cum eo, qui comestionem praecedit,
+<lb/>comparantes (quippe quo est frequentior], sed ad respirationis
+<lb/>speciem referentes. Igitur si respiratio, pari cum
+<lb/>pulsu modo, iisdem ex causis mutatur, non tamen parem
+<lb/>noxam, quum perit, affert (nam id quoque prius est monstratum),
+<lb/>utique dissidentia adversaque nihilominus exaequo invicem
+<lb/>colligas licet, nempe tum ambo a natura ejusdem usus
+<lb/>gratia data, tum non ejusdem. Verum ita fieri non potest,
+<lb/>quum . alterum eorum verum esse, non ambo, fit necessum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Itaque investigandum, qua parte altera
+<lb/>rationum decipiat, ipso respirationis usu pro norma nobis
+<lb/>proposito. Quem utique, ubi de ea tractavimus, duplicatu
+<lb/>esse, sicut Hippocrates existimavit, indicavimus :
+<pb n="5.154"/>
+<lb/>alterum, qui major est, ipsius insiti caloris conservationem
+<lb/>, alterum, qui minor, animalis spiritus nutritionem.
+<lb/>At in horum utroque ex attracto per nares spiritu accedere
+<lb/>cerebro utilitatem diximus. Quo minus mirum est,
+<lb/>quum exiguum illi commodum ex corde suggeratur; fi,
+<lb/>carotidibus vocatis arteriis vinculo exceptis, exiguum
+<lb/>quoque sentiat incommodum. Dicet hic fortasse quispiam,
+<lb/>ne minimum quidem apparere incommodum, quando
+<lb/>per intcgrunr diei siparium (ut strepo experti fumus)
+<lb/>animal fine noxa perduret. Et sane recte dicet. latu
+<lb/>id cum nos dubios haberet, ejusmodi quoddam evidens
+<lb/>in quo fieret experimentum excogitavimus. Prius autem
+<lb/>ratiocinationem ipsam, unde in ipsum veni, proponam.
+<lb/>Quoniam demonstratum a nobis in aliis est, eos ventriculos,
+<lb/>qui in cerebro habentur, animalis spiritus, qui assidue
+<lb/>nutriri postulet, plenos esse, demonstratum quoque non
+<lb/>minus est, spiritum hunc in motu voluntario contunsi,
+<lb/>satius lore vitum est, ut animal, cui vinctae arteriae essent,
+<pb n="5.155"/>
+<lb/>currere cogeremus. Quum igitur diu probe cucurrisset,
+<lb/>femper autem currere non potuisset, operae pretium
+<lb/>ridebatur causam requirere, propter. quam diu quidem
+<lb/>cucurrit, perpetuo autem non potuit, nec rursus diutinunr
+<lb/>curtum continuare, ted eum statim remittere, absumpto
+<lb/>scilicet animali spiritu. Sed et hujus ipsius
+<lb/>eventus causa videbatur plexus ille, qui ab Herophilo
+<lb/>reticulatis est vocatus. In hoc enim carotides arteriae,
+<lb/>quum ad cerebrum ascendunt, antequam duram ejus
+<lb/>membranam transierint, multlsariam ab ipsis finduntur,
+<lb/>multis ceu villis sibi implexae, veluti si retia retibus tuperposita
+<lb/>intelligas ; tum spatium non exiguum, quod cerebri
+<lb/>.basis dicitur, occupant; quum potuissent in ipfnm
+<lb/>cerebrum, quo scilicet a principio tendebant,^. membranis
+<lb/>ejus statim trajectis, fe inserere. Nunc igitur mirabilis
+<lb/>ille plexus, tam tulo a natura, quae nihil temere mostatur,
+<lb/>loco conditus, magnae alicujus utilitatis index
+<lb/>esse videtur. At quoniam et intestinorum et quae in
+<pb n="5.156"/>
+<lb/>- testes fe inserunt vasorum revolutionem, tum ut ntateriae
+<lb/>in his contentae perfecte coucoquerentur, tum ut
+<lb/>secuturis functionibus abunde praeparatae superessent,
+<lb/>factam contemplabamur, non alienum a ratione videbatur,
+<lb/>hic quoque tale quippiam commentam esse naturam,
+<lb/>ac simul materiam eam, quae in arteriis coutinetur,
+<lb/>(ea est sanguis calidus et tenuis et halituofus,)
+<lb/>longo tempore conficere, simul animali, qui in cerebro
+<lb/>ast, fpiritui copiosum alimentum praeparare. Proinde,
+<lb/>quamvis continuatio cum corde cerebro sit adempta, tamen
+<lb/>satisfacere ei longo tempore posse reticularem plexum,
+<lb/>potissimum si animal quiescat, ceu animali spiritu
+<lb/>in motum voluntarium minime tum consumpto. Ac, quod
+<lb/>difficillimum videbatur, maximeque negotium sacessere,nempe
+<lb/>quod in carotidibus arteriis accidit, id nullam
+<lb/>etiam habere dubitationem apparet. Similiter nec quod
+<lb/>in reliquis omnibus contingit, quarum qualibet vinculo
+<lb/>excepta nulla in praebens noxa parti affertur. Oportebat
+<lb/>enim (arbitror) hic quoque aestimari, non esse simile;
+<pb n="5.157"/>
+<lb/>aut principium ipsum insiti caloris pati, aut aliquod
+<lb/>eorum, quae ab illo calorem- accipiunt. Quippe id
+<lb/>femper esse praecalidum debet, ut quod fe iptum et alia
+<lb/>tum moveat una pulsatoris, tum calesaciat; his fatis ad
+<lb/>salutem est, si vel exigui compotes sint caloris. Et prin-,
+<lb/>ciprum quidem ipfum si naturali calore prives, non ipfum
+<lb/>modo refrigeres, fed etiam universi:., quae ab eo
+<lb/>prius calorem ceperunt. Reliquorum nulli, licet arterias
+<lb/>vinculo constringas, omnem adimere calorem possis,
+<lb/>quando et per tunicas ipfas nonnihil confluxerit. Est
+<lb/>enim juxta Hippocratis sententiam tutum corpus sibi
+<lb/>conspirabile atque confluxibile. Quate, si non per arterras,
+<lb/>at certe per alia et potissimum venas propter eum,
+<lb/>qui est de una lu alteram-, continuum transitum in om-.
+<lb/>nem particulam deteretur caloris aliquid. omnia igitur
+<lb/>alia cum rerum evidentia consentiunt Nec mirum videri
+<lb/>praeterea debebit, fi principium caloris, ubi respiratione
+<lb/>privatur, plus quam caetera noxae contrahit.
+<pb n="5.158"/>
+<lb/>Quippe in cucurbitulis iis, quibus medici utuntur,
+<lb/>flamma illico extinguitur, calor tum in aere incluso, tum
+<lb/>in ipsio corpore diu manet, idque nullius nutrimenti
+<lb/>ope. Simili modo in domibus iis, quae igne excalfimrt,
+<lb/>calor taepe remanere cernitur igne extincto. Non ergo
+<lb/>est similis calor is, qui cordi naturalis est, ei, qui caeteris
+<lb/>partibus, quum id fervere semper fit opus, his fiatis fit,
+<lb/>si non sint frigidae. Intelliges durius quod dicitur, fi
+<lb/>cor animalis nudaveris , tegumentum id , quod ei velut
+<lb/>tunica circumdatum est (quam pericardium appellant), diridens,
+<lb/>nulla alia pectoris parte confossa. Etenim celerTime
+<lb/>interit animal, si cor ipfum refrigeres; sin calidum
+<lb/>ferves, nihil patitur. Sane refrigerabis, si in frigido
+<lb/>aere chirurgiam administrabis, praeterea si frigidam
+<lb/>asperseris; calidum diutissime servabis, si diversis rationibus
+<lb/>uteris. Caeterum fi, corde jam refrigerato, et propterea
+<lb/>animali jam mortuo, velis, alterutro ventriculorum
+<lb/>ejus adaperto, et praecipue sinistro, digitum lu eum statim
+<pb n="5.159"/>
+<lb/>mittere, magnum iuibi calorem deprehendes, longeque
+<lb/>majorem, quam in aliis sit partibus, dummodo pro
+<lb/>naturae modo te habeant. Quippe par caloris portio ut
+<lb/>cordi est minima, sic reliquis partibus est omnino magna.
+<lb/>Proinde, ubi quod pro naturae modo est non servatur,
+<lb/>cordis quidem calor, qui veluti flamma est, perit, retiquorum
+<lb/>calor longo spatio durati At vero illi sola retpiratio
+<lb/>calorem tuetur; aliis partibus duplex ejus custodia
+<lb/>est, et pulsus, qui veluti quaedam respiratio est,
+<lb/>et quod ex abundantiore naturae gratia accedit, quod a
+<lb/>corde confluit Duplici igitur de caula pars quaeris
+<lb/>cor iplum superat, quominus noxam ex caloris inopia celeriter
+<lb/>contrahat. Siquidem, cum illi plurimo sit opus,
+<lb/>caeteris exiguo, quumque illi a nullo calor confluat, sed
+<lb/>aliis ab illo, utique illud celeriter a naturali statu rece- dit,
+<lb/>haec minime.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Quod autem non solum per arterias, sed
+<lb/>etiam per venas et alia universa confluat a corde calor,
+<pb n="5.160"/>
+<lb/>quoniam de hoc paucis prius facta mentio est , rursus
+<lb/>idem resumendum demonstiandumque nobis est, sed propotitis
+<lb/>prius evidentibus eventis, ex quibus id. colligi
+<lb/>possit. Ergo multis monarchis, gregariis militibus, jam
+<lb/>saepe fingulari pugna decertantibus , sed et venatoribus
+<lb/>ita venas et arterias vulnerari contigit, ut necesse medicis
+<lb/>fuerit eas vinculo excipere; qui omnes non longo
+<lb/>interposito spatio frigidiores fibi redditas partes senterunt,
+<lb/>ac citius quidem, quibus tum arteriae, tum venae
+<lb/>fuere devinctae, serius, quibus arteriae tantum, minime
+<lb/>vero, quibus solae venae. Ex quibus manifestum est,
+<lb/>per venas quoque aliquem partibus accedere calorem,
+<lb/>quanquam longe minorem, quam qui per arterias transmittatm.
+<lb/>Quin, .si quam corporis partem citra ullum
+<lb/>vulnus arctissime deligare velis, illico eam lividam frigidamque
+<lb/>effectam contemplabere ; quod planum est inde
+<lb/>adeo evenire, quod calore, qui per omnes partes super-ne
+<lb/>confluxerat, est privata. Ergo quum hoc quoque demonstratum
+<lb/>jam sit, nihilque jam adversari videatur,
+<pb n="5.161"/>
+<lb/>quo minus unus respirationis et pulsuum utus sit, facile
+<lb/>promptumque collectu arbitror, caloris in quaque parte
+<lb/>custodiendi cauta pulsum esse conditum. Itaque quod
+<lb/>ex respiratione uni praestatur cordi, id ex pulsu calori
+<lb/>illi, .qui in toto esit animali, accidit, communem autem
+<lb/>utriusque esse et animalis spiritus nutritionem , verum
+<lb/>arteriarum magis propriam, si quid eorum m emiulmus,
+<lb/>quae de reticulati textu praediximus. Quoniam
+<lb/>igitur in his, quae de respirationis usu- tradidimus, monstratum
+<lb/>nobis est, nativum calorem per immissum spiritum
+<lb/>refrigerari, eundemque per emissum hunc veluti purgari,
+<lb/>fuliginoso scilicet excremento expulsi, , ambo vero ad
+<lb/>ejus custodiam utilem aliquid conferre, patet et quod de
+<lb/>pulsu dicimus , . nempe in diestole aeream substantiam
+<lb/>quandam attrahi, in systole ex humorum deustione lu
+<lb/>toto animali contractum velut fuliginosum. excrementum
+<lb/>expelli.
+</p>
+<pb n="5.162"/>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Quanquam non ignoro, tum Archigenem,
+<lb/>tum priores eo nonnullus, dum contrahitur arteria,
+<lb/>impleri eam existimasse, dum dilatatur, vacuari. Quippe
+<lb/>arbitrantur, ad tractum systolen esse convenientissimam,
+<lb/>coniectantes id tum ex ore, tum naribus. Quae, sicuti
+<lb/>illi ajunt, in trahendo^ spiritu contrahuntur, in reddendo
+<lb/>dilatantur; quemadmodum in aegrotantibus fieri
+<lb/>cernitur. lmo vero nec in his id alia ulla in parte visitur,
+<lb/>quam in extremis et cartilagineis narium partibus.
+<lb/>Ac cernitur quidem id aliquando in his, qui celerrime cnrrunt,
+<lb/>aut alias laboriose exercitantur, nec tamen in ulin
+<lb/>alio, aut sano, aut laborante. At vero naturalem statum,
+<lb/>quicunque is sit, in minime impeditis prorsufque
+<lb/>fanis potius, quam in aliis, apparere par esa Verum
+<lb/>esto in omnibus ita fiat, appareantque tum nares, tum
+<lb/>labra iis, qui inspirant contrahi: quaenam ex his quaesitae
+<lb/>rei fides? Non enim arteriis respondere proportione
+<pb n="5.163"/>
+<lb/>nares et labra dicent, imo ipsa arteriarum ora his
+<lb/>potius respondere, arteriis autem ipsis eas, quae ab
+<lb/>Ius ad cor spiritus quasi. riae pertinent. . Itaque , si
+<lb/>illas in inspirationibus ostendere contractas possunt, utique
+<lb/>aliquid ipsis exemplum contulerit ; sin minus, praeterquam
+<lb/>quod nihil his consert, etiam contra fe id afferunt,
+<lb/>nobis- scilicet . e diverto dicturis, quod, tanquam
+<lb/>pharynx et pulmones et pectus universum in suspiralienibus
+<lb/>dilatantur, itidem arterias, quo tempore trahunt,
+<lb/>dilatari oportet, non quo spicatum reddunt. Sed et
+<lb/>quies, quae post earum fystolen mullo major quum sit
+<lb/>ea, quae dilatationem sequitur, sicuti quae inspirationem^
+<lb/>praecedit, ea, quae illa insequitur, indicat, in eo quoque
+<lb/>proportionem quandam esse pulsibus ad respirationem.
+<lb/>Cuiusmodi enim instrumentis spiritus res est inspiratio,
+<lb/>ejusmodi arteriis est dilatatio , et cujusmodi est illis expiratio,-
+<lb/>ejnsinodi arteriis est contractio. Hujus autem
+<lb/>duplicis et compositi arteriarum motus, quem nunc
+<pb n="5.164"/>
+<lb/>pulsum appellamus, cor est .origo, (sicuti tum a nobis,
+<lb/>tum ab aliis ante nos quam plurimis est proditum,] non
+<lb/>tamen ad eum modum, quo Erafistiatus existimavit, fed
+<lb/>sicut Herophilus et Hippocrates, fermeque philosophorum
+<lb/>et medicorum veterum probatissimi quique. Nam
+<lb/>quae in cordis corpore vis est, unde contrahitur ac dilatatur,
+<lb/>in omnes arterias per tunicas earum influens,
+<lb/>sic eas cogit aperitque, quemadmodum nilum cor. Sicuti
+<lb/>igitur illud, quum dilatatur, ea, quae olentis tuis
+<lb/>vicina fiant, trahit, dum contrahitur, expellit, sic et arteriae,
+<lb/>quum se aperiunt, ad se undique trahunt, quum
+<lb/>contrahuntur, in omnem partem expellunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Quid autem sibi hoc velit, quod undique
+<lb/>et in omnem partem dixi, adhuc clarius faciam.
+<lb/>Numerosi in arteriis meatus partim veluti spiramenta in
+<lb/>earum sunt tunicis, partim osculorum specie in intestina
+<lb/>et ventriculum et externam hanc cutim finiuntur. Quin
+<lb/>etiam continuatae tum sibi; tum .vero cordi maximis.
+<pb n="5.165"/>
+<lb/>scilicet meatibus, vel potius . universis suis capacitatibus
+<lb/>sunt. Venis vero non perinde magnis meatibus, sed ipsarum
+<lb/>quidem synanastomoses sensum nostrum effugiunt
+<lb/>Unde si ipsis ceu parunr constantibus merito fidem
+<lb/>abroges, per alia certe, quae veteribus sunt proditu, eos
+<lb/>esse credas, neque in postremis ex hac rei evidentia.
+<lb/>Si quis namque, accepto animali quovis ex iis, quibus.
+<lb/>amplae manifestaeque venae et arteriae sunt, veluti bove,
+<lb/>sue, asino, equo, ove, urso, simia, pardali, homine ipso,
+<lb/>vel similium aliquo , magnas multasque illi arterias vulncret,
+<lb/>universum animalis sanguinem per eas exhauriet.
+<lb/>Hujus rei periculum subinde fecimus; et quum semper
+<lb/>vacuatas cum arteriis venas deprehendissem us, verum
+<lb/>esse dogma de communibus arteriarum et venerunt oleolis,
+<lb/>nobis persuasimus. Quippe per hos transitus arteriae
+<lb/>dilatatae ex venis trahunt, contractae contra in eas
+<lb/>regerunt. Sicuti nimirum per ora, quae in cutem finiuntur
+<pb n="5.166"/>
+<lb/>, quicquid halituosum fuliginosunrque excrementum
+<lb/>habent, id excernunt. Recipiunt autem ex ambiente
+<lb/>nos aere non exiguam in se portionem. Atque
+<lb/>id est , quod Hippocrates dixit, corpus esse insperabile et
+<lb/>expirabile totum. Pari modo ex ventre. et intestinis
+<lb/>tum attrahunt, tum rursum expellunt; itidem et per
+<lb/>tenues meatus, quos veluti spiramenta per totas habent
+<lb/>tunicas, ex circumpositis spatiis vicissim trahunt atque
+<lb/>expellunt. A corde vero ipso . accipiunt quidem plus,
+<lb/>sed reddunt minus. Caulde sunt membranarum epiphysus.
+<lb/>De quibus quoniam ah Erasistrato disputatum abunde
+<lb/>est, frustra nunc a nobis de iisdem agatur. Verum
+<lb/>xidetur ille suspicari, quod, dum contrahuntur, nihil prorsus
+<lb/>ex arteriis in cor recipitur, nisi per eas, quae .sunt
+<lb/>in pulmone; quod sane ita non est, quum fortassis etiam
+<lb/>pro ipsis naturae modulis se habente animali exiguum
+<lb/>aliquid recipiatur. Quippe non adeo mihi ad unguem
+<lb/>membranae os magnae arteriae videntur obstruere, ut nihil
+<pb n="5.167"/>
+<lb/>ex ea reddatur; alioqui, si sic tum obstruant, certe
+<lb/>violenta quapiam occasione animal urgente necessario id
+<lb/>fieri, verissimum mihi videtur. Hoc vero et in aliis nositis
+<lb/>libris est demonstratum, nec magnus ejus alioqui
+<lb/>usus ad propositam est disputationem. Siquidem, si arteriae
+<lb/>cordi aliquid impertiunt, sic utique ex omni parte
+<lb/>tum rurtus remittant; sin fiscus, ex omni certe parte
+<lb/>trahent, transmittent autem in omnem partem, praeterquam
+<lb/>in cor. Ac mihi sane melius videtur hoc dogma,
+<lb/>quam Erasistrati fiunt hypotheses, quum nec conspirabile
+<lb/>sibi esse, nec confluxibile corpus possit, si arteriae ex
+<lb/>omni quidem parte trahant, in omnem autem non tranfmittant,
+<lb/>praeterea actionis earum utilitas hac magis ratione
+<lb/>ad totum animal pertingat, quippe quum eo pacto
+<lb/>quaelibet pars tum refrigerari, tum vero purgari ipsis
+<lb/>arteriarum variis motibus usa possit. Ut autem Erasillratus
+<lb/>est opinatus, canalium anima carentium, non insitumentorum
+<pb n="5.168"/>
+<lb/>vita praeditorum, usum animalibus arteriae
+<lb/>praestant. Nos vero alibi integro volumine multifariam.
+<lb/>iudicavimus, sanguinem in arteriis, etiam recte fe habente
+<lb/>animali, contineri. Quod si est, illud cuivis patet,
+<lb/>quod non, quia spiritu a corde immisso replentur,
+<lb/>ut Erafistratus putavit, idcirco dilatantur potius, quam
+<lb/>ex eo, quod dilatantur, idcirco replentur. Quippe si sanguine
+<lb/>essent vacuae, fieri fortasse posset, ut exiguo tempore,
+<lb/>quod a corde confluit, ad fines earum perveniret;
+<lb/>sanguinem vero in fe habentibus fieri omnino nequit,
+<lb/>ut motus celeritas cum ea dilasatione. consentiat,. quae
+<lb/>ex iis. a corde implendis proveniat. Neque enim. eo,
+<lb/>quod implentur, idcirco dilatantur, verum ex eo, quod
+<lb/>dilatantur, idcirco implentur. Atque hoc quidem et
+<lb/>saepe et passim tum a nonis ipsis, tum eorum qui
+<lb/>nos praecesserunt plurimis ante est demonstratum, arterras
+<lb/>ita, ut cor, te ipfas movere,. vicissim te attollentes
+<lb/>summittentesque , idque eadem qua ipsum.
+<pb n="5.169"/>
+<lb/>vi, quam scilicet a corde ortam per tunicas earum
+<lb/>transmitti diximus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Aptius vero mihi dubitare videntur, qui
+<lb/>illud quaerunt, diastolene, an fystole, an utraque arteriarum
+<lb/>actio. fit censenda, non secus, arbitror, quam de refpirationis
+<lb/>partibus merito a prioribus est quaesitum,
+<lb/>utrumne inspiratio, an expiratio, an utraque actio sit
+<lb/>existimanda. Verum de illis alibi dicta sunt, quae verisimilia
+<lb/>videbantur. De pulsuum vero motu nunc quaerendum.
+<lb/>Ergo si, uti dictum est , ejusdem usus causa respiratio
+<lb/>et pulsus animalibus essent dati, atque ab iifdem
+<lb/>facultatibus manerent, utique facile esset ex refpirationis
+<lb/>similitudine etiam de pulsu coniecturam facere.
+<lb/>At quoniam pulsuum vitalis facultas, quae a corde manat,
+<lb/>effectrix est respirationis, ut indicavimus, quae prodit
+<lb/>a cerebro animalis , nihil ex iis, quae de illa sunt.
+<lb/>inventa, ad proposita consequimur. Jam ex eo quoque
+<lb/>difficultas quaedam adinventionem oritur, quod post mortem
+<pb n="5.170"/>
+<lb/>non perinde, ut venas, sic etiam arterias- in te recidere
+<lb/>ridemus. Illae, simul ac vacuae sanguine sunt, prorsus
+<lb/>in seipsas considunt, adeo ut superna earum tunicae
+<lb/>pars cum inferna committatur. Arteriae semper diflidentibus
+<lb/>cernuntur partibus, quod scilicet propter alteram
+<lb/>earum tunicam , quae dura est, evenit- Quanquam
+<lb/>sunt qui hoc ipsimi adeo evenire post mortem dicant,
+<lb/>quod frigore tum rigeant, non quod natura. tales sint.
+<lb/>Alii, quum in aquam calidam coniecissent, ac mox ita
+<lb/>dissidentes conspexissent, sic eas fe habere etiam prius,
+<lb/>quam animal moreretur, sibi perfunserunt; quippe in
+<lb/>priorem habitum frigiditate jam discussa fuisse reversuras,
+<lb/>si fcllicet ex hac novum habitum contraxissent.
+<lb/>Itaque quum pronius perdissicilis haec sit quaestio, quibus
+<lb/>coniectans rationibus utrumque motum arteriarum
+<lb/>actionem putem, jam subjiciam. Quod diestole valida
+<lb/>facultate magna sit, sicuti e diverso imbecilla facultate
+<pb n="5.171"/>
+<lb/>parva, manifeste cernitur. Atqui oportebat, si, quemadmodum
+<lb/>quidam autumant, contractio ipsa arteriae fit actio, dilatatio
+<lb/>vero. tunicarum ipsius in naturalem partium distantiam
+<lb/>spontaneus reditus, primum quidem eandem semper esse
+<lb/>dilatationum magnitudinem, delude magnitudinem nihilo
+<lb/>magis robustae quam imbecillae facultatis opus esse, quorum
+<lb/>utrumque falsum est. Acceditque, quo id coniiciam,
+<lb/>aliud non parvum, quod maximi altissimique pulsus iis
+<lb/>affectibus, qui commodissime per crisim paulo post finientur,
+<lb/>fiunt, quamvis hoc tempore vires esse imbecillas ne
+<lb/>insanus quidem dixerit Nam si commode aliquidper crisim
+<lb/>vicibus imbecillis sinitur, utique incommode id fiet iisdem
+<lb/>robustis. Quod si est, mortem ipfitm roboris virium opus
+<lb/>esse dicemus, quo quid dici magis ridiculum potest? Quin
+<lb/>etiam quod ictus vehementia aliis pulsibus major sit,
+<lb/>aliis minor, intendi ac remitti actionem eorum testatur.
+<lb/>Quodsi, tanquam expiratio, sic diastole actionis esset remissio,
+<pb n="5.172"/>
+<lb/>utique nec intensio in ea, nec remissio, sicuti nec
+<lb/>in expiratione, cernerentur, nec omnino robur et vehementia
+<lb/>ictus. Ac diestole quidem per haec et alia sus
+<lb/>similia ex actionum mihi genere videtur, scrvarique
+<lb/>etiam hactenus pulsuum cum respiratione similitudo
+<lb/>potest.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Deinceps illud considerandum videtur,
+<lb/>an, sicuti expiratio actionis pectoris remissio est, vel utique
+<lb/>cessatio, efflatus vero actio, atque idcirco inlentionem
+<lb/>et remissionem admittens, quod expiratio non facit,
+<lb/>sic saluie in pulsibus relaxatio arteriarum operis sit,
+<lb/>aliaque huic annexa actio, quae efflatus respondeat. Ac
+<lb/>mihi id quoque ridetur verissimum esse. Porro coniicio
+<lb/>id tum ex iis, quae communiter de universis vitae facultatibus
+<lb/>alibi a nobis demonstrata funt, tum ex proportione
+<lb/>ad ipsam expirationem. Siquidem in iis, quibus
+<lb/>de ejusmodi facultatibus egimus, vitum est quodque
+<pb n="5.173"/>
+<lb/>instrumentum contrarias inter se sibi insitas facultates
+<lb/>habere. Rursus similitudo ad respirationem exigit in
+<lb/>arteriis actionem, quae proportione respondeat essiatuir
+<lb/>Etenim absurdum maxime sit, nisi potius ejusmodi, quod
+<lb/>fieri omnino non possit, este aliquem naturae systoles
+<lb/>arteriarum usum, nec tamen vim ingenitam, quae ejulrnodi
+<lb/>motum efficeret, datam esse. Rationabilius igitur
+<lb/>longe esit, sicuti, cum de respirationis difficultate agerem,
+<lb/>est indicatum, ubi ex humorum deustione collectus saliginosus
+<lb/>vapor plurimus est, tum animal efflatum appetere,
+<lb/>contra, quum vel ob succi temperiem vel caloris
+<lb/>mediocritatem nihil talis excrementa colligitur, tum sulum
+<lb/>expirationem, in arteriis quoque, ubi tale cxcrementum
+<lb/>redundat , similem efflatur systolen edi , reliquas,
+<lb/>quum id, quod ex ipsis vacuatur, halitus quam fumo est
+<lb/>similius. Sane multa eorum, quae in pulsu apparent,
+<lb/>evidentia documenta sunt, veluti et quae per somnum
+<pb n="5.174"/>
+<lb/>in iis, qui ampliter comederunt, fieri advertimus. In
+<lb/>his enim remissior fit diastole, ut quae tum minor effecta,
+<lb/>tum vero tardior intelligatur. Intensio autem fit
+<lb/>systoles in utroque, quum et velociter quam prius et
+<lb/>magis intro se recipere noscatur. Videntur autem haec
+<lb/>tum merito per somnum fieri, tum cum expicatione consentanea
+<lb/>esse. Quippe intro magis quam foras naturali
+<lb/>calore fe ferente, eoque etiam circa viscera et ventrem,
+<lb/>qui succos et cibos concoquat, jam plurimo collecto,
+<lb/>necessum est excrementum, quoniam id quoque copiosius
+<lb/>gignitur, naturalem vacuationem deflueret. Proinde
+<lb/>in respiratione expiratio et rnajor et plerumque^ cum
+<lb/>efflato aegris inter dormiendum visitur, maximeque id,
+<lb/>ubi largius comederint. In pulsibus vero arteriae contractio
+<lb/>ad eundem fe exhibet modum. Sic porro et
+<lb/>pueris ambo excellunt, quippe vehemens est his propter
+<lb/>incrementum concoctio. Contra fenum aetas tardiorem
+<pb n="5.175"/>
+<lb/>et minorem videtur. habere systolen, utpote minus
+<lb/>necessariam, quum et imbecilliter concoquat, et succos
+<lb/>minime conficiat. Jam ad proportionem horum tum
+<lb/>auni tempus, llum regio, tum omnis uno verbo ambientis
+<lb/>nos aeris ad frigus et calorem mutatio pulsus alterare vi-Y
+<lb/>dentur. Pari modo et animi affectus omnes, et ritae
+<lb/>sortes, et morbi arteriarum motum introrsus extrorscsve
+<lb/>promovent; quanquam- scilicet oportebat, si diastole- ceffatio
+<lb/>et quies esset, -primum illud accidere, ut non alias
+<lb/>^videretur. celerior, alias tardior ; deinde ut terminus ec
+<lb/>finis motus semper is esset, quem ex naturali compositione
+<lb/>arteriae possiderent. Verum quum praeter quoque^
+<lb/>hunc terminum te ipsas moveant, indicium est tutut
+<lb/>etiam ohitae actionis. At; inquiunt, arteria non. agendo^
+<lb/>aliquid celerius luteriusqde -descendit, sed propter funicarum
+<lb/>mollitiem; habiles enimefuut tales, cessante diastola,
+<pb n="5.176"/>
+<lb/>et ulterius et celerius, quam durae, in fe ipsas recidare.
+<lb/>At hoc,. viri probi, mutationi illi modulorum
+<lb/>pulsus, quae ex aetate spectatur, fortasse consentire dicemos;
+<lb/>tametsi paulo post, quemadmodum dissentiat, indi
+<lb/>canimus. Caeterum plurimis aliis effectibus evidenter
+<lb/>repugnat; in quibus scilicet subitanea est modulorum
+<lb/>pulsus mutatio , quum nihil adeo in tantillo tempore
+<lb/>mulari in mollitiem et duritiem possit. Fallit autem
+<lb/>non minime nos et quod a veteribus medicis probe dictum
+<lb/>non recte a nobis intelligitur. Quippe faciliores
+<lb/>ad motus erunt molles tunicae, quum scilicet facultates
+<lb/>ipsae aliquid per eas moliuntur, si quidem sic illis sunt
+<lb/>magis obsequentes et, ut sic dixerim, ad id quod volunt,
+<lb/>loquaciores. Quum vero, postquam ab iis sunt motae,
+<lb/>rursum permittuntur ad statum proprium redire, tum
+<lb/>utique . durae , quam molles, celerius revertuntur, non
+<lb/>aliter plane, quam durae stirpes, quae difficilius quam
+<pb n="5.177"/>
+<lb/>molles cogenti ipsius cedunt, vixqne trahentem fequuntur,
+<lb/>dimissae rursus in priorem statum facile redeunti.
+<lb/>Quin etiam supra id, quod hoc sic fieri apparet, etiam
+<lb/>ratio idem consumat. omni enim corpori suus quidem
+<lb/>ftatus est , omnis tum doloris , tum vero , ut Hippocrates
+<lb/>ait, laboris expers, scilicet in medio excessuum
+<lb/>siri motus positus. Nec ab hoc citra offensam id remd-r
+<lb/>veris. Estque major noxa tum ipsi moto corpori, tum
+<lb/>vero facultati, quae id. movet, quum ipsum durum siccumque
+<lb/>esu Quod enim sic est affectum, valentiorem halutum
+<lb/>habet, quam id, quod mollius est atque humidius.
+<lb/>Quanto autem quicquid eorum, quae passura quicquam
+<lb/>sunt, valentius fuerit, tanto utique eum, qui novum illi
+<lb/>statum inducit, dissici lius loquitur. Ergo si, quod move-t
+<lb/>tur, ab eo, quod movet, patitur, agit autem facitqne in
+<lb/>ipsum id, quod movet , ratio est, ut, quanto aegrrus patitur
+<lb/>id, quod durius est, tanto etiam idem difficilius ntoveatur.
+<pb n="5.178"/>
+<lb/>Proinde, sive stirps ulla, sive animantium pars
+<lb/>ulla instrumentalis a facultate quavis moveatur, quod
+<lb/>durum est , utpote difficilius patibile difficiliusque
+<lb/>mobile, nunus obsequetur, quod mollius est, facilius
+<lb/>ducetur. At quod .-est durum, ceu valentiore firmatum
+<lb/>habitu, velocius lu suum statum- revertitur. Nam.
+<lb/>in ipsis stirpibus, quae tenellae novellaeque . funt, tum
+<lb/>vitilium ufum praebere , tum vero . ad reditum in
+<lb/>naturae habitum regnes esse cernuntur; e; diverso,
+<lb/>quae absoluta jam duraque sunt, cum impetu majore
+<lb/>ac motu celeriore revertuntur. Ergo praeter. id , quod
+<lb/>a subito mutatis . arteriae motibus . refutatur eorum
+<lb/>ratio, ut dixi j etiam nec cum iis, quae fieri evidenter
+<lb/>apparent, consentire ridetur eorum hypothefis,
+<lb/>indicato praesertim, quod mollius et imbecillius
+<lb/>corpus , ut facile ducentem fequitur, ita legulus in
+<lb/>naturam revertitur , dorum contra tum roboris renixu
+<lb/>vix vincitur , tum tardius fiequitirr ac celerius,
+<pb n="5.179"/>
+<lb/>quum tuo impetui dimittitur, ad propriam
+<lb/>naturam festinat. Quae umbo , ut fumum complectar,
+<lb/>tum mollibus arteriis tum duris per vices
+<lb/>incidunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">De pulsuum usu dixi rem totam. Nam
+<lb/>et quod naturalis,. qui per totum animal diffunditur,
+<lb/>caloris gratia sint conditi, et quod dilatem arteria
+<lb/>is refrigeretur, contracta rursus purgaretur, et quod
+<lb/>motus hi spiritus motibus omnino sint assimiles, et
+<lb/>quod animali spiritui- conducant, et quod una re
+<lb/>tantum respiratio et pulsus dissideant , nempe quod
+<lb/>illa ab animali facultate, lue a vitali manet, reliquis
+<lb/>, vel quod ad utilitatem , vel quod ad motus
+<lb/>modum spectat, similiter fe habeant, dictum ac demonstratum
+<lb/>esu Facile utique, qui haec curiosis retegerit,
+<lb/>discernere poterit, et quae recte a prioribus
+<pb n="5.180"/>
+<lb/>sint dicta et quae secus. Facile vero ejusmodi est, et
+<lb/>quaecunque membratim de utraque actione quaeruntur,
+<lb/>ea invenire.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

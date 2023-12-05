@@ -1,0 +1,4296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Definitiones medicae</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg041.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author>Pseudo-Galen</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Lipsiae</pubPlace>
+              <biblScope unit="vol">19</biblScope>
+              
+              
+              <biblScope unit="pp" from="346" to="462">346-462</biblScope>
+              <date>1830</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="390" to="403">390-403</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x05">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="232" to="281">232-281</biblScope>
+              <date>1638</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x02">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg041.verbatim-lat1">
+<pb n="19.346"/><pb n="19.346"/>
+
+<div type="textpart" subtype="book" n="1">
+
+
+</div>
+<div type="textpart" subtype="book" n="2">
+
+
+<p rend="indent">De medicis finitionibus opus cum
+<lb/>medicis omnibus tum iis potissimum qui ad medicinam intraducuntur
+<lb/>adolescentibus quam utilissimum, prout aequum
+<lb/>censuisti, colligere ac scriptis mandare decrevi, Theutra
+<lb/>medicorum optime. Quum enim ars medica vitae sit utiIis
+<lb/>et ad hominum salutem inventa ac multa praeclara
+<lb/>theoremata habeat eaque adoptionis arduae esse videantur,
+<lb/>utilissimae erunt finitiones quae paucis. multa docere possunt.
+<lb/>Optima namque omnibus in artibus ac scientiis
+<pb n="19.347"/>
+<lb/>doctrina est quae non multis ac immensis sed paucis perbelle
+<lb/>dignoscitur. At prisci quique ante Hippocratem exsistere
+<lb/>in quorum volumina nos incidimus, neque res ullas
+<lb/>ad artem spectantes finierunt neque multos commeatarios,
+<lb/>sed admodum paucos reliquerunt. Hos tamen laudare
+<lb/>aequum est quod primi instituta sua ad usum traduxerint
+<lb/>et vitae quid utile invenire studuerint. His antem
+<lb/>succedens Hippocrates medicinam etiam conscripsit
+<lb/>ipsamque in libro de arte definivit, ille qui semper bonorutu
+<lb/>auctor ac princeps fuit, cujus idcirco omnes Graeci
+<lb/>in aevum omne erunt memores, quandoquidem publice
+<lb/>est de omnibus bene meritus. Qui vero ab hujus temporibus
+<lb/>exstitere quidam finitiones conscripserunt atque hi
+<lb/>non omnes. Sed seduli fuisse videntur in ejusmodi speculatione
+<lb/>Herophili sectatores et Apollonius Memphites et
+<lb/>praeterea Athenaeus Attalenfis: verum et hi neque decenti
+<lb/>usi sunt ordine neque tractatum composuerunt, fed sparsim
+<lb/>in libris conscripserunt parciusque praeterea descripterunt:
+<pb n="19.348"/>
+<lb/>neque enim omnes quae in medicina comperiuntur
+<lb/>finierunt. Quidquid autem veritatis studio. asserimus, id.
+<lb/>ex occurrentibus dictorum virorum libris doceri potest.
+<lb/>Nos vero. ruribus urgentes .asserimus ac proditas quidem
+<lb/>a majoribus finitiones iisdem verbis describemus ac de-:
+<lb/>nentem ordinem ipsis imponemus, atque si quaedam a vetustioribus
+<lb/>editae non sint conficientes ipsi contexentesque
+<lb/>prout. et tu operae pretium esse censuisti perfectam
+<lb/>collectionem construamus. Hoc namque ego credo , probe
+<lb/>Teuthra, juvenibus instituendis neque fuisse- neque lore.
+<lb/>utiliorem : atque haec hactenus. Primum itaque necesse
+<lb/>est dicere quid sit utilissimum quidque ordini doctrinae:
+<lb/>aptissimum, deinde quid ipsa sit sinitis apertum facere;
+<lb/>postremo ac deinceps .finitiones ipsus subiicere.</p>
+</div>
+<div type="textpart" subtype="book" n="3">
+
+
+<p rend="indent">Finitio igitur ex nonnullis est oratio quae quale.
+<lb/>sit illud de quo ferme est declarat. Definiri et hoc modo
+<lb/>potest. Finitio est oratio conceptionis animi. Quidam
+<pb n="19.349"/>
+<lb/>sic quoque finierunt^ finitio est oratio quae edaequantium
+<lb/>resolutione effertur,. vel finitio est quae nos brevi commemoratione
+<lb/>in rerum ..vocibus subiectarum notitiam ducit,vel
+<lb/>finitio est ^oratio quae ipsum este declarat, vel
+<lb/>oratio quae nobis rei .notitiam demonstrat ac explicat.</p>
+</div>
+<div type="textpart" subtype="book" n="4">
+
+
+<p rend="indent">Definitio oratio est concisa quae fubjectae rei
+<lb/>naturam explicat. Definitio autem dicitur a finibus aut
+<lb/>terminis qui regionis ac loca finiunt ac terminant.</p>
+</div>
+<div type="textpart" subtype="book" n="5">
+
+
+<p rend="indent">D ior limus seu distinctio divisio est rei quae tauquatn
+<lb/>universalis dicitur, non tamen universalis exsistit,
+<lb/>.per .accessionem ad universale conversio.</p>
+</div>
+<div type="textpart" subtype="book" n="6">
+
+
+<p>Scopiis est is qui primum mente concipitur finis;
+<lb/>fitus autem est opus. scopi peractum.</p>
+</div>
+<div type="textpart" subtype="book" n="7">
+
+
+<p rend="indent">Apnorismus est oratio concisa .quae perlectam
+<lb/>complet sententiam vel sic. . Aphorismus. oratio est in voce
+<lb/>quidem feu dictione peranguste, sententiis vero locuples.</p>
+</div>
+<div type="textpart" subtype="book" n="8">
+
+
+<p rend="indent">Deicriptio-est oratio quae forma quadamadmanifestandam
+<pb n="19.350"/>
+<lb/>rei notitiam rudius introducit. Alii sic. Descriptio,est
+<lb/>oratio quae rudi typo res declarat.</p>
+</div>
+<div type="textpart" subtype="book" n="9">
+
+
+<p rend="indent">Scientia est rerum comprehensio solida ac certa
+<lb/>quae a ratione nunquam deflectit. Potest quoque ita desiniti.
+<lb/>Scientia est habitus immutabilis qui ex mentis
+<lb/>conceptionibus opinionem haud a ratione deerrantem
+<lb/>praebet.</p>
+</div>
+<div type="textpart" subtype="book" n="10">
+
+
+<p rend="indent"><space type="tab">    </space>Ars est praeceptorum exercitatione comprobatorum
+<lb/>ad finem eorum quae in vita sunt perutilem congeries.
+<lb/>Vel sic. Ars est compages comprehensionum exercitarum
+<lb/>ad unum sinent relationem habentium.</p>
+</div>
+<div type="textpart" subtype="book" n="11">
+
+
+<p rend="indent">Hippocrates in libeIIo de arte medicinam ita
+<lb/>definit ac primum ipsam medicinam existimavit esse quae
+<lb/>aegrotantium morbos plane tollit morborumque vehementias
+<lb/>coercet neque a morbo victis manus curatrices admovet,
+<lb/>quum haec omnia restituere medicam artem non
+<lb/>posse cuique notum sit. Aliter. Medicina ars est quae in
+<lb/>hominum corporibus versatur ac sanitatem tuetur. Alio
+<pb n="19.351"/>
+<lb/>modo. Medica ars est additio et detractio; additio quidem
+<lb/>eorum quae deficiunt; detractio vero eorum quae
+<lb/>exsuperant. Alia ex Herophilo. Medicina ars est salubrium
+<lb/>et insalubrium et neutrorum. Vel sic. Medicina
+<lb/>ars est sanitatis conservatrix. At plures hoc modo destinerunt.
+<lb/>Medicina est ars quae sanis victus rationem et
+<lb/>aegrotantibus medelas praescribit.</p>
+</div>
+<div type="textpart" subtype="book" n="12">
+
+
+<p rend="indent">Summae partes medicinae sunt duae, speculatio
+<lb/>et actio. Praecedit autem actionem seu praxin speculatio.
+<lb/>Speculari namque prius aliquid oportet atque ita deinde
+<lb/>agere; nam praeceptio ratione constans exercendorum operum
+<lb/>principium est.</p>
+</div>
+<div type="textpart" subtype="book" n="13">
+
+
+<p rend="indent">Partes medicinae quas et species quidam nuncuparunt,
+<lb/>funt quinque, physiologia, pathognomonica,
+<lb/>diaetetica, materialis et therapeutica. Physiologia equidem
+<lb/>est quae in speculatione Versatur regentis nos ac
+<lb/>moderantis naturae. Pathognomonica vero quae in rei
+<lb/>quae praeter naturam est dignotione versatur^ Diaetetica
+<pb n="19.352"/>
+<lb/>autem quae tum sanorum, tum aegrotantium victui incumbit.
+<lb/>Materialis quae materiam corpori nostro medentem
+<lb/>continet. Therapeutica denique quae circa sanationem vel
+<lb/>deperditae sanitatis revocationem ejusque restitutionem
+<lb/>operam navali</p>
+</div>
+<div type="textpart" subtype="book" n="14">
+
+
+<p rend="indent">Secta est multitudinis dogmatum propensio arte
+<lb/>conditorum et ad unum finem relationem habentium. Aut
+<lb/>sic. Secta est societas decretorum quae tum se mutuo
+<lb/>tum apparentia consequuntur aut consequi putantur. Possit
+<lb/>autem aliquis ita quoque definire. Secta est consensus
+<lb/>plurium dogmatum quae se invicem et apparentia consequuntur
+<lb/>aut consequi existimantur. Comperitur vero
+<lb/>hujusmodi quaedam definitio. Secta est assensio multitudinis
+<lb/>dogmatum quae tum ad seipsa tum ad apparentia
+<lb/>consequentiam habent. Aut ita. Secta assensio est ex
+<lb/>dogmatum multitudine consequentiam inter se ad unum
+<lb/>finem habentium.</p>
+</div>
+<div type="textpart" subtype="book" n="15">
+
+
+<p rend="indent">Dogma partim quidem proprie partim vero
+<lb/>communiter dicitur: communiter quidem rei in actu consensio
+<pb n="19.353"/>
+<lb/> ; proprie vero rei comprobatio proindeque sane magis
+<lb/>rationalis secta dogmatica vocata est. Dogma utroque
+<lb/>modo vocatur tum quod opinione percipitur; tum ipsa
+<lb/>opinio. Illud pronunciatum, hoc sententia est.</p>
+</div>
+<div type="textpart" subtype="book" n="16">
+
+
+<p rend="indent">Medicinae sectae primae duae sunt empiriCa et
+<lb/>rationalis et tertia methodica. Quartam autem sectam
+<lb/>adinvenisse videtur Agathinus Lacedaemonius, quam episyntheticem
+<lb/>accumulantem nominavit; nonnulli vero eclecticen
+<lb/>electricem, alii hecticen haburicem appellarunt.</p>
+</div>
+<div type="textpart" subtype="book" n="17">
+
+
+<p rend="indent">Empirica quidem secta est eorum quae saepissime
+<lb/>et secundum idem et eodem prope modo visa sunt.</p>
+</div>
+<div type="textpart" subtype="book" n="18">
+
+
+<p rend="hanging">Rationalis secta est rerum abditarum scientia</p>
+<p>et hanc in medendo sequuntur effectus ac opera.</p>
+</div>
+<div type="textpart" subtype="book" n="19">
+
+
+<p rend="indent">Methodica secta cognitio est apparentium communitatum
+<lb/>et proximarum et necessariarum ad medicinae
+<lb/>finem. Communitates vero vocat vulgus adstrictum , fluxum
+<lb/>, ac permixtum.</p>
+</div>
+<div type="textpart" subtype="book" n="20">
+
+
+<p rend="indent">Analogismus ratiocinatio est oratio quae ab
+<pb n="19.354"/>
+<lb/>evidenti ortum dubit et abditi comprehensionem facit; ut
+<lb/>si sudores i funt, pori sunt; sudores etenim res quidem est
+<lb/>evidens, Pori vero res abdita.</p>
+</div>
+<div type="textpart" subtype="book" n="21">
+
+
+<p rend="indent">Syllogismus est oratio in qua positis quibusdam
+<lb/>aliud quidpiam ab iis quae posita sunt, quod prius
+<lb/>ignorabatur , necessario colligitur.</p>
+</div>
+<div type="textpart" subtype="book" n="22">
+
+
+<p rend="indent">EpHogisinus est oratio quae quod sensim apparet
+<lb/>sententiae, id in amplificationem adducit.</p>
+</div>
+<div type="textpart" subtype="book" n="23">
+
+
+<p rend="indent">Theorema praeceptum res est universalis quae
+<lb/>medicinae finem consequens adstruitur. Aliter. Theorema
+<lb/>est effatum universale quod medicinam complet fini^continuume
+<lb/>Aliter. Theorema est cujus contrarium raro evenit.</p>
+</div>
+<div type="textpart" subtype="book" n="24">
+
+
+<p rend="indent">Rarum est cujus contrarium evenit.</p>
+</div>
+<div type="textpart" subtype="book" n="25">
+
+
+<p rend="indent">Anceps opinio est cujus contrarium peraeque
+<lb/>accidit.</p>
+</div>
+<div type="textpart" subtype="book" n="26">
+
+
+<p rend="indent">Finis est cujus gratia aliquid in medicina
+<lb/>efficitur. Vel sic: Finis est ad quem quaecunque medicinae
+<pb n="19.355"/>
+<lb/>sunt reseruntur. Potest quoque ita definiri. Finis
+<lb/>est in medicina id quod assequuti nihilo praeterea egemus.</p>
+</div>
+<div type="textpart" subtype="book" n="27">
+
+
+<p rend="indent">Persectus est medicus qui in speculatione et
+<lb/>praxi numeros omnes explevit.</p>
+</div>
+<div type="textpart" subtype="book" n="28">
+
+
+<p rend="indent">Optimus medicus est qui omnia in medicina
+<lb/>recta ratione efficit.<space type="tab">    </space>LO .ί O .</p>
+</div>
+<div type="textpart" subtype="book" n="29">
+
+
+<p rend="indent">Homo est animal ratiocinata, mortale, mentis
+<lb/>et scientiae capax.</p>
+</div>
+<div type="textpart" subtype="book" n="30">
+
+
+<p rend="indent">Animal est substantia animata, sensu praedita
+<lb/>quae et impetu et voluntate movetur.</p>
+</div>
+<div type="textpart" subtype="book" n="31">
+
+
+<p rend="indent">Anima est substantia incorporea quae per se
+<lb/>ex Platone movetur. Ex Stoicis vero corpus tenuium
+<lb/>partium quod ex seipso pro seminis ratione movetur.
+<lb/>At secundum Aristotelem persectio corporis naturalis , organici,
+<lb/>facultate vitam habentis. Aliter. Anima est spiritus
+<lb/>in toto corpore consitus per quem vivimus, ratiocinamur
+<lb/>ac reliquis subministrantia corporis sensibus fungimur.
+<lb/></p>
+<pb n="19.356"/>
+</div>
+<div type="textpart" subtype="book" n="32">
+
+
+<p rend="indent">Corpus est magnitudo triplici dimensione constans,
+<lb/>habens in sese longitudinem, latitudinem et prosimditatam.
+<lb/>Vel magnitudo ex spatiis tribus conflata.</p>
+</div>
+<div type="textpart" subtype="book" n="33">
+
+
+<p rend="indent">Elementum est ex quo primo et simplicissimo
+<lb/>omnia constant et in quod simplicissimum postremum exiflens
+<lb/>omnia resolventur. Athenaeus vero Attalensis in
+<lb/>tertio libro ita loquitur. Elementa medicinae, ut nonnulli
+<lb/>veterum existimarunt, sunt calidum et frigidum et humidum
+<lb/>et siccum , ex quibus primis apparentibus et simplicissimis
+<lb/>et minimis homo constitutus est et in quae ultima
+<lb/>apparentia et simplicissima ac minima resolutionem capit.</p>
+</div>
+<div type="textpart" subtype="book" n="34">
+
+
+<p rend="indent">Elementatio parata est eorundem fecundum
+<lb/>idem eodemque modo doctrina. Alii ita : elementatio est
+<lb/>ab elementis ad finem via.<space type="tab">    </space>ri<space type="tab">    </space>m ni</p>
+<p>e -</p>
+</div>
+<div type="textpart" subtype="book" n="35">
+
+
+<p rend="indent">Constant nostra corpora ex solidis, humidis
+<lb/>et spiritibus. Solida siquidem sunt ossa, cartilagines, nervi,
+<lb/>musculi, venae, arteriae et quae delitescunt viscera. Humida
+<pb n="19.357"/>
+<lb/>vero humores et excrementa. Spiritus denique nativus
+<lb/>in corde calor est. /Aliter; ex quot constant nostra
+<lb/>corpora? Ex quatuordecim, nervis, venis, arteriis , osiibus,
+<lb/>sanguine, spiritu, carne, pinguedine, cartilagine,
+<lb/>unguibus, medulla, pilis, humoribus et membranis. Aliter;
+<lb/>ex quibus constituta sunt nostra patibilia corpora?
+<lb/>Ex quatuor, ex sanguine, pituita, bile et melancholico
+<lb/>humore, quae et patibilia eIementa quidam vocitant. Aliter.
+<lb/>Ex quibusnam constant nostra materialia corpora?
+<lb/>Ex quatuor elementis, igne, aere, terra et aqua.</p>
+</div>
+<div type="textpart" subtype="book" n="36">
+
+
+<p rend="indent">Anatome seu dissectio partium abditarum
+<lb/>speculatio ac conspectio est. Anatomes species duae sunt,
+<lb/>altera quae artificio , altera quae casu fit. Artificialis itaque
+<lb/>est quae a dogmaticis partium reconditarum gratia
+<lb/>traditur vel in viventibus vel in mortuis atque vel in
+<lb/>totis vel in partibus. Fortuita vero quae casu ut ex vulnere
+<lb/>magno evenit. Utuntur autem ea foli empirici.
+</p>
+<pb n="19.358"/>
+</div>
+<div type="textpart" subtype="book" n="37">
+
+
+<p rend="indent">Chirurgia promptus est manuum intremularum
+<lb/>motus cum experientia. Vel: artificiosa actio in medicina
+<lb/>quae manibus vel instrumentis ob idoneum finem
+<lb/>procedit.</p>
+</div>
+<div type="textpart" subtype="book" n="38">
+
+
+<p rend="indent">Pericranium membrana est nervosa quae
+<lb/>totam calvariam ambit.</p>
+</div>
+<div type="textpart" subtype="book" n="39">
+
+
+<p rend="indent">Meninges sunt corpora nervosa et arteriofa
+<lb/>quae cerebrum investiunt.</p>
+</div>
+<div type="textpart" subtype="book" n="40">
+
+
+<p rend="indent">Cerebrum est album, molle velut e spuma
+<lb/>quadam concretum, humidum et calidum.</p>
+</div>
+<div type="textpart" subtype="book" n="41">
+
+
+<p rend="indent">Cerebellum est quod in posteriori loco cerebri
+<lb/>constitutum est natura et colore cerebro simile.</p>
+</div>
+<div type="textpart" subtype="book" n="42">
+
+
+<p rend="indent">Dorsi medulla est natura et colore cerebro con-.
+<lb/>similis , verum et pinguior et candior ac minus principalis,
+<lb/>quae per mediam spinam deducitur.</p>
+</div>
+<div type="textpart" subtype="book" n="43">
+
+
+<p rend="indent">Oculi sunt qui ex quatuor constant tunicis,
+<lb/>reticulari, uvea, cornea, conjunctiva; et tribus humoribus,
+<lb/>vitreo, crystallino et albugineo; ut et jam nervosa
+<pb n="19.359"/>
+<lb/>propagine vel nervis opticis qui subjectos colores et magnitudines
+<lb/>et figuras sensu percipiunt.</p>
+</div>
+<div type="textpart" subtype="book" n="44">
+
+
+<p rend="indent">Aures vero nervosae et cartilaginosae sunt
+<lb/>quae voces earumque differentias sensu percipiunt.</p>
+</div>
+<div type="textpart" subtype="book" n="45">
+
+
+<p rend="indent">Nares nervosae cartilaginosaeque sunt odorum
+<lb/>perceptrices.<space type="tab">    </space>ri<space type="tab">    </space>T , . t t i</p>
+</div>
+<div type="textpart" subtype="book" n="46">
+
+
+<p rend="indent">Lingua venosa est et carnosa, subpinguis,
+<lb/>saporum gustatrix , quae alimenti deglutitioni et vocis dearticulationi
+<lb/>inservit. l . It Cn t .. l</p>
+</div>
+<div type="textpart" subtype="book" n="47">
+
+
+<p rend="indent">Pharynx interna est oris regio in quam tum
+<lb/>stomachi tum laryngis extremum porrigitur quaeque deglutitioni,
+<lb/>inspirationi et voci inservit.</p>
+</div>
+<div type="textpart" subtype="book" n="48">
+
+
+<p rend="indent">Larynx cartilaginosus est per quem spiritum
+<lb/>inspiramus quique simul voci inservit. t</p>
+</div>
+<div type="textpart" subtype="book" n="49">
+
+
+<p rend="indent">Pulmo est arteriosus ex laevinus asperisque
+<lb/>constans arteriis fungosior; inspirandi instrumentum.</p>
+</div>
+<div type="textpart" subtype="book" n="50">
+
+
+<p rend="indent">Thorax est ex venis et arteriis et nervis
+<lb/>ad respirationis impetum a natura constitutus^
+</p>
+<pb n="19.360"/>
+</div>
+<div type="textpart" subtype="book" n="51">
+
+
+<p rend="indent">Cor nervosum, musculosum venosumqne est
+<lb/>continensque arterias , coniformis figurae, fubpingue , ex
+<lb/>quo arteriae oriuntur ac venae per quas sanguis ac spiritus
+<lb/>immittuntur. Aliter; cor est pars musculosa quod
+<lb/>figuram habet coniformem ac duos ventriculos in quibus
+<lb/>calidum innatum procreatur ac vitalis spiritus; a quo
+<lb/>propagantur arteriae et venae exoriuntur per quas suggeritnr
+<lb/>universo corpori humor vitalis et innatus calor.</p>
+</div>
+<div type="textpart" subtype="book" n="52">
+
+
+<p rend="indent">e Diaphragma pars nervosa est viscera quae in thorace
+<lb/>ab iis quae sub thorace sunt dirimens ac separans ;
+<lb/>quod et septum transversum seu cingulum vocamus.</p>
+</div>
+<div type="textpart" subtype="book" n="53">
+
+
+<p rend="indent">Jecur substantia venosum est et calidum ac asfluens
+<lb/>sanguine f primamque sanguinis generationem plurimam
+<lb/>molitur, ventriculo quoque ad concoctionem obeundam
+<lb/>confert sua ipsum appositione concalescens. Aliter;
+<lb/>hepar est substantia rubra carnosum habens imminutionem
+<lb/>in dextris locata partibus, in qua generatur sanguis
+<lb/>ad totius corporis educationem..<space type="tab">    </space>t
+<pb n="19.361"/>
+<lb/>τ t .</p>
+</div>
+<div type="textpart" subtype="book" n="54">
+
+
+<p rend="indent">Lien pars est venis arteriisque reserta; qui
+<lb/>quum tenuia vasa multasque interjectas vasorum cavitates
+<lb/>obtineat, ob id rarus laxusque est.</p>
+</div>
+<div type="textpart" subtype="book" n="55">
+
+
+<p rend="indent">Stomachus substantia nervosus est et arteriosus;
+<lb/>instrumentum appetentiae et deglutitionis , vel
+<lb/>etiam meatus humidi siccique alimenti.</p>
+</div>
+<div type="textpart" subtype="book" n="56">
+
+
+<p rend="indent">Ventriculus nervosus alimenti humidi et sicci
+<lb/>receptaculum est, ad id alimentum concoquendum exstructus.
+<lb/>I .N - - sui lo</p>
+</div>
+<div type="textpart" subtype="book" n="57">
+
+
+<p rend="indent">Intestina sunt nervosa quorum alia ad coctiog
+<lb/>nem juvandam , alia ad chylum excipiendum, alia ad excernendum
+<lb/>recrementum progenita sunt. Quot ulnis constant
+<lb/>intestina? intestina tredecim constant venis, unumquodque
+<lb/>propria vena mensuratur. Quot sunt intestinorum
+<lb/>gradus seu ordines? Novem, stomachus, ventriculus, pylorus,
+<lb/>duodenum seu ecphysis, jejunum, tenue, caecum^
+<lb/>colum , rectum.</p>
+</div>
+<div type="textpart" subtype="book" n="58">
+
+
+<p rend="indent">Renes carnosi ex carne friabiliore constituti,
+<pb n="19.362"/>
+<lb/>cola humidi excrementi ac veluti lacunae a natura
+<lb/>conditi.</p>
+</div>
+<div type="textpart" subtype="book" n="59">
+
+
+<p rend="indent">Vesica est pars nervosa humidi excrementi
+<lb/>receptaculum simul et excretorium instrumentum.</p>
+</div>
+<div type="textpart" subtype="book" n="60">
+
+
+<p rend="indent">Testes carnosi mollesque sunt, humidi et calidi
+<lb/>ejus seminis quod in parastatis est concoctioni opitulantes.
+<lb/><space type="tab">    </space>su i ι si .</p>
+</div>
+<div type="textpart" subtype="book" n="61">
+
+
+<p rend="indent">Parastatae astites sunt qui ex vena et arteria
+<lb/>constant in unam naturam confertis semen continentes.</p>
+</div>
+<div type="textpart" subtype="book" n="62">
+
+
+<p rend="indent">^latrix seu uterus pars est foris nervosa, intus
+<lb/>carnosior, conceptionis vas seu organum; hystera seu ute.
+<lb/>rus haec quoque nominatur quod partium omnium postrema
+<lb/>fit. Aliter; matrix est quae et hystera dicitur. Ac
+<lb/>matrix quidem dicitur quod sit omnium puerorum mater;
+<lb/>hystera vero dicitur quod omnium partium postrema sita
+<lb/>sit. Quot agendi facultates in coitibus habet uterus? quatuor,
+<lb/>attractricem, retentricem, alteratricem et excretricem.
+</p>
+<pb n="19.363"/>
+</div>
+<div type="textpart" subtype="book" n="63">
+
+
+<p rend="indent">Excretio est eductio excrementorum corporibus</p>
+<p rend="indent">V
+<lb/>adhaerendum.</p>
+</div>
+<div type="textpart" subtype="book" n="64">
+
+
+<p rend="indent">t Stercus est excrementum alimenti ad coctionis
+<lb/>primae distributionisque finem secretum.</p>
+</div>
+<div type="textpart" subtype="book" n="65">
+
+
+<p rend="indent">Urina surum est excusatum sanguinis in magna
+<lb/>vena quae per renes et ureteras in vesicam desertor. Aliter :
+<lb/>urina excrementum est quod in hepate quidem generatur,
+<lb/>in renibus vero secernitur ac per ureteras in urinariam
+<lb/>vesicam derivatur ac inde per cervicem vesicae
+<lb/>effluit, quam cervicem uretram appellitant, per quam illino
+<lb/>urina deducitur.</p>
+</div>
+<div type="textpart" subtype="book" n="66">
+
+
+<p rend="indent">Efficiens causa urinae est quae in hepate fit
+<lb/>sanguinis generatio.</p>
+</div>
+<div type="textpart" subtype="book" n="67">
+
+
+<p>Quatuor sunt humores ex quibus animal confututum
+<lb/>est, sanguis, pituita, bilis utraque, flava et atra.
+<lb/>iHaec enim elementa corporis medicorum filii vocant,
+<lb/>quandoquidem ex his constamus. Ex his sanguis calidus
+<lb/>est et humidus ac dulcis; pituita frigida et humida, salsa,</p>
+<p>I
+<pb n="19.364"/>
+<lb/>glutinosaque ; flava vero bilis calida et sicca, acris ac
+<lb/>mordax; atra denique bilis sicca et frigida, acida et
+<lb/>gravissima.</p>
+</div>
+<div type="textpart" subtype="book" n="68">
+
+
+<p rend="indent">Sanguis calidus est et humidus in venis eopiosus
+<lb/>, in arteriis paucior, ex quo alitur animal.</p>
+</div>
+<div type="textpart" subtype="book" n="69">
+
+
+<p rend="indent">Pituita frigida est et humida ad ciborum
+<lb/>deglutitionem et articulorum motus a natura fubjecta.</p>
+</div>
+<div type="textpart" subtype="book" n="70">
+
+
+<p rend="indent">Bitis flava calida est et sicca ad stomachi
+<lb/>robur ac ventris excretiones comparata.</p>
+</div>
+<div type="textpart" subtype="book" n="71">
+
+
+<p rend="indent">Bilis atra frigidior est flava Pedem quidem
+<lb/>habens in liene, permixta vero sanguini ut ab eo secernatur,
+<lb/>ne is et crassius et ignavus et difficilis distributionis
+<lb/>efficiatur.<space type="tab">    </space>.su .c ὶ</p>
+</div>
+<div type="textpart" subtype="book" n="72">
+
+
+<p rend="indent">Quatuor praeterea melancholici humoris disserentiae
+<lb/>sunt; primus est elementarius; dein qui ex superassatione
+<lb/>flavae bilis gignitur quem bituminosum quoque
+<lb/>nominamus, quod bituminis instar splendeat et qui ex
+<pb n="19.365"/>
+<lb/>terrea seu putrefacta pituita oriatur et qui ex faeculento
+<lb/>sanguine constet. Flavae bilis sex differentiae habentur,
+<lb/>bilis elementaria, vitellina, gsastea , porracea, aeruginosa
+<lb/>e</p>
+<p>et pallida. Pituitae differentiae, dulcis, salsa et qualitatis
+<lb/>expers seu insipida ;ri humores item tribus modis in ventriculo
+<lb/>degunt; nam aut innatant aut imbibuntur aut inducuntur.
+<lb/><space type="tab">    </space>-i .edlluq</p>
+</div>
+<div type="textpart" subtype="book" n="73">
+
+
+<p rend="indent">Mucus est excrementum cerebri quo levetur
+<lb/>princeps animae pars.<space type="tab">    </space>, l ss, ,</p>
+</div>
+<div type="textpart" subtype="book" n="74">
+
+
+<p rend="indent">Sudor est tenuis et ferest qui in sanguine
+<lb/>est humoris columen.<space type="tab">    </space>ror</p>
+<p>., o</p>
+</div>
+<div type="textpart" subtype="book" n="75">
+
+
+<p rend="indent">Vena est vas sanguinis et naturalis spiritus
+<lb/>cum sanguine commixti, nervosa, sensu praedita, humidam
+<lb/>et calidam substantiam continens; plus tamen continet
+<lb/>sanguinis, minus vero vitalis spiritus. ali i n</p>
+</div>
+<div type="textpart" subtype="book" n="76">
+
+
+<p rend="indent">Arteria est vas sanguinis, paucioris puriorisque
+<lb/>ac commixti naturalis spiritus copiosioris ac tenuioris
+<lb/>, calidior et siccior majorique sensu praedita quatn vena
+<pb n="19.366"/>
+<lb/>quae pulsantem edit motum. Aliter: arteria est corpus
+<lb/>cavum quod duplici^ constat tunica et a corde ortum ac
+<lb/>impetum sumit fpiritumque vitaIem suppeditat. Excipit
+<lb/>autem purum aërem in systole ; excernit vero in diastole
+<lb/>fumosa ac fuliginosa recrementa; introducens igitur purum
+<lb/>aërem et cor et nativum calorem resrigerat, usus itaque
+<lb/>pulsus is est ut per aerem refrigeret; aeris quoque ipsa
+<lb/>substantia quod spiritui nostro addatur generatio additioque
+<lb/>est spiritus animalis.</p>
+</div>
+<div type="textpart" subtype="book" n="77">
+
+
+<p rend="indent">Sex nobis insunt motus ut Aristoteles in categoriis
+<lb/>asserit, generatio, corruptio, incrementum, decrementum
+<lb/>, alteratio et loci commutatio.</p>
+</div>
+<div type="textpart" subtype="book" n="78">
+
+
+<p rend="indent">Nervus corpus est album ac solidum. Nervorum
+<lb/>tres sunt differentiae; alii quidem ex cerebro et
+<lb/>spinali medulla exorti sunt et hi proprie nervi appellantur;
+<lb/>alii vero ex musculis tendones; alii denique ex osiibus
+<lb/>ligamenta.</p>
+</div>
+<div type="textpart" subtype="book" n="79">
+
+
+<p rend="indent">Nervi a cerebro et meningibus propagati
+<pb n="19.367"/>
+<lb/>communes, sicciores et minus calidi sunt venis et quam
+<lb/>arteriae magis sentientes qui motus voluntarios perficiunt.</p>
+</div>
+<div type="textpart" subtype="book" n="80">
+
+
+<p rend="indent">Nervi ex ossibus producti sunt qui ab ossibus
+<lb/>ad ossa prosecta articulos et corporis membra colligant
+<lb/>ac contment. Q</p>
+</div>
+<div type="textpart" subtype="book" n="81">
+
+
+<p rend="indent">Nervus a musculo ortus musculi finis est
+<lb/>veI aponeurosta quae in partem movendam inseritur.</p>
+</div>
+<div type="textpart" subtype="book" n="82">
+
+
+<p rend="indent">Musculi sunt corpora nervosa, permixta etiam
+<lb/>ipsis carne ad partium corporis motum procreati.</p>
+</div>
+<div type="textpart" subtype="book" n="83">
+
+
+<p rend="indent">Perlustra seu circosses membranae sunt integumenta
+<lb/>tenuia, fibrosa, velut indumenta ostium a natura
+<lb/>conditae.</p>
+</div>
+<div type="textpart" subtype="book" n="84">
+
+
+<p rend="indent">Pinguedo est effusio alimenti circa membranas
+<lb/>maxime concreta, sensus expers.</p>
+</div>
+<div type="textpart" subtype="book" n="85">
+
+
+<p rend="indent">Caro concreta ex sanguine pars est hunuda
+<lb/>et calida flexionem mollitiemque corpori praebens.</p>
+</div>
+<div type="textpart" subtype="book" n="86">
+
+
+<p rend="indent">Medulla in ossibus est pars ossium cavitatibus
+<lb/>contenta, pinguis ac sensu vacans.
+</p>
+<pb n="19.368"/>
+</div>
+<div type="textpart" subtype="book" n="87">
+
+
+<p rend="indent">Cartilagines corpora sunt magis terrea ac
+<lb/>sensus expertia , quales sunt nares ac aures.</p>
+</div>
+<div type="textpart" subtype="book" n="88">
+
+
+<p rend="indent">Ossa sunt corpora sicca et Terrestria et
+<lb/>frigida nec sensu praedita. Aliter. Osi est corpus magis
+<lb/>terreum, frigidum ac sensus expers. Os est, ex Platone,
+<lb/>medulIa quae calido concrescit; ex quibusdam vero medicis
+<lb/>terrena concretio et .solida et sensus expers et exfanguis.
+<lb/>Communia cartilaginis et unguis esse sensu carere
+<lb/>et extra asperitatem esse. At cartilago imago est ossis;
+<lb/>saepissime enim in articulis adjacet; unguis vero fupersicies
+<lb/>ossis fuerit aut cutis concretio dura et sicca.</p>
+</div>
+<div type="textpart" subtype="book" n="89">
+
+
+<p rend="indent">Dentes sunt qui cibum dividunt atque
+<lb/>conficiunt non nihil et adgvocis articulationem conferentes.</p>
+</div>
+<div type="textpart" subtype="book" n="90">
+
+
+<p rend="indent">Palatum ceu coelum parvum. est pars oris
+<lb/>superior a coeli similitudine nomen accipiens.</p>
+</div>
+<div type="textpart" subtype="book" n="91">
+
+
+<p>Gargareo seu columella caruncula est a
+<lb/>faucibus dependens, vocis instrumentum l spiritus eausa
+<lb/>sive absolutio.<space type="tab">    </space>.1. UMsa S .httOs.tiili P.O.llu
+</p>
+<pb n="19.369"/>
+</div>
+<div type="textpart" subtype="book" n="92">
+
+
+<p rend="indent">Praelepiola sunt caritates ollium in quibus dentes
+<lb/>radices agunt.<space type="tab">    </space>. .</p>
+</div>
+<div type="textpart" subtype="book" n="93">
+
+
+<p rend="indent">Ungues funt nervorum terminatio decoris gratia
+<lb/>progeniti et quo^ captu quidquam digitis sit facilius.
+<lb/>Alii sic: ungues funt cutis vinctura sicca et frigida ac
+<lb/>tentus expers.</p>
+</div>
+<div type="textpart" subtype="book" n="94">
+
+
+<p rend="indent">. Pilus est corpus siccum et frigidum, tensus expera
+<lb/>, ad tutelam ornatumque genitus. Quot ob causas
+<lb/>pili in homine oriuntur? Ob duas; alii quidem ad ornatum
+<lb/>in capite ac genis nuscuntur; alii vero ad usum
+<lb/>in palpebris ac superciliis. Cur in capite multi generanturi
+<lb/>pili? Ob cutis siccitatem et fuliginosorum copiam
+<lb/>excrementorum quae furium ab inferis partibus ad. ea
+<lb/>loca mittuntur. Cur aetate vigentibus pilorum est densitas
+<lb/>feu hirsutia? Ob eam qua ipsi abundant excrementorum
+<lb/>copiam tum ob cutis meatus quos habent ampliores tum
+<lb/>ob eorum cutim neque aridiorem neque molliorem. Cur
+<lb/>pueris pilorum est raritas seu paucitas? Tum quod his
+<pb n="19.370"/>
+<lb/>haud multa sint fuliginofa excrementa tum quod his desint
+<lb/>cutis meatus aut potius quod adsint meatus angustiores.
+<lb/>Quot ob causas calvi fiunt homines? Ob duas, ob fummam
+<lb/>siccitatem ac proinde alimenti pilis idonei penuriam
+<lb/>et ob summam humiditatem , quemadmodum terra quae
+<lb/>herbam gerit aqua multa putrefacit.</p>
+</div>
+<div type="textpart" subtype="book" n="95">
+
+
+<p rend="indent">Cutis est corpus nervofum universum totius
+<lb/>corporis ambitum operiens, ornatus gratia et totius ratione
+<lb/>et ad noxias causas propulsandas procreatum.</p>
+</div>
+<div type="textpart" subtype="book" n="96">
+
+
+<p rend="indent">Semen conspersa est in humido facultas ra-.
+<lb/>tionem ejus continens, quae facultas si idoneas formas ac
+<lb/>materias sortiatur in hominis generationem explicatur.
+<lb/>Vel aliter hoc modo: femen est humor qui in parallelis
+<lb/>continetur calido. spiritu constans ex quo nasci hominem
+<lb/>decet. Aliter: semen est fpiritus calidus in humido
+<lb/>qui ex seipso movetur ac gignere tale potest, quale
+<lb/>id a quo emissum esu Vel: avulsum materialis animae
+<lb/>partis cum spiritu. humido. zeno autem Citieus ita finivit:
+<pb n="19.371"/>
+<lb/>semen est hominis abstractum vel avulsum quod homo
+<lb/>cum humida animae parte ejaculatur et generis maiorum
+<lb/>compages talis existit ac tale generat ac id commixtum
+<lb/>a quo excreta est.</p>
+</div>
+<div type="textpart" subtype="book" n="97">
+
+
+<p rend="indent">Natura est ignis artificialis qui via ad generationem
+<lb/>tendit et ex seipso essicaciter movetur. Aliter
+<lb/>ex Platone: natura ars est divina. Vel: natura est artifi-.
+<lb/>clasis quaedam facultas. Alio modo: natura spiritus est
+<lb/>caliduS qui ex seipso movetur ac pro seminariis facultatibus
+<lb/>hominem generat, perficit, conservat. Vel sic: natura
+<lb/>est facultas quae per fe movetur, generationis et
+<lb/>consormationiS et perfectionis auctor quae hominem procreat
+<lb/>conformatque. Dicitur natura cujusque rei et teani
+<lb/>peramentum et habitua; motus quoque proprio impetu
+<lb/>concitatus et quae animal moderatur facultas natura nuncupatur.
+<lb/>Sic quoque definiri potest; natura spiritus est
+<lb/>caliduS qui ex sese pro seminariis rationibus movetur
+<lb/>quique in praefinitis temporibusi ac magnitudinibus hominem
+<lb/>generat, perficit atque conservat.
+</p>
+<pb n="19.372"/>
+</div>
+<div type="textpart" subtype="book" n="98">
+
+
+<p rend="indent">Habitus est spiritus continens et cohibens
+<lb/>partes.</p>
+</div>
+<div type="textpart" subtype="book" n="99">
+
+
+<p rend="indent">Appetentia est cibi potusque desiderium et
+<lb/>indagatio.</p>
+</div>
+<div type="textpart" subtype="book" n="100">
+
+
+<p rend="indent">Deglutitio est solidi et liquidi attractio quae
+<lb/>a stomaCho in ventriculum fit. Vel hoc pacto t deglutitio
+<lb/>est ingestio alimenti liquidi et solidi quae ex ore per
+<lb/>stomachum in ventriculum perficitur.</p>
+</div>
+<div type="textpart" subtype="book" n="101">
+
+
+<p rend="indent">Coctio est mixtio et chyli consertio ac velut
+<lb/>elixatio alimenti in ventriculo atque intestinis in distributionem
+<lb/>mutatione facta. Aliter. Coctio confectio est alimenti
+<lb/>per mutationem in ventriculo et intestinis. Vel sic.
+<lb/>Coctio immutatio est prompta ad sanguinis generationem
+<lb/>quae a natura fit per calorem elixationi similia. Quomodo
+<lb/>Hippocrates et Erasistratus et Empedocles et Asclepiades
+<lb/>coctiones alimenti fieri asserunt^ Concoctiones alimenti
+<lb/>fieri quidem putat Hippocrates a calido innato; Erasistratus
+<pb n="19.373"/>
+<lb/>contritione et laevigatione,. amplexu ventriculi et afcitjtii
+<lb/>fpiritus proprietate; Empedocles autem putrefactione;
+<lb/>alii, quemadmodum et Asclepiades Bithynus, ex crudis
+<lb/>fieri distributiones affirmarunt; ipsa quoque animam esse
+<lb/>quinque fenfuum exercitationem dixit.</p>
+</div>
+<div type="textpart" subtype="book" n="102">
+
+
+<p rend="indent">Sanguificatio est in sanguinem alimenti mutatio.</p>
+</div>
+<div type="textpart" subtype="book" n="103">
+
+
+<p rend="indent">Distributio est cocti, confecti et in sanguinem
+<lb/>conversi alimenti in corporis particulas omnes et partes
+<lb/>attractio quam nativus calor molitur. Quidam hoc modo:
+<lb/>distributio est concoctio alimenti in totum corpus attractio,
+<lb/>quam naturalis obit calor cum propria mutatione
+<lb/>confectioneque.</p>
+</div>
+<div type="textpart" subtype="book" n="104">
+
+
+<p rend="indent">Auctio est corporum in longitudinem, latitudinemet
+<lb/>profunditatem promotio ac processus.</p>
+</div>
+<div type="textpart" subtype="book" n="105">
+
+
+<p rend="indent">Nutritio est additio quae corporibus in circui-^
+<lb/>tum et latitudinem fit.</p>
+</div>
+<div type="textpart" subtype="book" n="106">
+
+
+<p rend="indent">Aetates quatuor funt; prima quidem adoletuentum,
+<pb n="19.374"/>
+<lb/>fecunda vigentium fert juvenum, tertia mediocum
+<lb/>, quarta senum. Adolescentes quidem temperamento
+<lb/>calidi et humidi funt ac veri similes. - Vigentes calidi et
+<lb/>sicci idem cum aestate temperamentum adepti. Medii feu
+<lb/>declinantes frigidi et sicci sunt temperamenti autumno
+<lb/>consimiles ; tenes frigidi et humidi hiemique similes. Exuberat
+<lb/>fanguis adolescentibus, flava bilis juvenibus, rnediis
+<lb/>feu declinantibus atra, pituita senibus, quod innatus
+<lb/>calor multus quidem sit adolescentibus, vigens vero juveullius,
+<lb/>medius mediis, senibus paucissimus.</p>
+</div>
+<div type="textpart" subtype="book" n="107">
+
+
+<p rend="indent">Adolescentia est in qua augescit animal incrementum
+<lb/>capessente in ipsi, calido et humido; quo tempore
+<lb/>coaequalia sunt accedentibus alimentis secedentis .exerementa
+<lb/>aut quum quod adnascitur majus est quam quod decidit.</p>
+</div>
+<div type="textpart" subtype="book" n="108">
+
+
+<p rend="indent">Vigor est aetas in qua auctum periectumque
+<lb/>animal est absolutis in eo calore atque humore quumque.
+<lb/>accedentibus decedentia paria existunt.
+</p>
+<pb n="19.375"/>
+</div>
+<div type="textpart" subtype="book" n="109">
+
+
+<p rend="indent">Senectus aetas est in qua imminuitur deficit-.
+<lb/>que animal decrescentibus in eo calido et humido , frigido
+<lb/>autem et sicco augescentibus.</p>
+</div>
+<div type="textpart" subtype="book" n="110">
+
+
+<p rend="indent">Respiratio est motus thoracis et pulmonis.
+<lb/>Ejus autem partes duae sunt inspiratio et exspiratio. Vel
+<lb/>hoc modo.: respiratio est attractio aeris per oset nares in
+<lb/>cerebrum et per fauces et pulmones in cor, adit quoque
+<lb/>in ventriculum atque ex accepto aere rursum pauca quaedam
+<lb/>in ambientem fit redditio.</p>
+</div>
+<div type="textpart" subtype="book" n="111">
+
+
+<p rend="indent">Perfpiratio est attractio aeris praeter volneratem
+<lb/>a naturali calore per corporis ipsius superficiem cum
+<lb/>iis quae una abeunt facta. Aliter: perfpiratio est ex corpore
+<lb/>attractio aeris cum naturali appetentia per totum
+<lb/>corpus ac rursus per vias excretio.</p>
+</div>
+<div type="textpart" subtype="book" n="112">
+
+
+<p rend="indent">Pulsus est cordis et arteriarum naturalis dilatatio
+<lb/>et contractio. Sunt autem duae pulsus partes diastole
+<lb/>et fystole. Vel sic: pulsus est cordis et arteriarum
+<pb n="19.376"/>
+<lb/>et cerebri et meningum naturalis ac inuoluntarius motus
+<lb/>per diastolen et systolen. Sic quoque definiri potest: pulsus
+<lb/>est motus naturalis ac involuntarius caloris qui in corde
+<lb/>continetur in fe et a se similiter et cor et arterias commovens.
+<lb/>Aliter: pulsus est cordis atque arteriarum naturalis
+<lb/>per diastolen ac . fystolen motus ad innati caloris
+<lb/>refrigerationem^ et vitalis roboris incrementum et animalis
+<lb/>spiritus generationem. Aliter: pullus est verax eorum
+<lb/>nuncius quae in profundo delitescunt et vates obscurorum
+<lb/>et incertorum-index motu concinno ac musica percussione
+<lb/>dispositionem praenuncians invisibilem.</p>
+</div>
+<div type="textpart" subtype="book" n="113">
+
+
+<p rend="indent">Genus pulsus est motio quae nec sedari potest
+<lb/>nec a voluntate progreditur in sempiterni motus distentione
+<lb/>ac contractione consistens atque in corde et arteriis
+<lb/>principium obtinens. Arteria vel circulatim movetur vel
+<lb/>in rectum. Constat in .orbem non moveri, quod autem
+<lb/>neque in rectum agatur hinc manifeste noveris. A loco
+<lb/>in.. locum demigrant quaecunque in rectum moventur
+<pb n="19.377"/>
+<lb/>finemque obtinent motionis: non ergo in rectum movetur.
+<lb/>Quod si quum duo sint motus neutro cieatur, non igitur
+<lb/>movetur. At id salsum et fenfui repugnat; etenim movetor.
+<lb/>Quum igitur moveatur, demonstrandum est quali
+<lb/>motu moveatur arteria. Dicimus itaque arteriam mixto
+<lb/>cieri motu tum circulari tum recto. Porro an mixta hujus
+<lb/>motio sit, ut dictum est, consentanea rationi, demonstratio
+<lb/>est centrum.</p>
+</div>
+<div type="textpart" subtype="book" n="114">
+
+
+<p rend="indent">Centrum autem appello medium punctum a
+<lb/>quo fefe dilatantia arteriae fluxus foras impellitur et ad
+<lb/>quod rursum fefe contrahentis lapsus it. Hac igitur ratione
+<lb/>moveri fecundum rectitudinem videtur; ex eo autem
+<lb/>quod in orbem perpetuo agatur, speciem nobis invehit
+<lb/>circularis motionis. At si velis hisce rebus arteriae contemplari
+<lb/>motum, sit tibi haec similitudo rei narratae perspicua.
+<lb/>Aliquis fumat lapidem ac in aquam ejaculetur;
+<lb/>deinde per incusam a lapide plagam concipies arteriam ;
+<lb/>qui ex ipta factus est circulus manifestam tibi diastolem
+<lb/>effingit. Si vero rudunt non ad infinitum ipsius circulum
+<pb n="19.378"/>
+<lb/>ire concipies, imo stare ac incipere paulo post imminui, .
+<lb/>quousque in eum locum ejaculatus fueris unde principium
+<lb/>ortus accepit.</p>
+</div>
+<div type="textpart" subtype="book" n="115">
+
+
+<p rend="indent">Princeps animae facultas ea est quae partibus
+<lb/>animae praeest, quae regnat et imperat in cerebri basi
+<lb/>redent obtinens. Quidam hoc modo: princeps animae facultas
+<lb/>est quae universi animantis gubernationi praeest in
+<lb/>cerebri corde constituta.</p>
+</div>
+<div type="textpart" subtype="book" n="116">
+
+
+<p rend="indent">Ministra animae facultas feu pars est quae principi
+<lb/>fubdita est atque ministrat in reliquo corpore collocata.</p>
+</div>
+<div type="textpart" subtype="book" n="117">
+
+
+<p rend="indent">Sentos est assectus animae per corpus, nuncius
+<lb/>rei motum concitantis. Quid differt lentus et sensorium
+<lb/>et sensibile et sensificum ? Differt; tentus siquidem est agens
+<lb/>facultas. Sensorium vero organum lest quod tensum aliquem
+<lb/>creditum habet. Sensibile est quod sub tentum cadiu
+<lb/>Sensificum seu sensu praeditum est id ipsum quod
+<lb/>fentit veluti. senius, vitus, gustus, olfactus et reliqui
+<pb n="19.379"/>
+<lb/>siensus auditus et tactus. Sensorium est vel oculus vel
+<lb/>natus vel lingua et quae sentiendi organa nuncupantur.
+<lb/>Sensile lignum vel lapis vel paries vel columna et quaecumque
+<lb/>te sensibus obiiciunt, Sensu pollet Theon et Dion
+<lb/>et quaecunque sentiunt animalia.</p>
+</div>
+<div type="textpart" subtype="book" n="118">
+
+
+<p rend="indent">Sensus quinque sunt , vitus, auditus, gustus,
+<lb/>olsactus, tactus. Ministrant autem hi ac inserviunt animae
+<lb/>ut Asclepiades Bitbynus asserit, qui proinde animam
+<lb/>esse quinque sensuum exercitationem dixit.</p>
+</div>
+<div type="textpart" subtype="book" n="119">
+
+
+<p rend="indent">Vitus est sensus qui fit per oculos contumpersto
+<lb/>in ipsis tenui spiritu pupillae locum potissimum
+<lb/>obtinente, per quem visoriae apprehensiones fiunt. Quid
+<lb/>visus est? Visus est facultas aeriae substantiae lucida, adspectus
+<lb/>autem activus.</p>
+</div>
+<div type="textpart" subtype="book" n="120">
+
+
+<p rend="indent">Auditus est sensus qui fit per spiritum in
+<lb/>auribus contentum qui siccior magis quam tenuior exsistit,
+<lb/>quo auditoriae apprehensiones efficiuntur.</p>
+</div>
+<div type="textpart" subtype="book" n="121">
+
+
+<p rend="indent">Olfactus est qui absolvitur spiritu in naribus
+<pb n="19.380"/>
+<lb/>contento fuliginoso halituosioreque , per quem olfactilium
+<lb/>fiunt apprehensiones;</p>
+</div>
+<div type="textpart" subtype="book" n="122">
+
+
+<p rend="indent">Gustus est enses qui sit spiritu linguae insito
+<lb/>magis humidiora.</p>
+</div>
+<div type="textpart" subtype="book" n="123">
+
+
+<p rend="indent">Tactus est sensus qui per spiritum corpus permeantem
+<lb/>perficitur, quo corporeae fiunt apprehensiones.</p>
+</div>
+<div type="textpart" subtype="book" n="124">
+
+
+<p rend="indent">Transitivus motus est animalium universorum
+<lb/>qui per appetitionem fit provocante quidem facultate
+<lb/>principe, ministrante. vero eo qui nervis inest spiritu una
+<lb/>producente ac atportante partes.</p>
+</div>
+<div type="textpart" subtype="book" n="125">
+
+
+<p rend="indent">Vox fonus quidam est animantis. Aliter:
+<lb/>vox est quae. fit principis facultatis impulsu fele ac. lpiritum
+<lb/>simul per fauces usque in pulmones, .os et linguam
+<lb/>extendentis iis congredientem- aerem diverberantibus.
+<lb/>Aliter. lox opus est reconditi in nobis. spiritus quod
+<lb/>per alperam arteriam agitatur et per linguam .et ligulam
+<lb/>efformatur. Aliter. Vox est impulsus aeris tonus qui
+<pb n="19.381"/>
+<lb/>quum arbitrio nostro edatur intercostalibus musculis sese
+<lb/>contrahentibus et asperam arteriam , laryngem , gulam et
+<lb/>ligulam oblidentibus animales affectione annunciat.</p>
+</div>
+<div type="textpart" subtype="book" n="126">
+
+
+<p rend="indent">Memoria est detentio et conservatio eorum
+<lb/>quae antea in anima observata sunt vel quae animam prius
+<lb/>affecerunt. Nonnulli hoc modo. Memoria est praeteriti
+<lb/>comprehensio cujuS praesens ex sensu percipiebatur.</p>
+</div>
+<div type="textpart" subtype="book" n="127">
+
+
+<p rend="indent">Recordatio est quum praeter cetera interjecto
+<lb/>multo tempore rursus cogitatio oritur, adeo ut quae
+<lb/>prius animam movere ad memoriam revocentur.</p>
+</div>
+<div type="textpart" subtype="book" n="128">
+
+
+<p rend="indent">Cogitatio est intima notio, notio vero rationalis
+<lb/>imaginatio.</p>
+</div>
+<div type="textpart" subtype="book" n="129">
+
+
+<p rend="indent">Somnus est remissio animae secundum naturam
+<lb/>a finibuS ad principatum. Nonnulli vero ita. Somnus
+<lb/>est animae delatio secundum naturam a finibus ad
+<lb/>principium. Aliter. SomnuS est quies ac cessatio functionum
+<lb/>animae principum. Quae somni causa essicienS^l
+<pb n="19.382"/>
+<lb/>Utilis in cerebro materia. Vel somnum conciliat utilis
+<lb/>materia quae a stomacho in cerebrum .effertur quaeque
+<lb/>magis humidior ac mediocriter calidior .esu oi</p>
+</div>
+<div type="textpart" subtype="book" n="130">
+
+
+<p rend="indent">Vigilia est .intentio animae a principio ad
+<lb/>omnes. corporis partes et particulas. -<space type="tab">    </space>.. .......<space type="tab">    </space>... i;.</p>
+</div>
+<div type="textpart" subtype="book" n="131">
+
+
+<p rend="indent">i Sanitas est primorum qui fecundum naturam
+<lb/>nobis insunt humorum proba temperies autnaturalium
+<lb/>facultatum actio minime interturbata. Vel sanitas
+<lb/>proba est quatuor primorum elementorum ex quibus corpus
+<lb/>constituitur, calidi, frigidi, humidi- et sicci temperies.
+<lb/>Nonnulli ita deliniunt : harmonia, id est concinnitas constituentium
+<lb/>hominem calidorum, frigidorum, humidorum
+<lb/>ac siccorum. Quot sanitatem comitantur? Tria, pulchritudo,
+<lb/>bonus habitus, integritas. Qualis pulchritudo^ Pulchritudo
+<lb/>quidem non qualis artis fucandi per faciei illitus
+<lb/>.capillorumque tincturam et his similia comparatur.
+<lb/>Quis bonus habitus P Bonus habitus non qui a gymnafii
+<lb/>ca, fed qui per sanitatis consequentiam constituitur. Quae
+<lb/>integritas? Integritas ea quae cunctarum partium numeris
+<pb n="19.383"/>
+<lb/>omnibus absolutarum roboratio commoderatioque esu
+<lb/>Rursus pulchritudinem tria comitantur, bonus calor, proportio
+<lb/>membrorum ac numeri concinnitas. Nonnulli itaque
+<lb/>pulchritudinem ita definiunt: pulchritudo est partium
+<lb/>proportio et concinnitas cum coloris probitate, probus enim
+<lb/>color , partium proportio et numeri concinnitas sirnt quibus
+<lb/>inest pulchritudo. Quid a bono habitu differt sanitas p
+<lb/>Sanitas a bono habitu differt quod fanitas bonus sit habitus
+<lb/>commoderatus , habitus autem. bonus sanitas intensa.
+<lb/>Bonus vero - gymnesticorum habitus ne sanitas quidem ulla
+<lb/>esse potest.</p>
+</div>
+<div type="textpart" subtype="book" n="132">
+
+
+<p rend="indent">Virtutes quidem corporis^ fiunt fanitas, robur,
+<lb/>pulchritudo, integritas. Animi vero virtutes prudeutia,
+<lb/>modestia, fortitudo, justitia. Quaenam est illarum ad
+<lb/>has analogia? Sanitas equidem ad modestiam analogiam
+<lb/>habet. Est enim sanitas bona primorum temperies ac
+<lb/>constitutio; temperantia autem est. purum ah omni affectu
+<lb/>animum reddere nempe voluptate, metu, tristitia, cupiditate ;
+<lb/>quam ob caulam animi motus imperturbatos tranquillosque
+<pb n="19.384"/>
+<lb/>exhibet estque haec animae constitutio ac stanitas.
+<lb/>Rursus proportione robur corporis animi fbrtitudini
+<lb/>consentit. Est enim robur firmitas ac vis inexpugnobilis
+<lb/>corporis ab iis rebus quae corrumpere corpus cenfantur.
+<lb/>Fortitudo vero animi robur et strenuitas ad ea
+<lb/>perferenda quae mortis , laboris , aerumnae ac denique
+<lb/>omnium quae gravia et terribilia. esse videntur, speciem
+<lb/>impensius prae fe ferunt. Similis autem justitia pulchriinsilui
+<lb/>videtur; pulchritudo namque in membrorum summetris
+<lb/>cum coloris bonitate intelligitur : justitia autem in
+<lb/>ejus com moderatione quod in re quaque exsuperat; cuique
+<lb/>enim pro dignitate tribuit ut diis, parentibus, cognatis,
+<lb/>amicis, familiaribus, civibus. Prudentiae vero integritas
+<lb/>consertur. Integritas namque ut partium corporis sic et
+<lb/>prudentia rectarum animi com prehensionum consummatio
+<lb/>est.</p>
+</div>
+<div type="textpart" subtype="book" n="133">
+
+
+<p rend="indent">Equidem quod fecundum naturam sanitas
+<lb/>est, quod vero praeter naturam morbus. Quod autem est
+<lb/>natura, id neque secundum naturam neque praeter naturam
+<pb n="19.385"/>
+<lb/>jam est; ut gracilis admodum ac siccus vel crassius
+<lb/>jam et praepinguis vel qui caio est adunco vel fimo ver
+<lb/>caesius vel qui varus aut varia est natura, qui ita fe habent
+<lb/>.non funt fecundum naturam affecti ; nam hi fymmetriam
+<lb/>transgressi sunt; sed nec praeter naturam quoque
+<lb/>afficiuntur;- non enim in functionibus edendis impediuntur.
+<lb/>Quod autem non natura ejusmodi est, ut neque fe-eundum
+<lb/>naturam neque praeter naturam neque natura
+<lb/>existat: tales sunt qui leucas aut alphos aut acrochordoues
+<lb/>aut myrmecias ac similia habent. Haec enim neque fecundum
+<lb/>naturam sunt, nam extra naturalem sunt statum;
+<lb/>neque vero praeter naturam quum naturales minime lae-^
+<lb/>dant actiones; verum neque natura sunt; non enim ea
+<lb/>fuere a principio genita neque a prima generatione constatere;
+<lb/>non natura ergo ut sint relinquitur. Enimvero
+<lb/>quod constat natura ei quod fecundum naturam et quod
+<lb/>non natura ei quod praeter naturam ratione proximum esu</p>
+</div>
+<div type="textpart" subtype="book" n="134">
+
+
+<p rend="indent">Quae partes nobis insunt aliae quidem ad
+<lb/>vivendum a natura, aliae varo ad bene vivendum anatura
+<lb/>procreatae. sunt. Quae itaque partes ad vivendum
+<pb n="19.386"/>
+<lb/>progenitae funt propriae .ac principes habentur, ut cerelitum,
+<lb/>cor, pulmo, jeeur et ventriculus, his enim prave
+<lb/>affectis animal protinus aut postmodum necessario interit.
+<lb/>Quae vero ad bene vivendum oculi, pedes, manus et
+<lb/>caetero partes. His namque affectis vivit quidem animal,
+<lb/>sed feliciter minus vivit.</p>
+</div>
+<div type="textpart" subtype="book" n="135">
+
+
+<p rend="indent">Morbus est primorum quae fecundum naruram
+<lb/>consistunt corporum intemperies. Vel: eorum quae
+<lb/>nobis, insunt. humorum intemperies, Vel: naturalium faunitatum
+<lb/>impeditio. Veli eversio corporis. ab eo qui fecuudum
+<lb/>naturam est. statu in eum qui, praeter naturam.
+<lb/>Vel morbus est primorum intemperies in qua siccum aut
+<lb/>frigidum aut calidum.. aut humidum exsuperat; M orbo- sissimae
+<lb/>corporum constitutiones ex contrariis temperamento
+<lb/>constant partibus, quemadmodum optimae corporumsitucturae
+<lb/>sunt ex organicarum. portium .symmetria et. e.x.sitni-..
+<lb/>tarium . proba temperie,</p>
+</div>
+<div type="textpart" subtype="book" n="136">
+
+
+<p rend="indent">Affectio est. interturbatioalicujus quj se-,
+<lb/>eundum naturam est actionis morbosa aut quarundam. aut
+<pb n="19.387"/>
+<lb/>unius aut omnium naturae functionum, Quidam vero ut.
+<lb/>Herophilei hoc modo. Affectio -est quae non sempe- eo-r
+<lb/>dem, tempore solvitur, fed in breviore quandoque interdpm
+<lb/>.et longiore.<space type="tab">    </space>.a</p>
+</div>
+<div type="textpart" subtype="book" n="137">
+
+
+<p rend="indent">Aegritudo est- affectio morbosa aut. totius
+<lb/>corporis aut partis. Ad haec. morborum alii quidem conlinui
+<lb/>sunt-; alii intermittentes, aiii acuti, ali. peracuit
+<lb/>aiii diuturni. Continui sunt hemitritaeus , typhodes quaer
+<lb/>ita vocatur et febris ardens. Intermittentes hi sunt; quotidiana,
+<lb/>tertiana, quartana, quintana et his similes. Acuti
+<lb/>funt pbrenitis, lethargus, pleuritis, peripneumonla, febres
+<lb/>ardentes et tertianae continuae. Peracuti funt fynanche, .
+<lb/>cynanche, apoplexia, cholera-, tetanus et his siciles.
+<lb/>Diuturni funt tabes, epilepsia, arthritis,neph vitis, hydrops; .
+<lb/>marcor et his consimiles. Morborum praeterea quidam
+<lb/>acuti funt et continui ut ardentes febres, phrenitides,
+<lb/>pleuritides ; hi enim acuti et continui. sunt.. . . ..Non r ulli
+<lb/>neque acuti neque continui ut diuturni morbi. Quidam
+<pb n="19.388"/>
+<lb/>vero acuti quidem fiunt, non autem continui ut tertianae
+<lb/>febres. Quidam denique continui quidem funi, non- autem
+<lb/>acuti ut hemitritaei et typhodes febres.</p>
+</div>
+<div type="textpart" subtype="book" n="138">
+
+
+<p rend="indent">Febrium status quatuor funi quos etiam
+<lb/>tempora nominant, insultus, incrementum, vigor, declinatio.</p>
+</div>
+<div type="textpart" subtype="book" n="139">
+
+
+<p rend="indent">Hippocrates novem morborum disserentias
+<lb/>novit, acutum, peracutum, malignum, diuturnum;
+<lb/>medium, exitialem, salutarem , periculosum, periculi experient.
+<lb/></p>
+</div>
+<div type="textpart" subtype="book" n="140">
+
+
+<p rend="indent">Morbus acutus est qui et viribus et
+<lb/>fpecie magnus est et periculosus quique ut plurimum feptem
+<lb/>diebus judicatur. Aliter.. Acutus morbus est qui
+<lb/>magnus est et ad vigorem celeriter pervenit: Vel ex Hippocrate.
+<lb/>Acutus morbus magnus et. periculosus morbus
+<lb/>est quique plurimos enecat. Aliter. Acutus morbus est is
+<lb/>qui facilem solutionem vel internecionem quantum in ipso
+<lb/>est habet.</p>
+</div>
+<div type="textpart" subtype="book" n="141">
+
+
+<p rend="indent">Morbus peracutus est affectus acuto vi et
+<lb/>fpecie major et difficilior qui fere septem diebus judica-</p>
+<p>. r tur;
+<pb n="19.389"/>
+<lb/>hunc etiam acutissimum appellare consuevit Hippocrates..
+<lb/>Aliter. . Peracutus morbus is est. qui statim in
+<lb/>summo vigore v.get; per statim autem circa primum.quaternarium
+<lb/>vel paulo post intelligendum. Aliter. Morbus ,
+<lb/>peracutus est qui septimum diem non transgreditur, sest
+<lb/>aut in eo aut etiam maturius judicatur.</p>
+</div>
+<div type="textpart" subtype="book" n="142">
+
+
+<p rend="indent">Malignus morbus est qui facultate quidem
+<lb/>magnas est et difficilis, specie vero debilis neque statuta
+<lb/>judicationis habet tempora. Aliter; malignus morbus voeatur
+<lb/>qui aegris periculum minatur nec spem salutis adimit.</p>
+</div>
+<div type="textpart" subtype="book" n="143">
+
+
+<p rend="indent">Morbus diuturnus est qui ru -pejus mutatur
+<lb/>ac melius; in mensibus annisque judicatur aut etiam cum
+<lb/>homine interit.</p>
+</div>
+<div type="textpart" subtype="book" n="144">
+
+
+<p rend="indent">Medius morbus qui inter diuturnum et acutum
+<lb/>est ; is quoque in melius ac deterius commeat atque
+<lb/>in sexaginta fere aut octoginta diebus judicatur.
+</p>
+<pb n="19.390"/>
+</div>
+<div type="textpart" subtype="book" n="145">
+
+
+<p rend="indent">Exitialis est morbus qui protius exitium
+<lb/>affert vel brevi vel plurimo tempore.<space type="tab">    </space>. .</p>
+</div>
+<div type="textpart" subtype="book" n="146">
+
+
+<p rend="indent">Salutaris morbus est - qui nunquam fit peremptorius
+<lb/>quantum pensu, quoniam multoties ob errorem
+<lb/>periculosus evadit. .<space type="tab">    </space>.</p>
+</div>
+<div type="textpart" subtype="book" n="147">
+
+
+<p rend="indent">Periculosus morbus est qui ad perniciem et
+<lb/>falutem aequale habet momentum-; is anceps quoque- dici
+<lb/>potest.</p>
+</div>
+<div type="textpart" subtype="book" n="148">
+
+
+<p rend="indent">Non periculosus vel securus morbus est qui
+<lb/>temper ad falutem - quantum in ipso est vergit ittemque
+<lb/>facultate cum salutari esu</p>
+</div>
+<div type="textpart" subtype="book" n="149">
+
+
+<p rend="indent">Morbus fpecie - magnus est ut vulnus in
+<lb/>carnosis locis multum (patri occupans ; magnus autem re
+<lb/>vel effectu ut punctura in nervo vel mufculo quae parva
+<lb/>vilui apparet, facultate autem magna esu .</p>
+</div>
+<div type="textpart" subtype="book" n="150">
+
+
+<p rend="indent">Infirmitas feti adversa valetudo morbus est
+<lb/>inveteratus multa cum imbecillitate. xel : infirmitas- est
+<lb/>morbus imbecillis vires diminuens.
+</p>
+<pb n="19.391"/>
+</div>
+<div type="textpart" subtype="book" n="151">
+
+
+<p rend="indent">Morbus permanens est dispositio praeter
+<lb/>naturam corporum vitam participantium quem affectum
+<lb/>esse ajunt Herophilei qui nec facile solvitur neque facile
+<lb/>dimovetur susque esse ru humidis caulam.</p>
+</div>
+<div type="textpart" subtype="book" n="152">
+
+
+<p rend="indent">Morbi fporadici sunt qui omni tempore et loco
+<lb/>exoriuntur. Aliter. Morbi fporadici sunt qui separatim
+<lb/>quemque invadunt. Alio modo. Morbi dispersi dimersi
+<lb/>non ejusdem generis alii aliis contingentes.</p>
+</div>
+<div type="textpart" subtype="book" n="153">
+
+
+<p rend="indent">Vernaculi morbi funt qui quibusdam in locis
+<lb/>frequentius affluunt. Aliter. Morbi vernaculi sunt qui
+<lb/>perpetuo regionem aliquam occupant.</p>
+</div>
+<div type="textpart" subtype="book" n="154">
+
+
+<p rend="indent">Vulgares morbi sunt qui temporibus qurbusdam
+<lb/>plures eodem in loco corripiunt.</p>
+</div>
+<div type="textpart" subtype="book" n="155">
+
+
+<p rend="indent">Pestilentia est morbus qui in omnes aut plurimos
+<lb/>grassatur ab aeris corruptela proveniens; quo fit
+<lb/>ut quamplurimi intereant. Fertur st quaedam hujusmodi
+<lb/>definitio. Pestilentia est communis assectus plurimorum
+<lb/>qui sub idem tempus per urbes nationesque acuta pericula
+<pb n="19.392"/>
+<lb/>mortesque infert acutas. Definire et hoc modo possumus.
+<lb/>Pestilentia est conversio aeris adeo ut nec- ordinem proprium
+<lb/>fervent anni tempora simulque plures ex eodem
+<lb/>morbo intereant. c</p>
+</div>
+<div type="textpart" subtype="book" n="156">
+
+
+<p rend="indent">Caula est quae in corpore aliquid efficit expersque
+<lb/>ipfa est corporis. Vel cauta est, ut tradunt pbilosophi,
+<lb/>alicujus rei effectrix aut cujus gratia aliquid fit.
+<lb/>Triplex autem causa est; alia quidem est .evidens; alia
+<lb/>vero antecedens; alia denique continens sieu conjuncta.</p>
+</div>
+<div type="textpart" subtype="book" n="157">
+
+
+<p rend="indent">Catssa evidens est quae peracto opere discessit,
+<lb/>quemadmodum canis quum momordit et scorpius quum
+<lb/>ictum inflixit et inustlo a fide quae tebrem molitur. Albenaeus
+<lb/>autem Attalensis sic inquit: caula .est ea quae sarit.;
+<lb/>haec autem est procatarctica. Aliter: causae evidentes
+<lb/>funi quae ante totam operis consummationem existunt
+<lb/>quasque nulla praecedit..</p>
+</div>
+<div type="textpart" subtype="book" n="158">
+
+
+<p rend="indent">Antecedens causa est- .quae ab evidente vel
+<lb/>comparatur veI adjuyatur conjunctamque antecedit. Nonnulli
+<pb n="19.393"/>
+<lb/>vero sic : antecedens cauta est qua praesente adest
+<lb/>effectus et augescente augetur et imminuta imminuitur
+<lb/>et fublata tollitur. .</p>
+</div>
+<div type="textpart" subtype="book" n="159">
+
+
+<p rend="indent">Cauta continens est quae praesens praefentem
+<lb/>servat morbum et sublata simul tollit ut calculus in
+<lb/>vesica, utr aquata, ut pterygium, ut encanthis atiaque
+<lb/>ejusmodi quae cautas coniunctas vocant, ut praeclarissimi
+<lb/>medici qui ea non in causarum dumtaxat, sed in affectuum
+<lb/>ratione ponunt.</p>
+</div>
+<div type="textpart" subtype="book" n="160">
+
+
+<p rend="indent">Causa perfecta feu per se finiens est ipsa
+<lb/>quae per fe finem facit.</p>
+</div>
+<div type="textpart" subtype="book" n="161">
+
+
+<p rend="indent">Coucaufa est quae cum alia pares obtinens
+<lb/>vires opus molitur, id vero facere fola per fe ipsis non
+<lb/>poterat.<space type="tab">    </space>.<space type="tab">    </space>.<space type="tab">    </space>. - .</p>
+</div>
+<div type="textpart" subtype="book" n="162">
+
+
+<p rend="indent">Adjutrix causa est quae opus quidem conficit,
+<lb/>sed aegre, quapropter alteri consonatus quo rem eonfequatur
+<lb/>facilius quam prompte obire feorfum nequit.</p>
+<p>t
+</p>
+<pb n="19.394"/>
+</div>
+<div type="textpart" subtype="book" n="163">
+
+
+<p rend="indent">Causae manifestae sunt quaecunque ex se ipsis
+<lb/>facientes agentesque sensu deprehenduntur. Aliqui hoc
+<lb/>modo. Manifestae sunt causae quae et apparent ipsae et
+<lb/>opus consentanee sibi fieri ostendunt.</p>
+</div>
+<div type="textpart" subtype="book" n="164">
+
+
+<p rend="indent">Non manifestae cautae funi quae non ex
+<lb/>feipsis ted per signa deprehenduntur quemadmodum obscurae,
+<lb/>quae neque ex seipsis neque ex aliis noscuntur.</p>
+</div>
+<div type="textpart" subtype="book" n="165">
+
+
+<p rend="indent">Ad tempus obscurae sunt quae detectae ex
+<lb/>fe ipfae non apparent et .adjunctae corporibus per signa
+<lb/>cognoscuntur. Vel sic. Pro tempore abditae sunt eae
+<lb/>quae absunt aliquamdiu ac rursus venire tub sensum valent.</p>
+</div>
+<div type="textpart" subtype="book" n="166">
+
+
+<p rend="indent">Significatio est signi idea vel est per signupt
+<lb/>vel per signa perceptio. Vel notatio est signum quod rem
+<lb/>minus patentem quampiam declarat.</p>
+</div>
+<div type="textpart" subtype="book" n="167">
+
+
+<p rend="indent">Signum.est rei quae contingere debet dignotio.
+<lb/>Nonnulli hoc pacto: signum est quo cognito aliud
+<pb n="19.395"/>
+<lb/>quidpiam ex ipfo deprehenditur. Vel quod prius ignotum
+<lb/>nobis erat cognoscitur ac percipitur.</p>
+</div>
+<div type="textpart" subtype="book" n="168">
+
+
+<p rend="indent">Pathognomonicum seu affectum notans est
+<lb/>tum interiorum tum exteriorum significatio. Vel .passiognomonicum
+<lb/>est signum ex quo affectus dignoscitur. vel:
+<lb/>pathognomonicum est quod affectionis speciem significati</p>
+</div>
+<div type="textpart" subtype="book" n="169">
+
+
+<p rend="indent">Praenotio eorum quae evenire debent fcientia
+<lb/>esu Aut: praenotio est: praescire quae corpori sunt
+<lb/>eventura. Prognosticum signum est ex quo futurum noscitur.</p>
+</div>
+<div type="textpart" subtype="book" n="170">
+
+
+<p rend="indent">Praedictio est futuri praenotio praenunclatioqne.
+<lb/></p>
+</div>
+<div type="textpart" subtype="book" n="171">
+
+
+<p rend="indent">Syndrome vel concursus est congressus fymplumatum.
+<lb/>Vel symptomatum collectio. Vel symptomatum
+<lb/>cumulus omnibus liquido apparentium.</p>
+</div>
+<div type="textpart" subtype="book" n="172">
+
+
+<p rend="indent">Symptoma est affectus accessorium vel contectariu
+<lb/>m.</p>
+</div>
+<div type="textpart" subtype="book" n="173">
+
+
+<p rend="indent">Auxiliaria signa sunt ea ex quibus curationis
+<lb/>quae in ipsis observata est commovemur.
+</p>
+<pb n="19.396"/>
+</div>
+<div type="textpart" subtype="book" n="174">
+
+
+<p rend="indent">Auxilium est quod hominibus ad salutem
+<lb/>admovetur ex quantitate , .qualitate, ordine atque occasione
+<lb/>constans.<space type="tab">    </space>.</p>
+</div>
+<div type="textpart" subtype="book" n="175">
+
+
+<p rend="indent">Curatio est morbi sublatio quae jam facta
+<lb/>est, non quae adhuc fit. Vel curatio est ordo auxiliorum
+<lb/>consequentiam bibentium. Vel: -opportunitas et tempus
+<lb/>et ordo emendationis obeundae. Vel: temporis commoditas
+<lb/>in qua opem ferimus laborantibus.</p>
+</div>
+<div type="textpart" subtype="book" n="176">
+
+
+<p rend="indent">Occasio .est commodae functionis tempus
+<lb/>praeceps et commodi u fas rerum agendarum.</p>
+</div>
+<div type="textpart" subtype="book" n="177">
+
+
+<p rend="indent">Demonstrativum signum, est quod primario,
+<lb/>in abditae alienius rei consequentis deprehensionem per
+<lb/>fe ducit.<space type="tab">    </space>- .</p>
+</div>
+<div type="textpart" subtype="book" n="178">
+
+
+<p rend="indent">Commemorans .signum i ut ajunt, empirici
+<lb/>res quae apparens atque ex praevia observatione innotefcens
+<lb/>ad rei quae cognoscitur memoriam conducit.</p>
+</div>
+<div type="textpart" subtype="book" n="179">
+
+
+<p rend="indent">Praesentium signorum omnium praetentis
+<lb/>tigna funt pathognomonica omnia quae affectum demonstrant:
+<pb n="19.397"/>
+<lb/>haec enim quum fiunt et adsunt assectus quoque
+<lb/>permanent; quum vero cessant morbi quoque solvuntur.</p>
+</div>
+<div type="textpart" subtype="book" n="180">
+
+
+<p rend="indent">Praesentia praeteritorum signa sunt a
+<lb/>quibus praeteritum significatur ut facti prius ulceris cicatrix.</p>
+</div>
+<div type="textpart" subtype="book" n="181">
+
+
+<p rend="indent">Praesentia vero futurorum signa funt a
+<lb/>quibus futurum significatur ut cadaverosa facies mortis
+<lb/>signum esu</p>
+</div>
+<div type="textpart" subtype="book" n="182">
+
+
+<p rend="indent">Praeterita praeteritorum signa funt ut a
+<lb/>declinatione remissio decessionis morbi signum esu</p>
+</div>
+<div type="textpart" subtype="book" n="183">
+
+
+<p rend="indent">Praeterita praesentium signa sunt ut demolium
+<lb/>esse ab aspide inter exitialia cenferr. Quidam
+<lb/>vero ita definiunt: praeterita praesentium signa fiunt ut
+<lb/>tenue intestinum vulneratum inter exitialia esse vulnera.</p>
+</div>
+<div type="textpart" subtype="book" n="184">
+
+
+<p rend="indent">Praeterita vero futurorum signa funt. ut
+<lb/>confracto osse callum contrahente: callum enim id contrahere
+<lb/>oportet ad restitutionem. Nonnulli vero sic : praeterita
+<lb/>futurorum sunt ut ex capite dempto osse cicatricem
+<lb/>cavam fequuturam.
+</p>
+<pb n="19.398"/>
+</div>
+<div type="textpart" subtype="book" n="185">
+
+
+<p rend="indent">Supervenientia praesentium signa sunt ut .
+<lb/>in senibus sauciatum periclitari ex vulnere.</p>
+</div>
+<div type="textpart" subtype="book" n="186">
+
+
+<p rend="indent">Supervenientia vero succedentium signa
+<lb/>funt ut ex vulnere convulsio: non enim vulneratus vivit
+<lb/>praeterea quem convulsio. excepit.</p>
+</div>
+<div type="textpart" subtype="book" n="187">
+
+
+<p rend="indent">Febris est limati.. caloris ad fletum praeter
+<lb/>naturam eversio pulsibus et vehementioribus et frequentioribus
+<lb/>redditis. Vel: febris est cordis .arteriarumque
+<lb/>calor praeter naturam vitale robur laedens, qui ab
+<lb/>alto emergens tactui occursat ac maxime pro speciei. febris
+<lb/>ratione quaedam. ordinis perversitas pulsibus accedit.
+<lb/>Aliqui et hoc modo: febris. exsuperantia est caloris morbosi
+<lb/>fete potissimum ab alto efferentis cum pulsuum mntatione
+<lb/>in. frequentiorem ac vehementiorem. Quidam autem
+<lb/>sic; febris est naturalis spiritus ad calidiorem ac. sicciorem
+<lb/>statum degenerans.</p>
+</div>
+<div type="textpart" subtype="book" n="188">
+
+
+<p rend="indent">Febris continua est quae neque noctu
+<lb/>neque interdiu intermittit, remissiones vero, indutias et
+<pb n="19.399"/>
+<lb/>exacerbationes infert. Vel : continua febris est quae ad
+<lb/>integritatem antequam ex toto solvatur non desinit, etsi
+<lb/>remissio aliquo pensu perspicua appareat.</p>
+</div>
+<div type="textpart" subtype="book" n="189">
+
+
+<p rend="indent">Febris continens est ea quae peraeque
+<lb/>perdurat neque noctu neque interdiu intermittit; neque
+<lb/>remissiones neque exacerbationes inserti</p>
+</div>
+<div type="textpart" subtype="book" n="190">
+
+
+<p rend="indent">Febris ardens est quae cum fervore
+<lb/>multo fit nullam requiem corpori praebet, linguam assiccat,
+<lb/>denigrat, frigidae desiderium affert et cum magna respiratione
+<lb/>et calore corpus dolore afficit.</p>
+</div>
+<div type="textpart" subtype="book" n="191">
+
+
+<p rend="indent">Pemphigodes febris est quae per caloris^
+<lb/>intensionem phlyetidas pustulas lu ore excitat.</p>
+</div>
+<div type="textpart" subtype="book" n="192">
+
+
+<p rend="indent">Lipyria febris est ea in qua extrema et -su-;
+<lb/>perficies refrigerantur, uritur profundum, excretiones detinentur,
+<lb/>alpem sitientibus lingua est, pullus parvus atque
+<lb/>obfcurus; quasi- calor. se intro receperit.</p>
+</div>
+<div type="textpart" subtype="book" n="193">
+
+
+<p rend="indent">Eluens febris est quae cum alvi. fluere,saepe.- .
+<pb n="19.400"/>
+<lb/>vero et vomitibus refrigerationem infert fubitamque virium
+<lb/>dejectionem cum siti et insomnio et pulsuum pravitate.</p>
+</div>
+<div type="textpart" subtype="book" n="194">
+
+
+<p rend="indent">Astricta febris contraria est fluenti, excretlones
+<lb/>non .infert, pulsus magnos fervat, longiore spatio temporis
+<lb/>corpus emaciat.</p>
+</div>
+<div type="textpart" subtype="book" n="195">
+
+
+<p rend="indent">Auriginofa febris ea est quae similem latero
+<lb/>colorem molitur, jecur in sublime attollit, linguam assiccat,
+<lb/>cutis superficiem foedam fquallidam ac luteam redditi</p>
+</div>
+<div type="textpart" subtype="book" n="196">
+
+
+<p rend="indent">Pestilens febris est quae cum multo calore
+<lb/>sitim insanabilem invehat, bilis omnis generis vomitus,
+<lb/>foeditas alvi excretiones ac virulentas ut paludum grave-.
+<lb/>olentiae sint quae excernuntur similia, urinas multas ac
+<lb/>graveolentes, exanthemata, pulsus celeres, parvos ac.subobscuros
+<lb/>inducit.<space type="tab">    </space>.,</p>
+</div>
+<div type="textpart" subtype="book" n="197">
+
+
+<p rend="indent">Typhodes febris, quam nonnulli vapidam ac
+<lb/>madentem appellitant , est quae fusiores foetidos inducit.
+<pb n="19.401"/>
+<lb/>Vel:. t.yphodes febris est quae -cum stupore sit et intensam
+<lb/>cum furore mentis habet alienationem.<space type="tab">    </space>. ;r etc</p>
+</div>
+<div type="textpart" subtype="book" n="198">
+
+
+<p rend="indent">Torpida febris est quae cum capitis gravitate
+<lb/>provenit ver sanguinis per nares profluvio velexecetionis
+<lb/>suppressionem affert aut- ex necessitate molestam eorporis
+<lb/>- lapsionem.</p>
+</div>
+<div type="textpart" subtype="book" n="199">
+
+
+<p rend="indent">Horrida febris est quae calorem habet rigeri
+<lb/>permixtum. et pulsus admodum imbecillos; adeo ut
+<lb/>ne in tactum veniant fed qui velut intro recesserunt; in
+<lb/>ea venter tumefactus murmurat lingua, valde hunnda quid-Jam
+<lb/>acido simile habens, quo tanquam saliva circumluitur.</p>
+</div>
+<div type="textpart" subtype="book" n="200">
+
+
+<p rend="indent">Typus est iutensionum remissionumque ordinata
+<lb/>redditio. Vel ita:. typus est unius affectionis rempus
+<lb/>cui et accessio et .emissio ordinata contingit.</p>
+</div>
+<div type="textpart" subtype="book" n="201">
+
+
+<p rend="indent">Periodus est tempus in morbis ex intensione
+<lb/>et remissione constans. Vela periodus est similis ad idem
+<lb/>reditus vel motus. Vel sic : periodus est in morbis diuturnis
+<lb/>intensionis et rem issiouis -similis ad idem reditus.
+</p>
+<pb n="19.402"/>
+</div>
+<div type="textpart" subtype="book" n="202">
+
+
+<p rend="indent">Quotidiana febris- est quae; uniquoque die ac
+<lb/>nocte ut plurimum eadem hora mvadit.</p>
+</div>
+<div type="textpart" subtype="book" n="203">
+
+
+<p rend="indent">Tertiana est febris quae uno die vel nocte infultat,
+<lb/>fequente intermittit; tertio^ repetit-.</p>
+</div>
+<div type="textpart" subtype="book" n="204">
+
+
+<p rend="indent">Quartana est quae uno die vel una nocte in-vadit,
+<lb/>deinde biduum intermittit aut noctes-. duas, i quarto
+<lb/>vero rursum accedit..<space type="tab">    </space>- . i . sir</p>
+</div>
+<div type="textpart" subtype="book" n="205">
+
+
+<p rend="indent">llemitritaeus est, quam nos ex fenta fententia
+<lb/>enunciantis primo epidemiorum febrem continuam. acutam
+<lb/>appellamus,c quae prorsus quidem son intermittit,
+<lb/>scd dictu unum aut noctem. leniorem infert alterum graviorem.
+<lb/>At methodici hemitritae um parvam duabus constave
+<lb/>iutermissiouibus putaverunt. Mediam hemitritaeuui
+<lb/>vocitant quae tres intermissiones suscipit-.. Magnam denique
+<lb/>quae quatuor intermissiones complectitur. .</p>
+</div>
+<div type="textpart" subtype="book" n="206">
+
+
+<p rend="indent">Erraticae febres vocantur.. quae non praefinio
+<lb/>tae neo. recto ordine, sesi incerto statu proveniunt.</p>
+</div>
+<div type="textpart" subtype="book" n="207">
+
+
+<p rend="indent">Diastole est. elevatio ac: veluti excitatio cordis
+<pb n="19.403"/>
+<lb/>arteriarum, cerebri et meningum in longitudinem, Iatitnclinem
+<lb/>profundi tatemque in sensum tactus cadens ad elevationem.
+<lb/>Alii autem sic: diastole explicatio est ac veluti
+<lb/>eminentia cordis et arteriarum in longitudinem et latituclinem
+<lb/>sensilis ad elationem tactui.</p>
+</div>
+<div type="textpart" subtype="book" n="208">
+
+
+<p rend="indent">Systole est collectio et collapsus istorum quae
+<lb/>sensum quidem non movet, ceterorum bona ac consentanea
+<lb/>ratione deprehenditur.</p>
+</div>
+<div type="textpart" subtype="book" n="209">
+
+
+<p rend="indent">Palpitatio est elatio et submissio cedentis
+<lb/>corporis nec renitentis quae fit a spiritu nec perpetuo durat,
+<lb/>sed certis cietur temporibus. Alii sic: palpitatio est
+<lb/>elatio et submissio mnsculosorum corporum quae a spiritu
+<lb/>efficitur nec semper fit, sed statis temporibus. Alio modo;
+<lb/>palpitatio est motus involuntarius et invitus partium quae
+<lb/>dum palpitant attolluntur et deferuntur^ Vel: palpitatio
+<lb/>est dilatatio quidem praeter naturam et fit in omnibus
+<lb/>quae distendi natura possunt partibus.
+</p>
+<pb n="19.404"/>
+</div>
+<div type="textpart" subtype="book" n="210">
+
+
+<p rend="indent">Magnus pulsus est qui fit arteria multum sese
+<lb/>in Iongitudinem , profunditatem ac latitudinem diducente.</p>
+<p rend="indent">Parvus pulsus est qui contra in minimum spatium
+<lb/>longitudinis, profunditatis latitudinisque assurgente arteria
+<lb/>perficitur.</p>
+<p rend="indent">Medius est pulsus qui his ambobus interiacet secundum
+<lb/>longitudinem ac circularem dimensum , nimirum cincumserentia
+<lb/>quoque digitis sese ad proportionem offerente.</p>
+</div>
+<div type="textpart" subtype="book" n="211">
+
+
+<p rend="indent">Plenus pulsus est is qui sub tactum cadit distentus
+<lb/>adeo, ut ipsa quidem crassior facta videatur arteriae
+<lb/>tunica, maxime vero quod inter eam clauditur plenius
+<lb/>universum ac corpulentius deprehenditur.</p>
+<p rend="indent">Vacuus,.est pulsus in quo tum ipsius amplexus arteriae
+<lb/>gracilis omnino ampullaceusque est infusa quoque
+<lb/>materia vix perceptibilis atque exilis adeo, ut li quis etiam
+<lb/>digitis comprimat vacuitatis occurrat apprehensio.</p>
+<p rend="indent">Medius est pulsus qui commoderans inter plenum et
+<lb/>vacuum medius quique naturalis est;
+</p>
+<pb n="19.405"/>
+</div>
+<div type="textpart" subtype="book" n="212">
+
+
+<p rend="indent">Durus pulsus est in quo nervosa, ut quispiam
+<lb/>dixerit, arteria videtur ac rigida et tentus qui subest, fpiritus ;
+<lb/>quo fit ut ictus vim quandam repercutiendi habeat.</p>
+<p rend="indent">Mollis pulsus est qui duro contrarius arteriam remisiIam
+<lb/>mollemque obtinet ac spiritum qui inest exsolutum
+<lb/>ictumque leniorem.</p>
+<p rend="indent">Medius pulsus est qui inter durum ac. mollem commoderatus
+<lb/>fecundum naturam existit.</p>
+</div>
+<div type="textpart" subtype="book" n="213">
+
+
+<p rend="indent">Humidus pulsus est qui mollis, ut et contenta
+<lb/>in eo substantia mitis sit et humiditate quadam tactui
+<lb/>occurrat.<space type="tab">    </space>. . .n</p>
+<p rend="indent">Siccus pulsus est ita ut assumpta sit fubjecta humiditas
+<lb/>et siccae atque aeriae exhalationi permixta.</p>
+<p rend="indent">Medius pulsus est qui nec humidior nec siccior tactui
+<lb/>apparet sied commoderatus ac naturalis est.</p>
+</div>
+<div type="textpart" subtype="book" n="214">
+
+
+<p rend="indent">calidus pulsus est quum arteria vicluis partibus
+<lb/>calidior tangitur ut in febre hectica.
+<pb n="19.406"/>
+<lb/>Frigidus pulsus est in quo arteria frigidior sentitur.</p>
+<p rend="indent">Medius est qui . frigidi et calidi commoderationem
+<lb/>obtinet.</p>
+</div>
+<div type="textpart" subtype="book" n="215">
+
+
+<p rend="indent">Vehemens pulsus est qui et motum strenuum
+<lb/>habet et ictum molitur violentum.</p>
+<p rend="indent">Obscurus seu languidus est qui et viribus est exsolulis
+<lb/>et ictum imbecilliorem efficit.</p>
+<p rend="indent">Medius est qui proportionem quandam inter utrumque
+<lb/>horum servat.</p>
+</div>
+<div type="textpart" subtype="book" n="216">
+
+
+<p rend="indent">Celer pulsus est qui concisam habete tum
+<lb/>diastolen tum fystolen. Vel : celer pulsus est qui fit quum
+<lb/>modico tempore movetur arteria.</p>
+<p rend="indent">Tardus pulsus est qui tardam habet tum diastolen
+<lb/>tum fystolen. Vel : qui fit quum multo tempore movetur
+<lb/>arteria.</p>
+<p rend="indent">Medius est qui commoderatam habet tum diastolen
+<lb/>ilum fystolen. Vel: qui commoderatus fit quum commoderaso
+<lb/>tempore movetur arteria.
+</p>
+<pb n="19.407"/>
+</div>
+<div type="textpart" subtype="book" n="217">
+
+
+<p rend="indent">Frequens pulsus est quando parvo interposito
+<lb/>intervallo arteria distenditur.-- Veri. quum breve tempus
+<lb/>est inter diastolen et fystolen.</p>
+<p rend="indent">Rarus est quum interposito longo. intervallo arteria
+<lb/>distenditur. Vel ita; rarus est pulsus. quando quietis testpus
+<lb/>inter diastolen et fystolen mediam longum esu</p>
+<p rend="indent">Medius est qui inter frequentem .et rarum commoderatus
+<lb/>est. ^Vel.qui fit quum commoderato interposito
+<lb/>tempore arteria distenditur.</p>
+</div>
+<div type="textpart" subtype="book" n="218">
+
+
+<p rend="indent">Pulsus ordo est habitus .quidam in magniusdine
+<lb/>vel vehementia vel rhythmo ver alio quopiam dircrimine.
+<lb/>. n-;;....- r<space type="tab">    </space>- -<space type="tab">    </space>C....</p>
+<p rend="indent">ordinatus .pulsus est in. quo circuituum analogia. fervat
+<lb/>quendam ordinem. .Vel aliter: ordinatus r pulsus est
+<lb/>qui per circuitum par esu</p>
+</div>
+<div type="textpart" subtype="book" n="219">
+
+
+<p rend="indent">Confusio pulsus est instabililas differentiae
+<lb/>pulsuum. Nonnulli ita: inordinatus pulsus est qui in
+<lb/>percussionibus quibusdam interdum densior , interdum rarior
+<pb n="19.408"/>
+<lb/>est. Vel inordinatus est qui nullum circuituum ferAat
+<lb/>ordinem.</p>
+</div>
+<div type="textpart" subtype="book" n="220">
+
+
+<p rend="indent">Aequalitas pulsus est parilitas in quibusdam
+<lb/>pulsuum differentiis.</p>
+<p rend="indent">Aequalis pulsus est qui continenter par existit. Vel
+<lb/>in quo omnes pulsuum differentiae pares manent.</p>
+</div>
+<div type="textpart" subtype="book" n="221">
+
+
+<p rend="indent">Inaequalitas pulsus est imparilitas pulsuum
+<lb/>in quibusdam differentiis quae ipsis puIsibus accidunt. Aliqui
+<lb/>vero ita. Inaequalis puIsus est in quo nunc vehementiores
+<lb/>fiunt ictus nunc imbeciIliores. Rursus talli sic.
+<lb/>Inaequalis est pulsus qui parte quadam altior humilior
+<lb/>succidit eoque amplius perflata arteria ac diIatata parte
+<lb/>vero alia quasi pro capedinis quantitate angustiore evadente
+<lb/>vehementia inaequalis existit, tanquam parte quadam
+<lb/>arteriae ^violentiorem elationem faciat, quadam vero
+<lb/>submissam atque infirmiorem.</p>
+</div>
+<div type="textpart" subtype="book" n="222">
+
+
+<p rend="indent">Bacchius Herophilius rhythmus, inquit, est
+<pb n="19.409"/>
+<lb/>motus in temporibus certum obtinens ordinem. ^eno autem
+<lb/>Herophilius dixit: rythmus est ordo eorum temporum
+<lb/>in quibus amplificantur arteriae collutus ad ea in quibus
+<lb/>contrahuntur. Rectius autem hoc modo finias: rhythmus
+<lb/>partium temporis proportio est quae quendam ad pulsus
+<lb/>inter se habent respectum. Alius autem sic definivit:
+<lb/>rhythmus est habitus temporum in quibus diducuntur artersae
+<lb/>ad ea in quibus contrahuntur.</p>
+</div>
+<div type="textpart" subtype="book" n="223">
+
+
+<p rend="indent">Eurhythmns pulsus est qui rhythmum servat
+<lb/>proprium aetati, naturae temperamento,. anni temperati
+<lb/>ac reliquis omnibus circumstantiis.<space type="tab">    </space>. L..,,</p>
+<p rend="indent">Arrhythmus est qui nullum rhythmum servat cuique
+<lb/>rei proprium.</p>
+<p rend="indent">Cacorhythmus est pulsus qui rhythmum prave servat
+<lb/>eurhythmo contrarius.</p>
+</div>
+<div type="textpart" subtype="book" n="224">
+
+
+<p rend="indent">Pararhythmum pulsum vocamus qui qnadantenus
+<lb/>ad aetatem in qua consideratur prope accedit
+<lb/>babetqne rhythmum, fed non omnino eum qui illi conveniat.
+<pb n="19.410"/>
+<lb/>Heterorhythmum appellamus pulsum qui alterius
+<lb/>aetatis habet rhythmum. Ecrhythmus pulsus est qui nult
+<lb/></p>
+<p>lius aetatis aut alterius circumstantiae omnino rhythmum
+<lb/>retinet.</p>
+</div>
+<div type="textpart" subtype="book" n="225">
+
+
+<p rend="indent">Tremulus pulsus est qui ictum resert non
+<lb/>aequalem nec minime inconcussum fed perinde quasi qui
+<lb/>moveatur.</p>
+</div>
+<div type="textpart" subtype="book" n="226">
+
+
+<p rend="indent">Obliquatus pulsus est qui non constituta
+<lb/>in rectum arteria praeter situm editur.</p>
+</div>
+<div type="textpart" subtype="book" n="227">
+
+
+<p rend="indent">^lyurus est a situ quum partes quidem artersae
+<lb/>superiores in arctum coguntur, inferiores vero contra
+<lb/>ibi quidem dilatantur amplius, superiores autem contrahuntur.
+<lb/>Complures myuritontem vocitant quum ab
+<lb/>ictu majore adacto sequentes per subtractionem jugi decremento
+<lb/>minores peraguntur; nominantur et hac ratione
+<lb/>myuri quum efficiuntur pulsus ex frequentioribus rariores;
+<lb/>.vocatur et myurus ubi a ceteri in tardiorem demutatur.</p>
+<p rend="indent">CCXXVI. Dimotus est pulsus quum remissio quae
+<pb n="19.411"/>
+<lb/>videtur arteriae non perfacta obitur, sed cunctatio pro
+<lb/>subductionis aut inhibiti spiritus quantitate, dein refusio
+<lb/>perfacta debitae fit contractionis.</p>
+</div>
+<div type="textpart" subtype="book" n="228">
+
+
+<p rend="indent">Araneosus pulsus parvus est, non firmatus,
+<lb/>sed qui araneae modo levi ab aura agitante movetur.</p>
+</div>
+<div type="textpart" subtype="book" n="229">
+
+
+<p rend="indent">Intermittens pullus est quum in sy stolis
+<lb/>et dissidiis obeundis puIsus unius arteria tempus omittit.
+<lb/>Quidam ita : intermittens est pulsus in quo non ad duos
+<lb/>tantum sed ad tres veI etiam plures ictus diastolen lunam
+<lb/>vel duas veI plures relinquit arteria.</p>
+</div>
+<div type="textpart" subtype="book" n="230">
+
+
+<p rend="indent">Intercidens puIsus est quum inter duos
+<lb/>ictus qui ordine proprio concitantur, inde quidam ictus
+<lb/>medius intercidit.</p>
+</div>
+<div type="textpart" subtype="book" n="231">
+
+
+<p rend="indent">Deficiens pulsus dicitur in quo non ad
+<lb/>duos tantum arteria, sed ad tres etiam et ad plures ictus
+<lb/>immobilis perseverat. Alii hunc in modum. Deficiens est
+<lb/>qui a magnitudine incipiens ac vehementia magis ac magis
+<pb n="19.412"/>
+<lb/>subinde minuitur talisque quoad ullam habeat magnitudinem
+<lb/>myurus, vocitatur ; ubi autem sese submiserit ac
+<lb/>minor factus ut ad mipus declinaverit deficiens nuncupatur.</p>
+</div>
+<div type="textpart" subtype="book" n="232">
+
+
+<p rend="indent">Caprisans pulsus, .est ubi arteria quum se
+<lb/>distendisse apparuerit nec suerit omnino distenta ad alium
+<lb/>perculsum prius quam systoIes visionem praebeat praecipitantius
+<lb/>transiliit; secunda autem fuit percussio facta vedementior.:
+<lb/>, M t ; r- t mi e. .ri<space type="tab">    </space>Alu lassi</p>
+</div>
+<div type="textpart" subtype="book" n="233">
+
+
+<p>Recurrens pulsus est qui ad quantum excurrit
+<lb/>magnitudinis aut vehementiae in aliis rursus ad
+<lb/>tantumdem recurrit. .lusi t. .<space type="tab">    </space>. vj.v i</p>
+</div>
+<div type="textpart" subtype="book" n="234">
+
+
+<p rend="indent">Formicans pulsus est parvus, vacans, frequens
+<lb/>, obscurus, omnium ad extremum deductus. Aut
+<lb/>hoc modo : formicans est in quo circa digitos arteriae incumbentes
+<lb/>imqgor veluti formicae fit ambulantis; quamohrem
+<lb/>et parvus is est et obscurus.</p>
+</div>
+<div type="textpart" subtype="book" n="235">
+
+
+<p rend="hanging">Phrenitis est mentis delirium cum febre
+<lb/>r</p>
+<p>acuta ac floccorum collectu et mentis emotio et eorum
+<pb n="19.413"/>
+<lb/>quae secundum naturam sunt institutorum ipsius inferturbatio
+<lb/>et sapiendi oblivio; vel phrenum delirium continolim
+<lb/>cum tremore et vocis obscuritate et a maligna febre
+<lb/>maxima ex parte facta palpitatione.</p>
+</div>
+<div type="textpart" subtype="book" n="236">
+
+
+<p rend="indent">Lethargus est ^delatio in somnum inexpugnabilis
+<lb/>quae cum decoloratione et flatuoso oedemate
+<lb/>nec line ipsarum quoque solidarum partium ac puIsifici
+<lb/>spiritus imbeciIIitate provenit fere in obtusa febre ac
+<lb/>maligna. Fiunt vero lethargi partim affecto principio partiro
+<lb/>ex abscessu.</p>
+</div>
+<div type="textpart" subtype="book" n="237">
+
+
+<p rend="indent">Convulsio est assectus qui nervis ac musculis
+<lb/>accidit quum interdum corpus totum, interdum pars
+<lb/>ejus voluntatis in jussit trahitur.</p>
+</div>
+<div type="textpart" subtype="book" n="238">
+
+
+<p rend="indent">Tetanus est distentio rigiditasque in corpore
+<lb/>nervorum omnium et musculorum. Vel hunc in modum:
+<lb/>tetanus est convulsio in rectum quum collum ac
+<lb/>maxilIae trahuntur, dentes cohaerent neque annuere colIum
+<pb n="19.414"/>
+<lb/>potest nec renuere. Veta tetanus est quum partes
+<lb/>invitae in contraria trahuntur a musculis oppositis.</p>
+</div>
+<div type="textpart" subtype="book" n="239">
+
+
+<p rend="indent">Emprosthotonus est quum anterius trahi
+<lb/>tu r colium ac retro flecti non valet.</p>
+</div>
+<div type="textpart" subtype="book" n="240">
+
+
+<p rend="indent">Opisthotonos est quum retro trahitur neque
+<lb/>deflecti in partem anteriorem potest. Vel: opisthotonus
+<lb/>est convulsio et contentio in posteriora cervicis nimirum
+<lb/>annuere non vasculis.</p>
+</div>
+<div type="textpart" subtype="book" n="241">
+
+
+<p rend="indent">Epilepsia est invasio mentis ac sensoriorum
+<lb/>qua qui corripiuntur concidunt repente hi quidem cum
+<lb/>convulsione, illi vero citra convulsionem iisque insuper accidit,
+<lb/>ut spuma per os efferatur in remissione et declinatione
+<lb/>morbi.</p>
+<p>i -</p>
+</div>
+<div type="textpart" subtype="book" n="242">
+
+
+<p rend="indent">Catochus est mentis stupor cum corporis
+<lb/>totius rigiditate. Oatochi tres sunt species; primus somniculosus
+<lb/>lethargo proximus ; alter vigilans cui affinis tetanus
+<lb/>est et quae praefocatio uteri appellatur ; tertium genus
+<lb/>est catochi quem phreniticum non inerudite quis nomina
+<pb n="19.415"/>
+<lb/>veri t; fit enim ex mixtis inter se duobus morbis
+<lb/>catocho et phrenitide, quemadmodum et typhomania.</p>
+</div>
+<div type="textpart" subtype="book" n="243">
+
+
+<p rend="indent">Paralysis assectus est quo voluntarius motus
+<lb/>oblaeditur; is circa partes aut partem aliquam fit; perficitor
+<lb/>autem nervis musculisque affectis.</p>
+</div>
+<div type="textpart" subtype="book" n="244">
+
+
+<p rend="indent">Typhomania vel delirus lethargus vel lethargicum
+<lb/>delirium est. Vel sic: typhomania mixtus est
+<lb/>ex phrenitide et lethargo assectus.</p>
+</div>
+<div type="textpart" subtype="book" n="245">
+
+
+<p rend="indent">Apoplexia est detentio. mentis cum ereptione
+<lb/>sensuum et corporis resolutione. Item: apoplexia
+<lb/>abolitio est in nervis omnibus sensus et motus. Vel:
+<lb/>apoplexia sensus motusque privatio in toto corpore est cum
+<lb/>principalium actionum laesione. Conflatur autem a frigido
+<lb/>humore praecipuos cerebri ventriculos confertim opplente.
+<lb/>Praecipui vero ventriculi sunt posterior et medius.</p>
+</div>
+<div type="textpart" subtype="book" n="246">
+
+
+<p rend="indent">At apoplexia a paraplexia ut a parte totum
+<lb/>differt. Apoplectici namque prorsus etiam paraplectici
+<pb n="19.416"/>
+<lb/>sunt, paraplectici vero non omnino et apoplectici; disserunt
+<lb/>quoque eo quod sani mente paraplectici resoluti
+<lb/>parte una corporis sunt aut pluribus, apoplectici vero et
+<lb/>T is et mente et toto ; paraplectici demum dicuntur quibus
+<lb/>dextrae tantum partes aut sinistrae resolutione eIanguescunI.</p>
+</div>
+<div type="textpart" subtype="book" n="247">
+
+
+<p rend="indent">alania est alienatio mentis et evariatio a
+<lb/>rebus consuetis ac sanorum moribus sine fabre.</p>
+</div>
+<div type="textpart" subtype="book" n="248">
+
+
+<p rend="indent">MelanchoIia est assectus qui mentem laedit
+<lb/>non sine gravi animi molestia atque aversione a rebus
+<lb/>charissimis, fit line febre; nonnullis vero eorum si atra bilis
+<lb/>accesserit multa stomachum usque adeo insestat, ut et
+<lb/>evomatur simulque mens hoc modo vitietur.</p>
+</div>
+<div type="textpart" subtype="book" n="249">
+
+
+<p rend="indent">Cephalaea est assectus qui per quosdam
+<lb/>circuitus intoIerabiIem capitis dolorem affert; quocirca et
+<lb/>aures sonant et rubent oculi ac prominent; simul vero
+<lb/>distenduntur et ipsis aegrotis venae frontis et rubor in facie
+<lb/>est. Vel : cephalaea est aegre cedens cephalalgia ex
+<lb/>parvis causis maximas habens exacerbationes.
+</p>
+<pb n="19.417"/>
+</div>
+<div type="textpart" subtype="book" n="250">
+
+
+<p rend="indent">Dolor capitis non inveteratus cephalalgia
+<lb/>est; inveteratus vero cephalaea. Si caput doleat repente
+<lb/>obvia quaque de causa aut etiam per plures dies cephaIalgia
+<lb/>hic assectus nominatur: si vero longo tempore dolor
+<lb/>affligere consuevit et per longos frequentesque circuitus
+<lb/>et major ac gravior accedat aegre curationem admittens
+<lb/>cephalaeam appellamus.</p>
+</div>
+<div type="textpart" subtype="book" n="251">
+
+
+<p rend="indent">Heterocrania est ubi modo in parte sinistra capitis
+<lb/>modo in dextra dolor accedit ac quandoque intensiones
+<lb/>interdum remissiones insert.</p>
+</div>
+<div type="textpart" subtype="book" n="252">
+
+
+<p rend="indent">Vertiginosi appellantur tenebricosi quibus obtenebrationes
+<lb/>contingunt videturque iis circumferri caput
+<lb/>et lucis incerti ac vagi in tenebris splendores oculis obversari.
+<lb/>Vel tenebricosa vertigo est quum simul res conspectae
+<lb/>videntur circumvolvi et sensus visus repente dev.
+<lb/>perditur , quum aegroti sibi tenebras circumfundi existiment.
+<lb/>Quod contingit ore ventriculi a pravis humoribus
+<lb/>dem orso.
+</p>
+<pb n="19.418"/>
+</div>
+<div type="textpart" subtype="book" n="253">
+
+
+<p rend="indent">Catarrhus est multorum defluxus humorum
+<lb/>per palati foramina et nares qui descendentes subjecta
+<lb/>Ioca laedunt, adeo ut cum excretione humorum is quoque
+<lb/>qui simul excernitur spiritus strepitum quendam faciat.</p>
+</div>
+<div type="textpart" subtype="book" n="254">
+
+
+<p rend="indent">Coryza est is humor tenuis et crudus qui
+<lb/>per nares excernitur, catarrhus vero dicitur qui per palatum
+<lb/>defluit.</p>
+</div>
+<div type="textpart" subtype="book" n="255">
+
+
+<p rend="indent">Synanche est assectus colli acutus, difficilis,
+<lb/>qui aegrotum angit praefocatione. Aut ita: synanche est
+<lb/>phlegmone aliis extra collum ut partes tumescant, aliis
+<lb/>intra tonsillas ut simul partes quoque afficiantur spirabiIes
+<lb/>et aegra spiratio consequatur.</p>
+</div>
+<div type="textpart" subtype="book" n="256">
+
+
+<p rend="indent">Hydrophobia vel hydrophobus est assectus ex
+<lb/>canis morsu furentis qui fit cum potus aversione, convulsione
+<lb/>et singultu. His vero et delirium supervenit.</p>
+</div>
+<div type="textpart" subtype="book" n="257">
+
+
+<p rend="indent">Bulimus assectus est quo sit cibi desiderium
+<lb/>ex paucis intervallis; qui hoc detinentur et resolvuntur
+<pb n="19.419"/>
+<lb/>et concidunt et decolores fiunt; perfrigescunt iis extrema
+<lb/>corporis; premitur stomachus et pulsus obscurus fit.</p>
+</div>
+<div type="textpart" subtype="book" n="258">
+
+
+<p rend="indent">Phagedaena est constitutio qua multum appetentes
+<lb/>cibum fumentesque immodicum non ipsum retinent
+<lb/>lud ubi dejecerint rursus appetunt. Vel aliter: phagedaeuae
+<lb/>sunt multorum ciborum esus easque ipsas immoderatas
+<lb/>appetentius ex vitiatis humoribus fieri conceditur.</p>
+</div>
+<div type="textpart" subtype="book" n="259">
+
+
+<p rend="indent">Inflatio est quum spiritus vel flatus copiofior
+<lb/>factus in stomacho detinetur ipsumque cum eo ventriculum
+<lb/>distendit, quo fit ut distributio impediatur alimenti.</p>
+</div>
+<div type="textpart" subtype="book" n="260">
+
+
+<p rend="indent">Peripnenmonia est phlegmone pulmonis
+<lb/>cum febre acuta et spirandi difficultate; rubent autem et
+<lb/>in ipsis aegrotantibus malae.</p>
+</div>
+<div type="textpart" subtype="book" n="261">
+
+
+<p rend="indent">Phthisis est ulceratio pulmonis vel thoracis
+<lb/>vel faucium ut et tussiculae et^ debiles comitentur febres
+<lb/>et corpus contabescat.</p>
+</div>
+<div type="textpart" subtype="book" n="262">
+
+
+<p rend="indent">Differt phthisis a phthoë; phthisis enim quae
+<pb n="19.420"/>
+<lb/>communiter dicitur est omnis diminutio corporis ac colliquatio :
+<lb/>phthoë vero proprie dicitur corporis consumptio
+<lb/>ex ulcere ac demolitio. Dicta autem est a φ^ἰνειν quod
+<lb/>est diminui.</p>
+</div>
+<div type="textpart" subtype="book" n="263">
+
+
+<p rend="indent">Dyspnoici sunt in quibus spiritus velut per
+<lb/>angustas vias actus exspiratur inspiraturque. Vel: dyspnoea
+<lb/>est respirationis laesio quaedam.</p>
+</div>
+<div type="textpart" subtype="book" n="264">
+
+
+<p rend="indent">Asthma est affectus qui vehementem respirationis
+<lb/>accelerationem spirandique difficultatem infert
+<lb/>simulque aliquos sedere cogit ac resurgere.</p>
+</div>
+<div type="textpart" subtype="book" n="265">
+
+
+<p rend="indent">Pleuritis est dolor lateris ac succingentis
+<lb/>membranae adusque claviculam et summum humerum exporrectus
+<lb/>cum febre acuta minimeque intermittente cum
+<lb/>dolore pungente simul et horrore et spirationis dissicuItate
+<lb/>et tussi.</p>
+</div>
+<div type="textpart" subtype="book" n="266">
+
+
+<p rend="indent">Cardiaca affectio est innati roboris liquefactio
+<lb/>et languor. Fit plerumque prave affecto ore ventrienii
+<lb/>et stomacho cum sudoribus intolerandis ; sunt qui
+<pb n="19.421"/>
+<lb/>corde phlegmone Iaborante fieri affectum putaverint atque
+<lb/>ob hanc virium exsolutionem quod evenit malum cardiacam
+<lb/>vel affectionem vel syncopen nominarint.</p>
+</div>
+<div type="textpart" subtype="book" n="267">
+
+
+<p rend="indent">Cholera est assectus peracutus ac gravis
+<lb/>qui per vomitus in catarrhum id est destuxum protinus
+<lb/>hominem detulit aut ex alvi profluvio et multa excretione
+<lb/>in tormina atque non multo post in febres dysentericus
+<lb/>atque malignas vifceratos impellit, hecticos et marcidos
+<lb/>efficiens. Aut sic. Cholera est acutus assectus cum vomitibus
+<lb/>biliosis multis alvique dejectionibus furis quoque fe
+<lb/>contrahentibus ac frigescentibus extremitatibus; fiunt his
+<lb/>in aegris et pulsus minores obscurioresque.</p>
+</div>
+<div type="textpart" subtype="book" n="268">
+
+
+<p rend="indent">CoeIiaca affectio est alvi fluxio non receus
+<lb/>sed diuturna cum torminibus multis dejectionibus
+<lb/>corpore simul marcescente.<space type="tab">    </space>a</p>
+</div>
+<div type="textpart" subtype="book" n="269">
+
+
+<p rend="indent">Diarrhoea copiosior fluxio est alvi diuturna
+<lb/>sine phlegmone et ulceratione. t</p>
+</div>
+<div type="textpart" subtype="book" n="270">
+
+
+<p rend="indent">Dysenteria est intestinorum exulceratio cum
+<pb n="19.422"/>
+<lb/>phlegmone et cruentorum aut faeci similium strigmentorum
+<lb/>excretione non fine alvi intestinorumque morsu ac cruciatu.</p>
+</div>
+<div type="textpart" subtype="book" n="271">
+
+
+<p rend="indent">Teinesmus est affectus partes inseIiores rectumque
+<lb/>ipsum intestinum ita obsidens, ut exsurrectiones
+<lb/>cupiditatesque desidendi plures, paucae vero excretiones
+<lb/>fiant. Vel ut alii: teinesmus est recti intestini mordicatio
+<lb/>quam biliosi acresque humores faciunt cum exstarectione
+<lb/>cerebra cupiditateque egerendi, tametsi perpauca
+<lb/>excernuntur.</p>
+</div>
+<div type="textpart" subtype="book" n="272">
+
+
+<p rend="indent">Leienteria est dysenteriae magna ex parte
+<lb/>comes assectus, quando ob factas ex ulceribus cicatrices
+<lb/>spissioribus, laevioribus indolentioribusque redditis intestinis
+<lb/>necesse est ut cibi prius quam assumpti concoquantur,
+<lb/>ocius ad exteriores decurrant utique impromiscui, incocti,
+<lb/>quales ingesti fuere. Alii vero sic. Leienteria est tota
+<lb/>simul celerrimaque transmissio ciborum quum tales excreti
+<lb/>sunt quales devorati.</p>
+</div>
+<div type="textpart" subtype="book" n="273">
+
+
+<p rend="indent">Colica affectio constitutio est coli intestini
+<pb n="19.423"/>
+<lb/>diuturna in qua spatiis temporis interjectis cruciatus intolerabiles
+<lb/>dissicultatesque respirandi, sudores perfrictionesque
+<lb/>adoriuntur.</p>
+</div>
+<div type="textpart" subtype="book" n="274">
+
+
+<p rend="indent">Volvulus est phlegmone intestinorum quo
+<lb/>malo nec flatus infra nec deiectiones transmittuntur, tormina
+<lb/>sequuntur vehementia cruciatusque intolerabiles.</p>
+</div>
+<div type="textpart" subtype="book" n="275">
+
+
+<p rend="indent">IIepatici sunt quos jecoris dolor comitatur
+<lb/>diuturnus cum tumore et duritia et corporis decoloratione;
+<lb/>supervenit iis fabris ardens et lingua exarescit.</p>
+</div>
+<div type="textpart" subtype="book" n="276">
+
+
+<p rend="indent">Scirrho affectum jecur est quum ipsi tu- t
+<lb/>mor adest vehementer durus et tactui renitens nec doIorssicus.
+<lb/></p>
+</div>
+<div type="textpart" subtype="book" n="277">
+
+
+<p rend="indent">Icterus est bilis refusio in cutem, quo fit
+<lb/>ut superficies tingatur luteaque fiat et vitietur cutis; albae
+<lb/>quoque ventris dejectiones fiunt eo morbo affectis.</p>
+</div>
+<div type="textpart" subtype="book" n="278">
+
+
+<p rend="indent">Lienosi sunt quibus contracta phlegmone
+<lb/>lienes ad naturae statum non redeunt nec phlegmone liberantur,
+<pb n="19.424"/>
+<lb/>sed permanet ipsis duritia ; quapropter et fluxionibus
+<lb/>per morbos infestantur, color vero et ipsis corporis
+<lb/>nativus permutatur.</p>
+</div>
+<div type="textpart" subtype="book" n="279">
+
+
+<p rend="indent">Scirrhus lienis est quum major lien et
+<lb/>durus admodum et renitens et tumore distentus fubjacet.</p>
+</div>
+<div type="textpart" subtype="book" n="280">
+
+
+<p rend="indent">Hydrops anasarca est quum corpus totum
+<lb/>intumuit oedemate atque humore circumluitur, pervertun-tur
+<lb/>et aegrotis pudenda, ciborum appetitus tollitur et febria
+<lb/>comitatur.</p>
+</div>
+<div type="textpart" subtype="book" n="281">
+
+
+<p rend="indent">Hydrops ascites est in quo venter et forotum
+<lb/>cruraque intumescunt, superiores autem partes extenuantur
+<lb/>et graciles fiunt</p>
+</div>
+<div type="textpart" subtype="book" n="282">
+
+
+<p rend="indent">Hydrops tympanias est quum in ventre
+<lb/>plus flatus invenitur humoris minus ac si quis pulsaverit
+<lb/>sonus exauditur.</p>
+</div>
+<div type="textpart" subtype="book" n="283">
+
+
+<p rend="indent">Nephritis est renum phlegmone cum dolore
+<lb/>vehementi, quandoque vero et urinae difficultate ; in
+<pb n="19.425"/>
+<lb/>qua fibrosa quaedam vel arenosa cum modico sanguine
+<lb/>excernuntur.</p>
+</div>
+<div type="textpart" subtype="book" n="284">
+
+
+<p rend="indent">Lithiasis est calculi generatio in vesica
+<lb/>per quem urinae excretio prohibetur. Alio modo: lithiasis
+<lb/>est assectus. qui distentiones affert vesicae; simul vero et
+<lb/>imus venter distenditur nec raro ad praeputium ea distentio
+<lb/>pervenit. Succedunt iis et urinae suppressiones utique
+<lb/>quum provectus lapis vias excrementi intercluserit.</p>
+</div>
+<div type="textpart" subtype="book" n="285">
+
+
+<p rend="hanging">Stanguria est excretio urinae guttatim
+<lb/>-<space type="tab">    </space>is t A t</p>
+<p>destillantis. Vel: stranguria assectus vocatur, quum quis
+<lb/>paucam urinam continenter excernit.</p>
+</div>
+<div type="textpart" subtype="book" n="286">
+
+
+<p rend="indent">Dysuria est difficultas ac molestia mingendi ;
+<lb/>stranguria vero quae guttatim fit mixtio.</p>
+</div>
+<div type="textpart" subtype="book" n="287">
+
+
+<p rend="indent">Ischuria absoluta prorsus urinae suppressio
+<lb/>est quae periculum affert. Octo vero modis supprimitur
+<lb/>aut retinetur urina, phlegmone , scirrho, sanguinis
+<lb/>grumo, resolutione, calculi procidentia, renum sympatina,
+<lb/>ulceratione, calculo.
+</p>
+<pb n="19.426"/>
+</div>
+<div type="textpart" subtype="book" n="288">
+
+
+<p rend="indent">Fiunt in renibus calculi quando in
+<lb/>corporibus illis humorum crassiorum copia cum febrili calore
+<lb/>coluerit. Vel aliter. Procreantur in renibus calculi
+<lb/>ubi collecta in iis cum proportionali febre crassiorum humorum
+<lb/>copia fuerit a qua fup crassati ad calculi transeunt
+<lb/>generationem.</p>
+</div>
+<div type="textpart" subtype="book" n="289">
+
+
+<p rend="indent">Gonorrboea est excretio feminis morbum
+<lb/>inserens cum quo tabescit corpus decoloraturque : fit
+<lb/>malum hoc vasorum seminalium robore soluto adeo ut
+<lb/>quodam modo debilibus ipsis factis semen non retineatur.</p>
+</div>
+<div type="textpart" subtype="book" n="290">
+
+
+<p>Satyriasis est assectus cum pudendi tentigine
+<lb/>simul se tendentibus ejus particulis; sunt quibus et
+<lb/>feminis ejaculatio cum voluptate fiat; hi vero mente exr
+<lb/>v<space type="tab">    </space>-<space type="tab">    </space>. sal. Is . . ... lud</p>
+<p>turbantur, nervorum tensio et seminis fili</p>
+</div>
+<div type="textpart" subtype="book" n="291">
+
+
+<p rend="indent">Ischias est coxendicis dolor diuturnus nec
+<lb/>solutu facilis. Aut sic: ischias est morbus validum dolorem
+<pb n="19.427"/>
+<lb/>coxae per circuitum inferens qui dolor veI usque ad
+<lb/>poplitem et suram descendat.</p>
+</div>
+<div type="textpart" subtype="book" n="292">
+
+
+<p rend="indent">Arthritis est phlegmone stabilis circa articulos
+<lb/>consistens, dolorem ingerens vehementem nervis nimirum
+<lb/>affectis.</p>
+</div>
+<div type="textpart" subtype="book" n="293">
+
+
+<p rend="indent">Podagra est assectus qui circa pedes oritur
+<lb/>et dolorem movet affectis nervis idque aliis cum ardore
+<lb/>aliis cum algore.</p>
+</div>
+<div type="textpart" subtype="book" n="294">
+
+
+<p rend="indent">Scelotyrbe species est paralyseos qua quis
+<lb/>rectus ambulare non potest et latus alias in rectum quandoque
+<lb/>sinistrum in dextrum aut dextrum in sinistrum circomfert,
+<lb/>interdum quoque pedem non attollit, sed attrahit
+<lb/>velut iis qui magnum quid adscendunt.</p>
+</div>
+<div type="textpart" subtype="book" n="295">
+
+
+<p rend="indent">Perosis est privatio interturbatione naturalis
+<lb/>functionis aut alicujus partis mutilatio.</p>
+</div>
+<div type="textpart" subtype="book" n="296">
+
+
+<p rend="indent">Lepra est cutis mutatio in habitum qui
+<lb/>praeter naturam sit cum asperitate et pruritibus doloribusque
+<pb n="19.428"/>
+<lb/>nonnunquam et squamis decidentibus interdum autem
+<lb/>secus; interdum plures etiam corporis partes depascitur..,</p>
+</div>
+<div type="textpart" subtype="book" n="297">
+
+
+<p>Elephas est assectus qui .cutem crassam ale
+<lb/>que inaequabilem reddit, lividior adest tum cuti tum oculorum
+<lb/>albis ; extenduntur partes manuum ac pedum fum.mae
+<lb/>ex quibus lanies livida et foetida emanat.</p>
+</div>
+<div type="textpart" subtype="book" n="298">
+
+
+<p rend="indent">Impetigo est summae cutis asperitas cum
+<lb/>multa prurigine.</p>
+</div>
+<div type="textpart" subtype="book" n="299">
+
+
+<p rend="indent">Phlegmone in utero est quae cum veutris
+<lb/>atque inguinum cruciatu ac febribus fit, qua. et fineipiris
+<lb/>labor et tunsionum contractio adest. et oculorum dolor.</p>
+</div>
+<div type="textpart" subtype="book" n="300">
+
+
+<p rend="indent">Abscessus est in utero .quum intensus est
+<lb/>dolor pulsatque et usque ad imum ventrem..et inguina ac
+<lb/>lumbos pertingit et febres adoriuntur.</p>
+</div>
+<div type="textpart" subtype="book" n="301">
+
+
+<p rend="indent">Uteri suffocatio est assectus qui fit per uteri
+<lb/>adfcenfum vel defcenfum vocisque delictum affert;. quare
+<lb/>nec manifesta iis respiratio fit. et attolluntur hypochondria,
+<lb/>pulsum hae quoque obscurum ac tardum habenti
+</p>
+<pb n="19.429"/>
+</div>
+<div type="textpart" subtype="book" n="302">
+
+
+<p rend="indent">Muliebris fluor est humorum defluxus .per
+<lb/>uterum ad multum tempus perdurans qui ipsi ab --exeredione
+<lb/>fit,: Albus fluor est quum alba funt quae excernuntur
+<lb/>, apparent tumores in facie, partes quoque sub oculis
+<lb/>intumescunt, nonnullis vero et venter et crura. -Rufus
+<lb/>fluor est quum ftrbrusa excretio est doloresque in lumbis
+<lb/>nafcuntur atque in inguinibus. Fluor ruber est quando
+<lb/>tale id manet ♃uod excernitur , qualis sanguis jugulatae
+<lb/>recens victimae apparet; excidunt sanguinis grumi, dolor
+<lb/>habet et ardor ac stridor ; dolor quoque ad ipfa pudenda
+<lb/>et imum ventrem. Niger fluor est quum nigrae excretiones
+<lb/>prodeunt, corpus aegre spirat exhalatque et in pudenda
+<lb/>dolor incumbis et extenuantur mulieres.</p>
+</div>
+<div type="textpart" subtype="book" n="303">
+
+
+<p rend="indent">Erysipelas in utero est ubi uterus perinde
+<lb/>afficitur dolore atque ii qui intolerabiliter ab igne uruntur
+<lb/>ardorque ille in quibusdam alias ad alios uteri locos
+<lb/>transmigrat.<space type="tab">    </space>...<space type="tab">    </space>. μ. ,</p>
+</div>
+<div type="textpart" subtype="book" n="304">
+
+
+<p rend="indent">Scleroma uteri est tumor duriusculos qui
+<pb n="19.430"/>
+<lb/>in parte uteri aliqua nascitur sitque plerumque ex phlegmonis
+<lb/>quae diu permansere.</p>
+</div>
+<div type="textpart" subtype="book" n="305">
+
+
+<p rend="indent">Scirrhus in utero affectio est in ejus aliqua
+<lb/>parte ut sit durities renitens, tumens, inaequalis magnaque
+<lb/>ex Parte vacans dolose.</p>
+</div>
+<div type="textpart" subtype="book" n="306">
+
+
+<p rend="indent">Carcinoma in utero est tumor sine ulceratione
+<lb/>inaequalis, verrucosus.</p>
+</div>
+<div type="textpart" subtype="book" n="307">
+
+
+<p rend="indent">Pilosum novem sunt assectus, rhopalosis, Ilichophyia,
+<lb/>tbrausis, atrophia, ariditas, canities, fluxio, alopecia,
+<lb/>opina sis.</p>
+</div>
+<div type="textpart" subtype="book" n="308">
+
+
+<p rend="indent">Rhopalosis retentio est ac concretio summorussi
+<lb/>pilorum individua cum eo ut non amplius crescant.</p>
+</div>
+<div type="textpart" subtype="book" n="309">
+
+
+<p rend="indent">Dichophyïa est dividua summorum pilorum
+<lb/>concretio qua ipsi haud amplius crescunt.</p>
+</div>
+<div type="textpart" subtype="book" n="310">
+
+
+<p rend="indent">Thrausis est casus inaequabilis pilorum non
+<lb/>dissimilis iis qui forfice abscissi sunt.</p>
+</div>
+<div type="textpart" subtype="book" n="311">
+
+
+<p rend="indent">Atrophia est gracilitas eorum nimia qui nec
+<lb/>amplius augescant.
+</p>
+<pb n="19.431"/>
+</div>
+<div type="textpart" subtype="book" n="312">
+
+
+<p rend="indent">Ariditas lanuginosa eorundem superficies est
+<lb/>pulvere conspersis assimilis.</p>
+</div>
+<div type="textpart" subtype="book" n="313">
+
+
+<p rend="indent">Canities est pilorum ante legitimam aetatem
+<lb/>commutatio in album.</p>
+</div>
+<div type="textpart" subtype="book" n="314">
+
+
+<p rend="indent">Fluxus est pilorum defluvium quae tabefcentibns
+<lb/>magna ex parte atque ex diuturno morbo convalescentibus
+<lb/>evenit.</p>
+</div>
+<div type="textpart" subtype="book" n="315">
+
+
+<p rend="indent">Alopecia est mutatio coloris in albiorem
+<lb/>qua auri colorem reserantes pili radicitus decidunt.</p>
+</div>
+<div type="textpart" subtype="book" n="316">
+
+
+<p rend="indent">Ophiasis mutatio est colotis antedictae similis
+<lb/>ceterum ad majorem quam in illa pilorum densitatem
+<lb/>cum tortuosa denudatione.</p>
+</div>
+<div type="textpart" subtype="book" n="317">
+
+
+<p rend="indent">Fracturarum octo in capite funt disserentiae,
+<lb/>rhogme, eccope, engisoma, ecpiesma, camarosis, aposceparn
+<lb/>limus , thlalïna, apechema ; quidam vero thIasma
+<lb/>non admittunt et apechema rhogmae subiiciunt.</p>
+</div>
+<div type="textpart" subtype="book" n="318">
+
+
+<p rend="indent">Rhogme est ossis intercisio in superficie
+<lb/>recta et vel angusta vel sata.
+<pb n="19.432"/>
+<lb/>e,<space type="tab">    </space>l</p>
+</div>
+<div type="textpart" subtype="book" n="319">
+
+
+<p rend="indent">Eccope divisio est calvariae qua os laefum
+<lb/>refractum esu</p>
+</div>
+<div type="textpart" subtype="book" n="320">
+
+
+<p rend="indent">Engisoma pertusis est ossis quum pars assecta
+<lb/>in profundum descendit ac super illaesum os corruit.</p>
+</div>
+<div type="textpart" subtype="book" n="321">
+
+
+<p rend="indent">Ecpiefma calvae in multas partes diffractio
+<lb/>est simul intrusae ossis partes in imum decubuerint ac
+<lb/>membranam innixa suo premant.</p>
+</div>
+<div type="textpart" subtype="book" n="322">
+
+
+<p rend="indent">Aposceparnismus abscissio est ossis quum
+<lb/>ejus pars decussa vuluerando fuerit.</p>
+</div>
+<div type="textpart" subtype="book" n="323">
+
+
+<p rend="indent">Camarosis est ossis perruptio quum ex alterutra
+<lb/>resractum parte similem camerae figuram acceperit.</p>
+</div>
+<div type="textpart" subtype="book" n="324">
+
+
+<p rend="indent">Apagma est ossis superficiaria praecisio
+<lb/>aut etiam profunda in oppositis vulneris partibus.</p>
+</div>
+<div type="textpart" subtype="book" n="325">
+
+
+<p rend="indent">Thlasma est recessus ossis calvae in profundum
+<lb/>absque fractura fitque potissimum in puerili aetate,
+<lb/>planius vero quod dictum est intelliges si quod stanneis
+<lb/>vasis contingit contemplatus fueris.
+</p>
+<pb n="19.433"/>
+</div>
+<div type="textpart" subtype="book" n="326">
+
+
+<p rend="indent">Triplices oculis oboriuntur affectus phlegmonae
+<lb/>, fluxus , ulcerationes.</p>
+</div>
+<div type="textpart" subtype="book" n="327">
+
+
+<p rend="indent">Quae oculis- ulceratio nes oboriuntur earnm
+<lb/>differentiae sunt albor, nubecula, inustum, fossula, pustola,
+<lb/>albugo, carbunculus, muscipula suppuratio, unguis,
+<lb/>uva , haec cum percussu eveniunt, at absque percussu ulcerationis
+<lb/>assectus hi sunt, mydriasis, tabes, atrophia, nodividua,
+<lb/>suffusio, glaucoma, paralysis, conniventia, strabismus,
+<lb/>pinnula, encanthis, procidentia, hiatus, confusio.</p>
+</div>
+<div type="textpart" subtype="book" n="328">
+
+
+<p rend="indent">Phlegmone est tumor oculorum qui cum
+<lb/>rubore et calore multo et motu difficili ac punctionibus
+<lb/>oboritur.</p>
+</div>
+<div type="textpart" subtype="book" n="329">
+
+
+<p rend="indent">Fluxus est tenuium humorum decorius
+<lb/>involuntarius qui coerceri non potest.</p>
+</div>
+<div type="textpart" subtype="book" n="330">
+
+
+<p rend="indent">Ulceratio est ruptio circa corneam tunieam
+<lb/>quae vel ex ictu vel vehementi phlegmone oritur.</p>
+</div>
+<div type="textpart" subtype="book" n="331">
+
+
+<p rend="indent">Argemon est ulceratio quae in ocuIP nigro
+<lb/>alba apparet; in albo autem subrubrae.
+</p>
+<pb n="19.434"/>
+</div>
+<div type="textpart" subtype="book" n="332">
+
+
+<p rend="indent">Nephelium est caligo vel su persica ria
+<lb/>ulceratio in nigro. Vel: nubecula ulcus est superficlarmm
+<lb/>albugine longe minus et album.</p>
+</div>
+<div type="textpart" subtype="book" n="333">
+
+
+<p rend="indent">Epicauma est velut .ex igne crustata ulcerario
+<lb/>quae. nigro advenit neo permanet.</p>
+</div>
+<div type="textpart" subtype="book" n="334">
+
+
+<p rend="indent">Bothrium est cavum ulcus vel purum
+<lb/>in nigro.</p>
+</div>
+<div type="textpart" subtype="book" n="335">
+
+
+<p rend="indent">Phlyctis est abscessus in nigro humorem
+<lb/>continens cum phlegmoue et fluxu.</p>
+</div>
+<div type="textpart" subtype="book" n="336">
+
+
+<p rend="indent">Leucoma cicatrix est crassa et profunda
+<lb/>ulceri inducta.</p>
+</div>
+<div type="textpart" subtype="book" n="337">
+
+
+<p rend="indent">Myocephalum est exigua uvae tunicae
+<lb/>porrectio in nigro muscae capiti similis per ulcerationem
+<lb/>facta.</p>
+</div>
+<div type="textpart" subtype="book" n="338">
+
+
+<p rend="indent">Carbunculus est crustofa ulceratio cum
+<lb/>pastu et fluxu interdum quoque et bubonibus et febre.</p>
+</div>
+<div type="textpart" subtype="book" n="339">
+
+
+<p rend="indent">Suppuratio vel unguis est collectio puris
+<lb/>in nigro cum phlegmone fecundum iridem ungui consimilis.
+</p>
+<pb n="19.435"/>
+</div>
+<div type="textpart" subtype="book" n="340">
+
+
+<p rend="indent">confusio ruptio est tunicarum quae lu
+<lb/>profundo sunt aliquando ex ictu, aliquando spontanea cum
+<lb/>profusione humorum et pupillae alteratione.</p>
+</div>
+<div type="textpart" subtype="book" n="341">
+
+
+<p rend="indent">Mydriafis facultatis obscuratio visuriae est
+<lb/>turbatis humoribus.</p>
+</div>
+<div type="textpart" subtype="book" n="342">
+
+
+<p rend="indent">Phthisis oculi est pupillae diminutio cum
+<lb/>obscuratione.</p>
+</div>
+<div type="textpart" subtype="book" n="343">
+
+
+<p rend="indent">v Atrophia est parvitas totius oculi et pupiliae
+<lb/>cum obscuratione.</p>
+</div>
+<div type="textpart" subtype="book" n="344">
+
+
+<p rend="indent">Nyctalops est affectus dispositioque oculorum
+<lb/>sine manifesta causat sic autem affectis evenit ut
+<lb/>interdiu non cernant, noctu vero conspiciant.</p>
+</div>
+<div type="textpart" subtype="book" n="345">
+
+
+<p rend="indent">Glaucoma est naturalium humorum in
+<lb/>glaucum colorem mutatio.</p>
+</div>
+<div type="textpart" subtype="book" n="346">
+
+
+<p rend="indent">Staphyloma est quod ru pupillae loco consurgit
+<lb/>acino uvae simile.</p>
+</div>
+<div type="textpart" subtype="book" n="347">
+
+
+<p rend="indent">Procidentia est quum ab ictu aliquo violento
+<pb n="19.436"/>
+<lb/>aut strangulatione cum continua febre vel capitis
+<lb/>dolore prolapsus oculus suerit;</p>
+</div>
+<div type="textpart" subtype="book" n="348">
+
+
+<p rend="indent">Myopsis est affectus ab ortu contractus quo
+<lb/>propinqua cernimus remota vel parum vel nihil omnino.</p>
+</div>
+<div type="textpart" subtype="book" n="349">
+
+
+<p rend="indent">Strabismus est paralysis musculorum
+<lb/>oculi non omnino sed quorundam, ob quam causam vel
+<lb/>sursum vel deorsum vel in latera nuunt oculi.</p>
+</div>
+<div type="textpart" subtype="book" n="350">
+
+
+<p rend="indent">Hippus affectio est .ab ortu prodiens qua
+<lb/>instabiles fiunt oculi ac semper moventur ; utique motum
+<lb/>sustinentes in concussu aut tremore . assiduo consistentem :
+<lb/>hanc affectionem equum vocavit Hippocrates: assectus autem
+<lb/>est oculum firmantis musculi qui visuris basim insimmenti
+<lb/>complexus est.</p>
+</div>
+<div type="textpart" subtype="book" n="351">
+
+
+<p rend="indent">Chemosis est ambientis .oculum membranae
+<lb/>quod album quoque appellatur assectus albae carni persimilis.</p>
+</div>
+<div type="textpart" subtype="book" n="352">
+
+
+<p rend="indent">In palpebris angulisque oculorum hi -contrahuntur
+<lb/>affectus, scabies, pedicularis, hordeolum, grando,
+<pb n="19.437"/>
+<lb/>calcularis, aquula, pistris, afpredo, leporinus oculus, inversio,
+<lb/>rivulus, anchilops, uva.</p>
+</div>
+<div type="textpart" subtype="book" n="353">
+
+
+<p rend="indent">Scabies est summarum oculi palpebrarum aut
+<lb/>angulorum erosio cum pruritu, quam acerrima fluxio progignit.</p>
+</div>
+<div type="textpart" subtype="book" n="354">
+
+
+<p rend="indent">Phtheiriasis est scabies circa palpebrarum
+<lb/>radices quae squamas furfuri similes dimittit.</p>
+</div>
+<div type="textpart" subtype="book" n="355">
+
+
+<p rend="indent">Chalaxa tuberculum est in palpebra milii
+<lb/>magnitudine; eadem quoque est lithiasis.</p>
+</div>
+<div type="textpart" subtype="book" n="356">
+
+
+<p rend="indent">Hordeolum est humor concretus circa pat- .
+<lb/>pebram oblongior hordeo similis.</p>
+</div>
+<div type="textpart" subtype="book" n="357">
+
+
+<p rend="indent">Afpredo est durities et asperitas inaequalis
+<lb/>quae intra palpebras oritur.</p>
+</div>
+<div type="textpart" subtype="book" n="358">
+
+
+<p rend="indent">Rbaea est angulorum carnis absumptio
+<lb/>qua effluit lacryma.</p>
+</div>
+<div type="textpart" subtype="book" n="359">
+
+
+<p rend="indent">Trichiasis catus est palpebrarum insitorumque
+<lb/>iis pilorum ortus praeter naturam.
+</p>
+<pb n="19.438"/>
+</div>
+<div type="textpart" subtype="book" n="360">
+
+
+<p rend="indent">- Tres Trichiateos differentiae fiunt phalangosis,
+<lb/>catus, fubortus, nonnulli distichium, id est duplicem
+<lb/>ordinem superinvehunt.</p>
+</div>
+<div type="textpart" subtype="book" n="361">
+
+
+<p rend="indent">At distichia est alterius pilorum ordinis lu
+<lb/>palpebrae margine exortus praeter naturam.</p>
+</div>
+<div type="textpart" subtype="book" n="362">
+
+
+<p rend="indent">En cambis est exsuperantia carnis in tnagno
+<lb/>angulo.</p>
+</div>
+<div type="textpart" subtype="book" n="363">
+
+
+<p rend="indent">Anchilops tumor in angulo magno consurgens
+<lb/>atque humoris collectionem habens non perforatus
+<lb/>aut simul perforatus. Dictus est anchilops quod prope
+<lb/>oculum sit; ῶψ enim oculus est, ἄγχι vero prope.</p>
+</div>
+<div type="textpart" subtype="book" n="364">
+
+
+<p rend="indent">- Suffusio est cor : etio aquosi humoris quae
+<lb/>vitum magis minusve impedit. Differt suffusio a glaucomate
+<lb/>lum quod suffusio concretio sit diluti humoris, glaucoma
+<lb/>vero naturalium mutatio humorum in caesium colorem,
+<lb/>tum quod in glaucomate haud pronus in suffusione
+<lb/>aliquantulum cernant, f c</p>
+</div>
+<div type="textpart" subtype="book" n="365">
+
+
+<p rend="indent">Hydatis substratae superiori palpebrae
+<pb n="19.439"/>
+<lb/>pinguedinis augmentum est qua fluunt praeter naturam
+<lb/>oculi. -</p>
+</div>
+<div type="textpart" subtype="book" n="366">
+
+
+<p rend="indent">Lagophthatrnum est superioris palpebrae retractio
+<lb/>adeo ut oculum dum clauditur totum non contegat.</p>
+</div>
+<div type="textpart" subtype="book" n="367">
+
+
+<p rend="indent">Pterygium corporis excrescentia est quae
+<lb/>corneae tunicae inhaerescit.</p>
+</div>
+<div type="textpart" subtype="book" n="368">
+
+
+<p>Ectropion est fubcrta caro in palpebra
+<lb/>quae palpebram ipsam tua gravitate foras evertit, Everfio
+<lb/>nis autem cauta est aut adnascens caro aut resolutio aut
+<lb/>cicatricis obductio.<space type="tab">    </space>x</p>
+</div>
+<div type="textpart" subtype="book" n="369">
+
+
+<p rend="indent">Ptilofis est palpebram meatus ab acerrimo
+<lb/>fluxu.</p>
+</div>
+<div type="textpart" subtype="book" n="370">
+
+
+<p rend="indent">Staphyloma est nigri tunicae extensio
+<lb/>cum ardore arino uvae similis.</p>
+</div>
+<div type="textpart" subtype="book" n="371">
+
+
+<p rend="indent">S arco m a est carnis in narrnus praeter naturam
+<lb/>auctio. Est vero et polypus quoddam farcoma.
+<lb/>Porro dictum polypus. est a polypis piscibus; nam ut illi
+<lb/>multas habent propagines mollesque fiant atque augentur,
+<pb n="19.440"/>
+<lb/>ita is quoque affectus. Differt farcoma a polypo magnitudine
+<lb/>et opificia.</p>
+</div>
+<div type="textpart" subtype="book" n="372">
+
+
+<p rend="indent">Osaena est ulceratio in naribus profui .da
+<lb/>tetri odoris atque halitum emittens.</p>
+</div>
+<div type="textpart" subtype="book" n="373">
+
+
+<p rend="indent">Parotides abscessus fecundum aures sunt;
+<lb/>hos nonnulli Castores appellarunt; succedunt ut plurimum
+<lb/>febribus atque ab iis liberant.</p>
+</div>
+<div type="textpart" subtype="book" n="374">
+
+
+<p rend="indent">Leuce corporis in album colorem mutatio
+<lb/>est praeter naturam.</p>
+</div>
+<div type="textpart" subtype="book" n="375">
+
+
+<p rend="indent">Herpes est ulcus quod ex bilis exsulerantia
+<lb/>fit et depastionem facit. Aliter: sicrpes est qui ferpons
+<lb/>vocatur , ex ulceratio superficiei cutis quae ab acri
+<lb/>bile procreatur.</p>
+</div>
+<div type="textpart" subtype="book" n="376">
+
+
+<p rend="indent">Atb erema est tunica nervosis quae humorem
+<lb/>pulti similem continet.</p>
+</div>
+<div type="textpart" subtype="book" n="377">
+
+
+<p rend="indent">Steatoma est auctio pinguedinis praeter
+<lb/>naturam congesta.</p>
+</div>
+<div type="textpart" subtype="book" n="378">
+
+
+<p rend="indent">Prosiartesis longiorum est membranarum
+<lb/>ad vicina corpora applicatio.
+</p>
+<pb n="19.441"/>
+</div>
+<div type="textpart" subtype="book" n="379">
+
+
+<p rend="indent">Aneuryfma venosi vasis dilatatio est aut
+<lb/>dispersio spirituofae materiae tub carnem per dissultum.
+<lb/>fete distribuentis.</p>
+</div>
+<div type="textpart" subtype="book" n="380">
+
+
+<p rend="indent">Hyposphagma extra superficiem est persimile
+<lb/>vinici.</p>
+</div>
+<div type="textpart" subtype="book" n="381">
+
+
+<p rend="indent">Ganglium concretio est nervi praeter
+<lb/>naturam quae in unum corpus coaluit.</p>
+</div>
+<div type="textpart" subtype="book" n="382">
+
+
+<p rend="indent">Aphtha superficiaria est ulceratio quae in ore
+<lb/>gignitur: visitur autem haec in puerulis potissimum ulceratio.</p>
+</div>
+<div type="textpart" subtype="book" n="383">
+
+
+<p rend="indent">Phlegmone est tumor cum rubore et duritia
+<lb/>pulsitantes afferens dolores dicta quod affectus ea
+<lb/>locus veluti uratur aut tumor dolens ac renitens cum
+<lb/>rubore citra febrem. Vel: inflammatio est tumor dolens
+<lb/>durus, renitens, ex sanguineo humore tuum habens ortum.</p>
+</div>
+<div type="textpart" subtype="book" n="384">
+
+
+<p rend="indent">Erysipelas est ruhedo cum ignita inflammatione
+<lb/>febres interdum horroresque infereus. VeI
+<lb/>ignis faces est tumor rubens, dolorificus qui a bilioso tauguine
+<lb/>generationem obtinet.
+</p>
+<pb n="19.442"/>
+</div>
+<div type="textpart" subtype="book" n="385">
+
+
+<p rend="indent">carbunculus est ex magis melancholico
+<lb/>putrefacto sanguine rumor ulcerosus. Vel aliter: car bunculus
+<lb/>ulcus est erustosum cum multa ambientium corporum
+<lb/>incensione; qui ex calido. quidem fervore, materra vero.
+<lb/>ronsistentia crassa originem habet.</p>
+</div>
+<div type="textpart" subtype="book" n="386">
+
+
+<p rend="indent">Scirrhus ist tumor corporum cum duritia
+<lb/>et pondere et motus ac sensus difficultate.</p>
+</div>
+<div type="textpart" subtype="book" n="387">
+
+
+<p rend="indent">Oedema tumor est laxus ac moliis qui
+<lb/>premendo dolore vacat.</p>
+</div>
+<div type="textpart" subtype="book" n="388">
+
+
+<p rend="indent">Abscessus est corporum ex phlegmone
+<lb/>in pus transmutatio.</p>
+</div>
+<div type="textpart" subtype="book" n="389">
+
+
+<p rend="indent">Mutilatio est desectus particulae in
+<lb/>partu aliqua corporis.</p>
+</div>
+<div type="textpart" subtype="book" n="390">
+
+
+<p rend="indent">callus est substantia lapidosa, dura ac
+<lb/>renitens.</p>
+</div>
+<div type="textpart" subtype="book" n="391">
+
+
+<p rend="indent">Hydrocephalon est humoris aquosi aut faeculenti
+<lb/>sanguinis collectio in parte corporum aliqua eorum
+<lb/>quae caput concinnant.
+</p>
+<pb n="19.443"/>
+</div>
+<div type="textpart" subtype="book" n="392">
+
+
+<p rend="indent">Favus ulcus est assidua habens foramina ex
+<lb/>quibus humor melli. similis excernitur.</p>
+</div>
+<div type="textpart" subtype="book" n="393">
+
+
+<p rend="indent">Phagedaena est ulcus quod propinqua et
+<lb/>adjacentia erodit.</p>
+</div>
+<div type="textpart" subtype="book" n="394">
+
+
+<p rend="indent">carcinoma est tumor malignus et praedurus
+<lb/>sine ulcere a cancro animali dictus.</p>
+</div>
+<div type="textpart" subtype="book" n="395">
+
+
+<p rend="indent">Diouysifci sunt osseae eminentiae quae
+<lb/>prope tempora nascuntur; dicuntur autem et cornua a corurgeris
+<lb/>animalibus vocata.</p>
+</div>
+<div type="textpart" subtype="book" n="396">
+
+
+<p rend="indent">Teredo pertusio est ossis ex corruptione;
+<lb/>affectui nomen ab accidentibus foraminibus datum est
+<lb/>quasi teredo quaedam existat.</p>
+</div>
+<div type="textpart" subtype="book" n="397">
+
+
+<p rend="indent">Aden collectio sicca quaedam et carnosa
+<lb/>est vel camela convolutio.</p>
+</div>
+<div type="textpart" subtype="book" n="398">
+
+
+<p rend="indent">Struma caro est sicca quae non facile
+<lb/>solvitur.</p>
+</div>
+<div type="textpart" subtype="book" n="399">
+
+
+<p rend="indent">Bron.chocele tumor est gutturi adnascena
+<lb/>differtque ab eo qui in scroto progignitur.
+</p>
+<pb n="19.444"/>
+</div>
+<div type="textpart" subtype="book" n="400">
+
+
+<p rend="indent">Ancyle est eorum qui lu cervice aut art
+<lb/>ic utis tuus tendonum compressio qua functio interturbatur.</p>
+</div>
+<div type="textpart" subtype="book" n="401">
+
+
+<p rend="indent">Acrochordon verruca est vel eruptio orbicularem
+<lb/>angustamque obtinens basim</p>
+</div>
+<div type="textpart" subtype="book" n="402">
+
+
+<p rend="indent">Myrmecia tuberculum est asperum non angustam
+<lb/>habens basse.</p>
+</div>
+<div type="textpart" subtype="book" n="403">
+
+
+<p rend="indent">Thymus asperae carnis extuleratis est quae
+<lb/>esculentis thymis similis circa genitale ac sedem oritur.</p>
+</div>
+<div type="textpart" subtype="book" n="404">
+
+
+<p rend="indent">Gynaecomasthon subjectae mammis pinguedinis
+<lb/>incrementum est praeter naturam:</p>
+</div>
+<div type="textpart" subtype="book" n="405">
+
+
+<p rend="indent">ExompbaIon prominentia est umbilici quae
+<lb/>diversis ex causis oboritur.</p>
+</div>
+<div type="textpart" subtype="book" n="406">
+
+
+<p rend="indent">rEpiploomphalon est omenti in umbilicum
+<lb/>decursus.</p>
+</div>
+<div type="textpart" subtype="book" n="407">
+
+
+<p rend="indent">Enteromphalon esu intestini in umbilicum
+<lb/>decurfus.</p>
+</div>
+<div type="textpart" subtype="book" n="408">
+
+
+<p rend="indent">Hydromphalon coacervatio in umbilico est
+<lb/>lenti humoris qui fusi tunica quoque interdum continuatur.
+</p>
+<pb n="19.445"/>
+</div>
+<div type="textpart" subtype="book" n="409">
+
+
+<p rend="indent">Poromphalon est concretio tophi in umbilico.</p>
+</div>
+<div type="textpart" subtype="book" n="410">
+
+
+<p rend="indent">Sarcomphalort incrementum carnis praetor
+<lb/>naturam . est in umbilico vel mitis vel malignae.</p>
+</div>
+<div type="textpart" subtype="book" n="411">
+
+
+<p rend="indent">Pneumomphalon dilatatio est umbilici.</p>
+</div>
+<div type="textpart" subtype="book" n="412">
+
+
+<p rend="indent">In contecto est abscessus quum corporum quae
+<lb/>funt in profundo aut viscerum in pus fit mutatio.</p>
+</div>
+<div type="textpart" subtype="book" n="413">
+
+
+<p rend="indent">Phygetblon abscessus est nascens in inguine.</p>
+</div>
+<div type="textpart" subtype="book" n="414">
+
+
+<p rend="indent">Hypofpadias est affectus in quo glans colis
+<lb/>retracta est. Vel : affectus est in quo colis gtans impendet
+<lb/>et uretrae foramen substernitur.</p>
+</div>
+<div type="textpart" subtype="book" n="415">
+
+
+<p rend="indent">Lipodermus est tegentis glandem pelliculae
+<lb/>adeo ut distrahi non amplius possit. Quod autem tegit
+<lb/>glandem praeputium vel praeputii fumma vocatur.</p>
+</div>
+<div type="textpart" subtype="book" n="416">
+
+
+<p rend="indent">Phimus est meatuum naturalium praeclusio.
+<lb/>Phimi duae funt differentiae; vel enim ex natura fit vel
+<lb/>postea gignitur ulceratione antegressa.</p>
+</div>
+<div type="textpart" subtype="book" n="417">
+
+
+<p rend="indent">Paraphimosis est quum retracto glanuis
+<lb/>nervo praeputium deduci praeterea nequit.
+</p>
+<pb n="19.446"/>
+</div>
+<div type="textpart" subtype="book" n="418">
+
+
+<p rend="indent">Peritome ablatio est cutis glandem obtegentis.</p>
+</div>
+<div type="textpart" subtype="book" n="419">
+
+
+<p rend="indent">Rhagas divisio est labra obtinens callo
+<lb/>indurata.</p>
+</div>
+<div type="textpart" subtype="book" n="420">
+
+
+<p rend="indent">Haemorrhois dilatatio est valorum quae fiedem
+<lb/>contexunt dicta quod tanguis per eam fluat. D.fferentiae
+<lb/>quinque fiunt haemorrhoidum a magnitudine, muititudine,
+<lb/>figura, loco , constitutione. A magnitudine quod
+<lb/>aliae parvae sint , aliae magnae , aliae mediae. A multitudine
+<lb/>quod in aliis una, plures in aliis, in quibusdam
+<lb/>vero pauciores consistam. A figura quod nonnullae angusta,
+<lb/>quaedam lata sint basi. A loco quod quaedam in ano
+<lb/>quaedam. in fphyuctere , quaedam in recto sunt intestino.
+<lb/>V constitutione quoniam aliae mites sunt, aliae malignae.</p>
+</div>
+<div type="textpart" subtype="book" n="421">
+
+
+<p rend="indent">condyloma est extuberatio quae cum pnlegmone
+<lb/>in rugosis ani parte consurgit.-</p>
+</div>
+<div type="textpart" subtype="book" n="422">
+
+
+<p rend="indent">Fistula ductus est callosus , angustus et ohlongue,
+<lb/>interdum etiam obliquus osculum habens cui cicatrix
+<pb n="19.447"/>
+<lb/>obduci nequit, per quod humor certis temporibus
+<lb/>tenuis excernitur. Duae sunt fistularum differentiae. Quaedam
+<lb/>enim ipsarum caecae sunt, quaedam vero occultae.
+<lb/>Caecae quidem sunt quae osculum in profundo sinum ad
+<lb/>superficiem habent; occultae vero quae et os et sinum in.
+<lb/>prosundo obtinent.</p>
+</div>
+<div type="textpart" subtype="book" n="423">
+
+
+<p rend="indent">Tres circa scrotum fiunt assectus, ramex,
+<lb/>scabies, detritio.</p>
+</div>
+<div type="textpart" subtype="book" n="424">
+
+
+<p rend="indent">Tumores in tcroto novem consistunt, hydrocele
+<lb/>, enterocele , hydrenterocele , cirfocele , porocele,
+<lb/>epiplocele, enterepiplocele, enteroporocele , hydrocirsocele.</p>
+</div>
+<div type="textpart" subtype="book" n="425">
+
+
+<p rend="indent">Hydrocele est lenti humoris in parte scroti
+<lb/>collectio.</p>
+</div>
+<div type="textpart" subtype="book" n="426">
+
+
+<p rend="indent">Enterocele fit intestini in scrotum paulatim
+<lb/>vel fiemel delapsus. Enteroceles cautae . sunt antecedens
+<lb/>quidem intensio vel ictus, continens autem iterata extensio
+<lb/>aut ruptio peritonaeI.
+</p>
+<pb n="19.448"/>
+</div>
+<div type="textpart" subtype="book" n="427">
+
+
+<p rend="indent">Hydre n tero cele est delapfus intestini minusque
+<lb/>elaborati humoris collectio in scroto.</p>
+</div>
+<div type="textpart" subtype="book" n="428">
+
+
+<p rend="indent">Cirfocele est dilatatio amplificatioque quotundam
+<lb/>aut omnium quae testem alunt vastorum.</p>
+</div>
+<div type="textpart" subtype="book" n="429">
+
+
+<p rend="indent">Hydrocirsiocele est dilatata. testem uutricautium
+<lb/>vastorum et lenti humoris in scroti aliqua parte
+<lb/>collectio.</p>
+</div>
+<div type="textpart" subtype="book" n="430">
+
+
+<p rend="indent">Porocele est concretio calli in aliqua parte
+<lb/>lcroti.</p>
+</div>
+<div type="textpart" subtype="book" n="431">
+
+
+<p rend="indent">Epiplocele lapsus omenti est in partem scroti.</p>
+</div>
+<div type="textpart" subtype="book" n="432">
+
+
+<p rend="indent">Enteroeprprocele in scroti partem- intestini
+<lb/>atque omenti catus esu</p>
+</div>
+<div type="textpart" subtype="book" n="433">
+
+
+<p rend="indent">Cele tumor est qui dictorum aliquod continet;
+<lb/>omnis enim in scroto tumor ramex nuncupatur.</p>
+</div>
+<div type="textpart" subtype="book" n="434">
+
+
+<p rend="indent">Crypforchis est testiculi veltesticulorum
+<lb/>recessus.</p>
+</div>
+<div type="textpart" subtype="book" n="435">
+
+
+<p rend="indent">Rhacosis multa scroti extensio est.
+</p>
+<pb n="19.449"/>
+</div>
+<div type="textpart" subtype="book" n="436">
+
+
+<p rend="indent">Psoriasis multa durities est scroti cum intensa
+<lb/>prurigine quandoque veto et ulceratione.</p>
+</div>
+<div type="textpart" subtype="book" n="437">
+
+
+<p rend="indent">Gangraena est corporis mutatio a naturali
+<lb/>cujusque habitu in alienum atque exstinctio cum ulceratione
+<lb/>et citra ulcerationem. Gignitur autem gangraena
+<lb/>vel plaga procedente vel dum exstinctio fit aut phlegmone
+<lb/>ex chirurgia.</p>
+</div>
+<div type="textpart" subtype="book" n="438">
+
+
+<p rend="indent">Dracunculus est ulcus quod a parte
+<lb/>propinqua ad ipfum nervi delationem habet. Dictus antem
+<lb/>est quod nervus movendo corpore in ulcus recedat
+<lb/>in eoque occultetur.</p>
+</div>
+<div type="textpart" subtype="book" n="439">
+
+
+<p rend="indent">Clavus est ulcus in pedis planta orbiculatum
+<lb/>quod callum contraxit.</p>
+</div>
+<div type="textpart" subtype="book" n="440">
+
+
+<p rend="indent">Semen, ut Plato ac. Diocles autumant,
+<lb/>ex cerebro et dorsi medulla excernitur; ut autem Praxagoras
+<lb/>atque Democritus praeterea et Hippocrates censent
+<lb/>ex toto corpore. Democritus quidem quum ait; homines
+<lb/>unus erit et homo omnes. Hippocrates vero, genitura,
+<pb n="19.450"/>
+<lb/>inquit, nndique a corpore demanat a fanis fana, a morbosis
+<lb/>morbosa. Semen est secundum Stoicos quod cum
+<lb/>fpiritu et anima sed veluti non pars ab animali dimittitur ;
+<lb/>ut autem opinio fert Asclepiadis genitalis humor qui in
+<lb/>ven ereis congressibus excernitur.</p>
+</div>
+<div type="textpart" subtype="book" n="441">
+
+
+<p rend="indent">Quaesitum est utrum femina femen emittat
+<lb/>ut et mas femen promit. Etenim eandem libidinem habet
+<lb/>femina eorundemque morborum est particeps ac plane
+<lb/>ex dissectione seminariis meatibus praedita esse ostenditur.
+<lb/>Maximum quoque id producendi feminis testimonium est
+<lb/>quod similes matribus procreentur liberi ; quod autem
+<lb/>conferat testis est Hippocrates qui in libro de pueri natura:
+<lb/>st profecta, inquit, ab ambobus genitura in mulisris
+<lb/>locis manet, primum quidem una miscetur utpote non
+<lb/>quiescente muliere concalescendoquc colligitur ac crassescit;
+<lb/>dein spiritum concipit.</p>
+</div>
+<div type="textpart" subtype="book" n="442">
+
+
+<p rend="indent">Differt -femen a genitura quod femen in
+<lb/>seminariis sit meatibus, genitura vero quod jam excretum
+<pb n="19.451"/>
+<lb/>est; et ut Asclepiades loquitur semen quidem iis quoque
+<lb/>esse qui nondum generare possunt definivimus; genituram
+<lb/>vero semen nondum concoctum.</p>
+</div>
+<div type="textpart" subtype="book" n="443">
+
+
+<p rend="indent">Infoecunditatis duplex causa est, altera in
+<lb/>viro, altera in muliere, et utraque multiplex. In femina
+<lb/>igitur causa est si perfrigidum uterum vel praepinguem
+<lb/>mulier habeat; in mare vero quum is vel subfpado vel
+<lb/>testiculis orbatus . fuerit vel alio quodam morbi genere
+<lb/>correptus.</p>
+</div>
+<div type="textpart" subtype="book" n="444">
+
+
+<p rend="indent">Non est . pars foetae foetus in utero aut
+<lb/>certe ipso prorsus intereunte gravidam quoque interire
+<lb/>necessario oportet vel partu edito laedi in integri^ functionibus,
+<lb/>quod pars desit atque ea corpus spolietur.</p>
+</div>
+<div type="textpart" subtype="book" n="445">
+
+
+<p rend="indent">Nutritur foetus per fecundas alimentum
+<lb/>excipiens attrahensque. At non per os, fed per umbilicum
+<lb/>alitur.</p>
+</div>
+<div type="textpart" subtype="book" n="446">
+
+
+<p rend="indent">Foetum quidam animal esse, quidam non
+<pb n="19.452"/>
+<lb/>esse prodiderunt. Quotquot igitur animal ipsum esse dixerunt
+<lb/>ex motu conmutarunt animal ipsum exsistere. Quamdoquidem
+<lb/>et movetur foetus et quia matre quidem fele
+<lb/>oblectante oblectatur ac laetatur, moerente vero moeret et
+<lb/>- ut sentiens animal cogitur: nulli enim tensus praeterquam
+<lb/>animali a natura datus est. Qui autem non esse animal
+<lb/>asserunt nutriri ipsum quidem et augeri ut et arbores, non
+<lb/>tamen ut animalia appetendi et aversandi vim habere.
+<lb/>Non enim ipsis fotum voluntarie imo neque ex proposito
+<lb/>movetur verum ut arbores et plantae, nam ventus iis
+<lb/>caufa est motionis; foetus vero circumfusa humiditas et
+<lb/>lubricitas atque uteri figura qui quum impletur tumescit
+<lb/>in globum: est autem globus figura in omnem motum utpote
+<lb/>omnis expers basis natura proclivis, At Asicleplades
+<lb/>foetum neque animal neque non animal esse pronunciavit;
+<lb/>sed simile id esse dormientibus dixit: nam quo illi modo
+<lb/>fiensus obtincnt neque tamen utuntur, sic et quod in utero
+<lb/>gestatur.
+</p>
+<pb n="19.453"/>
+</div>
+<div type="textpart" subtype="book" n="447">
+
+
+<p>Gignitur mas, ut nonnulli opinantur, postquam
+<lb/>ex dextra parte avulsum semen in uterum conjectum
+<lb/>est, femina quum ex sinistra ; alii vero pro peculiari
+<lb/>feminis temperamento a calore vel frigore fieri dixerunt.
+<lb/>Nam femen calidius marem generat, frigidius feminam.</p>
+</div>
+<div type="textpart" subtype="book" n="448">
+
+
+<p rend="indent">Fiunt gemini atque trigemini, ut quidam
+<lb/>arbitrantur, quoniamsemen in calidum detractum ac.derivatum
+<lb/>frangitur sicque sarit geminos et trigeminos., Alii
+<lb/>ad fuperfoetationem causam referunt. Nos vero si in haec
+<lb/>ambo conferri femen inventum sit, gemellos assernnus
+<lb/>procreari.</p>
+</div>
+<div type="textpart" subtype="book" n="449">
+
+
+<p rend="indent">Hermaphroditus complexus est mafculini
+<lb/>ferus ac feminei .etiam utroque genitale proprium obtinente.</p>
+</div>
+<div type="textpart" subtype="book" n="450">
+
+
+<p rend="indent">Generantur monstra ut quidam ajunt per
+<lb/>declinationem obliquitatemque uteri ; nam quod inaequaliter
+<lb/>femen iusunditur monstra progignit-:. quo modo et liqualum
+<lb/>plumbum , si inaequaliter defusum. sit, inaequale
+<pb n="19.454"/>
+<lb/>opus conflatur. Vel : monstra aut per defectum vel per
+<lb/>excessum fiunt. Gignuntur per magnitudinem ut quae amplo
+<lb/>funt capite, per paucitatem vero ut quae passerino
+<lb/>sunt capite , per exsuperantiam vero ut quae fex constant
+<lb/>digitis quandoque etiam pluribus.</p>
+</div>
+<div type="textpart" subtype="book" n="451">
+
+
+<p rend="indent">Quam ob cautam scptimestres partus vivunt,
+<lb/>octimestres minime ? ita fertur; quoniam numerus octo par
+<lb/>et coniunctus nec decretorius est; septem autem impar est
+<lb/>numerus neque vero coniunctus atque ob id decretorius.</p>
+</div>
+<div type="textpart" subtype="book" n="452">
+
+
+<p rend="indent">Conceptionis causa commoderatus uteri calor
+<lb/>recensque menstruorum purgatio et coeundi appetitus;
+<lb/>haec enim simul congressa femen detinuerunt.</p>
+</div>
+<div type="textpart" subtype="book" n="453">
+
+
+<p rend="indent">Conformantur primum foetus fecundae, deinde
+<lb/>reliqua. Constant fecundae ex duabus venis duabusque
+<lb/>arteriis et quinto vocato uracho. Vocatur autem chorion
+<lb/>feti quod foetus conceptaculum sit ficu quod ipsi alimeutum
+<lb/>suppeditet.
+</p>
+<pb n="19.455"/>
+</div>
+<div type="textpart" subtype="book" n="454">
+
+
+<p rend="indent">Parturigiues funt spiritus conferti impetus
+<lb/>ad foetus excurfum.</p>
+</div>
+<div type="textpart" subtype="book" n="455">
+
+
+<p rend="indent">Tribuuntur mulieri menstrua quo sanitatis
+<lb/>gratia evacuentur, foetui autem alimentum fe praebeant
+<lb/>per conceptum suppressa ; funt enim tum ad conceptionem
+<lb/>tum ad lactis generationem comparata.</p>
+</div>
+<div type="textpart" subtype="book" n="456">
+
+
+<p rend="indent">Fit praegnantibus pica duobus circiter aut
+<lb/>tribus a conceptu mensibus affecto stomacho, nondum enim
+<lb/>potest foetus alimentum confutuere. Picae cauta inde
+<lb/>prodit quod exsuperet materia et stomachus rerturbatione
+<lb/>vexetur. Sane quum incrementum acceperit embryum
+<lb/>tum recipiente fe deorsum sanguine ad fe stomachus redit.</p>
+</div>
+<div type="textpart" subtype="book" n="457">
+
+
+<p rend="indent">Quatuor fiant luctuum figurae sive positurae,
+<lb/>una quidem fecundum naturam quae in caput est; reliquae
+<lb/>tres praeter naturam; quae in pedes, in latus et in duplum.</p>
+</div>
+<div type="textpart" subtype="book" n="458">
+
+
+<p rend="indent">Difficiles partus tribus modis et causis fiunt,
+<lb/>ex foeta, ex foetu et ab externis. Ex foeta duplici modo:
+<pb n="19.456"/>
+<lb/>animo quidem quum xelotypiis vel moeroribus vel alia
+<lb/>quavis perturbatione affecta fuerit, . corpore vero quum
+<lb/>angustis suerit meatibus aut praepinguis aut primum foeta
+<lb/>aut .uterum habuerit qui alimentum non admittat. Ex
+<lb/>foetu vero vel quum is moritur in utero ver geminus aut
+<lb/>monstrofus editur. Ab externis per intentam hiemem- aut
+<lb/>aestum vehementem.<space type="tab">    </space>.</p>
+</div>
+<div type="textpart" subtype="book" n="459">
+
+
+<p rend="indent">Causae ulcerum in utero funi interdum
+<lb/>abscessus, nonnunquam pellas abortivus, aliquando vero
+<lb/>cirritus estque hic cum aliis diuturnus,</p>
+</div>
+<div type="textpart" subtype="book" n="460">
+
+
+<p rend="indent">Sarcosis in utero est carnis collectae extuh.eratio ;
+<lb/>quae si magna sit, pars ejus recidenda est vellicata
+<lb/>prius fcalpris quo celerius emoriatur, sin parva protinus
+<lb/>tollenda.</p>
+</div>
+<div type="textpart" subtype="book" n="461">
+
+
+<p rend="indent">Haemorrhagia effusio vehemens est sanguinis:
+<lb/>quae si magnum vulnus sit per largum obitur fluxum ; sin
+<lb/>angustum , per jaculatiouem ut in venis secandis. Differt
+<lb/>haemorrhagia ab haemorrhoide quod haemorrhagia abundans
+<pb n="19.457"/>
+<lb/>sit effusio ut dixi sanguinis, haemorrhois autem delatio
+<lb/>sanguinis per diapedesin ac paulatim facta.</p>
+</div>
+<div type="textpart" subtype="book" n="462">
+
+
+<p rend="indent">Tres funt eruptionis sanguinis modi vel per
+<lb/>anastomosiu vel per diapedesin vel per ruptionem teu diacopem.
+<lb/>Quae diapedesi et corporis nostri valorum erofione
+<lb/>constat non facile fanatur. Curantur difficilius arteriae
+<lb/>quam venae , partes in profundo sitae iis quae superficiem
+<lb/>occupant et quae his aut illis vicinae magis funt facilis-.
+<lb/>rem difficilioremve curationem recipiunt; sanguinem quem
+<lb/>non parvo negotio compescat facile haec loca profundunt
+<lb/>temporales mufculi , .cerebri membranae, palatum, columella,
+<lb/>collum, alae, inguina et id genus alia; inter homines
+<lb/>vero, si aetatem spectes, juvenes; si habitum, pravis
+<lb/>affecti humoribus; si anni tempestatem, in aestate; si constitutionem,
+<lb/>in hieme.</p>
+</div>
+<div type="textpart" subtype="book" n="463">
+
+
+<p rend="indent">Chymos apud Hippocratem semper humoribus
+<lb/>corporis^ impositus est ex quibus nostra est structura
+<lb/>fanguine, pituita et duplici bile, flava et nigra; apud Platonem
+<lb/>vero et Aristotelem gustabilis qualitas et quaecunque
+<pb n="19.458"/>
+<lb/>nobis inest chymus hoc est tepor nominatur. - Sunt
+<lb/>autum qualitates acor, austeritas, acerbitas, acrimonia, saltedo,
+<lb/>dulcedo, amaritudo; sic et Mnesitheo placet in pathologia.
+<lb/></p>
+</div>
+<div type="textpart" subtype="book" n="464">
+
+
+<p rend="indent">Vacuamus vel venae sectione vel cucurbituta
+<lb/>vel hirundine vel similibus. Sanguinem detrahimus
+<lb/>ob multam plenitudinem praesertimque ubi sanguinem asseutus
+<lb/>causam esse suspicabimur. Detractionis cujuslibet
+<lb/>tutior praeferenda, gravis medicamenti oblatione declinanda
+<lb/>esu cucurbitula utimur ad locorum contusionem.
+<lb/>Hirundinem admovemus ubi affectum locum tenuiter aperire
+<lb/>est opus.</p>
+</div>
+<div type="textpart" subtype="book" n="465">
+
+
+<p rend="indent">In pathologica medicinae parte continetur
+<lb/>quid et qualis sit universalis et quid particularis affectus
+<lb/>ac morbus, quid cauta, quid signum et quae hujus lifferentiae
+<lb/>habeantur, sunt autem hae specie complures, non
+<lb/>qualis affectus causarum morbos efficientium; .locos item
+<lb/>explorat in quibus sint ipsi affectus; quaerimus enim quis
+<pb n="19.459"/>
+<lb/>affectus phrenitis, comitialis morbus, lethargus, pleuritis,
+<lb/>peripueumonia , paralysis et similia. Sunt vero caulae
+<lb/>horum manifestae et non manifestae et evidentes et antecedentes
+<lb/>et continentes atque in universum quae sit
+<lb/>assectus constitutio et in quibus ii corporis partibus dicti
+<lb/>sint perscrutatur.</p>
+</div>
+<div type="textpart" subtype="book" n="466">
+
+
+<p rend="indent">Crisis idonea est ac Iubila in tempore morbi
+<lb/>solutio. Vel crisis est repentina in morbo permutatio eaque
+<lb/>ut plurimum ad salutem, interdum vero ad aegrotantis
+<lb/>interitum tendit.</p>
+</div>
+<div type="textpart" subtype="book" n="467">
+
+
+<p rend="indent">Periodus vicissitudo est aut alternatio. ordine
+<lb/>dispositi temporis.</p>
+</div>
+<div type="textpart" subtype="book" n="468">
+
+
+<p rend="indent">Cerebrum animalem faculsatem obtinet
+<lb/>atque hujus partem principem quae ratiocinatrix est atque
+<lb/>mens, cor vero irascentem, jecur autem concupiscentem.</p>
+</div>
+<div type="textpart" subtype="book" n="469">
+
+
+<p rend="indent">Administratur naturaliter peraeque corpus
+<lb/>a corde et jecore. Facultas naturalis altrix et auctrix
+<lb/>esu Sumit cor alendo augendoque corpore a jecore simguinem,
+<pb n="19.460"/>
+<lb/>spiritum a pulmone, quas confectas elaboratasque
+<lb/>materias sic in universum corpus transmittit.</p>
+</div>
+<div type="textpart" subtype="book" n="470">
+
+
+<p rend="indent">organica est pars chirurgiae quae per restitutionem
+<lb/>ac consentaneam curationem affectis praeter
+<lb/>naturam humanis, ossinus sanitatem vindicat.</p>
+</div>
+<div type="textpart" subtype="book" n="471">
+
+
+<p rend="indent">Sunt ossa in nobis duobus modis conjuncta
+<lb/>per articulum et coagmentationem. Articulus ossium est
+<lb/>quae secundum naturam moventur comoages. Coagmentatio
+<lb/>vero compages est ossium quae secundum naturam
+<lb/>non moventur.</p>
+</div>
+<div type="textpart" subtype="book" n="472">
+
+
+<p rend="indent">Luxatis est ossium quae per articulum vel
+<lb/>coagmentationem composita sunt et moventur praeter
+<lb/>naturam delatio.</p>
+</div>
+<div type="textpart" subtype="book" n="473">
+
+
+<p rend="indent">Eluxatio est ossis secundum naturam motum
+<lb/>habentis ex profunda cavitate in locum praeter naturam
+<lb/>delapsus.</p>
+</div>
+<div type="textpart" subtype="book" n="474">
+
+
+<p rend="indent">Deluxatio est ossis evariatio delatiove a
+<lb/>naturali .loco ex superficiali cavitate ad eum qui praeter
+<lb/>naturam est locum.
+</p>
+<pb n="19.461"/>
+</div>
+<div type="textpart" subtype="book" n="475">
+
+
+<p rend="indent">Diacinema est ossium per gomphosin harmoniamve
+<lb/>compactorum interdum quidem in eodem Ioco
+<lb/>praeter naturam motio ; nonnunquam vero e propria fede
+<lb/>in locum qui praeter naturam est exturbatis ; quemadmodum
+<lb/>ex terso diruptis ossiculis aut vertebris fieri consuevit.</p>
+</div>
+<div type="textpart" subtype="book" n="476">
+
+
+<p rend="indent">Diductio est ossium quae per futuram et
+<lb/>coalitum mutuo juncta funt separatio aut diductio.</p>
+</div>
+<div type="textpart" subtype="book" n="477">
+
+
+<p rend="indent">Repositio est ossis vel ossium a fede non
+<lb/>naturali in sedem naturalem traductio ficu translatio.</p>
+</div>
+<div type="textpart" subtype="book" n="478">
+
+
+<p rend="indent">Modesta est ossis vel ossium a loco qui
+<lb/>praeter naturam sit ad naturalem reductio..</p>
+</div>
+<div type="textpart" subtype="book" n="479">
+
+
+<p rend="indent">Tentio est tractus corporum.</p>
+</div>
+<div type="textpart" subtype="book" n="480">
+
+
+<p rend="indent">Catatasis est ad inferiora loca corporum
+<lb/>tractus. Sed hujus quidem catatasis quidam tractus est
+<lb/>corporum in inferiora loca principiis quae tensionis caufae
+<lb/>funt e directo oppositis; alter autem per contrariam
+<lb/>commutationem est tactus corporum in inferiora loca transmillis
+<lb/>principiis tensionis causis per rotulas ac superius
+<lb/>alligatis;
+</p>
+<pb n="19.462"/>
+</div>
+<div type="textpart" subtype="book" n="481">
+
+
+<p rend="indent">Anatasis per traductionem intelligi ex lis
+<lb/>potest quae de catatasi prodita struxi</p>
+</div>
+<div type="textpart" subtype="book" n="482">
+
+
+<p rend="indent">Distatis est ad superna atque inferna
+<lb/>Ioca corporum tractus.</p>
+</div>
+<div type="textpart" subtype="book" n="483">
+
+
+<p rend="indent">Exelcyfmus est deductio ossis veI ossium
+<lb/>a superficie in profundum.</p>
+</div>
+<div type="textpart" subtype="book" n="484">
+
+
+<p rend="indent">Rhegma est ossis aut ossium traductio a
+<lb/>profundo ad superficiem</p>
+</div>
+<div type="textpart" subtype="book" n="485">
+
+
+<p rend="indent">Metagoge est diducti ossis in naturalem
+<lb/>iocum revocatio.</p>
+</div>
+<div type="textpart" subtype="book" n="486">
+
+
+<p rend="indent">Ecstesis est infania quae brevi finitur.</p>
+</div>
+<div type="textpart" subtype="book" n="487">
+
+
+<p rend="indent">repleris est emotio mentis quae ex
+<lb/>repentina aliqua permutatione extrinsecus advenit.</p>
+</div>
+<div type="textpart" subtype="book" n="488">
+
+
+<p rend="indent">Enthusiasmus efflatio numinis est veluti
+<lb/>quum quidam mente in tauris faciendis capiuntur, si
+<lb/>qua viderint aut si tympana veli tibias veI signa audiverint.</p>
+</div>
+
+</div></body>
+  </text>
+</TEI>
