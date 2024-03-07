@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>De purgantium medicamentorum facultate</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg072.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">11</biblScope>
+              <biblScope unit="pp" from="323" to="342">323-342</biblScope>
+              <date>1826</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x11">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="485" to="487">485-487</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x02">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">10</biblScope>
+              <biblScope unit="pp" from="462" to="469">462-469</biblScope>
+              <date>1679</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x10">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg072.verbatim-lat1">
+<pb n="11.323"/>
+<div type="textpart" subtype="book" n="1">
+
+<pb n="11.323"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>CALENI DE PVRGANTIVM MEDICA. MENTORVM FACULTATE.</head>
+
+
+<p rend="indent">Eadem de causa medici vetustissimi pravas
+<lb/>opiniones irreprehensas omisisse videntur, qua graVillima
+<lb/>etiam delicta antiquissimi legumlatores inulta reliquerunt.
+<lb/>Quum enim eo tempore moderatior esset hominum malitia,
+<lb/>ut qui neque maxima crimina perpetrare aggrediebantur,
+<lb/>neque manifestissimis impudenter contradicere, quomodo
+<lb/>aliquis punitionem iis quae nondum admista erant praescriberet,
+<lb/>vel redargueret ea quae nemo prorsus dixerit l
+<lb/>At quia temporis spatio eo crevit hominum malitia, ut nihil
+<pb n="11.324"/>
+<lb/>non aut facere aut dicere ausi sint, legum conditores multas
+<lb/>ac novas suppliciorum formas adversus sceleratos adiuvoniunt;
+<lb/>veritatis autem studiosi varias contra sophistas reprehensionum
+<lb/>. species excogitant. Quod nunc etiam nos in
+<lb/>praesentia facturi ridemur, eos qui medicamentorum purgentium
+<lb/>facultatem attractricem humorum, quos evacuant, e
+<lb/>medio tollunt, commutatricem vero quandam omnium ex
+<lb/>aequo ad ipsa prope accedentium habere dicunt , reprehentes.
+<lb/>Adversus quam opinionem Hippocrates nihil prodidit.
+<lb/>Nondum enim vel Asclepiades illius tempore vixerat, qui
+<lb/>manifestis impudenter refragatus est, et. seu praemium ali-.
+<lb/>quod contra veritatem reportaturus; vel Erafistratus, qui
+<lb/>cum pudore aliquo totam illam summam, quae de medica.
+<lb/>mentis purgantibus manifesto existit, subvertere tentavit,
+<lb/>Etenim efficacissimam familiarissimamque naturae facultatem
+<lb/>attractricem in nullo ipsius commentario Erafistratus coguovit,
+<lb/>sed consequentia potius ad id quod evacuatur ipsius
+<lb/>loco utitur. At familiarium. attractricis facultatis pars est
+<pb n="11.325"/>
+<lb/>ea, quae in purgantibus medicamentis continetur ; quetnadmodum
+<lb/>etiam illa , qua bilis et urina secernitur , aliaqde
+<lb/>multa; quae in fecunda animalium valetudine a natura obeuntur,
+<lb/>et in morborum curationibus morbisque ipsis. tum
+<lb/>a medicis tum -ah ipsa maxime natura perficiuntur. Quoniam
+<lb/>igitur Hippocrates nihil dixit adversus eos, qui ex reirum
+<lb/>natura attractionem tollunt, eo quod neque tam- audacem
+<lb/>patronum oratio tunc habebat, quales multi post eum
+<lb/>extiterunt, aequum fuerit pro veritate IIippocratis loco nos
+<lb/>certamen suscipere. Ac primum sane qualenam dicant admonere
+<lb/>viros oportet, deinde non - recte ipfos dicentes
+<lb/>ostendere. Sententia informo ejusmodi esu Purgans medicamentum
+<lb/>quemcunque humorem contigerit, hune in proprlam
+<lb/>ipsius speciem immutat; bilem quidem flavam essiciens,
+<lb/>id cholagogon appellant; quemadmodum et pituitam,
+<lb/>quod phlegmagogum dicitur; aquosam vero quandam naturatu
+<lb/>efficiens, quod nominant hydragogum ; aliud fune
+<lb/>atram bilem reddens., quemcunque attigerit humorem. lu
+<pb n="11.326"/>
+<lb/>summa, omnium humorum, qui in venis .sunt, mutatio alteratioque
+<lb/>est, non unius ipsorum vacuasse , quae appellatur
+<lb/>purgatio. Sic horum sententia habet. Sed age; si placet,
+<lb/>dicamus jam ad ipsos, sive bilem ducens, sive pituitam,
+<lb/>sive atram bilem, sive scrofam humiditatem, aliquis medicamentum
+<lb/>assumpserit, universos ex venis humores vacuari,
+<lb/>Atqui hac ratione sola purgatio ab ejusmodi medicamento
+<lb/>petita differt a sanguinis evacuatione per venae sectionem,
+<lb/>quod in hac ille qualis prius erat excernitur; in purgationibus
+<lb/>autem asseratur, non colore tantum, sed etiam consistent
+<lb/><hi rend="italic">is.</hi> Quod enim aquosa ducit, liquida et tenuia omnia
+<lb/>quae in venis sunt efficit, etiamsi antea fuerint crassissima;
+<lb/>quod autem atram bilem educit, e contrario omnia crassa
+<lb/>firmaque, etiamsi antea fuissent liquidissima. Proinde nobis
+<lb/>venae sectionis purgationisque fecundum alios sane quosdam
+<lb/>fcopos delectus erit; fecundum ipsam vero eorum, quae
+<lb/>evacuantur, speciem non erit. Sed qui alii scopi existunt?
+<pb n="11.327"/>
+<lb/>Multi quidem ad sanguinis missionem alnis promptiores exiftunt;
+<lb/>nonnulli vero ad purgationem, sicut etiam alii quidvis
+<lb/>citius patientur quam venae lectionem. Nunnulli vero
+<lb/>aliquam corporis partem potius praecidi sibi sustinent. quam
+<lb/>medicamentum scibant. Quin etiam aliquibus stomachus a
+<lb/>medicamentis purgantibus subvertitur: alii citra molestiam
+<lb/>assumunt. Ex hujusmodi itaque scopis aliis venam fecabimus,
+<lb/>aliis purgans medicamentum exhibebimus; non illis
+<lb/>auscultantes opinionibus, quibus Asclepiadae sanguinis misistonem
+<lb/>aequaliter omnes in venis humores evacuare putabant;
+<lb/>purgationem vero non aeque,. test unum aliquem,
+<lb/>eumque solum cuicunque educendo efficax medicamentum
+<lb/>esse dicat<hi rend="italic">ur.</hi> Quare et sanguinem . ab hujusmodi medicamentis
+<lb/>purgari, non evacuati, ut in venae sectione tradunt.
+<lb/>Haec vestras hypotheses sequuntur, velitis nolitis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Commemorabo autem ipsarum capita. situlepiadum
+<lb/>sententia omnium qui in venis funi humorum
+<lb/>aequalis vacuasse per sanguinis missionem est ; in purgationileus
+
+<pb n="11.328"/>
+<lb/>autem non aequalis , fed aliorum detractio , ut fanguis
+<lb/>purus evadat. Erasistrateorum Iudicio omnium ex aequo
+<lb/>par est, ut in sanguinis missione, ita etiam in purgationibus
+<lb/>vacuatur; quas neque purgationes revera, fed evacuationes
+<lb/>una eum corruptione et alteratione eorum quae
+<lb/>evacuantur esse dictitant. Itaque sophistae, tum qui modice
+<lb/>tum qui extreme impudentes sunt, ad certamen venientes
+<lb/>pugnent tanquam in stadio mecum non verbis neque nugis
+<lb/>longis; fed ipsis operibus. Ad quae in hac urbe populosissima
+<lb/>provoco, quum quotidie inea mille inveniri possint,
+<lb/>qui arquato laborent, mille qui hydrope. Sufficit enim
+<lb/>mihi de sus primum sermonem instituere. Ducatur aliquis
+<lb/>horum ad me, qui citra febrem totum corpus amara bile .
+<lb/>refertum habeat, videatque quomodo, postquam diebus aliquot
+<lb/>hominem praeparaverim, ubi jam tempus esse videatur dato
+<lb/>aliquo medicamento, quod per avum bilem ducat, ad naforalem
+<lb/>habitum hujusmodi purgatione hominem reducam,
+<lb/>nihil prurfus adhuc de corpore sollicitus.. Atqui id nos non
+<pb n="11.329"/>
+<lb/>semel aut bis, sed admodum ostendimus saepe scmimalis istis
+<lb/>ac multos in meliorem sententiam perduximus. Non tamen
+<lb/>fophistis hujus gratia, o sophista, fidem te vellem accomodare
+<lb/>testimoniis, fed te ipsum cum voles intueri; arquato laborantem
+<lb/>ex una purgatione naturalem colorem recipere. Quum
+<lb/>itaque id fieri videas, o generasse, audesne in medio censiflens,
+<lb/>voce clara praeconis instar <hi rend="italic">elata longum</hi> sermonem
+<lb/>producere , qualem saepe discipulis loqueris , nempe unumquodque
+<lb/>purgans non familiare , fed id quod in venis continetur
+<lb/>totum, qualecunque fuerit mutare, ad quod medicamenti
+<lb/>facultas id alterare natura p o testi Atque nunc ille
+<lb/>qui arquatum curavit, non quia humor fit evacuatus , fed
+<lb/>communi evacuationis ratione juvit. Videte igitur, quomodo
+<lb/>ego ex iis qui ita habent alterum vel sanguinis missione
+<lb/>vel quodam alio quod ventri ducendo est exhibito,
+<lb/>similiter juvero.. Haec locutus , deinceps e duobus arquato
+<lb/>laborantibus alteri venam focato, alteri ejusmodi quodam
+<pb n="11.330"/>
+<lb/>medicamento in alvum ciendam efficaci evacuato; quod universi
+<lb/>sane homines atram bilem vacuare , tu autem non
+<lb/>vacuare, sed generare persuasum habes. Deinde si juveris
+<lb/>ipsum , corpus reddens coloratum, quodcunque voles me
+<lb/>pati tibi concedam,.sin autem nihil homini sueris opitulatus,
+<lb/>sed summam intuleris noxam , in optimum statum
+<lb/>.restituito et Hippocratis arsam imitat<hi rend="italic">or.</hi> Verum de retericis
+<lb/>sat multa. Ad eos qui hydrope laborant digressus contemptator
+<lb/>rursus hunc quoque, an similiter ex venae lectione
+<lb/>et medicamento aquam ducente afficiatur. Nisi enim ostendero
+<lb/>aquosam superfluitatem in inferiore ventre contentam
+<lb/>a medicamento evacuari, tunc vetus dogma damnare tibi
+<lb/>licebit, quod docet non hujusmodi humorem generari, ni
+<lb/>tu dicis, fed a medicamento^ ex corpore attrahi.. Contra
+<lb/>nos autem quod voles facile, si tamen medicamentum quod
+<lb/>atrae bili aut flavae ducendae est dederis, non molem vacuabis.
+<lb/>Atque ita singula medicamenta proprium quendam
+<lb/>humorem attrahunt. Tu si arbitraris omnes similiter immutari
+
+<pb n="11.331"/>
+<lb/>et vacuationem esse communem , - non purgationem,
+<lb/>id quod fit, integrum tibi est venam locare. Haec siquidem
+<lb/>apud Indos aliquis agens scripta citaret, difficile esset eum
+<lb/>reprehendere; quoniam vero homo quotidie a nobis confpicitur,
+<lb/>praeterea ex operibus reprehensio adducitur, haud
+<lb/>novi quomodo vos non pudeat nugari. omitto dicere
+<lb/>quod multorum arquato laborantium corpus una biliosi humoris
+<lb/>purgatione purum reddidi; id quod mille etiam testabuntur.
+<lb/>At si sophistae impudentissimi fingant fe omnibus
+<lb/>hominibus fidem non accommodare, rideant ipsi id quod fit
+<lb/>opus, quomodocunque voluerint.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">At quid dico videant? quum jam saepius
+<lb/>id ipsis ostenderim meminerimque cuiusdam , qui id genus
+<lb/>nugacitatem aliquam celebrat. Dixit enim non unam quaudam
+<lb/>humorum speciem a singulis .medicamentis attrahi,
+<lb/>verum absolute singulos ipsius trahere hirudinis modo ;
+<lb/>attractionem vero id quod in humoribus tenuius est prius
+<lb/>subsequi ; post illud id quod crassius est; deinde ita crassulis
+<pb n="11.332"/>
+<lb/>mum. Quorum itaque medicamentorum robur citius disfolvitur,
+<lb/>in aquosis vacuationem sistere; quorum autem
+<lb/>diutius perdurat, flavam etiam bilem evacuare; quae valentissima
+<lb/>inter haec existunt, atram quoque bilem attrahere.
+<lb/>Statim igitur talis bene dicare congerronibus visus est, ac
+<lb/>omnes ipsi acclamarunt, magnoque cursu relictis nobis discessit,
+<lb/>intelligens, opinor, certo, quodsi maneret,. reprehensutn
+<lb/>iri. Postridie quum librum quendam applauforibus
+<lb/>ipsius exhiberemus , in quo tam fututa facinora reprehende- rentur;
+<lb/>dum is postea illis ipsis non similiter persuadebat,
+<lb/>non habebant, quo proposita possent dissolvere. Haec enim
+<lb/>in libello continebantur. Heri quidem disputationi te subtraxisti
+<lb/>, simile quid faciens pugili, qui corona arrepta ausugerit,
+<lb/>antequam certaret. Hodie vero reprehensionem non
+<lb/>effugies ; comitabitur enim te libellus hio in manus chorum
+<lb/>circa te ducentium incidens. Neque enim minus ad illos
+<lb/>quam ad te est sermo , qui nunquam sane antea audiverint
+<lb/>te. in ullo prorsus eorum, quae in rerum natura furit, attiactionem
+
+<pb n="11.333"/>
+<lb/>esse concedentem. Heri autem audiverunt omnia
+<lb/>communitur in venis contenta a medicamento attrahi censitentem.
+<lb/>Aequum enim erat, ipsos non siclum admirari aut
+<lb/>dictum plane efferre laudibus, sed expositionem eorum
+<lb/>quae ah initio proposita erant expectare. Nam de urinarutu
+<lb/>semotione flavae bilis et atrae aliisque actionibus corporis
+<lb/>multas frequenter habetis orationes, quiduis potius
+<lb/>quam in unaquaque corporis parte familiarium sibi attractionem,
+<lb/>esse functionem quandam naturalem concedentes;.
+<lb/>nunc autem non solum attractionem esse admittentes , Ied
+<lb/>etiam omnium simpliciter; quae multo major est consessio
+<lb/>quam si dicas familiarium. Etenim fient facultas . quaedam
+<lb/>alienorum expultrix inest animalibus , ita familiarium uni;
+<lb/>cuiqueorerum attractricem aliquam esse omnibus hominibus
+<lb/>consentaneum ridetur, qui nondum vestra sapientia sapiunt.
+<lb/>At omnia aequaliter a quodam attrahi five qualitatibus familiaria,
+<lb/>five maxime sint contraria, mirandam fatetur absurditalem;
+<lb/>ita non solum attractione concessa, sini etiam multo
+<pb n="11.334"/>
+<lb/>deterius quam conveniebat non familiarium duntaxat, sed
+<lb/>absolute omnium admissa, sic sime rideris mihi non magis
+<lb/>dignus esse; qui a commilitonibus tuis lauderis quam qui
+<lb/>reprehendaris. Porro quod neque unquam medicamentis
+<lb/>purgantibus utus sis , fed imperitus ignarusve operum medicinalium
+<lb/>, ego id quoque celeriter demonstrare posse videur.
+<lb/>Quae purgare solent bllem atram, statim ab initio
+<lb/>atram vacuant. Disserunt autem inter te vacuationes, quod
+<lb/>liquidiora primum, deinde quae sequuntur semper magis
+<lb/>.. crassiora sint. Id ipsum et pituitam et flavam bilem pur-</p>
+<p rend="indent">gantibus inest. Etenim initio haec singula familiarem humorem
+<lb/>trahunt, fed temporis spatio crassiorem ; non tamen,
+<lb/>ut tu arbitraris, aliquis prius totam pelvim scrofa eIcremento
+<lb/>implevit, deinde aliam bile flava, pofleaaliam pituita,
+<lb/>postremo ita atram inanit. Quo constat a medicamento,
+<lb/>familiare attrahi, comitari autem ipsum aquosum quod
+<lb/>redundat, id quod tibi etiam nunc videre licet, si nunquam
+<lb/>antea videris, plurimum quidem aquosum et biliosum ex
+<pb n="11.335"/>
+<lb/>hujusmodi medicamentorum usu homines evacuare, paucissimam
+<lb/>autem universam vacuationem ex iis , quae atram
+<lb/>ducunt, ipsis fieri. Conveniebat autem semper plurimum
+<lb/>sane totum ex his, quae atram bilem pungunt, fecundum
+<lb/>tuum institutum evacuari; paucissimum vero ex iis, quae
+<lb/>aquosa biliofaque moventi Etenim pro medicamentorum
+<lb/>imbecillitate .et robore ratio tua speciem eorum quae evaeuantur
+<lb/>discernit, ut in iis quae atram bilem educunt. Quia
+<lb/>vero robore haec ab aliis educentibus differunt, permulta
+<lb/>erit evacuatio; primo sane totiusaquosi excrementi, deinde
+<lb/>biliosi, mox pituitosi, dein ipsius atrae bilis. At in blandis
+<lb/>ventrem ducentibus <hi rend="italic">medicamentis</hi> sula ipfa aquosa eva-t
+<lb/>cuabuntur, fed nullum horum fieri apparet. Quare haec
+<lb/>apparentia rationem tuam subvertunt. Aequum vero est
+<lb/>respondere te, cur quum. crassiora semper post tenuiora
+<lb/>evacuentur, atra bilis prior sanguine trahitur, etsi veluti
+<lb/>limus quidam sanguinis existat, veluti in vinis faex.</p>
+
+<pb n="11.336"/>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Forium igitur rogabis, an aliquod sit me .
+<lb/>dicameutum, quod statim ab initio sanguinem ducat? Est,
+<lb/>o praestantissime; verum nullus eo ditetur. Fortassis dices,.
+<lb/>Quid ita? Quoniam hoc jugulare esset hominem, non purgare;
+<lb/>etenim purgantia ob hoc ipfum ab omnibus nominantur
+<lb/>purgantia, quod sanguinem a commemoratis excremenfis
+<lb/>purum reddant. Non tamen adeo quis sapiens est mediens,
+<lb/>ut totum quidem sanguinem velit evacuare; alios autem
+<lb/>humores in corpore relinquere; unde inter delatoria id
+<lb/>genus omnia annumerant, quae sanguinis vacuationem per
+<lb/>venas ventris et intestinorum moliuntur. Sed neque haec
+<lb/>fecundum tuam hypothesin sanguinem evacuare ab initio
+<lb/>oportebat. Nomina hujusmodi medicamentorum , neque si
+<lb/>certo scirem , . in libris vellem indicare ; sed illud solum
+<lb/>tutum .est dicere, quid mihi cum apud Thraces Bithynos
+<lb/>essem puero adhuc acciderit. Invenit aliquis homo herbam
+<lb/>ejusmodi,- ut qui eam assumeret excerneret sanguis
+<lb/>nem atque ita periret, Quum igitur multi simili modo
+<pb n="11.337"/>
+<lb/>interirent, inquirendum diligentius id quod fieret consiterunt
+<lb/>inveneruutque veneficum, dttxeruntque ad populi praesectum,
+<lb/>Qui ubi studeret non solum ipsum hominem occidere,
+<lb/>sed etiam liquis alius .vel docuisset vel ab eo didirisset,
+<lb/>ille sane dixit a nullo fe herbam didicisse, verum
+<lb/>jecnr quandoque porcinum in suburbium quoddam deferens
+<lb/>coagulato ventre ipsimi herbae superposuisse ; deinde cumrurfus
+<lb/>attolleret , sanies cruentas ex toto hepate ad herbam
+<lb/>diffluentes conspexisse, inde sumta coniectura verisimile
+<lb/>esse herbam sanguinem attrahere , dedisse alicui eorum hominum
+<lb/>in quos inciderat experimenti gratia; postquam vero
+<lb/>quod speravit invenisset, perperam in posterum usum esse.
+<lb/>Quin nec sie indicasse alicui mortalium herbam affirmavit.
+<lb/>Haec dixit veneficus ille diutissime inquisitus. At populi
+<lb/>pruefes quoniam ex. narratione, quam de herba ferit, multam
+<lb/>ubique nasci dixit, oculis obtectis neci traducendum
+<lb/>jussit, ne alicui interea offenderet. Quapropter, vir optime,
+<lb/>multa sime veri simile est, ejusmodi facultate praedita medicamenta
+
+<pb n="11.338"/>
+<lb/>inveniri; quae statim ab initio. sanguinem traherent;
+<lb/>verum ea subticeri ratio est, quemadmodum alia
+<lb/>deleteria ab. omnibus qui mentem. habent supprimuntur.
+<lb/>Fuerunt enim nonnulli, qui .jam etiam de horum disciplina
+<lb/>portentosam quandam communionem indicarunt, fcripfernntque
+<lb/>cujusque deleterii praeparationem ; fied non ex iis qui
+<lb/>mentem habeat tales existunt, sicut neque .vossupitis, si nos.
+<lb/>interrogetis, quae medicamenta sanguinem ducant. Rufius
+<lb/>igitur sermonem ad id, quod ab initio institutum. est reduca-.
+<lb/>mus. Qui omnes ex aequo humores attrahi dicit; feti
+<lb/>maxime. .flexiles primos, mox alios excerni, grata. mihi
+<lb/>prodit ; dum attractricem .facultatem in rerum substantia esse
+<lb/>confitetur; pro qua chorus ipsius impudenter de bilis et
+<lb/>urinae fecretione; distributione, aliorumque ejusmodi abforda
+<lb/>dicere sustinet p . praeterea apparentibus . contraria
+<lb/>statuit , quemadmodum supra indicabimus. Si enim vera
+<lb/>haec hypothesis; copiosissima- sane universa evacuatio ex
+<lb/>his ,. quae - atram bilem ducunt, paucissima vero .in his quae.
+<pb n="11.339"/>
+<lb/>serota excrementa purgant erit. Atqui indicabo tibi millies,
+<lb/>si voles , o. sophista , vel nunc saltem artis opera con tempiari,
+<lb/>vacuationem sane copiosissimam medicamenta aquam
+<lb/>ducentia comitari, ea quae atram bilem purgant paucissima;
+<lb/>ostendam autem et per initia statim atram illam
+<lb/>evacuari.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Qui igitur omnes ex aequo humores attrahi
+<lb/>pronuntiat, adeo stupidus- imperitusque est, qui alterari, niti
+<lb/>deat rursus quam nihil ipso auctore intersit, fanguinemne .
+<lb/>mittas, an medicamento, quod bilem ducit, arquato laborans
+<lb/>tem purges. Eodem modo idem par et aequale est ex
+<lb/>hydropico venam. secare et medicamento quodam aquam
+<lb/>ducente eum evacuare. Deinde non indecora haec l Picris
+<lb/>que medicos sibi invicem contradicere audientes meritu
+<lb/>derident damnantque omnes sermonem; atque eos, qui aliquid
+<lb/>quomodocunque eloquuntur, nominant logiatros.
+<lb/>Quod enim dicere semper consuevi, id nunc quoque occasionem
+<lb/>habet, nempe quemlibet idiotam hujusmodi sophis<hi rend="italic">ta.</hi>
+<pb n="11.340"/>
+<lb/>esse praestantiorem: sii enim nihil aliud, certe naturales
+<lb/>notiones sophistae conservant, quum sophistae has- quoque
+<lb/>ex prava consuetudine perdiderint. Ecce enim idiota quis l
+<lb/>piam non mentis inops, exortis sibi derepente in plerisque
+<lb/>partibus pustulis, tum ulcerosis tum discoloribus; venit ad
+<lb/>medicum , cupiens quam celerrime purgari. Quum autem
+<lb/>ille sanguinem detrahere potius ipsi praecipiat; an insanis ?
+<lb/>inquit , nam una cum - vitiato bonum ac benignum evacuari
+<lb/>consentaneum est. Atqui omnia potius quam Hippocrati.
+<lb/>cum sermonem verum esse volunt , communes notiones prae
+<lb/>contendendi studio perdunt; acdeindenos insiliunt tanquam
+<lb/>discerpturi; in ipsis autem operibus reprehendi oderunt,
+<lb/>quanquam aequum sit, ut nos illos incusantes quod Hippocratern
+<lb/>ignorent. toleramus, persuadere aggredimur, ile
+<lb/>etiam ipsus sustinere reprehensiones, ac maxime fi fieri
+<lb/>possit, doceutesadamare-; sinminus, certe .nun omnino odisse.
+<lb/>Nuper enim quum aliquis ex hujusmodi attonitis medicis
+<lb/>audivisset , me complures qui alopecia. laborarunt una purgastone
+
+<pb n="11.341"/>
+<lb/>curasse, inde me odio .coepit proloqui. Jam alius
+<lb/>quidam , . quod cancrofas assectiones. incipientes et elephantes
+<lb/>dictos , phagedaenas aliaque malta maligna ulcera similiter.
+<lb/>odio habuit, .. Alius autem quod tenebricosa vertigine labor
+<lb/>nantes folis purgationibus persimassem ; alius quod mania
+<lb/>correptos, epilepticos, melancholicos, praeterea cephalaea
+<lb/>laborantes non paucos solis purgationibus medicatus sim,
+<lb/>sicut et ischiadicos, pari modo dolores diuturnos multis
+<lb/>locis disperfos. Item ex .his culicum nuper, quum tribus
+<lb/>jam menfibus.medici illum curarent et res in deterius- vergeret,
+<lb/>omnia illa abjicere iubens felis purgationibus curavi.
+<lb/>Item fluxum muliebrem non ignobilis . cuiusdam Romanae
+<lb/>mulieris, tolis purgationibus curavi; sicut et aliarum. multarum
+<lb/>obscuriorum , tum. eundem hunc affectum tum alios
+<lb/>quosdam in utero consistentes. Quid opus est dicere , erifypelatum
+<lb/>nullum esse praesentius remedium, quam medicamentum
+<lb/>bilem educens, sicut maxime ipsis contrarium
+<lb/>quod pituitam movet? Dies me deficeret, si alia miranda
+<pb n="11.342"/>
+<lb/>opera quae purgationes comitantur vellem recensere, quae
+<lb/>ignorare verisimile est illos, qui nunquam circa purgantia
+<lb/>medicamenta artem didicerunt. Ubi enim ne esse quidem
+<lb/>prorfus aliquod medicamentum arbitrantur, an in quibus
+<lb/>aut quomodo utendum sit scient? Propter hanc caulam
+<lb/>alii nuda sulaque experientra-ducti affectibus medentur. Saplantes
+<lb/>autem Iti etiam ratione, non quod aliquid per experientiam
+<lb/>inventis adlicere, fed etiam hunc fuhvertere
+<lb/>conentur, multo deterius medicantur -quam qui simplici
+<lb/>foloque usu citra rationem nituntur; quorum omnium origo
+<lb/>et fons unus est odium quod adversus Hippocratem conceperunt.-
+<lb/>unde cum alia multa, tum haec ipsa .praesens.
+<lb/>consideratio dedttractrice facultate emanavit, cujus pars aut
+<lb/>species aut quomodocunque appellare lubet, purgantium
+<lb/>medicamentorum facultas existit.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De venae sectione adversus Erasistratum</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg068.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">11</biblScope>
+              <biblScope unit="pp" from="147" to="186">147-186</biblScope>
+              <date>1826</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x11">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="1" to="7">1-7</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">10</biblScope>
+              <biblScope unit="pp" from="392" to="405">392-405</biblScope>
+              <date>1679</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x10">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg068.verbatim-lat1">
+<pb n="11.147"/>
+<div type="textpart" subtype="book" n="1">
+
+<pb n="11.147"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE VENAE SECTIONE ADVERSUS
+<lb/>ERA SISTRATUM LIBER.</head>
+
+
+<p rend="indent">Quaestione haud parva dignum esse nubi
+<lb/>videtur, cur tandem Erasistratus tum in aliis artis partibus
+<lb/>abunde versatus, tum in minimis adeo diligens, ut etiam
+<lb/>olernm quorundam et cataplafmatum coctiones scriptis manderit;
+<lb/>in quibus abunde erat, ubi ad quid conferrent tantum
+<lb/>explicasset, alteri confectionis modum relinquere, tanquam
+<lb/>nihil magnum et vulgare inveniendum, de sanguinis mifsioue
+<lb/>praesidio tam valido ac magno, quodque nihilo minus
+<lb/>quam efficacissima remedia leniores commendarunt, nullam
+<pb n="11.148"/>
+<lb/>mentionem fecerit. Quippe neque nomen fere detractionis
+<lb/>sanguinis in nullo ipsius commentario invenias, praeter quam
+<lb/>semel in sermone de sanguinis -eductione, ubi tamen
+<lb/>obiter magis, ut alicui rideri possit, quam ex insigni quodam
+<lb/>studio meminit, id quod ex verbis ipsius disces, quae hunc
+<lb/>iu modum habent; <hi rend="italic">DehgiTturas moliri oportet adaias et
+<lb/>inguina, non sicut nonnulli qui curationes imitantur, non
+<lb/>intelligentes se sanguinis gratia haec facere , quem tamen
+<lb/>abunde vinculis exprimunt. Nam in partibus corporis doligatis
+<lb/>copiosior sanguis recipitur, id quod indicat venarum
+<lb/>distentio et venae sectio; multo enim largius siuit, quum
+<lb/>corporis pars, citius vena secatur, fuerit deligata. At in
+<lb/>eductione sanguinis plurimum sanguinis recipitur tum in
+<lb/>cruribus tum in brachiis, si deligatura saeta vinculis excspiatur.-
+<lb/>Nam ubi paucior fit is qut in thorace effi levior
+<lb/>quoque erit eductio. Jdem hoc moliri volunt etiam qui sanguinem
+<lb/>reiicientibus venam secant, sed multo melius Chry-</hi>
+<pb n="11.149"/>
+<lb/><hi rend="italic">sippus , non salum id quod praesens est respiciens, verum
+<lb/>etiam de imminenti periculo salicibus. Etenim periculo
+<lb/>quod ex eductione sanguinis accidit proximum esi illud,
+<lb/>quod instammatio ansam, in quo offierre cibum fune non
+<lb/>facile est. At ei qui venae sectionem expertus est et longe
+<lb/>tempore inediam toleravit, periculum imminet ne evolvatur.
+<lb/>Chryfippns autem, qui alimentum quod in corpore inest
+<lb/>confectum in locos non solutos transtulerit, quo temnere
+<lb/>evolutionis periculum esi, ubi. autem ex promptu sic traduxerit,
+<lb/>tunc utatur, osierre</hi> id non coactus summe prndens
+<lb/><hi rend="italic">et laude dignus est, sibique per totum consentaneus.
+<lb/>Quod</hi> exigua haec et vulgaria neque Erasistrali in arte disigentium
+<lb/>testentur, neque ipsius praesidii viribus digna existant,
+<lb/>omnibus manifestum est. At si neque apud Hippocratem
+<lb/>neque -Dioclem neque Euryplrontem neque omnino
+<lb/>alium quemquam Erafistrato seniorem remedium hoc scriptum
+<lb/>esset, invenire forte aliquis cogitaret, fi nondum usus
+<lb/>fuerit iuventus, neque a claris viris probatus, troua ratione
+<lb/>ipsam omisisse. Quia vero inveniuntur alli <hi rend="italic">quos sari-</hi>
+<pb n="11.150"/>
+<lb/><hi rend="italic">ptum est,</hi> et multus jam praesidii usus erat, non in uno tan- :
+<lb/>tum neque vulgari affectu, sed in plurimis et acutissimis, sic
+<lb/>enim Hippocrates ipfe, qui omnium artis bonorum auctor
+<lb/>nobis est, et alii veteres uti apparent, quid tandem Erasistrato
+<lb/>accidit, ut prorsus illius meminisse .neglexerit? Etenim
+<lb/>num in affectibus quibusdam ipsum adhibere conveniat,
+<lb/>quemadmodum et alia remedia, et cur conveniat, causam indicare
+<lb/>debebat. Sed .ne innuit quidem utrum eo utendum
+<lb/>sit, an minus, tantum abest ut sermonem de illo instituerit;
+<lb/>imo non ausus est plane sententiam suam pronunciare, nisi
+<lb/>semel, ut dixi, in uno affectu licet ex iis quae subticet sententiae
+<lb/>ipsius summa deprehendatur; non enim si ei placeret,
+<lb/>omisisset, neque exigua sane affectuum remedia scriptis
+<lb/>indigere putasset, adeo vero magna posse aliquem, etiam st
+<lb/>non ab illo disceret, per se invenire.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Causa vero propter quam tectione venae
+<lb/>usus non est, ut sane verissime dicam, alicui forsan divinatione
+
+<pb n="11.151"/>
+<lb/>indigere ridebitur. Quomodo enim quis scire possit,
+<lb/>quid Erasistratus senserit de illis, quorum ipfe nusquam late
+<lb/>inseque meminit? attamen nonnulli sententiam ipsius divinare
+<lb/>non sunt veriti. Verum iidem errare maxime depre- .
+<lb/>henduntur, inde quod luter fe sententiis discrepent. Siquidem
+<lb/>nullus ipsarum eadem sentit, et quod omnium gravissimum
+<lb/>est, ne ipsis quidem commilitonibus Erasistrati, discipulis
+<lb/>autem Chrisippi Cnidii eadem videntur, cujus primi
+<lb/>hoc dogma erat sanguinis detractione non uti, neque enim
+<lb/>inter illos de Chrysippi sententia con venit. Sed quae sane
+<lb/>ab Apoemante et Stratone dicta sunt, plane ridicula tanti
+<lb/>Nam scarificare venam grave esse pronunciant, item digno fuere
+<lb/>dividereque ipsam arteriam , quod improspere cedit, si
+<lb/>venae loco arteria dividatur, item quod metu aliquis mortuus
+<lb/>sit, alius etiam antequam vas divideretur , aliquis eo
+<lb/>secto non ad te redierit, item quod alicui sanguis adeo fluxerit,
+<lb/>ut sisti non posset; accedunt huc quae ab aliis dicuntur,
+<lb/>nempe mensuram evacuationis coniectura assequi est.
+<pb n="11.152"/>
+<lb/>difficile, ut necessarium sit, ut vel qui parum evacuat pronioveat
+<lb/>nihil , vel qui modum excedit haud mediocrem noxam
+<lb/>inferat. Quid enim, inquiunt, abest immoderata fanguis
+<lb/>nis missio a caede? nonullis, quod spiritus ex arteriis in venas
+<lb/>concidentis fieri posset; sequetur enim necessario spiritus
+<lb/>sanguine per mutuas osculationes evacuato; nonnullis,
+<lb/>quod affectu inflammationis in arteriis consistente venas
+<lb/>evacuate fit supervacuum. At ejusmodi quamvis alicui probabilia
+<lb/>esse videantur,. re vera nihil habent probabile et
+<lb/>salsa manifesto sunt; multo enim side digniores essent .qui
+<lb/>ea dicunt quae alii nonnulli ex humorum natura impulsi
+<lb/>pronuntiarunt, et forte aliquis longiorem adversus illos
+<lb/>orationem requiret, sed hujus temporis non est, quippe in
+<lb/>prolixitatem ile sermonem incidere esset necesse. Praelerea
+<lb/>nihil alioquin cdgit ut vel Erafistrati vel. alterius cuiusdam
+<lb/>Chrysippi discipulorum dicta redarguere aggrediamur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Optime igitur sermo procedere miln vide-.
+<pb n="11.153"/>
+<lb/>bitur, si aliis omissis ab ipsis Erasistrati plaritis exordiar;
+<lb/>dicetur autem quam licet brevissime. Placet ei arteriam vas
+<lb/>esse spiritus, venam autem sanguinis, majora autum vasa lu
+<lb/>minorem propaginem diffundi et numerosiorem, per .totumque
+<lb/>corpus deferri; nullum enim esse locum ubi non extremum
+<lb/>vasis situm in tam exiles terminos desinat, ut extre- .
+<lb/>morum osculorum conniventia contentus in ipsis sanguis
+<lb/>coerceatur, atque idcirco licet ora tum venae tum arteriae
+<lb/>sibi mutuo vicina sint, sanguis inpropriis permanet torminis,
+<lb/>nusquam spiritus vasa ingrediens. Atque hactenus sane lege
+<lb/>naturae animal dispensatur, quia vero causa quaedam violenta
+<lb/>ex venis in arterias sanguinem traducit, aegrotare
+<lb/>jam.necesse est. Jam causas etiam alias quasdam et nihilo
+<lb/>minus copiam esse sanguinis, a qua dissensu sane venae tuusnam,
+<lb/>adaperiri autem extrema, .prius conniventia. ac fanguinem
+<lb/>in arterias transfundi atque inde in spiritum qui a
+<lb/>corde fertur illidere, contraque hunc incumbere motum illius
+
+<pb n="11.154"/>
+<lb/>immutantem, ubi prope fuerit et e directo principii,
+<lb/>atque hunc esse febrem; item propulsum ab eo pr ortum in
+<lb/>arteriarum extremis constringi, atque hanc esse inflammationem.
+<lb/>Ita sane ex copia inflammationem effici hac ratione.
+<lb/>In vulneribus inflammationem causatur Iane et hic concrdentiam
+<lb/>sanguinis ex venis in arterias, ipsius porro conerdentice
+<lb/>causam esse dicit consequentiam ad id quod evacuatur.
+<lb/>Quum enim ex arteriis in vulnerata parte dirisu fpiritus
+<lb/>totus inter vulnerandum evanuerit, ac periculum sit ne
+<lb/>locus fiat vacuus, per mutuas osculationes sanguinem sequi,
+<lb/>spiritu. qui bafin replet evacuato : itaque vaste reserato spiritum
+<lb/>effundi, clausa autem et connivente intro propulsum a
+<lb/>spiritu qui a corde emittitur, rursus totum in locis vulneri
+<lb/>vicinis colligi, atque ita generari inflammationem. Age jam,
+<lb/>donabimus enim ipfum in praesentia omnia de febribus et
+<lb/>de inflammatione vera dicere , etsi quod nullum ex ipsis
+<pb n="11.155"/>
+<lb/>verum sit alibi demonstraverimus, deinceps nos doceat remedia.
+<lb/>Ait itaque ipsis tum in aliis multis tum in tertio de
+<lb/>febribus ita ad verbum. <hi rend="italic">Circa initia morborum et iustam.
+<lb/>mulionum generationes sorbitiones in totum circumcidendae
+<lb/>scint, ac fiunt magna ex parte lnsiammationes, quaescbres
+<lb/>inferunt ex plethora, in quibus temporibus quum cibi dantur
+<lb/>et concoctio difiributioque munia scia obeunt , vasis
+<lb/>alimenti insigniter repletis, validiores instammationes generantur.</hi>
+<lb/>Haec sane de inflammationibus, quae ex copia cis
+<lb/>tra vulnus nascuntur, quae vero ex vulneribus proveniunt
+<lb/>in primo rursus libro de sebribus hunc in modum scribit :
+<lb/><hi rend="italic">Curationes his consentaneae, ut vulnera omnia citra insiammationem
+<lb/>confervent, nam medicamentorum alia inuncta
+<lb/>locis sanis, adstringendo reprimendoque sanguinis ex
+<lb/>superiori parte estusi impetum ad divises locos fieri prohibent,
+<lb/>ex sanis autem locis, quum multae et arteriae et venae
+<lb/>osculis hient, in ipsas locos assectus sit transseimptio,.</hi>
+<pb n="11.156"/>
+<lb/><hi rend="italic">sanguine ex venis in arterias elapsa.</hi> Deinde rursus consientaneum
+<lb/>his est nihil offerre vulneratis per inflammationis
+<lb/>tempora, siquidem venae alimento vacuae sacilius sanguinem
+<lb/>in arterias concidentem recipient. Quod ubi fit, mi-.
+<lb/>nus erunt inflammationes. Proinde quod quidem copia evacuanda
+<lb/>sit, quodque venae plenae et distentae nequeant rurrus
+<lb/>sanguinem in fe recipere, id etiam cum ipso. Erasistrato
+<lb/>consentit. At quomodo eas vacuare oporteat, de hoc
+<lb/>ambigitur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Ego itaque putavi, quum sanguinem evaenari
+<lb/>in confesso sit, et facillimum jam et promptissimum esse
+<lb/>venam siccare, etenim celerrime ita et ipfas falas inflammationes
+<lb/>evacuavimus , quum inediae praeterquam quod longo
+<lb/>tempore indigeant, etiam totum habitum similiter evacuent;
+<lb/>hoc autem non convenit. Cur enim quis evacuet id quod
+<lb/>evacuatione non indiget? vel cur carnes eliquet, quum liceat
+<lb/>sanguinem effundere? ut alia incommoda omittam, quae
+<pb n="11.157"/>
+<lb/>longas inedias necessario comitantur, vires imbecilles, humores
+<lb/>ad biliosum et amarum conversos, multos stomachi
+<lb/>mortus , transeam , dejectionem impeditam , ac omnia
+<lb/>summatim excrementa acriora maliguioraque reddita, quorum
+<lb/>nullum Erafistratus sinens; quemadmodum caeci, quum
+<lb/>via laevis, lata et recta propinqua sit, angustam saepe, asperam
+<lb/>et longam captantes oberrant, ita ipse quoque juxta sitam
+<lb/>viam compendiosam admodum et molestia carentem
+<lb/>praeteriens ad pravam longamqne recessit, hoc tantum meditatus,
+<lb/>au ad quod velit ipsa ducat, non item an celeriter
+<lb/>et citra molestiam <hi rend="italic">ducat.</hi> Etenim ad copiae evacuationem
+<lb/>etiam inedia conducit, fateor, verum longo temporis processu,
+<lb/>praeter quod multum molestet. Attamen tantum praesidium
+<lb/>sapiens Erasistiatus omittens, quem nonnulli Hippocrati
+<lb/>conferendum censent, non veretur nihil probabile et rationi
+<lb/>consentaneum adferre, sed mentionem ipsius tanquam pravissimi
+<lb/>cujusdam et nullius momenti facit. At non Hippocrates,
+<lb/>o Erafistrate, nulla in re inferior te medicus de missione
+
+<pb n="11.158"/>
+<lb/>sanguinis ita sensit, sed quae tu admiraris verbis, ea re
+<lb/>facere invenitur. Admiraris enim naturam ut artificiosam
+<lb/>simul et de animali providam, non autum ipsam ullo in loco
+<lb/>loricatis ,. quum . scias saepe sanguinis evacuatione naturam
+<lb/>mullos morbos sanasse; id ne in uno quidem. unquam ferisit.
+<lb/>Cur autem taces naturae opera, quam commendas?
+<lb/>cur quum apud Hippocratem multa ejusmodi scripta invenias.-
+<lb/><hi rend="italic">Mulieri sanguinem vomenti, menstruis erumpentibus, sclurio;
+<lb/>atra bile infestatis remedio sunt haemorrhoides</hi>; item,
+<lb/><hi rend="italic">larga sanguinis prostuvia magna</hi> ex parte <hi rend="italic">per nares solc
+<lb/>vitatur</hi>, apud te nihil hujusmodi, sed naturam verbo tenus
+<lb/>tantum commendas, nullum vero opus ipsius usquam ferip
+<lb/>to mandasti? Mihi autem solius naturae opera condiscere
+<lb/>fatis erat, unde adjutus id quod convenit invenire abunde
+<lb/>potui. An mihi concedent qui te admirantur ut id quod
+<lb/>res est dicam, nempe quod aut mentis inops omnino esse
+<lb/>videaris aut leviter in naturae operibus versatus. Alterutri
+<lb/>enim obnoxius es;vel neutiquam ea intelligis, .vel si intelligas,
+
+<pb n="11.159"/>
+<lb/>non imitaris, aut .ut qui in domo quadam condulus
+<lb/>haec scripseris, nullum unquam aegrotum conspicatus, unda
+<lb/>merito naturae opera ignoras, semper quidem ea admiratus;
+<lb/>nunquam vero deinde, .quae tua summa est dementia, itnitaris.
+<lb/>Postea fi-fcribere aliquid aggrediaris, scribendi legem
+<lb/>non servas.: Conveniebat enrm primum naturae opera mihi
+<lb/>perscribere, deinde explicare quaenam perfecte ac integre
+<lb/>proprio impetu concitata efficit, quae vero imperfecte, a
+<lb/>morbificis causis impedita. Via enim haec est ad remediorum^
+<lb/>inventionem, ut ubi didiceris quae probe ab ea obeuntur,
+<lb/>his pollis succurrere id quod deest adjiciens, aut quum neutiquam
+<lb/>movetur, etenim hoc quoque. nonnunquam ei accidit
+<lb/>morbificarum causarum robore evictae, totum ipsi fuppedites;
+<lb/>horum nullum ostendisti. Fortassis enim, quod dieunt,
+<lb/>negligis quidem aegrotos inspicere, domi autem maneus
+<lb/>opinionem tuum scripto. mandasti; attamen etiam si
+<lb/>ipsa non videris , ab Hippocrate certe licebat legenti tibi
+<lb/>difcerc quaenam absolute ac perfecte, et ut ipsa ille dicere
+<pb n="11.160"/>
+<lb/>solebat, integre natura mota judicantur,. quomodo purius
+<lb/>ipsam optime quis imitetur ne aggredientem quidem judr-.
+<lb/>cium, et quomodo ei quum aggreditur quidem, sed minus ac
+<lb/>par est movetur, succurrendum. Si enim in his fuisses exercitatus,
+<lb/>ejusmodi te consulentem audirem qualia et Hippocratem
+<lb/>audio ; <hi rend="italic">Quae judicantur judmataque sunt integre,
+<lb/>non movere oportet neque innovare vel medicamentis vel
+<lb/>aliis irritamentis, sed sinere.</hi> Hoc sane est naturae perfecte
+<lb/>motae praeceptum, quod autem sequitur, quum ad judicium
+<lb/>quidem contendit, fied minus ac convenit, eoque ei oprtulandum
+<lb/>praecipiens in hunc modum dicit: <hi rend="italic">Quae ducere apor-.
+<lb/>tet, eo ducenda setnt, quo potissimum. vergunt per loca
+<lb/>convenientia. Cupit enim tunc natura noxium propellere :
+<lb/>ubi finem operi imponere prae imbecillitate non potest, nostro
+<lb/>auxilio indiget.</hi> Idcirco et pleuriticos. curans, quo. humores
+<lb/>vergunt, evacuati Quid enim ait? <hi rend="italic">rerum .si dolor
+<lb/>ad jugulam pertingat, aut gravitas brachium vel : mamillam
+<lb/>vel partes supra septum infestet, in -cubito secanda</hi>
+<pb n="11.161"/>
+<lb/><hi rend="italic">est lena interior, et mullum detrahere sanguinis terendum
+<lb/>non esu, donec multo rubicundior finxerit, vel loco puti et
+<lb/>rubri li. udus: utrumque enim accidit. Sin autem sub
+<lb/>septo dolor urgeat, ad singulum tero non pertineat, alvus
+<lb/>emollienda est aut veratro nigro aut peplio.</hi> Rursus in
+<lb/>aliquo nephriticorum affectuum concursu praefatus, ac in
+<lb/>rene dolor gravis, stupor femoris e directo positi, infert poplitem
+<lb/>secare, lu e. venam in poplite incidere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Illud autem quomodo dictum est? <hi rend="italic">Stymargi
+<lb/>ancillae, cui neque sanguis stuxerat, postquam siliam peperiffet,
+<lb/>os autem uteri convolsam esset, ac dolor in coxam et
+<lb/>crus pertingeret, ex talo sanguis detractus profuit, etsi tremores
+<lb/>totum corpus occuparent.</hi> Sed ad causam veniendum
+<lb/>et causae fomitem. Hippocrates itaque occasionem morbi
+<lb/>examinari jubet et occasionis originem ; quod non dicere
+<lb/>possis, ut arbitror, aliud quidpiam ac sanguinis copiam intestantem
+<lb/>a secta vena j uva ri exponetur. lu muliere igitm
+<lb/>superius commemorata etsi tremula venam secare non ne .
+<pb n="11.162"/>
+<lb/>glexit, quum nemo alius. detrahere sanguinem in tremore
+<lb/>ausus fuisset, quemadmodum neque in hydrope, neque in
+<lb/>alio frigido affectu ullo, quum in hujusmodi- corpus adhuc
+<lb/>magis refrigescat, calido humore evacuato, et calor nativus
+<lb/>corpore. jam prius affectu refrigerato extinguatur. Verum
+<lb/>Hippocrates considerans, ut ipse inquit, assectus causam copiam
+<lb/>esse sanguinis-: non enim purgata est mulier iis quae
+<lb/>lochia vocantur purgamentis. Fomes occafionis hic est, prituaque
+<lb/>generatio et prima causa, quod non recte purgatalit,
+<lb/>uteri conversio, ut quae in coxas distorta esset. Quum igitur
+<lb/>retentio vacuationem enundinaret, ad uterum autem impetus
+<lb/>humorum, locum per quem evacuare oportet, .venam lu talo
+<lb/>fecuit. Talis in omnibus Hippocrates est. Sed ne diutius
+<lb/>Erafistratios offendam ipsum commendando, siquidem mihi
+<lb/>videntur tum hi ipsi tum ante eos- Erasistratus cum viro.
+<lb/>contendere, dicta Hippocrati, jam relinquamus: alias enim
+<lb/>totam ipsius circa vacuationes artem licet indicare. Digrediamur
+
+<pb n="11.163"/>
+<lb/>autem ad alios utriusque sectae, et empiricae et ra.tionalis,
+<lb/>viros: neque enim ex his ullum a venae sectione
+<lb/>abhorruisse invenio. Nam dogmaticum novi et Dioclem et
+<lb/>Plistonicum et Dieuchetn et Menefitheum et Praxagoram
+<lb/>et Philotimum et Herophilum et Asclepiadem sanguinem
+<lb/>detrahere ; effi Asclepiades adeo fuerit contentiosus et gloriae
+<lb/>cupidus ut fere omnia superiorum dogmata submoverit, .
+<lb/>neque ulli alii qui ante ipsum fuerat, neque Hippocrati peparuerit,
+<lb/>ut qui veterum medicinam mortis curationem dicere
+<lb/>non sit veritus. Attamen adeo non suit impudens, ut
+<lb/>plane venae sectionem ex medicis praesidiis eximere sit ausus,
+<lb/>imo nec recentiorum aliquis nec veterum, non Mandas,
+<lb/>non Athenaeus, non Agathinus,non Archigenes, non empiVicorum
+<lb/>chorus. At ex his qui rationi nunquam attendunt,
+<lb/>sed experientiae perpetuo adhaerent; nullum adferre possis,.
+<lb/>qui hoc tentarit. Cur igitur qui in omnibus fere aliis dissentiunt,
+<lb/>in hoc uno sunt concordes mihi enim nullum vide-tur
+<lb/>esse fide dignius , quam tensus certus et suspicione vuo
+<pb n="11.164"/>
+<lb/>cans. Relinquamus autem hos, si ita vis, ne testium multitu t
+<lb/>dine naturae quam commendas opera reddamus dubia. Non
+<lb/>haec mulieres quidem omnes singulis mensibus evacuat, fanguinis
+<lb/>superfluum effundens? Conveniebat enim, mea iententis,
+<lb/>ut muliebre genus quod domi non in magnis degit
+<lb/>laboribus, neque in sule puro versatur et propter haec ambo
+<lb/>copiam congregat sovetque, naturale remedium habeat pleni-.
+<lb/>tudinis evacuationem. Atque unum sane hoc naturae opus
+<lb/>est, alterum vero post,partum purgatio etsi etiam partus
+<lb/>ipse evacuatio siti Ex uteri sanguine foetus alitur: postquam
+<lb/>in lucem editus est , lactis in mamilla generatio non exigua
+<lb/>vacuatio mensium copiae respondens existit; una enim amborum
+<lb/>et menstrui et lactis substantia est, ac communes, ut
+<lb/>ita dicam, utrorumque rivorum fontes venae existunt Qua
+<lb/>de cauta quibus per aetatem mentes nonamplius fluunt his
+<lb/>neque in. mammis lac colligitur, item quae purgationis tempora
+<lb/>quidem non excesserunt, ied laetant, non purgantur,
+<lb/>et si musieri lactenti per uterum sanguis effluit,. -lac evanescit:
+
+<pb n="11.165"/>
+<lb/>et quae animantia non concipiunt, his neque lac est;
+<lb/>contra quibus lac est, ea donec concipiunt lac habent: At si
+<lb/>etianr didiceris quantis ex hac vacuati one bonisfoeminemn
+<lb/>genus fmritur, et quae ipsi noxae oboriuntur si non evacuetm,
+<lb/>haud novi quomodo sustines adhuc non omni studio
+<lb/>sanguinem redundantem evacuare. <hi rend="italic">Mulier non podagra cor-.
+<lb/>ripitur, nisi mensos ipsius defecerint</hi>, ait Hippocrates. At
+<lb/>quid opus habeo- verbis Hippocratis contra hominem Hippoorati
+<lb/>inimicum? Puto igitur ipsam veritatem per me praeconeni
+<lb/>tibi dicere, mulierem, si recte purgetur, non infestari
+<lb/>podagra, neque morbo articulario neque pleuritide neque
+<lb/>peripneumonia, imo neque morbo comitiali neque apoplexia,
+<lb/>neque respirationis neque vocis defectu in ullo tenrpore
+<lb/>molestatur, si recte purgetur menstruis. Sed quandoque
+<lb/>correpta est phrenitide aut lethargo aut convulsione
+<lb/>aut tremore aut tetano, mensibus emanantibus. Novisti autem
+<lb/>quandoque melaneholia laborantem, aut insanientem,
+<lb/>aut fpuentem ex thorace, aut vomentem sanguinem ex ventumulo,
+
+<pb n="11.166"/>
+<lb/>aut cephalaea aegrotantem/ aut angina suffocatam, aut
+<lb/>magnum aliquem validumqne affectum sustinentem, si probe
+<lb/>menstrua excernerentur ;. iis autem retentis, quolibet ultio
+<lb/>esse opportunam, eique vacuationes mederi. Relictis autem
+<lb/>jam mulieribus ad viros accedito difcitoque, quotcumque
+<lb/>per haemorrhoides. superfluum vacuari consuerit , lu omnes
+<lb/>a morbidi mmunes vitam trasigunt, quibuscunque vero retenta
+<lb/>fuit evacuatio , gravissimis morsus conflictati sunt.
+<lb/>Utrum neque ex sus sanguinem evacuatis, neque si angina
+<lb/>correpti suerint, neque si peripneumonia, anne perperam cogusta
+<lb/>ponas, tot pereuntes negligas? Tu sane forsan id facis,
+<lb/>ego vero non haec tantum, fed etiam convulsionem et hyderum
+<lb/>sanguinis vaeuatione faepe curari. Sic enim et longa
+<lb/>me experientia docet, et ratio sic ad occasionem venire jubet
+<lb/>occafiouisque incitamentum. Quod autem et experientia ita
+<lb/>praecipit, empiricorum libris perlectis condisces.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Ne igitur adhuc cum Hippocrate fotu te
+<lb/>contendere. putato, .qui sanguinem vacuare praecipit sive
+<pb n="11.167"/>
+<lb/>in tremorem sive in hyderum, sive in aliud quoddam frigidum
+<lb/>affectum , aut vir ex haemorrhoidum suppressione aut
+<lb/>mulier ex menstruis . suppressis inciderit , sed etiam cum
+<lb/>omnibus medicis empiricis et vita hominum : nam communem
+<lb/>omnium rationem subvertere mihi videris, nisi concessi
+<lb/>seris a natura enixis concessum esse ut confideret sanguinem
+<lb/>vacuandum esse, ubi copia ipsius subsit.- Quis ignorat contravis
+<lb/>contrariorum esse remedia? non enim Hippocratis fiolius
+<lb/>sententia .est, sed cunctis hominibus communis. Sed mihi
+<lb/>videris te nimio cum Hippocrate contendendi studio etiam
+<lb/>aliis esse stolidiorem, quum haec ipsa natura quotidie tibi
+<lb/>suggerat et inediam assumptione curet, repletiones evacua-tionibus,
+<lb/>frigus caliditate et calorem refrigeratione. Quid
+<lb/>enim aliud est alimentum assumere quam copiam fuppeditare ?
+<lb/>quid autem excernere stercus quam intestinum repletum
+<lb/>evacuare.? quid urinam mittere quam vesicae repletioni
+<lb/>mederi ? Jam pleraque animalia quum frigus sentiunt,
+<lb/>latebras sibi et quosdam -calentes cuniculos sub terram com- .
+<pb n="11.168"/>
+<lb/>parant; quum calore laborant, aestate in aqua frigida natant,
+<lb/>deguntque in locis umbrosis et vento expositis. Ego sane
+<lb/>canem frequenter vidi vomitum sibi provocantem; item
+<lb/>Aegyptiam avem clysterem imitantem: at hominibus, ut qui
+<lb/>ratione utantur, haec ipsa omnia facilius praestari possunt.
+<lb/>Vocato igitur medicinae imperitum ad aegrotum boni habitus,
+<lb/>adolescentem, sanguinolentum , qui ab angina aut peripneumonia
+<lb/>suffocetur, postea hominem interroga si quid adversus
+<lb/>affectum animadvertat: quis adeo demens, ut non
+<lb/>sanguinis vacuationem pronunciet? Verum Erasistratus prae
+<lb/>contentione adversus Hippocratem concepta ne communes
+<lb/>quidem omnium hominum notiones servare videtur, sed
+<lb/>gruibus etiam adhuc stolidior invenitur. E longinquo igitur
+<lb/>has quoque, ut aquilas, usque ad terrae fines volantes videre
+<lb/>licet vicissim et. frigus et calorem subterfugientes curantesque
+<lb/>perpetuo contraria contrariis. Hoc igitur quod dixi
+<lb/>nondum Hippocratiea arte dignum est, nempe sanguinem
+<lb/>vacuandum esse, quibus ex copia sanguinis periculum imminet.
+
+<pb n="11.169"/>
+<lb/>Quo autem modo vacuationem moliri conveniat et quo
+<lb/>tempore et quantam, magis cuperem mihi edisseri. Nam
+<lb/>scire quando sane frontis vena secanda veniat, quando vero
+<lb/>ad oculorum angulos sitae, vel sub lingua vel humeralis.
+<lb/>dicta vel quae per alas excurrit vel quae poplitem aut talum
+<lb/>perreptant, e quibus omnibus mitti sanguinem docuit
+<lb/>Hippocrates, hanc ego medicorum ratiocinationem esse sentio,
+<lb/>ac quod contraria contrariis curare oporteat, quodque
+<lb/>copiae vacuatlo sit contraria, id etiam bruta intelligere puto,
+<lb/>tantum abest ut- ego admirer. At si voles auribus paululum
+<lb/>apertis, imo potius anime verum sermonem recipere, simulfatis
+<lb/>erga Hippocratem oblitus dicam tibi quid illius arte
+<lb/>dignum sit. Hactenus enim Diocles, Plistouicus, Herophilus,
+<lb/>Praxagoras, Philotimus aliique multi medici non sua quidem
+<lb/>industria verum Hippocratem sequentes invenerunt
+<lb/>quando singulae quas diximus venae secandae sint. Quod
+<lb/>autem atra bile vexatis haemorrhoides conferant, id nondum
+<lb/>omnes intelligunt, etsi manifesto Hippocrates docuerit. Vetum
+
+<pb n="11.170"/>
+<lb/>qui sincere in scriptis illius versati sunt, lu soli quomodo
+<lb/>haemorrhois fiat ab ipso didicere. Quomodo autem
+<lb/>et dysenteria, quomodo varix, item quod non semper singula
+<lb/>haec ne constituantur prohibere, sed quod interdum
+<lb/>etiam promovere, vel dum natura conquiescit totum ei committere
+<lb/>oportet, quando ita conducit, adeo autum negligunt
+<lb/>qui haec didicerunt dy fautoriam, varicem et haemorrhoidem
+<lb/>mature curare aggredi, ut etiam ipsi quae non sunt
+<lb/>convenientia facere machinentur. Ego siquidem. multos novi.
+<lb/>et melancholia correptos et alias insanientes ob hujusmodi
+<lb/>evacuationes medicorum inscitia impeditas. Nonnulli vero
+<lb/>ipsorum pleuritide et nephritide sunt conflictati, alii autem
+<lb/>sanguinem ex ventriculo vomuerunt, aut ex thorace extusflerunt,
+<lb/>. aut paraplexia vel hydero perierunt. Haec ego medico
+<lb/>noscenda esse censeo, una cum magno illo circa vacualienes
+<lb/>artificio.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Quantum autem ex sanguine exuperante
+<lb/>vacuare oporteat, res non magni momenti. Cur tandem
+<pb n="11.171"/>
+<lb/>Erasistratus omisit, ceu aliquid. grande ? aut quid nugantur
+<lb/>qui ad quoduis contendere paratissimi sunt, vaeuationis igno- ,
+<lb/>nantem illum esse dicentes; quemadmodum etiam in aliis
+<lb/>praesidiis idem obsidentes? aut cujus per dens mensuram
+<lb/>exacte tenere ipsum arbitrantur, ut neque excedat quantitatem,
+<lb/>neque in ea deficiat? num clysteria an purgantis enjusdam
+<lb/>medicamenti au utinam cientis vel tibi vel potus
+<lb/>ullius? Tempestivum igitur ipsis est ad omnia suspicionem
+<lb/>moventibus omnino conquiescere <hi rend="italic">ac silentium agere</hi>. Curnam
+<lb/>igitur Erasiftratus ipse purgantibus utitur medicamenlis
+<lb/>ac alnum aqua frigida temperatum cum aliis quibusdam
+<lb/>tum cholericis exhibet? Hic sane Chrysippum praeceptorem
+<lb/>tuum satis invidiose laudat, tanquam praesidium a nullo veferum
+<lb/>cognitum invenerit, quod unum cholericis jam morti .
+<lb/>proximis sufficiat curandis. Non enim id quovis tempore
+<lb/>propinat, sed in angustum adeo spatium et brevem occasionem
+<lb/>praesidii usum redegit, Ac id nun accuso, si omnes temporis
+<lb/>partes accurate coniectura deprehendat. Admiretur
+<pb n="11.172"/>
+<lb/>autem quis istud, quomodo in illis quae ipse protulit, si
+<lb/>Chryfippicum quicquam doceat, audax et temerarius admodum
+<lb/>cristat, ac nihil cum prorsus nec occasionis celeritas
+<lb/>nec difficilis menturae comprehensio nec affectus periculum
+<lb/>deterreat, sed adeo manifeste simul et exacte mensuram et
+<lb/>occasionem ipsum id docere autumet, ut non medicis tentum,
+<lb/>fui jam etiam idiotis praecepta ipsius utilia esse censeat. Ubi
+<lb/>vero aliquem ex vetustioribus medicis inventionis nomine
+<lb/>laudere debet, illic omnino subterfugit. Age jam etiam hoc
+<lb/>ipsis demonstremus, mensuram in sanguinis missione facilius
+<lb/>quam in quotis alio remedio deprehendi posse. Vel enim
+<lb/>coloris mutationem saepe conjicere licet, idque bifariam fieri,
+<lb/>interdum fluentem quidem sanguinem, interdum etiam aegrotantem
+<lb/>ipsum inspiriendo. Jam animi defectio in multis
+<lb/>affectibus vacnationis terminus est et fluoris sanguinis tenor
+<lb/>labnseens ac . pulsus immutari. Jam medicus hujus fusius
+<lb/><hi rend="italic">vernationis</hi> sistendae liberam habet potestatem, ubicunque
+<lb/>voluerit, aliorum mustius. Verum sive medicamentum quod
+<pb n="11.173"/>
+<lb/>alvum subducat, exhibueris, sive quod vomitum provocet,
+<lb/>sive quod urinas ducat, sive quod thoracem aut caput purget,
+<lb/>prima exhibitio in tua potestate est, sequentia autem. fortuna
+<lb/>sibi vindicat et magnum periculum comitatur medicamenta
+<lb/>quae purgant exhibite, ne vel purgatio non moveatur aut
+<lb/>ne id quod in ventrem confluit prompte excernatur aut
+<lb/>cum doloribus, rosionibus, torminibus, refrigeratione, pus;
+<lb/>sus defectu et animi excernatur, aut totum corpus velamenter
+<lb/>turbetur, exiguum autem evacuetur vel nimium, etenim
+<lb/>et hoc multoties malorum gratissimum in hac medicatione
+<lb/>accidit.. Non enim ut in vena divifa digito imposito statim
+<lb/>sistis, ile quod in. ventrem confluit cohibes. Attamen medicorum
+<lb/>nullus supervenientium symptomatum metu a meditumentis
+<lb/>exhibendis abstinet, sed ubi jam errorem commisit,
+<lb/>non amplius eo uti proponit. Quid dico purgantia et validorum
+<lb/>medicamentorum mentionem faciens tempus contero,
+<lb/>quum in cibo quolibet peccatum in mensura admissum
+<lb/>maxime offendat? Licet autem noxae magnitudinem contumplani
+
+<pb n="11.174"/>
+<lb/>in effectis et imbecillis hominibus, qui celari refectione
+<lb/>indigent, in quibus alimentum minus ac par est nutriens
+<lb/>facultatem marcore consumit, nimium autem, pondus- potius
+<lb/>naturae quam alimentum, plane vires strangulat et extinguit.
+<lb/>An igitur etiam cibum offerre verebimur; quod mensura. aegre
+<lb/>percipi queat ? ita sane etiam d medendo prorsus abisse
+<lb/>nehis, quippe nullum in re medica praesidium invenias,
+<lb/>quod non cum moderatione quadam usum praebeat. At sulam
+<lb/>sanguinis missionem ne in. hoc quidem damnare possis,
+<lb/>ambo mensurae errata vehementer nocent: etenim excessus
+<lb/>perniciosissimos esse quis non dixerit? Verum non necessarium
+<lb/>est excedere in quo minus est periculum. Esto lenito,
+<lb/>verbi causa; trium heminarum moderata detractio, si quis.
+<lb/>dem quatuor abstuleris, maxime. laedes, duae vero si detractae
+<lb/>sint, plurimum quidem juvant, nihil autem laedunt : licet
+<lb/>etenim tibi unam vel clysteribus vel inediis vel frictionibus
+<lb/>vel sudoribus evacuare, praeterquam quod neque si
+<lb/>fecundo sanguinem voles dimittere, prohiberis. Sed quid
+<lb/>multa affero cum indoctis hominibus contendere instituens,
+<pb n="11.175"/>
+<lb/>qui praeterquam quod nihil rationi consentaneum nugentur,
+<lb/>ne nerunt quidem quae ab ipsis commendentur. Admirantur
+<lb/>enim Erasistrati rationem et nomen sibi ab illo imponunt,
+<lb/>Erafistrateos appellantes t adeo vero sunt illius praecepturum
+<lb/>ignari, ut omnia potius quam sententiam illius interpretentur.
+<lb/>De sanguinis itaque missione adeo prolixa et .absurda
+<lb/>nugantur, ut aliquis non inscitiam modo aptorum, sed jam
+<lb/>etiam impudentiam demiretur. Quum enim manifeste Erasiftratus
+<lb/>dicat in capite de sanguinis eductione, in quo etiam
+<lb/>solo venae lectionis meminit, Chrysipputn sanguinem non
+<lb/>detrahere, ut aeger qui ob inflammationes necessario inediis
+<lb/>traducitur, sufficiat. Ipsi omnia potius quam haec dicunt.
+<lb/>Deinde visne me hominibus attendere, qui de Erasistrato nugantur,
+<lb/>quum Erasistrati verba habeamus? non puto convenire.
+<lb/>Audiamus igitur ipsius verba. <hi rend="italic">Multo</hi>, inquit, <hi rend="italic">rectius
+<lb/>Chrysippus sccit, qui non modo quod praesens est inspicit,.
+<lb/>sed etiam de imminenti periculo sollicitas. Proximum entm</hi>
+<pb n="11.176"/>
+<lb/><hi rend="italic">periculo ex sanguinis eductione provenienti illud quod insiammatio
+<lb/>suggerit, in quo cibum oster, -e haudfacile esi,
+<lb/>sanguinis autem missionem et longo tempore inediam expeno
+<lb/>periculum obvenit ne vires disselvantar.</hi> Manifesto
+<lb/>enim bie ex inedia periculum cavere ipsum scribit, quod
+<lb/>necessario sequuturum arbitratur, ubi homo longiore tempore
+<lb/>propter inflammationem fame sit excruciatus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Annon opus habeo hic rurfius Erasistratuorum
+<lb/>nugis garrientium, cur cibum hominibus inflammationem
+<lb/>expertis non offerre juflerit, verum ipsum Erasistratum
+<lb/>per verba quorum antea mentionem feci semel interpre-.
+<lb/>fantem sequor, inprimisque ubi tertio febrium de iustamorationibus
+<lb/>quae ex plenitudine fiunt, primo autem ubi de
+<lb/>vulneribus disserit. In- utrisque enim libris non semel, sed
+<lb/>saepe venas, quae per inedias evacuatae sint, ut sanguinem
+<lb/>affluentem denuo recipiant aptiores fieri dicit. Quid enim
+<lb/>ait? <hi rend="italic">His autem consequens est iit vulneratis nihil osteramua
+<lb/>sub instammationie temporibus. Etenim venae alimento va-</hi>
+<pb n="11.177"/>
+<lb/><hi rend="italic">cuae, facilius sanguinem in arterias concidentem recipiunt:
+<lb/>Itaque</hi> inedia tanquam auxilium evacuatorium phlegmonas
+<lb/>folvit. Non enim ob aliam quandam rem in iustammationibus
+<lb/>ipsam adhibendam constet quam ut venae vacuatae fana
+<lb/>guinem in arterias illabentem facilius recipiant. Deinde, per
+<lb/>deos, quum quis venas evacuare volet ubi liceat id et sine
+<lb/>molestia et cito praestare, diu laborat, haud novi quomodo
+<lb/>potius seipfum circumvenire deprehenditur. <hi rend="italic">Non venamscco;
+<lb/>inquit, ut aeger inediis ob instammationes susceptis</hi> scisi
+<lb/><hi rend="italic">fictae</hi> sed cujus gratia inflammatos fame enecas ? <hi rend="italic">ut venas,.
+<lb/>inquit</hi>; <hi rend="italic">evacuem</hi>. Corrigitur non ab initio .evacuasti? pudet
+<lb/>enim me miferetque viri a vero aberrantis. Nam praeterquam
+<lb/>quod contrarius est non apparentibus tantum in arte operta
+<lb/>bus, fed etiam tuis ipsius sententiis; adhuc etiam haec ignerare
+<lb/>deprehenditur, cujusnam gratia inediae adhibeantur,
+<lb/>etsi usum iptarum abunde simul et manifesto Praxagoras fieriptum
+<lb/>reliquerit.- Adde quod ne Hippocrates quidem neque
+<lb/>Diocles omiserit, ille vero adeo imperitus venia evacuandis
+<pb n="11.178"/>
+<lb/>inedias adhiberi putat, atque hac folum opitulandum censet.
+<lb/>Postea evacuatorio indigens auxilio ad omnium^ mehercule
+<lb/>imbecilliorum descendit, praetergressus efficacia et quae celeviter
+<lb/>ad quodcunque deducere velis posses. Sed age tibi
+<lb/>concedamus inflammationes in vulneribus ita etiam curari
+<lb/>ut eas quae ob copiam contractae fiunt ; quid faciemus quum
+<lb/>ipsa copia in venis adhuc subsistit easque distendit, aut
+<lb/>quum in arteriis ita adest, quomodo curabimus ? Ego sane in
+<lb/>hujusmodi omnibus promptissimam esse ex vena vastationem
+<lb/>censeo. Jam ad thoracem copia deseratur, pericliteturque
+<lb/>aliquod vas in hoc rumpi, ne sic quidem venam locabimus,
+<lb/>sed lanis nimirum^ artus excipiemus ? Illi quidem hoc fuffecerit.
+<lb/>Nam quum revulsorio remedio utatur, haud novit
+<lb/>venae sectionem in revulsione multo esse efficaciorem, quippe
+<lb/>ubi multis sanguis adeo flueret, ut coerceri non posset,
+<lb/>vena secta profluvium compescuimus, id quod etiam Erasistratum
+<lb/>ignorare arbitror. Neque enim vulgare est, quales
+<lb/>venae in qualibus partibus sanguinem fundentibus secandae
+<pb n="11.179"/>
+<lb/>sint. Quum igitur ipsa venae sectio maxima praestet quibus
+<lb/>nunc indigemus, ut quae et evacuare et revellere possit,
+<lb/>quid cunctaris adhuc et tempus teris? hominem conficis,
+<lb/>quum liceat vi tare et ipsam vastorum rupturam inflammationemque
+<lb/>ob hanc ortam et inediae cruciatus curandae instammationis
+<lb/>gratia adhibitos. Si enim copia rupturam essicit,
+<lb/>evacuata ea quod futurum erat cohibebis; quod si hoc
+<lb/>contingit, etiam inflammationem ex ruptura ortam; sin autem
+<lb/>hoc, ne inediarum quidem adhuc usus reflat. At tu mihi
+<lb/>videris ceu cupiens inediam consulere ipsos affectus machinari,
+<lb/>qui inediae cruciatum requirant. Quid grave erat eo
+<lb/>quod vexat evacuato ne facessere quidem negotium?</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">At frustra multum laboro, quum liceat
+<lb/>tui te sermonis admonere. An enim non ipse <hi rend="italic">nos docuisti</hi> in
+<lb/>priore de fanitate tuenda, ubi venarum copiae generationem
+<lb/>praefatus, deinde ferinis remedia, fcopnm sane ipsorum omnium
+<lb/>statuens evacuationem, aliam vero alii conferre dicens ,
+<pb n="11.180"/>
+<lb/>quin et pletlioram, sic enim copiam alimenti in venis contenti
+<lb/>appellandam censes, evacuas exercitiaque et balnea
+<lb/>complura et tenuem victum esse praecipis. Non idem vero
+<lb/>omnibus conferre praesidium evacuatorium, quoniam neque
+<lb/>omnes consueverunt omnibus uti, sed alii balneis magis, alii
+<lb/>exercitiis, alii a cibo vomitu, idem quod non omnes iisdem
+<lb/>morbis sunt obnoxii, sed lue morbo comitiali, ille sanguinis
+<lb/>sputo, alius jecoris aut lienis affectibus. Non igitur comitiali
+<lb/>morbo obnoxium balneis evacuare aggrediemur, ut tu ais,
+<lb/>recte id praecipiens, neqeum, in quo ne vas aliquod thoracis
+<lb/>rumpatur metus est, exercemus: periculum enim nimirum
+<lb/>in exercitiorum validis rimatibus ne, etiam si copia non-fit,
+<lb/>ob imbecillitatem tamen in thorace vasa rumpantur., quernodo
+<lb/>igitur ipsis medebimur nos doceto. Quod etenim vacuandum
+<lb/>sit tu quoque fateris; habeamus autem praesidia vacuatoria,
+<lb/>exercitia, balnea copiosiora et tenuem victum. Verum
+<lb/>exercitiis ne tu quidem ipse .utendum censes: de balneis tu
+<lb/>omnino obticuisti, utendumne sit an minus in ita affectis
+<pb n="11.181"/>
+<lb/>hominibus. Ego id ipsum quod apparet experientia eompro-i
+<lb/>batum exponam : item si de te quoque vaticinari licet, quid
+<lb/>forsan opinatus sis aperiam. Itaque tu ipse in libro de suitguinis
+<lb/>remotione deligatur simul et inediis uteris, tanquam
+<lb/>his quidem revellere copiam, balneis autem vacuare non
+<lb/>conveniat. Considero enim te balueum in rupta jam vena
+<lb/>prohibiturum, neque dixisti, si de ruptura suspicio est, velle
+<lb/>te uti:. sin autem ne sic quidem sensisti, mihi tamen id quod
+<lb/>apparet abunde est. Maxima namque omnibus sanguinis
+<lb/>emptionibus ex balneo laesio existit causaque manifesta est,
+<lb/>siquidem fanguis. funditur et in vapores fpiritusque solvitur
+<lb/>balueo calido, adeo ut etiam ad motum incitetur in tumoremque
+<lb/>attollatur, corpora autem mollia et imbecillia ex calidis
+<lb/>lavacris efficiuntur. Quomodo igitur non facile afficiamtur
+<lb/>molliora reddita, quum etiam is qui rupturam vasis expertus
+<lb/>est, motum simul et tumorem acceperit? Non igitur
+<lb/>balneis evacuare tentabimus eos quibus venas ob sanguinis
+<lb/>copiam rumpi metus est. Superest ut ad tertium evacuatorium
+
+<pb n="11.182"/>
+<lb/>remedium confugiamus, nempe ad tenuem rictus rationem.
+<lb/>Age jam quoniam et hanc ipse tribus modis moliris,
+<lb/>tenues, paucos, nec nutrientes cibos offerens, aut neutiquam
+<lb/>exhibens aut vomitum a coena imperans. Videamus
+<lb/>igitur quomodo tenuiter aegrotum cibabimur, num a coena
+<lb/>vomere j abentes ? At quod ab exercitiorum contentione abstinuerimus,
+<lb/>si modo vomitu intrepide usuri simus, id nemi-.
+<lb/>nem vel imperitum latere puto. ln posterum igitur vel inedium
+<lb/>imperabimus, vel. paucos vixque nutrientes cibos offeremus.
+<lb/>Verum haec quamvis non insigniter, nutriunt tamen
+<lb/>et ipsa, nos vero non addere aliquid, sed auferre potius
+<lb/>cupimus. Ultimo igitur laboriosam illam ac revera perniciofam.
+<lb/>aeque atque sacram aliquam anchoram, quaeque omnibus
+<lb/>affectibus opitulari possit, famem accersamus, ac deinceps
+<lb/>et Apollonium et Dexippum ea gratia maledictis incessemus ?
+<lb/>At hic te recordari percuperem illorum, quae.ipfe de hac re
+<lb/>docueris; nam tu ipse de. inedia sic rideris sentire, tanquam
+<lb/>ea ex numero evacuatoriorum auxiliorum nequaquam esse
+<pb n="11.183"/>
+<lb/>possit. Verum simul ac prius quod volo demonstravero; tum
+<lb/>et testimoniorum quae adducis faciam mentionem. Nam
+<lb/>inedia inter res quae in naturam cadunt nullum obtinet locum,
+<lb/>nihlloque magis subsistit quam vel caecitas vel furditas,
+<lb/>quae omnium rerum existentium privationes fiunt. Ipsa
+<lb/>enim ciborum adjectio ex rebus in usum humanum cadentibus
+<lb/>habetur, unde et hanc opusque ejus corporis nutritionem
+<lb/>esse invenies; rursum subtractio eorundem non eadem
+<lb/>cum rebus existentibus. est, neque etiam proferre poteris
+<lb/>aliquod opus .illius, qualis scilicet illa est, quae in sudoribus
+<lb/>venaeque sectione ac clysteribus contingit evacuatio, nec non
+<lb/>in eduliis nutritio. Media igitur amborum evacuationis et
+<lb/>nutritionis inedia est v neque enim nutrit neque vacuat.
+<lb/>Quomodo igitur, ait, multi ex inedia ciborum inopia intelluxisse
+<lb/>dicemus , quoniam ita ne in latebris quidem degentia
+<lb/>animalia, ubi fi alimenti laborant inopia,. possent perdurare.
+<lb/>Perdurant autem etiam Erafistrato asserente, qui et cautam
+<lb/>apponit. Omnia namque illa, quia per exteriorem cutis superficient;
+
+<pb n="11.184"/>
+<lb/>prout aut magis aut minus rara exissent; traufpirare
+<lb/>difstarique alti Ejus vero quod fuperficies ipforum
+<lb/>magis mindsque rara efficitur, cum aliae causae quaedam
+<lb/>existunt tpm illae non minimae; quae calore, frigore, quiete^
+<lb/>motuque corpus immutant, Ubi enim ambiens aer calidus^
+<lb/>est et animal exercetur, alimento plurimum destitui difflarique
+<lb/>contingit E contrario quum ambiens frigidus est et
+<lb/>animal non movetur, extimam cutem densari contingit ac
+<lb/>vel nihil vel omnino paucum per latentes meatus effluere;
+<lb/>eoque in latebris degentia alimento non indigent, ntpote
+<lb/>quum frigida sint, otiofa et toto corpore crassa degantque in
+<lb/>quiete, cutis autem exterior hiberno algore densetur, quo
+<lb/>tempore in latebris agunt animalia, fit ut nihil foris essiuat.
+<lb/>Quare nec eo quod impleat evacuatum indiget, alioquin
+<lb/>alimento opus esset, eamque ob causant id animalia expetunt,
+<lb/>inediae ex vacuatioue factae medicantia. Itaque uemlui dubiom
+<lb/>est inediae causam esse evacuationem; quae per totam
+<lb/>sit superficiem ulumque ciborum, al id quod vacuatur
+<pb n="11.185"/>
+<lb/>repleatur. Quum itaque cauta interit, ob quam plane animalia
+<lb/>cibis indigebant, necessarium prorsus est etiam usum
+<lb/>una aboleri: unde sit ut qui in latebris agant, cibis non indigeant,
+<lb/>quoniam ne appositione quidem. Clare igitur didicimus
+<lb/>inediam vacuare non posse, sed cutis raritatem. Hanc
+<lb/>autem si deusaveris otio et frigore, quae famis cruciatus ad-.
+<lb/>huc utilitas restat? Atqui necessarium ambo cavere et exercilia
+<lb/>et omnem calefactionem, cui de sputo- sanguinis periculum
+<lb/>est: etenim validus conatus venas disrumpere solet, cafinitas
+<lb/>autem qua ratione etiam balnea offendit. Itaque non
+<lb/>corpus calefaciendo evacuabis, sed vel exercitiis vel balneis
+<lb/>calore excitato maxime laedes venas ipsas rupturae opportunas.
+<lb/>Quid itaque deinceps adhuc ita laborantibus
+<lb/>consulemus? siquidem inediae, nisi homo exerceatur,
+<lb/>vel alio queris modo incalescat, vacuare nequeunt. Sanguinis
+<lb/>autem missionem ut consuevimus extreme vitamus,
+<lb/>sicut, opinor, validas purgationes, Mirum autem est quanta
+
+<pb n="11.186"/>
+<lb/>evacuantium praesidiorum quae inediae adiunguntur .ecpia
+<lb/>suppetat. Bi autum hac sola non vacuet, illa vero
+<lb/>eum quibus vacuare sidet, plus noxae quam commodi vaouando
+<lb/>praestant.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

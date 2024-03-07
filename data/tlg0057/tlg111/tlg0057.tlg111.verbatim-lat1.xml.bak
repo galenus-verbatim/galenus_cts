@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Quod qualitates incorporeae sint</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg111.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">19</biblScope>
+              <biblScope unit="pp" from="463" to="484">463-484</biblScope>
+              <date>1830</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="403" to="406">403-406</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="60" to="67">60-67</biblScope>
+              <date>1638</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x08">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg111.verbatim-lat1">
+<pb n="19.463"/>
+<div type="textpart" subtype="book" n="1">
+
+<pb n="19.463"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENO ADSCRIPTUS LIBER
+<lb/>QUOD QUALITATES INCORPOREAE
+<lb/>SINT.</head>
+
+
+<p rend="indent">Quum nihil rerum mearum ignotum tibi
+<lb/>velim, ne si id quidem minimum este videatur, ipsam enim
+<lb/>abscondere aliquid amico non minimum est, concertationem
+<lb/>mihi cum quodam susceptam tibi manifestare volo,
+<lb/>cum decenti accuratione meo officio perfuncturus: ferino
+<lb/>enim qui ex improvisu habetur diligentia caret, praetertimque
+<lb/>si quibuscum is habetur ii de gloria concertent
+<lb/>et victoriae aemulentur. Erat vero de qualitatibus ferino
+<pb n="19.464"/>
+<lb/>deque accidentibus omnibus, quae Stoicorum posteri esse
+<lb/>corpora proferunt. Adversos quos dicere haec oportet;
+<lb/>num quum quis corpus dicit, quamprimum intelligere nobis
+<lb/>evenit triplici contentam spatio substantiam fetidam:
+<lb/>si solum hoc dicat triplici contentam spatio nem erit ut
+<lb/>corpus magis intelligamus id quod dicitur quam vacuum
+<lb/>et locum: oportet vero definitiones et descriptiones logicasque
+<lb/>demonstrationes quorundam esse et earum solum
+<lb/>rerum demonstrativas quas demonstrare volumus cum aliis
+<lb/>haud communes , quandoquidem non de communibus rationem
+<lb/>reddimus: quod autem commune est id manifestum
+<lb/>quod triplici spatio contentum dico corporis vecuique et
+<lb/>loci id Stoicos concedere necesse est, qui scilicet vacuum
+<lb/>in tractatu <hi rend="italic">rerum</hi> existentium naturae reliquerunt quamvis
+<lb/>in mundo id esse non asserant; ceteros vero philosophos
+<lb/>intelligere id omnino necesse est; quo modo enim
+<lb/>vacui naturam negarent si neque ipsum omnino mente
+<lb/>conciperent ac intelligerent ? Si vero intelligunt,non aliud
+<lb/>quidquam intelligere dicent, si verum fateri volunt omnes,
+<pb n="19.465"/>
+<lb/>corpus qnemadmoduminon sine tempore; patet neque id
+<lb/>sine loco et hoc ipso quoque triplici contento spatio, ut
+<lb/>in te ipfum rem triplici contentam spatio suscipiat : ejus
+<lb/>rei testimonium est sensibilium corporum unumquodque:
+<lb/>quod enim verbi gratia cubitali longitudine, palmati latiordine
+<lb/>et quatuor digitorum altitudine corpus est, idoneo
+<lb/>loco eget, qui ipsum excipiat: hoc nobis statutum sit et
+<lb/>de ratione corporis omnis speculandum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Quum talis vero de corpore intelligentia
+<lb/>sit et secundum hanc oratio definitiva, patet quemque esse
+<lb/>fateri paratum nisi litigiosus fit, non eandem rationem
+<lb/>accipere neque intelligentiam , nec horum singula, id est
+<lb/>spatiorum trium , aequalem naturam habere neque eandem
+<lb/>definitionem accipere neque omnino corpus dicere liceto
+<lb/>ipsam corporis longitudinem praeterquam Iane per com.plexum,
+<lb/>fed corporis accidens: simili vero in latitudine
+<lb/>altitudineque et gravitate et figura ratio est et in reliquis
+<lb/>ut summatim dicam qualitatibus accidentibusque , fed
+<lb/>secundum aliquos sine corpore haec neque esse neque intelligi
+
+<pb n="19.466"/>
+<lb/> : quod si consideraverimus horam unam omnia sacere,
+<lb/>producere et nihil aliud esse dicere quam unum folum
+<lb/>corpus erit absurdum : innumerae namque tunt fissistantiarum
+<lb/>naturae secundum proprietatem et qualitatum
+<lb/>accidentiumque quae <hi rend="italic">inter su</hi> differunt variaque sunt et
+<lb/>contraria. In his igitur nullum alteri idem dicamus, ubi
+<lb/>nobis est sermo de differentia: praeterea si figuram eorpori
+<lb/>accidentem corpus . dicemus patet nos corpus corpori
+<lb/>accidere dicturos quod absurdum est; quod enim eorum
+<lb/>substantiam magis quodve accidens dicemus ? .Si
+<lb/>vero unicam habemus intelligentiam corporis ut corporis .
+<lb/>qui figuram corpus dicit aut vacuum intellectu nomen deaceidente
+<lb/>profert aut univoce cum corpore nominat:
+<lb/>utrumque vero absurdum est i etenim significat aliquid
+<lb/>quamobrem nomen est et notionem aliquam indicat a corpore
+<lb/>divertam , etsi non est a figura superabile corpus.
+<lb/>Similis autem in reliquis accidentibus ratio est, coloribus,
+<lb/>saporibus, odoribus olfactum spectantibus et ad auditum
+<pb n="19.467"/>
+<lb/>vocibus, verbis, sibilis, stridoribus, popyfmis , gemitibus,
+<lb/>crepitibus, rhochafmis, bombis, lenis, strepitibus. Si
+<lb/>vero quispiam dicat ipfa haec et quae salia funt omnia
+<lb/>esse quodam modo percussum aerem , huic illud Menandri
+<lb/>objicere fas est, haec o nequam perdidit id, quod non
+<lb/>sine corpore tale aliquid intelligitur. Quod ego quoque
+<lb/>confiteor: nego tamen rem habentem unam et eandem
+<lb/>habitae rei existimandum esse: neque enim Cleanthes tuberculum
+<lb/>erat, cum hoc ei contigisset ipfo in morbo:
+<lb/>neque Chrysippus etiamnum Epicurus stranguria postquam
+<lb/>contigit his ex hoc morbo vitam averti : neque igitur aeris
+<lb/>percussio aer est, fed et natura differt et intellectu et
+<lb/>definitione quid fit horum utrumque declarante. Quod
+<lb/>vero diverfae sint inter fe et a corpore figurae petam in
+<lb/>praefenti testes ad hunc sermonem. Aliam geometrae circulo
+<lb/>caeterisque figuris definitionem reddunt, aliam corpori
+<lb/>, quarum rerum . diversae rationes tum significationesque
+<lb/>Iongeque ante animi conceptus. haec omnia quo
+<pb n="19.468"/>
+<lb/>modo unum esse quis sapienter dicet? vel, si quae eorpori
+<lb/>accidunt, corpora dicemus quorum alicui accidere
+<lb/>dicemus : utrum haec ex iis sunt quae ab omnibus corpora
+<lb/>nominari solent cum omnibus his communicatione
+<lb/>aut singillatim cuique corpori? utrumque enim absurdum
+<lb/>est, sive haec corpoream substantiam habeant sive dicantor
+<lb/>corpori accidere. Si . igitur corpora accidentia
+<lb/>sunt, omnia entia corpora nominaremus, non autem
+<lb/>alia accidentia, alia corpora; si vero non corpora,
+<lb/>sed aliqua alia, non igitur ipsum accidens corpus est: vel,
+<lb/>si cum omnia haec corpora sint, his ipsis quod vere ab
+<lb/>omnibus corpus vocari consuevit accideret: id vero simiIiter
+<lb/>dixeris atque illud audiveris , si indivisibile manere
+<lb/>omnibus his accidere dicatur, non in aequales numeros
+<lb/>divisis; hoc enim nec aliquid temporis sine dubitatione
+<lb/>mansit ne minimum quidem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Contra quidam existentibus rebus accidere
+<lb/>dicunt; at si quis hoc ut absurdum fugiens aequali
+<lb/>numero dicat vocatis accidentibus, quae et ipsa vocat corpora,
+
+<pb n="19.469"/>
+<lb/>substantiam accidere, nescit fe rerum naturam conceptumque
+<lb/>immutare, si corpora accidentia dicat corpusque
+<lb/>accidentibus accidere , accidensque corporibus corpus faciat.
+<lb/>Quare et jure dubitare quempiam dico et dicere
+<lb/>oportere, sive aequali numero accidentibus divitum sit id
+<lb/>quod dici corpus felat, singulis herum proprium quoddam
+<lb/>accidit, alia corporis pars, alii accidentis parti accidet:
+<lb/>aut si accidentia corpora funt, omne vero corpus in iufinitum
+<lb/>dividitur, singula horum infinitorum corporum omnibus
+<lb/>aliis accidentibus, cum haec quoque corporata sint
+<lb/>accident. Considera quam multa absurda eveniunt : corpus
+<lb/>corpori accidet, idemque cum unum putetur, infinitis:
+<lb/>simulque et totum et non totum: totum quidem si univesta
+<lb/>figura rotunditasque mali quanta est, omnibus aliis
+<lb/>quae malo accidunt, accidat, non totum vero si ex insiuilis
+<lb/>membris singula non eadem ei funt ex quo dissecta
+<pb n="19.470"/>
+<lb/>funt : vel si corpus mali corpus est et figura colorque et
+<lb/>odor et gustatum spectans sapor et unumquodque horum
+<lb/>lu infinitum scinditur per se , an non ex infinitis malis
+<lb/>compositum erit quorum unumquodque et rotundum erit
+<lb/>non aliter quam totum malum ? siquidem ejusdem particeps
+<lb/>est figurae pallidumque dulceque verbi causa aut
+<lb/>austerum taleque ad olfactum esse et rursus singulae infinitae
+<lb/>partes malum erunt; si omnia haec habent: -ex infinitis
+<lb/>igitur certioribus et potus malis compositum erit
+<lb/>quod oculis malum elucet, quae res multis modis ridicula
+<lb/>esu Verum sane et partium. unaquaeque rotunditatem non
+<lb/>habens , non. erit amplius malum , sed pars mali , cum
+<lb/>figura enim rotunda erat malum: si vero unum malum
+<lb/>solum est ex unica corporea substantia, multis vero diversis
+<lb/>accidentibus constabit , an non manifestum est nuilum
+<lb/>corpus esse ? utrum horum singulum proprium locum
+<lb/>obtinet au omnia eundem? si proprium, patet neque proprietatem
+<lb/>qualitatemque inter fe habere mutuo commuoleatam,
+
+<pb n="19.471"/>
+<lb/>neque malum esse in rotundum formatum, neque
+<lb/>pallore coloratum , neque ad gustum fe certo modo .aut
+<lb/>ad olfactum habere i si vero -simul omnia funt et unum
+<lb/>locum occupant, proprietatum confusio est, ut. in composilis
+<lb/>mistisque e pluribus et diversis speciebus medicamentis,
+<lb/>in quibus proprietas qualitasque uniuscujusque mistae
+<lb/>materiae sincera non servatur, fed unum quoddam undique
+<lb/>fit: non igitur sincera est singulorum cognitio generum;
+<lb/>hujus rotundae mali figurae, coloris hujus et singulorum
+<lb/>accidentium caeterorum : itemque magis nisi appo- .
+<lb/>sitae inter fe tangant hae partes, fed per totas totae mistae
+<lb/>sint propria uniuscujusque qualitas perit, fed neque mistionem
+<lb/>licet hanc proprie dicere : quo molo enim si per
+<lb/>fe proprietates aliquae unitae non funt atque detentae,
+<lb/>haec mista dicenda funt? lpfum vero infinitum intenditur
+<lb/>orationis, si et longitudo corporis corpus est, si latitudo
+<lb/>et profunditas^: simul enim infinitae inquam erunt
+<lb/>corporum infinitudines in brevi loco ad tensum circum-scripto
+
+<pb n="19.472"/>
+<lb/>itemque multorum horum magisque infinitorum
+<lb/>corporum multitudo.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">An igitur sempiterna quomodoque tulistantiam
+<lb/>primam qualitate carentem amplius dicent, ex
+<lb/>qua et mundum ipsum et unamquamque; speciem particularem
+<lb/>saetam esse dicunt? an e tempore quodam facta. esit
+<lb/>et omnia in idem convenerunt, ut ex cooperatione fyucrimata,
+<lb/>hoc est rescompositae, fiant? verum hoc quoque
+<lb/>maxime absurdum esse dicimus idemque multis modis:
+<lb/>primum quod non unius esse materiae corpora videntur:
+<lb/>multae autem infinitaeque doctrinae communis substantiae
+<lb/>sunt, alia quidem figurarum specie infinitarum: alia vero
+<lb/>coloris hujusque innumeri secundum speciem , alia saporis
+<lb/>gustatum spectantis, cujus rursus interminata doctrina est:
+<lb/>alia vero ejus est qui ad olfactum attinet, cum hic quoque
+<lb/>varietatem plurimam habeat: infinitae igitur erunt in ipsis
+<lb/>infinitates et doctrinae qualitatum corporatarum : una autem
+<lb/>erat quae facta est, quam super incertasscilicet partiri
+
+<pb n="19.473"/>
+<lb/>oportet: quamquam quae necessitas est ut corporeae
+<lb/>fiant? antevertunt Iane corpus esse fubstantiaeque quaedam
+<lb/>factae, singulaque corporum horum in infinitum si
+<lb/>fecentur, quomodo infinitates infinitae concurrent et quando?
+<lb/>ipsum enim infinitum pertransiri non potest et lumen
+<lb/>corpus est et albedo calorque: omne vero corpus quotum
+<lb/>est et quantum et coaugesceutem naturam in te habere
+<lb/>videmus : incalescensque a side aqua cumulatior majorque
+<lb/>fit, ut majori loco egeat:. quo modo vero in angustum
+<lb/>locum nec milli verbi gratia corpus excedentem figuratio,
+<lb/>reliquorumque accidentium singula conveniunt; simulque
+<lb/>spirare et ab aeterno neque mutari deberent in univerfum
+<lb/>neque corrumpi: iptum enim aeternum immutabile
+<lb/>est, quales sunt deorum naturae: si vero hoc verum est,
+<lb/>quo modo aliquam transformabimus verbi gratia ceram?
+<lb/>quidque fiet , fi cum quadrancula sit rotundam eam efficismus?
+<lb/>an substantiae figura quadrangularis erat? si enim
+<lb/>substantiae cerae ante erat, nunc rotunditas est unde haec
+<pb n="19.474"/>
+<lb/>venit? et qua causa inducta tum est? si per corpus abfurdum
+<lb/>id est: corpus enim per corpus ire -cogitationem
+<lb/>fugit: si quis renitentiam instituat, id proprium corporis
+<lb/>est, ut de hoc ratio praecipue docet: si per vacuum, abfurdum
+<lb/>nihilominus est tum quoniam nihil esse in mundo
+<lb/>Stoici vacuum dicunt tum etiam quia rotunditas est corpus
+<lb/>et reliqua habet accidentia et figuram quae et ipsa
+<lb/>ructus ex altera corporata figura, fore ut sit patet et
+<lb/>illa ex altera et hoc in infinitum: et si ex rotundis, quae
+<lb/>in infinitum sedantur figuris , aggregatum hoc visui nostro
+<lb/>rotundum factum constat, fabulam considera quantaque
+<lb/>figmentum hoc infinita sequuntur: si non ex rotundis, quo
+<lb/>modo ex his aliquid rotundum fit? ridiculum quoque^ est
+<lb/>si dicas in figuras rotundas figuram rotundam dividi eo
+<lb/>contra id teste adhibito, quod quadrangulum in quadraugula
+<lb/>non dividitur: quid vero in transfiguratione. cerae
+<lb/>dicent? utrum inter fe cedunt una cum intellectu divestorum
+
+<pb n="19.475"/>
+<lb/>corporum figurationes? et quo modo non ridieclum
+<lb/>tanquam animatas et rationales substantias exire cedereque
+<lb/>inter te ceu- e constituto : magisque infinitum
+<lb/>etiam fit quod dicitur, si porrigimus una cum cogitatione
+<lb/>digitos et. contrahimus: si enim non accidens est pugnus
+<lb/>neque porrectio, led in corpora infinitas simul figuratas
+<lb/>figurationes abscedere accedereque dicere oportet : quod si
+<lb/>duas solas esse dicas nec numero aequales secundum porrectiones
+<lb/>et contractiones, adhuc varie infinitum est quod
+<lb/>dicitur, adhucque magis infinitum nisi contractionis per-.
+<lb/>rectionisque figurationes accedant: sed altera ex manu altera
+<lb/>defluit: oportebat enim momento temporis ordinem
+<lb/>dissolvi , inter se latenter ab hoc cedentibus corporibus.
+<lb/>Ad hoc vero dicent, si quidem communitatis</p>
+<p rend="indent">causa fiunt effectitia corpora, quonam pacto acetum fiat?</p>
+<p rend="indent">quo modo vero incoctiouem parat? quo modo abit?</p>
+<p rend="indent">unde veniunt effectitia qualitatis aceti corpora? si</p>
+<p rend="indent">vero una res cum vino erat , quo modo tunc vinum erat
+<pb n="19.476"/>
+<lb/>et nun acetum? Signum quaedam ex utroque tertia qualitas
+<lb/>est quae neque vinum neque acetum est, sive per s
+<lb/>missionem temperatura est, sive ner appositionem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Ad ea quae absurda dixi nihilominus etiam
+<lb/>dicere oportet substantiam esse e multis variisque et disiferentibus
+<lb/>atque contrariis iufinitisque aut felis ηοψ infinitis
+<lb/>numero syncrisibus , id est concretionibus, compositam
+<lb/>itemque in infinitas rursus syncrifies divisam, unam
+<lb/>hanc quandam quae cernitur verbi gratia mali naturam,
+<lb/>quam Stoici primam materiam primamque substantiam
+<lb/>dicunt, ex qua mundum ac in eo rerum unamquamque
+<lb/>femper faciam esse asserunt, quemadmodum qualitates eerul
+<lb/>pus erant, quomodo non erat haec quoque qualitas? siquidem
+<lb/>qualitatem habebat: si alias qualitates non habebat,
+<lb/>scilicet omnino inesset pondus quod corporis esse dicunt.:
+<lb/>quo modo simplicem etiam primam substantiam dicunt,
+<lb/>non autem compositam? Si vero terminatum esse dicunt
+<lb/>terminisque utentem, patet huic figuram esse:. absurdum
+<pb n="19.477"/>
+<lb/>enim est propriis circumscriptum terminis corpus non feeundum
+<lb/>figuram omnino esse: et si non mente conciperetur
+<lb/>hoc aptum secundum suppositionem : quare si noverunt
+<lb/>hic omnia, haec vero tuor, ut dicunt hi, corpora, neque
+<lb/>qualitatis expers scilicet neque simplex erat, verum
+<lb/>multorum et diversorum - corporum conventus erat atque
+<lb/>syncrima: sic vero nihil non mistum erat secundum ipfos:
+<lb/>sin autem nihil- horum habebat primum quidem animo
+<lb/>incomprehensibile et praeter nomen nihil est : fi enim tale
+<lb/>este non oportet nihil est: si quale non autem dimensiones
+<lb/>tres habere et figuras, omnino huic accidens proprium
+<lb/>cogitationem fugit neque grave hoc esse neque leve. Non
+<lb/>minus absurdum, si quispiam dicat hoc habere simul
+<lb/>utrumque et fecundum eadem , non ad diversa comparatum
+<lb/>v neque illa substantiam habente eorum quae ab ipfa,
+<lb/>ut inquiunt, facta sunt, cum singula quatuor qualitatem
+<lb/>prima habeant: rationabilius enim est, -si qualitatis expers
+<lb/>erat, quae ex ea fiunt fingunturque, illam non haberer
+<lb/>si vero nec illa hanc haberent neque unum secundum fuppositionem
+
+<pb n="19.478"/>
+<lb/>Eunt, aethereus vero ignis ille esset a quo et
+<lb/>elementa et mundum facta esse dicunt, quo modo haec
+<lb/>sete habent genita effectaque et ficta non magis auri qualitatum
+<lb/>figulus iis quae e luto fingit circumponet.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Medicus igitur auctor unus de multis medicamentis
+<lb/>aequam qualitatem omnibus habentibus divertum
+<lb/>qualitate medicamentum per mistionem efficit: Iovem
+<lb/>autem negant etiam miscere primae substantiae figurationem
+<lb/>longitudinemve aut aliud aliquod accidens: si vero
+<lb/>miscet, cum entia quoque ipsa sint haec aeterna esse
+<lb/>patet: quo modo dicunt solam primam materiam aeternam
+<lb/>esse qualitatis expertem , non vero reliquas qualitates
+<lb/>omnisque accidentia? neque enim effectorum esse veluti
+<lb/>manualem artificem Iovem dicunt, fed tutum per materiam
+<lb/>totam illabentem rerum omnium creatorem factum divinique
+<lb/>ignis quantitatem et singula quae quantitati accidunt
+<lb/>longitudinem latitudinemque et profunditatem itetnque
+<lb/>ejus rationabilitatem et beatitudinem: si substantias
+<pb n="19.479"/>
+<lb/>esse dicent et corporeas eas fatebuntur e corporibus Iovem
+<lb/>constare patet nec simplex esse , sed fyncrima ; si vero sine
+<lb/>substantia naturas ipsas in accidentibus dicent, confirmatur
+<lb/>quod a. nobis dicitur, non corporatam naturam accidentibus
+<lb/>esse neque qualitatibus : si vero transformans fe
+<lb/>ipse Iupiter aequali cum iis numero quae dixi accidentibus
+<lb/>mutationes infinitarum qualitatum subit, pejor fabulis
+<lb/>narrato Proteo est: hic enim in paucas naturas seipsum
+<lb/>transponebat transformabatque easque non indecoras.</p>
+<p rend="indent"><hi rend="italic">Jubati in primis furinam capit ille leonis</hi>.</p>
+<p><hi rend="italic">postque draco pardusque suit</hi>, sus <hi rend="italic">deinde sit ingens</hi>.
+<lb/><hi rend="italic">Humida factus aqua esi atque arbor suondibus alta.</hi></p>
+<p>llle autem nihil tam turpe est quod non fiat, per virum
+<lb/>quidem imprudentem imprudens scilicet est, per lenteotiam
+<lb/>autem de turpi turpia efficiens: per animalia iuratiouabilia
+<lb/>in ferinam naturam verius : per lapides et ligna
+<pb n="19.480"/>
+<lb/>expers animae factus: per. foeda tractantem abominabilis
+<lb/>natura itemque inutilis. Si ipse vero utpote materiam
+<lb/>transformare, figurareque et facere quaerit, quomodo potest
+<lb/>haec ipfa facere non r magis quam fictor statuam auream
+<lb/>e plumbo facere potest? Illoque amare contentiosis viris
+<lb/>non abfurdum est: etenim si motus dum accedunt corporibus
+<lb/>rurfusque recedunt corpora esse dicunt, jam ut
+<lb/>dicamus hora est, moveri nos praecedentibus corporibus
+<lb/>rurfusque ab ipsis quiescere, deinde dum assectus accedunt
+<lb/>rurfusque recedunt dicuntque haec corpora esse, quomodo
+<lb/>non ridiculum est pruritum dicere corpus nec solum quod
+<lb/>scabit, sed etiam quod scabito r.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Sed quoniam fine corpore et agente et
+<lb/>patiente nullus assectus fit, eo capti funt ut et affectus
+<lb/>ipsios corpora vocent: verum super modum nominandi per
+<lb/>relationem sic nominarent neque ego in illos inveherent
+<lb/>novi enim sic quoque vitem dici albam per relationem ad
+<lb/>albos ab ipfa factos racemos et mala tempora propter cal
+
+<pb n="19.481"/>
+<lb/>amitatis quae in his accidunt, et noctem auxilii expertem
+<lb/>, in qua auxilium non assequimur: si vero primum
+<lb/>principaliterque vocent errant: rem enim figuratam corpus.
+<lb/>dicimus affectamque et motam, non autem figuram
+<lb/>assectumque et motum r neque pugnant esse corpus fed
+<lb/>manus quodam modo figuratas: itemque facient adversus
+<lb/>eos qui dicunt neque facere corpora sed sola incorporea.
+<lb/>Quid ad Aristotelem ? qui et ipsis generalem rerum
+<lb/>divisionem faciens alias esse substantias dicit, alias aceidentra.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Quid ipsi quoque sibi volentes dicunt
+<lb/>substantias et accidentia; si et haec corpora dicunt quae
+<lb/>neque ut partes corporis corpora nominantur , veluti manus
+<lb/>digitusque neque veluti in talento mina? si quidem
+<lb/>figuram hominis corpus dicunt, jam tempus est ut animolitas
+<lb/>corpus dicatur generabileque et corruptibile rationabilitasque
+<lb/>atque prudentia Atheniensemque esse atque
+<lb/>in philosophia versari et Sophronifci filium esse simumque
+<pb n="19.482"/>
+<lb/>et calvum et prominens habere abdomen caeterisque acridentibus
+<lb/>paria numero, si corpora dicas ultra, Briareum
+<lb/>Typbonemque ipsum multiplicem magis magisque corpotatum
+<lb/>esse animal dices. Sique animalitas corpus est,
+<lb/>quo modo cunctis animalibus accidit ? quo modo ipfum
+<lb/>esse? quo modo in loco esse? ac si quemadmodum proprium
+<lb/>locum occupat transparens corpus omnis oculus,
+<lb/>sic et accidentia singula, id absurdum est; sic enim horum
+<lb/>admistio nulla aliqua ipsorum natura efficietur: dissicileque
+<lb/>est, ut dixi, si omnia locum unum occupare dicas, confusa
+<lb/>enim dum miscentur in vate alteritatem. non ferverent
+<lb/>neque tuam unumquodque naturam, ut in mistis medicomentis
+<lb/>fieri dixi: utrum inquam totum animalitatis corpus
+<lb/>tam multorum accidentium singulis accidit, au prout
+<lb/>numero pari dividitur? utrumque enim absurdum esse praecedentia
+<lb/>verba demonstrarunt. Quid autem inquam egent
+<lb/>corpore singula eorum , si ipsis. esse corpora dicunt ?</p>
+
+<pb n="19.483"/>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">lnde vero accidens nullum esse corpus
+<lb/>dssceres; oculis enim occlusis corpus- quidem tactu spatio
+<lb/>temporis deprehendimus, colorem vero aut saporem non
+<lb/>una deprehendimus neque figuram corpus tangentes. oportebat
+<lb/>autem singula haec a materia non tactus comprehensione
+<lb/>deprehendi: neque enim ratione mali, verbi gratia,
+<lb/>rotunditas speculanda esu Similis de sapore ratio
+<lb/>esu Ac si unumquodque accidens corpus est, quid sibi
+<lb/>volentes inquiunt solum corpus in infinitum dividi, non
+<lb/>autem figuram dulcedinemque , verbi gratia,- et quae reliqua
+<lb/>tunt? non connexionis modo dico neque relationis
+<lb/>ad id quod corpus vocari siolet, fed recti modo. Cur
+<lb/>vero folius, ut dixi, corporis hanc esse definitionem dieunt
+<lb/>triplici cum renitentia spatio contentum, non autem
+<lb/>colorem snccumque et saporem caeteraque accidentia singula
+<lb/>sic definiunt, si corpus omnia haec esse dicunt? etsi
+<lb/>enim specie differunt, communiter tamen omnia esse
+<lb/>corpora dicunt. Quemadmodum .igitur quum hominem
+<pb n="19.484"/>
+<lb/>definio, quum equum et bovem generabile animal , et
+<lb/>mortale dicam quae communia funt, proprietatem vero
+<lb/>singulorum addam: sic quoque accidentia singula - definientes
+<lb/>substantiam corporatam dicant triplici contentam fpatio
+<lb/>cum renitentia. Haec a Stoicis, chere Pindare, solvi
+<lb/>dignum puta, non alios siccum una trahere ut iisdem erroribus
+<lb/>implicitos , fed accusationes demolientes : non enim
+<lb/>est falsarum opinionum contradictio ipsa communicatio
+<lb/>ad amicos, fed salutio.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

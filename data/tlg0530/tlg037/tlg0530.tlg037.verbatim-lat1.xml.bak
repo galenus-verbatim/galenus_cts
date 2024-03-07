@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De diaeta Hippocratis in morbis acutis</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg037.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+        <monogr>
+          <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+          <author xml:lang="lat">Pseudo-Galenus</author>
+          <editor>Kühn, Karl Gottlob</editor>
+          <imprint>
+            <publisher>Cnobloch</publisher>
+            <pubPlace>Leipzig</pubPlace>
+            <biblScope unit="vol">19</biblScope>
+            <biblScope unit="pp" from="182" to="221">182-221</biblScope>
+            <date>1830</date>
+          </imprint>
+        </monogr>
+        
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+        <monogr corresp="Chartier">
+          <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+          <author xml:lang="lat">Galenus</author>
+          <editor>Chartier, René</editor>
+          <imprint>
+            <publisher>[s.n.]</publisher>
+            <pubPlace>Paris</pubPlace>
+            <biblScope unit="vol">11</biblScope>
+            <biblScope unit="pp" from="184" to="196">184-196</biblScope>
+            <date>1649</date>
+          </imprint>
+        </monogr>
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x11">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg037.verbatim-lat1">
+<pb n="19.182"/>
+<div type="textpart" subtype="book" n="1">
+
+<pb n="19.182"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE VICTUS RATIONE IN
+<lb/>MORBIS ACUTIS EX HIPPOCRATIS
+<lb/>SENTENTIA LIBER. .</head>
+
+
+<p rend="indent">Accessio quidem neque vim neque motionem
+<lb/>fed -tum quietem tum mitigationem indicat; atque
+<lb/>persuadendum potius quam cogendum est omnibus quae
+<lb/>movere queant praesidiis prohibitis. <hi rend="italic">Quum vero morbi
+<lb/>irruunt et laborantem et medicum a curationibus quiescere
+<lb/>oportet, ne quid mali esuriat</hi>. He particularibus etiam paroxysmis
+<lb/>his verbis vaticinatus esu <hi rend="italic">Quos per statos cir-</hi>
+<pb n="19.183"/>
+<lb/><hi rend="italic">cultus accessiones adoriuntur</hi>, iis <hi rend="italic">nihil dare oportet neque
+<lb/>eos cogere</hi>; quod est nulla re vim inserente utendum esu
+<lb/>Neque enim alimentum neque violentum quidquam in accessionibus
+<lb/>assumendum esse censet. Fortassis autem idem
+<lb/>docet his verbis : <hi rend="italic">quae iudicantur aut integre iudicata
+<lb/>sunt , ea neque movere neque medicamentis neque aliis
+<lb/>irritamentis innovare, sed sinere oportet.</hi> Satis sit paroxylmi
+<lb/>malum non concurrisse tum hoc tum quod ah arte</p>
+<p>- invehitur. Verum de indicationibus deinceps ratione differemus.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Jam vero hujusmodi temporum differentias
+<lb/>deinceps videamus; dicamus ergo morborum alios quatuor
+<lb/>.habere tempora natura acuta , alios vero non- quatuor producta,
+<lb/>nonnullos <hi rend="italic">denique</hi> ip forum tarditatem celeritate
+<lb/>compensare; hos quidem morbos in principio, illos vero
+<lb/>in fine, alios <hi rend="italic">denique</hi> ut fors tulerit. Quum enim in epidemtis
+<lb/>prius febrium ex ipfarum speciebus , continuarum,
+<lb/>intermittentium, tertianarum, femitertianarum vel quotidianarum
+
+<pb n="19.184"/>
+<lb/>, quartanarum et caeterarum differentias adduxiifet,
+<lb/>haec infert: <hi rend="italic">hi vero sunt istarum singularum</hi> su-
+<lb/><hi rend="italic">brium peraeque continuarum ac intermittentium modi et
+<lb/>status et accessiones. Primum enim . continua quibusdam
+<lb/>interdum incipiens storet ac viget maxime atque saevius
+<lb/>ingravescit</hi>;. <hi rend="italic">circa judicium vero ac statim in</hi> /<hi rend="italic">adicio iniminuitur.
+<lb/>Nonnullis vero interdum leniter et latenter incipit</hi>,
+<lb/><hi rend="italic">sed increscit singulisque diebus exacerbatur, sub sudicium
+<lb/>vero in ipfaque sedicio sutis emicat. Nonnullis
+<lb/>denique blande incipiens increscit et exacerbatur et quadantenus
+<lb/>vigorem adepta rursus ad judicium usuue et
+<lb/>sub judicium se remittit. Atque haec sieri in omni febre
+<lb/>omnique morbo contingit.</hi> Esto, haec quidem verba innuit
+<lb/><hi rend="italic">Hippocrates</hi> de continuis febribus ob certam notistatu ;
+<lb/>illae vero praedictae temporum. motiones non siclum
+<lb/>in omni febre , fed etiam in omni morbo contingunt.
+<lb/>Quare neque ab Erasistrato, neque a recentiorum aliquo
+<lb/>.discendum hoc nobis est et oculorum inflammationem et
+<pb n="19.185"/>
+<lb/>aurium dolorem suos habere circuitus, sed ab eo qui medicinam
+<lb/>invenit et absolvit. <hi rend="italic">Contingit enim haec sieri</hi>,
+<lb/>inquit, <hi rend="italic">in omni fabre et omni morbo.</hi> Quum autem inferret
+<lb/>omnem etiam morbum quatuor habere tempora, rationem
+<lb/>ad ufum reduxit his verbis: <hi rend="italic">ductis autem inde
+<lb/>scopis cibus offerendus est.</hi> Quia vero non ex his solum
+<lb/>victus instituendi rationem sumit, propterea addidit : <hi rend="italic">multa
+<lb/>vero et alia praecipua signa sunt his germana, de quibus
+<lb/>partim aliquando scriptum est partim scribetur; ad quod
+<lb/>ratiocinanti perpendendum et considerandum est cui horum
+<lb/>acutus ac letalis</hi> sit <hi rend="italic">morbus aut impendeat et cui adhibendus
+<lb/>nec ne et quando et quantus et quinam cibus sit osiferendus</hi>.
+<lb/>Et quis breviori oratione remediorum tropos
+<lb/>tradidisset quam ipfe Hippocrates qui perpendendum esse
+<lb/>ait: <hi rend="italic">quid, quantum et quando.</hi> In hoc enim ordo ac opportunum
+<lb/>tempus consistit. Qui ergo prius dat alimentum,
+<lb/>deinde blandam exercitationem imperat, is in quando
+<lb/>aberrat, nam quod praeiens occasio postulat, ad non exhibet;
+
+<pb n="19.186"/>
+<lb/>quo non indiget, id assumit. Verum qui ipsam
+<lb/>occasionem postposuerit , ipsi coniecturae -non feliciter
+<lb/>succedunt quae sunt ordinis. Sed de his quidem alias.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Nunc autem de temporibus disseremus, ubi
+<lb/>docuerimus quemadmodum a principio ad usque finem ty- .
+<lb/>pus omnis in orbem devenerit, primos ex libro de morbis
+<lb/>apponemus textus, quibus quum praenunciasset necessartum
+<lb/>esse scire quid sit opportunum tempus quidque intempestivitas
+<lb/>tum haec connectit. <hi rend="italic">At opportuna tempora,
+<lb/>ut semel dicam, in arte multa ac varia sunt, quemadmodum
+<lb/>et morbi et affectus et eorum curationes. Celerrima
+<lb/>vero sunt, quibus aut animo deicientibus opitulandum est,
+<lb/>aut urinam reddere vel stercus deiicere nequeuntibus aut
+<lb/>sustocantibus aut si mulierem parturientem vel abortientem
+<lb/>liberare deceat et quaecunque sunt ejusmodi. Atque haec
+<lb/>quidem acuta neque paulo post conferunt; nam plerique
+<lb/>paulo posterius intereunt. occasio igitur est, si quis ho-</hi>
+<pb n="19.187"/>
+<lb/><hi rend="italic">mitti in hujusmodi affectuum aliquem incidenti, priusquam
+<lb/>animam estlaverit, opportune opituletur</hi>; <hi rend="italic">id auxilium quum
+<lb/>opportuno tempore ceperit, iuvatur.</hi> Qui vero hoc facit,
+<lb/>is certe opitulationis opportunitatem Icit. Quidquid enim
+<lb/>aliquis opportuno tempore assumpserit, quod eo instanti
+<lb/>tempore assumptum est, is <hi rend="italic">propterea</hi> opem tulit. Quum
+<lb/>autem de acutissimis temporum opportunitatibus et prompta
+<lb/>auxilia postulantibus dixisset, deinceps et de protracto
+<lb/>tempore praecepta traditi <hi rend="italic">Alii autem morbi sunt qui opportune
+<lb/>matutino diei tempore curantur, nihsique refert
+<lb/>an summo mane an paulo posterius. Alii vero sunt morbi
+<lb/>quibus opportunum medendi tempus est semel die, sed
+<lb/>quando nihil quidem refert. Quidam etiam tertio quoque
+<lb/>die aut quarto , quidam etiam semel mense et alii quidem
+<lb/>tertio quoque mense , neque refert an terito ineunte aut
+<lb/>desinente id stat vel perendino novae aut decrescentis lunae
+<lb/>die. . Atque haec sunt opportuna tempora in quibus neque
+<lb/>aliam quam hanc accuratam diligentiam sortiuntur.</hi> Incepit
+<lb/>sane ab hypostest <hi rend="italic">seu statu</hi> quae in temporis puncto
+
+<pb n="19.188"/>
+<lb/>consistit; atque ita ad horas prodiit; ab horis ad dies,
+<lb/>et a diebus ad mentes, ipsus quidem lunae incremento
+<lb/>aut decremento numeratos. Quod fortassis quibusdam paradoxum
+<lb/>esse videtur, id ego magnam vim habere prodi- .
+<lb/>tutus sum ad morborum destructionem praecipueque diuturnorum,
+<lb/>in quibus artisici permissum est idonea tempora
+<lb/>exspectare ; id autem est caelestibus terrestria compati
+<lb/>simulque commutari; <hi rend="italic">conspiratio namque una est et consiuxio
+<lb/>una</hi> non siclum nostris in corporibus , verum etiam
+<lb/>in universis. Plantae namque et animantes mutationis
+<lb/>quae in ambiente aere movetur fiunt participes multoque
+<lb/>magis in lunae transfigurationibus ; ejus enim calor
+<lb/>terrae vicinior est, .unde nonnullorum animalium tum carnes
+<lb/>tum viscera una cum luna crescunt aliaeque universae
+<lb/>partes tabescunt, aliae colliquantur. Iudicis vero
+<lb/>sunt humana corpora multoque magis in morbis; sanitatis
+<lb/>enim robur tales morbos occultare potest. Morbi siquidem
+<lb/>ob detractionem <hi rend="italic">oborti</hi> decrescente <hi rend="italic">luna</hi> ad deterius
+<pb n="19.189"/>
+<lb/>signa dant; ex redundantia vero et affluentia crescente
+<lb/>luna premunt maxime. Quare praeclarum est artificem
+<lb/>ferre non solum in oceano mari recessum et accessum aquarum
+<lb/>fieri circa hujuscemodi lunae transfigurationes; verum
+<lb/>etiam nostris corporibus quandam inesse humorum reciprocationem
+<lb/>, in quibus crescente luna decet quae repleant
+<lb/>auxilia magis assumere, decrescente vero detractatione uti.
+<lb/>Contraria namque toto <hi rend="italic">genere</hi> pugnantia non aegrotantes
+<lb/>dumtaxat, verum etiam medicum evincunt. Sic enim
+<lb/>arti in opere divinum numen auxiliatur. . Quapropter
+<lb/>etiam orationem praedictorum comitem infert etiam ad
+<lb/>horarum ufque circum versionem, quum inquit: <hi rend="italic">intempesiivitas
+<lb/>autem est hujusmodi, quicunque assectus mane curandi
+<lb/>sunt si meridie curentur, intempestive curantur; tntempestiva
+<lb/>enim haec sunt, quod in deterius impetum habeant
+<lb/>propter curationem non in tempore adhibitam. Quicunque
+<lb/>vero celeriter sive meridie sive vesperi sive noctu curentur,
+<lb/>intempestive curantur; quod si vere curari opor-</hi>
+<pb n="19.190"/>
+<lb/><hi rend="italic">teat hieme curentur; aut si hieme deceat, aestate curentur;
+<lb/>aut si quod sum curari oporteat id ipsum digeratur ; aut
+<lb/>si quod differri oporteat hoc jam curetur pathema; haec
+<lb/>omnia intempestivam curationem subeam</hi>. Et haec quidem
+<lb/>obiter ac tanquam praeter sermonis tradendi propositum
+<lb/>dicta sinti .</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Jam vero fert animus opportuniora sicriptis
+<lb/>prodere. Sunt autem haec. Certa duo morborum
+<lb/>tempora tradit Hippocrates, alterum universale totius morbi,
+<lb/>alterum particulare cujusque paroxyfmi. Dicit ergo in
+<lb/>epidemiis necessarium esse ut totius morbi incrementum
+<lb/>et vigoris remissionem consideremus et ad utraque tempota
+<lb/>respiciendo .semper auxilia adhibeamus; atque hoc
+<lb/>facile in omnibus doceri potest; at in alimento demonstrabitur.
+<lb/>Alimentum enim optimum est in victus ratione
+<lb/>praesidium; id namque ceteris comparatum aeque pollet
+<lb/>ac omnia complectitur. Hujus rei testis est <hi rend="italic">Hippocrates</hi>
+<pb n="19.191"/>
+<lb/>qui alimenta diaetas appellavit , totius enim appellatione
+<lb/>partem exornavit. Verum tota haec oratio recentioribus
+<lb/>quidem medicis maxime contraria est, medicinae tamen
+<lb/>consentanea. Vult enim Hippocrates medicum a prioribus
+<lb/>cujusque morbi diebus scire quis morbus celeriter et quis
+<lb/>tarde ad statum perventurus- sit; quumque hoc praefciverit,
+<lb/>laborantis etiam vires consideret ac tanquam in quadam
+<lb/>tuae ipsius cogitationis trutina duo perpendat, num
+<lb/>aegre per initia tenui usus victu ad usque vigorem fuffecerit,
+<lb/>ita ut post principii tempus ad usque statum tenui
+<lb/>victu temper cibetur: <hi rend="italic">quum enim in statu viget morbus</hi>,
+<lb/><hi rend="italic">tum et tenui</hi>//i<hi rend="italic">mo victu utendum est,</hi> au vero prius deteceris
+<lb/>nec tenui victu ab initio etiam ad usque vigorem ductus
+<lb/>sustinuerit. Nam si futurum est aegrum viribus ante
+<lb/>vigorem exolui, primis certe diebus vires instaurandae sunt
+<lb/>quo possit aeger vigoris accessu tenuiter cibari. ld autem
+<lb/>de omnibus dictum non est , <hi rend="italic">in principio plenius cibandum
+<lb/>est,</hi> fed de iis in quibus futurum est ut vires circa
+<pb n="19.192"/>
+<lb/>morbi vigorem dissolvantur. Verum et hujus documenti
+<lb/>rationem discamus; ita namque ipfo audacius ad artis
+<lb/>opera utemur. Natura primigenium ac primarium tui
+<lb/>ipsius temperamentum fervens opportune cibos assumendos
+<lb/>appetit eosque assumptos probe concoquit atquerin universum
+<lb/>corpus distribuit appositionesque et detractiones commoderatas
+<lb/>efficit. Quum autem morbi inciderint ac fieditionem
+<lb/>et principatus dissolutionem effecerint, quantum
+<lb/>affectiones invaluerint tantum etiam natura laborat. Atque
+<lb/>circa morborum quidem principia exigua est naturalis
+<lb/>status eversio, ted magnum naturae robur; circa vigores
+<lb/>magna est status praeter naturam vis, multa vero naturae
+<lb/>infirmitas. Quare si quis a morbi principio tenui victu
+<lb/>deductus circa vigorem pleniorem victum viribus jam exhaustis
+<lb/>postulaturus sit, hunc in principio roborare cousnlit,
+<lb/>ut quam vigor assuerit tenuiter cibetur. Etenim
+<lb/>rationi consentaneum est in perarduo morbi tempore et
+<lb/>in quo potissimum natura pugnare creditur, paucus sit cibus
+
+<pb n="19.193"/>
+<lb/>quique oblatus tenuissime nutriat, qui neque in distrib
+<lb/>urione proritet neque copiosam appositionem efficiat, sed
+<lb/>irrigationum instar soletur universumque corpus permeet
+<lb/>neque labore neque tempore ad distributionem indigeat.
+<lb/>Non enim ut in particularium quidem paroxysmorum vigore
+<lb/>cavendae sunt alimentorum oblationes; sic et in universalium
+<lb/>morborum rigoribus plenius alimenta exhibenda
+<lb/>sunt. Sed adjacet, inquit, declinatio. Ego vero quid sit
+<lb/>quod futurum est non quaero, fed quid sit quod praesens
+<lb/>est; non enim quod humanius docet vigor, fed declinatio.
+<lb/>Morbi vis adeo cita est ut comprehendi nequeat. Nonne
+<lb/>saepius magnitudinem ignoramus etiamsi vires viguerint?
+<lb/>Haec certe plurimum eveniunt. Quod autem non omnes
+<lb/>circa principium velit pinguius nutrire, sed quibus foturum
+<lb/>est ut circa vigorem vires dissolvantur, patet ex iis
+<lb/>quae inseruntur. Quid enim ait? <hi rend="italic">Neque suae praeter
+<lb/>tempus licet neque vehementi</hi>/<hi rend="italic">simas vasorum vacuationes
+<lb/>efficere neque vigentibus morbis neque in insiammattonc</hi>
+<pb n="19.194"/>
+<lb/><hi rend="italic">consistentibus cibos offerre.</hi> Atque ruribus : <hi rend="italic">hoc igitur maximum
+<lb/>documentum este censeo, quod primi dies morbi hac
+<lb/>vel illa sorbitione non sint privandi in iis qui paulo post
+<lb/>his aut</hi> illis <hi rend="italic">sorbitionibus usuri sunt.</hi> Hoc autem praesumpsisse
+<lb/>decebat, quod de acutis ferme sit. Et paulo post
+<lb/>ostendit fe non in omnibus sied in quibusdam talem victnm
+<lb/>instituere his verbis: <hi rend="italic">haec igitur omnia magna sunt
+<lb/>testimonia quod aegrotos ad victum non. recte ducant medici ;
+<lb/>imo et in quibus morbis eorum nasia vacuare non
+<lb/>oportet qui sorbitionibus alendi sunt, evacuant</hi>; <hi rend="italic">et in quibus
+<lb/>ex va</hi>/<hi rend="italic">oruet vacuatione ad sorbitiones mutatio facienda
+<lb/>non sit, in iis mutationem suctum ac plerumque absolute.
+<lb/>Interdum autem his in temporibus ex casurum vacuatione
+<lb/>ad sorbitiones mutationem faciunt, in quibus suepe numero
+<lb/>expedit a sorbitionibus ad vasorum vacuationem accedere,
+<lb/>si ita morbum exacerbari contigerit.</hi> Hoc autem est vigoris
+<lb/>tempus in quo ob virium dissolutionem coacti a temaioribus
+<lb/>ad pleniora cibaria accedunt, quum tamen corpora
+
+<pb n="19.195"/>
+<lb/>ab inflammatione detineantur. <hi rend="italic">Neque sune praeter
+<lb/>tempus neque vehementi/stmus vasorum vacuaiiones moliri
+<lb/>fas est neque vigentibus morbis neque in in</hi>/<hi rend="italic">iammatione cibos
+<lb/>exhibere. Neque decet, inquit, incommoderatis prorogationibus
+<lb/>indulgere neque intempestive nutrire.</hi> In mullis
+<lb/>autem intempestivum maxime est adusque tertium diem
+<lb/>prorogare. Noxia quoque est quae alternis diebus sit nutumenti
+<lb/>oblatio. Ad eos enim ita victum instituentes
+<lb/>refpiciens haec omnia scribit. In principiis namque magnos
+<lb/>error est triduana inedia, qua tamen etiam Hippocratis
+<lb/>temporibus utebantur. Testis est ipsis Hippocrates rurfus
+<lb/>in <hi rend="italic">libro</hi> advenos Cnidiae sententias dicent: <hi rend="italic">at vero
+<lb/>novi medicos his quae maxime deceant contraria moliri.
+<lb/>Volunt enim omnes ubi in morborum principiis homines
+<lb/>duos aut tres aut etiam plures dies inedia praemaceraverint,
+<lb/>ita tum sorbitiones tum potus exhibere.</hi> Neque vero
+<lb/>arguit quod aliquos ad praedictum utque dierum numerum
+<lb/>protrahant, fed quod omnes. Quandoquidem ipsis ad
+<pb n="19.196"/>
+<lb/>tres et ad quatuor usque dies protrahit, fed protrahit quos
+<lb/>oportet. <hi rend="italic">instabiles enim febres donec constiterint sinere
+<lb/>oportet.; quum autem constiterint tum victu tum curatione
+<lb/>occurrere.</hi> Ita enim sorbitiones et potiones die confenlaneo
+<lb/>exhibet consulitque tertium et quartum diem cavendas
+<lb/>esse ; quandoquidem hi dies <hi rend="italic">recrudescentias</hi>, ut ipsis
+<lb/>pronunciat, <hi rend="italic">potissimum pariunt, tum quae ad instammatio-.
+<lb/>nem ac immunditiam incitant, tum quae ad febres tendunt
+<lb/>et quae aegrotos periclitantes faciunt; ac magni admodum
+<lb/>momenti perinde ac quoduis aliud hoc documentum esi.
+<lb/>Nam quae sunt in. arte medendi opportuni</hi>/<hi rend="italic">stma quibus id
+<lb/>non sit commune P Non enim ad ulcera salum, verum
+<lb/>etiam ad alios morbos complures pertinet, nisi quis et ceteras
+<lb/>morbos ulcera este protulerit; habet enim quandam
+<lb/>etiam aequitatem haec oratio</hi>. Videamus ergo quae fequuntur,
+<lb/>per quae patrocinatur iis qui cibandi tempus in
+<lb/>plures dies prorogant. <hi rend="italic">Atque sortassis aliquid etiam con/entaneum
+<lb/>ipsis esse videtur magna corpori oborta muta-</hi>
+<pb n="19.197"/>
+<lb/><hi rend="italic">itone . aliquam quoque admodum magnam mutationem contra
+<lb/>objiri. Ferum commutare quidem non parum bene
+<lb/>habet</hi>; <hi rend="italic">recte tamen mutatio transferenda et ex mutatione
+<lb/>ciborum exhibitio etiamnum magis.</hi> Recte ergo cum mutatio
+<lb/>in corpore facta est dilationem in tres usque dies
+<lb/>facientem laudat. Sed recte ex arte hoc facit quum asseorionis
+<lb/>genus et magnitudinem, anni tempestatem, regionem
+<lb/>et aetatem ac praecedentis diaetae ideam considerare subjicit,
+<lb/>quae certe ac firmissimae sunt mutationis diaetae indicationes.
+<lb/>Illud enim in mutatione observandum est non
+<lb/>ita primis diebus alimenti ^exhibitiones subducendas esse,
+<lb/>quum aeger et id assumere valeat et natura quod assumptum
+<lb/>est appetat et concoquat, ut postea per statum ubi
+<lb/>vires prope exsiolutas vides mutationem aggrediaris pugnareque
+<lb/>adhuc magis facultatem cogas quo tempore siorbitiones
+<lb/>quidem confici ab aegrotante nequeunt, si quando
+<lb/>illi iusseris eumque alimentis suffocaver<hi rend="italic">it.</hi> Videre namque
+<lb/>licet verbo quidem methodicos, fed re aut opere a methodo
+<pb n="19.198"/>
+<lb/>alienos medicos vinum et carnes dare ac tanquam in vas
+<lb/>inanimum alimenta infundere. At qui recte in principiis
+<lb/>protrahit ipsi quidem in vigore. etiam vires constantes perfeverant;
+<lb/>qui vero non idoneis prorogati oni bus usus fuerit,
+<lb/>ei circa principia etiam vires debilitantur partim
+<lb/>quidem morbi, partim vero imperitiae artificis violentia.
+<lb/>Ejusmodi quoque medicos aliis in locis hisce verbis loquutus
+<lb/>arguerat: <hi rend="italic">quid enim mali contingeret si manuariam
+<lb/>intercedam ii auferrent qui artis opera male admistrant</hi> ?
+<lb/><hi rend="italic">Al nunc citra causam aegrotis non sutis este vis
+<lb/>morbi visu est, nisi etiam medici accederet imperitia.</hi> ltaque
+<lb/>per morborum initia semper ita <hi rend="italic">alimenti</hi> dilationibus
+<lb/>uti oportet, ut ne quidem cogitandum sit circa vigores
+<lb/>morbos fore mitiores, etiamsi post dilationes easque maxime
+<lb/>quae plurium dierum funt cibus exhibeatur. Didicimus
+<lb/>autem et ex iis quae intulit; rationem enim connexuit.
+<lb/><hi rend="italic">rerum commutare quidem non parum bene habet, recte
+<lb/>tamen mutatio transferenda^ et ex mutatione ciborum ex-</hi>
+<pb n="19.199"/>
+<lb/>bibit<hi rend="italic">io etiamnum magis</hi>. A communi ratiocinatione si
+<lb/>recte fiat commutatio, hoc certe fequi quoque auxilium
+<lb/>oportet. Malum sane est in alterutro peccare, pejus tamen
+<lb/>est in additione. Audiamus et quae deinceps dicat: <hi rend="italic">-ad
+<lb/>haec autem et virium robur consectandum est et morbi
+<lb/>cujusque modus et hominis natura et aegrotantis in victu
+<lb/>consuetudo non in cibis salum, verum etiam in potionibus.
+<lb/>Multo autem minus ad. ciborum additionem procedendum
+<lb/>quandoquidem ipsus detractione omnino subducere suepenumero
+<lb/>conducit, ubi suffecturus est aeger donec morbi
+<lb/>vigor mitescat</hi>. Non enim erres hic considerandae sunt
+<lb/>an .phlebotomiam aut alvi vacuationem aut quidquam
+<lb/>aliud validum praesidium omnino ferre queant, Imo an
+<lb/>ex victus dilatione his neglectis perdurare ac morbi vigorem
+<lb/>subire valeat. Quare mihi ne dicas et ego vires infpicio.
+<lb/>Non enim ita inspicis ut oporteret. Quocunque
+<lb/>autem modo eas inspicis,. praeterquam quod nihil novi dicis
+
+<pb n="19.200"/>
+<lb/>etiam universalia ipsius <hi rend="italic">Hippocratis</hi> praecepta subvertis.
+<lb/>Quae igitur artificialis ratio est? <hi rend="italic">Coniectandum est an
+<lb/>aegrotus ex diaeta adusique morbi vigorem perdurabit et
+<lb/>utrum ille prius disiciet et ex diaeta non perdurabit vel
+<lb/>morbus prius</hi> de/<hi rend="italic">iciet ac obtundetur.</hi></p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Quum autem sitiret <hi rend="italic">Hippocrates</hi> non cujusvis
+<lb/>esse medici a primo morborum infultu nosse qui cito
+<lb/>et qui tarde vigorem subeant, multas ad hoc praecepta
+<lb/>dedit in omni suorum operum constructione, praecipue
+<lb/>vero in secundo epidemiorum dicens : <hi rend="italic">per initia morbo</hi>.-
+<lb/><hi rend="italic">rum an statim ipsi vigeant considerandum ; patet autem
+<lb/>ex incremento.</hi> Deprehendes, inquit, nitunt vigorem prope
+<lb/>aut procul esse, si probe incrementum consideraveris. . Qui
+<lb/>namque morbi lente paulatimque increscunt tardum; qui
+<lb/>celeriter adscendunt celerem vigorem denotant. <hi rend="italic">Morborum
+<lb/>autem incrementa ex circuitibus et</hi> crises <hi rend="italic">quoque hinc
+<lb/>manifestae stant.</hi> Per incrementa quidem vigorem agnolces,
+<lb/>incrementa vero per circuitus, Aliud enim est singulis
+<pb n="19.201"/>
+<lb/>diebus praesultum habere et aliud alternis diebus aut duobus
+<lb/>interjectis. Neque vero hoc tantum fatis fuit, sed et
+<lb/>artificiosiora adjecit. <hi rend="italic">Et in acce/stonibus per circuitus perpendendum
+<lb/>est si celerius accedant aut non ; si diuturniori
+<lb/>tempore aut non et num vexent magis aut non.</hi> Vult
+<lb/>enim ad praecelerantis aut immorantis vigoris praecognitionem
+<lb/>praedicta observari, hoc est utrum. acceleratum sit
+<lb/>incrementum an prope dimiserit; et utrum morbi modus
+<lb/>ad continuitatem propius accedat an longius absit a continuitate.
+<lb/>Ad haec et accessiones quae per circuitus fiunt,
+<lb/><hi rend="italic">an celerius an non,</hi> hoc est an celerius anticipent aut
+<lb/>subsequantur: tardius. Quae namque anticipant celeritatem
+<lb/>, quae subsequuntur tarditatem magis significant. Verum
+<lb/>quoniam quae anticipat accessio prius etiam desinere
+<lb/>potest, ob id-addidit: <hi rend="italic">et si longiori tempore an non.</hi> Praeterea
+<lb/>quum Iniret non tantum in accessionum longitudine
+<lb/>ac brevitate differentiam esse; verum et in vehementia ac
+<lb/>lenitate fierique posse ut in aequali invalionis dimensione
+<pb n="19.202"/>
+<lb/>vehementius aut lenius aliquis exacerbetur, idcirco addidit:
+<lb/><hi rend="italic">et num magis aut non.</hi> Quum videris magnum adoriri
+<lb/>incrementum ac fequi paroxysinum praecedenti tem- ,
+<lb/>per tum multo longiorem tum multo graviorem, scias vigorem
+<lb/>statim affuturum. <hi rend="italic">Etenim qui derepente intereunt;
+<lb/>celeriores sunt eorum crises quod celeres sint .dolores et
+<lb/>continui et vehementes</hi>. Ex contrariis autem contrarium.
+<lb/><hi rend="italic">Elerta/sis autem et ex ceteris rebus communibus quae qui-</hi>
+<lb/>dem <hi rend="italic">.celerius stant breviores sunt, quae vero tardius longiores.</hi>
+<lb/>At non siolum in epidemiis, verum etiam in aphori
+<lb/>Imis dat rationes, quibus praescire poteris vigorem prope
+<lb/>vel pronul esse. <hi rend="italic">Accessiones autem et status indicabunt
+<lb/>morbi</hi>, horum enim alii natura acuti, alii natura diuturni,
+<lb/><hi rend="italic">et anni tempestates</hi>. Quaecunque enim ipsis analoga, morbis
+<lb/>auxiliantur ; quum nihil pugnent, tum incrementa tum
+<lb/>rigores accelerant. Quocirca <hi rend="italic">accurate perdiscendum esi
+<lb/>bonum id esse, quod in statu ac morbo commune esi</hi>, accircultuum
+
+<pb n="19.203"/>
+<lb/>inter fe incrementa. Sed haec <hi rend="italic">quidem cum iis
+<lb/>quae</hi> in epidemiis <hi rend="italic">dicuntur</hi> communia sunt. <hi rend="italic">Praeterea
+<lb/>vero</hi> et aliam quandam rationem adliciet qua vigorem
+<lb/>noveris. <hi rend="italic">sed et ex iis mox apparentibus ut in pleuriticis
+<lb/>sputum, si statim initio appareat brevem fare denunciat;
+<lb/>si vero post appareat, longum. Concoctiones enim
+<lb/>crisis celeritatem sunilatisque securitatem significant. rorinae
+<lb/>quoque et defectiones et sudores et sudicatu suciles
+<lb/>ac difficiles et breves et longos morbos fare quum apparuerinl
+<lb/>demonstrant</hi>. Habes, inquit, rationum ubertatem,
+<lb/><hi rend="italic">si nostris</hi> in operibus vectatus fueris; nec solum celerem
+<lb/>vel tardum vigorem, verum etiam alia multa eorum quae
+<lb/>futura funt praenosces. Hoc dumtaxat prius accipe ac
+<lb/>tuto crede: <hi rend="italic">optimum esse ut medicus providentiam</hi> adbi-
+<lb/><hi rend="italic">beat</hi> non ad gloriam fotum, fed et multo magis ad curationis
+<lb/><hi rend="italic">rationem</hi>. His prius constitutis ad <hi rend="italic">artis</hi> opera orationem
+<lb/>deducit.</p>
+
+<pb n="19.204"/>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">At enim, <hi rend="italic">quibus statim vigor futurus esi
+<lb/>iis statim tenuis victus exhibendus</hi>. Non enim virium dif-solutionein
+<lb/>metuas ubi algor statim affuturus est, quemadmodum
+<lb/>in angina deprehenditur. Licet enim te totum
+<lb/>in morbum evertendum incumbere de viribus nihil venentem.
+<lb/><hi rend="italic">Quibus autem posterius vigor suturas est</hi>, iis <hi rend="italic">sub
+<lb/>ipsum vigoris tempus et paulo ante illud cibus subsirahendus
+<lb/>esi, antea vero plenius alendum quo aegrotus sutis habuerit</hi>.
+<lb/>Hic autem de utrisque simul, affectu scilicet et
+<lb/>viribus, coniectandum est. Plenius autem cibari est paulo
+<lb/>sulidius nutrire quam fiat in extreme tenui diaeta. <hi rend="italic">fn
+<lb/>exacerbationibus cibus subducendus est.</hi> His verbis documentum
+<lb/>valde curativum et ad aerem maxime spectans
+<lb/>tradit, hoc est incumbente graviori paroxystno nihil nutrimenti
+<lb/>apponendum esse. Sive enim per incrementa
+<lb/>temper fiant vehementiores paroxytmi, pulchrum fano est
+<lb/>viribus suadentibus ad ciborum detractiones accedere; sive
+<lb/>etiamnum quidem leviores, rutilis autem graviores fiant
+<pb n="19.205"/>
+<lb/>infirltus, ex arte rursum est ante graviorem paroxyfmum
+<lb/>non nutrire, sed fetuper post graviorem iuvasionem. lmo
+<lb/>per insultum exacerbari inquies morbum dato primis diebus
+<lb/>alimento atque ita quem aegrum curandum suscepi
+<lb/>laedam. At magis profueris si vires servaveris. omni
+<lb/>praesidio documentum coniunctum est. Quod enim juvat
+<lb/>id etiam nocet. Si ergo eum in principio nutrivere cui
+<lb/>.futurum est vires circa vigorem dissolvi, morbum quidem
+<lb/>aliquantulum augebo, at vires magnopere roborabo. Qui
+<lb/>vero opinatur vires non refici, fed morbum exacerbari, is
+<lb/>aegrotanti ex professo mortem allaturus esu <hi rend="italic">Qui autem
+<lb/>errores per initia committuntur non his peraeque sunt</hi> im- .
+<lb/><hi rend="italic">medicabiles, sed multo facilius emendantur.</hi> Patet ergo
+<lb/>quod non lubens in primis diebus ad alimenti exhibitionem
+<lb/>accedat, fed tanquam lu angustis quadam detentus
+<lb/>tempus commodissimum eligat. Quod si nihil ipte de viribus
+<lb/>vereatur artis maxime esse autumat ad tertium et
+<lb/>ad quartum usque diem nonnunquam etiam ad quintum,
+<pb n="19.206"/>
+<lb/>etiam ad longius tempus ciborum prorogationibus uti,
+<lb/>quum et virium robur adsit et morbi mores cogant multaque
+<lb/>fubsit humorum redundantia et loco pblebotomiae
+<lb/>vel aliorum vacuantium <hi rend="italic">praesidiorum longiorem</hi> cibi extussiendi
+<lb/>prorogationem eligimus. Quibusdam enim in diatrito,
+<lb/>quibusdam ante diatriton, nonnullis post diatriton
+<lb/>probe primum alimentum exhibitum esu Atque in universum
+<lb/>quidem symmetriam attingere opertet. Si autem
+<lb/>hoc fieri nequeat, ad plurium dierum dilationem magis
+<lb/>prehendendum est quam ad celeriorem ciborum exhibitionem
+<lb/>, si vires nihil dehortentur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Verum qui methodum adulterant, eorum
+<lb/>aliquis dicturus est ; ego vero vires observo ; cui respondere
+<lb/>licet: et quomodo vires spectas? Non enim conspicuae
+<lb/>funt. Saepius enim qui primo adspectu robustus conspicitur
+<lb/>imbecillus est ac viribus facile exsolvitur. Nam qur
+<lb/>robustus conspicitur non certe per ea quibus vires dignofcitur.
+<lb/>Assumis aetatem , anni tempestatem , regionem et
+<pb n="19.207"/>
+<lb/>similia. Nonne tibi licet pulsum tangere? At neque si
+<lb/>pulsum tetigeris cognostis, utrum in spiritibus aut in humoribus
+<lb/>aut in solidis partibus sint vires. Naturalibus
+<lb/>actionibus mentem adhibes, quo sitias a quot rebus vires
+<lb/>prohibeantur. Si autem nunc quidem valeant, posterius
+<lb/>- autem dissolvantur, praevideri poteris si naturae temperamenta
+<lb/>consideraveris vigores quoque praenoscere. Quod
+<lb/>si noveris alicui firmas quidem esse vires, alicui vero fanile
+<lb/>mutabiles dijudicabis alterum septentrionalem, alterum
+<lb/>meridionalem esse. .Quoties autem imbecillae vires deprehenduntur
+<lb/>an toties per alimenti detractionem roborantur?
+<lb/>Audi Hippocratem ignaros -medicos ita arguentem :
+<lb/><hi rend="italic">non enim video medicos talium rerum este ita peritos
+<lb/>qui ut oportet dignoscant in morbis imbecillitates</hi> ; et
+<lb/><hi rend="italic">quae ob vasorum vacuatmnem et quae ob aliud quoddam
+<lb/>irritamentum et quae ob dolorem et ab acumine morbi
+<lb/>oboriantur,. et quos affectus ac diversus - eorum species
+<lb/>natura nostra et habitus singulis pariat, quamvis haec</hi>
+<pb n="19.208"/>
+<lb/><hi rend="italic">cognita aut ignorata salutem aut mortem adferant</hi>. Non
+<lb/>enim parvum periculum est si ignoretur utrum vires per
+<lb/>indigentiam dissolvantur, ita ut cibi exhibitione indigeant;
+<lb/>an ob inflammationis magnitudinem aeger suffocetur, an
+<lb/>ob aliud quoddam irritamentum, hoc est ob eorum quae
+<lb/>assumuntur tum mutationem tum corruptionem. Quemadmodum
+<lb/>enim lucernae flamma et ob pinguedinis defectum
+<lb/>et ob copiosam confertam que effusionem extinguitur
+<lb/>quumque purum non est et argillofum: sic et qui
+<lb/>nobis innatus est calor quum natura existat flammae similis
+<lb/>et alimenti penuria et cepia et pravitate corrumpitur.
+<lb/><hi rend="italic">Et quos affectus et diversus eorum species nostra natura
+<lb/>et habitus singulis pariat</hi>. Quidam enim natura famelici
+<lb/>sunt;. quidam stomachum habent qui facile afficitur faci-
+<lb/><hi rend="italic">leque</hi> animo delinquunt et a minimis affectionibus magnopere
+<lb/>laeduntur et alimenti appositione^ femper indigent.
+<lb/>Atque aliae sunt privatim in singulis constitutiones. Quare
+<lb/>animadvertendum est ne quum in hujusmodi habitus lucidimus
+
+<pb n="19.209"/>
+<lb/><hi rend="italic">aliquem</hi> errorem committamus. illusus <hi rend="italic">siquidem
+<lb/>malum est siquis ob laborem et morbi acumen debilitato
+<lb/>potum aut sorbitionem copiosiorem aut cibum exhibent,
+<lb/>ob vasorum vacuationem imbecillum este arbitratus. fndecorum
+<lb/>autem est et ose vasorum vacuationem debilitatum
+<lb/>non cognoscere ac victu eum opprimere. periculum
+<lb/>enim quoddam affert et hic error, multo tamen minus
+<lb/>altero, sed mullo magis altero risu dignior hic error
+<lb/>est. si namque alius medicus aut etiam plebejus accesu
+<lb/>sierit et quae contingerunt cognoverit dederimus tum cibos
+<lb/>tum potus quos alter prohibuit, aperte auxilium attuli</hi>/
+<lb/><hi rend="italic">fe existimabitur. Talia artificum instituta maxime ab
+<lb/>hominibus vituperantur. ridetur enim ipsis qui accessit
+<lb/>medicus aut plebejus tanquam mortuum suscitasse.</hi> Flo-
+<lb/><hi rend="italic">rum igitur etiam signa quibus singula dignoscere oporteat
+<lb/>scribentum</hi>. De universalibus igitur morborum temporibus
+<lb/>et de prima alimenti exhibitione haec fatis sint.</p>
+
+<pb n="19.210"/>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Jam videamus quae de particularibus
+<lb/>paroxyfmis ac. quae de diaeta in his praescribenda decernuntur.
+<lb/><hi rend="italic">Quibus per statos</hi> ^<hi rend="italic">circuitus accessiones obortam</hi>— <lb/><hi rend="italic">tur nihil dare neque cogere, sed de ciborum oblatione
+<lb/>detrahere ante crises oportet.</hi> Atque hoc, <hi rend="italic">in ipsis paroxysmis
+<lb/>cibum subtrahere oportet, exhibere enim noxium</hi>,
+<lb/><hi rend="italic">Et quaecunque per circuitus exacerbantur in paroxysmis
+<lb/>subtrahere cibum oportet.</hi> In morbis lane per circuitus
+<lb/>vexantibus sive continui sint nullasque habeant intermissiones
+<lb/>sive ex quibusdam intervallis exacerbentur ac plane
+<lb/>recrudescant ; in paroxysinis tandem neque esculenta neque
+<lb/>poculenta neque diaclytmata danda funt. Quandoquidem
+<lb/>quidquid tunc offertur id morbi non corporis alimentum
+<lb/>futurum esu <hi rend="italic">siquis enim subricitanti alimentum dederit
+<lb/>fano quidem robur, aegrotanti vero morbus. Neque cogere</hi> ;
+<lb/>hoc est nulla re cogente uti. Solatio namque potius
+<lb/>quam violentia in paroxyfmis opus est ac remissionis
+<lb/>tempus exspectandum est in eoque vehementia cogentiaque
+
+<pb n="19.211"/>
+<lb/>remedia assumenda tuus, ubi vero paroxysnri inriderint
+<lb/>lenientia. Quemadmodum enim. ferae etiam valde
+<lb/>agrestes siquis ipsas placide adeat hlandeque demulceat
+<lb/>manfuetae redduntur; si vero contra ipsis irascatur violenterque
+<lb/>adoriatur agrestiores efficiuntur: ita et morbi quodammodo
+<lb/>agrestiores facti siquis eos in paroxyfmis soletur
+<lb/>ac mitiget, leniores ac mansuetos essicit; siquis vero reluctetur
+<lb/>ipsisque violentias inserat, excitantur exacerbanturque
+<lb/>ac <hi rend="italic">dijsiciliores redduntur.</hi> Propter has et alias hujusmodi
+<lb/>causas neque rebus cogentibus neque alimentis vult
+<lb/>uti in paroxysmis cogentibus partim quidem ob adjectionem
+<lb/>alimenti, partim vero ob perturbationem quae in disitributionibus
+<lb/>oboritur. <hi rend="italic">Et quaecunque per circuitus eracerbantur
+<lb/>in ipsis exacerbationibus cibum subtrahere oportet ;
+<lb/>exhibere enim noxium</hi>. Non Iulum autem dum adsunt
+<lb/>paroxystni nulla re quae movere aut addere possit
+<lb/>utendum esse censet, verum etiam neque dum mox futuri
+<lb/>sunt , fed dum deorsum inclinat morbus. Hocque sapietrter
+
+<pb n="19.212"/>
+<lb/>admodum in libro de morbis ac -praeterea in aliis his
+<lb/>verbis demonstrat: <hi rend="italic">quum autem impetu feruntur morbi</hi>,
+<lb/><hi rend="italic">tum laborantem tum medicum a curationibus quiescere
+<lb/>oportet, nequid mali inducatur.</hi> Sed haec omnibus dilncidiora
+<lb/>et ampliora in libro adversius Cnidias sententias
+<lb/>edidit. <hi rend="italic">occasionem- autem sorbitionis exhibendae tum per
+<lb/>initia tum per universum morbum hanc maxime obfervare
+<lb/>oportet. Quum pedes quidem /rigidi suerint , sorbitionis</hi>.
+<lb/><hi rend="italic">exhibitionem prohibere oportet, maxime vero et a potu
+<lb/>temperandum est. Quum vero calor ad pedes descenderit,
+<lb/>tunc dare convenit reputareque cum iit morbis omnibus
+<lb/>tum haud minime in acutis ac potissimum in magis febrilibui
+<lb/>ac periculosissimis morbis hancce occasionem plurimum
+<lb/>poste.</hi> Fortassis alia aliquis dictionis Graecanicae
+<lb/>imperitus dixerit Hippocratem febricitantibus in morbi
+<lb/>vigore alimentum exhibere. Quum enim ad pedes defcen-.
+<lb/>derit, tum febrem vigere corpore univerfo aeque ac simiIiter
+
+<pb n="19.213"/>
+<lb/>calefacto. Verum qui haec in veteres audet dicere,
+<lb/>stoliditatem fummamque inscitiam prae fe fert nec quid
+<lb/>sit <hi rend="italic">descendere</hi> intelligit. Qui ergo <hi rend="italic">Hippocratis</hi> praecepta
+<lb/>aemulantur discant eum non in vigore sed remissione febris
+<lb/>alimentum dare. Quid enim ait? <hi rend="italic">Quum calor in
+<lb/>pedes descenderit, tum dare convenit.</hi> Quidquid autem
+<lb/>jam descendit superiores partes reliquit ac inferiores adiit
+<lb/>calore non extenso fed ad inferiores regiones transnato.
+<lb/>Illudque adeo clare ipsis edocet, ut a stolidis etiam queat
+<lb/>intelligi. Sic autem loquitur: <hi rend="italic">fulgentibus autem pedibus
+<lb/>neque potum neque sorbitionem neque aliud quidquam
+<lb/>hujusmodi dato. rerum id maximum esse ducito si exspectaveris</hi>
+<lb/>, <hi rend="italic">quousque valde incaluerint ; deinde ita quod
+<lb/>conserat exhibe. Pedum enim suigus plerumque fabris
+<lb/>acce/surae signum existit. At eo tempore siquid exhibuevis</hi>,
+<lb/><hi rend="italic">in omnibus maxime peccaveris; morbum namque non
+<lb/>parum auxeris. At quum febris desinit, vice versu pedes</hi>
+<pb n="19.214"/>
+<lb/><hi rend="italic">reliquo corpore calidiores evadunt. Quum enimspades resuigerat
+<lb/>febris augetur et accensu ex thorace ad caput
+<lb/>siammam emittit. At fervido calore universo sursum concumnte
+<lb/>atque ad caput exhalante pedes merito re/rigerantur,
+<lb/>quum natura excames ac. nervosi sint. praeterea
+<lb/>et a calidissimis loris multum distantes re/rigerantur, siefa
+<lb/>colligente ad thoracem calore. Atque rursum eadem ratione
+<lb/>quum febris solvitur et .minutas in partes distribuitur,
+<lb/>ad pedes calor descendit. Hoc igitur tempore caput
+<lb/>et thorax perfaigerata sunt.</hi> In universo itaque corpore
+<lb/>calor non est neque intensus est; sed ut vigente
+<lb/>ultra principium paroxyfmo partes circa thoracem caputque
+<lb/>affatim incendebantur; ita et nunc quum adest remissio,
+<lb/>calor nobiliores quidem partes reliquit, extremos
+<lb/>vero pedes occupat, quod natura fit. Nam rationi maxime
+<lb/>consentaneum est ut quae partes prius vehementer perfrixerunt
+<lb/>, eas calor etiam ingens prehendat, natura nimirum
+<lb/>mutuam ipsis contrariorum successionem tribuente.
+<pb n="19.215"/>
+<lb/>Unde quum quis per frigidas regiones iter fecerit, ubi in
+<lb/>aestuosam pervenerit, ignitos pedes obtinet; quandoquidem
+<lb/>quo magis frixerint, eo magis etiam ac vehementius jure
+<lb/>incalescunt. Quamobrem et in gravissimis febribus; quum
+<lb/>levatio cum pedum perfrigeratione sit, in remissione pedes
+<lb/>vehementer calefieri contingit. Quare quum locum abfolveret
+<lb/><hi rend="italic">Hippocrates</hi> inquit: <hi rend="italic">eas ob causas sorbitio</hi> exhi— <lb/><hi rend="italic">benda, quod quum pedes</hi> /<hi rend="italic">rigidi suerint, ventriculum calidum
+<lb/>este necesse est multoque fastidio plenum intendique
+<lb/>hypochondrium et corporis sectationem propter internam
+<lb/>turbationem, mentis defectum et dolores aeger vellicatur,
+<lb/>vomere vult et si prava vomuerit, dolore a/sicitur. At
+<lb/>quum calor ad pedes descenderit urinaque prodierit, etiamsi
+<lb/>non sudaverit, omnia ce/funt. Eo igitur tempore sorbitio
+<lb/>exhibenda est, tum autem pernicies</hi>; ac maxime propter
+<lb/>nocumentum ex intempestiva exhibitione concitatum in
+<lb/>morbis acutis mortiferum esse pronuncians sub paroxyfmum
+<lb/>nutrire. Aperte igitur haec imperat. oportuerat igitur
+<pb n="19.216"/>
+<lb/>fatis jam haec te edoctum fuisse; si quid tamen amplius
+<lb/>discere cupias, audias haec luculenter praecipientem Hippocratem.
+<lb/><hi rend="italic">Quum autem medicamento purgaveris, farbitionibus
+<lb/>utere observatis subrium parmtysmis, ut nequaquam
+<lb/>dum adsunt neque quum saturi sunt exhibeas, .sed
+<lb/>sinum restant aut cesserunt et quam longissime a principio</hi></p>
+<p rend="indent"><hi rend="italic">aut quum nuper ce/suuerit paroxysmus</hi>. Alimenta vero
+<lb/>exhibenda funt non exspectata omninofebris declinatione,
+<lb/>ubi nimirum aeger fame intolerabili premitur aut a longis
+<lb/>ciborum dilationibus.male admodum affectus est aut aliqua
+<lb/>pars stomachi obriguit et valde exfoluta esu Tunc sane
+<lb/>in <hi rend="italic">subrium</hi> remissionibus corporibus adhuc calidis existentibus
+<lb/>alimenta exhibenda sunt, ac potissimum quum remissionis
+<lb/>intervallum angustum fuerit. Qui. namque paulo
+<lb/>antequam desierit paroxyfmus cibum exhibet, is longius a
+<lb/>futura assignatione- cibum dat. Quod autem interdum fedata
+<lb/>jam invasione cibus offerri debeat olere ipsis ostendit.
+<lb/>his verbis : <hi rend="italic">et quam longissime a principio.</hi> Ut enim
+<pb n="19.217"/>
+<lb/>assignatio febrilis alimentum distributioni ineptum, sed probe
+<lb/>concoctum ac jam corpori familiare redditum suscipiat,
+<lb/>fedata invasione alimenta praebet; quod tempus a futuro
+<lb/>paroxystno plurimum abest. Praeterea vero et in libro
+<lb/>adverihs cnidiae sententias ea adjuugit quae tum praedictis
+<lb/>tum artis operibus consentiant. <hi rend="italic">Diaetetices maximum
+<lb/>est subrium tum intensiones tum remissiones ut in acutis sic
+<lb/>et inlongis morbis observare et cavere , ita ut tempora
+<lb/>.quando cibi offerendi non sint et quando tuto offerendi
+<lb/>sint observare scias</hi>; <hi rend="italic">atque etiam quando plurimum ab
+<lb/>intensione abfuerint</hi>. Atque haec rursus fatebitur qui in
+<lb/>artis operibus fuerit exercitatus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Maximum enim est diuturnis in morbis
+<lb/>observare tempora; quia in iis <hi rend="italic">obscuri</hi> ac latentes funt
+<lb/>paroxyfmi qui per symbola ex vigiliis, gravitate, motus
+<lb/>difficultate, insomniorum perturbatione, decoloratione, inappetentia
+<lb/>ac similibus deprehenduntur. In acutis enim
+<pb n="19.218"/>
+<lb/>morbis, quibus potissimum febres continuae fubjacent,
+<lb/>magna funt inter paroxyfmos et remissiones discrimina;</p>
+<p>ile ut et ab .idiotis etiam saepenumero dignoscantur. In
+<lb/>diuturnis autem exiles quidem ac lentae sunt febres vixque
+<lb/>deprehenduntur, et earum occulti funt paroxyfmi ac
+<lb/>potissimum ubi plurimum processerunt, ut et ipsius aegros
+<lb/>multoties lateant. Unde vel exquisitum omnino signum
+<lb/>erit illi qui aliquantulum ipforum differentias possit dignoscere.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">In febribus autem non remittentibus, quas
+<lb/>et continentes vocamus, mane laborantibus alimentum
+<lb/>exhibere consentaneum esu Saepius enim tum alibi tum
+<lb/>in- epidqmiorum fecundo diem anno comparavit, ita ut
+<lb/>tempus matutinum veri assimilatum sit , meridies aestati,
+<lb/>pomeridianum tempus autumno, nocturnum <hi rend="italic">denique</hi> hiemi.
+<lb/>Unde ut pomeridianum tempus quod autumno analogum ,
+<lb/>este tradidimus, si.matutino, quod veri simile esse diximus,
+<lb/>comparetur, exitialissimum erit, sicuti matutinum saluberrimum.
+
+<pb n="19.219"/>
+<lb/>lta fano crepusculum verfpertinum conturbans et
+<lb/>exacerbans est, matutinum vero tempus benignitatis ac remissionis
+<lb/>efficiens: <hi rend="italic">tanquam annus circuitum habeat morborum,
+<lb/>quale dies morbi est, quale esi vespertinum tempus
+<lb/>ad exacerbationem tale est morbi et unmscususque coistitalionis
+<lb/>inter su invicem</hi>. Quare si nullum sit remissionis
+<lb/>vestigium, tempus veris temperamento assimilatum eligas.
+<lb/>Id autem existit quod circa matutinum crepusculum est
+<lb/>idque tum ceteris remediis tum cibis exhibendis maxime
+<lb/>idoneum esse deprehenditur. Haec quidem fatis sint ad
+<lb/>id suadendum quod a nobis propositum esu Portionem
+<lb/>enim selegi ex infinitis prope quae apud Hippocratem leguntur,
+<lb/>ex. arte tamen erit quae enuncianda tunt eorum.
+<lb/>quaedam in librum de consuetudine a nobis confcribeudum,
+<lb/>quaedam vero in librum de quantitate et qualitate
+<lb/>reponere. lllic ergo ex Hippocrate quam plurima ponuntur
+<lb/>quae in praetenti libro silentio praetermisimus larga-.
+<lb/>que .copia in unoquoque theoremate scriptis tradentur.</p>
+
+<pb n="19.220"/>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Qui ergo ad Hippocratis scripta imparati
+<lb/>prius accedunt quam primas literas didicerint, temere illi
+<lb/>advertantur. Suam enim ipsorum ignorantiam incusare
+<lb/>quum deceret, Hippocratis obscuritatem reprehendunt, quod
+<lb/>nimirum ob propriam imbecillitatem non possint Hippocratinae
+<lb/>virtutis magnitudinem assequi. Ita enim, opinor,
+<lb/>affectae funt ad Hippocratis scripturas imperitorum abjectorumque
+<lb/>hominum animae ut oculi ad felem, dum iptum
+<lb/>contuentur. Quemadmodum etenim hi de propria imbecillitate
+<lb/>a fotis pulchritudine redarguuntur convincunturque
+<lb/>quum perseveranter citra laborem in ipfum intueri
+<lb/>nequeunt, test laudem caecutientes ad tenebrosa te vertuut
+<lb/>, ita profanorum hominum animae in encyclopaedla
+<lb/>prius non educatae , scriptorum Hippocratis fulgore perenisi,
+<lb/>sententiarum splendoribus offusi quodammodo caecutiunt.
+<lb/>Quamobrem et ab iis quae majora tuut quam ut
+<lb/>piae ferre queant aversae ad parva quaedam ac obscura
+<lb/>luaeque ipsorum imperitiae accommodata procedunt. Nos
+<pb n="19.221"/>
+<lb/>autem non eorum gratia, fed ut illis qui probe instituti
+<lb/>funt congratulemur, tum haec conscripsimus tum omnia
+<lb/>quibus res medicae ex Hippocratis sententia absolutissimae
+<lb/>fiant digna ut rursus scribantur censebimus.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

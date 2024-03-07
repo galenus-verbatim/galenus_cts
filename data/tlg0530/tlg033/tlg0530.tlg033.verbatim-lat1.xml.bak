@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De urinis</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0530.tlg033.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Pseudo-Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">19</biblScope>
+              <biblScope unit="pp" from="574" to="601">574-601</biblScope>
+              <date>1830</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="410" to="414">410-414</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x04">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">8</biblScope>
+              <biblScope unit="pp" from="337" to="348">337-348</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x08">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg033.verbatim-lat1">
+<pb n="19.574"/>
+<div type="textpart" subtype="book" n="1">
+
+<pb n="19.574"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENO ADSCRIPTUS LIBER
+<lb/>DE URINIS.</head>
+
+
+<p rend="indent">Urinarum differentiae multae quidem particulatim
+<lb/>existunt; primae tamen <hi rend="italic">sunt</hi> duae, liquor et contentum.
+<lb/>Liquorem autem voco ipsam urinam a liquari ;
+<lb/>contentum vero quod diverse in urina apparet. Purius
+<lb/>vero liquoris pares numero differentiae contingunt; duae
+<lb/>siquidem funt hujus liquoris,, prior quidem consistentia,
+<lb/>posterior vero color. Utrumque autem horum in alia partitur,
+<lb/>consistentia enim alia est tenuis, alia crassa, alia
+<lb/>mediocris. Eam vero quae mediocris est, quum fecundum
+<lb/>naturam se habeat, dividere non licet; ceterum tenuis et
+<pb n="19.575"/>
+<lb/>crafla bifariam dividitur. Urina quidem tenuis aut mingitur
+<lb/>tenuis et permanet tenuis aut. meitur tenuis, fed
+<lb/>turbatur tandem et efficitur crassa.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Prior -quidem harum extremam indicat
+<lb/>cruditatem , natura enim nondum protius coctionem tentavit,
+<lb/>altera autem quae ex tenui reddita est turbida indicat.
+<lb/>naturam jam primo aggressam esse coctionem. .Et
+<lb/>tenuis quidem urina ita dividitur idque quod diximus
+<lb/>significati .</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">At crassa simili modo aut meitur crassa
+<lb/>et permanet crassa aut meitur crassa, fed redditur. tenuis.
+<lb/>Prior quidem indicat vigorem agitationis, altera autem
+<lb/>ebullitionem crassiorum humorum, ted tamen naturam incipere
+<lb/>secretionem ebrum iudicat. Et hae quidem funt
+<lb/>humoris quoad substantiam differentiae. - Quum vero in
+<lb/>priore partitione mentionem etiam fecerimus difscrentiarum
+<lb/>quae a coloribus capiuntur, jam deinceps eas exponamus.
+<lb/>Prima igitur est urina alba, hanc sequitur pallida,
+<pb n="19.576"/>
+<lb/>deinceps rufa, quarta est flava, post hanc rubra, ultimo
+<lb/>nigra et extremae quidem sunt duae, alba et nigrae resiquae
+<lb/>autem mediae inter has. Est igitur pallida proxima
+<lb/>albae , rufa autem longius distat ab alba , propior pallidae
+<lb/>e diverso autem rubea proxima est nigrae longissime distans
+<lb/>a rufa et a pallida , flava autem peculiarem ac propriam
+<lb/>habet mixtionem , ita ut gemini coloris esse videatur
+<lb/>partim rufi partim rubei. Quare et in libro de crisibus
+<lb/>splendentem ipsam appellavit Calenus, jure enim
+<lb/>splendet , splendorem enim a rufo, nitorem autem a rubeo
+<lb/>accipit. Ergo ordine quodam mutuo a fe invicem urinae
+<lb/>hae coloribus disserunt, alba, pallida, rufa, flava, rubea,
+<lb/>nigra. Fit autem pallida quum modicum cholerae ferosae
+<lb/>humiditati accedit; rufa autem fit quando plus cholerae
+<lb/>additur; rubea fit a sanguine, nigra vero a nimia
+<lb/>exustione et ab aliis causis ut paulo post dicetur, alba au..
+<lb/>tem indicat extremam cruditatem. Hae igitur funt liquoris
+<lb/>simplices differentiae in consistentia et colore. Resiquum
+
+<pb n="19.577"/>
+<lb/>est ut complicatas connexasque dicamus quales scilicet
+<lb/>sint quae deinceps simul connecti possunt, quae
+<lb/>item non possunt, et si connectantur, quid significent.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Sit igitur quoad substantiam suam minime
+<lb/>cocta, talis vero est tenuis cui ita permanenti tenui annectatur
+<lb/>color exquisite albus, ut sit ea tenuis et alba;
+<lb/>haec urina multa significat. Aut enim imbecillitatem virtutis
+<lb/>ostendit, sicut in senibus et in morbis diuturnis in
+<lb/>pluribus ut plurimum apparent urinae tenues et albae.
+<lb/>Tales etiam in nonnullis qui natura imbecilles vires hahent
+<lb/>videntur. Interdum significat obstructionem, sicuti
+<lb/>quum in nepbriticis apparet, indicat, et in quartanis similitor
+<lb/>quum in principiis talis meitur obstructionem significat,
+<lb/>ac rursus in ipsis quartanis talis quum micta fuerit
+<lb/>urina circa initia obstructionem significat ; humor etenim
+<lb/>melancholicus quum sua crassitie venas obstruat, quafi percolata
+<lb/>urina alba et tenuis apparet. Indicant vero tales
+<lb/>urinae et aliud summum malum, si enim in causo et
+<pb n="19.578"/>
+<lb/>urente febre appareat urina tenuis et alba, significat pluenisio.
+<lb/>Quum enim febris ipsa urens copiam bilis indicet,
+<lb/>urina vero non tingatur, manifestum est quod biliosus humor
+<lb/>non retinetur in vasis, fed levitate sua cerebrum insitit.
+<lb/>Siquidem igitur nondum adest phrenitis, urina existente
+<lb/>tenui et alba, febre vero ardente, praedicimus phrenitin
+<lb/>suturam ; si vero adest phrenitis, urina vero ejusmodi
+<lb/>est, praedicimus mortem ut plurimum, neque enim
+<lb/>poterit virtus cerebri servari, cui ingruit tantus acutae
+<lb/>mordacisque cholerae impetus. Haec igitur signisicat urina
+<lb/>tenuis et alba.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Sit iterum urina quoad substantiam cruda,
+<lb/>id est tenuis, quoad colorem autem modice cocta , ut sit
+<lb/>pallida ; talis imbecillitatem significat. Quoad colorem
+<lb/>enim concoxit, quippe quum hoc facilius sit, nondum vero
+<lb/>quoad substantiam, propterea quod hoc difficilius est.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Sit urina tenuis cui annectatur color rusus,
+
+<pb n="19.579"/>
+<lb/>talis melior quidem est priore, est tamen cruda quoad
+<lb/>substantiam.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Sit urina tenuis et flava, haec non solum
+<lb/>cruditatem indicat, sed etIam defectum alimenti, id qtod
+<lb/>in juvene jejuno reperitur. Interdum ostendit calorem
+<lb/>multum in profundo biliosum succum gignere, id quod ia
+<lb/>febre tertiana; indicat et vigilias ac animi perturbationes.
+<lb/>Haec omnia flavam urinam efficiunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Proponatur iterum urina cruda quoad
+<lb/>substantiam tenuis, sed rubea, talis nunquam reperitur. v Si
+<lb/>enim rubens color in urina a sanguine sit, sanguis vero
+<lb/>a coctione, coctio <hi rend="italic">autem substantiam</hi> incrassat, manifestum
+<lb/>est quod rubor in urina cum .tenuitate consistere non
+<lb/>potest. Quod si Aliquando reperiatur tenuis urina cum
+<lb/>rubore, color ille exquisite rubeus non est, sed est quiddam
+<lb/>ichoroeides.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Ultima autem est connexio tenuis et nigrae,
+<lb/>haec etiam nunquam reperitur. Color enim niger
+<pb n="19.580"/>
+<lb/>fit propterea quod melancholicus humor per urinas purgatm;
+<lb/>aut fit a frigiditate nimia aut a nimia sanguinis
+<lb/>aditione; haec vero tria crassitiem sibi vendicant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Quod autem tres quas diximus urinae nigme
+<lb/>differentiae crassam sibi substantiam vendicent IliaInfestum
+<lb/>est ; in remissione enim febris quartanae et Inlutione
+<lb/>melancholiae urinae apparent nigrae. Redduntur
+<lb/>autem nigrae propterea quod humor melancholicus per
+<lb/>has expurgetur, qui sua substantia terreus est et crassas;
+<lb/>quare et urinas efficit crassas. Simili . modo et hae urinae
+<lb/>quae ex assatione adustioneque sanguinis nigrae fiunt,
+<lb/>crassae sunt. Si enim ustio nimia exsiccat humiditatem
+<lb/>sanguinis, constat quod etiam crassam efficit ejus subsumtiam;
+<lb/>quare manifestum est quod et urinae crassae fient;
+<lb/>a sanguine enim et coloris immutationem accipiunt et
+<lb/>substantiae usti sanguinis crassitiem referunt. Frigiditas
+<lb/>vero quia incrassat materiam, esiam urinae substantiam
+<pb n="19.581"/>
+<lb/>faciet humori similem. Ita igitur urinae fiunt crassae, ut
+<lb/>docui.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Et de connexione substantiae tenuis cum
+<lb/>diversis urinae coloribus haec quae diximus sufficiant;
+<lb/>superest ut de altera substantiae differentia disseramus. Sit
+<lb/>igitur urina crassa cui ita permanenti crassae color albus
+<lb/>accedat, talis urina magnam esse in corpore crudorum
+<lb/>humorum copiam indicat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">Proponatur crassa et pallida, haec non
+<lb/>potest in connexionem venire, neque enim crassa et rufa
+<lb/>neque crassa et flava simul consistere possunt^ Colores
+<lb/>enim hi propter desectum materiae fiunt, ac debilitatem
+<lb/>virtutis, crassa autem a contrariis fit causis. Quare manisestum
+<lb/>est quod rufa aut pallida aut flava simuI cum
+<lb/>crassa permanere nequeunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">Sit urina crassa et rubea, hujusmodi enim
+<lb/>urina reperitur, significat plenitudinem sanguinis, ut sit in
+<lb/>synochis febribus.</p>
+
+<pb n="19.582"/>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="indent">Sit crassa urina et nigra, talis etiam reperitur
+<lb/>et significat evacuationem humoris melancholici;
+<lb/>id quod muItoties fit in declinatione quartanarum et in
+<lb/>solutione melancholiae. De urinis vero nigris quae fiunt
+<lb/>aut ab adustione aut a frigiditate postea dicemus. Et hae
+<lb/>quidem sunt crasse cum iis quos diximus coloribus connexiones.
+<lb/>.Iam vero incipiamus agere de iis quae contenta
+<lb/>vocavimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p rend="indent">Esto igitur primum album supremum locum
+<lb/>occupans pIanum, fed inaequale, id est uno die coctum,
+<lb/>postero die non coctum; tale debilitatem indicat
+<lb/>virtutis , quae non potest ex aequo omni tempore materiam
+<lb/>concoquere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+
+
+<p rend="indent">Sit vero album quidem et inferiorem
+<lb/>locum tenens, non amplius tamen planum, sed divulsum,
+<lb/>hoc deterius est priore; illud enim ostendebat naturam
+<lb/>sustinere inaequalitatem multis interjectis diebus ; hoc vero
+<lb/>in una coctione, id quod deterrimum est. Et veluti autumnus
+<lb/>propterea malus esse dicitur quod est inaequalis,
+<pb n="19.583"/>
+<lb/>si tamen inaequalis fiat quarto vel quinto quoque die
+<lb/>minus est malus, si vero una die longe pejor est, sic et
+<lb/>fedimenta divulsa pejora prioribus sunt, quoniam indicant
+<lb/>naturam in una coctione desedisse ob distractionem, distrahitur
+<lb/>vero natura a flatibus qui inter succos intercursant
+<lb/>ac dirimunt continuitatem succi qui concoquitur. Quoniam
+<lb/>igitur supposuimus contentum habere se secundum
+<lb/>naturam quoad colorem et locum, praeter naturam autem
+<lb/>in substantia, manifestum est quod in substantia illius quod
+<lb/>haec ita habet aequalitas veI inaequalitas est.</p>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+
+
+<p rend="indent">Sit igitur prius aequale diVulsum, tale
+<lb/>procul dubio malum est, indicat enim copiam crassi flatus
+<lb/>in profundo qui a natura extenuari non potuit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="18">
+
+
+<p rend="indent">Sit aliud divulsum inaequale, id est
+<lb/>alio tempore tale apparens alio diversum, hoc priore est
+<lb/>melius , indicat siquidem flatuofos succos esse paucos quos
+<lb/>natura cito discutiet et tenues reddet. Et mirum sane est
+<lb/>inter opera naturae aequalitatem malum esse, inaequalitatem
+
+<pb n="19.584"/>
+<lb/>bonum; quod merito sane ita evenit, mala enim si
+<lb/>eandem perpetuo vim habeant, deterrima funt. Sicut et
+<lb/>pulsus arteriarum, si semper et continuo intermittens existat,
+<lb/>deterrimus est, si vero aliquando intermittens, aliquando
+<lb/>non intermittens, minus est malum. Eodem modo
+<lb/>sedimentum divulsum inaequale minus malum est fedimento
+<lb/>divulso et aequali. Et haec quidem de hac complicatione
+<lb/>dicta sufficiant.</p>
+</div>
+<div type="textpart" subtype="chapter" n="19">
+
+
+<p rend="indent">Sit autem alia complicatio haec. Contentum
+<lb/>quoad colorem sit coctum et sit album, non obtinens
+<lb/>tamen locum inferiorem, sed medium, ac quod medium
+<lb/>Iocum habet sit prius et laeve in substantia, aequale
+<lb/>in tempore, tale indicat coctionem, sed tamen non perfectam
+<lb/>, id enim non est hypostasis fed media coctio aut
+<lb/>claram ostendens, quod enim in medio est naturae bypoflasse
+<lb/>est, loco tamen differt ab hypostasi. Causa autem
+<lb/>diversitatis loci est abundantia flatus qui immiscetur succis ;
+<lb/>si enim flatus haud exacte per concoctionem fuerit
+<pb n="19.585"/>
+<lb/>extenuatus, sed ob crassitiem inclusus fuerit intra contentum
+<lb/>, flatus ipse trudit illud atque attollit aut ad supremam
+<lb/>superficiem et tum vocatur nubecula aut ad mediam
+<lb/>regionem, quod tum vocatur suspensum. At vero si nulli
+<lb/>sunt omnino flatus ipsum gravitate sua deorsum fertur
+<lb/>vocaturque hypostasis. Et de suspenso quidem id mihi
+<lb/>dicendum fuerat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="20">
+
+
+<p>Tria haec igitur quae diximus diversa
+<lb/>- sunt tantummodo situ; situs autem variatur per flatum,
+<lb/>flatus autem generatur coctione, coctio vero quando persecta
+<lb/>fuerit flatum attenuabit et resolvet, propterea hypostasis
+<lb/>perfecta perfectam indicat coctionem. Si autem
+<lb/>ventositas illa extenuari nec prae crassitie ex humore dissolvi
+<lb/>potuerit, ideoque succum non coctum habeat, unde
+<lb/>et impersectam ostendat coctionem, seu obscuram et mediam;
+<lb/>ideo mediam quoque obtinet regionem, neque enim
+<lb/>copiosus est, si namque in superiori parte cocta fuerit ac
+<lb/>facta fuerit nubecula, coctionem quidem significat factam,
+<lb/>verum obscuram, quoniam multa et crassa est ejusmodi
+<pb n="19.586"/>
+<lb/>ventositas. Clarum est igitur quod ex situ seditnentorumV</p>
+<p>nihil plus discimus quam modum et mensuram eorum
+<lb/>quae indicantur. Si enim nigrum erit contentum, signum
+<lb/>est malum, minus vero est malum si folum id nigrum est
+<lb/>quod in medIo jacet; ac multo minus etiam si nubecula,
+<lb/>si vero id quod in infimo est veluti hypostasis, longe est
+<lb/>pessimum. Sufficiant vero haec dicta de situ, qui neque
+<lb/>bonum neque malum significat, sed modum et mensuram
+<lb/>boni et mali. Quum autem in contento quatuor nobis
+<lb/>consideranda sint, color scilicet, locus, substantia et tem-</p>
+<p>pus; superest ut de colore jam disseramus, cum de substantia,
+<lb/>tempore tet loco jam satis dixerimus. Color autem
+<lb/>alius est naturalis contento et est albus; alius praeter
+<lb/>naturam, qualis est niger, lividus, pallidus, rubeus; de
+<lb/>quibus jam agamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="21">
+
+
+<p rend="indent">Sedimentum rubeum fit a sanguine ichoroeide :
+<lb/>significat autem coctionis desectum , non tamen
+<lb/>mortem, quum enim succus is sit benignus et amicus naturae,
+
+<pb n="19.587"/>
+<lb/><hi rend="italic">magnum</hi> periculum inferre non solet; quia vero
+<lb/>indicat cruditatem, ob id etiam morbum diuturnum , id
+<lb/>autem ex eo quod dicturi sumus de liquore intelliges.
+<lb/>Humores quidam generantur ex phlegmate, sicut phlegma
+<lb/>et ichor: quidam generantur una cum sanguine, sicut flava
+<lb/>bilis et nigra bilis. Quando igitur urina videtur rubra,
+<lb/>indicium est quod ab ichore colorem accepit; ichor autem
+<lb/>fit ante quam fanguis fiat, neque enim natura perfectam
+<lb/>sanguini tincturam dedit, manifestum est quod nondum
+<lb/>coctus est; ad hoc autem tempore indiget natura ut sanguis
+<lb/>coquatur. Quid igitur significet fedimentum rubeum
+<lb/>jam diximus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="22">
+
+
+<p rend="indent">Sedimentum autem nigrum aliquando
+<lb/>frigiditatis est indicium, interdum caliditatis; discernetur
+<lb/>vero alterum ab altero hoc modo. Si anteceflit liVidus,
+<lb/>postea subsecutus est color niger, indicationem facit frigiditatis,
+<lb/>si vero antecessit viridis, subsequitur vero niger,
+<lb/>caliditatem indicat. Et quatuor quidem in contento inquisivimus,
+
+<pb n="19.588"/>
+<lb/>colorem dico et locum et substantiam et tem..
+<lb/>pus, omnium autem horum fyncrisin fecimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="23">
+
+
+<p rend="indent">Lividum autem frigiditatem indicat et
+<lb/>extinctionem virtutis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="24">
+
+
+<p rend="indent">Ex oleaginis urinis alia est elaeochroa,
+<lb/>alia elaeophanes, alia elaeodes. Prima principium indicat
+<lb/>colliquationis adipis totius corporis, est vero ea colorem
+<lb/>olei retinens. EIaeophanes autem habet exquisitiorem
+<lb/>mixtionem olei cum urina significatae augmentum colliquationis.
+<lb/>Elaeodes est quae tota fui substantia et colore
+<lb/>et consistentia undequaque est veluti oleum; quae indicat
+<lb/>statum et summum vigorem colliquationis. Sunt autem
+<lb/>hae urinae etiam ex colliquatione adipis renum. Exstant
+<lb/>tamen cautiones quibus hoc discernas, quarum meminit
+<lb/>Hippocrates in aphorismo de resolutione adipis renum,
+<lb/>ubi dicit: <hi rend="italic">quibus hypostasis pinguis ac simul tota, iis renum
+<lb/>vinum stgntstcatur.</hi> lplemet docuit discernendi m odum,
+<lb/>cum addidit αἄρόη, id est simul tota; in renum
+<pb n="19.589"/>
+<lb/>enim colliquatione celeriter adipes excernuntur, in colliquatione
+<lb/>autem totius corporis adipes colliquati paulatim,
+<lb/>id est tarde et non universim, curn.-Afrina exeunt. Quia
+<lb/>enim recipitur adeps a venis membris vicinis, deinde ab
+<lb/>iis quae continuantur et rursus ab aliis et aliis et tandem
+<lb/>a renibus et a vesica, patet multo post tempore excerni,
+<lb/>adipis vero in renibus colliquati propter vicinitatem transitus
+<lb/>celerrima est excretio et non paulatim. Hoc igitur
+<lb/>est quod dixit Hippocrates simuI tota, id est celeriter.
+<lb/>Haec de oleaginis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="25">
+
+
+<p rend="indent">Cum autem caro ipsa liquatur, facit
+<lb/>hypostases oroboides, quas ut bene discernas animum adverte
+<lb/>ad coctionem aut cruditatem aut febrem acutam
+<lb/>praesentem. Si enim adest febris, totius corporis est pastio,
+<lb/>si vero non adest febris, est virium renum. Et rursus si
+<lb/>adest cruditas urinarum, totius corporis vitium est, si coetio
+<lb/>adest, hypostases vero orobinae appareant, vitium indicat
+<lb/>renum. Nec sine causa cruditas incessit quando
+<lb/>morbus est totius corporis, ea enim vasa quae coctionem
+<pb n="19.590"/>
+<lb/>conficiunt male affecta sunt, in vitio autem renum cruditas
+<lb/>non adest , renes enim non sunt instrumenta coctionis
+<lb/>urinae. Haec de colliquatione carnis et adipis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="26">
+
+
+<p rend="indent">Quando solida membra male sunt asseeta
+<lb/>abraduntur primum extimae partes et reddunt urinas
+<lb/>petaloideis, sunt tamen et hae aliquando a vitio vesicae.
+<lb/>Discernes autem hoc ex iis quae jam diximus de vitio
+<lb/>renum, si enim adfuerit febris, totius corporis est vitium,
+<lb/>si non adfuerit febris, vitium est vesicae, si cruditas adsit,
+<lb/>totum corpus est affectum, si coctio adsit, vesica.</p>
+</div>
+<div type="textpart" subtype="chapter" n="27">
+
+
+<p rend="indent">Quando febris profunda corporis vasa
+<lb/>corripit ac dilacerat hypostases fiunt pityroideis fursuraceae,
+<lb/>quae strictiores quidem sunt squamosis, fed crassiores,
+<lb/>id vero etiam vitium vesicae aliquando indicat. Discernitur
+<lb/>autem hoc eo quo diximus modo; si enim adfuerit
+<lb/>febris, vitium est totius corporis, sin minus, vesicae.</p>
+</div>
+<div type="textpart" subtype="chapter" n="28">
+
+
+<p rend="indent">Posteaquam vero febris ipsa longe
+<lb/>lateque majori vi quam in superioribus vitiis folida membra
+
+<pb n="19.591"/>
+<lb/>corripuerit, facit solidiora sedimenta quam erant illa
+<lb/>quae speciem furfuris reserebant, quae vocantur crimnode.
+<lb/>Haec vero duo significant, aut adustionem sanguinis aut
+<lb/>liquefactionem solidarum nimiam. Et siquidem alba suerint
+<lb/>quae resident, solidorum partium est vitium, si vero
+<lb/>rubea exstiterint, sanguinis adustio.</p>
+</div>
+<div type="textpart" subtype="chapter" n="29">
+
+
+<p rend="indent">Indicat hepar esse ulceratum cujus substantia
+<lb/>dissolvitur. Et partes quidem hujus sedimenti subtiliores
+<lb/>habent colorem ichorosum, crassiores autem sunt
+<lb/>similes sandarachae, quae ut plurimum portendunt mortem
+<lb/>infirmis aut, si supervixerint, hydropem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="30">
+
+
+<p rend="indent">Foetida urina indicat putrefactionem et
+<lb/>extinctionem virtutis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="31">
+
+
+<p rend="indent">Restat vero nobis speculari de humoris
+<lb/>urinarii cum sedimentis connexionibus ac dicere quid
+<lb/>significent. Hae enim connexiones quas hucusque explicavimus
+<lb/>erat ut solius humoris urinarii quas primo Ioco
+<lb/>edisseruimus ; vel solius sedimenti quas secundo loco exposuimus;
+<lb/>nunc autem et humoris et sedimenti simul connexiones
+
+<pb n="19.592"/>
+<lb/>complicemus et exponamus, quid significet quaelibet
+<lb/>complicationis differentia.</p>
+</div>
+<div type="textpart" subtype="chapter" n="32">
+
+
+<p rend="indent">Proponatur igitur primo urina non
+<lb/>cocti humoris, qui est tenuis; nec cocti coloris, qui est albus,
+<lb/>in tali urina nunquam potest existere fedimentum,
+<lb/>tenuitas enim significat defectum materiae ex qua fit id
+<lb/>quod residet. Ad haec in tenui quae permanet tenuis
+<lb/>esse fedimentum simulque esse urinam pallidam aut rufam
+<lb/>aut flavam est impoflibile, in iis enim natura privata nutrimento
+<lb/>convertit se ad colorem faciendum. Quare si
+<lb/>volumus conficere connexiones humoris urinarii cum sedimensus,
+<lb/>tenue abjiciamus a proposito, proponamus vero
+<lb/>crassem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="33">
+
+
+<p rend="indent">Sit vero urina colore alba, substantia
+<lb/>crassa, in hac potest residere fedimentum quod sit album,
+<lb/>sed non laeve, in talibus enim crudorum succorum copia
+<lb/>colligitur, quae licet coctionem coloris admittat, substantiae
+<lb/>tamen minime.</p>
+
+<pb n="19.593"/>
+</div>
+<div type="textpart" subtype="chapter" n="34">
+
+
+<p rend="indent">Sit alia crassa cui connexus sit csIor
+<lb/>rubeus, pallido enim, rufo et flavo ob eas quas diximus
+<lb/>causas crassam connecti non potest, si igitur rubeo
+<lb/>misceatur crassam, id quod saepius accidit in fynochis
+<lb/>febribus, signum est cruditatis et in humore et in sedimento
+<lb/>tum quoad substantiam tum quoad colorem utriusque,
+<lb/>humoris scilicet et sedimenti.</p>
+</div>
+<div type="textpart" subtype="chapter" n="35">
+
+
+<p rend="indent">Sit urina alia crassa et nigra; haec
+<lb/>non cocta est nec colose nec substantia tam humoris urinarii
+<lb/>quam sedimenti. Et hae quidem sunt connexiones
+<lb/>urinae crassae quae remanet crassa.</p>
+</div>
+<div type="textpart" subtype="chapter" n="36">
+
+
+<p rend="indent">Sit vero urina quoad substantiam
+<lb/>mediocris, cui annectatur color aliquis; haec alba esse
+<lb/>non potest, si enim alba est, cruda est. Esto tamen , apuareat
+<lb/>urina mediocris substantiae et alba, mirum profecto
+<lb/>erit, quomodo natura mediocrem substantiam faceret, coIorem
+<lb/>vero non decoqueret, quum illud majoris sit negocii
+<lb/>et difficultatis. Mediocre igitur cum albo consistere
+<pb n="19.594"/>
+<lb/>non potest , raro autem cum. pallido, nisi abundans humiditas.
+<lb/>aliunde bili advenerit. Color quoque rufus aut flavus
+<lb/>cum mediocri urinae substantia non potest communionem
+<lb/>habere ; quod si aliquando habeat, in illis tamen nihiL
+<lb/>residet; proinde et has urinarum cum hypostasi complieationes
+<lb/>ut inanes omittamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="37">
+
+
+<p rend="indent">Virides ster- lividae, nigrae, cruentae,
+<lb/>nimium crassae, rufae, supra modum impermixtae, rufae
+<lb/>simul tenues, carentes hypostasi, pravae stant foetidae,
+<lb/>pingues, oleaginae et eae, quae excedunt copiam potus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="38">
+
+
+<p rend="indent">Lividae, nigrae, caliginosae, variae,
+<lb/>divulsae, farinaceae, sanguinolentae, biliosae et exustae,
+<lb/>phlegmaticae et- foetidae : urinae vero in quibus nihil residet
+<lb/>sunt omnino pravae.- Hae igitur species urinarum
+<lb/>significant plurimas causas diversorum morborum eorumque
+<lb/>augmenta, declinationem; discretionem, concretionem,
+<lb/>coctionem, cruditatem, modum insuper periculorum quae
+<pb n="19.595"/>
+<lb/>futura sunt. Considerare . autem medicus debet in his
+<lb/>omnibus multitudinem et vim causarum ac exsuperantiam,
+<lb/>quo delictum omne evitetur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="39">
+
+
+<p rend="indent">In mortis febrilibus utilissima est urinae
+<lb/>indicatio. Quoniam autem omne. quod est praeter
+<lb/>naturam cognoscitur per id quod est secundum naturam;
+<lb/>idcirco urinarum notitia incipere debet ab iis; quae fiseundum
+<lb/>naturam te habenti optima igitur urina est in
+<lb/>iis hominibus, qui Iani sunt et bonam corporis habitudonem
+<lb/>sortiti sirnt, subrufa aut tubflava , mediocris crassitiei;
+<lb/>tali colore permanens quali mictu est: hypostasin retinens
+<lb/>planam, aequalem,-albam per omne^ tempus, multitudinem^
+<lb/>autem promeusura et ratione potus. In mulieribus tamen
+<lb/>urina secundum naturam aIbioris coloris esse decet
+<lb/>quam in viris hahereque hypostasim copiosiorem. In pue-.
+<lb/>risi vero aesate necesse est crassiorem esse hypostasin pro-pter
+<lb/>edacitatem puerorum et motus eorum importunos at.
+<lb/>inordinatos. Q -.ando autem Hippocrates dicit hypostasin
+<pb n="19.596"/>
+<lb/>laevam vult significare non divulsam .sed continuam :quando
+<lb/>dicit aequalem, vult significare tum eam, quae per
+<lb/>omne tempus similis est tui ita ut si uno die sit cocta,
+<lb/>postero die. non sit cruda, .tum eam quae. fedimentum et
+<lb/>liquorem habet totum sibi aequalem. In urina naturali
+<lb/>consideranda sunt haec, substantia, color et ea quae ini
+<lb/>urina apparent, qualis est nubecula, suspensum .et ea quae
+<lb/>in fundo est- hypostasis : quod si aliquid horum in urina
+<lb/>immutatum fuerit, indicium erit cruditatis in venis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="40">
+
+
+<p rend="indent">optima in aegrotis urina est ea, quae simiilima
+<lb/>est urinae fanorum hominum, fubpallida aut fubilava,
+<lb/>habens hypostasin albam, laevem aequalem. Ab hae
+<lb/>vero jam defecit quae suspensum habet album, laeve, aequale.
+<lb/>Adhuc- vero magis deficit , quae nubeculam habet
+<lb/>albam, laevem, aequalem. In quibus enim flatus est in
+<lb/>profundo crassius et incoctus, si paucus is fuerit, permittit
+<lb/>materiam ad maturae. fundum deferri : si voro abundaverit
+<pb n="19.597"/>
+<lb/>effert hypostasin ad superficiem summam urinae et facit
+<lb/>eam, quam dicunt nubeculam. Quanto igitur flatus praevaluerit
+<lb/>et magis dissecuerit ac magis in altum sustulerit
+<lb/>hypostasim, tanto minus cocta dicetur esse urina. In tertianis
+<lb/>tamen exquisitis et in ephemeris febribus fala nubecula
+<lb/>aut suspensum ad solutionem morbi saepe sufficit:
+<lb/>interdum sufficit et solus color urinae bonus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="41">
+
+
+<p rend="indent">Saepe autem albus color eorum quae in
+<lb/>urinis apparent rudes decipit ita, ut nesciant malam esse .
+<lb/>hypostasin quae illis videtur bona , ac e diversu bonam
+<lb/>esse quae illis videtur mala. Accidat enim aliquando ut
+<lb/>albus humor et crudus excernatur simul cum urina ac in
+<lb/>imo subsident instar bonae hypostasis : aliquando affecto
+<lb/>hepate aut renibus pus cum urina excernitur et subsidet,
+<lb/>ita ut indoctos decipiat. Sed hoc discernetur primum per
+<lb/>dolorem qui praecessit in renibus aut in hepate aut in
+<lb/>aliqua parte alia quae iniet per urinas expurgari, deinde
+<lb/>per foetorem quem obtinet pus. . Crudus autem humor
+<pb n="19.598"/>
+<lb/>discernetur a bona hypostasi per inaequalitatem substantiae
+<lb/>ipsius contenti , ..neque enim humer crudus permanet sibi
+<lb/>continuus, fed -dividitur in exiles et minutas partes veluti
+<lb/>arenulas neque laevis est omnino sicut vera hypostasis. In
+<lb/>bonis autem urinis primum quod -apparet est nubecula :
+<lb/>deinde facto aliquo descensu apparet id quod vocatur suspensum
+<lb/>, influe autem quum jam percolata est, subsidet
+<lb/>in prosuudo facitque hypostrsin , nimirum- quum jam pertecte
+<lb/>cocta fuerit. At in crudis humoribus a principio
+<lb/>statim delabitur multitudo non pauca in profundum matulae,
+<lb/>interim et totius urinae color est malus: deinde
+<lb/>paulatim concocta et .extenuata multitudo attollitur in
+<lb/>medium humoris facitque suspensum. Posteaquam vero
+<lb/>maximopere extenuata coctaque fuerit, insidet in superiicie
+<lb/>liquoris faciens nubeculam; quae indoctis imponit .sit
+<lb/>opinentur .morbum labi in deterius.</p>
+</div>
+<div type="textpart" subtype="chapter" n="42">
+
+
+<p>Tenuis et pallida urina cruda quidem
+<lb/>est consistentia, concocta autem mediocriter colore, tmbecillitalem
+
+<pb n="19.599"/>
+<lb/>autem haec -indicat naturae, colore enim concoxit
+<lb/>quod sit facile, non etiam consistentia quod difficile sit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="43">
+
+
+<p rend="indent">Tenuis vero consistentia urina et eolore
+<lb/>flava melior est quam pallida, cruda tamen. est propter
+<lb/>consistentiam.</p>
+</div>
+<div type="textpart" subtype="chapter" n="44">
+
+
+<p rend="indent">Urina rubra cruditatem indicat, non
+<lb/>mortem,. est enim ex sanguine serofo qui nondum coctio-,
+<lb/>nem adeptus est neque proprium colorem ac propterea
+<lb/>morbum diuturniorem significat; at in febribus continuis
+<lb/>ob sanguinis copiam qua fiunt excernitur mina crassa et
+<lb/>rubra, quae videlicet colore talis est et consistentia coloris
+<lb/>et contentum habet.</p>
+</div>
+<div type="textpart" subtype="chapter" n="45">
+
+
+<p rend="indent">Urina quae tenuis meitur ac postea foris
+<lb/>turbatur cruda est propter erassi sanguinis exstrperantiara,
+<lb/>naturam autem coctionem aggredi significat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="46">
+
+
+<p rend="indent">Urina vero quae crassa meitur et non
+<pb n="19.600"/>
+<lb/>subsidet qualis est iumentorum, ostendit crassiorum flatuum
+<lb/>et humorum fermentationem. ln his capitis dolores aut
+<lb/>adsunt aut aderunt propter humorum perturbationem exi
+<lb/>evaporationes.</p>
+</div>
+<div type="textpart" subtype="chapter" n="47">
+
+
+<p rend="indent">Sedat equidem eam quae in humoribus
+<lb/>fit fermentationem et indicat aliquo modo inchoari
+<lb/>secretionem. e</p>
+</div>
+<div type="textpart" subtype="chapter" n="48">
+
+
+<p rend="hanging">Summam cruditatem; non .enim aggresta
+<lb/>est in his natura coctionem , fit autem ea propter
+<lb/>facultatis . imbecillitatem vel propter obstructionem vel ob
+<lb/>morbi- diuturnitatem , in quartanis enim longissimis circa
+<lb/>initia ob crassitiem et pervicaciam materiae- urina pereosatur:
+<lb/>fit et tenuis propter obstructionem hepatis aut renum;
+<lb/>verum cognoscitur ex dolore locali ; meitur autem
+<lb/>aliquando tenuis i et alba et in ipsis sebribus ardentibus et
+<lb/>phrenitidem significat, etenim febris ardens copiam indtcat
+<lb/>bilis, non autem tingitur urina, clarum est in venis
+<lb/>bilem non manere, fed tua levitate in cerebrum excurrit,
+<pb n="19.601"/>
+<lb/>sin igitur non adsit phrenitis, ex his cognosces statim afiatutam,
+<lb/>sin autem quum jam phrenitis adfuerit, tenuis et
+<lb/>alba metatur urina in ardentissima febre, mortem portendit
+<lb/>ut plurimum, neque enim cerebri vis jam ab ardenti
+<lb/>febre prostrata sustinere potest acrimoniam ac mordacitatem
+<lb/>bilis jam putrefactae.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

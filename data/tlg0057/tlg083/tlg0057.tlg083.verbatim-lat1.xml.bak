@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>De praenotione ad Epigenem</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg083.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">14</biblScope>
+              <biblScope unit="pp" from="599" to="673">599-673</biblScope>
+              <date>1827</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x14">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="452" to="462">452-462</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">8</biblScope>
+              <biblScope unit="pp" from="829" to="862">829-862</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x08">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg083.verbatim-lat1">
+<pb n="14.599"/>
+<div type="textpart" subtype="book" n="1">
+
+<pb n="14.599"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE PRAENOTIONE AD
+<lb/>POSTHUMUM LIBER.</head>
+
+
+<p rend="indent">Ut sane vulgus medicorum est, o Posthume,
+<lb/>nemo potest ea, quae aegris per singulos morbos eveniunt,
+<lb/>praenoscere. Ex quo enim ii, qui videri potius
+<lb/>quam esse docti non in medica tantum, sed etiam aliis artibus
+<lb/>studuerunt, numero vicere, optima quaeque artium
+<lb/>neglecta sunt: ea vero in diu habita, unde aliquis sermone
+<pb n="14.600"/>
+<lb/>hominum celebretur ; nempe apud vulgus dicere aliquid
+<lb/>et facere ad gratiam: item adulari blande, opulentos ac
+<lb/>potentes in civitatibus quotidie salutare et simul cum eis
+<lb/>incedere ac domum redeuntes deducere, in coenis latus
+<lb/>eorum cingere et scurriliter nugari. Quidam ipsorum non
+<lb/>haec modo, sed etiam vestium et annulorum sumptu, eonutum
+<lb/>muItitudine et vasorum argenteorum apparatu idiotis
+<lb/>persuadent, magni se pretii esse homines et imitatione
+<lb/>dignos. Ex his igitur omnibus partim allicientes partim
+<lb/>attonitos reddentes homines veri in rebus judicii ituperitos,
+<lb/>ut quidem hi existimant, multis bonis fruuntur:
+<lb/>ut autem ego dixerim, quum vere bona non sint, ipsi
+<lb/>falso opinantur. Quum itaque tales existant, praeter alia
+<lb/>contra leges facere non dubitant brevissimoque tempore
+<lb/>artes fe docturos polliciti complures discipulos comparant,
+<lb/>a quibus etiam ipsi potestatem in civitatibus, in quibus
+<lb/>degunt , accipiunt. Haec igitur communis omnium artium
+<lb/>infelicitas praesentem vitam occupavit. Medicinae autem
+<pb n="14.601"/>
+<lb/>varia quidem est, fed unum aliquod ex iis, quae in illa
+<lb/>accidunt, statui promere, ut quod ad me potissimum perlineat.
+<lb/>Quando enim medicus aliquis ex iis, qui legitime
+<lb/>eam didicerunt, aut delirium futurum in aegrotante, aut
+<lb/>rigorem, aut cataphoram , aut sanguinis profluvium, aut
+<lb/>parotidas, aut abscessum aliquem in quacunque parte, aut
+<lb/>vomitum , aut sudorem, aut alvi perturbationem, aut syncopen,
+<lb/>aut aliud quid hujusmodi praedixerit, et peregrinum
+<lb/>et monstrum prae difluetudine idiotis apparet: ac
+<lb/>tantum abest, ut qui praedixerit in admirationem apud
+<lb/>illos veniat, ut bene actum secum putaverit, si non etiam
+<lb/>praestigiator aliquis esse videatur. Pauci autem quidam
+<lb/>ipsorum hujusmodi speculationem non damnant quidem,
+<lb/>ceu quae haberi nequeat: sed interrogant statim et ipsum,
+<lb/>qui praedixit et alios medicos , num etiam tale quid a
+<lb/>madoribus inventum sit, an solum ipsius praedicentis sit
+<lb/>inventio? Hinc itaque necessarium est quosdam sane medicos
+<lb/>inscitiam suam occultantes, forsan autem nonnulIos
+
+<pb n="14.602"/>
+<lb/>etiam vere ignorantes, dicere, a nullo majorum tale
+<lb/>quid esse proditum: sed praestigiatorem esse, qui hujusmodi
+<lb/>praedictionem ostendit. Ipse vero praedicens neque
+<lb/>quod a pluribus majoribus scriptum sit et praesertim ab
+<lb/>Hippocrate, omnium nobis bonorum auctore et duce, audet
+<lb/>fateri, metu simul praesentium medicorum et odii
+<lb/>suspicione, neque quod ipse invenerit: mentiretur enim
+<lb/>ita et magis odio ab ipsis haberetur. Quaestionem itaque
+<lb/>sustinens, ad quam quid prorsus respondere debeat, ambigit,
+<lb/>si detrectet et deliberandum censeat, meo judicio
+<lb/>augebit sane praestigii suspicionem in futurum : postremo
+<lb/>autem invidiam in se concitabit, ut insidias ab iis experiatur:
+<lb/>primum sane per pharmace, deinde quibus Quintus
+<lb/>captus fuerat, praestantissimus quidem sui temporis
+<lb/>medicorum, urbe autem ejectus, tanquam aegrotantes interimeret.
+<lb/>Quare necesse est ut ei, qui artem philosophice
+<lb/>et ut Asclepiadis dignum est exercet, alterutrum
+<lb/>contingat, aut ut Quinto similiter in exilium relegatus
+<lb/>praeclara sensus praemia reportet : aut calumnias sustinens
+<pb n="14.603"/>
+<lb/>et manifesto, siquidem timidior fuerit, partim respondens
+<lb/>partim fubticens leporis vitam degat, semper tremens et
+<lb/>ut patiatur aliquid exspectans , praeterquam quod praestigii
+<lb/>suspicionem augeat. Sin autem animosior cominus
+<lb/>procedat solusque cum multis versutis hominibus ac in
+<lb/>plerisque improbissimis fraudum generibus exercitatis decertet,
+<lb/>ipse eruditione et disciplinis fretus ac talium maIignitatum
+<lb/>imperitus vel omnino victus obtemperet in
+<lb/>posterum ad omnia ilia, in quibus illo uti voluerint : et
+<lb/>si diutius resistat certetque, mirabili quadam fortuna usus
+<lb/>semper certe bellum longe deterrimum, quod intestinum
+<lb/>nominant, gerere cogetur, cum effugere non possit. Accidet
+<lb/>igitur necessario, multos ita fraudibus oppressos et
+<lb/>alios qui veritatem sincere non propter aliquod exterius,
+<lb/>fed ipsam propter fe honorant , ubi semel iniquitatem
+<lb/>praesentis seculi fuerint experti noverintque manifesto,
+<lb/>quam nulli sint mortalium commodo futuri, ex vulgi consartio
+<lb/>discedere , tanquam in tempestate magna et agitatione
+
+<pb n="14.604"/>
+<lb/>ventorum se ipsos saltem servare conantes. Hi fana
+<lb/>vulgo quidem incogniti, noti vero et amici maxime quidem
+<lb/>et primum diis ipsis, deinde hominum praestantissimis
+<lb/>in quiete vitam agentibus, permittentes fraudulentis
+<lb/>istis gloriam apud vulgus aucupari et indurescere. Omnium
+<lb/>horum causa hominibus divitum in urbibus et potentum
+<lb/>deliciae existant ; qui voluptatem virtuti praeponentes in
+<lb/>nullo honore habent eos, qui aliquid honesti noverunt
+<lb/>quique alios docere quid possent. Toti autem illis dediti
+<lb/>sunt, qui voluptates suppeditant, hos ditant, hos admirantur
+<lb/>et in coelum efferunt, nec non histrionum et
+<lb/>adulatorum imagines deorum statuis asseclas constituunt
+<lb/>eruditos autem tanti faciunt, quantum opera ipsorum indigenI.
+<lb/>Nam in unoquoque honestum non respiciunt, neque
+<lb/>peritos ipsos sustinent , ied geometriam quidem et
+<lb/>arithmeticen, quantum ad impensarum rationem et domus
+<lb/>constructionem attinet, astronomiam vero et divinatoriam,
+<lb/>quantum ad praenoscendum quorum heredes futuri
+<pb n="14.605"/>
+<lb/>sint opus est, usurpant; quemadmodum et musicen, quatenus
+<lb/>auditum oblectare velint. Philosophiae autem, quae.
+<lb/>horum omnium praecipuum continet, .demonstratoriae speculationis
+<lb/>nullam habent rationem, nisi quantum usus
+<lb/>cogit, quosdam rhetoricorum virorum instrumento subdito
+<lb/>sophistica dicta speculatione uti. Philosophiae enim ipsius
+<lb/>nulIa mentio, sed omnium disciplinarum inutilissimum
+<lb/>hanc instar milii perforati arbitrantur. Hi igitur sunt,
+<lb/>qui etiam medicinae usum necessarium vident duntaxat,
+<lb/>neque hunc recte, sed, ut Plato alibi dicit, si de medico et
+<lb/>coquo a puero aut stultis hominibus sententia ferri debeat,
+<lb/>coquus utique non paulo plus laudis reportabit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p>Haec igitur ego ignorans in priori meo
+<lb/>Romam adventu nihilque suspicans indicavi non verbis
+<lb/>nudis, sed operibus futurorum praenotionem curationemque;
+<lb/>donec tale quippiam accideret, ut tu novisti, qui potissimum
+<lb/>per talius morbi Eudemi peripatetici philosophi
+<pb n="14.606"/>
+<lb/>curriculum adsuisti. ltaque die quodam nonnulla ipsum
+<lb/>invasit inaequalitas, horror autem ab hora octava; propter
+<lb/>quem a cibo abstinere coactus, postridie inculpate
+<lb/>agens, putavit tutius esse eum post octavam horam differre.
+<lb/>Quum autem nihil eadem hora molestum occurreret
+<lb/>inedia uso usque ad nonam, ac ulterius nulIa pensutalio
+<lb/>appareres, lotus et modico cibo assumpto tertio die
+<lb/>pro consuetudine nobiscum versabatur. Securitatis autem
+<lb/>gratia visum ei est etiam in illo die cibum post horas
+<lb/>suspectas differre. Lavit itaque post octavam et cibo asa
+<lb/>snmpto levi credidit nihil ei molestum accessurum. Quarto
+<lb/>die, quo nobiscum versatus ad balneum discessit, ridens
+<lb/>simul et respiciens te: utrum, inquit, in hoc quarto die
+<lb/>tutius est octavam horam inedia excedere, an balneo utendum
+<lb/>jam est? Tu igitur tanquam nihil molesti futurum
+<lb/>esset, lavacrum accedere jussisti aliique omnes qui aderant,
+<lb/>ego autem solus iubticebam. Roganti vero ipsi cur
+<pb n="14.607"/>
+<lb/>tacerem, respondi, non omnino me citra suspicionem esse,
+<lb/>initium quarti circuitus secundum primi diei rationem,
+<lb/>quo me pulsum tangere j ussisti , accidisse. Quum autem
+<lb/>praenovissem naturatam tuum pulsum qualis erat, sine quo
+<lb/>non licet exiguas ipsius mutationes in statum praeter naturum
+<lb/>deprehendere, manifesto nihil pronuntiavi; quemadmodum
+<lb/>neque nunc magis possum aliquid de suspicione
+<lb/>tunc mihi oborta proferre. Lavit igitur ex facili et me..
+<lb/>diocriter nutritus est. Ueinde cum circa vesperam vocasfet
+<lb/>me ac rursus puIsum ejus tangere justisset; idem quod
+<lb/>ante balneum pronuntiavi audivit, ac magis adhuc confidentius
+<lb/>quam tunc. Iccirco visum est sequentem diem,
+<lb/>qui septimus ab initio futurus erasa quartus autem ab illo,
+<lb/>exactius observare: ac cum domi fuisset commoratus, lavit
+<lb/>cibosque assumpsit, quum plures, ut nosti, omnino absque
+<lb/>febri ipsum este dicerent. Ego igitur quaerenti tibi, meminilli
+<lb/>enim omnino et hoc<hi rend="italic">, suspicionem</hi> mihi nunc esse
+<pb n="14.608"/>
+<lb/>dixi, minimae scilicet cuiusdam quartanae circuitionis initium
+<lb/>ei oboriri. Discessi igitur visitaturus quendam circa
+<lb/>vesperam aegrotum non prope habitantem. Interim lavatus
+<lb/>Ludemus statim quendam cibum sumpsit, non multo
+<lb/>post calorem per totum corpus sensit, quem ex potu
+<lb/>hausto provenisse ratus, vinum enim vetus postridie assumpserat,
+<lb/>hoc ipsum consuetis medicis recensuit: quumque
+<lb/>et illi statim vinum causarentur, nihil hic adhuc
+<lb/>molesti in quarto die post calorem obortum fore ratus,
+<lb/>lavit et consueto more cibo usus est, manifesto autem febricitare
+<lb/>orsus, persuasum habuit quartanae esse circuitum.
+<lb/>Me vero solum inde commendavit, tanquam exacte
+<lb/>pulsum priore tempore tangentem, persuasus mihi soli
+<lb/>habitum esse in philosophica speculatione mentione dignum,
+<lb/>medicinae vero obiter rationem habuisse. Etenim audierat
+<lb/>quum pater me ad philosophiam duceret, injunctam
+<lb/>ei per somnia evidentia, ut me medicinam edoceret, non
+<lb/>ut superfluam quandam disciplinam mihi suturam. Contigit
+
+<pb n="14.609"/>
+<lb/>etiam tunc furta fortuna, ut novisti et ipse, laborante
+<lb/>quodam homine per initia autumni morbo acuto,
+<lb/>deinde per tempus refectionis, circa horam quintam febricitare
+<lb/>exorso, pronuntiasse me tibi praefenti, quum
+<lb/>hominem illum vidissem , manifestissimum esse quartani
+<lb/>circuitus insultum. Quum enim juxta proportionem per
+<lb/>quartum diem repetitio staret, Eudemus factam praedictionem
+<lb/>abs te audiens multo magis attendere mihi persuasus
+<lb/>est; quare cum fecundum circuitum acceflto in magnitudinem
+<lb/>procederet, convocatis praestantissimis quibusque
+<lb/>urbis medicis de morbi curatione considerandum censuit.
+<lb/>Ego autem sponte relictus sum, ut qui, nollem verbis cum
+<lb/>ipsis contendere. Quum vero celeberrimis ipsorum thersacen
+<lb/>aegro propinare visum esset mane eo die , quo
+<lb/>accessio quarto repetens futura exspectaretur; digressis illis,
+<lb/>ut nosti, te praefante interrogabat me quam spem de
+<lb/>medicamenti usu haberem^ Nosti igitur quomodo ei refponderim,
+<lb/>nihil ambigens, medicamentum scilicet non
+<pb n="14.610"/>
+<lb/>modo nihil praesidii illaturum, sed etiam duplicem essecturum
+<lb/>quartanam. Ac quum ipse causam quaereret cur ita
+<lb/>responderem, crudum adhuc esse morbum dixi ; ac medicamentum
+<lb/>hoc adhiberi, quatenus vitiosum humorem crudum,
+<lb/>praesertim per hiemis initia, perturbare possit, non
+<lb/>tamen vel persecte concoquere vel discutere. Haec igitur
+<lb/>ego Eudemo respondi. Subsequenti die mane venientes
+<lb/>ad ipsum medici, nobis nondum praesentibus, medicamentum
+<lb/>propinarunt reverita narrare eis, quae ego ipsi direIam:
+<lb/>ut qui simul omnes medicos discedentes considenter
+<lb/>promittere videret, medicamentum assumtum non parutu
+<lb/>ipsi profuturum. Quum autem eadem hora accessio
+<lb/>invaderet, dicebant ita nonnunquam accidere in prima
+<lb/>potione, ut morbus moveretur agitareturque, secundo autem
+<lb/>potu in totum discuti , si die , quo accessio quarto
+<lb/>repetens futura expectatur, similiter mane ex eo assumeret.
+<lb/>HIi quidem ita locuti cum bona spe discesserunt. At
+<pb n="14.611"/>
+<lb/>quartana, non exspectato proximo circuitu, praeter opinionem
+<lb/>hora octava invasit, idque fortior quam die primo
+<lb/>fuerat. Venientibus itaque mane medicis, ut nosti, iterum
+<lb/>ex medicamento propinare visum esu Quumque pro
+<lb/>proportione prioris accessionis exhibuissent, discesserunt;
+<lb/>ac quae secundo post ipsam supervenit accessio priori in
+<lb/>ipsa respondebat; cujus rei gratia circa vesperam me rogabat,
+<lb/>quid exspectarem futurum. Ego, ut nosti, arteriarum
+<lb/>motum ipsius explorans, nunc sane, dicebam, refpoudere
+<lb/>tibi quippiam ad quaestionem tuto non possem ;
+<lb/>mane autem forsan potero, intuitus omnem quae noctu
+<lb/>redditur urinam. Reversus itaque sub auroram intuitusque
+<lb/>lotium, sinere jusii, ac rediturum me dixi circiter horam
+<lb/>quartam, si quid interea mingeret. Ac sane jam eo proiectus,
+<lb/>postquam urinas inspexissem pulfumque diutius tetigissem,
+<lb/>pronuntiavi ei tertiam quartanae accessionem circiter eandem
+<lb/>horam adiuturam , quo dicto jam discessi. Paulo post
+<pb n="14.612"/>
+<lb/>Sergius et Paulus, qui non multo post urbis praefectus
+<lb/>creatus est, et Fluvius consularis, jam et ipse in Aristotelis
+<lb/>philosophia exercitatus, sicut et Paulus Eudemum
+<lb/>visitatum venerunt: quibus iste omnia, quae a me audierat,
+<lb/>recensens tristitia se afficere dicebat factam de sutura
+<lb/>accessione praedictionem, observare autem quomodo
+<lb/>eveniret. Quum jam et illa circa eandem horam ut praeteritae
+<lb/>accideret, Eudemus sane admirabatur et invisentibus
+<lb/>ipsum omnibus meas praedictiones indicabat. Erant
+<lb/>autem hi prope omnes, qui Romae et dignitate et eruditione
+<lb/>praecellebant. Quum igitur Boethus in anatomica
+<lb/>speculatione me summe esse exercitatum audivisset, rogabat
+<lb/>jam me, ut aliquid de voce et respiratione, quomodo
+<lb/>fieret et per quae instrumenta, ostenderem. Ut igitur
+<lb/>cognovit nomen meum, etiam hoc ipsum Paulo narravit,
+<lb/>qui et ipse postquam innotuisset me rogabat ut etiam
+<lb/>sibi quid ostenderem; dicebat enim omnino se speculatioue
+<pb n="14.613"/>
+<lb/>eorum, quae in dissectionibus apparent, indigere. Similiter
+<lb/>et Barbarus avunculus regis Lucii, qui Mesopotamiae
+<lb/>dictae praeerat, ipse quoque sicut Paulus disciplinam desiderabat.
+<lb/>Postea et Severus consulatum tunc gerens, in
+<lb/>Aristotelis philosophia etiam versatus. Quomodo igitur
+<lb/>dissectiones successerint quum ipse scias, paucis commemorare
+<lb/>opus erit et breviter paulo post repetemus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Nunc autem ad Ludentum revertor. Quum
+<lb/>enim tribus quartanis laboraret, mediei de ejus salute desperarunt,
+<lb/>hieme jam fere media. Ego vero primum
+<lb/>tanquam praeceptori meo, deinde quod sorte fortuna prope
+<lb/>ipsum habitabam , necesse habui obtemperare bis die vocanti.
+<lb/>At Antigenes me eo tempore deridebat, unus ex
+<lb/>Quinti discipulis, qui et Marino convixerat principatumque
+<lb/>inter medicos obtinere creditus omnes potentes medicabatur;
+<lb/>haud scio qua opinione ductus laudantibus me
+<lb/>ridendo dicebat, paulo post ipsos cognituros quem commendarent,
+<lb/>cum Eudemum efferri viderint. Atque haec
+<pb n="14.614"/>
+<lb/>ad praesentes idiotas dicens, nonnunquam sermone averso
+<lb/>respiciensque ad medicos ajebat, Eudemum sexagesimum et
+<lb/>tertium annum agentem, tribus laborantem quartanis in
+<lb/>media hieme Calenus se curaturum promittit. Tu igitur,
+<lb/>Posthume carissime, et praedictiones de eo postea factas et
+<lb/>curationem novi quanto praeconio extuleris; mihi autem
+<lb/>primum tunc invidiae initium obortum est, ut qui tum
+<lb/>propter gravitatem vitae tum artis opera essem admirationi.
+<lb/>Etenim ex tribus quartanis quum primam quidem
+<lb/>exorsum hoc finitum iri die praesagiissem , visus sum
+<lb/>admirabilis; quum autem et secundae statum solutionis
+<lb/>tempus vere protulissem, omnes sane suerunt attoniti; in
+<lb/>tertia cepte deos precabantur ut successu frustrarer. Cum
+<lb/>autem et illa in die a me praedicto cessaret, non ob praedictiones
+<lb/>tantum, sed etiam curationem, haud mediocrem
+<lb/>gloriam sum consecutus. Antigenes igitur fere in terram
+<lb/>fe coram me dimisit propter temerarias ipsius in me oblos
+<lb/>cutiones habitas; similiter et Martianus, qui ipse quoque
+<pb n="14.615"/>
+<lb/>tum per illud tempus tum antea adhuc ceu maximus
+<lb/>anatomicos in magno honore et gloria apud adolescentes
+<lb/>medicos extitit. Legebantur autem duo ejus libri de dissectionibus
+<lb/>scripti. Is ipse quoque dolore affectus, eo quod
+<lb/>Eudemus non modo jure in omnibus laudari me oportere,
+<lb/>sed etiam pro miraculo haberi dicebat; non ex medicina
+<lb/>praedictiones, sed ex vaticinatoria has a me fieri calumniabatur.
+<lb/>At vaticinatoriam quam tandem diceret quum
+<lb/>nonnulli quaererent, interim auguratricem dicebat, iuterim
+<lb/>e sacrificio petitam , aliquan<hi rend="italic">do symbolicam</hi> aut mathematicam.
+<lb/>Postremo tale quid apud Eudemum accidit,
+<lb/>tertiae quartanae die instante, qua perfecte eum liberatum
+<lb/>iri dixeram. Martianus hora nona ad Eudemum prosectus
+<lb/>praesentem accessionem non paulo, sed etiam multo
+<lb/>vehementiorem praeterita esse dixit ac statim abit vultu
+<lb/>laeto, manisesto indicans fe gaudere, tanquam praedictio
+<lb/>non successerit. Eudemus autem sentiens facilitatem morbi
+<pb n="14.616"/>
+<lb/>tolerandi, qualem necdum antea perceperat, quin etiam
+<lb/>confidens mihi tanquam non erraturo in praedictione, exspectans
+<lb/>dum alius etiam quidam medicus accederet; quumque
+<lb/>non unus tandem adveniret, sed duo et tres (observabant
+<lb/>enim omnes quomodo praedictio succederet, optantes
+<lb/>saltem in tertia quartana frustrari me et praedictione
+<lb/>et curatione ipsius), Ludemus sane voluit et illos pronuntiara
+<lb/>quam ipsi de morbo suo opinionem haberent.
+<lb/>Quumque eandem responsionem audivisset, quam Martianus
+<lb/>protuIerat, et attendens similiter etiam illis ceu Iaefloribus
+<lb/>Martiano redditis, intelIexit sane et ipse gaudere
+<lb/>illos quasi et praedictio et curatio improspere successerit.
+<lb/>Quoniam autem diutius morabar praeter consuetudinem
+<lb/>in visitando quodam occupatus, misit continue ad me
+<lb/>juxta habitantem, ut dixi, cupiens, ut de facilitate ipsius,
+<lb/>quam habebat, ferrem judicium. Ut igitur accessi, ne sedere
+<lb/>quidem me permittens manum exporrexit, jubeus ut puI.
+<lb/>sum tangerem. Quum autem explorassem studiose, quaerebat
+
+<pb n="14.617"/>
+<lb/>quidnam nuntiarem. Ac ego ridens, quid aliud,
+<lb/>inquam, quam bona? qualia, ait, haec particulatim mihi
+<lb/>edicito. Ego russus, non satis, inquam, erit tibi summam
+<lb/>ipsam universim audienti, gaudere ob ea, quae <hi rend="italic">su-</hi>
+<lb/>tura sunt. Nequaquam, inquit; audire enim desidero
+<lb/>particulatim. Audito jam. Hac nocte tota dispositione
+<lb/>morbosa perfecte liberaberis ; quibus factis etiam symptomatum
+<lb/>omnium et supervenientium et futurorum solutio
+<lb/>comitabitur. Atque hoc dicebam nuper mihi ex pulsibus
+<lb/>indicasse naturam, quae corpus tuum dispensat, excitatam
+<lb/>jam motamque, ut omnem humorum corporis pravitatem
+<lb/>ex corpore tuo expeIIat. Quomodo igitur jam a natura
+<lb/>hoc tibi indicatum esse dicis? non enim loquens haecltibi
+<lb/>dixit ι responde. Omnino enim novisti me quae dices
+<lb/>intellectu magis assecuturum quam omnes bos miserabiles
+<lb/>medicos. Quoniam motum, dixi, arteriarum elatius extulit
+<lb/>quam ad alteram dimensionem : quod semper facere
+<lb/>consuevit, ubi id quod noxium est excernere e corpore
+<pb n="14.618"/>
+<lb/>nititur. Post haec dicta Eudemus iterato sermone intulit.
+<lb/>Verum quia multae excretione viae a natura distributae
+<lb/>sunt [etenim vomitus, aIvus profluens, forsan et urinarum
+<lb/>copia, sudorum multorum eruptiones, sanguinis profluvium
+<lb/>et confneta haemorrhois adaperta vacuationem
+<lb/>subitam efficit) proprium artis tuae munus fuerit vacuatinnis
+<lb/>speciem interpretari. Sanguinis igitur profluvium
+<lb/>futurum haec et illa signa praecedunt, quemadmodum etiam
+<lb/>sudores haec. Adjeci autem inter dicendum et ea quae
+<lb/>vomitus praecedunt. At vacuationis per ventrem subitae
+<lb/>crisin fatentis nullum peculiare eximium signum habemus.
+<lb/>Verum si nullum ex aliis adsit, reliquum est ut speremus
+<lb/>in te hoc futurum. Dialectice, inquit, collegisti ejus
+<lb/>quod fiet inventionem. Haec fane cum advesperasceret
+<lb/>jam inter nos disserebamus. Quum itaque mane accederem,
+<lb/>tu ipse audivisti summam praedictionis a phiIosopho,
+<lb/>qui non sustinebat moderate loqui, ut consueverat;
+<lb/>sed vociferabatur ad omnes nos ingredientes amicos, Pythium
+
+<pb n="14.619"/>
+<lb/>Apollinem per Caleni os voluisse oracula aegrotantibns
+<lb/>dicere nec non curare ipsos liberareqne in totum
+<lb/>die praedicto. Nam cum factam morbi solutionem (persuasum
+<lb/>enim habeo jam ex toto me esse sanum ) longe
+<lb/>tempore antea praenuntiasset et curationem et praedictionem
+<lb/>sum consecutus. Liberavit autem me tribus quartanis,
+<lb/>in quas ex intempestivo theriacae medicamenti potione incidi,
+<lb/>quando tempus ipsius esset non illis eloquentibus^
+<lb/>hic propinans me liberavit, derisus ab iis, quod lenem
+<lb/>hiberno tempore laborantem tribus quartanis levaturum
+<lb/>se putaret.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Imperiti fano artis medicae quum haec
+<lb/>audirent, commune bonum me Romae degentibus futurum
+<lb/>existimantes omnes gaudebant. At martianus, qui non
+<lb/>medicum modo, fed etiam amicum esse se testabatur,
+<lb/>quum audivisset, quid superiori die pronuntiassem de arseriarum
+<lb/>motu, quem illi turbulentum, non decretorium
+<lb/>nominantes extimuerunt, etsi Eudemum fecundum naturam
+
+<pb n="14.620"/>
+<lb/>prorsus habere offenderent, ne verbo quidem uno
+<lb/>laudari me sustinebat. Digressas autem in Sandaliarium
+<lb/>forte mihi occurrit ac statim neque salutans, uti solebat,
+<lb/>rogavit, num secundum Hippocrate Prorrh e licorum librum
+<lb/>legissem, an omnino mihi esset incognitus. Ac deinde
+<lb/>ubi audivisset me legisse, ac mihi videntur, inquit, nonnulli
+<lb/>medicorum recte ac convenienter pronuntiasse ex
+<lb/>germanis Hippocratis libris ipsum non esse. Omnino igit
+<lb/>ur novisti, inquit, quae in eo scripta sunt? Ego vero
+<lb/>hujusmodi non vaticinor; quorsum autem hoc nunc dictum
+<lb/>ab eo esset quaesivi. Quod cum ab Fudemo te admirante
+<lb/>digressus esses, ajebat, heri vesperi ex pulsus tactu praedixeris
+<lb/>excretionem per alvum suturam, postquam non
+<lb/>amplius febricitaret. Quae ubi ipse protulisset, ego t antum
+<lb/>respondens, ab Eudemo haec audivisti, non a me,
+<lb/>statim discessi; prosectusque ad Eudemum quid accidisset
+<lb/>nunciavi, demirabarque medicorum in Romanorum urbe
+<lb/>celebrium malevolentiam. Ille secundum rationem hoc
+<pb n="14.621"/>
+<lb/>mihi accidere dixit, conferens cum patriae nostrae medicis
+<lb/>eos, qui in hac urbe versantur, pluribus de causis ad
+<lb/>summum malitiae tendentes; ac deinde mihi omnes in hunc
+<lb/>modum recensuit. Ne arbitreris bonos viros hac in urbe
+<lb/>fieri malos, sed qui mali jam sunt, rerum materiam hic
+<lb/>et quaestum multo uberiorem quam ii, qui in externis urbibus
+<lb/>agunt, inveniunt. Ac dum multos ipsis simitas locupletatos
+<lb/>vident, actiones eorum varias imitantur atque
+<lb/>hinc ex pluribus causis in extremam pravitatem delabuntur.
+<lb/>Dicam autem tibi nonnullos ipsorum pravitates
+<lb/>ceu longo tempore expertus. Non enim solum natura,
+<lb/>neque quaeftuofarum rerum materia malitiam eorum , qui
+<lb/>natura pravi sunt, adauxit; sed etiam disciplina viarum
+<lb/>imposturae secuta est, quas quotidie a sui similibus iniri
+<lb/>conspiciebant: deinde in his imitandis tunc versantur. Et
+<lb/>si ab aliquo maleficii arguantur, ad alios ignotos transgrediuntur;
+<lb/>quibus illa, quae prima experientia perperam
+<lb/>facere sunt deprehensi, tutius offeruntur; id quod non
+<pb n="14.622"/>
+<lb/>parum eos movet ut nunquam a maleficiis desistant. Qui
+<lb/>autem parvas urbes inhabitant, neque magnitudine quaestus
+<lb/>alliciuntur, quemadmodum hujus fucosae, cognoscunturque
+<lb/>facile a civibus, et si etiam parum deliquerint, inexercitatam
+<lb/>habent speculationem. Hic autem et quod non ab
+<lb/>omnibus cognoscantur, quae frequenter maleficia molinatur,
+<lb/>naturae ipsorum malignitatem auget. Nam ingemat
+<lb/>se ignorantibus ex improviso, et praesertim iis, qui propter
+<lb/>animi simplicitatem ipsos contra mordere nequeunt,
+<lb/>sicut ipsi se invicem conviciis lacerant , si quam etiam
+<lb/>parvam incuriam intulerint. Ut igitur latrones apud nos
+<lb/>ob maIesicium aliquod se mutuo juvant sibique parcunt,
+<lb/>eodem modo qui hic agunt adversus nos conjurati sala
+<lb/>hac re a latronibus disserunt, quod in urbe, non in montibus
+<lb/>facinora sua perpetrent. Sed jam quod proposueram,
+<lb/>alebam , saepe audivisti: quare quamprimum seditio ac
+<lb/>belli tumultus in patria mea cessaverit, conspicies me ex
+<lb/>hac urbe discessurum et brevem adeo hic moram facturum
+
+<pb n="14.623"/>
+<lb/>, quo citius ab improbis istis nebulonibus liberer.
+<lb/>Sed ignorant, Eudemus ait, hoc tibi institutum esse et
+<lb/>si noverint, quemadmodum ipsi mentiuntur, omnes te simiIiter
+<lb/>ut ipsos mentiri censebunt. Et quemadmodum ipsi
+<lb/>rerum indigi et imperiti quum in patria manere nequeant,
+<lb/>eo quod praeter alia, quae dixi, vaIritiam subdolam improbamque
+<lb/>exercere cognoscuntur, in hanc urbem migrarunt,
+<lb/>ita quoque alios huc profectos arbitrantur et nolle
+<lb/>prius discedere quam pecuniam acervaverint. Et si a
+<lb/>civibus genus tuum poffessionemque audiant, quod non sis
+<lb/>ex eorum numero, qui rerum inopia laborent, effictum
+<lb/>omnino abs te esse dicent, ut auditoribus imponas; quae
+<lb/>enim ipsi fecerint, ea de omnibus suspicantur. Quum
+<lb/>igitur haec aliaque id genus Eudemus dixisset, addidissetque
+<lb/>eos, nisi improba vafritie nos laedere potuerint, ad
+<lb/>insidias per pharmaca descendunt; quumque retulisset idem
+<lb/>inter narrandum, adolescentem quendam ante annos circiter
+<lb/>decem in hanc urbem profectum , qui operibus similiter
+
+<pb n="14.624"/>
+<lb/>ac ego tractationem artis indicabat, pharmacis fuisse
+<lb/>sublatum cum famulis duobus, qui una cum ipso adven
+<lb/>era ut. Gratiam tibi habeo, dixi, praeceptor carissime.
+<lb/>qui omnem ipsorum pravitatem mihi recensuerim. Ego
+<lb/>enim secure me ipsum tuebor, digressus ab eis procul;
+<lb/>claraque inscitia eorum facta, a magna hac et populosa
+<lb/>civitate in parvam paucorumque hominum migrabo, ubi
+<lb/>omnes inter nos novimus ex quibus orti simus, quam
+<lb/>eruditionem habeamus, possessionem et mores, quamque vitae
+<lb/>rationem ineamus. Eo igitur animum convertens inscitiam
+<lb/>ipsorum et vasritiem redarguere non studui.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Sed commemoratum adolescentem, ad quem
+<lb/>profectus primo statim die dixi quartanae febris accessionis
+<lb/>insultum fore, ubi accepissem curavi, statum morbi
+<lb/>solutionis tempus, ut in Eudemo, praefatus; quumque a
+<lb/>te vocatus essem , ut hominem quendam inviserem Charilampi
+<lb/>cubicularium quidem, ut omnes nunc Graeci nonunant,
+<lb/>corporis vero custodem, quemadmodum et. ii qui
+<pb n="14.625"/>
+<lb/>perperam Atticos imitantur, in nervo vulneratum persanavi,
+<lb/>id quod nullus aulicorum medicorum praestare potueriI.
+<lb/>Ac post ipsum in Sandalario Diomedem rhetorem,
+<lb/>cujus nec ipsius quoque morbi affectionem celeberrimi inter
+<lb/>aulicos medicos inveniebant, sed etiam secus quam
+<lb/>decens erat curationem moliebantur, paucis diebus quum
+<lb/>morbum admodum diuturnum praenovissem, restitui. Ac
+<lb/>aestate appetente in primatibus Romae et praedictiones,
+<lb/>ut curationes magna laude dignas molitus sum; ac in
+<lb/>multo honore et gloria apud omnes eram, ut scis, nomenque
+<lb/>Caleni celebre. Ac cum gloria crescebat invidia eorum
+<lb/>, qui et ipsi putabantur esse aliquid, tanquam in omni
+<lb/>artis parte a me vincerentur, adhibebantque urbem circumcurrentes
+<lb/>alius aliam calumniam; hic, quod casu illum
+<lb/>curaverim, periculoso curationis modo usus; iIle, quod e
+<lb/>vaticinatrice, non ex medica specuIatione praedictiones fiorent.
+<lb/>Accessit etiam his quaestio, quam cum Stoicis et
+<lb/>Peripateticis habebam , quos Boethus ipse convocarat.
+<pb n="14.626"/>
+<lb/>Adde quae in lusti uxore fecerim , quam contabescentem
+<lb/>citra ullius partis affectum evidentem non solum amare
+<lb/>deprehendi , sed etiam quem amaret ; et paulo post quomodo
+<lb/>invenerim aperiam. Sed primum certaminis, quod
+<lb/>cum Stoicis et Peripateticis gessi, praesentibus esiam aliis
+<lb/>simul cum ipsis et medicis et philosophis, mentionem
+<lb/>sum facturus, simulatque unde incepit, percenfuero, ut si
+<lb/>etiam alicui ex iis, qui hujusmodi sermonum communicatione
+<lb/>digni sunt, librum hunc voles impertire, omnem
+<lb/>jam factorum ordinem habeas ; et ne semper narrando
+<lb/>occuperis, quae in artis medicae operibus dissectionibusquο
+<lb/>et in disputationibus <hi rend="italic">ipsorum</hi> fecerim, invidos et medices
+<lb/>et philosophos redarguens. Quum enim provocarer ab
+<lb/>eis, ad hoc descendi, Humerum imitatus, qui me docnerit
+<lb/></p>
+<p><hi rend="italic">Hominem vicissim impetere, quum quis prior mo
+<lb/>lessus suerit.</hi></p>
+<p>Tale igitur initium conversatio cum eis habuit. Flavius
+<pb n="14.627"/>
+<lb/>Boe thus, vir consularis, quam fuerit et honesti studiosus et doctrinae
+<lb/>cupidus, tu quoque nosti. Utebatur autem praeceptore
+<lb/>sectae Peripateticae Alexandro Damasceno; qui quidem et
+<lb/>Platonis scita noverat, sed Aristotelicis magis adhaerens.
+<lb/>Quum igitur rogasset me ut per sectiones docerem quomodo
+<lb/>respiratio et vox fieret, comparavit et hoedos et
+<lb/>porcos complures; simias enim dicebam non desiderare
+<lb/>dissectionem, quum non solum haec animalia similem habeant
+<lb/>constructionem, sed etiam pedestria sere omnia, quae
+<lb/>autem magnam edunt vocem, aptiora exili voce praeditis
+<lb/>esse, quae sumptiones demonstratorius ad fidem de re proposita
+<lb/>faciendam praebeant. Advenerant spectatum quae
+<lb/>ostensurus essem cum alii quidam, tum et Adrianus rhetor,
+<lb/>nondum rhetoricas institutiones docens, sed cum Boetho
+<lb/>adhuc agens ; item Demetrius Alexandreus , Favorini familiaris,
+<lb/>quotidie publice exponens ea, quae secundum
+<lb/>Favorini dictionis speciem proponebantur. Quum autem
+<lb/>ego ante dissectionem dicerem , me quidem ea, quae in
+<pb n="14.628"/>
+<lb/>dissectione apparerent, ostensurum, quae vero inde sequantur,
+<lb/>non meum esse tantum colligere, sed etiam
+<lb/>omnium praeceptorem Alexandrum magis posse sperare;
+<lb/>omnes sane reliqui tanquam modestum sermonem receperunt,
+<lb/>honorem Alexandro deserentes; ac simul adhortabautur
+<lb/>eum ut toti negotio citra contentionem incumberet.
+<lb/>Quippe non latet te, Alexandrum hoc affectu ab
+<lb/>omnibus nosci , quemadmodum et tunc maniiesto indicavit.
+<lb/>Quum enim ostensurum me pollicerer nervulorum tenuissimorum
+<lb/>, quasi capillarem coiugationem quandam guttaris
+<lb/>musculis inseri, aliis ex sinistris partibus, aliis ex
+<lb/>dextris, ob quos funiculo interceptos vel sectos animal
+<lb/>mutum redditur, ita ut nec vita neque actio ipsius offendatur;
+<lb/>Alexander commodum respondens priusquam
+<lb/>ostendatur, hoc primum , inquit, utique tibi concedetur
+<lb/>sed iis, quae sensu apparent, credere nos oportet. Quae
+<lb/>ubi ego audivissem, relictis ipsis discessi, unum hoc locutus,
+<lb/>errasse me, qui putarem ad rusticos Pyrrhoneos me
+<pb n="14.629"/>
+<lb/>non venire, aut certe non venturum fuisse. Postquam
+<lb/>jam discessissem, cum alii Alexandrum increpabant, tum
+<lb/>Adrianus Demetrinsque , male semper erga contentionem
+<lb/>affecti, probabilem occasionem habebant, qua vehementer
+<lb/>eum corriperent. Quum vero studiosi etiam omnes, qui
+<lb/>in urbe Romanorum erant, et Severus Paulusque et Barbarus
+<lb/>id resciverunt, omnes certe graviter ipsum accusarunt,
+<lb/>volueruntque praesentibus ipsis fieri dissectiones, congregatis
+<lb/>ad hoc aliis universis, qui in medicina et phiIofophia
+<lb/>erant celebres. Durante igitur conventu pluribus
+<lb/>diebus, ostendi inspirationem fieri thorace dilatato, exspirationem
+<lb/>vero contracto; praeterea musculos indicavi,
+<lb/>a quibus diIatatur; ad haec nervos, qui in ipsus insero ntur,
+<lb/>ex spinali medulla proficisci: insuper quomodo non
+<lb/>coacta spiritus, foras dilatio exspirationem sine strepitu esficiat;
+<lb/>violentam vero esse diversam ab ea cum strepitu
+<lb/>accidentem , quam effiationem nominamus. Quum autem
+<pb n="14.630"/>
+<lb/>monstrassem etiam talem solam , dum per arteriam asperam
+<lb/>exit, a cartilaginibus ictam, vocem efficere et a muaculis
+<lb/>has moveri, nervosque hos moventes affectos vocis
+<lb/>abolitionem moliri; et oblocutoribus haec ubi indicassem,
+<lb/>omnibus convictis, Boethus rogavit me ut eorum commentaria
+<lb/>sibi darem. Ac cum misisset ipse, qui notis celeri
+<lb/>ter scribere noverunt, dictavi omnia et ostensa a me
+<lb/>et dicta, non praevidens, an ea multis esset communicatorus.
+<lb/>Et hactenus, o Posthume, nemo ausus est resragari,
+<lb/>quindecim interea annis praeteritis; quamvis multi
+<lb/>contradicere nitantur, ut hoc solum apud vulgus audiant,
+<lb/>nempe Caleno se contradixisse, non tamen audent scripta
+<lb/>ad doctorum hominum judicium referre.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Reliquum igitur, quod pollicitus sum, deinceps
+<lb/>tibi enarrabo , modo et hoc apponere sermoni praesenti
+<lb/>oporteat; praesertim quum et sophistarum medicotum
+<lb/>nonnulli, ignorantes qua ratione Erasistratus adolescendi
+<pb n="14.631"/>
+<lb/>erga ancillam patris cognovit amorem, scribant arterias
+<lb/>puIsus juveuis amatorios edentibus ipsum invenisse, nunc
+<lb/>autem non amplius , ut quis ex pulsibus inventum esse
+<lb/>dicat, sustinent. Ego sane quomodo Erafistratus id deprehenderit,
+<lb/>dicere non possum; quomodo autem ipse cognoveris,
+<lb/>jam tibi aperiam. Vocatus smn ad mulierem
+<lb/>invisendam, quae noctu vigiliis torquebatur et alias in
+<lb/>aliam decubitus figuram se transmutabaI. Hanc dum sebri
+<lb/>carentem invenio, rogo de singulis particulatim ei obortis,
+<lb/>unde vigilias accidere deprehendimus. Ipsa autem vix
+<lb/>aut nequaquam respondebat, ceu frustra interrogaretur indicans ;
+<lb/>denique vultu averso vestimentis superinjectis universo
+<lb/>corpori, totam se contegit, ac alteri cuipiam exiguo
+<lb/>pulvino caput inclinabat, quemadmodum ii, qui somno indigent.
+<lb/>digressus itaque ego, inde alterutrum ipsam pati
+<lb/>existimabam, aut melancholico animo torqueri, aut qua
+<lb/>tristitia afficeretur, nolle fateri. Differebam itaque in
+<lb/>subsequentem diem exactius de ipsa considerare, aequum
+<pb n="14.632"/>
+<lb/>venissem, primum audivi ab ancilla astante fieri non posse
+<lb/>ut ipsam viderem. Iterum reversus postquam idem audivissem,
+<lb/>tertio redii: ac cum famosa mihi diceret ut discederem
+<lb/>, nolle enim mulierem molestari , quumque novissem
+<lb/>, ipsam me egresso et lotam et solita assumpsisse, veni
+<lb/>postridie, ac solus cum ancilia multifariam disserens eognovi
+<lb/>manifesto tristitia quadam affectam, quam casu inveni,
+<lb/>ut etiam Erasistrato accidisse puto. Nam cum certus
+<lb/>essem nullum in corpore affectum existere, sed animali
+<lb/>quadam molestia mulierem torqueri, contigit eodem
+<lb/>tempore, quo ipsam invisebant, id confirmari, adventante
+<lb/>quodam ex theatro et nuntiante se PyIadem vidisse saltantem:
+<lb/>mutatus enim ipsius visus est et faciei color:
+<lb/>quosl ego contemplatus manu mulieris brachiali injecta
+<lb/>pulsum deprehendi inaequalem, subito ac multis modis
+<lb/>agitatum, qui animam turbatam esse indicat: idem igitur
+<lb/>et de re quadam contendentibus obvenit. Postridie dixi
+<pb n="14.633"/>
+<lb/>cuidam ex iis, qui sequebantur me, quum mulierem visitatum
+<lb/>accederem, ut paulo post adveniens nuntiaret mihi
+<lb/>Morphum hodie saltare; id ubi factum est, pulsum nihil
+<lb/>offendi mutatum. Similiter et sequenti die quum curassem
+<lb/>ut de tertio saltatore nuntiaretur, similiter pulsus
+<lb/>haud mutatus est. Quarta rem diligenter examinavi nocte;
+<lb/>qua observans pulsum, quum Pylades saltare nuntiaretur,
+<lb/>turbatum ipsum multifariam ipsum videns, deprehendi ita
+<lb/>mulierem Pyladem amare, atque hoc exacte observatum
+<lb/>diebus subsequentibus confirmatum est. Quemadmodum
+<lb/>etiam divitis cuiusdam servus oeconomus similiter cognitus
+<lb/>est mihi aegrotare. Quum enim angeretur de reddendis
+<lb/>rationibus eorum, quae dispensarat, in quibus non parum
+<lb/>argenti desiderari sciens, prae curis vigiIabat et tristitia
+<lb/>contabescebat. Quum autem praedixissem domino ipsius
+<lb/>nullum esse affectum corporeum seni, inspicere consului,
+<lb/>qui timeret, quum ipse rationes eorum, quae administravit,
+
+<pb n="14.634"/>
+<lb/>esset repetiturus, nam idcirco tristitia afficiebatur,
+<lb/>quod sciret non exiguum in eis desideratum iri. Quoniam
+<lb/>recte conjecisti boe, inquit, consultu firmae agnitinnis
+<lb/>causa ut ei diceret quantam haberet famulus repositam
+<lb/>pecuniam, hanc postularet, ne derepente eo mortuo
+<lb/>periret, dispensatione in alium domesticum translata,
+<lb/>quem nondum esset expertus; ab illo enim non desideraret
+<lb/>rationes. Postquam dominus haec servo dixisset, is
+<lb/>persuasus se non examinatum iri postea , eoque evadens
+<lb/>laetior, tertio die naturalem corporis habitum recuperavit.
+<lb/>Curnam igitur priores medicos et praedictam multerem
+<lb/>praedictumque famulum visitantes haec latebant? Nam
+<lb/>ex communibus ratiocinationibus hujusmodi inveniuntur;
+<lb/>etiam si exiguam speculationis medicae scientiam habeant.
+<lb/>Ego sane puto, eo quod nullam habent cognitionem eorum,
+<lb/>quae corpus propter animi affectus pati consuevit; forsan
+<lb/>etiam , quod neque ob contentiones et metus subito animum
+<lb/>turbantes pulsus mutari cognoscunt. Quod Erasistratus
+
+<pb n="14.635"/>
+<lb/>intelligens, quando mulier in eadem domo cum aegrotante
+<lb/>esset, facilius invenit, ut quae ab adolescente frequentius
+<lb/>videri poterat, non pluribus diebus quemadmodum
+<lb/>Pylades, qui neque tunc apparens, sed auditus tantum
+<lb/>mulierem turbaret. Nugae igitur sunt pulsus amatorie
+<lb/>moti eorum qui ignorant nullum quidem pulsum amoris
+<lb/>esse indicem, sed anima turbata ob quamcunque rem
+<lb/>pulsus alterari, neque naturalem aequalitatem neque ordinem
+<lb/>conservantes.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent"><hi rend="italic">[Quibus artibus Cyrillum Boethi silium
+<lb/>clam cibum sumere deprehendit.]</hi> Itaque quum unum
+<lb/>adhuc adjecero, ob quod statim sane obstupuit Boethus,
+<lb/>ubi autem quomodo esset inventum audisset, admirari non
+<lb/>amplius se dicebat, sed ignorantes speculationem tanquam
+<lb/>indoctos damnare, ad aliud quid digrediar. Quum itaque
+<lb/>alter filiorum ipsius aegrotasset , deinde convaluisset, quumque
+<lb/>mox recidivam morbus fecisset iterumque cessasset
+<lb/>et post haec rursus puer febricitasset, dixi eum clanculum
+
+<pb n="14.636"/>
+<lb/>comedere. Nam quae manifesto ei dabantur, praeterquam
+<lb/>quod qualitatibus essent idonea, etiam quantitate
+<lb/>moderata fuerant. Quapropter matrem pueri, ubi diIigenter
+<lb/>se ipsum observaturam promitteret, constituit custodem,
+<lb/>quae toto die assideret, prohiberetque domum illam ingredientes,
+<lb/>in qua ipse dormiebat, occlusam interius ab ipsa
+<lb/>exacte. Posteaquam quatuor jam diebus ita observaretur,
+<lb/>noctu incaluit; ob quod Boethus mihi indignatus et acceptum
+<lb/>domum suam deduxit ad puerum; sequuti autem
+<lb/>sunt ipsum etiam qui in via occurrebant, inter quos et
+<lb/>tu eras. Puerum deprehendi ex cubiculo una cum matre
+<lb/>ad aliud domicilium digressum, ubi etiam lectus erat in
+<lb/>quo mater pueri decumbebat; lectica vero quaedam exigua
+<lb/>inter duos lectos lutarius, juucta, in quam puerum collocans
+<lb/>observabat ne quis eum accederet. Porro sedile
+<lb/>unum lecticae mediocre ad cervicem ejus habebatur. E
+<lb/>regione juxta superiores lecti terminos duo ordine sedilia
+<pb n="14.637"/>
+<lb/>vicina erant: super quae Boethus nos collocans, ipse uxori
+<lb/>assidens, adduxi Calenum, inquit, hunc, ut audiat abs te
+<lb/>quam diligenter hisce diebus puerum custodieris, ne quicquam
+<lb/>in victus ratione peccaretur; videatque num revera
+<lb/>nocte fehricitarit, an tu, quum calidiorem ipsum factum
+<lb/>esse diceres, desipueris prae timore, quae putaris febrem
+<lb/>esse calorem ob aliam forte causam obortum; ut deinde
+<lb/>quomodo habeat manifesto nobis indicet, simulque omnem
+<lb/>ipsius victus rationem te doceat. Quum itaque arteriam
+<lb/>pueri in brachiali tetigissem, absque febri ipsum esse dixi,
+<lb/>sed praebere me convitiorum occasionem iis, qui me vaticinatorem
+<lb/>appellant. Interloquens itaque Boethus ait:
+<lb/>et ego apud illos te vocare, ut nosti, consuevi vatem,
+<lb/>quum hujusmodi diceres, quale hostes tui fieri non posse
+<lb/>dictitant, ut ex medicinae speculationibus cognoscatur.
+<lb/>Atqui hactenus omnia (dicebam) ostendi tibi talia ex specalatione
+<lb/>medica inveniri et quosdam medicorum ea seripfiffe.
+
+<pb n="14.638"/>
+<lb/>Dicere igitur jam vaticinium omnes mihi jussistis;
+<lb/>ac ego precatus vos semel adhuc ut permitteretis nubi
+<lb/>pueri pulsum tangere, posteaquam hoc fecissem, testaberis,
+<lb/>dixi , o Boëthe, nullum mihi proficiscenti tecum,
+<lb/>quum tota via nos dissereremus accessisse, qui futurum vaticinium
+<lb/>praedicaverit. Postquam itaque ipse dixisset se
+<lb/>attestaturum, Novisti, inquam, quomodo ridens ego advertere
+<lb/>et audire vos jussi vatis oraculum, tale quoddam esse
+<lb/>loquutus. Cyrillo huic in domo ista aliquid ex esculentis
+<lb/>occuItatum est, quod quum mater ipsius ad balneum proficiscens
+<lb/>domum clauserit, deinde securitatis gratia clavi
+<lb/>ferae injecta obsignaverit, hoc enim audio ipsam frequens
+<lb/>ter facere, absconsum filius accipiens, ita ingerat. Postquam
+<lb/>hoc Boethus audivisset, statim profiliens ad puerum
+<lb/>corripit ipsum et in lectum transferens lecticamqne sterni
+<lb/>jubens sperabat occultatum quamprimum appariturmn. libi
+<lb/>operimenta omnia et fubsternicula excussa essent, pannum
+<pb n="14.639"/>
+<lb/>deinde perscrutatus est. Postea sedili sublato observabat
+<lb/>num aliquid sub eo occultatum appareret. Quum autem
+<lb/>nihil ita apparuisset, translato puero a lecto ad lecticam,
+<lb/>lectum totum iterum sterni jussit, ac in risum solutus,
+<lb/>quid, ait, vaticinator dicit? Ego autem admiratus quod
+<lb/>nihiI invenisset, ubi occultatum putabatur, id quod solum
+<lb/>indiscussum remanserat, tanquam nullo quod quaerebatur
+<lb/>in eo contineri suspicante, in alium attollens commovebam;
+<lb/>erat autem hoc exiguum matris ipsius velamen tum
+<lb/>sedili impositum, quo discusso pars panis in eo contenta
+<lb/>in terram decidit, ac vos omnes altissime clamastis, una
+<lb/>eum Boetho ridentes, vaticinatoriamque commendantes.
+<lb/>Boethus vero supra omnes ridens admirabatur, quomodo
+<lb/>puIsus esculentum reconditum indicare possit. Sed quid
+<lb/>puer facturus esset, matre lavante, indicavi; dixique praeterea,
+<lb/>o vir acerrime, pulsibus hoc non indicantibus, Casanus
+<lb/>conjeciI. Nam ostio exacte clauso puerum sine metu
+<pb n="14.640"/>
+<lb/>comedere potuisse, haud erat difficile conjectu. Imo etiam
+<lb/>quod aliquid occultatum esset, idque esculentum, pulsus
+<lb/>sane non indicavit; verum turbatum ipsum puerum conspiratus
+<lb/>intellexi ut in muliere amante et servo timente,
+<lb/>turbationem ex animali quodam affectu obortam, quum
+<lb/>puer omnino febri vacaret. Rogabis igitur forsan , unde
+<lb/>id quod occultatum erat esculentum esse coniecerim. Audi
+<lb/>jam de hoc quoque turbationem animi. Quum puer neque
+<lb/>causam esset dicturus in judicio, nec luctaturus neque
+<lb/>certamen solemne initurus, aut denique a quoquam
+<lb/>reprehensus fuisset, ob rem corpoream magis quam animalum
+<lb/>turbari eum ratio indicat. Quae quum audivisset
+<lb/>Boethus, per deos , inquit, mirandum est tam nota medicamenta
+<lb/>nullum medicorum cognovisse. Unde clare constat
+<lb/>et ipsus hujusmodi opus nunquam ostendisse; ac te
+<lb/>omnia aliunde potius quam ex medicina facere dictitant.
+<lb/>Videntur autem , ajebat, non modo ignorare qualis sit contendentium
+<lb/>putius <hi rend="italic">, sed</hi> neque si forte aliquis ipsorum novit,
+
+<pb n="14.641"/>
+<lb/>quae tu ratione disquisieris, posse disquirere: eo quod
+<lb/>nec natura prudentes, nec disciplina mentem exercuerunt
+<lb/>At in malignitatis, ajebam, operibus et exercitati et fapiantes
+<lb/>sunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent"><hi rend="italic">[Boethi uxorem uteri prostuoio laborantem
+<lb/>praeter spem aliorum sanat</hi>.] Horum igitur, o Posthume,
+<lb/>teipsum testem habeo; aliorum autem multorum, quae
+<lb/>in prima profectione omnia a me gesta sunt, alios. Audivisti
+<lb/>autem ea ab illis , qui a me funt curati. Unum
+<lb/>igitur revera mirabile, non tantum me praeter omnium
+<lb/>opinionem dicentem , ut antea plerique medicorum nominabant,
+<lb/>fed etiam praeter opinionem facientem, appellari
+<lb/>effecit. Nam Boethi uxor fluore muliebri ut appellant
+<lb/>infestata, quum per initia celebres medicos, e
+<lb/>quorum numero et ego jam unus esse omnibus videbar,
+<lb/>revereretur, consuetis obstetricibus optimis quibusque in
+<lb/>urbe seipfam concredidit. Postquam vero nihiI juvaretur,
+<lb/>Boethus congregatos nos omnes consulebat quid esset faciendum.
+
+<pb n="14.642"/>
+<lb/>Quum itaque inter nos convenisset ut secundum
+<lb/>scriptam ab Hippocrate et praestantissimis post ipsum
+<lb/>curationem universa fierent, quumque ipse Boethus cupetet
+<lb/>me frequenter famulantibus ipsi mulieribus adesse
+<lb/>ac materias particularium praesidiorum universalem icopum
+<lb/>respicientium intueri, quae huc potissimum spectahaut,
+<lb/>ut siccarent quidem non modo uteri regiones, fed
+<lb/>etiam totum corpus, ita ut et unctiones allrictoriae
+<lb/>muliebribus locis adserrentur, sic faciebam. Verum quum
+<lb/>haec agendo dispositio deterior stari appareret, dubitatio
+<lb/>ut verisimile est, omnes nos invasit; ac quaerentibus aliam
+<lb/>curationis rationem ad quam digrediemur, non ex Talione
+<lb/>aliquis invenit, neque ab experientia suggerebat meliorem
+<lb/>ea , quae apud optimos medicos in confesso est. Interea
+<lb/>et tumor aliquis in ventre visus est similis ei, qui gravidis
+<lb/>accidit, quem nonnullae mulieres ex iis, quae ipsi
+<lb/>inserviebant, existimarunt revera ob conceptum accidisse,
+<lb/>non tamen aliorum medicorum quisquam arbitrabatur.
+<pb n="14.643"/>
+<lb/>Nam muliebris fluxus notae, quae quotidie excernebantur,
+<lb/>opinioni huic repugnabant. Quum itaque mulier eam
+<lb/>observans, quam praestantissimam esse crediderat, tum alia
+<lb/>faceret, ut in gravida tum quotidie lavaret, accidit in
+<lb/>prima balnei domo ut vehementissimo dolore oborto, quales
+<lb/>parientibus accidere consueverunt, aqueus humor evacuaretur
+<lb/>tantus, ut animo desecto mulier e balneo exportaretur.
+<lb/>Dum autem famulae ipsius lugerent clamarentque
+<lb/>omnes, nulla vero nec pedes nec manus nec os ventriculi,
+<lb/>quod sane et stomachum consueto vocabulo appelIant,
+<lb/>perfricaret, ego sorte fortuna ante externum balnei
+<lb/>ostium stans clamore exaudito insilit; ac intuitus ipsam
+<lb/>perfrixisse, nardino unguento in manus sumpto stomachum
+<lb/>fricui, jussique praesentibus ne frustra vociferantes otiofae
+<lb/>consisterent, sed aliae pedes excalesacerent, aliae manus,
+<lb/>nonnuIlae odoramenta naribus offerrent, atque his
+<lb/>tunc statim ipsam recollegimus. Laetabatur autem mirisice
+<lb/>obstetrix, ventre ob evacuationem compresso, non adeo
+<pb n="14.644"/>
+<lb/>quod falsa esset quae parere ipsam opinaretur, sed quod
+<lb/>dispositioni nobis non credentibus contradixerit, ceu rem
+<lb/>scientifice noscens. Porro dum ambigimus quid faciendum
+<lb/>esset, similine, ut prius, scopo mulierem medicari auderemus,
+<lb/>an ad alium transire, Inlicito mihi per noctem tale
+<lb/>quid in mentem venit: ac memini, deliquio animi ut dieebam
+<lb/>orto, quando etiam mulieres nihil quidem auxiliari
+<lb/>dicebam, astare autem plorantes, ego vero unguento nardino
+<lb/>in manus sumpto os ventriculi et praecordia perfricarem,
+<lb/>tantam in his regionibus mollitiem musculorum
+<lb/>per praecordia invenisse, ut quum per initia violentius ea
+<lb/>infricare statuissem, timens postea ne carne pressa partem
+<lb/>quandam lividam efficerem, a violentia destiti. Ut enim
+<lb/>quis per summa voluerit assimilare omnia praecordiorum
+<lb/>loca, similia lacti sane in casei generationem coaIescenti.
+<lb/>non tamen jam concreto mihi apparuerunt. Itaque immoderatatn
+<lb/>assectus casei modo aquosi humiditatem siccare
+<lb/>omnes statuimus, ae curationis modum invenire, ex materie
+
+<pb n="14.645"/>
+<lb/>quae non tantum siccet , sed etiam calefaciat ne
+<lb/>corpus contabescat frigida temperie immoderate praeditum ;
+<lb/>praesertim quum aestivo tempore contrarium tunc nos
+<lb/>moliamur maritimae arenae calidae eam immittentes. Ratiocinatus
+<lb/>autem etiam aliud quoddam communius peccatum
+<lb/>in plerisque affectibus frequenter a medicis committi,
+<lb/>qui superfluum quidem inaniunt , ut autem inanito simile
+<lb/>generetur, dicere omittunt; cogitavi victus rationis consilium
+<lb/>instituere ex potione paucissima, totius corporis frictione
+<lb/>, praeterea unctione ita praeparata, non ex pice et
+<lb/>resina, sed ex melle solo largius quidem cocto, sed restigerato
+<lb/>tantum , ut aquae fontanae aestivis horis sit persimiIe.
+<lb/>At quemadmodum satius esse novi superfluam humiditatem
+<lb/>per cutem dissipare, eodem modo urinam moventibns
+<lb/>medicamentis ipsam ad vesicam deducere; caeterum
+<lb/>ut alvus subducatur cura habenda est. Facto autem
+<lb/>diebus post subitam excretionem circiter septem subsequentibus
+
+<pb n="14.646"/>
+<lb/>experimento , secundum quos Boethus omnes nos et
+<lb/>privatim et communiter rogabat, ut aliquem curationis
+<lb/>modum prospiceremus, abduxi tum eum a praesentibus et
+<lb/>familiaribus et amicis in domo feorsim ac cum eo disserui
+<lb/>, In nullo, inquiens, ne in uno quidem opere medico
+<lb/>hactenus errasse me quum scias, tu considerato apud
+<lb/>te an decem in totum diebus permissurus Iis ea quae
+<lb/>circa uxorem tuam facere instituo; et si melius habere
+<lb/>quolibet die videatur, postea aliis totidem diebus aliquid
+<lb/>ei lacere concedes; sin minus, tunc et ego prorsus ab ea
+<lb/>discedam. Quod quum prompte ille annuisset, primum
+<lb/>sane medicamento aquam ducente per alvum evacuavi;
+<lb/>postea bibere aquam, in qua decoctum sit asarum et apium.
+<lb/>Ubi vero primis diebus duobus his administratis nihil ex
+<lb/>fluore apparuisset, tertio rursus exhibui, non copiose per
+<lb/>alvum evacuans id quod prius in uterum vergebat, non
+<lb/>modo per urinas , sed etiam per ventrem inferiorem derivare
+<lb/>cupiens. Post haec corpus melle singulis diebus illevi
+
+<pb n="14.647"/>
+<lb/>ac perfricui, primum sane linteis mollissimis, deinde
+<lb/>durissimis; dedique carnes avium montanarum et pisces
+<lb/>saxatiles exhibui. Postquam vero his remediis quin ludeeiuro
+<lb/>curationis die adveniente nulIa prorsus assectus
+<lb/>nota appareret, Boethus intelligens plus a me quam essem
+<lb/>pollicitus praestitum, rogabat ut in totum dispositionem
+<lb/>persanarem , praeceptiones darem in reliquum tempus ne
+<lb/>amplius similiter aegrotaret. Quoniam vero mense compluto
+<lb/>colorata exacte erat, ut nihil plane a naturali habitu
+<lb/>desideraretur, nihil quoque ex fluore conspiceretur,
+<lb/>quadringentos aureos ad me misit, auxitque generosorum
+<lb/>horum medicorum invidiam, inde quod me laudibus extolleret.
+<lb/>Quin etiam ipse quemadmodum et Severus opera
+<lb/>a me gesta haud detrectabat indicare Romanorum urbis imperatum
+<lb/>Marco Aurelio Antonino. Lucius enim ab urbe
+<lb/>discesserat Parthici belli gratia , quod a Bologeso ortum
+<lb/>erat.</p>
+
+<pb n="14.648"/>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent"><hi rend="italic">[Caleni reditus in patriam, esusque ab
+<lb/>imperatoribus revocatio.]</hi> Ac ego intellecta ipsorum
+<lb/>prompta voluntate, ac veritus ne dum hoc illi agerent a
+<lb/>reditu in Asiam impedirent, rogavi eos ut pauco tempore
+<lb/>id differrent. Ego enim dicebam me tempus ipsis nunciaturum,
+<lb/>quum hoc in gratiam meam fieri vellem. Quando
+<lb/>igitur bellum cessasse intellexi , statim ex Romanorum urbe
+<lb/>discessi, ceu nimirum in Campaniam iturus, famulo videlicet
+<lb/>uno relicto, qui domum observaret; cui iujunxi ut
+<lb/>navigio ex iis quae in Asiam proficiscuntur investigato,
+<lb/>una die adducto quodam institorio ex Bebura emptore venderet
+<lb/>ea, quae in domo haberentur, exiretque protinus
+<lb/>urbem et navim ingressus Siciliam adiret, inde in patriam
+<lb/>reverteretur. Haec igitur paulo post gesta sunt. Ego autem
+<lb/>per Campaniam proiectus istinc postea ad Brundusium
+<lb/>contendi; quo perveniens statui prima quaque navi,
+<lb/>sive in Dyrrhachium sive in Graeciam navigaret, permeare;
+<lb/>veritus ne quis praepotentum virorum vel etiam imperator,
+
+<pb n="14.649"/>
+<lb/>cognito discessu, tanquam fugitivi, militem mitteret,
+<lb/>quo me Romam juberet reverti. Ego itaque post unum
+<lb/>diem Caffiopen navigavi. Amici autem Romae dum me
+<lb/>quaererent et a famulo relicto sciscitarentur ubinam essem,
+<lb/>audirent autem me in Campania agere, primum sane
+<lb/>id quod Iactum erat suspicabantur; at procedente tempote,
+<lb/>quum neque me neque famulum meum Romae videcent,
+<lb/>intellexerunt ea quae ab initio dicebam esse facta;
+<lb/>atque tunc vix persuasum habebant omnes qui prius non
+<lb/>credebant, revera mihi institutum fuisse Romam relinquere,
+<lb/>quoniam non falso, sed vere id dicebam. Haud multo
+<lb/>tempore post Lucius reversus est, sed alterius belli, quod
+<lb/>contra Germanos susceptum erat, initium constitutum.
+<lb/>Porro ubi mentio de his, qui operibus, non verbis medieluam
+<lb/>philofophiamque ostenderent, fieret, haud pauci ex
+<lb/>familiaribus ipsius talem me esse nominabant. Egressi igitur
+<lb/>jam ex urbe ad bellum statuentcsque per hiemem in
+<pb n="14.650"/>
+<lb/>Aquileia degere, ac praeparato maturatoque exercitu mittunt
+<lb/>ad me, jubeutes ut ad ipsos venirem. Verum quum
+<lb/>Lucius media hieme fatis concessisset, frater ipsius corpore
+<lb/>Romam translato, factisque ei justis , profectionem ad
+<lb/>Germanos suscepit, iniungens et me ipsum comitari. ^Quoniam
+<lb/>autem benignus erat et humanus, potui, ut nosti, ab
+<lb/>eo impetrare ut Romae manerem, quia statim erat rediturus.
+<lb/>Toto igitur quo ipse aberat tempore, memor ego
+<lb/>consuetae urbis medicorum et philosophorum improbitatis,
+<lb/>decrevi inde recedere alias in alium locum , ubicunque
+<lb/>filius ipsius Commodus esset, qui a Pitholao educabatur;
+<lb/>cui imperator ipse Antoninus injunxerat ut, si quando puer
+<lb/>aegrotaret , me ad curationem ejus accerseret. Quum autem
+<lb/>ipse diutius in bello Germanico quam putarat moraretur,
+<lb/>universo hoc tempore multa opera conscripsi et
+<lb/>philosophica et medica , quae rege Romam reverso amicis
+<lb/>petentibus exhibui , sperans ipsa apud solos istos fore.
+<pb n="14.651"/>
+<lb/>Nam si indignis communicatum iri scivissem , ne illis quidem
+<lb/>dedissem. Voco autem indignos , qui animo pravi
+<lb/>non ut discant aliquid ad lectionem se conserunt, sed ut
+<lb/>quaedam ex ipsis positu t calumniari. ln his igitur libris
+<lb/>tota speculatio praenotionis ex pulsibus et aliorum praesagiendi
+<lb/>modorum tradita esa Quam igitur praenotionem
+<lb/>in altero Quintiliani filio molitus sum, si inde voles discere,
+<lb/>ex qua speculatione facta sit, facilis et perspicua tibi erit,
+<lb/>quum opus de crisibus perlegeris ingeniumque a puero
+<lb/>exercueris in geometria et dialectica. At vulgares hi medici
+<lb/>, qui ab operum exercitio destiterunt , ad imposturas
+<lb/>autem conversi, artem in eis exercuere, neque intelligere
+<lb/>quippiam ex iis quae sunt scripta possunt, nec audire^</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p>[<hi rend="italic">Recidivae febris praenotio et illius per
+<lb/>sudarem discessus. ]</hi> Sextus igitur Antonini filius acutissinle
+<lb/>coepit laborare, ut septimum diem citra crisin egredi
+<pb n="14.652"/>
+<lb/>non posset. Quae vero hujus ipsius praenotio sit, commontariis
+<lb/>de crisi proditum est; quibus etiam crisin srequenter
+<lb/>antevertere ac praerumpi , dum non expectat
+<lb/>diem fideliter decernentem, ostendimus. Hoc autem quum
+<lb/>Sexto posset accidere, statui in quarto die ceu praedicere
+<lb/>Pitholao, roganti quid de futuris augurarer. Interrogabat
+<lb/>autem hic, quum praesciret me multa ex his quae fapientissimi
+<lb/>medici fieri non posse arbitrantur, praesagiiffe.
+<lb/>Respondi igitur ipsi ridens, extra septimum quidem diem
+<lb/>morbum ^progredi non posse, sed omnino aut sexto aut
+<lb/>feptimo crisin experturum. Quod si igitur sexto fuerit
+<lb/>iudicatus, recidivam ejus esse timendam; sin autem sepsimo,
+<lb/>firmam habiturum crisin, eamque fore necessario per
+<lb/>sudorem. Postquam vero sexto die crisin ita expertus
+<lb/>esset Sextus, natura admodum contentiosus, ut me cerriperet,
+<lb/>recidiva non facta, lavabat sane quotidie, neque vinum
+<lb/>bibebat neque aliquid praeter ptisanae cremorem
+<lb/>vel solum vel cum micis panis assumebat; trequenter et
+<pb n="14.653"/>
+<lb/>pane ipso in aqua macerato contentus erat. His ad duodecimum
+<lb/>usque diem factis jactitabat in eo praenotionem
+<lb/>meam fe vicisse. Bibit autem tertiodecirno die hora tertia
+<lb/>vini aquosi pauxillulum, necnon totam victus rationem
+<lb/>pleniorem paulo priori instituit, servans tamen adhuc tenuem.
+<lb/>Sequenti die a primo secubitu quartadecima febricitare
+<lb/>orsus jussit ut nemo mihi indicaret , putans neque
+<lb/>vehementem lore febrem neque die diutius uno duraturam.
+<lb/>Ubi vero procedente die semper etiam magis
+<lb/>incrudesceret, Claudius Severus revertens in suam ipsius
+<lb/>domum illi vicinam, quum audiret ipsum febricitare, ad
+<lb/>ipsum prolectus est, ac vehementer jam affligi offendens,
+<lb/>primum sane rogabat quam sententiam ego de ortae febris
+<lb/>initio nunc habere ei viderer, audstaque ab ipso veritate,
+<lb/>quod ob contentionem noluerit quenquam ad me qui indicaret
+<lb/>accedere, Claudius ipse jussit ut Sextum invisarem
+<lb/>ac postea ad ipsum accederem. Quibus factis rogabat
+
+<pb n="14.654"/>
+<lb/>quid mihi de morbi recidiva videretur. Respondi igitur
+<lb/>ei quod et Sexto praedixeram, post tres dies accessionem
+<lb/>hanc solutum iri, febri in ipsis admodum calida reddita ;
+<lb/>deinde crisin septimodecimo post initia die expertura.
+<lb/>Sextus igitur ^libenter audiens solutionem brevi futuram,
+<lb/>prompte credidit: quod enim nimirum unusquisque cupit,
+<lb/>id etiam futurum putat. Severus autem quod quidem non
+<lb/>errassem in Sexto servando, fidem mihi adhibuit; veruntamen
+<lb/>diem quo prorsus a morbo liberaretur non c re d se
+<lb/>dit, difficile else autumans ut non expectato vel sequenti
+<lb/>die certi aliquid de his , quae quarto die futura erant,
+<lb/>pronunciarem. Atque sic affectus misit multo mane ad
+<lb/>domum Sexti, dicens se expectare ut me vocet, quo postquam
+<lb/>illum invisissem ad se venirem. Ut igitur invisi
+<lb/>Sextum, ad ipsum sum profectus. Contradices, inquit, iis
+<lb/>quae heri protulisti? aut in iisdem persistes? Postquam
+<lb/>vero nunc magis quam heri eadem ac consentanea prioribus
+
+<pb n="14.655"/>
+<lb/>pronunciare me dixissem, a prandio rursus advocatum
+<lb/>interrogabat denuo, an firmiter crisin Sexto futuram persuasum
+<lb/>haberem. Audivit igitur me id magis quam heri
+<lb/>affirmare. Item secundo die rogabat, eandemne sententiam
+<lb/>cum praedictis servarem, an aliquid ex prolatis immutarem;
+<lb/>imo, inquam, tantum abest ut quid ex illis immutem,
+<lb/>ut etiam nonnihil commemoratis adjiciam. Quo
+<lb/>audito ille quaerebat quid id esset; dixi, nocte septimadecima
+<lb/>praeterita sudorem circa horam secundam noctis
+<lb/>incepturum. Num igitur haec quoque narrasti PithoIao,
+<lb/>ait? Respondi et me dixisse et illum habere persuasum
+<lb/>nihil a me vel in praedictione vel curatione esse erratum.
+<lb/>Omnino igitur, inquit ille, etiam imperatori PithoIaus
+<lb/>haec indicavit? Ad quod ego respondi, pro arbittio
+<lb/>Pitbolaus agat, gloriam ex hujusmodi non admodum
+<lb/>venor ; quippe non obambulo praenotiones meas ac curationes
+<lb/>praeconio efferens, quo magis tum medlci tum
+<lb/>philosophi me odio prosequantur, praestigiatorem et vatem
+<pb n="14.656"/>
+<lb/>appellantes, aliaque id genus convitia in nomen meum
+<lb/>proclamantes. Vobis autem amicis, qui artem medicam
+<lb/>ex horum inscitia damnastis, ostendo sane eam et ApoIIine
+<lb/>et Aesculapio dignam, medicos autem hos ipsam dehonestare;
+<lb/>sicut etiam philosophos philosophiam , qui quum
+<lb/>ne ullo quidem idiota incorruptius vivant, venerando pbiIosophiae
+<lb/>nomine se appellari patiuntur. Haec quidem
+<lb/>Severo dixi. Tu autem, o Posthume, medicorum fere
+<lb/>omnium malitiam novisti, qui me successa prospero frustrari
+<lb/>manifesto optant, mittuntque toto die qui quid accidat indipiscantur
+<lb/>eisque .nuncient. Non enim sciverant me
+<lb/>Severo et PithoIao praedixisse vesperi crisis futurum
+<lb/>principium conspectum iri. Postquam autem circa septimam
+<lb/>horam accessionem Sextum invasisse intellexerunt, in
+<lb/>cachinnos soluti; palamque gavisi omnibus qui occurrebant
+<lb/>convitiose dixerunt mirandam Caleni divinationem
+<lb/>contrario modo evenisse. Oborta vero crisi, ut praedixeram
+<lb/>pridie, vice versa omnes pudore suffusi sunt; quum
+<pb n="14.657"/>
+<lb/>tamen haec praenotio nihil haberet admiratione dignum,
+<lb/>ut ostendi tibi cum in commentariis in primum de morbis
+<lb/>publice grassantibus , tum praeterea in opere de crisibus.
+<lb/>At hi medici non modo quae a veteribus scripta
+<lb/>sunt ignorant, sed ne dies quidem adhuc post septimum
+<lb/>numerare possent, praesertim si aeger a febri immunis
+<lb/>rurfus ex recidiva febricitet. Attamen Hippocrates in
+<lb/>Epidemiorum libris omnes dies in singulis aegrotantibus
+<lb/>adusque solutionem extremam, non fotam eam quae quartodecimo
+<lb/>die, sed etiam quae sexagesimo aut octogesimo
+<lb/>accidit, memoriae prodidit. Haec igitur praedictio, ut
+<lb/>dixi , tamquam admiranda etiam vulgaribus istis medicis
+<lb/>putabatur, sed talis revera non erat; sicut nec curatio
+<lb/>pueri ipsius Commodi, quae iis qui aderant consulis, peregre
+<lb/>illo agente fuit administrata.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p><hi rend="italic">[Ventriculi laborantis ab inuasione febris
+<lb/>dignotio.]</hi> Illa porro vere admirabilis, quae in ipso Rege
+<lb/>accidit; dum ipse quidem ipsiusque medici qui cum eo
+<lb/>vav
+<pb n="14.658"/>
+<lb/>peregrinati fuerant, accessionem quandam febrilem lucepisto
+<lb/>opinarentur; errarent autem omnes et in secundo et
+<lb/>tertio die, mane et circa horam octavam. Sumpserat
+<lb/>pridie medicamentum ex aloe amarum hora prima, deinde
+<lb/>Theriacen, ut consuevit quotidie assumere. Aequum circa
+<lb/>horam sextam ingessisset, mox sole occiduo lavisset, ciboque
+<lb/>usus esset modico, oborta sunt tota nocte tormina
+<lb/>necnon alvi inanitio; coque ipse febri correptus est. Quod
+<lb/>quum medici ipsius vidissent, conquiescere jusserunt, deinde
+<lb/>sorbitione ad horam nonam aluerunt; post ilia ego vocatus
+<lb/>sum ut et ipse in Palatio dormirem ; quo facto ecce
+<lb/>venit aliquis qui nos lucernis accensis jussit Imperatores
+<lb/>accersivit. Jam circiter tribus praesentibus, qui in dilos
+<lb/>culo ipsum inviserant explorarantque pulsum, initium q<hi rend="italic">uo^</hi>
+<lb/>dam accessionis omnibus esse apparebat ; ego autem tacttus
+<lb/>astabam. Intuitus me Imperator, primum interrogabat,
+<lb/>cur aliis pulsum tangentibus ego solus non tangerem. Respondi
+<lb/>igitur tunc in hunc modum. Quum hi bis jam
+<pb n="14.659"/>
+<lb/>tetigerint et sorte jam pulsuum tuorum proprietatem usu
+<lb/>ac experientia cognitam habeant, ut qui tecum peregrinati
+<lb/>fuerint, magis ipsos spero affectionem praesentem modo
+<lb/>agnoscere. Quae quum dixissem , jussissetque ipse me pulfum
+<lb/>tangere, isque appareret juxta communem omnis et
+<lb/>aetatis et naturae mensuram , plurimum abesse ab eo qui
+<lb/>accessionis initium indicaret pronunciavi ; invasionem quidem
+<lb/>nullam esse febris, sed stomachum assumpto alimento
+<lb/>comprimi, quod in pituitam versum esset, antequam excerneretur.
+<lb/>Quae dignotio quum laudem aliquam mereretur,
+<lb/>ipsis his verbis ter ordine ^Imperator dixit, ipsum est,
+<lb/>hoc ipsum quod dixisti est, sentio enim a frigidiore alimento
+<lb/>me gravari. Rogabat igitur quid esset faciundum.
+<lb/>Ego sane respondi quae sensi, dixique ad eum: quod si
+<lb/>al i LI s quispiam ita esset affectus , darem ei quemadmodum
+<lb/>confuevi vinum potui, cui piper esset <hi rend="italic">inspersum</hi>. In vobis
+<lb/>autem regibus, quum medici praesidiis fecurissimis
+<lb/>uti soleant , abunde est lanam potius nardina unguento
+<pb n="14.660"/>
+<lb/>calido imbutam ventriculi orificio imponere. Ille alioquin
+<lb/>etiam sibi consuetudinem esse dixit, quum aliquando de
+<lb/>stomacho conquereretur, nardinum unguentum calidum
+<lb/>purpurea lana exceptum applicare. Quod quum Pitholao
+<lb/>facere j ussisse t ac nos dimitteret, imposita ea et pedibus
+<lb/>manuum calidarum confricata ex calfactis, vinum Sabinum
+<lb/>postulavit pipereque intecto bibit; ac post potionem Pitholao
+<lb/>dicebat, fe medicum unum, cumque admodum
+<lb/>liberum habere, ac nunquam sicut et tu novisti me praedicare
+<lb/>destitit; primum sane medicorum esse, philosophornm
+<lb/>autem solum; quippe expertus erat jam multos non
+<lb/>modo pecuniae studiosos, sed etiam contentiosos, gloriae
+<lb/>cupidos, invidos et malignos. Quod igitur ego dixi, hac
+<lb/>investigatione nullam puto mihi magis admirabilem obtigisse.
+<lb/>Quum enim quaeratur ab omnibus, qui optimeAn
+<lb/>pulsuum arte exercitati sunt, quorum unus etiam Arcbigenes
+<lb/>extitit, signum aliquod accessionis peculiare; et in
+<pb n="14.661"/>
+<lb/>quibusdam per initia arteriae systolen inveniri ipsi dicant,
+<lb/>nonnulii vero neutiquam sensibilem esse systolen, ego bona
+<lb/>quadam fortuna, quid enim aliud dixeris, cui tactus etiam
+<lb/>in exigua puIfuum differentia percipienda exactissimos contigerit?
+<lb/>Medicorum aliquos adeo aberrantes sum expertus,
+<lb/>ut qui accessionem habere inciperent, relegarent in
+<lb/>balneum, aut cibum assumere juberent, ego prohibui.
+<lb/>Perpetuo igitur exacte expertus me cognoscere accessionis
+<lb/>initium, praecspitantius forsan, attamen ausus sum asseveranter
+<lb/>Regi dicere ex primo puIfus tactu aliam fententiam
+<lb/>, quam et ipse apud fe opinabatur et a medicis audierat.
+<lb/>Quod porro in Commodo praestiti, maxime ajunt
+<lb/>mirandum esse, at revera permultum ab hoc abest.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">[<hi rend="italic">Faucium instammationem ex pulsu cognofeit.</hi>]
+<lb/>Nam a palaestra reversum, ante cibum ingestum,
+<lb/>hora octava febris admodum calida invasit; mihi autem
+<lb/>pulsu explorato pars quaedam instammationem sustinere
+<lb/>videbatur. Quibus auditis Pitholaus admirari fe dixit, si
+<pb n="14.662"/>
+<lb/>tonsillarum inflammatio pueri pulsum immutaret; nulla
+<lb/>enim alia ipsius pars inflammatione tentabatur; atque interea
+<lb/>ore ipsius adaperto inspicere jubet. Ubi jam loci
+<lb/>apparerent asperi multnmque rubentes, non tamen magnum
+<lb/>haberet inflammatio tumorem, rogabam quis confricuerit
+<lb/>eam medicamento stomatico, quod vehementiorem
+<lb/>quam puero conveniat astrictionem repraesentat. Ubi
+<lb/>seipsum respondit fricuisse ex melle et rhu medicamento,
+<lb/>Iussi ut ad muIsam, in qua rosae decoctae essent, digrederetur,
+<lb/>atque hac suta uteretur nocte et sequenti die
+<lb/>toto frequenter simul et nocte succedanea. Tertio die m ane
+<lb/>postquam inflammatio cessasset, ac puer paulo minus
+<lb/>tota febri careret, persuasi Pitholao, ut eum in balneas
+<lb/>vicinas cubiculo, in quo decumbebat, introduceret, ita
+<lb/>ut folii aqua copiose uteretur; qua omnes quidem aliae
+<lb/>partes irrigarentur, fotum autem caput superfunderetur
+<lb/>abunde. Caeterum cibo ad horam tertiam assumpto, Ania
+<lb/>Faustina cognata Imperatori e proximo accessit, excusans
+<pb n="14.663"/>
+<lb/>se quod altero die ipsum non inviserit, heri inquiens de
+<lb/>febri oborta certior facta sum; atque his adhuc adiiciebat,
+<lb/>manisestum esse nos octavam horam , qua invadebat accessio,
+<lb/>egredi debere. Ridens igitur Pitholaus ait, quidni
+<lb/>ThelsaIicam diatriton eramus egressuri? Verum Calenus
+<lb/>hic, inquit, specuIatus mane graciIem siccumque puerum
+<lb/>dixit non febricitaturum ; quin etiam rursus in balneum
+<lb/>deducere vesperi jussit, coenamque praebere, quali
+<lb/>sanus utebatur. Haec audiens Faustina paulisper ibi morata,
+<lb/>manu me prehendens, medicum quendam ex his qui
+<lb/>eum erant comitati, Methodicam secum eduxit, jocansque
+<lb/>Calenum inquit, hunc novisti non verbis, sed operibus
+<lb/>eum vobis ^lethodicis pugnare. Frequenter enim jam multos
+<lb/>febricitare incipientes lavit vinumque potui dedit;
+<lb/>nonnullos etiam prtmo, quosdam tertio die ad consueta
+<lb/>munia relegavit, in quo omnes vos primis diebus duobus
+<lb/>inediam praescribitis , ac suspectas horas egredi decumbentes
+
+<pb n="14.664"/>
+<lb/>observatis. Ac nunc ideo, inquit, scientiae certitudo
+<lb/>indicatur in regio puero, qui patre peregre agenti in primis
+<lb/>duobus diebus vehementer febricitavit, ut etiam vos
+<lb/>heri audivistis; tertio die non differre cibum, ut vos praeciphis,
+<lb/>post horam octavam sustinuit, sed jam lavit nutrivitque;
+<lb/>et educator ipsius Pitholaus in hujusmodi rebus
+<lb/>exactissimos, ut diligentia ipsius timiditas sit, eo quod viri
+<lb/>artem prius esset expertus, persuasus est ut et lavaret
+<lb/>puerum et ante <hi rend="italic">horam suspectam</hi> aleret. Hujusmodi sane
+<lb/>dicebat usque ad vehiculum pergens , ego vero quum illa
+<lb/>esset ipsum confcenfura, recedens dixi: fecisti me multo
+<lb/>magis quam antea a medicis odio haberi ; ac digressas Pitholao
+<lb/>ipse narravi. Quinetiam propter hujusmodi medicos
+<lb/>opera conscripsi, ^unum de febrium differentiis, alterum
+<lb/>de diebus decretoriis ac tertium de crisibus; ostendens
+<lb/>ab Hippocrate traditam esse speculationem, ex qua
+<lb/>quis ea quae aegrotis supervenient praenoscit. Hi autem
+<pb n="14.665"/>
+<lb/>tam sunt male nati ac rudes , ut ne mea quidem expofitione
+<lb/>adjuti ea possint intelligere. Nam tu ipse nosti,
+<lb/>Posthume carissime, conscripta a me de his omnibus, quae
+<lb/>vidisti me praedicere, fateri ab Hippocrate esse indicata,
+<lb/>praeter solam pulsuum speculationem ; quam etiam unam
+<lb/>non elaboravit; sicut qui eum aetate fequuti sunt, alius
+<lb/>aliud ei adjiciens, ad hunc usque diem exornarunt. Etenim
+<lb/>corporis affectuum cognitio ex speculatione petitur;
+<lb/>sicut rursus ex accurata horum cognitione, futurorum
+<lb/>praecognito.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">[<hi rend="italic">Futurae crisis per sanguinis stuxum e
+<lb/>naribus praenotio</hi>.] Jam quod te praesente factum est in
+<lb/><hi rend="italic">juoene quodam,</hi> quum nonnulli medicorum, qui Romae
+<lb/>principatum obtinent, de sanguinis missione considerarent,
+<lb/>commentariis quae conscripsi indicatur, ab Hippocrate absolutissime
+<lb/>ostensum. Etenim quintum jam diem morbi juvenis
+<lb/>agebat, videbaturque medicis venae sectionis praesidium
+
+<pb n="14.666"/>
+<lb/>esse assumendum, quum affectus in principio eam
+<lb/>fecundo, aut tertio, aut saltem quarto die fieri desideraret.
+<lb/>Deinde quum neque anni tempus, neque aegrotantis
+<lb/>aetas , quemadmodum neque facultatis vitalis imbecillitas,
+<lb/>neque praecedens victus ratio indicationem morbo contrariam
+<lb/>praeberet, omnia vero inter fe consentirent, fanguinis
+<lb/>missionem indicantia, consuluerunt medici venam
+<lb/>incidere, ut par est sapientes. Ego autem omnibus quae
+<lb/>apparent exacte consideratis ab Hippocrate proditis indiciis,.
+<lb/>eorum quibus fanguis erumpet. Recte dixi ipsos
+<lb/>sanguinis detraclionem definire, fed naturam eo impelli,
+<lb/>coactam id quod se gravat excernere, atque hoc statim adeo
+<lb/>futurum esse, etiamsi nos non faciamus. Medici his auditis
+<lb/>admirabantur nimirum. Cbi vero aegrotus in lecto
+<lb/>^insurrexisset tanquam vellet exilire, rogatus autem qua
+<lb/>de causa exiliret, quum nihil adesset metuendum, dixit
+<lb/>rubrum serpentem ex tegula strepentem, fe videntem Iimere,
+
+<pb n="14.667"/>
+<lb/>ne aberrans super ipsum dilaberetur, atque ideo
+<lb/>locum in quo decumbebat. His sane medicis id nihil conferre
+<lb/>ad futuram sanguinis eruptionem videbatur; mihi
+<lb/>autem cum alia omnia speculato, tum in dextra nasi parte
+<lb/>usque ad malas obscuram tunc rubedinem, multo nunc
+<lb/>factam illustriorem , credibile propemodum jam videbatur
+<lb/>ex dextra nare sanguinem prostuxurum manisesto. Ac
+<lb/>nonnulli ex his qui aderant aegroti famulis clanculum injunxi
+<lb/>vas in promptu haberet sub veste, sanguini excipiendo
+<lb/>idoneum; ac deinde omnibus medicis audientibus Ioquutus,
+<lb/>si pauxillulum manserimus, hominem ex dextra
+<lb/>nare sanguinem fundentem conspiciemus. At quum illi
+<lb/>riderent, quod in praedicendo adjecerim dextram narem;
+<lb/>atqui, dicebam, aut ambo oportet fieri, aut in altero me
+<lb/>errare. Nam a speculatione utraque praenotionem habent,^
+<lb/>tum quod aeger sanguinem fundet, tum quod ex dextra
+<lb/>nare , a quo me conjecisse advertendum consului. Quum
+<pb n="14.668"/>
+<lb/>igitur viderem aegrum indicem digitum tanquam prurientem
+<lb/>naso demittere, famulo vas occultanti mentem ei quod
+<lb/>accideret advertere justi, ut quum sanguinem e nare erumpentem
+<lb/>videret, accurrens vas supponeret. Simulatque
+<lb/>igitur haec dicebam, digitum e nare cruentum extraxit,
+<lb/>famulusque accurrens vas ei subjccH; propter quod marimo,
+<lb/>ut nosti, clamore orto omnes medici aufugerunt. Ego
+<lb/>autem roganti tibi praenotionis speculationem indicavi
+<lb/>universam, ex his quae Hippocrates memoriae prodidit
+<lb/>edoctus; praeterea hocadjeci, vehementem sanguinis eruptionem
+<lb/>esse expectandam. Etenim impetus naturae vat
+<lb/>lens est et morbus non coctus, cujusmodi causas immoderatae
+<lb/>sanguinis vacuationes comitari consueverunt. Quare
+<lb/>morari aliquandiu apud aegrotum satius esse ratus, puerum
+<lb/>me comitantem mili, qui adstaret cucurbitam magnam
+<lb/>multis insciis; ac quum subito copiosus sanguis in vasi
+<lb/>colligeretur, aliud postulavi; ac accipiens sanguinem ac
+<lb/>pondus, vidi evacuati libras quatuor et dimidias, aegrumque
+
+<pb n="14.669"/>
+<lb/>sublimem figuravi, ac frigidam poscam nare haurire
+<lb/>Iusti , imposuique fronti spongiam frigida mulsa imbutam,
+<lb/>ac artubus deligans, quum nihil haec omnino proficerent,
+<lb/>cucurbitula in dextris praefixa praecordiis statim sanguinis
+<lb/>fluorem cohibui ; quod et ipsum ex Hippocrates arte
+<lb/>sumi tibi indicavi, atque a me idcirco tum haec, tum alia
+<lb/>omnia quae in ipsis operibus ostendi conscripta sunt. Etemm
+<lb/>rigorem futurum quomodo praenoscere oporteat , tradidi;
+<lb/>alvi profluvium, vomitum, copiam urinarum immoderatam
+<lb/>retentionem, sudores, parotidasque eventu^as ;
+<lb/>humorum decubitus, delirium, mentis alienationem
+<lb/>aliaqne omnia accidentia; quibusdam autem, ut dixi, antea
+<lb/>eognitia haec praeterea apud se consideret, quemadmodum
+<lb/>ego lu Boethi filio ratione colligi, ac in amante
+<lb/>muliere servo ex metu tristi ac dolente.</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="indent">[<hi rend="italic">Intermittentis, sed naturalis pulsus</hi>
+<lb/>^i^<hi rend="italic">notio.]</hi> Nuper, ut nosti, etiam quum tale quippiam
+<pb n="14.670"/>
+<lb/>praedicerem, vulgares istos attonitos reddidit praenotio.
+<lb/>Nam oeconomus quidam omnia domini negotia recte administrans
+<lb/>ac ideo in precio habitus, quum alii medici
+<lb/>ipsum curarent, crisin per sudorem septimo die expertus
+<lb/>est. Postridie pulsum ipsius deficientem invenientes maIignam
+<lb/>in corpore dispositionem latitare opinati sunt, magno
+<lb/>errore ; deinde adolescente una cum domino domum
+<lb/>egresse, casu mihi occurrerunt, narratis symptomatis quae
+<lb/>praecesserant et in praesentia urgerent, quidnam id quod
+<lb/>praeter rationem in pulsu evenerat, indicaret, postulabant
+<lb/>discere. Ac ego audiens domum , in qua decubuerat, esse
+<lb/>in propinquo, cum ipsis ingressus sum, tetigique adolescentis
+<lb/>pulsum. Nam in ipsa sensibili dispositione frequenter
+<lb/>etiam Illustrium medicorum nonnulli haud med<hi rend="italic">io-</hi>
+<lb/>criter, ut dixi tibi, errant, dum pulsum non magnum ceasent
+<lb/>magnum, quemadmodum interim et citatum non
+<lb/>citatum vel tardum non tardum. Pati modo in languidis
+<lb/>et vehementibus, duris et mollibus pulsibus dignosuendis
+
+<pb n="14.671"/>
+<lb/>falluntur, ac magis adhuc in ordinatis et inordinatis,
+<lb/>aequalibus et inaequalibus; tum in collectione tum
+<lb/>in una diastole, propter quos ego etiam quatuor de pulsuum
+<lb/>dignatione libros conscripsi, alios praecedentes quatuor,
+<lb/>qui de pulsuum causis titulum habent. Requirit
+<lb/>enim utrosque commentarios opus de praenotione ex pulsibus
+<lb/>et ipsum in quatuor libros distinctum, propter quod
+<lb/>etiam commemorata duo existunt. At quum quae in uno
+<lb/>pulsu consistit inaequalitas, maximum ut ostensum est ufum
+<lb/>afferat, vehementiori exercitio ad dignotionem sui indiget
+<lb/>, ut quae multas habeat differentias. Pulsus autem et
+<lb/>qui una actione et qui in pluribus ordine subsequentibus
+<lb/>inaequalis est, nihil habet praeter naturam aliud, praeterquam
+<lb/>hoc folum, quod per intermissionem accidit. Hujusmodi
+<lb/>igitur symptoma ab origine esse, scire convenit,
+<lb/>sed quod difficillime dignosci queat t imo non potest , nisi
+<lb/>omnes pulsuum differentias exacte sentias. Intuitus igitur
+<lb/>hominem ita habentem consului medicis, ut resectoria victus
+
+<pb n="14.672"/>
+<lb/>ratione eum secure crisin expertum alerent, addens
+<lb/>quod quum jam egreditur et consueta obit munia, pulsu
+<lb/>ipsius tunc explorato, deficientem invenirent, quemadmodum
+<lb/>etiamnum. Hoc enim ei natura accidisse non ex
+<lb/>coincidente aliqua causa morbosa, statim id quod dixeram
+<lb/>ipsis incredibile videbatur; toto autem subsequenti tempore
+<lb/>deficientem in uno ictu pulsum alias in alio numero
+<lb/>inventuros affirmavi. Postea aliquando accedentes me
+<lb/>postulabant audire quo signo adolescentis naturam talem
+<lb/>cognovissem; respondi igitur ipsis quod lsocratem rhetorem
+<lb/>discipulo cuidam suo quandoque dixisse audivi; qui
+<lb/>quum rogaret an tribus annis exercitatus posset de unaquaque
+<lb/>re proposita dicere, ut lsocratem orantem videbat,
+<lb/>respondisse virum adolescenti ferunt: te sane, o puer,
+<lb/>optarem etiam uno die posse discere quod quaeris; verum
+<lb/>pro ingenii infelicitate pIuribus ad discendum opus est.
+<lb/>Caeterum cognoscetis, dixi, omnes praeter naturam pulsuum
+<lb/>differentias hoc libro perlecto. Erat autem primus
+<pb n="14.673"/>
+<lb/>qui de omnibus pulsuum differentiis dignoscendis tractat
+<lb/>eorum qui introducuntur exercitii viam tradens, quatuor
+<lb/>libris comprehensus. lude namque vos eas discere potestis,
+<lb/>quoties ex nostro sensu depromptas descriptasque puIsuum
+<lb/>differentias agnoscere volueritis. Hoc igitur, o Posthume,
+<lb/>medicae praenotionis opus est memoratu dignum, sicut et
+<lb/>id quod in imperatore ostendi, cui accessionem ipsum invasisse
+<lb/>videbatur; reliquorum autem quae vulgares isti medici
+<lb/>admirantur, nullum vel prope simile est. His enim
+<lb/>admiranda esse apparent propter multorum ignorantiam,
+<lb/>non iis, qui quae in arte dissiciIem habent praenotionem
+<lb/>propter se legitime exercuerunt..</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>
