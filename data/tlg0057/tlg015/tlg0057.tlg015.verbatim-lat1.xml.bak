@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De instrumento odoratus</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg015.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="857" to="886">857-886</biblScope>
+              <date>1821</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x02">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="206" to="210">206-210</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x05">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="354" to="363">354-363</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x04">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg0057.tlg015.verbatim-lat1">
+<pb n="2.857"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="2.857"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE INSTRVMENTO
+<lb/>ODORATVS.</head>
+
+
+<p rend="indent">Odoratum Graeci nominant non solum
+<lb/>odorum dignationem, sed etiam vim ipsam, cujus odorandi
+<lb/>officium est; quemadmodum et gustum non fidum
+<lb/>gustabilium dignotionem., sed et facultatem, ad quam haec
+<lb/>pertinent: unum tamen in utraque significatione odoratus
+<lb/>instrumentum; per quod facultas propria sensibilia dignofeit,
+<lb/>esse putandum est, quod oculo et linguae proporliene
+<lb/>respondeat. Hoc igitur primo mentis intuitu mulus
+<lb/>esse videtur, quandoquidem, si occlusis naribus spiritum
+<pb n="2.858"/>
+<lb/>ore adducimus, .odorem nullum sentimus : sic autem fpiritum
+<lb/>apertis naribus attrahimus, odor sensum protinus
+<lb/>movet. An igitur membrana sive tunica (nam utroque
+<lb/>modo nominanti, quae naribus substernitur, odores dignosicat,
+<lb/>dignum inquisitione ridetur; siquidem non os nasi
+<lb/>aut quidquam intra os odoratus instrumentum esu Si
+<lb/>quis igitur sibi nares aut odoramentis aut alia re veaementer
+<lb/>olente impleat, non ante odorem percipiet, quam
+<lb/>fpiritum attraxerit; quam ob causam quibusdam nasus
+<lb/>semita quidem olentium rerum videtur, at ipsum corpus,
+<lb/>quod odores sentit, superius esse alicubi locatum. Quere
+<lb/>necesse est corporum, quae nest spiraminibus continua sunt,
+<lb/>cognitionem habere ab ipsa anatome edoctos: .sed quoniam
+<lb/>non omnibus hae partes cognitae sunt, satius est,
+<lb/>quonam modo constitutae -luit, exponere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Quum nasus igitur in se septum quoddam
+<lb/>per menia loca.deductum habeat, duoque foramina. satis
+<pb n="2.859"/>
+<lb/>conspicua, haec, inquam, quae cernuntur et in singulis
+<lb/>naribus singula sunt, sciendum est, eorum utrumque supra
+<lb/>media nest. loca in duas partes esse divisum; quarum
+<lb/>altera pars oris intima pervadit, altera alta, ut ab initio
+<lb/>ferebatur ad ipsum cerebrum scandit, quod et ipsum
+<lb/>processus duos ad haec ipsa loca spectantes habet, eosquc.
+<lb/>oblongos et concavos, qui ex anterioribus cerebri ventriculis
+<lb/>ortum habent. et ad eam calvariae partem, undenasus
+<lb/>oritur, descendunt: quo loco ossa coli similia, quasi
+<lb/>colatoria dixeris, posita sunt, quorum quae utilitas fit,
+<lb/>satis ex ipso nomine declaratur. Crassa autem meninx,
+<lb/>quae ossibus modo nominatis substernitur, minutis. est
+<lb/>pervia foraminibus: per quae primum quae, crassiora cerebri
+<lb/>supervacua sunt, transmittuntur (quae caeteraque
+<lb/>similia post Aristotelem solemus excrementa nominare j.
+<lb/>Nam quae vapori similia sunt, in sublime lata per calvariae
+<lb/>suturas excernuntur : quae vero crassa sunt, ut
+<lb/>mucus, prona feruntur, primumque per crassam neniagem,
+<pb n="2.860"/>
+<lb/>deinde per ossa coli similia trajecta, tandem in ipsas
+<lb/>nares incidunt. Sed tamen, dum haec ita defluunt, pars
+<lb/>eorum in os per ea foramina, quae a naribus in ipsimi
+<lb/>transire diximus, interdum delabuntur. Mucusque, qui
+<lb/>crassior est, praefertim si et glutinosus fit, in duas partes
+<lb/>sic divisus, ut altera in eas vias, quae ad os pertinent,
+<lb/>interdum influat, altera in nares utrinque excernitur,
+<lb/>e naribus per efflatum vehementem, ex ore per screatum.
+<lb/>Nest autem foraminibus, quae reesa stmt.et ad
+<lb/>ossa colo similia ascendunt, itemque iis, quae obliqua, ut
+<lb/>in os ipsum, traducta sunt, exanguis tunica, crassior; quam
+<lb/>membrana, substernitur, quae ei tunicae continua est,
+<lb/>quae totam oris circumferentiam interiorem linguamque.
+<lb/>complectitur, et praeterea fauces et laryugem et asperam
+<lb/>arteriam et gulam ambit. In quam tunicam, quae una
+<lb/>est et sibi undique continua, et in omnibus memoratis
+<pb n="2.861"/>
+<lb/>partibus eandem substantiae speciem habere cernitur,
+<lb/>quanquam non aequalem crassitiem, nervi quidam a .cere-,
+<lb/>bro orti distribuuntur, et ii quidem exiles, exceptis iisg .
+<lb/>qui in linguam inseruntur, quibus natura satis crassiordiuis
+<lb/>dedit, propterea quod partem hanc acutiori sensu
+<lb/>praeditam esse oportuit, quippe quam natura gustus in--..
+<lb/>stramentum esse voluit. Similem ob causam nervi etiam
+<lb/>crassiores iis, quos lingua recepit, oculis dati sunt; post
+<lb/>quos auribus et ori ventriculi, quandoquidem et ipsum
+<lb/>sensu exquisito pollere oportuit, ut quum sermo de eo
+<lb/>haberetur, demonstratum est. Ut igitur oculus visus est
+<lb/>instrumentum, amis auditus, lingua gustus, sic ventilemlus
+<lb/>cibi et potionis appetendae instrumentum constitutus
+<lb/>est, praefertim ejus os. Vim vero tangendi valde hebe- r
+<lb/>tem in sensibili tun dignatione natura creavit; nec eam
+<lb/>certo loco seclusit, (quod in iis omnibus feeit, de quibus
+<lb/>modo dictum est, j sed in universum corpus distribuit.
+<lb/>Itaque ei nervos minores dedit, eosdemque duros, qui
+<lb/>. maxima ex parte a spinali medulla. orium habent; in
+<pb n="2.862"/>
+<lb/>partus vero, quas supra nominari, quae exquisitiora sensu
+<lb/>indigebant, nervos et majores et molliores inseruit si eosdemque
+<lb/>omnes a cerebro deductos. Cernendi igitur instrumentum
+<lb/>natura lucidissimum fecit, ut quod lucem
+<lb/>lautum et splendorem sentire debebat: quod autem ad
+<lb/>auditum attinet, aeris . similem constituit, siquidem ad
+<lb/>sonos, qui vehuntur aere, recipiendos dicaverat; sic et
+<lb/>quod sapores dignoscit, quod linguam appellamus, ex
+<lb/>humiuiori corporis substantia molita est: aliquid vero,
+<lb/>quod iutor naturam aeris et humoris est, in odorandi
+<lb/>sensum cadit, quod neque ita tenue est, ut aer, neque
+<lb/>ita crassem, ut humor; id enim, quod a rerum corporibus
+<lb/>exhalat, odoris substantia est, quod ex rosis maxime
+<lb/>similibusque, quae fio tenera sunt, cognoscere licet, quorum
+<lb/>omnium corpora celeriler minora et sicciora redaluntur:
+<lb/>ex quo aperte intelligitur, ex earum rerum substautia
+<lb/>partem humidiorem in halitum digeri. .</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Sed jam odoratus, instrumentum quaeramus;
+<pb n="2.863"/>
+<lb/>primumque constitutionem partium. quae naribus
+<lb/>continuae sunt, confideremus, deinde propria actionis
+<lb/>accidentia. Quum -igitur .in utroque nasi meatu tunica
+<lb/>ossibus obducta sit, quam et ejusdem naturae et continuam
+<lb/>cum ea esse diximus, quae os linguamque et fauces
+<lb/>ambit, quanquam eo disserat, quod tenuior est: aut
+<lb/>haec instrumentum odoris sentiendi statuenda est, aut os
+<lb/>ipsum nasi, quandoquidem pars tertia nulla relinquiturSed
+<lb/>ossi non modo non odorandi, sed ne tangendi quidem
+<lb/>sensus datus est: tunica vero, quae intus substernitur,
+<lb/>ut ei simillima est, quae coelum . capitis et palatum
+<lb/>ambit, sic eandem superare sensus acumine non potest,
+<lb/>poterat tamen sola nervorum magnitudine .praestare, ut
+<lb/>lingua: at nec ea re praestare cernitur, sed nervorum
+<lb/>tantum adepta est, quantum ad senium tactus necessarium
+<lb/>erat. ltem natura ejus tunicae substantiae earum rerum,
+<lb/>quae odoratum movent, .non respondet: at reliquae reipondent:
+<pb n="2.864"/>
+<lb/>quandoquidem ridendi instrumentum splendidum
+<lb/>est: audiendi autem aereum: sicuti gustandi humidum
+<lb/>et fpongiofum est; quod vero ad tactum attinet,
+<lb/>durum ac terressee est: cum natura in fabricandis cujusque
+<lb/>tensus instrumentis similitudinem feusibilium secuta
+<lb/>iit. Itaque et odoratus instrumentum vaporis simile esse
+<lb/>oportebat, non durum et terrestre, ut tunica, quae
+<lb/>naribus indita est, quae non solum talis est, sed etiam
+<lb/>nervis justae. magnitudinis emet, quos certe habuisset,
+<lb/>et in ea re linguae praelata esset; cum in ordine insimmentorem
+<lb/>tensus tertium locum ad dignoscendam tenuem
+<lb/>substantiam teneat. Nervus enim opticus ad id maguitudiuis
+<lb/>pervenit, ut eo multo major sit, qui ad os
+<lb/>ventriculi deductus est, quamvis non in oculum totum
+<lb/>distributus sit, fied crystallinum corpus tantum attingat;
+<lb/>hoc enim, ut alias demonstravimus, praecipuum ceruendi
+<lb/>instrumentum est. Auditus autem foramen, cujus
+<lb/>interior terminus valde exiguus est, qui nervum excipit,
+<lb/>tantum nervi et ipfum accepit, quantum magnitudinis
+<pb n="2.865"/>
+<lb/>fuse ratio ferebat: Nec vero linguae nervi a cerebro
+<lb/>orti exiles tributi funi. Ergo nec id instrumentum,
+<lb/>qu d ab odore movetur, gracilem a natura nervum
+<lb/>accepisset, ut is, qui in narium tunicas distributus est:
+<lb/>atque hoc idem vaporis simile esse necesse est, talis
+<lb/>enim est odorum substantia. Ex quibus rebus efficitur,
+<lb/>ut ipsi quoque in investigando odoratus instrumento a
+<lb/>naribus abducamur, si quaestionem quidem ad judicandmn
+<lb/>a constitutione partium sumamus : si vero rem a
+<lb/>propriis actionis accidentibus investigare volumus, nuisum
+<lb/>odoris sensum, nisi spiritu naribus attracto, moveri
+<lb/>videbimus, quamquam ipfae nares quandoque vapore
+<lb/>etiam vehementer olente repletae sint. Si quis igitur in
+<lb/>cubiculo admodum angusio bitumen casiamve, aut myrrham
+<lb/>thusve, aut styracem in suffitum colliquat, ut undique
+<lb/>circumfusum aerem odore vehementi repleat, mox
+<lb/>eundem sic naribus excipiat, ut attrahere per intervalla
+<lb/>longa conetur, hic rei veritatem intelliget. Siquidem
+<lb/>tantummodo, dum spiritum adducet, odorem sentiet:
+<pb n="2.866"/>
+<lb/>interiectis autem temporibus, cum spiritum continebit;
+<lb/>odorem nullum percipiet, quanquam nares olenti vapore
+<lb/>repletae sunt: hoc idem eveniet, si in ipsas aliquid vetrementis
+<lb/>odoris instilles, nam ita quoque solo attracti
+<lb/>fpiritus tempore odorem percipies. His de causis pars
+<lb/>corporis, quae odores dignoscit, alia esse ridetur, eaque
+<lb/>interius in corpore posita, non quae tam in promptu est
+<lb/>et in summo corpore locata, ut tunica, quae naribus
+<lb/>indita est. Pectus igitur (ut ex sermone, qui de respiraliene
+<lb/>habitus est, intelleximus j a musculis quibusdam
+<lb/>dilatatur, eodemque tempore motus pulmonis conloquitur:
+<lb/>ita aerem trahi continui ratione necesse est et per
+<lb/>usperam arteriam, et per fauces, et ore, et naribus.
+<lb/>Quare videndum est, cum nasi tunica non odoratus instramentum
+<lb/>fit, an ei, quae palatum ambit, hoc delatum
+<lb/>munus sit; mox idem de faucibus et aspera arteria
+<lb/>quaerendum esu Palati igitur tunica sane haud eritcdoratus
+<lb/>instrumentum r quandoquidem obstructis naribus,
+<pb n="2.867"/>
+<lb/>-aut digito este compressis, ut claudantur, spiritu autem
+<lb/>ore adducto, nullus odoris lentus movetur: . eandem ob
+<lb/>causam nec sanci m nec asperae arteriae id . officium
+<lb/>esse putandum esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Sed jam cesset, ut de reliqua foraminum
+<lb/>parte confideremus, . quae per ossa colo similia ad ipfum
+<lb/>cerebrum nscendit, quae et ipsa caeterarum similitudinem
+<lb/>in constitutione secuta est; nam ea tunica, quae hanc
+<lb/>meatuum partum succingit, substantiam cum iuferiori
+<lb/>tunica eandem habet, eandemque nervorum tenuitatem,
+<lb/>accidentium vero ratio diversa esu Licet enim cerebro,
+<lb/>dum in adducendo spiritu per sua quali germina quaedant
+<lb/>agit pectusque dilatat, aliquid et ipsi ad suos veutriculos
+<lb/>attrahere: nec enim ei impossibile est, quum
+<lb/>alia moveat, . sibi motum quemdam cumque exiguum
+<lb/>praebere, i modo in se ipsum, modo ex se ipso; ita ut
+<lb/>tum compressius fit, quum sese contrahit, fusius vero,
+<lb/>quum. su ex. omni parte dilatat; quum autem in se ipfum
+<pb n="2.868"/>
+<lb/>colligitur, tunc exirinsecus aer continui ratione fequatur,
+<lb/>idemque repulsus effletur, quum cerebrum difsunditur.
+<lb/>Quum haec igitur nos olim nobiscum cogitaremus,
+<lb/>forte contigit, ut quidam, cui odorandi sensus a diuturna
+<lb/>tum gravedine tum destillatione laesus esset, ad nigellam
+<lb/>remedii causa confugeret. Quam, ut ratio medicamenti
+<lb/>postulat, quum contudisset diligenter et in pulverem liquassat,
+<lb/>veterique oleo immiscuisset; iterum eandem cmn
+<lb/>eo humore minutissime trivit; mox aquam ore excepit,
+<lb/>et supino capite non minimam medicamenti partem sibi
+<lb/>naribus instillatam adducto spiritu vehementius attraxit:
+<lb/>eodemque modo triduum medicamento utens, magnum
+<lb/>ex eo . simenis ille adjumentum cepit . Quarto autem die,
+<lb/>quum eodem medicamento sic usus esset, ut spiritum vicilentius
+<lb/>quam aule attraheret, gravem in intimo capite
+<lb/>morsum. percepit: qui tamen quum sensim Leniretur, postera
+<lb/>die prorsus sedatus est.. Qui eventus mihi argumento
+<lb/>sitit, nigellae paulum usque ad cerebri ventriculos.
+<pb n="2.869"/>
+<lb/>esse attractum, quod aut membranae, quae secundarum
+<lb/>modo, quibus. involvuntur foetus, intexta est, aut forlasse
+<lb/>ipsi cerebro inhaerens dolorem intulit: atque hoc
+<lb/>idem illius. rei consensu approbatum apparet, quod vaporis
+<lb/>quodammodo simile proprium odoratus nstmmenturu
+<lb/>esse oportet. Ex quibus rebus ego - commotus, aliis
+<lb/>quibusdam aliisque alias, multisque deinceps famulis
+<lb/>eodem medicamento in nares instillato, eos spiritum vehementer
+<lb/>trahere jussi: quorum alii nullum, alii levem,
+<lb/>alii gravem morsum alle in capite senserunt. Ex quibus
+<lb/>rebus caeterisque, de quibus ante disputatum est, quum
+<lb/>ratiocinaremur, sensum odoris in ventriculis cerebri
+<lb/>anterioribus fieri existimavimus. Aderant autem insuper-.
+<lb/>argumenta multa, quae huic rei fidem non exiguam afferebant:
+<lb/>-primum quidem, quoniam is, quem gravedo capitis
+<lb/>ob repletum orastis vaporibus cerebrum opprimebat,
+<lb/>evidens a sternutamentis adiumentum cepit : alterum vero,
+<lb/>quoniam ipsum cerebrum in retentione spiritus impletur
+<lb/>e tcalefit, .ut paulo post dicam; aequum est igitur, cerebrum
+<pb n="2.870"/>
+<lb/>nunc spiritum trahere, ut refrigerium capiat, nunc
+<lb/>eundem reddere, ut noxia a. se expellat: quibus tertium
+<lb/>quoque argumentum adjunctum est, quod ii, quibus caput
+<lb/>in . sole exustum est aut modo quodam alio. incalescit,
+<lb/>odore rosarum, aut si qua alia sunt, quae naribus admota
+<lb/>non iniucunde refrigerent, haud dubiam sibi medelam accipiunt.
+<lb/>Sed et illud aderat, quod ad eandem fidem faciendam
+<lb/>concurreret, quod odoris sensus in narium tuusca
+<lb/>moveri nullo modo potest; id enim, quod paulum prohabilitatis
+<lb/>ab Aristotele acceperat, quum exquireretur,
+<lb/>falsum inventum esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Ut igitur totum ejus in ea re decretum
+<lb/>diligenti inquisitione exploretur, a facundo capite superius
+<lb/>positu disserentes exordiamur. Misti igitur cogitanti,
+<lb/>quid causae sit, si in naris tunica odorum sensus positus
+<lb/>est, cur tantummodo, dum spiritum trahimus, odorem
+<lb/>percipiamus, reliquo autem tempore odoris sensu careamus,
+<lb/>illud tantum probabile repertum est, instrumenttun
+<lb/>odoratus non in summa superficie tunicae narium,
+<pb n="2.871"/>
+<lb/>sed multo interius in ea esse locatum, sic ut foramina
+<lb/>quaedam ad ipsum pertinentia habeat, quae non semper
+<lb/>aperta sint, sed operculis quibusdam membranae similibus
+<lb/>lenuibusque tegantur: quae opercula ab impetu attracti
+<lb/>spiritus referentur, ut .ad eam partem, in qua
+<lb/>vis odoris dignoscendi posita est, propriunr ejus scnfibile
+<lb/>perveniat. Tale est, quod Aristoteles sentire videtur et
+<lb/>eo libro, quem de anima secundum scripsit, et eo, quem,
+<lb/>de sensu et sensibilibus, qui liber idem defensu et senforiis,
+<lb/>ut ita dicam, inscribitur; sic enim lustramenta
+<lb/>fensus appellare Aristoteles solet. In fecundo igitur de
+  <lb/>anima haec ab eo scripta fiunt: <hi rend="italic">Sic et odoratus instrumentum
+<lb/>in aliis operculo caret, ut oculi: in aliis, quae
+<lb/>aerem recipiunt, operculo tegitur, quod respirante animali
+<lb/>ex dilatatione venarum et foraminum abducitur</hi>.
+  <lb/>in volumine vero de sensu et sensoriis: <hi rend="italic">Sed in iis,
+<lb/>inquit, quae respirant, spiritus id, quod velati operculum
+<lb/>incumbit, abducit ; ratione citius non sentiunt, nisi
+<pb n="2.872"/>
+<lb/>respirent: in iis vero, quae non respirant, id operculum
+<lb/>non est, ut in oculis accidit: nam animantes quaedam
+<lb/>palpebras habent, quae nisi abducantur, cernere nequeunt:
+<lb/>nonnullae, quibus oculi duri sunt, palpebris
+<lb/>carent, ut nullo egeant, quod eas abducat, sed tantum
+<lb/>protinus cernant, quantum earum natura patiatur</hi>.
+<lb/>Haec Aristoteles, qui locum quaerere, in quo primum
+<lb/>odoris sensus positus sit, nulla ex parte tentarit; eaque,
+<lb/>quae de foraminibus apertis, quanquam non intelligentiam
+<lb/>fugiunt, ut quaedam a quibusdam dicta, non tamen
+<lb/>locum habere in nasi meatibus possunt. In palpebris igi-,
+<lb/>tur motus animalis voluntate cietur, et ob eum rem nobis
+<lb/>licet, quoties volumus, et componere et abducere;
+<lb/>in odorandi vero sensu non ita se res habet: apertio
+<lb/>enim, quam dixit, foraminum attracti spiritus accidens
+<lb/>est, non opus nostrum. Sed, quonam modo accidat,
+<lb/>deinceps videndum. Quamquam aequum erat Aristotelem,
+<lb/>rationis parentem, sinam opinionem stabilire, non aldolote
+<pb n="2.873"/>
+<lb/>pronunciare, nobisque relinquere, ut, quaenam ejus
+<lb/>sententia fuisset, veluti vaticinarentur, cum nihil ipsis
+<lb/>dilucide dixisset, nec eam, quam in scriptis posuit, t foruminum
+<lb/>constitutionem declarasset, in tunicane narium
+<lb/>an loco quodam alio haec sua odoratus foramina esse
+<lb/>arbitraretur. Quae non in naribus esse, ex eo patet,
+<lb/>quod, fi ita esset, ea impetus aeris foris irruentis aperiret
+<lb/>etiam sine ullo attracto spiritu : hoc autem non fieri
+<lb/>perspicuum esse potest, si quis aut motum aeris in cubiculo
+<lb/>odore admodum vehementi repleto moliatur, aut
+<lb/>eodem in loco nares ventu objiciat, aut naribus instrumenta
+<lb/>quaedam cava admoveat, quibus aer potest impelli:
+<lb/>ea calami sunt et vesicae utrinque foratae, quibus
+<lb/>cornicula inhaereant; attamen sus omnibus aerem impellentibus
+<lb/>nullus odoris tensus excitatur. Nec vero id
+<lb/>quenquam dicere. licet, talem nasi tunicae foramina habere
+<lb/>motum, qualem cordis ventriculi habent, qui cum
+<pb n="2.874"/>
+<lb/>dilatantur, ora valorum aperiuntur, quibus in cor materrae
+<lb/>invehuntur: aut enim dicendum est motum foraminum
+<lb/>nobis volentibus cieri, aut sine voluntatis imperio,
+<lb/>ut cor ipfum movetur. Si igitur ea foramina nostra
+<lb/>voluntate moventur, licebit fine ullo etiam attractu
+<lb/>spiritu eadem dilatare, indeque odorem percipere: sin
+<lb/>autem naturalis motus eorum sit, nihiloruinus hoc idem
+<lb/>licere perspicuum est : at nunquam, nisi adducto spiritu,
+<lb/>odorem sentimus: ex quo apertum relinquitur, foramina,
+<lb/>ut ait, odores dignoscentia neque animali volente neque
+<lb/>sine ejusdem voluntate proprium motum habere, quo
+<lb/>eorum ostiola referentur. Nec vero motus instrumentorum,
+<lb/>quae respicationi accommodata sunt, illos odorandi
+<lb/>meatus dilatare poterunt: pectus enim (ut, cum sermo
+<lb/>de instrumentis respirationi . scrvientibus haberetur, denronstratum
+<lb/>est) a musculis dilatatur; pulmo autem ex
+<lb/>omni parte consequitur, unaque cum pectore continui
+<lb/>natione dilatatur, cujus item motum aer extrinsecus fequitur:
+<pb n="2.875"/>
+<lb/>corpora vero aerem vehentia, sive sit os, sive nares,
+<lb/>sive guttur, non dilatari necesse est, quandoquidem his,
+<lb/>ut tarrtununodo pateant, opus est, non ut nrajorem latitustruem
+<lb/>sibi assumunt. Ex quo intelligitur, tenuia illa tunicae
+<lb/>narium foramina motu instrumentorum, quae ad
+<lb/>ducendum spiritum natura aptavit, aperiri non posse:.
+<lb/>ut reliquum sit, eosdem sido aeris impetu reserari, quem,
+<lb/>ut dictum est, moliri etiam non attracto spiritu possetmus.
+<lb/>Quod si quis eorum, qui ob stuporem mulsa temere
+<lb/>pronunciant, foramina eo tantum tempore aperiri dicat,
+<lb/>quo spiritum trahimus, is a nobis admonebitur, . ut ea
+<lb/>meminisse velit, quae supra, dum hoc idem redargueremus,
+<lb/>disputata sunt, eo orationis loco, ubi illa foramina
+<lb/>aut animalis voluntate aut quodam naturali motu aperiri
+<lb/>diximus: quorum neutrum fieri apertum est. Nam
+<lb/>si animalis voluntate aperirentur, nostrae potestatis esset,
+<lb/>quoties vehemus, ea aperire, etiam nullo spiritu adductoa
+<lb/>idem yero si naturae opera fieret, qualis motus
+<pb n="2.876"/>
+<lb/>cordis est, non semper cum adducto spiritu contingeret,
+<lb/>sed proprium tui motus ordinem haberet, ut in idem
+<lb/>tempus nunc cum acceptu spiritu concurreret, nunc
+<lb/>cum eodem redditu, nunc cum tota respiratione retenta.
+<lb/>Si igitur neque per te, neque cum motu instrumentorum,
+<lb/>quae ad ducendum spiritum accommodata sunt, illa tunicae
+<lb/>narium foramina aperiuntur, reliquum est, id fpiritus
+<lb/>impetu fieri, quem, ut dixi, sine inspiratione movere
+<lb/>possumus. Si quis autem dubitet, quid causae sit, cur
+<lb/>tali motu, etiamsi valde violentus sit, nulla tamen odoris
+<lb/>pars in cerebrum impellatur, quanquam tum lata
+<lb/>extant foramina, ut a cerebro mucus etiam crassissimus
+<lb/>per ea transfluat: nos eum docebimus, in tali aeris per
+<lb/>nares impulsu neque in guttur quicquam neque in pusmonent
+<lb/>propelli, quandoquidem ea a proprio repleta
+<lb/>fpiritu praeoccupantur. Quum igitur ne in amplas quidem
+<lb/>vias quicquam externi aeris illabatur, nisi insimmenta
+<lb/>dilatentur, consentaneum est, nec in ea illabi
+<pb n="2.877"/>
+<lb/>foramina, quae tam angusta sunt, ut quibusdam oscitauter
+<lb/>dissecantibus ne quidem existere videantur. Si in
+<lb/>alterum igitur nasi foramen fistulam. immiseris, ut id ad
+<lb/>unguem obsumus, nullus spiritus inire ante poterit,
+<lb/>quam os aperueris r quo aperto, spiritus is, qui palato
+<lb/>continebatur, cum foras effunditur, eum, qui continuus
+<lb/>est, fequela quadam tecum trahit. Ne arbitreris igitur,
+<lb/>in ejusmodi spiritus per nares impetu quicquam in cerebrum
+<lb/>impelli: quameliu enim alter spiritus cerebri aufractus
+<lb/>locaque vacua occupat, tamdiu nulli alteri ullus
+<lb/>est ineundi locus prius, quam cerebrum dilatetur; id
+<lb/>quod fieri nobis spiritum trahentibus potest ; primum
+<lb/>enim dilatatur, ut attrahat, delude sic aerem foris in
+<lb/>se recipit: at idem cerebrum spiritum recipere, nisi
+<lb/>dilatetur, non potest, ne si quidem is violenter impulfus
+<lb/>sit. Quod si aliquis velit spiritum vi impulsum ingredi,
+<lb/>nunquam tamen is multus esse poterit ; aer enim,
+<lb/>est. scimus, vi comprimitur,. idemque- undique funditur,
+<pb n="2.878"/>
+<lb/>cum horum alterutrum pati contra naturata suum cogitur;
+<lb/>ut nulla eiusmodi violenta caula eum a Ioco, quem jam
+<lb/>occupat, dimovere . valeat; nec vero, cum idem compressus
+<lb/>in angustiorem Iocum cogitur, aut fusus in ampliorem
+<lb/>extenditur, magnam ad utramvis partem efficit
+<lb/>mutationem, feti exiguo et processu et recessu comprimitur
+<lb/>idem et funditur.. Quam ob causam nihil in .cerebium
+<lb/>impellitur, quamvis vehementer spiritum plenis
+<lb/>naribus comprimas : tunica vero, quae illas ambit, in
+<lb/>qua illa odoratus foramina .exquirenda posuimus, se ab
+<lb/>aere foris violenter irruente verberari haud dubie sentit;
+<lb/>itaque ea foramina ex tam .vehementi aeris in .nares imFetu
+<lb/>reserari oporteret, et simul, ac aperta essent, edoxis
+<lb/>sensum moveri; at non movetur: ergo ea esse non
+<lb/>possunt. Sed nec probabile est, naturam . tale .quidquam
+<lb/>frustra machinatum esse; nam .si foramina quaedam ad
+<lb/>odores percipiendos constituisset, non ea impositis . operculis
+<lb/>ocdusisset. ut nec .ec occlusit, quae. in auribut
+<pb n="2.879"/>
+<lb/>extent. Melius enim esu omnem sensum aptum. esse, qui
+<lb/>proprium sensibile semper dignosuat, non tantummodo,
+<lb/>dum. spiritum trahimus. . Nec natura propterea oculis
+<lb/>operimenta dedit, quia melius esset eos non perpetua in
+<lb/>actione teneri, sed quia molles erant et ob eam rem
+<lb/>laedi ab incursantibus rebus facile poterant; .a quibus ut
+<lb/>defenderentur, -natura palpebras ipsis, quasi quaedam. pro:.
+<lb/>pugnacula, dediti Sed. nonne et ab ipso Arillotele dictum
+<lb/>est, naturam animantibus iis, quorum oculos exterior
+<lb/>tunica. dura protegit, . ideo palpebras non dedisse,
+<lb/>quod eos non facile laedere esset, .et ipsi per se nullum
+<lb/>vel munimentum vel tegumentum vel operculum in eo .
+<lb/>animalium genere desiderarent ?. At nos jure desideramus
+<lb/>egemusque . et ob causam proxime expositam et somni
+<lb/>gratia; quisquam enim in aere .lucido dormire, nisi tectis
+<lb/>oculis, non potest.. Itaque illis ipsis animalibus, quae.
+<lb/>palpebris carent,. ut locustae, gammari, paguri, cancri,.
+<pb n="2.880"/>
+<lb/>natura sinus quosdam tribuit, qui, restante stanno, quasi
+<lb/>cubicula quaedam oculos tutos .reciperent; qui mox lude,
+<lb/>cum cernendi - voluntas - subiret, eruerentur unaque cum
+<lb/>cervicibus suis in sublime extollerentur, quarum in summis
+<lb/>partibus oculi tanquam in fede sina collocati simi,
+<lb/>quae in excelsis animalium partibus posita est. Sed haec
+<lb/>caeteraque similia in libris, quos de usu partium scripsimus,
+<lb/>satis explicata sunt: quae si quis colligat, is et
+<lb/>palpebrarum utilitatum cognoscet, et naturam in id temper
+<lb/>esse intentam, ut sensus in sitis actionibus retiueantur.
+<lb/>Quod si majoris utilitatis caufa eos certo tempore
+<lb/>cessare necesse est, in nullam ea de re noster sermo difficultatem
+<lb/>incurrit: nam quae simul esse non possunt,
+<lb/>ea ne dii quidem omnes, si. vellent, coniungere possent.
+<lb/>Quidquid enim tuapte natura fieri nequit, id suis etiam
+<lb/>ipfis impossibile est. Ne mireris igitur, cur natura, cmn
+<lb/>sensus semper agere velit, sus tamen per somnos qui eIcere
+<lb/>mandet: eo enim tempore somnum, rem ab his
+<pb n="2.881"/>
+<lb/>actionibus diversam, mavult. Sed hic locus non est,
+<lb/>ut somni naturam aperiam; naturalia enim et opera
+<lb/>quaeque et affectus aliis in locis explicata sunt. Dum
+<lb/>igitur simul dormit, (sive somnus naturale sit opus, sive
+<lb/>actio, id quod judicare non facile est,j sensus ipsi non
+<lb/>adeo agere possunt, ut bene sentiant: ex quo intelligitm,
+<lb/>quanquam per somnos non aeque, atque pervigilias,
+<lb/>sensibus agere possumus, non- tamen falsum esse,
+<lb/>quod dictum est, sensum omnem melius esse in perpetua
+<lb/>actione teneri, quam eam intermittere : nec, quamvis
+<lb/>a quibusdam rebus foris incursantibus caventes ocuIos
+<lb/>claudere interdum cogimur, tamen satius est nos ec
+<lb/>tempore non cernere: melius enim, si oculi sine noxa
+<lb/>fervari possent, ut per id temporis etiam cerneremus:
+<lb/>ted quoniam id fieri nequit, iccirco cogimur palpebras
+<lb/>occludere. Haec in praesenti de utilitate palpebrarum
+<lb/>dicta sint. Pauca quidem e. multis; nam hic plura dicere
+<lb/>tempestivum non esu Reste arnus igitur ad illa odoratus
+<pb n="2.882"/>
+<lb/>foramina, quibus Aristoteles ait naturam opercula
+<lb/>quaedam dedisse, neque tamen, quae utilitas ab ea re
+<lb/>animali praebeatur, exposuit, neque rem esse demonstravit.
+<lb/>Talia. igitur foramina, qualia ah Aristotele dicta
+<lb/>sunt, nedum ullius fiunt utilitatis, sed etiam per longa
+<lb/>ritae fpatia magnum animalibus detrimentum afferunt,
+<lb/>quandoquidem eormn vitio odorandi sensu sumus orba..
+<lb/>ti: quod nulli ex reliquis sensibus contigisse videmus,
+<lb/>qui omnes, dum vigilamus, in continuis actionibus versantur,
+<lb/>si modo propria sensibilia habeant, a quibus
+<lb/>moveantur, odoratus igitur foraminum opercula ab Aristola
+<lb/>posita reut esse et incertam et demonstratione carentem,
+<lb/>et. quam nulla evidens fides testificetur, equidem
+<lb/>mihi demonstrasse videor.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Nunc vero videndum est, quonam modo
+<lb/>gravedini capitis sternutamenta medeantur; id quod ea
+<lb/>ratione fieri arbitror,. quoniam ex praecedentibus magnis
+<lb/>expilationibus, consequente autem celerrime efflata, sternutamenta
+<pb n="2.883"/>
+<lb/>moveatur; efflatum voco expirationem confertim
+<lb/>concitatam. Si autem nihil per sternutamenta ex
+<lb/>cerebro educeretur, ea gravedinem capitis non modo
+<lb/>non levarent, .verum etiam a spiritu tum foras confertim
+<lb/>ruente tum etiam verberante caput magis et plenum
+<lb/>et grave redderetur: ut ex magnis vocibus fieri
+<lb/>cernimus. Quin et morbi quidam ex iis, qui cerebrum
+<lb/>occupant, ut lethargici et saporosi a sternutatoriis medi-.
+<lb/>cementis non minimam curationem recipiunt: itemque
+<lb/>ab iis, quae directo in solem aspectu evocantur i quod
+<lb/>ex eo fieri arbitror, quia cerebri spiritus vapori similes
+<lb/>a sole funduntur. Mucum etiam ex cerebro crassam
+<lb/>et glutinosum sternutamenta . detrahunt, . quem una cum
+<lb/>spiritu foras impulso educunt. Non igitur rationi consentaneum
+<lb/>est, ut, quum spiritus aliquis e cerebro per
+<lb/>sternutamenta extra feratur, idem tamen nullus unquam
+<lb/>ingrediatur,. praesertim quum et ossibus coli similibus,
+<pb n="2.884"/>
+<lb/>et cerebri membranae, quae iisdem in superiori parte
+<lb/>substernitur, insint multa foramina. Ad haec, quod
+<lb/>validi odores caput statim laedant, et impleant, et gravent,
+<lb/>et in delirium interdum provocent, argumentum
+<lb/>esa non nihil substantiae eorum cerebrum tentare, quandoquidem
+<lb/>non ob solam communicatam qualitatem in
+<lb/>tam subitos Iamque Vehementes affectus incurreret. Eademque
+<lb/>ratione idem ab odore rosarum Iuvari confenlaneum
+<lb/>est, cum a solis exustione laborat: atque hoc
+<lb/>idem adjumeutum ab aere frigido naribus attracto nitrilominus
+<lb/>capit, cum ad eundem modum affectum est : contra
+<lb/>vero a valde calido idem graviter laedi videmus.
+<lb/>Adde quod, cum respiratio, tota eam ob causam a cerebro
+<lb/>moveatur, ut cordis calor in quadam moderatione
+<lb/>lervetur, aequum est, ipsum cerebrum hanc ipsam respirationem
+<lb/>libi primum parare: siquidem suapte natura ira
+<lb/>rebus facillime obnoxium est, quae immoderate aut eaifaciunt,
+<lb/>aut refrigerant. Quid igitur? an cerebro natura
+<lb/>motum nullum ingenitum ad hanc utilitatem dedit, que
+<pb n="2.885"/>
+<lb/>fpiritum trahat, ut fefe ventilet atque refrigerium captet,
+<lb/>rursus autem eundem reddat, ut et caetera excrementa
+<lb/>et pituitofa atque mucosa effundat? nam (ut
+<lb/>in libris, quos de facultatibus naturalibus conscripsimus,
+<lb/>demonstratum est) partes corporis omnes et eam faeultalem
+<lb/>habent, qua,. quear alienum est, expellant, et eam, 
+<lb/>qua, quod sibi convenit, attrahunt; quae in ventriculo
+<lb/>et in utero facile . apparent. Num igitur natura ventriculo
+<lb/>vim utramque dedit, alteram, qua id attrahat,
+<lb/>quod bonum est,. alteram, qua id expellat, quod malum: 
+<lb/>easdem vero foli cerebro deesse voluit, quam ob causam
+<lb/>pati cogatur, ut ea exerementa, quae in ventriculis ejusdem
+<lb/>colliguntur, folo pondere expressa defluant et fensim
+<lb/>delabentis tandem in ipsas nares incidant? Id igitur
+<lb/>credendum non est, praesertim cum suplui tota nocte
+<lb/>cubamus; impediret enim, ne apoplexia aut carus aut
+<lb/>morbus comitialis oppletis cerebri ventriculis fierent, ut
+<lb/>eos, quibus orantum perforatur, saepius statim carus iuvaalit,
+<pb n="2.886"/>
+<lb/>si contingat, ut, qui operanti medico ministrant,
+<lb/>cerebri ventriculos immoderate comprimant: sed quid
+<lb/>luquam ventriculos?</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De marcore</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg053.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="666" to="704">666-704</biblScope>
+              <date>1824</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x07">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="373" to="379">373-379</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="178" to="191">178-191</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x07">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg0057.tlg053.verbatim-lat1">
+<pb n="7.666"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="7.666"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE MARCORE LIBER.</head>
+
+
+<p rend="indent">Marcor est corruptio ut ventis corporis ex
+<lb/>siccitate. Quum autem bifariam corruptio dicatur, altera
+<lb/>quae fit, altera quae facte est, in priori significato appellatio
+<lb/>sumenda est: ita quoque et ipse mercor, alter amerexisse,
+<lb/>a marcescere alter,.de quo nunc sermo habetur, dici
+<lb/>potest. Quoniam autem marcorem dximus esse viventis
+<lb/>corporis corruptionem, triaque sunt viventium genera; animalia,
+<lb/>stirpes ac semina, et ob haec etiam fructus, horum
+<lb/>proprie marcorem affectum esse interpretantes, ex translatione
+<pb n="7.667"/>
+<lb/>vero alias etiam quae siccitate proveniunt eorruptiones;
+<lb/>marcorem nuncupant; ut et ad ignem, .multuque adliuc
+<lb/>longius ad omnia, .quae paulatim corrumpuntur, nomen
+<lb/>hoc traducunt. At vero nos non de ullo aliorum, quae
+<lb/>haud proprie marcescere dicuntur, sed de eo duntaxat, quem
+<lb/>definivimus marcore, praecipueque cum in animalis fit corpore,
+<lb/>dicere nunc ilatninrus; communitatem tamen disputatio
+<lb/>haec cum stirpibus necessariam obtinebit. Quum igitur
+<lb/>quatuor modis simplicibus ac primis viventia omnia corrunrpantirr,
+<lb/>quod et eorum substantiae quatuor sint elementa,
+<lb/>marcescere ea dicimus, quae siccitate corrumpuntur. Quae
+<lb/>si hoc ipsum solum habeant, ut siccentur, altera elementorima.
+<lb/>oppositione, quae est caloris et frigoris, intra proprios
+<lb/>terminos manente, simplex is mercor est: si vero siccitati
+<lb/>calor immoderatus vel frigus adiungatur, compositus jam
+<lb/>duplexque tunc corruptionis erit modus. Simplex igitur
+<lb/>mercor ob inediam fieri ridetur, ubi quis vel ex electione
+<lb/>saulem tolerat, vel prae ciborum inopia fame conficitur.
+<pb n="7.668"/>
+<lb/>Qui autem cunr frigore coniunctus est, tum fenefcentibns
+<lb/>evenit tum iis etiam, qui ex quodam morbo similem scnectuti
+<lb/>.affectionem incurrunt. At qui adjunctum habet calorem
+<lb/>, in aliquibus hecticis febribus fieri conspicitur. in
+<lb/>stirpibus porro tum totum corpus, tum singulas earum pertes,
+<lb/>ubi prae siccitate fiunt corruptiones, marcescere dirimus.
+<lb/>Non ita tamen in animalibus, sed totum quidem corpus
+<lb/>dicimus marcescere ; de nulla vero sigillatim parte nomen
+<lb/>hoc consuevimus proferre ; praefensque nobis sermo haudquaquam
+<lb/>de eis, quae ob aliquod symptoma siccantur, pertibus
+<lb/>institutus est, sed quum totum sic affectum suerit corpus.
+<lb/>Jam igitur si totius corporis affectus sit marcor, illud
+<lb/>etiam nobis perspicuum est, nunquam ipsum fieri posse, nisi
+<lb/>animalis principium affectum suerit. Quin etiam fieri nullo
+<lb/>modo potest, ut alius quidem in toto animali sit affectus,
+<lb/>alius autem principium occuparit; quare cordis corpus siocari
+<lb/>marcescentibus est necesse. Ergo si causas omnes iuvenerimus
+<lb/>, a quibus cor sidet exiccari, non ignorabimus etiam,
+<pb n="7.669"/>
+<lb/>utrum marcescentes omnes insanabiles sint, an vero ex ipsis
+<lb/>nonnulli sanari polluit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Satius igitur fortasse hoc in loco fuerit disputationem
+<lb/>ad principium reducere. Optimum autem erit
+<lb/>principium, senectutis causam nosse, quum ex marcoribus
+<lb/>hic unus rideatur maniae esse inevitabilis, ut etiam secundum
+<lb/>naturam esse existimetur ; singula vero naturae opera
+<lb/>inevitabilia sunt, ortusque ordinem necessarium habent.
+<lb/>Sed et huic ipsi unum aliud praemittendum est, ut scilicet
+<lb/>dictionis hujus, secundum naturam, significata cognoscamus.
+<lb/>Neque enim profecto eodem dicimus modo secundum naturam
+<lb/>esse senectutem, quo nutriri ac augeri ; haec enim natricae
+<lb/>sunt opera; senectus vero non opus, sed affectus nenessario
+<lb/>consequens, nullum siquidem procreatorum animal
+<lb/>senii expers risum est. Ideoque nonnulli senium seeundum
+<lb/>naturam esse suxerunt, .quod omnia, quae- a natura
+<lb/>dispensantur, necessario consequatur. Itaque si senectutem
+<lb/>esse secundum naturam in hac capiatur significatione, alia
+<lb/>deinceps hujus -dictionis significata, -de quibus male quidam,
+<pb n="7.670"/>
+<lb/>ut alibi ostendimus, Opinati sunt, investigare non erit neceffarium
+<lb/>, nullaque amplius in oratione supererit dubitatio.
+<lb/>Nam si intelligunt, quo nunc dictum est modo, verum sane
+<lb/>est senectutem Iecundum naturam esse ac inevitabilem exiflere,
+<lb/>siquidem necessario naturae opera consequitur. Quanquam
+<lb/>nostro hoc seculo philosophus quidam librum conscripsit,
+<lb/>in quo, quonam quis modo possit lenii expers perpetuo
+<lb/>manere, ostendit. Edidit porro hunc librum, quum
+<lb/>annum adhuc quadiagesimmn ageret, aetate vero usque ad
+<lb/>octogesimum annmn pervenit, atque gracilis adeo hocusque
+<lb/>evaserat, ut praeclare iliud Hippocrates dictum in prognosticis
+<lb/>in eum quadrare posset : Nares acutae, oculi concavi,
+<lb/>collapsa tempora, frigidae coutractaeque aures, auriumque
+<lb/>lobi inversi, cutis circa frontem dura, intenta
+<lb/>ac arida. Quum igitur talis proditus irrideretur, quod
+<lb/>alios docere conaretur homines, quomodo quis senii expers
+<lb/>permaneret ; secundam de admirabili ager asta fenectutis
+<lb/>vacatione editionem tradidit, sic enint iliam eo volumine
+<pb n="7.671"/>
+<lb/>appellabat, ostendens, non quemlibet hominem sensi expertem
+<lb/>permanere posse, sed ad hoc natura opus esse idonea^
+<lb/>praecipueque quorum prima educatio proba jecerit sundamenta.
+<lb/>Pollicitabaturque se infantium ad hoc idoneorum
+<lb/>corpora redditurum immortalia, ubi ipse eorum curae statim
+<lb/>ab initio praeficeretur t minimeque ejus reprehendi poterat
+<lb/>pollicitatio, nam illi prius moriendum erat, quam
+<lb/>quos suscepisset pueros viri evasissent. Summam igitur
+<lb/>ejus stultitiam caeteri omnes contempsere, ego vero nequaquam
+<lb/>, sciens pleraque esiam asta decreta iis, quae per exparientiam
+<lb/>cognita sunt, adversantia, rationales multos
+<lb/>viros enunciasse, rasionum probabilitate deceptos. Neque
+<lb/>hoc igitur quantum ad rasionem attinet, mirum est. Iliud
+<lb/>enim, corrumpetur omnino quodcunque genitum est, neo
+<lb/>eam, quae scientiam efficit, consecutionem habet, nec ne^
+<lb/>cellariam, sed quae usque ad id quod probabile est procedit,
+<lb/>quemadmodum in commentariis de demonstralione nobis
+<lb/>demonstratum est. Quanquam hac utuntur rasione tere
+<lb/>omnes; qui senescere animalibus necessarium esse ostendunt,
+<pb n="7.672"/>
+<lb/>id ipsum esse viam dicentes ad corruptionem necessario omnia
+<lb/>generata corfequentemi Hactenus igitur experientia
+<lb/>sula senium necessarium est ac secundum naturam, quemadmodum
+<lb/>sane et ipta mors, quae nec ipsa demonstrata est ab
+<lb/>iis qui prompte enuntiant ac dicunt, quicquid genitum est,
+<lb/>id omnino etiam necesario interiturum. At is videlicet sophistarum
+<lb/>mos .est contra experientiam dicere, quod et ille,
+<lb/>arbitror, ferit, qui animal omne ex educantium ignoratione
+<lb/>interire tenescereque asseruit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Quapropter fortasse melius erit nos quae
+<lb/>causa sit investigare, ob quam tum animalia tum stirpes
+<lb/>omnes sanescunt. Cernimus siquidem tum ea exiccari tum
+<lb/>ejusmodi affectum illis esse tensum, quamvis nonnulli aliter
+<lb/>opinati fuerint asseruerintque frigidos hnmidosque esse sunes ;
+<lb/>eorum tamen deceptionis causam in libris de temperametitis
+<lb/>ostendimus. Nunquid igitur ob id, ut a quibusdam
+<lb/>dicitur, exiccantur animalia, quod lunatus sibi ipsis. calor,
+<lb/>veluti quidam ignis existens, incrementum exqt;a accenditur
+<pb n="7.673"/>
+<lb/>materia sumit? huic enim devinctus est et ab hac usinime
+<lb/>separabilis, ex hac denique omnia habet. Nuper ergo
+<lb/>nata animalia, quemadmodum et ipsae etiam stirpes, uuiversa
+<lb/>sunt humida; ideoque calor humiditatis copia tunc
+<lb/>veluti suffocatus, vix se ipsum attollit, ut qui nebulosus,
+<lb/>tardus et ad motum difficilis cristat; temporis autem progressu
+<lb/>humiditatem illam superat, ac omni materia evadit
+<lb/>superior ; jamque non nebulosus turbulcntusque nec irinoTus
+<lb/>, sed purus et aethereus redditus, fuos ipsius motus universos-Iibere
+<lb/>commonstrat; et, ut breviter totam rem complectar,
+<lb/>quemadmodum flammae, ubi in humida inciderint
+<lb/>ligna, prrnripio quidem opprimuntur ac veluti suffocantur,
+<lb/>quod parvae admodum imbecillaeque sint, temporis, vero
+<lb/>fpatio paulatim splendent ac crescunt, paulatimque ..nateriam
+<lb/>superant, ac tandem quum jam totam superaverint,
+<lb/>in maximam attolluntur .magnitudinem, quod certe ipsis
+<lb/>rigor est ac robur, deinceps vero, hoc alimento jam defidente,
+<lb/>marcescunt ac extinguuntur: eodem etiani modo,
+<pb n="7.674"/>
+<lb/>inquiunt ipsi, calor qui in nobis est, animalis corpori tan-.
+<lb/>quam materiae cuidam innitus, principio quidem humidus
+<lb/>.ac imbecillis est; deinceps. vero usque ad rigentem aetatem
+<lb/>increscens, tum splendet, tum augetur, ac in amplissimam
+<lb/>elevatur magnitudinem, ignis flammam imitatus; abhinc
+<lb/>alimenti penuria paulatim marcescit, idque est senium; mox.
+<lb/>vero jam -prorsus extinguitur, quod est mors. Haec ratio
+<lb/>ah. omnibus ferme recentioribus tum medicis tum plodo;.
+<lb/>foplris. probatur, quae tamen, meojudicio, vera non est,
+<lb/>ut quae ignis flammam- animalium calori comparet,. haud
+<lb/>sane intelligens ,: flammas ex corruptione ejusdem materiae,
+<lb/>ex .qua succenduntur, .ortum habere, . animalia vero non sic
+<lb/>innatum ab eo, qui ea effinxit ,- sortita esse calorem, sed ut
+<lb/>ab. illo augenda ac gubernanda; nec ullum dari tempus,
+<lb/>quo lunatus noster. calor per universam materiam ipsam non
+<lb/>sit extensus,. non eas solum facultates,- quibus fingit oletinens,
+<lb/>sed et plerasque etiam alias : nam ei nutrimentum ad
+<lb/>templum trahit; materiamque gubernat, apponit, .agglutinat,
+<pb n="7.675"/>
+<lb/>assimilat, et, ut semel tlicatn, omnia secus, ac flamma,
+<lb/>in innatam fibimateriam efficit. Nam quae flamma sua-:
+<lb/>torium, cui devincta est, adauget? . quae vero illi potius.
+<lb/>alimentum assimilat, quam sibi ipsi materiam? quae denique
+<lb/>tot machinationes ut materiam tueatur invenit, non-.
+<lb/>nullas quidem partes circumvestiens ac claudens, ut nihil
+<lb/>ipsis extrinsecus affluat ; nonnullas vero perforans dilatans-.
+<lb/>que, canales praeterea inferens, hos quidem ut per ipsos
+<lb/>nutrimentum attrahatur, illos vero ad refrigerium . ac re-.
+<lb/>spirationem, simulque excrementa per alios quidem crassa,
+<lb/>per alios vero tenuia excernens ? Omne huc imprudens de
+<lb/>partium usu opus translatam, si singula naturae opera enarrare
+<lb/>voluero. .Quinetiam hujus enarratae opinionis prini.
+<lb/>cipes idem esse calorem lunatum dicunt et naturam. Haud
+<lb/>igitur recte eum flammis assimilant comparantque, ac corpora
+<lb/>ab ipso corrumpi putanti Cur ergo, ajunt; ah Hippocrate
+<lb/>fuit dictum, inteificit igitur nos calor ille, qui corpora
+<lb/>produxit?. Primum quidem nobis respondebimus, boni viri,
+<pb n="7.676"/>
+<lb/>non esse illum ex legitimis Hippocrate librum, in quo haec
+<lb/>leguntur ; deinde vero, licet Hippocratis decretum esse.eoncedatur,
+<lb/>declarari tamen id oportuerat, quonam modo dierum
+<lb/>fuerat,. ac aliquam afferri demonstrationem. Sivero
+<lb/>propterea fidem sibi haberi volunt, quia demonstrationibus
+<lb/>destituuntur, non recte sapiunt. Equidem verum est ob
+<lb/>innatum calorem corpora tum senescere tum tandem corrumpi;
+<lb/>falsus tamen est modus, quem ipsi tradunt. Neque
+<lb/>enim ut a flamma absumuntur ligna, ita quoque a calore innato
+<lb/>animantium corpora. Enimvero fortassis hoc. exemplum
+<lb/>iis, qui a febre corrumpuntur, accommodatur,. quodque
+<lb/>ab Hippocrate in nuper citatis verbis fuit dictum, tale
+<lb/>quid ridetur indicare. Exiccari sane corpora secundum
+<lb/>quandamnaturalem consecutionem, hoeque ob calorem innatum
+<lb/>fieri, omnino verissimum est, quemadmodum et in
+<lb/>primo de sanitate tuenda libro demonstratum est; idem tanien
+<lb/>in praesenti quoque disputatione repetere nihilominus
+<lb/>est necessarium.
+</p>
+<pb n="7.677"/>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Natura quae stirpes animaliaque procreat,
+<lb/>omnino sane generandis ipsis principium quoddam corpo-:
+<lb/>reum assuunt; nulla siquidem omnino res est, quae ex nihilo.
+<lb/>penitus generationis principium habere possit: atque hinc.
+<lb/>exorsa, ad eum perpetuo scopum sibi a principio in pr cere-.
+<lb/>atione propositum ordinate tendit ; id vero est ; perfectum
+<lb/>reddere quod generatur, sive stirps sit, sive animal; id autum
+<lb/>scilicet perfectum est, cui nulla propriarum actionum
+<lb/>defit. At plures sunt ex actionibus, quae duris indigent
+<lb/>instrumentis; et haec est causa, cur multae. in animalibus fiant
+<lb/>durae partes. Earum vero generationis principium,
+<lb/>contra quam animal perfectum, molle fit necesse est, ut
+<lb/>bene concinnari conformarique, et ad omnia fabricanti sequax
+<lb/>ac praesto esse possim Ideoque quamvis durum quid
+<lb/>sit semen, messis tamen stirps fit; humore prius moderatu
+<lb/>irrigatum, ut pro semine natura efficiatur. Si igitur eqrortet
+<lb/>animalis generationem principium habere ex molli  substantia,
+<lb/>quae quum perficitur durescat, necesse est, ut in
+<pb n="7.678"/>
+<lb/>prima elementorum, a quibus ipsum animal constituitur,
+<lb/>mixtione sum humidum .tum siccum exuperet. Ac humulum
+<lb/>quidem est id, quod aqueum est; siccum vero duplicis
+<lb/>est naturae, veI enim terreum est, veI igneum. Atqui
+<lb/>fieri ab initio minime poterat,, ut ex terreo plus misceretur,
+<lb/>quod humidum. esse animalis principium oporteat. Solum
+<lb/>ergo adhuc quod igneum est relinquitur, in prima animalis
+<lb/>generatione ac compactione necessario exuperans. Si igitur
+<lb/>facere potuisset natura, ut postquam animal veI stirpem ad
+<lb/>rigorem usque perduxisset, aliam rursus facultatibus peram
+<lb/>induceret elemehtationem, hoc utique duntaxat modo fine
+<lb/>simio ac corruptione ejus perdurasset fabrica, si tamen illi
+<lb/>custodiendae rapiens quidam vir praefuisset, neque enim
+<lb/>simpliciter sic incorrupta perduraret, si prava uteretur.
+<lb/>rictus ratione, tuncque nobis tuam ostendere potuisset
+<lb/>artem Aegyptius ille, inre, quae fieri posset. Nunc autem
+<lb/>quum omnino fieri nequeat, ut prima elementa generatinnis
+<lb/>animalium ac stirpium transponantur ac transmutestui
+<lb/>, necessarium est ; ut etiam post rigorem siccetur corpus,
+<pb n="7.679"/>
+<lb/>quamvis nihil amplius illi sit opus hoc pati, exsiccationis
+<lb/>utilitate sublata. Verum decrescens aetas, paucam.
+<lb/>habens siccitatem, multos latet, ac fi nondum marcor quidanr
+<lb/>sit; senectus vero non genere, sed quantitate sola, ab
+<lb/>ipsa differens, manifeste deprehenditur. Haec ergo est causa,
+<lb/>.quae homini in on prorsus amenti aperte ostendit, in
+<lb/>omnibus animalibus temporis progressu necessariam esse siccisatem,
+<lb/>senectutemque nec evitari nec sanari posse. Num
+<lb/>quod primam animalium generationem necessario consequi- tar,
+<lb/>quomodo aliquis id fieri prohibebit, aut factum tollet?.
+<lb/>Jam vero quod sit senectutis principium et quando senescere
+<lb/>primum incipiant corpora, investigare fuerit opportunum. .</p>
+<p rend="hanging">- Ergo qui decrescentium temperamentum siccum esse ac fiigidum
+<lb/>arbitrantur, senum vero humidum ac frigidum, in
+<lb/>hujus transmutatione principium senectutis statuunt. Nos
+<lb/>vero, qui in commentariis. De temperamentis omnia, cor-.
+<lb/>pora post: rigorem ad finem usque demonstravimus exiccari,
+<lb/>juie de senectutis principio dubitabimus, quum tuta post
+<pb n="7.680"/>
+<lb/>vigoiem aetas sicca sit ac frigida. Neque enim quod deeroruentium
+<lb/>alter assero magis mluusve su siccus et frigidus, fenectutis
+<lb/>principium statui potest, quum corpus ad plurimum
+<lb/>devenerit siccitatis; illud enim, ad plurimum, in acervalem
+<lb/>incidit dubitationem : et licet hujusmodi dubitationem,
+<lb/>quod plerumque alias fieri est necesse, contemnere quis. possit,
+<lb/>non tamen sittius suerit, qui terminis manifestis distinguere
+<lb/>rem potest, feipfum- dubitationibus non necessariis
+<lb/>subiicere.. . Termini autem manifesti inter decrescentem et
+<lb/>scnilem aetatem est humidorum excrementorum. exuperantia;
+<lb/>a quibus excrementis nonnulli decepti, humidam, ut
+<lb/>diximus, senectutem esse asseruere. Quin et actiones omues
+<lb/>in hac ipsa debilitari aperte su tueri possumus ; et quae
+<lb/>dudum decrescentium ad mortem via latebat, tunc mausseste
+<lb/>deprehenditur, Hinc sophistis problemata ex hypothesi
+<lb/>fiunt,. aliisquidem senectutem esse morbum, aliis esse .anitalem
+<lb/>m affectu movente, -aliis neutrum quid esse ; ac non- nullis
+<lb/>esse secundum naturam, aliis praeter naturam ; quibusdam
+<pb n="7.681"/>
+<lb/>vero etiric medium quiddam inter ambo esse ac neutuum
+<lb/>visa est senectus, ut nec secundum maturam, nec
+<lb/>praeter naturam ipsam appellent, sed tertiam in ipsa nacti
+<lb/>suerint dictionem, qua ipsam non natura esse dicant. Has
+<lb/>tamen controversias dirimere alterius fuerit temporis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">At vero senectutis mercor prohiberiprosccto-
+<lb/>non potest, succurri tamen, ut quamplurimum prorogetur,
+<lb/>potest; et haec est illa medicinae pars, quae gero-.
+<lb/>comice i. e.. fenum tutrix, dicitur ; cujus sicopus est, ut rei
+<lb/>natura indicat, .obsistere prolubereque, prout fieri potest, ne
+<lb/>cordis corpus adeo exiccetur, ut. tandem aliquando agere
+<lb/>desistat. Natu is est vitae finis, cordis ab actione cessatio.;
+<lb/>quamdiu enim cor secundum propriam sui ipsius actionem
+<lb/>movetur, animal interire non potest. Quare si fieri possit,
+<lb/>.ut -ipsius corporis cordis aut certe j acoris substantia reddatur
+<lb/>humidior, potest et aptum etiam senium cohiberi; si autem
+<lb/>nemo est, qui jecur et cor se ipsis humidiorapossit efficere,
+<pb n="7.682"/>
+<lb/>sed temporis processu necessario sicciora evadunt non ipsa
+<lb/>solum viscera, sed arteriae etiam- et venae, senium certe
+<lb/>prohiberi non potest; at ejus celeritas coerceri potest ; -quamobrem
+<lb/>videtur Humerus; si quid aliud, hoc certe etiam
+<lb/>vaticinans de senibus cecinisse;</p>
+<p rend="indent">--- — Ut lavit, atque comedit,
+<lb/>Mollibus in stratis dormire, haec vita senilis.</p>
+<p>Nam ex iis quae humectant, est tum lavacrum, tum molle
+<lb/>cubile, tum somnus, tum vero in primis ac praecipue ipsum
+<lb/>alimentum; nam hoc ipsum solum eorum quae aluntur
+<lb/>corporum pars efficitur, quum eorum substantiis assimiletur;
+<lb/>caetera vero singula, vel quod prohibeant similares partes
+<lb/>vehementius exiccari, - vel quod humiditatem in intermediis
+<lb/>eurum capacitatibus contentam irrigent ac adaugeant, - humectandi
+<lb/>tum appellationem tum facultatem adepta. sunt.
+<lb/>Sic vero, ut dictum nunc est, quandoque possunt jecur et.
+<lb/>cor humectari (adaucta, quaero ipsis dispersa est, humiditate,
+<lb/>-quam et in extenuatis juvenum corporibus saepius
+<pb n="7.683"/>
+<lb/>quidem in toto corpore manifeste, nonnunquam vero in
+<lb/>corde etiam et jecore absumi contingit. Quod vero horum
+<lb/>viscerum alterum arteriarum pulsuumque fit origo., alterum
+<lb/>venarum ac nutritionis, in alio ostensum est opere,
+<lb/>in quo.de Hippocrate et Platonis decretis tradidimus. Haec
+<lb/>igitur viscera, antequam vehemens in toto animali suerit sanguinis
+<lb/>penuria, moderatu non deficiunt alimento ; jecur
+<lb/>quidem, quod universus sanguis lune principium habeat ;
+<lb/>cor vero ob attractionis vehementiam. Equidem omnes
+<lb/>animalis partes proprium alimentum ad se ipsas trahunt,
+<lb/>sed aequali attractionis robore non utuntur omnes ; ideoque
+<lb/>in sanguinis indigentia non aeque omnes alimento destituuntur.
+<lb/>Verum cor quum vehementissimam habeat attrahendi
+<lb/>actionem, alimento nunquam ludigebit, nisi. prius omnes
+<lb/>animalis partes ad extremam devenerint inopiam. .Minime
+<lb/>igilur suspicandum est, quum ex diuturno morbo gracile
+<lb/>redditum fuerit corpus, ipsum quoque cor ac jecur, .pro
+<lb/>aliarum amnum partium proportione, gracilia .existere.
+<pb n="7.684"/>
+<lb/>Hoc, fi tibi libuerit, in aliis etiam animalibus intueri p oteris.
+<lb/>Nam quotiescunque horum aliquod fame prius confectum
+<lb/>dissecare volueris, caeteras quidem omnes ipsius
+<lb/>partes graciles ac siccas invenies, jecur autem et cor prope
+<lb/>secundum naturam esse. Moriuntur enim (post inedias] non
+<lb/>tam ob alimenti corporum fetidorum, quam ob spiritus
+<lb/>inopiam, qui mactantur, proptereaque omnes eorum partes
+<lb/>molles ac humidae peraeque ac viventium sunt ; tota siquidem
+<lb/>in ipsis contenta humiditas, a qua primum ipsae nutriuntur,
+<lb/>integra servatur. Sed qui fame intereunt, propius
+<lb/>quidem ad verum marcorem accedunt, ac ob id eos
+<lb/>marcuisse dicemus, quum exquisite loquendi nondum ulla
+<lb/>sit occasio ; re tamen vera non marcuerunt, vel saltem non
+<lb/>omnes corporis partes. At ubi verus est marcor, omnes
+<lb/>aequaliter partes marcescunt, propterea quod etiam principis;
+<lb/>et hoc in aetatibus quidem senium est, infestus autum
+<lb/>praeter naturam febris marcida. Est praeterea alia
+<lb/>quaedam affectio proportione refpondens senectuti, quam
+<pb n="7.685"/>
+<lb/>nihilo deterius sit, ex morbo tensum appellere, non mehercle,
+<lb/>ut Philippus, qui eam marcidam febrem nuncupat.
+<lb/>Non enim ejusmodi affectio febris esse potest, in qua frigidius,
+<lb/>quam natura postulat, cor factum sit. Jam quod
+<lb/>tale obtineat temperamentum, indicium non minimum est
+<lb/>pulsus parvus rarusque redditus, ut et ipsis Peribit Philippus.
+<lb/>Ejusmodi vero pulsum ob frigiditatem fieri in libris de pussilius
+<lb/>ostendimus. Quin et respiratio iis, qui ita affecti
+<lb/>sunt, pulsui similis visitur, et parva nimirum simul et
+<lb/>tarda, ac per longa intervalla, quae et ipsis partium ad cof
+<lb/>attinentium frigiditatem indicat, ut -etiam in libris defpirandi
+<lb/>difficultate a nobis ostensum est. Nec vero calidum hi
+<lb/>expirant, quod et 1pfum inseparabile est a principio restigerato;
+<lb/>sicuti contrariam a calefacto. Unde igitur, quod
+<lb/>febricitant? nam ipsorum thorax neque circa pectus, neque ,
+<lb/>almi, vel ad alas et ad costarum gibba, vel etiam ad spinam
+<lb/>calidus esu Sed et haec Philippus concedit; ait tamen eorum
+<lb/>pulsum sobria signum habere, duritiem videlicet lunuens,
+<pb n="7.686"/>
+<lb/>quam febrium omnium inseparabile signum statuit
+<lb/>Archigenes. Verum si pulsum re ver. durum intelligit,
+<lb/>omnibus marcescentibus is certe inest ob arteriarum ficcitatem
+<lb/>, non tamen febrium- est signum. At si eum intelligat,
+<lb/>quem Archigenes durum vocavit, nomen tantummodo proferens,
+<lb/>nullam tamen rem habens, cui nomen hoc attribueret.,
+<lb/>de hoc quoque plura a nobis in libris de pulsibus
+<lb/>scripta sunt. Senium igitur ex morbo, quoniam frigiditas
+<lb/>una cum siccitate est, febris non est. Alia vero [species,
+<lb/>quam marcorem retorridum Philippus nominat, vere est
+<lb/>mercor, quemadmodum etiam et qui syncopofus appellatur.
+<lb/>Estque his ambobus pulsus frequens et parvus ; specialiter
+<lb/>vero iis, qui retorride affecti sunt marcore, accidit, ut
+<lb/>dum ofcitant, spiritum efflent calidunf, ut jure ipsimi aestui
+<lb/>assimilare possis. Oritur autem, ut diximus, retorridus hic
+<lb/>mercor ex caliditate ardentissimisque febribus, ac praefertim
+<lb/>in sicciore corporis habitui Syncope fue autem fit, ubi
+<lb/>qui syncope. suerint correpti, vehementiam quidem periculi
+<pb n="7.687"/>
+<lb/>in .praesentia evitarint; relictum tamen deinceps ipsis fuerit
+<lb/>aliquid syncopofae .affectionis. At vero frigidus mercor,
+<lb/>qui senectutis affectionem similem obtinet, fit ex permuta-.
+<lb/>silone febrium, quae tum per aquae frigidae potionem, tum
+<lb/>per ea auxilia, quae refrigerandi gratia hypochondriis ac
+<lb/>thoraci imponi solent, suerint secus ac oportet refrigeratae.
+<lb/>Illud autem, secus ac oportet, duplex est, nimirum quando
+<lb/>quis vel intemperantius, vel intempestivius refrigerantibus
+<lb/>usus suerit. Possit etiam quandoque utrisque sus de causis
+<lb/>affectus hic constitui.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p>Quod vero mercor, quum vere mercor
+<lb/>est, curari non possit, dictum quidem etiam superius est;
+<lb/>quum de senectute scriberemus ; dicetur autem et in praesenti.
+<lb/>- Tale quid contingit arbitrantibus marcorem se sana-tutos
+<lb/>, quale iis qui marcidarum spinae vertebrarum in anteriorem
+<lb/>partem decessionem emundum suscipiunt, Ex qui-.
+<lb/>bus enim utrique in dignoscendis affectibus decepti sunt, ex
+<lb/>his putarunt se rectissime aliquid effecisse; etenim quosdam
+<pb n="7.688"/>
+<lb/>extenuatos curarunt; eorum vero, qui marcuerunt, nullos.
+<lb/>At quum sic extenuatorum corporum. duplex sit affectio, de
+<lb/>utraque nobis separatim agendum est. Igitur altera extenua- torum
+<lb/>affectio oritur ; quando tum ipse solidorum corporum
+<lb/>humor; quem proprium ipsis esse nutrimentum diximus,
+<lb/>periit, tum tenerae carnes. colliquatae sunt; altera vero cori.
+<lb/>pora solida attingit, quae sane et prima et similaria appestamus.
+<lb/>Haec ipsa est, quae sanari non potest, quemadmodum
+<lb/>fiane nec ipsimi senium ; altera vero periculofa quidem
+<lb/>est, at non protius incurabilis; habetquecum caeteris aliis
+<lb/>affectionibus hoc commune, ut contraria affectui remedia
+<lb/>exposcat; non aeque tamen, ac pleraeque aliarum, est tuta.
+<lb/>Nam tres has affectiones humectare oportet, hocque illis ob
+<lb/>communem sicritatem est commune; .una vero, quam tenectuti-
+<lb/>assimilamus, calefactionem exposcit g sicuti et- una,
+<lb/>quam retorridum marcorem vocamus, refrigerationem;
+<lb/>commixtam vero quodammodo. curationem requirit synco- r
+<lb/>potus. marcor, non qui jam factus sit, hujus enim semper
+<pb n="7.689"/>
+<lb/>oportet meminisse, sed qui adhuc fiat; quum humiditas fo-.
+<lb/>lidis partibus congenita absumitur. Hi quidem sunt cuiationis
+<lb/>scopi. Demceps vero confiderandum est, quomodo
+<lb/>tum a quovis inveniendae tum adhibendae ac usurpandae
+<lb/>sint remediorum materiae. Praestantius igitur exisset Philippus,
+<lb/>si non solum quaecunque m primo de marcore libro
+<lb/>de morbi istius generatione et de mus differentia dignotioneque
+<lb/>ac transmutatione tradidit, scripsisset, sed aliquid etiam
+<lb/>de curatione; sed hanc, ut videtur, scribere non potuit. Nam
+<lb/>quum ego multis jam annis secundum: de marcore librum
+<lb/>perquifivissem, nec ipse unquam inveni, nec in quempiam
+<lb/>alium incili, qui se illum legisse assereret. . In primo vero,
+<lb/>quem nonuulli, propterea quod secundus non extet, non
+<lb/>primum, sed simpliciter de marcore inscribunt, de balnei
+<lb/>usu meminit ; non eos tamen admittit, qui hoc utuntur auxilio,
+<lb/>quod ab ipso laedi marcescentes opinetur. Quia vero
+<lb/>obiter ac extra institutum hujus remedii meminit, idcirco
+<lb/>de eo neque diffuse pertractavit neque accurate, ut solet,
+<pb n="7.690"/>
+<lb/>contemplatus esu Quanquam remedium .huc manifeste confpicitur
+<lb/>exiccatos humectare, ut facile. intueri possumus in
+<lb/>iis, .qui vel iter fecerunt per felem aestivum, Vel quocumque
+<lb/>alio modo exercitati vel exusti fuerunt; hos enim omnes,
+<lb/>ac. praeterea surculosas, humectet ac siti liberat. Quin
+<lb/>et quoscunque alios, qui quomodocunque.vel a vigiliis, vel
+<lb/>a cuiis, vel a venere, vel a cibis medicamentisve ericcantibus,
+<lb/>vel etiam ab. ira exiccati suerint, .tum madefacere tum
+<lb/>reficere conspicitur. Sed mihi ridetur Philippus balneum
+<lb/>in iis .improbasse, qui jam vere marcuere, quos nec aliud
+<lb/>quicquam sanarer; .ut bifariam ego ab ejus sententia disicedam,
+<lb/>tum quia nonnullos ex iis, qui vere marcuerunt, sitneri
+<lb/>posse existimat; tum etiam, quia balneum improbati
+<lb/>Evidentem enim facultatis ipsius experientiam capere licet
+<lb/>in iis ipsis, qui nondum insanabili laborant marcore, quem
+<lb/>nec fortasse marcorem, ubi accurate loqui velis, nomines.
+<lb/>At nobis nulla de nominibus cura est, ubi res clariori ora-.
+<lb/>tione possumus interpretari.
+</p>
+<pb n="7.691"/>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Quum enim tres sint saluium primae ac
+<lb/>generalissimae differentiae, diarias in praesenti excipimus;
+<lb/>sermo vero nobis de febribus tum ex humoribus accensis
+<lb/>tum hecticis habendus est. Itaque febrium, quae ex putrefcentibus
+<lb/>humoribus accenduntur, post humorum coneocilionem
+<lb/>balneum remedium est. Hecticis vero solis exiflentibus
+<lb/>citra ullam alterius febris implicationem omne
+<lb/>tempus ad lavacrum idoneum est. Si vero implicentur alicui
+<lb/>febrium ex humoribus accensarum, tunc est idoneum,
+<lb/>quum jam humores fuerint concocti. Eadem quoque propemodum
+<lb/>esse frigidae potionis exhibendae tempora cenfendum
+<lb/>est. Verum hujus frustratio in magnam fit laesionem;
+<lb/>baInei vero usus in praedictis febribus periculo vacat, nisi
+<lb/>forte virium adesse imbecillitatem suspiceris. Atque nos
+<lb/>plerosque quibus marcor advertebatur imminere, lus praesidiis
+<lb/>curavimus. Dictum autem est in primo de febrium
+<lb/>differentiis libro, diariarum febrium quasdam cum hecticanun
+<lb/>genere communicare, primoque die non posse accurate
+<pb n="7.692"/>
+<lb/>cognosci, test versu fecundo, vel omnino inpertio,,.
+<lb/>Ac quum primum cognitae. suerint;. aqua frigida danda est,
+<lb/>nam eo- tempore maxime citra periculum est, .quum et vires
+<lb/>validae sint, et sanguis in corpore copiosus contineatur;
+<lb/>riam tubi febres diuturnae .fiunt, tunc vires redduntur imbeciliae
+<lb/>et sanguis,fit paucus. . Duplici igitur laesione plerumque
+<lb/>laeduntur; altera .quidem, quia ex aquae potione
+<lb/>pars aliqua feritur ac refrigeratur.;. altera vero, quoniam
+<lb/>qui eam ipsis exhibent, nisi modum mensuramque debitam
+<lb/>tonuerint, non fotum esiam quampiam partem refrigerabunt,
+<lb/>sed et eam ipsimi, quae principiunr generationis febris oblinet.
+<lb/>Quod si etiam cor largius refrigeraris, .si innatam
+<lb/>adhuc tuam humiditatem servet, concident vires : sic .siccrus
+<lb/>jam existat, affectio senectuti similis subsequetur. Sed
+<lb/>et quo tempore prima hecticarunr febrium inditia manifesta
+<lb/>suerint, eodem etiam utiliter foris adhibentur refrigerantia
+<lb/>medicamenta, si imponantur super ipsum, ut quispiam dicat,
+<pb n="7.693"/>
+<lb/>... febris focum,-. de quo paulo post accurate definiam. Nunc
+<lb/>ad balneum redeo, quod ad omnes squalentes febres utile
+<lb/>est, quando nihil aliud ipsis implicatum prohibeat. Quandoque
+<lb/>vero utilius etiam est, quam sint refrigerantia medicamenta,
+<lb/>quum squallor vel in toto corpore exuperavit,
+<lb/>vel in foco. Focum febris dico eum animalis partem, quae
+<lb/>prima fuis ipsius solidis partibus immodice suerit calefactu.
+<lb/>Primum ergo cor calidius quam deceatredditum betticam
+<lb/>infert febrem. Deluceps vero.jecur, non per se ipsimi quidem,
+<lb/>quemadmodum cor, sed quia sucum in consensum
+<lb/>illud trahat, quando non ipse cordis affectus rationem causae
+<lb/>obtinebit, sed qui sunt corporum cordi virinomm. Post
+<lb/>haec est venter. Ab hoc quaecunque possunt tecum cor
+<lb/>con calefacere. Quantum igitur ad viciniam attinet, pulmo
+<lb/>quidem omnium maxime cor coricalefaciendo lrecticam siccarnque
+<lb/>susurro febrmn, quam marcor consequitur, debuerat;
+<lb/>hoc tamen fieri non conspicitur; nec .facile unquam
+<pb n="7.694"/>
+<lb/>affectio naulum similem suscipiet, tum quia hoc riscus humidum
+<lb/>est, tum etiam quia respiiatione refrigeratur. Plerumque
+<lb/>igitur hectica febris in reliquis visceribus cum bisiclo
+<lb/>humore solet consistere, ubi is in patientis loci ventriculum
+<lb/>imbibitus suerit; ob id etiam Philippus marcescentium
+<lb/>febrium plurimis eryfipclatosam affectionem genitam esse
+<lb/>in ventriculo arbitratur. Quod si in ventriculo, neces-.
+<lb/>finio etiam suspicandum est eundem in jecore constitui affectionem,
+<lb/>a quibus stilis visceribus affectis credere videtur
+<lb/>Philippus marcorem generari. At nos non raro vidimus
+<lb/>quosdam membris his illaesis, in corde marcuisse, cujus quidem
+<lb/>cornis haud scio cur oblitus suerit Philippus, quum</p>
+<p rend="hanging">- nec ex jecore aut ventriculo solis affectis ostendere potuerit,
+<lb/>quomodo febris marcida suboriatur, nisi affectus cordi distribuatur
+<lb/>ac communicetur. . Neque vero- m hoc solo videtur
+<lb/>Philippus aberrare, sed etiam dum non judicat, ex aliis
+<lb/>etiam partibus febrem marcidam constitui posse. Nam sive
+<lb/>erysipelatosa sula affectio. in ventriculo exorta ejusmodi febrem
+<pb n="7.695"/>
+<lb/>inducat, sive etiam citra hanc affectionem aliquando
+<lb/>corpus ipsum solum accensum sit sine biliosa humiditate,
+<lb/>potest etiam in alia quapiam parte similis fieri affectio; quae
+<lb/>pars si talis sit, ut fiscum concalefaciat etiam cor, necesse
+<lb/>omnino est, ut ejus affectio febrem generet, quae omnino
+<lb/>temporis processu lrectica fiet, ac tandem nisi solvatur, marcorem
+<lb/>inducet Atque alias, quod prius dixi, de nominibus
+<lb/>sollicitum esse non convenit, .sed ut omnes affectiones,
+<lb/>quae corpus exiccant,. tum dignoscamus tum recte etiam
+<lb/>curemus; quarum una est etiam cum igneo calore; quam
+<lb/>farre balueum perpetuo juvat, ubi ipsa per se sola consisterisi
+<lb/>Nonnunquam enim, ut diximus, cum erysipelatosa uf- fectione
+<lb/>oritur febris lrectica marcidaque, quae prius cibo
+<lb/>et potu et topicis extrinsecus admovendis refrigeranda est;
+<lb/>sed ubi eadem febris per se nulli alteri morbo implicata sueiit
+<lb/>, balueum requirit, sicut omnes aliae siccitates, sive calidae,
+<lb/>sive frigidae extiterint. Etenim hoc mirabile habent
+<pb n="7.696"/>
+<lb/>baluca, quod et calidas et frigidas siccitates juvant; quemadmodurn
+<lb/>et hoc, quod non sitientibus sitim accendant, et
+<lb/>sitientibus eandem tollunt. Quod autem haec esuriat balneum;
+<lb/>clare etiam nulla adhibita ratione perspicitur. Gernunus
+<lb/>enim, ut superius etiam dictum fuit, eos, quia sule
+<lb/>et ex itinere calefiunt et exsiccantur, ubi loti suerint, admirabili
+<lb/>quodam modo tum humectari tum refrigerari ; nihiloque
+<lb/>his minus. illos celerrime calefieri,. qui ob vehemens
+<lb/>frigus calefieri desiderant. Jam vero qui en itinere et sule
+<lb/>sitiunt, non amplius ubi te laverint, sitiunt; et qui siti vaeant,
+<lb/>loti sitiunt; verum hos multoties, illos semel levasse
+<lb/>oportet, Haec quidem ita fieri conspicimus, causas vero
+<lb/>alibi explicamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Ad propositum autem rursus eundum.
+<lb/>Omnibus sebribus hecticis, . quae hoc unum duntaxat habeant,
+<lb/>ut hecticae sint, balueum auxiliatur. Si vero vel
+<lb/>erysipelas, velphlegmone, vel putrescentes adhucque luconcocti
+<pb n="7.697"/>
+<lb/>humores corpus obsideant, ob haec, non ob ipsum
+<lb/>febrem hecticam, a balueo laedi aegrotum continget. Ipsa
+<lb/>enim quatenus febris est, semper tum a frigida potione extinguitur,
+<lb/>tum a balucis juvatur; ob implicitas vero ipsi
+<lb/>febri affectiones aegrotus laeditur. Atque haec quidem
+<lb/>efficacissima remedia sunt, quae marcoris generationem prosubeunt;
+<lb/>eaque admodum audacter in febribus hecticis assumenda
+<lb/>sunt. Si autem eryfipelatosa quaedam suerit affectio,
+<lb/>a balneo quidem prorsus abstinendum est, sed aqua frigida
+<lb/>dum morbi rigor consistit, est utendum agonistico; .ita enim
+<lb/>nominere solent, quando ea et affatim et frigidissima exhibetur.
+<lb/>In prinripio autem danda non est, nisi nos .cogat
+<lb/>aeger, qui et frigidae potioni sit assuetus, et sitim tolerare
+<lb/>haud possit: verum imponenda extrinsecus sunt, quaerefrigerent;
+<lb/>quae si nihil profuerint, cogendi etiam sunt acgri,
+<lb/>ut ea intro assumant. Maxime vero eis competunt
+<lb/>humidae ac novellae lactucae, sed in recenti frigida abluendae
+<lb/>prius sunt, atque ita edendae. Si quando vero abs te
+<pb n="7.698"/>
+<lb/>-eger petierit, ut cibi fastidium consoleris, acetum aquae
+<lb/>frigidae miscebis, ac ut in eo lactucas tingat, concedes; sit
+<lb/>autem acetum illud omnis prorsus vinctae qualitatis expers.
+<lb/>Quinetlam extrinsecus . ejusdem lactucae succum, imo et
+<lb/>sempervivi int.saique ac quaecunque alia refrigerantia,
+<lb/>imponere expedit. Optimus etiam est uvarum immaturaruur
+<lb/>saccus, quo potissimum pro tempore utimur. Expressus.
+<lb/>enim earum humor una cum . portulacis in pilam
+<lb/>iniicitur; postea contusus in vas exprimitur, vasque illud
+<lb/>in. srigidam aquam immergitur, quae si nivis etiam aliquid
+<lb/>habuerit, praestantior reddetur. Modicum autem albae
+<lb/>farinae, ubi eo uti volumus, immiscemus. . Deinde in duplicatum
+<lb/>linteolum infundentes, extrinsecus ipsum super
+<lb/>hypochondria extendimus; nec illic diu morari sinimus,
+<lb/>sed ubi teprdmn evuferit, illud abjicimus, ac alterum simili
+<lb/>modo imponimus.; et hoc continuo agimus, quousque aeger
+<lb/>se in-profundo refrigerari ac siti liberari persentiat. .Miscemus
+<lb/>etiam aliquando oleum omphacinum vel rosaceum, ubi
+<lb/>praecipue nonnihil plllegmonodes in hypochondriis conititerit.
+<pb n="7.699"/>
+<lb/>Hoc igitur modo erysipelatodes affectiones refugerare
+<lb/>oportet. Nosse vero decet nunquam posse febrem exquisite
+<lb/>Lecticam esse, ubi ejusmodi quaepiam affectio adsuerit.
+<lb/>Exquisite autem hectica ea est, quae nullum particusaris
+<lb/>accessionis aut principium, aut incrementum, aut vigoremj
+<lb/>aut denique. declinationem habeat. Jam vero in
+<lb/>opere de febrium differentiis diximus tum multa aliatum
+<lb/>quod a sido cibo hecticae febres effervescunt, veluti calx inspersit
+<lb/>aqua; quo iircremento ablato, aequales semper permanent.
+<lb/>Si quando tamen brevissimum aliquod inerernentum
+<lb/>vel invasio intercedit, considerere oportet, an aliqua
+<lb/>adsit humorum putredo, au vero locus primus affectus alius .
+<lb/>sit a corde, qui et ipsis nec simplicem nec.hecticam affectio- .
+<lb/>nem habeat, sed vel phlegmonodem quampiam, vel erysipelatodem.
+<lb/>Atque hoc modo propria curatio affectionibus
+<lb/>adaptanda esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Marcorem .igitur returridmn, qui ex ardentibus
+<lb/>febribus generationem suscipit, resrigerantibus prohibebimus
+<pb n="7.700"/>
+<lb/>remediis, tum extrinsecus impositis tum intro
+<lb/>in corpus assumptis. Senium vero quod ex morbo effectum
+<lb/>fuerit, si illud quidem absolute factum fuerit, curari non
+<lb/>potest; si autem nondum absolutum sit, sed prope accedat, .
+<lb/>ut eiusmodi fiat, unum habet curationis scopum, quem recreationem
+<lb/>et resectionem appellamus, ex multis particularibus
+<lb/>actionibus, quae tum multis tum multa etiam egent
+<lb/>cautione; de quibus fi nunc loqui vellem, longissima mihi
+<lb/>fieret oratio ; abunde tamen in libris de medendi methodo
+<lb/>dictum fuit Nunc autem satis erit, fi hoc dixerimus, quod
+<lb/>exiccata corpora solida alimentum curet. ostendimus
+<lb/>autem in commentariis de facultatibus naturalibus, quod
+<lb/>non se ipsum cibus ad omnes corporis partes deseri, sed ab
+<lb/>ipsis, quae nutritione egeant, attrahitur. At vero in utarcoribus
+<lb/>hae ipsae invalidae sunt, ac prae siccitate ad attrafiendum
+<lb/>insumae; quod si frigiditas quoque adjungatur, parunr
+<lb/>jam a mortuis absunt. Oportet igitur, ut alimentum
+<lb/>attractu facile sit, ut quod attrahentis corporis robori deest,
+<pb n="7.701"/>
+<lb/>id ex-materiae aptitudine rependatur. Attractu autem faeste
+<lb/>est id alimentum, quod. tum . tenuium sit partium tum
+<lb/>natula calidum; verum hoc fere non nutrit; num ostensum
+<lb/>est alimentum massum xiscosnmque esse. .debere, ut stabile sit
+<lb/>dissieulterque transpiret, et nutriendis corporibus prompte
+<lb/>assimiletur. Quando autem hi scopi inter te pugnant, fieri
+<lb/>nequit, ut alimenti. exacte utraque servantis copia suppetat.
+<lb/>Danda tamen est opera, ut quod mediocriter ambo praestare
+<lb/>possit, inveniamus. Missi porro nihil. ad haec omnia lacte
+<lb/>videtur esse praestantius, praeripue quidem si quis mulishrem
+<lb/>mammam ore apprehendens id ipsum mulgere toleret,.
+<lb/>quemadmodum sane Euryphon et Herodicus in phthifiris
+<lb/>praecipiunt; sic minus, at saltem asininum adhuc calidum
+<lb/>assumat, quod brevissimo temporis spatio ambienti aeri fuerit
+<lb/>expositum Hic igitur alimentorum scapus non iis sulum
+<lb/>, qui similem senectuti affectionem, vel etiam marcorem
+<lb/>syncopalem habent, conseri:, verum etiam iis, quos marcor
+<lb/>a Philippo retorridus appellatus occupati In iis famen calittorum
+<pb n="7.702"/>
+<lb/>alimentorum materiae adhibendae mor funi, veluti
+<lb/>in senio, sed frigidorum; . mediae autem inter has sint, quae
+<lb/>syncopalibus exhibentur. Itaque: lac ct ptisana et halica
+<lb/>in his tribus affectionibus competunt. Halica tamen ad sucitiorem
+<lb/>distributionem . ex. aceto condiatur ; quemadmodum
+<lb/>ptisana. . Mel vero frigidis. quidem affectionibus utilissimum
+<lb/>est, calidis autem est maxime .noxium. iti Ita ergoefe.habet
+<lb/>quoque mel in iis, qui obnoxii sunt, .ut a.jam dictis marc
+<lb/>curibus corripiantur. Nam in returridis. inimicissimum esit;
+<lb/>iis autem quibus senum affectio imminet, utilissimum; at in
+<lb/>syncopalibus,. nisi ventriculus prohibuerit, concoquendum
+<lb/>id est, ac tum per se solum, tum cum alus eduliis exhibeo- .
+<lb/>dum. Balnei vero usus opportunus tum ad .alia antedicta,
+<lb/>tum ad tibi distributiones peragendas praestantissimum est
+<lb/>remedium.. Verum illud cibo quidem jam concoctu assetmendum
+<lb/>erit, .non tamen post inediam longiorem. . Nam si
+<lb/>ei, qui nuper .comederit, balneum adhibeatur, . crudis cor-.
+<lb/>pus ac incommotis .humoribus replebit; si vero illi,- qui
+<pb n="7.703"/>
+<lb/>diutius a cibo abstinuerit, vires diminuit. In caeleris vero
+<lb/>corporis constitutionibus, ac praesertim in ea, quae nuper
+<lb/>dicta est, completa jam, ut dictum est, concoctione lavere
+<lb/>oportet Vini praeterea usus, sicuti in frigido mercare
+<lb/>magnopere juvat, in retorride fugiendus; medio autem
+<lb/>quodam modo se habet in syncopali marcore; propterea
+<lb/>quod affectio haec media sit et mixta, partim quidem aliquid
+<lb/>frigiditatis obtinens, partim vero etiam adhuc aliquid
+<lb/>ipsius febris servans. Quum autem hujusmodi affectio, qua
+<lb/>ad contraria per partes vicissim permutatur, nonnunquam
+<lb/>quidem. refrigerationem pulsus que privationem, et, ut
+<lb/>simpliciter dicam, omnia, quae ipsius syncopae propria .
+<lb/>sunt, invehat, nonnunquam autem caliditatem pulfusque
+<lb/>marcoris retorridi pulsibus similes ; ite etiam curationem
+<lb/>pro exuperantium natura immutari oportet. Atque in syncopali
+<lb/>tum vinum ac alimenta temperata offeremus, tum
+<lb/>corpus universum conftipabimus densabimusque, . in retor- .
+<lb/>risio contraria agemus. Singulorum vero omnium usum
+<pb n="7.704"/>
+<lb/>opportunum ille probe inveniet; qui in libris de medendi
+<lb/>methodo suerit exercitatus: in enim libri non quibuscunque,
+<lb/>sed iis, qui aliquem in arte habitum habent, a nobis scripti
+<lb/>tunc</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

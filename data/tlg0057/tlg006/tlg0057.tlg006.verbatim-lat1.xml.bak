@@ -1,0 +1,1667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De constitutione artis medicae ad Patrophilum</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg006.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="224" to="304">224-304</biblScope>
+              <date>1821</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x01">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="34" to="46">34-46</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x01">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="170" to="195">170-195</biblScope>
+              <date>1638</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x02">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg0057.tlg006.verbatim-lat1">
+<pb n="1.224"/>
+<div type="textpart" subtype="chapter" n="0">
+<pb n="1.224"/>
+  <head>GALENI DE CONSTITVTIONE AR
+    <lb/>TIS MEDICAE AD PATROPHILUM
+    <lb/>LIBER.</head>
+
+<p rend="indent">Quum mihi videaris, Patrophile, divino quodam affectu
+<lb/>affici, qui omnia cum demonstratione et methodi
+<lb/>cupis addiscere; tuo obsequi desiderio decrevi, tibique
+<lb/>eorum, quos audisti, aut de quibus dubitasti, sermonum
+<lb/>commentarios perscribere. Quomodo vero id certamen
+<lb/>non subirem, quum te videam principium quoddam
+<lb/>viae ad veritatem ducentis invenisse, solum autem ipsam
+<lb/>propter sublimitatem et longitudinem et asperitatem
+<lb/>consequi non posse? Multos enim conspicio haud
+<pb n="1.225"/>
+<lb/>quidem cum adhortatione eam adire, sed et negligere,
+<lb/>et aversari; te vero illis oppositum habere, aversantibus
+<lb/>enim eam ad hunc usque diem omnibus, et ad
+<lb/>alias fete vias abducentibus, te autem ipsam veritatem
+<lb/>tanquam in edito loco domicilium habere speculantem,
+<lb/>pulchritudinis ipsius amatorem acerrimum esse, neque
+<lb/>hanc viam abhorrere, neque soli tibi viae aditum committere.
+<lb/>At in praesenti veram artis medicae constitutionem
+<lb/>invenire affectans parturiendi doloribus animo
+<lb/>divexatis. Ut autem ego coniicio, paulo post majori
+<lb/>desiderio impleberis, si praefulgentem veritatis lucem
+<lb/>fueris intuitus, quum alteram viam ea, quam nunc tibi
+<lb/>investigas, praestantiorem nullam inveneris. Te namque
+<lb/>animadverto ad veritatis inventionem divinitus dispositum,
+<lb/>quacunque in materia mentem adhibere volueris.
+<lb/>Itaque quum asseris, te, scientiae medicae addiscendae
+<lb/>gratia, quam plurimis aures tuas adhibuisse, neque,
+<lb/>unde cum demonstratione ac methodo auspicari
+<lb/>oporteat, ab aliquo audivisse, atque sane multo magis
+<pb n="1.226"/>
+<lb/>nullum convenisse, qui viam a principio ad finem usque
+<lb/>perducentem monstraverit, ego, quod desiderares,
+<lb/>id me demonstraturum pollicitus sum, si prius et hanc
+<lb/>rationem aliis in artibus exerceri sustinueris. Quum
+<lb/>autem neque pollicitationem ullo modo abhorreas, neque
+<lb/>negligas, imo te libentius hoc quam illo modo
+<lb/>ad propositum venire proferas, si modo me tibi eandem
+<lb/>methodum in omnibus artibus demonstraturum profiterer.
+<lb/>Quod quum ego etiamnum pollicerer, atque
+<lb/>in prima proposita speculatione demonstrarem, te in
+<lb/>speculationis veritate oblectari intuebar. Ac proinde
+<lb/>quum multas simili ratione perpenderem, praesertimque
+<lb/>ex iis effectivas (quandoquidem et hujus generis
+<lb/>est ea, quae circa sanitatem tuendam versatur) tum te
+<lb/>ad hanc, quam ab initio impetu aggressus fueras, transtulisti.
+<lb/>Ac ubi hic quoque animadvertisti unam et eandem
+<lb/>methodum esse, ne, quae hac de re pronunciata
+<lb/>sunt, e memoria laberentur, quosdam de ipsis commentarios
+<lb/>conscribere efflagitasti. Ego vero tuo huic veritatis
+<pb n="1.227"/>
+<lb/>studio cum oblectatione cedens opera duo composui,
+<lb/>alterum quidem, in quo operae pretium esse demonstro
+<lb/>sese prius eum exercuisse, qui artem assequi.
+<lb/>desiderat, quod prisci philosophi asserunt, cuiuscunque
+<lb/>artis constitutionem a finis notione oboriri; hoc autem
+<lb/>ob magnitudinem in duos libros divisum est: alterum
+<lb/>autem ac secundum est, quod nunc incipimus, demonstrat
+<lb/>eandem ac unam methodum, quemadmodum et
+<lb/>caeteras omnes artes, ita et Medicinam constituisse. Atque
+<lb/>jam oratio exordienda est</p>
+<div type="textpart" subtype="chapter" n="1">
+<p rend="indent">Quum artium nonnullae quidem in sola rerum
+<lb/>quas considerant contemplatione finem habeant, ut
+<lb/>arithmetica, astrologia, ac naturalis scientia; quaedam
+<lb/>vero nonnullas edant actiones, ut saltatoria et
+<lb/>praeconum ars, sed suum quod prodant opus nullum
+<lb/>habeant, ubi agere desierint; quaedam vero e contrario
+<lb/>sua opificia prodant, ut aedificatoria, et ars fabrilis;
+<lb/>quaedam autem nihil ipsae conficiant, opus tamen
+<pb n="1.228"/>
+<lb/>ipsis sit ac studium et venandi et capiendi aliquid,
+<lb/>quemadmodum piscatoria, et quae canibus fit venatoria,
+<lb/>ac, ut summatim dicam, omnis venatoria. Atque queat
+<lb/>propositum tibi sit artent medicam methodo constituere,
+<lb/>id primum, ex quo genere ipsa fit artium, considerandum,
+<lb/>num theoreticarum una quaedam sit, an practicarum,
+<lb/>aut effectiva aliqua, vel acquisitiva. Id autem
+<lb/>haud arduam inquisitionem aut inventionem habet.
+<lb/>Opus quippe est revocare in memoriam, quamobrem
+<lb/>hujuscemodi artem assequi universe concupieris; atque id
+<lb/>omnium primum ex te sciscitabar, quum nobis initium
+<lb/>huiusce exercitationis fieret, mihique respondisti, velle
+<lb/>te homines, qui contra naturam corpore fete habent (si
+<lb/>tamen fieri etiam possit) ad naturalem statum restituere,
+<lb/>si vero fieri nequeat, saltem ad utrumque discernendum,
+<lb/>et qui sanabiles, et qui non, cognitionem aliquam
+<lb/>comparare. Quoniam autem principium dedisti sermoni,
+<lb/>asserui tibi me enunciare ex effectivis artibus eam
+<lb/>esse, quam constituere desideras, siquidem jam artis opus
+<pb n="1.229"/>
+<lb/>habes demonstrandum, ubi operari cessaveris. Sunt autem
+<lb/>profecto et aliae multae artes effectivae, aeraria, sutoria,
+<lb/>ars fabricandi naves, fabrilis, figulina, pictoria,
+<lb/>ac tot prope, quantus non alius numerus alterius generis,
+<lb/>effectivae artes apud homines sunt. Quam itaque in hujusmodi
+<lb/>artibus eo, qui ante hunc est, libro methodum
+<lb/>didicisti, ad eam jam te transferre tempus est, quam
+<lb/>constituere studes, quum principium hic huic sermoni
+<lb/>posueris, quod illis in omnibus statutum est, finis notionem,
+<lb/>quam unde comparaverimus, dicere jam tempestivum
+<lb/>est. Prima quidem nobis oboritur cognitio tum
+<lb/>nostrum ipsorum, tum caeterorum hominum sanitate
+<lb/>fruentium, secunda vero aegrotantium, unde nobis tum
+<lb/>bene valendi, tum artem sanitatis procuratricem constituendi
+<lb/>desiderium incessit. At quum sanitatem efficere
+<lb/>volumus, ex effectivarum artium genere aliqua fuerit
+<lb/>una, quam constituere desideramus. Quum autem duplices
+<lb/>sint, ut demonstratum est, effectivae artes, ea, quam
+<pb n="1.230"/>
+<lb/>quaerimus, ex rei factae emendatricibus ortum jam duxerit,
+<lb/>non ex rei haud ante existentis effectricibus. Enimvero
+<lb/>nonnullae artes ipsas res efficiunt, quemadmodum textoria
+<lb/>et sutoria; nonnullae vitiatas emendant ac corrigunt,
+<lb/>ut quae corrosas vestes ac dilaceratus calceos
+<lb/>confuunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+<p rend="indent">Monstratum autem est et in architectura ita
+<lb/>se habere. Sunt enim et ea ratione opera duplicia, tum
+<lb/>domus non existentis generatio, tum labesactatae domus
+<lb/>emendatio. Etenim ad utrasque operationes necessarium
+<lb/>esse opifici universas domus partes cognoscere proditam
+<lb/>est, quae substantia, quales conformatione, quantae
+<lb/>magnitudine, quot numero, et quomodo inter se conjunctae
+<lb/>sint. Quocirca et constituenti artem circa corpus
+<lb/>humanum versantem (quam in praetenti nobis concedant
+<lb/>de vocabulis concertantes Medicinam nominare) necessarium
+<lb/>fuerit unamquamque ejus simplicium partium cognoscere,
+<lb/>quam substantia, qualem conformatione, quantam
+<pb n="1.231"/>
+<lb/>magnitudine, quem praeterea ipsarum omnium numerum
+<lb/>ac mutuam compositionem. Quemadmodum igitur,
+<lb/>qui jam constructam domum, qualis ea sit, accurate
+<lb/>nosse vult, ex resolutione ac dissolutione ad ipsius
+<lb/>dignationem accedit, eodem modo nos ex anatome hominis
+<lb/>corpus cognoscimus. Nam dens quidem et natura,
+<lb/>ut qui primo domum fabricatus est, sic partes ex
+<lb/>usu ipsis exemplar generante praenotant: nos vero,
+<lb/>ut qui jam aedificatam domum scrutatur. Licet et nos
+<lb/>nisi (quoad fieri queat) similem Deo cognitionem contraxerimus,
+<lb/>facultas tamen haud nobis erit dignoscendi,
+<lb/>utrum omnia ob aliquem usum, an frustra quaedam facta
+<lb/>sint. Etenim haec ambo in opinionem cadere possunt,
+<lb/>an praeterea ob malum nonnulla procreata sint.
+<lb/>Atque etiam hinc cognitio optime constitutorum corporum
+<lb/>procedit. Sed de his quidem alias. Verum ex dissectione
+<lb/>ubi quae similaria corpora nominantur, quale
+<lb/>fit conformatione ipsorum quodque, et quantum magnitudine;
+<pb n="1.232"/>
+<lb/>et quot universa et quomodo componantur,
+<lb/>didicerimus, si compositarum scientiam habuerimus partium,
+<lb/>quas organicas appellamus: ejusmodi crus est,
+<lb/>ejusmodi manus, ejusmodi digitus, oculus, lingua, pulmo,
+<lb/>hepar, et quae sunt huiusce generis caeterae.
+<lb/>Quin et actiones duplices invenire licet partium: alias
+<lb/>quidem et simplicium et similarium; alias vere et compositarum
+<lb/>et organicarum. Licet itaque et pedem universum,
+<lb/>dum movetur, conspicere, licet etiam et ipsius
+<lb/>musculos; ac in singulis musculis per transversum pedis
+<lb/>prorsus incisi motum aliquem deperdi; licet denique
+<lb/>scrutari, quae corpori occursant: eo qui in musculum
+<lb/>inseritur nervo vulnerato, primum quidem ipsum musculum.
+<lb/>tum fensus tum motus expertem reddi, atque
+<lb/>cum ipso eum, qui movebatur, articulum. Unde et arbitror
+<lb/>necessarium quoque esse nobis artem constituentibus
+<lb/>non solum partes et compositionem, sed et ipsarum
+<lb/>functiones cognoscere. Atque ea re ab aedificatoribus
+<lb/>differimus. Nam illi quidem partes solas et constructionem
+<pb n="1.233"/>
+<lb/>sciunt, nulla tamen ipsarum actionem edit, neque
+<lb/>propterea animal est domus. Verum et actiones nobis
+<lb/>investigandae sunt. At hic quoque duplex est inquisitionis
+<lb/>principium, scilicet actionis et partis cognitio:
+<lb/>actionis quidem, veluti ratiocinari, invenisse et eligere;
+<lb/>partis vero, ut cerebri, medullae, dorsi et cordis. Omnium
+<lb/>itaque quas scimus actionum partes, et partium omnium
+<lb/>actiones investigabimus. Haec vero investigatio
+<lb/>nobis hic quoque prorsus pro quadam erit methodo, dequa
+<lb/>posterius tractabimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+<p rend="indent">At nunc quod duplex quidem fit partium natura,
+<lb/>duplex vero et actionum jam dicta sit, rursus quoque
+<lb/>accuratius explicetur. Totius cruris actio incessus est
+<lb/>fit autem, quum articuli alternatim mutuoque extendantur
+<lb/>et inflectuntur, quod statim in genu deprehenditur:
+<lb/>anterioribus quidem musculis rotulam transcendentibus,
+<lb/>et suis tendinibus in tibiae os infertis, ibique
+<lb/>tibiam contrahentibus, cruris fit extensio; interioribus
+<pb n="1.234"/>
+<lb/>vero similiter agentibus, flexio. Sic in ischio ac pede,
+<lb/>quum articulus flectitur aut extenditur, motus perficiuntur.
+<lb/>Imo vero musculus manifeste conspicitur,
+<lb/>quum circumiacente cute denudatus ceu ad tuum caput
+<lb/>contrahi adducique, non tamen, qui in ipsum nervus
+<lb/>inseritur, sensibili quodam motu moveri conspicitur; sed
+<lb/>videtur via is esse prodeuntis a cerebro facultatis. Ipsum
+<lb/>autem cerebrum principium quidem esse nervis omnibus
+<lb/>ejusmodi facultatis, clare et perspicue ex nervo quocunque
+<lb/>divisio didicimus, qui in superioribus quidem partibus,
+<lb/>quibus cerebro continuus est, actiones servat, quas
+<lb/>in inferioribus depereunt. At utrum, quemadmodum
+<lb/>ipsum cerebrum nervis, ita illi curtus altera pars quaedam
+<lb/>facultates immittat, aut fons quidam ipsarum sit,
+<lb/>etiam abditum est. Haec enim speculatio ad principem animam
+<lb/>spectat. Sed redeamus, unde digressa est oratio. Incessus
+<lb/>equidem cruris totius actio est Huic autem praeest
+<lb/>in cruribus musculosum partium genus; ossa vero, cartilagines,
+<pb n="1.235"/>
+<lb/>adeps, glandula, arteria, cutis, venae,
+<lb/>membranae, et ligamenta initium motus habent a musculis.
+<lb/>Primum enim ab ipsis ossa moventur, caetera
+<lb/>vero omnia, quod ossibus in ambitu assita sint, cum
+<lb/>illis moventur. Quare pedis motus musculi actio est;
+<lb/>verum universi cruris, non omnium ejus partium actio
+<lb/>est. Ac propterea diximus, duplex esse actionum genus:
+<lb/>unum quidem primum ac maxime proprium cuique partium
+<lb/>simplicium agenti; alterum vero ex accidenti, aut
+<lb/>secundario, vel non primario, aut, quomodocunque aliquis
+<lb/>nominare voluerit, universorum organorum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+<p rend="indent">Quum autem hoc a nobis definitum sit, postea
+<lb/>quaerendum est, tum quibus partium organicarum, tum
+<lb/>quibus simplicium actio compleatur; ac primum ab organicis
+<lb/>exordiendum, quandoquidem cruris meminimus.
+<lb/>Itaque nisi ossa tot tantaque sint, et eo modo conformata,
+<lb/>eoque ordine connexa, musculorum motus nihil
+<pb n="1.236"/>
+<lb/>proficiet. oportet enim in articulationibus alterum
+<lb/>quidem os excipere, alterum vero ingredi ac excipi;
+<lb/>ligamenta vero ah externo ambitu circumducta esse,
+<lb/>quae eorum constructionem coerceant, ut sedem non
+<lb/>permutent; non tamen ita rigida ac dura, ut motibus
+<lb/>obnituntur; neque etiam adeo laxa, ut articulos vacillare
+<lb/>sinant. Proindeque ligamenta videntur magnitudine
+<lb/>quadam, et conformatione, et numero, et compositione
+<lb/>indigere; si namque majora aut minora fuerint, siqua
+<lb/>plura vel pauciora, quam deceat, sive in alia figura,
+<lb/>vel in alium locum inferantur, non amplius illaesus erit
+<lb/>articulationis motus. Quemadmodum igitur et in ligamentis
+<lb/>et ossibus et musculis nunc dictum est; sic in
+<lb/>omnibus tum de actione, tum de usu disserere consentaneum
+<lb/>est. Si namque nulla inveniatur pars, quas
+<lb/>actione aut usu otiosa vacet, imo si secundum substantiam
+<lb/>propriam, et magnitudinem, ac praeterea conformationem
+<lb/>et idoneam structuram constituta sit, ipsa,
+<pb n="1.237"/>
+<lb/>prout est, conservanda. At in re aliqua vitiata, in
+<lb/>statum meliorem ducenda. Quod efficere non potes,
+<lb/>priusquam singularum partium actionem, et usum, et
+<lb/>constitutionem noveris. Haec itaque quaerenda, haudque
+<lb/>negligenda, si sani et morbosi corporis scientiam
+<lb/>simus adepturi.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+<p rend="indent">Quum autem huc deducta sit oratio, opus est
+<lb/>facultatem methodi memoria repetere. Neque enim domus,
+<lb/>neque navis, neque lecti, neque cujusque rei alterius
+<lb/>structuram aliquis aliter exploraverit, an vitio careat,
+<lb/>an vero vitiosa sit, quam si eas quae componunt partes
+<lb/>scrutatus fuerit, quot sint numero, quam magna quaeque,
+<lb/>quomodo conformata, et quomodo sita sit. In his
+<lb/>autem omnium coagmentaturum corporum tum integritas
+<lb/>tum vitium existit. In his vero ipsis demonstrabitur et
+<lb/>domus et navis affectiones consistere, scilicet in partium
+<lb/>magnitudine, conformatione, numero et situ:
+<lb/>siquidem et vitium et integritas. At vero lecti non in
+<pb n="1.238"/>
+<lb/>istis; vestimentorum vero in aliis quibusdam; calceamentorum
+<lb/>vero non in iisdem. In omnibus igitur erganicis
+<lb/>corporibus, quibus substantia ex compositione est,
+<lb/>in quatuor generibus integritas, et vitium, et assertio
+<lb/>continetur. Si vero et naturalem unionem consequantur
+<lb/>partes, quintum quoddam oborietur id genus ejusmodi
+<lb/>corporibus, adeo ut optimum quidem corpus optimas
+<lb/>sortiatur actiones, quod vero pessimum, pessimas. Si
+<lb/>vero aliqua quoque salvatur unitas, non vitiosis solum
+<lb/>ejusmodi affectio, sed jam et morbus est. Vocetur autem
+<lb/>dilucidioris doctrinae gratia genus istud unitatis
+<lb/>solutio: si quis et continui solutionem appellet, haud
+<lb/>erit dissidium. Sed quod et similaribus partibus is excitetur
+<lb/>affectus, scire oportet. Etenim ossis, et nervi, et
+<lb/>venae, et arteriae, et carnis, quotiescunque punguntur,
+<lb/>roduntur, secantur, divelluntur et rumpuntur, vitiatur
+<lb/>continuum. Uerum in osse quidem fractura affectus vocatur;
+<lb/>ruptura vero in carnosis musculorum partibus,
+<pb n="1.239"/>
+<lb/>quae extensione concitatur; quum autem fibrae peraeque
+<lb/>tensae rumpuntur, vulsura vocatur affectus: eodem
+<lb/>vero modo quae ruptione continui fit in carne solutio,
+<lb/>vulnus, quod non extensione, sed incisione
+<lb/>prodit; verum si, quod vulnerat, acutum ac tenue sit,
+<lb/>punctura et punctio nominatur; si vero grave, contusio
+<lb/>vel collisio; ex corrosione vero qui in osse quidem
+<lb/>oboritur, caries; qui vero in caeteris, ulcus. Sed
+<lb/>nominare quidem alio modo concedatur. At hae differentiae
+<lb/>omnes tot talesque sunt quinti generis morborum,
+<lb/>quum primas partes obsident. In organicis vero
+<lb/>(at dictum est) secundum eas, quae diversi sunt generis,
+<lb/>coagmentationes oboriuntur, vocanturque omnes avulsiones.
+<lb/>Sed divisa quadam tota parte similari, affectio
+<lb/>quidem illa tum ejus partis erit, quae secta est, tum
+<lb/>etiam totius erit organi. Interdum tamen ex accidenti,
+<lb/>ut quum vel musculus, vel pars hujusmodi aliqua affecta
+<lb/>est; interdum vero etiam primario, ut quum ligamentum.
+<lb/>Ut igitur unius generis morbi, in quo partium
+<pb n="1.240"/>
+<lb/>continuum laeditur, differentias ego nunc edisserui,
+<lb/>ita et tu simili experiare ratione caetera quatuor genera
+<lb/>paucis percurrere. Memoria namque ipsis hoc in libro
+<lb/>repetere superfluum mihi videtur, quum in libro de
+<lb/>morborum differentiis accurate conscripta sint omnia.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+<p rend="indent">Rursus igitur nobis ipsis in memoriam revocabimus,
+<lb/>quod et in caeteris partibus omnibus, in quarum
+<lb/>compositione substantivae species est, demonstratum sit,
+<lb/>universa genera quatuor totius substantiae ipsarum etsi
+<lb/>causas; ac praeterea tum probe constitutae, tum vitiatae
+<lb/>ipsarum figurae; deinde vero quod et cujusque ipsarum
+<lb/>simplicium partium naturam scire necesse sit, si
+<lb/>quis tum et earum integritatem et vitium cognoscere,
+<lb/>tum affectus emendare commode valeat. Oblaelo igitur
+<lb/>domus imbrice, aut latere aliquo, vel crudo, vel cocto,
+<lb/>seire oportet opificem, et quomodo ejusmodi alterum
+<lb/>structurus sit, et quomodo oblaesum exempturus, ac in
+<lb/>illius locum alterum integrum positurus. At sane et
+<lb/>qui artem circa hominis corpus versantem constituit, ei
+<pb n="1.241"/>
+<lb/>praeter caetera necessarium quoque est id nosse, num
+<lb/>aliqua pars loco alterius poni queat, an vero alterius
+<lb/>vice locari nequeat. Carnem quidem prave affectam si
+<lb/>resecueris, aliam procreare poteris; nervum vero aut
+<lb/>ligamentum si secueris, alterum ejusmodi efficere non
+<lb/>poteris. Illi etenim ex sanguine, his vero ex semine
+<lb/>ortus est. Sed os quoque una quaedam est partium,
+<lb/>quae in prima conformatione constructae sunt. Verum
+<lb/>in locum ipsius restituere possumus aliquid ossi assimile.
+<lb/>Et haec nos equidem nunc obiter sumpta exempli gratia
+<lb/>prodidimus, imo et ratio ipsum hortatur inquirere, qui
+<lb/>artem constituit, jamque inventionis principia descripsimus,
+<lb/>quae ad primam animantis generationem revisimus,
+<lb/>consuluimusque inquirere, quaenam ex semine procreata
+<lb/>sint, et quae ah alimentis perpetuo procreentur. Ad
+<lb/>haec autem magis methodus et cogit et exhortatur nos
+<lb/>inquirere, utrum singulae partes similares, quae et simplices
+<lb/>conspiciuntur, unum sint, an vero ex pluribus
+<pb n="1.242"/>
+<lb/>constent et quis sit earum compositionis modus. Has
+<lb/>namque planum est organicis nuncupatis proportione respondentes
+<lb/>et in quantitate, et conformatione, et magnitudine,
+<lb/>et situ ipsas constituentium, tum integritatem, tum
+<lb/>vitium sortiturae, si modus ipsarum generationis fit analogus;
+<lb/>si vero non ita, sed ut medicamentum, quod tetrapharmacum
+<lb/>nominatur, totis per tota mixtis factae sint,
+<lb/>alia ratione ipsarum integritatem et vitium et morbum
+<lb/>comperies. Quemadmodum (arbitror) si non ex mixtis,
+<lb/>sed ex appositione accurata fit ipsarum unitas peraeque
+<lb/>cephalice, quod vocatur, medicamento arido; sic et
+<lb/>integritatem, et vitium et morbos operis generationi
+<lb/>proprios inveneris: si vero non ex multis specie disserentibus,
+<lb/>sed ex iisdem specie omnibus compositae sint,
+<lb/>ut (si ita sors tulerit) domus quaedam ex coctis lateribus
+<lb/>folis, aut lapidibus, in compositione sola videlicet
+<lb/>similarium partium et integritatem et vitium et morbos
+<lb/>operis generationi proprios reperies. Verum sane aliquod
+<pb n="1.243"/>
+<lb/>praedictorum similaribus adesse partibus, ratio nobis
+<lb/>suadet; quodnam autem ex ipsis verum sit, exacta consideratione
+<lb/>indiget. Videmus enim, philosophos in hujusmodi
+<lb/>quaestionem descendere, quemadmodum et medicorum
+<lb/>nonnullos plurimum inter se discrepasse. Quare
+<lb/>mihi etiam quamplurimi medici videntur ab hac quaestione
+<lb/>secessisse, quum se id, quod quaereretur, inventuros
+<lb/>nequaquam sperarent; nonnulli vero non modo ut impossibilem,
+<lb/>sed ut inutilem disquisitionem omiserunt.
+<lb/>Quod quidem inutilis minime sit, si quis non experientia,
+<lb/>sed methodo artem constituerit, jam mihi dilucidum
+<lb/>esse videtur: quod vero non impossibilis, postea
+<lb/>considerabimus, quum quid paucum pejus inter nos disseruerimus.
+<lb/>Si quam enim mihi fidem adhibeas,
+<lb/>ut certe adhibes, quum me rem nullam humanae gloriae,
+<lb/>sed veritatis studio omnia efficere conspicias; ne
+<lb/>te multitudo medicorum philosophorumque discrepantium
+<lb/>deterreat. Si namque, ex quibus veritatem nosse oportet,
+<lb/>ea omnibus adessent, nec ipsam postea invenient,
+<pb n="1.244"/>
+<lb/>spem inventionis abjici consentaneum esset. Sed fi quaedam
+<lb/>omnino isti non habuerint, quemadmodum etiam
+<lb/>concedunt, quaedam vero utrum habuerint non constet,
+<lb/>nos vero simus conscii, nos ipsus omnia tenere,
+<lb/>veritatis inquisitionem audacter admittere necesse est.
+<lb/>Quotnam igitur existunt, quae concurrere opus est, ut, si
+<lb/>quis quaerens aliquid, sive verum noverit, sive non,
+<lb/>ab inventione non desperet? Septem nimirum. Primum
+<lb/>quidem acuta natura, ut, quaecunque disciplina rationalis
+<lb/>edoceatur, eam facile assequatur. Secundum a
+<lb/>puerili aetate et institutio, et exercitatio, ut in primis
+<lb/>versetur disciplinis; maxime vero et in arithmetica et
+<lb/>in geometria sese exercuisse oportet, quemadmodum et
+<lb/>Plato consuluit. Tertium, ad haec omnia optimis sua
+<lb/>tempestate habitis praeceptoribus aures adhibuisse.
+<lb/>Quartum post ea, ipsum esse laboris patientissimum, ut
+<lb/>nihil quicquam interdiu, nihilque noctu praeter disciplinas
+<lb/>meditetur. Quintum praeterea, quod paucissimis
+<lb/>contingit, veritatem expetere, eique soli in tota vita
+<lb/>studio incumbere, spretisque caeteris omnibus. quae a
+<pb n="1.245"/>
+<lb/>plerisque expetuntur. Sextum serie, methodum quandam
+<lb/>didicisse, qua tum verum, tum salsum diiudicetur.
+<lb/>Non enim certe satis fuerit ad inventionem duntaxat
+<lb/>eorum, quae desideramus, veritatem concupiscere, sed
+<lb/>etiam facultatem quandam inventionis paratam habere
+<lb/>oportet. Ad haec omnia septimum, methodum exercuisse
+<lb/>decet, ut non salum cognoscere, sed uti queat.
+<lb/>Si namque rhetoribus quidem inferiorem artem sectantibus
+<lb/>haud satis esse videatur nosse methodum, sed totam
+<lb/>vitam in ipsius exercitatione conterant, multo magis
+<lb/>tnagna adeo quaerentibus fotum edidicisse methodum nequaquam
+<lb/>sufficiet. Itaque si quod unum horum, quae
+<lb/>dicta sunt, ad veritatem viam instituenti desit, aequum
+<lb/>est ipsum haud admodum sperare eorum quae expesit
+<lb/>quicquam esse consequuturum. Si vero omnia
+<lb/>suppetant, quid prohibet veritatem bona spe fultum exquirere?
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+<p rend="indent">Institutum porro est nobis, quemadmodum
+<lb/>omnes totius corporis vel etiam simplicissimas ex dissectione
+<pb n="1.246"/>
+<lb/>didicimus, ita hoc ipsum invenire, nempe quales natura
+<lb/>existant primariae et simplicissimae partes. Verum non
+<lb/>de omnibus, sed de una ceu exempli loco sermonem
+<lb/>instituemus. Caro inspiciatur primum, an unum specie
+<lb/>iit elementum, quod ipsam procreaverit. Nihil enim mali
+<lb/>est primam et simplicissimam in ea partem sic appellasse.
+<lb/>Deinde si talis non appareat, an multae; posita,
+<lb/>quot hae, et quae sint; tum, quinam compositionis earum
+<lb/>modus existat. Quum igitur caro, dum secatur calescitque
+<lb/>vehementer, dolore afficitur; unum specie elententum
+<lb/>esse non potest, cuiusmodi Epicurus atomon statuit.
+<lb/>Quod enim unum specie elementum tale non sit, inde
+<lb/>constat; nulla siquidem ex atomis ipfa per se aut calida
+<lb/>natura est aut frigida, neque etiam candida quaedam
+<lb/>ex ipsis est, vel nigra. Sed quid commoror, et comminuens
+<lb/>orationem protraho? In summa namque, nulla
+<lb/>qualitas est ipsi atomo, ut auctores altarum decernunt.
+<lb/>Num hujusmodi qualitates universae per tota corpora
+<pb n="1.247"/>
+<lb/>permeasse videntur, ut ipsa figurae qualitas ipsis omnibus
+<lb/>insit: inest autem et renixus et gravitas; sed haec
+<lb/>au qualitatem, an aliud quicquam vocare oporteat, ad
+<lb/>propositum nihil attinet. Omnibus enim ipsis praedicta
+<lb/>instat, nec inter se specie differunt, sicut homoeomeriae,
+<lb/>similaritates, iis qui illas supposuere, aut elementa
+<lb/>quatuor haec statuerunt. Hippocrates igitur inquit:
+<lb/>ego vero dico, si homo unum esset, haudquaquam
+<lb/>doleret. Rectissime pronunciat. Nam unum in aliud
+<lb/>mutari non potest, quum non habeat in quod mutetur;
+<lb/>quum immutabile nec alterari, nec mutari possit; impatibile
+<lb/>vero dolore vacet: at manat ex dictis pronunciatis
+<lb/>haec conclusio, unum esse impatibile, ob quam rursus aliud
+<lb/>proponetur argumentum tale. Si elementum unum esset
+<lb/>specie, nihil in omnibus unquam doleret. Atqui dolet:
+<lb/>non igitur unum est elementum. Quoniam vero de carne
+<lb/>nubis constitutum erat dissertationem moliri, de illa disseratur.
+<lb/>Si unum esset specie carnis elementum, nunquam
+<pb n="1.248"/>
+<lb/>caro doleret; sed dolet; non igitur unum specie
+<lb/>carnis elementum est Eadem vero ratiocinatio alio
+<lb/>quoque modo proponetur. Si impatibile sit camis elementum,
+<lb/>non dolebit: atqui dolet: non igitur est impatibile.
+<lb/>At si quis et plura esse elementa dicat, non tamen
+<lb/>quae atterentur: de illis in hunc modum eadem
+<lb/>ratiocinatio proferetur. Si impatibilia sunt carnis elementa,
+<lb/>non dolebit; sed dolet, non igitur impatibilia
+<lb/>sunt carnis elementa. Quare prior quidem ratiocinatio,
+<lb/>et atomorum, et incompactilium, et minimorum corpusculorum
+<lb/>hypothesim subvertit. Altera vero et similaritatum
+<lb/>et Empedoclis opinionem tollit. Etenim hic ex
+<lb/>quatuor elementis corpora vult constitui, sed quae invicem
+<lb/>non transmutentur. Adhibe jam disputationi animum,
+<lb/>qua citius ac speraverim maximam eorum partem
+<lb/>quae quaerebas invenit; quippe camis elementa non
+<lb/>impatibilia esse oportere demonstravit. Non igitur
+<pb n="1.249"/>
+<lb/>etiamnum, qui dolores tempori statuunt in corporum illorum
+<lb/>impatibilium compositione, quae certe elementa
+<lb/>omnium rerum naturae supponunt, propositum in oratione
+<lb/>obtinebunt. Etenim nec intellectus capit, imo
+<lb/>nec ullum eorum, quae sub sensum cadunt, attestatur, impatibile
+<lb/>dolore affici. Nam digitos si invicem committas,
+<lb/>rursusque separes, nulli dolorem nec coitus, nec separatio
+<lb/>concitabit, siquidem dolor passioni coniunctus est. At
+<lb/>nihil contiguum afficitur, quoniam in bis duobus passio
+<lb/>consistit, alteratione per tota et continuitatis divortio.
+<lb/>Quum igitur in patibilibus manifesto corporibus neque
+<lb/>coitus, neque sejunctio dolorem efficiat, multo minus
+<lb/>in impatibilibus efficiet. Quare nec Asclepiadis corpusculum
+<lb/>illud incompactile fragile existens dolebit, dum
+<lb/>frangitur; non enim ipsi sensus est. Quare neque huic
+<lb/>plus erit doloris ex iis, quibus afficitur, quum sensus sit
+<lb/>expers, quam ossi, cartilagini, adipi, ligamento et pilis.
+<pb n="1.250"/>
+<lb/>Etenim haec omnia patiuntur quidem, ted non dolent,
+<lb/>quia nec sentiunt. Quicquid igitur dolebit, patibile ac
+<lb/>sensibile esse oportet; non tamen ex sensilibus primis
+<lb/>necessarium est esse sensibile, sed patibile solum snssicit.
+<lb/>Nam aliquando sensibile fieri poterit, si immutetur altereturque.
+<lb/>At quia multitudine innumerae alterationes
+<lb/>ac temperaturae elementorum fieri possunt, infinitae
+<lb/>quoque erunt particularium corporum proprietates, secundum
+<lb/>quas nihil absurdum fuerit multa insensilia
+<lb/>fieri, atque ex iis, quae sentiunt, aliud magis, aliud
+<lb/>minus sentire. At vero et elementa uno plura
+<lb/>necessario esse, quae alterari natura possunt, clare
+<lb/>demonstratum est iis, qui, ut paulo ante dictum est,
+<lb/>apparatum omnem habent illorum, ex quibus possit
+<lb/>aliquis fieri scientificus. Qui vero eo stupiditatis veniunt,
+<lb/>ut ne vel an methodus quaedam demonstrandi
+<lb/>sit, prius dignentur inquirere, vel ab alio discere, vel
+<lb/>sese in ea exercere, iis sane hic sermo non est communicandus.
+<pb n="1.251"/>
+<lb/>Neque enim contendendi cum aliis, aut vincendi,
+<lb/>sed veritatis ipsius inveniendae desiderio ad hanc
+<lb/>disputationem descendimus. Nam qui indoctas illorum
+<lb/>opiniones volet redarguere, is librum, quem de elementis
+<lb/>ex liippocratis sententia inscripsimus, seorsum sibi legendum
+<lb/>proponat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+<p rend="indent">Rursus igitur ad institutum reversi, finem ei
+<lb/>imponamus. Quoniam elementum per totum alterabile est,
+<lb/>quot universa sint elementa, deinceps referamus, ducto
+<lb/>et hic ab iis, quae evidenter apparent, orationis exordio.
+<lb/>Quae rem quamcunque alterant, eam tetigisse antea,
+<lb/>quam immutasse, necesse est, ut sensus docet, et ipsa
+<lb/>rerum natura indicat. Nam absurdissimum est, atiquid
+<lb/>in Aegypto a flamma, quae hic est, alterari. Atqui
+<lb/>si ex contactu id alteret, quod transmutat, quarundam
+<lb/>tactilium qualitatum ratione operari ipsi necesse est.
+<lb/>Quid igitur vetat has omnes inspici? Acutum sane,
+<pb n="1.252"/>
+<lb/>quod proxime accedit, secat, verum substantiam ejus
+<lb/>non alterat, quemadmodum nec gravitas; sed contundit
+<lb/>quidem et haec, verum per totum patientis substantiae
+<lb/>mutationem non efficit; quin nec durities ita sibi proximum
+<lb/>alterare potest, ut in aliam speciem traducat.
+<lb/>Calor tamen et frigus totam adiacentem substantiam
+<lb/>alterare potest. Ita vero humor et siccitas, etsi non
+<lb/>subito, quemadmodum praedictae, certe tempore et
+<lb/>ipsae subjecta transmutant. An igitur aliam adhuc alterandi
+<lb/>facultatem habemus? An universa multitudo in
+<lb/>his est? Certe stolas praedictas qualitates efficientes tum
+<lb/>dici, tum censeri convenit, ac praesertim primam inter
+<lb/>eas oppositionem: atque in hac magis calorem, ipsa
+<lb/>siquidem qualitatum efficacissima est; post hunc frigus
+<lb/>est, mox humor, et siccitas; nulla vero alia qualitas
+<lb/>sibi adjacentia per tota alterati Si namque divellit aliquid,
+<lb/>contundit, secat et pungit, id quidem facit, verum
+<lb/>per totam substantiam patientis alterationem non
+<pb n="1.253"/>
+<lb/>extendit; unde nec in alteram essentiae speciem ipsum
+<lb/>transfert, sed in plurima separat. Itaque nivem si dividas
+<lb/>in minimas partes, ipsam quidem nivem servabis.
+<lb/>Sin calefeceris, non esse nivem efficies; etenim ex
+<lb/>aqua ipsa refrigerata, non in unum collecta, ejus ortus
+<lb/>est; hoc siquidem substantiae incrementum, illud generatio
+<lb/>est. Jam vero contrariorum in parva quidem divisio,
+<lb/>substantiae diminutio est; calefactio autem, alterius substantiae
+<lb/>generatio, quum praecedentem alteraverit speciem.
+<lb/>Igitur quaecunque corpora primum hujusmodi qualitates
+<lb/>obtinent, illa reliquorum omnium et carnis elementa
+<lb/>sunt; sunt autem haec terra, aqua, aer et ignis, quae
+<lb/>philosophi omnes, qui demonstrationem non refugiunt, elementa
+<lb/>esse eorum, quae generantur et corrumpuntur,
+<lb/>asseverarent, ac ipsis in se mutuo transmutari ajunt,
+<lb/>communeque aliquod omnibus esse subjectum. Verum de
+<lb/>his haud verba sunt: sed quod deterreri non oporteat
+<lb/>multitudine a veritate aberrantium, verum demonstrationi,
+<pb n="1.254"/>
+<lb/>si cui ejus copia sit, fidem adhibere. Porro si
+<lb/>omnino demonstrationis substantiam ignorant, ut nonnulli,
+<lb/>qui se philosophos dicunt, vereri se sententiam
+<lb/>ferre omnino fatentur. Nam perinde est, ac si quis
+<lb/>discere vellet, quonam modo defectum fotis praesagiri
+<lb/>oporteat, priusquam in numeris se et lineis exercuerit.
+<lb/>Fugiendi itaque ejusmodi homines sunt, tanquam barathra;
+<lb/>quippe secum aliquando eos, quibuscum versantur,
+<lb/>attrahunt, vel omnino inficiunt, nisi in logica speculatione
+<lb/>abunde quis exercitatus fuerit. Hac itaque
+<lb/>via non ita in re altera, quam in illa theoria nobis
+<lb/>exercendum est. Sed hoc equidem scio praeter institutum.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+<p rend="indent">Ad rem propositam redeamus. Ex quatuor
+<lb/>elementis invicem contemperatis corpus unum similare gignitur,
+<lb/>pro temperamenti qualitate vel sensibile vel insensibile.
+<lb/>Simili vero ratione et particulares in utroque genere
+<lb/>differentiae omnes temperamenti differentiam fequuntur.
+<lb/>Pro hujus enim proprietate aliud os, aliud caro,
+<pb n="1.255"/>
+<lb/>aliud arteria, aliud nervus efficitur. Sed et cujusque
+<lb/>ipsorum proprietas in temperamenti proprietate consistit:
+<lb/>siccior namque et calidior leonis caro est; humidior
+<lb/>frigidiorque ovis; media inter utramque hominis, atque
+<lb/>later ipsos homines Dionis caro, exempli gratia, calidior
+<lb/>est, frigidior autem Philonis. Quapropter tot similarium
+<lb/>partium differentiae sunt, simplices quidem, quot
+<lb/>elementa, calidiores, frigidiores, humidiores et sicciores;
+<lb/>compositae vero aliae quatuor, humidiores simul
+<lb/>et frigidiores, calidiores et humidiores; alia quoque
+<lb/>tertia quaedam siccior una et calidior; deinde quarta
+<lb/>frigidior simul et siccior; bis accedit princeps omnium
+<lb/>temperatissima. Sed de his quidem formo idoneus totus
+<lb/>in libris de temperamentis habitus est Verum praestans
+<lb/>sermo, quia similarium integritatem ac vitium in elementorum
+<lb/>commoderatione et incommoderatione invenit,
+<lb/>deinceps ab ipsarum vitio morbum distinguet, Haec vero
+<pb n="1.256"/>
+<lb/>distinctio ab utrarumque rerum notione, ut in opere de
+<lb/>demonstratione ostensum est, primum exordium habitura
+<lb/>est. Quae igitur salubris constitutionis corporis notio
+<lb/>est, quae jam et insalubris? Sana quidem corporis
+<lb/>structura illaesas secundum naturam actiones habet,
+<lb/>aegra vero laesas. Proinde quum quis Ianus imbecilliores
+<lb/>quidem, quam alius sanitate fruens, functiones habet,
+<lb/>nondum vero jam laetas, intemperatius sane est,
+<lb/>sed nondum aegrotat. Igitur inter salubres corporis habitus
+<lb/>unus quidem est temperatissimus, octo vero intemperati.
+<lb/>At morbus temperatus nullus est; intemperati
+<lb/>vero omnes; tot numero, quot salubres intemperaturae.
+<lb/>Quod si ex sanis alios temperatos, alios intemperatos
+<lb/>statuere cuipiam non placeat, is alterum duorum
+<lb/>dogmatum sequi cogetur, vel omnes semper aegrotare,
+<lb/>vel unam esse omnium temperiem, virorum, mulierum,
+<lb/>juvenum, senum, puerorum, athletarum, privatorum,
+<lb/>operariorum, in otio degentium, robustorum, imbecillium;
+<lb/>sed utrumque absurdum est; ergo tertiam quandam
+<pb n="1.257"/>
+<lb/>sanitatis latitudinem esse oportet, ut plurimae in
+<lb/>ea fanorum corporum differentiae in maioris et minoris
+<lb/>ratione comprehendantur, sicut et in aliis omnibus
+<lb/>habet. Etenim domus, et navis, et lectus, et arca,
+<lb/>et vestimentum; et calceus, et currus, vel melius vel
+<lb/>pejus structura est, priusquam aegrotet. Atque hae tres
+<lb/>corporis dispositiones in omnibus nobis statuendae sunt,
+<lb/>optima, depravata et morbosa; sed optima quidem una
+<lb/>est, in perfectissimum enim deterius non cadit, reliquorum
+<lb/>duorum innumerabilis certe copia est, habent autem
+<lb/>differentias ratione pluris et minoris.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+<p rend="indent">Quum igitur hucusque hac oratione pervenimus,
+<lb/>ipsam coercentes, quae dicta sunt, ea per capita repetamus.
+<lb/>Agnoscemus enim ita, et quid rei quaesitae jam
+<lb/>inventum sit, et quid praeterea supersit. Nobis quidem
+<lb/>propositam est, artem sanitatis effectricem constituere,
+<lb/>sed non ita est, ut architectura, quae domum exstruit,
+<lb/>sed ut partis ejus labefactatae emendatrix; quanquam
+<pb n="1.258"/>
+<lb/>hic non eodem prorsus modo, verum id ipsum, quod
+<lb/>quaeritur, erat invenire, quatenus similiter aedificatori
+<lb/>corporis vitia emendare potest, qui sanitatis tuendae artem
+<lb/>profitetur. At quia ad haec omnia corporis naturam
+<lb/>praenosce necesse est, cujus vitia ars curatura sit;
+<lb/>ideo hoc ipsum disquisivimus. Quum autem invenerimus,
+<lb/>ut functiones et structurae partium secundum naturam
+<lb/>sunt, pro quarum conservatione, et quum vitiatae
+<lb/>fuerint emendationis omnibus modis propugnandum est;
+<lb/>ex quot compleatur quod secundum naturam est, quaesi,
+<lb/>vimus. Quum autem compertum habuerimus, organicis
+<lb/>partibus ex earum quae ipsis insunt simplicium compositione
+<lb/>substantiam esse, atque simplicibus ex quatuor
+<lb/>elementis, deinceps utrarumque partium morbos considerabimus.
+<lb/>Ac jam fere corporum tum sanorum tum
+<lb/>aegrotorum cognitionem ratio nobis invenit, neque hanc
+<lb/>universam, sed speciem quandam. duntaxat ipsius et
+<lb/>velut exemplum. Atqui universam tum sanorum tum
+<pb n="1.259"/>
+<lb/>aegrotantium corporum scientiae substantiam habebimus,
+<lb/>quum ipsi materiae species induxerimus. Oportet enim
+<lb/>non solum medicum nosse, singulas quasque partes ex humido,
+<lb/>frigido, sicco, calidoque mixtis procreari, verum
+<lb/>etiam speciatim ipsas inspicere, quod ossium sit temperamentum,
+<lb/>quale carnium, nervorum, venarum, et cujusque
+<lb/>aliarum simplicium, similiter vero et organicarum,
+<lb/>quae cujusque partis sit compositio, veluti manus,
+<lb/>cruris, iecoris, thoracis, pulmonis, cordis, celebri.
+<lb/>Eadem ratione neque satis est simpliciter genera et differentias
+<lb/>morborum cognoscere, sed etiam quomodo hi
+<lb/>singulis partibus accidant. Id enim si fecerimus, scientiam
+<lb/>sortiemur et sani et aegroti corporis non solum
+<lb/>speciatim, sed et tota substantia; quae utrisque tum
+<lb/>specie, tum materiam eam suscipiente constituitur. Reliquum
+<lb/>vero est percensere, quomodo quis morbos curet,
+<lb/>et sanitatem tueatur, quae in duobus operibus plenissime
+<pb n="1.260"/>
+<lb/>tractamus, nempe medendi methodo, et de sanitate
+<lb/>tuenda. At hic eorum meminisse sufficit, quatenus methodum
+<lb/>praemonstrare possint.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+<p rend="indent">Itaque medendi methodus ex sanorum aegrotorumque
+<lb/>corporum affectu incipit. Quum enim summe
+<lb/>sanum, sive similare, sive organicum fuerit, commoderatum
+<lb/>omnino sit, ineommoderatum vero, quod aegrotat;
+<lb/>inspicienda est ipsius incommoderatio, quaenam haec
+<lb/>sit; necessarium enim est dari alteram huic contrariam
+<lb/>incommoderationem: in similarium quidem et simplicium
+<lb/>partium affectibus qualitatem; in organicis vero, si in
+<lb/>magnitudine fuerit incommoderatio morbi, aliam contrariam
+<lb/>magnitudinem, si in conformatione, alteram
+<lb/>contrariam conformationem; ita si in situ, vel numero.
+<lb/>Proinde in omnibus ex intemperie ad commoderationem
+<lb/>reditus a contraria incommoderatione futurus est. Nam
+<lb/>quod praeter naturam affectum est, id dum ad naturam
+<lb/>redit, veluti per viam quandam, eandemque, sed e contrario
+<pb n="1.261"/>
+<lb/>tendentem, incedere oportet. Si vero ex diverto
+<lb/>incessurum fit, per contraria praetenti affectui divertetur.
+<lb/>Atque is scopus communissimus generalissimusque
+<lb/>universae curationis morborum fuerit, id contrarium,
+<lb/>ut quibusdam in locis ab Hippocrate traditum.
+<lb/>est: Contraria contrariorum sunt remedia. Particularibus
+<lb/>autem particularia stant contraria, calidum quidem
+<lb/>frigido morbo, calido vero frigidum; similiter autem
+<lb/>sicco quidem humidum, humido denique siccum. Sic quidem
+<lb/>in similaribus res se habet. In organicis autem
+<lb/>uniuscujusque praedictorum quatuor generum morbosae
+<lb/>incommode, attoni contrarium inducere oportet, donec
+<lb/>ad commoderationem et naturalem statum pervenerimus;
+<lb/>velut si caro major, quam natura exigat, ulceri cuipiam
+<lb/>excreverit, non id offerre congruit, quod carnem procreet,
+<lb/>neque quod nutriat, sed quod eam exedat, auferat,
+<lb/>erodat atque corrumpat; quemadmodum, si in parte
+<lb/>aliqua cavum ulcus acciderit, huic sarcoticum adhibendum
+<pb n="1.262"/>
+<lb/>est; utriusque vero eatenus usus erit, ut tunc primum
+<lb/>cesses, quum ad commoderationem prius venerit,
+<lb/>quam ad contrarium excedat. Etenim nili excrescentem
+<lb/>carnem exedendo in commoderato statu constitueris, cavam
+<lb/>partem efficies. Item, nisi cavum reficiendo commoderate
+<lb/>constitueris ac sedaveris, excrescentem efficies.
+<lb/>In hoc sane morborum genere, quo partes ad maiorem
+<lb/>minoremque magnitudinem decedunt, per contraria, ut
+<lb/>dictum est, emendatio molienda est. At in altero genere,
+<lb/>quo partes a naturali conformatione deturbantur,
+<lb/>quoniam complures sunt particulares disserendae, suum
+<lb/>cujusque contrarium invenire decet. Exempli gratia, si
+<lb/>pars aliqua se ipsa gibbosior evadit, in contrarium statum
+<lb/>reducenda est, premendo et impellendo: quae vero intro
+<lb/>compressa est ac veluti resima, in exteriorem partem
+<lb/>reducere, ut nasum, expedit. Quod si pro asperis
+<lb/>laevia saeta sunt, exasperare, quemadmodum et quae
+<lb/>aspera Levigare convenit. Ita vero et quae cavitates,
+<lb/>vel meatus, vel omnino foramina aut maiora, aut minora,
+<pb n="1.263"/>
+<lb/>aut magis vacua quam oporteat, aut pleniora, aut
+<lb/>a crassis lentisque humoribus obstructa habent, et haec
+<lb/>ad contrarium, quousque ad commoderationem veniant,
+<lb/>ducere oportet; quinetiam quae in situ a naturali statu
+<lb/>digressae sunt, eas ad pristinam naturam in contrarium
+<lb/>impellendo reducere. Quae quidem pars in anteriorem
+<lb/>regionem progressa est, retrorsum, quae vero in
+<lb/>posteriorem deflexit, ea ad anteriora retrahetur; ac in
+<lb/>reliquis duabus oppositionibus simili modo, quae sursum,
+<lb/>deorsum, quae hinc, illuc. Quod si, naturali numero partium
+<lb/>vitiato, totum organum in morbum incidat, scire
+<lb/>sane et hic oportet, aliud numeri excessum quantitatis,
+<lb/>aliud esse defectum, ut in magnitudinis mutatione prius dictum
+<lb/>est; curationem vero, utillic, in ablatione adjectioneque
+<lb/>consistere. Sed eo differunt, quod in hoc morbi
+<lb/>genere partes quidem integras, in illo vero partium
+<lb/>portiones auferre vel adlicere conveniat.
+</p>
+<pb n="1.264"/>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+<p rend="indent">At considerandum venit non in hoc genere
+<lb/>fotum, sed in aliis quoque universis, quorum facultas
+<lb/>nobis adest, ut indicationem exequamur. Nam morbi
+<lb/>idea modum solum curationis indicat: au vero impossibilis
+<lb/>sit, aut possibilis, non etiamnum simul indicat. Nam id
+<lb/>in universis effectivis artibus, non ex rerum faciendarum
+<lb/>notione sed efficientis causae potentia ac impotentia
+<lb/>desumitur, ac praeterea ex materiae copia inopiaque,
+<lb/>Itaque res eaedem in his fieri, in illis minime possunt;
+<lb/>et alio tempore fieri non possunt, alio possunt. Quae
+<lb/>igitur circa corpus boni gratia fiunt, eorum caula tum
+<lb/>natura, tum medicus existit. Sed quaedam naturae,
+<lb/>quaedam vero medicis sunt impossibilia. Naturae quidem
+<lb/>impossibile est os ita confractum, ut partes ejus
+<lb/>aberrent membrumque distortum sit, erigere ac conformare;
+<lb/>medico vero possibile: sic etiam luxatum medicus
+<lb/>reponere potest, natura non potest. Cavum ulcus carne
+<pb n="1.265"/>
+<lb/>replere natura potest, medicus non potest; sicut ex
+<lb/>femicoctis aut crudis aliquid concoquere. Sed et in his
+<lb/>medicus naturae famulatur opitulaturque, mundum quidem
+<lb/>ulcus efficiens medicamento purgante imposito, illis
+<lb/>autem, quae egent concoctione, asserens ea, quae commoderate
+<lb/>calefaciant. Multa vero ipsis natura, quae
+<lb/>prius effecerit, denuo generare non potest, ut venam,
+<lb/>arteriam, ligamentum, nervum et id genus alia. Itaque
+<lb/>primum ad medendi methodum pertinet, ut dictum est,
+<lb/>communem omnium scopum invenire, qui est, contraria
+<lb/>contrariorum esse remedia. Secundum vero, in unoquoque
+<lb/>genere contraria ordine collocare. Tertium
+<lb/>postea, considerare, quando quidem natura vel nos
+<lb/>scopo possimus infervire, quem indicatio suggerit;
+<lb/>quando rursus utrisque est vel omnino impossibile, vel
+<lb/>certo tempore impossibile, vel partim impossibile. Atque
+<lb/>non minima haec naturalis speculationis portio fuerit,
+<lb/>in qua exercitatum esse oportet, eum, qui invenerit in
+<pb n="1.266"/>
+<lb/>unoquoque quid praestari, quid secus possit. Porro commentarii
+<lb/>duo id perdocent; alter, qui de animantis generatione
+<lb/>inscribitur, quo disceptamus, qua ratione foetus ex femine
+<lb/>et menstruali sanguine ortum habet; ac reliquus de naturalibus
+<lb/>facultatibus. In libro enim de feminis natura
+<lb/>consideranda esse videbuntur tibi omnino, speculationem
+<lb/>demonstrativae methodo subjicienti, haec, quae nobis demonstrata
+<lb/>sunt, complures in foetu concepto partes, facultate
+<lb/>ipsas conformante materia ipsa feminis substantia
+<lb/>utente, procreari. Et si hoc inveneris, non miraberis
+<lb/>amplius, si nullam ipsarum natura postea aliquando
+<lb/>possit creare. At in libro de, naturalibus facultatibus
+<lb/>generatarum dispensationem intueberis, ut inde copiam
+<lb/>tibi compares inventionis rerum, quas natura tum per se
+<lb/>ac seorsim, tum medicorum ministerio possit efficere,
+<lb/>quasque non possit; in illo loco, in quo de causarum
+<lb/>efficientium facultate disceptamus et perfectarum partium
+<pb n="1.267"/>
+<lb/>substantia, reperies, quaecunque fieri possint, et
+<lb/>quae non possint. Ut, si, cartilagine deperdita, aliam
+<lb/>regenerari cartilaginem sit possibile, an pro ea aliquid
+<lb/>consimile. Sic autem et os utrum post conceptionem
+<lb/>perditum alterum, an ei quippiam simile construi queat.
+<lb/>Item au nervosa fepti transversi substantia coalescere,
+<lb/>au cor, an jecur, vel universe quaecunque caeterarum
+<lb/>partium. Omnes sane percensere, tempus mihi non est.
+<lb/>Neque enim tota medicina hoc uno libello comprehendi
+<lb/>potest, neque id ab initio studuit oratio, sed methodoa
+<lb/>quasdam recensere, demonstrareque de constitutione artis,
+<lb/>ex quibus et quot principiis quibusque viis ipsa fiat.
+<lb/>Absoluto igitur hic praefecti sermone ac in summam
+<lb/>redacto, prius jam constitutae artis parti nonnulla adjiciam.
+<lb/>Quemadmodum enim in illo fanorum aegrotorumque
+<lb/>corporum specie inventa, in particularibus materiis
+<lb/>universis spectare ipsam voluimus; ita inventis
+<lb/>a medendi methodo scopis; in particulares materias
+<pb n="1.268"/>
+<lb/>ipsos inducere dignabimur, ut nota sint, quae per eam
+<lb/>aut ex parte, aut aliquo tempore fieri possunt, quaeque
+<lb/>omnino non possunt. At hic ad alias artes analogia
+<lb/>consideranda est. Ut enim, si quis ex coctis lateribus
+<lb/>domum exstructam, dein aliqua parte affectata
+<lb/>emendari jusserit, auserendo quidem, quicunque laesi sunt
+<lb/>lateres, in illorum vero locum illaesos reponendo, necessarium
+<lb/>prius est opifici alios affectis similes extruere,
+<lb/>ac etiamnum praeterea, si materiam idoneam aedium
+<lb/>dominus praestare non possit, reparationem esse impossibilem
+<lb/>asseverare: ita in hac proposita speculatione res
+<lb/>sese habet Nam materiae penuria nullum eorum, quae
+<lb/>ex femine natura in animali formando construxit, russus
+<lb/>construere non potest.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+<p rend="indent">Quum autem de his abunde dictum sit,
+<lb/>quod sermoni deest, id adpetamus, ea, de quibus paulo ante
+<lb/>disseruimus, inveniendo remedia, Etenim veluti generales
+<pb n="1.269"/>
+<lb/>ipsorum ideas recensuimus, oportere alia refrigerare,
+<lb/>alia calefacere, alia humectare, alia exiccare.
+<lb/>Hi namque in similaribus scopi sunt, veluti in his vitiata
+<lb/>quantitate eam vel auferre, vel reficere. Ita vero
+<lb/>et in his numero vitiatis vel totum detrahere, vel generare.
+<lb/>in his denique conformatione vitiata, eam ad naturales
+<lb/>figuras reducere, repleta vacuare, vacua replere,
+<lb/>obstructiones aperire, aperta contrahere, conniventia et
+<lb/>densata in contrarium convertere, illa aperiendo, haec
+<lb/>rarefaciendo. Sic autem in compositionis morbo scopus
+<lb/>est ad naturalem statum reducere, in soluta unitate
+<lb/>diductarum partium conglutinationem moliri. Uerum
+<lb/>in omnibus his auxiliorum materiam invenire, non
+<lb/>parva est artis portio; velut statim in luxatis articulis,
+<lb/>quum contingit non modo in posteriora et
+<lb/>anteriora, et in dextra ac sinistra prolabi luxatum, sed
+<lb/>etiam in superiorem locum a musculorum contentione
+<pb n="1.270"/>
+<lb/>revelli, duplici motione opus est iis, qui in locum articulos
+<lb/>reponunt, prima quidem deorsum, altera vero in
+<lb/>sedem propriam repositione, atque idcirco sine tensione
+<lb/>opposita reductio fieri non potest. Ad oppositam vero
+<lb/>tensionem validarum apprehensionum tenfionumque
+<lb/>usum esse cuique manifestum est. At quum interdum
+<lb/>nostris manibus ea nequeamus efficere, instrumenta ad
+<lb/>hoc idonea invenimus, sed ipsorum pleraque ad luxatorum
+<lb/>repositionem inserviunt. Atque haec omnia instrumenta
+<lb/>remediorum materiae quaedam sunt, quemadmodum
+<lb/>et quae conveniunt omnia, medicamenta, edulia,
+<lb/>potiones, ac universe quaecunque corpori admoventur,
+<lb/>commemoratas affectiones in naturalem statum revocant.
+<lb/>Oportet itaque medicum in horum materia versatum
+<lb/>fuisse, qui praedictos scopos materiarum usui accommodet,
+<lb/>ne interdum quodam habitu deceptus sit iis simili,
+<lb/>qui frigidam conferre causent omnibus refrigerandis, et
+<lb/>calidam calefaciendis, ignorantes, frigidam aliquando ex
+<pb n="1.271"/>
+<lb/>accidente calefacere et calidam refrigerare. Plurima sane
+<lb/>de horum omnium methodo in opere de medicamentis
+<lb/>tractantur. Id autem praesenti sermoni apponemus,
+<lb/>universum hoc materiae praesidiorum genus in offerendis,
+<lb/>faciendis, evacuandis atque extrinsecus incidentibus
+<lb/>consistere; quae si omnia artem constituens discusserit,
+<lb/>et particularem universae materiae scientiam habuerit,
+<lb/>non solum facultatis, sed et usus, ita universas causas
+<lb/>sanitatis, ut nihil ipsi ad medentis artis constitutionem
+<lb/>desit, absolverit, omnibus his in capita duo redactis,
+<lb/>corporum, quibus auxilia adhibentur, cognitionem et
+<lb/>ipsam auxiliorum naturam.</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+<p rend="indent">Enimvero qui, quae sunt artis, facturus
+<lb/>est, ipsi reliquum erit, ut quandam omnium sibi affectuum
+<lb/>dignoscendorum facultatem inveniat, eorumque
+<lb/>maxime, qui altis partibus insidenti. Neque enim hic ohvu
+<lb/>cujusque est singularum partium, vel simplicium, vel
+<pb n="1.272"/>
+<lb/>organicarum, quum in alto sitae fuerint, morbosum asa
+<lb/>sectam invenire. Attamen et hic methodo quadam partem
+<lb/>affectam simul cum ejus affectu comminisci conatu
+<lb/>dum est, de qua pluribus et a nobis alibi dictum est;
+<lb/>verum sicut aliarum omnium methodorum capita hic
+<lb/>perlustravimus, ita de his quoque disserere necesse est;
+<lb/>ac primum, quo eorum quae praeter naturam sunt astectunm
+<lb/>genere ipsorum cognitio speranda fit, instruere.
+<lb/>Tria namque universa sunt eorum, quae praeter naturam
+<lb/>dicuntur, genera. Unum, affectus actionem laedentes;
+<lb/>alterum, illorum causae; tertium, symptomata. Itaque
+<lb/>-principalissimae quidem causae, quum agunt, hanc
+<lb/>appellationem merentur; dicuntur tamen multoties causae,
+<lb/>etiamsi nondum quicquam agant, eo dumtaxat quod
+<lb/>agendi facultate polleant; ut cruditas morborum caula
+<lb/>dicitur, licet morbum nondum intulerit. Voco austu:
+<lb/>cruditatem non solum frustratam in ventriculo concadionem,
+<lb/>sed in vasis quoque, iecinore, corporisque
+<pb n="1.273"/>
+<lb/>mele universa. Symptomatum genus in tres secatur disserentias,
+<lb/>actionum tactionem, simplices quae corporibus
+<lb/>accidant qualitates, eorum quae excernuntur incommoderationem.
+<lb/>omnium vero horum causa corporis est
+<lb/>allectus, quem sive quis morbum appellet, sive affectionem,
+<lb/>nihil interest. Cognoscitur autem merito ex fymptcmatis
+<lb/>causae rationem ipsorum respectu obtinere.
+<lb/>Quaedam enim ex ipfis necessario affectus sequuntur,
+<lb/>quaedam non necessario, sed vel saepe, vel raro, vel ambigue:
+<lb/>quemadmodum rursus alia symptomata affectus differentiam
+<lb/>ex necessitate sequuntur, quaedam ut plurimum,
+<lb/>quaedam incerto, quaedam raro. Quae jam ex necessitite
+<lb/>morbum sequuntur symptomata, pathognomonica,
+<lb/>hoc est affectuum iudicatoria, nuncupant. Atque hae
+<lb/>certae morborum notae censendae sunt. Quae vero non
+<lb/>necessario, vel morbi differentiam, vel morem, vel maguitudinem
+<lb/>indicant. Sed exemplo quodam cujusque
+<lb/>praedictorum vim ostendam, ut eo adjutus similiter in
+<pb n="1.274"/>
+<lb/>omnibus eadem methodo te ipsum exerceas. Supponatur
+<lb/>igitur membrana costas succingens inflammatione laborare.
+<lb/>Affectus hic inflammatio est, symptomata quidetn
+<lb/>necessario habens tumorem praeter naturam, ruborem,
+<lb/>dolorem; quorum duo jam non sublucidum:, solus autem
+<lb/>dolor relinquitur, qui costis incumbens punctorius
+<lb/>concitatur. Dolet igitur homo, quod inflammatio astectus
+<lb/>sit, doloris autem species pungens est, quod affectae
+<lb/>partis substantia membranula siti. Plumae vero incumbit,
+<lb/>quia illa afficitur: quin etiam dolor latissime spargitur,
+<lb/>quod membrana costas succingens plurimum extensa sit.
+<lb/>Febris autem ex necessitate sequitur, tum propter affectum,
+<lb/>tum propter partis affectae situm, quorum alterum si absit,
+<lb/>febris necessario non sequetur. Neque enim si digitus
+<lb/>inflammatione laboret, continuo febris invadit, quoniam
+<lb/>procul a corde situs est. Neque quum membrana suocingens
+<lb/>affecta suerit, mox affectus vel scirrhus, vel oedema
+<lb/>contingit; quanquam difficultas spirandi ex iis sit,
+<pb n="1.275"/>
+<lb/>quae necessario partem affectam sequuntur, quia spirabilis
+<lb/>cuiusdam instrumenti portio est. Atqui spirandi
+<lb/>difficultatis species non propter partem, sed ob affectum
+<lb/>erit; dolor enim respirationis instrumenta plurimum diduci
+<lb/>prohibet; ideoque actionem respirationis, usu nondum
+<lb/>expleto, prius dissolvit. Unde ad fecundam actionem
+<lb/>celeriter accedere necessitas est, non amplius tantum
+<lb/>quietis intermittendo, quantum in naturali statu;
+<lb/>atque sic spiritus parvus et frequens redditur. At et
+<lb/>pulsuum alteratio ex necessitate membranae costas succingentis
+<lb/>inflammationem comitatur, tum quae a febribus,
+<lb/>tum quae ab affectae partis specie non separatur.
+<lb/>arteriae namque ipsis, quod quidem febricitant, majorem,
+<lb/>celeriorem et frequentiorem pulsum edunt, quia
+<lb/>vero nervosa pars est, quae inflammatione infestatur,
+<lb/>cum tensione simul ac duritie. Haec igitur necessario
+<lb/>succi agentis membranae inflammationem symptomata sequuntur.
+<lb/>Unum autem est ex his, quae necessario sequuntur,
+<pb n="1.276"/>
+<lb/>decubitus vel in latus affectum, qui minus est dolorisicus,
+<lb/>vel in oppositum, vel in utrumque similiter
+<lb/>Nam quum duplex succingens membrana sit, si quidem exterior
+<lb/>ejus pars ossibus incumbens validiore inflammatione
+<lb/>laboret, facilius in oppositum latus reclinant. Etenim in
+<lb/>affecta parte premuntur. Si vero altera interior aegrotet,
+<lb/>quod ut plurimum accidere consuerit, in oppositum
+<lb/>recumbentes vehementius dolent, quod pars inflammata
+<lb/>ipsis pendeat; quod si in affectam partem, minus;
+<lb/>non enim haec ab ossibus premitur, neque suspensa est,
+<lb/>rad ah utroque libera est, et super alterum illaesum affirmata.
+<lb/>Utrisque vero fuccingentis membranae partibus
+<lb/>affectis in utrumque latus aequaliter decumbunt. At
+<lb/>vcro quod dolor quibusdam ad hypochondrium perveniat,
+<lb/>aliis ad claviculam, id tum propter partis affectae
+<lb/>naturam fit, tum quia inflammationis symptoma dolorem
+<lb/>intendat. Quoniam enim ad claviculas usque membrana
+<lb/>succingens ascendit, et totum septum transversum,
+<pb n="1.277"/>
+<lb/>ubi superiores ejus partes inflammantur, jugulum deorsum
+<lb/>revelli videtur, ubi inferiores, dolor ad hypochondrium
+<lb/>pervenit. Igitur exiguam plane inflammationem
+<lb/> in costarum medio excitari oportet, ne in alteratram
+<lb/>partem pertingat, ut magna in ambas pervenit.
+<lb/>Quinetiam quod nonnulla resudent, ac tenuis ex inflammata
+<lb/>parte sanies effluat, tum propter morbum, tum
+<lb/>propter partem eveniet, quemadmodum in omnibus oris
+<lb/>partibus inflammatis et oculis accidit. Siquidem et ex
+<lb/>humorum influxu inflammatio suboritur, et pars rara est,
+<lb/>non, ut cutis, constricta densaque. Quum igitur copiosus simul
+<lb/>ac tenuis in inflammata parte humor subsistit, et pars
+<lb/>rara est, plurimum foras effunditur; quum vero e contrario
+<lb/>pauca fit et crassa fluxio, corpusque densum, paucissimuta;
+<lb/>quod autem est paucissimum, ad tussim quidem irritat,
+<lb/>nihil autem expuitur; quemadmodum, si fluxio fiat copiosissima,
+<lb/>et plurimum tussiunt aegri, et non pauca expuunt.
+<lb/>Ac tussis ab hoc affectu inseparabilis est; exereatio
+<pb n="1.278"/>
+<lb/>vero post tussim non inseparabilis, verum saeps
+<lb/>contingit. Si igitur expuant, sputum necessario colorabitur,
+<lb/>non tamen eodem perpetuo colore, quia nec in
+<lb/>parte inflammata ejusdem semper naturae est excrementum.
+<lb/>Quum igitur cruentum vel biliosum extiterit,
+<lb/>(talis autem in pleuritide plerumque fluxio est, quae inflammationem
+<lb/>efficit) coloratum est sputum ipsius cruore
+<lb/>refuso ab humore, qui in parte inflammata continetur:
+<lb/>rubrum sane, quum, quod in succingentem membranam
+<lb/>defluit, id cruentum est; flavam, quum biliosum
+<lb/>est. Si vero pituitosus humor primum et
+<lb/>impactus et putrefactus fluxionis inflammationem generantis
+<lb/>auctor fuerit, tunc spumosa expuunt; expuunt
+<lb/>autem et nigra nonnunquam -fluxione erasisti,
+<lb/>sive cruenta, sive biliosa fuerit. Haec igitur omnia
+<lb/>una cum affectae pariis ipsiusque affectus dignotione
+<lb/>fluxionis differentiam indicabunt Quare ex his, quae
+<lb/>dicta sunt, constat, tum cujusque partis aegrotae substantiam,
+<pb n="1.279"/>
+<lb/>tum communionem cum vicinis necessario esse cognoscendam
+<lb/>ad morbi ejusque laborantis loci inventionem.
+<lb/>Quod autem nihil referat, situm, vel compositionem,
+<lb/>vel cum aliis societatem communionemque dicere,
+<lb/>quis ignorat?</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+<p rend="indent">Ex praedictis autem liquet, quod tum
+<lb/>actionem tum usum singularum partium ferre sit necessariam;
+<lb/>ad haec etiamnum morborum et symptomatum
+<lb/>generationes; postea causas etiam morbos efficientes. Etenim
+<lb/>haec ad cujusque partis affectae ac una ipsius affectus
+<lb/>dignotionem et ad morbi ipsius differentias necessaria
+<lb/>videntur; sed et magnitudo et uniuscujusque
+<lb/>morbi mores ex his ipsis deprehenduntur; magnitudo
+<lb/>quidem et ex ipsorum affectus magnitudine, et
+<lb/>ex symptomatis illum consequentibus; mores autem ex
+<lb/>morbi differentia et symptomatis eum comitantibus.
+<lb/>Statim enim in proposito exemplo melancholicus
+<pb n="1.280"/>
+<lb/>humor, quum exuperat, perniciosissimus est, quod is
+<lb/>maxime malignus plurimum erodat, aegre concoquatur
+<lb/>et vix expurgetur, quodque copiosissimi caloris sit
+<lb/>index, a quo assatus dicitur. Omnium vero mitissimus
+<lb/>sanguineus humor est, quod dulcissimus et concoctu facillimus
+<lb/>existat. Reliqui duo humores inter bos dictos
+<lb/>consistunt medii, in simplicitate et malignitate. Ex lymptomatis,
+<lb/>nihil prorsus expuere perniciosum; tum quod detineri
+<lb/>ab inflammatione ipsum fluorem indicet; tum quod
+<lb/>intus manendo totus corrumpatur. At citra laborem
+<lb/>et ex facili excreare saluberrimum est. Si vero jam
+<lb/>sputum coctum suerit, hoc etiamnum quam saluberrimum
+<lb/>est. Caeterum pulsuum symptomata morbi morem repraesentant,
+<lb/>atque jam alia omnia, quae ex consensu
+<lb/>contingunt. deliria, sopores, fastidium, urinae, dejectiones
+<lb/>hoc aut illo modo factae. Proinde exercere nos
+<lb/>oportet in his omnibus praedictis, si morbum, partem
+<pb n="1.281"/>
+<lb/>affectam, morem, magnitudinem et eorum differentiam
+<lb/>velimus dignoscere; ex his vero ipsis praesagire licebit,
+<lb/>quo morbus desinet, et dexter auxiliorum usus. Etenim
+<lb/>praesagia medicum mortis non auctorem declarant, aegrosque
+<lb/>reddunt obtemperantes et ex multis remediorum
+<lb/>occasionem praedocent. Quod autem dexter remediorum
+<lb/>usus id artis quidem fit praecipuum, a quo universus
+<lb/>sermo manaverit, omnibus manifestum est At qua ratione
+<lb/>ex praedictis praesagia comparentur, paulo post
+<lb/>dicetur. Nunc etenim his, quae exposui, finem prius
+<lb/>imponere volo. Nam morborum et eos suscipientium
+<lb/>partium dignatio in uno nobis exemplo declarata est;
+<lb/>adjicere vero aliud quoddam simile nihil mali fuerit.
+<lb/>Nam eorum, quae excernuntur, idea permulta docet. Cum
+<lb/>ipsis autem concurrit, unde excretionem fieri cernimus; ut
+<lb/>ex ambobus coeuntibus stabilis una indicatio proveniat.
+<lb/>Membranoso etenim verbi gratia corpore excreta, indicatio
+<pb n="1.282"/>
+<lb/>quidem ex eo, quod apparet, talem partem exulceratas:
+<lb/>esse indicat, quae in summo membranae naturam obtineat;
+<lb/>id autem separatum significare nequit, attamen excretionis
+<lb/>ad affectam partem nos deducet. Quod etenim
+<lb/>deorsum dejectum est, intestini ulcerationem innuit, furfur:
+<lb/>vero vomitu rejectum ventriculi, tussiendo redditum membranarum,
+<lb/>quae asperas arterias integunt, at mictum vel
+<lb/>vesicae vel qui in pudendo est meatus. Has igitur ipsius
+<lb/>partes, ac praeterea quae per consensum et primario affectu
+<lb/>laborant, ab invicem discernere convenit principatu,
+<lb/>consequentia, magnitudine et parvitate, insuperque
+<lb/>accessione caularum utrumque depravantium. Mulsi
+<lb/>siquidem ob stomachi affectum, veI cerebro consentiente,
+<lb/>vel oculis suffusione laborantibus, melancholico symptomatis
+<lb/>infestantur. At si quis animum diligenter adhibeat,
+<lb/>commemoratos affectus cruditates et excrementa is
+<lb/>ventriculi orificio collecta siequi deprehendet; atque eosdem
+<lb/>simul intendi cum illis, quae os ventriculi laedunt,
+<pb n="1.283"/>
+<lb/>et remittere cum his, quae hoc juvare dicuntur. At universam
+<lb/>de affectis partibus tractationem transigere in
+<lb/>praesentia mihi propositum non est, quemadmodum nec
+<lb/>aliud quicquam eorum, quae in arte medica absoluta
+<lb/>sunt; verum solam inveniendi ipsa methodum ostendere
+<lb/>ac quomodo ea fini artis conjuncta sit. Atqui necessariam
+<lb/>est, ut variis se modis quisque exerceat in omnibus
+<lb/>nostris commentariis. Quod igitur in rem praesentem
+<lb/>requiritur, apponentes, ad methodos commemoratas
+<lb/>discedemus; atque hic rei formam esse censeto ; ubi
+<lb/>vero materiis inducta fuerit, totam substantiam, quum
+<lb/>omnia particulatim recensuero, sicut modo in paucis
+<lb/>exemplis factitavi, et haec tibi artis integra pars erit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+<p rend="indent">At superest, ut demonstremus, ad commodum
+<lb/>remediorum usum accuratam partis, quam curamus,
+<lb/>substantiae, conformationis ac situs cognitionem
+<lb/>esse necessariam. Substantia namque docet primos morbos,
+<pb n="1.284"/>
+<lb/>qui in intemperie consistunt, quantum a naturali
+<lb/>statu recesserint, quantumque ipsus singulos calefacere,
+<lb/>refrigerare, exiccare et humectare oporteat. Confirmatio
+<lb/>vero ipsos per se morbos docet, de quibus antea
+<lb/>dictum est, et eorum magnitudinem simul indicat; nam
+<lb/>quantum quodque a naturali statu decessit, tantum accedit
+<lb/>magnitudo, una vero cum magnitudine et id quod adusque
+<lb/>quantum ipsa quae decesserunt ad naturam per contraria
+<lb/>restituenda sint, ex ipsa deprehenditur. Itaque haec
+<lb/>proportione morbis in intemperie respondent; obstructiones
+<lb/>autem et constipationes hujus sunt generis. At proprium
+<lb/>eximiumque evacuationis modum ostendit ex osculis
+<lb/>et figuris, quas sortitum est quod curatur organum. Id autem
+<lb/>cum iis communicat, quae a situ indicationem habent,
+<lb/>de quibus jam dicamus. Quae igitur inter ea proportionem
+<lb/>habent ad magnitudinis dignotionem, aut ad remediorum
+<lb/>usus quantitatem, non opus est dicere. Quae vero
+<lb/>eximia ac praecipua sunt, ea deinceps docenda, quoniam
+<pb n="1.285"/>
+<lb/>et ufus ad curationem eorum est maximus, quae indicatioribus
+<lb/>a conformatione sumptis immiscentur; quin et
+<lb/>hic paucis exemplis, ut methodum cognoscamus, sermo
+<lb/>futurus est Obstructio sime unus quidam est organicorum
+<lb/>morborum, potissimum vero jecori tum propter
+<lb/>ejus structuram, tum ob actionem accidit. Etenim venae,
+<lb/>quae a portis in totam visceris cavam partem
+<lb/>distribuuntur, osculis earum, quae in gibba sunt, tensum
+<lb/>latentibus cohaerent. Defertur autem totum alimentum
+<lb/>ex ventriculo ad locum unum hepatis, quem ab eo,
+<lb/>quod modo dictum est, portas appellanti Nemo enim
+<lb/>in civitatem ingredi potest, ursi portas primo transeat;
+<lb/>neque alimentum ad jecur pervenire, priusquam in
+<lb/>hoc loco luerit; inde vero in totam jecoris cavam partem
+<lb/>distribuitur, ac deinde per dictos venarum terminos
+<lb/>is gibbum transsumitur. Nihil igitur mirum est, viscus
+<lb/>hoc crebris obstructionibus ob viarum angustiam et
+<lb/>substantiae permeantis copiam corripi. Harum igitur curatio
+<pb n="1.286"/>
+<lb/>fuerit, antequam plures augeantur et homo febricitet,
+<lb/>eduliorum eri medicamentorum attenuantium oblatio.
+<lb/>Multis autem adauctis, non modo ipfa, sed et vacuatio
+<lb/>curabit, quam quibus locis astrui oporteat, tum
+<lb/>visceris conformatio, tum situs demonstrat. Ex his igitur
+<lb/>procedentes, quae in cavis quidem hepatis sunt,
+<lb/>ea ad intestinum impellamus, quae vero in gibbis existunt,
+<lb/>per urinas vacuabimus: simili modo et quae in
+<lb/>thorace et pulmone continentur, si vacuanda sint, a
+<lb/>conformatione ac situ didicimus per tusses expurgare:
+<lb/>simili modo et quae in cerebro haerent, ad nares trahere.
+<lb/>Non minus autem partium inflammatione laborantium
+<lb/>sanatio ex situ et conformatione sumitur. Et enim
+<lb/>et horum primus fcopus est humoris in partem
+<lb/>inflammatam decumbentis evacuatio. Quomodo autem
+<lb/>hic evacuandus sit, continentium organicarum partium
+<lb/>natura docet. Ab his igitur instituti, fluxiones in coxam
+<lb/>decumbentes per venas poplitis et tali vacuabimus,
+<pb n="1.287"/>
+<lb/>quemadmodum et ea, quae in uteris continentur. Quae
+<lb/>vero in thorace et pulmone, per interiorem cubiti venam.
+<lb/>Quae denique in capite et cervice infestant, per
+<lb/>humeralem. Optima namque et facillima est per proximas
+<lb/>et affectae parti communes venas evacuatio. Atque
+<lb/>quod tumet, per halitum discutere, et hoc sane ex
+<lb/>morbo iudicationem habet. Verum particularem auxiliorum
+<lb/>usum variandum esse, partis affectae situs ostenditi
+<lb/>Qui namque in summa cute affectus constituti sunt,
+<lb/>fis tale resolvens esse medicamentum convenit, qualis
+<lb/>inflammationis species indicat. Qui in allo latent, hoc
+<lb/>acrioribus medicamentis indigent, quo magis ab exterioribus
+<lb/>recesserunt. Quare nonnunquam, si vehementer
+<lb/>admodum in alto lateant, cucurbitulis utimur; quod in
+<lb/>summa cute ortis inflammat lenibus quam maxime contractum
+<lb/>est. Ita vero si adstringentis medicamenti usus
+<lb/>erit, loci id desiderantis situm inspiciemus. Nam si eo
+<pb n="1.288"/>
+<lb/>medicamentum adstringens pervenire potest, nihil vetat
+<lb/>id adhiberi. Sin autem non possit, considerandum venit,
+<lb/>ne quando ex proximis humorem in locum affectum
+<lb/>propellamus. Proinde vel miscenda est adstringenti
+<lb/>medicamento facultas quaedam ejusmodi, quae veluti
+<lb/>id manu ducat, vel eo non utendum est Maxime siquidem
+<lb/>eos laedere novi, qui ex pulmone sanguinem extussientibus.
+<lb/>medicamenta adstringentia toti thoraci nudique
+<lb/>apposuerunt. Nam praeterquam quod facultas
+<lb/>eorum in pulmonem non penetraret, etiam sanguis,
+<lb/>qui in thorace continebatur, in viscus illud agebatur.
+<lb/>Atque de his satis esse dictum arbitror ad
+<lb/>praesentem disputationem. Tantum igitur adhuc praefatus,
+<lb/>quod methodus haec forma solum commentarii
+<lb/>hujus extet, aliud aggrediar. Caeterum singularum
+<lb/>corporis partium scientia ac discursus velut universa
+<lb/>substantia est, quam in aliis commentariis transegimus.
+<lb/></p>
+<pb n="1.289"/>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+<p rend="indent">De praenotione igitur deinceps dicturi
+<lb/>fumus, quum nobis tum ad alia quaedam, tum
+<lb/>ad curationem non minimum utilis videatur. Itaque
+<lb/>primum volenti praenoscendi artem constituere necessarium
+<lb/>est prius considerasse, utrum, quemadmodum uniuscujusque
+<lb/>animantis natura proprium vitae tempus sortitur,
+<lb/>ita et morbi singuli, ut fieri nequeat quatuor diebus
+<lb/>solvi morbum, cujus naturale tempus praescriptum
+<lb/>duorum sit mensium; an omnis morbus diuturnior fieri
+<lb/>et celerrime fulvi possit. Nunc tamen, quia plerique jam
+<lb/>futurorum praescii fuerunt medici, non amplius ab idiotis
+<lb/>quaeritur, utrum possibile sit aliquem futuri eventus
+<lb/>fieri praescium, an vero impossibile, sed serie omnes et
+<lb/>rem possibilem tenent, et medicum percontantur, quo
+<lb/>certo tempore morbus solvetur, Ad praesentem itaque
+<lb/>tractationem nihil deterius accesserit, si nunc primum
+<lb/>nos artem prognosticam constituere supponamus, etenim
+<lb/>reliqua omnia. simili ratione pertractavimus. Unum sane
+<pb n="1.290"/>
+<lb/>et primum necessarium est, (si praenotio quaedam fit) etsi
+<lb/>nonnulla, quae certo sint futuro tempore ventura.
+<lb/>Scrutandum autem deinceps, quomodo quis, haec quas
+<lb/>et quot sint, inveniat. Non enim omnia, quae aegrotanti
+<lb/>furit eventura; necessarium habent ortum. Nocturnas
+<lb/>enim ex vicinis tumultus, et canum latratus, vernantia
+<lb/>quaedam molesta aegros reddunt insomnes; quorum quodque
+<lb/>neque necessariam habet generationem, neque certant
+<lb/>praenotionem. An igitur, quae morbi ratione proveniant,
+<lb/>et praefinitam generationem habent et certam praenotionem,
+<lb/>an neque haec universa? Potest enim repente humor
+<lb/>aliquis superfluus in corpore interius ad partem
+<lb/>aliquam vitae necessariam prosiliens confluere; quemadmodum
+<lb/>contra alius ex nobili parte in ignobilem
+<lb/>transmigrare. At eum, qui in nobilem partem invectus
+<lb/>est, summum periculum ex necessitate sequetur; qui vero
+<lb/>in obscuram transfertur, repentina ac inopinata laborantis
+<lb/>salus erit. At vero in hujusmodi constitutionibus
+<pb n="1.291"/>
+<lb/>id ipsum duntaxat praenoscere licet, tum quod securum,
+<lb/>tum quod periculosum est, non tamen, quo quid desinat,
+<lb/>accurate queas invenire. ln quibus vero non amplius:
+<lb/>excrementa defluunt, sed in partem aliquam quum decubuerint,
+<lb/>illam obsident, in his futurum licet praenoscere,
+<lb/>quum sciamus et naturae facultates, quibus animal
+<lb/>gubernatur, non esse exiguas, et quaenam ipsarum sit differentia,
+<lb/>quin etiam quae cum sanguine per totum animal
+<lb/>feruntur excrementa, citra immoderatam copiam, ea
+<lb/>statum praefinitum coctionis tempus habent proprium
+<lb/>singula, fi modo cnjusque excrementi naturam iuvenemmus.
+<lb/>Sic enim artificio quiddam de ejus concoctione
+<lb/>coniectare licebit, si nimirum omnia circa aegrotum
+<lb/>recte administrentur. Nam quicunque ab aliquo errores
+<lb/>committuntur, causae constituuntur, quae aut morbi
+<lb/>solutionem remorantur, aut mortem acceleranti Atque
+<lb/>hujus rei toto hoc sermone, si alterius cujus quam,
+<lb/>meminisse oportet. Solae namque praenotiones contingent
+<lb/>ab optimo medico, eo quidem recte curante, et
+<pb n="1.292"/>
+<lb/>aegro nihil delinquente. At talem medicis praenotionem
+<lb/>esse arbitrari, qualem vates profitentur, ridiculum est.
+<lb/>Illi siquidem hominem nono die (si fors ita prospere tuIerit)
+<lb/>incolumem evastatum denunciant, his non additis, fi
+<lb/>omnia probe administrentur; hi namque omnia vel aufpicato
+<lb/>vel inauspicato cessura esse praesagiunt. Medicus
+<lb/>vero futurum non ita. praedicit, sed novit, fi omnia
+<lb/>decenter fiant, septimo die, exempli gratia, morbum folutum
+<lb/>iri; si quis autem error accesserit, isque parvus
+<lb/>fuerit, morbi solutionem ex feptimo in nonum diem
+<lb/>transiturum; si major, in undecimum; si vero multo rusjor,
+<lb/>in decimum quartum; si maximus, periculum pro
+<lb/>salute certa consequnturum. Intendit enim semper medirus
+<lb/>animum hisce duobus ut adversariis, et morbo et
+<lb/>naturae. Ac primum quidem futurae salutis hommis,
+<lb/>vel interitus, ex dignotione. valentioris atque postea
+<lb/>praefiniti temporis ex eo, quanto alterutrum valentius
+<pb n="1.293"/>
+<lb/>sit, praenotionem astruit. Neque mirari oportet, si,
+<lb/>utriusque viribus perspectis, victurum deprehendas. Videmus
+<lb/>enim non paucos gymnastas ex primis ac mutuis
+<lb/>quos luctatores concitant insultibus eum, qui superaturus
+<lb/>fit, praedicere saepe etiam ante victoriam, quodque
+<lb/>adversarium celerrime sit. prostraturus. Hoc autem
+<lb/>agunt, quum re quadam notabili alterum altero valentiorem
+<lb/>esse conspiciunt. Itaque medicus tum sanitatem
+<lb/>tum mortem praesagiet, non ex aliis exercitationibus,
+<lb/>quam ex accurata roboris morbi et naturae cognitione.
+<lb/>Sed ex iis ipsis. etiam praefinitum utriusque terminum
+<lb/>reperiet. Cita namque erit morbi solutio, quum facultas
+<lb/>robusta fuerit. Sin imbecillis illa, morbus autem
+<lb/>validior, mors accelerat. Sed excessus magnitudo tempus
+<lb/>termini indicabit. Ab his equidem scopis medicus
+<lb/>saturi praenotionem ducet. Quibus autum observationibus
+<lb/>ipsi abunde liceat fcopos dignoscere; fusius in libris de
+<pb n="1.294"/>
+<lb/>crisibus tractatum est Nunc autem etiam universalis, ut
+<lb/>aliorum omnium, ita et hujusmodi methodus tractabitur.
+<lb/>Robur quidem naturae ex propriis functionibus cognosces,
+<lb/>maxime vero ex iis, quae pulsum edunt, quoniam
+<lb/>is vitalis facultatis opus est Magnitudinem autem morbi
+<lb/>ex propriis symptomatibus. At ri, quo alterum ab
+<lb/>altero evincitur, ex coctionibus et cruditatibus depreliendemus;
+<lb/>has autem ipsas ex propriis excrementis,
+<lb/>ventris quidem per ea, quae deliciantur; vasorum vero
+<lb/>per urinas; totius denique corporis per sudores, atque
+<lb/>ita alias omnes, quae in una parte quadam aut pluribus
+<lb/>consistunt, eas quidem, quae thoracis ac pulmonis
+<lb/>sunt, per ea, quae tussi excreantur;. quae vero vesicae
+<lb/>aut renum, per ea, quae cum urinis inferuntur. Jecoris
+<lb/>autem simam partem et mefenterium, ut facultate se
+<lb/>habeant, per ea, quae deiiciuntur; ac superiorem ventriculum
+<lb/>et stomachum ex iis, quae vomitu excluduntur.
+<lb/>Quaecunque vero per palatum excernuntur, vel per nares,
+<lb/>vel per aures, cerebri, ut lo habeat, robur indicabunt.
+<pb n="1.295"/>
+<lb/>Ad hoc omnibus est commune, morbum prius
+<lb/>non posse solvi, quam in prodeuntibus excrementis signa
+<lb/>concoctionis appareant, sive aures laborent, sive oculi, sive
+<lb/>fauces,. sive aliqua pars fuerit exulcerata. Et ut summatim
+<lb/>dicam, concoctiones crisis celeritatem falutisque fecuritatem
+<lb/>significanti Cruda vero, incocta et quae in pravos
+<lb/>abscessus vertuntur, nullam crifim, vel labores, vel mortes,
+<lb/>vel ipsorum morborum recidivas nunciant. Haec
+<lb/>de praenotione ad rem praesentem sufficiant. Univerfus
+<lb/>siquidem de his sermo peculiaribus libris proditus est,
+<lb/>pluribus Iane particulatim, led fere omnia theoremata
+<lb/>complectentibus, quales de. pulsibus, crisibus, ac de
+<lb/>diebus decretoriis sunt infcripti. Ex quibus enim
+<lb/>quis praenoscat, potissimum hisce tribus commentariis
+<lb/>ostensum est. Ac milii sane videtur medendi methodunr
+<lb/>jam finem habere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="18">
+<p rend="indent">Quandoquidem et bos,. qui a morbis
+<lb/>saluti convalescunt, ad sanum firmumque virium robur
+<pb n="1.296"/>
+<lb/>duceie convenit, et eos, qui in morbos proclives decidant,
+<lb/>a morbis praeservare; et eos etiamnum, qui citra
+<lb/>laesionem ullam sanitate fruuntur, in ea conservare, ac
+<lb/>tres hae residuae artis sunt partes, paucissimis verbis
+<lb/>etiam de suarum constitutione aliquid disserendum.
+<lb/>Quum igitur et antea dictum sit,. tria esse eorum universa
+<lb/>genera, quae praeter naturam sunt, cautas, asteotus
+<lb/>et symptomata, praeservatrix utique pars artis
+<lb/>erit, quam et proprie vocant prophylacticen, in primo
+<lb/>genere consistens. Quando enim vel copia quaedam hamorum,
+<lb/>vel pravitas, vel obstructio, vel corrumpens vis
+<lb/>corpori innascitur, periculum est, ne homo quam pliunum
+<lb/>aegrotet, aliquando etiam extreme periclitetur.
+<lb/>Verum interdum difficile hujusmodi causae queunt cognosci,
+<lb/>quum hominem minime infestant, ut certe venenum
+<lb/>canis rabie laborantis, cujus signum proprium
+<lb/>nullum in corpore continetur, antequam ad commorsum
+<lb/>rabies prope appulerit. Quare medicum hasce causas
+<lb/>ab ipsis aegrotantibus sciscitari necessarium est, et quae
+<pb n="1.297"/>
+<lb/>singula ipsis obvenerint. Quum tamen plenitudo, aut
+<lb/>humorum pravitas, vel tumorem corporis procreat, vel
+<lb/>viscus aliquod obstruit, licet ipsa dignoscere per quaedam
+<lb/>symptomata media quodammodo eorum, tum quae
+<lb/>sanis insunt, tum quae aegris accidunt. Etenim quae
+<lb/>fanis insunt, omnia secundum naturam ac illaesa sunt;
+<lb/>quae aegris accidunt, tum praeter naturam, tum cum laesione
+<lb/>existunt, horum intermedia ex genere quidem eorum
+<lb/>sunt, quae morbis accidunt, sed tam- exigua magnitudinibus
+<lb/>et viribus imbecilla, ut consuetae ab ipfis cuique
+<lb/>parti functiones nondum interturbentur. Si namque doIor
+<lb/>aliquis capitis vel alterius cuiuspiam partis fuerit,
+<lb/>ita parvus, ut hominem nondum lecto decumbere cogat;
+<lb/>sed et fi gravitas vel in hypochondriis, vel capite, veI
+<lb/>quadam alia parte, vel efficere, neque haec potuerit a
+<lb/>solitis functionibus deturbare, lea etiamnum magis tumor
+<lb/>corporis, aut macies, aut decoloratio, et ad motus scguitics,
+<lb/>aut somnolenta dispositio, aut vigiliae a functio.
+<pb n="1.298"/>
+<lb/>nibus ad vitae actiones necessariis haud abducere satis
+<lb/>valuerint, imo nec inappetentia, Vel adaucta vehemenlina
+<lb/>ciborum appetentia ; ambo siquidem corpore non
+<lb/>absolute sano .oboriuntur, quemadmodum et praeter rationem
+<lb/>scfe haud sitibundos, vel sitibundos; aut stannacho
+<lb/>morderi feu ventriculo; aut lassatos sisse sentire;
+<lb/>talis enim typus quidam est eorum, quae in morbum
+<lb/>decidentibus accidunt; at haec efficientium affectuum
+<lb/>emendatio, si summatim quidem loquar, contrariis, ut
+<lb/>prius ostensum est, celebratur. Si vero articulatim explicem,
+<lb/>supervacuum omne evacuari convenit, distinctione
+<lb/>prius facta, quomodo sit supervacuum, an ut quantum,
+<lb/>sive ut quale, sive ut utrumque. Quod autem in
+<lb/>naturalem statum redire potest,. id contrariis alterare
+<lb/>oportet, crassem quidem ac lentum attenuantibus, tenue
+<lb/>vero iucrassantibns, communiter autem utrumque coneoquestibus,
+<lb/>obstructiones aperientibus; at quae toto genere
+<lb/>praeter naturam sunt, qualia venena et animalium
+<lb/>virus jaculantium ictus, alterautibus et vacuaatibus.
+<pb n="1.299"/>
+<lb/>Alterationes quidem per contraria, vel tota substantia,
+<lb/>vel una qualitate, vel duabus agentia fiunt; evacuationes
+<lb/>vero per remedia attrahendi facultatibus praedita.
+<lb/>Quibus autem auxiliis haec aliquis acturus sit, ab ipsis
+<lb/>affectibus ei petendum. Ei namque omnes peraeque humcres
+<lb/>aucti fuerint, venae sectione vacuati praecipua
+<lb/>ac maxima. celebrabitur, deinde frictionibus, exercitiis,
+<lb/>et balneis, et inedia. Hoc autem pacto vacuare oportet,
+<lb/>si sanguis duntaxat exuberaverit. Si vero bilis flavae
+<lb/>vel atrae humor, vel aquosum quoddam .humoris terutu,
+<lb/>vernatione quidem, sed non simili utendum est.
+<lb/>itam quae inprimis quidem sunt venis excrementa, medicameutis
+<lb/>alvum subducentibus expurganda sunt; quae
+<lb/>vero in aliis, per urinas quidem aquosis ac tenuia, biliofa
+<lb/>vero purgatione.. Sed possunt quoque tenuia alvum
+<lb/>subducentibus vacuari. At quae in toto corporis
+<lb/>habitu stabulantur, tenuia quidem per sudores et medicamenta;
+<lb/>quae cuti admota exiccare consueverunt. Verum
+<pb n="1.300"/>
+<lb/>si biliosa extiterint, primum purgatione, deinde
+<lb/>per cutim evacuare convenit. Quod si pituitosus exaberet
+<lb/>humor, si falsa quidem fuerit pituita, purgare; sin
+<lb/>acida, alterare moliatur is, qui naturam ad ejus concoctionem
+<lb/>juvat. At sane dulcis multo facilius etiamnum
+<lb/>concoquitur. Ad concoctionem autem ducit quies, moaeratus
+<lb/>calor, ciborum boni succi modicorum eius, ac
+<lb/>vini modice calefacientis potio. At calorem moderatum
+<lb/>frictio temperata et commoderatus aquarum calidarum
+<lb/>usus, et edulia, et medicamenta mediocriter casciscientis
+<lb/>promovent. obstructiones discutiunt, quaecunque
+<lb/>efculenta, et potulenta, et medicamenta attenuare nata
+<lb/>sunt. At horum materias ut et invenire et judicare
+<lb/>deceat, uno opere exposuimus, quod de simplicium medicamentornm
+<lb/>facultate inscripsimus. Quinariam in
+<lb/>libro de victu attenuante traditum est</p>
+</div>
+<div type="textpart" subtype="chapter" n="19">
+<p rend="indent">Tempus itaque jam est, ut ad eos, qui ex
+<pb n="1.301"/>
+<lb/>morbis convalescunt, oratione transeamus, in quibus
+<lb/>neque causa est praeter naturam, neque affectus, scd
+<lb/>sola cum virium imbecillitate macies. Proindeque in
+<lb/>eam, qui secundum naturam sit, statum degentium, reduetio
+<lb/>refectio corroboratioque est, quae ex connnoderatis
+<lb/>tum exercitationibus, tum alimentis comparatur.
+<lb/>sed et materias, quibus motus et nutritio fieri possint;
+<lb/>in opere de sanitate tuenda explicavimus. At ne ea de
+<lb/>re quid praetenti scrmoni defit, nunc etiam universae
+<lb/>artis sanitatis tuendae, non susum refectricis, quam
+<lb/>analepticen vocant, methodus repetenda est. Ac pritnum,
+<lb/>quodnam ipsorum genus existat, idne hygieinen,
+<lb/>quod praesentem sanitatem tuetur, an hoc solo a thecagentico
+<lb/>seu curandi genere disserat, quod paulatim
+<lb/>emendationem moliatur ? corpori namque priorem statum
+<lb/>conservanti ea quae illi praesit arte haud opus fuerit.
+<lb/>Verum quia corrumpitur; nec quod prius erat idem
+<lb/>permanet, id ipsum causa est, cur ea, quae ipsi prospiceret,
+<pb n="1.302"/>
+<lb/>indigeat. Enimvero si id corpus vacuari exhauririque
+<lb/>fotum obtingeret, defectum cibus potusque refercirent.
+<lb/>Si vero aut humorum copia, aut excrementorum
+<lb/>pravitas coacervetur, ipsi opus erit exercitationibus scopum
+<lb/>eum habentibus, ut tum humorem evacuent et
+<lb/>purgent, tum excrementa concoquant, modo id causis
+<lb/>omnes, quae sanitatem ipsam evertere possunt, evitet,
+<lb/>frigus, calorem, lassitudinem, cruditatem, temulentiam,
+<lb/>vigilias, moerores,- excandescentiam, iram et
+<lb/>quaecunque id genus cetera. Non enim necesse est ea
+<lb/>sigillatim oratione prodere, quum, quod argumentum
+<lb/>proposuimus, jam absolutum sit. Propositum enim erat
+<lb/>non de omnibus medicinae partibus decursu disserere,
+<lb/>sed quemadmodum alias artes, ita et hanc luam a
+<lb/>finis notione sortitam esse constitutionem demonstrare.
+<lb/>Quum igitur id jam perfectum fit, summatim totam
+<lb/>medicinae rationem repetamus, moxque eam quam
+<pb n="1.303"/>
+<lb/>ad caeteras quasque artes effectivas habet analogiam
+<lb/>ostendentes.</p>
+</div>
+<div type="textpart" subtype="chapter" n="20">
+<p rend="indent">Est igitur medicina una effectivarum
+<lb/>artium, non tamen simpliciter, ut aedificatoria, fabrilis,
+<lb/>textoria; ted ut labefactatae domus emendatrix, et lacerarutn
+<lb/>vestium sartrix. Quoniam vero et harum ipfarum
+<lb/>duplicem esse constitutionem ostendimus, interdum
+<lb/>quidem artifice exemplum ex se fingente, interdum vere,
+<lb/>quod extrinsecus consistit, speculante; medicinam artem
+<lb/>secundi generis esse demonstravimus. Non enim ex
+<lb/>se ipsis fingit exemplum, verum ex Anatome totum id
+<lb/>diligenter speculata, vitiatum emendare conatur. Differt
+<lb/>autem in hoc ab artibus praedictis, quod plurima natura
+<lb/>operante subministrat; universam tamen speculationem,
+<lb/>ex qua medicus emendator et minister manat,
+<lb/>aliis effectivis artibus similem obtinet. Etenim partium
+<pb n="1.304"/>
+<lb/>similarium substantiam et generationis organicarum
+<lb/>modum pernovit: peraeque etiamnum tum affeetuum
+<lb/>inventionem, tum curationis cujusque ipsorum
+<lb/>scopos introduxit.</p>
+</div>
+</div></div></body>
+  </text>
+</TEI>

@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De morborum temporibus</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg046.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              
+              
+              <biblScope unit="pp" from="406" to="439">406-439</biblScope>
+              <date>1824</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x07">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="379" to="384">379-384</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="292" to="303">292-303</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x07">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg0057.tlg046.verbatim-lat1">
+<pb n="7.406"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="7.406"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE MORBOBVM TEMPORIBVS
+<lb/>LIBER.</head>
+
+
+<p rend="indent">Qualis animalibus est aetatum differentia,
+<lb/>talia morbis simt ea quae nominantur tempora. Neque enim
+<lb/>tempus simpliciter hoc vocabulo significatur, neque idoneum
+<lb/>illud tempus, pro quo praesidia quoque consideramus ; test
+<lb/>siola morborum, ut diximus, aetas, quae temporum vicissitudine
+<lb/>immutatur, ut animal aetatibus. Atque hoc omnibus
+<lb/>corruptelae  subjectis corporibus, aliis magis, aliis minus adesse
+<lb/>ridetur ; nam fi natura ipsorum mutationis alterationisque
+<pb n="7.407"/>
+<lb/>perpetuo expers maneretruam substantiam servans, non
+<lb/>corrumperetur. Quemadmodum igitur et ipsi nos geniti ad
+<lb/>rigorem usque augesirimus, inde jam eon tabescere incipientes,
+<lb/>ad extremam usque corruptionem declinamus, si omner
+<lb/>aetates fumus pertransitum; pari modo singuli morbi asprima
+<lb/>sua constitutione per incrementum ad statum usque perveniunt,
+<lb/>donec pro incrementiprioris proportione decrescentes
+<lb/>in totum dissolvantur- Videbitur autem forsan mor-.
+<lb/>borum pro tempore immutatio hoc suium ab animantium
+<lb/>aetate discrepare, quod his proprium generationis tempus sit,
+<lb/>quo omnes ad vitam necessariae partes conformantur ; morhorum
+<lb/>vero nullum hujuscemodi tempus sit proprium, sed a
+<lb/>primo statim intuitu augescant. ldque merito fit; nam animalia
+<lb/>corpora sunt; morbi corporum accidentia. Quere
+<lb/>conformationem generationem que corporum proprietas pofiniat;
+<lb/>accidentia vero ipsis, ut quae nullam conformatio-.
+<lb/>nem expetant, primo aditu protinus generationem simul acquirunt
+<pb n="7.408"/>
+<lb/>et ad incrementum festinant. Quae enim inflammatinnis
+<lb/>generatio este possit, qualis est animantis in utero conformatio?
+<lb/>vel quae erysipelas? vel quae, verbi gratia, sehris?
+<lb/>Nam unumquodque horum, statim atque primum
+<lb/>coepit initium, hujusmodi speciem habere videtur, qualem
+<lb/>ejus generis maximum habet; deficit autem sola ab illo Inagnitudine.
+<lb/>Etenim inflammata pars calidior feipfa evadit,
+<lb/>cum tumore majore, doloreque simul et tensione; sed haec
+<lb/>parva primo aditu sunt, inde vero ad magnitudinem quanta
+<lb/>dam non in omnibus aequalem increscunt; ex quo deinceps
+<lb/>veI discutitur praesidiis tumor praeter naturam, simulque
+<lb/>cum ipso doIor quoque et calor remittitur, vel in pus
+<lb/>tatur. Hae namque sunt inflammationis solutiones, si iesta
+<lb/>debeat; de his autem scrmo nobis primum instituatur, consideralione
+<lb/>de morbis, qui non solvuntur, nunc in posterum
+<lb/>dilata. Tempus itaque nullum inflammationis generatione
+<lb/>proprium et peculiare attribuitur ah eo, quod incrementi esi,
+<lb/>diversum, sed unum est universum, a primo infultu usque
+<pb n="7.409"/>
+<lb/>ad statum affectu increscente. Sic habet etiam de erysipe ;
+<lb/>latis onmibusque aliis ; etenim febris genere quidem, ut ar-t
+<lb/>hitror, caloris praeter naturam comprehenditur; hujus autem
+<lb/>proprium generationis tempus divitum non est; sed ubi
+<lb/>corpus primum calidius quam antea febrili calore fieri coepli,
+<lb/>inde aliud atque aliud tempus affectionis incrementum
+<lb/>ad usque perlectum statum excipit, quem in singulis rebus
+<lb/>summam esse magnitudinem intelligimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Hic sermo probabilis est et agonistam aliquem
+<lb/>strenuum ad responsionem requirit, qui propriam morboium
+<lb/>initiis speciem esse demonstret, ut animantium formatioui,
+<lb/>primumque tempus linio destinatum finibus propriis
+<lb/>circumscribi. Ad quae jam sane progredere;, quid sentiam,-.
+<lb/>docens, nili mihi casu quodam in hac sermonis parte versanti
+<lb/>Archigems divisio in mentem veniret, qur morbos in prima
+<lb/>et maxima tempora dividens, post principium. statim rigorem
+<lb/>ponit, medio tempore, incremento videlicet, omisse,. Quum
+<pb n="7.410"/>
+<lb/>enim totius principii proprium tempus non esse videatur, sed
+<lb/>id omne quod a primo intuitu ad statum intercedit, incrementum
+<lb/>esse, quomodo quis Ambigens consentiat, qui quod
+<lb/>ob omnibus conceditur, praeterit, ambiguum vero tanquam
+<lb/>concessum . prompte ponit ? Hac igitur ratione sermonem</p>
+<p>omnino deseruisse videtur magna disputatione indigentem,
+<lb/>ut morbi principium proprium typum habere, non parvitale
+<lb/>modo. a sequentibus ipsum differre ostendatur. Nos
+<lb/>vero jam morbi principium specie quadam a sequente incremento
+<lb/>diversum demonstrare conabimur. Initium autem sermonis
+<lb/>commemorationem habebit ex lis, quae evidenter
+<lb/>nobis omnibus in pluribus morbis apparent. Unde moti,
+<lb/>puto, et melici propemodum omnes, qui Archigenem praecesserunt,
+<lb/>principium quoddam cujusque morbi dicunt, non
+<lb/>prunum illum solum latitudinis expertem intuitum; sed
+<lb/>temporis longitudinem latitudinemque notatu dignam .aliquando
+<lb/>ipsi ufcribunt; post hoc ascensum; deinde statum;
+<lb/>ab hoc vocatam declinationem. Spectavimus enim nonnullos,
+<pb n="7.411"/>
+<lb/>dum actionem aliquam consuetam obirent, paulatim inhorruisse
+<lb/>primum ; delude iterum atque iterum inaequalitatem
+<lb/>quandam validiorem horroremque evidentiorem sensisse, ut
+<lb/>quae prius citra laesionem agebant, neque agere neque sustinere
+<lb/>possent, sed et decumberem et cooperiri desiderarent; atque
+<lb/>hoc aliis accidisse horis tribus, estis paucioribus, vel pluribus;
+<lb/>ex eo autem tempore calorem molestum, eumque praeter
+<lb/>naturam sensim augescentem percepisse ; nam his principium
+<lb/>accessionis ab incremento propria specie differre manifesto
+<lb/>videtur. Perspicuum vero est, quosdam augmentum
+<lb/>vocare incrementum, quemadmodum alios quosdam ascensum ;
+<lb/>nos omnibus vocabulis, ut in mentem venerit, utemur ;
+<lb/>omnia siquidem rem unam denunciant. Haec itaque res
+<lb/>quae tribus nominibus appellatur, sistit quandoque et ab incremento
+<lb/>cessat et sibi ipsi aequalis, vel longiore, vel breviere.
+<lb/>quodam tempore permanere videtur; deinde minor
+<lb/>quam suit, vel citius, vel diuturniori temporis spatio fieri;
+<lb/>interdumque febricitantis affectio ad integritatem sic reverti
+<pb n="7.412"/>
+<lb/>apparet, luterdurn a secundae accessionis insultu eandem speciem
+<lb/>cum praedicta habentis excipitur, atque interdum omu
+<lb/>bino praedicta fecundo rursus aegrotanti adveniunt; plerumque
+<lb/>tertio, quarto et quinto ; morbo videlicet ex iisdem
+<lb/>ad eadem eodem ordine per circulum quendam redeunte;
+<lb/>hunc circulum fingusi medici periodum, i. e. circuitum, appellant.
+<lb/>Nonnulli ex hujus genere vigluti quatuor horis describuntur,
+<lb/>vocanturque quotidiani. Aliqui quadraginta
+<lb/>octo, hoc est duobus diebus et noctibus, quos tertianarum
+<lb/>febrium circuitus nominanti .Alios quosdam septuaginta
+<lb/>duarum horarum tempus circumscribit, quorum febres ipsas
+<lb/>quartanas nuncupant; circulum autem universum, qui ad
+<lb/>unum principium revertitur; quaternarium circuitum ; flo
+<lb/>etiam ternarium sunul cum tertiana febre et quotidianunr
+<lb/>lingulis diebus revertentem simul cum quotidianis febribus.
+<lb/>At circuitus omnes aliquando ad integritatem perveniunt,
+<pb n="7.413"/>
+<lb/>ut in praedictis febribus, quotidiana, tertiana et quartana
+<lb/>alias ad declinationem fotum, vel propius ad integritatem,
+<lb/>vel etiam longius ab ea. venientem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Itaque de. tertiana febre exempli grati anobis
+<lb/>primum verba sint. Ab horrore moderato hujusmodi
+<lb/>febres incipiunt; deinde extremarum partium simul cunrhor-.
+<lb/>rore vehementiore frigus; postea jam et rigore et frigore,
+<lb/>concutiuntur plurimae corporis partes. Pulsus earum hoc,
+<lb/>tempore durior et minor, quam prius, evadit, velocior ma-.
+<lb/>nifesto in fyftole, iis qui fystolem fentire noverunt; nam
+<lb/>diastole multo quam fuit tardior praesertim in intuitu est:;
+<lb/>interdum. vero similis priori constitutioni permanere tibi ri-.
+<lb/>debitor. Quin et illa quies, quae post fystolen est, longior
+<lb/>quodammodo est; quae vero post diestolen est, eodem atqueilla
+<lb/>modo, sitepe quidem est priori aequalis, aliquando vero
+<lb/>non aequalis. Haec quibusdam horis aequinoctialibus duabus
+<lb/>fieri consueverunt; quibusdam .vel pluribus. eis, vel
+<pb n="7.414"/>
+<lb/>paucioribus; deinde pulsus major simul et velocior densiorque
+<lb/>fieri incipiens, feusim singulis commemoratis inores-.
+<lb/>citi Statim vero calidiores quam antea cum relatis pulsus
+<lb/>mutationibus redduntur; ita ut quidam multum calorem intus
+<lb/>sentiant, artubus adhuc frigentibus ; atque omnino inae..
+<lb/>qualitas quaedam non parva in corpore per hoc tempus invalescit.
+<lb/>Secundum hoc tempus ab illo primo est, in quo
+<lb/>ex priore statu universum quidem corpus refrigeratum fuit,
+<lb/>pulsus autem in contraria prioribus facta mutatio. In inte.gritate
+<lb/>iane, quae intermissio nobis nominetur, quoniam et .
+<lb/>Hippocrates eam ita nominavit, pulsus in naturali statu consillit,
+<lb/>quantum quidem sensu percipere possumus.; (hujusmodi
+<lb/>autem intermissio optima est] nam timui atque animal refrigeratum
+<lb/>est, in dictas paulo ante differentias repente transit;
+<lb/>postea rursus, ubi incalescit, ad contraria vertitur. Priurum
+<lb/>itaque tempus totius periodi evidenter est, quo corpus
+<lb/>cum mutationibus pulsus praedictis mulsit, vel ex sanitate,
+<pb n="7.415"/>
+<lb/>vel ex intermissione ad hoc deductum. Aliud ab hoc femur dum
+<lb/>est, quod pulsum et calorem in contraria mutat, donec
+<lb/>tota corporis moles aequabiliter incalescat. Post hoc, tertium
+<lb/>, quo calor etiamnum augescit, pulsibus pari ratione
+<lb/>magnitudine, celeritate et frequentia crescentibus. Quarta
+<lb/>constitutio post tres commemoratas conspicitur, omnibus jam
+<lb/>dictis aequalem sibi magnitudinem pro tensus nostri judicio
+<lb/>conservantibus. Ad haec quinta alia, quum jam calor ma-i
+<lb/>nifesto decrescit, halitus autem per cutem excernitur, pultus
+<lb/>ad naturalem statum redit, deponens omnia quae praeter
+<lb/>naturam in magnitudine, celeritate et densitate acquisierat;
+<lb/>hoc tempore plurimis ipsorum sudor oritur et post hunc intermissionis
+<lb/>tempus, sextum a praedictis advenit. Nihil
+<lb/>porro horum abditae rei hypothesis est, sed quotidie sare in
+<lb/>omnibus tertiana febre laborantibus ita fieri conspicitur ; atque
+<lb/>huic sermoni dictum Hippocratis addendum est, eum
+<pb n="7.416"/>
+<lb/>etiam sui medicus non sit, hactenus posse recte cognoscere,
+<lb/>si pulsus mutationes a sermone excipiamus. Majus enim
+<lb/>hae negotium habent, quam ut ab idiotis queant intelligi, at
+<lb/>caloris mutatio, etiamsi aegrotantes notare hanc nolint, stimulare
+<lb/>ipsa pungereque eos ita. consuevit, ut non lateat.
+<lb/>Heserunt itaque sic omnes aegri, saluto quidem vel sibi inae^
+<lb/>qualitatem,. vel horrorem ultro citroque cursitare ; deinde
+<lb/>simul cum extremorum refrigeratione horreres intendi, usequique
+<lb/>ipsos rigorem; postea rursus rigoris tandem fieri re-.
+<lb/>missionem, extremorum algores resolvi, aestus vehementis
+<lb/>sensum et sitim intus esse; ad haec rursus omnem quidem
+<lb/>inaequalitatem discedere, corpus vero totum aequabiliter
+<lb/>ardere, atque hoc semper magisque fieri; ac calorem tandem
+<lb/>aliquando sistere, sihique similem manere ; postremo solutionis
+<lb/>sensum sibi oboriri, idque ad constitutionem usque illam
+<lb/>non cessare, in qua primum se uri non amplius sentiunt.
+<lb/>In .tertianis itaque sebribus particulares circuitus differentiae hujusmodi
+<pb n="7.417"/>
+<lb/>quaedam sunt; in aliis autem febribus aliae disseneutrae;
+<lb/>de quibus ordine disseram.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Nunc in hac primum, quae prima propoi
+<lb/>sita est, fermo expendatur. Primum igitur erat tempus,
+<lb/>quod integritati cohaeret, frigoris fensum praebens, quod
+<lb/>principium nominavimus; secundum, quod frigus, ut siierum
+<lb/>est, paulatim deponit et vocetur: concitae doctrinae
+<lb/>gratia inaequalitatis tempus; ab hoc tertium,- quod est aequalis
+<lb/>incrementi; postea quartum, quod eststatus; quintum,
+<lb/>quod est imminutionis ; postremo sextum, quod est integrisatis.
+<lb/>Quod igitur siex dictae regulares in tertianarum se .t
+<lb/>brium circuitibus differentiae sint, tenso et memoria, non
+<lb/>demonstratione logica indiget. Sex autem ipsis existentibus
+<lb/>nomina praestat imponere; tum compendii tum manifestae
+<lb/>explicationis gratia; quemadmodum lex quaedam est communis
+<lb/>omnibus Graecis, sit quarum rerum nomina apud vetustiores
+<lb/>usurpata invenimus; sus utamur; quarum vero non
+<lb/>habemus, vel ab aliqua earum rerum, quarum habemus nomina,
+<pb n="7.418"/>
+<lb/>transferamus, vel ipsi secundum quandam similitudinem
+<lb/>cum iis quae denominata sunt; fingamus, vel dictis de
+<lb/>.aliisabutamur. . Licet quidem, fi quis velit, ne consueta
+<lb/>quidem Graecis servare, si facere ipsum oporteat, ad praedictos
+<lb/>scopas. respicere. Atque hoc frequens est apud recentiore.s
+<lb/>melicos, ut qui non institutione a puero, quemadmodum
+<lb/>veteres,. instructi sint. Concedendum itaque ipfis
+<lb/>est, ut volent,. appellere, quoniam contentiosi sunt et impu..dentes;
+<lb/>frequenter etiam omnibus utendum, ut illi praecipiunt,
+<lb/>quo nugacitatem ipsorum sugiamus. Neque e<hi rend="u">nim</hi>
+<lb/>propter peccatum . in nominibus aegrotantes incommodi
+<lb/>quicquam capient. Quum autem vel tempus aliquod clam
+<lb/>totum praetereunt, vel praedictis quod pon apparet, animal
+<lb/>gunt, .nun concedendum ipsis est, tanquam hujusmodipeccato
+<lb/>ad .aegrorum laesionem jam spectante. . Melius itaque
+<lb/>est,. hic erratorum causas. prospicere, ob quas medicormn
+<lb/>plurimi. falluntur, .tum ut ne ipsi erroris quippiam commis-tantus;
+<pb n="7.419"/>
+<lb/>tum ut istis verum rei riam, si velint, ostendamus.
+<lb/>Quidam enim ex eis lugenio tam refractario fiunt praediti,
+<lb/>-ut ne si Apollinem ipsum, vel Aesculapium habuerint cupientes
+<lb/>iptos docere et monentes, obtemperare unquam aut
+<lb/>ames praebere possint, ..nedum dicta animo suscipere; Aquare
+<lb/>nec illis haec scribentur, Haec igitur erroris ipsorum causa
+<lb/>pruna et maxima est; morborum differentiae ignorantia.
+<lb/>Tertiana siquidem, ut jam expositum est, moveri et veluti
+<lb/>aetates tuas perficere consuevit; quanquam non. similem tuotum
+<lb/>quiris morbus obtinet ; quere neque nos recte, quae de
+<lb/>tertianis diximus, ad omnes transferemus; nec alius quispram
+<lb/>ab uno affectu progressus communem unam omnium rationem
+<lb/>esse existimabit. - Haec itaque prima maximeque errati
+<lb/>ipsorum causa esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Alias autem causes pro usus ordlue deinceps
+<lb/>explicabo, ubi nomina prius commemoratis tertianae
+<lb/>periodi temporibus imposuerint. Proinde quum IIippocrates
+<lb/>dixerit: febres, quaecunque non intermitlentesAertio
+<pb n="7.420"/>
+<lb/>die vehementiores fiunt,- periculosiores; quocunque autem
+<lb/>modo. intermiserint, periculum abesse significant; intermittere
+<lb/>de alia parte circuitus capi non potest, si integritatem
+<lb/>praeterieris. Non enim sane hoc alt, quocunque modo
+<lb/>declinent; nam hoc salsum est, quippe quum semitertiana
+<lb/>febrium deterrima sit, tamen in declinationem vulgo ipsi manifestam
+<lb/>pervenit ; et in aliis omnibus hac partu consimiliter,
+<lb/>tusi in synodus appellatis ; nam hae solae febres, declinationem.sensibus
+<lb/>apertam non habent, ut nec universum cireuitum,
+<lb/>nec aliam ex praedictis differentiam; sed qualem tertrinarum
+<lb/>magnitudinis aliquo tempore statum.esse diximus,
+<lb/>talem illae habent universum fere suum decursum. Si initur,
+<lb/>ut dixi, ex sua ipsarum natura periculo vacant, quae
+<lb/>ad integritatem desinunt, fient in libris de febribus ostendimus,
+<lb/>non aliud Hippocrates intermittere nominavit, quam
+<lb/>ad integritatem desinere. Quamobrem merito quis veterem
+<lb/>consuetudinem scquntus, in tertianarum periodis intermissionem
+<lb/>tempus integritatis appellaverit; quemadmodum et in
+<pb n="7.421"/>
+<lb/>maxima magnitudine morum, quantum nos tactu, ipsique
+<lb/>aegrotantes percipimus, vigorem. Ita sane et aetatum rigor
+<lb/>perfectissimum est, videturque Hippocrates hoc usus vocabulo,
+<lb/>sicut et verbo intermittere. Sed et primam partem circuitus,
+<lb/>quae primo die venit in eversione naturalis status et
+<lb/>tertio, quinto ac similibus eodem circuitu repetit post: inter- missionem,
+<lb/>principium vocant, non Hippocrates modo, verum
+<lb/>et alli prope omnes medici. Post principium, quod frigore
+<lb/>manifeste cognoscitur, secundum tempus erat luaequalitatis ;
+<lb/>tertium inerementi . usque ad vigorem. Communicantia
+<lb/>haec inter se, specie differre non exacte omnes conspexerunt;
+<lb/>nominantque. ex ambobus compositum, .tanquam unum tutum,
+<lb/>alii incrementum, alli augmentum, alii ascensum accessionis.
+<lb/>Ac veri etiam nonnihil dicunt. Nam postpri.
+<lb/>muni tempus, quo extremae partes. refrigerantur, sanguis
+<lb/>vero in altum confluere clare perspicitur, aliud tempus est
+<pb n="7.422"/>
+<lb/>totum hinc toti oppositum, quum videlicet calor cum frigore
+<lb/>decertat, sanguis in exteriores partes extenditur. Atque si
+<lb/>hoc pacto unum ipsum dixerint, quo jam exposuimus, nihil
+<lb/>reseret hoc tempus universum ascensum appellare; si vero
+<lb/>ita vocatum, indivisum reliquerint, non mediocriter artem
+<lb/>laedent. Etenim inaequalitatis in eo tempus primum aliorum
+<lb/>praesidiorum indicationem habet, et non omnino eorundem
+<lb/>ac sequens tempus, in quo aequalis quidem tutius
+<lb/>corporis constitutio est; incrementum vero praesentium in
+<lb/>eadem specie ad statum usque permanentium. Reliqua declinatio
+<lb/>tempus unum est specie sibi simile, nili quod majoris
+<lb/>minorlsque ratione partes ipsae differunt. At hoc esiam in
+<lb/>pruno principii tempore et secundo inaequalitatis, atque
+<lb/>esiam tertio ascensus, adest; siquidem unicuique horum, dum
+<lb/>sensibiliter immutatur, particularis quaedam est differentia.
+<lb/>Non enim cujusque dicti temporis principium lini omnino est
+<lb/>si m He, sed disserunt inter se et a medio manifeste. Principium
+<lb/>enim accessionis paululum a naturali constitutione recessit,
+<pb n="7.423"/>
+<lb/>sicut finis plurimum. Cluunt vero haec maximis differentiis
+<lb/>inter te dissideant, medium plane tempus ipsorum
+<lb/>aliquod est, magis quidem quam principium a naturali statn
+<lb/>remotum; nunus autem quam finis. Sic inaequalitatis etiam
+<lb/>initium a cohaerente ipsi primi temporis fine paululum variat 2
+<lb/>plus autem recedens, mediumque existens, inter praedictum
+<lb/>primi temporis finem et tertii principium quodammodo nonsistit.
+<lb/>Eadem, opinor, ratione et quae fecundi hujus temporis
+<lb/>inaequalitatis partes cohaerent principiis tertii temporis, constitutionem
+<lb/>istis assimilem obturent. Sic et tertii rurfuslemporis
+<lb/>prima, a fecundi postremis parum dissident ; postrema
+<lb/>vero status formae quodammodo similia sunt ; medium amborum
+<lb/>aeque ab utrisque extremis recessit. Quapropter mirum
+<lb/>nihil est, si ut his temporibus singulis, ile declinationi.
+<lb/>quoque aliud principium, aliud finis, .aliud melium sit. AtA
+<lb/>que unumquodque horum propria appellatione donare siquis^
+<lb/>velit, potest. Audio enim frequenter medicos dicentes, inMinavit
+<pb n="7.424"/>
+<lb/>nmrc status, nunc relaxatur, nunc decrescit, nunc
+<lb/>remittit. Si igitur haec dicunt,- integrum est eis primas declinationis
+<lb/>partes nominare inclinationem, vel relaxationem, .
+<lb/>vel decrementum,- vel remissionem, vel horum aliqua, vel .
+<lb/>omnia; quinetiam licet. aliquo praedictorum nomine menia
+<lb/>nuncupare, ut et postrema; quemadmodum Archigenes quoque
+<lb/>declinationis postremum remissionem nominat. Verum
+<lb/>ille perperam facit, quod a declinatione specie quadam diiferre
+<lb/>existimet. Quum videlicet omnium partium totius cirenitus
+<lb/>aliam principium, aliam finem, aliam medium faciat ;
+<lb/>sic quoque remissionem ipfam dividit, tanquam proprium
+<lb/>quoddam tempus ex prima eorum divisione, quae speciebus
+<lb/>quibusdam, non solum nrajoris minorisque ratione differunt.
+<lb/>In utroque igitur clare peccat, tum augmentum ex prima divisione.
+<lb/>tollens, quod omnes homines. manifestius, quamprincipium,
+<lb/>intelligunt; tum adiiciens^ remissionem in circuitus
+<lb/>fine. Si namque ad integritatem veniat, manifesta hujusmodi
+<pb n="7.425"/>
+<lb/>temporis a caeteris erit differentia; si vero fecundae
+<lb/>accessionis insultus trifariam divisus, declinationem excipit,
+<lb/>tum quidem tutius declinationis partem remissionem vocare
+<lb/>licet, non tamen aliud quoddam esse tempus putere propria
+<lb/>natura iusiguitum, quemadmodum prius dicta. Quod igitur
+<lb/>omnes tertiani circuitus partes manifestis a se differentiis feparatas
+<lb/>ridere liceat, nemo ignorat, qui vel unum hoc morbo
+<lb/>laborantem aegrum conspexerit ; si vero nonnulla eorum
+<lb/>nomine careant, apud contentiosos dicemus, tempus primum,
+<lb/>facundum, tertium, quartum, quintum, deinde integritatis
+<lb/>textum :, apud eos autum, qui nominum usum sciunt, ipsi
+<lb/>componentes idonea. Ac primo quidem tempori proprium
+<lb/>principii nomen imponatur, fecundo inaequalitatis; tertio
+<lb/>incrementi; quarto status, et quinto declinationis; textum,
+<lb/>quod integritatis est, intermissio nominetur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Licet et alio quodam modo totum circuitum
+<lb/>in majores partes dividere, siquidem in duas ipsum totum
+<pb n="7.426"/>
+<lb/>licet dividere ; unam primae accessionis, a primo intuitu ad
+<lb/>extremam usque remissionem ; alteram inter declinationem
+<lb/>et fecundae accessionis insultum. Voco jam insultum acces-.
+<lb/>fionis tempus omnino jam primum latitudinis expers ; hoc
+<lb/>ipsum significationem nominare consueverunt Et quod ab
+<lb/>Hippocrate dictum est, in accessionibus abstinendum, secundum
+<lb/>hanc divisionem pronunciatum existimo. Quum enim
+<lb/>praedixisset, Quibus siatim vigor adest, iis siatim tenuem
+<lb/>victum Adhibendam; quibus postea vigor advenit, iis in
+<lb/>illo ipso et ante illum, tenuiter vivendum, antea vero plenitis
+<lb/>nutriri oportere, ut aeger sulsiciat; subdidit, in accessionibus
+<lb/>absistendum, docens nos videlicet, solum illud
+<lb/>tempus quod accessionem vocat, observandum esse. Nunquam
+<lb/>enim in hoc nutrimus, verum in reliquo omni tempore
+<lb/>remissionis, interdum in alia atque alia ejus parte; quia ex
+<lb/>fimplici interdum declinatione; interdum ex declinatione et
+<lb/>intermissione competitum est.. Haec quidem tutius circuitus
+<pb n="7.427"/>
+<lb/>in duas partes est divisio, ut alteram ejus partem primam
+<lb/>accessionem appellemus ; fecundam vel remissionem, ut paulo
+<lb/>ante, vel ut quidam, intermissionem. Nam intermissionem
+<lb/>non pauci medici .quicquid intervalli post statum ast, qualicunque
+<lb/>natura praelitum, nominant;. sive id adintegratatum-
+<lb/>veniat, sive. non; verum nos appellationes praedictas
+<lb/>observabimus, ne usia fermoui obscuritas accedat; vocabis.
+<lb/>tnusque omne- id quod accessionem sequitur, remissionem.
+<lb/>Sed neque prohibemus, ut dictum est, siquis ipsum totum
+<lb/>nominer intermissionem, vel declinationem, vel decrementum,
+<lb/>vel remissionem, vel ablationem. Instituimus enim
+<lb/>non de verbis disceptare, fied circuitus partes inspicere; quot
+<lb/>numero sint et quomodo inter fedifferant. -</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Haec igitur est: divisio omnium febrium ad
+<lb/>integritatem desinentium, quotidianarum, tertianarum, quartanarum;
+<lb/>ut; quae lex partes speciebus manifestis diversas
+<lb/>habeant: alia vero non intermittentium, quae .in- quinque
+<lb/>partes diducuntur.. Sunt autem et hae permultae., nounulIae
+<pb n="7.428"/>
+<lb/>quae quotidie exacerbantur ; quaedam quae tertio quoque
+<lb/>die; non tamen quae quarto, frequenter, sed raro evenire
+<lb/>videntur; plurimum enim earum genus ad integritatem definit.
+<lb/>Atque duplex herum quoque species est, quae ad lotegritatemnon
+<lb/>finiunt, quotidianarum, tertianarum, quartanarum.
+<lb/>Quaedam enim magnitudinem pulsus et celeritatem
+<lb/>et sterilitatem et duritiem deponunt; quaedam alia quidem
+<lb/>tria ad naturalem statum deducunt, servant autem celeritatum,
+<lb/>hae magis, illae nunus.. At non est praesentis scrmouis,
+<lb/>illarum distinctionem proponere ; partes enim circuitus
+<lb/>in unoquoque morbi genere enumerare proposuimus. Igitur
+<lb/>quum paulo ante sex in febribus intermittentibus esse dixerhnus,
+<lb/>deinceps non intermittentium partes referemus,
+<lb/>quinque esse dicentes, quunr aliae similiter ipfis se habent,
+<lb/>sola autem integritatis pars deficit. In estis autem partibus
+<lb/>similitudo haec necessario est, ut accessionum insultus cum
+<lb/>fystole fiat (nomino autem sic, cum frigore; nam lune feqrutur
+<pb n="7.429"/>
+<lb/>in pulsu intro magis moveri, cum parvitate, sanguine in
+<lb/>viscera se recipiente] quem rurins inaequalitas ex necessitate
+<lb/>sequitur ; inde incrementum, status et declinatio. in quibus
+<lb/>tamen citra sensibilem systolen accessionis insultus accidit,
+<lb/>tria tempora in unum recidere necesse est, totumque usque
+<lb/>ad statum, incrementum fieri; nam ubi systole nun fuit, ibi
+<lb/>plane nec inaequalitas.. Statum vero nunquam deficere vidi,
+<lb/>sed semper sensibilem aequalitatem in omnibus febribus aliquamdiu
+<lb/>permanentem ; at insultum sexcenties fine praedictis.
+<lb/>principii symptomatis conspexi, quorum praecipuum
+<lb/>erat omnibus fere prlucipiis accessionum comes perfrictio;.
+<lb/>quemadmodum ad interiora arteriarum motus ; de quo in
+<lb/>opere de pulsibus fusilis dictum est, in praetenti libro ipfunr
+<lb/>, fystoles celeritate definire sufficit. Quae vero alia fymptumale
+<lb/>signaque accessionum principio propria sunt, alia frigori
+<lb/>supervenire, alia aliter accidere praedicta sunt; parvitas si-.
+<lb/>quidem pulsuum . raritas et tarditas diastoles. frigori; rigor
+<pb n="7.430"/>
+<lb/>estis occasionibus, quas in symptomatum causis exposuimus.
+<lb/>At universum hoc accessionis genus: omnino, sicut dixi; perit;
+<lb/>et nos multus frequenter .a mirandis istis medicis vel in balneunr
+<lb/>missos, vel cibum assumere jussos, tanquam suspectas
+<lb/>jam horas accessionis praetergressos, prohibuimus.. Contuigit
+<lb/>autem ipsis, quod arteriam exacte tangere ignorent, hujusnrodi
+<lb/>errores committere. omnibus enim quibus- talis
+<lb/>accessio evenit, fystole velocior redditur, quam cognoscere
+<lb/>non cujusvis est, sed exercitationem magnani hoc opus, si
+<lb/>quod aliud in arte, desiderat. Hanc autem consequi nemo
+<lb/>potest, prius quam eo modo, quem in primo de pulsuum dis
+<lb/>gnotione praescripsimus, lustitutus siti Si quis igitur arteriarum
+<lb/>syftoIen noverit, hanc ipse accessionis partem, qua
+<lb/>fystolen velociorem factam fine diastole deprehendit; cireuitus
+<lb/>initium potest statuere ; quae vero sequitur hanc, luerementum;
+<lb/>ad fletum usque. At fi hanc quoque ignoret; videntur
+<pb n="7.431"/>
+<lb/>autem insultus aequabiliter omnino factus, tutam accessionis
+<lb/>partem usque ad statum, ascensum, veI incrementum
+<lb/>, veI augmentum nominabit; secans ipsam in. prime et
+<lb/>postrema et media, pro majoris ininorisque ratione, non speciebus
+<lb/>diversis, ut prius dicebam in frigore sensibili. .- In hujusmodi
+<lb/>igitur febribus universa tempora tria erunt,. ruerementum,
+<lb/>status, imminutio. Nllul enim mest esit imrninu -.
+<lb/>tionem illud tempus vocare, in quo ex febris magnitudine
+<lb/>quippiam demitur. Quibus vero circuitus non est, ut synoclus
+<lb/>nominatis, neque accessio quaedam omnino est, neque
+<lb/>praedictae partes; attamen hae quoque secundum diversa
+<lb/>tempora totius morbi partes habent, aliis modis iurotescentes
+<lb/>, quam per accessionum tempora ; quae. paulo post
+<lb/>subjiciam, et hoc nomine potissimum,. quod omnes medici
+<lb/>in ipsis errent; quamvis Hippocrates rectissime ea docuerit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p>At nunc ad eas, quae circuitu. quodam
+<lb/>aeccssionem habent, sermonemreferamus, totum id, quod
+<pb n="7.432"/>
+<lb/>inconsideratum reliquimus, distinguentes. Unum auteni et
+<lb/>primum memoria teneri volo, nempe universum a principio
+<lb/>huc usque sermonem de simplicibus periodis nobis fuisse.
+<lb/>Nam in complexis tempus rigorem sequens interdum arctius
+<lb/>redditur, dum alterius accessionis significatio, antequam prior
+<lb/>circuitus adamussim absolutus sit, invadit. Frequenter etiam
+<lb/>ex tua ipsius natura febris de lutermitlentium genere est, ut
+<lb/>tertiana ; complicatio autem austum lutegritatis tempus pri-.
+<lb/>ori circuitio relinquit, dum secunda accessio, antequam prior
+<lb/>abtolvatur, invadit. Dictum est: misti de hujusmodi complicationibus
+<lb/>in duobus commentariis de crisibus et de febrium
+<lb/>differentiis; ubi etiam implicationem a mixtione distinximus:
+<lb/>Itaque feni tertiana ex mixtione et temperamento quotidianae et
+<lb/>tertianae febris fieri demonstrata esu Saepe. etiam senia.
+<lb/>tertianae simplex una febris implicatur, vel tertiana vel quotidiana ;
+<lb/>at hujusmodi varietas praetentis operis non est propria;
+<lb/>satis enim hic est, propria singularum febrium tene-pura
+<pb n="7.433"/>
+<lb/>diligenter explicare ; etenim implicationem earum promple
+<lb/>discernere ita maxime nobis erit. Exacte igitur simplices
+<lb/>prius dictae sunt ; de mixtis deinceps disseram. Itaque cunr
+<lb/>horrore insultus aliquando oboritur omnes principii peculiares
+<lb/>notas habens, praeter rigorem ; luterdmn et hujus spe-.
+<lb/>cient; etenim vehemens horror vel initium aliquod rigoris,
+<lb/>vel parvus rigor esse videri potest; at exactum rigorem,
+<lb/>qualis in tertianis quartanisque est, hujusmodi febris non accipit.
+<lb/>Atque ob hoc ipfam horridam appello, et multo magis,
+<lb/>quia ubi signa quaedam fecundi temporis praemonstraverit,
+<lb/>iuitium rursus alterius invafionis horrificum efficit,
+<lb/>quod nonnulli repetitionem, alii reduplicationem appellanti
+<lb/>Aliquando hoc fecundo,. quibusdam tertio facit; deinde vix
+<lb/>aequaliter expanditur ad usque statum increscens. Haec feluis
+<lb/>ad integritatem nunquam desinit, nam permultum temporis
+<lb/>usque ad rigorem ipsa habet, item declinationem <hi rend="u">sin</hi>e
+<lb/>perspiratu sensili ; multa vero magis abest, ut cum sudore ad
+<pb n="7.434"/>
+<lb/>integritatem accedat. Quemadmodum igitur a primo intuitu
+<lb/>accessio ad rigorem usque multo tempore pervenit, eodem
+<lb/>modo a xigore paulatim diminuitur ; ideoque postridie altera
+<lb/>ipsis accessio cum horrore quidem similiter advenit, sed quae
+<lb/>non item ut prior repetitiones habeat; aut fi -quando raro
+<lb/>habuerit, unam duntaxat faciat, brevem et exiguam Haec
+<lb/>autem etiam accessio ad rigorem longo tempore ascendit, nec
+<lb/>exiguo pariter declinat ; atque ob hoc ipsum tertio die eadem,
+<lb/>quae primo, accessio succedit; postea rursus quarto
+<lb/>fimitis ei, quae secundo habita est, idque deinceps perpetuo.
+<lb/>Hanc ego febrem compendiosae claraeque doctrinae gratia
+<lb/>uno volens appellare vocabulo, imposui ei nomen .semitertianae.
+<lb/>Si igitur. Hippocrates quoque talem febrem lenitertuanam
+<lb/>vocarit, ut ego persuasum habeo, duo ex sermone
+<lb/>uno commoda consequeris, nempe rem medicam discis et
+<lb/>nomen vetus ei imponis ; quod si quis aliam quandam febrem
+<pb n="7.435"/>
+<lb/>ab Hippocrate semitertianam vocatam esse putet, salii me in
+<lb/>vocabulo ratus, rem ipsam addiscat. . Quod enim tusis quaedatu
+<lb/>febris, qualem dixi, acridat, neque hic testimonium vel
+<lb/>Hippocratis vel alterius cujusquam oratio requirit,.. quum
+<lb/>quotidie ipsam rideamus, potissimum Romae. Ut eum in
+<lb/>aliis locis alia, fic in illa civitate hoc mest abundat. Porro
+<lb/>alia quaedam ei virina est, quae nec secundo die aliam sint
+<lb/>accessionem, nec primo et tertio repetitiones. Habet autem
+<lb/>nec ipsa modum unum ac simplicem ; interdum etenim fine
+<lb/>horrore, aliquando cum horrore invadit; estas cum extremorum
+<lb/>perfrigeratione manifesta. Vita autem est interdum
+<lb/>etiam citra sensibile frigus febris haec quinque tempora obtinere,
+<lb/>principium, inaequalitatem, incrementum, statum et
+<lb/>declinationem. Temporibus jam divisis, lueve est principiuti;
+<lb/>brevis quoque ipsius inaequalitas; ascensus non aeque
+<lb/>omnibus, sed quibusdam brevis, quibusdam longior. Quinetiam
+<lb/>rigoris tempus spatium omnino sensibile et latum oc.cupat;
+<pb n="7.436"/>
+<lb/>sed in maj oris minorisque ratione non mediocriter
+<lb/>differt. Sic etiam declinatio longo quidem tempore omnibus
+<lb/>contingit, in hoc autem differt, quod nonnullis manifesto
+<lb/>minuitur et celeriter finiendi spem praebet, et post haec sistit
+<lb/>aequalem declinationis magnitudinem reliquam servans;
+<lb/>nonnullis lente ah initio ad finem omnino declinat, ut ex
+<lb/>temporis intervallis longioribus conpetenti tibi videatur.
+<lb/>plane decrevisse quippiam, perquam modicum tamen illud.
+<lb/>Hujusmodi quaedam sunt et usiae differentiae particulares se suium
+<lb/>tertio . die accedentium, quas universas tritaeophyas
+<lb/>voco, ad affectionis unde excitentur cognitionem utilissimae,
+<lb/>ad praesens autem opus inutiles. Pronofitum enim est nobis
+<lb/>hic circuituum totiusque .morbi tempora distinguere, tempestivi
+<lb/>auxiliorum usus gratia, cui nihil haec varietas condacit,
+<lb/>sicut nec earum quae in quotidianae forma variantur;
+<lb/>siquidem herum non paucae quotidie accessionem habentes,
+<lb/>intermissionem nullam ostendunt; dicam tamen ipsarum paueas
+<pb n="7.437"/>
+<lb/>differentias exempli gratia, non ut institutae hypothesi
+<lb/>commodas, sed quoniam medicorum aliqui ex iis, quae sine
+<lb/>ratione unguntur, prorsus intumescunt et gloriam apud indoctos
+<lb/>aucupamur, tanquam diligentes et studiosi, fapientiusque
+<lb/>aliquid his, qui sola utilia scribunt, intelligentes.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Invadit ergo accessio febrium,. quae fingulis
+<lb/>diebus exacerbantur; interdum sine manifesto frigore, interdurn
+<lb/>cum ipso ; et quae propria principii sunt, quibusdam:
+<lb/>brevius, quibusdam diutius permanent ; atque sic etiam inaequalitas
+<lb/>his brevior, illis longior est; postea haec febris
+<lb/>usque ad vigorem ascendit, diuturniore tempore, quam- quae
+<lb/>tertio quoque die accessionem capiunt. Caeterum tale quippiam
+<lb/>ipsi adest, quod etiam in istis interdum raro contingit,
+<lb/>mullo autem saepius in hoc apparet ; ascensum aperte molieus
+<lb/>, consistit aliquo tempore nihil increscens, deinde rursus
+<lb/>increscit. Similiter in declinatione vel aequabilem facit
+<lb/>imminutionem r vel messio cursu in eadem magnitudine aliis
+<pb n="7.438"/>
+<lb/>hora una, aliis duabus consistit, post haec imminuitur ; quinetiam
+<lb/>ad fecundae accessionis insultum usque nonuullis ituminuitur;
+<lb/>quibusdam in qua magnitudine est, permanet,
+<lb/>At magis hoc tertio quoque die accessionem habentibus adest;
+<lb/>quoniam circuitus earum longior est. Nam duplus feretempore
+<lb/>circuitus est febrium, quae tertio quoque die exacerbantur,
+<lb/>si cum. iis, quae quotidie, comparetur. Quare propter
+<lb/>hoc manifesto declinationis ipsius reliquum protrahitur,
+<lb/>In aequali magnitudine permanens. Ac multi quoque alii
+<lb/>circuituum moli sunt, differentiis particularibus variantes,
+<lb/>ad praesentem disputationem supervacanei. Ideo autem
+<lb/>quorundam memini, quia melici quidam talem doctrinam
+<lb/>hujus considerationis non esse propriam nescientes, de iisdem
+<lb/>confcripferunt, errantes quoque in ipsorum enarratione.
+<lb/>At nunc eos reprehendere tempus non est in speculatione
+<lb/>non propria. Disces autem evidenter eos inutilia nugari,
+<lb/>quumque Hippocrates miro quodam modo methodum horum
+<lb/>invenerit, neminem eam elaborasse et multos praeterea eam
+<pb n="7.439"/>
+<lb/>depravasse, in illa maxime sermonis partu, qua jam dictis
+<lb/>temporibus auxilia coniuncturus sum. Faciam vero hoc,
+<lb/>ubi totius morbi tempora ostenderim; nam hactenus particularia
+<lb/>tantum recensui.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

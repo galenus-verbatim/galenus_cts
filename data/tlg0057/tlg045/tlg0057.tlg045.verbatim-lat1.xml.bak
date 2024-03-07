@@ -1,0 +1,2640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De differentiis febrium</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg045.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="273" to="405">273-405</biblScope>
+              <date>1824</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x07">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="320" to="341">320-341</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="106" to="152">106-152</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x07">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg0057.tlg045.verbatim-lat1">
+<pb n="7.273"/><pb n="7.273"/>
+<div type="textpart" subtype="book" n="1">
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE DIFFERENTIIS FEBRIVM
+<lb/>LIBER PRIMVS.</head>
+
+
+<p rend="indent">Differentiae febrium maxime quidem propriae
+<lb/>ac principes secundum earmn substantiam sunt; aliae
+<lb/>vero secundum aliquod accidens. Quoniam yero et ipsorum
+<lb/>accidentium non una est natura, sed alia quidem propinquiora
+<lb/>magisque propria dividendae substantiae sunt, -alia vere
+<lb/>remotiora ac magis aliena; idcirco et earum, quae hinc fu-.
+<lb/>uruntur, differentiarum non unum genus est. - Itaque maxime
+<lb/>quidem peccant, quicunque differentias proprias ac maxime
+<pb n="7.274"/>
+<lb/>principes omittunt: deinde vero, quicunque mentione
+<lb/>harum facta permiscent cum eis differentias accidentales
+<lb/>aequaliter omnes, minime discernentes utiles ab luntilibus.
+<lb/>Non fotum autem peccarunt plurimi medici in differentiarum
+<lb/>generibus, aut plures quam oporteret tradendo, ut inutilium
+<lb/>quoque meminerint ; aut pauriores, ut nonnullas etiam
+<lb/>utiles omiserint ; sid etiam dividendo genera ipsa in proprias
+<lb/>differentias similiter errarunt. Ne longius abeas, quunr
+<lb/>primum ac maxime proprium differentiarum genus ab ipsa
+<lb/>dividendae rei substantia statuatur, videas tamen nonuullos
+<lb/>medicos praetermisisse universum hocgenus; alios vero dividendo
+<lb/>plura quam opus esset, aut statuisse pauciora, tametsi
+<lb/>Hippocrates optime fecerit divisionem libro sexto Epi ,.
+<lb/>demum. Textus autem sic habet: Pebres, hae quidem manni
+<lb/>junt mordaces; illae vero mites; quaedam autem non
+<lb/>mordaces, sad increscentes; nonnullae acutae, sed ab ipsa
+<lb/>manu devictae; . quaedam statim ardentes, quaedam vera
+<lb/>semper debiles.; siccae; aliae salsus;, aliae siatulentae,
+<pb n="7.275"/>
+<lb/>aspectui graves; aliae ad manum humidae; aliae rabiciendae
+<lb/>valde; aliae lividae; aliae praepallidae; et alia
+<lb/>istiusmodi. . Apertissime enim sus sententiis ab ipsa rei substantia
+<lb/>, simulque ab ipsa dignotione in proprias differentias
+<lb/>ferit divisionem. Nam essentia quidem febrium est in genere
+<lb/>caloris praeter naturam. Differentiae vero caloris et ab
+<lb/>ejus multitudine et paucitate sumuntur; et ab ipsa materia,
+<lb/>in qua calor ille. praeter naturam accenditur; et ab ipsomolienis
+<lb/>inodo; quas omnes complicans cum earum dignosceredarum
+<lb/>ratione scripsit, quemadmodum procedente sermone
+<lb/>docebimus. Porro. autem quae a maj ori. minoriqu e calore
+<lb/>ducuntur, sunt manifestae; et in hoc genere differentiae medicis
+<lb/>jam mos est magnam ac parvam sebrem nominare; vernm
+<lb/>i inproprie quidem de. rei. qualitate quantitatis vocabulum
+<lb/>enuntiant, sed ita facere consueverunt non in febre
+<lb/>solum, sed et in aliis sexcentis, quae in qualitate quidem
+<lb/>ipsa essentiam habent, magna tamen parvaque nominantur.
+<lb/>Quae vero disierentiae a materia sumuntur, in qua calor
+<pb n="7.276"/>
+<lb/>ille praeter naturam consistit, maxime propriae caloris praeter
+<lb/>naturam differentiae fiunt; sive ille corpus ipsimi cordis
+<lb/>invadat, sive humores, qui in ipsius ventriculis continentur.
+<lb/>Reliqua autem ac tertia differentia est, ubi aerea substantia
+<lb/>fola admodum incaluit, humida vero ac solida corpora adhuc
+<lb/>quidem incalescunt, sed nondum incaluerunt. Non
+<lb/>enim parum differt quum incalescit aliquid, ab eo quod incaluit.
+<lb/>Sed discas evidentissime id, quod dicitur, ex sus
+<lb/>exemplis. Finge mihi aquam calidam iniectam lebeti frigido
+<lb/>, deinde ab ea ipsis aqua calesieri contactu ipsius lebetis
+<lb/>corpus, nondum autem totum exquisite incaluisse ; et rursns
+<lb/>finge in calidum atque ignitum lebetum frigidam aquam
+<lb/>infusam, deinde calefieri quidem adhuc, nondum autum incaluisse.
+<lb/>Ex his exemplis cum fecundo quidem prima felitium
+<lb/>differentia similitudinem habet, quas corpus ipsimi
+<lb/>corripuisse docuimus; cum primo autem secunda, quam
+<lb/>conditos in ventriculis humores occupasie suximus. Reliqua
+<lb/>autem ac tertia differentia exemplum omnino simile non
+<pb n="7.277"/>
+<lb/>habet. Sed perspicuitatis gratia mihi finge fabrilem follem.
+<lb/>trahere ad se aerem admodum calidum ; deinde calefieri adhuc
+<lb/>ab eo, nondum autem incaluisse. Sed exemplum magis
+<lb/>iudicabit rei declarandae naturam, si finxeris in folle conti-.
+<lb/>neri humorem ; atque adhuc magis, si foramlua follis, per
+<lb/>quae trahit atque emittit aerem, ita augusta effeceris, ut huuiori
+<lb/>quidem invia, aeri vero pervia sint: qua farte in re
+<lb/>potissimum dissident naturae opera ab his quae homines ipsi.
+<lb/>efficiunt. Etenim substantia aerea permixta cum sanguine
+<lb/>est: in omnibus arteriis, per multa foramina pariter fpirantibus ;
+<lb/>ac nihilo minus in ipsis corde, ut quae per eas omnes
+<lb/>confluat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Hic ergo calor praeter naturam, quem et
+<lb/>febrem appellamus, estas ex esto praedictorum incipit. Occupat
+<lb/>autem ac simul afficit cum affecto reliqua duo genera.
+<lb/>Facillima ergo caloris ab humoribus ad spiritum translatio;
+<lb/>humores autem tardius ignem conripiunt a succensu spiritu..
+<pb n="7.278"/>
+<lb/>atque etiam stolidum coeptis promptius tribuit calorem humoribus
+<lb/>aeriaeque substantiae, quam ipsum ab istis accipiat;.
+<lb/>omnis enim substantia tenuis facilius quam crassa allevatur.
+<lb/>Tenuissima quidem aeris est, crassissima vero corporum folidorum;
+<lb/>amborum media -humorum est substantia. Nec
+<lb/>quicquam refert in praesenti documento spiritum vel aerem
+<lb/>appellare; nam de Itis. alibi accuratius .definitum jam. est.
+<lb/>Nunc vero sufficiet illud tantummodo sitire, quod, puto,
+<lb/>Hippocrates indicans dixit, continentia; contenta et impetum
+<lb/>facientia; continentia quidem appellans, ipsas corporis
+<lb/>partes solidas ; contenta autem; humores; impetum vero
+<lb/>facientia, spiritus. Febrilis enim affectus alias ex alio
+<lb/>praedicturum incipit: verum in eo genere, quod primo laesium
+<lb/>est, minime permanet, sed. invadit reliqua duo; ac nisi
+<lb/>prius solvatur, .processutemporis illa sunlliter afficit, atque
+<lb/>haec sermonis snut .capita. Sed oportet ea quae dicta sunt,
+<lb/>demonstrare ; .uotasque uuiuscujusque generis febrium percurrere,
+<pb n="7.279"/>
+<lb/>Statim itaque de generatione earum dicere aliquid
+<lb/>opus esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Ex lassitudine ergo, . ira, moerore, ustione,
+<lb/>frigore, insomnio, cruditate, temulentia ac satietate, quosdam
+<lb/>febricitare cunctis hominibus perspicuum est, ab ipsa
+<lb/>rei evidentia edoctis. Quinetiam pestilentem aeris statum
+<lb/>afferre febrim., minime ignorant quicunque intellectu participant;
+<lb/>quemadmodum et versari cum his., qui peste laborant,
+<lb/>periculosum esse: etenim ne a contagio laedamur periculum
+<lb/>est, quemadmodum a scabie quadam aut ophthalmia.
+<lb/>Periculosum praeterea est, consuescere his qui tabe tenentur,.
+<lb/>atquo in totum cum omnibus qui putridum adeo expirant,
+<lb/>ut domicilia in quibus decumbunt, graviter oleant. Constat
+<lb/>praeterea ex longo rerum ulu, eos qui consuetudinem excrcitationum
+<lb/>omiserunt, tum aliis multis morbis. tum maxime
+<lb/>subtilibus corripi. Atque etiam quod quae vocatur plethora
+<lb/>generet febres, et pravi quidam cibi, ac medicamenta, et i
+<pb n="7.280"/>
+<lb/>aestus circa canis sederis ortum, et alia quaedam hujusmodi,
+<lb/>cunctis hominibus, ut ita dixerim., perspicuum est. Quis
+<lb/>vero ab ipsis in corporibus nostris fiat affectus, ex quo fehricitamus
+<lb/>, minime sitiunt neque plerique hominum, neque
+<lb/>quidam medicorum. Duplex autem genus haec ignorantium
+<lb/>est; .alterum quidem, quod ipsa experientia tantummodo nilitus,
+<lb/>tanquam nulla rei cuiusquam natura ratione possit
+<lb/>investigari. Alterum autem genus est hominum, . qui sitpientes
+<lb/>quidem ridentur; sed quum ignorent peraeque ac priores
+<lb/>, scientiae tamen habent existimationem. Ignorare autem.eos
+<lb/>contingit, quia nullam prius habent in methodis.logicis
+<lb/>exercitationem, ex quibus .cognoscuntur ac discernunt
+<lb/>tur a demonstrativis sumptionibus verisimilia quidem, scd
+<lb/>quae nihil veri aut invenire aut demonstrare possunt, Huic
+<lb/>autem inscitiae ubi insolentia accessit, eorum nonnulli in
+<lb/>tantam stupiditatem vel audaciam devenerunt, ut nec ea
+<lb/>quae- omnes homines cognoscunt experientia ipsa edocti,
+<lb/>subrium causas esse concedant. De quibus quum libro de
+<pb n="7.281"/>
+<lb/>causis procatarcticis abunde docuerim, nihil opus est hoc
+<lb/>loco mentionem facere temerariae loquacitatis eorum. Neque
+<lb/>enim contradicere, neque solvere sophismata hoc libro
+<lb/>institui; sed instituere ac. docere, supponendo ea quae alibi
+<lb/>a nobis sunt demonstrata ac docendo differentias febrium.
+<lb/>Suppositiones igitur hae sunt, calidum, frigidum, siccum,
+<lb/>atque humidum esse elementa corporum, ac fieri primos morbos
+<lb/>ex horum intemperie, e quibus una febris existit, quum
+<lb/>calor quidam praetor naturam in corde generatur. Disserentiae
+<lb/>autem secundum genus caloris, de quibus praeiens
+<lb/>sermo tractat, a materiae differentia ducuntur, suscipientis
+<lb/>febrilem . caliditatem, quae materia genere triplex esu .Aut
+<lb/>enim in ipso corpore cornis, aut in humoribus primam ipsam
+<lb/>accendi dicebamus, aut in spiritu ; praevenire autem omnium
+<lb/>febrium constitutionem causas omnibus manifestas, de
+<lb/>quibus paulo ante docuimus, ex quarum observatione empiricus
+<lb/>quidem medicus ad curationem nonnihil juvatur; r ationalis
+<pb n="7.282"/>
+<lb/>vero ad ipsam rei naturam accedens, per indicationes
+<lb/>ab illa in futurorum praenotionem atque inventionem
+<lb/>curationis juvatur, utens omnibus quidem experientia ipsa
+<lb/>inventis, adliciens autem ipfis multa ex docendi via rationali
+<lb/>Quae ergo sint per utramque partem inventu (experimentum
+<lb/>intelligo ac rationem] alio loco docuimus. Quis vero affectus
+<lb/>ab unaquaque causa - procatarctica in corpore consistat
+<lb/>accendens febrem, nunc docere instituimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Quum ergo rideamus non unum modum
+<lb/>neque generationis neque auctionis caloris, quando ne ipfius
+<lb/>quidem ignis modus tinus est, sed gignitur aut propter motum
+<lb/>, aut propter putrefactionem, aut propter alterius caloris
+<lb/>commercium ac viciniam, aut propter suppressionem calili
+<lb/>effluxit, aut propter permixtionem calidae substantiae,
+<lb/>tanquam de fonte quodam ebullientis, aut genitae, scilicet
+<lb/>ad nostrum scnsunr, aut augentis calorem ; necesse est. omnes
+<lb/>febrium caulas in praedictos modos revocari; qualis fi
+<lb/>lubet aestus est, sive ex ipso sole actio talem habeat appellationem,
+<pb n="7.283"/>
+<lb/>sive affectio quae in corpore efficitur, sive ea quae
+<lb/>jam effecta est. Nam et ea ipsa calor est praeter naturam;
+<lb/>nondum tamen febris, nisi cor ipsum concalefecerit. Sane
+<lb/>totum hoc genus causae ex consuetudine efficitur rei calda-cientis,
+<lb/>sive sol, sive ignis, sive medicamentum suerit id
+<lb/>quod calefacit extrinsecus, quum aut attingit,. aut propius
+<lb/>accedit, aut consuescit, vel quovis alio modo libeat appellere.
+<lb/>At vero ira quasi fervor quidam ac motus vehemens est irafcibilis
+<lb/>facultatis, quae in ipso corpore cordis sedem habet.
+<lb/>Concalescit autem interdum cum ea spiritus substantia, atque
+<lb/>luter dum sanguinis, et fi prompte se habeant suscipientia
+<lb/>corpora ad continendum diutius calorem, quamvis ipfius cordis
+<lb/>motus constiterit, haec permanent calida praeter naturam
+<lb/>tuncque febricitare hominem necesse esu Ejusmodi ergo
+<lb/>febris principium habet motum atque fervorem natini caloris.
+<lb/>Pebris autem quae ex moerore consistit, non jam fervorem,
+<lb/>sed motum tantummodo principium habet. Si autem ex
+<lb/>lassitudine spiciatur, principium quidem habet motum aurpistorem
+<pb n="7.284"/>
+<lb/>musculorum, ac nervorum, et ligamentorum, et
+<lb/>articulormn ; quae quidem prima calefiunt, calor autem continenter
+<lb/>corni distribuitur, ac tunc febricitant. Ubi vero
+<lb/>febris propter deusitatem cutis accenditur, qualis maxime
+<lb/>astrictis refrager atisque fieri sistet, collectu in corpore mordari
+<lb/>effluvio consistit. Difflantur enim semper animalium
+<lb/>corpora duobus modis, emissis foras quotidie vaporosis sumofisque
+<lb/>excrementis, attractaque nitro aerea substantia refrigeraute
+<lb/>atque ventilante naturalem calorem. Ubi igitur
+<lb/>vehemens causa condensando cutem praedictos meatus astringit,
+<lb/>taope plethoricum affectum inducit, quoties vaporosa ac
+<lb/>benigna materia efficit; interdum febrem committit, quoties
+<lb/>acris ac mordax fuerit, maxime quum ex eo augetur calor, quia
+<lb/>refrigerans aer intra corpus non trahitur. Excernitur autem
+<lb/>excrementum acre ac mordax, aut iis quibus fiunt deteriores
+<lb/>humores, aut iis qui prava edulia ingesserunt, aut
+<lb/>faece non concoxerunt, . praesertimque iis qui ab ejusmodi
+<pb n="7.285"/>
+<lb/>eduliis etiam limosam aut lutosam aut caenosam aut palustrem
+<lb/>aut stagnantem aut alio quovis modo corruptam et putresactam
+<lb/>aquam bibunt. Eodem modo evenit immoderate labor
+<lb/>cantibus, aut vigilantibus, aut angore affectis, aut acria medicamenta-
+<lb/>frequenter assumentibus. Edulia vero prava intelligo,
+<lb/>tum quae ex natura talia sunt, ut assia, caepe, nasturtium,
+<lb/>porrum, brassica, ocimum, urtica et alia quaecunque
+<lb/>nominantur agrestia, ut lapsanae apud nos; atque
+<lb/>etiam quae bona sunt ex natura, sed ob putredinem quandam
+<lb/>praedictis aequale aut majus saepenumero altrum acceperunt,
+<lb/>ut hordeum ac triticum et usiae omnes fruges frumentariae,
+<lb/>partim ob temporis longitudinem ad putridam
+<lb/>dispositionem deductae, partim situ quodam repletae, quia
+<lb/>prave repositae sunt, partim ex prima generatione a rubigine
+<lb/>vitiatae. Tales igitur cibos etiam nunc plerique comedere ,
+<lb/>coacti prae fame, alii febribus putridis ac pestilentibus mortui
+<lb/>sunt, alii pustulis scabiosis et leprosis correpti. Ubi igitur
+<lb/>corpus fuerit refertum talibus humoribus, nulla autem
+<pb n="7.286"/>
+<lb/>obstructio in visceribus fuerit, atque animal in cute tota lihere
+<lb/>dissietm ac refrigeretur ; fanum quidem existit, sed temporariam
+<lb/>lubricamque obtinet sanitatem. . Ubi vero exterior
+<lb/>terminus aut constringitur aut in profundo meatus obstruitur,
+<lb/>in constrictionibus nunc .dictum febrium genus ; in obsimctionibus
+<lb/>id quod paulo post dicendum est, consistit. ., Nihil
+<lb/>igitur mirum, si ea cruditate in quidem febricitent, .illi vero
+<lb/>minime. Etenim iis qui pravis jam humoribus pleni funi
+<lb/>ac male dissiantur, aut intempestive laborant, aut lavantur
+<lb/>temere, promptum est febricitare. lis autem qui bonis sunt
+<lb/>humoribus ac probe dissiantur et quiescunt, ac fovent ad
+<lb/>jecur et ventriculum attinentes partes, impossibile est febricitare;
+<lb/>in jeeore enim ac ventre manet quicquid corruptum
+<lb/>est, ac temporis fpatio paulatim concoquitur atque efficitur
+<lb/>benignum. Quemadmodum et iis, qui motus vehementiores
+<lb/>sustinuerint, aut in fole aestivo steterint, aut in halo eum
+<lb/>calidum dulcium aquarum descenderint, cibi corrupti in
+<lb/>universum corporis habitum transsumuntur : sic et eos, qui.
+<pb n="7.287"/>
+<lb/>bus corrupta cibaria deosum deferuntur, febris minime fequitur,
+<lb/>nisi propter aliquam aliam causam, ut fi saepenumero
+<lb/>furgeudo in lassi tudinenrluciderint, aut ventrem ipsimi luflammatio
+<lb/>tentaverit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Enimvero in meatuum obstructionijrus atque
+<lb/>humorum constipationibus (nam ea de re docere distuli)
+<lb/>animalia ob putredinem febribus tentantur. Promptissime
+<lb/>enim putrescunt, quaecunque calida et humida et multa sunt
+<lb/>in loris calidis, nili difflari fimus ac refrigerari contigerit.
+<lb/>Ergo neque mirum rideri debet, quamobrem febres scquanturplethoram;
+<lb/>etenim per ejusmodi affectiones multae obstructiones
+<lb/>efficiuntur, ac tutum corpus difficulter difflatur;
+<lb/>ut et ex altera plenitudine, quae est ad vires, humores rito
+<lb/>ad corruptionem deveniunt, quod neque amplius evincantur,
+<lb/>neque probe concoquantur, quum facultas eos conficiens
+<lb/>imbecillior cristat. Quocirca quaecunque cibaria glutinosa
+<lb/>crassa que sunt, morbos magis accelerant; obstruere enim atque
+<lb/>constipare humorem ex illis facilius est. Quid igitur?
+<pb n="7.288"/>
+<lb/>Nonne contrarie tum attenuantia tum acria morbos advehunt ?
+<lb/>Unientur enim qui alterutro rictus genere frequentius
+<lb/>utuntur, febre similiter surripi, quia haec omnia vitiosi
+<lb/>esse tueri aule diximus. Hac ergo ratione succi vitiosi febrium
+<lb/>causae sunt; usia vero ratione putredinis, quaecunque
+<lb/>glutinosa, crassaque existunt. Nec fiecus partes iusiammatione
+<lb/>affectae ratione putredinis accendunt febrem. Impa-otus
+<lb/>enim qui in eas iusiuxit humor, ubi fuerit natura casidus,
+<lb/>quia non bene difflatur, putrescit. Ubi igitur decurrens
+<lb/>humor suerit plane biliosus, calor erysipelatodes partem
+<lb/>Occupat; ubi sanguineus, phlegmonodes ; ex ambobus; vero
+<lb/>mistus, vel erysipelas fit phlegmonodes, vel phlegmone erysipelatodes ;
+<lb/>nomen quidem tumens ab humore dominante,
+<lb/>denominationem vero accipiens ab altero. At vero ex his
+<lb/>omnibus accenditur febris, ratione societatis. Semper enim
+<lb/>simul cum eo quod incaluit, pars continua calefit, quousque^
+<lb/>affectio ad cor ipfum pervenerit. Nam et continuae carinmensis
+<pb n="7.289"/>
+<lb/>partes cum eis simul calefiunt, genitis ex Ianguine
+<lb/>valde calido, sed magis melancholico propter adullionem.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Calidiores praeterea ambientis nos aeris
+<lb/>status, quales circa canis ortum contingunt potissimum, per
+<lb/>inspirationem plane cor ipsum calefaciunt; extrinsecus vero
+<lb/>circumfusi corpori, totum ipsum calidum reddunt, maxime^
+<lb/>que arterias, ut quae nonnihil substantiae ipsius ambientis
+<lb/>nos aeris attrahant, ex quibus omnibus simul cor allici ne.
+<lb/>cesse est, atque ipsum in prinus immoderate calefieri, maximeque
+<lb/>febrilem affectum suscipere, atque loli corpori immittere.
+<lb/>In pestilenti vero statu inspiratio potissimum causa
+<lb/>est. Interdum enim efficitur febris propter humores, qui
+<lb/>in corpore sunt, ad putredinem idoneos^ quo fies animal breveta
+<lb/>quandam occasionem ad febris ortum ab aere circumfluente
+<lb/>susceperit; sed magna ex parte incipit ex aeris circumfluentis
+<lb/>respiratione, putrida exhalatione insecti. Principium
+<pb n="7.290"/>
+<lb/>autem putredinis aut multitudo cadaverum est miusure
+<lb/>crematorum, quemadmodum in bello contingere sistet;
+<lb/>aut exhalatio quarundam paludum aut stagnorum aestivo
+<lb/>tempore; atque. interdum immoderatus calor circumstantis.
+<lb/>aeris est: principium, quemadmodum in pestilentia, quae Albe- menses
+<lb/>invafit, ut Tlrucy elides ait:. viventium autem haminum
+<lb/>corpora in suffiocatis nec ita perstatis tuguriis aestatis
+<lb/>tempore corruptio adsidebat. Pit autem initium pestilentis
+<lb/>subria eo quod humores corporis ex pravo victu egent in
+<lb/>putrefactionem parari. - Portastis autem accidit id per contimium
+<lb/>aerem, quod ex Aethiopia finxerant quaedam putredints
+<lb/>inquinamenta, quae lis qui habebant corpora laesiorti
+<lb/>parata, causae scbriv sutura erant. Hujus enim tenuo
+<lb/>per meminisse oportet toto hoc sermone, quod nulla causa
+<lb/>sine corporis aptitudine efficere possit; alioquin omnes, qui
+<lb/>in sele versantur aestivo, in febrem inciderent, et qui plus
+<lb/>aequo moventur, aut vinum bibunt, alit irascuntur, aut
+<lb/>moerent. Nec ferus omnes aegrotarent circa canis sederis
+<lb/>ortum, atque 111 pestilentia perirent. Sed, ut est dictum,
+<pb n="7.291"/>
+<lb/>maxima pars generationis morborum est, quod passurum est,
+<lb/>corporis praeparatior Subiiciatur ergo pro exemplo in ambiente
+<lb/>aere invehi quaedam pestilentiae femina, atque corpotum,
+<lb/>quae versantur in eo, haec esse variorum exerementorem
+<lb/>plena, paratorum jam ex scipfis putrefieri, illa
+<lb/>fine excrementis ac pura, atque addatur; prioribus inesse
+<lb/>obstructionem meatuum undique ac plethoram appellatam,
+<lb/>ac vitam otiosam m multisepulis ec ebrietatibus et Veneris
+<lb/>ulu immodico et cruditatibus, quae omnia praedicte necessatio
+<lb/>consequuntur; caeteris autem omnibus corporibus
+<lb/>puris ac excrementorum expertibus adsit praeter ea quae
+<lb/>diximus commoda, cunctis meatibus neque obstructis neque
+<lb/>pressis libera transpiratio, exercitia vero moderata ac
+<lb/>rictus temperatus, ac deinceps his suppositis, cogita quomodo
+<lb/>fit verisimile utraque corpora inspiratione putridi aeris
+<lb/>affici. Nonne consonum est haec statim a prima inspiratione
+<lb/>initium putredinis accipere, unde in majorenr noxam prosabatur;
+<pb n="7.292"/>
+<lb/>quaecunque vero vacua excrementis et pura sunt, ea
+<lb/>vel nullo modo, vel exigua labe infici, ut facile ad habitum
+<lb/>naturae recurrant ? Itidem quoties aeris temperamentum
+<lb/>ab ipsis naturae habitu immoderate recessit ad humiditatem et
+<lb/>caliditatem, pestilentes fore morbos necesse est; affici autem
+<lb/>his maxime eos, qui jam prius pleni fuerint humiditate excrementofa ;
+<lb/>quemadmodum qui laboribus moderatis ac victus.
+<lb/>ratione temperata usi sunt, penitus impatibiles permanent
+<lb/>per omnes ejusmodi affectiones. Hic sermo super uno
+<lb/>exemplo dictus est, sed in omni genere causae verus est. Ac
+<lb/>qui vult integre in eo exerceri, legat librum de causis externis.
+<lb/>Ego vero praesenti libro parcens longitudini, uno
+<lb/>capite. ubi omnis comprehendero, finem faciam. oportet
+<lb/>enim in unoquoque causarum genere scrutari, qua potissimum
+<lb/>facultate morbos efficere soleat; deinde considerare .congruentes
+<lb/>et repugnantes ei dispositiones corporum; trientem
+<lb/>congruentibus quidem promptam laesionem esse, adversas
+<pb n="7.293"/>
+<lb/>autem ac repugnantes, quantam vim habet et magnitudinem
+<lb/>contrarietas, tantum invictas permansuras. lpfe namque
+<lb/>vidi nonnunquam eveniente tali statu, qualem Hippocrates
+<lb/>in oppido Cranone fieri dixit, carbunculos per populum
+<lb/>grasatos non paucos, quorum generatio et alia omnia eo
+<lb/>quo ille scripsit modo plane fuerunt- Quinetiam quaecunque
+<lb/>scripsit tertio libro Epidemion in pestilenti statu, ea etiam
+<lb/>omnia per aliam similem issi constitutionem extiterunt. sum- ,
+<lb/>ma eorum, ut ipse Hippocrates declaravit, putredo fuit, at- .
+<lb/>que id ipsi praecognoscentes, statim incipiente statu quaecumque
+<lb/>corpora vidimus humida, quovis modo exiccare tentavimus ;
+<lb/>quaecunque vero sicciora, pristinam naturam in his
+<lb/>custodivimus ; quaecunque vero excrementis plena, purga- ,
+<lb/>lienibus sanavimus ; quascunque vero obstructiones meatuum
+<lb/>solvimus atque aperuimus. Sed haec quidem jam quodam :
+<lb/>modo ad medendi metitodnm pertinent, et certe in eo opere
+<lb/>fusissime dicentur. Nunc autem eorum mentionem feci, fequntus
+<pb n="7.294"/>
+<lb/>sermonem docentem, quonam modo ab una caula
+<lb/>exuperante .quidam corripiuntur febribus, alii impetibiles
+<lb/>permanent. Dispositiones enim corporum dissimiles multiformesque
+<lb/>sunt; etidcirco quidam facile vincuntur ac promptissime
+<lb/>patiuntur a causa agente; alii invicti penitus et impatibiles
+<lb/>sunt, aut difficulter patiuntur. Ad ejus rei demonstrationem
+<lb/>coacti fumus mentionem fecisse etiam curathuris,
+<lb/>.perinde ut Hippocrates facientes, qui alicubi eodem
+<lb/>quodammodo celebre illud verbum adscripsit, Jd autem sanatio
+<lb/>ipsa indicat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Praecautio igitur secundum talem quen- .
+<lb/>dam modum sanatio est, quandoquidem et ipsa nomina
+<lb/>saepenumero confunduntur apud melicos. Quemadmodum
+<lb/>enim alio libro demonstravimus, tutum est medici munuscorporis
+<lb/>vitia emendare. Sed .nihil ad proposita hujusmodi
+<lb/>nominum subtilitate egemus. Sive enim seces iit duo nom.1na
+<lb/>tutum id, sanationem ac praecautionem ; sive in unmn
+<lb/>ambo colligas, sanationem appellans, non parvum argumen-..
+<pb n="7.295"/>
+<lb/>tum est, non omnes ab ejusmodi cauta similiter assiri, dispositio
+<lb/>corporum, quae prohibita sunt epidemiis ac pestilentibus
+<lb/>morbis corripi. Unus enim primusque scopus in omnibus
+<lb/>communis est, ut corpus maxime vacet excrementis
+<lb/>et optime spiret; secundum vero post hoc, ut exuperanti
+<lb/>causae repugnet, quoadfieri potest. Quibus vero contraria
+<lb/>horum insunt, ocyssime afficiuntur, maximeque aegrotanti
+<lb/>Sest quoniam febrium pestilentium mentionem feci,
+<lb/>ex putredine omnium ortum habentium, par est mcumbentem
+<lb/>animo ad hunc sermonem explicandum hoc loco sinttari
+<lb/>de antiqua opinione, omnem febrem consistere ex humorum
+<lb/>putredine, asserente. Videtur enim ite sentire Athenaei
+<lb/>chorus, non obscuri quidem viri tum in caeteris ad ar-.
+<lb/>tem spectantibus, tum praefer tinr in ea quae est de febribus
+<lb/>scientia; in quibus ego plurimum cum illis Leutio, vernotamen
+<lb/>unum excipio, diarios nominatas febres. Non enim
+<lb/>mihi ridentur hae  subfequi putredinem humorum, sed qui
+<lb/>ob aestum febricitat, ab ipfo efficientis caulae calore alterari
+<pb n="7.296"/>
+<lb/>finiet. ob iram vero febricitanti, et ei quidem ebullitionem
+<lb/>quandam fieri sanguinis in corde necesse est, .non tamen putredinem.;
+<lb/>necnon per exercitationem, caliditatemampliorem
+<lb/>praeter naturam sine humorum putredine accendi. Et
+<lb/>quisquis cutem habuerit adsuietam, per quam acria exerementa
+<lb/>evacuabantur, illis collectis febricitavit sine putredine
+<lb/>humorum. Quinetiam fabres ex bubonibus omnes malae,
+<lb/>excepta ephemera, ut Hippocrates dixit; licet otium bubo
+<lb/>inflammatior^ genere contineatur. Atque assentio in hoc .
+<lb/>scrmoni putredinis; num ob eam rem ex inflammatione se-..
+<lb/>bricitant, non quemadmodum Erasistratus existimavit. Attamen
+<lb/>nonnullae sunt ex bubone febres in genere diariarmn,
+<lb/>quemadmodum aliae quaedam nuntiant non faciles curatu .
+<lb/>morbos, ex iusiammatione, aut ulcere, aut abscessu, aut altero
+<lb/>quopiam test in viscere affectu ortum hab entes. Caelerum
+<lb/>dissident diariae febres ex bubone ab iis quae ex humoruta
+<lb/>putredine consistunt, quae fit aut in aliquo. viscere, aut
+<lb/>in cavis, ac maximis valis, quoniam ubi febris ex bubone
+<pb n="7.297"/>
+<lb/>consistit, pars continua semper calefit, ac calor quidem usque
+<lb/>ad ipsum cor distribui tm; caeterum putrida fuligo usque
+<lb/>ad ipiurn minime pervenit, sed ibi manet circumscripta
+<lb/>in bubonis loco, per alterationem solam continuarum partium
+<lb/>ad cor perveniente calore ; quo potissimum modo etiam
+<lb/>per aestum ac per exercitationem ex partibus primo calesactis
+<lb/>distributio ad principium vitale fit. Ubi autem putredo
+<lb/>fuerit in visceribus atque in magnis vasis, veluti fumus
+<lb/>ex putrescentibus humoribus ad cordis sinus pervenit. Accidit
+<lb/>igitur humores in bubone quidem omnes consertum pn-.
+<lb/>trescere, sive uno die, sive duobus continenter, utpote semper
+<lb/>invicem adhaerentes et uno loco inclusos. Qui vero
+<lb/>sunt in visceribus conditi et in magnis vasis, utpote transfluentes
+<lb/>semper ac simul putrefacientes quos attigerint, ternpore
+<lb/>ampliori putridum accendunt calorem. Sed ut uno
+<lb/>verbo dicatur, quemadmodum in exteris omnibus, quaecunque
+<lb/>calefiunt praeter naturam a quavis causa, si nequeat pu-,
+<lb/>trescere id quod calefit; velut lapis aut lignum aut aliquod
+<pb n="7.298"/>
+<lb/>aliud tale, eo usque perseverat calidum quoad refrixerit paulatnn.
+<lb/>Id autem quod putrescere potest; depascentem fiemper
+<lb/>secundum continuitatem habet calorem. Quemadmodum
+<lb/>estas nidi in agro stercus pecudum. simul et columborum
+<lb/>ex paete quapiam ab ipso sole calefactum ita vehementer,
+<lb/>ut multa exurgeret exhalatio insum sumi ascendens, vehementer
+<lb/>mordens atque afficiens, ut si quis propinquasset,
+<lb/>ejus oculos et nares laederet Porro stercus tangentibus
+<lb/>erat ile calidum, ut demeret diutius impositas ipsi manus
+<lb/>aut pedes. Non tamen semper id symptoma durabat, sid
+<lb/>sequenti die refrigerabatur quidem quantum stercoris ad tumtuum
+<lb/>fervorem pridie pervenerat ; quod autem continuum
+<lb/>ipsi erat, tunc fuccendebatur, quando primum. stercus in
+<lb/>summo fervoris rigore erat; illudque ipsum, dum hoc incliti
+<lb/>nabat, rursus incalebat atque effervescebat, ec paulo post
+<lb/>summum fervorem obtinebat, primo refrigerato, atque illud
+<lb/>rursus inclinabat, dum id .quod continuum erat, calorem concipicbat ;
+<lb/>et paulo post accendebatur quidem hoc, et ad summum
+<pb n="7.299"/>
+<lb/>fervoris perveniebet, prius autem refrigerabatur.
+<lb/>Erat autem lue circuitus fere tempus diei ac noctis ; ile ut
+<lb/>exemplum sit maxime conveniens febri quotidianae. Si vero
+<lb/>duobus diebus ac noctibus lictus circuitus fuisset, eremplura
+<lb/>foret ita febris tertianae ; et si tribus, quartanae; et
+<lb/>si quatuor, quintanae, .si modo febris ulla quintana fit; ipse
+<lb/>enim nondum perspicue alui neque eum circuitum neque
+<lb/>aliquem alium ultra quartanam. Sed de scbribus repetentibus
+<lb/>.per circuitum post dicetur. Putredo autem humorum
+<lb/>quae fit in vasis, similis putredini, quae in inflammationibus
+<lb/>fit et abscessibus et aliis phymatis, duplex quidem genere est ;
+<lb/>ex permissione autem duorum generum alia tertia varia specie.
+<lb/>existat. Siquidem et mixtionis mosti, quum alterum genus
+<lb/>maj^ris minorisque ratione superet ut superetur, facile numerari
+<lb/>non possunt, sed ex duobus generibus alterum quidem
+<lb/>fit superante natura, alterum vero evicta : superante
+<lb/>quidem, ut per inflammationes et phymatodes tumores omnes
+<pb n="7.300"/>
+<lb/>, pus ; in humoribus autem venarum et arteriarum, id
+<lb/>quod subsidet in urina proportione puri respondens. Atque
+<lb/>haec putredo censetur, sed etiam habet aliquid concoctionis;
+<lb/>manente enim adhuc concoquendi facultate vasorum, putres- ceus
+<lb/>tunc humor ad talem allevationem deducitur. Porro
+<lb/>alia est putredo concoctrice facultate adeo debili, ut nulla mu-r
+<lb/>talio ad bonum putrescentis excrementa efficiatur ; quod fit
+<lb/>interdum illa extreme debili, quamvis putrescens humor fit
+<lb/>modice pravus ; interdum autem facultas ad extremam deliilitatum
+<lb/>numme deducitur, sed humor summe pravus existit.
+<lb/>Hujusmodiexcrementi putredo neque consulentiam, neque
+<lb/>colorem, neque odorem habet unum ; sed putrescens humor
+<lb/>semper secundum substantiam permutatur ac variatur. . Al-,
+<lb/>tura vero putredo, quam et concoctionem esse diximus-, m
+<lb/>unam speciem puris semper mutatur, eri colorem et eonfistentiam
+<lb/>et odorem.
+</p>
+<pb n="7.301"/>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Vlueente igitur prorsus natura pus optimum
+<lb/>gignitur, risu album ac crassem et sibi simile undique;
+<lb/>laeve autem tangenti ac minime foetidum. Quod si velut
+<lb/>semsputridunr suerit,. tertium genus in talimutatione, quod
+<lb/>.paulo supra diximus, consistit. Porro diximus tale genus
+<lb/>maxime multiplex esse : nam quod magis . ac minus recipiat
+<lb/>concoctionem, innumerabilis differentia esu Saepe enim
+<lb/>album effectum, aut foetidum- est aut tenue consistentia;
+<lb/>quandoque vero non album, sed lividum apparet, atque in
+<lb/>omnibus sus magis et minus est insiuitum. Caeterum quot
+<lb/>in abscessibus putredinis differentiae sunt, tot in febribus ex
+<lb/>putredlue accensis minarum ab iis, quae his innatant,. formae
+<lb/>existunt : optima enim, quae ex putrente humore coctionem-
+<lb/>a continenti vale suscipiente perficitur, candidum,
+<lb/>laeve, aequale ac minime foetidum lenimentum habet:
+<lb/>pessima vero, quae in omnibus maxime contraria huic esu
+<lb/>Ea vero, quae media est, quo propius ad earum alteram
+<pb n="7.302"/>
+<lb/>accesserit, tanto melior aut deterior esu Sed de urinarum
+<lb/>differentia in commentariis de judicatiouibus disseritur. Fehres
+<lb/>autem, quae ex putredine humorum accenduntur, alias
+<lb/>a diariis esse existimare oportet. Atque harum dignotio nequaquam
+<lb/>difficilis est, quamvis impossibilis quibusdam esse
+<lb/>rideatur, idque re ipsa millies indicavimus, pruna accessione
+<lb/>-finita, lotum ac modice ribatum ad fulica opera redire praecipientes,
+<lb/>ut postea non febricitaturum, et ita accidit. Unum
+<lb/>igitur ac primum inditium diariamm febrium est, ab aliqua
+<lb/>causa incepisse recenti atque evidenti, quae praecesserit (quam
+<lb/>consueverunt omnes medici saniores appellare causam procatarcticamj
+<lb/>sed id quamvis inseparabile siL ab hujusmodi sehribus
+<lb/>, earum proprium minime est, quoniam et aliae nonnullae
+<lb/>incipiunt causa quadam evidenti praegressa: Inseparahile
+<lb/>vero et proprium est minae concoctio statim piinio
+<lb/>die ; et ad haec pulsus ad magnitudinem ac celeritatem lusignem
+<lb/>accedentes, ita ut frequentia per exteriorem ouietem
+<pb n="7.303"/>
+<lb/>a proportione delimat. Magis praeterea proprium atque
+<lb/>inseparabile earum indicium est, quod fystole minime crescat
+<lb/>in celeritatem ; vel si crescat interdum, id minimum est,
+<lb/>ac cognitu difficile et paulum a pulsu naturali recedens, quin
+<lb/>etiam caloris suavitas proprium atque inseparabile est talium
+<lb/>febrium. Inseparabile vero et aequalitas. et ascensus liber.
+<lb/>tum in caliditate tum pulsibus, non tamen proprium est : etenim
+<lb/>quibusdam aliis inest, quemadmodum et flatus demenso
+<lb/>tia, neque enim id proprium est, quamvis his potissimum
+<lb/>lusit. )Ac melius quidem fuerit haec communia, quod per
+<lb/>incrementum ac vigorem diariis praecipue insint, inter propria
+<lb/>reponere .Sit enim ita, quamvis non rei species, tamen
+<lb/>optimum certissimumque testum febrium proprium simul
+<lb/>atque inseparabile signum; quemadmodum declinatio, quae.
+<lb/>cum fudore: autmadore, aut penitus vapore quodam suavi
+<lb/>est, quam integritas perfecta excipiat. Haec quidem communis
+<pb n="7.304"/>
+<lb/>est febrium diariarurn dignotio. Sed de singulis feorfum feeundum
+<lb/>speciem agam infra.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Aliud autem genus febrium, quod divisione
+<lb/>diariis opponitur, nullata nomen commune omnium
+<lb/>habet. Differentiae autem primae duae existunt, non obfcuris
+<lb/>speciebus definitae; quaedam enim ex lis putredine,
+<lb/>humorum accenduntur; usiae vero partes ipsas animalis fo-.
+<lb/>ludas occuparunt, atque appellant eas hecticas febres, vel.
+<lb/>quia stabiles sunt ac. solutu difficiles, quemadmodum habitus,.
+<lb/>vel quia ipsum corporis habitum occuparunt.. .Itu namque.
+<lb/>consueverunt nonunare solidas partes, eas humoribus diri- .
+<lb/>sione opponentes. Indicia igi turi febrium, quae ex humorum
+<lb/>putredine accenduntur, haec sunt. Primum omnium
+<lb/>proprium quidem, sed minime inseparabile est, quod nulla
+<lb/>praeincipiens causa tales praecesserit febres, neutri enim ali-.
+<lb/>orum generum hoc inest, eo quod omnes suariae ex causis
+<lb/>procatarcticis consistant, hectieae autem quoties sine iis gen
+<lb/>orantur; nunquam ab initio invadunt:. quocirca quoties
+<pb n="7.305"/>
+<lb/>fine praeincipiente causa quis febricitare coeperit, causam
+<lb/>hujus affectionis esse in humoribus sciendum est. Sed interdum
+<lb/>causa quaepiam evidens, quae praecesserit, diariam febrem,
+<lb/>quantum est in seipsa, committens, febrem ex humorutu
+<lb/>putredine excitavit, quoties affectum corpus italo habet,
+<lb/>id est quum impurum excrementosumque est. Ubi enim
+<lb/>excrementa per diarium febrem plus aequo calefacta fuerint,
+<lb/>deinde initium putredinis inde susceperint, alterum febrium
+<lb/>genus accendunt, priore sudato. Sed lutemoscitur successio
+<lb/>tusis febris inditio proprio simul atque lufeparabssi; quod febris
+<lb/>diaria nequaquam desinat ad exquifitam integritatem,
+<lb/>Accidit sane interdum in diariarum febrium vigore, aliquod
+<lb/>transmutationis indicium prodi;. ac multo magis in declinatione,
+<lb/>quoties, ut paulo ante dicebamus, maxima tranquillifas
+<lb/>febris abest, quae adesse deberet. Haec sunt tranfitus
+<lb/>indicia. At varo febrem a rigore incepisse, neque praegresso
+<lb/>aestu, neque frigore vehemente, qualem maxime patiuntur
+<pb n="7.306"/>
+<lb/>qui per nivem faciunt iter vel alio modo in vehementi frigore
+<lb/>versantur diutius, proprium est et hoc febrium; quae ex hunrorunr
+<lb/>putredine accenduntur, sed haud quaquam inseparabile.
+<lb/>Non enim omnibus ipsis, quemadmodum nec horror,
+<lb/>inest : is enim non solum non inseparabilis est ab hujusmodi
+<lb/>febribus, sed nec ab initio proprius esu Caeterum pulsuum
+<lb/>atque caloris inaequalitatem esse, sive per . accessiones sive
+<lb/>per incrementa, talium generi febrium proprium est, sed
+<lb/>haudquaquam inseparabile; multae enim etiam sine inaequalitate
+<lb/>sensibili incipiunt, atque ad statum perveniunt. Jam
+<lb/>vero multo -minus illud inseparabile est, quod accessio multas
+<lb/>habeat luvasiones, quod rursus exacerbari appellamus.
+<lb/>Quemadmodum et pulsuum compressio (ita vero nominant,
+<lb/>ubi incipiente accessione parui admodum et inaequales existunt
+<lb/>j neque id talium febrium inseparabile est, non tamen
+<lb/>commune est alteri ulli generi febrium, sed harum propriis
+<lb/>um, quemadmodum ipsa inaequalitas ,-ub i alicuius fympto-.
+<lb/>matis ratione non accidit. saepe enim suipte ore ventri-.
+<pb n="7.307"/>
+<lb/>culi collecto onodam pravo humore ac mordente ipsum vel
+<lb/>refrigerante, parvi fimus inaequalesque fiunt su frigidis
+<lb/>quidem humoribus parvitas, in mordacibus vero inaequalitas
+<lb/>exuperat : sed vomentibus haec ambo statim desistunt.
+<lb/>.Ubi vero ventriculus nihil ejusmodi patitur, generis prae- .
+<lb/>dictarum febriunr tales pulsus existunt. .At vero maximum
+<lb/>indicium febrium putridorum est caloris qualitas. Nihil enim
+<lb/>suave, neque moderatum, neque diariis sunlle habet ; sed
+<lb/>quemadmodum optimi ante nos medici dixerunt, mordax potius
+<lb/>quodammodo est, ut laedat mordeatque tactum, veluti
+<lb/>sumus oculos ac nares. Verum inter initia accessionum, dum
+<lb/>adhuc suffocatur calor ac succenduntur intus excrementa,
+<lb/>non statim admoventibus manum dignoscitur; sed -.diutius
+<lb/>immorantibus praedictum caloris genus de. profundo emergit.
+<lb/>Ac, ut mihi videtur, quum tale aliquid. vidisset Themison,
+<lb/>proprium atque inseparabile esse omnibus febribus existimaBati
+<pb n="7.308"/>
+<lb/>sed de his tuo loco rursus agetur. Praedicta autem
+<lb/>species caloris perpugens, ut ita dixerim, aut erodens, veiuti
+<lb/>medicamentum aliquod acre impolitum manum, putredixis
+<lb/>humorum soboles est, perspicue per incrementa atque
+<lb/>vigores febrium apparens ; non tamen statim per initia accessionum
+<lb/>perspicue existit. Proprium praeterea infeparabile
+<lb/>est generi febrium, quae ex humorum putredine accen-.
+<lb/>dantur, velocitas contractionis pulsus, evidentior quidem
+<lb/>per incrementa apparet, sed minime obscura per ipsos vigores
+<lb/>atque accessiones. Comitatur autem has per initia parvus
+<lb/>simul ac velox pulsus ; per vigorem autem magnus simul
+<lb/>ac velox. Nec secus frequentia ipsa per exteriorem
+<lb/>quietem perspicua est in ejusmodi febribus, neque diariis, neque
+<lb/>hecticis similis. Maxime proprium praeterea est testum
+<lb/>febrium urinae cruditas;- atque obscura concoctio proprium
+<lb/>indicium est febrium ex humoribus. consistentium. Neque
+<lb/>enim cruda, neque obscure concocta in febribus diariis
+<pb n="7.309"/>
+<lb/>existit. Atque alterutra quidem earum feorfum dieta proprium
+<lb/>est febrium putridarum indicium; sed ambo simul drcta
+<lb/>per ipsam enuntiationis disjunctionem penitus iufeparabilia
+<lb/>sunt. Nam primae urinae in tali febrium genere vel
+<lb/>penitus crudae, vel obscure concoctae simul prodeunt. Magnum
+<lb/>vero atque infigne indicium concoctionis in. primis
+<lb/>urinis nunquam existit per hujusmodi febres, excepta diariarum
+<lb/>in has transmutatione, quam paulo ante docuimus.
+<lb/>Caeterum praeter haec, quae diximus, inditia propositarum
+<lb/>febrium, id quoque existit, per accessionis rigorem declarare t
+<lb/>symptoma quoddam ardentis febris; quemadmodum fi quod
+<lb/>epialae, ae lipyriae, vel femitertianae, vel typhonis, vel alterius
+<lb/>talis febris symptoma suerit ; quae propria quidem
+<lb/>sunt generis febrium ex putredine humorum consistentium,
+<lb/>non tamen inseparabilia, et ob eam rem, si quidem .haec
+<lb/>minime adfuerint, ex aliis indicium quaerendum; si vero
+<lb/>adfuerint, sinit Iosum genus talium febrium, test et species
+<pb n="7.310"/>
+<lb/>una aliqua ex ipsis significatur. Quod si declinatio minime
+<lb/>desinat ad integritatem, sive per sudorem, sive etiam aliter
+<lb/>fiat, alterum e duobus erit, aut ludiciunr transitus in aliam
+<lb/>surem, si superiora omnia suariae fuerint indicia; vel si
+<lb/>nullum ex his luerit, febrem quandam ex humoribus consistentem
+<lb/>statim ab initio invasisse ostenditur. Si vero pulfus
+<lb/>prima die durus existat, considerandum num concretio
+<lb/>quaedam ex frigore, an siccitas, an tensio convulfifica in cor-.
+<lb/>pore laborantis, an iusiammatio quaedam, an fcirrhus fit;
+<lb/>feientes quod ex his tantummodo pulsus durus efficiatur.
+<lb/>Nam Archigenis errores circa notionem dignotionenrque duri
+<lb/>pulsus in opere de pulsibus abunde docuimus, in quo verfatus
+<lb/>fit oportet qui ad hos libros legendos accedet; ac po.tissimum
+<lb/>in ea parte quae de pulsuum dignatione agit. Etr
+<lb/>enim pulsuum ipsorum nomina ac significata ab eis omnia
+<lb/>omnemque numerum uno volumine indicavimus, quod quidetn
+<lb/>.inscripsimus de differentiis pulsuum. Sed quonam modo
+<pb n="7.311"/>
+<lb/>mrumquemque conveniat dignoscere, alio volumine dr- .
+<lb/>xhnus in quatuor libros distincto, quod inscripsunus de di-,
+<lb/>gnotione pulsuum : quemadmodum alios deinceps quatuor lisuos
+<lb/>de causis pulsuum effecimus; utilem quatuor praeter dictos
+<lb/>de praenotione ex pulsibus, non folium verbis, sed etiam
+<lb/>re ipsa indicantes hujus scientiae utilitatem. Et si quis noluscum
+<lb/>una accessit ad aegros, horum librorum speculationem .
+<lb/>re ipsa demonstrantibus, cum caetera ei pertunsa sunt, tum
+<lb/>vero etiam illud, non esse videlicet durum pulsum aut pro-. prium
+<lb/>talium febrium aut inseparabilem. Sed de hoc nunc
+<lb/>non est licendi locus p nam praedictis libris et estis octo libris,
+<lb/>quibus expendimus librum de pulsibus Ardrigenis, abunde
+<lb/>hujusmodi symptomata docuimus; hoc loco, quod sit .
+<lb/>necessarium, tantummodo iudicabitur. Pulsus durus neque
+<lb/>proprius est, neque inseparabilis cuipiam generi febrium,
+<lb/>neque suariae, neque putridae, neque hecticae. Sedhectieae
+<lb/>inest magna ex parte, atque interdum m aliis duobus generi- .
+<pb n="7.312"/>
+<lb/>bus ob symptoma quoddam In diaria quidem, quoties febria
+<lb/>affligis ob perfrigerationem vehementem, vel tensio
+<lb/>quaedam nervosa inest; atque interdum ejsicitur ob aestum
+<lb/>vehementem, vel lassitudinem simul, vel inopiam alimenti,
+<lb/>vel vigilias immodicas, vel evacuationem; quum ob slimentum
+<lb/>defectum haec quoque constiterint. Per febres autem
+<lb/>putridas pulsus quoque durus habetur, quoties in viscere inflammatio
+<lb/>fatigat vel scirrhus; et ob symptoma aliquod
+<lb/>coniunctum, aut nervosam aliquam tensionem, aut siccitatem
+<lb/>, durus quoque sic pulsus evadit, velut et iis qui lutumpestive
+<lb/>frigidam biberunt, aut eadem laverunt et fructus
+<lb/>quosdam largiter comederunt. Sed pulsus durus nunquam
+<lb/>efficitur per ipsam febrem, qua febris est, neque per ipfam
+<lb/>diariam, nequeper ipsam putridam; neque enim quoties ex
+<lb/>inflammatione febris affligit, eodem modo febris ac .pulsus
+<lb/>durities comitatur;. sed febris quidem sequitur putredinem
+<lb/>humorum ; durities autem.teusionem ex repletione vasorum.
+<lb/>Nam, ut semel dicatur, durities tunicis arteriarum accedit,
+<pb n="7.313"/>
+<lb/>vel propter concretionem, vel tensionem, vel siccitatem.
+<lb/>Concretionem igitur refrigeratio vehemens committit ; tensionem
+<lb/>vero inflammatio ac lcirrlrus, atque etiam nervorum
+<lb/>proportione respondens inflammationibus dispositio; siccitatem
+<lb/>vero evacuationes diuturnae vel ob alvi fluorem, veI
+<lb/>lienteriam, vel dysenteriam, vel vomitum longum, vel aliud
+<lb/>istiusmodi, et fames diuturna atque ardentes febres, diuturnae
+<lb/>et, ut in totum dicatur, quaecunque vehementer exic.
+<lb/>eunt ipsius animalis partes solidas, velut et hecticae; de quihus
+<lb/>nunc dicere suerit tempestivum, ab eurum generatione
+<lb/>exorsis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Quae igitur febres vocantur hecticae, duobus
+<lb/>modis ortum habent magna ex parte febribus ardentibus,
+<lb/>quae vel prorogantur adeo, ut consumant spatio temporis
+<lb/>humorem corporis cordis, vel etiam quum adhuc multus
+<lb/>permaneat. Illae igitur non solum hecticae, sed etiam ta-.
+<lb/>bidae jam existunt. Hae vero quae manente adhuc humore
+<lb/>fiunt, corpus ipsum cordis prehendentes, lude maxime accenduntur
+<pb n="7.314"/>
+<lb/>, quemadmodum lucernarum flamma ex ellyclinio.
+<lb/>- Atque una quidem ejus generatio a me est prodita,
+<lb/>Reliqua autem est, - quoties statim ab initio iuvnserint, prituum
+<lb/>fui ortum diariis similem facientes ob moerorem, iram,
+<lb/>lassitudinem magnam cum aestu contrariam. Has igitur febres
+<lb/>sanare nequaquam difficile est; quae vero ex eis devenerint
+<lb/>ih marasmum luscitia medicorum, quileurationi praesccti
+<lb/>fuerunt, eas sanare non solum non facile, sed etiam impossibile
+<lb/>est, quoties plane jam confirmatae fuerint, nec amplius
+<lb/>incipiant Earum enim natura calida ac .sicca .-.existit,
+<lb/>qumn cor similiterafficitur ac ellychnium su lucerna, quor
+<lb/>tres plurimum crematum fuerit. Etenim ita exusium comminuitur
+<lb/>atque dissolvitur, perditque continuitatem prae
+<lb/>ariditate, ut neque fi assimulas abunde oleum, queas rursus
+<lb/>accendere flammam copiosam. Parva enim atque infirma
+<lb/>flammula in ipso dispergitur, ac semper minor efficitur, usqrtequo
+<lb/>extincta fit. -Atque exacte quidem tabida febris hujusmodi
+<pb n="7.315"/>
+<lb/>existit, nec eadem est cum affectu marcore. Hic
+<lb/>enim in iis efficitur, qui consenuerunt, fine febre, extincto
+<lb/>in istis nativo calofe ( quae potissimum moerore vacua mors
+<lb/>est, ac fecmrdunr naturam ex siccitate consistens ) velut et in
+<lb/>iis qui emarcent praeter naturam, genus illud ejsicituri
+<lb/>quod Philippus nominat ex morbo senectam, in quam multos
+<lb/>novimus non lenes fotum, sed etiam pueros incidisse.
+<lb/>Febris autem tabida non susum sicca, sed et calida assertio
+<lb/>est. Extinguitur autem per eam multo celerius calor in
+<lb/>animali, atque -tabescit totum corpus instar arboris prorsus
+<lb/>arefactae, vel ob .temporis longitudinem., vel flammae vicinitatem,
+<lb/>veI fortem atque immoderatum squalorem. Sed de
+<lb/>tu m merceris affectione, qualis sit, seorsum diximus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Quum autem hecticarum febrium duplex
+<lb/>genus sit, ut ante definivimus, indicia deinceps explicemus.
+<lb/>Febris igitur hectica cmn marcore coincidens promptissime
+<lb/>ac facillime cognosci potest. Prius enim quam tangas pus-fum
+<pb n="7.316"/>
+<lb/>atque calorem, oculos stupra modum cavos ridebis, quasi
+<lb/>in fovea quadam conditos, ob totius humidae eorum  substantiae
+<lb/>consumptionem; ita ut ossa, quibus palpebrae annexae
+<lb/>funi, promineant. Quinetiam lippitudiues in eis vifantur
+<lb/>aridae, ac quaedam squalida dispofitio, questa maxime
+<lb/>inest eis, qui per pulverem multum tota die in sule calido
+<lb/>fecerunt iter, Flos ipsa praeterea vividus coloris periit,
+<lb/>atque id toti faciei accidit. etfmmoderatus squalor habetur
+<lb/>totius cutis circa faciem, maximeque circa frontem,
+<lb/>ita ut propter .siccitatem dura atque intensa fit ; non tamen
+<lb/>queunt palpebras ipsas multum attollere, perinde affecti fetuper,
+<lb/>ut qui dornrituriunt. Quinetiam connivent magna ex
+<lb/>parte, quemadmodum qui dormitanti Est autem talis affectio
+<lb/>nequaquam fomnus, sed impotentia vigilandi.^ Carnes
+<lb/>praeterea extabuerunt circa tempora, ita ut ea loca collapsa
+<lb/>cavaque appareant. Etenim quid aliud quam ossa ac cutis
+<lb/>sunt ? ita ut si eos denudes, in ventre nullum superesse iulestinum,
+<pb n="7.317"/>
+<lb/>nec ulla viscera, atque hypochoudria ipsa retracta
+<lb/>esse ad thoracem admodum videantur. Quod si libeat illos
+<lb/>tangere, cutis quidem perquam arida existit, et ubi attollas
+<lb/>apprehendens. eligitis, quasi corium quoddam stat. Pullius
+<lb/>autem tenuis, durus, obscurus ac frequens habetur-. Calor
+<lb/>autem primo quidem accursu debilis, sed paulo post acer atque
+<lb/>erodens apparet, ac magis ubi fungendo diutius immoreris.
+<lb/>Sed minime convenit reliqua indicia commemorare
+<lb/>in re tam perspicua. Itaque satius est, ut ad ipfmn marcorem
+<lb/>adhuc incipientem oratione veniamus. Marcorem ergo
+<lb/>incipere dico, quoties hmnor iustus in quoquo que corpore
+<lb/>dispersus per loca menia partium fimilarrunr, ex quo partes
+<lb/>primum aluntur, ferent ipso corpore curtiis nullus amplius
+<lb/>inesse videtur.; Quousque enim aliquid ipsius servatur, hectica
+<lb/>febris tantummodo est, nondum tamen marasmodes.
+<lb/>Quum vero res eo periculi devenerit, ut fere nihil amplius
+<lb/>hujus humoris existat, exquisitus jam marcor consistit Dissicilis
+<pb n="7.318"/>
+<lb/>ergo cuiuslibet hecticae febris dispositio est, quoties
+<lb/>ipfius principii tempus praeterierit. . Definio autem principium,
+<lb/>non dierum vel horarum numero, quemadmodum neque
+<lb/>in caeteris morbis, sed ipsa qualitate dispositionis. Etenim
+<lb/>dum ccorpus ipsimi cornis discedit ab ipfa temperie natu,
+<lb/>radi, non statim. insitus humor perit, neque facultas debilitatur
+<lb/>, sed in primis velut ebullitio quaedam efficitur ipsius
+<lb/>humoris, quo tempore talis febris facillime curatur ; quippe
+<lb/>quod facultas nihildum perpessa esu Deinceps autem coufumptio
+<lb/>quaedam fit ob ebullitionem, eaque ipfa amplius jam
+<lb/>procedente, ipfa etiam corpora similaria, quae velut elementa
+<lb/>cornis existunt, sicciora evadunt, minusque alimenti fena
+<lb/>fiunt, ac facultas debilis redditur tantum, quantum siccitas
+<lb/>ac caliditas in eo exuperat, e quibus alterum sufficiens erat,
+<lb/>ut exuperans iusirmam redderet facultatem. Talis febris
+<lb/>jam quodammodo medio genere ambigit, ac media est insanabilis
+<lb/>penitus illius tabidae ejusque quam paulo ante diximus.
+<lb/>adlme incipientem facillime posse curari. Atque in ea perquum
+<pb n="7.319"/>
+<lb/>multa latitudo existit, .quoniam non parva affectionis
+<lb/>ipsius permutatio majoris minorisque ratione. Itaque
+<lb/>quoties ab utraque febre discessit aequaliter, ab .exquisite scilicet
+<lb/>tabida, eaque quae nondum quippiam ejusmodi habet,
+<lb/>media quodammodo est, et ad curationem ambiguum habens
+<lb/>in utroque momentum. Quae autem tabidae propior est,
+<lb/>jam periculo proxima est, quemadmodum priori alteri propinquior
+<lb/>spem .obtinet non parvam sanitatis. Sed tempus
+<lb/>est, ut ad earum indicia transeamus ; et primum quidem illius,
+<lb/>quae potest facile curari, nisi in vulgarem quempiam .
+<lb/>melicum incidat Est autem, ubi sula consistit, nequaquam
+<lb/>difficilis cognitu ; implexa autem cuipiam putridae, deprehensu
+<lb/>elissicilis jam existit ob permixtionem. . Sed primam
+<lb/>subiiciamus ipsam solam ex quadam causa praedicta censifiere,
+<lb/>atque appareant in ea prima die cuncta febrium diariarum
+<lb/>generis indicia. . Simul igitur cum eis apparebit statim
+<lb/>causae procatarcticae species, atque id- indicabitur procer
+<pb n="7.320"/>
+<lb/>dente oratione. Sed interrogando aegrotum ipsum licebit
+<lb/>discere, si aliis in rebus non male affectus, ex ira vehementi
+<lb/>tantummodo vel moerore febricitare inceperit. Quod si
+<lb/>rideantur haec ita se habere, -scbrisque extendatur usque in
+<lb/>secundum diem, nequaquam desinens ad integritatem, sed
+<lb/>neque vehementior evadens, si squalidior quidem appareat,
+<lb/>suspicari hecticam fore talem debes. Quod si tertio die sine
+<lb/>cibo transmittere voluerit suspectas horas accessiouis, quae
+<lb/>tertio quoque die prehendere solet, ac neque additio ulla
+<lb/>facta fit neque imminutio insignis, sed primae febris parvae
+<lb/>reliquiae extendantur, permaneantque cum squalido corpore
+<lb/>et calore, miti quidem in primo occursu manus apparente,
+<lb/>moranti autem diutius acri, mordaci et squalido occurrente,
+<lb/>talem sebrem hecticam esse existimare debes. At vero maximum
+<lb/>tibi atque certissimum indicium erit naturae ejus, nutrito
+<lb/>homine, quando certissime videtur transivisse omnes
+<lb/>horas suspectas. Statim enim a cibo post unam horam vel
+<pb n="7.321"/>
+<lb/>alterum omnibus tangentibus aegrum alterum incretnentum
+<lb/>febris ipsa habuisse ridebitur. Nec deerit qui increpet,
+<lb/>tanquam intempestive dantes cibum, et ipso potissimum tempore
+<lb/>accessionis, et dicat diutius fuisse expectandum, et tardasse
+<lb/>accessionem. Sed res non ita se habet. Cuilibet enim
+<lb/>hecticae febri. proprium inseparabile id est, ut ingesto cibo
+<lb/>calor accendatur, pulsusque in magnitudinem ac velocitatem
+<lb/>increscat; ita ut laboris expers insultus accessionis esse videatur.
+<lb/>Laboris expertem voco, m quo nec horror extitit,
+<lb/>nec frigus extremorum, neque somnus degravans, neque pigritia
+<lb/>iusignis, vel inaequalitas quaedam penitus ; vel in calore,
+<lb/>vel in pulsu, imo nec etiam parvitas, neque debilitas,
+<lb/>neque aliud hujusmodi quicquam, sed tanquam alii cuipiam
+<lb/>nutrito pulsus majqr statim ac velocior redditio:. Accidit
+<lb/>autem interdum et in aliis quibusdam febribus incrementum
+<lb/>laboris expers: et, quod quidem ex ipro est, videbitrrr mitime
+<lb/>esse hecticae febris symptoma proprium inseparabile,
+<pb n="7.322"/>
+<lb/>Sed non parum differt, si ad universam dictorum indiciorum
+<lb/>collectionem respexeris. In omnibus enim assis febribus tales
+<lb/>accessionum infultus laboris expertes existunt etiam citra .
+<lb/>alimentum ingestum. In hectica autem penitus contrariunr
+<lb/>evenit, nullo enim tempore accessionis infultus prehendit,
+<lb/>sed una continua febris est, velut ea quae continens proprie
+<lb/>nominatur. Sed haec quidem quasi flammam quandam permultam
+<lb/>occurrentem habet imp onentibas manum; praeterea
+<lb/>pulsus quoque velocissimus, frequentissimus, maximusque ei
+<lb/>existit. in febre autem hectica neque caloris multitudo
+<lb/>occurrit, ac pulfus tanto minor, rarior, tardior queest quam
+<lb/>in continente, quanto calor ipse minor habetur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">Commune igitur cujusvis hecticae febris
+<lb/>est,. ut exigua sit atque aequalis semper a primo initio usque
+<lb/>ad. ultimum finem. Proprium autem ejus, quae tabi affini s .
+<lb/>existit, siccitas est; quoniam hectica febris saepenumero sine!
+<lb/>siccitate consistit; nequaquam trausiens in marcorem, qualis
+<pb n="7.323"/>
+<lb/>etiam nunc mullis in magna penuria contigit: Febris igitur.
+<lb/>hectica dissidet a synocho, quemadmodum dictum jam est.
+<lb/>Ab aliis autem laborum expertes accessionum habentibus in-,
+<lb/>sultus eo ipfo maxime dissidet, quod laborum angustiamquandam
+<lb/>illae omnino habeant post alimentum sub ipsam
+<lb/>accessionis inuasionem; hecticae autem post alimentum velut
+<lb/>accessionis insultus. quidam laborum expers contingat ; qui,
+<lb/>ut paulo ante docui, minime accessio habetur, sed imperitos
+<lb/>circa talia decipit ob caloris tum multitudinem tum magnitudinem
+<lb/>velocttalemque pulsus. Tusis autem febris sequenti
+<lb/>die planius cognoscetur, fi diligentius observaverimus, quam-diu
+<lb/>permaneat, ubi cibunr sumpserit aeger, ipsa pulsus ca r
+<lb/>lorisque alteratio.. Invenies enim tamdiu permanere omnium,
+<lb/>quae manifeste apparent, allevationem, donec distributio^
+<lb/>alimenti atque adjectio squalorem cordis humefaciat;- deinde
+<lb/>rursus ad pristinum redire statum, qui erat antequam
+<lb/>sumeret alimentum. . Si igitur alio tempore nutrias ipsum
+<pb n="7.324"/>
+<lb/>fequenti die, rurfusque alio tempore fequenti die, invenies,
+<lb/>quod fieri dico, augeri quidem calorem post cibum,
+<lb/>pulsumque ipsum, ut dictum est, alterari. Constat
+<lb/>enim istis id accidere, quod calci ac lapidi calefactu. Si
+<lb/>enim eis affundas frigidissimam aquam; multo calidiores
+<lb/>sentiuntur, tanquam calor squalidus in eis ab humida substantia
+<lb/>nutriatur. Quae autum caula sit, ob quam ita eveniat,
+<lb/>quaestio naturalis existit; sed quod ita efficiatur, cuivis
+<lb/>tentare volenti discere licet. Ubi enim manibus sumas
+<lb/>glebulam calcis, contemnes ejus caliditatem ac minime scnties:
+<lb/>ubi vero deponens ipsum humi, assumtas illi aquam,
+<lb/>perspicies statim admodum calefieri, atque adeo fervere, ut
+<lb/>lebetes, quoties in multa flamma versantur. Videbis praeturea
+<lb/>vaporem ab ea haud exiguum efferri; quod si audeas
+<lb/>fungere, facile deuteria. Ad hunc igitur modum ad ipsum.
+<lb/>fenfum humidus calor non paulo habet vim evidentiorem
+<lb/>quam siccus. Caeterum quod calor siccus existat per hecticam
+<pb n="7.325"/>
+<lb/>febrem, cui successit marcor, hinc discas licebit. Nemo
+<lb/>statim ab initio correptus est tali febre, qui corporis habitum
+<lb/>habuerit humidum ; sed qui siccior natura existit, maximeque
+<lb/>ubi calidus quoque temperamento sit, et qui vitam
+<lb/>delegit in labore, vigiliis, cura ac rictu tenui, is assolet statim
+<lb/>ab initio detineri hectica febre ex ira ac moerore ; ac
+<lb/>multo magis, quoties aestas et constitutio calida ac sicca lo
+<lb/>cusque ejusmodi fuerit. Principium autem ejus terminatur,
+<lb/>quoties eo tempore, - quo diaria per declinationem mitiorem
+<lb/>deducitur ad integritatem, adeo nihil ejusmodi ipsi accidit, .
+<lb/>ut siccitas perspicue intendatur ; tunc enim primum faceedens
+<lb/>suariae hectica jam efficitur. Definitur praeterea aliter
+<lb/>ejus incrementum atque perfecta generatio per accessionem
+<lb/>tertiae diei. Si enim, ut paulo ante diximus, . eo die alia
+<lb/>accessio minime prehendat, neque aeger sine febre existat, ..
+<lb/>sed siccitas ipsi constanter intendatur, talis febris haud dubie
+<lb/>jam hectica est, ac processu temporis marasmodes sine mora
+<pb n="7.326"/>
+<lb/>evadet, ac pulsus debilis simul ac durus fit; continuo que parvus
+<lb/>ac frequens is necessario est ; non tamen propterea
+<lb/>tabidus existit, sed propter debilitatem ac duritiem. At vero
+<lb/>debilitas accidit ob vehementem cordis intemperiem ; dutities
+<lb/>autem ob siccitatem. Quod si tales affectus invadant
+<lb/>cor ipsum, tabida febre detineri animal tunc necesse est. in
+<lb/>eandem praeterea febrem incidunt ex acuta atque ardente
+<lb/>plerique eorum, qui male curantur, maximeque quicunque
+<lb/>ubi frigidam aquam bibere postularent, adeo nihil ejusmodi
+<lb/>biberunt, ut nec ullum aliud infrigidans remedium thoraci
+<lb/>atque hypochondriis adhibuerint. Si vero quum nihil ejusmodi
+<lb/>adhibuerint, etiam cataplasmatis ex melle plurimum
+<lb/>usi sint, quae nunc frequenti in usu sunt, etiam in marcorem
+<lb/>incurrere his promptum est, sive solum febricitent, sive
+<lb/>ex jecoris aut ventris inflammatione. Maxime enim his inflaurmationibus
+<lb/>haud recte ematis succedit marcor: ita ut
+<lb/>quidam existimarint non aliter posse fieri hujusmodi affectionem,
+<pb n="7.327"/>
+<lb/>nescientes, quod neutrum horum, nec aliud quodquam
+<lb/>riscus, aut membrum, neque marcorem neque penitus hecticam
+<lb/>usiam febrem .committat, priusquam, ut diximus, cor
+<lb/>ipfmn afficiatur. Talis igitur affectio ei incipit, interdum
+<lb/>a seipsi, r ut ab ira ac moerore forti et longo ; interdum a .
+<lb/>febre ardenti; quandoque vero ab affectibus pulmonis ac,
+<lb/>thoracis, maximeque .purulentis ac tabidis. Ut autem ab.
+<lb/>his, ita sit a ventre ac iecore, et ut summatim dicatur, qua- ...
+<lb/>vis diutina inflammatione, quae juncta esit siccitati partis
+<lb/>principis totius ammalis, maximeque. cordis. Ego. namque
+<lb/>vidi inflammationi laxioris intestini diuturnae succedere mar-;.
+<lb/>curem, ac stomachi ac vesicae ac renum. Fuerunt autem
+<lb/>nonnulli, qui affecti erant difficultate intestinorum, tali febre
+<lb/>correpti, quum scilicet laborassent inflammatione. intestinorum.
+<lb/>Atque etiam laevitates intestinorum. et sutores intestinomm
+<lb/>diutinos, quotiesstatim ab initio aut tempore .pro-..
+<lb/>cedente febris imbecillis.incidit, mercor subsequitur, et ut
+<pb n="7.328"/>
+<lb/>summatim dicam, quoties praeexicoatum cordis corpus febrilem
+<lb/>calorem susceperit solutu difficilem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">Maximum itaque signum febris hecticae
+<lb/>est, quoties arteriae sentiuntur calidiores quam corpora,
+<lb/>quae circiter sunt; quod per alias febres illis minime acciditi
+<lb/>ι Fit autem symptoma adhuc evidentius ubi laveris, aut.
+<lb/>alio quovis modo rarefeoeris, itu ut humor quidam profluat,
+<lb/>atque calor ipse perspiret. Calor- enim moderatus in aliis
+<lb/>partibus omnibus post talem perspirationem apparet ; in ipsis
+<lb/>autem arteriis nequaquam minor est priore. Is vero
+<lb/>quam maxime exquisite sentitur per pulsuum diastolas, qui
+<lb/>minime mutantur post dictam perspirationem, sied similes
+<lb/>penitus permanent. Sola ergo consistens hectica febris per-.
+<lb/>spieua est, sive absoluto sermone hectica, sive etiam .tabida.
+<lb/>sit. - Ubi vero cum alia quapiam fuerit, difficilius. jam eo-.
+<lb/>gnoscitur, quemadmodum quae nuper mulieri cuipiam acci-,
+<lb/>dit, cui non iulum die, fixi etiam nocte non obscure fiebat
+<pb n="7.329"/>
+<lb/>accessio. Latuit enim tabida febris omnes qui eam visitabant
+<lb/>medicos, existimantes oportere neque. principium accessionis
+<lb/>sensibile esse hecticae febri, neque lucrementum, neque
+<lb/>vigorem, tanquam minime contingat hecticam febrem
+<lb/>putridae alicui posse implicari ; sed nobis statim primis diebus
+<lb/>in hac muliere cognita esu Uterque enim accessionis
+<lb/>insultus, qui die ac nocte fiebat, breves efficiebat partes accessionis,
+<lb/>ac saepe cum madore quodam, aut perspiratione
+<lb/>vaporosa solvebatur tam perspicue, ut corpus ipsum bene
+<lb/>temperatum tangentibus sentiretur. Indicia autem in arterirs
+<lb/>paulo ante elicta semper extiterunt, nequaquam refiigeratis
+<lb/>ipsis similiter aliis partibus, neque velocitatem aut irequentiam
+<lb/>motus amittentibus. Quae ergo esto loco saepenumero
+<lb/>docuimus, etiamnunc dicemus; non oportere solum
+<lb/>circuitus atque proportiones accessionum considerare, sed
+<lb/>multo prius ipsam speciem febris, ex eaque cognoscere ipsam
+<lb/>febrem, quemadmodmn hominem ex propria forma.
+<pb n="7.330"/>
+<lb/>Sic ipsi faece prima die ad hunc modum speciem febris eognovimus,
+<lb/>minime expectantes tertianam, aut quartanam,
+<lb/>aut quotidianam circuitionem. Sed de sus fecundo libro de
+<lb/>Iudiciis satius docuimus; atque eo ipso libro nllulominus
+<lb/>diximus, quomodo oporteat diariae febris cognoscere differ
+<lb/>sentias. Prom Herum autem, stio, me dicturum hoc loco
+<lb/>de istis. Sed cum recordarer pauca in eo libro. desiderari,
+<lb/>quo in plenum de omnibus praeceptum esset, alia quidem huc
+<lb/>transcribere supervacuum duxi, adiiciam vero ea tantummodo,
+<lb/>quae intra modum sunt in eo prodita.</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="indent">Febricitantibus igitur ab aestu cutis magis
+<lb/>ad temperiem calidiorem. et squalidiorem, quam pulsus
+<lb/>ad febrilem affectum mutatur; quocirca . sitis minus hos in-.
+<lb/>festat, quam qui aequalem habent caliditatem Ac primo
+<lb/>occurfu munus calor in ipsis rigere videtur, contra quam
+<lb/>in aegrotantibus propter adstrictionem ; in his enim lucresriti
+<lb/>Caput praeterea peruri maxime ridetur iis, qui propter
+<pb n="7.331"/>
+<lb/>aestum febricitant, gaudentque magis et juvantur frigidis fdmentis,
+<lb/>atque ipsorum o cusi calidiores et rubicundiores vis.
+<lb/>dentur cum siccitate, quicunque fine gravedine et defluxione
+<lb/>febricitant. Quibusdam enim propter aestum talia accidunt,
+<lb/>caputque ipsis redditur non solum calidum, sed etiam plenum
+<lb/>sanguine; ita ut euntes venae admodum contendantur, quae
+<lb/>circa oculos et tempora et frontem et faciem totam habentur.
+<lb/>Id autem non parum discernit, quod pleni sunt, ab iis, qui
+<lb/>ex humorum refrigerio febricitanti Hi enim ubi caput male
+<lb/>afficitur, promptu corripiuntur gravedine et defluxionibus,
+<lb/>et febris ipsis interdum symptoma est solius in capite affectionis.
+<lb/>Sed magna ex parte tunc magis febricitant, quum corpus
+<lb/>refrigeratum est vel exustum. At vero cutis minus
+<lb/>calida refrigeratis, atque in tumore majori corpus existit,
+<lb/>nec quisquam squalor circa faciem, qualis propter aestum
+<lb/>febricitantibus evenit sine capitis repletione. Itaque magna
+<lb/>ex parte caput solet talibus repleri ab aestu, nisi quis fuerit
+<pb n="7.332"/>
+<lb/>admodum purus ac sine excrementis ; iis enim tantummodo
+<lb/>contingit calescens caput fine repletione permanere, interdum
+<lb/>tamen flue repletione a multo calore corripi ipsum totum
+<lb/>exuftum. Haec igitur affectio perspicue dissidet ab ea
+<lb/>quam frigus excitarit. At quae cum repletione est, dissirile
+<lb/>distinguitur, utpote defluxionem inserens ac gravedinem,
+<lb/>quae etiam refrigeratis accidunt, sed, ut diximus, squalor
+<lb/>et nimius calor cutis, et quaecunque alia paulo ante dixi,
+<lb/>propria ustorum existunt ; de quibus fusius in libris de medendi
+<lb/>methodo licetur, cum aliis omnibus suariae febris
+<lb/>differentiis ; quarum dignationes quia fecundo libro de judiesis
+<lb/>docuimus, non amplius hoc loco dicendae sunt. Sed
+<lb/>hunc quidem sermonem hic finiemus, deinceps vero subrium,
+<lb/>quae ex humoribus accenduntur, omnes differentias indicanimus.
+<lb/></p>
+<pb n="7.333"/>
+</div>
+</div>
+<div type="textpart" subtype="book" n="2">
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE DIFFERENTIIS FEBRIVM
+<lb/>LIBER SECUNDUS.</head>
+
+
+<p rend="indent">At superest febrium quae in humoribus. acconduntur,
+<lb/>differentias percurrere, si prius de eis admonuerimus,
+<lb/>minime sufficere, ut quidam voluerunt, ad generationem
+<lb/>febrium, augeri atque exuperare humorem biliosum,
+<lb/>quem alii pallidam, . nounulli flavam nominant bilem. Omnes
+<lb/>enim arquati maxima sic afficerentur febre, quibus co.
+<lb/>pia talis bilis in toto corpore continetur; sed haudquaquam
+<lb/>febricitant prius quam esta quaedam causa concurrat, de
+<pb n="7.334"/>
+<lb/>qua paulo post agetur. At vero absurdum est in quartana
+<lb/>et quotidiana febre exquisita colligi amaram bilem existimare,
+<lb/>quemadmodum in tertiana atque causo. Etenim contra
+<lb/>quam in- illis in quotidiana et quartana febre neque
+<lb/>vomitus biliosus, neque sudor, neque urina, neque dejectiones
+<lb/>ridentur biliosae; praeterea nec quicquam aliud, quod
+<lb/>praecessit, aut simul adest eis, subscribit. Febris enim tertiana
+<lb/>ut plurimum consistit in corpore natura bibolo, et in
+<lb/>aetate rigoris, quae est omnium aetatum maxime biliosa, et
+<lb/>aestivo tempore maxime, quo talis humor exuperat ; itidem
+<lb/>in regione calida et sicca temperamento et fletu ambientis
+<lb/>aeris tali, et vita non otiosa ac deside plurimum, sed in labore,
+<lb/>cura, vigiliis; aestu et victu parco, coque calido et
+<lb/>sicco. Quin et immoderatus usus medicamentorum calefacis
+<lb/>entium et exiccantium committit febrem tertianam. Quoti- .
+<lb/>duana vero e contrario penitus esuritur in natura pituitofiore,
+<lb/>ac teuipore hyberno, et constitutione frigida et humida, fenibus
+<pb n="7.335"/>
+<lb/>et pueris potius, in regione frigida et humida, et alta
+<lb/>ollula simul cum repletione., maximeque quoties post cibum
+<lb/>lavantur, ac multo magis, ubi ipsis cibus pituitosior natura
+<lb/>existit. Sed neque vomunt tales biliosum humorem, neque
+<lb/>deiiciunt; neque sudant, quemadmodum in tertiana febre.
+<lb/>Haec enim ex flava bile putrescente fieri finiet. Quotidiana
+<lb/>vero pituitufum humorem subsequitur ; quomodo quartana
+<lb/>melancholicum. Sic namque natura corporis magis melancholica,
+<lb/>et aetas declinans, et autumni tempus, necnon omnia,
+<lb/>quae sus proportione respondent in cibo potuque,. et
+<lb/>toto rictu, frigida et sicca temperamento, febrem gignunt
+<lb/>quartanam. Et eam ob rem praecedens eas rigor nequaquam
+<lb/>similis est; sed in tertiana quasi pungens ac vulnerans
+<lb/>siensum efficientem caulam indicat; in quartana autem quasi
+<lb/>refrigerans. Sest de forma rigoris libro de causis fymptomutum
+<lb/>definitum abunde jam est, ubi etiam de ejusdem generis
+<pb n="7.336"/>
+<lb/>febrium differentia est proditum, nempe ex eis iutermittentes
+<lb/>(ita appello eas, quae ad integritatem sensibilem
+<lb/>desinunt] ex humore moto ac in omnem corporis partem de.lato
+<lb/>efficiente febrem consistere ; .continuas vero ex condito
+<lb/>et contento in venis, de quarum cognitione fecundo libro de
+<lb/>crisibus docuimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Pebrium igitur intermittentium omnes disTerentiae
+<lb/>tres existunt, quotidiana, tertiana et quartana: ex
+<lb/>pituita putri, quotidiana; ex utraque bile, flava quidem,
+<lb/>tertiana; atra autem, quartana efficitur. Continuarum vero,-
+<lb/>quae ex flava bile consistunt, duplex species est ; una
+<lb/>quidem earum quae synocni continentes appellantur, quarum
+<lb/>omne tempus una accessio est ab initio usque ad finem ; alterum
+<lb/>earum, quae communi, sed ambiguo genere continuae
+<lb/>dicuntur, et multis particularibus circuitibus continentur .
+<lb/>Caeterum continentium differentiae omnino tres existunt.
+<lb/>Quaedam enim earum ab initio usque ad finem aequalis permanet,
+<pb n="7.337"/>
+<lb/>quaedam paulatim crescit, tersia vero alia paulatim
+<lb/>decrescit. Ac nonnulli primam nominant homotonum et
+<lb/>acmasticam, aequali tenore ac vigore incedentem; alteram
+<lb/>anabaticam et epacmallicam, ascendentem atque increscentem;
+<lb/>tertiam vero paracmasticam, decrescentem. CondDuarum
+<lb/>vero duae differentiae primae existant. Nam astae
+<lb/>tertio quoque die tantummodo exacerbantur, aliae die intermedio
+<lb/>alteram inferunt exacerbalionem. Atque hae n ustum
+<lb/>nomen peculiare obtinent. Febrem autem, quae tertio quoque
+<lb/>die exacerbatur, ego quidem nomino tertianarsam, seu
+<lb/>tritaeophyem ; non tamen prohibeo, si libeat, aliter appeIlare,
+<lb/>modo serves in rebus ipsis differentiam. Alia enim est
+<lb/>natura, quum desinunt ad integritatem; alia quum ad declinationem
+<lb/>febrilem liniuntur febres continuae, quae tertio
+<lb/>quoque die exacerbationem habent; et praeterea quaedam
+<lb/>alia natura, quae in medio exacerbationes facit, sed nullam
+<lb/>ex his semiterlianam appelio, non tamen prohibeo qui ita
+<lb/>nominare voluerint, si id unum mihi caveatur ab eis, ut
+<pb n="7.338"/>
+<lb/>nulla febris species omittatur, sed unaquaeque deinceps dis.
+<lb/>eatur, quemadmodum ego nunc in hoc libro facere institui. .
+<lb/>Ex continuis enim, quae in die medio exacerbantur, quaedam
+<lb/>in sorma quotidianae processit, duas exacerbationes simillimas
+<lb/>invicem efficiens; quaedam vero dissimiles habens
+<lb/>duas, primae quidem tertiam simillimam obtinet, secundae
+<lb/>vero quartam, in surma duarum tertianarum procedens ; sed
+<lb/>haec ex bile potius ; illa, quae singulis diebus similiter exacerbatur,
+<lb/>ex pituitoso humore consistit. Porro tertium
+<lb/>aliud genus est febrium continuarunr raro eveniens, quoties
+<lb/>exacerbatio in sorma quartani circuitus processit, mequaquam
+<lb/>desinens ad integritatem. Accidit autem, quemadmodum
+<lb/>febris, quae tortio quoque die accidit, interdum duplex
+<lb/>ac triplex : ita etiam haec non folunr duplex, sed etiam tris
+<lb/>plex. Sed in febrium implexus libro de typis commodius
+<lb/>indicantur. Febriunr autem simplicium, quae ex humoribus
+<lb/>accenduntur, simplices differentiae tot numero sinit
+<lb/>quot proxime docuimus. Ex earum autem permixtione
+<pb n="7.339"/>
+<lb/>aliae quaedam efficiuntur, de quibus deinceps dicam, si prius
+<lb/>de simplicibus quod deest adjecero ; ut quaecunque suerit
+<lb/>omnino simplex febris, unam speciem quasi regulum quandam
+<lb/>obtineat eatum, quas nunc dicturi fumus. Quaecunque
+<lb/>vero degeneraverit aliquatenus i eatenus ab ipsis febribus
+<lb/>simplicibus decedet.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Quae igitur sobrie ex flava bile per fentientus
+<lb/>corporis partes delata accenditur, cum rigore invadit atque
+<lb/>ardens est, et vomitu fissis, vel dejectione si vel sudore,
+<lb/>vel quibusdam horum, vel omnibus simul solvitur. Hujus
+<lb/>febris longitudo accessionis maxima horarum esit aequinoctialium
+<lb/>duodecim ; atque appellamus eam exquisitam tertianam,
+<lb/>quae temperamento aegri biliosi, ac tempore et regione et
+<lb/>statu et victu calido et sicco efficitur. Sed omnia alia paulo
+<lb/>ante docuimus, quaecunque concurrunt ad ejus generationem.
+<lb/>Atque accessio brevior est magna ex parte quam quae
+<lb/>utea dicta est longitudo, permultam majoris ac minoris obtinens
+<lb/>differentiam, vel propter quantitatem et qualitatem
+<pb n="7.340"/>
+<lb/>ipsius bllis, vel propter aegri vires, vel propter praetentum
+<lb/>tunc in aegro corpore dispositionem. Bilis enim copiosior
+<lb/>longiorem quam paucior efficit accessionem; tenuis breviorem
+<lb/>quam crassa. Sic vero et vires validiores breviorem,
+<lb/>imbecilliores longiorem, Et corporis dispositio rara
+<lb/>quidem breviorem, densa vero longiorem. At pero tempus
+<lb/>intermissionis in tali scbre ex pulsu indicium putredinis
+<lb/>humoris penitus obscurum habet sequenti die ac nocte post
+<lb/>accessionem. Leviter autem succensa obsicure cognosci poti
+<lb/>est primis partibus posterioris diei ; sed adhuc clarius circa
+<lb/>fines ejusdem diei aut noctis ; atque adhuc clarius proxima
+<lb/>die vel nocte, quae praecedit scilicet suem aut noctem acces-.
+<lb/>sumis. Sane in ea ipsis perspicuum jam est signum; multoque
+<lb/>magis, quoties accessio invadit ; ac multo magis, ubi
+<lb/>ascendit ad vigorem. In eo vero minus quam per incrementum
+<lb/>, rursusque multo minus per declinationem. Hanc febrem
+<lb/>si libeat nominare exquisitam tertianam, nomine uteris
+<pb n="7.341"/>
+<lb/>antiquo; sin minus, at certe nobis dabis ita nominare perspicuae
+<lb/>doctrinae gratia.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Alia porro est simplex ac exquisita febris
+<lb/>ex pituita putri, quae per sentientes corporis partes pellitur
+<lb/>ab ipsa natura, consistens. . Ea incipit ex frigore partium
+<lb/>extremarum atque horrore. potius quam rigore; difficulter
+<lb/>accenditur, diutumumque obtinet incrementum ad consistendi
+<lb/>vigorem, quoniam humor, in quo consistit, frigidus atque
+<lb/>humidus est temperamento ac glutinosus consistentia. Itaque
+<lb/>difficulter accenditur ac tarde movetur saepe in ipsis
+<lb/>meatibus haerens. Ac premit quidem interdum gravatque
+<lb/>vices ; inaequalem autem ac magis debilem efficit parvumque
+<lb/>pulsum in insultu ac primo incremento. Per febrem
+<lb/>vero biliosum existit inter mitia accessionum unaquaeque astectio
+<lb/>eit dictis circa pulsum; sed ab illa quidem cito abeunt.
+<lb/>tum alia, tum etiam inaequalitas, quae magna ex parte cum
+<lb/>talibus febribus non accedit. Calor autem non -multo post,
+<pb n="7.342"/>
+<lb/>quam destitit rigor, accenditur luculentus, quemadmodum
+<lb/>ignis quidam plane purus in quo nulla fumosa caligo inveibitur.
+<lb/>Calorem vero pituitosi humoris assimilabis igni fumofo
+<lb/>lignorum viridium accensorum. Evacuationes igitur
+<lb/>in eo paucae existunt, ac longitudo accessionis diuturnior,
+<lb/>et tempus intermissionis non aeque ac prunum purum est,
+<lb/>led semper servans in calore et pulsu putredinis humoris
+<lb/>indicium. At vero et in hac febre circa principia atque
+<lb/>incrementa accessionum ludicrum putredinis est manssestissituum.
+<lb/>Attamen et haec ubi exquisita fuerit, ridetur multis
+<lb/>habere puram intermissionem; et nos ipsi ita etiam non raro
+<lb/>dicimus, quum intempestiva accurati sermonis discussio videtur.
+<lb/>Accidit autem naturae corporis, tempori, regioni,
+<lb/>tempestati, studio, victui et aliis omnibus pituilofis. Accedit
+<lb/>vero Ungulis diebus, quamvis minus calida sit quam bificta,
+<lb/>quae tertio quoque die fatigat. Sed constat hanc quidem
+<lb/>( quoniam et humorem habet accensu facilem et promple
+<pb n="7.343"/>
+<lb/>semper ob tenuitatem quicquid ejus fervefactum est per
+<lb/>accessionem, expurgatur) ad integritatem quandam magis
+<lb/>puram desinere, et exiguum post accessionem vestigium putridi
+<lb/>caloris relinquere ;- eam vero, quae ex pituita fit, nec
+<lb/>integre purgari per declinationes accessionum, nec exiguum,
+<lb/>quod velut succendatur, relinquere. . Inde ergo efficitur et
+<lb/>intermissio multo deterior. et fecundae accessionis maturius
+<lb/>principium.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">At vero tertium genus intermittentium febrium,
+<lb/>quartana exquisita, quoties ex humore melancholico
+<lb/>solo efficitur frigido siccoque temperie paulatim quidem fuecenditur,
+<lb/>quemadmodum lapis quidam, vel testa, vel os,
+<lb/>vel aliud quidpiam sic frigidum et siccum corpus Ubi vero
+<lb/>flamma quaedam ex eo accensa esit, nihil relinquit tumulum,
+<lb/>neque femiusium post accessionem ; et eam ob rem evacuationes
+<lb/>plures ex tali- humore quam pituitoso et intermissio plane
+<lb/>pura esse videtur, eo quod hic omne id humoris melancholici,
+<pb n="7.344"/>
+<lb/>quod est accensum, evacuatur atque .discutitur; Et
+<lb/>ob eam rem accidit illis rigor ; qualis potissimum in veltemeuti
+<lb/>frigore refrigeratis ; non qualis interdum existit.. per ;
+<lb/>aestum, vel lassitudinem, vel medicamentum calidum ani
+<lb/>mordax ulceri aduibitum. Caeterum necesse est hanc febrem,
+<lb/>antecessisse quicquid. colligit atram bilem, ex vitae genere,
+<lb/>victu, coeli statu, tempore, regione, natura et aetate aegri
+<lb/>melancholica. Accessio praeterea hujus febris., longitudine
+<lb/>temporis tertianae similis est; atque interdum accidit ut
+<lb/>sit longior, quamvis- exquisita fit, quoniam ex humore frigi- .
+<lb/>diore consistit. Causa autem similis est in his febribus et,
+<lb/>aliis omnibus, quae differentiam longitudinis efficit accessio- r
+<lb/>nunr, quemadmodum paulo ante luimus in exquisita tertia-..
+<lb/>na; in multitudine et qualitate humoris, et robore et insutuitate
+<lb/>virium,- et ad haec ipsa aegri dispositione differentiam.
+<lb/>habens. Nam et esta omnia proportione respondent iis,
+<pb n="7.345"/>
+<lb/>quae ex humore biliosa consistunt. Quocirca si humor melaneholicus
+<lb/>neque putrescat, neque vehementer feratur per
+<lb/>partes corporis sentientes, nequaquam efficit melancholicam
+<lb/>circuitionem exquisitam; - i Sane arquatis affectibus proportione
+<lb/>respondent ex liene morbi diutini melancholici, corporisque
+<lb/>totius foedi fiunt colores. Et erysipelatibus ac sterpetibus,
+<lb/>qui ex flava bile consistunt, cancri etphagedaenae
+<lb/>proportione . respondent. Sed neque ex Iris neque ex.
+<lb/>meIancholiris affectibus necessario febricitant, nisi prius hu ...
+<lb/>mor melancholicus et biliosus putrescant. Natura enim
+<lb/>semper nititur, suis viribus. utens, nssimllare partibus nu-.
+<lb/>triennis quicquid fieri utile potest; excernere autem id, quod
+<lb/>non est istiusmodi. . Quod si interdum prae crassitie, vel copia,
+<lb/>vel lentore excrementa vel stipatione quadam meatuum,
+<lb/>vel sua ipsius debilitate non possit excernere humorem uni-.
+<lb/>versum pravum, immorantem diutius in ipso corpore anima-.
+<lb/>lis putrescere necesse est. - Nullus enim alius lurmor perrnanere,
+<lb/>qualis extitit ab initio, potest, nedum qui adeo altiofus
+<pb n="7.346"/>
+<lb/>est, ut ab ipsa natura cultum amplius suscipere non
+<lb/>possit; sed aut concoctus apponitur atque assimilatur stolidis
+<lb/>animalis partibus, aut corrumpitur atque putrescit. Ad
+<lb/>hunc modum arquatis ac melancholicis affectibus, quum humor
+<lb/>biliosus exuperans in corpore diutius immoratur, febris
+<lb/>evenit. Saepe etiam affectus in jecore et in splene attulit
+<lb/>febrem, quum aut iusiammatio aliqua, aut obstructio
+<lb/>efficit praedictos affectus. Pari ratione nec ubi pituitosus
+<lb/>humor exuperat, febris sequitur, nisi. putrescat prius. Atque
+<lb/>ob hunc quidem, quod ab antiquis existimatum est esse
+<lb/>impossibile, saepenumero visum est; id autem est fine febre
+<lb/>rigor, qui nonnullis quidem iemel accidit, nonnullis autem
+<lb/>etiam per circuitum pluribus diebus, vel continuus ab initio
+<lb/>usque ad finem, vel omnino ita mediocris,. ut nequaquam
+<lb/>esse videatur, quum quieverint, sed ubi moveantur tantummodo,
+<lb/>efficiat fenfnm; vel etiam major, ut etiam fine motu
+<lb/>insestet. Sed quoties talis humor spatio temporis putreseat,
+<pb n="7.347"/>
+<lb/>non rigent solum, sed etiam sebricitant. Et diuturna
+<lb/>admodum et solutu difficilis febris in quotidianae forma tales
+<lb/>causas sequitur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Hujus generis est febris epiala proprie nominata,
+<lb/>quum sunul sebricitant ac rigent, et utrumque fentiunt
+<lb/>eodem tempore in quavis corporis parte. Sane Archigenus.
+<lb/>existimat de nulla altera nomen epialon efferri, quam
+<lb/>de una hac febre. Sed constat Atticos quosdam viros rigorem
+<lb/>ante febrem ita appellare. Enimvero Praxagoras videtur
+<lb/>mihi vitreum appellare humorem talem. Recentiores
+<lb/>autem, e quibus Philippus est, crudum simpliciter, nullum
+<lb/>adjirientes vocabulum ad exquisitam definitionem. Is prolecto
+<lb/>ex specie pituitosi humoris est, ut qui admodum fiigidus
+<lb/>atque lentus fit. Qui enim humor frigidus simul et hunudus
+<lb/>suerit, fusi ipfiam pituitae cadit appellationem, liquis
+<lb/>Hippocratice et ex omnium consuetudine non solum .vete1unr
+<lb/>medicorum, sied etiam aliorum Graecorum nominare
+<pb n="7.348"/>
+<lb/>voluerit. Prodiens enim libro de natura hominis errat circa
+<lb/>hoc vocabulum miranda etymologia adductus. Sed non est
+<lb/>praesentis temporis ad talia deflectere orationem, quum aliam
+<lb/>dicaverimus illis disputationem Ergo rursus. ad institutum
+<lb/>veniamus. Quisquis in corpore humor fuerit frigidus
+<lb/>et humidus, ipsihunc nominamus pituitam; tu si libet appella
+<lb/>scindapsum. Adeo sane nulla mihi vocabulorum est
+<lb/>cura. At vero scias hujus humoris plures esse differentias.
+<lb/>Nam una quidem species ejus est admodum frigida, ita ut
+<lb/>maximos dolores adferat; quum in locum calidum impacta
+<lb/>est. .Et saepenumero multos dolores eorum, qui colici nieruatur,
+<lb/>ex acri clysmate tali humore evacuato, statim fedatos
+<lb/>intueri licet. Hic. autem humor videtur similis nspectu
+<lb/>vitro iulo. AItera vero species pituitae est, quam excreantes
+<lb/>saepe expuunt quidam, sensibilem obtinens dulcecedinem.
+<lb/>Conflatque eum non posse esse omnino frigidam,
+<lb/>si recordamur eorum, quae libro de simplicium medicamentorum
+<pb n="7.349"/>
+<lb/>facultatibus docuimus. Tertia praeterea species alia
+<lb/>pituitae est; quae ipsis expuentibus acida sternitur, ac minus
+<lb/>quam vitrea, magis quam dulcis, frigida est ; quemadmodum
+<lb/>altera falsa habetur, aut ob putrefactionem, aut obpermixtionem
+<lb/>fultae torosae humiditatis, ex qua. febricitantes mixi-.
+<lb/>me rigent, sed horrent tantummodo, invadente accessione.Acida
+<lb/>autem ac vitrea si moveatur, corporis sentientis par-:
+<lb/>tes permeans, iufert rigorem sine febre; quod si quaputredo
+<lb/>moderata illis adsuerit, epialam esurit febrem; sin magis putrescat,
+<lb/>rigor praevenit, febris vero subsequitur, devicto
+<lb/>frigore ab ipfa multitudine caliditatis, ita ut nullo modo exillat
+<lb/>per lucremehta et rigores accessionum. At vero nitrea
+<lb/>pituita forsitan acidae qualitatis particeps est; ita ut omnes
+<lb/>ejus differentiae tres existam, acida, dulcis, falsa; atque ex
+<lb/>v pituita dulci putrescente rigor minime antecessit febrem..</p>
+<p rend="indent">Forsitan vero neque simpliciter, neque a simplici cauta quis
+<lb/>existimarit tales fieri febres. Siquidem quicquid .pituitae
+<pb n="7.350"/>
+<lb/>putrescit, accendit febrem; reliquum vero nondum putrescens,
+<lb/>ex quo rigent, non ejusdem est qualitatis cum- ea quae
+<lb/>putrescit. Si igitur ab hac quidem rigor, a putrefacta vero
+<lb/>febris efficitur; duplex semper causa erit. Licet vero hic
+<lb/>dicere febrem ab altero quidem fieri causae genere, rigorem
+<lb/>autem ah alio, ut qui non sit quod febris. Per febrem tamen
+<lb/>tertianam flava bilis et rigorem esurit et febrem. Sed
+<lb/>haec subtilioris sunt concertationis ; nos ad institutum noUrum
+<lb/>redeamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Permixta pituita putrescente, ex qua fieri
+<lb/>quotidianam docuimus, cum bssioso humore efficiente tertianam,
+<lb/>composita duplexque causa et effectus fit. Alter enim hu-:
+<lb/>morunoquoque, alter tertio quo que die adfert accessionem; ita
+<lb/>ut unus dies duas habeat accessiones, alter vero unam, quum
+<lb/>tempora accessionis in easdem horas minime incidunt Ubi enim
+<lb/>incidunt,, una erit consule, neque tertianae, neque quotidianae
+<pb n="7.351"/>
+<lb/>exactam fperiem servans. Et quoniam utriusque febris
+<lb/>duplex est species, implicationes quatuor erunt; una, in qua
+<lb/>tertiana permiscetur quotidianae ; fecunda, in qua tertiana
+<lb/>continuae quotidianae ; tertia, in qua permiscetur quotidiana
+<lb/>tertianae continuae; quarta autem, in qua permiscetur quotidiana
+<lb/>continua tertianae continuae. Singularum vero dictarum
+<lb/>implicationum differentia duplex esu Interdum
+<lb/>enim omnes accessiones eodem tempore simul invadunt, inturdum
+<lb/>diversis temporibus. Sed in cognosci facile possunt,
+<lb/>praeterquam quod saepe intermittens minime cognoscitur a
+<lb/>parum exercitatis, quoniam aegri nunquam deducuntur ad
+<lb/>integritatem ; sed oportet speciem considerare accessionis,
+<lb/>quemadmodum fecundo libro de crisibus satis lictum est, et
+<lb/>inde cognoscere, non ex ipsa circuituum proportione. Sub- ,
+<lb/>jiciatur enim invafisse quempiam circa horam primam accessionem
+<lb/>simul cum rigore, qui rideatur vulnerare carnem
+<lb/>laborantis, deinde omnia alia tertianae febris indicia usque
+<pb n="7.352"/>
+<lb/>ad vigorem processisse, cum vomitu bilis simul et cum sudore
+<lb/>benigno declinere, atque esse jam diei horam nonam; porro
+<lb/>coniectare nos ex toto accessionis motu, circa undecimam lroram
+<lb/>sine febre fore aegrotum, ea scilicet integritate ,. quam
+<lb/>in circuitibus nominare solemus; ita vero sperantibus, stat
+<lb/>tim subsistere sudorem, aut densata susum, aut etiam inhorrescente
+<lb/>cute, deinde initium atque incrementum, et ad
+<lb/>haec algorem in genere continuae febris pituitofae sequi.
+<lb/>Duplicem profecto ita cognoscemus causam esse ac speciem
+<lb/>febrium, mixta intermittente cum continua, quamvis .nulla
+<lb/>inveniatur intermissio. Ac loquenti quidem die sperabimus
+<lb/>invasurum accessionem hora nona, et fi ut expectabamus res
+<lb/>ipsa eveniat, penitus tertio. die similiter sperabimus, adhuc
+<lb/>sebricitante aegroto, iterum invnsmam eum tertianae febris
+<lb/>accessionem hora prima. Quod si praeveniat aut tardet accessio,
+<lb/>quam fecunda die sperabamus hora nona, atque
+<pb n="7.353"/>
+<lb/>quam tertio die credebamus futuram primis hora, non etiam
+<lb/>posthac sequentibus diebus, neque nonam horam, neque primam
+<lb/>expectabimus, sed tanto prius aut posterius, quanto
+<lb/>proportio primi circuitus accessionem praevenisse ab hora,
+<lb/>qua initio cepit, aut tardasse indicavit. Utra vero earum
+<lb/>desitura fit prius, tum ex febris specie coniectandum est, tum
+<lb/>ex accessionis longitudine et magnitudine et more et motu
+<lb/>et item circuituum repetitione in anticipatione et tardatione,
+<lb/>et ad haec fignis quae postea apparent cruditatis et concoctiouis
+<lb/>totius morbi, quorum in urina maxima censentur. Ac
+<lb/>de his omnibus libris de crisibus satis suctum esu Quod si
+<lb/>pituitofa continua non ad nonam horam, sed quintam aut.
+<lb/>sextam excipiat interni ttentem biliosum, quae prima hora
+<lb/>incepit, adhuc difficilior cognitu est vulgo illi medicorum,
+<lb/>quibus talis consideratio minime curae est, an scilicet si t unum
+<lb/>febrium genus, an duo et quodnam utrumque. Caeterum
+<lb/>tanquam nihil horum cognoscentes, non fotum nesciunt,
+<pb n="7.354"/>
+<lb/>quonam modo oporteat curare eas, quae nequaquam cognoscuntur
+<lb/>quales tandem sint, sed neque utrum secunda die
+<lb/>fuspectus habere conveniat utrasque horas, quae prima die
+<lb/>accessiones attulerunt. Ego namque scio me risum eis fisepenumero
+<lb/>vaticinio potius quam melica praenotione conje cisse
+<lb/>accessionis insultum. Per hanc igitur ipsimi mixtionem,
+<lb/>de qua nunc agimus, tertianae cum ea quae quotidie accedit,
+<lb/>nidi interdum circa primam horam exquisitae tertianae
+<lb/>accessionem invadere, circa textam autem existere accessionemejus,
+<lb/>quam recentiores mediei proprie nominant quotidianam.
+<lb/>Solent enim ita nominare febrem quae singulis
+<lb/>diebus accedit, .nequaquam desinit ad integritatem. Ipsa
+<lb/>vero folitus fum talem nominare quotidianam continuam;
+<lb/>nomen enim cathemerinum nequaquam licet invenire apud
+<lb/>quemquam Graecorum scriptum, sed amphemerinam appellant
+<lb/>rem omnem, quae singulis. diebus similiter fit. Sed ut
+<lb/>Plato dixit, contemnere oportet nomina eos, quibus tantarum
+<lb/>ac talium rerum proposita est consideratio. . Appelletur
+<pb n="7.355"/>
+<lb/>igitur, gratia clarioris doctrinae, ea quae singulis diebus ac-,
+<lb/>cedens desunt ad integritatem, quotidiana simpliciter, nihil
+<lb/>insuper addendo ei in oratione ; ea vero quae minime desinit,
+<lb/>quotidiana continua; ac liceat tibi, si libeat, alteri adjicere
+<lb/>intermittens. Pari ratione dicendum et de ea, quae
+<lb/>tertio quoque die accessit; altera enim differentia tertiana
+<lb/>simpliciter, vel etiam iuterrnittens tertiana habetur, t altera
+<lb/>tertiana continua est. Licet vero et continuam tertianam nominare
+<lb/>tertianam fimpliriter sine adjectione ulla, quemadmodum
+<lb/>nonnulli appellanti Sed enim non opus esit fusius
+<lb/>disputare de nominibus, feti redire ad institutum tempus est.
+<lb/>Nam adolescens, in quo dixi implicationem extitisse tertianae
+<lb/>cum quotidiana continua, primo quidem die mane lucepit
+<lb/>cum rigore tertianae proprio febri, . alia omnia servans
+<lb/>exquisitae tertianae indicia usque ad textam horam,  subitumque
+<lb/>vomitum biliosum et multum attulit, et ventris excretionem
+<lb/>satis multam, eamque biliosum, ae parvos sudores,
+<pb n="7.356"/>
+<lb/>a quibus statim contractus est atque horruit homo ; deinde
+<lb/>Aurius incipiente insultu, pulsus erat parvus et inaequalis;
+<lb/>post usque ad horam undecimam, succensa adhuc paulatim,
+<lb/>pleraque ipsius invasionis habebat propria,. pauca vero quaepiam
+<lb/>ipsius quoque incrementi ; delude usque ad noctis horam
+<lb/>quartam incrementum merum erat, post in eadem magnitudine
+<lb/>permanebat ad ipsum quidem sensum usque ad
+<lb/>horam noctis sextam, quum jam perspicue ridebatur declinare,
+<lb/>usque ad quartam horam in secundo die. in ea enim
+<lb/>contrahebatur, atque insultus accessionis signa ostendebantur,
+<lb/>partibus quidem ipsius extremis frigidioribus evadentibus,
+<lb/>pulsu autem parvo; atque increscebat usque ad vesperam
+<lb/>paulatim, neque horrorem quempiam, neque inaequalitatem
+<lb/>aliam efficiens ; delude rursus vigebat circa horam quartam
+<lb/>noctis, ac sensibiliter declinare incipiebat circa sextam. Ac.
+<lb/>quod quidem tertia die hora circiter secunda oportebat ejus
+<lb/>expectare accessionis insultum fore quotidianum, perspicuum
+<lb/>erat; non tamen tertiana au servatura esset eandem horam,
+<pb n="7.357"/>
+<lb/>an non, perspicuum erat, Accessio igitur horrifica incepit
+<lb/>hora secunda, quae citius quam pro accessione, in. prima ac
+<lb/>secunda die continuae quotidianae increscens usque ad quintam
+<lb/>horam, initium rursus alterum fecit post quintam horam,
+<lb/>atque ei erant omnia symptomata similia iis, quae secunda
+<lb/>die extiterant. Delude rursus increscens promptius
+<lb/>usque ad octavam horam, rursus horruit in illa hora, ac
+<lb/>paulo post accessio prompte ascendebat increscens, ita ut
+<lb/>circa horam noctis quartam ad rigorem. deduceretur. Ecquidnam
+<lb/>aliud quam exquisitae femitertianae haec accessio
+<lb/>extitit? Quum duae febres eadem hora luvaderent, eo quod
+<lb/>quae singulis diebus repetebat, duabus horis praevenisset,
+<lb/>tertiana vero duabus horis tardasset, ita ut nitenti dignoscere
+<lb/>speciem febris perspicue rideri potuissent temperata ac permixta
+<lb/>tertianae ac continuae quotidianae^ symptomata.
+<lb/>Quum enim tertiana quidem cum rigore incipiat, quotidiana
+<lb/>vero sine rigore, permixta ex utrisque horrorem statim inferebat;
+<pb n="7.358"/>
+<lb/>rem quidem minorem rigore, majorem vero frigore;.
+<lb/>. ac tanto majorem frigore, quantus minor rigore est; ita ut.
+<lb/>aequaliter distans ab extremis utrisque horror ini medio ainhorum
+<lb/>collocetur, rigoris fcilicet atque frigoris;- id quod
+<lb/>temperatis invicem extremis potissimum fieri solet. Ergo
+<lb/>non ab re nomen test febri semi tertianam indiderunt. Tem-.
+<lb/>perula enim ex quotidiana continua ac tertiana interminante,
+<lb/>totius suae naturae partem dimidiam utramque praedictarum.
+<lb/>febrium habet. Ut igitur semiafinus ac semideus dictus est,
+<lb/>eodem modo femitertiana. Mulus eum medietatem quidem
+<lb/>equi conducentis ei ad generationem, medietatem vero asini
+<lb/>habens, ab altero eorum tantummodo dictus est semiafinus.
+<lb/>Et semideus indicatur quidem participare dei medietatem;
+<lb/>quod autem homo sit altera ex parte, omittitur. Itidem semitertiana
+<lb/>medietatem alteram habet tertianam, medietatem
+<lb/>alteram quotidianam continuam. Sed ipsi duplex modus.
+<lb/>generationis est; aut enim in unum tempus duae accessiones
+<pb n="7.359"/>
+<lb/>currunt, ut paulo ante diri, quia altera praevenit, altera
+<lb/>tardat; aut ambae statim ab luitio invicemtemperantur. At
+<lb/>quae ambabus in unum tempus coeuntibus fit, unam solam
+<lb/>habet accessionem naturae ipsius semitertianae; altera vero
+<lb/>omnes ab initio morbi usque in finem, quaemaxime proprie
+<lb/>femitertiana ab omnibus nominator. Sed de hoc paulo post
+<lb/>agetur, potissimum propter Agathinum et Archigenem. Adolescenti
+<lb/>igitur, quem nostra narratio supposuit, tertio die
+<lb/>quum fieret talis accessio, propterea quod in unum tempus
+<lb/>ambarum febrium accessiones incidissent, praeveniente duabus
+<lb/>horis quotidianae accessione semper, tertiana autum tar dante
+<lb/>semper duabus, accessio quarta die incepit oriente sule,
+<lb/>speciem servans exactam febris pituitofae.. Futurum autem
+<lb/>ex proportione erat, ut quinta ab ea accessio inciperet rirca
+<lb/>decimam horum noctis, quoniam semper praeveniebat horis
+<lb/>duabus: tertia autem ab initio accessio febris biliofae habitura
+<pb n="7.360"/>
+<lb/>principium erat quinta die, hora quarta, ita ut medium
+<lb/>interstitium initii duarum accessionum foret sex horarum;
+<lb/>quod etiam factum est, circa decimam limam quartae noctis
+<lb/>adveniente accessione secundum speriem pituitufae febris,
+<lb/>-atque ita procedente usque ad horam quartam diei; coeunte
+<lb/>vero cum biliosi; simul modico rigore, delude rutilis permixtam
+<lb/>speciem habente accessione secundum biliosae simul
+<lb/>ac prtuitofae fperiem. At vero subsequentinocte circa o etavam
+<lb/>horam pituitosa febris incipiens exquisita ac stola totam
+<lb/>obtinuit sequentem diem, quae sexta fuit ; tum autem usque
+<lb/>ad mediam noctem declinans, inde rursus incepit eodem modo ;
+<lb/>poftea reliquam noctis medietatem et tempus usque ad
+<lb/>meridiem septimae diei obtinens, jam quodammodo declinaviti
+<lb/>Sed tertiana ei successit cum rigore incipiens, quemadmodum
+<lb/>solet incipere exquisita tertiana ; atque alia omnia
+<lb/>eodem modo exquisita asserens indicia, bilis vomitum effecit
+<pb n="7.361"/>
+<lb/>et dejectionem biliosum et urinum bonam et quendam madorem
+<lb/>crepusculo vespertino, indicans perspicue iis, qui didicerunt
+<lb/>cognoscere genera febrium, quod remitteretur atque
+<lb/>declinaret et solvenda esset post unam vel ad summum alteram
+<lb/>circuitionem. Etenim declinatio facilitatem habuit 1nirabilem
+<lb/>quandam, et qualem nulla ex prioribus, usque ad
+<lb/>horam noctis quartam. In illa enim febris pituitosa singulis
+<lb/>diebus accedens, horis autem duabus praeveniens, incepit,
+<lb/>atque occupans totam noctem et totum loquentem diem,
+<lb/>rursus incepit octava nocte secunda hora; quam quidem
+<lb/>noctem totam occupans declinarit sequenti die nono. Accessio
+<lb/>autem tertianae erat sutura in illa die circa octavam
+<lb/>horam, quoniam duabus horis tardabat ; sed tunc circa horam
+<lb/>nonam incepit, indicans adhuc eo suam declinationem.
+<lb/>Sole autem occidente coivit cum ea accessio pituitosa, anticipando
+<lb/>hrvadens, quemadmodum solita erat, et noctem occupans
+<lb/>illam et sequentem diem, rursus incepit decima die
+<pb n="7.362"/>
+<lb/>hora decima. Deni rurfus undecima die hora octava exaole
+<lb/>permanens pituitosa ; delude circa horam noctis primam
+<lb/>initium horrificum tertianae febris quatuor horis tardantis
+<lb/>extitit, tum autem sexta hora noctis venter dejecit biliosa et
+<lb/>quidam in toto corpore madores extiterunt ; et post hos tota
+<lb/>declinatio prope ad integritatem devenit, atque erat jam persuionum
+<lb/>tertianam destitisse integre, pituitufam autem esse
+<lb/>relictam falam jam et declinantem Has igitur ob res circa
+<lb/>duodecimam diem nec insuper accessio praevenit horis duabus,
+<lb/>quemadmodum antea stulta erat, sini septima hora incepit;
+<lb/>deinde circa decimam tertiam haudquaquam texta, fid
+<lb/>tardarit ac feptima hora incepit, ostendens lusi gnem facilitatem
+<lb/>atque declinationem. Quartodeoimo autem die declinatio
+<lb/>multo melior extitit, atque accessio incepit hora nona, et in
+<lb/>mina insigne concoctionis ludiciunr apparuit, praenuntians
+<lb/>fore solutionem futuro decretorio. t Sed de hoc nunc non
+<lb/>est sermo, nisi obiter. Quod autem saepenumero permisceantur
+<pb n="7.363"/>
+<lb/>diversi generis febres medicorum vulgus latentes, hiRosae
+<lb/>scilicet pituitofis, itemque continuae lutermittentibus,
+<lb/>praescriptus aegrotus abunde iudicavit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">Sed quum de sus quae decebant dicta
+<lb/>sint, ad id, quod paulo ante productum est, rursus venio;
+<lb/>Compotita enim ex tertiana et quotidiana continua, quam
+<lb/>vocamus semitertiauam, vel habet flavam bilem exuperantem,
+<lb/>proindeque flavae bilis symptomata vehementia; vel
+<lb/>hunc pauciorem, pituitam vero copiosiorem, proindeque quotidianae
+<lb/>continuae pathemata certiora; vel neutrum altero
+<lb/>humore exuperantiorem, sed ambos aequales, quae sane exquifita.
+<lb/>semitertiana est, talis specie, qualem Hippocrates
+<lb/>ipsam indicavit, scribens. libro primo epidemion ad hunc
+<lb/>modum. Plerisque eorum hae fuerunt affectiones; scbias
+<lb/>horrificae, continuae, acutae; in totum minime intermittentes,
+<lb/>modus autem scmitertianus erat; hae quidem
+<lb/>diem unum habentes leviorem, altero autem gravius
+<lb/>exacerbantes, atque ad acutiorem astectum increscentes.
+<pb n="7.364"/>
+<lb/>Horrificas autem dixit non simpliciter febres incipientes cum
+<lb/>horrore, nam innumeris febribus id accidit, de quibus deinceps
+<lb/>docebo, sed in quibus bonam partem accessionis horror occupat
+<lb/>altera duntaxat die, in qua simul invadunt tertiana ac
+<lb/>quotidiana continua. Sequens enim dies quotidianam tautummodo
+<lb/>habet. Quocirca prima dies magna ex parte permrxtam
+<lb/>ex utrisque febrem adfert; fecunda autem continuam
+<lb/>quotidianam. Interdum enim prima die invadere prtuitofam,
+<lb/>secunda autem utramque contingit. Accessio igitur
+<lb/>communis ex utrisque, quoties aeque polluerint hunrores,
+<lb/>talis est, qualem paulo ante descripsimus semitertianam ; ubi
+<lb/>vero tertiana exuperat, febris magis horrifica est et aliquid
+<lb/>rigoris in intuitu accessionis assumit. Statim itaque calidior
+<lb/>talis est atque ardentior ac celerius pervenit ad vigorem ; et
+<lb/>quendam bilis vomitum, vel dejectionem, vel madorem in- .
+<lb/>fert. Ubi vero humor pituitosus exuperat, frigus extremarum
+<lb/>partiunr exuperat et horror parvus est, et pulsus contractio
+<pb n="7.365"/>
+<lb/>fortior ac diuturnior, ac lente accessio increscit etmulto
+<lb/>post tempore riget; non tamen .sitim efficit, neque ardorem;
+<lb/>neque vomitus, neque detectio biliosis., vel mador in
+<lb/>ea existit. Atque hujus mixtionis duarum febrium etiam
+<lb/>Archigenes in notitiam quandam devenit, feti consule et incerte,
+<lb/>quemadmodum indicavimus septimo libro, quem contra
+<lb/>ipsius commentarios de pulsibus scripsimus. Existimat
+<lb/>enim in semitertiana quandoqueexuperare tertianam febrem,
+<lb/>quandoque quotidianam, mixtionem tamen earum aeque pollentem,
+<lb/>quae stola femitertianam exquisitam constituit, neque
+<lb/>cognorit, neque ru dicavit, feti penitus omisit. Quum
+<lb/>enim aequales magnitudine fiut intermittens tertiana et quotidlana
+<lb/>continua, initium accessionis cmn horrore existit; id
+<lb/>enim medium rigoris persiictionisque existit, e quibus alterum
+<lb/>tertianae, alterum quotidianae continuae inest. Increnrentum
+<lb/>vero post initium propter tertianam facile suscipit culiditatum,
+<lb/>atque ad rigorem festinat; propter pituitofam autem
+<pb n="7.366"/>
+<lb/>tardum, quantum in ea est, efficientem incrementum, inhibetur
+<lb/>atque interrumpitur; atque est veluti quaedam pugna
+<lb/>symptomatum, interdum incalescente aegro, quum tertianae
+<lb/>calor vehementius agens ad cutem humores effert ; detinente
+<lb/>autem interdum ac retrahente intro hujus motum pituita,
+<lb/>quae otiosa ac frigida est ex natura, ac difficile movetur, et
+<lb/>tarde transmeat. At vero in tali pugna, exuperante frigido
+<lb/>humore contractio efficitur ec horror ac frigus partium extremarum
+<lb/>et cutis ; ita ut altera accessio rursum lucipere videatur.
+<lb/>Quod fi calidior exuperet, subito calefiunt etprope
+<lb/>ad rigorem pervenisse videntur ; dein paulo post exuperante
+<lb/>pituitofo, aegri rursus contrahuntur, refrigerantur et horrent;
+<lb/>. usque minime definit fieri usque ad rigorem, qui matutius
+<lb/>quam pro pituitoso humore, tardius quam pro bi-lioso
+<lb/>existit ; quoniam pituitosus detinet biliosi celeritatem,
+<lb/>biliosus autem tarditatem ac segnitiem pituitosi accelerat.
+<pb n="7.367"/>
+<lb/>Atque hujusmodi quidem exquisita semitertiana est, ex aequali
+<lb/>temperamento duarum febrium et duorum humorum
+<lb/>effecta. Ea vero quae minime exquisita est, vel humorem
+<lb/>biliofum, vel prtuitosum obtinet ampliorem.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">At vero fecunda implicatio ac mixtio est
+<lb/>duarum febrium, tertianae et quotidianae, sub similem efficiens
+<lb/>accessionem praedictae, sed differentem, quod haec deducatur
+<lb/>ad integritatem et quod secunda die vel cum horrore, vel
+<lb/>cum rigore quotidiana sola effecta invadat. Quocirca talis feluis
+<lb/>non amplius femitertiaua erit, siquidem^ sumi tertiana conti- .
+<lb/>nuacenfetur. Sivero in altero genere febrium eam annumeromus,
+<lb/>nonsolum talis, sed etiam aliae quaedam febres nomina- .
+<lb/>luantur femitertianae. ob eam rem mihi videtur Agathinus
+<lb/>omnes productas tertianas appellare fetuitertianas. .Sed enim
+<lb/>quum de nominibus potius quam de rebus tales quaestiones
+<lb/>sint, immorandum in eis minime censeo. Num esto libro
+<lb/>seorsum de vocabulis medicis dictum jam est; in quo id oste nditor
+<pb n="7.368"/>
+<lb/>ac definitur in plenum, quaenam sint de rebus et quaenam
+<lb/>denominibus controversiae. Quocirca rursus ad res
+<lb/>ipsius redeamus, semitertianam ab Hippocrate nominatum
+<lb/>horrificam et continuam, quam tertiana quotidianae continuae
+<lb/>permixta efficit; intermittenti autem, minime efficit,
+<lb/>propterea quod febris ex utraque compotita necessario et
+<lb/>ipfa intermittens existit. Neque ver tr ex duabus continuis,
+<lb/>biliofa scilicet ac pituitofa, fieri potest femitertiana; neque
+<lb/>enim mixtio horrificam facit febrem, neque multas reduplitaliones
+<lb/>habentem Quum enim omnis continua febris fuapte
+<lb/>ratione; quum exquisita est, neque habeat horrorem,
+<lb/>neque rigorem, neque etiam febris ex eis composita borrisica
+<lb/>erit. oportet ergo si eadem sutura sit horrifica simul
+<lb/>ac continua, generationem habere eam ex duabus febribus,
+<lb/>altera quidem nrternuttente, altera autem continua. Et ob
+<lb/>eam rem tertiana permixta quotidianae continuae procreat
+<lb/>leniter tiaram; neque ambae intermittentes, neque ambae
+<pb n="7.369"/>
+<lb/>continuae possunt talem febrem procreare. Restat igitur una
+<lb/>mixtio, quae ex quotidiana intermittente ac biliosa continua
+<lb/>constans, potest continuam simul atque horrificam efficere
+<lb/>febrem. Sed haec contra quam prima habebit continuitatem
+<lb/>quidem ex biliosa, horrorem autem ex pituitosa,
+<lb/>atque reduplicationes ex pugna mutua, maximeque quoties
+<lb/>humores ipsi aeque vicerint. Vincentis vero eorum alter-.
+<lb/>utrius ex symptomatis dignotio in prima mixtione declarata
+<lb/>esu Haec omnia de quatuor mixtionibus biliosae febris ac
+<lb/>pituitofae magis propria sunt libro, qui est de typis ; sed
+<lb/>hic necessario dicta sunt propter femitertianam, cujus generationem
+<lb/>Archigenes ad tertianam quotidianamque retulit,
+<lb/>nequaquam videns se intermittentem efficere febrem. Aga.
+<lb/>thinus .vero peripicue consessus est ejusdem generis esse cum
+<lb/>tertiana femitertianam, diffidentem tantummodo magnitudine
+<lb/>accessionis. Si igitur omnes febrium differentias accurate
+<lb/>perfequnti, lapsi nominibus essent, fuisset id ferendum. Sed
+<pb n="7.370"/>
+<lb/>quum neque simplicium, neque compositarum omnes fcripferint
+<lb/>differentias, et ad haec quasdam alias supervacuas adjecerint,
+<lb/>nihil neque in praenotionem, neque in curationem
+<lb/>levantes, nos conati fumus pro viribus diligenter excolere
+<lb/>omnem typum, longo tempore, experientia simul ac ratione,
+<lb/>utiles in eo disterentiaspervestigantes. Simplices ergo praefentis
+<lb/>sunt operis ; implicitae autem ex his attinent ad lilerum
+<lb/>de typis, cujus penitus ignarus non erit, qui hunc diligenter
+<lb/>evolverit. Ex iis enim, quae suximus de febre prtuitusit
+<lb/>ac biliosa invicem permixtis, licebit haec ad melancholicam
+<lb/>transferentes, de implicatione cum utraque earum
+<lb/>ac mixtione coniicere; implicationem nominantes, quum
+<lb/>divertis horis invadant; mixtionem, quum insultus eodem
+<lb/>tempore sit. Sic tres febres implicare ac miscere quis per
+<lb/>se ipsa poterit ex praedictis concitatus. Horum enim omuium
+<lb/>initium, fons et elementum est, diligenter dignoscere
+<lb/>cujusque simplicium febrium speciem, Neque enim magnus
+<pb n="7.371"/>
+<lb/>numerus earum est, sed omnes tres existunt, biliosa, melancholica,
+<lb/>ac pituitosa, quarum cujusque duplex differentia est,
+<lb/>intermittens et continua; ite ut omnes simplices differentiae
+<lb/>febrium ex humoribus putridis consistentium sex numero
+<lb/>suit. Quod si qua alia istis accesserit in his particulatim differentia,
+<lb/>ex copia humoris, quantitate et qualitate putredinis
+<lb/>necnon modo motus, et parte in qua putrescit, generationem
+<lb/>habebit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Exempli gratia febrium intermittentium,
+<lb/>quae tertio quoque die accessionem faciunt, quibus et accessionis
+<lb/>tempus breve est, et initium cum rigore, et solutio
+<lb/>cum sudore ac vomitu bilis, vel etiam inserna alvo desitiente
+<lb/>biliosa, his nomen inclitum est exquisita tertiana; quibus
+<lb/>vero aliquid horum deest, non amplius exquisita, sed sunt.
+<lb/>pliciter tertiana vocatur. Quod fi et intermissionem minorem
+<lb/>habuerit, producta scilicet accessione, tertianam hanc
+<lb/>nominant productam; tametsi haec majoris minorisquera .
+<pb n="7.372"/>
+<lb/>tione differentiam magnam obtinet. Ac licet hanc quidem
+<lb/>abfoluto sermone appellare productam, quae quum quatuor
+<lb/>et viginti horas accessionis occupaverit, reliquas fine febre
+<lb/>obtinet ; hanc vero admodum productam, quum circiter tri..
+<lb/>gusta horas febris producitur ; et hanc praeterea magis productam
+<lb/>, quum ad sex et triginta procedit ; et hanc aliam
+<lb/>pIurimum, quum ad quadraginta et eo amplius producitur.
+<lb/>Sed haec omnia definire certis terminis non licet ob soriticam,
+<lb/>acervalem, dubitationem. Neque vero necesse est talern
+<lb/>nominum subtilitatem quaerere, quum liceat nobis etiam
+<lb/>sine ea indicere iis qui adfluat diligenter de unoquoque aegro,
+<lb/>et recte curare, ac eventum morbi praenoscere. Subjiciamus
+<lb/>enim quempiam quindecim horis febricitare, esse autem
+<lb/>sine febre tribus et triginta, atque id deinceps ei accidere ex
+<lb/>proportione, sane cibandi tempus certa scientia sumere licebit
+<lb/>tum ex accessionis tum intermissionis tempore, et quicquid
+<lb/>ex eo fumi utile potest ad praenotionem et curationem,
+<pb n="7.373"/>
+<lb/>id quoque abmrde suppetet, etiam si non quaeratur tertiananme
+<lb/>absoluto sermone oporteat nominare talem febrem,
+<lb/>an cum quadam alia adfectione definiente ipsam differentiam.
+<lb/>Quin et volens indicare alia ratione febrem aegri, quaenam
+<lb/>sit, diligentius indicabit, accessionis et intermissionis dicens
+<lb/>Longitudinem, quam quaerens nomen, quod perspicue ac definite
+<lb/>iudicare idem queat. Haec .igitur optima enarratio
+<lb/>atque doctrina est. Secunda autem est, quam paulo ante
+<lb/>dixi, exquisitam quandam tertianam nominans, esiam vero
+<lb/>sunpliciter tertianam, mox aliam paulum productam, delude
+<lb/>aliam admodunr, aliam autem magis, postremo plurimum
+<lb/>aliam. Sed ex omnibus obscurissima ac pessima est, quae
+<lb/>prima est prodita ; ob quam recentiores mediet quotidie luter
+<lb/>se certant atque contendunt, ne id quidem cognoscentes se
+<lb/>de nomine contendere. Sed de aliis quis fortasse minus mirabitur;
+<lb/>de Agathino vero magis mirandmn, siquidem productam
+<lb/>quandam nominans quotidianam et quartanam, in
+<lb/>tertiana mhume servavit proportionem; sed. cujus amplius
+<pb n="7.374"/>
+<lb/>producta suerit accessio, hanc nominat semi tertianam. Sed.
+<lb/>de nominum -ratjone hactenus, nam et ipse plus quam par.
+<lb/>est temporis in ipsis contero. . Proinde tempus est, ut ad considerationem
+<lb/>aliarum redeamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+
+
+<p rend="indent">Sequens est, .ut agitetur confideratio ni-..
+<lb/>nilo inutilior, utrum quemadmodum ob utramque bilem ac
+<lb/>pituitam fiunt genera quaedam febrium, ita et ob sanguinem
+<lb/>putrescentem eveniat. Febris enim diaria, eo tantirmmodo
+<lb/>calefacto, .ut diximus, haudquaquam putrefacto, consistit.
+<lb/>Per iptam vero putrefactionem ; necesse est enim interdum
+<lb/>sanguinem putrefient, quaerendum febrium fusurum genus..
+<lb/>Id autem inventum iri par est, si prius luvenerimus, quonam
+<lb/>modo- sanguis putrescat. Constat enim;Aristotelem recte
+<lb/>dixisse, fieri putrefactionem ab alieno calore ; intelligit au
+<lb/>tum alienum ,. externum, non nativum, nec unicuique rei
+<lb/>proprium. . Hic enim concoquere, alienus vero corrumpere
+<lb/>solet, quod est putrefacere. Extrinsecus autem calor supervenit
+<pb n="7.375"/>
+<lb/>sanguini per aestum, ac pestilentem constitutionem, et
+<lb/>ut fummatinr dicam, per omnes febres, ex quacunque causit
+<lb/>in generationem deducantur. Quiuetiam ubi iir quapiam
+<lb/>animalis parte sanguis copiosior collectus supra vires ejus
+<lb/>suerit, corrumpitur; maximeque quoties rnsarctus est ob
+<lb/>crassitiem in pernis vasis, aut impactus ob copiam. Quem f
+<lb/>admodum accidit in bubone et phymatis, et ut in summa dicam,
+<lb/>in omni iusiammatione. Nam in ejusmodi affectibus
+<lb/>sanguis dupliri ex causa corrumpitur, tum quia minime disflatur,
+<lb/>tum quia a natura minime vincititr. Quod autem
+<lb/>quae minime dissiantur, putrescere soleant, in cunctis exteris
+<lb/>corporibus intueri licet, fructibus, seminibus, atque etiam
+<lb/>vestibus; atque persuadere nobis id, quod dicimus, maxime
+<lb/>potest pleuritis. Expuunt enim per eam alii spumosam, alli
+<lb/>pallidam, alii rubram saniem, quae nihil aliud est quam humoris
+<lb/>in inflammatione vincentis pars, quae non continetur,
+<lb/>sed prae tenuitate suras resudat. Interdum etiam talis sanies
+<pb n="7.376"/>
+<lb/>nigra apparet, ac neque statim ab initio, sed processu
+<lb/>temporis,. praecedente magna ex parte pallido sputo,
+<lb/>quod erat indicium flavae bilis exuperantis ; quemadmodum
+<lb/>spumosum pituitae, rubrum sanguinis. Quocirca ratione
+<lb/>.non caret interdum putrescere sanguinem ipsum in locis
+<lb/>inflammatione affectis, febremque ex eo simpliciorem
+<lb/>esse quam ex aliis humoribus.. Proportionem autem acsessionum
+<lb/>tertianae circuitionis potissimum sumit, . ita
+<lb/>enim fieri cernitur et in pleuriticis,- quoties rubrum expuunt,
+<lb/>si vero supra modum assetur, mutatur penitus. Pars
+<lb/>enim tenuissima .simul ac pinguis in pallidam bilem, erassior
+<lb/>autem in atram vertitur, quemadmodum accidit in carbunculis.
+<lb/>. Etenim in his sanguis vehementer fervefactus mutafur
+<lb/>in humorem.melancholicum. Adhunc vero modum inaudire
+<lb/>oportet humorem. melancholicum, tanquam nondum
+<lb/>effectus sit atra bilis, sed in confinio quodam collocatus.
+<lb/>Febres igitur consistent pro specie humoris, in quem sanguis
+<pb n="7.377"/>
+<lb/>mutatur, tantummodo dissidenles malignitate et clementia i
+<lb/>Simpliciores enim fiunt ex mutatione sanguinis, tum caetera,
+<lb/>tum caloris lenitate, Etsi enim quam maxime multus munus
+<lb/>occurfu deprehendatur, prorsus tamen mitis est, quemadmodum
+<lb/>is qui in baluers accidit Copia enim caloris. febrilis
+<lb/>in ipsa efstuvii copia semper posita est; molestia vero,
+<lb/>si admoveas extrinsecus manum, in ipsa caliditatis acrimonia,
+<lb/>rdque erit tibi indicium maximum humoris committentis febrem ;
+<lb/>intelligo autem ipfius caloris qualitatem. Qui enim
+<lb/>vaporosum est atque minus molestus, sanguinis est; qui molestus
+<lb/>, erodensque et mordax, ex bile consistit. Ubi vero
+<lb/>in primo occurfu vaporatus potius quam mordax sentitur,
+<lb/>diutius autem immorantibus paulatim ei acrimonia accessit,
+<lb/>eaque maxime inaequalis, ita ut per colum quoddam vel eribrum
+<lb/>transmitti rideatur, talem febrem ex pituita putrescente
+<lb/>oboriri sriendunr esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+
+
+<p rend="indent">Consideranti vero mihi, quaerentique cansani,
+<pb n="7.378"/>
+<lb/>ob quam febres ex aliis humoribus calorem habent,
+<lb/>aequabiliter occurrentem, quae vero ex pituita consistunt,
+<lb/>dictam obtinent inaequalitatem, apparuit mihi potissimum
+<lb/>causa esse lentor crassitiesque humoris et dissolutionis difficultas.
+<lb/>Hujus enim, ut aliorum omnium, quicquid semper
+<lb/>extenuatum est, per halitum digeritur; vix autem extenuatur
+<lb/>, quicquid crassissimum ; ac multo minus, si frigidum natura
+<lb/>sit. Quocirca neque totum, nec aequaliter, feli quicquid
+<lb/>putredo occupaverit, id Polum in flatus vertitur, ao extenuatum
+<lb/>foras fertur; ac perinde evenit, ut in glutinosis
+<lb/>crassisque humoribus externis, dum elixantur. Existunt enim
+<lb/>ex eis bullae, quibus ruptis spiritus confertim educitur, simul
+<lb/>tecum abducens humorem attenuatum; ubi vero tenuis lrumor
+<lb/>elixatur, neque bullae esuriuntur et qui ah eo attossitur
+<lb/>vapor, omnino similis ac continuus sibi ipsi esu</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+
+
+<p rend="indent">Sed quum de his dicta., quae decebant,
+<lb/>sint, subrium synochorum causas inspiciamus. . Mirum enim
+<pb n="7.379"/>
+<lb/>missi esse ridetur faece usque ad quartum vel quintum, et
+<lb/>luterdum usque ad septimum diem unam, fieri accessionem
+<lb/>in eis ab initio usque ad finem. Quanquam siquis consideret
+<lb/>diligenter, magis mirum est quasdam febres per circuitus tuas
+<lb/>habere accessiones. Exemplum enim fupra dictum a nobis
+<lb/>de stercore particulatim putrescente, non omnino potest acridere,
+<lb/>quum in corpore animalis putrescentes humores cum
+<lb/>his, qui putredine vacant, facile misceri possint, utpote
+<lb/>quum ex omnibus confluxus conspiratioque in omnia cristat.
+<lb/>Quocirca minime fieri potest, ut putredo in una aliqua parte
+<lb/>alias alia fiat ; nisi inflammatio colligatum detineat incipientum
+<lb/>putrescere humorem. Quum igitur ratio in contrarium
+<lb/>cedat, difficiliusque sit invenere causam febrium circuitione
+<lb/>repetentlum, quam synochorrun, de utrisque nitemur dilferere,
+<lb/>neque lue producentes sermonem, neque contradicentes
+<lb/>erratis aliorum, sed, ut in omnibus ante ierimus, veritalem
+<lb/>ipsam tantummodo persequentes, qua quivis excitatus
+<pb n="7.380"/>
+<lb/>possit deprehendere errata aliorum. Incipiendum igitur ab
+<lb/>iis, quae maniscstissime apparent, cujusmodisuntophthalmiae
+<lb/>quaedam, quarum hae quidem singusis diebus, hae autem
+<lb/>tertio quoque die accedunt. Accedunt quoque aurium dolores
+<lb/>et capitis, vel totius, vel dimidii, quem nominant hernicraniam.
+<lb/>Nonnullis vero etiam podagra ac dolor articuiaris
+<lb/>repetit per circuitum. Ut igitur in his omnibus ridere
+<lb/>licet venas ipsas in partibus, quae paroxysmis infestantur,
+<lb/>in tumorem attolli et phlegmonen augescere et dolores intenti
+<lb/>di et fluxionem nssignem foras procumbere ; ita existimandum
+<lb/>est in partibus internis, quae minime apparent, servari
+<lb/>eandem proportionem. Uerbi gratia per iusiammationem
+<lb/>pleuritides, ac peripneumoniae intumescere quidem inter
+<lb/>initia accessionum, discuti vero ac subsidere per declinationem.
+<lb/>Sest quonam modo id fiat fortasse inveniemus, si ea
+<lb/>quae de iusiamntationis generatione et rheumaticis affectio ni bus
+<lb/>vocatis alibi, ut in libro de inaequali intemperie, demonstrata
+<lb/>sunt, ad memoriam revocaverimus. Si erum simul
+<pb n="7.381"/>
+<lb/>cum illis adjecero quaecunque propria huic sermoni sunt;
+<lb/>praesentibus quaestionibus sufficienti</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+
+
+<p rend="indent">Fluxionem igitur decumbentem in oculos
+<lb/>omnes quidem concedunt a capite defluere; sed quaenam
+<lb/>caula sit, ob quam praefinito circuitu saepenumero defluat,
+<lb/>dicere minime possunt, ut qui nequaquam de facultatibus natoralibus
+<lb/>philosophati sint, de quibus ipsi tribus libris persiirip
+<lb/>simus, indicantes omnes quatuor esse, a quibus plantae
+<lb/>et animalia gubernantur. Una ergo est, quae attrahit propriurn
+<lb/>alimentum ; altera id ipsum detinet ; tertia autem ab
+<lb/>his alterat; quarta ab his aliena expellit. Alienum autem
+<lb/>in omnibus rebus duplex est, alterum qualitate, alterum
+<lb/>quantitate. Id vero propter sitarum in ipsis partibus facultutum
+<lb/>robur atque imbecillitatem colligitur. Nam si quidem
+<lb/>paribus sint viribus, et meatus deferentes excrementa
+<lb/>se habuerint secundum naturam, partes ipsae sanae stmt : si
+<lb/>vero plus quum alterari queat, assumptum sit, excrementum
+<pb n="7.382"/>
+<lb/>omne excerni a facultate expultrice pulsum necesse est.
+<lb/>Quod si haec imbecillis fit, eodem in loco munere necesse est;
+<lb/>atque si multum fit, gravat eum ipsum atque dissendit ; si
+<lb/>acre sit, erodit et mordet ; quemadmodum si calidum fit, calefacit;
+<lb/>si frigidum, frigefacit; atque haec perspicua sunt in
+<lb/>iis, quae in ventre habentur. Quidam namque ingerentes
+<lb/>plus alimenti, interdum vomere coguntur nauseabundi, interdum
+<lb/>alui fluore corripiuntur. Quod igitur hic per maxima
+<lb/>spatia excernitur eructantia suras excrementum, id in
+<lb/>aliis partibus animalis per tenues meatus non foras, sed ex
+<lb/>aliis in alias transfluit partes ; expellentibus quidem fortiorihus,
+<lb/>suscipientibus vero debilioribus. Porro rursus expellitus
+<lb/>ex his in alias, atque ex illis in alias defluit, quousque
+<lb/>in de.bssissimas omnium decumbat. Id autem rursus re.currere
+<lb/>inde in alias fortiores nequaquam possibile est. Atque
+<lb/>ob eam rem per plethoramac vitiosum humorem partes omnium
+<lb/>debilissimae alias inflammatione ,aliaa erysipelate, veI
+<pb n="7.383"/>
+<lb/>herpetibus, vel alia quapiam affectione prehenduntur, aut
+<lb/>habent affectionem, quam rheumaticam nominant, de qua
+<lb/>seorsum scripsimus. . Quocirca minime mirum videri debet,
+<lb/>cerebrum vel etiam totum interdum caput, ubi collegit aliquod
+<lb/>excrementum, in aliquam partem debiliorem expellere,
+<lb/>aut in ames, aut oculos, aut tempora, aut labrum, aut dentes,
+<lb/>aut genas, aut palatum, aut gingivas, et gurgulionem,
+<lb/>et tonsillas, et adenas ibi contentos. Atque ubi nullum ex
+<lb/>bis fuerit imbecille,. in thoracem, pulmonem, fauces, gulam,
+<lb/>ventriculum, fluxionem transmittit. Quemadmodum . ergo
+<lb/>caput saepenumero praedictorum cuique caula morbi. est :
+<lb/>ita inflammationis in jecore et liene proximarum aliqua .
+<lb/>partium, aut etiam mehercle, una longius positarum, vel
+<lb/>plures, quae excrementa gignunt, augent, transmittunt et;
+<lb/>circuitibus repetunt. Ac nisui miri est his accidere affectum
+<lb/>similem excretioni excrementorum ventriculi. Quemadmodum
+<lb/>igitur siquis videret quidem quantmn quotidie excernitur,
+<lb/>ignoraret asteri causam excretione, miraretur ordinem :
+<pb n="7.384"/>
+<lb/>ita qui nescit neque generationis in capite excrementorum,
+<lb/>neque excretionis causam, ignorat autem et quamobrem haec
+<lb/>suras decumbunt, illa in aliquam diam partem transfluunt,
+<lb/>haeret atque miratur iusiuxus proportionem. Pari autem
+<lb/>modo et qui ignorat, quae partes excrementum jeciuori
+<lb/>transmittant, miratur proportionem excitatarum ex jecore
+<lb/>febrium. At qui norit decumbentem in viscus fluxionem et
+<lb/>primum phlegmones initium detlisse, et sequentis accessionis
+<lb/>ipfiam partem affectam autor em esse, mirari definit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+
+
+<p rend="indent">Caeterum duplex causa est hujusmodi influxus
+<lb/>humorum, una quam proxime indicavi, quum ex estis
+<lb/>partibus in alias debiliores exerementa transmittuntur; alteravero,
+<lb/>quoties attrahuntur; de qua jam agendum, initio
+<lb/>siermonis petito ab iis, quae omnibus perspicua consessaque
+<lb/>sunt. Si enim thapfiam illinas cuipiam, videbis parvo tem.
+<lb/>pure partem huic esse calidiorem, atque in tumorem non
+<lb/>parvum attolli. Nec secus si foveas partem quampiam juxta
+<pb n="7.385"/>
+<lb/>ignem, aut fortiter frices, aut ungas resina, aut pice modice
+<lb/>calida, deinde paulo post evellas universim ; aut si etiam un..
+<lb/>gas partem quopiam medicamento calido ; ridebis enim ex
+<lb/>- his. omnibus ipsam attolli inmolem, quia calor vel ad se
+<lb/>tralrere, vel fusciper esoleat fluxionem. Verum necesse non
+<lb/>est in praetens testa definire, id quod utile est instituto jam
+<lb/>habentes, etiam fine hujusmodi contemplatione. Semper
+<lb/>. enim in partes vehementius calescentes decumbere fluxio videtur,
+<lb/>ubi corpora plena sunt, atque abundant excrementis,
+<lb/>q admodum larga; ubi vacant excrementis, pauca. Decumbit
+<lb/>praeterea maxime et in dolentes. Sic namque saepe cui
+<lb/>sunrmus digitus manus. minima acu punctus est, statim dolet,
+<lb/>et paulo post partes quae circiter sunt iusiammatione laborant,
+<lb/>atque in molem maximam tolluntur; quibusdam vero
+<lb/>etiam bubones tuli alis erumpunt, ubi acceperint aliquid floxionis
+<lb/>rara et fpongiofa, quae ibi habentur, corpora, quos
+<lb/>nominant adenas. Quibusdam autem accidit id in medio
+<pb n="7.386"/>
+<lb/>brachio, ubi infignis aden ea parte extiterit. Perspicue id
+<lb/>quod dicimus ridere licet, quoties ulcus aliquod exiguum fine
+<lb/>inflammatione ac dolore prope unguem fuerit. Si enim hoc
+<lb/>contemnatur, neque .coeat, et ad cicatricem deducatur, innata
+<lb/>ipsi caro ab ungue pressa primum quidem dolet, deinde
+<lb/>totus digitus, aliquando vero .et eorum carpus, et interdum
+<lb/>manus, vel pes in maximam deducitur inflammationem. Ita
+<lb/>igitur dolor atttrahit in dolore asseclas partes fluxionem ;. non
+<lb/>tamen causam hujus hic licere oportet, alibi enim cosanoi
+<lb/>dius est dicta, nec illius in praesens indigemus. Videntur
+<lb/>ergo jam causae flexionum ex partibus laborantibus fluxione
+<lb/>scoriae esse duplices. Una ex calore, qui in .eis accenditur;</p>
+<p rend="indent">altera ex dolore, qui supervenit. ... Causa. autem, cur aut plus,
+<lb/>aut minus, aut benignius, aut deterius iusiuat, est non in
+<lb/>ipsis. solum partibus laborantibus fluxione ; feti cur benignius
+<lb/>deteriusve iusiuat, in ipsis partibus mittentibus causaest; cur
+<lb/>autem plus minusve, in utrisque. Calor ennn vehemens ac
+<pb n="7.387"/>
+<lb/>dolor plus, debilior minus attrahit. Itidem corpora exere t
+<lb/>mentis vacua exiguum quiddam trahentibus mittunt; excrementusa
+<lb/>autem ac plethorica tanto plus mittunt, quanto ab
+<lb/>ipso naturae habitu longius recesserint. Atque hae quidem
+<lb/>flexionum differentiae sure debilitate partium fluxione labonantium
+<lb/>existunt; aliae vero et ob harum debilitatem ac
+<lb/>robur mittentium excrementa efficiuntur. omnis enim in-.
+<lb/>flammatio sine vulnere ac collisione prehendens partem, excrementis
+<lb/>quibusdam decumbentibus ex robustioribus in debiliora,
+<lb/>existit. Talis autem inflammatio statim accendit febrem
+<lb/>, quoties aut ob magnitudinem, aut vicinitatem calor
+<lb/>ex ea ad cor pervenerit. Decumbentis igitur excrementa in
+<lb/>omni inflammatione putrescunt propter causas prius dictas.
+<lb/>Nec similiter omnia putrescunt, eo quod quaedam fmrt pitui
+<lb/>tusa, -alia melancholica, nonnulla biliosa. Ipsis autem putresceutibus
+<lb/>accenditur calor praeter naturam in parte inflantmotione
+<lb/>affecta, simul quidem calefaciens quaecunque primae
+<pb n="7.388"/>
+<lb/>tangunt inflammatione obsessas partes, deinde illis continuas,
+<lb/>ex quibus ruptus aliae ratione vicinitatis calefactae, rursusque
+<lb/>aliae ab illis usque ad ipsum cor deferunt interdum caliditatetn.
+<lb/>Sed quaenam sit dispositio in parte inflammatione
+<lb/>affecta, diximus in libro de intemperie inaequali, et item in
+<lb/>libro de tumoribus praeter naturam. Quod autem necesse sit
+<lb/>contentum in ea sanguinem putrefieri saepenumero simul
+<lb/>cum materia quae influxit, in hoc dicetur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+
+
+<p rend="indent">Quod igitur excrementum ex una parte
+<lb/>in aliam decubuit, interdmn adeo multum pravumque est,
+<lb/>ut partis fluxione laborantis facultatem laedat; interdum adeo
+<lb/>mite ac exiguum, ut suscipiens corpus minime offendat. Si
+<lb/>igitur adeo facultatem laedat, ut exolvatur, nec praeterea
+<lb/>evincat ea, quae prius vincebat, tunc sanguinem putrefieri
+<lb/>necesse est duplici ratione ; et quia humor minime evictus a
+<lb/>calore proprio reliquam habet in putretlinem mutationem;
+<lb/>et quia simul cum excrementis putrescentibus putrescit. Sin
+<pb n="7.389"/>
+<lb/>non tantum laedat vires, ut exoletae penitus quiescant, femipravus
+<lb/>et tanquam femiputris in tali constitutione sanguis
+<lb/>esuritur; ricinia quidem putrescentium excrementorum simul
+<lb/>putrescens, persistens tamen in tua ipsius natura, quantum
+<lb/>est in ratione facultatis ipsum consolentis. Utcunque
+<lb/>autem se res habeat, accentus calor per primani putredinem
+<lb/>penitus acrior ac mordacior est, quam dum secundum naturam
+<lb/>te habet, atque tantum crescit, quantum natura ipfa
+<lb/>excrementorum fussirit. Haec enim talem habent rationem
+<lb/>ad calorem ex eis accensum, qualem ligna ad ignem obti- nent,
+<lb/>ex ipsis enim lignis dum niterentur generatur ignis ;
+<lb/>haeo tamen minime in infinitum tempus st.usiriunt ad alterationem,
+<lb/>ied terminus alterationis ipsis est humoris innati
+<lb/>consumptio ; nam eousque cremari queunt, dum innatum
+<lb/>habuerint humorem ; atque eo consumpto cremari desinunt,
+<lb/>ac reliquiae eorum nominantur cinis. Quinetiam putrescentium
+<lb/>humorum similiter calor permanet, dum prorsus
+<pb n="7.390"/>
+<lb/>surt assati; par est autem reliquias humorum terressees exiguas
+<lb/>esse,nequaquam multas, quemadmodum lignorum; propterea
+<lb/>quod in substantia eorum elementum humidum exuperat,
+<lb/>non siccum. Simili modo fi libeat coquere humorum
+<lb/>externorum quempiam, ut oleunr, aut vinum, terrestie quidem
+<lb/>ejus quod minimum relinquetur, reliquum autem totum
+<lb/>extenuatum in vaporem atque aerem discedet. Itaque tota
+<lb/>substantia servefactorum humorum ex putredine extenuatorum
+<lb/>ab nisio calore in ambientem dispergitur per rigorem
+<lb/>declinationemque febrium; remanet autem jam excremen- .
+<lb/>tum omnino exiguum, vel nullum; in humoribus quidem
+<lb/>crassioribus exiguum, in ferofioribus autem nullum. Quod
+<lb/>, si nulla debilitas extiterit virium partis inflammatione labo-</p>
+<p>rantis, nec rursus mittantur excrementa, et morbus solutus
+<lb/>est et posthac haud iterum febricitaverit homo,. neque fequenti
+<lb/>die, neque tertio quoque die, neque quatio quoque. C
+<lb/>Quod si ob eandem causam mittantur excrementa, ob quam
+<lb/>ab initio parti mittebantur, aut si haec quidem non amplius
+<pb n="7.391"/>
+<lb/>mittantur, sed permaneat virium debilitas, denuo febricitare
+<lb/>hominem necesse est. Subjiciatur enim primum facultas
+<lb/>partis robusta, tempore vero interveniente eisdem in partibus,
+<lb/>quae prius transmiserant, collecta esse excrementa paria
+<lb/>quantitate et qualitate lis, quae initio transmiserant.
+<lb/>Hoc vero accidit his in quibus dispositio mittentium, et attracti
+<lb/>ad ipsas alimenti quantitas et qualitas eadem pertnanet.
+<lb/>Necesse enim est, aequale ac simile, quod ah eadem
+<lb/>asseratur facultate, aequalia ac similia facere excrementa.
+<lb/>Quinariam tempus collectionis eorum necessario aequale erit.
+<lb/>Partes enim quae aluntur, quoad similem habuerint constitutionem
+<lb/>ab eodem nutrita alimento, aequalia quantitate et similia
+<lb/>qualitate, atque eodem praefinito -temporis tractu col- .
+<lb/>ligent excrementa. Quinetiam eodem. circuitu incitantur ad
+<lb/>expellenda ea atque mittenda debilioribus, siquidem tunc
+<lb/>primum expellendi facultas excitatur ad actionem suam, ubi
+<lb/>gravatur multitudlue excrementorum, aut qualitate divexatur.
+<pb n="7.392"/>
+<lb/>Sed de his omnibus in commentariis de facultatibus
+<lb/>naturalibus definitum jam est:; in quibus exercitatum esse
+<lb/>convenit eum, qui quae nunc dicuntur, isti cum demonstratione
+<lb/>intellecturus ; magno quidem praemio ipsi proposito ex
+<lb/>tali contemplatione ad curandi alam et rationem. Num ut
+<lb/>alia omnia omittam, quae sinu dicturus in eo libro, unius
+<lb/>tantummodo faciam mentionem, quod maxime quidem in
+<lb/>promptu est, quodque ipsi saepenumero. ierimus, ophthalmiae
+<lb/>fcllicet per circuitionem repetentis. Spero enim id non
+<lb/>parvum incitamentum fore lectoribus ad eam, quam hoc loco
+<lb/>tradimus, condiscendum doctrinam. Contra enim quam
+<lb/>ii, qui se nominant ab oculorum curatione ophthalmicos ocularios
+<lb/>medicos, curavimus semper hujusmodi ophthalmiam.
+<lb/>Nam quum illi semper oculis negotium facesserent,nos rnterdum
+<lb/>purgatione, interdum balneo, interdum meri potione,
+<lb/>ut Hippocrates dicit, interdum sanguinis missione, luterdum
+<lb/>utrisque, vel clystere cum.sanguinis missione usi. sumus; atque
+<lb/>interdum statim his adhibitis desivit, quandoque etiam
+<pb n="7.393"/>
+<lb/>ubi capiti sitisset prospectum. Omnes enim qui curati sunt,
+<lb/>aut omnino accessionem non habuerunt, aut semel solum,
+<lb/>sed multo leviorem quam prius. Sed de medendi decretis
+<lb/>ac indiciis nequaquam nunc disserendi tempus est. Caete.a
+<lb/>rutu quod accidat interdum totum caput aut minime affectum,
+<lb/>sed sanguine pravo atque excremenlosu nutritum, colligere
+<lb/>exerementa plura ac vitiosiore, quam ante, ita ut nequaquam
+<lb/>eis sufficiunt naturales effluxus ac perspicatus, sed eogatm
+<lb/>natura expestere excrementum ad aliquam partem debiliorem ;
+<lb/>aut si humores secundum naturam se habeant, ipsum
+<lb/>autem affectum fit, aut etiam ambo concurrant, colligi
+<lb/>exerementa, atque decumbere in aliquam partem, praesens
+<lb/>sermo demonstrare studet. Etenim quoad decumbens humor
+<lb/>similis suerit et capitis affectio eadem, eousque exerementa
+<lb/>aequali colligentur tempore similia et aequalia et accessiones
+<lb/>oculorum similes erunt. Simili modo et si non to ..
+<lb/>tius capitis, at certe unius alienius in eo partis, aut meningum,
+<pb n="7.394"/>
+<lb/>aut cerebri ipsius suerit aliquis affectus, ita ut ex tali
+<lb/>nutrimento colligat tantum taleque excrementum tanto tumpore,
+<lb/>deinde expellat excrementum id tunc primum quum .
+<lb/>ab eo insigniter vexatur; accidet et tunc per circuitum ex-.
+<lb/>acerbant vel oculos, vel aures, vel aliquid aliud tale, in quod
+<lb/>debilius expulsum suerit exerementum. Ut igitur in oculis
+<lb/>et auribus et pedibus et aliis multis partibus talibus perspi-.
+<lb/>cue videtur fieri accessio per circuitum, quemadmodum ostenCum
+<lb/>est; quid mirum in pleuritide et peripneumonia et plorenitide
+<lb/>et aliis omnibus quorum non licet intueri inflammationes,
+<lb/>finaliter fluere excrementum, eodemque modo febrem
+<lb/>accendere, nullo alio ipsa parte hiflammatione obfessa asseotu
+<lb/>laborante peculiari ac proprio ad dictorum generationem,
+<lb/>quam quod mittentibus excrementa eo tempore imbecillior
+<lb/>est? Neque etiam illud mirum videri debet, quod non eodem
+<lb/>tempore colligantur omnia excrementa. . Quod enim
+<lb/>neque qui defertur ratione alimenti, sanguis semper similis
+<pb n="7.395"/>
+<lb/>est, neque affectio partium quae aluntur eadem, idcirco aliud
+<lb/>alii tempus satis est ad tanti excrementi collectionem, d quo
+<lb/>primum natura partis molestatur, cogiturque veluti alienum
+<lb/>a se id, quod molestat, expellere. Neque porro mirandum
+<lb/>est, ipfarum accessionum longitudinem inaequalem esse; est
+<lb/>enim neque genus neque species neque multitudo excrementorum
+<lb/>una fit, neque similiter accendi in omnibus, neque
+<lb/>discuti convenit. Nam plura quidem et frigidiora etglutinofa
+<lb/>et crassa, longiores efficiunt accessiones ; pauciora autem
+<lb/>et calidiora et tenuiora breviores, conducente ad id non
+<lb/>p erum totius corporis constitutione eo tempore et virium
+<lb/>robore.. Corpus enim rarius breviores, quantum in te est,
+<lb/>efficit accessiones ; densius autem longiores. Et robur quidem
+<lb/>virium breviores; debilitas autem multo longiores.
+<lb/>Facultas enim valida promptius a se expellit id, quod est alienum;
+<lb/>corporis autem raritas minime detinetrd quodessertur.
+<lb/>Quocirca ita affectis cito evacuari excrementum necesse est,
+<pb n="7.396"/>
+<lb/>si etiam alia sunilia exissent. Pari ratione quibus e contrario
+<lb/>corpus afficitur, iis necesse est esse longiorem excretionem
+<lb/>excrementorum, debiliter expellente excrementa facultale;
+<lb/>detinente autem ea, quae efferuntur, augustia meatu-.
+<lb/>um. omnibus autem simul concurrentibus, aut brevissima
+<lb/>aut longissima accessio fit : longissima quidem, ob crassitiem,
+<lb/>et multitudinem excrementa, ac vicium imberillitatem, meatuumque
+<lb/>angustiam; brevissima autem, ob tenuitatem et
+<lb/>paucitatem excrementi et robur virium ac viarum autplitudinem.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+
+
+<p rend="indent">Eadem autem ratione neque quam ob
+<lb/>causam accessiones quaedam defleant ad integritatem, quaedam
+<lb/>vero non, difficile est invenire. Quoties enim prioris
+<lb/>accessionis tempus adeo breve suerit, ut priusquam secunda
+<lb/>incipiat, jam prima desierit, medium principii secundae
+<lb/>priorisque finis intervallum totum sine febre existit. Sed
+<lb/>ubi fecunda prius incipit, quam prior omnino solvatur, nihil
+<pb n="7.397"/>
+<lb/>harum messium relinquitur. Hoc igitur, ut diximus, fit,
+<lb/>quum facultas partis excrementa recipientis fui similis esse
+<lb/>pergit, hoc est, adhuc, ut antea, sanguinem qui in ipfa habetur
+<lb/>, .-vincit. Quod si quando debilis efficiatur, idque ei
+<lb/>causa sit cur non excrementa suium, sed ipfe etiam sanguis
+<lb/>corrumpatur ac putrefiat, et febris accendatur ; alterum
+<lb/>inde quoque mitium orietur circuitu repetentium accessionum.
+<lb/>At si quidem praedictus adhuc fervetur calor, duplex erit
+<lb/>genus febrium inter se implicitarum. Si vero ille quidem
+<lb/>desinat, affectio vero suscipientis fluxionem permaneat, quae
+<lb/>de mittente sunt dicta prius, de hac intelliges. Haec enim
+<lb/>pars efficiet m se quaedam excrementa duplici ratione, quemadmodum
+<lb/>et illa, tum quia pravus est funguis contentus in
+<lb/>ea, tum quia facultas debilis est. Nec sucus si ex quavis
+<lb/>causa reddita sit interdum debilis partis facultas, adeo ut
+<lb/>onus ipsi potius quam alimentum sit sanguis adjectus, corrumpetur,
+<lb/>et si calidus fuerit, facile putrescet: si vero fusifrigidus
+<pb n="7.398"/>
+<lb/>ac pituitosus; non statim quidem, sed processu tenrporis
+<lb/>is quoque eandem suscipiet dispositionem. Quinetiam
+<lb/>ubi nequeat concoquere quaelibet pars genita in se excrementa,
+<lb/>aut expellere ad aliam, tale sibi ipsi initium fabricitundi
+<lb/>r quale ea quae transmisit alteri, adserti Cur autem
+<lb/>nequeat alteri mittere excrementa, prima quidem causa est
+<lb/>in viribus mittentis snscipientisque ; altera autem in viarum
+<lb/>obstructione, quae a glutinosis, crassis et multis fieri solet
+<lb/>humoribus. Nihil igitur miri est, si etiam absque eo quod
+<lb/>altera mittat alteri excrementum (quemadmodum caput oculis
+<lb/>mittebat j ex excrementis in ipsa adhuc manentibus .in
+<lb/>eandem suscipienti aliena dispositionem devenerit. . Quae
+<lb/>enim obstruxerunt naturales effluxus, processu temporis ea
+<lb/>quoque putrescant necesse est, et causa sint oportet, ob quam
+<lb/>multitudo excrementorum in parte minime vacuetur et ut
+<lb/>solita erat, difflatur. Putrescunt igitur, utilia, ea quoque
+<lb/>quae postea colliguntur et omnia sumsi accendunt statim m
+<pb n="7.399"/>
+<lb/>parte calorem febrilem. Supra autem indicavimus, ubi accenditur
+<lb/>quidam vel etiam augetur calor, in eam partem ab
+<lb/>aliis sanguinem defluere. Itaque necesse est, ut tempore,
+<lb/>quo defluit, partes illae refrigerentur sanguine destitutae;
+<lb/>pars autem affecta gravetur atque distendatur et qui defluxit
+<lb/>sanguis niteretur, propter duas cautas, et quia putrescentibus
+<lb/>jam excrementis permiscetur, et quia impactus minime disiflatur.
+<lb/>Quocirca succenditur instar lignorum hunridiorum
+<lb/>consertior in exiguam flammam coniectorum, atque id tempus
+<lb/>omne initium accessionis appellatur. Ubi vero calor tuperat
+<lb/>materiam, appellatur incrementum et ascensus tale
+<lb/>tempus. Atque eo tempore augetur calor tam multus, ut
+<lb/>non salum demat locum nitunt, qui veluti cauta quaedam
+<lb/>putredinis est, sed jam per continuitatem depascatur univenfiam
+<lb/>corpus met ubi ad summum pervenerunt fervorem qui
+<lb/>accenduntur .humores, appellatur. rigor talis pars accessionis.
+<lb/>Universum vero ignitum esse ridetur tunc aegroti corpus,
+<lb/>calore in universe animali aequaliter intenso ; delude si quidem
+<pb n="7.400"/>
+<lb/>humores tenues sint, ac facultas valida et corpus rarum,
+<lb/>pars plurima fervesactorum humorum suta in sudorem vacuatur;
+<lb/>quodsi cresti fuerint, ac excretrix facultas debilis et viae
+<lb/>angustae, nihil quidem sensibile essiuit, sed susum id quod
+<lb/>ita extenuatum est, ut in halitus tenuis transierit naturam;
+<lb/>appellatur autem id tempus declinatio, quae perspiratio quaedam
+<lb/>est humorum fervefactorum. Sed ubi in parte affectus
+<lb/>permanet, necesse est alterum in ea gigni excrementum;
+<lb/>quum quod rursus in eam attrahitur alimentum, non plane
+<lb/>totum vincatur; quod curtus, ut ante docuimus, et ab excrementis
+<lb/>putridis in parte ipsa relictis, et ab ipsa propria
+<lb/>pravitate, initlum putredinis suscipit, et ubi admodum incaluerit,
+<lb/>rursus decumbit in ipsam, ut prius dictus ex alus
+<lb/>animalis partibus sanguis, rurfusque eodem modo, initium,
+<lb/>incrementum, rigor et declinatio accessionis siti Atque hoc
+<lb/>certo ambitu semper fit, dum affectus in parte primum giguente
+<lb/>excrementa servatur.
+</p>
+<pb n="7.401"/>
+</div>
+<div type="textpart" subtype="chapter" n="18">
+
+
+<p rend="indent">At vero affectus talis duplex est: alter
+<lb/>quidem parsis debilitas, qua gignuntur excrementa; alter
+<lb/>vero, qui ex ipsis quotidie genitis acervatur. Cave enim
+<lb/>putes in istis vasis externis, in quibus elixa cibaria nidoruIenta
+<lb/>evaserunt, affectum quendam relinqui; in partibus
+<lb/>autem, in quibus humores putrescunt, nullum permaneres
+<lb/>Quum sane etiamnum magis haec affectio solvi nequeat, quotres
+<lb/>universum corpus pravis humoribus abundet, ac pletlioricum
+<lb/>sit, multoque magis, quoties in his suerit angustia
+<lb/>omnium meatuum partis excrementa educentium. Quemadmodum
+<lb/>igitur et sanatio subsequetur, si et meatus expurgentur,
+<lb/>ut pars meabilis sit, et vires roborentur et affectus
+<lb/>emendetur et universum corpus neque malis humoribus suateat,
+<lb/>neque plethoricum sit. Quamdiu autem haec permanant,
+<lb/>circuitum accessionum permanere necesse est. Sintililer
+<lb/>accidit in mulieribus. in eis enim quoad similis causa
+<lb/>et, aequalis permaneat monstro orum, idem eorum circuitus
+<pb n="7.402"/>
+<lb/>servatur. Sed de his omnibus in libro de rheumaticis affectibus
+<lb/>satius docuimus; et nunc immorari diutius in confic-.
+<lb/>mannis iis, quae ante demonstrata fiunt, minime con veniti
+<lb/>neque praeterire capita rerum in praebens utilium. Maxime
+<lb/>autem utile est. cognoscere, quod aliquae partes . aliis transmittant
+<lb/>fluxiones, quemadmodum caput oculis ; quaedam vero
+<lb/>ab excrementis i n se genitis initium febricitandi suscipiant;
+<lb/>et quod his omnibus commune excrementorum putredo fit;
+<lb/>proprium vero singulis, huic quidem obstructio ac constipatio
+<lb/>vasorum, aut ob humores glutinosus, vel orasses, vel multos ; asteri
+<lb/>vero constrictio meatuum vel sensibilium, vel minime fensibiliam ;
+<lb/>alii autem quod omnia spatia vacua in toto ipsius corpore
+<lb/>sint oppleta et ab his plenitudo ad vires ; quemadmodum
+<lb/>in libro de plenitudine docuimus. Febrium igitur per circuitus
+<lb/>accedentium haud scio an usia generationis causa omissa
+<lb/>sit. Earum autem, quae ordine carent, nonnullae ob humoris
+<lb/>mutationem, nonnullae ob rationis rictus errorem ad
+<pb n="7.403"/>
+<lb/>ejusmodi constitutionem deveniunt. Sanguis igitur putrescens
+<lb/>maxime mutatur, quoniam, ut ante diximus, partim
+<lb/>flava bilis, partim atra efficitur. Quantum igitur humores
+<lb/>in corpore aegro mutantur, tantum et circuitiones accessionum.
+<lb/>Quocirca minime mirum rideri debet, per tales.mus.
+<lb/>taliones ordinem quoque mutari. Mutantur vero maritae,
+<lb/>ubi qui incepit putrefieri; in aliqua parte alius existit, alius
+<lb/>autem ex aliis defluit, qui aut in istis felis talis habebatur,
+<lb/>aut in tote animalis corpore exuperabat Ita vero quaecunque
+<lb/>aegri in rictus ratione delinquunt, haec quoque nihilo
+<lb/>minus corrumpunt circuitionis ordinem. Ut enim in
+<lb/>fanis pravus rictus morborum causa est, eodem modo vel
+<lb/>magis etiam in aegris, extis quae deliquerint, accessiones
+<lb/>inordinatae existunt. Nec fidum adhuc aegrotantes, test
+<lb/>etiam quo tempore a morbis se recolligunt, prompte ex quovis
+<lb/>delicto laeduntur. . Quocirca per omnem insignem laesionem
+<pb n="7.404"/>
+<lb/>vel praevenire multum circuitiones cogunt, aut diversi
+<lb/>generis a prioribus . quasdam gignunt,- a quibus accessionum.
+<lb/>ordo corrumpitur.. Saepe vero ob implicationem circuitu-.
+<lb/>um incognitam ineditis aegri risi fiunt pati inordinatas accessiones.
+<lb/>Sed tales ordinum permutationes revera non
+<lb/>sunt, sed tantummodo videntur. Quaecunque autem revera
+<lb/>sunt, aut ob permutationem humorum febres generantium,
+<lb/>aut - ob errorem in rictus ratione efficiuntur. Reliquum
+<lb/>porro synochorum genus (quarum totum tempus una accessio.
+<lb/>est:, aut temper aequalis, aut decrescens, aut increscens usque
+<lb/>ad crifimj ex tali causa fieri fidet, qualem omnium febriam
+<lb/>Praxagoras statuit, humorum in cava vena putredinem
+<lb/>esse existimans ; sed absolutior sermo . ac . verior hoc modo.
+<lb/>evadet. Quicunque circuitibus quibusdam accessiones. repe-.
+<lb/>sunt morbi, partium superveniunt affectibus, vel mittentium,
+<lb/>-vel suscipientium, vel gignentium,. vel trahentium exere-.
+<lb/>menta, eo, quo paulo fulica diximus, modo. Qui vero fine.
+<pb n="7.405"/>
+<lb/>chcuitu accedunt, in his nullus locus peculiaris affectus est ;
+<lb/>sed humores in venis et arteriis omnibus, maximeque qui in
+<lb/>maximis et calidissimis sunt, aut ob aliquam aliam causam,
+<lb/>ut in diariis; aut etiam ob putredinem fervefacti ; accendunt
+<lb/>febrem unam continentem, ab initio usque ad finem minime
+<lb/>intermittenteni, eatenus durantem ac dementem hominem,
+<lb/>quoad gignentes eam humores init consumpti, aut concocti;
+<lb/>aut utrumque passe</p>
+</div>
+</div>
+</div></body>
+  </text>
+</TEI>

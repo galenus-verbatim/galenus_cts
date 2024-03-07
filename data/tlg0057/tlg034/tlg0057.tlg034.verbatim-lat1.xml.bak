@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De parvae pilae exercitio</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg034.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="899" to="910">899-910</biblScope>
+              <date>1823</date>
+            </imprint>
+          </monogr>
+          <ref target="https://hdl.handle.net/2027/chi.15862725">HathiTrust</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg034.verbatim-lat1">
+<pb n=".3"/>
+<div type="textpart" subtype="book" n="1">
+<pb n=".3"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE PARVAE PILAE EXERCITIO</head>
+
+
+<p rend="indent">Quantum ad sanitatem conferant exercitia,
+<lb/>o Epigenes, quodque ipsa opus sit cibaria praecedere, ab
+<lb/>antiquis viris praestantissimis tum philosophis tum medicis
+<lb/>sufficienter traditum est; quantum vero illa, quae
+<lb/>parva pila fiunt, caeteris excellant, hoc nondum fatis
+<lb/>priorum quispiam explicavit. Aequum igitur est, quae
+<lb/>agnoscimus, ea nos verbis explicare. A te autem judicabimur,
+<lb/>qui omnium optime ejus artem exercueris ; at et
+<lb/>caeteris fatis utilia dicta esse videbuntur, quibus libellum
+<lb/>hunc sueris impertitus. Dico namque, optima omnium
+</p>
+<pb n=".4"/>
+<p/>
+<p>esse exercitia, quae non modo corpus exercere, verum
+<lb/>etiam animam oblectare possint; et quicunque eam,. quae
+<lb/>per canes fit, venationem aliamque ferarum capturam
+<lb/>adinvenerunt, voluptate, oblectamento et cupiditate latidis
+<lb/>proprium laborem temperantes, sapientes quidam
+<lb/>viri et humanae naturae plane peritissimi extitere; tantum
+<lb/>enim in ipsa potest motio animae, ut et multi prae
+<lb/>sola laetitia morbos evascrint, multi etiam prae moerore
+<lb/>aegrotaverint. Neque ulla est tam vehemens corporis
+<lb/>affectio, .ut affectiones animae vincat: non igitur parui
+<lb/>pendere oportet hujus motiones, qualesnam sint, imo
+<lb/>vero longe magis quam corporis motus observare, tum
+<lb/>aliis de causis, tum quod corpore dignior sit anima.
+<lb/>Hoc igitur omnium,. quae cum voluptate coniunctae sicut,
+<lb/>exercitationum commune; alia vero eurum sunt propria,
+<lb/>quas nobis ex parva pila. comparamus; quae nos nunc
+<lb/>exponemus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Primum -quidem adest paratus facilitas. Si
+<lb/>igitur consideraveris, .quanto egeant. apparatu simul et
+<lb/>otio tum caetera omnis venandi exercitia, tum quae
+<pb n=".5"/>
+<lb/>per canes fit venatio, manifeste didiceris, neque civilibus^
+<lb/>addictos negotiis, neque artifices ipsos ad hujuscemodi^
+<lb/>exercitia accedere posse. Multa enim . haec atque hominem
+<lb/>non pauco otio incumbentem exposcunt; hoc autem
+<lb/>solum adeo familiare est, ut ne pauperrimus quidem- ejus^
+<lb/>indigeat apparatu; non enim retibus, non armis, noni
+<lb/>equis, non venatoriis canibus, sed pila sola, eaque parva
+<lb/>opus esu Ita vero ad caeteras actiones - aequa est, ut
+<lb/>earum nullam omittere per se cogat: quid vero eo conuo
+<lb/>modius esse possit, quod et humanam scrtunam eumene
+<lb/>et actionem admittit? nam venaticorum exercitiorum utus
+<lb/>nobis non adest facilitas; divitias enim instrumentorum
+<lb/>apparatum suppeditantes, utrumque liberem opportunitatem
+<lb/>spectans erigunt; parvae autem pilae exercilationis
+<lb/>instrumentorum apparatus etiam pauperrimis (ut dictum
+<lb/>est, facilis existit, atque utendi e occasio plurimum negotiis
+<lb/>addictos expectat. Id sane est facilitatis hujus exercitationis
+<lb/>magnum commodum. Eam vero aliarum otuir
+<pb n=".6"/>
+<lb/>usum uberrimam esse,. hinc potissimum didiceris, si in
+<lb/>unaquaque letatum vim et naturam consideraveris; vel.
+<lb/>enim vehementem, vel mollem, .vel sursum magis quam
+<lb/>deorstrm, partemve prae caeteris aliquam, ut lumbos,
+<lb/>caput,. manus, . aut thoracem, moventem comperies. Quae
+<lb/>autem omnes corporis partes aequaliter moveat, possitque
+<lb/>et in summam vehementiam. attolli, et in minimam motionem
+<lb/>deprimi, aliarum nullam invenies, illa sula excepta,
+<lb/>quae ex parva pila habetur exercitatio, quae con-.
+<lb/>citatissima vicissim et tardissima fit, vehementissima et modotatissima,
+<lb/>prout ipsis volueris et corpus tolerare videa—.
+<lb/>tur. Sic vero et simul omnes ejus partes movere. quidem
+<lb/>licet, si conferre videatur, praeterea vero prae aliis alia,.
+<lb/>si hoc etiam videatur commodum. Quum enim invicem
+<lb/>congredientes et interiectam pilam excipi prohibentes
+<lb/>laboraverint, maximum id vehementissimutnque exercitium
+<lb/>existit, quod quidem multis colli .obversionibus; multis
+<lb/>vero comprehenfionibus palaestricis commixtum, proinde-.
+<lb/>one eauut ouidem et cervix colli obverfiouibus. latera
+<pb n=".7"/>
+<lb/>vero, thoraxque, et venter, faciei translationibus, positurisi,
+<lb/>repulsionibus ac. obnixibus aliisque palaestricis pre-^
+<lb/>liensionibus laboranti Hoc autem -exercitio lumbi vestementer,
+<lb/>ac crura incessus fundamenta ejusmodi labore
+<lb/>tenduntur: progressiones denique et obliqui fultus non
+<lb/>parvum est crurum exercitium.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">At si veritas dicenda fit, id solum omnes
+<lb/>corporis partes aequissime movet; dum enim procedimus
+<lb/>aut recedimus, aut nos in obliquum transferimus, alii
+<lb/>atque alii nervi ac musculi plus fatigantur. Quicunque
+<lb/>etiam uno motionis genere crura movet, quemadmodum
+<lb/>qui sine ratione cursitent, sic quoque non sucus, quam
+<lb/>qui crebro feste in obliquum transferunt, partes inaequaliter
+<lb/>exercet; verum quemadmodum cruribus, sic et
+<lb/>brachiis exercitatio haec summa cum jusiitia proprium
+<lb/>partitur opus, siquidem in omni sigma pilam excipere
+<lb/>consueverunt. Hic enim necesse est figurarum varietatem
+<lb/>alios atque alios musculos vehementius tendere, adeo ut
+<lb/>omnes vicissim laborantes intermissionem his habeant acqualem,
+<pb n=".8"/>
+<lb/>qui, dum alii operantur, quiescunt, atque ita
+<lb/>vicissim omnes operantes et quiescentes neque segnesomnino
+<lb/>relinquantur, neque soli.. laborantes lassitudlue.
+<lb/>corripiantur. Quod autem. et oculos exercere oporteat,
+<lb/>hluc videre licet, si animadvertimus, quod, nisi quis, quo;
+<lb/>vergat pila, diligenter praeviderit, quo minus eam attin-.
+<lb/>gat, ipsum aberrare necesse est. In hoc autem et censilium
+<lb/>aequale folicitudini patet: opus est tum illam ne
+<lb/>humi incassum dejiciat, tum ut versantem in medio eandem
+<lb/>assequi prohibeat, vel ipse transmissam rursus ex-. .
+<lb/>cipiat. Atqui solicitudo corpus fala quidem extenuat,
+<lb/>cuipiam vero exercitio ac laudis desiderio commissa, ut-.
+<lb/>pote in laetitiam desinens, ad bonam corporis valetudinem
+<lb/>atque animi prudentiam plurimum conferi. Neque
+<lb/>vero parvum est hoc commodum, quod ambo, corpus videlicet
+<lb/>atque animum, pro utriusque virtute juvere. possit..
+<lb/>Quod autem maximis ambo exercitiis afficere .possit, ad
+<lb/>quae i militum imperatores potissimum accedere civitatis..
+<lb/>reginae leges jubent, videre non est difficile. Hostem
+<pb n=".9"/>
+<lb/>etenim opportune invadere, atque invadendo latere, et
+<lb/>datam occasionem .momento arripere, adversariorumque
+<lb/>res vel vi, vel inconsulto sibi suas facere, ac parta
+<lb/>tueri, optimi est imperatoris: atque, ut simpliciter dicam,
+<lb/>exercitus imperator et cullus et fur egregius esse debet,
+<lb/>artis enim illins universae haec est summa. Numquid
+<lb/>igitur aliud quodpiam exercitium aeque idoneum fit, hominum
+<lb/>ut instituat aut parta detondere, aut erepta reemperare,
+<lb/>aut propositum adversarii praevidere? mirum
+<lb/>profecto, si quis dixerit, aliud quodpiam inveniri. Multa
+<lb/>namque ipsorum .contrarium efficiunt; ignavos fiquidem
+<lb/>et somnolentos ac sensu hebetes reddunt; etenim quictmqua
+<lb/>in palaestra laborant, ad crassitudinem potius quam
+<lb/>ad virtutis studium excitantur; multi. siquidem crassitiem,
+<lb/>adeo contraxerunt, ut vix respirare pollini. Hujusmodi,
+<lb/>sane homines nec militiae, nec. . regiis negotiis aut civilibus
+<lb/>utiliter praefici possent; sinibus potius quam: illis
+<lb/>rem quamlibet mandare quis possit. Forsitan autem existimaveris
+<lb/>, me cursura et quaecunque corpus extenuant
+<pb n=".10"/>
+<lb/>exercitia probaro. Verum hoc secus habet; ego enim, quod
+<lb/>immodicum est, ubique damno, artemque omnem modice
+<lb/>tractandam censeo; quod si quid mensura caruerit, pulcuium
+<lb/>illud haud quaquam fatebor. Cursus igitur minime
+<lb/>laudaverim, quippe qui corporis habitum extenuent, hominemque
+<lb/>ad fortitudinem nullatenus assuefaciant; non
+<lb/>enim celeriter fugientibus victoria debetur, sed iis, qui
+<lb/>cominus valeant obdurare; neque, quod celerrime curterent,
+<lb/>Lacedaemonii plurimum potuerunt, sed quod
+<lb/>hostes persistendo trucidarent. Quod si, cursus quam
+<lb/>bonae prosit valetudini, quaesieris, quatenus corporis
+<lb/>partes inaequaliter exercet, eatenus falubris non est censiendus.
+<lb/>Necesse esit enim in hoc alia quidem nimis fatigari,
+<lb/>alia vero penitus torpere, quorum neutrum condusiit,
+<lb/>imo vero ambo morborum gignunt femina, viresque
+<lb/>imbecillas reddunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Exercitium igitur id potissimum commenfleverim,
+<lb/>quod bonam corporis valetudinem ac partium
+<lb/>concinnitatem unaque animi virtutem praestare possit,
+<lb/>quale illud est, quod in parva pila consistit. Animum
+<pb n=".11"/>
+<lb/>etenim undique juvare potest, omnesque corporis paries
+<lb/>pari modo maxime exercet, id quod et ad bonam valetudinem
+<lb/>plurimum confert, et corporei habitus commenfurationem
+<lb/>efficit, utpote quod crassitiem nullam immodicam
+<lb/>aut gracilitatem asserat, quin potius actionibus
+<lb/>robore aut celeritate ludigentibus sufficiens sit atque idoneum.
+<lb/>Sic igitur, quantum ad vehementiam attinet,
+<lb/>nullo omnium est insertus. Mollitiem autem deinceps
+<lb/>rideamus; hac enim aliquando indigemus, aut propter
+<lb/>aetatem, quae maximos labores vel junior nondum ferre,
+<lb/>vel antiquior jam facta non etiam sustinere valeat; aut
+<lb/>quod lassitudini consulere velimus; aut quod a morbo
+<lb/>convalescamus ; in ea quoque (ut mihi quidem videtur)
+<lb/>reliqua cuncta excellit; nullum est enim adeo lene,
+<lb/>modo leviter ipsum tractaveris. oportet autem ipsis
+<lb/>medium te locum obtinentem, nullaque ex parte ah eo,
+<lb/>quod modicum sit, declinantem, nunc quidem sensim procedendo,
+<lb/>nunc vero loco stando, ac denique membra
+<lb/>non admodum agitando uti; mollibus postea ex oleo frierronibus
+<lb/>calidisque balucis uteris. Hoc equidem omnium
+<pb n=".12"/>
+<lb/>est remrssisfimum, adeo ut et quiete indigentibus
+<lb/>utilissimum, atque ad imbecillas vires revocandas valeotissimum,
+<lb/>scnique ac puero sit. conducentifsimum. Quae
+<lb/>vero hoc quidem laboriosius, mitius vero, quam quod vehementissimum
+<lb/>sit, in parvae pilae exercitio fieri solent,
+<lb/>ea quoque cognoscat opus est, quicunque ipsa recte semper
+<lb/>tractare voluerit Etenim si quando ob necessaria negotia,
+<lb/>quibus persaepe detinemur, aut supernas partes omnes,
+<lb/>aut internas, aut manus duntaxat, aut pedes immodice
+<lb/>fatigaveris, licet exercitatione hujuscemodi partim quidem
+<lb/>sistere, quae prius laborarunt, partim vero, quae antea
+<lb/>penitus torpuerunt, ad parem illis motionem ducere. Si
+<lb/>quis enim e multo intervallo crurum opus aut nihil
+<lb/>aut omnino parum admittetis magno cum conatu projiciat,
+<lb/>inferna quidem sistit, superna vero vehementius
+<lb/>movet. Quod si plerumque ac celeriter cursitans e multo
+<lb/>intervallo perraro pilam projecerit, inferna magis. fatigabit;
+<lb/>festinatio insuper ac celeritas in ea reperta absque
+<pb n=".13"/>
+<lb/>grani conatu anhelitum magis exercet: alterum vero, receptio
+<lb/>videlicet ac transmissio, exceptioque abfque celeritate,.
+<lb/>corpus magis intendit ac roborat : at si vehemens conatus
+<lb/>unaque festinatio fuerit, hoc et corpus et anhelitum
+<lb/>magnopere fatigabit, eritque omnium exercitiorum
+<lb/>vehementissimum. Quousque autem pro flugulo quoque
+<lb/>usu intendenda aut remittenda sit exercitatio, scribere
+<lb/>quidem impossibile; neque enim cujusque quantitas explicatulis
+<lb/>est; in opere lumen ipso adinvenire atque ostiadere
+<lb/>possumus, in quo sane vis tota maxime consistit;
+<lb/>nihil enim prodest qualitas, si quantitate labefactetur. Hoc
+<lb/>igitur sit curae paedotiibae, qui exercitationi sit praefuturus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Reliquum autem sermonis absolvatur. Volo
+<lb/>namque ad haec quae dixi bona huic exercitio addere,
+<lb/>neque quod extra pericula fit, quibus aliorum plurima
+<lb/>illiduntur, missum facere. Cursus enim celeres rupto
+<lb/>vaste praecipuo multos jamdudum perdidere; fio autem
+<lb/>et voces magnae simnlque vehementes uno temnere assatim
+<pb n=".14"/>
+<lb/>emissae maximorum malorum non paucis causae
+<lb/>fuerunt; violenti quoque equitatus circa renes aliquid
+<lb/>fregerunt, saepe etiam thoracis partibus, nonnunquam
+<lb/>etiam seminariis meatibus noxam intulere, ut equorum
+<lb/>delicta praetermittam, quibus saepe a fella delapsi equites
+<lb/>illico interierunt. Sic autem et saltus, et discus, et
+<lb/>quae per flexiones fiunt exercitia sese habent. Quid
+<lb/>autem de iis dicendum, qui in palaestra versantur? quum
+<lb/>omni ex parte non nunus, quam Litae illae apud Homerum,
+<lb/>mutilati sinti Quemadmodum enim ille inquit
+<lb/>poeta, claudas, rugosas atque oculis distortas esse, sic
+<lb/>eos, qui in palaestra versantur, vel claudos,, vel distortos
+<lb/>vel fractos, vel omnino mutilos videris. Quum igitur
+<lb/>praeter bona, quae dixi, id quoque accedat parvae pilae
+<lb/>exercitio, ut scilicet neque periculo sit obnoxium, aliorum
+<lb/>omnium ad usum optime patebit.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

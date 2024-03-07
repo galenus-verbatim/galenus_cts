@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De utilitate respirationis</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg020.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              
+              
+              <biblScope unit="pp" from="470" to="511">470-511</biblScope>
+              <date>1822</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x04">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="159" to="165">159-165</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="414" to="426">414-426</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x05">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg0057.tlg020.verbatim-lat1">
+<pb n="4.470"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="4.470"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE VSV RESPIRATIONIS
+<lb/>LIBER.</head>
+
+
+<p rend="indent">Quisnam est usus respirationis ? quod.
+<lb/>enim non vulgaris ea sit, hinc apparet, quod ne momentum
+<lb/>quidem temporis ea deperdita sufficere possimus;
+<lb/>ex quo manifestum est, ad nullam particularem acsionem,
+<lb/>sed ad ipfam vitam eam pertinere. Quemadmodum
+<lb/>enim, si iis, quae ad ambulandi munus comparata sunt,
+<lb/>privati fuerimus, ambulandi damnum percipimus, et si
+<lb/>iis, quae ad videndum utilia sunt, privati fuerimus, non
+<lb/>videmus, ita etiam, si lis, quae ad vitam necessaria sunt,
+<pb n="4.471"/>
+<lb/>privemur L morimur. Quod est igitur illud tam ingens. a
+<lb/>respiratione nobis commodum? Num animae ipsius gey
+<lb/>neratio est, V ut Asclepiades ait? An generasse quidem
+<lb/>non est, verum corroboratio quaedam, ut Nicarchi Praxagoras?
+<lb/>An innati caloris refrigeratio quaedam, uTPhilistion
+<lb/>et Dio des dicebant? An et nutritio .et refulgeratio,
+<lb/>ut Hippocrates? Aut horum .quidem nihil est, ver
+<lb/>rum arteriarum expletionis gratia respiramus, velut ser asistratus
+<lb/>putat? Tot enim ferme extiterunt sectae de usu
+<lb/>respirationis, etiamsi aliquae ex relatis non videantur
+<lb/>differre, velut eorum, qui dicunt, innatum calorem corroborari
+<lb/>a respiratione, et qui dicunt, eundem ventilari:
+<lb/>nihil enim diversum dicunt hi ab IiS, qui reliigerari tradunI.
+<lb/>Atqui dictionem non adeo, sed sententiam spectare
+<lb/>oportet, quae Pane in omnibus una existit;, relisa
+<lb/>gerationem enim ipsum non propter se ipsam, veluti nequ^
+<lb/>ventilationem aut corroborationem, commodas perhibent,
+<lb/>sed quod insitum calorem conservant. Atque si
+<pb n="4.472"/>
+<lb/>hoc tres bae opiniones habeant commune, nempe insiti
+<lb/>caloris conservationem, difficilis plane de omnibus ipsis
+<lb/>tractatio oboritur, et quae aegre discemi possit, propterea
+<lb/>quod animae substantiam ignoramus. Si quidem igitur
+<lb/>actio animae est vita, atque ipsa a respiratione magnopere
+<lb/>juvari videtur, quamdiu utilitatis modum ignorare
+<lb/>nos verisimile est? Quousque sane animae substantiam
+<lb/>ignoraverimus, ut ego plane opinor. Attamen audendum
+<lb/>est et veritas investiganda ; quam etiamsi non assequamur,
+<lb/>omnino tamen propius, quam nunc sumus, ad eam
+<lb/>perveniemus. . Et primum utique omnibus supra relatis
+<lb/>sententiis in duo capita coactis, utrum tandem ipsorum
+<lb/>verius sit, invenire conabimur; videntur enim aliae quidem
+<lb/>ex eis ad aeris, qui inspiratur, substantiam respicere,
+<lb/>aliae vero ad qualitatem. Qui igitur animam generarr
+<lb/>dicunt, et nutriri, et arterias expleri, substantiam
+<lb/>siolum causantur^ qui vero ventilari, et roborari, ac.refrigerari,
+<lb/>qualitatem. luxta quam rationem etiam, qui
+<pb n="4.473"/>
+<lb/>cibum ut dulcem, aut austerum, aut calidum, aut fuigidum
+<lb/>exhibet, qualitatem solam refpicit, qui vero ut nutrientem,
+<lb/>is substantiae respectu eum offert. Hoc igitur
+<lb/>primum determinabimus, utrum substantia aeris, qui per
+<lb/>inspirationem advenit, indigeamus, an qualitate, an
+<lb/>utrisque.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Quandoquidem igitur, postquam inspirato
+<lb/>aere substantia ejus abundamus, nihilo minus suffocamur,
+<lb/>quam si nihil omnino suspirassent us, apparere videtur,
+<lb/>substantia ejus nobis non opus esse. Verum ad hoc Eralustratus
+<lb/>inquit, quod neque cor ipfum aerem ex pulmone
+<lb/>trahere potest, si respiratio cohibeatur; in hujusmodi
+<lb/>enim constitutionibus aequalem organorum respirationis
+<lb/>molem secundum dimensionem servari. Si igitur aliquam
+<lb/>aeris partem attraheret cor, vacuus relinqueretur attracti
+<lb/>locus, id quod impossibile existit; ne itaque impossihile
+<lb/>stat, neque ab initio inquit eum tranfumi; oportet
+<lb/>enim, si aliquid tranfumendum est, non Polum esse quod
+<pb n="4.474"/>
+<lb/>trahat, sed et quod tribuat; non tribuit autem thorax
+<lb/>aequalem dimensionis molem servans; neque igitur cor
+<lb/>ipium transumere potest, sed conatur quidem, ut antea,
+<lb/>perficit autem nihil, atque inde consequitur suffocatio,
+<lb/>Q uandoquidem igitur, ut ex aere quid attrahat cor, thoracem
+<lb/>id permittere necesse est, permittit autem, quum
+<lb/>dimensionem transmutat, transmutat autem suspirantibus,
+<lb/>t nobis aut expirantibus^ tunc Pane cor tranfumet. At-</p>
+<p>que haec quidem Erasistratus. Caeterum, qui ei contradicunt,
+<lb/>primum. quidem, quod neque demonstraverit ali.cubi,
+<lb/>quod vacuum omnino non sit in corporibus dispersum,
+<lb/>sed quod non sit acervatim dispersum, commemorant.
+<lb/>Postea vero, etiamsi hoc concedatur, quod neque
+<lb/>in mundo usquam vacuum sit admixtum, attamen non
+<lb/>impossibile esse ajunt, eandem substantiam fusam et per
+<lb/>intus tensam majorem, quam antea, locum occupare.
+<lb/>Et tertium, quod com evidentibus formo ipsius pugnet:
+<lb/>videmus etenim, cor In respirationis cohibitione aereus
+<lb/>ex pulmone attrahere, id quod ad. cordis dissensionem
+<pb n="4.475"/>
+<lb/>consequitur; neque enim possibile est ex ErasistratI fententia
+<lb/>distendi et nihil attrahere se vacuus namque sta
+<lb/>fieret locus; si vero non distenditur, manifestam est, quod
+<lb/>neque movetur: atqui apparet ipsum moveri, contrarium
+<lb/>itaque primi consequitur, nimirum cor in respirationis
+<lb/>cohibitione aerem attrahere. Ad haec vero Erasistrati
+<lb/>sectatores rursus tum de fusione simulque contractione
+<lb/>contendunt, omnino contraria statuere conantes, tum de
+<lb/>vacui complexu, tum quod cor a pulmone quidem tum
+<lb/>nihil trahat, verum a magna arteria, cui prius Tpfum
+<lb/>suppeditabat: quidam vero neque distendi neque contrahi
+<lb/>cor dicunt, sed veluti concuti. Porro, quae ab
+<lb/>Asclepiadis sectatoribus dicta sunt, vssa Tunt mihi [merito
+<lb/>relinquenda esse, utpote manifeste absurda et justas .ree
+<lb/>prehensiones ab ipso Asclepiade adepta. Duplex igitur
+<lb/>necessario adversum illos sit contradictio, ut contra eos
+<lb/>quidem, qui ab arteria aerem attrahi asserunt, membranas
+<lb/>agnatus id impedire (quemadmodum ipse Erasistratus
+<pb n="4.476"/>
+<lb/>inquit) dicamus ; contra eos vero, qui concuti solum cor
+<lb/>perhibent, praeter id, quod evidentius est, loqui indicemus;
+<lb/>apparet enim,,, quod partim distendatur, ac partim
+<lb/>contrahatur t.. pariter autem utrisque; dicamus, omnium
+<lb/>arteriarum motum. aequaliter fieri. tum circa respirationem,
+<lb/>tum juxta ejusdem cohibitionem. Quaestio
+<lb/>igitur de fusione substantiae in infinitam sermonis longitudinem
+<lb/>apud utrosque evagatur. f. Ad hoc vero, quod
+<lb/>a o magna arteria cor aerem trahere non r potest propter
+<lb/>agnatus membranas, respondentes inquiunt, Erasistratum
+<lb/>de naturali ad ministratione haec dixisse, non de violenta
+<lb/>atque ea, quae fit praeter naturam. Quum enim necessarium
+<lb/>sit cor distensum attrahere, tunc ex pulmone quidem
+<lb/>id facere, quum habeat, quod inde trahat; minime
+<lb/>vero a magna arteria. accipere, quum membranae id fieri
+<lb/>prohibeant: quum vero destitui tar pulmone nihil suppeditante,
+<lb/>tunc sane ex magna arteria ipsum revellere,
+<lb/>membranis violenter praebere coactis. Caeterum de motu
+<lb/>arteriarum, quod tum circa respirationem, tum juxta
+<lb/>ejusdem cohibitionem similiter fiat, nihil miri esse ajunt
+<pb n="4.477"/>
+<lb/>Erasistrati sectatores; in tantum enim eum solummodo
+<lb/>discrepare a naturali dispensatione, quod non a pulmone,
+<lb/>sed a magna arteria cor spiritum trahens eundem rurSUS
+<lb/>ad iliam remittit ; atque ob hoc ipsum animal suffiocari
+<lb/>inquiunt; quod pulmonis influxu sit privatum. Atque
+<lb/>haec sunt, quae ab utrisque contradicuntur. His
+<lb/>accedit amplius, quod nondum est relatum, jam vero
+<lb/>privatim et seorsum ab aliis dicetur, quod mihi valde
+<lb/>efficax, utpote evidentissimum existens, videtur, quid sit
+<lb/>tandem, quod circa respirationis^ cohibitionem prohibeat
+<lb/>cor. aerem ex pulmone trahere, contrahi vero thoracem^
+<lb/>hoc ipsum pati a natura aptum. Si enim instrumentum
+<lb/>esset, quod neque distendi, neque considere posset, fortassis
+<lb/>sensum aliquem haberet, quod ab Erasistrato dicitur;.
+<lb/>quando vero juxta iliius ipsius traditionem contrahi
+<lb/>potest, quid prohibet etiam nunc in tantum confidere
+<lb/>ipsum, in quantum a corde evacuatur? Praeter alia scinus
+<pb n="4.478"/>
+<lb/>et per musculos pro animantis voluntate moveri thoracem
+<lb/>Erasistratus ait. Et in hoc nihil difficultatis est, si ipse
+<lb/>thorax undequaque a musculis comprimatur, simulque
+<lb/>etiam evacuatio, quae superne fit, cohibeatur: id quod
+<lb/>in spiritus detentionibus et egestionibus contingit, undequaque
+<lb/>enim ejusmodi actionibus thoracem premimus et
+<lb/>contrahimus, superiorem asperae arteriae meatum vi
+<lb/>claudentes, ut ne quid per ipsam evacuetur. Quod si
+<lb/>non solum non premamus, sed et ipfum meatum ap erramus,
+<lb/>plurimus aer cum quodam strepitu foras fertur, at- .
+<lb/>que appellatur hujusmodi rea effatus quidam ab expiratione,
+<lb/>quae citra strepitum fit, copia et velocitate motus
+<lb/>tantummodo differens; etenim ut inspiratus aer acervatim
+<lb/>rursus respiraretur, multa undequaque tonsione thoraci
+<lb/>opus .fuit. At vero tensio ipsa tribus actibus .communis
+<lb/>existit; apertio vero superni meatus, propria L est
+<lb/>ipsi [efflatur. Itaque . nihil difficultatis esa, etiam. quum respirationem
+<lb/>cohibemus, undequaque premere thoracem,
+<lb/>ac fup ornum claudere -meatum lusi ita telum nedum . non
+<pb n="4.479"/>
+<lb/>obsistere, imo operationem trahentis cordis coadiuvare
+<lb/>poterit. Et aperte coarguitur falsum esse, quod Erasistratus
+<lb/>dixit, quod impossibile sit cor ex pulmone aerem
+<lb/>transumere circa respirationis cohibitionem. Licet enim
+<lb/>unicuique experimentum a se ipfo accipere ita, ut fexcenties
+<lb/>inspirationem faciat, plurimumque undequaque
+<lb/>thoracem premat, et nihil rurfus expiret; apparebit enim
+<lb/>nihilominus in ipfo cor quidem pulsare, suffocari autem
+<lb/>hominem, atque ideo magis ac citius, quo plus inspira^
+<lb/>vit; quod ipium etiam mediocriter indicat, non substantia,
+<lb/>sed qualitate spiritus cor opus habere. .. Si namque cor
+<lb/>substantia opus haberet, .magis utique ex penuria .ipsius,
+<lb/>quam ex abundantia nocumenta acciderent; atqui hoc
+<lb/>sierit non conspicitur, sed, quum maxime spiritu redundat;
+<lb/>tunc praecipue affligitur. Tertium insuper .non /vulgare .
+<lb/>signum est, quod, qui hoc modo suffocantur, per expirationem
+<lb/>sanantur; oportebat autem magis inspirationem
+<lb/>esse, quod fanaret; st- ob penuriam substantiae aeris Tuffocaremur.
+<pb n="4.480"/>
+<lb/>Tria sane haec manifeste confutant Erasistrati
+<lb/>fermonem; unum quidem ac primum, quod cor aerem
+<lb/>trahere potest circa respirationis cohibitiones, nihil enim
+<lb/>in hoc obstare visus est thorax; alterum autem secundum,
+<lb/>quod tunc magis suffocamur, quum plus suspiravimus ; et
+<lb/>tertium, quod neque tametsi valde vehementer thoracem
+<lb/>undequaque comprimimus circa respirationis cohibitiones,
+<lb/>aer a corde consumitur, sed expetit animal expirare, id
+<lb/>enim est suffocationis medela. Ex his quidem perspicue
+<lb/>consequitur, non ob inopiam substantiae aeris, sed propter
+<lb/>aliud quippiam animalia suffocari. Porro . ad reliquas
+<lb/>ex praedictis ambiguitatibus rursus transgredientes
+<lb/>considerabimus prius, qui dicant veriora: ac primum
+<lb/>sane eam tractabimus, quae est de motu arteriarum.
+<lb/>Equidem ii, qui contra Erasistrateos ambigunt, motam
+<lb/>arteriarum mutari oportere ajunt circa cohibitionis tempus,
+<lb/>sive Goncuti solum, sive etiam contrahi cor Puppenamussosi
+<pb n="4.481"/>
+<lb/>enim concutitur, omnino immobiles fieri opor-.
+<lb/>tet, quum nihil ab .ipfo accipiant; si vero distendatur
+<lb/>, ac contrahatur, duplum apparere oportet pullum. Cum
+<lb/>enim naturali modo habebat animal, ubi contrahebatur^
+<lb/>cor, spiritum in arterias mittebat, hae vero ubi implebantur,
+<lb/>distendebantur ; ubi vero distendebatur cor, ex
+<lb/>pulmone attrahebat, hae ver o .tunc, dum vacuantur; contrahuntur.
+<lb/>At vero circa cohibitionis tempus, ubi distenditur,
+<lb/>ab arteriis trahit, atque omnibus Pane manifestum
+<lb/>est, quod recurret spiritus, qui prius per ipsas ex cordos
+<lb/>fuit delatus; atque ita, si par fuerit priori, parem esiam
+<lb/>faciet distentionem arteriarum, si vero paucior, minorem
+<lb/>omnino faciet, quam antea, distensionem,. atque ipsam
+<lb/>nimirum circa id tempus faciet, quo prius contrahebantur;
+<lb/>id vero nihil aliud est, quam duplicari motus arteriarum.
+<lb/>i Atque hoc ita fieri non apparet: quare manifestum
+<lb/>est fassas esse suppositiones. . Amplius autem et
+<lb/>hoc interrogant, an nihil ex arteriis. evacuetur circa cobibitionis
+<pb n="4.482"/>
+<lb/>tempus. Antea equidem, cum secundum i naturam
+<lb/>animal spirabat, ipfe Erasiftratus omne id evacuari
+<lb/>opinatur, quod ad spias a corde est demissum ; manifestum
+<lb/>est autem, quod extra corpus excernebatur, vel quomodo-ὲ
+<lb/>cunque aliter evacuabatur. Nunc autem quid tandem
+<lb/>dicent? num per transtro quidem ita velociter ipfum per
+<lb/>arterias, velut etiam antea, non tamen vel minimum
+<lb/>ejus evacuari? Et quo modo possibile est simul quidem
+<lb/>evacuari, non tamen rurfus attrahi ex ambiente, quando
+<lb/>cor ab arteriis attrahit, ubi distenditur? Neque vero hoc
+<lb/>ipfum dicere licet. Atqui, si omnino possibile est, quum
+<lb/>cor distenditur, attrahi quicquam ab arteriis extrorfum,
+<lb/>ex superfluo thorax et pulmo sunt facti:. neque enim
+<lb/>hoc dici potest, quod minus traheret ex arteriis, quam
+<lb/>ex pulmone, quando incumbentibus etiam membranis nihil
+<lb/>.minus trahere potest- Manifesta autem fiunt ex pulL
+<lb/>sinum magnitudine; atque uni cui que patet, quod multo
+<lb/>magis traheret, si non in magnae arteriae ofculo membranae
+<pb n="4.483"/>
+<lb/>innatae : essent. In universum autem, si neque
+<lb/>cor ,. neque usia aliqua arteria spiritu^ in respirationis
+<lb/>cohibitione caret, id quod ex ipsorum distentionibus,
+<lb/>quae eandem,. ut prius, molem conservant, fit manisestum,
+<lb/>suffocatio tamen excipit evidenter, palam fit,
+<lb/>quod non inopia substantiae ipsius aeris animalia fuffocet.
+<lb/>. Patetque jam etiam Asclepiadis- opinionem una cubi
+<lb/>Erasistrati esse confutatam ; similiter item Praxagorae et
+<lb/>Philo limi, et. i si. quis i alius nutricationis folius ipsius
+<lb/>animalis^ spiritus^ gratias nos- respirare i dixit. Caeterum
+<lb/>rationabiliter et. ex praemeditato in sermone adfectum
+<lb/>est, solius. .Neque enim,: quod Impossibile siL nutriri animalem
+<lb/>spiritumLa respiratione, indicat hic formo, si^I
+<lb/>quod suffocatio respiratione cohibita, non propter nutrimeiIti
+<lb/>animalis spiritos defectum,. ipsis animalibus contingat
+<lb/>P adest enim. ipsis plurimus in pulmone- spiritus,
+<lb/>atque alias longius tempus requiritur ad hocsc ut animal
+<lb/>propter nutrientis spiritus inopiam pereat. At vero cuso
+<pb n="4.484"/>
+<lb/>Asolepiadae de anima sermonibus non tantum haec, sed
+<lb/>alia testam. alibi a nobis dicta pugnant: . demonstratum
+<lb/>enim illis est, quod animae substantia, etiam si una sit,
+<lb/>per omnem tamen vitam ad multum tempus dureL At
+<lb/>juxta; Asclepiadem neque- numerare possibile est, quot
+<lb/>substantias habeat, siquidem sime, quae paulo ante erat,
+<lb/>nunc penitus periit, .alia .autem nunc est, paulo post et
+<lb/>ipsia interitura, generabitur vero rursus altera; quod imppssibile
+<lb/>et absurdum esse, iHic clare a me est demonstratam.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Ad quaestionem igitur, an ipsius aeris
+<lb/>substantiae, an ali cujus qualitatis inopia animalia, quae
+<lb/>suffocantur, moriantur ,. jam responsum, ac evidenter indicatum,
+<lb/>est,. alterum impossibile esse.; relinquitur itaque
+<lb/>plterum, nimirum ob penuriam qualitatis, alicujus animalia
+<lb/>in respirationis cohibitione . suffocari. Quae sit igitur
+<lb/>ista, qualitas, inquirendum venit. Quandoquidem igitur,
+<lb/>ut amplior, quam secundum usturam,. caliditas in locis
+<lb/>circa cor et thoracem fuerit congestas (quemadmodum
+<lb/>in aestuosis omnibus contingit morbis,) statim et amplius
+<pb n="4.485"/>
+<lb/>solito respirare appetimus, videri possit utique refrigera^
+<lb/>tionis gratia respiratio fieri. Verum rursus, si peririgeratis
+<lb/>iisdem organis (quemadmodum in dicto -bulimo,
+<lb/>et ubi quis in magno frigore sit versatus, contingit) . non
+<lb/>solum non refrigerare eam, quae In nobis est p caliditatem
+<lb/>oportet, sied esiam calefacere, ut quae parum abest,
+<lb/>quin penitus sit perfurgerata, et tamen respirare appetimus,
+<lb/>videtur sane contrarium esse ei videlicet, quod.respiratio
+<lb/>refrigerationis gratia fiat. At vero aliqui contra
+<lb/>instantes refrigeratione semper opus habere ajunt insitam
+<lb/>animantibus caliditatem,. verum, quum aucta ea sit, assipliore,
+<lb/>pauciore vero, cum debilior sit facta; atque ejusmodi
+<lb/>affectiones non solum non contrarias huic dogmati
+<lb/>esse ajunt, verum et testimonium praebere opinantur.
+<lb/>Arduum igitur hoc primum est et difficile judicatu,
+<lb/>quum ab iisdem apparentibus subcontrarias indicationes
+<lb/>habeant. Neutros enim possibile est a sententia sina avocare ;
+<lb/>illos quidem, quod refrigeratio est utilitas respiratinnis,
+<lb/>siquidem, calefactis respirandi organis, magis .conlucto
+<lb/>respirare appetimus, refrigeratis vero, vice versa
+<pb n="4.486"/>
+<lb/>minus inspiramus; hos autem, quod nequaquam hornus
+<lb/>gratia refrigeratione opus habemus. Quum dicit igitur
+<lb/>Hippocrates (inquiunt) in libro praenotionem, Spiritus
+<lb/>frigidus ex naribus atque .ore exhalans perniciosus jam
+<lb/>valde exestit, ejusmodi affectionem animo concipere quis
+<lb/>potest, qualis aliquando contingit: reperiet autem (ut
+<lb/>opinor) talem, ubi multum perscigerata sunt respirationis
+<lb/>organa, factam. Oportebat igitm (inquiunt) neque in
+<lb/>tofum respirare hoc modo affectos, utpote qui, quod .restigeratione
+<lb/>indiget, non habeant. Quemadmodum enim,
+<lb/>si neque omnino a principio statim. quicquam factum fuisse
+<lb/>set, quod refrigeratione indigeret, nulia fuisset respirandi
+<lb/>utilitas, ita etiam, si prius erat, nunc vero periit, non
+<lb/>indigebimus. Ad haec porro inquiunt, quod motus per
+<lb/>respirationem ventilando accendat. Id .ipsum vero non
+<lb/>idem esse cum priori, non longa dissertatione mihi egere
+<lb/>videtur: prius enim dicebant refrigerari, nunc vero accendi ;
+<lb/>contraria autem utique sunt refrigerari et accendi ;
+<lb/>alterum enim extinguit, alterum accendit caliditatem ;. et
+<pb n="4.487"/>
+<lb/>.alteri, ut ne .uratur, quod ipsum suscipit corpus; contiagit,
+<lb/>alterum; .pe perfrigescat idem; facit; nisi sane per
+<lb/>accidens frigidum accendere dicant ;, ita vero non respirationis
+<lb/>utilitatem, sied efficientem causam dicerent. Praestat
+<lb/>igitur ad id, quod commune habent hae sectae,. transire,
+<lb/>atque illud prius perscrutari. Periculum enim est
+<lb/>.omnes, quicunque de insito calore aliquid dixerunt, de
+<lb/>ipso conservando somniare, non posse anteus exacte et
+<lb/>articulate sententiam Tuam exprimere; atque ob id, opinor,
+<lb/>alii refrigerationem, alii ventilationem, alii corroLevationem.
+<lb/>scribunt. Maxime vero puto ipsos ad haec
+<lb/>impelli per ea, quae circa. flammas apparent; has enim
+<lb/>manifeste videmus ita cito perire, quum aere privatae
+<lb/>fuerint, veluti animantia; quemadmodum indicant medicinales
+<lb/>cucurbitae, et omnia, quae angusta et cava cinxi
+<lb/>cumposita ac p exspirationem prohibentia facile ipsius extinguunL
+<lb/>Si itaque repertum sit, quid tandem flammae
+<lb/>in hujusmodi dispositionibus patientes extinguantur, forte
+<pb n="4.488"/>
+<lb/>esiam inveniri possit, quidnam sit, quo ut utili a respiratione
+<lb/>calor animantibus insitus fruatur. Ad ipsius
+<lb/>autem inventionem omnes modos percurremus, per quos
+<lb/>flammae videntur extingui et augeri. Non solum enim
+<lb/>si calcem quis ipsis circumponat, sed et balneis, et stolis
+<lb/>ardoribus, et excellentibus frigoribus, et vehementer ventilatae,
+<lb/>et multitudine materiae super ipsas coacervatae;
+<lb/>et contra inopia alimenti videntur extingui, Augentur
+<lb/>autem ac roborantur e moderato frigore, et si moderate
+<lb/>ventiles, et commoderato abundent alimento. Praeter haec
+<lb/>vero etiam illud insuper addatur, quod omnes flammae
+<lb/>duplici motu moveri videntur, altero a materia, ex qua
+<lb/>accenduntur, per quem, maxime sursum feruntur, et undequaque
+<lb/>disperguntur, altero vero huic contrario ad sui
+<lb/>ipsarum principium ac velut radicem vergente, per quem
+<lb/>considunt et contrahuntur. Etenim, si facis maximae
+<lb/>supernam extremitatem accenderis, confestim ad infernam
+<lb/>perveniet ignis; et si,, postquam lucernae flammam exfinxeris,
+<pb n="4.489"/>
+<lb/>ad extremum favisse siae fuliginis^ sursum vergentis
+<lb/>alium ignem admoveris, jam rursus ardentem lucernae
+<lb/>funiculum videbis, quum nihil tale fieri possit, si ignis
+<lb/>motum sursum tantum haberet. Ultra haec vero omnia
+<lb/>evidenter apparentia esiam . ratione perscrutabimur primum
+<lb/>quidem, quod postremum omnium relatum est, a
+<lb/>qua necessitate duplex motus fiat, postea vero alia .singula
+<lb/>deinceps. Quandoquidem igitur omnis flamma velocissimam
+<lb/>habet corruptionem si semper enim in ambientem
+<lb/>dispergitur, ob id necessarium est esiam generationem
+<lb/>eius volocissimam esse, alias enim neque minimo momento
+<lb/>duraret: atqui generatio uniuscuiusque flammae est, ex
+<lb/>subiecta materia accendi. Merito igitur non solum extra
+<lb/>a proprio principio^ sed et contrarium ipsi in proprium
+<lb/>principium vergentem motum sibi a natura insitum habet.
+<lb/>Itaque et corrumpi omnem flammam necessarium est, si
+<lb/>aut materia, aut altero motu sit privata^ Ut enim in
+<lb/>universum dicam (velut saepe etiam in aliis lucis demonstratum
+<pb n="4.490"/>
+<lb/>est), ex molibus contrariis, quorum alter alterum
+<lb/>mutuo excipit et consequitur, alterum sine altero confervari
+<lb/>impossibile est. Ob id igitur. moderate frigido
+<lb/>ambiente aere omnis flamma opus habet; qui enim excellenter
+<lb/>calidus est, motum alterum ipsius immodice
+<lb/>extra . extendendo, frigidus vero alterum immoderate Intra
+<lb/>profundendo extinguit uterque. Nam immodice ventilari
+<lb/>flammam ad materiam reprimit., velut esiam. frigidus
+<lb/>ambiens facit; stupra modum vero. moveri flammam
+<lb/>dispergit, velut esiam calidus facit. Caeterum eX lis,
+<lb/>quae motum immodice intra cohibent, est et cucurbita,
+<lb/>et quicquid aerem eorum, quae ab interna flamma comhusta
+<lb/>sunt, prohibet ab externi frigoris contactu: at vero
+<lb/>commoderatio omnium conservatrix est flammarum.
+<lb/>Eodem igitur modo non dissimile est contingere et circa
+<lb/>insitum animantibus calorem, utpote qui materiam, unde
+<lb/>accenditur, sanguinem habet, a natura item insitum principium
+<lb/>motus in utramque partem, ita ut altero privatus
+<lb/>esiam reliquo ex necessitate privetur: et ob id ipfum,
+<pb n="4.491"/>
+<lb/>sive a respiratione prohibeas, sive sanguine, statim corrumpitur,
+<lb/>nam et lucernae flammam tolles suffocando^
+<lb/>aut omnino oleo privando. Simile itaque ponito cor
+<lb/>funiculo, oleo sanguinem, organo pulmonem; circumsitos
+<lb/>namque est forinsecus cordi ad cucurbitae similitudinem^
+<lb/>Verum, .quo tempore respirat animal, assimila veris ipfum
+<lb/>potius cucurbitae perforatae, ubi vero respiratio cohibetur,
+<lb/>imperforatae et undequaque conclusae. Quemadmodum
+<lb/>itaque cucurbita perforata flammam inter se extinguere
+<lb/>non potest per foramen respirantem, quae vero
+<lb/>contra couclufa est, e vestigio suffocando eam extinguit,
+<lb/>ad eundem modum pulmo constrictus, velut in resipiratione
+<lb/>cohibita est, extinguit, perforatus et rarus, qualis
+<lb/>circa respirationem est, insitum calorem conservat. Ego
+<lb/>vero esiam quum fornacem viderem ob id, quod refpiralionem
+<lb/>non haberet, extingui, et postea ipsam aperiri^
+<lb/>atque tum multam fuliginem expirare, . tum multum
+<lb/>purum aerem externum inspirare, atque utroque facio
+<pb n="4.492"/>
+<lb/>flammam splendorem recipere, non parvam .esse ratiocinatus
+<lb/>sum expirationis utilitatem ad hoc, ut id, quod
+<lb/>veluti fuligo sanguinis est, evacuetur. Favilla enim et
+<lb/>fumus et fuligo et omnis huiusmodi ustae materiae
+<lb/>superfluitas nihilo minus, quam aqua, ignem extinguere
+<lb/>confueviI. Quare ex omnibus potissimum recipiendi funsi
+<lb/>qui dicunt, insiti caloris gratia animalia respirare. Nam
+<lb/>et moderate ventilari utile est, et mediocriter refrigerari,
+<lb/>Ambo enim haec internam caliditatem videntur corrosiorare ;
+<lb/>necessariunique est motum habere ad fuliginofum,
+<lb/>ut ita loquar, extra evacuandum, quod a sanguinis
+<lb/>adustione redundat. Haec quidem scientificam persuasionem
+<lb/>non habent, neque necessariam demonstrationem,
+<lb/>qualem in aliis semper adducere in ufu haberemus; non
+<lb/>tamen fide omnino carent; velocitas enim interitus animalis
+<lb/>talem caulam desiderat; quum alimentum quidem,
+<lb/>quod ii, qui nutritionis^ ipsius animae gratia respirare
+<lb/>nos dicunt, causantur, longiore tempore opus habeat;
+<lb/>generatio vero animae, quam Asclepiades causant tradidit,
+<pb n="4.493"/>
+<lb/>consentiat quidem velocitati^ pugnet r vero cum aliis infinitis,
+<lb/>et cum iis,. quae in principio dicta: sunt. .huius
+<lb/>tractationis, et generatim cum omnibus sectis, quae ob
+<lb/>inopiam aeris perire animalia putant respiratione privata.
+<lb/>Si igitur velocitas interitus animalis propter alimenti
+<lb/>substantiae ipsius animae defectum fieri non potest,
+<lb/>propter generationem autem ipsius . fieri possibile. est ; sed
+<lb/>per fassas hypothefes, innati vero caloris perditio nihil
+<lb/>habeat, quod ei opponere Te videatur, rationi utique
+<lb/>magis consentaneum est, ut aliis dimissis hanc recfe
+<lb/>piamus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Rursus igitur eam repetentes omnem explorabimus,
+<lb/>quandoquidem aliis verior apparet. seaque .
+<lb/>ex ventilatione principii ipsius insiti caloris, et ex moderata
+<lb/>refrigeratione, et ex ejus, quod in ipso velut fumotum
+<lb/>est,. in totum defluxione, summa colligitur una, conservatio
+<lb/>videlicet caloris naturalis. In haec igitur principia
+<lb/>videamus an possibile sit omnia reducere parlicularia;
+<lb/>ac primum in manus fundamus id, quod circa basu
+<pb n="4.494"/>
+<lb/>nea contingere videmus, in quibus diutius versantes exolvimur,
+<lb/>ac tandem etiam morimur., Si enim propterea,^
+<lb/>quod calidum respirando attrahimus, id contingit, opor-tebat,
+<lb/>inquiunt, etiam eos, qui super. lebetem aquae casidae
+<lb/>consistunt, deinde progredientem inde vaporem respirando
+<lb/>hauriunt, eandem iniuriam .perpeti ; et tamen <hi rend="u">hi</hi>
+<lb/>minime videntur laedi. Ex quo conspicuum est, quod
+<lb/>non propter caliditatem respirando attractam; t sed propter
+<lb/>spiritus ex toto corpore evacuationem in balucis exolvantur.
+<lb/>Quomodo igitur et hanc ambiguitatem dissolvemus? .Si
+<lb/>utique hoc coniunctum verum esse dicemus, quod suffocari
+<lb/>eos, qui ex .lebetes vaporem inspirant, oporteat, siquidem
+<lb/>omnino. refrigerationis gratia .respirarent;, non tamen
+<lb/>hoc eorum assumptum concedamus scilicet. Atqui, non
+<lb/>suffocantur; suffocantur enim non minus, qui ex lebete
+<lb/>vaporem respirando hauriunt, quam qui in balucis. Si vero.
+<lb/>etiam non suffocarentur, nihil fortassis miri .esset ; perispiratio
+<lb/>namque per universum corpus similiter, : ut ea,
+<lb/>quae per os fit, in balneis offenditur... Non sunt,autem eadem
+<pb n="4.495"/>
+<lb/>per os tantum male respirare .et tum per os tum per totam
+<lb/>corpus idem facere. Eius rei potissima demonstratio in multis,
+<lb/>aegris contingit, qui per totum diem iudica torie exudant,
+<lb/>atque id multo sm agis, quam qui in balneis, non tamen
+<lb/>exolvuntur similiter, ut illi, neque omnino suffocantur, quousque
+<lb/>externum frigidum aerem spirando attraxerint^
+<lb/>Quod si ipsus palliis contectos calidum aliquid respirando
+<lb/>haurire coegeris, confestim suffocaris; atqui, si perfrigeratos
+<lb/>et rigentes . ita . contegas., non Tofum non su.ssoces,
+<lb/>sed neque omnino laedas, donec fuerint excussae ti, nam
+<lb/>tunc non amplius sustinent, veluti non consuetum. Ex
+<lb/>quibus omnibus conspicuum est, quod non ob evacuatum
+<lb/>ex toto corpore in balneis spiritum exolvamur ac vitam
+<lb/>finiamus, sed propter caliditatem. Admirari porro Tussit .
+<lb/>non tam alios, quam Erasistratum, qui tam evidenter apparentia
+<lb/>vanitatis coarguere audet; quem non verisimile
+<lb/>esu inexpertum esse doliaris vaporanti hydropicorum,
+<lb/>quod non minus ali aliis veteribus quam a Qhrysippo
+<pb n="4.496"/>
+<lb/>Cnidio est laudatum. Evacuantur enim hi toto corpore
+<lb/>multo citius et amplius, quam in balucis ; non tamen fuffucantur
+<lb/>, propterea quod frigidum aerem inspirant, quo
+<lb/>fi quis ipsos privet, brevi moriuntur. Quomodo igitur,
+<lb/>inquiunt, in graueolentibus specubus, et recens calce oblitis
+<lb/>domibus,^ et ab extincturum prunarum foetore fossocamur?
+<lb/>luxta Erasistratum quidem, quia tenuis in eiusmodi
+<lb/>constitutionibus existens aer ab arteriis non recipitur,
+<lb/>nec continetur, sied facile evacuatur, et ob luopiam
+<lb/>spiritus animal peri I. Nos autem dicimus, quod
+<lb/>nihil fuerit, utpote quum Erasistratus nihil tale demonstraverit,
+<lb/>quod aut tenuem in talibus redderet aerem, aut
+<lb/>ut ne ab animantium corporibus recipi ac contineri polfet :
+<lb/>nisi forte vera causa alia sit, aut difficilis extet in-t
+<lb/>ventu. Ad praedicta igitur longius sermonem extendere
+<lb/>cogimur; conabor tamen pro viribus in compendium
+<lb/>omnia contrahere; si vero nihil habeam, quod dicam,
+<lb/>Recisis multis contradictionibus id apparere assero, motas
+<lb/>videlicet arteriarum in eiusmodi. dispositionibus . neque
+<pb n="4.497"/>
+<lb/>magnitudine neque tempore prioribus inferiores esse, utpote
+<lb/>quae plenae spiritu, qui per ipsas fertur, existant;
+<lb/>oportebat autem in eis non fotum velociorem aut minorem
+<lb/>pulsum apparere, sed eas etiam omnino pulsu privari,
+<lb/>utpote aere ipsarum ventriculos opplente penitus
+<lb/>privatas. At vero, si Erasistrati (inquiunt) causam rejicis,
+<lb/>alteram nobis profer. Proferam autem, si prius
+<lb/>vos dixeritis mihi, ob quam causam marini piscatores ex
+<lb/>torpedinis contactu torporem incurrant. Si vero <hi rend="u">nihil</hi>
+<lb/>habetis, quod di calis, hoc tamen nobis referre permittatis,
+<lb/>nempe vim esse hujus animantis stupefactoriam eornm,
+<lb/>quae contingunt, adeo fortem, ut etiam per infixum
+<lb/>ipsi tridentem ad manus piscatorum perfacile vitium
+<lb/>accurrat. Itaque concedetis, piscium quasdam esse qualitates
+<lb/>ac vires, quarum aliae torporem, aliae altiorem
+<lb/>soporem, aliae frigiditatem, aliae putrefactionem, aliae
+<lb/>aliud quoddam malum inferant, aeris autem nullam talem
+<lb/>vim esse permittetis? Verum non habemus (aiunt)
+<pb n="4.498"/>
+<lb/>evidentem demonstrationem, quaenam qualitas diaec sit;
+<lb/>et quae tandem vis. Quid igitur hoc ad praesentia? per
+<lb/>obscura enim nihil rite neque evertitur, neque confirmatur.
+<lb/>Transeamus itaque a talibus ad confirmationem
+<lb/>evidentem, usiam tandem sectam evertere queamus. Quae
+<lb/>quidem igitur necessario Erasistrati opinionem evertunt,
+<lb/>statim a principio nobis relata. sunt; quae vero nostram
+<lb/>confirmant, talia quidem non invenimus, ut necessario
+<lb/>concludant, attamen. omnium aliorum maxime credibilia
+<lb/>sunt; stupra hoc, quod a Rusio penitas eorum, quae palam
+<lb/>apparent, haec opinio nostra evertatur. Quare Era-.
+<lb/>sistrati de respirationis utilitate opinionem hic iam relinvj.
+<lb/>quere justum est, quandoquidem et in libris de pulsibus
+<lb/>multipliciter erroris est convicta ; ipsi vero etiam reliquo-:
+<lb/>rum apparentium causas ad praesentem suppositionem
+<lb/>conducentes brevibus percurremus. Velut est, quod in.
+<lb/>exercitationibus amplius et frequentius respiramus; Rev
+<lb/>que. enim dissimile vero est, etiam ob calorem ex vehe-i
+<pb n="4.499"/>
+<lb/>menti. motu auctum fieri; quod enim neque hic propter
+<lb/>arteriarum expletionem respiramus, manifestum est ex eo,
+<lb/>quod a principio . statim. saepe vehementer contingat, non
+<lb/>tamen respiratio mutetur prius, quam multum calefiamus;
+<lb/>ubi vero excalfacti fumus, etiamsi ad multum tempus
+<lb/>a motu quiescimus; tamen eandem respirationis speciem
+<lb/>conservari videmus. Quin et in aestuosis febribus
+<lb/>simililiter respirare appetimus ob eandem causam. Ubi
+<lb/>enim maximum fuerit, quod utilitate indigebit, hic etiam
+<lb/>non absonum est ipsam utilitatem multum augeri, major
+<lb/>namque flamma ampliori aere, minor pauciore opus habeh.
+<lb/>Omnis vero flamma ip.su indiget ob eam, quam
+<lb/>prius dixi ,. necessitatem. Nequaquam igitur mirum est,
+<lb/>si loci circa cor et .pulmonem perfrigerati externum
+<lb/>aerem desiderant, i ndigentque . ejus . per inspirationem attractione;
+<lb/>attrahunt enim, sed parum et per multum
+<lb/>tempus, valde, namque et crebro non expedit parvam
+<lb/>caliditatem ventilare. Propter quid igitur pueri quidem
+<pb n="4.500"/>
+<lb/>plus et frequentius, puberes vero minus et rarius refpirant^
+<lb/>Num quod, qui l crescunt, plurimum habent insiti
+<lb/>caloris, necessario autem sequitur ad multitudinem
+<lb/>caloris- magnitudo et frequentia respirationis ? Si vero
+<lb/>animalis spiritus a respiratione etiam nutritur, esiam
+<lb/>ob -id plurimum et frequentissime pueri respirant, quod
+<lb/>nutrimento ampliore, ut qui crescant, opus habent. Si
+<lb/>vero etiam fuliginosum plurimum in respiratione diffunditur
+<lb/>, etiam ob id plurimum et frequentissime respirant;
+<lb/>ubi enim amplius alimentum conficitur., : ibi etiam amplius
+<lb/>excrementum. Quibus itaque pueri calidiores adolefcenthbus
+<lb/>esse videntur, hi talem referent causam crebrioris
+<lb/>ipsorum respirationis. Quibus autem adolescentes
+<lb/>calidiores- pueris videntur, hi praedictam causam non admittente
+<lb/>s Atqui de senibus nemo dubitat, quin sint multo
+<lb/>tum pueris tum adolescentibus frigidiores; testimonium
+<lb/>autem fIigiditati praebet ipfa respirationis species,
+<lb/>quae in eis minor fit et rarior. Consimilia porro iis,
+<lb/>quae in aetatibus apparent, in temporibus et regionibus
+<pb n="4.501"/>
+<lb/>ac naturis contingunt. - Testimoniumque praebet calidis
+<lb/>semper respiratio major et densior, frigidis Illi-.
+<lb/>nor et rariori Parum etiam et frequenter: Mrespirant,
+<lb/>qui cibum acceperunt ac biberunt, ob septi transversi
+<lb/>coarctationem. Sic et praegnantes: in aqua etiam
+<lb/>inter cutem, et. in hepalis inflammationibus, su alventriculique
+<lb/>ac fplenis consimiliter respirant propter eandem
+<lb/>caufam. Caeterum de propria horum respiratione in liluis
+<lb/>de spirandi difficultate dicetur. Nunc satis est, ut
+<lb/>hoc rurfus demonstretur, nempe omnia manifeste apparentia
+<lb/>praedicto dogmati nostro, de usta videlicet refpirationis,
+<lb/>testimonium praebere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Videamus autem deinceps, an animalis spi.ritus
+<lb/>a respiratione nutriri possit. Dicamus autem prius,
+<lb/>quomodo quid animalem spiritum vocemus, quum  substantiam
+<lb/>animae nos ignorare simus . confessi. Quoniam
+<lb/>igitur ventriculi spiritus in terebro, quum vulnerantur,
+<lb/>statim immobiles ac sensus expertes nos reddunt, oportet
+<lb/>i utique omnino hunc spiritum aut ipsam animae
+</p>
+<pb n="4.502"/>
+<p/>
+<p>substantiam esse, aut primum utique ipsius organumi
+<lb/>Dictum vero alibi de ipsis fusius et diligentius, ubi etiam
+<lb/>hoc statim dictum est, quod necessarium est hunc spiritum
+<lb/>nutriri. Unde igitur (inquiunt) aliunde alimentum habebit^
+<lb/>quam ab aere per inspirationem attracto? Atqui ex
+<lb/>sanguinis exhalatione haud incongruum est ipsum nutriri,
+<lb/>quemadmodum multis celebribus tum medicis tum philofophis
+<lb/>est visum. Verum qui ErasistratuIn sectantur,
+<lb/>non eodem modo, quo qui Hippocratem, ex inspiratione
+<lb/>animalem spiritum nutriri tradunt. lllis enim ex corde
+<lb/>per arterias ad cerebri membranas, his vero statim per
+<lb/>nares in cerebri ventriculos pervenire fpirituS videtur.
+<lb/>Erasistrati quidem de his opinionem etiam hic relinquemus,
+<lb/>multiformiter a nobis in libris de pulsuum causis
+<lb/>convictam. Ad veram autem transgredientes considerabimus
+<lb/>hoc, quod palam apparet, cujus jam saepe experimentum
+<lb/>fecimus. Quum enim arteriae colli laqueis. constringuntur,
+<pb n="4.503"/>
+<lb/>nihil patitur animal neque statim neque
+<lb/>postea, quemadmodum nos aliquando experiundi gratia
+<lb/>illas laqueis constrinximus, atque totum diem animal
+<lb/>inspirare et expirare ac moveri citra impedimentum
+<lb/>visum ad profundam jam noctem mactavimus, ut qui
+<lb/>putaremus, tam diutinam experientiam non amplius fidelem
+<lb/>ac tutam esse; posse enim in tanto temporis spatio,
+<lb/>quo laquei circumnexa fuerant, aliquod ex principalibus
+<lb/>membris per consensum laesum esse. Admirabamur igitur,
+<lb/>quum reperiremus arterias ex principalissimis vitalibus
+<lb/>organis, ipso videlicet corde, ad principalissima animalia
+<lb/>organa, ipsum videlicet cerebrum, protensas ita citra
+<lb/>omnem vitae offensam iniuriam eam tolerantes. Sed de
+<lb/>his etiam in libro de usu pulsuum amplius quaeremus.
+<lb/>Quod vero ex eis ad praesens utile existit, cujusque
+<lb/>gratia carotidum arteriarum circa colium mensionem feci,
+<lb/>id ipsimI rursus dicetur, nempe, quod cerebrum spiritu a
+<lb/>corde allato non valde habet opus. Reliquum est igitur;
+<pb n="4.504"/>
+<lb/>aut exhalationem ex sanguine ipsi sufficientem esse aut
+<lb/>per nares inspirationem. Atqui nec exhalationem largam
+<lb/>contingere verisimile est, si arteriae laqueo sunt confluictae ;
+<lb/>quod ipsum etiam in libro de usu pulsuum demonstratur.
+<lb/>Necessarium igitur est ex inspiratione per nares
+<lb/>potissimam alimenti partem animali spiritui accedere. Atque
+<lb/>hoc est, quod ab Hippocrate dicitur: Principium
+<lb/>alimentis spiritus os, nares, arteria aspera, pulmo, et
+<lb/>alia respiratio. Ex omnibus enim his nutritur nullatenus
+<lb/>impeditus. Si vero esiam impediatur unum quodcumque
+<lb/>tandem ex ipsis, attamen per reliqua alimentum
+<lb/>ei suggeritur. Discere autem ex apparenti, de quo dicturi
+<lb/>stumus, evidenter licet de spiritus ex pulmone in
+<lb/>arterias totius corporis tranfumptione, quod aut modice
+<lb/>omnino., aut neque omnino contingit. Quum enim aliquando
+<lb/>ad os ac nares pueri magnam vesicam bubulam,
+<lb/>aut aliud quoddam vasculum, ut nulia parte quicquam
+<lb/>ex respiratione per totum diem praeterspiraret, apposuitfemus,
+<pb n="4.505"/>
+<lb/>vidimus citra obstaculum puerum spirantem: ex
+<lb/>quo manifestum est, quod parum aut penitus nihil arteriae
+<lb/>animalis extrinlecarum qualitatum necessitate urgenitur,
+<lb/>et maxime caloris. Etenim frigidior spiritus non.
+<lb/>similiter penitus pertransire potest. Oportet autem prompte
+<lb/>per omnia organa animae fpiritum transire. At vero
+<lb/>calidior penitus quidem penetrat, verum primum et
+<lb/>exurit, et colliquat corpus, postremum vero etiam ipfie
+<lb/>extinguitur et peri L Et in apoplexiis quidem frigidior
+<lb/>est, in febribus vero calidior moderato redditur. In
+<lb/>apoplexiis itaque retinetur, ut non facile penitus pertransire
+<lb/>possit, et ob id fano in motus privationem desis
+<lb/>nit affectus. In febribus vero penetrare quidem penitus
+<lb/>potest, verum exurere ad similitudinem ignis, non vero
+<lb/>nutrire aut augere corpora valet. Ne igitur parvam esse
+<lb/>putemus animalibus moderati caloris utilitatem, verum
+<lb/>maxime necessariam, praesertim spiritui animali et
+<lb/>principalissimis organis, iam vero . et universe corpori
+<pb n="4.506"/>
+<lb/>dure igitur principium naturalis caloris, ipsum videlicet
+<lb/>cor, respiratione tantum egens habemus, quantum etiam ipsi
+<lb/>moderato calore indigemus. Demonstratum enim est, impossibile
+<lb/>esse salvum esse calorem citra respirationem. Inspirabile
+<lb/>namque et expirabile est totum corpus iuxta Hippocratis
+<lb/>sententiam; verum et nos alibi demonstravimus.
+<lb/>Moderata autem . respiratio omnibus aliis par tinus per arterias
+<lb/>contingit:. Cerebro vero et cordi duo praecipua
+<lb/>adjacent respirationis organa, illi nares, huic pulmo. Caeterum.ut
+<lb/>pulmo moveretur, thorace. opus habuit; et prop
+<lb/>ter ea ut. corde quidem copulatus pulmo primum refpirani
+<lb/>organum existit, ut vero a thorace movetur, secundum.
+<lb/>. Si vero et sanguinis halitu ad nutritionem animalis
+<lb/>spiritus, indiget, (credibile enim et hoc ipsum. est,)
+<lb/>maximam habuerint sane. animalia et hanc a moderato
+<lb/>calore utilitatem. .Etenim frigidus^ sanguis quomodo in
+<lb/>.halitum solveretur?, immodice vero calidus .facile quidem
+<pb n="4.507"/>
+<lb/>in vapores dispergi potest su verum turbidos et fumosos;
+<lb/>talem vero minime esse convenit spiritum animalem, sed,
+<lb/>ut si quem alium, purissimum et optimum. Ob id igitur,
+<lb/>ubi sanguis melancholicus et biliofus in vitiofos vapores
+<lb/>solvuntur, alter ad melancholiam, alter ad phrenitin
+<lb/>perducit; proptereaque in aestuosis etiam febribus facile
+<lb/>delirant. Nam tametsi bonus tum sit sanguis, ob mullitudinem
+<lb/>tamen caloris fumofos vapores emittit. Fueritque
+<lb/>et hoc non exiguum a naturali calore emolumentum,
+<lb/>ut videlicet exhalatio moderata, pura et bona .stat. At
+<lb/>vero, si quis unamquamque partem ex propriis constitutionibus
+<lb/>agere supponat, neque sic parum profuerit moiteratus
+<lb/>calor ad constitutionis conservationem. .Siccum
+<lb/>equidem aut humidum. immodice -nullum membrum .in
+<lb/>pauco tempore . fieri poterit, frigidum autem extreme
+<lb/>aut calidum manifeste fieri possit:-. atqui uniufcujusque
+<lb/>membri . substantia frigidi et calidi., . et sicci et humidi
+<lb/>.quaedam temperies-existit,-uI.eamaCnulla alia rei ita cito
+<pb n="4.508"/>
+<lb/>corrumpi posse verisimile sit, velut a calore immoderato.
+<lb/>Quod si ita habet, etiam acsionem membrorum a .nullo
+<lb/>promptius laedi evidens exsilit. ln aliis quidem igitur
+<lb/>organis actionum laesio parvi momenti est; in his vero,
+<lb/>quae ad vitam pertinent, magni refert; in his postremum,
+<lb/>quae non solum ad vitam conducunt, sed etiam ad
+<lb/>alia rasionem principii habent, maximi; talia autem sunt
+<lb/>cerebrum et cor ; quare eorum constitutionis laesio e vestigio
+<lb/>vitae damnum infer I. .Atqui ipfam constitutionem nihil
+<lb/>promptius immutare valet, quam calor immoderatus. Itaque
+<lb/>ambo hoc sermone demonstrata sunt, tum utilitas commoderati
+<lb/>caloris, tum utilitas, quae ipsi per respirationem
+<lb/>accedit. Necessarium igitur jam, non credibile solum, sed
+<lb/>et verum nos invenisse, perspicue omnibus apparet. Et
+<lb/>summatim sane dicimus utilitatem respirationis esse innati
+<lb/>caloris conservationem. Licet autem, quamvis animae substantiam
+<lb/>ignoremus, .attamen ex divisione nihilominus raIiocinariy
+<lb/>iis, quae . evidenter apparent, in demonstrationis
+<pb n="4.509"/>
+<lb/>alsum assumptis, ex quorum numero et hoc est, spiritum,
+<lb/>qui in ventriculis cerebri continetur, alterum ex duobus
+<lb/>esse necessarium est, aut animae ipsus substantiam, autprimum
+<lb/>ejus organum. Sed si primum, cerebrum in se ipfo
+<lb/>animae substantiam habere necessarium est, et hanc infitum-
+<lb/>esse calorem, aut spiritum, aut totam ipsius constitutionis
+<lb/>speciem, aut si qua asta -praeter ipfam incorporea
+<lb/>facultas existit. Caeterum necessarium est hoc primum,
+<lb/>unum quoddam organum ex praediolis habere ad motum
+<lb/>subserviens, quum ipfa omnino pati non possit, et mortis
+<lb/>tempore instante per primorum ipsius organorum laesionem
+<lb/>solvatur. Quare sive constitutio cerebri offendatur,
+<lb/>sive simul qui in. eo est spiritus,- sive. calor solus, mors
+<lb/>ex necessitate animalibus contingit. Atqui nec conditutio
+<lb/>brevi aliter offendi potest, quam per calorem immoderatum,
+<lb/>quemadmodum est demonstratum; nec ipsa
+<lb/>esiam hic amplius ^adhuc calor; sed neque quod restat
+<lb/>adhuc tertium, spiritus videlicet ipse, occasionem aliquam
+<pb n="4.510"/>
+<lb/>habere potest alterius repentinae corruptionis praeter eas,
+<lb/>quae. antea sunt relatae, nimirum substantiae ipsius totius
+<lb/>evacuationem et immoderatum calorem. At vero in respirationis
+<lb/>cohibitionibus caufam assignare non possumus
+<lb/>ipsam vacuationem totius substantiae, quemadmodum. in
+<lb/>volucribus ventriculis cerebri- inflictis habemus. Ressnquitur
+<lb/>igitur, quod ob immoderatum calorem vita excedimus.
+<lb/>Atque haec quidem maxima est respirationis uti-litas.r
+<lb/>Secunda veru est animalis spiritus nutritio. .Prior
+<lb/>equidem per utrasque respirationis partes contingit., in-spirationem
+<lb/>videlicet. et expirationem, altera nimirum
+<lb/>refrigerante et ventilante, altera fuliginofum diffundente^
+<lb/>fecunda vero per inspirationem salum accidit. Quod igitur
+<lb/>aliqua aeris pars circa distentionem cordis in ipsum
+<lb/>cor attrahitur, ut expleat factam evacuationem, id ipsum
+<lb/>magnitudo distensionis ipsius sufficienter indicat. Quod
+<lb/>vero etiam ad cerebrum inspirator, in alio opere; est demonstratum
+<lb/>,, in quo de Hippocratis et Platonis dogmatibus
+<pb n="4.511"/>
+<lb/>disputamus. Porro, quum cor a pulmone aerem ad
+<lb/>se partim attrahat, partim que vicinis arteriis transmittat,
+<lb/>quam ob causam tamen aer, qui expiratur, nihilo paucior
+<lb/>appareat, quam is, qui per inspirationem attractus
+<lb/>est, dicetur quidem alio loco diffusius; nunc autem hoc
+<lb/>solum dicere sufficiet, quod vapor quidam omnino expiratur
+<lb/>par copia portioni spiritus in cor et arterias
+<lb/>transumptae. Qui vero sint corporis affectus, in quibus
+<lb/>paulo amplior, quam transumptus est, aut paucior, aut
+<lb/>par expiratur, in libris de difficultate spirationis dicetur.
+<lb/>Atque haec sane mihi de respirationis utilitate sufficere
+<lb/>videntur. Quae vero de ipsa ab aliquibus vitiose dicta
+<lb/>sunt, facile deprehendere poterunt, qui singula, quae hic
+<lb/>tradita sunt, non obiter nec tanquam aliud agentes perlegerint.
+<lb/></p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

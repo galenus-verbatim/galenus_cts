@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De propriorum animi cuiuslibet affectuum dignotione et curatione</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg028.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">5</biblScope>
+              <biblScope unit="pp" from="1" to="57">1-57</biblScope>
+              <date>1823</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x05">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="352" to="360">352-360</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x01">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">6</biblScope>
+              <biblScope unit="pp" from="519" to="536">519-536</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x06">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg0057.tlg028.verbatim-lat1">
+<pb n="5.1"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="5.1"/>
+<p/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>CALENI DE PROPRIORUM ANIMI CVIVSQVE
+<lb/>AFFECTUUM DIGNOTIONE ET
+<lb/>CURATIONE.</head>
+
+
+<p rend="indent">Quandoquidem per commentarios habere
+<lb/>vis ea, quae ad quaestionem respondi, quam apud me
+<lb/>constitueram super scripto ab Antonio Epicureo libro
+<lb/>de praesidio adversus proprios affectus, jam hoc aggrediar,
+<lb/>hocque duco exordium. optimum sane erat ipsum
+<lb/>Antonium, quid hoc nomine praesidii significare velit,
+<lb/>manifeste explicasse. Ut autem aliquis de quibus in libro
+<pb n="5.2"/>
+<lb/>disserit, coniecturam fecerit, vel observationem, vel
+<lb/>dignotionem, vel emendationem denique mihi significare
+<lb/>videtur. At eorum quae dixit multa, ut nosti, obscure
+<lb/>adeo interpretatur, ut coniicere facilius quam aperte ea
+<lb/>cbgnofcere liceat. Interdum namque hortari nos videbis
+<lb/>tur ,. ut, quod et ipsi plerumque perinde ac alii erramus,
+<lb/>consideremus, interdum autem, qua ratione quis singula,
+<lb/>equae delinquit, agnoscat, ad haec rursus, quo pacto quis
+<lb/>seipsum ab erratis abducat, qui totius orationis scopas
+<lb/>mihi esse videtur. Nam unumquodque eorum, quae prius
+<lb/>dicta sunt, nisi eo reseratur, inutile est et supervacaneum,
+<lb/>.quippe in praecipuis errorum affectibus erigere
+<lb/>seipsum ac emendare convenit. Etenim nonnunquam
+<lb/>quasi de solis affectibus ipsius oratio est ; plerumque vero
+<lb/>tanquam de erroribus; quandoque etiam de utrisque tibi
+<lb/>difputare videbitur; Ego vero idipfum primum, ut nosti,
+<lb/>prius distinxi, quum errores ex opinione falsa, affectum
+<lb/>ex bruta quadam, quae nobis inest, facultate rationi repugnante
+<pb n="5.3"/>
+<lb/>proficisci dicerem; communiter autem ambo generaliori
+<lb/>significatu vocatos esse errores. Itaque tum
+<lb/>eum, qui intemperanter vivit, tum qui iracundia quid
+<lb/>agit, tum qui calumniae fidem adhibet, errare aut peccare
+<lb/>dico. Quare Chrysippus et philosophorum plerique
+<lb/>alii libros de curandis animi affectibus conscrtpferunti
+<lb/>Quinetiam ah Aristotele eiusque sectatoribus, atque
+<lb/>ante hos a Platone eadem dicta sunt. Ac certe ex
+<lb/>illis ipsa discere, quemadmodum et ego didici, longe
+<lb/>praestiterat. Itaque primo hoc libro capita, quoniam ita
+<lb/>jubes, compendiose tibi recensebo omnia, quo jam orline
+<lb/>audivisti, quum de edito Antonii commentario percontareris.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Quod equidem errare nos sit vero simile,
+<lb/>etiamsi nequaquam aberrare ipsi putemus, ex lusce verbis
+<lb/>promptum est colligere., Videmus omnes homines
+<lb/>existimare, lete vel ab erroribus omnino esse - immunes,
+<lb/>vel parum et modice per rationem falli, idque his potissimum
+<pb n="5.4"/>
+<lb/>accidit, quos alii plurimum existimant aberrare.
+<lb/>Ego itaque, si alterius rei cuiusdam, certe hujus expeTimentum
+<lb/>habui maximum. Qui sane homines aliis permisemnt,
+<lb/>ut de se, qualesnam sint, ferrent sententiam,
+<lb/>eos in paucissimis errare conspexi. Qui vero seipsos
+<lb/>optimos esse -cogitarunt, neque judicium serendum aliis
+<lb/>commiserunt, eos in maximis ac plurimis falli conspeximus.
+<lb/>Quare, quod, quum junior essem, frustra laudari putabam,
+<lb/>(id autem erat Pythium illud, quod seipsum nosse
+<lb/>imperabat,) non enim magnum esse mandatum, postea
+<lb/>ipsum jure laudari comperi. Siquidem solus sapientissimus
+<lb/>perlecte seipsum noverit, aliorum autem omnium
+<lb/>perlecte nemo, verum minus magisque alter altero.
+<lb/>Quemadmodum enim in tota vita ac in singulis artibus
+<lb/>magnas rerum eminentias ac differentias cuiuscunque viri
+<lb/>est cognoscere, exiguas autem prudentium dumtaxat et
+<lb/>artificum, ita quoque in erroribus et affectibus habet.
+<lb/>Nam quisquis ob minima vehementer excandescit, servos
+<pb n="5.5"/>
+<lb/>domesticos et mordet et vituperat, in affectu tibi conflitutum
+<lb/>hunc esse constat. Similiter autem quisquis in-.
+<lb/>tar temulentos, scorta et comessatdres versatur. Verum
+<lb/>ob ingentem facultatum jacturam vel infamiam mediocriter
+<lb/>animum esse perturbatum ex quo affectuum genere
+<lb/>sit, nondum peraeque manifestum est, ut neque placentam
+<lb/>avidius exedere.. Sed et haec ei innotescent, qui
+<lb/>animum exercuerit et explorarit, quinam inter universus
+<lb/>affectus emendationem desiderent, magis tamen arduum,
+<lb/>ipsa . evitare, quod parva sint. Quisquis igitur honestus
+<lb/>probusque vult evadere, hoc animadverterit necessario,
+<lb/>ipsum plerosque errores proprios ignorare. At omnes ut
+<lb/>deprehendat, possum ego dicere; quo pacto ipse deprehenderim,
+<lb/>nondum aperio, quod hic libellus in aliorum
+<lb/>manus aliquando venise queat, quomodo illi quoque ad
+<lb/>cognitionis errorum viam indagandam fele exerceant,
+<lb/>quemadmodum etiam te mihi dicere volui, et quoad tot
+<lb/>tibi videri pronunciasses, conticui. Et nunc sic agam,
+<pb n="5.6"/>
+<lb/>adhortatus fibri hujus lectorem, .ut, quo modo quis errantem
+<lb/>sese .possit agnoscere,. inquirendum sibi proponat.
+<lb/>Rinas enim manticas, ut Aesopus ajebat, habemus collo
+<lb/>propendentes, alienorum vitiorum anteriorem, propriorum
+<lb/>vero posteriorem; ob id aliena semper spectamus, -propria
+<lb/>vero nunquam intueri postumus.. Atque hanc .ora.tionem
+<lb/>ut veram omnes recipiunt. Plato rei factae.</p>
+<p>causam etiam reddit. Caecutit, [inquit, amans circa id,.
+<lb/>quod amatur. Ergo si quisquam nosti.unr semet prae
+<lb/>caeteris maxime amet,. in censura sui ipse caecutiat necesse
+<lb/>esu Quonam igitur pacto propria vitia conspiciet?
+<lb/>Qua ratione se errare cognoscet? Nam et Aesopi fabula
+<lb/>- et Platonis oratio propriorum errorum inventionem nobis
+<lb/>magis- insperatam demonstrare videntur. Si enim
+<lb/>neque quis facere possit, quin seipsum amet, amans in
+<lb/>amato caecutiat necesse esu Sed nec ego. commentarii
+<lb/>hujus lectorem apud te enatorum propriorum inventiouls
+<pb n="5.7"/>
+<lb/>viam considerare vellem, nili res foret perardua,
+<lb/>etiamsi quamplurimum quis ea apud se perpenderit. Proinde
+<lb/>meam ego profero sententiam ; quam quidem, et siquam
+<lb/>is quisque alsam riam invenerit, meam quoque
+<lb/>assumpserit, juvabitur impensius, duplicem pro simplici
+<lb/>salutis viam consequntus. Sin autem, saltem hac nostra
+<lb/>continuo utatur, donec aliam reperiat meliorem. Quae
+<lb/>igitur mea sit, dicendi. jam tempus est, hocce condito
+<lb/>orationi exordio.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Quonlam errores ob falsam opinionem
+<lb/>oriuntur, affectus autem ob brutum animi impetum, visum
+<lb/>milii est prius ipsum ut, affectibus liberare. Consentaneum
+<lb/>enim propter hos falsum nos opinari. Sunt autem
+<lb/>affectus- animi, quos omnes norunt, iracundia, ira,
+<lb/>metus, moeror, invidia, et .vehemens cupiditas. Mea .
+<lb/>quidem sententia quamcunque rem amore vehementi
+<lb/>aut odio prosequi etiam affectus est. Recte enim dicium
+<lb/>esse videtur, moderatum optimum, adeo ut nihil,
+<pb n="5.8"/>
+<lb/>quod immoderatum est, probe fiat. Quomodo igitur aliquis
+<lb/>haec praecidet, nisi prius ipfa se habere cognoverit?
+<lb/>At cognoscere, ut dicebamus, non possumus, quoniam
+<lb/>vehementer nos ipsius amamus. At nequo oratio haec
+<lb/>tibi permittit, te aptum judicare, sed de altero, quem neque
+<lb/>ames, neque oderis, posse .te ferre judicium concedit.
+<lb/>Quum itaque. audieris in urbe aliquem, quem neque
+<lb/>amare noveris, neque odio prosequi, a plerisque
+<lb/>laudari, quod nemini aduletur, ad hunc .quum accesseris,
+<lb/>hocce periculo judicabis, an talis fit, qualis esse dicitur.
+<lb/>Ac primum si ipsum divitum ac insigniter potentum, aut
+<lb/>etiam monarcharum aedes frequentator videas, scito frustra
+<lb/>te audivisse, hominem omnia pronunciare vera, nam.
+<lb/>ejusmodi adulationes mendacium sequitur. Deinde sive
+<lb/>hunc salutantem, sive talibus teipsum comitem exhibentem
+<lb/>ac con coenantem conspicias. Qui namque talem
+<lb/>elegerit vitam, non solum non vera dicit, test etiam
+<lb/>univerfam malitiam sortitur, quippe qui aut pecunias,
+<pb n="5.9"/>
+<lb/>aut principatum, aut gloriam, aut honorem ambiat, aut
+<lb/>quaedam ex iis, aut . omnia. Qui vero neque potentes
+<lb/>illos ac opulentos salutat, neque comitatur, neque his
+<lb/>concoenat, eum frugali usum victu vera loqui speraveris;
+<lb/>ejus notitiam penitiorem experiere, quae et qualis sit,
+<lb/>haec autem diuturniore consuetudine comparatur. Quod
+<lb/>si talem offenderis, nonnunquam privatim cum folo disifere
+<lb/>eum precatus, ut, quem tibi ex supra nominatis uffectibus
+<lb/>adesse conspexerit, statim significet gratiam habiturr
+<lb/>.psi maximam, cumque medicum potius existimaVis,
+<lb/>quam si corpore laborantem fofpitem reddiderit.
+<lb/>Quod si declaraturum se promiserit, quum in aliquem
+<lb/>dictorum affectuum incidere inspexerit, ac postea pluribus
+<lb/>diebus interjectis nihil prodiderit, in mutua utique
+<lb/>consuetudine hominem accusabis, iterumque adhortaberis
+<lb/>accuratius quam prius, ut, quod a tr pathematum animi
+<lb/>committi adverterit, id protinus significet. Si nihil se
+<lb/>interim ejusmodi in te conspexisse eoque tacuisse respondeat,
+<lb/>ne statim dicto fidem adhibeas. neve existimes,
+<pb n="5.10"/>
+<lb/>te quamprimum errore vacare ac inculpatum esse; quin
+<lb/>potius alterum e duobus perpendas, amicum, quem nactus
+<lb/>es, tacere, aut quod per .negligentiam animum tibi
+<lb/>non adhibuerit, . aut. .quod increpare vereatur, aut etiam
+<lb/>quod odio esse nolit, haud ignarus,. omnibus, -ut ita dicam,
+<lb/>hominibus morem esse, ut vera loquentem oderint.
+<lb/>Vel si non horum; causa, ferto tum nolle tibi prodesse,
+<lb/>eoque silere, vel ob aliam quoque causam aliquam, quam
+<lb/>nos improbamus. Nam si mihi. credideris, fortassis rmpossibile
+<lb/>esse tibi ipsi .nihil peccasse, id tum postea land.abis,
+<lb/>quum videas, homines universos innumeros quotidie
+<lb/>etiam errores committere, ex affectibus ductos agere,
+<lb/>non tamen seipsius assequi. Quapropter te ne arbitrare
+<lb/>aliud quicquam magis quam homluem esse. Arbitraris
+<lb/>autem, te aliquid homine majus esse, quum tibi persuaseris,
+<lb/>omnia probe te fecisse uno die, nedum mense. Forsan
+<lb/>igitur dices, si litigiosus sis, vel ex animi proposito, vel
+<lb/>prava quadam consuetudine talis evaseris, naturaque
+<pb n="5.11"/>
+<lb/>contentiosus sis, viros sapientes, quantum ad sermones
+<lb/>paulo ante usurpatos.attinet, .aliud quid magis quam
+<lb/>^homines esse. .Huic. tuae rationi nostram oppone dupli cem,
+<lb/>alteram quidem, quod sapiens omnino careat errore,
+<lb/>alteram vero .consequentiae gratia, si errore vacat
+<lb/>sapiens, nec ipsum esse hominem. At quae de hocce ac
+<lb/>propter hoc ipsum a . vetustissimis philosophis dicta sunt,
+<lb/>similem deo esse. sapientiam. Verum tu .dco similis repcute
+<lb/>fias nunquam. . Quum enim ii, qui per totam vitem
+<lb/>apathiam exercuerunt, nondum ipsam perlecte se confequntos
+<lb/>credant, multo utique magis .tu,, qui nunquam
+<lb/>exercuisti. Ne ergo credas dicenti, nihil ex affectu a te
+<lb/>effici vidisse, sed. vel eum, quod te juvare nolit, arnitrare
+<lb/>ita loqui, aut quod quae male agis observare non
+<lb/>instituerit, aut quod in tui odiutnf stridere caveat; fortestis
+<lb/>autem quod ct noverit, aliquando te accusantem
+<lb/>errores et affectus tuos aegre tulisse, ac ideo jure tacere,
+<lb/>aut credere, te, quum dicis, velle te nosse su, gula,
+<pb n="5.12"/>
+<lb/>quae perperam agis, non vera dicere; sin autem cum
+<lb/>eorum; quae prius egeras, mutatione silueris, non multo
+<lb/>post plures invenies, qui te vere corrigant, multoque
+<lb/>magis, si corrigenti gratiam citra tuum incommodum referas.
+<lb/>Ex hoc autem ipso considera, verene an fasso te
+<lb/>corripuerit, et magnam utilitatem percipies. Quod si
+<lb/>frequenter idem agas; statuasque revera bonus ac probus
+<lb/>fieri; talis evades: Primo quidem tempore ne si quidem
+<lb/>diligenter advertes, contentiose et salso te judicare illum,
+<lb/>et imperite persuadere, quod nusquam erraveris, reperies.
+<lb/>Sed hoc item tibi philosophiae studium subeundum erit,
+<lb/>nempe ut calumniantem sustineas. Postea vero, ubi et
+<lb/>animum nactus sueris remissiorem, et affectus tuos sentias
+<lb/>moderatos, respondere corripienti aliquando conaberis,
+<lb/>idque non acerbis verbis aut conviciolis, ne contentionis .
+<lb/>studio aut controversiae, sed utilitatis potius tuae gratia
+<lb/>facere videaris, ut; quum ipse probabile contra dixerit,
+<pb n="5.13"/>
+<lb/>melius illum cognoscere tibi persuadeas, si longiori disquisitione
+<lb/>extra crimen ipsum invenias. Hunc enim in
+<lb/>modum zeno volebat omnia nos tuto agere, quasi pacdagogis
+<lb/>paulo post responsuros. Sic vir ille vocabat
+<lb/>plerosque omnes, qui, quamvis nullus eos provocaret, propinquos
+<lb/>tamen. parati essent objurgare. oportet autem
+<lb/>audientem nec divitiis pollere, nec dignitatem habere
+<lb/>civilem; hanc. enim si habeat, nemo propter metum illi
+<lb/>vera dicet, sicut nec divitibus lucri gratia assentatores,
+<lb/>verum etsi quis apparuerit verax, ab ipsis corrumpetur.
+<lb/>Ilaque. si egregie quisquam potens aut locuples bonus atque
+<lb/>probus reddi cupiat, perimam tuam prius exuat
+<lb/>opus erit, et maxime nunc, quandoquidem non inveniet
+<lb/>Diogenem verum fateri posse, si opulentissimus sit,
+<lb/>si monarcha. Illi igitur suimet ipsi judices erunt. At
+<lb/>tu, qui nec divitias, nec potentiam in civitate habes,
+<lb/>omnibus permitte, ut, quae in te damnent, ostendant;
+<lb/>nulli vero ipsis indignare, sed omnes sic habeto, ut
+<pb n="5.14"/>
+<lb/>zeno dicebat, paedagogos. Non tamen omnibus ex aequo,
+<lb/>- de quibus dixerint; animum velis adhibere, sed
+<lb/>fenibus, qui optimam vitam transegerint. Quinam autem
+<lb/>sint, qui optime- vivant, paulo ante indicavimus. Caeterunt
+<lb/>temporis processu tu temet intellectu consequeris,
+<lb/>intelligesque, qualia sint; quae per errorem antea commiferis,
+<lb/>quando maxime verum hoc tibi narrasse videbor,
+<lb/>qui asseram, nullum ab .affectibus et erroribus immunem
+<lb/>esse, ne vel optima praeditum indole, aut apud gentes
+<lb/>optime educatus, sed omnino aliquem errare, ac prae-^
+<lb/>furtim adhuc quum sit juvenis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">lndiget enim unusquisque nostrum, ut in
+<lb/>perlectum virum evadat, totius propemodum vitae exercitio.
+<lb/>Neque tamen deterreri quempiam oportet, - ne se
+<lb/>meliorem efficiat, quamvis jam factus quinquagenarius,
+<lb/>modo non immedicabili aut -quod emendari non possit
+<lb/>vitio animum sentiat depravatum. Neque enim, .si corpore
+<lb/>male fit affectus quinquagenarius, desperatus tradit
+<lb/>se malae habitudini, sed omnino conatur in meliorem
+<pb n="5.15"/>
+<lb/>statum reducere, optimum licet Herculeae valetudinis
+<lb/>habitum consequi non possit. Nc igitur nos quoque dcsinamus
+<lb/>animum reddere meliorem, quamvis sapientis
+<lb/>animum consequi non possimus, verum maxime quidem
+<lb/>etiam illum speremus nos habituros, si jam inde ab adolcscentia
+<lb/>rationem animae nosseae habeamus. Sin minus,
+<lb/>at saltem, ne prorsus cum turpem, ut Thersitae corpus,
+<lb/>nanciscamur, curemus.. Si igitur nobis nondum natis
+<lb/>generationis nostrae rationem prospicere liceret, optaremus
+<lb/>haud dubie corpus aliquod generosissimum accipere.
+<lb/>Hoc negato, secundum certe, aut tertium deinceps; aut
+<lb/>quartum ipsum bonae habitudinis respectu post primum
+<lb/>precaremur obtinere. Desiderandum est Achillis robur,
+<lb/>si non Herculis conceditur; vel si neque illius, Ajacis,
+<lb/>aut Diomedis, aut Agamemnonis, aut Patrueli; at si
+<lb/>nequo horum contingit, aliorum quorumdam praestantium
+<lb/>heroum. Sic ubi quis absolutum ammi habitum obtinere
+<lb/>non potest, receperit, opinor, secundus, aut tertius, aut
+<pb n="5.16"/>
+<lb/>quartus post summos numerari. Id autem haud irnpossibile
+<lb/>est perficere volenti, modo sedulitas exercitii longiori
+<lb/>temporis processu adsuerit. Ego autem adolescens
+<lb/>adhuc ista audiens hominem ad fores aperiendas festinantem
+<lb/>conspexi, quum vero res ipsi parum commode
+<lb/>succederet, clavem mordere, in januam pestibus insultare,
+<lb/>diis convicia dicere, oculos insanientis instar truces
+<lb/>ferinosque ostendere, et spumam fere, sicut apri, ex
+<lb/>ore emittere: ita coepi iracundiam odio prosequi, ut
+<lb/>postea nunquam visus sim propter ipsam impatienter do-.
+<lb/>tere. Atque hoc ipsum primo satis erit, si nec deos
+<lb/>conviciis petas, nec insultes aut mordeas lapides ac
+<lb/>ligna, tum me truces habeas oculos, sed itr te ipso et
+<lb/>contineas et occultes iracundiam; nam ab ira liberari,
+<lb/>statim atque velit, nullus potest, affectus autem turpitudinem
+<lb/>cohibere potest. Hoc si frequenter fecerit, cognosuet
+<lb/>aliquando ipsa, se minus nunc quam prius irasci,
+<lb/>adeo ut neque ob rem levem neque magnam postea,
+<pb n="5.17"/>
+<lb/>sed solum piacula grandia excandescat. Quin etiam ne
+<lb/>ob magna quidem scelera unium postea indignari continget,
+<lb/>si id, quod ego ab adolescentia susceptum per omne
+<lb/>vitae tempus servavi, observet; nullum videlicet servorunr
+<lb/>manu mea verberari unquam, nec pater meus id
+<lb/>in usu habuit: verum plerosque amicos, qui servorum
+<lb/>dentes pugnis contunderent, corripuit, dignos esse dicens,
+<lb/>ut inflammatione convulsi perirent. Licebat enim illis
+<lb/>ferula et loro plagas, quot vellent, inferre, tum consilio
+<lb/>rem paulo post conficere. Alii non pugnis fotum, sed
+<lb/>etiam calcibus petunt, oculosque effodiunt, et stilo pungunt,
+<lb/>si quando in manus venerit. Novi quendam, qui
+<lb/>calamo, quo scribimus, prae iracundia in famuli oculum
+<lb/>impegerit. Adrianus imperator stilum, ut ajunt, in cujusdam
+<lb/>ex famulis oculum intruserat Ubi jam ob vulnus
+<lb/>impactum unoculum factum esse cognovisset, accersivit,
+<lb/>et pro damno accepto dona petere a se concessit.
+<pb n="5.18"/>
+<lb/>Servus quum  subticuisset, Adrianus denuo rogare dignatus
+<lb/>est, quod vellet. Tandem ille ait, te nequicquam
+<lb/>velle, oculum dumtaxat repetere. Quodnam enim munus
+<lb/>esset, quod oculi jactmam dignitate adaequaverit? Volo
+<lb/>quidem et ego tibi recensere quippiam inter ea, quae
+<lb/>misti acciderint, etsi jam saepius de eodem dixerim.
+<lb/>E Roma paranti reditum cum amico quodam cive Gortyuae
+<lb/>Cretae civitatis simul iter facere contigit; is erat
+<lb/>inter caetera non contemnendus, quippe qui et simplex,
+<lb/>comis, probus et victu quotidiano liberalis, sed iratamdus
+<lb/>adeo, ut suis ipsius manibus adversus servos uteretur,
+<lb/>nonnunquam etiam cruribus, sed multo magis loris
+<lb/>et ligno, quodcunque occurrisset. Quum jam essemus
+<lb/>Corinthi, omnes sarcinas et famulos a Cenchreis Athenas
+<lb/>perferendos navigio curavit, ipfe vero, vehiculo uno
+<lb/>mercede conducto, pedes per Megaras suat. Itaque quum
+<lb/>Eleufinem praeteriissemus, ac Thriasium attingeremus, rogabat
+<lb/>famulos a tergo comitantes eum de quadam farernula,
+<pb n="5.19"/>
+<lb/>illi vero, quid responderent, non habuerunt. Furore
+<lb/>ergo correptus ille, quandoquidem nihil aliud habebat,
+<lb/>quo adolescentes caederet, gladium simul cum vagina, in
+<lb/>qua reconditus erat, cepit impegitque ipsorum capiti,
+<lb/>non, qua latus ac planus est, inferens, (sic enim grave
+<lb/>nihil fuisset,] sed qua locandi vim habet gladius. Dissecta
+<lb/>igitur illico est vagina, vulnusque maximum in capite
+<lb/>duplex utrique inflixit, ipsa etenim bis utrumque percussit.
+<lb/>Postquam vero plurimum sanguinis fundi largiter
+<lb/>conspexisset, nobis relictis, Athenas subito se contulit,
+<lb/>veritus, ne ipfo adhuc praesente fervorum alter periret.
+<lb/>Nos tamen illos servarimus ad usque Athenas. Porro
+<lb/>amicus ille Creteusis sese detestatus, Megaras in domum
+<lb/>quandam manu prehensa me deducit, et, loro tradito,
+<lb/>vestimentis exutum te ob ea, quae execrata iracundia
+<lb/>coactus (sic enim appellabat) perpetrasset, verberari jussit.
+<lb/>Quod quum ego, ut aequum erat, irriderem, ru genua
+<lb/>procumbens orabat, ne tectis facerent. Perspicuum igitur
+<pb n="5.20"/>
+<lb/>est, quod tanto magis illum mihi risum commoveret,
+<lb/>quanto magis eum in eo proposito, ut caederetur, videbam
+<lb/>perseverare. Quum jam satis interea temporis ista
+<lb/>nobis agentibus tereretur, pollicebar, me illi .plagas insucturum,
+<lb/>si et ipse quoque exiguum adeo quippiam petituro.
+<lb/>mihi concederet. Quod quum affirmaret se facturum,
+<lb/>adhortabar insuper, ut dicenti nonnulla praebiturum
+<lb/>aures promitteret, atque hanc aiebam este petitionem.
+<lb/>Quod quum recepisset se praestiturum, copiosius
+<lb/>cum eo disserui praeponens, quomodo conveniret animum
+<lb/>iracundum coercere, ratione nimirum ; non enim
+<lb/>flagris, sed alio modo servos emendari. llle igitur, ratione
+<lb/>paulisper secum inita, malle melior seipso evasit.
+<lb/>.Tu vero etsi non multo fias melior, satis esse ducito, si</p>
+<p>vel parum anno priore ad meliora promoveris. Nam si
+<lb/>pergas affectui resistere ac animum iracundum lenire,
+<lb/>munirem laboris fructum anno subsequenti percipies.
+<lb/>Deinde si in eo mentis statu persistas, perpendens tecum
+<lb/>singula, majus ac majus tertio, et post eum quarto et
+<pb n="5.21"/>
+<lb/>quinto anno ad vitam honestiorem virtutis senties incrementnm.
+<lb/>Turpe siquidem est multis aliquem anuis, ut
+<lb/>medicus, aut grammaticus, aut rhetor, aut geometra fiat,
+<lb/>laborare, verum ut in bonum virum .evadat, me pauxillo
+<lb/>quidem tempore- laborem unquam assumere.-</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Quod ergo fit exercitii initium, denuo
+<lb/>repetamus; nam de iis, quae maxime necessaria sunt,
+<lb/>bis ac ter eadem dicere non est inutile. Monet hoc videlicet,
+<lb/>ne quis ullum servum peccantem suis ipsius manibus
+<lb/>corrigat, sed quemadmodum ego, quod Platonem
+<lb/>audivissem adversus quendam servorum peccantem maluisse
+<lb/>agere, sin semper egi, honestum arbitratus esse hoc
+<lb/>officium, simili modo et tu tibi praecipe, me famulos
+<lb/>tuis manibus, quo tempore iratus es, caedas; neque alteri,
+<lb/>ut id faciat, imperes, feti indiem posterum disseras.
+<lb/>Nam post iracundiam -prudentius apud te perpendes, quot
+<lb/>verbera ei, qui puniendus est, conveniat infligere. .Num.
+<lb/>praestat initio venia concessa sic rem perficere, ubi lorum
+<pb n="5.22"/>
+<lb/>postulaveris et verbis increpaveris, minatus deinceps
+<lb/>nequaquam condonaturum, si tantundem peccaverit? Multo
+<lb/>namque majus est, animo non amplius furente atque
+<lb/>ab insania libero, ea quae facis facere, nempe quando
+<lb/>cum ratione poenam inveneris. Quod etenim iracundia
+<lb/>nihil ab insania differat, ex iis, quae iracundi faciunt,
+<lb/>promptum est discere; pulsantes enim et calcitrantes, et
+<lb/>vestimenta scludentes, et torvum quiddam intuentes,
+<lb/>omnia conficiunt usque adeo, ut, quemadmodum dixi,
+<lb/>ostiis, lapidibus et clavibus succenseant, et alia quidem
+<lb/>collidant, alia mordeant, alia calcibus petant. Haec forfau
+<lb/>vere insanientium esse dicent, quae vero a tu fiant,
+<lb/>prudentium. Nos profecto, qui propriis manibus servos
+<lb/>pulsant, minus peccare illis, qui lapides, ostia clavesque
+<lb/>mordeant et pedibus trudant, fatemur; verum adversus
+<lb/>hominem, simul atque peccaverit, saevire, vel parvae infaniae
+<lb/>opus esse, vel animantis cuiusdam agrestis et
+<lb/>ratione carentis, persuasum habemus. Non enim haec
+<pb n="5.23"/>
+<lb/>homo solus habet eximia, sed prae caeteris aliis rationem :
+<lb/>si igitur illa ira deposita ritam condonant, nonne humitris
+<lb/>id erit factum? Quamobrem noli hominem Iudicare
+<lb/>prudentem, qui hoc unum sutum caverit, ne recalcitret,
+<lb/>mordeat et pungat proximos; qui enim talis est, non
+<lb/>amplius quidem ferinus est, sapiens tamen nondum est,
+<lb/>sed medium inter illos fletum obtinet. Nunquid igitur
+<lb/>studebis desinere te teram esse, si non curas, ut in virum
+<lb/>et honestum ct probum evadas? an fatius suerit, ut non
+<lb/>amplius ferinum, sic neque insipientem neque rationis
+<lb/>expertem permanere? Talis autem evades, si nunquam
+<lb/>iracundiae deserviens,. sed rationi obtemperans, omnia
+<lb/>agas, quae omnia tibi citra affectum consideranti videantur
+<lb/>optima. Quomodo tandem hoc continget? nempe
+<lb/>quum honore te affeceris, quo ne cogitare quidem. possis
+<lb/>majorem. omnibus namque hominibus irascentibus, te
+<lb/>fissum ira non moveri, quid aliud esit quam cunctis hominibus
+<lb/>meliorem te ostendere? Ac si forte teipsum emstimes,
+<pb n="5.24"/>
+<lb/>quid aliud est quam ostendere, teipfum existimari
+<lb/>velio caeteris praestare, revera tamen praestantiorem esse
+<lb/>nolle, quemadmodum fi quis corpus suum valere putari
+<lb/>desideraverit, revera tamen aegrotet. Nunquid enim
+<lb/>animi morbum esse censes iracundiam? An frustra a veturibus
+<lb/>quinque ejus affectus hos putas nominari, dolorem,
+<lb/>iram, iracundiam, cupiditatem et metum? Sed
+<lb/>mihi multo melius esse videtur, primum quidem dictis
+<lb/>perturbationibus diu resistere, et lecto surgentem de omni
+<lb/>particulatim opere considerare, sutiusne fit affectibus seralentem
+<lb/>vivere, an in omnibus ratione uti: dein ei, .qui
+<lb/>ad bonitatem probitatemque aspiret, advocandum esse,
+<lb/>qui singula, quae parum recta ab eo gerantur, iudicer:
+<lb/>postea quotidie adhuc horisque fingulis in promptu hanc
+<lb/>opinionem habere, nempe mestus esse bonum atque probum
+<lb/>te ipsum honorare. At hoc assequi nobis non licet,
+<lb/>niti habeamus, qui singula, quae per errorem delinquimus,
+<lb/>indicet Qum etiam illum, qui delicta singula ostenderit,
+<pb n="5.25"/>
+<lb/>servatorem et amicum maximum arbitrari oportet ; ad
+<lb/>haec, si quando falso criminari videtur idem, iram continere
+<lb/>debes, primum, quod fieri possit, ut ea melius videat,
+<lb/>in quibus pecces, quam ipfe tu, ut tu illius vitia
+<lb/>perspicere facilius potes, etsi nonnunquam calumniam
+<lb/>falsam moliatur. Quin igitur exactius acriusque res tuas
+<lb/>infpice : propterea, quod in hoc maximum est, observes,
+<lb/>nempe temet honorare instituas, hoc est, memineris
+<lb/>prompte et irascentium animae turpitudinem et non
+<lb/>irascentium pulchritudinem. Nam qui errare diu consuevit,
+<lb/>difficulter clavem affectuum potest assumere, hoc
+<lb/>est lisiectus coercere. Similiter et dogmate, quibus tubaudiens
+<lb/>bonus simul et probus evadat, longo tempore singula
+<lb/>convenit exercere. Obliviscimur enim ipsius rei facile,
+<lb/>ut quae protinus ex anima nossea propter affectuum
+<lb/>copiam ei insilientem excidat. Proximum itaque huic
+<lb/>est, ut, quisquis servari velit, ne horula quidem una ferias
+<lb/>ac otium agat. Incitandi sunt omnes, ut nos cerripiant,
+<pb n="5.26"/>
+<lb/>modesteque audiendi ipsi; quinetianr gratia non
+<lb/>assentatoribus, verum increpantibus habenda. Pateat domus
+<lb/>tuae ostium familiaribus; quovis tempore liceat rngredi
+<lb/>, si in hunc modum te comparaveris. Quare fidas
+<lb/>oportet, tanquam ab introeuntibus nulli vitio insigni obnoxius
+<lb/>esse maxime comprehendaris. Est . autem sicut
+<lb/>omne inrito excindere vitium difficile, ita magna volenti
+<lb/>facillimum. Foribus itaque tuarum aedium apertis, ut
+<lb/>dixi, copiam semper familiaribus ad te accedendi exhibeto.
+<lb/>Sed quemadmodum alii omnes in publicum progrelfi
+<lb/>omnia conantur facere ut decet, tu domi tuae
+<lb/>ita facias. Illos autem alios deprehendi errantes nonnihil
+<lb/>pudet, semetipsos deprehendi non pudet. Tui vero praeiertim
+<lb/>quum admonearis peccati, erubescas, imo omnium
+<lb/>maxime pudeat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Hoc namque faciens poteris aliquando
+<lb/>concupiscibilis facultatis vim irrationalem tanquam ferinum
+<pb n="5.27"/>
+<lb/>aliquid edomare et coercere. Num grave fuerit, viros
+<lb/>equestres indomitos equos pauxillo tempore mansuetos
+<lb/>reddere, te vero, quum non extraneum aliquod animal
+<lb/>susceperis, sed in anima vim irrationalem, cui ratio semper
+<lb/>inhabitat, . ipsam non posse mitigare, ac si non celeriter.,
+<lb/>certe longiori temporis spatio? Diximus copiosius
+<lb/>in commentariis de moribus, qua ratione quis animam
+<lb/>comparet optimam, et quomodo robur ejus subvertere
+<lb/>non expedit, sicut nec equis ac canibus, quibus utimur,
+<lb/>obedientiam vero, sicut et- in ipsis, exercere. Indicatum
+<lb/>insuper tibi est non mediocriter in illis commentariis,
+<lb/>quo pacto rarius irascibilis sacultatis utaris auxilio adverius
+<lb/>alteram, quam veteres philosophi concupiscibilem
+<lb/>vocaverunt, qua citra rationem in corporis voluptates
+<lb/>impellimur. Quemadmodum igitur turpe spectaculum est
+<lb/>ob iracundiam homo praeter decorum se gerens, sic ob
+<lb/>amorem, gulam, temulentiam ac ventris inexplebilem
+<lb/>cupiditatem, quae concupiscibilis animae sunt actiones et
+<pb n="5.28"/>
+<lb/>affectus, quos non equo, non cani, velut iracundiam,
+<lb/>sed apro feroci, et hirco, aut id genus agrestium cuidam,
+<lb/>quod uicurarr non potest, assimilavimus. Quapropter hujus
+<lb/>nulla disciplina talis est, qualis est alterius obtemperatio.
+<lb/>Quod autem veteres appellabant punire irrationalem
+<lb/>quandam animae vim, ad hanc spectabat Porro fit hujus
+<lb/>potentiae punitio, dum desideratis frui ipsi non conceditur.
+<lb/>Valida enim et magna efficitur, dum optata
+<lb/>contingit, at ubi coercetur, exigua et imbecillis, ut
+<lb/>non obtemperantiae, sed imbecillitatis causa rationem sequatur.
+<lb/>Eodem quoque modo videmus inter ipsus homines
+<lb/>inseriores aut inrito per vim sequi praestantiores,
+<lb/>uti pueros et famulos, aut sua sponte, ut natura bonos.
+<lb/>Atque hoc illis, qui verbis scilicet non castigati fuere,
+<lb/>olim familiare. Nam ille protervus est et intemperans,
+<lb/>in quo videlicet vim appetitoriam rationalis non repressit.^
+<lb/>Duas enim habemus in anima facultates rationis experles
+<lb/>, unam, cujus opus est excandescere et frater his, qui
+<pb n="5.29"/>
+<lb/>in nos delinquere videntur. Hujus ipsius est et infensum
+<lb/>esse diutius; qui tanto major est iracundia affectus,
+<lb/>quanto etiam diuturnior. Alia vero in nobis est facultas
+<lb/>rationis expers, qua ad id, quod suave est, ferimur,
+<lb/>priusquam perspexerimus, commodumne fit et honestum,
+<lb/>an nocuum et turpe. Hanc vehementem adeo prius cohibere
+<lb/>convenit, quam aucta robur insuperabile acquirat.
+<lb/>Tunc enim, etiamfi coercere velis, non amplius possis.
+<lb/>Dein inquies, sicut amantem quendam audiri, velle quidem
+<lb/>cessare, sed non posse; adhortaberisque nos frustra,
+<lb/>perinde ut ille petebat opem fibi ferri et affectum extirpari,
+<lb/>siquidem corporis affectuum quidam prae magnitudine
+<lb/>sunt immedicabiles. Id autem forsan ne cogitasti
+<lb/>quidem unquam. Proinde nunc tibi praestiterit considerare
+<lb/>et perpendere, verone dicam, concupiscendi facultatem
+<lb/>auctam in amorem plerumque nullo sanabilem
+<lb/>remedio nos praecipites agere, non corporum formosorutu,
+<lb/>florentium, neque venereorum, sed ingluviei quoque,
+<pb n="5.30"/>
+<lb/>gulae, ebrietatis, et indecorae praeter naturam turpitudinis;
+<lb/>an mentiar haec, et alia- pleraque, quae a me
+<lb/>prius dicta sunt. .Quae enim de iracundia retuli hactenus,
+<lb/>eadem de affectibus aliis intelligite. Primum qurdem
+<lb/>alteri, non nobis ipsis eorum dignotionem conunisteudam
+<lb/>esse. Delude non quoscunque, sed senes, qui
+<lb/>boni pariter et probi . aestimati, tum longo ante nos
+<lb/>tempore nullis animi perturbationibus obnoxii fuerunt,
+<lb/>nobis praeficiendos. Ad haec curandum, ne talibus,
+<lb/>quoties vitium aliquod nostrum ostendant, succensere xideamur,
+<lb/>sed magis habere gratiam; postea quotidie tui
+<lb/>ipsius meminisse, satius esset, si frequenter, sin minus,
+<lb/>certe ad lotis saltem exortum, priusquam operi te accingas,
+<lb/>vesperi, antequam te quieti remittas. Ego utique
+<lb/>aliquando et haec, quae tanquam Pythagorae monita ciscumfermrtur,
+<lb/>bis- ac ter primum. consuevi legere, mox
+<lb/>voce pronunciare. Non enim satis est solum irae resistere,
+<pb n="5.31"/>
+<lb/>nisi voracitatem, gulam, temulentiam, curiositatem et
+<lb/>invidentiam tollas simul e medio. Alter igitur de nobis
+<lb/>periculum faciebat, si neque canum in morem cibos imnrodice
+<lb/>ingessisse deprehenderemus, vel, ut qui continua
+<lb/>febre peruruntur, frigidam potionem aridius arriperemus,
+<lb/>au ut vicos graves decet. Neque enim decorum est ob
+<lb/>famem cupiditate quadam inexplebili cibum assumere,
+<lb/>nec sitis gratia totum omnino exhaurire calicem. Adde,
+<lb/>multo minus decere ob gulam omnibus praesentibus vel
+<lb/>placentam, vel aliud delicati quid obsonii intemperantius
+<lb/>devorare. Quapropter hic quoque alii, qui in iis
+<lb/>omnibus sibi temperare norunt, admonendi - nobis fiunt,
+<lb/>ut, in quibus peccemus, observent dicautque. Subsequenti
+<lb/>vero tempore sine paedagogis ipsi nos observemus, quomodo
+<lb/>luter convivas universos minorem obtonsi partem
+<lb/>accipiamus, et a ferculis opiparis abstineamus; salubribus
+<lb/>modice sumptis contenti. At temporis processu nequaquam
+<lb/>amplius convivas respicere te velim. Nam magni laboris haud:
+<pb n="5.32"/>
+<lb/>fuerit tunc bibere et esse ^modestius. Si enim ita te ipsum
+<lb/>honorare didiceris, considera aliquando r magis temperanter
+<lb/>heri vel hodie vixisse. Hoc factu senties quotidie te
+<lb/>minori negotio ab his, quae dixi, abstinere, animumque
+<lb/>tuum magis ac magis exhilarari, fi verus temperantiae
+<lb/>amatur lis. Ita enim qui amat, gaudet in eo, quod amat,
+<lb/>si profecerit. Hinc est, quod ebriofos laetari videamus,
+<lb/>quando potu superant combibones; qui voraces sunt, et
+<lb/>hos ciborum copia oblectari; qui gulosi, placentis, fartagruibus,
+<lb/>patinis et condimentis aromaticis. Noni etiam
+<lb/>quosdam, qui frequenti et immoderata venere se ostertarent.
+<lb/>Quemadmodum igitur eorum summa exercent et
+<lb/>persequuntur, quorum desiderio tenentur, ita nos summo
+<lb/>temperantiae studio deditos . esse oportet. Eo namque
+<lb/>pactu intemperantibus nos haud assimilabimus, quamquam
+<lb/>continentiae et temperantiae plus habere,. quam illi, satis
+<lb/>non sit, nisi ejusdem rei aemulos etiam superare contendamus.
+<pb n="5.33"/>
+<lb/>Haec etenim pulcherrima est contentio. At
+<lb/>post illos ruriusl nosmetipsos vincamus, ut ex diuturna
+<lb/>consue tudine. saluberrimis istis juxta ac susceptu facillimis
+<lb/>suaviter assuescamus, memores eorum, quae a veteribus
+<lb/>dicta tunsi ex quorum numero retentor et illud; Delige
+<lb/>vitae genus optimum, id jucundum efficiet consuetudo.
+<lb/>Qua igitur ratione, quum iracundiae resistere te
+<lb/>volebam, hoc inde commodi signum affulgebat, quod irafcentem
+<lb/>te ipsium amplius non viderem, sic temperantiae
+<lb/>indicium existima, quod suavia non amplius concupiscas.
+<lb/>At via ad eam per continentiam tenuit; quin hoc modo
+<lb/>temperans excellit continentem, quod nec opiparos cibos
+<lb/>vel ob diuturnam consuetudinem, velo ob continentiam
+<lb/>appetit, quemadmodum et Graecum nomen ipsius indicat
+<lb/>compositum ex continere et vincere cupiditates. Caelerum
+<lb/>initio laboris plena et afpera est, sicut alia bonestatum
+<lb/>rerum studia. Quare, si vel virtutem malitiae loco
+<lb/>vel .animi tranquillitatem pro corporis titillationibus malis
+<pb n="5.34"/>
+<lb/>recipere, praeposita ratione exercitandus es, ad temperans
+<lb/>fiam eundo per continentiam. Sin autem vel negligere
+<lb/>virtutem, vel tutius corporis voluptatibus indulgere statuas,
+<lb/>ratio deserenda est, quae ad virtutem non adhortatur
+<lb/>quidem, sied iis, qui adhortationem receperunt, viae
+<lb/>dux existit, qua quis eam comparare queat. Jam. vero,
+<lb/>quum oratio nobis partita sit in haec videlicet, quomodo
+<lb/>quisque seipsum cognoscat, et errores cognitos emendet;
+<lb/>de hoc posteriore dicere nequaquam proposuimus, sed
+<lb/>quomodo proprios errores agnoscat Quoniam vero obnoxii
+<lb/>vitiis ac erroribus eos nequeunt dignoscere, alios a
+<lb/>nobis accipient inspectores ipsos exercentes, utpote qui
+<lb/>jam probe noverint, quibus erroribus et affectibus liberati
+<lb/>sint, quid ve est perfectionem desideretur. Quod subinde
+<lb/>consuevi dicere, nunc quoque dicam, altero modo difficillimum
+<lb/>esse teipsum cognoscere, altero facillimum Si
+<lb/>enim quis intus velit se nosse, plurimum sudet necesse
+<lb/>est: sin autem foris, laboris propemodum nihil sentiet. -
+</p>
+<pb n="5.35"/>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+
+
+<p rend="indent">Nos ergo haec omnia, quae dicta et
+<lb/>dicenda sunt, volentibus apponimus. Est forsan alia
+<lb/>quaedam via, qua bonus quis probusque evadat. At,
+<lb/>quom ullam inventam esse ignorem, non fotum hac per
+<lb/>totam vitam usus tum, verunu etiam aliis abunde indicavj.
+<lb/>adhortatus, ut rependerent redderentque aliquid, vicissinr:
+<lb/>docentes, si quam aliam probitatis riam cognoscant.
+<lb/>Itaque, dum alteram desideramus, hanc ingrediamur, quae
+<lb/>omnium affectuum judicio et curationi communis esu
+<lb/>Jam vero contentionis studium, gloriae ac imperii cupi- .
+<lb/>. ditas animae sunt affectus. ; Haec illis minor quidem, sed
+<lb/>tamen ipsa quoque affectus. De invidia autem quid attinet
+<lb/>dicere? omnium malorum est pessimum. appello.au.
+<lb/>telu invidiam, quum quis alterius commodo dolet. Dolor
+<lb/>omnis affectus est, fied multo pellimus invidia, sive affectuum
+<lb/>unus, sive doloris species ei assimilis nominetur.
+<lb/>At communis omnium praedicta curationis ratio. Quod
+<pb n="5.36"/>
+<lb/>enim et turpia et fugienda sint, perspicere oportet in iis
+<lb/>hominibus, qui vehementer . ab illis detinentur; .in illis
+<lb/>enim turpitudo perspicua apparet. Quod quidem in nobis
+<lb/>videmus nihil, caecitatem putare oportet vel circa amans
+<lb/>vel circa amatum. Accedit huc, quod nonnulla prae
+<lb/>exiguitate nimia nos latent, nec sensibus nostris se osserunt,
+<lb/>quae in aliis propter magnitudinem non possunt non
+<lb/>conspici Convenit igitur. senem quempiam invenire, qui.
+<lb/>illa inspicere possit, rogareque, ut omnia cum libertate
+<lb/>commonstret. Deinde, si quid dicat, primum gratiam agemus;
+<lb/>ac. statim digressi, ratione paulisper inita, nosuretipsius
+<lb/>corripiemus.; et affectum, non quousque aliis solis
+<lb/>non appareat, sed ne radix ejus in animo relinquatur,
+<lb/>conabimur evellere; nam ex iis, quae relinquuntur, rursus
+<lb/>aliquid pullulat, dum a pravitate irrigatur. Eoque aniurum
+<lb/>nos ipsos adhibere convenit in singulis affectibus,
+<lb/>quos circa cos, quibuscum conversamur, conspicimus, num
+<lb/>quid tale in anima nostra deprehendi queat. Extirpaudum
+<lb/>enim est, dum nascitur adhuc, priusquam accepto incremento
+<pb n="5.37"/>
+<lb/>stat inmedicabile. Plerique enim caeteros omnes
+<lb/>affectus animi nihil ducunt, etsi;. quum alios eis obnoxios
+<lb/>videant, damnent Dolor omnibus apparet malunt,
+<lb/>uti labor in corpore. Quidam tamen ex familiarissimis
+<lb/>mihi adolescentulis, qui se -ob minutula dolorem aliquamdo
+<lb/>fensisse negasset, postea vero, quum aliquando id expertua
+<lb/>fuisset, ad me accessit summo mane dixitque, se
+<lb/>totam noctem insomnem duxisse hujus rei gratia, interea
+<lb/>sibi in mentem venisse, se ne in maximis quidem rebus
+<lb/>unquam aeque doluisse, ac in partis - doleret. Voluisse
+<lb/>igitur discere, undenam hoc sibi acciderit, ex iludione
+<lb/>aliquo aut disciplinis, an natura talis siti Respondebam
+<lb/>itaque illi verum. Etenim naturam diri in puerorum aetale
+<lb/>multum ad vitae perfectionem momenti afferre, deinde
+<lb/>disciplinas et exercitia. Quod nostrae vero naturae plurimum
+<lb/>inter se differunt, in pueris occurrentibus manifesto
+<lb/>licet cognoscere. Quosdam etenim eorum alacres,
+<lb/>quosdam tristes suspicimus, alios. ob quaeris ridere paratus,
+<pb n="5.38"/>
+<lb/>alios plorare quavis parva occasione. Simili modo
+<lb/>in communia habent omnia, illi rapiunt, nonnulli propter
+<lb/>minima excandescunt adeo, ut lapides et ligna, quibus
+<lb/>proximos ulciscantur, quod iniuria se putent affici, mordeant
+<lb/>et calcibus insultent. Rursus aliqui mali patientes,
+<lb/>mites, non iracundi, nec plorantes, nisi offensi graviter.
+<lb/>Similiter etiam Eupolis jusimn illum Aristidem, quum rogaretur
+<lb/>a Nicia, an natus esset Iustus, sic decenter respoudectem
+<lb/>introduxit; Natura quidem maximum, verum ego
+<lb/>illam dein acriter adjuvj. Quamobrem naturae juvenum
+<lb/>non ad dolorem modo, sed ad iracundiam gulamque facile
+<lb/>proclives sunt, de quibus ad hunc usque locum plurima
+<lb/>verba fecimus. Insuper praeter illos, quos supra
+<lb/>retulimus, aliquos rideas impudentes, aliquos verecundos;
+<lb/>hos memores, illos immemores; alios obliviosus, nonnullos
+<lb/>disciplinarum studiosus, quosdam negligentes et defidiosus.
+<lb/>Ex studiosis sunt, qui nito gaudeant, siquando Iandentur;
+<pb n="5.39"/>
+<lb/>fiunt qui a praeceptoribus reprehensi erubescant;
+<lb/>sunt qui flagra timeant. Sic et desidiosorum ob contraria
+<lb/>videas unumquemque turpescere et otioso esse animo. Ex
+<lb/>iis igitur, quae omnes homines vident circa pueros, .hos
+<lb/>vocant verecundos, illos impudentes. Eadem vero. ratione
+<lb/>vel honoris ac probitatis amantes, vel probitatis ac bonoris
+<lb/>negligentes; partim etiam timidos, et poenarum contemptores,
+<lb/>atque id genus alias appellationes pro natura
+<lb/>cujusque assis imponunt Sic etiam puerorum alios. natura
+<lb/>mendaces, alios veritatis amatores intuemur, multasque
+<lb/>alias morum differentias habentes, de quibus nunc
+<lb/>non est necessarium jure dicere. Quidam enim ipsorum
+<lb/>bonam facillime recipiunt institutionem; aliqui nihil ex
+<lb/>ea proficiunt aut commodi fentiunt: non tamen ea de
+<lb/>causa negligendi sunt pueri, fetl optimis quibusque moribus
+<lb/>educandi Quod si igitur natura sprerunt. ex diligenti
+<lb/>cura .disciplina que utilitatem capiat, in bonos evadent viros;
+<lb/>sin minus, nos nostro functi officio culpa carebimus.
+<pb n="5.40"/>
+<lb/>Assimilis enim est quodammodo puerorum institutio stitipium
+<lb/>culturae. In illa namque agricola nunquam potest
+<lb/>efficere, ut rubus proferat uvam, siquidem natura ejus talem
+<lb/>principii perfectionem minime recipit. Iterum si
+<lb/>vites, quod ad ipsus . attinet, abunde satis foecundas negligens,
+<lb/>loli naturae emam committat, pravum fructum aut
+<lb/>-nullum producenti Pari modo, si ex animalibus equum
+<lb/>erudias, ad multa accommodum habebis, ursum autem
+<lb/>quamvis aliquando mansuetum docendo feceris, non tamen
+<lb/>firmum habitum retinebit, vipera vero et scorpius
+<lb/>tantum de se nunquam immutant, ut nec ad mansuetufinem
+<lb/>accedere solum videantur. Ego hercle qua praedatus
+<lb/>sim natura, nullo queam pacto cognoscere; nam
+<lb/>temetipsum ostendere, viris etiam absolutis, nedum pueris
+<lb/>est difficile.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+
+
+<p rend="indent">At raram quandam felicitatem conscquntus
+<lb/>tum, cui pater contigerit mitissimus, sanissimus, probissimus
+<lb/>et humanissimus, mater licet iracunda adeo . fuerit,
+<pb n="5.41"/>
+<lb/>ut ancillas objurgaret interim, semper vociferaretur, cum
+<lb/>patre magis, quam Xauthippe cum Socrate, pugnaret. Quum
+<lb/>itaque honesta patris opera cum turpibus matris affecti-.
+<lb/>bus invicem conferrem, cogitavi illa arripere et amare,
+<lb/>hos fugere et odisse. Quemadmodum igitur in his in..
+<lb/>gens parentum discrimen, sic in illo maxime depreheudebam,
+<lb/>nempe quod pater meus ob nullum quamvis grave
+<lb/>incommodum doleret, mater etiam angeretur ob levissima.
+<lb/>Novisti tu .quoque forsan, pueros, quibus incumbant, haec
+<lb/>imitari, quae vero illubentes viderint, illa fugere. Patris
+<lb/>itaque disciplina suit hujusmodi. Postquam annum
+<lb/>implevissem decimumquartum, audiebam philosophos civiIes,
+<lb/>saepissime Stoicum Philopatoris discipulum, parvo
+<lb/>quoque tempore Platonicum Gai discipulum, eo quod ipsi
+<lb/>non vacaret, ut qui ad civilia negotia a civibus traheretur,
+<lb/>quia solus ipsis aequus, pecuniae contemptor, necnon
+<lb/>accessu facilis et mitis judicabatm. Interea autem venit
+<pb n="5.42"/>
+<lb/>et alius, civis noster, ex longa peregrinatione, Aspafii Peripatetici
+<lb/>discipulus, et post hunc ab Athenis alius Epicuneus,
+<lb/>quorum omnium vitem et dogmata mea causa
+<lb/>pater inquirebat, mecum ad eos profectus. Erat autem
+<lb/>plurimum in Geometria, Arithmetica, Architectura, et
+<lb/>Astronomia exercitatus. Quum jam vellet doctorem linentibus
+<lb/>demonstrationibus aeque uti debere significare,
+<lb/>nati oportet, inquit, honestarum artium praecepta, quibus
+<lb/>usus es, inter su dissentire, sicut veteres in praedictis
+<lb/>dilciplinis, quarum primae Geometria et Arithmetica:
+<lb/>qua de causa temere ne sectae cuivis teipsum addicas, sed
+<lb/>tempore diuturno discas judicesque eas; sic tandem. ah
+<lb/>omnibus homluibus laudem mereberis. Quin et apud
+<lb/>philosophos in conscsso est, haec . imitatione esse digna,
+<lb/>et nunc imitanda ei, qui discere et locupletare se volet,
+<lb/>tum qui justitiae, temperantiae, fortitudini atque prttdentiae
+<lb/>studeat. Laudant enim universi virtutes has, quamvis
+<pb n="5.43"/>
+<lb/>.ipsi sibi probe conscii sint, quod -nec ullanr ipfarum
+<lb/>habeant, sed .rideri aliis fortes, temperantes, justiet prudentes
+<lb/>conantur. Caeterum doloris expertes non esse
+<lb/>revera, sed apparere tantum volunt.; Proinde hoc in primis
+<lb/>cavendum, quod cunctis hominibus magis quam vir.tus
+<lb/>in studio esu Has, inquam, a patre praeceptiones staditas
+<lb/>in hunc usque diem reservo, nullam sectam profesfus
+<lb/>eorum, quos omni studio exacte disquisierim, atque
+<lb/>imperterritus adversum vitae casus ac pericula, quemadmodum
+<lb/>et patrem vidi, permaneo, Proinde nulla plane,
+<lb/>nisi forsan omnium, quae possideo, j actura unquam aegritudinem
+<lb/>asseret: tale namque nondum .expertus sum,
+<lb/>Atqui honorem et gloriam contemnere me pater assuefecit,
+<lb/>verilatem solam magnifacere; alios vero, quum vel
+<lb/>ignominia affectos se putent ab aliquo, vel ob bonorum
+<lb/>jacturam dolere ridemus. Ex hujusmodi re. igitur nunquam
+<lb/>me dolere sensisti; nec tanta rerum damna hucusque
+<lb/>perpessi sinuas, ut non ex reliquiis corporis lenitatem
+<pb n="5.44"/>
+<lb/>tueri licuisset ;nec talem infamiam sustuli, quae mentem.
+<lb/>a rationis fede motam deiecerit. Porro fi quos audiam
+<lb/>vituperare me, quosdam vero prebere, iis repugno,
+<lb/>putoque, omnium hominum de se laudes desiderare
+<lb/>simile esse ei, quod omnium rerum possessionem velle
+<lb/>habere. Quamobrem mihi videor et forsan tibi videbor
+<lb/>nihil grave hucusque passus transegisse vitam . sum motus
+<lb/>stia et dolore.. Siquidem omnibus nondum exutus ium
+<lb/>divitiis, neque ignominiam passus. Quod fi boa, equus
+<lb/>aut servus perierit, idcirco non dolendum misti censeo,
+<lb/>eorum memori, quae pater praeceperat, consulens nequa- .
+<lb/>quum esse ob ullam bonorum jacturam dolendum, quamdiu
+<lb/>ad corporis tutelam reliqua sufficiant. Hunc possessionutn
+<lb/>illarum primum statuit finem, non esurire, non algere,
+<lb/>non sitire; fi amplior facultas contingat, in actiones
+<lb/>honestas eam esse tiansserendam. Misti igitur tanta hactenus
+<lb/>pecuniarum facultas suppetiit, quanta persugieudis
+<pb n="5.45"/>
+<lb/>illis satis fuit. Noni autem, inquit, et te duplo nos oprbus
+<lb/>superare, tum in civitate nostra quam honoratissimum
+<lb/>agere; ita ut, quae tristitiae causa praeter inexplebilem
+<lb/>cupiditatem tibi suerit, haud inveniam. Ad hanc ergo
+<lb/>stolam exercitationem me composui, in memoria semper
+<lb/>habens, meditans, expendensque, donec persuasus essem,
+<lb/>bis duo quatuor valere.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+
+
+<p rend="indent">Videamus enim, inquit, testula, qualis-.
+<lb/>nam sit affectus inexplebilis cupiditas. At disputationis
+<lb/>initium nutrimenti lusatiabrlis cupiditas exhibebit.. Etenim
+<lb/>quum supra mediocritatem cibus ingeritur, iuexp
+<lb/>labilem cupiditatem appellamus; mediocritas autem
+<lb/>ipsius ex nutrimenti usu judicatur; usus autem ipsius
+<lb/>est nutrire corpus. Nutriet prebe concoctus; concoquetur,
+<lb/>si mediocris; immodicum enim non posse concoqui
+<lb/>novimus. Quod si semel accidat, usum ejus corrumpi
+<lb/>necesse esu Si ventriculus ab incoctorum ciborum
+<lb/>morsu ac rosione molestiam passus totum excernat, synrpluma
+<pb n="5.46"/>
+<lb/>quidem nominatur diarrhoea, usus vero alimenti corrumpitur ;
+<lb/>si quidem non, ut intestina perreptet, id capi-.
+<lb/>mus, sed ut omnibus corporis partibus apponatur. At
+<lb/>ubi non bene coctum distribuitur, vitiosum humorem in.
+<lb/>venis parit Quoniam igitur in corpore nostro qualis res
+<lb/>sit inexplebilis cupiditas, didicisti, transgressus ad animum,
+<lb/>et lue naturam ejus contemplere, atque perpende in unaquaque
+<lb/>rerum materia, ali iis quae possidentur sumpto exordio.
+<lb/>ln his ergo- quaedam parum recte affectantur, uti
+<lb/>fiunt margaritae, sardonyches, et alii lapides omnes, quemadmodum
+<lb/>ornatus, quem mulieres gestant ut quid iis,
+<lb/>quae collo circumdant, simile. Hujus generis sunt vestimenta
+<lb/>auro - contexta, aut supervacuum aliquod opus
+<lb/>habentia, aut quae materiam ex longinque allatam desiderani;
+<lb/>ut quae - vocantur serica. Nonnulla possessionum
+<lb/>corporis sanitati accommoda merito expetuntur. Prima;
+<lb/>quibus- alimur; vestimur, et calceatum; inter quae habitaculum
+<lb/>etiam annumeratur. Hric spectant, quae videntur
+<pb n="5.47"/>
+<lb/>aegrotantibus idonea. Sunt quae utrisque et sanis et aegrotis
+<lb/>ex aequo conducunt, ut oleum. Nonnulla rursus
+<lb/>id genus majorem, aliqua minorem hominum corporibus
+<lb/>utilitatem asserunt, Atque jam abundantiae et possessionis
+<lb/>illorum finem manufesto te perspexisse arbitror; sicut enim
+<lb/>cubitalis calceus plane est inutilis, flo etiam quinque et
+<lb/>decem habere calceamenta praeterquam duo incommodum
+<lb/>dicitur. Aliarum rerum commoditate abunde latis
+<lb/>utimur. Ad hunc modum vestem duplicem samulosque
+<lb/>et supellectilem possidere sufficit. Apud nos, inquam, non
+<lb/>vestes solum plures duabus, test famuli quoque et fupellex
+<lb/>servantur; omnia denique nostrae domi dualem numerum
+<lb/>excedunt. Nam proventum ex iis, quae tenemus,
+<lb/>recipimus multiplicem magis, quam ut ad sanitatem folanr
+<lb/>corpori suppeditetur. Quicunque, ajo, voltiptuariam,
+<lb/>ut ferunt, degunt ritam, non duplo aut triplo plura quam
+<lb/>nos insumere videmus; verum quintuplo, decuplo, imo
+<lb/>ter decuplo. Alium ructus eundem mecum vitae modum
+<pb n="5.48"/>
+<lb/>tenere conspicio, et ex aequo mecum. dolere, licet facultas
+<lb/>non annis singulis accrescat, quum redituum decima
+<lb/>forsan insumatur portio, reliquae novem praesentibus apponantur.
+<lb/>Video enim, te ne in honesta quidem rerum
+<lb/>studia quicquam impendere audere, nihil in librorum
+<lb/>emptionem et apparatum, item scribentium exercitationem,
+<lb/>sive notis ad celeritatem,- sive figuris ad pulchritudluem,
+<lb/>quemadmodum nec in eos, qui recte legunt. Insuper
+<lb/>nulli quippiam impartientem te video, ut me frequenter
+<lb/>servis vidisti, his vestes, illis alimenta, vel aliquid
+<lb/>aliud in aegrotationem sublevandam communicare,
+<lb/>nonnullorum etiam aes alienum solvisse visus sum. ob
+<lb/>quod omnem relinquo proventum, quem a patre suscepi,
+<lb/>qui ex eo nihil, quod superfluum fit, repono, neque the-.
+<lb/>fauros congero, neque multo plura, quam impenderim, repono.
+<lb/>Nihilominus tamen relaxantem me curas saepius
+<lb/>non negaveris, sicut ipse fateris, nunquam dolentem vidisin
+<lb/>Nunquid igitur tristitiae tuae causam potes perspicere,
+<pb n="5.49"/>
+<lb/>an a me nomen ipsius audire desideras? jamne
+<lb/>istud quoque tibi fieri vis? Unam omnium animi dolorum
+<lb/>causam intellige, quam Graeci nunc quidem inexplebilem.
+<lb/>cupiditatem, nunc vero avidam habendi libidinem appellunt,
+<lb/>insatiabilitatem quidem ab. eo, quod inexplebiles
+<lb/>habeat cupiditates. Quippe praesentibus non contenti,
+<lb/>quae absunt, desiderant insatiabiles. Num si duplum consequantur,
+<lb/>.triplum parare contendunt; sic triplum habeant,
+<lb/>quadruplum appetunt. Atque hoc modo ad ditiores,
+<lb/>non inferiores respi ciunt; illos vincere moliuntur, illis
+<lb/>habere plura concupiscunt.. Tu igitur, inquibam, si univerfos
+<lb/>nostios nives sic inspicias, paucos te ipso locupletiores
+<lb/>reperies; eris autem facile reliquis omnibus opulentior;
+<lb/>item fervis, ut conflet, et .tot praeterea mulieribus.
+<lb/>Si itaque nobis circiter quadraginta millia civium
+<lb/>adsint, appositis simul eorum uxoribus et famulis, haud
+<lb/>ibis iusitias, te duodecim hominum myriadibus ditiorem
+<lb/>esse, sed hos velle praecedere, et eximium inter opulentos
+<pb n="5.50"/>
+<lb/>spectari, quamquam longe melior ciris sit sorte sua
+<lb/>contentus, qualis tu esse potes ; siquidem divitiis excellere
+<lb/>non virtutis, sed fortunae munus est, quae et
+<lb/>servos et illiberales nobis, qui ingenui vocantur, locupletiores
+<lb/>efficit. Atqui tu, amplius.: licet universis civibus
+<lb/>possideas, ut precaris, haud tamen contentus vives, quin
+<lb/>magis dispicies statim, num quis in civitate alia sit ditior.
+<lb/>Ubi si fortunam, quae suppeditare satis valeat, nactus videare,
+<lb/>ad alias transibis gentes, linque primas inter divites
+<lb/>obtinere voles; quapropter non ditior omnibus,
+<lb/>sed. osi infinitas cupiditates pauper eris perpetuo. Quod
+<lb/>si rerum usu mediocritatem tuam metiaris, divitum numero,
+<lb/>aut eorum, qui vehementer rebus abundant, jure
+<lb/>optimo te ascripseris. Ego utique, tenuioris etsi fortunae,
+<lb/>quam tu, inter eos me numero. Si: igitur ita habeas
+<lb/>persuasum, nullius rui dispendium animo molestum aut
+<lb/>grave senties, degesque beatus, quantum divitiarum securo
+<lb/>conceditur. Caeterum si eandem honoris ambiendi. insatietatem
+<pb n="5.51"/>
+<lb/>eximas, et hic a cura liber nives. At si a familiaribus
+<lb/>honorari tibi non satis fuerit, nisi omnes, qui
+<lb/>in urbe degunt, tum ii, qui nondum te cognoverint, collaudent,
+<lb/>forsan ab illis prius cognosci, dein honore affici
+<lb/>voles. Hoc autem ipsum, velle cognosci, ab omnibus, iiuo
+<lb/>satiabilis gloriae cupiditatis opus est, velle vero honorari
+<lb/>vanae stultaeque ambitionis. opus itaque tibi erit nunc
+<lb/>quoque, ut in divitiarum possessione vigilantia, sic, si ad
+<lb/>gloriae studium et ambitionem desiderium tuum extendas,
+<lb/>excruciari magis ob illos, qui, multi quum sint, nec te
+<lb/>cognoscant, nec honorent. Quod ubi intellexerimus,
+<lb/>semperque nos in eo exerceamus, tristitia carebimus.
+<lb/>Qua vero ratione exercebimus, nisi intelligamus; rectene
+<lb/>dictum sit, inexplebilem cupiditatem affectum animi esse
+<lb/>pestilentissimum, quippe quae fundamentum quoddam est
+<lb/>avaritiae, gloriae studii, ambitionis. regnandi cupiditatis
+<lb/>et contentionis? Primum itaque in promptu semper habere
+<lb/>oportet dogma de frugalitate, qua quis suis contentus
+<pb n="5.52"/>
+<lb/>est, coniunctum scilicet ei, quod de inexplebili cupiditate
+<lb/>dicitur. Nam quicunque inexplebilem cupiditatem oderit,
+<lb/>frugalitatem amabit. Quere si in hoc solo positum est
+<lb/>ipsum dolere carere, id autem in nobis fit, jam licet
+<lb/>citra dolorem vivere, dum in promptu quidem habemus
+<lb/>dogma, quomodo quis suis contentus sit, et de insatiabili
+<lb/>cupiditate : particularium vero operum exercitationem,
+<lb/>quae singulis fit diebus in his dogmatibus, quod ex prima
+<lb/>institutione aliis advenit, illis, qui hoc non consequnti
+<lb/>sunt, hac qua dixi via post aliquando continget Quis
+<lb/>namque dolore per aetatem suam vacare nolit? Aut quis
+<lb/>hoc non divitiis perituris fcelestisque praeposuerit?</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+
+
+<p rend="indent">Haec igitur aliaque multa illi, tum
+<lb/>aliis postea .plurimis recensui, atque omnibus statim
+<lb/>persuasum est; at paucissimos post illa utilitatem ex
+<lb/>posterioribus reportasse vidimus. Utque adeo enim plerique
+<lb/>illorum jam affectus accreverunt, ut curationem
+<lb/>effugerent. At si quis mediocribus adhuc inservit
+<pb n="5.53"/>
+<lb/>affectibus, in hunc modum illorum quippiam, quae prius
+<lb/>narravi, possit cognoscere, adhibito sibi, ut dictum est,
+<lb/>iuspectore et magistro, qui alia frequenter in memoriam
+<lb/>reducat, alia corripiat, partim iterum admoneat., ac ad
+<lb/>meliora proficisci instiget, teipsum praebeat exemplum
+<lb/>illorum, quae dicit monetque, poterit animum liberalem
+<lb/>probumque verbis parare. Turpe namque, libertatem,
+<lb/>quae in legibus consistit humanis, maximi esse existimatam,
+<lb/>illam autem, quae vera et naturalis, non affectare,
+<lb/>ted obtcoenis potius, lascivis et tyrannicis servire dominis,
+<lb/>nempe avaritiae, sordibus, ambitioni, laudis atque
+<lb/>honoris cupiditatibus, quarum sane omnium matrem appellere
+<lb/>avidam habendi plura cupiditatem non dubitaverim.
+<lb/>Quis ergo in animo hunc fovens bonus probusque
+<lb/>fieri potest? Quis non mille mortibus dignus, nisi talem
+<lb/>istam oderit turpitudinem? At omnium maxime iuvenibus
+<lb/>habenda est ostio, qui salutem desiderant, qui si post
+<lb/>educationem protinus immodice divitias audeant almetere,
+<pb n="5.54"/>
+<lb/>impossibile erit ipsis post annum quadragesimum se
+<lb/>ipsus recuperare. Sed pone, si ita vis, quinquagesimum,
+<lb/>ne quis inhumanitatis me arguat ; quemadmodum queuda
+<lb/>m audivi dicentem, homines crapulis, voluptatibus venerers,
+<lb/>gloria et honoribus non paucos superari, se vero
+<lb/>divitem uno tantum vinci, eo quod, quae peteret, necdum
+<lb/>acceperit. Nam is quum satis diurne singulis diebus hilarem
+<lb/>videret, ipfo male affecto, precabatur, ut docerem, quomodo
+<lb/>nullam animi aegritudinem pateretur. Sed ubi dicarem
+<lb/>rursus, annis pluribus ei opus esse ad affectuum curationem,
+<lb/>in quibus accreverit hactenus, vociferans dixit r
+<lb/>Nihil te inhumanius. Quasi vero potuissem, si ita librtum
+<lb/>fuisset, indolentem reddere celerrime, sed beneficium
+<lb/>ei invidissem, licet soli huic disciplinae nemo alius
+<lb/>invidere possit. Porro e re nostra est, omnes, quibuscum
+<lb/>consuetudinem habemus, ab animi affectibus immunes
+<lb/>esse, nec honoris cupiditate nec alio ejusmodi vitio laborare.
+<lb/>Quo namque meliores hi extiterint, hoc miliores
+<pb n="5.55"/>
+<lb/>nobis amicos experiemur. Rursus jam ad eum, qui
+<lb/>aptus virum omnino veracem cupiat versari, reversus,.
+<lb/>communem ad omnes animi virtutes viam subjuncturus
+<lb/>sum. Principio enim praesidi statuendum venit, ut in
+<lb/>singulis actionibus id, quod alterum latuerit, in mentem
+<lb/>reducat. Siquidem iudicatu interim ex functionibus est
+<lb/>difficile, quid fordities a frugalitate dissentiat. Unde nullo
+<lb/>pacto, qui primum incipit pecuniae cupiditatis affectum
+<lb/>edomare, definire hoc potest Quemadmodum enim hic
+<lb/>virtus .vicina est malitiae, sic ambitione excisa in bene
+<lb/>natis animis. modestia nascitur, Caeterum juvenunr, in
+<lb/>quibus salutis aliqua spes effulgeat, vitia senes, sed qui
+<lb/>in tota vita ingenuae indolis specimen abunde satis ex-.
+<lb/>hibuerunt., inspicere decet, increpantibus autem non obstrepere,
+<lb/>nec odium erga illos ostendere, verum gratiam
+<lb/>agere; caeterum adhortari semper oportet, ut verum
+<lb/>praedicent. Quo cognito, conaberis ex tot affectibus, si
+<pb n="5.56"/>
+<lb/>non multum, certe pauxillum evellere, quanquam initio
+<lb/>factu difficile et multo labore fieri videatur. At cogitabimus
+<lb/>haud ita procedente tempore futurum. Quo enim
+<lb/>ratio nostra magis in hujusmodi exercitiis aucta fuerit,
+<lb/>quibus coercentur minmmturque affectus, hoc minori negotio
+<lb/>perfecta animi continget  subjectio. Quippe ubi
+<lb/>rationis particeps anima nondum exercitata maximis
+<lb/>etiam affectibus imperaverit, magis id duplici tempori
+<lb/>spatio, incremento accepto, facturam esse liquet. Etenim
+<lb/>quibus exercitata est, multo generosior evadet, et
+<lb/>annui motibus proderit imminuendis. Atqui alterutrum
+<lb/>in futuri boni spem dumtaxat suffecerat. Proinde in ipfo
+<lb/>exercitii principio animum despondere non expedit, exigutnn
+<lb/>licet incrementum vir tutis in affectuum curatione
+<lb/>advenire sentias. Magna enim haec paulo post futura
+<lb/>sunt, modo sustineas audire, quae delinquas, tum vero
+<lb/>temetipsum amore prosequaris, bonus ac probus esse cupiensj
+<pb n="5.57"/>
+<lb/>non videri solum. Jam quidem animi affectuum
+<lb/>cognitio cmatioque hac qua dixi via comparabitur.
+<lb/>Caeterum de erroribus deluceps sermo futurus est</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

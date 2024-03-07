@@ -1,0 +1,2197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Ars Medica</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg007.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="305" to="412">305-412</biblScope>
+              <date>1821</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x01">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="471" to="487">471-487</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="197" to="231">197-231</biblScope>
+              <date>1638</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x02">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg0057.tlg007.verbatim-lat1">
+<pb n="1.305"/>
+      <div type="textpart" subtype="chapter" n="Prooemium">
+  <head>GALENI ARS MEDICA.</head>
+<p rend="indent">Tres sunt omnes doctrinae, quae ordine comparantur.
+<lb/>Prima quidem ex finis notione, quae per resolutionem fit;
+<lb/>fecunda ex compositione eorum, quae per resolutionem
+<lb/>fuernntf nventa; tertia ex definitionis dissolutione, quam
+<lb/>nunc instituimus. Licet autem hujuscemodi doctrinam
+<lb/>vocare non tantum definitionis dissolutionem, sied et explicationem,
+<lb/>ut nonnulli nominarunt, vel resolutionem,
+<lb/>vel divisionem, vel (ut nonnulli alii) explanationem, vel
+<lb/>expositionem, ut alii. Ac conati quidem sunt et Herophiliorum
+<lb/>quidam talem facere doctrinam, quemadmo.
+<lb/>dum Heraclides Erythraeus. Conati sunt autem et eam,
+<pb n="1.306"/>
+<lb/>quae per compositionem, et ipsi Herophilii, et quidam
+<lb/>Erafistrati sectatores; et Athenaeus Attaleus. Nemo tamen
+<lb/>ante nos eam, quae oritur a notione finis, scripsit,
+<lb/>ex qua omnes artes methodo constituuntur; sed illam
+<lb/>quidem alio in opere pertractavimus. Hic vero definitivam
+<lb/>constituemus doctrinam: quantum enim ab ea,
+<lb/>quae per resolutionem fit, et dignitate, et methodo remota
+<lb/>est, tantum et ad totius compendium, et ad particularium
+<lb/>memoriam praestare invenietur; commode
+<lb/>namque ac facile memoriae mandantur universa ex definitionis
+<lb/>dissolutione, quoniam totius artis capita in st
+<lb/>optima definitio complectitur, quam quidam substantialem
+<lb/>nominant, distinguuntque, oppositam aliis, quae notionales
+<lb/>appellantur. lllae siquidem ab accidentibus,
+<lb/>quae insunt rebus definitis, hae vero ab ipsa essentia
+<lb/>constituuntur. Elaboratum autem est a nobis particulatim
+<lb/>totius medicae speculationis opus; et in pluribus
+<lb/>conscriptum tractatibus, quibus ad tres doctrinas uti
+<pb n="1.307"/>
+<lb/>licet. Nunc vero definitivam aggrediemur, si hoc tantam
+<lb/>addiderimus, nos sola capita et ut conclusiones
+<lb/>eorum, quae fusius demonstrata sunt, nunc esse traditatos.
+<lb/></p>
+<div type="textpart" subtype="chapter" n="1">
+<p rend="indent">Medicina est scientia salubrium, et insalabrium,
+<lb/>et neutrorum. Nihil vero differt, si quis loco
+<lb/>insalubrium aegrorum dixerit. .Nomen quidem scientiae
+<lb/>communiter et non proprie accipere oportet Salubre
+<lb/>autem, et infalubre, et neutrum, unumquodque tripliciter
+<lb/>dicitur: primo quidem ut corpus, secundo autem
+<lb/>ut causa, tertio vero ut signum. Etenim corpus, quod
+<lb/>sanitatem continet; et cautam, quae iptam efficit et
+<lb/>conservat; et signum, quod indicat; haec omnia falabris
+<lb/>Graeci vocitant. Eodem modo et susceptiva
+<lb/>morborum corpora, et morbos efficientes conservantesque
+<lb/>causas, et signa indicantia, insalubria vocant. Atque
+<lb/>eadem ratione corpora neutra, causias signaque dixerunt
+<lb/> At prima quidem ratione scientia est causa.
+<pb n="1.308"/>
+<lb/>rum salubrium medicina ; jam vero propter eas et
+<lb/>aliarum ; fecunda vero insalubrium ; tertia denique nestrarutn.
+<lb/>Ac Iane et post has corporum, prima quidem
+<lb/>et hic salubrium, fecunda insalubrium, tertia neutrorum.
+<lb/>Atque de signis eadem ratione .licendum. In artis autest
+<lb/>actionibus prius quidem est corporum dignotio, ex ligni.
+<lb/>videlicet; postea vero causarum, quae in ipsis sunt, inventio.
+<lb/>Sed quoniam et effectivum, et indicativum,
+<lb/>et susceptivum, dupliciter unumquodque dicitur; huc
+<lb/>quidem simpliciter; hoc vero. ut nunc; nosse oportet,
+<lb/>medicinam esse utrorumque scientiam. Sed et ipsum sintpliciter
+<lb/>duobus dicitur modis, et quod semper ; et quod
+<lb/>ut multum ; et utrorumque medicina est scientia. Neutra vero,
+<lb/>et causa, et corpus, et signum, et quod simpliciter
+<lb/>dicitur, et quod ut nunc, tripliciter unumqucdque
+<lb/>enunciatur; hoc quidem, quia neutrius contrariorum
+<lb/>est particeps; hoc vero, quia utriusque; hoc vero,
+<lb/>quia aliquando hujus, aliquando illius. Horum autem
+<pb n="1.309"/>
+<lb/>ipsorum secundum rnrfus duobus dicitur modis; aliquam
+<lb/>do quidem, quia utriusque contrariorum ex aequo est
+<lb/>particeps, aliquando vero, quia plus alterius. Est vero
+<lb/>et m tota. definitione dictionis ambiguitas quaedam,
+<lb/>quam et ipfam diluere oportet. Quum enim dicitur, mediciuam
+<lb/>esse scientiam et salubrium, et insalubrium, et
+<lb/>neutrorum, significatur et quod omnium particularium,
+<lb/>significatur et quod qualium, significatur et quod quotundam.
+<lb/>Sed quod omnium quidem indefinitum est atqae
+<lb/>impossibile; quod. autem quorundam, imperfectum
+<lb/>atque ab arte alienum; quod vero qualium, artificiosum
+<lb/>pariter atque sufficiens ad omnia artis particularia,
+<lb/>quod etiam dicimus in medicinae definitione compretendi
+<lb/>Primum igitur a corporibus auspicabimur, qualianatn
+<lb/>sint, tum salubria, tum insalubria, tum neutra,
+<lb/>et postea de signis et causis disseremus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+<p rend="indent">Salubre simpliciter corpus est, quod ab
+<lb/>ipfo quidem ortu simplicibus ac primis partibus probe
+<pb n="1.310"/>
+<lb/>temperatum est; in organis vero, quae ex illis componttnlur,
+<lb/>est commoderatam. Salubre autem nunc est
+<lb/>corpus, quod in praesenti est sanum; est vero hoc, quo
+<lb/>tempore Ianum existit, et probe temperatum et comittoiteratum,
+<lb/>non optima ac summa et temperie et Iym.inetria,
+<lb/>sed libi propria. lplitts vero salubris simpliciter
+<lb/>corporis perpetuo quidem est id, quod et temperatiusmum,
+<lb/>et commoderatissimum est; ut multum autem,
+<lb/>quod ab optima constitutione non admodum discedit.
+<lb/>Insalubre vero simpliciter est corpus, quod ab ortu vel
+<lb/>similaribus partibus intemperatum, Vet organicis incommoderatum,
+<lb/>vel utrumque est. lnsalubre vero nunc est
+<lb/>corpus, quod eo tempore, quo tale dicitur, aegrotat.
+<lb/>PetIpicuum autem est, et id, quo tempore aegrum esse
+<lb/>dicitur, aut similaribus partibus intemperatum, aut organicis
+<lb/>incommoderatum, aut utrumque esse. Atque
+<lb/>semper insalubre est, quod ab ipso ortu aut simplicibus
+<lb/>prhni.sque partibus vel omnibus, vel quibusdam, vel
+<lb/>principibus, intemueratissimum est, aut organicis lucummoderatissimum
+<pb n="1.311"/>
+<lb/>existit, iisque similiter, vel omnibus,
+<lb/>vel quibusdam, vel maxime praecipuis. Ut multum
+<lb/>vero insalubre est corpus, quod ab hujus quidem vitio
+<lb/>recedit, nondum tamen in medio constitutum est. Quoriam
+<lb/>vero et neutrum corpus tripliciter dicebatur;
+<lb/>primum quidem, quod neutrius extremarum affectionum,
+<lb/>secundum, .quod utriusque, tertium, quod nunc hujus,
+<lb/>nunc illius est particeps: juxta primum significatum
+<lb/>neutrum erit corpus, quod exquisite medium est falaberrimi
+<lb/>etrinsaluberrimi corporis; et hujus hoc quidem
+<lb/>simpliciter tale, quod ah ipso ortu ita constitutum
+<lb/>est; hoc vero ut nunc, quod in praesenti saluberrimi atque
+<lb/>infaluberrimi medium existit; ipsius autem simpliciter neutrum,
+<lb/>quod perpetuo quidem tale est, id in omnibus aetatibus
+<lb/>tale perdurat; quod vero ut multum, ini nonnullas
+<lb/>recipit mutationes. .luxtavero secundum significatum
+<lb/>neutrum erit corpus, quod ah ortu contrariarum simul afsectionum
+<lb/>est particeps, aut in una parte, aut in duabus
+<lb/>differentibus, in una quidem, si in altera agentium
+<pb n="1.312"/>
+<lb/>qualitatum oppositione, vel utraque, etiam probe temperatum
+<lb/>sit; sed in conformatione, vel magnitudine, vel
+<lb/>numero partium, vel situ oblaeIum ; aut contra in his
+<lb/>quidem recte se habeat, vel omnibus, vel quibusdam,
+<lb/>peccet autem in temperamento. In differentibus vero
+<lb/>partibus, et per omnes oppositiones quodammodo potest
+<lb/>contrariorum simul esse particeps. Ac semper quidern
+<lb/>tale, quod per omnes aetates simile permanet. llt
+<lb/>multum vero, quod in aliquo permutatur. Ita vero et
+<lb/>nunc neutrum erit corpus, juxta secundum significatum,
+<lb/>vel quia in parte una haec quidem ipsi salubria existtmt,
+<lb/>illa vero insalubria, vel in differentibus ita assiritur
+<lb/>partibus. Secundum vero tertium significatum neutrum
+<lb/>erit corpus, quod aliquando quidem salubre, aliquando
+<lb/>vero insalubre per vices existit, ut nonnullis aceidit,
+<lb/>qui in pueritia salubres vigent, iit juventute insalubres
+<lb/>redduntur, aut contra. in uno autem tempore,
+<lb/>quod ita esit neutrum, exquisite quidem consistere nequit,
+<pb n="1.313"/>
+<lb/>ampliori vero potest. Novimus autem, quod nunc dapliciler
+<lb/>dicitur. Salubre igitur, et insalubre, et neutrum
+<lb/>corpus quot modis dicatur, et quale nnumquodque
+<lb/>fit, abunde explicatum est.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">De signis vero deinceps dicendum; sunt
+<lb/>autem et ex his salubria quidem diagnostica, quaecunque
+<lb/>praesentem indicant sanitatem, proguostica, quae fatuvam
+<lb/>praenunciant, et ananmestica, quae praeteritam memoriae
+<lb/>subji ciunt. Insalubria vero, quae. et morbum
+<lb/>praesentem indicunt, et futurum praenunciant, atque
+<lb/>praeteritum memoriae  subjiciunt. Eadem ratione et
+<lb/>neutra alia neutram affectionem deprehendunt, praenunciant
+<lb/>et memoriae  subjiciunt, atque haec nihil omnino
+<lb/>de affectionibus manifestant, vel nihilo magis salubrem,
+<lb/>quam insalubrem affectionem divulgant; et quae partim
+<lb/>quidem salubrem, partim vero insalubrem indicunt affectionem,
+<lb/>et quae aliquando quidem salubrem, aliquaudo
+<lb/>vero insalubrem,. et haec quoque secundum tria
+<pb n="1.314"/>
+<lb/>tempora, veluti salubria et insalubria. vocantur autem
+<lb/>nonnunquam a veterioribus medicis haec omnia
+<lb/>signa prognostica, tametsi. praesentia vel praeterita
+<lb/>significant. Usus vero non parvus est ex praenunciantibus
+<lb/>atque indicantibus, minor autem ex memorantibus.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+<p rend="indent">Quum igitur sint salubria corpora, haec
+<lb/>quidem simpliciter, haec vero ut nunc, quae et perpetuo
+<lb/>bene valentia dicuntur; salubrium simpliciter ccrpcrutu
+<lb/>duplicem diximus esse differentiam ; quod nonnulla
+<lb/>quidem perpetuo, nonnulla vero ut multum sint talia.
+<lb/>Perpetuo quidem, quae optimam constitutionem sortita
+<lb/>sunt; ut multum vero, quae non magnopere ab illa recedunt.
+<lb/>Horum autem dignotiones sumendae sunt ab iis,
+<lb/>quae secundum substantiae rationem ipsis insunt, et ab
+<lb/>iis, quae ex necessitate consequuntur, tum actionibus,
+<lb/>tum symptomatis, quae sane et accidentia proprie vocamus.
+<lb/>A substantia quidem ipsa eorum, quae optimae
+<lb/>ruat constitutionis, commoderatio similarium quidem
+<pb n="1.315"/>
+<lb/>partium in caliditate, frigiditate, humiditate et siccitate,
+<lb/>organicarum vero in quantitate ac numero eorum, ex
+<lb/>quibus componuntur, ac praeterea conformatione, et situ
+<lb/>partium singularum totiusque organi. Ab his vero,
+<lb/>quae ex necessitate consequuntur ru similaribus partibus,
+<lb/>ut quatenus ad tactum [pectat, commoderatio mollitiei
+<lb/>ac duritiei, quatenus autem ad visum, coloris probitas,
+<lb/>et laevitatts atque asperitatis mediocritas.. in rationibus
+<lb/>vero perfectio, quam et ipsarum integritatem appellamas.
+<lb/>Ab his vero, quae organicas partes comitantur,
+<lb/>in organorum universi corporis et symmetria let pulchritudine,
+<lb/>ac praeterea in earum, quae ipsis sunt, actionum iutegritate.
+<lb/>Optimae igitur constitutionis corporum signa
+<lb/>indicantia sunt haec. Eorum autem, quae ab ipsa recedunt,
+<lb/>led adhuc salubria existunt, nonnulla quidem
+<lb/>iu similarium partium temperie vitium aliquod leve  subeunt,
+<lb/>nonnulla vero in organorum commoderatione, et
+<lb/>id quoque perexiguum, atque vel omnium, vel quorundam,
+<lb/>vel utrorumque. Vitiorum vero genera eadem
+<pb n="1.316"/>
+<lb/>sunt ac quae integritatem perficiunt, temperies quidem
+<lb/>in similaribus, numerus autem et conformatio et magnitudo
+<lb/>et litus in organicis ; utrisque vero partibus communis
+<lb/>unitas, quam et ipsorum continuitatem appellamus.
+<lb/>in his autem ipsis generibus sunt corporum insalubrium vitia
+<lb/>secundum utrumque insalubris significatum. Terminus
+<lb/>autem, qui utrumque distinguit, est actionum laesio seusilis
+<lb/>ac manifesta.. Quae vero ab optima corporum confututione
+<lb/>paulum dimoventur, re vera quidem et
+<lb/>ipsa in aliquo laesa sunt, non tamen id fenta deprehenditur.
+<lb/>Haec autem distinguuntur, quod validius aut
+<lb/>imbecillius actiones obeant, morbisicisque causis reluctentur.
+<lb/>At simpliciter insalubria corpora distinguuntur, quod
+<lb/>facile a causis insalubribus superentur, quodque multum
+<lb/>ab actionum integritate deficiant. in medio
+<lb/>autem amborum constituuntur neutra, tum quae fimplicitate
+<lb/>appellantur, tum quae cum latitudine quadatn.
+<lb/>Ac dividitur totius sanitatis latitudo in tres
+<pb n="1.317"/>
+<lb/>partes, multam et nitas latitudinem habentes, quarum
+<lb/>prima quidem erit salubrium corporum, fecnnda
+<lb/>neutrorum, tertia insalubrium, quibus succedunt
+<lb/>deinceps, quae jam aegrotant corpora, manifestis sentui
+<lb/>actionum laesionibus distincta. Quae igitur doloribus
+<lb/>afficiuntur, et quorum motus sunt depravati, aut
+<lb/>omnino perditi, manifestas habent notas. Quae vero
+<lb/>nnberilles edunt actiones, in magnis quidem decessibus
+<lb/>facile discernuntur, in minoribus vero ambigua stant, atque
+<lb/>idcirco in eo genere noxae consistit affectio neutrius
+<lb/>contrariorum particeps, quam et ipsam neutram
+<lb/>diximus appellari; qutun haec omnia tenso iudicentur,
+<lb/>non ipsis rerum natura, periculum enim esset, ne in
+<lb/>dogma <foreign xml:lang="grc">ἀειπαθεΐας</foreign>, id est perpetui affectus, traheremur.
+<lb/>Haec igitur sunt sanorum corporum signa, sed quae aut insalubris,
+<lb/>aut salubria, aut neutra existunt quantitate distantiae
+<lb/>differunt, constitutis a nobis extremis terminis inter
+<lb/>se contrariis, optima constitutione corporis, et nuper facto
+<pb n="1.318"/>
+<lb/>morbo, ac deinceps considerantibus, utu eorum vicinio.
+<lb/>ra sint ea, quae ad examen corpora veniunt. Quod
+<lb/>enim propius est optimae constitutioni, salubre; quod
+<lb/>vero ab hac longius recedit, atque ad id., quod jam asgrotat,
+<lb/>propius accedit, insalubre. Quod autem inter
+<lb/>utrumque situm est, atque aequaliter ab utroque distare
+<lb/>ridetur, neutrum est</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+<p rend="indent">Optimae igitur constitutionis corporis notas
+<lb/>explicarimus. Eorum vero, quae ab ipfa deficiunt,
+<lb/>totidem sunt numero genera, quae in magis et minas
+<lb/>secari possunt. His autem in tres partes divisis, insalubris
+<lb/>simpliciter corporis signa trademus, ex bis enim et reliquae
+<lb/>duae latitudines innotescent. Generatim igitur prius in
+<lb/>opere de optima constitutione dictum est; speciatim autem
+<lb/>nunc dicetur, ubi prius partes diviserimus. Sunt
+<lb/>vero earum quatuor universae differentiae, nam nonnullae
+<lb/>earum principia quaedam existunt; quaedam vero ab
+<lb/>ipsis ortae sunt; quaedam nec aliarum gubernationi
+<lb/>praesunt, neque ab aliis gubernantur, quae cognatas habent
+<pb n="1.319"/>
+<lb/>facultates, quibus reguntur; quaedam vero insitas
+<lb/>simul et influentes habent. Principia igitur sunt cerebruta,
+<lb/>cor, hepar et testes. Ab his vero ortum habent,
+<lb/>ipsisque ministrant, nervi quidem et spinalis medulla
+<lb/>cerebro, cordi vero arteriae, hepati venae, ipsa vero
+<lb/>seminaria vasa testiculis. Quae autem per se gubernamur,
+<lb/>cartilago, os, ligamentum, membrana, glandulae,
+<lb/>adeps, caro simplex. Caeterae vero omnes partes,
+<lb/>communem istis habentes ex se dispensationem, arteriis,
+<lb/>nervis et venis indigent. Capillorum autum atque
+<lb/>unguium gubernatio nulla est, sed sola generatio. Hae
+<lb/>igitur sunt partium differentiae.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+<p rend="indent">Signa autem nos temperamenti cujusque,
+<lb/>sumpto a cerebro initio, deinceps dicemus. Sunt vero
+<lb/>quinque universa genera -signorum, quae ipsius naturam
+<lb/>ostendunt, unum quidem totius capitis constitutio; eundum
+<lb/>vero, sensilium actionum integritas et vitium;
+<lb/>tertium, effectivorum; quartum, principum, et quintum,
+<pb n="1.320"/>
+<lb/>naturalium. Aliud vero genus praeter haec omnia sii
+<lb/>quae ab extrinsecus ipsi occursantibus advenit alteratio.
+<lb/>Equidem universi capitis affectio ex ejus magnitudine, figura
+<lb/> atque capillis sumitur. Parvum igitur caput vitiosae cos.
+<lb/>stitutionis cerebri proprium est indicium. Magnum vero nos
+<lb/>necessario probae constitutionisindicium; sed siquidem ob
+<lb/>insitae facultatis robur eveniat, quae multam atque optimam
+<lb/>materiam formaverit, bonum signum, at fi ob materias
+<lb/>solius multitudinem, haudquaquam bonum. Distinguesda
+<lb/>igitur haec sunt, tum figura, tum his, quae ab eo
+<lb/>ortum habent. Figura quidem, si concinnum fit, semper
+<lb/>enim hoc bonum est signum. His autem, quae ab
+<lb/>eo ortum habent, si valida sit cervix, et aliis ossibus optico
+<lb/>constet, atque si universum nervosum genus ipsi vegetent
+<lb/>robustumque siti Propria autem capitis figura est, veluti
+<lb/>si excogitatos globum integrum cereum, leviter utrinque
+<lb/>depressum. In hoc enim necesse est posteriores anterioresque
+<lb/>partes magis gibbas fieri, quam globo conveniat;
+<pb n="1.321"/>
+<lb/>utrasque vero laterales magis rectas. Quod si occipitis
+<lb/>eminentia alicui minuatur, simul intuere nervos atqae
+<lb/>cervicem cum aliis ossibus. Nam, si secundum nalaram
+<lb/>habeant, materiae defectu, non facultatis imbecillitate
+<lb/>hoc contigit; illis vero prave affectis, principium
+<lb/>est debile. Plurimum autem occipitis defectum commemoratorum
+<lb/>comitatur imbecillitas; rarissimeque aliter
+<lb/>evenire consuevit. Caput etiam in occipitio magis acuminatum
+<lb/>animadverte, iisdem adhibitis distinguendi ralienibus,
+<lb/>quibus in toto ipso capite grandiori facto utehamar.
+<lb/>At saepenumero et hic bonum signum est cum
+<lb/>figura concinna cerebelli, quod nonnulli medici
+<lb/>posterius cerebrum appellant, ut re vera et posterius
+<lb/>est, et futura lambdoide circumscribitur. Est vero
+<lb/>haec pars spinalis medullae principium, ac proinde nervotum
+<lb/>omnium, qui in toto animali sunt activi. Ipsis
+<lb/>autem pars posterior per se paucos admodum sentientes
+<lb/> obtinet nervos, permultos vero activos, quemadmodum
+<lb/>et altera, et anterior, sentientes quidem plurimos,
+<pb n="1.322"/>
+<lb/>paucos .admodum activos. Quare et probe confit.tuta
+<lb/>utraque pars robustas habebunt sitas propagmen
+<lb/>Eaedem quoque distinctiones adhibendae sunt in partibus
+<lb/> capitis anterioribus ad frontem spectantibus, quae
+<lb/>etiam in posterioribus ad ipsius et parvitatem et magnitudicem
+<lb/>inspicientes, atque itidem figuram et sensus ibi
+<lb/>collocatos, visum, gestum et odoratum. Mutuas namque
+<lb/>de se notas tradunt, sequo invicem testantur, et quae
+<lb/>a principio oriuntur, principii integritatem et vituum;
+<lb/>et principium ea, quae ab ipsi, nascuntur. At
+<lb/>enim principum actionum virtus ac vitium sunt prioripii
+<lb/>folius ipsius per te indicia. Voco autem actiones
+<lb/>principes, quae a solo principio procedunt: solertia quidem
+<lb/> subtilis substantiae cerebri signum est; tarditas vero
+<lb/>intellectus crassae; discendi vero facilitas formas facilo
+<lb/>suscipientis; memoria autem stabilis. Sic et disuendi
+<lb/>difficultas formas non facile suscipientis, et oblivio
+<lb/>fluidae; mobilitas quoque .in opinionibus calidae,
+<lb/>stabilitas autem frigidae. Adhuc autem duo indiciorum
+<pb n="1.323"/>
+<lb/>genera mihi videor praetet misisse, de quibus sum ab
+<lb/>initio me dicturum pollicitus: unum quidem ad actiones
+<lb/>attinet naturales; alterum vero ad ea, quae extrinsecus
+<lb/>occursanti. Erit autem de utrisque se tuto communis.
+<lb/>Si cerebrum quidem in quatuor primis qualitatibus
+<lb/>prebe temperatum sit, omnia quae diximus habebit
+<lb/>moderata; et excrementa, quae vel per palatum,
+<lb/>vel aures, vel nares, vel oculos expurgantur, haec quoque
+<lb/>modice habebit, atque ab iis, quae extrinsecus occursant,
+<lb/>minime laedetur, quae vel calesaciunt, vel reIrigerant,
+<lb/>vel exiccant, vel humectant. Talibus caprili
+<lb/>capilis, quum adhuc sunt insontes, subrusi, quum vero
+<lb/>pueri, subflavi, quum autem adoleverint, flavi fiunt,
+<lb/>mediique quodammodo sunt inter eos, qui absolute Iunt
+<lb/>crispi, et simplices; non tamen Iacite calvescunt. Quae
+<lb/>vero dicta ac posterius dicenda indicia sunt, accipere
+<lb/>oportet ut. in tempestatis habitationibus. Quae autem
+<lb/>ad capillos attinent, non ad locorum tantum, sed
+<lb/>ad humorum quoque temperamentum, quod cerebri temperameirto
+<pb n="1.324"/>
+<lb/>proportione respondeat, sunt referenda. Si
+<lb/>vero commoderato calidius sit, in altera vero oppositione
+<lb/>probe temperatum, si quidem praeter modum calinias
+<lb/>fuerit, omnia, quae dicentur, validiora erunt indieta;
+<lb/>sed si parva sit exuperantia, imbecilla. Commanis
+<lb/>autum haec ratio statuatur in omnibus partibus,
+<lb/>quarum in temperamentis universis iudicia fumus tradituri.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+<p rend="indent">Deinceps igitur caloris cerebri signa,
+<lb/>praeter ea quae prius enarrata sunt, sequuntur; quae
+<lb/>circa caput existunt, omnia rubicundiora, et calidiora
+<lb/>sunt, et quae in oculis sunt venae, magis sensui patent;
+<lb/>capilli oditis in lucem celeriter in capite nascuntur;
+<lb/>multo quidem calidioribus, probo temperamento, nigri
+<lb/>et robusti et crispi fiunt; bon multo autem,  substari
+<lb/>quidem primum fiunt, deinde nigricant, ac progrediartubus
+<lb/>aetatibus calvescunt, ebque magis, quo fiant casidiores.
+<lb/>Excrementa vero palati, narium, oculorum
+<lb/>et aurium pauca et concocta ipsis sunt, quum integram
+<pb n="1.325"/>
+<lb/>habuerint sanitatem. At si aliquando eis caput repleatur;
+<lb/>continuo enim, ac tum praesertim, quum nullam victus
+<lb/>servaverint rationem, tale quid eis accidit; plura quidem
+<lb/>in ipsis excrementa, sed non incocta generantur; impletar
+<lb/>autem atque gravatur eorum caput a calefacientibus
+<lb/>cibis et potibus, odoribus, atque hisce omnibus, quae extrinfecus
+<lb/>occursant, inter quae est qui nobis circumsunditur
+<lb/>aer. Sed . praeterea magis, si non solum natura
+<lb/>calida, sed etiam humida corpora extiterint. Brevibus
+<lb/>autem somnis hujusmodi temperamenta contenta sunt,
+<lb/>iisdemque minime profundis. Frigidioris vero, quam
+<lb/>oporteat, cerebri ludicra sunt uberiora in propriis
+<lb/>emissariis excrementa, et capilli recti, et rufi, et sta biles,
+<lb/>et qui longo post ortum tempore nascuntur, tenues,
+<lb/>atque ab initio male nutriti; et facile a causis frigidis
+<lb/>laeduntur, atque hoc i plo laesionis tempore catarrhis
+<lb/>et gravedinibus capiuntur; neque vero tangentibus calida,
+<lb/>neque intuentibus rubicunda, quae circa caput sunt,
+<lb/>apparent; et oculorum venae viana effugiunt; et
+<pb n="1.326"/>
+<lb/>somnolentiores quodammodo sunt. Siccioris autem cerebri
+<lb/>iudicia: meatus excrementis vacant, et sensuum
+<lb/>conspicitur integritas; sunt autem vigiles, capilli robustillimi,
+<lb/>et qui celerrime statim ab ortu nascuntur, crispi
+<lb/>autem potius sunt, quam recti, citoque calvescunt. IIumidioris
+<lb/>vero cerebri indicia capilli plani, neque prorIus
+<lb/>calvescunt. Sensus hebetes sunt, et excrementorum
+<lb/>multitudo, somni multi atque profundi. Atque hae quidem
+<lb/>simplices sunt intemperies.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+<p rend="indent">Ex copulatis vero prima quidem calida
+<lb/>et sicca est: qua praediti excrementis carent, sensusque
+<lb/>acres habent, et vigilantissimi sunt : praepropere
+<lb/>calvescunt, ipsisque capilli et celerrime nascuntur et ubersime
+<lb/>aluntur, magni quidem ac crispi, caput autem tangentibus
+<lb/>calidum apparet et rubrum ad vigoris usque
+<lb/>aetatem. Si vero cum calore conjuncta sit humiditas,
+<lb/>siquidem utraque a mediocritate leviter declinet, coloris
+<lb/>bonitas adest et calor, oculorumque venae magnae,
+<pb n="1.327"/>
+<lb/>et excrementa copiosiora, mediocriter coela, capilli
+<lb/>recti et sufflavi, nec facile calvescunt. Calidis autem
+<lb/>ejusmodi caput impletur ac gravatur. Quod fi humidius
+<lb/>sit, multo majore excrementorum proventu scatet. Si
+<lb/>vero plurimum calor et humiditas excesserint, morboiam
+<lb/>eris ac excrementofum, prompteque ab humidis et
+<lb/>calidis offendetur. His autem auster perpetuo adversatur,
+<lb/>aquilones vero saluberrimi sunt. Neque vero longas
+<lb/>vigilias ferre possunt. Ad somnum autem conversi,
+<lb/>una cum fopore vigilant. Somnia visis plena habent,
+<lb/>et vifum caliginosum sensusque hebetes. Quod si longe
+<lb/>justo temperamento calidius. cerebrum fit, paulo vero
+<lb/>humidius, manent calidi temperamenti figna, cum quibus
+<lb/>obscurae humoris notae coniunguntur, quemadmodum,
+<lb/>si multo quidem humidius sit cerebrum, minus vero
+<lb/>calidum, perspicua frrmaque erunt humoris iudicia,
+<lb/>caloris vero infirma. Haec autem compositarum omnium
+<pb n="1.328"/>
+<lb/>intemperaturarum communis est ratio. Frigida autem et
+<lb/>siccacerebri temperamenta, quantum ex se est, caput siinidum
+<lb/>reddunt ac decolorant. Semper enim memoria
+<lb/>tenendum est, quod initio explicavimus, considerandumque,
+<lb/>quantum ex humorum temperie immutetur luitis
+<lb/>autem ini ejusmodi temperamentis oculi venis carent,
+<lb/>prompteque a causis frigidis laeduntur, ideoque is incerta
+<lb/>instabilique valetudine degunt. Aliquando quidem
+<lb/>capita levissima habent, emissariaque excrementis vacua,
+<lb/>aliquando vero destillatione et gravedine leri occasione
+<lb/>prompte corripiuntur. in juventute quidem sensus ejus
+<lb/>acres sunt, omnique vitio carent, procedente vero tetupure
+<lb/>celeriter- marcescunt. Et, ut temet dicam, omnes
+<lb/>praeproperam senectutem in capite ostendunt: quocirca
+<lb/>cito canefcunt. Capilli autem aegre -nascuntur, maligne
+<lb/>nutriuntur in lucem editis, atque rufi sunt. Nec vero
+<lb/>tempore, si frigus siccitatem magis exuperet, calvescunt.
+<pb n="1.329"/>
+<lb/>Contra fi humiditatem siccitas plurimum, frigiditas vero
+<lb/>caliditatem paululum Inperet, calvescunt. Humida vero
+<lb/>et frigida cerebri temperamenta foporoscs ac fomniculofcs
+<lb/>efficiunt, ac tensus depravant, caput excrementis
+<lb/>implent, frigorisque iniuriis obnoxium reddunt, facileqae
+<lb/>replent ac destillationibus gravedinibusque opportuuum
+<lb/>efficiunt. Neque vero, qui sic temperati sunt, cala
+<lb/>restant. Haec igitur sunt cerebri temperamentorum indicia,
+<lb/>quibus ad singula sentiendi instrumenta progredlendo
+<lb/>notas deprehendes.</p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+<p rend="indent">Sed de oculis fotum disputare satis fuesit.
+<lb/>Qui enim calidi tangentibus manifeste sentiuntur
+<lb/>facileque ac crebro moventur et venas amplas habent,
+<lb/>calidi omnes sunt. Frigidi vero bis contrarii sunt. Et
+<lb/>humidi quidem molles sunt, humoreque referti; sicci vero
+<lb/>squalentes et duri, facileque a similibus suo temperamento
+<lb/>causis laeduntur, Iuvantur vero a moderato contumorum
+<lb/>usu. Verum id in omni partis cujusque temparamento
+<pb n="1.330"/>
+<lb/>cognoscendo commune esto. oculorum magnitudo
+<lb/>concinna una cum. actionum integritate temperatae
+<lb/>materiae copiam; ex qua conditi sunt, ostendit; quae, si
+<lb/>haec desint, multam quidem materiam, sed male temperatam
+<lb/>significat. Oculorum vero parvitas et concisum
+<lb/>una cum actionum integritate paucam quidem, sed temperatum
+<lb/>ostendit materiam, ex qua sunt conformati. Actionum
+<lb/>vero vitium cum inconcinnitate quadam panem:
+<lb/>simul et pravam materiam ipsorum significat. Quae autem
+<lb/>ad colorem attinent, ad hunc modum explicanda
+<lb/>fiunt. Oculi puro ac non multo humore collucentes
+<lb/>splendoris magnitudine caesii redduntur; nigri vero contra:
+<lb/>horum autem medii medias causas obtinent. Caesius
+<lb/>igitur oculus fit aut propter magnitudinem, aut fpleadorem
+<lb/>crystallini humoris, aut prominentem ejus situm,
+<lb/>aut tenuis aquosi humoris, qui ante pupillam positus est,
+<lb/>exiguitatem et puritatem.. Maxime autem caesius sit omnibus
+<pb n="1.331"/>
+<lb/>his una concurrentibus. Quod si horum quaedam
+<lb/>adsint, quaedam vero desint, magis et minus caesius fiet.
+<lb/>Niger vero oculus fieri solet, cum crystallinus humor,
+<lb/>paucus, vel in profundo positus, vel exquisite splendidus
+<lb/>ac lucidus non est: aut tenuis humor vel multus vel
+<lb/>impurus est; aut cum aliqua horum adsunt, aut omnia.
+<lb/>In his autem majoris et minoris ratio invenitur, ut
+<lb/>ante declaratum est. Tenuis itaque humor aquosior et
+<lb/>copiosior oculum humidiorem esse arguit, quemadmodum
+<lb/>crassior et parcior sicciorem. Crystallinus vero, si quidem
+<lb/>durior fit, sicciorem; si vero mollior, humidiorem. Ad
+<lb/>eundem modum, si tenuem plus justo superet, aridiorem,
+<lb/>sin superetur, contrarium efficit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+<p rend="indent">De cordis autem temperamentis deinceps
+<lb/>dicemus, si prius memoraverimus, nos, cum unamquamque
+<lb/>partem seipsa calidiorem esse, aut frigidiorem, aut
+<lb/>sicciorem, aut humidiorem dicemus, non ad aliquam
+<lb/>aliam, sed ad se ipsam- referre. Nam quocunque modo
+<pb n="1.332"/>
+<lb/>natura frigidius cor sit, temperamenti longe calidioris
+<lb/>est, quam cerebrum calidissimum. Calidioris igitur corda,
+<lb/>quatenus ad tuam mediocritatem refertur, signa quaqluu
+<lb/>inseparabilia ac propria fiunt, respirationis et pullus
+<lb/>magnitudo, celeritas et frequentia; audacia, et ad actiones
+<lb/>obeundas impigritas. Quod si plurimum calor eraperet,
+<lb/>praeceps acerbaque iracundia et suriofa temeritas.
+<lb/>Est autem his thorax hispidus, maximeque pectus et vicinae
+<lb/>hypochondriis partes. Magna autem ex parte corpus
+<lb/>universum calidum reddit calida cordis intemperies, nili
+<lb/>jecur vehementer obsistat. Paulo post autem totius corporis
+<lb/>signa recensebimus. Quinariam thoracis latitudo calens
+<lb/>est nota, nisi hic etiam vehementer cerebrum obstiterit;
+<lb/>quoniam ut plurimum spinae medullae magnitudo fili proportione
+<lb/>respondet. Tanta quidem. vertebrarum, quanti
+<lb/>spinae medullae, magnitudo est; proindeque et totius spisse.
+<lb/>Cum ea autem parte, quae dorso adhaeret, thorax coniungitur,
+<pb n="1.333"/>
+<lb/>quemadmodum navis cum carina; quocirca dortam
+<lb/>longitudine necessario aequabit, latitudinem vero
+<lb/>vertebrarum ratione, quum ad crassitudinis earum proportionem
+<lb/>conlitus fisa habebit. Quum vero cordis calor
+<lb/>imperans ex primo ortu flatu distendat ac dilatet, ipsius
+<lb/>calori proportione respondebit. Quare si exiguum caput
+<lb/>sit, thorax vero latus, maximum caloris cordis est arguaentum.
+<lb/>Si vero id magnum sit, thorax vero parvus,
+<lb/>turdis frigidioris maxime propria nota est Quod si
+<lb/>capiti proportione thorax respondeat, aliis notis cordis
+<lb/>temperamentum explicandum est, nullo ex thoracis magnitudine
+<lb/>sumpto indicio. ln frigidiore vero corde pullus
+<lb/>stat mediocribus minores, non tamen necessario tardiores,
+<lb/>aut rariores. Respiratio vero, si quidem thorax
+<lb/>nato minor fit, quanto cordis frigus vehementius, pulsibus
+<lb/>proportione respondebit: sin majora quam pro cordis
+<lb/>frigoris vehementia, non solum minor, sed et tardior
+<lb/>et rarior erit. Tales natura timidi sunt, diffidentes, torpenses
+<pb n="1.334"/>
+<lb/>et cunctatores, et glabrum pectus habent. De
+<lb/>exiguitate autem ejus disserere, ut ante dictum est,
+<lb/>oportet, quemadmodum et de corporis universi calore.
+<lb/>Siccius autem cor duriores pulsus efficit, et iram non
+<lb/>praecipitem quidem, sed feram ac implacabilem, universumque
+<lb/>corpus ut plurimum aridius, nili jecur obstiterit.
+<lb/>Humidioris vero cordis signa, pulsus molles,
+<lb/>mores ad iram proclives, sed quae facile pacari possit,
+<lb/>universumque corpus humidius, nisi jecur repugnet.</p>
+</div>
+<div type="textpart" subtype="chapter" n="11">
+<p rend="indent">in conjugatis vero primis cordis qualitalibus
+<lb/>intemperaturae ad hunc modum habent. Calidi
+<lb/>et sicci cordis pulsus duri sunt, magni, celeres ac Irequentes,
+<lb/>et respirationes magnae, celeres ac frequentes;
+<lb/>multoque magis celeritas ac frequentia major fit,
+<lb/>si thorax ad cordis proportionem auctus non sit. His
+<lb/>autem maxime omnium pectus ac hypochondria hirsuta
+<pb n="1.335"/>
+<lb/>sunt Ad actiones vero prompti sunt, animosi, celeres,
+<lb/>truculenti, immansueti, improbi,. impudentes, tyrannialique
+<lb/>moribus praediti. Etenim concitati animi sunt
+<lb/>ac vix placabiles. De corporis autem universi temperamento
+<lb/>praeterea et de thoracis latitudine ad eorum,
+<lb/>quaesere declarata sunt, proportionem disserere oportet.
+<lb/>Si vero humiditas una cum calore vincat, minus hirsuti
+<lb/>sunt, quam hi, de quibus ante meminimus, non minus
+<lb/>vero ad res agendas prompti. Nec vero feroci sunt animo;
+<lb/>sed tantum ad iram proni. Pulsus autem molles
+<lb/>sunt, magni, celeres ac crebri. Et respiratio, siquidem
+<lb/>thorax cum corde proportionem habeat, eandem,
+<lb/>quae pulsibus inest, formam servabit. Quod si minor
+<lb/>is sit, tante celerior ac frequentior, quam ante commemoratae,
+<lb/>respiratio erit, quanto thorax minor extiterit.
+<lb/>si vero temperamentum a mediocritate multum deflectat,
+<lb/>praefertimque ad humiditatem, praeter ea, quae supra
+<lb/>retulimus, morbos ex humorum corruptione ac putredine
+<pb n="1.336"/>
+<lb/>procreabit. Et expiratio inspiratione major et celerior
+<lb/>est, in pulsibusque celeris contractio. Humidioris vero
+<lb/>et frigidioris cordis temperamenti pulsus molles fnnt
+<lb/>Quatenus autem ad mores attinet, dissidentes, timidi
+<lb/>feguesque sunt. Hi sunt pectore glabro. Et quemadmodum
+<lb/>prompte non irascuntur, sic nec pertinacis sunt irae.
+<lb/>Quae vero ad thoracem et universum corpus attinent,
+<lb/>ea non aliter explicare oportet, quam quae prius exposita
+<lb/>sunt. Frigidius autem ac aridius cor pulsus duros et
+<lb/>parvos efficit; respirationem vero (siquidem thoracis
+<lb/>exiguitas cum cordis frigore proportionem habeat) pulsibus
+<lb/>respondentem; fin is latior fit, raram et tardata.
+<lb/>Ili omnium minime iracundi sunt: coacti famen aliqua
+<lb/>occasione irasci, iram retinent. Glabro autem ac debili
+<lb/>omnium maxime sunt pectore. De thoracis autem parvitate
+<lb/>et totius corporis frigore eodem modo disseresdum
+<lb/>est, ubi unum commune in omnibus, quae dicta
+<lb/>sunt, memoraverimus, nempe nos de moribus tam in
+<lb/>hoc quam in alio opere ad temperamenti cognitioatnt
+<pb n="1.337"/>
+<lb/>proditis, non de bonis pravisque ex philosophia comparatis,
+<lb/>sed nnicuique congenitis verba Iecisse.</p>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+<p rend="indent">Iecoris calidioris notae: venarum latitudo;
+<lb/>flava bilis uberior, et in aetatis vigore atra. Calidior
+<lb/>ipsis sanguis est, ob idque corpus universum, nisi
+<lb/>cor repugnet. Hirsuta his hypochondria sunt, ac venter.
+<lb/>Frigidioris autem, venarum angustia, uberior pituita,
+<lb/>Ianguis universique corporis habitus frigidior, nisi a corde
+<lb/>calebat. Glabra his hypochondtla sunt, ac venter.
+<lb/>Siccioris vero, sanguis crassior ac paucior, venae duriores,
+<lb/>universus corporis habitus aridior. Humilioris autem,
+<lb/>sanguis quidem uberior ac humidior: venae melliores,
+<lb/>quemadmodum universum corpus, nisi cor repugnet.
+<lb/>Calidioris vero simul et aridioris iecoris signa sunt:
+<lb/>hypochondria hirsutissitna, Ianguis crassior et siccior, flava
+<lb/>bilis plurima et in aetatis vigore atra; venae amplae ac
+<pb n="1.338"/>
+<lb/>duriores sunt, quemadmodum et universum corpus. Calor
+<lb/>enim, qui ex corde prodit, seigus, quod ex iecore prosiciscitur,
+<lb/>vincere potest, quemadmodum frigus calorem.
+<lb/>Siccitatem vero cor humidius in contrarium mutare non
+<lb/>potest. In harum autem qualitatum medio iecoris humiditas
+<lb/>consistit, utpote quae magis a cordis siccitate vineatur,
+<lb/>quam siccitas ab humiditate, sed minus tamen
+<lb/>quam calor, atque etiam longe minus quam seigus. Ipsa
+<lb/>enim omnium iecoris qualitatum Facillime superatur.
+<lb/>Constat igitur, quod, in idem conspirantibus utriusque
+<lb/>principii temperamentis, corpus totum pro illarum viribus
+<lb/>omnino afficietur, cujus notas post explicabimus.
+<lb/>Humidius autem simul et calidius^ iecur minus quam calidius
+<lb/>et aridius hirsuta reddit hypochondria. Plurimum
+<lb/>Vero sanguinis gignit, magnasque venas efficit, et corporis
+<lb/>habitum humidiorem ac calidiorem, nisi cor repugnet.
+<lb/>Si Vero utraque qualitas naturalem modum vehementer
+<pb n="1.339"/>
+<lb/>exuperet, morbo ex putredine humorumque vitio corpus
+<lb/>prompte corripietur. Atque etiam magis, si aucta
+<lb/>sit humiditas, non multum vero, calor: contra vero, si
+<lb/>parum quidem aucta sit humiditas, plurimum vero calor,
+<lb/>humorum vitio minime laborat. Humidius autem aes
+<lb/>frigidius jecur glabra habet hypochondria, magisque pituitosum
+<lb/>sanguinem gignit una cum venarum angustia.
+<lb/>Universum corpus sibi simile reddit; nisi cor in contrarium
+<lb/>mutet. Frigidius autem et aridius jecur paulum
+<lb/>sanguinis gignit, angustasque venas efficit, et hypochondria
+<lb/>glabra reddit, nisi et hic cor quoque vicerit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+<p rend="indent">Testium temperamentum calidum quidem
+<lb/>in venerem pronum est, mares procreat, et foecundum
+<lb/>est, pilisque genitalia et quae circum ea sunt partes
+<lb/>celeriter replet. Humidum multam humidamque genituram
+<lb/>parit; siccum vero paucam et mediocriter crassum
+<lb/>procreat: crassissimam vero ac foecundissimam calidius
+<pb n="1.340"/>
+<lb/>ac siccius. Initioque statim animans celeriter ad
+<lb/>venerem excitat. Caeterum talibus celerrime genitales
+<lb/>circumque omnes partes sursum versus ad umbilicum
+<lb/>usque, deorsum vero usque ad media femora pilis replentur.
+<lb/>Ejusmodi temperatura ad venerem multum quidem
+<lb/>concitatur, sed ea celerrime satiatur; quae si violenta
+<lb/>sit, noxam adfert. Coeuntibus autem calore et
+<lb/>humiditate, minus quidem hirsuti sunt, sed genitura magis
+<lb/>abundant, tametsi quam caeteri veneris appetentiores
+<lb/>non sunt, sed huic innocentius indulgent. Quod si ambo,
+<lb/>nempe calor et humiditas, multum excesserint, non
+<lb/>line incommodo a venere abstinent. Si vero humidiores
+<lb/>ac frigidiores natura testes sint, vicinas partes pilis nudas
+<lb/>habent, tardeque venerem exercere incipiunt, nec
+<lb/>ad eam ruunt. Aquosam autem et tenuem habent genitutam
+<lb/>et insoecundam et ex qua soeminae procreantur.
+<lb/>Frigidior vero et siccior temperies reliqua alia habet
+<pb n="1.341"/>
+<lb/>ante declaratis similia; femen vero omnino crassem et
+<lb/>paucum obtinet.</p>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+<p rend="indent">Quod autem totius corporis habitus
+<lb/>cordi et jecori similis sit, prius diximus; ei vero similior
+<lb/>est, quod unam quamlibet ex primis qualitatibus, quas
+<lb/>agentes vocant, potentiorem habet. Totius autem corporis
+<lb/>habitus de his maxime partibus dicitur, quae primae
+<lb/>intuentibus objicientur; cujusmodi sunt musculi offa
+<lb/>omnia cingentes, ex simplici primaque carne et fibris,
+<lb/>quas ipsa convestit, constantes. Nam propria musculorum
+<lb/>substantia ex his duobus est composita. Quae autem
+<lb/>ad eos vasa perveniunt, velut rivi quidam sunt, non
+<lb/>quidem eorum substantiam constituentes, led ea suggerentes,
+<lb/>quibus ferventur. Horum igitur temperamenti
+<lb/>signa in temperata regione intelligenda sunt. Cutem
+<lb/>enim immutant intemperatae, per se formam imprimentes;
+<lb/>et notas quasdam corrumpunt. Ad eundem autem
+<pb n="1.342"/>
+<lb/>modum, si quis in temperata regione aestivo tempore
+<lb/>nudum se foli exposuerit, signa, quae ex colore, mollitie
+<lb/>et duritie sumuntur, immutabit. Si vero, ut temperata
+<lb/>regio est, ita moderatam victus rationem ferves, nec
+<lb/>sole te plurimum quotidie exuras, sed nec (ut nonnulli)
+<lb/>ad instar virginum in umbraculis degas, temperamenti
+<lb/>exquisitas notas praebebis. Tanquam igitur de
+<lb/>his futura sit disputatio, huic adhibendus animus est
+<lb/>Commoderati temperamenti signa, quod ad totum animalis
+<lb/>habitum attinet, sunt: color ex rubro candidoque
+<lb/>mistus, capilli modice flavi et ut plurimum crispi,
+<lb/>caro tum qualitate tum quantitate mediocris est. Ejusmodi
+<lb/>enim corpus omnium exuperantiarum omnino est
+<lb/>medium, ita ut ad ipsum relata corpora et intelligantur
+<lb/>et dicantur. Siquidem crassem corpus cum ipso comparatum
+<lb/>dicitur crassem, quemadmodum et tenue, si cum
+<lb/>eodem conseras; corpulentum quoque et gracile, pingue,
+<lb/>durum, et molle, hirsutum et glabrum. Nullum igitur
+<pb n="1.343"/>
+<lb/>horum mediocre est, sed quod ad omnis mediocritatis
+<lb/>fummum (qualis est Polycleti regula) pervenit, ita ut
+<lb/>tangentibus neque molle neque durum, neque calidum
+<lb/>neque frigidum, inspicientibus vero neque hirsutum neque
+<lb/>glabrum, neque crassem neque gracile esse, neque
+<lb/>aliquem alium excessum habere videatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="15">
+<p rend="indent">Quae autem justo calidiora sunt, non
+<lb/>autem humidiora, aut aridiora, quatenus ad carnosum
+<lb/>genus attinet, de hoc enim praesens est disputatio, tangentibus
+<lb/>quidem tanto calidiora sentiuntur, quanto sunt
+<lb/>temperamento calidiora, tantaque hispidiora, quanto
+<lb/>sunt calidiora, minusque pinguia. Rubro autem sunt
+<lb/>colore, ac nigro capillo. Frigidioris temperamenti ligna:
+<lb/>corpus gIabrum est et pingue, idque tangentibus frigidum
+<lb/>sentitur. Color vero tum ipsius tum ejus capilli
+<lb/>rufior est; et si frigus multum excesserit, lividior ; quem
+<lb/>et plumbeum nonnulli medici vocare solent. Siccius
+<lb/>temperamentum tanto gracilius temperato est et durius,
+<pb n="1.344"/>
+<lb/>quanto siccitas major; in reliquis vero simile. Humidius
+<lb/>autem in caeteris temperato proximum est, sed carnosius
+<lb/>ac mollius.</p>
+</div>
+<div type="textpart" subtype="chapter" n="16">
+<p rend="indent">ln copulatis vero primarum qualitatum
+<lb/>intemperantiis composita est cognitionis forma. Calidior
+<lb/>enim et siccior hifpidior est, ac durior, et macilenta
+<lb/>gracilisque, nigrum quoque capillum obtinet. Quod si
+<lb/>calor multum excesserit, cutis etiam nigra erit. Calidior
+<lb/>bumidiorque temperatura eo mollior ac carnosior est,
+<lb/>quo utraque qualitas ab optima constitutione magis recedit.
+<lb/>Plurimum vero inaucta prompte morbis ex putredine
+<lb/>corripitur, quoniam facile vitiosis humoribus impletur.
+<lb/> Si vero paulo humidior, multo vero calidior
+<lb/>sit, paulo quidem et molliores et carnosiores quam temperata
+<lb/>reddit. Sed nec paulo hispidiores sunt, nec tangentibus
+<lb/>calidiores apparent. Pilum quoque nigrum
+<lb/>gignit et vacuam pinguedinis carnem. Quod si paulo
+<pb n="1.345"/>
+<lb/>calidior sit, multo vero humidior, mollem ac multam
+<lb/>carnem procreabit, coloremque ex rubro et albo mistum;
+<lb/>et tangentibus corpus paulo calidius tendetur. Atque
+<lb/>ut semel dicam, in conjugatis temperamentis exuperantis
+<lb/>qualitatis notae Iemper praepollent. Frigidior autem ac
+<lb/>humidior temperatura si leviter utraque exuperet, glabra
+<lb/>est, alba, mollis, crassa et pinguis. Sin auctior sit,
+<lb/>pro qualitatum incrementi ratione reliqua habebunt, color
+<lb/>vero una cum capillo rusus erit; si plurimum utraque
+<lb/>increverit, lividus. Si vero inaequabilis qualitatum
+<lb/>sit exuperato, ejus, quae magis excesserit, notae seorsum
+<lb/>praepollebunt. At si Irigtts et siccitas ex aequo auctae
+<lb/>sint, natura durum, gracile, glabrum corpus erit: tangentibus
+<lb/>vero frigidum sentietur. Pinguedo tamen, etsi
+<lb/>graciles turri, per carnem dispersa est; capilli autem et
+<lb/>cutis color Digeris modo respondent. ln declinante autem
+<lb/>aetate, temperie calida et sicca in fulgidam et siccam
+<pb n="1.346"/>
+<lb/>naturam transeunte, corporis habitus gracilis fit ac durus,
+<lb/>utramque bilem gignit; proinde niger et hirsutus
+<lb/>ell. Si vero earum qualitatum altera plurimum, altera
+<lb/>paululum a mediocritate discedat, superantis signa praepollebunt,
+<lb/>alterius obscura erunt. In omnibus autem,
+<lb/>tum quae diximus, tum quae dicturi sumus, communis
+<lb/>nota est Irigoris quidem et raritatis, si prompte a Irigore
+<lb/>pars afficiatur; caloris vero aut densitatis, si sacile
+<lb/>id perferat. At si ab exiccantibus laedatur, Iqualidaque
+<lb/>ac sicca sentiatur et aegre moveatur, siccitatis,
+<lb/>quemadmodum, si ab humidis gravetur, humiditatis est
+<lb/>indicium. Videndum autem est, an idem omnes inter se
+<lb/>masculi, an diversum habeant temperamentum; in omnibusque
+<lb/>consideranda subiectorum ossium est magnitudo.
+<lb/>Nonnunquam enim gracilior pars esse videtur, quatenus
+<lb/>ad musculos attinet, quum gracilior non Iit; sed propter
+<lb/>ollium tenuilatem talis apparet. Ad eundem modum et
+<lb/>crassior in quibusdam saepe esse Videtur, non propter
+<pb n="1.347"/>
+<lb/>ossium magnitudinem, Ied propter carnis molem, quae
+<lb/>et aucta, et imminuta, et siccior humidiorque partem
+<lb/>sicciorem aut humidiorem reddit; pauca quidem et dura
+<lb/>sicciorem, multa vero et mollis humidiorem. Eodem
+<lb/>modo et spatia intermedia partium similarium, humoris
+<lb/>aut plus aut minus in se continentia, ejusque vel erathoris
+<lb/>vel tenuioris partem humidiorem esse aut aridiorem
+<lb/>arguunt: humidiorem quidem, ubi tenuior et uberior;
+<lb/>sicciorem vero, ubi crassior simul et parcior humor
+<lb/>est. Ipsae enim solidae corporis partes, quae vere solidae
+<lb/>ac primae sunt, nullo modo humidiores fieri possunt,
+<lb/>sed satis est, si celeriter eas exiccari prohibeas.
+<lb/>Intermedia vero ipsarum spatia hoc vel illo humore replere
+<lb/>possumus, hic enim est proprium simplicium partium
+<lb/>alimentum, quod ex appositione sit, non autem per
+<lb/>vasa attrahitur. Communis vero haec ratio est omnium
+<pb n="1.348"/>
+<lb/>partium; de qua rursus, cum de salubribus ac insalubribus
+<lb/>causis commentabtmur, dicemus, nunc autem reliqua
+<lb/>tractemus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="17">
+<p rend="indent">Ventris signa, natura quidem siccioris,
+<lb/>si Ratim siticulosi fiant, paucusque potus his sufficiat, et
+<lb/>largior laedat, fluctuationesque excitet, aut per summa,
+<lb/>quod redundat, innatet, cibisque gaudent siccioribus.
+<lb/>Ilumidioris vero, si et siticulosi non fiant, et sine molcstta
+<lb/>largiorem potum Ierant, cibisque gaudeant humidioribus.
+<lb/>At si calidior natura venter sit, melius coquit
+<lb/>quam appetit, longeque melius dura, natura ac coetu
+<lb/>difficilia. Nam quae tacite immutantur, corrumpit. Cibo
+<lb/>vero ac potu calido gaudet, nec a fulgidis noxam ullam
+<lb/>accipit, Ii modice his utatur. Calidis enim cibis ac
+<lb/>potionibus gaudet, neque a fulgidis noxam ullam accipit,
+<lb/>si modice ipsis utatur. Frigidior autem natura venter
+<lb/>probe quidem appetit, Ied male concoquit, cibos praetertim
+<lb/>immutatu difficiles ac fisigidos. In ipIo enim sacile
+<lb/>acescunt; quocirca ructibus acidis ejusmodi venter est
+<pb n="1.349"/>
+<lb/>opportunus. Atque frigidis quidem gaudet, sed ab immoderato 
+<lb/>eorum usu facile ostenditur. Similiter autem
+<lb/>et suris incidentinm rerum frigidarum consortium dia
+<lb/>ferre non potest, quemadmodum neque calidus calidorum.
+<lb/>Ventris vero intemperies ex morbo contractae
+<lb/>hoc ab ingenitis disserunt, quod non similia, quemadmodum
+<lb/>nativae, appetant. Conjugatae autem ventris intemperantiae
+<lb/>ex simplicium compositione noscuntur. Diligenter
+<lb/>autem quae diximus attendenda sunt, et ab his,
+<lb/>quae dicemus, distinguenda, quando non solus venter
+<lb/>sitim adfert et adimit, nec frigidi aut calidi potus appetentiam
+<lb/>excitat, sed thoracis viscera, nempe cor et
+<lb/>pulmo. At qui ob horum calorem siticulosi sunt, plus
+<lb/>spiritus attrahunt et longe expirant, ardoremque in thorace
+<lb/>sentiunt, non autem in hypochondriis, quemadmodum
+<lb/>solent, qui ob ventriculum sitiunt. Nec protinus
+<lb/>potu sitis extinguitur. Frigidus quoque potus, quam uberior
+<lb/>calidus, eorum sitim melius sedat.. Hos vera frigidi
+<pb n="1.350"/>
+<lb/>aëris inspiratio refrigerat, nihil eos juvans, quibus
+<lb/>ventriculus sitim attulit. Ad eundem modum, qui contrario
+<lb/>modo se habent, frigida inspiratione manifeste
+<lb/>laeduntur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="18">
+<p rend="indent">Atque hoc est maximum frigidi pulmunis
+<lb/>argumentum. Quemadmodum autem frigida inspiratio
+<lb/>hos manifeste laedit, frigorisque sensum in vellit,
+<lb/>ita calida est ipsis amica. Sed et pituitosa excrementa
+<lb/>cum excreatu et tussi rejiciunt. Pulmonis autem siccitas
+<lb/>excrementis et pituita vacat; et vocem canoram reddit;
+<lb/>quemadmodum humor fuscam et raucam. Majorem vero
+<lb/>acutioremque edere volentibus interveniunt excrementa.
+<lb/>Sed nec ipsa vocis magnitudo a calore sit; quemadmodum
+<lb/>nec exiguitas a frigore; verum illam asperae arteriae
+<lb/>amplitudo, perflationisque vehementia; hanc vero
+<lb/>contrariae causae efficiunt. Itaque neque perpetuo, neque
+<lb/>primario, sed ex accidente solis ingenitis, non autem
+<pb n="1.351"/>
+<lb/>adventitiis temperamentis vocis tum magnitudo, tum
+<lb/>exiguitas succedit. Quoniam autem instrumenta alia
+<lb/>aliam temperamenti naturam sequuntur, instrumentorum
+<lb/>vero vox: ingenitam intemperiem concludere ex voce
+<lb/>licebit. Etenim vox lenis arteriae lenitatem arguit,
+<lb/>quemodmodum asperitatem: aspera. Itaque laevitas artiliae
+<lb/>temperamenti mediocritatem sequitur, asperitas
+<lb/>vero siccitatem. Asperitas enim ab inaequalitate corperis
+<lb/>duri fit. Caeterum simplicium ejus partium siccitas
+<lb/>duram efficit arteriam, aequalem vero humoris per
+<lb/>has dispersi penuria. Eodem modo neque vox natura,
+<lb/>acuta sine faucium angustia, neque gravis fine amplitudine
+<lb/>fieri potest. Angustia quidem insitae frigiditatis
+<lb/>est soboles, amplitudo vero caloris. Naturalibus autem;
+<lb/>vocum. differentiis proportione respondent hae, quae ab
+<lb/>aliquo fiunt affectu; eaedem et causarum, a quibus fiunt,
+<lb/>natae existunt, de quibus abunde iu libris de voce
+<lb/>disputatum est. Reliquae vero animantis partes internae obscuras
+<pb n="1.352"/>
+<lb/>fui temperamenti notas habent. Elaborandum
+<lb/>tamen est, ut ex his, quae juvare et laedere solent, et
+<lb/>ex naturalium facultatum functionibus eas cognoscamus.
+<lb/>In tertio autem libro de symptomatum causis diximus,
+<lb/>facultatis cujusque virtutem ac vitium temperiem praeire.
+<lb/>Hactenus igitur de temperamentorum notis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="19">
+<p rend="indent">Magnitudinis vero, vel conformationis,
+<lb/>-vel numeri, vel positurae vitia, quae quidem tensibus
+<lb/>objecta sunt, facile cognosci possunt. Ex his vero,
+<lb/>quae sensum latent phalia quidem . difficile, alia vero
+<lb/>nullo modo cognoscuntur. Siquidem capitis et cerebri
+<lb/>magnitudo ac figura manifeste apparent, atque de bis
+<lb/>ante meminimus, quemadmodum et de thorace. Similiter
+<lb/>autem nec .difficile est opertas scapulas, humeros;
+<lb/>brachia, cubitos, extremas manus, coxas, femora, tibias
+<lb/>et pedes cognoscere, sive in conformatione, sive magnitudine,
+<lb/>sive numero, sive partium quibus constant compositione
+<pb n="1.353"/>
+<lb/>vitium contractum sit. Horum enim cujusque
+<lb/>actiones ostensae manisellae sunt. Eorum vero, quae in
+<lb/>corpore latent, non omnia dignosci possunt. Cuiusdam
+<lb/>enim ventrem vidi adeo exiguum, rotundum et prominentem,
+<lb/>juxta hypochondrium collocatum, ut evidenter
+<lb/>se sua circumscriptione tum videntibus tum tangentibus
+<lb/>proderet. Similiter et cuiuspiam vesicam adeo emineotem
+<lb/>exiguamque deprehendi, ut, si tardius utinam reddidisset,
+<lb/>circumscriptus tumor manifeste appareret. Quanquam
+<lb/>autem nulla aliarum internarum partium mauiIestum
+<lb/>mihi unquam de se praebuit indicium, danda
+<lb/>tamen opera est, quam maxime fieri potest, ut earum
+<lb/>virtutem et vitium, si non certa firmaque scientia, sala
+<lb/>tem artificiola coniectura cognoscamus; veluti exempli
+<lb/>gratia jecoris. Nonnullos enim novi, et quidem mullos,
+<lb/>qui graciles venas habebant, corpusque universum decosoratum,
+<lb/>quorum, cum paulo plus cibi assumpsissent,
+<lb/>praesertim flatulenta, crassi et glutinosi, alii velut pondus
+<pb n="1.354"/>
+<lb/>quoddam innixum ac suspensum in dextri hypochondris
+<lb/>profundo sentiebant, alii tensionis dolorem: bos
+<lb/>igitur et jecur parvum et angustos meatus habere verisimile
+<lb/>est. Alterum vidi toto habitu pituitofum, quotidie
+<lb/>tamen pallidam bilem vomitione repetentem Itaque
+<lb/>alvi excrementa inspicienda este duxi; in quibus
+<lb/>bilis minimum erat. Meatum igitur, qui bilem defert,
+<lb/>non exiguam ejus humoris portionem ad pylorum, urant
+<lb/>ventriculi partem, transmittere conieci. Quod in quibusdanr
+<lb/>animantibus cernere licet. Ex his liquet, quod
+<lb/>ad eorum., quae tensum latent, cognitionem plurimas:
+<lb/>conferat tum apparentium ex corporum dissectione cagustio,
+<lb/>tum actionum ufuumque inquisitio. Quisquis
+<lb/>igitur nofcendorum corporum, quae a naturali statu (ut
+<lb/>modo dicebatur) recedunt, peritiam habere cupit, is in
+<lb/>corporum incisionibus, iunctionumque ac usuum inquisitionibus
+<lb/>fete exerceat oportet. De sus autem omnibus
+<lb/>feorfum in altis operibus scripsimus, de quibus in site
+<pb n="1.355"/>
+<lb/>totius hitjus libri verba faciemus, ut, quod discere libuerit,
+<lb/>studiosi, ex quonam opere praecipue deceroere
+<lb/>oporteat, cognoscant. Sed de his hactenus.</p>
+  <div type="textpart" subtype="chapter" n="20">
+<p rend="indent">Quae vero in praesentia insalubria sunt,
+<lb/>hoc est, quae jam aegrotant corpora, dignoscenda, quoque
+<lb/>sunt: sensibus quidem obvia ex magnitudinis, coloris,
+<lb/>figurae, numeri et situs a naturali statu mutatione,
+<lb/>ac differentia, quae a duritie et mollitie, frigore
+<lb/>et calore sumitur. Quae vero sensum effugiunt, ut summatim
+<lb/>dicam, actionum offensionibus, vel excrementis,
+<lb/>vel doloribus, vel tumoribus praeter naturam; horum,
+<lb/>inquam, vel quibusdam, vel omnibus. Sigillatim autem
+<lb/>morbosae cerebri affectiones ex dementiae speciebus,
+<lb/>aut sensuum, vel phantafiae, vel functionum, quae voluntatis
+<lb/>imperio obeuntur, laesionibus; aut palati, narium
+<lb/>aut aurium excrementis, aut ipsius cerebri dolorum
+<lb/>differentiis. Cordis vero ex ejus tum difficultatis
+<lb/>spirandi speciebus, tum palpitatione; praeterea ex pulibus
+<pb n="1.356"/>
+<lb/>et ejus et arteriarum ; ex animi quoque concitatione
+<lb/>et demissione, ex febribus, perfrictionibus, colorum
+<lb/>differentiis et ipsius doloribus. iecoris vero ex
+<lb/>humorum delectu et exuperantia mutatione in statum
+<lb/>praeter naturam, et ex decolorattone, praeterea ex permutata
+<lb/>cibi distributione, aut nutricatione, aut supervacuorum
+<lb/>excretione; quin etiam ex ejus gravitate ac
+<lb/>tumoribus, et doloribus non solum in ipso genitis, verum
+<lb/>etiam aliarum partium consensu obortis, quales in
+<lb/>aliqua difficultatis spirandi et tussis specie existunt. Ad
+<lb/>eundem modum ventris vitia ex coctione, appetentia
+<lb/>humidi et sicci et supervacuorum excretione deprehenduntur
+<lb/>Similiter ex singultu, ructu, nausea, vomitu,
+<lb/>et eorum, quae votmtione rejiciuntur, speciebus. Quin
+<lb/>etiam thoracis vitia nuntiant spirandi difficultas, tussis,
+<lb/>et ejus partis dolor, eorumque, quae expuuntur, disserentia.
+<lb/>Asperae quoque arteriae morbos difficilis spiratio,
+<lb/>tussis, ejus dolor et quae expuendo reiciuntur, et
+<pb n="1.357"/>
+<lb/>vocis vitia ostendunt. Eadem ratione aliarum omnium
+<lb/>partium affectus ex tumore, dolore, functionum offensione
+<lb/>et excrementorum differentia dignoscuntur. Tumores
+<lb/>quidem praeter naturam snnt inflammationes,
+<lb/>fcIrrhi et oedemata. Dolor vero, in quacunque corporis
+<lb/>parte firmatus sit, aut solutionem continuitatis, aut
+<lb/>vehementem suhitamque immutationem ostendit. Contiunitas
+<lb/>autem sectione, erosione, contusione et tensione
+<lb/>solvitur. lmmutatur vero substantia a calore, Ligore,
+<lb/>siccitate et humiditate. Trifariam autem functio laedifur.
+<lb/>Aut enim imbeciIliter, aut depravate, aut omnino
+<lb/>non editur. Quae vero excernuntur, alia affectatum
+<lb/>Iocorum particulae snnt, alia excrementa. At quae in
+<lb/>ipsis naturaliter continentur, de se unumquodque praebet
+<lb/>indicium. He omnibus his in opere de Iocis affectis fusius
+<lb/>disputatum est; quod nemo ante nos aut in artem redegit,
+<lb/>aut absolvit; quemadmodum nec aliud ullum,
+<pb n="1.358"/>
+<lb/>quod veteres quidem inceperint, ad finem perductum est.
+<lb/>Aegrotantium igitur corporum ex illo opere, ex hac
+<lb/>vero methodo eorum, qui in morbum labuntur, et qui
+<lb/>sanitati restituendi sunt, notae petendae sunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="21">
+<p rend="indent">Eorum autem, qui aegrotaturi sunt, signa
+<lb/>mediam inter salubria et insalubria speciem obtinent.
+<lb/>Nam sanis omnia secundum naturam insunt; praeter
+<lb/>naturam vero aegrotis, quatenus aegrotant. In horum
+<lb/>vero medio constituta sunt, quae futuros morbos praenuntiant;
+<lb/>quorum alia secundum naturam sunt, sed quali
+<lb/>talibus, quantitatibus vel temporibus permutata. Quaedam
+<lb/>vero praeter naturam, sed quam quae in morbis
+<lb/>sunt obscuriora. Quocirca affectiones ipsae corporum,
+<lb/>quae in morbos lapsura esse submonstravi, atque indicantia
+<lb/>ipsas signa in neutrorum genere posita sunt. Primario
+<lb/>enim haec sanitatem ostendunt, secundo veto loco
+<lb/>morbos. Eadem cum di Versis comparata tum neutra,
+<pb n="1.359"/>
+<lb/>tum morbosa existunt. Nam quatenus affectionem praesentem
+<lb/>ostendunt, neutra; quatenus vero futuram praenuntiant,
+<lb/>morbosa sunt. Eadem ratione et quae per
+<lb/>morbos salubria signa visuntur, quatenus futuram sanitatem
+<lb/>praedicunt, salubria dicuntur; quatenus vero praesentem
+<lb/>morbum monstrant, morbosa. Palum quoque est,
+<lb/>quod, quae utrumque indicant, secundum aliquod vocis
+<lb/>neutrius significatum dici neutra poterunt. Mirum autem
+<lb/>videri non debet, eadem signa cum diversis comparata
+<lb/>triplicem rationem habere, nimirum salubrium,
+<lb/>morboso rum et neutrorum. Juxta aliud vero significatum,
+<lb/>quae ex morbo convalescentibus insunt signa, neutra
+<lb/>dicimus, in quo significato signa, quae in senectute
+<lb/>adsunt, accipienda esse arbitror. Haec quidem omnia
+<lb/>pluribus tum notionibus, tum rationibus subjecta sunt.
+<lb/>Quae igitur in absoluta sanitate atque inculpata sunt
+<lb/>signa, sub solam salubrium notitiam veniunt. Et quae
+<lb/>in aegrotis sunt, nec futuram sanitatem praenuntiant,
+<lb/>soli quoque morbosomm notioni subiiciuntur. De his
+<pb n="1.360"/>
+<lb/>autem deinceps dicetur. At primum de his, quae suturam
+<lb/>praedicunt aegritudinem, quorum quum duplex Iit
+<lb/>differentia, prius ea, quae quantitate, qualitate et tempore,
+<lb/>non autem propria specie a naturali statu immutata
+<lb/>sunt, tractemus; cujusmodi est cibi appetentia vel
+<lb/>majo^ vel minor, vel quae suo tempore non accidit, Vel
+<lb/>insoliti cibi, aut ejus excrementorum vel plurium, vel
+<lb/>pauciorum, vel liquidiorum, vel duriorum excretio. Simili
+<lb/>modo humidiorum recrementorum defectus ac exoperantia
+<lb/>praeter naturam, aut eorum coloris aut substantiae,
+<lb/>aut temporis excretioni a natura destinati mutatio.
+<lb/>Vigiliae quoque ac somni prolixiores, aut suo
+<lb/>tempore non advenientes. Similiter potus liberalioris
+<lb/>aut parcioris, calidi aut frigidi insolita cupiditas; quemadmodum
+<lb/>veneris immodicus usus, aut intempestivum
+<lb/>desiderium. Sudores plures aut parciores, quam naturae
+<lb/>conveniat,. ad motum tarditas, aut hunc molientibus
+<lb/>gravlias, aut vehemens exolutio, aut mensium suppressio,
+<pb n="1.361"/>
+<lb/>aut profusio major vel minor. Quemadmodum sanguinis
+<lb/>ex venis, quae haemorrhoides dicuntur, fluxio. Sed et
+<lb/>si tanta in cibo et potu, quanta prius fuit, voluptas
+<lb/>non sentiatur, futuri morbi est nota. Similiter autem
+<lb/>et mentis hebetudo praeter naturam, aut oblivio quaedam
+<lb/>insolita, aut pluribus somni quam ante visis pleni.
+<lb/>Quin etiam auditus, gustus et visus hebetiores ac ohscuriores.
+<lb/>Atque ut lemel dicam, quaecunque secundum
+<lb/>naturam inerant, vel aucta, vel imminuta, vel tempore,
+<lb/>vel quantitate, vel qualitate immutata. Atque adeo corporis
+<lb/>moles major et minor, rubicundior aut albior, simiIiter
+<lb/>lividior et nigrior, ructusque et sternutamenta et
+<lb/>flatus plures aut pauciores, quam ex consuetudine. Eodem
+<lb/>modo narium, palati, vel aurium (quibus cerebrum expurgatur)
+<lb/>recrementa quantitate, qualitate aut tempore
+<lb/>immutata. Haec quidem ex eorum genere esse censeotur,
+<lb/>quae secundum naturam sunI. Morsus autem ventris,
+<lb/>vel stomachi, vel alicujus intestinorum, aut dolor,
+<pb n="1.362"/>
+<lb/>qui vel ventre exonerando, vel vomendo, vel urina
+<lb/>reddenda, vel alius quispiam mediocris sentitur, ex
+<lb/>eorum, quae praeter naturam sunt, genere esse censentur.
+<lb/>Nondum tamen ita affecti aegrotare dicuntur, quemadmodum
+<lb/>nec quibus caput aut gravatur aut dolet, quum
+<lb/>nondum haec solita impediant opera, atque hic est
+<lb/>aegrotandi terminus in ejusmodi affectionibus. Quocirca
+<lb/>eandem affectionem cum aliis comparatam jam morbosam
+<lb/>et neutram etiam dicnnus. Nam .pro Virtutis robore
+<lb/>vel facile serentis, vel jam victae harum quaeque aut
+<lb/>morbus est, aut neutra affectio. Eodem modo et quae
+<lb/>in sensibus fiunt, non quae majoris et minoris ratione
+<lb/>inter se disserunt, sed quae ex genere praeter naturam
+<lb/>sunt, morbosa signa existunt, tantisper dum exigua sunt
+<lb/>et nondum a solitis operibus hominem abducere possunt.
+<lb/>Eiusmodi autem sunt, quum gustui vel salsum vel amarum
+<lb/>vel aliquem alium saporem omnia, quae eduntur et
+<lb/>bibuntur, repraesentant; aut etiam si nihil assumatur,
+<pb n="1.363"/>
+<lb/>talis saliva apparet, ln odoratu vero, quum sine rei
+<lb/>odorae praesentia qualitatem aliquam sentimus, aut
+<lb/>quum plura diversaque naribus oblecta eundem omnia,
+<lb/>ac si essent similia, odorem repraesentant; saepe vero
+<lb/>nihil omnino odoramur; aut quum foetorem aliquem,
+<lb/>etiam si nihil adsit, quod graviter oleat, sentimus. In
+<lb/>auditu autem sonitus et strepitus praeter naturam sunt.
+<lb/>Similiter et quae oculis nigra, obscura, caesia, rufa et
+<lb/>flava apparent. Atque horum alia rotunda esse, alia
+<lb/>oblonga, quaedam gracilia, quaedam crassa, omnia autem
+<lb/>volitare videntur. ln tactu autem, quum inaequalitas
+<lb/>quaedam, vel densitas, vel gravitas, vel tensio, vel
+<lb/>stupor, vel ulcerosa affectio in toto corporis habitu sentitur.
+<lb/>Pari modo in unaquaque corporis parte vel tensio,
+<lb/>vel contusio, vel morsus, vel gravitas, si nec magnae,
+<lb/>nec stabiles sint, neutrum esse affectum significant,
+<lb/>morbum vero praenuntiant.
+</p>
+<pb n="1.364"/>
+</div>
+<div type="textpart" subtype="chapter" n="22">
+<p rend="indent">Quae vero jam aegrotantibus insunt
+<lb/>notae, aliae sanitatem, aliae mortem significant. Prtores
+<lb/>salubres sunt, posteriores vero generaliter quidem
+<lb/>morbosae, specialiter vero perniciosae dicuntur. Generaliter
+<lb/>autem ex functionum virtute et vitio, particulatim
+<lb/>vero ex singularum actionum virtute et vitio notae
+<lb/>sumuntur; quarum genera prius declarata sunt; primum
+<lb/>quidem principiorum, secundum autem eorum,
+<lb/>quae ab illis ortum habent, et tertium eorum, quae sisse
+<lb/>gubernant, a principiis Vero propagines quasdam accipiunt.
+<lb/>Quartum autem genus eorum, quae tunc diximus,
+<lb/>ex se quidem ad praedicendum est inutiIe: led
+<lb/>per accidens aliquando ex ipsis praesagimus, quemadmodum
+<lb/>omnino et ex recrementis. Ex illis quidem
+<lb/>consensus ratione; ex recrementis vero, quod
+<lb/>ea coctionis et cruditatis in se notas continent. Quare
+<lb/>fieri omnino non potest, quin significent, aut naturam
+<lb/>materia, aut materiam natura, aut neutram altera
+<pb n="1.365"/>
+<lb/>superiorem esse. Salubria quidem ligna dicuntur,
+<lb/>si natura superet, morbosa vero, si superetur, neutra
+<lb/>vero, si pares pugnae sint. Manifestae autem coctionis
+<lb/>ligna inter salubria, quemadmodum inter morbosa cruditatis
+<lb/>annumerantur. Quae vero neque coctionem, neque
+<lb/>cruditatem manifestam ostendunt, ex neutrorum natura
+<lb/>sunt. Sed et neutra sunt, quae nunc hoc, nunc
+<lb/>contrarium significant, quales sunt denigrati digiti.
+<lb/>Ejusmodi autem sunt critica accidentia. De quibus
+<lb/>omnibus in libris de crisibus, quemadmodum et de
+<lb/>singulis actionibus in libris de symptomatum causis, dictum
+<lb/> est, ex quibus omnem earum matenam particulatim
+<lb/>sumere oportet. Ne autem prolixior sim, orationi
+<lb/>de signis finem faciam; ad causas vero me conseram.</p>
+</div>
+<div type="textpart" subtype="chapter" n="23">
+<p rend="indent">Quoniam autem harum aliae salubres,
+<lb/>aliae morbosae, aliae vero neutrae sunt : primum de satuIntibus
+<lb/>disseremus. Quoniam vero harum ipsarum quaedam
+<pb n="1.366"/>
+<lb/>conservant, quaedam vero efficiunt sanitatem, sunt autem
+<lb/>efficientibus conservantes et tempore et dignitate priores,
+<lb/>initium a conservantibus sumemus. Quum igitur non
+<lb/>unum sit salubre corpus, sed plura, ut ante explicatum
+<lb/>est, horum cuique causa, qua conservetur, peculiaris
+<lb/>erit: quandoquidem ad aliquid omnis causa refertur.
+<lb/>Rursus igitur hic ab optima corporis constitutione initium
+<lb/>sumemus, ejus salubres causas considerantes; quarum
+<lb/>inventionem rei natura docet. Nam si non pateretur
+<lb/>corpus nec mutaretur, optima perpetuo maneret
+<lb/>constitutio: neque arte opus esset, quae illi praesideret.
+<lb/>Sed quoniam atteratur, mutatur et corrumpitur, nec
+<lb/>servat quam ab initio habebat constitutionem, hac ratione
+<lb/>praesidio eget. Quot igitur modis immutatur, tot
+<lb/>auxiliorum, hoc est conservatricum causarum, genera
+<lb/>habebit; quas ex his, quae jam dicta sunt, constat, ex
+<lb/>genere esse corrigentium. Sed quoniam paulatim corvectiones
+<lb/>fiunt, antequam magna accidat noxa, praesentis
+<pb n="1.367"/>
+<lb/>status conservatrices, non autem futuro malo prospiciens
+<lb/>tes medici appellant. lmmutatur autem corpus a quibusdam
+<lb/>ex necessitate, i- ab aliis non ex necessitate. Ex
+<lb/>necessitate autem dico, quae nulla ratione vitari possunt;
+<lb/>non ex necessitate vero reliqua. Necessario qmdem
+<lb/>omnino in ambiente aere vertamur, edimus, bibimus,
+<lb/>vigilamus et dormimus ; ensibus vero et feris non necellario
+<lb/>objicimur. Unde in priore causarum genere ars
+<lb/>versatur, quae corpori tuendo dicata est, non autem in
+<lb/>posteriore. His igitur expositis, in singulis eorum, quae
+<lb/>necessario corpus immutant, proprium salubrium causarnm
+<lb/>genus inveniemus. fi num quidem ex ambientia
+<lb/>aeris contactu, alterum ex motu et quiete, tum corporis
+<lb/>universi, tum ejus partium. Tertium ex somno et vigilia.
+<lb/>Quartum ex his, quae assumuntur. Quintum ex
+<lb/>his, quae exernuntur et retinentur. Sextum ex animi
+<lb/>affectibus. Ab his enim omnibus corpus affici necesse
+<pb n="1.368"/>
+<lb/>est. Nam .ab ambiente aere aut calefit, aut refrigeratur,
+<lb/>aut exiccatur, aut humectatur, aut a conjugatis his assicitur,
+<lb/>aut tota substantia immutatur. Ex motu autem
+<lb/>et quiete utroque immoderato aut calefit aut refrigeratur,
+<lb/>aut humectatur aut resiccatur, aut ab iisdem eoputatis
+<lb/>afficitur. Eodem autem modo somnus et vigilia
+<lb/>ipsum ex necessitate afficiunt, quemadmodum et animi
+<lb/>motus; et quae assumuntur, aut excernuntur, aut retinentnr.
+<lb/>Haec enim omnia corpus immutant, sanitatemque
+<lb/>corrumpunt, alia quidem protinus ac manifeste, alia
+<lb/>vero alterius causae interventu. Atque de his ipsis particulatim
+<lb/>in opere de sanitate tuenda seorsum scripsimus.
+<lb/>Omnia igitur modo declarata genera materiae
+<lb/>quaedam sunt salubrium caularum; quae si commode
+<lb/>ministrentur, causae sunt et conlervantes et salubres;
+<lb/>morbosae vero, si incommode. Quare ex his manifestum
+<lb/>est, praeter has res non alias salubres, alias morbosas
+<pb n="1.369"/>
+<lb/>existimandas esse, sed easdem ad divertas relatas aliquando
+<lb/>salubres, aliquando vero morbosas. Si quidem
+<lb/>torpori motum desideranti exercitatio salubris est, quies
+<lb/>vero insalubris; si otio egeat, quies salutaris est, motus
+<lb/>autem insalubris. Eadem autem cibi, notus et reliquoruat
+<lb/>omnium est ratio. Quorum quodque si egenti corteri
+<lb/>cum jussit tum quantitate, tum qualitate adhibitum
+<lb/>sit, salubre est; insalubre vero, si aut omnino non iudigeat,
+<lb/>aut fi non ferrato modo ministretur. Atque haec
+<lb/>lue circa salubre et morbosum corpus consideranda sunt,
+<lb/>sinarum rei, quae adhibetur, quantitas et qualitas. Nulh
+<lb/>enim ratione temporis occatio, utpote quae cum
+<lb/>bis comprehensa sit, tanquam aliquod tertium adjungenda
+<lb/>est. Quum enim tali ac tanta re assumenda corpus
+<lb/>eget, ea certe opportune adhibetur. Atque hinc
+<lb/>tutum habet occasio, quod fluxum mutabileque sit mortile
+<lb/>corpus, quodque pro mutationis ratione aliis alio
+<lb/>fungere remediis egeat. Quare non est genere tertium
+<pb n="1.370"/>
+<lb/>inter haec, quae dicta sunt, occasio; verum docendi gratia
+<lb/>ipfa tanquam tertio ob eam quam diximus cautus
+<lb/>plerumque utimur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="24">
+<p rend="indent">Quoniam autem in his scopis tum asise
+<lb/>falubres causae, tum quod nunc propositum est genus
+<lb/>continetur, de ipsis rursus disseramus. Optimae igitur
+<lb/>corporis constitutioni, si circumductus aer temperatus sit,
+<lb/>tum aliorum nuper commemoratorum, nempe quietis
+<lb/>et motus, somni et vigiliae, tum assumendorum et excernendorunr
+<lb/>exquisita symmetria conveniet. Sin intemperatus
+<lb/>sit, tantum symmetriam mutare conveniet,
+<lb/>quam vitiatum temperamentum est. Symmetriae quidem
+<lb/>scopus est, in ambiente quidem aere, ut neque frigore
+<lb/>inhorrescamus, neque aestu sudemus. Ab exercitatione
+<lb/>vero, quum primum lassescere corpus coeperit, cetfandum
+<lb/>est. In cibis accurata concoctio, et moderata excrementorum
+<lb/>tum qualitas tum quantitas. In his concoctioni
+<lb/>respondet appetentia. Quare neque praeside
+<pb n="1.371"/>
+<lb/>ugus est, qui cibi modum praestabit. Siquidem optima
+<lb/>satura tantum probe concoquit, quantum appetit. Similiter
+<lb/>autem somno natura ipsa bene constituta modum
+<lb/>praescribit: somnum enim finit, quum non amplius eo
+<lb/>torpui eget. Itaque hanc vivendi rationem servantibus,
+<lb/>neque alvi sedimenta, neque urinae, neque universi
+<lb/>torporis excrementa vitiosa sunt: illa enim cibus et
+<lb/>petas moderatus efficit. Perspirationem veru corporis
+<lb/>universi salubrem reddit mediocris exercitatio. Perisuaum
+<lb/>autem est, quod ab omnibus immodicis animi
+<lb/>Vectibus, nempe iracundia, tristitia, lurore, timore,
+<lb/>invidia et cura, abstinendum sit, ut qui naturalem constitutionem
+<lb/>corrumpant ac immutent. Veneris autem
+<lb/>juxta Epicurum nullus usus salutaris est; revera tamen
+<lb/>confert intervallo repetita tam longo, ut exolutio non
+<lb/>sariatur, et ipse, qui utitur, se ipso levior esse faciliuslue
+<lb/>spirare videatur. Idoneum autem ejus utendae
+<pb n="1.372"/>
+<lb/>tempus est, quum corpus in statu omnino medio est
+<lb/>omnium, quae foris circumstant, constitutum, nempe
+<lb/>immodicae repletionis et inanitionis, caloris et frigoris,
+<lb/>siccitatis et humiditatis. Quod si a mediocritate aliquando
+<lb/>aberrarit, levis est error. Caeterum calfacto
+<lb/>quam refrigerato, pleno quam vacuo, humectato quam
+<lb/>resiccato corpori veneris usus commodior est Rorant
+<lb/>autem singulorum qualitas in optima constitutione efigenda
+<lb/>est Exercitationis quidem, in qua omnes corporis
+<lb/>partes aequa proportione moveantur, sic ut aliae
+<lb/>ultra, aliae citra modum non fatigentur. Temperatillimus
+<lb/>vero cibus ac potus sit, scilicet temperatis naturis
+<lb/>familiarior. Eadem est in aliis ratio.</p>
+</div>
+<div type="textpart" subtype="chapter" n="25">
+<p rend="indent">Quod si ab optima constitutione corpus
+<lb/>aliquantum, non autem plurimum deflectat, caulas,
+<lb/>quae sanitatem tuentur, ad proportionem mutare oportet
+<lb/>Verum quum multa sint ejusmodi corpora, de singulis
+<lb/>seorsum est disputandum. Quod igitur temperamentum
+<pb n="1.373"/>
+<lb/>mutat, sed aptam instrumentorum compositionem servat,
+<lb/>duplicem habet salubrium causarum formam: alteram quidem
+<lb/>earum, quae temperamentum tueantur, alteram vero,
+<lb/>quae ad optimum revocent. Quae igitur temperamentum
+<lb/>servant, tantum a temperatissimae naturae causis distant,
+<lb/>quantum ab illa totius corporis temperamentum
+<lb/>discedit. Siquidem calidiora corpora calidiorem victus
+<lb/>rationem efflagitant; frigidiora vero frigidiorem; sicciora
+<lb/>autem sicciorem, et humidiora humidiorem ; atque
+<lb/>secundum coniugationem calidiora et sicciora calid orem
+<lb/>et sicciorem. Eadem est reliquarum trium conjugationum
+<lb/>ratio. Causarum igitur materia is recte utetur,
+<lb/>qui nativas earum vires noverit, quod videlicet
+<lb/>motus, inedia, vigiliae, vacuasse, et omnes animi affectiones
+<lb/>corpus exiccent; his vero contraria humectent.
+<lb/>Eodem modo quisquis calfacientia refrigeranti aque vitae
+<lb/>studia, cibum quoque ac potum, atque, ut semel
+<pb n="1.374"/>
+<lb/>dicam, omnium, quae corpori admoventur, materias ac
+<lb/>facultates intellexerit, salubribus causis utetur, similia
+<lb/>similibus adhibendo, si quidem corporis temperamentum,
+<lb/>quale accepit, tueri velit, Si vero permutare corpus atque
+<lb/>transferre velit in meliorem statum, altero salubrium
+<lb/>causarum genere antedictis quidem contrario est
+<lb/>opus, quod a temperatis mediisque, quas optimis natum
+<lb/>convenire dicebamus, aequaliter in alterutram partem
+<lb/>declinet. Nunquam enim in exquisitam temperiem calida
+<lb/>et sicca victus ratio calidiorem et sicciorem naturata
+<lb/>mutabit, sed ea, quae tanto sit justo temperamento frigidior
+<lb/>et humidior, quantum natura naturam calore et
+<lb/>siccitate superabat. Tale autem causarum genus congenitas
+<lb/>intemperaturas emendat; alterum vero, de qua
+<lb/>ante disputatum est, conservat. Utrisque autem medici
+<lb/>vicissim utuntur. Siquidem, quum per otium majus licet,
+<lb/>corrigunt paulatim in meliorem statum transferentes;
+<lb/>non enim Inbitas natura. mutationes sustinet. In eodem
+<pb n="1.375"/>
+<lb/>vero statu, quum necessariis detinentur occupationibus,
+<lb/>servant Quid est igitur, cur talem causarum differentiam
+<lb/>conservatricem appellamus? Hanc enim potius immutalucem
+<lb/>et curatricem forte nominasse conveniebat, et
+<lb/>congenitorum vitiorum emendatricem; quoniam omnes,
+<lb/>quae sanos tuentur, causas, ad universum sanitatis genus
+<lb/>relatas, non autem ad singulas differentias, conservantes
+<lb/>vocavimus; sive praeter id, quod sanitatem servant, in
+<lb/>stellarem statum totam temperaturam deducant; sive,
+<lb/>quae ab initio generationis contracta est, naturam sevent.
+<lb/>Quae vero constitutionem deteriorem reddunt,
+<lb/>morbosas dicimus. Omnibus autem similiter intemperatis
+<lb/>partibus similis, dissimiliter vero dissimilis cura adbibetur.
+<lb/>potest enim ventriculus, quam par fit, frigidior
+<lb/>esse, caput vero calidius, atque ita utrumque filii propria
+<lb/>remedia desiderare. Ad eundem modum unaquaeque
+<lb/>partium reliquarum justo temperamento aut humidior,
+<lb/>aut siccior, aut calidior, aut frigidior esse, victusque
+<lb/>ratione intemperaturae suae familiari egere. Non
+<pb n="1.376"/>
+<lb/>igitur omnes ejusmodi partes ex aequo exercebimus,
+<lb/>nec eodem modo hnmectabitnus, aut exiccabimus, aut
+<lb/>aliud quidpiam efficiemus. De bis autem fusius in libris
+<lb/>de fanitate tuenda disputatum est.
+</p></div>
+<div type="textpart" subtype="chapter" n="26">
+<p rend="indent">Instrumentorum vero, quatenus ipfa
+<lb/>ab optima constitutione recedunt, hic etiam salubres
+<lb/>causae inter te disserunt. Siquidem aliae vitiatae conformationis,
+<lb/>aliae magnitudinis, aliae numeri, aliae
+<lb/>positus salubres sunt causae. In conformatione igitur
+<lb/>complura vitia cernuntur, nimirum figura partis, et si
+<lb/>quod est naturale in ea concavum, aut osculum, aut
+<lb/>meatus, aut asperitas, aut laevitas, a tua symmetria declinantia.
+<lb/>Quod si exiguum vitium sit, salubrium; sin
+<lb/>magnum; insalubrium appellationem obtinent. Si vero
+<lb/>tantus fit excessus, ut actio laedatur, jam aegrotare dicuntur.
+<lb/>In magnitudine vero easdem differentias exuperantia
+<lb/>et defectus constituunt. In numero autem, quaecunque
+<lb/>sive una, sive plures ex partibus simplicibus
+<pb n="1.377"/>
+<lb/>aut desint, aut redundent. In quo genere continentur
+<lb/>quae praeter naturam nobis adnascuntur materiae. Superesi
+<lb/>aliud genus, nempe simplicis cujusque partis situs.
+<lb/>Cujus quatuor omnino sunt differentiae, una quidem optima;
+<lb/>altera, quae nonnihil ab hac deflectit, ideoque salubre
+<lb/>corpus reddit; tertia morbosum, quum longius
+<lb/>recedit; quarta vero jam aegrotum, quum. plurimum
+<lb/>distat. Quae autum vitium in figura fecerunt, quales
+<lb/>vatiae sunt, varae et obliquae, siquidem recens adhuc
+<lb/>natae atque tenellae sunt, reconcinnatione et deligatione
+<lb/>ad naturalem statum reducuntur; sin durae ac jam inauctae,
+<lb/>non corriguntur. Quinetiam et quae vitiosam
+<lb/>cavitatem obtinent, dum adhuc crescunt, eodem emendantur
+<lb/>modo. Quum vero ad summum incrementum
+<lb/>pervenerunt, correctionem non admittunt. Itaque exignas
+<lb/>cavitates ligatura et quies, magnas vero partium
+<lb/>actio et spiritus retentio reddit. Eodem autem modo
+<lb/>meatuum et osculorum vitia emendantur, Quaecunque
+<pb n="1.378"/>
+<lb/>etiam justam magnitudinem excedunt, quiete aptaque deligatione
+<lb/>minores efficiuntur; majores vero motu naturae
+<lb/>commodo, et frictione mediocri, et aliis quibuscunque
+<lb/>sanguinem uberiorem attrahere idoneis. Quae autem
+<lb/>deficiunt, siquidem ex sanguine ortum habent, refarciri
+<lb/>possunt. Quae vero ex semine, fere non possunt, verum
+<lb/>pro his alia eundem habentia usum nonnunquam
+<lb/>efficere licet: quorum omnium opifex natura est, medicus
+<lb/>vero minister. At quae numero superant, ipsarum
+<lb/>sublatio causa salubris est. Sed considerandum, in quibus
+<lb/>id fieri possit. Quod fi fieri nequeat, ut alio transferatur,
+<lb/>adhibenda cura est. Eadem ratione quae in
+<lb/>situ sunt vitia emendantur. Certum autem est, duo aut
+<lb/>tria vitia in eadem saepe parte simul consistere posse:
+<lb/>quod ei accidit, qui exiguum ac rotundum et in septum
+<lb/>transversum incumbentem ventriculum habebat, in quo
+<lb/>magnitudo, conformatio et situs depravatus erat; temperamentum
+<pb n="1.379"/>
+<lb/>quoque frigidius. Hic ad naturalem statum
+<lb/>nullo auxilio transferri poterat, sed tamen, ne nimis
+<lb/>infestaretur, impediri. Quoniam enim, dum plenus vena
+<lb/>ter erat, aegre spirabat, cibus parcior, sed qui probe
+<lb/>aleret, nec lente descenderet, ter die sumebatur. Alteri
+<lb/>vero, cui jecur saepissime ob vasorum angustiam obstruebatur,
+<lb/>extenuans victus remedio fuit.</p>
+</div>
+<div type="textpart" subtype="chapter" n="27">
+<p rend="indent">Superest adhuc genus unum, quod
+<lb/>simplicium partium et instrumentorum commune est;
+<lb/>nempe unitatis solutio, quam forte quispiam his, qui inculpata
+<lb/>sanitate fruuntur, aliquando inesse negabit ob
+<lb/>id, quod ea semper affectio sit; non videns, quod de
+<lb/>omnibus generibus eodem modo dubitandum esset. Nam
+<lb/>si actionis offensio, quae quidem sensu percipitur, morbum
+<lb/>a sanitate non distinguat, sed affectionis tantum
+<lb/>qualitas consideretur, necessario perpetuae valetudinis
+<lb/>opinio recipietur: quum nemo sit, qui optimas actiones
+<lb/>omnes habeat. Verum haec disputatio, quoniam magis
+<lb/>logica esse videtur, seorsum consideranda est
+</p>
+<pb n="1.380"/>
+</div>
+<div type="textpart" subtype="chapter" n="28">
+<p rend="indent">De salubribus vero causis, quatenus ad
+<lb/>eos reserantur, quos aegrotare constat; deinceps disseramus,
+<lb/>ab intemperie exorti. Explicanda igitur prius sunt, quae
+<lb/>ab omnibus sere medicis praetermittuntur, nempe alias jam
+<lb/>saetae intemperie: salubres causas esse, alias ejus, quae adhuc
+<lb/>fit, quemadmodum et ejus, quae Iutura est, alias.
+<lb/>Hujus postremae aliae in ea artis parte constitutae sunt,
+<lb/>quae corpori prospicit, aliae in ea, quae praesentent sanitatem
+<lb/>tuetur Damium autem primae in sola curandi ratione
+<lb/>cautae positae sunt. Ejus vero, quam inter utramque
+<lb/>mediam esse diximus, in praecautione et curatione.
+<lb/>Etenim Iactam intemperiem et quae jam morbus existit,
+<lb/>curare oportet. Eam autem, quae nondum morbus est,
+<lb/>sed tamen ex corporis affectione futurus, prohibere oportet.
+<lb/>Ejus vero, quae sit, quod quidem sum Iactum est,
+<lb/>curare, quid vero sutorum est, prohibere. Prohibetur
+<lb/>autem, affectione, ex qua id fieri idoneum est, subla a,
+<lb/>quae quidem antecedens causa nominatur. Jam vero
+<pb n="1.381"/>
+<lb/>factus morbus, affectione, quae prima naturalem actionem
+<lb/>laedit, sublata, curabitur, quam quidem morbi canlini
+<lb/>esse dicimus. Curatio autem unum habet scopum
+<lb/>primarium maximeque communem, nempe rei, quae
+<lb/>tolli debet, contrarium. Ex hoc enim genere causae
+<lb/>omnes sunt, quae sanitatem efficiunt; speciatim vero ex
+<lb/>luis cuique contrariis. Calido igitur affectui frigida
+<lb/>causa contraria est, frigido vero calida. Eadem est in
+<lb/>reliquis ratio. Nam si praeter naturam excessus omnis
+<lb/>sit, mediocritas vero secundum naturam, necessario omniao
+<lb/>ad mediocritatem, quod excessit, ab excessu contrario
+<lb/>reducetur. Perspicuum autum est, quod ex suafacultate,
+<lb/>non autem specie ac imagine, calidum et frigidum
+<lb/>aliaque id genus accipienda sunt. Ex facultate
+<lb/>voco, quod tale revera esit, quale esse dicitur; ex specie
+<lb/>vero ac imagine, quod tale est, quale obvio sensui apparet;
+<lb/>sed revera tale non existit. Quomodo autem
+<lb/>haec cognoscere oporteat, in opere de simplicium medicamentorum
+<pb n="1.382"/>
+<lb/>facultatibus docuimus. Ad inveniendas autum
+<lb/>salubres causas, has quidem, quae morbum jam ortum
+<lb/>curant, ea via ac ratione utendum est, qua id,
+<lb/>quod rei speciem prae se fert, ab eo, quod facultate
+<lb/>ejusmodi sit, distinguitur; ad has vero, quae adhuc nascenti
+<lb/>medentur, non fotum hac, sed et ea, qua morborum
+<lb/>causae inveniuntur. Age igitur accendatur, exempli
+<lb/>gratia, ex humoribus putribus febris: hi immutationem
+<lb/>atque vacuationem indicant. Immutatio quidem putredinem
+<lb/>tollit, manente materia, quam vacuasse totam e
+<lb/>corpore educit. Ejusmodi autem immutationis species est
+<lb/>concoctio, cujus perficiendae rationem nactus, causarum,
+<lb/>quae hoc modo sanitatem efficiunt, peritiam habebis.
+<lb/>Vacuatus autem fit per venae sectionem, clysterem lutinas
+<lb/>et cutis perspirationem; praeterea et per revulsionem
+<lb/>in contrarium et derivationem in alteram partem.
+<lb/>In hoc genere continentur mensium provocatio, et venarum
+<lb/>haemorrhoidum reclusio; et quae per nares ac
+<pb n="1.383"/>
+<lb/>palatum fit purgatio. Quum igitur hic etiam inventae
+<lb/>fuerint materiae, quibus in qualitate, quantitate, temporis
+<lb/>occasione et utendi modo ministratis vacuatio fit,
+<lb/>is hac artis parte salubria inveniemus, quorum omnium
+<lb/>in opere de curandi ratione tradita est inventio. Eadem
+<lb/>ratione in aliis tribus temperaturis salubres causas in veniemus,
+<lb/>unum commune praeceptum servantes, nempe
+<lb/>tollendam prius caulam omnium harum effectricem, deinde
+<lb/>ad morbum ab eadem genitum veniendum esse. ln compcsitis
+<lb/>vero intemperaturis coniunctae simplices cautae falubria
+<lb/>praecepta commonstrabunt. Atque etiam idoneum
+<lb/>remedium, fi, quod ini emperaturae magnitudini proporsicae
+<lb/>respondet, cognoscamus, inveniri poterit; velut,
+<lb/>exempli gratia, si decem numeris corpus, quam naturae
+<lb/>conveniat, calidius fit, septem vero siccius; in hisce
+<lb/>astectibus causa salubris decem numeris frigidior, septem
+<lb/>vero humidior esse debebit. Itaque, si affectae parti ejusmodi
+<pb n="1.384"/>
+<lb/>medicamentum adhibeatur, id tam srigidum ac humictum
+<lb/>sit, quum indicatio jubet. Quod fi in alto corpore
+<lb/>pars affecta sit posita; excogitandum salubre remedium
+<lb/>est, quod in transitu viam suam non amittat. Si
+<lb/>igitur id pulto calidius esse oporteat, neu sutum, quantum
+<lb/>affectus ipse exigit, calidum fit, sed ultra modum
+<lb/>adliciatur, quod ob situm necessario addendum est. sin
+<lb/>frigidius admovendum sit, non simpliciter augendum ejus
+<lb/>frigus est, sed et materia prius confideranda est; quae
+<lb/>si partium crassitie pollet, tantum abest, ut in profundum
+<lb/>feratur, ut contrarium omnino effectum praestet cutim
+<lb/>densando. Si vero substantiae tenuitate donata sit, altius
+<lb/>penetrare poterit. Ad eundem modum in humidis et siccis
+<lb/>crassities et tenuitas consideranda est. Itaque ab affectae
+<lb/>partis situ sumpta indicatio salubres caulas (ut
+<lb/>modo diximus) suggerit. A formatione vero et situ,
+<lb/>quum emissaria sensibus conspicua in adversam partem
+<lb/>perforata habent, aut his omnino carent. Quae enim
+<pb n="1.385"/>
+<lb/>in principes partes fluunt, avertimus; irritamus vero,
+<lb/>quae in ignobiles feruntur. Certum autem est causas,
+<lb/>quae intemperiem efficiunt, vacuatione curandas esse;
+<lb/>ipsam vero intemperiem alteratione.</p>
+</div>
+<div type="textpart" subtype="chapter" n="29">
+<p rend="indent">In soluta autem unitate praecipua
+<lb/>curationis intentio est, ut ad unitatem reducatur, quod
+<lb/>instrumentis quidem fieri non potest, nec in omnibus
+<lb/>simplicibus partibus, sed quibusdam; velut in carnosis,
+<lb/>quae agglutinatione curantur (nihil autem refert, an coalitum
+<lb/>dixeris). Hanc, quum vulnus malus est, praecedit
+<lb/>dilectarum partium commissio, quae in conformationis
+<lb/>genere continetur. Ut autem haec firma stabilisque fiat,
+<lb/>deligatura, quae separatas partes coniungat, et fibulae et
+<lb/>futurae utiles fonti Agglutinat vero dissidentes partes
+<lb/>ac pristinae unitati restituit natura. Nostrum vero munus
+<lb/>est, primum quidem, ut dixi, diductas partes in
+<lb/>unum cogere; secundum, commissas servare; tertium,
+<lb/>providere, ne quid inter vulneris labra incidat; quartum,
+<pb n="1.386"/>
+<lb/>partis substantiam tueri. Quemadmodum autem primam
+<lb/>ac secundum quis efficere possit, ante diximus. Tertiam
+<lb/>vero perficiemus, si, quae dispuncta sunt, coniungendo
+<lb/>nihil in vulnus extrinsecus illabi sinamus. Persaepe
+<lb/>enim pilus aut oleum aut alius humor in agglutinandarum
+<lb/>partium medio positus continuitatem impedit. Deinde,
+<lb/>procedente tempore, tertium scopum servabimus
+<lb/>humoris effluxione, quae aperto vulnere fit, aut adversa
+<lb/>parte inciso, aut apte collocato. Substantiae autem partis
+<lb/>sanitatem tuebimur mediocriter desiccantibus. Haec
+<lb/>quidem est solutae unitatis in carnosa parte, fi quidem
+<lb/>fota sit, curandi ratio. Quod si cum altero morbo conjuncta
+<lb/>sit, plures erunt iudicationum scopi, de quibus
+<lb/>deinceps disseremus, quum de compositis commissisque
+<lb/>affectibus aut quomodocunque lubet appellare,
+<lb/>disseremus. Nunc vero reliquas unitatis solutiones
+<lb/>tractemus.
+</p>
+<pb n="1.387"/>
+</div>
+<div type="textpart" subtype="chapter" n="30">
+<p rend="indent">Fractura igitur .solutio continuitatis
+<lb/>est in osse; quae, quatenus ad primum scopum attinet,
+<lb/>non sanescit; quatenus vero ad secundum, quodammodo
+<lb/>curari potest. Primus autem scopas est agglutiuatio,
+<lb/>quae fieri ob siccitatem non potest . Secundus autem
+<lb/>connexio, quae callo fracturam clicumligante perficitur.
+<lb/>Origo vero calli, quatenus ex materia et a natura fit,
+<lb/>aliis est communis, quatenus vero formam habet ossi similem,
+<lb/>ex ejus nutrimento gignitur. At molle puerileque
+<lb/>os coalescere potest. Caeterum ejusmodi affectus
+<lb/>bae alterius societate raro contingere solet. Fractis
+<lb/>enim ossibus musculi una cum aliis vicinis partibus ut
+<lb/>patrimum afficiuntur. Quocirca duplex erit curationis
+<lb/>ratio; una quidem ipsorum ossium, altera circumstantium
+<lb/>partium, de qua disseremus, quum de carnosarum partium
+<lb/>commistis affectibus agemus. De fracturis autem nunc
+<lb/>disputandum est. Quoniam quidem hae callo curantur
+<lb/>(eri generando proprio ossis nutrimento opus est), ad
+<pb n="1.388"/>
+<lb/>calli -generationem naturae committendum recrementum
+<lb/>est, id autem et qualitate et quantitate temperatum esse
+<lb/>debet. Ideo victus ratio requiritur, ex qua tantus talisque
+<lb/>sanguis, qui ad ossa fertur, comparetur, quantus
+<lb/>qualisque generando callo est necessarius. Quoniam
+<lb/>rursus is per ossis fracti cavernas transmittitur, considerare
+<lb/>ejus multitudinem ac qualitatem, atque ita rictum
+<lb/>sicciorem aut humidiorem instituere oportet. Haec omnia
+<lb/>in opere de medendi methodo fusius tradita fiunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="31">
+<p rend="indent">Nervi vero et tendonis punctura ob
+<lb/>sentiendi praestantiam ob idque, quod cum principis pars
+<lb/>haec continuitatem habet, prompte accersit convulsionem,
+<lb/>maximeque si nihil foras exhalet, quod scilicet caecum sit
+<lb/>cutis vulnus. Id igitur aperiendum est, exiccandumque
+<lb/>materia tenui, quae in altum et ad vulneratum usque nervum
+<lb/>penetrare possit. De his autem in libris de curandi
+<pb n="1.389"/>
+<lb/>ratione accurate disputatum est Haec igitur est salubrium
+<lb/>cantarum in simplicibus ejusmodi affectibus forma.</p>
+</div>
+<div type="textpart" subtype="chapter" n="32">
+<p rend="indent">ln compositis vero affectibus cum
+<lb/>ulceribus primum quidem ningitur cavitas, quam non
+<lb/>aliam affectionem, feti ulceris differentiam esse arbitrantuo
+<lb/>verum id differentia non est, sed alterum quoddam
+<lb/>universi morbi genus, in quo perdita substantia est Itaque
+<lb/>ad duplicis morbi curationem scopo duplici opus
+<lb/>est. Nam unitatis solutio continuitatem desiderat, substantiae
+<lb/>vero amissio nutritionem; cujus paulo ante scopi
+<lb/>lectitati sunt. Quod vero affectionem hanc primum curare
+<lb/>oporteat, deinde continuitatem resarcire, ipsa rei
+<lb/>natura docet. Si igitur, quod concavum est, impleatur et
+<lb/>ad aequabilitatem ulcus reducatur, fiet, ut alter scapus
+<lb/>tollatur; quandoquidem, recens nata luter ulceris labra
+<lb/>carne, disiunctae partes coire non possunt; quare invenienda
+<lb/>alia curationis ratio est. Invenietur autem ex re
+<pb n="1.390"/>
+<lb/>naturali, quam parti parare oportet. Huic autem naturale
+<lb/>est cute obduci. Id igitur praestandum est; aut, si
+<lb/>fcopum assequi nequeas, simile quidpiam cuti, nempe
+<lb/>carnem ipsi substantiae proximam generare oportebit
+<lb/>Ejusmodi autem et sicca et callosa est. Siccantibus igitur
+<lb/>ac astringentibus citra morsum medicamentis ad inducendant
+<lb/>cicatricem est opus. Ad eundem modum, si adnata
+<lb/>sordes sit, ad detersionem dirigendum consilium est. Salubre
+<lb/>igitur medicamentum est, cui detergendi vis insit.
+<lb/>Horum autem materia in libris de medicamentorum faunitatibus
+<lb/>tradita est Atque etiam, si cum ulcere juncta
+<lb/>inflammatio aliqua vel contusio, vel scirrhus, vel cedema
+<lb/>sit, ea prius via ac ratione antedicta curanda Iunt.
+<lb/>Eodem modo; si quid in ulcus influat, influxionis curatio
+<lb/>adhibenda est. Similiter autem, fi intemperie aliqua
+<lb/>ulcerata pars laborat, ad remedia, quibus abigi ipsa possit,
+<lb/>prius veniendum est De bis quidem satis.</p>
+</div>
+<div type="textpart" subtype="chapter" n="33">
+<p rend="indent">Ad conformationis vero genus, quod
+<lb/>implores differentias distribuitur, jam transeundum est,
+<pb n="1.391"/>
+<lb/>sumpto ab evidentissimo disputationis initio, quod in figurae
+<lb/>permutatione fit. In his igitur, qui adhuc crescunt,
+<lb/>plurimae partes emendari possunt: in his vero, qui ad
+<lb/>incrementum pervenerunt, non possunt. Quae autem
+<lb/>curationem admittunt, in contrariam depravatae formam
+<lb/>reducenda fonti Quod st ob fracturam male concinnatam
+<lb/>vitiata membri figura sit, recenteque callo occupata,
+<lb/>frangere oportet, ac probe reconcinnare; postea vero
+<lb/>callum inducere. Ex eodem autem morborum genere est
+<lb/>obstructio, quam humorum lentor ac crassities parit; atquae
+<lb/>haec fcopum unum habet affectui contrarium, nempe
+<lb/>expurgationem. Curatur autem detergentibus ac incidentibus
+<lb/>medicamentis. Si vero stercore duro ferctum intestinum
+<lb/>fit, primum quidem emendanda duritia est humidis
+<lb/>et pinguibus clysteribus, deinde acribus stercus
+<lb/>vacuandum. At si calculus vesicam obstruit, in praefentia
+<lb/>quidem transferendus est Quod si omnino sanare
+<lb/>velis, vesicae tectione eximendus est. Qui autem praeter
+<pb n="1.392"/>
+<lb/>naturam humor continetur, integra vernatione cura:
+<lb/>tur; ut in suppuratis. Immoderata vero repletio, cujusmodi
+<lb/>est sanguinis in venis, immodica vacuatione curatur.
+<lb/>Quemadmodum et his, quibus in ventre aut intestinis,
+<lb/>aut arteria, aut pulmone pus vel sanguis continetur,
+<lb/>integra vacuatis, est necessaria. Caeterum cibus et
+<lb/>potus plenior recensque sumptus vacuatione corrigitur.
+<lb/>Quae vero in pulmone et thorace continentur, cum tussi
+<lb/>reiiciuntur, sed medicamentis extenuata. At quae in
+<lb/>jecore sunt, aut venis, aut arteriis, aut renibus, caper
+<lb/>urinas vel ventrem expelluntur. Sed quae per urinas repetuntur,
+<lb/>vehementer extenuari debent; quae vero per
+<lb/>ventrem, attrahentibus et aperientibus egent. Quae autem
+<lb/>in superiore ventre continentur, vomitionibus, quae
+<lb/>vero in inferiore, alvi subductione deiiciuntur. Sub
+<lb/>cute autem collecta vel sectionem, vel candens ferrum,
+<lb/>vel adurens medicamentum efflagitanti Ad eundem medum
+<lb/>et quae in loco natura cavo, ut thorace, contis
+<lb/>nentur. in summa autem, quicquid praeter naturam in
+<pb n="1.393"/>
+<lb/>aliqua parte est, tollendum est, aut, si id assequi non
+<lb/>pellis, transponendum. Quae autem toto genere praeter
+<lb/>naturam non sunt, sed quantitate delinquunt, evacuatione
+<lb/>curanda sunt, cujus ratio cum ex ipfo affectu, tum
+<lb/>maxime ex affectis partibus invenitur. Exasperatas
+<lb/>praeter naturam partes ad naturalem laevitatem aequalitatemque
+<lb/>reducimus, ossa quidem radendo, arteriam
+<lb/>autem et linguam humore lento morsu carente deliniendo.
+<lb/>Laevigatae vero praeter naturam medicamentis,
+<lb/>quae abunde detergeant et leviter adstringant, ad nativam
+<lb/>asperi ratem revocantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="34">
+<p rend="indent">Obstructiones vero vel angustiae.
+<lb/>quae morbis aliis succedunt, posterius curari debent. In
+<lb/>opere autem de morborum differentiis ostendimus, supradictos
+<lb/>affectus plerumque nasci ex inflammationibus,
+<lb/>scirrbis, oedematis, et nonnunquam ex immodicis siccitalibus,
+<lb/>pravisque continentium partium figuris, quemadmodum
+<pb n="1.394"/>
+<lb/>et ex quibusdam circumstantibus tumoribus.
+<lb/>Quod si ex supradictis quaedam inter se copulentur,
+<lb/>varias habebunt indicationes. De uno autem velut exemplo
+<lb/>verba facere satis fuerit, quando fusius de omnibus
+<lb/>in libris de curandi ratione disputatum est. Ponamus
+<lb/>igitur, in partem aliquam sanguinis multitudinem fluere,
+<lb/>ita ut in ea non solum majores, sed et minores venae
+<lb/>distendantur, .quae prius visum effugiebant, nunc vero
+<lb/>ob plenitudinem conspicuae sunt (quod aliquando in oculis
+<lb/>ob tunicae candorem manifeste cernitur). Verisimile
+<lb/>est, alia quoque vasa sentum effugientia plenitudine distenta
+<lb/>esse, non tamen ob exiguitatem apparere. Periculum
+<lb/>itaque est, ne, quod ex vasis exudat, ad inania spatia
+<lb/>intermedia effundatur, aut nonnihil jam sit effusum.
+<lb/>Hic sane affectus vernatione curatur, aut, ut clarius explicem,
+<lb/>evacuatione. Quoniam quidem affectus immoderata
+<lb/>partis repletio erat, necessario, quod supervacuum
+<pb n="1.395"/>
+<lb/>est, aut intro remeando, aut per ipfam affectam partem
+<lb/>vacuabitur. Intro remeabit quidem, fi repellatur, vel retrahatur,
+<lb/>vel in propinquam partem mittatur, vel horum
+<lb/>aliquo modo, vel omnibus. Quod autem per affectum
+<lb/>partem vacuatur, aliquando quidem evidens est,
+<lb/>fenfuique pervium, aliquando vero in vapores resolvitur.
+<lb/>Si igitur universum corpus plenius fuerit, per affectam
+<lb/>partem vacuandum non est Nam si manifeste scarilicalienibus
+<lb/>et sectionibus vacuemus, dolorem excitabimus,
+<lb/>proindeque fluxionem majorem advocabimus. Quod si
+<lb/>calidis medicamentis digerere tentemus, plus in affectum
+<lb/>locum ob calorem attrahemus, quam per halitum dissipari
+<lb/>possit. At si retorquere, quod influxit, velimus, corpus
+<lb/>plenum non excipiet. Duabus igitur his de causis telam
+<lb/>corpus vacuare oportet, deinde in contrarium
+<lb/>omnino, quod influit, revellere. Quo peracto, e parto
+<lb/>prius repellere, quam per halitum digerere tentabimus.
+<lb/>Nam eo facilior erit vacuatus, quo per majores et patentiores
+<lb/>vias fiet. Ex affecto autem loco adstringentis
+<pb n="1.396"/>
+<lb/>bus et refrigerantibus medicamentis repellemus. Quin
+<lb/>et inanime partes ad se,. quod repellitur, attrahunt, ut
+<lb/>in libro de facultatibus naturalibus demonstratum est.
+<lb/>Idem venae adstringentibus remediis confirmatae returdunt.
+<lb/>Si igitur ad hunc modum. tutum intro recurrat,
+<lb/>prospere res cedet. Quod si quid relictum in particula
+<lb/>ftt, coniiciendum est, id lentum aut crassam este, proindeque
+<lb/>ita impactum, ut non facile elui possit. Quamquam
+<lb/>fieri potest, fi tale non existat, ut in spatia intermedia
+<lb/>refusum fit: quod quum accidit, jam tempus suadet,
+<lb/>per affectam partem vacuandum este. medicamentis,
+<lb/>quae repellendae flexionis facultatem habent, supra itur
+<lb/>pofitis. Vacuabimus autem, si quid in spatiis lutermediis
+<lb/>retentum esse suspicio sit, icari strutionibus simul et medicamentis
+<lb/>digerendi vi praeditis. Sed quum haec omnis
+<lb/>facultate calida sint, mordendi vi praedita, si modum excesserint;
+<lb/>vitanda funi vehementer calida, praesertim fi
+<pb n="1.397"/>
+<lb/>in superficie sit morbus; dolor enim non exiguus exortabitur,
+<lb/>si una cum affectu mordeatur, et dolor omnis
+<lb/>stationem proritat. Quod igitur ex his modice calfacit,
+<lb/>dolorem non excitat; praesertim si cum eo conjuncta sit
+<lb/>humiditas, idque digerere, quod in superficie est, abunde
+<lb/>potest; etiamsi vehemens digerendi facultas ejusmodi
+<lb/>medicamento non insiti At si in superficie pars affectu
+<lb/>omnino non sit, sed in profundo, eaque vacuari desideret,
+<lb/>intendendus ac augendus est digerentis medicamenti
+<lb/>calor. Periculum enim est, ne) antequam ad profundum
+<lb/>perveniat, resolvatur, neque tamen partes in superficie
+<lb/>sitae contactae molestiam aliquam sentiunt, utpote quae
+<lb/>allectae non sint. Quocirca nunc quoque ad calidiorum
+<lb/>simul et acriorum medicamentorum usum haec duo contingunt,
+<lb/>nempe ut partes, quae in superficie sunt, tolerent,
+<lb/>et profundae egeant. Haec igitur ex affectae parsis
+<lb/>positura juoicatio sumitur. Deinceps vero confideretnuv,
+<lb/>an ad curationem aliquid dedit. Deesse enim non
+<lb/>pauca videntur. Ex affectis iedibus, quae supervacuam
+<pb n="1.398"/>
+<lb/>fluxionem recipiunt, aliae rarae, fungosae ac molles
+<lb/>natura sunt; aliae vero densae, compactae ac durae.
+<lb/>Priores facile vacuantur; posteriores vero acriora remedia
+<lb/>efflagitant, quaeque partium tenuitate praedita sint,
+<lb/>eo quidem majore, quo altius delitescunt. Haec rursus
+<lb/>altera sit indicatio, quae ab affectae partis substantia sumitur.
+<lb/>Alia vero a conformatione simul et positura ducitur.
+<lb/>Ponatur, exempli gratia, jecur ante dicto affectu
+<lb/>laborare, in extremis venarum angustiis impactos esse
+<lb/>humores lentos aut crassas, aut multos. Annon cibo et
+<lb/>potu extenuante primum quidem crassitiem ac lentorem
+<lb/>promptum est extenuare? postea vero, quod infestat, non
+<lb/>per caecas et angustas vias solum, sed et latas evacuare?
+<lb/>in jecore enim sunt venae et patentiores et plurimae;
+<lb/>desinunt autem, quae in gibbis sunt, in cavam venam,
+<lb/>quae vero in simis, in portam. Quocirca jam promptissimum
+<lb/>tibi est, humores, in utrislibet sint farcti, vaenare;
+<pb n="1.399"/>
+<lb/>ad ventrem quidem trahendo, si in limarum veris
+<lb/>impacti sint, medicamentis attrahendi vi praeditis,
+<lb/>per cavam autem venam, fi in ei proximis venis, ad
+<lb/>urinas deducendo. Praeter has vero altera ab ipfo jecore
+<lb/>tanquam venarum principio sumitur indicatio. Quoriam
+<lb/>enim jecur natura non se fotum (quales sunt plurituae
+<lb/>animantis partes) moderatur, sed et in venas vim
+<lb/>sima transfundit, periculum est, si laxantibus tum pertitionibus
+<lb/>tum cataplasmatis robur ejus resolvamus, ne
+<lb/>ipfnm in primis, deinde omnes ejus venas inefficaces ad
+<lb/>obeundas tuas actiones reddamus. Quocirca in ejus curabone
+<lb/>non nihil adstringentium meuicamentorum misceoiam
+<lb/>est. Sed quoniam in alto admodum corpore efi situm,
+<lb/>periculum est, ne adstringentis medicamenti facultas
+<lb/>resolvatur, nisi ab aliqua materia tenuitate partium
+<lb/>donata, qualis est odoramentorum. adducatur. Praestat
+<lb/>autem, adstringens medicamentum statim ab ortu vim odotata
+<lb/>habere; quod enim duas habet congenitas qualitates
+<pb n="1.400"/>
+<lb/>et facultates, efficacius est. Itaque .vacuetur, quod praeter
+<lb/>naturam in partem jam fluxit, nativa vero humorum
+<lb/>symmetria convenieutiaque supersit. Considerandum et
+<lb/>hic, au a flexionis qualitate ejus partis temperatura
+<lb/>mutata sit (si quidem pituitosa erat, refrigeratum ; sin
+<lb/>biliosa, calfactum jecur est), ut, absolute curata intemperie,
+<lb/>sanitas restituatur. Restituemus autem contradant
+<lb/>qualitatem obsidentes, ut in intemperaturarum curatione
+<lb/>diximus, tantum uuamquamque partem refrigerantes,
+<lb/>quantum ejus calor excesserit. Quocirca rursus hic necessatio
+<lb/>ejus nativa temperies cognoscenda est. Nant
+<lb/>quomodo scire poterimus partis natura frigidioris aut
+<lb/>calidioris exuperantiam, aut quando a refrigerando ceifandum
+<lb/>fit, si caloris natini modum ignoremus? Eadem
+<lb/>ratione, si frigidiorem calfacientes ignoremus naturalis
+<lb/>ejus frigoris modum. Itaque neque quod commode calfaciat,
+<lb/>neque quando a calfacienda cessandum sit, inreutre
+<lb/>poterimus.
+</p>
+<pb n="1.401"/>
+</div>
+<div type="textpart" subtype="chapter" n="35">
+<p rend="indent">Quoniam de his abunde disputavinas,
+<lb/>ad ea, quae numero praeter naturam insunt, jam
+<lb/>transeundum est. Quorum quum duplex sit differentia,
+<lb/>albus pars aliqua deest, hanc sarcire studeamus, eo
+<lb/>quem paulo ante diximus modo naturae famulantes.
+<lb/>suibus vero abundat, recidere vel scalpro vel igni vel
+<lb/>adurente medicamento. Haec igitur omnia lore sanescunt,
+<lb/>sed non omnia generantur; ut in libro de femine proistum
+<lb/>est Quaedam autem non gignuntur, sed in eorum
+<lb/>locum aliquid substituitur; ut, si os omnino exemptitn
+<lb/>sit, altera materia, quae ab osse et carne differat,
+<lb/>iu ea ipsa parte regigni potest, quae veluti caro quaedum
+<lb/>callosa est, aut callus carnosus, qui temporis prousia
+<lb/>in naturam magis callosam transit, initio statim
+<lb/>alius carnem referens. In quacunque autem parte
+<lb/>amissa materia est, quae nec eadem specie nec similis
+<lb/>restitui potest, ornatum quendam tertius scopas invenit,
+<pb n="1.402"/>
+<lb/>ut in mutilatis. Perspicuum autem est, genus hoc cata
+<lb/>eo communitatem habere, quod ad magnitudinem portinet.
+<lb/>Quod enim ex eo secundum naturam est, magnitudini
+<lb/>vicinum est. Solum autem dissidet, quum praeter
+<lb/>naturam est. In quo genere primum quod abundat tolIendum,
+<lb/>aut, si assequi id nequeas, transponendum est,
+<lb/>ut in suffusionibus. Quibus autem non integrae quidem
+<lb/>partes, sed ex his portiones imminutae sunt vel auctae
+<lb/>praeter modum, alere quidem ac generare, quae destciunt;
+<lb/>quae vero redundant, demere ac minuere repomereque
+<lb/>oportet. Unde neque alius in ipsis finis ut
+<lb/>neque genere diversa remediorum forma. Sed ad resiquum
+<lb/>salubrium causarum genus veniendum est, quod
+<lb/>ea emendat, quae suo loco exciderunt, veluti ossa sedibus
+<lb/>suis emota, et intestina in scrotunr prolapsis. fila
+<lb/>quidem violenta tensione veI impulsione, haec dilatatione
+<lb/>vel ruptura continentis membranae fiunt. Itaque curautur
+<lb/>priora quidem adversae partis tensione et in adverfam
+<lb/>partem repulsione; posteriora vero, si continens membrana
+<pb n="1.403"/>
+<lb/>cogatur ac firmetur; quae quemadmodum fieri debeant,
+<lb/>in libris de curandi ratione explicatum est</p>
+</div>
+<div type="textpart" subtype="chapter" n="36">
+<p rend="indent">Deinceps autem de his disserendum
+<lb/>est, quae inj priore sermone distulimus. Haec autem praecarentia
+<lb/>dicimus. Quorum triplex est in genere dissisrealia:
+<lb/>una quidem hominis inculpata valetudine fruensis;
+<lb/>altera, de qua conqueri liceat; tertia vero aegrotantis
+<lb/>est. Primum autem genus, quod, ut ante diximus,
+<lb/>duplex est, ad salubrium; secundum autem ad praecavtutium;
+<lb/>tertium vero ad curantium disputationem persinet.
+<lb/>Universum autem hoc genus in humoribus maxitne
+<lb/>consistit; quos nec lentos, nec crassius, nec multos;
+<lb/>nec admodum calidos aut frigidos, nec mordaces, nec
+<lb/>putres, nec pestilentes esse oportet. Aucti enim morbos
+<lb/>gignunt. Augentur autem interdum quidem ab eadem
+<lb/>caula, quae ab initio eos procreavit, aliquando vero a
+<lb/>eibis corporis humores in tuam naturam immutantibus.
+<pb n="1.404"/>
+<lb/>Horum autem curandorum duplex est scopas, nempe
+<lb/>immutatio et evacuatio. Immutantur vel ab ipfo corpure
+<lb/>eos concoquente, vel a quibusdam medicamentis, in
+<lb/>quibus tum ea continentur, quae. animalium venis medentur,
+<lb/>Graeci <foreign xml:lang="grc">ιοβόλα</foreign> vocant, tum quae exitialia pharmaca
+<lb/>permutant. Evacuantur autem a medicamentis potenter
+<lb/>ealsacientibus, et purgationibus, clysteribus, et
+<lb/>sudoribus, et vomitionibus. Atque hae fiunt communes
+<lb/>eorum vernationes. Propriae vero ex locis, in quibus
+<lb/>acervantur, sumuntur, quemadmodum in libris defruitate
+<lb/>tuenda, praesertim tertio et quarto docuimus: ubi
+<lb/>de lassitudinibus aliisque lassitudini proximis affectibus
+<lb/>disputavimus. Promptius enim primarum venarum excrementa
+<lb/>per ventrem, jecoris vero per urinas expelluatur,
+<lb/>et per sudores, qui in toto corporis habitu contineutur;
+<lb/>quemadmodum per palatum, aut nares, aut
+<lb/>utrumque, quae caput occupant; et quae in latis thuraeis
+<pb n="1.405"/>
+<lb/>fpatiis sunt, per guttur ima cum tussi reiiciuntur;
+<lb/>quae vero in renibus vel vesica resident, per urinas.
+<lb/>stevellendi autem ad longinquissima communis est eatriam
+<lb/>partium iudicatio, quemadmodum derivandi ad
+<lb/>propinqua. Quaecunque vero ejusmodi affectiones euraut,
+<lb/>salubres causae dicuntur, quemadmodum morbosae,
+<lb/>quae has adaugent, et neutrae, quae neque laedunt, neque
+<lb/>juvant. Posset autenti quispiam ne quidem causas
+<lb/>omnino appellare, quales multi sophistae sunt, qui rerum
+<lb/>differentias contemnunt, plurimum vero temporis
+<lb/>in nominibus conterunt; advectus quos in aliis operibus
+<lb/>plurima scripsimus. Haec igitur est artis pars, quae prophylaetice
+<lb/>dicitur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="37">
+<p rend="indent">Convalescentibus autem ex morbo.
+<lb/>ac senibus ea debetur victus ratio, quae Graecis analectice
+<lb/>et anatbreptice dicitur, hoc est instauratrix et
+<lb/>altrix. Qualis vero fit eorum affectio, et quibus potissimum.
+<lb/>causis ad naturalem statum revocentur; in librisde
+<pb n="1.406"/>
+<lb/>curandi ratione late ac- diffuse disputatum est; in
+<lb/>hoc autem opere summatim docebimus. Ejusmodi igitur
+<lb/>est haec affectio. Probus quidem sanguis est, sed paatus,
+<lb/>cum quo et spiritus vitalis, ut vocant, et animalis.
+<lb/>Solidae quoque partes sicciores, unde et earum vires
+<lb/>imbecilliores, ob quas universum corpus frigidius existit.
+<lb/>Salubres autem caulae commemoratam affectionem emendant,
+<lb/>quae, ut summatim dicam, celeriter ac tuto corpus
+<lb/>alunt; particulatim i vero moderatus motus, cibus,
+<lb/>potus et somnus. Motuum vero materia gestationes
+<lb/>sunt; ambulationes, frictiones, et balneae. Quod fi ex
+<lb/>his multo melius habeant, quotidiana opera paulatim
+<lb/>tractent. Cibos autem interdum quidem humidos coctuque
+<lb/>faciles et minime frigidos fumant, temporis vero
+<lb/>progressu et eos, qui uberius alant. Commode vero is
+<lb/>potu vinum datur, aetate quidem medium, forma vero
+<lb/>purum ac pellucidum, sive id album sit, sive substavum,
+<lb/>odore secundum, quod gustu nec aquam omnino, nec
+<pb n="1.407"/>
+<lb/>vehementem aliquam qualitatem referat. Itaque nec
+<lb/>dulce fit, nec acre, nec amarum. De his autem,
+<lb/>at modo dicebam, in libris de curandi ratione fusissime
+<lb/>est disputatum. Nunc enim in singula percurrere non
+<lb/>statuimus, sed tantum eorum, quae in aliis operibus fuse
+<lb/>disputata funi, capita commemorare; quorum ubi nunterum
+<lb/>et qualitatem recensuero, huic libro finem imponam.
+<lb/>Ante autem diximus, alterum esse librum, in
+<lb/>quo de constitutione artis medicae disseruimus; quem
+<lb/>duo priores de artium constitutione praecedunt, verum
+<lb/>bi quidem una cum hoc, quem nunc absolvimus, in
+<lb/>eorum ordine, quos fuse lateque tractavimus, numerandi
+<lb/>non sunt. Illi vero hunc habent ordinem. De elementis
+<lb/>juxta Hippocratis sententiam. liber unus, quem tres
+<lb/>de temperamentis sequuntur; quorum duo priores de
+<lb/>animantium, tertius vero de medicamentorum temperamentis
+<lb/>tractat, Eam ob rem opus de simplicium atriiramentorum
+<lb/>facultatibus probe intelligi non potest, nisi
+<pb n="1.408"/>
+<lb/>tertio de temperamentis accurate cognito. Alius autem
+<lb/>liber exiguus, cui titulus est de inaequali intemperie,
+<lb/>duos priores de elementis sequitur. Cui similiter alii
+<lb/>duo parvi succedunt: quorum alter de optima corporis
+<lb/>constitutione; alter de bono- habitu inscribitur. sequitur
+<lb/>aliud opus, quod tres libros complectitur, de naturalibus
+<lb/>facultatibus: quod, si lubet, aut post duos de temperamentis,
+<lb/>aut post librum de elementis legere poteris.
+<lb/>Post hunc vero in pluribus libris de functionibus animae
+<lb/>disseruimus. Quoniam autem ad eas demonstrandas
+<lb/>non parum conferunt ea, quae ex corporum dissectionibus
+<lb/>nobis apparent, prius in illis te exercere oportet:
+<lb/>quorum maxime utilis est liber, qui de anatomicis administrationibus
+<lb/>inscribitur. Praeter hos autem plures
+<lb/>alii sunt, quorum duo de dissentionis dissensione, unus
+<lb/>vero de mortuorum dissectione; quos ordine sequantur
+<lb/>duo de viventium dissectione. In aliis vero quibusdam
+<lb/>speciatim ad initiatos de ossibus conscripsimus; iti quo
+<pb n="1.409"/>
+<lb/>genere musculorum, nervorum, arteriarum et venarum
+<lb/>dissectio, et alia id genus habentur. Et liber, cui titulus
+<lb/>est, an sanguis natura in arteriis continetur. Eorum
+<lb/>vero, qui partium actiones produnt., duo quidem sunt de
+<lb/>turibulorum, tres vero de thoracis et pulmonis motu:
+<lb/>quibus deinceps succedit liber de respirationis causis; post
+<lb/>bane liber de voce. De animae principatu, ac aliis
+<lb/>amnibus, quae naturae et animae- actiones requirunt ac
+<lb/>scrutantur, in opere de Hippocratis et Platonis placitis
+<lb/>(quod ex multis libris constat) tractavimus. In eodem
+<lb/>contemplationis genere sunt libri de femine, quos feorfum
+<lb/>scripsimus. Item de corporum dissectione Hippoeratis:
+<lb/>quibus omnibus succedit opus de usu partium.
+<lb/>Ad morborum autem cognitionem liber de locis affectis
+<lb/>confert, et de pulsibus; in quo et de praenotione docemus.
+<lb/>Librum vero de pulsibus alii duo praecedunt,
+<lb/>unus quidem de respirationis, alter de pulsuum usu.
+<pb n="1.410"/>
+<lb/>Liber autem de pulsibus in quatuor distribuitur; unum
+<lb/>quidem de eorum differentiis, alterum autem de cognitione,
+<lb/>tertium de eorum causis, et quartum de ea quae
+<lb/>ex pulsibus sumitur praenotione. In hoc genere est liber
+<lb/>ad initiatos, qui de pulsibus inscribitur. Alium vero
+<lb/>librum velut omnium horum compendium scribere in
+<lb/>animo est, quem vel artem de pulsibus vel compendium
+<lb/>inscribam. Ad hanc autem contemplationem conferunt,
+<lb/>quae in librum Arclrigenis de pulsibus enarramus ac interpretamur.
+<lb/>Maxime vero ad praenotiones conducit
+<lb/>commentatio de judiciis; quam liber de diebus judiciariis
+<lb/>praecedit. Sed et de spirandi difficultate opus tum
+<lb/>ad praesentis affectus cognitionem, tum ad praenofcendum
+<lb/>tam bonum quam malum morbi successum est utile.
+<lb/>omnium igitur horum nonnullorumque aliorum fingularium
+<lb/>librorum cognitio utilis est; cujusmodi est de
+<pb n="1.411"/>
+<lb/>causis evidentibus, de medica experientia, de extenuante
+<lb/>victu, et de venarum sectione ad Erasistratum, et de
+<lb/>tumoribus praeter naturam; similiter autem et de plenitudine
+<lb/>et id genus alii. Ad curandi autem rationem
+<lb/>omnium maxime necessarii sunt de morborum et fymptomalum
+<lb/>differentiis libri tres, in quibus morborum causae
+<lb/>tractantur. Praeter hos alii tres sunt, in quibus explicantur
+<lb/>symptomatum caulae. Sunt et de simplicium medieamentorum
+<lb/>facultatibus libri, de quibus ante meminimus,
+<lb/>et de medicamentorum compositione, quibus libri
+<lb/>de curandi ratione succedunt. Seorsum autem de valebasine
+<lb/>tuenda opus scripsimus. Quod vero ante hos
+<lb/>omnes exerceri in opere de demonstratione eum oporteat,
+<lb/>qui artem cum ratione tractaturus sit, in libro
+<lb/>de optima tecta declaratum est. Reliquos autem libros
+<lb/>ac commentarios a nobis conscriptos nunc percurrere
+<pb n="1.412"/>
+<lb/>necessarium non est, quum de hisce omnibus alibi simas
+<lb/>tractaturi in uno atque forte altero libro, quem iti
+<lb/>inscribemus, Galeni de propriis libris.</p>
+</div>
+</div></div></div></body>
+  </text>
+</TEI>

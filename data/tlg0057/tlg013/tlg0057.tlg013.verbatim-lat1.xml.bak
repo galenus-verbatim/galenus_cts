@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De venarum arteriarumque dissectione</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg013.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="779" to="830">779-830</biblScope>
+              <date>1821</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x02">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="197" to="204">197-204</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x05">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="225" to="240">225-240</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x04">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg0057.tlg013.verbatim-lat1">
+<pb n="2.779"/>
+<div type="textpart" subtype="chapter" n="1">
+<head>G AL EN I DE VENARUM ARTE.
+<lb/>RIARVMQVE DISSECTIONE
+<lb/>LIBER.</head>
+<p rend="indent">Compendium de venarum et arteriarum
+<lb/>dissectione, carissime Antisthene^, quo a me donati V0luisti
+<lb/>ad memoriam confirmandam eorum, quae ipse in
+<lb/>simiae corpore demonstrari spectasses, hoc libro confeci,
+<lb/>Exactior autem non harum modo, sed omnium reliquarum
+<lb/>partium narratio libris continetur, quos de administrutionibus
+<lb/>anatomicis inscripsimus. Nunc itaque, quo
+<lb/>etiam dilucidus evadat sermo, cogitatione volo complectaris
+<lb/>arboris quendam truncum, qui parte quidem ruferiore
+<pb n="2.780"/>
+<lb/>in multas radices, superiore in numerosam ramotum
+<lb/>sobolem sudatur. Ita enim non unus tamen Hippocrates,
+<lb/>fied et qui tempore posteriores anatomici fama
+<lb/>celeberrimi extiterunt, assimilant. Igitur quae in ventrem
+<lb/>et intestina deferuntur venae, .proportione radicibus
+<lb/>respondent; ea vero,- quam tum jecorariam tum cavam
+<lb/>appellant, quidam veluti truncus est omnium quae
+<lb/>toto corpore sparguntur venarum. Eadem etiam ratione
+<lb/>arteriae, quarum origo est a corde : quae namque ex ile
+<lb/>lis fparsa ramorum ferie pulmones petunt, radicum ima.ginem
+<lb/>ostendunt; quam vero. Aristoteles aortam, alii arteriam
+<lb/>magnam vocant,. ea etiam caudicis in arbore proportionem
+  <lb/>subit. Principio igitur septem <hi rend="italic">venarum</hi> te
+<lb/>commonere volo, quae ad ventrem pertinentes uno ex
+<lb/>principio omnes prodeunt, cava nimirum jecoris parte,
+<lb/>quam portas vocant. Hinc enim exorte magna quaedam
+<lb/>vena porrigitur obliqua tum ad inferiores, tum ad alias
+<lb/>animantis partes, juxta medium potissimum ejus lutestini
+<lb/>duodeni, quod Herophilus ecpbysin appellat; ita enim
+<pb n="2.781"/>
+<lb/>ille appellat principium intestini prius, quam in antra-.
+<lb/>ctus orbesque convolvatur.. Sane eo primum brevem
+<lb/>quandam venam mittit, quae in. nounullis sola apparet,
+<lb/>ut plurimum autem aliis comitata capillorum modo praetenuibus,
+<lb/>quae tum ad. ecphysiu tendunt, tum ad pancreas,r
+<lb/>quod aliqui callicreas vocant; id autem glandula
+<lb/>est  substiata arteriis venisque, quae ea parte in ramos
+<lb/>finduntur. Tum alia quaedam ad:pyloron assurgens parva
+<lb/>vena toti, quae. et circa ipsum et. ante est, ventri-.
+<lb/>cusi parti distribuitur. Ex ramis autem. insignibus a ve-.
+<lb/>na, quae ad portas jecoris existit, procurrentibus primus
+<lb/>quidem est, qui ad concavum ventris fertur,. alter, qui
+<lb/>ad lienem. in aliquibus sane simiis ramus quidem est
+<lb/>unicus, sed statim ab exortu bifariam scinditur, et parte
+<lb/>quidem ama ventrem, altera lienem adit. Et sane, quum
+<lb/>duae sint venae, ipsae etiam tunc in exortu mutuo se
+<lb/>contingunt. Quae igitur ad concavum ventriculi tendit,
+<lb/>propius pyloron nascitur . sic autem inferius extremum
+<pb n="2.782"/>
+<lb/>ventriculi appellatur, quod in dextris prope jecur filum
+<lb/>habet; nam in his animantibus oblique satis positus
+<lb/>venter esu Sed enim ad ipsum ventriculi concavum
+<lb/>non aequaliter ramos mittit vena haec. Quandoquidem
+<lb/>id omne ventriculi, quod ad sinistram est, usque ad gulae
+<lb/>exortum aliae amplectuntur venae ex ea ductae, quae
+<lb/>ad lienem porrigitur. Haec enim parva satis est, multasque
+<lb/>in itinere pilorum modo graciles venas in pancreas
+<lb/>edit, quumque jam prope lienem ..pervenerit, infignem
+<lb/>ramum ad concava ventris mittit; quae porro
+<lb/>ipfius pars lienem adit, circa ejus maxime medium situm .
+<lb/>habet; deinde inibi in ramos scissa, toti visceri, qua est
+<lb/>concavum, elatior expanditur, multis in ipsum. veluti radicibus
+<lb/>insita. Nec vero hic tota in ramos exhauritur,sed
+  <lb/>satis notabili <hi rend="italic">magnitudine</hi> ipsius extrema sunt utraque.
+<lb/>Eorum itaque alterum a lienis capite ad gibba
+<lb/>ventriculi subit, alterum ex imo ad partem sinisteriorem
+<lb/>omenti, quod sane epiploum five epiplum dicas, nihil
+<pb n="2.783"/>
+<lb/>interest. Et haec. quidem fere rtasuabent. Nonnunquam .
+<lb/>vero, quanquam id rarius, priusquam ad splenis caput.
+<lb/>pertingat, magna vena ad ventris gibba attollitur, ramos
+<lb/>ex se tum ad reliquum splenem tum vero ad concava
+<lb/>ventris usque ad ipsius os emittens. Tertia ab eis, .quas
+<lb/>memoravimus, ex magna vena nascitur, eodem quo illae. .
+<lb/>modo ad partem sinistram extremum magnorum infestinurum
+<lb/>mesenterium ad sudem usque complexa; quemadmodum
+<lb/>et post hanc alia quaedam a dextris . partibus
+<lb/>ex eadem magna vena. prope pylorum enata ad gibbum
+<lb/>ventriculi ascendit; a qua subeunte propagines ad. omenti
+<lb/>ipfius dexteriorem partem existunt, fitum quam maxime
+<lb/>fieri potest ei contrarium habentes, quam paulo ante ad
+<lb/>omentum ipsum de lienis. infima parte ferri diximus.
+<lb/>Quin etiam post hanc alia quoque ex vena magna oritur
+<lb/>in ipfius latere dextro, in coli intestini mesenterium
+<lb/>inibi positum discissa... Jam totum venae reliquum, quam.
+<lb/>a. portis oriri diximus, ad medium duorum dictorum
+<pb n="2.784"/>
+<lb/>mesenteriorum pervenit. Id autem quoque plurimas sane
+<lb/>venas habet; et in ieiunum primum, deinde in omne
+<lb/>deinceps tenue intestinum fissura multiplici dividitur.
+<lb/>Postrema vero ejus pars tum caecum intestinum compleutitur,
+<lb/>tum quandam exiguam coli partem, qua .ipsum
+<lb/>caeco adnectitur. Ad hunc sane modum- venae illius;
+<lb/>quae a portis prodit, in intestina, splenem et ventriculum
+<lb/>distributio perficitur. Quinetiam omnes omento intextae.
+<lb/>venae ab eisdem ipsis venis propagantur; - illae
+<lb/>quidem, quae tum in sinistris, tum in dextris ipsius sunt
+<lb/>partibus, sicut paulo ante ostendimus. Quae autem anteriorem
+<lb/>mediam que ejus regionem obtinent, ex illis
+<lb/>oriuntur, quae gibbas ventriculi partes perreptant, Postremo,
+<lb/>quae subjectum huic regionem obtinent, quae exiguae
+<lb/>omnino sunt, ab iis ortum habent, quas ad concava
+<lb/>ventriculi porrigi diximus. Jam illud meminisse te volo,
+<lb/>venarum ventriculi gibbum complectentium, quae, ut modo
+<lb/>dixi, duae sunt, extrema sese mutuo contingere, et
+<lb/>illarum utramque quibusdam membranis insidentem elatiorem
+<pb n="2.785"/>
+<lb/>per ventriculi gibbum circumire. Dissimili plane
+<lb/>ab iis modo se habent concavae partis Venae: eae siquidem
+<lb/>contra ventriculum exortae corpori ipsius annectuntur
+<lb/>atque insident. At vero lienis vena similiter, ut
+<lb/>gibbarum ventriculi partium venae, membranis fulta
+<lb/>concavum omne pervadit. Sunt autem et aliae venae
+<lb/>in tenuiorum intestinorum medio mesenterio, quae ad
+<lb/>glandulas quasdam ea regione positas pertinent. Quin
+<lb/>etiam ab eadem magna vena, quae ad portas est jccoris,
+<lb/>cujus soboles sunt omnes modo memoratae, aliae quoque
+<lb/>quaedam producuntur jecinoris fibris numero pares; in
+<lb/>singulas enim singulae dividuntur. itaque per venas,
+<lb/>quae tum ad ventriculmn, tum ad intestina descendunt,
+<lb/>ad has ipsas portas cibus ascendit; eoque mihi locum ita
+<lb/>videntur antiqui nominasse; hinc vero per venas ad
+<lb/>ipsius fibras pertinentes in totum jecur permanat.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+<p rend="indent">Inde vero rursum in alias assumitur venas,
+<pb n="2.786"/>
+<lb/>per gibbam quidem jecinoris partem dispersas, eaetorum
+<lb/>a maxima alia vena ortas, quam ob id ipsum cavam
+<lb/>nominant. Ab ea etiam aliae propagantur, quae in
+<lb/>omnes corporis partes sanguinem derivant. A secure
+<lb/>enim utrinque prolapsa, sursum quidem per septum transversum
+<lb/>ad cor attollitur, deorsum Vero in spinam dorsi
+<lb/>deflectitur, atque inibi super magnam defertur arteriam,
+<lb/>quae a corde progignitur paulo altius, quam est septum
+<lb/>transversum. Jam vero venae ab ea, quae sursum tendit,
+<lb/>oriuntur istae: prima ad ipsum septum transversum conjugatio ;
+<lb/>deinde capillaceae permultae, tum in thoracem
+<lb/>intercipientes membranas, tum in tunicam pericardium.
+<lb/>Post illas alia satis notabilis in dextram cordis aurem
+<lb/>fertur; ab aure mox in sinum ejus dextrum eundem que
+<lb/>magnum; atque inde alia eandem cum arteriis tunicam
+<lb/>habens in pulmones. Quin etiam alia quaedam perquam
+<lb/>exigua per exteriorem cordis superficiem in totum
+<lb/>ejus visceris corpus spargitur. Eodem autem mode
+<pb n="2.787"/>
+<lb/>in plurimis quidem animantium ad thoracis sinistras partus
+<lb/>fertur vena, quintam siorfi vertebrarn ascendens. At
+<lb/>in firmis paulo supra aurem cordis. in dextris partibus
+<lb/>sua est haec vena, . per: spinam quidem similiter delata,
+<lb/>caeterum in omnes thoracis partes diffissa praeter. prima.
+<lb/>duo, nonnunquam. .vero etiam tria costarum intervalla.
+<lb/>Quum enim cor ipsum praeteriit vena cava, ad jugula.
+<lb/>ascendit, primum quidem memoratam nunc venam promens,
+<lb/>exiguas vero alias deinceps, has quidem araneo-sas,.
+<lb/>has autem capillaceas ad membranas mittens thora-.
+<lb/>cem interscpi entes et in glandium, quem thymum nostinant.
+<lb/>Quum vero jam prope sagulum perverrit, in duas.
+<lb/>diducitur partes. . Atque ita in latus oblique utraque
+<lb/>pars inclinata a media regione paululum divertit. De,
+<lb/>quibus, dum ad sibi ricinam utraeque claviculam alcen-.
+<lb/>dunt, in medio ductu venarum ad anteriora thoracis
+<lb/>procedentium radices sparguntur. Praeter has magnarum
+<lb/>venarum in ramos se scindentium -coniugatio iutereostalia
+<pb n="2.788"/>
+<lb/>superioris thoracis alit spatia, et quae circa scapulas
+<lb/>si.mt locale tum nonnullos etiam ex interioribus colli
+  <lb/>musculis. Porro ab sus ipsis venis illae etiam <hi rend="italic">nascuntur</hi>,
+<lb/>quae per fex colli vertebras in ipsarum foramina se insinuantes
+<lb/>ad caput usque efferuntur.. Quod autem de
+<lb/>eis superest, quantum id eun que est, ad axillas porrigitur.
+<lb/>De qua vena, quae utrinque scilicet. una est; ut de aliis
+<lb/>etiam, in libris de dissectionum administrationibus ple-.
+<lb/>urus et. exactius .dictum est. Enimvero compendii caula.
+<lb/>iis., qui primum instituuntur, perutilis nunc etiam estquid
+<lb/>dicetur. Propago igitur utrinque una eaque parta
+<lb/>musculis, qui a sterno ad humerum feruntur, distribuitur.
+<lb/>Secunda in ipsa axlllarmn glandulosa ..membranosaque
+<lb/>corpora spargitur, quae et ipsa perexigua esu Tertia autem
+<lb/>insignis, deorsum iter habens, per easdem expanditur.
+<lb/>partes; utraque autem per alum thoracis latus, deorfum
+<lb/>versus cum tenui nervo  sub cute. porrecta, ad hypocliondria
+<lb/>usque delabitur; Quarta .denique poft has vena
+<pb n="2.789"/>
+<lb/>ab ea, quae per axillam in manum fertur, exoritur; in
+<lb/>musculos dispensata tum illos, qui cavam scapularum
+<lb/>partem substernunt, tum eum, qui in ipfa axilla est
+<lb/>maximus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+<p rend="indent">Hujus venae reliqua pars multiplici. fissura
+<lb/>per manum excurrit tusam ad hune sane modum.
+<lb/>Per brachium quidem deorsum fertur intimis magni muscuti
+<lb/>partibus porrecta (assumit autem ab hac vena non.
+<lb/>hic musculus solum, sed qui in brachio sunt sere omnes).
+<lb/>Ex ejus autem propaginibus i una quaedam, et haec. per
+<lb/>profundum procurrens, circa brachium in orbem qua-damtenus
+<lb/>complicatur; posterioremque ipsius regionem
+<lb/>ita perreptat; mox in exteriorem partem eandemque
+<lb/>anteriorem subit ad cutem,- atque illinc deorsum tendit,
+<lb/>donec ad. brachii commissuram perveniat Postrema vero
+<lb/>ejus pars aliquando exteriorem brachii condyluin pauloluna
+<lb/>excedit, nonnunquam multo ulterius progreditur, sub
+<lb/>cute secundum os cubiti deorsum tendens: At omne,
+<pb n="2.790"/>
+<lb/>quod de magna vena reliquum est, ad medium pervenit
+<lb/>cubiti articulum una cum viciniori nervo, ramos expandens
+<lb/>dd intimas musculorum ejus loci partes, usque ad
+<lb/>interius brachii caput, nihlloque minus per profundum
+<lb/>ad posteriores anteriorerque. musculos; Sed enim prius,
+<lb/>quam in cubiti articulum ingrediatur, in venas scinditur
+<lb/>complures, e quibus. multae in superficie extant, omnium
+<lb/>maxima profundius demergitur. At quae in superficie
+<lb/>sunt, neque rnagnitudlue neque numero aequales sunt
+<lb/>Perspicue enim, si laqueo brachium interceperis, etiam
+<lb/>citra dissectionem in gracilioribus hominibus videre eas
+<lb/>licet in aliis aliter positas esse; idque in primis convenit
+<lb/>aspicere in iis, qui latiores venas habent, quanquam
+<lb/>in simiis quoque, cum dissecantur, exquisita est similitudo
+<lb/>cum iis, quae in hominibus conspiciuntur. At .altera
+<lb/>magna ex parte una quidem vena a magna propagatur
+<lb/>ad inferiora magis oblique declinans, quae deinde ex
+<lb/>inferioribus cubiti partibus adusque carpum seu brachiale
+<pb n="2.791"/>
+<lb/>diffinditur, una vero hac .superior, quae eodem modoin
+<lb/>ramos distribuitur ,c ac tertia deinceps circa medium ma-.
+<lb/>xime cubitum p caeterum earum extrema prope brachiale
+<lb/>commiscentur. Elatissimus autem simul et maximus ramus,
+<lb/>qui ab ea vena, de qua modo institutus est sermo,
+<lb/>propagatur, . in medii cubiti articuli pervenit flexum.
+<lb/>Quo etiam confluit alterius venae, . quae per brachii auseriora
+<lb/>sist, cute fior est, non exigua portio, quam litiatas
+<lb/>venas habentibus perspicue videmus primum quidem
+<lb/>a clavicula per musculum epomidis oblique ferri, deinde
+<lb/>vero recto tramite. deorsum tendere. Hujus venae .quaenam
+<lb/>sit prima origo, posterius iudicabimus. Nunc autem
+<lb/>hoc tantum de hac scire conveuit, in superficie tusi cute .
+<lb/>sitam iis quas percurrit partibus venas omnino obscuras
+<lb/>producere; ubi ..vero jam..prope cubiti articulum producta
+<lb/>est, non parvam. sui partem oblique ad flexum brachii
+<lb/>extendit, quae in idem coeat cum modo memorata majoris
+<lb/>venae parte, quam quum solam hucusque persequamur
+<pb n="2.792"/>
+<lb/>commentando, propter societatem, quam cum alia init,
+<lb/>ad aliam transire coacti fumus. Duae enim hae tutius sunt
+<lb/>manus venae, tum ea, quae per axillam in ipsam
+<lb/>manum fertur, tum ea, quae apud . clavi calam, quain
+<lb/>humerariam appellanti Sed enim de utraque nosse oportet,
+<lb/>non parvam utriusque portionem semper ad flexum,.
+<lb/>qua brachium cubito committitur, pertingere. Caeterum
+<lb/>non semper idem harum venarum situs, sicut necaequalis
+<lb/>crassitudo semper est. Hujus autem tres potissimum
+<lb/>sunt differentiae, quarum primam, quia in plurimis visitur;
+<lb/>primum etiam . explicabimus, alias autem deinde
+<lb/>prosequemur. Secundum naturam maxime est, et quamplurimis
+<lb/>ita se res habet, ut utriusque venae pars in interrorem
+<lb/>articuli cubiti flexum tundens aequalis quodammodo
+<lb/>sit; quae partes posteaquam coierint, venam producunt,
+<lb/>quae omnium in cubito in superficie extantium
+<lb/>fertur amplissima. Ab hac praecipua magnitudine hume-.
+<lb/>raris est, ea hinc profecta, qua cubitus cum brachio coarctatur,
+<lb/>perque radium porrecta, posteaque ad exterior
+<pb n="2.793"/>
+<lb/>rem partem secedens ad extremi cubiti tuberculum, quod
+<lb/>brachiali adhaeret, - pervenit, atque inde mox infimae
+<lb/>eidemque extimae brachialis ipfius parti distribuitur. At
+<lb/>illa, .quam ex confluxu coituque duarum venarum omnium
+<lb/>in superficie extantium maximam fieri diri, ab interioribus
+<lb/>cubiti partibus incipiens, primum conscendit
+<lb/>radium, delude in externam evadit partem, ubi in ramos
+<lb/>scilla duos, altero ad radii extremum, quod brachiali
+<lb/>annectitur, procedit, altero ad summum pertingit cubitum,
+<lb/>qua et ipse brachiali adhaeret. Atque insui venam
+<lb/>contingit, quam ab humeraria propagari retulimus. Ad
+<lb/>hunc igitur modum secundum naturam maxime sese habent
+<lb/>duae bae venae; quanquam in aliquibus non item,
+<lb/>in quibus vel munerariae propago axillariae ramum au- .
+<lb/>get, vel vice versa hujus ramus humerariam. Qulu etiam, .
+<lb/>quod ad situm pertinet, altera earum sub musculum se
+<lb/>condente, reliqua sola in superficie eminet. Ita fit, ut,
+<lb/>dum ad venam secandam accedimus, vel .tres- aequales
+<pb n="2.794"/>
+<lb/>videre liceat, vel duas tantum, vel inaequales omnes,
+<lb/>nonnunquam etiam nobis occultetur aliqua una .ex .iis;
+<lb/>aut etiam duae. Atqui et quae . has ordine consequuntur.
+<lb/>humiliores tres, eas non solum aequales inaequalesque
+<lb/>videre licet, sed ne apparentes quidem prorsum earum
+<lb/>aliquas ; . quod eo fit, vel quia praetenues ipsae sint omnino,
+<lb/>vel quia penitius ferantur, maxime quum obefius
+<lb/>erassiusquo. quodammodo .fuerit. corpus. alam vero, quemadmodum,
+<lb/>quae interiori cubiti parte sunt venae, fere
+<lb/>circa brachiale ..in mussas exiles et inter se .commixtas
+<lb/>venas scinduntur, sic. etiam multoque his magis q quod
+<lb/>liquido vel in dissectione vel etiam citra eam rideas,
+<lb/>exterioris cubiti. partis .venae. Pluribus enim .loris et
+<lb/>sibi inter se . obviam fiunt, . et cum venis coeunt ulterioris
+<lb/>cubiti partis. ..Atque. ad hunc. modum saepius commixtae
+  <lb/>sub cutem <hi rend="italic">universum</hi> extenduntur, quae brachiali, post- brachiali,
+<lb/>digitis denique obducitur. Ac venarum. in
+<lb/>fumma cute exlantium hujusmodi est feries.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Quae. autem. altius per universum cubitum
+<pb n="2.795"/>
+<lb/>manumque extremam immerguntur, a duabus magnis
+<lb/>(quarum sobolem esse diximus omnes per totam manum
+<lb/>diffusos venarum rumosj oriuntur ad hunc sane modum.
+<lb/>Qua parte ah utraque vena magna propagari quasdam
+<lb/>diximus, quae ad flexum brachii in. idem mutuo summa
+<lb/>sub cute positae . tenderent, hac eadem parte alii duo
+<lb/>rami ab utraque singuli in profundum procurrunt, inique
+<lb/>similiter mutuo complexu coniunguntur. .. Ex quibus ruisum
+<lb/>aliae duae Venae fiunt amplitudine notabiles, quarum
+<lb/>quae demissior .est, ad partes manus internas trajicitur
+<lb/>elatior autem altera; per mediam profunditatem longius
+<lb/>progressa ac fere ex interioribus partibus commune of.sium
+<lb/>vinculum .contingens, postea vero, quum jam attigerit
+<lb/>parvum musculum oblique prope brachiale positum,
+<lb/>qui radium movendi auctor est, in exteriorem illius partem
+<lb/>evadit, atque inibi per profundum porrecta .exterioris
+<lb/>munus, quaecunque nacta fuerit, .ossa amplectitur.
+<lb/>Ea porro, quam ad .interiorem manum pertendere diximus,
+<pb n="2.796"/>
+<lb/>ad parvos usque digitos, aliquid etiam de medio
+<lb/>digito apprehendens, pertingit. Reliquam vero medii
+<lb/>partem ac duos deinceps maiores digitos una cum
+<lb/>praepositis postbrachialis ac brachialis partibus alia amplectitur
+<lb/>vena. ab iis ortu, quae in superficie .extant. Ac
+<lb/>venae quidem per manus ita digeruntur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Quae autem ad anteriorem thoracis regionem
+<lb/>feruntirr, ad hunc constant modum. E medio duarum
+<lb/>venarum, in quas cavam findi dudum memoravimus,
+<lb/>vena, quae ad dextramster ni tendit, a parte, quae ibi est,
+<lb/>oritur, a sinistro autem cavae membro altera. Hae igitur
+<lb/>per totum feruntur thoracem sterno subditae usque ad
+<lb/>radicem cartilaginis xiphoidis appellatae, et ad singula
+<lb/>obiter costarum intervalla ramulum ex su mittunt, quo
+<lb/>coniunguntur extremis ejus venae, quae spatia ipsa intercostalia
+<lb/>perreptet. Harum venarum pars quaedam extra
+<lb/>thoracem emergit ad superstratus illic musculos. ipsae
+<lb/>autem, quae ad mucronatam cartilaginem pertinent alunt
+<pb n="2.797"/>
+<lb/>in mammas assurgentes, tum in reliquum pectus dispenstttae
+<lb/>deorium procurrunt, rectis subnixae musculis, in.
+<lb/>quos. patrem etiamnum quandam mittunt. Sub his ipfis
+<lb/>non paucae herum venarum portiones coeunt cum vena- .
+<lb/>rem aliarum extremis, quae de imo furium attolluntur;
+<lb/>de quibus postea licetur in venarum offis, quod statum
+<lb/>vocant, enarratione. At vero aliae quoque sub cute ad
+<lb/>hypochondria eminentes venae initium habent, ex courmixtione
+<lb/>factae ramulorum tum ab iis venis, quas juxta
+<lb/>mucronatam cartilaginem extra thoracem existere et r
+<lb/>emergere diximus, tum etiam ex iis, quae vicina inter- ..
+<lb/>collatia alunt. Cum quibus aliae rursum committuntur,
+<lb/>quae de inguinibus ad superiora tendunt; de quibus suo
+<lb/>loco disseretur. . Hoc. modo venae distribuuntur, quaecunque
+<lb/>a cava bipartito suissa propagantur, priusquam ad
+<lb/>claviculas pertingant, maxime circa eum locum, ubi ma--:
+<lb/>gnum situm est glandium, anatomicis thymus appellatum.
+<lb/>libi aliae etiamnum venae parvae et. araneosae quaedam.
+<pb n="2.798"/>
+<lb/>ac caplliaceae tum in nilum glandiunr, tum intersepientes
+<lb/>in membranas inferuntur, quae et ipsae cavae santi
+<lb/>ioboles. Aliquae autem his nrajores etiam, verum et ip- fae
+<lb/>parvae adeunt peri carnium- et cum arteria, quae a
+<lb/>corde sursum effertur, se porrigunt. .</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+<p rend="indent">Qua porro claviculae adjacent cavae venae
+<lb/>segmentis, subjectae sunt . radices venae maximae,
+<lb/>utrinque.. una quae .quidem ecnfellim assurgens bipartite
+<lb/>scinditur; duas ederrs magnas venas; quarum altera per
+<lb/>anteriorem. ayerfamque colli partem ad interiora .magis
+<lb/>recedens effertur, altera in partem anteriorem inferioremque
+<lb/>progressa, mox furium sublata, clavi calam extrinferus
+<lb/>amplectitur, ad modo memoratam. venam contendens.
+<lb/>Et ipsis fete commiscentibus, gignitur in superiicie:
+<lb/>eminens jugularis utrinque una. At enim non eodem
+<lb/>semper modo miscentur, sed aliquando. haud longe ultra
+<lb/>claviculam progressae, nonnunquam tum demum, quum
+<lb/>tertiam totius colli longitudinis partem emensae fuerint.
+<lb/>Videbis autemaliquando eas ad mediam regionem aut prope
+<pb n="2.799"/>
+<lb/>pertingentes; aliquando in sinam veham omnino non
+<lb/>coeuntes, sursum rectiores efferri videas, modico inter
+<lb/>ipsas spatio interiecto, et parte quidem interiore non
+<lb/>procul ab aspera arteria- alteram, exieriore vero: reti-.
+<lb/>quam,. eam nimirum., r quam circa claviculam contorqueri.
+<lb/>diximus. Caeterum .communis venae interventu, quae
+<lb/>transversum ad utramque: obtinet situm, semper sibi jungmrtur
+<lb/>et ita sursum tendunt. Jam ea vena, quam circa.
+<lb/>claviculam torqueri diri, propagines mittit aliquas ara-:
+<lb/>neosas non in .omnibus corporibus aspectabiles- (id enim
+<lb/>omnium hujus . generis venarum commune estj ,- nonnullas^
+<lb/>capillaceas, easque aspectabiles, si modo confestim dissecetur
+<lb/>animans, ut compressu digitorum, expresso in ipsas
+<lb/>fauguine, ita manifestas efficiamus. Duo autem lue hujusmodi
+<lb/>venarum . sunt .coniugia,. transversum alterum
+<lb/>coeuntium ipsarum ac fele invicem contingentium in
+<lb/>cavo.juguli, alterum autem minime coeuntium ; declinant
+<lb/>eum quasi in extimam colli partem obliquae. Porro ex
+<lb/>araneolis quaecunque in. .extimam regionem convertuntur;
+<pb n="2.800"/>
+<lb/>earum extrema invicem coniunguntur. Hae igitur, sicut
+<lb/>jam nixi, non in omnibus sunt aspectabiles. De. iis autem,
+<lb/>quae manifeste semper videri possunt, tres sunt venae
+<lb/>incipientes ab ea, quae circa claviculam contorquetur;
+<lb/>una quidem fatis no labilis, quae saepius aequali visitur
+<lb/>crassitie cum vena ad colluat subeunte; hanc autem
+<lb/>lurmerariam ideo appellant, quod obliquior a clavicula
+<lb/>scnsun recedens se porrigat ad humerum. .t Reliquae duae
+<lb/>radices utrinque humeraria minores habent. Earum igitur
+<lb/>altera elatiorem nacta radicem usque ad summum hmr.erum
+<lb/>conscendit ac in proxima quaeque corpora dispergitm.
+<lb/>Humilior altera per profunda magis surreptans
+<lb/>secundum magnum musculum a sterno. enatum usque ad
+<lb/>caput brachii pervenit. Cujus venae extrema aperte
+<lb/>nonnunquam videntur committi cum venae ulterius extremis,
+<lb/>quae ab axillaria nascens ad humerum extollitur
+<lb/>atque illic multifariam distribuitur. Quin aliae quoque
+<lb/>modicis intervallis sparsae, quarum non idem perpetuo
+<pb n="2.801"/>
+<lb/>situs, neque vero .magnitudo plane eadem in omnibus
+<lb/>simiis visitur, a venis oriuntur, quae ad manus pertinent.
+<lb/>Quae autem ex iis notatu dignae sunt, dudum memoravimus,
+<lb/>quum de axillariae dissectione commentaremur.
+<lb/>Ea enim et unica multo humeraria major est, et numerofanr
+<lb/>in brachio sobolem habet prodeuntium exfe ramorum,
+<lb/>quum ab humeraria perpaucae eaeque vel capillaceae
+<lb/>vel etiam araneosae .oriantur sub summa cute dispersae.</p>
+</div>
+<div type="textpart" subtype="chapter" n="7">
+<p rend="indent">Reliqua igitur jugularium venarum, tum
+<lb/>quae in superficie sunt, tum quae altius . delitescunt, distributio
+<lb/>explicanda esu Jugularias aulam altius conditas
+  <lb/>nonnulli eas vocant; quae protinus scissa cava producuntur.
+<lb/>Alii non totas illas, sed id demum, quod ex iis
+<lb/>supra claviculas collo intextum esu Nec desunt, qui ne
+<lb/>hoc quidem .omnino sciant, illas in ramos spargi lusca
+<lb/>claviculas. Nos vero semper observavimus, cavam venam,
+<lb/>priusquam. ad claviculas pertingat, diduci, et de ramo
+<lb/>ipsius utroque venas produci, quae ad sternam primasque.
+<pb n="2.802"/>
+<lb/>costarum intercapedines, fax colli vertebras scapulasque
+<lb/>ferantur-, tum quaecunque post has ad totas munus derivantur,
+<lb/>quas per axillas eo iter habere diximus. Quum
+<lb/>autem sub claviculas prodierint magnae venae, quas ex
+<lb/>divisione cavae in duo veluti membra oriri dictum est,
+<lb/>venae radicem edunt notabilem, a qua, ut memoratum est,
+<lb/>tum hnmerariam nasci contingit, tum alias -quoque quasdant,
+<lb/>de quibus est paulo ante pertractatum Quantum
+<lb/>autem est reliquum de magnis venis, in quas cavam diduci
+<lb/>diximus, recta per collum; gulam habens ante se
+<lb/>positam, sursum effertur. De quibus-, quo pacto disicis
+<lb/>sinantur, orationis feries postulat,. ut nunc agatur una
+<lb/>cum in superficie extantibus jhgulariis venis, quas in dis
+<lb/>vertis corporibus varie concurrere eodem et coniungi inter
+<lb/>se diximus. Enimvero, quemadmodum hujus rei, ut
+<lb/>in unum coeant, permultae sunt differentiae, sic aliis totidein
+<lb/>differentiis ipsae in ramos scinduntur. Progressa
+<lb/>enim superficiaria ipsa jugularis vena protinus aliquando
+<lb/>finditur, et pars ipsius utraque vel aequalis apparet; vel
+<pb n="2.803"/>
+<lb/>inaequalis; nonumrquam ulterius multo procedit,. aliquando
+<lb/>ita longe si ut prope maxillam scindatur. . Haec
+<lb/>autem conspicue in hominibus quotidie videntur vel .-in
+<lb/>curationibus, .quae manu obeuntur ,. vel si etiam intensius
+<lb/>clamaverint .spiritumve. intra continuerint, compresse
+<lb/>thorace ; quod athletae in spiritus comprehensionibus (ita
+<lb/>enim vocant] faciunt. Quin et putrida vitia ita aliquando
+<lb/>ciccum j accute cute omnia, quae suberant, detexerunt,
+<lb/>ut nudae conspicerentur venae. . ldque per omnes consinentur
+<lb/>corporis partes videre tum maxime licuit, cum
+<lb/>foeda quaedam lues carbunculosum. . in Asiam vulgariter
+<lb/>ingruisset,- quae facile, quicunque vidissent, persuasit,
+<lb/>exactam simiis. cum hominibus esse fimilitudinem. t Igitur
+<lb/>medicum necesse est, quicunque curationem circa collum
+<lb/>manu facturus fit, varietatem nosse venarum, quae .collo
+<lb/>sunt commissae., inspicereque, secundum quam praecipue
+<lb/>ideam ille, qui manu curatur, .formatus sit, tum vero
+<pb n="2.804"/>
+<lb/>omnes quatuor venatum propagines ad unguem exploratus
+<lb/>et cognitas habere. Cum autem quatuor dico, intelligi
+<lb/>volo primunr eas; quae rusca sunt-, priusquam
+<lb/>eodem coeuntes extimam producant iugulariam; delude
+<lb/>eas, quae, postquam scissae in ramos fuerint, sursum versus
+<lb/>contendunt. Nec vero necessarium arbitror, nec. aliis
+<lb/>medicis; neque iis, qui primulo introducuntur, nec multu
+<lb/>etiam magis vobis, optime Antisthenes, philosophis
+<lb/>exactissimam habere hujusmodi theorematum cognitionem.
+<lb/>Quocirca initio statim libri testatus sum, me compendium
+<lb/>fcribere dissectionis valorum. In libris etenim, quibus
+<lb/>rationem perscripsimus administrandarum dissectionum,
+<lb/>quomodo in quemque musculum vena et arteria insereretur,
+<lb/>planum factum esu Nunc autem nec est, ut dixi,
+<lb/>necessarium, et multum haberet obscuritatis oratio, si
+<lb/>misti musculorum facienda esset expositio. Ideoque in
+<lb/>dissectionum libris valorum tractatui musculorum dissisetio
+<lb/>nem praemisimus. Quapropter, quod ad praesentem
+<lb/>commentatione pertinet, tantum dixisse satis erit, quod
+<lb/>venae ab extantibus in superficie jugulariis propagatae
+<pb n="2.805"/>
+<lb/>plurimae et tenues sunt, et in musculos subter cutem
+<lb/>positus dividuntur. .E quibus musculis etiam duo ii sunt,
+<lb/>qui buccas movent, tenues illi quidem satis,- caeterurn
+<lb/>fuhter tolam colli cutem porrecti. Postea .autem, quam
+<lb/>iterum ru ramos discesserint ad superiora subeuntes.,. harum
+<lb/>venarum notabiles rami fiunt, per quos tum in. lo-,
+<lb/>tam sacrem sparguntur, tum in circumiectam. auribus regionem
+<lb/>se expandunt, et .in caput denique attolluntur.
+<lb/>Cum enim bipartito te sciderit utraque, altera quidem
+<lb/>pars in totam inferiorem maxillam magnis vasis et. aliis
+<lb/>patris. in superiorem effunditur, altera vero circum au:..
+<lb/>res caputque excurrit. Permiscentur autem harum omnium
+<lb/>venarum extrema non modo cum adiacentibus, verutu
+<lb/>etiam nihilo luis minus cum e regione positis, Eodem
+<lb/>enim consuunt venarum ad sinisteriorem partem . existentium
+<lb/>fines cum iis, qui ad dextram situm habent. Nam .
+<lb/>quum quatuor in summo extantes jugulariae prodierint, r
+<lb/>ipsarum exterior ad caput sursum fertur, (memineris au-.
+<pb n="2.806"/>
+<lb/>tem ejus, quod de ea dixi, nimirum circa clavicnlam
+<lb/>contorqueri,) alia interius ad inferiorem maxillam,
+<lb/>commixta identidem ramulis quibusdam interioris jugulariae,
+<lb/>a quibus multae mittuntur propagines in laryngem
+<lb/>gulamque, eas denique musculorum partes, quae per
+<lb/>profundum in colio porriguntur; sicut, quae ab imo
+<lb/>ad cutem recedunt partes musculorum, jugulariis aluntur
+<lb/>iis, quae subter cutem magis eminent. Quin et lingua
+<lb/>magnas accipit ab intimis jugulariis venas, posteaquam
+<lb/>eae per ramos cum extimis se conj unxerint. Quaecunque
+<lb/>porro linguae circumjecta sunt corpora, et e muscolis
+<lb/>quicunque non penitus conditi. latent, a jugulaI lis
+<lb/>aluntur extimis. Reliquum autem omne ex internis jttgul
+<lb/>ariis ad cerebrum assurgens in calvam excidit per
+<lb/>extremum suturae lambdoidis. Sed prius, quam excidat,
+<lb/>ramulum in mediam primae secundaeque vertebrae regionem
+<lb/>inserit, ac deinceps alium capillaceum inter primam
+<lb/>vertebram caputque ipsum. Coit autem cum venis, quae
+<pb n="2.807"/>
+<lb/>de summa parte deorsum seruntur per cerebrum, ac
+<lb/>nonnullis item, quae extrinsecus, quaeque a lateribus
+<lb/>veniunt. Omnium enim conjunguntur extrema venarum
+<lb/>circa caput ipsiusque cum prima vertebra commissuram.
+<lb/>At enim venarum, quae calvae intexuntur, aliquae intro
+<lb/>procedunt tenues, maxime qua maxiHa articulatur. Quemadmodum
+<lb/>autem postea, quam in calvam omnes evaserint,
+<lb/>in ramos sparguntur et societatem inter se ineunt, ac
+<lb/>rursum quomodo aliquae ipsarum partes Cum nervis quibusdam
+<lb/>foras excedunt, in dissectionum libris suum de
+<lb/>cerebri dissectione facienda disseruimus) pertractatum est.
+<lb/>Similiter quum de pulmonibus, corde aliIsque visceribus
+<lb/>dissecanda orationem iustituissemus, ut quaeque in quodque
+<lb/>ipsorum ab omnibus tum venis tum arteriis propago
+<lb/>mitteretur, plenius atque exactius est dictum. Nunc
+<lb/>autem (quod jam monuimus) compendium de vasorum
+<lb/>dissectione scribimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+<p rend="indent">Absoluta venarum, quae sunt supra sep
+<lb/>tum transversum, expositione, jam ad reliquas oratio convertatur,
+<pb n="2.808"/>
+<lb/>quae omnibus insra feptnm transversum partihns
+<lb/>corporis nutrimentum suppeditant a cava in lumbis
+<lb/>locata genitae. Haec enim vena, simulatque e jecore
+<lb/>primum se exprompsit, priusquam in lumbos considat,
+<lb/>elatior adhuc existens, parte quidem dextra in dextri
+<lb/>renis tunicam ac circumjecta corpora modo - araneosos,
+<lb/>modo capillaceas et crassiulculos ramulos spargit; <hi rend="u">sinist</hi>ra
+<lb/>autem notabilem venam, quae et ipsa . in ramos suissa
+<lb/>corporibus inibi existentibus distribuitur. At .saepenumero
+<lb/>a vena ipfa ad renem proficiscente propagines mittuntur,
+<lb/>quae in renis tunica intexuntur ac vicinis in ambitum
+<lb/>locis, et quaedam araneosae sunt, nonnullae parvae, ac
+<lb/>capillaceae quaedam. Parvas autem proprie appello,
+<lb/>quae conspiciuntur, quamvis aliquam et exiguam crassitiem
+<lb/>obtineant; id quod non inest araneolis, nec capillaenis.
+<lb/>Verum illae quidem assimiles sunt tenuissimis
+<lb/>Lineis, quae vix videntur, quas antiquorum nounulli
+<lb/>lineamenta vocavere, quest quis crassiulculas lineolas niceret;
+<pb n="2.809"/>
+<lb/>quae habent quidem latitudinem omnino aliquam,
+<lb/>test quoad sensum latitudinis expertes dicuntur, quum in
+<lb/>ipsis non fit maniscsta illa discretio eorum, quae latitudinem
+<lb/>partium definiunt. Hae igitur venae ad hunc habent
+<lb/>modum. Quae autem in renes inseruntur, omnium
+<lb/>sunt amplissimae, quaecunque a cava propagantur. Deinceps
+<lb/>post has ad testes deferuntur venae, quae partim
+<lb/>commune quiddam in omnibus nactae sunt simiis, partim
+<lb/>in singulis proprium. Et commune istud quidem est, ut
+<lb/>ab ea, quae ad finistrum perfertur renem, ramus mittatur,
+<lb/>qur ad sinistrum testem tundit; proprium vero, ut duo:
+<lb/>interdum principia sint ejus venae, quae in testem tendit,
+<lb/>alterum a .vena, quae -in sinistrum testem pervenit; altetum
+<lb/>cum vena cava scinditur; interdum vero unum solum
+<lb/>ah ea vena, quae in femur tendit. At quae in dextra
+<lb/>parte vena est, ad dextrum contendens testem, ea
+<lb/>producitur a cava; effi haec quoque mihi scmeL obfervata
+<lb/>est initia duo habere, e sicui ea; quae ad sinistram
+<lb/>est; saepe. Hae igitur venae ad testes deferuntur, sive
+<pb n="2.810"/>
+<lb/>mas, sive femina animans suerit; habet enim etiam semina
+<lb/>ad uteri latera testes multo minores et densiores,
+<lb/>quam in maribus visuntur. Secundum eas venas ex
+<lb/>singulis vertebris ad ilia venae mittuntur, quarum postrema
+<lb/>ad musculos, qui abdomini praetenti sunt, attoHuntnr ; mufculi
+<lb/>enim, quibus abdomen constratum est, ab iis aluntur
+<lb/>venis, aliisque, tum quae inter notharum costarum spatia
+<lb/>intercostalia versantur, tum quae per sternunt ad ruammas
+<lb/>superne deseruntur, iis denique, quarum de inferiovibus
+<lb/>locis sursum versus tendentium extrema cum proxime
+<lb/>memoratis pectoris mammarumque venis conjungnntur,
+<lb/>de quibus antea recepi me rursus dicturum.
+<lb/>Qui porro supra hos musculi extra thoracem jacent, alimentum
+<lb/>accipiunt a vasis circa claviculas parvis, de quibus
+<lb/>ante est dictum, tum etiam ab iis, quae per pectoris
+<lb/>os ad mammas tendunt, siquidem eorum propagines
+<lb/>quaedam ad musculos sterno vicinos erumpunt, atque
+<lb/>etiam ab iis, quae in spatiis sunt intercostalibus ; etenim
+<lb/>et harum pars quaedam extra thoracem emergit. Quin
+<pb n="2.811"/>
+<lb/>etiam, quod dorsali medullae, quae in lumbis est, venae..
+<lb/>a- cava luibi incumbente per singula foramina singulae
+<lb/>inserantur, superius dictum est: ita ut nulla vena, quae
+<lb/>a cava in lumbis sita ortum habeat, supersit commemofanda..
+<lb/>Sed enim, quomodo bipartito ea scindatur, jam
+<lb/>addendum. In. ultimis igitur lumborum vertebris non
+<lb/>amplius videre est arteriam venae subtectam,- sed contra
+<lb/>omnino use aes habet; elatior enim arteria supra venam
+<lb/>provehitur,. venanntem per ipsas vertebras. Hac igitur
+<lb/>parte) ef sese contingit- utrumque vas, - et in duo membra
+<lb/>divaricatur, efficiturque omnis illorum figura A elemento
+<lb/>persimilis. - Utraque porro cohaerentium valorum pars
+<lb/>ad sibi subjectum crus descendit obliquior. Atque in hoc
+<lb/>ductu videre primum licet ramum venae utriusque retrorsum
+<lb/>ad carnes in lumborum longitudinem porrectas
+<lb/>distribui, atque alias quasi. capillaceas obscure quandoque.
+<lb/>ad- eam peritonaei partem, quae ad lumbos est, ferii.
+<lb/>Siquidem peritonaeum, ut cuique corporis parti praetenditur
+<pb n="2.812"/>
+<lb/> ; a proximis quibusque vasis tam frequentibus
+<lb/>alitur venis, quarum plurimas easque longiores a venis
+<lb/>accipit, quae ad testiculos deferuntur. Post has vero
+<lb/>deinceps a venis in crura tendentibus propagines in posteriores
+<lb/>anterioresque partes feruntur, primum quidem
+<lb/>in ejus ossis, quod latum vocatur, musculos; quarum
+<lb/>haud exigua portio cum subsequente exorti; ad senis musicuius
+<lb/>tendens permiscetur. Utriusque autem venarum
+<lb/>coniugationis extrema ad exteriores lati ossis partes se
+<lb/>promunt, inque musculos eam regionem conilam entes
+<lb/>dispensantur. Deinde ad uteri partes inferiores venae
+<lb/>progrediuntur paulo supra, quam est colli primus exortus,
+<lb/>quae in cervicem ipsam disseminantur, et ad uterum
+<lb/>coeuntes quadam sui parte testiculos amplexantur; altera
+<lb/>usque ad uteri fundum pertinent. At ex iis, quae ad
+<lb/>inferiora uteri feruntur, venae propagantur vesicam fuheuntes.
+<lb/>Deinceps aliud venarum, quae ex gemino plerumque
+<lb/>initio oriuntur, coniugium est, quae procedens
+<pb n="2.813"/>
+<lb/>tes mutuo se contingunt, venasque utrinque unam gignunt,
+<lb/>quae per pubis ossis foramen ad exteriora cum
+<lb/>ejus loci nervo porrigitur; et ita ad luferiores ossis pubis
+<lb/>musculos vas hoc, ut nervus, distribuitur. Est alia post
+<lb/>hanc venarum coniugatio; de quibus antea dicere intermiscram,
+<lb/>quae per rectus musculos ascendunt, deinde
+<lb/>extremis junguntrtr venarum, quas per thoracem ferri ad
+<lb/>hypochondria prius dixi. Ab eadem radice venulae
+<lb/>utrinque singulae in uterum perferuntur, per quas .venas
+<lb/>mammis cum utero maxime est communicatio. Venae
+<lb/>igitur hae in interioribus rectorum musculorum. partibus
+<lb/>silae sunt, ac illae quidem, quae ad hypochondria feruntur,
+<lb/>his sunt connexae. Insuper aliud extra musculos
+<lb/>est coniugium earum, quae ad pudenda pertinent,
+<lb/>sive mas sit animal, sive femina, descendunt autem ad,
+<lb/>commissuram duorum pubis ossium utrinque. Post has
+<lb/>amem statim alia est vena, quae utrinque a vena in crura
+<pb n="2.814"/>
+<lb/>tendente exoriens in interiores femoris musculos fertur.
+<lb/>Sequitur alia post has venarum. subter cutem in superiicie
+<lb/>extantium coniugatio ,. quas in macilentis. hominibus
+<lb/>conspicue videmus de inguinibus primum orientes per
+<lb/>ilium regionem nscendere. . Quin etiam obscurae aliae,
+<lb/>quae .superne deorfum feruntur, finibus has . contingunt;
+<lb/>hae autem ab iis,: quae ad mammas sunt, maxime deris
+<lb/>varrtur. Sest enim a venarum coniugatione, de qua
+<lb/>modo erat fiermo, diri non parvam partem ab inferioribus
+<lb/>-furium tendere ac ad. natis. musculos secedere.
+<lb/>Hinc reliqua magna vena in crus ipsum dividitur,. primam
+<lb/>juxta inguina emittens propaginem, quae cum parva
+<lb/>arteria in anteriores musculos spargitur, secundam utrmque
+<lb/>unum, quae ex .internis partibus ad genu usque sule
+<lb/>ter. cutem dissipatur ,ae alias nun paucas ad profundiores
+<lb/>femorum partes. Caeterum paulo altius; . quam -femur
+<lb/>cum tibia articulo jungitur,. in tres partes dividitur;. quarum.
+<lb/>media (quae maxima estj .per .ipsimi deorsum ad
+<pb n="2.815"/>
+<lb/>poplitem fertur, atque inde per profundum posterioris
+<lb/>tibiae partis (quam suram dicunt) procedens non modicam
+<lb/>in musculos ejus ramorum sobolem spargit. Altera
+<lb/>autem parte,. quae in- superficie eminet, per exteriorem
+<lb/>partem perouae porrecta ad pedis pertingit articulum.
+<lb/>Tertia vero, quae est interior, ad anteriorem tibiae parteur
+<lb/>(ocream] procedit, ac inde ad malleolum pervenit, ad
+<lb/>ipsum tibiae extremum; haec ad sanguinem mittendum
+<lb/>commodissima. Enimvero a .maxima, quae per prosuudum
+<lb/>musculis distribuitur, duo cum arteria extrema
+<lb/>fiunt; quorum alterum, majus.id quidem, a tibia fertur
+<lb/>ad interiora, alterum vero per mediam peronae et tibiae
+<lb/>regionem ad interiora pedis perducitur, ac propagini
+<lb/>alterius venae immiscetur, quam ab exterioribus tibiae
+<lb/>partibus per fibulam nixi descendere. Ita fit, ut sint
+<lb/>venae quatuor, quae ad pedes descendunt, una quidem
+<lb/>omnium extima per gibbosum fibulae extremum, altera
+<lb/>per portes ipsius interiores, et tertia, ut dixi, per anteriorem
+<pb n="2.816"/>
+<lb/>tibiae .extremi regionem, quarta denique, quae ex
+<lb/>interioribus partibus exuberantes ossium tibiae processus
+<lb/>complexa est. Harum igitur duae prius expositae fibulae
+<lb/>sunt, reliquae duae tibiae. Hinc vero quarta infima
+<lb/>quaeque pestis, commixtis ipsi .primae particulis, complexaturi,
+<lb/>duae autem intermediae per superiores pedis partes
+<lb/>disseminantur. Atqui prima etiam superioris pedis parsiculam
+<lb/>habet, ac partes minimo digito maxime vicinas
+<lb/>complectitur. Caeterum et aliis multis modis, quemadmodum
+<lb/>in extremis manibus, sic in pestibus etiam vaforum
+<lb/>particulae commiscentur. Hoc igitur tibi dissertionis
+<lb/>venatum compendium esto. Deinceps de arteriis dicondunt.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="9">
+<p rend="indent">Harum origo est cordis sinister ventilatiIus.
+<lb/>Hinc autem in pulmones derivatus una tenuis
+<lb/>sunplicique tunica constans, tanquam venae; altera vero
+<lb/>duas habens tunicas, multo hac crassior, quae veluti truncus
+<lb/>est omnium arteriarum. Possis etiam, si Iubet, quae
+<pb n="2.817"/>
+<lb/>in pulmonem derivatur; cum Aena conferre, de qua
+<lb/>somnium primum disseruimus ; eant dico, quam a portis
+<lb/>jecinoris ad ventris partes numerosa ramorum serie. defrendere
+<lb/>fuisque extremis, ceu radicibus quibusdam, cibum
+<lb/>assumere diximus. Haec enim similiter propter usum
+<lb/>commoditatemque spiritus attrahendi in - pulmones detivatur.
+<lb/>Ac sane ob id cordis ipsius corpus circumfusas
+<lb/>in ambitum duas habet arterias, alteram quidem inajorem,
+<lb/>quae maximam ipsius partem amplectitur, alteram
+<lb/>ea maxime regione distributam, ubi tertium ventriculum
+<lb/>esse existimavit Aristoteles. Atqui lue in latiore cordis
+<lb/>parte jacet; particula existens dexterioris ventriculi, non
+<lb/>letiam alius quispiam tertius ventriculus. oritur autem
+<lb/>ex ipso. corde vena,. quae in pulmonem scinditur, cujus
+<lb/>tunica: eadem est cum arteriae tunica. .Has igitur arterias;
+<lb/>simul atque maxima de corde se promserit, ab ea produci
+<lb/>videas ipsamque mox in . sectiones haudquaquam pares
+<lb/>diduci; et sane minorem quidem. ipsius partem. rursum
+<pb n="2.818"/>
+<lb/>ferri,. ip suntque. consestim in. sectiones rursum- inaequales
+<lb/>sinui ; ac deinde ipsarum majorem ad jngulum .tendentem
+<lb/>obliquam de sinistra ad dextram thoracis partem porrigi,
+<lb/>alteramque oppositum habere suum. Attollitur etiam ipfa
+<lb/>obliquior ad sinistram scapulam et axillam, propagines
+<lb/>mittens ad sternunt prinrasque thoracis cosses, et ad
+<lb/>sex colli vertebras, atque etiam est claviculae vicina loca
+<lb/>summo humero tenus. At quum has omnes ediderit,
+<lb/>reliquum ejus in scapulam. marrumque dividitur. At
+<lb/>vero. .arteriae pars major, quae ad jugulmn tenuit, ubi
+<lb/>prope glandium pervenerit, primum quidem ad sinistram
+<lb/>jugularem ramum emittit; post illum alterum ad dexteriorem.
+<lb/>Deinde quicquid ipsius restat, eodem distribuitur
+<lb/>modo, atque illa, quum ad sinistrum scapulam axlllamque
+<lb/>procedere diximus. Nam et ad sturnum quaedam
+<lb/>non aliter ac vena porrigitur, tum alios producens ramos,
+<lb/>tum eum, qui mammam subit; .et quae ad primas
+<pb n="2.819"/>
+<lb/>thoracis costas dividitur extraque thoracem emergit ad
+<lb/>fpinales musculos non alio quam vena modo; quaeque
+<lb/>per foramina fex primarum colli vertebrarum deducta
+<lb/>una cum vena ad spinalis medullae membranas descendit
+<lb/>dividiturque; tum quae ad summum humerum, leapulam
+<lb/>axillamque dextram, hae, inquam, omnes aliae
+<lb/>simul cum adjacentibus venis dividuntur, quemadmodum
+<lb/>et quae arteriae carotides appellantur; ex iis enim singulae
+<lb/>cum singulis jugulariis internis ascendunt arteriae. Caeterum
+<lb/>quae in superficie extant jugulariae, sive duae sint, sive
+<lb/>quatuor-, eae sine arteriis conspiciuntur. At omne quod
+<lb/>ex carotidibus est reliquum sursum recta procedens penetrat
+<lb/>in calvam, inibique textum illud ad retis inraso.
+<lb/>nem complicatum efformat, delude in duas rursum
+<lb/>coiens arterias subit ad cerebrum.- Caeterum quo eae
+<lb/>pacto distribuuntur, quamque cum sensuum instrumentis
+<lb/>societatem ac communionem habeant, in dissectionibus
+<lb/>anatomicis monstratur. Altera vero pars arteriae; quae
+<pb n="2.820"/>
+<lb/>a corde te promit, quae maior est, ad spinam destectitur,
+<lb/>quintam thoracis vertebram ascendens, et inde per
+<lb/>totam jam spinam usque ad latum os descendit, primum
+<lb/>propaginem quandam tenuem emittens, quae in eas dirvisitur
+<lb/>thoracis partes, quibus pulmones adjacent. Extrema
+<lb/>autem ipsius ad asperant arteriam usque ascendunt;
+<lb/>deinde per singulas vertebras rami tum in spatia intercostalia
+<lb/>tum ad spinalem medullam exoriuntur. At
+<lb/>enim superiores thoracis partes, quae quatuor primis costis
+<lb/>muniuntur, non ad eundem semper modum distributas
+<lb/>habent arterias. Aliquando enim ab hac plus, aliquando
+<lb/>autem ab iis, quae Iurium seruntur, ut superius
+<lb/>dixi, aliquando vero ab utrilque aequalis portio in ipsas
+<lb/>disseminatur, Caeterum magna arteria deorsum procedens,
+<lb/>simulatque thoracem egressa est, primum duas in
+<lb/>septum transversum mittit arterias, deinde in Ventrem,
+<lb/>lienem ac jecur injugem unam, post hanc vero
+<lb/>alteram injugem, utrasque ab anterioribus magnae arteriae
+<lb/>partibus ducentes originem; interdum ex una
+<pb n="2.821"/>
+<lb/>radice bituriam diducta ventriculo quidem et lieni
+<lb/>et hepati altera pars; altera vero intestinis distri-.
+<lb/>buitur per duo mesenteria, tum id, quod ad dextram
+<lb/>situm habens primarum est coli palmum, tum id, quod
+<lb/>est tenuium intestinorum medium ; nam tertium mesenterium,
+<lb/>quod prope sedem pertingit in sinistra situm,
+<lb/>nullam inde assumit arteriam, sed de imis partibus in
+<lb/>ipsum quaedam exigua inseritur, quae prope renes a
+<lb/>magna arteria iujugis et ipsa nascitur. Atqui inter hanc
+<lb/>et modo memoratas duae magnitudine praecipuae ad re..
+<lb/>nes tendunt. Tum aha quoque praeter ipsas arteria superne
+<lb/>atque a sinistra per venam porrigitur, quae ex
+<lb/>inferioribus partibus Iurium versus tendit. Enimvero
+<lb/>ex duabus inconjugatis arteriis, de quibus modo verba
+<lb/>Iecimus, aliquoties vidimus altiorem quidem in ventriculum
+<lb/>lienemque, humiliorem vero in iecur mesenterlaque
+<lb/>distribui. Quin aliae quoque a magna propagatae
+<lb/>arteriae per singulas vertebras in spinalem medullam
+<lb/>una cum venis descendunt. Ac cum iis etiam venis,
+<pb n="2.822"/>
+<lb/>quas ad ilia serrt meminimus, arteriae pariter quaedam
+<lb/>contendunt, ab ea magna ortae, quae per lumbos extenditur.
+<lb/>Denique cuin venis, quas ad testes diximus
+<lb/>ferri, arteriae etiam ad eundem modum procurrunt.
+<lb/>Iam arteriae magnae pars extrema, quum ad latera lumhorum
+<lb/>pervenerit, supra positam venam transcendit, ita
+<lb/>ut super vertebras firmetur vena, super hanc autem vehatur
+<lb/>arteria. Quod posteaquam Iactum suerit, haud
+<lb/>aliter quam vena, scissa bipartito arteria partem usiamque
+<lb/>in sibi subjectum crus mittit. Quae dum ita seruntur,
+<lb/>primum ad ipsarum utramque singuli conspiciuntur
+<lb/>propagati ramuli, qui soetibus per umbilicum insertustnr.
+<lb/>Quum enim perficitur animans, quod in medio est,
+<lb/>universum id membraneum et aridum et inutile redditur;
+<lb/>quod autem ad insertionem spectat, nequaquam.
+<lb/>perit. Atque indidem, ut in conceptis, sic etiam in
+<lb/>jam perlectis animantibus arteriae aliquot propagatae
+<lb/>cum venis ad os latum existentibus pariter excurrunt,
+<pb n="2.823"/>
+<lb/>quas antea diximus in regionis ejus musculos dispergi.
+<lb/>Ipsa autem cruris utriusque arteria ad intimas distributa
+<lb/>partes cum magna vena sertur. Ac sane quaecunque ab
+<lb/>ea venae producuntur profundius conditae, cum arte-.
+<lb/>riis seruntur pariter atque iit ramos dissipantur. Ceterum
+<lb/>iis venis, quae per crurum superficiem extant, ne
+<lb/>unam quidem animadvertas adiacentem arteriam. Sic
+<lb/>nec in manibus, nec abdomine, nec dorso, nec collo.
+<lb/>Sed enim arterias in solo capite juxta cutem inveneris,
+<lb/>tum eas, quae post aures, tum eas, quae ad utraque
+<lb/>tempora extant. Quae autem in extremis manibus sunt,
+<lb/>profundarum arteriarum sunt sines, sed quia partes illae
+<lb/>carne privatae sunt, tangentibus subiiciuntur: quemadmodttm
+<lb/>etiam istae, quae per lassos pedum excurrunt.
+<lb/>Nam vel in iis hominibus, qui crassiore obesioreque sunt
+<lb/>corpore, eae paululum sentiuntur, quum aliarum nulla
+<lb/>mauiIeste percipi possit; etenim in macilentis etiam
+<lb/>aliarum plurium arteriarum particulae sensum minime
+<lb/>Ingere queunt. Haec igitur omuta, quae adhuc
+<pb n="2.824"/>
+<lb/>de venis artertisque dicta sunt, su perlectis visuntur
+<lb/>animantibus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="10">
+<p rend="indent">At in conceptis seetibus praeter jam memoratas
+<lb/>in ipIo chorio venae arseriaeque intexuntur ab
+<lb/>extremis venarum osculis prodeuntes, quae ad uterum perPluent,
+<lb/>Coeuntibus autem inter sete illis, ac quae exi
+<lb/>eo cosin Iactae sunt rursum concurrentibus, ex ipsis fieri
+<lb/>contingit coniugium illud utrorumque vasorum, quod in
+<lb/>umbilicum inseritur. At enim arteriae quidem vesicam
+<lb/>complexae ad arterias illas tendunt, quae a magna per
+<lb/>spinam porrecta ac bipartito Icisse ad sibi subjectum
+<lb/>utraque crus mittuntur, sicut paulo ante ostensum est.
+<lb/>Venae autem, simul atque ex umbilico se prompserint,
+<lb/>coeuntes magnam persiciunt, quae ad concavum jecinoris
+<lb/>tendit, haud procul ab ea vena, quae ad portas est.
+<lb/>Haec igitur vena sine arteria est, ac post illam tota cava.
+<lb/>Quicquid enim ejus venae gibbas jecinoris perreptat
+<lb/>partes, quodque indidem ad spinam similiter, et quicquid
+<lb/>usque ad iugula fertur, omne id nullam habet ad-.
+<pb n="2.825"/>
+<lb/>j unctam arteriam. Nec vero alia ulla ex iis venis, quae
+<lb/>per gibba jecinoris expanduntur, adiacentem arteriam
+<lb/>nacta est, ut nec quae septo transverso intuta, quas st
+<lb/>cava septum transeunte oriri ac propagati diximus. Iam
+<lb/>vero et quae thoracem alet vena, quam in simiis paulo
+<lb/>supra cor ortum habere ostensum est, hanc quoque
+<lb/>videre licet per spinam sine arteria descendere. Nihilo
+<lb/>hac minus notabili alia magnitudine, quam humerariam
+<lb/>diximus appellari, sine arteria est, unaque omnes quotquot
+<lb/>ab ea propagantur rami, praeterquam unicus tantum,
+<lb/>quem in articulo, quo brachium cum cubito coarclatur,
+<lb/>ortum habere et ad interiora profundius recedere
+<lb/>occtdtarique memoratum est, quemadmodum etiam
+<lb/>vena illa interior, quae per axillam fertur; hae siquidem
+<lb/>duae solae per profundiora cubiti cum arteriis se porrle
+<lb/>gunt. Aliae porro venae, quae per cubiti superficiem
+<lb/>expanduntur, omnes arteriis carent. Tres enim aut quatuor
+<lb/>ab ea, quae per axillam iter habet, produci antea
+<lb/>diximus; aliaque etiamnum his amplior, quae ex ambabus
+<lb/>conflatur. Hae, luquam, omnes in unaque tuaunum
+<pb n="2.826"/>
+<lb/>venae arteriam copulatam non habent. Ad eundem
+<lb/>se habet modum vena ea, quae circum brachii os
+<lb/>per aversam eius partem contorquetur, et deinde sub
+<lb/>cutem emergens circa externum brachii condylum ad
+<lb/>cubitum pertingit; haec etenim omnisque ejus soboles
+<lb/>sine arteriis excurrit. Similiter et e iugularas quae in
+<lb/>superficie extant, cum omnibus indidem enatis ramis.
+<lb/>Iam quaecunque collo insunt venae, quaecunque ad seapulas
+<lb/>extenduntur, et quaecunque secundum suas radices
+<lb/>diximus ad vicina claviculis loca spargi omnino
+<lb/>tenues, hae, inquam, omnes absque arteriis sunt. Quin
+<lb/>de multis, quae per Iacient eaputque expanduntur, venis
+<lb/>perpaucae omnino arteriis adiacent, sicut paulo ante
+<lb/>diximus, quum de arteriis T quae et per tempora et
+<lb/>post aures subter cutem extant, ageremus. Denique, ut
+<lb/>summatim dicamus, superficiariis omnibus, aut quae per
+<lb/>dorsum, latera, totum thoracem inlerioremque ventrem
+<lb/>sub summa cute expanduntur, nullam invenias
+<pb n="2.827"/>
+<lb/>subditam arteriam. Utique earum etiam p quae ex hyp^chondrIo
+<lb/>deorsum feruntur, quas copulari ac confluere
+<lb/>cum venis ex i imis ventris partibus sursum versus sefe
+<lb/>attollentibus dictum est, nulia, quae modo in supersicie
+<lb/>fit, appositam habet arteriam, sicut quae altius conditae
+<lb/>per internas musculorum dictorum partes porriguntur;
+<lb/>illae etenim habent, Quae autem nec supersiciariae amplius
+<lb/>sunt, et ex iis quae profundius absconduntur, iliae
+<lb/>quidem, quae ex alto deorsum tendunt, adiacentem nactae
+<lb/>sunt arteriam ; quae ex imo subeuntes superne venientit
+<lb/>bus venis coniunguntur, sine arteriis sunt, quemadmudum
+<lb/>et quae ex intestinis ad glandulas ascendunt. Sic et
+<lb/>ex iis, quae ad sacrum os sunt, illae, quae in musculos
+<lb/>sparguntur, solae adiacentem habent arteriam, aliatum
+<lb/>autem nulla. Tum vero, quas ad genitale ferri dicebamus
+<lb/>in exterioribus musculis nascentes, illae sine arteriis
+<lb/>sunt; quemadmodum etiam, quae per femur se esfuudunt
+<lb/>venae subter tibiae cutem ; siquidem, cum magna
+<lb/>vena paulo ante, quam ad poplitem pertingat, trinariito
+<pb n="2.828"/>
+<lb/>illic scindatur, quae ex ea divisione ad interiora subit,
+<lb/>una cum omnibus, quos obiter emittit, ramis arteastant
+<lb/>adjunctam nacta est; quae autem ad cutem recedunt,
+<lb/>earum ne una quidem adjaceutem habet. arteriam.
+<lb/>Hae igitur sine arteriis sunt venae. Arteriae autem
+<lb/>sine venis iliae sunt, quae in animalibus etianrdum
+<lb/>in utero agentibus vesicam amplexantur; quas ah muscidico
+<lb/>ad arteriam spinae appositam perseITi diximus, crrca
+<lb/>illas maxime partes, ubi ea bipartito scissa ramos ad
+<lb/>sibi subjectum utrumque crus traducit. Quin ea quoque
+<lb/>propago, quae in conceptibus, quum a magna arteria se
+<lb/>prompserit, in venam arteriosam inseritur; ea, inquam,
+<lb/>non substantia modo corporis, sed usu esiam ac functione
+<lb/>arteria est i quae et ipsa absque vena porrigitur. Artersae
+<lb/>porro reliquae sine venis non tantum in conceptis,
+<lb/>verum etiam in jam perfectis animantibus Visuntur. Primum
+<lb/>magnae illae, quae ex corde prodeunt, una quidem,
+<lb/>quae ad quintam thoracis vertebram defcendit,
+<pb n="2.829"/>
+<lb/>altera vero, quae ad jugula sursum fertur, et tertia
+<lb/>post has ea, quam ad scapulam et axillam sinisteriorem
+<lb/>tendere ostensum est. Harum enim unaquaeque aliquamdiu
+<lb/>fola citra venae copulam excurrit;^ et ea quidem, quae
+<lb/>ad quintam vertebram descendit, usque dum a vertehra
+<lb/>subnIxa fuerit; quae autem ad jugula tendit, donec
+<lb/>ad locum pervenerit, ubi thymus est positus; quae vero
+<lb/>ad sinisteriorem axiliam, donec prope primam costam
+<lb/>processerit. .Jam arteria sine vena esit, quae ex carotido
+<lb/>exurgens, ex utraque parte una, plexum retisormeu
+<lb/>facit; foramen enim peculiare est, ab eo multum recedens
+<lb/>foramine, per quod extremum jugulariae ad cerebrum
+<lb/>futore dictum est. Enimvero ipsum quoque reti similo
+  <lb/>textum <hi rend="italic">universum</hi> sine vena est. Tum quae ad pelvim
+<lb/>ascendunt, in ipso progressu nullam habent adiacentem
+<lb/>venam prius, quam scindi incipiant. Tum vero
+<lb/>quae ad septum transversum pertinent, earum nulla cum
+<lb/>vena j ungitur prius, quam in extrema inciderint Venarum,
+<pb n="2.830"/>
+<lb/>quas a cava propagari ostensum prius est, quemadmodum
+<lb/>nec primae iliae propagines, quae ad jecur
+<lb/>et ventrem e et lienem et intestina mittuntur ; nam
+<lb/>ne iliis quidem adjacet vena, prius quam scindi indpians.
+<lb/></p>
+</div>
+</div></body>
+  </text>
+</TEI>

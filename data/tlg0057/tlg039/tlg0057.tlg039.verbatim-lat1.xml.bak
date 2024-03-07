@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De ptisana</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg039.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">6</biblScope>
+              <biblScope unit="pp" from="816" to="831">816-831</biblScope>
+              <date>1823</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x06">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="490" to="491">490-491</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x02">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">6</biblScope>
+              <biblScope unit="pp" from="499" to="504">499-504</biblScope>
+              <date>1639</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x06">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg0057.tlg039.verbatim-lat1">
+<pb n="6.816"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="6.816"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>GALENI DE PTISANA LIBER.</head>
+
+
+<p rend="indent">Quandoquidem paulo ante quosdam mesucos
+<lb/>iuveni, qui apud quendam aegrotum ptisanae cremore
+<lb/>utebantur, nullam tamen adhibebant prius distinctum explicasionem,
+<lb/>quibusnam morbis utilis illa aut inutilis existat,
+<lb/>praeterea neque de exhibitionis modo et quantitate, neque
+<lb/>de tempore sorbitioni assumendae opportuno quicquam determinabant,
+<lb/>verum, ut ridetur, quando ipsi voluerint,
+<lb/>usum ptisanae accommodatum arbitrabantur, operae pretium
+<lb/>fore putavi, si de illius usu quaecunque sunt ab Hippocrate
+<pb n="6.817"/>
+<lb/>obscurius explicata, hoc .in loco enarrarem ob mustorum
+<lb/>notitiam, quae in exacta hujusce rei tractatione per
+<lb/>ordinem a nobis sunt recensenda, videlicet coctionis modus,
+<lb/>vires ipsius, actio, tempus opportunum, exhibitionis quantitas
+<lb/>et modus;. quot praeterea emolumenta aegrotantium
+<lb/>corporibus afferat, si rite propinetur, et rursum quot lude
+<lb/>incommoda proveniant, fi luerit importune administrata ; ad
+<lb/>haec quibusnam corporibus illius usus expediat, et quibus
+<lb/>etiam minime conducat., simul erit a nobis explicandum.
+<lb/>Sed quoniam composita quaedam res est ptisana et ejus eremor,
+<lb/>(paratur enim ex hordeo, quod pinsendo^ suerit probe
+<lb/>purgatum et expolitum, cui scilicet cortex detractus est, ex
+<lb/>aqua praeterea, ac tali quapiam coctione,] primum illius partes
+<lb/>per capita tractare decrevi: quae nisifuerintprius.determluatae,
+<lb/>totam sermonis seriem plurimum laedent, etsi
+<lb/>reliqua dehrceps omnia exactissime absolvantur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Quod igitur optimam aquam eligere oporteat
+<lb/>ad ptisanae praeparationem, nemo, opinor, dubitat.
+<lb/>optima autem aqua substantia, et gustu, et olfactu, et eolore
+<pb n="6.818"/>
+<lb/>probatur; gultu quidem et olfactu, ut alienam qualitatem
+<lb/>nullam prae se ferat, hoc est, ut non dulcis, non salsa,
+<lb/>non acida, non acris, non male olens aut putrida existat,
+<lb/>veI omnino aliam aliquam ascititium qualitatem possideat,
+<lb/>sed omnis penitus expers sit qualitatis, atque omni
+<lb/>prorsus adventitia careat qualitate, nec non cujuscunque rei
+<lb/>mixtione, quae gustu aut olfactu deprehendatur. oportet
+<lb/>etiamnum, ut pellucida sit ac pura minimeque coenosa, sed
+<lb/>veluti diligentissime colata et ab omnibus ipsi innatantibus
+<lb/>ramentis liberata. Hujuscemodi igitur aqua usui quidem
+<lb/>valde est accommodata, natura tamen non est ita sincera,
+<lb/>quemadmodum ne ullum quidem aliud sensilium elementormn.
+<lb/>Si vero talis sit aqua, qualem disserui, illico ipsa est
+<lb/>partium tenuiorum et facile coquitur ac distribuitur, hypochondriaque
+<lb/>celeriter pertransit, ac non modo naturali calori
+<lb/>admota cito alteratus, verum etiam igni externo apposita
+<lb/>brevi calefit. Cujus sententiae testis est Hippocrates,
+<lb/>aquam enim, quae- cito calefit et rursum cito re/rigeratur.
+<pb n="6.819"/>
+<lb/>putat este levisiimam; neque ea lexis pondere diiudicatur,
+<lb/>sed quod tenuium sit partium, ac in se ipsam contrarias qualitates
+<lb/>facile recipiat.- Talis autem aqua tum frigida, tum
+<lb/>humida est, ac proprie aqua: quae vero aliqua substantia
+<lb/>aut qualitate fuerint adulteratae, quales sunt bituminofae
+<lb/>et sulfureae atque aluminosae, tanto a propria aquae natura
+<lb/>recedunt, quanto suerint adulteratae. At si etiam demonstrutionem
+<lb/>quaeris, quod aqua refrigeret et humectet, haud
+<lb/>praesentis est sermonis, qui de ptisana institutus est, disserere.
+<lb/>Verum quod aqua frigida et humida fit, prisci om-nes
+<lb/>indicarunt et experientia testatur; atque id omnium
+<lb/>ratione concessum accipientes ad hordei explicationem accedimus.
+<lb/></p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Hordeum igitur, ut quidem universe sitinitur,
+<lb/>refrigerat et exiccat, habet autem et nonnihil deturgens
+<lb/>et flatulentum. At particulatim exterior ipsius cortex
+<lb/>suriuraceus siccior existit et magis detergit: interior ejus
+<lb/>para, veluti carnosa et nutritia, detergit quidem et ipsa, ve-.
+<pb n="6.820"/>
+<lb/>rum furfure minus, habet autem in se ipsa partem flatulentam.
+<lb/>. caeterum altera membrana, quae tenuis est, sub fuisure
+<lb/>posita,. hordeum amplectens, inter haec facultate media
+<lb/>est; ideo detergit sursure quidem minus, hordeo autem magis.
+<lb/>Hoc autem sermone optimum hordeum subaudiendum .est,
+<lb/>quod nihil ex putredine ascititium nullamve excrementitiam
+<lb/>humiditatem obtineat, .quodque neque nimis fit recens, ueque
+<lb/>prorsus vetustum. Etenim recens excrementitia plenum
+<lb/>est humiditate, quam a regione contraxit, ut tum humore
+<lb/>refertum, tum flatu elistentum sit; vetustum .vero
+<lb/>tempore exhaustum ac imbecillum est redditum propriasque
+<lb/>facultates amisit. Atque indicium est corrugatio huic oborta
+<lb/>et magnitudinis imminutio, illudque praeterea, quod, dum
+<lb/>contunditur, veluti tenuem quendam ex se pulverem emittit.
+<lb/>Plenum itaque hordeum eligere convenit in ptisana
+<lb/>conficienda, neque admodum recens, neque vetustum nimis,
+<lb/>nec non adventitiae omnis qualitatis expers. At non id folmn
+<lb/>falis est, sed ab experientia ipsis probatio adducenda.
+<pb n="6.821"/>
+<lb/>Si namque praeter en errata etiam elixatione in majorem
+<lb/>molem attollatur, id ad ptisanae coctionem assumendum,
+<lb/>siquidem recta ratione, ut per est, decrevit aliquis illam
+<lb/>consicere. Quae igitur optima sit aqua et quomodo probetur,
+<lb/>quod etiam optimum sit hordeum et quibus indiciis
+<lb/>cognoscatur, per capita recensuimus.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Reliquum autem tertium est de coctione
+<lb/>disserere. Etenim ipsam quidem sic paranti in mortario
+<lb/>quum hordeum prius in minutas partes consregerint, deinde
+<lb/>celeriter elixarint, in quidem sapam, alii autem amylum,
+<lb/>nonnulli etiam cyminum et mel inliciunt: sed talis prava
+<lb/>est omnino confectio. optima vero probeque apparata
+<lb/>hujuscemodi certe fuerit Hordeum adhuc crudum oportet
+<lb/>prius in aqua macerare, deinde manibus ipsum conterere,
+<lb/>donec. tenuis ejus membrana excutiatur, postea validius
+<lb/>rursum manibus confricare, quousque totum id, quod
+<lb/>paleaceum esu auferatur^. nisi quis ptisanam ipsam voluerit
+<lb/>magis detergentem efficere; tunc enim melius est hordeum
+<pb n="6.822"/>
+<lb/>cum ipsa membrana coquere. Porro ipsa coctio hunc in
+<lb/>modum fieri debet, ut prius quidem multum ebulliat, postea
+<lb/>vero molli igni, quousque in cremorem vertatur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p rend="indent">Sic enim ptisana decocta, quicquid inerat
+<lb/>flatulentum, deponit, et quaecunque ejus bona attestatus est
+<lb/>Ilippoerates, adipiscitur. Illius enim viscidum . (inquit]
+<lb/>laeve et continuunr et blandum est et lubricum et humidum
+<lb/>moderate, sitimque arcet, facile eluit et movet alvum,
+<lb/>si quid eo indigeat, neque astrictionem habet, neque malum
+<lb/>movet, neque in ventriculo turgescit ; siquidem in coctione
+<lb/>intumuit, quantum plurimum intumescere poterat. Quod
+<lb/>igitur ptifana nihil habeat glutinosi aut emplastici, quemadmodum
+<lb/>reliqua fere omnia viscida, manifestum est.- Neque
+<lb/>..enim corporis tantummodo sordem abstergit, verum
+<lb/>etiam pituitosum humorem in ventriculo existentem exiriluta
+<lb/>quadantenu.s expurgat. Plurima vero decoctio rnixtorumque.
+<lb/>exacta. unio. apparentem hunc lentorem efficiunt,
+<pb n="6.823"/>
+<lb/>qui certe nullam habet ufperitatem, sed undequaque laevis
+<lb/>est, aequalis, permanens atque continuus. Quum enim
+<lb/>nullius aut astrictiouis aut acrimoniae particeps sit, ex
+<lb/>quibus ortum habet asperitas, laevis necessario non ad tactunr
+<lb/>modo, verum etiam facultatibus existet. Nam viscida
+<lb/>alia, ut oleum, mel, reliquaque hujusmodi, tangenti tibi
+<lb/>laevia quidem aequaliaque apparent, quum nihil in te ipsis
+<lb/>habeant inaequalitatis, ut una pars tenuis, altera crassa,
+<lb/>divulsa, aut distracta sit, proptereaque tactui laevorenr
+<lb/>suum ostendunt ; in actionibus autem tuis ac facultatibus
+<lb/>quorundam aliorum respectu nequaquam. Non enim
+<lb/>aequaliter atque continue madesaciunt omnes partes corporis,
+<lb/>cui admoventur, sied in hoc dissident a se invicem viscidorum
+<lb/>omnium partes, ptisana excepta. Haec enim, ad
+<lb/>tactum laenis existens et continua atque indivulsa, similem
+<lb/>etiam habet facultatem. Quin illa quidem gustui nullam
+<lb/>prae se ferunt voluptatem; at haec praeter alias sui dotes
+<pb n="6.824"/>
+<lb/>gustum suavitate ac jucunditate delectat, idque potissimum
+<lb/>aegrotantibus praestat. Porro, licet panis virtute reliquis
+<lb/>cibariis antecellat, tamen multam ipsis etiam habet infuavitatem,
+<lb/>quod, quamvis in aqua sit maceratus, dentibus nihilomiuus
+<lb/>a nobis sit conficiendus: ut rursum hac in re ptifiana
+<lb/>reliquis superior existat, quod nullam, dum manditur,
+<lb/>pariat insuavitatem. Habet quin etiam lubricitatem, ejus
+<lb/>praecipue cremor, le.d quae in transitu non adhaereat memluis ;
+<lb/>id quod reliquis fere omnibus vsscidis sistet contingere,
+<lb/>una ptisana excepta; i pla enim in partes thoraci adiacentes
+<lb/>facile descendit ob tuam vim detersoriam; et addejectionenr
+<lb/>est idonea, quemadmodum et ad distributionem, in. susque potissinrum,
+<lb/>quibus in hepatis convexa cibi haud facile  submit-tuntur.
+<lb/>Est etiam moderate flaccida, id est: humida, ac fitim
+<lb/>sudans; ac humiditatem quidem nanciscitur ah aqua, licet
+<lb/>refractam ob hordei naturam mediocriter exiccantem; quod
+<lb/>enim ex contrariis facultatibus conflet, aliam quandam adyentitiam
+<lb/>naturam acquirens, ipsa sugit extrema. Sitim autum
+<lb/>ideo abigit, quod humida existat; magis etiam, quam
+<pb n="6.825"/>
+<lb/>aqua, sitim arcet, quamvis ab ea vincatur humiditate, quousam
+<lb/>velocius distribuitur, quodque humorem habeat ob lentorem
+<lb/>magis permanentem, quodque praeterea frigida fit. Ob
+<lb/>haec et ardentibus febribus est accommodatissima, quod in
+<lb/>omnibus sus opponatur, non modo quia refrigerat et humectat,
+<lb/>verum etiam putridos humores deterget, corporique
+<lb/>non parvum affert alimentum, humores vero jam femiputres
+<lb/>concoquit et in bonum succum transmutat. Haec autem habet
+<lb/>omnia, quum interim nullam habeat aut astrictionem aut
+<lb/>stomacbi subversionem; nam quantum ad ventriculi robur
+<lb/>confert astrictio, tantum ad humores incrassandos idonea est ;
+<lb/>is vero humor, qui crassescere non potest, stomachum subvertendo
+<lb/>conturbat; quod quidem omne prohibet ptisana,
+<lb/>quod nullum obtineat vitiosum excessum. Sed neque perturbatione
+<lb/>neque tumultu aliquo ventriculum percellit,
+<lb/>quod nasiam ab acrimonia aut a flatulento spiritu vim obtineat,
+<lb/>quoniam inter coquendum amittitur. Haec itaque
+<lb/>omnia sunt ptisanae commoda, quae ex proba coctione acquissent.
+<pb n="6.826"/>
+<lb/>Et uberius quidem oratio edocuit, ac rursus summalim
+<lb/>recensebit. Laeves sunt ipsius partes, aequales, continuae
+<lb/>ac sibi coniunctae ut nihil ejus aut tenue, aut
+<lb/>orassem, aut cumino inaequale appareat; idque non tactu
+<lb/>solum habet, sed jam efi ani propria facultate et actione.
+<lb/>Gestui quoque suaris est, nullum scilicet habens insuavitatem,
+<lb/>et humida, sitimque ob praesentem suum lentorem extinguens.
+<lb/>Quod vero laenis, humida suavisque sit, adstrictionis
+<lb/>et alterius validae qualitatis expers est. Inter haec
+<lb/>omnia proba coctione flatulentum omne deponit. Quum
+<lb/>igitur talis existat, merito acutis febribus convenire illam
+<lb/>existimamus, non tantum quod illis in omnibus adversetur,
+<lb/>verum etiam quod facillimae fit concoctionis, suasque
+<lb/>omnes quali lates habeat imbecillimas, et facilis sit distributionisr
+<lb/>et putrefactos humores ob detersuriam qualitatem expurget,
+<lb/>eos vero concoquat, qui fenriputres jam evaserunt.</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p>Caeterum in morbis non temere est exui-
+<lb/>fienda, sed prius multis opus esit distinctionibus. Neque
+<pb n="6.827"/>
+<lb/>eum illis est admiuissearrda, qui cum periculo. laborant, aut
+<lb/>sanguinis missione purgationeve indigent, aut aliquo clyfiere,
+<lb/>aut his, qui ventriculum . habent excrementis refertum,
+<lb/>antiis, qui a magno aliquo dolore vexantur, ac nullo
+<lb/>modo sus, qui aut medicis fomentis, aut venae sectione, aut
+<lb/>purgationibus egent; sed neque siccissimis illam morbis
+<lb/>convenit exhibere. Praeter haec etiam opportunum exhibitiouis
+<lb/>tempus ejusque mensuram et aegrotantis consuetudinem
+<lb/>considerare oportet; adde etiam, illiusne cremorem susum,
+<lb/>au ptisanam integrum, vel potius utraque, an etiam .
+<lb/>neutra propinare conveniat. Ea igitur sorbitioni hora suerit
+<lb/>opportuna, (jam enim sine distinctione illam administrare
+<lb/>vetuimus,] cum universum corpus aequaliter dispositum fuerit,
+<lb/>ut nulla pars ejus aut calidior aut frigidior sit. Tale
+<lb/>autem est, quum morbi adest declinatio : post illa enim univerfus
+<lb/>corporis calor in omnes aequaliter partes diffusus
+<lb/>est. Sed neque multa adsit plenitudo, aut humorum crassitudo ;
+<lb/>periculosam enim est, etiam ex ipso Hippocrate, pla-.
+<pb n="6.828"/>
+<lb/>vinium ac cotisertim replere, paulatim vero tutum. Proponatur
+<lb/>igitur cibus et juxta aegrotantis consuetudinem
+<lb/>mensuretur. Si quidem cibum assumere semel tantum assuevetat,
+<lb/>tu quoque potionem^ illi semel tantum offerendam
+<lb/>curabis : verum si bis in die antea vescebatur, bis itidem cibum
+<lb/>tu etiam dabis. Porro augmentum sorbitionis hujus
+<lb/>et additionem in siccioribus quidem morbis fieri nequaquam
+<lb/>oportet; validioribus enim tales morbi potionibus egere videntur,
+<lb/>quam ptisana existat, quo magis possint humectari.
+<lb/>Sicci autem morbi sunt pleuritis et peripneumonia, omnesque
+<lb/>alii, qui iu pectore consistunt, quum scilicet nulla adhuc
+<lb/>ab eis (puta proveniunt; quin etiam illi, qui jecur,
+<lb/>ventriculum et intestina occupant, sicci dicuntur, quando ni1U1
+<lb/>excernitur, aut durum, nec pro necessitate, nec laudabile.
+<lb/>Caeterum siccitates, quae in arteriis ac venis oriuntur,
+<lb/>ex lingua et extima cute deprehenduntur, quemadmodum
+<lb/>capitis affectus, quum per palatum aut nares nihil expurgatur.
+<lb/>Eadem etiam ratione inflammationes et ulcera sicca
+<lb/>esse pronunciamus, a quibus nihil per saniem excernitur.
+<pb n="6.829"/>
+<lb/>Quippe talibus morbis ptisanam parare opus non fuerit; neque
+<lb/>enim illos humectare potest, ut quae non admodum hui
+<lb/>mectet ea, quae magna ac validiori egent facultate humectante,
+<lb/>nec non repletionis noxam corporibus praebeat. Quod
+<lb/>fi corpus humidius fuerit, aliquidque jam e pulmone exp
+<lb/>natur, tunc ejus potionem augere semper atque addere
+<lb/>oportet ; humectans enim simul et incidens eos qui in corpure
+<lb/>prius erant humores et in membris per nutritionem
+<lb/>robur efficiens, animal ab ea, quae ipsimi infestat, cacochymia
+<lb/>cito liberum reddit, Quum enim duo haec in unum
+<lb/>convenerint, prava omnia excrementa facile expurgantur.
+<lb/>Atqui praeter hanc aliorum nullum est ex sus, quae sive ut
+<lb/>medicamenta, sive ut alimenta offeruntur, quod utraque
+<lb/>haec possideat, sed aut parum attenuans abunde humectabit
+<lb/>et nutriet, quemadmodum panis et alica et ova et pifces,
+<lb/>aut incidendi vires habens humectare ac nutrire non
+<lb/>admodum poterit, ut oxynrel et si quid hujusmodi alterum
+<lb/>est; haec autem omnia bona uni adfunt ptisanae, ita nihilonunus,
+<pb n="6.830"/>
+<lb/>ut nullam utilitatem sit allatura, si absque conveurenti
+<lb/>determinatione administretur, quum aliquando exuihila
+<lb/>mortis potius esse possit occasio. Quum enim laboranti
+<lb/>opus suerit clystere ad expurganda excrementa, aut venae
+<lb/>sectione ob sanguinis abundantiam, aut etiam doloris veheruentiam,
+<lb/>dolore scilicet plenitudinis causam minime tolerante,
+<lb/>porrecta tunc ptisana mortis cauta effecta est, plenitudinem
+<lb/>duplo majorem torte tum reddens. Propterea,
+<lb/>quum Peloris infestat, illam propinare minime expediet, sive
+<lb/>eum dolore, sive etiam citra dolorem ea existat, aut si paulo
+<lb/>post cibum sebrire horno inceperit, necdum ille desuetus
+<lb/>fuerit. Porro eaedem hae distinctiones non Polum in cremore,
+<lb/>verum in ipsa etiam ptisana sunt adhibendae, in his
+<lb/>scilicet, quibus utilis illa futura est; quum tamen non statim
+<lb/>illis ministrare conveniet, feti primum quidem cremorem
+<lb/>fotum, aut saltem cremetis portionem majorem, ptisanae
+<lb/>autem minorem, deinde aequales utriusque partes, tandem
+<lb/>etiam fotam ipsum ptistmam. Illud enim omnino sciendum^
+<lb/>est, ad corporis tum robur, tum nutritionem ptifauam ipsam
+<pb n="6.831"/>
+<lb/>valere quamplurimum, ad facilem vero consertionem et concoctionem
+<lb/>ac facilem distributionem cremorem esse magis
+<lb/>accommodatum. De ptisana igitur summatim a nobis haec
+<lb/>dicta sint, ut cum temperatum illius usum, tum in ea exlnfienda
+<lb/>necessarias distinctiones perspectas habere possis.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>

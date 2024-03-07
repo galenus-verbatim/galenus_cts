@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../verbatim_theme/verbatim.xsl"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/dev/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De symptomatum differentiis</title>
+        <author xml:lang="lat">Galenus</author>
+        <translator>Kühn, Karl Gottlob</translator>
+        <funder>Institut universitaire de France</funder>
+        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <publisher>Sorbonne Université</publisher>
+        <pubPlace>Paris</pubPlace>
+        <idno type="filename">tlg0057.tlg043.verbatim-lat1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2023</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              
+              
+              <biblScope unit="pp" from="42" to="84">42-84</biblScope>
+              <date>1824</date>
+            </imprint>
+          </monogr>
+          
+        <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x07">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr corresp="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">3</biblScope>
+              <biblScope unit="pp" from="212" to="218">212-218</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr corresp="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">7</biblScope>
+              <biblScope unit="pp" from="29" to="43">29-43</biblScope>
+              <date>1649</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x07">BIU Santé, Medica</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg0057.tlg043.verbatim-lat1">
+<pb n="7.42"/>
+<div type="textpart" subtype="book" n="1">
+<pb n="7.42"/>
+
+
+
+<div type="textpart" subtype="chapter" n="1">
+<head>CALENI DE SYMPTOMATVM DIFFERENTIIS LIBER.</head>
+
+
+<p rend="indent">Quinam et quot universi morbi sint, tum
+<lb/>simplices, tum compositi, in genera ac species a nobis dividentibus;
+<lb/>quot etiam singulorum generationis sint causae,
+<lb/>aliis in commentariis conscriptum esu Reliquum est de
+<lb/>symptomatis disserere, quo de affectibus omnibus, qui quaeter
+<lb/>naturam sinat, integatur reddatur opus. omnis igitur
+<lb/>corporis affectus a naturali statu decedens aut morbus est,
+<lb/>aut morbi causa, aut morbi symptoma, quod epigemtema, i e.
+<pb n="7.43"/>
+<lb/>consectarium quidam medici vocitant. Verum non admodum
+<lb/>id nomen Graecis consuetum est, sed symptoma et
+<lb/>pathema et pathos haec omnia pro consuetudine nuruinunti
+<lb/>Non idem tamen omnino lns vocabulis significatur,
+<lb/>sed nunc ego de omnibus ordine inter se dispositis diftinctums,
+<lb/>ad hunc modum dissero. Equidem morbus definitur
+<lb/>constitutio quaedam praeter naturam, a qua primum actio
+<lb/>laeditur. Constat autum et si eum esse affectum quendam
+<lb/>praeter naturam dixerimus, a quo actio laeditur, nos idem
+<lb/>dicturos. Nam quicquid est, sive sanum, sive aegrum, sive
+<lb/>neutrum sit, aliquo modo afficitur. A διακεῖσθαι vero, I. e.
+<lb/>alsici, διάθεσις, ire. affectus, nomen quodammodo derivatum
+<lb/>est in hunc usum non ab antiquis solum philosophis, sed
+<lb/>etiam aliis Graecis ductum. Enimvero affectus generatim
+<lb/>omnibus tum sanis, tum aegris, tum neutro modo se habentibus
+<lb/>est commune. Etenim et cantus et harmoniae et
+<lb/>orationis et dictionis affectio a Graecis dicitur. Morbus
+<lb/>aulum sanitati contrarium; differt autum ab utroque quod
+<pb n="7.44"/>
+<lb/>pathos, et pathema nominatur (ut etiam Plato ipse definiens
+<lb/>proferebat], quicquid aliquis perpessits fuerit, pathos, i.. e.
+<lb/>passio, appellandum est. Unde, arbitror, sensuum quoque
+<lb/>alterationes .pathemata nominavit. In visu quidem eas,
+<lb/>quae ab albo, nigro, flavo et caeteris coloribus fiunt; . in
+<lb/>tactu, quae a calido, frigido, sicco, humido, duno, molli
+<lb/>.caeterisque ejusmodi omnibus; licet in singulis reliquis
+<lb/>sensibus, Nominat autem is. et voluptatem pathema, i. e.
+<lb/>passionem, omnemque prorsus motum, quicunque ab altero
+<lb/>procedit inalterum, Quippe agentis motus actio est; rei
+<lb/>vero ah eo quodammodo asseclae, pathema et pathos, I. e.
+<lb/>passio. Etenim universe ipsum affici idem quodammodo
+<lb/>quod pati est, dissertque passio ab affectu motu; cessante
+<lb/>enim alterante, alteratio, quae in passe remanet, allectus rei
+<lb/>perpessae est;- ita ut in ipfo, quod convertitur et mutatur
+<lb/>et alteratus et movetur, passio generationem habeat, in eo
+<lb/>vero, quod permanet. et in  subjecto corpore servatur, asseotus
+<pb n="7.45"/>
+<lb/>constet. Jam nitunt quoque permanentem affectum
+<lb/>Graeci passionem nominant, ut etiam quod jam effecit, nec
+<lb/>etiamnum efficit, causam. Quanquam neque hoc simpliciter
+<lb/>causa est, neque permanens affectus simpliciter passio;
+<lb/>ted accurate loquenti affectus passio est jam facta, non autem
+<lb/>quae adhuc fit. Quod autum Graecis sic nominari confuetum
+<lb/>est, in libro de melicis nominibus a nobis esu de.:
+<lb/>monstratum. Atque rei memores, quae a nobis semper
+<lb/>profertur, de nominibus quamprimum luter nos convenire,
+<lb/>et ad res ipsius properare, et in iis versari morarique operi.
+<lb/>tet. Verum eorum qui feste eruditus profitentur, plurimi
+<lb/>contra efficiunt, in contentione de nominibus totam tuam
+<lb/>ritam ita conterentes, ut ad artis finem pervenire nunquam
+<lb/>possint. Quidnam igitur veritatis studiofum agere oportet?
+<lb/>Res naturis luter se .similes, ob idque neglectas demohstrare;
+<lb/>deinde nomina iis imponere, potissimumque, fi possit,
+<lb/>Graecis usitata; sed si haec ignoraverit, propria fingere;
+<pb n="7.46"/>
+<lb/>ante omnia vero siugusis rebus singula nomina, quo nulla
+<lb/>obscuritas ex homonyruia nuscatur, neque captiones sint in
+<lb/>sermone, neque res ulla omittatur. Illud vero sive recte,
+<lb/>sive non recte, sive proprie, sive improprie nomen sit impositum,
+<lb/>id multo otio considerandum est, quum res ipsas
+<lb/>jam didicerimus; quippe in harum cognitione rectum influi
+<lb/>tutum consistit; non in nominibus. Nos igitur, ut diximus,
+<lb/>tum consueta Graecis nomina imponimus, tum res
+<lb/>luter su vicinas distinguimus et caeteris ; prout voluerint,
+<lb/>nominare permittimus; sed res aliquas indefinitas praetermittere
+<lb/>non concedimus. Proinde his in ipsis quae nunc
+<lb/>nobis proposita sunt, quoniam id quod ipsa corporis conversione
+<lb/>et mutatione et qualicunque alteratione consistit, ,
+<lb/>diversum est ab eo quod jam Iactum esit mauetque, ejus
+<lb/>autem, quod factum est, aliud naturalem actionem efficit,
+<lb/>aliud eam laedit-; quod in fieri essentiam habet, actionem
+<lb/>passionemve nomhravintus ; quod in permansione ad aliquod
+<pb n="7.47"/>
+<lb/>tempus, sanitatem, moritu nrve. Passionem vero ab actione
+<lb/>discrevimus, tanquam quod efficitur ab eo quod esurit et
+<lb/>morbum a limitate, ut illud praeter naturam est, hoc feeundum
+<lb/>naturam. . Rursus igitur integris horum orationihus
+<lb/>positis, reliquis haereamus. .Sanitas igitur affectus est
+<lb/>secundum naturam actionem efficiens. Nihil refert, ut dixitnus,
+<lb/>utrum constitutionem si aut affectum dixerimus, aut
+<lb/>actionis effectricem, aut actionis caulam ; simili modo nec si
+<lb/>illud, secundum naturam, abstulerimus, quicquam referet;
+<lb/>adlignificatur enim in reliqua oratione. Sic vero et morbus
+<lb/>constitutio corporis est praeter naturam et causa laesae
+<lb/>actionis; aut sic angustius: morbus est affectus actionem
+<lb/>inlerturirans. Passio motus est in materia, ab agente: ipse
+<lb/>vero agentis motus, actio; quod autem ex tua natura ei
+<lb/>quod efficitur aliquam generationis portionem confert, causa
+<lb/>ipsius dicitur. . Causae vero genere fiunt plures ; nam et
+<lb/>materia, et nsus, et sicopus, et instrumentum, et unde mor
+<lb/>tusinitium; causae sunt. Hae namque surgulae ei quod
+<pb n="7.48"/>
+<lb/>efficitur perfectionis aliquid conferunt; quae vero nihil
+<lb/>conferunt, sed tamen a causis conferentibus non fejungun-tur,
+<lb/>haec causarum sine quibus non rationem obtinent.
+<lb/>His ita se habentibus, potest causarum multoties feste invicem
+<lb/>excipientium series quaedam institui, ut si quis calculis
+<lb/>pluribus inter te ordine positis,. primum moveat, ac primus
+<lb/>secundum, et hic tertium, et sic deinceps unusquisque suecedentem.
+<lb/>In hujusmodi enim omnibus nisi quis id quod
+<lb/>per se efficere dicitur ab eo quod per accidens distinguat,
+<lb/>plurimi abfurdissimique errores in disputationibus contingent.
+<lb/>Significat autem per se idem quod primo, tametsi^
+<lb/>Attice eloquentium quidam hoc vocabulum aversantur; per
+<lb/>accidens vero, idem quod fecundo. Igitur qui primo calculo
+<lb/>digitum admovit, primo quidem hunc movit, per acridens
+<lb/>vero ac fecundo huic proximum, atque sic jam quoque
+<lb/>reliquos omnes. Sic primus^ quoque secundum movet per
+<lb/>se, per accidens vero tertium reliquosque ordine suille- .r
+<lb/>quentes.. - Jam fecundus eadem ratione primo movet. tertium,
+<pb n="7.49"/>
+<lb/>secundo vero quartum et quintum et ordine  subfequentes.
+<lb/>Quod si accuratius adhuc distinguere volueris (id
+<lb/>enim ad exquisitiorem rerum notitiam sic utilius ridetur]
+<lb/>quisque calculus sibi contiguum primo movet, secundo proximo
+<lb/>vicinum, tertio praeterea vicino finitimum, quarto
+<lb/>denique finitimo succedentes. His ita te habentibus ac defiuitis,
+<lb/>quum morbus affectus quidam sit praeter naturam
+<lb/>actionem laedens.; . morbum autum ipsum praecedere possit
+<lb/>affectus alter, qui etiam praeter naturam fit, non tamen qui
+<lb/>tui ipsius ratione laedat, sed morbo interveniente; talem
+<lb/>affectum non morbum, sed causam quae morbum praecedit,
+<lb/>vocabimus. Atque hic accurate meus adhibenda est, il<hi rend="u">lum</hi>
+<lb/>quoque affectum causam esse proferentibus, quod actionem
+<lb/>laedat. Neque enim per se, neque primo, sed per accidens,
+<lb/>et fecundo interturbari; laenique per eum actionem dicemus;
+<lb/>a morbo vero et primo et fui ipsius ratione. Unde
+<lb/>quum dicimus. morbum esse corporis affectum, qui actionem
+<pb n="7.50"/>
+<lb/>interturbat, statim subaudientibus, ipsum et primo et pexi
+<lb/>se interturbare, satissacit oratio; verum vel rudius, vel
+<lb/>contentiosius inandientibus adliciendum ur oratione est, pii.mo,
+<lb/>quo talis fit definitio: morbus est affectus corporis
+<lb/>actionem aliquam interturbans primo. Quicunque igitur
+<lb/>affectus hunc- praecedunt, nequaquam morbi sunt. Quod
+<lb/>si alii quidam affectus cum sus inciderint velut ipfiuum nmbrae
+<lb/>comites, nec hos quidem morbos vocabimus, sed fymplumata.
+<lb/>Ita etiam non statim quicquid suerit in corpore
+<lb/>praeter naturam, id morbus a nobis. vocabitur, sed quod
+<lb/>primo actionem laedit, morbus ; quod hunc praecessit, morbr
+<lb/>causa, nondum autem morbus. Quod fi quis alius affectus
+<lb/>in corpore .morbum sequatur, is symptoma duntaxat
+<lb/>nominabitur ; quamvis etiam actionis ipfius laesio symptoma
+<lb/>fit animantis. Quicquid enim animali praeter naturam accidit,
+<lb/>symptoma esu Ac nominum quidem usus apud orae- ;
+<lb/>cos ita se habet, quae tamen mutare, dummodo res .ipsae
+<lb/>(ut praedictum est) permaneant, cuique volenti licebit;
+<pb n="7.51"/>
+<lb/>verbi gratia, si quis noluerit symptoma vocare, sed epigennema,
+<lb/>i. e. succedens vel obortum; symptoma vero esse dicitur,
+<lb/>quicquid praeter naturum animali accidit; epigennema. vero
+<lb/>non omne, sed quod solos morbos necessario sequitur. Nos
+<lb/>vero (ut dictum est] omnem allectionem, quae adhuc fit, .passionem
+<lb/>esse diximus; omnia vero quae in corporibus
+<lb/>praeter naturum sunt, symptomata nominabimus. Accidetque
+<lb/>aliquoties eandem rem et passionem et symptoma nominari,
+<lb/>quum utriusque fignificatum alia atque alia ratione
+<lb/>issi infit. Verbi gratia tremere pati est, quod tum alterari,.
+<lb/>tum moveri non propria functione.. contingit; tremor et
+<lb/>passio et pathema est; quod talis motus alteratio sit; imo
+<lb/>etiam tremor symptoma est; .nam motus est praeter naturam.
+<lb/>Quod fi alteratio sclum esset, qualis in ridendo, audiendo,
+<lb/>odorando, gustando, tangendoque fit, passio tantum
+<lb/>nominaretur, nequaquam vero .symptoma ; symptomatis
+<lb/>enim id ipsum proprium est, ut sit praeter. naturam. .
+<lb/>Unde et in differentiis omnibus, quae. ab. eo qui secundum
+<pb n="7.52"/>
+<lb/>naturam est statu immutantur, consistit: nam et in figuris
+<lb/>naturalibus, et coloribus, et magnitudinibus, et actionibus,
+<lb/>et passionibus, ubi corrumpuntur, existit. Estque haec
+<lb/>ejus maxime propria ratio, mutatio a naturali sartu. Quid
+<lb/>igitur? num et morbus mutatio naturalis est status? an
+<lb/>non absolute mutatio, sed mutatio quaedam ; symptoma vero
+<lb/>absolute mutatio est? Nam quum in. affectibus naturalis
+<lb/>status mutatur, actionemque laedit, morbus gignitur; duoque
+<lb/>haec, ut morbus sit, omnino desiderantur, in genere
+<lb/>affectus esse, et functionem laedere, quorum neutrum fymptomati
+<lb/>adesse necessarium est; etenim licet neque affectus
+<lb/>sit, nec actionem aliquam laedat, tamen eo folo, quod praeter
+<lb/>naturum sit, abunde definietur. Atque a morbo quidem
+<lb/>hac ratione differt; a passione vero, quod haec passio
+<lb/>omnino sit in motu, interdum et secundum naturam. Symptoma
+<lb/>non folium in motu, sed etiam in habitu quodam, et
+<lb/>omnino praeter naturam. Erit igitur passio, alteratio vel
+<lb/>circa materiam motus, qui adhuc fit, affectus vero qui
+<pb n="7.53"/>
+<lb/>post manet, symptoma autem, quicquid animali praeter
+<lb/>naturam acciderit. Quare morbus quoque sub generalem
+<lb/>symptomatis appellationem reducetur; est. enim is quoque
+<lb/>quodam modo symptoma. Quin etiam quae et antecedentes
+<lb/>in corpore animalis caulae constituuntur, generest fymptomatis
+<lb/>notioni subiiciuntur.</p>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+
+
+<p rend="indent">Atque de iis quidem jam dictum est, de
+<lb/>specialibus vero symptomatis hoc in libro disserere propositum
+<lb/>esu Est autem horum triplex differentia. Alia namque
+<lb/>ipsius corporis nostri sunt affectus ; alia functionum laesiones;
+<lb/>esta haec ambo comitantia; tum in exeretorum et
+<lb/>retentorum ametria ; tum in iis qui in ipfo animali excitans
+<lb/>tur strepitibus; tum etiam in reliquis sensibilibus disserentiis
+<lb/>omnibus. Laesio vero nunc et privatio dicta audiatur.
+<lb/>Non enim solum movendi, neque sentiendi difficultas laesiones
+<lb/>quaedam actionum sunt, sed etiam immobilitas et insensibilitas.
+<lb/>Ad eundem modum non dyspepsia solum, sed
+<lb/>etiam apepfia ren cruditas. Atque haec quidem genera
+<pb n="7.54"/>
+<lb/>symptomatum fiunt, quorum differentiae particulares consideraudae
+<lb/>sunt. At singula perfequi sermone deinceps conveniet;
+<lb/>illo prius admonito., quod in libro de morborum
+<lb/>differentiis diximus, nempe qui sanitatem non esse affectum
+<lb/>corporis, qua actionem edimus, sed ipsas actiones sanitatem .
+<lb/>esse putarunt; quam nos nunc doctrinam symptomatum de
+<lb/>actionum laesione tradimus, hanc ipsi morborum doctrinam
+<lb/>facturi sunt, . et a nobis nimirum, si nihil in ipsis rebus erraverint,
+<lb/>de solis nominibus dissensuri. Oriuntur autem
+<lb/>(ut saepe dictum estj hujuscemodi doctrinarum errores ex
+<lb/>aliqua, quae omittitur, differentia. Itaque si differentias
+<lb/>omnes percenseant, et eas non symptomatum, sed morborum
+<lb/>esse dicant,. in nomine solo, non in re, a nobis. dissentient.
+<lb/>Ergo dicendae differentiae nobis jam sunt, oratione
+<lb/>ad principium revocata, quoniam symptoma generatim quidem
+<lb/>appellatur quicquid animali praeter naturam contigit;
+<lb/>ita ut tum morbi ipsi; tum morborum. causae; quae intra
+<pb n="7.55"/>
+<lb/>corpus consistunt, (non enim evidentes) symptomata sint.
+<lb/>Altera vero significatione ac veluti magis propria, detractis
+<lb/>tum morbis, tum eorum causis, -reliqua omnia, quae praeter
+<lb/>naturam sunt, symptomata nominantur. Atque nunc de his
+<lb/>loqui nobis est propofitum.</p>
+</div>
+<div type="textpart" subtype="chapter" n="3">
+
+
+<p rend="indent">Primum ergo memores esse oportet tripli cis
+<lb/>eorum sumptomatum naturae, ac sic deinceps omnia dividere,
+<lb/>ab actionum laesione ducto exordio. Haec autem
+<lb/>secanda est in duo prima genera, quod et actionum ipsarum
+<lb/>duae sint primae differentiae; aliae enim animae, aliae naturae
+<lb/>sunt;. proindeque priores quidem animales, posterior
+<lb/>es vero naturales vocantur. Rursus igitur animales priores
+<lb/>dividimus in scusitrices, motrices, et tertias prinripes
+<lb/>(nihil enim deterius suerit ita dilucidae doctrinae gratia eas
+<lb/>nominasse] et iturum earum, quae dictae sunt, quamque in
+<lb/>suas differentias distinguimus. Serrsitricis . igitur animae
+<lb/>functio quinque omnino habet functionum differentias, ri-.
+<pb n="7.56"/>
+<lb/>dendi, odorandi, gustandi, audiendi, et tangendo Motrix
+<lb/>vero proximum instrumentum unum habet, modum que
+<lb/>ipsius motionis unum : (demonstratum enim ita est in libris
+<lb/>de musculorum motu] variatur autem in particularibus instrumentis,
+<lb/>ita ut varias habere species rideatur. Reliqua
+<lb/>vero animae structio, quae a principe facultate procedit, <hi rend="u">in</hi>
+<lb/>imaginatricem, ratiorinatricem et recordatricem dividitur.
+<lb/>Ergo etiam. laesiones functionum sentiendi communes quidem
+<lb/>omnibus sunt; inseusibilitas quaedam vel sentiendi disificultas,
+<lb/>(voco autem sentiendi difficultatem tensum vitiosum
+<lb/>omnem] particulares vero in unoquoque sunt sensu, in oculis
+<lb/>quidem caecitas et villis obscuritas et depravata. villo
+<lb/>quaedam. in auribus, surditas et auditus gravitas et obauditio
+<lb/>quaedam. Sic in lingua, nato et tactu, effi propria
+<lb/>nomina sortita non sunt, tamen respondentia praedictis ad
+<lb/>proportionem habentur ; aut enim propria sieusibssia prorsus
+<lb/>non sentiunt, aut male ; eritque illud male duplex, alterutu
+<lb/>diminute, alterum depravate. Tactus autum proprium
+<pb n="7.57"/>
+<lb/>et insigne praeter caeteros sensus in actione sua symptoma
+<lb/>obtinet, dolorem; qui quidem etiam caeteris sensibus ab
+<lb/>externis propriis sensibilibus lucidis; huic vero non solum
+<lb/>ab externis, sed etiam multo magis ab affectibus, qui intra
+<lb/>corpus consistunt, isque plerumque tam vehemens, ut nonnulli
+<lb/>cruciatu victi sibi ipsis mortem consciscant. lnvadit
+<lb/>quidem et oculos ob lucis splendorem molestus quidam dotoris
+<lb/>affectus; ames quoque ob magnum aliquem et asperum
+<lb/>strepitum; m gustu quoque et odoratu alii ejusmodi molesii
+<lb/>affectus oboriuntur a proprio sensili unoquoque sensu
+<lb/>dolenter affecto. Maximi vero dolores tactus sensui accidunt.
+<lb/>Etenim qui dolores ob aurium phlegmonem, aliumve
+<lb/>quempiam affectum vehementer nos angunt, ii proprii auditus
+<lb/>dolores non sunt, sed tactus ; communis enim is est ommuni
+<lb/>sensuum organis, reliqui quatuor cujusque seorsum.
+<lb/>Ita ita oculis saepe vehementes dolores excitantur sensu.
+<pb n="7.58"/>
+<lb/>tactus in his laborante; sic etiam et dentium et coli dolores;
+<lb/>quin pruritus quoque ex hoc genere symptomatum est. Ne
+<lb/>igitur etiamnum in unaquaque parte proprium nomen quaeras
+<lb/>, quale est cephalalgia, et cordolium, et aurium dolor ;
+<lb/>non eum invenies impositum; sed oratione ejusmodi omnia
+<lb/>interpretari satis suerit, dicendo vesicae et renum et lienis,
+<lb/>item genuum et pestis caeterarum que similiter partium
+<lb/>dolores. . Atque talia quidem et tot munero sanctionum
+<lb/>sentiendi sunt symptomata: Ad haec etiam duo eximia
+<lb/>pervigilium et sopor in pruno omnium sensu, qui omnibus
+<lb/>feusibus est communis, consistunt. At functionum motum
+<lb/>edentium prima symptomata sunt immobilitas et movendi
+<lb/>difficultas. Sed difficultatis movendi alius diminutus insirmusque
+<lb/>motus est, alius depravatus; depravati autem
+<lb/>alitis tremulus, alius convulsivus, alius palpitans, alius concussivus.
+<lb/>Dictorum symptomatum quaedam quum in toto
+<lb/>corpore fiunt, diversas appellationes sortiuntur, ut emptostliotonos
+<lb/>, opisthotonos et tetanos. Quod si totius corporis
+<pb n="7.59"/>
+<lb/>non solum convulsio fit, sed etiam principum functionum
+<lb/>cohibitio, tale samptoma epilepsia dicitur; quemadmodum
+<lb/>et apoplexia quae totius est corporis resolutio una cum prin .
+<lb/>cipibus functionibus laesis. Atque hae quidem actionum
+<lb/>motum edentium sunt laefiones ; quarum fi qua proprium et
+<lb/>iusigne nomen inditum non habeat, non decet propterea
+<lb/>ullos deceptos aestimare aliquod symptoma a nobis praetermissum
+<lb/>esse, ut neque apnoean et dyspnoean, vel ischurian
+<lb/>et. dysurian, vel aphouiau et cacophoniam et dysphonian.
+<lb/>Sed ipsi medico ejusmodi omnia in singulis animalibus functionibus
+<lb/>sunt exploranda, ut et in cujusque eormn dissisrenuis;
+<lb/>veluti si sors ita tulerit, quum dyspnoea unum
+<lb/>sit animalis functionis nempe respirationis symptoma, quot
+<lb/>sint in universum ejus differentiae, (quemadmodum in libris
+<lb/>de dyspnoea demonstravimus] aut cacophoniae quot particulares
+<lb/>habeantur. differentiae, ut ru libello de voce disseruimus.
+<lb/>At passim dubitaverit quispiam, cujus generis
+<lb/>symptoma sit; ut pandiculatio, oscitatio, sternutatio, tostis.
+<pb n="7.60"/>
+<lb/>Verum de ejusmodi omnibus proximo libro de symptomatum
+<lb/>causis lusius disseretur. Deinceps autem licuerit principum
+<lb/>functionum laesiones prosequi, ac primum imagluatricis.
+<lb/>Est autem hujus laesio quoque esta veluti paralysis quaedam,
+<lb/>quae caros et catalepfis nominatur; esta veluti pravus quidam
+<lb/>erransque motus, qui delirium vocatur; alia veluti defiriens
+<lb/>et imbecillus motus, ut in comate et lethargo. Quin
+<lb/>etiam ratiocmatricis functionis, quae veluti paralysis est,
+<lb/>amentia; quae veluti deficiens motio est, et stultitia et fatuitus ;
+<lb/>quae vero veluti aberrans est, delirium appellatur.
+<lb/>Nam plerumque in utrisque simul delirium consistit, tum
+<lb/>in prava imaginatione, tum in inepta ratiocinatione; estautem
+<lb/>interdum in earum altera duntaxat : quemadmodum
+<lb/>et Theophilo medico aegrotanti contigit in caeleris quidem
+<lb/>prudenter et disserere et praesentes exacte noscere, sed tibitines
+<lb/>quosdam angulum domus, ubi decumbebat, occopasse
+<lb/>assidueque tibia modulari ac tonos edere putabat; atque
+<pb n="7.61"/>
+<lb/>hos se intueri arbitrabatur, alios quidem istic stantes,
+<lb/>alios autem sedentes ita continue tibia canentes, ut neque .
+<lb/>noctu quicquam remitterent, neque omnino interdiu vel
+<lb/>minimum tempus quiescerent ; proinde exclamabat, perpetuo
+<lb/>jubens eos domo ejrci. Atque haec illi erat delirii species.
+<lb/>Is postquam plane convaluit a morboque evafit, tum
+<lb/>reliqua omnia quae ingredientium quisque dixisset secissetve,
+<lb/>narrabat, tum risu de tibicinibus memorabat. Quibusdam
+<lb/>vero nullum risum apparet, sed ni non recte ratiocinantur,
+<lb/>ratiocinatrice animae facultate iis affecta ; ut phrenitico contigit,
+<lb/>qui occlusis lutus j anuis singula vasa per fenestras protulit,
+<lb/>postea praetereuntes rogabat, num proficere juberent.
+<lb/>Hic enim singulorum valorum nomina plane proferebat;
+<lb/>qua in re se manifeste declarabat, neque in imaginatione
+<lb/>circa ea laesum esse, nec in ne minum memoria. Quid igitur
+<lb/>sibi vult ab alto omnia delicere ac perfringere? hoc
+<lb/>intelligere non poterat, sed opere ipfo delirare se declarabat.
+<pb n="7.62"/>
+<lb/>Quod autem et circa memoratricem animae facultatem
+<lb/>symptomata eveniunt non aegrotantibus modo, sed iis etiam,
+<lb/>qui aegrotare desierunt, id didicisse e Tlrucydide licet, qui
+<lb/>nonnullos e pestilentia servatus eatenus omnium quae praecessissent
+<lb/>oblitus prodit, ut non solum suos f<hi rend="u">amili</hi>ares, fied
+<lb/>etiam se ipsos ignorarent.</p>
+</div>
+<div type="textpart" subtype="chapter" n="4">
+
+
+<p rend="indent">Sed enim quoniam principis animae facul-tatis
+<lb/>symptomata explicata sunt, jam tempestivum est ad
+<lb/>alterum iunctionum genus, - quas naturales appellant, trans- ire.
+<lb/>Atque harunr surgulis, quum vel non eduntur, vel
+<lb/>male eduntur, erunt symptomata. Hujus quidem generis
+<lb/>symptomatum sunt in appetitu appetentia tum difficilis in
+<lb/>appetentia, tum immoderata ciborum appetentia. Concoctionis
+<lb/>sunt apepfia; bradypepsia, dyspepfia. - Pari modo
+<lb/>in distributione et sanguinis generatione, quae vel non peragitur,
+<lb/>vel prave peragitur, existent symptomata. Hujus generis
+<lb/>symptomatum sunt hyderi. Jam in nutritionis actione
+<pb n="7.63"/>
+<lb/>atrophiae quaedam et tabes frustrationes ejus sunt. Leucas
+<lb/>vero et ophiases et alopecias et quicquid ejusmodi
+<lb/>symptomatum species habetur, vitiosae nutritiones efficiunt.
+<lb/>At asphyxiae et cacosphyxiae functionis laesae pulsuum
+<lb/>sunt symptomata. In excrementorum quoque fecretione
+<lb/>quae vel non omnino, vel non rite peragitur, symptomata
+<lb/>consistunt, alia nomine proprio vacantia, veluti quae circa
+<lb/>atram bilem eveniunt; alia ex consuetudine nominata, ut
+<lb/>regius morbus. Methodus vero lue quoque omnium inventinnis
+<lb/>est naturalium facullatum cognitio, quas in libris de
+<lb/>ipsis conscriptis quatuor esse in unaquaque corporis parte
+<lb/>indicavimus; attractricem, retentricem, alteratricem et excretricem.
+<lb/>Erit igitur in harum unaquaque duplex fymptoma;
+<lb/>altorum quum male fit actio, alterum quom prorstas
+<lb/>non fit. Quare in quocunque naturali instrumento
+<lb/>octo eruntin universum symptomata. Ergo si cui ex anatonis
+<lb/>innotuerit. partium animalis numerus, facile ex fete
+<pb n="7.64"/>
+<lb/>omnium symptomatum multitudinem inveniet. ortae enim
+<lb/>naturae solius sirnt instrumenta, octo fotum symptomatis;
+<lb/>laborabunt; quae vero sunt animae, tum istis, tum sus
+<lb/>amplius aliis duobus. Monstratum enim paulo sirpra est,
+<lb/>cujusque animalium actionum duplicem esse symptomatum
+<lb/>speciem, vel quae protius non efficiuntur, vel quae male
+<lb/>eduntur. Dictum praeterea est hoc male duplex esse,
+<lb/>aliud veluti obscure debiliterque, aliud ac siquis dicat depravam.
+<lb/>Ita rursus si non duo in quaque tum actione tum
+<lb/>facultate symptomata esse dicas, sed omnino tria, alterum
+<lb/>scilicet priorum duorum .in duo siccans, duodecim quidem
+<lb/>m quoque naturali instrumento erunt symptomata, quindecim
+<lb/>vero in animalibus organis. Porro prior divisio, quae
+<lb/>in duas saeta est differentias, octo quidem naturalium, decem
+<lb/>vero animalium actionum efficit. Si quod vero instramentum
+<lb/>duplici ratione. animale sit, ut sentiat simul et
+<lb/>moveat, huic ex secunda divisione decem et octo fymptomata
+<lb/>incident, ex nriore duodecim. Monstrato igitur,
+<pb n="7.65"/>
+<lb/>quod dicimus- in una alterave parte, quod nos in Hs,Arod
+<lb/>ipsum in omnibus facere censemus eum, qui numerare fymd
+<lb/>plumata studebit, minime quidem nominibus attentum (neque
+<lb/>enim ubique usitata nomina inveniet) sed ipsum rerum
+<lb/>naturam spectantem. Sed esto ventriculus concoctionis iitstrumeutum
+<lb/>, quod trahit. ad se (uti ostendimus) farniliare
+<lb/>alimentum et excernit quicquid est alienum ; praeterea quod
+<lb/>attraxit, id retinet, et quod retinet, alterati Quum igitur
+<lb/>vel omnino non attrahere, vel vitiose attrahere illi contigit,
+<lb/>duo haec attractricis facultatis symptomata mecum perpende.
+<lb/>Alterum eorum rursum bifariam dividitur, nempe
+<lb/>quod vitiosis, oratione saltem quatenus utique licet (tametsi
+<lb/>nominibus - dilucide demonstrare non potes, quod scilicet
+<lb/>his nullam impositum nomen fit) interpretari conatus, quod
+<lb/>etiam per id ipsum vitiose alia erit ut attractio imbecilla,
+<lb/>alia ut depravata; imbecilla quidem quae vix et aegre et
+<lb/>longo tempore fit; - depravata, quae veluti cum palpitatione,
+<lb/>vel tremore, vel convulsione, vel concussione agitur. in
+<pb n="7.66"/>
+<lb/>alteratrice vero ventriculisimultate aliud samptoma est, ubi
+<lb/>omnino alteratio non fit, quum quales assumpti cibi sunt,
+<lb/>tales in omni qualitate manent; aliud ubi imbecilliter, quod
+<lb/>proprium nomen bradypepsiarn habet; quemadmodum et depravatur
+<lb/>quum in alienam qualitatem cibi permutantur, ita
+<lb/>ut tria in totum symptomata circa unam actionem frustratam
+<lb/>habeantur. . Vocatur autem ipsa sunctio concoctio,
+<lb/>quae ciborum est in familiarem animali qualitatem alteratio.
+<lb/>Bradypepfia vero mutatio in eam qualitatem est, sed vix
+<lb/>et fpatio longiore; altercationem autem in alterum qualitatem,
+<lb/>pon tamen in eam, quae secundum naturam est,. apepsiam
+<lb/>nominant. Huic aequinoce privatio quoque actionis
+<lb/>nominatur; quanquam clarius suerat hunc lolam apepsiam
+<lb/>nominare; .illam vero depravatam mutationem, dyspepsiam;
+<lb/>ficut imbecillam alterationem, bradypepsiarn. Atque ut
+<lb/>Plato dicebat, veteres quum res plurimas ignorarent, estas
+<lb/>omnino non nominarunt, alias non recte. Non igitur decipi
+<lb/>nos oportet nomntibus, sed in ipsam rerum substantiam
+<pb n="7.67"/>
+<lb/>inspicere. Id si fecerimus, inveniemus similiter retentricis
+<lb/>facultatis acsionem secundum naturam se habere, quum tempus
+<lb/>comprehensionis ciborum concoctionis tempori exaequatur,
+<lb/>ac cibos undique prorsus complectitur; privationem
+<lb/>vero universalem actionis, quum prorsus non complectitur;
+<lb/>accidit autem id in lienteriis; imbeciliitatem vero
+<lb/>vocamus, quum vel non probe comprehendit, veI non ad
+<lb/>usque perlectam concoctionem, vel quum ambo haec simul
+<lb/>incidunt^ Quum enim his in duobus consistat proba comprehenfivae
+<lb/>facultatis functio, tum ut nullum spolium reliuquatur
+<lb/>inter ventrem et cibos vacumn, tum ut comprehensionis
+<lb/>tempus concoctionis tempori exaequetur; vel in
+<lb/>altero tantum male functionem obibit; vel in utroque, symptomataque
+<lb/>consequentur, i mbe cissam quidem comprehenlienem
+<lb/>fluctuationes et flatus; brevioris vero temporis comprehensionem
+<lb/>excretio celeris et ciborum in inferiori ventre
+<lb/>corruptela. Atque hic de . huic rei mentem adbibero
+<pb n="7.68"/>
+<lb/>velim quod alteri symptomata alterum nonnunquam fueredit;
+<lb/>imbecillam namque compreheusionem modo perturbationes
+<lb/>ventris sequuntur; modo flatus; brevioris vero tem.poris
+<lb/>comprehensionem omnino imperfecta concoctio ;. cui
+<lb/>succedit vel celer ciborum exitus, vel eorum in ventre corruptela.
+<lb/>Ac ita celeris quidem exitus inseparabilia fym..:
+<lb/>plumata sunt defectionis humiditas et distributio deficiens;
+<lb/>corruptelae autem in alvi quidem deiectionibus graveolentia
+<lb/>necessario, non necessario autem mordicationes aut instationes.
+<lb/>Sed interdum neutrum eorum, interdum alterurn,.
+<lb/>interdum utrumque sequitur. Cur autem tum in istis,
+<lb/>tmn infis, quae prius tuus dieta, quaedam necessario fequantur
+<lb/>, quaedam non necessario, iir libro hunc sequenti
+<lb/>agemus. ln praefentia vero ad reliquam retentricis sacultatis.
+<lb/>symptomatum differentiam est transeundum. Quum
+<lb/>igitur cibos venter comprehendit, sed cum palpitatione quadam
+<lb/>vel tanquam convuffione et tremore et concussione,
+<lb/>ejusmodi comprehensionis opus depravatum fuerit. Ac palpitationem
+<lb/>quidem ventris claro sentimus, itemque convulsument;
+<pb n="7.69"/>
+<lb/>(surgultunr enim hoc fymplonra nominant) at pativetua
+<lb/>ejus, quod veluti tremor sit, non clare percipitur t sed
+<lb/>si nostrae orationi animum adhibueris, id quoque .non magno
+<lb/>negotio deprehendes. Ergo ubi ab assumpto cibo neque
+<lb/>aliqua fluctuatio tu insultat, neque inflatio, imo neque palpitalio.
+<lb/>ulla est, neque singultus, sed insuetae sectationis in
+<lb/>ventre sensus est, et veluti gravatur is ac laborat, ac defiderat
+<lb/>celerius onus per iuferiora aut superiora secedere, simulque
+<lb/>accedit ructus quidam ac molesta quaedam difficultas
+<lb/>intoleranda ac vix explicabilis respirationis sequitur; tunr
+<lb/>existima ventriculum cibos comprehendere quidem, sed tremule.
+<lb/>At motus veluti concussivus in rigoribus maxime est
+<lb/>conspicuus, universas animalis partus occupans. Sed de
+<lb/>his fusius in libris hunc sequentibus disseretur. Jam nunc
+<lb/>ad quartam ventris facultatem exeretricem propultricemque
+<lb/>nominatam accedamus ; cujus veluti privatio in quibusdam
+<lb/>ilei speciebus cernitur; imbecillitas vero plerumque in tardis
+<lb/>quibusdam excrementorum delectionibus incidit. Motusautem
+<pb n="7.70"/>
+<lb/>quasi vitiosius est, quum ver priusquam peracta concoctio.fit,
+<lb/>ad actionem proruit; vel absoluta concoctione
+<lb/>cessat ac tardat, vel una cum aliquo jam dictorum symptomatum
+<lb/>fit, alilerve quovis modo inaequaliter, vel tanquam
+<lb/>intemperanter venter in cibos irruit, minime moderatum
+<lb/>habens motum exemplo eorum, qui per declive currentes, gradum
+<lb/>postea sistere nequeunt. Igitur ventris, quatenus
+<lb/>organum est concoctionis, dicta symptomata sunt; at quatenus
+<lb/>ipsum nutriri oportet et ad se alimentum attrahere et
+<lb/>retinere, quousque alienaverit et supervacaneum excrevexit,
+<lb/>alium parem symptomatum numerum ut similare cor-.
+<lb/>pus sortietur. .. Fortassis igitur praestiterit .omnia, quae facultatis
+<lb/>nutricis functioni accidunt, symptomata percurrere,
+<lb/>tum quae ventris corpori, tum quae caeleris partibus
+<lb/>omnibus insunt communia, quippe durior ita legentibus
+<lb/>oratio fiet, illuftriusque docebit..quod paulo supra
+<lb/>est dictum, symptoma symptomatis causam esse. Atrophiam
+<lb/>enim, quum utrum symptoma sit, sive ea in loto stat animali,
+<pb n="7.71"/>
+<lb/>sive in una ejus sparte, multa praecedunt symptomata.
+<lb/>Quum enim quod probe nutriri debet, id et trahere ad se familiare
+<lb/>ac proprium alimentum oporteat ; et quoad alleratum
+<lb/>sibi assimilaverit, retinere; praeterea quod redundat
+<lb/>excrementum excernere ; quumque id excrementum duplex^
+<lb/>genere sit, aut enim quantitate redundat, aut qualitale ; neceste
+<lb/>omnino est partem atrophia laborantem vel uno praedictorum
+<lb/>aliquo id pati, vel plurimis. Nam sive diminuto
+<lb/>nutritarum alimentum, sive non omnino, sive depravate
+<lb/>trahat, a trophia para laborabit: sive id quidem quantum
+<lb/>et quale esse oportet suppeditetur, caeterum symptoma
+<lb/>aliquod in retentrice sacultate consistat surrile dictis ventriculi
+<lb/>symptomatis, atrophia sic quoque laborabit. Quodsi
+<lb/>hae facultales illaesis fungantur actionibus, excretrix autem
+<lb/>erraverit, plusquam oportet evacuans; sic quoque pars macilenta
+<lb/>atrophiaque tabescens reddetur- Jam alteratricis
+<lb/>facultatis symptomatum illud quidem, quod veluti privatio
+<lb/>est .(quam apepsiam vocari diximus) liquido patet .partem
+<pb n="7.72"/>
+<lb/>macilentam efficere. Alterum quasi imbecillitas quaedam
+<lb/>est (quam bradypepsiam vocamus) haec spatio quidem longiore,
+<lb/>sed manisestam tandem aliquando maciem inducet.
+<lb/>Tertium vero symptoma, dyspepsiae simile, non macilentam
+<lb/>et atrophia laborantem partem reddet, sed parsis ideam permutabit
+<lb/>quemadmodum in leuce et elephantiasi cernitur.
+<lb/>Sed lnc advertere ac distinguere oportet, utrumne humore
+<lb/>aliquo affluente, an Inlidis ipsis ita asseclis, mutatus color
+<lb/>sit. Nam si ob humorem mutatus sit, alterius generis symptoma
+<lb/>est, non alteratricis facultatis error; si autem tota
+<lb/>pars per totam, qualem esse oporteat, talis non sit, alteratricis
+<lb/>facultatis id vitium est. Fit enim et in arquatis naturasis
+<lb/>coloris mutatio; sed id secretionis est symptoma, nili
+<lb/>venarum ipsarum affectio sit; ttmc enim alteratricis est
+<lb/>facultatis. Vitiosus autem in singulis privatim partibus col
+<lb/>or, nisi ex humore aliquo extrinsecus affluente proveniat,
+<lb/>veluti quaedam dyspepsia est tum alteratricis, tum coneoctricis
+<lb/>in ipsa parte facultatis. Ergo hanc atrophiam, quae
+<pb n="7.73"/>
+<lb/>cacotrophia quaedam dicenda potius sit, a praesenti disputatione
+<lb/>eximamus; ad atrophiam vero vocatam, qua nutritionis
+<lb/>fit privatio, reversi illud admoneamus, tum ipfam
+<lb/>symptoma esse, tum symptomatis alias aliis, quae vel attractrici,
+<lb/>vel retentrici; vel excretrici, vel alteratrici facultati
+<lb/>accidunt, supervenire. Omnium vero horum fymptomatum
+<lb/>causae - morbi - sunt. Finge enim diminute ad aliquam
+<lb/>partem trahi alimentum, ideoque eam non nutriri, omnino
+<lb/>morbus aliquis. diminutum hunc tractum praecedit. Dictum
+<lb/>enim est, quum pars ipsa imbecillior ad se ipsum alimedtunr
+<lb/>trahit, eum omnino fune rutemperatam esse; morbus
+<lb/>autem est intemperies r si vero temperata quidem pars
+<lb/>fuerit, sed obstructio aliqua in distributionis organis existens
+<lb/>distributionem impediat, obstructio ipsa morbus est; distriluitionis
+<lb/>impedimentum, ejus symptoma. Non solum ana
+<lb/>tem lingula symptomata percurrens, quae aliqua functionis
+<pb n="7.74"/>
+<lb/>cedit, resi etiam ex ipsa rerum essentia; licet citra inductionem
+<lb/>colligere. Etenim sanitatem actionis causam potuimus,
+<lb/>morbum autem laetae actionis caulam; at. vero symptomata,
+<lb/>de quibus nunc verba facimus, actionum esse laesiones tlixiinus.
+<lb/>Quare ex his propositis colligitur hujus generis fymptomatum
+<lb/>morbos esse causas.</p>
+</div>
+<div type="textpart" subtype="chapter" n="5">
+
+
+<p>Quod vero reliqua duo genera morbi praecedant,.
+<lb/>et causae rationem ad ipsa obtineant, id quoque paulo
+<lb/>post docebimus, ubi prius integrum de ipsis absolverimus
+<lb/>fermonem, auspicati rursus a symptomatis quae in corporis
+<lb/>consistunt affectibus. Sunt autem eorum primae disserentiae
+<lb/>quatuor; alia namque tuli vitum cadunt, alia tuli auditum;
+<lb/>.esta sub odoratum, alia fissi gustunr, alia fusi tactum.
+<lb/>Ac visilia quidem in coloribus praeter naturam ortum habent
+<lb/>vel universi simul corporis, vel quarundam partium,
+<lb/>vel partis alienius. Universi. quidem corporis, ut in arquatis
+<lb/>su habet,. in hepatitide. et spleuitide vocatis morbis,
+<pb n="7.75"/>
+<lb/>et in hydropum speciebus quibusdam. Unius vero partis,
+<lb/>quemadmodum tum in lingua sola alienus color multoties
+<lb/>uspiritur, tum .in partibus, quae abscessibus vel nigricant
+<lb/>vel livent. Sic et in carbunculis, et eryfipelate, et herpe-.
+<lb/>tibus, et gangraenis, naturales colores immutantur. . Hujus
+<lb/>generis sunt vitiligo, leuce, elephantiasrs, aliaque id genus ;
+<lb/>quippe haec quoque naturalem colorem mutant. Jam in
+<lb/>multis simul partibus obortam decolorationem in multis
+<lb/>morbis .comperire licet, vel circa crura. magis, vel circa
+<lb/>faelem, vel circa totam superiorem corporis regionem, veI
+<lb/>circa totam iuferiorem. Ac visites quidem differentiae hi
+<lb/>his sunt contemplandam Odorabiles vero primum quidem
+<lb/>in respiratione ac tranfpiratione; voco autem .quodambientis
+<lb/>nos aeris per fauces attrahitur et rursus emittitur, respirationem ;
+<lb/>quod. autem per totum corpus, .transpirationetu.
+<lb/>Ergo quae his accidunt praeter naturam graveolentiae,
+<lb/>.in lroc symptomatum constituentur genere; post has
+<lb/>vero auri um. narium axillarum foetores. et nartinm anaecunque
+<pb n="7.76"/>
+<lb/>ob affectum putrescunt. His amplius in ructu idem
+<lb/>symptomatum genus licet invenire, ipso ructu vel fumosam,
+<lb/>vel acidam, vel virosam, vel piscium graveolentiam,
+<lb/>vel aliam quampiam ejusmodi referente qualitatem. in iis
+<lb/>vero quae sub gustum cadunt differentiis laborantes ipsi
+<lb/>symptomata coniiciunt ; nam sudorem defluentem in os aliquando
+<lb/>gustant; ac ejus quae circa linguam est salivae mutatam
+<lb/>qualitatem, quemadmodum sanguinem, quibus is quocunque
+<lb/>modo per os vacuatur, alii quidem notabiliter duiceni,
+<lb/>alii salsum, alii amarum sentiunt. Ita etiam et quae
+<lb/>ex pulmone reficiuntur, et quae ex ventriculo evomuntur,
+<lb/>aliis haec acida, aliis salsa, alus amara, estis dulcia, aliis austera
+<lb/>sentiuntur. At medicorum non pauci etiam sudores
+<lb/>atque aurium praeterea sordem gestu explorandam censent;
+<lb/>quippe ex hoc quoque aliquid coniectari autumant. Jam
+<lb/>tactiles differentiae, ubi naturae modum excesserunt, in
+<lb/>ejusmodi symptomatis numerandae sunt, veluti cutis dura
+<pb n="7.77"/>
+<lb/>et distenta et praearida; simlli modo praehuruida veI rngofa
+<lb/>veI aliam quampiam ejusmodi habens differentiam. Ergo
+<lb/>ex dictis manifestum est hoc quoque symptomatum genus
+<lb/>univerfum a morbis ortum habere. Quippe colorum, halituum,
+<lb/>et saporum differentias omnes solidorum ipformn
+<lb/>corporum temperamenta sequi, in naturalibus libris didicimus ;
+<lb/>ita vero et eas quae Iuli tactum cadunt disierentias, et
+<lb/>mullo tane magis praedictis omnibus, quia activis qualitatibus
+<lb/>congeneres eas esse dixi, ut quae ad ejusdem tensus judicium
+<lb/>referantur: etenim mollities duritiesque tactu judicantur,
+<lb/>haud aliter quam effectrices qualitates ipsis cognatae.
+<lb/>Quare quicquid in eis praeter naturam est, id totum
+<lb/>intemperiei foboles est, ut quod secundum naturam est, temperiei.
+<lb/>At est omnis intemperies morbus: quare ejusmodi
+<lb/>symptomata morborum stant foetus. Quae vero ex afifluente
+<lb/>quodam humore partibus accidunt, ejusdem generis
+<lb/>cum praedictis symptomatis, alia namque obstructiones, vel
+<lb/>angustias sequentia, alia attractricis et excretricis facultatum
+<pb n="7.78"/>
+<lb/>functiones male obitus; necesse est haec quoque veluti
+<lb/>fontem suae generationis morbos habere. At jecinoris quidem
+<lb/>obstructio, quae compositi et organici corporis est morbus,
+<lb/>decolorationis in iclero causa est., Cujusque vero simifaris
+<lb/>partis intemperies, quae ipsa quoque ejusmodi corporuna
+<lb/>morbus est, alias aliam ejus facultatem impedit vel attractricem
+<lb/>vel excretrrcem vel aliam quampiam; ob quas
+<lb/>quum inaequaliter. et fine ordine humores in corpore fluant;
+<lb/>partes .alias aliae in colore, halitu, sapore, omnibusque tactilibus
+<lb/>differentiis asserantur. Quin etiam quodcunque
+<lb/>reliquum est symptomatum genus, sive id in vocibus sit et
+<lb/>sonis, qui in animalibus edmrtur, sive. ru iis; quae a corpore
+<lb/>excernuntur, in eove detinentur; id totum etiam morhorum
+<lb/>est soboles, vel ipsorum proxime vel meliis quibusdam
+<lb/>symptomatis. In vocibus enim morbi, qui in ore, faucibus,
+<lb/>arteria aspera, pulmone, et thorace sunt, symptomata faciunt;
+<lb/>et turbidas quasdam, tremulas, raucas, clangentesque:. voces
+<pb n="7.79"/>
+<lb/>efficiunt. In aliis vero quibusdam: animalis partibus
+<lb/>fonitus, mmmurilla, stridores aliaque ejusmodi, partim
+<lb/>quidem ob instrumentorum angustiam, vel errabundum motum,
+<lb/>partim ob flatulenta spiritus abundantiam, vel etiam
+<lb/>quibusdam, veI etiam omnibus cum his concurrentibus cientur,
+<lb/>de quibus plenius inter symptomatum causas agetur..-;</p>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+
+
+<p rend="indent">Quae vero pr aeter. naturam vel a corpore
+<lb/>excernuntur, vel retinentur, ea quoque in prunas tres secantor
+<lb/>differentias, quum vel tota substantia, vel qualitate,
+<lb/>vel quantitate ab eo, qui secundum naturam est statu, decedunt.
+<lb/>Sequuntur autem omnino morbos vel ipsos nullo interpofito
+<lb/>affectu, vel aliis symptomatis intercedentibus. Nam
+<lb/>sanguinis profusio toto excretae substantiae genere praeter
+<lb/>naturam est; ea vero vel vulnerato, vel rupto, vel aperto vasis
+<lb/>osculo vel eroso vnse inridit. Porro horum vulneratio, ruptio
+<lb/>eterosio, proprii similarium partiunr morbi sunt; apertio oscuiorum,
+<lb/>organicarum; quae interdum comprehensiva seu
+<pb n="7.80"/>
+<lb/>retentrice facultate: imbecilla; interdum exeretrice iinmoderate
+<lb/>concitata, interdum ambabus simul laesis ortum habeti.
+<lb/>Simili modo fluxus muliebris vel propter jam dictarum
+<lb/>actionum symptomata fiet, vel quod totus sanguis temus
+<lb/>ferosusque sit redditus. Est vero et id symptoma, cujus.
+<lb/>etiam multiplex. habetur ortus. Nam veh facultatis
+<lb/>sanguinem procreantis, vel tenue et scrotum secernentis,
+<lb/>vel excernentis error est; inridere autem aliquando potest,
+<lb/>et retentrice immoderate opus suum urgente, et cute denfata,
+<lb/>et renibus constipatis. Sic et sindones immodice excerni,
+<lb/>vel indebite. retineri, aut propter cutis affectum, aut
+<lb/>propter dictarum facultatum aliquam. aut ipsam humorum
+<lb/>naturam necessario continget. Constat quoque in omnibus.
+<lb/>hujusmodi sermonibus nos disjunctivis uti coniunctionibus;
+<lb/>omnino enim cuique dicturum symptomatum unus quidam est
+<lb/>causae modus, nihil tamen prolnbet duos, tres, et simul
+<lb/>onntes concurrere. Patet autem et dyfuriam, et isclruriam,
+<pb n="7.81"/>
+<lb/>et stranguriam, et hydropem ad matulam vocatum, quem
+<lb/>alii diabeten, aliqui urinae fluorem nominant, ex hoc genere
+<lb/>symptomatum esse. Jam quod eorum, quae praeter
+<lb/>naturam excernuntur, et colores et odores morbos necessario
+<lb/>sequuntur, nihil opus est demonstremus, si modo <hi rend="u">nihil</hi>
+<lb/>ejusmodi citra intemperiem oboriatur. Patet autem et
+<lb/>quod propositum a nobis est, olere esse demonstratum ; omnem
+<lb/>enim symptomatum naturam ut morbi praecedant oportet,
+<lb/>ut fiat nonnunquam symptomatum ordine sibi invicem
+<lb/>succedentium veluti feries quaedam : a morbo quidem ipfo
+<lb/>primum, ab hoc vero secundum, dein rursus post hoc
+<lb/>tertium, ac ab isto deinde quartum. Verum hic accurate
+<lb/>mentem oportet adhibere ac diligenter distinguere a functionibus
+<lb/>animalis symptomata; saepe enim ita similia inter
+<lb/>te funi, ut et symptoma functio putetur et functio fympluma.
+<lb/>Ac nisi quis in hoc fano sit praestitus juuirio, ex
+<lb/>iis, in quibus ipfe fallitur, nostram orationem calumniamtur.
+<lb/>. Si namque naturalium excretionum (sic autem vocant
+<pb n="7.82"/>
+<lb/>eas quae fanis accidunt) vel quantitatem, vel qualitatem, veI
+<lb/>genus nitunt substantiae pro scopo sibi proponat, deinde huc
+<lb/>intuens, symptomata Iudicet, passim aberrabit. Quippe fudor
+<lb/>aliquando multo amplior quam pro naturae modo, vel
+<lb/>alvi dejectio, vel urina aegrotantibus accidit, non solum
+<lb/>nulla actione laeta, sed etiam cum virium robore et pronidentis
+<lb/>animalis. Quamvis enim quaedam toto genere praeter
+<lb/>naturam sint, ut sanguinis per nares prolusio, vel vomitus,
+<lb/>vel sanguinis dejectio, vel haemorrhois, vel aliud ejusmodi,
+<lb/>tamen praeter naturam adhuc non sunt, si in tempore
+<lb/>fiant. Patet autem in tempore dici, fi id, quod molesttmr
+<lb/>est, expurgetur. Manente igitur sententia, quam ab
+<lb/>initio cessimus, quod symptomata actionum laefiones sint;
+<lb/>nihil eorum, quae ad animalis commodum fiunt, ex hoc
+<lb/>genere symptomatum est; opus namque naturae unumquodque
+<lb/>eorum potius est, quam laesio aliqua. Ad alterum forlassis
+<lb/>symptomatum genus, ad affectum nimirum praeter na-r
+<pb n="7.83"/>
+<lb/>turam, aliquis omnia testa reducet; omnino enim divisam
+<lb/>esse in quacunque animalis parte venam aliquam, aut ejus
+<lb/>osculum apertum, quoad sanguinem, quem prius retinuerat,
+<lb/>profundat, hune affectum secundum naturam non esse.
+<lb/>Quanquam hic quoque alui fluorem, aut minae copiam docere
+<lb/>non possit affectibus praeter naturam omnino succedere ;
+<lb/>sanguinis namque profusiones et vomitiones toto genere praeter
+<lb/>naturam esse licet quis: at non ea, quae per ventrem
+<lb/>aut vesicam aut uterum fit, excretio tuto genere praeter naturam
+<lb/>est. Fortasse vero dubitaverit quispiam et de sudoribus,
+<lb/>ceu nec ipsi secundum naturam flet; quippe quod Diodes
+<lb/>etiam docere tentavit. Videtur autem. dura esse opinio
+<lb/>et praeter rerum evidentiam, tametsi eum maxime probabiliter
+<lb/>confirmat. Ac de talibus quidem posthac aliquando.fortasse
+<lb/>agetur; perpauca enim sunt de quibus ambigitur.
+<lb/>De reliquorrun vero symptomatum tota multitudine
+<pb n="7.84"/>
+<lb/>abunde est disputatum, finiendusque jam hic liber est. Si
+<lb/>quis enim exercitatus in concessis fuerit, facilius de lis, quae
+<lb/>in dubio sunt, judicium consequetur.</p>
+</div>
+
+
+</div></div></body>
+  </text>
+</TEI>
