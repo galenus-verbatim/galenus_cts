@@ -93,8 +93,7 @@
     <encodingDesc>
       <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
       <refsDecl n="CTS">
-        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <cRefPattern matchPattern="(.+)" n="work" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     <profileDesc>
@@ -105,16 +104,17 @@
   </teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0530.tlg032.verbatim-lat1">
+
 <pb n="14.295"/>
-<pb n="14.295"/>
-<div type="textpart" subtype="book" n="1">
+<div type="textpart" subtype="work" n="1">
+
+<head>
+  GALENI DE THERIACA AD PAMPHILIANUM.
+</head>
 
 
-</div>
-<div type="textpart" subtype="book" n="2">
-
-
-<p rend="indent">Tibi multoties efflagitanti, clarissime Pamphiliane,
+<p rend="indent">
+  <lb/>Tibi multoties efflagitanti, clarissime Pamphiliane,
 <lb/>theriacae antidoti methodum ac usum ex nobis audire,
 <lb/>quae ex tempore a me dicta sunt, ea neque te
 <lb/>in memoriam revocare neque me ipsum satis explicasse
