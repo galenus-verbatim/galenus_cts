@@ -132,7 +132,8 @@
       <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
       <refsDecl n="CTS">
         <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-		<editorialDecl>
+      </refsDecl>
+      <editorialDecl>
 			<hyphenation eol="none">
 			<p>All end-of-line hyphenation has been removed.</p>
 			</hyphenation>
@@ -140,7 +141,6 @@
 			<p>Symbols used by Kühn edition are maintained as they appear within the printed text.</p>
 			</normalization>
 		</editorialDecl>
-      </refsDecl>
     </encodingDesc>
     <profileDesc>
       <langUsage>
