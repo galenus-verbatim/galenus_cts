@@ -106,7 +106,8 @@
     <encodingDesc>
       <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
       <refsDecl n="CTS">
-        <cRefPattern matchPattern="(.+)" n="work" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     <profileDesc>
@@ -122,7 +123,7 @@
   <text>
     <body>
       <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg086.1st1K-grc1">
-        <div type="textpart" subtype="work" n="3" xml:id="_3">
+        <div type="textpart" subtype="book" n="3" xml:id="_3">
           <div type="textpart" subtype="chapter" n="Prooemium" xml:id="_3.Prooemium">
             <pb n="15.174"/>
             <head>ΓΑΛΗΝΟΥ ΕΙΣ ΤΟ ΠΕΡΙ ΔΙΑΙΤΗΣ
