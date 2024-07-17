@@ -26,8 +26,9 @@
         </respStmt>
         <respStmt>
           <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
+          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName from="2021-11" to="2023-03">Cahal Taaffe</persName>
+</respStmt>
       </titleStmt>
       <publicationStmt>
         <authority>Galenus verbatim, funded by the Institut universitaire de France</authority>
@@ -103,8 +104,9 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change who="Galenus_verbatim">The title of the treatise and all the indentations have been reinstated.</change>
-      <change who="Galenus_verbatim">All the labels have been specified as head with the @type attribute.</change>
+        <change who="Galenus_verbatim" when="2024">All lists have been replaced by tables.</change>
+      <change who="Galenus_verbatim" when="2024-07">The title of the treatise and all the indentations have been reinstated.</change>
+      <change who="Galenus_verbatim" when="2024-07">All the labels have been specified as head with the @type attribute.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -280,64 +282,62 @@
 <label type="head">
 <lb n="8"/>Τὸ διάγραμμα κεῖται.
 </label>
-<list rend="table">
-<!--??? <item rend="header"><list rend="row">…</list></item>-->
-<item>
-  <list rend="row">
-    <item>Τὸ Ἰταλικὸν</item>
-    <item>Ἐλαίου.</item>
-    <item>Οἴνου.</item>
-    <item>Μέλιτος.</item>
-  </list>
-  <list rend="row">
-    <item>κεράμιον ἔχει,</item>
-    <item>℔ οβʹ.</item>
-    <item>℔ πʹ.</item>
-    <item>℔ ρηʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ χοῦς,</item>
-    <item>℔ θʹ.</item>
-    <item>℔ ιʹ.</item>
-    <item>℔ ιγʹ Sʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ ξέστης,</item>
-    <item>℥ ιηʹ·</item>
-    <item>℥ κʹ.</item>
-    <item>℥ κζʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ἡ κοτύλη,</item>
-    <item>℥θʹ.</item>
-    <item>℥ ιʹ.</item>
-    <item>℥ ιγʹ Sʹʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ μέγα μύστρον,</item>
-    <item>℥ γʹ.</item>
-    <item>℥ γʹ. 𐆈 ηʹ.</item>
-    <item>℥ δʹ Sʹʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ μικρὸν μύστρον,</item>
-    <item>𐅻 στʹ.</item>
-    <item>𐅻 στʹ. 𐆈 βʹ.</item>
-    <item>𐅻 θʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ ὀξύβαφον,</item>
-    <item>𐅻 ιηʹ.</item>
-    <item>℥ βʹ. 𐆈 ιβʹ.</item>
-    <item>℥ γʹ. 𐅻 γʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ κύαθος,</item>
-    <item>𐅻 ιβʹ.</item>
-    <item>℥ αʹ Sʹʹ. 𐆈 δʹ.</item>
-    <item>℥ βʹ, 𐅻 βʹ.</item>
-  </list>
-</item></list>
+<table rows="9" cols="4">
+  <row n="9">
+    <cell role="label">Τὸ Ἰταλικὸν</cell>
+    <cell role="label">Ἐλαίου.</cell>
+    <cell role="label">Οἴνου.</cell>
+    <cell role="label">Μέλιτος.</cell>
+  </row>
+  <row n="10">
+    <cell role="label">κεράμιον ἔχει,</cell>
+    <cell role="label">℔ οβʹ.</cell>
+    <cell role="label">℔ πʹ.</cell>
+    <cell role="label">℔ ρηʹ.</cell>
+  </row>
+  <row n="11">
+    <cell role="label">Ὁ χοῦς,</cell>
+    <cell role="label">℔ θʹ.</cell>
+    <cell role="label">℔ ιʹ.</cell>
+    <cell role="label">℔ ιγʹ Sʹ.</cell>
+  </row>
+  <row n="12">
+    <cell role="label">Ὁ ξέστης,</cell>
+    <cell role="label">℥ ιηʹ·</cell>
+    <cell role="label">℥ κʹ.</cell>
+    <cell role="label">℥ κζʹ.</cell>
+  </row>
+  <row n="13">
+    <cell role="label">Ἡ κοτύλη,</cell>
+    <cell role="label">℥θʹ.</cell>
+    <cell role="label">℥ ιʹ.</cell>
+    <cell role="label">℥ ιγʹ Sʹʹ.</cell>
+  </row>
+  <row n="14">
+    <cell role="label">Τὸ μέγα μύστρον,</cell>
+    <cell role="label">℥ γʹ.</cell>
+    <cell role="label">℥ γʹ. 𐆈 ηʹ.</cell>
+    <cell role="label">℥ δʹ Sʹʹ.</cell>
+  </row>
+  <row n="15">
+    <cell role="label">Τὸ μικρὸν μύστρον,</cell>
+    <cell role="label">𐅻 στʹ.</cell>
+    <cell role="label">𐅻 στʹ. 𐆈 βʹ.</cell>
+    <cell role="label">𐅻 θʹ.</cell>
+  </row>
+  <row n="16">
+    <cell role="label">Τὸ ὀξύβαφον,</cell>
+    <cell role="label">𐅻 ιηʹ.</cell>
+    <cell role="label">℥ βʹ. 𐆈 ιβʹ.</cell>
+    <cell role="label">℥ γʹ. 𐅻 γʹ.</cell>
+  </row>
+  <row n="17">
+    <cell role="label">Ὁ κύαθος,</cell>
+    <cell role="label">𐅻 ιβʹ.</cell>
+    <cell role="label">℥ αʹ Sʹʹ. 𐆈 δʹ.</cell>
+    <cell role="label">℥ βʹ, 𐅻 βʹ.</cell>
+  </row>
+</table>
 <p/>
 <p rend="indent">
 <pb n="19.755"/>
@@ -375,7 +375,7 @@
 <lb n="3"/>τε καὶ διδάσκαλοι ταῦτα ἡμῖν διεσάφησαν θαυμαστῶς.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-<lb/><label type="head"><num value="6">Κεφάλαιον ςʹ.</num></label>
+<lb/><label type="head"><num value="6">Κεφάλαιον στʹ.</num></label>
 <label type="head">
 <lb n="5"/><milestone unit="ed2page" n="13.978"/>Περὶ σημείων καὶ χαρακτήρων τῶν ἐν ταῖς συσταθμίαις
 <lb n="6"/>καὶ περὶ σταθμῶν καὶ μέτρων.</label>
@@ -923,64 +923,62 @@
 <lb n="6"/>Τὸ ὀξύβαφον ἔχει κυάθους αʹ Sʹʹ.</p>
 <p rend="indent">
 <lb n="7"/>Ὁ δὲ κύαθος ἔχει χήμας μικρὰς, ἤτοι μύστρα μικρὰ βʹ.</p>
-<list rend="table">
-<!--??? <item rend="header"><list rend="row">…</list></item>-->
-<item>
-  <list rend="row">
-    <item>Ἰταλικὸν</item>
-    <item>Ἐλαίου.</item>
-    <item>Οἴνου.</item>
-    <item>Μέλιτος.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ κεράμιον ἔχει.</item>
-    <item>℔ οβʹ.</item>
-    <item>℔ πʹ.</item>
-    <item>℔ ρηʹ, ἀλ. ρκʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ χοῦς,</item>
-    <item>℔ θʹ.</item>
-    <item>℔ ιʹ.</item>
-    <item>℔ ιγʹ Sʹʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ ξέστης,</item>
-    <item>γο ιηʹ.</item>
-    <item>γο κʹ.</item>
-    <item>γο κζʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ἡ κοτύλη,</item>
-    <item>γο θʹ.</item>
-    <item>γο ιʹ.</item>
-    <item>γο ιγʹ Sʹʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ μέγα μύστρον,</item>
-    <item>γο γʹ.</item>
-    <item>γο γʹ, 𐆈 ηʹ.</item>
-    <item>γο δʹ Sʹʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ μικρὸν μύστρον,</item>
-    <item>𐅻 ιστʹ.</item>
-    <item>𐅻 στʹ 𐆈 βʹ.</item>
-    <item>𐅻 θʹ</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ ὀξύβαφον,</item>
-    <item>𐅻 ιηʹ.</item>
-    <item>𐅻 κʹ.</item>
-    <item>γο γʹ, γʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ κύαθος.</item>
-    <item>γο αʹ Sʹʹ.</item>
-    <item>𐅻 ιγʹ 𐆈 αʹ.</item>
-    <item>𐅻 ιηʹ.</item>
-  </list>
-</item></list>
+<table rows="9" cols="4">
+  <row n="8">
+    <cell role="label">Ἰταλικὸν</cell>
+    <cell role="label">Ἐλαίου.</cell>
+    <cell role="label">Οἴνου.</cell>
+    <cell role="label">Μέλιτος.</cell>
+  </row>
+  <row n="9">
+    <cell role="label">Τὸ κεράμιον ἔχει.</cell>
+    <cell role="label">℔ οβʹ.</cell>
+    <cell role="label">℔ πʹ.</cell>
+    <cell role="label">℔ ρηʹ, ἀλ. ρκʹ.</cell>
+  </row>
+  <row n="10">
+    <cell role="label">Ὁ χοῦς,</cell>
+    <cell role="label">℔ θʹ.</cell>
+    <cell role="label">℔ ιʹ.</cell>
+    <cell role="label">℔ ιγʹ Sʹʹ.</cell>
+  </row>
+  <row n="11">
+    <cell role="label">Ὁ ξέστης,</cell>
+    <cell role="label">γο ιηʹ.</cell>
+    <cell role="label">γο κʹ.</cell>
+    <cell role="label">γο κζʹ.</cell>
+  </row>
+  <row n="12">
+    <cell role="label">Ἡ κοτύλη,</cell>
+    <cell role="label">γο θʹ.</cell>
+    <cell role="label">γο ιʹ.</cell>
+    <cell role="label">γο ιγʹ Sʹʹ.</cell>
+  </row>
+  <row n="13">
+    <cell role="label">Τὸ μέγα μύστρον,</cell>
+    <cell role="label">γο γʹ.</cell>
+    <cell role="label">γο γʹ, 𐆈 ηʹ.</cell>
+    <cell role="label">γο δʹ Sʹʹ.</cell>
+  </row>
+  <row n="14">
+    <cell role="label">Τὸ μικρὸν μύστρον,</cell>
+    <cell role="label">𐅻 ιστʹ.</cell>
+    <cell role="label">𐅻 στʹ 𐆈 βʹ.</cell>
+    <cell role="label">𐅻 θʹ</cell>
+  </row>
+  <row n="15">
+    <cell role="label">Τὸ ὀξύβαφον,</cell>
+    <cell role="label">𐅻 ιηʹ.</cell>
+    <cell role="label">𐅻 κʹ.</cell>
+    <cell role="label">γο γʹ, γʹ.</cell>
+  </row>
+  <row n="16">
+    <cell role="label">Ὁ κύαθος.</cell>
+    <cell role="label">γο αʹ Sʹʹ.</cell>
+    <cell role="label">𐅻 ιγʹ 𐆈 αʹ.</cell>
+    <cell role="label">𐅻 ιηʹ.</cell>
+  </row>
+</table>
 
 <pb n="19.775"/>
 </div>
@@ -1153,7 +1151,7 @@
 <lb n="3"/>Τοῦ ὀρόβου μέγεθος χαλκοῦς βʹ.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-<lb/><label type="head"><num value="16">Κεφάλαιον ιςʹ.</num></label>
+<lb/><label type="head"><num value="16">Κεφάλαιον ιστʹ.</num></label>
 <label type="head">
 <lb n="5"/><milestone unit="ed1page" n="4.469"/>Περὶ σημείων τῶν μέτρων καὶ σταθμῶν.
 </label>
