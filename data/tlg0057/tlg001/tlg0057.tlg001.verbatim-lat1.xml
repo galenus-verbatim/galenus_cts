@@ -12,15 +12,15 @@
         </author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
         <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
-        <funder ref="https://humanites-biomedicales.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
           <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
@@ -28,22 +28,25 @@
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-<persName from="2021-11" to="2023-03">Cahal Taaffe</persName>
-</respStmt>
-        <respStmt>
-          <resp when="2024">Digital Editor, Galenus verbatim</resp>
-          <persName from="2024-02-19" to="2024-07-19">Lucas Lemperriere, Université de Rouen</persName>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Cahal Taaffe</persName>
         </respStmt>
+        <respStmt>
+          <resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+          <persName>Lucas Lemperriere, Université de Rouen</persName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+        </respStmt>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
       </titleStmt>
-      <editionStmt resp="Galenus_verbatim">
+      <editionStmt resp="#Galenus_verbatim">
         <edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
           <date type="upload" when="2024">2024</date>
         </edition>
         <respStmt>
           <resp></resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
+         <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
         </respStmt>
         <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
       </editionStmt>
@@ -83,15 +86,54 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
+      <editorialDecl>
+        <correction>
+          <p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+        </correction>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation is silently removed where appropriate.</p>
+        </hyphenation>
+        <interpretation>
+          <p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+        </interpretation>
+        <interpretation>
+          <p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections have been marked up by a &lt;num&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Verse lines are marked up by an &lt;l&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Tables are marked up by a &lt;table&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Italics are marked up by a &lt;hi&gt; element.</p>
+        </interpretation>
+        <normalization>
+          <p>Symbols used by Kühn edition are maintained as they appear within the printed text.</p>
+        </normalization>
+      </editorialDecl>
     </encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
       </langUsage>
     </profileDesc>
-    <revisionDesc>
-      <change who="Galenus_verbatim" when="2024">All the indentations and linegroups have been restored.</change>
-    </revisionDesc>
+    
   </teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg001.verbatim-lat1">

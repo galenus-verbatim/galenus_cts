@@ -10,7 +10,7 @@
         <author xml:lang="lat">
           <name ref="http://viaf.org/viaf/44299175">Galenus</name>
         </author>
-        <editor>Kühn, Karl Gottlob</editor>
+        <editor role="editor">Kühn, Karl Gottlob</editor>
         <funder ref="https://www.mellon.org/">Andrew W. Mellon Foundation</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts</resp>
@@ -44,7 +44,7 @@
           <persName>Bruce Robertson</persName>
         </respStmt>
       </titleStmt>
-      <editionStmt resp="Galenus_verbatim">
+      <editionStmt resp="#Galenus_verbatim">
 		<edition n="1">Revised edition of the originally published versions of the electronic texts.
 		  <date type="revision" when="2024">2024</date>
 		</edition>
@@ -55,12 +55,12 @@
 		  The editions other than that of Kühn were given milestones indicating the corresponding Kühn volume and pages when they were missing. We also added elements of structuration that were present in Kühn's edition 
 		  but were missing in the TEI, mainly the division of chapters into sections in some treatises, as well as the header for those sections. The text numbered tlg0057.tlg096 that was separately edited was reinserted
 		  in the tlg0057.tlg095 in accordance with its location within Kühn's edition.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
+         <orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
           <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
@@ -68,15 +68,17 @@
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-<persName from="2021-11" to="2023-03">Cahal Taaffe</persName>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Cahal Taaffe</persName>
 </respStmt>
         <respStmt>
-          <resp when="2024">Digital Editor, Galenus verbatim</resp>
-          <persName from="2024-02-19" to="2024-07-19">Lucas Lemperriere, Université de Rouen</persName>
+          <resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+          <persName>Lucas Lemperriere, Université de Rouen</persName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
       </editionStmt>
       <publicationStmt>
         <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
@@ -86,6 +88,7 @@
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
+        <!-- chercher la date initiale sur le dépôt 1st1K -->
         <date>2023</date>
       </publicationStmt>
       <sourceDesc>
@@ -144,32 +147,59 @@
         <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
       <editorialDecl>
-			<hyphenation eol="none">
-			<p>All end-of-line hyphenation has been removed.</p>
-			</hyphenation>
-			<normalization method="none">
-			<p>Symbols used by Kühn edition are maintained as they appear within the printed text.</p>
-			</normalization>
-		</editorialDecl>
+        <correction>
+          <p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+        </correction>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation is silently removed where appropriate.</p>
+        </hyphenation>
+        <interpretation>
+          <p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+        </interpretation>
+        <interpretation>
+          <p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections have been marked up by a &lt;num&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Verse lines are marked up by an &lt;l&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Tables are marked up by a &lt;table&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+        </interpretation>
+        <normalization>
+          <p>Symbols used by Kühn edition are maintained as they appear within the printed text.</p>
+        </normalization>
+      </editorialDecl>
     </encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
-        <language ident="lat">Latin</language>
       </langUsage>
     </profileDesc>
 	 <revisionDesc>
-		  <change who="Galenus_verbatim" when="2023-xx-xx">Finished all revisions for publication on the Galenus verbatim website.</change>
-		  <change who="Galenus_verbatim">Added bibliographical information on the editions referred to in Kühn's edition as "Bas." and "Chart."</change>
-		  <change who="Galenus_verbatim">Corrected and added milestone tags for the missing page changes of both Basel and Chartier editions when they were missing.</change>
-		  <change who="Galenus_verbatim">Punctual correction to the digitization of Kühn's text.</change>
-		  <change who="Galenus_verbatim">Correction and additions of the sections div level when they were missing to better reflect the structure of Kühn's edition.</change>
-		  <change who="Galenus_verbatim">Modification to the subtype of some div to better reflect Kühn's structure.</change>
-		  <change who="Galenus_verbatim">Replaced abbreviations introduced by the initial transcription by the proper symbols used by Kühn edition.</change>
-		  <change who="Galenus_verbatim">Added line number.</change>
-		  <change who="Galenus_verbatim">Added head tags for the name of chapter and sections where they were missing.</change>
-		  <change who="Galenus_verbatim">Revised the Hippocratic quotations reference to the precise text in accordance with the URN.CTS guidelines when they were present.</change>
-	    <change who="Galenus_verbatim" when="2024">All the indentations have been restored.</change>
+		  <change who="#Galenus_verbatim" when="2023">First round of revisions for publication on the Galenus verbatim website.</change>
+	   <change who="#Galenus_verbatim" when="2023">Added bibliographical information on the editions referred to in Kühn's edition as "Bas." and "Chart."</change>
+	   <change who="#Galenus_verbatim" when="2023">Corrected and added milestone tags for the missing page changes of both Basel and Chartier editions when they were missing.</change>
+	   <change who="#Galenus_verbatim" when="2023">Punctual correction to the digitization of Kühn's text.</change>
+	   <change who="#Galenus_verbatim" when="2023">Correction and additions of the sections &lt;div&gt; level when they were missing to better reflect the structure of Kühn's edition.</change>
+	   <change who="#Galenus_verbatim" when="2023">Modification to the subtype of some &lt;div&gt; to better reflect Kühn's structure.</change>
+	   <change who="#Galenus_verbatim" when="2023">Added &lt;label&gt; elements for all headings of chapters and sections.</change>
+	   <change who="#Galenus_verbatim" when="2023">Added &lt;l&gt; elements for verse lines and &lt;lg&gt; elements for linegroups.</change>
+	   <change who="#Galenus_verbatim" when="2023">Replaced abbreviations introduced by the initial transcription by the proper symbols used by Kühn edition.</change>
+	   <change who="#Galenus_verbatim" when="2023">Added line number.</change>
+	   <change who="#Galenus_verbatim" when="2024">Labels featuring a &lt;num&gt; element with @value attribute for the name of chapter and sections have been restored.</change>
+	   <change who="#Galenus_verbatim" when="2024">All the indentations have been restored.</change>
 	  </revisionDesc>
   </teiHeader>
   <text>
