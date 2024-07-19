@@ -115,7 +115,7 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-      <editorialDecl>
+      <editorialDecl resp="#Galenus_verbatim">
         <correction>
           <p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
         </correction>
@@ -160,6 +160,7 @@
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
     
