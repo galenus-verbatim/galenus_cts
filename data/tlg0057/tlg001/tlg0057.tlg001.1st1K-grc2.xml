@@ -51,14 +51,14 @@
         <respStmt>
           <!-- paragraphe à vérifier pour chaque édition -->
           <resp>To reuse this edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> 
-            repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We changed the naming schemes of the milestones indicating the corresponding Kühn pages in this edition. 
-            The editions other than that of Kühn were given milestones indicating the corresponding Kühn volume and pages when they were missing.</resp>
-          <orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
+            repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We changed the naming schemes of the milestones indicating the corresponding Kühn pages or added such milestones when they were missing. The layout of the original edition was marked up by &lt;pb&gt; and &lt;lb&gt; elements when they were missing.
+            We also added elements specific to critical editions, that were present in this edition but were missing in the TEI, mainly chevrons and hooks. For details, see the revisionDesc section.</resp>
+          <orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
           <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France</orgName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
@@ -73,6 +73,12 @@
         <respStmt>
           <resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
           <persName>Lucas Lemperriere, Université de Rouen</persName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+        </respStmt>
+        <!-- à vérifier pour chaque édition -->
+        <respStmt>
+          <resp from="2023" to="2024">Text verification and correction, Galenus verbatim</resp>
+          <persName></persName>
           <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
@@ -135,7 +141,7 @@
         </hyphenation>
         <!-- à vérifier pour chaque édition -->
         <interpretation>
-          <p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+          <p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type is systematically specified with a rend value.</p>
         </interpretation>
         <!-- à vérifier pour chaque édition -->
         <interpretation>
@@ -147,7 +153,7 @@
         </interpretation>
         <!-- à vérifier pour chaque édition -->
         <interpretation>
-          <p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections have been marked up by a &lt;num&gt; element.</p>
+          <p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
         </interpretation>
         <!-- à vérifier pour chaque édition -->
         <interpretation>

@@ -20,7 +20,7 @@
         </respStmt>
         <respStmt>
           <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France</orgName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
@@ -37,6 +37,11 @@
           <persName>Lucas Lemperriere, Université de Rouen</persName>
           <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
+        <respStmt>
+          <resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+          <persName>Fabrice Robert</persName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+        </respStmt>
         <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
         <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
       </titleStmt>
@@ -44,21 +49,16 @@
         <edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
           <date type="upload" when="2024">2024</date>
         </edition>
-        <respStmt>
-          <resp></resp>
-         <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
-        </respStmt>
-        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
       </editionStmt>
       <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg001.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+        <date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
@@ -70,14 +70,43 @@
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
               <biblScope unit="vol">1</biblScope>
-              
-              
               <biblScope unit="pp" from="1" to="39">1-39</biblScope>
               <date>1821</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x01">BIU Santé, Medica</ref></biblStruct>
+        <biblStruct>
+          <monogr xml:id="Basel">
+            <title xml:lang="lat">Γαληνοῦ Ἅπαντα. Galeni Pergameni Opera omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Camerarius, Joachim</editor>
+            <editor>Fuchs, Leonhart</editor>
+            <editor>Gemusaeus, Hieronymus</editor>
+            <imprint>
+              <publisher>Cratander</publisher>
+              <pubPlace>Basel</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="1" to="6">1-6</biblScope>
+              <date>1538</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00039x01">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr xml:id="Chartier">
+            <title xml:lang="lat">Magni Hippocratis Coi, et Claudii Galeni Pergameni archiatrΩn uniuersa quae extant</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor>Chartier, René</editor>
+            <imprint>
+              <publisher>[s.n.]</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">2</biblScope>
+              <biblScope unit="pp" from="3" to="15">3-15</biblScope>
+              <date>1638</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x02">BIU Santé, Medica</ref>
+        </biblStruct>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -103,7 +132,7 @@
           <p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
         </interpretation>
         <interpretation>
-          <p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections have been marked up by a &lt;num&gt; element.</p>
+          <p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
         </interpretation>
         <interpretation>
           <p>Verse lines are marked up by an &lt;l&gt; element.</p>
@@ -124,7 +153,7 @@
           <p>Italics are marked up by a &lt;hi&gt; element.</p>
         </interpretation>
         <normalization>
-          <p>Symbols used by Kühn edition are maintained as they appear within the printed text.</p>
+          <p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
         </normalization>
       </editorialDecl>
     </encodingDesc>
