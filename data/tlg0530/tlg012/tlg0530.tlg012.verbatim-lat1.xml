@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">Introductio seu medicus</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0530.tlg012.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Pseudo-Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -54,7 +75,6 @@
               <date>1827</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x14">BIU Santé, Medica</ref></biblStruct>
         <biblStruct>
           <monogr corresp="Basel">
@@ -96,13 +116,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0530.tlg012.verbatim-lat1">
 
@@ -111,10 +174,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENO ASCRIPTA INTRODUCTIO
 <lb/>SEU MEDICUS.</head>
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Quomodo inventa sit medicina</hi>.</label> Inventiones
+<lb/><label type="head"><num value="1">Cap. I.</num></label> <label type="head"><hi rend="italic">Quomodo inventa sit medicina</hi>.</label> Inventiones
 <lb/>artium Graeci vel deorum filiis vel quibusdam
 <lb/>eorum propinquis, quibus dii artem primi communicaverunt
 <lb/>omnem, referunt acceptas; hac igitur ratione medicluant
@@ -130,7 +191,7 @@
 <lb/>sane praeter herbas aliam quoque medicamentorum
 <lb/>rationem in usu fuisse Humerus hunc in modum
 <lb/>testatur :</p>
-<lg>
+<lg rend="italic">
  <l>Fertilis Aegyptus rerum, medicamina mixta,</l>
 <l>optima multa, simul deterrima plurima, gignit.</l></lg>
 <p rend="nonindented">
@@ -158,10 +219,8 @@
 <lb/>apud Graecos. medicinam in lucem protulit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Quae medicinae principia</hi>.</label> Principia
+<lb/><label type="head"><num value="2">Cap. II.</num></label> <label type="head"><hi rend="italic">Quae medicinae principia</hi>.</label> Principia
 <lb/>medicinae tria funi, unum inventionis, alterum constitutionis,
 <lb/>tertium interpretationis. Inventionis igitur medicinae,
 <lb/>ut simpliciter dicam, vetustissimum plane citraque
@@ -194,10 +253,8 @@
 <lb/>cognitio principium dicitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic"> Quot saetae medicorum, quaeque earum
+<lb/><label type="head"><num value="3">Cap. III.</num></label> <label type="head"><hi rend="italic"> Quot saetae medicorum, quaeque earum
 <lb/>notae</hi>.</label> Sectae medicorum tres sunt, rationalis, empirica
 <lb/>et methodica. Rationalis naturae rationem praebet, morhorum
 <lb/>causas inquirit et signis ad illarum inventionem
@@ -297,10 +354,8 @@
 <lb/>esse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Qui trium sectarum principes extiterint</hi>.</label>
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> <label type="head"><hi rend="italic">Qui trium sectarum principes extiterint</hi>.</label>
 <lb/>Rationalis tectae et auctor et princeps Hippocrates Cous
 <lb/>fuit. Post hunc Diocles Carystius, Praxagoras Cous, Herophilus
 <lb/>Chalcedonius, Erasistratus Chius, Mnesitheus ;
@@ -325,10 +380,8 @@
 <lb/>Apameus Syrius.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Medicina scientiane sit, an ars</hi>.</label> Rationales
+<lb/><label type="head"><num value="5">Cap. V.</num></label> <label type="head"><hi rend="italic">Medicina scientiane sit, an ars</hi>.</label> Rationales
 <lb/>aliqui, e quorum numero est etiam Erasistratus, medicinam
 <lb/>partim srientiam, cujusmodi est causarum notitia,
 <lb/>item naturae inspectio: partim coniecturam, ut curationem
@@ -374,9 +427,8 @@
 <lb/>videre est.
 </p></div>
 <div type="textpart" subtype="chapter" n="6">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic"> Quid. sit medicina</hi>.</label> Definitionibus rationales
+<p rend="indent">
+  <lb/><label type="head"><num value="6">Cap. VI.</num></label>  <label type="head"><hi rend="italic">Quid. sit medicina</hi>.</label> Definitionibus rationales
 <lb/>usi sunt e t descriptionibus empirici: de quibus
 <lb/>quaestionem instituere philosophis suium convenit; enimvero
 <lb/>veteres etiam medici hoc modo medicinam simpliciter-
@@ -424,9 +476,8 @@
 <lb/>salubria nec insalubria funi,</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic"> Quot partes medicinae</hi>.</label> Partes mesucinae
+<p rend="indent">
+  <lb/><label type="head"><num value="7">Cap. VII.</num></label> <label type="head"><hi rend="italic">Quot partes medicinae</hi>.</label> Partes mesucinae
 <lb/>principes sunt physiologia, aetiologia, patbologia,
 <lb/>diaeta sanorum; semeiotice, therapeutice. Athenaeus pro.
 <lb/>femeiotice materiam constituit, quae in therapeutice reperitur,
@@ -458,9 +509,8 @@
 <lb/>partes dividitur, in diaetam, chirurgiam et pharmaciae,.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">An medicinae divisio in quinque partes
+<p rend="indent">
+  <lb/><label type="head"><num value="8">Cap. VIII.</num></label> <label type="head"><hi rend="italic">An medicinae divisio in quinque partes
 <lb/>necestaria sit</hi>.</label> Tractare igitur res quidem naturales necestarium
 <lb/>est, quoniam haud possibile est quae praeter naturam
 <lb/>sunt, illum cognoscere, qui non prius noverit ea
@@ -550,10 +600,8 @@
 <lb/>nuscuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
- <p rend="indent">
-  <lb/><label type="head"><hi rend="italic">De elementis hominem constituentibus</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> <label type="head"><hi rend="italic">De elementis hominem constituentibus</hi>.</label>
 <lb/>Constat igitur homo, quemadmodum docuit Hippocrates in
 <lb/>libro donatura humana, ex primis mundi elementis:- ex
 <lb/>igne, aereo aqua, terra, non quod ex his ipsis, sed proportione
@@ -569,7 +617,7 @@
 <lb/>rum natura et ex praedictis in eadem finit. Unde singula
 <lb/>originem nacta sunt; eo quoque revertuntur, quemadmodum
 <lb/>Humerus inquit,</p>
- <lg>
+ <lg rend="italic">
 <l>Vos aqua, vos tellus cunctos aliquando tenebit.</l>
  </lg>
 <p rend="nonindented">
@@ -635,10 +683,8 @@
 <lb/>attribuant, nuncupantur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Exteriorum corporis partium appellationes</hi>.</label>
+<lb/><label type="head"><num value="10">Cap. X.</num></label> <label type="head"><hi rend="italic">Exteriorum corporis partium appellationes</hi>.</label>
 <lb/>He externis corporis partibus seu particulis et
 <lb/>quae earum nomina sint, primus Aristoteles docuisse simul
 <lb/>ac conscripsisse creditus est. Temporis autem processu medicis
@@ -786,7 +832,7 @@
 <lb/>usque spina dicitur. Hujus partem, quae recto tramite
 <lb/>sub dorio habetur inscalptam Humerus nominavit,
 <lb/>manifesto aliis dictionibus exponens,</p>
- <lg>
+ <lg rend="italic">
    <l>— <foreign xml:lang="grc">κατ ἄκνηστιν μέσα νῶτα</foreign>,</l>
  </lg>
  <p rend="nonindented">
@@ -824,10 +870,8 @@
 <lb/>ordine conveniant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Partium interiorum anatome</hi>.</label> Anatome
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> <label type="head"><hi rend="italic">Partium interiorum anatome</hi>.</label> Anatome
 <lb/>abusive quidem dicitur etiam exteriorum corporis partium
 <lb/>et particularum commemoratio, quae verbis uniuscujusque
 <lb/>ipsorum naturalem situm, ordinem, usum, quem animanti
@@ -1039,10 +1083,8 @@
 <lb/>spinae inseritur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">ne osieolqgm</hi>.</label> ossium duplex compositio,
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> <label type="head"><hi rend="italic">ne osieolqgm</hi>.</label> ossium duplex compositio,
 <lb/>una ad motum accommodata nomen articuli habet:
 <lb/>altera ad stabilitatem, synarthrosis appellaturi Hujus autem
 <lb/>tres sunt species, sutura, symphysis et gemphosis.
@@ -1151,12 +1193,10 @@
 <lb/>ex iis rotunda, simul et .nervea cartilaginosaque.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
- <p rend="indent">
-  <lb/><label type="head"><hi rend="italic">De humoribus, facultatibus</hi>, morbis,
+<p rend="indent">
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> <label type="head"><hi rend="italic">De humoribus, facultatibus, morbis,
 <pb n="14.726"/>
-<lb/><hi rend="italic">eorum differentiis, causis ac curationibus</hi>.</label> Humores
+<lb/>eorum differentiis, causis ac curationibus</hi>.</label> Humores
 <lb/>corporis ex prima. generatione quatuor, commixti invicem
 <lb/>et contemperati sunt corpori. Exuperat autem alius in
 <lb/>alio magis loco, sanguis in corde, pituita in capite; flava
@@ -1444,7 +1484,7 @@
 <lb/>de omnibus suspiciosi, hominum consuetudinem
 <lb/>oderunt, solitudinibus gaudent, quemadmodum Bellerophontes
 <lb/>a Poeta describitur.</p>
-<lg>
+<lg rend="italic">
  <l>Qui miser in campis. errabat salus Aleis, .</l>
  <l>ipsa suum cor edens, hominum .vestigia vitans.</l></lg>
  <p rend="nonindented">
@@ -1523,7 +1563,7 @@
 <lb/>potui datur, dum consistit: loca sicciora conveniunt Superior
 <lb/>Aegyptus et Libya maxime huic malo medentur.
 <lb/>Hippocrates tabis cuiusdam coxendicum meminit, Ischiadicam
-<lb/>vocans, qua in suppurationibus circa os saerum accrdentibus
+<lb/>vocans, qua in suppurationibus circa os sacrum accrdentibus
 <lb/>corpora colliquescunt. similiter alterius renum
 <lb/>nephriticae. Porro jecinoris et lienis inflammationes si in
 <lb/>pus vertuntur et ipsae mediocriter corpus consumunt. At
@@ -1790,10 +1830,8 @@
 <lb/>idonea, tum smegmata foris adhibita.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De optimae purgationis compositione</hi>.</label>
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> <label type="head"><hi rend="italic">De optimae purgationis compositione</hi>.</label>
 <lb/>Componitur autem ad internos humores purgans medica-.
 <lb/>mentum ex deobstmentibus, incidentibus, attenuantibus,
 <lb/>vias reserantibus, impellentibus, purgantibus et edomantisbus
@@ -1843,10 +1881,8 @@
 <lb/>a nobjs demonstratum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De curationis per .medicamenta divisione</hi>.</label>
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> <label type="head"><hi rend="italic">De curationis per .medicamenta divisione</hi>.</label>
 <lb/>Pharmacia duplex esu .Prima. .interior es. morbos
 <lb/>curat, qua potissimum victus ratione sanans utitur: altera
 <lb/>exteriores, citraque illam manu nihil peragitur. Medicaminum
@@ -1952,10 +1988,8 @@
 </div>
 <pb n="14.767"/>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De oculorum aspectibus</hi>.</label> affectus,
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> <label type="head"><hi rend="italic">De oculorum aspectibus</hi>.</label> affectus,
 <lb/>qui totum oculum exercent, hi sunt, perturbatio, lsppitudo,
 <lb/>epiphora, inflammatio, oedema, inflatio, durities, chymosis,
 <lb/>carbunculus, strabismus, convulsio, palpitatio, myopiasis,
@@ -2146,10 +2180,8 @@
 <lb/>interdum in oculis factum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De exterioribus capitis assertivus</hi>.</label>
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> <label type="head"><hi rend="italic">De exterioribus capitis assertivus</hi>.</label>
 <lb/>Circa capitis exteriores partes consistunt ii, qui inter longos
 <lb/>ascripti non sunt. Calvariae autem sracturarum disserentiae
 <lb/>quinque existunt, rhogme, engisoma, ecpiesma,
@@ -2193,10 +2225,8 @@
 <lb/>dagra, fistulae. Calcem squamae.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De cutis affectibus</hi>.</label> Cutem totiusque
+<lb/><label type="head"><num value="18">Cap. XVIII.</num></label> <label type="head"><hi rend="italic">De cutis affectibus</hi>.</label> Cutem totiusque
 <lb/>corporis partes exagitant lepra, plura, alphos albus,
 <lb/>alphos niger, fauce, impetigo simplex, impetigo fera, dracontrusis,
 
@@ -2219,10 +2249,8 @@
 <lb/>rheumatismi, distentio commissurarum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De chirurgiae speciebus</hi>.</label> Chirurgia
+<lb/><label type="head"><num value="19">Cap. XIX.</num></label> <label type="head"><hi rend="italic">De chirurgiae speciebus</hi>.</label> Chirurgia
 <lb/>est alieni, ut proprie vocant, per incisiones concinnationesque
 <lb/>cum via quadam et ratione ablatio ; ad haec vul- .
 <pb n="14.781"/>
@@ -2425,10 +2453,8 @@
 <lb/>sicque consuere lanae filo.</p>
 </div>
 <div type="textpart" subtype="chapter" n="20">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic"> De artubus conpactis partibusque a
+<lb/><label type="head"><num value="20">Cap. XX.</num></label> <label type="head"><hi rend="italic"> De artubus conpactis partibusque a
 <lb/>suo articulo dimotis</hi>.</label> Fracti artus ex distentione quidem
 <lb/>in rectum restituuntur: ex deligatum callo .obducuntur.
 <lb/>Calvariae ergo fractiones quot modis accidant et

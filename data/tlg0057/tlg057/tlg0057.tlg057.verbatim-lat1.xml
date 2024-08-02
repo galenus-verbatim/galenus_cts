@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De locis affectis</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg057.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -54,7 +75,6 @@
               <date>1824</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x08">BIU Santé, Medica</ref></biblStruct>
         <biblStruct>
           <monogr corresp="Basel">
@@ -96,13 +116,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg057.verbatim-lat1">
 <pb n="8.1"/>
@@ -112,10 +175,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE LOCIS AFFECTIS
 <lb/>LIBER I.</head>
-
-
 <p rend="indent">
- <lb/>Locos nominant partes corporis non recentiores
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Locos nominant partes corporis non recentiores
 <lb/>solum, sed et veterum medicorum non pauci, ac
 <lb/>affectus ipsorum dignoscere student, propterea quod pro ipsurum
 <lb/>differentiis curationem quoque immutari contingit.
@@ -458,10 +519,8 @@
 <lb/>aggrediar.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
-<lb/>Omnium corporis animantis sanctionum
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Omnium corporis animantis sanctionum
 <lb/>unicuique para quaedam propria est, per quam editur; ac
 <lb/>proinde functionem laedi necesse est, parte aptam efficiente
 <lb/>aliquo modo affecta. Interdum vero accidit adeo facile morbum
@@ -601,7 +660,7 @@
 <lb/>appareant, argumento est gutta longo temporis tractu
 <lb/>saxum excavans, de qua recte carmen hoc proditum esse
 <lb/>creditur,</p>
-<lg><l>Gutta cavat lapidem.saepe cadentis aquae.</l></lg>
+<lg rend="italic"><l>Gutta cavat lapidem.saepe cadentis aquae.</l></lg>
 <p rend="nonindented">
  <lb/>Neque tamen uno vel duobus vel tribus vel quatuor
 <lb/>aquae ictibus in saxum incidentibus, quando ne centesimo
@@ -655,10 +714,8 @@
 <lb/>disseretur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Nunc vero rursus ad principium sermonem
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Nunc vero rursus ad principium sermonem
 <lb/>reducamus, in singulis partibus studentes invenire signa
 <lb/>indicantia tum eos, qui in ipsarum propria substantia consistunt,
 <lb/>affectus, tum illos, qui ipsis ut organis insidenti
@@ -752,10 +809,8 @@
 </div>
 <pb n="8.35"/>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Verum neque in his negligentius versari
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Verum neque in his negligentius versari
 <lb/>decet, sed mentem accurate adhibentes ( quae ad logicam
 <lb/>quaestionem. reducuntur, privatim praetermittere, quae vero
 <lb/>ad affectae sedis dignotionem omiserant, accurate inspicere;
@@ -931,10 +986,8 @@
 <lb/>sunt admixta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Atque saepenumero ex mto signo simul et
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Atque saepenumero ex mto signo simul et
 <lb/>Ioci et affectus proditio est, aut suci una et causae; veluti
 <lb/>locorum indicatio et ab actione laesa et exoretis et situ et
 <lb/>doloris proprietate et propriis symptomatis sumitur; affectuum
@@ -1013,10 +1066,8 @@
 <lb/>duos affectus, aut duas partes affectas, indicere possint.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Huic autem libro in praesentia finem imponere
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Huic autem libro in praesentia finem imponere
 <lb/>statui, si de propriis affectibus et iis qui per conscnsuin
 <lb/>eveniunt, .aliquid addidero, admonens in primis,
 <lb/>quod affectus, qui a reliquis melicis primarii vocantur,
@@ -1344,10 +1395,8 @@
 <lb/>continent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Atque hac in re plurimum disserunt naturalia
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Atque hac in re plurimum disserunt naturalia
 <lb/>ab animalibus instrumentis; .siquidem naturalibus innatini
 <lb/>actionis facultatem esse, animalibus vero a principio,
 <lb/>veluti lumen a sole, defluere ostensum est. Ergo ut magneti
@@ -1387,10 +1436,8 @@
 
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE LOCIS AFFECTIS LIBERA II.</head>
-
-
 <p rend="indent">
- <lb/>Scopus est, ut hortatur semper Erasistratus,
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Scopus est, ut hortatur semper Erasistratus,
 <lb/>exercere mentem cum in aliis arsis operibus, tum vero
 <lb/>in ea, quam nunc proposuimus, affectorum Iocorum dignotione.
 <lb/>Sunt autem circa eam tres exercitationis modi; primus
@@ -1412,10 +1459,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Itaque primo, quandoquidem in hoc genere
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Itaque primo, quandoquidem in hoc genere
 <lb/>copiosior est Archigenes, ex dolorum differentiis locos affectos
 <lb/>significari existimans, exacte de iis considerandum est.
 <lb/>Stupidum dolorem in neruia fieri dicit, sed plane peccat.
@@ -1500,10 +1545,8 @@
 </div>
 <pb n="8.75"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Atqui citra dolorem pulsare adsutas ni
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Atqui citra dolorem pulsare adsutas ni
 <lb/>ferias pertinet, animali bene valente, ubi vero ingens oborta
 <lb/>est inflammatio, vel erysipelas, vel abscessus, arteriarum
 <lb/>pulsum cum dolore sentimus, quum antea per bonam eorporis
@@ -1567,10 +1610,8 @@
 <lb/>contactu premantur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>At vero neque in hepate neque in renibus
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> At vero neque in hepate neque in renibus
 <lb/>unquam hujusmodi pulsus apparet, quoniam nec in
 <lb/>illis nervi per tota viscera disperguntur, sicuti nec in pulmone.
 <lb/>Quocirca gravitatis in ipsis sensus fit, quum tumorum
@@ -1592,10 +1633,8 @@
 <lb/>corporum in hujusmodi affectibus separari potest.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Caeteri vero dolores quibusdam partibus
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Caeteri vero dolores quibusdam partibus
 <lb/>insunt, quibusdam non insunt. Igitur meminisse eorum
 <lb/>semper oportet, ac cognoscentes singulorum locorum naturatu,
 <lb/>intueri, quis unicuique modus doloris peculiariter con-.
@@ -1728,10 +1767,8 @@
 <lb/>apud omnes fere melicos in confesso est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Non tamen dentium stupori simile quid
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Non tamen dentium stupori simile quid
 <lb/>dolor membranoforum corporum habet, ut Archigenes scripsit ;.
 <lb/>scimus enim ori duntaxat, neque tuti tamen accidere,
 <lb/>sed dentibus gingivisque, affectum quendam, quem haemodiam
@@ -1767,10 +1804,8 @@
 <lb/>in vestigaveris iuveuire non potui.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Itaque quid in ipsis manifestum sit, ut .
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Itaque quid in ipsis manifestum sit, ut .
 <lb/>paulo ante in torpido dolore, speculemur. Nam justum
 <lb/>est, nos obsecuta nomina. in dubio derelicta inutilia reputare,
 <lb/>perinde ac si nunquam scripta luissent; quae vero- clara sunt,
@@ -1802,10 +1837,8 @@
 <lb/>differentias ut poterant enarrarent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Ut igitur studiosi aliquid uberius a nobis
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Ut igitur studiosi aliquid uberius a nobis
 <lb/>consequantur, proposita ejus oratione ipsa, electisque iis sulis,
 <lb/>quae vera .simul sunt et manifesta, eos qui in arie exercentor,
 <lb/>adhortabar, ut iis habeant fidem; quae vero .secus
@@ -2184,10 +2217,8 @@
 <lb/>sermone Archigenes ait.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Ad alium vero transeamus, qui et ipsa
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Ad alium vero transeamus, qui et ipsa
 <lb/>ex dolorum differentia affectarunt partium dignotionem docet;
 <lb/>est autem dictio hujusmodi : <hi rend="italic">Hepatis vero dolor tramortus
 <lb/>et inhaerens et siupidus est atque atrocius urgens;
@@ -2372,10 +2403,8 @@
 <lb/>indigentem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Ego vero vellem Archigenem tantorum medicorum
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Ego vero vellem Archigenem tantorum medicorum
 <lb/>successorem aliquid perspicuitati doctrinae addidisse,
 <lb/>non ea ita obscurasse, ut ne nos quidem ipsi, qui in
 <lb/>artis operibus jam senuimus, dicta ipsius intelligere valeamus.
@@ -2615,7 +2644,7 @@
 <lb/>quum vehementer aestuant, furentibus similes sint, ut ne
 <lb/>exiguo quidem momento quiescere possint. Quod de illis
 <lb/>intelligens Nicander, sic de cenchride cecinit,</p>
-<lg><l>Ne tu quanquam audax, cenchrino occurrere contra,</l>
+<lg rend="italic"><l>Ne tu quanquam audax, cenchrino occurrere contra,</l>
 <l>Hum furit, insistas.</l></lg>
 <p rend="nonindented">
  <lb/>Verum de sus alibi plenius dictum et demonstratum est,
@@ -2661,10 +2690,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE LOCIS AFFECTIS
 <lb/>LIBER III.</head>
-
-
 <p rend="indent">
- <lb/>De loris affectis, sic enim nominant corporis
+<lb/><label type="head"><num value="1">Cap. I.</num></label> De loris affectis, sic enim nominant corporis
 <lb/>partes, pauci medici pertractaverunt, ac plura quam attigerint
 <lb/>inexarata omiserunt. Itaque caeteris silentio praetermissis,
 <lb/>sulius Arclugenis, iure supra illos omnes laudati, meminimus.
@@ -2701,10 +2728,8 @@
 <lb/>qui logicas continent quaestiones.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Quod autem melius suerat, et lune nostro
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Quod autem melius suerat, et lune nostro
 <lb/>instituto commodius, Archigenes non accurate declararit.
 <lb/>quot sint laesarum actionum modi ; sic enim et primario uffectae
 <lb/>corporis partes, aut proprio affectu laborantes, aut
@@ -2718,10 +2743,8 @@
 </div>
 <pb n="8.139"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Alio namque modo eveniunt suffusionis
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Alio namque modo eveniunt suffusionis
 <lb/>symptomata affecto ventriculo; alio ei, qui ab alto deridit,
 <lb/>nequaquam vocalibus instrumentis affectis, vox laesa
 <lb/>est; denique ab his duobus alia consensus specie laborabat.
@@ -2830,10 +2853,8 @@
 <lb/>medendi satius explico.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Nunc vero sola explicabuntur ea, quae
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Nunc vero sola explicabuntur ea, quae
 <lb/>ad .praesentem praepositionem utilia sunt. Nam comperi
 <lb/>laefiones actionum non solum ob similares, a quibus edontur,
 <pb n="8.145"/>
@@ -2890,10 +2911,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Igitur quum deperditam cujusdam memoriam
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Igitur quum deperditam cujusdam memoriam
 <lb/>restituere me aliquando oporteret, essemque adhuc junior,
 <lb/>ac neque praeceptorem .unquam vidissem hujusmodi
 <lb/>affectionem curantem, neque apud ullum antiquorum carationem
@@ -3128,10 +3147,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>At mihi jam tempus est redeundi ad propositum.
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> At mihi jam tempus est redeundi ad propositum.
 <lb/>Sane cum in confesso fit omnibus medicis ex ipsis
 <lb/>operibus, quae in omnibus rationalis facultatis affectionibus:
 <lb/>faciunt, caput sedem ipsius esse, conveniens erat confiderare,
@@ -3214,10 +3231,8 @@
 <lb/>bri intemperatum est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Quibus itaque. vel memoria, vel intelleotus
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Quibus itaque. vel memoria, vel intelleotus
 <lb/>periit, -nam intellectus deperditio. stultitia est, eorum
 <lb/>lbmnos observare oportet, utrum vehementer somnolenti, .
 <lb/>an modice somnolenti sint aegri, an omnino non somnolenti,
@@ -3291,10 +3306,8 @@
 <lb/>viris discere oportet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Non nulli enim sibi persuaserunt, nervorum
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Non nulli enim sibi persuaserunt, nervorum
 <lb/>principium cor esse, ..eo quod nequeant ligamentum a
 <lb/>neryo discernere ; ad id conserente etiam homouymia, quandoquidem
 <lb/>ligamenta multi medici colligantes nervos appellant.
@@ -3379,10 +3392,8 @@
 <lb/>esse rationi par est. Atqui evacuationi contraria est repletio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Venum et epilepfia convulsio est omnium
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Venum et epilepfia convulsio est omnium
 <lb/>corporis partium, non continua ut emprosthotonos et opisthotonos
 <lb/>atque tetanos, sed quae ex temporum -accidit in- .
 <lb/>tervallis; neque siclum hac re, fulmentis quoque ac. sentuum
@@ -3505,10 +3516,8 @@
 <lb/>vero spiritu vaporoso vel fumoso aut fuliginoso.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Quemadmodum autem in sus qui per consensum
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Quemadmodum autem in sus qui per consensum
 <lb/>oriuntur, ita et in illis qui primario affectu contuigunt,
 <pb n="8.180"/>
 <lb/>capitis morbis, non est parva differentia. Igitur crasse
@@ -3755,10 +3764,8 @@
 <lb/>dixisse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>At de epilepticis affectibus dem ceps, quandoquidem
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> At de epilepticis affectibus dem ceps, quandoquidem
 <lb/>hi quoque interdum ipsi, capite affecto, interdum
 <lb/>aliis consentiente, ortum habent, accurate distinguendum est.
 <lb/>Ut enim triplicem melancholiam, ita epilepsiam quoque tres
@@ -3916,10 +3923,8 @@
 <lb/>morbis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Omnes igitur hi affectus manifeste fiunt
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Omnes igitur hi affectus manifeste fiunt
 <lb/>in capite, ac praeterea vertigo tenebricosa nuncupata, quae
 <pb n="8.202"/>
 <lb/>qualis sit etiam ipsa appellatione prodit. Nam a parva occusione
@@ -3969,10 +3974,8 @@
 <lb/>minus ipsi nscribenda est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>At sane de ea, quae cephalaea a medicis
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> At sane de ea, quae cephalaea a medicis
 <lb/>nominatus, nemo dubitaverit, quin capitis sit morbus. Est
 <lb/>enim, ut brevi quis sermone complexus dixerit, affectus lue,
 <lb/>dolor capitis diuturnus et solutu difficilis, qui a levibus caulis
@@ -4043,10 +4046,8 @@
 </div>
 <pb n="8.208"/>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Morbus sane turi paralyseos tum per
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Morbus sane turi paralyseos tum per
 <lb/>universum corpus convulsionis, cujus generis est quoque tesanus,
 <lb/>siensu, ut praedictae affectiones, cognosci non potest,
 <lb/>sed ratione, quae doceat, est opus. Itaque quum totum corpus
@@ -4169,7 +4170,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="15">
 <p rend="indent">
-<lb/>Odoratus laesio affectus est, non eorum
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Odoratus laesio affectus est, non eorum
 <lb/>qui in naribus sunt, meatuum, sed vel anteriorum cerebri
 <lb/>ventriculorum in intemperiem adductorum, vel eorum meatuum,
 <lb/>qui in. ossibus suus ethmoidibus, obstructurum ; siquidem
@@ -4187,10 +4188,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE LOCIS AFFECTIS
 <lb/>LIBER IV</head>
-
-
 <p rend="indent">
- <lb/>Universalem quidem methodum, qua ad
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Universalem quidem methodum, qua ad
 <lb/>locorum affectorum dignotionem utimur, primis duobus liluis,
 <lb/>cum multis definitarum partium exemplis, satis p erscrutati
 <lb/>fumus. Quoniam vero, ut diximus atque jam in
@@ -4212,10 +4211,8 @@
 <lb/>hemicrania, apoplexia et limitibus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>At in praesenti libro, qui totius .com menterit
+<lb/><label type="head"><num value="2">Cap. II.</num></label> At in praesenti libro, qui totius .com menterit
 <lb/>quartus est, de faciei partibus intrinsecus affectis sermonem
 <lb/>faciamus, durio ab ocusis exordio. Horum enim
 <lb/>interdum alterius, interdum utriusque^ tensus, vel motus,
@@ -4424,10 +4421,8 @@
 <lb/>enarratae sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Tempus igitur est, ut ad linguam orationetranseamus.
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Tempus igitur est, ut ad linguam orationetranseamus.
 <lb/>Videmus interdum ipsius nrotum, interdum
 <lb/>gustandi sensum laedi, atque nonnunquam cum eo tactum
 <lb/>quoque. Non autem aliis gustus, - aliis tactus nervis utititr,
@@ -4528,10 +4523,8 @@
 <lb/>vis inveniri possint.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Eadem igitur ratione in sensu auditus,
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Eadem igitur ratione in sensu auditus,
 <lb/>quicunque affectus in aurium oculis objecta concavitate oris
 <lb/>untur, rationali cognitione non indigent; qui vero illaeso
 <lb/>apparente aurium foramine, sed in audiendi actione laeso,
@@ -4543,10 +4536,8 @@
 <lb/>affecto.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Sed et reliquorum omnium locorum qui in
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Sed et reliquorum omnium locorum qui in
 <lb/>facie sunt, non solum motus, verum etiam sensus, aut perditur
 <lb/>omnino, aut laeditur, interdum quidem partibus qui laefas
 <lb/>habent actiones, proprio affectu laborantibus ; interdum
@@ -4592,10 +4583,8 @@
 <lb/>lati musculi regio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Sed. jam tempus est, ut ad spinalis medullae
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Sed. jam tempus est, ut ad spinalis medullae
 <lb/>affectus accedamus. Splualis medullae affectus in
 <lb/>praesienti concisam habent doctrinam, at non similem in ipsis
 <lb/>operibus cognitionem. Etenim, nisi quis nervorum ab
@@ -4837,10 +4826,8 @@
 <lb/>affecta aliae actiones deperduntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>At ubi unius actionis laesio est et sedes
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> At ubi unius actionis laesio est et sedes
 <lb/>asseclae plures, nostri nunc instituti est, ex caeterorum symptomatum
 <lb/>varietate discernendo eas invenire. Quippe nullo
 <lb/>spirabilium instrumentorum quoquo modo, neque primario,
@@ -5035,10 +5022,8 @@
 <lb/>ipsis quotidie conspiciuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Jam convenit quidem inter medicos sauguinem
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Jam convenit quidem inter medicos sauguinem
 <lb/>e gula ventriculoque vomitione, ex spiritalibus partibus
 <lb/>tussi, ex faucibus et gurgusione screatu, ut ex ore
 <lb/>simplici expulsione expelli; nos vero eum a capite per gurgusionis
@@ -5140,10 +5125,8 @@
 <lb/>narrare operae pretium duri.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Enimvero quod his in sermonibus laesionem
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Enimvero quod his in sermonibus laesionem
 <lb/>intelligere oporteat, etiamsi non penitus tota partis actio
 <lb/>secundum naturam deperdatur, saepenumero jam diximus,
 <lb/>nec ab re fuerit, in praesentia monuisse. Praeterea, quamvis
@@ -5259,10 +5242,8 @@
 <lb/>diximus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>De difficili respiratione jam antea, ubi spinalis
+<lb/><label type="head"><num value="10">Cap. X.</num></label> De difficili respiratione jam antea, ubi spinalis
 <lb/>medullae affectus percurrimus, multa dictu sunt, quibus
 <lb/>nunc in memoriam revocatis, quae ad praesentem contemptationem
 <lb/>supersunt, subjungam. Itaque in universim:
@@ -5451,10 +5432,8 @@
 <lb/>transigamus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Quum. autem exercitationis via ad affectoruur.
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Quum. autem exercitationis via ad affectoruur.
 <lb/>locorum dignotiones duplex sit, altera quidem ab appanentibus
 <pb n="8.283"/>
 <lb/>symptomatis, .altera vero a corporis partibus, si
@@ -5704,9 +5683,10 @@
 </div>
 <pb n="8.297"/>
 <div type="textpart" subtype="book" n="5">
-
-
 <div type="textpart" subtype="chapter" n="Prooemium">
+<head>GALENI DE LOCIS AFFECTIS
+<lb/>LIBER V.</head>
+  <label type="head"><num value="0">Prooemium.</num></label>
 <p rend="indent">
  <lb/>In praecedenti libro, quum de pulmonis affectibus ageremus,
 <lb/>sermonis communitate et thoracis et cordis .aliquantalum
@@ -5718,12 +5698,8 @@
 <lb/>deindemd cor etiam transeunte affectu, operae pretium me
 <lb/>facturum arbitror, si omnes ejus affectus percurram.</p>
 <div type="textpart" subtype="chapter" n="1">
-<head>GALENI DE LOCIS AFFECTIS
-<lb/>LIBER V.</head>
-
-
 <p rend="indent">
- <lb/>Igitur quemadmodum de caeleris animalis
+  <lb/><label type="head"><num value="0">Cap. I.</num></label> Igitur quemadmodum de caeleris animalis
 <lb/>partibus, ita de corde quoque definiendum est, quaenam ipsi
 <lb/>proprio vel primario vel utcunque nominare volueris, affectu
 <lb/>laboranti fiant symptomata, quaenam vero ipso caeteris
@@ -5799,10 +5775,8 @@
 <lb/>validum est, affectus vero exiles.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>At proprius cornis affectus accidit ob simp
+<lb/><label type="head"><num value="2">Cap. II.</num></label> At proprius cornis affectus accidit ob simp
 <lb/>licent saepenumero lulemperiem, sive inaequalis, sive aequalis
 <lb/>ea fuerit, et ob inflammationem, vel erysipelas, dum
 <lb/>fieri incipit; issico enim antequam augeantur hujusmodi afsuetus,
@@ -5887,10 +5861,8 @@
 <lb/>et raram reddit respirationem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Huic quoque parti, vel primario affectae;
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Huic quoque parti, vel primario affectae;
 <lb/>vel aliis consentienti, quemadmodum reliquis omnibus, asseotus
 <lb/>quidam superveniunt; atque omnes in respirationis laesionem
 <lb/>desinunt, nam proprium respirationis hoc organum
@@ -6279,10 +6251,8 @@
 <lb/>atque inciditur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Interiorem autem thoracis terminum prisci
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Interiorem autem thoracis terminum prisci
 <lb/>omnes phrenas appellaverunt, sive simpliciter ipsis rumentem
 <lb/>venerit, sive, ut quidam augurantur, quia eo inflammato
 <lb/>aegrotantium mens laeditur. A Platone autem diaphragma
@@ -6380,10 +6350,8 @@
 <lb/>in ipso exorti ; partim vero jam antea dicti sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Eam partem quae inter fauces et os ventriculi
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Eam partem quae inter fauces et os ventriculi
 <lb/>mediaest, quam veteres oesophagon nominabant, qui
 <pb n="8.333"/>
 <lb/>post Arillotelem scripserunt, stomachum appellare consnevermrt,
@@ -6492,10 +6460,8 @@
 <lb/>ut in cute quoque saepenumero accidere videmus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Os ventriculi veteres cor nominabant, a
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Os ventriculi veteres cor nominabant, a
 <lb/>symptomatis quae inducit, ut ajunt, sic appellatum; non
 <lb/>enim solum ut cardiacis syncopis,: ita et stomachicis nonnulli
 <lb/>.corripiuntur, sed etiam convulsionibus et supore et
@@ -6626,10 +6592,8 @@
 <lb/>est.
 </p></div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Huic etiam parti, quemadmodum et eaeteris
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Huic etiam parti, quemadmodum et eaeteris
 <lb/>omnibus, duplex morborum genus insidet, unum stola
 <lb/>intemperie citra tumorem praeter naturam, cum tumoribus
 <lb/>vero inflammationes, erysipelata, soirrhi, flatulentae diflentiones,
@@ -6802,10 +6766,8 @@
 <lb/>dixisse satis est.
 </p></div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>At utrum semper in morbo regio locus
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> At utrum semper in morbo regio locus
 <lb/>affectus fithepar, an etiam estus quidam affectus hoc symptoma
 <lb/>efficiat, huc jam progressi scrutemur. Videmus enim
 <pb n="8.355"/>
@@ -7216,10 +7178,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE LOCIS AFFECTIS
 <lb/>LIBER VI.</head>
-
-
 <p rend="indent">
- <lb/>Quae de jecore prius dicta sunt, ex his
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quae de jecore prius dicta sunt, ex his
 <lb/>nihil postea vobis arduum erit invenire signa, quibus lienis
 <lb/>affectus dignoscuntur; addito quod ipsius inflammationes
 <lb/>ob duritiem facile tangentibus succidant. Quum itaque plurima
@@ -7287,10 +7247,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Jam de ventricusi affectibus aliquid dixi,
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Jam de ventricusi affectibus aliquid dixi,
 <lb/>ac in duas maximas ipsum partes secui, primam superiorem,
 <lb/>gulae continuam, ex multis nervis lenfificis contextam, alteram
 <lb/>huic continuam, quae ad intestinorum usque exortum
@@ -7454,10 +7412,8 @@
 </div>
 <pb n="8.390"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Quum derepente nephritis incidit, lapide
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Quum derepente nephritis incidit, lapide
 <lb/>notatu digno vel in renum vel in ureterum aliquo impactu,
 <lb/>dolor excitatur colice similis, verum distinguitur naulearum
 <lb/>tum multitudine tum magnitudine, cum iis quae vomitu re:sitiuntur,
@@ -7679,10 +7635,8 @@
 </div>
 <pb n="8.402"/>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Vesicae accidunt symptomata partim eaeteris
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Vesicae accidunt symptomata partim eaeteris
 <lb/>communia, ut omnes ipsius praeter naturum tumores,
 <lb/>dolores et quae hos creant affectiones, partim ipsi sclipropria,.
 <lb/>ut urinae suppressiones .et stillicidia ac alio modo icmoderatae
@@ -7895,10 +7849,8 @@
 <lb/>par est rara etiam sequi symptomata.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Neque hic disceptandum est, utrum vulvam
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Neque hic disceptandum est, utrum vulvam
 <lb/>an uterum vocare deceat eam partem, quae mulieribus
 <lb/>ad conceptionem a natura data est; ut nec si quis nnmero
 <lb/>plurali vulvas aut uteros, aut singulari vulvam aut uterutu
@@ -8343,10 +8295,8 @@
 <lb/>facile abrumpatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Quentadmodum pauca ex iis quae per
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Quentadmodum pauca ex iis quae per
 <lb/>anum excernuntur vicinorum ipsi locorum: affectorum signa
 <lb/>sunt, plurima vero ex iis intestinorum et- ventriculi et splenis
 <pb n="8.438"/>

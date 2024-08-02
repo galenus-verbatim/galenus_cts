@@ -7,8 +7,10 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De experientia medica</title>
-        <author xml:lang="lat">Galenus</author>
-        <editor>Schöne, Hermann</editor>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
+        <editor role="editor">Schöne, Hermann</editor>
         <funder ref="https://www.mellon.org/">Andrew W. Mellon Foundation</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts</resp>
@@ -41,16 +43,47 @@
           <resp>Technical Advisor</resp>
           <persName>Bruce Robertson</persName>
         </respStmt>
-      </titleStmt>
-      <editionStmt resp="Galenus_verbatim">
-        <edition>Revised edition of the originally published versions of the electronic texts.</edition>
-        <respStmt>
-          <resp></resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
-        </respStmt>
-        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
-      </editionStmt>
-      <publicationStmt>
+       </titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">Revised edition of the originally published versions of the electronic texts.
+<date type="revision" when="2024">2024</date>
+</edition>
+<respStmt>
+<!-- paragraphe à vérifier pour chaque édition -->
+<resp>To reuse this edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We changed the naming schemes of the milestones indicating the corresponding Kühn pages or added such milestones when they were missing. The layout of the original edition was marked up by &lt;pb&gt; and &lt;lb&gt; elements when they were missing. We also added elements specific to critical editions, that were present in this edition but were missing in the TEI, mainly chevrons and hooks. For details, see the revisionDesc section.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp>Lead Developer, Optéos</resp>
+<persName>Frédéric Glorieux</persName>
+</respStmt>
+<respStmt>
+<resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<!-- à vérifier pour chaque édition -->
+<respStmt>
+<resp from="2023" to="2024">Text verification and correction, Galenus verbatim</resp>
+<persName>
+</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+</editionStmt>
+<publicationStmt>
         <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
         <publisher>University of Leipzig</publisher>
         <pubPlace>Germany</pubPlace>
@@ -63,10 +96,10 @@
       <sourceDesc>
         <biblStruct>
           <monogr>
-            <title xml:lang="deu">Eine Streitschrift Galen's gegen die empirischen Ärzte</title>
+            <title xml:lang="deu">Eine Streitschrift Galen’s gegen die empirischen Ärzte</title>
             <title xml:lang="deu" level="j">Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften, Philosophisch-Historische Klasse</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Schöne, Hermann</editor>
+            <editor role="editor">Schöne, Hermann</editor>
             <imprint>
               <biblScope unit="vol">1901</biblScope>
               <biblScope unit="pp" from="1258" to="1263">1258-1263</biblScope>
@@ -82,21 +115,68 @@
       <refsDecl n="CTS">
         <cRefPattern matchPattern="(.+)" n="work" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type is systematically specified with a rend value.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<normalization>
+<p>Symbols are maintained as they appear within the printed text.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
-        <language ident="deu">German</language>
       </langUsage>
     </profileDesc>
+    <revisionDesc>
+      <change who="#Galenus_verbatim" when="2024">The indentation has been restored.</change>
+      <change who="#Galenus_verbatim" when="2024">All page numbers have been renumbered.</change>
+      <!-- à vérifier pour chaque édition -->
+      <change who="#Galenus_verbatim" when="2024">All the chevrons and hooks have been respectively replaced by &lt;supplied&gt; and &lt;del&gt;.</change>
+      <!-- à vérifier pour chaque édition -->
+      <change who="#Galenus_verbatim" when="2024">The layout of the original edition has been marked up by &lt;pb&gt; and &lt;lb&gt; elements.</change>
+      </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg107.1st1K-grc1">
-        <pb n="1901.1258"/>
+        <pb n="4"/>
         <div type="textpart" subtype="work" n="1" xml:id="_1">
           <milestone unit="ms1folio" n="120v"/>
-          <p>
+          <p rend="indent">
 <lb n="1"/>... τὸν ζ΄ ἔτι θεάσασθαι περιμενεῖς καὶ τὸν η΄ καὶ ὅλως πάνυ πολλὰ
 <lb n="2"/>ἐφεξῆς. τί ποτ’ οὖν ἔτι συκοφαντήσεις καὶ ἀσύστατον ἐρεῖς τὴν ἐμπειρίαν
 <lb n="3"/>καὶ τὸ πλειστάκις ἀπεριόριστον καὶ ὕποπτον ἀποφανεῖς; ὃ
@@ -105,10 +185,10 @@
 <lb n="6"/>ἑνὸς μὲν τοῦ διὰ μόνης εὑρίσκεσθαί τι τηρήσεως, ὅπερ ἐγώ τε βούλομαι
 <lb n="7"/>καὶ ὑμεῖς ἄκοντες μὲν [καὶ] ὁμολογεῖτε, ἀλλ’ ὅμως· δευτέρου δὲ
 <lb n="8"/>τοῦ πῶς, ὃ ἐγὼ μὲν οὔτε δυνατὸν οὔτε χρήσιμον εἶναί φημι, σὸν δὲ
-<lb n="9"/>λοιπὸν εἴη ἂν ἔργον τοῦ〈το〉 εὑρεῖν, ἄπορον αὐτὸ ἀποφαίνων τῷ σοφίσματι
+            <lb n="9"/>λοιπὸν εἴη ἂν ἔργον τοῦ<supplied reason="omitted">το</supplied> εὑρεῖν, ἄπορον αὐτὸ ἀποφαίνων τῷ σοφίσματι
 <lb n="10"/>σαυτὸν καταβαλεῖς, ἡμᾶς δ’ οὐδὲν ἀδικήσεις. οὐ γὰρ περὶ
 <lb n="11"/>τοῦ πῶς ἕκαστον γίνεται τεχνικὸν ὁ ἀγὼν ἡμῖν ἐστιν, ἀλλ’ ὅτι γίνεται
-<pb n="1901.1259"/>
+<pb n="5"/>
 <lb n="1"/>μόνον, ὅπερ ἐναργῶς ἔχομεν ὁμολογούμενον. σὺ δὲ ὁ τὰς
 <lb n="2"/>αἰτίας πολυπραγμονῶν δίκαιος εἶ καὶ τὸ πῶς ἐκδιδάσκειν. ἀλλ’
 <lb n="3"/>ἔοικας ἔμπαλιν τοῦ δέοντος ἰέναι καὶ ὅμοιόν τι ποιεῖν τοῖς ἐπεὶ
@@ -127,10 +207,10 @@
 <lb n="16"/>αὐτοῦ μάχεται τοῖς φαινομένοις, ἀφ’ ὧν ἤρξατο, τὸ ἐναντίον ἐργάζεσθε·
 <lb n="17"/>τῶν ὡς γίγνεται μὲν οὐκ ἐχόντων λόγον, ὡς ὁ λόγος. δὲ βούλεται μὴ γιγνομένων
 <lb n="18"/>κατεγνώκατε· ἐμοὶ δ’ αὖ τὸ τοιοῦτο ἔλεγχος εἶναι δοκεῖ μέγιστος
-<pb n="1901.1260"/>
+<pb n="6"/>
 <lb n="1"/>τοῦ λόγου· “τίς γὰρ ἂν ἔτι νοῦν ἔχων πιστεύσειεν αὐτῷ περὶ τῶν
 <lb n="2"/>ἀδήλων, ὃς οὕτως ἐστὶ μοχθηρός, ὥστε τοῖς ἐναργέσιν ἐναντία τίθεσθαι”.
-<lb n="3"/>〈.........〉 πολλῶν γὰρ ἔτι δέονται οἱ ἐμπειρικοὶ πρὸς ὃ
+            <lb n="3"/><supplied reason="omitted">.........</supplied> πολλῶν γὰρ ἔτι δέονται οἱ ἐμπειρικοὶ πρὸς ὃ
 <lb n="4"/>βούλονται, κἂν τοῦτ’ αὐτοῖς συγχωρήσωμεν. εἰ γὰρ μὴ ἴσα δείξαιμι
 <lb n="5"/>τὰ λειπόμενα τοῖς προειρημένοις ἀτόποις, οὐδὲν οὐδ’ ἐκείνων ὄφελος
 <lb n="6"/>εἶναί μοι βούλομαι. σὺ μὲν οὖν εὖ οἶδ’ ὅτι τεθαύμακας οὐ μὰ Δία
@@ -146,7 +226,7 @@
 <lb n="16"/>μνήμην; — ὅμως οὐδ’ οὕτως αὶσθάνονται. ὅτι διαπαίζοντες αὐτοὺς ταῦτα
 <lb n="17"/>συγχωροῦμεν, ἀλλ’ ὡς ἐπὶ βεβαίοις ὑπάρχουσιν ἔτι φιλοτιμοῦνται περὶ
 <lb n="18"/>τῶν ἑξῆς. ἐγὼ τοίνυν οὐ δι’ ἐκείνους — περιττὸν γὰρ λίθοις διαλέγεσθαι
-<pb n="1901.1261"/>
+<pb n="7"/>
 <lb n="1"/>— ἀλλ’ ἕνεκα τοῦ τελειῶσαι τὸν λόγον ἐναργῶς ἐπιδείξω ὅτι,
 <lb n="2"/>κἂν πλειστάκις ὡσαύτως ὁρᾶσθαί τι συγχωρηθῇ, οὐδὲν ἐκ τούτου θεώρημα
 <lb n="3"/>τεχνικὸν συστήσονται. καὶ μή τις δόξῃ με τῷ Πλάτωνος χρήσεσθαι
@@ -164,9 +244,9 @@
 <lb n="15"/>τὸ καθάπαξ αὐτοί φασιν· εἴη ἂν τὸ πλειστάκις ἐκ πολλῶν ἀτέχνων
 <lb n="16"/>συγκείμενον. καὶ ὧδ’ ἂν ὁ λόγος ἐρωτηθείη· εἰ τὸ καθάπαξ ἄτεχνον,
 <lb n="17"/>τὸ δὲ πλειστάκις ἐκ πολλῶν τῶν καθάπαξ σύγκειται, ἄτεχνον τὸ
-<lb n="18"/>πλειστάκις. ἀλλὰ μὴν τὸ καθάπαξ ἄτεχνον· καὶ τὸ πλειστάκις 〈ἄρα〉.
+            <lb n="18"/>πλειστάκις. ἀλλὰ μὴν τὸ καθάπαξ ἄτεχνον· καὶ τὸ πλειστάκις <supplied reason="omitted">ἄρα</supplied>.
 <lb n="19"/>ἀλλ’ ἴσως οὐδ’ ὃ λέγομεν εἰδέναι φήσουσι· φεύγειν γὰρ ὁμολογήσουσι
-<pb n="1901.1262"/>
+<pb n="8"/>
 <lb n="1"/>τά τ’ ἄλλα μαθήματα καὶ διαλεκτικήν. εἰ βούλει τοίνυν, τοῦτον μὲν
 <lb n="2"/>ἡμῖν αὐτοῖς εἰρημένον τὸν λόγον ἐῶμεν, ἐκείνους δ’ ἐρωτήσωμεν ἕτερόν
 <lb n="3"/>τινα τοιοῦτον· ἆρα γε, ὦ ἐμπειρικοί, τὸ πλειστάκις ὁποσάκις
@@ -185,15 +265,15 @@
 <lb n="16"/>εἰ παρὰ πολὺ τῶν πραγμάτων διαφερόντων ἓν αὐτοῖς <milestone unit="ms1folio" n="122r"/> ἐπάξειν
 <lb n="17"/>ἐπηγγέλλετο μέτρον. νυνὶ δ’ εἰ καθ’ ἕκαστον ἴδιόν τι δείξειέ μοι,
 <lb n="18"/>πάνυ τεύξεσθαι τοῦ ἀληθοῦς ἤλπικα. καὶ δὴ οὖν ἀπὸ τῶν ἁπλουστέρων
-<pb n="1901.1263"/>
+<pb n="9"/>
 <lb n="1"/>ἀρξάμενος πυνθάνομαι· ὁποσάκις ἂν εἴη μοι θεασαμένῳ τὸν μηνιγγότρωτον
 <lb n="2"/>ἀκριβῶς εἰδέναι, πότερον διὰ παντὸς ἢ ὡς τὸ πολὺ ἢ σπανίως ἢ ἀμφιδόξως
 <lb n="3"/>τεθνήξεται; ἀλλ’ οὐδεὶς αὐτῶν τὸ μέτρον οὔτε νῦν ἡμῖν ἀπεκρίνατο
 <lb n="4"/>οὔτε ἐν τοῖς βιβλίοις ἔγραψε. μήποτ’ οὖν οὐδ’ ἔχουσί τι καθ’ ἕκαστον
 <lb n="5"/>ὡρισμένον; ὅτι μὲν οὖν καὶ ἤδη αὐτῶν ἔρρει τὰ πράγματα, παντὶ
-<lb n="6"/>δῆλον. ἀλλ’ ἐφεξῆς ἂν εἴη, καθάπερ ἀρχῆθεν αὐτοῖς 〈οἷς〉 διελέχθημεν
+            <lb n="6"/>δῆλον. ἀλλ’ ἐφεξῆς ἂν εἴη, καθάπερ ἀρχῆθεν αὐτοῖς <supplied reason="omitted">οἷς</supplied> διελέχθημεν
 <lb n="7"/>προσεπ[τ]αίσαμεν, εὐγνωμόνως ἔτι καὶ νῦν ἡμᾶς ἐπισκέψασθαι
-<lb n="8"/>κατὰ μόνας, πότερον ἐκείνοις μὲν ἀγνοεῖται τὸ 〈τοῦ〉 πλειστάκις
+            <lb n="8"/>κατὰ μόνας, πότερον ἐκείνοις μὲν ἀγνοεῖται τὸ <supplied reason="omitted">τοῦ</supplied> πλειστάκις
 <lb n="9"/>μέτρον, ἔστι δ’ ἐν τῇ φύσει τῶν πραγμάτων, ἢ οὐδ’ ὅλως συστῆναι
 <lb n="10"/>δυνατὸν ὑπάρχειν τι μέτρον ἐπὶ τοῦ πλειστάκις, ᾗ αὐτὸ ποιήσει πρότερον
 <lb n="11"/>οὐκ ὂν τεχνικὸν νυνὶ τεχνικὸν εἶναι. ἐγὼ μὲν οὖν ἐπεσκεψάμην

@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De ossibus ad tirones</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg012.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -54,7 +75,6 @@
               <date>1821</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x02">BIU Santé, Medica</ref></biblStruct>
         <biblStruct>
           <monogr corresp="Basel">
@@ -96,13 +116,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg012.verbatim-lat1">
 <pb n="2.732"/>
@@ -110,7 +173,7 @@
 <head>GALENI LIBER DE OSSIBVS AD
 <lb/>TIRONES.</head>
 <p rend="indent">
- <lb/>Osse singula per se qualia ipsa sint quamque invicem
+<lb/>Osse singula per se qualia ipsa sint quamque invicem
 <lb/>constructionem habeant, nosse dico melicum oportere, si
 <lb/>recte ipsorum fracturas et luxationem curaturus est. Perspicuum
 <lb/>namque est in iis quae medicinae sunt omnibus,
@@ -250,7 +313,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="1">
 <p rend="indent">
- <lb/>Dictum quidem est etiam antea, tum os
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Dictum quidem est etiam antea, tum os
 <lb/>capitis cramum nominari, tum quasdam in eo este futuras.
 <lb/>Quot autem eae et quae sint, et quae cujusque
 <lb/>earum forma sit, nondum quidem antehac dictum est,
@@ -373,7 +436,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="2">
 <p rend="indent">
- <lb/>Temporali musculo praepositum est os,
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Temporali musculo praepositum est os,
 <lb/>quod obliquam media sui parte futuram continet, ut posterior
 <lb/>ejus pars tota capitis offi, quod ad aurem est, conlinens
 <lb/>fit, anterior autem extremitati supercilii ei, quae
@@ -382,7 +445,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="3">
 <p rend="indent">
- <lb/>Itaque de futuris, quae superiorem maxillamec
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Itaque de futuris, quae superiorem maxillamec
 <lb/>a capite et a sphenoide osse discernunt, antea dictum
 <lb/>esu, nunc vero de iis, quae in ipsis maxilla sunt, dicetur.
 <lb/>Sed satius fortassis est suturae nomen explicare,
@@ -452,10 +515,8 @@
 <lb/>dirimuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Equidem nasi quoque ossa duo sunt, quae
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Equidem nasi quoque ossa duo sunt, quae
 <lb/>a suturis a messio superciliorum descendentibus discernuntur.
 <lb/>Has paulo ante in maximorum ossium narratione
 <lb/>duplices cunctas numerari. Est enim et in naso
@@ -506,10 +567,8 @@
 <lb/>ex omnibus coniugationis est expers.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Inter ossa et dentes numerandi sunt, tametsi
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Inter ossa et dentes numerandi sunt, tametsi
 <lb/>sophistis quibusdam non placet. Quod si ipsos ita
 <lb/>vocare nobis non concedant, aliud tamen eis dare nomen jure
 <lb/>tenebantur. Neque enim cartilagines, neque arterias, rreque
@@ -550,10 +609,8 @@
 <lb/>sentiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Neque maxillae inferioris os simplex est,
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Neque maxillae inferioris os simplex est,
 <lb/>ut cuipiam videatur; id namque coctum in mento fumrno
 <lb/>laxatus, ut id coaluisse manifeste conspiciatur. At
 <lb/>pars ejus, quae sursum velut ad caput tendit, in duo extrema
@@ -565,10 +622,8 @@
 <lb/>recipitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Spinae totius quatuor et viginti vertebrae
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Spinae totius quatuor et viginti vertebrae
 <lb/>sunt, quibus plures aut pauciores, praeter naturatus
 <lb/>sunt, ut capita acuminata. Universa autem eorum structura
 <lb/>in cervicem, dorsum, lumbos et sacrum os drvidrtur.
@@ -584,10 +639,8 @@
 <lb/>cervicem eam collumye appellere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Quae in cervice sunt vertebrae, earum
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Quae in cervice sunt vertebrae, earum
 <lb/>primae quidem duae per eliarthrofin undique articulantur,
 <lb/>aliarum vero quinque anteriorem partem robustum
 <lb/>ligamentum per symphyfin nectit. Non enim certe per
@@ -652,10 +705,8 @@
 <lb/>quamplurimum, aut totum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Duodecim quidem numero thoracis vertebras
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Duodecim quidem numero thoracis vertebras
 <lb/>esse antea lictum est, nisi si raro cuipiam deesse
 <lb/>una aut exuperare reperietur. Atque ex his ipsis aliquam
 <lb/>deesse, quam superesse, rarius est. Omnibus autem
@@ -682,7 +733,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="10">
 <p rend="indent">
- <lb/>De lumborum vertebris caetera quidem
+<lb/><label type="head"><num value="10">Cap. X.</num></label> De lumborum vertebris caetera quidem
 <lb/>prope jam prius dicta sinat. Etenim quod quinque,
 <lb/>quodque maximi quidem caeterorum ipsi sunt atque crusfissimi;
 <lb/>quod angustum intus cuiusque foramen, ut et in
@@ -706,10 +757,8 @@
 <lb/>et ultimae dorsi duae.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/><label type="head">De osse sacro.</label> Atque hoc vertebris respondet
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> <label type="head">De osse sacro.</label> Atque hoc vertebris respondet
 <lb/>ratione diarthroseos, qua cum superiori posita jungitur.
 <pb n="2.762"/>
 <lb/>Ejus enim declives apophyses suscipit, ut illa acclives eas,
@@ -729,10 +778,8 @@
 <lb/>paria tria.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>In extremo lati aliud os est, quod coccyx
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> In extremo lati aliud os est, quod coccyx
 <lb/>vocatur; ex tribus et ipsum propriis partibus constat,
 <lb/>magis cartilagineis quam lati, polissimumque ea, quae
 <pb n="2.763"/>
@@ -746,7 +793,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="13">
 <p rend="indent">
- <lb/>Sternum, costae et spinae dorsi vertebrae
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Sternum, costae et spinae dorsi vertebrae
 <lb/>thoracis ossa sunt, duodecim quidem utrinque costae,
   <lb/>sicuti et vertebrae. Singulae namque singulis <hi rend="italic">vertebris</hi>
 <lb/>per diarthrofin connectuntur. Sterni ossa invicem per
@@ -791,10 +838,8 @@
 <lb/>insemaeque sunt breviores, mediae longiores,</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Scapulae post thoracem litae sunt; per
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Scapulae post thoracem litae sunt; per
 <lb/>musculos autem ossi posteriori capitis, spinae rhacheos,
 <pb n="2.766"/>
 <lb/>thoracis costis praepositoque laryngis ossi symphysi connectuntur.
@@ -820,9 +865,8 @@
 <lb/>extremum ut comicis rostrum exterius promineat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
 <p rend="indent">
- <lb/>Clavicula utraque summo sterno diarthrosi
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Clavicula utraque summo sterno diarthrosi
 <lb/>articulatur; cavernosa est, tum figura, tum crassitudine
 <lb/>inaequalis. Etenim pars ipsarum inferior, quae sterno
 <lb/>diarthrofi alligatur, caeteris et crassior et rotundior
@@ -835,7 +879,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="16">
 <p rend="indent">
- <lb/>Os brachii omnium ossium maximum,
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Os brachii omnium ossium maximum,
 <lb/>excepto femore, in utroque fui fine, superno ac inferno,
 <lb/>diarthrofi articulatur. In summo equidem humero epiphysin
 <lb/>habet capitis praegrandis cervici parvae adnatant.
@@ -858,10 +902,8 @@
 <lb/>vero et interiora fimum est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
-  <lb/>Totum equidem <hi rend="italic">corpus</hi> inter brachium
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> Totum equidem <hi rend="italic">corpus</hi> inter brachium
   <lb/>et carpum <hi rend="italic">positum</hi> cubitus vocatur; vocatur vero et alterum
   <lb/>os eorum, quae in ipsi, <hi rend="italic">corpore</hi> sunt, majus, quod
 <pb n="2.769"/>
@@ -891,7 +933,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="18">
 <p rend="indent">
- <lb/>Octo construunt ossa carpum, in duos
+<lb/><label type="head"><num value="18">Cap. XVIII.</num></label> Octo construunt ossa carpum, in duos
 <lb/>ordines conferta; dura omnia, et parva, et medullae expertia,
 <lb/>figuraeque multiplicis. Etenim partim gibba sunt,
 <lb/>partim sima; partim recta, partim rotunda. Omnia vero
@@ -914,7 +956,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="19">
 <p rend="indent">
- <lb/>Interstitium carpi ac digitorum metacarpium
+<lb/><label type="head"><num value="19">Cap. XIX.</num></label> Interstitium carpi ac digitorum metacarpium
 <lb/>nominatur; quod synarthrosi quidem carpo, diarthrosi
 <lb/>vero primis digitorum phalangibus (sic enim digitorum
 <lb/>ossa nominantur, nonnulli vero ipsa scytalidas
@@ -937,7 +979,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="20">
 <p rend="indent">
- <lb/>Lateralibus lati ossis apophysibus tum
+<lb/><label type="head"><num value="20">Cap. XX.</num></label> Lateralibus lati ossis apophysibus tum
 <lb/>rectis tum magnis duo quaedam ossa connexa stant, quae
 <lb/>nullum nomen libi totis impositum sortiuntur. Superiores
 <lb/>enim ipsorum partes latae illum ossa vocantur; post aditum
@@ -952,7 +994,7 @@
 <pb n="2.773"/>
 <div type="textpart" subtype="chapter" n="21">
 <p rend="indent">
- <lb/>Os femoris omnium animalis ossium maxitnum
+<lb/><label type="head"><num value="21">Cap. XXI.</num></label> Os femoris omnium animalis ossium maxitnum
 <lb/>quidem est. Id autem supra quidem ischio, suira
 <lb/>vero tibiae per diarthrosin articulatur. Ac sursum
 <lb/>quidem epipbysiu habet capitis exacte rotundi supra cervicem
@@ -974,7 +1016,7 @@
 <pb n="2.774"/>
 <div type="textpart" subtype="chapter" n="22">
 <p rend="indent">
- <lb/>Tibia vocatur quidem fio tum tota
+<lb/><label type="head"><num value="22">Cap. XXII.</num></label> Tibia vocatur quidem fio tum tota
 <lb/>cruris pars, quae inter genu ac talum <hi rend="italic">posita est</hi>, tum
 <lb/>vero vocatur in ipsa os majus. Id vero interius situm
 <lb/>est, cui foli femur per diarthrosin articulatur. Exterius
@@ -1002,7 +1044,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="23">
 <p rend="indent">
- <lb/>Ad femoris et tibiae diartbrofin exterius
+<lb/><label type="head"><num value="23">Cap. XXIII.</num></label> Ad femoris et tibiae diartbrofin exterius
 <lb/>os cartilaginosum, figura rotundum incumbit, quod
 <lb/>gibbas quidem ac veluti coudylodes subjectorum ossium
 <lb/>partes aptis caritatibus complectitur, brevi vero quadam
@@ -1012,7 +1054,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="24">
 <p rend="indent">
- <lb/>Ab paulo ante dictis apophysibus in
+<lb/><label type="head"><num value="24">Cap. XXIV.</num></label> Ab paulo ante dictis apophysibus in
 <lb/>imis tibiae et fibulae extremis astragalus comprehenditur.
 <lb/>Quae pars ejus quadrio vocatur, sursum vergit. Ex caeteris
 <lb/>autem ejus partibus posteriores quidem laeves omnes
@@ -1045,7 +1087,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="25">
 <p rend="indent">
-  <lb/>Quae <hi rend="italic">pedis pars</hi> pedium vocatur, incipit
+<lb/><label type="head"><num value="25">Cap. XXV.</num></label> Quae <hi rend="italic">pedis pars</hi> pedium vocatur, incipit
   <lb/>explicari. <hi rend="italic">Id</hi> ex quinque constat ossibus, quibus
 <lb/>succedunt pedis digiti. Ex tribus autem universi phalaugibus
   <lb/>ad eorum qui manus <hi rend="italic">construunt</hi> similitudinem,

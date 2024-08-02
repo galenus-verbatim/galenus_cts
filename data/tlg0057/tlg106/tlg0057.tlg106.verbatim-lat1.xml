@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">Vocum Hippocratis Glossarium</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>P p ublished original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>P p ublished original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg106.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -96,12 +117,55 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
+   
   </teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg106.verbatim-lat1">
@@ -116,10 +180,8 @@
 <head>GALENI LINGUARUM SEU DE
 <lb/>CTIONUM EXOLETARUM HIPPOQRATIS
 <lb/>EXPLICATIO.</head>
-
-
 <p rend="indent">
- <lb/>Quum volueris, o Teuthra, linguas
+<lb/><label type="head"><num value="0">Prooemium.</num></label> Quum volueris, o Teuthra, linguas
 <lb/>dictionesve Hippocratis paucissimis verbis nos explicare,
 <lb/>libenter et prompte tibi paruimus, hujusmodi studiis pulcherrime
 <lb/>morem gerere pulcherrimum existimantes. Erit
@@ -204,7 +266,7 @@
 <lb/>Antiphon, qui quomodo ea facienda sunt edocet. Indicat
 <lb/>etiam et ipsis Aristosa an es in eadem fabula his verbis,
  <lb/><foreign xml:lang="grc">ἅλις ὸρὲλη καὶ μύρον καὶ ταινίαι</foreign>. Postea fenex irridens
- <lb/><foreign xml:lang="grc">ῆδουσ' ὸρὲλη</foreign> istud est ab Lysistrato. Rursus autem cum
+ <lb/><foreign xml:lang="grc">ῆδουσ’ ὸρὲλη</foreign> istud est ab Lysistrato. Rursus autem cum
 <lb/>procax filius dixisset, fortasse a nobis non perterreberis
 <pb n="19.67"/>
 <lb/>tempore: et hoc filii dictum senex irridens ait, hoc perterreberis
@@ -248,11 +310,11 @@
 <pb n="19.69"/>
 <lb/>autem id facere negligimus, quum sine interpretatione
 <lb/>speramus ipsam explanationem fore manifestam.</p>
+ <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="1">
-<head>INITIUM DICTIONUM LITERAE <hi rend="italic">A.</hi></head>
-
- <p rend="hanging">
+<lb/><label type="head">INITIUM DICTIONUM LITERAE <hi rend="italic"><num value="1">A.</num></hi></label>
+<p rend="hanging">
 <lb/><foreign xml:lang="grc">Ἀγκυλίδωτον</foreign>, ansularum vel annulatam, ansulam vel annulum
 <lb/>habens, dictum est autem de curru vel globositate.</p>
  <p rend="hanging">
@@ -518,7 +580,7 @@
  <lb/><foreign xml:lang="grc">ἀμφιδέξιος</foreign>, tanquam utrinque dextra: hoc est utrisque
 <lb/>manibus ut dextra utens : talis enim est et apud poetam
 <lb/>ambidexter, sic Hipponax dicebat:</p>
-<lg>
+<lg rend="italic">
 <l>Ambidexter enim sum et non pecco.</l></lg>
 <p rend="nonindented">
  <lb/>Quidam <foreign xml:lang="grc">ἀμφιδέξιον</foreign> intelligunt non recte eam, quae in
@@ -562,8 +624,9 @@
 <pb n="19.80"/>
 <lb/>morborum epidemion deinceps invicem de Pythione dicta
 <lb/>sunt: sic habet et illud apud poetam de equo:</p>
-<p rend="indent">
- <lb/><hi rend="italic">Loquentem autem fecerat dea alba ulnas Juno</hi>.</p>
+<lg rend="italic">
+ <l>Loquentem autem fecerat dea alba ulnas Juno.</l>
+</lg>
  <p rend="hanging">
  <lb/><foreign xml:lang="grc">ἀναφέρειν</foreign>, referre, significat interdum et subsingultire respirantem,
  <lb/>ut in primo de morbis minore et <foreign xml:lang="grc">ἀναφέρειν</foreign>
@@ -782,10 +845,9 @@
 <lb/><foreign xml:lang="grc">ἀψυχεῖ</foreign>, animo deficit et <foreign xml:lang="grc">ἀψνχίη</foreign> animi desectus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
- <head><hi rend="italic">B.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="2">B.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Γάκχαρις</foreign>, Lydium quoddam unguentum.</p>
+<lb/><foreign xml:lang="grc">Γάκχαρις</foreign>, Lydium quoddam unguentum.</p>
 <p rend="hanging">
  <lb/><foreign xml:lang="grc">βαλβὶς</foreign>, concavitas oblonga.</p>
 <pb n="19.88"/>
@@ -853,10 +915,9 @@
  <lb/><foreign xml:lang="grc">βίζην</foreign>, cumulate vel dente.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
- <head><hi rend="italic"><foreign xml:lang="grc">Γ</foreign>.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="3"><foreign xml:lang="grc">Γ</foreign>.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Γαλιάγκωνες</foreign>, <hi rend="italic">mustelae cubito praediti</hi>, qui parvum et gracile
+<lb/><foreign xml:lang="grc">Γαλιάγκωνες</foreign>, <hi rend="italic">mustelae cubito praediti</hi>, qui parvum et gracile
 <lb/>habent brachium, partes autem circa cubitum turgidiores,
  <lb/>ut mustelae: qui autem ajunt <foreign xml:lang="grc">γαλλὸν</foreign> mutilum
 <lb/>et decurtatum vocari si indeque deductum esse nomen,
@@ -903,10 +964,9 @@
 </div>
 <pb n="19.92"/>
 <div type="textpart" subtype="chapter" n="4">
- <head><hi rend="italic"><foreign xml:lang="grc">Δ</foreign>.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="4"><foreign xml:lang="grc">Δ</foreign>.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Ααιτἰδες</foreign>, magnae lampades ardentesque vocantur, abutentibus
+<lb/><foreign xml:lang="grc">Ααιτἰδες</foreign>, magnae lampades ardentesque vocantur, abutentibus
 <lb/>autem aliquando significat etiam allii caput, eo
 <lb/>quod ex multis spicis seu nucleis compositum colligatur,
 <lb/>ut lampades.</p>
@@ -976,10 +1036,9 @@
 <lb/>difficulter frenabilis et morofissimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
- <head><hi rend="italic">E.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="5">E.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Ἐβλημάσθη</foreign>, mollificatus est, molle factum est.</p>
+<lb/><foreign xml:lang="grc">Ἐβλημάσθη</foreign>, mollificatus est, molle factum est.</p>
  <p rend="hanging">
  <lb/><foreign xml:lang="grc">ἐγγαστρίμυθοι</foreign>, qui clauso ore loquuntur, quia videntur
 <lb/>ex ventre loqui.</p>
@@ -1217,16 +1276,14 @@
  <lb/><foreign xml:lang="grc">ἑψητὸν</foreign>, autem genus piscium.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
- <head><hi rend="italic">Z.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="7">Z.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Ζείας</foreign>, ileae, farris, <hi rend="italic">olyrae.</hi></p>
+<lb/><foreign xml:lang="grc">Ζείας</foreign>, ileae, farris, <hi rend="italic">olyrae.</hi></p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
- <head><hi rend="italic">H.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="8">H.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Ἐγκίστρευται</foreign>, implicatus esu
+<lb/><foreign xml:lang="grc">Ἐγκίστρευται</foreign>, implicatus esu
  <lb/><foreign xml:lang="grc">ἠγκυροβόληται</foreign>, intus adhaesit, ut in anchora.
  <lb/><foreign xml:lang="grc">ἠδὲ</foreign>, insuper.</p>
 <p rend="hanging">
@@ -1254,10 +1311,9 @@
  <lb/><foreign xml:lang="grc">ῆσας</foreign>, consuevisti.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
- <head><hi rend="italic"><foreign xml:lang="grc">Θ</foreign>.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="9"><foreign xml:lang="grc">Θ</foreign>.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">σαλερὸν</foreign>, calidum ut a fele, nam ab eo, quod est <foreign xml:lang="grc">θερεσθαι</foreign>,
+<lb/><foreign xml:lang="grc">σαλερὸν</foreign>, calidum ut a fele, nam ab eo, quod est <foreign xml:lang="grc">θερεσθαι</foreign>,
 <lb/>hoc est calefieri, nomen factum est.</p>
 <p rend="hanging">
  <lb/><foreign xml:lang="grc">θὲρετρον</foreign>, locus ad commorationem aestatis idoneus, quidam
@@ -1305,10 +1361,9 @@
  <lb/><foreign xml:lang="grc">θώρηξις</foreign>, vinolentia vel ebrietas.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
- <head><hi rend="italic">I.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="10">I.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Ἐδνοῆται</foreign>, obliquatur, in se subsidet.</p>
+<lb/><foreign xml:lang="grc">Ἐδνοῆται</foreign>, obliquatur, in se subsidet.</p>
 <p rend="hanging">
  <lb/><foreign xml:lang="grc">ἰθαγενὲς</foreign>, ingenuum, ut ait sapiens, ted me aeque atque
 <lb/>ingenuos honorabat.</p>
@@ -1364,10 +1419,9 @@
 <lb/>utimur, propter squamarum piscis similitudinem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
- <head><hi rend="italic">K.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="20">K.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Καθαπτόμενοι</foreign>, perstringentes, sentientes vehementer.</p>
+<lb/><foreign xml:lang="grc">Καθαπτόμενοι</foreign>, perstringentes, sentientes vehementer.</p>
 <p rend="hanging">
  <lb/><foreign xml:lang="grc">καθετῆρι</foreign>, tortili linamento vulneratio, ab eo quod demittatur
 <lb/>iu vulnus, in secundo de morbis mulierum, in
@@ -1639,9 +1693,8 @@
 <lb/>retundit significat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
- <head><hi rend="italic"><foreign xml:lang="grc">Λ</foreign>.</hi></head>
-
- <p rend="hanging">
+ <lb/><label type="head"><hi rend="italic"><num value="30"><foreign xml:lang="grc">Λ</foreign>.</num></hi></label>
+<p rend="hanging">
 <lb/><foreign xml:lang="grc">Ααβὴ</foreign>, praesultus febris, maxime autem quae per circuitus
 <lb/>invadit.</p>
 <pb n="19.117"/>
@@ -1721,8 +1774,7 @@
  <lb/><foreign xml:lang="grc">λυῶδες</foreign>, insaniens, quod mentem amovet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
- <head><hi rend="italic">M.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="40">M.</num></hi></label>
 <p rend="hanging">
 <lb/><hi rend="italic">MuYida</hi>, velut offam et massam et magnam magdaliam
 <lb/>manum complentem.</p>
@@ -1858,10 +1910,9 @@
  <lb/><foreign xml:lang="grc">μωλυό/ιενα</foreign>, paulatim extabescentia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
- <head><hi rend="italic">N.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="50">N.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Ρἰἀυσιώσιες</foreign>, praeterfusiones effusiones sanguinis, quas et
+<lb/><foreign xml:lang="grc">Ρἰἀυσιώσιες</foreign>, praeterfusiones effusiones sanguinis, quas et
 <lb/>venarum nausea appellat. Translatum est autem nomen
 <lb/>ab iis, qui in nausea sanguinem vomunt.</p>
 <p rend="hanging">
@@ -1878,17 +1929,15 @@
 </div>
 <pb n="19.125"/>
 <div type="textpart" subtype="chapter" n="14">
- <head><hi rend="italic"><foreign xml:lang="grc">Ξ</foreign>.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="60"><foreign xml:lang="grc">Ξ</foreign>.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">,-ήρῇ σηπεδονωδει</foreign>, videlicet graugraena vel alicui hujusmodi
+<lb/><foreign xml:lang="grc">,-ήρῇ σηπεδονωδει</foreign>, videlicet graugraena vel alicui hujusmodi
 <lb/>generaliori morbo.</p>
 <p rend="hanging">
  <lb/><foreign xml:lang="grc">ξύμη</foreign>, quod vocatur pruritus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
- <head><hi rend="italic">O.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="70">O.</num></hi></label>
 <p rend="hanging">
 <lb/><hi rend="italic">^oa</hi>, quae a multis forba vocantur.</p>
 <p rend="hanging">
@@ -1944,7 +1993,7 @@
  <p rend="hanging">
  <lb/><foreign xml:lang="grc">ὸῤῥωδέων</foreign>, usque ad caudam extensurum.</p>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">ἄῤῥος</foreign>, tacri ossis extremum, quod etiam <foreign xml:lang="grc">όρροπύγιον</foreign> vocatur.</p>
+ <lb/><foreign xml:lang="grc">ἄῤῥος</foreign>, sacri ossis extremum, quod etiam <foreign xml:lang="grc">όρροπύγιον</foreign> vocatur.</p>
 <p rend="hanging">
  <lb/><foreign xml:lang="grc">ορχεα</foreign>, scrotum.</p>
 <p rend="hanging">
@@ -1956,10 +2005,9 @@
  <lb/>autem in primo Gyri expeditionis <foreign xml:lang="grc">ότίδα</foreign> per <foreign xml:lang="grc">ο</foreign> scribit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
- <head><hi rend="italic"><foreign xml:lang="grc">Π</foreign>.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="80"><foreign xml:lang="grc">Π</foreign>.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">παλίνοπτα</foreign>, a Iule averta.</p>
+<lb/><foreign xml:lang="grc">παλίνοπτα</foreign>, a Iule averta.</p>
 <p rend="hanging">
  <lb/><foreign xml:lang="grc">παλῆναι</foreign>, inspergere.</p>
 <p rend="hanging">
@@ -2151,10 +2199,9 @@
  <lb/><foreign xml:lang="grc">πυρὸς</foreign> appio v, ignis agrestis, erysipelatis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
- <head><hi rend="italic"><foreign xml:lang="grc">Ρ</foreign>.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="100"><foreign xml:lang="grc">Ρ</foreign>.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Ἐαγεῖσα</foreign>, significat aliquando affatim impetum faciens ut
+<lb/><foreign xml:lang="grc">Ἐαγεῖσα</foreign>, significat aliquando affatim impetum faciens ut
  <lb/>in fecundo de morbis majore, et <foreign xml:lang="grc">αἱμορραγία</foreign> ipsis, vehemens
 <lb/>sanguinis eruptio, ab -hoc composita est.</p>
  <p rend="hanging">
@@ -2215,10 +2262,9 @@
 <lb/>nominat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
- <head><hi rend="italic"><foreign xml:lang="grc">Σ</foreign>.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="200"><foreign xml:lang="grc">Σ</foreign>.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Ἐαράπους</foreign>, quae disparatos et distantes habet digitos pedum.</p>
+<lb/><foreign xml:lang="grc">Ἐαράπους</foreign>, quae disparatos et distantes habet digitos pedum.</p>
  <p rend="hanging">
  <lb/><foreign xml:lang="grc">σαρκάζειν</foreign>, proprie quidem per labrorum morsum subsannare.
 <lb/>Hippocrates autem et fumosis labris contractis
@@ -2479,10 +2525,9 @@
  <lb/><foreign xml:lang="grc">σχοῖνον ὴδύοσμον</foreign>, juncum odoratum, aromaticum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="19">
- <head><hi rend="italic">T.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="300">T.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Γάμισον</foreign>, coagulum.</p>
+<lb/><foreign xml:lang="grc">Γάμισον</foreign>, coagulum.</p>
 <p rend="hanging">
  <lb/><foreign xml:lang="grc">τὲγγειν</foreign>, humectare, madefacere.</p>
 <p rend="hanging">
@@ -2561,9 +2606,8 @@
 </div>
 <pb n="19.148"/>
 <div type="textpart" subtype="chapter" n="20">
- <head><hi rend="italic">Y.</hi></head>
-
- <p rend="hanging">
+ <lb/><label type="head"><hi rend="italic"><num value="400">Y.</num></hi></label>
+<p rend="hanging">
 <lb/><foreign xml:lang="grc">Ἀβοὶ</foreign>, gibbosi et <foreign xml:lang="grc">ύβωμα</foreign> globositas.</p>
  <p rend="hanging">
 <lb/><foreign xml:lang="grc">ύδαταινούσησιν</foreign>, aquescentibus, hydrope laborantibus vel
@@ -2640,10 +2684,9 @@
  <lb/><foreign xml:lang="grc">ύφύδρους</foreign>, aqua inter cutem laborantes.</p>
 </div>
 <div type="textpart" subtype="chapter" n="21">
- <head><hi rend="italic"><foreign xml:lang="grc">Φ</foreign>.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="500"><foreign xml:lang="grc">Φ</foreign>.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Ιβαγεδαίνη</foreign>, ulcere exedenti.</p>
+<lb/><foreign xml:lang="grc">Ιβαγεδαίνη</foreign>, ulcere exedenti.</p>
 <p rend="hanging">
  <lb/><foreign xml:lang="grc">φαίνηται</foreign>, significat et transparens in igne fiat, ut in teeundo
 <lb/>de morbis mulierum.</p>
@@ -2762,10 +2805,9 @@
 <lb/>aspera et obscura.</p>
 </div>
 <div type="textpart" subtype="chapter" n="22">
- <head><hi rend="italic">X.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="600">X.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">Καλκἰης στυπτηρίη</foreign>, aeque valens, ut chalcitis.</p>
+<lb/><foreign xml:lang="grc">Καλκἰης στυπτηρίη</foreign>, aeque valens, ut chalcitis.</p>
  <p rend="hanging">
  <lb/><foreign xml:lang="grc">χαραδρωθέωσι</foreign>, effluvium et exitum habeant.</p>
  <p rend="hanging">
@@ -2821,10 +2863,9 @@
 </div>
 <pb n="19.156"/>
 <div type="textpart" subtype="chapter" n="23">
- <head><hi rend="italic"><foreign xml:lang="grc">Ψ</foreign>.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="700"><foreign xml:lang="grc">Ψ</foreign>.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">ΙΡἀγδας</foreign>, species quaedam unguenti.</p>
+<lb/><foreign xml:lang="grc">ΙΡἀγδας</foreign>, species quaedam unguenti.</p>
 <p rend="hanging">
  <lb/><foreign xml:lang="grc">ψαίρειν</foreign>, innatare, leniter attingere.</p>
 <p rend="hanging">
@@ -2839,10 +2880,9 @@
 <lb/>ut si formidolosos dixisset.</p>
 </div>
 <div type="textpart" subtype="chapter" n="24">
- <head><hi rend="italic"><foreign xml:lang="grc">Ω</foreign>.</hi></head>
-
+ <lb/><label type="head"><hi rend="italic"><num value="800"><foreign xml:lang="grc">Ω</foreign>.</num></hi></label>
 <p rend="hanging">
- <lb/><foreign xml:lang="grc">’Ώδει</foreign>, in malo, arcesilao autem male olebat, sic videlicet
+<lb/><foreign xml:lang="grc">’Ώδει</foreign>, in malo, arcesilao autem male olebat, sic videlicet
 <lb/>sine jota scribitur, non cum jota ut id quod sequitur.</p>
  <p rend="hanging">
  <lb/><foreign xml:lang="grc">ψδεῖ</foreign>, tumescit: manifestum autem est cum jota hoc scribi,

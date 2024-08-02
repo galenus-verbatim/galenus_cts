@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De placitis Hippocratis et Platonis</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg032.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -79,13 +100,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg032.verbatim-lat1">
 <pb n="5.181"/>
@@ -94,10 +158,8 @@
 <head>CALENI DE PLACITIS HIPPO CRATIS ET
 <lb/>PLATONIS LIBRI NOVEM. LIBER PRIMVS
 <lb/>SINE PRINCIPIO.</head>
-
-
 <p rend="indent">
- <lb/>Sed et illius quod sterno coniunctum erat, computruit,
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Sed et illius quod sterno coniunctum erat, computruit,
 <lb/>lieebatque ita aperte cor ridere, ut in animalium
 <lb/>dissectionibus, ubi consulto et data opera id denudamus.
 <lb/>Igitur puer servatus est, obductis jam nova
@@ -157,9 +219,8 @@
 <lb/>sinistrum ventriculum sanguine plenum esse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
 <p rend="indent">
- <lb/>Etenim spiritum suium in eo <hi rend="italic">corde</hi>, antequam
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Etenim spiritum suium in eo <hi rend="italic">corde</hi>, antequam
 <lb/>denudatum fit, contineri, postquam autem denudatum
 <lb/>sit, sanguinem incidere, ut Erasistrati sectatores dis
 <lb/>cere solebant, nihil aliud esse puto quam verba hominum,
@@ -246,8 +307,8 @@
 <lb/>ait. Cujus sententiam, ut ab impudenti audacia
 <lb/>natam, Erasistratus quidem ne confutatione dignam censuit.</p></div>
 <div type="textpart" subtype="chapter" n="7">
- <p rend="indent">
-  <lb/>Ego vero, postquam hoc milii constitutum
+<p rend="indent">
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Ego vero, postquam hoc milii constitutum
 <lb/>est, de omnibus confiderare, paucis contra Praxagoram
 <lb/>disputare volo, et maxime quod Chrysippus hominis
 <lb/>ejus meminit, diversum sentiens ab his, qui nervos a capite
@@ -456,10 +517,8 @@
 <lb/>sit, haec mihi sutis jam dicta sunto.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Igitur relicto Praxagora impudentia
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Igitur relicto Praxagora impudentia
 <lb/>quaedam commento, ad Aristotelem revertamur, quum
 <lb/>praesertim et ipse ex corde produci nervos censeat, sed
 <lb/>confuse tamen et indistincte admodum de nervorum
@@ -528,10 +587,8 @@
 <lb/>judicabis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Tria enim instrumenta sunt, quae corporis
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Tria enim instrumenta sunt, quae corporis
 <lb/>forma inter se vicina sunt, sed quae tamen functione
 <lb/>atque usu multum variant. Horum unum nervus,
 <pb n="5.204"/>
@@ -580,10 +637,8 @@
 <lb/>finiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Quo etiam modo facile ostendam, cor non
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Quo etiam modo facile ostendam, cor non
 <lb/>habere manifeste nervos sensitivos et voluntarios, magnitudine
 <lb/>vel numero relatu dignos; unum tamen exiguum,
 <lb/>ut ante dixi, habet, et eum a cerebro in se diductum.
@@ -673,10 +728,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE HIPPOCRATIS ET PLATONIS
 <lb/>PLACITIS LIBER SECVNDVS.</head>
-
-
 <p rend="indent">
- <lb/>Quum de Hippocratis et Platonis placitis
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quum de Hippocratis et Platonis placitis
 <lb/>considerare instituissem, ab eo, quod potestate primum, est,
 <lb/>auspicatus sum, quod et reliqua prope universa particularia
 <lb/>subsequi monstrari. Hoc autem est: facultates corpus
@@ -695,10 +748,8 @@
 <lb/>ostendere decrevi, quo tandem modo hallucinentur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>At forte fatias fuerit perspicuitatis gratia
+<lb/><label type="head"><num value="2">Cap. II.</num></label> At forte fatias fuerit perspicuitatis gratia
 <lb/>statim operis luitio rationum differentias distinguere, quibus
 <lb/>omnes male quodcunque problema tractantes utuntur.
  <lb/>Dico autem, sumptionum, <hi rend="italic">lemmata vocant</hi>, quas conclusionis
@@ -717,7 +768,7 @@
 <lb/>ea nimirum optime veteres philosophi Theophrastus et
 <lb/>Aristoteles in libris posteriorum analyticorum. Quare de
 <lb/>tribus animalis principiis non longam habiturum me
-<lb/>cum illis disputationem spcro. Vulgares enim et rhetoricas
+<lb/>cum illis disputationem spero. Vulgares enim et rhetoricas
 <lb/>sumptiones ad scientificas demonstrationes adducere
 <lb/>verentur, quibus Chrysippi libri scatent, plebejos
 <lb/>interim testes snmptionum, quas constituunt, citantes, interim
@@ -821,10 +872,8 @@
 </div>
 <pb n="5.219"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Verum quas sumptiones inquirere conveurat
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Verum quas sumptiones inquirere conveurat
 <lb/>problemati instituto et convenientes et proprias, scriptum
 <lb/>fuit et de his abunde in his, quae de demonstratione
 <lb/>tum ab antiquis tutius et compendiosius dicta sunt,
@@ -967,10 +1016,8 @@
 <lb/>quae falso sibi persuaserunt?</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Sed quia non telum institutum est persnadere
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Sed quia non telum institutum est persnadere
 <lb/>illis, test aliis etiam omnibus, quicunque nonsium
 <lb/>pravis disputandi consuetudinibus enutriti perversitatem
 <lb/>animi habent immedicabilem, incipiam rutilis ex
@@ -1225,10 +1272,8 @@
 <lb/>unum seorsim conscripsimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Qui vero putant vocem aut respirationem
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Qui vero putant vocem aut respirationem
 <lb/>a corde fieri situs vicinitate, falsi sunt, haud videntes,
 <lb/>quod non plane, si quae pars vicina est, haec necessario
 <lb/>actionis sit principium; neque enim, qui cerebrum
@@ -1642,10 +1687,8 @@
 <lb/>discessit et poetas testes citavit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Quod igitur Chrysippus vidit quidem,
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Quod igitur Chrysippus vidit quidem,
 <lb/>sed oratione non exposuit, id apponere mihi risum est.
 <lb/>Quandoquidem enim fieri potest, ut, licet quam maxime
 <lb/>omnium nervorum origo cerebrum videatur, cor ipsi vim
@@ -1732,10 +1775,8 @@
 <lb/>evadere existiment.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Ego sane jam videor mihi, quod Chrylippus
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Ego sane jam videor mihi, quod Chrylippus
 <lb/>jussit, fecisse, inquirendo, a corde ne facultas aliqua
 <lb/>cerebro, an a cerebro cordi suggeratur. Chrysippus
 <lb/>porro ipse parvi fecisse ridetur hujus rei inquisitionem,
@@ -1841,10 +1882,8 @@
 </div>
 <pb n="5.273"/>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Verum ab initio erat hoc in libro propositum,
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Verum ab initio erat hoc in libro propositum,
 <lb/>quatuor sumptionum differentias ostendere. Vocabam
 <lb/>autem primum ipsorum genus scientificum et demonstratorium,
 <lb/>secundum vero exercitatorium et ut Aristoleles
@@ -1881,7 +1920,7 @@
 <pb n="5.275"/>
 <lb/>manifesto indicetur, eliciam. Nicander tanc hoc pacto
 <lb/>inquit:</p>
-<lg><l>Appellant siomachi cor excipiens alimentum.</l></lg>
+<lg rend="italic"><l>Appellant siomachi cor excipiens alimentum.</l></lg>
 <p rend="nonindented">
  <lb/>Thucydides hoc pacto: <hi rend="italic">Quum sit cor desixisset, pervertissetque
 <lb/>ipsum, etiam purgationes bilis omnes, ut sunt
@@ -2057,10 +2096,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE HIPPOCRATIS ET PLATONIS
 <lb/>PLACITIS LIBER TERTIVS.</head>
-
-
 <p rend="indent">
- <lb/>Quod sane necessarium existat non solum
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quod sane necessarium existat non solum
 <lb/>philosophis, sed medicis etiam, quicunque non absque
 <lb/>ratiocinatione artem attingunt, speculari de facultatibus
 <lb/>corpus nostrum regentibus, quot genere sint, et quales
@@ -2203,24 +2240,22 @@
 <lb/>foras propellis faciemque inflari dicas.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Quanquam de hoc non ambigebas, num
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Quanquam de hoc non ambigebas, num
 <lb/>irascens animae facultas cordi inesset, sed an rationalis;
 <lb/>quo demonstrato, non multum de irascente laborare te
 <lb/>oportebat, neque librum versibus poeticis replere, quos
 <lb/>in eum modum deinceps recitas:</p>
-<lg>
+<lg rend="italic">
 <l>Dulcior ira viri permulto melle fruente</l>
 <l>Augescit, calidus tanquam alto in pectore fumus.</l>
 </lg>
 <p rend="nonindented">
  <lb/>Ac rursus:</p>
-<lg><l>Ipsum ira detulit supra praecordia.</l></lg>
+<lg rend="italic"><l>Ipsum ira detulit supra praecordia.</l></lg>
  <p rend="nonindented">
   <lb/>Ac iterum:</p>
-<lg><l>Verum animus saliens intus dat praescgia.</l></lg>
+<lg rend="italic"><l>Verum animus saliens intus dat praescgia.</l></lg>
 <pb n="5.294"/>
  <p rend="nonindented">
 <lb/>Aliaque id genus infinita toto libro tractat, dum irascibilem
@@ -2264,104 +2299,104 @@
 <pb n="5.296"/>
 <lb/>cordis esse affectiones. Quid igitur sibi volunt versus hi
 <lb/>ex Homero collecti?</p>
-<lg><l>Cor ipsi intus latrat.</l></lg>
+<lg rend="italic"><l>Cor ipsi intus latrat.</l></lg>
 <p rend="nonindented">
  <lb/>Et:</p>
-<lg><l>Pectore percusse verbis cor increpat ira:</l>
+<lg rend="italic"><l>Pectore percusse verbis cor increpat ira:</l>
 <l>Suffer et haec, cor, nam graviora aliquando tulsti.</l></lg>
  <p rend="nonindented">
   <lb/>Item:</p>
-<lg><l>Pectore prudenti sursum suspiria duxit</l>
+<lg rend="italic"><l>Pectore prudenti sursum suspiria duxit</l>
 <l>Ex corde imo Agamemnon Graecis navibus ostans.</l></lg>
  <p rend="nonindented">
   <lb/>Ad haec:</p>
-<lg><l>Sed mihi bile tumet cor.</l></lg>
+<lg rend="italic"><l>Sed mihi bile tumet cor.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Juno non iram tenuit sub pectore, at inquit.</l></lg>
+<lg rend="italic"><l>Juno non iram tenuit sub pectore, at inquit.</l></lg>
  <p rend="nonindented">
   <lb/>Praeterea :</p>
-<lg><l>Verum et post etiam sub pectore continet iram,</l>
+<lg rend="italic"><l>Verum et post etiam sub pectore continet iram,</l>
 <l>Donec perficiat.</l></lg>
  <p rend="nonindented">
   <lb/>In his omnibus non rationalis, sed irascibilis animae facultas
 <pb n="5.297"/>
 <lb/>in corde contineri significatur, quemadmodum in
 <lb/>his quoque, ut arbitror.</p>
-<lg><l>Atque ira hanc quamvis sapientem invasit adurens.</l></lg>
+<lg rend="italic"><l>Atque ira hanc quamvis sapientem invasit adurens.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Dulcior hic multo quam mel quod desinit instar</l>
+<lg rend="italic"><l>Dulcior hic multo quam mel quod desinit instar</l>
 <l>Rami in pectoribus conscendet protinus imis.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>— — Cor appetit intus</l>
+<lg rend="italic"><l>— — Cor appetit intus</l>
 <l>Bellum agere incessens, pngnamque subire diurnam.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Atque animum audacem ipsi in pectore dii posuerunt.</l></lg>
+<lg rend="italic"><l>Atque animum audacem ipsi in pectore dii posuerunt.</l></lg>
  <p rend="nonindented">
  <lb/>Et:</p>
-<lg><l>Cor Laertiadae dolor ast invasit Ulyifis.</l></lg>
+<lg rend="italic"><l>Cor Laertiadae dolor ast invasit Ulyifis.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Pectoribus robur validum patris indidit ipso</l></lg>
+<lg rend="italic"><l>Pectoribus robur validum patris indidit ipso</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>— — Sed pectore Achilles</l>
+<lg rend="italic"><l>— — Sed pectore Achilles</l>
 <l>Citarum animum et grandem virtutibus obtinet intus.</l></lg>
 <pb n="5.298"/>
  <p rend="nonindented">
  <lb/>Et:</p>
-<lg>
+<lg rend="italic">
  <l>— — Durumque malumque</l>
 <l>Dii posuere animum tibi pectore virginis ergo.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Sic Aeneae animus gavisos pectore in ipsa.</l></lg>
+<lg rend="italic"><l>Sic Aeneae animus gavisos pectore in ipsa.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Et Jovis exarsit postium sub pectore robur</l>
+<lg rend="italic"><l>Et Jovis exarsit postium sub pectore robur</l>
 <l>Noscere.</l></lg>
  <p rend="nonindented">
   <lb/>Ad haec :</p>
-<lg><l>Atque mihi ipsi animus bellum puguamque subire</l>
+<lg rend="italic"><l>Atque mihi ipsi animus bellum puguamque subire</l>
 <l>Permultum ardescit nunc nunc in pectore cato.</l></lg>
  <p rend="nonindented">
   <lb/>Rursus :</p>
-<lg><l>Ipse autem valide clamans in pectore mulsit</l>
+<lg rend="italic"><l>Ipse autem valide clamans in pectore mulsit</l>
 <l>His animum, est Hector coepit meminesse timoris.</l></lg>
  <p rend="nonindented">
   <lb/>Rursus:</p>
-<lg><l>Incitat, o Nestor, cor me atque animus generosum</l></lg>
+<lg rend="italic"><l>Incitat, o Nestor, cor me atque animus generosum</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Est illi prudens cor atque animus generosus.</l></lg>
+<lg rend="italic"><l>Est illi prudens cor atque animus generosus.</l></lg>
 <pb n="5.299"/>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>O si, clare senex, genua haud minus ipse valenter</l>
+<lg rend="italic"><l>O si, clare senex, genua haud minus ipse valenter</l>
 <l>Possideas, quam animum retines in pectore caro.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Nosti etenim, qualis muliebri in pectore suevit</l>
+<lg rend="italic"><l>Nosti etenim, qualis muliebri in pectore suevit</l>
 <l>Esse animus.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Atque tuum charum cor, me patiente dolores,</l>
+<lg rend="italic"><l>Atque tuum charum cor, me patiente dolores,</l>
 <l>Sufferat.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Fatus sic, animum tandem his in pectore movit.</l></lg>
+<lg rend="italic"><l>Fatus sic, animum tandem his in pectore movit.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Telemachus magnum luctum sub corde recepit.</l></lg>
+<lg rend="italic"><l>Telemachus magnum luctum sub corde recepit.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p> 
-<lg><l>Sic dixit placans animum sub pectore carum.</l></lg>
+<lg rend="italic"><l>Sic dixit placans animum sub pectore carum.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Huic cor in requie mansu deterrima passum.</l></lg>
+<lg rend="italic"><l>Huic cor in requie mansu deterrima passum.</l></lg>
 <p rend="nonindented">
  <lb/>Omnes enim in versus, et praeterea infiniti alii, si numerum
 <pb n="5.300"/>
@@ -2371,13 +2406,13 @@
 <lb/>ex Homero haec quidem sufficiunt. Eorum autem,
 <lb/>quae ex llesiodo Chrysippus permulta et ipsa adjecit,
 <lb/>abunde mihi erit, si duo triave exempli gratia citavero.</p>
-<lg><l>Namque ubi succrevit animus sub pectore caro.</l></lg>
+<lg rend="italic"><l>Namque ubi succrevit animus sub pectore caro.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Iram animum graviter cruciantem pectore gestans.</l></lg>
+<lg rend="italic"><l>Iram animum graviter cruciantem pectore gestans.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Cunctorum crevit in corde animus generosus.</l></lg>
+<lg rend="italic"><l>Cunctorum crevit in corde animus generosus.</l></lg>
  <p rend="nonindented">
   <lb/>In quibus sane ad Chrysippi magnanimitatem obstupesco.
 <lb/>Quum enim conveniat hominem, qui tot positas periegerit
@@ -2392,16 +2427,16 @@
 <lb/>oportebat, quibus autem mentem, intellectum, cogitationem
 <lb/>et rationem in corde contineri aliquis dixerit, ea
 <lb/>colligere, quemadmodum et haec innuunt.</p>
-<lg><l>Juppiter exemit tunc ipse ex pectore mentem.</l></lg>
+<lg rend="italic"><l>Juppiter exemit tunc ipse ex pectore mentem.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Consilium, Neptune, meum hoc in pectore nosti.</l></lg>
+<lg rend="italic"><l>Consilium, Neptune, meum hoc in pectore nosti.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Et tibi perpetuo est scatentia pectore talis.</l></lg>
+<lg rend="italic"><l>Et tibi perpetuo est scatentia pectore talis.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
- <lg><l>— — Non mihi stat talis sententia pectore.</l></lg>
+ <lg rend="italic"><l>— — Non mihi stat talis sententia pectore.</l></lg>
 <p rend="nonindented">
  <lb/>Sicut enim prioris versuum generis, quibus in corde animae
 <lb/>affectus ostenduntur, infinita apud poetas est copia,
@@ -2411,10 +2446,8 @@
 </div>
 <pb n="5.302"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Haec igitur sola Chrysippum seligere conveniebat,
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Haec igitur sola Chrysippum seligere conveniebat,
 <lb/>si omnino testibus litem dirimere statuerat. At
 <lb/>plura quidem illa, pauciora vero haec scribere, ei, qui
 <lb/>historiae veritatem ostendat, probe successerit; plura enim
@@ -2422,7 +2455,7 @@
 <lb/>tueri aggrediatur, adversabuntur, praesertim quae
 <lb/>manifesto iracundiae adversantem increpantemque faciunt
 <lb/>rationem, veluti et haec sonant.</p>
-<lg><l>Pectora sed sariens, ipsum cor increpat ira:</l>
+<lg rend="italic"><l>Pectora sed sariens, ipsum cor increpat ira:</l>
 <l>Auster et haec, cor, nam graviora aliquando tulisti.</l></lg>
  <p rend="nonindented">
 <lb/>Haec si quidem Ulyssem ad te dicentem Homerus introduxit,
@@ -2459,7 +2492,7 @@
 <lb/>sed a ratione contineatur, quemadmodum in his
 <lb/>versibus Ulyssem expressit. Omnia vero deinceps ea
 <lb/>ascribam.</p>
-<lg><l>Tunc sponsis meditans animo mala divus Ulysses</l>
+<lg rend="italic"><l>Tunc sponsis meditans animo mala divus Ulysses</l>
 <l>Decubuit vigil; interea famulae egrediuntur</l>
 <l>Aedibus, ac venerem cum sponsis turpiter extra</l>
 <l>Exercent, largo resti sese exhilarantes.</l>
@@ -2511,7 +2544,7 @@
 <pb n="5.307"/>
 <lb/>iracundiae concesserit, hanc Eurspides tunc loquentem
 <lb/>ita introducit:</p>
-<lg><l>Equidem scio, quae sum patratura mala,</l>
+<lg rend="italic"><l>Equidem scio, quae sum patratura mala,</l>
 <l>Potentior sed ira consiliis meis.</l></lg>
  <p rend="nonindented">
   <lb/>Novit quidem magnitudinem malorum, quae est perpessatura,
@@ -2554,7 +2587,7 @@
 <lb/>aliisque poetis multorum versuum memluit simili absurditate
 <lb/>scatentium, veluti etiam quum Tyrtaeum dicentem
 <lb/>citat:</p>
-<lg><l>Iram servantis gestans in corde leonis.</l></lg>
+<lg rend="italic"><l>Iram servantis gestans in corde leonis.</l></lg>
  <p rend="nonindented">
   <lb/>Quod namque leo iram habet, accurate omnes homines,
 <lb/>etiam priusquam audivissemus Tyrtaeum, norimus; non
@@ -2578,10 +2611,8 @@
 <lb/>ponit, ab ipsis, quos citat, proditur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Etenim quum pronunciet, ideo nonnullos
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Etenim quum pronunciet, ideo nonnullos
 <lb/>excordes diri, quod universi homines animae principatum
 <lb/>in corde contineri crediderint, virum demirari
 <lb/>satis nequeo, quod non eatenus assequitur ea, quae diemitur,
@@ -2722,7 +2753,7 @@
 <lb/>apud se ipsam persequitur, et submittens persuadensque
 <lb/>anano iracundo, ut ab impiis operibus recederet. Quare Euripides
 <lb/>merito de ipsa dixit:</p>
-<lg><l>Quidnam faciet anima</l>
+<lg rend="italic"><l>Quidnam faciet anima</l>
 <l>Piscoso atque irrequieta,</l>
 <l>Oestro irritata malorum?</l></lg>
  <p rend="nonindented">
@@ -2782,10 +2813,8 @@
 <lb/>suum subvertentia, sed etiam haec sibi attestari censet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Itaque jam a talibus digressi videamus
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Itaque jam a talibus digressi videamus
 <lb/>deinceps orationes quas proponit universas, toto sermone
 <lb/>ad caput iterum reducto, ne aliquid omittatur. Apponam
 <lb/>autem totam seriem, etiamsi longior fit; habet ea
@@ -3008,10 +3037,8 @@
 <lb/>composuerinms ?</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Forte igitur praestiterit, quoniam in hunc
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Forte igitur praestiterit, quoniam in hunc
 <lb/>sermonem incidimus, demonstrationes scientificas in memoriam
 <lb/>revocare, quibus de superiori commentario disifusius
 <lb/>disputavi, assumptiones ostendens, unde aliquis propositum
@@ -3053,10 +3080,8 @@
 <lb/>existunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Id prosectu, quod jam antea hoc in libro
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Id prosectu, quod jam antea hoc in libro
 <lb/>dixi, nunc etiam repetere est necessarium, quod Chrysippus
 <lb/>in oratione post citata verba prompte rursus assumit,
 <lb/>ex uno solo utrnsque facultates ordiri, ne una quidem
@@ -3181,7 +3206,7 @@
 <pb n="5.342"/>
 <lb/>frequenter aliis minantur homines. Et quaedam
 <lb/>mulier apud positam precando haec dicit:</p>
-<lg><l>— — Hujus ego medium hepar haberem</l>
+<lg rend="italic"><l>— — Hujus ego medium hepar haberem</l>
 <l>Vescendam incumbens — —</l></lg>
  <p rend="nonindented">
   <lb/>Cur igitur non etiam jecur animae initium, carissime
@@ -3189,7 +3214,7 @@
 <lb/>tantum poetam, ejus rei testem habeamus, cui justius
 <lb/>erat te fidem adhibere, quam idlotis? Ille sane praeter
 <lb/>alia adhuc etiam haec de jecinore prodidit;</p>
-<lg><l>Et Tityum vidi, clarae telluris alumnum,</l>
+<lg rend="italic"><l>Et Tityum vidi, clarae telluris alumnum,</l>
 <l>Porrigitur cui tota novem per jugera corpus.</l>
 <l>Hinc atque hinc geminos rostro urget vultur adunco,</l>
 <l>immortale jecur tondens; jacet ille supinus,</l>
@@ -3283,15 +3308,15 @@
 <lb/>delude praefatus quaedam, ubi poeta in corde rationem
 <lb/>haberi pronunciat, ile inseri ex consequentibus: <hi rend="italic">Quod
 <lb/>vero et concupiseibilis hic resideat, hinc constat:</hi></p>
-<lg><l>Nunquam alias animum languenti in pectore nostrum</l>
+<lg rend="italic"><l>Nunquam alias animum languenti in pectore nostrum</l>
 <l>seu dea seu mulier tanto devinxit amore.</l></lg>
 <p rend="nonindented">
  <lb/>Postea rursus adducit: <hi rend="italic">Quod irascibilis facultas inibi habeatur,
 <lb/>huiusmodi plura declarant:</hi></p>
-<lg><l>Non iram duno tenuit sub pectore, at inquit.</l></lg>
+<lg rend="italic"><l>Non iram duno tenuit sub pectore, at inquit.</l></lg>
 <p rend="nonindented">
  <lb/>Et:</p>
-<lg><l>Atque ira hunc quamvis sapientem adurens.</l></lg>
+<lg rend="italic"><l>Atque ira hunc quamvis sapientem adurens.</l></lg>
 <pb n="5.348"/>
  <p rend="nonindented">
 <lb/>In his omnibus Chrysippus fatetur, facultates quasdam
@@ -3307,10 +3332,8 @@
 <lb/>loquacitate tractata.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Nunc vero hoc in libro, quoniam et
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Nunc vero hoc in libro, quoniam et
 <lb/>haec vitum est apponere, et alia, quae praecedunt, tum
 <lb/>executus, hic deinceps sermonem de Minerva adjiciam.
 <lb/>Nam quum Chrysippus sentiret, fabulam de dea, quae ex
@@ -3344,7 +3367,7 @@
 <lb/>quod praesenti sermoni nihil sacit, nam quod commune
 <lb/>in ipsos habetur, salum praesentibus conducit.
 <lb/>Scribitur autem in theogonia ad eum modum:</hi></p>
-<lg><l>Juppiter ipse deum prima pro coniuge Metin</l>
+<lg rend="italic"><l>Juppiter ipse deum prima pro coniuge Metin</l>
  <l>sumpsit, doctrina superantem hominesque denique.</l>
  <l>Sed glaucis oculis divam paritura Minervam</l>
  <l>Ab Jove tum demum decepta est mente dolosos</l>
@@ -3352,7 +3375,7 @@
  <l>Quo dea consuleret patri pravumque bonumque.</l></lg>
  <p rend="nonindented">
   <lb/><hi rend="italic">Deinde progressis ita concinit:</hi></p>
- <lg><l>Ex capite ipse suo generavit Pallada glaucam,</l>
+ <lg rend="italic"><l>Ex capite ipse suo generavit Pallada glaucam,</l>
   <l>Quae gravis horrendas acies invicta gubernat,</l>
   <l>Cui strepitus pugnaeque placeat et bella verendae.</l></lg>
 <pb n="5.351"/>
@@ -3360,7 +3383,7 @@
 <lb/><hi rend="italic">Nam pectore ipso Metin reposuisse latus manifesto constat,
 <lb/>atque ita ipsam et capite generasse tradit. Post illa
 <lb/>quum plura ipso recensuisset, ejuscnodi subnectit:</hi></p>
- <lg>
+ <lg rend="italic">
 <l>Vulcanum ex lite hac peperit saturata natum</l>
 <l>Artibus insignem Aegiocho sine coniuge magno.</l>
 <l>Artibus insignis divos supereminet omnes.</l>
@@ -3522,9 +3545,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENT DE HIPPOCRATIS ET PLATONIS
 <lb/>PLACITIS LIBER QVARTVS.</head>
-
 <p rend="indent">
- <lb/>Quod disputatio nostra longius pressiteta
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quod disputatio nostra longius pressiteta
 <lb/>sit, non ego accusandus venio, sid ii, qui libros a se
 <lb/>conscriptos pravis repleverunt argumentis. Haec si quis
 <lb/>omnia praetereat, forsan in suspicionem veniet, non
@@ -3565,23 +3587,23 @@
 <lb/>quemadmodum quoque faciendum erat</hi>.
  <lb/><hi rend="italic">Deinde ita inferens ait: Quod enim rationalis facultas
 <lb/>inibi consistat, ex his, quae sequuntur, constat:</hi></p>
-<lg><l>Verum aliud mens est in pectore, nemo fidelis.</l></lg>
+<lg rend="italic"><l>Verum aliud mens est in pectore, nemo fidelis.</l></lg>
 <p rend="nonindented">
  <lb/><hi rend="italic">et:</hi></p>
-<lg><l>Ast animum nunquam suasit sub pectore verbis.</l></lg>
+<lg rend="italic"><l>Ast animum nunquam suasit sub pectore verbis.</l></lg>
 <pb n="5.363"/>
 <p rend="nonindented">
  <lb/>Deinde rursus pluribus appositis versibus inquit: Quod et
 <lb/>concupiscibilis ibidem sit, ex his liquet:</p>
-<lg><l>Nunquam alias animum languenti in pectore nostrum</l>
+<lg rend="italic"><l>Nunquam alias animum languenti in pectore nostrum</l>
 <l>Seu Dea seu mulier tanto devinxit amore.</l></lg>
 <p rend="nonindented">
  <lb/>Iterum paulo post: Quod etiam irascibilis eundem locum
 <lb/>occupet, ejusmodi multa declarant:</p>
-<lg><l>Pectore non iram Juno suppressit, at inquit.</l></lg>
+<lg rend="italic"><l>Pectore non iram Juno suppressit, at inquit.</l></lg>
 <p rend="nonindented">
  <lb/>Item:</p>
-<lg><l>Atque ira invasit sapientem quamlibet urens,</l>
+<lg rend="italic"><l>Atque ira invasit sapientem quamlibet urens,</l>
 <l>Dulcior et mullo quam mel quod desinit, instar</l>
 <l>Fumi in pectoribus conscendit protinus imis.</l></lg>
  <p rend="nonindented">
@@ -3595,12 +3617,12 @@
 <lb/>jecinore et corde. Imo etiam facultatum opera et
 <lb/>affectus versibus quemadmodum scripsit, abunde ostendrt,
 <lb/>hoc pacto :</p>
-<lg><l>Non effusus amor mihi divae aut soeminae adegit</l>
+<lg rend="italic"><l>Non effusus amor mihi divae aut soeminae adegit</l>
 <l>Sic animum.</l></lg>
 <p rend="nonindented">
  <lb/>Hoc pacto amor concupiscibilis facultatis affectus fuerit.
 <lb/>Quum autem inquit:</p>
-<lg><l>Non iram Juno suppressit corde, sed inquit;</l></lg>
+<lg rend="italic"><l>Non iram Juno suppressit corde, sed inquit;</l></lg>
 <p rend="nonindented">
  <lb/>sic animosae facultatis erit. Refert autem in praefimtia
 <lb/>nihil, sive opera facultatum, sive affectus ejusinodi
@@ -3639,10 +3661,8 @@
 <lb/>facultatis, iram iialcibilis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Quemadmodum autem in his et oblitus est
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Quemadmodum autem in his et oblitus est
 <lb/>eorum simul, quae ipsis conscripsit, et adventus veterum
 <lb/>dogma contradicere non est dignatus, pari modo in generalium
 <lb/>affectuum definitionibus, quas priores exposuit,
@@ -3853,10 +3873,8 @@
 <lb/>veteribus contrarium pronunciavit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Quum autem deinceps inspicit, judiciane
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Quum autem deinceps inspicit, judiciane
 <lb/>quaedam, an quae judicia sequuntur, affectus este putaridum
 <lb/>sit, utrobique a veteribus recessit, sed multo magis
 <lb/>dum quod deterius est eligit. Etenim zenoui in hoc
@@ -3908,10 +3926,8 @@
 </div>
 <pb n="5.380"/>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>De eo autem, quod nihili faciat, si ipse
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> De eo autem, quod nihili faciat, si ipse
 <lb/>sibi contradicat, quum infinita adhuc possem afferre, quae
 <lb/>forsan etiam postea plus nactus otii in sinum conferam
 <lb/>commentarium omnia, nunc omissis aliis eorum duntaxat,
@@ -4117,10 +4133,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Ac hujus tempestatis inter eos clarissimi,
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Ac hujus tempestatis inter eos clarissimi,
 <lb/>interrogantibus nobis frequenter, quae tandem affectuum
 <lb/>motus causa statuenda sit, sursum et deorsum sermones
 <lb/>implicant, sed nihil manifesto expediunt. Verum interitu
@@ -4307,7 +4321,7 @@
 <lb/>poetam; cessante autem afficta, licet accidentium opinio
 <lb/>simul cum rationum imbecillitate permaneret, nequaquam
 <lb/>conquiescere probabat</hi>.</p>
-<lg>
+<lg rend="italic">
 <l>Optima sed vise est animi sententia cunctis,</l>
 <l>Nestora Neliaden primarium adire virorum,</l>
 <l>si quod consilium laudabile conderet una</l>
@@ -4318,7 +4332,7 @@
   <lb/><hi rend="italic">Postquam vero et Nesior ipse a longinquo advenientem
 <lb/>conspexisset, quis sit interrogavit: indicans cum quadam
 <lb/>miseratione ait:</hi></p>
- <lg>
+ <lg rend="italic">
 <l>Sic erro, quoniam dulcis mihi somnus ocellis</l>
 <l>Haud sedet, at bellum est Graecorum et funera curae .</l>
 <l>Nam Danais valde metuo, neque tuta mihi mens</l>
@@ -4359,10 +4373,8 @@
 <lb/>Sed de illis quidem rursus disseremus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>At, quod Chrysippus non siemel aut bis,
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> At, quod Chrysippus non siemel aut bis,
 <lb/>verum saepe admodum fatetur, diversam a ratiocinatrice
 <lb/>facultatem quandam esse in animis hominum cautam efsectuum,
 <lb/>licet nobis ex hujusmodi condiscere, ubi causam
@@ -4394,7 +4406,7 @@
 <lb/>etiam in animo latis nervorum ratio, secundum quam
 <lb/>et per translationem enerves quqsaam dicimus, et nervos
 <lb/>habere</hi>. Deinde rursus hoc ipsum exponens ita scribit:
- <lb/><hi rend="italic">Alius metu oboriente discedit, alius sucro aut damno illato 
+ <lb/><hi rend="italic">Alius metu oboriente discedit, alius lucro aut damno illato 
 <pb n="5.405"/>
 <lb/>recisiit remifitque, alius in alii similibus non paucis.
 <lb/>Singula enim huiusmodi pervertunt subiguntque
@@ -4461,7 +4473,7 @@
 <lb/>decepta recessit ab iis, quae instituerat. Jam Mellea
 <lb/>iracundia compulsa, de qua haud novi quomodo Chrysippus
 <lb/>Euripidis versuum imprudens contra sese meminerit:</p>
-<lg><l>Ego equidem novi, patrabo quae mala,</l>
+<lg rend="italic"><l>Ego equidem novi, patrabo quae mala,</l>
 <l>Potentior sed ira est consiliis meis.</l></lg>
 <p rend="nonindented">
  <lb/>Non enim intelligere Eurrpidem dixisse oportebat, si
@@ -4512,7 +4524,7 @@
 <lb/>Iamque longe a ratione absunt, ut audiant aut attendant
 <lb/>id genus aliquod, ut nec iniuria haec de illis
 <lb/>dici possint:</hi></p>
- <lg><l>Nam diva cypris admonita laxat nihil;</l>
+ <lg rend="italic"><l>Nam diva cypris admonita laxat nihil;</l>
 <l>Si namque cogas, amplius haec intenditur,</l>
  <l>Amorque castigatus infestat magis.</l></lg>
 <p rend="nonindented">
@@ -4554,12 +4566,12 @@
 <lb/>potentiis, quod etiam hujusmodi exemplis Chrysippus imprudens
 <lb/>astruit. Itaque apponit ex Euripidis scriptis
 <lb/>dialogum Herculis ad Admetum, qui ita habet:</p>
-<lg>
+<lg rend="italic">
  <l>Sed quid revolvis? an semper moerere vis?</l>
 </lg>
 <p rend="nonindented">
  <lb/>Haec quidem Hercules dicit, Admetus autem respondet:</p>
-<lg>
+<lg rend="italic">
  <l>Et ipse novi, verum amor me concitat.</l>
 </lg>
  <p rend="nonindented">
@@ -4567,7 +4579,7 @@
 <lb/>amor sit affectus, totum animum educere, homrnemque
 <lb/>in contrarias actiones raperetis, quae initio statuerat.
 <lb/>Item Achillis dicta ad Priamum apponit:</p>
-<lg>
+<lg rend="italic">
 <l>Sustineas, animo nec inevitabile plores;</l>
 <l>Nil siquidem efficies lugendo funera nati,</l>
 <pb n="5.414"/>
@@ -4614,10 +4626,8 @@
 <lb/>ejusmodi verba ipsius alicui per otium seligere committo.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Quum autem manifeste jam figura ipsonun
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Quum autem manifeste jam figura ipsonun
 <lb/>demonsseata sit, digrediar ad nonnulla, quae Posidonius
  <lb/>contra Chrysippum protulerit. Itaque, <hi rend="italic">Definitio</hi>,
  <lb/>inquit, <hi rend="italic">moestitiae, quemadmodum etiam multae aliae
@@ -4659,7 +4669,7 @@
 <lb/>dixit: Novi mortalem me procreasse; et quemadmodum
 <lb/>hoc sumpto sensu Euripides Theseum loquentem introduxit:
 <lb/></p>
-<lg><l>A sapiente aliquo perdoctus ego</l>
+<lg rend="italic"><l>A sapiente aliquo perdoctus ego</l>
  <l>In curas animum et calamitates indidi,</l>
  <l>Atque exulem me proposui a patria mea, ac mortes</l>
  <l>Humaturus et vias malas alias,</l>
@@ -4667,7 +4677,7 @@
  <l>Aliquando, animum non morderent recentia.</l></lg>
 <p rend="nonindented">
  <lb/>Ita dicta etiam haec esse pronunciat:</p>
- <lg><l>Si hic primus esset malorum dies milii,</l>
+ <lg rend="italic"><l>Si hic primus esset malorum dies milii,</l>
   <l>Et non diu vexarer in laboribus,</l>
   <l>Forsan reniterer ut pullus iugo recens</l>
   <l>subditus, excutiens scaenam sufeeptum nuper;</l>
@@ -4733,10 +4743,10 @@
  <lb/>verbis: <hi rend="italic">Verum de trisiitia, quod repleti nonnulli similiter
 <lb/>ab ea recedere apparent, quemadmodum et de Achille
 <lb/>Patroclum lugente haec poëta scribit:</hi></p>
-<lg><l>Ast hic jam lacrymis quuin esset satur atque querelis,</l></lg>
+<lg rend="italic"><l>Ast hic jam lacrymis quuin esset satur atque querelis,</l></lg>
 <p rend="nonindented">
  <lb/>item,</p>
-<lg>
+<lg rend="italic">
  <l>Et desiderium luctus a mente recessisset,</l>
 </lg>
 <p rend="nonindented">
@@ -4755,16 +4765,16 @@
 <lb/>verum cum ipsius hypothesibus discordant, quemadmodum
 <lb/>etiam quae inferuntur, hoc modo prolata. Dicuntur etiam
 <lb/>ejusmodi ab affectuum mutatione:</p>
-<lg><l>Luctus continuo maesti scitur est.</l></lg>
+<lg rend="italic"><l>Luctus continuo maesti scitur est.</l></lg>
 <p rend="nonindented">
  <lb/>Praeterea ejusmodi ad tristitiae diductionem: <hi rend="italic">Infelicibus
 <lb/>delectabile quodammodo est plorare ei fortunas deflere</hi>.
 <lb/>Insuper his deinde subdit:</p>
-<lg><l>Sic ad, at desiderium patris obvenit illi</l>
+<lg rend="italic"><l>Sic ad, at desiderium patris obvenit illi</l>
 <l>Defundi.</l></lg>
  <p rend="nonindented">
   <lb/>Et:</p>
-<lg><l>Eundem suscitavit luctum, reduxit curas lacrymabiles.</l></lg>
+<lg rend="italic"><l>Eundem suscitavit luctum, reduxit curas lacrymabiles.</l></lg>
  <p rend="nonindented">
   <lb/>Denique plura adhuc alia id genus a poetis colligere
 <lb/>testimonia licet ejus, quod homines tristitia, lacrymis,
@@ -4847,10 +4857,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE HIPPOCRATIS ET PLATONIS
 <lb/>PLACITIS LIBER QVINTVS.</head>
-
-
 <p rend="indent">
- <lb/>Sermo de animi affectibus necessarius
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Sermo de animi affectibus necessarius
 <lb/>etiam propter se mihi habitus est; magis autem ipsum
 <lb/>necessarium Chrysippi sectatores reddiderunt, qui ad ioci
 <lb/>principem animae facultatem continentis demonstrationem
@@ -4916,10 +4924,8 @@
 </div>
 <pb n="5.432"/>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>At de animi affectibus, quod rationalis facultatis
+<lb/><label type="head"><num value="2">Cap. II.</num></label> At de animi affectibus, quod rationalis facultatis
 <lb/>non sint, jam sane etiam superior liber repletus
 <lb/>est his, quae ipsis vel invitus fatetur, nihilominus et hic
 <lb/>replebitur, huic ducto exordio. Affectum animi motionem
@@ -5171,10 +5177,8 @@
 <lb/>tumens, quae hunc in modum habet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Sunt autem animae partes, per quas ratio
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Sunt autem animae partes, per quas ratio
 <lb/>in ea consistit. In memoriam forte reducens nobis ea,
 <lb/>quae in libris de ratione scripta sunt, per quae tradidisti,
 <lb/>quod notionum quarundam et praesumptionum sit collectio.
@@ -5345,10 +5349,8 @@
 <lb/>meminero.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Nunc autem, quia non absolute de pulchritudine,
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Nunc autem, quia non absolute de pulchritudine,
 <lb/>aut turpitudine, aut morbis, neque de solis
 <lb/>corporis, sed de animi affectibus nobis disputatio proposita
 <lb/>est, reliqua quidem omittam, id autem solum, quod
@@ -5437,10 +5439,8 @@
 </div>
 <pb n="5.459"/>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Quae igitur maxime ad institutum nobis
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Quae igitur maxime ad institutum nobis
 <lb/>opus necessaris sunt, haec duntaxat persequemur, ac primuni
 <lb/>ipsorum proponemus, quod de puerorum insututione
 <lb/>dicitur. Neque enim a ratione impetus ipsorum
@@ -5625,10 +5625,8 @@
 <lb/>hypothesibus scribit, quemadmodum Chrysippus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Verum de virtutibus postea agetur, quia
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Verum de virtutibus postea agetur, quia
 <lb/>etiam in bis Chrysippus calumniatur Platonem; nunc
 <lb/>enim ex consecutione quadam de cis mentio factu est,
 <pb n="5.469"/>
@@ -5833,10 +5831,8 @@
 <lb/>neque si plura scribantur attendet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Digrediar jam ad eam quam Plato quarto
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Digrediar jam ad eam quam Plato quarto
 <lb/>de Republica posuit demonstrationem, quod tres animae
 <lb/>partes secundum animae impetum nos moventes habeantur.
 <lb/>At sciendum hic quoque est, id sane non demonsuari necessario,
@@ -6217,7 +6213,7 @@
 <lb/>Jovem probe dixisii. Praeterea in bestiis ita esse quisque
 <lb/>(at ipse dicis) comperiet. Testatur et Jtomeri illusi, quod
 <lb/>supra adduximus,</hi></p>
-<lg><l>Pectora sed laese carum cor increpat ira.</l></lg>
+<lg rend="italic"><l>Pectora sed laese carum cor increpat ira.</l></lg>
 <p rend="nonindented">
  <lb/><hi rend="italic">In his porro Humerus, tanquam haec inter se disierant,
 <lb/>alterum horum obiurgare alterum facit; ipsam videlicet
@@ -6243,7 +6239,7 @@
 <lb/>recte Platoni dicta sunt, nec non id, quod in fine orationis
 <lb/>scriptum est, ubi Humerum testimonia haec dicentem
 <lb/>introducit:</p>
-<lg><l>Pectora sed laese carum cor increpat ira.</l></lg>
+<lg rend="italic"><l>Pectora sed laese carum cor increpat ira.</l></lg>
 <p rend="nonindented">
  <lb/>Hic enim ait, quomodo alterum cupit alterum castigare,
 <lb/>ipsam videlicet rationem de meliori pejorique consultantem
@@ -6296,10 +6292,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>CALENI DE HIPPO CRATIS ET PLATONIS
 <lb/>PLACITIS LIBER SEXTVS.</head>
-
-
 <p rend="indent">
- <lb/>Propositum sane mihi erat ab luitio de
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Propositum sane mihi erat ab luitio de
 <lb/>facultatibus corpus nostrum regentibus considerare, ex
 <lb/>cordene solo universae proficiscantur, quemadmodum Aristoteles
 <lb/>et Theophrallus existimabant, an tria ipsarum
@@ -6455,10 +6449,8 @@
 </div>
 <pb n="5.514"/>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Quare esium bene habet non praeterire ea,
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Quare esium bene habet non praeterire ea,
 <lb/>sed totum sermonem repetere, quem in quarto de Republica
 <lb/>de eo, quod tres animae nostrae species existant,
 <lb/>percensuit. At animum et lue iis, quae dicuntur, adhihere
@@ -6563,10 +6555,8 @@
 <lb/>verbis non opus est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Quod autem aliam in capite, aliam in
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Quod autem aliam in capite, aliam in
 <lb/>corde, aliam in jecinore collocavit, id ab initio propositum
 <lb/>erat, ostensumque per superiora est de duabus partibus.
 <lb/>Reliquam adhuc concupiscibilem, quae peculiari demonstratione
@@ -6812,10 +6802,8 @@
 <lb/>maxima esset, opinor, ci continua venae portio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>At siquis putet, cor venis facultatem suppedicare,
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> At siquis putet, cor venis facultatem suppedicare,
 <lb/>materiam vero jecur, (inde enim sanguis provenit,)
 <lb/>ideoque latiorem esse interiorem ventriculum superiori,
 <lb/>quod plures partes interiores jecoris existant, quibus
@@ -6925,10 +6913,8 @@
 <lb/>venam, quae viscus enutriat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Requirit autem maxime, si quis alius stermo,
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Requirit autem maxime, si quis alius stermo,
 <lb/>certe hic nobis propositus id, quod in dissectionibus
 <lb/>apparet. Non fidum enim nulla vena apparet, quae ex
 <lb/>corde in inferiores partes deferatur, praeterquam quae
@@ -7097,10 +7083,8 @@
 <lb/>novit aliquis disciplinae, non ignorat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Sufficiunt itaque et haec ad venarum
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Sufficiunt itaque et haec ad venarum
 <lb/>principii demonstrationem. Jam nihilominus et illa, quae
 <lb/>dicentur a me, sima sunt indicia ejus, quod cor neutiquam
 <lb/>sit neque initium sanguinis totum corpus nutrientis
@@ -7349,10 +7333,8 @@
 <lb/>pulsarent venae, si ex icorde ducerent originem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Disputatio autem non amplius mihi cum
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Disputatio autem non amplius mihi cum
 <lb/>Erasistrato aut Erasistrateis est, sed adversus eos, qui
 <lb/>putant, non quia spiritu arteriae implentur, ideo elevari
 <pb n="5.561"/>
@@ -7410,10 +7392,8 @@
 <lb/>manifesto ostensum est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Reliquum est, id, quod nonnulli opinati
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Reliquum est, id, quod nonnulli opinati
 <lb/>fiunt, absurdum sane admodum, verumtamen nonnullis
 <lb/>nobilium medicorum gratum, interpretari prius, deinde
 <pb n="5.564"/>
@@ -7782,7 +7762,7 @@
 <lb/>subeuntem introducit eo, quod Latonam sollicitaverat
 <lb/>impudice:</p>
 <pb n="5.584"/>
- <lg>
+ <lg rend="italic">
 <l>Et Tityum vidi clarae telluris alumnum,</l>
 <l>Porrigitur cui tota novem per jugera corpus.</l>
 <l>Hinc atque hinc geminus rostro urget vultur adunco</l>
@@ -7818,10 +7798,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE HIPPOCRATIS ET PLATONIS
 <lb/>PLACITIS LIBER SEPTIMVS.</head>
-
-
 <p rend="indent">
- <lb/>Non ego prolixi operis auctor tum, sed
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Non ego prolixi operis auctor tum, sed
 <lb/>it, qui falsis rationibus, quas de animae principatu in
 <lb/>argumentis proponunt, non paucos libros repleverunt,
 <lb/>quos nisi quis coarguat, sicuti ego per initia statueram,
@@ -7994,10 +7972,8 @@
 <lb/>exiguum est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Sed post reprehensionem ad erratum deinceps
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Sed post reprehensionem ad erratum deinceps
 <lb/>transeamus. Erit enim hoc non prolixum viro, qui
 <lb/>secundum naturam sit affectus. Arbitratus igitur Ariston,
 <lb/>unam esse animae facultatem, qua ratiocinamur, etiam
@@ -8089,10 +8065,8 @@
 <lb/>hypothesi conveniunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Itaque illorum causa, qui ob longitudinem
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Itaque illorum causa, qui ob longitudinem
 <lb/>praesentis operis indignantur, alibi separatim de virtutum
 <lb/>differentia rursus sermonem instituere decrevi. Impraesentiarum
 <lb/>vero propter studiosus, qui me reliqua
@@ -8296,10 +8270,8 @@
 <lb/>hoc sarit ad id, quod quaeritur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Utrum igitur, quemadmodum in ventriculis
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Utrum igitur, quemadmodum in ventriculis
 <lb/>cerebri spiritu inanito totum animal sensus expers
 <lb/>evasit, et propterea dicimus, eum esse utilem tum ad
 <lb/>partium sensus, tum ad motus, ile existimandum est,
@@ -8426,10 +8398,8 @@
 </div>
 <pb n="5.618"/>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Praesertim autem credet hoc aliquis fieri
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Praesertim autem credet hoc aliquis fieri
 <lb/>doctus, quomodo consentaneum sit nos ridere. Porro
 <lb/>initium etiam hujus sermonis tale est. Corpus videns e
 <lb/>duobus alterum efficit: aut mittens de se aliquid ad nos
@@ -8612,7 +8582,7 @@
 <lb/>ea, ut quae alterationem ex similibus requirunt. Atque
 <lb/>hoc utique erat, quod Empedocles his versibus voluit
 <lb/>significare :</p>
-<lg><l>Terram equidem terra, sed aquam spectamus aqua,
+<lg rend="italic"><l>Terram equidem terra, sed aquam spectamus aqua,
 <lb/>igne</l>
 <pb n="5.628"/>
 <l>Conspicuum ignem, sed aera cernimus aere clarum.</l></lg>
@@ -8631,10 +8601,8 @@
 <lb/>nobis, cui titulum indidi De olfactus instrumento.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Quintum enim hoc est sensorium lufliumentum,
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Quintum enim hoc est sensorium lufliumentum,
 <lb/>quum non sint quinque elementa, quoniam
 <lb/>odorum genuanatura medium est inter aerem et aquam;
 <pb n="5.629"/>
@@ -8678,7 +8646,7 @@
 <lb/>Nam simile cum simili in affectuum communionem pervenit.
 <lb/>At quoniam tota hujusmodi dictio duo significat,
 <lb/>qualem et Empedocles fecit inquiens,</p>
-<lg>
+<lg rend="italic">
 <l>Terram equidem terra, sed aquam spectamus aqua
 <lb/>ipsa,</l>
 </lg>
@@ -8806,10 +8774,8 @@
 <lb/>mutationes ex finitimis genere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Jam vero ritus instrumentum, quoniam
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Jam vero ritus instrumentum, quoniam
 <lb/>coloribus discernendis idoneum ipsum esse conveniebat,
 <lb/>splendidum creatum est, quod sula hujusmodi corpora a
 <lb/>coloribus alterari soleant; quemadmodum indicat etiam
@@ -8935,10 +8901,8 @@
 <lb/>habetur, lucidum evadere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Jam vero de Aristotelis et Stoicorum
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Jam vero de Aristotelis et Stoicorum
 <lb/>opinione dicere paululum disseram, sensum vero sensilium
 <lb/>corporum ex alteratione et dignotione fieri, ea, quae
 <lb/>dixi, declarant. Atteratur itaque sensus instrumentum;
@@ -9013,10 +8977,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE HIPPOCRATES ET PLATONIS
 <lb/>PLACITIS LIBER OCTAVVS.</head>
-
-
 <p rend="indent">
- <lb/>De Hippocrates et Platonis placitis tractare
+<lb/><label type="head"><num value="1">Cap. I.</num></label> De Hippocrates et Platonis placitis tractare
 <lb/>restituens primum sane docui, maxime necessarium
 <lb/>esse tum medicinae, tum philosophiae, sive, plures sint
 <lb/>facultates, quae hominem gubernant, sive una, firmiter
@@ -9257,10 +9219,8 @@
 <lb/>est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Nunc vero, quum plerique amicorum reliqua
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Nunc vero, quum plerique amicorum reliqua
 <lb/>Hippocratis et Platonis dogmata jam habere desidereut,
 <lb/>illuc me convertam, a naturalibus elementis exorsus.
 <lb/>Nominatur itaque elementum, quodcunque minima
@@ -9277,7 +9237,7 @@
 <lb/>magnitudinem sectio ejusmodi minimum nullum obtinet.
 <lb/>Sola autem speciei divisio quandoque consistit, veluti in
 <lb/>voce, quum aliqua composita talis existat:</p>
-<lg>
+<lg rend="italic">
  <l>Jram cane, dea, Peildae Achillis.</l></lg>
 <p rend="nonindented">
  <lb/>Tota quidem haec est; partes autem iram, et cane,
@@ -9376,10 +9336,8 @@
 <lb/>morbi oboriuntur, manifesto indicarit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Videbitur autem ru eo, quod elementa ipsa
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Videbitur autem ru eo, quod elementa ipsa
 <lb/>non vocat, ab Hippocrate dissentire. Atqui neque ille
 <lb/>nominavit ea elementa, sed solum, quod his coeuntibus
 <lb/>contcmpcratisque naturalia creantur corpora, atque quod
@@ -9462,10 +9420,8 @@
 <lb/>conflata esse admittat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Quin etiam, quomodo ex elementis corpora
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Quin etiam, quomodo ex elementis corpora
 <lb/>nostra constituuntur, ita ambo affirmant, non scilicet
 <lb/>terra aqua conspersit, deinde in sole calcsacta, unimalia
 <lb/>procreari pronunciantes, Test mediis pluribus mutationibus.
@@ -9620,10 +9576,8 @@
 <lb/>idem dixit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Sane, quomodo ex elementis similarium
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Sane, quomodo ex elementis similarium
 <lb/>et primorum corporum sanitas morbusque generetur,
 <pb n="5.680"/>
 <lb/>abunde et haec sunt. Digrediamur autem ad subsequentem
@@ -9798,10 +9752,8 @@
 </div>
 <pb n="5.689"/>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Ego vero prolixitati parcens ad ea, quae
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Ego vero prolixitati parcens ad ea, quae
 <lb/>disputationi propria sunt, me convertam. Nam quum
 <lb/>astruxisset, quatuor humores nobis esse secundum naturam,
 <lb/>excedentes autem quantitate et alteratos qualitate
@@ -10046,10 +9998,8 @@
 <lb/>censent, ea, quae in Timaco modice dicta funi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Ac reliquae sane libri rationes summatim
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Ac reliquae sane libri rationes summatim
 <lb/>compendii gratus explicabuntur, in quibus inter te viri
 <lb/>consentiunt, et in quibus dissentiunt, uberiusque in futura
 <lb/>expositione iterum dicetur. Quum itaque Hippocrates
@@ -10156,10 +10106,8 @@
 <lb/>feratur concoquaturque.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Sed in opinione de respiratione ipsis
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Sed in opinione de respiratione ipsis
 <lb/>ab eo non mediocriter dissentit, primuni fana quod perspicationis
 <pb n="5.708"/>
 <lb/>potius causam dicat, quam respirationis, deinde
@@ -10263,10 +10211,8 @@
 <lb/>aggressus, in expositione ipsorum dicetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Nunc enim abunde est ostendisse stilum,
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Nunc enim abunde est ostendisse stilum,
 <lb/>in quibus consentiat disseutiatque cum Hippocrate. Apponamus
 <lb/>igitur ei et reliqua; nam in sermone de usu
 <lb/>respirationis Plato videtur Hippocratem imitari, qui
@@ -10395,10 +10341,8 @@
 <head>GALENI DE HIPPOCRATIS ET PLATONIS
 <lb/>PLACITIS LIBER NONVS
 <lb/></head>
-
-
 <p rend="indent">
- <lb/>Quoniam de omnibus, quae utrique, Hippocrates
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quoniam de omnibus, quae utrique, Hippocrates
 <lb/>et Plato, tradunt, considerare erat institutum,
 <lb/>tractatumque a me jam est de iis, quae plurimum possunt
 <lb/>tum ad medicinam tum ad philosophiam, tempestivum
@@ -10518,10 +10462,8 @@
 <lb/>et ad differentiam inter se.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Apponam autem tibi exemplum ex utroque
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Apponam autem tibi exemplum ex utroque
 <lb/>viro, quo cognoscatur res evidentius. Itaque Hippocrates
  <lb/>hoc pacto in praesagiis scriptum reliquit. <hi rend="italic">Coiisederandiim
 <lb/>est ita in morbis acutis, primum an aegrotantis
@@ -10683,10 +10625,8 @@
 </div>
 <pb n="5.735"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Sumatur jam a Platone primum, quod in
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Sumatur jam a Platone primum, quod in
 <lb/>quinto de Republica docuit, ubi de natura mulierum
 <lb/>incipit, eadem ipsis cum viris studia tractare praeripiens;
 <lb/>deinde ipse sermonem aggreditur estque, non concessurum
@@ -10848,10 +10788,8 @@
 <lb/>demonstrationem in oratione superius comprehensa fecisse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Adiungamus igitur et aliud adhuc ex
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Adiungamus igitur et aliud adhuc ex
 <lb/>Hippocratis scriptis exempli gratia, ut discernamus, quid
 <lb/>simile et quid dissimile existat. Verba ipsius ex commentario
  <lb/>de articulis haec sunt. <hi rend="italic">An brachium exciderit,
@@ -10987,10 +10925,8 @@
 <lb/>elaboraverunt, qualis est Hippocrates et Plato.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Quum igitur Plato primo libro de Republica
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Quum igitur Plato primo libro de Republica
 <lb/>ostendisset variis exemplis, ex quorum numero est,
 <lb/>et civitatis gubernatores et medicos artificibus, quibus
 <lb/>praesunt imperantque, quosque regunt, illis utilitatem,
@@ -11189,10 +11125,8 @@
 <lb/>voluptate ostendit, universas ipsius differentias persecutus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Sic autem et Hippocrates factitavit in
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Sic autem et Hippocrates factitavit in
 <lb/>opere de victus ratione acutorum, accusans medicos
 <pb n="5.761"/>
 <lb/>Cnidios tanquam speciales generalesque morborum disserentias
@@ -11503,10 +11437,8 @@
 <lb/>copiam habebit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Merito igitur nonnulli exactam similium
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Merito igitur nonnulli exactam similium
 <lb/>et dissimilium cognitionem sufficere ad methodicam cujuslibet
 <lb/>artis constitutionum arbitrantur, siquidem etiam ad
 <lb/>indicandum de iis, quae in ambiguo sunt, dux haec est
@@ -11608,10 +11540,8 @@
 <lb/>assequuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Porro quod ad logica principia cujuslibet
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Porro quod ad logica principia cujuslibet
 <lb/>dogmatis demonstratio reducatur, in omnibus fiere
 <lb/>operibus a me ostensioni est. Sed et nunc, quoniam, ut
 <lb/>res invicem discernere possis, et similitudines dissimilitudinesque
@@ -11657,13 +11587,13 @@
 <lb/>si nihil in ipsis, qui compingit, erroris commiserit, artifirem
 <lb/>esse constructorem ajunt, quemadmodum in curru
 <lb/>Hesiodus scripsit:</p>
-<lg>
+<lg rend="italic">
  <l>— — centum lignaque plaustri.</l>
 </lg>
 <p rend="nonindented">
  <lb/>Sive enim re vera centum, sive loco multorum tot elixerit,
 <lb/>sicuti Homerus:</p>
-<lg>
+<lg rend="italic">
  <l>Coutum pendebant ex auro fimbriae.</l>
 </lg>
 <p rend="nonindented">
@@ -11776,10 +11706,8 @@
 <lb/>est hominibus, naturam nominans.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Verum Plato etiam causam, quae nos consuuxit,
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Verum Plato etiam causam, quae nos consuuxit,
 <lb/>mundi opificem deum pronunciavit, qui suis filiis
 <lb/>jusserit humanum genus conformare, acceptu ab eo immortalis
 <lb/>animae substantia, appositu autem in ea, quod generatur.

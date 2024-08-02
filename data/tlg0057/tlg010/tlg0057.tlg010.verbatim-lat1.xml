@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De naturalibus facultatibus</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg010.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -54,7 +75,6 @@
               <date>1821</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x02">BIU Santé, Medica</ref></biblStruct>
         <biblStruct>
           <monogr corresp="Basel">
@@ -96,13 +116,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg010.verbatim-lat1">
 <pb n="2.1"/>
@@ -111,7 +174,7 @@
  <head>CALENI DE NATURALIBUS FACVLTATIBVS
   <lb/>LIBER PRIMVS.</head>
 <p rend="indent">
- <lb/>Quum et sentire quidem et moveri voluntarie
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quum et sentire quidem et moveri voluntarie
 <lb/>propria animalium sint, augeri vero et nutriri
 <lb/>plantis etiam communia: erunt utique priora quidem
 <lb/>animae, posteriora vero naturae ipsius opera. Quod si
@@ -129,7 +192,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="2">
 <p rend="indent">
- <lb/>Et in hoc quidem opere perquiremus, a
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Et in hoc quidem opere perquiremus, a
 <lb/>quibus facultatibus illa ipsa, et si quid aliud naturae
 <lb/>opus est, proveniant. Verum prius distinguere oportet
 <lb/>et manifeste singula, quibus in hoc opere usuri fumus,
@@ -239,7 +302,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="3">
 <p rend="indent">
- <lb/>Ac mihi quidem tam vena, quam reliquarum
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Ac mihi quidem tam vena, quam reliquarum
 <lb/>partium singulae ob certam quandam temperiem, quam
 <lb/>ex quatuor qualitatibus funi nactae, hoc vel illo modo
 <lb/>agere ridentur. Sunt autem non pauci viri nec incelebres,
@@ -271,7 +334,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="4">
 <p rend="indent">
- <lb/>Caeterum vis ea, quam in venis sanguisicam
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Caeterum vis ea, quam in venis sanguisicam
 <lb/>appellant, atque etiam alia quaevis facultas in
 <lb/>relatione ad aliquid intelligitur. Primum enim actionis
 <lb/>ipsius facultas est causa; deinde etiam operis ex accidente
@@ -292,7 +355,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="5">
 <p rend="indent">
- <lb/>Ergo naturae opera, dum adhuc in utero
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Ergo naturae opera, dum adhuc in utero
 <lb/>gestatur ac fingitur animal, omnes sunt corporis partes:
 <lb/>edito vero in lucem, commune in omnibus naturae opus
 <lb/>est earum ad perfectam magnitudinem perductio; postea
@@ -317,7 +380,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="6">
 <p rend="indent">
- <lb/>De prima igitur generatione agamus,
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> De prima igitur generatione agamus,
 <lb/>quam ex alteratione et conformatione fieri diximus.
 <lb/>Projecto in uterum femine, sive etiam in terram (nihil
 <lb/>enim refert), statis quibusdam temporibus multae conflantur
@@ -407,7 +470,7 @@
 <pb n="2.16"/>
 <div type="textpart" subtype="chapter" n="7">
 <p rend="indent">
- <lb/>Jam ad auctricem facultatem conversi,
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Jam ad auctricem facultatem conversi,
 <lb/>illud primum admonemus, quod non desit ne haec quidem
 <lb/>iis, quae in utero gestantur, sicuti neque facultas
 <lb/>nutrix. Sunt tamen eo tempore praedictarum facultatum,
@@ -462,7 +525,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="8">
 <p rend="indent">
- <lb/>Quo magis de ipsa nutritione, quae reliqua
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Quo magis de ipsa nutritione, quae reliqua
 <lb/>est et tertia propositorum ab initio, videtur
 <lb/>agendi locus. Quod enim in nutrimenti affixit specie,
 <pb n="2.19"/>
@@ -477,7 +540,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="9">
 <p rend="indent">
- <lb/>Quoniam autem de tribus naturae facultatibus
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Quoniam autem de tribus naturae facultatibus
 <lb/>abunde suximus, videturque animal nullam aliam
 <lb/>requirere, habens nimirum, quemadmodum et augeatur,
 <lb/>et absolvatur, et plurimum duret; videbitur abunde
@@ -499,7 +562,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="10">
 <p rend="indent">
- <lb/>Videor enim monstraturus, tum instrumenta
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Videor enim monstraturus, tum instrumenta
 <lb/>ipsa, quae ad naturalem nutrimenti molitionem comparata
 <lb/>sunt, tum eorum facultates propter hanc esse conditas.
 <lb/>Nam quum actio hujus facultatis assimilatio sit,
@@ -572,7 +635,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="11">
 <p rend="indent">
- <lb/>Itaque denuo nobis revocandus ad memoriam
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Itaque denuo nobis revocandus ad memoriam
 <lb/>is finis est, cujus causa tot ac tales partes natura
 <lb/>instituit. Et nomen quidem rei, ceu prius diximus,
 <lb/>nutritio est; ratio vero ejus nominis est, ad id,
@@ -624,7 +687,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="12">
 <p rend="indent">
- <lb/>Ac quod necesse sit nutritionem esse
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Ac quod necesse sit nutritionem esse
 <lb/>assimilationem nutrientis ei, quod nutritur, clare liquet.
 <lb/>Caeterum non esse assimilationem veram, sed tantum
 <lb/>apparentem, dicunt ii, qui nec artificiosam naturam
@@ -696,7 +759,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="13">
 <p rend="indent">
- <lb/>Porro intelligi licet, quam recta veraque
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Porro intelligi licet, quam recta veraque
 <lb/>Hippocrate dogmata sint, non ex eo tantum, quod,
 <lb/>qui diversa ponunt, diversis quoque ac dissidentia ponunt
 <lb/>ab iis, quae evidenter apparent, verum etiam ex
@@ -969,7 +1032,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="14">
 <p rend="indent">
- <lb/>Nos igitur rursus ad aliam garrulitatem
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Nos igitur rursus ad aliam garrulitatem
 <lb/>convertamur; neque enim nos sinunt sophistae dignas
 <lb/>sermone dubitationes, quamquam plurimae sunt, aggredi;
 <lb/>sed in solvendis iis, quae proponunt, sophismatis
@@ -1203,7 +1266,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="15">
 <p rend="indent">
- <lb/>Verum quum abunde garriverimus, neque
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Verum quum abunde garriverimus, neque
 <lb/>id nostra sponte, sed juxta proverbium cum insanis
 <pb n="2.57"/>
 <lb/>insanire coacti, rursum ad urinae secretionem reversamur;
@@ -1276,7 +1339,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="16">
 <p rend="indent">
- <lb/>Porro Erasistratus, nescio quo modo,
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Porro Erasistratus, nescio quo modo,
 <lb/>contra alias quasdam opiniones receptissimas longa oratione
 <lb/>disseruit: Hippocraticam vero omnino sic praeteriit,
 <lb/>ut ne vel sola mentione dignam putaret. Quod tamen
@@ -1414,7 +1477,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="17">
 <p rend="indent">
- <lb/>Juniorum vere quicunque nominibus
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> Juniorum vere quicunque nominibus
 <lb/>horum se venditant, Erasistrateos et Asclepiadeus se
 <lb/>appellantes, hi non focus, ac inducti in comoediis ab
 <lb/>optimo Menandro fervi, Davi quidam Getaeque, qui nullum
@@ -1535,7 +1598,7 @@
 <head>CALENI DE NATURALIBUS FACVLTATIBVS
 <lb/>LIBER SECVNDVS.</head>
 <p rend="indent">
- <lb/>Et quod necesse quidem sit non Erasistrato
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Et quod necesse quidem sit non Erasistrato
 <lb/>modo, sed etiam omnibus, qui de urinae secretione
 <lb/>dicturi aliquid stant, quod ad rem pertineat, fateri,
 <lb/>facultatem quampiam in renibus esse, ejusmodi qualitatem,
@@ -1598,7 +1661,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="2">
 <p rend="indent">
- <lb/>Ergo rursus, quamvis nolit, admonendus
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Ergo rursus, quamvis nolit, admonendus
 <lb/>de renibus est, dicendumque, reprehensionem hanc omnium,
 <lb/>qui tractum partium repudiant, esse manifestissimam.
 <lb/>Nemo enim aut probabile aliquid dixit, aut, sicut
@@ -1652,7 +1715,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="3">
 <p rend="indent">
- <lb/>Ergo nugae maximae sunt omnis exiguorum
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Ergo nugae maximae sunt omnis exiguorum
 <lb/>meatuum ad naturales functiones hypothesis.
 <lb/>Nisi enim a natura facultas quaedam naturalis unicuique
 <lb/>instrumento statim ab initio sit tributa, durare animalia
@@ -1811,7 +1874,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="4">
 <p rend="indent">
- <lb/>Jam haec parum novit Erasistratus, quem
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Jam haec parum novit Erasistratus, quem
 <lb/>nihil latet; si vera omnino sunt, quae sectatores ejus
 <lb/>affirmant, inter Peripateticos philosophos versatum eum
 <lb/>dicentes. At quod naturam quidem ut artificem praedieat,
@@ -1912,7 +1975,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="5">
 <p rend="indent">
- <lb/>Quum nunc pugna fit Erasistrati fectatoribus
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Quum nunc pugna fit Erasistrati fectatoribus
 <lb/>non parva, neque id cum aliis modo, verum etiam
 <lb/>ipsis inter se, nequeuntibus scilicet interpretari verba illa
   <lb/>in pruno universalium sermonum, quibus ait: <hi rend="italic">Adapertis
@@ -1947,7 +2010,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="6">
 <p rend="indent">
- <lb/>Verum, siquis attente consideret, nec
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Verum, siquis attente consideret, nec
 <lb/>ejus de alimento sermo, quem in secundo universalium
 <lb/>sermonum scribit, easdem difficultates effugit. Siquidem,
 <lb/>mio illo lemmate successionis ad id, quod vacuatur,
@@ -2157,7 +2220,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="7">
 <p rend="indent">
- <lb/>Ergo ad quem modum trahatur, in
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Ergo ad quem modum trahatur, in
 <lb/>commune investigemus. Quo porro alio, quam sicut a
 <lb/>magnete lapide ferrum, qui scilicet talis qualitatis trafiendae
 <lb/>vim habet? At vero, si distributionis principium
@@ -2178,10 +2241,8 @@
 <lb/>cum Peripateticis fuisset versatus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Quemadmodum de humorum generatione,
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Quemadmodum de humorum generatione,
 <lb/>de quibus nihil ne mediocriter quidem probabile
 <lb/>habens quod dicat, falli putat eum, qui agit, quasi
 <lb/>prorsus inutilis sit eorum contemplatio. Sed numquid,
@@ -2531,10 +2592,8 @@
 <lb/>recte sunt interpretati.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Quominus quisquam haec a nobis pro evidenti
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Quominus quisquam haec a nobis pro evidenti
 <lb/>demonstratione dicta putet potius, quam quo indocilitatem
 <lb/>eorum, qui aliter sentiunt, indicarem; qui nec ea, de
 <lb/>quibus inter omnes convenit, et quae quotidie fieri cernuntur,
@@ -2855,10 +2914,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE NATURALIBUS FACVLTATIBVS
 <lb/>LIBER TERTIVS.</head>
-
-
 <p rend="indent">
- <lb/>Ac quod quidem nutritio sit, quum id,
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Ac quod quidem nutritio sit, quum id,
 <lb/>quod nutrit, atteratur, et ei, quod nutritur, simile fit,
 <lb/>tum quod in quaque animalis particula facultas quaedam
 <lb/>insit, quam ab actione ipsa generaliter alteratricem, speciatim
@@ -2900,10 +2957,8 @@
 <lb/>illi inesse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Caeterum nos, qui non hoc tantum demonstrationis
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Caeterum nos, qui non hoc tantum demonstrationis
 <lb/>genere soliti sumus uti, sed illi ex iis,
 <lb/>quae manifeste apparent, necessarias ac cogentes probationes
 <lb/>adlicere, ad istiusmodi nunc convertemur; monstrabimusque,
@@ -2943,10 +2998,8 @@
 <lb/>cibi concoquendi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Quare verisimile est, tanto clarius a nohis
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Quare verisimile est, tanto clarius a nohis
 <lb/>in utero retentricem facultatem conspici posse, quanto
 <lb/>diutius, quam ventriculus, retinendi functionem exercet;
 <lb/>quippe novem mensibus plerisque mulieribus perfinitur
@@ -3041,10 +3094,8 @@
 <lb/>memoratae facultates apparent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>In ventre vero ad hunc modum; primum
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> In ventre vero ad hunc modum; primum
 <lb/>quidem ex fluctuantis humoris sonitu, qui medicis imbecilli
 <lb/>ventris symptoma creditur, et certe cum ratione
 <lb/>creditur. Interim enim, quum minimum ciborum assumpsimus,
@@ -3145,9 +3196,8 @@
 <lb/>ritu movebatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
 <p rend="indent">
- <lb/>Omnia igitur haec inter se in idem consentiunt,
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Omnia igitur haec inter se in idem consentiunt,
 <lb/>quod aliquae sint in ventriculo, in utero, in
 <lb/>vesicis ingenitae facultates, quae et retinere possint ea,
 <lb/>quae qualitate convenlant, et quae aliena sunt expellere.
@@ -3179,10 +3229,8 @@
 <lb/>sunt valentes, vomitiones cientur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Licet porro idem et in iis, qui cibum
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Licet porro idem et in iis, qui cibum
 <lb/>fastidiunt, intueri; quippe qui comesse coacti nec deglutire,
 <lb/>quod comederunt, valent, nec, si id per vim faciant,
 <lb/>quod deglutitum est, retinent, sed protinus evomunt.
@@ -3213,10 +3261,8 @@
 <lb/>succedit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Verum si et retinet et fruitur, etiam
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Verum si et retinet et fruitur, etiam
 <lb/>ad eum finem, ad quem sic retinet et fruitur, abutitur.
 <lb/>Porro is finis est, ut ejus, quod in qualitate conveniens
 <pb n="2.161"/>
@@ -3365,10 +3411,8 @@
 <lb/>elixatione eam, quae in animalibus est, concoctionem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>De deglutitione vero ne tantum quidem
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> De deglutitione vero ne tantum quidem
 <lb/>egit; quid enim ait? Attractio quidem ventriculi
 <lb/>nulla esse ridetur. Atqui ventriculus duas habet tunicas,
 <lb/>quae omnino alienius gratia sunt conditae, pertinentque
@@ -3547,7 +3591,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="9">
 <p rend="indent">
- <lb/>Non est ergo, quod de splene etiam
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Non est ergo, quod de splene etiam
 <lb/>dubitemus, an is, quod sibi convenit, attrahat; quod alienum
 <lb/>est, fecemat; quod attrahere per naturam potest,
 <lb/>id alteres ac retineat; sed nec de jecinore, vel vena,
@@ -3561,7 +3605,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="10">
 <p rend="indent">
- <lb/>Dicereque de eorum generatione post
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Dicereque de eorum generatione post
 <lb/>Hippocratem, Platonem, Aristotelem, Dioclem, Praxagoram
 <lb/>et Philotimum etiam nolim; neque enim de facultatibus
 <lb/>infis dicerem, si quis priorum exacte de his
@@ -3600,7 +3644,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="11">
 <p rend="indent">
- <lb/>Absolvenda igitur nobis eorum cauta,
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Absolvenda igitur nobis eorum cauta,
 <lb/>qui veritatis sunt cupidi, disputatio est, abicientibus
 <lb/>scilicet, quae in ea desiderantur. Attrahit namque vellitque
 <lb/>ad te ventriculus cibos manifeste iis, qui vehementer
@@ -3645,10 +3689,8 @@
 <lb/>libris de usu partium dicetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Hic neutrum horum statutum est exequi,
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Hic neutrum horum statutum est exequi,
 <lb/>sed tantum naturales facultates quatuor esse in singulis
 <lb/>organis docere. Huc igitur denuo reversi, quae prius
 <lb/>dicta sunt, repetamus, atque eo, quod reliquum adhuc est,
@@ -3732,7 +3774,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="13">
 <p rend="indent">
- <lb/>Jam nec illud difficile compertu est,
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Jam nec illud difficile compertu est,
 <lb/>et attractionem et expulsionem diversis in temporibus
 <pb n="2.187"/>
 <lb/>per eundem meatum fieri; si modo orificium ventriculi
@@ -4067,10 +4109,8 @@
 <lb/>successione ad id, quod vacuatur, prodidimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Jam vero quod in singulis arteriis via
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Jam vero quod in singulis arteriis via
 <lb/>quaedam sit, quae a corde confluat, qua tum dilatantur,
 <lb/>tum contrahuntur, in aliis est monstratum. Ergo si ambo
 <lb/>componas, tum quod hic ejus fit motus, tum quod omne
@@ -4112,10 +4152,8 @@
 <lb/>ceu leviore prius impletas.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Sed illud minime ignorandum, duo esse
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Sed illud minime ignorandum, duo esse
 <lb/>attractionum genera; unum, quod successione ad id, quod
 <lb/>vacuatur, contingit, alterum, quod qualitatis convenientia
 <lb/>fit; aliter namque aer in folles, aliter ferrum a magnete

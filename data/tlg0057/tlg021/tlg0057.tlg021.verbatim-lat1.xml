@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De semine</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg021.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -54,7 +75,6 @@
               <date>1822</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x04">BIU Santé, Medica</ref></biblStruct>
         <biblStruct>
           <monogr corresp="Basel">
@@ -96,13 +116,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg021.verbatim-lat1">
 <pb n="4.512"/>
@@ -110,10 +173,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENIRE SEMINE
  <lb/>LIBER I.</head>
-
-
 <p rend="indent">
- <lb/>Quis usus et quae facultas est seminis?
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quis usus et quae facultas est seminis?
 <lb/>Num duorum principiorum materialis et efficientis rasionem
 <lb/>habet, quemadmodum Hippocrates arbitratus est?
 <lb/>an alterius tantam, efficientis, ut autumat Aristoteles, qui
@@ -131,10 +192,8 @@
 <lb/>maneat semen, an etiam simul excernatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Triplicem autem observationem facere licet;
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Triplicem autem observationem facere licet;
   <lb/><hi rend="italic">priorem</hi> quidem evidentissimam, quam ego ac multoties
 <lb/>feci, quum equos, canes, asinos, vaccas, capras et oves
 <lb/>observavi, an aliquando post coitum semen retineant, vel
@@ -191,10 +250,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Atque haec quidem a me dicta stunt propter
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Atque haec quidem a me dicta stunt propter
 <lb/>quosdam hujusce temporis philosophos, quod hi
 <lb/>seipfos vocent et Aristotelicos et Peripateticos; neque
 <lb/>enim ego ita compellarem hos viros adeo sententiae Aristolulis
@@ -267,10 +324,8 @@
 </div>
 <pb n="4.520"/>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Relictis igitur jam nomine tantum Aristotelicis,
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Relictis igitur jam nomine tantum Aristotelicis,
 <lb/>et usque adeo ab opere alienis, ut neque quae
 <lb/>circa primum aut secundum de generatione animalium
 <lb/>ab eo scripta sint sciant, rursus ad ipsum Aristotelem
@@ -419,10 +474,8 @@
 <lb/>autem est in osculis vasorum, illis stolis connectitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Vellem autem, relictis jam apparentibus,
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Vellem autem, relictis jam apparentibus,
 <lb/>Aristotelem interrogare, num prima et communissima animalium
 <pb n="4.528"/>
 <lb/>organa, a quibus omnes partes gubernantur, concedat
@@ -544,10 +597,8 @@
 <lb/>hujus organum natura uterum fecit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Quantum igitur ex femine ipso uterum
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Quantum igitur ex femine ipso uterum
 <lb/>contingit, hoc statim membrana fit, quemadmodum paulo
 <lb/>ante est commonstratum. Reliquum vero totum habuit
 <lb/>quidem et ipsum insitas facultates, attrahentem quidem
@@ -581,10 +632,8 @@
 <lb/>cavari et perfectam absolvi ac vas fieri.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Sed enim non convenit juxta unum
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Sed enim non convenit juxta unum
 <lb/>naturae opus motuum consequentiam enarrando fui oblivisci
 <lb/>ac longius a principio abire: regrediamur igitur
 <lb/>rursus ad illud. Postquam itaque femen ad fundum uteri
@@ -651,10 +700,8 @@
 <lb/>excipiat. Sed de his paulo post accuratius dicetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Rurfus autem regredior ad id, quod in
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Rurfus autem regredior ad id, quod in
 <lb/>principio est dilatum. Semen equidem tradit ad se
 <lb/>per vasta ad uterum pertingentia sanguinem et spiritum,
 <lb/>utrumque ad sitam propriam cavitatem. Attrahitur autem
@@ -709,10 +756,8 @@
 <lb/>igitur aliquanto posterius fiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Rursus autem ad primam animalis constitutionem
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Rursus autem ad primam animalis constitutionem
 <lb/>orationem reducamus, quae ut constans simulque
 <lb/>manifesta procedat, universam foetuum fabricam quatuor
 <lb/>temporibus distinguamus. Primum, in quo in abortu
@@ -802,10 +847,8 @@
 <lb/>utetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Principium autem plantae omnium primum
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Principium autem plantae omnium primum
 <lb/>habet, quod non ex sanguine, sed ex ipso semine
 <lb/>arteriam et venam, et nervum, os item, et membranam
 <pb n="4.547"/>
@@ -903,10 +946,8 @@
 <lb/>ex sanguine habens.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Omnia enim, quae sunt carnosi generis,
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Omnia enim, quae sunt carnosi generis,
 <lb/>ex sanguine generata sunt; membranosa vero omnia ex
 <lb/>femine ortum habent. Et ob id, quae ex sanguine generatae
 <pb n="4.552"/>
@@ -976,10 +1017,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Quomodo igitur hoc generetur, facillimum
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Quomodo igitur hoc generetur, facillimum
 <lb/>fuerit nobis brevibus ostendere. Volo autem demonstrationem
 <lb/>sermoni apponere, quod huic praesenti
 <lb/>tractationi familiarissimum existat. Quemadmodum igitur,
@@ -1029,10 +1068,8 @@
 <lb/>menstruum id esse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Fortassis igitur dixerit quapiam, magis
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Fortassis igitur dixerit quapiam, magis
 <lb/>dubium et obscurum nobis factum esse sermonem. Si
 <lb/>enim arteriae et venae femen generare possunt, cur, amputatis
 <pb n="4.558"/>
@@ -1107,10 +1144,8 @@
 <lb/>circa actionem efficaciam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Quando vero et de his jam demonstratum
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Quando vero et de his jam demonstratum
 <lb/>est, ad id quod restat ex dilatis progrediar. Ad
 <lb/>Aristotelem equidem expeditissimus sermo fuit testes feminis
 <lb/>generatione privantem. Si enim ilii non generant
@@ -1152,10 +1187,8 @@
 <lb/>generationem. Atque hactenus quidem de his.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Jam vero alteram sermonis partem percurramus,
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Jam vero alteram sermonis partem percurramus,
 <lb/>quandoquidem et medicis quibusdam visum
 <lb/>est, testes nihil ad seminis generationem conferre, et
 <lb/>plurimi sane etiam probabiles demonstrationes invenerunt,
@@ -1507,10 +1540,8 @@
 </div>
 <pb n="4.582"/>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Immoror autem diutius fortassis opinionem
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Immoror autem diutius fortassis opinionem
 <lb/>palam vitiosam redarguendo, ut quae nullum adeo
 <lb/>idiotam lateat. Unde optarim sane, si fieri posset, ut nihil
 <lb/>tale unquam ab Aristotele dictum esset, sed omnino, quemadmodum
@@ -1659,10 +1690,8 @@
 <lb/>generatio a principio contigit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/>Si huic orationi quicquam addere mihi
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> Si huic orationi quicquam addere mihi
 <lb/>videatur, id sane fortassis minime necessarium erit.
 <lb/>Quoniam vero totam testium naturam explicavi, nihil deterius
 <lb/>fuerit de spermaticis vasis rursum disserere. Si
@@ -1720,10 +1749,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE SEMINE
  <lb/>LIBER II.</head>
-
-
 <p rend="indent">
- <lb/>At vero deinceps de mulieris semine
+<lb/><label type="head"><num value="1">Cap. I.</num></label> At vero deinceps de mulieris semine
 <lb/>erunt dicenda; quaecunque superiori explicatione dicere
 <lb/>distulimus; principium vero etiam horum sunt ea, quae
 <lb/>evidenter in dissectionibus conspiciuntur. Adjacent equidem
@@ -2046,10 +2073,8 @@
 <lb/>ac studio habent demonstrationibus scientificis uti.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Nos vero per nos ipsos rursus scrutemur,
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Nos vero per nos ipsos rursus scrutemur,
 <lb/>si qua tandem est causa, ob quam species animalis magis
 <lb/>juxta matrem sit, similitudo autem alterutri parenti. Etsi
 <lb/>enim quam maxime semen emittat foemina, idque fueeundum
@@ -2153,10 +2178,8 @@
 <lb/>augere atque corroborare.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>At quum haec abunde definita sint, tempus
+<lb/><label type="head"><num value="3">Cap. III.</num></label> At quum haec abunde definita sint, tempus
 <lb/>utique opportunum fuerit considerare id, quod ut dubium
 <lb/>proponitur tum ab his, qui foeminam femen emittare
 <lb/>in totum negant, tum qui foecundum semen emittere
@@ -2237,10 +2260,8 @@
 </div>
 <pb n="4.620"/>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>A nobis quidem jam potestate soluta est
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> A nobis quidem jam potestate soluta est
 <lb/>haec quaestio in priore libro: dicetur tamen nihilominus
 <lb/>etiam nunc. Porro neque Athenaeus, neque Aristoteles,
 <lb/>neque alius medicus aut philosophus ejus solvendae facultatem
@@ -2359,10 +2380,8 @@
 </div>
 <pb n="4.626"/>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Caeterum non parva dubitatio excipit hunc
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Caeterum non parva dubitatio excipit hunc
 <lb/>sermonem de similitudine partium natorum ad parentes.
 <lb/>Si enim semusta dominatu similitudinem fieri confingit,
 <lb/>omnes partes alteri parentum similes generabuntur, cujuscunque
@@ -2677,10 +2696,8 @@
 <lb/>sed etiam matris, ex relatis satis manifestum est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Videamus porro deinceps de aditibus
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Videamus porro deinceps de aditibus
 <lb/>glandulosis, quos inexperti ad anatomicam speculationem
 <lb/>in totum ignorant, experti vero omnes, velut uno ore,
 <lb/>semen continere pronunciaverunt. Pudore igitur consundor

@@ -7,8 +7,10 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De locis affectis</title>
-        <author xml:lang="lat">Galenus</author>
-        <editor>Kühn, Karl Gottlob</editor>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
+        <editor role="editor">Kühn, Karl Gottlob</editor>
         <funder>Andrew W. Mellon Foundation</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts</resp>
@@ -42,7 +44,38 @@
           <persName>Bruce Robertson</persName>
         </respStmt>
       </titleStmt>
-      <publicationStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">Revised edition of the originally published versions of the electronic texts.
+<date type="revision" when="2024">2024</date>
+</edition>
+<respStmt>
+<resp>To reuse the Kühn’s edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We added bibliographical references to the previous editions referred to in Kühn’s edition as "Bas." and "Chart.": that of the Γαληνοῦ Ἅπαντα published in Basel (hence referred to as #Basel) and the Operum Hippocratis Coi, et Galeni Pergameni of René Chartier (hence referred to as #Chartier); we changed the naming schemes of the milestones indicating the corresponding Basel and Chartier pages in Kühn’s edition, and added the corresponding Basel and Chartier volume number. The editions other than that of Kühn were given milestones indicating the corresponding Kühn volume and pages when they were missing. Treatises from Kühn’s edition were given line numbers. We also added elements of structuration that were present in Kühn’s edition but were missing in the TEI, mainly the division of chapters into sections in some treatises, as well as the header for those sections. The text of headings containing the name of chapter and numbers of chapters and sections have been restored, as well as the original symbols as they appear within the printed text of Kühn’s edition. The text numbered tlg0057.tlg096 that was separately edited was reinserted in the tlg0057.tlg095 in accordance with its location within Kühn’s edition. For details, see the revisionDesc section.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Lead Developer, Optéos</resp>
+<persName>Frédéric Glorieux</persName>
+</respStmt>
+<respStmt>
+<resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Cahal Taaffe</persName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+</editionStmt>
+<publicationStmt>
         <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
         <publisher>University of Leipzig</publisher>
         <pubPlace>Germany</pubPlace>
@@ -57,7 +90,7 @@
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="editor">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -108,13 +141,62 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Greek numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn’s edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+<revisionDesc>
+<change who="#Galenus_verbatim" when="2023">First round of revisions for publication on the Galenus verbatim website.</change>
+<change who="#Galenus_verbatim" when="2023">Added bibliographical information on the editions referred to in Kühn’s edition as "Bas." and "Chart."</change>
+<change who="#Galenus_verbatim" when="2023">Corrected and added milestone tags for the missing page changes of both Basel and Chartier editions when they were missing.</change>
+<change who="#Galenus_verbatim" when="2023">Punctual correction to the digitization of Kühn’s text.</change>
+<change who="#Galenus_verbatim" when="2023">Correction and additions of the sections &lt;div&gt; level when they were missing to better reflect the structure of Kühn’s edition.</change>
+<change who="#Galenus_verbatim" when="2023">Modification to the subtype of some &lt;div&gt; to better reflect Kühn’s structure.</change>
+<change who="#Galenus_verbatim" when="2023">Added &lt;label&gt; elements for all headings of chapters and sections.</change>
+<change who="#Galenus_verbatim" when="2023">Added &lt;l&gt; elements for verse lines and &lt;lg&gt; elements for linegroups.</change>
+<change who="#Galenus_verbatim" when="2023">Replaced abbreviations introduced by the initial transcription by the original symbols as they appear within the printed text of Kühn’s edition.</change>
+<change who="#Galenus_verbatim" when="2023">Added line number.</change>
+<change who="#Galenus_verbatim" when="2024">The text of headings containing the name of chapter and numbers of chapters and sections have been restored and marked with &lt;label&gt; and &lt;num&gt; elements.</change>
+<change who="#Galenus_verbatim" when="2024">All the indentations have been restored.</change>
+</revisionDesc>
+</teiHeader>
   <text>
     <body>
       <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg057.1st1K-grc1">
@@ -125,7 +207,7 @@
 <lb/>ΤΟΠΩΝ ΒΙΒΛΙΟΝ Α.
 </head>
             <p rend="indent">
-<lb n="1"/>Τόπους ὀνομάζουσι τὰ μόρια τοῦ σώματος
+              <lb n="1"/><label type="head"><num value="1">Κεφ. αʹ.</num></label> Τόπους ὀνομάζουσι τὰ μόρια τοῦ σώματος
 <lb n="2"/>οὐχ οἱ νεώτεροι μόνον, ἀλλὰ καὶ τῶν παλαιῶν ἰατρῶν
 <lb n="3"/>οὐκ ὀλίγοι, σπουδάζουσί τε διαγινώσκειν τὰ κατ’ αὐτοὺς
 <lb n="4"/>πάθη, διότι καὶ τὴν θεραπείαν ὑπαλλάττεσθαι συμβαίνει
@@ -485,8 +567,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="2" xml:id="_1.2">
-            <p rend="indent">
-<lb n="3"/>Τῶν κατὰ τὸ σῶμα τοῦ ζώου πασῶν ἐνεργειῶν
+<p rend="indent">
+<lb n="3"/><label type="head"><num value="2">Κεφ. βʹ.</num></label> Τῶν κατὰ τὸ σῶμα τοῦ ζώου πασῶν ἐνεργειῶν
 <lb n="4"/>ἑκάστης τι μόριον ἴδιόν ἐστιν, δι’ οὗ γίνεται. καὶ
 <lb n="5"/>τοίνυν καὶ βλάπτεσθαι τὴν ἐνέργειαν ἀναγκαῖόν ἐστι, παθόντος
 <lb n="6"/>κατά τι τοῦ δημιουργοῦντος αὐτήν. πάσχει δὲ ποτὲ μὲν
@@ -685,8 +767,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="3" xml:id="_1.3">
-            <p rend="indent">
-<lb n="7"/><milestone unit="ed2page" n="7.388"/>Νυνὶ δὲ πάλιν ἐπ’ ἀρχὴν ἀνάγωμεν
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="3">Κεφ. γʹ.</num></label> <milestone unit="ed2page" n="7.388"/>Νυνὶ δὲ πάλιν ἐπ’ ἀρχὴν ἀνάγωμεν
 <lb n="8"/>τὸν λόγον, ἐφ’ ἑκάστου μορίου ζητοῦντες εὑρεῖν σημεῖα, τὰ
 <lb n="9"/>μὲν ὡς τῆς ἰδίας οὐσίας αὐτοῦ δηλοῦντα τὰ πάθη, τὰ δ’ ὡς
 <lb n="10"/>ὀργάνου. καθ’ ἑκάτερόν τε πάλιν ἀφορίζοντές τε καὶ διακρίνοντες
@@ -776,8 +858,8 @@
           </div>
           <pb n="8.35"/>
           <div type="textpart" subtype="chapter" n="4" xml:id="_1.4">
-            <p rend="indent">
-<lb n="1"/>Οὔκουν ἀμελεῖν οὐδ’ ἐν τούτοις προσήκει,
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="4">Κεφ. δʹ.</num></label> Οὔκουν ἀμελεῖν οὐδ’ ἐν τούτοις προσήκει,
 <lb n="2"/>ἀλλὰ προσέχοντας<milestone unit="ed1page" n="3.254"/> τὸν νοῦν ἀκριβῶς, ὅσα μὲν εἰς λογικὴν
 <lb n="3"/>ἀνάγεται ζήτησιν, ἰδίᾳ καταλιπεῖν, ὅσα δ’ εἰς διάγνωσιν
 <lb n="4"/>τοῦ πεπονθότος, ἀκριβῶς ἐπισκοπεῖσθαι· τὸ γάρ τοι προγινώσκειν
@@ -953,8 +1035,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="5" xml:id="_1.5">
-            <p rend="indent">
-<lb n="6"/>Πολλάκις δ’ ἅμα τόπου τε καὶ διαθέσεως
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="5">Κεφ. εʹ.</num></label> Πολλάκις δ’ ἅμα τόπου τε καὶ διαθέσεως
 <lb n="7"/>ἐξ ἑνὸς γνωρίσματός ἐστιν ἡ ἔνδειξις, ἤ τόπου τε ἅμα καὶ
 <lb n="8"/><milestone unit="ed2page" n="7.393"/>αἰτίου· οἷον ἐπὶ μὲν τῶν τόπων ἀπό τε τῆς βεβλαμμένης
 <lb n="9"/>ἐνεργείας καὶ τῶν ἐκκρινομένων καὶ τῆς θέσεως καὶ
@@ -1037,8 +1119,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="6" xml:id="_1.6">
-            <p rend="indent">
-<lb n="9"/>Ἐν δὲ τῷ παρόντι τὸν περὶ τῶν ἰδιοπαθούντων
+<p rend="indent">
+<lb n="9"/><label type="head"><num value="6">Κεφ. στʹ.</num></label> Ἐν δὲ τῷ παρόντι τὸν περὶ τῶν ἰδιοπαθούντων
 <lb n="10"/>τε καὶ συμπαθούντων λόγον ἔγνωκα προσθεὶς, ἐπ’
 <lb n="11"/>αὐτοῦ καταπαῦσαι τὸ βιβλίον, ἀναμνήσας πρότερον, ὡς τὴν
 <lb n="12"/>ὑπὸ τῶν ἄλλων ἰατρῶν ὀνομαζομένην πρωτοπάθειαν οἰκειότερον
@@ -1379,8 +1461,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="7" xml:id="_1.7">
-            <p rend="indent">
-<lb n="9"/>Καὶ διαφέρει πάμπολυ κατὰ τοῦτο τὰ φυσικὰ
+<p rend="indent">
+<lb n="9"/><label type="head"><num value="7">Κεφ. ζʹ.</num></label> Καὶ διαφέρει πάμπολυ κατὰ τοῦτο τὰ φυσικὰ
 <lb n="10"/>τῶν ψυχικῶν ὀργάνων, εἴγε τοῖς μὲν φυσικοῖς ἐδείχθη
 <lb n="11"/>σύμφυτος ἡ τῆς ἐνεργείας δύναμις οὖσα, τοῖς ψυχικοῖς δὲ
 <lb n="12"/>ἀπὸ τῆς ἀρχῆς ἐπιῤῥεῖν ὁμοίως ἡλιακῷ φωτί. καθάπερ
@@ -1424,7 +1506,7 @@
 <lb/>ΤΟΠΩΝ ΒΙΒΛΙΟΝ Β.
 </head>
             <p rend="indent">
-<lb n="1"/>Πρόκειται μὲν, ὡς Ἐρασίστρατος ἀεὶ παρακελεύεται,
+              <lb n="1"/><label type="head"><num value="1">Κεφ. αʹ.</num></label> Πρόκειται μὲν, ὡς Ἐρασίστρατος ἀεὶ παρακελεύεται,
 <lb n="2"/>γυμνάζειν τὸν λογισμὸν εἴς τε τἄλλα τῆς τέχνης
 <lb n="3"/>ἔργα καὶ τὰ νῦν ἡμῖν προκείμενα περὶ τὰς διαγνώσεις τῶν
 <lb n="4"/>πεπονθότων τόπων. εἰσὶ δὲ τρεῖς τρόποι γυμνασίου κατ’
@@ -1449,8 +1531,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="2" xml:id="_2.2">
-            <p rend="indent">
-<lb n="13"/>Οἷον εὐθέως, ἐπειδὴ πλεονάζει κατὰ τοῦτο
+<p rend="indent">
+<lb n="13"/><label type="head"><num value="2">Κεφ. βʹ.</num></label> Οἷον εὐθέως, ἐπειδὴ πλεονάζει κατὰ τοῦτο
 <lb n="14"/>τὸ γένος ὁ Ἀρχιγένης, ἐκ τῆς τῶν ἀλγημάτων διαφορᾶς ἡγούμενος
 <lb n="15"/><milestone unit="ed2page" n="7.402"/>δηλοῦσθαι τὰ πεπονθότα μόρια, σκεπτέον ὑπὲρ
 <lb n="16"/>αὐτῶν ἀκριβῶς. τὸν γοῦν ναρκώδη πόνον ἐπὶ νεύροις γίνεσθαί
@@ -1537,8 +1619,8 @@
           </div>
           <pb n="8.75"/>
           <div type="textpart" subtype="chapter" n="3" xml:id="_2.3">
-            <p rend="indent">
-<lb n="1"/>Καὶ τοίνυν καὶ τὸ σφύζειν ἀνωδύνως
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="3">Κεφ. γʹ.</num></label> Καὶ τοίνυν καὶ τὸ σφύζειν ἀνωδύνως
 <lb n="2"/>ὑπάρχει μόναις ταῖς ἀρτηρίαις, ὑγιαίνοντος τοῦ ζώου· φλεγμονῆς
 <lb n="3"/>δὲ μεγάλης γενομένης, ἢ ἐρυσιπέλατος, ἢ ἀποστήματος,
 <lb n="4"/>αἰσθανόμεθα σὺν ὀδύνῃ τοῦ σφυγμοῦ τῶν ἀρτηριῶν,
@@ -1606,8 +1688,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="4" xml:id="_2.4">
-            <p rend="indent">
-<lb n="9"/>Οὔκουν οὐδ’ ἐν ἥπατι γένοιτ’ ἄν ποτε τοιοῦτος
+<p rend="indent">
+<lb n="9"/><label type="head"><num value="4">Κεφ. δʹ.</num></label> Οὔκουν οὐδ’ ἐν ἥπατι γένοιτ’ ἄν ποτε τοιοῦτος
 <lb n="10"/>σφυγμὸς, οὐδ’ ἐν νεφροῖς, ὅτι μηδ’ ἐν ἐκείνοις εἰς ὅλα
 <lb n="11"/>διασπείρεται τὰ σπλάγχνα τὰ νεῦρα, καθ’ ὅτι μηδ’ ἐν πνεύμονι.
 <lb n="12"/>καὶ διὰ τοῦτο βάρους αἴσθησις ἐπ’ αὐτῶν γίνεται,
@@ -1631,8 +1713,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="5" xml:id="_2.5">
-            <p rend="indent">
-<lb n="11"/><milestone unit="ed2page" n="7.405"/>Οἱ δ’ ἄλλοι πόνοι τισὶ μὲν ὑπάρχουσι
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="5">Κεφ. εʹ.</num></label> <milestone unit="ed2page" n="7.405"/>Οἱ δ’ ἄλλοι πόνοι τισὶ μὲν ὑπάρχουσι
 <lb n="12"/>μορίοις, τισὶ δ’ οὔ. μεμνῆσθαι γοῦν αὐτῶν ἀεὶ χρὴ, καὶ
 <lb n="13"/>γιγνώσκοντα τὴν φύσιν ἑκάστου τῶν τόπων ἐπισκοπεῖσθαι,
 <lb n="14"/>τίνας μὲν ἐγχωρεῖ δέξασθαι τρόπους ὀδύνης, τίνας δ’ οὔ.
@@ -1768,8 +1850,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="6" xml:id="_2.6">
-            <p rend="indent">
-<lb n="12"/>Οὐ μὴν αἱμωδίᾳ τι προσεοικὸς ὁ πόνος
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="6">Κεφ. στʹ.</num></label> Οὐ μὴν αἱμωδίᾳ τι προσεοικὸς ὁ πόνος
 <lb n="13"/>ἔχει τῶν ὑμενωδῶν σωμάτων, ὡς Ἀρχιγένης ἔγραψεν· ἴσμεν
 <lb n="14"/>γὰρ ὅτι κατὰ τὸ στόμα μόνον, οὐδὲ τοῦτο σύμπαν, ἀλλὰ
 <lb n="15"/>τοὺς ὀδόντας τε καὶ τὰ οὖλα γίνεταί τι πάθος, ὃ καλοῦμεν
@@ -1808,8 +1890,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="7" xml:id="_2.7">
-            <p rend="indent">
-<lb n="10"/>Ὅσον οὖν ἐν αὐτοῖς ἐστι σαφὲς, ἐπισκεψώμεθα,
+<p rend="indent">
+<lb n="10"/><label type="head"><num value="7">Κεφ. ζʹ.</num></label> Ὅσον οὖν ἐν αὐτοῖς ἐστι σαφὲς, ἐπισκεψώμεθα,
 <lb n="11"/>καθάπερ ὀλίγον ἔμπροσθεν ἐπὶ τοῦ ναρκώδους πόνου.
 <lb n="12"/>δίκαιον γάρ ἐστι τὰ μὲν ἀσαφῆ τῶν ὀνομάτων ἐν ἀδήλῳ καταλιπεῖν,
 <lb n="13"/>ἄχρηστα νομίζοντας, καθάπερ εἰ μηδ’ ὅλως ἐγέγραπτο·
@@ -1843,8 +1925,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="8" xml:id="_2.8">
-            <p rend="indent">
-<lb n="3"/>Ἵν’ οὖν τι πλέον ἔχωσι καὶ παρ’ ἡμῶν οἱ
+<p rend="indent">
+<lb n="3"/><label type="head"><num value="8">Κεφ. ηʹ.</num></label> Ἵν’ οὖν τι πλέον ἔχωσι καὶ παρ’ ἡμῶν οἱ
 <lb n="4"/>φιλομαθεῖς, αὐτὰς ῥήσεις αὐτοῦ παραθέμενοι, ὅσα μὲν ἀληθῆ
 <lb n="5"/>τ’ ἐστὶν ἅμα καὶ σαφῆ, ταῦτ’ ἐκλέξας μόνα, πιστεύειν
 <lb n="6"/>αὐτοῖς ἀξιώσω τοὺς ἀσκουμένους κατὰ τὴν τέχνην· ὅσα δ’
@@ -2226,8 +2308,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="9" xml:id="_2.9">
-            <p rend="indent">
-<lb n="6"/>Μεταβῶμεν δ’ ἐφ’ ἑτέραν, διδάσκουσαν
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="9">Κεφ. θʹ.</num></label> Μεταβῶμεν δ’ ἐφ’ ἑτέραν, διδάσκουσαν
 <lb n="7"/>καὶ αὐτὴν ἐκ τῆς τῶν πόνων διαφορᾶς διάγνωσιν τῶν πεπονθότων
 <lb n="8"/>μορίων· ἔστι δ’ ἡ ῥῆσις ἥδε· ὁ δὲ τοῦ ἥπατος
 <lb n="9"/>ὅλκιμος, ἐμπεφυκὼς καὶ ναρκώδης ἐστὶ καὶ ἀτειρότερον
@@ -2415,8 +2497,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="10" xml:id="_2.10">
-            <p rend="indent">
-<lb n="3"/><milestone unit="ed2page" n="7.419"/>Ἐγὼ δ’ ἠξίουν Ἀρχιγένη μετὰ τοσούτους
+<p rend="indent">
+<lb n="3"/><label type="head"><num value="10">Κεφ. ιʹ.</num></label> <milestone unit="ed2page" n="7.419"/>Ἐγὼ δ’ ἠξίουν Ἀρχιγένη μετὰ τοσούτους
 <lb n="4"/>ἰατροὺς γεγονότα προσθεῖναί τι τῇ σαφηνείᾳ τῆς
 <lb n="5"/>διδασκαλίας, οὐκ ἀφελεῖν τοσοῦτον, ὡς μηδ’ ἡμᾶς αὐτοὺς
 <lb n="6"/>νοεῖν ἃ λέγει, γεγηρακότας ἐν τοῖς ἔργοις τῆς τέχνης. ὅπερ
@@ -2717,7 +2799,7 @@
 <lb/>ΤΟΠΩΝ ΒΙΒΛΙΟΝ Γ.
 </head>
             <p rend="indent">
-<lb n="1"/>Περὶ τῶν πεπονθότων τόπων, οὕτω γὰρ
+              <lb n="1"/><label type="head"><num value="1">Κεφ. αʹ.</num></label> Περὶ τῶν πεπονθότων τόπων, οὕτω γὰρ
 <lb n="2"/>ὀνομάζουσι τὰ μόρια τοῦ σώματος, ὀλίγοι τε τῶν ἰατρῶν
 <lb n="3"/>ἐπραγματεύσαντο πλέον τε παρέλιπον ἀνεξέργαστον ἢ μετεχειρίσαντο·
 <lb n="4"/>καταλιπὼν οὖν ἐγὼ τοὺς ἄλλους, Ἀρχιγένους
@@ -2755,8 +2837,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="2" xml:id="_3.2">
-            <p rend="indent">
-<lb n="8"/><milestone unit="ed2page" n="7.425"/>Ὅπερ δ’ ἦν ἄμεινόν τε καὶ πολὺ χρησιμώτερον
+<p rend="indent">
+<lb n="8"/><label type="head"><num value="2">Κεφ. βʹ.</num></label> <milestone unit="ed2page" n="7.425"/>Ὅπερ δ’ ἦν ἄμεινόν τε καὶ πολὺ χρησιμώτερον
 <lb n="9"/>εἰς τὴν προκειμένην πραγματείαν, οὐκ ἀκριβῶς
 <lb n="10"/>διήρθρωσεν ὁ Ἀρχιγένης, ὁπόσοι τρόποι τῶν βλαπτομένων
 <lb n="11"/>ἐνεργειῶν εἰσιν· οὕτω γὰρ οἵ τε πρωτοπαθοῦντες, ἢ ἰδιοπαθοῦντες,
@@ -2771,8 +2853,8 @@
           </div>
           <pb n="8.139"/>
           <div type="textpart" subtype="chapter" n="3" xml:id="_3.3">
-            <p rend="indent">
-<lb n="1"/>Ἄλλῳ μὲν γὰρ τρόπῳ τῆς γαστρὸς πασχούσης
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="3">Κεφ. γʹ.</num></label> Ἄλλῳ μὲν γὰρ τρόπῳ τῆς γαστρὸς πασχούσης
 <lb n="2"/>ὑποχύσεως φαίνεται συμπτώματα· καθ’ ἕτερον δὲ τρόπον
 <lb n="3"/>οὐδὲν τῶν φωνητικῶν ὀργάνων πεπονθότων ὁ καταπεσὼν
 <lb n="4"/>ἐξ ὑψηλοῦ τὴν φωνὴν ἐβλάβη, καὶ τούτων γ’ ἀμφοτέρων
@@ -2885,8 +2967,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="4" xml:id="_3.4">
-            <p rend="indent">
-<lb n="16"/>Νυνὶ δ’ εἰρήσεται μόνα τὰ πρὸς τὴν ἐνεστῶσαν
+<p rend="indent">
+<lb n="16"/><label type="head"><num value="4">Κεφ. δʹ.</num></label> Νυνὶ δ’ εἰρήσεται μόνα τὰ πρὸς τὴν ἐνεστῶσαν
 <lb n="17"/>ὑπόθεσιν χρήσιμα. τὰς γάρ τοι τῶν ἐνεργειῶν βλάβας
 <lb n="18"/>εὗρον οὐ μόνον ἐπὶ τοῖς ὁμοιομερέσιν, ὑφ’ ὧν γίγνονται,
 <pb n="8.145"/>
@@ -2944,8 +3026,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="5" xml:id="_3.5">
-            <p rend="indent">
-<lb n="14"/>Εἰς ἀνάγκην οὖν ποτε καταστὰς ἀνακτήσασθαί
+<p rend="indent">
+<lb n="14"/><label type="head"><num value="5">Κεφ. εʹ.</num></label> Εἰς ἀνάγκην οὖν ποτε καταστὰς ἀνακτήσασθαί
 <lb n="15"/>τινος ἀπολωλυῖαν μνήμην, ἔτι νεώτερος ὢν, οὔτε τῶν
 <lb n="16"/>διδασκάλων ἑωρακώς τινα θεραπεύοντα τοῦτο τὸ πάθος οὔτ’
 <lb n="17"/>ἀνεγνωκὼς παρά τινι τῶν ἀρχαίων τὴν ἴασιν, ἐζήτουν κατ’
@@ -3189,8 +3271,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="6" xml:id="_3.6">
-            <p rend="indent">
-<lb n="8"/>Ὥρα τοίνυν ἐπανελθεῖν ἤδη μοι πρὸς τὸ
+<p rend="indent">
+<lb n="8"/><label type="head"><num value="6">Κεφ. στʹ.</num></label> Ὥρα τοίνυν ἐπανελθεῖν ἤδη μοι πρὸς τὸ
 <lb n="9"/>προκείμενον. ὁμολογουμένου μὲν ἅπασι τοῖς ἰατροῖς αὐτοῖς
 <lb n="10"/>τοῖς ἔργοις, οἷς δρῶσιν κατὰ πάντα τὰ τοῦ λογιστικοῦ πάθη,
 <lb n="11"/>τὴν κεφαλὴν ὑπάρχειν οἶκον αὐτοῦ, προσῆκον ἦν ἐπισκέψασθαι
@@ -3278,8 +3360,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="7" xml:id="_3.7">
-            <p rend="indent">
-<lb n="15"/><milestone unit="ed2page" n="7.434"/>Παραφυλάττειν οὖν χρὴ τοὺς ὕπνους
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="7">Κεφ. ζʹ.</num></label> <milestone unit="ed2page" n="7.434"/>Παραφυλάττειν οὖν χρὴ τοὺς ὕπνους
 <lb n="16"/>τῶν ἀπολωλεκότων τὴν μνήμην, ἢ τὴν σύνεσιν, ἀπώλεια γὰρ
 <lb n="17"/>τῆς συνέσεως ἡ μώρωσίς ἐστι, πότερον ὑπνώδεις ἱκανῶς οἱ
 <lb n="18"/>κάμνοντές εἰσιν, ἢ μετρίως ὑπνώδεις, ἢ τὴν ἀρχὴν οὐδ’
@@ -3359,8 +3441,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="8" xml:id="_3.8">
-            <p rend="indent">
-<lb n="15"/>Ἔνιοι γὰρ ἀναπείθουσιν ἑαυτοὺς, ἀρχὴν
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="8">Κεφ. ηʹ.</num></label> Ἔνιοι γὰρ ἀναπείθουσιν ἑαυτοὺς, ἀρχὴν
 <lb n="16"/>εἶναι τῶν νεύρων τὴν καρδίαν, ἐκ τοῦ μὴ δύνασθαι διακρῖναι
 <lb n="17"/>σύνδεσμον νεύρου, συντελούσης εἰς τοῦτο καὶ τῆς ὁμωνυμίας,
 <lb n="18"/>ἐπειδὴ πολλοὶ τῶν ἰατρῶν καὶ τοὺς συνδέσμους ὀνομάζουσιν
@@ -3448,8 +3530,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="9" xml:id="_3.9">
-            <p rend="indent">
-<lb n="5"/><milestone unit="ed2page" n="7.437"/>Ἀλλὰ καὶ ἡ ἐπιληψία σπασμός ἐστιν
+<p rend="indent">
+<lb n="5"/><label type="head"><num value="9">Κεφ. θʹ.</num></label> <milestone unit="ed2page" n="7.437"/>Ἀλλὰ καὶ ἡ ἐπιληψία σπασμός ἐστιν
 <lb n="6"/>ἁπάντων τῶν τοῦ σώματος μορίων, οὐ συνεχὴς ὡς ἐμπροσθότονός
 <lb n="7"/>τε καὶ ὀπισθότονος καὶ τέτανος, ἀλλ’ ἐκ διαστημάτων
 <lb n="8"/>χρόνου γιγνόμενος· οὐ μόνον δὲ τούτῳ διενήνοχεν τῶν εἰρημένων
@@ -3579,8 +3661,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="10" xml:id="_3.10">
-            <p rend="indent">
-<lb n="18"/>Ὥσπερ δ’ ἐν τοῖς κατὰ συμπάθειαν οὐ
+<p rend="indent">
+<lb n="18"/><label type="head"><num value="10">Κεφ. ιʹ.</num></label> Ὥσπερ δ’ ἐν τοῖς κατὰ συμπάθειαν οὐ
 <lb n="19"/>σμικρὰ διαφορὰ γίνεται τοῖς πάθεσι τῆς κεφαλῆς, οὕτω καὶ
 <pb n="8.180"/>
 <lb n="1"/>ἐν αὐτοῖς τοῖς κατὰ πρωτοπάθειαν. οἱ γοῦν κατ’ αὐτὴν τὴν
@@ -3841,8 +3923,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="11" xml:id="_3.11">
-            <p rend="indent">
-<lb n="7"/>Περὶ δὲ τῶν ἐπιληπτικῶν παθῶν, ἐπειδὴ
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="11">Κεφ. ιαʹ.</num></label> Περὶ δὲ τῶν ἐπιληπτικῶν παθῶν, ἐπειδὴ
 <lb n="8"/>καὶ ταῦτα γίνεται ποτὲ μὲν αὐτῆς τῆς κεφαλῆς πασχούσης,
 <lb n="9"/>ποτὲ δὲ ἄλλοις συμπασχούσης, διοριστέον ἐπιμελῶς· ἠμέληται
 <lb n="10"/>γὰρ ἅπασι σχεδὸν τοῖς ἰατροῖς, ὥσπερ ὁ τῶν τριῶν μελαγχολιῶν
@@ -4010,8 +4092,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="12" xml:id="_3.12">
-            <p rend="indent">
-<lb n="17"/>Ταῦτά τε οὖν ἅπαντα σαφῶς τὰ πάθη περὶ
+<p rend="indent">
+<lb n="17"/><label type="head"><num value="12">Κεφ. ιβʹ.</num></label> Ταῦτά τε οὖν ἅπαντα σαφῶς τὰ πάθη περὶ
 <lb n="18"/>τὴν κεφαλὴν γίνεται, καὶ προσέτι τὸ καλούμενον σκοτωματικὸν,
 <pb n="8.202"/>
 <lb n="1"/>εὔδηλον ὂν κᾀξ αὐτῆς τῆς προσηγορίας, ὁποῖόν ἐστι.
@@ -4064,8 +4146,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="13" xml:id="_3.13">
-            <p rend="indent">
-<lb n="9"/>Οὐ μὴν οὐδὲ περὶ τῆς ὀνομαζομένης ὑπὸ
+<p rend="indent">
+<lb n="9"/><label type="head"><num value="13">Κεφ. ιγʹ.</num></label> Οὐ μὴν οὐδὲ περὶ τῆς ὀνομαζομένης ὑπὸ
 <lb n="10"/>τῶν ἰατρῶν κεφαλαίας ἀμφισβητήσειεν ἄν τις, ὡς οὐκ ἂν εἴη
 <lb n="11"/>τῆς κεφαλῆς τὸ νόσημα. ἔστι γὰρ, ὡς ἄν τις συλλαβὼν λόγῳ
 <lb n="12"/>βραχεῖ εἴποι, τὸ πάθος τοῦτο κεφαλαλγία χρόνιός τε καὶ
@@ -4135,8 +4217,8 @@
           </div>
           <pb n="8.208"/>
           <div type="textpart" subtype="chapter" n="14" xml:id="_3.14">
-            <p rend="indent">
-<lb n="1"/>Τό γε μὴν τῆς παραλύσεως νόσημα καὶ τὸ
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="14">Κεφ. ιδʹ.</num></label> Τό γε μὴν τῆς παραλύσεως νόσημα καὶ τὸ
 <lb n="2"/>τῶν δι’ ὅλου τοῦ σώματος σπασμῶν, ἐξ οὗ γένους ἐστὶν καὶ
 <lb n="3"/>ὁ τέτανος, <milestone unit="ed2page" n="7.449"/>οὐκ ἔθ’ ὁμοίως τοῖσδε δι’ αἰσθήσεως γνωστὸν,
 <lb n="4"/>ἀλλὰ λόγου δεῖται τοῦ διδάξοντος. ὅταν οὖν ὅλον τὸ
@@ -4269,8 +4351,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="15" xml:id="_3.15">
-            <p rend="indent">
-<lb n="15"/>τῆς ὀσφρήσεως ἡ βλάβη πάθος ἐστὶν οὐ
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="15">Κεφ. ιεʹ.</num></label> τῆς ὀσφρήσεως ἡ βλάβη πάθος ἐστὶν οὐ
 <lb n="16"/>τῶν κατὰ τὴν ρῖνα πόρων, ἀλλ’ ἤτοι τῶν ἐμπροσθίων τοῦ
 <lb n="17"/>ἐγκεφάλου κοιλιῶν εἰς δυσκρασίαν ἀγομένων, ἢ τῶν ἐν τοῖς
 <lb n="18"/>ἠθμοειδέσιν ὀστοῖς πόρων ἐμφραττομένων· εἶπέρ γε καὶ ἡ
@@ -4289,7 +4371,7 @@
 <lb/>ΤΟΠΩΝ ΒΙΒΛΙΟΝ Δ.
 </head>
             <p rend="indent">
-<lb n="1"/>Ἐν μὲν τοῖς πρώτοις ὑπομνήμασι δύο τὴν
+              <lb n="1"/><label type="head"><num value="1">Κεφ. αʹ.</num></label> Ἐν μὲν τοῖς πρώτοις ὑπομνήμασι δύο τὴν
 <lb n="2"/>καθόλου μέθοδον, ᾗ χρώμεθα πρὸς τὰς τῶν πεπονθότων
 <lb n="3"/>τόπων διαγνώσεις, αὐτάρκως ἐπεσκεψάμεθα σὺν πολλοῖς παραδείγμασιν
 <lb n="4"/>ὡρισμένων μορίων. ἐπεὶ δὲ, ὡς εἴρηταί μοι καὶ
@@ -4315,8 +4397,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="2" xml:id="_4.2">
-            <p rend="indent">
-<lb n="14"/>Ἐν δὲ τῷ νῦν ἐνεστῶτι τετάρτῳ τῆς ὅλης
+<p rend="indent">
+<lb n="14"/><label type="head"><num value="2">Κεφ. βʹ.</num></label> Ἐν δὲ τῷ νῦν ἐνεστῶτι τετάρτῳ τῆς ὅλης
 <lb n="15"/>ὄντι πραγματείας ὁ λόγος ἔστω μοι περὶ τῶν κατὰ τὸ
 <lb n="16"/>πρόσωπον μορίων τῶν ἐν βάθει πεπονθότων, τὴν ἀρχὴν
 <lb n="17"/>ἀπὸ τῶν ὀφθαλμῶν ποιησαμένῳ. τούτων γὰρ ἐνίοτε μὲν ὁ
@@ -4539,8 +4621,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="3" xml:id="_4.3">
-            <p rend="indent">
-<lb n="4"/><milestone unit="ed2page" n="7.456"/>Καιρὸς οὖν ἤδη μεταβαίνειν ἐπὶ τὴν
+<p rend="indent">
+<lb n="4"/><label type="head"><num value="3">Κεφ. γʹ.</num></label> <milestone unit="ed2page" n="7.456"/>Καιρὸς οὖν ἤδη μεταβαίνειν ἐπὶ τὴν
 <lb n="5"/>γλῶτταν. ἑώραται δ’ ἡμῖν ἐπ’ αὐτῆς ἐνίοτε μὲν ἡ κίνησις,
 <lb n="6"/>ἐνίοτε δὲ ἡ τῆς γεύσεως αἴσθησις βεβλαμμένη, καί ποτε μὲν
 <lb n="7"/>σὺν αὐτῇ καὶ ἡ τῆς ἁφῆς. οὐκ ἔστι δ’ ἄλλα μὲν ἁφῆς, ἄλλα
@@ -4649,8 +4731,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="4" xml:id="_4.4">
-            <p rend="indent">
-<lb n="13"/>Κατὰ τὸν αὐτὸν οὖν λόγον ἐπὶ τῆς ἀκουστικῆς
+<p rend="indent">
+<lb n="13"/><label type="head"><num value="4">Κεφ. δʹ.</num></label> Κατὰ τὸν αὐτὸν οὖν λόγον ἐπὶ τῆς ἀκουστικῆς
 <lb n="14"/>αἰσθήσεως, ὅσα μὲν ἐν αὐταῖς ταῖς ὁρωμέναις κοιλότησι
 <lb n="15"/>τῶν ὤτων γίνεται παθήματα, λογικῆς οὐ δεῖται γνώσεως·
 <lb n="16"/>ὅσα δὲ ἀπαθοῦς φαινομένου τοῦ κατὰ τὰ ὦτα πόρου,
@@ -4664,8 +4746,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="5" xml:id="_4.5">
-            <p rend="indent">
-<lb n="5"/><milestone unit="ed2page" n="7.458"/>Καὶ τῶν ἄλλων δὲ τόπων ἁπάντων
+<p rend="indent">
+<lb n="5"/><label type="head"><num value="5">Κεφ. εʹ.</num></label> <milestone unit="ed2page" n="7.458"/>Καὶ τῶν ἄλλων δὲ τόπων ἁπάντων
 <lb n="6"/>τῶν κατὰ τὸ πρόσωπον οὐ μόνον ἡ κίνησις, ἀλλὰ καὶ ἡ αἴσθησις
 <lb n="7"/>ἤτοι γε ἀπόλλυται παντάπασιν ἢ βλάπτεται, ποτὲ
 <lb n="8"/>μὲν αὐτῶν ἰδιοπαθούντων τῶν βεβλαμμένων τὰς ἐνεργείας
@@ -4717,8 +4799,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="6" xml:id="_4.6">
-            <p rend="indent">
-<lb n="15"/>Μετιέναι δ’ ἤδη καιρὸς ἐπὶ τὰ τοῦ νωτιαίου
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="6">Κεφ. στʹ.</num></label> Μετιέναι δ’ ἤδη καιρὸς ἐπὶ τὰ τοῦ νωτιαίου
 <lb n="16"/>πάθη. τὰ τοῦ νωτιαίου μυελοῦ πάθη σύντομον μὲν
 <lb n="17"/>ἔχει τὴν ἐν τῷ παρόντι διδασκαλίαν, οὐ σύντομον δὲ τὴν ἐπὶ
 <lb n="18"/>τῶν ἔργων γνῶσιν αὐτῶν· εἰ μὴ γὰρ μνημονεύοι τις ἑκάστην
@@ -4964,8 +5046,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="7" xml:id="_4.7">
-            <p rend="indent">
-<lb n="11"/><milestone unit="ed2page" n="7.463"/>Ἔνθα δ’ ἡ βλάβη μιᾶς ἐνεργείας ἐστὶν,
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="7">Κεφ. ζʹ.</num></label> <milestone unit="ed2page" n="7.463"/>Ἔνθα δ’ ἡ βλάβη μιᾶς ἐνεργείας ἐστὶν,
 <lb n="12"/>οἱ πεπονθότες δὲ τόποι πλείους, τῇ ποικιλίᾳ τῶν ἄλλων συμπτωμάτων
 <lb n="13"/>διοριζομένοις τούτους ἡμῖν εὑρίσκειν πρόκειται νῦν.
 <lb n="14"/>ἄνευ μὲν γὰρ τοῦ παθεῖν τι τῶν ἀναπνευστικῶν ὀργάνων
@@ -5174,8 +5256,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="8" xml:id="_4.8">
-            <p rend="indent">
-<lb n="4"/>Ἤδη μέν πως ὡμολόγηται τοῖς ἰατροῖς, ἐκ
+<p rend="indent">
+<lb n="4"/><label type="head"><num value="8">Κεφ. ηʹ.</num></label> Ἤδη μέν πως ὡμολόγηται τοῖς ἰατροῖς, ἐκ
 <lb n="5"/>μὲν τοῦ στομάχου καὶ τῆς γαστρὸς ἐμεῖσθαι τὸ αἷμα, μετὰ
 <lb n="6"/>δὲ βηχὸς ἐκ τῶν ἀναπνευστικῶν ἀνάγεσθαι μορίων· ἐκ δὲ τῶν
 <lb n="7"/>κατὰ φάρυγγα <milestone unit="ed1page" n="3.290"/>καὶ γαργαρεῶνα χρεμπτομένοις, ὥσπερ
@@ -5282,8 +5364,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="9" xml:id="_4.9">
-            <p rend="indent">
-<lb n="13"/>Ὅτι μὲν γὰρ ἐν τοῖς τοιούτοις λόγοις ἀκουστέον
+<p rend="indent">
+<lb n="13"/><label type="head"><num value="9">Κεφ. θʹ.</num></label> Ὅτι μὲν γὰρ ἐν τοῖς τοιούτοις λόγοις ἀκουστέον
 <lb n="14"/>ἐστὶ τὴν βλάβην, εἰ καὶ μὴ παντελῶς ἀπολωλὸς εἴη τὸ
 <lb n="15"/>κατὰ φύσιν ἔργον ἅπαν τοῦ μορίου, πολλάκις εἴρηταί μοι,
 <lb n="16"/>χεῖρον δ’ οὐδὲν ἀναμνησθῆναι καὶ νῦν. ὅτι δ’ οὐ ταὐτόν
@@ -5401,8 +5483,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="10" xml:id="_4.10">
-            <p rend="indent">
-<lb n="15"/>Εἴρηται μὲν ἤδη καὶ πρόσθεν ἱκανῶς περὶ
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="10">Κεφ. ιʹ.</num></label> Εἴρηται μὲν ἤδη καὶ πρόσθεν ἱκανῶς περὶ
 <lb n="16"/>δυσπνοίας, ἡνίκα τὰ τοῦ νωτιαίου πάθη διηρχόμην· ἀναμνήσας
 <lb n="17"/>δὲ καὶ νῦν αὐτῶν, ὅσον ὑπόλοιπον ἔτι τῆς θεωρίας
 <lb n="18"/>ταύτης ἐστὶ, προσθήσω. καθόλου μὲν οὖν ὑμᾶς ἀξιῶ
@@ -5595,8 +5677,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="11" xml:id="_4.11">
-            <p rend="indent">
-<lb n="16"/>Διττῆς δὲ οὔσης ὁδοῦ τοῖς γυμναζομένοις περὶ
+<p rend="indent">
+<lb n="16"/><label type="head"><num value="11">Κεφ. ιαʹ.</num></label> Διττῆς δὲ οὔσης ὁδοῦ τοῖς γυμναζομένοις περὶ
 <lb n="17"/>τὰς διαγνώσεις τῶν πεπονθότων τόπων, ἑτέρας μὲν ἀπὸ τῶν
 <pb n="8.283"/>
 <lb n="1"/><milestone unit="ed2page" n="7.474"/>φαινομένων συμπτωμάτων, ἑτέρας δ’ ἀπὸ τῶν τοῦ σώματος
@@ -5861,8 +5943,7 @@
             <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΩΝ ΠΕΠΟΝΘΟΤΩΝ
 <lb/>ΤΟΠΩΝ ΒΙΒΛΙΟΝ Ε.
 </head>
-            <head>ΠΡΟΟΙΜΙΟΝ.
-</head>
+            <label type="head"><num value="0">ΠΡΟΟΙΜΙΟΝ.</num></label>
             <p rend="indent">
 <lb n="1"/>Ἐν τῷ πρὸ τούτου γράμματι περὶ τῶν κατὰ τὸν
 <lb n="2"/>πνεύμονα παθῶν διεξερχόμενος, ἐμνημόνευσα τῇ κοινωνίᾳ
@@ -5878,8 +5959,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="1" xml:id="_5.1">
-            <p rend="indent">
-<lb n="3"/>Ὥσπερ οὖν περὶ τῶν ἄλλων τοῦ ζώου μορίων,
+<p rend="indent">
+<lb n="3"/><label type="head"><num value="1">Κεφ. αʹ.</num></label>Ὥσπερ οὖν περὶ τῶν ἄλλων τοῦ ζώου μορίων,
 <lb n="4"/>οὕτως καὶ ἐπὶ τῆς καρδίας διορίσασθαι χρὴ, τίνα μὲν
 <lb n="5"/><milestone unit="ed2page" n="7.479"/>ἰδιοπαθούσης, ἢ πρωτοπαθούσης, ἢ ὅπως ἄν τις ὀνομάζειν
 <lb n="6"/>ἐθέλῃ, γίνεται συμπτώματα, τίνα δ’ ἑτέροις μέρεσι
@@ -5959,8 +6040,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="2" xml:id="_5.2">
-            <p rend="indent">
-<lb n="6"/>Ἴδιον δὲ πάθος ἐν καρδίᾳ γίνεται κατὰ
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="2">Κεφ. βʹ.</num></label> Ἴδιον δὲ πάθος ἐν καρδίᾳ γίνεται κατὰ
 <lb n="7"/>μὲν ἁπλῆν δυσκρασίαν πολλάκις, εἴτ’ ἀνώμαλος εἴθ’ ὁμαλὴς
 <lb n="8"/>εἴη, κατὰ τε φλεγμονὴν ἢ ἐρυσίπελας ἀρχόμενον γίγνεσθαι·
 <lb n="9"/>διαφθείρεται γὰρ παραυτίκα πρὶν αὐξηθῆναι τὰ πάθη τάδε
@@ -6045,8 +6126,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="3" xml:id="_5.3">
-            <p rend="indent">
-<lb n="13"/>Καὶ κατὰ τοῦτο τὸ μόριον, ὥσπερ καὶ
+<p rend="indent">
+<lb n="13"/><label type="head"><num value="3">Κεφ. γʹ.</num></label> Καὶ κατὰ τοῦτο τὸ μόριον, ὥσπερ καὶ
 <lb n="14"/>κατὰ τἄλλα πάντα, τινὰ μὲν ἰδιοπαθοῦντος αὐτοῦ γίνεται,
 <lb n="15"/>τινὰ δὲ ἑτέροις συμπάσχοντος· ἅπαντα γοῦν ἐξ ἀνάγκης
 <lb n="16"/>εἰς τὴν τῆς ἀναπνοῆς βλάβην τελευτᾷ, τοῦτο γὰρ
@@ -6451,8 +6532,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="4" xml:id="_5.4">
-            <p rend="indent">
-<lb n="13"/>Τὸν δὲ κάτω τοῦ θώρακος ὅρον οἱ μὲν
+<p rend="indent">
+<lb n="13"/><label type="head"><num value="4">Κεφ. δʹ.</num></label> Τὸν δὲ κάτω τοῦ θώρακος ὅρον οἱ μὲν
 <lb n="14"/>παλαιοὶ πάντες ὠνόμαζον φρένας, εἴθ’ ἁπλῶς ἐπελθὸν αὐτοῖς,
 <lb n="15"/>εἴθ’, ὥς τινες οἴονται, διότι φλεγμαίνοντος αὐτοῦ βλάπτονται
 <lb n="16"/>τὴν φρόνησιν οἱ κάμνοντες· ἀπὸ Πλάτωνος δ’ ἤρξατο
@@ -6555,8 +6636,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="5" xml:id="_5.5">
-            <p rend="indent">
-<lb n="18"/>Τὸ μεταξὺ τῆς τε φάρυγγος καὶ τοῦ στόματος
+<p rend="indent">
+<lb n="18"/><label type="head"><num value="5">Κεφ. εʹ.</num></label> Τὸ μεταξὺ τῆς τε φάρυγγος καὶ τοῦ στόματος
 <lb n="19"/>τῆς κοιλίας, ὅπερ οἰσοφάγον ὠνόμαζον οἱ παλαιοὶ,
 <pb n="8.333"/>
 <lb n="1"/>στόμαχον εἰώθασιν οἱ μετ’ Ἀριστοτέλη προσαγορεύειν, αὐτοῦ
@@ -6670,8 +6751,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="6" xml:id="_5.6">
-            <p rend="indent">
-<lb n="13"/>Τὸ στόμα τῆς κοιλίας οἱ παλαιοὶ καρδίαν
+<p rend="indent">
+<lb n="13"/><label type="head"><num value="6">Κεφ. στʹ.</num></label> Τὸ στόμα τῆς κοιλίας οἱ παλαιοὶ καρδίαν
 <lb n="14"/>ὠνόμαζον, ἀφ’ ὧν ἐπιφέρει συμπτωμάτων, ὥς φασιν, οὕτω
 <lb n="15"/>προσαγορεύσαντες· οὐ γὰρ μόνον ὡς καρδιακαῖς συγκοπαῖς,
 <lb n="16"/>οὕτω καὶ στομαχικαῖς ἁλίσκονταί τινες, ἀλλὰ καὶ σπασμοῖς
@@ -6804,8 +6885,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="7" xml:id="_5.7">
-            <p rend="indent">
-<lb n="12"/>Καὶ κατὰ τοῦτο τὸ μόριον ὥσπερ καὶ
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="7">Κεφ. ζʹ.</num></label> Καὶ κατὰ τοῦτο τὸ μόριον ὥσπερ καὶ
 <lb n="13"/>κατὰ τἄλλα πάντα διττὸν γένος τῶν νοσημάτων ἐστὶ, τὸ
 <lb n="14"/>μὲν ἕτερον ἐπὶ δυσκρασίᾳ μόνῃ καὶ χωρὶς ὄγκου παρὰ
 <lb n="15"/>φύσιν, ἅμα δὲ τοῖς ὄγκοις ἐρυσιπέλατά τε καὶ φλεγμοναὶ
@@ -6980,8 +7061,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="8" xml:id="_5.8">
-            <p rend="indent">
-<lb n="15"/>Πότερον δὲ διαπαντὸς ἐν τοῖς ἰκτέροις ὁ πεπονθὼς
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="8">Κεφ. ηʹ.</num></label> Πότερον δὲ διαπαντὸς ἐν τοῖς ἰκτέροις ὁ πεπονθὼς
 <lb n="16"/>τόπος ἧπάρ ἐστιν, ἢ καί τις ἄλλη διάθεσις <milestone unit="ed2page" n="7.498"/>ἐργάζεται
 <lb n="17"/>τὸ πάθος τοῦτο, μεταβάντες ἤδη σκοπῶμεν. ὁρᾶται
 <pb n="8.355"/>
@@ -7401,7 +7482,7 @@
 <lb/>ΤΟΠΩΝ ΒΙΒΛΙΟΝ Ζ.
 </head>
             <p rend="indent">
-<lb n="1"/>Ἐκ τῶν προειρημένων ἐπὶ τοῦ ἥπατος
+              <lb n="1"/><label type="head"><num value="1">Κεφ. αʹ.</num></label> Ἐκ τῶν προειρημένων ἐπὶ τοῦ ἥπατος
 <lb n="2"/>οὐδὲν ἔτι χαλεπὸν εὑρίσκειν ὑμᾶς, ἐκ τίνων σημείων ὁ σπλὴν
 <lb n="3"/>πεπονθὼς διαγιγνώσκεται, πρὸς τῷ καὶ τὰς φλεγμονὰς αὐτοῦ
 <lb n="4"/>διὰ σκληρότητα ῥᾳδίως ὑποπίπτειν ἁπτομένοις. ἔχων δὲ τὰ
@@ -7471,8 +7552,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="2" xml:id="_6.2">
-            <p rend="indent">
-<lb n="3"/>Ἤδη καὶ πρόσθεν εἶπόν τι περὶ τῶν κατὰ
+<p rend="indent">
+<lb n="3"/><label type="head"><num value="2">Κεφ. βʹ.</num></label> Ἤδη καὶ πρόσθεν εἶπόν τι περὶ τῶν κατὰ
 <lb n="4"/>τὴν γαστέρα παθῶν, εἰς μέγιστα μόρια δύο διελὼν αὐτὴν τῷ
 <lb n="5"/>λόγῳ, τό τε πρῶτον ἄνωθεν, ὃ συνεχές ἐστι τῷ στομάχῳ,
 <lb n="6"/>πολλοῖς νεύροις αἰσθητικοῖς διαπεπλεγμένον, ἕτερον δὲ τούτῳ
@@ -7643,8 +7724,8 @@
           </div>
           <pb n="8.390"/>
           <div type="textpart" subtype="chapter" n="3" xml:id="_6.3">
-            <p rend="indent">
-<lb n="1"/>Ἐὰν μὲν εἰσβάλλῃ ἐξαίφνης νεφρῖτις, ἀξιολόγου
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="3">Κεφ. γʹ.</num></label> Ἐὰν μὲν εἰσβάλλῃ ἐξαίφνης νεφρῖτις, ἀξιολόγου
 <lb n="2"/>λίθου σφηνωθέντος, ἤτοι κατά τινα τῶν νεφρῶν, ἢ
 <lb n="3"/>καὶ τῶν οὐρητήρων, παραπλήσιον ἄλγημα γίγνεται τοῖς κωλικοῖς·
 <lb n="4"/>διορίζεται δὲ τῷ τε πλήθει καὶ μεγέθει τῶν ναυτιῶν,
@@ -7877,8 +7958,8 @@
           </div>
           <pb n="8.402"/>
           <div type="textpart" subtype="chapter" n="4" xml:id="_6.4">
-            <p rend="indent">
-<lb n="1"/>Συμπτώματα κατὰ τὴν κύστιν γίγνεται
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="4">Κεφ. δʹ.</num></label> Συμπτώματα κατὰ τὴν κύστιν γίγνεται
 <lb n="2"/>κοινὰ μὲν τοῖς ἄλλοις οἵ τε παρὰ φύσιν αὐτῆς ὄγκοι πάντες,
 <lb n="3"/>ὀδύναι τε καὶ τὰ ταύτας ἐργαζόμενα πάθη· τὰ δ’ ἴδια μόνης
 <lb n="4"/>αὐτῆς, ἰσχουρίαι τε καὶ στραγγουρίαι, καὶ κατ’ ἄλλον τρόπον
@@ -8107,8 +8188,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="5" xml:id="_6.5">
-            <p rend="indent">
-<lb n="15"/>Οὐδ’ ἐνταῦθα χρὴ διαφέρεσθαι, πότερον
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="5">Κεφ. εʹ.</num></label> Οὐδ’ ἐνταῦθα χρὴ διαφέρεσθαι, πότερον
 <lb n="16"/>ὑστέραν ἢ μήτραν κλητέον ἐστὶ τὸ πρὸς τὴν κύησιν ὑπὸ τῆς
 <lb n="17"/>φύσεως δοθὲν ταῖς γυναιξὶ μόριον, ὥσπερ οὐδ’ εἰ κατὰ
 <lb n="18"/>τὸν πληθυντικὸν ὀνομαζόμενον ἀριθμὸν ὑστέρας ἢ μήτρας,
@@ -8569,8 +8650,8 @@
 </p>
           </div>
           <div type="textpart" subtype="chapter" n="6" xml:id="_6.6">
-            <p rend="indent">
-<lb n="16"/>Ὥσπερ ὀλίγα τῶν διὰ ἕδρας ἐκκρινομένων
+<p rend="indent">
+<lb n="16"/><label type="head"><num value="6">Κεφ. στʹ.</num></label> Ὥσπερ ὀλίγα τῶν διὰ ἕδρας ἐκκρινομένων
 <lb n="17"/>σημεῖα τῶν πλησίων αὐτῆς ἐστι τόπων πεπονθότων, τὰ
 <lb n="18"/>πλεῖστα δ’ αὐτῶν τῶν ἐντέρων καὶ τῆς γαστρὸς καὶ τοῦ
 <pb n="8.438"/>

@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">Definitiones medicae</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0530.tlg041.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Pseudo-Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -98,13 +119,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0530.tlg041.verbatim-lat1">
 <pb n="19.346"/>
@@ -116,7 +180,7 @@
 </head>
 
 <p rend="indent">
-<lb/>De medicis finitionibus opus cum
+  <lb/><label type="head"><num value="0">Prooemium.</num></label> De medicis finitionibus opus cum
 <lb/>medicis omnibus tum iis potissimum qui ad medicinam intraducuntur
 <lb/>adolescentibus quam utilissimum, prout aequum
 <lb/>censuisti, colligere ac scriptis mandare decrevi, Theutra
@@ -162,10 +226,8 @@
 <lb/>postremo ac deinceps .finitiones ipsos subiicere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="1">
-
-
 <p rend="indent">
-<lb/>Finitio igitur ex nonnullis est oratio quae quale.
+<lb/><label type="head"><num value="1">I.</num></label> Finitio igitur ex nonnullis est oratio quae quale.
 <lb/>sit illud de quo ferme est declarat. Definiri et hoc modo
 <lb/>potest. Finitio est oratio conceptionis animi. Quidam
 <pb n="19.349"/>
@@ -176,70 +238,54 @@
 <lb/>oratio quae nobis rei .notitiam demonstrat ac explicat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
-<lb/>Definitio oratio est concisa quae subjectae rei
+<lb/><label type="head"><num value="2">II.</num></label> Definitio oratio est concisa quae subjectae rei
 <lb/>naturam explicat. Definitio autem dicitur a finibus aut
 <lb/>terminis qui regionis ac loca finiunt ac terminant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
-<lb/>D ior limus seu distinctio divisio est rei quae tauquam
+<lb/><label type="head"><num value="3">III.</num></label> D ior limus seu distinctio divisio est rei quae tauquam
 <lb/>universalis dicitur, non tamen universalis exsistit,
 <lb/>.per .accessionem ad universale conversio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Scopiis est is qui primum mente concipitur finis;
+<lb/><label type="head"><num value="4">IV.</num></label> Scopiis est is qui primum mente concipitur finis;
 <lb/>situs autem est opus. scopi peractum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
-<lb/>Apnorismus est oratio concisa quae perlectam
+<lb/><label type="head"><num value="5">V.</num></label> Apnorismus est oratio concisa quae perlectam
 <lb/>complet sententiam vel sic. Aphorismus. oratio est in voce
 <lb/>quidem seu dictione peranguste, sententiis vero locuples.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
-<lb/>Deicriptio-est oratio quae forma quadamadmanifestandam
+<lb/><label type="head"><num value="6">VI.</num></label> Deicriptio-est oratio quae forma quadamadmanifestandam
 
 <pb n="19.350"/>
 <lb/>rei notitiam rudius introducit. Alii sic. Descriptio,est
 <lb/>oratio quae rudi typo res declarat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
-<lb/>Scientia est rerum comprehensio solida ac certa
+<lb/><label type="head"><num value="7">VII.</num></label> Scientia est rerum comprehensio solida ac certa
 <lb/>quae a ratione nunquam deflectit. Potest quoque ita desiniti.
 <lb/>Scientia est habitus immutabilis qui ex mentis
 <lb/>conceptionibus opinionem haud a ratione deerrantem
 <lb/>praebet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
-<lb/>Ars est praeceptorum exercitatione comprobatorum
+<lb/><label type="head"><num value="8">VIII.</num></label> Ars est praeceptorum exercitatione comprobatorum
 <lb/>ad finem eorum quae in vita sunt perutilem congeries.
 <lb/>Vel sic. Ars est compages comprehensionum exercitarum
 <lb/>ad unum sinent relationem habentium.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
-<lb/>Hippocrates in libello de arte medicinam ita
+<lb/><label type="head"><num value="9">IX.</num></label> Hippocrates in libello de arte medicinam ita
 <lb/>definit ac primum ipsam medicinam existimavit esse quae
 <lb/>aegrotantium morbos plane tollit morborumque vehementias
 <lb/>coercet neque a morbo victis manus curatrices admovet,
@@ -256,20 +302,16 @@
 <lb/>aegrotantibus medelas praescribit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
-<lb/>Summae partes medicinae sunt duae, speculatio
+<lb/><label type="head"><num value="10">X.</num></label> Summae partes medicinae sunt duae, speculatio
 <lb/>et actio. Praecedit autem actionem seu praxin speculatio.
 <lb/>Speculari namque prius aliquid oportet atque ita deinde
 <lb/>agere; nam praeceptio ratione constans exercendorum operum
 <lb/>principium est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
-<lb/>Partes medicinae quas et species quidam nuncuparunt,
+<lb/><label type="head"><num value="11">XI.</num></label> Partes medicinae quas et species quidam nuncuparunt,
 <lb/>sunt quinque, physiologia, pathognomonica,
 <lb/>diaetetica, materialis et therapeutica. Physiologia equidem
 <lb/>est quae in speculatione Versatur regentis nos ac
@@ -283,10 +325,8 @@
 <lb/>operam navat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
-<lb/>Secta est multitudinis dogmatum propensio arte
+<lb/><label type="head"><num value="12">XII.</num></label> Secta est multitudinis dogmatum propensio arte
 <lb/>conditorum et ad unum finem relationem habentium. Aut
 <lb/>sic. Secta est societas decretorum quae tum se mutuo
 <lb/>tum apparentia consequuntur aut consequi putantur. Possit
@@ -300,10 +340,8 @@
 <lb/>finem habentium.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
-<lb/>Dogma partim quidem proprie partim vero
+<lb/><label type="head"><num value="13">XIII.</num></label> Dogma partim quidem proprie partim vero
 <lb/>communiter dicitur: communiter quidem rei in actu consensio
 
 <pb n="19.353"/>
@@ -313,90 +351,68 @@
 <lb/>opinio. Illud pronunciatum, hoc sententia est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
-<lb/>Medicinae sectae primae duae sunt empiriCa et
+<lb/><label type="head"><num value="14">XIV.</num></label> Medicinae sectae primae duae sunt empiriCa et
 <lb/>rationalis et tertia methodica. Quartam autem sectam
 <lb/>adinvenisse videtur Agathinus Lacedaemonius, quam episyntheticem
 <lb/><hi rend="italic">accumulantem</hi> nominavit; nonnulli vero eclecticen
 <lb/><hi rend="italic">electricem</hi>, alii hecticen <hi rend="italic">haburicem</hi> appellarunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
-<lb/>Empirica quidem secta est eorum quae saepissime
+<lb/><label type="head"><num value="15">XV.</num></label> Empirica quidem secta est eorum quae saepissime
 <lb/>et secundum idem et eodem prope modo visa sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Rationalis secta est rerum abditarum scientia
+<lb/><label type="head"><num value="16">XVI.</num></label> Rationalis secta est rerum abditarum scientia
 <lb/>et hanc in medendo sequuntur effectus ac opera.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
-<lb/>Methodica secta cognitio est apparentium communitatum
+<lb/><label type="head"><num value="17">XVII.</num></label> Methodica secta cognitio est apparentium communitatum
 <lb/>et proximarum et necessariarum ad medicinae
 <lb/>finem. Communitates vero vocat vulgus adstrictum, fluxum,
 <lb/>ac permixtum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <p rend="indent">
-<lb/>Analogismus <hi rend="italic">ratiocinatio</hi> est oratio quae ab
+<lb/><label type="head"><num value="18">XVIII.</num></label> Analogismus <hi rend="italic">ratiocinatio</hi> est oratio quae ab
 <pb n="19.354"/>
 <lb/>evidenti ortum dubit et abditi comprehensionem facit; ut
 <lb/>si sudores i sunt, pori sunt; sudores etenim res quidem est
 <lb/>evidens, Pori vero res abdita.</p>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <p rend="indent">
-<lb/>Syllogismus est oratio in qua positis quibusdam
+<lb/><label type="head"><num value="19">XIX.</num></label> Syllogismus est oratio in qua positis quibusdam
 <lb/>aliud quidpiam ab iis quae posita sunt, quod prius
 <lb/>ignorabatur, necessario colligitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="20">
-
-
 <p rend="indent">
-<lb/>EpHogisinus est oratio quae quod sensim apparet
+<lb/><label type="head"><num value="20">XX.</num></label> EpHogisinus est oratio quae quod sensim apparet
 <lb/>sententiae, id in amplificationem adducit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="21">
-
-
 <p rend="indent">
-<lb/>Theorema <hi rend="italic">praeceptum</hi> res est universalis quae
+<lb/><label type="head"><num value="21">XXI.</num></label> Theorema <hi rend="italic">praeceptum</hi> res est universalis quae
 <lb/>medicinae finem consequens adstruitur. Aliter. Theorema
 <lb/>est effatum universale quod medicinam complet fini^continuume
 <lb/>Aliter. Theorema est cujus contrarium raro evenit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="22">
-
-
 <p rend="indent">
-<lb/>Rarum est cujus contrarium evenit.</p>
+<lb/><label type="head"><num value="22">XXII.</num></label> Rarum est cujus contrarium evenit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="23">
-
-
 <p rend="indent">
-<lb/>Anceps opinio est cujus contrarium peraeque
+<lb/><label type="head"><num value="23">XXIII.</num></label> Anceps opinio est cujus contrarium peraeque
 <lb/>accidit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="24">
-
-
 <p rend="indent">
-<lb/>Finis est cujus gratia aliquid in medicina
+<lb/><label type="head"><num value="24">XXIV.</num></label> Finis est cujus gratia aliquid in medicina
 <lb/>efficitur. Vel sic: Finis est ad quem quaecunque medicinae
 
 <pb n="19.355"/>
@@ -404,38 +420,28 @@
 <lb/>est in medicina id quod assequuti nihilo praeterea egemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="25">
-
-
 <p rend="indent">
-<lb/>perfectus est medicus qui in speculatione et
+<lb/><label type="head"><num value="25">XXV.</num></label> perfectus est medicus qui in speculatione et
 <lb/>praxi numeros omnes explevit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="26">
-
-
 <p rend="indent">
-<lb/>Optimus medicus est qui omnia in medicina
+<lb/><label type="head"><num value="26">XXVI.</num></label> Optimus medicus est qui omnia in medicina
 <lb/>recta ratione efficit. LO .ί O .</p>
 </div>
 <div type="textpart" subtype="chapter" n="27">
-
-
 <p rend="indent">
-<lb/>Homo est animal ratiocinata, mortale, mentis
+<lb/><label type="head"><num value="27">XXVII.</num></label> Homo est animal ratiocinata, mortale, mentis
 <lb/>et scientiae capax.</p>
 </div>
 <div type="textpart" subtype="chapter" n="28">
-
-
 <p rend="indent">
-<lb/>Animal est substantia animata, sensu praedita
+<lb/><label type="head"><num value="28">XXVIII.</num></label> Animal est substantia animata, sensu praedita
 <lb/>quae et impetu et voluntate movetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="29">
-
-
 <p rend="indent">
-<lb/>Anima est substantia incorporea quae per se
+<lb/><label type="head"><num value="29">XXIX.</num></label> Anima est substantia incorporea quae per se
 <lb/>ex Platone movetur. Ex Stoicis vero corpus tenuium
 <lb/>partium quod ex seipso pro seminis ratione movetur.
 <lb/>At secundum Aristotelem perfectio corporis naturalis, organici,
@@ -447,18 +453,14 @@
 </div>
 <pb n="19.356"/>
 <div type="textpart" subtype="chapter" n="30">
-
-
 <p rend="indent">
-<lb/>Corpus est magnitudo triplici dimensione constans,
+<lb/><label type="head"><num value="30">XXX.</num></label> Corpus est magnitudo triplici dimensione constans,
 <lb/>habens in sese longitudinem, latitudinem et prosimditatam.
 <lb/>Vel magnitudo ex spatiis tribus conflata.</p>
 </div>
 <div type="textpart" subtype="chapter" n="31">
-
-
 <p rend="indent">
-<lb/>Elementum est ex quo primo et simplicissimo
+<lb/><label type="head"><num value="31">XXXI.</num></label> Elementum est ex quo primo et simplicissimo
 <lb/>omnia constant et in quod simplicissimum postremum exiflens
 <lb/>omnia resolventur. Athenaeus vero Attalensis in
 <lb/>tertio libro ita loquitur. Elementa medicinae, ut nonnulli
@@ -468,18 +470,14 @@
 <lb/>apparentia et simplicissima ac minima resolutionem capit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="32">
-
-
 <p rend="indent">
-<lb/>Elementatio <hi rend="italic">parata</hi> est eorundem fecundum
+<lb/><label type="head"><num value="32">XXXII.</num></label> Elementatio <hi rend="italic">parata</hi> est eorundem fecundum
 <lb/>idem eodemque modo doctrina. Alii ita : elementatio est
 <lb/>ab elementis ad finem via.</p>
 </div>
 <div type="textpart" subtype="chapter" n="33">
-
-
 <p rend="indent">
-<lb/>Constant nostra corpora ex solidis, humidis
+<lb/><label type="head"><num value="33">XXXIII.</num></label> Constant nostra corpora ex solidis, humidis
 <lb/>et spiritibus. Solida siquidem sunt ossa, cartilagines, nervi,
 <lb/>musculi, venae, arteriae et quae delitescunt viscera. Humida
 
@@ -496,10 +494,8 @@
 <lb/>Ex quatuor elementis, igne, aere, terra et aqua.</p>
 </div>
 <div type="textpart" subtype="chapter" n="34">
-
-
 <p rend="indent">
-<lb/>Anatome <hi rend="italic">seu dissectio</hi> partium abditarum
+<lb/><label type="head"><num value="34">XXXIV.</num></label> Anatome <hi rend="italic">seu dissectio</hi> partium abditarum
 <lb/>speculatio <hi rend="italic">ac conspectio</hi> est. Anatomes species duae sunt,
 <lb/>altera quae artificio, altera quae casu fit. Artificialis itaque
 <lb/>est quae a dogmaticis partium reconditarum gratia
@@ -510,55 +506,41 @@
 </div>
 <pb n="19.358"/>
 <div type="textpart" subtype="chapter" n="35">
-
-
 <p rend="indent">
-<lb/>Chirurgia promptus est manuum intremularum
+<lb/><label type="head"><num value="35">XXXV.</num></label> Chirurgia promptus est manuum intremularum
 <lb/>motus cum experientia. Vel: artificiosa actio in medicina
 <lb/>quae manibus vel instrumentis ob idoneum finem
 <lb/>procedit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="36">
-
-
 <p rend="indent">
-<lb/>Pericranium membrana est nervosa quae
+<lb/><label type="head"><num value="36">XXXVI.</num></label> Pericranium membrana est nervosa quae
 <lb/>totam calvariam ambit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="37">
-
-
 <p rend="indent">
-<lb/>Meninges sunt corpora nervosa et arteriosa
+<lb/><label type="head"><num value="37">XXXVII.</num></label> Meninges sunt corpora nervosa et arteriosa
 <lb/>quae cerebrum investiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="38">
-
-
 <p rend="indent">
-<lb/>Cerebrum est album, molle velut e spuma
+<lb/><label type="head"><num value="38">XXXVIII.</num></label> Cerebrum est album, molle velut e spuma
 <lb/>quadam concretum, humidum et calidum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="39">
-
-
 <p rend="indent">
-<lb/>Cerebellum est quod in posteriori loco cerebri
+<lb/><label type="head"><num value="39">XXXIX.</num></label> Cerebellum est quod in posteriori loco cerebri
 <lb/>constitutum est natura et colore cerebro simile.</p>
 </div>
 <div type="textpart" subtype="chapter" n="40">
-
-
 <p rend="indent">
-<lb/>Dorsi medulla est natura et colore cerebro con-.
+<lb/><label type="head"><num value="40">XL.</num></label> Dorsi medulla est natura et colore cerebro con-.
 <lb/>similis, verum et pinguior et candior ac minus principalis,
 <lb/>quae per mediam spinam deducitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="41">
-
-
 <p rend="indent">
-<lb/>Oculi sunt qui ex quatuor constant tunicis,
+<lb/><label type="head"><num value="41">XLI.</num></label> Oculi sunt qui ex quatuor constant tunicis,
 <lb/>reticulari, uvea, cornea, conjunctiva; et tribus humoribus,
 <lb/>vitreo, crystallino et albugineo; ut et jam nervosa
 <pb n="19.359"/>
@@ -566,63 +548,47 @@
 <lb/>et figuras sensu percipiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="42">
-
-
 <p rend="indent">
-<lb/>Aures vero nervosae et cartilaginosae sunt
+<lb/><label type="head"><num value="42">XLII.</num></label> Aures vero nervosae et cartilaginosae sunt
 <lb/>quae voces earumque differentias sensu percipiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="43">
-
-
 <p rend="indent">
-<lb/>Nares nervosae cartilaginosaeque sunt odorum
+<lb/><label type="head"><num value="43">XLIII.</num></label> Nares nervosae cartilaginosaeque sunt odorum
 <lb/>perceptrices.</p>
 </div>
 <div type="textpart" subtype="chapter" n="44">
-
-
 <p rend="indent">
-<lb/>Lingua venosa est et carnosa, subpinguis,
+<lb/><label type="head"><num value="44">XLIV.</num></label> Lingua venosa est et carnosa, subpinguis,
 <lb/>saporum gustatrix, quae alimenti deglutitioni et vocis dearticulationi
 <lb/>inservit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="45">
-
-
 <p rend="indent">
-<lb/>Pharynx interna est oris regio in quam tum
+<lb/><label type="head"><num value="45">XLV.</num></label> Pharynx interna est oris regio in quam tum
 <lb/>stomachi tum laryngis extremum porrigitur quaeque deglutitioni,
 <lb/>inspirationi et voci inservit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="46">
-
-
 <p rend="indent">
-<lb/>Larynx cartilaginosus est per quem spiritum
+<lb/><label type="head"><num value="46">XLVI.</num></label> Larynx cartilaginosus est per quem spiritum
 <lb/>inspiramus quique simul voci inservit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="47">
-
-
 <p rend="indent">
-<lb/>Pulmo est arteriosus ex laevinus asperisque
+<lb/><label type="head"><num value="47">XLVII.</num></label> Pulmo est arteriosus ex laevinus asperisque
 <lb/>constans arteriis fungosior; inspirandi instrumentum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="48">
-
-
 <p rend="indent">
-<lb/>Thorax est ex venis et arteriis et nervis
+<lb/><label type="head"><num value="48">XLVIII.</num></label> Thorax est ex venis et arteriis et nervis
 <lb/>ad respirationis impetum a natura constitutus.</p>
 
 </div>
 <pb n="19.360"/>
 <div type="textpart" subtype="chapter" n="49">
-
-
 <p rend="indent">
-<lb/>Cor nervosum, musculosum venosumque est
+<lb/><label type="head"><num value="49">XLIX.</num></label> Cor nervosum, musculosum venosumque est
 <lb/>continensque arterias, coniformis figurae, subpingue, ex
 <lb/>quo arteriae oriuntur ac venae per quas sanguis ac spiritus
 <lb/>immittuntur. Aliter; cor est pars musculosa quod
@@ -632,18 +598,14 @@
 <lb/>universo corpori humor vitalis et innatus calor.</p>
 </div>
 <div type="textpart" subtype="chapter" n="50">
-
-
 <p rend="indent">
-<lb/>e Diaphragma pars nervosa est viscera quae in thorace
+<lb/><label type="head"><num value="50">L.</num></label> e Diaphragma pars nervosa est viscera quae in thorace
 <lb/>ab iis quae sub thorace sunt dirimens ac separans ;
 <lb/>quod et septum transversum <hi rend="italic">seu cingulum</hi> vocamus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="51">
-
-
 <p rend="indent">
-<lb/>Jecur substantia venosum est et calidum ac asfluens
+<lb/><label type="head"><num value="51">LI.</num></label> Jecur substantia venosum est et calidum ac asfluens
 <lb/>sanguine f primamque sanguinis generationem plurimam
 <lb/>molitur, ventriculo quoque ad concoctionem obeundam
 <lb/>confert sua ipsum appositione concalescens. Aliter;
@@ -654,34 +616,26 @@
  <lb/><foreign xml:lang="grc">τ</foreign> <hi rend="italic">t .</hi></p>
 </div>
 <div type="textpart" subtype="chapter" n="52">
-
-
 <p rend="indent">
-<lb/>Lien <hi rend="italic">pars</hi> est venis arteriisque referta; qui
+<lb/><label type="head"><num value="52">LII.</num></label> Lien <hi rend="italic">pars</hi> est venis arteriisque referta; qui
 <lb/>quum tenuia vasa multasque interjectas vasorum cavitates
 <lb/>obtineat, ob id rarus laxusque est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="53">
-
-
 <p rend="indent">
-<lb/>Stomachus <hi rend="italic">substantia</hi> nervosus est et arteriosus;
+<lb/><label type="head"><num value="53">LIII.</num></label> Stomachus <hi rend="italic">substantia</hi> nervosus est et arteriosus;
 <lb/>instrumentum appetentiae et deglutitionis, vel
 <lb/>etiam meatus humidi siccique alimenti.</p>
 </div>
 <div type="textpart" subtype="chapter" n="54">
-
-
 <p rend="indent">
-<lb/>Ventriculus nervosus alimenti humidi et sicci
+<lb/><label type="head"><num value="54">LIV.</num></label> Ventriculus nervosus alimenti humidi et sicci
 <lb/>receptaculum est, ad id alimentum concoquendum exstructus.
 </p>
 </div>
 <div type="textpart" subtype="chapter" n="55">
-
-
 <p rend="indent">
-<lb/>Intestina sunt nervosa quorum alia ad coctiog
+<lb/><label type="head"><num value="55">LV.</num></label> Intestina sunt nervosa quorum alia ad coctiog
 <lb/>nem juvandam, alia ad <hi rend="italic">chylum</hi> excipiendum, alia ad excernendum
 <lb/>recrementum progenita sunt. Quot ulnis constant
 <lb/>intestina? intestina tredecim constant venis, unumquodque
@@ -691,41 +645,31 @@
 <lb/>colum, rectum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="56">
-
-
 <p rend="indent">
-<lb/>Renes carnosi ex carne friabiliore constituti,
+<lb/><label type="head"><num value="56">LVI.</num></label> Renes carnosi ex carne friabiliore constituti,
 <pb n="19.362"/>
 <lb/>cola humidi excrementi ac veluti lacunae a natura
 <lb/>conditi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="57">
-
-
 <p rend="indent">
-<lb/>Vesica est <hi rend="italic">pars</hi> nervosa humidi excrementi
+<lb/><label type="head"><num value="57">LVII.</num></label> Vesica est <hi rend="italic">pars</hi> nervosa humidi excrementi
 <lb/>receptaculum simul et excretorium instrumentum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="58">
-
-
 <p rend="indent">
-<lb/>Testes carnosi mollesque sunt, humidi et calidi
+<lb/><label type="head"><num value="58">LVIII.</num></label> Testes carnosi mollesque sunt, humidi et calidi
 <lb/>ejus seminis quod in parastatis est concoctioni opitulantes.
 </p>
 </div>
 <div type="textpart" subtype="chapter" n="59">
-
-
 <p rend="indent">
-<lb/>Parastatae astites sunt qui ex vena et arteria
+<lb/><label type="head"><num value="59">LIX.</num></label> Parastatae astites sunt qui ex vena et arteria
 <lb/>constant in unam naturam confertis semen continentes.</p>
 </div>
 <div type="textpart" subtype="chapter" n="60">
-
-
 <p rend="indent">
-<lb/>Matrix seu uterus <hi rend="italic">pars</hi> est foris nervosa, intus
+<lb/><label type="head"><num value="60">LX.</num></label> Matrix seu uterus <hi rend="italic">pars</hi> est foris nervosa, intus
 <lb/>carnosior, conceptionis vas seu organum; hystera seu ute.
 <lb/>rus haec quoque nominatur quod partium omnium postrema
 <lb/>fit. Aliter; matrix est quae et hystera dicitur. Ac
@@ -737,24 +681,18 @@
 </div>
 <pb n="19.363"/>
 <div type="textpart" subtype="chapter" n="61">
-
-
 <p rend="indent">
-<lb/>Excretio est eductio excrementorum corporibus
+<lb/><label type="head"><num value="61">LXI.</num></label> Excretio est eductio excrementorum corporibus
 <lb/>adhaerendum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="62">
-
-
 <p rend="indent">
-<lb/>t Stercus est excrementum alimenti ad coctionis
+<lb/><label type="head"><num value="62">LXII.</num></label> t Stercus est excrementum alimenti ad coctionis
 <lb/><hi rend="italic">primae</hi> distributionisque finem secretum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="63">
-
-
 <p rend="indent">
-<lb/>Urina <hi rend="italic">surum</hi> est excusatum sanguinis in magna
+<lb/><label type="head"><num value="63">LXIII.</num></label> Urina <hi rend="italic">surum</hi> est excusatum sanguinis in magna
 <lb/>vena quae per renes et ureteras in vesicam desertor. Aliter :
 <lb/>urina excrementum est quod in hepate quidem generatur,
 <lb/>in renibus vero secernitur ac per ureteras in urinariam
@@ -763,17 +701,13 @@
 <lb/>urina deducitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="64">
-
-
 <p rend="indent">
-<lb/>Efficiens causa urinae est quae in hepate fit
+<lb/><label type="head"><num value="64">LXIV.</num></label> Efficiens causa urinae est quae in hepate fit
 <lb/>sanguinis generatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="65">
-
-
 <p rend="indent">
- <lb/>Quatuor sunt humores ex quibus animal confututum
+<lb/><label type="head"><num value="65">LXV.</num></label> Quatuor sunt humores ex quibus animal confututum
 <lb/>est, sanguis, pituita, bilis utraque, flava et atra.
 <lb/>iHaec enim elementa corporis medicorum filii vocant,
 <lb/>quandoquidem ex his constamus. Ex his sanguis calidus
@@ -784,40 +718,30 @@
 <lb/>gravissima.</p>
 </div>
 <div type="textpart" subtype="chapter" n="66">
-
-
 <p rend="indent">
-<lb/>Sanguis calidus est et humidus in venis eopiosus,
+<lb/><label type="head"><num value="66">LXVI.</num></label> Sanguis calidus est et humidus in venis eopiosus,
 <lb/>in arteriis paucior, ex quo alitur animal.</p>
 </div>
 <div type="textpart" subtype="chapter" n="67">
-
-
 <p rend="indent">
-<lb/>Pituita frigida est et humida ad ciborum
+<lb/><label type="head"><num value="67">LXVII.</num></label> Pituita frigida est et humida ad ciborum
 <lb/>deglutitionem et articulorum motus a natura subjecta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="68">
-
-
 <p rend="indent">
-<lb/>Bitis flava calida est et sicca ad stomachi
+<lb/><label type="head"><num value="68">LXVIII.</num></label> Bitis flava calida est et sicca ad stomachi
 <lb/>robur ac ventris excretiones comparata.</p>
 </div>
 <div type="textpart" subtype="chapter" n="69">
-
-
 <p rend="indent">
-<lb/>Bilis atra frigidior est flava Pedem quidem
+<lb/><label type="head"><num value="69">LXIX.</num></label> Bilis atra frigidior est flava Pedem quidem
 <lb/>habens in liene, permixta vero sanguini ut ab eo secernatur,
 <lb/>ne is et crassius et ignavus et difficilis distributionis
 <lb/>efficiatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="70">
-
-
 <p rend="indent">
-<lb/>Quatuor praeterea melancholici humoris disserentiae
+<lb/><label type="head"><num value="70">LXX.</num></label> Quatuor praeterea melancholici humoris disserentiae
 <lb/>sunt; primus est elementarius; dein qui ex superassatione
 <lb/>flavae bilis gignitur quem bituminosum quoque
 <lb/>nominamus, quod bituminis instar splendeat et qui ex
@@ -831,33 +755,25 @@
 </p>
 </div>
 <div type="textpart" subtype="chapter" n="71">
-
-
 <p rend="indent">
-<lb/>Mucus est excrementum cerebri quo levetur
+<lb/><label type="head"><num value="71">LXXI.</num></label> Mucus est excrementum cerebri quo levetur
 <lb/>princeps animae pars.</p>
 </div>
 <div type="textpart" subtype="chapter" n="72">
-
-
 <p rend="indent">
-<lb/>Sudor est tenuis et ferest qui in sanguine
+<lb/><label type="head"><num value="72">LXXII.</num></label> Sudor est tenuis et ferest qui in sanguine
 <lb/>est humoris columen.</p>
 </div>
 <div type="textpart" subtype="chapter" n="73">
-
-
 <p rend="indent">
-<lb/>Vena est vas sanguinis et naturalis spiritus
+<lb/><label type="head"><num value="73">LXXIII.</num></label> Vena est vas sanguinis et naturalis spiritus
 <lb/>cum sanguine commixti, nervosa, sensu praedita, humidam
 <lb/>et calidam substantiam continens; plus tamen continet
 <lb/>sanguinis, minus vero vitalis spiritus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="74">
-
-
 <p rend="indent">
-<lb/>Arteria est vas sanguinis, paucioris puriorisque
+<lb/><label type="head"><num value="74">LXXIV.</num></label> Arteria est vas sanguinis, paucioris puriorisque
 <lb/>ac commixti naturalis spiritus copiosioris ac tenuioris,
 <lb/>calidior et siccior majorique sensu praedita quam vena
 <pb n="19.366"/>
@@ -872,97 +788,73 @@
 <lb/>est spiritus animalis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="75">
-
-
 <p rend="indent">
-<lb/>Sex nobis insunt motus ut Aristoteles in categoriis
+<lb/><label type="head"><num value="75">LXXV.</num></label> Sex nobis insunt motus ut Aristoteles in categoriis
 <lb/>asserit, generatio, corruptio, incrementum, decrementum,
 <lb/>alteratio et loci commutatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="76">
-
-
 <p rend="indent">
-<lb/>Nervus corpus est album ac solidum. Nervorum
+<lb/><label type="head"><num value="76">LXXVI.</num></label> Nervus corpus est album ac solidum. Nervorum
 <lb/>tres sunt differentiae; alii quidem ex cerebro et
 <lb/>spinali medulla exorti sunt et hi proprie nervi appellantur;
 <lb/>alii vero ex musculis tendones; alii denique ex osiibus
 <lb/>ligamenta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="77">
-
-
 <p rend="indent">
-<lb/>Nervi a cerebro et meningibus propagati
+<lb/><label type="head"><num value="77">LXXVII.</num></label> Nervi a cerebro et meningibus propagati
 <pb n="19.367"/>
 <lb/>communes, sicciores et minus calidi sunt venis et quam
 <lb/>arteriae magis sentientes qui motus voluntarios perficiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="78">
-
-
 <p rend="indent">
-<lb/>Nervi ex ossibus producti sunt qui ab ossibus
+<lb/><label type="head"><num value="78">LXXVIII.</num></label> Nervi ex ossibus producti sunt qui ab ossibus
 <lb/>ad ossa prosecta articulos et corporis membra colligant
 <lb/>ac continent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="70">
-
-
 <p rend="indent">
-<lb/>Nervus a musculo ortus musculi finis est
+<lb/><label type="head"><num value="70">LXX.</num></label> Nervus a musculo ortus musculi finis est
 <lb/>vel aponeurosta quae in partem movendam inseritur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="80">
-
-
 <p rend="indent">
-<lb/>Musculi sunt corpora nervosa, permixta etiam
+<lb/><label type="head"><num value="80">LXXX.</num></label> Musculi sunt corpora nervosa, permixta etiam
 <lb/>ipsis carne ad partium corporis motum procreati.</p>
 </div>
 <div type="textpart" subtype="chapter" n="81">
-
-
 <p rend="indent">
-<lb/>Perlustra seu circosses membranae sunt integumenta
+<lb/><label type="head"><num value="81">LXXXI.</num></label> Perlustra seu circosses membranae sunt integumenta
 <lb/>tenuia, fibrosa, velut indumenta ostium a natura
 <lb/>conditae.</p>
 </div>
 <div type="textpart" subtype="chapter" n="82">
-
-
 <p rend="indent">
-<lb/>Pinguedo est effusio alimenti circa membranas
+<lb/><label type="head"><num value="82">LXXXII.</num></label> Pinguedo est effusio alimenti circa membranas
 <lb/>maxime concreta, sensus expers.</p>
 </div>
 <div type="textpart" subtype="chapter" n="83">
-
-
 <p rend="indent">
-<lb/>Caro concreta ex sanguine <hi rend="italic">pars</hi> est hunuda
+<lb/><label type="head"><num value="83">LXXXIII.</num></label> Caro concreta ex sanguine <hi rend="italic">pars</hi> est hunuda
 <lb/>et calida flexionem mollitiemque corpori praebens.</p>
 </div>
 <div type="textpart" subtype="chapter" n="84">
-
-
 <p rend="indent">
-<lb/>Medulla in ossibus est <hi rend="italic">pars</hi> ossium cavitatibus
+<lb/><label type="head"><num value="84">LXXXIV.</num></label> Medulla in ossibus est <hi rend="italic">pars</hi> ossium cavitatibus
 <lb/>contenta, pinguis ac sensu vacans.</p>
 
 </div>
 <pb n="19.368"/>
 <div type="textpart" subtype="chapter" n="85">
-
-
 <p rend="indent">
-<lb/>Cartilagines corpora sunt magis terrea ac
+<lb/><label type="head"><num value="85">LXXXV.</num></label> Cartilagines corpora sunt magis terrea ac
 <lb/><hi rend="italic">sensus</hi> expertia, quales sunt nares ac aures.</p>
 </div>
 <div type="textpart" subtype="chapter" n="86">
-
-
 <p rend="indent">
-<lb/>Ossa sunt corpora sicca et Terrestria et
+<lb/><label type="head"><num value="86">LXXXVI.</num></label> Ossa sunt corpora sicca et Terrestria et
 <lb/>frigida nec sensu praedita. Aliter. Osi est corpus magis
 <lb/>terreum, frigidum ac sensus expers. Os est, ex Platone,
 <lb/>medulla quae calido concrescit; ex quibusdam vero medicis
@@ -973,50 +865,38 @@
 <lb/>ossis fuerit aut cutis concretio dura et sicca.</p>
 </div>
 <div type="textpart" subtype="chapter" n="87">
-
-
 <p rend="indent">
-<lb/>Dentes sunt qui cibum dividunt atque
+<lb/><label type="head"><num value="87">LXXXVII.</num></label> Dentes sunt qui cibum dividunt atque
 <lb/>conficiunt non nihil et adgvocis articulationem conferentes.</p>
 </div>
 <div type="textpart" subtype="chapter" n="88">
-
-
 <p rend="indent">
-<lb/>Palatum <hi rend="italic">ceu coelum parvum</hi>. est pars oris
+<lb/><label type="head"><num value="88">LXXXVIII.</num></label> Palatum <hi rend="italic">ceu coelum parvum</hi>. est pars oris
 <lb/>superior a coeli similitudine nomen accipiens.</p>
 </div>
 <div type="textpart" subtype="chapter" n="89">
-
-
 <p rend="indent">
- <lb/>Gargareo seu columella caruncula est a
+<lb/><label type="head"><num value="89">LXXXIX.</num></label> Gargareo seu columella caruncula est a
 <lb/>faucibus dependens, vocis instrumentum ac spiritus causa
 <lb/>sive absolutio.</p>
 
 </div>
 <pb n="19.369"/>
 <div type="textpart" subtype="chapter" n="90">
-
-
 <p rend="indent">
-<lb/>Praelepiola sunt caritates ossium in quibus dentes
+<lb/><label type="head"><num value="90">XC.</num></label> Praelepiola sunt caritates ossium in quibus dentes
 <lb/>radices agunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="91">
-
-
 <p rend="indent">
-<lb/>Ungues sunt nervorum terminatio decoris gratia
+<lb/><label type="head"><num value="91">XCI.</num></label> Ungues sunt nervorum terminatio decoris gratia
 <lb/>progeniti et quo^ captu quidquam digitis sit facilius.
 <lb/>Alii sic: ungues sunt cutis vinctura sicca et frigida ac
 <lb/><hi rend="italic">tentus</hi> expers.</p>
 </div>
 <div type="textpart" subtype="chapter" n="92">
-
-
 <p rend="indent">
-<lb/>Pilus est corpus siccum et frigidum, tensus expera,
+<lb/><label type="head"><num value="92">XCII.</num></label> Pilus est corpus siccum et frigidum, tensus expera,
 <lb/>ad tutelam ornatumque genitus. Quot ob causas
 <lb/>pili in homine oriuntur? Ob duas; alii quidem ad ornatum
 <lb/>in capite ac genis nuscuntur; alii vero ad usum
@@ -1037,18 +917,14 @@
 <lb/>herbam gerit aqua multa putrefacit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="93">
-
-
 <p rend="indent">
-<lb/>Cutis est corpus nervosum universum totius
+<lb/><label type="head"><num value="93">XCIII.</num></label> Cutis est corpus nervosum universum totius
 <lb/>corporis ambitum operiens, ornatus gratia et totius ratione
 <lb/>et ad noxias causas propulsandas procreatum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="94">
-
-
 <p rend="indent">
-<lb/>Semen conspersa est in humido facultas ra-.
+<lb/><label type="head"><num value="94">XCIV.</num></label> Semen conspersa est in humido facultas ra-.
 <lb/>tionem ejus continens, quae facultas si idoneas formas ac
 <lb/>materias sortiatur in hominis generationem explicatur.
 <lb/>Vel aliter hoc modo: femen est humor qui in parallelis
@@ -1065,10 +941,8 @@
 <lb/>a quo excreta est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="95">
-
-
 <p rend="indent">
-<lb/>Natura est ignis artificialis qui via ad generationem
+<lb/><label type="head"><num value="95">XCV.</num></label> Natura est ignis artificialis qui via ad generationem
 <lb/>tendit et ex seipso efficaciter movetur. Aliter
 <lb/>ex Platone: natura ars est divina. Vel: natura est artifi-.
 <lb/>clasis quaedam facultas. Alio modo: natura spiritus est
@@ -1087,33 +961,25 @@
 </div>
 <pb n="19.372"/>
 <div type="textpart" subtype="chapter" n="96">
-
-
 <p rend="indent">
-<lb/>Habitus est spiritus continens et cohibens
+<lb/><label type="head"><num value="96">XCVI.</num></label> Habitus est spiritus continens et cohibens
 <lb/>partes.</p>
 </div>
 <div type="textpart" subtype="chapter" n="97">
-
-
 <p rend="indent">
-<lb/>Appetentia est cibi potusque desiderium et
+<lb/><label type="head"><num value="97">XCVII.</num></label> Appetentia est cibi potusque desiderium et
 <lb/>indagatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="98">
-
-
 <p rend="indent">
-<lb/>Deglutitio est solidi et liquidi attractio quae
+<lb/><label type="head"><num value="98">XCVIII.</num></label> Deglutitio est solidi et liquidi attractio quae
 <lb/>a stomaCho in ventriculum fit. Vel hoc pacto t deglutitio
 <lb/>est ingestio alimenti liquidi et solidi quae ex ore per
 <lb/>stomachum in ventriculum perficitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="99">
-
-
 <p rend="indent">
-<lb/>Coctio est mixtio et chyli consertio ac velut
+<lb/><label type="head"><num value="99">XCIX.</num></label> Coctio est mixtio et chyli consertio ac velut
 <lb/>elixatio alimenti in ventriculo atque intestinis in distributionem
 <lb/>mutatione facta. Aliter. Coctio confectio est alimenti
 <lb/>per mutationem in ventriculo et intestinis. Vel sic.
@@ -1131,16 +997,12 @@
 <lb/>quinque sensuum exercitationem dixit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="100">
-
-
 <p rend="indent">
-<lb/>Sanguificatio est in sanguinem alimenti mutatio.</p>
+<lb/><label type="head"><num value="100">C.</num></label> Sanguificatio est in sanguinem alimenti mutatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="101">
-
-
 <p rend="indent">
-<lb/>Distributio est cocti, confecti et in sanguinem
+<lb/><label type="head"><num value="101">CI.</num></label> Distributio est cocti, confecti et in sanguinem
 <lb/>conversi alimenti in corporis particulas omnes et partes
 <lb/>attractio quam nativus calor molitur. Quidam hoc modo:
 <lb/>distributio est concoctio alimenti in totum corpus attractio,
@@ -1148,24 +1010,18 @@
 <lb/>confectioneque.</p>
 </div>
 <div type="textpart" subtype="chapter" n="102">
-
-
 <p rend="indent">
-<lb/>Auctio est corporum in longitudinem, latitudinemet
+<lb/><label type="head"><num value="102">CII.</num></label> Auctio est corporum in longitudinem, latitudinemet
 <lb/>profunditatem promotio ac processus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="103">
-
-
 <p rend="indent">
-<lb/>Nutritio est additio quae corporibus in circui-^
+<lb/><label type="head"><num value="103">CIII.</num></label> Nutritio est additio quae corporibus in circui-^
 <lb/>tum et latitudinem fit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="104">
-
-
 <p rend="indent">
-<lb/>Aetates quatuor sunt; prima quidem adoletuentum,
+<lb/><label type="head"><num value="104">CIV.</num></label> Aetates quatuor sunt; prima quidem adoletuentum,
 
 <pb n="19.374"/>
 <lb/>fecunda vigentium fert juvenum, tertia mediocum,
@@ -1180,37 +1036,29 @@
 <lb/>medius mediis, senibus paucissimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="105">
-
-
 <p rend="indent">
-<lb/>Adolescentia est in qua augescit animal incrementum
+<lb/><label type="head"><num value="105">CV.</num></label> Adolescentia est in qua augescit animal incrementum
 <lb/>capessente in ipsi, calido et humido; quo tempore
 <lb/>coaequalia sunt accedentibus <hi rend="italic">alimentis</hi> secedentis .excrementa
 <lb/>aut quum quod adnascitur majus est quam quod decidit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="106">
-
-
 <p rend="indent">
-<lb/>Vigor est aetas in qua auctum periectumque
+<lb/><label type="head"><num value="106">CVI.</num></label> Vigor est aetas in qua auctum periectumque
 <lb/>animal est absolutis in eo calore atque humore quumque.
 <lb/>accedentibus decedentia paria existunt.</p>
 
 </div>
 <pb n="19.375"/>
 <div type="textpart" subtype="chapter" n="107">
-
-
 <p rend="indent">
-<lb/>Senectus aetas est in qua imminuitur deficitque
+<lb/><label type="head"><num value="107">CVII.</num></label> Senectus aetas est in qua imminuitur deficitque
 <lb/>animal decrescentibus in eo calido et humido, frigido
 <lb/>autem et sicco augescentibus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="108">
-
-
 <p rend="indent">
-<lb/>Respiratio est motus thoracis et pulmonis.
+<lb/><label type="head"><num value="108">CVIII.</num></label> Respiratio est motus thoracis et pulmonis.
 <lb/>Ejus autem partes duae sunt inspiratio et exspiratio. Vel
 <lb/>hoc modo.: respiratio est attractio aeris per oset nares in
 <lb/>cerebrum et per fauces et pulmones in cor, adit quoque
@@ -1218,20 +1066,16 @@
 <lb/>in ambientem fit redditio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="109">
-
-
 <p rend="indent">
-<lb/>Perspiratio est attractio aeris praeter volneratem
+<lb/><label type="head"><num value="109">CΙΧ.</num></label> Perspiratio est attractio aeris praeter volneratem
 <lb/>a naturali calore per corporis ipsius superficiem cum
 <lb/>iis quae una abeunt facta. Aliter: perspiratio est ex corpore
 <lb/>attractio aeris cum naturali appetentia per totum
 <lb/>corpus ac rursus per vias excretio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="110">
-
-
 <p rend="indent">
-<lb/>Pulsus est cordis et arteriarum naturalis dilatatio
+<lb/><label type="head"><num value="110">CC.</num></label> Pulsus est cordis et arteriarum naturalis dilatatio
 <lb/>et contractio. Sunt autem duae pulsus partes diastole
 <lb/>et fystole. Vel sic: pulsus est cordis et arteriarum
 <pb n="19.376"/>
@@ -1248,10 +1092,8 @@
 <lb/>dispositionem praenuncians invisibilem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="111">
-
-
 <p rend="indent">
-<lb/>Genus pulsus est motio quae nec sedari potest
+<lb/><label type="head"><num value="111">CCI.</num></label> Genus pulsus est motio quae nec sedari potest
 <lb/>nec a voluntate progreditur in sempiterni motus distentione
 <lb/>ac contractione consistens atque in corde et arteriis
 <lb/>principium obtinens. Arteria vel circulatim movetur vel
@@ -1269,10 +1111,8 @@
 <lb/>est centrum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="112">
-
-
 <p rend="indent">
-<lb/>Centrum autem appello medium punctum a
+<lb/><label type="head"><num value="112">CCII.</num></label> Centrum autem appello medium punctum a
 <lb/>quo sese dilatantia arteriae fluxus foras impellitur et ad
 <lb/>quod rursum sese contrahentis lapsus it. Hac igitur ratione
 <lb/>moveri fecundum rectitudinem videtur; ex eo autem
@@ -1289,27 +1129,21 @@
 <lb/>ortus accepit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="113">
-
-
 <p rend="indent">
-<lb/>Princeps animae facultas ea est quae partibus
+<lb/><label type="head"><num value="113">CCIII.</num></label> Princeps animae facultas ea est quae partibus
 <lb/>animae praeest, quae regnat et imperat in cerebri basi
 <lb/>redent obtinens. Quidam hoc modo: princeps animae facultas
 <lb/>est quae universi animantis gubernationi praeest in
 <lb/>cerebri corde constituta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="114">
-
-
 <p rend="indent">
-<lb/>Ministra animae facultas seu pars est quae principi
+<lb/><label type="head"><num value="114">CCIV.</num></label> Ministra animae facultas seu pars est quae principi
 <lb/>subdita est atque ministrat in reliquo corpore collocata.</p>
 </div>
 <div type="textpart" subtype="chapter" n="115">
-
-
 <p rend="indent">
-<lb/>Sentos est affectus animae per corpus, nuncius
+<lb/><label type="head"><num value="115">CCV.</num></label> Sentos est affectus animae per corpus, nuncius
 <lb/>rei motum concitantis. Quid differt lentus et sensorium
 <lb/>et sensibile et sensificum ? Differt; <hi rend="italic">tentus</hi> siquidem est agens
 <lb/>facultas. Sensorium vero organum lest quod tensum aliquem
@@ -1324,69 +1158,53 @@
 <lb/>et quaecunque sentiunt animalia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="116">
-
-
 <p rend="indent">
-<lb/>Sensus quinque sunt, vitus, auditus, gustus,
+<lb/><label type="head"><num value="116">CCVI.</num></label> Sensus quinque sunt, vitus, auditus, gustus,
 <lb/>olsactus, tactus. Ministrant autem hi ac inserviunt animae
 <lb/>ut Asclepiades Bitbynus asserit, qui proinde animam
 <lb/>esse quinque sensuum exercitationem dixit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="117">
-
-
 <p rend="indent">
-<lb/>Vitus est <hi rend="italic">sensus</hi> qui fit per oculos contumpersto
+<lb/><label type="head"><num value="117">CCVII.</num></label> Vitus est <hi rend="italic">sensus</hi> qui fit per oculos contumpersto
 <lb/>in ipsis tenui spiritu pupillae locum potissimum
 <lb/>obtinente, per quem visoriae apprehensiones fiunt. Quid
 <lb/>visus est? Visus est facultas aeriae substantiae lucida, adspectus
 <lb/>autem activus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="118">
-
-
 <p rend="indent">
-<lb/>Auditus est <hi rend="italic">sensus</hi> qui fit per spiritum in
+<lb/><label type="head"><num value="118">CCVIII.</num></label> Auditus est <hi rend="italic">sensus</hi> qui fit per spiritum in
 <lb/>auribus contentum qui siccior magis quam tenuior exsistit,
 <lb/>quo auditoriae apprehensiones efficiuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="119">
-
-
 <p rend="indent">
-<lb/>Olfactus est qui absolvitur spiritu in naribus
+<lb/><label type="head"><num value="119">CCΙΧ.</num></label> Olfactus est qui absolvitur spiritu in naribus
 <pb n="19.380"/>
 <lb/>contento fuliginoso halituosioreque, per quem olfactilium
 <lb/>fiunt apprehensiones;</p>
 </div>
 <div type="textpart" subtype="chapter" n="120">
-
-
 <p rend="indent">
-<lb/>Gustus est <hi rend="italic">enses</hi> qui sit spiritu linguae insito
+<lb/><label type="head"><num value="120">CXX.</num></label> Gustus est <hi rend="italic">enses</hi> qui sit spiritu linguae insito
 <lb/>magis humidiora.</p>
 </div>
 <div type="textpart" subtype="chapter" n="121">
-
-
 <p rend="indent">
-<lb/>Tactus est <hi rend="italic">sensus</hi> qui per spiritum corpus permeantem
+<lb/><label type="head"><num value="121">CXXI.</num></label> Tactus est <hi rend="italic">sensus</hi> qui per spiritum corpus permeantem
 <lb/>perficitur, quo corporeae fiunt apprehensiones.</p>
 </div>
 <div type="textpart" subtype="chapter" n="122">
-
-
 <p rend="indent">
-<lb/>Transitivus motus est animalium universorum
+<lb/><label type="head"><num value="122">CXXII.</num></label> Transitivus motus est animalium universorum
 <lb/>qui per appetitionem fit provocante quidem facultate
 <lb/>principe, ministrante. vero eo qui nervis inest spiritu una
 <lb/>producente ac atportante partes.</p>
 </div>
 <div type="textpart" subtype="chapter" n="123">
-
-
 <p rend="indent">
-<lb/>Vox fonus quidam est animantis. Aliter:
+<lb/><label type="head"><num value="123">CXXIII.</num></label> Vox fonus quidam est animantis. Aliter:
 <lb/>vox est quae. fit principis facultatis impulsu fele ac. lpiritum
 <lb/>simul per fauces usque in pulmones, .os et linguam
 <lb/>extendentis iis congredientem- aerem diverberantibus.
@@ -1399,34 +1217,26 @@
 <lb/>ligulam oblidentibus animales affectione annunciat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="124">
-
-
 <p rend="indent">
-<lb/>Memoria est detentio et conservatio eorum
+<lb/><label type="head"><num value="124">CXXIV.</num></label> Memoria est detentio et conservatio eorum
 <lb/>quae antea in anima observata sunt vel quae animam prius
 <lb/>affecerunt. Nonnulli hoc modo. Memoria est praeteriti
 <lb/>comprehensio cujus praesens ex sensu percipiebatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="125">
-
-
 <p rend="indent">
-<lb/>Recordatio est quum praeter cetera interjecto
+<lb/><label type="head"><num value="125">CXXV.</num></label> Recordatio est quum praeter cetera interjecto
 <lb/>multo tempore rursus cogitatio oritur, adeo ut quae
 <lb/>prius animam movere ad memoriam revocentur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="126">
-
-
 <p rend="indent">
-<lb/>Cogitatio est intima notio, notio vero rationalis
+<lb/><label type="head"><num value="126">CXXVI.</num></label> Cogitatio est intima notio, notio vero rationalis
 <lb/>imaginatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="127">
-
-
 <p rend="indent">
-<lb/>Somnus est remissio animae secundum naturam
+<lb/><label type="head"><num value="127">CXXVII.</num></label> Somnus est remissio animae secundum naturam
 <lb/>a finibus ad principatum. Nonnulli vero ita. Somnus
 <lb/>est animae delatio secundum naturam a finibus ad
 <lb/>principium. Aliter. Somnus est quies ac cessatio functionum
@@ -1437,17 +1247,13 @@
 <lb/>magis humidior ac mediocriter calidior est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="128">
-
-
 <p rend="indent">
-<lb/>Vigilia est intentio animae a principio ad
+<lb/><label type="head"><num value="128">CXXVIII.</num></label> Vigilia est intentio animae a principio ad
 <lb/>omnes corporis partes et particulas.</p>
 </div>
 <div type="textpart" subtype="chapter" n="129">
-
-
 <p rend="indent">
-<lb/>i Sanitas est primorum qui fecundum naturam
+<lb/><label type="head"><num value="129">CXXΙΧ.</num></label> i Sanitas est primorum qui fecundum naturam
 <lb/>nobis insunt humorum proba temperies autnaturalium
 <lb/>facultatum actio minime interturbata. Vel sanitas
 <lb/>proba est quatuor primorum elementorum ex quibus corpus
@@ -1476,10 +1282,8 @@
 <lb/>esse potest.</p>
 </div>
 <div type="textpart" subtype="chapter" n="130">
-
-
 <p rend="indent">
-<lb/>Virtutes quidem corporis^ fiunt fanitas, robur,
+<lb/><label type="head"><num value="130">CXXX.</num></label> Virtutes quidem corporis^ fiunt fanitas, robur,
 <lb/>pulchritudo, integritas. Animi vero virtutes prudeutia,
 <lb/>modestia, fortitudo, justitia. Quaenam est illarum ad
 <lb/>has analogia? Sanitas equidem ad modestiam analogiam
@@ -1507,10 +1311,8 @@
 <lb/>est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="131">
-
-
 <p rend="indent">
-<lb/>Equidem quod fecundum naturam sanitas
+<lb/><label type="head"><num value="131">CXXXI.</num></label> Equidem quod fecundum naturam sanitas
 <lb/>est, quod vero praeter naturam morbus. Quod autem est
 <lb/>natura, id neque secundum naturam neque praeter naturam
 
@@ -1534,10 +1336,8 @@
 <lb/>non natura ei quod praeter naturam ratione proximum est.
 </p></div>
 <div type="textpart" subtype="chapter" n="132">
-
-
 <p rend="indent">
-<lb/>Quae partes nobis insunt aliae quidem ad
+<lb/><label type="head"><num value="132">CXXXII.</num></label> Quae partes nobis insunt aliae quidem ad
 <lb/>vivendum a natura, aliae varo ad bene vivendum anatura
 <lb/>procreatae. sunt. Quae itaque partes ad vivendum
 <pb n="19.386"/>
@@ -1549,10 +1349,8 @@
 <lb/>sed feliciter minus vivit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="133">
-
-
 <p rend="indent">
-<lb/>Morbus est primorum quae fecundum naruram
+<lb/><label type="head"><num value="133">CXXXIII.</num></label> Morbus est primorum quae fecundum naruram
 <lb/>consistunt <hi rend="italic">corporum</hi> intemperies. Vel: eorum quae
 <lb/>nobis, insunt. humorum intemperies, Vel: naturalium faunitatum
 <lb/>impeditio. Veli eversio corporis. ab eo qui fecuudum
@@ -1565,10 +1363,8 @@
 <lb/>tarium proba temperie,</p>
 </div>
 <div type="textpart" subtype="chapter" n="134">
-
-
 <p rend="indent">
-<lb/>Affectio est. interturbatioalicujus quj se-,
+<lb/><label type="head"><num value="134">CXXXIV.</num></label> Affectio est. interturbatioalicujus quj se-,
 <lb/>eundum naturam est actionis morbosa aut quarundam. aut
 <pb n="19.387"/>
 <lb/>unius aut omnium naturae functionum, Quidam vero ut.
@@ -1577,10 +1373,8 @@
 <lb/>et longiore.</p>
 </div>
 <div type="textpart" subtype="chapter" n="135">
-
-
 <p rend="indent">
-<lb/>Aegritudo est- affectio morbosa aut. totius
+<lb/><label type="head"><num value="135">CXXXV.</num></label> Aegritudo est- affectio morbosa aut. totius
 <lb/>corporis aut partis. Ad haec. morborum alii quidem conlinui
 <lb/>sunt-; alii intermittentes, aiii acuti, ali. peracuit
 <lb/>aiii diuturni. Continui sunt hemitritaeus, typhodes quaer
@@ -1600,26 +1394,20 @@
 <lb/>acuti ut hemitritaei et typhodes febres.</p>
 </div>
 <div type="textpart" subtype="chapter" n="136">
-
-
 <p rend="indent">
-<lb/>Febrium status quatuor funi quos etiam
+<lb/><label type="head"><num value="136">CXXXVI.</num></label> Febrium status quatuor funi quos etiam
 <lb/>tempora nominant, insultus, incrementum, vigor, declinatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="137">
-
-
 <p rend="indent">
-<lb/>Hippocrates novem morborum disserentias
+<lb/><label type="head"><num value="137">CXXXVII.</num></label> Hippocrates novem morborum disserentias
 <lb/>novit, acutum, peracutum, malignum, diuturnum;
 <lb/>medium, exitialem, salutarem, periculosum, periculi experient.
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="138">
-
-
 <p rend="indent">
-<lb/>Morbus acutus est qui et viribus et
+<lb/><label type="head"><num value="138">CXXXVIII.</num></label> Morbus acutus est qui et viribus et
 <lb/>specie magnus est et periculosus quique ut plurimum septem
 <lb/>diebus judicatur. Aliter. Acutus morbus est qui
 <lb/>magnus est et ad vigorem celeriter pervenit: Vel ex Hippocrate.
@@ -1629,10 +1417,8 @@
 <lb/>est habet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="109">
-
-
 <p rend="indent">
-<lb/>Morbus peracutus est affectus acuto vi et
+<lb/><label type="head"><num value="109">CΙΧ.</num></label> Morbus peracutus est affectus acuto vi et
 <lb/>specie major et difficilior qui fere septem diebus judicatur;
 <pb n="19.389"/>
 <lb/>hunc etiam acutissimum appellare consuevit Hippocrates.
@@ -1643,120 +1429,92 @@
 <lb/>aut in eo aut etiam maturius judicatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="140">
-
-
 <p rend="indent">
-<lb/>Malignus morbus est qui facultate quidem
+<lb/><label type="head"><num value="140">CXL.</num></label> Malignus morbus est qui facultate quidem
 <lb/>magnas est et difficilis, specie vero debilis neque statuta
 <lb/>judicationis habet tempora. Aliter; malignus morbus voeatur
 <lb/>qui aegris periculum minatur nec spem salutis adimit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="141">
-
-
 <p rend="indent">
-<lb/>Morbus diuturnus est qui ru -pejus mutatur
+<lb/><label type="head"><num value="141">CXLI.</num></label> Morbus diuturnus est qui ru -pejus mutatur
 <lb/>ac melius; in mensibus annisque judicatur aut etiam cum
 <lb/>homine interit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="142">
-
-
 <p rend="indent">
-<lb/>Medius morbus qui inter diuturnum et acutum
+<lb/><label type="head"><num value="142">CXLII.</num></label> Medius morbus qui inter diuturnum et acutum
 <lb/>est ; is quoque in melius ac deterius commeat atque
 <lb/>in sexaginta fere aut octoginta diebus judicatur.</p>
 
 </div>
 <pb n="19.390"/>
 <div type="textpart" subtype="chapter" n="143">
-
-
 <p rend="indent">
-<lb/>Exitialis est morbus qui prorsus exitium
+<lb/><label type="head"><num value="143">CXLIII.</num></label> Exitialis est morbus qui prorsus exitium
 <lb/>affert vel brevi vel plurimo tempore.</p>
 </div>
 <div type="textpart" subtype="chapter" n="144">
-
-
 <p rend="indent">
-<lb/>Salutaris morbus est qui nunquam fit peremptorius
+<lb/><label type="head"><num value="144">CXLIV.</num></label> Salutaris morbus est qui nunquam fit peremptorius
 <lb/>quantum pensu, quoniam multoties ob errorem
 <lb/>periculosus evadit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="145">
-
-
 <p rend="indent">
-<lb/>Periculosus morbus est qui ad perniciem et
+<lb/><label type="head"><num value="145">CXLV.</num></label> Periculosus morbus est qui ad perniciem et
 <lb/>falutem aequale habet momentum-; is anceps quoque- dici
 <lb/>potest.</p>
 </div>
 <div type="textpart" subtype="chapter" n="146">
-
-
 <p rend="indent">
-<lb/>Non periculosus <hi rend="italic">vel securus</hi> morbus est qui
+<lb/><label type="head"><num value="146">CXLVI.</num></label> Non periculosus <hi rend="italic">vel securus</hi> morbus est qui
 <lb/>temper ad falutem - quantum in ipso est vergit ittemque
 <lb/>facultate cum salutari est.
 </p></div>
 <div type="textpart" subtype="chapter" n="147">
-
-
 <p rend="indent">
-<lb/>Morbus specie - magnus est ut vulnus in
+<lb/><label type="head"><num value="147">CXLVII.</num></label> Morbus specie - magnus est ut vulnus in
 <lb/>carnosis locis multum (patri occupans ; magnus autem re
 <lb/>vel effectu ut punctura in nervo vel musculo quae parva
 <lb/>vilui apparet, facultate autem magna esu .</p>
 </div>
 <div type="textpart" subtype="chapter" n="148">
-
-
 <p rend="indent">
-<lb/>Infirmitas feti adversa valetudo morbus est
+<lb/><label type="head"><num value="148">CXLVIII.</num></label> Infirmitas feti adversa valetudo morbus est
 <lb/>inveteratus multa cum imbecillitate. xel : infirmitas- est
 <lb/>morbus imbecillis vires diminuens.</p>
 
 </div>
 <pb n="19.391"/>
 <div type="textpart" subtype="chapter" n="149">
-
-
 <p rend="indent">
-<lb/>Morbus permanens est dispositio praeter
+<lb/><label type="head"><num value="149">CXLΙΧ.</num></label> Morbus permanens est dispositio praeter
 <lb/>naturam corporum vitam participantium quem affectum
 <lb/>esse ajunt Herophilei qui nec facile solvitur neque facile
 <lb/>dimovetur susque esse ru humidis caulam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="150">
-
-
 <p rend="indent">
-<lb/>Morbi sporadici sunt qui omni tempore et loco
+<lb/><label type="head"><num value="150">CL.</num></label> Morbi sporadici sunt qui omni tempore et loco
 <lb/>exoriuntur. Aliter. Morbi sporadici sunt qui separatim
 <lb/>quemque invadunt. Alio modo. Morbi dispersi dimersi
 <lb/>non ejusdem generis alii aliis contingentes.</p>
 </div>
 <div type="textpart" subtype="chapter" n="151">
-
-
 <p rend="indent">
-<lb/>Vernaculi morbi sunt qui quibusdam in locis
+<lb/><label type="head"><num value="151">CLI.</num></label> Vernaculi morbi sunt qui quibusdam in locis
 <lb/>frequentius affluunt. Aliter. Morbi vernaculi sunt qui
 <lb/>perpetuo regionem aliquam occupant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="152">
-
-
 <p rend="indent">
-<lb/>Vulgares morbi sunt qui temporibus qurbusdam
+<lb/><label type="head"><num value="152">CLII.</num></label> Vulgares morbi sunt qui temporibus qurbusdam
 <lb/>plures eodem in loco corripiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="153">
-
-
 <p rend="indent">
-<lb/>Pestilentia est morbus qui in omnes aut plurimos
+<lb/><label type="head"><num value="153">CLIII.</num></label> Pestilentia est morbus qui in omnes aut plurimos
 <lb/>grassatur ab aeris corruptela proveniens; quo fit
 <lb/>ut quamplurimi intereant. Fertur st quaedam hujusmodi
 <lb/>definitio. Pestilentia est communis affectus plurimorum
@@ -1768,20 +1526,16 @@
 <lb/>morbo intereant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="154">
-
-
 <p rend="indent">
-<lb/>Caula est quae in corpore aliquid efficit expersque
+<lb/><label type="head"><num value="154">CLIV.</num></label> Caula est quae in corpore aliquid efficit expersque
 <lb/>ipsa est corporis. Vel cauta est, ut tradunt philosophi,
 <lb/>alicujus rei effectrix aut cujus gratia aliquid fit.
 <lb/>Triplex autem causa est; alia quidem est .evidens; alia
 <lb/>vero antecedens; alia denique continens sieu conjuncta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="155">
-
-
 <p rend="indent">
-<lb/>Catssa evidens est quae peracto opere discessit,
+<lb/><label type="head"><num value="155">CLV.</num></label> Catssa evidens est quae peracto opere discessit,
 <lb/>quemadmodum canis quum momordit et scorpius quum
 <lb/>ictum inflixit et inustio a fide quae tebrem molitur. Albenaeus
 <lb/>autem Attalensis sic inquit: causa .est ea quae sarit.;
@@ -1790,10 +1544,8 @@
 <lb/>quasque nulla praecedit..</p>
 </div>
 <div type="textpart" subtype="chapter" n="156">
-
-
 <p rend="indent">
-<lb/>Antecedens causa est- quae ab evidente vel
+<lb/><label type="head"><num value="156">CLVI.</num></label> Antecedens causa est- quae ab evidente vel
 <lb/>comparatur vel adjuyatur conjunctamque antecedit. Nonnulli
 
 <pb n="19.393"/>
@@ -1802,10 +1554,8 @@
 <lb/>et sublata tollitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="157">
-
-
 <p rend="indent">
-<lb/>Cauta continens est quae praesens praesentem
+<lb/><label type="head"><num value="157">CLVII.</num></label> Cauta continens est quae praesens praesentem
 <lb/>servat morbum et sublata simul tollit ut calculus in
 <lb/>vesica, utr aquata, ut pterygium, ut encanthis atiaque
 <lb/>ejusmodi quae cautas coniunctas vocant, ut praeclarissimi
@@ -1813,168 +1563,128 @@
 <lb/>ratione ponunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="158">
-
-
 <p rend="indent">
-<lb/>Causa perfecta seu per se finiens est ipsa
+<lb/><label type="head"><num value="158">CLVIII.</num></label> Causa perfecta seu per se finiens est ipsa
 <lb/>quae per se finem facit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="159">
-
-
 <p rend="indent">
-<lb/>Concausa est quae cum alia pares obtinens
+<lb/><label type="head"><num value="159">CLΙΧ.</num></label> Concausa est quae cum alia pares obtinens
 <lb/>vires opus molitur, id vero facere sola per se ipsis non
 <lb/>poterat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="160">
-
-
 <p rend="indent">
-<lb/>Adjutrix causa est quae opus quidem conficit,
+<lb/><label type="head"><num value="160">CLX.</num></label> Adjutrix causa est quae opus quidem conficit,
 <lb/>sed aegre, quapropter alteri consonatus quo rem eonsequatur
 <lb/>facilius quam prompte obire seorsum nequit.</p>
 
 </div>
 <pb n="19.394"/>
 <div type="textpart" subtype="chapter" n="161">
-
-
 <p rend="indent">
-<lb/>Causae manifestae sunt quaecunque ex se ipsis
+<lb/><label type="head"><num value="161">CLXI.</num></label> Causae manifestae sunt quaecunque ex se ipsis
 <lb/>facientes agentesque sensu deprehenduntur. Aliqui hoc
 <lb/>modo. Manifestae sunt causae quae et apparent ipsae et
 <lb/>opus consentanee sibi fieri ostendunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="162">
-
-
 <p rend="indent">
-<lb/>Non manifestae cautae funi quae non ex
+<lb/><label type="head"><num value="162">CLXII.</num></label> Non manifestae cautae funi quae non ex
 <lb/>feipsis ted per signa deprehenduntur quemadmodum obscurae,
 <lb/>quae neque ex seipsis neque ex aliis noscuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="163">
-
-
 <p rend="indent">
-<lb/>Ad tempus obscurae sunt quae detectae ex
+<lb/><label type="head"><num value="163">CLXIII.</num></label> Ad tempus obscurae sunt quae detectae ex
 <lb/>se ipsae non apparent et .adjunctae <hi rend="italic">corporibus</hi> per signa
 <lb/>cognoscuntur. Vel sic. Pro tempore abditae sunt eae
 <lb/>quae absunt aliquamdiu ac rursus venire tub sensum valent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="164">
-
-
 <p rend="indent">
-<lb/>Significatio est signi idea vel est per signupt
+<lb/><label type="head"><num value="164">CLXIV.</num></label> Significatio est signi idea vel est per signupt
 <lb/>vel per signa perceptio. Vel notatio est signum quod rem
 <lb/>minus patentem quampiam declarat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="165">
-
-
 <p rend="indent">
-<lb/>Signum.est rei quae contingere debet dignotio.
+<lb/><label type="head"><num value="165">CLXV.</num></label> Signum.est rei quae contingere debet dignotio.
 <lb/>Nonnulli hoc pacto: signum est quo cognito aliud
 <pb n="19.395"/>
 <lb/>quidpiam ex ipso deprehenditur. Vel quod prius ignotum
 <lb/>nobis erat cognoscitur ac percipitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="166">
-
-
 <p rend="indent">
-<lb/>Pathognomonicum <hi rend="italic">seu affectum notans</hi> est
+<lb/><label type="head"><num value="166">CLXVI.</num></label> Pathognomonicum <hi rend="italic">seu affectum notans</hi> est
 <lb/>tum interiorum tum exteriorum significatio. Vel .passiognomonicum
 <lb/>est signum ex quo affectus dignoscitur. vel:
 <lb/>pathognomonicum est quod affectionis speciem significat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="167">
-
-
 <p rend="indent">
-<lb/>Praenotio eorum quae evenire debent scientia
+<lb/><label type="head"><num value="167">CLXVII.</num></label> Praenotio eorum quae evenire debent scientia
 <lb/>est. Aut: praenotio est: praescire quae corpori sunt
 <lb/>eventura. Prognosticum signum est ex quo futurum noscitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="168">
-
-
 <p rend="indent">
-<lb/>Praedictio est futuri praenotio praenunclatioque.
+<lb/><label type="head"><num value="168">CLXVIII.</num></label> Praedictio est futuri praenotio praenunclatioque.
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="169">
-
-
 <p rend="indent">
-<lb/>Syndrome <hi rend="italic">vel concursus</hi> est congressus symplumatum.
+<lb/><label type="head"><num value="169">CLXΙΧ.</num></label> Syndrome <hi rend="italic">vel concursus</hi> est congressus symplumatum.
 <lb/>Vel symptomatum collectio. Vel symptomatum
 <lb/>cumulus omnibus liquido apparentium.</p>
 </div>
 <div type="textpart" subtype="chapter" n="170">
-
-
 <p rend="indent">
-<lb/>Symptoma est affectus accessorium vel contectariu
+<lb/><label type="head"><num value="170">CLXX.</num></label> Symptoma est affectus accessorium vel contectariu
 <lb/>m.</p>
 </div>
 <div type="textpart" subtype="chapter" n="171">
-
-
 <p rend="indent">
-<lb/>Auxiliaria signa sunt ea ex quibus curationis
+<lb/><label type="head"><num value="171">CLXXI.</num></label> Auxiliaria signa sunt ea ex quibus curationis
 <lb/>quae in ipsis observata est commovemur.</p>
 
 </div>
 <pb n="19.396"/>
 <div type="textpart" subtype="chapter" n="172">
-
-
 <p rend="indent">
-<lb/>Auxilium est quod hominibus ad salutem
+<lb/><label type="head"><num value="172">CLXXII.</num></label> Auxilium est quod hominibus ad salutem
 <lb/>admovetur ex quantitate, qualitate, ordine atque occasione
 <lb/>constans.</p>
 </div>
 <div type="textpart" subtype="chapter" n="173">
-
-
 <p rend="indent">
-<lb/>Curatio est morbi sublatio quae jam facta
+<lb/><label type="head"><num value="173">CLXXIII.</num></label> Curatio est morbi sublatio quae jam facta
 <lb/>est, non quae adhuc fit. Vel curatio est ordo auxiliorum
 <lb/>consequentiam bibentium. Vel: -opportunitas et tempus
 <lb/>et ordo emendationis obeundae. Vel: temporis commoditas
 <lb/>in qua opem ferimus laborantibus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="174">
-
-
 <p rend="indent">
-<lb/>Occasio .est commodae functionis tempus
+<lb/><label type="head"><num value="174">CLXXIV.</num></label> Occasio .est commodae functionis tempus
 <lb/>praeceps et commodi u fas rerum agendarum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="175">
-
-
 <p rend="indent">
-<lb/>Demonstrativum signum, est quod primario,
+<lb/><label type="head"><num value="175">CLXXV.</num></label> Demonstrativum signum, est quod primario,
 <lb/>in abditae alienius rei consequentis deprehensionem per
 <lb/>se ducit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="176">
-
-
 <p rend="indent">
-<lb/>Commemorans signum i ut ajunt, empirici
+<lb/><label type="head"><num value="176">CLXXVI.</num></label> Commemorans signum i ut ajunt, empirici
 <lb/>res quae apparens atque ex praevia observatione innotescens
 <lb/>ad rei quae cognoscitur memoriam conducit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="177">
-
-
 <p rend="indent">
-<lb/>Praesentium signorum omnium praetentis
+<lb/><label type="head"><num value="177">CLXXVII.</num></label> Praesentium signorum omnium praetentis
 <lb/>tigna sunt pathognomonica omnia quae affectum demonstrant:
 
 <pb n="19.397"/>
@@ -1982,41 +1692,31 @@
 <lb/>permanent; quum vero cessant morbi quoque solvuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="178">
-
-
 <p rend="indent">
-<lb/>Praesentia praeteritorum signa sunt a
+<lb/><label type="head"><num value="178">CLXXVIII.</num></label> Praesentia praeteritorum signa sunt a
 <lb/>quibus praeteritum significatur ut facti prius ulceris cicatrix.</p>
 </div>
 <div type="textpart" subtype="chapter" n="179">
-
-
 <p rend="indent">
-<lb/>Praesentia vero futurorum signa sunt a
+<lb/><label type="head"><num value="179">CLXXΙΧ.</num></label> Praesentia vero futurorum signa sunt a
 <lb/>quibus futurum significatur ut cadaverosa facies mortis
 <lb/>signum est.
 </p></div>
 <div type="textpart" subtype="chapter" n="180">
-
-
 <p rend="indent">
-<lb/>Praeterita praeteritorum signa sunt ut a
+<lb/><label type="head"><num value="180">CLXXX.</num></label> Praeterita praeteritorum signa sunt ut a
 <lb/>declinatione remissio decessionis <hi rend="italic">morbi signum</hi> est.
 </p></div>
 <div type="textpart" subtype="chapter" n="181">
-
-
 <p rend="indent">
-<lb/>Praeterita praesentium signa sunt ut demolium
+<lb/><label type="head"><num value="181">CLXXXI.</num></label> Praeterita praesentium signa sunt ut demolium
 <lb/>esse ab aspide inter exitialia censeri. Quidam
 <lb/>vero ita definiunt: praeterita praesentium signa fiunt ut
 <lb/>tenue intestinum vulneratum inter exitialia esse vulnera.</p>
 </div>
 <div type="textpart" subtype="chapter" n="182">
-
-
 <p rend="indent">
-<lb/>Praeterita vero futurorum signa sunt. ut
+<lb/><label type="head"><num value="182">CLXXXII.</num></label> Praeterita vero futurorum signa sunt. ut
 <lb/>confracto osse callum contrahente: callum enim id contrahere
 <lb/>oportet ad restitutionem. Nonnulli vero sic : praeterita
 <lb/>futurorum sunt ut ex capite dempto osse cicatricem
@@ -2025,25 +1725,19 @@
 </div>
 <pb n="19.398"/>
 <div type="textpart" subtype="chapter" n="183">
-
-
 <p rend="indent">
-<lb/>Supervenientia praesentium signa sunt ut .
+<lb/><label type="head"><num value="183">CLXXXIII.</num></label> Supervenientia praesentium signa sunt ut .
 <lb/>in senibus sauciatum periclitari ex vulnere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="184">
-
-
 <p rend="indent">
-<lb/>Supervenientia vero succedentium signa
+<lb/><label type="head"><num value="184">CLXXXIV.</num></label> Supervenientia vero succedentium signa
 <lb/>sunt ut ex vulnere convulsio: non enim vulneratus vivit
 <lb/>praeterea quem convulsio. excepit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="185">
-
-
 <p rend="indent">
-<lb/>Febris est limati. caloris ad fletum praeter
+<lb/><label type="head"><num value="185">CLXXXV.</num></label> Febris est limati. caloris ad fletum praeter
 <lb/>naturam eversio pulsibus et vehementioribus et frequentioribus
 <lb/>redditis. Vel: febris est cordis .arteriarumque
 <lb/>calor praeter naturam vitale robur laedens, qui ab
@@ -2056,10 +1750,8 @@
 <lb/>statum degenerans.</p>
 </div>
 <div type="textpart" subtype="chapter" n="186">
-
-
 <p rend="indent">
-<lb/>Febris continua est quae neque noctu
+<lb/><label type="head"><num value="186">CLXXXVI.</num></label> Febris continua est quae neque noctu
 <lb/>neque interdiu intermittit, remissiones vero, indutias et
 <pb n="19.399"/>
 <lb/>exacerbationes infert. Vel: continua febris est quae ad
@@ -2067,68 +1759,52 @@
 <lb/>remissio aliquo pensu perspicua appareat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="187">
-
-
 <p rend="indent">
-<lb/>Febris continens est ea quae peraeque
+<lb/><label type="head"><num value="187">CLXXXVII.</num></label> Febris continens est ea quae peraeque
 <lb/>perdurat neque noctu neque interdiu intermittit; neque
 <lb/>remissiones neque exacerbationes insert.</p>
 </div>
 <div type="textpart" subtype="chapter" n="188">
-
-
 <p rend="indent">
-<lb/>Febris ardens est quae cum fervore
+<lb/><label type="head"><num value="188">CLXXXVIII.</num></label> Febris ardens est quae cum fervore
 <lb/>multo fit nullam requiem corpori praebet, linguam assiccat,
 <lb/>denigrat, frigidae desiderium affert et cum magna respiratione
 <lb/>et calore corpus dolore afficit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="189">
-
-
 <p rend="indent">
-<lb/>Pemphigodes febris est quae per caloris^
+<lb/><label type="head"><num value="189">CLXXXΙΧ.</num></label> Pemphigodes febris est quae per caloris^
 <lb/>intensionem phlyetidas <hi rend="italic">pustulas</hi> in ore excitat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="190">
-
-
 <p rend="indent">
-<lb/>Lipyria febris <hi rend="italic">est ea</hi> in qua extrema et -su-;
+<lb/><label type="head"><num value="190">CXC.</num></label> Lipyria febris <hi rend="italic">est ea</hi> in qua extrema et -su-;
 <lb/>perficies refrigerantur, uritur profundum, excretiones detinentur,
 <lb/>alpem sitientibus lingua est, pullus parvus atque
 <lb/>obscurus; quasi- calor. se intro receperit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="191">
-
-
 <p rend="indent">
-<lb/>Eluens febris est quae cum alvi. fluere,saepe.- .
+<lb/><label type="head"><num value="191">CXCI.</num></label> Eluens febris est quae cum alvi. fluere,saepe.- .
 <pb n="19.400"/>
 <lb/>vero et vomitibus refrigerationem infert subitamque virium
 <lb/>dejectionem cum siti et insomnio et pulsuum pravitate.</p>
 </div>
 <div type="textpart" subtype="chapter" n="192">
-
-
 <p rend="indent">
-<lb/>Astricta febris contraria est fluenti, excretiones
+<lb/><label type="head"><num value="192">CXCII.</num></label> Astricta febris contraria est fluenti, excretiones
 <lb/>non .infert, pulsus magnos servat, longiore spatio temporis
 <lb/>corpus emaciat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="193">
-
-
 <p rend="indent">
-<lb/>Auriginosa febris ea est quae similem latero
+<lb/><label type="head"><num value="193">CXCIII.</num></label> Auriginosa febris ea est quae similem latero
 <lb/>colorem molitur, jecur in sublime attollit, linguam assiccat,
 <lb/>cutis superficiem foedam squallidam ac luteam reddit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="194">
-
-
 <p rend="indent">
-<lb/>Pestilens febris est quae cum multo calore
+<lb/><label type="head"><num value="194">CXCIV.</num></label> Pestilens febris est quae cum multo calore
 <lb/>sitim insanabilem invehat, bilis omnis generis vomitus,
 <lb/>foeditas alvi excretiones ac virulentas ut paludum grave-.
 <lb/>olentiae sint quae excernuntur similia, urinas multas ac
@@ -2136,47 +1812,37 @@
 <lb/>inducit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="195">
-
-
 <p rend="indent">
-<lb/>Typhodes febris, quam nonnulli vapidam ac
+<lb/><label type="head"><num value="195">CXCV.</num></label> Typhodes febris, quam nonnulli vapidam ac
 <lb/>madentem appellitant, est quae fusiores foetidos inducit.
 <pb n="19.401"/>
 <lb/>Vel:. typhodes febris est quae -cum stupore sit et intensam
 <lb/>cum furore mentis habet alienationem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="196">
-
-
 <p rend="indent">
-<lb/>Torpida febris est quae cum capitis gravitate
+<lb/><label type="head"><num value="196">CXCVI.</num></label> Torpida febris est quae cum capitis gravitate
 <lb/>provenit ver sanguinis per nares profluvio velexecetionis
 <lb/>suppressionem affert aut- ex necessitate molestam eorporis
 <lb/>lapsionem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="197">
-
-
 <p rend="indent">
-<lb/>Horrida febris est quae calorem habet rigeri
+<lb/><label type="head"><num value="197">CXCVII.</num></label> Horrida febris est quae calorem habet rigeri
 <lb/>permixtum. et pulsus admodum imbecillos; adeo ut
 <lb/>ne in tactum veniant sed qui velut intro recesserunt; in
 <lb/>ea venter tumefactus murmurat lingua, valde hunnda quiddam
 <lb/>acido simile habens, quo tanquam saliva circumluitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="198">
-
-
 <p rend="indent">
-<lb/>Typus est intensionum remissionumque ordinata
+<lb/><label type="head"><num value="198">CXCVIII.</num></label> Typus est intensionum remissionumque ordinata
 <lb/>redditio. Vel ita:. typus est unius affectionis rempus
 <lb/>cui et accessio et .emissio ordinata contingit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="199">
-
-
 <p rend="indent">
-<lb/>Periodus est tempus in morbis ex intensione
+<lb/><label type="head"><num value="199">CXCΙΧ.</num></label> Periodus est tempus in morbis ex intensione
 <lb/>et remissione constans. Vela periodus est similis ad idem
 <lb/>reditus vel motus. Vel sic : periodus est in morbis diuturnis
 <lb/>intensionis et rem issiouis -similis ad idem reditus.</p>
@@ -2184,32 +1850,24 @@
 </div>
 <pb n="19.402"/>
 <div type="textpart" subtype="chapter" n="200">
-
-
 <p rend="indent">
-<lb/>Quotidiana febris est quae; uniquoque die ac
+<lb/><label type="head"><num value="200">CC.</num></label> Quotidiana febris est quae; uniquoque die ac
 <lb/>nocte ut plurimum eadem hora mvadit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="201">
-
-
 <p rend="indent">
-<lb/>Tertiana est febris quae uno die vel nocte infultat,
+<lb/><label type="head"><num value="201">CCI.</num></label> Tertiana est febris quae uno die vel nocte infultat,
 <lb/>sequente intermittit; tertio^ repetit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="202">
-
-
 <p rend="indent">
-<lb/>Quartana est quae uno die vel una nocte in vadit,
+<lb/><label type="head"><num value="202">CCII.</num></label> Quartana est quae uno die vel una nocte in vadit,
 <lb/>deinde biduum intermittit aut noctes duas, i quarto
 <lb/>vero rursum accedit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="203">
-
-
 <p rend="indent">
-<lb/>llemitritaeus est, quam nos ex fenta sententia
+<lb/><label type="head"><num value="203">CCIII.</num></label> llemitritaeus est, quam nos ex fenta sententia
 <lb/>enunciantis primo epidemiorum febrem continuam. acutam
 <lb/>appellamus,c quae prorsus quidem son intermittit,
 <lb/>sed dictu unum aut noctem. leniorem infert alterum graviorem.
@@ -2219,17 +1877,13 @@
 <lb/>quae quatuor intermissiones complectitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="204">
-
-
 <p rend="indent">
-<lb/>Erraticae febres vocantur. quae non praefinio
+<lb/><label type="head"><num value="204">CCIV.</num></label> Erraticae febres vocantur. quae non praefinio
 <lb/>tae neo. recto ordine, sesi incerto statu proveniunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="205">
-
-
 <p rend="indent">
-<lb/>Diastole est. elevatio ac: veluti excitatio cordis
+<lb/><label type="head"><num value="205">CCV.</num></label> Diastole est. elevatio ac: veluti excitatio cordis
 <pb n="19.403"/>
 <lb/>arteriarum, cerebri et meningum in longitudinem, Iatitnclinem
 <lb/>profundi tatemque in sensum tactus cadens ad elevationem.
@@ -2238,18 +1892,14 @@
 <lb/>clinem sensilis ad elationem tactui.</p>
 </div>
 <div type="textpart" subtype="chapter" n="206">
-
-
 <p rend="indent">
-<lb/>Systole est collectio et collapsus istorum quae
+<lb/><label type="head"><num value="206">CCVI.</num></label> Systole est collectio et collapsus istorum quae
 <lb/>sensum quidem non movet, ceterorum bona ac consentanea
 <lb/>ratione deprehenditur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="207">
-
-
 <p rend="indent">
-<lb/>Palpitatio est elatio et submissio cedentis
+<lb/><label type="head"><num value="207">CCVII.</num></label> Palpitatio est elatio et submissio cedentis
 <lb/>corporis nec renitentis quae fit a spiritu nec perpetuo durat,
 <lb/>sed certis cietur temporibus. Alii sic: palpitatio est
 <lb/>elatio et submissio musculosorum corporum quae a spiritu
@@ -2262,10 +1912,8 @@
 </div>
 <pb n="19.404"/>
 <div type="textpart" subtype="chapter" n="208">
-
-
 <p rend="indent">
-<lb/>Magnus pulsus est qui fit arteria multum sese
+<lb/><label type="head"><num value="208">CCVIII.</num></label> Magnus pulsus est qui fit arteria multum sese
 <lb/>in longitudinem, profunditatem ac latitudinem diducente.</p>
 <p rend="indent">
 <lb/>Parvus pulsus est qui contra in minimum spatium
@@ -2277,10 +1925,8 @@
 <lb/>quoque digitis sese ad proportionem offerente.</p>
 </div>
 <div type="textpart" subtype="chapter" n="209">
-
-
 <p rend="indent">
-<lb/>Plenus pulsus est is qui sub tactum cadit distentus
+<lb/><label type="head"><num value="209">CCΙΧ.</num></label> Plenus pulsus est is qui sub tactum cadit distentus
 <lb/>adeo, ut ipsa quidem crassior facta videatur arteriae
 <lb/>tunica, maxime vero quod inter eam clauditur plenius
 <lb/>universum ac corpulentius deprehenditur.</p>
@@ -2296,10 +1942,8 @@
 </div>
 <pb n="19.405"/>
 <div type="textpart" subtype="chapter" n="210">
-
-
 <p rend="indent">
-<lb/>Durus pulsus est in quo nervosa, ut quispiam
+<lb/><label type="head"><num value="210">CCX.</num></label> Durus pulsus est in quo nervosa, ut quispiam
 <lb/>dixerit, arteria videtur ac rigida et tentus qui subest, spiritus ;
 <lb/>quo fit ut ictus vim quandam repercutiendi habeat.</p>
 <p rend="indent">
@@ -2311,10 +1955,8 @@
 <lb/>fecundum naturam existit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="211">
-
-
 <p rend="indent">
-<lb/>Humidus pulsus est qui mollis, ut et contenta
+<lb/><label type="head"><num value="211">CCXI.</num></label> Humidus pulsus est qui mollis, ut et contenta
 <lb/>in eo substantia mitis sit et humiditate quadam tactui
 <lb/>occurrat.</p>
 <p rend="indent">
@@ -2325,10 +1967,8 @@
 <lb/>apparet sed commoderatus ac naturalis est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="212">
-
-
 <p rend="indent">
-<lb/>calidus pulsus est quum arteria vicluis partibus
+<lb/><label type="head"><num value="212">CCXII.</num></label> calidus pulsus est quum arteria vicluis partibus
 <lb/>calidior tangitur ut in febre hectica.
 <pb n="19.406"/>
 <lb/>Frigidus pulsus est in quo arteria frigidior sentitur.</p>
@@ -2337,10 +1977,8 @@
 <lb/>obtinet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="213">
-
-
 <p rend="indent">
-<lb/>Vehemens pulsus est qui et motum strenuum
+<lb/><label type="head"><num value="213">CCXIII.</num></label> Vehemens pulsus est qui et motum strenuum
 <lb/>habet et ictum molitur violentum.</p>
 <p rend="indent">
 <lb/>Obscurus seu <hi rend="italic">languidus</hi> est qui et viribus est exsolulis
@@ -2350,10 +1988,8 @@
 <lb/>horum servat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="214">
-
-
 <p rend="indent">
-<lb/>Celer pulsus est qui concisam habete tum
+<lb/><label type="head"><num value="214">CCXIV.</num></label> Celer pulsus est qui concisam habete tum
 <lb/>diastolen tum fystolen. Vel : celer pulsus est qui fit quum
 <lb/>modico tempore movetur arteria.</p>
 <p rend="indent">
@@ -2368,10 +2004,8 @@
 </div>
 <pb n="19.407"/>
 <div type="textpart" subtype="chapter" n="215">
-
-
 <p rend="indent">
-<lb/>Frequens pulsus est quando parvo interposito
+<lb/><label type="head"><num value="215">CCXV.</num></label> Frequens pulsus est quando parvo interposito
 <lb/>intervallo arteria distenditur. Veri quum breve tempus
 <lb/>est inter diastolen et fystolen.</p>
 <p rend="indent">
@@ -2384,10 +2018,8 @@
 <lb/>tempore arteria distenditur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="216">
-
-
 <p rend="indent">
-<lb/>Pulsus ordo est habitus quidam in magniusdine
+<lb/><label type="head"><num value="216">CCXVI.</num></label> Pulsus ordo est habitus quidam in magniusdine
 <lb/>vel vehementia vel rhythmo ver alio quopiam dircrimine.
 </p>
 <p rend="indent">
@@ -2396,10 +2028,8 @@
 <lb/>qui per circuitum par est.
 </p></div>
 <div type="textpart" subtype="chapter" n="217">
-
-
 <p rend="indent">
-<lb/>Confusio pulsus est instabililas differentiae
+<lb/><label type="head"><num value="217">CCXVII.</num></label> Confusio pulsus est instabililas differentiae
 <lb/>pulsuum. Nonnulli ita: inordinatus pulsus est qui in
 <lb/>percussionibus quibusdam interdum densior, interdum rarior
 
@@ -2408,20 +2038,16 @@
 <lb/>ordinem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="218">
-
-
 <p rend="indent">
-<lb/>Aequalitas pulsus est parilitas in quibusdam
+<lb/><label type="head"><num value="218">CCXVIII.</num></label> Aequalitas pulsus est parilitas in quibusdam
 <lb/>pulsuum differentiis.</p>
 <p rend="indent">
 <lb/>Aequalis pulsus est qui continenter par existit. Vel
 <lb/>in quo omnes pulsuum differentiae pares manent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="219">
-
-
 <p rend="indent">
-<lb/>Inaequalitas pulsus est imparilitas pulsuum
+<lb/><label type="head"><num value="219">CCXΙΧ.</num></label> Inaequalitas pulsus est imparilitas pulsuum
 <lb/>in quibusdam differentiis quae ipsis pulsibus accidunt. Aliqui
 <lb/>vero ita. Inaequalis pulsus est in quo nunc vehementiores
 <lb/>fiunt ictus nunc imbecilliores. Rursus talli sic.
@@ -2433,10 +2059,8 @@
 <lb/>submissam atque infirmiorem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="220">
-
-
 <p rend="indent">
-<lb/>Bacchius Herophilius rhythmus, inquit, est
+<lb/><label type="head"><num value="220">CCCC.</num></label> Bacchius Herophilius rhythmus, inquit, est
 <pb n="19.409"/>
 <lb/>motus in temporibus certum obtinens ordinem. Zeno autem
 <lb/>Herophilius dixit: rythmus est ordo eorum temporum
@@ -2448,10 +2072,8 @@
 <lb/>ad ea in quibus contrahuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="221">
-
-
 <p rend="indent">
-<lb/>Eurhythmus pulsus est qui rhythmum servat
+<lb/><label type="head"><num value="221">CCCCI.</num></label> Eurhythmus pulsus est qui rhythmum servat
 <lb/>proprium aetati, naturae temperamento, anni temperati
 <lb/>ac reliquis omnibus circumstantiis.</p>
 <p rend="indent">
@@ -2462,10 +2084,8 @@
 <lb/>eurhythmo contrarius.</p>
 </div>
 <div type="textpart" subtype="chapter" n="222">
-
-
 <p rend="indent">
-<lb/>Pararhythmum pulsum vocamus qui quadantenus
+<lb/><label type="head"><num value="222">CCCCII.</num></label> Pararhythmum pulsum vocamus qui quadantenus
 <lb/>ad aetatem in qua consideratur prope accedit
 <lb/>babetque rhythmum, sed non omnino eum qui illi conveniat.
 
@@ -2476,25 +2096,19 @@
 <lb/>retinet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="223">
-
-
 <p rend="indent">
-<lb/>Tremulus pulsus est qui ictum refert non
+<lb/><label type="head"><num value="223">CCCCIII.</num></label> Tremulus pulsus est qui ictum refert non
 <lb/>aequalem nec minime inconcussum sed perinde quasi qui
 <lb/>moveatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="224">
-
-
 <p rend="indent">
-<lb/>Obliquatus pulsus est qui non constituta
+<lb/><label type="head"><num value="224">CCCCIV.</num></label> Obliquatus pulsus est qui non constituta
 <lb/>in rectum arteria praeter situm editur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="225">
-
-
 <p rend="indent">
-<lb/>Myurus est a situ quum partes quidem arteriae
+<lb/><label type="head"><num value="225">CCCCV.</num></label> Myurus est a situ quum partes quidem arteriae
 <lb/>superiores in arctum coguntur, inferiores vero contra
 <lb/>ibi quidem dilatantur amplius, superiores autem contrahuntur.
 <lb/>Complures myuritontem vocitant quum ab
@@ -2505,42 +2119,34 @@
 </div>
  <div type="textpart" subtype="chapter" n="226">
 <p rend="indent">
-<lb/>Dimotus est pulsus quum remissio quae
+<lb/><label type="head"><num value="226">CCCCVI.</num></label> Dimotus est pulsus quum remissio quae
 <pb n="19.411"/>
 <lb/>videtur arteriae non perfacta obitur, sed cunctatio pro
 <lb/>subductionis aut inhibiti spiritus quantitate, dein refusio
 <lb/>perfacta debitae fit contractionis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="227">
-
-
 <p rend="indent">
-<lb/>Araneosus pulsus parvus est, non firmatus,
+<lb/><label type="head"><num value="227">CCCCVII.</num></label> Araneosus pulsus parvus est, non firmatus,
 <lb/>sed qui araneae modo levi ab aura agitante movetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="228">
-
-
 <p rend="indent">
-<lb/>Intermittens pullus est quum in sy stolis
+<lb/><label type="head"><num value="228">CCCCVIII.</num></label> Intermittens pullus est quum in sy stolis
 <lb/>et dissidiis obeundis pulsus unius arteria tempus omittit.
 <lb/>Quidam ita : intermittens est pulsus in quo non ad duos
 <lb/>tantum sed ad tres vel etiam plures ictus diastolen lunam
 <lb/>vel duas vel plures relinquit arteria.</p>
 </div>
 <div type="textpart" subtype="chapter" n="229">
-
-
 <p rend="indent">
-<lb/>Intercidens pulsus est quum inter duos
+<lb/><label type="head"><num value="229">CCCCΙΧ.</num></label> Intercidens pulsus est quum inter duos
 <lb/>ictus qui ordine proprio concitantur, inde quidam ictus
 <lb/>medius intercidit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="230">
-
-
 <p rend="indent">
-<lb/>Deficiens pulsus dicitur in quo non ad
+<lb/><label type="head"><num value="230">CCXXX.</num></label> Deficiens pulsus dicitur in quo non ad
 <lb/>duos tantum arteria, sed ad tres etiam et ad plures ictus
 <lb/>immobilis perseverat. Alii hunc in modum. Deficiens est
 <lb/>qui a magnitudine incipiens ac vehementia magis ac magis
@@ -2551,38 +2157,30 @@
 <lb/>minor factus ut ad mipus declinaverit deficiens nuncupatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="231">
-
-
 <p rend="indent">
-<lb/>Caprisans pulsus, .est ubi arteria quum se
+<lb/><label type="head"><num value="231">CCXXXI.</num></label> Caprisans pulsus, .est ubi arteria quum se
 <lb/>distendisse apparuerit nec suerit omnino distenta ad alium
 <lb/>perculsum prius quam systoles visionem praebeat praecipitantius
 <lb/>transiliit; secunda autem fuit percussio facta vedementior.
 </p>
 </div>
 <div type="textpart" subtype="chapter" n="232">
-
-
 <p rend="indent">
- <lb/>Recurrens pulsus est qui ad quantum excurrit
+<lb/><label type="head"><num value="232">CCXXXII.</num></label> Recurrens pulsus est qui ad quantum excurrit
 <lb/>magnitudinis aut vehementiae in aliis rursus ad
 <lb/>tantumdem recurrit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="233">
-
-
 <p rend="indent">
-<lb/>Formicans pulsus est parvus, vacans, frequens,
+<lb/><label type="head"><num value="233">CCXXXIII.</num></label> Formicans pulsus est parvus, vacans, frequens,
 <lb/>obscurus, omnium ad extremum deductus. Aut
 <lb/>hoc modo : formicans est in quo circa digitos arteriae incumbentes
 <lb/>imqgor veluti formicae fit ambulantis; quamohrem
 <lb/>et parvus is est et obscurus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="234">
-
-
 <p rend="indent">
- <lb/>Phrenitis est mentis delirium cum febre
+<lb/><label type="head"><num value="234">CCXXXIV.</num></label> Phrenitis est mentis delirium cum febre
 <lb/>acuta ac floccorum collectu et mentis emotio et eorum
 <pb n="19.413"/>
 <lb/>quae secundum naturam sunt institutorum ipsius inferturbatio
@@ -2591,10 +2189,8 @@
 <lb/>maxima ex parte facta palpitatione.</p>
 </div>
 <div type="textpart" subtype="chapter" n="235">
-
-
 <p rend="indent">
-<lb/>Lethargus est ^delatio in somnum inexpugnabilis
+<lb/><label type="head"><num value="235">CCXXXV.</num></label> Lethargus est ^delatio in somnum inexpugnabilis
 <lb/>quae cum decoloratione et flatuoso oedemate
 <lb/>nec line ipsarum quoque solidarum partium ac pulsifici
 <lb/>spiritus imbecillitate provenit fere in obtusa febre ac
@@ -2602,18 +2198,14 @@
 <lb/>ex abscessu.</p>
 </div>
 <div type="textpart" subtype="chapter" n="236">
-
-
 <p rend="indent">
-<lb/>Convulsio est affectus qui nervis ac musculis
+<lb/><label type="head"><num value="236">CCXXXVI.</num></label> Convulsio est affectus qui nervis ac musculis
 <lb/>accidit quum interdum corpus totum, interdum pars
 <lb/>ejus voluntatis in jussit trahitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="237">
-
-
 <p rend="indent">
-<lb/>Tetanus est distentio rigiditasque in corpore
+<lb/><label type="head"><num value="237">CCXXXVII.</num></label> Tetanus est distentio rigiditasque in corpore
 <lb/>nervorum omnium et musculorum. Vel hunc in modum:
 <lb/>tetanus est convulsio in rectum quum collum ac
 <lb/>maxillae trahuntur, dentes cohaerent neque annuere collum
@@ -2623,36 +2215,28 @@
 <lb/>invitae in contraria trahuntur a musculis oppositis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="238">
-
-
 <p rend="indent">
-<lb/>Emprosthotonus est quum anterius trahi
+<lb/><label type="head"><num value="238">CCXXXVIII.</num></label> Emprosthotonus est quum anterius trahi
 <lb/>tu r colium ac retro flecti non valet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="239">
-
-
 <p rend="indent">
-<lb/>Opisthotonos est quum retro trahitur neque
+<lb/><label type="head"><num value="239">CCXXXΙΧ.</num></label> Opisthotonos est quum retro trahitur neque
 <lb/>deflecti in partem anteriorem potest. Vel: opisthotonus
 <lb/>est convulsio et contentio in posteriora cervicis nimirum
 <lb/>annuere non vasculis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="240">
-
-
 <p rend="indent">
-<lb/>Epilepsia est invasio mentis ac sensoriorum
+<lb/><label type="head"><num value="240">CCXL.</num></label> Epilepsia est invasio mentis ac sensoriorum
 <lb/>qua qui corripiuntur concidunt repente hi quidem cum
 <lb/>convulsione, illi vero citra convulsionem iisque insuper accidit,
 <lb/>ut spuma per os efferatur in remissione et declinatione
 <lb/>morbi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="241">
-
-
 <p rend="indent">
-<lb/>Catochus est mentis stupor cum corporis
+<lb/><label type="head"><num value="241">CCXLI.</num></label> Catochus est mentis stupor cum corporis
 <lb/>totius rigiditate. Oatochi tres sunt species; primus somniculosus
 <lb/>lethargo proximus ; alter vigilans cui affinis tetanus
 <lb/>est et quae praefocatio uteri appellatur ; tertium genus
@@ -2663,26 +2247,20 @@
 <lb/>catocho et phrenitide, quemadmodum et typhomania.</p>
 </div>
 <div type="textpart" subtype="chapter" n="242">
-
-
 <p rend="indent">
-<lb/>Paralysis affectus est quo voluntarius motus
+<lb/><label type="head"><num value="242">CCXLII.</num></label> Paralysis affectus est quo voluntarius motus
 <lb/>oblaeditur; is circa partes aut partem aliquam fit; perficitor
 <lb/>autem nervis musculisque affectis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="243">
-
-
 <p rend="indent">
-<lb/>Typhomania vel delirus lethargus vel lethargicum
+<lb/><label type="head"><num value="243">CCXLIII.</num></label> Typhomania vel delirus lethargus vel lethargicum
 <lb/>delirium est. Vel sic: typhomania mixtus est
 <lb/>ex phrenitide et lethargo affectus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="244">
-
-
 <p rend="indent">
-<lb/>Apoplexia est detentio. mentis cum ereptione
+<lb/><label type="head"><num value="244">CCXLIV.</num></label> Apoplexia est detentio. mentis cum ereptione
 <lb/>sensuum et corporis resolutione. Item: apoplexia
 <lb/>abolitio est in nervis omnibus sensus et motus. Vel:
 <lb/>apoplexia sensus motusque privatio in toto corpore est cum
@@ -2691,10 +2269,8 @@
 <lb/>Praecipui vero ventriculi sunt posterior et medius.</p>
 </div>
 <div type="textpart" subtype="chapter" n="245">
-
-
 <p rend="indent">
-<lb/>At apoplexia a paraplexia ut a parte totum
+<lb/><label type="head"><num value="245">CCXLV.</num></label> At apoplexia a paraplexia ut a parte totum
 <lb/>differt. Apoplectici namque prorsus etiam paraplectici
 <pb n="19.416"/>
 <lb/>sunt, paraplectici vero non omnino et apoplectici; disserunt
@@ -2704,27 +2280,21 @@
 <lb/>dextrae tantum partes aut sinistrae resolutione elanguescunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="246">
-
-
 <p rend="indent">
-<lb/>alania est alienatio mentis et evariatio a
+<lb/><label type="head"><num value="246">CCXLVI.</num></label> alania est alienatio mentis et evariatio a
 <lb/>rebus consuetis ac sanorum moribus sine fabre.</p>
 </div>
 <div type="textpart" subtype="chapter" n="247">
-
-
 <p rend="indent">
-<lb/>Melancholia est affectus qui mentem laedit
+<lb/><label type="head"><num value="247">CCXLVII.</num></label> Melancholia est affectus qui mentem laedit
 <lb/>non sine gravi animi molestia atque aversione a rebus
 <lb/>charissimis, fit line febre; nonnullis vero eorum si atra bilis
 <lb/>accesserit multa stomachum usque adeo infestat, ut et
 <lb/>evomatur simulque mens hoc modo vitietur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="248">
-
-
 <p rend="indent">
-<lb/>Cephalaea est affectus qui per quosdam
+<lb/><label type="head"><num value="248">CCXLVIII.</num></label> Cephalaea est affectus qui per quosdam
 <lb/>circuitus intolerabilem capitis dolorem affert; quocirca et
 <lb/>aures sonant et rubent oculi ac prominent; simul vero
 <lb/>distenduntur et ipsis aegrotis venae frontis et rubor in facie
@@ -2734,10 +2304,8 @@
 </div>
 <pb n="19.417"/>
 <div type="textpart" subtype="chapter" n="249">
-
-
 <p rend="indent">
-<lb/>Dolor capitis non inveteratus cephalalgia
+<lb/><label type="head"><num value="249">CCXLΙΧ.</num></label> Dolor capitis non inveteratus cephalalgia
 <lb/>est; inveteratus vero cephalaea. Si caput doleat repente
 <lb/>obvia quaque de causa aut etiam per plures dies cephalalgia
 <lb/>hic affectus nominatur: si vero longo tempore dolor
@@ -2746,18 +2314,14 @@
 <lb/>cephalaeam appellamus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="250">
-
-
 <p rend="indent">
-<lb/>Heterocrania est ubi modo in parte sinistra capitis
+<lb/><label type="head"><num value="250">CCL.</num></label> Heterocrania est ubi modo in parte sinistra capitis
 <lb/>modo in dextra dolor accedit ac quandoque intensiones
 <lb/>interdum remissiones insert.</p>
 </div>
 <div type="textpart" subtype="chapter" n="251">
-
-
 <p rend="indent">
-<lb/>Vertiginosi appellantur tenebricosi quibus obtenebrationes
+<lb/><label type="head"><num value="251">CCLI.</num></label> Vertiginosi appellantur tenebricosi quibus obtenebrationes
 <lb/>contingunt videturque iis circumferri caput
 <lb/>et lucis incerti ac vagi in tenebris splendores oculis obversari.
 <lb/>Vel tenebricosa vertigo est quum simul res conspectae
@@ -2769,89 +2333,69 @@
 </div>
 <pb n="19.418"/>
 <div type="textpart" subtype="chapter" n="252">
-
-
 <p rend="indent">
-<lb/>Catarrhus est multorum defluxus humorum
+<lb/><label type="head"><num value="252">CCLII.</num></label> Catarrhus est multorum defluxus humorum
 <lb/>per palati foramina et nares qui descendentes subjecta
 <lb/>Ioca laedunt, adeo ut cum excretione humorum is quoque
 <lb/>qui simul excernitur spiritus strepitum quendam faciat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="253">
-
-
 <p rend="indent">
-<lb/>Coryza est is humor tenuis et crudus qui
+<lb/><label type="head"><num value="253">CCLIII.</num></label> Coryza est is humor tenuis et crudus qui
 <lb/>per nares excernitur, catarrhus vero dicitur qui per palatum
 <lb/>defluit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="254">
-
-
 <p rend="indent">
-<lb/>Synanche est affectus colli acutus, difficilis,
+<lb/><label type="head"><num value="254">CCLIV.</num></label> Synanche est affectus colli acutus, difficilis,
 <lb/>qui aegrotum angit praefocatione. Aut ita: synanche est
 <lb/>phlegmone aliis extra collum ut partes tumescant, aliis
 <lb/>intra tonsillas ut simul partes quoque afficiantur spirabiles
 <lb/>et aegra spiratio consequatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="255">
-
-
 <p rend="indent">
-<lb/>Hydrophobia vel hydrophobus est affectus ex
+<lb/><label type="head"><num value="255">CCLV.</num></label> Hydrophobia vel hydrophobus est affectus ex
 <lb/>canis morsu furentis qui fit cum potus aversione, convulsione
 <lb/>et singultu. His vero et delirium supervenit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="256">
-
-
 <p rend="indent">
-<lb/>Bulimus affectus est quo sit cibi desiderium
+<lb/><label type="head"><num value="256">CCLVI.</num></label> Bulimus affectus est quo sit cibi desiderium
 <lb/>ex paucis intervallis; qui hoc detinentur et resolvuntur
 <pb n="19.419"/>
 <lb/>et concidunt et decolores fiunt; perfrigescunt iis extrema
 <lb/>corporis; premitur stomachus et pulsus obscurus fit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="257">
-
-
 <p rend="indent">
-<lb/>Phagedaena est constitutio qua multum appetentes
+<lb/><label type="head"><num value="257">CCLVII.</num></label> Phagedaena est constitutio qua multum appetentes
 <lb/>cibum fumentesque immodicum non ipsum retinent
 <lb/>lud ubi dejecerint rursus appetunt. Vel aliter: phagedaeuae
 <lb/>sunt multorum ciborum esus easque ipsas immoderatas
 <lb/>appetentius ex vitiatis humoribus fieri conceditur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="258">
-
-
 <p rend="indent">
-<lb/>Inflatio est quum spiritus vel flatus copiosior
+<lb/><label type="head"><num value="258">CCLVIII.</num></label> Inflatio est quum spiritus vel flatus copiosior
 <lb/>factus in stomacho detinetur ipsumque cum eo ventriculum
 <lb/>distendit, quo fit ut distributio impediatur alimenti.</p>
 </div>
 <div type="textpart" subtype="chapter" n="259">
-
-
 <p rend="indent">
-<lb/>Peripnenmonia est phlegmone pulmonis
+<lb/><label type="head"><num value="259">CCLΙΧ.</num></label> Peripnenmonia est phlegmone pulmonis
 <lb/>cum febre acuta et spirandi difficultate; rubent autem et
 <lb/>in ipsis aegrotantibus malae.</p>
 </div>
 <div type="textpart" subtype="chapter" n="260">
-
-
 <p rend="indent">
-<lb/>Phthisis est ulceratio pulmonis vel thoracis
+<lb/><label type="head"><num value="260">CCLX.</num></label> Phthisis est ulceratio pulmonis vel thoracis
 <lb/>vel faucium ut et tussiculae et^ debiles comitentur febres
 <lb/>et corpus contabescat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="261">
-
-
 <p rend="indent">
-<lb/>Differt phthisis a phthoë; phthisis enim quae
+<lb/><label type="head"><num value="261">CCLXI.</num></label> Differt phthisis a phthoë; phthisis enim quae
 <pb n="19.420"/>
 <lb/>communiter dicitur est omnis diminutio corporis ac colliquatio :
 <lb/>phthoë vero proprie dicitur corporis consumptio
@@ -2859,36 +2403,28 @@
 <lb/>est diminui.</p>
 </div>
 <div type="textpart" subtype="chapter" n="262">
-
-
 <p rend="indent">
-<lb/>Dyspnoici sunt in quibus spiritus velut per
+<lb/><label type="head"><num value="262">CCLXII.</num></label> Dyspnoici sunt in quibus spiritus velut per
 <lb/>angustas vias actus exspiratur inspiraturque. Vel: dyspnoea
 <lb/>est respirationis laesio quaedam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="263">
-
-
 <p rend="indent">
-<lb/>Asthma est affectus qui vehementem respirationis
+<lb/><label type="head"><num value="263">CCLXIII.</num></label> Asthma est affectus qui vehementem respirationis
 <lb/>accelerationem spirandique difficultatem infert
 <lb/>simulque aliquos sedere cogit ac resurgere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="264">
-
-
 <p rend="indent">
-<lb/>Pleuritis est dolor lateris ac succingentis
+<lb/><label type="head"><num value="264">CCLXIV.</num></label> Pleuritis est dolor lateris ac succingentis
 <lb/>membranae adusque claviculam et summum humerum exporrectus
 <lb/>cum febre acuta minimeque intermittente cum
 <lb/>dolore pungente simul et horrore et spirationis difficultate
 <lb/>et tussi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="265">
-
-
 <p rend="indent">
-<lb/>Cardiaca affectio est innati roboris liquefactio
+<lb/><label type="head"><num value="265">CCLXV.</num></label> Cardiaca affectio est innati roboris liquefactio
 <lb/>et languor. Fit plerumque prave affecto ore ventrienii
 <lb/>et stomacho cum sudoribus intolerandis ; sunt qui
 <pb n="19.421"/>
@@ -2897,10 +2433,8 @@
 <lb/>vel affectionem vel syncopen nominarint.</p>
 </div>
 <div type="textpart" subtype="chapter" n="266">
-
-
 <p rend="indent">
-<lb/>Cholera est affectus peracutus ac gravis
+<lb/><label type="head"><num value="266">CCLXVI.</num></label> Cholera est affectus peracutus ac gravis
 <lb/>qui per vomitus in catarrhum id est <hi rend="italic">destuxum</hi> protinus
 <lb/>hominem detulit aut ex alvi profluvio et multa excretione
 <lb/>in tormina atque non multo post in febres dysentericus
@@ -2911,34 +2445,26 @@
 <lb/>in aegris et pulsus minores obscurioresque.</p>
 </div>
 <div type="textpart" subtype="chapter" n="267">
-
-
 <p rend="indent">
-<lb/>Coeliaca affectio est alvi fluxio non recens
+<lb/><label type="head"><num value="267">CCLXVII.</num></label> Coeliaca affectio est alvi fluxio non recens
 <lb/>sed diuturna cum torminibus multis dejectionibus
 <lb/>corpore simul marcescente.</p>
 </div>
 <div type="textpart" subtype="chapter" n="268">
-
-
 <p rend="indent">
-<lb/>Diarrhoea copiosior fluxio est alvi diuturna
+<lb/><label type="head"><num value="268">CCLXVIII.</num></label> Diarrhoea copiosior fluxio est alvi diuturna
 <lb/>sine phlegmone et ulceratione.</p>
 </div>
 <div type="textpart" subtype="chapter" n="269">
-
-
 <p rend="indent">
-<lb/>Dysenteria est intestinorum exulceratio cum
+<lb/><label type="head"><num value="269">CCLXΙΧ.</num></label> Dysenteria est intestinorum exulceratio cum
 <pb n="19.422"/>
 <lb/>phlegmone et cruentorum aut faeci similium strigmentorum
 <lb/>excretione non fine alvi intestinorumque morsu ac cruciatu.</p>
 </div>
 <div type="textpart" subtype="chapter" n="270">
-
-
 <p rend="indent">
-<lb/>Teinesmus est affectus partes inferiores rectumque
+<lb/><label type="head"><num value="270">CCLXX.</num></label> Teinesmus est affectus partes inferiores rectumque
 <lb/>ipsum intestinum ita obsidens, ut exsurrectiones
 <lb/>cupiditatesque desidendi plures, paucae vero excretiones
 <lb/>fiant. Vel ut alii: teinesmus est recti intestini mordicatio
@@ -2947,10 +2473,8 @@
 <lb/>excernuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="271">
-
-
 <p rend="indent">
-<lb/>Leienteria est dysenteriae magna ex parte
+<lb/><label type="head"><num value="271">CCLXXI.</num></label> Leienteria est dysenteriae magna ex parte
 <lb/>comes affectus, quando ob factas ex ulceribus cicatrices
 <lb/>spissioribus, laevioribus indolentioribusque redditis intestinis
 <lb/>necesse est ut cibi prius quam assumpti concoquantur,
@@ -2960,52 +2484,40 @@
 <lb/>sunt quales devorati.</p>
 </div>
 <div type="textpart" subtype="chapter" n="272">
-
-
 <p rend="indent">
-<lb/>Colica affectio constitutio est coli intestini
+<lb/><label type="head"><num value="272">CCLXXII.</num></label> Colica affectio constitutio est coli intestini
 <pb n="19.423"/>
 <lb/>diuturna in qua spatiis temporis interjectis cruciatus intolerabiles
 <lb/>difficultatesque respirandi, sudores perfrictionesque
 <lb/>adoriuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="273">
-
-
 <p rend="indent">
-<lb/>Volvulus est phlegmone intestinorum quo
+<lb/><label type="head"><num value="273">CCLXXIII.</num></label> Volvulus est phlegmone intestinorum quo
 <lb/>malo nec flatus infra nec deiectiones transmittuntur, tormina
 <lb/>sequuntur vehementia cruciatusque intolerabiles.</p>
 </div>
 <div type="textpart" subtype="chapter" n="274">
-
-
 <p rend="indent">
-<lb/>Hepatici sunt quos jecoris dolor comitatur
+<lb/><label type="head"><num value="274">CCLXXIV.</num></label> Hepatici sunt quos jecoris dolor comitatur
 <lb/>diuturnus cum tumore et duritia et corporis decoloratione;
 <lb/>supervenit iis fabris ardens et lingua exarescit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="275">
-
-
 <p rend="indent">
-<lb/>Scirrho affectum jecur est quum ipsi tu- t
+<lb/><label type="head"><num value="275">CCLXXV.</num></label> Scirrho affectum jecur est quum ipsi tu- t
 <lb/>mor adest vehementer durus et tactui renitens nec dolorssicus.
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="276">
-
-
 <p rend="indent">
-<lb/>Icterus est bilis refusio in cutem, quo fit
+<lb/><label type="head"><num value="276">CCLXXVI.</num></label> Icterus est bilis refusio in cutem, quo fit
 <lb/>ut superficies tingatur luteaque fiat et vitietur cutis; albae
 <lb/>quoque ventris dejectiones fiunt eo morbo affectis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="277">
-
-
 <p rend="indent">
-<lb/>Lienosi sunt quibus contracta phlegmone
+<lb/><label type="head"><num value="277">CCLXXVII.</num></label> Lienosi sunt quibus contracta phlegmone
 <lb/>lienes ad naturae statum non redeunt nec phlegmone liberantur,
 
 <pb n="19.424"/>
@@ -3014,52 +2526,40 @@
 <lb/>nativus permutatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="278">
-
-
 <p rend="indent">
-<lb/>Scirrhus lienis est quum major lien et
+<lb/><label type="head"><num value="278">CCLXXVIII.</num></label> Scirrhus lienis est quum major lien et
 <lb/>durus admodum et renitens et tumore distentus subjacet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="279">
-
-
 <p rend="indent">
-<lb/>Hydrops anasarca est quum corpus totum
+<lb/><label type="head"><num value="279">CCLXXΙΧ.</num></label> Hydrops anasarca est quum corpus totum
 <lb/>intumuit oedemate atque humore circumluitur, pervertun-tur
 <lb/>et aegrotis pudenda, ciborum appetitus tollitur et febria
 <lb/>comitatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="280">
-
-
 <p rend="indent">
-<lb/>Hydrops ascites est in quo venter et forotum
+<lb/><label type="head"><num value="280">CCLXXX.</num></label> Hydrops ascites est in quo venter et forotum
 <lb/>cruraque intumescunt, superiores autem partes extenuantur
 <lb/>et graciles fiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="281">
-
-
 <p rend="indent">
-<lb/>Hydrops tympanias est quum in ventre
+<lb/><label type="head"><num value="281">CCLXXXI.</num></label> Hydrops tympanias est quum in ventre
 <lb/>plus flatus invenitur humoris minus ac si quis pulsaverit
 <lb/>sonus exauditur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="282">
-
-
 <p rend="indent">
-<lb/>Nephritis est renum phlegmone cum dolore
+<lb/><label type="head"><num value="282">CCLXXXII.</num></label> Nephritis est renum phlegmone cum dolore
 <lb/>vehementi, quandoque vero et urinae difficultate ; in
 <pb n="19.425"/>
 <lb/>qua fibrosa quaedam vel arenosa cum modico sanguine
 <lb/>excernuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="283">
-
-
 <p rend="indent">
-<lb/>Lithiasis est calculi generatio in vesica
+<lb/><label type="head"><num value="283">CCLXXXIII.</num></label> Lithiasis est calculi generatio in vesica
 <lb/>per quem urinae excretio prohibetur. Alio modo: lithiasis
 <lb/>est affectus. qui distentiones affert vesicae; simul vero et
 <lb/>imus venter distenditur nec raro ad praeputium ea distentio
@@ -3067,25 +2567,19 @@
 <lb/>quum provectus lapis vias excrementi intercluserit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="284">
-
-
 <p rend="indent">
- <lb/>Stanguria est excretio urinae guttatim
+<lb/><label type="head"><num value="284">CCLXXXIV.</num></label> Stanguria est excretio urinae guttatim
 <lb/>destillantis. Vel: stranguria affectus vocatur, quum quis
 <lb/>paucam urinam continenter excernit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="285">
-
-
 <p rend="indent">
-<lb/>Dysuria est difficultas ac molestia mingendi ;
+<lb/><label type="head"><num value="285">CCLXXXV.</num></label> Dysuria est difficultas ac molestia mingendi ;
 <lb/>stranguria vero quae guttatim fit mixtio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="286">
-
-
 <p rend="indent">
-<lb/>Ischuria absoluta prorsus urinae suppressio
+<lb/><label type="head"><num value="286">CCLXXXVI.</num></label> Ischuria absoluta prorsus urinae suppressio
 <lb/>est quae periculum affert. Octo vero modis supprimitur
 <lb/>aut retinetur urina, phlegmone, scirrho, sanguinis
 <lb/>grumo, resolutione, calculi procidentia, renum sympatina,
@@ -3094,10 +2588,8 @@
 </div>
 <pb n="19.426"/>
 <div type="textpart" subtype="chapter" n="287">
-
-
 <p rend="indent">
-<lb/>Fiunt in renibus calculi quando in
+<lb/><label type="head"><num value="287">CCLXXXVII.</num></label> Fiunt in renibus calculi quando in
 <lb/>corporibus illis humorum crassiorum copia cum febrili calore
 <lb/>coluerit. Vel aliter. Procreantur in renibus calculi
 <lb/>ubi collecta in iis cum proportionali febre crassiorum humorum
@@ -3105,28 +2597,22 @@
 <lb/>generationem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="288">
-
-
 <p rend="indent">
-<lb/>Gonorrboea est excretio feminis morbum
+<lb/><label type="head"><num value="288">CCLXXXVIII.</num></label> Gonorrboea est excretio feminis morbum
 <lb/>inserens cum quo tabescit corpus decoloraturque : fit
 <lb/>malum hoc vasorum seminalium robore soluto adeo ut
 <lb/>quodam modo debilibus ipsis factis semen non retineatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="289">
-
-
 <p rend="indent">
- <lb/>Satyriasis est affectus cum pudendi tentigine
+<lb/><label type="head"><num value="289">CCLXXXΙΧ.</num></label> Satyriasis est affectus cum pudendi tentigine
 <lb/>simul se tendentibus ejus particulis; sunt quibus et
 <lb/>feminis ejaculatio cum voluptate fiat; hi vero mente exturbantur,
 <lb/>nervorum tensio et seminis fit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="290">
-
-
 <p rend="indent">
-<lb/>Ischias est coxendicis dolor diuturnus nec
+<lb/><label type="head"><num value="290">CCXC.</num></label> Ischias est coxendicis dolor diuturnus nec
 <lb/>solutu facilis. Aut sic: ischias est morbus validum dolorem
 
 <pb n="19.427"/>
@@ -3134,43 +2620,33 @@
 <lb/>poplitem et suram descendat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="291">
-
-
 <p rend="indent">
-<lb/>Arthritis est phlegmone stabilis circa articulos
+<lb/><label type="head"><num value="291">CCXCI.</num></label> Arthritis est phlegmone stabilis circa articulos
 <lb/>consistens, dolorem ingerens vehementem nervis nimirum
 <lb/>affectis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="292">
-
-
 <p rend="indent">
-<lb/>Podagra est affectus qui circa pedes oritur
+<lb/><label type="head"><num value="292">CCXCII.</num></label> Podagra est affectus qui circa pedes oritur
 <lb/>et dolorem movet affectis nervis idque aliis cum ardore
 <lb/>aliis cum algore.</p>
 </div>
 <div type="textpart" subtype="chapter" n="293">
-
-
 <p rend="indent">
-<lb/>Scelotyrbe species est paralyseos qua quis
+<lb/><label type="head"><num value="293">CCXCIII.</num></label> Scelotyrbe species est paralyseos qua quis
 <lb/>rectus ambulare non potest et latus alias in rectum quandoque
 <lb/>sinistrum in dextrum aut dextrum in sinistrum circomfert,
 <lb/>interdum quoque pedem non attollit, sed attrahit
 <lb/>velut iis qui magnum quid adscendunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="294">
-
-
 <p rend="indent">
-<lb/>Perosis est privatio interturbatione naturalis
+<lb/><label type="head"><num value="294">CCXCIV.</num></label> Perosis est privatio interturbatione naturalis
 <lb/>functionis aut alicujus partis mutilatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="295">
-
-
 <p rend="indent">
-<lb/>Lepra est cutis mutatio in habitum qui
+<lb/><label type="head"><num value="295">CCXCV.</num></label> Lepra est cutis mutatio in habitum qui
 <lb/>praeter naturam sit cum asperitate et pruritibus doloribusque
 
 <pb n="19.428"/>
@@ -3178,42 +2654,32 @@
 <lb/>secus; interdum plures etiam corporis partes depascitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="296">
-
-
 <p rend="indent">
- <lb/>Elephas est affectus qui .cutem crassam ale
+<lb/><label type="head"><num value="296">CCXCVI.</num></label> Elephas est affectus qui .cutem crassam ale
 <lb/>que inaequabilem reddit, lividior adest tum cuti tum oculorum
 <lb/>albis ; extenduntur partes manuum ac pedum fum.mae
 <lb/>ex quibus lanies livida et foetida emanat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="297">
-
-
 <p rend="indent">
-<lb/>Impetigo est summae cutis asperitas cum
+<lb/><label type="head"><num value="297">CCXCVII.</num></label> Impetigo est summae cutis asperitas cum
 <lb/>multa prurigine.</p>
 </div>
 <div type="textpart" subtype="chapter" n="298">
-
-
 <p rend="indent">
-<lb/>Phlegmone in utero est quae cum veutris
+<lb/><label type="head"><num value="298">CCXCVIII.</num></label> Phlegmone in utero est quae cum veutris
 <lb/>atque inguinum cruciatu ac febribus fit, qua. et fineipiris
 <lb/>labor et tunsionum contractio adest. et oculorum dolor.</p>
 </div>
 <div type="textpart" subtype="chapter" n="299">
-
-
 <p rend="indent">
-<lb/>Abscessus est in utero quum intensus est
+<lb/><label type="head"><num value="299">CCXCΙΧ.</num></label> Abscessus est in utero quum intensus est
 <lb/>dolor pulsatque et usque ad imum ventrem..et inguina ac
 <lb/>lumbos pertingit et febres adoriuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="300">
-
-
 <p rend="indent">
-<lb/>Uteri suffocatio est affectus qui fit per uteri
+<lb/><label type="head"><num value="300">CCC.</num></label> Uteri suffocatio est affectus qui fit per uteri
 <lb/>adscenfum vel descenfum vocisque delictum affert; quare
 <lb/>nec manifesta iis respiratio fit. et attolluntur hypochondria,
 <lb/>pulsum hae quoque obscurum ac tardum habent.</p>
@@ -3221,10 +2687,8 @@
 </div>
 <pb n="19.429"/>
 <div type="textpart" subtype="chapter" n="301">
-
-
 <p rend="indent">
-<lb/>Muliebris fluor est humorum defluxus .per
+<lb/><label type="head"><num value="301">CCCI.</num></label> Muliebris fluor est humorum defluxus .per
 <lb/>uterum ad multum tempus perdurans qui ipsi ab excretione
 <lb/>fit. Albus fluor est quum alba sunt quae excernuntur,
 <lb/>apparent tumores in facie, partes quoque sub oculis
@@ -3239,179 +2703,133 @@
 <lb/>dolor incumbis et extenuantur mulieres.</p>
 </div>
 <div type="textpart" subtype="chapter" n="302">
-
-
 <p rend="indent">
-<lb/>Erysipelas in utero est ubi uterus perinde
+<lb/><label type="head"><num value="302">CCCII.</num></label> Erysipelas in utero est ubi uterus perinde
 <lb/>afficitur dolore atque ii qui intolerabiliter ab igne uruntur
 <lb/>ardorque ille in quibusdam alias ad alios uteri locos
 <lb/>transmigrat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="303">
-
-
 <p rend="indent">
-<lb/>Scleroma uteri est tumor duriusculos qui
+<lb/><label type="head"><num value="303">CCCIII.</num></label> Scleroma uteri est tumor duriusculos qui
 <pb n="19.430"/>
 <lb/>in parte uteri aliqua nascitur sitque plerumque ex phlegmonis
 <lb/>quae diu permansere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="304">
-
-
 <p rend="indent">
-<lb/>Scirrhus in utero affectio est in ejus aliqua
+<lb/><label type="head"><num value="304">CCCIV.</num></label> Scirrhus in utero affectio est in ejus aliqua
 <lb/>parte ut sit durities renitens, tumens, inaequalis magnaque
 <lb/>ex Parte vacans dolose.</p>
 </div>
 <div type="textpart" subtype="chapter" n="305">
-
-
 <p rend="indent">
-<lb/>Carcinoma in utero est tumor sine ulceratione
+<lb/><label type="head"><num value="305">CCCV.</num></label> Carcinoma in utero est tumor sine ulceratione
 <lb/>inaequalis, verrucosus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="306">
-
-
 <p rend="indent">
-<lb/>Pilosum novem sunt affectus, rhopalosis, Ilichophyia,
+<lb/><label type="head"><num value="306">CCCVI.</num></label> Pilosum novem sunt affectus, rhopalosis, Ilichophyia,
 <lb/>tbrausis, atrophia, ariditas, canities, fluxio, alopecia,
 <lb/>opina sis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="307">
-
-
 <p rend="indent">
-<lb/>Rhopalosis retentio est ac concretio summorussi
+<lb/><label type="head"><num value="307">CCCVII.</num></label> Rhopalosis retentio est ac concretio summorussi
 <lb/>pilorum individua cum eo ut non amplius crescant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="308">
-
-
 <p rend="indent">
-<lb/>Dichophyïa est dividua summorum pilorum
+<lb/><label type="head"><num value="308">CCCVIII.</num></label> Dichophyïa est dividua summorum pilorum
 <lb/>concretio qua ipsi haud amplius crescunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="309">
-
-
 <p rend="indent">
-<lb/>Thrausis est casus inaequabilis pilorum non
+<lb/><label type="head"><num value="309">CCCΙΧ.</num></label> Thrausis est casus inaequabilis pilorum non
 <lb/>dissimilis iis qui forfice abscissi sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="310">
-
-
 <p rend="indent">
-<lb/>Atrophia est gracilitas eorum nimia qui nec
+<lb/><label type="head"><num value="310">CCCX.</num></label> Atrophia est gracilitas eorum nimia qui nec
 <lb/>amplius augescant.</p>
 
 </div>
 <pb n="19.431"/>
 <div type="textpart" subtype="chapter" n="311">
-
-
 <p rend="indent">
-<lb/>Ariditas lanuginosa eorundem superficies est
+<lb/><label type="head"><num value="311">CCCXI.</num></label> Ariditas lanuginosa eorundem superficies est
 <lb/>pulvere conspersis assimilis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="312">
-
-
 <p rend="indent">
-<lb/>Canities est pilorum ante legitimam aetatem
+<lb/><label type="head"><num value="312">CCCXII.</num></label> Canities est pilorum ante legitimam aetatem
 <lb/>commutatio in album.</p>
 </div>
 <div type="textpart" subtype="chapter" n="313">
-
-
 <p rend="indent">
-<lb/>Fluxus est pilorum defluvium quae tabescentibus
+<lb/><label type="head"><num value="313">CCCXIII.</num></label> Fluxus est pilorum defluvium quae tabescentibus
 <lb/>magna ex parte atque ex diuturno morbo convalescentibus
 <lb/>evenit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="314">
-
-
 <p rend="indent">
-<lb/>Alopecia est mutatio coloris in albiorem
+<lb/><label type="head"><num value="314">CCCXIV.</num></label> Alopecia est mutatio coloris in albiorem
 <lb/>qua auri colorem reserantes pili radicitus decidunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="315">
-
-
 <p rend="indent">
-<lb/>Ophiasis mutatio est colotis antedictae similis
+<lb/><label type="head"><num value="315">CCCXV.</num></label> Ophiasis mutatio est colotis antedictae similis
 <lb/>ceterum ad majorem quam in illa pilorum densitatem
 <lb/>cum tortuosa denudatione.</p>
 </div>
 <div type="textpart" subtype="chapter" n="316">
-
-
 <p rend="indent">
-<lb/>Fracturarum octo in capite sunt disserentiae,
+<lb/><label type="head"><num value="316">CCCXVI.</num></label> Fracturarum octo in capite sunt disserentiae,
 <lb/>rhogme, eccope, engisoma, ecpiesma, camarosis, aposcepam
 <lb/>limus, thlalïna, apechema ; quidam vero thlasma
 <lb/>non admittunt et apechema rhogmae subiiciunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="317">
-
-
 <p rend="indent">
-<lb/>Rhogme est ossis intercisio in superficie
+<lb/><label type="head"><num value="317">CCCXVII.</num></label> Rhogme est ossis intercisio in superficie
 <lb/>recta et vel angusta vel sata.
 <pb n="19.432"/>
 <lb/><hi rend="italic">e, l</hi></p>
 </div>
 <div type="textpart" subtype="chapter" n="318">
-
-
 <p rend="indent">
-<lb/>Eccope divisio est calvariae qua os laefum
+<lb/><label type="head"><num value="318">CCCXVIII.</num></label> Eccope divisio est calvariae qua os laefum
 <lb/>refractum est.
 </p></div>
 <div type="textpart" subtype="chapter" n="319">
-
-
 <p rend="indent">
-<lb/>Engisoma pertusis est ossis quum pars affecta
+<lb/><label type="head"><num value="319">CCCXΙΧ.</num></label> Engisoma pertusis est ossis quum pars affecta
 <lb/>in profundum descendit ac super illaesum os corruit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="320">
-
-
 <p rend="indent">
-<lb/>Ecpiefma calvae in multas partes diffractio
+<lb/><label type="head"><num value="320">CCCXX.</num></label> Ecpiefma calvae in multas partes diffractio
 <lb/>est simul intrusae ossis partes in imum decubuerint ac
 <lb/>membranam innixa suo premant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="321">
-
-
 <p rend="indent">
-<lb/>Aposceparnismus abscissio est ossis quum
+<lb/><label type="head"><num value="321">CCCXXI.</num></label> Aposceparnismus abscissio est ossis quum
 <lb/>ejus pars decussa vuluerando fuerit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="322">
-
-
 <p rend="indent">
-<lb/>Camarosis est ossis perruptio quum ex alterutra
+<lb/><label type="head"><num value="322">CCCXXII.</num></label> Camarosis est ossis perruptio quum ex alterutra
 <lb/>refractum parte similem camerae figuram acceperit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="323">
-
-
 <p rend="indent">
-<lb/>Apagma est ossis superficiaria praecisio
+<lb/><label type="head"><num value="323">CCCXXIII.</num></label> Apagma est ossis superficiaria praecisio
 <lb/>aut etiam profunda in oppositis vulneris partibus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="324">
-
-
 <p rend="indent">
-<lb/>Thlasma est recessus ossis calvae in profundum
+<lb/><label type="head"><num value="324">CCCXXIV.</num></label> Thlasma est recessus ossis calvae in profundum
 <lb/>absque fractura fitque potissimum in puerili aetate,
 <lb/>planius vero quod dictum est intelliges si quod stanneis
 <lb/>vasis contingit contemplatus fueris.</p>
@@ -3419,17 +2837,13 @@
 </div>
 <pb n="19.433"/>
 <div type="textpart" subtype="chapter" n="325">
-
-
 <p rend="indent">
-<lb/>Triplices oculis oboriuntur affectus phlegmonae,
+<lb/><label type="head"><num value="325">CCCXXV.</num></label> Triplices oculis oboriuntur affectus phlegmonae,
 <lb/>fluxus, ulcerationes.</p>
 </div>
 <div type="textpart" subtype="chapter" n="326">
-
-
 <p rend="indent">
-<lb/>Quae oculis- ulceratio nes oboriuntur earum
+<lb/><label type="head"><num value="326">CCCXXVI.</num></label> Quae oculis- ulceratio nes oboriuntur earum
 <lb/>differentiae sunt albor, nubecula, inustum, fossula, pustola,
 <lb/>albugo, carbunculus, muscipula suppuratio, unguis,
 <lb/>uva, haec cum percussu eveniunt, at absque percussu ulcerationis
@@ -3438,177 +2852,131 @@
 <lb/>pinnula, encanthis, procidentia, hiatus, confusio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="327">
-
-
 <p rend="indent">
-<lb/>Phlegmone est tumor oculorum qui cum
+<lb/><label type="head"><num value="327">CCCXXVII.</num></label> Phlegmone est tumor oculorum qui cum
 <lb/>rubore et calore multo et motu difficili ac punctionibus
 <lb/>oboritur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="328">
-
-
 <p rend="indent">
-<lb/>Fluxus est tenuium humorum decorius
+<lb/><label type="head"><num value="328">CCCXXVIII.</num></label> Fluxus est tenuium humorum decorius
 <lb/>involuntarius qui coerceri non potest.</p>
 </div>
 <div type="textpart" subtype="chapter" n="329">
-
-
 <p rend="indent">
-<lb/>Ulceratio est ruptio circa corneam tunicam
+<lb/><label type="head"><num value="329">CCCXXΙΧ.</num></label> Ulceratio est ruptio circa corneam tunicam
 <lb/>quae vel ex ictu vel vehementi phlegmone oritur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="330">
-
-
 <p rend="indent">
-<lb/>Argemon est ulceratio quae in oculi nigro
+<lb/><label type="head"><num value="330">CCCCCC.</num></label> Argemon est ulceratio quae in oculi nigro
 <lb/>alba apparet; in albo autem subrubrae.</p>
 
 </div>
 <pb n="19.434"/>
 <div type="textpart" subtype="chapter" n="331">
-
-
 <p rend="indent">
-<lb/>Nephelium est caligo vel su persica ria
+<lb/><label type="head"><num value="331">CCCCCCI.</num></label> Nephelium est caligo vel su persica ria
 <lb/>ulceratio in nigro. Vel: nubecula ulcus est superficlarmm
 <lb/>albugine longe minus et album.</p>
 </div>
 <div type="textpart" subtype="chapter" n="332">
-
-
 <p rend="indent">
-<lb/>Epicauma est velut .ex igne crustata ulcerario
+<lb/><label type="head"><num value="332">CCCCCCII.</num></label> Epicauma est velut .ex igne crustata ulcerario
 <lb/>quae. nigro advenit neo permanet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="333">
-
-
 <p rend="indent">
-<lb/>Bothrium est cavum ulcus vel purum
+<lb/><label type="head"><num value="333">CCCCCCIII.</num></label> Bothrium est cavum ulcus vel purum
 <lb/>in nigro.</p>
 </div>
 <div type="textpart" subtype="chapter" n="334">
-
-
 <p rend="indent">
-<lb/>Phlyctis est abscessus in nigro humorem
+<lb/><label type="head"><num value="334">CCCCCCIV.</num></label> Phlyctis est abscessus in nigro humorem
 <lb/>continens cum phlegmoue et fluxu.</p>
 </div>
 <div type="textpart" subtype="chapter" n="335">
-
-
 <p rend="indent">
-<lb/>Leucoma cicatrix est crassa et profunda
+<lb/><label type="head"><num value="335">CCCCCCV.</num></label> Leucoma cicatrix est crassa et profunda
 <lb/>ulceri inducta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="336">
-
-
 <p rend="indent">
-<lb/>Myocephalum est exigua uvae tunicae
+<lb/><label type="head"><num value="336">CCCCCCVI.</num></label> Myocephalum est exigua uvae tunicae
 <lb/>porrectio in nigro muscae capiti similis per ulcerationem
 <lb/>facta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="337">
-
-
 <p rend="indent">
-<lb/>Carbunculus est crustosa ulceratio cum
+<lb/><label type="head"><num value="337">CCCCCCVII.</num></label> Carbunculus est crustosa ulceratio cum
 <lb/>pastu et fluxu interdum quoque et bubonibus et febre.</p>
 </div>
 <div type="textpart" subtype="chapter" n="338">
-
-
 <p rend="indent">
-<lb/>Suppuratio vel unguis est collectio puris
+<lb/><label type="head"><num value="338">CCCCCCVIII.</num></label> Suppuratio vel unguis est collectio puris
 <lb/>in nigro cum phlegmone fecundum iridem ungui consimilis.</p>
 
 </div>
 <pb n="19.435"/>
 <div type="textpart" subtype="chapter" n="339">
-
-
 <p rend="indent">
-<lb/>confusio ruptio est tunicarum quae in
+<lb/><label type="head"><num value="339">CCCCCCΙΧ.</num></label> confusio ruptio est tunicarum quae in
 <lb/>profundo sunt aliquando ex ictu, aliquando spontanea cum
 <lb/>profusione humorum et pupillae alteratione.</p>
 </div>
 <div type="textpart" subtype="chapter" n="340">
-
-
 <p rend="indent">
-<lb/>Mydriafis facultatis obscuratio visuriae est
+<lb/><label type="head"><num value="340">CCCXL.</num></label> Mydriafis facultatis obscuratio visuriae est
 <lb/>turbatis humoribus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="341">
-
-
 <p rend="indent">
-<lb/>Phthisis oculi est pupillae diminutio cum
+<lb/><label type="head"><num value="341">CCCXLI.</num></label> Phthisis oculi est pupillae diminutio cum
 <lb/>obscuratione.</p>
 </div>
 <div type="textpart" subtype="chapter" n="342">
-
-
 <p rend="indent">
-<lb/>v Atrophia est parvitas totius oculi et pupiliae
+<lb/><label type="head"><num value="342">CCCXLII.</num></label> v Atrophia est parvitas totius oculi et pupiliae
 <lb/>cum obscuratione.</p>
 </div>
 <div type="textpart" subtype="chapter" n="343">
-
-
 <p rend="indent">
-<lb/>Nyctalops est affectus dispositioque oculorum
+<lb/><label type="head"><num value="343">CCCXLIII.</num></label> Nyctalops est affectus dispositioque oculorum
 <lb/>sine manifesta causat sic autem affectis evenit ut
 <lb/>interdiu non cernant, noctu vero conspiciant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="344">
-
-
 <p rend="indent">
-<lb/>Glaucoma est naturalium humorum in
+<lb/><label type="head"><num value="344">CCCXLIV.</num></label> Glaucoma est naturalium humorum in
 <lb/>glaucum colorem mutatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="345">
-
-
 <p rend="indent">
-<lb/>Staphyloma est quod ru pupillae loco consurgit
+<lb/><label type="head"><num value="345">CCCXLV.</num></label> Staphyloma est quod ru pupillae loco consurgit
 <lb/>acino uvae simile.</p>
 </div>
 <div type="textpart" subtype="chapter" n="346">
-
-
 <p rend="indent">
-<lb/>Procidentia est quum ab ictu aliquo violento
+<lb/><label type="head"><num value="346">CCCXLVI.</num></label> Procidentia est quum ab ictu aliquo violento
 
 <pb n="19.436"/>
 <lb/>aut strangulatione cum continua febre vel capitis
 <lb/>dolore prolapsus oculus suerit;</p>
 </div>
 <div type="textpart" subtype="chapter" n="347">
-
-
 <p rend="indent">
-<lb/>Myopsis est affectus ab ortu contractus quo
+<lb/><label type="head"><num value="347">CCCXLVII.</num></label> Myopsis est affectus ab ortu contractus quo
 <lb/>propinqua cernimus remota vel parum vel nihil omnino.</p>
 </div>
 <div type="textpart" subtype="chapter" n="348">
-
-
 <p rend="indent">
-<lb/>Strabismus est paralysis musculorum
+<lb/><label type="head"><num value="348">CCCXLVIII.</num></label> Strabismus est paralysis musculorum
 <lb/>oculi non omnino sed quorundam, ob quam causam vel
 <lb/>sursum vel deorsum vel in latera nuunt oculi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="349">
-
-
 <p rend="indent">
-<lb/>Hippus affectio est .ab ortu prodiens qua
+<lb/><label type="head"><num value="349">CCCXLΙΧ.</num></label> Hippus affectio est .ab ortu prodiens qua
 <lb/>instabiles fiunt oculi ac semper moventur ; utique motum
 <lb/>sustinentes in concussu aut tremore assiduo consistentem :
 <lb/>hanc affectionem equum vocavit Hippocrates: affectus autem
@@ -3616,109 +2984,81 @@
 <lb/>complexus est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="350">
-
-
 <p rend="indent">
-<lb/>Chemosis est ambientis .oculum membranae
+<lb/><label type="head"><num value="350">CCCL.</num></label> Chemosis est ambientis .oculum membranae
 <lb/>quod album quoque appellatur affectus albae carni persimilis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="351">
-
-
 <p rend="indent">
-<lb/>In palpebris angulisque oculorum hi -contrahuntur
+<lb/><label type="head"><num value="351">CCCLI.</num></label> In palpebris angulisque oculorum hi -contrahuntur
 <lb/>affectus, scabies, pedicularis, hordeolum, grando,
 <pb n="19.437"/>
 <lb/>calcularis, aquula, pistris, aspredo, leporinus oculus, inversio,
 <lb/>rivulus, anchilops, uva.</p>
 </div>
 <div type="textpart" subtype="chapter" n="352">
-
-
 <p rend="indent">
-<lb/>Scabies est summarum oculi palpebrarum aut
+<lb/><label type="head"><num value="352">CCCLII.</num></label> Scabies est summarum oculi palpebrarum aut
 <lb/>angulorum erosio cum pruritu, quam acerrima fluxio progignit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="353">
-
-
 <p rend="indent">
-<lb/>Phtheiriasis est scabies circa palpebrarum
+<lb/><label type="head"><num value="353">CCCLIII.</num></label> Phtheiriasis est scabies circa palpebrarum
 <lb/>radices quae squamas furfuri similes dimittit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="354">
-
-
 <p rend="indent">
-<lb/>Chalaxa tuberculum est in palpebra milii
+<lb/><label type="head"><num value="354">CCCLIV.</num></label> Chalaxa tuberculum est in palpebra milii
 <lb/>magnitudine; eadem quoque est lithiasis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="355">
-
-
 <p rend="indent">
-<lb/>Hordeolum est humor concretus circa pat- .
+<lb/><label type="head"><num value="355">CCCLV.</num></label> Hordeolum est humor concretus circa pat- .
 <lb/>pebram oblongior hordeo similis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="356">
-
-
 <p rend="indent">
-<lb/>aspredo est durities et asperitas inaequalis
+<lb/><label type="head"><num value="356">CCCLVI.</num></label> aspredo est durities et asperitas inaequalis
 <lb/>quae intra palpebras oritur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="357">
-
-
 <p rend="indent">
-<lb/>Rbaea est angulorum carnis absumptio
+<lb/><label type="head"><num value="357">CCCLVII.</num></label> Rbaea est angulorum carnis absumptio
 <lb/>qua effluit lacryma.</p>
 </div>
 <div type="textpart" subtype="chapter" n="358">
-
-
 <p rend="indent">
-<lb/>Trichiasis catus est palpebrarum insitorumque
+<lb/><label type="head"><num value="358">CCCLVIII.</num></label> Trichiasis catus est palpebrarum insitorumque
 <lb/>iis pilorum ortus praeter naturam.</p>
 
 </div>
 <pb n="19.438"/>
 <div type="textpart" subtype="chapter" n="359">
-
-
 <p rend="indent">
-<lb/>Tres Trichiateos differentiae fiunt phalangosis,
+<lb/><label type="head"><num value="359">CCCLΙΧ.</num></label> Tres Trichiateos differentiae fiunt phalangosis,
 <lb/>catus, subortus, nonnulli distichium, id est duplicem
 <lb/>ordinem superinvehunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="360">
-
-
 <p rend="indent">
-<lb/>At distichia est alterius pilorum ordinis in
+<lb/><label type="head"><num value="360">CCCLX.</num></label> At distichia est alterius pilorum ordinis in
 <lb/>palpebrae margine exortus praeter naturam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="361">
-
-
 <p rend="indent">
-<lb/>En cambis est exsuperantia carnis in tnagno
+<lb/><label type="head"><num value="361">CCCLXI.</num></label> En cambis est exsuperantia carnis in tnagno
 <lb/>angulo.</p>
 </div>
 <div type="textpart" subtype="chapter" n="362">
-
-
 <p rend="indent">
-<lb/>Anchilops tumor in angulo magno consurgens
+<lb/><label type="head"><num value="362">CCCLXII.</num></label> Anchilops tumor in angulo magno consurgens
 <lb/>atque humoris collectionem habens non perforatus
 <lb/>aut simul perforatus. Dictus est anchilops quod prope
  <lb/>oculum sit; <foreign xml:lang="grc">ὤψ</foreign> enim oculus est, <foreign xml:lang="grc">ἄγχι</foreign> vero prope.</p>
 </div>
 <div type="textpart" subtype="chapter" n="363">
-
-
 <p rend="indent">
-<lb/>Suffusio est cor : etio aquosi humoris quae
+<lb/><label type="head"><num value="363">CCCLXIII.</num></label> Suffusio est cor : etio aquosi humoris quae
 <lb/>vitum magis minusve impedit. Differt suffusio a glaucomate
 <lb/>lum quod suffusio concretio sit diluti humoris, glaucoma
 <lb/>vero naturalium mutatio humorum in caesium colorem,
@@ -3726,56 +3066,42 @@
 <lb/>aliquantulum cernant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="364">
-
-
 <p rend="indent">
-<lb/>Hydatis substratae superiori palpebrae
+<lb/><label type="head"><num value="364">CCCLXIV.</num></label> Hydatis substratae superiori palpebrae
 <pb n="19.439"/>
 <lb/>pinguedinis augmentum est qua fluunt praeter naturam
 <lb/>oculi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="365">
-
-
 <p rend="indent">
-<lb/>Lagophthatrnum est superioris palpebrae retractio
+<lb/><label type="head"><num value="365">CCCLXV.</num></label> Lagophthatrnum est superioris palpebrae retractio
 <lb/>adeo ut oculum dum clauditur totum non contegat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="366">
-
-
 <p rend="indent">
-<lb/>Pterygium corporis excrescentia est quae
+<lb/><label type="head"><num value="366">CCCLXVI.</num></label> Pterygium corporis excrescentia est quae
 <lb/>corneae tunicae inhaerescit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="367">
-
-
 <p rend="indent">
- <lb/>Ectropion est subcrta caro in palpebra
+<lb/><label type="head"><num value="367">CCCLXVII.</num></label> Ectropion est subcrta caro in palpebra
 <lb/>quae palpebram ipsam tua gravitate foras evertit, Eversio
 <lb/>nis autem cauta est aut adnascens caro aut resolutio aut
 <lb/>cicatricis obductio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="368">
-
-
 <p rend="indent">
-<lb/>Ptilofis est palpebram meatus ab acerrimo
+<lb/><label type="head"><num value="368">CCCLXVIII.</num></label> Ptilofis est palpebram meatus ab acerrimo
 <lb/>fluxu.</p>
 </div>
 <div type="textpart" subtype="chapter" n="369">
-
-
 <p rend="indent">
-<lb/>Staphyloma est nigri tunicae extensio
+<lb/><label type="head"><num value="369">CCCLXΙΧ.</num></label> Staphyloma est nigri tunicae extensio
 <lb/>cum ardore arino uvae similis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="370">
-
-
 <p rend="indent">
-<lb/>S arco m a est carnis in narrnus praeter naturam
+<lb/><label type="head"><num value="370">CCCLXX.</num></label> S arco m a est carnis in narrnus praeter naturam
 <lb/>auctio. Est vero et polypus quoddam farcoma.
 <lb/>Porro dictum polypus. est a polypis piscibus; nam ut illi
 <lb/>multas habent propagines mollesque fiant atque augentur,
@@ -3784,103 +3110,77 @@
 <lb/>et opificia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="371">
-
-
 <p rend="indent">
-<lb/>Osaena est ulceratio in naribus profui .da
+<lb/><label type="head"><num value="371">CCCLXXI.</num></label> Osaena est ulceratio in naribus profui .da
 <lb/>tetri odoris atque halitum emittens.</p>
 </div>
 <div type="textpart" subtype="chapter" n="372">
-
-
 <p rend="indent">
-<lb/>Parotides abscessus fecundum aures sunt;
+<lb/><label type="head"><num value="372">CCCLXXII.</num></label> Parotides abscessus fecundum aures sunt;
 <lb/>hos nonnulli Castores appellarunt; succedunt ut plurimum
 <lb/>febribus atque ab iis liberant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="373">
-
-
 <p rend="indent">
-<lb/>Leuce corporis in album colorem mutatio
+<lb/><label type="head"><num value="373">CCCLXXIII.</num></label> Leuce corporis in album colorem mutatio
 <lb/>est praeter naturam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="374">
-
-
 <p rend="indent">
-<lb/>Herpes est ulcus quod ex bilis exsulerantia
+<lb/><label type="head"><num value="374">CCCLXXIV.</num></label> Herpes est ulcus quod ex bilis exsulerantia
 <lb/>fit et depastionem facit. Aliter: sicrpes est qui ferpons
 <lb/>vocatur, ex ulceratio superficiei cutis quae ab acri
 <lb/>bile procreatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="375">
-
-
 <p rend="indent">
-<lb/>Atb erema est tunica nervosis quae humorem
+<lb/><label type="head"><num value="375">CCCLXXV.</num></label> Atb erema est tunica nervosis quae humorem
 <lb/>pulti similem continet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="376">
-
-
 <p rend="indent">
-<lb/>Steatoma est auctio pinguedinis praeter
+<lb/><label type="head"><num value="376">CCCLXXVI.</num></label> Steatoma est auctio pinguedinis praeter
 <lb/>naturam congesta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="377">
-
-
 <p rend="indent">
-<lb/>Prosiartesis longiorum est membranarum
+<lb/><label type="head"><num value="377">CCCLXXVII.</num></label> Prosiartesis longiorum est membranarum
 <lb/>ad vicina corpora applicatio.</p>
 
 </div>
 <pb n="19.441"/>
 <div type="textpart" subtype="chapter" n="378">
-
-
 <p rend="indent">
-<lb/>Aneuryfma venosi vasis dilatatio est aut
+<lb/><label type="head"><num value="378">CCCLXXVIII.</num></label> Aneuryfma venosi vasis dilatatio est aut
 <lb/>dispersio spirituosae materiae tub carnem per dissultum.
 <lb/>fete distribuentis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="379">
-
-
 <p rend="indent">
-<lb/>Hyposphagma extra superficiem est persimile
+<lb/><label type="head"><num value="379">CCCLXXΙΧ.</num></label> Hyposphagma extra superficiem est persimile
 <lb/>vinici.</p>
 </div>
 <div type="textpart" subtype="chapter" n="380">
-
-
 <p rend="indent">
-<lb/>Ganglium concretio est nervi praeter
+<lb/><label type="head"><num value="380">CCCLXXX.</num></label> Ganglium concretio est nervi praeter
 <lb/>naturam quae in unum corpus coaluit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="381">
-
-
 <p rend="indent">
-<lb/>Aphtha superficiaria est ulceratio quae in ore
+<lb/><label type="head"><num value="381">CCCLXXXI.</num></label> Aphtha superficiaria est ulceratio quae in ore
 <lb/>gignitur: visitur autem haec in puerulis potissimum ulceratio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="382">
-
-
 <p rend="indent">
-<lb/>Phlegmone est tumor cum rubore et duritia
+<lb/><label type="head"><num value="382">CCCLXXXII.</num></label> Phlegmone est tumor cum rubore et duritia
 <lb/>pulsitantes afferens dolores dicta quod affectus ea
 <lb/>locus veluti uratur aut tumor dolens ac renitens cum
 <lb/>rubore citra febrem. Vel: inflammatio est tumor dolens
 <lb/>durus, renitens, ex sanguineo humore tuum habens ortum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="383">
-
-
 <p rend="indent">
-<lb/>Erysipelas est ruhedo cum ignita inflammatione
+<lb/><label type="head"><num value="383">CCCLXXXIII.</num></label> Erysipelas est ruhedo cum ignita inflammatione
 <lb/>febres interdum horroresque infereus. Vel
 <lb/>ignis faces est tumor rubens, dolorificus qui a bilioso tauguine
 <lb/>generationem obtinet.</p>
@@ -3888,268 +3188,196 @@
 </div>
 <pb n="19.442"/>
 <div type="textpart" subtype="chapter" n="384">
-
-
 <p rend="indent">
-<lb/>carbunculus est ex magis melancholico
+<lb/><label type="head"><num value="384">CCCLXXXIV.</num></label> carbunculus est ex magis melancholico
 <lb/>putrefacto sanguine rumor ulcerosus. Vel aliter: car bunculus
 <lb/>ulcus est erustosum cum multa ambientium corporum
 <lb/>incensione; qui ex calido. quidem fervore, materra vero.
 <lb/>ronsistentia crassa originem habet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="385">
-
-
 <p rend="indent">
-<lb/>Scirrhus ist tumor corporum cum duritia
+<lb/><label type="head"><num value="385">CCCLXXXV.</num></label> Scirrhus ist tumor corporum cum duritia
 <lb/>et pondere et motus ac sensus difficultate.</p>
 </div>
 <div type="textpart" subtype="chapter" n="386">
-
-
 <p rend="indent">
-<lb/>Oedema tumor est laxus ac mollis qui
+<lb/><label type="head"><num value="386">CCCLXXXVI.</num></label> Oedema tumor est laxus ac mollis qui
 <lb/>premendo dolore vacat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="387">
-
-
 <p rend="indent">
-<lb/>Abscessus est corporum ex phlegmone
+<lb/><label type="head"><num value="387">CCCLXXXVII.</num></label> Abscessus est corporum ex phlegmone
 <lb/>in pus transmutatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="388">
-
-
 <p rend="indent">
-<lb/>Mutilatio est desectus particulae in
+<lb/><label type="head"><num value="388">CCCLXXXVIII.</num></label> Mutilatio est desectus particulae in
 <lb/>partu aliqua corporis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="389">
-
-
 <p rend="indent">
-<lb/>callus est substantia lapidosa, dura ac
+<lb/><label type="head"><num value="389">CCCLXXXΙΧ.</num></label> callus est substantia lapidosa, dura ac
 <lb/>renitens.</p>
 </div>
 <div type="textpart" subtype="chapter" n="390">
-
-
 <p rend="indent">
-<lb/>Hydrocephalon est humoris aquosi aut faeculenti
+<lb/><label type="head"><num value="390">CCCXC.</num></label> Hydrocephalon est humoris aquosi aut faeculenti
 <lb/>sanguinis collectio in parte corporum aliqua eorum
 <lb/>quae caput concinnant.</p>
 
 </div>
 <pb n="19.443"/>
 <div type="textpart" subtype="chapter" n="391">
-
-
 <p rend="indent">
-<lb/>Favus ulcus est assidua habens foramina ex
+<lb/><label type="head"><num value="391">CCCXCI.</num></label> Favus ulcus est assidua habens foramina ex
 <lb/>quibus humor melli. similis excernitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="392">
-
-
 <p rend="indent">
-<lb/>Phagedaena est ulcus quod propinqua et
+<lb/><label type="head"><num value="392">CCCXCII.</num></label> Phagedaena est ulcus quod propinqua et
 <lb/>adjacentia erodit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="393">
-
-
 <p rend="indent">
-<lb/>carcinoma est tumor malignus et praedurus
+<lb/><label type="head"><num value="393">CCCXCIII.</num></label> carcinoma est tumor malignus et praedurus
 <lb/>sine ulcere a cancro animali dictus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="394">
-
-
 <p rend="indent">
-<lb/>Diouysisci sunt osseae eminentiae quae
+<lb/><label type="head"><num value="394">CCCXCIV.</num></label> Diouysisci sunt osseae eminentiae quae
 <lb/>prope tempora nascuntur; dicuntur autem et cornua a corurgeris
 <lb/>animalibus vocata.</p>
 </div>
 <div type="textpart" subtype="chapter" n="395">
-
-
 <p rend="indent">
-<lb/>Teredo pertusio est ossis ex corruptione;
+<lb/><label type="head"><num value="395">CCCXCV.</num></label> Teredo pertusio est ossis ex corruptione;
 <lb/>affectui nomen ab accidentibus foraminibus datum est
 <lb/>quasi teredo quaedam existat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="396">
-
-
 <p rend="indent">
-<lb/>Aden collectio sicca quaedam et carnosa
+<lb/><label type="head"><num value="396">CCCXCVI.</num></label> Aden collectio sicca quaedam et carnosa
 <lb/>est vel camela convolutio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="397">
-
-
 <p rend="indent">
-<lb/>Struma caro est sicca quae non facile
+<lb/><label type="head"><num value="397">CCCXCVII.</num></label> Struma caro est sicca quae non facile
 <lb/>solvitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="398">
-
-
 <p rend="indent">
-<lb/>Bron.chocele tumor est gutturi adnascena
+<lb/><label type="head"><num value="398">CCCXCVIII.</num></label> Bron.chocele tumor est gutturi adnascena
 <lb/>differtque ab eo qui in scroto progignitur.</p>
 
 </div>
 <pb n="19.444"/>
 <div type="textpart" subtype="chapter" n="399">
-
-
 <p rend="indent">
-<lb/>Ancyle est eorum qui in cervice aut art
+<lb/><label type="head"><num value="399">CCCXCΙΧ.</num></label> Ancyle est eorum qui in cervice aut art
 <lb/>ic utis tuus tendonum compressio qua functio interturbatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="400">
-
-
 <p rend="indent">
-<lb/>Acrochordon verruca est vel eruptio orbicularem
+<lb/><label type="head"><num value="400">CD.</num></label> Acrochordon verruca est vel eruptio orbicularem
 <lb/>angustamque obtinens basin.</p>
 </div>
 <div type="textpart" subtype="chapter" n="401">
-
-
 <p rend="indent">
-<lb/>Myrmecia tuberculum est asperum non angustam
+<lb/><label type="head"><num value="401">CDI.</num></label> Myrmecia tuberculum est asperum non angustam
 <lb/>habens basse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="402">
-
-
 <p rend="indent">
-<lb/>Thymus asperae carnis extuleratis est quae
+<lb/><label type="head"><num value="402">CDII.</num></label> Thymus asperae carnis extuleratis est quae
 <lb/>esculentis thymis similis circa genitale ac sedem oritur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="403">
-
-
 <p rend="indent">
-<lb/>Gynaecomasthon subjectae mammis pinguedinis
+<lb/><label type="head"><num value="403">CDIII.</num></label> Gynaecomasthon subjectae mammis pinguedinis
 <lb/>incrementum est praeter naturam:</p>
 </div>
 <div type="textpart" subtype="chapter" n="404">
-
-
 <p rend="indent">
-<lb/>Exomphalon prominentia est umbilici quae
+<lb/><label type="head"><num value="404">CDIV.</num></label> Exomphalon prominentia est umbilici quae
 <lb/>diversis ex causis oboritur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="405">
-
-
 <p rend="indent">
-<lb/>rEpiploomphalon est omenti in umbilicum
+<lb/><label type="head"><num value="405">CDV.</num></label> rEpiploomphalon est omenti in umbilicum
 <lb/>decursus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="406">
-
-
 <p rend="indent">
-<lb/>Enteromphalon esu intestini in umbilicum
+<lb/><label type="head"><num value="406">CDVI.</num></label> Enteromphalon esu intestini in umbilicum
 <lb/>decurfus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="407">
-
-
 <p rend="indent">
-<lb/>Hydromphalon coacervatio in umbilico est
+<lb/><label type="head"><num value="407">CDVII.</num></label> Hydromphalon coacervatio in umbilico est
 <lb/>lenti humoris qui fusi tunica quoque interdum continuatur.</p>
 
 </div>
 <pb n="19.445"/>
 <div type="textpart" subtype="chapter" n="408">
-
-
 <p rend="indent">
-<lb/>Poromphalon est concretio tophi in umbilico.</p>
+<lb/><label type="head"><num value="408">CDVIII.</num></label> Poromphalon est concretio tophi in umbilico.</p>
 </div>
 <div type="textpart" subtype="chapter" n="409">
-
-
 <p rend="indent">
-<lb/>Sarcomphalort incrementum carnis praetor
+<lb/><label type="head"><num value="409">CDΙΧ.</num></label> Sarcomphalort incrementum carnis praetor
 <lb/>naturam est in umbilico vel mitis vel malignae.</p>
 </div>
 <div type="textpart" subtype="chapter" n="410">
-
-
 <p rend="indent">
-<lb/>Pneumomphalon dilatatio est umbilici.</p>
+<lb/><label type="head"><num value="410">CDX.</num></label> Pneumomphalon dilatatio est umbilici.</p>
 </div>
 <div type="textpart" subtype="chapter" n="411">
-
-
 <p rend="indent">
-<lb/>In contecto est abscessus quum corporum quae
+<lb/><label type="head"><num value="411">CDXI.</num></label> In contecto est abscessus quum corporum quae
 <lb/>sunt in profundo aut viscerum in pus fit mutatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="412">
-
-
 <p rend="indent">
-<lb/>Phygetblon abscessus est nascens in inguine.</p>
+<lb/><label type="head"><num value="412">CDXII.</num></label> Phygetblon abscessus est nascens in inguine.</p>
 </div>
 <div type="textpart" subtype="chapter" n="413">
-
-
 <p rend="indent">
-<lb/>Hypospadias est affectus in quo glans colis
+<lb/><label type="head"><num value="413">CDXIII.</num></label> Hypospadias est affectus in quo glans colis
 <lb/>retracta est. Vel : affectus est in quo colis gtans impendet
 <lb/>et uretrae foramen substernitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="414">
-
-
 <p rend="indent">
-<lb/>Lipodermus est tegentis glandem pelliculae
+<lb/><label type="head"><num value="414">CDXIV.</num></label> Lipodermus est tegentis glandem pelliculae
 <lb/>adeo ut distrahi non amplius possit. Quod autem tegit
 <lb/>glandem praeputium vel praeputii summa vocatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="415">
-
-
 <p rend="indent">
-<lb/>Phimus est meatuum naturalium praeclusio.
+<lb/><label type="head"><num value="415">CDXV.</num></label> Phimus est meatuum naturalium praeclusio.
 <lb/>Phimi duae sunt differentiae; vel enim ex natura fit vel
 <lb/>postea gignitur ulceratione antegressa.</p>
 </div>
 <div type="textpart" subtype="chapter" n="416">
-
-
 <p rend="indent">
-<lb/>Paraphimosis est quum retracto glanuis
+<lb/><label type="head"><num value="416">CDXVI.</num></label> Paraphimosis est quum retracto glanuis
 <lb/>nervo praeputium deduci praeterea nequit.</p>
 
 </div>
 <pb n="19.446"/>
 <div type="textpart" subtype="chapter" n="417">
-
-
 <p rend="indent">
-<lb/>Peritome ablatio est cutis glandem obtegentis.</p>
+<lb/><label type="head"><num value="417">CDXVII.</num></label> Peritome ablatio est cutis glandem obtegentis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="418">
-
-
 <p rend="indent">
-<lb/>Rhagas divisio est labra obtinens callo
+<lb/><label type="head"><num value="418">CDXVIII.</num></label> Rhagas divisio est labra obtinens callo
 <lb/>indurata.</p>
 </div>
 <div type="textpart" subtype="chapter" n="419">
-
-
 <p rend="indent">
-<lb/>Haemorrhois dilatatio est valorum quae fiedem
+<lb/><label type="head"><num value="419">CDXΙΧ.</num></label> Haemorrhois dilatatio est valorum quae fiedem
 <lb/>contexunt dicta quod tanguis per eam fluat. Differentiae
 <lb/>quinque fiunt haemorrhoidum a magnitudine, muititudine,
 <lb/>figura, loco, constitutione. A magnitudine quod
@@ -4161,17 +3389,13 @@
 <lb/>V constitutione quoniam aliae mites sunt, aliae malignae.</p>
 </div>
 <div type="textpart" subtype="chapter" n="420">
-
-
 <p rend="indent">
-<lb/>condyloma est extuberatio quae cum pnlegmone
+<lb/><label type="head"><num value="420">CDXX.</num></label> condyloma est extuberatio quae cum pnlegmone
 <lb/>in rugosis ani parte consurgit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="421">
-
-
 <p rend="indent">
-<lb/>Fistula ductus est callosus, angustus et ohlongue,
+<lb/><label type="head"><num value="421">CDXXI.</num></label> Fistula ductus est callosus, angustus et ohlongue,
 <lb/>interdum etiam obliquus osculum habens cui cicatrix
 
 <pb n="19.447"/>
@@ -4183,32 +3407,24 @@
 <lb/>profundo obtinent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="422">
-
-
 <p rend="indent">
-<lb/>Tres circa scrotum fiunt affectus, ramex,
+<lb/><label type="head"><num value="422">CDXXII.</num></label> Tres circa scrotum fiunt affectus, ramex,
 <lb/>scabies, detritio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="423">
-
-
 <p rend="indent">
-<lb/>Tumores in tcroto novem consistunt, hydrocele,
+<lb/><label type="head"><num value="423">CDXXIII.</num></label> Tumores in tcroto novem consistunt, hydrocele,
 <lb/>enterocele, hydrenterocele, cirfocele, porocele,
 <lb/>epiplocele, enterepiplocele, enteroporocele, hydrocirsocele.</p>
 </div>
 <div type="textpart" subtype="chapter" n="424">
-
-
 <p rend="indent">
-<lb/>Hydrocele est lenti humoris in parte scroti
+<lb/><label type="head"><num value="424">CDXXIV.</num></label> Hydrocele est lenti humoris in parte scroti
 <lb/>collectio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="425">
-
-
 <p rend="indent">
-<lb/>Enterocele fit intestini in scrotum paulatim
+<lb/><label type="head"><num value="425">CDXXV.</num></label> Enterocele fit intestini in scrotum paulatim
 <lb/>vel fiemel delapsus. Enteroceles cautae sunt antecedens
 <lb/>quidem intensio vel ictus, continens autem iterata extensio
 <lb/>aut ruptio peritonaei.</p>
@@ -4216,107 +3432,79 @@
 </div>
 <pb n="19.448"/>
 <div type="textpart" subtype="chapter" n="426">
-
-
 <p rend="indent">
-<lb/>Hydre n tero cele est delapsus intestini minusque
+<lb/><label type="head"><num value="426">CDXXVI.</num></label> Hydre n tero cele est delapsus intestini minusque
 <lb/>elaborati humoris collectio in scroto.</p>
 </div>
 <div type="textpart" subtype="chapter" n="427">
-
-
 <p rend="indent">
-<lb/>Cirfocele est dilatatio amplificatioque quotundam
+<lb/><label type="head"><num value="427">CDXXVII.</num></label> Cirfocele est dilatatio amplificatioque quotundam
 <lb/>aut omnium quae testem alunt vastorum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="428">
-
-
 <p rend="indent">
-<lb/>Hydrocirsiocele est dilatata. testem uutricautium
+<lb/><label type="head"><num value="428">CDXXVIII.</num></label> Hydrocirsiocele est dilatata. testem uutricautium
 <lb/>vastorum et lenti humoris in scroti aliqua parte
 <lb/>collectio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="429">
-
-
 <p rend="indent">
-<lb/>Porocele est concretio calli in aliqua parte
+<lb/><label type="head"><num value="429">CDXXΙΧ.</num></label> Porocele est concretio calli in aliqua parte
 <lb/>lcroti.</p>
 </div>
 <div type="textpart" subtype="chapter" n="430">
-
-
 <p rend="indent">
-<lb/>Epiplocele lapsus omenti est in partem scroti.</p>
+<lb/><label type="head"><num value="430">CDXXX.</num></label> Epiplocele lapsus omenti est in partem scroti.</p>
 </div>
 <div type="textpart" subtype="chapter" n="431">
-
-
 <p rend="indent">
-<lb/>Enteroeprprocele in scroti partem- intestini
+<lb/><label type="head"><num value="431">CDXXXI.</num></label> Enteroeprprocele in scroti partem- intestini
 <lb/>atque omenti catus est.
 </p></div>
 <div type="textpart" subtype="chapter" n="432">
-
-
 <p rend="indent">
-<lb/>Cele tumor est qui dictorum aliquod continet;
+<lb/><label type="head"><num value="432">CDXXXII.</num></label> Cele tumor est qui dictorum aliquod continet;
 <lb/>omnis enim in scroto tumor ramex nuncupatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="433">
-
-
 <p rend="indent">
-<lb/>Crypforchis est testiculi veltesticulorum
+<lb/><label type="head"><num value="433">CDXXXIII.</num></label> Crypforchis est testiculi veltesticulorum
 <lb/>recessus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="434">
-
-
 <p rend="indent">
-<lb/>Rhacosis multa scroti extensio est.</p>
+<lb/><label type="head"><num value="434">CDXXXIV.</num></label> Rhacosis multa scroti extensio est.</p>
 
 </div>
 <pb n="19.449"/>
 <div type="textpart" subtype="chapter" n="435">
-
-
 <p rend="indent">
-<lb/>Psoriasis multa durities est scroti cum intensa
+<lb/><label type="head"><num value="435">CDXXXV.</num></label> Psoriasis multa durities est scroti cum intensa
 <lb/>prurigine quandoque veto et ulceratione.</p>
 </div>
 <div type="textpart" subtype="chapter" n="436">
-
-
 <p rend="indent">
-<lb/>Gangraena est corporis mutatio a naturali
+<lb/><label type="head"><num value="436">CDXXXVI.</num></label> Gangraena est corporis mutatio a naturali
 <lb/>cujusque habitu in alienum atque exstinctio cum ulceratione
 <lb/>et citra ulcerationem. Gignitur autem gangraena
 <lb/>vel plaga procedente vel dum exstinctio fit aut phlegmone
 <lb/>ex chirurgia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="437">
-
-
 <p rend="indent">
-<lb/>Dracunculus est ulcus quod a parte
+<lb/><label type="head"><num value="437">CDXXXVII.</num></label> Dracunculus est ulcus quod a parte
 <lb/>propinqua ad ipsum nervi delationem habet. Dictus antem
 <lb/>est quod nervus movendo corpore in ulcus recedat
 <lb/>in eoque occultetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="438">
-
-
 <p rend="indent">
-<lb/>Clavus est ulcus in pedis planta orbiculatum
+<lb/><label type="head"><num value="438">CDXXXVIII.</num></label> Clavus est ulcus in pedis planta orbiculatum
 <lb/>quod callum contraxit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="439">
-
-
 <p rend="indent">
-<lb/>Semen, ut Plato ac. Diocles autumant,
+<lb/><label type="head"><num value="439">CDXXXΙΧ.</num></label> Semen, ut Plato ac. Diocles autumant,
 <lb/>ex cerebro et dorsi medulla excernitur; ut autem Praxagoras
 <lb/>atque Democritus praeterea et Hippocrates censent
 <lb/>ex toto corpore. Democritus quidem quum ait; homines
@@ -4329,10 +3517,8 @@
 <lb/>ven ereis congressibus excernitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="440">
-
-
 <p rend="indent">
-<lb/>Quaesitum est utrum femina femen emittat
+<lb/><label type="head"><num value="440">CDCD.</num></label> Quaesitum est utrum femina femen emittat
 <lb/>ut et mas femen promit. Etenim eandem libidinem habet
 <lb/>femina eorundemque morborum est particeps ac plane
 <lb/>ex dissectione seminariis meatibus praedita esse ostenditur.
@@ -4345,10 +3531,8 @@
 <lb/><hi rend="italic">dein spiritum concipit.</hi></p>
 </div>
 <div type="textpart" subtype="chapter" n="441">
-
-
 <p rend="indent">
-<lb/>Differt -femen a genitura quod femen in
+<lb/><label type="head"><num value="441">CDCDI.</num></label> Differt -femen a genitura quod femen in
 <lb/>seminariis sit meatibus, genitura vero quod jam excretum
 <pb n="19.451"/>
 <lb/>est; et ut Asclepiades loquitur semen quidem iis quoque
@@ -4356,10 +3540,8 @@
 <lb/>vero semen nondum concoctum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="442">
-
-
 <p rend="indent">
-<lb/>Infoecunditatis duplex causa est, altera in
+<lb/><label type="head"><num value="442">CDCDII.</num></label> Infoecunditatis duplex causa est, altera in
 <lb/>viro, altera in muliere, et utraque multiplex. In femina
 <lb/>igitur causa est si perfrigidum uterum vel praepinguem
 <lb/>mulier habeat; in mare vero quum is vel subspado vel
@@ -4367,27 +3549,21 @@
 <lb/>correptus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="443">
-
-
 <p rend="indent">
-<lb/>Non est pars foetae foetus in utero aut
+<lb/><label type="head"><num value="443">CDCDIII.</num></label> Non est pars foetae foetus in utero aut
 <lb/>certe ipso prorsus intereunte gravidam quoque interire
 <lb/>necessario oportet vel partu edito laedi in integri^ functionibus,
 <lb/>quod pars desit atque ea corpus spolietur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="444">
-
-
 <p rend="indent">
-<lb/>Nutritur foetus per fecundas alimentum
+<lb/><label type="head"><num value="444">CDCDIV.</num></label> Nutritur foetus per fecundas alimentum
 <lb/>excipiens attrahensque. At non per os, sed per umbilicum
 <lb/>alitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="445">
-
-
 <p rend="indent">
-<lb/>Foetum quidam animal esse, quidam non
+<lb/><label type="head"><num value="445">CDCDV.</num></label> Foetum quidam animal esse, quidam non
 <pb n="19.452"/>
 <lb/>esse prodiderunt. Quotquot igitur animal ipsum esse dixerunt
 <lb/>ex motu conmutarunt animal ipsum exsistere. Quamdoquidem
@@ -4411,20 +3587,16 @@
 </div>
 <pb n="19.453"/>
 <div type="textpart" subtype="chapter" n="446">
-
-
 <p rend="indent">
- <lb/>Gignitur mas, ut nonnulli opinantur, postquam
+<lb/><label type="head"><num value="446">CDCDVI.</num></label> Gignitur mas, ut nonnulli opinantur, postquam
 <lb/>ex dextra parte avulsum semen in uterum conjectum
 <lb/>est, femina quum ex sinistra ; alii vero pro peculiari
 <lb/>feminis temperamento a calore vel frigore fieri dixerunt.
 <lb/>Nam femen calidius marem generat, frigidius feminam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="447">
-
-
 <p rend="indent">
-<lb/>Fiunt gemini atque trigemini, ut quidam
+<lb/><label type="head"><num value="447">CDCDVII.</num></label> Fiunt gemini atque trigemini, ut quidam
 <lb/>arbitrantur, quoniamsemen in calidum detractum ac.derivatum
 <lb/>frangitur sicque sarit geminos et trigeminos. Alii
 <lb/>ad superfoetationem causam referunt. Nos vero si in haec
@@ -4432,17 +3604,13 @@
 <lb/>procreari.</p>
 </div>
 <div type="textpart" subtype="chapter" n="448">
-
-
 <p rend="indent">
-<lb/>Hermaphroditus complexus est masculini
+<lb/><label type="head"><num value="448">CDCDVIII.</num></label> Hermaphroditus complexus est masculini
 <lb/>ferus ac feminei .etiam utroque genitale proprium obtinente.</p>
 </div>
 <div type="textpart" subtype="chapter" n="449">
-
-
 <p rend="indent">
-<lb/>Generantur monstra ut quidam ajunt per
+<lb/><label type="head"><num value="449">CDCDΙΧ.</num></label> Generantur monstra ut quidam ajunt per
 <lb/>declinationem obliquitatemque uteri ; nam quod inaequaliter
 <lb/>femen iusunditur monstra progignit-:. quo modo et liqualum
 <lb/>plumbum, si inaequaliter defusum. sit, inaequale
@@ -4454,27 +3622,21 @@
 <lb/>digitis quandoque etiam pluribus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="450">
-
-
 <p rend="indent">
-<lb/>Quam ob cautam septimestres partus vivunt,
+<lb/><label type="head"><num value="450">CDL.</num></label> Quam ob cautam septimestres partus vivunt,
 <lb/>octimestres minime ? ita fertur; quoniam numerus octo par
 <lb/>et coniunctus nec decretorius est; septem autem impar est
 <lb/>numerus neque vero coniunctus atque ob id decretorius.</p>
 </div>
 <div type="textpart" subtype="chapter" n="451">
-
-
 <p rend="indent">
-<lb/>Conceptionis causa commoderatus uteri calor
+<lb/><label type="head"><num value="451">CDLI.</num></label> Conceptionis causa commoderatus uteri calor
 <lb/>recensque menstruorum purgatio et coeundi appetitus;
 <lb/>haec enim simul congressa femen detinuerunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="452">
-
-
 <p rend="indent">
-<lb/>Conformantur primum foetus fecundae, deinde
+<lb/><label type="head"><num value="452">CDLII.</num></label> Conformantur primum foetus fecundae, deinde
 <lb/>reliqua. Constant fecundae ex duabus venis duabusque
 <lb/>arteriis et quinto vocato uracho. Vocatur autem chorion
 <lb/>feti quod foetus conceptaculum sit ficu quod ipsi alimentum
@@ -4483,26 +3645,20 @@
 </div>
 <pb n="19.455"/>
 <div type="textpart" subtype="chapter" n="453">
-
-
 <p rend="indent">
-<lb/>Parturigiues sunt spiritus conferti impetus
+<lb/><label type="head"><num value="453">CDLIII.</num></label> Parturigiues sunt spiritus conferti impetus
 <lb/>ad foetus excurfum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="454">
-
-
 <p rend="indent">
-<lb/>Tribuuntur mulieri menstrua quo sanitatis
+<lb/><label type="head"><num value="454">CDLIV.</num></label> Tribuuntur mulieri menstrua quo sanitatis
 <lb/>gratia evacuentur, foetui autem alimentum se praebeant
 <lb/>per conceptum suppressa ; sunt enim tum ad conceptionem
 <lb/>tum ad lactis generationem comparata.</p>
 </div>
 <div type="textpart" subtype="chapter" n="455">
-
-
 <p rend="indent">
-<lb/>Fit praegnantibus pica duobus circiter aut
+<lb/><label type="head"><num value="455">CDLV.</num></label> Fit praegnantibus pica duobus circiter aut
 <lb/>tribus a conceptu mensibus affecto stomacho, nondum enim
 <lb/>potest foetus alimentum confutuere. Picae cauta inde
 <lb/>prodit quod exsuperet materia et stomachus rerturbatione
@@ -4510,18 +3666,14 @@
 <lb/>tum recipiente se deorsum sanguine ad se stomachus redit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="456">
-
-
 <p rend="indent">
-<lb/>Quatuor fiant luctuum figurae sive positurae,
+<lb/><label type="head"><num value="456">CDLVI.</num></label> Quatuor fiant luctuum figurae sive positurae,
 <lb/>una quidem fecundum naturam quae in caput est; reliquae
 <lb/>tres praeter naturam; quae in pedes, in latus et in duplum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="457">
-
-
 <p rend="indent">
-<lb/>Difficiles partus tribus modis et causis fiunt,
+<lb/><label type="head"><num value="457">CDLVII.</num></label> Difficiles partus tribus modis et causis fiunt,
 <lb/>ex foeta, ex foetu et ab externis. Ex foeta duplici modo:
 <pb n="19.456"/>
 <lb/>animo quidem quum xelotypiis vel moeroribus vel alia
@@ -4533,27 +3685,21 @@
 <lb/>aestum vehementem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="458">
-
-
 <p rend="indent">
-<lb/>Causae ulcerum in utero funi interdum
+<lb/><label type="head"><num value="458">CDLVIII.</num></label> Causae ulcerum in utero funi interdum
 <lb/>abscessus, nonnunquam pellas abortivus, aliquando vero
 <lb/>cirritus estque hic cum aliis diuturnus,</p>
 </div>
 <div type="textpart" subtype="chapter" n="459">
-
-
 <p rend="indent">
-<lb/>Sarcosis in utero est carnis collectae extuh.eratio ;
+<lb/><label type="head"><num value="459">CDLΙΧ.</num></label> Sarcosis in utero est carnis collectae extuh.eratio ;
 <lb/>quae si magna sit, pars ejus recidenda est vellicata
 <lb/>prius scalpris quo celerius emoriatur, sin parva protinus
 <lb/>tollenda.</p>
 </div>
 <div type="textpart" subtype="chapter" n="460">
-
-
 <p rend="indent">
-<lb/>Haemorrhagia effusio vehemens est sanguinis:
+<lb/><label type="head"><num value="460">CDLX.</num></label> Haemorrhagia effusio vehemens est sanguinis:
 <lb/>quae si magnum vulnus sit per largum obitur fluxum ; sin
 <lb/>angustum, per jaculationem ut in venis secandis. Differt
 <lb/>haemorrhagia ab haemorrhoide quod haemorrhagia abundans
@@ -4563,10 +3709,8 @@
 <lb/>sanguinis per diapedesin ac paulatim facta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="461">
-
-
 <p rend="indent">
-<lb/>Tres sunt eruptionis sanguinis modi vel per
+<lb/><label type="head"><num value="461">CDLXI.</num></label> Tres sunt eruptionis sanguinis modi vel per
 <lb/>anastomosiu vel per diapedesin vel per <hi rend="italic">ruptionem teu</hi> diacopem.
 <lb/>Quae diapedesi et corporis nostri valorum erosione
 <lb/>constat non facile fanatur. Curantur difficilius arteriae
@@ -4581,10 +3725,8 @@
 <lb/>in hieme.</p>
 </div>
 <div type="textpart" subtype="chapter" n="462">
-
-
 <p rend="indent">
-<lb/>Chymos apud Hippocratem semper humoribus
+<lb/><label type="head"><num value="462">CDLXII.</num></label> Chymos apud Hippocratem semper humoribus
 <lb/>corporis^ impositus est ex quibus nostra est structura
 <lb/>sanguine, pituita et duplici bile, flava et nigra; apud Platonem
 <lb/>vero et Aristotelem gustabilis qualitas et quaecunque
@@ -4596,10 +3738,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="463">
-
-
 <p rend="indent">
-<lb/>Vacuamus vel venae sectione vel cucurbituta
+<lb/><label type="head"><num value="463">CDLXIII.</num></label> Vacuamus vel venae sectione vel cucurbituta
 <lb/>vel hirundine vel similibus. Sanguinem detrahimus
 <lb/>ob multam plenitudinem praesertimque ubi sanguinem asseutus
 <lb/>causam esse suspicabimur. Detractionis cujuslibet
@@ -4609,10 +3749,8 @@
 <lb/>est opus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="464">
-
-
 <p rend="indent">
-<lb/>In pathologica medicinae parte continetur
+<lb/><label type="head"><num value="464">CDLXIV.</num></label> In pathologica medicinae parte continetur
 <lb/>quid et qualis sit universalis et quid particularis affectus
 <lb/>ac morbus, quid cauta, quid signum et quae hujus lifferentiae
 <lb/>habeantur, sunt autem hae specie complures, non
@@ -4627,34 +3765,26 @@
 <lb/>sint perscrutatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="465">
-
-
 <p rend="indent">
-<lb/>Crisis idonea est ac Iubila in tempore morbi
+<lb/><label type="head"><num value="465">CDLXV.</num></label> Crisis idonea est ac Iubila in tempore morbi
 <lb/>solutio. Vel crisis est repentina in morbo permutatio eaque
 <lb/>ut plurimum ad salutem, interdum vero ad aegrotantis
 <lb/>interitum tendit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="466">
-
-
 <p rend="indent">
-<lb/>Periodus vicissitudo est aut alternatio ordine
+<lb/><label type="head"><num value="466">CDLXVI.</num></label> Periodus vicissitudo est aut alternatio ordine
 <lb/>dispositi temporis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="467">
-
-
 <p rend="indent">
-<lb/>Cerebrum animalem faculsatem obtinet
+<lb/><label type="head"><num value="467">CDLXVII.</num></label> Cerebrum animalem faculsatem obtinet
 <lb/>atque hujus partem principem quae ratiocinatrix est atque
 <lb/>mens, cor vero irascentem, jecur autem concupiscentem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="468">
-
-
 <p rend="indent">
-<lb/>Administratur naturaliter peraeque corpus
+<lb/><label type="head"><num value="468">CDLXVIII.</num></label> Administratur naturaliter peraeque corpus
 <lb/>a corde et jecore. Facultas naturalis altrix et auctrix
 <lb/>est. Sumit cor alendo augendoque corpore a jecore simguinem,
 
@@ -4663,91 +3793,69 @@
 <lb/>materias sic in universum corpus transmittit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="469">
-
-
 <p rend="indent">
-<lb/>Organica est pars chirurgiae quae per restitutionem
+<lb/><label type="head"><num value="469">CDLXΙΧ.</num></label> Organica est pars chirurgiae quae per restitutionem
 <lb/>ac consentaneam curationem affectis praeter
 <lb/>naturam humanis, ossinus sanitatem vindicat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="470">
-
-
 <p rend="indent">
-<lb/>Sunt ossa in nobis duobus modis conjuncta
+<lb/><label type="head"><num value="470">CDLXX.</num></label> Sunt ossa in nobis duobus modis conjuncta
 <lb/>per articulum et coagmentationem. Articulus ossium est
 <lb/>quae secundum naturam moventur comoages. Coagmentatio
 <lb/>vero compages est ossium quae secundum naturam
 <lb/>non moventur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="471">
-
-
 <p rend="indent">
-<lb/>Luxatis est ossium quae per articulum vel
+<lb/><label type="head"><num value="471">CDLXXI.</num></label> Luxatis est ossium quae per articulum vel
 <lb/>coagmentationem composita sunt et moventur praeter
 <lb/>naturam delatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="472">
-
-
 <p rend="indent">
-<lb/>Eluxatio est ossis secundum naturam motum
+<lb/><label type="head"><num value="472">CDLXXII.</num></label> Eluxatio est ossis secundum naturam motum
 <lb/>habentis ex profunda cavitate in locum praeter naturam
 <lb/>delapsus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="473">
-
-
 <p rend="indent">
-<lb/>Deluxatio est ossis evariatio delatiove a
+<lb/><label type="head"><num value="473">CDLXXIII.</num></label> Deluxatio est ossis evariatio delatiove a
 <lb/>naturali .loco ex superficiali cavitate ad eum qui praeter
 <lb/>naturam est locum.</p>
 
 </div>
 <pb n="19.461"/>
 <div type="textpart" subtype="chapter" n="474">
-
-
 <p rend="indent">
-<lb/>Diacinema est ossium per gomphosin harmoniamve
+<lb/><label type="head"><num value="474">CDLXXIV.</num></label> Diacinema est ossium per gomphosin harmoniamve
 <lb/>compactorum interdum quidem in eodem loco
 <lb/>praeter naturam motio ; nonnunquam vero e propria fede
 <lb/>in locum qui praeter naturam est exturbatis ; quemadmodum
 <lb/>ex terso diruptis ossiculis aut vertebris fieri consuevit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="475">
-
-
 <p rend="indent">
-<lb/>Diductio est ossium quae per futuram et
+<lb/><label type="head"><num value="475">CDLXXV.</num></label> Diductio est ossium quae per futuram et
 <lb/>coalitum mutuo juncta sunt separatio aut diductio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="476">
-
-
 <p rend="indent">
-<lb/>Repositio est ossis vel ossium a fede non
+<lb/><label type="head"><num value="476">CDLXXVI.</num></label> Repositio est ossis vel ossium a fede non
 <lb/>naturali in sedem naturalem traductio ficu translatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="477">
-
-
 <p rend="indent">
-<lb/>Modesta est ossis vel ossium a loco qui
+<lb/><label type="head"><num value="477">CDLXXVII.</num></label> Modesta est ossis vel ossium a loco qui
 <lb/>praeter naturam sit ad naturalem reductio..</p>
 </div>
 <div type="textpart" subtype="chapter" n="478">
-
-
 <p rend="indent">
-<lb/>Tentio est tractus corporum.</p>
+<lb/><label type="head"><num value="478">CDLXXVIII.</num></label> Tentio est tractus corporum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="479">
-
-
 <p rend="indent">
-<lb/>Catatasis est ad inferiora loca corporum
+<lb/><label type="head"><num value="479">CDLXXΙΧ.</num></label> Catatasis est ad inferiora loca corporum
 <lb/>tractus. Sed hujus quidem catatasis quidam tractus est
 <lb/>corporum in inferiora loca principiis quae tensionis causae
 <lb/>sunt e directo oppositis; alter autem per contrariam
@@ -4758,58 +3866,42 @@
 </div>
 <pb n="19.462"/>
 <div type="textpart" subtype="chapter" n="480">
-
-
 <p rend="indent">
-<lb/>Anatasis per traductionem intelligi ex lis
+<lb/><label type="head"><num value="480">CDLXXX.</num></label> Anatasis per traductionem intelligi ex lis
 <lb/>potest quae de catatasi prodita sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="481">
-
-
 <p rend="indent">
-<lb/>Distatis est ad superna atque inferna
+<lb/><label type="head"><num value="481">CDLXXXI.</num></label> Distatis est ad superna atque inferna
 <lb/>Ioca corporum tractus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="482">
-
-
 <p rend="indent">
-<lb/>Exelcyfmus est deductio ossis vel ossium
+<lb/><label type="head"><num value="482">CDLXXXII.</num></label> Exelcyfmus est deductio ossis vel ossium
 <lb/>a superficie in profundum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="483">
-
-
 <p rend="indent">
-<lb/>Rhegma est ossis aut ossium traductio a
+<lb/><label type="head"><num value="483">CDLXXXIII.</num></label> Rhegma est ossis aut ossium traductio a
 <lb/>profundo ad superficiem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="484">
-
-
 <p rend="indent">
-<lb/>Metagoge est diducti ossis in naturalem
+<lb/><label type="head"><num value="484">CDLXXXIV.</num></label> Metagoge est diducti ossis in naturalem
 <lb/>iocum revocatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="485">
-
-
 <p rend="indent">
-<lb/>Ecstesis est infania quae brevi finitur.</p>
+<lb/><label type="head"><num value="485">CDLXXXV.</num></label> Ecstesis est infania quae brevi finitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="486">
-
-
 <p rend="indent">
-<lb/>repleris est emotio mentis quae ex
+<lb/><label type="head"><num value="486">CDLXXXVI.</num></label> repleris est emotio mentis quae ex
 <lb/>repentina aliqua permutatione extrinsecus advenit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="487">
-
-
 <p rend="indent">
-<lb/>Enthusiasmus efflatio numinis est veluti
+<lb/><label type="head"><num value="487">CDLXXXVII.</num></label> Enthusiasmus efflatio numinis est veluti
 <lb/>quum quidam mente in tauris faciendis capiuntur, si
 <lb/>qua viderint aut si tympana veli tibias vel signa audiverint.</p>
 </div>

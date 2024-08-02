@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">In Hippocratis De fracturis</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg100.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -96,12 +117,69 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
+   <revisionDesc>
+    <change who="#Galenus_verbatim" when="2023">First round of revisions for publication on the Galenus verbatim website.</change>
+    <change who="#Galenus_verbatim" when="2023">Added bibliographical information on the editions referred to in Kühn's edition as "Bas." and "Chart."</change>
+    <change who="#Galenus_verbatim" when="2023">Corrected and added milestone tags for the missing page changes of both Basel and Chartier editions when they were missing.</change>
+    <change who="#Galenus_verbatim" when="2023">Punctual correction to the digitization of Kühn's text.</change>
+    <change who="#Galenus_verbatim" when="2023">Correction and additions of the sections &lt;div&gt; level when they were missing to better reflect the structure of Kühn's edition.</change>
+    <change who="#Galenus_verbatim" when="2023">Modification to the subtype of some &lt;div&gt; to better reflect Kühn's structure.</change>
+    <change who="#Galenus_verbatim" when="2023">Added &lt;label&gt; elements for all headings of chapters and sections.</change>
+    <change who="#Galenus_verbatim" when="2023">Added &lt;l&gt; elements for verse lines and &lt;lg&gt; elements for linegroups.</change>
+    <change who="#Galenus_verbatim" when="2023">Replaced abbreviations introduced by the initial transcription by the original symbols as they appear within the printed text of Kühn's edition.</change>
+    <change who="#Galenus_verbatim" when="2023">Added line number.</change>
+    <change who="#Galenus_verbatim" when="2024">The text of headings containing the name of chapter and numbers of chapters and sections have been restored and marked with &lt;label&gt; and &lt;num&gt; elements.</change>
+    <change who="#Galenus_verbatim" when="2024">All the indentations have been restored.</change>
+    <change who="#Galenus_verbatim" when="2024">All chapter numbers have been verified. In this treatise, chapter numbers appear on a single line, except for Prooemium chapters.</change>
+   </revisionDesc>
   </teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg100.verbatim-lat1">
@@ -113,9 +191,8 @@
 <head>HIPPOCRATIS DE FRACTURIS LIBER ET GALENI IN EUM
 <lb/>su COMMENTARIUS L</head>
 
-
 <p rend="indent">
-<lb/>Ante singularium explanationem omnem
+ <lb/><label type="head"><num value="0">Praefatio.</num></label>Ante singularium explanationem omnem
 <lb/>universalium explicationem percepisse praestiterit,
 <lb/>quod sit ipsius vis quaecunque in operibus. obscura sunt
 <lb/>ea dilucida reddere; quiddam autem eorum quae scripta
@@ -188,9 +265,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="1">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="1">I.</num></label>
 <quote type="lemma">
 <lb/>Medicum oportet tum lavationum tum /iacturarum intensiones
 <lb/>quam recti/stmas iacere.</quote>
@@ -479,9 +555,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="2">II.</num></label>
 <quote type="lemma">
 <lb/>Ea namque sustijsima est natura.</quote>
 <lb rend="rule"/>
@@ -496,9 +571,8 @@
 </div>
  <pb n="18b.336"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="3">III.</num></label>
 <quote type="lemma">
 <lb/>Quod st quis in hanc nel illam partem propendeat, proe^
 <lb/>stat in pronam tendere. Levius enim pronam eam in
@@ -520,9 +594,8 @@
 </div>
  <pb n="18b.337"/>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="4">IV.</num></label>
 <quote type="lemma">
 <lb/>Qui igitur praevio consilio nihil prospicem, plerumque
 <lb/>nihil peccant. Qui namque deligatur, ipse /usta natura
@@ -564,9 +637,8 @@
 </div>
  <pb n="18b.339"/>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="5">V.</num></label>
 <quote type="lemma">
 <lb/>Qui cero medici sapientes sibi ridentur, hi sunt nimirum
 <lb/>qui peccant. Arduum igitur opus non est, manum suaetam
@@ -581,9 +653,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="6">VI.</num></label>
 <quote type="lemma">
 <lb/>Ferum ea de re cogor plura scribere, quod medicos esse
 <lb/>noverim, qui in deligatione ex manus figuris se supientes
@@ -617,9 +688,8 @@
 </div>
  <pb n="18b.341"/>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="7">VII.</num></label>
 <quote type="lemma">
 <lb/>Pronunciandum igitur quinam medicomm errores do manus
 <lb/>natura tum docere tum dedocere velim.</quote>
@@ -631,9 +701,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="8">VIII.</num></label>
 <quote type="lemma">
 <lb/>Etenim aliorum quoque, corporis o/stum doctrinam haec
 <lb/>complectitur oratio.</quote>
@@ -650,9 +719,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="9">IX.</num></label>
 <quote type="lemma">
 <lb/>Ergo manum, de qua nobis sermo, quidam in pronum
 <lb/>devincire augurabatur. Hic autem coegit manum statui
@@ -759,7 +827,7 @@
 <lb/>est ad impetum faciendum, -ajunt. Item apud comicos porrectu
  <lb/>membra dicuntur ad <foreign xml:lang="grc">ἐμβολὴν</foreign>, id est ad impetum
 <lb/>faciendum parata, quod Aristophanes ostendit, quum inquit:</p>
-<lg>
+<lg rend="italic">
 <l><foreign xml:lang="grc">Κωρεῖ ἐπὶ γραμμὴν λορδὸς ώς ἐμβολῇ.</foreign></l>
 </lg>
 <p rend="nonindented">
@@ -770,9 +838,8 @@
 </div>
  <pb n="18b.348"/>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="10">X.</num></label>
 <quote type="lemma">
 <lb/>Toxicam exercenti hanc alterius manus sigarum optimam
 <lb/>esse consentaneum est Hoc enim habitu humeri. cardo
@@ -855,9 +922,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="11">XI.</num></label>
 <quote type="lemma">
 <lb/>Atque eo habitu recurvata sit articuli reflexio. Ergo consentaneum
 <lb/>est sic locum istum minime sterti pluriinumque
@@ -895,9 +961,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="12">XII.</num></label>
 <quote type="lemma">
 <lb/>Enimvero si quit deligatam manum ita figuratam eontinere
 <lb/>desideret, longe alios plerosque dolores vulnera
@@ -937,9 +1002,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="13">XIII.</num></label>
 <quote type="lemma">
 <lb/>Alius porro medicus supinam manum praebens attendere
 <lb/>imperabat, coque habitu devinciebat eum naturalem este
@@ -989,9 +1053,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="14">XIV.</num></label>
 <quote type="lemma">
 <lb/>Hic vero idem os este tum hoc tum illud existimabat,
 <lb/>itemque multi alii.</quote>
@@ -1005,9 +1068,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="15">XV.</num></label>
 <quote type="lemma">
 <lb/>Quod autem os cubiti gibbus vocatur cui nimirum innitimur,
 <lb/>idem quod illud est.</quote>
@@ -1021,9 +1083,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="16">XVI.</num></label>
 <quote type="lemma">
 <lb/>sic igitur supinam manum habenti hoc quidem os perversum
 <lb/>apparet, partim vero ipsi nervi, qui a manus jun-
@@ -1072,9 +1133,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="17">XVII.</num></label>
 <quote type="lemma">
 <lb/>Hominem autem collocari sic oportet, ut quae pars o/sis
 <lb/>prominet praestantium luminum splendidissimo obversa
@@ -1096,9 +1156,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="18">XVIII.</num></label>
 <quote type="lemma">
 <lb/>o/sium cubiti, quum utrumque tractum non est, facilior
 <lb/>est curatio. Ai os superius sauciatum suerit, etiamsi
@@ -1127,9 +1186,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="19">XIX.</num></label>
 <quote type="lemma">
 <lb/>Ubi non hoc, sed illud suerit comminutum, sutis furiet
 <lb/>simplicior vis in intendendo, ubi utrumque extendere
@@ -1145,9 +1203,8 @@
 </div>
  <pb n="18b.364"/>
 <div type="textpart" subtype="chapter" n="20">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="20">XX.</num></label>
 <quote type="lemma">
 <lb/>Distentione vero facta dtstentanolis manuum admotis diriganda
 <lb/>sunt.</quote>
@@ -1163,9 +1220,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="21">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="21">XXI.</num></label>
 <quote type="lemma">
 <lb/>Deinde illito cerato non admodum copiose, ut ne fasciae
 <lb/>circumstuitent, ita devinciendum est.
@@ -1231,9 +1287,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="22">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="22">XXII.</num></label>
 <quote type="lemma">
 <lb/>Ut ne summa manus cubiti stexu inferior, imo paulo etiam
 <lb/>superiorcollocetur, quo sanguis minime ad imum extremam
@@ -1276,9 +1331,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="23">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="23">XXIII.</num></label>
 <quote type="lemma">
 <lb/>Postea linteo deligare capite supra tracturam infecto.</quote>
 <lb rend="rule"/>
@@ -1313,9 +1367,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="24">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="24">XXIV.</num></label>
 <quote type="lemma">
 <lb/>sic ut firmet quidem, non tamen vehementer comprimat.</quote>
 <lb rend="rule"/>
@@ -1346,9 +1399,8 @@
 </div>
  <pb n="18b.373"/>
 <div type="textpart" subtype="chapter" n="25">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="25">XXV.</num></label>
 <quote type="lemma">
 <lb/>Ubi super eandem fracturam bis terne sescium circumjeceris,
 <lb/>qui deligat, ad superiora distribuat, quo sunguiais
@@ -1384,9 +1436,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="26">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="26">XXVI.</num></label>
 <quote type="lemma">
 <lb/>At prima lintea minime longa este oportet.</quote>
 <lb rend="rule"/>
@@ -1402,9 +1453,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="27">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="27">XXVII.</num></label>
 <quote type="lemma">
 <lb/>secundarum veto susuiarum caput quidem supra fracturam
 <lb/>insidendum est.</quote>
@@ -1415,9 +1465,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="28">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="28">XXVIII.</num></label>
 <quote type="lemma">
 <lb/>At semel eodem involvatur.</quote>
 <lb rend="rule"/>
@@ -1431,9 +1480,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="29">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="29">XXIX.</num></label>
 <quote type="lemma">
 <lb/>.Tum deorsum demittatur, lenius adstringatur, atque ex
 <lb/>majori intervallo circumdetur.</quote>
@@ -1446,9 +1494,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="30">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="30">XXX.</num></label>
 <quote type="lemma">
 <lb/>Ut poscit relata ad partem qua prior desinit pervenire.</quote>
 <lb rend="rule"/>
@@ -1477,9 +1524,8 @@
 </div>
  <pb n="18b.378"/>
 <div type="textpart" subtype="chapter" n="31">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="31">XXXI.</num></label>
 <quote type="lemma">
 <lb/>Attrahere dero fascias in hoc casu vel a dextra debemus vel a
 <lb/>sinistra, prout ab hac vel illa parte ad /recturae habitum
@@ -1498,9 +1544,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="32">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="32">XXXII.</num></label>
 <quote type="lemma">
 <lb/>Post haec panni superdentur modico .cerato inuncti, siquis
 <lb/>dem leniores sunt et stabiliores.</quote>
@@ -1528,9 +1573,8 @@
 </div>
  <pb n="18b.380"/>
 <div type="textpart" subtype="chapter" n="33">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="33">XXXIII.</num></label>
 <quote type="lemma">
 <lb/>Hi fasciis alligandi sunt inter se diversis, aliis a dextra
 <lb/>parte, altis a sinistra plurimum ab inferiori parte sursum
@@ -1557,9 +1601,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="34">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="34">XXXIV.</num></label>
 <quote type="lemma">
 <lb/>Qua- extremitate tenuantur pannis aequanda sunt in orhem
 <lb/>datis, qui ubi ea dirigimus, non subito, sed paulatim
@@ -1575,9 +1618,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="35">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="35">XXXV.</num></label>
 <quote type="lemma">
 <lb/>Laxeque circa primum palmae partem variis locis vinciendo
 </quote>
@@ -1599,9 +1641,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="36">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="36">XXXVI.</num></label>
 <quote type="lemma">
 <lb/>Quod ad linteorum multitudinem pertinet duas partes primo
 <lb/>abunde est superstare.</quote>
@@ -1673,9 +1714,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="37">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="37">XXXVII.</num></label>
 <quote type="lemma">
 <lb/>Hinc autem cognosces recte hominem curatum este ac terminum
 <lb/>deligandi, ubi num prematur rogaveris;: atque
@@ -1713,9 +1753,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="38">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="38">XXXVIII.</num></label>
 <quote type="lemma">
 <lb/>Moderationis autem indicia sunt, si eodem die ac nocte
 <lb/>qua deligatus suerit ipse sibi videatur non levius, sed
@@ -1762,9 +1801,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="39">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="39">XXXIX.</num></label>
 <quote type="lemma">
 <lb/>Labente jam die minus adstrictas fascias sentiat, sed terpodii
 <lb/>paene resalutas. scire autem licet, siquid horum
@@ -1783,9 +1821,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="40">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="40">XL.</num></label>
 <quote type="lemma">
 <lb/>Tertio die postquam extenderis atque direxeris, salvere
 <lb/>membrum oportet. ouodsi primis diebus moderate devinxeris,
@@ -1846,9 +1883,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="41">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="41">XLI.</num></label>
 <quote type="lemma">
 <lb/>Inde ubi ad tertium diem ventum erit, qui septimus est a
 <lb/>primo, quum iniectum vinculum suit, si recte alligatus
@@ -1935,9 +1971,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="42">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="42">XLII.</num></label>
 <quote type="lemma">
 <lb/>Nihil autem perpetuum est ; multum enim et aetas ab aetate
 <lb/>distat.</quote>
@@ -1976,9 +2011,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="43">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="43">XLIII.</num></label>
 <quote type="lemma">
 <lb/>Ubi salveris, aqua calida persunaito et rursus .alligato
 <lb/>fasciis lenius quam ante adstrictis, paucioribus item quam
@@ -2003,9 +2037,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="44">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="44">XLIV.</num></label>
 <quote type="lemma">
 <lb/>Quodsi alligatis farulis suspicio sit ne osse recte concurre- .
 <lb/>rint vel aliud quidpiam infestet, ubi dimidium temporis
@@ -2028,9 +2061,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="45">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="45">XLV.</num></label>
 <quote type="lemma">
 <lb/>Quibus .initio cutis non abrumpitur neque os cute excedit,
 <lb/>idonea est ratio victus prope quaevis; minus tamen cibi
@@ -2077,9 +2109,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="46">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="46">XLVI.</num></label>
 <quote type="lemma">
 <lb/>Adhibeantque ex obsoniis mollibus quaecunque modico admodum
 <lb/>desidunt alvum.</quote>
@@ -2091,9 +2122,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="47">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="47">XLVII.</num></label>
 <quote type="lemma">
 <lb/>sed a vino et carne sibi temperent.</quote>
 <lb rend="rule"/>
@@ -2109,9 +2139,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="48">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="48">XLVIII.</num></label>
 <quote type="lemma">
 <lb/>Tum paulatim su resuiant. oratio haec lex /usia surtur
 <lb/>de curatione structurae.</quote>
@@ -2126,9 +2155,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="49">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="49">XLIX.</num></label>
 <quote type="lemma">
 <lb/>Quare danda opera est ut /ossa curatione adhibita res
 <lb/>bene procedat; ubi autem non sic procedit, scire licet
@@ -2145,9 +2173,8 @@
 </div>
  <pb n="18b.408"/>
 <div type="textpart" subtype="chapter" n="50">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="50">L.</num></label>
 <quote type="lemma">
 <lb/>Illud praeterea animadvertere in hoc simplici modo convenit,
 <lb/>quod medici non admodum attendunt; quamquam
@@ -2177,9 +2204,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="51">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="51">LI.</num></label>
 <quote type="lemma">
 <lb/>Quodsi utroque osse comminuto vel eo quod subjectum est
 <lb/>tantum, deligatum brachium misella suspendetur, eaque
@@ -2269,9 +2295,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="52">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="52">LII.</num></label>
 <quote type="lemma">
 <lb/>sin ossibus sic /suetis misella manum dumtaxat et articulum
 <lb/>cubiti. excipiat, reliquum vero brachium suspensum
@@ -2312,9 +2337,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="53">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="53">LIII.</num></label>
 <quote type="lemma">
 <lb/>Debet ergo brachium suspendi per micellam latam mollemque
 <lb/>multum brachii cum prima palmae parte aequaliter
@@ -2356,6 +2380,7 @@
 
 
 <lb rend="head"/>
+ <lb/><label type="head"><num value="1">I.</num></label>
 <quote type="lemma">
 <lb/>At ubi humerus pcrsuingatur.</quote>
 <lb rend="rule"/>
@@ -2408,9 +2433,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="2">II.</num></label>
 <quote type="lemma">
 <lb/>si brachium extendatur coque sic figurato intensio adhibeatur,
 <lb/>humeri lacertus intentus alligabitur ; atque ubi
@@ -2435,9 +2459,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="3">III.</num></label>
 <quote type="lemma">
 <lb/>Justi/stma itaque intensio ad humerum sic adhibetur. Lignum
 <lb/>quod cubitum aequet vel paulo brevius sit, qualia
@@ -2528,9 +2551,8 @@
 </div>
  <pb n="18b.427"/>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="4">IV.</num></label>
 <quote type="lemma">
 <lb/>Debet autem medicus curare stans altero pede super quapiam
 <lb/>re sublimiori collocato ; componere autem os prominentioribus
@@ -2552,9 +2574,8 @@
 </div>
  <pb n="18b.428"/>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="5">V.</num></label>
 <quote type="lemma">
 <lb/>Dein septimo aut nono die surulas alligare, quodsi vereatur
 <lb/>ne recte ossa concurrerint, interea saluere dirigensque
@@ -2576,9 +2597,8 @@
 </div>
  <pb n="18b.429"/>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="6">VI.</num></label>
 <quote type="lemma">
 <lb/>ilum eri os fere quadraginta diebus confervet. Quos ubi
 <lb/>excesserit, saluere oportet et pauciores fascias dare leoiusque
@@ -2595,9 +2615,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="7">VII.</num></label>
 <quote type="lemma">
 <lb/>Illud etiam ignorare non oportet quod humerus natura ab
 <lb/>exteriori parte gibbus est et perverti sucile solet, ubi
@@ -2626,9 +2645,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="8">VIII.</num></label>
 <quote type="lemma">
 <lb/>P es hominis ex multis minutisque ossibus constat, quemadmodum
 <lb/>et manus.</quote>
@@ -2707,9 +2725,8 @@
 </div>
  <pb n="18b.435"/>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="9">IX.</num></label>
 <quote type="lemma">
 <lb/>Cssa haec fere non rumpuntur ntst acuta vel gravi quapiam
 <lb/>re carnosae partes vulnerentur. De oulneratis
@@ -2722,11 +2739,11 @@
  <lb/>vero cartilaginem et ligamenta <foreign xml:lang="grc">χρωτὸς</foreign> vocabulo non significant.
 <lb/>Ad hoc etiam exemplum videtur usurpari ab Homero,
  <lb/>quum cutem <foreign xml:lang="grc">χρῶτα</foreign> vocat his versibus:</p>
-<lg>
+<lg rend="italic">
  <l><foreign xml:lang="grc">Ἀεὶ τῶν ἔσται χρὼς ἔμπεδος ἢ καὶ ἀρείων.</foreign></l></lg>
 <p rend="nonindented">
 <lb/>Et iterum:</p>
-<lg>
+<lg rend="italic">
  <l><foreign xml:lang="grc">Ὣς ἂν μὴ κλαίουσα κατὰ χρόα καλὸν ἰάπτῃς.</foreign></l></lg>
 <p rend="nonindented">
 <lb/>Propositarum igitur partium ossa ait fere non perfringi
@@ -2782,9 +2799,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="10">X.</num></label>
 <quote type="lemma">
 <lb/>Si quid erumpat ex digitorum articulis oel aliutl
 <lb/>piam ex iis ossibus quibus continetur pars pedli
@@ -2828,9 +2844,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="11">XI.</num></label>
 <quote type="lemma">
  <lb/>Tum cerato mederi pannis sufeiisque non secus, atque <foreign xml:lang="grc">ιὥι</foreign>
 <lb/>seangssur, excepto quod omittendae ferulae sunt, eodemque
@@ -2861,9 +2876,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="12">XII.</num></label>
 <quote type="lemma">
 <lb/>Cmnia haec oiginti diebus perfecte ad sanitatem perducuntur,
 <lb/>nisi quae cum cruris ossibus iunguntur vel ex elttt
@@ -2895,9 +2909,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="13">XIII.</num></label>
 <quote type="lemma">
 <lb/>Plurimis autem fuscus plurimisque pannis utendum est.</quote>
 <lb rend="rule"/>
@@ -2909,9 +2922,8 @@
 </div>
  <pb n="18b.444"/>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="14">XIV.</num></label>
 <quote type="lemma">
 <lb/>Vere autem hinc atque hinc vincire convenit adstringere
 <lb/>que sicut cetera omnia, ea parte potlsumum qua os prc^
@@ -2927,9 +2939,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="15">XV.</num></label>
 <quote type="lemma">
 <lb/>Quotiescunque vinculum solvitur, multa aqua calida sut^^
 <lb/>dum. fn omnibus autem qui juxta articulos sun^
@@ -2953,9 +2964,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="16">XVI.</num></label>
 <quote type="lemma">
 <lb/>Quicunque ex superiori loco saltantes calci vehementer insistunt,
 <lb/>his ossa diducuntur, venae sanguinem eseimdunt,
@@ -3002,9 +3012,8 @@
 </div>
  <pb n="18b.448"/>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="17">XVII.</num></label>
 <quote type="lemma">
 <lb/>Conjungitur autem venis et nervis grandioribus, posteriorque
 <lb/>chorda huic o/si innectitur. Hos igitur curare
@@ -3026,9 +3035,8 @@
 </div>
  <pb n="18b.449"/>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="18">XVIII.</num></label>
 <quote type="lemma">
 <lb/>quod si cutis quae calcem tegit naturaliter tenera est, relinquenda
 <lb/>est, quomodo fa habet ; sin dura et crasia,
@@ -3097,9 +3105,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="19">XIX.</num></label>
 <quote type="lemma">
 <lb/>Haec bene alligare non cujusvis est. Nam si quis vinciat..
 <lb/>eo modo quo cetera circa talos vinciuntur, fascia modo
@@ -3157,9 +3164,8 @@
 </div>
  <pb n="18b.455"/>
 <div type="textpart" subtype="chapter" n="20">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="20">XX.</num></label>
 <quote type="lemma">
 <lb/>Atque hoc pacto periculum est ne os calcis corrumpatur.</quote>
 <lb rend="rule"/>
@@ -3175,9 +3181,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="21">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="21">XXI.</num></label>
 <quote type="lemma">
 <lb/>Quod ubi corrumpitur, morbus aevum durat.</quote>
 <lb rend="rule"/>
@@ -3191,9 +3196,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="22">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="22">XXII.</num></label>
 <quote type="lemma">
 <lb/>Nam alioquin ubi calx hoc modo non corrumpitur, sed
 <lb/>quod nigrescat, quia dum homo /aret negligenter habi-
@@ -3221,9 +3225,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="23">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="23">XXIII.</num></label>
 <quote type="lemma">
 <lb/>sequuntur enim fabris acutae admodum continentesque cum
 <lb/>tremore, singultu, mentis alienatione, quae paucis diebus
@@ -3253,9 +3256,8 @@
 </div>
  <pb n="18b.459"/>
 <div type="textpart" subtype="chapter" n="24">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="24">XXIV.</num></label>
 <quote type="lemma">
 <lb/>Bis accedunt venarum sanguinem fundentium livor, nausea,
 <lb/>gangraena. Causa compressio est. Possunt haec alioquin
@@ -3289,9 +3291,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="25">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="25">XXV.</num></label>
 <quote type="lemma">
 <lb/>rasuiamque maxima ex parte ad calcem dare et modo
 <lb/>circa extremum pedem, modo circa medium, modo etiam
@@ -3311,9 +3312,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="26">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="26">XXVI.</num></label>
 <quote type="lemma">
 <lb/>sed linteorum numerum augere.</quote>
 <lb rend="rule"/>
@@ -3325,9 +3325,8 @@
 </div>
  <pb n="18b.462"/>
 <div type="textpart" subtype="chapter" n="27">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="27">XXVII.</num></label>
 <quote type="lemma">
 <lb/>Praestat veratrum eodem dic epotum vel certe posteriori,
 <lb/>praeterea tertio die resolvere et rursus deligare.</quote>
@@ -3365,9 +3364,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="28">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="28">XXVIII.</num></label>
 <quote type="lemma">
 <lb/>Ex eo autem intelligitur futurum necne sit ut hi affectus
 <lb/>recrudescant. Namque ubi sanguis a venis transusus
@@ -3400,9 +3398,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="29">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="29">XXIX.</num></label>
 <quote type="lemma">
 <lb/>sed si homo vacat subre, vomitu purgetur, sicut dictum
 <lb/>est p idem convenit si subrii sit, sed non continua. Ubi
@@ -3445,9 +3442,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="30">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="30">XXX.</num></label>
 <quote type="lemma">
 <lb/>sed si nullum periculum est ne recrudescant, sanguis susu
 <lb/>fusus, nigrities, proximae partessubvirides sunt citra.
@@ -3467,9 +3463,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="31">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="31">XXXI.</num></label>
 <quote type="lemma">
 <lb/>Quod idoneum testimonium est, ubicunque sanguis transfunditur,
 <lb/>metuendum este ne malum recrudescat.</quote>
@@ -3499,9 +3494,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="32">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="32">XXXII.</num></label>
 <quote type="lemma">
 <lb/>sin durae sunt et. livent, nigritie periclitantur.</quote>
 <lb rend="rule"/>
@@ -3544,9 +3538,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="33">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="33">XXXIII.</num></label>
 <quote type="lemma">
 <lb/>pedem vero expedit ita collocare ut reliquo corpore plerumque
 <lb/>paulo sublimior habeatur; sunescir autem /exagruta
@@ -3565,9 +3558,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="34">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="34">XXXIV.</num></label>
 <quote type="lemma">
 <lb/>crus binis ojsibus continetur, quorum alterum altero ab
 <lb/>una parte multo, ab altera paulo tenuius est.</quote>
@@ -3597,9 +3589,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="35">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="35">XXXV.</num></label>
 <quote type="lemma">
 <lb/>Haec ad pedem inter su funguntur communemque appendicem
 <lb/>habent.</quote>
@@ -3617,9 +3608,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="36">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="36">XXXVI.</num></label>
 <quote type="lemma">
 <lb/>sed recta in crure dehiscunt.</quote>
 <lb rend="rule"/>
@@ -3631,9 +3621,8 @@
 </div>
  <pb n="18b.475"/>
 <div type="textpart" subtype="chapter" n="37">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="37">XXXVII.</num></label>
 <quote type="lemma">
 <lb/>Ad famur autem /unguntur et appendicem habent, appendix
 <lb/>vero discrimen.</quote>
@@ -3652,9 +3641,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="38">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="38">XXXVIII.</num></label>
 <quote type="lemma">
 <lb/>Longius autem paulo est alterum os quod a parte minimi
 <lb/>digiti est. Natura ossium cruris sto se habet.</quote>
@@ -3670,9 +3658,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="39">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="39">XXXIX.</num></label>
 <quote type="lemma">
 <lb/>Laxantur hoc modo a parte pedis, ac tunc modo una cum
 <lb/>appendice ossa ambo, modo appendix tantum movetur,
@@ -3695,9 +3682,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="40">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="40">XL.</num></label>
 <quote type="lemma">
 <lb/>Haec quidem minus molesta sunt quam quae in prima
 <lb/>palmae parte, homines modo quiescant. Curatio autem
@@ -3722,9 +3708,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="41">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="41">XLI.</num></label>
 <quote type="lemma">
 <lb/>Nam vel rotae modiolum desigere oportet vel aliud quid
 <lb/>simile, tum molli aliqua re pedem obvolvere bubulisque
@@ -3750,9 +3735,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="42">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="42">XLII.</num></label>
 <quote type="lemma">
 <lb/>sed a superiori parte adhibere vim licet. .</quote>
 <lb rend="rule"/>
@@ -3764,9 +3748,8 @@
 </div>
  <pb n="18b.480"/>
 <div type="textpart" subtype="chapter" n="43">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="43">XLIII.</num></label>
 <quote type="lemma">
 <lb/>sed etiam ubi velis alte lignum destgere rotundum ac leve,
 <lb/>ste ut pars esus exstet quae inter crura media inter
@@ -3781,9 +3764,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="44">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="44">XLIV.</num></label>
 <quote type="lemma">
 <lb/>Deinde ne corpus inclinetur in crus quod intenditur collocare
 <lb/>aliquem a latere oportet qui clunem repellar, ne
@@ -3802,9 +3784,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="45">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="45">XLV.</num></label>
 <quote type="lemma">
 <lb/>Idem quoque stet, si ad utramque alam lignum figatur,
 <lb/>brachia vero serventur extensu et alius genu prehendens
@@ -3822,9 +3803,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="46">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="46">XLVI.</num></label>
 <quote type="lemma">
 <lb/>Nihil enim prohibet, si placeat, lora alia ad genu vel ad
 <lb/>famur alligare, alnimque rotae modiolum post caput
@@ -3843,9 +3823,8 @@
 </div>
  <pb n="18b.483"/>
 <div type="textpart" subtype="chapter" n="47">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="47">XLVII.</num></label>
 <quote type="lemma">
 <lb/>Et ad contraria atque ad pedes attrahat.</quote>
 <lb rend="rule"/>
@@ -3861,9 +3840,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="48">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="48">XLVIII.</num></label>
 <quote type="lemma">
 <lb/>Pro modiolo etiam poteris lecto mediocrem nubeculam
 <lb/>subjicere ejusque utrumque caput stabilire lignisque recurvatis
@@ -3891,9 +3869,8 @@
 </div>
  <pb n="18b.485"/>
 <div type="textpart" subtype="chapter" n="49">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="49">XLIX.</num></label>
 <quote type="lemma">
 <lb/>Commode item extendens per axiculos ab utraque parte
 <lb/>collocatos. sunt etiam aliae extendendi rationes quam
@@ -3918,8 +3895,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="50">
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="50">L.</num></label>
 <quote type="lemma">
 <lb/>optimum autem est, st quis medicinam in magna urbe
 <lb/>exerceat, paratum habere lignum per quod vim omnem
@@ -3938,9 +3915,8 @@
 </div>
  <pb n="18b.487"/>
 <div type="textpart" subtype="chapter" n="51">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="51">LI.</num></label>
 <quote type="lemma">
 <lb/>Ubi sutis extenderis.</quote>
 <lb rend="rule"/>
@@ -3951,9 +3927,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="52">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="52">LII.</num></label>
 <quote type="lemma">
 <lb/>Articulus facile reconditur. Diducitur enim ab antiqua
 <lb/>sude, sic ut e regione supra ipsum spectans non haereat.
@@ -3985,9 +3960,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="53">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="53">LIII.</num></label>
 <quote type="lemma">
 <lb/>Dandum insuper eodem modo vinculum est aeque capitibus
 <lb/>ea parte quae cestu t impositis, ibique primo et plu-
@@ -4006,9 +3980,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="54">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="54">LIV.</num></label>
 <quote type="lemma">
 <lb/>Tum hinc atque hinc plurimum.</quote>
 <lb rend="rule"/>
@@ -4023,9 +3996,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="55">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="55">LV.</num></label>
 <quote type="lemma">
 <lb/>Hunc autem articulum ubi primo devinximus, comprimere
 <lb/>magis debemus quam in manu.</quote>
@@ -4038,9 +4010,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="56">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="56">LVI.</num></label>
 <quote type="lemma">
 <lb/>Insueto vinculo pars deligata reliquo corpore sublimior habeatur.
 <lb/>sic tamen continenda est ut pes minime susu
@@ -4060,9 +4031,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="57">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="57">LVII.</num></label>
 <quote type="lemma">
 <lb/>Extenuari autem corpus debet, prout osse graviter suo
 <lb/>loco excidam. Nonnulla enim leviter, nonnulla plurimum
@@ -4076,9 +4046,8 @@
 </div>
  <pb n="18b.492"/>
 <div type="textpart" subtype="chapter" n="58">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="58">LVIII.</num></label>
 <quote type="lemma">
 <lb/>Magis omnino ac diutius extenuare corpus oportet ubi
 <lb/>crus quam ubi brachium laeditur, quum illud majus
@@ -4101,9 +4070,8 @@
 </div>
  <pb n="18b.493"/>
 <div type="textpart" subtype="chapter" n="59">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="59">LIX.</num></label>
 <quote type="lemma">
 <lb/>Plerum ubi ossa ex toto in suam sedem non revertuntur;
 <lb/>sed aliquid abest, tempore extenuatur coxa, famur et
@@ -4132,9 +4100,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="60">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="60">LX.</num></label>
 <quote type="lemma">
 <lb/>pleraque tamen in interiorem partem promoventur. sed
 <lb/>st integra cute utrumque cruris os comminuatur, validius
@@ -4156,9 +4123,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="61">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="61">LXI.</num></label>
 <quote type="lemma">
 <lb/>Atque ita extensu ambo deligare, utrumvis devinxeris, an
 <lb/>non eadem cruri ac brachio accommodantur? Namque
@@ -4199,9 +4165,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="62">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="62">LXII.</num></label>
 <quote type="lemma">
 <lb/>ob has igitur evidentissimas causas non convenis eodem
 <lb/>habitu brachium atque crus extendere et vincire. Quod
@@ -4240,9 +4205,8 @@
 </div>
  <pb n="18b.499"/>
 <div type="textpart" subtype="chapter" n="63">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="63">LXIII.</num></label>
 <quote type="lemma">
 <lb/>.Maxime autem pro valetudine est cervical sub/ icere ex
 <lb/>lino aut lana, non durum, latum quod medium in longitudinem
@@ -4255,9 +4219,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="64">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="64">LXIV.</num></label>
 <quote type="lemma">
 <lb/>De canali qui tracto cruri subjicitur incertus sum quid
 <lb/>dem .consilii, substet necne debeat. Prodest quidem,
@@ -4399,9 +4362,8 @@
 </div>
  <pb n="18b.507"/>
 <div type="textpart" subtype="chapter" n="65">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="65">LXV.</num></label>
 <quote type="lemma">
 <lb/>cavendum est ne ferulae e regione talorum vel esus chordae
 <lb/>quae a crure ad pedem tendit imponantur. Consuwent
@@ -4466,9 +4428,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="66">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="66">LXVI.</num></label>
 <quote type="lemma">
 <lb/>rerum longioris osus structura in interiori articulo di/similis
 <lb/>est. Non enim similiter stertitur cubitus et poples.
@@ -4538,9 +4499,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="67">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="67">LXVII.</num></label>
 <quote type="lemma">
 <lb/>Alsi femoris os pactum esi, valenter omnino extendi debet,
 <lb/>ne nimis quam res postulat id stat; siquidem plus
@@ -4581,9 +4541,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="68">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="68">LXVIII.</num></label>
 <quote type="lemma">
 <lb/>crasse enim ac robusta caro vinculum superabit, at non
 <lb/>separabitur. Id ergo quo de agitur extendi valenter
@@ -4617,9 +4576,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="69">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="69">LXIX.</num></label>
 <quote type="lemma">
 <lb/>Illud etiam scire licet quod femur ab exteriori parte gibbum
 <lb/>est magis quam ab interiori et a priori magis
@@ -4662,9 +4620,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="70">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="70">LXX.</num></label>
 <quote type="lemma">
 <lb/>Circumdare autem aliquot lintea oportet aeque in orbem
 <lb/>circa coxam et illa, ut inguina etiam et quod inter
@@ -4676,7 +4633,7 @@
 <lb/>Coxa, id est os illud in quod fle interit femoris caput,
  <lb/><foreign xml:lang="grc">ἰσχίον</foreign> Graece nuncupatur, sicut et ipsius cavum <foreign xml:lang="grc">κο-τύλη</foreign>.
 <lb/>Utroque nomine utitur poeta in hoc carmine:</p>
-<lg>
+<lg rend="italic">
  <l><foreign xml:lang="grc">Ἔνθα τε μηρὸς</foreign></l>
  <l><foreign xml:lang="grc">ἰσχίῳ ἐνστρέφεται, κοτύλην δέ τε μὶν καλέουσιν.</foreign></l>
 </lg>
@@ -4686,7 +4643,7 @@
   <lb/>nonnulli pro parte quae stupet ipsis est quae <foreign xml:lang="grc">λαπἀρα</foreign> proprie
 <lb/>vocatur, quod verbum apud poetam reperitur in eo
 <lb/>carmine:</p>
-<lg>
+<lg rend="italic">
  <l><foreign xml:lang="grc">οὖσα κατὰ λαπάρην.</foreign></l>
 </lg>
 <p rend="nonindented">
@@ -4697,7 +4654,7 @@
  <lb/>loco agemus. Quae autem partes <foreign xml:lang="grc">ἰξύες</foreign> nominentur non est
 <lb/>multis agam; ob id enim quod poeta numero singulari
  <lb/><foreign xml:lang="grc">ἰξύαν</foreign> scripsit in illo carmine; .</p>
- <lg>
+ <lg rend="italic">
 <l><foreign xml:lang="grc">περὶ ζώνην</foreign></l>
  <l><foreign xml:lang="grc">βάλλεται ἰξύην ἐκατὸν θυσάνοις ἀραρυῖαν.</foreign></l>
  </lg>
@@ -4737,9 +4694,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="71">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="71">LXXI.</num></label>
 <quote type="lemma">
 <lb/>A qua semper ..trimque sutis recedere debent. semper
 <lb/>autem cautio sit, ne tmponantur super ossa in articulis
@@ -4764,9 +4720,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="72">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="72">LXXII.</num></label>
 <quote type="lemma">
 <lb/>Tumores vero juxta poplitem vel pedem aut alibi sub consiringentibus
 <lb/>vinculis aspergentes multa lana succida
@@ -4824,9 +4779,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="73">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="73">LXXIII.</num></label>
 <quote type="lemma">
 <lb/>Hac siquidem via tumor celerrime extenuaretur.</quote>
 <lb rend="rule"/>
@@ -4846,9 +4800,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="74">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="74">LXXIV.</num></label>
 <quote type="lemma">
 <lb/>Et ad priorem /uncturam superferretur. Ad quem deligaudi
 <lb/>modum veniendum non est, nisi tumor aut pustulis
@@ -4874,9 +4827,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="75">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="75">LXXV.</num></label>
 <quote type="lemma">
 <lb/>si quis fumari canalem subiiciat .breviorem quam ut ultra
 <lb/>poplitem pertineat, noxam magis quam opem ageret,
@@ -4901,9 +4853,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="76">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="76">LXXVI.</num></label>
 <quote type="lemma">
 <lb/>netur item fascia lenta juxta poplitem cum canali, quomodo
 <lb/>et insumes involvuntur in cunis ; sic enim ubi fa-
@@ -4926,9 +4877,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="77">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="77">LXXVII.</num></label>
 <quote type="lemma">
 <lb/>Rem maxime videndum est; ut in tractura tam femoris
 <lb/>quam cruris quantum potest. imus calx optime contineaturi
@@ -4952,7 +4902,7 @@
  <lb/>De crure autem quod fulcitur <foreign xml:lang="grc">ἠρματισμὲνης</foreign> dixit ducto
  <lb/>vocabulo a fulcris quae dicuntur Graece <foreign xml:lang="grc">ἕρματα</foreign>, quorum
 <lb/>meminit poeta in eo carmine:</p>
-<lg>
+<lg rend="italic">
  <l><foreign xml:lang="grc">ὑπὸ δ’ ᾔρεον ἕρματα νηῶν.</foreign></l>
 </lg>
  <p rend="nonindented">
@@ -4971,6 +4921,7 @@
 
 
 <lb rend="head"/>
+ <lb/><label type="head"><num value="1">I.</num></label>
 <quote type="lemma">
 <lb/>Interveniunt haec quibus os quidem tractum esi, at non
 <lb/>excidit nec alioquin vulnus accestis.</quote>
@@ -4988,9 +4939,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="2">II.</num></label>
 <quote type="lemma">
 <lb/>Quibus sine pigmentis ossa simplici modo comminuta, eodem
 <lb/>dis vel certe posteriori reposita sunt atque iit suam
@@ -5024,9 +4974,8 @@
 </div>
  <pb n="18b.535"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="3">III.</num></label>
 <quote type="lemma">
 <lb/>Nonnulli, atque hi non admodum persiciunt, ulceribus imponunt
 <lb/>aliquod ex purgantibus medicamentis, ut ceratum
@@ -5127,9 +5076,8 @@
 </div>
  <pb n="18b.540"/>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="4">IV.</num></label>
 <quote type="lemma">
 <lb/>Quibus tam cruri, quam brachii utraque o/su suerint comminuta,
 <lb/>breviora etiam stunt.</quote>
@@ -5160,9 +5108,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="5">V.</num></label>
 <quote type="lemma">
 <lb/>Rursus alii reperiuntur qui lintea in ejusmodi casibus a
 <lb/>principio protinus circumdantes utriusque devinciunt,
@@ -5191,9 +5138,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="6">VI.</num></label>
 <quote type="lemma">
 <lb/>Nam si carnosa pars quae fana est hinc atque hinc vinciatur,
 <lb/>media non comprehensu ea pars quae relicta sine
@@ -5227,9 +5173,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="7">VII.</num></label>
 <quote type="lemma">
 <lb/>.Igitur necesse est decoloretur ulcus et materia ad ipsum
 <lb/>exprimatur, tum lacrimet ac minime suppuret ; ossa vero
@@ -5261,9 +5206,8 @@
 </div>
  <pb n="18b.546"/>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="8">VIII.</num></label>
 <quote type="lemma">
 <lb/>tUlcus item pulsi adligetur atque igneum erit, tumor item
 <lb/>coget cataplasmata superdari, quod incommodum similiter
@@ -5318,9 +5262,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="9">IX.</num></label>
 <quote type="lemma">
 <lb/>Feratur item fascia praeter ulcus ad partes etiam quae
 <lb/>supra sunt atque insta.</quote>
@@ -5335,9 +5278,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="10">X.</num></label>
 <quote type="lemma">
 <lb/>Ergo caput fasciae iniiciatur e regione ulceris et laxius
 <lb/>paulo attrahatur, quamst functura estet citra ulcus, Circ
@@ -5373,9 +5315,8 @@
 </div>
  <pb n="18b.551"/>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="11">XI.</num></label>
 <quote type="lemma">
 <lb/>Reliqua curatio este debet perinde acsi ossa citra plagam
 <lb/>persuingantur, nisi quod ferulae non sunt imponendae.
@@ -5393,9 +5334,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="12">XII.</num></label>
 <quote type="lemma">
 <lb/>Tamen si ferulae super accommodentur, e- regione ulceris
 <lb/>minime circumponantur, detur que opera ut laxiores
@@ -5423,9 +5363,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="13">XIII.</num></label>
 <quote type="lemma">
 <lb/>Eandem vero curationem requirunt ulcera quae non a
 <lb/>principio tracturae, sed vel ob lintea nimium arctata
@@ -5451,9 +5390,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="14">XIV.</num></label>
 <quote type="lemma">
 <lb/>At si nihil ejusmodi sit, sed ipsum ulcus irritatum, nigrum
 <lb/>valde aut sordidum reperiatur, tum caro purulenta, suturumque
@@ -5478,9 +5416,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="15">XV.</num></label>
 <quote type="lemma">
 <lb/>Tantum fasciae laxae admodum ordiantur a tumore qui
 <lb/>in extremitatibus est, deinde semper sursum versus circumagantur,
@@ -5518,9 +5455,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="16">XVI.</num></label>
 <quote type="lemma">
 <lb/>Ulceri abunde esi pannum. inducere albo cerato inunctum,
 <lb/>sive caro sive nemus cadere debeat: his enim acria superdare
@@ -5549,9 +5485,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="17">XVII.</num></label>
 <quote type="lemma">
 <lb/>At si quis deceptus recenti vulnere nullo modo existimans
 <lb/>fare, ut os recedat, quod recessurum sit, eam vinciendi
@@ -5568,9 +5503,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="18">XVIII.</num></label>
 <quote type="lemma">
 <lb/>Denunciant autem futurum este ut sub curatione hac ossa
 <lb/>recedant, quod pus ex ulcere amplius prosunt et videtur
@@ -5592,9 +5526,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="19">XIX.</num></label>
 <quote type="lemma">
 <lb/>Resolvere igitur ac deligare suequetttitis oportet ob humoris
 <lb/>abundantiam, quum alioquin febres excitentur et
@@ -5610,9 +5543,8 @@
 </div>
  <pb n="18b.561"/>
 <div type="textpart" subtype="chapter" n="20">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="20">XX.</num></label>
 <quote type="lemma">
 <lb/>Ergo ubi exspectatio est tenuium partium quae ab osse
 <lb/>recedant, haud multum expedit variare, fascia tantum
@@ -5658,9 +5590,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="21">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="21">XXI.</num></label>
 <quote type="lemma">
 <lb/>At quibus grandius fragmentum exspectas ab osse necetsurum,
 <lb/>sive. initio praescnsieris sive postea cognoveris,
@@ -5782,9 +5713,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="22">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="22">XXII.</num></label>
 <quote type="lemma">
 <lb/>Imponantur autem hi super ipsum ulcus. et hinc atque
 <lb/>hinc neque ullo modo adstringantur, sed eatenus insu
@@ -5800,9 +5730,8 @@
 </div>
  <pb n="18b.570"/>
 <div type="textpart" subtype="chapter" n="23">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="23">XXIII.</num></label>
 <quote type="lemma">
 <lb/>Ad ulcera vero admoveatur ceratum quod picem habeat
 <lb/>vel aliquod ex iis medicamentis quae cruentis vulneribus
@@ -5832,9 +5761,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="24">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="24">XXIV.</num></label>
 <quote type="lemma">
 <lb/>si aestas suerit, panni subinde vino madesiant. superdetur
 <lb/>hieme multa lana succida vino atque oleo respersu.</quote>
@@ -5852,9 +5780,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="25">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="25">XXV.</num></label>
 <quote type="lemma">
 <lb/>subjiciaturque pellis sic figurata, ut humor per ipsum
 <lb/>facile descendat et quod effunditur recipiatur.</quote>
@@ -5872,9 +5799,8 @@
 </div>
  <pb n="18b.573"/>
 <div type="textpart" subtype="chapter" n="26">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="26">XXVI.</num></label>
 <quote type="lemma">
 <lb/>Itsemini/su etiam debemus exulcerari ejusmodi Partes, si
 <lb/>diu in eodem habitu perseverent et. aegerrime ad faniratem
@@ -5889,9 +5815,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="27">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="27">XXVII.</num></label>
 <quote type="lemma">
 <lb/>.su iis qui aliquo ex superioribus modis vel ex iis qui postea
 <lb/>subiicientur sub vinculis nequeunt ad sanitatem perduci,
@@ -5912,9 +5837,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="28">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="28">XXVIII.</num></label>
 <quote type="lemma">
 <lb/>Quodsi bene expediteque rem agere quis velit, necesse esi
 <lb/>.machinationibus utatur, ut functi ossis intensio /usia sit
@@ -5946,9 +5870,8 @@
 </div>
  <pb n="18b.576"/>
 <div type="textpart" subtype="chapter" n="29">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="29">XXIX.</num></label>
 <quote type="lemma">
 <lb/>si quis e corio Aegyptio binos orbes suat, qualibus utuntur
 <lb/>qui diu in magnis compedibus detinentur, suaque
@@ -6032,9 +5955,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="30">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="30">XXX.</num></label>
 <quote type="lemma">
 <lb/>Atagna cura ne imae fustium partes cuti insidant, sud
 <lb/>extremis orbibus. Parentur autem baculorum paria tria
@@ -6057,9 +5979,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="31">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="31">XXXI.</num></label>
 <quote type="lemma">
 <lb/>Haec si recte parentur fuste intendant, tum pariter e regione
 <lb/>nec tractura aliquod tormentum sentiet: nam si
@@ -6085,9 +6006,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="32">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="32">XXXII.</num></label>
 <quote type="lemma">
 <lb/>Nihil autem prohibet, si quis velit vel duo bacula superiora
 <lb/>inter su /ungere vel aliquid etiam supertnjicer^
@@ -6111,9 +6031,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="33">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="33">XXXIII.</num></label>
 <quote type="lemma">
 <lb/>plerique tamen medicorum tracturae, seu integra cutis sit,
 <lb/>seu vulnus etiam accesserit, primis diebus lana sucrida
@@ -6153,9 +6072,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="34">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="34">XXXIV.</num></label>
 <quote type="lemma">
 <lb/>Nisi si quis dicat alios quoque morbos este ulcera, quod
 <lb/>quodammodo verisimile est.
@@ -6197,9 +6115,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="35">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="35">XXXV.</num></label>
 <quote type="lemma">
 <lb/>saepenumero alii aliis germani sunt.</quote>
 <lb rend="rule"/>
@@ -6216,9 +6133,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="36">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="36">XXXVI.</num></label>
 <quote type="lemma">
 <lb/>Quicunque vero existimant lana utendum este, donec ad
 <lb/>septimum diem ventum fuerit, dein extendendum, dirigendum
@@ -6242,9 +6158,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="37">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="37">XXXVII.</num></label>
 <quote type="lemma">
 <lb/>Alia etiamnum affert incommoda quae omnia persequi
 <lb/>longum est.</quote>
@@ -6269,9 +6184,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="38">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="38">XXXVIII.</num></label>
 <quote type="lemma">
 <lb/>Quibus ossa /iacta et cute excedentia restitui nequeunt,
 <lb/>hoc modo in suam sedem collocantur.</quote>
@@ -6290,9 +6204,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="39">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="39">XXXIX.</num></label>
 <quote type="lemma">
 <lb/>.Ferramenta facere oportet ad similitudinem vectium quibus
 <lb/>in lapidicinis utuntur, laxiora ex una parte, angustiora
@@ -6325,9 +6238,8 @@
 </div>
  <pb n="18b.593"/>
 <div type="textpart" subtype="chapter" n="40">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="40">XL.</num></label>
 <quote type="lemma">
 <lb/>Ex universis enim machinationibus quae ab hominibus excogitae
 <lb/>sunt, hae tres sunt omnium valenti/stmae, axis
@@ -6355,9 +6267,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="41">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="41">XLI.</num></label>
 <quote type="lemma">
 <lb/>Atqui multo magis nervorum distensio excitabitur, st os
 <lb/>restituatur, quam si restitui nequeat. Quod quidem ignorare
@@ -6377,9 +6288,8 @@
 </div>
  <pb n="18b.595"/>
 <div type="textpart" subtype="chapter" n="42">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="42">XLII.</num></label>
 <quote type="lemma">
 <lb/>Neque enim iis quae susto laxiora sunt nervorum distensio
 <lb/>aut rigor supernasuitur, sed iis quae ultra debitum intenduntur.
@@ -6416,9 +6326,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="43">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="43">XLIII.</num></label>
 <quote type="lemma">
 <lb/>Attendenda insuper est figura ulceris, ne sub vinculo hiet
 <lb/>ac divaricatur.</quote>
@@ -6489,9 +6398,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="44">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="44">XLIV.</num></label>
 <quote type="lemma">
 <lb/>Easuia commode quibusdam a dextra parte attrahitur,
 <lb/>quibusdam a sinistra, aliis in utramque partem ducitur.
@@ -6510,9 +6418,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="45">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="45">XLV.</num></label>
 <quote type="lemma">
 <lb/>osa quaedam sub functura diuturna aliis putrescunt, aliis
 <lb/>minime, et quibusdam gravius, quibusdam levius; tum
@@ -6541,9 +6448,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="46">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="46">XLVI.</num></label>
 <quote type="lemma">
 <lb/>His autem de causis os praecidendum est. si restitui nequit
 <lb/>et parum quid excedere videatur, abscindere non
@@ -6581,9 +6487,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="47">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="47">XLVII.</num></label>
 <quote type="lemma">
 <lb/>Quibus semotis vel humeri os excespt fare non evadunt,
 <lb/>sunt enim ossa. haec grandia et medullosa ; adde quod
@@ -6622,9 +6527,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="48">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="48">XLVIII.</num></label>
 <quote type="lemma">
 <lb/>Ubi restituantur, veratrum molle potui dandum est eodem
 <lb/>die, si eodem die restituuntur, alioquin ne tentare quidem
@@ -6650,9 +6554,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="49">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="49">XLIX.</num></label>
 <quote type="lemma">
 <lb/>si homo naturaliter amara bile redundat, sustineri debet
 <lb/>potione aquae cui oxyglicis odorati paulum adspersum
@@ -6707,9 +6610,8 @@
 </div>
  <pb n="18b.610"/>
 <div type="textpart" subtype="chapter" n="50">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="50">L.</num></label>
 <quote type="lemma">
 <lb/>Deinde paulatim pro ratione ad quemlibet victum reversatur.
 <lb/>Quibus item recondita offa non suerint, eadem
@@ -6732,9 +6634,8 @@
 </div>
  <pb n="18b.611"/>
 <div type="textpart" subtype="chapter" n="51">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="51">LI.</num></label>
 <quote type="lemma">
 <lb/>Ubi ossa genu vel toto loco mota sunt, vel paulum excejferunt,
 <lb/>casus multo mitior est, quam ubi ea quae in
@@ -6754,9 +6655,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="52">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="52">LII.</num></label>
 <quote type="lemma">
 <lb/>Nam pro magnitudine tenuior est articulus femoris quam
 <lb/>humeri.</quote>
@@ -6788,9 +6688,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="53">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="53">LIII.</num></label>
 <quote type="lemma">
 <lb/>Atque hic unus lusiam naturam habet, eamdemque rotundum.
 <lb/>Brachii autem articulus magnus et gradus plures
@@ -6888,9 +6787,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="54">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="54">LIV.</num></label>
 <quote type="lemma">
 <lb/>Ad haec ostium cruris longitudo similis esi, sed quod ab
 <lb/>exteriori parte esi, paululum excedit, idque non est
@@ -6936,9 +6834,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="55">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="55">LV.</num></label>
 <quote type="lemma">
 <lb/>sed brachii ossa inaequalia sunt, quodque brevius esi
 <lb/>multo plenius esi, quod tenuius plurimum ultra articulum
@@ -6963,9 +6860,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="56">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="56">LVI.</num></label>
 <quote type="lemma">
 <lb/>Nervis item illigatur qua parte ossa inter su consunguntur,
 <lb/>majorem vero partem tenet articulus.</quote>
@@ -6994,9 +6890,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="57">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="57">LVII.</num></label>
 <quote type="lemma">
 <lb/>Pluribus autem nervis ad humerum alligatur id os quod
 <pb n="18b.623"/>
@@ -7021,9 +6916,8 @@
 </div>
  <pb n="18b.624"/>
 <div type="textpart" subtype="chapter" n="58">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="58">LVIII.</num></label>
 <quote type="lemma">
 <lb/>ob cujus naturae modum ossa quae in genu articulo sunt
 <lb/>saepius excidunt et facilius reconduntur,</quote>
@@ -7039,9 +6933,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="59">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="59">LIX.</num></label>
 <quote type="lemma">
 <lb/>Insiammatio vero non magna supernascitur, neque articuli
 <lb/>sarculum.</quote>
@@ -7071,9 +6964,8 @@
 </div>
  <pb n="18b.626"/>
 <div type="textpart" subtype="chapter" n="60">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="60">LX.</num></label>
 <quote type="lemma">
 <lb/>Plerumque autem in interiorem partem movetur, interdum
 <lb/>in exteriorem, nonnumquam in poplitem, quae mutanonas
@@ -7106,9 +6998,8 @@
 <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="61">
-
-
 <lb rend="head"/>
+<lb/><label type="head"><num value="61">LXI.</num></label>
 <quote type="lemma">
 <lb/>rere sutis est modice extendere crus scilicet ab inpriori
 <lb/>parte, famur a contraria.</quote>

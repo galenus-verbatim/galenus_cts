@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title>De causis pulsuum</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg061.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -54,7 +75,6 @@
               <date>1825</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x09">BIU Santé, Medica</ref></biblStruct>
         <biblStruct>
           <monogr corresp="Basel">
@@ -96,13 +116,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg061.verbatim-lat1">
 <pb n="9.1"/>
@@ -112,10 +175,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALEN DE CAVSIS PVLSVVM
 <lb/>LIBER I</head>
-
-
 <p rend="indent">
- <lb/>Clausarum quae pulsus variant aliae geiterationis
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Clausarum quae pulsus variant aliae geiterationis
 <lb/>eorum sunt causae, aliae tantum alterationis. Ge.
 <lb/>novationis tum usus cujus gratia fiunt tum facultas a
 <lb/>qua, tum instrumenta per quae distenduntur: alterationis
@@ -167,10 +228,8 @@
 <lb/>efficiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Videtur porro perpetuo cum omnibus arteriis
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Videtur porro perpetuo cum omnibus arteriis
 <lb/>cor motum illum pulsatilem, ut vocant, dum superstes
 <lb/>animans sit, habere, ubi interiit, nec usiam arteriam nec
 <lb/>vero ipsum cor amplius pulsare videas. Quo fuisse tum
@@ -201,10 +260,8 @@
 <lb/>satis est hoc loco nosse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>De usu eorum illa fiunt, quae alio loco demonstravimus
+<lb/><label type="head"><num value="3">Cap. III.</num></label> De usu eorum illa fiunt, quae alio loco demonstravimus
 <lb/>commemoranda, quod tuendi cauta caloris
 <pb n="9.6"/>
 <lb/>universi corporis creati sunt, quem refrigerent et si quid
@@ -213,10 +270,8 @@
 <lb/>hos referre animalem spiritum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Reliqua et tertia gignendorum pulsuum conlinens
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Reliqua et tertia gignendorum pulsuum conlinens
 <lb/>causa ipsum est arteriarum corpus. Nam omnis facultas,
 <lb/>quae alicuius causa agit, instrumenta quaerit ad opus
 <lb/>apposita; erat autem hic accommodatum instrumentum quod
@@ -269,10 +324,8 @@
 <lb/>sigillatim demonstrem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Si amplior in corpore fit collectus calor,
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Si amplior in corpore fit collectus calor,
 <lb/>animanti opus erit cum majore respiratione tum majoribus
 <lb/>pulsibus, et quia majoribus, continuo etiam celerioribus et
 <lb/>crebrioribus; sicut enim qui sitiunt non multum mosto,
@@ -340,10 +393,8 @@
 <lb/>etiam, secundum accidens quoddam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Puto jam quoque constare quinam e pulfilius
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Puto jam quoque constare quinam e pulfilius
 <lb/>caloris nativi defectum comitentur, hunc scilicet nullum
 <lb/>necessario comitari. Familiares tamen sunt ei parvus
 <lb/>et turdus praecipue, mox etiam rarus. Nam ut natura,
@@ -354,10 +405,8 @@
 <lb/>quod rarum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Sed quoniam satis de his dictum est, si
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Sed quoniam satis de his dictum est, si
 <lb/>quod produximus dudum, quantum disputationi conducat
 <lb/>perspexerimus, seriem orationis prosequemur. Inter magnum
 <lb/>pulsum et parvum naturalis intercedit et moderatus:.
@@ -594,10 +643,8 @@
 <lb/>in commentariis De dyspnoea.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Ad pulsus redeamus ac repetamus,
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Ad pulsus redeamus ac repetamus,
 <lb/>quando aut per solum calorem, aut frigiditatem allevantur,
 <lb/>nec causa alia continens a pristina natura desciscat ulla, alteratio
 <lb/>eorum talis necessario existet, qualem diximus. At
@@ -689,10 +736,8 @@
 <lb/>quod perinde est ac crebros facit. Atque de sus hactenus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Transeamus jam ad instrumentorum distorentias
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Transeamus jam ad instrumentorum distorentias
 <lb/>ac inspiciamus primum peculiares utriusque earum
 <lb/>pulsus ; deinde aliarum etiam causarum immutationes, uti
 <lb/>fecimus paulo ante. Quod igitur, quum durius solito vel
@@ -828,10 +873,8 @@
 <lb/>pulsus, maxime si superior sit frigiditas.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Sed quandoquidem et de his quae par
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Sed quandoquidem et de his quae par
 <lb/>erat exposuimus, deinceps instrumentorum -differentias varias
 <lb/>faciamus ex differentiis facultatis, illud prius in metuoriam
 <lb/>revocantes, quot excellentiam caloris affectus sequuntur
@@ -864,10 +907,8 @@
 <lb/>mutatio. </p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Restat jam ut omnes simul corrigamus
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Restat jam ut omnes simul corrigamus
 <lb/>continentium caularum differentias, et fiunt coniugationes
 <pb n="9.41"/>
 <lb/>numero octo; duae, quum remissa facultate pariter et usu
@@ -1055,10 +1096,8 @@
 <lb/>at minores ac crebriores.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Quia vero quae de his dicenda erant
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Quia vero quae de his dicenda erant
 <lb/>diximus, superest ut pulsum unum aliquem proponamus, in
 <lb/>quo doceamus usum et fructum hujus exercitationis. Sit
 <lb/>vero celer, quem pecusiarem robori faculsatis esse usuique
@@ -1113,10 +1152,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE CAVSIS PVLSVVM
 <lb/>LIBER II.</head>
-
-
 <p rend="indent">
- <lb/>Ac de vehementi quidem pulsu et duro
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Ac de vehementi quidem pulsu et duro
 <lb/>atque magno, praeterea celari, crebro contrarirsque horum
 <lb/>in primo libro explicavimus, quae cujusque origo sit
 <lb/>et quot mulgeat causis, tum quemadmodum inter se conspirantibus ;
@@ -1228,10 +1265,8 @@
 <lb/>facultatis noxae efficiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Instrumentorum vitia in hunc modum. Ubi
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Instrumentorum vitia in hunc modum. Ubi
 <lb/>circumiectas regiones arteriae, quae ad hoc creatae sunt,
 <lb/>ut eam distentam excipiant, aliud corpus insederit, non
 <lb/>possunt per illud coarctatae arteriae satis distendi. Itaque
@@ -1301,10 +1336,8 @@
 <lb/>adjiciam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Facultatis quae creat pulsus non est
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Facultatis quae creat pulsus non est
 <lb/>necesse imbecillitatem in omnibus affectibus parem esse, sed
 <lb/>in ea permagnus est excessus et defectus ; nam prima quidem
 <lb/>et parva minores languidioresque, non autem decurtatos
@@ -1358,10 +1391,8 @@
 <lb/>collectiva satis dictum est.
 </p></div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Nunc de inaequalitate unius pulsus agendum
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Nunc de inaequalitate unius pulsus agendum
 <lb/>est, cujus sunt complures singulares differentiae. Has
 <lb/>laborandum nobis est ut ad universales reducamus cunctas ;
 <lb/>quibus perspectis, etiam si quid desideretur singulare, ex
@@ -1468,10 +1499,8 @@
 </div>
 <pb n="9.74"/>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>nunc adpulsus commentandos transeamus,
+<lb/><label type="head"><num value="5">Cap. V.</num></label> nunc adpulsus commentandos transeamus,
 <lb/>qui totius distentionis habent quidem perpetuum motum, non
 <lb/>universum tamen pari celeritate ; de quibus in libro de differetulis
 <lb/>pulsuum abunde diximus, et quot omnes hujus generis
@@ -1505,10 +1534,8 @@
 <lb/>caulas, de quibus modo nixi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Porro ad reliquum jam genus inaequalitalis
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Porro ad reliquum jam genus inaequalitalis
 <lb/>in una parte positae, quos dicrotos pulsus vocamus, pergenitum
 <lb/>est. Hos diximus non posse esse, nisi vibrati sint;
 <pb n="9.76"/>
@@ -1590,10 +1617,8 @@
 <lb/>vel crassitudine, vel abundantia humorum et cernis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Cap rixans vero quem vocant hoc cum
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Cap rixans vero quem vocant hoc cum
 <lb/>dimoto commune habat, quod bis pulsat, non communem
 <lb/>tamen causam habet. Neque enim cum instrumentorum duritie
 <lb/>necesse isti est nec cum intemperie ut coniungatur.
@@ -1615,10 +1640,8 @@
 <lb/>quatenus flagitat institutionis perspicuitas.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Nunc quum res aperte declarata sit, .ad
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Nunc quum res aperte declarata sit, .ad
 <lb/>aliud genus pulsuum veniendum .est inaequalium, quos undosos,
 <lb/>noununquam etiam vermiculantes vocant. Diximus
 <lb/>vero .de his quoque sola. eos distare quantitate, sub uno tamen
@@ -1687,10 +1710,8 @@
 </div>
 <pb n="9.85"/>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Sed quia satis est dictum de his, de decurtatis
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Sed quia satis est dictum de his, de decurtatis
 <lb/>jam agamus qui imbeclllitatem consequuntur factus
 <lb/>talis, a qua pulsus creantur, quum enim a corde permeet
 <lb/>in singulas arterias contentio et magis. ec magis in partibus
@@ -1712,10 +1733,8 @@
 <lb/>tardius minusque.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Igitur naturam innuentium et circumnuentium
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Igitur naturam innuentium et circumnuentium
 <lb/>pulsuum simili ratione commentabimm. Possint forsitan
 <lb/>pari modo ac simili aliquando fieri ? nam saepe luculenter
 <lb/>mihi certe apparuerunt aliis de causis accidisse. Ubi
@@ -1733,10 +1752,8 @@
 </div>
 <pb n="9.87"/>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>At quomodo ex situ arteriae fit pulsuum
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> At quomodo ex situ arteriae fit pulsuum
 <lb/>inaequalitas? hoc enim deesse orationi adhuc videtur. Qui
 <lb/>vero aliter, ac dixit Hippocrates, qui de omni nos distortrone
 <lb/>in communi docuit ? Etenim uterus similiter et spina
@@ -1753,10 +1770,8 @@
 <lb/>est.
 </p></div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Sed quoniam de his quae nobis risu sunt
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Sed quoniam de his quae nobis risu sunt
 <lb/>exposuimus, jam de convulfivo pulsu etiam disputandum
 <lb/>est; qui nomen recte invenit ex ipsaspecie et affectu, quem
 <pb n="9.88"/>
@@ -1786,10 +1801,8 @@
 <lb/>communis appareat affectus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Sed quia de convulsivo pulsu diximus,
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Sed quia de convulsivo pulsu diximus,
 <lb/>residuum ad commentationem omnium inaequalitatum adji- .
 <lb/>clam. Superest nimirum quemadmodum alti, humiles, lati,
 <lb/>angusti, longi et breves pulsus fiant, maximus est enim borum
@@ -2018,10 +2031,8 @@
 <lb/>ex commemoratis,</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Proximum est ut de inordinatis et ordiuatis
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Proximum est ut de inordinatis et ordiuatis
 <lb/>dicamus. Ili pulsus quando inaequales omnes sunt,
 <pb n="9.102"/>
 <lb/>commode docuimus in libris de differentiis pulsuum; sed in
@@ -2036,10 +2047,8 @@
 <lb/>ambo; alterum in ordinatis, qui inaequales sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Porro et mutationum rhythmorum causas,
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Porro et mutationum rhythmorum causas,
 <lb/>(hae enim reflant explicandae) si persequare superiora, facile
 <lb/>invenias. Si enim recte demonstratum est, allici per
 <lb/>distentiones arteriarum aeream quandam substantiam; in
@@ -2082,10 +2091,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE CAVSIS PVLSVVM
 <lb/>LIBER III.</head>
-
-
 <p rend="indent">
- <lb/>Postquam de pulsuum alterationibus, quae
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Postquam de pulsuum alterationibus, quae
 <lb/>ex primis et praecipuis causis proficiscuntur, satis superiori
 <lb/>sermone disputavimus, illas nunc explicabimus, quae ab
 <lb/>aliis omnibus fiunt; quae non per se plane, quod mutent
@@ -2116,10 +2123,8 @@
 </div>
 <pb n="9.107"/>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Piri mulieribus pullum sare habent longe
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Piri mulieribus pullum sare habent longe
 <lb/>tum maiorem tum vehementiorem, paulo tardiorem, satisque
 <lb/>rariorem.</p>
 <p rend="indent">
@@ -2271,10 +2276,8 @@
 <lb/>quod de differentia docet ex temperamento.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Calidi natura multo habent maiorem, celeviorem,
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Calidi natura multo habent maiorem, celeviorem,
 <lb/>crebriorem, vehementiorem non item multo.</p>
 <p rend="indent">
  <lb/>Complectitur et haec oratio quaestionem maximam, cui
@@ -2314,10 +2317,8 @@
 <lb/>ac me jam conferam ad aliud caput.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Graciliores maiorem rarioremque multo,
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Graciliores maiorem rarioremque multo,
 <lb/>vehemeritiorempaulo. Atque natura sic disserunt.</p>
 <p rend="indent">
  <lb/>Accipiendi hic etiam absque ullo affectu alio graciles ;
@@ -2341,10 +2342,8 @@
 <lb/>tum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Horro pro aetatibus hoc pacto immutantur.
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Horro pro aetatibus hoc pacto immutantur.
 <lb/>.insontis pulsus creberrimus est; rarissimus sanis; omnes
 <lb/>qui inter hos intercedunt, proportionem servant, prout
 <lb/>vel adpuerum, vel adsenem propius accedant; celerrimus
@@ -2479,10 +2478,8 @@
 <lb/>different.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Pro anni temporibus. Medio vere pulsus
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Pro anni temporibus. Medio vere pulsus
 <pb n="9.126"/>
 <lb/>maximi sunt et vehementissimi, ut in temporibi . ; celer;.
 <lb/>tate et crebritate moderati; pari modo medio autumno;
@@ -2570,10 +2567,8 @@
 <lb/>Itaque solum ipsum adscribam caput, quod hoc est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/><hi rend="italic">Pro regionibus perinde ut pro temporibus.
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> <hi rend="italic">Pro regionibus perinde ut pro temporibus.
 <lb/>In vehementer calidis sicut media aestate. In magnopere
 <lb/>fulgidis ut media hieme. In temperatis ita ur
 <lb/>medio vere. Ad harum proportionem in iis, quae medium
@@ -2584,10 +2579,8 @@
 </div>
 <pb n="9.131"/>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/><hi rend="italic">Pragnantium maiores, crebriores celerioresque
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> <hi rend="italic">Pragnantium maiores, crebriores celerioresque
 <lb/>pulsus sunt. Praeterea nihil mutatur.</hi></p>
 <p rend="indent">
  <lb/>In praegnantibus praeter usum mutatum priorum nihil
@@ -2601,7 +2594,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="9">
 <p rend="indent">
- <lb/><hi rend="italic">Jam somni etiam sint, si quid aliud, secundum
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> <hi rend="italic">Jam somni etiam sint, si quid aliud, secundum
 <lb/>naturam, qui et ipsi variant pulsus, dum incipiunt,
 <lb/>minores, languidiores, tardiores rarioresque reddunt.
 <lb/>Dum procedunt, tarditatem pedetentim augent et
@@ -2743,10 +2736,8 @@
 <lb/>utesque opiniones scripsit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Qui expergiscuntur, e vestigio pulsus magnos,
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Qui expergiscuntur, e vestigio pulsus magnos,
 <lb/>vehementes, celeres, crebros et cum quadam vibratione
 <lb/>habent : qui mox mediocritatem assequuntur.</p>
 <p rend="indent">
@@ -2801,10 +2792,8 @@
 <lb/>habet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Ascititiae habitudines corporis perinde
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Ascititiae habitudines corporis perinde
 <lb/>p ustus, ut naturales immutant. Nam gracilis natura si
 <lb/>quadratus evaserit, huic, qui talis natura ese, assimilem
 <lb/>pulsum habet. sin quadratus factus gracilis su, afsimilem
@@ -2822,10 +2811,8 @@
 <lb/>hoc.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Jam etiam temperamenta corporis aseititia
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Jam etiam temperamenta corporis aseititia
 <lb/>pascis ea proportione mutant, qua naturalia temperamenta.
 <lb/></p>
 <p rend="indent">
@@ -2840,10 +2827,8 @@
 <lb/>durus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Nitito alias mutationes, quae. canfus
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Nitito alias mutationes, quae. canfus
 <pb n="9.144"/>
 <lb/>habent non naturales recenseamus. Exercitationes primo
 <lb/>quae moderatae sunt vehementes, magnos, celeres,
@@ -2878,10 +2863,8 @@
 <lb/>priorum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Ralneae calidae, dum sint moderatae,
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Ralneae calidae, dum sint moderatae,
 <lb/>pulsus creant magnos, celeres, crebros, vehementes. Jmmodicae
 <lb/>parvos et languidos, tamen adhuc celeres ac orebros.
 <lb/>Quod si hic relinquantur, parvos, languidos, tardos
@@ -2915,10 +2898,8 @@
 <lb/>in primo aperuimus libro.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Frigidae balneae illico parvos ac languidiores
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Frigidae balneae illico parvos ac languidiores
 <lb/>et tardos rarosque pulsas eliciunt. Postea,
 <lb/>prout id sit, quod induxerunt, omnino eel torporem indueunt,
 <lb/>vel robur. Quae torporem intulerunt et refrigerarunt,
@@ -2948,10 +2929,8 @@
 <lb/>esse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Cibus largus; ut etiam gravet facultatela,
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Cibus largus; ut etiam gravet facultatela,
 <pb n="9.149"/>
 <lb/>puipus inaequales atque inordinatos concitat; Ar .
 <lb/>chigenes vult celeriores quam crebriores. Modicus. utagnos,
@@ -3021,10 +3000,8 @@
 <lb/>quae primo in libro docuimus, in promptu est causa.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/>Vinum caetera quidem peraeque ac
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> Vinum caetera quidem peraeque ac
 <lb/>cibus pulsus variat; hoc vero- interest, quod illico intuititet
 <lb/>et citius mutatio a vino profecta recedat quam illa
 <lb/>quae a cibo ; quod item celeritatem amplius^ et magnitudo- .
@@ -3080,10 +3057,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>CALENI DE CAVSIS PVLSVVM
 <lb/>LIBER IV</head>
-
-
 <p rend="indent">
- <lb/>Inter causas, unde pulsus atterantur, quaecunque
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Inter causas, unde pulsus atterantur, quaecunque
 <lb/>mutationem moliuntur per se, continentes eorum
 <lb/>generationem, ex quo sunt continentes appellatae, prioribus
 <lb/>duobus libris exposuimus Quae has praecedunt, quamm
@@ -3104,10 +3079,8 @@
 <lb/>ex libro tironibus scriptu.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Jrae altus est pulsus, magnus, vehemens,
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Jrae altus est pulsus, magnus, vehemens,
 <lb/>celer, creber.</p>
 <p rend="indent">
  <lb/>Qui superiorum est memor, huic etiam quae de ira dicuntur
@@ -3144,10 +3117,8 @@
 <lb/>magnitudinem modo, sed et in vehementiam converti.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Laetitiae magnus, rarus et tardus esi
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Laetitiae magnus, rarus et tardus esi
 <lb/>pulsus, at vehementia nihil disseri.</p>
 <p rend="indent">
  <lb/>Laetis diffunditur per universum corpus calor atque
@@ -3164,10 +3135,8 @@
 <lb/>alterationem pulsuum per seipsos moliri.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Tristitiae parvus, languidus, tardus et
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Tristitiae parvus, languidus, tardus et
 <lb/>rarus est.</p>
 <p rend="indent">
  <lb/>Et tristitia enim refrigerat et calorem intro concitat.
@@ -3175,10 +3144,8 @@
 <lb/>consequi laetitiam dicebamus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Timoris recentis et vehementis celer et vibratus
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Timoris recentis et vehementis celer et vibratus
 <lb/>et inordinatus est inaequalisque. .inveterati jam
 <lb/>similis ei quem habet trisiitia.</p>
 <p rend="indent">
@@ -3199,10 +3166,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Holor qui quidem variat pulsus, (variat
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Holor qui quidem variat pulsus, (variat
 <lb/>autem ingens, aut qui principes partes tenet, ut etiam
 <lb/>insiammatioj dum parvus est atque initio pulsum edit maiurem,
 <lb/>vehementiorem, celeriorem, crebriorem. Auctus
@@ -3227,10 +3192,8 @@
 <lb/>crebritas sit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/><hi rend="italic">Inflammatio habet omnis communem
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> <hi rend="italic">Inflammatio habet omnis communem
 <lb/>pulsum veluti servantem, ut alia pare attolli arteriae,
 <lb/>alid non videatur, quum illa scilicet videatur durior.
 <lb/>Habet etiam vibrationis aliquid hic pulsas, ac celer quidem
@@ -3331,10 +3294,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Pleuriticorum celer pulsus est et ereber,
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Pleuriticorum celer pulsus est et ereber,
 <lb/>nec admodum magnus, videatur etiam vehemens esse.
 <lb/>sist ille vero non languidus quidem, sed tamen non vehemens
 <lb/>siatim, quod ad allectum refert. siquidem ubique
@@ -3420,7 +3381,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="9">
 <p rend="indent">
- <lb/><hi rend="italic">Supputatorum pullus initio siatim patfum
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> <hi rend="italic">Supputatorum pullus initio siatim patfum
 <lb/>refert vigentis insiammationla ; ipsa enim initium est
 <lb/>suppurationum. Nonnumquam inaequali, est inordinatim,
 <lb/>sed omnibus hastinus. Quum autem pus prope su
@@ -3471,10 +3432,8 @@
 <lb/>reddi bene latum arbitramur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Proximum est de marcescentibus caput, de
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Proximum est de marcescentibus caput, de
 <lb/>quo etiam quae ad causam inveniendam faciunt; primo loco
 <lb/>tradam, deinde caput ipsum ex isagoge adscribam. Nomen
 <lb/>hic affectus invenit a flammis marcescentibus, quae defectu
@@ -3549,10 +3508,8 @@
 <lb/>quam diximus, magnitudinis, vertitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Phthisicorum quos vocant pulsus parvus
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Phthisicorum quos vocant pulsus parvus
 <lb/>et languidus est, mollisque et modice celer atque hecticus.
 <lb/></p>
 <p rend="indent">
@@ -3568,10 +3525,8 @@
 <lb/>habet autem ad hunc modum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Peripneumonidorum magnus est pulsus
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Peripneumonidorum magnus est pulsus
 <lb/>et languidus, mollisque similiter atque lethargicorum pulscia,
 <lb/>nisi quatenus praepollet inaequalitate et in uno pulsui
 <lb/>et collectiva quam vocant. Jn uno ictu, quum veluti
@@ -3626,10 +3581,8 @@
 </div>
 <pb n="9.183"/>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Lethargicorum pulsus similis peripneA
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Lethargicorum pulsus similis peripneA
 <lb/>monicorum est, magnitudine, imbecillitate, mollitie: scej
 <lb/>eo est tardior rariorque ac minus inaequalis, intermittens
 <lb/>potius quam intercurrens. Usi quum dicrotus fiat; ab
@@ -3656,10 +3609,8 @@
 <lb/>valde refrigeratae pulsus intermittens.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Phreniticorum parvus pulsus est, rarissime
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Phreniticorum parvus pulsus est, rarissime
 <lb/>autem conspectus est magnus esse, et contentus
 <lb/>est modice, durus et nervosus est, valde est celer et
 <lb/>creber; habet praeterea nonnihil undosi, interdumque vel
@@ -3718,10 +3669,8 @@
 <lb/>crebritatem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Posthac sermo mihi est de affectu, qui
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Posthac sermo mihi est de affectu, qui
 <lb/>mixtus esse ex phrenitideet lethargo videtur; qui ideo etiam
 <lb/>pulsus habet inter utcunque affectum ambigentes. Naturam
 <lb/>hujus affectus alibi declaravimus. Itaque pulsus eum merito
@@ -3756,10 +3705,8 @@
 <lb/>non sunt similes, quod truncatione illa careant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Camellorum passus, (<foreign xml:lang="grc">κατόγους</foreign> enim et
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Camellorum passus, (<foreign xml:lang="grc">κατόγους</foreign> enim et
  <lb/><foreign xml:lang="grc">κιττεχομένους</foreign> veteres appellabant; saniores ipsam affectum
  <lb/><foreign xml:lang="grc">κατοχὴν</foreign> et <foreign xml:lang="grc">κατἀληφιν</foreign> vocant) caetera lethargicis similes
 <lb/>sunt, magnitudine, tarditate, crebritate; ut nec totius
@@ -3789,10 +3736,8 @@
 <lb/>quod minus quam circumposita sit frigidus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/>Convulsorum ipsum corpus arteriae
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> Convulsorum ipsum corpus arteriae
 <lb/>videtur contractum et undequaque coarctatum, non ceu
 <lb/>compressum su a quopiam, vel constipatum, nec etiam velrigidum,
 <lb/>ut in febre, praescrlim in accessionibus,
@@ -3827,10 +3772,8 @@
 <lb/>est, si memineris inter se principia consentire.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <p rend="indent">
- <lb/>Paralyticorum parvus pulsus et languidus
+<lb/><label type="head"><num value="18">Cap. XVIII.</num></label> Paralyticorum parvus pulsus et languidus
 <lb/>tardusque est. Nonnullis rarus quoque, aliis
 <lb/>creber, sed nonnihil inordinate intermittens.</p>
 <p rend="indent">
@@ -3844,10 +3787,8 @@
 </div>
 <pb n="9.193"/>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <p rend="indent">
- <lb/>Comitialium et attonitarum similes pulfus
+<lb/><label type="head"><num value="19">Cap. XIX.</num></label> Comitialium et attonitarum similes pulfus
 <lb/>junt. Quare de comitialibus quae exponemus, eadem
 <lb/>de attonitis, sed cumulatius accipienda sciat. Dum modice
 <lb/>infestatur natura, neque dum eam multum superavit
@@ -3866,10 +3807,8 @@
 <lb/>primo et secundo tradidimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="20">
-
-
 <p rend="indent">
- <lb/>Anginae pascis tensionem quandam habet
+<lb/><label type="head"><num value="20">Cap. XX.</num></label> Anginae pascis tensionem quandam habet
 <pb n="9.194"/>
 <lb/>ei quam convulsivus habet persimilem, magnus. est et
 <lb/>undosus; ut pulsus perspneumonicorum, ac utrum insigniter
@@ -3905,10 +3844,8 @@
 <lb/>ambo .inaequalem in hujus generis differentia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="21">
-
-
 <p rend="indent">
-<lb/>Orthopnoea acuta inaequalem et inordinatum
+<lb/><label type="head"><num value="21">Cap. XXI.</num></label> Orthopnoea acuta inaequalem et inordinatum
 <lb/>pusum habet et nonnihil desicientem. Quae
 <pb n="9.196"/>
 <lb/>mediocriter est gravis, crebrum; quae violentissima, tardum
@@ -3938,10 +3875,8 @@
 <lb/>explicaverit, statim extinguitur universa.</p>
 </div>
 <div type="textpart" subtype="chapter" n="22">
-
-
 <p rend="indent">
- <lb/>Uterinae fusio rationis pusus, ut si
+<lb/><label type="head"><num value="22">Cap. XXII.</num></label> Uterinae fusio rationis pusus, ut si
 <lb/>convelleretur, protentus esi, et rarus; quod si exitialis
 <lb/>sit siustocatio, creber, inordinatus, et nonnihil desiclans.</p>
 <p rend="indent">
@@ -3954,10 +3889,8 @@
 <lb/>usus et affecta facultas fit, necessario eum pulsum generari.</p>
 </div>
 <div type="textpart" subtype="chapter" n="23">
-
-
 <p rend="indent">
- <lb/>Stomachus. affectus, (ut sic etiam vocemus
+<lb/><label type="head"><num value="23">Cap. XXIII.</num></label> Stomachus. affectus, (ut sic etiam vocemus
 <lb/>in praesentia os. ventriculi, quod is asus apud vaso .
 <pb n="9.198"/>
 <lb/>gus obtinuit) non uno modo commutat pulsum. Nam st
@@ -4013,10 +3946,8 @@
 <lb/>intemperie ipsorum instrumentorum oritur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="24">
-
-
 <p rend="indent">
- <lb/>Hydropum pullus, ascitae parvus,
+<lb/><label type="head"><num value="24">Cap. XXIV.</num></label> Hydropum pullus, ascitae parvus,
 <lb/>crebrior, subdurus cum quadam tensione est; tympanitae,
 <lb/>longior, non imbecillus, celerior, creber, subdurus, cum
 <lb/>quadam tensione; illius quem anqsarca vocant, undosus,
@@ -4049,10 +3980,8 @@
 <lb/>molles, undosus latioresque facit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="25">
-
-
 <p rend="indent">
- <lb/>Hlephanticorum pagus parvus, languidus,
+<lb/><label type="head"><num value="25">Cap. XXV.</num></label> Hlephanticorum pagus parvus, languidus,
 <lb/>tardas creberque est.</p>
 <p rend="indent">
  <lb/>Qui elephantiasi laborant, pulsum habent non statim
@@ -4062,10 +3991,8 @@
 <lb/>culiares esse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="26">
-
-
 <p rend="indent">
- <lb/>Jcterieorum pulsa esi, si absit subrie,
+<lb/><label type="head"><num value="26">Cap. XXVI.</num></label> Jcterieorum pulsa esi, si absit subrie,
 <lb/>minor, durior, crebrior, non languidus, neo celer.</p>
 <p rend="indent">
  <lb/>Vi quadam praeditus est flavae bilis succus exiccandi,
@@ -4080,10 +4007,8 @@
 <lb/>sint, propterea quod urgeat usus, celer etiam siat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="27">
-
-
 <p rend="indent">
- <lb/>Voratrum qui sumpserunt, hi paulo
+<lb/><label type="head"><num value="27">Cap. XXVII.</num></label> Voratrum qui sumpserunt, hi paulo
 <lb/>ante vomitum, ubi comprimantur, pulfum habent latum,
 <lb/>rarum, languidiorem, tardiorem. interea dum vomunt
 <lb/>et divelluntur, inaequalem et inordinatum. Quum melius

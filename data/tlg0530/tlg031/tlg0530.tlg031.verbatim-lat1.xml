@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De succedaneis</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0530.tlg031.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Pseudo-Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -80,20 +101,62 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0530.tlg031.verbatim-lat1">
 <pb n="19.721"/>
    <div type="textpart" subtype="chapter" n="Prooemium">
 
-<head>
- GALENI DE SUCCEDANEIS
+<head>GALENI DE SUCCEDANEIS
  <lb/>LIBER.
 </head>
     
@@ -132,10 +195,11 @@
 <lb/>rogarunt, ut illis de succedaneis opus a me ferioeretur.
 <lb/>Incipiamus itaque ab iis quae- praeposuimus, ex
 <lb/>praedicta specie facientes operis initium. ldqueetiam
-<lb/>fecundum literarum ferrem, ut quidam volunt, sacramus.</p>
+<lb/>fecundum literarum ferrem, ut quidam volunt, faciamus.</p>
     <div type="textpart" subtype="chapter" n="1">
      
-<head><hi rend="italic">A.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="1">A.</num></hi></label>
 <p rend="hanging">
  Pro acanthii semine, Iychnidis -femen.</p>
 <p rend="hanging">
@@ -237,7 +301,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="2">
 
-<head><hi rend="italic">B.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="2">B.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro balaustio, hypoeistis vel malicorium.</p>
 <p rend="hanging">
@@ -259,7 +324,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="3">
 
-<head><hi rend="italic">G.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="3">G.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro gentiana, helenium vel petroselini radix.</p>
 <pb n="19.727"/>
@@ -289,7 +355,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="4">
 
-<head><hi rend="italic">D.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="4">D.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro damasonio, carpesium aut calamintha vel eryngium.</p>
 <p rend="hanging">
@@ -309,7 +376,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="5">
 
-<head><hi rend="italic">E.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="5">E.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro ebeno, loti arboris lignum.</p>
 <p rend="hanging">
@@ -369,13 +437,15 @@
 <pb n="19.730"/>
     <div type="textpart" subtype="chapter" n="6">
 
-<head><hi rend="italic">Z.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="7">Z.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro zingibere, pyrethrum.,o m:</p>
     </div>
     <div type="textpart" subtype="chapter" n="7">
      
-<head><hi rend="italic">H.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="8">H.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro mentha, calaminthe.</p>
 <p rend="hanging">
@@ -383,7 +453,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="8">
      
-     <head><hi rend="italic"><foreign xml:lang="grc">Θ</foreign>. Th.</hi></head>
+     <label type="head">
+         <lb/><hi rend="italic"><num value="9"><foreign xml:lang="grc">Θ</foreign>. Th.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro thapsia, cardami vel erucae femen.</p>
 <p rend="hanging">
@@ -397,7 +468,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="9">
      
-     <head><hi rend="italic"><foreign xml:lang="grc">Ι</foreign>.</hi></head>
+     <label type="head">
+         <lb/><hi rend="italic"><num value="10"><foreign xml:lang="grc">Ι</foreign>.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro visco quercino, chamaeleon niger.</p>
 <p rend="hanging">
@@ -412,7 +484,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="10">
      
-<head><hi rend="italic">K.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="20">K.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro cadmia, leucographis Aegyptia.</p>
 <p rend="hanging">
@@ -514,7 +587,8 @@
 <pb n="19.734"/>
      <div type="textpart" subtype="chapter" n="11">
       
-<head><hi rend="italic">L.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="30">L.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro lepore marino, concha fluvialis vel lepus fluvialis.</p>
 <p rend="hanging">
@@ -571,7 +645,8 @@
      </div>
     <div type="textpart" subtype="chapter" n="12">
 
-<head><hi rend="italic">M.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="40">M.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro magnete vitreo, spuma Halica.</p>
 <p rend="hanging">
@@ -630,7 +705,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="13">
      
-<head><hi rend="italic">N.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="50">N.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro napy, cardami aut rapi semen.</p>
      <p rend="hanging">
@@ -648,7 +724,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="14">
      
-<head><hi rend="italic">X.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="60">X.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro xylobatsamo, radix leucoii.</p>
      <p rend="hanging">
@@ -663,7 +740,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="15">
      
-<head><hi rend="italic">O.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="70">O.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro oenanthes succo, succus ramuli vel ligni vitis vel
 <lb/>omphacium siccum.</p>
@@ -723,7 +801,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="16">
 
-<head><hi rend="italic">P.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="80">P.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro panacis radicis ℥ j, opopanacis Ʒ j.</p>
 <p rend="hanging">
@@ -773,7 +852,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="17">
      
-<head><hi rend="italic">R.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="100">R.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro rheo, centaurium.</p>
 <p rend="hanging">
@@ -806,7 +886,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="18">
      
-<head><hi rend="italic">S.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="200">S.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro sagapeno, galbane vel resina pinus sicca.</p>
 <p rend="hanging">
@@ -906,7 +987,8 @@
     <pb n="19.745"/>
     <div type="textpart" subtype="chapter" n="19">
      
-<head><hi rend="italic">T.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="300">T.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro taurino glutino, ichthiocolla.</p>
 <p rend="hanging">
@@ -924,7 +1006,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="20">
      
-<head><hi rend="italic">Y.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="400">Y.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro hyacintho, flos ifatidis.</p>
 <p rend="hanging">
@@ -949,7 +1032,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="21">
      
-<head><hi rend="italic">Ph.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="500">Ph.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro faecula, sandaracba.</p>
 <p rend="hanging">
@@ -961,7 +1045,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="22">
      
-<head><hi rend="italic">Ch.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="600">Ch.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro galbano, sagapenum vel terebinthina.</p>
 <p rend="hanging">
@@ -990,7 +1075,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="23">
      
-<head><hi rend="italic">Ps.</hi></head>
+<label type="head">
+    <lb/><hi rend="italic"><num value="700">Ps.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro pfyllio, lens palustris.</p>
 <p rend="hanging">
@@ -998,7 +1084,8 @@
     </div>
     <div type="textpart" subtype="chapter" n="24">
      
-     <head><hi rend="italic"><foreign xml:lang="grc">Ω</foreign>.</hi></head>
+     <label type="head">
+         <lb/><hi rend="italic"><num value="800"><foreign xml:lang="grc">Ω</foreign>.</num></hi></label>
 <p rend="hanging">
 <lb/>Pro ocimo, sisymbrium.</p>
 <p rend="hanging">

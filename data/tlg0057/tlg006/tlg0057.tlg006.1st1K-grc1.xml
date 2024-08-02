@@ -7,8 +7,10 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De constitutione artis medicae ad Patrophilum</title>
-        <author xml:lang="lat">Galenus</author>
-        <editor>Kühn, Karl Gottlob</editor>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
+        <editor role="editor">Kühn, Karl Gottlob</editor>
         <funder>Andrew W. Mellon Foundation</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts</resp>
@@ -42,7 +44,38 @@
           <persName>Bruce Robertson</persName>
         </respStmt>
       </titleStmt>
-      <publicationStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">Revised edition of the originally published versions of the electronic texts.
+<date type="revision" when="2024">2024</date>
+</edition>
+<respStmt>
+<resp>To reuse the Kühn’s edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We added bibliographical references to the previous editions referred to in Kühn’s edition as "Bas." and "Chart.": that of the Γαληνοῦ Ἅπαντα published in Basel (hence referred to as #Basel) and the Operum Hippocratis Coi, et Galeni Pergameni of René Chartier (hence referred to as #Chartier); we changed the naming schemes of the milestones indicating the corresponding Basel and Chartier pages in Kühn’s edition, and added the corresponding Basel and Chartier volume number. The editions other than that of Kühn were given milestones indicating the corresponding Kühn volume and pages when they were missing. Treatises from Kühn’s edition were given line numbers. We also added elements of structuration that were present in Kühn’s edition but were missing in the TEI, mainly the division of chapters into sections in some treatises, as well as the header for those sections. The text of headings containing the name of chapter and numbers of chapters and sections have been restored, as well as the original symbols as they appear within the printed text of Kühn’s edition. The text numbered tlg0057.tlg096 that was separately edited was reinserted in the tlg0057.tlg095 in accordance with its location within Kühn’s edition. For details, see the revisionDesc section.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Lead Developer, Optéos</resp>
+<persName>Frédéric Glorieux</persName>
+</respStmt>
+<respStmt>
+<resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Cahal Taaffe</persName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+</editionStmt>
+<publicationStmt>
         <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
         <publisher>University of Leipzig</publisher>
         <pubPlace>Germany</pubPlace>
@@ -57,7 +90,7 @@
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="editor">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -107,15 +140,64 @@
       <refsDecl n="CTS">
         <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Greek numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn’s edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
-        <language ident="lat">Latin</language>
-        <language ident="eng">English</language>
+        
+        
       </langUsage>
     </profileDesc>
-  </teiHeader>
+<revisionDesc>
+<change who="#Galenus_verbatim" when="2023">First round of revisions for publication on the Galenus verbatim website.</change>
+<change who="#Galenus_verbatim" when="2023">Added bibliographical information on the editions referred to in Kühn’s edition as "Bas." and "Chart."</change>
+<change who="#Galenus_verbatim" when="2023">Corrected and added milestone tags for the missing page changes of both Basel and Chartier editions when they were missing.</change>
+<change who="#Galenus_verbatim" when="2023">Punctual correction to the digitization of Kühn’s text.</change>
+<change who="#Galenus_verbatim" when="2023">Correction and additions of the sections &lt;div&gt; level when they were missing to better reflect the structure of Kühn’s edition.</change>
+<change who="#Galenus_verbatim" when="2023">Modification to the subtype of some &lt;div&gt; to better reflect Kühn’s structure.</change>
+<change who="#Galenus_verbatim" when="2023">Added &lt;label&gt; elements for all headings of chapters and sections.</change>
+<change who="#Galenus_verbatim" when="2023">Added &lt;l&gt; elements for verse lines and &lt;lg&gt; elements for linegroups.</change>
+<change who="#Galenus_verbatim" when="2023">Replaced abbreviations introduced by the initial transcription by the original symbols as they appear within the printed text of Kühn’s edition.</change>
+<change who="#Galenus_verbatim" when="2023">Added line number.</change>
+<change who="#Galenus_verbatim" when="2024">The text of headings containing the name of chapter and numbers of chapters and sections have been restored and marked with &lt;label&gt; and &lt;num&gt; elements.</change>
+<change who="#Galenus_verbatim" when="2024">All the indentations have been restored.</change>
+</revisionDesc>
+</teiHeader>
   <text>
     <body>
       <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg006.1st1K-grc1">
@@ -182,7 +264,7 @@
         </div>
         <div type="textpart" subtype="chapter" n="1" xml:id="_1">
           <p rend="indent">
-<lb n="10"/>Ἐπειδὴ τῶν τεχνῶν ἔνιαι μὲν ἐν μόνῳ τῷ θεωρῆσαι
+<lb n="10"/><lb/><label type="head"><num value="1">Κεφ. αʹ.</num></label> Ἐπειδὴ τῶν τεχνῶν ἔνιαι μὲν ἐν μόνῳ τῷ θεωρῆσαι
 <lb n="11"/>τὴν φύσιν, ὧν ἐπισκοποῦνται πραγμάτων, ἔχουσι τὸ τέλος,
 <lb n="12"/>ὡς ἀριθμητικὴ, καὶ ἀστρονομία, καὶ φυσιολογία· τινὲς δὲ
 <lb n="13"/>πράττουσι μέν τινας πράξεις, ὡς ὀρχηστική τε καὶ κηρυκτικὴ,
@@ -237,7 +319,7 @@
         </div>
         <div type="textpart" subtype="chapter" n="2" xml:id="_2">
           <p rend="indent">
-<lb n="7"/>Ἐδείχθη δὲ κᾀπὶ τῆς οἰκοδομικῆς οὕτως ἔχειν.
+            <lb n="7"/><label type="head"><num value="2">Κεφ. βʹ.</num></label> Ἐδείχθη δὲ κᾀπὶ τῆς οἰκοδομικῆς οὕτως ἔχειν.
 <lb n="8"/>ἔστι γὰρ οὖν δὴ καὶ ταύτῃ ἔργα διττὰ, γένεσίς τε τῆς οὐκ
 <lb n="9"/>οὔσης οἰκίας, ἐπανόρθωσίς τε τῆς πεπονθυίας. ἐδείχθη
 <lb n="10"/>μὲν γὰρ πρὸς ἀμφοτέρας τὰς ἐνεργείας ἀναγκαῖον ὂν
@@ -299,8 +381,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="3" xml:id="_3">
-          <p rend="indent">
-<lb n="10"/>Νυνὶ δ’, ὅτι διττὴ μὲν ἡ τῶν μορίων ἐστὶ φύσις,
+<p rend="indent">
+<lb n="10"/><label type="head"><num value="3">Κεφ. γʹ.</num></label> Νυνὶ δ’, ὅτι διττὴ μὲν ἡ τῶν μορίων ἐστὶ φύσις,
 <lb n="11"/>διττὴ δὲ καὶ ἡ τῶν ἐνεργειῶν, ἤδη λέλεκται, καὶ αὖθις ἀκριβέστερον
 <lb n="12"/>λεγέσθω. τοῦ σύμπαντος σκέλους ἐνέργεια βάδισίς
 <lb n="13"/>ἐστι. γίνεται δὲ, τῶν ἐν αὐτῇ διαρθρώσεων ἐναλλὰξ ἀλλήλων
@@ -343,8 +425,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="4" xml:id="_4">
-          <p rend="indent">
-<lb n="13"/>Ἐπεὶ δὲ τοῦτο ἡμῖν διώρισται, <milestone unit="ed1page" n="1.36"/>μετὰ τοῦτο
+<p rend="indent">
+<lb n="13"/><label type="head"><num value="4">Κεφ. δʹ.</num></label> Ἐπεὶ δὲ τοῦτο ἡμῖν διώρισται, <milestone unit="ed1page" n="1.36"/>μετὰ τοῦτο
 <lb n="14"/>ζητητέον ἐστὶν, ἐκ τίνων μὲν ἡ τῶν ὀργανικῶν μορίων, ἐκ τίνων
 <lb n="15"/>δὲ ἡ τῶν ἁπλῶν ἐνέργεια συμπληροῦται. καὶ πρῶτόν γε ἀπὸ τῶν
 <lb n="16"/>ὀργανικῶν ἀρκτέον, ἐπειδὴ σκέλους ἐμνημονεύσαμεν. εἰ μὴ
@@ -378,8 +460,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="5" xml:id="_5">
-          <p rend="indent">
-<lb n="7"/><milestone unit="ed2page" n="2.175"/>Ἐπειδὴ δὲ κατὰ τοῦτο γέγονεν ὁ λόγος,
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="5">Κεφ. εʹ.</num></label> <milestone unit="ed2page" n="2.175"/>Ἐπειδὴ δὲ κατὰ τοῦτο γέγονεν ὁ λόγος,
 <lb n="8"/>ἀναμνησθῆναι χρὴ τῆς μεθόδου τὴν δύναμιν. οὔτε γὰρ οἰκίας,
 <lb n="9"/>οὔτε νεὼς, οὔτε σκίμποδος, οὔτε ἄλλου τῶν ἁπάντων οὐδενὸς,
 <lb n="10"/>ἑτέρως ἄν τις ἐξετάσειε τὴν κατασκευὴν, εἴτ’ ἄμεμπτός
@@ -435,8 +517,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="6" xml:id="_6">
-          <p rend="indent">
-<lb n="5"/><milestone unit="ed2page" n="2.176"/>Πάλιν οὖν ἀναμνήσομαι ἡμᾶς αὐτοὺς,
+<p rend="indent">
+<lb n="5"/><label type="head"><num value="6">Κεφ. στʹ.</num></label> <milestone unit="ed2page" n="2.176"/>Πάλιν οὖν ἀναμνήσομαι ἡμᾶς αὐτοὺς,
 <lb n="6"/>ὡς κᾀν τοῖς ἄλλοις ἅπασιν, ὧν ἐν συνθέσει τὸ τῆς οὐσίας εἶδός
 <lb n="7"/>ἐστιν, ἐδείχθη τὰ σύμπαντα γένη τέτταρα, τῆς ὅλης οὐσίας
 <lb n="8"/>αὐτῶν αἴτια, καὶ προσέτι τοῦ κατωρθωμένου τε καὶ διημαρτημένου
@@ -540,8 +622,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="7" xml:id="_7">
-          <p rend="indent">
-<lb n="16"/>Ἐστὶ μὲν δὴ τὸ προκείμενον, ὥσπερ τοῦ σύμπαντος
+<p rend="indent">
+<lb n="16"/><label type="head"><num value="7">Κεφ. ζʹ.</num></label> Ἐστὶ μὲν δὴ τὸ προκείμενον, ὥσπερ τοῦ σύμπαντος
 <lb n="17"/>σώματος ἐξ ἀνατομῆς ἐμάθομεν ἅπαντα τὰ μόρια μέχρι τῶν
 <pb n="1.246"/>
 <lb n="1"/>ἁπλουστάτων, ὡς πρὸς τὴν αἴσθησιν, οὕτω καὶ αὐτὸ τοῦτο
@@ -645,8 +727,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="8" xml:id="_8">
-          <p rend="indent">
-<lb n="7"/>Πάλιν οὖν ἐπανελθόντες ἐπὶ τὸ προκείμενον,
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="8">Κεφ. ηʹ.</num></label> Πάλιν οὖν ἐπανελθόντες ἐπὶ τὸ προκείμενον,
 <lb n="8"/>ἐπιθῶμεν αὐτῷ τέλος. ἐπειδὴ τὸ στοιχεῖον ἀλλοιωτόν ἐστι δι’
 <lb n="9"/>ὅλου, πόσα τὰ πάντ’ ἐστὶ στοιχεῖα, διέλθωμεν ἑξῆς, ἀρχὴν
 <lb n="10"/>κᾀνταῦθα τῶν λόγων τῶν ἐναργῶς τι φαινομένων ποιησάμενοι.
@@ -710,8 +792,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="9" xml:id="_9">
-          <p rend="indent">
-<lb n="12"/>Ἐπὶ δὲ τὸ προκείμενον ἐπανίωμεν. ἐκ τῶν
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="9">Κεφ. θʹ.</num></label> Ἐπὶ δὲ τὸ προκείμενον ἐπανίωμεν. ἐκ τῶν
 <lb n="13"/>τεσσάρων στοιχείων ἀλλήλοις κεραννυμένων ἓν ὁμοιομερὲς γίγνεται
 <lb n="14"/>σῶμα, κατὰ τὸ τῆς κράσεως ποιὸν, ἤτοι γε αἰσθητικὸν,
 <lb n="15"/>ἢ ἀναίσθητον. ὡσαύτως δὲ καὶ κατὰ μέρος ἐν
@@ -770,8 +852,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="10" xml:id="_10">
-          <p rend="indent">
-<lb n="12"/>Ὁπότ’ οὖν ἐν τῷδε τῷ λόγῳ γεγόναμεν,
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="10">Κεφ. ιʹ.</num></label> Ὁπότ’ οὖν ἐν τῷδε τῷ λόγῳ γεγόναμεν,
 <lb n="13"/>ἐπιστήσαντες αὐτὸν ἀναλάβωμεν ἐν κεφαλαίοις τὰ εἰρημένα.
 <lb n="14"/>γνωσόμεθα γὰρ οὕτως, ὁπόσον τε τοῦ ζητουμένου τὸ εὑρημένον
 <lb n="15"/>ἤδη, καὶ ὁπόσον ἔτι τὸ ὑπολειπόμενόν. ἐστι. προὔκειτο
@@ -822,8 +904,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="11" xml:id="_11">
-          <p rend="indent">
-<lb n="4"/>Ἡ μὲν οὖν θεραπευτικὴ μέθοδος ἐκ τῆς
+<p rend="indent">
+<lb n="4"/><label type="head"><num value="11">Κεφ. ιαʹ.</num></label> Ἡ μὲν οὖν θεραπευτικὴ μέθοδος ἐκ τῆς
 <lb n="5"/>τῶν ὑγιαινόντων τε καὶ νοσούντων σωμάτων ἄρχεται διαθέσεως.
 <lb n="6"/>ἐπειδὴ γὰρ τὸ μὲν ὑγιαῖνον, καθ’ ὑπερβολὴν, ἄν θ’
 <lb n="7"/>ὁμοιομερὲς, ἄν τ’ ὀργανικὸν ᾖ, σύμμετρον πάντα ἐστὶν,
@@ -895,8 +977,8 @@
         </div>
         <pb n="1.264"/>
         <div type="textpart" subtype="chapter" n="12" xml:id="_12">
-          <p rend="indent">
-<lb n="1"/>Σκεπτέον δ’ οὐκ ἐπὶ τούτου τοῦ γένους μόνον,
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="12">Κεφ. ιβʹ.</num></label> Σκεπτέον δ’ οὐκ ἐπὶ τούτου τοῦ γένους μόνον,
 <lb n="2"/>ἀλλὰ κᾀπὶ τῶν ἄλλων ἁπάντων ὧν δύναμις ἡμῖν ἐστιν
 <lb n="3"/>ἐξεργάσασθαι τὴν ἔνδειξιν. ἡ γὰρ τοῦ νοσήματος ἰδέα τὸν
 <lb n="4"/>τρόπον ἐνδείκνυται μόνον τῆς ἐπανορθώσεως, εἰ δὲ ἀδύνατός
@@ -990,8 +1072,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="13" xml:id="_13">
-          <p rend="indent">
-<lb n="17"/>Ἐπεὶ δὲ καὶ περὶ τούτων αὐτάρκως εἴρηται,
+<p rend="indent">
+<lb n="17"/><label type="head"><num value="13">Κεφ. ιγʹ.</num></label> Ἐπεὶ δὲ καὶ περὶ τούτων αὐτάρκως εἴρηται,
 <lb n="18"/>προσθῶμεν τῷ λόγῳ τὸ λεῖπον, ὑπερ ὧν ὀλίγον ἔμπροσθεν
 <lb n="19"/>εἴπομεν, ἐξευρίσκοντες τὰ βοηθήματα. τὰς μὲν γὰρ οἷον
 <pb n="1.269"/>
@@ -1050,8 +1132,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="14" xml:id="_14">
-          <p rend="indent">
-<lb n="15"/><milestone unit="ed2page" n="2.186"/>Ὑπόλοιπον δ’ ἂν εἴη πράττειν αὐτῷ
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="14">Κεφ. ιδʹ.</num></label> <milestone unit="ed2page" n="2.186"/>Ὑπόλοιπον δ’ ἂν εἴη πράττειν αὐτῷ
 <lb n="16"/>μέλλοντι τὰ κατὰ τὴν τέχνην, ἐξευρῆσθαί τινα διαγνωστικὴν
 <lb n="17"/>θεωρίαν ἁπασῶν τῶν διαθέσεων, καὶ μάλισθ’ ὅσαι περὶ
 <lb n="18"/>τὰ κατὰ βάθος μόρια συνίστανται. οὐδὲ γὰρ ἐνταῦθα τοῦ
@@ -1193,8 +1275,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="15" xml:id="_15">
-          <p rend="indent">
-<lb n="6"/>Εὔδηλον δ’ ἐκ τῶν εἰρημένων ἐστὶν, ὡς
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="15">Κεφ. ιεʹ.</num></label> Εὔδηλον δ’ ἐκ τῶν εἰρημένων ἐστὶν, ὡς
 <lb n="7"/>καὶ τὴν ἐνέργειάν τε καὶ τὴν χρείαν ἑκάστου τῶν μορίων
 <lb n="8"/>ἀναγκαῖόν ἐστιν ἐπίστασθαι· καὶ πρὸς τούτοις ἔτι τὰς τῶν
 <lb n="9"/>νοσημάτων τε καὶ συμπτωμάτων γενέσεις· εἰς δὲ τοῦτο
@@ -1283,8 +1365,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="16" xml:id="_16">
-          <p rend="indent">
-<lb n="16"/>Ὑπόλοιπον δ’ ἐστὶν ὑποδεικνύειν, ὡς καὶ
+<p rend="indent">
+<lb n="16"/><label type="head"><num value="16">Κεφ. ιστʹ.</num></label> Ὑπόλοιπον δ’ ἐστὶν ὑποδεικνύειν, ὡς καὶ
 <lb n="17"/>εἰς τὴν ἐπιδέξιον χρῆσιν τῶν βοηθημάτων ἀναγκαῖον ἐπίστασθαι
 <lb n="18"/>τὴν οὐσίαν ἀκριβῶς τοῦ θεραπευομένου μορίου,
 <lb n="19"/>καὶ τὴν διάπλασιν, καὶ τὴν θέσιν. ἡ μὲν οὖν οὐσία διδάσκει
@@ -1385,8 +1467,8 @@
         </div>
         <pb n="1.289"/>
         <div type="textpart" subtype="chapter" n="17" xml:id="_17">
-          <p rend="indent">
-<lb n="1"/>Περὶ προγνώσεως τοίνυν ἐφεξῆς λέξομεν,
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="17">Κεφ. ιζʹ.</num></label> Περὶ προγνώσεως τοίνυν ἐφεξῆς λέξομεν,
 <lb n="2"/>ἐπειδὴ χρήσιμος ἡμῖν εἰς ἄλλα τέ τινα, καὶ οὐχ ἥκιστα
 <lb n="3"/>πρὸς τὴν θεραπείαν ἐφάνη. τῷ μὲν οὖν πρῶτον βουλομένῳ
 <lb n="4"/>συστήσασθαι τέχνην προγνωστικὴν ἀναγκαῖόν ἐστι
@@ -1515,8 +1597,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="18" xml:id="_18">
-          <p rend="indent">
-<lb n="16"/>Ἐπειδὴ καὶ τοὺς ἀπαλλαγέντας νοσημάτων
+<p rend="indent">
+<lb n="16"/><label type="head"><num value="18">Κεφ. ιηʹ.</num></label> Ἐπειδὴ καὶ τοὺς ἀπαλλαγέντας νοσημάτων
 <lb n="17"/>εἰς εὐρωστίαν ὑγιεινὴν ἄγεσθαι προσήκει, καὶ τοὺς ὑποσυρομένους
 <pb n="1.296"/>
 <lb n="1"/>εἰς τὰ νοσήματα προφυλάττεσθαι τὰς νόσους, ἔτι
@@ -1609,8 +1691,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="19" xml:id="_19">
-          <p rend="indent">
-<lb n="16"/>Καιρὸς οὖν ἤδη μετιέναι τῷ λόγῳ πρὸς
+<p rend="indent">
+<lb n="16"/><label type="head"><num value="19">Κεφ. ιθʹ.</num></label> Καιρὸς οὖν ἤδη μετιέναι τῷ λόγῳ πρὸς
 <pb n="1.301"/>
 <lb n="1"/>τοὺς ἐκ τῶν νοσημάτων ἀναλαμβάνοντας, ἐφ’ ὧν οὔτ’ αἴτιον
 <lb n="2"/>οὐδέν ἐστι <milestone unit="ed2page" n="2.195"/>παρὰ φύσιν, οὔτε διάθεσις ἰσχνότης
@@ -1652,8 +1734,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="20" xml:id="_20">
-          <p rend="indent">
-<lb n="3"/>Ἔστιν οὖν ἡ ἰατρικὴ μία τῶν ποιητικῶν,
+<p rend="indent">
+<lb n="3"/><label type="head"><num value="20">Κεφ. κʹ.</num></label> Ἔστιν οὖν ἡ ἰατρικὴ μία τῶν ποιητικῶν,
 <lb n="4"/>οὐ μὴν ἁπλῶς οὕτως, ὡς ἡ οἰκοδομική τε καὶ τεκτονικὴ,
 <lb n="5"/>καὶ ὑφαντικὴ, ἀλλ’ ὡς ἥ τε τῆς πεπονθυίας οἰκίας ἐπανορθωτικὴ
 <lb n="6"/>καὶ τῶν ῥαγέντων ἱματίων ἀκεστική. ἐπεὶ δὲ καὶ

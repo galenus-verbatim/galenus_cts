@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De symptomatum causis</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg044.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -54,7 +75,6 @@
               <date>1824</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x07">BIU Santé, Medica</ref></biblStruct>
         <biblStruct>
           <monogr corresp="Basel">
@@ -96,13 +116,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg044.verbatim-lat1">
 <pb n="7.85"/><pb n="7.85"/>
@@ -112,10 +175,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE SYMPTOMATVM CAVSIS
 <lb/>LIBER PRIMVS.</head>
-
-
 <p rend="indent">
- <lb/>Causas symptomatum his in libris contumplahimur,
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Causas symptomatum his in libris contumplahimur,
 <lb/>eundem orationis ordinem servantes, quem in
 <lb/>libro de ipsorum differentiis jam posuimus. Quum igitur
 <lb/>symptomatum genera in universum tria sint, de eo primum
@@ -132,10 +193,8 @@
 <lb/>procreaturum quaepiam. male habet,</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Exempli gratia in oculo primum sentiendi
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Exempli gratia in oculo primum sentiendi
 <lb/>instrumentum crystallinus est humor, eum namque siclum a
 <lb/>coloribus alterari demonstratum est. Sentiens vero facultus,.
 <lb/>quae a cerebro per nervum in ipsum descendentem proecdit.
@@ -422,10 +481,8 @@
 </div>
 <pb n="7.102"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Atque de oculis quidem haec sufficiunt.
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Atque de oculis quidem haec sufficiunt.
 <lb/>Nam exempli magis causa, quam ut singula particulatim
 <lb/>persequeremur, de his sermonem instituimus, quum sit mihi
 <lb/>nunc institutum per generaliores sermones methodum indicare,
@@ -466,10 +523,8 @@
 <lb/>quae in auribus colligi solent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Quemadmodum igitur in his partium constitntio
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Quemadmodum igitur in his partium constitntio
 <lb/>symptomatum indicarit causas, ita et in lingua et
 <lb/>nato indicabit, modo in iis quoque tum primum sentientem^
 <lb/>partem, tum reliquas, quae totum instrumentum complent;
@@ -542,10 +597,8 @@
 <lb/>accidere est dictum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Quandoquidem de sensibus, qui in propriis
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Quandoquidem de sensibus, qui in propriis
 <lb/>sibi animalis partibus obeuntur, abunde dictum est, de sensu
 <lb/>omnibus quomodocunque sentientibus communi (quem tactum
 <lb/>vocitant) jam agamus. Sunt utique hujus quoque ad asserunt
@@ -677,10 +730,8 @@
 <lb/>musicali nervus. Ac de propositis symptomatis haec satis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Delectatio autem et .dolor omnibus sensibus
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Delectatio autem et .dolor omnibus sensibus
 <lb/>infident, non tamen finali evidentia, sed in visu minima,
 <lb/>in tactu autem et gustu maxima; ab iis deinceps in
 <lb/>odoratu, et post hunc in auditu. Quaenam igitur est tum
@@ -912,10 +963,8 @@
 <lb/>proportione respondentem habet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Reliquum autem fuerit de symptomatis
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Reliquum autem fuerit de symptomatis
 <lb/>orificium ventriculi (quod etiam cor appellant) obsidentibus
 <lb/>disserere ; sunt enim haec quoque ex eorum, quae ad tactum
 <lb/>reserantur, genere. Caeterum nulla pars aut ita exactum
@@ -1133,10 +1182,8 @@
 <lb/>seorsum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Itaque de sensuum organis omnibus,
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Itaque de sensuum organis omnibus,
 <lb/>etiam de ipsorum facultatibus, jam finem habere sermonem
 <lb/>arbitror. Ad ipsum eorum principium, quod ex se tanquam
 <lb/>ex fonte quodam singulis partibus facultates mittit, oratione
@@ -1273,10 +1320,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE SYMPTOMATVM CAUSIS
 <lb/>LIBER SECVNDVS.</head>
-
-
 <p rend="indent">
- <lb/>Enimvero convulsio, tremor, palpitatio, rigor,
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Enimvero convulsio, tremor, palpitatio, rigor,
 <lb/>horror, singultus, tussis, ructus, sternutamentum, pandiculatio,
 <lb/>ostitatio, dentium stiidor, commune genus omnia
 <lb/>motum depravatum sortiuntur. Dissident autem inter sese
@@ -1315,10 +1360,8 @@
 <lb/>disseretur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>De sensilibus vero, quoniam cum volunta.
+<lb/><label type="head"><num value="2">Cap. II.</num></label> De sensilibus vero, quoniam cum volunta.
 <lb/>riis consortium habent, communis a me doctrina tradatur.
 <lb/>Ervi voluntariae structionis laesiones sunt, paralysis, convullio,.
 <lb/>tremor et torpor. Variantur autem symptomatum
@@ -1600,10 +1643,8 @@
 </div>
 <pb n="7.165"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Quisquis igitur hujus facultatis functiones,
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Quisquis igitur hujus facultatis functiones,
 <lb/>dum sanum citra laesionem animal est, norit, estque alioqui
 <lb/>prudens, huic longiore sermone opus non est; qui vero eas,
 <lb/>ignoraverit et mentis natura suerit hebetioris, huic suaserim,
@@ -1702,10 +1743,8 @@
 <lb/>de his in sequentibus licetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Jam vero ventriculi affectus manifestior in
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Jam vero ventriculi affectus manifestior in
 <lb/>vomitibus est, multi que hos non naturae opus; sed symptourata
 <lb/>esse dicunt. In tussi vero et sternutatione evidentior
 <lb/>quidem est, qui in tussi notatur: sternutatio vero non similiter
@@ -1802,10 +1841,8 @@
 <lb/>dinem temperamenti veniunt.,.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Cur autem ab inaequali spirabilium organarum
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Cur autem ab inaequali spirabilium organarum
 <lb/>intemperie laborantes tussiunt (id enim dicebam non
 <lb/>admodum commode a pneumatiris melicis explicatum esse)
 <lb/>ipse enarrare tentabo, orsus a rei substantia, ut congruum.
@@ -2189,10 +2226,8 @@
 <lb/>necessario mors loquitur, ut. prius est dictum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Quum itaque huc. orationem perduxerimus,
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Quum itaque huc. orationem perduxerimus,
 <lb/>jam imponamus illi summam, praedicta omnia brevi-.
 <lb/>bus capitibus complexi, iis etiam quae deficiunt adjectis.
 <lb/>Tussis quidem et sternutatio et singultus et rigores, excretricis
@@ -2266,10 +2301,8 @@
 <lb/>loquetur libro faciemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Nunc quo omnia, quae animalibus facultalibus
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Nunc quo omnia, quae animalibus facultalibus
 <lb/>oboriuntur symptomata, duobus his libris sint absoluta, de
 <lb/>scmptomatis quoque ad principes actiones spectantibus disseremus.
 <lb/>Sunt igitur in his tria prima symptomatum genera;
@@ -2344,10 +2377,8 @@
 
 <div type="textpart" subtype="chapter" n="1">
 <head>CALENI DE SYMPTOMATVM CAVSIS LIBER TERTIVS. .</head>
-
-
 <p rend="indent">
- <lb/>Quod autem quae in naturalibus tum functionibus
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quod autem quae in naturalibus tum functionibus
 <lb/>tum facultatibus symptomata fiunt, eundem inventinnis
 <lb/>methodum habent, quam quae in animalibus actionis
 <lb/>bus oboriuntur, praestiterit fortassis et in horum speciebus
@@ -2528,10 +2559,8 @@
 <lb/>differentias alterius est operis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Jam ad retentricem facultatem veniendum
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Jam ad retentricem facultatem veniendum
 <lb/>est. In hac enim occurrit prima symptomatum differentia
 <lb/>triplex; quum ea vel omnino cibos non complectitur, vel
 <lb/>diminute, vel depravate. Quod itaque vel prorsus non complectatur,
@@ -2647,10 +2676,8 @@
 <lb/>tempestivum est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Est igitur naturale quoddam opus, alimenti
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Est igitur naturale quoddam opus, alimenti
 <lb/>ex ventriculo in jecur, ex jecore vero in totum corpus tlistributio.
 <lb/>Hanc perfici demonstratum est, quum singulae
 <lb/>partes familiare sibi alimentum alliciunt. Quare synrptomata
@@ -2714,10 +2741,8 @@
 <lb/>sed ad propositum redeundum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Naturalium actionum prima ac propemodum
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Naturalium actionum prima ac propemodum
 <lb/>omnium maxime necessaria nutritio est, quae alteratiscis
 <lb/>actionis quaedam est species. Est enim et in ventre concoctio ;
 <lb/>est quoque et in venis ; est et in singusis partibus, in
@@ -2848,10 +2873,8 @@
 <lb/>studiosos exercitare.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Quare jam milii ad alterum symptomatum
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Quare jam milii ad alterum symptomatum
 <lb/>genus, quod ad laetas actiones spectat, huic ricinum transire
 <lb/>tempestivum est. Ipsum igitur genus in quantitate et
 <lb/>qualitate excretorum consistit. Accidit autem aut laesione
@@ -2997,10 +3020,8 @@
 <lb/>orbus sunto haec sutis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>De halitus sis spiritibus, quos etiam flatus
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> De halitus sis spiritibus, quos etiam flatus
 <lb/>nominant, deinceps dicendum. Est autem et horum generatio
 <lb/>in ipsa ventris regione, humoribus quibusdam inibi pitnitosis,
 <lb/>vel cibis a deficiente calore in halitum solutis. Etenim
@@ -3065,10 +3086,8 @@
 <lb/>humore efficitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Quoniam autem et de his, ut ad rem propositam,
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Quoniam autem et de his, ut ad rem propositam,
 <lb/>satis est dictum, ad ea quae e supernis in ventrem
 <pb n="7.243"/>
 <lb/>eonfluunt, redeamus; quippe dictum est haee quoque tum
@@ -3168,10 +3187,8 @@
 </div>
 <pb n="7.248"/>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Urinarum autem tum suppressiones, tum
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Urinarum autem tum suppressiones, tum
 <lb/>depravatae vacuationes, ventris excrementorum retentionibus
 <lb/>et contra naturam excretionibus proportione respondent.
 <lb/>Supprimuntur eum vel ob vesicae imbecillitatem excernere
@@ -3253,10 +3270,8 @@
 <lb/>est in prognosticis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Itaque jam ad Indures transeundi est tempus,
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Itaque jam ad Indures transeundi est tempus,
 <lb/>de quibus hactenus saltem dictum est, quod interdum
 <lb/>resoluto corporis habitu eveniunt, vocaturque hic affectus
 <lb/>syncope; cui contrarius status est, qui per decretorios aocidit
@@ -3283,10 +3298,8 @@
 <lb/>aspiciunt. i .</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>At hunc sermonem omnibus partibus comnrunem
+<lb/><label type="head"><num value="10">Cap. X.</num></label> At hunc sermonem omnibus partibus comnrunem
 <lb/>omnium postremum simul tractandum reservari.
 <lb/>Etenim vix credibile ridetur esse, laeso aliquo corpore, non
 <lb/>ex aequo omnes ejus facultates simul laedi, sed alias magis,
@@ -3439,10 +3452,8 @@
 <lb/>tum perflari undique debeant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Equidem par erat fortassis huic operi jam
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Equidem par erat fortassis huic operi jam
 <lb/>finem imponere; non. enim, ut antea diximus, ut omnia particulatim
 <lb/>persequeremur; sed ut studiosos exerceremus ploribusexemplis,
 <lb/>ad multas symptomatum tum species tum
@@ -3534,10 +3545,8 @@
 <lb/>est igitur de bis pluribus disserendum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Transeuntes autem ad reliquum symptomatum
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Transeuntes autem ad reliquum symptomatum
 <lb/>genus, quod multis verbis non instiget ob ea, quae de
 <lb/>consequentibus se invicem symptomatis praedicta sunt, jam
 <lb/>huic operi finem imponamus. Ergo colores mutabuntur, ut

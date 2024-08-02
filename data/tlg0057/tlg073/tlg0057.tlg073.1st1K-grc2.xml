@@ -9,7 +9,9 @@
             <titleStmt>
                 <title xml:lang="lat">Quos quibus catharticis medicamentis et quando purgare
                     oporteat (ap. Oribasium)</title>
-                <author xml:lang="lat">Galenus</author>
+                <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
                 <editor xml:lang="lat">Raeder, Ioannes</editor>
                 <sponsor>Harvard College Library</sponsor>
                 <funder>Harvard Library Arcadia Fund</funder>
@@ -39,7 +41,38 @@
                     <resp>Technical Advisor</resp>
                 </respStmt>
             </titleStmt>
-            <publicationStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">Revised edition of the originally published versions of the electronic texts.
+<date type="revision" when="2024">2024</date>
+</edition>
+<respStmt>
+<resp>To reuse the Kühn’s edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We added bibliographical references to the previous editions referred to in Kühn’s edition as "Bas." and "Chart.": that of the Γαληνοῦ Ἅπαντα published in Basel (hence referred to as #Basel) and the Operum Hippocratis Coi, et Galeni Pergameni of René Chartier (hence referred to as #Chartier); we changed the naming schemes of the milestones indicating the corresponding Basel and Chartier pages in Kühn’s edition, and added the corresponding Basel and Chartier volume number. The editions other than that of Kühn were given milestones indicating the corresponding Kühn volume and pages when they were missing. Treatises from Kühn’s edition were given line numbers. We also added elements of structuration that were present in Kühn’s edition but were missing in the TEI, mainly the division of chapters into sections in some treatises, as well as the header for those sections. The text of headings containing the name of chapter and numbers of chapters and sections have been restored, as well as the original symbols as they appear within the printed text of Kühn’s edition. The text numbered tlg0057.tlg096 that was separately edited was reinserted in the tlg0057.tlg095 in accordance with its location within Kühn’s edition. For details, see the revisionDesc section.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Lead Developer, Optéos</resp>
+<persName>Frédéric Glorieux</persName>
+</respStmt>
+<respStmt>
+<resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Cahal Taaffe</persName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+</editionStmt>
+<publicationStmt>
                 <authority>Harvard College Library</authority>
                 <idno type="filename">tlg0057.tlg073.1st1K-grc2</idno>
                 <availability>
@@ -82,18 +115,62 @@
                 <cRefPattern matchPattern="(.+).(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
                 <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
             </refsDecl>
-        </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Greek numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn’s edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
         <profileDesc>
             <langUsage>
                 <language ident="grc">Greek</language>
-                <language ident="lat">Latin</language>
-                <language ident="deu">German</language>
             </langUsage>
         </profileDesc>
-        <revisionDesc>
-            <change/>
-        </revisionDesc>
-  </teiHeader>
+<revisionDesc>
+<change who="#Galenus_verbatim" when="2023">First round of revisions for publication on the Galenus verbatim website.</change>
+<change who="#Galenus_verbatim" when="2023">Added bibliographical information on the editions referred to in Kühn’s edition as "Bas." and "Chart."</change>
+<change who="#Galenus_verbatim" when="2023">Corrected and added milestone tags for the missing page changes of both Basel and Chartier editions when they were missing.</change>
+<change who="#Galenus_verbatim" when="2023">Punctual correction to the digitization of Kühn’s text.</change>
+<change who="#Galenus_verbatim" when="2023">Correction and additions of the sections &lt;div&gt; level when they were missing to better reflect the structure of Kühn’s edition.</change>
+<change who="#Galenus_verbatim" when="2023">Modification to the subtype of some &lt;div&gt; to better reflect Kühn’s structure.</change>
+<change who="#Galenus_verbatim" when="2023">Added &lt;label&gt; elements for all headings of chapters and sections.</change>
+<change who="#Galenus_verbatim" when="2023">Added &lt;l&gt; elements for verse lines and &lt;lg&gt; elements for linegroups.</change>
+<change who="#Galenus_verbatim" when="2023">Replaced abbreviations introduced by the initial transcription by the original symbols as they appear within the printed text of Kühn’s edition.</change>
+<change who="#Galenus_verbatim" when="2023">Added line number.</change>
+<change who="#Galenus_verbatim" when="2024">The text of headings containing the name of chapter and numbers of chapters and sections have been restored and marked with &lt;label&gt; and &lt;num&gt; elements.</change>
+<change who="#Galenus_verbatim" when="2024">All the indentations have been restored.</change>
+</revisionDesc>
+</teiHeader>
 
     <text>
         <body>
@@ -104,44 +181,55 @@
                     <head>κγ. Ἐκ τῶν Γαληνοῦ· τίναϲ δεῖ καθαίρειν, καὶ ποίοιϲ καθαρτηρίοιϲ, καὶ
                         πότε.</head>
                     <div type="textpart" subtype="section" n="1" xml:id="_1.1">
-                        <p>Τοὺϲ ὑγιεινὰ τὰ ϲώματα ἔχονταϲ ἐργῶδεϲ καθαίρειν· καὶ γὰρ <lb n="1"/>
-                            ἰλιγγιῶϲι καὶ ϲτροφοῦνται, καὶ δυϲχερῶϲ αὐτοῖϲ ἡ κάθαρϲιϲ προχωρεῖ, καὶ
-                            πρὸϲ τούτοιϲ ἔτι ταχέωϲ ἐκλύονται· γίνεται δὲ ταῦτα πάντα, τοῦ <lb n="15"/> καθαρτικοῦ φαρμάκου τὸν οἰκεῖον μὲν ἕλκειν ἐφιεμένου χυμόν,
-                            τῷ δ᾿ ἀπορεῖν αὐτοῦ τὸ οἷμα καὶ τὰϲ ϲάρκαϲ ϲυντήκοντοϲ, ἵνα ἐξ ἐκείνων
-                            ἕλξῃ τὸ οἰκεῖον. </p>
+                        <p rend="indent">
+<lb/>Τοὺϲ ὑγιεινὰ τὰ ϲώματα ἔχονταϲ ἐργῶδεϲ καθαίρειν· καὶ γὰρ <lb n="1"/>
+                            <lb/>ἰλιγγιῶϲι καὶ ϲτροφοῦνται, καὶ δυϲχερῶϲ αὐτοῖϲ ἡ κάθαρϲιϲ προχωρεῖ,
+                            <lb/>καὶ πρὸϲ τούτοιϲ ἔτι ταχέωϲ ἐκλύονται· γίνεται δὲ ταῦτα πάντα, τοῦ
+                            <lb n="15"/> καθαρτικοῦ φαρμάκου τὸν οἰκεῖον μὲν ἕλκειν ἐφιεμένου χυμόν,
+                            <lb/>τῷ δ᾿ ἀπορεῖν αὐτοῦ τὸ οἷμα καὶ τὰϲ ϲάρκαϲ ϲυντήκοντοϲ, ἵνα ἐξ ἐκείνων
+                            <lb/> ἕλξῃ τὸ οἰκεῖον. </p>
                     </div>
                     <div type="textpart" subtype="section" n="2" xml:id="_1.2">
-                        <p> τοὺϲ δ᾿ ὑγιαίνονταϲ μὲν ἔτι, νοϲήϲανταϲ δ᾿ <add cause="fix">ἄν</add>, εἰ
-                                <lb n="2"/> μὴ κενωθεῖεν, φθάνειν χρὴ κενοῦν εἰϲβάλλοντοϲ | ἦροϲ,
-                            ἤτοι διὰ φλεβοτομίαϲ, <lb n="74"/> εἰ πληθωρικοῖϲ ἁλίϲκοιντο νοϲήμαϲιν,
-                            ἢ διὰ καθάρϲεωϲ, εἰ <lb n="20"/> τοῖϲ κατὰ διαφθοράν. </p>
+                        <p rend="nonindented">
+<lb/>τοὺϲ δ᾿ ὑγιαίνονταϲ μὲν ἔτι, νοϲήϲανταϲ δ᾿ <add cause="fix">ἄν</add>, εἰ
+                            <lb/>μὴ κενωθεῖεν, φθάνειν χρὴ κενοῦν εἰϲβάλλοντοϲ | ἦροϲ, ἤτοι διὰ φλεβοτομίαϲ,
+                            <lb/>εἰ πληθωρικοῖϲ ἁλίϲκοιντο νοϲήμαϲιν, ἢ διὰ καθάρϲεωϲ, εἰ
+                            <lb n="20"/>τοῖϲ κατὰ διαφθοράν. </p>
                     </div>
                     <div type="textpart" subtype="section" n="3" xml:id="_1.3">
-                        <p>ἡμεῖϲ γοῦν καὶ ποδάγραν καὶ ἀρθρῖτιν ἀρχομένην <lb n="3"/> καὶ μήπω περὶ
-                            τοῖϲ ἄρθροιϲ εἰργαϲμένην πώρουϲ ἐκ τῆϲ τοιαύτηϲ κενώϲεωϲ ἐτῶν ἤδη πολλῶν
-                            ἐκωλύϲαμεν γίνεϲθαι. </p>
+                        <p rend="nonindented">
+<lb/>ἡμεῖϲ γοῦν καὶ ποδάγραν καὶ ἀρθρῖτιν ἀρχομένην
+                            <lb/>καὶ μήπω περὶ  τοῖϲ ἄρθροιϲ εἰργαϲμένην πώρουϲ ἐκ τῆϲ τοιαύτηϲ
+                            <lb/>κενώϲεωϲ ἐτῶν ἤδη πολλῶν ἐκωλύϲαμεν γίνεϲθαι.</p>
                     </div>
                     <div type="textpart" subtype="section" n="4" xml:id="_1.4">
-                        <p>κατὰ δὲ τὸν <lb n="4"/> αὐτὸν τρόπον ἀποπληξίαν, ἐπιληψίαν, μελαγχολίαν,
-                            ἄλλα τοιαῦτα χρόνια πάθη διὰ τῆϲ εἰρημένηϲ κενώϲεωϲ ἐπὶ πολλῶν ἀνθρώπων
-                            ἐπαύϲαμεν. <lb n="25"/>
+                        <p rend="nonindented">
+<lb/>κατὰ δὲ τὸν
+                            <lb/>αὐτὸν τρόπον ἀποπληξίαν, ἐπιληψίαν, μελαγχολίαν, ἄλλα τοιαῦτα χρόνια
+                            <lb/>πάθη διὰ τῆϲ εἰρημένηϲ κενώϲεωϲ ἐπὶ πολλῶν ἀνθρώπων ἐπαύϲαμεν.
+                            <lb n="25"/>
                         </p>
                     </div>
                     <div type="textpart" subtype="section" n="5" xml:id="_1.5">
-                        <p>ἐνίοιϲ μὲν οὖν ϲυμφέρει κενοῦϲθαι τοὺϲ φλεγματώδειϲ χυμούϲ, <lb n="5"/>
-                            ἐνίοιϲ δὲ τοὺϲ πικροχόλουϲ, ἐνίοιϲ δὲ τοὺϲ μελαγχολικούϲ, ἐνίοιϲ δ᾿
-                            ὀρῶδεϲ περίττωμα κατὰ τὴν τῶν εἰθιϲμένων αὐτοῖϲ γίνεϲθαι παθῶν οὐϲίαν.
+                        <p rend="nonindented">
+<lb n="25"/>ἐνίοιϲ μὲν οὖν ϲυμφέρει κενοῦϲθαι τοὺϲ φλεγματώδειϲ χυμούϲ,
+                            <lb/>ἐνίοιϲ δὲ τοὺϲ πικροχόλουϲ, ἐνίοιϲ δὲ τοὺϲ μελαγχολικούϲ, ἐνίοιϲ δ᾿
+                            <lb/>ὀρῶδεϲ περίττωμα κατὰ τὴν τῶν εἰθιϲμένων αὐτοῖϲ γίνεϲθαι παθῶν οὐϲίαν.
                         </p>
                     </div>
                     <div type="textpart" subtype="section" n="6" xml:id="_1.6">
-                        <p>αὐτίκα μελαγχολίᾳ τιϲ ἁλίϲκεται καθ᾿ ἕκαϲτον ἔτοϲ, εἰ μὴ <lb n="6"/>
-                            καθαρθείη, καὶ καθαίρω γε αὐτὸν οὐκ ἦροϲ μόνον, ἀλλὰ καὶ φθινοπώρου. <lb n="30"/>
+                        <p rend="nonindented">
+<lb/>αὐτίκα μελαγχολίᾳ τιϲ ἁλίϲκεται καθ᾿ ἕκαϲτον ἔτοϲ, εἰ μὴ
+                            <lb/>καθαρθείη, καὶ καθαίρω γε αὐτὸν οὐκ ἦροϲ μόνον, ἀλλὰ καὶ φθινοπώρου.
+                            <lb n="30"/>
                         </p>
                     </div>
                     <div type="textpart" subtype="section" n="7" xml:id="_1.7">
-                        <p>οὕτωϲ δὲ | καὶ γυναῖκά τινα καθ᾿ ἕκαϲτον ἔτοϲ εἰϲβάλλοντοϲ<lb n="7"/><lb n="75"/> ἦροϲ ὁμοίωϲ κενῶ, καρκινώδη διάθεϲιν ἐν μαϲτῷ ἔχουϲαν, ἣν
-                            ἰαϲάμην ἰϲχυρῶϲ κενώϲαϲ διὰ φαρμάκου καθαίροντοϲ μέλαιναν, καὶ εἰ
-                            παραλειφθείη <note type="footnote">10—14 Οrib. Syn. I 16, 1 12—17 Gal.
+                        <p rend="nonindented">
+<lb n="30"/>οὕτωϲ δὲ | καὶ γυναῖκά τινα καθ᾿ ἕκαϲτον ἔτοϲ εἰϲβάλλοντοϲ
+                            <lb/>ἦροϲ ὁμοίωϲ κενῶ, καρκινώδη διάθεϲιν ἐν μαϲτῷ ἔχουϲαν, ἣν ἰαϲάμην
+                            <lb/>ἰϲχυρῶϲ κενώϲαϲ διὰ φαρμάκου καθαίροντοϲ μέλαιναν, καὶ εἰ  παραλειφθείη
+                            <note type="footnote">10—14 Οrib. Syn. I 16, 1 12—17 Gal.
                                 in Hipp. Aphor comm. I 37 (XVII 2,536—537 K.) 17—p. 222, 13 Gal.
                                 ibid. VI 47 (XVIII 1, 78 —81 K.)</note>
                             <note type="footnote">17—19 Orib. Syn. I 16, 2</note>
@@ -159,61 +247,74 @@
                             <note type="footnote">31 μαϲθῶ C e corr. 32 μέλαιαν A1 : μέλανα Dg post
                                 εἰ add. μὴ A1 N</note>
                             <note type="footnote">32 sq. παραληφθείη N</note>
-                            <pb n="222"/>
                         </p>
                     </div>
+                    <pb n="222"/>
                     <div type="textpart" subtype="section" n="8" xml:id="_1.8">
-                        <p>
-                            <lb n="8"/> ποτὲ ἡ κάθαρϲιϲ, ὀδύνη διὰ βάθουϲ αὐτῇ γίνεται. ἐλέφαντα δ᾿
-                            ἀρχόμενον ἑτέρῳ τὰ μὲν πρῶτα διά τε φλεβοτομίαϲ καὶ καθάρϲεωϲ ἰαϲάμην·
-                            ἑκάϲτου δ᾿ ἔτουϲ αὖθιϲ ἀρκεῖ καὶ τούτω μία κάθαρϲιϲ· ἐκλειφθείϲηϲ <lb n="9"/> δ᾿ αὐτῆϲ, αὐτίκα τὸ πάθοϲ ἐπιϲημαίνει. </p>
+                        <p rend="nonindented">
+<lb/>ποτὲ ἡ κάθαρϲιϲ, ὀδύνη διὰ βάθουϲ αὐτῇ γίνεται. ἐλέφαντα
+                            <lb/>δ᾿ἀρχόμενον ἑτέρῳ τὰ μὲν πρῶτα διά τε φλεβοτομίαϲ καὶ καθάρϲεωϲ
+                            <lb/>ἰαϲάμην· ἑκάϲτου δ᾿ ἔτουϲ αὖθιϲ ἀρκεῖ καὶ τούτω μία κάθαρϲιϲ· ἐκλειφθείϲηϲ
+                            <lb/>δ᾿ αὐτῆϲ, αὐτίκα τὸ πάθοϲ ἐπιϲημαίνει. </p>
                     </div>
                     <div type="textpart" subtype="section" n="9" xml:id="_1.9">
-                        <p>τὰ μὲν οὖν τοιαῦτα νοϲήματα καθάρϲεωϲ χρῄζει μελάνων χυμῶν, ἐπιληπτικὰ δὲ
-                            καὶ <lb n="5"/> ἀποπληκτικὰ καὶ ἀϲθματικὰ τῶν φλεγματωδῶν, ἀρθριτικὰ δὲ
-                            τὰ μὲν ἅμα θερμαϲίᾳ πολλῇ τῶν πικροχόλων, τὰ δὲ ϲὺν ὄγκοιϲ ψυχροῖϲ τῶν
-                                <lb n="10"/> φλεγματικῶν. </p>
+                        <p rend="nonindented">
+<lb/>τὰ μὲν οὖν τοιαῦτα
+                            <lb n="5"/>νοϲήματα καθάρϲεωϲ χρῄζει μελάνων χυμῶν, ἐπιληπτικὰ δὲ καὶ
+                            <lb/>ἀποπληκτικὰ καὶ ἀϲθματικὰ τῶν φλεγματωδῶν, ἀρθριτικὰ δὲ τὰ μὲν
+                            <lb/>ἅμα θερμαϲίᾳ πολλῇ τῶν πικροχόλων, τὰ δὲ ϲὺν ὄγκοιϲ ψυχροῖϲ τῶν
+                                <lb/> φλεγματικῶν. </p>
                     </div>
                     <div type="textpart" subtype="section" n="10" xml:id="_1.10">
-                        <p>ἄλλοϲ δέ τιϲ ὥρᾳ θέρουϲ αἰεὶ τριτοίοιϲ ἁλιϲκόμενοϲ <lb n="76"/> πυρετοῖϲ
-                            ἤδη πολλῶν ἐτῶν οὐκ ἐπύρεξε, χολὴν ὠχρὰν | φθάνων ὑφ᾿ ἡμῶν καθαίρεϲθαι
-                            κατὰ τὴν τελευτὴν τοῦ ἦροϲ· οὕτωϲ γὰρ ἄμεινόν <lb n="10"/> ἐϲτι τοὺϲ
-                            τοιούτουϲ κενοῦν, ὡϲ τούϲ γε ἐπιληπτικοὺϲ ἀρθριτικούϲ τε καὶ
-                            μελαγχολικοὺϲ ὅϲοι τε ἄλλοι διὰ παχεῖϲ χυμοὺϲ νοϲοῦϲιν εἰϲβάλλοντοϲ <lb n="11"/> ἦροϲ ἄμεινον κενοῦϲθαι. </p>
+<p rend="nonindented">
+<lb/>ἄλλοϲ δέ τιϲ ὥρᾳ θέρουϲ αἰεὶ τριτοίοιϲ ἁλιϲκόμενοϲ
+                            <lb/>πυρετοῖϲ  ἤδη πολλῶν ἐτῶν οὐκ ἐπύρεξε, χολὴν ὠχρὰν | φθάνων ὑφ᾿
+                            <lb n="10"/>ἡμῶν καθαίρεϲθαι κατὰ τὴν τελευτὴν τοῦ ἦροϲ· οὕτωϲ γὰρ ἄμεινόν
+                            <lb/>ἐϲτι τοὺϲ τοιούτουϲ κενοῦν, ὡϲ τούϲ γε ἐπιληπτικοὺϲ ἀρθριτικούϲ τε
+                            <lb/>καὶ μελαγχολικοὺϲ ὅϲοι τε ἄλλοι διὰ παχεῖϲ χυμοὺϲ νοϲοῦϲιν εἰϲβάλλοντοϲ
+                            <lb/>ἦροϲ ἄμεινον κενοῦϲθαι. </p>
                     </div>
                     <div type="textpart" subtype="section" n="11" xml:id="_1.11">
-                        <p>χρὴ δὲ προλεπτύνειν καὶ τέμνειν τοὺϲ παχεῖϲ καὶ γλίϲχρουϲ χυμοὺϲ καὶ τοὺϲ
-                            πόρουϲ, δι᾿ ὧν οὗτοι μετα λαμβάνονταί τε καὶ ἕλκονται πρὸϲ τῶν
-                            καθαρτικῶν φαρμάκων, ἀναϲτομοῦν, <lb n="15"/> εἰ ἡ κάθαρϲιϲ ἀρίϲτη
-                            μέλλοι γίνεϲθαι κατὰ πάντα, καὶ μάλιϲτα ἐπὶ τῶν ἐλλέβορον λαμβανόντων· ἡ
-                            γὰρ ϲυντονία τῶν ϲπαραγμῶν, ἐκβάλλουϲα τοὺϲ ἐϲφηνωμένουϲ δυϲλύτωϲ τοῖϲ
-                            πεπονθόϲι μέρεϲι χυμοὺϲ καὶ κατὰ τοῦτο τὰ χρόνια τῶν παθῶν ὠφελοῦϲα,
-                            ῥᾷον ἐργάϲεται τοῦτο, <lb n="12"/> προλελεπτυϲμένων αὐτῶν. </p>
+<p rend="nonindented">
+<lb/>χρὴ δὲ προλεπτύνειν καὶ τέμνειν
+    <lb/>τοὺϲ παχεῖϲ καὶ γλίϲχρουϲ χυμοὺϲ καὶ τοὺϲ  πόρουϲ, δι᾿ ὧν οὗτοι μεταλαμβάνονταί
+    <lb n="15"/>τε καὶ ἕλκονται πρὸϲ τῶν καθαρτικῶν φαρμάκων, ἀναϲτομοῦν,
+    <lb/>εἰ ἡ κάθαρϲιϲ ἀρίϲτη μέλλοι γίνεϲθαι κατὰ πάντα, καὶ μάλιϲτα
+    <lb/>ἐπὶ τῶν ἐλλέβορον λαμβανόντων· ἡ  γὰρ ϲυντονία τῶν ϲπαραγμῶν,
+    <lb/>ἐκβάλλουϲα τοὺϲ ἐϲφηνωμένουϲ δυϲλύτωϲ τοῖϲ  πεπονθόϲι μέρεϲι χυμοὺϲ
+    <lb/>καὶ κατὰ τοῦτο τὰ χρόνια τῶν παθῶν ὠφελοῦϲα, ῥᾷον ἐργάϲεται τοῦτο,
+    <lb n="20"/>προλελεπτυϲμένων αὐτῶν. </p>
                     </div>
                     <div type="textpart" subtype="section" n="12" xml:id="_1.12">
-                        <p>τοῖϲ δ᾿ ἀμελήϲαϲι τούτων δυϲχερεῖϲ ἀπαντῶϲιν <lb n="20"/>
-                            <lb n="77"/> αἱ | καθάρϲειϲ μετὰ ϲτρόφων ἐνίοτε καί τινων ἰλίγγων ἄϲηϲ
-                            τε <lb n="13"/> πολλῆϲ καὶ κακοϲφυξίαϲ ἐκλύϲεώϲ τε καὶ δυϲκολίαϲ. </p>
+<p rend="nonindented">
+<lb/>τοῖϲ δ᾿ ἀμελήϲαϲι τούτων δυϲχερεῖϲ ἀπαντῶϲιν
+    <lb/>αἱ | καθάρϲειϲ μετὰ ϲτρόφων ἐνίοτε καί τινων ἰλίγγων ἄϲηϲ τε
+    <lb/> πολλῆϲ καὶ κακοϲφυξίαϲ ἐκλύϲεώϲ τε καὶ δυϲκολίαϲ.</p>
                     </div>
                     <div type="textpart" subtype="section" n="13" xml:id="_1.13">
-                        <p>τοῦ μέλλοντοϲ δ᾿ ἐλλέβορον λήψεϲθαι προπειρᾶϲθαι χρὴ τῆϲ φύϲεωϲ, ὅπωϲ
-                            ἔχει πρὸϲ <lb n="14"/> τὰϲ ἄνω καθάρϲειϲ, τουτέϲτι τὰϲ δι᾿ ἐμέτων. </p>
+<p rend="nonindented">
+<lb/>τοῦ μέλλοντοϲ
+    <lb/>δ᾿ ἐλλέβορον λήψεϲθαι προπειρᾶϲθαι χρὴ τῆϲ φύϲεωϲ, ὅπωϲ ἔχει πρὸϲ
+    <lb/>τὰϲ ἄνω καθάρϲειϲ, τουτέϲτι τὰϲ δι᾿ ἐμέτων. </p>
                     </div>
                     <div type="textpart" subtype="section" n="14" xml:id="_1.14">
-                        <p>γινέϲθω δ᾿ ἡ πεῖρά ϲοι διὰ τῶν ἐμετικῶν φαρμάκων ὅϲα μέτρια· ἐὰν γὰρ
-                            φαίνηται μὴ ῥᾳδίωϲ <lb n="25"/> καθαιρόμενοϲ, οὐ χρὴ τὸν τοιοῦτον
-                            ἄνθρωπον ἐπὶ τὸν ἐλλέβορον ἄγειν ἄνευ τοῦ προπαραϲκευάϲαι. γένοιτο δ᾿ ἂν
-                            τὸ τοιοῦτο καὶ δι᾿ αὐτῶν μὲν τῶν ϲυνεχών ἐμέτων, ἐθιϲθέντοϲ ἑτοίμωϲ
-                            ἐμεῖν τοῦ ληψομένου τὸν ἐλλέβορον· γένοιτο δ᾿ ἂν ἄμεινον καὶ διὰ τοῦ
-                            προϋγρᾶναι τὰ <lb n="15"/> ϲώματα, προϋγραίνεται δὲ πλείονι τροφῇ καὶ
-                            ἀναπαύϲει. </p>
+<p rend="nonindented">
+<lb/>γινέϲθω δ᾿ ἡ πεῖρά ϲοι
+    <lb n="25"/>διὰ τῶν ἐμετικῶν φαρμάκων ὅϲα μέτρια· ἐὰν γὰρ φαίνηται μὴ ῥᾳδίωϲ
+    <lb/> καθαιρόμενοϲ, οὐ χρὴ τὸν τοιοῦτον ἄνθρωπον ἐπὶ τὸν ἐλλέβορον ἄγειν
+    <lb/>ἄνευ τοῦ προπαραϲκευάϲαι. γένοιτο δ᾿ ἂν τὸ τοιοῦτο καὶ δι᾿ αὐτῶν
+    <lb/>μὲν τῶν ϲυνεχών ἐμέτων, ἐθιϲθέντοϲ ἑτοίμωϲ ἐμεῖν τοῦ ληψομένου
+    <lb/>τὸν ἐλλέβορον· γένοιτο δ᾿ ἂν ἄμεινον καὶ διὰ τοῦ προϋγρᾶναι τὰ
+    <lb n="30"/>ϲώματα, προϋγραίνεται δὲ πλείονι τροφῇ καὶ ἀναπαύϲει. </p>
                     </div>
                     <div type="textpart" subtype="section" n="15" xml:id="_1.15">
-                        <p>τὸ μὲν οὖν <lb n="30"/> τῆϲ ἀναπαύϲεωϲ δῆλον· ὡϲ γὰρ τὰ γυμνάϲια
-                            ξηραίνειν πέφυκεν, <add cause="fix">οὕτω καὶ ἡ ἀνάπαυϲιϲ, ὅπερ ἐϲτὶν
-                                ἡϲυχία τε καὶ ἀγυμναϲία, φυλάττει τὰϲ <lb n="78"/> ὑγρότηταϲ· τροφὴ
-                                δ᾿ οὐχ ἁπλῶϲ ἡ | πλείων ὑγραίνειν πέφυκεν,</add> ἀλλ᾿ ἥτιϲ ἄνευ
-                            ποιότητοϲ ἰϲχυρᾶϲ ᾖ, τουτέϲτι μήτε ϲτρυφνὴ μήτε δριμεῖα <note type="footnote">5—8 Orib. Syn. I 16, 2 13—16 Gal. ibid. 119 (XVII
+<p rend="nonindented">
+<lb n="30"/>τὸ μὲν οὖν
+    <lb/>τῆϲ ἀναπαύϲεωϲ δῆλον· ὡϲ γὰρ τὰ γυμνάϲια ξηραίνειν πέφυκεν, <add cause="fix">οὕτω
+        <lb/>καὶ ἡ ἀνάπαυϲιϲ, ὅπερ ἐϲτὶν ἡϲυχία τε καὶ ἀγυμναϲία, φυλάττει τὰϲ
+        <lb/> ὑγρότηταϲ· τροφὴ δ᾿ οὐχ ἁπλῶϲ ἡ | πλείων ὑγραίνειν πέφυκεν,</add> ἀλλ᾿
+    <lb/>ἥτιϲ ἄνευ ποιότητοϲ ἰϲχυρᾶϲ ᾖ, τουτέϲτι μήτε ϲτρυφνὴ μήτε δριμεῖα
+    <note type="footnote">5—8 Orib. Syn. I 16, 2 13—16 Gal. ibid. 119 (XVII
                                 2,465 K.); Orib Syn. I 16,3 20—22 Gal. ibid II 9 (XVII 2,465 K.)
                                 22—p. 223,1 Gal. ibid. IV 13 (XVII 2,672—673K.)</note>
                             <note type="footnote">1 ὐτῆϲ codd.: corr. C2Dg 3. 4 ἐκλειφθείϲηϲ C e
@@ -230,69 +331,85 @@
                             <note type="footnote">30 πλείω codd.: corr. C2Dg 31 πύφυκεν A 31— 33
                                 οὕτω <gap reason="omitted"/> πέφυκεν add. Dg e Gal., et τροφὴ <gap reason="omitted"/> πέφυκεν add. iam C² 33. 34 ἄλλῃ τιϲ codd.:
                                 ἀλλ᾿ εἴ τιϲ Dg: correxi 34 ἰϲχυράϲη A.</note>
-                            <pb n="223"/> μήτε ἁλυκὴ μήτε πικρά. </p>
+                            <pb n="223"/>
+    <lb/>μήτε ἁλυκὴ μήτε πικρά.</p>
                     </div>
                     <div type="textpart" subtype="section" n="16" xml:id="_1.16">
-                        <p>δεδώκαμεν δ᾿ ἐνίοτε ῥαφανῖδαϲ δι᾿ ὀξυμέλιτοϲ, <lb n="16"/> πήξαντεϲ
-                            αὐταῖϲ δι᾿ ὅληϲ ἡμέραϲ καὶ νυκτὸϲ ἐλλεβόρου κλῶναϲ λευκοῦ. καὶ εἴη ἂν
-                            ἀϲθενὴϲ ἀπ᾿ ἐλλεβόρου κάθαρϲιϲ ἡ τοιαύτη. </p>
+<p rend="nonindented">
+<lb/>δεδώκαμεν δ᾿ ἐνίοτε ῥαφανῖδαϲ δι᾿ ὀξυμέλιτοϲ,
+    <lb/> πήξαντεϲ αὐταῖϲ δι᾿ ὅληϲ ἡμέραϲ καὶ νυκτὸϲ ἐλλεβόρου κλῶναϲ
+    <lb/>λευκοῦ. καὶ εἴη ἂν ἀϲθενὴϲ ἀπ᾿ ἐλλεβόρου κάθαρϲιϲ ἡ τοιαύτη. </p>
                     </div>
                     <div type="textpart" subtype="section" n="17" xml:id="_1.17">
-                        <p>οἱ δὲ <lb n="17"/> ϲτενὸν ἔχοντεϲ τὸν θώρακα καὶ διὰ τοῦτο καὶ τὸν
-                            πνεύμονα ϲυντεθλιμμένον <lb n="5"/> ἀνεπιτηδειότατοι τυγχάνουϲιν εἰϲ τὰϲ
-                            ἐμετικῶν φαρμάκων καθάρϲειϲ τάϲ τε ἄλλαϲ καὶ μάλιϲτα τὴν δι᾿ ἐλλεβόρου
-                            τοῦ λευκοῦ· ῥήγνυται γὰρ αὐτοῖϲ ἀγγεῖόν τι τῶν ἐν τοῖϲ ἀναπνευϲτικοῖϲ
-                            ὀργάνοιϲ. </p>
+<p rend="nonindented">
+<lb/>οἱ δὲ
+    <lb/> ϲτενὸν ἔχοντεϲ τὸν θώρακα καὶ διὰ τοῦτο καὶ τὸν πνεύμονα ϲυντεθλιμμένον
+    <lb n="5"/> ἀνεπιτηδειότατοι τυγχάνουϲιν εἰϲ τὰϲ ἐμετικῶν φαρμάκων
+    <lb/>καθάρϲειϲ τάϲ τε ἄλλαϲ καὶ μάλιϲτα τὴν δι᾿ ἐλλεβόρου τοῦ λευκοῦ·
+    <lb/>ῥήγνυται γὰρ αὐτοῖϲ ἀγγεῖόν τι τῶν ἐν τοῖϲ ἀναπνευϲτικοῖϲ ὀργάνοιϲ. </p>
                     </div>
                     <div type="textpart" subtype="section" n="18" xml:id="_1.18">
-                        <p>χρὴ δὲ καὶ τὸν μὲν πικρόχολον χυμὸν ἄνω, τὸ δὲ φλέγμα κάτω <lb n="18"/>
-                            μᾶλλον κενοῦν· ἔϲθ᾿ ὅτε μὴν ἔμπολιν, εἰ κατὰ μὲν τὴν γαϲτέρα
-                            φλεγματικόϲ, <lb n="10"/> ἐν δὲ τοῖϲ ἐντέροιϲ πικρόχολοϲ ἀθροιϲθείη, τὸν
-                            μέντοι μελαγχολικὸν αἰεὶ κάτω. </p>
+<p rend="nonindented">
+<lb/>χρὴ δὲ καὶ τὸν μὲν πικρόχολον χυμὸν ἄνω, τὸ δὲ φλέγμα κάτω
+    <lb/>μᾶλλον κενοῦν· ἔϲθ᾿ ὅτε μὴν ἔμπολιν, εἰ κατὰ μὲν τὴν γαϲτέρα  φλεγματικόϲ,
+    <lb n="10"/>ἐν δὲ τοῖϲ ἐντέροιϲ πικρόχολοϲ ἀθροιϲθείη, τὸν μέντοι μελαγχολικὸν
+    <lb/>αἰεὶ κάτω. </p>
                     </div>
                     <div type="textpart" subtype="section" n="19" xml:id="_1.19">
-                        <p>γέγραπται δὲ κατὰ τοὺϲ Ἀφοριϲμοὺϲ Ἱπποκράτει | <lb n="19"/> περὶ τῶν
-                            ὡρῶν· ‘θέρεοϲ φαρμακεύειν τὰϲ ἄνω, χειμῶνοϲ τὰϲ <lb n="79"/> κάτω.’ </p>
+<p rend="nonindented">
+<lb/>γέγραπται δὲ κατὰ τοὺϲ Ἀφοριϲμοὺϲ Ἱπποκράτει |
+    <lb/>περὶ τῶν ὡρῶν· ‘θέρεοϲ φαρμακεύειν τὰϲ ἄνω, χειμῶνοϲ τὰϲ
+    <lb/>κάτω.’ </p>
                     </div>
                     <div type="textpart" subtype="section" n="20" xml:id="_1.20">
-                        <p>τὸ δ᾿ ἀνάλογον ταῖϲ ὥραιϲ ἐπὶ τῶν χωρῶν ϲκοπεῖϲθαι χρὴ <lb n="20"/>
-                            θερμότητί τε καὶ ψυχρότητι διαιρουμένουϲ· οὕτωϲ δὲ κἀπὶ τῶν ἡλικιῶν. <lb n="15"/>
+<p rend="nonindented">
+<lb/>τὸ δ᾿ ἀνάλογον ταῖϲ ὥραιϲ ἐπὶ τῶν χωρῶν ϲκοπεῖϲθαι χρὴ
+    <lb/>θερμότητί τε καὶ ψυχρότητι διαιρουμένουϲ· οὕτωϲ δὲ κἀπὶ τῶν ἡλικιῶν.
+    <lb n="15"/>
                         </p>
                     </div>
                     <div type="textpart" subtype="section" n="21" xml:id="_1.21">
-                        <p>καὶ μὴν καὶ τὸ ἔθοϲ οὐ ϲμικρὰ μοῖρα πρὸϲ ἔνδειξιν κενώϲεωϲ· <lb n="21"/>
-                            οἱ μὲν γὰρ ἐμεῖν εἰθιϲμένοι φέρουϲιν ἀλυπότερον τὰϲ διὰ τῆϲ ἄνω κοιλίαϲ
-                            καθάρϲειϲ· οἱ δ᾿ ἀήθειϲ οὐκ ἄνευ κινδύνου, καὶ μᾶλλον ἐπ᾿ ἐλλεβόρου.
+<p rend="nonindented">
+<lb/>καὶ μὴν καὶ τὸ ἔθοϲ οὐ ϲμικρὰ μοῖρα πρὸϲ ἔνδειξιν κενώϲεωϲ·
+    <lb/>οἱ μὲν γὰρ ἐμεῖν εἰθιϲμένοι φέρουϲιν ἀλυπότερον τὰϲ διὰ τῆϲ ἄνω κοιλίαϲ
+    <lb/>καθάρϲειϲ· οἱ δ᾿ ἀήθειϲ οὐκ ἄνευ κινδύνου, καὶ μᾶλλον ἐπ᾿ ἐλλεβόρου.
                         </p>
                     </div>
                     <div type="textpart" subtype="section" n="22" xml:id="_1.22">
-                        <p>καὶ τὸ τοῦ νοϲήματοϲ δ᾿ εἶδοϲ ϲκοπεῖϲθαι προϲῆκεν· ἐπὶ <lb n="22"/> μὲν
-                            γὰρ τοῦ λευκοφλεγματίου ὑδέρου φλέγματοϲ ἀγωγῷ χρηϲόμεθα <lb n="20"/>
-                            φαρμάκῳ, πρότερον μὲν διὰ τῆϲ κάτω γαϲτρόϲ, εἶτα δι᾿ ἐμέτων, εἶτα δι᾿
-                            ἀποφλεγματιϲμῶν· δι᾿ ὅλου γὰρ τοῦ ϲώματοϲ ἐκτεταμένου τοῦ πλεονάζοντοϲ,
-                            ἁπάϲαϲ κενώϲειϲ παραληψόμεθα. </p>
+<p rend="nonindented">
+<lb/>καὶ τὸ τοῦ νοϲήματοϲ δ᾿ εἶδοϲ ϲκοπεῖϲθαι προϲῆκεν· ἐπὶ
+    <lb/>μὲν γὰρ τοῦ λευκοφλεγματίου ὑδέρου φλέγματοϲ ἀγωγῷ χρηϲόμεθα
+    <lb n="20"/>φαρμάκῳ, πρότερον μὲν διὰ τῆϲ κάτω γαϲτρόϲ, εἶτα δι᾿ ἐμέτων, εἶτα
+    <lb/>δι᾿ἀποφλεγματιϲμῶν· δι᾿ ὅλου γὰρ τοῦ ϲώματοϲ ἐκτεταμένου τοῦ
+    <lb/>πλεονάζοντοϲ, ἁπάϲαϲ κενώϲειϲ παραληψόμεθα. </p>
                     </div>
                     <div type="textpart" subtype="section" n="23" xml:id="_1.23">
-                        <p>ἀϲκίτου δ᾿ ὄντοϲ τοῦ <lb n="23"/> ὑδέρου, τῶν ὑδραγωγῶν τι δώϲομεν
-                            φαρμάκων, ὥϲπερ | γε κἀπὶ τῶν <lb n="80"/> ἰκτερικῶν τῶν χολαγωγῶν·
-                            ἐκκαθαίρειν γὰρ χρὴ καὶ τούτων πολυειδῶϲ <lb n="25"/> τὴν χολὴν ἄνω τε
-                            καὶ κάτω καὶ δἰ οὔρων καὶ δι᾿ ὑπερῴαϲ καὶ διὰ ῥινῶν. </p>
+<p rend="nonindented">
+<lb/>ἀϲκίτου δ᾿ ὄντοϲ τοῦ
+    <lb/> ὑδέρου, τῶν ὑδραγωγῶν τι δώϲομεν φαρμάκων, ὥϲπερ | γε κἀπὶ τῶν
+    <lb n="80"/> ἰκτερικῶν τῶν χολαγωγῶν· ἐκκαθαίρειν γὰρ χρὴ καὶ τούτων πολυειδῶϲ
+    <lb n="25"/> τὴν χολὴν ἄνω τε καὶ κάτω καὶ δἰ οὔρων καὶ δι᾿ ὑπερῴαϲ καὶ διὰ ῥινῶν. </p>
                     </div>
                     <div type="textpart" subtype="section" n="24" xml:id="_1.24">
-                        <p>οὕτωϲ δὲ κἂν ὁ μελαγχολικὸϲ πλεονάϲῃ χυμόϲ, ὡϲ ἐν μελαγχολίᾳ <lb n="24"/>
-                            καὶ καρκίνῳ καὶ ἐλέφαντι, τὸ τῆϲ μελαίνηϲ χολῆϲ κενωτικὸν φάρμακον
-                            δίδομεν· ἐπιληψίαν δὲ φλεγμαγωγοῖϲ καθαίρομεν, ἐξ ὧν δῆλον ὡϲ ἡ
-                            κατάϲταϲιϲ τῆϲ νόϲου καὶ τὸν κενωθηϲόμενον δηλοῖ χυμὸν <lb n="30"/> καὶ
-                            τὸν τόπον, δι᾿ οὗ χρὴ κενοῦν αὐτόν. </p>
+<p rend="nonindented">
+<lb/>οὕτωϲ δὲ κἂν ὁ μελαγχολικὸϲ πλεονάϲῃ χυμόϲ, ὡϲ ἐν μελαγχολίᾳ
+    <lb/>καὶ καρκίνῳ καὶ ἐλέφαντι, τὸ τῆϲ μελαίνηϲ χολῆϲ κενωτικὸν
+    <lb/>φάρμακον δίδομεν· ἐπιληψίαν δὲ φλεγμαγωγοῖϲ καθαίρομεν, ἐξ ὧν
+    <lb/>δῆλον ὡϲ ἡ κατάϲταϲιϲ τῆϲ νόϲου καὶ τὸν κενωθηϲόμενον δηλοῖ χυμὸν
+    <lb n="30"/>καὶ τὸν τόπον, δι᾿ οὗ χρὴ κενοῦν αὐτόν. </p>
                     </div>
                     <div type="textpart" subtype="section" n="25" xml:id="_1.25">
-                        <p>ἀμέλει καὶ τῶν κατὰ τὸ <lb n="25"/> ἧπαρ φλεγμαινόντων, ὅταν πεφθῶϲι, τὴν
-                            ἀποκάθαρϲιν ποιούμεθα διὰ μὲν τῆϲ κάτω γαϲτρόϲ, ὅταν ἐν τοῖϲ ϲιμοῖϲ
-                            αὐτοῦ γένηται τὸ πάθημα, δι᾿ οὔρων δέ, ὅταν ἐν τοῖϲ κυριτοῖϲ. </p>
+<p rend="nonindented">
+<lb n="30"/>ἀμέλει καὶ τῶν κατὰ τὸ
+    <lb/>ἧπαρ φλεγμαινόντων, ὅταν πεφθῶϲι, τὴν ἀποκάθαρϲιν ποιούμεθα διὰ
+    <lb/>μὲν τῆϲ κάτω γαϲτρόϲ, ὅταν ἐν τοῖϲ ϲιμοῖϲ αὐτοῦ γένηται τὸ πάθημα,
+    <lb/>δι᾿ οὔρων δέ, ὅταν ἐν τοῖϲ κυριτοῖϲ. </p>
                     </div>
                     <div type="textpart" subtype="section" n="26" xml:id="_1.26">
-                        <p>οὕτωϲ δὲ κἀπὶ τῶν ἄλλων ἐπιϲκέψῃ <lb n="26"/> τόν τε πλεονάζοντα χυμὸν
-                            καὶ τὸν πεπονθότα τόπον, ἐξ οὗ <note type="footnote">1 — 3 Gal. in Hipp.
+<p rend="nonindented">
+<lb/>οὕτωϲ δὲ κἀπὶ τῶν ἄλλων ἐπιϲκέψῃ
+    <lb/>τόν τε πλεονάζοντα χυμὸν καὶ τὸν πεπονθότα τόπον, ἐξ οὗ
+    <note type="footnote">1 — 3 Gal. in Hipp.
                                 de fract. comm. III 48 (XVIII 2, 607 K.) 11—13 Hipp. Aphor. IV 4 (IV
                                 502 L.) 15—28 Gal. in Hipp. de hum. comm. I 12 (XVI 124 —125 K.)
                                 28—p. 224, 6 Gal. ibid. I 2 (XVI 63 K.)</note>
@@ -307,52 +424,62 @@
                                 χολαγωγῶν] χολαγωγόν Dg καὶ om. C 26 οῦτοϲ A καὶ ὁ μελικὸϲ πλεονάϲει
                                 N ὃϲ AN 30 τῶν] τὸν ACN1 31. 32 διὰ <gap reason="omitted"/> πάθημα
                                 om. N 32 ϲιμαῖϲ fortasse A1C1 33. 34 ἐπιϲκέψαι A1</note>
-                            <pb n="224"/> καθάπερ ἑϲτίαϲ τινὸϲ ὁρμᾶται τὸ νόϲημα· ταῦτα γάρ ϲοι καὶ
-                            τὸν <lb n="81"/> κενωθηϲόμενον ἐνδείξεται | χυμὸν καὶ τὸν τρόπον <add cause="fix">τῆϲ κενώϲεωϲ καὶ τὸν τόπον</add> δι᾿ οὗ χρὴ κενῶϲαι, καὶ
-                            πρὸϲ τούτοιϲ ἅπαϲι τὸν καιρόν· ἐν ἀρχῇ μὲν γὰρ τοὺϲ ὀρώδειϲ τε καὶ
-                            λεπτοὺϲ κενώϲειϲ χυμούϲ, ἀναμενεῖϲ δὲ πέψιν ἐπὶ τῶν παχέων καὶ γλίϲχρων,
-                            οἷοι τὴν φύϲιν εἰϲὶν <lb n="5"/>
-                            <lb n="27"/> ὅ τε τοῦ φλέγματοϲ καὶ ὁ τῆϲ μελαίνηϲ χολῆϲ. </p>
+                            <pb n="224"/>
+    <lb/>καθάπερ ἑϲτίαϲ τινὸϲ ὁρμᾶται τὸ νόϲημα· ταῦτα γάρ ϲοι καὶ τὸν
+    <lb/> κενωθηϲόμενον ἐνδείξεται | χυμὸν καὶ τὸν τρόπον <add cause="fix">τῆϲ κενώϲεωϲ καὶ
+        <lb/>τὸν τόπον</add> δι᾿ οὗ χρὴ κενῶϲαι, καὶ πρὸϲ τούτοιϲ ἅπαϲι τὸν καιρόν·
+    <lb/>ἐν ἀρχῇ μὲν γὰρ τοὺϲ ὀρώδειϲ τε καὶ λεπτοὺϲ κενώϲειϲ χυμούϲ, ἀναμενεῖϲ
+    <lb n="5"/>δὲ πέψιν ἐπὶ τῶν παχέων καὶ γλίϲχρων, οἷοι τὴν φύϲιν εἰϲὶν
+    <lb/>ὅ τε τοῦ φλέγματοϲ καὶ ὁ τῆϲ μελαίνηϲ χολῆϲ. </p>
                     </div>
                     <div type="textpart" subtype="section" n="27" xml:id="_1.27">
-                        <p>καὶ ἀπὸ τῶν παροξυϲμῶν δὲ ϲκοπὸν εἰϲ ἔνδειξιν τρόπου κενώϲεωϲ ἕξειϲ, ἐκ
-                            μὲν τῶν ἄνω ποιούμενοϲ τὰϲ κενώϲειϲ ἐν τοῖϲ παροξυϲμοῖϲ, ἐκ δὲ τῶν κάτω
-                            κατὰ τὰϲ καλουμέναϲ ἀνέϲειϲ· καὶ γὰρ καὶ αὐτόματα οὕτωϲ ὠφελεῖ, ἐν μὲν
-                            τοῖϲ παροξυϲμοῖϲ ἐμούντων τε πολλῶν καὶ διὰ ῥινῶν αἱμορραγούντων, <lb n="10"/> ἐν δὲ ταῖϲ ἀνέϲεϲιν σὔρων τε καὶ διαχωρημάτων
-                            ἀποκρινομένων. </p>
+<p rend="nonindented">
+<lb/>καὶ ἀπὸ τῶν παροξυϲμῶν
+    <lb/>δὲ ϲκοπὸν εἰϲ ἔνδειξιν τρόπου κενώϲεωϲ ἕξειϲ, ἐκ μὲν τῶν
+    <lb/>ἄνω ποιούμενοϲ τὰϲ κενώϲειϲ ἐν τοῖϲ παροξυϲμοῖϲ, ἐκ δὲ τῶν κάτω
+    <lb/>κατὰ τὰϲ καλουμέναϲ ἀνέϲειϲ· καὶ γὰρ καὶ αὐτόματα οὕτωϲ ὠφελεῖ,
+    <lb n="10"/>ἐν μὲν τοῖϲ παροξυϲμοῖϲ ἐμούντων τε πολλῶν καὶ διὰ ῥινῶν αἱμορραγούντων,
+    <lb/> ἐν δὲ ταῖϲ ἀνέϲεϲιν σὔρων τε καὶ διαχωρημάτων ἀποκρινομένων.
+<lb/></p>
                     </div>
                     <div type="textpart" subtype="section" n="28" xml:id="_1.28">
-                        <p><lb n="28"/> φυλάττεϲθαι δὲ χρὴ μάλιϲτα τὸν χρόνον τῶν παροξυντικῶν καὶ
-                            κριτικῶν ἡμερῶν, ὁπόταν ἐπιχειρῇϲ κάτω καθαίρειν πολλά· τῆϲ <lb n="82"/>
-                            γὰρ ῥοπῆϲ τῶν χυμῶν ἄνω γινομένηϲ, ἡ τοῦ κάτω καθαίροντοϲ | φαρ <lb n="29"/> μάκου δύναμιϲ ἐμποδιϲθήϲεται. </p>
+<p rend="nonindented">
+<lb/> φυλάττεϲθαι δὲ χρὴ μάλιϲτα τὸν χρόνον τῶν παροξυντικῶν
+    <lb/>καὶ κριτικῶν ἡμερῶν, ὁπόταν ἐπιχειρῇϲ κάτω καθαίρειν πολλά· τῆϲ
+    <lb/>γὰρ ῥοπῆϲ τῶν χυμῶν ἄνω γινομένηϲ, ἡ τοῦ κάτω καθαίροντοϲ | φαρμάκου 
+    <lb n="15"/>δύναμιϲ ἐμποδιϲθήϲεται. </p>
                     </div>
                     <div type="textpart" subtype="section" n="29" xml:id="_1.29">
-                        <p>ἐπὶ δὲ τῶν ἤδη νοϲούντων ἐν μὲν τοῖϲ <lb n="15"/> χρονίοιϲ αἰεὶ δεῖ τὸν
-                            πεπαϲμὸν ἀναμένειν· ἐν δὲ τοῖϲ ὀξέϲιν, ὅταν ὀργά, κατ᾿ ἀρχὰϲ οἷόν τε
-                            φαρμακεῦϲαι, καὶ τοῦτο αὐτὸ πράττειν μετὰ πολλῆϲ εὐλαβείαϲ καὶ
-                            περιϲκέψεωϲ· κίνδυνοϲ γὰρ οὐ μικρὸϲ ἐν ὀξεῖ νοϲήματι κακῶϲ φαρμακεῦϲαι
-                            τῷ πάντα μὲν καθαίροντα φάρμακα τοῖϲ δυνάμεϲιν εἶναι θερμά, δεῖϲθαι δὲ
-                            τὸν πυρετόν, εἰ πυρετόϲ ἐϲτι, κατὰ <lb n="20"/> τὸν αὑτοῦ λόγον οὐχ ὅπωϲ
-                            τῶν ξηραινόντων καὶ θερμαινόντων, ἀλλὰ <lb n="30"/> τῶν ἐναντιωτάτων
-                            αὐτοῖϲ τῶν ὑγραινόντων τε καὶ ψυχόντων. </p>
+<p rend="nonindented">
+<lb n="15"/>ἐπὶ δὲ τῶν ἤδη νοϲούντων ἐν μὲν τοῖϲ
+    <lb/>χρονίοιϲ αἰεὶ δεῖ τὸν πεπαϲμὸν ἀναμένειν· ἐν δὲ τοῖϲ ὀξέϲιν, ὅταν
+    <lb/>ὀργά, κατ᾿ ἀρχὰϲ οἷόν τε φαρμακεῦϲαι, καὶ τοῦτο αὐτὸ πράττειν μετὰ
+    <lb/>πολλῆϲ εὐλαβείαϲ καὶ περιϲκέψεωϲ· κίνδυνοϲ γὰρ οὐ μικρὸϲ ἐν ὀξεῖ
+    <lb/>νοϲήματι κακῶϲ φαρμακεῦϲαι τῷ πάντα μὲν καθαίροντα φάρμακα τοῖϲ
+    <lb n="20"/>δυνάμεϲιν εἶναι θερμά, δεῖϲθαι δὲ τὸν πυρετόν, εἰ πυρετόϲ ἐϲτι, κατὰ
+    <lb/>τὸν αὑτοῦ λόγον οὐχ ὅπωϲ τῶν ξηραινόντων καὶ θερμαινόντων, ἀλλὰ
+    <lb/>τῶν ἐναντιωτάτων αὐτοῖϲ τῶν ὑγραινόντων τε καὶ ψυχόντων. </p>
                     </div>
                     <div type="textpart" subtype="section" n="30" xml:id="_1.30">
-                        <p>οὔκουν οὐδ᾿ αὐτῆϲ ἕνεκα τῆϲ πυρώδουϲ θερμότητοϲ ἡ κάθαρϲιϲ ἡμῖν
-                            παραλαμβάνεται (ταύτην γὰρ ἴϲμεν ὅϲον ἐφ᾿ ἑαυτῇ βλαπτομένην), ἀλλὰ τῶν
-                            ἐργαζομένων ἕνεκα χυμῶν· <add cause="fix">χρὴ τοίνυν μείζονα τὴν
-                                ὠφέλειαν ἐκ τῆϲ <lb n="25"/>
-                                <lb n="83"/> τῶν λυπούντων | χυμῶν</add> κενώϲεωϲ γίνεϲθαι τῆϲ
-                            βλάβηϲ, ἣν ἐξ ἀνάγκηϲ βλάπτεται τὸ ϲῶμα πρὸϲ τῶν καθαρτικῶν φαρμάκων·
-                            ἔϲτι δ᾿ ἡ ὠφέλεια † ἐνάλυπόϲ τε καὶ πᾶϲ ὁ βλάπτων κενωθῇ χυμόϲ· ἵνα δὲ
-                            τοῦτο γένηται, πρῶτον μὲν δεῖ περιϲκέψαϲθαι, εἰ ἐπιτηδείωϲ ὁ κάμνων ἔχει
-                            πρὸϲ τὴν τοιαύτην κάθαρϲιν· οἵ τε γὰρ ἐξ ἀπεψιῶν πολλῶν ἢ γλίϲχρων ἢ <lb n="30"/> παχέων ἐδεϲμάτων ὄντεϲ, ὡϲαύτωϲ δ᾿ οἷϲ ὑποχόνδρια τέταται
-                            καὶ ἐμπεφύϲηται ἢ ὑπερβαλλόντωϲ ἐϲτὶ θερμὰ καὶ πυρώδη, ἢ καί τιϲ αὐτόθι
-                            τῶν ϲπλάγχνων φλεγμονή, πάντεϲ οὗτοι πρὸϲ τὰϲ καθάρϲειϲ <lb n="31"/>
-                            ἀνεπιτήδειοι. </p>
+<p rend="nonindented">
+<lb/>οὔκουν
+    <lb/>οὐδ᾿ αὐτῆϲ ἕνεκα τῆϲ πυρώδουϲ θερμότητοϲ ἡ κάθαρϲιϲ ἡμῖν παραλαμβάνεται
+    <lb/>(ταύτην γὰρ ἴϲμεν ὅϲον ἐφ᾿ ἑαυτῇ βλαπτομένην), ἀλλὰ τῶν
+    <lb n="25"/>ἐργαζομένων ἕνεκα χυμῶν· <add cause="fix">χρὴ τοίνυν μείζονα τὴν ὠφέλειαν ἐκ τῆϲ
+    <lb/>τῶν λυπούντων | χυμῶν</add> κενώϲεωϲ γίνεϲθαι τῆϲ βλάβηϲ, ἣν ἐξ ἀνάγκηϲ
+    <lb/>βλάπτεται τὸ ϲῶμα πρὸϲ τῶν καθαρτικῶν φαρμάκων·  ἔϲτι δ᾿ ἡ ὠφέλεια
+    <lb/>† ἐνάλυπόϲ τε καὶ πᾶϲ ὁ βλάπτων κενωθῇ χυμόϲ· ἵνα δὲ τοῦτο γένηται,
+    <lb/>πρῶτον μὲν δεῖ περιϲκέψαϲθαι, εἰ ἐπιτηδείωϲ ὁ κάμνων ἔχει πρὸϲ
+    <lb n="30"/>τὴν τοιαύτην κάθαρϲιν· οἵ τε γὰρ ἐξ ἀπεψιῶν πολλῶν ἢ γλίϲχρων ἢ
+    <lb/>παχέων ἐδεϲμάτων ὄντεϲ, ὡϲαύτωϲ δ᾿ οἷϲ ὑποχόνδρια τέταται καὶ
+    <lb/>ἐμπεφύϲηται ἢ ὑπερβαλλόντωϲ ἐϲτὶ θερμὰ καὶ πυρώδη, ἢ καί τιϲ
+    <lb/>αὐτόθι τῶν ϲπλάγχνων φλεγμονή, πάντεϲ οὗτοι πρὸϲ τὰϲ καθάρϲειϲ
+    <lb/>ἀνεπιτήδειοι. </p>
                     </div>
                     <div type="textpart" subtype="section" n="31" xml:id="_1.31">
-                        <p>χρὴ τοίνυν ἀπεῖναί τε ταῦτα, καὶ τοὺϲ χυμούϲ, ὡϲ ἔνι μάλιϲτα, τοῦ
-                            κάμνοντοϲ εὐρουϲτάτουϲ εἶναι, τουτέϲτι λεπτούϲ τε καὶ <lb n="35"/>
+<p rend="nonindented">
+<lb/>χρὴ τοίνυν ἀπεῖναί τε ταῦτα, καὶ τοὺϲ χυμούϲ, ὡϲ ἔνι
+<lb n="35"/>μάλιϲτα, τοῦ κάμνοντοϲ εὐρουϲτάτουϲ εἶναι, τουτέϲτι λεπτούϲ τε καὶ
                             <note type="footnote">4 — 6 Orib. Syn. I 16, 4 15—p. 225, 13 Gal. in
                                 Hipp. Aphor comm. I 24 (XVII 2, 447—449 K.) 15—18 Orib Syn. I 16,
                                 4</note>
@@ -367,56 +494,65 @@
                                 corr. C 32 τιϲ C2Dg: τῆϲ codd:</note>
                             <note type="footnote">34 ἐπιτήδειοι AN: ἐπιτήδειον C: corr. C²Dg:
                                 ἐπεῖναι A 35 εὐρουτάτουϲ C</note>
-                            <pb n="225"/> ἥκιϲηα μετέχονταϲ γλιϲχρότητόϲ τινοϲ, ἀναπεπταμένουϲ τε
-                            τοὺϲ πόρουϲ, δἰ ὧν ἡ καθάρϲιϲ μέλλει γενήϲεϲθαι· ταῦτα γὰρ καὶ ἡμεῖϲ
-                            προπαραϲκευάζομεν, ἐπειδὰν μέλλωμέν τινα καθαίρειν. </p>
+                            <pb n="225"/>
+    <lb/>ἥκιϲηα μετέχονταϲ γλιϲχρότητόϲ τινοϲ, ἀναπεπταμένουϲ τε τοὺϲ πόρουϲ,
+    <lb/>δἰ ὧν ἡ καθάρϲιϲ μέλλει γενήϲεϲθαι· ταῦτα γὰρ καὶ ἡμεῖϲ προπαραϲκευάζομεν,
+    <lb/>ἐπειδὰν μέλλωμέν τινα καθαίρειν. </p>
                     </div>
                     <div type="textpart" subtype="section" n="32" xml:id="_1.32">
-                        <p>ἀλλ᾿ ἔν γε τοῖϲ ὀξέϲι <lb n="32"/> νοϲήμαϲι κατ᾿ ἀρχὰϲ εὐθὺϲ | ἤτοι κατὰ
-                            τὴν πρώτην ἡμέραν ἢ οὐκ <lb n="84"/>
-                            <lb n="5"/>ἐξωτέρω τῆϲ δευτέραϲ μελλόντων ἡμῶν χρῆϲθαι ταῖϲ καθάρϲεϲιν,
-                            ὅταν ὀργῇ, τὴν τοιαύτην παραϲκευὴν οὐκ ἐγχωρεῖ γενέϲθαι, πλὴν εἰ ἄρα
-                            ϲχοίη τιϲ καιρὸν μελίκρατον δοῦναι πίνειν, ἐναφεψήϲαϲ ὑϲϲώπου τι ἢ
-                            ὀριγάνου ἢ τραγοριγάνου ἢ θύμου ἢ γλήχουϲ ἤ τινοϲ τῶν οὕτω λεπτυνόντων,
-                            ὥϲτε εὐλόγωϲ ὀλιγάκιϲ ἐν τοῖϲ ὀξέϲι νοϲήμαϲι κα τ᾿ ἀρχὰϲ <lb n="10"/>
-                            γενήϲεται ἡμῖν χρεία φαρμακείαϲ τῷ μήτε πολλάκιϲ ὀργᾶν ἐν ἀρχῇ τοὺϲ
-                            λυποῦνταϲ <add cause="fix">χυμούϲ</add>, μήτε, εἰ καὶ τούτοιϲ ὑπάρχει,
-                            τοῦ νοϲοῦντοϲ ἐπιτηδείου πρὸϲ τὴν κάθαρϲιν ὄντοϲ, ἀλλὰ μηδὲ καιρὸν ἡμῖν
-                            παρέχοντοϲ ἐπιτήδειον αὐτὸν παραϲκευάϲαι. </p>
+<p rend="nonindented">
+<lb/>ἀλλ᾿ ἔν γε τοῖϲ ὀξέϲι
+    <lb/> νοϲήμαϲι κατ᾿ ἀρχὰϲ εὐθὺϲ | ἤτοι κατὰ τὴν πρώτην ἡμέραν ἢ οὐκ
+    <lb n="5"/>ἐξωτέρω τῆϲ δευτέραϲ μελλόντων ἡμῶν χρῆϲθαι ταῖϲ καθάρϲεϲιν, ὅταν
+    <lb/>ὀργῇ, τὴν τοιαύτην παραϲκευὴν οὐκ ἐγχωρεῖ γενέϲθαι, πλὴν εἰ ἄρα
+    <lb/>ϲχοίη τιϲ καιρὸν μελίκρατον δοῦναι πίνειν, ἐναφεψήϲαϲ ὑϲϲώπου τι ἢ
+    <lb/>ὀριγάνου ἢ τραγοριγάνου ἢ θύμου ἢ γλήχουϲ ἤ τινοϲ τῶν οὕτω λεπτυνόντων,
+    <lb/>ὥϲτε εὐλόγωϲ ὀλιγάκιϲ ἐν τοῖϲ ὀξέϲι νοϲήμαϲι κα τ᾿ ἀρχὰϲ
+    <lb n="10"/>γενήϲεται ἡμῖν χρεία φαρμακείαϲ τῷ μήτε πολλάκιϲ ὀργᾶν ἐν ἀρχῇ
+    <lb/>τοὺϲ λυποῦνταϲ <add cause="fix">χυμούϲ</add>, μήτε, εἰ καὶ τούτοιϲ ὑπάρχει, τοῦ νοϲοῦντοϲ
+    <lb/>ἐπιτηδείου πρὸϲ τὴν κάθαρϲιν ὄντοϲ, ἀλλὰ μηδὲ καιρὸν ἡμῖν παρέχοντοϲ
+    <lb/>ἐπιτήδειον αὐτὸν παραϲκευάϲαι. </p>
                     </div>
                     <div type="textpart" subtype="section" n="33" xml:id="_1.33">
-                        <p>ὀργᾶν δ᾿ οἱ χυμοὶ λέγονται, <lb n="33"/> ὅταν ἐν κινήϲει ϲφοδροτέρᾳ
-                            γενόμενοι καὶ μετταρρύϲει μορίων εἰϲ μόρια <lb n="15"/> κατὰ τὴν ἀρχὴν
-                            τοῦ νοϲήματοϲ ὀχλῶϲι τὸν ἄν|θρωπον, ἀνιῶντεϲ καὶ <lb n="85"/>
-                            γαργαλίζοντεϲ καὶ ἡϲυχάζειν οὐκ ἐπιτρέποντεϲ. </p>
+<p rend="nonindented">
+<lb/>ὀργᾶν δ᾿ οἱ χυμοὶ λέγονται,
+    <lb/>ὅταν ἐν κινήϲει ϲφοδροτέρᾳ γενόμενοι καὶ μετταρρύϲει μορίων εἰϲ μόρια
+    <lb n="15"/>κατὰ τὴν ἀρχὴν τοῦ νοϲήματοϲ ὀχλῶϲι τὸν ἄν|θρωπον, ἀνιῶντεϲ καὶ
+    <lb/>γαργαλίζοντεϲ καὶ ἡϲυχάζειν οὐκ ἐπιτρέποντεϲ. </p>
                     </div>
                     <div type="textpart" subtype="section" n="34" xml:id="_1.34">
-                        <p>τοὺϲ μὲν οὖν τοιούτουϲ <lb n="34"/> ἐκκενοῦν προϲήκει, τουτέϲτι τοὺϲ ἐν
-                            κινήϲει καὶ φορᾷ καὶ ῥύϲει· τοὺϲ δὲ καθ᾿ ἕν τι μόριον ἐϲτηριγμένουϲ οὔτε
-                            ἄλλῳ τινὶ βοηθήματι χρὴ κινεῖν οὔτε φαρμακεύειν πρὶν πεφθῆναι· τηνικαῦτα
-                            γὰρ <lb n="20"/> ἤδη καὶ τὴν φύϲιν ἕξομεν βοηθοῦϲαν τῇ κενώϲει· φαίνεται
-                            γὰρ αὕτη μετὰ τὰϲ πέψειϲ διακινοῦϲά τε τοὺϲ χυμοὺϲ ἀπωθουμένη τε τὸ
-                            περιττόν, ἐν ᾧ δὴ καιρῷ καὶ κρίϲειϲ γίνονται, ἀλλὰ τελέωϲ μὲν αὐτῆϲ
-                            κινουμένηϲ, οὐδὲν δεῖ φαρμάκου, μετριώτερον δὲ καὶ ἀϲθενέϲτερον
-                            ἐνεργούϲηϲ, τὸ λεῖπον αὐτοὺϲ χρὴ προϲτιθέναι φαρμακεύονταϲ. </p>
+<p rend="nonindented">
+<lb/>τοὺϲ μὲν οὖν τοιούτουϲ
+    <lb/>ἐκκενοῦν προϲήκει, τουτέϲτι τοὺϲ ἐν κινήϲει καὶ φορᾷ καὶ
+    <lb/>ῥύϲει· τοὺϲ δὲ καθ᾿ ἕν τι μόριον ἐϲτηριγμένουϲ οὔτε ἄλλῳ τινὶ βοηθήματι
+    <lb/>χρὴ κινεῖν οὔτε φαρμακεύειν πρὶν πεφθῆναι· τηνικαῦτα γὰρ
+    <lb n="20"/>ἤδη καὶ τὴν φύϲιν ἕξομεν βοηθοῦϲαν τῇ κενώϲει· φαίνεται γὰρ αὕτη
+    <lb/>μετὰ τὰϲ πέψειϲ διακινοῦϲά τε τοὺϲ χυμοὺϲ ἀπωθουμένη τε τὸ περιττόν,
+    <lb/>ἐν ᾧ δὴ καιρῷ καὶ κρίϲειϲ γίνονται, ἀλλὰ τελέωϲ μὲν αὐτῆϲ
+    <lb/>κινουμένηϲ, οὐδὲν δεῖ φαρμάκου, μετριώτερον δὲ καὶ ἀϲθενέϲτερον ἐνεργούϲηϲ,
+    <lb/>τὸ λεῖπον αὐτοὺϲ χρὴ προϲτιθέναι φαρμακεύονταϲ. </p>
                     </div>
                     <div type="textpart" subtype="section" n="35" xml:id="_1.35">
-                        <p>χρὴ δ᾿ <lb n="35"/>
-                            <lb n="25"/> εἰδέναι ὡϲ αἱ μεταρρυήϲειϲ ἄλλοτε εἰϲ ἄλλο μόριον τῶν χυμῶν
-                            ὀλιγάκιϲ γίνονται, τὰ πλείω δ᾿ ἡϲυχάζει καθ’ ἕν τι μόριον, ἐν ᾧ καὶ
-                            πέττεται, | παῤ ὅλον τοῦ νοϲήματοϲ τὸν χρόνον ἄχρι λύϲεωϲ. </p>
+<p rend="nonindented">
+<lb/>χρὴ δ᾿
+    <lb n="25"/> εἰδέναι ὡϲ αἱ μεταρρυήϲειϲ ἄλλοτε εἰϲ ἄλλο μόριον τῶν χυμῶν ὀλιγάκιϲ
+    <lb/>γίνονται, τὰ πλείω δ᾿ ἡϲυχάζει καθ’ ἕν τι μόριον, ἐν ᾧ καὶ
+    <lb/>πέττεται, | παῤ ὅλον τοῦ νοϲήματοϲ τὸν χρόνον ἄχρι λύϲεωϲ.</p>
                     </div>
                     <div type="textpart" subtype="section" n="36" xml:id="_1.36">
-                        <p>ὅταν <lb n="36"/><lb n="86"/> οὖν μὴ μόνον ὀξὺ πάθοϲ ᾖ, ἀλλὰ καὶ μετὰ
-                            πυρετοῦ ϲφοδροτάτου, εὐλαβητέον ἐϲτὶ τὴν δόϲιν τοῦ καθαίροντοϲ φαρμάκου,
-                            καὶ μάλιϲτα <lb n="30"/> ὅταν ἀπείρωϲ τιϲ ἔχῃ τῆϲ τοῦ κάμνοντοϲ φύϲεωϲ·
-                            ἔνιοι μὲν γάρ εἰϲι φύϲει δυϲκάθαρτοι, τινὲϲ δ᾿ ἐπὶ βραχείᾳ πόϲει
-                            φαρμάκου καθαίρονται δαψιλῶϲ. </p>
+<p rend="nonindented">
+<lb/>ὅταν
+    <lb/>οὖν μὴ μόνον ὀξὺ πάθοϲ ᾖ, ἀλλὰ καὶ μετὰ πυρετοῦ ϲφοδροτάτου,
+    <lb/>εὐλαβητέον ἐϲτὶ τὴν δόϲιν τοῦ καθαίροντοϲ φαρμάκου, καὶ μάλιϲτα
+    <lb n="30"/>ὅταν ἀπείρωϲ τιϲ ἔχῃ τῆϲ τοῦ κάμνοντοϲ φύϲεωϲ· ἔνιοι μὲν γάρ εἰϲι
+    <lb/>φύϲει δυϲκάθαρτοι, τινὲϲ δ᾿ ἐπὶ βραχείᾳ πόϲει φαρμάκου καθαίρονται δαψιλῶϲ. </p>
                     </div>
                     <div type="textpart" subtype="section" n="37" xml:id="_1.37">
-                        <p>ὅταν οὖν ὁ πυρετὸϲ ᾖ μὴ ϲφοδρόϲ, ἔμπειρόϲ τε ᾖϲ τῆϲ <lb n="37"/> φύϲεωϲ
-                            τοῦ κάμνοντοϲ, ἐπὶ τὴν τοῦ φαρμάκου δόϲιν ἀφίξῃ, χρώμενοϲ ἐλλεβόρῳ.
-                            μέλανι ⟨ἤ⟩ τινι τῶν ὁμοιοτρόπων, ὧν ἐϲτι καὶ <add cause="fix">τὸ</add>
+<p rend="nonindented">
+<lb/>ὅταν
+    <lb/>οὖν ὁ πυρετὸϲ ᾖ μὴ ϲφοδρόϲ, ἔμπειρόϲ τε ᾖϲ τῆϲ
+    <lb/>φύϲεωϲ τοῦ κάμνοντοϲ, ἐπὶ τὴν τοῦ φαρμάκου δόϲιν ἀφίξῃ, χρώμενοϲ
+    <lb/>ἐλλεβόρῳ. μέλανι ⟨ἤ⟩ τινι τῶν ὁμοιοτρόπων, ὧν ἐϲτι καὶ <add cause="fix">τὸ</add>
                             διὰ <note type="footnote">13—27 Gal. ibid. I 22 (XVII 2, 441—443K.)
                                 17—22 Οrib. Syn. I 16,4 27—p. 226, 4 Gal. in Hipp. de vict. acut.
                                 comm. II 11 (XV 538—540K.)</note>
@@ -435,69 +571,81 @@
                             <note type="footnote">τῶν C2Dg. τὸν CN: om. A ὅμυιον τρόπον codd corr.
                                 C²Dg ῶν C²Dg: ὡϲ codd. τὸ add. C²Dg</note>
                             <pb n="226"/>
-                            <lb n="38"/> τῆϲ κολοκυνθίδοϲ· </p>
+                            <lb/>τῆϲ κολοκυνθίδοϲ·</p>
                     </div>
                     <div type="textpart" subtype="section" n="38" xml:id="_1.38">
-                        <p>ἱερὰν δ᾿ αὐτὴν ϲυνήθωϲ ὀνομάζουϲιν. ποικίλωϲ δ᾿ αὐτῆϲ ϲκευαζομένηϲ, ἡ τὸν
-                            ἐλλέβορον εἰληφυῖα, τὴν ϲκαμμωνίαν δ᾿ οὐκ ἔχουϲα, κάλλιϲτόν ἐϲτι
-                            φάρμακον ἐπὶ τῶν δυναμένων ὅλωϲ λαβεῖν <lb n="39"/> φάρμακον ὑπήλατον.
+<p rend="nonindented">
+<lb/>ἱερὰν δ᾿ αὐτὴν ϲυνήθωϲ ὀνομάζουϲιν. ποικίλωϲ δ᾿
+    <lb/>αὐτῆϲ ϲκευαζομένηϲ, ἡ τὸν ἐλλέβορον εἰληφυῖα, τὴν ϲκαμμωνίαν δ᾿
+    <lb/>οὐκ ἔχουϲα, κάλλιϲτόν ἐϲτι φάρμακον ἐπὶ τῶν δυναμένων ὅλωϲ λαβεῖν
+    <lb/>φάρμακον ὑπήλατον.
                         </p>
                     </div>
                     <div type="textpart" subtype="section" n="39" xml:id="_1.39">
-                        <p>μετὰ δὲ τὸ ληφθῆναι τὸ καθαρτήριον ϲυμφέρει <lb n="87"/> τῆϲ πτιϲάνηϲ
-                            ἐπιρροφεῖν, ὥϲ φηϲιν Ἱππο | κράτηϲ· αὐτὸ μὲν γὰρ τὸ <lb n="5"/>
-                            καθαρτικόν, ὡϲ ἂν ὀλίγον ὄν, εἰϲ τὸν πυθμένα τῆϲ κοιλίαϲ ἀφικνεῖται·
-                            κατὰ δὲ τὴν δίοδον ὅ τε ϲτόμαχοϲ ὅϲον τε τῆϲ γαϲτρὸϲ ὑψηλὸν οὐ μόνον τῆϲ
-                            ποιότητοϲ τοῦ καθαίροντοϲ, ἀλλὰ καὶ τῆϲ οὐϲίαϲ προϲιζούϲηϲ <lb n="40"/>
-                            ἐν τῇ διόδῳ μεταλαμβάνοντα μεγάλωϲ βλάπτονται. </p>
+<p rend="nonindented">
+<lb/>μετὰ δὲ τὸ ληφθῆναι τὸ καθαρτήριον ϲυμφέρει
+    <lb n="5"/>τῆϲ πτιϲάνηϲ ἐπιρροφεῖν, ὥϲ φηϲιν Ἱππο | κράτηϲ· αὐτὸ μὲν γὰρ τὸ
+    <lb/>καθαρτικόν, ὡϲ ἂν ὀλίγον ὄν, εἰϲ τὸν πυθμένα τῆϲ κοιλίαϲ ἀφικνεῖται·
+    <lb/>κατὰ δὲ τὴν δίοδον ὅ τε ϲτόμαχοϲ ὅϲον τε τῆϲ γαϲτρὸϲ ὑψηλὸν οὐ
+    <lb/>μόνον τῆϲ ποιότητοϲ τοῦ καθαίροντοϲ, ἀλλὰ καὶ τῆϲ οὐϲίαϲ προϲιζούϲηϲ
+    <lb/>ἐν τῇ διόδῳ μεταλαμβάνοντα μεγάλωϲ βλάπτονται. </p>
                     </div>
                     <div type="textpart" subtype="section" n="40" xml:id="_1.40">
-                        <p>χρήϲιμοϲ οὖν χυλὸϲ τῆϲ πτιϲάνηϲ ἐπιρροφούμενοϲ, ὡϲ ἀπορρύψαι μὲν καὶ
-                            καταϲῦραι κάτω <lb n="10"/> τὸ προϲπεπλαϲμένον ἐν τῇ διόδῳ δυνάμενοϲ,
-                            ἐπικεράϲαι δὲ καὶ ὑπαλλάξαι <lb n="41"/> τὴν ἐνιζηκυῖαν τοῖϲ μορίοιϲ
-                            ποιότητα τοῦ φαρμάκου. </p>
+<p rend="nonindented">
+<lb/>χρήϲιμοϲ οὖν χυλὸϲ
+    <lb n="10"/>τῆϲ πτιϲάνηϲ ἐπιρροφούμενοϲ, ὡϲ ἀπορρύψαι μὲν καὶ καταϲῦραι κάτω
+    <lb/>τὸ προϲπεπλαϲμένον ἐν τῇ διόδῳ δυνάμενοϲ, ἐπικεράϲαι δὲ καὶ ὑπαλλάξαι
+    <lb/>τὴν ἐνιζηκυῖαν τοῖϲ μορίοιϲ ποιότητα τοῦ φαρμάκου.</p>
                     </div>
                     <div type="textpart" subtype="section" n="41" xml:id="_1.41">
-                        <p>διὰ ταῦτα μὲν οὖν ἐπὶ τοῦ καθαρτικοῦ πόϲει κελεύει τῆϲ πτιϲάνηϲ
-                            ἐπιρροφεῖν· ἀρξαμένηϲ δὲ γίνεϲθαι τῆϲ καθάρϲεωϲ. οὐκέτι βούλεται
-                            δίδοϲθαι πτιϲάνηϲ, εὐλαβούμενοϲ ἐκλυθῆναι τὴν ἐνέργειαν τοῦ καθαίροτοϲ
-                            φαρμάκου.|</p>
-                        <lb n="15"/>
+<p rend="nonindented">
+<lb/>διὰ ταῦτα
+    <lb/>μὲν οὖν ἐπὶ τοῦ καθαρτικοῦ πόϲει κελεύει τῆϲ πτιϲάνηϲ ἐπιρροφεῖν·
+    <lb/>ἀρξαμένηϲ δὲ γίνεϲθαι τῆϲ καθάρϲεωϲ. οὐκέτι βούλεται δίδοϲθαι πτιϲάνηϲ,
+    <lb/>εὐλαβούμενοϲ ἐκλυθῆναι τὴν ἐνέργειαν τοῦ καθαίροτοϲ φαρμάκου.|
+                        <lb n="15"/></p>
                     </div>
                 </div>
-
                 <div type="textpart" subtype="chapter" n="2" xml:id="_2">
-                    <lb n="88"/>
-                    <head>κδ. Κατὰ πόϲουϲ τρόπουϲ οὐκ ἐκκρίνει ἡ γαϲτὴρ καθαρτηρίου
-                        δοθέντοϲ.</head>
+                    <head> <lb/>κδ. Κατὰ πόϲουϲ τρόπουϲ οὐκ ἐκκρίνει ἡ γαϲτὴρ καθαρτηρίου
+                        <lb/>δοθέντοϲ.</head>
                     <div type="textpart" subtype="section" n="1" xml:id="_2.1">
                         <lb n="1"/>
-                        <p>Οὐκ ἐκκρίνει δ᾿ ἡ γαϲτὴρ ἐνίοτε καθαρτηρίου δοθέντοϲ, ἤτοι διὰ τὴν
-                            ἰδιότητα τῆϲ τοῦ κάμνοντοϲ φύϲεωϲ ἢ διὰ βραχύτητα τοῦ δοθέντοϲ <lb n="20"/> φαρμάκου· πολλάκιϲ δὲ καὶ κόπροϲ ἐϲφηνωμένη ϲκληρὰ κατά
-                            τινα τῶν ἐντέρων ἐκκενωθῆναι δεομένη διὰ κλυϲτῆροϲ πρὶν δίδοϲθαι τὸ <lb n="2"/> καθαῖρον φάρμακον κωλύει τὴν κένωϲιν. </p>
+                        <p rend="indent">
+<lb/>Οὐκ ἐκκρίνει δ᾿ ἡ γαϲτὴρ ἐνίοτε καθαρτηρίου δοθέντοϲ, ἤτοι διὰ
+                            <lb n="20"/>τὴν ἰδιότητα τῆϲ τοῦ κάμνοντοϲ φύϲεωϲ ἢ διὰ βραχύτητα τοῦ δοθέντοϲ
+                            <lb/>φαρμάκου· πολλάκιϲ δὲ καὶ κόπροϲ ἐϲφηνωμένη ϲκληρὰ κατά τινα
+                            <lb/>τῶν ἐντέρων ἐκκενωθῆναι δεομένη διὰ κλυϲτῆροϲ πρὶν δίδοϲθαι τὸ
+                            <lb/>καθαῖρον φάρμακον κωλύει τὴν κένωϲιν. </p>
                     </div>
                     <div type="textpart" subtype="section" n="2" xml:id="_2.2">
-                        <p>δύναται δὲ καὶ τῆϲ φύϲεωϲ. <lb n="3"/> ἐπ᾿ οὖρα τὴν ὁρμὴν πεποιημένηϲ, τὸ
-                            καθαρτικὸν μηδὲν ἀνύειν. </p>
+<p rend="nonindented">
+<lb/>δύναται δὲ καὶ τῆϲ φύϲεωϲ
+    <lb n="3"/>ἐπ᾿ οὖρα τὴν ὁρμὴν πεποιημένηϲ, τὸ καθαρτικὸν μηδὲν ἀνύειν. </p>
                     </div>
                     <div type="textpart" subtype="section" n="3" xml:id="_2.3">
-                        <p>ἔνιά γε μήν, ὅταν ἀποτύχῃ καθαίροντα, τὰ μὲν πρὸϲ τῷ βλάπτειν μηδὲν <lb n="25"/> τὸ ϲῶμα καὶ τροφὴ γίνεται τοῦ ζῴου, τὰ δ᾿ εἰϲ τὸ φάρμακόν
-                            τε καὶ δηλητήριον ἐκτρέπεται.</p>
+<p rend="nonindented">
+<lb/>ἔνιά
+    <lb n="25"/>γε μήν, ὅταν ἀποτύχῃ καθαίροντα, τὰ μὲν πρὸϲ τῷ βλάπτειν μηδὲν
+    <lb/>τὸ ϲῶμα καὶ τροφὴ γίνεται τοῦ ζῴου, τὰ δ᾿ εἰϲ τὸ φάρμακόν τε καὶ
+    <lb/>δηλητήριον ἐκτρέπεται.</p>
                     </div>
                 </div>
 
                 <div type="textpart" subtype="chapter" n="3" xml:id="_3">
-                    <head>κε. Περὶ τῶν μιγνυμένων τοῖϲ καθαρτηρίoιϲ.</head>
+                    <head><lb/>κε. Περὶ τῶν μιγνυμένων τοῖϲ καθαρτηρίoιϲ.</head>
                     <div type="textpart" subtype="section" n="1" xml:id="_3.1">
                         <lb n="1"/>
-                        <p>Πάντων δὲ τῶν καθαιρόντων φαρμάκων κακούντων τὴν γαϲτέρα, <lb n="89"/>
-                            καὶ μάλιϲτα αὐτῆϲ τὸ ϲτόμα, διότι νευρωδέϲτατόν ἐϲτι καὶ αἰϲθητικώτατον,
-                                <lb n="30"/> ἡ μῖξιϲ ἐπενοήθη τῶν εὐωδῶν, ὅπωϲ μὴ μόνη μηδ᾿
-                            ἀκραιφνὴϲ. <lb n="2"/> ἡ δύναμιϲ αὐτῶν ἅπτηται τοῦ ϲτόματοϲ τῆϲ γαϲτρόϲ
-                            χρὴ δ᾿ </p>
+                        <p rend="indent">
+<lb/>Πάντων δὲ τῶν καθαιρόντων φαρμάκων κακούντων τὴν γαϲτέρα,
+<lb n="30"/>καὶ μάλιϲτα αὐτῆϲ τὸ ϲτόμα, διότι νευρωδέϲτατόν ἐϲτι καὶ αἰϲθητικώτατον,
+<lb/>ἡ μῖξιϲ ἐπενοήθη τῶν εὐωδῶν, ὅπωϲ μὴ μόνη μηδ᾿ἀκραιφνὴϲ
+<lb/>ἡ δύναμιϲ αὐτῶν ἅπτηται τοῦ ϲτόματοϲ τῆϲ γαϲτρόϲ.</p>
                     </div>
                     <div type="textpart" subtype="section" n="2" xml:id="_3.2">
-                        <p>εἶναι τὰ μιγνύμενα ϲπέρματα τυιαῦτα, καὶ τὴν κακίαν πέφυκεν ἀμβλύνειν καὶ
+<p rend="nonindented">
+<lb/>χρὴ δ᾿ εἶναι τὰ
+    <lb/>μιγνύμενα ϲπέρματα τυιαῦτα, καὶ τὴν κακίαν πέφυκεν ἀμβλύνειν καὶ
                                 <note type="footnote">4—16 Gal. ibid. 11 12 (XV 541—542 K.) 5—6 Hipp
                                 De vict. acut. I 7, 24 (II 276L.) 17—27 cf. Aet. IlI 117 24—27 Gal.
                                 De simpl. med. III 24 (XI 611 K.) 29—p. 227, 4 cf. Gal. in Hipp. de
@@ -513,18 +661,21 @@
                                 codd.: corr. C²Dg</note>
                             <note type="footnote">31 νευρωδῶν C 32 ϲώματοϲ γαϲτέροϲ AC et N e
                                 corr.</note>
-                            <pb n="227"/> τὴν ἐνέργειαν αὐτῶν μὴ κωλύειν, λεπτυντικῆϲ τε καὶ
-                            τμητικῆϲ ὄντα δυνάμεωϲ, καὶ τοὺϲ παχεῖϲ χυμοὺϲ τέμνειν καὶ τὰϲ ὁδοὺϲ
-                            αὐτῶν, δι᾿ ὧν ἐκκενοῦνται, διοίγειν τε καὶ ἀναϲτομοῦν. </p>
+                            <pb n="227"/>
+    <lb/>τὴν ἐνέργειαν αὐτῶν μὴ κωλύειν, λεπτυντικῆϲ τε καὶ τμητικῆϲ ὄντα
+    <lb/>δυνάμεωϲ, καὶ τοὺϲ παχεῖϲ χυμοὺϲ τέμνειν καὶ τὰϲ ὁδοὺϲ αὐτῶν, δι᾿
+    <lb/>ὧν ἐκκενοῦνται, διοίγειν τε καὶ ἀναϲτομοῦν. </p>
                     </div>
                     <div type="textpart" subtype="section" n="3" xml:id="_3.3">
-                        <p>δεῖ δὲ καὶ ὁμονοεῖν <lb n="3"/> ἀλλήλοιϲ τὰ μιγνύμενα καθαρτικὰ καὶ κατὰ
-                            μηδὲν ϲταϲιάζειν, ἡ δὲ <lb n="5"/> ϲτάϲιϲ αὐτῶν γινέϲθω, οὐχ ὅταν <add cause="fix">τὸ μὲν χολῆϲ, εἰ τύχοι. τὸ δὲ φλέγματοϲ</add> ᾖ
-                            κενωτικόν (ἀμφότερα γὰρ ἐκκενοῦϲθαι δύναται κατὰ τὸν οὐτὸν τρόπον), ἀλλ᾿
-                            ὅταν τὸ μὲν εὐθέωϲ. τὸ δὲ μετὰ <del>ταῦτα</del> πολὺ τῆϲ προϲφορᾶϲ
-                            πεφύκῃ κινεῖν τὴν κάθαρϲιν· ἀνώμαλοϲ γὰρ οὕτωϲ <lb n="90"/> ἡ κένωϲιϲ
-                            γίνεται, προϲενεχθέντων ἅμα· λέγω δ᾿ ἀνώμαλον, ὅταν ἤδη <lb n="10"/>
-                            παύεϲθαι δοκούϲηϲ αὐτῆϲ ἀρχὴ πάλιν ἑτέραϲ κενώϲεωϲ γίνηται.</p>
+<p rend="nonindented">
+<lb/>δεῖ δὲ καὶ ὁμονοεῖν
+    <lb/>ἀλλήλοιϲ τὰ μιγνύμενα καθαρτικὰ καὶ κατὰ μηδὲν ϲταϲιάζειν, ἡ δὲ
+    <lb n="5"/>ϲτάϲιϲ αὐτῶν γινέϲθω, οὐχ ὅταν <add cause="fix">τὸ μὲν χολῆϲ, εἰ τύχοι. τὸ δὲ φλέγματοϲ</add>
+    <lb/>ᾖ κενωτικόν (ἀμφότερα γὰρ ἐκκενοῦϲθαι δύναται κατὰ τὸν
+    <lb/>οὐτὸν τρόπον), ἀλλ᾿ ὅταν τὸ μὲν εὐθέωϲ. τὸ δὲ μετὰ <del>ταῦτα</del> πολὺ
+    <lb/>τῆϲ προϲφορᾶϲ πεφύκῃ κινεῖν τὴν κάθαρϲιν· ἀνώμαλοϲ γὰρ οὕτωϲ
+    <lb/>ἡ κένωϲιϲ γίνεται, προϲενεχθέντων ἅμα· λέγω δ᾿ ἀνώμαλον, ὅταν ἤδη
+    <lb n="10"/>παύεϲθαι δοκούϲηϲ αὐτῆϲ ἀρχὴ πάλιν ἑτέραϲ κενώϲεωϲ γίνηται.</p>
                     </div>
                 </div>
             </div>

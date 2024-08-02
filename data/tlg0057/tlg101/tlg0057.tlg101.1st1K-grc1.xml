@@ -7,8 +7,10 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">In Hippocratis De officina medici</title>
-        <author xml:lang="lat">Galenus</author>
-        <editor>Kühn, Karl Gottlob</editor>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
+        <editor role="editor">Kühn, Karl Gottlob</editor>
         <funder>Andrew W. Mellon Foundation</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts</resp>
@@ -42,7 +44,38 @@
           <persName>Bruce Robertson</persName>
         </respStmt>
       </titleStmt>
-      <publicationStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">Revised edition of the originally published versions of the electronic texts.
+<date type="revision" when="2024">2024</date>
+</edition>
+<respStmt>
+<resp>To reuse the Kühn’s edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We added bibliographical references to the previous editions referred to in Kühn’s edition as "Bas." and "Chart.": that of the Γαληνοῦ Ἅπαντα published in Basel (hence referred to as #Basel) and the Operum Hippocratis Coi, et Galeni Pergameni of René Chartier (hence referred to as #Chartier); we changed the naming schemes of the milestones indicating the corresponding Basel and Chartier pages in Kühn’s edition, and added the corresponding Basel and Chartier volume number. The editions other than that of Kühn were given milestones indicating the corresponding Kühn volume and pages when they were missing. Treatises from Kühn’s edition were given line numbers. We also added elements of structuration that were present in Kühn’s edition but were missing in the TEI, mainly the division of chapters into sections in some treatises, as well as the header for those sections. The text of headings containing the name of chapter and numbers of chapters and sections have been restored, as well as the original symbols as they appear within the printed text of Kühn’s edition. The text numbered tlg0057.tlg096 that was separately edited was reinserted in the tlg0057.tlg095 in accordance with its location within Kühn’s edition. For details, see the revisionDesc section.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Lead Developer, Optéos</resp>
+<persName>Frédéric Glorieux</persName>
+</respStmt>
+<respStmt>
+<resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Cahal Taaffe</persName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+</editionStmt>
+<publicationStmt>
         <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
         <publisher>University of Leipzig</publisher>
         <pubPlace>Germany</pubPlace>
@@ -57,7 +90,7 @@
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="editor">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -110,12 +143,62 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Greek numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn’s edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
+    <revisionDesc>
+      <change who="#Galenus_verbatim" when="2023">First round of revisions for publication on the Galenus verbatim website.</change>
+      <change who="#Galenus_verbatim" when="2023">Added bibliographical information on the editions referred to in Kühn’s edition as "Bas." and "Chart."</change>
+      <change who="#Galenus_verbatim" when="2023">Corrected and added milestone tags for the missing page changes of both Basel and Chartier editions when they were missing.</change>
+      <change who="#Galenus_verbatim" when="2023">Punctual correction to the digitization of Kühn’s text.</change>
+      <change who="#Galenus_verbatim" when="2023">Correction and additions of the sections &lt;div&gt; level when they were missing to better reflect the structure of Kühn’s edition.</change>
+      <change who="#Galenus_verbatim" when="2023">Modification to the subtype of some &lt;div&gt; to better reflect Kühn’s structure.</change>
+      <change who="#Galenus_verbatim" when="2023">Added &lt;label&gt; elements for all headings of chapters and sections.</change>
+      <change who="#Galenus_verbatim" when="2023">Added &lt;l&gt; elements for verse lines and &lt;lg&gt; elements for linegroups.</change>
+      <change who="#Galenus_verbatim" when="2023">Replaced abbreviations introduced by the initial transcription by the original symbols as they appear within the printed text of Kühn’s edition.</change>
+      <change who="#Galenus_verbatim" when="2023">Added line number.</change>
+      <change who="#Galenus_verbatim" when="2024">The text of headings containing the name of chapter and numbers of chapters and sections have been restored and marked with &lt;label&gt; and &lt;num&gt; elements.</change>
+      <change who="#Galenus_verbatim" when="2024">All the indentations have been restored.</change>
+      <change who="#Galenus_verbatim" when="2024">All chapter numbers have been verified. In this treatise, chapter numbers appear on a single line, except for Prooemium chapters.</change>
+    </revisionDesc>
   </teiHeader>
   <text>
     <body>
@@ -128,7 +211,7 @@
 <lb/>ΥΠΟΜΝΗΜΑ Α.
 </head>
             <p rend="indent">
-<lb n="1"/>Γαληνοῦ προοίμιον. <milestone unit="ed2page" n="12.1"/>Ἰατρικὸν ἐπέγραψεν
+              <lb n="1"/><label type="head"><num value="0">Γαληνοῦ προοίμιον.</num></label> <milestone unit="ed2page" n="12.1"/>Ἰατρικὸν ἐπέγραψεν
 <lb n="2"/>αὐτὸ κατ’ ἰητρεῖον. ἄμεινον δὲ ἦν περὶ τῶν κατ’ ἰητρεῖον
 <lb n="3"/>ἐπιγεγράφθαι, καθάπερ ἔνιοι τὸ Διοκλέους ἐπιγράφουσι καὶ
 <lb n="4"/>Φιλοτίμου καὶ Μαντίου. γεγραφότων γὰρ <milestone unit="ed2page" n="12.2"/>καὶ τούτων
@@ -189,7 +272,9 @@
 <lb n="14" rend="rule"/>
           </div>
           <div type="textpart" subtype="chapter" n="1" xml:id="_1.1">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="1">αʹ.</num></label>
+<quote type="lemma">
 <lb n="15"/><milestone unit="ed2page" n="12.3"/>Ἢ ὅμοια ἢ ἀνόμοια ἐξ ἀρχῆς ἀπὸ τῶν μεγίστων, ἀπὸ
 <lb n="16"/>τῶν ῥηΐστων, ἀπὸ τῶν πάντη πάντως γιγνωσκομένων.
 </quote>
@@ -478,7 +563,9 @@
 </div>
           <pb n="18b.648"/>
           <div type="textpart" subtype="chapter" n="2" xml:id="_1.2">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="2">βʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Ἃ καὶ ἰδεῖν καὶ θιγεῖν καὶ ἀκοῦσαί ἐστι.
 </quote>
 <lb rend="rule"/>
@@ -513,7 +600,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="3" xml:id="_1.3">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="3">γʹ.</num></label>
+<quote type="lemma">
 <lb n="11"/>Ἃ καὶ τῇ ὄψει καὶ τῇ ἁφῇ καὶ τῇ ἀκοῇ καὶ τῇ ῥινὶ καὶ
 <lb n="12"/>τῇ γλώσσῃ καὶ τῇ γνώμῃ ἐστὶν αἰσθέσθαι.
 </quote>
@@ -669,7 +758,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="4" xml:id="_1.4">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="4">δʹ.</num></label>
+<quote type="lemma">
 <lb n="11"/>Ἃ καὶ οἷς γιγνωσκόμενα, πᾶσίν ἐστι γνῶναι.
 </quote>
 <lb rend="rule"/>
@@ -809,7 +900,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="5" xml:id="_1.5">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="5">εʹ.</num></label>
+<quote type="lemma">
 <lb n="16"/><milestone unit="ed2page" n="12.14"/>Τὰ δ’ ἐς χειρουργίαν κατ’ ἰητρεῖον.
 </quote>
 <lb rend="rule"/>
@@ -856,7 +949,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="6" xml:id="_1.6">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="6">στʹ.</num></label>
+<quote type="lemma">
 <lb n="3"/>Ὁ ἀσθενέων, ὁ δρῶν, οἱ ὑπηρέται, τὰ ὄργανα, τὸ φῶς,
 <lb n="4"/>ὅκου, ὅκως, ὁκόσα, οἷσιν, ὅκως, ὁκότε, τὸ σῶμα, τὰ
 <lb n="5"/>ἄρμενα, ὁ χρόνος, ὁ τρόπος, ὁ τόπος.
@@ -1001,7 +1096,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="7" xml:id="_1.7">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="7">ζʹ.</num></label>
+<quote type="lemma">
 <lb n="11"/>Ὁ δρῶν ἢ καθήμενος ἢ ἑστεὼς ξυμμέτρως πρὸς ἑωυτὸν πρὸς
 <lb n="12"/>τὸ χειριζόμενον, πρὸς τὴν αὐγήν.
 </quote>
@@ -1080,7 +1177,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="8" xml:id="_1.8">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="8">ηʹ.</num></label>
+<quote type="lemma">
 <lb n="14"/>Αὐγῆς μὲν οὖν δύο εἴδεα, τὸ μὲν κοινὸν, τὸ δὲ τεχνητόν.
 <pb n="18b.678"/>
 <lb n="1"/>τὸ μὲν οὖν κοινὸν οὐκ ἐφ’ ἡμῖν, τὸ δὲ τεχνητὸν καὶ ἐφ’
@@ -1108,7 +1207,9 @@
 </div>
           <pb n="18b.679"/>
           <div type="textpart" subtype="chapter" n="9" xml:id="_1.9">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="9">θʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Ὧν ἑκατέρου δισσαὶ χρήσιες, ἢ πρὸς αὐγὴν, ἢ ὑπ’ αὐγήν.
 </quote>
 <lb rend="rule"/>
@@ -1150,7 +1251,9 @@
 </div>
           <pb n="18b.681"/>
           <div type="textpart" subtype="chapter" n="10" xml:id="_1.10">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="10">ιʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/><milestone unit="ed2page" n="12.20"/>Ὑπ’ αὐγὴν μὲν οὖν ὀλίγη τε ἡ χρῆσις καὶ καταφανής
 <lb n="2"/>τε ἡ μετριότης.
 </quote>
@@ -1190,7 +1293,9 @@
 </div>
           <pb n="18b.683"/>
           <div type="textpart" subtype="chapter" n="11" xml:id="_1.11">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="11">ιαʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Τὰ δὲ πρὸς αὐγὴν ἐκ τῶν παρεουσέων, ἐκ τῶν ξυμφερουσέων
 <lb n="2"/>αὐγέων πρὸς τὴν λαμπρότητα τρέπειν τὸν
 <lb n="3"/>χειριζόμενον.
@@ -1222,7 +1327,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="12" xml:id="_1.12">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="12">ιβʹ.</num></label>
+<quote type="lemma">
 <lb n="8"/>Πλὴν ὁκόσα ἢ λαθεῖν δεῖ ἢ ὁρῇν αἰσχρόν.
 </quote>
 <lb rend="rule"/>
@@ -1236,7 +1343,9 @@
 </div>
           <pb n="18b.685"/>
           <div type="textpart" subtype="chapter" n="13" xml:id="_1.13">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="13">ιγʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Οὑτωσὶ δὲ τὸ μὲν χειριζόμενον ἐναντίον τῇ αὐγῇ, τὸν δὲ
 <lb n="2"/>χειρίζοντα ἐναντίον τῷ χειριζομένῳ πλὴν ὥστε μὴ
 <lb n="3"/>ἐπισκοτάζειν.
@@ -1311,7 +1420,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="14" xml:id="_1.14">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="14">ιδʹ.</num></label>
+<quote type="lemma">
 <lb n="14"/><milestone unit="ed2page" n="12.23"/>Οὕτω γὰρ ἂν ὁ μὲν δρῶν ὁρῴη, τὸ δὲ χειριζόμενον
 <lb n="15"/>οὐχ ὁρῷτο.
 </quote>
@@ -1327,7 +1438,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="15" xml:id="_1.15">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="15">ιεʹ.</num></label>
+<quote type="lemma">
 <lb n="6"/>Πρὸς ἑωυτὸν δὲ καθημένῳ μὲν πόδες ἐς τὴν ἄνω ἴξιν κατ’
 <lb n="7"/>ἰθὺ γούνασι, διάστασιν δὲ ὀλίγον συμβεβηκότες, γούνατα
 <lb n="8"/>δὲ ἀνωτέρω βουβώνων σμικρὸν διάστασιν ἀγκῶσιν
@@ -1379,7 +1492,9 @@
 </div>
           <pb n="18b.692"/>
           <div type="textpart" subtype="chapter" n="16" xml:id="_1.16">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="16">ιστʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Ἱμάτιον εὐσταλέως, εὐκρινέως, ἴσως, ὁμοίως, ἀγκῶσιν, ὤμοισιν.
 </quote>
 <lb rend="rule"/>
@@ -1433,7 +1548,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="17" xml:id="_1.17">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="17">ιζʹ.</num></label>
+<quote type="lemma">
 <lb n="11"/>Πρὸς δὲ τὸ χειριζόμενον τοῦ μὲν πρόσω καὶ ἐγγὺς καὶ ἄνω
 <lb n="12"/>καὶ κάτω καὶ ἔνθα ἢ ἔνθα ἢ μέσον. τοῦ μὲν πρόσω καὶ
 <lb n="13"/>ἐγγὺς ὅριον ἀγκῶνες· εἰς μὲν τὸ πρόσθεν γούνατα μὴ
@@ -1522,7 +1639,9 @@
 </div>
           <pb n="18b.699"/>
           <div type="textpart" subtype="chapter" n="18" xml:id="_1.18">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="18">ιηʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/><milestone unit="ed2page" n="12.27"/>Ἑστεῶτα δὲ δεῖ καὶ ἐπ’ ἀμφοτέρων βεβαῶτα ἐξ ἴσου
 <lb n="2"/>τῶν ποδῶν ἅλις· δρῇν δὲ τῷ ἑτέρῳ ἐπιβεβαῶτα μὴ τῷ
 <lb n="3"/>κατὰ τὴν δρῶσαν χεῖρα ὕψος γούνατι πρὸς βουβῶνα, ὡς
@@ -1558,7 +1677,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="19" xml:id="_1.19">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="19">ιθʹ.</num></label>
+<quote type="lemma">
 <lb n="13"/>Ὁ δὲ χειριζόμενος τῷ χειρίζοντι τῷ ἄλλῳ τοῦ σώματος μέρει
 <lb n="14"/>ὑπηρετείτῳ ἢ ἑστεὼς ἢ καθήμενος ἢ κείμενος ὅκως
 <lb n="15"/>ἂν ῥήιστα ὧδε ὡς σχῆμα ἔχων διατέλει, φυλάσσων ὑπόῤῥυσιν,
@@ -1708,7 +1829,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="20" xml:id="_1.20">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="20">κʹ.</num></label>
+<quote type="lemma">
 <lb n="8"/>Ὄνυχας μήτε ὑπερέχειν μήτε ἐλλείπειν δακτύλων κορυφὰς ἐς
 <lb n="9"/>χρῆσιν ἀσκέειν. δακτύλοισιν μὲν ἄκροις τὰ πλεῖστα λιχανῷ
 <lb n="10"/>πρὸς μέγαν, ὅλῃ δὲ καταπρηνεῖ, ἀμφοτέρῃσι δὲ
@@ -1787,7 +1910,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="21" xml:id="_1.21">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="21">καʹ.</num></label>
+<quote type="lemma">
 <lb n="6"/><milestone unit="ed1page" n="5.674"/>Δάκτυλον ἐκφυῆναι μέγαν τὸν ἐν μέσῳ τῶν δακτύλων
 <lb n="7"/>καὶ ἀπεναντίον τὸν μέγαν τῷ λιχανῷ.
 </quote>
@@ -1803,7 +1928,9 @@
 </div>
           <pb n="18b.713"/>
           <div type="textpart" subtype="chapter" n="22" xml:id="_1.22">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="22">κβʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/><milestone unit="ed2page" n="12.32"/>Νοῦσος δὲ δι’ ἣν καὶ βλάπτονται, οἶσιν ἐν γενετῇσι
 <lb n="2"/>ἢ ἐν τροφαῖς εἴθισται ὁ μέγας ὑπὸ τῶν ἄλλων δακτύλων
 <lb n="3"/>κατέχεσθαι δῆλον.
@@ -1866,7 +1993,9 @@
 </div>
           <pb n="18b.716"/>
           <div type="textpart" subtype="chapter" n="23" xml:id="_1.23">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="23">κγʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Τά ἔργα πάντα ἀσκέειν ἑκατέρῃσι δρῶντα καὶ ἀμφοτέρῃσιν
 <lb n="2"/>ἅμα· ὅμοια γάρ εἰσιν ἀμφοτέρῃσι στοχαζόμενον ἀγαθῶς,
 <lb n="3"/>καλῶς, ταχέως, ἀπόνως, εὐρύθμως, εὐπόρως.
@@ -1891,7 +2020,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="24" xml:id="_1.24">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="24">κδʹ.</num></label>
+<quote type="lemma">
 <lb n="3"/>Ὄργανα μὲν καὶ ὅτε καὶ οἵως εἰρήσεται, ὅκου δεῖ, μὴ ἐμποδὼν
 <lb n="4"/>τὸ ἔργον μηδὲ ἐμποδὼν τῇ ἀναιρέσει, παρὰ τὸ
 <lb n="5"/>ἐργαζόμενον δὲ τοῦ σώματος ἔστω, ἄλλος δὲ ἢν διδῷ ἑτοίμως
@@ -1910,7 +2041,9 @@
 </div>
           <pb n="18b.718"/>
           <div type="textpart" subtype="chapter" n="25" xml:id="_1.25">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="25">κεʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/><milestone unit="ed2page" n="12.34"/>Οἱ δὲ περὶ τὸν ἀσθενέοντα, τὸ μὲν χειριζόμενον
 <lb n="2"/>περιεχόντων, ὡς ἂν δοθῇ, τὸ δὲ ἄλλο σῶμα κατεχόντων,
 <lb n="3"/>ὡς ἂν ἀτρεμέῃ σιγῶντες, ἀκούοντες τοῦ ἐφεστῶτος.
@@ -1929,6 +2062,8 @@
 <lb/>ΒΙΒΛΙΟΝ ΚΑΙ ΓΑΛΗΝΟΥ ΕΙΣ ΑΥΤΟ
 <lb/>ΥΠΟΜΝΗΜΑ Β.
 </head>
+            <lb rend="head"/>
+            <lb/><label type="head"><num value="1">αʹ.</num></label>
             <quote type="lemma">
 <lb n="1"/><milestone unit="ed2page" n="12.35"/>
               <milestone unit="ed1page" n="5.675"/>Ἐπιδέσιος δύο εἴδεα, εἰργασμένον καὶ ἐργαζόμενον.
@@ -2016,7 +2151,9 @@
 </div>
           <pb n="18b.724"/>
           <div type="textpart" subtype="chapter" n="2" xml:id="_2.2">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="2">βʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Εἰργασμένον δὲ ἀγαθῶς, καλῶς· καὶ καλῶς μὲν ἁπλῶς,
 <lb n="2"/>εὐκρινέως ἢ ὅμοια ἢ ἴσα, καὶ δὲ ἴσως καὶ ὁμοίως ἢ ἄνισα
 <lb n="3"/>καὶ ἀνόμοια, ἀνίσως καὶ ἀνομοίως. τὰ δὲ εἴδεα, ἁπλοῦν,
@@ -2207,7 +2344,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="3" xml:id="_2.3">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="3">γʹ.</num></label>
+<quote type="lemma">
 <lb n="9"/>Ἀγαθῶς δὲ δύο εἴδεα τοῦ ἐπιδεομένου, ἰσχύος μὲν ἢ πιέξει
 <lb n="10"/>ἢ πλήθει ὀθονίων.
 </quote>
@@ -2230,7 +2369,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="4" xml:id="_2.4">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="4">δʹ.</num></label>
+<quote type="lemma">
 <lb n="8"/><milestone unit="ed2page" n="12.41"/>Τὸ μὲν οὖν αὕτη ἡ ἐπίδεσις ἰῆται, τὸ δὲ τοῖς ἰωμένοισιν
 <lb n="9"/>ὑπηρετέει.
 </quote>
@@ -2293,7 +2434,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="5" xml:id="_2.5">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="5">εʹ.</num></label>
+<quote type="lemma">
 <lb n="11"/>Ἐς μὲν οὖν ταῦτα νόμος.
 </quote>
 <lb rend="rule"/>
@@ -2312,7 +2455,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="6" xml:id="_2.6">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="6">στʹ.</num></label>
+<quote type="lemma">
 <lb n="6"/>Ἐν δὲ τουτέοισι μέγιστα ἐπιδέσιος πίεξις μὲν ὥστε τὰ
 <lb n="7"/>ἐπικείμενα μὴ ἀφεστάναι, μηδὲ ἐρηρεῖσθαι, ἀλλὰ ἡρμόσθαι
 <lb n="8"/>μὲν, προσηναγκάσθαι δὲ μὴ, ἧσσον μὲν τὰ ἔσχατα,
@@ -2340,7 +2485,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="7" xml:id="_2.7">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="7">ζʹ.</num></label>
+<quote type="lemma">
 <lb n="11"/><milestone unit="ed2page" n="12.43"/>Ἅμμα καὶ ῥάμμα νεμόμενον μὴ κάτω, ἀλλ’ ἄνω ἐν
 <lb n="12"/>παρέξει καὶ σχέσει καὶ ἐπιδέσει καὶ πιέξει.
 </quote>
@@ -2452,7 +2599,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="8" xml:id="_2.8">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="8">ηʹ.</num></label>
+<quote type="lemma">
 <lb n="6"/><milestone unit="ed2page" n="12.45"/>Ἀρχὰς βάλλεσθαι μὴ ἐπὶ τὸ ἕλκος, ἀλλ’ ἔνθεν ἢ
 <lb n="7"/>ἔνθεν τὸ ἅμμα.
 </quote>
@@ -2527,7 +2676,9 @@
 </div>
           <pb n="18b.749"/>
           <div type="textpart" subtype="chapter" n="9" xml:id="_2.9">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="9">θʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Τὸ δὲ ἄμμα μήτε ἐν τρίβῳ μήτε ἐν ἔργῳ μήτε ἐκεῖσε,
 <lb n="2"/>ὅκου ἐνεὸν, ὡς μὴ ἔσω ἐνεὸν κείσεται.
 </quote>
@@ -2590,7 +2741,9 @@
 </div>
           <pb n="18b.752"/>
           <div type="textpart" subtype="chapter" n="10" xml:id="_2.10">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="10">ιʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Ἄμμα δὲ καὶ ῥάμμα μαλθακὸν, οὐ μέγα.
 </quote>
 <lb rend="rule"/>
@@ -2629,7 +2782,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="11" xml:id="_2.11">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="11">ιαʹ.</num></label>
+<quote type="lemma">
 <lb n="15"/>Εὖ γε μὴν γνῶναι ὅτι ἐς τὰ κατάντη καὶ ἀπόξη φεύγει ﻿
 <pb n="18b.754"/>
 <lb n="1"/>πᾶς ἐπίδεσμος, οἷον κεφαλῆς μὲν τὸ ἄνω, κνήμης δὲ τὸ
@@ -2661,7 +2816,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="12" xml:id="_2.12">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="12">ιβʹ.</num></label>
+<quote type="lemma">
 <lb n="5"/>Ἐπιδεῖν δεξιὰ ἐπ’ ἀριστερὰ καὶ ἀριστερὰ ἐπὶ δεξιὰ, πλὴν
 <lb n="6"/>κεφαλῆς, ταύτην δὲ κατ’ ἴξιν.
 </quote>
@@ -2718,7 +2875,9 @@
 </div>
           <pb n="18b.758"/>
           <div type="textpart" subtype="chapter" n="13" xml:id="_2.13">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="13">ιγʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Τὰ δ’ ὑπεναντία ἀπὸ δύο ἀρχέων· ἢν δὲ ἀπὸ μιῆς, ἐφ’
 <lb n="2"/>ὅπερ ὅμοιον ἐς τὸ μόνιμον, οἷον τὸ μέσον τῆς κεφαλῆς
 <lb n="3"/>καὶ εἴ τι ἄλλο τοιοῦτον.
@@ -2760,7 +2919,9 @@
 </div>
           <pb n="18b.760"/>
           <div type="textpart" subtype="chapter" n="14" xml:id="_2.14">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="14">ιδʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Τά δὲ κινούμενα οἶον ἄρθρα, ὅπη μὲν συγκάμπτεται, ὡς
 <lb n="2"/>ἥκιστα καὶ εὐσταλέστατα περιβάλλειν, οἷον ἰγνύην, ὅπη δὲ
 <lb n="3"/>περιτείνεται, ἁπλᾶ τε καὶ πλατέα, οἷον ἡ μύλη.
@@ -2788,7 +2949,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="15" xml:id="_2.15">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="15">ιεʹ.</num></label>
+<quote type="lemma">
 <lb n="5"/><milestone unit="ed2page" n="12.51"/>Προσεπιβάλλειν δὲ καταλήψιος μὲν τῶν περὶ ταῦτα
 <lb n="6"/>εἵνεκα, ἀναλήψιος δὲ τοῦ σύμπαντος <milestone unit="ed1page" n="5.681"/>ἐπιδέσμου
 <lb n="7"/>ἐν τοῖσιν ἀτρεμέουσι καὶ λαπαρωτέροισι τοῦ σώματος,
@@ -2834,7 +2997,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="16" xml:id="_2.16">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="16">ιστʹ.</num></label>
+<quote type="lemma">
 <lb n="8"/><milestone unit="ed2page" n="12.52"/>Ὁμολογέει δὲ ὤμου μὲν ἡ περὶ τὴν ἑτέραν μασχάλην
 <lb n="9"/>περιβολὴ, βουβῶνος δὲ ἡ περὶ τὸν ἕτερον κενεῶνα καὶ
 <lb n="10"/>κνήμης ἡ ὑπὲρ γαστροκνημίης. ὁκόσοισι μὲν ἄνω ἡ φυγὴ,
@@ -2879,7 +3044,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="17" xml:id="_2.17">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="17">ιζʹ.</num></label>
+<quote type="lemma">
 <lb n="11"/><milestone unit="ed2page" n="12.53"/>Οἷσι δὲ μή ἐστι οἷον ἡ κεφαλὴ, τουτέων ἐν τῷ ὁμαλωτάτῳ
 <lb n="12"/>τὰς καταλήψιας ποιέεσθαι καὶ ἥκιστα λοξῷ τῷ
 <lb n="13"/>ἐπιδέσμῳ χρέεσθαι, ὡς τὸ μονιμώτατον ὕστατον περιβληθέντα,
@@ -2924,7 +3091,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="18" xml:id="_2.18">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="18">ιηʹ.</num></label>
+<quote type="lemma">
 <lb n="14"/><milestone unit="ed2page" n="12.54"/>Ὁκόσοισι δὲ μὴ εὐκαταλήπτως τοῖς ὀθονίοισι μηδὲ
 <pb n="18b.768"/>
 <lb n="1"/>εὐαναλήπτως ἔχει, ῥάμμασι τὰς ἀναλήψιας ποιέεσθαι ἐκ
@@ -2974,7 +3143,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="19" xml:id="_2.19">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="19">ιθʹ.</num></label>
+<quote type="lemma">
 <lb n="4"/><milestone unit="ed2page" n="12.55"/>Ἐπιδέσματα καθαρὰ, κοῦφα, μαλθακὰ, λεπτά.
 </quote>
 <lb rend="rule"/>
@@ -2994,7 +3165,9 @@
 </div>
           <pb n="18b.771"/>
           <div type="textpart" subtype="chapter" n="20" xml:id="_2.20">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="20">κʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Ἑλίσσειν ἀμφοτέροισιν ἅμα καὶ ἑκατέροισιν χωρὶς ἀσκέειν.
 </quote>
 <lb rend="rule"/>
@@ -3017,7 +3190,9 @@
 </div>
           <pb n="18b.772"/>
           <div type="textpart" subtype="chapter" n="21" xml:id="_2.21">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="21">καʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Τῇ πρεπούσῃ δὲ ἐς τὰ πλάτη καὶ τὰ πάχη τῶν ὀθονίων
 <lb n="2"/>τεκμαιρόμενον χρέεσθαι.
 </quote>
@@ -3054,7 +3229,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="22" xml:id="_2.22">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="22">κβʹ.</num></label>
+<quote type="lemma">
 <lb n="13"/>Ἑλίξιος κεφαλαὶ σκληραὶ, ὁμαλαὶ, εὐκρινέες.
 </quote>
 <lb rend="rule"/>
@@ -3124,7 +3301,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="23" xml:id="_2.23">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="23">κγʹ.</num></label>
+<quote type="lemma">
 <lb n="3"/>Τὰ δὲ δὴ μέλλοντα ἀποπίπτειν, κακίω ταχέως ἀποπεσόντων,
 <lb n="4"/>τὰ δὲ ὡς μήτε πιέζειν μήτε ἀποπίπτειν.
 </quote>
@@ -3269,7 +3448,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="24" xml:id="_2.24">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="24">κδʹ.</num></label>
+<quote type="lemma">
 <lb n="11"/>Ὧν δὲ ἔχεται ἐπίδεσις ἣ ὑπόδεσις ἢ ἀμφότερα.
 </quote>
 <lb rend="rule"/>
@@ -3305,7 +3486,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="25" xml:id="_2.25">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="25">κεʹ.</num></label>
+<quote type="lemma">
 <lb n="4"/><milestone unit="ed2page" n="12.61"/>Ὑπόδεσις μὲν αἰτίη, ὥστε ἢ ἀφεστεῶτα προστεῖλαι
 <lb n="5"/>ἣ ἐκπεπταμένα συστεῖλαι ἢ ξυνεσταλμένα διαστεῖλαι ἢ
 <lb n="6"/>διεστρομμένα διορθῶσαι ἢ τἀναντία.
@@ -3383,7 +3566,9 @@
 </div>
           <pb n="18b.790"/>
           <div type="textpart" subtype="chapter" n="26" xml:id="_2.26">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="26">κστʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Παρασκευάζειν δὲ ὀθόνια κοῦφα, λεπτὰ, μαλθακὰ, καθαρὰ,
 <lb n="2"/>πλατέα, μὴ ἔχοντα συῤῥαφὰς, μηδ’ ἐξεστίας καὶ ὑγιέα,
 <lb n="3"/>ὥστε τανύειν φέρειν καὶ ὀλίγῳ κρέσσω, μὴ ξηρὰ, ἀλλ’
@@ -3436,7 +3621,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="27" xml:id="_2.27">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="27">κζʹ.</num></label>
+<quote type="lemma">
 <lb n="11"/>Ἀφεστεῶτα μὲν ὥστε τὰ μετέωρα τῆς ἕδρης ψαύειν μὲν,
 <lb n="12"/>πιέζειν δὲ μή. ἦρχθαι δὲ ἐκ τοῦ ὑγιέος, τελευτᾷν δὲ
 <lb n="13"/>πρὸς τὸ ἕλκος, ὡς τὸ μὲν ὑπεὸν ἐξαθέλγηται, ἕτερον δὲ
@@ -3521,7 +3708,9 @@
 </div>
           <pb n="18b.797"/>
           <div type="textpart" subtype="chapter" n="28" xml:id="_2.28">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="28">κηʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/><milestone unit="ed2page" n="12.65"/>Ἐπιδεῖν τὰ μὲν ὀρθὰ ἐς ὀρθὸν, τὰ δὲ λοξὰ λοξῶς
 <lb n="2"/>ἐν σχήματι ἀπόνῳ, ἐν ᾧ μήτε ἀπόσφιγξις μήτε ἀπόστασις
 <lb n="3"/>ἔσται. ἐξ οὗ ὅταν μεταλλάσσῃ ἐς ἀνάληψιν ἢ
@@ -3611,7 +3800,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="29" xml:id="_2.29">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="29">κθʹ.</num></label>
+<quote type="lemma">
 <lb n="10"/>Ἀναλελῆφθαι δὲ ἢ κέεσθαι ἐν σχήματι ἀπόνῳ τῷ κατὰ
 <lb n="11"/>φύσιν. ὧν δὲ ἂν ἀποστῇ τἀναντία.
 </quote>
@@ -3716,7 +3907,9 @@
 </div>
           <pb n="18b.807"/>
           <div type="textpart" subtype="chapter" n="30" xml:id="_2.30">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="30">λʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Ὧν δ’ ἂν ἐκπεπταμένα συστεῖλαι, τὰ μὲν ἄλλα τὰ αὐτὰ.
 <lb n="2"/>ἐκ πολλοῦ δέ τινος δεῖ τὴν συναγωγὴν καὶ ἐκ προσαγωγῆς
 <lb n="3"/>τὴν πίεξιν τὸ πρῶτον ἥκιστα, ἔπειτα ἐπὶ μᾶλλον,
@@ -3796,7 +3989,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="31" xml:id="_2.31">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="31">λαʹ.</num></label>
+<quote type="lemma">
 <lb n="3"/>Ὧν δὲ συνεσταλμένα διαστεῖλαι σὺν μὲν φλεγμονῇ τἀναντία,
 <lb n="4"/>ἄνευ δὲ ταύτης παρασκευὴ μὲν τοιαύτη, ἐπιδέσει δὲ
 <lb n="5"/>ἐναντίη.
@@ -3892,6 +4087,8 @@
 <lb/>ΒΙΒΛΙΟΝ ΚΑΙ ΓΑΛΗΝΟΥ ΕΙΣ ΑΥΤΟ
 <lb/>ΥΠΟΜΝΗΜΑ Γ.
 </head>
+            <lb rend="head"/>
+            <lb/><label type="head"><num value="1">αʹ.</num></label>
             <quote type="lemma">
 <lb n="1"/><milestone unit="ed2page" n="12.72"/>Διεστραμμένα δὲ διορθῶσαι· τὰ μὲν ἄλλα κατὰ
 <lb n="2"/>τὰ αὐτὰ, δεῖ τὰ μὲν ἐπεληλυθότα ἐπαγαγεῖν ὑποδέσει,
@@ -3985,7 +4182,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="2" xml:id="_3.2">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="2">βʹ.</num></label>
+<quote type="lemma">
 <lb n="5"/>Σπληνῶν μήκεα, πλάτεα, πάχεα, πλήθεα. μῆκος ὅσον ἡ
 <lb n="6"/>ἐπίδεσις, πλάτος τριῶν ἢ τεσσάρων δακτύλων, πάχος
 <lb n="7"/>τριπτύχους ἢ τετραπτύχους, πλῆθος κυκλεῦντας μη
@@ -4022,7 +4221,9 @@
 </div>
           <pb n="18b.823"/>
           <div type="textpart" subtype="chapter" n="3" xml:id="_3.3">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="3">γʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/><milestone unit="ed2page" n="12.75"/>Οἷσι δὲ ἐς διόρθωσιν μῆκος κυκλεῦντας πλάτος καὶ
 <lb n="2"/>πάχος τῇ ἐνδείῃ τεκμαίρεσθαι, μὴ ἀθρόα πληρεῦντας.
 </quote>
@@ -4063,7 +4264,9 @@
 </div>
           <pb n="18b.825"/>
           <div type="textpart" subtype="chapter" n="4" xml:id="_3.4">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="4">δʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Τῶν δὲ ὀθονίων ὑποδεσμίδες εἰσὶ δύο τῇ πρώτῃ ἐκ τοῦ
 <lb n="2"/>σίνεος εἰς τὰ ἄνω, τῇ δὲ δευτέρῃ ἐκ τοῦ σίνεος εἰς τὰ
 <lb n="3"/>κάτω τελευτώσῃ.
@@ -4085,7 +4288,9 @@
 </div>
           <pb n="18b.826"/>
           <div type="textpart" subtype="chapter" n="5" xml:id="_3.5">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="5">εʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Κατὰ τὸ σῖνος πιέζειν μάλιστα ἥκιστα τὰ ἄκρα, τὰ δὲ
 <lb n="2"/>ἄλλα κατὰ λόγον.
 </quote>
@@ -4100,7 +4305,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="6" xml:id="_3.6">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="6">στʹ.</num></label>
+<quote type="lemma">
 <lb n="8"/>Ἡ δὲ ἐπίδεσις πουλὺ τῆς ὑγιέος προσλαμβανέτω.
 </quote>
 <lb rend="rule"/>
@@ -4115,7 +4322,9 @@
 </div>
           <pb n="18b.827"/>
           <div type="textpart" subtype="chapter" n="7" xml:id="_3.7">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="7">ζʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Ἐπιδέσμων δὲ πλῆθος, μῆκος, πλάτος· πλῆθος μὲν μὴ
 <lb n="2"/>ἡσσᾶσθαι τοῦ σίνεος μηδὲ νάρθηξιν ἐνέρεισιν εἶναι μηδὲ
 <lb n="3"/>ἄχθος μηδὲ περίῤῥεψιν μηδὲ ἐκθήλυνσιν ἐπιδέσμου.
@@ -4159,7 +4368,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="8" xml:id="_3.8">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="8">ηʹ.</num></label>
+<quote type="lemma">
 <lb n="3"/>Μῆκος δὲ καὶ πλάτος τριῶν ἢ τεττάρων ἢ πέντε ἢ ἕξ,
 <lb n="4"/>πήχεων μὲν μῆκος, δακτύλων δὲ πλάτος.
 </quote>
@@ -4179,7 +4390,9 @@
 </div>
           <pb n="18b.830"/>
           <div type="textpart" subtype="chapter" n="9" xml:id="_3.9">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="9">θʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/><milestone unit="ed2page" n="12.78"/>Αἱ παρέρματος περιβολαὶ τοσαῦται, ὥστε μὴ πιέζειν.
 </quote>
 <lb rend="rule"/>
@@ -4202,7 +4415,9 @@
 </div>
           <pb n="18b.831"/>
           <div type="textpart" subtype="chapter" n="10" xml:id="_3.10">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="10">ιʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Μαλθακὰ δὲ, μὴ παχέα.
 </quote>
 <lb rend="rule"/>
@@ -4215,7 +4430,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="11" xml:id="_3.11">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="11">ιαʹ.</num></label>
+<quote type="lemma">
 <lb n="6"/>Ταῦτα πάντα ὡς ἐπὶ μήκει καὶ πλάτει καὶ πάχει τοῦ
 <lb n="7"/>παθόντος.
 </quote>
@@ -4231,7 +4448,9 @@
 </div>
           <pb n="18b.832"/>
           <div type="textpart" subtype="chapter" n="12" xml:id="_3.12">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="12">ιβʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/><milestone unit="ed2page" n="12.79"/>Νάρθηκες δὲ λεῖοι, ὁμαλοὶ, σιμοὶ, κατ’ ἄκρα σμικρῷ
 <lb n="2"/>μείους ἔνθεν καὶ ἔνθεν τῆς ἐπιδέσεως. παχύτατοι δὲ ᾗ
 <lb n="3"/>ἐξέῤῥιπτε τὸ κάτηγμα.
@@ -4280,7 +4499,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="13" xml:id="_3.13">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="13">ιγʹ.</num></label>
+<quote type="lemma">
 <lb n="6"/><milestone unit="ed2page" n="12.80"/>Ὁκόσα δὲ κυρτὰ καὶ ἄσαρκα φύσει φυλασσομένων
 <lb n="7"/>τῶν ὑπερεχόντων, οἷον κατὰ δακτύλους ἢ σφυρὰ τῇ θέσει
 <lb n="8"/>ἢ τῇ βραχύτητι.
@@ -4303,7 +4524,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="14" xml:id="_3.14">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="14">ιδʹ.</num></label>
+<quote type="lemma">
 <lb n="5"/>Παρέρμασι δὲ ἑρμάζειν, μὴ πιέζειν τὸ πρῶτον.
 </quote>
 <lb rend="rule"/>
@@ -4328,7 +4551,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="15" xml:id="_3.15">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="15">ιεʹ.</num></label>
+<quote type="lemma">
 <lb n="6"/><milestone unit="ed2page" n="12.81"/>Κηρωτῇ μαλθακῇ καὶ λείῃ καὶ καθαρῇ.
 </quote>
 <lb rend="rule"/>
@@ -4364,7 +4589,9 @@
 </div>
           <pb n="18b.838"/>
           <div type="textpart" subtype="chapter" n="16" xml:id="_3.16">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="16">ιστʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Ὕδατος θερμότης, πλῆθος· θερμότης μὲν κατὰ τῆς ἑαυτοῦ
 <lb n="2"/>χειρὸς κατασχεῖν, πλῆθος δὲ χαλάσαι μὲν καὶ ἰσχνᾶναι
 <lb n="3"/>τὸ πλεῖστον ἄριστον, σαρκῶσαι δὲ καὶ ἁπαλῦναι τὸ
@@ -4458,7 +4685,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="17" xml:id="_3.17">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="17">ιζʹ.</num></label>
+<quote type="lemma">
 <lb n="15"/>Μέτρον δὲ ἐν τῇ καταχύσει ἔτι μετεωριζομένου, δεῖ πρὶν
 <pb n="18b.843"/>
 <lb n="1"/>συμπίπτειν παύεσθαι. τὸ μὲν γὰρ πρῶτον αἴρεται, ἔπειτα
@@ -4477,7 +4706,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="18" xml:id="_3.18">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="18">ιηʹ.</num></label>
+<quote type="lemma">
 <lb n="10"/>Θέσις δὲ μαλθακὴ, ὁμαλὴ, ἀνάῤῥοπος τοῖσιν ἐξέχουσι τοῦ
 <lb n="11"/>σώματος, οἷον πτέρνῃ καὶ ἰσχίῳ, ὡς μήτε ἀνακλᾶται μήτε
 <lb n="12"/>ἐκτρέπεται.
@@ -4568,7 +4799,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="19" xml:id="_3.19">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="19">ιθʹ.</num></label>
+<quote type="lemma">
 <lb n="4"/>Σπλῆνα παντὶ τῷ σκέλει ἢ ἡμίσει, ἐς τὸ πάθος δὲ βλέπειν
 <lb n="5"/>καὶ τἄλλα ὅσα βλάπτει δῆλα.
 </quote>
@@ -4633,7 +4866,9 @@
 </div>
           <pb n="18b.851"/>
           <div type="textpart" subtype="chapter" n="20" xml:id="_3.20">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="20">κʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Πάρεξις δὲ καὶ διάτασις καὶ ἀνάπλασις καὶ τὰ ἄλλα κατὰ
 <lb n="2"/>φύσιν.
 </quote>
@@ -4659,7 +4894,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="21" xml:id="_3.21">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="21">καʹ.</num></label>
+<quote type="lemma">
 <lb n="3"/><milestone unit="ed2page" n="12.87"/>Φύσις δὲ ἐν μὲν ἔργοις τοῦ ἔργου τῇ πρήξει ὃ βούλεται
 <lb n="4"/>τεκμαρτέον. ἐς δὲ ταῦτα ἐκ τοῦ ἐλινύοντος ἐκ
 <lb n="5"/>τοῦ κοινοῦ, ἐκ τοῦ ἔθεος. ἐκ μὲν τοῦ ἐλινύοντος καὶ
@@ -4872,7 +5109,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="22" xml:id="_3.22">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="22">κβʹ.</num></label>
+<quote type="lemma">
 <lb n="8"/><milestone unit="ed2page" n="12.91"/>Ἐν δὲ τῇ μεταλλαγῇ ἐκ διατάσιος ὅμοια ταῦτα ἔχουσιν,
 <lb n="9"/>εἰς ἕξιν ἢ θέσιν μύες, φλέβες, νεῦρα, ὀστέα ἢ
 <lb n="10"/>μάλιστα εὔθετα καὶ εὔσχετα.
@@ -4928,7 +5167,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="23" xml:id="_3.23">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="23">κγʹ.</num></label>
+<quote type="lemma">
 <lb n="3"/><milestone unit="ed2page" n="12.92"/>Διάτασις μάλιστα τὰ μέγιστα καὶ πάχιστα καὶ ὁμαλὰ
 <lb n="4"/>καὶ ὅκου ἀμφότερα. δεύτερα ὧν τὸ ὑποτεταγμένον, ἥκιστα
 <lb n="5"/>ὧν τὸ ἄων.
@@ -4953,7 +5194,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="24" xml:id="_3.24">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="24">κδʹ.</num></label>
+<quote type="lemma">
 <lb n="4"/>Μᾶλλον δὲ τοῦ μετρίου βλάβη, πλὴν παιδίων, ἔχειν ἀνάντη
 <lb n="5"/>σμικρόν.
 </quote>
@@ -5001,7 +5244,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="25" xml:id="_3.25">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="25">κεʹ.</num></label>
+<quote type="lemma">
 <lb n="9"/><milestone unit="ed1page" n="5.697"/>Διαρθρώσιος παράδειγμα τὸ ὁμώνυμον, τὸ ὁμόζυγον,
 <lb n="10"/>τὸ ὅμοιον, τὸ ὑγιές.
 </quote>
@@ -5044,7 +5289,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="26" xml:id="_3.26">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="26">κστʹ.</num></label>
+<quote type="lemma">
 <lb n="11"/>Ἀνάτριψις δύναται λῦσαι, δῆσαι, σαρκῶσαι, μινυθῆσαι. ἡ
 <lb n="12"/>σκληρὴ δῆσαι, ἡ μαλακὴ λῦσαι, ἡ πολλὴ μινυθῆσαι, ἡ μετρίη
 <lb n="13"/>παχῦναι.
@@ -5080,7 +5327,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="27" xml:id="_3.27">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="27">κζʹ.</num></label>
+<quote type="lemma">
 <lb n="7"/><milestone unit="ed2page" n="12.95"/>Εἰδεῖν δὲ τὸ πρῶτον ὁ μὲν ἐπιδεδεμένος μάλιστα
 <lb n="8"/>φάτω πεπιέχθαι κατὰ τὸ σίνος, ἥκιστα τὰ ἄκρα. ἡρηῶσθαι
 <lb n="9"/>δὲ, μὴ πεπιέχθαι τῷ πλήθει μὴ ἰσχύει. τὴν δὲ ἡμέρην
@@ -5127,7 +5376,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="28" xml:id="_3.28">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="28">κηʹ.</num></label>
+<quote type="lemma">
 <lb n="10"/><milestone unit="ed2page" n="12.96"/>Κεφάλαια, σχημάτων ἔθη, φύσεις ἑκάστου τῶν μελέων.
 <lb n="11"/>τὰ εἴδεα ἐκ τοῦ τρέχειν, ὁδοιπορέειν, ἑστάναι, κατακεῖσθαι
 <lb n="12"/>ἐκ τοῦ ἔργου, ἐκ τοῦ ἀφεῖσθαι.
@@ -5203,7 +5454,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="29" xml:id="_3.29">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="29">κθʹ.</num></label>
+<quote type="lemma">
 <lb n="8"/>Ὅτι χρῆσις κρατύνει, ἀργίη δὲ τήκει.
 </quote>
 <lb rend="rule"/>
@@ -5232,7 +5485,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="30" xml:id="_3.30">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="30">λʹ.</num></label>
+<quote type="lemma">
 <lb n="13"/><milestone unit="ed2page" n="12.98"/>Ἢ πιέσει ἢ πλήθει.
 </quote>
 <lb rend="rule"/>
@@ -5248,7 +5503,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="31" xml:id="_3.31">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="31">λαʹ.</num></label>
+<quote type="lemma">
 <lb n="5"/>Ὁκόσα δὲ ἐκχυμώματα ἢ φλάσματα ἢ σπάσματα ἢ οἰδήματα
 <lb n="6"/>ἀφλέγμαντα ἐξεργᾶται, ἐκ τοῦ τραύματος ἐς μὲν τὸ ἄνω τοῦ
 <lb n="7"/>σώματος τὸ πλεῖστον, βραχὺ δέ τι καὶ ἐς τὸ κάτω, μὴ
@@ -5340,7 +5597,9 @@
 </div>
           <pb n="18b.886"/>
           <div type="textpart" subtype="chapter" n="32" xml:id="_3.32">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="32">λβʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Τὰ δὲ ἐκπτώματα ἢ στρέμματα ἢ διαστήματα ἢ ἀποσπάσματα
 <lb n="2"/>ἢ ἀποκλάσματα ἢ διαστρέμματα, οἷα τὰ κυλλὰ, τὰ
 <lb n="3"/>ἑτερόῤῥοπα, ἔνθεν μὲν ἐξέστη συνδιδόντα, ὅπη δὲ συντείνοντα,
@@ -5432,7 +5691,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="33" xml:id="_3.33">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="33">λγʹ.</num></label>
+<quote type="lemma">
 <lb n="14"/><milestone unit="ed2page" n="12.102"/>Τὰ δὲ μινυθήματα πολὺ προσλαμβάνοντα τοῦ
 <lb n="15"/>ὑγιέος, ἐπιδεῖν ὡς ἂν ἐξ ἐπιδρομῆς τὰ συντακέντα πλέονα
 <lb n="16"/>ἢ αὐτόματα ἐμινύθη ἢ ἄλλῃ ἢ τῇ ἐξ ἐπιδέσεως παραλλάξαντα ﻿
@@ -5789,7 +6050,9 @@
 </div>
           <pb n="18b.910"/>
           <div type="textpart" subtype="chapter" n="34" xml:id="_3.34">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="34">λδʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Βέλτιον δὲ καὶ τὸ ἄνωθεν, οἷον κνήμης καὶ τῶν μηρῶν καὶ
 <lb n="2"/>τὸ ἕτερον σκέλος τῷ ὑγιεῖ συνεπιδεῖν, ὡς ὁμοιότερον ᾖ
 <lb n="3"/>καὶ ὁμοίως ἐλινύῃ καὶ ὁμοίως τῆς τροφῆς ἀποκλείηται καὶ
@@ -5848,7 +6111,9 @@
 </div>
           <pb n="18b.913"/>
           <div type="textpart" subtype="chapter" n="35" xml:id="_3.35">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="35">λεʹ.</num></label>
+<quote type="lemma">
 <lb n="1"/>Ὀθονίων πλήθει, μὴ πιέσει.
 </quote>
 <lb rend="rule"/>
@@ -5859,7 +6124,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="36" xml:id="_3.36">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="36">λστʹ.</num></label>
+<quote type="lemma">
 <lb n="4"/>Ἀνιέντα πρῶτον τὸ μάλιστα δεόμενον καὶ ἀνατρίψει χρώμενον
 <lb n="5"/>σαρκούσῃ καὶ καταχύσει ἄνευ ναρθήκων.
 </quote>
@@ -5921,7 +6188,9 @@
 <lb rend="rule"/>
 </div>
           <div type="textpart" subtype="chapter" n="37" xml:id="_3.37">
-            <quote type="lemma">
+<lb rend="head"/>
+<lb/><label type="head"><num value="37">λζʹ.</num></label>
+<quote type="lemma">
 <lb n="7"/><milestone unit="ed2page" n="12.111"/>
               <milestone unit="ed1page" n="5.704"/>Τὰ δὲ ἑρμάσματα καὶ ἀποστηρίγματα οἷον
 <lb n="8"/>στήθεϊ, πλευρῇσι, κεφαλῇ καὶ τοῖσιν ἄλλοισιν ὅσα τοιαῦτα.

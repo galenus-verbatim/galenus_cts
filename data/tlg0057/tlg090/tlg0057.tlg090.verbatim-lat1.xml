@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title>In Hippocratis Epidemiarum III</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg090.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -54,7 +75,6 @@
               <date>1828</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x17a">BIU Santé, Medica</ref></biblStruct>
         <biblStruct>
           <monogr corresp="Basel">
@@ -96,12 +116,55 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
+    
   </teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg090.verbatim-lat1">
@@ -115,11 +178,13 @@
 <lb/>si</head>
 
  <lb rend="head"/>
+  <lb/><label type="head"><num value="1">I.</num></label>
  <quote type="lemma" n="1">
   <lb/>Pythio qui prope Telluris aedem habitabat.
  </quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Quum hunc textum per se prius scriptum intellexeris,
+<p rend="indent">
+<lb/>Quum hunc textum per se prius scriptum intellexeris,
 <lb/><hi rend="italic">Pythio qui prope Telluris aedem habitabat</hi>, initio
 <lb/>altero eorum quae ipsi contigerunt historiam lege: Satius
 <lb/>siquidem est existimare ita scriptam esse dictionem, quam
@@ -133,12 +198,14 @@
  <lb rend="rule"/>
 </div>
  <div type="textpart" subtype="chapter" n="2">
-  <lb rend="head"/>
-  <quote type="lemma" n="2">
+<lb rend="head"/>
+<lb/><label type="head"><num value="2">II.</num></label>
+<quote type="lemma" n="2">
    <lb/>Coepit primo die tremor a manibus, fabris acuta, delirium.
    </quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Primo statim die Pythioni una cum acuta .febre duo
+<p rend="indent">
+<lb/>Primo statim die Pythioni una cum acuta .febre duo
 <lb/>symptomata manuum tremorem et levem quandam insipienfiant
 <lb/>fuisse pronunciat. Quantum enim insipientiae alias
 <lb/>aliis nominibus ipse deferre consuevit, quum <hi rend="italic">nugari, deUrare,
@@ -186,11 +253,13 @@
 </div>
  <pb n="17a.484"/>
 <div type="textpart" subtype="chapter" n="3">
- <lb rend="head"/>
- <quote type="lemma" n="3">
+<lb rend="head"/>
+<lb/><label type="head"><num value="3">III.</num></label>
+<quote type="lemma" n="3">
   <lb/>secundo die omnino exacerbata sunt.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Proditur enim morbus incremento non trt parvus,
+<p rend="indent">
+<lb/>Proditur enim morbus incremento non trt parvus,
 <lb/>neque ex vulgari ortus affectione, imo .tum ipse magnus
 <lb/>est tum causam minime spernendam sortitur. Quoniam
 <lb/>vero non in Pythione solum, verum etiam in aliis multis
@@ -235,9 +304,9 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="4">
- <lb rend="head"/>
-
- <quote type="lemma" n="4">
+<lb rend="head"/>
+<lb/><label type="head"><num value="4">IV.</num></label>
+<quote type="lemma" n="4">
   <lb/>Tertio eadem. Quarto ab alvo pauca, sincera et bili. a
 <lb/>desueta sunt. Quinto omnia exacerbata sunt, tremores
 <lb/>manebant, somni exiles, alvus constitit, sexto sputa
@@ -252,7 +321,8 @@
 <lb/>suppuratio circa sedem et stranguriosus abscessus fectus
  <lb/>est.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Caetera quidem hujus orationis symptomatum narrationem
+<p rend="indent">
+<lb/>Caetera quidem hujus orationis symptomatum narrationem
 <lb/>habent tum dictione tum sententia conspicuam;
 <lb/>quorum vires et in prognostico et in horum ipsorum epidemiorum
 <lb/>primo didicimus. Non pauca etiam in fecundo
@@ -967,7 +1037,8 @@
 <lb/>de his sollicitus quae nonnulli non recte scripserunt,
 <lb/>ussi magna quaedam urgeat necessitas. Ego vero
 <lb/>prius de characteribus aliquid dicturus sinu.</p>
-<p rend="indent"><lb/>Miror hujus libri, ut aliorum etiam Hippocratis muli.
+<p rend="indent">
+<lb/>Miror hujus libri, ut aliorum etiam Hippocratis muli.
 <lb/>.torum infelicitatem, quorum hi sunt dissipati, illi aliquid
 <pb n="17a.525"/>
 <lb/>habent scriptis Hippocratis admetum. Rectius dicam fortasse
@@ -1029,7 +1100,8 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="5">
- <lb rend="head"/>
+<lb rend="head"/>
+<lb/><label type="head"><num value="5">V.</num></label>
 <quote type="lemma" n="5">
  <lb/>nermocrates qui ad novum murum habitabat, igni est correptas.
 <lb/>Coepit caput illi lumburque dolere; hypochondrium
@@ -1042,7 +1114,8 @@
 <lb/>auriginosus evasit, omnia exacerbata sunt, mente non
 <lb/>constabat.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Nec desinunt hic nugari quidam interpretes hujus libri,
+<p rend="indent">
+<lb/>Nec desinunt hic nugari quidam interpretes hujus libri,
 <lb/>sed ideo esse ajunt scriptum ad novum murum, quod
 <lb/>recens calce indutus homini obfuerit. Alii ab iis dissentiunt
 
@@ -1226,13 +1299,15 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="6">
- <lb rend="head"/>
- <quote type="lemma" n="6">
+<lb rend="head"/>
+<lb/><label type="head"><num value="6">VI.</num></label>
+<quote type="lemma" n="6">
   <lb/>Pie septimo graviter se habuit; urinae erant tenues, similes,
 <lb/>proximis diebus- eodem modo. Corea diem underimum
 <lb/>omnia illi visu remisse este.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Quae die quinto urinae fieri coepissent deteriores,
+<p rend="indent">
+<lb/>Quae die quinto urinae fieri coepissent deteriores,
 <lb/>non correctae sunt multis diebus. Non enim septimo
 <pb n="17a.539"/>
 <lb/>modo die, .verum sequentibus etiam ad undecimum usque
@@ -1250,8 +1325,9 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="7">
- <lb rend="head"/>
- <quote type="lemma" n="7">
+<lb rend="head"/>
+<lb/><label type="head"><num value="7">VII.</num></label>
+<quote type="lemma" n="7">
  <lb/>Coma coepit, urinae crassiores, subrubrae, insta tenues,
 <lb/>non subsidebant; aliquantulum mente constabat.</quote>
  <lb rend="rule"/>
@@ -1352,12 +1428,14 @@
 </div>
  <pb n="17a.545"/>
 <div type="textpart" subtype="chapter" n="8">
- <lb rend="head"/>
- <quote type="lemma" n="8">
+<lb rend="head"/>
+<lb/><label type="head"><num value="8">VIII.</num></label>
+<quote type="lemma" n="8">
 <lb/>Quarto decimo die a sebre erat liber: non sudavit, dormivit,
 <lb/>omnino mente constabat, urinae eaedem.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Necquicqustm videatur adiectum, non sudavit, cui
+<p rend="indent">
+<lb/>Necquicqustm videatur adiectum, non sudavit, cui
 <lb/>est simile, non illi profluxit sanguis, non vomuit, parofidas
 <lb/>non habuit. Sed ut non multo ante dixit, sub diem
 <lb/>undecimum omnia illa visa sunt esse remissa, qui quum
@@ -1453,13 +1531,15 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="9">
- <lb rend="head"/>
- <quote type="lemma" n="9">
+<lb rend="head"/>
+<lb/><label type="head"><num value="9">IX.</num></label>
+<quote type="lemma" n="9">
 <lb/>Circa diem septimum decimum rediit: in sequentibus diebus
 <lb/>incaluit, febris erat acuta, urinae tenues, deliravit.
  </quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Alia quidem sunt symptomata recidivae. At urinae
+<p rend="indent">
+<lb/>Alia quidem sunt symptomata recidivae. At urinae
 <lb/>tenues morbum esse inconcoctum significant. Itaque ut
 <lb/>non sint magnopere signa, quae apparebant exitiosa, fore
 <lb/>incolumem hominem dicere nequeas j conspiciens septimo
@@ -1471,13 +1551,15 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="10">
- <lb rend="head"/>
- <quote type="lemma" n="10">
+<lb rend="head"/>
+<lb/><label type="head"><num value="10">X.</num></label>
+<quote type="lemma" n="10">
 <lb/>Rursus autem vigesimo die iudicatus est, a febre immunis,
 <lb/>non sudavit.
  </quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Quo secundum rationem die oportuisset febrem exacerbari,
+<p rend="indent">
+<lb/>Quo secundum rationem die oportuisset febrem exacerbari,
 <lb/>si natura prorsus humorum coctionem aggressa
 <lb/>fuisset, quos incoctos urinae tenues permanentes prodehant,
 <lb/>eodem febris perfecte cessavit. Neque enim decimo
@@ -1497,13 +1579,15 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="11">
- <lb rend="head"/>
- <quote type="lemma" n="11">
+<lb rend="head"/>
+<lb/><label type="head"><num value="11">XI.</num></label>
+<quote type="lemma" n="11">
 <lb/>Cibos toto tempore aversabatur, mente constabat, loqui
 <lb/>non valebat, lingua arida, non sitiebat, parce dormivir:
 <lb/>comatosus.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Haec pronunciata omnia jam emorientis vitalis facultatis
+<p rend="indent">
+<lb/>Haec pronunciata omnia jam emorientis vitalis facultatis
 <lb/>certa signa sunt, ut verbi gratia ciborum aversatio
 <lb/>.^appetentiam significans, quae interdum ob orificium venBuculi
 <lb/>ab aliena quadam humorum qualitate male affectum
@@ -1572,14 +1656,16 @@
 </div>
 <pb n="17a.556"/>
 <div type="textpart" subtype="chapter" n="12">
- <lb rend="head"/>
- <quote type="lemma" n="12">
+<lb rend="head"/>
+<lb/><label type="head"><num value="12">XII.</num></label>
+<quote type="lemma" n="12">
 <lb/>circiter vero quartum et vigesimum diem incaluit, alius
 <lb/>liquidis tenuibus et copiosa stuida; sequentibus diebus,
 <lb/>febris acuta, lingua exusta esi, vigesimo septimo desar
 <lb/>otus est.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Huic aegroto quartus et vigesimus inter judicatorio.s
+<p rend="indent">
+<lb/>Huic aegroto quartus et vigesimus inter judicatorio.s
 <lb/>est circuitus, ut demonstratum est, multoque magis vigesimus
 <lb/>septimus in hoc quasdam innovationes ex proportione
 <lb/>attulerunt. Quemadmodum enim septimo decimo
@@ -1595,13 +1681,15 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="13">
- <lb rend="head"/>
- <quote type="lemma" n="13">
+<lb rend="head"/>
+<lb/><label type="head"><num value="13">XIII.</num></label>
+<quote type="lemma" n="13">
 <lb/>Huic surditas per totum morbum permansit; urinae aut
 <lb/>crassae et rubrae non subsidebant, aut tenues et deculores
 <lb/>enaeoremata continebant ; gustare non valebat.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Atque post vigefimi diei expositionem deinceps quod
+<p rend="indent">
+<lb/>Atque post vigefimi diei expositionem deinceps quod
 <lb/>nunc enunciatum est adscripsit, <hi rend="italic">gustare non valebat</hi>, quod
 <lb/>idem ac vox, <hi rend="italic">cibos aversatus</hi>, significat. At urinas a decimo
 <lb/>septimo die tenues adusque vigefimum fuisse protulit.
@@ -1626,7 +1714,8 @@
 <lb/>tum nutriuntur, tum increscunt, ipsaque affecta inappetentiae
 <lb/>ita graves prehendunt, ut mori potius aeger velit,
 <lb/>quam quicquam gustare.</p>
-<p rend="indent"><lb/>Vetustiora quidem exemplaria adiectorum aegris chaTactorum
+<p rend="indent">
+<lb/>Vetustiora quidem exemplaria adiectorum aegris chaTactorum
 <lb/>principium habebant a muliere apud Bitonem
 <pb n="17a.559"/>
 <lb/>anginosa septima ab initio descripta. Et sane qui adscriptos
@@ -1681,8 +1770,9 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="14">
- <lb rend="head"/>
- <quote type="lemma" n="14">
+<lb rend="head"/>
+<lb/><label type="head"><num value="14">XIV.</num></label>
+<quote type="lemma" n="14">
  <lb/>Qui in Dealcis horto decumbebat.</quote>
  <lb rend="rule"/>
  <pb n="17a.562"/>
@@ -1722,8 +1812,9 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="15">
- <lb rend="head"/>
- <quote type="lemma" n="15">
+<lb rend="head"/>
+<lb/><label type="head"><num value="15">XV.</num></label>
+<quote type="lemma" n="15">
 <lb/>Diutius capitis gravitate et temporis dextri dolore vexatur,
 <lb/>levi autem occasione igne prehensus decubuit.</quote>
  <lb rend="rule"/>
@@ -1747,8 +1838,9 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="16">
- <lb rend="head"/>
- <quote type="lemma" n="16">
+<lb rend="head"/>
+<lb/><label type="head"><num value="16">XVI.</num></label>
+<quote type="lemma" n="16">
 <lb/>Postridie ex sinistra nare paucus merus sanguis e/suixit.</quote>
  <lb rend="rule"/>
 <pb n="17a.565"/>
@@ -1774,8 +1866,9 @@
 </div>
  <pb n="17a.566"/>
 <div type="textpart" subtype="chapter" n="17">
- <lb rend="head"/>
- <quote type="lemma" n="17">
+<lb rend="head"/>
+<lb/><label type="head"><num value="17">XVII.</num></label>
+<quote type="lemma" n="17">
   <lb/>Ab alvo stercora probe prodierunt.</quote>
  <lb rend="rule"/>
 <p rend="indent">
@@ -1785,8 +1878,9 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="18">
- <lb rend="head"/>
- <quote type="lemma" n="18">
+<lb rend="head"/>
+<lb/><label type="head"><num value="18">XVIII.</num></label>
+<quote type="lemma" n="18">
 <lb/>Drinae tenues varia habentes enaeoremata minute disperso
 <lb/>veluti crassiorem ferinam geniturae similem. Tertio die
 <lb/>febris acuta; deiectiones nigrae, tenues, sipumosoe; fedimensum
@@ -1804,8 +1898,9 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="19">
- <lb rend="head"/>
- <quote type="lemma" n="19">
+<lb rend="head"/>
+<lb/><label type="head"><num value="19">XIX.</num></label>
+<quote type="lemma" n="19">
 <lb/>Quarto biliosa vomuit, flava, pauca, paululum intermutens
 <lb/>aeruginosa. E sinistra nare paucus sincerus sunguh
 <lb/>defluxu. Eaedem deiectiones, urinae similes. Parce
@@ -1814,14 +1909,16 @@
 <lb/>submotio; nocte non dormivit ; aliquantulum delibavit.
 <lb/></quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Atque haec omnia pronunciata symptomata prava
+<p rend="indent">
+<lb/>Atque haec omnia pronunciata symptomata prava
 <lb/>sunt praeter abscessum qui in lienem et femur sinistrum
 <lb/>suboriebatur.</p>
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="20">
- <lb rend="head"/>
- <quote type="lemma" n="20">
+<lb rend="head"/>
+<lb/><label type="head"><num value="20">XX.</num></label>
+<quote type="lemma" n="20">
 <lb/>Quinto defectiones copiosiores, nigrae, suumosoe, seditnentum
  <lb/>nigrum deiectionibus, nocte non dormivit, deliravit.</quote>
  <lb rend="rule"/>
@@ -1832,8 +1929,9 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="21">
- <lb rend="head"/>
- <quote type="lemma" n="21">
+<lb rend="head"/>
+<lb/><label type="head"><num value="21">XXI.</num></label>
+<quote type="lemma" n="21">
 <lb/>Sexto defectiones nigrae, pingues, spumosae, glutinosae,
 <lb/>graveolenti; dormivit; mente magis constitit.
  </quote>
@@ -1844,8 +1942,9 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="22">
- <lb rend="head"/>
- <quote type="lemma" n="22">
+<lb rend="head"/>
+<lb/><label type="head"><num value="22">XXII.</num></label>
+<quote type="lemma" n="22">
 <lb/>Septimo lingua perarida; sttibundus; non dormivit; deli.ravit;
 <lb/>urinae tenues, non bene coloratae. Octavo desectiones
 <lb/>nigrae, paucae, coactae; dormivit; intellexit;
@@ -1857,15 +1956,17 @@
 </div>
  <pb n="17a.569"/>
 <div type="textpart" subtype="chapter" n="23">
- <lb rend="head"/>
- <quote type="lemma" n="23">
+<lb rend="head"/>
+<lb/><label type="head"><num value="23">XXIII.</num></label>
+<quote type="lemma" n="23">
 <lb/>Nono rigor accessit; febris acuta, sudavit, refrigeratio,
 <lb/>deliravit, dextro oculo distortus st, lingua perarida,
 <lb/>sitibundus, insomnis. Decimo eodem. Undecimo prorsus
 <lb/>in omnibus mente constabat, febre liber, sudavit,
 <lb/>urinae circa iudicationem tenues.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Apparuit hunc hominem quendam validis fuisse viribus,
+<p rend="indent">
+<lb/>Apparuit hunc hominem quendam validis fuisse viribus,
 <lb/>quod ipsae cum maximo morbo luctantes obsisterent.
 <lb/>Nullo siquidem bono huc usque ipsi oborto, videtur nono
 <lb/>die rigore critico facto et post ipsam, quemadmodum consuevit,
@@ -1887,12 +1988,14 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="24">
- <lb rend="head"/>
- <quote type="lemma" n="24">
+<lb rend="head"/>
+<lb/><label type="head"><num value="24">XXIV.</num></label>
+<quote type="lemma" n="24">
 <lb/>Duos a sebre dies liber suit, reverse est decimo quarto,
 <lb/>mox vero nocte non dormivit ; prorsus deliravit.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Completo tum imperfecto tum insideli circa undecimum
+<p rend="indent">
+<lb/>Completo tum imperfecto tum insideli circa undecimum
 <lb/>diem judicio, duos nilum intermisisse ait dies, hoc
 <lb/>est et duodecimum et decimum tertium ; deinde rursus
 <lb/>revertisse decimo quarto, russus et similibus divexatum
@@ -1901,14 +2004,16 @@
 </div>
  <pb n="17a.571"/>
 <div type="textpart" subtype="chapter" n="25">
- <lb rend="head"/>
- <quote type="lemma" n="25">
+<lb rend="head"/>
+<lb/><label type="head"><num value="25">XXV.</num></label>
+<quote type="lemma" n="25">
 <lb/>Derimo quinto urina turbida, qualis ex his redditur quae
 <lb/>ubi subsederunt, returbantur, fabris acuta, prorsus deliravit,
 <lb/>non dormivit, .genua et tibias dolor occupavit,
  <lb/>ab alvo, balanis appositis, nigra stercora manarunt.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Ad acutiem rursum febris reversa pervenit et ob morbi
+<p rend="indent">
+<lb/>Ad acutiem rursum febris reversa pervenit et ob morbi
 <lb/>magnitudinem quam ab initio habuit. Et quod undecimo
 <lb/>die in quo prima fuit judicatio, nondum coctionis signa
 <lb/>essent in urinis. Dolores vero tum genuum, tum tibiarum,
@@ -1918,8 +2023,9 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="26">
- <lb rend="head"/>
- <quote type="lemma" n="26">
+<lb rend="head"/>
+<lb/><label type="head"><num value="26">XXVI.</num></label>
+<quote type="lemma" n="26">
 <lb/>Decimo sexto urinae tenues nebulosum enaeorema habenter,
  <lb/>deliravit.</quote>
  <lb rend="rule"/>
@@ -1933,8 +2039,9 @@
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="27">
- <lb rend="head"/>
- <quote type="lemma" n="27">
+<lb rend="head"/>
+<lb/><label type="head"><num value="27">XXVII.</num></label>
+<quote type="lemma" n="27">
 <lb/>Decimo septimo mane extrema feigida ; indumentis contegebatur,
 <lb/>febris acuta, per universum corpus sudavit, levatus
 <lb/>est, magis intellexit, sebre non vacuus, siticulosus,
@@ -1942,27 +2049,31 @@
 <lb/>prodierunt, paulo post nigra, pauca, tenuia; urinae
  <lb/>tenues, non bene coloratae.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Apparet rursus decimum septimum diem fecisse quendam
+<p rend="indent">
+<lb/>Apparet rursus decimum septimum diem fecisse quendam
 <lb/>sudorem, qui morbum solvere non potuit propter
 <lb/>humorum cruditatem, ex quibus homo aegrotasse videtur.</p>
  <lb rend="rule"/>
 </div>
  <pb n="17a.573"/>
 <div type="textpart" subtype="chapter" n="28">
- <lb rend="head"/>
- <quote type="lemma" n="28">
+<lb rend="head"/>
+<lb/><label type="head"><num value="28">XXVIII.</num></label>
+<quote type="lemma" n="28">
 <lb/>octavodecimo non mente constabat, comatosus; decimo
  <lb/>nono eadem.</quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Nullum prorsus notatu dignum aegroto decimus septimus
+<p rend="indent">
+<lb/>Nullum prorsus notatu dignum aegroto decimus septimus
 <lb/>dies auxilium attulisse visus est; nihilominus tamen
 <lb/>naturalis ipsius facultas adversus morbum pugnare et forfan
 <lb/>victura proditur.</p>
  <lb rend="rule"/>
 </div>
 <div type="textpart" subtype="chapter" n="29">
- <lb rend="head"/>
- <quote type="lemma" n="29">
+<lb rend="head"/>
+<lb/><label type="head"><num value="29">XXIX.</num></label>
+<quote type="lemma" n="29">
 <lb/>rigesimo dormivit, prorsus mente constabat, sudavit, fabre
 <lb/>vacuus, non sitivit, urinae tenues, vigesimo. primo patilutum
 <lb/>deliravit, nonnihil sitivit, hypochondrii dolor es
@@ -1977,7 +2088,8 @@
  <lb/>judicatus est.
 </quote>
  <lb rend="rule"/>
-<p rend="indent"><lb/>Tertium quidem est hoc judicium quo et natura aggressa
+<p rend="indent">
+<lb/>Tertium quidem est hoc judicium quo et natura aggressa
 <lb/>est morbum salvere per sudorum excretionem die
 <lb/>judicatorio, quemadmodum et in superioribus: erant siquidem
 <lb/>illi quoque iudicatorii. Adlidi autem illud nullam
@@ -2174,8 +2286,9 @@
  </div>
  <pb n="17a.585"/>
  <div type="textpart" subtype="chapter" n="1">
-  <lb rend="head"/>
-  <quote type="lemma" n="30">
+<lb rend="head"/>
+<lb/><label type="head"><num value="1">I.</num></label>
+<quote type="lemma" n="30">
 <lb/>in Phase Phihstes diuturno tempore caput dolebat, ac
 <lb/>tandem etiam veterno aliquantulum correptus decubuit.
 <lb/>Ex potibus autem febribus assiduis obortis dolor nocte
@@ -2189,7 +2302,8 @@
 <lb/>Tertio die permoleste habuit. Quarto convulsiones; exacerbata
  <lb/>sunt omnia. Quinto mane defunctus est.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Tamquam memoria tenentibus quae et in prognosticum
+<p rend="indent">
+<lb/>Tamquam memoria tenentibus quae et in prognosticum
 <lb/>et aphorismos et propheticum, quaeque etiamnum
 <lb/>in primum et secundum epidemiorum exposui, at ne issipendio
 <lb/>loqui videar, orationem ita facturus sum. Hic
@@ -2232,8 +2346,9 @@
  </div>
  <pb n="17a.588"/>
  <div type="textpart" subtype="chapter" n="2">
-  <lb rend="head"/>
-  <quote type="lemma" n="31">
+<lb rend="head"/>
+<lb/><label type="head"><num value="2">II.</num></label>
+<quote type="lemma" n="31">
 <lb/>Chaerionem, qui apud Demaenetum decumbebat, ex potu
 <lb/>febris comprehendit, statimque capitis gravitas dolorem
 <lb/>inserens; non dormiebat; alvus turbulenta tenuibus aliquantulum
@@ -2260,7 +2375,8 @@
 <lb/>nonum febris expers, cervicem dolor occupavit;
  <lb/>urinis sodimentum. vigesimo perfecte iudicatus est.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Hic homo ex plenitudine ac maxime biliosorum aegrotasse
+<p rend="indent">
+<lb/>Hic homo ex plenitudine ac maxime biliosorum aegrotasse
 <lb/>videtur. Si autem in ipso inquisiveris et quae
 <lb/>diebus judicatoriis demonstrata sunt- et quae de urinis,
 <lb/>reperies convenientem secundum rationem ipsum vigesimo
@@ -2271,8 +2387,9 @@
  </div>
  <pb n="17a.590"/>
  <div type="textpart" subtype="chapter" n="3">
-  <lb rend="head"/>
-  <quote type="lemma" n="32">
+<lb rend="head"/>
+<lb/><label type="head"><num value="3">III.</num></label>
+<quote type="lemma" n="32">
 <lb/>virginem Euryanactis filiam ignis prehendit; haec perpetuo
 <lb/>sitis fuit expers; edulia non assumebat; ab alvo
 <lb/>pauca deiciebantur; urinae tenues, paucae, non probe
@@ -2298,7 +2415,8 @@
 <lb/>nihil loquebatur et moeror et desperatio ipsi aderat.
  <lb/>Quiddam tabidum congenitum erat.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Posteaquam quae huic aegrotanti ad mortem usque
+<p rend="indent">
+<lb/>Posteaquam quae huic aegrotanti ad mortem usque
 <lb/>facta sunt enarravit, morbi totius hypothesis adiecit, ex
 <lb/>qua decenter interiit. Ait enim malas quidem a capite
 <lb/>ad pulmonem huic factas fuisse defluxiones faucibus et
@@ -2342,8 +2460,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="4">
-  <lb rend="head"/>
-  <quote type="lemma" n="33">
+<lb rend="head"/>
+<lb/><label type="head"><num value="4">IV.</num></label>
+<quote type="lemma" n="33">
 <lb/>Quae anginosa apud Bitonem decumbebat, huic primum
 <lb/>lingua laborare coepit; obscura vox, lingua rubra, inaruit.
 <lb/>Primo die horruit, incaluit, rigor, febris acuta,
@@ -2355,7 +2474,8 @@
 <lb/>Quinto angulosa periit. P. D. S. Q. M. Probabile
  <lb/>deiectionibus suppressis quinto mortua est.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Neque in omnibusi exemplaribus ita reperitur scriptus
+<p rend="indent">
+<lb/>Neque in omnibusi exemplaribus ita reperitur scriptus
 <lb/>orationis finis, neque ab omnibus libri interpretibus cogustus
 <lb/>videbitur. Verum horum nonnulli pro quinto septimum
 <lb/>scribunt, nonnulli autem octavum. At Capito,
@@ -2655,7 +2775,8 @@
 <lb/>adjungitque praeterea suppressionem, unde nihil aeger
 <lb/>excernebat per se, in his una cum excretorum qualitate,
 <lb/>obiter glandis et parvi clysteria usum adjecit.</p>
-<p rend="indent"><lb/>Equidem jam statueram me prorsus ab importuna de
+<p rend="indent">
+<lb/>Equidem jam statueram me prorsus ab importuna de
 <lb/>characteribus loquacitate discedere, test quoniam amici
 <lb/>plures orationem integram absolvi desiderant, atque multa
 <lb/>pars harum ungarum jam a me peracta est, reliquum adjicere
@@ -2724,8 +2845,9 @@
  </div>
  <pb n="17a.614"/>
  <div type="textpart" subtype="chapter" n="5">
-  <lb rend="head"/>
-  <quote type="lemma" n="34">
+<lb rend="head"/>
+<lb/><label type="head"><num value="5">V.</num></label>
+<quote type="lemma" n="34">
 <lb/>Qui adolescens in mendacium fero decumbebat, eum ex
 <lb/>lassitudinibus, laboribus, occursibus praeter consuetudinem
 <lb/>ignis prehendit. Primo die alvus turbulenta biliasis,
@@ -2738,7 +2860,8 @@
 <lb/>utrinque. Quarto non dormivit, in deterius
  <lb/>ruit. Septimo obiit, aetate annorum prope viginti.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Incepisse quidem ipsi morbum ait ex lassitudinibus
+<p rend="indent">
+<lb/>Incepisse quidem ipsi morbum ait ex lassitudinibus
  <lb/>propter insuetas exercitationes obortis. Scimus enim <foreign xml:lang="grc">πόνσυς</foreign>
 <lb/>labores exercitationes eum vocare, quemadmodum
  <lb/>etiam <foreign xml:lang="grc">κόπσυς</foreign> corporis affectus, in quibus etiamsi parum
@@ -2789,7 +2912,8 @@
 <lb/>oAU adscriptum esse. Forsan vero qui characteras adseripsit,
 <lb/>hoc quoque adscripsit; sed paulo post decimo ordine
 <lb/>in aegro de ita additis scripturis plane dicturus sum.</p>
-<p rend="indent"><lb/>Quia vero consultius esse auguror pestilentem statum
+<p rend="indent">
+<lb/>Quia vero consultius esse auguror pestilentem statum
 <lb/>ad tertium commentarium servare, nonnulla praedictis adjiciam
 <lb/>quae apud medicos in controversia versantur ex
 <lb/>signia adolescentis enarrationi adscriptis die septimo morte
@@ -2858,7 +2982,7 @@
 <lb/>obortum, fecundo die deteriorem aptum indicare. Illud
 <lb/>enim, non dormire una noctu; atque illud, mentem perturbatam
 <lb/>habere in morbis acutis, citra magnum perrculum
-<lb/>assidue sicri ridentur: quae vero tertio scripta sunt.
+<lb/>assidue fieri ridentur: quae vero tertio scripta sunt.
 <lb/>periculosa suerunt omnia. Praeterea ob id asserit fecundo
 <lb/>die-, tertio deteriorem esse, quod fecundo mentis pertur- .
 <lb/>Lationem scripserit, tertio vero et alsa quaedam symptomuta
@@ -2944,8 +3068,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="6">
-  <lb rend="head"/>
-  <quote type="lemma" n="35">
+<lb rend="head"/>
+<lb/><label type="head"><num value="6">VI.</num></label>
+<quote type="lemma" n="35">
 <lb/>Apud Tisumenum furebat mulier, cui ileus cum sectatiocibus
 <lb/>concitatus est ; vomitiones multae ; potum continere
 <lb/>non potuit; dolores circa hypochondria, atque in
@@ -2956,7 +3081,8 @@
 <lb/>tenues, paucae; nihil amplius prodesse potuit,
  <lb/>obiit.</quote>
   <lb rend="rule"/>
-  <p rend="indent"><lb/>Male nonnulli scribunt hac in muliere <foreign xml:lang="grc">ύλεώδεα</foreign> per
+  <p rend="indent">
+<lb/>Male nonnulli scribunt hac in muliere <foreign xml:lang="grc">ύλεώδεα</foreign> per
    <lb/><foreign xml:lang="grc">ν</foreign>, quum <foreign xml:lang="grc">είλεώδεα</foreign> per si scribendum sit: Ileus enim, hoc
 <lb/>est volvulus, appellatur affectus, cujus symptomata mulierem
 <lb/>vexasse scribit, multos vomitus et potus continere
@@ -3016,8 +3142,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="7">
-  <lb rend="head"/>
-  <quote type="lemma" n="36">
+<lb rend="head"/>
+<lb/><label type="head"><num value="7">VII.</num></label>
+<quote type="lemma" n="36">
 <lb/>Mulierem ex iis quae apud rantimedem degebant, ex infantuli
 <lb/>corruptivi abortione primo die ignis prehendit.
 <lb/>Lingua arida, siticulosa, aestuabunda, insomnis. Alvus
@@ -3115,8 +3242,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="8">
-  <lb rend="head"/>
-  <quote type="lemma" n="37">
+<lb rend="head"/>
+<lb/><label type="head"><num value="8">VIII.</num></label>
+<quote type="lemma" n="37">
 <lb/>Alteram ex abortione ad quintum mensum oeceti uxorem
 <lb/>/ebrii prehendit. Incoepit autem comatosu ac rursum
 <lb/>insomnis ; lumborum dolor; capitis gravitas. secundo
@@ -3132,7 +3260,8 @@
 <lb/>tenues, subnigrae t extrema /rigida, sublivida. sexto
  <lb/>die eadem. septimo obiit phrenitica.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Mulier ante hanc descripta infantulum etiamnum suetum
+<p rend="indent">
+<lb/>Mulier ante hanc descripta infantulum etiamnum suetum
 <lb/>corruptum elisit. Infantulus autem foetus, ut dixi,
 <lb/>unius aut duorum aut longissime trium mensium intelligendus
 <lb/>est. At quae praesenti oratione narratur, trium mensium
@@ -3251,8 +3380,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="9">
-  <lb rend="head"/>
-  <quote type="lemma" n="38">
+<lb rend="head"/>
+<lb/><label type="head"><num value="9">IX.</num></label>
+<quote type="lemma" n="38">
 <lb/>Quae mulier in mendacium loro decumbebat, eam pri-
 <lb/>mum laboriose masculum enixam vehemens prehendit fabris ;
 <lb/>statim in principio sumunda, fastidiosa, cursuale
@@ -3356,8 +3486,9 @@
 <lb/>sunt explicationem perveniet.</p>
 </div>
  <div type="textpart" subtype="chapter" n="1">
-  <lb rend="head"/>
-  <quote type="lemma" n="39">
+<lb rend="head"/>
+<lb/><label type="head"><num value="1">I.</num></label>
+<quote type="lemma" n="39">
 <lb/>Annus austrinus, pluvius, ventis minime perpetuo perstatus.
   </quote>
   <lb rend="rule"/>
@@ -3462,8 +3593,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="2">
-  <lb rend="head"/>
-  <quote type="lemma" n="40">
+<lb rend="head"/>
+<lb/><label type="head"><num value="2">II.</num></label>
+<quote type="lemma" n="40">
 <lb/>Quum autem sanatores paulo superioribiis anni temporibus
 <lb/>oborti fuissent, austris sub arcturum spirantibus, pluviae
  <lb/>multae.</quote>
@@ -3500,12 +3632,14 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="3">
-  <lb rend="head"/>
-  <quote type="lemma" n="41">
+<lb rend="head"/>
+<lb/><label type="head"><num value="3">III.</num></label>
+<quote type="lemma" n="41">
 <lb/>Autumnus obscurus, nebulosus, aquarum ubertas, hiems
  <lb/>austrina, humida, mollis.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Umbrosum dixit pro caliginoso; quod non lucidum
+<p rend="indent">
+<lb/>Umbrosum dixit pro caliginoso; quod non lucidum
 <lb/>significat, nec purum, neque omnino serenum. Namque
 <pb n="17a.655"/>
  <lb/>solent etiamnum qui Assem incolunt Graeci <foreign xml:lang="grc">σκιώδη</foreign> et
@@ -3522,7 +3656,7 @@
 <lb/>quod non est ita: videtur enim siccus aliquando esse, quem
 <lb/>leucouotum vulgus [Latini earum] appellant. Et poeta
 <lb/>talem nobis austrum indicat dicens:</p>
- <lg>
+ <lg rend="italic">
  <l><foreign xml:lang="grc">αὐτὰρ ἐγῶ ζεφύροιο καὶ ἀργέσταο νότοιο</foreign>.</l>
  </lg>
 <p rend="nonindented">
@@ -3538,19 +3672,22 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="4">
-  <lb rend="head"/>
-  <quote type="lemma" n="42">
+<lb rend="head"/>
+<lb/><label type="head"><num value="4">IV.</num></label>
+<quote type="lemma" n="42">
 <lb/>Longe post solstitium intervallo prope aequinoctium surae
 <lb/>hiemes, /amque sub aequinoctium aquilonares venti, cum
  <lb/>nivibus non diuturno tempore spirarunt.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Pars haec quaedam tempestatis contrariae intercessit,
+<p rend="indent">
+<lb/>Pars haec quaedam tempestatis contrariae intercessit,
 <lb/>ut hic dixit, non ita diu.</p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="5">
-  <lb rend="head"/>
-  <quote type="lemma" n="43">
+<lb rend="head"/>
+<lb/><label type="head"><num value="5">V.</num></label>
+<quote type="lemma" n="43">
 <lb/>Rer rursus austrinum, sine ventis, aquae multae ad ca-.
  <lb/>nem usique continentes.</quote>
   <lb rend="rule"/>
@@ -3563,12 +3700,14 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="6">
-  <lb rend="head"/>
-  <quote type="lemma" n="44">
+<lb rend="head"/>
+<lb/><label type="head"><num value="6">VI.</num></label>
+<quote type="lemma" n="44">
 <lb/>Assias serena, calida, aestus praefocantes, magni. Etesiae
  <lb/>pauci dispersim sanaverunt.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Lenitas hiemis et veris tranquillitas cum aestate aestuosa
+<p rend="indent">
+<lb/>Lenitas hiemis et veris tranquillitas cum aestate aestuosa
 <lb/>suffocanteve congruunt. Nam cum sua sponte sit
 <lb/>aestivum tempus calidum, si ventorum accesserit tranquillitasi,
 <lb/>necessario aestus fuffocatiove consequitur. Hoc fit,
@@ -3580,24 +3719,28 @@
  </div>
  <pb n="17a.658"/>
  <div type="textpart" subtype="chapter" n="7">
-  <lb rend="head"/>
-  <quote type="lemma" n="45">
+<lb rend="head"/>
+<lb/><label type="head"><num value="7">VII.</num></label>
+<quote type="lemma" n="45">
 <lb/>Sub arcturum rursus spirantibus aquae multae.
   </quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Rurfus ad pluviarum exundantiam, non ad boream
+<p rend="indent">
+<lb/>Rurfus ad pluviarum exundantiam, non ad boream
 <lb/>refertur. Nam superiore arcturi ortu mustum pluerat et
 <lb/>subinde postea, boreas vero rarus spiravit.</p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="8">
-  <lb rend="head"/>
-  <quote type="lemma" n="46">
+<lb rend="head"/>
+<lb/><label type="head"><num value="8">VIII.</num></label>
+<quote type="lemma" n="46">
 <lb/>Quum autem annus austrinus, humidus et mollis exstitisset,
 <lb/>per hiemem quidem sani degebant, exceptis tabidis, de
  <lb/>quibus scribetur.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Integrum statum, quod parvi omnino aquilones fuissent,
+<p rend="indent">
+<lb/>Integrum statum, quod parvi omnino aquilones fuissent,
 <lb/>ab dominantibus in eo humidum appellavit et aufirmum :
 <lb/>nam quod tranquillum et calidum Ienem appellet
 <lb/>antea didicisti. Verum haud dum ea tempestas, Iicet
@@ -3611,13 +3754,15 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="9">
-  <lb rend="head"/>
-  <quote type="lemma" n="47">
+<lb rend="head"/>
+<lb/><label type="head"><num value="9">IX.</num></label>
+<quote type="lemma" n="47">
 <lb/>Ante ver autem una cum obortis feigoribus ignes sacri
 <lb/>multi, quibusdam cum causa aliqua, quibusdam vero
  <lb/>non contingebant, atque hi maligni multos caecarunt.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Sacrum ignem didicisti a biliosa fluxione oriri, at
+<p rend="indent">
+<lb/>Sacrum ignem didicisti a biliosa fluxione oriri, at
 <lb/>non illa semper prava et putri. Plane enim contra ubi
 <lb/>mitis sit fluxio bilem pallidam obtinens, quae in nobis
 <lb/>naturaliter gignitur, sidet quidem sacrum ignem sacere,
@@ -3639,11 +3784,13 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="10">
-  <lb rend="head"/>
-  <quote type="lemma" n="48">
+<lb rend="head"/>
+<lb/><label type="head"><num value="10">X.</num></label>
+<quote type="lemma" n="48">
    <lb/>Multi ex saucibus laborarunt; voces vitiatae.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Quibus caput sua sponte prompte replebatur, his in
+<p rend="indent">
+<lb/>Quibus caput sua sponte prompte replebatur, his in
 <lb/>praesentia exundantia humorum plenum, in pulmonem
 <lb/>coepit et ventrem per fauces fluxiones demittere. Porro
 <pb n="17a.661"/>
@@ -3653,21 +3800,25 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="11">
-  <lb rend="head"/>
-  <quote type="lemma" n="49">
+<lb rend="head"/>
+<lb/><label type="head"><num value="11">XI.</num></label>
+<quote type="lemma" n="49">
    <lb/>Febres ardentes phreniticae.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Ardentes febres exstiterunt invadentibus in jecur et
+<p rend="indent">
+<lb/>Ardentes febres exstiterunt invadentibus in jecur et
 <lb/>ventrem biliosis excrementis; phrenitici vero caput petentibus.
 <lb/></p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="12">
-  <lb rend="head"/>
-  <quote type="lemma" n="50">
+<lb rend="head"/>
+<lb/><label type="head"><num value="12">XII.</num></label>
+<quote type="lemma" n="50">
    <lb/>Cra aphthosa, pudendis tubercula, lippitudines, carbunculi.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Singuli hi affectus fere non sunt cacoethes, uti de
+<p rend="indent">
+<lb/>Singuli hi affectus fere non sunt cacoethes, uti de
 <lb/>sacro igne diximus paulo ante; nonnunquam vero etiam
 <lb/>sunt cacoethes, uti nunc, quod putridus esset, quia abundabat
 
@@ -3698,11 +3849,13 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="13">
-  <lb rend="head"/>
-  <quote type="lemma" n="51">
+<lb rend="head"/>
+<lb/><label type="head"><num value="13">XIII.</num></label>
+<quote type="lemma" n="51">
    <lb/>Alvi perturbatae, cibos aversabantur.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Ex vitioso humore, qui a capite defluxerat in fauces,
+<p rend="indent">
+<lb/>Ex vitioso humore, qui a capite defluxerat in fauces,
 <lb/>quod in pulmonem invaserat, tabiflcos Constituebat
 <lb/>affectus. Quod vero in ventrem derivatum erat, quia subibat
 <lb/>mordicando, ventris profluvium concitabat: quod
@@ -3713,11 +3866,13 @@
  </div>
  <pb n="17a.664"/>
  <div type="textpart" subtype="chapter" n="14">
-  <lb rend="head"/>
-  <quote type="lemma" n="52">
+<lb rend="head"/>
+<lb/><label type="head"><num value="14">XIV.</num></label>
+<quote type="lemma" n="52">
    <lb/>Eli quidem siticulosi erant, illi vero minime.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Pluribus de causis nec siti caruisse omnes nec fuisse
+<p rend="indent">
+<lb/>Pluribus de causis nec siti caruisse omnes nec fuisse
 <lb/>sitibundos probabile est. Videtur humiditas omnibus putredinosa
 <lb/>fuisse collecta, verum non pari quantitate aut
 <lb/>aeque prava. Quamobrem fieri potuit, aliquos non sitire,
@@ -3730,8 +3885,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="15">
-  <lb rend="head"/>
-  <quote type="lemma" n="53">
+<lb rend="head"/>
+<lb/><label type="head"><num value="15">XV.</num></label>
+<quote type="lemma" n="53">
    <lb/>Urinae turbatae, copiosae, pravae.</quote>
   <lb rend="rule"/>
   <pb n="17a.665"/>
@@ -3747,11 +3903,13 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="16">
-  <lb rend="head"/>
-  <quote type="lemma" n="54">
+<lb rend="head"/>
+<lb/><label type="head"><num value="16">XVI.</num></label>
+<quote type="lemma" n="54">
    <lb/>Comatos plurimum ; rursumque pervigiles.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Coma vigiliis vacans ab humiditate didicisti et restigeratione
+<p rend="indent">
+<lb/>Coma vigiliis vacans ab humiditate didicisti et restigeratione
 <lb/>fieri cerebri : vigilias comati non commissas a
 <lb/>siccitate et calore. Nunc ergo cum qui increvissent
 <lb/>humores, humiditatem obtinerent exuperantem, verum
@@ -3762,20 +3920,24 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="17">
-  <lb rend="head"/>
-  <quote type="lemma" n="55">
+<lb rend="head"/>
+<lb/><label type="head"><num value="17">XVII.</num></label>
+<quote type="lemma" n="55">
    <lb/>Acrisiae multae aut perardua iudicia.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Quae erat humoris vitiositas, quidam morbi hant
+<p rend="indent">
+<lb/>Quae erat humoris vitiositas, quidam morbi hant
 <lb/>quaquam decreverunt, aliqui prave.</p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="18">
-  <lb rend="head"/>
-  <quote type="lemma" n="56">
+<lb rend="head"/>
+<lb/><label type="head"><num value="18">XVIII.</num></label>
+<quote type="lemma" n="56">
    <lb/>Hydropes.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Vel hoc pathema quosdam dicit ex abundantia pla
+<p rend="indent">
+<lb/>Vel hoc pathema quosdam dicit ex abundantia pla
 <lb/>vorum humorum affecisse. Omnem enim haec potest mol
 <lb/>bum concitare, alium aiio in corpore, pro eorum nati
 <lb/>ratibus differentiis et vivendi dissimili ratione, ut paul
@@ -3784,21 +3946,25 @@
  </div>
  <pb n="17a.667"/>
  <div type="textpart" subtype="chapter" n="19">
-  <lb rend="head"/>
-  <quote type="lemma" n="57">
+<lb rend="head"/>
+<lb/><label type="head"><num value="19">XIX.</num></label>
+<quote type="lemma" n="57">
    <lb/>Tabidi multi.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Retusi etiam supra, quod ex capite in fauCesi defluxerat,
+<p rend="indent">
+<lb/>Retusi etiam supra, quod ex capite in fauCesi defluxerat,
 <lb/>ubi per guttur in asperam arteriam et pulmonem
 <lb/>venisset, ejuscemodi vitia produxisse.</p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="20">
-  <lb rend="head"/>
-  <quote type="lemma" n="58">
+<lb rend="head"/>
+<lb/><label type="head"><num value="20">XX.</num></label>
+<quote type="lemma" n="58">
    <lb/>Atque hi quidem morbi sunt, qui in vulgus grassabantur.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Unus de vulgaribus morbis et ipse pestilens est, ut
+<p rend="indent">
+<lb/>Unus de vulgaribus morbis et ipse pestilens est, ut
 <lb/>in Iibro quoque de victus genere acutorum dictum est his
 <lb/>verbis : Nam si quando nulla morbi pestilentis forma communis
 <lb/>vulgetur, caeterum dispersi sint morbi. Neque enim
@@ -3810,20 +3976,23 @@
  </div>
  <pb n="17a.668"/>
  <div type="textpart" subtype="chapter" n="21">
-  <lb rend="head"/>
-  <quote type="lemma" n="59">
+<lb rend="head"/>
+<lb/><label type="head"><num value="21">XXI.</num></label>
+<quote type="lemma" n="59">
 <lb/>Ex delineatorum generum unoquoque multi laborabant ac
  <lb/>moriebantur, eorumque singulis hunc in modum accidit.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Cum dicit et complures moriebantur, pestilentes fuisse
+<p rend="indent">
+<lb/>Cum dicit et complures moriebantur, pestilentes fuisse
 <lb/>morbos qui vulgarentur demonstrat. Qui, quando diversi
 <lb/>fuerunt, de singulis separatim infra se acturum promittit.
 <lb/></p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="22">
-  <lb rend="head"/>
-  <quote type="lemma" n="60">
+<lb rend="head"/>
+<lb/><label type="head"><num value="22">XXII.</num></label>
+<quote type="lemma" n="60">
 <lb/>Multis equidem erysipelas cum causis ex vulgaribus valdeque
 <lb/>parvulis altiusculis in toto corpore, maximeque
 <lb/>sexagenariis circum caput essioruit, si quoque paululum
@@ -3857,23 +4026,27 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="23">
-  <lb rend="head"/>
-  <quote type="lemma" n="61">
+<lb rend="head"/>
+<lb/><label type="head"><num value="23">XXIII.</num></label>
+<quote type="lemma" n="61">
 <lb/>Plurimis igitur ipsarum abscessus in empyemate conciderunt;
 <lb/>tum carnium tum ossium et nervorum prolapsus
  <lb/>magni.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Malignitas abundantis humoris ex magnitudine constitit
+<p rend="indent">
+<lb/>Malignitas abundantis humoris ex magnitudine constitit
 <lb/>putredinis, atque dictis subtexens dicit:</p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="24">
-  <lb rend="head"/>
-  <quote type="lemma" n="62">
+<lb rend="head"/>
+<lb/><label type="head"><num value="24">XXIV.</num></label>
+<quote type="lemma" n="62">
 <lb/>Erat autem rheuma consistens, non puri simile, verum
  <lb/>quiddam aliud et fluxio copiosa et varia.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Hippocrates aperte tibi indicavit, quod nosi saepe jam
+<p rend="indent">
+<lb/>Hippocrates aperte tibi indicavit, quod nosi saepe jam
 <lb/>diximus, corporisi humores propter humiditatem et aëris
 <pb n="17a.671"/>
 <lb/>tranquillitatem computruisse, atque idcirco pus non generavit.
@@ -3885,8 +4058,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="25">
-  <lb rend="head"/>
-  <quote type="lemma" n="63">
+<lb rend="head"/>
+<lb/><label type="head"><num value="25">XXV.</num></label>
+<quote type="lemma" n="63">
 <lb/>Quibus itaque circum caput hujusmodi aliquid seri contingit,
 <lb/>totius capitis et mentis glabrationes ossiumque
 <lb/>denudationes et prolapsus acciderunt, multaeque siuxiones.
@@ -3904,7 +4078,8 @@
 <lb/>Quibusdam vero totum femur aut tibia aut pes
  <lb/>totus denudabatur.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Humorum putredo cujus est commune munus, ut illas
+<p rend="indent">
+<lb/>Humorum putredo cujus est commune munus, ut illas
 <lb/>partes, in quasi impingat, corrumpat, terribiliorem in
 <lb/>capitis partibus speciem praebuit, propterea quod licet
 <lb/>vel paululum de natura hic deflectant, maior fiat sugillatio,
@@ -3933,8 +4108,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="26">
-  <lb rend="head"/>
-  <quote type="lemma" n="64">
+<lb rend="head"/>
+<lb/><label type="head"><num value="26">XXVI.</num></label>
+<quote type="lemma" n="64">
 <lb/>Rususmodi autem omnium gravissimum erat, quum pubem
  <lb/>ac pudenda obsiderent.</quote>
   <lb rend="rule"/>
@@ -3950,24 +4126,28 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="27">
-  <lb rend="head"/>
-  <quote type="lemma" n="65">
+<lb rend="head"/>
+<lb/><label type="head"><num value="27">XXVII.</num></label>
+<quote type="lemma" n="65">
 <lb/><hi rend="italic">Atque ea suit eorum quae cum ulcere aut causa externa
  <lb/>contigerunt conditio.</hi></quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Hactenus verba de sacro igne secit, qui ex ulcere
+<p rend="indent">
+<lb/>Hactenus verba de sacro igne secit, qui ex ulcere
 <lb/>aliamve ita parvam ob causam externam constitit. Posthac
 <lb/>de iis quae fine tali causa inciderunt tractabit.</p>
   <lb rend="rule"/>
  </div>
  <pb n="17a.675"/>
  <div type="textpart" subtype="chapter" n="28">
-  <lb rend="head"/>
-  <quote type="lemma" n="66">
+<lb rend="head"/>
+<lb/><label type="head"><num value="28">XXVIII.</num></label>
+<quote type="lemma" n="66">
 <lb/>Multis autem in febribus aut ante febrem aut a febre
  <lb/>contigerunt.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Non ob ulcusi his aut alia de causa externa, quae
+<p rend="indent">
+<lb/>Non ob ulcusi his aut alia de causa externa, quae
 <lb/>sit manifesta, sed ut consuevimus dicere, sua sponte provenit
 <lb/>sacer ignis; atque partim simul cum sebre invadebat,
 <lb/>partim quum febres aut consequutae sunt aut praecesserunt.
@@ -3975,15 +4155,17 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="29">
-  <lb rend="head"/>
-  <quote type="lemma" n="67">
+<lb rend="head"/>
+<lb/><label type="head"><num value="29">XXIX.</num></label>
+<quote type="lemma" n="67">
 <lb/>At inter ea quae abscessum fecissent, per suppurationem
 <lb/>aut Insignis quaedam alvi perturbatio aut probarum
 <lb/>urinarum transmissio exstitisset, per haec solvebantur.
 <lb/>Quibus autem nihil horum accidisset, verum citra signisuasionem
  <lb/>evanescerent, mortem inferebant.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Pauso ante etiam causa reddita est, cur superstites
+<p rend="indent">
+<lb/>Pauso ante etiam causa reddita est, cur superstites
 <pb n="17a.676"/>
 <lb/>essent magis quibus per putridam partem malus humor
 <lb/>una cum ista de corpore decideret. Nec est obscurum
@@ -3993,12 +4175,14 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="30">
-  <lb rend="head"/>
-  <quote type="lemma" n="68">
+<lb rend="head"/>
+<lb/><label type="head"><num value="30">XXX.</num></label>
+<quote type="lemma" n="68">
 <lb/>Tere longe plurimos exercebant sacri ignes, tenebantque
  <lb/>sub aestatem et sub autumnum.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Genuit quidem, ut dixi, vitiosos humores status difficulter
+<p rend="indent">
+<lb/>Genuit quidem, ut dixi, vitiosos humores status difficulter
 <lb/>transispirans, qui humidus calidusque erat et
 <lb/>ventis carebat, quos in corpore frigora concluserunt, ut
 <lb/>etiam in primi libri vulgarium morborum prJma tempestate
@@ -4024,8 +4208,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="31">
-  <lb rend="head"/>
-  <quote type="lemma" n="69">
+<lb rend="head"/>
+<lb/><label type="head"><num value="31">XXXI.</num></label>
+<quote type="lemma" n="69">
 <lb/>Nonnullis multa erat turbatio tuberculaque ad lances,
  <lb/>linguae insiammationes, absoessusque secundum dentes.</quote>
   <lb rend="rule"/>
@@ -4036,8 +4221,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="32">
-  <lb rend="head"/>
-  <quote type="lemma" n="70">
+<lb rend="head"/>
+<lb/><label type="head"><num value="32">XXXII.</num></label>
+<quote type="lemma" n="70">
 <lb/>Tocesque multis innotescebant male affectae ac interceptae,
 <lb/>primum quidem tabidis incipientibus et febre ardente
  <lb/>et phrenihde laborantibus.</quote>
@@ -4110,9 +4296,9 @@
 <lb/>vix. loqui posset. Eam etiam a vinculo. licet veluti vin.
 <lb/>etam accipere vocem esse dictam hoc loco, adeoque ludi-eat
 <lb/>de vinculis sc poeta dixisse:</p>
- <lg>
+ <lg rend="italic">
  <l><foreign xml:lang="grc">Ἰλασιν οὐκ ἐθέλοντα βίη δήσαντες ἄγουσιν</foreign>.</l>
-<l><hi rend="italic">Ducunt vi vinclis religatum; qui renuebat.</hi></l>
+<l>Ducunt vi vinclis religatum; qui renuebat.</l>
  </lg>
  <p rend="nonindented">
   <lb/>Liquet porro rectius, si <foreign xml:lang="grc">κατειλούμεναι</foreign> fit scriptum quam
@@ -4177,15 +4363,17 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="33">
-  <lb rend="head"/>
-  <quote type="lemma" n="71">
+<lb rend="head"/>
+<lb/><label type="head"><num value="33">XXXIII.</num></label>
+<quote type="lemma" n="71">
 <lb/>Quin fabres etiam ardentes et phrenitrs ante ver caeperunt
 <lb/>post illa fugata, quae praecesterant, ac plurimi
 <pb n="17a.686"/>
 <lb/>tum diu aegrotabant, acuta autem his et letalia
  <lb/>contigere,</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Humorum putredinem, quam pridem pepererat aeris
+<p rend="indent">
+<lb/>Humorum putredinem, quam pridem pepererat aeris
 <lb/>temperamentum, verisimile erat frigore succedente in extrema
 <lb/>hieme, impulsam in altum morbos concitaturum,
 <lb/>sacro igni assimiles. Alios igitur quosdam, qui fuerunt
@@ -4199,14 +4387,16 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="34">
-  <lb rend="head"/>
-  <quote type="lemma" n="72">
+<lb rend="head"/>
+<lb/><label type="head"><num value="34">XXXIV.</num></label>
+<quote type="lemma" n="72">
 <lb/>Hic autem erat subrium ardentium, quae tum grastabantur,
 <pb n="17a.687"/>
 <lb/>status. Incipientis coma, sectatio, horror conlitabantur,
  <lb/>fabris non acuta, neque sitis vehemens, neque.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Quae symptomata propter eam, quae tunc erat, tempestatem
+<p rend="indent">
+<lb/>Quae symptomata propter eam, quae tunc erat, tempestatem
 <lb/>ardentibus febribus evenirent, non propria morbi
  <lb/>ratione, haec annotat. Quare quidam pro <foreign xml:lang="grc">κωματώδεις</foreign>, id est
  <lb/>comatosi, male scripserunt <foreign xml:lang="grc">κανματώδεις</foreign>, id est aestuosi : nam
@@ -4288,32 +4478,38 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="35">
-  <lb rend="head"/>
-  <quote type="lemma" n="73">
+<lb rend="head"/>
+<lb/><label type="head"><num value="35">XXXV.</num></label>
+<quote type="lemma" n="73">
    <lb/>A naribus destillarunt.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Hoc in comitibus est malignarum ardentium febrium,
+<p rend="indent">
+<lb/>Hoc in comitibus est malignarum ardentium febrium,
 <lb/>ut sanguinis eruptiones, lenium. Et ut breviter dicatur,
 <lb/>omnis de naribus stilla, ut docuimus, pravum est signum.</p>
   <lb rend="rule"/>
  </div>
  <pb n="17a.692"/>
  <div type="textpart" subtype="chapter" n="36">
-  <lb rend="head"/>
-  <quote type="lemma" n="74">
+<lb rend="head"/>
+<lb/><label type="head"><num value="36">XXXVI.</num></label>
+<quote type="lemma" n="74">
    <lb/>Exacerbationes plerisque diebus paribus.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Et hoc quoque inter rara est. Nam febres ardentes
+<p rend="indent">
+<lb/>Et hoc quoque inter rara est. Nam febres ardentes
 <lb/>solent adeoque omnes, ita ut illae, morbi mustum acuti,
 <lb/>accedere diebus imparibus.</p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="37">
-  <lb rend="head"/>
-  <quote type="lemma" n="75">
+<lb rend="head"/>
+<lb/><label type="head"><num value="37">XXXVII.</num></label>
+<quote type="lemma" n="75">
    <lb/>Circa ipsos exacerbationes, oblivio, exolutio, vocis defectus.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Et oblivio manifesta est et monstrata frequenter est
+<p rend="indent">
+<lb/>Et oblivio manifesta est et monstrata frequenter est
 <lb/>de exitialibus esse. languorem, id est <foreign xml:lang="grc">όυτεσιν</foreign>, veluti
 <lb/>dissolutionem et remissionem omnium corporis partium
 <lb/>ipsum dicere par est, quum non aliter ac resolutis prolectae
@@ -4328,20 +4524,23 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="38">
-  <lb rend="head"/>
-  <quote type="lemma" n="76">
+<lb rend="head"/>
+<lb/><label type="head"><num value="38">XXXVIII.</num></label>
+<quote type="lemma" n="76">
 <lb/>His manuum ac pedum extrema semper frigidiora multoque
 <lb/>maxime circa exacerbationes, j ac rursus lante aeque
 <lb/>probe recalescebant, iterumque et intelligebant et
  <lb/>loquebantur.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Varietatem symptomatum, quae morbi ejus tempestatis
+<p rend="indent">
+<lb/>Varietatem symptomatum, quae morbi ejus tempestatis
 <lb/>habebant, commemorat, quae sunt omnia prava.</p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="39">
-  <lb rend="head"/>
-  <quote type="lemma" n="77">
+<lb rend="head"/>
+<lb/><label type="head"><num value="39">XXXIX.</num></label>
+<quote type="lemma" n="77">
    <lb/>Eos autem aut a/stdue sapor non somnolentus detinebat
    <lb/>nit vigiliae cum laboribus.</quote>
   <lb rend="rule"/>
@@ -4360,12 +4559,14 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="40">
-  <lb rend="head"/>
-  <quote type="lemma" n="78">
+<lb rend="head"/>
+<lb/><label type="head"><num value="40">XL.</num></label>
+<quote type="lemma" n="78">
 <lb/>Horum plerisque alvi defectionibus crudis, tenuibus, coprosis
  <lb/>turbabantur.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Vel hinc liquet non attendere Hrppocratem in diguoscendis
+<p rend="indent">
+<lb/>Vel hinc liquet non attendere Hrppocratem in diguoscendis
 <lb/>ardentibus morbis speciem dejectionum. Cruda
 <pb n="17a.695"/>
 <lb/>itaque dicit et tenuia qui tum tenebantur febre ardente
@@ -4375,12 +4576,14 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="41">
-  <lb rend="head"/>
-  <quote type="lemma" n="79">
+<lb rend="head"/>
+<lb/><label type="head"><num value="41">XLI.</num></label>
+<quote type="lemma" n="79">
 <lb/>Urinae multae, tenues, neque Iudicatorii, neque boni quic.
  <lb/>quam habebant.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Ubi de urinis agit, quae acciderunt his finiet tradere,
+<p rend="indent">
+<lb/>Ubi de urinis agit, quae acciderunt his finiet tradere,
 <lb/>nec addere; bonum an malum denuncient, nos putans
 <lb/>quae in praesagiis didicimus in universum de vitio vel
 <lb/>bonitate urinarum memoria tenere. Hic adjunxisse puto,
@@ -4405,8 +4608,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="42">
-  <lb rend="head"/>
-  <quote type="lemma" n="80">
+<lb rend="head"/>
+<lb/><label type="head"><num value="42">XLII.</num></label>
+<quote type="lemma" n="80">
 <lb/>Neque quicquam aliud sic affectis decretorium apparebat:
 <lb/>neque sanguis e naribus profetabat ; neque abscessus alius
 <lb/>ex consuetis sudimtorius edebatur, moriebaturque unusquisque,
@@ -4416,7 +4620,8 @@
 <lb/>cum sudoribus. Aegris sane perniciose asseclis haec acridebant. ;
    <lb/></quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Qui perniciose habebant, haec iis accidebant, quae
+<p rend="indent">
+<lb/>Qui perniciose habebant, haec iis accidebant, quae
 <lb/>tibi hic collegit, nimirum symptomata eorum, qui febre
 <lb/>ardente laborantes perniciose habebant. Quorum symptomatum
 <lb/>quodque jam audivisti ante frequenter cur sit perniciosum;
@@ -4424,22 +4629,26 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="43">
-  <lb rend="head"/>
-  <quote type="lemma" n="81">
+<lb rend="head"/>
+<lb/><label type="head"><num value="43">XLIII.</num></label>
+<quote type="lemma" n="81">
    <lb/>Atque phreniticis consimilia suere.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Finita de ardentibus febribus oratione transit ad ea,
+<p rend="indent">
+<lb/>Finita de ardentibus febribus oratione transit ad ea,
 <lb/>quae phreniticis acciderunt. Itaque et his ejus verbis sittendamus.
 <lb/></p>
   <lb rend="rule"/>
  </div>
  <pb n="17a.698"/>
  <div type="textpart" subtype="chapter" n="44">
-  <lb rend="head"/>
-  <quote type="lemma" n="82">
+<lb rend="head"/>
+<lb/><label type="head"><num value="44">XLIV.</num></label>
+<quote type="lemma" n="82">
    <lb/>Eli vero siti vacui prorsus erant.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>De phreniticis agit: fuisse eos dicit non sitibundos,
+<p rend="indent">
+<lb/>De phreniticis agit: fuisse eos dicit non sitibundos,
 <lb/>non tam quod illis multa humiditas in ore ventriculi
 <lb/>assiueret, quam quod quae patiebantur non intelligerent
 <lb/>et facultatem haberent stomachi appetitricem, quae exstinguebatur.
@@ -4447,13 +4656,15 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="45">
-  <lb rend="head"/>
-  <quote type="lemma" n="83">
+<lb rend="head"/>
+<lb/><label type="head"><num value="45">XLV.</num></label>
+<quote type="lemma" n="83">
 <lb/>Nullus phreniticorum seriose insanivit, quemadmodum in
 <lb/>caeteris accidit, sed alia quadam cataphora mala ac
  <lb/>lenta graviter interibant.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Si non praediceret, nec phrenitiCorum valde insanivit
+<p rend="indent">
+<lb/>Si non praediceret, nec phrenitiCorum valde insanivit
 <lb/>quisquam, sed simpliciter dixisset, praesentes pllreniticos
 <lb/>cataphora segni periisse, non erat absurdum accipere
 <lb/>eos conversione in lethargum facta ita defunctos
@@ -4473,11 +4684,13 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="46">
-  <lb rend="head"/>
-  <quote type="lemma" n="84">
+<lb rend="head"/>
+<lb/><label type="head"><num value="46">XLVI.</num></label>
+<quote type="lemma" n="84">
    <lb/>At erant et aliae febres, de quibus scribetur.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Revocemus ad memoriam, quando postquam supra
+<p rend="indent">
+<lb/>Revocemus ad memoriam, quando postquam supra
 <pb n="17a.700"/>
 <lb/>dixit, febrium ardentium, quae vigebant, haec erat natura,
 <lb/>utque hanc narravit et quae istis acciderunt ordine
@@ -4491,28 +4704,32 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="47">
-  <lb rend="head"/>
-  <quote type="lemma" n="85">
+<lb rend="head"/>
+<lb/><label type="head"><num value="47">XLVII.</num></label>
+<quote type="lemma" n="85">
 <lb/>Dra multis aphthosa, ulcerosa, fluxiones ad pudenda multae,
 <lb/>ulcera, tubercula intus et extra circum inguina.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Et ante quidem de his sermonem habuit. Verum
-<lb/>quia de unoquoque seorsum agit, posteaquam ad autulunum
-<lb/>usque generationem productam sacri igniti dixit,
+<p rend="indent">
+<lb/>Et ante quidem de his sermonem habuit. Verum
+<lb/>quia de unoquoque seorsum agit, posteaquam ad autumnum
+<lb/>usque generationem productam sacri ignis dixit,
 <pb n="17a.701"/>
 <lb/>plane de his quae nunc post eum describuntur omnibus
-<lb/>idem ostendit. Hac ergo de causa eorundem iterum mem
-<lb/>in i.</p>
+  <lb/>idem ostendit. Hac ergo de causa eorundem iterum meminit.
+<lb/></p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="48">
-  <lb rend="head"/>
-  <quote type="lemma" n="86">
+<lb rend="head"/>
+<lb/><label type="head"><num value="48">XLVIII.</num></label>
+<quote type="lemma" n="86">
 <lb/>Lippuudines humidae, longae, diuturnae, cum doloribus,
 <lb/>epiphysos palpebrarum feris, intus adnasoebantur, quae
  <lb/>multorum oculos perderent, quas Acos nominant.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Abundantis humoris superfluitas videtur duplicem
+<p rend="indent">
+<lb/>Abundantis humoris superfluitas videtur duplicem
 <lb/>habere speciem in crassitiei et tenuitate differentia, ut
 <lb/>fere in humidisi et tranquillis tempestatibus fieri semper
 <lb/>sedent. Nam nisi peculiaribus utens exercitationibus ventilesi
@@ -4534,12 +4751,14 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="49">
-  <lb rend="head"/>
-  <quote type="lemma" n="87">
+<lb rend="head"/>
+<lb/><label type="head"><num value="49">XLIX.</num></label>
+<quote type="lemma" n="87">
 <lb/>Enasoebantur vero et in aliis ulceribus multa et in pudendis.
  <lb/></quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Quae materiae crassitudine in palpebris excrescebant,
+<p rend="indent">
+<lb/>Quae materiae crassitudine in palpebris excrescebant,
 <lb/>non hic tantum, verum in pudendis quoque exstitisse ait
 <lb/>et si qua pars alia forte esset exulcerata, humorum crassitie,
 
@@ -4549,11 +4768,13 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="50">
-  <lb rend="head"/>
-  <quote type="lemma" n="88">
+<lb rend="head"/>
+<lb/><label type="head"><num value="50">L.</num></label>
+<quote type="lemma" n="88">
    <lb/>Carbunculi aestate multi et alia quae putredines vocantur.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Atque quod commoraretur in corpore pravus humor,
+<p rend="indent">
+<lb/>Atque quod commoraretur in corpore pravus humor,
 <lb/>putredo increscebat; aestate vero excipiente, neque ipsa
 <lb/>etesias habente, multo magis evaluit. Ideoque calidi
 <lb/>morbi plures et prioribus maligniores viguerunt. Ostendimus
@@ -4562,11 +4783,13 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="51">
-  <lb rend="head"/>
-  <quote type="lemma" n="89">
+<lb rend="head"/>
+<lb/><label type="head"><num value="51">LI.</num></label>
+<quote type="lemma" n="89">
    <lb/>Pustulae quoque magnae.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Apertum est ab <foreign xml:lang="grc">ἐκθύειν</foreign>, quod est <hi rend="italic">scoppihl,</hi> id est
+<p rend="indent">
+<lb/>Apertum est ab <foreign xml:lang="grc">ἐκθύειν</foreign>, quod est <hi rend="italic">scoppihl,</hi> id est
 <pb n="17a.704"/>
  <lb/>erumpere, derivatum esse <foreign xml:lang="grc">ἐκθύμασι</foreign>, id est papulis, nomen,
 <lb/>in iis quae sponte extuberant in cute. Haec constant
@@ -4579,25 +4802,29 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="52">
-  <lb rend="head"/>
-  <quote type="lemma" n="90">
+<lb rend="head"/>
+<lb/><label type="head"><num value="52">LII.</num></label>
+<quote type="lemma" n="90">
    <lb/>Perpetes multis magni.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Magnos aut quod multum occuparent Ioci, aut quod
+<p rend="indent">
+<lb/>Magnos aut quod multum occuparent Ioci, aut quod
 <lb/>adiunctam malignam exulcerationem haberent, appellavit:
 <lb/>utrumque autem succedit dicto humorum vitio.</p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="53">
-  <lb rend="head"/>
-  <quote type="lemma" n="91">
+<lb rend="head"/>
+<lb/><label type="head"><num value="53">LIII.</num></label>
+<quote type="lemma" n="91">
 <lb/>Quae ad alvum spectant, plerisque multa et noxia contigerunt,
 <pb n="17a.705"/>
 <lb/>primum quidem tenesmi multis molesti, plurimis
 <lb/>vero pueris omnibusque impuberibus eorumque plurimi
  <lb/>interierunt, lienterici multi.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Tum humiditate aetatis, tum quia plus cibi sumentes
+<p rend="indent">
+<lb/>Tum humiditate aetatis, tum quia plus cibi sumentes
 <lb/>pueri, nutrimenta saepe corrumpunt, merito tenesmo
 <lb/>corripiebantur. Qui cum alioqui dolorificus est et molestas
 <lb/>affectus, dolorisicus propter tensionem, molestus quod
@@ -4612,11 +4839,13 @@
  </div>
  <pb n="17a.706"/>
  <div type="textpart" subtype="chapter" n="54">
-  <lb rend="head"/>
-  <quote type="lemma" n="92">
+<lb rend="head"/>
+<lb/><label type="head"><num value="54">LIV.</num></label>
+<quote type="lemma" n="92">
    <lb/>Dysenteria laborabant, neque hi admodum moleste.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Consentaneum erat inferri hoc praedicta quibusdam
+<p rend="indent">
+<lb/>Consentaneum erat inferri hoc praedicta quibusdam
 <lb/>qui non dolorofe aegrotarant. Sed nullus is est praedictus.
 <lb/>Immo vero contra magis et priores omnes, qui et ante
 <lb/>lientericos dicti sunt tenesmo Iaborasse doloroseque aegrotaransi
@@ -4634,8 +4863,9 @@
  </div>
  <pb n="17a.707"/>
  <div type="textpart" subtype="chapter" n="55">
-  <lb rend="head"/>
-  <quote type="lemma" n="93">
+<lb rend="head"/>
+<lb/><label type="head"><num value="55">LV.</num></label>
+<quote type="lemma" n="93">
 <lb/>Desertiones autem biliosae et pingues et tenues et aquosue.
 <lb/>Ac multis quidem eo morbus ipse decubuit tum
 <lb/>citra febres tum in febribus. Tormina cum doloribus
@@ -4644,7 +4874,8 @@
 <lb/>dolores solvebant, multaeque corporis partes pasuebantur.
  <lb/></quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Praesens sermo omne genus continet morbi, quatenus
+<p rend="indent">
+<lb/>Praesens sermo omne genus continet morbi, quatenus
 <lb/>natura inter se homines aetatibusque et Victu distant. Ergo
 <lb/>cum aliis alius abundaret succisi, a statu aëris hunc, ut
 <lb/>demonstravimus, auxit; tandem putredine excipiente, putresactio
@@ -4668,8 +4899,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="56">
-  <lb rend="head"/>
-  <quote type="lemma" n="94">
+<lb rend="head"/>
+<lb/><label type="head"><num value="56">LVI.</num></label>
+<quote type="lemma" n="94">
 <lb/>Oblatis etiam difficile auscultabantur. Etenim purgationes
 <lb/>plurimos oblaedebant. Qui vero ita aspiciebantur,
 <lb/>eorum plerique celeriter moriebantur. Multis quoque
@@ -4686,13 +4918,15 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="57">
-  <lb rend="head"/>
-  <quote type="lemma" n="95">
+<lb rend="head"/>
+<lb/><label type="head"><num value="57">LVII.</num></label>
+<quote type="lemma" n="95">
 <lb/>Ut autem in summa dicam, omnes tum qui morbis longis,
 <lb/>tum qui acutis aegrotabant, ex his maxime quae per
  <lb/>alvum secedebant, interierunt. omnes enim alvus sustulit.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Et pestis quoque illa longissima, quae nostra aetate
+<p rend="indent">
+<lb/>Et pestis quoque illa longissima, quae nostra aetate
 <lb/>vulgata est, ex iis quae per alvum vacuantur, omnes
 <lb/>prope peremit. Quae evacuabantur, erat colliquatio.
 <lb/>Quod quidem esse symptoma videtur in perpetuum febris,
@@ -4702,14 +4936,16 @@
  </div>
  <pb n="17a.710"/>
  <div type="textpart" subtype="chapter" n="58">
-  <lb rend="head"/>
-  <quote type="lemma" n="96">
+<lb rend="head"/>
+<lb/><label type="head"><num value="58">LVIII.</num></label>
+<quote type="lemma" n="96">
 <lb/>omnes autem in quos fune incidi, praeter praescriptos omnes
 <lb/>morbos, quibus vexabantur, cibos equidem aversabantur.
 <lb/>Plerique vero praecipueque hi ipsi et qui eodem modo
  <lb/>affecti erant, sed et ex aliis qui etiam perniciose haberent.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>.Etiam hoc symptoma omnes cepit, qui in peste diu- .i
+<p rend="indent">
+<lb/>.Etiam hoc symptoma omnes cepit, qui in peste diu- .i
 <lb/>torna, quae modo viguit, laborabant; quare factum est
 <lb/>ut multi morerentur. Fortiores ergo, qui vim sibi ipsi
 <lb/>asserentes cibum oblatum assumpserunt, omnes fere supersistes
@@ -4720,8 +4956,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="59">
-  <lb rend="head"/>
-  <quote type="lemma" n="97">
+<lb rend="head"/>
+<lb/><label type="head"><num value="59">LIX.</num></label>
+<quote type="lemma" n="97">
    <lb/>Aiticulosi partim quidem erant, partim vero siti iacui</quote>
   <lb rend="rule"/>
   <pb n="17a.711"/>
@@ -4740,8 +4977,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="60">
-  <lb rend="head"/>
-  <quote type="lemma" n="98">
+<lb rend="head"/>
+<lb/><label type="head"><num value="60">LX.</num></label>
+<quote type="lemma" n="98">
 <lb/>Quos febris aliaque vexabant, eorum nullus siticulosus potum
 <lb/>intempestive sumsit, sed quoad potionem licebat
  <lb/>quam vellet victus rationem instituere.</quote>
@@ -4758,8 +4996,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="61">
-  <lb rend="head"/>
-  <quote type="lemma" n="99">
+<lb rend="head"/>
+<lb/><label type="head"><num value="61">LXI.</num></label>
+<quote type="lemma" n="99">
 <lb/>Urinae autem copiosae quidem, sed quae ex oblatis potionibus
 <lb/>non vacuabantur, imo exuperabunt. rerum esuclarum
 <lb/>urinarum multa quaedam erat pravitas. Neque
@@ -4778,13 +5017,15 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="62">
-  <lb rend="head"/>
-  <quote type="lemma" n="100">
+<lb rend="head"/>
+<lb/><label type="head"><num value="62">LXII.</num></label>
+<quote type="lemma" n="100">
 <lb/>Comate autem detinebantur, praecipue quidem phrenitici
 <lb/>et qui causa fabriritabant ; quin et caeteris in omnibus
  <lb/>maximis morbis, quod cum febre contingerent.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Coma meavit materiae crassitudo et praeter caeteros
+<p rend="indent">
+<lb/>Coma meavit materiae crassitudo et praeter caeteros
 <lb/>iis, quibus erat affectum caput. Est autem phreniticis
 <lb/>affectum per te, sed in ardentibus febribus per accidens.
 <lb/>Nam febris calor pravos humores ad caput fuh vehit; abundabant
@@ -4793,12 +5034,14 @@
  </div>
  <pb n="17a.714"/>
  <div type="textpart" subtype="chapter" n="63">
-  <lb rend="head"/>
-  <quote type="lemma" n="101">
+<lb rend="head"/>
+<lb/><label type="head"><num value="63">LXIII.</num></label>
+<quote type="lemma" n="101">
 <lb/>Perpetuo autem plurimos grave coma comitabatur aut tenues
  <lb/>et parvi somni.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Grave coma, a quo aegre quis excitetur, accipiendum
+<p rend="indent">
+<lb/>Grave coma, a quo aegre quis excitetur, accipiendum
 <lb/>est, cujus contrarium est quod tenues et parvos
 <lb/>fomnos habeat, Quorum accidit primum iis, quibus eratsitule
 <lb/>et copia- exuperabat frigidae materiae, alteris quibus
@@ -4806,13 +5049,15 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="64">
-  <lb rend="head"/>
-  <quote type="lemma" n="102">
+<lb rend="head"/>
+<lb/><label type="head"><num value="64">LXIV.</num></label>
+<quote type="lemma" n="102">
 <lb/>Praeterea multae aliae sebrium ideae in vulgus grassatae
 <lb/>sunt, tertianarum, quartanarum, nocturnarum, assiduarum,
  <lb/>diuturnarum, erraticarum, anxiarum, inconstantium.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Quia humores noxii erant diversi, ideo quum alii
+<p rend="indent">
+<lb/>Quia humores noxii erant diversi, ideo quum alii
 <lb/>morbi tum plura jam inciderunt febrium genera. Mentinit
 
 <pb n="17a.715"/>
@@ -4845,8 +5090,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="65">
-  <lb rend="head"/>
-  <quote type="lemma" n="103">
+<lb rend="head"/>
+<lb/><label type="head"><num value="65">LXV.</num></label>
+<quote type="lemma" n="103">
 <lb/>At hae omnes cum multa perturbatione contingebant, etenim
 <lb/>plurimis alvi turbabantur, horridae; sudores nihil
 <lb/>decernebant; urinae quales descriptae sunt. Eorum vero
@@ -4861,15 +5107,17 @@
 <lb/>erecti moriebantur. Multos ^denique etiam praeter alios
  <lb/>morbos tumores vexabant et quam maxime tabidos.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Praedictus dicit omnes fabres adiunctam habuisse multam
+<p rend="indent">
+<lb/>Praedictus dicit omnes fabres adiunctam habuisse multam
 <lb/>turbationem ; mox ipse quae esset turbatio exponit,
 <lb/>describitque earum symptomata. Reliqua, nisi priora ex- aluerint,
 <lb/>clarasunt.</p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="66">
-  <lb rend="head"/>
-  <quote type="lemma" n="104">
+<lb rend="head"/>
+<lb/><label type="head"><num value="66">LXVI.</num></label>
+<quote type="lemma" n="104">
 <lb/>Maximum quidem et gravissimum et quod plurimos interemit
 <lb/>tabes. Nam quum multi hieme coepissent, magna
 <lb/>ex parte decubueram; partim recti esse sustinuerunt.
@@ -4932,8 +5180,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="67">
-  <lb rend="head"/>
-  <quote type="lemma" n="105">
+<lb rend="head"/>
+<lb/><label type="head"><num value="67">LXVII.</num></label>
+<quote type="lemma" n="105">
    <lb/>Gravitas corporis, comatosu</quote>
   <lb rend="rule"/>
   <pb n="17a.721"/>
@@ -4944,29 +5193,34 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="68">
-  <lb rend="head"/>
-  <quote type="lemma" n="106">
+<lb rend="head"/>
+<lb/><label type="head"><num value="68">LXVIII.</num></label>
+<quote type="lemma" n="106">
 <lb/>Quibus sere omnibus oedemata stabant, quae in aquam
  <lb/>Tuter cutem eruperunt.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Non mimui si propter abundantiam inconeoctorum
+<p rend="indent">
+<lb/>Non mimui si propter abundantiam inconeoctorum
 <lb/>humorum ad hunc affectum quidam devenerunt.</p>
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="69">
-  <lb rend="head"/>
-  <quote type="lemma" n="107">
+<lb rend="head"/>
+<lb/><label type="head"><num value="69">LXIX.</num></label>
+<quote type="lemma" n="107">
    <lb/>Horrebant et sub mortem delirabant.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Cum pravitas humorum ex putredine parta incresceret,
+<p rend="indent">
+<lb/>Cum pravitas humorum ex putredine parta incresceret,
 <lb/>horrore corripiebantur et delirio progressu temporis..
 <lb/>in quo etiam moriebantur.</p>
   <lb rend="rule"/>
  </div>
  <pb n="17a.722"/>
  <div type="textpart" subtype="chapter" n="70">
-  <lb rend="head"/>
-  <quote type="lemma" n="108">
+<lb rend="head"/>
+<lb/><label type="head"><num value="70">LXX.</num></label>
+<quote type="lemma" n="108">
 <lb/>Cenus erat rabidorum glabrum, subalbum, pituitosum,
 <lb/>subrubicundum, caesium, leucophlegmaticae, ac quibus
 <lb/>scapulae in morem alarum prominebant, mulieresque.
@@ -4975,7 +5229,8 @@
 <lb/>juvenes pituitosus exercitabant; diuturna alvi pro.si
  <lb/>avia et acria excrementa pinguiaque biliosus.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>corporis turmas eorum, qui tabificis morbis corripiebantur,
+<p rend="indent">
+<lb/>corporis turmas eorum, qui tabificis morbis corripiebantur,
 <lb/>narrat. Glabrum igitur Graece <foreign xml:lang="grc">λεῖον</foreign>, quod est
 <lb/>depile, indicat justo frigidius temperamentum. Nec. hoc
 <lb/>ad pueros refertur semper; sunt enim hi propter aetatem
@@ -5003,13 +5258,13 @@
 <lb/>considerandum revocandumque ad -memoriam poeta quae.
 <lb/>scripsit, ubi ait:</p>
 <pb n="17a.724"/>
- <lg>
+ <lg rend="italic">
  <l><foreign xml:lang="grc">Ἄρκτοι τ’ ἀγρότεροί τε σύες, χαροποί τε λέοντες</foreign>.</l>
 </lg>
  <!-- un ajout du texte latin par rapport au texte grec -->
  <p rend="nonindented">
   <lb/>Id est:</p>
-<lg>
+<lg rend="italic">
  <l>Ursique agrestesque sues, charopique leones.</l>
 </lg>
  <p rend="nonindented">
@@ -5118,15 +5373,17 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="71">
-  <lb rend="head"/>
-  <quote type="lemma" n="109">
+<lb rend="head"/>
+<lb/><label type="head"><num value="71">LXXI.</num></label>
+<quote type="lemma" n="109">
 <lb/>omnibus quos supra descripsimus ver erat insusii/stmum,
 <lb/>plurimosque sustulit: aestas commodissima paucfumique
 <pb n="17a.730"/>
 <lb/>periere, autumno rursus et sub vergilias multi interierunt
  <lb/><foreign xml:lang="grc">τεταρταῖοι</foreign>.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Vitioso humore qui collectus erat in corporis profunditate
+<p rend="indent">
+<lb/>Vitioso humore qui collectus erat in corporis profunditate
 <lb/>retruso ab aeris frigore quo extrema hieme et
 <lb/>ineunte vere erat infestus, haud injuria maxime quidem
 <lb/>tabidis, ut ante dixit, et vero etiam aliis vere contigit
@@ -5167,7 +5424,8 @@
 <lb/>autumnus. A febribus tamen vigentibus quartanis non
 <lb/>periissent multi, feceram etenim scimus esse per se hanc
 <lb/>febrem, ut de ea Hippocrates dixit.</p>
-<p rend="indent"><lb/>A pestilente tempestate sedecim narrat aegros ad finem
+<p rend="indent">
+<lb/>A pestilente tempestate sedecim narrat aegros ad finem
 <lb/>usque libri. Inde sunt adscripta quaedam, de quibus videtur
 <lb/>recte Dloscorides statuere, qui vult ea statim tum.
 <lb/>pestati subtexta ; huncque illis libri locum in tua editione
@@ -5251,8 +5509,9 @@
  </div>
  <pb n="17a.737"/>
  <div type="textpart" subtype="chapter" n="72">
-  <lb rend="head"/>
-  <quote type="lemma" n="110">
+<lb rend="head"/>
+<lb/><label type="head"><num value="72">LXXII.</num></label>
+<quote type="lemma" n="110">
 <lb/>sin Phase Parium quendam, qui supra Dianae aedem
 <lb/>decumbebat, febris corripuit acuta, primo continua et
 <lb/>ardens, in principio sitibundus erat et comatosus rursusque
@@ -5287,7 +5546,8 @@
 <lb/>erat, a cibo abhorrebat. Continenter ardente febre
  <lb/>laborabat.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Curiose et hoc in loco rursus interpretum quidam
+<p rend="indent">
+<lb/>Curiose et hoc in loco rursus interpretum quidam
 <lb/>ajunt aegri patriam non esse temere adlectant. Etenim
 <pb n="17a.739"/>
 <lb/>dictum esse ab. Asclepiade, Parius maximum consequi a
@@ -5436,8 +5696,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="73">
-  <lb rend="head"/>
-  <quote type="lemma" n="111">
+<lb rend="head"/>
+<lb/><label type="head"><num value="73">LXXIII.</num></label>
+<quote type="lemma" n="111">
 <lb/>Mulier quaedam quae apud feigidam aquam in Thasa
 <lb/>aegrotabat, postquam siliam peperisset, nec esset purgata,
 <lb/>tertio a partu die febre correpta est, acuta, horrida.
@@ -5472,7 +5733,8 @@
 <lb/>sumebat; animo erat desecto, insomnis, iracunda, implacida,
  <lb/>animo melancholico.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Annotandum puto, qui factum sit, ut nihil de hoc,
+<p rend="indent">
+<lb/>Annotandum puto, qui factum sit, ut nihil de hoc,
 <lb/>apud frigidam aquam, Sabinus dixerit: quum ille dicere
 <lb/>posset, hae de re mulieroulam refrigeratam in valetudinem
 <lb/>incurrisse. Nam hoc multo erat probabilius iis,
@@ -5544,8 +5806,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="74">
-  <lb rend="head"/>
-  <quote type="lemma" n="112">
+<lb rend="head"/>
+<lb/><label type="head"><num value="74">LXXIV.</num></label>
+<quote type="lemma" n="112">
 <lb/>In Thasa Pythionem, qui supra Herculis fenum decumbebat,
 <lb/>ex laboribus, lassitudinibus, parum habita victus
 <lb/>ratione, magnus coepit rigor et febris acuta; lingua
@@ -5657,13 +5920,13 @@
 <pb n="17a.758"/>
 <lb/>alterum eorum ait respondisse lingua humana. Inquit
 <lb/>enim;</p>
-<lg>
+<lg rend="italic">
  <l><foreign xml:lang="grc">Αὐδήεντα ἔθηκε θεὰ λευκώλενος Ἥρη</foreign>,</l>
 </lg>
  <!-- un ajout du texte latin par rapport au texte grec -->
  <p rend="nonindented">
 <lb/>id est:</p>
-<lg>
+<lg rend="italic">
  <l>Hunc regina loqui fecit dea candida Juno.</l>
 </lg>
  <p rend="nonindented">
@@ -5693,8 +5956,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="75">
-  <lb rend="head"/>
-  <quote type="lemma" n="113">
+<lb rend="head"/>
+<lb/><label type="head"><num value="75">LXXV.</num></label>
+<quote type="lemma" n="113">
 <lb/>Qui phreniticus primo die decubuit, aeruginosa multa tenuia
 <lb/>vomuit, fabris horrida prehendit; sudor copiosus,
 <lb/>aspduus per universum corpus t capitis et cervicis granitas
@@ -5706,7 +5970,8 @@
 <lb/>intermisit; palpitationes per totum corpus; nocte eosvulstones.
  <lb/>Jertio exacerbata sunt omnia. Quarto obiit.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Acutissimae phrenitidis hic aeger est exemplum, primo
+<p rend="indent">
+<lb/>Acutissimae phrenitidis hic aeger est exemplum, primo
 <lb/>statim die una cum febre incessentia. omnesque certe
 <lb/>vidimus, qui quidem ita pbrenitide perciti essent, intra
 <lb/>septimum diem mortuos esse; perpauci, Inque rari, hunc
@@ -5747,8 +6012,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="76">
-  <lb rend="head"/>
-  <quote type="lemma" n="114">
+<lb rend="head"/>
+<lb/><label type="head"><num value="76">LXXVI.</num></label>
+<quote type="lemma" n="114">
    <lb/>Calvo in Lari/fu femur dextrum derepente doluit, nihilque
 <lb/>ex oblatis profuit. Primo die febris acuta, ardens
 <lb/>sensim prehendit, doloresque concomitabqntur. secundo
@@ -5825,8 +6091,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="77">
-  <lb rend="head"/>
-  <quote type="lemma" n="115">
+<lb rend="head"/>
+<lb/><label type="head"><num value="77">LXXVII.</num></label>
+<quote type="lemma" n="115">
 <lb/>Abderae Persidem febris acuta, continua cum dolore prehendit;
 <lb/>sitis multa; anxietas et potum continere non
 <lb/>poterat. Erat subsplenicus et gravato capite. Primo
@@ -5842,7 +6109,8 @@
 <lb/>calidum per universum corpus sudavit; sine febre sudicatus
  <lb/>est, neque morbus acutus reversus est.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Exemplum hic aeger est acutissimi morbi, horrendi
+<p rend="indent">
+<lb/>Exemplum hic aeger est acutissimi morbi, horrendi
 <lb/>illius quidem rudibus, caeterum brevi judicandi, prudentibus.
 <lb/>Nam quum sublienoso primo statim die de sinistra
 <lb/>nare copiolas erupisset sanguis : urinae item crassae essent
@@ -5856,9 +6124,10 @@
  </div>
  <pb n="17a.768"/>
  <div type="textpart" subtype="chapter" n="78">
-  <lb rend="head"/>
-  <quote type="lemma" n="116">
-<lb/>Abderaevirginem quae in sucro templi vestibulo decumbebat,
+<lb rend="head"/>
+<lb/><label type="head"><num value="78">LXXVIII.</num></label>
+<quote type="lemma" n="116">
+<lb/>Abderae virginem quae in sacro templi vestibulo decumbebat,
 <lb/>fabris acuta et ardens prehendit. Erat autem
 <lb/>sitibunda et pervigilo ipsi primum muliebria prostarerunt.
 <lb/>sexto die vehemens oborta est anxietas, rubor,
@@ -5879,7 +6148,8 @@
 <lb/>febre immunis, surditas reliquit, pedum dolor aliquantulum
  <lb/>moratus est; in caeteris perfecte iudicata est</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Ex humorum haec abundantia videtur aegrotasse et
+<p rend="indent">
+<lb/>Ex humorum haec abundantia videtur aegrotasse et
 <lb/>quantum portendebant prima symptomata, mortem certe
 <lb/>huic timeres. Sed bonus urinarum color iis, qui humosum
 <lb/>copia laborant, maximum est signum, quae quia
@@ -5891,8 +6161,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="79">
-  <lb rend="head"/>
-  <quote type="lemma" n="117">
+<lb rend="head"/>
+<lb/><label type="head"><num value="79">LXXIX.</num></label>
+<quote type="lemma" n="117">
 <lb/>Abderae Anaxionem ad Thracias portas decumbentem febris
 <lb/>acuta prehendit; lateris dextri dolor continuus;
 <lb/>sicca tussiva, neque quicquam primis diebus expuebat;
@@ -5950,8 +6221,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="80">
-  <lb rend="head"/>
-  <quote type="lemma" n="118">
+<lb rend="head"/>
+<lb/><label type="head"><num value="80">LXXX.</num></label>
+<quote type="lemma" n="118">
 <lb/>Abderae Eleropytus recto statu incedens capitis dolore
 <lb/>correptus est. Non multo vero post tempore decubuit.
 <lb/>Is prope superiorem viam habitabat, quem febris ardens
@@ -5983,7 +6255,8 @@
 <lb/>autem tum febres reliquerant, tum surditas desiit.
  <lb/>Centesimo plane iudicatus est. Febris erat ardens.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Hic vir memoratu dignus est, qui morbum gravem
+<p rend="indent">
+<lb/>Hic vir memoratu dignus est, qui morbum gravem
 <lb/>virium robore excepit, alioqui tanto morbo futurus impar.
 <lb/>Et omnino pulsibus ejus inerat robur, simulque reliqua
 <lb/>omnia secundum naturam constabant. Dixi vero et
@@ -6007,8 +6280,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="81">
-  <lb rend="head"/>
-  <quote type="lemma" n="119">
+<lb rend="head"/>
+<lb/><label type="head"><num value="81">LXXXI.</num></label>
+<quote type="lemma" n="119">
 <lb/>Abderae Nicodemum ex venere et potu orta sebris prehendit.
 <lb/>Incipiens autem anxietate, cordolio et siti vexatus:
 <lb/>lingua exusta est; urinae tenues et nigrae. Secundo
@@ -6031,7 +6305,8 @@
 <lb/>copiosum sedimentum deponebat, copiosa sudore calido
  <lb/>per universum corpus essuso, a febre liber iudicatus est.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Et ipse Hippocrates significavit dicens: accessiones et
+<p rend="indent">
+<lb/>Et ipse Hippocrates significavit dicens: accessiones et
 <lb/>dolores diebus paribus; quare etiam a vigesimo die sudore
 <lb/>est judicatus. Sigillatim vero qui omnia tenet memoria
 <lb/>quae ante exposuimus hoc libro et superioribus
@@ -6041,8 +6316,9 @@
  </div>
  <pb n="17a.777"/>
  <div type="textpart" subtype="chapter" n="82">
-  <lb rend="head"/>
-  <quote type="lemma" n="120">
+<lb rend="head"/>
+<lb/><label type="head"><num value="82">LXXXII.</num></label>
+<quote type="lemma" n="120">
 <lb/>In Thaso morosa mulier ex moerore cum occasione recta
 <lb/>incedens, tum somni, tum cibi oblita et siti et saetatione
 <lb/>premebatur. Habitabat autem prope Pyladis aedes
@@ -6085,8 +6361,9 @@
  </div>
  <pb n="17a.779"/>
  <div type="textpart" subtype="chapter" n="83">
-  <lb rend="head"/>
-  <quote type="lemma" n="121">
+<lb rend="head"/>
+<lb/><label type="head"><num value="83">LXXXIII.</num></label>
+<quote type="lemma" n="121">
 <lb/>Larissae virginem febris ut dens et acuta prehendit; insanis
 <lb/>erat, sitibunda; lingua suliginosu, arida; urinae
 <lb/>probe coloratae, sed tenues. Secundo die laboriose degebat;
@@ -6152,8 +6429,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="84">
-  <lb rend="head"/>
-  <quote type="lemma" n="122">
+<lb rend="head"/>
+<lb/><label type="head"><num value="84">LXXXIV.</num></label>
+<quote type="lemma" n="122">
 <lb/>Abderae Apollonius recto statu diuturno tempore patiebatur.
 <lb/>Erat autem vtfaerosus et circa hepar consuetus
 <lb/>dolor longo tempore comitabatur, ac tunc sane etiam
@@ -6202,8 +6480,9 @@
  </div>
  <pb n="17a.785"/>
  <div type="textpart" subtype="chapter" n="85">
-  <lb rend="head"/>
-  <quote type="lemma" n="123">
+<lb rend="head"/>
+<lb/><label type="head"><num value="85">LXXXV.</num></label>
+<quote type="lemma" n="123">
 <lb/>Mulier in Cyxico gemellas puellas laboriosa peperit, quae
 <lb/>quum non admodum expurgata esset, primo die febre
 <lb/>horrida et acuta correpta est. Capiar et cervicis gravitas
@@ -6220,7 +6499,8 @@
 <lb/>Declino sexto voce capta est. Decimo septimo phre^
  <lb/>nitide interiit.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>Non tantum quia non probe fuit a partu purgata,
+<p rend="indent">
+<lb/>Non tantum quia non probe fuit a partu purgata,
 <lb/>superfuit mulieri huic sanguis magis melancholicus, quae
 <pb n="17a.786"/>
 <lb/>causa erat, cur initio tacita esset et tetrica, nec posset ad
@@ -6235,8 +6515,9 @@
   <lb rend="rule"/>
  </div>
  <div type="textpart" subtype="chapter" n="86">
-  <lb rend="head"/>
-  <quote type="lemma" n="124">
+<lb rend="head"/>
+<lb/><label type="head"><num value="86">LXXXVI.</num></label>
+<quote type="lemma" n="124">
 <lb/>In Phase Dealcis uxorem, quae in Peto decumbebat,
 <lb/>sebrli horrida et acuta ex moerore prehendit. Ab initto
 <lb/>autem contegebatur et ad sinem usoue semper taciturna
@@ -6257,7 +6538,8 @@
 <lb/>contegebatur aut verba multa aut silens, perpetuo
 <lb/>phrenita.</quote>
   <lb rend="rule"/>
-<p rend="indent"><lb/>A primo haec fuisse phrenitica videtur. Sunt autem
+<p rend="indent">
+<lb/>A primo haec fuisse phrenitica videtur. Sunt autem
 <lb/>tales, uti prius dixi, gravissimae phrenitides, ac ocissime,
 <lb/>quotquot invadunt, tollunt; sed nunc quidem haec febricitans
 <lb/>acute ad diem vigefimum primum se fustentavit,
@@ -6303,8 +6585,9 @@
  </div>
  <pb n="17a.790"/>
  <div type="textpart" subtype="chapter" n="87">
-  <lb rend="head"/>
-  <quote type="lemma" n="125">
+<lb rend="head"/>
+<lb/><label type="head"><num value="87">LXXXVII.</num></label>
+<quote type="lemma" n="125">
 <lb/>Meliboea adolescens ex potu et venerea multis longo tempore
 <lb/>incaluit et decubuit. Horridus autem et aestuabundus
 <lb/>erat, insomnis, neque siti premebatur. Ab alvo
@@ -6343,8 +6626,9 @@
  </div>
  <pb n="17a.792"/>
  <div type="textpart" subtype="chapter" n="88">
-  <lb rend="head"/>
-  <quote type="lemma" n="126">
+<lb rend="head"/>
+<lb/><label type="head"><num value="88">LXXXVIII.</num></label>
+<quote type="lemma" n="126">
 <lb/>Verum illa mihi aestas videtur fecundum rationem proscisse.
 <lb/>Nam aestivos morbos hiems succedens solvit, hiemales
 <lb/>aestas insequens transmutat. Quanquam ista per

@@ -7,8 +7,10 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">Institutio logica</title>
-        <author xml:lang="lat">Galenus</author>
-        <editor>Kalbfleisch, Karl</editor>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
+        <editor role="editor">Kalbfleisch, Karl</editor>
         <funder ref="https://www.mellon.org/">Andrew W. Mellon Foundation</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts</resp>
@@ -41,16 +43,47 @@
           <resp>Technical Advisor</resp>
           <persName>Bruce Robertson</persName>
         </respStmt>
-      </titleStmt>
-      <editionStmt resp="Galenus_verbatim">
-        <edition>Revised edition of the originally published versions of the electronic texts.</edition>
-        <respStmt>
-          <resp></resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
-        </respStmt>
-        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
-      </editionStmt>
-      <publicationStmt>
+       </titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">Revised edition of the originally published versions of the electronic texts.
+<date type="revision" when="2024">2024</date>
+</edition>
+<respStmt>
+<!-- paragraphe à vérifier pour chaque édition -->
+<resp>To reuse this edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We changed the naming schemes of the milestones indicating the corresponding Kühn pages or added such milestones when they were missing. The layout of the original edition was marked up by &lt;pb&gt; and &lt;lb&gt; elements when they were missing. We also added elements specific to critical editions, that were present in this edition but were missing in the TEI, mainly chevrons and hooks. For details, see the revisionDesc section.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp>Lead Developer, Optéos</resp>
+<persName>Frédéric Glorieux</persName>
+</respStmt>
+<respStmt>
+<resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<!-- à vérifier pour chaque édition -->
+<respStmt>
+<resp from="2023" to="2024">Text verification and correction, Galenus verbatim</resp>
+<persName>
+</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+</editionStmt>
+<publicationStmt>
         <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
         <publisher>University of Leipzig</publisher>
         <pubPlace>Germany</pubPlace>
@@ -65,7 +98,7 @@
           <monogr>
             <title xml:lang="lat">Galeni Institutio logica</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kalbfleisch, Karl</editor>
+            <editor role="editor">Kalbfleisch, Karl</editor>
             <imprint>
               <publisher>B. G. Teubner</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -82,14 +115,57 @@
       <refsDecl n="CTS">
         <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type is systematically specified with a rend value.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<normalization>
+<p>Symbols are maintained as they appear within the printed text.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change who="Galenus_verbatim">All the indentations have been reinstated.</change>
+      <!-- à vérifier pour chaque édition -->
+      <change who="#Galenus_verbatim" when="2024">All the chevrons and hooks have been respectively replaced by &lt;supplied&gt; and &lt;del&gt;.</change>
+      <!-- à vérifier pour chaque édition -->
+      <change who="#Galenus_verbatim" when="2024">The layout of the original edition has been marked up by &lt;pb&gt; and &lt;lb&gt; elements.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -102,14 +178,14 @@
           <head>ΓΑΛΗΝΟΥ
 <lb/>ΕΙΣΑΓΩΓΗ ΔΙΑΛΕΚΤΙΚΗ
 </head>
-          <p rend="indent">
+<p rend="indent">
 <lb n="1"/>(Τῶν φαινομένων τὰ μὲν αἰσθήσει γιγνώ)σκομεν
-<lb n="2"/>ἅπαντες ἄνθρωποι, τὰ δὲ νοήσει μόνῃ, καὶ 〈ταῦ〉τα
+<lb n="2"/>ἅπαντες ἄνθρωποι, τὰ δὲ νοήσει μόνῃ, καὶ <supplied reason="omitted">ταῦ</supplied>τα
 <lb n="3"/><milestone unit="lineno" n="5"/>(μὲν ἀναποδείκτως, τὰ δὲ μή)τε αἰσθήσει μήτε νοήσει
 <lb n="4"/>γιγνωσκόμενα δι’ ἀποδείξεως. <milestone unit="subchapter" n="2"/> (δεῖ δὲ τῶν δι’ ἀποδείξεως
 <lb n="5"/>γιγνωσκομένων) ἐκ προγιγνωσκομένων εἶναι τὴν
 <lb n="6"/>εὕρεσιν, οὐ μὴν ἁπλῶς γ’ οὕτως (ἐκ τῶν ἐπιτυχόντων),
-<lb n="7"/>ἀλλ’ ἐκ τῶν οἰκείων 〈τῷ〉 ἀποδειχθησομένῳ, ἐπειδὴ
+<lb n="7"/>ἀλλ’ ἐκ τῶν οἰκείων <supplied reason="omitted">τῷ</supplied> ἀποδειχθησομένῳ, ἐπειδὴ
 <lb n="8"/><milestone unit="lineno" n="10"/>καὶ ἐκ λό(γου τινὸς οἰκείου πείσομεν τὸν ἀναγ)κασθησόμενον
 <lb n="9"/>τὸν λόγον τοῦτον ὑπὲρ ἑκάστου τῶν ἀπο(ρουμένων
 <lb n="10"/>συγχωρεῖν·) οἷον εἰ οὕτως ἔτυχεν ὁμολογήσομεν
@@ -122,7 +198,7 @@
 <lb n="2"/>τριῶν συνίστα)ται, πρώτου μὲν τοῦ πρώτου ῥηθέντος,
 <lb n="3"/>ὅπερ ἦν "ἴσος ἐστὶ (Δίωνι Θέων", δευτέρου δὲ τοῦ
 <lb n="4"/>μετ’ α)ὐτό "Δίωνι Φίλων ἐστὶν ἴσος" καὶ τρίτου πρὸς
-<lb n="5"/>τούτοις 〈τοῦ〉 ‘τὰ (τῷ αὐτῷ ἴσα καὶ ἀλλήλοις ἐστὶν
+<lb n="5"/>τούτοις <supplied reason="omitted">τοῦ</supplied> ‘τὰ (τῷ αὐτῷ ἴσα καὶ ἀλλήλοις ἐστὶν
 <lb n="6"/>ἴ)σα·’ περανθήσεται δὲ ἐξ αὐτῶν ἴσος εἶναι Θέων
 <lb n="7"/>(Φίλωνι. <milestone unit="subchapter" n="4"/> καὶ ἔστι τοῦτο μὲν τὸ καλούμ)ενον συμπέρασμα,
 <lb n="8"/>λῆμμα δὲ ἐξ ὧν ληφθέντων (ἐκεῖνο συμπεραίνεται·
@@ -135,7 +211,7 @@
 <lb n="15"/>τῆς τῶν ὄντων φύσεως, ὀνομαζέσθω πρότασις (τοῦτο·
 <lb n="16"/>οὕτω γὰρ καὶ τοῖς παλαιοῖ)ς ἔθος ἦν καλεῖν· (εἰ δὲ
 <lb n="17"/>τῇ νοήσει τίς ἐστιν ἐξ αὑτοῦ) πιστὸς λόγος, ἀξίωμα
-<lb n="18"/>κεκλήκασι, καθάπερ 〈τὸ〉 ‘τὰ τῷ αὐτῷ (ἴσα καὶ ἀλλήλοις
+<lb n="18"/>κεκλήκασι, καθάπερ <supplied reason="omitted">τὸ</supplied> ‘τὰ τῷ αὐτῷ (ἴσα καὶ ἀλλήλοις
 <lb n="19"/>ἐστὶν ἴσα’· <milestone unit="ed1page" n="5"/> τοῖς δὲ κοινῶς ἅπαντας τοὺς
 <lb n="20"/>ἀποφαντι)κοὺς λόγους ἀξιώματα προσαγορεύουσιν οὐ
 <lb n="21"/>διενεχθή(σ)ῃ, <milestone unit="ms1folio" n="4r"/> μαθὼν δ’ αὐτῶν τὸ ἔθος οὕτως
@@ -145,25 +221,25 @@
         <pb n="5"/>
         <div type="textpart" subtype="chapter" n="2" xml:id="_2">
           <p rend="indent">
-<lb n="1"/>〈Τῶν δὲ προτάσεων〉 ἔνιαι μὲν ὑπὲρ ἁπλῆς
+<lb n="1"/><supplied reason="omitted">Τῶν δὲ προτάσεων</supplied> ἔνιαι μὲν ὑπὲρ ἁπλῆς
 <lb n="2"/>ὑπάρξεως ἀποφαίνονται, καθάπερ ὁπόταν εἴπῃς ‘πρόνοια
-<lb n="3"/>ἔστιν· ἱπποκένταυρος οὐκ ἔστιν’ [αἴνιγμα] ἢ 〈περὶ
-<lb n="4"/>τῆς οὐσίας, καθάπερ〉 αἱ τοιαίδε ‘ὁ ἀὴρ σῶμά ἐστιν·
+<lb n="3"/>ἔστιν· ἱπποκένταυρος οὐκ ἔστιν’ [αἴνιγμα] ἢ <supplied reason="omitted">περὶ
+<lb n="4"/>τῆς οὐσίας, καθάπερ</supplied> αἱ τοιαίδε ‘ὁ ἀὴρ σῶμά ἐστιν·
 <lb n="5"/>ὁ ἀὴρ οὐκ ἔστι σῶμα’, ὑπὲρ δὲ τοῦ μεγέθους ‘ὁ ἥλιος
-<lb n="6"/>〈ποδιαῖός ἐστιν· ὁ ἥλιος〉 οὐκ ἔστι ποδιαῖος’, ἔνιαι δὲ
-<lb n="7"/>ὑπὲρ τῆς ποιότητος ‘ὁ ἥλιος 〈φύσει θερμός ἐστιν· ὁ
-<lb n="8"/>ἥλιος〉 οὐκ ἔστι φύσει θερμός’, ἔνιαι δὲ ὑπὲρ τοῦ 〈πρός〉
-<lb n="9"/>τι ‘μείζων ἐστὶν ὁ ἥλιος τῆς σελήνης· 〈οὐ μείζων ἐστὶν
-<lb n="10"/>ὁ ἥλιος τῆς σελήνης’〉, <milestone unit="ed1page" n="6"/> ἔνιαι δὲ ὑπὲρ τοῦ ποτέ ‘κατὰ
+<lb n="6"/><supplied reason="omitted">ποδιαῖός ἐστιν· ὁ ἥλιος</supplied> οὐκ ἔστι ποδιαῖος’, ἔνιαι δὲ
+<lb n="7"/>ὑπὲρ τῆς ποιότητος ‘ὁ ἥλιος <supplied reason="omitted">φύσει θερμός ἐστιν· ὁ
+<lb n="8"/>ἥλιος</supplied> οὐκ ἔστι φύσει θερμός’, ἔνιαι δὲ ὑπὲρ τοῦ <supplied reason="omitted">πρός</supplied>
+<lb n="9"/>τι ‘μείζων ἐστὶν ὁ ἥλιος τῆς σελήνης· <supplied reason="omitted">οὐ μείζων ἐστὶν
+<lb n="10"/>ὁ ἥλιος τῆς σελήνης’</supplied>, <milestone unit="ed1page" n="6"/> ἔνιαι δὲ ὑπὲρ τοῦ ποτέ ‘κατὰ
 <lb n="11"/>τὰ Πελοποννησιακὰ γέγονεν Ἱπποκράτης’ ἢ ‘οὐ γέγονε
 <lb n="12"/>κατὰ τὰ Πελοποννησιακά’, ἔνιαι δὲ ὑπὲρ τοῦ ποῦ
 <lb n="13"/>‘δεύτερος ἀπὸ γῆς ἐστιν ὁ ἥλιος· οὐκ ἔστιν δεύτερος
 <lb n="14"/>ἀπὸ γῆς ὁ ἥλιος’, τινὲς δὲ ὑπὲρ τοῦ κεῖσθαι ‘καθήμενόν
-<lb n="15"/>ἐστι τὸ τοῦ Διὸς Ὀλυμπιᾶσιν ἄγαλμα· 〈οὐκ ἔστι
-<lb n="16"/>καθήμενον τὸ τοῦ Διὸς Ὀλυμπιᾶσιν ἄγαλμα’〉, τινὲς
-<lb n="17"/>〈δὲ ὑπὲρ τοῦ ἔχειν ‘ὑπο〉δέδεται τὸ τοῦ Διὸς ἄγαλμα·
-<lb n="18"/>〈οὐχ ὑποδέδεται τὸ τοῦ Διὸς ἄγαλμα’〉, τινὲς δὲ ὑπὲρ
-<lb n="19"/>τοῦ ποιεῖν ‘θερμαίνει τὸ ῥόδινον· 〈τὸ ῥόδινον〉 οὐ
+<lb n="15"/>ἐστι τὸ τοῦ Διὸς Ὀλυμπιᾶσιν ἄγαλμα· <supplied reason="omitted">οὐκ ἔστι
+<lb n="16"/>καθήμενον τὸ τοῦ Διὸς Ὀλυμπιᾶσιν ἄγαλμα’</supplied>, τινὲς
+<lb n="17"/><supplied reason="omitted">δὲ ὑπὲρ τοῦ ἔχειν ‘ὑπο</supplied>δέδεται τὸ τοῦ Διὸς ἄγαλμα·
+<lb n="18"/><supplied reason="omitted">οὐχ ὑποδέδεται τὸ τοῦ Διὸς ἄγαλμα’</supplied>, τινὲς δὲ ὑπὲρ
+<lb n="19"/>τοῦ ποιεῖν ‘θερμαίνει τὸ ῥόδινον· <supplied reason="omitted">τὸ ῥόδινον</supplied> οὐ
 <lb n="20"/>θερμαίνει’, ἔνιαι δὲ περὶ τοῦ πάσχειν ‘θερμαίνεσθαι
 <lb n="21"/>πεφύκαμεν ὑπὸ τοῦ ῥοδίνου· οὐ θερμαίνεσθαι πεφύκαμεν
 <lb n="22"/>ὑπὸ τοῦ ῥοδίνου’. <milestone unit="subchapter" n="2"/> τὰς τοιαύτας οὖν προτάσεις
@@ -202,7 +278,7 @@
 <lb n="6"/>καὶ ταύτην ὀνομάζομεν. <milestone unit="subchapter" n="6"/> ὅταν δὲ οὐσίας ὡρισμένης οὐ
 <lb n="7"/>κατὰ τὸ εἶδος μόνον, ἀλλὰ καὶ κατὰ τὸν ἀριθμὸν κατηγορῶμέν
 <lb n="8"/>τι, τότε οὐκ ἔτ’ ἐγχωρεῖ λέγειν οὔτε τὸ πᾶς
-<lb n="9"/>οὔτε τὸ τὶς οὔτε τὸ οὐ πᾶς οὔ〈τε τὸ οὐ〉δείς· ἐν γοῦν
+<lb n="9"/>οὔτε τὸ τὶς οὔτε τὸ οὐ πᾶς οὔ<supplied reason="omitted">τε τὸ οὐ</supplied>δείς· ἐν γοῦν
 <lb n="10"/>τῇ <milestone unit="ed1page" n="9"/> ‘Δίων ἄνθρωπός ἐστιν’ οὐδὲν τῶν εἰρημένων
 <lb n="11"/>οἷόν τε προσθεῖναι.
 </p>
@@ -216,11 +292,11 @@
 <lb n="16"/>προτάσεις, <milestone unit="ms1folio" n="4v"/> αἱ μέν, ὅταν τινὸς ἑτέρου ὄντος ἐξ
 <lb n="17"/>ἀνάγκης εἶναι λέγωσι τόδε τι, κατὰ συνέχειαν, αἱ δέ,
 <lb n="18"/>ὅταν ἤτοι μὴ ὄντος εἶναι ἢ [μὴ] ὄντος μὴ εἶναι, διαιρετικαί.
-<lb n="19"/><milestone unit="subchapter" n="2"/>λέγειν δὲ 〈εἶναι〉 ἢ ὑπάρχειν οὐ διαφέρει παρὰ
+<lb n="19"/><milestone unit="subchapter" n="2"/>λέγειν δὲ <supplied reason="omitted">εἶναι</supplied> ἢ ὑπάρχειν οὐ διαφέρει παρὰ
 <lb n="20"/>τοῖς Ἕλλησιν ἅπασι τοῖς τε νῦν καὶ τοῖς παλαιοῖς,
 <lb n="21"/>ὥσπερ οὐδὲ τὸ ὑφεστηκέναι· παρὰ τοῖς νῦν γὰρ καὶ τοῦτο
 <lb n="22"/>κατὰ τῆς αὐτῆς ἐννοίας λέγεται· ἐπεὶ δὲ τῶν αἰσθητῶν
-<lb n="23"/>πραγμάτων ἔχομεν μνήμας, ὅταν μὲν 〈κατὰ〉 κινήσεις
+<lb n="23"/>πραγμάτων ἔχομεν μνήμας, ὅταν μὲν <supplied reason="omitted">κατὰ</supplied> κινήσεις
 <pb n="8"/>
 <lb n="1"/>ταύτας ποιησώμεθα καθάπερ εἰ τύχοι Ἀθηναίων,
 <lb n="2"/>ὀνομαζέσθω τοῦτο ἡμῖν νόησις, ὅταν δὲ ἡσυχάζουσαι
@@ -231,9 +307,9 @@
 <lb n="7"/>τὴν ἔννοιαν νόησιν ὀνομάζουσιν οἱ Ἕλληνες. <milestone unit="subchapter" n="3"/> μάλιστα
 <lb n="8"/>μὲν οὖν ἐπειδὰν ὑπάρχον τι πιστεύηται δι’ ἕτερον
 <lb n="9"/>ὑπάρχειν ἢ κατὰ συνέχειαν, ὑποθετικὴ <milestone unit="ed1page" n="10"/> πρὸς τῶν
-<lb n="10"/>παλαιῶν φιλοσόφων ὀνομάζεται 〈ἡ〉 πρότασις, ἤδη δὲ
+<lb n="10"/>παλαιῶν φιλοσόφων ὀνομάζεται <supplied reason="omitted">ἡ</supplied> πρότασις, ἤδη δὲ
 <lb n="11"/>καὶ ἐπειδὰν [μέντοι] διότι μὴ ἔστι τόδε, εἶναι τόδε
-<lb n="12"/>νοῶμεν, οἷον 〈ὅτι〉 νὺξ οὐκ ἔστιν, ἡμέραν εἶναι· μάλιστα
+<lb n="12"/>νοῶμεν, οἷον <supplied reason="omitted">ὅτι</supplied> νὺξ οὐκ ἔστιν, ἡμέραν εἶναι· μάλιστα
 <lb n="13"/>μὲν οὖν ὀνομάζουσι τὴν τοιαύτην πρότασιν
 <lb n="14"/>διαιρετικήν, οὐ μὴν ἀλλὰ καὶ διεζευγμένον ἀξίωμά τισι
 <lb n="15"/>τῶν νεωτέρων φιλοσόφων ὀνομάζεται, καθάπερ γε καὶ
@@ -243,7 +319,7 @@
 <lb n="19"/>ἃς δηλονότι διαιρετικὰς προτάσεις ἔφαμεν ὀνομάζεσθαι,
 <lb n="20"/>διὰ τοῦ ἤτοι συνδέσμου — διαφέρει δὲ οὐδὲν ‘ἤ’ διὰ
 <lb n="21"/>μιᾶς συλλαβῆς λέγειν ἢ διὰ δυοῖν — (ἢ) τοῖς συνημμένοις
-<lb n="22"/>διὰ τοῦ εἰ 〈ἢ ἐπεί,〉 εἴπερ ἓν καὶ οὗτοι σημαίνουσιν.
+<lb n="22"/>διὰ τοῦ εἰ <supplied reason="omitted">ἢ ἐπεί,</supplied> εἴπερ ἓν καὶ οὗτοι σημαίνουσιν.
 <pb n="9"/>
 <lb n="1"/><milestone unit="subchapter" n="4"/>ὡς ὀνομάζεσθαι τὸν μὲν τοιοῦτον λόγον ‘ει’
 <lb n="2"/>ἡμέρα ἐστίν, ὁ ἥλιος ὑπὲρ γῆς ἐστιν’ συνημμένον
@@ -274,29 +350,29 @@
 <lb n="23"/>δύνασθαι, τισὶ δὲ καὶ τοῦθ’ ὑπάρχειν· ὅταν
 <lb n="24"/>οὖν ἓν μόνον αὐτοῖς τὸ μὴ συνυπάρχειν, ἐλλιπής ἐστιν
 <pb n="10"/>
-<lb n="1"/>ἡ μάχη, ὅταν δὲ (καὶ) τοῦτο τὸ 〈μὴ〉 συναπόλλυσθαι,
+<lb n="1"/>ἡ μάχη, ὅταν δὲ (καὶ) τοῦτο τὸ <supplied reason="omitted">μὴ</supplied> συναπόλλυσθαι,
 <lb n="2"/>τελεία· τῶν γὰρ τοιούτων πραγμάτων ἀνάγκη δυοῖν
 <lb n="3"/>θάτερον οὐκ εἶναι. <milestone unit="subchapter" n="3"/> διὸ καὶ συλλογισμὸς <milestone unit="ed1page" n="12"/> αὐτοῖς
 <lb n="4"/>διττός, εἰ μὲν προσληφθείη τὸ ἡμέραν εἶναι περαινομένου
 <lb n="5"/>τοῦ μὴ <milestone unit="ms1folio" n="5r"/> εἶναι νύκτα, προσληφθέντος δὲ τοῦ μὴ
 <lb n="6"/>εἶναι ἡμέραν, τοῦ νύκτα εἶναι· κατὰ δὲ τὴν ἐλλιπῆ μάχην
-<lb n="7"/>ἓν μόνον 〈ἔστ〉ι προσλαβόν〈τα〉 τῶν κατὰ τὴν μάχην
+<lb n="7"/>ἓν μόνον <supplied reason="omitted">ἔστ</supplied>ι προσλαβόν<supplied reason="omitted">τα</supplied> τῶν κατὰ τὴν μάχην
 <lb n="8"/>ἀναιρεῖν θάτερον· ὃ δ’ ἂν οὕτως προσλαμβάνῃς ἀξίωμα,
-<lb n="9"/>πρόληψις εἰκότως ὀνομάζεται. <milestone unit="subchapter" n="4"/> ἐπὶ μὲν 〈οὖν〉 τῆς ἐλλειπούσης
+<lb n="9"/>πρόληψις εἰκότως ὀνομάζεται. <milestone unit="subchapter" n="4"/> ἐπὶ μὲν <supplied reason="omitted">οὖν</supplied> τῆς ἐλλειπούσης
 <lb n="10"/>μάχης ἐν ἔθει τοῖς Ἕλλησίν ἐστιν οὕτω λέγειν
-<lb n="11"/>‘〈οὐκ ἔστιν〉 Ἀθήνησί τε καὶ Ἰσθμοῖ Δίων’ ἐνδεικτικήν
+<lb n="11"/>‘<supplied reason="omitted">οὐκ ἔστιν</supplied> Ἀθήνησί τε καὶ Ἰσθμοῖ Δίων’ ἐνδεικτικήν
 <lb n="12"/>τε ἕξει τὴν τοιαύτην φωνήν, ὅσοις τῆς ἐλλιποῦς
-<lb n="13"/>〈μέτεστι〉 μάχης· εἰ δὲ ἐφ’ ἑτέρων λέγοιτο φωνῶν 〈ἃ〉
+<lb n="13"/><supplied reason="omitted">μέτεστι</supplied> μάχης· εἰ δὲ ἐφ’ ἑτέρων λέγοιτο φωνῶν <supplied reason="omitted">ἃ</supplied>
 <lb n="14"/>μήτε ἀκολουθίαν ἔχει πρὸς ἄλληλα μήτε μάχην [ἀποφατικήν],
 <lb n="15"/>συμπεπλεγμένον καλέσομεν τὸ τοιοῦτον
 <lb n="16"/>ἀξίωμα, καθάπερ ἐπὶ τοῦ ‘Δίων περιπατεῖ καὶ Θέων
 <lb n="17"/>διαλέγεται’· ταυτὶ γὰρ οὔτε μάχην οὔτε ἀκολουθίαν
-<lb n="18"/><milestone unit="subchapter" n="5"/>ἔχοντα κατὰ συμπλοκὴν ἑρμηνεύε〈τα〉ι. διὸ κἀπειδὰν
+<lb n="18"/><milestone unit="subchapter" n="5"/>ἔχοντα κατὰ συμπλοκὴν ἑρμηνεύε<supplied reason="omitted">τα</supplied>ι. διὸ κἀπειδὰν
 <lb n="19"/>ἀποφάσκωμεν αὐτά, τὸν λόγον ἐκεῖνον ἤτοι γε ἀποφατικὴν
 <lb n="20"/>συμπλοκὴν ἢ ἀποφατικὸν εἶναι συμπεπλεγμένον
 <pb n="11"/>
 <lb n="1"/>φήσομεν· οὐδὲν γὰρ πρὸς τὸ παρὸν διαφέρει
-<lb n="2"/>συμπεπλεγμένον λέγειν ἀποφατικὸν ἢ συμπλοκὴν 〈ἀποφατικήν〉,
+<lb n="2"/>συμπεπλεγμένον λέγειν ἀποφατικὸν ἢ συμπλοκὴν <supplied reason="omitted">ἀποφατικήν</supplied>,
 <lb n="3"/>ἔχοντός <milestone unit="ed1page" n="13"/> γέ σου σκοπὸν ἐν ἁπάσῃ λέξει
 <lb n="4"/>τὸ δηλῶσαι σαφῶς τοῖς πέλας ὅτιπερ ἂν αὐτὸς ἐννοῇς.
 <lb n="5"/>
@@ -307,7 +383,7 @@
 <lb n="9"/>ἐν οἷς μὲν σύγκειταί τις ἀκρίβεια διδασκαλίας
 <lb n="10"/>ἀμελῶς χρώμενοι τοῖς ὀνόμασιν, ἐν οἷς δὲ οὐδὲν διαφέρον
 <lb n="11"/>αἱ φωναὶ σημαίνουσιν αὐτοὶ νομοθετοῦντες ἴδια
-<lb n="12"/>σημαινόμενα· οἱ δὲ οὐχ οὕτως χρή〈σαιντ’ ἂν〉 τοῖς
+<lb n="12"/>σημαινόμενα· οἱ δὲ οὐχ οὕτως χρή<supplied reason="omitted">σαιντ’ ἂν</supplied> τοῖς
 <lb n="13"/>ὀνόμασιν, εἴπερ Ἑλληνίζειν τε καὶ σαφεῖς εἶναι τοῖς
 <lb n="14"/>ἀκούουσι βούλοιντο. <milestone unit="subchapter" n="7"/> αὐτίκα γε τὸ ἀκόλουθον ἐάν τε
 <lb n="15"/>οὕτως ὡς εἴρηται νῦν λέγῃς ἐάν τε ἑπόμενον ἢ συνηρτημένον,
@@ -327,7 +403,7 @@
 <pb n="12"/>
 <lb n="1"/>διεζευγμένα καλεῖν, τὰ δὲ τὴν ἐλλιπῆ παραπλήσια
 <lb n="2"/>διεζευγμένοις· παραπλήσια δὲ λέγειν ἢ ὅμοια διαφερέτω
-<lb n="3"/>μηδέν· 〈ἐν〉 ἐνίοις <milestone unit="ed1page" n="14"/> δ’ ἀξιώμασιν ἐγχωρεῖ μὲν εἶναι
+<lb n="3"/>μηδέν· <supplied reason="omitted">ἐν</supplied> ἐνίοις <milestone unit="ed1page" n="14"/> δ’ ἀξιώμασιν ἐγχωρεῖ μὲν εἶναι
 <lb n="4"/>καὶ πλείω καὶ πάντα, μὴ μόνον ἕν, ἀναγκαῖον δ’ ἐστὶ
 <lb n="5"/>τὸ ἓν ὑπάρχειν· ὀνομάζουσι δὲ ἔνιοι τὰ τοιαῦτα παραδιεζευγμένα,
 <lb n="6"/>τῶν διεζευγμένων ἓν μόνον ἐχόντων ἀληθές,
@@ -345,10 +421,10 @@
 <lb n="18"/>δὲ τὰ ἄλλα. <milestone unit="subchapter" n="3"/> κατὰ μὲν οὖν τὴν τελείαν μάχην <milestone unit="ms1folio" n="5v"/> δύο
 <lb n="19"/>συστήσονται συλλογισμοὶ προσλαμβανόντων ἡμῶν ἤτοι
 <lb n="20"/>γε ὑπάρχειν ἢ μὴ <milestone unit="ed1page" n="15"/> ὑπάρχειν τὸ ἕτερον αὐτῶν, ἐπιφερόντων
-<lb n="21"/>δὲ θάτερον οὐχ ὑπάρχειν 〈μὲν ὅταν ὑπάρχῃ
-<lb n="22"/>τὸ ἕτερον, ὑπάρχειν〉 δὲ ὅταν οὐχ ὑπάρχῃ· κατὰ δὲ
+<lb n="21"/>δὲ θάτερον οὐχ ὑπάρχειν <supplied reason="omitted">μὲν ὅταν ὑπάρχῃ
+<lb n="22"/>τὸ ἕτερον, ὑπάρχειν</supplied> δὲ ὅταν οὐχ ὑπάρχῃ· κατὰ δὲ
 <lb n="23"/>τὴν ἐλλιπῆ μία μὲν ἡ πρόσληψις, ἕν τι τῶν μαχομένων
-<lb n="24"/>ὑπάρχειν, ἓν δὲ καὶ τὸ συμπέρασμα 〈μὴ〉 ὑπάρχειν τὸ
+<lb n="24"/>ὑπάρχειν, ἓν δὲ καὶ τὸ συμπέρασμα <supplied reason="omitted">μὴ</supplied> ὑπάρχειν τὸ
 <pb n="13"/>
 <lb n="1"/>λοιπόν. <milestone unit="subchapter" n="4"/> οὕτω μὲν ὅταν ἐκ δυοῖν ἡ μάχη συνεστήκῃ·
 <lb n="2"/>πλειόνων δὲ τῶν μαχομένων ὄντων ἐπὶ μὲν τῆς τελείας
@@ -356,8 +432,8 @@
 <lb n="4"/>λοιπὸν ἅπαν ἢ ἐκεῖνο πᾶν ἀποφήσομεν, ὑπάρχειν ἐροῦντες
 <lb n="5"/>τὸ ἕν, οὐ μὴν οὔτε ἀποφήσαντες τὸ ἓν ἐάσομεν
 <lb n="6"/>ὑπάρχειν τὸ λοιπὸν οὔτε καταφήσαντες ἐκεῖνο τὸ ἓν
-<lb n="7"/>〈ἀποφήσομεν〉 ὑπάρχειν· ἐπὶ δὲ τῆς ἐλλιποῦς μάχης
-<lb n="8"/>ὑπάρχειν εἰπόντες 〈ἕν τι〉 ἀποφήσομεν τὸ λοιπὸν πλῆθος,
+<lb n="7"/><supplied reason="omitted">ἀποφήσομεν</supplied> ὑπάρχειν· ἐπὶ δὲ τῆς ἐλλιποῦς μάχης
+<lb n="8"/>ὑπάρχειν εἰπόντες <supplied reason="omitted">ἕν τι</supplied> ἀποφήσομεν τὸ λοιπὸν πλῆθος,
 <lb n="9"/>οὐ μὴν ἄλλην γέ τινα πρόσληψιν ἕξομεν ἐπιτηδείαν
 <lb n="10"/>εἰς συλλογισμόν. <milestone unit="subchapter" n="5"/> ἐπὶ δὲ τῆς κατὰ συνέχειαν
 <lb n="11"/>ὑποθετικῆς προτάσεως, ἣν οἱ περὶ τὸν Χρύσιππον ὀνομάζουσι
@@ -376,17 +452,17 @@
 <lb n="20"/>αὐτῶν εἶναι μὲν τὸ ἕτερον, οὐκ εἶναι δὲ θάτερον. <milestone unit="subchapter" n="2"/> ἐπὶ
 <lb n="21"/>μὲν οὖν τῶν ὑποθετικῶν προτάσεων ἀποφάσει πλεονεκτεῖ
 <lb n="22"/>τὸ ἕτερον αὐτῶν, ἐπὶ δὲ τῶν κατηγορικῶν ἔνθα
-<lb n="23"/>μὲν πρόσκειται τὸ πᾶς, 〈προτάξομεν〉 ἀπόφασιν τούτου·
+<lb n="23"/>μὲν πρόσκειται τὸ πᾶς, <supplied reason="omitted">προτάξομεν</supplied> ἀπόφασιν τούτου·
 <lb n="24"/>κατ(ὰ δὲ) τὴν <milestone unit="ed1page" n="16"/> ‘Σωκράτης περιπατεῖ’ τοῦ κατηγορουμένου
 <lb n="25"/>προτάξομεν τὴν ἀπόφασιν, ὡς γενέσθαι τὸν
 <pb n="14"/>
 <lb n="1"/>λόγον τοιόνδε ‘Σωκράτης οὐ περιπατεῖ’· τῆς δὲ καθόλου
 <lb n="2"/>στερητικῆς οὐ δεησόμεθα προτάττειν ἀπόφασιν,
-<lb n="3"/>ἀντικειμένην ἔχοντες αὐ〈τῇ〉 τὴν ἐν μέρει καταφατικήν,
+<lb n="3"/>ἀντικειμένην ἔχοντες αὐ<supplied reason="omitted">τῇ</supplied> τὴν ἐν μέρει καταφατικήν,
 <lb n="4"/>ὥσπερ γε καὶ τῇ τοιαύτῃ καταφατικῇ τὴν καθόλου
-<lb n="5"/>στερητικήν, ὥστε 〈οὐδὲ〉 ταύτης ἀπόφασιν προτάξομεν.
+<lb n="5"/>στερητικήν, ὥστε <supplied reason="omitted">οὐδὲ</supplied> ταύτης ἀπόφασιν προτάξομεν.
 <lb n="6"/><milestone unit="subchapter" n="3"/>ὀνομάζονται δὲ αἱ τοιαῦται προτάσεις ἅπασαι σύνοροι,
-<lb n="7"/>διότι κοινωνοῦσι τοῖς ὅροις †ἀτοκίας· 〈ἀνα〉στρέφουσαι
+<lb n="7"/>διότι κοινωνοῦσι τοῖς ὅροις †ἀτοκίας· <supplied reason="omitted">ἀνα</supplied>στρέφουσαι
 <lb n="8"/>μὲν αὐτῶν πρὸς ἀλλήλας κατὰ τὴν ἐνάλλαξιν τῆς λέξεως
 <lb n="9"/>τῶν ὅρων, τουτέστιν ὅταν ὁ μὲν ὑποκείμενος γένηται
 <lb n="10"/>κατηγορούμενος, ὁ κατηγορούμενος δὲ ὑποκείμενος·
@@ -398,9 +474,9 @@
 <lb n="16"/>ἡ μὲν ἀναστροφὴ γίγνεται τῆς λέξεως τῶν ὅρων
 <lb n="17"/>ὑπαλλαττομένης, ἡ δὲ ἀντιστροφὴ μετὰ ἀντιθέσεως
 <lb n="18"/>αὐτῶν· τὸ γὰρ ‘εἰ ἡμέρα ἐστί, φῶς ἐστιν’ <milestone unit="ed1page" n="17"/> ἀναστρέφει
-<lb n="19"/>〈μὲν πρὸς τὸ〉 ‘εἰ φῶς ἐστιν, ἡμέρα ἐστίν’,
-<lb n="20"/>〈ἀντιστρέφει δὲ πρὸς τὸ ‘εἰ μὴ φῶς ἐστιν, οὐδὲ ἡμέρα
-<lb n="21"/><milestone unit="subchapter" n="5"/>ἐστί’.〉 τοιαύτη μὲν ἐν ταῖς προτάσεσιν ἡ ἀντιστροφή·
+<lb n="19"/><supplied reason="omitted">μὲν πρὸς τὸ</supplied> ‘εἰ φῶς ἐστιν, ἡμέρα ἐστίν’,
+<lb n="20"/><supplied reason="omitted">ἀντιστρέφει δὲ πρὸς τὸ ‘εἰ μὴ φῶς ἐστιν, οὐδὲ ἡμέρα
+<lb n="21"/><milestone unit="subchapter" n="5"/>ἐστί’.</supplied> τοιαύτη μὲν ἐν ταῖς προτάσεσιν ἡ ἀντιστροφή·
 <lb n="22"/>συλλογισμοὶ δὲ ἀλλήλοις ἀντιστρέφουσιν οἱ διλήμματοι
 <pb n="15"/>
 <lb n="1"/>ὧν ἓν λῆμμα κοινόν, τὸ δὲ λοιπὸν καθ’ ἕτερον ἀντίκειται
@@ -409,31 +485,31 @@
 <lb n="4"/>ἀλλὰ προσθήσομέν οἱ ‘ἢ πλείω’, τὸν ὅλον λόγον
 <lb n="5"/>
             <milestone unit="ms1folio" n="6r"/>ποιοῦντες τοιοῦτον ‘ἀντιστρέφει [δὲ] λόγος λόγῳ,
-<lb n="6"/>ὧν ἓν 〈ἢ〉 πλείω λήμματα κοινά, τὸ δὲ λοιπὸ(ν καθ’
+<lb n="6"/>ὧν ἓν <supplied reason="omitted">ἢ</supplied> πλείω λήμματα κοινά, τὸ δὲ λοιπὸ(ν καθ’
 <lb n="7"/>ἕτερο)ν ἀντίκειται τῷ τοῦ λοιποῦ συμπεράσματι’. <milestone unit="subchapter" n="6"/> καὶ
 <lb n="8"/>μὴν κἀπὶ τῶν τρόπων ὁμοίως ἔ(χει)· ὀνομάζουσι δὲ
 <lb n="9"/>τρόπον οἱ διαλεκτικοὶ τὰ τῶν λόγων σχήματα, οἷον
 <lb n="10"/>ἐπὶ μὲν τοῦ (ἐκ συνημ)μένου καὶ τοῦ ἡγουμένου τὸ
 <lb n="11"/>λῆγον περαίνοντος, ὃν ὁ Χρύσιππος ὀνομάζει πρῶτον
 <lb n="12"/>ἀναπόδεικτον, ὁ τοιοῦτος τρόπος ἐστίν ‘εἰ τὸ {α}, τὸ {β}·
-<lb n="13"/>τὸ δὲ {α}· τὸ ἄρα {β}’· ἐπὶ δὲ τοῦ ἐκ συνημμένου 〈καὶ
-<lb n="14"/>τοῦ〉 ἀντικειμένου τῷ εἰς ὃ λήγει τὸ τοῦ ἡγουμένου
+<lb n="13"/>τὸ δὲ {α}· τὸ ἄρα {β}’· ἐπὶ δὲ τοῦ ἐκ συνημμένου <supplied reason="omitted">καὶ
+<lb n="14"/>τοῦ</supplied> ἀντικειμένου τῷ εἰς ὃ λήγει τὸ τοῦ ἡγουμένου
 <lb n="15"/>ἀντικείμενον ἐπιφέροντος, ὃν καὶ αὐτὸν ὁ <milestone unit="ed1page" n="18"/> Χρύσιππος
 <lb n="16"/>δεύτερον ἀναπόδεικτον ὀνομάζει, τοιοῦτός [δ’] ἐστιν
 <lb n="17"/>‘εἰ τὸ {α}, τὸ {β}· οὐχὶ δὲ τὸ δεύτερον· οὐκ ἄρα τὸ πρῶτον’,
 <lb n="18"/>ὥσπερ γε κἀπὶ τοῦ τρίτου κατὰ τοῦτον, ὃς ἐξ
 <lb n="19"/>ἀποφατικοῦ συμπεπλεγμένου καὶ ἑνὸς τῶν ἐν αὐτῷ τὸ
 <lb n="20"/>ἀντικείμενον τοῦ λοιποῦ παρέχει, τοιοῦτος ὁ τρόπος
-<lb n="21"/>ἐστίν ‘οὐχ ἅμα τὸ {α} καὶ τὸ {β}· 〈τὸ δὲ {α}· οὐκ ἄρα τὸ {β}〉’·
+<lb n="21"/>ἐστίν ‘οὐχ ἅμα τὸ {α} καὶ τὸ {β}· <supplied reason="omitted">τὸ δὲ {α}· οὐκ ἄρα τὸ {β}</supplied>’·
 <lb n="22"/>ὁμοίως δὲ κἀπὶ τοῦ τετάρτου κατὰ τὸν αὐτόν, ὃς ἐκ
 <pb n="16"/>
 <lb n="1"/>διεζευγμένου καὶ ἑνὸς τῶν ἐν αὐτῷ τοῦ λοιποῦ τὸ
 <lb n="2"/>ἀντικείμενον ἐπιφέρει, τοιοῦτός τις ὁ τρόπος ἐστίν
 <lb n="3"/>‘ἤτοι τὸ {α} ἢ τὸ {β}· τὸ δὲ [{ε}] {α}· οὐκ ἄρα τὸ {β}’· καὶ
-<lb n="4"/>τοίνυν κἀπὶ τοῦ πέμπτου, ὃς 〈ἐκ〉 διεζευγμένου καὶ
+<lb n="4"/>τοίνυν κἀπὶ τοῦ πέμπτου, ὃς <supplied reason="omitted">ἐκ</supplied> διεζευγμένου καὶ
 <lb n="5"/>τοῦ ἀντικειμένου ἑνὸς τῶν ἐν αὐτῷ τὸ λοιπὸν ἐπιφέρει,
 <lb n="6"/>τοιοῦτός [δέ] ἐστιν ὁ τρόπος <milestone unit="ed1page" n="19"/> ‘ἤτοι τὸ {α} ἢ τὸ {β}·
-<lb n="7"/>〈οὐχὶ δὲ τὸ {α}· τὸ ἄρα {β}〉’· καὶ τοίνυν ὥσπερ τὰ λήμματα
+<lb n="7"/><supplied reason="omitted">οὐχὶ δὲ τὸ {α}· τὸ ἄρα {β}</supplied>’· καὶ τοίνυν ὥσπερ τὰ λήμματα
 <lb n="8"/>συναληθεύεται κατὰ τὴν ἀντιστροφήν, οὕτω καὶ
 <lb n="9"/>τοῖς ἀληθέσι λόγοις καὶ τρόποις ὑπάρχει συλλογιστικοῖς
 <lb n="10"/>εἶναι, ὥστε τὸν ἀντιστρέφοντα τῷ συλλογιστικῷ
@@ -442,8 +518,8 @@
 <lb n="13"/>γίγνονται, δέδεικται πλὴν ἑνὸς τρόπου τοῦ κατὰ
 <lb n="14"/>τὸ παραδιεζευγμένον, ἐφ’ οὗ διττὴ τῶν προσλήψεών
 <lb n="15"/>ἐστιν ἡ διαφορά· ἤτοι γὰρ οὐχ ὑπάρχειν ἅπαντα πλὴν
-<lb n="16"/>ἑνὸς προσλαβόντες ὑπάρχειν ἐροῦμεν ἐκεῖνο τὸ ἓν 〈ἢ
-<lb n="17"/>εἰ προσλάβοι τις οὐχ ὑπάρχειν τὸ ἕν,〉 πλείω καταλίποιτ’
+<lb n="16"/>ἑνὸς προσλαβόντες ὑπάρχειν ἐροῦμεν ἐκεῖνο τὸ ἓν <supplied reason="omitted">ἢ
+<lb n="17"/>εἰ προσλάβοι τις οὐχ ὑπάρχειν τὸ ἕν,</supplied> πλείω καταλίποιτ’
 <lb n="18"/>ἄρα, διεζευγμένον ἐξ αὐτῶν ἔσται συμπέρασμα.
 </p>
         </div>
@@ -451,12 +527,12 @@
           <p rend="indent">
 <lb n="19"/>Κατὰ μὲν δὴ τοὺς τοιούτους συλλογισμοὺς αἱ προτάσεις
 <lb n="20"/>ἡγεμονικαὶ τῶν προσλήψεων· οὔτε γὰρ ἐν τῷ
-<lb n="21"/>διεζευγμένῳ 〈πλείους ἢ δύο γίγνονται προσλήψεις
-<lb n="22"/>οὔτ’ ἐν τῷ παραδιεζευγμένῳ〉, κατὰ δὲ τὴν ἐλλιπῆ
+<lb n="21"/>διεζευγμένῳ <supplied reason="omitted">πλείους ἢ δύο γίγνονται προσλήψεις
+<lb n="22"/>οὔτ’ ἐν τῷ παραδιεζευγμένῳ</supplied>, κατὰ δὲ τὴν ἐλλιπῆ
 <lb n="23"/>μάχην ἓν μόνον οἷόν τε προσλαμβάνειν· ὅπερ οἱ περὶ
 <pb n="17"/>
 <lb n="1"/>Χρύσιππον οὐχ ἡγεμονικὰ μόνον ἀλλὰ καὶ τροπικὰ
-<lb n="2"/>〈τὰ〉 τοιαῦτα τῶν ἀξιωμάτων ὀνομάζουσιν ὡς ἂν ἐπ’
+<lb n="2"/><supplied reason="omitted">τὰ</supplied> τοιαῦτα τῶν ἀξιωμάτων ὀνομάζουσιν ὡς ἂν ἐπ’
 <lb n="3"/>αὐτοῖς ὅλου τοῦ συλλογισμοῦ πηγνυμένου καθάπερ ἐπὶ
 <lb n="4"/>τρόπιδι νεώς. <milestone unit="subchapter" n="2"/> καὶ μέντοι καὶ τῶν ἐκ τοῦ Περιπάτου
 <lb n="5"/>τινὲς ὥσπερ καὶ Βόηθος οὐ μόνον ἀναποδείκτους ὀνομάζουσι
@@ -486,25 +562,25 @@
 <lb n="2"/><milestone unit="subchapter" n="5"/>ἑτέρου συμπλέκειν αὐτὸ βουληθῇ. δυνατὸν <milestone unit="ed1page" n="21"/> μὲν
 <lb n="3"/>γὰρ αὐτῷ καὶ τοιαύτην πρότασιν τῇ προτέρᾳ προσθέντι
 <lb n="4"/>ποιῆσαι συλλογισμόν ‘πᾶν αἱρετὸν ἀγαθόν ἐστιν’·
-<lb n="5"/>ἔσται γὰρ ὁ συλλογισμός ‘ἅπαν καλὸν αἱρετόν 〈ἐστι·
-<lb n="6"/>πᾶν αἱρετὸν〉 ἀγαθόν ἐστι· 〈πᾶν ἄρα καλὸν ἀγαθόν
-<lb n="7"/>ἐστι〉’· δυνατὸν δὲ καὶ πᾶν [καλὸν] ὁτιοῦν ἄλλο κατηγορήσαντι
+<lb n="5"/>ἔσται γὰρ ὁ συλλογισμός ‘ἅπαν καλὸν αἱρετόν <supplied reason="omitted">ἐστι·
+<lb n="6"/>πᾶν αἱρετὸν</supplied> ἀγαθόν ἐστι· <supplied reason="omitted">πᾶν ἄρα καλὸν ἀγαθόν
+<lb n="7"/>ἐστι</supplied>’· δυνατὸν δὲ καὶ πᾶν [καλὸν] ὁτιοῦν ἄλλο κατηγορήσαντι
 <lb n="8"/>τῶν † ἐρώντων ἐργάζεσθαι τὸν συλλογισμόν·
 <lb n="9"/>οὕτω δὲ καὶ θατέρῳ τῶν ὅρων τῷ ‘καλόν’ ἄλλον
 <lb n="10"/>ὅρον ὑποθέντι οἷόν τ’ ἐστὶ ποιήσασθαι συλλογισμόν,
 <lb n="11"/>οἷον οὕτως ‘ἡ δικαιοσύνη καλόν ἐστι· τὸ καλὸν αἱρετόν
-<lb n="12"/>ἐστιν· 〈ἡ δικαιοσύνη ἄρα αἱρετόν ἐστιν〉’. <milestone unit="subchapter" n="6"/> 〈οὕ〉τω μὲν
+<lb n="12"/>ἐστιν· <supplied reason="omitted">ἡ δικαιοσύνη ἄρα αἱρετόν ἐστιν</supplied>’. <milestone unit="subchapter" n="6"/> <supplied reason="omitted">οὕ</supplied>τω μὲν
 <lb n="13"/>οὖν προστιθεὶς τῇ πρώτῃ προτάσει τὴν δευτέραν τὸν
 <lb n="14"/>κοινὸν ὅρον ἐν ἀμφοτέραις τῷ μὲν ὑποκείμενον ἐργάσῃ,
 <lb n="15"/>θατέρου δὲ κατηγορούμενον· ἐγχωρεῖ δὲ καὶ οὕτω
 <lb n="16"/>προσθεῖναι τὴν πρότασιν ὥστε τὸν κοινὸν ὅρον ἀμφοτέρων
 <lb n="17"/>τῶν ὑπολοίπων κατηγορῆσαι, καθάπερ ἐν τοῖς
-<lb n="18"/>τοιούτοις ἔχει συλλογισμοῖς ‘πᾶν 〈καλὸν αἱρετόν ἐστιν·
+<lb n="18"/>τοιούτοις ἔχει συλλογισμοῖς ‘πᾶν <supplied reason="omitted">καλὸν αἱρετόν ἐστιν·
 <lb n="19"/>οὐ πᾶσα ἡδονὴ αἱρετόν ἐστιν· οὐ πᾶσα ἄρα ἡδονὴ καλόν
 <lb n="20"/>ἐστιν’· ἢ καὶ οὕτως ὥστ’ ἀμφοτέρους ἐκείνου
-<lb n="21"/>κατηγορῆσαι, καθάπερ ἐν τοῖς τοιούτοις ‘πᾶν〉 καλὸν
-<lb n="22"/>αἱρετόν ἐστι· <milestone unit="ed1page" n="22"/> πᾶν καλὸν ἐπαινετόν ἐστι· 〈τὶ ἄρα
-<lb n="23"/>ἐπαινετὸν αἱρετόν ἐστι.’〉 <milestone unit="subchapter" n="7"/> καὶ τοίνυν ἐκάλεσαν οἱ παλαιοὶ
+<lb n="21"/>κατηγορῆσαι, καθάπερ ἐν τοῖς τοιούτοις ‘πᾶν</supplied> καλὸν
+<lb n="22"/>αἱρετόν ἐστι· <milestone unit="ed1page" n="22"/> πᾶν καλὸν ἐπαινετόν ἐστι· <supplied reason="omitted">τὶ ἄρα
+<lb n="23"/>ἐπαινετὸν αἱρετόν ἐστι.’</supplied> <milestone unit="subchapter" n="7"/> καὶ τοίνυν ἐκάλεσαν οἱ παλαιοὶ
 <pb n="19"/>
 <lb n="1"/>φιλόσοφοι πρῶτον μὲν σχῆμα τῶν κατηγορικῶν
 <lb n="2"/>συλλογισμῶν ἐν ᾧπερ ἂν ὁ κοινὸς ὅρος ὑποκείμενος
@@ -518,8 +594,8 @@
 <lb n="10"/>γὰρ ὁ ἀποφασκόμενος [οὐ] κατηγορεῖται. <milestone unit="subchapter" n="9"/> λεγόντων οὖν
 <lb n="11"/>ἐν τῷ ‘τὸ καλὸν οὐκ ἔστι φευκτόν’ ὑποκεῖσθαι μὲν τὸ
 <lb n="12"/>καλόν, κατηγορεῖσθαι δὲ ἀποφατικῶς αὐτοῦ τὸ φευκτόν,
-<lb n="13"/>〈ἐν δὲ τῷ ‘τὸ καλὸν φευκτόν〉 ἐστι’ κατηγορεῖσθαι
-<lb n="14"/>αὐτοῦ καταφατικῶς τὸ φευκτόν, καὶ τοῦ 〈ἔθους〉 νενικηκότος
+<lb n="13"/><supplied reason="omitted">ἐν δὲ τῷ ‘τὸ καλὸν φευκτόν</supplied> ἐστι’ κατηγορεῖσθαι
+<lb n="14"/>αὐτοῦ καταφατικῶς τὸ φευκτόν, καὶ τοῦ <supplied reason="omitted">ἔθους</supplied> νενικηκότος
 <lb n="15"/>κατηγορικὰς μὲν ἀμφοτέρας ὀνομάζουσι τὰς
 <lb n="16"/>εἰρημένας προτάσεις καὶ δι’ <milestone unit="ed1page" n="23"/> αὐτὰς καὶ τοὺς συλλογισμοὺς
 <lb n="17"/>κατηγορικούς, οὐ μὴν καταφατικὰς ἀμφοτέρας,
@@ -539,7 +615,7 @@
 <pb n="20"/>
 <lb n="1"/>οὗτος γὰρ μόνος ἀποδείξεως δεῖται. <milestone unit="subchapter" n="3"/> ἐπὶ δὲ τῶν κατηγορικῶν
 <lb n="2"/>ἐν μὲν τῷ {α} σχήματι {δ} εἰσιν ἀναπόδεικτοι, ὅ τε ἐκ
-<lb n="3"/>δυοῖν καθόλου καταφατικῶν 〈καθόλου〉 καταφατικὸν ἐπιφέρων
+<lb n="3"/>δυοῖν καθόλου καταφατικῶν <supplied reason="omitted">καθόλου</supplied> καταφατικὸν ἐπιφέρων
 <lb n="4"/>συμπέρασμα — δῆλον δὲ ὅτι καὶ τὸ συμπέρασμα
 <lb n="5"/>πρότασίς τίς ἐστιν ἐκ τῆς πρὸς τὰ λήμματα σχέσεως
 <lb n="6"/>οὕτως ὠνομασμένη — καὶ δεύτερος ὁ ἐκ καθόλου στερητικῆς
@@ -548,7 +624,7 @@
 <lb n="9"/>συμπέρασμα καὶ τρίτος ὁ ἐκ καθόλου καταφατικῆς πρὸς
 <lb n="10"/>τῷ μείζονι καὶ ἐπὶ μέρους καταφατικῆς πρὸς τῷ ἐλάττονι
 <lb n="11"/>ἐπὶ μέρους καταφατικὸν ἔχων συμπέρασμα καὶ
-<lb n="12"/>λοιπὸς ὁ ἐκ καθόλου στερητικῆς 〈καὶ ἐπὶ μέρους καταφατικῆς〉
+<lb n="12"/>λοιπὸς ὁ ἐκ καθόλου στερητικῆς <supplied reason="omitted">καὶ ἐπὶ μέρους καταφατικῆς</supplied>
 <lb n="13"/>ἐν μέρει στερητικὸν ἐπιφέρων συμπέρασμα·
 <lb n="14"/>τῶν δὲ ἄλλων οὐκέτ’ οὐδεὶς ἀναπόδεικτός ἐστιν οὐδ’
 <lb n="15"/>ἐξ ἑαυτοῦ πιστός. <milestone unit="subchapter" n="4"/> (οἳ δὴ ἐν τοῖς ἄλλοις σχήμασιν)
@@ -566,7 +642,7 @@
 <lb n="22"/>ἀνάλυ(σιν) εἰς τὸν ἐν τῷ πρώτῳ σχήματι
 <lb n="23"/>δεύτερον ἔχει καθόλου στερητικὸν περαίνοντα. <milestone unit="subchapter" n="2"/> τούτῳ
 <pb n="21"/>
-<lb n="1"/>δ’ ἐφεξῆς 〈ὁ〉 ἰσοδύναμός πως αὐτῷ τὴν πρὸς τῷ μείζονι
+<lb n="1"/>δ’ ἐφεξῆς <supplied reason="omitted">ὁ</supplied> ἰσοδύναμός πως αὐτῷ τὴν πρὸς τῷ μείζονι
 <lb n="2"/>τῶν ὅρων καθόλου καταφατικὴν ἔχων πρότασιν,
 <lb n="3"/>τὴν δὲ ἑτέραν καθόλου στερητικὴν ἐξ ἀντιστροφῆς
 <lb n="4"/>δυοῖν, προτέρας μὲν τῆς καθόλου στερητικῆς προτάσεως,
@@ -577,7 +653,7 @@
 <lb n="9"/><milestone unit="subchapter" n="3"/>ὁ δὲ τρίτος ἐπ’ αὐτοῖς ἐκ καθόλου στερητικῆς καὶ ἐπὶ
 <lb n="10"/>μέρους καταφατικῆς ἀποφατικὸν ἐν μέρει ἐνδείκνυται,
 <lb n="11"/>παρ’ ἐνίων δι’ ἀντιστροφῆς τῆς καθόλου προτάσεως
-<lb n="12"/>ἀ〈να〉γόμενος εἰς τὸν ἐν τῷ πρώτῳ σχήματι τέταρτον.
+<lb n="12"/>ἀ<supplied reason="omitted">να</supplied>γόμενος εἰς τὸν ἐν τῷ πρώτῳ σχήματι τέταρτον.
 <lb n="13"/><milestone unit="subchapter" n="4"/>ὁ δ’ ὑπόλοιπος τῶν ἐν τῷ δευτέρῳ σχήματι συλλογισμῶν
 <lb n="14"/>ὁ τέταρτος ἐκ καθόλου καταφατικῆς καὶ ἐπὶ
 <lb n="15"/>μέρους ἀποφατικῆς ἐπὶ μέρους ἀποφατικὸν συνάγει
@@ -588,40 +664,40 @@
 <lb n="20"/>πρῶτον τοῦ μὲν <milestone unit="ed1page" n="25"/> δευτέρου παντός, τοῦ δὲ τρίτου
 <lb n="21"/>τινὸς οὔ· λέγω ὅτι περανθήσεται τὸ δεύτερον κατά
 <lb n="22"/>τινος (οὐ) τοῦ τρίτου· μὴ γὰρ ἀλλ’ εἰ δυνατόν, τὸ
-<lb n="23"/>ἀντικείμενον αὖ περαινέσθω τὸ κατὰ παντὸς 〈τοῦ
+<lb n="23"/>ἀντικείμενον αὖ περαινέσθω τὸ κατὰ παντὸς <supplied reason="omitted">τοῦ
 <pb n="22"/>
 <lb n="1"/>τρίτου λέγεσθαι τὸ δεύτερον· ἀλλὰ καὶ τὸ πρῶτον
-<lb n="2"/>κατὰ παντὸς〉 ἐλέγετο τοῦ {β·} τὸ ἄρα πρῶτον 〈κατὰ〉
+<lb n="2"/>κατὰ παντὸς</supplied> ἐλέγετο τοῦ {β·} τὸ ἄρα πρῶτον <supplied reason="omitted">κατὰ</supplied>
 <lb n="3"/>παντὸς δειχθήσεται τοῦ τρίτου, ὅπερ ἐστὶν ἄτοπον·
 <lb n="4"/>ὑπέκειτο γὰρ κατά τινος μὴ λέγεσθαι· οὐκ ἄρα κατὰ
 <lb n="5"/>παντὸς τοῦ τρίτου τὸ {β} κατηγορεῖται, ἀλλὰ κατὰ τινός.
 <lb n="6"/><milestone unit="subchapter" n="6"/>ἡ δὲ δι’ ἐκθέσεώς ἐστι τοιαύτη· ἐπεὶ μὴ κατηγορεῖταί
-<lb n="7"/>〈τινος τοῦ τρίτου τὸ πρῶτον, εἰλήφθω οὗ μὴ κατηγορεῖται〉
-<lb n="8"/>καὶ ἔστω τὸ τέταρτον· τὸ ἄρα πρῶτον οὐδεν〈ὸς
-<lb n="9"/>τοῦ {δ}〉 κατηγορεῖται, ἀλλὰ καὶ τοῦ δευτέρου παντὸς
+<lb n="7"/><supplied reason="omitted">τινος τοῦ τρίτου τὸ πρῶτον, εἰλήφθω οὗ μὴ κατηγορεῖται</supplied>
+<lb n="8"/>καὶ ἔστω τὸ τέταρτον· τὸ ἄρα πρῶτον οὐδεν<supplied reason="omitted">ὸς
+<lb n="9"/>τοῦ {δ}</supplied> κατηγορεῖται, ἀλλὰ καὶ τοῦ δευτέρου παντὸς
 <lb n="10"/>κατηγορεῖται· τὸ ἄρα δεύτερον οὐ πάντως τοῦ τετάρτου
 <lb n="11"/>κατηγορεῖται· τὸ δὲ τέταρτον τοῦ τρίτου <milestone unit="ed1page" n="26"/> τί ἐστιν·
-<lb n="12"/>ὥσ〈τε〉 τὸ {β΄} τινος τοῦ {γ} οὐ κατηγορηθήσεται.
+<lb n="12"/>ὥσ<supplied reason="omitted">τε</supplied> τὸ {β΄} τινος τοῦ {γ} οὐ κατηγορηθήσεται.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="10" xml:id="_10">
           <p rend="indent">
-<lb n="13"/>Τῶν 〈δ’〉 ἐν τῷ {γ} σχήματι συλλογισμῶν ὁ μὲν {α}
-<lb n="14"/>ἐκ δυοῖν προτάσεων καθόλου καταφατικῶν 〈ἐν μέρει
-<lb n="15"/>καταφατικὸν〉 ἔχει συμπέρασμα, δι’ ἀντιστροφῆς τῆς
+<lb n="13"/>Τῶν <supplied reason="omitted">δ’</supplied> ἐν τῷ {γ} σχήματι συλλογισμῶν ὁ μὲν {α}
+<lb n="14"/>ἐκ δυοῖν προτάσεων καθόλου καταφατικῶν <supplied reason="omitted">ἐν μέρει
+<lb n="15"/>καταφατικὸν</supplied> ἔχει συμπέρασμα, δι’ ἀντιστροφῆς τῆς
 <lb n="16"/>πρὸς τῷ ἐλάττονι τῶν ὅρων προτάσεως ἀναγόμενος εἰς
 <lb n="17"/>τὸν ἐν τῷ πρώτῳ σχήματι τρίτον. <milestone unit="subchapter" n="2"/> ὁ δὲ δεύτερος ἐκ
 <lb n="18"/>στερητικῆς καθόλου πρὸς τῷ μείζονι τῶν ὅρων, τῆς
-<lb n="19"/>〈δ’〉 ὑπολοίπου καθόλου καταφατικῆς, ἐπὶ μέρους ἀποφατικὸν
+<lb n="19"/><supplied reason="omitted">δ’</supplied> ὑπολοίπου καθόλου καταφατικῆς, ἐπὶ μέρους ἀποφατικὸν
 <lb n="20"/>ἴσχει συμπέρασμα, δι’ ἀντιστροφῆς τῆς πρὸς
-<lb n="21"/>τῷ ἐλάττονι προτάσεως 〈εἰς〉 τὸν ἐν τῷ 〈πρώτῳ〉 σχήματι
+<lb n="21"/>τῷ ἐλάττονι προτάσεως <supplied reason="omitted">εἰς</supplied> τὸν ἐν τῷ <supplied reason="omitted">πρώτῳ</supplied> σχήματι
 <lb n="22"/>τέταρτον ἔχων τὴν ἀνάλυσιν. <milestone unit="subchapter" n="3"/> ὁ δὲ τρίτος ἐξ ἐπὶ
 <lb n="23"/>μέρους καταφατικῆς καὶ καθόλου καταφατικῆς ἐν μέρει
 <pb n="23"/>
 <lb n="1"/>καταφατικὸν ἴσχει συμπέρασμα † ἀπὸ τῆς ἐν μέρει προτάσεως
 <lb n="2"/>ἀντιστραφείσης καὶ προσέτι τοῦ συμπεράσματος.
-<lb n="3"/><milestone unit="subchapter" n="4"/>ὁ δὲ τέταρτος ἐκ καθόλου καταφατικῆς 〈καὶ ἐπὶ μέρους
-<lb n="4"/>καταφατικῆς〉 ἐπὶ μέρους καταφατικὸν σημαίνει τῆς
+<lb n="3"/><milestone unit="subchapter" n="4"/>ὁ δὲ τέταρτος ἐκ καθόλου καταφατικῆς <supplied reason="omitted">καὶ ἐπὶ μέρους
+<lb n="4"/>καταφατικῆς</supplied> ἐπὶ μέρους καταφατικὸν σημαίνει τῆς
 <lb n="5"/>ἐλάττονος προτάσεως ἀντιστραφείσης. <milestone unit="subchapter" n="5"/> ὁ δὲ πέμπτος
 <lb n="6"/>ἐκ καθόλου στερητικῆς καὶ ἐπὶ μέρους καταφατικῆς
 <lb n="7"/>ἀντιστραφείσης τῆς ἐν <milestone unit="ed1page" n="27"/> μέρει τὴν ἀναγωγὴν εἰς τὸν
@@ -629,15 +705,15 @@
 <lb n="9"/>ποιούμενος ἀποφατικὸν ἐν μέρει. <milestone unit="subchapter" n="6"/> λοιπὸς δὲ ὁ ἕκτος
 <lb n="10"/>ἐξ ἐπὶ μέρους ἀποφατικῆς καὶ καθόλου καταφατικῆς
 <lb n="11"/>ἐπὶ μέρους ἀποφατικὸν περαίνει διὰ τῆς εἰς ἀδύνατον
-<lb n="12"/>ἀπαγωγῆς καὶ διὰ τῆς ἐκθέσεως ἀποδεικνύμενος, 〈ὡς〉
+<lb n="12"/>ἀπαγωγῆς καὶ διὰ τῆς ἐκθέσεως ἀποδεικνύμενος, <supplied reason="omitted">ὡς</supplied>
 <lb n="13"/>κἀπὶ τοῦ {δ} [κἀπὶ] τοῦ δευτέρου <milestone unit="ms1folio" n="7v"/> ἀπεδείχθη σχήματος.
 <lb n="14"/><milestone unit="subchapter" n="7"/>(διὰ) μὲν τῆς εἰς ἀδύνατον ἀπαγωγῆς οὕτως· τὸ
-<lb n="15"/>πρῶτον τοῦ τρίτου κατά τινος μὴ λεγέσθω· τὸ 〈δὲ〉
+<lb n="15"/>πρῶτον τοῦ τρίτου κατά τινος μὴ λεγέσθω· τὸ <supplied reason="omitted">δὲ</supplied>
 <lb n="16"/>δεύτερον κατηγορείσθω παντὸς τοῦ τρίτου· λέγω ὅτι
 <lb n="17"/>τὸ πρῶτον κατά τινος οὐ κατηγορηθήσεται τοῦ δευτέρου·
 <lb n="18"/>μὴ γὰρ ἀλλ’ εἰ δυνατόν ἐστιν, ἅπαντος κατηγορείσθω·
 <lb n="19"/>ἀλλὰ καὶ τὸ δεύτερον κατηγορεῖτο τοῦ τρίτου
-<lb n="20"/>παντός· 〈ὥστε καὶ τὸ πρῶτον τοῦ τρίτου παντὸς〉
+<lb n="20"/>παντός· <supplied reason="omitted">ὥστε καὶ τὸ πρῶτον τοῦ τρίτου παντὸς</supplied>
 <lb n="21"/>κατηγορηθήσεται· ἀλλ’ ὑπέκειτο τινὸς μὴ κατηγορεῖσθαι·
 <lb n="22"/>οὐκ ἄρα παντὸς τοῦ δευτέρου κατηγορεῖται, ἀποφάσκεται
 <pb n="24"/>
@@ -655,27 +731,27 @@
         <div type="textpart" subtype="chapter" n="11" xml:id="_11">
           <p rend="indent">
 <lb n="10"/>Αἱ δὲ ἄλλαι ἅπασαι συμπλοκαὶ τῶν προτάσεων ἐν
-<lb n="11"/>ἑκάστῳ τῶν σχημάτων εἰσὶν ἀδόκιμοι συλλογισμός 〈τ’〉
+<lb n="11"/>ἑκάστῳ τῶν σχημάτων εἰσὶν ἀδόκιμοι συλλογισμός <supplied reason="omitted">τ’</supplied>
 <lb n="12"/>οὐδεὶς ἐξ αὐτῶν γίγνεται διὰ τὸ μηδὲν ἐξ ἀνάγκης
 <lb n="13"/>περαίνεσθαι μήτε διαλεκτικῶς μήτε δι’ ἀποδείξεως·
 <lb n="14"/>ἔνδειξιν μὲν γὰρ καλοῦσι τὴν ἐκ τῆς τοῦ πράγματος
 <lb n="15"/>φύσεως εὕρεσιν τοῦ ζητουμένου κατ’ ἀκολουθίαν τῶν
-<lb n="16"/>ἐναργῶς φαινομένων, ἀπόδειξιν δὲ λόγον 〈δι’〉 ἀληθῶν
+<lb n="16"/>ἐναργῶς φαινομένων, ἀπόδειξιν δὲ λόγον <supplied reason="omitted">δι’</supplied> ἀληθῶν
 <lb n="17"/>λημμάτων περαίνοντα. <milestone unit="subchapter" n="2"/> γίγνονται δὲ καθ’ ἕκαστον
 <lb n="18"/>σχῆμα συζυγίαι τῶν <milestone unit="ed1page" n="29"/> προτάσεων {ιϛ} διὰ τὸ {δ} εἶναι
 <lb n="19"/>καθ’ ἕκαστον σχῆμα, δύο μὲν τὰς καθόλου, δύο δὲ τὰς
-<lb n="20"/>ἐν μέρει, καὶ πλείους τῇ λέξει φαίνονται· 〈δεῖ〉 δὲ
+<lb n="20"/>ἐν μέρει, καὶ πλείους τῇ λέξει φαίνονται· <supplied reason="omitted">δεῖ</supplied> δὲ
 <lb n="21"/>πρὸς ἐκείνας γυμνάζεσθαι καὶ γνωρίζειν αὐτάς, ὡς ἐν
 <lb n="22"/>τῷ Περὶ τῶν ἰσοδυναμουσῶν προτάσεων εἴρηται γράμματι·
-<lb n="23"/>〈τὸ〉 νῦν γὰρ ὑπογραφή ἐστι τῆς λογικῆς θεωρίας,
+<lb n="23"/><supplied reason="omitted">τὸ</supplied> νῦν γὰρ ὑπογραφή ἐστι τῆς λογικῆς θεωρίας,
 <pb n="25"/>
 <lb n="1"/>οὐ κατὰ διέξοδον διδασκαλία. <milestone unit="subchapter" n="3"/> τοῖς δὲ διῃρημένοις
 <lb n="2"/>{ιδ} συλλογισμοῖς ἴδιον ἑκάστου συμπέρασμα
 <lb n="3"/>ἔχοντος καὶ ἄλλαι τινὲς συναληθεύουσι προτάσεις, αἱ
 <lb n="4"/>μὲν περιεχόμεναι τοῖς συμπεράσμασιν αὐτῶν, αἱ δὲ ἐξ
 <lb n="5"/>ἀνάγκης συναληθευόμεναι· περιέχεται μὲν ἐν τοῖς καθόλου
-<lb n="6"/>συμπεράσμασι 〈τὰ ἐπὶ μέρους, ταῖς δὲ καθόλου
-<lb n="7"/>καταφατικαῖς προτάσεσι〉 <milestone unit="ms1folio" n="8r4"/>
+<lb n="6"/>συμπεράσμασι <supplied reason="omitted">τὰ ἐπὶ μέρους, ταῖς δὲ καθόλου
+<lb n="7"/>καταφατικαῖς προτάσεσι</supplied> <milestone unit="ms1folio" n="8r4"/>
             <milestone unit="ed1page" n="30,16"/> καὶ ἐπὶ μέρους προτάσεις
 <lb n="8"/>ἕπονται κατ’ ἀντιστροφὴν συναληθευόμεναι.
 <lb n="9"/><milestone unit="subchapter" n="4"/>καὶ διὰ τοῦτο τοῖς ἐν τῷ πρώτῳ σχήματι συλλογισμοῖς
@@ -688,10 +764,10 @@
 <lb n="16"/>ταῖς τοὺς συλλογισμοὺς <milestone unit="ed1page" n="31"/> ἐργαζομέναις, ἀντιστραφεισῶν
 <lb n="17"/>δὲ τῶν προτάσεων ἕπεται. <milestone unit="subchapter" n="6"/> κατὰ γοῦν τὸ {α} σχῆμα τῆς
 <lb n="18"/>μὲν πρὸς τῷ μείζονι τῶν ὅρων προτάσεως καταφατικῆς
-<lb n="19"/>οὔσης εἴτ’ οὖν ἐπὶ μέρους εἴτ’ οὖν καθόλου, 〈τῆς δὲ
-<lb n="20"/>πρὸς τῷ ἐλάττονι καθόλου〉 στερητικῆς ἐξ εὐθείας μὲν
-<lb n="21"/>οὐ γίγνεται συλλογισμὸς 〈τοῦ〉 μείζονος τῶν ὅρων
-<lb n="22"/>πρὸς 〈τὸν〉 ἐλάττονα· τῶν 〈δὲ〉 προτάσεων ἀντιστραφεισῶν
+<lb n="19"/>οὔσης εἴτ’ οὖν ἐπὶ μέρους εἴτ’ οὖν καθόλου, <supplied reason="omitted">τῆς δὲ
+<lb n="20"/>πρὸς τῷ ἐλάττονι καθόλου</supplied> στερητικῆς ἐξ εὐθείας μὲν
+<lb n="21"/>οὐ γίγνεται συλλογισμὸς <supplied reason="omitted">τοῦ</supplied> μείζονος τῶν ὅρων
+<lb n="22"/>πρὸς <supplied reason="omitted">τὸν</supplied> ἐλάττονα· τῶν <supplied reason="omitted">δὲ</supplied> προτάσεων ἀντιστραφεισῶν
 <lb n="23"/>συμπέρασμα δόκιμον γίγνεται τὸ τὸν ὅρον
 <lb n="24"/>δηλοῦν τὸν <milestone unit="ms1folio" n="7v21"/>
             <milestone unit="ed1page" n="29,11"/> ἐλάττονα πρὸς τῷ μείζονι κατὰ τὸν
@@ -704,8 +780,8 @@
 <lb n="6"/>ἀντιστροφῆς ἐν τῷ τρίτῳ σχήματι κατὰ τὸν τρίτον
 <lb n="7"/>συλλογισμὸν γίγνεται μόνον· οἱ μὲν γὰρ ἐν τῷ {β} σχήματι
 <lb n="8"/>πρῶτοι δύο πρὸς ἀλλήλους ἀντιστρέφουσι τῷ
-<lb n="9"/>συμπεράσματι, οἱ δὲ 〈ἐν〉 τῷ τρίτῳ δύο τρίτος τε καὶ
-<lb n="10"/>τέταρτος· ἐμπεριέχονταί γε μὴν 〈οἱ〉 ἐπὶ μέρους, ὡς
+<lb n="9"/>συμπεράσματι, οἱ δὲ <supplied reason="omitted">ἐν</supplied> τῷ τρίτῳ δύο τρίτος τε καὶ
+<lb n="10"/>τέταρτος· ἐμπεριέχονταί γε μὴν <supplied reason="omitted">οἱ</supplied> ἐπὶ μέρους, ὡς
 <lb n="11"/>ἐν τοῖς κατὰ τὸ {α} καὶ τὸ {β} σχῆμα πρώτοις δύο συλλογισμοῖς,
 <lb n="12"/>οὕτως τοῖς κατὰ τοῦτο.
 </p>
@@ -715,7 +791,7 @@
 <lb n="13"/>Οὗτοι μὲν <milestone unit="ed1page" n="30"/> οἱ συλλογισμοὶ κατηγορικοὶ καλοῦνται,
 <lb n="14"/>καθάπερ ἔφην, οὔτε κατὰ πλείω σχήματα
 <lb n="15"/>δυνάμενοι συστῆναι τῶν εἰρημένων τριῶν οὔτε κατ’
-<lb n="16"/>ἄλλον ἀριθμὸν 〈ἐν〉 ἑκάστῳ· δέδεικται γὰρ τοῦτο ἐν
+<lb n="16"/>ἄλλον ἀριθμὸν <supplied reason="omitted">ἐν</supplied> ἑκάστῳ· δέδεικται γὰρ τοῦτο ἐν
 <lb n="17"/>τοῖς Περὶ ἀποδείξεως ὑπομνήμασι· χρώμεθα δ’ αὐτοῖς
 <lb n="18"/>ἐν ταῖς ἀποδείξεσιν ἐν αἷς ὑπὲρ ἑνὸς τῶν ὄντων ἐστὶ
 <lb n="19"/>ζήτησις ὁπηλίκον ἐστὶν ἢ ὁποῖον ἢ ποῦ κείμενόν (ἐστιν
@@ -723,28 +799,28 @@
 <lb n="21"/>γὰρ τῷ <milestone unit="ms1folio" n="8r1"/> ζητεῖν εἰ ὀρθῶς Ἐρατοσθένης ἔδειξε τὸν
 <lb n="22"/>μέγιστον ἐν τῇ γ(ῇ κύκλον ἔχειν σταδίων) μυριάδ(ας)
 <pb n="27"/>
-<lb n="1"/>{κε} δισχίλια, ἡ ζήτησίς ἐστι 〈τῆς〉 τοῦ κύκλου πηλικότητος
-<lb n="2"/>ἢ τοῦ μεγέθους ἢ 〈τῆς〉 ποσότητος ἢ ὅπως ἂν θέλῃς ὀνομάζειν,
+<lb n="1"/>{κε} δισχίλια, ἡ ζήτησίς ἐστι <supplied reason="omitted">τῆς</supplied> τοῦ κύκλου πηλικότητος
+<lb n="2"/>ἢ τοῦ μεγέθους ἢ <supplied reason="omitted">τῆς</supplied> ποσότητος ἢ ὅπως ἂν θέλῃς ὀνομάζειν,
 <lb n="3"/>ὥσπερ γε κἀπειδὰν τῶν ἐν τῇ γῇ τροπικῶν ἑκάτερος
 <lb n="4"/>ὅσων ἐστὶ σταδί(ων) ζητῇ καθ’ ἑκάστην τε τῶν
 <lb n="5"/>οἰκήσεων ὁπηλίκος ἐστὶν ὅ τ’ ἀρκτικὸς ὀνομαζόμενος
 <lb n="6"/>κύκλος καὶ ὁ ἀνταρκτικὸς τό τε <milestone unit="ms1folio" n="8r13"/>
             <milestone unit="ed1page" n="31,7"/> ἐξ ἄρκτου τὸ
-<lb n="7"/>ὑπόλοιπον 〈ὅσ〉ων ἐστὶ μορίων ἑκάστῃ τῶν οἰκήσεων.
-<lb n="8"/><milestone unit="subchapter" n="3"/>μέγεθος δὲ καὶ ἡλίου 〈καὶ〉 σελήνης καὶ τῶν κατ’
+<lb n="7"/>ὑπόλοιπον <supplied reason="omitted">ὅσ</supplied>ων ἐστὶ μορίων ἑκάστῃ τῶν οἰκήσεων.
+<lb n="8"/><milestone unit="subchapter" n="3"/>μέγεθος δὲ καὶ ἡλίου <supplied reason="omitted">καὶ</supplied> σελήνης καὶ τῶν κατ’
 <lb n="9"/>αὐτοὺς ἀποστημάτων ἐζήτηται καὶ δέδεικται τοῖς ἀστρονόμοις,
 <lb n="10"/>ὥσπερ γε καὶ τῶν ἐκλείψεων, ὅταν μὴ δι’ ὅλων
-<lb n="11"/>γίγνωνται τῶν σωμάτων, ἀλλ’ ἐξ ἡμίσεος ἢ ἀπὸ 〈τοῦ
-<lb n="12"/>τρίτου〉 μέρους ἤ τινος ἄλλου μορίου· καὶ μὴν καὶ
+<lb n="11"/>γίγνωνται τῶν σωμάτων, ἀλλ’ ἐξ ἡμίσεος ἢ ἀπὸ <supplied reason="omitted">τοῦ
+<lb n="12"/>τρίτου</supplied> μέρους ἤ τινος ἄλλου μορίου· καὶ μὴν καὶ
 <lb n="13"/>τῶν καθ’ ἑκάστην οἴκησιν ἡμερῶν τὸ μέγεθος ἐζήτηταί
 <lb n="14"/>τε καὶ εὕρηται, καθάπερ καὶ τὰ ἄλλα τὰ προειρημένα.
 <lb n="15"/>
             <milestone unit="subchapter" n="4"/>ὁμολογεῖται μὲν γὰρ ὑπὸ τῶν κλεψυδρῶν τε καὶ τῶν
 <lb n="16"/>ὑδροσκοπίων ἔτι τε καὶ τῶν ἡλιακῶν ὡροσκοπίων
 <lb n="17"/>εὑρῆσθαι τὸ μέγεθος ἑκάστης ἡμέρας τῶν καθ’ ὅλον
-<lb n="18"/>〈τὸν〉 ἐνιαυτόν, ὑπὸ δὲ τῶν κατὰ τὰς ἐκλείψεις προρρήσεων
+<lb n="18"/><supplied reason="omitted">τὸν</supplied> ἐνιαυτόν, ὑπὸ δὲ τῶν κατὰ τὰς ἐκλείψεις προρρήσεων
 <lb n="19"/>ἡλίου καὶ † ἄστρου καὶ γῆς μέγεθος καὶ πόσον
-<lb n="20"/>ἀφεστήκασι τῶν καθ’ ἡμᾶς τόπων 〈καὶ〉 τὰ τοιαῦτα, καὶ
+<lb n="20"/>ἀφεστήκασι τῶν καθ’ ἡμᾶς τόπων <supplied reason="omitted">καὶ</supplied> τὰ τοιαῦτα, καὶ
 <lb n="21"/>μὲν οὖν καὶ τίνες εἰσιν αἱ τὴν ἑκάστου τῶν εἰρημένων
 <lb n="22"/><milestone unit="ed1page" n="32"/>πηλικότητα ζητοῦσαί τε καὶ ἀποδεικνύουσαι μέθοδοι,
 <lb n="23"/>πλείστων ἐγχρώμεναι τῶν κατὰ τὸ {α} σχῆμα κατηγορικῶν
@@ -753,10 +829,10 @@
 <lb n="2"/>ὑπὲρ ἑκάστου [αὐ]τῶν ζητημάτων ὧν ποιοῦνται
 <lb n="3"/>καθόλου πάσας εὑρεῖν ἔστιν ὑπ’ αὐτῶν λεγομένας τε
 <lb n="4"/><milestone unit="subchapter" n="5"/>καὶ δεικνυμένας. ἐπεὶ δ’ ἐν τῷ μᾶλλόν τε καὶ ἧττον
-<lb n="5"/>εἶναι †καλῶς δύνανται, τὸ 〈δὲ〉 πρὸς τὰς γενικωτάτας
+<lb n="5"/>εἶναι †καλῶς δύνανται, τὸ <supplied reason="omitted">δὲ</supplied> πρὸς τὰς γενικωτάτας
 <lb n="6"/>αὐτῶν ἐπὶ μέρους δοκεῖ λέγεσθαι, διὰ τοῦτο κατὰ συμβεβηκὸς
 <lb n="7"/>τότε φαίνονταί τινες ἀποφάνσεις τε καὶ δείξεις
-<lb n="8"/>εἶναι κατὰ μέρος· ὡς γὰρ 〈πρὸς〉 τὴν περὶ παντὸς
+<lb n="8"/>εἶναι κατὰ μέρος· ὡς γὰρ <supplied reason="omitted">πρὸς</supplied> τὴν περὶ παντὸς
 <lb n="9"/>τριγώνου δεῖξίν τε καὶ ἀ(πό)φα(νσιν) ὅτι δυοῖν ὀρθαῖς
 <lb n="10"/>ἴσας ἔχει τὰς τρεῖς γωνίας, ἐπὶ μέρους δόξειεν ἂν εἶναι
 <lb n="11"/>πρότασις λέγουσα μὴ πᾶν τρίγωνον, ἀλλ’ ἔνια τὰς
@@ -765,18 +841,18 @@
 <lb n="14"/>τὴν ἀπόφανσίν τε καὶ γνῶσιν, ἐκείνως δὲ ἐπιστημονικήν
 <lb n="15"/>τε καὶ καθόλου ‘πᾶν ἰσοσκελὲς τρίγωνον τὰς πρὸς
 <lb n="16"/>τῇ βάσει γωνίας ἴσας ἀλλήλαις ἔχει’. <milestone unit="subchapter" n="7"/> συνήθης δὲ τοῖς
-<lb n="17"/>Ἕλλησι λέξις ἐστὶ καὶ ἡ 〈διὰ〉 τῆς τῶν ἀριθμῶν προτάξεως
+<lb n="17"/>Ἕλλησι λέξις ἐστὶ καὶ ἡ <supplied reason="omitted">διὰ</supplied> τῆς τῶν ἀριθμῶν προτάξεως
 <lb n="18"/>ἐνδεικνυμένη <milestone unit="ms1folio" n="8v"/> (τὸ κα)θόλου (καὶ ἡ) ἄν(ευ
 <lb n="19"/>τούτων· ὡσαύτως γὰρ ἔστιν εἰπ)εῖν ‘π(ᾶν) ἰσοσκελὲς
-<lb n="20"/>τρίγωνον 〈τὰς πρὸς τῇ βάσει γωνίας〉 ἴσας ἀλλήλαις
+<lb n="20"/>τρίγωνον <supplied reason="omitted">τὰς πρὸς τῇ βάσει γωνίας</supplied> ἴσας ἀλλήλαις
 <lb n="21"/>ἔχει’ ὡς ‘τὰ ἰσοσκελῆ τρίγωνα τὰς πρὸς τῇ βάσει
-<lb n="22"/>γωνίας ἴσας ἀλλήλαις ἔχει’. <milestone unit="subchapter" n="8"/> καὶ μέντοι <milestone unit="ed1page" n="33"/> καὶ 〈κατὰ〉
+<lb n="22"/>γωνίας ἴσας ἀλλήλαις ἔχει’. <milestone unit="subchapter" n="8"/> καὶ μέντοι <milestone unit="ed1page" n="33"/> καὶ <supplied reason="omitted">κατὰ</supplied>
 <lb n="23"/>τὸν ἑνικὸν ἀριθμὸν ἔθος ἐστὶ τοῖς Ἕλλησιν ἑρμηνεύειν
 <lb n="24"/>τὰ οὕτω λεγόμενα, καὶ διαφέρει γε οὐδέν, εἰ τὰ ἰσοσκελῆ
 <pb n="29"/>
 <lb n="1"/>τρίγωνα λέγουσιν ἅπαντα τὰς πρὸς τῇ βάσει
 <lb n="2"/>γωνίας ἴσας ἀλλήλαις ἔχειν ἢ τὸ ἰσοσκελὲς τρίγωνον·
-<lb n="3"/>〈εἰς γὰρ τὸ〉 εἶδος ἀποβλέποντες 〈τὸ〉 ἅπασι τοῖς κατὰ
+<lb n="3"/><supplied reason="omitted">εἰς γὰρ τὸ</supplied> εἶδος ἀποβλέποντες <supplied reason="omitted">τὸ</supplied> ἅπασι τοῖς κατὰ
 <lb n="4"/>μέρος ὑπάρχον ὡς περὶ ἑνὸς εἰκότως ποιοῦνται τὴν ἀπόφανσιν·
 <lb n="5"/>καὶ γάρ ἐστιν ὡς εἶδος ἕν. <milestone unit="subchapter" n="9"/> λέγω δὲ ὡς εἶδος,
 <lb n="6"/>ἐπειδὴ κατὰ τὴν ὕπαρξίν ἐστι τοσαῦτα κατὰ τὸν ἀριθμὸν
@@ -791,19 +867,19 @@
           <p rend="indent">
 <lb n="12"/>Οἰκειότατος οὖν ἀποδείξεσιν ἐπιστημονικαῖς ὁ
 <lb n="13"/>τοῦ πρώτου σχήματός ἐστι πρῶτος συλλογισμὸς ἐν διττῇ
-<lb n="14"/>λέξει λεγόμενος ὑπὸ τῶν Ἑλλήνων, ἐνίοτε μὲν 〈ὡς〉
+<lb n="14"/>λέξει λεγόμενος ὑπὸ τῶν Ἑλλήνων, ἐνίοτε μὲν <supplied reason="omitted">ὡς</supplied>
 <lb n="15"/>ἀρτίως εἴπομεν· ‘ὁ ἄνθρωπος ζῷόν ἐστι· τὸ ζῷον
-<lb n="16"/>οὐσία ἐστίν· 〈ὁ ἄνθρωπος οὐσία ἐστίν’, ἐνίοτε δὲ μετὰ
+<lb n="16"/>οὐσία ἐστίν· <supplied reason="omitted">ὁ ἄνθρωπος οὐσία ἐστίν’, ἐνίοτε δὲ μετὰ
 <lb n="17"/>τοῦ πᾶς· ‘πᾶς ἄνθρωπος ζῷόν ἐστι· πᾶν ζῷον οὐσία
-<lb n="18"/>ἐστι·〉 πᾶς ἄνθρωπος οὐσία ἐστιν’. <milestone unit="subchapter" n="2"/> ἐφεξῆς δὲ 〈ὁ〉
+<lb n="18"/>ἐστι·</supplied> πᾶς ἄνθρωπος οὐσία ἐστιν’. <milestone unit="subchapter" n="2"/> ἐφεξῆς δὲ <supplied reason="omitted">ὁ</supplied>
 <lb n="19"/>δεύτερος μὲν ἐν τῷ πρώτῳ σχήματι, κατὰ δὲ τὸ δεύτερον
 <lb n="20"/>οἱ πρῶτοι δύο χρήσιμοι πρὸς τὰς ἀποδείξεις
 <lb n="21"/>γίγνονταί ποτε, μιγνυμένης ἐν αὐτοῖς τῆς <milestone unit="ed1page" n="34"/> καθόλου
 <lb n="22"/>καταφατικῆς. <milestone unit="subchapter" n="3"/> καὶ μὴν καὶ ὁ τρίτος ἐν τῷ πρώτῳ
 <lb n="23"/>σχήματι συλλογισμὸς ὡς εἴρηται μικρὸν ἔμπροσθεν εἰς
-<lb n="24"/>ἀποφάνσεις ποτὲ γίγνεται χρήσιμος, 〈ὡς〉 ὅτε τρίγωνον
+<lb n="24"/>ἀποφάνσεις ποτὲ γίγνεται χρήσιμος, <supplied reason="omitted">ὡς</supplied> ὅτε τρίγωνον
 <pb n="30"/>
-<lb n="1"/>ἰσοσκελές ἐστιν, ἔτι 〈δὲ〉 — δέδεικται γάρ —
+<lb n="1"/>ἰσοσκελές ἐστιν, ἔτι <supplied reason="omitted">δὲ</supplied> — δέδεικται γάρ —
 <lb n="2"/>καὶ τὸ ἰσοσκελὲς τὰς πρὸς τῇ βάσει γωνίας ἴσας ἔχον,
 <lb n="3"/>ἐκ τούτων περανθήσεται τρίγωνόν τι πρὸς τῇ βάσει
 <lb n="4"/>τὰς γωνίας ἴσας ἔχειν. <milestone unit="subchapter" n="4"/> εἰσὶ δὲ καὶ κατὰ τὸ τρίτον
@@ -811,21 +887,21 @@
 <lb n="6"/>τὸ ἐπὶ μέρους καταφατικόν· ἀποδείκνυται
 <lb n="7"/>δέ ποτε καὶ τῶν ἐπὶ μέρους ἀποφατικῶν τι κατὰ τὰ
 <lb n="8"/>τρία σχήματα [καὶ] καθάπερ ἐπὶ τοῦ ‘πᾶν ἀγαθὸν
-<lb n="9"/>αἱρετόν ἐστιν· ἡ τῶν αἰσχρουργῶν ἡδονὴ 〈οὐχ αἱρετόν
+<lb n="9"/>αἱρετόν ἐστιν· ἡ τῶν αἰσχρουργῶν ἡδονὴ <supplied reason="omitted">οὐχ αἱρετόν
 <lb n="10"/>ἐστιν· οὐκ ἄρα ἀγαθόν ἐστιν ἡ τῶν αἰσχρουργῶν
-<lb n="11"/><milestone unit="subchapter" n="5"/>ἡδονή’〉. κατὰ ταύτην μὲν οὖν τὴν λέξιν ὡρισμένη
+<lb n="11"/><milestone unit="subchapter" n="5"/>ἡδονή’</supplied>. κατὰ ταύτην μὲν οὖν τὴν λέξιν ὡρισμένη
 <lb n="12"/>κατὰ τὸ εἶδος ἡδονὴ πρὸς τὴν ἀπόδειξιν εἴληπται,
 <lb n="13"/>κατὰ δὲ τὴν τοιαύτην ἀοριστοτέρα ‘πᾶν ἀγαθὸν αἱρετόν
 <lb n="14"/>ἐστι· τὶς οὖν ἡδονὴ οὐκ ἔστιν αἱρετόν· τὶς ἄρα
-<lb n="15"/>ἡδονὴ οὐκ ἔστιν ἀγαθόν’· ἔτι 〈καὶ〉 κατὰ τήνδε τὴν
+<lb n="15"/>ἡδονὴ οὐκ ἔστιν ἀγαθόν’· ἔτι <supplied reason="omitted">καὶ</supplied> κατὰ τήνδε τὴν
 <lb n="16"/>λέξιν ἀοριστοτέρα ἀπόφανσις γίγνεται ‘πᾶν ἀγαθὸν
-<lb n="17"/>αἱρετόν· 〈οὐ〉 <milestone unit="ed1page" n="35"/> πᾶσα ἡδονὴ αἱρετόν· οὐ πᾶσα ἄρα
+<lb n="17"/>αἱρετόν· <supplied reason="omitted">οὐ</supplied> <milestone unit="ed1page" n="35"/> πᾶσα ἡδονὴ αἱρετόν· οὐ πᾶσα ἄρα
 <lb n="18"/>ἡδονὴ ἀγαθόν’. <milestone unit="subchapter" n="6"/> εὔδη(λον) δὲ ὅτι κατὰ τὴν τοιαύτην
 <lb n="19"/>ἀπόδειξιν οὐ τὸ μέγεθος ὥσπερ ἐπὶ τῶν ἀρτίως εἰρημένων,
 <lb n="20"/>ἀλλ’ ἡ ποιότης ἀποδείκνυται τοῦ πράγματος·
-<lb n="21"/>ὁποῖον γάρ ἐστιν 〈ἡ〉 ἡδονὴ πότερον ἀγαθὸν ἢ κακὸν
+<lb n="21"/>ὁποῖον γάρ ἐστιν <supplied reason="omitted">ἡ</supplied> ἡδονὴ πότερον ἀγαθὸν ἢ κακὸν
 <lb n="22"/>ἢ μέσον, ἐν τῷ τῆς ποιότητος γένει τὴν ζήτησιν ἴσχει,
-<lb n="23"/>(καθά)περ ἐν τῷ πρός 〈τι〉 τὸ τῶν ἰσοσκελῶν τριγώνων
+<lb n="23"/>(καθά)περ ἐν τῷ πρός <supplied reason="omitted">τι</supplied> τὸ τῶν ἰσοσκελῶν τριγώνων
 <lb n="24"/>ἴσας εἶναι τὰς πρὸς τῇ βάσει γωνίας. <milestone unit="subchapter" n="7"/> ὁ δέ γε
 <pb n="31"/>
 <lb n="1"/>δεικνὺς ἐν τῷ μέ(σῳ) τοῦ κόσμου τετάχθαι τὴν γῆν
@@ -849,14 +925,14 @@
 <lb n="19"/>ὑπομνημάτων. <milestone unit="subchapter" n="12"/> ἕτερον γὰρ γένος ἐστὶ κατηγορίας ὃ
 <lb n="20"/>καλεῖν αὐτὸς εἴωθε κεῖσθαι, τὸ γοῦν κατακεῖσθαι,
 <lb n="21"/>καθῆσθαι· κατὰ γὰρ τὸ κεῖσθαι ταῦτα λέγεσθαί
-<lb n="22"/>φησιν 〈ἃ τῶν〉 μορίων τοῦ σώματος ἐνδείκνυται
+<lb n="22"/>φησιν <supplied reason="omitted">ἃ τῶν</supplied> μορίων τοῦ σώματος ἐνδείκνυται
 <lb n="23"/>(σ)χήματα κατὰ τὴν πρὸς ἄλληλα σχέσιν γιγνόμενα,
 <lb n="24"/>καὶ ζητεῖται κατὰ τοῦτο τὸ γένος ὑφ’ Ἱπποκράτους,
 <pb n="32"/>
 <lb n="1"/>ὁποῖον σχῆμα καταγέντι σκέλει καὶ χειρὶ τὸ ἄριστόν
-<lb n="2"/>ἐστι 〈καὶ〉 ἐφ’ ἑκάστου τῶν ἄλλων μορίων, ὁμοίως
+<lb n="2"/>ἐστι <supplied reason="omitted">καὶ</supplied> ἐφ’ ἑκάστου τῶν ἄλλων μορίων, ὁμοίως
 <lb n="3"/>δὲ καὶ κατὰ τὰς πράξεις ἢ συμπτώματα χειρουργούντων
-<lb n="4"/>〈ἢ〉 αἱμορραγίας ἱστώντων ἤ τι τοιοῦτον ἕτερον
+<lb n="4"/><supplied reason="omitted">ἢ</supplied> αἱμορραγίας ἱστώντων ἤ τι τοιοῦτον ἕτερον
 <lb n="5"/>πραττόντων ὁποῖον ἄριστόν ἐστι σχῆμα.
 </p>
         </div>
@@ -868,7 +944,7 @@
 <lb n="9"/>τὰ τοιαῦτα προβάλλεται· ἆρά γ’ εἱμαρμένη ἔστιν; ἆρά
 <lb n="10"/>γε πρόνοια ἔστιν; ἆρά γε θεοὶ εἰσίν; ἆρά γε κενὸν
 <lb n="11"/>ἔστιν; <milestone unit="subchapter" n="2"/> ἐν οἷς προβλήμασι μάλιστα χρώμεθα ταῖς ὑποθετικαῖς
-<lb n="12"/>προτάσεσιν, ἃς 〈εἰς τὰς〉 κατὰ συνέχειαν καὶ
+<lb n="12"/>προτάσεσιν, ἃς <supplied reason="omitted">εἰς τὰς</supplied> κατὰ συνέχειαν καὶ
 <lb n="13"/>κατὰ διαίρεσιν ἔτεμον οἱ παλαιοί· <milestone unit="ed1page" n="37"/> καλοῦσι δὲ τὰς
 <lb n="14"/>μὲν κατὰ συνέχειαν οἱ Στωικοὶ συνημμένα ἀξιώματα,
 <lb n="15"/>τὰς δὲ κατὰ διαίρεσιν διεζευγμένα, καὶ συμφωνεῖταί
@@ -884,7 +960,7 @@
 <pb n="33"/>
 <lb n="1"/>ἡγουμένων ἐξ ἀποφατικοῦ συμπεπλεγμένου καὶ
 <lb n="2"/>θατέρου τῶν ἐν αὐτῷ τὸ ἀντικείμενον τοῦ λοιποῦ
-<lb n="3"/>περαίνοντα, ὡς ἐπὶ τῶν τοιούτων ἔχει ‘〈οὐχὶ〉 καὶ
+<lb n="3"/>περαίνοντα, ὡς ἐπὶ τῶν τοιούτων ἔχει ‘<supplied reason="omitted">οὐχὶ</supplied> καὶ
 <lb n="4"/>Ἀθήνησίν ἐστι καὶ Ἰσθμοῖ Δίων· † καὶ τοῦδε παιδίον
 <lb n="5"/>μὲν εἰς πολλὰς τῶν καθ’ ὅλον τὸν βίον ἀποδείξ(εις
 <lb n="6"/>ε)ἶν(α)ι χρήσιμον ἄχρι καὶ τῶν δικαστηρίων. <milestone unit="subchapter" n="5"/>
@@ -895,7 +971,7 @@
 <lb n="10"/>δὲ ἐξ ἡμίσεος ὑπάρχειν μὲν ἅμα μὴ δυνάμενα, μὴ
 <lb n="11"/>ὑπάρχειν δὲ ἅμα δυνάμενα, διὰ τοῦτο τὰ μὲν κατὰ
 <lb n="12"/>τὴν τελείαν μάχην τὴν τοῦ διεζευγμένου προσηγορίαν
-<lb n="13"/>καλεῖν ἠξίωκα, τὰ δὲ 〈κατὰ〉 τὴν ἐλλιπῆ τὴν τῆς μάχης
+<lb n="13"/>καλεῖν ἠξίωκα, τὰ δὲ <supplied reason="omitted">κατὰ</supplied> τὴν ἐλλιπῆ τὴν τῆς μάχης
 <lb n="14"/>ἁπλῶς ἢ καὶ μετὰ προσθήκης ἐλλιποῦς μάχης. <milestone unit="subchapter" n="6"/> ἐν τούτοις
 <lb n="15"/>οὖν τοῖς πράγμασιν ὁ εἰρημένος συλλογισμὸς χρήσιμός
 <lb n="16"/>ἐστι τῇ μὲν αὐτῇ λέξει χρώμενος ᾗ Χρύσιππος,
@@ -904,16 +980,16 @@
 <lb n="19"/>ἀξίωμα (συν)ίστανται. <milestone unit="subchapter" n="7"/> τριῶν γὰρ οὐσῶν
 <lb n="20"/>διαφορῶν ἐν τοῖς πράγμασι, μιᾶς μὲν τῆς κατὰ τὴν
 <lb n="21"/>μάχην ἐπὶ τῶν μηδέποτε συνυπαρχόντων, ἑτέρας δὲ
-<lb n="22"/>τῆς κατὰ τὴν ἀκολουθίαν ἐπὶ τῶν ἀεὶ 〈συνυπαρχόντων,
+<lb n="22"/>τῆς κατὰ τὴν ἀκολουθίαν ἐπὶ τῶν ἀεὶ <supplied reason="omitted">συνυπαρχόντων,
 <lb n="23"/>τρίτης δὲ τῆς τῶν ποτὲ μὲν συνυπαρχόντων ποτὲ
-<lb n="24"/>δὲ〉 μὴ συνυπαρχόντων, ὅσα μήτε τὴν ἀκολουθίαν
+<lb n="24"/>δὲ</supplied> μὴ συνυπαρχόντων, ὅσα μήτε τὴν ἀκολουθίαν
 <pb n="34"/>
 <lb n="1"/>ἀναγκαί(αν) ἔχει μήτε τὴν μάχην, τὸ <milestone unit="ms1folio" n="9v"/> συμπεπλεγμένον
 <lb n="2"/>ἀξίωμα συνίστησιν, ὁποῖα τὰ τοιαῦτά ἐστι ‘Δίων περιπατεῖ
 <lb n="3"/>καὶ Θέων διαλέγεται’· δῆλον δὲ καὶ τὸ ἀποφατικὸν
 <lb n="4"/>αὐτοῦ τοιοῦτον ἐσόμενον ‘οὐχὶ καὶ Δίων περιπατεῖ
-<lb n="5"/>〈καὶ Θέων διαλέγεται’. <milestone unit="subchapter" n="8"/> ἡ δὲ πρόσληψις ‘ἀλλὰ μὴν
-<lb n="6"/>Δίων περιπατεῖ’,〉 ἔτι δὲ ‘ἀλλὰ μὴν Θέων διαλέγεται’·
+<lb n="5"/><supplied reason="omitted">καὶ Θέων διαλέγεται’. <milestone unit="subchapter" n="8"/> ἡ δὲ πρόσληψις ‘ἀλλὰ μὴν
+<lb n="6"/>Δίων περιπατεῖ’,</supplied> ἔτι δὲ ‘ἀλλὰ μὴν Θέων διαλέγεται’·
 <lb n="7"/><milestone unit="ed1page" n="39"/>συμπέρασμα δὲ κατὰ μὲν τὴν ἑτέραν πρόσληψιν ‘οὐκ
 <lb n="8"/>ἄρα Θέων διαλέγεται’, κατὰ δὲ τὴν ἑτέραν ‘οὐκ ἄρα
 <lb n="9"/>Δίων περιπατεῖ’· πρὸς ἀπόδειξιν δὲ ἡ τοιαύτη τῶν
@@ -923,7 +999,7 @@
 <lb n="13"/>δὲ αὖθις ἐπὶ τὸ προκείμενον, ὡς εἰ καὶ μηδὲν εἴρητο
 <lb n="14"/><milestone unit="subchapter" n="10"/>τῶν παραφθεγμάτων. οἱ γὰρ ἐξ ὑποθετικῶν προτάσεων
 <lb n="15"/>γιγνόμενοι συλλογισμοὶ κατὰ μετάβασιν ἀφ’ ἑτέρου
-<lb n="16"/>πράγματος ἐφ’ ἕτερον ἐπιτελοῦν〈ται〉 δι’ ἀκολουθίας
+<lb n="16"/>πράγματος ἐφ’ ἕτερον ἐπιτελοῦν<supplied reason="omitted">ται</supplied> δι’ ἀκολουθίας
 <lb n="17"/>ἢ μάχης ἤτοι γ’ ἐλλιποῦς ἑκατέρας ἢ τελείας, καὶ
 <lb n="18"/>τρίτον παρὰ ταύτας γένος οὐδέν ἐστι τῆς ἀφ’ ἑτέρου
 <lb n="19"/>μεταβάσεως ἐφ’ ἕτερον εἰς ἀπόδειξιν χρήσιμον. <milestone unit="subchapter" n="11"/> ἔσονται
@@ -933,11 +1009,11 @@
 <lb n="23"/>δεύτερος, οἱ δ’ ἐκ τῆς μάχης τέταρτος καὶ πέμπτος,
 <lb n="24"/>ἐπειδὴ Χρύσιππος οὕτως ἔθετο, {γ} δὲ κατὰ τὴν λέξιν
 <lb n="25"/>ὁ αὐτὸς τῷ Χρυσίππῳ, κατὰ δὲ τὴν τῶν αἰτητῶν φύσιν
-<lb n="26"/>οὐχ ὁ αὐτός· οὐχ 〈ὡς〉 ᾤετο γὰρ ἐξ <milestone unit="ed1page" n="40"/> ἀποφατικοῦ
+<lb n="26"/>οὐχ ὁ αὐτός· οὐχ <supplied reason="omitted">ὡς</supplied> ᾤετο γὰρ ἐξ <milestone unit="ed1page" n="40"/> ἀποφατικοῦ
 <pb n="35"/>
-<lb n="1"/>〈συμπεπλεγμένου, ἀλλ’ ἐκ〉 μάχης ἐλλιποῦς ἡ γένεσις
+<lb n="1"/><supplied reason="omitted">συμπεπλεγμένου, ἀλλ’ ἐκ</supplied> μάχης ἐλλιποῦς ἡ γένεσις
 <lb n="2"/>αὐτῷ καταφατικὴν ἔχοντι μίαν πρόσληψιν, οὐχ ὥσπερ
-<lb n="3"/>οἱ ἐξ ἀκολουθίας τελείας 〈καὶ μάχης τελείας〉 ἑκάτερος
+<lb n="3"/>οἱ ἐξ ἀκολουθίας τελείας <supplied reason="omitted">καὶ μάχης τελείας</supplied> ἑκάτερος
 <lb n="4"/>δύο.
 </p>
         </div>
@@ -951,22 +1027,22 @@
 <lb n="10"/>γαστρὸς πεπεμμένων ἢ ὑπὸ τῶν μορίων ἑλκομένων ἢ
 <lb n="11"/>ὑπὸ τῶν φλεβῶν παραγομένων γίγνεται’ — <milestone unit="subchapter" n="2"/> συγχωρείσθω
 <lb n="12"/>δὲ καὶ πάνθ’ ὑπάρχειν ἅμα δύνασθαι· καὶ γὰρ
-<lb n="13"/>δύναται καὶ κατ’ αὐτό γε τοῦτο 〈τὸ〉 παραδιεζευγμένον
+<lb n="13"/>δύναται καὶ κατ’ αὐτό γε τοῦτο <supplied reason="omitted">τὸ</supplied> παραδιεζευγμένον
 <lb n="14"/>τοῦ διεζευγμένου διήνεγκεν· ἐπ’ ἐκείνου μὲν γὰρ ἓν
 <lb n="15"/>πάντως ἐστί, τῶν ἄλλων δ’ οὐδέν, ἐπὶ τούτου δὲ πάντως
-<lb n="16"/>ἕν τι, δύναται δὲ καί 〈τι〉 τῶν ἄλλων καὶ πάντα
+<lb n="16"/>ἕν τι, δύναται δὲ καί <supplied reason="omitted">τι</supplied> τῶν ἄλλων καὶ πάντα
 <lb n="17"/>τὰ κατειλημμένα τὴν ὕπαρξιν ἔχειν ἅμα — <milestone unit="subchapter" n="3"/> προσλήψεις
-<lb n="18"/>〈δ’〉 ἔσονται τούτοις τοῦ ἀξιώματος ἀποφατικαὶ μὲν
-<lb n="19"/>πάντως [κατὰ μίαν τοῖς] καθ’ ἓν τῶν 〈κατ’ αὐτὸ〉
+<lb n="18"/><supplied reason="omitted">δ’</supplied> ἔσονται τούτοις τοῦ ἀξιώματος ἀποφατικαὶ μὲν
+<lb n="19"/>πάντως [κατὰ μίαν τοῖς] καθ’ ἓν τῶν <supplied reason="omitted">κατ’ αὐτὸ</supplied>
 <lb n="20"/>γιγνομένων ἢ κατὰ δύο μόνον· καὶ καθ’ ἓν μὲν οἷον
 <lb n="21"/><milestone unit="ed1page" n="41"/>‘ἀνάδοσις τῆς τροφῆς ἐκ κοιλίας εἰς ὅλον τὸ σῶμα
 <pb n="36"/>
 <lb n="1"/>ἤτοι τῆς κοιλίας ἐκθλιβούσης ἢ τῶν φλεβῶν παραγουσῶν
 <lb n="2"/>ἢ τῶν μορίων ἑλκόντων ἢ αὐτῆς τῆς τροφῆς
 <lb n="3"/>ἐξ αὑτῆς φερομένης γίγνεται· ἀλλὰ μὴν ἡ γαστὴρ οὐκ
-<lb n="4"/>ἐκθλίβει· ἤτοι ἄρα τῶν φλεβῶν παραγουσῶν 〈ἢ〉 τῶν
+<lb n="4"/>ἐκθλίβει· ἤτοι ἄρα τῶν φλεβῶν παραγουσῶν <supplied reason="omitted">ἢ</supplied> τῶν
 <lb n="5"/>μορίων ἑλκόντων ἢ ἐξ αὑτῆς ἡ τροφὴ φέρεται’. <milestone unit="subchapter" n="4"/> ἔσται
-<lb n="6"/>δὲ δηλονότι καὶ τοῦτο 〈τὸ〉 συμπέρασμα παρ〈αδι〉εζευγμένον
+<lb n="6"/>δὲ δηλονότι καὶ τοῦτο <supplied reason="omitted">τὸ</supplied> συμπέρασμα παρ<supplied reason="omitted">αδι</supplied>εζευγμένον
 <lb n="7"/>ἐκ τριῶν, ὥσπερ γε κἂν ἓν ὁτιοῦν ἄλλο, καθάπερ
 <lb n="8"/>νῦν ἡ γαστήρ, οὕτως αὐτὸ ῥηθῇ μὴ εἶναι· τὰ γὰρ
 <lb n="9"/>ὑπόλοιπα τρία κατὰ τὸ παραδιεζευγμένον ἀξίωμα σύνθετον
@@ -974,13 +1050,13 @@
             <milestone unit="subchapter" n="5"/>καὶ τὸ συμπέρασμα ἐργάζεται. ἑτέρα δὲ πρόσληψις
 <lb n="11"/>ἔσται καθ’ ἣν οὔτε τὴν κοιλίαν πέμπειν οὔτε
 <lb n="12"/>τὰς φλέβας παράγειν ἐροῦμεν οὔτε τὴν τροφὴν ἐξ
-<lb n="13"/>ἑαυτῆς φέρεσθαι ἢ ὁπωσοῦν ἄλλως 〈{γ}〉 ἀξιωμάτων ἀπόφασιν
+<lb n="13"/>ἑαυτῆς φέρεσθαι ἢ ὁπωσοῦν ἄλλως <supplied reason="omitted">{γ}</supplied> ἀξιωμάτων ἀπόφασιν
 <lb n="14"/>προσληψόμεθα· <milestone unit="ed1page" n="42"/> δύναται γὰρ πολλαχῶς. <milestone unit="subchapter" n="6"/> καὶ
 <lb n="15"/>τριῶν μὲν † μᾶλλον ἄμεινον τὸ τέταρτον περαίνεσθαι,
 <lb n="16"/><milestone unit="ms1folio" n="10r"/>καταφατικῶς δὲ καὶ διωρισμέν(ως)· ἄχρι γὰρ ἤτοι
 <lb n="17"/>(γ’ ἕ)ν τι τῶν τεττάρ(ων) ἢ δύο λαμβάνεται, τὸ συμπέρασμα
 <lb n="18"/>παραδιεζευγμένον ἐστίν. <milestone unit="subchapter" n="7"/> ὁ δὲ τοιοῦτος συλλογισμὸς
-<lb n="19"/>〈τὸ〉 αὐτὸ ὑπομένειν δόξει τῷδε ‘〈εἰ〉 ἀναδίδοται
+<lb n="19"/><supplied reason="omitted">τὸ</supplied> αὐτὸ ὑπομένειν δόξει τῷδε ‘<supplied reason="omitted">εἰ</supplied> ἀναδίδοται
 <lb n="20"/>ἡ τροφὴ ἐκ τῆς κοιλίας εἰς ὅλον τὸ σῶμα,
 <lb n="21"/>ἤτοι ἐξ αὑτῆς φερομένη τοῦτο πάσχει ἢ ὑπὸ τῆς
 <lb n="22"/>γαστρὸς πεμπομένη ἢ ὑπὸ τῶν μορίων ἑλκομένη ἢ
@@ -1002,15 +1078,15 @@
 <lb n="13"/>ὀλίγον ἔμπροσθεν εἶπον συλλογισμόν, γίγνεται κατὰ
 <lb n="14"/>τὸ παραδιεζευγμένον ὡς ὁμολογουμένου τοῦ παραδιεζευγμένου
 <lb n="15"/>τήν τε πρόσληψιν λαμβάνει καθάπερ εἰ
-<lb n="16"/>καὶ διεζευγμένον ἦν 〈τὸ〉 τοιοῦτον <milestone unit="ed1page" n="44"/> ‘ἤτοι ἐξ αὑτῶν
+<lb n="16"/>καὶ διεζευγμένον ἦν <supplied reason="omitted">τὸ</supplied> τοιοῦτον <milestone unit="ed1page" n="44"/> ‘ἤτοι ἐξ αὑτῶν
 <lb n="17"/>ἀναδίδοται τὰ σιτία ἢ ὑπὸ τῆς γαστρὸς ἐπέμπετο ἢ
 <lb n="18"/>ὑπὸ τῶν φλεβῶν παράγεται ἢ ὑπὸ τῶν τοῦ σώματος
-<lb n="19"/>μορίων ἕλκεται’· ἀλλὰ μὴν 〈οἱ〉 ἐπὶ τῷ διεζευγμένῳ
-<lb n="20"/>συλλογισμοὶ προσλήψεις ἔχουσι δύο, ἤτοι γε 〈ἕν〉 τι
+<lb n="19"/>μορίων ἕλκεται’· ἀλλὰ μὴν <supplied reason="omitted">οἱ</supplied> ἐπὶ τῷ διεζευγμένῳ
+<lb n="20"/>συλλογισμοὶ προσλήψεις ἔχουσι δύο, ἤτοι γε <supplied reason="omitted">ἕν</supplied> τι
 <lb n="21"/>τῶν κατὰ τὸ διεζευγμένον ἢ καὶ τὰ ἄλλα πάντα πλὴν
 <pb n="38"/>
 <lb n="1"/><milestone unit="subchapter" n="10"/>ἑνὸς οὐχ ὑπάρχειν. ὅτι δὲ πρὸς ἀπόδειξιν οἱ τοιοῦτοι
-<lb n="2"/>συλλογισμοὶ 〈χρήσιμοι〉, δηλοῖ καὶ Πλάτων ἐν Ἀλκιβιάδῃ
+<lb n="2"/>συλλογισμοὶ <supplied reason="omitted">χρήσιμοι</supplied>, δηλοῖ καὶ Πλάτων ἐν Ἀλκιβιάδῃ
 <lb n="3"/>κεχρημένος κατὰ δύναμιν τῷ δευτέρῳ τῶν ὑποθετικῶν,
 <lb n="4"/>ἔνθα φησίν ‘εἰ Ἀλκιβιάδης οἶδε τὰ δίκαια, ἤτοι παρ’
 <lb n="5"/>ἑτέρου μαθὼν ἢ αὐτὸς εὑρὼν οἶδεν’, εἶτα δείξας ὅτι μήτε
@@ -1031,39 +1107,39 @@
 <lb n="15"/>Ἀριστοτέλην τοῖς κατηγορικοῖς συναριθμ(εῖν)· ἔστι δ’
 <lb n="16"/>οὐκ ὀλίγη χρῆσις αὐτῶν παρά τε τοῖς σκεπτικοῖς καὶ
 <lb n="17"/>ἀριθμητικοῖς καὶ λογιστικοῖς ἐπὶ τοιούτων [καὶ] τινῶν
-<lb n="18"/>λόγων ‘Δίωνος Θέων διπλάσια κέκτηται· 〈ἀλλὰ καὶ
-<lb n="19"/>Θέωνος Φίλων διπλάσια κέκτηται·〉 Δίωνος ἄρα Φίλων
+<lb n="18"/>λόγων ‘Δίωνος Θέων διπλάσια κέκτηται· <supplied reason="omitted">ἀλλὰ καὶ
+<lb n="19"/>Θέωνος Φίλων διπλάσια κέκτηται·</supplied> Δίωνος ἄρα Φίλων
 <lb n="20"/>{δ}πλάσια κέκτηται’. <milestone unit="subchapter" n="2"/> καὶ κατ’ ἀντιστροφὴν δὲ τῆς λέξεως
-<lb n="21"/>〈ὁ〉 αὐτὸς τῇ δυνάμει λόγος οὕτως ἐρωτηθήσεται ‘Δίων
+<lb n="21"/><supplied reason="omitted">ὁ</supplied> αὐτὸς τῇ δυνάμει λόγος οὕτως ἐρωτηθήσεται ‘Δίων
 <lb n="22"/>Θέωνος ἡμίση κέκτηται· <milestone unit="ed1page" n="46"/> ἀλλὰ καὶ Θέων Φίλωνος
 <lb n="23"/>ἡμίση κέκτηται· Δίων ἄρα Φίλωνος τέταρτον μέρος
 <lb n="24"/>ἔχει τῆς κτήσεως’. <milestone unit="subchapter" n="3"/> οὕτως οὖν καὶ κατ’ ἄλλον ὁντινοῦν
 <pb n="39"/>
 <lb n="1"/>λόγον πολλαπλάσιον ἀποδεικτικῶς ἐρωτηθήσεται συλλ(ογισμός)·
 <lb n="2"/>εἰ γὰρ ὅδε τις ὁ ἀριθμὸς τοῦδέ τινος εἴη
-<lb n="3"/>τριπλάσιος, 〈τοῦ δὲ τριπλασίου〉 πάλιν ἕτερος εἴη τριπλάσιος,
-<lb n="4"/>ἐννεαπλάσιος 〈ἂν〉 εἴη ὁ μείζων ἀριθμὸς τοῦ
+<lb n="3"/>τριπλάσιος, <supplied reason="omitted">τοῦ δὲ τριπλασίου</supplied> πάλιν ἕτερος εἴη τριπλάσιος,
+<lb n="4"/>ἐννεαπλάσιος <supplied reason="omitted">ἂν</supplied> εἴη ὁ μείζων ἀριθμὸς τοῦ
 <lb n="5"/>ἐλάττονος, καὶ ἀναστρέψαντί σοι πάλιν ὁ ἐλάττων τοῦ
-<lb n="6"/>μείζονος ἔνατον ἔσται μέρος. <milestone unit="subchapter" n="4"/> οὕτως δὲ καὶ 〈κατὰ〉
+<lb n="6"/>μείζονος ἔνατον ἔσται μέρος. <milestone unit="subchapter" n="4"/> οὕτως δὲ καὶ <supplied reason="omitted">κατὰ</supplied>
 <lb n="7"/>τὰς προσθέσεις τε καὶ ἀφαιρέσεις· ἐὰν γὰρ ὁ πρῶτος
 <lb n="8"/>ἀριθμὸς τῷ δευτέρῳ <milestone unit="ms1folio" n="10v"/> ἴσος ὑπάρχῃ, προστεθῇ δὲ
-<lb n="9"/>(ἑ)κ(α)τέρῳ αὐτῶν ἴσος ἕτερος, ἔσται καὶ 〈ὁ〉 ὅλος τῷ
+<lb n="9"/>(ἑ)κ(α)τέρῳ αὐτῶν ἴσος ἕτερος, ἔσται καὶ <supplied reason="omitted">ὁ</supplied> ὅλος τῷ
 <lb n="10"/>ὅλῳ ἴσος, καὶ ἢν ἴσοιν δυοῖν ὄντων ἴσοι δύο ἀφαιρεθῶσιν
 <lb n="11"/>ἀφ’ ἑκατέρου, καὶ ὁ λοιπὸς τῷ λοιπῷ ἴσος ἔσται.
 <lb n="12"/><milestone unit="subchapter" n="5"/>πολὺ δὲ πλῆθός ἐστιν, ὡς ἔφην, ἐν ἀριθμητικοῖς τε καὶ
 <lb n="13"/>λογιστικοῖς τοιούτων συλλογισμῶν ὧν ἁπάντων ἐστὶ
 <lb n="14"/>(κ)οινὸν ἔκ τινων ἀξιωμάτων τὴν αἰτίαν ἴσχειν συστάσεως,
-<lb n="15"/>〈ὧν〉 ἐν τοῖς εἰρημένοις λόγοις μνημονεύοντες εἰς τοὺς
+<lb n="15"/><supplied reason="omitted">ὧν</supplied> ἐν τοῖς εἰρημένοις λόγοις μνημονεύοντες εἰς τοὺς
 <lb n="16"/>κατηγορικοὺς ἀνάγειν λόγους δυνησόμεθα τοὺς τοιούτους
 <lb n="17"/>συλλογισμοὺς σαφέστερον πάλιν ἀρξάμενοι. <milestone unit="subchapter" n="6"/> ὄντος
 <lb n="18"/>γὰρ ἀξιώματος τοῦδε καθόλου τὴν πίστιν ἔχοντος ἐξ
-<lb n="19"/>ἑαυτοῦ <milestone unit="ed1page" n="47"/> ‘τὰ τῷ αὐτῷ ἴσα καὶ 〈ἀλλήλοις ἐστὶν ἴσα’〉,
+<lb n="19"/>ἑαυτοῦ <milestone unit="ed1page" n="47"/> ‘τὰ τῷ αὐτῷ ἴσα καὶ <supplied reason="omitted">ἀλλήλοις ἐστὶν ἴσα’</supplied>,
 <lb n="20"/>συλλογίζεσθαί τε καὶ ἀποδεικνύναι ἔστιν ὥσπερ Εὐκλείδης
 <lb n="21"/>ἐν τῷ πρώτῳ θεωρήματι τὴν ἀπόδειξιν ἐποιήσατο
 <lb n="22"/>τὰς τοῦ τριγώνου πλευρὰς ἴσας δεικνύων· ἐπεὶ γὰρ τὰ
 <pb n="40"/>
-<lb n="1"/>τῷ αὐτῷ ἴσα καὶ ἀλλήλοις ἴσα ἐστίν, δέδεικται 〈δὲ〉
-<lb n="2"/>τὸ πρῶτόν τε καὶ τὸ δεύτερον 〈τῷ τρίτῳ ἴσον〉, ἑκατέρῳ
+<lb n="1"/>τῷ αὐτῷ ἴσα καὶ ἀλλήλοις ἴσα ἐστίν, δέδεικται <supplied reason="omitted">δὲ</supplied>
+<lb n="2"/>τὸ πρῶτόν τε καὶ τὸ δεύτερον <supplied reason="omitted">τῷ τρίτῳ ἴσον</supplied>, ἑκατέρῳ
 <lb n="3"/>αὐτῶν ἴσον ἂν εἴη οὕτω τὸ πρῶτον. <milestone unit="subchapter" n="7"/> ὄντος δὲ
 <lb n="4"/>πάλιν ἀξιώματος ἐξ ἑαυτοῦ πιστοῦ τοῦδε ‘ἂν ἴσοις ἴσα
 <lb n="5"/>προστεθῇ, καὶ τὰ ὅλα ἴσα ἔσται’, ἐὰν ὡμολογημένων
@@ -1072,21 +1148,21 @@
 <lb n="8"/>τῷ ὅλῳ ἴσον, ὡδί πως λεγόντων ἡμῶν ‘ἐπεὶ τὸ πρῶτον
 <lb n="9"/>ἴσον ἐστὶ τῷ δευτέρῳ, πρόσκειται δὲ τῷ μὲν πρώτῳ
 <lb n="10"/>τὸ {γ}, τῷ δὲ δευτέρῳ τὸ {δ} ἴσα ὄντα καὶ αὐτά, γενηθήσεται
-<lb n="11"/>〈καὶ〉 τὸ ὅλον τῷ ὅλῳ ἴσον’. <milestone unit="subchapter" n="8"/>
+<lb n="11"/><supplied reason="omitted">καὶ</supplied> τὸ ὅλον τῷ ὅλῳ ἴσον’. <milestone unit="subchapter" n="8"/>
             <milestone unit="ed1page" n="48"/> ὡσαύτως δὲ
 <lb n="12"/>κἀπειδὰν ἀπό τινων ἴσων ἴσα ἀφαιρεθῇ, δυνησόμεθα
 <lb n="13"/>λέγειν ‘ἐπεὶ τὸ ὅλον τῷ ὅλῳ ἴσον, ἀφαιρεῖται δὲ ἀφ’
-<lb n="14"/>ἑκατέρου αὐτῶν ἴσα τάδε, καὶ τὸ λοιπὸν 〈τόδε〉 τῷδε
-<lb n="15"/>〈τῷ〉 λοιπῷ ἴσον ἔσται’. <milestone unit="subchapter" n="9"/> οὕτως δὲ καὶ τὸ τοῦ διπλασίου
+<lb n="14"/>ἑκατέρου αὐτῶν ἴσα τάδε, καὶ τὸ λοιπὸν <supplied reason="omitted">τόδε</supplied> τῷδε
+<lb n="15"/><supplied reason="omitted">τῷ</supplied> λοιπῷ ἴσον ἔσται’. <milestone unit="subchapter" n="9"/> οὕτως δὲ καὶ τὸ τοῦ διπλασίου
 <lb n="16"/>διπλάσιον τετραπλάσιον ἔσται· ἐὰν δή τινος ἕτερον
 <lb n="17"/>διπλάσιον ληφθῇ κἀκείνου δὲ πάλιν διπλάσιον ληφθῇ,
 <lb n="18"/><milestone unit="subchapter" n="10"/>ἔσται τοῦτο τὸ {γ} τοῦ α . τετραπλάσιον. ὁμοίως δὲ
 <lb n="19"/>κἀπὶ τῶν ἄλλων ἁπάντων ἡ σύστασις τῶν ἀποδεικτικῶν
 <lb n="20"/>συλλογισμῶν κατὰ δύναμιν ἀξιώματος ἔσται συνημμένου
 <lb n="21"/>ἐπὶ ἀριθμῶν ἐπί τε ἄλλων πραγμάτων ἐν τῷ
-<lb n="22"/>πρός τι γένει καὶ αὐτῶν ὑπαρχόντων· 〈καὶ γὰρ ἐπὶ
-<lb n="23"/>τούτων〉 ὁ συλλογισμὸς ἔσται κατά τι τῶν ἀξιωμάτων,
-<lb n="24"/>οἷον οὑτωσί ‘〈εἰ〉 Σωφρονίσκος πατήρ ἐστι Σωκράτους,
+<lb n="22"/>πρός τι γένει καὶ αὐτῶν ὑπαρχόντων· <supplied reason="omitted">καὶ γὰρ ἐπὶ
+<lb n="23"/>τούτων</supplied> ὁ συλλογισμὸς ἔσται κατά τι τῶν ἀξιωμάτων,
+<lb n="24"/>οἷον οὑτωσί ‘<supplied reason="omitted">εἰ</supplied> Σωφρονίσκος πατήρ ἐστι Σωκράτους,
 <pb n="41"/>
 <lb n="1"/>Σωκράτης υἱός ἐστι Σωφρονίσκου’ καὶ ἀνάπαλιν ‘εἰ
 <lb n="2"/>Σωκράτης υἱός ἐστι Σωφρονίσκου, πατήρ ἐστι Σωφρονίσκος
@@ -1098,8 +1174,8 @@
 <lb n="8"/>ἄρα πατήρ ἐστι Σωκράτους’· κατηγορικαῖς
 <lb n="9"/>δὲ προτάσεσι βιαιότερον ἔσται ἡ σύστασις τοῦ λογισμοῦ,
 <lb n="10"/>προτεινομένου δηλονότι καθόλου κἀνταῦθά τινος ἀξιώματος
-<lb n="11"/>τοιούτου ‘〈ὅν τις πατέρα ἔχει, υἱός ἐστι τούτου·〉
-<lb n="12"/>Λαμπροκλῆς Σωκράτην 〈ἔχει πατέρα〉· υἱὸς ἄρα ἐστὶ
+<lb n="11"/>τοιούτου ‘<supplied reason="omitted">ὅν τις πατέρα ἔχει, υἱός ἐστι τούτου·</supplied>
+<lb n="12"/>Λαμπροκλῆς Σωκράτην <supplied reason="omitted">ἔχει πατέρα</supplied>· υἱὸς ἄρα ἐστὶ
 <lb n="13"/>Λαμπροκλῆς Σωκράτους’. <milestone unit="subchapter" n="12"/> ὡσαύτως δὲ καὶ οἱ καθ’
 <lb n="14"/>ἡντινοῦν σχέσιν ἐρωτώμενοι συλλογισμοὶ γενικῷ ἀξιώματι
 <lb n="15"/>πιστὴν τὴν σύστασιν ἕξουσι καὶ τὴν τῆς ἀποδείξεως
@@ -1107,7 +1183,7 @@
 <lb n="17"/>ὂν ὅτι καὶ οὗτοι τῶν ὁμογενῶν εἰσι τοῖς κατὰ τὴν
 <lb n="18"/>τοῦ πρός τι κατηγορίαν συνισταμένοις· ὧν εἴρηται μὲν
 <lb n="19"/>κατ’ αὐτὴν τὴν τοῦ μᾶλλον φωνὴν ἐν τοῖς <milestone unit="ms1folio" n="11r"/> [μᾶλλον]
-<lb n="20"/>〈περὶ〉 τούτων ὑπομνήμασι τὰ παραδείγματα, καὶ
+<lb n="20"/><supplied reason="omitted">περὶ</supplied> τούτων ὑπομνήμασι τὰ παραδείγματα, καὶ
 <lb n="21"/>χωρὶς δὲ τῆς μᾶλλον φωνῆς οἱ τοιοῦτοι <milestone unit="ed1page" n="50"/> συλλογισμοὶ
 <lb n="22"/>λέγονται κατὰ δύναμιν αὐτῆς ὁποῖός ἐστι καὶ
 <pb n="42"/>
@@ -1115,17 +1191,17 @@
 <lb n="2"/>σώματος· αἱρετωτέρα ἄρα ἡ τῆς ψυχῆς ἀρετὴ τῆς τοῦ
 <lb n="3"/>σώματος’. <milestone unit="subchapter" n="13"/> ὁμοίως δὲ τούτων καὶ ὁ τοιοῦτος συλλογισμός
 <lb n="4"/>‘τὸ τοῦ κρείττονος ἀγαθὸν αἱρετώτερον· κρείττων
-<lb n="5"/>[ἦν] δὲ ψυχὴ σώματος· 〈αἱρετώτερον ἄρα τοῦ τοῦ
-<lb n="6"/>σώματός〉 (ἐστι) τὸ τῆς ψυχῆς’.
+<lb n="5"/>[ἦν] δὲ ψυχὴ σώματος· <supplied reason="omitted">αἱρετώτερον ἄρα τοῦ τοῦ
+<lb n="6"/>σώματός</supplied> (ἐστι) τὸ τῆς ψυχῆς’.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="17" xml:id="_17">
           <p rend="indent">
 <lb n="7"/>Καὶ σχεδὸν ἅπαντες οἱ συλλογισμοὶ διὰ τὴν
 <lb n="8"/>τῶν ἐπιτεταγμένων αὐτοῖς καθολικῶν ἀξιωμάτων πίστιν
-<lb n="9"/>ἔχουσι τὴν σύστασιν, 〈ὃ〉 ὕστερόν ποτέ μοι νοηθὲν
+<lb n="9"/>ἔχουσι τὴν σύστασιν, <supplied reason="omitted">ὃ</supplied> ὕστερόν ποτέ μοι νοηθὲν
 <lb n="10"/>οὔτε [δ’] ἐν τοῖς Περὶ ἀποδείξεως ὑπομνήμασιν οὔτε
-<lb n="11"/>〈ἐν τῷ〉 Περὶ τοῦ τῶν συλλογισμῶν ἀριθμοῦ γέγραπται.
+<lb n="11"/><supplied reason="omitted">ἐν τῷ</supplied> Περὶ τοῦ τῶν συλλογισμῶν ἀριθμοῦ γέγραπται.
 <lb n="12"/><milestone unit="subchapter" n="2"/>καίτοι τοὺς εἰς τὸ πρός τι συλλογισμοὺς ᾔδειμεν οὖν
 <lb n="13"/>καὶ κατ’ ἐκείνας τὰς πραγματείας, εὑρηκότες τὸν τῆς
 <lb n="14"/>συστάσεως τρόπον αὐτῶν καὶ τῆς πίστεως· ὅτι δὲ
@@ -1134,10 +1210,10 @@
 <lb n="17"/>ἐναργέστερον ἅπασι τοῖς ὁπωσοῦν <milestone unit="ed1page" n="51"/> ἠσκημένοις λόγοις
 <lb n="18"/>τοιούτοις ἐπιβλέψασι καθάπερ ἔχει καὶ ὁ τοιόσδε
 <lb n="19"/>‘λέγεις “ἡμέρα ἐστίν”· ἀλλὰ καὶ ἀληθεύεις· ἡμέρα
-<lb n="20"/>〈ἄρα〉 ἐστίν’. <milestone unit="subchapter" n="3"/> ἀποδεικτικός ἐστι καὶ ὁ τοιοῦτος συλλογισμός,
-<lb n="21"/>διότι καὶ τὸ καθόλου ἀξίωμα 〈ᾧ〉 ὑποπέπτωκεν
+<lb n="20"/><supplied reason="omitted">ἄρα</supplied> ἐστίν’. <milestone unit="subchapter" n="3"/> ἀποδεικτικός ἐστι καὶ ὁ τοιοῦτος συλλογισμός,
+<lb n="21"/>διότι καὶ τὸ καθόλου ἀξίωμα <supplied reason="omitted">ᾧ</supplied> ὑποπέπτωκεν
 <pb n="43"/>
-<lb n="1"/>ἀληθές ἐστι τοιοῦτον ὑπάρχον ‘〈ἔστιν ὃ〉
+<lb n="1"/>ἀληθές ἐστι τοιοῦτον ὑπάρχον ‘<supplied reason="omitted">ἔστιν ὃ</supplied>
 <lb n="2"/>ἀληθεύων τις λέγει· ὁ δέ τις οἷον Θέων εἰ τύχοι λέγει
 <lb n="3"/>“ἡμέρα ἐστίν”· † οἷον ἄρα ἐστὶν ἡμέρα’· τοῦτο δὲ διὰ
 <lb n="4"/>σαφεστέρας λέξεως καὶ οὕτως λέγεται ‘* * *· ἡμέρα
@@ -1166,7 +1242,7 @@
 <lb n="4"/>ἢ τὰ ὄντα μὴ εἶναι. <milestone unit="subchapter" n="7"/> προσέχειν οὖν χρὴ τὸν ὁτιοῦν
 <lb n="5"/>συλλογιζόμενον ἢ ἀποδεικνύντα δύο τοῖσδε πρώτοις
 <lb n="6"/>καὶ μάλιστα, τό τε σημαινόμενον ἐκ τῆς φωνῆς ἀκούειν
-<lb n="7"/>κατὰ τὸ 〈τῶν〉 <milestone unit="ed1page" n="53"/> Ἑλλήνων ἔθος τό τε λαμβανόμενον
+<lb n="7"/>κατὰ τὸ <supplied reason="omitted">τῶν</supplied> <milestone unit="ed1page" n="53"/> Ἑλλήνων ἔθος τό τε λαμβανόμενον
 <lb n="8"/>λῆμμα πότερον ὡς ὑποπεπτωκὸς ἀξιώματι καθόλου δι’
 <lb n="9"/>ἐκεῖνο αὐτὸ πιστόν ἐστιν ἢ δι’ ἄλλο τι — τὰ πλεῖστα
 <lb n="10"/>γὰρ ὧν οἱ ἄνθρωποι συλλογίζονται καὶ ἀποδεικνύουσι,
@@ -1176,26 +1252,26 @@
 <lb n="14"/>ὑπεθέμεθα κατὰ τὴν προκειμένην διδασκαλίαν. <milestone unit="subchapter" n="8"/> κοινωνεῖ
 <lb n="15"/>δὲ πολλάκι(ς) ὁ τοιοῦτος λόγος τῷ σημαινομένῳ,
 <lb n="16"/>καθάπερ (ἀμ)έλει καὶ κατ’ αὐτὸν τοῦτον τὸν προειρημένον
-<lb n="17"/>ἄρτι λόγον, ὃν ἐπωνόμασα 〈δι’〉 ὡρισμένου,
-<lb n="18"/>σαφέστερον ἐρωτήσειεν (ἄν) τις 〈οὕτως ‘ἀλήθειά ἐστι
-<lb n="19"/>λόγος ἑρμηνευτικὸς τῶν ὄντων·〉 Δίων ἀληθεύει πάντα,
+<lb n="17"/>ἄρτι λόγον, ὃν ἐπωνόμασα <supplied reason="omitted">δι’</supplied> ὡρισμένου,
+<lb n="18"/>σαφέστερον ἐρωτήσειεν (ἄν) τις <supplied reason="omitted">οὕτως ‘ἀλήθειά ἐστι
+<lb n="19"/>λόγος ἑρμηνευτικὸς τῶν ὄντων·</supplied> Δίων ἀληθεύει πάντα,
 <lb n="20"/>ἀλλὰ καὶ μαντικ(ὴν) <milestone unit="ms1folio" n="11v"/> εἶναι λέ(γει)· ἄρα ἔστι μαντική·
 <lb n="21"/>εἰ γὰρ πάντ’ ἀληθεύει Δίων, εὔδηλον ὅτι καὶ
 <lb n="22"/>αὐτὸ τοῦτο τὸ τὴν μαντικὴν εἶναι· εἰ δὲ ἀληθές ἐστι
 <lb n="23"/>τὸ εἶναι μαντικήν, ἔστι μαντική’. <milestone unit="subchapter" n="9"/> ἐν γὰρ τούτῳ τῷ
-<lb n="24"/>λόγῳ τὸ μὲν ἐκ τῆς 〈ἀλήθεια〉 φωνῆς σημαίνεσθαι
+<lb n="24"/>λόγῳ τὸ μὲν ἐκ τῆς <supplied reason="omitted">ἀλήθεια</supplied> φωνῆς σημαίνεσθαι
 <lb n="25"/>λόγον ἑρμηνευτικὸν τῶν ὄντων ἐξήγησίς ἐστι τοῦ σημαινομένου
 <pb n="45"/>
 <lb n="1"/>πρὸς τῆς ἀλήθεια φωνῆς, τὸ δὲ πάντῃ
 <lb n="2"/>ἀληθεύειν Δίωνα ἐν χώρᾳ τοῦ καθόλου ἀξιώματος
-<lb n="3"/>εἴληπται, τὸ δὲ 〈συμπέρασμα τόδε〉 ‘εἰ πάντα ἀληθεύει
-<lb n="4"/>Δίων, ἓν δέ τι 〈ὧν φησι〉 <milestone unit="ed1page" n="54"/> καὶ τοῦτ’ ἔστι τὸ μαντικὴν
+<lb n="3"/>εἴληπται, τὸ δὲ <supplied reason="omitted">συμπέρασμα τόδε</supplied> ‘εἰ πάντα ἀληθεύει
+<lb n="4"/>Δίων, ἓν δέ τι <supplied reason="omitted">ὧν φησι</supplied> <milestone unit="ed1page" n="54"/> καὶ τοῦτ’ ἔστι τὸ μαντικὴν
 <lb n="5"/>εἶναι, ἀλη(θές) ἐστι καὶ τοῦτο’.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="18" xml:id="_18">
           <p rend="indent">
-<lb n="6"/>Καὶ περὶ μὲν οὖν τού〈του〉 κατὰ τὸ παρὸν
+<lb n="6"/>Καὶ περὶ μὲν οὖν τού<supplied reason="omitted">του</supplied> κατὰ τὸ παρὸν
 <lb n="7"/>ἀποχρήσει τὰ λελεγμένα, μεταβῶμεν δ’ ἐφ’ ἕτερόν τι
 <lb n="8"/>τοιόνδε· ἐπείπερ ἐν τῷ γένει τῶν κατὰ τὸ πρός τι
 <lb n="9"/>συλλογισμῶν εἰσιν ὥσπερ οἱ κατὰ τὸ μᾶλλόν τε καὶ
@@ -1239,19 +1315,19 @@
 <lb n="23"/>‘ὧν αὑτὸς ὁ λόγος καθόλου, τούτων καὶ οἱ κατὰ μέρος
 <lb n="24"/>λόγοι πάντες οἱ αὐτοί’· ὥστε ὁ ὑποθέμενος ἐν τῷ
 <pb n="47"/>
-<lb n="1"/>αὐτῷ λόγῳ εἶναι τὸ {α} 〈πρὸς τὸ {β} καὶ τὸ {γ} πρὸς
-<lb n="2"/>τὸ {δ}, τοῦ δὲ {α} πρὸς〉 τὸ {β} λόγον εἶναι διπλάσιον,
+<lb n="1"/>αὐτῷ λόγῳ εἶναι τὸ {α} <supplied reason="omitted">πρὸς τὸ {β} καὶ τὸ {γ} πρὸς
+<lb n="2"/>τὸ {δ}, τοῦ δὲ {α} πρὸς</supplied> τὸ {β} λόγον εἶναι διπλάσιον,
 <lb n="3"/>οὐκ ἂν ἀρνήσεται καὶ τοῦ {γ} πρὸς τὸ {δ} διπλάσιον εἶναι
-<lb n="4"/>λόγον, ὥσπερ γε καὶ 〈εἰ〉 τριπλάσιος λόγος τοῦ {α} πρὸς
+<lb n="4"/>λόγον, ὥσπερ γε καὶ <supplied reason="omitted">εἰ</supplied> τριπλάσιος λόγος τοῦ {α} πρὸς
 <lb n="5"/>τὸ {β}, καὶ τοῦ {γ} πρὸς τὸ {δ} τριπλάσιον εἶναι φήσει, ἢ
-<lb n="6"/>〈εἰ〉 τετραπλάσιος ἢ πενταπλάσιος ἢ ὡς ἄν τις τὸ
+<lb n="6"/><supplied reason="omitted">εἰ</supplied> τετραπλάσιος ἢ πενταπλάσιος ἢ ὡς ἄν τις τὸ
 <lb n="7"/>π(ρῶ)τον πρὸς τὸ {β} λογίζηται, φανεῖται <milestone unit="ms1folio" n="12r"/> καὶ τὸ {γ}
 <lb n="8"/>πρὸς τὸ {δ} τετραπλάσιον ἢ πενταπλάσιον εἶναι. <milestone unit="subchapter" n="7"/> εἰ γὰρ
 <lb n="9"/>ἐν τῷ καθόλου ὁ αὐτὸς λόγος ἐστὶ τοῦ {α} πρὸς τὸ {β}
-<lb n="10"/>καὶ τοῦ {γ} πρὸς τὸ {δ}, 〈καὶ τῶν〉 κατὰ μέρος λόγων
+<lb n="10"/>καὶ τοῦ {γ} πρὸς τὸ {δ}, <supplied reason="omitted">καὶ τῶν</supplied> κατὰ μέρος λόγων
 <lb n="11"/>ὁ αὐτὸς ἔσται· εἷς δὲ τῶν κατὰ μέρος λόγων [ὁ αὐτὸς
 <lb n="12"/>ἔσται] καὶ ὁ πενταπλάσιος· ἔστιν ἄρα καὶ οὗτος ὁ λόγος
-<lb n="13"/>τοῦ 〈{γ} πρὸς τὸ〉 {δ}. <milestone unit="subchapter" n="8"/> τοὺς δὴ τοιούτους ἅπαντας συλλογισμοὺς
+<lb n="13"/>τοῦ <supplied reason="omitted">{γ} πρὸς τὸ</supplied> {δ}. <milestone unit="subchapter" n="8"/> τοὺς δὴ τοιούτους ἅπαντας συλλογισμοὺς
 <lb n="14"/>τῷ γένει μὲν <milestone unit="ed1page" n="57"/> ἐκ τῶν πρὸς τι ῥητέον,
 <lb n="15"/>ἐν εἴδει δὲ κατ’ ἀξιώματος δύναμιν συνισταμένους,
 <lb n="16"/>ὥσπερ καὶ ὁ Ποσειδώνιός φησιν ὀνομάζειν αὐτοὺς
@@ -1260,7 +1336,7 @@
         </div>
         <div type="textpart" subtype="chapter" n="19" xml:id="_19">
           <p rend="indent">
-<lb n="18"/>Ἐπεὶ δὲ καὶ 〈περὶ〉 τῶν κατὰ πρόσληψιν ὀνομαζομένων
+<lb n="18"/>Ἐπεὶ δὲ καὶ <supplied reason="omitted">περὶ</supplied> τῶν κατὰ πρόσληψιν ὀνομαζομένων
 <lb n="19"/>συλλογισμῶν οἱ ἐκ τοῦ Περιπάτου γεγράφασιν
 <lb n="20"/>ὡς χρησίμων, ἐμοὶ δὲ περιττοὶ δοκοῦσιν εἶναι
 <lb n="21"/>καθότι δέδεικταί μοι κἀν τῇ Περὶ τῆς ἀποδείξεως
@@ -1270,8 +1346,8 @@
 <lb n="1"/>διεξέρχεσθαι τελείως εἰρηκότι περὶ αὐτῶν ἐν ἐκείνοις
 <lb n="2"/>τοῖς ὑπομνήμασιν· ὁποῖον δέ τι τὸ εἶδος αὐτῶν, εἰρήσεται
 <lb n="3"/>διὰ παραδειγμάτων δυοῖν. <milestone unit="subchapter" n="3"/> ἓν μὲν οὖν εἶδός
-<lb n="4"/>ἐστι τοῖον ‘καθ’ οὗ τόδε, καὶ τόδε· 〈ἀλλὰ τόδε κατὰ
-<lb n="5"/>τοῦδε· καὶ τόδε〉 ἄρα κατὰ τοῦδε’ καὶ ἐπ’ ὀνομάτων
+<lb n="4"/>ἐστι τοῖον ‘καθ’ οὗ τόδε, καὶ τόδε· <supplied reason="omitted">ἀλλὰ τόδε κατὰ
+<lb n="5"/>τοῦδε· καὶ τόδε</supplied> ἄρα κατὰ τοῦδε’ καὶ ἐπ’ ὀνομάτων
 <lb n="6"/>‘ἐφ’ οὗ δένδρον, καὶ φυτόν· δένδρον (δὲ) ἐπὶ πλατάνου·
 <lb n="7"/>καὶ φυτὸν ἄρα ἐπὶ πλατάνου·’ προσυπακοῦσαι
 <lb n="8"/>δὲ δηλονότι δεῖ τῷ κατὰ τὸν λόγον τὸ ‘κατηγορεῖται’
@@ -1280,10 +1356,10 @@
 <lb n="11"/>τούτου φυτὸν κατηγορεῖται· δένδρον δὲ πλατάνου
 <lb n="12"/>κατηγορεῖται· καὶ φυτὸν ἄρα πλατάνου κατηγορηθήσεται’.
 <lb n="13"/><milestone unit="subchapter" n="4"/>ἕτερον δὲ εἶδος συλλογισμῶν ἐκ τῶν κατὰ
-<lb n="14"/>πρόσληψιν ‘ὃ κατὰ τοῦδε, καὶ κατὰ τοῦδε· 〈τόδε δὲ
-<lb n="15"/>κατὰ τοῦδε· ὥστε καὶ κατὰ τοῦδε〉’· ἐπ’ ὀνομάτων
-<lb n="16"/>δέ ‘ὃ κατὰ δένδρου, καὶ 〈κατὰ〉 πλατάνου· φυτὸν δὲ
-<lb n="17"/><milestone unit="subchapter" n="5"/>κατὰ τοῦ δένδρου· καὶ κατὰ πλατάνου ἄρα’. 〈ὅτι〉
+<lb n="14"/>πρόσληψιν ‘ὃ κατὰ τοῦδε, καὶ κατὰ τοῦδε· <supplied reason="omitted">τόδε δὲ
+<lb n="15"/>κατὰ τοῦδε· ὥστε καὶ κατὰ τοῦδε</supplied>’· ἐπ’ ὀνομάτων
+<lb n="16"/>δέ ‘ὃ κατὰ δένδρου, καὶ <supplied reason="omitted">κατὰ</supplied> πλατάνου· φυτὸν δὲ
+<lb n="17"/><milestone unit="subchapter" n="5"/>κατὰ τοῦ δένδρου· καὶ κατὰ πλατάνου ἄρα’. <supplied reason="omitted">ὅτι</supplied>
 <lb n="18"/>δ’ οἱ τοιοῦτοι συλλογισμοὶ τῶν κατηγορικῶν ἐπιτομαί
 <lb n="19"/>τινές εἰσιν, οὐχ ἕτερον γένος αὐτῶν, ἐπιδεδειχὼς [οὖν]
 <lb n="20"/>ἐν οἷς εἶπον ὑπομνήμασιν οὐδὲν ἔτι δέομαι λέγειν
@@ -1293,10 +1369,10 @@
 <lb n="24"/>ὑπὸ Χρυσίππου συντεθέντας ἐν ταῖς τρισὶ Συλλογιστικαῖς
 <lb n="25"/>[ἀχρήστοις] ἐπιδεικτέον μοι νῦν ἐστιν ἀχρήστους
 <pb n="49"/>
-<lb n="1"/>ὄντας· ἑτέρωθι γὰρ ἔδειξα τοῦτο, καθάπερ καὶ 〈περὶ〉
-<lb n="2"/>τῶν περαντικῶν ὑπ’ αὐτοῦ κληθέντων· ἐδείχθη〈σαν〉
+<lb n="1"/>ὄντας· ἑτέρωθι γὰρ ἔδειξα τοῦτο, καθάπερ καὶ <supplied reason="omitted">περὶ</supplied>
+<lb n="2"/>τῶν περαντικῶν ὑπ’ αὐτοῦ κληθέντων· ἐδείχθη<supplied reason="omitted">σαν</supplied>
 <lb n="3"/>γὰρ καὶ τούτων ἔνιοι μὲν οὐκ ἴδιόν τι γένος ὄντες
-<lb n="4"/>συλλογισμῶν, ἀλλὰ 〈διὰ〉 πεπονθυίας λέξεως ἑρμηνευόμενοι,
+<lb n="4"/>συλλογισμῶν, ἀλλὰ <supplied reason="omitted">διὰ</supplied> πεπονθυίας λέξεως ἑρμηνευόμενοι,
 <lb n="5"/>ποτὲ μὲν κατ’ ἀκολουθίας ὑπέρθεσιν * * *,
 <lb n="6"/>οἱ δὲ ὑποσυλλογιστικοὶ κληθέντες ἐν ἰσοδυναμούσαις
 <lb n="7"/>λέξεσι τοῖς συλλογιστικοῖς λεγόμενοι· τέλος δὲ περιττοὶ

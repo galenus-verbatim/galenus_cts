@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De sanitate tuenda</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg036.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -56,7 +77,6 @@
               <date>1823</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x06">BIU Santé, Medica</ref></biblStruct>
         <biblStruct>
           <monogr corresp="Basel">
@@ -98,12 +118,55 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
+    
   </teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg036.verbatim-lat1">
@@ -114,10 +177,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE SANITATE TVENDA
 <lb/>LIBER PRIMUS.</head>
-
-
 <p rend="indent">
- <lb/>Quum una sit ars, quae circa corpus hominis
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quum una sit ars, quae circa corpus hominis
 <lb/>occupatur, ut in alio libro demonstratum esu
 <lb/>ejus primae ac maximae partes sunt duae; quarum
 <lb/>altera sanitatis conservatrix, altera curatrix appellatur;
@@ -148,10 +209,8 @@
 </div>
 <pb n="6.3"/>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Sane, quae corpus nothum laedunt corrumpuntque,
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Sane, quae corpus nothum laedunt corrumpuntque,
 <lb/>ea sunt genere duplicia; alia quidem necessaria
 <lb/>et nobis congenita, quaeque ex ipsis generationis
 <lb/>principiis veluti radice oriuntur; quaedam vero non necessaria
@@ -241,10 +300,8 @@
 <lb/>sic quae deinceps sunt aggrediamur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Quum enim quotidie propter insitum ipsis
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Quum enim quotidie propter insitum ipsis
 <lb/>calorem cunctis animalibus multa substantiae portio defluat,
 <lb/>indigeamus autem ad hujus commoderationem cond
 <lb/>servandam cibo, potu, respiratione et pulsu, necesse est
@@ -282,10 +339,8 @@
 <lb/>dicetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Nunc quod reliquum est eorum, quae ab
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Nunc quod reliquum est eorum, quae ab
 <lb/>initio disserere proposuimus, adliciam, quo sanitatis tuendae
 <lb/>scopos, quot qualesque sint, clarius distinguam.
 <lb/>Diximus enim, si corpus nostrum inpatibile esset, sicut
@@ -364,10 +419,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Ab his hypothesibus, veluti fundamentis
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Ab his hypothesibus, veluti fundamentis
 <lb/>operis jactis, hinc alicunde sanitatis tuendae tractatio incipienda
 <lb/>erit. Quum sanitas commoderatio quaedam fit,
 <lb/>commoderatio vero omnis duplici ratione non solum
@@ -675,10 +728,8 @@
 <lb/>tempus durante.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>His ergo, quam somniant sanitatem, ipsis
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> His ergo, quam somniant sanitatem, ipsis
 <lb/>servandam linquimus; nos interim ad eas, quae in aperto
 <lb/>sunt, revertimur. Quarum quum duplicem statuamus
 <lb/>essentiam, de qua modo verba fecimus, tuum utrique
@@ -731,10 +782,8 @@
 <lb/>tionibus disceptabimus, agetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>De optima vero, cujus singulae partes
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> De optima vero, cujus singulae partes
 <lb/>universam substantiam inculpatam habent, nunc dicetur.
 <pb n="6.32"/>
 <lb/>Hujus ergo fortis homo, quum arti sanitatis tuendae
@@ -844,10 +893,8 @@
 <lb/>animum optime instituet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Nutricibus igitur triplex puellis excogitata
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Nutricibus igitur triplex puellis excogitata
 <lb/>motio est, in cunis, in lectulis pendentibus, in
 <lb/>ruis ipsarum ulnis; ubi iam hoc aliud quoque nobis aestimaudum
 <lb/>oritur ad sanitatis tutelam vel in primis necessarium,
@@ -1003,10 +1050,8 @@
 <lb/>de ipsis, qui nutritur, experientia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Haec igitur omnia usque in tertium a
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Haec igitur omnia usque in tertium a
 <lb/>natali annum circa puellum peragenda censeo, in primisque
 <lb/>de nutrice ipsa non minimam habendam esse
 <lb/>curam, quid edat, quid bibat, quo pacto in simine, venere,
@@ -1051,10 +1096,8 @@
 <lb/>posset.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Tum vero puellum, quoad primores dcntes
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Tum vero puellum, quoad primores dcntes
 <lb/>emiserit, solo lacte alendum, ac tum eum solidiori
 <lb/>quodammodo jam cibo assuefacere conveniet, quod etiam
 <pb n="6.48"/>
@@ -1178,10 +1221,8 @@
 <lb/>maxime comparata.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Sane vinum quam diutissime, qui ea
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Sane vinum quam diutissime, qui ea
 <lb/>natura puer est, ne gustare quidem suaserim, quippe
 <lb/>quod haustum et humectat nimium, et calefacit corpus,
 <lb/>tum caput halitu replet iis, qui humido calidoque temperamento
@@ -1281,10 +1322,8 @@
 <lb/>ipsis victus ratione in sequentibus libris persequemur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Quare rursus ad optimi status puerum
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Quare rursus ad optimi status puerum
 <lb/>reversi, ejus aetatem a primo septenario usque ad secundum
 <lb/>explicemus, et cujus temperamenti sit, et quodnam
 <lb/>postulet rictus genus. Ergo temperamentum ejus, ut iri
@@ -1453,10 +1492,8 @@
 <lb/>alia quadam nrethodo est opus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Dicamus ilaque primum, a quibus maxime
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Dicamus ilaque primum, a quibus maxime
 <lb/>remorentur dictorum excrementorum singula; mox,
 <lb/>quo pacto, quod retentum est, extrudatur. Ergo iis quae
 <lb/>in ventriculo continentur excrementis mora contingit,
@@ -1563,10 +1600,8 @@
 <lb/>nutes palpebrasque.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Ergo excrementorum tum caulas, sum
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Ergo excrementorum tum caulas, sum
 <lb/>instrumenta jam diximus. Quae quemadmodum quis retenta
 <lb/>vacuet, deinceps docendum, initio rufus a ventre
 <lb/>sumpto. Ergo illud commune omnium excrementorum
@@ -1642,10 +1677,8 @@
 <lb/>omnibus lusius agetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Nunc enim in compendium redigere
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Nunc enim in compendium redigere
 <lb/>totum opus placuit, quatenus nulla materia lateret, cujus
 <lb/>esse peritum deceat, qui omnem sanitatis tuendae artem
 <lb/>profitetur; neque enim refari, si diaeteticum voces eum,
@@ -1722,10 +1755,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE SANITATE TUENDA
 <lb/>LIBER SECVNDVS.</head>
-
-
 <p rend="indent">
- <lb/>Summas equidem sicoposque artis hygieines
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Summas equidem sicoposque artis hygieines
 <lb/>prior liber edocuit: nunc singula membratim distiuguere
 <lb/>tentandum, initio rursus ab iis sumpto, in quibus
 <lb/>proximus liber est finitus. Proponatur isaque nobis in
@@ -1773,10 +1804,8 @@
 <lb/>ferino futurus est.
 </p></div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Quodnam igitur propositae artis initium
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Quodnam igitur propositae artis initium
 <pb n="6.84"/>
 <lb/>ceperimus ad ejus tutelam corporis, quod et optimae
 <lb/>sit notae, et tertium aetatis septennium jam ingressum,
@@ -1932,9 +1961,8 @@
 </div>
 <pb n="6.92"/>
 <div type="textpart" subtype="chapter" n="3">
-
 <p rend="indent">
- <lb/>In praeparatoria vero ante exercitationes
+<lb/><label type="head"><num value="3">Cap. III.</num></label> In praeparatoria vero ante exercitationes
 <lb/>frictione, quae huc spectat, ut corpus molliat, mollis
 <lb/>duraeque mediam qualitatem dominari oportet, ac pro
 <lb/>ejusdem qualitatis ratione, quicquid reliquum est, exigi
@@ -2183,10 +2211,8 @@
 <lb/>non hoc modo dicere, sed etiam quod emaciat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Apparet ergo, Theonem aut Hippocratis artem
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Apparet ergo, Theonem aut Hippocratis artem
 <lb/>hoc loco non intellexisse, authominem laudare noluisse, qui
 <lb/>tum brevi sermone omnes non solum differentias frictionum
 <lb/>dixerit, sed etiam uniuscujusque opus et facultates.
@@ -2494,10 +2520,8 @@
 <lb/>sed Hippocrates, et qui eum sunt secuti, satis haec sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Superest ex iis, quae ad hunc locum distulimus,
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Superest ex iis, quae ad hunc locum distulimus,
 <lb/>ut de nominibus ipsis disseramus, ne quis eorum
 <lb/>numero deceptus pares numero affectus cum ipsis appellationibus
 <lb/>existimet. Duri enim vocabulum de quadam
@@ -2541,10 +2565,8 @@
 <lb/>alias sint mundi, et modo patentes, modo conniventes.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Verum de his affectibus in sequentibus
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Verum de his affectibus in sequentibus
 <lb/>libris agemus. Nunc ad propositum redeundum, ac primum
 <lb/>clarius adhuc de frictione ipsa disserendum; nempe
 <lb/>quod haec ipsa interdum per se corporibus nostris commodum
@@ -2605,10 +2627,8 @@
 <lb/>tricandum sit, postea dicemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Nunc ad propositam materiam reversi
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Nunc ad propositam materiam reversi
 <pb n="6.125"/>
 <lb/>de mensura ipsa frictionum agamus ad eundem modum,
 <lb/>quo paulo ante de qualitate egimus. Convenit autem hoc
@@ -2775,10 +2795,8 @@
 <lb/>speciebus ejus differamus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Species exercitationum voco luctam,
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Species exercitationum voco luctam,
 <lb/>pancratium, pugilatum, curium et quaecunque caetera
 <lb/>sunt ejusmodi, quorum alia tantum exercitationes sunt,
 <lb/>alia non exercitationes suium, tcd ctiam opera. Exeretsationes
@@ -2849,10 +2867,8 @@
 <lb/>exercitationis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Quoniam ergo enumerata a nobis universa
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Quoniam ergo enumerata a nobis universa
 <lb/>sunt, quorum peritum esse oportet, qui sanitatem
 <lb/>tuendam profitetur, ad ipsa nunc exercitationum genera
 <lb/>redire tempestivum est, ac primum diluere, tum quid
@@ -2978,10 +2994,8 @@
 </div>
 <pb n="6.144"/>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Superest, ut de iis dicamus, quae celaritale
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Superest, ut de iis dicamus, quae celaritale
 <lb/>peraguntur, citraque robur et violentiam. Id genus
 <lb/>sunt cursus, et umbratilis armorum meditatio, et quum
 <lb/>duo summis manibus concertant, tum quae per corycum
@@ -3032,10 +3046,8 @@
 <lb/>veluti diu currere et iter facere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Haec igitur omnia exercitationum genera
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Haec igitur omnia exercitationum genera
 <lb/>sunt, quae et modo dictas differentias habent, et supra
 <lb/>has, quod alia lumbos magis, quam brachia crurave, excrnent,
 <lb/>alia spinam totam, aut pulmonem tantum, aut
@@ -3221,10 +3233,8 @@
 <lb/>vires probe callet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Ergo gymnastes propositi nobis adolnscentis,
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Ergo gymnastes propositi nobis adolnscentis,
 <lb/>utique qui optimum corporis statum est sortitus, otonium
 <lb/>quidem exercitationum vires pernovit; deligit vero
 <lb/>coo omni genere, quod moderatum mediumque inter
@@ -3368,10 +3378,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE SANITATE TUENDA
 <lb/>LIBER TERTIVS.</head>
-
-
 <p rend="indent">
- <lb/>Medicorum gymnastarmnque qui de simitale
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Medicorum gymnastarmnque qui de simitale
 <lb/>tuenda scripferunt, alii omnium hominum communia
 <lb/>praecepta tradiderunt, nihil usquam cogitantes de corporem
 <lb/>nostrorum per species differentia. Aliis dissidere inter
@@ -3429,10 +3437,8 @@
 <lb/>diximus apotherapiam, de qua nunc agemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Est igitur unum quidem primum, quod ea
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Est igitur unum quidem primum, quod ea
 <lb/>genere duplex est; altera quidem exercitationis ceu pera,
 <lb/>altera ejus ceu species. Ac de ea quidem, quae ceu species
 <lb/>censetur, postea dicemus; de ea vero, quae ut pars
@@ -3694,10 +3700,8 @@
 </div>
 <pb n="6.181"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Ac de apotherapia quidem abunde mihi
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Ac de apotherapia quidem abunde mihi
 <lb/>dictum jam est. Deinceps ad balnea veniamus, illud
 <lb/>modo de propositis praefati, quod, si quis haec paucioribus
 <lb/>interpretabitur, is merito prolixitatem sermonis ricini accuset;
@@ -3735,10 +3739,8 @@
 <lb/>sint.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Nunc de balneis agere tempestivum videtur.
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Nunc de balneis agere tempestivum videtur.
 <lb/>Ac primum quidem de aquis dulcibus calsactis, ut
 <pb n="6.183"/>
 <lb/>quarum crebrior sit usus; mox de frigidis; postremo de
@@ -3864,10 +3866,8 @@
 <lb/>arbitror.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Errata autem, si quae contigerint, quomodo
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Errata autem, si quae contigerint, quomodo
 <lb/>quis emendet, jam dicere tempestivum est. Ut enim
 <lb/>quam maxime statum corporis illaefum tum forti tus quispiam
 <lb/>fit, ac ab omnibus, quae in vita contingunt, negotiis
@@ -3978,10 +3978,8 @@
 <lb/>remedia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Ordiendum vero ab ea, quae ulceris sensum
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Ordiendum vero ab ea, quae ulceris sensum
 <lb/>invehit; quam etiam ab excrementorum acrimonia
 <lb/>oriam diximus: haec autem lassitudo maxime in ea lucidit
 <lb/>corpora, quae et mali succi sunt, et excrementis abundant.
@@ -4066,10 +4064,8 @@
 <lb/>ipsimet, quum fani essent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Tertia lassitudo ex vehementissimis nasicitar
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Tertia lassitudo ex vehementissimis nasicitar
 <lb/>motibus solaque supra naturalem habitum musculos
 <lb/>attollit sic, ut phlegmonae persimilis affectus sit. Itaque
 <lb/>et leri tactu offenduntur, et calidiores apparent. Dolent
@@ -4131,10 +4127,8 @@
 <lb/>optime assequetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Quoniam vero factu semel mentio de
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Quoniam vero factu semel mentio de
 <pb n="6.203"/>
 <lb/>victu post balneum est, non alienum fuerit et de eo,
 <lb/>quod ad lassitudines pertinet, praecipere. Ulcerosa igitur
@@ -4356,10 +4350,8 @@
 <lb/>quisque notavit affectu, id multis tribuit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Quin etiam affectio quaedam est praedictis
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Quin etiam affectio quaedam est praedictis
 <lb/>proxima, quam ipse adstrictionem appello, de qua,
 <lb/>quum de lassitudinibus disputationem absolvero, mox dicam.
 <lb/>Simplices enim earum differentiae tres tuus, de
@@ -4445,10 +4437,8 @@
 <lb/>coniunctis affectibus praescripsimus, emendabitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Ergo, quum haec ita se habeant, redeundum
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Ergo, quum haec ita se habeant, redeundum
 <lb/>rursus ad simplices affectus est; quorum jam dictos
 <lb/>proxime sequuntur ii, qui sunt ab astrictione (voco ita
 <lb/>meatuum cutis vitium, quo transinitti supervacua probilien
@@ -4505,10 +4495,8 @@
 <lb/>in morbosus affectus non admodum incidere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Redeamus igitur rursus ad primum hypothesin,
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Redeamus igitur rursus ad primum hypothesin,
 <lb/>relictisque usiione, refrigeratione, cruditate,
 <lb/>ventris profluvio ac reliquis id genus, (satius enim est
 <lb/>in unum ea volumen coniicere, quod de morbosis symptomatis
@@ -4580,10 +4568,8 @@
 <lb/>utique determinare praeterea oportebit, eveniant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Post venerem ergo species exercitationis
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Post venerem ergo species exercitationis
 <lb/>ca esto, quam praeparatoriam vocant. Post vigilius autem
 <lb/>vel tristitiam, vel ambas, quae apotherapia dicitur,
 <lb/>exercitatio idonea est, si tamen cruditas absit: nam si
@@ -4637,10 +4623,8 @@
 <lb/>nunc de ipsis disserere non oportet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Reliquum igitur est, ut de matutina vesperthraque
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Reliquum igitur est, ut de matutina vesperthraque
 <lb/>frictione agamus, non ad eum tamen modum,
 <lb/>quo Quintum respondisse dicunt, quum percunctanti gymnastae,
 <lb/>quam unctio vim haberet, respondit, <hi rend="italic">Vestis submovendae:</hi>
@@ -4724,10 +4708,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE SANITATE TVENDA
 <lb/>LIBER QVARTVS.</head>
-
-
 <p rend="indent">
- <lb/>Quod plerique recentiorum medicorum
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quod plerique recentiorum medicorum
 <lb/>sariunt, qui, dum tempus sophistarum cavillationibus terunt,
 <lb/>quod maxime necessarium est, aut leviter tantum
 <lb/>attingunt, aut prorsus omittunt, id ipse non sacram, sed
@@ -4771,10 +4753,8 @@
 <lb/>cum his habent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Ac quae immodicas quidem exercitationes
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Ac quae immodicas quidem exercitationes
 <lb/>lassitudo excipit, sanorum symptoma est, quae vero sine
 <lb/>his consistit, morbosum. Itaque et ab Hippocrate dictum
  <lb/>rectissime videtur: <hi rend="italic">Lassitudines sponte natae morbos
@@ -4876,10 +4856,8 @@
 </div>
 <pb n="6.241"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>At sanatio quaedam iri communes curatinnis
+<lb/><label type="head"><num value="3">Cap. III.</num></label> At sanatio quaedam iri communes curatinnis
 <lb/>amborum tropos fertur, quaedam utriusque propria
 <lb/>est. Dicetur vero prius quae communis sanatio esu
 <lb/>oportet initus excrementum, sive calidum id sit, sive
@@ -4915,10 +4893,8 @@
 <lb/>facientibus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Quoniam igitur ejusmodi lassitudo vitio
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Quoniam igitur ejusmodi lassitudo vitio
 <lb/>acrium excrementorum oritur, ante omnia considerandum
 <lb/>est, in solidisue tantum corporibus, au intra venarum sinus
 <lb/>malus succus contineatur. De iis vero quae intra
@@ -5308,10 +5284,8 @@
 <lb/>medendum censeo.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>At si in eodem. homine reliqua eadem
+<lb/><label type="head"><num value="5">Cap. V.</num></label> At si in eodem. homine reliqua eadem
 <lb/>sint, caeterum in lasso corpore sanguis bonus exiguus sit,
 <lb/>erudi humores plurimi, huic nec sanguis mittendus, neu
 <lb/>alvi dejectio, aut exercitatio, aut omnino motus, aut
@@ -5472,10 +5446,8 @@
 <lb/>de quo mox uberius agemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Idcirco etiam oxymeli his utilissimum est,
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Idcirco etiam oxymeli his utilissimum est,
 <lb/>ut prius diximus. Id ita praeparari debebit. Quum mel
 <pb n="6.272"/>
 <lb/>optimum super carbones despumaveris, coniicies iit ipsum
@@ -5618,10 +5590,8 @@
 <lb/>quod crudos citra lassitudinem succos curant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Caeterum quoniam deliis abunde dictum
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Caeterum quoniam deliis abunde dictum
 <lb/>est, tempus monet reliquum aggrediamur affectum, in quo
 <lb/>cum ulceroso sensu etiam crudorum copia in corporis
 <lb/>habitum est recepta. Accidunt haec in iis maxime negotiorum
@@ -5760,10 +5730,8 @@
 <lb/>ante insuerit, quam lassitudinis symptomata urgeretur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Quoniam vero et acopo, quod ex abiete
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Quoniam vero et acopo, quod ex abiete
 <lb/>fit, uti expedit iis, qui in carne et tota corporis mole
 <lb/>succos congesserunt, qui aut concoqui desiderent, aut per
 <lb/>halitum digeri, non abs re fuerit ejus quoque compositionem
@@ -5874,10 +5842,8 @@
 <lb/>omnino contemnendas.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Quum vero reliquus lassitudinis affectus
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Quum vero reliquus lassitudinis affectus
 <lb/>fit, in quo supra ulcerosum sensum copia crudorum in
 <lb/>toto corpore congesta est, de hoc quoque dicendum est.
 <lb/>Nec est inventu difficile, quemadmodum emendetur, si
@@ -5920,10 +5886,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Ac de primo quidem lassitudluum genere,
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Ac de primo quidem lassitudluum genere,
 <lb/>in quo punctionis quidem sensus omnes animalis partes
 <lb/>infestat, ac caeteris vitiosi succi redundamus, quae corpori
 <lb/>vel solae vel cum lassitudine accedunt, ferme diximus
@@ -6038,10 +6002,8 @@
 <lb/>de sanguinis missione sumus acturi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Reliquum ergo est, ubi docuerimus, non
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Reliquum ergo est, ubi docuerimus, non
 <lb/>esse a sanguinis missione festinanter reficiendum, hic librum
 <lb/>hunc finiamus. Supponetur autem et ad hujus
 <lb/>sermonis fidem quiddam, quod in opere de naturalibus
@@ -6124,10 +6086,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE SANITATE TUENDA
 <lb/>LIBER QUINTUS</head>
-
-
 <p rend="indent">
- <lb/>Quintum de sanitate tuenda librum ingrediens,
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quintum de sanitate tuenda librum ingrediens,
 <lb/>si qui forte erunt, qui prolixitate operis nostri
 <lb/>gravabuntur, hos primum solari volo. Non enim nostra
 <lb/>id culpa evenit, sed propositae rei natura. Si enim fieri
@@ -6171,7 +6131,7 @@
 <lb/>ipsos quidem defendere a morbis perpetuo potuerunt.
 <lb/>Itaque quum a cavillantibus tum alia quaedam, tum
 <lb/>vero versus ille oblinitur,</p>
-<lg><l>Aliis medens, at ipso ulceribus scatens,</l></lg>
+<lg rend="italic"><l>Aliis medens, at ipso ulceribus scatens,</l></lg>
  <p rend="nonindented">
 <lb/>alii id negotiis imputant, alii ob in temperantiam se aegrotare
 <lb/>fatentur. Sed horum magis improba, me judice,
@@ -6263,10 +6223,8 @@
 <lb/>ratione apposita.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Injtium vero mihi ab optima natura justum
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Injtium vero mihi ab optima natura justum
 <lb/>erat, ad cujus curationem omne consilium dirigitur,
 <lb/>non eo, ut corrigatur, sed pt in statu suo servetur. Id
 <lb/>quod ipsi hactenus fecimus, qui de ea hucusque per singulas
@@ -6391,10 +6349,8 @@
 </div>
 <pb n="6.319"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Atque optimum quidem corpus cujusmodi
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Atque optimum quidem corpus cujusmodi
 <lb/>sit, dictum jam est. Quod autem ab hujus perfectione
 <lb/>deiecit, ferre licet, tribus id de causis defecisse, aut quod
 <lb/>statim in utero vitioso statu fuit, aut quod qualibet de
@@ -6409,7 +6365,7 @@
 <lb/>et omni motu, (ab sus enim coepisse est satius,
 <lb/>nam recte illud dictum arbitror, <hi rend="italic">Labor cibum praecedat,</hi>)
 <lb/>haec scire licet, poetam ex parte verum dixisse,</p>
-<lg><l>Ut lavit, sumpsitque cibum, det membra sapori.</l>
+<lg rend="italic"><l>Ut lavit, sumpsitque cibum, det membra sapori.</l>
  <l>Namque haec justa seni. — —</l></lg>
 <pb n="6.320"/>
  <p rend="nonindented">
@@ -6609,10 +6565,8 @@
 <lb/>utendum, ubi validae, rara multaque.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Sed haec atque alia ut dixisse quidem
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Sed haec atque alia ut dixisse quidem
 <lb/>est facillimum, ita praeesse senis sanitati tuendae sane
 <lb/>est difficillimum aeque ut eorum, qui ex morbo couvaleluunt.
 <lb/>Porro hanc artis partem appellant juniores medici
@@ -6690,10 +6644,8 @@
 <lb/>autem tantum panem ex vino diluto edebat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Sane vinum sicuti pueris est maxime adversarium,
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Sane vinum sicuti pueris est maxime adversarium,
 <lb/>ita senibus est utilissimum. Esto autem id ex
 <lb/>iis, quae calidioris naturae sunt, qualia sunt in Graecia
 <lb/>quidem Ariusium, et Lesbium, et quod Mysium vocant,
@@ -6795,10 +6747,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Verum obstructiones, quae ex vino contingunt,
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Verum obstructiones, quae ex vino contingunt,
 <lb/>mediocres sunt; quae vero ex cibis iis nascuntur,
 <lb/>qui succum crassam lentumque creant, his non facile
 <lb/>succurritur. Quo magis cavendum lenibus est a multo
@@ -6844,10 +6794,8 @@
 </div>
 <pb n="6.342"/>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Jam illud patere arbitror, panem quoque
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Jam illud patere arbitror, panem quoque
 <lb/>his exlubendum, qui nec salem, nec fermentum, nec
 <lb/>subactionem, nec coctionem desideret, non autem aut
 <lb/>istam publice laudatam similaginem, aut quae ex ea
@@ -6979,10 +6927,8 @@
 </div>
 <pb n="6.349"/>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Caeterum satius est et de reliquis dicere,
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Caeterum satius est et de reliquis dicere,
 <lb/>quae senum plerisque contingunt, ut sunt raucedines, ut
 <lb/>gravedines, et calculus in renibus, et arthritides, et podagrae,
 <lb/>et asthmata, aliaque id genus. Atque ad raucedines
@@ -7064,10 +7010,8 @@
 <lb/>de materia simili modo queat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Quoniam autem tum pituitosum, tum terufum
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Quoniam autem tum pituitosum, tum terufum
 <lb/>excrementum in senum corporibus colligitur, et
 <lb/>urinas moveri quotidie convenit, non tamen per pharmaca,
 <lb/>fisd apio, et melle, et vinis, quae id praestare
@@ -7155,10 +7099,8 @@
 <lb/>ductu agit, reddi poterit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Siquidem omnis affectionis corporeae proridentia
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Siquidem omnis affectionis corporeae proridentia
 <lb/>in duobus consistit, nempe propria ejus. internoscenda
 <lb/>essentia, et materiae praesidiorum viribus; ut
 <pb n="6.358"/>
@@ -7249,10 +7191,8 @@
 <lb/>exhibebimus, quoad pristinum statum consequntum sit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Caeterum ea victus ratio, quae intemperies
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Caeterum ea victus ratio, quae intemperies
 <lb/>corrigit, longius plerumque procedit, propterea quod similibus
 <lb/>ntajore ex parte morbis tentamur, qui calidiore
 <lb/>natura est, calidos morbos facile incurrente, qui frigidiore,
@@ -7459,10 +7399,8 @@
 <lb/>qui citra determinationem aliquid scripserunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Quo magis, quaenam esse determinationes
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Quo magis, quaenam esse determinationes
 <lb/>debeant, altius repetentem, sed paucis, diligenter audias.
 <lb/>Quibus mordax calor natura est adeo, ut fumida gignat
 <lb/>excrementa, iis balneum salubre est, tum motus, qui et
@@ -7584,7 +7522,7 @@
 <lb/>quod adhuc obire civilia negotia possunt; secundam
 <lb/>autem, cui apte nomen ipsum inditur eo, quod ipsa
 <lb/>sit, de qua dicitur,</p>
-<lg><l>Ut lavit, sumpsuque cibum, det membra sopori.</l></lg>
+<lg rend="italic"><l>Ut lavit, sumpsuque cibum, det membra sopori.</l></lg>
 <p rend="nonindented">
  <lb/>Quod tamen in tertiam non convenit, in qua Telephum
 <lb/>grammaticum bis terve mense lavari dixi; propter enim
@@ -7605,10 +7543,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE SANITATE TVENDA
 <lb/>LIBER SEXTVS.</head>
-
-
 <p rend="indent">
- <lb/>Aliud hujus de sanitate tuenda speculationis
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Aliud hujus de sanitate tuenda speculationis
 <lb/>argumentum hoc libro inchoaturus repetenda censeo
 <lb/>eorum, quae hactenus tractata sunt, capita; quae utique dicendis
 <lb/>sint necessaria. Igitur primum diximus, quid sit fanitas;
@@ -7660,10 +7596,8 @@
 </div>
 <pb n="6.384"/>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Vitiosi autem corporum status genere duplicesfunt,
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Vitiosi autem corporum status genere duplicesfunt,
 <lb/>quum elementares etprimaacorporis partes, quas
 <lb/>Aristoteles similares vocat, alii aequabiliter, alii inaequahiliter
 <lb/>temperatas habeant. Dico autem aequabiliter temperari,
@@ -7775,10 +7709,8 @@
 <lb/>hos quemadmodum sanos plurimum tueamur, disquirere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Ergo initio ab fis sumpto, qui aequalem
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Ergo initio ab fis sumpto, qui aequalem
 <lb/>in omnibus corporis partibus intemperiem habent, primum
 <lb/>de iis agamus, qui calidius temperamentum sortiti
 <lb/>sunt, caeterum in humiditate ac siccitate modice se habent.
@@ -8003,10 +7935,8 @@
 <lb/>promoveat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Et de calidis quidem temperamentis abunde
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Et de calidis quidem temperamentis abunde
 <lb/>dictum est; de frigidis deinceps agendum. Sunt porro
 <lb/>et horum tres summae differentiae. Nam aut medice
 <lb/>te habent in altera dispositione, ita ut nec humidi sint,
@@ -8044,10 +7974,8 @@
 <lb/>inclinatae.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>De iis vero, qui inaequalem corporis constitutionem
+<lb/><label type="head"><num value="5">Cap. V.</num></label> De iis vero, qui inaequalem corporis constitutionem
 <lb/>habent, non potest paucis disseri, propterea
 <lb/>quod numerosae horum varietates sunt, quum aliis alia
 <lb/>pars male temperata sit. Sed et si duas tantum quis intemperatas
@@ -8132,10 +8060,8 @@
 <lb/>nisi quae longo jam tempore aegrotat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Quod si quis assidue aegrotet, disquirere
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Quod si quis assidue aegrotet, disquirere
 <lb/>in eo causam conveniet. Ea invenietur, si initium luquifit
 <lb/>tonis ab aegritudinis specie ceperimus. Quaecunque enim
 <lb/>ahsutemo vitio corpus patitur, ea duplicem causam habent,
@@ -8190,10 +8116,8 @@
 <lb/>est et veneris commoderatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Quibus enim inculpata corporis constitutio
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Quibus enim inculpata corporis constitutio
 <lb/>est, non debent ii, veluti siccis supra praeceptum est,
 <lb/>a venere omnino abstinere. illud tamen considerationem
 <lb/>maxime desiderat, semelne die an bis fit iis, qui ejusmqdi
@@ -8296,10 +8220,8 @@
 <lb/>bis ita uno anno laborant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Ars vero sanitatis tuendae iis, qui sibi
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Ars vero sanitatis tuendae iis, qui sibi
 <lb/>paruerint, constantem sanitatem promittit; qui vero parere
 <lb/>recusant, iis perinde est, ac si omnino non esset. Recusant
 <lb/>autem alii ab ipsa in praesens voluptate victi, quos
@@ -8381,10 +8303,8 @@
 <lb/>doctrinam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Jam ad inaequales corporum constitutiones
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Jam ad inaequales corporum constitutiones
 <lb/>transire tempestivum videtur: hae porro etiam morbosae
 <pb n="6.420"/>
 <lb/>omnino sunt. Sane inaequales constitutiones trifariam
@@ -8487,10 +8407,8 @@
 <lb/>hoc genus propositae artis limites egreditur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Qui tamen ob exquisitiorem nervorum sensum
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Qui tamen ob exquisitiorem nervorum sensum
 <lb/>assidue dolent, qui a capite orti plurima fui parte
 <lb/>os ventris texunt, para etiam ad reliquum ventrem descendit,
 <lb/>his sane mederi propositae jam artis officium
@@ -8652,10 +8570,8 @@
 <lb/>servare solent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Atque quum satis de his hactenus sit dictum,
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Atque quum satis de his hactenus sit dictum,
 <lb/>ad aliam inaequalem constitutionem transire par est,
 <lb/>quae nulli dictarum in malitia cedit, utique in qua renes
 <lb/>calculum gignunt, aut alphos, aut quomodocunque
@@ -8741,10 +8657,8 @@
 <lb/>laborare non gravantur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Verum qui ex levi causa male afficiuntur,
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Verum qui ex levi causa male afficiuntur,
 <lb/>ut magnis morbis assidue vexentur, veluti comitiali vertigine,
 <lb/>capitis doloribus, item aliis, in quibus caput fissijectis
 <lb/>partibus symptomatum occasio est, quarum sunt
@@ -8792,10 +8706,8 @@
 <lb/>uteris.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Quemadmodum autem ex iis, quae a capite
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Quemadmodum autem ex iis, quae a capite
 <lb/>defluunt, nonnunquam laeduntur aliqua eorum, quae
 <lb/>illi subjecta sunt, sic ex jecinore et renibus vel liene
 <lb/>in alias partes, quae ipsis sunt imbecilliores, morbi ineluunt.
@@ -8859,10 +8771,8 @@
 <lb/>ad extenuati habitus refectionem,</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Sane pessimus corporis <hi rend="italic">status</hi> est et
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Sane pessimus corporis <hi rend="italic">status</hi> est et
 <lb/>ille. Sunt enim qui genitale femen copiosum calidumque
 <pb n="6.444"/>
 <lb/>gignunt, quod eos ad expulsionem sui proritat,
@@ -8984,10 +8894,8 @@
 <lb/>quousque in sanitate fuerint.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>His jam scriptis, amicorum quidam, quum
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> His jam scriptis, amicorum quidam, quum
 <lb/>totum hoc opus relegisset, unum omnino restare dicebat,
 <lb/>quod superius a me relictum post erat dicendum, nempe
 <lb/>melicam en tum, quod ex malorum cotoneorum succo conficitur,
@@ -9000,7 +8908,7 @@
 <lb/>sunt ac minus acerba, quaecunque nostrates in Asia
 <lb/>Graeci stiuthia vocant, sextarios Romanos duos, quibusmellis
 <lb/>optimi tantundem miscebis, aceti sextarium unum
-<lb/>et semissem; haec quum saner prunas modice coxeris et
+<lb/>et semissem; haec quum super prunas modice coxeris et
 <pb n="6.451"/>
 <lb/>spumam detraxeris, immittes gingiberis uncias tres, piperis
 <lb/>albi duas; dein rutilis in simili igne recoques, donec

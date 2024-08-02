@@ -7,8 +7,10 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De victu attenuante</title>
-        <author xml:lang="lat">Galenus</author>
-        <editor>Kalbfleisch, Karl</editor>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
+        <editor role="editor">Kalbfleisch, Karl</editor>
         <funder ref="https://www.mellon.org/">Andrew W. Mellon Foundation</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts</resp>
@@ -41,16 +43,47 @@
           <resp>Technical Advisor</resp>
           <persName>Bruce Robertson</persName>
         </respStmt>
-      </titleStmt>
-      <editionStmt resp="Galenus_verbatim">
-        <edition>Revised edition of the originally published versions of the electronic texts.</edition>
-        <respStmt>
-          <resp></resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
-        </respStmt>
-        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
-      </editionStmt>
-      <publicationStmt>
+       </titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">Revised edition of the originally published versions of the electronic texts.
+<date type="revision" when="2024">2024</date>
+</edition>
+<respStmt>
+<!-- paragraphe à vérifier pour chaque édition -->
+<resp>To reuse this edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We changed the naming schemes of the milestones indicating the corresponding Kühn pages or added such milestones when they were missing. The layout of the original edition was marked up by &lt;pb&gt; and &lt;lb&gt; elements when they were missing. We also added elements specific to critical editions, that were present in this edition but were missing in the TEI, mainly chevrons and hooks. For details, see the revisionDesc section.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp>Lead Developer, Optéos</resp>
+<persName>Frédéric Glorieux</persName>
+</respStmt>
+<respStmt>
+<resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<!-- à vérifier pour chaque édition -->
+<respStmt>
+<resp from="2023" to="2024">Text verification and correction, Galenus verbatim</resp>
+<persName>
+</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+</editionStmt>
+<publicationStmt>
         <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
         <publisher>University of Leipzig</publisher>
         <pubPlace>Germany</pubPlace>
@@ -65,7 +98,7 @@
           <monogr>
             <title xml:lang="lat">Galeni De victu attenuante liber</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kalbfleisch, Karl</editor>
+            <editor role="editor">Kalbfleisch, Karl</editor>
             <imprint>
               <publisher>B. G. Teubner</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -82,16 +115,58 @@
       <refsDecl n="CTS">
         <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type is systematically specified with a rend value.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<normalization>
+<p>Symbols are maintained as they appear within the printed text.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
-        <language ident="eng">English</language>
-        <language ident="lat">Latin</language>
+        
+        
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change who="Galenus_verbatim">All the chevrons and hooks have been respectively replaced by &lt;supplied&gt; and &lt;del&gt;</change>
+      <change who="#Galenus_verbatim" when="2024">All the chevrons and hooks have been respectively replaced by &lt;supplied&gt; and &lt;del&gt;</change>
+      <!-- à vérifier pour chaque édition -->
+      <change who="#Galenus_verbatim" when="2024">The layout of the original edition has been marked up by &lt;pb&gt; and &lt;lb&gt; elements.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -102,7 +177,7 @@
           <head>ΓΑΛΗΝΟΥ
 <lb/>ΠΕΡΙ ΛΕΠΤΥΝΟΥΣΗΣ ΔΙΑΙΤΗΣ
 </head>
-          <p>
+          <p rend="indent">
 <lb n="1"/><milestone unit="sentence" n="1"/>Ἐπειδὴ τὰ πλεῖστα τῶν χρονίων ἀρρωστημάτων
 <lb n="2"/>λεπτυνούσης χρῄζει διαίτης, ὡς πολλάκις ἐπὶ μόνῃ
 <lb n="3"/><milestone unit="lineno" n="5"/>ταύτῃ καταστῆναι καὶ μηδενὸς ἔτι φαρμάκου δεηθῆναι,
@@ -149,7 +224,7 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="2" xml:id="_2">
-          <p>
+          <p rend="nonindented">
 <lb n="5"/><milestone unit="sentence" n="1"/>χρὴ δ’ ὥσπερ ἐπὶ τῶν ἄλλων
 <lb n="6"/><milestone unit="lineno" n="5"/>ἁπάντων ἐπιστάτην εἶναι τὸν ἰατρόν, τόν τε καιρὸν
 <lb n="7"/>ἐξευρίσκοντα καὶ τὸ μέτρον τῆς χρήσεως, οὕτω κἀν
@@ -158,7 +233,7 @@
 <lb n="10"/>διδάσκειν, ἀλλ’ ὑπὲρ αὐτῶν μόνον τῶν ἐδεσμάτων
 <lb n="11"/><milestone unit="lineno" n="10"/>διελθεῖν.
 </p>
-          <p>
+          <p rend="indent">
 <lb n="12"/><milestone unit="sentence" n="7"/>Ὅτι μὲν οὖν σκόροδα καὶ κρόμμυα καὶ κάρδαμα
 <lb n="13"/>καὶ πράσα καὶ νᾶπυ τῶν λεπτυνόντων ἐστίν, οὐδ’ ἂν
 <lb n="14"/>οὐδ’ ἰδιώτην λάθοι διὰ τὸ σφοδρὸν τῆς ἐν αὐτοῖς
@@ -193,7 +268,7 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="3" xml:id="_3">
-          <p>
+          <p rend="indent">
 <lb n="17"/><milestone unit="sentence" n="12"/>Αὖθις οὖν ἐπὶ τὰ λεπτύνοντα τοὺς ἐν τῷ σώματι
 <lb n="18"/>χυμοὺς ἐδέσματα μέτειμι, τὴν ἀρχὴν ἀκριβέστερον
 <lb n="19"/>ποιησάμενος ἀφ’ ὧν ἀπέλιπον, ἐπειδὴ διορισμοῦ δεῖταί
@@ -202,7 +277,7 @@
 <lb n="22"/>κέκτηται, μέτρια ταῖς δυνάμεσίν ἐστιν, ὡς καὶ
 <lb n="23"/>μικρῷ πρόσθεν εἴρηται, καὶ διὰ τὴν αἰτίαν τήνδε
 <lb n="24"/>πολλὰ τῶν φαρμακωδῶν, ἔστ’ ἂν ἔτι φύηται καὶ αὔξηται,
-<lb n="25"/>παραπλησίως τοῖς ἐδέσμασιν ἐσθίεται, καθάπερ οἵ ﻿
+<lb n="25"/>παραπλησίως τοῖς ἐδέσμασιν ἐσθίεται, καθάπερ οἵ
 <pb n="7"/>
 <lb n="1"/>τε τοῦ σιλφίου καὶ οἱ τοῦ νάπυος καυλοὶ καὶ προσέτι
 <lb n="2"/>τούτοις πυρέθρου τε καὶ σκολύμου καὶ ἠρυγγίου
@@ -277,7 +352,7 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="4" xml:id="_4">
-          <p>
+          <p rend="indent">
 <lb n="21"/><milestone unit="sentence" n="23"/>Ἐπεὶ δ’ ἐξ ἀρχῆς ὁ λόγος ἐγένετό μοι περὶ
 <lb n="22"/>τῶν λαχανωδῶν ἐδεσμάτων ὡς τὰ πλεῖστα τοῦ γένους
 <lb n="23"/>τούτου λεπτύνει, ἐφεξῆς ἂν εἴη ῥητέον καὶ περὶ τῶν
@@ -313,7 +388,7 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="5" xml:id="_5">
-          <p>
+          <p rend="indent">
 <lb n="3"/><milestone unit="sentence" n="26"/>Περὶ μὲν οὖν λαχανωδῶν ἐδεσμάτων ἀρκεῖ καὶ
 <lb n="4"/>ταῦτα, σπερμάτων δ’ ἐφεξῆς μνημονεύω. καθόλου μὲν
 <lb n="5"/>οὖν εἰπεῖν καὶ περὶ τῶνδε, τοῖς φυτοῖς ἔοικε τὰς
@@ -355,7 +430,7 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="6" xml:id="_6">
-          <p>
+          <p rend="indent">
 <lb n="15"/>
             <milestone unit="sentence" n="30"/>Ἀλλ’ αὖθις ἐπὶ τὸ τῶν ἄλλων σπερμάτων
 <lb n="16"/>ἐπάνειμι γένος, ἃ δὴ καὶ Δημήτριά τινες ὀνομάζουσι·
@@ -417,7 +492,7 @@
 <lb n="19"/>τῆς τοῦ μέλιτος χρήσεως ἁπάσης ὀλίγον ὕστερον
 <lb n="20"/>εἰρήσεται.
 </p>
-          <p>
+          <p rend="indent">
 <lb n="21"/><milestone unit="sentence" n="37"/>Νυνὶ δ’ ἐπὶ τὰς κριθὰς αὖθις ἐπανίωμεν· οὐ
 <lb n="22"/>γὰρ ἔν γε πτισάνῃ μόνῃ ἡ χρῆσις αὐτῶν ἐδώδιμος,
 <pb n="15"/>
@@ -475,7 +550,7 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="7" xml:id="_7">
-          <p>
+          <p rend="indent">
 <lb n="22"/><milestone unit="sentence" n="45"/>Κύαμοι δὲ ῥυπτικὸν μὲν ἔχουσί τι καὶ αὐτοὶ
 <lb n="23"/>κριθῶν <del>δὲ</del> οὐδὲν ἧττον, ἀλλ’ οὔτε πέττονται ῥᾳδίως
 <lb n="24"/>καὶ φυσώδεις ἱκανῶς εἰσιν, ὥστε πολὺ βέλτιον τοὺς
@@ -530,7 +605,7 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="8" xml:id="_8">
-          <p>
+          <p rend="indent">
 <lb n="20"/>
             <milestone unit="sentence" n="55"/>Πλείστην δ’ ἂν ἔχοις εἰ βούλοιο καὶ ἄφθονον
 <lb n="21"/>ἐδεσμάτων χρῆσιν εἰς λόγον λεπτυνούσης διαίτης
@@ -615,7 +690,7 @@
 <lb n="4"/>προσεπιπάττοντα· πλησίον δὲ τῆς τούτων δυνάμεώς
 <lb n="5"/>εἰσι τά τε βούγλωττα καὶ αἱ ψῆτται.
 </p>
-          <p>
+          <p rend="indent">
 <lb n="6"/><milestone unit="sentence" n="65"/>Τῶν δ’ ἄλλων ζῴων τῶν πεζῶν κριοὶ μὲν καὶ
 <lb n="7"/>τράγοι καὶ σύμπαν δὲ τὸ τῶν προβάτων καὶ τῶν αἰγῶν
 <lb n="8"/>γένος οὐ χρηστὴ τροφή· μόνοις δὲ τοῖς ἐρίφοις εἰκότως
@@ -667,7 +742,7 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="9" xml:id="_9">
-          <p>
+          <p rend="indent">
 <lb n="6"/><milestone unit="sentence" n="72"/>Περὶ μὲν δὴ τούτων αὐτάρκως εἴρηται· περὶ δὲ
 <lb n="7"/>τῶν ὑπολοίπων αὖθις ῥητέον. αἱ ῥίζαι τῶν λαχάνων
 <lb n="8"/>ἅπασαι μὲν ὡς οὕτω φάναι περιττωματικαί τ’ εἰσὶ καὶ
@@ -696,7 +771,7 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="10" xml:id="_10">
-          <p>
+          <p rend="indent">
 <lb n="5"/>
             <milestone unit="sentence" n="76"/>Ἀλλὰ γὰρ καὶ περὶ τῶν ῥιζῶν ἀρκεῖ τοσαῦτα·
 <lb n="6"/>μετιέναι δ’ ἤδη καιρὸς ἐπὶ τοὺς τῶν δένδρων καρπούς·
@@ -754,7 +829,7 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="11" xml:id="_11">
-          <p>
+          <p rend="indent">
 <lb n="9"/><milestone unit="sentence" n="84"/>Τῶν δ’ ἐν ὄξει καὶ ἅλμῃ δυναμένων ἀποτίθεσθαι
 <lb n="10"/>τοσοῦτον ὑπηλλάχθαι χρὴ νομίζειν τὴν ἀρχαίαν
 <lb n="11"/>δύναμιν ὅσον ἐκ τῆς σκευασίας ἠλλοιώθησαν· ὅτι δ’
@@ -782,7 +857,7 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="12" xml:id="_12">
-          <p>
+          <p rend="indent">
 <lb n="6"/><milestone unit="sentence" n="87"/>Ἐπεὶ δὲ καὶ περὶ τούτων αὐτάρκως διῄρηται,
 <lb n="7"/>λείποιτ’ ἄν ἔτι καὶ περὶ μέλιτος καὶ οἴνου καὶ γάλακτος
 <lb n="8"/>διελθεῖν, καὶ πρῶτόν γε περὶ μέλιτος, ἐπειδὴ μόνον
@@ -818,7 +893,7 @@
 <lb n="14"/><milestone unit="ms1folio" n="138v"/>φυλάττεσθαι χρὴ τὴν ἐδωδὴν αὐτῶν ἐν τοῖς
 <lb n="15"/>εἰρημένοις πάθεσιν.
 </p>
-          <p>
+          <p rend="indent">
 <lb n="16"/><milestone unit="sentence" n="92"/>Ἥκιστα δ’ ἂν ὑπίδοιτό τις οἴνους παχεῖς ὅσοι
 <lb n="17"/>καθαροὶ καὶ διαυγεῖς εἰσι καὶ τὴν χροιὰν ὠχροὶ καὶ
 <lb n="18"/>ξανθοί· λευκὸν δ’ οὐδ’ ἂν εὕροις οἶνον ἅμα καὶ γλυκύν,
@@ -899,7 +974,7 @@
 <lb n="1"/>νεανίσκων τῶν ἀμφὶ παλαίστραν ἐχόντων εἰς εὐεξίαν
 <lb n="2"/>αὐτοῖς προσχρωμένους οὐδὲν ἧττον χοιρείων κρεῶν ἐδωδῆς.
 </p>
-          <p>
+          <p rend="indent">
 <lb n="3"/><milestone unit="sentence" n="104"/>Ἀλλὰ γὰρ οὗτοι ἐναντιώτατοι τῇδε τῇ διαίτῃ, καὶ
 <lb n="4"/><milestone unit="lineno" n="5"/>οὐ χρὴ μέμφεσθαι τὸν λόγον ὡς ἄλλα μὲν ἐπαγγειλάμενον,
 <lb n="5"/>ἄλλα δὲ διδάσκειν ἐπιχειροῦντα· χρὴ γὰρ οὐ
@@ -935,7 +1010,7 @@
 <lb n="10"/>ὑπάρχει σαφῶς, ἀλλ’ ὡς ἂν διακείμενα παραλάβῃ
 <lb n="11"/>τὰ ἐν τῷ σώματι, τοιαῦτα φυλάττει.
 </p>
-          <p>
+          <p rend="indent">
 <lb n="12"/><milestone unit="sentence" n="109"/>Καὶ δὴ τούτων οὕτως ἐχόντων αὖθις ἐπὶ τὸ προκείμενον
 <lb n="13"/>ἰτέον. ἐν δὲ τῷ καθόλου γνωστέον, ὥσπερ
 <lb n="14"/>ἐπὶ θώρακός τε καὶ πνεύμονος οἱ γλυκεῖς τῶν οἴνων
@@ -975,7 +1050,7 @@
 <lb n="20"/>τέλους ἢ τοῖς χρηστοῖς τὰ πονηρὰ μιγνύντα μέχρι
 <lb n="21"/>τέλους νοσηλεύεσθαι.
 </p>
-          <p>
+          <p rend="indent">
 <lb n="22"/><milestone unit="sentence" n="114"/>Καὶ μὲν δὴ καὶ ὁ τοῦ γάλακτος ὀρρὸς ἐκ τῶν
 <lb n="23"/>λεπτυνόντων ἐστὶ πρὸς τῷ ὑπάγειν τὴν γαστέρα· χρῆσθαι
 <lb n="24"/>τοίνυν αὐτῷ πολλάκις ἔκ τινων διαστημάτων

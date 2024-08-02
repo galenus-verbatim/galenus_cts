@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De usu partium corporis humani I-XI</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg017.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -105,13 +126,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg017.verbatim-lat1">
 <pb n="3.1"/>
@@ -121,10 +185,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE VSV PARTIVM CORPORIS HVMANI.
 <lb/>LIBER I.</head>
-
-
 <p rend="indent">
- <lb/>Quemadmodum animal quodque unum
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quemadmodum animal quodque unum
 <lb/>esse dicitur, quod appareat per quandam circumscriptionem
 <lb/>propriam nulla ex parte aliis coniunctum, ita et
 <lb/>inter paries ipsius hic oculus, haec lingua, hic nasus,
@@ -141,10 +203,8 @@
 <lb/>omnino in aliam speciem indivisibiles.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Ustus autem ipsarum omnium ipsi animae
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Ustus autem ipsarum omnium ipsi animae
 <lb/>est: hujus enim organum corpus est, et propterea mustum
 <lb/>differunt inter se paries animalium, quoniam et
 <lb/>ipsae animae <hi rend="italic">differunt</hi>. Quaedam enim sunt ferocia,
@@ -207,10 +267,8 @@
 <lb/>Aristotele, cum Hippocrate et aliis veteribus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Ita quidem sapientissimum animalium est
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Ita quidem sapientissimum animalium est
 <lb/>homo: ita autem et manus sunt organa sapienti animali
 <lb/>convenientia. Non enim, quia manus habuit, propterea
 <lb/>est sapientissimum, ut Anaxagoras dicebat: sed quia sapientissimum
@@ -265,10 +323,8 @@
 </div>
 <pb n="3.8"/>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Homo autem, sicuti corpus armis nudum,
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Homo autem, sicuti corpus armis nudum,
 <lb/>ita et animam artibus destitutam habet. Proinde pro corporis
 <lb/>nuditate manus, pro animae inscitia rationem
 <lb/>accepit: quorum usu corpus quidem armat et modis
@@ -293,10 +349,8 @@
 <lb/>possedit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Agedum igitur hanc ejus partem primam
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Agedum igitur hanc ejus partem primam
 <lb/>expendamus, non perscrutantes, sitne haec plane simpliciterque
 <lb/>utilis, neque an sapienti animali conveniens:
 <lb/>sed num eam omnino constitutionem habeat, qua certe,
@@ -372,10 +426,8 @@
 </div>
 <pb n="3.13"/>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Non enim simpliciter oportebat duos digitos
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Non enim simpliciter oportebat duos digitos
 <lb/>oppositos in parvarum rerum venatione sitis ipsorum
 <lb/>summitatibus operari; sed eos praeterea tales esse,
 <lb/>quales nunc sunt, erat necesse, utpote sic molles, sic
@@ -398,9 +450,8 @@
 </div>
 <pb n="3.14"/>
 <div type="textpart" subtype="chapter" n="7">
-
 <p rend="indent">
- <lb/>Cum autem sint et ipsa, quae apprehenduntur,
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Cum autem sint et ipsa, quae apprehenduntur,
 <lb/>consistentiis quam maxime variis (quaedam
 <lb/>enim eorum magis,et quaedam minus mollia sunt
 <lb/>et dura), ad omnia habilem fecit natura constructionem
@@ -447,9 +498,8 @@
 <lb/>vel maxime indiguit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
 <p rend="indent">
- <lb/>Cur itaque Plato (praesertim cum Hippocratis
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Cur itaque Plato (praesertim cum Hippocratis
 <lb/>imitator, siquis alius unquam, fuerit, et ab illo
 <lb/>dogmata mutuatus sit maxima) tam negligenter de unguium
 <lb/>utilitate locutus est? Cur item Aristoteles, tum circa
@@ -561,9 +611,8 @@
 </div>
 <pb n="3.22"/>
 <div type="textpart" subtype="chapter" n="9">
-
 <p rend="indent">
- <lb/>Igitur intermissum prius sermonem rursum
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Igitur intermissum prius sermonem rursum
 <lb/>repetamus, totamque manus constitutionem persequamur.
 <lb/>Nam si in sermonibus ad eam attinentibus
 <lb/>perfecte exercitati fuerimus, quum ea manifestam habeat
@@ -672,9 +721,8 @@
 <lb/>an ipsorum aliquid prave, expenderit, hallucinatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
 <p rend="indent">
- <lb/>Neque igitur nos in eum errorem sponte
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Neque igitur nos in eum errorem sponte
 <lb/>incurramus: sed primum quidem in manu, quoniam de
 <lb/>ipsa prima proposuimus ulcere, consequenter autem et
 <lb/>in aliarum partium unaquaque examen faciamus, his
@@ -701,9 +749,8 @@
 <lb/>unguium et positionis utilitas dicta est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
 <p rend="indent">
- <lb/>Cur autem adeo duri facti sint et non
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Cur autem adeo duri facti sint et non
 <pb n="3.29"/>
 <lb/>magis, et quare ex omni parte rotundi, nondum quidem
 <lb/>dictum est: id autem ulcere jam est opportunum.
@@ -763,10 +810,8 @@
 <lb/>constructio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
-<lb/>Ossium vero genus in digitis, quod et
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Ossium vero genus in digitis, quod et
 <lb/>hoc ipsum gratia ejus, quod est melius, factum est, ex
 <lb/>his utique disces. Moveri quidem multiformiter inesset
 <lb/>utique mis vel sine ossibus, sicut etiam polypodibus: firmitatem
@@ -831,10 +876,8 @@
 <lb/>circularem nequaquam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Propter hoc molita natura est camis
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Propter hoc molita natura est camis
 <lb/>generationem: quam super externas quidem ossium partes
 <lb/>nutrire non debuit, sic enim onus superfluum fuisset:
 <lb/>sub omnibus vero internis partibus eam nutrivit, ut, cum
@@ -894,10 +937,8 @@
 <lb/>persanat. Sed de carne quidem haec sufficiant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>De natura vero articulorum et ossium,
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> De natura vero articulorum et ossium,
 <lb/>quae in digitis est, rursum pertractemus, nude antea
 <lb/>digressi sumus, reversi. Quod enim ipsis indiguimus ad
 <lb/>actionum firmitudinem, et quod pluribus propter multiformes
@@ -954,10 +995,8 @@
 <lb/>naturae in ossium constructione solertia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Miraculum autem articulationis modus
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Miraculum autem articulationis modus
 <lb/>nihilo minus est. Neque enim simpliciter nec sorte ex
 <lb/>tribus ossibus digitorum unusquisque factus est, sed veluti
 <lb/>januarum cardines, ita et articulorum unusquisque
@@ -1023,10 +1062,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Quae quidem ad ossa digitorum pertinent,
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Quae quidem ad ossa digitorum pertinent,
 <lb/>ita habent: quae vero ad alias partes, deinceps
 <lb/>persequar, si prius quidem memoravero id, quod demonstratum
 <lb/>est, non posse bene inveniri utilitatem partis ante,
@@ -1063,10 +1100,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/>His igitur ad praesentem et ad consequentem
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> His igitur ad praesentem et ad consequentem
 <lb/>universum sermonem velut suppositionibus quibusdam
 <lb/>demonstrationum assumptis, quam unicuique organo
 <lb/>praestant commoditatem, dicemus a digitis rursus
@@ -1347,10 +1382,8 @@
 <lb/>sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <p rend="indent">
- <lb/>Quia tero nulla cero ex se ipsa sensum
+<lb/><label type="head"><num value="18">Cap. XVIII.</num></label> Quia tero nulla cero ex se ipsa sensum
 <lb/>habet, et absurdum erat apprehensorium organum insensili
 <lb/>tegi particula, nervorum ad totas manus desuper
 <lb/>venientium non parvam portionem in carnes ipsas natura
@@ -1459,10 +1492,8 @@
 </div>
 <pb n="3.67"/>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <p rend="indent">
- <lb/>Motu digitorum ad latera eguimus, ut
+<lb/><label type="head"><num value="19">Cap. XIX.</num></label> Motu digitorum ad latera eguimus, ut
 <lb/>eos plurimum a se invicem diducamus: quippe, nisi
 <lb/>hinc plus aliquid accessurum nobis fuisset, neque motibus
 <lb/>ejusmodi eguissemus. Sed quoniam magnum digitum
@@ -1581,10 +1612,8 @@
 <lb/>constitutionis deprehendetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="20">
-
-
 <p rend="indent">
- <lb/>Sed de motibus quidem, qui ad latera sunt,
+<lb/><label type="head"><num value="20">Cap. XX.</num></label> Sed de motibus quidem, qui ad latera sunt,
 <lb/>abunde demonstratum est. Etenim imbecilliorem diximus
 <lb/>esse eum oportere, qui interior est, et utrosque operari
 <lb/>extensis digitis, quiescere vero flexis, in quatuor videlicet
@@ -1606,10 +1635,8 @@
 <lb/>tensionibus in digitos infertis sermo erit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="21">
-
-
 <p rend="indent">
- <lb/>Quae autem nonnulli amplexantium
+<lb/><label type="head"><num value="21">Cap. XXI.</num></label> Quae autem nonnulli amplexantium
 <lb/>sermones Epicuri philosophi et Asclepiadis medici de
 <lb/>ejusmodi ambigentes dicunt, aequum est silentio nunc
 <lb/>non praeterire, sed ipsius sermones persequi non negligenter,
@@ -1701,10 +1728,8 @@
 <lb/>vero termo futurus docebit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="22">
-
-
 <p rend="indent">
- <lb/>Actiones autem magni digiti prius dietas
+<lb/><label type="head"><num value="22">Cap. XXII.</num></label> Actiones autem magni digiti prius dietas
 <lb/>nunc in memorium revocemus, in quibus demonstrabatur
 <lb/>oppositis omnibus simul quatuor digitis utilitatem
 <lb/>aequivalentem praestare. Haec autem homines dum considerarent,
@@ -1763,10 +1788,8 @@
 <lb/>hos jam relinquamus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="23">
-
-
 <p rend="indent">
- <lb/>Ubi autem addidero, quod reliquum
+<lb/><label type="head"><num value="23">Cap. XXIII.</num></label> Ubi autem addidero, quod reliquum
 <lb/>est ad primum hunc librum complendum, scilicet usum
 <lb/>numeri digitorum et inaequalitatis, mox finem faciam.
 <lb/>Hoc autem inventu nequaquam difficile est, si contemplemur,
@@ -1810,10 +1833,8 @@
 <lb/>est digitus, sermonem nostrum comprobat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="24">
-
-
 <p rend="indent">
- <lb/>Cur autem inaequales digiti omnes facti
+<lb/><label type="head"><num value="24">Cap. XXIV.</num></label> Cur autem inaequales digiti omnes facti
 <lb/>sunt et medius longissimus? sane quod ipsorum summitates
 <lb/>ad aequalitatem ventre melius erat, quum magnas
 <lb/>aliquas moles in circuitu comprehendunt, et quum in
@@ -1855,10 +1876,8 @@
 <lb/>constructio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="25">
-
-
 <p rend="indent">
- <lb/>Primo huic libro finem imponere jam
+<lb/><label type="head"><num value="25">Cap. XXV.</num></label> Primo huic libro finem imponere jam
 <lb/>tempestivum est. Reliquas enim totius manus partus, et
 <lb/>carpi, cubiti, brachii, libro fecundo exponam. Deinde
 <lb/>tertio naturae artem in cruribus ostendam. Quarto et
@@ -1889,10 +1908,8 @@
 <head>GALENI DE VSV PARTIVM CORPORIS
  <lb/>HVMANI
  <lb/>LIBER II.</head>
-
-
 <p rend="indent">
- <lb/>De usu partium corporis humani scribere
+<lb/><label type="head"><num value="1">Cap. I.</num></label> De usu partium corporis humani scribere
 <lb/>libro superiore aggressus, methodum primam declaravi,
 <lb/>qua quis inveniat, in quam utilitatem unaquaeque pars a
 <lb/>natura sit creata. Narrationem vero a manu incepi
@@ -1928,10 +1945,8 @@
 <lb/>exteriorem occupaverunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Parvi itaque munus extremae musculi duces
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Parvi itaque munus extremae musculi duces
 <lb/>sunt alterius obliquorum motuum. Eorum vero,
 <lb/>qui sunt intra cubitum, duo quidem maximi digitos
 <lb/>flectunt; magnitudine autem secundi, duo etiam numero,
@@ -1983,10 +1998,8 @@
 </div>
 <pb n="3.93"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Eorum certe, qui sunt in extrema manu,
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Eorum certe, qui sunt in extrema manu,
 <lb/>musculorum visu facile comprehensibilis est numerus:
 <lb/>unicuique enim digitorum unus est proprius parvus, sicut
 <lb/>et antea dictum est; duo autem, qui thenara, id est
@@ -2103,10 +2116,8 @@
 <lb/>sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Sed eo, unde ferme abiit, redeuntes de
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Sed eo, unde ferme abiit, redeuntes de
 <lb/>musculo, qui ad cutim manus internae apparet in superficie,
 <lb/>dicamus; quem nullus anatomicorum cognovit subnatum
 <lb/>in tota nuda et depuli interna parte usuum non
@@ -2251,10 +2262,8 @@
 <lb/>traditus est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Maximus igitur omnium, qui primum et
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Maximus igitur omnium, qui primum et
 <lb/>tertium articulum uniuscujusque quatuor digitorum flectit,
 <lb/>mox secundum longitudinem totius manus extensus est,
 <pb n="3.107"/>
@@ -2285,10 +2294,8 @@
 <lb/>ruam manum circumducit extenditque carpum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Reliquum igitur est tendonem sub interna
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Reliquum igitur est tendonem sub interna
 <lb/>cute manus natum narrare, exortum quidem ex messio
 <lb/>musculo recto habentem, qui minor quidem est aliis musculis
 <lb/>quatuor, quoniam nullam movet dearticulationem,
@@ -2347,10 +2354,8 @@
 <lb/>prodierunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Tempus autem est transeundi ad reliqua
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Tempus autem est transeundi ad reliqua
 <lb/>cubiti et radii. Plurima quidem et horum dicta sunt;
 <lb/>superest autem et alia quaedam omnino pauca et de
 <lb/>obliquis in ipsis musculis, qui radium movent, determinare.
@@ -2520,10 +2525,8 @@
 <lb/>est, ac nihil, quod ad eos pertineat, superest.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Sed tempus est, nos transire ad sermonem
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Sed tempus est, nos transire ad sermonem
 <lb/>de ossibus, a summa manu incipientes, quoniam
 <lb/>et permulta sunt offa in ipsa. Monstratum itaque est
 <lb/>ante, quod oportebat esse tria in unoquoque digito, talem
@@ -2644,10 +2647,8 @@
 <lb/>anulla sunt et ita composita.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Cur artem octo quidem ossa carpi, quatuor
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Cur artem octo quidem ossa carpi, quatuor
 <lb/>autem metacarpii sint, et cur neque plura, neque
 <lb/>pauciora fuisse erat melius, id deinceps percurram, prius
 <lb/>quidem partim commemorando eorum, quae in fine primi
@@ -2690,7 +2691,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="10">
 <p rend="indent">
- <lb/>In regione vero inter cubitum et quatuor
+<lb/><label type="head"><num value="10">Cap. X.</num></label> In regione vero inter cubitum et quatuor
 <pb n="3.129"/>
 <lb/>digitos media carpum et metacarpium locarit, ex multis
 <lb/>quidem ossibus constantia propter rationes, quas ante diximus.
@@ -2751,10 +2752,8 @@
 </div>
 <pb n="3.132"/>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Sed etiam ubi oportet dearticulationem
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Sed etiam ubi oportet dearticulationem
 <lb/>ossium fieri, et maxime magnorum, quia hoc quidem
 <lb/>suscipere oportet, illud autem ingredi, indigetque, quod
 <lb/>quidem suscipit, cavitate, quod vero ingreditur, convexitate,
@@ -2790,10 +2789,8 @@
 <lb/>muro quodam valido aut turri muniens.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>At quia extrinsecus quidem magna erat
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> At quia extrinsecus quidem magna erat
 <lb/>altitudo ipsi extremitati cubiti, intrinsecus vero partes
 <lb/>imae et demissae propter apophysim ejus parvam extrinsecus
 <lb/>et inferne iocatum, quam, ut diximus, unum e
@@ -2895,10 +2892,8 @@
 <lb/>Sed denis quidem fulsit tuus haec.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>De positura autem et conformatione
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> De positura autem et conformatione
 <lb/>ipsius radii deinceps dicamus; in ipso autem eodem sermone
 <lb/>et de cubito dicetur. Positura sane radii obliqua
 <lb/>merito fuit, quemadmodum cubiti positura recta: secundum
@@ -2949,10 +2944,8 @@
 <lb/>commodior est?</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Postquam vero de positura et conformatione
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Postquam vero de positura et conformatione
 <lb/>non solum radii, sed etiam cubiti satis dictum
 <lb/>est, reliquum adhuc suerit, ut de ipsorum ad brachium
 <lb/>dearticulatione dicam. Sunt sane hoc loco quaedam
@@ -2972,10 +2965,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Brachii vero extremitas hoc modo secundum
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Brachii vero extremitas hoc modo secundum
 <lb/>laterales partes capitis epiphysim habet, hanc
 <lb/>quidem foris, illam autem intus; quarum in medio cavitas
 <lb/>quaedam est laevis et rotunda, similis rotarum vocatis
@@ -3130,10 +3121,8 @@
 <lb/>manus partibus dicendum deinceps.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Porro quae restant dicenda in brachio,
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Porro quae restant dicenda in brachio,
 <lb/>sunt quatuor quidem musculi, os autem unum; de nervis
 <lb/>enim, qui ibi sunt, et arteriis et venis, quando de
 <lb/>omnibus vasis totius corporis faciam sermonem, tunc similiter
@@ -3296,10 +3285,8 @@
 <lb/>Sed de hac quidem postea quoque dicetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/>Cur autem unum quidem os in brachio,
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> Cur autem unum quidem os in brachio,
 <lb/>duo vero in cubito constituta sint, dicere consequens suerit.
 <lb/>At praecedit hoc quidam communis sermo de omnibus
 <lb/>dearticulationibus. Dictum antea itaque est, quod
@@ -3420,10 +3407,8 @@
 <lb/>natura.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <p rend="indent">
- <lb/>Verbis autem multis ne id quidem
+<lb/><label type="head"><num value="18">Cap. XVIII.</num></label> Verbis autem multis ne id quidem
 <lb/>eget, cur in carpo quidem minimi omnino sint obliqui
 <lb/>motus, sursum autem ad brachium maximi. Inferne
 <lb/>namque carpi et radii ossa exacte conjuncta tuus ossi
@@ -3444,10 +3429,8 @@
 <lb/>distantibus admodum inter se omnibus praedictis ossibus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <p rend="indent">
- <lb/>Dictum est mihi de omnibus fere manus
+<lb/><label type="head"><num value="19">Cap. XIX.</num></label> Dictum est mihi de omnibus fere manus
 <lb/>partibus. Arteriae enim, venae et nervi communia
 <lb/>totius corporis sunt organa; ob idque, sicut et antea
 <lb/>diximus, ubi de partibus  omnibus suerit sermo absolutus,
@@ -3472,10 +3455,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE VSV PARTIUM CORPORIS HVMANI
 <lb/>LIBER III.</head>
-
-
 <p rend="indent">
- <lb/>Manus homo omnium animalium folus
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Manus homo omnium animalium folus
 <lb/>habuit, organa animali sapienti convenientia; bipes vero
 <lb/>ipsa folus inter pedestria factus et erectus, quia manus
 <lb/>habuit. Quum enim necessarium ad vitam corpus ex
@@ -3501,7 +3482,7 @@
 <lb/>vir et sibi plus vulgo positarum scire quiddam assumens
 <lb/>audebat scribere, quod</p>
 <pb n="3.170"/>
-<lg>
+<lg rend="italic">
 <l>_ _ _ _ _ _ _ _ , qui</l>
 <l>cum equabus Magnesiis</l>
 <l>concubuit in Pelii</l>
@@ -3603,7 +3584,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="2">
 <p rend="indent">
- <lb/>Equum sane, bovem, canem, leonem et
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Equum sane, bovem, canem, leonem et
 <lb/>alia similia, ceu nullum tractaturos artem, ut vanum
 <lb/>fuisset habere manus, ita et bipedes esse: quid enim
 <lb/>esset plus eis commodi, si duobus quidem pedibus recti
@@ -3695,10 +3676,8 @@
 <lb/>rectum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Qui igitur fit, ut illa sedere nequeant,
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Qui igitur fit, ut illa sedere nequeant,
 <lb/>sicut homo, ipsis ischiis innitentia? (hoc enim adhuc
 <lb/>videtur deesse sermoni) quod oporteat crura ischiis copulata
 <pb n="3.180"/>
@@ -3780,10 +3759,8 @@
 <lb/>comparatae.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Incipiamus igitur rutilis a cruribus, et
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Incipiamus igitur rutilis a cruribus, et
 <lb/>ostendamus unamquamque eorum partem artificiose adeo
 <lb/>constitutam, ut ne excogitari quidem possit alia melior
 <lb/>constructio. Via autem etiam hic sermoni et ipsa singulorum
@@ -3836,10 +3813,8 @@
 <lb/>detectos.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Sed quod quidem satius fuit, non oblongos
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Sed quod quidem satius fuit, non oblongos
 <lb/>solum, ted etiam molles esse pedes, abunde demonstratum
 <lb/>est. Cur autem adeo longi, quantum nunc sunt,
 <pb n="3.187"/>
@@ -3960,10 +3935,8 @@
 <lb/>obit, omnino sunt inepti.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Rursus autem et hic oratio ab ipsis rebus
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Rursus autem et hic oratio ab ipsis rebus
 <lb/>coacta est manibus assimilare pedes multifidos. Nobisque
 <lb/>in posterum principium et velut elementum quoddam
 <lb/>omnium deinceps dicendorum hoc statuatur, oportere quidem
@@ -4012,10 +3985,8 @@
 <lb/>composita sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Dicamus jam, quemadmodum in manu
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Dicamus jam, quemadmodum in manu
 <lb/>ferimus, quanta fit unaquaeque simplex pedis particula,
 <lb/>et quam figuram adepta fit, et quam posituram, quamque
 <lb/>invicem connexionem universae habeant, et quis sit earum
@@ -4100,10 +4071,8 @@
 <lb/>jam septem primorum pedis ossium usus constat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Calcaneum namque maximum meritu
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Calcaneum namque maximum meritu
 <lb/>factum est, et laeve quidem inferna parte, posteriori
 <lb/>autem et superiori rotundum, et praelongum ad exteriora
 <lb/>pedis; maximum quidem, quoniam ad perpendiculum
@@ -4293,10 +4262,8 @@
 <lb/>est iis, quae alta perreptare nata sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>De ensibus itaque pedum abunde dictum
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> De ensibus itaque pedum abunde dictum
 <lb/>est; de tensionibus vero et musculis paulo post dicetur.
 <lb/>Prius siquidem de reliquis ossibus, quae in totis cruribus
 <lb/>fiunt, disserere proposui, ut quae conserant aliquid etiam
@@ -4428,10 +4395,8 @@
 </div>
 <pb n="3.217"/>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Sed tales sane et tot cruribus esse motus,
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Sed tales sane et tot cruribus esse motus,
 <lb/>quot et qualibus apparent moveri, tum quod nec plures,
 <lb/>nec pauciores, nec aliter dispositos praestiterit ipsos fuisse,
 <lb/>nunc erit dicendum, repetendo memoria simul et motus
@@ -4921,10 +4886,8 @@
 <lb/>Sed de his quidem postea.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Pes vero, (de hoc nunc propositum est
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Pes vero, (de hoc nunc propositum est
 <lb/>dicere,) neque oculo, neque cerebro deterius constructus
 <lb/>est; omnes enim ejus partes optime se habent ad actionem,
 <lb/>cujus gratia factae sunt, commoditas vero major et
@@ -4968,10 +4931,8 @@
 <lb/>nervis quidem postea seorsum tractabimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Pedis vero cutis adhaeret quidem exacte
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Pedis vero cutis adhaeret quidem exacte
 <lb/>subiectis omnibus partibus, ne usquam prompte circumvertatur.
 <lb/>Ad totam autem ipsam disseminatum est germen
 <lb/>tendonis illius, qui in calcaneo est, ut etiam non
@@ -4993,10 +4954,8 @@
 <lb/>rationali animali.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>In tibia vero ea quidem, quae ad situs,
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> In tibia vero ea quidem, quae ad situs,
 <lb/>habitus, magnitudines, parvitates et universum numerum
 <lb/>arteriarum, venarum et nervorum spectant, non
 <lb/>opus est, ut nunc audire desideres; ea vero, quae ad
@@ -5082,10 +5041,8 @@
 <lb/>constructionem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Quod certe et quae ante dicta sunt secundum
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Quod certe et quae ante dicta sunt secundum
 <lb/>hanc methodum nobis diligenter expressa sint,
 <lb/>et in sequentibus similiter eam servabimus, nemo, si modo
 <lb/>intentus fuit iis, quae prius scripta sunt, ignoraverit;
@@ -5138,10 +5095,8 @@
 <lb/>erat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Sed enim haec quoque ipsa mire ab
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Sed enim haec quoque ipsa mire ab
 <lb/>ea constituta sunt, et his adhuc magis ipsius genu dearticulatio.
 <pb n="3.253"/>
 <lb/>Epiphyses enim ossis ipsius femoris (vocatur
@@ -5227,10 +5182,8 @@
 <lb/>esse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Cur autem omnes musculi in femore
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Cur autem omnes musculi in femore
 <lb/>extiterint numero novem, deinceps dicendum fuerit.
 <lb/>Docet autem et hic caulam generationis eorum ipsa actio.
 <lb/>Siquidem tres, qui in anteriori funi femoris parte, maximi
@@ -5390,10 +5343,8 @@
 <head>GALENI DE VSV PARTIUM CORPOBIS
 <lb/>HVMANI
 <lb/>LIBER III.</head>
-
-
 <p rend="indent">
- <lb/>Quum autem nutriri quidem animalis
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quum autem nutriri quidem animalis
 <lb/>partes necesse sit, ingressus vero cibis in corpus unus
 <lb/>existat per os, optimo jure natura vias quamplurimas inde
 <lb/>divisit, has quidem velut publicas et communes omnium
@@ -5419,10 +5370,8 @@
 <lb/>tum ad intestina perveniunt, distribuit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Hae autem, quemadmodum baiuli in civitatibus
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Hae autem, quemadmodum baiuli in civitatibus
 <lb/>repurgatum in promptuario frumentum in aliquam
 <lb/>communem civitatis deferunt officinam, concoquendum
 <pb n="3.268"/>
@@ -5452,10 +5401,8 @@
 <lb/>illo duxerint.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Ipsum autem hepar, postquam id nutrimentum
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Ipsum autem hepar, postquam id nutrimentum
 <lb/>acceperit a famulis jam praeparatum, et veluti
 <lb/>rudem quandam delineationem obscuramque speciem
 <lb/>sanguinis referens, inducit ei postremum ornatum ad
@@ -5488,10 +5435,8 @@
 <lb/>quandam in sanguinis superficie fluitare.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>His igitur consentaneum fuit instrumenta
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> His igitur consentaneum fuit instrumenta
 <pb n="3.271"/>
 <lb/>praeparari, cava quidem, ut recipiant facile, praelonga
 <lb/>vero colla, velut stomachos quosdam, utraque parte cavitatis
@@ -5523,10 +5468,8 @@
 <lb/>Plato dicebat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Excipit autem aptum illic una vena maxima
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Excipit autem aptum illic una vena maxima
 <lb/>ex gibbis hepatis enata, quae ad utramque animalis
 <lb/>partem fertur, superiorem simul et inferiorem; diceres
 <lb/>fano, ceu aquaeductum quendam plenum sanguine ipsam
@@ -5547,10 +5490,8 @@
 <lb/>a quopiam ita liquido.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Hos igitur tenues humores, postquam suo
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Hos igitur tenues humores, postquam suo
 <lb/>officio perfuncti fuerint, non oportet amplius manere
 <lb/>in corpore, onus alienum venis futuros. Hujus sane
 <lb/>usus gratia renes extiterunt, instrumenta concava stomachis,
@@ -5581,10 +5522,8 @@
 <lb/>ventriculo factu.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Hujus igitur est facultas quaedam propriae
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Hujus igitur est facultas quaedam propriae
 <lb/>qualitatis attractrix, ut in commentariis De facultatibus
 <lb/>naturalibus est demonstratum. Est autem et quaedam
 <lb/>retentrix recepturum: et rursus exoratrix superfluorum;
@@ -5717,10 +5656,8 @@
 </div>
 <pb n="3.282"/>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Atque adeo tunicarum natura ventriculo
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Atque adeo tunicarum natura ventriculo
 <lb/>quidem et stomacho assimilis est, dissimilis autem intestinis.
 <lb/>Interna namque tunica in ventriculo simul ac
 <lb/>stomacho membranosior existens villos rectos superne
@@ -5784,10 +5721,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>In reliqua vero anteriore ipsius parte nihil
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> In reliqua vero anteriore ipsius parte nihil
 <lb/>habebat proprii usus gratia illic Iocatum, equo ad hoc
 <lb/>abuteretur; unde eam non piguit ob eam ipsum ventriculi
 <lb/>calfactionem etiam parte anteriori generare et extendere
@@ -5931,10 +5866,8 @@
 <lb/>Ad ea igitur omnia utile est peritonaeum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Quo pacto autem colliget simul et vestiat
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Quo pacto autem colliget simul et vestiat
 <lb/>privatim singula quae sunt sub thorace instrumenta,
 <lb/>deinceps nobis erit dicendum, sumpto hinc alicunde initio.
 <lb/>Anterioribus quidem partibus ipsorum omnium
@@ -5968,10 +5901,8 @@
 <lb/>atque operimentis eguit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Atque ad epiploi generationem, unde digressa
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Atque ad epiploi generationem, unde digressa
 <lb/>est oratio, jam redeo. Hanc tunicam praeparavit natura,
 <lb/>ut tum longe utilissima, tum minime noxis fit
 <lb/>exposita. Partibus enim peritonaei, quae a spina utrinque
@@ -6011,10 +5942,8 @@
 <lb/>tempestivum erit, explicabit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Nunc autem transire ad hepar operae
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Nunc autem transire ad hepar operae
 <lb/>pretium est, ac statim sermonis initio memoriae gratia
 <lb/>ea repetere, quae in aliis sunt demonstrata; utilia enim
 <lb/>fiunt m en solum propositis, sed omni etiam, quae a nobis
@@ -6097,10 +6026,8 @@
 <lb/>tunica.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Restat dicendum de ipsorum situ, numero,
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Restat dicendum de ipsorum situ, numero,
 <lb/>magnitudine, complexione, conformatione, connexione
 <lb/>et omni inter se communione. Sic enim manifesto
 <lb/>artificium ostendatur naturae, si non substantias
@@ -6304,10 +6231,8 @@
 <lb/>suppeditaturus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Omnia igitur bene habent, quae ad
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Omnia igitur bene habent, quae ad
 <lb/>hepar pertinent: superest tantum de tuto ipsius situ verua
 <lb/>facere, quam sollerte natura jam olim ipsi providit. Nam
 <lb/>ventriculo intestinisque omnibus per venas et colligantem
@@ -6392,10 +6317,8 @@
 <lb/>et cujusmodi exposuimus, constat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Eorum vero, quae a principio proposuimus,
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Eorum vero, quae a principio proposuimus,
 <lb/>reliquus suerit splen, ut censet quidem Erasistratus,
 <lb/>ab eximia quadam sapientia frustra restitutus; quem non
 <lb/>pudet asserere, tantum viscus a natura nihil temere agente
@@ -6516,10 +6439,8 @@
 </div>
 <pb n="3.322"/>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Conversa autem fari ejus sima ad hepar
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Conversa autem fari ejus sima ad hepar
 <lb/>et ventriculum; gibba videlicet simis opponuntur.
 <lb/>Et sima quidem arteriarum et venarum insertiones continent,
 <lb/>et eam quae ad omentum pertingit intercurrentem
@@ -6545,10 +6466,8 @@
 <lb/>suerunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/>Deinceps vero erit de intestinis dicendum.
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> Deinceps vero erit de intestinis dicendum.
 <lb/>Coquitur quidem adhuc alimentum et in ipso
 <lb/>per intestina transitu, ut in venis etiam omnibus sanguis,
 <lb/>quum tamen neque intestinorum ustum concoctionis, neque
@@ -6723,10 +6642,8 @@
 <lb/>haec sufficiant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <p rend="indent">
- <lb/>De crassis autem fle habet. Quemadmodum
+<lb/><label type="head"><num value="18">Cap. XVIII.</num></label> De crassis autem fle habet. Quemadmodum
 <lb/>intestinum tenue distributioni destinatum est,
 <lb/>ej usque gratia extitit (quamvis etiam concoquat alimentum
 <lb/>ac propellat), ita et crassem intestinum non repentinae
@@ -6770,10 +6687,8 @@
 <lb/>sequentibus explicabimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <p rend="indent">
- <lb/>Haec igitur omnia miro artificio natura
+<lb/><label type="head"><num value="19">Cap. XIX.</num></label> Haec igitur omnia miro artificio natura
 <lb/>comparavit. Quibus adhuc accedit, quod musculi utrisque
 <lb/>excrementorum, effluviis incumbunt, instar claustri
 <lb/>cujusdam, ne continenter excernuntur, neve intempestive.
@@ -6824,10 +6739,8 @@
 </div>
 <pb n="3.337"/>
 <div type="textpart" subtype="chapter" n="20">
-
-
 <p rend="indent">
- <lb/>Quod vero reliquum adhuc est propositarum
+<lb/><label type="head"><num value="20">Cap. XX.</num></label> Quod vero reliquum adhuc est propositarum
 <lb/>nunc partium expositionis, opus atque artificium
 <lb/>naturae jam persequamur. Nam quamplurima venarum
 <lb/>oscilla ad quodque intestinum penetrare ostendimus, velut
@@ -6881,10 +6794,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE VSV PARTIUM CORPORIS HVMANI
 <lb/>LIBER V.</head>
-
-
 <p rend="indent">
- <lb/>Considerandum autem deinceps est, in
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Considerandum autem deinceps est, in
 <lb/>quem locum naturae magis interfuerit venam magnam,
 <lb/>quae ab hepate oritur venasque ex mesaraeo omnes excipit,
 <lb/>deducere; oportebat enim profecto eandem hanc
@@ -6903,10 +6814,8 @@
 <lb/>quodque duxerit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Incipienda autem est hinc consideratio:
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Incipienda autem est hinc consideratio:
 <lb/>utrum ex usu magis fuerit naturam ipsam, multis venis
 <lb/>ex multis hepatis partibus productis, in singulas subjectarum
 <lb/>partium singulas abducere, an, delecto in ipso
@@ -6985,10 +6894,8 @@
 <lb/>ipso sunt anfractus, non parvas ibi effecissent angustias.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Quod praevidens natura primum omnium
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Quod praevidens natura primum omnium
 <lb/>intestinum, quod ventriculo coniunctum est, non
 <lb/>protinus in anfractus reflexit, sed eousque ad spinam
 <lb/>protensum produxit, quoad praedictis corporibus amplum
@@ -7098,10 +7005,8 @@
 <lb/>sed ea, quae prima ratione natura constituit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Memor igitur eorum perpetuo quae sequuntur
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Memor igitur eorum perpetuo quae sequuntur
 <lb/>accipe. Jam enim demonstraturus tum, cujus
 <lb/>expositionem paulo ante rejeceram, de biliosi, excremento,
 <lb/>scilicet quod in ecphysin e ventriculo praestiterat
@@ -7318,10 +7223,8 @@
 <lb/>fuit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Porro, quum excrementum tenue atque
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Porro, quum excrementum tenue atque
 <lb/>aquosum, quod urinam nuncupamus, adhuc superesset,
 <lb/>constructos sane, quo quidem id secerneretur, renes prope
 <lb/>hepar constituit. Vt vero commode excerneretur, prjmum
@@ -7417,10 +7320,8 @@
 <lb/>est convincendus. </p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Car vero alter quidem renum superiorem
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Car vero alter quidem renum superiorem
 <lb/>habuit situm, alter vero inferiorem? an et hoc consentaneum
 <lb/>est iis, quae de ipsis demonstravimus? quandoquidem,
 <lb/>si ferum trahendo ita demum purgant sanguinem,
@@ -7536,10 +7437,8 @@
 <lb/>demum alimentum fit renibus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Ne igitur cum minis per aliquot foramina,
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Ne igitur cum minis per aliquot foramina,
 <lb/>quae in renibus habentur, quemadmodum tenue
 <lb/>biliosum, ita et sanguis elaberetur, densum corpus eorum
 <lb/>fuisse praestiterat; splenem vero (ut ante probavimus)
@@ -7568,10 +7467,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Caelorum non undecunque ad utramque
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Caelorum non undecunque ad utramque
 <lb/>ipsarum nervum, arteriam ac venam produxit,
 <lb/>sed in his quoque videtur, quod commodius erat, secuta
 <lb/>fuisse; commodius enim erat, ne per longam viam, neve
@@ -7627,10 +7524,8 @@
 <lb/>videor oratione persecutus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Rursus igitur ad ea, quae cuique ipsorum
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Rursus igitur ad ea, quae cuique ipsorum
 <lb/>privatim desunt, orationem revocemus. Deest autem
 <lb/>primum quidem, ut pauca de nervis in ipsos renes prorumpentibus
 <lb/>verba faciamus; deinde vero de meatibus
@@ -7686,10 +7581,8 @@
 <lb/>postea docebimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>De nutritiis vero instrumentis hoc libro
+<lb/><label type="head"><num value="10">Cap. X.</num></label> De nutritiis vero instrumentis hoc libro
 <lb/>percurrere est propositum naturaeque in ipsis aequitatem
 <lb/>ostendere. Quum enim horum nullum neque sensorium
 <lb/>esset, neque motus instrumentum, parvos utique eis omnibus
@@ -7771,10 +7664,8 @@
 <lb/>plures et eos quidem majores nervos ipsi tribuit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Porro crassitiem quoque tunicarum extrinsecus
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Porro crassitiem quoque tunicarum extrinsecus
 <lb/>antedicta omnia operientium (quas a peritonaeo
 <lb/>oriri dicebamus) natura non pro instrumentorum dignitatibus
 <lb/>neque magnitudinibus, sed pro cujusque usibus
@@ -7829,10 +7720,8 @@
 <lb/>consecutum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>At quid causae suerit, cur tunicae quidem
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> At quid causae suerit, cur tunicae quidem
 <lb/>externae transversi solum insint villi, internae vero
 <lb/>recti quidem plurimi, sed pauci omnino obliqui? cur
 <lb/>etiam tunicae duae extiterint, quum posset natura vel
@@ -7879,10 +7768,8 @@
 <lb/>obtigit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Enimvero tum in his justa absolute fuit
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Enimvero tum in his justa absolute fuit
 <lb/>natura, tum vero quod ureteras quidem substantia corporis
 <lb/>majori vesicae, quae urinam recipit, meatus vero
 <lb/>bilem recipientes minori, quae ad hepar est, similes effecerit,
@@ -7919,10 +7806,8 @@
 <lb/>organa nominent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Caeterum de musculis certe, qui excrementorum
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Caeterum de musculis certe, qui excrementorum
 <lb/>gratia extiterunt, deinceps fuerit aequum disserere;
 <lb/>sunt enim quodammodo et hi alimenti instrumenta.
 <lb/>Prima namque et principalissima nutrimenti instrumenta
@@ -8043,10 +7928,8 @@
 <lb/>musculorum, tum etiam et eorum, qui in ano fiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Misti quidem satis haec sunt ad artem
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Misti quidem satis haec sunt ad artem
 <lb/>naturae ostendendam: tibi autem si non satisfaciunt, his
 <lb/>me demum spero tibi comprobaturum Actio ipsa musculorum
 <lb/>in omnibus ventris partibus (quam aequabilem esse
@@ -8161,10 +8044,8 @@
 <lb/>singula, convenienti tempore docebimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Excretio vero excrementorum (in praesenti
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Excretio vero excrementorum (in praesenti
 <lb/>enim de hac differere proposuimus) prima quidem
 <lb/>eorum, quae cibi sunt, quonam pactu fiat, sane jam enarrata
 <lb/>est; altera vero eorum, quae potus, quod lotium nominant,
@@ -8257,10 +8138,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE VSV PARTIVM CORPORIS HVMANI
 <lb/>LIBER VI.</head>
-
-
 <p rend="indent">
- <lb/>Eorum instrumentorum, quae natura cibi
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Eorum instrumentorum, quae natura cibi
  <lb/>oeconomice seu <hi rend="italic">procurationi</hi> praefecit, constructionem
 <lb/>duobus libris hunc antecedentibus exponentes, venum cavam
 <lb/>est diaphragma quidem oratione perduximus; quod
@@ -8284,10 +8163,8 @@
 <lb/>magis ac expeditiorem efficiet doctrinam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Quod igitur a costis utrinque circumscribitur,
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Quod igitur a costis utrinque circumscribitur,
 <lb/>pertingitque anteriore quidem parte ad sternum
 <lb/>ac septum transversum, declinat vero posteriore ad spinam
 <lb/>ac reflectitur, hoc totum spatium medici consueverunt
@@ -8400,10 +8277,8 @@
 <lb/>fit remotissimum, sedem habere tutissimam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Medius autem thorax totus valentibus
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Medius autem thorax totus valentibus
 <lb/>membranis secundum ipsius longitudinem superne deorsum
 <lb/>tendentibus dirimitur ac intersepitur. Valide autem
 <lb/>infiguntur parte quidem posteriore spinae vertebris, anteriore
@@ -8450,10 +8325,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Jam vero venam illam cavam, quae (ut
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Jam vero venam illam cavam, quae (ut
 <lb/>antea docuimus) usum summum animali exhibet, necesse
 <pb n="3.419"/>
 <lb/>quidem fuit per medias phrenas sursum ad cor perlabi,
@@ -8587,10 +8460,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Huic autem dissimili via atque opposita
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Huic autem dissimili via atque opposita
 <lb/>ductum superne deorsum oesophagum, quod per ipsum
 <lb/>velut viam cibus ab ore ad ventriculum delabitur, quo
 <pb n="3.426"/>
@@ -8643,10 +8514,8 @@
 <lb/>vertebras (qui locus opportunissimus erat) ferri.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Porro quam ob causam ad quintam vertebram
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Porro quam ob causam ad quintam vertebram
 <lb/>arteria haec vadat, tum autem quod ipsam intererat
 <lb/>non superius neque insertus spinae ipsi invehi, paulo
 <lb/>post memorabimus, quum prius omnem de stomacho
@@ -8719,10 +8588,8 @@
 <lb/>postea uberius disseremus;</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Nunc autem, (venae enim cavae ac stomachi
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Nunc autem, (venae enim cavae ac stomachi
 <lb/>situm jam absolvimus,) ad spiritus instrumenta reversi,
 <lb/>quantum in his omnibus naturae sit artificium, ostendamus;
 <lb/>quae quum posituram cuique aptissimam, et connexionem,
@@ -8825,10 +8692,8 @@
 <lb/>praedictorum perveniant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Quae igitur ad ipsius figuram ac partium
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Quae igitur ad ipsius figuram ac partium
 <lb/>cujusque posituram pertinent, sic habent: de omni
 <lb/>porro ejus substantia deinceps nobis est agendum. Cor
 <lb/>cero est dura et aegre patibilis, ex fibris multiplicibus
@@ -8908,10 +8773,8 @@
 <lb/>fuerit pluribus de ea ipsa cordis motione disserere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Sed jam tempestivum est numerum vasorum,
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Sed jam tempestivum est numerum vasorum,
 <lb/>quae in ipso sunt, percensere; sum orificii cujusque
 <lb/>ipsorum formam explicare; postremo autem et de
 <lb/>ventriculorum ipsius numero nonnihil attingere, quaeque
@@ -8976,10 +8839,8 @@
 <lb/>dextri cordis ventriculi usum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Mutuam enim gratum cor pulmoni referre
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Mutuam enim gratum cor pulmoni referre
 <lb/>videtur, quum ipsum sanguine nutrit, idque beneficii
 <lb/>ipsi conferre pro eo spiritu, quem ex illo aspirat.
 <lb/>Oportebat namque et ipsum certe pulmonem nutriri;
@@ -9222,10 +9083,8 @@
 <lb/>disputationem conclusero.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Posteaquam enim harum membranarum
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Posteaquam enim harum membranarum
 <lb/>usum docuimus esse magnum, et ea adhuc majorem
 <lb/>venae pulmonem ipsum alentis, crassae admodum ac
 <lb/>durae, deinceps erit docendum, arteriosum vas aut ejus
@@ -9331,10 +9190,8 @@
 <lb/>gignitur semper, aut interit. </p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Quod si quis causam requirat, cur plerique
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Quod si quis causam requirat, cur plerique
 <lb/>tum medicorum tum philosophorum ruo numero
 <lb/>cordis ventriculorum sin tendo hallucinati sint, ejuscemodi
 <lb/>omnia alibi a nobis sunt demonstrata, nempe in
@@ -9403,10 +9260,8 @@
 <lb/>ventriculum pertinet</hi>.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>At Asclepiades utrasque causas praetergressus,
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> At Asclepiades utrasque causas praetergressus,
 <lb/>tum illam, quae opificis providentiae reserenda
 <lb/>est accepta, quam primam esse diximus, tum autem
 <lb/>fecundam, quae velut materialis est, accedensque ad
@@ -9615,10 +9470,8 @@
 <lb/>eligat. Sed de Asclepiade nimis fortasse multa.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Quod vero ea consequitur, quae ante
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Quod vero ea consequitur, quae ante
 <lb/>a nobis fuerunt comprehensa, cujusque explicationem
 <lb/>rejeceramus, de eo jam disseramus. Quum quatuor in
 <lb/>corde sint orificia, tres quidem in singulis aliis sunt
@@ -9701,10 +9554,8 @@
 <lb/>motionis principium, cordis ipsius dilatatio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>At aures (quae sunt epiphyses quaedam
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> At aures (quae sunt epiphyses quaedam
 <lb/>nervosae et cavae, ante orificia constitutae) laxae quidem
 <lb/>reliquo tempore sunt, et idcirco concavae; quum
 <lb/>vero cor dilatatur, quomodo membranae tenduntur ac
@@ -9828,10 +9679,8 @@
 <lb/>comparatae.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Sed enim et corpus ipsum sinistra quidem
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Sed enim et corpus ipsum sinistra quidem
 <lb/>parte tutum crassam admodum est ac dorum, ut
 <lb/>quod ventriculi spiritalis tegumentum esset futurum;
 <lb/>dextra vero tenue ac molle, simul quidem, ut materiis
@@ -9937,10 +9786,8 @@
 <lb/>in sinistro autem spiritus substantia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/>Quod igitur sanguis per arterias vacuetur,
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> Quod igitur sanguis per arterias vacuetur,
 <lb/>si quis earum praecipuas et easdem multas simul
 <lb/>vulnerarit, nemo fere est, qui non assentiatur.
 <lb/>Quocirca, qui nihil omnino sanguinis arteriis dispertiunt
@@ -10089,10 +9936,8 @@
 <lb/>longissime dimittere sine ampla via potuisset.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <p rend="indent">
- <lb/>Arteria igitur et vena totum cordis
+<lb/><label type="head"><num value="18">Cap. XVIII.</num></label> Arteria igitur et vena totum cordis
 <lb/>corpus in orbem complectuntur. At nullus nervus in
 <lb/>ipsum videtur distribui, quemadmodum neque in hepar,
 <lb/>vel renes, vel lienem; solum enim ipsius tegumentum
@@ -10126,10 +9971,8 @@
 <lb/>in re atque inter se communicare.</p>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <p rend="indent">
- <lb/>Quum autem in magnis animalibus os
+<lb/><label type="head"><num value="19">Cap. XIX.</num></label> Quum autem in magnis animalibus os
 <lb/>aliquod ad caput cordis inveniatur, consentaneum fuerit
 <pb n="3.502"/>
 <lb/>illius quoque usum non praeterire. Est quidem certe,
@@ -10159,10 +10002,8 @@
 <lb/>aptius.</p>
 </div>
 <div type="textpart" subtype="chapter" n="20">
-
-
 <p rend="indent">
- <lb/>Hae igitur sunt in perfectis jam animalibus
+<lb/><label type="head"><num value="20">Cap. XX.</num></label> Hae igitur sunt in perfectis jam animalibus
 <lb/>cornis partes; nam in iis, quae utero adhuc gestantur,
 <lb/>anastomoses quaedam vultuum ipsius cornis cernuntur,
 <lb/>de quibus antea quidem receperam me verba
@@ -10273,10 +10114,8 @@
 <lb/>experiamur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="21">
-
-
 <p rend="indent">
- <lb/>Quae igitur ad pulmonem pertinent, ea
+<lb/><label type="head"><num value="21">Cap. XXI.</num></label> Quae igitur ad pulmonem pertinent, ea
 <lb/>naturae aequitate cum in iis, quae jam respirant,
 <pb n="3.509"/>
 <lb/>tum in iis, quae adhuc habentur in utero, sunt comparata;
@@ -10414,10 +10253,8 @@
 <head>GALENI DE VSV PARTIUM CORPORIS
 <lb/>HVMANI
 <lb/>LIBER VII.</head>
-
-
 <p rend="indent">
- <lb/>Quod vero pulmo respirationis ac vocis
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quod vero pulmo respirationis ac vocis
 <lb/>sit instrumentum, prius dictum est; cur autem ex tot ac
 <lb/>talibus constet partibus, quot et quales nunc ejus sint,
 <lb/>quodque neque plures his, neque pauciores habere ipsum
@@ -10435,10 +10272,8 @@
 <lb/>qui prorsus ignorarunt, viam munientes.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Hoc itaque viteus, quemadmodum hepar,
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Hoc itaque viteus, quemadmodum hepar,
 <lb/>vasis quamplurimis est contextum, quorum intervalla
 <lb/>carne molli inster tomenti cuiusdam opplentur. Vasorum
 <lb/>porro ipsius proficiscuntur aliud quidem ex sinistro
@@ -10466,10 +10301,8 @@
 <lb/>ageremus, dilucide demonstravimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Cui autem eis natura tertium vas a
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Cui autem eis natura tertium vas a
 <lb/>pharynge prodiens adjunxit, (quod nonnulli asperam
 <lb/>arteriam, alii autem bronchon nominant,) profluus dicemus,
 <pb n="3.519"/>
@@ -10530,10 +10363,8 @@
 <lb/>ad os fertur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Cur igitur non prorsus arteriam hanc
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Cur igitur non prorsus arteriam hanc
 <lb/>aut cartilaginosum totam aut membranulam natura
 <lb/>effecerit, sed alternis cartilaginem ac membranam collocarit;
 <pb n="3.522"/>
@@ -10598,10 +10429,8 @@
 <lb/>sigmoides opplent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Quocirca in pulmone desiderare nihil pessis,
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Quocirca in pulmone desiderare nihil pessis,
 <lb/>quo minus asperarum arteriarum beneficio votis
 <lb/>simul ac respirationis sit instrumentum; quippe quarum
 <lb/>cartilagines ipsae vocis furti instrumenta, quae vero eas
@@ -10671,10 +10500,8 @@
 <lb/>ad reliquas pulmonis partes transeamus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Vocis quidem instrumentum esse diximus
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Vocis quidem instrumentum esse diximus
 <lb/>asperae arteriae cartilaginem, respirationis autem
 <lb/>vincula membranosa; quod vero ex ipsis compositum,
 <lb/>arteriam, respirationis simul ac vocis esse partem; quae
@@ -10702,10 +10529,8 @@
 </div>
 <pb n="3.530"/>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
-<lb/>Num igitur natura haec quidem summae
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Num igitur natura haec quidem summae
 <lb/>artis fecit opera, situs autem ipsius curam deposuit?
 <lb/>circularem cartilaginum partem extrinsecus locarit, quae
 <lb/>vero ipsarum reliquum contexunt vincula, ea intus ad
@@ -10810,7 +10635,7 @@
 <lb/>appellat; sic vero in omnibus animalibus, quae collum
 <lb/>habent admodum longum et cartilagines siccas, cujus
 <lb/>generis sunt grues; ob id enim de his scripsit Homerus:</p>
-<lg>
+<lg rend="italic">
  <l>Clangore hae quidem volant supra oceani fluenta.</l>
 </lg>
 <p rend="nonindented">
@@ -10828,10 +10653,8 @@
 <lb/>paulo post verba faciemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Porro pulmo, quantum ad praesentem
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Porro pulmo, quantum ad praesentem
 <lb/>sermonem attinet, iis quidem, qui negligentius haec considerant,
 <lb/>omnia fortasse, quibus indiget, habere jam
 <lb/>unius instrumenti, asperae scilicet ar terrae, beneficio
@@ -10997,10 +10820,8 @@
 <lb/>cupiat, librum legat superiorem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>De reliquis autem jam me dicere tempestivum
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> De reliquis autem jam me dicere tempestivum
 <lb/>est. Quum enim respirationis usum primum
 <lb/>esse et maximum eum dixerimus, caloris nativi conservationem,
 <lb/>(propter quem annualia repente intereunt privata
@@ -11103,10 +10924,8 @@
 </div>
 <pb n="3.550"/>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
-<lb/>Caeterum et de ipsius quoque in lobos
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Caeterum et de ipsius quoque in lobos
 <lb/>divisione dictum est; atque oportet capita eorum, quae
 <lb/>ibi dicta sunt, in memoriam revocare, videlicet quod
 <lb/>subi hi primum usum iis, qui sunt in jecinore, similem
@@ -11128,10 +10947,8 @@
 <lb/>hactenus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>De laryngis autem partibus deinceps
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> De laryngis autem partibus deinceps
 <lb/>dicendum; est enim hic quoque spiritus instrumentum,
 <lb/>appellaturque (ut etiam ante docuimus) non hoc solum
 <lb/>nomine, sed etiam branchi caput, propterea quod
@@ -11257,10 +11074,8 @@
 <lb/>coeunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Sic itaque se habet cartilaginum ac
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Sic itaque se habet cartilaginum ac
 <lb/>musculorum laryngis constructio, de quorum usu dicendum
 <lb/>deinceps jam erit, ducto a cartilaginibus initio.
 <lb/>Non enim temere eas sine causa natura fecit tot ac
@@ -11317,10 +11132,8 @@
 <lb/>praebentes.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Sed de musculis quidem et cartilaginibus
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Sed de musculis quidem et cartilaginibus
 <lb/>laryngis dictum est; de aliis vero deinceps dissecamus.
 <lb/>In spatio laryngis interno (per quod intro et
 <lb/>foras fertur spiritus) corpus quoddam est locatum side
@@ -11454,10 +11267,8 @@
 <lb/>loqui prius possunt, quam larynx eis suerit perfusus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Caeterum de lingua laryngis haec
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Caeterum de lingua laryngis haec
 <lb/>quoque sufficiunt. Rursus autem ad musculos eum moventes
 <lb/>redeo, et maxime ad illos, qui claudunt, unde
 <lb/>oratio hactenus deflexit. Omnes enim admirabuntur,
@@ -11735,10 +11546,8 @@
 <lb/>fuerant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Tempestivum sane jam fuerit indicare
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Tempestivum sane jam fuerit indicare
 <lb/>admirabilem hanc nervorum laryngis, sive rotulam, sive
 <pb n="3.582"/>
 <lb/>metam, sive limitem, unde cursus reflectitur, oporteat
@@ -11819,10 +11628,8 @@
 <lb/>confert.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Haudquaquam igitur mihi rideris amplius
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Haudquaquam igitur mihi rideris amplius
 <pb n="3.586"/>
 <lb/>admiratores, nec rogaturus, quae mirantur sane
 <lb/>ac requirunt, qui ante me fuerunt tum medior omnes,
@@ -11876,10 +11683,8 @@
 <lb/>in locum cedentem evertat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/>Atque tibi et hic rursum constructionis
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> Atque tibi et hic rursum constructionis
 <lb/>hujus cartilaginis examinatio fiat ei similis, quae multo
 <lb/>ante de epiglottide facta est. Nam nisi magnitudo ejus
 <lb/>esset tanta, quanta nunc est, et sigma talis, atque extali
@@ -11919,10 +11724,8 @@
 <lb/>quae memorata sunt, intelligeremus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <p rend="indent">
- <lb/>Ad reliquos vero usus eorum, quae in
+<lb/><label type="head"><num value="18">Cap. XVIII.</num></label> Ad reliquos vero usus eorum, quae in
 <lb/>larynge apparent et fiunt, rursus revertamur. Antea
 <lb/>line dicebamus, vinculum membranulum, quod partes
 <lb/>cartilaginum sigmoides opplet, communionem praebere
@@ -11939,10 +11742,8 @@
 <lb/>larynx vero sursum ad fauces recurrat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <p rend="indent">
- <lb/>Haec igitur omnia mirabiliter a natura
+<lb/><label type="head"><num value="19">Cap. XIX.</num></label> Haec igitur omnia mirabiliter a natura
 <lb/>sunt sueta; quibus accedit os yforme, quod hyoïdes appellatur:
 <lb/>nam quamvis sit minimum, maximos tamen
 <lb/>atque opportunos praebet usus. Siquidem musculorum
@@ -12001,10 +11802,8 @@
 <lb/>pertinent, sic se habenti.</p>
 </div>
 <div type="textpart" subtype="chapter" n="20">
-
-
 <p rend="indent">
- <lb/>De thorace autem dicendum deinceps
+<lb/><label type="head"><num value="20">Cap. XX.</num></label> De thorace autem dicendum deinceps
 <lb/>nobis est, repetitis hic quoque prius iis, quae in commentariis,
 <lb/>talos de causis respirationis edidimus, obiter
 <lb/>ostendimus. Postea enim quam totius instrumenti actio
@@ -12052,10 +11851,8 @@
 <lb/>nervis una cum arteriis ac venis libro decimo sexto.</p>
 </div>
 <div type="textpart" subtype="chapter" n="21">
-
-
 <p rend="indent">
- <lb/>Caeterum de iis thoracis partibus, quae
+<lb/><label type="head"><num value="21">Cap. XXI.</num></label> Caeterum de iis thoracis partibus, quae
 <lb/>haud ipsae quidem habent actionem, sed aliis habentibus
 <lb/>subserviunt, deinceps tractabimus. Propria quidem
 <lb/>septi transversi substantia musculus est, tunicae
@@ -12159,10 +11956,8 @@
 <lb/>legat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="22">
-
-
 <p rend="indent">
- <lb/>Sed et mammis etiamnum commemoratis,
+<lb/><label type="head"><num value="22">Cap. XXII.</num></label> Sed et mammis etiamnum commemoratis,
 <lb/>quum thoraci ipsae adhaereant, tum huic libro
 <lb/>finem imponemus. Quum igitur lac utilis alimenti sit
 <lb/>excrementum, jure optimo, quibus animantibus in cornua,
@@ -12288,10 +12083,8 @@
 <head>GALENI DE VSV PARTIVIT CORPRIS
 <lb/>HUMANI
 <lb/>LIBER VIII.</head>
-
-
 <p rend="indent">
- <lb/>Quum autem explicatio partium, quae
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quum autem explicatio partium, quae
 <lb/>tum ad collum, tum ad caput pertinent, ante dicta subsequatur,
 <lb/>melius utique fuerit ante particularem earum
 <lb/>expositionem de ipsis universis partibus observare, cujus
@@ -12387,10 +12180,8 @@
 <lb/>abunde dictum est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Caput autem plurimis visum est propter
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Caput autem plurimis visum est propter
 <lb/>cerebrum factum fuisse, ob eamque causam sensus omnes
 <lb/>in se ipso continere tanquam servos quosdam et
 <lb/>magni regis stipatores. At cancris et aliis molli crusta
@@ -12501,10 +12292,8 @@
 <lb/>verentur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Atque alios quidem minus quispiam admirabitur,
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Atque alios quidem minus quispiam admirabitur,
 <lb/>Aristotelem vero non est quin valde admiremur,
 <lb/>qui quum ea, quae ex anatome apparent, non
 <lb/>neglexerit, in eorumque usu sit exercitus, ipseque tradiderit,
@@ -12610,10 +12399,8 @@
 <lb/>instrumenti actionem invenerimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Quae igitur in aliis demonstravimus, ad
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Quae igitur in aliis demonstravimus, ad
 <lb/>praesentem sermonem nunc sumamus. Demonstratum
 <lb/>autem in libris de placitis Hippocrates et Platonis,
 <lb/>principium quidem nervorum et sensus omnis motusque
@@ -12717,10 +12504,8 @@
 <lb/>in pectore est collocatum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Quid igitur causae sit, quod natura in
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Quid igitur causae sit, quod natura in
 <lb/>plurimis animalibus caput effecerit, haudquaquam mihi
 <pb n="3.631"/>
 <lb/>nos aliter invenire posse videmur, quam quomodo inquirere
@@ -12828,10 +12613,8 @@
 <lb/>non mediocriter opitulatura.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Oratione quidem jam totum capitis corpus
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Oratione quidem jam totum capitis corpus
 <lb/>absolvimus. Singularum autem ejus deinceps partium
 <lb/>usum considerare tempestivum nobis fuerit, ducto
 <lb/>ab ipso cerebro initio. Hoc namque substantia quidem
@@ -13131,10 +12914,8 @@
 <lb/>refrigeraret omnemque vitam in periculum adduceret.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Quin et quae sunt ante meningas ossa
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Quin et quae sunt ante meningas ossa
 <lb/>haec admodum foraminibus pervia et cavernosa, quae
 <pb n="3.652"/>
 <lb/>ab anatomicis a cribri similitudine vocantur cribrosa, ut
@@ -13221,10 +13002,8 @@
 <lb/>instrumentum multis actionibus atque usibus sufficiat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Verbi gratia, tenuis meninx cerebrum
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Verbi gratia, tenuis meninx cerebrum
 <lb/>stabilit ac legit; et praeterea vasa omnia, quae in ipso
 <lb/>sunt, colligat; similis enim est chorio foetus atque animalis
 <lb/>mesaraeo. Nam ut utrumque horum ex multis
@@ -13278,10 +13057,8 @@
 </div>
 <pb n="3.659"/>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Est porro ipsius tegumentum et crassa
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Est porro ipsius tegumentum et crassa
 <lb/>meninx; aut potius non simpli citer ipsam tegumentum
 <lb/>nominare oportet, sed magis veluti propugnaculum quoddam
 <lb/>propulsandis oranti impressionibus oppositum. At
@@ -13360,10 +13137,8 @@
 </div>
 <pb n="3.663"/>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>At nunc certe primum quidem ventriculorum
+<lb/><label type="head"><num value="10">Cap. X.</num></label> At nunc certe primum quidem ventriculorum
 <lb/>cerebri magnitudinem, situm cujusque, figuram,
 <lb/>mutuas inter sese perforationes, omnem denique ipsorum
 <lb/>numerum explicemus, tum autem et incumbentes atque
@@ -13406,10 +13181,8 @@
 <lb/>certe ex ipso spinalis medulla producatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Sed quoniam nervi omnes, qui sub capite;
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Sed quoniam nervi omnes, qui sub capite;
 <lb/>toto corpore diffunduntur, aut ex posteriore cerebro, aut
 <lb/>spinali medulla oriuntur, ventriculum hunc oportuit
 <lb/>insignem habere magnitudinem, spiritumque animalem
@@ -13512,10 +13285,8 @@
 <lb/>abstuleris, erit et ipsa orbicularis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>De figura itaque ipsorum haec sufficiant.
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> De figura itaque ipsorum haec sufficiant.
 <lb/>De magnitudine autem non hic polum, sed in toto etiam
 <lb/>corpore, ventriculos quidem, qui materiales magis substantias
 <lb/>recipiunt, consentaneum est esse majores; minores
@@ -13566,10 +13337,8 @@
 <lb/>est ejusmodi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Quandoquidem eo orationis sumus deducti,
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Quandoquidem eo orationis sumus deducti,
 <lb/>non oportet formam cerebelli praetermittere indiscussam.
 <lb/>Non enim ex magnis flexibus tenui meninge
 <lb/>interceptis, ut cerebrum, sed ex multis quidem et his
@@ -13609,10 +13378,8 @@
 <lb/>non est necesse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Rursus igitur ad partes, quae post medium
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Rursus igitur ad partes, quae post medium
 <lb/>sunt ventriculum, reversi consideremus, cujus rei
 <lb/>causa corpus id, quod ad principium meatus incumbit,
 <lb/>qui ventriculum hunc cum cerebro posteriore conjungit,
@@ -13797,10 +13564,8 @@
 <head>GALENI DE VSV PARTIUM CORPRIS
 <lb/>HUMANI
 <lb/>LIBER IX.</head>
-
-
 <p rend="indent">
- <lb/>Posteaquam autem partes omnes, quae ad
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Posteaquam autem partes omnes, quae ad
 <lb/>cerebrum attinent, exposuimus, multisque locis, quae iis
 <lb/>sunt proxima, consecutione quadam naturali, quam in
 <lb/>eis reperimus, coacti, oratione attigimus, non alienum
@@ -13944,10 +13709,8 @@
 <lb/>utrinque superficiem ejus esse oportuisset.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>At vero manium quibusdam forte videbitur
+<lb/><label type="head"><num value="2">Cap. II.</num></label> At vero manium quibusdam forte videbitur
 <pb n="3.692"/>
 <lb/>frustra factum fuisse cavernosum, quum suturae propter
 <lb/>ipsarum multitudinem ac magnitudinem nihil alieno
@@ -13974,10 +13737,8 @@
 <lb/>adeo ob transpirationem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Rursus igitur ad reliquum genus meatuum
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Rursus igitur ad reliquum genus meatuum
 <lb/>cerebrum purgantium reversi naturae in his artificium
 <lb/>explicemus. At de duobus quidem, qui ad nares perveniunt,
 <lb/>proximo libro tractavimus; reliquorum vero
@@ -14046,10 +13807,8 @@
 <lb/>incidunt, offensio aliqua partes has violaret.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Itaque quod anatomici nuncupant plexum
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Itaque quod anatomici nuncupant plexum
 <lb/>retiformem, maxime omnium, quae illic sunt, admirabile,
 <lb/>ibi est collocatum, complectens quidem in orbem
 <lb/>et ipsam glandulam, pertingens autem retro longissime,
@@ -14188,10 +13947,8 @@
 <lb/>tracturis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Non alienum certe hic quoque fuerit, sermone
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Non alienum certe hic quoque fuerit, sermone
 <lb/>hoc paulum intermisso, recordari omnium, quae
 <pb n="3.704"/>
 <lb/>corpori insunt, venarum atque arteriarum, quonam
@@ -14273,10 +14030,8 @@
 <lb/>adhibuit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Postquam autem facta haec fuerunt,
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Postquam autem facta haec fuerunt,
 <lb/>quamplurimis in transitu sanguinis per crassam meningem
 <lb/>factis foraminibus, per ea venas alias quidem parvas,
 <lb/>alias vero magnas produxit, sursum quidem ad
@@ -14308,10 +14063,8 @@
 <lb/>produxit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Post sila vero, quum jam prope medium
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Post sila vero, quum jam prope medium
 <lb/>ventriculum accessisset, magnasque venas, quae in plexus
 <lb/>chorioides distribuerentur, ab eo produci esset necesse,
 <lb/>non amplius tantarum venarum colligationem soli tenui
@@ -14367,10 +14120,8 @@
 <lb/>superest jam dicendum, sequentibus libris persequemur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Rursus autem ad cerebrum revertamur,
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Rursus autem ad cerebrum revertamur,
 <lb/>reliquasque ejus productiones exponamus, quas ante
 <lb/>diximus summatim prius repetentes. Maximae igitur
 <lb/>ipsarum erant, quae ad nares pertinent; quartum parte
@@ -14542,10 +14293,8 @@
 <lb/>iis, quae extra id sunt, diutius insistamus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Id igitur si tenuerimus, praedictoque sermoni
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Id igitur si tenuerimus, praedictoque sermoni
 <lb/>hoc adiecerimus, quod scilicet ab his nervis productio
 <lb/>ad musculos temporales pertinet, per ossa temporum
 <lb/>excidens, ad aliam jam transeamus cerebri productionem.
@@ -14582,10 +14331,8 @@
 <lb/>sed a basi cerebri magis, quam illa, emergit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Post has autem a capitis lateribus verius
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Post has autem a capitis lateribus verius
 <lb/>ossa petrosa sunt productiones. Quinta autem est haec
 <lb/>conjugatio nervorum, non nisurum quidem adhuc durorum.
 <lb/>Dividitur porro in ipso per ossa transitu in duas
@@ -14606,10 +14353,8 @@
 <lb/>extra cramum, agemus; verba faciemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Nunc autem tempestivum suerit aliam
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Nunc autem tempestivum suerit aliam
 <lb/>subolem nervorum a cerebro proficiscentium, verbis expromere.
 <lb/>Sexta autem quaedam est ultra has nervorum
 <lb/>coniugatio a suasi cerebri productorum, qui nondum
@@ -14749,10 +14494,8 @@
 <lb/>autem in sequentibus etiam dicemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>De septima vero coniugatione nervorum
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> De septima vero coniugatione nervorum
 <lb/>a cerebro proficiscentium nobis jam est dicendum. Quae
 <lb/>quod protinus quidem ei coniungitur, quae ipsam praecedit,
 <lb/>dictum haud ita pridem est; nec minus etiam,
@@ -14773,10 +14516,8 @@
 <lb/>inferuntur, aliis sunt duriores.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Musculi autem sunt in facie tum qui
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Musculi autem sunt in facie tum qui
 <lb/>oculos, tum qui maxillam inferiorem, praeter hos autem
 <lb/>et qui nasi alas, labia et buccas movent. In oculorum
 <lb/>porro musculos, etsi prorsus minimos, magni tamen
@@ -14921,10 +14662,8 @@
 <lb/>.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Porro orationis continuatione paulisper
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Porro orationis continuatione paulisper
 <lb/>hoc loco intermissa, pauca de nominibus verba faciam,
 <lb/>quibus certe et jam usi fumus, et tota loquente disputatione
 <lb/>usuri fumus. Duos mihi nervos intellige, alterum
@@ -14995,10 +14734,8 @@
 <lb/>explicabatur. </p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Carnes equidem in ambitu dentium,
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Carnes equidem in ambitu dentium,
 <pb n="3.744"/>
 <lb/>quas gingivas nominant, ac ipsi dentes omnes, et tota
 <lb/>cutis farier, et tunica, quae narium partem internam subungit,
@@ -15055,10 +14792,8 @@
 <lb/>aluisset substantia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
-<lb/>Sed quoniam et tunicam, quae nares
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Sed quoniam et tunicam, quae nares
 <lb/>intus subungit, dicebamus ejus nemorum portionis, quae
 <lb/>sid oculorum cavitatem fertur, esse participem, non tamen
 <pb n="3.747"/>
@@ -15130,10 +14865,8 @@
 <lb/>opificis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/>Pari modo autem et ad futuras denuo
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> Pari modo autem et ad futuras denuo
 <lb/>reversi, quantum adhuc superiori sermoni deest, quum
 <lb/>adjecerimus, huic quoque libro justum modum statuemus.
 <lb/>Quod igitur ad fuliginosorum excrementorum transpiratum,
@@ -15231,10 +14964,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <p rend="indent">
- <lb/>At ossium compositiones non hae solae
+<lb/><label type="head"><num value="18">Cap. XVIII.</num></label> At ossium compositiones non hae solae
 <lb/>sunt, sed nonnullae adhuc aliae sunt, quas neque Hippocrates,
 <lb/>neque alius quivis eorum, qui corporis naturam
 <lb/>accuratius sunt contemplati, suturas voluit appellare.
@@ -15296,10 +15027,8 @@
 <head>GALENI DE VSV PARTIUM CORPORIS
 <lb/>HUMANI
 <lb/>LIBER X.</head>
-
-
 <p rend="indent">
- <lb/>Oculos autem quod loco quidem edito
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Oculos autem quod loco quidem edito
 <lb/>constitui stiparique undique satius erat, antea dictum
 <lb/>est; quod vero et in parte corporis anteriori, in quam
 <lb/>etiam movemur, melius fuit constitui, ne id quidem est
@@ -15350,10 +15079,8 @@
 <lb/>est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>locantque ipsum nonnulli proprie tunicam
+<lb/><label type="head"><num value="2">Cap. II.</num></label> locantque ipsum nonnulli proprie tunicam
 <lb/>retiformem, quod figura quidem reti sit similis.
 <lb/>Caeterum nullo pacto est tunica, neque colore, neque
 <lb/>substantia, sed si exemptum ipsum seposueris, in unum
@@ -15487,10 +15214,8 @@
 <lb/>aliter quam irim appellare queas.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>At enim non ea duntaxat sapientiae opificis
+<lb/><label type="head"><num value="3">Cap. III.</num></label> At enim non ea duntaxat sapientiae opificis
 <lb/>sunt opera, sed iis multo adhuc majora, quae jamjam
 <lb/>dicturi sumus. Nam ad medium usque crystallini
 <lb/>circulos septem oratione jam perduximus, qui sibi ipsis
@@ -15676,10 +15401,8 @@
 <lb/>natura factum fuisse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Nec minus eo admiror asperitatem, quae
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Nec minus eo admiror asperitatem, quae
 <pb n="3.779"/>
 <lb/>intus tunicae humorem vitreum contenturae inuritur; humida
 <lb/>enim haec quidem ac mullis instar spongiae
@@ -15728,10 +15451,8 @@
 <lb/>tanquam magna a sete distent intercapedine.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Quod autem inter crystallinum humorem
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Quod autem inter crystallinum humorem
 <lb/>et tunicam uveam humiditas quaedam tenuis continetur,
 <lb/>quodque locus is, qui est ad pupillam, spiritu est plenus,
 <lb/>ex his potissimum potes intelligere. Primum, quod in
@@ -15811,10 +15532,8 @@
 <lb/>alterius pupilla dilatatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Num igitur humor hic tenuis et spiritus,
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Num igitur humor hic tenuis et spiritus,
 <lb/>qui pupilla continetur, ad eam rem duntaxat conserunt,
 <lb/>ut scilicet tunica cornea plurimum ab humore crystalli
 <lb/>lino sit dissita, neque ipsum unquam contingat, an ad
@@ -15930,10 +15649,8 @@
 <lb/>palpebras fieri consentaneum fuit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Quinetiam connecti eas ossibus oculo
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Quinetiam connecti eas ossibus oculo
 <lb/>ipsi fuit melius. Quare quum et hoc ipso constructionem
 <lb/>palpebrarum praeditam esse oporteret, et ante hoc
 <lb/>motus agilitate, patiendi difficultate, et ut corneam sua
@@ -15998,10 +15715,8 @@
 <lb/>fuerant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>At posteaquam palpebras oratione jam
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> At posteaquam palpebras oratione jam
 <lb/>fumus executi, totumque oculum absolvimus, tempestivum
 <lb/>fuerit exponere, undenam motum ei suppeditabimus,
 <lb/>quandoquidem desidem ipsum penitus atque immobilem
@@ -16076,10 +15791,8 @@
 <lb/>eorum est usus, de quo ante locuti, fumus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Haec quidem tot ac tanta naturae sunt
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Haec quidem tot ac tanta naturae sunt
 <lb/>in oculorum constructione opera; quod autem nihilominus
 <pb n="3.799"/>
 <lb/>iis atque aliis ante dictis omnibus quis admirari
@@ -16239,10 +15952,8 @@
 <lb/>palpebram superiorem pertinent, sic habent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Cur vero non et palpebra inferior motus
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Cur vero non et palpebra inferior motus
 <lb/>fuit particeps, quum ad eundem usum facta fuisset, locumque
 <lb/>recipiendis musculis non minus haberet accommodum?
 <lb/>Natura certe videri hic possit injusta, si, quum
@@ -16284,10 +15995,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Deinceps autem, quae ad oculorum
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Deinceps autem, quae ad oculorum
 <lb/>angulos pertinent, sunt vestiganda. Nam si corpus id
 <lb/>carneum, quod majori angulo incubat, est utile, minori
 <lb/>certe nocere natura videri queat, quod eum operimento
@@ -16349,10 +16058,8 @@
 <lb/>quod unctuosa sit ac pinguis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Absoluta nobis propemodum sunt omnia,
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Absoluta nobis propemodum sunt omnia,
 <lb/>quae ad oculos pertinent, praeter unum, quod proposueram
 <lb/>quidem praetermittere, ne multi aversarentur
 <lb/>tum disputationis obscuritatem, tum etiam rei prolixitatem.
@@ -16649,10 +16356,8 @@
 <lb/>operi convenientem assecuti simus, ille ipse viderit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Nos autem finem huic libro statuamus,
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Nos autem finem huic libro statuamus,
 <lb/>rursus admonentes, necesse esse axes conorum visoriorum
 <lb/>in uno eodemque plano habere positionem, ne, quod est
 <lb/>unum, duplex appareat. Axes vero hi in nobis principium
@@ -16713,10 +16418,8 @@
 <lb/>oculis exhibituros ab uno principio proficisci.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Cur vero non protinus superne ab ipso
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Cur vero non protinus superne ab ipso
 <lb/>cerebro unum utrisque principium natura fecerit, sed
 <lb/>alterum quidem a dextris ejus partibus, alterum a sinistris
 <lb/>productum, ita in medio loco ipsos inter se coegit
@@ -16847,10 +16550,8 @@
 <lb/>mathematicis theorematibus tum usus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>At forte quis interfatus interrogaverit, quonam
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> At forte quis interfatus interrogaverit, quonam
 <lb/>pactu, si meapte sponte multa praetermisi, plenum est
 <lb/>hoc opus ac perfectum, ut nullius partis omissus sit usus,
 <lb/>sed quarundam ne unum quidem solum, aliarum plures
@@ -16923,10 +16624,8 @@
 <head>GALENI DE VSV PARTIVM CORPORIS
 <lb/>HVMANI
 <lb/>LIBER XI.</head>
-
-
 <p rend="indent">
- <lb/>Quod igitur in toto capite adhuc est reliquum,
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quod igitur in toto capite adhuc est reliquum,
 <lb/>quod expositione indigeat, hoc libro explicabimus.
 <lb/>Superest autem, ut ridetur, universa propemodum
 <lb/>facies, et superiorum nonnulla, cujusmodi sunt musculi,
@@ -16943,10 +16642,8 @@
 <lb/>suppeditetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Cur autem natura musculos hos propemobum
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Cur autem natura musculos hos propemobum
 <lb/>totos in capitis ossibus abdiderit, ea ossa, quibus incubant,
 <lb/>excavans admodum atque exculpens, plurimum
 <lb/>autem circumjacentia omnia attollens, ceu tegumentum
@@ -17061,10 +16758,8 @@
 <lb/>tum minimam, tum ad actionem habet imbecillam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Cur tandem solus hic musculus in capitiis
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Cur tandem solus hic musculus in capitiis
 <lb/>ossibus est abditus, quum alia quidem ossa ipsum excipiant,
 <lb/>alia autem in orbem complectantur, adeo ut exigua
 <lb/>ejus pars ad finem frontis emineat? an non huic
@@ -17120,10 +16815,8 @@
 <lb/>praetentura.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Hanc itaque constructionis securitatem
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Hanc itaque constructionis securitatem
 <lb/>musculi temporales habuerunt. Desinens porro uterque
 <pb n="3.852"/>
 <lb/>in magnum unum tensionem coronae maxillae inferioris
@@ -17207,10 +16900,8 @@
 </div>
 <pb n="3.856"/>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Temporales porro musculi, quique eis infra
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Temporales porro musculi, quique eis infra
 <lb/>sunt oppositi os aperientes, alia ratione et ipsi omnibus
 <lb/>aliis musculis sunt dissimiles; quandoquidem ex mediis
 <lb/>temporalibus tendo emersit, quem in maxillae inferioris
@@ -17353,10 +17044,8 @@
 <lb/>musculus extitit, accommodatissima.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Differentiam vero ipsorum in magnitudine
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Differentiam vero ipsorum in magnitudine
 <lb/>ac nervorum moventium principium si considerare
 <lb/>volueris, mirabilem hic quoque maturae aequitatem reperies.
 <lb/>Siquidem eos, qui velut pendentem a fele totam
@@ -17375,10 +17064,8 @@
 <lb/>et ab internis musculis subsidium hoc affuit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Porro nervorum principium omnibus faciei
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Porro nervorum principium omnibus faciei
 <lb/>musculis tertia nervorum est coniugatio, qui a cerebro
 <lb/>proficiscuntur atque etiam aliis propemodum omnibus
 <lb/>ipsius partibus. Nam in temporales ac masticatorios
@@ -17468,10 +17155,8 @@
 <lb/>ne minimum quidem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Visne haec quoque belle atomis ipsis
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Visne haec quoque belle atomis ipsis
 <lb/>contigisse? cur duos et triginta omnino dentes habemus,
 <pb n="3.869"/>
 <lb/>uno ordine in utraque maxilla sexdecim collocatos?
@@ -17630,10 +17315,8 @@
 </div>
 <pb n="3.877"/>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Caeterum de aliis quidem animantibus
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Caeterum de aliis quidem animantibus
 <lb/>alius aliquando nobis explicandi locus fuerit, homo vero
 <lb/>(ad eum enim nobis est revertendum) unum parte utraque
 <lb/>dentem caninum produxit, quum leones, lupi ac
@@ -17696,10 +17379,8 @@
 <lb/>ac retinendum accommodos efficere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Quin et linguae molem ori ad amussim
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Quin et linguae molem ori ad amussim
 <lb/>adaptatam esse oportuit, quo in omnem ejus partem
 <lb/>pertingat; quod sane, si minor esset, haudquaquam obtineret;
 <lb/>nusquam autem a loci angustia impeditur, quod
@@ -17827,10 +17508,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Quae igitur natura machinata est tum
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Quae igitur natura machinata est tum
 <lb/>in epiglottide, tum larynge, et (ut summatim dicam) in
 <pb n="3.887"/>
 <lb/>deglutiendo ac voce edenda, omnia ante recensuimus;
@@ -17948,10 +17627,8 @@
 </div>
 <pb n="3.893"/>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>A musculis itaque temporalibus sum
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> A musculis itaque temporalibus sum
 <lb/>auspicatus, ut ordine ipso impulsus dicerem aliquid de
 <lb/>fronte atque auribus, quod ea ex capitis partibus supererant;
 <lb/>verum oratio nostra ipsa rerum consecutione
@@ -18037,10 +17714,8 @@
 <lb/>utraque fuisset.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Caeterum, quo pacto natura earum
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Caeterum, quo pacto natura earum
 <lb/>etiam pulchritudini providit, (nam id quoque ex abundanti
 <lb/>facere consuevit, nullam partem impositam, neque
  <lb/>illaboratam, aut sine rhythmo (<hi rend="italic">lepore</hi>) relinquens,) id jam
@@ -18081,10 +17756,8 @@
 <lb/>scopes est usus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Porro, quod necesse fit naturam ex
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Porro, quod necesse fit naturam ex
 <lb/>abundanti nonnunquam pulchritudinem assequi, intelligunt
 <lb/>ii, qui naturae opera perscrutantur; quod quum
 <lb/>nusquam superiori sermone docuerim, de eo dicendum
@@ -18309,10 +17982,8 @@
 <lb/>electione et eo efficiendo admodum est ingeniosus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Quum igitur partes omnes eo modo
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Quum igitur partes omnes eo modo
 <lb/>exornaret, eas, quae ad supercilia pertinent, non praetersit,
 <lb/>neque aliam quamvis, sed (quod nuper diximus)
 <lb/>convenientem cuique eorum, quae facturus est, materiam
@@ -18382,10 +18053,8 @@
 <lb/>ipsam temperavit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Quatuor autem sunt musculorum ad
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Quatuor autem sunt musculorum ad
 <lb/>labia pervenientium principia, perspicua quidem ac manifesta
 <lb/>ante, quam cuti permisceantur, cum ea vero admixta
 <lb/>amplius omnino non apparent, ab illiusque substantia
@@ -18463,10 +18132,8 @@
 <lb/>omnia distributione procedente sermone exequemur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/>Quod autem nasi alas cartilaginosus simul
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> Quod autem nasi alas cartilaginosus simul
 <lb/>esse atque animalis arbitratu moveri oportebat,
 <lb/>partim quidem ante docuimus, partim vero et nunc admonebimus.
 <lb/>In inspirationibus paulo majoribus et subitis,
@@ -18524,10 +18191,8 @@
 <lb/>arbitramur ea, quae relicta fiunt, invenire.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
 <p rend="indent">
- <lb/>Area igitur, quae in eis, quae ad caput
+<lb/><label type="head"><num value="18">Cap. XVIII.</num></label> Area igitur, quae in eis, quae ad caput
 <lb/>pertinent, supersunt explicanda, rursus revertamur,
 <lb/>agamusque quam brevissime poterimus, rursus alu ossium
 <lb/>multitudine ac situ auspicati. Nam cur septem quidem,
@@ -18705,10 +18370,8 @@
 <lb/>ossium multitudine accidere ostendimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
 <p rend="indent">
- <lb/>Atque etiam ipsorum discrimina lineis
+<lb/><label type="head"><num value="19">Cap. XIX.</num></label> Atque etiam ipsorum discrimina lineis
 <pb n="3.931"/>
 <lb/>a fete distingui, quod ipsa uniri rite non possent, satius fuisse
 <lb/>ostendimus. Inest autem id quoque non minime
@@ -18801,10 +18464,8 @@
 <lb/>patiendi difficultatem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="20">
-
-
 <p rend="indent">
- <lb/>Quae porro bregmatis ossa appellant,
+<lb/><label type="head"><num value="20">Cap. XX.</num></label> Quae porro bregmatis ossa appellant,
  <lb/>quae duo sunt, et eadem laxa, et <hi rend="italic">propterea</hi> capiti desuper
 <lb/>incumbentia, ac undique a duris ac densis ossibus
 <lb/>circumdata, partu quidem posteriore ab osse occipitii,
@@ -18879,7 +18540,7 @@
 <lb/>HVMANI
 <lb/>LIBER XII.</head>
 <p rend="indent">
- <lb/>Absolutis jam omnibus capitis propriis
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Absolutis jam omnibus capitis propriis
 <lb/>partibus, non alienum fuerit de communibus etiam ei
 <lb/>cum collo partibus deinceps pertractare. Sunt autem
 <lb/>partes colli et capitis communes eae, per quas caput
@@ -18898,7 +18559,7 @@
 </div>
 <div type="textpart" subtype="chapter" n="2">
 <p rend="indent">
- <lb/>Enimvero motum ullum ossium fieri non
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Enimvero motum ullum ossium fieri non
 <lb/>posse, nisi ipsa dearticulentur simul ac per musculos connectantur,
 <lb/>multoties demonstratam est, si modo aliquid
 <lb/>esse, non solum quod moveat, verum etiam quod moveatur,
@@ -18972,10 +18633,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Ergo neque per nervum fotum pars
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Ergo neque per nervum fotum pars
 <lb/>quaevis movetur, neque per cartilaginem vel ligamentum.
 <lb/>Cartilago enim unctionis quidem cujusdam usum
 <lb/>articulis praestat; motoriis vero instrumentis connexa
@@ -19073,10 +18732,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Rursus igitur ad capitis articulum siquem
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Rursus igitur ad capitis articulum siquem
 <lb/>a principio suscepimus explicandum, reversi naturae
 <lb/>in eo fabricam expendamus. Convenit enim ipsum (ut
 <lb/>arbitror), quomodo et alios omnes, pro dignitate fuisse
@@ -19162,10 +18819,8 @@
 <lb/>ad laevam circumagunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Quo igitur modo omnia haec mirabiliter
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Quo igitur modo omnia haec mirabiliter
 <lb/>natura construxerit, jam exponamus, a dearticulationibus
 <lb/>exorsi. Primo quidem spondylo duas indidit cavitates,
  <lb/>capitis quae ibi sunt gibbis (<hi rend="italic">processibus</hi>) prorsus
@@ -19235,7 +18890,7 @@
 <pb n="4.19"/>
 <div type="textpart" subtype="chapter" n="6">
 <p rend="indent">
- <lb/>Tempestivum sane est (posteaquam haec ita
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Tempestivum sane est (posteaquam haec ita
 <lb/>se habent, demonstra tumque est, capitis articulum duplicem
 <lb/>esse oportere) considerare et interrogare, num capiti utilius
 <lb/>fuisset ad primum quidem spondylum motus obliquos habere,
@@ -19301,10 +18956,8 @@
 <lb/>jam revertamur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Quum vertebrae omnes spinali medullae
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Quum vertebrae omnes spinali medullae
 <lb/>in orbem sint circumdatae, quae talem haberet facultatem
 <lb/>ac tantam, qualem ac quantam saepe jam docuimus,
 <lb/>laxam fieri dearticulationem non licebat neque capitis
@@ -19438,10 +19091,8 @@
 <lb/>postea explicabimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Rursus igitur ad propositum revertamur,
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Rursus igitur ad propositum revertamur,
 <lb/>in memoriam revocantes primum, quod capitis motus
 <lb/>tum propter ligamentorum vires, tum ob articulorum
 <lb/>exactam constructionem ac musculorum ipsos moventium
@@ -19572,7 +19223,7 @@
 <pb n="4.36"/>
 <div type="textpart" subtype="chapter" n="9">
 <p rend="indent">
- <lb/>Deinceps autem ostendamus rursus, cujus
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Deinceps autem ostendamus rursus, cujus
 <lb/>gratia omnia haec diximus, musculorum, qui caput moturi
 <lb/>sunt, constructionem aliam meliorem ne excogitari quidem
 <lb/>posse. Quum enim dearticulationem esse oporteret tutissimam,
@@ -19665,10 +19316,8 @@
 <lb/>musculi, qui primam vertebra m capiti coniungunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Proinde neminem eorum, qui meminerunt,
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Proinde neminem eorum, qui meminerunt,
 <lb/>quot partes in collo poni erat necesse, arbitror
 <pb n="4.41"/>
 <lb/>majores, quam nunc sunt, primos spondylos requisiturum.
@@ -19756,10 +19405,8 @@
 <lb/>mixtionem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Nam si os unicum totius spinae fuisset,
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Nam si os unicum totius spinae fuisset,
 <lb/>quod iis partibus animal immobile fuisset, velut veru
 <lb/>quodam confixum aut palo affixum, nihil verbis est
 <lb/>opus; id enim ne nos quidem, ni fallor, si Promethei
@@ -19847,10 +19494,8 @@
 <lb/>inter se constitit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Cautam vero, cur non ex duobus aut
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Cautam vero, cur non ex duobus aut
 <lb/>tribus ossibus longis aeque, ac in manu quidem est brachium
 <pb n="4.50"/>
 <lb/>et cubitus, in crure autem tibia ac femur, sed
@@ -19945,10 +19590,8 @@
 <lb/>sane musculi fibras ita sitas habuerint.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Ad reliqua vero, quae ad vertebras pertinent,
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Ad reliqua vero, quae ad vertebras pertinent,
 <lb/>nobis est accedendum, omnia, quae antea rejeceramus,
 <lb/>convenienti ordine explicaturis; quorum primum
 <pb n="4.55"/>
@@ -19981,10 +19624,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Quod autem apophyses alias non habeant,
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Quod autem apophyses alias non habeant,
 <lb/>quomodo reliqui, tum autem cur corpore aliorum
 <lb/>quidem omnium sint tenuissimi, cavitate autem interna
 <lb/>iidem sint latissimi, ejus rei usum dicendum deinceps
@@ -20019,10 +19660,8 @@
 <lb/>mole extiterunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/>Caeterum spinalis medullae crassitiem
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> Caeterum spinalis medullae crassitiem
 <lb/>cujus rei gratia natura fecit inaequalem, aut cur tenuem
 <lb/>magis ac magis atque angustam partibus infernis effecit,
 <lb/>(omnino enim hic quoque justam aliquam mensuram spectans,
@@ -20172,10 +19811,8 @@
 </div>
 <pb n="4.66"/>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/>Non igitur amplius, opinor, dubitabimus,
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> Non igitur amplius, opinor, dubitabimus,
 <lb/>quid sit cur duodecim omnibus dorsi spondylia
 <lb/>apophyses omnes non sint aequales. Nam etiamsi omnes
 <lb/>potissimum sint in thorace, non tamen ii sunt prope
@@ -20292,10 +19929,8 @@
 <head>CALENI DE VSV PARTIVIT CORPORIS
  <lb/>HVMANI
  <lb/>LIBER XIII.</head>
-
-
 <p rend="indent">
- <lb/>Quum autem spondylorum locus posterior
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quum autem spondylorum locus posterior
 <lb/>in tres partes dividatur, primam, quae exacte posterior
 <lb/>est, quo loco est spina, duas, quae utraque hujus parte
 <lb/>sunt, quas productionum transversarum radices terminant;
@@ -20320,10 +19955,8 @@
 <lb/>posteriore loco inter se dearticulatis percipimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Causa vero, cur aliis quidem apophyses
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Causa vero, cur aliis quidem apophyses
 <lb/>praelongae extiterint ac duplices, aliis autem simplices
 <lb/>ac breves, ad magnitudinem ipsorum inaequalem est referenda;
 <lb/>nam quod duplex est ac praelongum, id tum
@@ -20489,10 +20122,8 @@
 <lb/>adsimiles.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Num igitur in his omnibus natura omnino
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Num igitur in his omnibus natura omnino
 <lb/>fuit justa, soli autem primo colli spondylo posteriorem
 <lb/>apophysim praeter aequum invidit? an id quoque
 <lb/>melius fuit sic comparari? Spero te (si modo memoria
@@ -20701,10 +20332,8 @@
 <lb/>peculiaria.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Nam ligamenta omnia, quae ipsis undique
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Nam ligamenta omnia, quae ipsis undique
 <lb/>sunt circumdata, quaeque apophysibus lateralibus insunt,
 <lb/>ac multo magis in posterioribus, communia sunt
 <lb/>omnibus spondylis; musculorum vero, qui illic sunt,
@@ -20768,10 +20397,8 @@
 </div>
 <pb n="4.97"/>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Num igitur haec quidem omnia recte a
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Num igitur haec quidem omnia recte a
 <lb/>natura facta fuerunt, utrumque vero nervorum excidentium
 <lb/>in quas non oportuit partes distribuit? An in eo
 <lb/>etiam admirari eam convenit, quae utrumque in musculos
@@ -20912,10 +20539,8 @@
 <lb/>ac stabiliuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Quin et thorax ipse coepit post septimum
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Quin et thorax ipse coepit post septimum
 <lb/>spondylum compingi, postquam scilicet ad nullam praeterea
 <lb/>partem, neque inferiorem, neque etiam cossi aut
 <lb/>manus, nervos mitti oportebat. Melius enim fuit spinalem
@@ -20984,10 +20609,8 @@
 </div>
 <pb n="4.108"/>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Quod igitur thorax convenientem habuit
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Quod igitur thorax convenientem habuit
 <lb/>magnitudinem, ex dictis patere jam arbitror. Quod autem
 <lb/>spondylorum quoque magnitudines paulatim augeri
 <lb/>oportuit, id etiam fuit antea demonstratum. Ac nimirum
@@ -21044,10 +20667,8 @@
 </div>
 <pb n="4.111"/>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Ligamentum autem validum exacte
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Ligamentum autem validum exacte
 <lb/>adeo anteriores omnium ipsorum partes colligat, ut medicorum
 <lb/>plerisque ne colligari quidem ea parte, sed coalescere
 <lb/>spondyli inter se videantur. Desinit autem ligamentum
@@ -21116,10 +20737,8 @@
 <lb/>celerius.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Num igitur haec quidem omnia ea solertia
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Num igitur haec quidem omnia ea solertia
 <lb/>natura in spinali medulla ac spina tota comparavit,
 <lb/>venas vero atque arterias ipsis aut non immisit, aut non
 <lb/>unde oportebat, aut non quot praestiterat, aut minores,
@@ -21221,10 +20840,8 @@
 <lb/>habent, aut quinta in silis, quae mediocre.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Tempestivum sane est jam scapularum partes
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Tempestivum sane est jam scapularum partes
 <lb/>explicare, ostendereque in illis quoque artem naturae.
 <lb/>Quodsi eas ex animali exemptas animo finxeris, neque
 <pb n="4.120"/>
@@ -21297,10 +20914,8 @@
 <lb/>ac stabilimentum quoddam natura constituit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Rursus igitur hic quoque considera artem,
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Rursus igitur hic quoque considera artem,
 <lb/>quae animalia effinxit, ut in omnibus est aequa; tametsi
 <lb/>certe propositum mihi fuerat solius hominis constructionem
 <lb/>explicare, fieri tamen saepe non potest, etiamsi
@@ -21403,10 +21018,8 @@
 </div>
 <pb n="4.129"/>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Sed nunc demum tempestivum est ad
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Sed nunc demum tempestivum est ad
 <lb/>ipsum humeri articulum orationem convertere, atque
 <lb/>in primis ostendere, naturam jure caput brachii rotundissimum
 <lb/>effecisse, et cavitatem, quae scapulae cervici inest,
@@ -21487,10 +21100,8 @@
 <lb/>nunc est tempestivum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>ipsorum quidem fines ossi brachii inferuntur,
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> ipsorum quidem fines ossi brachii inferuntur,
 <lb/>quorum alii quidem brachium ipsum attollunt,
 <lb/>alii autem deprimunt, quidam pectori adducunt, alii
 <lb/>extra abducunt, nonnulli orbiculariter ipsum circumagunt.
@@ -21649,10 +21260,8 @@
 <head>CALENI DE VSV PARTIUM CORPORIS
  <lb/>HVMANI
  <lb/>LIBER XIV.</head>
-
-
 <p rend="indent">
- <lb/>Quum tres primi naturae sint in partibus
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quum tres primi naturae sint in partibus
 <lb/>animalis construendis scopi, (nam ex ipsis quasdam fecit
 <lb/>ad vivendum necessarias, cujus generis sunt cerebrum,
 <lb/>cor et hepar; quasdam ad vivendum commodius, ut
@@ -21667,10 +21276,8 @@
 <lb/>supersunt adhuc explicandae.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Ac certe natura, si fieri potuisset, maxime
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Ac certe natura, si fieri potuisset, maxime
 <lb/>optasset suum opificium esse immortale; quod quum per
 <lb/>materiam non liceret, (nam quod ex arteriis, venis, nervis
 <lb/>et ossibus ac praeterea carne est compositum, incorruptibile
@@ -21707,10 +21314,8 @@
 </div>
 <pb n="4.145"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>In primis igitur id naturae commentam
+<lb/><label type="head"><num value="3">Cap. III.</num></label> In primis igitur id naturae commentam
 <lb/>est admirabile; fecundo autem loco instrumentorum constructio,
 <lb/>quam cuique animali dedit corporis ipsius formae
 <lb/>convenientem. Porro quod ad caetera animantia
@@ -21814,10 +21419,8 @@
 <lb/>semper haberet, similiter etiam semper refrigeraremur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>At collum hoc unicum, matricis vero
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> At collum hoc unicum, matricis vero
 <lb/>capacitatem natura non fecit unam; sed in suibus quidem
 <lb/>atque aliis quibusdam, quae multos foetus utero
 <lb/>gestare est necesse, conceptacula fecit quam plurima; in
@@ -21925,10 +21528,8 @@
 <lb/>esset futura, magnitudo erat plane superflua.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Num igitur omnia haec in mammis ac
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Num igitur omnia haec in mammis ac
 <lb/>matricibus fiunt, instrumentis ipsis quid agendum sit mente
 <lb/>quadam providentibus? Hoc certe modo ne instrumenta
 <lb/>quidem maneant, sed animalia sint mente praedita, ut
@@ -21967,10 +21568,8 @@
 <lb/>exequendo.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Est igitur foemina mare imperfectior, una
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Est igitur foemina mare imperfectior, una
 <lb/>quidem ac prima ratione, quia frigidior; siquidem in
 <lb/>animalibus calidum est activum magis, frigidum autem
 <lb/>calido minus; fecunda vero ratione ea, quae ex dissectione
@@ -22108,10 +21707,8 @@
 <lb/>crassum, et calidum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Noli igitur putare, femen ipsum alia
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Noli igitur putare, femen ipsum alia
 <lb/>quadam ratione ad maris alia ad foeminae procreationem
 <lb/>moveri, eo enim modo nequaquam principium animalis
 <lb/>cuiusdam specie similis fieret, si motus haberet
@@ -22318,10 +21915,8 @@
 </div>
 <pb n="4.176"/>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Porro quid causae sit, cur mammae tantum
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Porro quid causae sit, cur mammae tantum
 <lb/>habeant cum matricibus consensum, id jam explicabo;
 <lb/>etenim mirabilem quandam id quoque naturae artem
 <lb/>indicabit. Quum enim partes utrasque ad unum
@@ -22394,10 +21989,8 @@
 <lb/>Atque de his quidem res sic habet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Caeterum cur cum usu partium genitalium
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Caeterum cur cum usu partium genitalium
 <lb/>voluptas quidem maxima sit conjuncta, cupiditas
 <lb/>autem stimulans in omnibus florentibus animalibus usum
 <lb/>praecedat, deinceps nobis dicendum, non primam adhuc,
@@ -22469,10 +22062,8 @@
 <lb/>est humiditas.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Quando igitur in proprium locum inciderit,
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Quando igitur in proprium locum inciderit,
 <lb/>principium fit animalis generationis, quum autem
 <lb/>in alienum, expirat quidem ex ipsa humiditate repente
 <lb/>spiritus, relinquitur autem viscosa humiditas, quae in
@@ -22565,10 +22156,8 @@
 <lb/>cogat fieri, dictum nobis ante fuit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Quin et foeminae femen, praeterquam
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Quin et foeminae femen, praeterquam
 <lb/>quod confert animalis generationi, ad haec quoque est
 <lb/>utile; ut enim foemina quoque ad venerem excitetur, et,
 <lb/>quum coït cum mare, collum matricis patefaciat, semen
@@ -22679,10 +22268,8 @@
 </div>
 <pb n="4.194"/>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>Quod namque testiculos ac meatus spermaticos
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> Quod namque testiculos ac meatus spermaticos
 <lb/>in maribus majores esse melius erat, supra id
 <lb/>monuimus. Quum autem id esset satius, natura jure
 <lb/>sursum cornua matricum porrigens prope testiculos sustulit,
@@ -22752,10 +22339,8 @@
 <lb/>gignere. Sed de horum positione haec sufficiant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>De magnitudine autem vasorum spermaticorum
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> De magnitudine autem vasorum spermaticorum
 <lb/>(hinc enim ferme noster est digressus) mirari
 <lb/>oportet naturam, quo pacto prius ipsa a testibus deducens
 <lb/>ad illa, eadem rursum ad maris pudendum reduxit;
@@ -22894,10 +22479,8 @@
 <lb/>a nervis, qui sunt ad ventriculum, accedit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Cur autem intestina omnia et ventriculus
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Cur autem intestina omnia et ventriculus
 <lb/>ex duabus tunicis constiterint, matricibus vero una
 <lb/>falis fuerit, quemadmodum et utrique vesicae, diximus
 <lb/>quidem id jam summatim sermone praecedenti, quum
@@ -23015,10 +22598,8 @@
 <head>GALLNI DE VSV PARTIVIT CORPORIS
  <lb/>HVAIANI
  <lb/>LIBER XV</head>
-
-
 <p rend="indent">
- <lb/>Quum vero multa adeo atque admiranda
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quum vero multa adeo atque admiranda
 <lb/>instrumenta ad generis conservationem a natura sint comparata,
 <lb/>quae libro superiore exposuimus, si per dissectiones
 <lb/>pudendi constructionem inspexeris, certo scio te ipsius
@@ -23169,10 +22750,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>De situ enim pudendorum verba facere
+<lb/><label type="head"><num value="2">Cap. II.</num></label> De situ enim pudendorum verba facere
 <lb/>auspicati ostendimus, colem nuncupatum ex ossibus oriri
 <lb/>oportere. Verum si ex ossibus, propius quidem anum,
 <lb/>quam nunc est, oriri potuit, sed non fuit utilius, ut antea
@@ -23211,10 +22790,8 @@
 </div>
 <pb n="4.221"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Restat autem primum quidem id explicare,
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Restat autem primum quidem id explicare,
 <lb/>cujus paulo ante meminimus, quod scilicet in coitibus
 <lb/>pudendum exacte tensum esse oporteat. Non enim
 <lb/>(quod forte quispiam existimarit) solius coitus causa pudendum
@@ -23273,10 +22850,8 @@
 <lb/>admirabilem quivis sine me invenire poterit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>Quae vero in adiutante, dum utero adhuc
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> Quae vero in adiutante, dum utero adhuc
 <lb/>geritur, natura machinatur, ipsum conformans, et
 <lb/>alimentum ac spiritum a matre inducens, et loca excrementis
 <lb/>comparans, explicare quidem aperte fuerit difficile;
@@ -23410,10 +22985,8 @@
 <lb/>et has unam fecisset.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>Quatuor igitur sunt praedicta in umbilico
+<lb/><label type="head"><num value="5">Cap. V.</num></label> Quatuor igitur sunt praedicta in umbilico
 <lb/>vasa, duae scilicet arteriae et venae totidem, in medio
 <lb/>habentes urachum; sic enim anatomici nominare consueverunt
 <lb/>meatum, qui ex fundo vesicae exortus lotium
@@ -23606,10 +23179,8 @@
 </div>
 <pb n="4.241"/>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Sed quoniam de his quoque abunde jam
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Sed quoniam de his quoque abunde jam
 <lb/>dictum est, ad reliquam foetuum constructionem transgressi,
 <lb/>qua re jam natis dissideant, exponamus, artem
 <lb/>quoque, quae in illis est, explicantes. Erit autem in
@@ -23716,10 +23287,8 @@
 <lb/>ageremus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Aliud autem naturae opus referam, non
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Aliud autem naturae opus referam, non
 <lb/>minus quam alia admirabile, et quod omnes vel ante
 <lb/>anatomen norunt; neminem enim fugit, neque quod os
 <lb/>matricis toto praegnationis tempore omnino est constrictum
@@ -23792,10 +23361,8 @@
 <lb/>ad ea transire tempestivum est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Superest autem in hoc toto opere de
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Superest autem in hoc toto opere de
 <lb/>musculis disserere, qui ischii articulationem movent, de
 <lb/>quibus nullum prorsus verbum feci; tum librum unum
 <lb/>tribuere communibus corporis instrumentis, arteriae, nervo
@@ -24040,10 +23607,8 @@
 <head>GALENI DE VSV PARTIVM CORPORIS
  <lb/>HUMANI
  <lb/>LIBER XVI.</head>
-
-
 <p rend="indent">
- <lb/>De communibus totius corporis instrumentis,
+<lb/><label type="head"><num value="1">Cap. I.</num></label> De communibus totius corporis instrumentis,
 <lb/>arteria, vena et nervo, prius quidem, dum partes
 <lb/>exponeremus, verba saepe fecimus. Satius vero mihi
 <lb/>visum fuit non sparsim modo de ipsis disputare, sed re
@@ -24104,10 +23669,8 @@
 <lb/>et balneis privatis minor.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Tempestivum utique est idem artificium
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Tempestivum utique est idem artificium
 <lb/>in distribuendo in animalibus consideres a natura prius
 <lb/>usurpatum. Siquidem arteria una maxima a corde est
 <lb/>producta, velut truncus in multos palmites ac ramos
@@ -24225,10 +23788,8 @@
 <lb/>sunt communia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Nunc autem tempestivum est particularia
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Nunc autem tempestivum est particularia
 <lb/>persequi. Atque ut inde exordiar, quum partes inter se
 <lb/>multum discrepent natura, situ et actionibus, satius fuit
 <lb/>eis, quas aliis sensu exactiore praeditas esse oportebat,
@@ -24333,10 +23894,8 @@
 <lb/>de his quidem paulo post tractabimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/>De iis vero partibus, quarum potissimum
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> De iis vero partibus, quarum potissimum
 <lb/>causa nervi a cerebro descenderunt, jam dicamus, a partibus
 <lb/>voci servientibus auspicati. Verum hoc quoque
 <lb/>loco pro hypothesi ea sumemus, quae in libro de voce
@@ -24549,10 +24108,8 @@
 <lb/>aliquid sibi mutuo conferre.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/>De nervis vero, qui ad viscera et intestina
+<lb/><label type="head"><num value="5">Cap. V.</num></label> De nervis vero, qui ad viscera et intestina
 <lb/>accedunt, dictum quidem prius non nihil fuit;
 <lb/>quod autem deest, id est adjiciendum. Porro nervorum
 <lb/>quaedam portio a cerebro ad haec mittitur, exigua quidem
@@ -24607,10 +24164,8 @@
 </div>
 <pb n="4.292"/>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/>Aliorum vero, qui ex cerebro quidem
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> Aliorum vero, qui ex cerebro quidem
 <lb/>producuntur, ad colium vero et ad scapulas descendunt,
 <lb/>distributionem deinceps persequamur. Neque enim ne
 <lb/>hic quidem natura ipsa, quum posset ex spinali medulla
@@ -24822,10 +24377,8 @@
 <lb/>utrinque partibus disseminari.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/>Videbis autem in thorace alios quoque
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> Videbis autem in thorace alios quoque
 <lb/>musculos, et eos multos, ut ini collo, alios quidem nervos
 <lb/>superne descendentes recipere, alios autem contra
 <lb/>ab infernis sursum ascendentes; ad fines enim usque musculorum,
@@ -24877,10 +24430,8 @@
 <lb/>omnibus scapulae musculis nervos distribuit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/>Quod vero ad eos attinet, qui ad manus
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> Quod vero ad eos attinet, qui ad manus
 <lb/>perveniunt, dictum quidem antea nobis fuit, quo
 <lb/>pacto oriantur ac connectantur. Diximus etiam, quod
 <lb/>natura hujusmodi nervorum mixtiones securitatis gratia
@@ -24982,10 +24533,8 @@
 </div>
  <pb n="4.311"/>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/>Nunc autem ad id, quod superest, transtro
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> Nunc autem ad id, quod superest, transtro
 <lb/>est tempestivum. Quum enim musculi, qui ex ossibus
 <lb/>pubis emergunt, nervis indigeant, necesse fuit quosdam
 <lb/>adduci per partes internas; omnes enim istac duci non
@@ -25030,10 +24579,8 @@
 <lb/>nunc quoque rem a principio repetens.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/>Quum enim de nervis abunde jam dixerimus,
+<lb/><label type="head"><num value="10">Cap. X.</num></label> Quum enim de nervis abunde jam dixerimus,
 <lb/>tempestivum jam est ad vastorum distributionem
 <lb/>transire, ac primum quidem de arteriis disserere. Est
 <lb/>certe vas quoddam maximum (ut ante dixi), quod a sinistro
@@ -25321,10 +24868,8 @@
 <lb/>quae particularem omnium contineat enarrationem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
 <p rend="indent">
- <lb/>Redeo igitur jam ad alteram arteriarum,
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> Redeo igitur jam ad alteram arteriarum,
 <lb/>quam a corde ad colium, et scapulas, et manus, et faciem,
 <lb/>et totum denique caput cernas distribui. Haec
 <lb/>enim in ipso per thoracem transitu, quomodo ea quae
@@ -25398,10 +24943,8 @@
 <lb/>tractavimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/>In praesenti vero pauca dicam de reliquo
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> In praesenti vero pauca dicam de reliquo
 <lb/>arteriarum pari, quod antiquo quidem nomine carotidas
 <lb/>appellant. Fertur autem id rectum sursum ad
 <lb/>caput, in profundissimis colli partibus abditum. In ipso
@@ -25508,10 +25051,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/>Invenias igitur venas quasdam fine arteriis,
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> Invenias igitur venas quasdam fine arteriis,
 <lb/>sed arteriam nullam sine sua conjuge vena. Intelligere
 <lb/>autem hic oportet arteriam conjugem, non eam,
 <lb/>quae tangit aut quae per membranas eis est conjuncta,
@@ -25542,10 +25083,8 @@
 <lb/>ego nunc persequar.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/>Natura partibus omnibus venas cum
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> Natura partibus omnibus venas cum
 <lb/>summa aequitate distribuat, iis quidem, quae ejusdem
 <lb/>sunt generis, pro foto generis discrimine, iis vero, quae
 <lb/>diversi sunt generis, pro copia substantiae, quae ab ipsis
@@ -25660,10 +25199,8 @@
 <head>GALENI DE VSV PARTIVIT CORPORIS
 <lb/>HVAIANI
 <lb/>LIBER XVII.</head>
-
-
 <p rend="indent">
- <lb/>Tollimus mihi hic liber adhuc de usu partium
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Tollimus mihi hic liber adhuc de usu partium
 <lb/>corporis humani superest; nihil enim relinquitur,
 <lb/>cujus speciatim non meminerimus. Sed quoniam usus
 <lb/>in omnibus non est aequalis, neque idem, satius utique
@@ -25978,10 +25515,8 @@
 <lb/>sapientiam in praestantioribus inesse putabimus?</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/>Unum igitur ac maximum hoc nobis accedit
+<lb/><label type="head"><num value="2">Cap. II.</num></label> Unum igitur ac maximum hoc nobis accedit
 <lb/>ex hoc opere commodum, non tanquam medicis, sed
 <lb/>(quod eo est praestantius) tanquam sicine aliquid cupi entibus
 <pb n="4.363"/>
@@ -26040,10 +25575,8 @@
 <lb/>secure, aut quas timide ac caute incidere oporteat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/>Haec tota ac tanta hujus, quod ad finem
+<lb/><label type="head"><num value="3">Cap. III.</num></label> Haec tota ac tanta hujus, quod ad finem
 <lb/>perduximus, operis commoda liber iste velut bonus quidam
  <lb/><foreign xml:lang="grc">ἐπῳδος</foreign> explicat. Dico autem nunc <foreign xml:lang="grc">ἐπῳδὸν</foreign> non
  <lb/>eum, qui <foreign xml:lang="grc">ἐπῳδαις</foreign>, id est incantationibus, utitur, sed,

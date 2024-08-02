@@ -10,7 +10,7 @@
         <author xml:lang="lat">
           <name ref="http://viaf.org/viaf/44299175">Galenus</name>
         </author>
-        <editor>Kühn, Karl Gottlob</editor>
+        <editor role="editor">Kühn, Karl Gottlob</editor>
         <funder ref="https://www.mellon.org/">Andrew W. Mellon Foundation</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts</resp>
@@ -44,32 +44,36 @@
           <persName>Bruce Robertson</persName>
         </respStmt>
       </titleStmt>
-      <editionStmt resp="Galenus_verbatim">
-		<edition>Revised edition of the originally published versions of the electronic texts.</edition>
+      <editionStmt resp="#Galenus_verbatim">
+		<edition n="1">Revised edition of the originally published versions of the electronic texts.
+		  <date type="revision" when="2024">2024</date>
+		</edition>
 		<respStmt>
-          <resp>To reuse the Kühn's edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> 
-		  repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We added bibliographical references to the previous editions referred to in Kühn's edition as "Bas." and "Chart.": that of the Γαληνοῦ Ἅπαντα published in Basel 
-		  (hence referred to as #Basel) and the Operum Hippocratis Coi, et Galeni Pergameni of René Chartier (hence referred to as #Chartier); we changed the naming schemes of the milestones indicating the corresponding Basel and Chartier pages in Kühn's edition, and added the corresponding Basel and Chartier volume number. 
-		  The editions other than that of Kühn were given milestones indicating the corresponding Kühn volume and pages when they were missing. We also added elements of structuration that were present in Kühn's edition 
-		  but were missing in the TEI, mainly the division of chapters into sections in some treatises, as well as the header for those sections. The text numbered tlg0057.tlg096 that was separately edited was reinserted
-		  in the tlg0057.tlg095 in accordance with its location within Kühn's edition.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
+		  <resp>To reuse the Kühn’s edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We added bibliographical references to the previous editions referred to in Kühn’s edition as "Bas." and "Chart.": that of the Γαληνοῦ Ἅπαντα published in Basel (hence referred to as #Basel) and the Operum Hippocratis Coi, et Galeni Pergameni of René Chartier (hence referred to as #Chartier); we changed the naming schemes of the milestones indicating the corresponding Basel and Chartier pages in Kühn’s edition, and added the corresponding Basel and Chartier volume number. The editions other than that of Kühn were given milestones indicating the corresponding Kühn volume and pages when they were missing. Treatises from Kühn’s edition were given line numbers. We also added elements of structuration that were present in Kühn’s edition but were missing in the TEI, mainly the division of chapters into sections in some treatises, as well as the header for those sections. The text of headings containing the name of chapter and numbers of chapters and sections have been restored, as well as the original symbols as they appear within the printed text of Kühn’s edition. The text numbered tlg0057.tlg096 that was separately edited was reinserted in the tlg0057.tlg095 in accordance with its location within Kühn’s edition. For details, see the revisionDesc section.</resp>
+		  <orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
           <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Cahal Taaffe</persName>
+</respStmt>
+        <respStmt>
+          <resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+          <persName>Lucas Lemperriere, Université de Rouen</persName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
       </editionStmt>
       <publicationStmt>
         <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
@@ -79,14 +83,15 @@
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+        <!-- chercher la date initiale sur le dépôt 1st1K -->
+        <date>2016</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr xml:id="Kuhn">
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="editor">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -136,33 +141,60 @@
       <refsDecl n="CTS">
         <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-      <editorialDecl>
-			<hyphenation eol="none">
-			<p>All end-of-line hyphenation has been removed.</p>
-			</hyphenation>
-			<normalization method="none">
-			<p>Symbols used by Kühn edition are maintained as they appear within the printed text.</p>
-			</normalization>
-		</editorialDecl>
+      <editorialDecl resp="#Galenus_verbatim">
+        <correction>
+          <p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+        </correction>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation is silently removed where appropriate.</p>
+        </hyphenation>
+        <interpretation>
+          <p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+        </interpretation>
+        <interpretation>
+          <p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Headings are marked up by a &lt;label&gt; element. Greek numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Verse lines are marked up by an &lt;l&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>Tables are marked up by a &lt;table&gt; element.</p>
+        </interpretation>
+        <interpretation>
+          <p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+        </interpretation>
+        <normalization>
+          <p>Original symbols are maintained as they appear within the printed text of Kühn’s edition.</p>
+        </normalization>
+      </editorialDecl>
     </encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
-        <language ident="lat">Latin</language>
       </langUsage>
     </profileDesc>
 	 <revisionDesc>
-		  <change who="Galenus_verbatim" when="2023-xx-xx">Finished all revisions for publication on the Galenus verbatim website.</change>
-		  <change who="Galenus_verbatim">Added bibliographical information on the editions referred to in Kühn's edition as "Bas." and "Chart."</change>
-		  <change who="Galenus_verbatim">Corrected and added milestone tags for the missing page changes of both Basel and Chartier editions when they were missing.</change>
-		  <change who="Galenus_verbatim">Punctual correction to the digitization of Kühn's text.</change>
-		  <change who="Galenus_verbatim">Correction and additions of the sections div level when they were missing to better reflect the structure of Kühn's edition.</change>
-		  <change who="Galenus_verbatim">Modification to the subtype of some div to better reflect Kühn's structure.</change>
-		  <change who="Galenus_verbatim">Replaced abbreviations introduced by the initial transcription by the proper symbols used by Kühn edition.</change>
-		  <change who="Galenus_verbatim">Added line number.</change>
-		  <change who="Galenus_verbatim">Added head tags for the name of chapter and sections where they were missing.</change>
-		  <change who="Galenus_verbatim">Revised the Hippocratic quotations reference to the precise text in accordance with the URN.CTS guidelines when they were present.</change>
-	    <change who="Galenus_verbatim">Changed p by p rend=indent.</change>
+		  <change who="#Galenus_verbatim" when="2023">First round of revisions for publication on the Galenus verbatim website.</change>
+	   <change who="#Galenus_verbatim" when="2023">Added bibliographical information on the editions referred to in Kühn’s edition as "Bas." and "Chart."</change>
+	   <change who="#Galenus_verbatim" when="2023">Corrected and added milestone tags for the missing page changes of both Basel and Chartier editions when they were missing.</change>
+	   <change who="#Galenus_verbatim" when="2023">Punctual correction to the digitization of Kühn’s text.</change>
+	   <change who="#Galenus_verbatim" when="2023">Correction and additions of the sections &lt;div&gt; level when they were missing to better reflect the structure of Kühn’s edition.</change>
+	   <change who="#Galenus_verbatim" when="2023">Modification to the subtype of some &lt;div&gt; to better reflect Kühn’s structure.</change>
+	   <change who="#Galenus_verbatim" when="2023">Added &lt;label&gt; elements for all headings of chapters and sections.</change>
+	   <change who="#Galenus_verbatim" when="2023">Added &lt;l&gt; elements for verse lines and &lt;lg&gt; elements for linegroups.</change>
+	   <change who="#Galenus_verbatim" when="2023">Replaced abbreviations introduced by the initial transcription by the original symbols as they appear within the printed text of Kühn’s edition.</change>
+	   <change who="#Galenus_verbatim" when="2023">Added line number.</change>
+	   <change who="#Galenus_verbatim" when="2024">The text of headings containing the name of chapter and numbers of chapters and sections have been restored and marked with &lt;label&gt; and &lt;num&gt; elements.</change>
+	   <change who="#Galenus_verbatim" when="2024">All the indentations have been restored.</change>
 	  </revisionDesc>
   </teiHeader>
   <text>
@@ -176,7 +208,7 @@
 <lb/>ΤΕΧΝΑΣ.
 </head>
          <p rend="indent">
-<lb n="1"/>Εἰ μὲν μηδόλως λόγου μέτεστι τοῖς ἀλόγοις
+           <lb n="1"/><label type="head"><num value="1">Κεφ. αʹ.</num></label> Εἰ μὲν μηδόλως λόγου μέτεστι τοῖς ἀλόγοις
 <lb n="2"/>ὀνομαζομένοις ζώοις, ἄδηλόν ἐστι. ἴσως γὰρ εἰ καὶ μὴ
 <lb n="3"/>τοῦ κατὰ τὴν φωνὴν, ὃν καὶ προφορικὸν ὀνομάζουσιν,
 <lb n="4"/>ἀλλὰ τοῦ γε κατὰ τὴν ψυχὴν, ὃν ἐνδιάθετον καλοῦσι,
@@ -208,7 +240,7 @@
         </div>
         <div type="textpart" subtype="chapter" n="2" xml:id="_2">
           <p rend="indent">
-<lb n="5"/><milestone unit="ed2page" n="2.4"/>Πῶς οὖν οὐκ αἰσχρὸν, ᾧ μόνῳ τῶν ἐν
+            <lb n="5"/><milestone unit="ed2page" n="2.4"/><label type="head"><num value="2">Κεφ. βʹ.</num></label> Πῶς οὖν οὐκ αἰσχρὸν, ᾧ μόνῳ τῶν ἐν
 <lb n="6"/>ἡμῖν κοινωνοῦμεν θεοῖς, τούτου μὲν ἀμελεῖν, ἐσπευκέναι δὲ
 <lb n="7"/>περί τι τῶν ἄλλων, τέχνης μὲν ἀναλήψεως καταφρονοῦντα,
 <lb n="8"/>τύχῃ δ’ ἑαυτὸν ἐπιτρέποντα; ἧς τὴν μοχθηρίαν ἐμφανίσαι
@@ -240,8 +272,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="3" xml:id="_3">
-          <p rend="indent">
-<lb n="15"/>Τὸν δ’ Ἑρμῆν, ἅτε λόγου μὲν ὄντα δεσπότην,
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="3">Κεφ. γʹ.</num></label> Τὸν δ’ Ἑρμῆν, ἅτε λόγου μὲν ὄντα δεσπότην,
 <lb n="16"/>ἐργάτην δὲ τέχνης ἁπάσης, θέασαι πάλιν, ὅπως ἐξ
 <pb n="1.5"/>
 <lb n="1"/>ὑπεναντίου τῇ τύχῃ κεκοσμήκασι πάλιν οἱ γράφοντές τε καὶ
@@ -259,8 +291,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="4" xml:id="_4">
-          <p rend="indent">
-<lb n="13"/>Τοὺς δέ γε τῆς τύχης συνεπομένους ἅπαντας
+<p rend="indent">
+<lb n="13"/><label type="head"><num value="4">Κεφ. δʹ.</num></label> Τοὺς δέ γε τῆς τύχης συνεπομένους ἅπαντας
 <lb n="14"/>μὲν ἀργοὺς θεάσῃ καὶ τεχνῶν ἀμαθεῖς· ὀχουμένους δ’ ἐπ’
 <lb n="15"/>ἐλπίδων ἀεὶ, καὶ θεούσῃ τῇ δαίμονι συνθέοντας· ἐνίους
 <lb n="16"/>μὲν ἐγγὺς, ἐνίους δὲ <milestone unit="ed2page" n="2.5"/>ποῤῥωτέρω, τινὰς δὲ καὶ τῆς χειρὸς
@@ -283,8 +315,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="5" xml:id="_5">
-          <p rend="indent">
-<lb n="15"/>Ὁ δὲ ἕτερος τῶν χορῶν, πάντες μὲν κόσμιοι
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="5">Κεφ. εʹ.</num></label> Ὁ δὲ ἕτερος τῶν χορῶν, πάντες μὲν κόσμιοι
 <lb n="16"/>καὶ τεχνῶν ἐργάται. οὐ θέουσι δὲ, οὐδὲ βοῶσιν, οὐδ’ ἀλλήλοις
 <pb n="1.7"/>
 <lb n="1"/>μάχονται· ἀλλ’ ἐν μέσοις μὲν αὐτοῖς ὁ θεὸς, ἀμφ’
@@ -336,8 +368,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="6" xml:id="_6">
-          <p rend="indent">
-<lb n="6"/>Πολλοὶ δὲ τῶν κακοδαιμόνων καὶ πάντα πρὸς
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="6">Κεφ. στʹ.</num></label> Πολλοὶ δὲ τῶν κακοδαιμόνων καὶ πάντα πρὸς
 <lb n="7"/>τὸν πλοῦτον ἀποβλεπόντων, ἐν τοιαύταις πραγμάτων περιστάσεσι
 <lb n="8"/>γενόμενοι, χρυσὸν ἢ ἄργυρον ἐξαψάμενοί τε καὶ περιθέμενοι
 <lb n="9"/>τῷ σώματι, προσαπώλεσαν αὐτοῖς καὶ τὴν ψυχὴν,
@@ -382,8 +414,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="7" xml:id="_7">
-          <p rend="indent">
-<lb n="12"/><milestone unit="ed2page" n="2.7"/>Τοιοῦτοι δέ τινές εἰσι καὶ οἱ τὴν εὐγένειαν
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="7">Κεφ. ζʹ.</num></label> <milestone unit="ed2page" n="2.7"/>Τοιοῦτοι δέ τινές εἰσι καὶ οἱ τὴν εὐγένειαν
 <lb n="13"/>προβαλλόμενοι καὶ φρονοῦντες ἐπ’ αὐτῇ μέγα. Καὶ
 <lb n="14"/>γὰρ καὶ οὗτοι σπάνιοι τῶν ἰδίων ἀγαθῶν ἐπὶ τὸ γένος
 <lb n="15"/>ἥκουσιν· οὐδὲ τοσοῦτον γιγνώσκοντες, ὅτι ἄρα ἡ εὐγένεια
@@ -469,8 +501,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="8" xml:id="_8">
-          <p rend="indent">
-<lb n="9"/>Ἐπαινέσῃ δ’ ἄν τις καὶ τὸν Ἀθήνῃσι νομοθέτην,
+<p rend="indent">
+<lb n="9"/><label type="head"><num value="8">Κεφ. ηʹ.</num></label> Ἐπαινέσῃ δ’ ἄν τις καὶ τὸν Ἀθήνῃσι νομοθέτην,
 <lb n="10"/>ὃς τὸν μὴ διδάξαντα τέχνην ἐκώλυε πρὸς τοῦ παιδὸς
 <lb n="11"/>τρέφεσθαι. τέχνης ἁπάσης κατ’ ἐκεῖνον μάλιστα τὸν
 <lb n="12"/>χρόνον ἀσκουμένης, ἡνίχ’ ὡραιότατα φαίνηται τὰ σώματα,
@@ -585,8 +617,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="9" xml:id="_9">
-          <p rend="indent">
-<lb n="4"/>Ἄγετ’ οὖν, ὦ παῖδες, ὁπόσοι τῶν ἐμῶν
+<p rend="indent">
+<lb n="4"/><label type="head"><num value="9">Κεφ. θʹ.</num></label> Ἄγετ’ οὖν, ὦ παῖδες, ὁπόσοι τῶν ἐμῶν
 <lb n="5"/>ἀκηκοότες λόγων, ἐπὶ τέχνης μάθησιν ὥρμησθε, μή τις
 <lb n="6"/>ὑμᾶς ἀπατεὼν καὶ γόης ἀνὴρ παρακρουσάμενός ποτε, ματαιοτεχνίαν
 <lb n="7"/>διδάξηται, γιγνώσκοντας, ὡς ὁπόσοις τῶν ἐπιτηδευμάτων
@@ -643,8 +675,8 @@
         </div>
         <pb n="1.23"/>
         <div type="textpart" subtype="chapter" n="10" xml:id="_10">
-          <p rend="indent">
-<lb n="1"/>Λέγε δή μοι καὶ σὺ τὰς τῶν ἀθλητῶν προσαγορεύσεις·
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="10">Κεφ. ιʹ.</num></label> Λέγε δή μοι καὶ σὺ τὰς τῶν ἀθλητῶν προσαγορεύσεις·
 <lb n="2"/>ἀλλ’ οὐκ ἐρεῖς, ὅτι μηδ’ ἔχεις εἰπεῖν, εἰ μή
 <lb n="3"/>τι τοῦ μάρτυρος, ὡς οὐκ ἀξιόχρεω, κατέγνωκας· ἐμφαίνειν
 <lb n="4"/>γὰρ ἔοικάς τι τοιοῦτον, ὅταν ἐπὶ τοὺς πολλοὺς τὸν λόγον
@@ -728,8 +760,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="11" xml:id="_11">
-          <p rend="indent">
-<lb n="17"/>Ἀγαθῶν οὖν τῶν ἐν τῇ φύσει τῶν μὲν περὶ
+<p rend="indent">
+<lb n="17"/><label type="head"><num value="11">Κεφ. ιαʹ.</num></label> Ἀγαθῶν οὖν τῶν ἐν τῇ φύσει τῶν μὲν περὶ
 <pb n="1.27"/>
 <lb n="1"/>ψυχὴν ὄντων, τῶν δὲ περὶ σῶμα, τῶν δ’ ἐκτὸς, καὶ παρὰ
 <lb n="2"/>ταῦτα οὐδενὸς ἄλλου γένους ἀγαθῶν ἐπινοουμένου· ὅτι μὲν
@@ -825,8 +857,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="12" xml:id="_12">
-          <p rend="indent">
-<lb n="14"/>Ἀλλ’ ἐπειδὴ καὶ περὶ τοῦ μεγίστου τῶν σωματικῶν
+<p rend="indent">
+<lb n="14"/><label type="head"><num value="12">Κεφ. ιβʹ.</num></label> Ἀλλ’ ἐπειδὴ καὶ περὶ τοῦ μεγίστου τῶν σωματικῶν
 <lb n="15"/>ἀγαθῶν, τῆς ὑγιείας, ἐσκέμμεθα, μεταβῶμεν ἐπὶ
 <lb n="16"/>τὰ λοιπά. Τὰ μὲν δὴ περὶ κάλλους οὕτως αὐτοῖς ἔχει, ὡς
 <lb n="17"/>μὴ μόνον ὠφελεῖσθαί τι πρὸς τῆς ἀθλήσεως τὴν φύσιν·
@@ -846,8 +878,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="13" xml:id="_13">
-          <p rend="indent">
-<lb n="13"/>Ἀλλ’ ἴσως τῶν εἰρημένων οὐδενὸς, ἰσχύος δ’
+<p rend="indent">
+<lb n="13"/><label type="head"><num value="13">Κεφ. ιγʹ.</num></label> Ἀλλ’ ἴσως τῶν εἰρημένων οὐδενὸς, ἰσχύος δ’
 <lb n="14"/>ἀντιποιήσονται, τοῦτο γὰρ, εὖ οἶδα, ἓν φήσουσιν ἰσχυρότατον
 <lb n="15"/>πάντων εἶναι. Ποίας, ὦ πρὸς θεῶν, ἰσχύος καὶ ποῦ
 <lb n="16"/>χρησίμης; πότερον τῆς εἰς τὰ γεωργικὰ τῶν ἔργων; πάνυ
@@ -945,8 +977,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="14" xml:id="_14">
-          <p rend="indent">
-<lb n="5"/>Εἰ δὲ καὶ τὴν ἡδονὴν σώματός τις ἀγαθὸν
+<p rend="indent">
+<lb n="5"/><label type="head"><num value="14">Κεφ. ιδʹ.</num></label> Εἰ δὲ καὶ τὴν ἡδονὴν σώματός τις ἀγαθὸν
 <lb n="6"/>εἶναι φαίη, οὐδὲ ταύτης αὐτῆς αὐτοῖς μέτεστι, οὔτ’ οὖν
 <lb n="7"/>ἀθλοῦσιν οὔτε καταλύσασιν, εἴγε παρὰ μὲν τὸν τῆς ἀθλήσεως
 <lb n="8"/>χρόνον ἐν πόνοις τε καὶ ταλαιπωρίαις εἰσὶν, οὐ γυμναζόμενοι

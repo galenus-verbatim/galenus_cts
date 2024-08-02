@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De affectuum renibus insidentium dignotione et curatione</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0530.tlg045.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Pseudo-Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -96,13 +117,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0530.tlg045.verbatim-lat1">
 <pb n="19.643"/>
@@ -112,10 +176,8 @@
 <lb/>INSIDENTIUM DIGNOTIONE
 <lb/>ET CURATIONE LIBER ADSCRIPTITIUS.
 </head>
-
-
- <p>
-<lb/><label type="head"><hi rend="italic">De renum substantia.</hi></label></p>
+  <lb/><label type="head"><num value="1">Caput I.</num></label>
+<lb/><label type="head"><hi rend="italic">De renum substantia.</hi></label>
 <p rend="indent">
 <lb/>Substantia renum propria nullique alteri parti communis
 <lb/>ex febris et carne constructa est, carne, inquam,
@@ -126,8 +188,7 @@
 <lb/>et quia in singulis substantiae valvulis calculi plerumque
 <lb/>gignuntur, propterea graves in eis oriuntur dolores.
 <lb/>Atque haec de. renum substantia dieta sunt.</p>
- <p>
-<lb/><label type="head"><hi rend="italic">De renum figura.</hi></label></p>
+<lb/><label type="head"><hi rend="italic">De renum figura.</hi></label>
 <p rend="indent">
 <lb/>Figuram autem habent renes sigmoideam, in medio
 <lb/>cavitas existit, quae per venas et arterlas ferctum excrementum
@@ -166,8 +227,7 @@
 <lb/>quod vero inutile, id expellunt. Et quemadmodum
 <lb/>vesicata Pellis bile oblectatur et lien humore melancholico :
 <lb/>sic et hi renes serofo excremento.</p>
- <p>
-<lb/><label type="head"><hi rend="italic">De renum actione.</hi></label></p>
+<lb/><label type="head"><hi rend="italic">De renum actione.</hi></label>
 <p rend="indent">
 <lb/>Renibus functio est fero tu m humorem a sanguine fecernere
 <lb/>et percolere. Atque hic quidam functionis eorum
@@ -176,15 +236,13 @@
 <lb/>affecta ipsa indicat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
+  <lb/><label type="head"><num value="2">Caput II.</num></label>
 <p rend="indent">
 <lb/>Omnis ipsius renis affectus nephritis dicitur sive simitaris
 <lb/>sit sive organicos sive communis ; proprie tamen
 <lb/>nephritis lithiasis appellatur.</p>
 <pb n="19.647"/>
- <p>
-  <lb/><label type="head"><hi rend="italic">calculi causue. si</hi></label></p>
+  <lb/><label type="head"><hi rend="italic">calculi causue. si</hi></label>
 <p rend="indent">
 <lb/>Calculi vero causae quatuor sunt, efficiens, materialis,
 <lb/>instrumentalis et finalis. Hoc ab externis rebus ediscis:
@@ -309,8 +367,7 @@
 <lb/>generationem materiam praebent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
+  <lb/><label type="head"><num value="3">Caput III.</num></label>
 <p rend="indent">
 <lb/>Signorum alia scientifica sunt, alia artificialia, alia
 <lb/>propria. Signum proprium constans ac perpetuum est,
@@ -358,9 +415,9 @@
 <lb/>rectitudinem retracto scire poteris quis ren assioratur;
 <lb/>si namque dexter testiculus retrahatur, ren dexter
 <lb/>aegrotat; si sinister, sinister.</p>
-<p>
+
  <lb/><label type="head"><hi rend="italic">Quod a jecore et corde seruntur in renes vena et arteria,
-<lb/>ac in ipsum eorum cavitatem inseruntur.</hi></label></p>
+<lb/>ac in ipsum eorum cavitatem inseruntur.</hi></label>
 <p rend="indent">
 <lb/>Vasa autem spermatica ad testes feruntur. Quum igitur
 
@@ -377,10 +434,10 @@
 <lb/>tensio, per medias compagines affectio tdintestina ac ventriculum
 <lb/>peragrat indeque affectione accedente sequitur
 <lb/>subversio.</p>
-<p>
+
  <lb/><label type="head"><hi rend="italic">Quod ex calculi attritu spiritus acres accurrant, promitant
 <lb/>ac concitent pruritum instar naturae partem assi-etam
-<lb/>indicantis.</hi></label></p>
+<lb/>indicantis.</hi></label>
 <p rend="indent">
 <lb/>Quandoquidem quum lapis subest quaedam veluti titillatio
 <lb/>oritur, quamque natura ad rei molestae expulsionem
@@ -390,9 +447,8 @@
 <lb/>in fistulosam pudendorum partem ipsam immaniter imendunt :
 <lb/>in omni enim motione naturali sanguis et sprrituu
 <lb/>concurrunt, qui funi ipsuisnatuiae .vehicula.</p>
- <p>
   <lb/><label type="head"><hi rend="italic">Vulgus dolorem gravem voqqtmolesium consensum, medici
-<lb/>vehementissimum.</hi></label></p>
+<lb/>vehementissimum.</hi></label>
 <p rend="indent">
 <lb/>Demonstratum est cor, jecur et renes in cavitate non
 <lb/>sentire; in superficie eas lingulas partes sentire-; quoniam
@@ -415,9 +471,8 @@
 <lb/>urinae per initia sunt. aquosae; quum enim obstructio
 <lb/>sit, per .transfusionem effluunt; deinde arenolae; postremo
 <lb/>denique calculus quum dolor cessaverit excernitur;</p>
-<p>
  <lb/><label type="head"><hi rend="italic">Quod confertim feratur calculus, eo circa lumbos steri
-<lb/>gravitatis consensum.</hi></label></p>
+<lb/>gravitatis consensum.</hi></label>
 <p rend="indent">
 <lb/>Quemadmodum in mulieribus parientibus ad foetus
 <lb/>egt estum partes dilatantur; ita hic violentia renum sub-.
@@ -480,10 +535,8 @@
 <lb/>sursum ructus neque deorsum siclus exit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
- <p>
-<lb/><label type="head"><hi rend="italic">De calculi et reliquorum .renum. affectuum curatione.-</hi></label></p>
+  <lb/><label type="head"><num value="4">Caput IV.</num></label>
+<lb/><label type="head"><hi rend="italic">De calculi et reliquorum .renum. affectuum curatione.-</hi></label>
 <p rend="indent">
 <lb/>Si derepente nephriticus invadat affectus aegerque paulo
 <lb/>ante comederit et edulia omnino incocta prout eo praefumpfit
@@ -504,8 +557,7 @@
 <lb/>sit. Si quatuor humores exuberent, prius vena
 <lb/>secanda est ante purgationem quam purgandum ante venae
 <lb/>sectionem.</p>
- <p>
-<lb/><label type="head"><hi rend="italic">cur ante purgationem venam secamus?</hi></label></p>
+<lb/><label type="head"><hi rend="italic">cur ante purgationem venam secamus?</hi></label>
 <p rend="indent">
 <lb/>Quoniam si prius per venae sectionem vacaverimus,
 <pb n="19.663"/>
@@ -533,12 +585,11 @@
 <lb/>pus refrigerari omnesque naturales functiones deteriores
 <lb/>fieri. Ea propter vires prius recreandae sunt sicque purgans
 <lb/>medicamentum exhibendum.</p>
-<p>
  <lb/><label type="head"><hi rend="italic">Quod e cubito quidem si humoris adhuc esuuxu ren vexetur,
 <lb/>sanguis sit detrahendus ; e poplite vero si stet quod
 <lb/>asiluit. Atque .vena quae intra genu est incidenda sit t
 <lb/>ea namque universali venae viribus est aequalis; si vero
-<lb/>de ea sis anceps, ipsius propagines incidendae.</hi></label></p>
+<lb/>de ea sis anceps, ipsius propagines incidendae.</hi></label>
 <p rend="indent">
 <lb/>Quandoquidem affectus est nepbriticus et crassa quae
 <lb/>lapidem construit materia, ad partes superiores crassa materia
@@ -699,8 +750,7 @@
 </div>
 <pb n="19.673"/>
 <div type="textpart" subtype="chapter" n="5">
-
-
+  <lb/><label type="head"><num value="5">Caput V.</num></label>
 <p rend="indent">
 <lb/>Ad caetera jam progrediendum ac de praeservandi
 <lb/>ratione pauca disserenda sunt, ne qui curationem potenter
@@ -829,8 +879,7 @@
 <lb/>ad te peculiariter tanquam bypothesin convertemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
+  <lb/><label type="head"><num value="6">Caput VI.</num></label>
 <p rend="indent">
 <lb/>Quum multa sint, quae sanitatem tuentur instaurantque,
 <lb/>ab alimento necessario exordiendum est; nam aliis
@@ -1000,8 +1049,7 @@
 <lb/>inutilia, quemadmodum aliis utilia sunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
+  <lb/><label type="head"><num value="7">Caput VII.</num></label>
 <p rend="indent">
 <lb/>De aqua vero pauca sermonibus consectari decet ; ea
 <lb/>namque et fanis et aegrotantibus commune solatium et
@@ -1107,8 +1155,7 @@
 <lb/>De his quoque haec sufficiant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
+  <lb/><label type="head"><num value="8">Caput VIII.</num></label>
 <p rend="indent">
 <lb/>Quod si derepente tibi neptuniis oboriatur, nuper pastus
 <lb/>et nauseas percipias, omnia evome aut natura aut

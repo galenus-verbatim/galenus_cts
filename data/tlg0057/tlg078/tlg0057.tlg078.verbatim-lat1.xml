@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De antidotis</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg078.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -54,7 +75,6 @@
               <date>1827</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x14">BIU Santé, Medica</ref></biblStruct>
         <biblStruct>
           <monogr corresp="Basel">
@@ -96,13 +116,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg078.verbatim-lat1">
 <pb n="14.1"/>
@@ -112,10 +175,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE ANTIDOTIS LIBRI
 <lb/>DUO. LIBER PRIMUS.</head>
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Quid sit antidotus et unde theriaca originem
+<lb/><label type="head"><num value="1">Cap. I.</num></label> <label type="head"><hi rend="italic">Quid sit antidotus et unde theriaca originem
 <lb/>habuerit</hi>.</label> l Quae remedia non extrinsecus corpori
 <lb/>imposita, sed intro assumpta pravis affectibus medentur, antidota
 <lb/>medici nominanti Tres autem in universum ipsorum
@@ -196,10 +257,8 @@
 <lb/>et virtutem dignoscebat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Quomodo optima theriaca componatur</hi>.</label>
+<lb/><label type="head"><num value="2">Cap. II.</num></label> <label type="head"><hi rend="italic">Quomodo optima theriaca componatur</hi>.</label>
 <lb/>Fit autem hoc praestantissimum, reliquaque prope universa
 <lb/>medicamenta, tum propter eorum quae iniiciuntur probitatem,
 <lb/>tum ob virtutis inter teste proportionem. Plerique
@@ -356,10 +415,8 @@
 <lb/>ita se rem habere, temeritatis se damnavit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Quod vinum in antidotis poni debeat</hi>.</label>
+<lb/><label type="head"><num value="3">Cap. III.</num></label> <label type="head"><hi rend="italic">Quod vinum in antidotis poni debeat</hi>.</label>
 <pb n="14.14"/>
 <lb/>Quare etiam prospiciendum venit, cuiusmodi genere id
 <lb/>immittas, quale .sane experientia notum est firmissimum
@@ -489,10 +546,8 @@
 <lb/>reddit amarum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">ne melle componendis antidotis idoneo</hi>.</label>
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> <label type="head"><hi rend="italic">ne melle componendis antidotis idoneo</hi>.</label>
 <lb/>Jam vero alius unus medicus etiam mel admodum vetus
 <pb n="14.21"/>
 <lb/>fa.erno similiter iniecit, tali quadam ratiocinatione usus.
@@ -620,9 +675,8 @@
 <lb/>quae paulo ante reliquimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Conquirenda este quavis in regione mella,
+<p rend="indent">
+ <lb/><label type="head"><num value="5">Cap. V.</num></label> <label type="head"><hi rend="italic">Conquirenda este quavis in regione mella,
 <lb/>vina, simplices medicinas</hi>.</label> Nam si in Asia aut apud
 <lb/>alias quasdam gentes Antidotum praeparans vinum medicamento
 <lb/>utile desideres, colore vermiculum quaerere
@@ -671,7 +725,7 @@
 <lb/>apparebit. Humerus autem, ut videtur, omnis quae doturibus
 <lb/>medentur talia esse autumat. Scribit itaque hunc
 <lb/>in mestum;</p>
- <lg>
+ <lg rend="italic">
 <l>Radicem adfecit amaram</l>
 <l>Contritam manibus, omnes quae auferre dolores</l>
 <l>Apta.</l></lg>
@@ -722,12 +776,10 @@
 <lb/>apponemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Andromachi senioris theriaee ex viperis</hi>,
-<lb/><hi rend="italic">Calena dicta</hi>.</label> .</p>
- <lg>
+<lb/><label type="head"><num value="6">Cap. VI.</num></label> <label type="head"><hi rend="italic">Andromachi senioris theriaee ex viperis,
+<lb/>Calena dicta</hi>.</label> .</p>
+ <lg rend="italic">
 <l>Accipe quas habeat vires, clarissime Caesor,</l>
 <l>Antidotus multis consociata modis.</l>
 <l>Accipe securae Nero libertatis alumne</l>
@@ -915,10 +967,8 @@
  </lg>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic"> Andromachi iunioris theriaca ex ciperis,
+<lb/><label type="head"><num value="7">Cap. VII.</num></label> <label type="head"><hi rend="italic"> Andromachi iunioris theriaca ex ciperis,
 <lb/>Calene dicta</hi>.</label> Haec quidem senior Andromachna
 <lb/>literis mandavit, filius autem ipsius libro medicamentarii,
 <lb/>quem de internis inscripsit, hanc scripturam tradidit pedestri
@@ -975,10 +1025,8 @@
 <lb/>adjicere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">ouomodo pastilli theriaci praeparentur</hi>.</label>
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> <label type="head"><hi rend="italic">ouomodo pastilli theriaci praeparentur</hi>.</label>
 <lb/>Viperas non quemadmodum nonnulli media aestate,
 <lb/>neque tamen quum nuper secessum terrae reliquerint,
 <lb/>venari convenit. Etenim aestate. caro ipsarum est sitis
@@ -1063,9 +1111,8 @@
 <lb/>etiam si inveterentur plurimum, utiles permanent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
-<p rend="indent"><label type="head"><hi rend="italic">Pastillorum scilliticorum compositio</hi>.</label>
+<p rend="indent">
+ <lb/><label type="head"><num value="9">Cap. IX.</num></label> <label type="head"><hi rend="italic">Pastillorum scilliticorum compositio</hi>.</label>
 <lb/>Sive scilliticos, sive scillinos malit aliquis appellare pastillos,
 <lb/>aut orbiculos, aut rotulas quae ex scilla praeparantur,
 <lb/>nihil refert; nam quocunque nomine appelles medicamentum
@@ -1100,10 +1147,8 @@
 <lb/>etiam facito.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Hedychroi consuetio</hi>.</label> I Superiore theriacae
+<lb/><label type="head"><num value="10">Cap. X.</num></label> <label type="head"><hi rend="italic">Hedychroi consuetio</hi>.</label> I Superiore theriacae
 <lb/>facultatis compositione Andromachus quomodo sane
 <lb/>tum theriacos tum .scillinos orbiculos praeparare conveniat,
 <lb/>.indicavit; quomodo autem hedychroon confidatur
@@ -1120,7 +1165,7 @@
 <lb/>componant. Porro ut etiam ipsius scriptura aegre
 <lb/>vitietur corrumpaturque, ligata oratione inferius scripta
 <lb/>explicabitur.</p>
- <lg>
+ <lg rend="italic">
 <l>Hedychroi vult magma mari binas sibi drachmas,</l>
 <l>Aequales et amaraci habens, afui, aspalatique,</l>
 <l>Et sunci teretis calami qui suavis odore est,</l>
@@ -1164,9 +1209,8 @@
 <lb/>dicta sint.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
-<p rend="indent"><label type="head"><hi rend="italic">De probatione integritatis quarumdam
+<p rend="indent">
+ <lb/><label type="head"><num value="11">Cap. XI.</num></label> <label type="head"><hi rend="italic">De probatione integritatis quarumdam
 <lb/>medicinarum</hi>.</label> Digrediamur igitur jam ad hujus .antidoti
 <lb/>confectionem, .eodem ordine singula quae ei immittuntur
 <lb/>repetentes, quem Audromachus suprascriptis elegiacis ver-
@@ -1244,10 +1288,8 @@
 <lb/>tum speculationis utilitatem.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De medicinis in tertio ordine positis</hi>.</label>
+<lb/><label type="head"><num value="12">Cap. XII.</num></label> <label type="head"><hi rend="italic">De medicinis in tertio ordine positis</hi>.</label>
 <lb/>Praeterea vero simplicium medicamentorum quae theriacae
 <lb/>immittuntur ordinem ab Andromacho scriptum persequi
 <lb/>tempestivum est. Tradit itaque tertium ordinem medicamentorem
@@ -1323,10 +1365,8 @@
 <lb/>interpretari.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De opobalsamo et cinnamomo</hi>.</label> Inde
+<lb/><label type="head"><num value="13">Cap. XIII.</num></label> <label type="head"><hi rend="italic">De opobalsamo et cinnamomo</hi>.</label> Inde
 <lb/>o.pobalfami et cinnamomi in praedictis versibus Andromachus
 <lb/>meminit, in quibus posti traditas a Dioscoride notas
 <lb/>maximum est ea prius inspexisse, in qua regione unumquodque
@@ -1427,10 +1467,8 @@
 <lb/>Haec nobis de cinnamomo dicta sufficiant.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De reliquarum medicinarum probatione
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> <label type="head"><hi rend="italic">De reliquarum medicinarum probatione
 <lb/>et electione</hi>.</label> l caeterum quoniam agaricum deinceps seriptum
 <lb/>nullam adul tutationem recipit, hoc solum intellexisse
 <lb/>erit abunde, quod etiam priores tradiderunt, levissimum
@@ -1690,7 +1728,7 @@
 <lb/>Quaedam ipsorum manifestius indicantur in theriaca quae
 <lb/>prosa oratione scripta est. Item hoc</p>
 <pb n="14.81"/>
- <lg>
+ <lg rend="italic">
 <l>Caeruleae ast spinae lacrima.</l>
  </lg>
 <p rend="nonindented">
@@ -1714,7 +1752,7 @@
 <lb/>dictum sit, id declaratum tibi est, qui scripturam silii
 <lb/>ipsius Andromachi prosa expositam intelligas, quemadmodum
 <lb/>et hoc:</p>
- <lg>
+ <lg rend="italic">
 <l>Actaeo melle perungens</l>
 <l>Omnia, quae mlsces theriacae antidoto.</l>
  </lg>
@@ -1727,9 +1765,8 @@
 <lb/>etiam tertia quaedam praeter has est rotunda.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quomodo t h ariace praeparetur</hi>.</label> Diximus
+<p rend="indent">
+ <lb/><label type="head"><num value="15">Cap. XV.</num></label> <label type="head"><hi rend="italic">Quomodo t h ariace praeparetur</hi>.</label> Diximus
 <lb/>etiam antea eum qui medicamentum semel confici
 <lb/>spectaverit, non amplius opus habiturum ut iterum aut
 <lb/>tertio inspiciat. Verum ut optima in singulis medicamenti
@@ -1873,7 +1910,7 @@
 <pb n="14.90"/>
 <lb/>quo antidota hunc in modum tradit, a communi ipsorum
 <lb/>usu et theriaces specie incipit.</p>
- <lg>
+ <lg rend="italic">
 <l>Antidota confert praeparata. condere</l>
 <l>Jn primis ad horrenda deleteria,</l>
 <l>Quorum -videntur inventa esse nomine; .</l>
@@ -2051,19 +2088,17 @@
  </lg>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Theriaces alterius consuetio</hi>.</label> Qupst itanonnulla
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> <label type="head"><hi rend="italic">Theriaces alterius consuetio</hi>.</label> Qupst itanonnulla
 <lb/>cum Andromacho discordant t Damocrates
 <lb/>islfl indicavit his versibus:</p>
- <lg>
+ <lg rend="italic">
 <l>Sed non probe aliqui singulis dant quattuor.</l>
  </lg>
  <p rend="nonindented">
   <lb/>Atque iterum</p>
 <pb n="14.100"/>
-<lg>
+<lg rend="italic">
 <l>Sunt qui duas cuique dent, quod displicet.</l>
 </lg>
 <p rend="nonindented">
@@ -2073,7 +2108,7 @@
 <lb/>habeatur, visum est mihi et illam ascribere, juxta commoderationem
 <lb/>medicaminum eam ingredientium, eo quod
 <lb/>clarior compendiosiorque modo traditis existat.</p>
- <lg>
+ <lg rend="italic">
 <l>Theriacen ratione aliquis contemperet Ista.</l>
 <l>Dauci equidem fructus, panacis liquor, atque bitumen</l>
 <l>Et sugapenum itidem, tum galbana rursus, et ammi</l>
@@ -2126,10 +2161,8 @@
 </div>
 <pb n="14.103"/>
 <div type="textpart" subtype="chapter" n="17">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De scriptis a Critone de theriaca in
+<lb/><label type="head"><num value="17">Cap. XVII.</num></label> <label type="head"><hi rend="italic">De scriptis a Critone de theriaca in
 <lb/>tutis medicamentorum libro</hi>.</label> In medicamentorum symmetria
 <lb/>et ipse nigri piperis drachmas vigintiquatuor
 <lb/>quaemadmodum longi senas immittit. Caeterum chalcitidis
@@ -2180,10 +2213,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE ANTIDOTIS
 <lb/>LIBER SECUNDUS.</head>
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De Mithridaticis et aliis quibusdam Andromachi
+<lb/><label type="head"><num value="1">Cap. I.</num></label> <label type="head"><hi rend="italic">De Mithridaticis et aliis quibusdam Andromachi
 <lb/>Antidotis</hi>.</label> Exposita a nobis integro volumine
 <lb/>theriaea, ut reliquas antidotos brevibus explicemus, efficiet,
 <lb/>quas nisui hoc in libro recensere propositum est,
@@ -2287,8 +2318,8 @@
 <lb/>cervinae drach. sex, obolos tres, unguenti nardini
 <lb/>drach. viginti, sanguinis hoedini sicci drach. quinque, ebo- .
 <lb/>los tres, sanguinis anserini sicci tantundem, sanguinis anatis
-<lb/>drach. tres, obolos tres, socri buphthalmi Aegyptii
-<lb/>drach. vrij, vini Chii Athaman lici, quod sufficit.</p>
+<lb/>drach. tres, obolos tres, succi buphthalmi Aegyptii
+<lb/>drach. vrij, vini Chii Athamantici, quod sufficit.</p>
  </div>
  <div type="textpart" subtype="section" xml:id="_2.1.4">
 <p rend="indent">
@@ -2371,10 +2402,8 @@
 <lb/>cyathis ad annum.</p>
 </div></div>
 <div type="textpart" subtype="chapter" n="2">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De Mithridatica antidoto ex Damocratis
+<lb/><label type="head"><num value="2">Cap. II.</num></label> <label type="head"><hi rend="italic">De Mithridatica antidoto ex Damocratis
 <lb/>traditione</hi>.</label> Has itaque scriptas antidotos omnes Andromaesius
 <lb/>prodidit. Quum vero quae carminibus explicatae
 <lb/>sunt, ad ponderis sinceritatem medicamentorumque memoriam
@@ -2387,7 +2416,7 @@
 <lb/>viri quidam insignes admodum Mithridatium vocant, medicamenta
 <lb/>ad omnes malas corporis affectiones efficax,
 <lb/>quamque omnis antidoti vicem praestare dixerunt.</p>
- <lg>
+ <lg rend="italic">
 <l>Myrrhae Arabicae Troglodyticae drachmas decem ;</l>
 <l>Croci decem, agarici decem, gingiberis decem.</l>
 <pb n="14.116"/>
@@ -2424,7 +2453,7 @@
  <lb/>Quoniam vero Democrates cypheos mentionem facit,
 <lb/>quod etiam ipse componit, recte ideo .illius quoque compositionem
 <lb/>adscripsit, quam deinceps subjiciam.</p>
- <lg>
+ <lg rend="italic">
 <l>cyphi vero .nec mixtum- quicquam est, nec simplex</l>
 <l>Lpsum fert tellus ulla, non preqsus herbae succus.</l>
 <l>Aegyptus quosdam hoc cum placat deos,</l>
@@ -2462,10 +2491,8 @@
 </div>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De tribus Antidotis insignibus, duabus
+<lb/><label type="head"><num value="3">Cap. III.</num></label> <label type="head"><hi rend="italic">De tribus Antidotis insignibus, duabus
 <lb/>ad Phthisim, ana ad venena</hi>.</label> Quum vero Democrates
 <lb/>aliarum quoque an.tidotorum insignium meminerit, satius
 <lb/>mihi visum. est illas. etiam propter eundem usum versibus
@@ -2473,7 +2500,7 @@
 <lb/>quam vocant ipse componat in. praecedente libro docoimus;
 <lb/>nunc quae deinceps scriptae sunt antidoti, eai
 <lb/>subiiciemus.</p>
- <lg>
+ <lg rend="italic">
 <l>Antiquae phthisi alia valde bona,</l>
 <l>Et. sputo sanguinis, et clam scbrienri,</l>
 <pb n="14.120"/>
@@ -2599,14 +2626,12 @@
  </lg>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De Charine Antidoto</hi>.</label> Post antidotos
+<lb/><label type="head"><num value="4">Cap. IV.</num></label> <label type="head"><hi rend="italic">De Charine Antidoto</hi>.</label> Post antidotos
 <lb/>hucusque descriptas Mithridaticam Democrates scripsit,
 <lb/>quam ego paulo ante apposui. Ea igitur omissa quas
 <lb/>deinceps conscribit adjiciam.</p>
- <lg>
+ <lg rend="italic">
 <l>Antidotus, quam recentes Charmen vocant,</l>
 <l>Aspectus sanat, qui molestarum diu.,</l>
 <l>Et quibus nullum medicamen profuit.</l>
@@ -2661,16 +2686,14 @@
 <l>sioafice hoc pacto; Succos dissolve prius</l>
 <l>.la melle calido, atque restnam optime.</l>
 <l>siuhcta aliis asperges arida,</l>
-<l>In unitatem stc coactis omnibus,</l>
+<l>In unitatem sic coactis omnibus,</l>
 <l>Rabis rogantibus instar nucis Ponticae.</l></lg>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De quibusdam aliis antidotis a Domocrate
+<lb/><label type="head"><num value="5">Cap. V.</num></label> <label type="head"><hi rend="italic">De quibusdam aliis antidotis a Domocrate
 <lb/>descriptu</hi>.</label>
- <lg>
+ <lg rend="italic">
 <l>.dt st voles tibi antidotum componere,</l>
 <l>^uae sanguinis supra infeaque arcet impetum:</l>
 <l>Hanc st accurate facis, habebis optimam.</l>
@@ -2730,7 +2753,7 @@
  </p>
 <p rend="indent">
  <lb/><hi rend="italic">Alia faciens ad eadem, quae et prior</hi>
- <lg>
+ <lg rend="italic">
 <l>Rosarum constat unciis bis quatuor.</l>
 <l>Contusa ea omnia et per cribrum adacta,</l>
 <l>Melle despumato excipe valde bono.</l>
@@ -2745,7 +2768,7 @@
 <pb n="14.133"/>
  <p rend="indent">
 <lb/>Pastilli rosacei confectio.
-  <lg>
+  <lg rend="italic">
 <l>Hoc te oportet pulchre struxisse prius</l>
 <l>Quo dicam modo. Recentes carpe rosus.</l>
 <l>Carptus siccato in umbra dies duos,</l>
@@ -2760,7 +2783,7 @@
  </p>
 <p rend="indent">
  <lb/>Crocomagmatis compositio.
- <lg>
+ <lg rend="italic">
 <l>Crocomagma st bonum nimis desideras,</l>
 <l>Para studiosa Cilicii drachmas croci</l>
 <l>Centum rniseebis myrrhae pinguis simul</l>
@@ -2775,7 +2798,7 @@
 </p>
  <p rend="indent">
 <lb/>Antidotus Prognostica.
-  <lg>
+  <lg rend="italic">
 <l>Prognosticam Antidotum ita conficies.</l>
 <l>Quam praebibentes, st uenenum sumant,</l>
 <l>Evoment ipsum statim, et cibum simul.</l>
@@ -2804,9 +2827,8 @@
 </p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De Antidotis ab Asclepiade conscriptis in
+<p rend="indent">
+ <lb/><label type="head"><num value="6">Cap. VI.</num></label> <label type="head"><hi rend="italic">De Antidotis ab Asclepiade conscriptis in
 <lb/>quinto Internarum assertionum libro, qui Asa n is inscribitar</hi>.</label>
 <lb/>Vocare itaque consuetudo est junioribus medicis
 <lb/>antidotos, non modo remedia quae adversus lethalia veaena
@@ -2866,7 +2888,7 @@
 <div type="textpart" subtype="chapter" n="7">
  <div type="textpart" subtype="section" xml:id="_2.7.1">
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Asclepiadis antidota, ad eos, qui lethalia
+ <lb/><label type="head"><num value="7">Cap. VII.</num></label> <label type="head"><hi rend="italic">Asclepiadis antidota, ad eos, qui lethalia
   <lb/>biberunt, ut ipse ad verbum scripsit</hi>.</label> <label type="head"><hi rend="italic">Adversus papaveris
 <lb/>succum</hi>.</label> Itaque qui papaveris succum potaverint,
 <lb/>iis conducet aquam cum oleo calentem saepius potui
@@ -3059,7 +3081,7 @@
 <lb/>exitialium venenorum praeceptores extiterint, quemadmodum
 <lb/>et Heliodorum in Apolylicis ad Nicomachum jurantem
 <lb/>est invenire, his verbis :</p>
- <lg>
+ <lg rend="italic">
 <l>Non mihi per sacram uenerandae Palladis artem,</l>
 <l>Non per luciferum salem mortalibus aequum,</l>
 <l>Non per te dici cui subsunt, Iuppiter, omnes,</l>
@@ -3089,10 +3111,8 @@
 </div>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Quae a lethalibus medicamentis praesanent
+<lb/><label type="head"><num value="8">Cap. VIII.</num></label> <label type="head"><hi rend="italic">Quae a lethalibus medicamentis praesanent
 <lb/>Apollonii Muris</hi>.</label> ♃ Rutae folia XX, nuces <hi rend="italic">ju-</hi>
 <pb n="14.147"/>
 <lb/>glandes ij, falis grumum j, caricas ij, haec jejuno manduranda
@@ -3111,7 +3131,8 @@
 <lb/>exhibitum cum antidoto excernatur.</p>
  </div>
  <div type="textpart" subtype="section" xml:id="_2.8.2">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Antidotum Codii Turi, quo et Crateras usus est</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Antidotum Codii Turi, quo et Crateras usus est</hi>.</label>
 <lb/>Marrubii, herbae sacrae, seminis rutae sylvestris, scordii,
 <lb/>corticum radicis rhamni, singulorum par pondus:
 <lb/>melle excipe, deque, ad foras quidem Ʒ ij, cum vino;
@@ -3216,10 +3237,8 @@
 </div>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De Diascinco nobili antidoto, Theriaea
+<lb/><label type="head"><num value="9">Cap. IX.</num></label> <label type="head"><hi rend="italic">De Diascinco nobili antidoto, Theriaea
   <lb/>et Centena</hi>.</label> <hi rend="italic">Antidotum Mithridatis Eupatoris, quod diascincum
 <lb/>dicitur, lethaltbus medicamentis efficax, adversus
 <lb/>etiam omnem tabificam materiam, omnis virulenti ictum,
@@ -3343,9 +3362,9 @@
  <div type="textpart" subtype="section" xml:id="_2.10.1">
 
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">scoliae diversurum antidoti diversis aspectibus
-  <lb/>succurrentes</hi>.</label> <label type="head"><hi rend="italic">Antidotum Aelii Calli ad alia, et ra</hi>—
-  <lb/><hi rend="italic">biosorum morsus</hi>.</label> ♃ Nardi Syriacae Ʒ iv, myrrhae draclu
+ <lb/><label type="head"><num value="10">Cap. X.</num></label> <label type="head"><hi rend="italic">scoliae diversurum antidoti diversis aspectibus
+  <lb/>succurrentes</hi>.</label> <label type="head"><hi rend="italic">Antidotum Aelii Calli ad alia, et rabiosorum
+  <lb/>morsus</hi>.</label> ♃ Nardi Syriacae Ʒ iv, myrrhae draclu
 <lb/>viij, cinnamomi Ʒ xij, cassiae nigrae tantundem, croci
 <lb/>drach. viij, costi Ʒ iv, seminis dauci, par pondus, mei,
 <lb/>par pondus (quidam vero unam) petroselini drach. iv, piperis
@@ -3556,9 +3575,8 @@
 </div>
  <pb n="14.168"/>
 <div type="textpart" subtype="chapter" n="11">
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Quae Asclepiades in quinto Asanis tradiderit
+<lb/><label type="head"><num value="11">Cap. XI.</num></label> <label type="head"><hi rend="italic">Quae Asclepiades in quinto Asanis tradiderit
  <lb/>ad virulentorum animalium noxas</hi>.</label> <label type="head"><hi rend="italic">Potio a rubiosarum
 <lb/>morsa praeservans admodum generosa</hi>.</label> ♃ Lycii
 <lb/>Indici quam optimi obolos iij, cum aqua propinato ; item
@@ -3621,9 +3639,9 @@
  </div>
  <div type="textpart" subtype="section" xml:id="_2.11.4">
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Aliud -delii Calli, ut Belchiontus aiebat, a Caesare</hi>
+ <lb/><label type="head"><hi rend="italic">Aliud -delii Calli, ut Belchiontus aiebat, a Caesare
 <pb n="14.171"/>
-  <lb/><hi rend="italic">acceptum</hi>.</label> ♃ Polli, succi Cyrenaici, utriusque Ʒ iij ẞ.
+  <lb/>acceptum</hi>.</label> ♃ Polli, succi Cyrenaici, utriusque Ʒ iij ẞ.
 <lb/>canchryos, rutae silvestris seminis, singulorum Ʒ iv, gentianae,
 <lb/>minii Lemnii, singulorum Ʒ v, myrrhae Ʒ vj vel
 <lb/>vij, opobalsami Ʒ viii, scordii, piperis, singulorum Ʒ xii,
@@ -3735,7 +3753,7 @@
  <div type="textpart" subtype="section" xml:id="_2.12.1">
 
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Remedia ad scorpiones sumenda et admonenda</hi>.</label>
+ <lb/><label type="head"><num value="12">Cap. XII.</num></label> <label type="head"><hi rend="italic">Remedia ad scorpiones sumenda et admonenda</hi>.</label>
  <lb/><label type="head"><hi rend="italic">Ad scorpionum ictus utendum est subscriptis consectionibus.
 <lb/>Diophantus etiam ad scorpionum ictus et
 <lb/>phalangiorunT morsus usus est</hi>.</label> Aristolochiae Ʒ iv, piperis
@@ -3859,7 +3877,7 @@
  <div type="textpart" subtype="section" xml:id="_2.13.1">
 
  <p rend="indent">
-  <lb/><label type="head"><hi rend="italic">Diversa ad phalangiorum morsus remedia</hi>.</label>
+  <lb/><label type="head"><num value="13">Cap. XIII.</num></label> <label type="head"><hi rend="italic">Diversa ad phalangiorum morsus remedia</hi>.</label>
  <lb/><label type="head"><hi rend="italic">Ad phalangiorum morsus Charitonis circulatoria
 <lb/>antidotus</hi>.</label> ♃ Fructus spondylii, calaminthae par pondus,
 <lb/>trita simul drachmae unius pondere, cum duobus vini
@@ -3944,10 +3962,8 @@
 </div>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Remedia ad viperas, in quibus Anticchi
+<lb/><label type="head"><num value="14">Cap. XIV.</num></label> <label type="head"><hi rend="italic">Remedia ad viperas, in quibus Anticchi
 <lb/>theriaca continetur, quam Plinius in scribas aedis
 <lb/>Aeseulapii descriptam suesse tradit</hi>.</label> ( Et haec quidem
 <lb/>hactenus. At in viperarum morsibus, iis quae subscribuntur
@@ -3993,12 +4009,12 @@
  <p rend="indent">
   <lb/><label type="head"><hi rend="italic">Alia ab Eudemo netstbus conscripta, theriaca Antiochi
 <lb/>Philometoris, cujus initium ita sonat</hi>.</label></p>
-<lg>
+<lg rend="italic">
  <l>Hoc cape praesidium ad serpentia, quod Philometor</l>
 <l>Esu praecipuum repperit Antiochus.</l></lg>
 <p rend="indent">
  <lb/>His mistura constat.</p>
-  <lg>
+  <lg rend="italic">
 <l>Meu drachmas binas radicis ponito, tantum</l>
 <l>Germina ferpilli ponderis accipiant,</l>
 <l>Et panacis totidem drachmas liquor asserit aeque</l>
@@ -4127,16 +4143,14 @@
 </div>
  <pb n="14.191"/>
 <div type="textpart" subtype="chapter" n="15">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Damoeratis ad venenosarum ac rabiosarum
+<lb/><label type="head"><num value="15">Cap. XV.</num></label> <label type="head"><hi rend="italic">Damoeratis ad venenosarum ac rabiosarum
 <lb/>morsu antidoti</hi>.</label> Quum autem versibus conscripta
 <lb/>facile memoria contineantur et ponderis medicamentorum
 <lb/>symmetriam inculpatam sortiantur, satius mihi visum
 <lb/>est etiam Damocratis versus hic adscribere, qui hoc
 <lb/>modo se habent.</p>
- <lg>
+ <lg rend="italic">
 <l>Nunc autem tradere medicinas volo,</l>
 <l>Quae morsus tantum oenenatos sanent,</l>
 <l>Cornutae, oiperarum, aspidum et chersudrum;</l>
@@ -4166,7 +4180,7 @@
  </lg>
 <p rend="indent">
  <lb/>Aliud.</p>
- <lg>
+ <lg rend="italic">
 <l>Valde bonum remedium, quo usas etiam</l>
 <l>ipsas bibendo noni commorsus male</l>
 <pb n="14.193"/>
@@ -4194,7 +4208,7 @@
  </lg>
 <p rend="indent">
  <lb/>Aliae</p>
-  <lg>
+  <lg rend="italic">
 <l>Ad omnium venena pharmacum esu cax</l>
 <l>Serpentium, sed viperae potissimum.</l>
 <l>At semper habeas coagulum recentium</l>
@@ -4213,7 +4227,7 @@
 <pb n="14.195"/>
    <p rend="indent">
 <lb/>Alia.</p>
- <lg>
+ <lg rend="italic">
 <l>Antidotus ad rabiosorum morsus canum.</l>
 <l>Qui mentem alienantes uexant latratibus,</l>
 <l>Metuque cuiusuis liquoris, maxime</l>
@@ -4251,7 +4265,7 @@
 </lg>
 <p rend="indent">
  <lb/>Alia.</p>
- <lg>
+ <lg rend="italic">
 <l>Pritoque id usu comperisse Niceratus</l>
 <pb n="14.197"/>
 <l>Adversum aquae metum, recensuit,</l>
@@ -4339,9 +4353,8 @@
  </lg>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Antidoti ab Hera conscriptae theriacae,
+<lb/><label type="head"><num value="16">Cap. XVI.</num></label> <label type="head"><hi rend="italic">Antidoti ab Hera conscriptae theriacae,
 <lb/>quas etiam nos experti sumus</hi>.</label> Theristra qua usus est
 <lb/>Marcus Imperator. ♃ Seminis trifolii bituminosi partem
 <lb/>unam, aristolochiae <hi rend="italic">rotundae</hi> partem unam, rutae silvestris
@@ -4351,7 +4364,7 @@
  <div type="textpart" subtype="section" xml:id="_2.16.1">
 <p rend="indent">
  <lb/><label type="head"><hi rend="italic">Antidotum aliud ad eadem vehementer efeicaais</hi>.</label></p>
-  <lg>
+  <lg rend="italic">
 <l>Hoc cape praesidium ad serpentia, quod .Philometor</l>
 <l>Lsu praecipuum repperit Antiochus.</l>
 <pb n="14.202"/>
@@ -4476,7 +4489,8 @@
 <lb/>iv, vino Phalerno et Attico melle excipiantur.</p>
  </div>
  <div type="textpart" subtype="section" xml:id="_2.16.6">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Aliud antidotum; valet ad lethalia praesumptum,
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Aliud antidotum; valet ad lethalia praesumptum,
 <lb/>et postea datum, nihilque reliqua medicamenta exhibita
 <lb/>impedit; quum oero datum suerit, nauseam movet, quoad
 <lb/>totum quod perniciosum est, expellatur</hi>.</label> ♃ Minii sigilli

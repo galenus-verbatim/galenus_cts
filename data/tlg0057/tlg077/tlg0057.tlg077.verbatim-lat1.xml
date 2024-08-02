@@ -7,45 +7,66 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De compositione medicamentorum per genera</title>
-        <author xml:lang="lat">Galenus</author>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
         <editor role="translator">Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <funder>Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the Bibliothèque numérique Medica (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from the Latin translation of Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+
+</titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">First digital edition of the Latin translations printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno type="filename">tlg0057.tlg077.verbatim-lat1.xml</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="translator">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -54,7 +75,6 @@
               <date>1827</date>
             </imprint>
           </monogr>
-          
         <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x13">BIU Santé, Medica</ref></biblStruct>
         <biblStruct>
           <monogr corresp="Basel">
@@ -96,13 +116,56 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Greek words are marked up by a &lt;foreign&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Italics are marked up by a &lt;hi&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="lat">Latin</language>
+<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+
+</teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0057.tlg077.verbatim-lat1">
 <pb n="13.362"/>
@@ -110,9 +173,8 @@
 <div type="textpart" subtype="book" n="1">
 <div type="textpart" subtype="chapter" n="1">
 <head>LIBER I.</head>
-
 <p rend="indent">
- <lb/>Jam a me et prius scriptum est opus, cujus
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Jam a me et prius scriptum est opus, cujus
 <lb/>priores duo libri in publicum sane prodierant, sed
 <lb/>cum aliis in apotheca, quae ad Viam sacram est, relicti intercidere,
 <lb/>quando Pacis delubrum totum et ingentes Palatii
@@ -134,7 +196,7 @@
 <lb/>alia jecur, alia lienem, alia renes vel vesicam vel caput
 <lb/>vel pulmones juvare. Utrum enim, ajunt, praeses quidam
 <lb/>eis imperat? quemadmodum in tragoedia,</p>
- <lg>
+ <lg rend="italic">
 <l>Abi quidem tu stamina ipsa ad Placiti,.</l>
 <l>Phebas at age tu pergito Cadmeias.</l></lg>
 <p rend="nonindented">
@@ -211,9 +273,8 @@
 <lb/>particularis exercitatio, morbi cujusque apposito exemplo.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Quae praescire oporteat eum, qui medicamenta
+<lb/><label type="head"><num value="2">Cap. II.</num> <hi rend="italic">Quae praescire oporteat eum, qui medicamenta
 <lb/>probe compositurus sit</hi>.</label> Altero de simplicium mestramentorum
 <lb/>facultatibus opere dictum est, singulorum facultates
 <lb/>esse noscendas non in genere solum, ut quidam
@@ -293,10 +354,8 @@
 <lb/>deinceps explicabimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Quis compositorum medicamentorum usas</hi>.</label>
+<lb/><label type="head"><num value="3">Cap. III.</num> <hi rend="italic">Quis compositorum medicamentorum usas</hi>.</label>
 <lb/>Si solis simplicibus medicamentis universos^ praeter naturam
 <lb/>affectus curare liceret, nullus utique compositi unquam usus
 <lb/>foret; at hoc nunc ita comparatum non est, nam saepe,
@@ -369,9 +428,8 @@
 </div>
 <pb n="13.375"/>
 <div type="textpart" subtype="chapter" n="4">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastro medicamento dia chalcia
+<p rend="indent">
+<lb/><label type="head"><num value="4">Cap. IV.</num> <hi rend="italic">De emplastro medicamento dia chalcia
 <lb/>teos</hi>.</label> Qua ratione composuerim emplastrum ex chalcitide,quod
 <lb/>a palma, quam phoenica Graeci vocant, phoenicinum
 <lb/>appello, medicamentum glutinandis ulceribus, cicatrice obducendis
@@ -740,9 +798,8 @@
 <lb/>tuta est accessio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastris, quae ex lithargyro parantur</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="5">Cap. V.</num> <hi rend="italic">De emplastris, quae ex lithargyro parantur</hi>.</label>
 <lb/>Quoniam in emplastri mei phoenici ni confectura
 <lb/>adipem vetustum et oleum digerendi potestatem habere
 <lb/>dixi, chalcitidem vero et palmam cogendi repellendique,
@@ -830,9 +887,8 @@
 </div>
 <pb n="13.399"/>
 <div type="textpart" subtype="chapter" n="6">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastro, quod ex lithargyro et
+<p rend="indent">
+<lb/><label type="head"><num value="6">Cap. VI.</num> <hi rend="italic">De emplastro, quod ex lithargyro et
 <lb/>hydrelaeo conficitur</hi>.</label> Aqua peculiari substantia semper
 <lb/>humectat et refrigerat, ascititia autem calore assumpto,
 <lb/>donec ipsum conservat, calesacit, frigida facta refrigerat.
@@ -884,9 +940,8 @@
 <lb/>hydrelaeo praeparatur, etiam haec sufficiunt.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastro quod ex llthargyro et
+<p rend="indent">
+<lb/><label type="head"><num value="7">Cap. VII.</num> <hi rend="italic">De emplastro quod ex llthargyro et
 <lb/>oxelaeo componitur</hi>.</label> Digrediendum modo est ad eam, quae
 <lb/>oxelaeo constat. Itaque mediocriter exiccans medicamentum
 <lb/>sit, si utriusque, nempe olei et aceti, duplo major portio
@@ -934,9 +989,8 @@
 <lb/>musculos induratos subinde curavi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastro, quod ex lithargyro et
+<p rend="indent">
+<lb/><label type="head"><num value="8">Cap. VIII.</num> <hi rend="italic">De emplastro, quod ex lithargyro et
 <lb/>oenelaeo praeparatur</hi>.</label> Reliquum est, ut de argenti spuma
 <lb/>dicam, quae ex oenelaeo componitur et eandem praedictis
 <lb/>symmetriam ac virtutis excessus pro humorum copia respondentes
@@ -967,10 +1021,8 @@
 <lb/>ex cocta spuma argenti fiunt medicamenta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">De crudae lithargyri usa</hi>.</label> Non cocta
+<lb/><label type="head"><num value="9">Cap. IX.</num> <hi rend="italic">De crudae lithargyri usa</hi>.</label> Non cocta
 <lb/>quidem per se, ut annotavimus, attritus emendat. Ex aceto
 <lb/>autem Ihu vino trita liccataque ulceribus medetur, quae
 <pb n="13.406"/>
@@ -978,9 +1030,8 @@
 <lb/>expertem esse cupis, elota utitor.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quomodo lavare oporteat lithargyron et
+<p rend="indent">
+<lb/><label type="head"><num value="10">Cap. X.</num> <hi rend="italic">Quomodo lavare oporteat lithargyron et
 <lb/>reliqua metallica</hi>.</label> Facile autem eluitur, ut quae statim
 <lb/>propter innatam gravitatem liquoribus, in quibus laevigatur,
 <lb/>subsidat, unde totam mordacitatem in aqua lota
@@ -1026,9 +1077,8 @@
 <lb/>habere, usum praevalentem sequemur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De medicamentis, quae ex molybdaena
+<p rend="indent">
+<lb/><label type="head"><num value="11">Cap. XI.</num> <hi rend="italic">De medicamentis, quae ex molybdaena
 <lb/>consociantur</hi>.</label> Relatum a me est superius quoque molybdaenam
 <lb/>et argenti spumam in eundem sere usum adhiberi.
 <lb/>Omnia enim, quae ex argenti spuma componuntur, etiam ex
@@ -1052,9 +1102,8 @@
 <lb/></p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastris albis, quae ex lithargyro
+<p rend="indent">
+<lb/><label type="head"><num value="12">Cap. XII.</num> <hi rend="italic">De emplastris albis, quae ex lithargyro
 <lb/>et cerussa fiunt</hi>.</label> Vel coloris causa medici cerussam
 <lb/>argenti spumae ad emplastra alba conficienda miscent, vel ut
 <lb/>quandam astringendi ac refrigerandi vim medicamento
@@ -1119,7 +1168,8 @@
 <lb/>cementorum, quae emplastrum album utilissimum constituunt,
 <lb/>symmetriam exponere.</p>
  <div type="textpart" subtype="section" xml:id="_1.12.1">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Pondus emplastri</hi>.</label> Aequa sit portio utriusque me..
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Pondus emplastri</hi>.</label> Aequa sit portio utriusque me..
 <lb/>tallici, cerussae et argenti spumae, et haec, si videatur, esto
 <lb/>singulorum pondo libra, olei vero mensura amborum simul
 <lb/>pondus absolvat vel, ut Romani dicunt, sint pondo librae
@@ -1152,9 +1202,8 @@
 </div>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Album emplastrum ex pipere, ut Attalus
+<p rend="indent">
+<lb/><label type="head"><num value="13">Cap. XIII.</num> <hi rend="italic">Album emplastrum ex pipere, ut Attalus
 <lb/>Plerasque composuerunt</hi>.</label> luvat sonum ulcera et eorum,
 <lb/>qui mollem habent cuticulam, denique omne ulcus
 <lb/>curat, quod et humidius est et non facile cicatricem admittili
@@ -1252,9 +1301,8 @@
 <lb/>animantium aliud memorderit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Attalici secundum Andromachum albi
+<p rend="indent">
+<lb/><label type="head"><num value="14">Cap. XIV.</num> <hi rend="italic">Attalici secundum Andromachum albi
 <lb/>narratio et compositio, quod minus laedit a rabiosis
 <lb/>morsos et nervos vulneratos</hi>.</label> Alba quae oleo recenti et
 <lb/>aqua citra piperis atque thuris mixturam conficiuntur,
@@ -1399,9 +1447,8 @@
 <lb/>juxta praedictas distinctiones utamur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De aliis emplastris albis</hi>.</label> Alba igitur
+<p rend="indent">
+<lb/><label type="head"><num value="15">Cap. XV.</num> <hi rend="italic">De aliis emplastris albis</hi>.</label> Alba igitur
 <lb/>ante commemorata qua dixi ratione jam olim confecta sunt,
 <lb/>post quae alia diversa medici posteri excogitarunt, quaedam
 <lb/>adimentes, addentes et immutantes, de quibus et ipsis praestat
@@ -1445,7 +1492,8 @@
 <lb/>nobis prius ostensum est. Postea Andromachus
 <lb/>aliud subj ungit hujusmodi.</p>
  <div type="textpart" subtype="section" xml:id="_1.15.1">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Album aliud</hi>.</label> ♃ Argenti spumae Ʒ clx, cerussae Ʒ
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Album aliud</hi>.</label> ♃ Argenti spumae Ʒ clx, cerussae Ʒ
 <lb/>cc, cerae Ʒ l, terebinthinae Ʒ xxiv, olei heminae dimidium,
 <lb/>aquae cyathos vj. Hoc igitur emplastrum priori plus cerusfac
 <lb/>quam argenti spumae habens candidius evadet magisque
@@ -1459,7 +1507,8 @@
 <lb/>aqua addita. Neque in hoc vero ascripsit Andromachus vel
 <lb/>coctionem vel quid promittat.</p></div>
  <div type="textpart" subtype="section" xml:id="_1.15.2">
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Aliud album</hi>.</label> Aliud post hoc ponit tertium, quod
+ <p rend="indent">
+   <lb/><label type="head"><hi rend="italic">Aliud album</hi>.</label> Aliud post hoc ponit tertium, quod
 <lb/>eadem alia omnia cum Attalico ex pipere albo confecto conlinet.
 <lb/>Adjecta autem sunt ei haec duo, orchis herbae drachmae
 <lb/>octo, struthii unciae duae. Aquam vero nequaquam
@@ -1486,9 +1535,8 @@
 </div>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Aliud Herae advelsus rabiosos molsus</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="16">Cap. XVI.</num> <hi rend="italic">Aliud Herae advelsus rabiosos molsus</hi>.</label>
 <lb/>Rursus ad Heram revertamur, aliud candidum emplastrum
 <lb/>post Attalicum iisdem hisce verbis scribentem. <hi rend="italic">Candidum
 <lb/>adversas rabiosorum morsus. Facit exacte etiam ad
@@ -1688,9 +1736,8 @@
 <lb/>rationem nec vires nec quid promittant adjecerit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quae Asclepiades alba scripserit</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="17">Cap. XVII.</num> <hi rend="italic">Quae Asclepiades alba scripserit</hi>.</label>
 <lb/>Ad Asclepiadem igitur jam transgressus producam in medium,
 <lb/>quae ipse alba emplastra ad finem tertii libri Externorum
 <lb/>tradidit. Nam inscribit eorum primam Marcellam,
@@ -1824,9 +1871,8 @@
 <lb/>liquandum esse.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quomodo candida emplastra componenda
+<p rend="indent">
+<lb/><label type="head"><num value="18">Cap. XVIII.</num> <hi rend="italic">Quomodo candida emplastra componenda
 <lb/>sint adversas ulcera cacodthe, id est maligna et ea
 <lb/>quae cicatricem diestculter admittunt</hi>.</label> Quae dyfepulota,
 <lb/>id est <hi rend="italic">vix ad cicatricem venientia,</hi> quae itam cacoëthe, id
@@ -1942,16 +1988,15 @@
 <lb/>albissima lucidissimaque sint, aquae loco ipsa admiscebis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Damocrates de albo emplastro</hi>.</label> Quoniam
+<p rend="indent">
+<lb/><label type="head"><num value="19">Cap. XIX.</num> <hi rend="italic">Damocrates de albo emplastro</hi>.</label> Quoniam
 <lb/>medicamentorum facultates versibus exscriptae facilius
 <lb/>memoria tenentur et exactam ipsorum symmetriam perservant,
 <lb/>satius mihi visum est et horum meminisse. Quum itaque
 <lb/>Damocrates praeter alia alba emplastra etiam candidum
 <lb/>scripserit, quod commendat, apponam scripturam iisdem illius
 <lb/>versibus iambico trimetro expressis.</p>
- <lg>
+ <lg rend="italic">
 <l>At cum his habere emplastrum medicis convellit</l>
 <l>Album, efficax adversus avulsam cutem,</l>
 <l>Ambusta ad ulcera et per summa corporis</l>
@@ -1994,10 +2039,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE COMPOSITIONE MEDICAMENTORVM PER GENERA
 <lb/>LIBER II.</head>
-
-
 <p rend="indent">
- <lb/>Quum propositum opus hunc quoque
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Quum propositum opus hunc quoque
 <lb/>cum aliis scopum teneat, ut Ii quando libium, quo medicamentorum,
 <lb/>quibus utimur, compositiones scriptas habemus,
 <lb/>ipsi nos perditis similia possimus conficere, necessursum
@@ -2230,9 +2273,8 @@
 <lb/>hujus pondus cerae admiscent.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Confectura simplicis emplastri viridis Andromachi
+<p rend="indent">
+<lb/><label type="head"><num value="2">Cap. II.</num> <hi rend="italic">Confectura simplicis emplastri viridis Andromachi
 <lb/>et facultatis ipsius explicatio</hi>.</label> Ac sane viride
 <lb/>nonnulli, sic enim ipsi nominant, ex dupla resinae portione
 <lb/>consecerunt, duas quidem ejusdem libras, unam vero cerae
@@ -2720,9 +2762,8 @@
 <lb/>quandam vim obtinet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Communis sermo de emplastris colore
+<p rend="indent">
+<lb/><label type="head"><num value="3">Cap. III.</num> <hi rend="italic">Communis sermo de emplastris colore
 <lb/>similibus</hi>.</label> Quo sane medicamenta non fecundum colosis,
 <lb/>sed facultatis similitudinem una scribi conveniat manifestum
 <lb/>plane est. Ut ergo Andromachus, sic alii quoque nonnulli,
@@ -2732,9 +2773,8 @@
 <lb/>antea expositae nunc quoque mentionem faciemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quomodo viridia stant</hi>.</label> Aerugo non pauca
+<p rend="indent">
+<lb/><label type="head"><num value="4">Cap. IV.</num> <hi rend="italic">Quomodo viridia stant</hi>.</label> Aerugo non pauca
 <lb/>iis immittitur, ut et aliorum colorem vincat et omnia in
 <pb n="13.497"/>
 <lb/>suum permutet. Porro conjicere oportet eum, qui tale emplastrum
@@ -2782,9 +2822,8 @@
 <lb/>medicamentis vehementer detegentibus agemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De medicamentis vehementer abstergent^bus</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="5">Cap. V.</num> <hi rend="italic">De medicamentis vehementer abstergent^bus</hi>.</label>
 <lb/>Quod haec ex praedictorum genere sint, quae ob moderatam
 <lb/>detersionem cavis ulceribus, puris, apertis, sine
 <lb/>omni morsu admovebantur, antea diximus. Intensam vero
@@ -2863,9 +2902,8 @@
 <lb/>melina protinus subiungam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Melina emplastra</hi>.</label> Quemadmodum viridium
+<p rend="indent">
+<lb/><label type="head"><num value="6">Cap. VI.</num> <hi rend="italic">Melina emplastra</hi>.</label> Quemadmodum viridium
 <lb/>emplastrorum plurima propter aeruginem praepollentem
 <lb/>talia fiunt, praesertim quae sunt ex ipsis coloratiora, ita
 <lb/>quoque melina. Sed viridia aeruginem incoctam habent, melina
@@ -2904,9 +2942,8 @@
 <lb/>deinceps subjiciam.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Melina Andromachi</hi>.</label> <hi rend="italic">Melinum quo utor.</hi>
+<p rend="indent">
+<lb/><label type="head"><num value="7">Cap. VII.</num> <hi rend="italic">Melina Andromachi</hi>.</label> <hi rend="italic">Melinum quo utor.</hi>
 <lb/>♃ Spumae argenti drach. civ, olei aestate heminam j, hieme
 <lb/>heminam dimidiam, cerae drach. xlviij, colophoniae drach.
 <lb/>xlviij, guttae ammoniaci drach. xxiv, aeruginis rasae drach.
@@ -2954,7 +2991,8 @@
 <lb/>cum cucurbitula et ad lateris dolorem.</hi> ♃ Spumae
 <lb/>argenti lib.ij, olei veteris uncias viij simul coquito.</p>
  <div type="textpart" subtype="section" xml:id="_2.7.1">
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Aliud melinum Heraclidis interiores abscessus sine
+ <p rend="indent">
+<lb/><label type="head"><hi rend="italic">Aliud melinum Heraclidis interiores abscessus sine
 <lb/>dolore disoutiens</hi>.</label> ♃ Spumae argenti Ʒ c, cerussae drach. c,
 <lb/>cerae Ʒ lxxx, resinae aridae Ʒ lx, guttae ammoniaci Ʒ l,
 <lb/>galbani drach. xvj, olei veteris heminas duas. Ut autem
@@ -2983,9 +3021,8 @@
 </div>
 <pb n="13.509"/>
 <div type="textpart" subtype="chapter" n="8">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Menoeli melinum</hi>.</label> ♃ Spumae argenti
+<p rend="indent">
+<lb/><label type="head"><num value="8">Cap. VIII.</num> <hi rend="italic">Menoeli melinum</hi>.</label> ♃ Spumae argenti
 <lb/>lib. iv, olei lib. iij, terebinthinae pellucidae lib. ij, cerae
 <lb/>lib. j, aeruginis, thuris, galbani, singulorum Ʒ vj. Argenti
 <lb/>spuma ex oleo ad multam spissitudinem usque incoquitur,
@@ -3001,9 +3038,8 @@
 <lb/>reponuntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Melinum Serap sanis ad vulnera et ad resclvendum,
+<p rend="indent">
+<lb/><label type="head"><num value="9">Cap. IX.</num> <hi rend="italic">Melinum Serap sanis ad vulnera et ad resclvendum,
 <lb/>militare, prorsus utile</hi>.</label> ♃ Spumae argenti Ʒ c,
 <lb/>guttae ammoniaci Ʒxxviij, cerae Ʒ lvj, aeruginis cypriae
 <lb/>Ʒ ix, myrrhae Ʒ j, colophoniae Ʒ lvj, galbani Ʒ ix, olei heminae
@@ -3034,9 +3070,8 @@
 <lb/>fumus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Melina Herae emplastra</hi>.</label> <hi rend="italic">Ad strumas
+<p rend="indent">
+<lb/><label type="head"><num value="10">Cap. X.</num> <hi rend="italic">Melina Herae emplastra</hi>.</label> <hi rend="italic">Ad strumas
 <lb/>Herae.</hi> Quae ab Hera his verbis ita scripta sunt. <hi rend="italic">Melinum
 <lb/>ad veteres sinus et st in vacua pelforati sint. stem etiam
 <lb/>discutit strumas, quae in pueris nuper ortae sunt. Pacit
@@ -3121,9 +3156,8 @@
 <lb/>ulcera vel ad usque cicatricem probe perducit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Critonis melina medicamenta</hi>.</label> Quae Crito
+<p rend="indent">
+<lb/><label type="head"><num value="11">Cap. XI.</num> <hi rend="italic">Critonis melina medicamenta</hi>.</label> Quae Crito
 <lb/>melina scripsit, buxea nominat. <hi rend="italic">.Buxeum ad recentia vulnera,
 <lb/>idem cicatricem obducit et extrahit</hi>. ♃ Spumae argenti
 <lb/>lib. iv, cerae lib. iv, terebinthinae uncias octo, aeruginisƷocto,
@@ -3160,9 +3194,8 @@
 <lb/>differentia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De gilvis emplastris, quae et dichroma
+<p rend="indent">
+<lb/><label type="head"><num value="12">Cap. XII.</num> <hi rend="italic">De gilvis emplastris, quae et dichroma
 <lb/>id est bicolora dicuntur</hi>.</label> Quaedam ex eadem materia constant,
 <lb/>qua aeruginem habentia melina, sicut prius quoque
 <lb/>diximus, hoc <hi rend="italic">solo</hi> differentia, quod diutius coquantur, omnia
@@ -3250,9 +3283,8 @@
 </div>
 <pb n="13.522"/>
 <div type="textpart" subtype="chapter" n="13">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De ile quae cicatricem obducunt</hi>.</label> Emplastra
+<p rend="indent">
+<lb/><label type="head"><num value="13">Cap. XIII.</num> <hi rend="italic">De ile quae cicatricem obducunt</hi>.</label> Emplastra
 <lb/>cicatricem inducentia, sive synulotica sive epulotica
 <lb/>nominare velis, sicut etiam alia medicamenta epipasta, id est
 <lb/>quae insperguntur et quae stramentorum usu apponuntur,
@@ -3294,9 +3326,8 @@
 </div>
 <pb n="13.524"/>
 <div type="textpart" subtype="chapter" n="14">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De epuloticis emplastris Asclepiades sic
+<p rend="indent">
+<lb/><label type="head"><num value="14">Cap. XIV.</num> <hi rend="italic">De epuloticis emplastris Asclepiades sic
 <lb/>scribit</hi>.</label> Posteaquam ulcera particularia sine alia dispositione
 <lb/>ad cicatricem jam tendunt, utendum est iis compositionibus,
 <lb/>quae infra scribuntur <hi rend="italic">Emplastrum ex cadmia ad cicatricem
@@ -3402,9 +3433,8 @@
 <lb/>est, quemadmodum praediximus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">EpuloticaAndromachb</hi>.</label> ♃ Cadmiae lib. j,
+<p rend="indent">
+<lb/><label type="head"><num value="15">Cap. XV.</num> <hi rend="italic">EpuloticaAndromachb</hi>.</label> ♃ Cadmiae lib. j,
 <lb/>chalcitidis ustae lib. j, cerae lib. j, resinae aridae lib. tres,
 <lb/>myrtei lib. iij, vinum siccis immiscetur. <hi rend="italic">Aliud ex ladano.</hi>
 <lb/>♃ Argenti spumae Ʒ xl, ladani drach. xxxij, chalcanthi
@@ -3457,7 +3487,8 @@
 <lb/>cerae minam j, quidam minas xlv, marinae aquae heminas
 <lb/>iij.</p>
  <div type="textpart" subtype="section" xml:id="_2.15.1">
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Andromachi panacea i.</hi> universale remedium.</label> ♃
+ <p rend="indent">
+<lb/><label type="head"><hi rend="italic">Andromachi panacea i.</hi> universale remedium.</label> ♃
 <lb/>Argenti spumae Ʒ cl, cerae Ʒ xl, terebinthinae Ʒ iiij, marinae
 
 <pb n="13.532"/>
@@ -3468,7 +3499,8 @@
 <lb/>didicisti.</p>
  </div>
  <div type="textpart" subtype="section" xml:id="_2.15.2">
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Candidum Pelephants</hi>.</label> ♃ Argenti spumae drach.
+ <p rend="indent">
+<lb/><label type="head"><hi rend="italic">Candidum Pelephants</hi>.</label> ♃ Argenti spumae drach.
 <lb/>lxxx, cerussae Ʒ exx, myrrhae drach. iij, obolos ij, sagapeni
 <lb/>drach. v, thuris drach. vj, obolos iv, olei heminas ij ẞ,
 <lb/>omnia simul incoquito. <hi rend="italic">Aliud.</hi> ♃ Cerae candidae lib. j,
@@ -3493,7 +3525,8 @@
 <lb/>reddere statuimus. Porro compositio ejus his verbis
 <lb/>ab ipso Andromacho tradita est.</p></div>
  <div type="textpart" subtype="section" xml:id="_2.15.3">
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Aliud ex vino, Publii</hi>.</label> ♃ Cadmiae lib. j Ʒ ix, argenti
+ <p rend="indent">
+<lb/><label type="head"><hi rend="italic">Aliud ex vino, Publii</hi>.</label> ♃ Cadmiae lib. j Ʒ ix, argenti
 <lb/>spumae lib. ij, cerussae lib. ij, vini Graeci sextarios ij,
 <lb/>rosacei lib. v, cerae lib. iij, ova cruda numero xij, thuris
 <lb/>Ʒ tres. Haec incoquito. Candidorum emplastrorum coquendi
@@ -3516,9 +3549,8 @@
 <lb/></p>
 </div></div>
 <div type="textpart" subtype="chapter" n="16">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastris ad se acturas et caput
+<p rend="indent">
+<lb/><label type="head"><num value="16">Cap. XVI.</num> <hi rend="italic">De emplastris ad se acturas et caput
 <lb/>idoneis</hi>.</label> Qui plurima ac optima medicamenta prodiderunt,
 <lb/>antea omnes nominatim citavimus, genus quoddam emplaficorum
 <lb/>cephalicum et catagmaticum vocant a calvariae
@@ -3537,9 +3569,8 @@
 <lb/>Asclepiades tradidit, jam auspicabimur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastris ad fracturas idoneis ab
+<p rend="indent">
+<lb/><label type="head"><num value="17">Cap. XVII.</num> <hi rend="italic">De emplastris ad fracturas idoneis ab
 <lb/>Asclepiade traditis</hi>.</label> Primum in tertio exteriorum medicamentorum
 <lb/>his verbis praescripsit. <hi rend="italic">Nigrum areston, id est
 <lb/>optimum catagmaticum.</hi> Hoc medicamento usus sum in sracturis
@@ -3662,9 +3693,8 @@
 <lb/>catagmatico Moschionis fecimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastris, quae proprie cephalica
+<p rend="indent">
+<lb/><label type="head"><num value="18">Cap. XVIII.</num> <hi rend="italic">De emplastris, quae proprie cephalica
 <lb/>nominantur</hi>.</label> Capitis fracturarum, quae ad crassae membranae
 <lb/>duplicaturum usque pervenere, emplastra cephalica dici
 <pb n="13.542"/>
@@ -3701,9 +3731,8 @@
 <lb/>alio quodam hujusmodi.</p>
 </div>
 <div type="textpart" subtype="chapter" n="19">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De quibus Heras catagmaticis et cephalicis
+<p rend="indent">
+<lb/><label type="head"><num value="19">Cap. XIX.</num> <hi rend="italic">De quibus Heras catagmaticis et cephalicis
 <lb/>scripserit</hi>.</label> Primum id genus emplastrorum illu
 <lb/>vocatum Heras scripsit, medicamentum ad satis multa idoneum,
 <lb/>deinde quod ex herbis appellant, quod et ipsum
@@ -3826,9 +3855,8 @@
 <lb/>dicitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="20">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Catagmaticum Andromachi</hi>.</label> Primum catagmaticum
+<p rend="indent">
+<lb/><label type="head"><num value="20">Cap. XX.</num> <hi rend="italic">Catagmaticum Andromachi</hi>.</label> Primum catagmaticum
 <lb/>Andromachus ita scripsit. <hi rend="italic">Catagmaticum, quo
 <lb/>continue utor.</hi> ♃ Argenti spumae minam j, picis minam j
 <pb n="13.550"/>
@@ -3866,9 +3894,8 @@
 <lb/>aceti heminas sex, olei heminas sex.</p>
 </div>
 <div type="textpart" subtype="chapter" n="21">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastris glutinantibus</hi>.</label> Quidam
+<p rend="indent">
+<lb/><label type="head"><num value="21">Cap. XXI.</num> <hi rend="italic">De emplastris glutinantibus</hi>.</label> Quidam
 <lb/>haec sanguinaria et vulneratio, idest cruentis et vulneribus
 <lb/>adhibenda, nuncupant. Opus eorum est conjungere divisas
 <lb/>partas et conglutinare, ut in pristinam unitatem particula
@@ -3945,9 +3972,8 @@
 <lb/>medicamentum non inepte adjicimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="22">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De bitumine bat bara</hi>.</label> Prima hic quoque
+<p rend="indent">
+<lb/><label type="head"><num value="22">Cap. XXII.</num> <hi rend="italic">De bitumine bat bara</hi>.</label> Prima hic quoque
 <lb/>ab Andromacho scripta apponam ipsis illius verbis.
 <lb/><hi rend="italic">Rarbarum, quo utor.</hi> ♃ Cerae Ʒ ec, picis Ʒ ce, resinae Ʒ ec,
 <lb/>bituminis Ʒ cc, thuris Ʒ xxiv, olei heminam unam. <hi rend="italic">Aliud.</hi>
@@ -3985,7 +4011,8 @@
 <lb/>sex, aristolochiae rotundae drach. quatuor, olei veteris heminas
 <lb/>quatuor, nos olei heminas tres.</p></div>
  <div type="textpart" subtype="section" xml:id="_2.22.2">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Barbara Herae</hi>.</label> Quod Heras conscripsit barbarum
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Barbara Herae</hi>.</label> Quod Heras conscripsit barbarum
 <lb/>sic habet. <hi rend="italic">Nigrum emplastrum ad cruenta vulnera ad divistones
 <lb/>notatu dignas, maxime capitis ad fistulas, sinus,
 <lb/>fracturas. Convenit etiam .hepaticis et lienosis, citra instammationem
@@ -4050,7 +4077,8 @@
 <lb/>duo, unum ad maxima vulnera, alterum ad minora. Quod
 <lb/>itaque ad maxima adhibetur haec recipit.</p></div>
  <div type="textpart" subtype="section" xml:id="_2.22.3">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Barbarum Caleni</hi>.</label> ♃ Picis lib. viij, cerae lib. vj
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Barbarum Caleni</hi>.</label> ♃ Picis lib. viij, cerae lib. vj
 <lb/>et Ʒ viij, pityinae lib. quinque et Ʒ iv, bituminis lib. quatuor,
 <lb/>olei libram unam et uncias vj, argenti spumae, cerussiae,
 
@@ -4077,10 +4105,8 @@
 
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE COMPOSITIONE MEDICAMENTORVM PER GENERA LIBER III.</head>
-
-
 <p rend="indent">
- <lb/>Et haec, amici, commentaria vobis paro,
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Et haec, amici, commentaria vobis paro,
 <lb/>qui jam ex ipsis medicinae operibus comperistis, quam esa
 <lb/>ficax sit nostra nervorum Vulneratorum curatio, nempe ex
 <lb/>qua omnes servati sunt, non autem manci nec claudi redditi,
@@ -4111,9 +4137,8 @@
 <lb/>simplicium virtutis cognitione invenerimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quis communis vulneratorum nervorum</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="2">Cap. II.</num> <hi rend="italic">Quis communis vulneratorum nervorum</hi>.</label>
 <lb/>curationis modus et quae medicamenta specialia. Spectavimus
 <lb/>omnes praeceptores praesidio, quod jam recentiores
 <lb/>medici sanguinarium seu cruentis opitulans, enaemon
@@ -4973,9 +4998,8 @@
 </div>
 <pb n="13.610"/>
 <div type="textpart" subtype="chapter" n="3">
-
-
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Confectiones medicamentorum ex metallicis
+<p rend="indent">
+<lb/><label type="head"><num value="3">Cap. III.</num> <hi rend="italic">Confectiones medicamentorum ex metallicis
 <lb/>ad nervorum vulnera</hi>.</label> Ex metallicis medicamentis
 <lb/>astringentia vitare consultum est, praesertim ubi compositi
 <lb/>medicamenti usus in punctura eveniat, quae vero detergenda
@@ -5163,9 +5187,8 @@
 <lb/>ceratum, quod utile nobis futurum est, ex sevis nominetur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">He medicamento quod ex euphorbio componitur</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="4">Cap. IV.</num> <hi rend="italic">He medicamento quod ex euphorbio componitur</hi>.</label>
 <lb/>Dictum mihi est et antea vetus euphorbium recentiori
 <lb/>multo inferius. Si igitur anniculum sit, etiam Cyrenaeo
 <lb/>magis liquore calefacit, praesertim eo, quem nunc
@@ -5322,9 +5345,8 @@
 <lb/>quantum in ipsa coctione consumendum erat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Medicamentum ex liquabilibus confectum</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="5">Cap. V.</num> <hi rend="italic">Medicamentum ex liquabilibus confectum</hi>.</label>
 <lb/>Liquabilia voco medicamenta tum quae ignis commercio
 <lb/>colliquantur, tum quae ex humidis quibusdam, velut aqua,
 <lb/>aceto et vino. Ex aceto itaque citra ignem liquescit gutta
@@ -5413,9 +5435,8 @@
 <lb/>visa est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De medicamento ex columbarum stercore
+<p rend="indent">
+<lb/><label type="head"><num value="6">Cap. VI.</num> <hi rend="italic">De medicamento ex columbarum stercore
 <lb/>consecto</hi>.</label> Columbarum in rusticorum turribus agentium
 <lb/>stercus acre est, quo interdum ruri usus sum in adolescente
 <lb/>nervi vulnere affecto. Atque hoc agricola quum vidisset,
@@ -5433,9 +5454,8 @@
 <lb/>acceperit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
- <p rend="indent"><lb/><label type="head"><hi rend="italic">De medicamento ex herbis composito</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="7">Cap. VII.</num> <hi rend="italic">De medicamento ex herbis composito</hi>.</label>
 <lb/>Insuper ex herbis tenuium partium ad nervos vulneratos
 <lb/>medicamentum composui, initio quidem ex dictamno, amaraco
 <lb/>et aristolochia tantum, postea vero et ex aliis, mei
@@ -5467,9 +5487,8 @@
 <lb/>immittamus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De sumptuosis medicamentorum confecturis
+<p rend="indent">
+<lb/><label type="head"><num value="8">Cap. VIII.</num> <hi rend="italic">De sumptuosis medicamentorum confecturis
 <lb/>ad nervos vulneratos</hi>.</label> Non ab re fuerit etiam ejusmodi
 <lb/>medicamenta cognoscere, usus enim ipsorum quandoque
 <pb n="13.636"/>
@@ -5563,9 +5582,8 @@
 <lb/>magis autem ipso nardi spica et malabathri folium.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De medicamentis ab aliis medicis advetsus
+<p rend="indent">
+<lb/><label type="head"><num value="9">Cap. IX.</num> <hi rend="italic">De medicamentis ab aliis medicis advetsus
 <lb/>nervorum vulnera proditis</hi>.</label> Universam nervorum vulnera
 <lb/>curandi rationem, quam ego deorum quadam providentia
 <lb/>composui, nullus ante me conscripsit, medicamenta
@@ -5773,10 +5791,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE COMPOSITIONE MEDICAMENTORVM PER GENERA
 <lb/>LIBER IV.</head>
-
-
 <p rend="indent">
- <lb/>Primus sane liber in alborum emplastroconfecturis
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Primus sane liber in alborum emplastroconfecturis
 <lb/>tum aliis tum eorum, quae ulceribus cicatricem
 <lb/>aegre ducentibus conveniunt, finitus est, ubi distinximus
 <lb/>communiter appellata dysepulota, <hi rend="italic">cicatricem difficulter admittentia,</hi>
@@ -6019,9 +6035,8 @@
 <lb/>canchri, multaque ejus generis alia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quomodo medicamentis siccis modo commemoratis
+<p rend="indent">
+<lb/><label type="head"><num value="2">Cap. II.</num> <hi rend="italic">Quomodo medicamentis siccis modo commemoratis
 <lb/>in ulceribus ad cicatricem aegre venientibus
 <lb/>et malignis utendum sit</hi>.</label> Hujusmodi ulcera vitioso plena
 <lb/>humore necessario existunt, pleraque vero ipsorum etiam
@@ -6144,9 +6159,8 @@
 <lb/>corporis parti orbiculatim circumdatur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Compositio medicamentorum emplastris
+<p rend="indent">
+<lb/><label type="head"><num value="3">Cap. III.</num> <hi rend="italic">Compositio medicamentorum emplastris
 <lb/>similium</hi>.</label> Quoniam malignorum et difficulter cicatricem recipientium
 <lb/>ulcerum curationis summus est scopus ut medicamentum
 <lb/>citra morsum exiccet, aqua vero et oleum
@@ -6217,9 +6231,8 @@
 <lb/>exteriorum in hunc modum tradidit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quae medicamenta scripserit Asclepiades</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="4">Cap. IV.</num> <hi rend="italic">Quae medicamenta scripserit Asclepiades</hi>.</label>
  <lb/><hi rend="italic">Ad chironia et curatu difficilia ulcera medicamentum
 <lb/>accommodatum</hi>. ♃ Aeris squamae unciam j, aeruginis rasae
 <lb/>℥ j, cerae selibram, resinae laricis ℥ j ẞ. Ea quae liquari
@@ -6336,9 +6349,8 @@
 <lb/>medicamenta digrediar.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De scriptis ab Andromacho emplastris ad
+<p rend="indent">
+<lb/><label type="head"><num value="5">Cap. V.</num> <hi rend="italic">De scriptis ab Andromacho emplastris ad
 <lb/>ulcera maligna</hi>.</label> Apponam igitur causa exempli quae ex
 <lb/>compositis medicamentis ad cacoëthe ulcera convenire nsn
 <lb/>probata sunt, ab iis exorsus quae scripsit Andromachus,
@@ -6844,9 +6856,8 @@
 <lb/>quinque universa in quarto Critonis libro conscripta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De medicamentis a Critone scriptis. Medicamentum
+<p rend="indent">
+<lb/><label type="head"><num value="6">Cap. VI.</num> <hi rend="italic">De medicamentis a Critone scriptis. Medicamentum
  <lb/>ex ladano</hi>.</label> <hi rend="italic">Optimum medicamentum epulaticum
 <lb/>ex .ladano. Convenit praetumidis cum duritia
 <lb/>ulceribus et cavis, deligatum vero membrum in diem
@@ -7008,9 +7019,8 @@
 </div>
 <pb n="13.717"/>
 <div type="textpart" subtype="chapter" n="7">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De medicamentis ab Heraclide scriptis</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="7">Cap. VII.</num> <hi rend="italic">De medicamentis ab Heraclide scriptis</hi>.</label>
 <lb/>Opportunum jam est etiam medicamentorum ab Heraclide
 <lb/>Tarantino in tertio libro ad Astydamantem scriptorum meminisse.
 <lb/>Vir namque fide dignus est, si quisquam alius, qui
@@ -7221,8 +7231,8 @@
 <lb/>exorsus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Sicca Andromachi, aridum cicatricem
+<p rend="indent">
+<lb/><label type="head"><num value="8">Cap. VIII.</num> <hi rend="italic">Sicca Andromachi, aridum cicatricem
 <lb/>ducens</hi>.</label> ♃. Ossium alias ostreorum ustorum Ʒ ij, mannae
 <lb/>Ʒ j, cadmiae obolos. iv, alias drach. iv, tritis utitor etiam
 <lb/>ad nomas. <hi rend="italic">Aliud aridum epuloticum</hi>. ♃ Picei corticis Ʒ vj,
@@ -7254,7 +7264,8 @@
 <lb/>est fandaracha et arsenicum, quibus unum ex iis, quae
 <lb/>mirifice maligna juvant, adjectum est, nempe chrysocolla.</p></div>
   <div type="textpart" subtype="chapter" n="9">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quae ab Archigene scripta sunt</hi>.</label> Quae
+<p rend="indent">
+<lb/><label type="head"><num value="9">Cap. IX.</num> <hi rend="italic">Quae ab Archigene scripta sunt</hi>.</label> Quae
 <pb n="13.730"/>
 <lb/>Archigenes de id genus ulceribus in fecundo medicamentorum
 <lb/>libro scripsit, sic ex illius dictione ad verbum sonant.
@@ -7293,9 +7304,8 @@
 <lb/>rediges et uteris.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De putridis et nomis</hi>.</label> Putridis et nonus
+<p rend="indent">
+<lb/><label type="head"><num value="10">Cap. X.</num> <hi rend="italic">De putridis et nomis</hi>.</label> Putridis et nonus
 <lb/>ervi farinam, alumen liquidum, panis similaginei internam
 <lb/>micam, porci veteris vel alterius carnem falsam vetustam
 <lb/>illusam, terebinthinam liquidam, mel optimum, pari men^
@@ -7332,9 +7342,8 @@
 <lb/>inungito.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De ulceribus cancrosis</hi>.</label> Cancrosis et masignis
+<p rend="indent">
+<lb/><label type="head"><num value="11">Cap. XI.</num> <hi rend="italic">De ulceribus cancrosis</hi>.</label> Cancrosis et masignis
 <lb/>ulceribus cancri fluviatilis combusti, cadmiae pares
 <lb/>portiones tritas inspergito, aut cinerem cancrorum cum cerato
 <lb/>imponito. Aut erysimi femen saevissimum ex melle faecolentum
@@ -7351,9 +7360,8 @@
 <lb/>aut oleae virentis furculos aut utrunque inspergito.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">He ulceribus callosis</hi>.</label> ln iis quae callum
+<p rend="indent">
+<lb/><label type="head"><num value="12">Cap. XII.</num> <hi rend="italic">He ulceribus callosis</hi>.</label> ln iis quae callum
 <lb/>contraxerunt et praetumidus oras ac duras habent, dulciaque
 <lb/>vocantur ulcera, communiter quidem per experientiam
 <lb/>bene facient urentia, proprie vero litrum torresactum. CasGem
@@ -7361,9 +7369,8 @@
 <lb/>thus, salem, mel inungito.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastris, quae Asclepiades ad hujusmodi
+<p rend="indent">
+<lb/><label type="head"><num value="13">Cap. XIII.</num> <hi rend="italic">De emplastris, quae Asclepiades ad hujusmodi
 <lb/>ulcera conscripsit</hi>.</label> Praestantissima de id genus ulceribus
 <lb/>Asclepiades tradidit cognomento Pbarmacion. Quum
 <lb/>enim unum sit omnibus ipsis commune, nempe ut difficulter
@@ -7445,7 +7452,8 @@
 <lb/>j, cerae drach. xl, ricini lib. j, alii cyathi dimidium, sicca
 <lb/>ex aqua laevigantur. Atque de his hactenus.</p>
   <div type="textpart" subtype="section" xml:id="_4.13.1">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De fecundo vix sanabilium ulcerum genere, de
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">De fecundo vix sanabilium ulcerum genere, de
  <lb/>quibus Asclepiades hoc modo scripsit ad verbum</hi>.</label> <hi rend="italic">Ad
 <lb/>sitientia ulcera et curatu diestcilia confecturis infra
 <lb/>scriptis utemur. Medicamentum ex chamaeleonte, quo
@@ -7538,7 +7546,8 @@
 <lb/>coeant. Quum bene habuerit medicamentum, pyxide
 <lb/>lignea irino prius illita reponito.</p></div>
   <div type="textpart" subtype="section" xml:id="_4.13.2">
- <p rend="indent"><lb/><label type="head"><hi rend="italic">De tertio genere ulcerum, quae vix ad sanitatem
+ <p rend="indent">
+<lb/><label type="head"><hi rend="italic">De tertio genere ulcerum, quae vix ad sanitatem
 <lb/>perveniunt, Asclepiades haec ad verbum scripsit</hi>.</label> <hi rend="italic">Ad ule
 <lb/>cera, quae nequaquam coeunt, aut si coeant, ruejus salvuntur
 <lb/>vel carne corrupta vel etiam ossibus subsectis labefaciatis,
@@ -7618,9 +7627,8 @@
 <lb/>diluto medicamento.</p>
 </div></div>
 <div type="textpart" subtype="chapter" n="14">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De scriptis ab Hera utilibus emplastris
+<p rend="indent">
+<lb/><label type="head"><num value="14">Cap. XIV.</num> <hi rend="italic">De scriptis ab Hera utilibus emplastris
 <lb/>ad vix sanabilia ulcera</hi>.</label> Alia sane quaedam emplastra usus
 <lb/>multiplicis tradidit, quae ulceribus quoque aegre cicatricem
 <lb/>ducentibus et malignis esse accommodata affirmat. Unius
@@ -7908,10 +7916,8 @@
 <head>GALENI DE COMPOSITIONE MEDICAMENTORVM
 <lb/>PER GENERA
 <lb/>LIBER V.</head>
-
-
 <p rend="indent">
- <lb/>De medicamentis polychrestis futura hic
+<lb/><label type="head"><num value="1">Cap. I.</num></label> De medicamentis polychrestis futura hic
 <lb/>est disputatio, vocant autem polycbresta quae multis affectibus
 <lb/>conveniunt. Suntque nonnulla ipsorum non modo
 <lb/>specie, sed etiam genere diversa, omnia vero ex contrariis
@@ -7949,9 +7955,8 @@
 <lb/>ea rursus feriatim referre proposuimus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quae scripserit Heras</hi>.</label> Itaque quum opere
+<p rend="indent">
+<lb/><label type="head"><num value="2">Cap. II.</num> <hi rend="italic">Quae scripserit Heras</hi>.</label> Itaque quum opere
 <lb/>medicamentorum Heras Cappadox emplastrum quoddam ad
 <lb/>hujuscemodi ulcera mnisice faciens tradiderit, inde sumam
 <lb/>exordium, verba ipsius adscribens, quae in hunc modum
@@ -8239,7 +8244,8 @@
 <lb/>aliis apponentes chrysocollae drachmas sex, ut maligna
 <lb/>ulcera selicius sanaret.</p></div>
   <div type="textpart" subtype="section" xml:id="_5.2.3">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Hicestum nigrum</hi>.</label> Medicamentum titulo hicesium, usus
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Hicestum nigrum</hi>.</label> Medicamentum titulo hicesium, usus
 <lb/>multiplicis, quidam gignendi casu scripserunt, Hicesii. Heras
 <lb/>itaque de ipso haec tradit. <hi rend="italic">Dicessum ad vulnera et canum</hi>
 <pb n="13.781"/>
@@ -8258,7 +8264,8 @@
 <lb/>ligno confecta. Hujus emplastri mixturae pondus non idem
 <lb/>omnes, ut in sequentibus ostendetur, tradiderunt.</p></div>
   <div type="textpart" subtype="section" xml:id="_5.2.4">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Nigrum ex duabus aristolochiis</hi>.</label> Celebre quoque
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Nigrum ex duabus aristolochiis</hi>.</label> Celebre quoque
 <lb/>emplastrum usus multiplicis est id, quod ex duabus aristelochiis
 <lb/>consicitur, quod ipse Heras quoque his verbis descripsit.
 
@@ -8316,7 +8323,8 @@
 <lb/>et refrigerat, cerussa vero aliis quibusdam utilis ad
 <lb/>propositi emplastri Vires nihil praesidii affert.</p></div>
   <div type="textpart" subtype="section" xml:id="_5.2.5">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Emplastrum Amanitae</hi>.</label> Emplastrum Amanitae varii
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Emplastrum Amanitae</hi>.</label> Emplastrum Amanitae varii
 <lb/>usus est et nobile, de ipso autem Heras ita scribit. <hi rend="italic">Empia-</hi>
 <pb n="13.785"/>
 <lb/><hi rend="italic">strum Amanitae</hi>. ♃ Picis aridae ℥ j, cerae Ʒ iij, adipis
@@ -8336,7 +8344,8 @@
 <lb/>Maxime valet in quibus nervi vel musculi percussi sunt,
 <lb/>item ad maligna.</p></div>
   <div type="textpart" subtype="section" xml:id="_5.2.6">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Emplastrum Hallei, seu piscatoris, ex sinopide</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Emplastrum Hallei, seu piscatoris, ex sinopide</hi>.</label>
 <lb/>Haliei celebre et multiplicis usus emplastrum nihil minus
 <pb n="13.786"/>
 <lb/>quam priora, Heras ita tradidit. <hi rend="italic">Hallei ad vetera et quae
@@ -8357,7 +8366,8 @@
 <div type="textpart" subtype="chapter" n="3a">
 
 
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De medicamentis a Critone scriptis</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">De medicamentis a Critone scriptis</hi>.</label>
 <lb/>Heras quidem libram unam de medicamentorum compositione
 <lb/>fecit, cui titulus est narthex, id est <hi rend="italic">medicamentorum
 <lb/>promptuarium</hi>. Quinque vero tales Critonis praeter illos de
@@ -8373,7 +8383,8 @@
 <lb/>Incipiam igitur a primo Icesii, in cujus simplicium
 <lb/>medicamentorum pondere inter omnes non convenit.</p>
   <div type="textpart" subtype="section" xml:id="_5.3a.1">
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Emplastrum Hicesu</hi>.</label> De Hicesii medicamento haec ad
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Emplastrum Hicesu</hi>.</label> De Hicesii medicamento haec ad
 <lb/>verbum scripsit Crito. <hi rend="italic">Hicesii ad omne vulnus recens, vetus,
 <lb/>contusa, luxata, fracturas, phlegmonas et omnem dolorem,
 <lb/>quem protinus fedat. Facit ad abscessus, phymata,
@@ -8552,7 +8563,8 @@
 <lb/>undique circumfusum, reponitur et diebus circiter
 <lb/>quindecim emollitur.</p></div>
   <div type="textpart" subtype="section" xml:id="_5.3a.3">
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Medicamentum Mdchaerionis</hi>.</label> Celebre simul et
+ <p rend="indent">
+<lb/><label type="head"><hi rend="italic">Medicamentum Mdchaerionis</hi>.</label> Celebre simul et
 <lb/>multi usus est. Convenit affectibus ulcerum, do quibus totus
 
 <pb n="13.797"/>
@@ -8574,7 +8586,8 @@
 <lb/>teritur, reliquum cum cera et terebinthina coquitur.
 <lb/></p></div>
   <div type="textpart" subtype="section" xml:id="_5.3a.4">
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Dysrachitis Damocratis ad verbum</hi>.</label> Et hoc ex celebrium
+ <p rend="indent">
+<lb/><label type="head"><hi rend="italic">Dysrachitis Damocratis ad verbum</hi>.</label> Et hoc ex celebrium
 
 <pb n="13.798"/>
 <lb/>lateque usu patentium medicamentorum numero
@@ -8624,7 +8637,8 @@
 <div type="textpart" subtype="chapter" n="3b">
 
 
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Emplastrum ex salicibus</hi>.</label> Quod ex falicibus
+<p rend="indent">
+<lb/><label type="head"><hi rend="italic">Emplastrum ex salicibus</hi>.</label> Quod ex falicibus
 <lb/>constat, praeclarum et in multos usus idoneum similiter
 <lb/>praedictis; Crito hisce verbis recensuit. <hi rend="italic">Emplastrum ex
 <lb/>salicibus. Prodest cruentis ulceribus impositum, articulis
@@ -8650,9 +8664,8 @@
 <lb/>olei libram unam, aceti sextarii dimidium.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastris ejusdem generis ab Asclepiade
+<p rend="indent">
+<lb/><label type="head"><num value="4">Cap. IV.</num> <hi rend="italic">De emplastris ejusdem generis ab Asclepiade
 <lb/>scriptis</hi>.</label> His annumerantur ex suprascriptis tum
 <lb/>quod ad Halieum refertur ab omnibus cognitum tum quod
 <lb/>ex dictamno constat, sed quia Asclepiades manifesto de ipsis
@@ -8705,7 +8718,8 @@
 <lb/>refrigerato inspergatur et continue moveatur, deinde in
 <lb/>mortarium immittito ac subigito, excipiensque utitor.</p>
  <div type="textpart" subtype="section" xml:id="_5.4.1">
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Ex dictamno sacrum, facultate mirandum</hi>.</label> <hi rend="italic">Penefacit
+ <p rend="indent">
+<lb/><label type="head"><hi rend="italic">Ex dictamno sacrum, facultate mirandum</hi>.</label> <hi rend="italic">Penefacit
 <lb/>nervis musculisque praecisos et contusis, vetustis et
 <lb/>sanata difficilibus. Ossa corrupta elicit. Aculeos et telorum
 <lb/>cuspides, quae infixae sunt corpori, eximit nec minus
@@ -8739,7 +8753,7 @@
 </div>
   <div type="textpart" subtype="chapter" n="5">
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Descriptis ab Andromacho eiusdem generis
+<lb/><label type="head"><num value="5">Cap. V.</num> <hi rend="italic">Descriptis ab Andromacho eiusdem generis
 <lb/>emplastris</hi>.</label> Emplastra varii usus, simul et cicatrisoll
 <lb/>aegre ducentibus idonea, hoc in libro percensere statui,
 <pb n="13.806"/>
@@ -8861,9 +8875,8 @@
 </div>
   </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
- <p rend="indent"><lb/><label type="head"><hi rend="italic">At Parentinae Heraclides Hicesti nigrum
+<p rend="indent">
+<lb/><label type="head"><num value="6">Cap. VI.</num> <hi rend="italic">At Parentinae Heraclides Hicesti nigrum
 <pb n="13.812"/>
 <lb/>emplastrum tradiderit</hi>.</label> <hi rend="italic">Ad omne vulnus, maxime quae in
 <lb/>extremis partibus sunt, dolore vindicat et conglutinat.
@@ -8918,9 +8931,8 @@
 <lb/>cerae Ʒ v, injicito, galbani Ʒ v, myrrhae Ʒ v.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">CyEicenum Herae</hi>.</label> Hoc quoque inter
+<p rend="indent">
+<lb/><label type="head"><num value="7">Cap. VII.</num> <hi rend="italic">CyEicenum Herae</hi>.</label> Hoc quoque inter
 <lb/>celebria emplastra refertur, ab omnibus probe conscriptum,
 <lb/>magno in simplicium medicamentorum symmetria consensuNonnulli
 <lb/>tamen discordant, ut innotescet, quum subjungemus,
@@ -8989,9 +9001,8 @@
 <lb/>nec austerum, valentius digerit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Cfoicenum ut Asclepiades</hi>.</label> Scriptum est
+<p rend="indent">
+<lb/><label type="head"><num value="8">Cap. VIII.</num> <hi rend="italic">Cfoicenum ut Asclepiades</hi>.</label> Scriptum est
 <lb/>hoc emplastrum jam et in quarto, ubi omnia ordine, quae
 <lb/>ad malignitatem medicamenta habere consuluit^ commentoravimus.
 <lb/>Et vero nunc, quia ipse pariter ab Hera et Andromacho
@@ -9031,9 +9042,8 @@
 </div>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Emplastrum ex duabus aristolochiae, ut
+<p rend="indent">
+<lb/><label type="head"><num value="9">Cap. IX.</num> <hi rend="italic">Emplastrum ex duabus aristolochiae, ut
 <lb/>Andromachus</hi>.</label> De hoc in eam sententiam scribit Andron
 <lb/>machus ad verbum. <hi rend="italic">Emplastrum ex duabus arestolochiis.</hi>
 <lb/>♃ Resinae frictae ℔ j, cerae ℔ j, picis ℔ j, ciceos vel olei
@@ -9044,16 +9054,15 @@
 <lb/>Sicca ex aceto teruntur, deinde liquabilia.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Emplastrum ex dictamno ut Damocrates</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="10">Cap. X.</num> <hi rend="italic">Emplastrum ex dictamno ut Damocrates</hi>.</label>
 <lb/>Diximus frequenter metricas scriptiones non solum ad memoriam,
 <lb/>sed etiam ad mixturas exacte com mensurandas
 <lb/>prosa oratione conscriptis esse commodiores. Cujus gratia
 <pb n="13.821"/>
 <lb/>etiam nunc medicamentum ex dictamno perfectam in Damocratis
 <lb/>scriptis symmetriam perfer vana apposui.</p>
- <lg>
+ <lg rend="italic">
 <l>Emplastrorum unum insignium numero ascribitur.</l>
 <l>Eolumque, quod recipit dictamnum Creticum</l>
 <l>Dictum. Medetur prospere serpentium</l>
@@ -9113,9 +9122,8 @@
 <pb n="13.824"/>
 
 <div type="textpart" subtype="chapter" n="11">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De pastillis Asclepiadis</hi>.</label> Quemadmodum
+<p rend="indent">
+<lb/><label type="head"><num value="11">Cap. XI.</num> <hi rend="italic">De pastillis Asclepiadis</hi>.</label> Quemadmodum
 <lb/>emplastra a colore, non a facultatis professione, nominant
 <lb/>quidam medici, melina, candida, fusca et gilva, ita pastillos,
 <lb/>Graece trochiscos ab efformationis figura vocant, non
@@ -9277,9 +9285,8 @@
 </div>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Pastilli ab Andromacho conscripti libro
+<p rend="indent">
+<lb/><label type="head"><num value="12">Cap. XII.</num> <hi rend="italic">Pastilli ab Andromacho conscripti libro
  <lb/>de exterioribus.</hi></label> <hi rend="italic">Pastillus Darisa qui per anum immittitur</hi>.
 <lb/>♃ Stibii drach. sedecim, acaciae drach. xvj, alii octo,
 <lb/>aeruginis drach. xl, succi papaveris drach. tres, quidam
@@ -9385,9 +9392,8 @@
 <lb/>vino austero trita inunguntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Arida variae speciei, seu generi a
+<p rend="indent">
+<lb/><label type="head"><num value="13">Cap. XIII.</num> <hi rend="italic">Arida variae speciei, seu generi a
 <lb/>praenominatis auctoribus indicata, quibus singula conve
 <lb/>niant. Quae scripsit Andromachus in calce operis de exterioribus</hi>.</label>
  <lb/><hi rend="italic">Aridum exedens sine morsu</hi>. ♃ Sandarachae
@@ -9514,12 +9520,11 @@
 <lb/>laevinus factis utitor.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quae Asclepiades in librorum quinto
-<lb/>de exterioribus, quos Marcellas inscribit, arida conseri-</hi>
+<p rend="indent">
+<lb/><label type="head"><num value="14">Cap. XIV.</num> <hi rend="italic">Quae Asclepiades in librorum quinto
+<lb/>de exterioribus, quos Marcellas inscribit, arida conscripserit</hi>.</label>
 <pb n="13.844"/>
-<lb/><hi rend="italic">pserit</hi>.</label> Andromachus arida, quae affectui conveniunt, iis
+<lb/>Andromachus arida, quae affectui conveniunt, iis
 <lb/>quae affectis prosunt, admiscuit, verum Asclepiades in quinto
 <lb/>feorsum quae ad affectum conducunt, seorsum item quae
 <lb/>parti asseclae utilia sunt, exposuit; nam parte omissa, tradidit
@@ -9742,9 +9747,8 @@
 </div>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Ad carbunculos</hi>.</label> Carbunculus ulcus est
+<p rend="indent">
+<lb/><label type="head"><num value="15">Cap. XV.</num> <hi rend="italic">Ad carbunculos</hi>.</label> Carbunculus ulcus est
 <lb/>crustam cito cum inflammatione totius partis circumdatae
 <lb/>valida faciens, ut et febres vehementes et extrema pericula
 
@@ -9835,10 +9839,8 @@
 <head>CALENI DE COMPOSITIONE MEDICAMENTORVM
 <lb/>PER GENERA
 <lb/>LIBER VI.</head>
-
-
 <p rend="indent">
- <lb/>Superiore commentario emplastra dicta polychresta,
+<lb/><label type="head"><num value="1">Cap. I.</num></label> Superiore commentario emplastra dicta polychresta,
 <lb/>quod multis conveniant affectibus, distinguentes .
 <lb/>ea collegimus, quae praeterquam aliis, etiam ulceribus aegre
 <lb/>ad sanitatem pervenientibus mederi pollicentur. In praesentia
@@ -9904,9 +9906,8 @@
 <pb n="13.863"/>
 
 <div type="textpart" subtype="chapter" n="2">
-
-
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Emplastrum ex herbis Crltonis</hi>.</label> <hi rend="italic">Emplastrum
+<p rend="indent">
+<lb/><label type="head"><num value="2">Cap. II.</num> <hi rend="italic">Emplastrum ex herbis Crltonis</hi>.</label> <hi rend="italic">Emplastrum
 <lb/>ex herbis quo utor. Pavit ad carcinomata, putredines,
 <lb/>strumas ad suppurationem perducit et exprimit, lepras
 <lb/>amovet, furunculos solvit, podagricis prodest, callo-.
@@ -10276,9 +10277,8 @@
 <lb/>ipsorum penetrat.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De scriptis ab Hera ejusdem generis emplastris</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="5">Cap. V.</num> <hi rend="italic">De scriptis ab Hera ejusdem generis emplastris</hi>.</label>
 <lb/>Emplastrum ex herbis quo modo Crito praeparet
 <lb/>prius posui, et ipse Heras similiter conficit, sicut Crito ejus
 <lb/>meminit. Differt tamen in coniectione emplastri ex scilla
@@ -10302,9 +10302,8 @@
 <lb/>terebinthinae drach. triginta.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Emplastrum Serapionis</hi>.</label> Et hoc Crito in
+<p rend="indent">
+<lb/><label type="head"><num value="6">Cap. VI.</num> <hi rend="italic">Emplastrum Serapionis</hi>.</label> Et hoc Crito in
 <lb/>opere medicamentario in haec verba conscripsit. <hi rend="italic">Pmplcrstrum
 <lb/>Serapionis, quod nonnulli Aegyptium, alii Venerem
 <lb/>vocant. Pacit ad omne vulnus, cui illudendum est, omni
@@ -10330,10 +10329,8 @@
 <lb/>dcsundito, pelleque excipiens reponito.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
 <p rend="indent">
- <lb/><label type="head"><hi rend="italic">Et Andromachus praedicta emplastra
+<lb/><label type="head"><num value="7">Cap. VII.</num> <hi rend="italic">Et Andromachus praedicta emplastra
 <lb/>conscripserit</hi>.</label> Tres hujus emplastri consectiones tradidit
 <lb/>Andromachus, primam a praescripta Critonis nonnihil dissentientem,
 <lb/>deinde alias duas magis evariantes. Titulum
@@ -10352,9 +10349,8 @@
 <lb/>conjecit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Alia emplastra ex eodem genere de quibus
+<p rend="indent">
+<lb/><label type="head"><num value="8">Cap. VIII.</num> <hi rend="italic">Alia emplastra ex eodem genere de quibus
  <lb/>scripsit Andromachus</hi>.</label> <hi rend="italic">Ad gangraenas, putredines^
 <lb/>nomas veteres et cacoethes, Isidori Antiochea</hi>. ♃ Argenti
 <lb/>spumae drach. quatuor, aeruginis rasae drach. viij, olei
@@ -10383,9 +10379,8 @@
 <lb/>superfunduntur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Pascae multiplicis usus. Ad artis opera
+<p rend="indent">
+<lb/><label type="head"><num value="9">Cap. IX.</num> <hi rend="italic">Pascae multiplicis usus. Ad artis opera
 <lb/>methodo et exercitatione opus esse</hi>.</label> Quod auxiliorum quaedam
 
 <pb n="13.887"/>
@@ -10462,9 +10457,8 @@
 <lb/>medicamentis compositi vires sint cognoscendae.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Pasca Aegyptia Andromachb</hi>.</label> Andromaesius
+<p rend="indent">
+<lb/><label type="head"><num value="10">Cap. X.</num> <hi rend="italic">Pasca Aegyptia Andromachb</hi>.</label> Andromaesius
 <lb/>enim ita ad verbum prodidit. <hi rend="italic">Pusca Aegyptia.</hi> ♃
 <lb/>Argenti spumae Ʒ xliv, ricini heminas vj, cerae Ʒ exliv,
 <lb/>guttae ammoniaci Ʒ lxxij, terebinthinae Ʒ xxxvj, lanarum
@@ -10703,9 +10697,8 @@
 <lb/>dicere.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quae Asclepiades et Crito de proposito
+<p rend="indent">
+<lb/><label type="head"><num value="11">Cap. XI.</num> <hi rend="italic">Quae Asclepiades et Crito de proposito
 <lb/>Aegyptio emplastro conscripserint</hi>.</label> De emplastro Aegyptio
 <lb/>ab Andromacho tradito Asclepiades in hunc modum disserit.
 <lb/><hi rend="italic">Andromachi Aegyptium, cruentis vulneribus accommodulum.
@@ -10759,9 +10752,8 @@
 <lb/>et musculorum doloribus sine causa obortis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Alia Andromachi fusca</hi>.</label> Scripsit alia quoque
+<p rend="indent">
+<lb/><label type="head"><num value="12">Cap. XII.</num> <hi rend="italic">Alia Andromachi fusca</hi>.</label> Scripsit alia quoque
 <lb/>fusca Andromachus superiori quodammodo genere similia,
 <lb/>vocat alterum Minervam, alterum nygmaticum, id est,
 <lb/>puncturis accommodatum. Minerva quidem ad plures aflectus
@@ -10915,9 +10907,8 @@
 <lb/>ducentas.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Hellespontia Herae</hi>.</label> Quoniam vero Andromachus
+<p rend="indent">
+<lb/><label type="head"><num value="13">Cap. XIII.</num> <hi rend="italic">Hellespontia Herae</hi>.</label> Quoniam vero Andromachus
 <lb/>ab Hera in medicamenti compositione differt,
 <lb/>visum mihi est et Herae prodita adj ungere, quae ad verbum
 <lb/>ita sonant. <hi rend="italic">Hellespontia pelspiratu disoutiens, phlegmonem
@@ -10945,11 +10936,10 @@
 <lb/>exiccaturum.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quae scripsit Damocrates tescis multiplicis
+<p rend="indent">
+<lb/><label type="head"><num value="14">Cap. XIV.</num> <hi rend="italic">Quae scripsit Damocrates tescis multiplicis
 <lb/>medicamenta. Pyrium emplastrum</hi>.</label></p>
- <lg>
+ <lg rend="italic">
 <l>Post haec referam emplastrorum adhaerescentium</l>
 <l>Sine fasciis, quis usas et confectio.</l>
 <l>Ad divisiones faciunt non magnas bene,</l>
@@ -10999,7 +10989,7 @@
 <l>Frigidum et subactum manibus; ita reponito.</l></lg>
 <p rend="nonindented">
  <lb/>Aliud ejusdem cum superiore generis subjiciam.</p>
- <lg>
+ <lg rend="italic">
 <l>Medetur ante quos citavi affectibus,</l>
 <l>Nec est quod ulceribus malis diutinis</l>
 <l>Colloque pressis applicet felicius</l>
@@ -11026,7 +11016,7 @@
 <l>Trans fundito in pilam, post sic reponito.</l></lg>
 <p rend="nonindented">
  <lb/>Aegyptium.</p>
- <lg>
+ <lg rend="italic">
 <l>Aegyptium perseverans absque phlegmone</l>
 <l>Divisa quaelibet contusaque omnia,</l>
 <l>Quadruplum morsus cunctorum et serpentium,</l>
@@ -11074,7 +11064,7 @@
 <l>Squama autem utuntur aeris non stomomatis.</l></lg>
  <p rend="nonindented">
 <lb/>Aliud.</p>
- <lg>
+ <lg rend="italic">
 <l>Nihil priore pejus agit Aegyptio,</l>
 <l>Eadem at melius et quandoque, si confecerit</l>
 <l>Crassum accurate medicamentum quippiam,</l>
@@ -11100,9 +11090,8 @@
 <l>Probatiorisque id coloris condidi.</l></lg>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De emplastris disoutientibus et extrahentibus</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="15">Cap. XV.</num> <hi rend="italic">De emplastris disoutientibus et extrahentibus</hi>.</label>
 <lb/>Qui compositorum medicamentorum facultates
 <lb/><hi rend="italic">descripserunt</hi>, emplastra quaedam extrahentia, sicut alia
 <lb/>discutientia nominarunt, alii utraque extrahere et discutere
@@ -11147,9 +11136,8 @@
 <lb/>mihi est abunde jam de hoc.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Andromachi emplastra ad discutiendum
+<p rend="indent">
+<lb/><label type="head"><num value="16">Cap. XVI.</num> <hi rend="italic">Andromachi emplastra ad discutiendum
 <lb/>et extrahendum. Halicon,</hi> id est <hi rend="italic">fuscum, ad multa</hi>.</label> ♃
 <lb/>Salis communis lib. iv, squamae aeris uncias quatuor, magmatis
 <lb/>selibram, mannae lib. j, cerae hb. xiv, olei Cyprini
@@ -11302,9 +11290,8 @@
 <lb/>quae liquabilia sunt, sicca insperge.</p>
 </div>
 <div type="textpart" subtype="chapter" n="17">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quae scripserit Asclepiades attrahenti^</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="17">Cap. XVII.</num> <hi rend="italic">Quae scripserit Asclepiades attrahenti^</hi>.</label>
  <lb/><hi rend="italic">Album attrahens, facit ad strumas et parotidas et particulares
 <lb/>abscessus, curat fistulas et aegilopas, ut sine
 <lb/>incisione liberet, valet ad rheumatica et curatu difficilia,
@@ -11362,9 +11349,8 @@
 <lb/>mortarium transfusa, rursusque tunsa excipite et utitor.</p>
 </div>
 <div type="textpart" subtype="chapter" n="18">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quae scripsit Asclepiades disoutientia,
+<p rend="indent">
+<lb/><label type="head"><num value="18">Cap. XVIII.</num> <hi rend="italic">Quae scripsit Asclepiades disoutientia,
  <lb/>ex illius verbis</hi>.</label> <hi rend="italic">Tumoribus dessolutis et in humorum digestis,
 <lb/>infra scriptae compositiones conveniunt. Certae
 <lb/>Ctesiphontis. Valet ad strumas, ganglia, parotidas, mammarum
@@ -11447,10 +11433,9 @@
 <lb/>quantum satis est.
 </p></div>
 <div type="textpart" subtype="chapter" n="19">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Disoufferia scripta a Damocrate</hi>.</label></p>
- <lg>
+<p rend="indent">
+<lb/><label type="head"><num value="19">Cap. XIX.</num> <hi rend="italic">Disoufferia scripta a Damocrate</hi>.</label></p>
+ <lg rend="italic">
  <l>Ad digerendum melinum emplastrum ejstcax</l>
 <l>infantium strumas non veteris, insuper</l>
 <l>Et duritias musculorum, item et cutis</l>
@@ -11473,7 +11458,7 @@
 <l>Rursusque mollitur manibus, sic conditur.</l></lg>
 <p rend="nonindented">
  <lb/>Aliud.</p>
- <lg>
+ <lg rend="italic">
 <l>Aliud ad omnia haec. Strumas ipsas vero</l>
 <l>Magis rescivit et laborantes juvat,</l>
 <l>Praecordia ne abscessus, quibus est cautio,</l>
@@ -11496,7 +11481,7 @@
 <l>Nam exasperantur crustula atque obducitur.</l></lg>
 <p rend="nonindented">
  <lb/>Damocratis compositiones ex sale discufforiae.</p>
- <lg>
+ <lg rend="italic">
 <l>Hoc praeparato stmul, ut praestans pharmacum.</l>
 <l>Bonae cerussae et argenti spumae bonae,</l>
 <l>Cujusque pondo, denasque salis uncias.</l>
@@ -11510,7 +11495,7 @@
 <l>Nam seposita multo remollescunt magis.</l></lg>
 <p rend="nonindented">
  <lb/>Aliud.</p>
- <lg>
+ <lg rend="italic">
 <l>Aliud melius, nam duritias discutit</l>
 <l>Cunctis valentius inveteratas nimis.</l>
 <l>Et bronchocelas et magnas meliceridas,</l>
@@ -11528,7 +11513,7 @@
 <l>Mollita, propolim scilicet atque galbanum.</l></lg>
 <p rend="nonindented">
  <lb/>Aliud ad discutiendum Damocratis ex calos viva.</p>
- <lg>
+ <lg rend="italic">
 <l>Valde bonum, strumas solvit per halitum,</l>
 <l>Omnem tumorem reprimit, nec non hepatis</l>
 <l>Vel sp lenis affectus aquosos curat et</l>
@@ -11568,10 +11553,8 @@
 <div type="textpart" subtype="chapter" n="1">
 <head>GALENI DE COMPOSITIONE MEDICAMENTORVM
 <lb/>PER GENERA LIBER VII.</head>
-
-
 <p rend="indent">
- <lb/>malagmata vocant mediei quae partes
+<lb/><label type="head"><num value="1">Cap. I.</num></label> malagmata vocant mediei quae partes
 <lb/>praeter naturam induratas emolliunt, calida omnia temperamento
 <lb/>mediocri praedita, non tamen exiccantia, quemadmodum
 <lb/>nec humectantia manifesto. Nam quum exacte
@@ -11672,9 +11655,8 @@
 <lb/>habuerit, compositus quoque scopus efficitur.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
- <p rend="indent"><lb/><label type="head"><hi rend="italic">De medicamento liquido</hi>.</label> Ac ideo quoque
+<p rend="indent">
+<lb/><label type="head"><num value="2">Cap. II.</num> <hi rend="italic">De medicamento liquido</hi>.</label> Ac ideo quoque
 
 <pb n="13.952"/>
 <lb/>medicamentum quodammodo compositum est, veluti
@@ -11708,9 +11690,8 @@
 <lb/>nec quod oleae furculos in confectione assumpsit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Generalis mollientium medicamentorum
+<p rend="indent">
+<lb/><label type="head"><num value="3">Cap. III.</num> <hi rend="italic">Generalis mollientium medicamentorum
 <lb/>differentia ac facultas</hi>.</label> Itaque tam imbecillia mollientia
 <lb/>etiam parvis medicantur inflammationibus, his autem vehementiora
 <lb/>brevem duritiem sine phlegmone persanant, his
@@ -11804,9 +11785,8 @@
 <lb/>operibus exercitati peritiam aliquam sunt adepti.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Specialis emolliendum medicamentorum
+<p rend="indent">
+<lb/><label type="head"><num value="4">Cap. IV.</num> <hi rend="italic">Specialis emolliendum medicamentorum
 <lb/>desserentia ac facultas</hi>.</label> Quoniam vero omnes ejusmodi
 <lb/>non sunt et proposuimus hoc commentario, non ut in opere
 <lb/>de morbis curandis methodum solam exponere, verum
@@ -11881,9 +11861,8 @@
 </div>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Varias enasci desshrentias fecundum maporis
+<p rend="indent">
+<lb/><label type="head"><num value="5">Cap. V.</num> <hi rend="italic">Varias enasci desshrentias fecundum maporis
 <lb/>minorisque rationem in emollienti emplastro Mnafuci
 <lb/>pro varia simplicium tum quantitate tum aetate
 <lb/>tum coctione</hi>.</label> Sane quidem emplastrum Mnafaeo auctore
@@ -11979,10 +11958,8 @@
 </div>
 <pb n="13.967"/>
 <div type="textpart" subtype="chapter" n="6">
-
-
- <p rend="indent">
-  <lb/><label type="head"><hi rend="italic">Asclepiadis malagmata</hi>.</label> <hi rend="italic">Amythaonis
+<p rend="indent">
+<lb/><label type="head"><num value="6">Cap. VI.</num> <hi rend="italic">Asclepiadis malagmata</hi>.</label> <hi rend="italic">Amythaonis
 <lb/>malagma ad praecordiorum tensiones. Solvit omnem duritiem.
 <lb/>Pacit etiam ad diestciles articulorum motus</hi>. ♃ Guttae
 <lb/>ammoniaci uncias triginta fax, cerae Ʒ triginta fax terebinthinae
@@ -12172,9 +12149,8 @@
 <lb/>albi uncias tres. Praeparato ac utitor, ut praedictum est.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Andromachi malagmata</hi>.</label> <hi rend="italic">Malagma durum
+<p rend="indent">
+<lb/><label type="head"><num value="7">Cap. VII.</num> <hi rend="italic">Andromachi malagmata</hi>.</label> <hi rend="italic">Malagma durum
 <lb/>et aridum</hi>. ♃ Picis lib. iij, cerae libras duas, resinae
 <pb n="13.977"/>
 <lb/>libram unam, galbani uncias duas, guttae ammoniaci uncias
@@ -12397,14 +12373,13 @@
 <lb/>olei liquidis Ʒ viij, adde, utitor itidem in lienosis.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Damocratis malagma</hi>.</label> Quoniam metris
+<p rend="indent">
+<lb/><label type="head"><num value="8">Cap. VIII.</num> <hi rend="italic">Damocratis malagma</hi>.</label> Quoniam metris
 <lb/>conscripta et memoriae facile commendantur et medicamentorum
 <lb/>symmetrias exacte conservant, ideo Damocratis
 <lb/>quoque medicamenta apponere consuevi, inter quae hoc
 <lb/>infra adscriptum numeratur,</p>
- <lg>
+ <lg rend="italic">
 <l>At usus omnino et malagmatis boni</l>
 <l>Subinde veniet medicinae cultoribus,</l>
 <l>Ad mtssculos convuisos, articulos quoque</l>
@@ -12453,7 +12428,7 @@
 <p rend="indent">
  <lb/>Post hoc medicamentum Damocrates scripsit, quod ex
 <lb/>sale consectum dicitur, hunc in modum exorsus.</p>
- <lg>
+ <lg rend="italic">
 <l>Si in horum aliquo maneas diebus plusculis,</l>
 <l>Et hoc parato medicamentum quam optimum:</l></lg>
 <pb n="13.991"/>
@@ -12464,9 +12439,8 @@
 <lb/>est haec medicamenta inter emplastra disontientia referre.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">De laxantibus medicamentis</hi>.</label> Vocantur
+<p rend="indent">
+<lb/><label type="head"><num value="9">Cap. IX.</num> <hi rend="italic">De laxantibus medicamentis</hi>.</label> Vocantur
 <lb/>medicamenta quaedam laxantia, .familiari omnibus prope
 <lb/>recentioribus medicis vocabulo, quod ut et nomen ipsum indicat,
 <lb/>tensas laxent partes, quippe laxari ac intendi contraria
@@ -12570,10 +12544,9 @@
 <lb/>aliis quibusdam duobus similibus ei praepositis prodidit.</p>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Dia chylon Damocratis ex Menecrate</hi>.</label></p>
- <lg>
+<p rend="indent">
+<lb/><label type="head"><num value="10">Cap. X.</num> <hi rend="italic">Dia chylon Damocratis ex Menecrate</hi>.</label></p>
+ <lg rend="italic">
  <l>Praesuli igitur, quo tandem pacto vulnera</l>
 <l>A phlegmone secura recte glutines,</l>
 <l>Posthac agemus, quomodo cum phlegmone</l>
@@ -12705,7 +12678,7 @@
 <l>Vocabat Ipsam jure e soccis pharmacum.</l></lg>
 <p rend="nonindented">
  <lb/>Aliud.</p>
- <lg>
+ <lg rend="italic">
 <l>Et hoc eodem prodit genere pharmacum,</l>
 <l>Aliis licet mixturis ipsum praeparent.</l>
 <l>Affectus ad quos retuli, prolsas facit.</l>
@@ -12738,9 +12711,8 @@
 </div>
  </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
- <p rend="indent"><lb/><label type="head"><hi rend="italic">De Acopis</hi>, id est <hi rend="italic">lassitudinem tollentibus</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="11">Cap. XI.</num> <hi rend="italic">De Acopis</hi>, id est <hi rend="italic">lassitudinem tollentibus</hi>.</label>
 <lb/>Quid Acopa medicamenta promittant, etiam nomen
   <lb/>ipsorum ostendit. At <foreign xml:lang="grc">κόπους</foreign>, id est <hi rend="italic">lassitudines</hi>, homines
 <lb/>vocant affectus ex multo vehementive motu corporibus
@@ -12827,9 +12799,8 @@
 <lb/>scriptis sumpto exordio.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quae .Asclepiades in quarto exteriorum
+<p rend="indent">
+<lb/><label type="head"><num value="12">Cap. XII.</num> <hi rend="italic">Quae .Asclepiades in quarto exteriorum
  <lb/>acopa et myracopa conscripserit</hi>.</label> <hi rend="italic">Acopon ad lassitudinum
 <lb/>molestias benefacit nervis condolescentibus. Hoc Fhemiso
 <lb/>utebatur, medicamentum est vehementer bonum.</hi> ♃ Sampsuchi
@@ -13269,9 +13240,8 @@
 <lb/>usus, qui mentem dicendis adhibebunt perveniet.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Quae Andromachus acopa scripserit</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="13">Cap. XIII.</num> <hi rend="italic">Quae Andromachus acopa scripserit</hi>.</label>
  <lb/><hi rend="italic">Acopum viride Hallei.</hi> ♃ Cerae terebinthinae, olei veteris
 <lb/>singulorum lib. j ẞ, aphronitri ℥ iv, galbani uncias iij,
 <lb/>aeruginis rasae ℥ iij, opopanacis ℥ vj, guttae ammoniaci
@@ -13407,9 +13377,8 @@
 <lb/>sex, nardi libras tres.</p>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Gleucini mustei unguenti confectiones</hi>.</label>
+<p rend="indent">
+<lb/><label type="head"><num value="14">Cap. XIV.</num> <hi rend="italic">Gleucini mustei unguenti confectiones</hi>.</label>
  <lb/><hi rend="italic">Gleucini confectio juxta Andromachum.</hi> Post praedicta
 <lb/>acopa Andromachus gleucini consectionem descripsit, non
 <lb/>male ipsa acopis unguentis adjungens, quippe ad dolorem
@@ -13519,9 +13488,8 @@
 <lb/>vitreis vasis aut testaceis gummi illitis reponemus.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
- <p rend="indent"><lb/><label type="head"><hi rend="italic">Quae scripsit Heras acopa</hi>.</label> <hi rend="italic">Acopon ad
+<p rend="indent">
+<lb/><label type="head"><num value="15">Cap. XV.</num> <hi rend="italic">Quae scripsit Heras acopa</hi>.</label> <hi rend="italic">Acopon ad
 <lb/>paralyticos, summatim ad omnem dolorem</hi>. ♃ Rutae viridis
 <lb/>lib. j, pulegii sicci libram unam, cyperi lib. j, nitri
 <lb/>drach. l, foenigraeci lib. j, linoxostis siccae lib. j. marrubii
@@ -13565,10 +13533,9 @@
 <lb/>accipiat. Ubi opportunitas accidit rosaceo admixto utitor.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
-<p rend="indent"><lb/><label type="head"><hi rend="italic">Damocratis acoporum compositiones</hi>.</label></p>
- <lg>
+<p rend="indent">
+<lb/><label type="head"><num value="16">Cap. XVI.</num> <hi rend="italic">Damocratis acoporum compositiones</hi>.</label></p>
+ <lg rend="italic">
  <l>Plurima medicinae quum studiosi dictitent</l>
 <l>Acoporum de usu myracoporumque omnium,</l>
 <l>Haec, quae stent, dicam et quo conserant modo,</l>
@@ -13635,7 +13602,7 @@
 <l>Calidoque lanam intinctam addis foramini.</l>
  </lg>
 <p rend="nonindented"><lb/>Aliud.</p>
- <lg>
+ <lg rend="italic">
 <l>Et viridacopon hoc espcax supra modum,</l>
 <pb n="13.1051"/>
 <l>Elude et laborum exordiis facit magis</l>
@@ -13672,7 +13639,7 @@
 <l>Audacter inveteratisque omnibus utitor.</l></lg>
  <p rend="nonindented">
   <lb/>Aliud.</p>
- <lg>
+ <lg rend="italic">
 <l>Et hoc parabile passis acopon, item bonum,</l>
 <l>Potissimum per hiemem, st est profectio</l>
 <l>Llequam, malo opportunis facile subvenit.</l>
@@ -13699,7 +13666,7 @@
 <l>Pharmacum adhuc fervens vitreo vaso condito.</l></lg>
 <p rend="nonindented">
  <lb/>Aliud myracopon.</p>
- <lg>
+ <lg rend="italic">
 <l>Et hoc myracopon optimorum inest gregi.</l>
 <l>Nam suavitatis plenum est. duvat insigniter</l>
 <l>Quos nominavi paulo affectus antea.</l>

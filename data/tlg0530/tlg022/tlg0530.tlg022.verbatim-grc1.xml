@@ -7,44 +7,65 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De ponderibus et mensuris</title>
-        <author xml:lang="lat">Galenus</author>
-        <editor>Kühn, Karl Gottlob</editor>
-        <funder>Institut universitaire de France</funder>
-        <respStmt>
-          <resp>Published original versions of the electronic texts</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
+        <editor role="editor">Kühn, Karl Gottlob</editor>
+        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+<respStmt>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
-          <resp>Editor-in-Chief, Galenus verbatim</resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
-          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <respStmt>
           <resp>Lead Developer, Optéos</resp>
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp>Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-        </respStmt>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
+<persName>Fabrice Robert</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
       </titleStmt>
-      <publicationStmt>
-        <authority>Galenus verbatim, funded by the Institut universitaire de France</authority>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">Digital edition of the texts printed in Kühn’s edition.
+<date type="upload" when="2024">2024</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+        <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
         <idno>urn:cts:greekLit:tlg0530.tlg022.verbatim-grc1</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
-        <date>2023</date>
+<date>2024</date>
       </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Pseudo-Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="editor">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -95,17 +116,48 @@
         <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Greek numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn's edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
-        <language ident="lat">Latin</language>
+        
       </langUsage>
     </profileDesc>
-    <revisionDesc>
-      <change who="Galenus_verbatim">The title of the tract and all the indentations have been reinstated.</change>
-      <change who="Galenus_verbatim">All the labels have been specified as head with the @type attribute.</change>
-    </revisionDesc>
   </teiHeader>
   <text>
     <body>
@@ -118,10 +170,9 @@
   <head>ΓΑΛΗΝΟΥ ΤΟΥ ΣΟΦΩΤΑΤΟΥ ΠΕΡΙ
     <lb/>ΜΕΤΡΩΝ ΚΑΙ ΣΤΑΦΜΩΝ
     <lb/>ΔΙΔΑΣΚΑΛΙΑ.</head>
-
-
+<lb n="1"/><label type="head"><num value="1">Κεφάλαιον αʹ.</num></label>
 <label type="head">
-<lb n="2"/>Τί ὁ σταθμὸς, τί τὸ μέτρον καὶ ἀμφοτέρων διαφοραί.
+  <lb n="2"/>Τί ὁ σταθμὸς, τί τὸ μέτρον καὶ ἀμφοτέρων διαφοραί.
 </label>
 <p rend="indent">
 <lb n="3"/>Ὁ σταθμὸς βάρει μετρούμενος κρίνεται· τὸ δὲ μέτρον
@@ -135,8 +186,7 @@
 <lb n="2"/>περὶ τῶν μάλιστα συνήθων ἅπασιν ὁ λόγος ἡμῖν ἔσται.</p>
 </div>
 <div type="textpart" subtype="chapter" n="2">
-
-
+<lb/><label type="head"><num value="2">Κεφάλαιον βʹ.</num></label>
 <label type="head">
 <lb n="4"/>Περὶ τῶν δηλούντων τοὺς σταθμοὺς καὶ τὰ μέτρα
 <lb n="5"/>χαρακτήρων.
@@ -198,8 +248,7 @@
 <lb n="11"/>κρμ, κρμ.</p>
 </div>
 <div type="textpart" subtype="chapter" n="3">
-
-
+<lb/><label type="head"><num value="3">Κεφάλαιον γʹ.</num></label>
 <label type="head">
 <lb n="13"/>Περὶ σταθμῶν.
 </label>
@@ -225,8 +274,7 @@
 <lb n="8"/>δίμοιρον. ὁ γὰρ ὀβολὸς ἔχει χαλκοῦς ηʹ.</p>
 </div>
 <div type="textpart" subtype="chapter" n="4">
-
-
+<lb/><label type="head"><num value="4">Κεφάλαιον δʹ.</num></label>
 <label type="head">
 <lb n="10"/>Περὶ μέτρων ὑγρῶν.
 </label>
@@ -284,64 +332,62 @@
 <label type="head">
 <lb n="8"/>Τὸ διάγραμμα κεῖται.
 </label>
-<list rend="table">
-<!--??? <item rend="header"><list rend="row">…</list></item>-->
-<item>
-  <list rend="row">
-    <item>Τὸ Ἰταλικὸν</item>
-    <item>Ἐλαίου.</item>
-    <item>Οἴνου.</item>
-    <item>Μέλιτος.</item>
-  </list>
-  <list rend="row">
-    <item>κεράμιον ἔχει,</item>
-    <item>℔ οβʹ.</item>
-    <item>℔ πʹ.</item>
-    <item>℔ ρηʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ χοῦς,</item>
-    <item>℔ θʹ.</item>
-    <item>℔ ιʹ.</item>
-    <item>℔ ιγʹ Sʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ ξέστης,</item>
-    <item>℥ ιηʹ·</item>
-    <item>℥ κʹ.</item>
-    <item>℥ κζʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ἡ κοτύλη,</item>
-    <item>℥θʹ.</item>
-    <item>℥ ιʹ.</item>
-    <item>℥ ιγʹ Sʹʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ μέγα μύστρον,</item>
-    <item>℥ γʹ.</item>
-    <item>℥ γʹ. 𐆈 ηʹ.</item>
-    <item>℥ δʹ Sʹʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ μικρὸν μύστρον,</item>
-    <item>𐅻 στʹ.</item>
-    <item>𐅻 στʹ. 𐆈 βʹ.</item>
-    <item>𐅻 θʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ ὀξύβαφον,</item>
-    <item>𐅻 ιηʹ.</item>
-    <item>℥ βʹ. 𐆈 ιβʹ.</item>
-    <item>℥ γʹ. 𐅻 γʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ κύαθος,</item>
-    <item>𐅻 ιβʹ.</item>
-    <item>℥ αʹ Sʹʹ. 𐆈 δʹ.</item>
-    <item>℥ βʹ, 𐅻 βʹ.</item>
-  </list>
-</item></list>
+<table rows="9" cols="4">
+  <row n="9">
+    <cell role="label">Τὸ Ἰταλικὸν</cell>
+    <cell role="label">Ἐλαίου.</cell>
+    <cell role="label">Οἴνου.</cell>
+    <cell role="label">Μέλιτος.</cell>
+  </row>
+  <row n="10">
+    <cell role="label">κεράμιον ἔχει,</cell>
+    <cell role="label">℔ οβʹ.</cell>
+    <cell role="label">℔ πʹ.</cell>
+    <cell role="label">℔ ρηʹ.</cell>
+  </row>
+  <row n="11">
+    <cell role="label">Ὁ χοῦς,</cell>
+    <cell role="label">℔ θʹ.</cell>
+    <cell role="label">℔ ιʹ.</cell>
+    <cell role="label">℔ ιγʹ Sʹ.</cell>
+  </row>
+  <row n="12">
+    <cell role="label">Ὁ ξέστης,</cell>
+    <cell role="label">℥ ιηʹ·</cell>
+    <cell role="label">℥ κʹ.</cell>
+    <cell role="label">℥ κζʹ.</cell>
+  </row>
+  <row n="13">
+    <cell role="label">Ἡ κοτύλη,</cell>
+    <cell role="label">℥θʹ.</cell>
+    <cell role="label">℥ ιʹ.</cell>
+    <cell role="label">℥ ιγʹ Sʹʹ.</cell>
+  </row>
+  <row n="14">
+    <cell role="label">Τὸ μέγα μύστρον,</cell>
+    <cell role="label">℥ γʹ.</cell>
+    <cell role="label">℥ γʹ. 𐆈 ηʹ.</cell>
+    <cell role="label">℥ δʹ Sʹʹ.</cell>
+  </row>
+  <row n="15">
+    <cell role="label">Τὸ μικρὸν μύστρον,</cell>
+    <cell role="label">𐅻 στʹ.</cell>
+    <cell role="label">𐅻 στʹ. 𐆈 βʹ.</cell>
+    <cell role="label">𐅻 θʹ.</cell>
+  </row>
+  <row n="16">
+    <cell role="label">Τὸ ὀξύβαφον,</cell>
+    <cell role="label">𐅻 ιηʹ.</cell>
+    <cell role="label">℥ βʹ. 𐆈 ιβʹ.</cell>
+    <cell role="label">℥ γʹ. 𐅻 γʹ.</cell>
+  </row>
+  <row n="17">
+    <cell role="label">Ὁ κύαθος,</cell>
+    <cell role="label">𐅻 ιβʹ.</cell>
+    <cell role="label">℥ αʹ Sʹʹ. 𐆈 δʹ.</cell>
+    <cell role="label">℥ βʹ, 𐅻 βʹ.</cell>
+  </row>
+</table>
 <p/>
 <p rend="indent">
 <pb n="19.755"/>
@@ -351,8 +397,7 @@
 <lb n="4"/>σταθμῷ λι. βʹ Sʹʹ.</p>
 </div>
 <div type="textpart" subtype="chapter" n="5">
-
-
+<lb/><label type="head"><num value="5">Κεφάλαιον εʹ.</num></label>
 <label type="head">
 <lb n="6"/><milestone unit="ed1page" n="4.467"/>Περὶ μέτρων ξηρῶν διδασκαλία σαφής.
 </label>
@@ -380,11 +425,11 @@
 <lb n="3"/>τε καὶ διδάσκαλοι ταῦτα ἡμῖν διεσάφησαν θαυμαστῶς.</p>
 </div>
 <div type="textpart" subtype="chapter" n="6">
-
-
+<lb/><label type="head"><num value="6">Κεφάλαιον στʹ.</num></label>
 <label type="head">
 <lb n="5"/><milestone unit="ed2page" n="13.978"/>Περὶ σημείων καὶ χαρακτήρων τῶν ἐν ταῖς συσταθμίαις
-<lb n="6"/>καὶ περὶ σταθμῶν καὶ μέτρων.
+<lb n="6"/>καὶ περὶ σταθμῶν καὶ μέτρων.</label>
+  <label type="head">
 <lb n="7"/>Ἡ ἄλλη ἔκθεσις.
 </label>
 <p rend="indent">
@@ -466,8 +511,7 @@
 <lb n="8"/>Εἰ δὲ κ καὶ ρ, ἐπάνω ἔχουσι μ, κεράμιον δηλοῖ κρμ.</p>
 </div>
 <div type="textpart" subtype="chapter" n="7">
-
-
+<lb/><label type="head"><num value="7">Κεφάλαιον ζʹ.</num></label>
 <label type="head">
 <lb n="10"/>Ἔκθεσις περὶ σταθμῶν καὶ μέτρων ἀκριβεστάτη.
 </label>
@@ -552,8 +596,7 @@
 <lb n="8"/>Ὁ μέδιμνος ξέστας ἑκατὸν δύο.</p>
 </div>
 <div type="textpart" subtype="chapter" n="8">
-
-
+<lb/><label type="head"><num value="8">Κεφάλαιον ηʹ.</num></label>
 <label type="head">
 <lb n="10"/>Ἔτι περὶ μέτρων καὶ σταθμῶν ἰατρικῶν συντομωτάτως
 <lb n="11"/>ἔκθεσις ἁπλουστάτη.
@@ -635,8 +678,7 @@
 <lb n="14"/>οὐγγίας αʹ ἡμισείας.</p>
 </div>
 <div type="textpart" subtype="chapter" n="9">
-
-
+<lb/><label type="head"><num value="9">Κεφάλαιον θʹ.</num></label>
 <label type="head">
 <lb n="16"/>Περὶ μέτρων καὶ σταθμῶν.
 </label>
@@ -703,8 +745,7 @@
 <pb n="19.767"/>
 </div>
 <div type="textpart" subtype="chapter" n="10">
-
-
+<lb/><label type="head"><num value="10">Κεφάλαιον ιʹ.</num></label>
 <label type="head">
 <lb n="2"/>Ἐκ τῶν Κλεοπάτρας κοσμητικῶν περὶ σταθμῶν καὶ
 <lb n="3"/>μέτρων.
@@ -822,8 +863,7 @@
 <lb n="3"/>Ὁ δὲ κύαθος κοτύλης τὸ στʹ.</p>
 </div>
 <div type="textpart" subtype="chapter" n="11">
-
-
+<lb/><label type="head"><num value="11">Κεφάλαιον ιαʹ.</num></label>
 <label type="head">
 <lb n="5"/>Ἄλλως περὶ τῶν αὐτῶν.
 </label>
@@ -866,8 +906,7 @@
 <lb n="8"/>Τὸ κοχλιάριον 𐅻 αʹ.</p>
 </div>
 <div type="textpart" subtype="chapter" n="12">
-
-
+<lb/><label type="head"><num value="12">Κεφάλαιον ιβʹ.</num></label>
 <label type="head">
 <lb n="10"/>Περὶ μέτρων καὶ σταθμῶν ἱππιατρικῶν.
 </label>
@@ -912,8 +951,7 @@
 <lb n="13"/>Τὸ δὲ δηνάριον ἔχει γράμματα δʹ.</p>
 </div>
 <div type="textpart" subtype="chapter" n="13">
-
-
+<lb/><label type="head"><num value="13">Κεφάλαιον ιγʹ.</num></label>
 <label type="head">
 <lb n="15"/>Περὶ μέτρων ὑγρῶν.
 </label>
@@ -935,70 +973,67 @@
 <lb n="6"/>Τὸ ὀξύβαφον ἔχει κυάθους αʹ Sʹʹ.</p>
 <p rend="indent">
 <lb n="7"/>Ὁ δὲ κύαθος ἔχει χήμας μικρὰς, ἤτοι μύστρα μικρὰ βʹ.</p>
-<list rend="table">
-<!--??? <item rend="header"><list rend="row">…</list></item>-->
-<item>
-  <list rend="row">
-    <item>Ἰταλικὸν</item>
-    <item>Ἐλαίου.</item>
-    <item>Οἴνου.</item>
-    <item>Μέλιτος.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ κεράμιον ἔχει.</item>
-    <item>℔ οβʹ.</item>
-    <item>℔ πʹ.</item>
-    <item>℔ ρηʹ, ἀλ. ρκʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ χοῦς,</item>
-    <item>℔ θʹ.</item>
-    <item>℔ ιʹ.</item>
-    <item>℔ ιγʹ Sʹʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ ξέστης,</item>
-    <item>γο ιηʹ.</item>
-    <item>γο κʹ.</item>
-    <item>γο κζʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ἡ κοτύλη,</item>
-    <item>γο θʹ.</item>
-    <item>γο ιʹ.</item>
-    <item>γο ιγʹ Sʹʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ μέγα μύστρον,</item>
-    <item>γο γʹ.</item>
-    <item>γο γʹ, 𐆈 ηʹ.</item>
-    <item>γο δʹ Sʹʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ μικρὸν μύστρον,</item>
-    <item>𐅻 ιστʹ.</item>
-    <item>𐅻 στʹ 𐆈 βʹ.</item>
-    <item>𐅻 θʹ</item>
-  </list>
-  <list rend="row">
-    <item>Τὸ ὀξύβαφον,</item>
-    <item>𐅻 ιηʹ.</item>
-    <item>𐅻 κʹ.</item>
-    <item>γο γʹ, γʹ.</item>
-  </list>
-  <list rend="row">
-    <item>Ὁ κύαθος.</item>
-    <item>γο αʹ Sʹʹ.</item>
-    <item>𐅻 ιγʹ 𐆈 αʹ.</item>
-    <item>𐅻 ιηʹ.</item>
-  </list>
-</item></list>
+<table rows="9" cols="4">
+  <row n="8">
+    <cell role="label">Ἰταλικὸν</cell>
+    <cell role="label">Ἐλαίου.</cell>
+    <cell role="label">Οἴνου.</cell>
+    <cell role="label">Μέλιτος.</cell>
+  </row>
+  <row n="9">
+    <cell role="label">Τὸ κεράμιον ἔχει.</cell>
+    <cell role="label">℔ οβʹ.</cell>
+    <cell role="label">℔ πʹ.</cell>
+    <cell role="label">℔ ρηʹ, ἀλ. ρκʹ.</cell>
+  </row>
+  <row n="10">
+    <cell role="label">Ὁ χοῦς,</cell>
+    <cell role="label">℔ θʹ.</cell>
+    <cell role="label">℔ ιʹ.</cell>
+    <cell role="label">℔ ιγʹ Sʹʹ.</cell>
+  </row>
+  <row n="11">
+    <cell role="label">Ὁ ξέστης,</cell>
+    <cell role="label">γο ιηʹ.</cell>
+    <cell role="label">γο κʹ.</cell>
+    <cell role="label">γο κζʹ.</cell>
+  </row>
+  <row n="12">
+    <cell role="label">Ἡ κοτύλη,</cell>
+    <cell role="label">γο θʹ.</cell>
+    <cell role="label">γο ιʹ.</cell>
+    <cell role="label">γο ιγʹ Sʹʹ.</cell>
+  </row>
+  <row n="13">
+    <cell role="label">Τὸ μέγα μύστρον,</cell>
+    <cell role="label">γο γʹ.</cell>
+    <cell role="label">γο γʹ, 𐆈 ηʹ.</cell>
+    <cell role="label">γο δʹ Sʹʹ.</cell>
+  </row>
+  <row n="14">
+    <cell role="label">Τὸ μικρὸν μύστρον,</cell>
+    <cell role="label">𐅻 ιστʹ.</cell>
+    <cell role="label">𐅻 στʹ 𐆈 βʹ.</cell>
+    <cell role="label">𐅻 θʹ</cell>
+  </row>
+  <row n="15">
+    <cell role="label">Τὸ ὀξύβαφον,</cell>
+    <cell role="label">𐅻 ιηʹ.</cell>
+    <cell role="label">𐅻 κʹ.</cell>
+    <cell role="label">γο γʹ, γʹ.</cell>
+  </row>
+  <row n="16">
+    <cell role="label">Ὁ κύαθος.</cell>
+    <cell role="label">γο αʹ Sʹʹ.</cell>
+    <cell role="label">𐅻 ιγʹ 𐆈 αʹ.</cell>
+    <cell role="label">𐅻 ιηʹ.</cell>
+  </row>
+</table>
 
 <pb n="19.775"/>
 </div>
 <div type="textpart" subtype="chapter" n="14">
-
-
+<lb/><label type="head"><num value="14">Κεφάλαιον ιδʹ.</num></label>
 <label type="head">
 <lb n="2"/><milestone unit="ed2page" n="13.984"/>Διοσκορίδου περὶ μέτρων καὶ σταθμῶν.
 </label>
@@ -1111,8 +1146,7 @@
 <lb n="8"/>Ἡ δὲ χήμη , ὅπερ ἐστὶ κυάθου τέταρτον, ἄγει 𐅻 εʹ.</p>
 </div>
 <div type="textpart" subtype="chapter" n="15">
-
-
+<lb/><label type="head"><num value="15">Κεφάλαιον ιεʹ.</num></label>
 <label type="head">
 <lb n="10"/>Ἄλλως περὶ μέτρων καὶ σταθμῶν.
 </label>
@@ -1167,8 +1201,7 @@
 <lb n="3"/>Τοῦ ὀρόβου μέγεθος χαλκοῦς βʹ.</p>
 </div>
 <div type="textpart" subtype="chapter" n="16">
-
-
+<lb/><label type="head"><num value="16">Κεφάλαιον ιστʹ.</num></label>
 <label type="head">
 <lb n="5"/><milestone unit="ed1page" n="4.469"/>Περὶ σημείων τῶν μέτρων καὶ σταθμῶν.
 </label>

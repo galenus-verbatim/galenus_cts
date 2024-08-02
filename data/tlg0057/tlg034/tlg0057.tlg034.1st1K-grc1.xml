@@ -7,8 +7,10 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="lat">De parvae pilae exercitio</title>
-        <author xml:lang="lat">Galenus</author>
-        <editor>Marquardt, Johannes</editor>
+        <author xml:lang="lat">
+<name ref="http://viaf.org/viaf/44299175">Galenus</name>
+</author>
+        <editor role="editor">Marquardt, Johannes</editor>
         <funder ref="https://www.mellon.org/">Andrew W. Mellon Foundation</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts</resp>
@@ -41,16 +43,47 @@
           <resp>Technical Advisor</resp>
           <persName>Bruce Robertson</persName>
         </respStmt>
-      </titleStmt>
-      <editionStmt resp="Galenus_verbatim">
-        <edition>Revised edition of the originally published versions of the electronic texts.</edition>
-        <respStmt>
-          <resp></resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
-        </respStmt>
-        <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
-      </editionStmt>
-      <publicationStmt>
+       </titleStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">Revised edition of the originally published versions of the electronic texts.
+<date type="revision" when="2024">2024</date>
+</edition>
+<respStmt>
+<!-- paragraphe à vérifier pour chaque édition -->
+<resp>To reuse this edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We changed the naming schemes of the milestones indicating the corresponding Kühn pages or added such milestones when they were missing. The layout of the original edition was marked up by &lt;pb&gt; and &lt;lb&gt; elements when they were missing. We also added elements specific to critical editions, that were present in this edition but were missing in the TEI, mainly chevrons and hooks. For details, see the revisionDesc section.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp>Lead Developer, Optéos</resp>
+<persName>Frédéric Glorieux</persName>
+</respStmt>
+<respStmt>
+<resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<persName>Cahal Taaffe</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<!-- à vérifier pour chaque édition -->
+<respStmt>
+<resp from="2023" to="2024">Text verification and correction, Galenus verbatim</resp>
+<persName>
+</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+</editionStmt>
+<publicationStmt>
         <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
         <publisher>University of Leipzig</publisher>
         <pubPlace>Germany</pubPlace>
@@ -65,7 +98,7 @@
           <monogr>
             <title xml:lang="lat">Claudii Galeni librum De parvae pilae exercitio</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Marquardt, Johannes</editor>
+            <editor role="editor">Marquardt, Johannes</editor>
             <imprint>
               <publisher>Domschule</publisher>
               <pubPlace>Güstrow</pubPlace>
@@ -82,14 +115,60 @@
       <refsDecl n="CTS">
         <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type is systematically specified with a rend value.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<!-- à vérifier pour chaque édition -->
+<normalization>
+<p>Symbols are maintained as they appear within the printed text.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
-        <language ident="lat">Latin</language>
+        
       </langUsage>
     </profileDesc>
-  </teiHeader>
+    <revisionDesc>
+      <!-- à vérifier pour chaque édition -->
+      <change who="#Galenus_verbatim" when="2024">All the chevrons and hooks have been respectively replaced by &lt;supplied&gt; and &lt;del&gt;.</change>
+      <!-- à vérifier pour chaque édition -->
+      <change who="#Galenus_verbatim" when="2024">The layout of the original edition has been marked up by &lt;pb&gt; and &lt;lb&gt; elements.</change>
+    </revisionDesc>
+</teiHeader>
   <text>
     <body>
       <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg034.1st1K-grc1">
@@ -151,8 +230,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="3" xml:id="_3">
-          <p rend="indent">
-<lb n="11"/>Ὡς δὲ τοῖς σκέλεσιν, οὕτω καὶ ταῖς χερσὶ τὸ γυμνάσιον τοῦτο δικαιότατον ἐν παντὶ
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="3">Cap. III.</num></label> Ὡς δὲ τοῖς σκέλεσιν, οὕτω καὶ ταῖς χερσὶ τὸ γυμνάσιον τοῦτο δικαιότατον ἐν παντὶ
 <lb n="12"/>σχήματι λαμβάνειν ἐθιζομένων τὴν σφαῖραν. ἀνάγκη γὰρ κἀνταῦθα τὴν ποικιλίαν τῶν σχημάτων ἄλλοτ’
 <lb n="13"/><milestone unit="kuhn.pb" n="5.904"/>ἄλλους τῶν μυῶν τείνειν σφοδρότερον, ὥστε πάντας ἐν μέρει πονοῦντας ἴσην ἔχειν ἀνάπαυλαν καὶ οὕτως
 <lb n="14"/>ἐν μέρει πάντας ἐνεργοῦντάς τε καὶ ἀναπαυομένους οὔτ’ ἀργοὺς μένειν τὸ πάμπαν, οὔτε κόποις ἁλίσκεσθαι
@@ -185,8 +264,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="4" xml:id="_4">
-          <p rend="indent">
-<lb n="22"/>Μάλιστ’ οὖν ἐπαινῶ γυμνάσιον, ὃ καὶ σώματος ὑγίειαν ἱκανὸν ἐκπορίζειν καὶ μερῶν
+<p rend="indent">
+<lb n="22"/><label type="head"><num value="4">Cap. IV.</num></label> Μάλιστ’ οὖν ἐπαινῶ γυμνάσιον, ὃ καὶ σώματος ὑγίειαν ἱκανὸν ἐκπορίζειν καὶ μερῶν
 <lb n="23"/>εὐαρμοστίαν καὶ ψυχῆς ἀρετήν, ἃ πάντα τῷ διὰ τῆς σμικρᾶς σφαίρας ὑπάρχει. καὶ γὰρ ψυχὴν εἰς
 <pb n="7"/>
 <lb n="1"/><milestone unit="kuhn.pb" n="5.907"/>πάντα δυνατὸν ὠφελεῖν καὶ τοῦ σώματος τὰ μέρη δι’ ἴσου πάντα γυμνάζει, ὃ καὶ μάλιστα εἰς ὑγίειαν
@@ -219,8 +298,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="5" xml:id="_5">
-          <p rend="indent">
-<lb n="5"/>Τὸ δ’ ὑπόλοιπον τοῦ λόγου περαινέσθω. βούλομαι γὰρ ἐφ’ οἷς εἷπον ἀγαθοῖς προσεῖναι
+<p rend="indent">
+<lb n="5"/><label type="head"><num value="5">Cap. V.</num></label> Τὸ δ’ ὑπόλοιπον τοῦ λόγου περαινέσθω. βούλομαι γὰρ ἐφ’ οἷς εἷπον ἀγαθοῖς προσεῖναι
 <lb n="6"/>τῷδε τῷ γυμνασίῳ, μηδ’ ὡς ἐκτός ἐστι κινδύνων παραλιπεῖν, οἶς τὰ πλεῖστα τῶν ἄλλων περιπίπτει.
 <lb n="7"/>δρόμοι μὲν γὰρ ὠκεῖς πολλοὺς ἤδη διέφθειραν, ἀγγεῖον ἐπίκαιρον ῥήξαντες· οὕτω δὲ καὶ φωναὶ
 <lb n="8"/><milestone unit="kuhn.pb" n="5.910"/>μεγάλαι θ’ ἅμα καὶ σφοδραὶ καθ’ ἕνα χρόνον ἀθρόως ἐκφωνηθεῖσαι, μεγίστων κακῶν οὐκ ὀλίγοις

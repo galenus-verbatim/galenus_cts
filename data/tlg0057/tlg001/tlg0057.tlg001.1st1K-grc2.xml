@@ -10,7 +10,7 @@
         <author xml:lang="lat">
           <name ref="http://viaf.org/viaf/44299175">Galenus</name>
         </author>
-        <editor>Kaibel, Georg</editor>
+        <editor role="editor">Kaibel, Georg</editor>
         <funder ref="https://www.mellon.org/">Andrew W. Mellon Foundation</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts</resp>
@@ -44,13 +44,44 @@
           <persName>Bruce Robertson</persName>
         </respStmt>
       </titleStmt>
-      <editionStmt resp="Galenus_verbatim">
-        <edition>Revised edition of the originally published versions of the electronic texts.</edition>
+      <editionStmt resp="#Galenus_verbatim">
+        <edition n="1">Revised edition of the originally published versions of the electronic texts.
+          <date type="revision" when="2024">2024</date>
+        </edition>
         <respStmt>
-          <resp></resp>
-          <orgName ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France</orgName>
+          <!-- paragraphe à vérifier pour chaque édition -->
+          <resp>To reuse this edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName>repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We changed the naming schemes of the milestones indicating the corresponding Kühn pages or added such milestones when they were missing. The layout of the original edition was marked up by &lt;pb&gt; and &lt;lb&gt; elements when they were missing.
+            We also added elements specific to critical editions, that were present in this edition but were missing in the TEI, mainly chevrons and hooks. For details, see the revisionDesc section.</resp>
+          <orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Galenus verbatim</resp>
+          <persName>Nathalie Rousseau, Sorbonne Université</persName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer, Optéos</resp>
+          <persName>Frédéric Glorieux</persName>
+        </respStmt>
+        <respStmt>
+          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+          <persName>Cahal Taaffe</persName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+          </respStmt>
+        <respStmt>
+          <resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+          <persName>Lucas Lemperriere, Université de Rouen</persName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+        </respStmt>
+        <!-- à vérifier pour chaque édition -->
+        <respStmt>
+          <resp from="2023" to="2024">Text verification and correction, Galenus verbatim</resp>
+          <persName></persName>
+          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+        <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
       </editionStmt>
       <publicationStmt>
         <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
@@ -67,7 +98,7 @@
           <monogr>
             <title xml:lang="lat">Claudii Galeni Protreptici quae supersunt</title>
             <author xml:lang="lat">Galenus</author>
-            <editor>Kaibel, Georg</editor>
+            <editor role="editor">Kaibel, Georg</editor>
             <imprint>
               <publisher>Weidmann</publisher>
               <pubPlace>Berlin</pubPlace>
@@ -77,6 +108,22 @@
           </monogr>
           <ref target="https://books.google.com/books?id=mnYIAAAAIAAJ">Google Books</ref>
         </biblStruct>
+        <biblStruct>
+          <!-- volume et page à vérifier -->
+          <monogr xml:id="Kuhn">
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Galenus</author>
+            <editor role="editor">Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">1</biblScope>
+              <biblScope unit="pp" from="1" to="39">1-39</biblScope>
+              <date>1821</date>
+            </imprint>
+          </monogr>
+          <ref target="https://hdl.handle.net/2027/hvd.hxpp8j?urlappend=%3Bseq=274%3Bownerid=27021597764275760-278">HathiTrust</ref>
+        </biblStruct>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
@@ -84,15 +131,57 @@
       <refsDecl n="CTS">
         <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
+      <editorialDecl resp="#Galenus_verbatim">
+        <correction>
+          <p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+        </correction>
+        <hyphenation eol="none">
+          <p>End-of-line hyphenation is silently removed where appropriate.</p>
+        </hyphenation>
+        <!-- à vérifier pour chaque édition -->
+        <interpretation>
+          <p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type is systematically specified with a rend value.</p>
+        </interpretation>
+        <!-- à vérifier pour chaque édition -->
+        <interpretation>
+          <p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+        </interpretation>
+        <!-- à vérifier pour chaque édition -->
+        <interpretation>
+          <p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+        </interpretation>
+        <!-- à vérifier pour chaque édition -->
+        <interpretation>
+          <p>Headings are marked up by a &lt;label&gt; element. Latin numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+        </interpretation>
+        <!-- à vérifier pour chaque édition -->
+        <interpretation>
+          <p>Verse lines are marked up by an &lt;l&gt; element.</p>
+        </interpretation>
+        <!-- à vérifier pour chaque édition -->
+        <interpretation>
+          <p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+        </interpretation>
+        <!-- à vérifier pour chaque édition -->
+        <interpretation>
+          <p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+        </interpretation>
+        <!-- à vérifier pour chaque édition -->
+        <normalization>
+          <p>Symbols are maintained as they appear within the printed text.</p>
+        </normalization>
+      </editorialDecl>
     </encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
-        <language ident="lat">Latin</language>
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change who="Galenus_verbatim">All the chevrons and hooks have been respectively replaced by &lt;supplied&gt; and &lt;del&gt;.</change>
+      <!-- à vérifier pour chaque édition -->
+      <change who="#Galenus_verbatim" when="2024">All the chevrons and hooks have been respectively replaced by &lt;supplied&gt; and &lt;del&gt;.</change>
+      <!-- à vérifier pour chaque édition -->
+      <change who="#Galenus_verbatim" when="2024">The layout of the original edition has been marked up by &lt;pb&gt; and &lt;lb&gt; elements.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -136,7 +225,7 @@
         </div>
         <div type="textpart" subtype="chapter" n="2" xml:id="_2">
           <p rend="indent">
-<lb n="8"/>πῶς οὖν οὐκ αἰσχρόν, ᾧ μόνῳ τῶν ἐν ἡμῖν κοινωνοῦμεν
+            <lb n="8"/>πῶς οὖν οὐκ αἰσχρόν, ᾧ μόνῳ τῶν ἐν ἡμῖν κοινωνοῦμεν
 <lb n="9"/>θεοῖς, τούτου μὲν ἀμελεῖν, ἐσπουδακέναι δὲ περί
 <lb n="10"/>τι τῶν ἄλλων, τέχνης μὲν ἀναλήψεως καταφρονοῦντα,
 <lb n="11"/>Τύχῃ δ’ ἑαυτὸν ἐπιτρέποντα· ἧς τὴν μοχθηρίαν ἐμφανίσαι
@@ -172,30 +261,31 @@
           <p rend="indent">
 <lb n="6"/>τὰ μὲν δὴ τῆς Τύχης ἔργα τοιαῦτα· τὸν δ’
 <lb n="7"/>Ἑρμῆν ἅτε λόγου μὲν ὄντα δεσπότην εὑρετὴν δὲ τέχνης
-<lb n="8"/>ἁπάσης θέασαι πάλιν ὅπως ἐξ <milestone unit="kuhn.pb" n="1.5"/>
-            <milestone unit="lineno" n="10"/>νεανίσκος ἐστὶν ὡραῖος, οὐκ ἐπίκτητον οὐδὲ κομμωτικὸν
-<lb n="9"/>ἔχων κάλλος, ἀλλ’ εὐθὺς ὥστε συνεμφαίνεσθαι τὴν
-<lb n="10"/>τῆς ψυχῆς ἀρετὴν δι’ αὐτοῦ. ἐστὶ δὲ φαιδρὸς μὲν τὰς
-<lb n="11"/>ὄψεις, δέδορκε δὲ δριμύ, καὶ ἡ βάσις τὸ πάντων σχημάτων
-<lb n="12"/>ἑδραιότατόν τε καὶ ἀμεταπτωτότατον ἔχει τὸν
-<lb n="13"/><milestone unit="lineno" n="15"/>κύβον. ἔσθ’ ὅτε δὲ καὶ αὐτὸν τὸν θεὸν τούτῳ τῷ
-<lb n="14"/>σχήματι κοσμοῦσιν. ἴδοις δ’ ἂν τοὺς θιασώτας αὐτοῦ
-<lb n="15"/>φαιδροὺς μὲν ὁμοίως τῷ καθηγουμένῳ θεῷ, μεμφομένους
-<lb n="16"/>δ’ οὐδέποτ’ αὐτὸν ὥσπερ οἱ τὴν Τύχην, οὐδ’ ἀπολειπομένους
-<lb n="17"/>ποτ’ οὐδὲ χωριζομένους, ἀλλ’ ἑπομένους τε καὶ
-<lb n="18"/><milestone unit="lineno" n="20"/>διὰ παντὸς ἀπολαύοντας τῆς προνοίας αὐτοῦ.
+<lb n="8"/>ἁπάσης θέασαι πάλιν ὅπως ἐξ <milestone unit="kuhn.pb" n="1.5"/> ὑπεναντίου τῇ τύχῃ
+            <lb n="9"/>κεκοσμήκασι πάλιν  <supplied reason="omitted">οἱ</supplied> γράφοντές τε καὶ πλάττοντες.
+<lb n="10"/>νεανίσκος ἐστὶν ὡραῖος, οὐκ ἐπίκτητον οὐδὲ κομμωτικὸν
+<lb n="11"/>ἔχων κάλλος, ἀλλ’ εὐθὺς ὥστε συνεμφαίνεσθαι τὴν
+<lb n="12"/>τῆς ψυχῆς ἀρετὴν δι’ αὐτοῦ. ἐστὶ δὲ φαιδρὸς μὲν τὰς
+<lb n="13"/>ὄψεις, δέδορκε δὲ δριμύ, καὶ ἡ βάσις τὸ πάντων σχημάτων
+<lb n="14"/>ἑδραιότατόν τε καὶ ἀμεταπτωτότατον ἔχει τὸν
+<lb n="15"/>κύβον. ἔσθ’ ὅτε δὲ καὶ αὐτὸν τὸν θεὸν τούτῳ τῷ
+<lb n="16"/>σχήματι κοσμοῦσιν. ἴδοις δ’ ἂν τοὺς θιασώτας αὐτοῦ
+<lb n="17"/>φαιδροὺς μὲν ὁμοίως τῷ καθηγουμένῳ θεῷ, μεμφομένους
+<lb n="18"/>δ’ οὐδέποτ’ αὐτὸν ὥσπερ οἱ τὴν Τύχην, οὐδ’ ἀπολειπομένους
+<lb n="19"/>ποτ’ οὐδὲ χωριζομένους, ἀλλ’ ἑπομένους τε καὶ
+<lb n="20"/>διὰ παντὸς ἀπολαύοντας τῆς προνοίας αὐτοῦ.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="4" xml:id="_4">
           <p rend="indent">
-<lb n="19"/>τοὺς δέ γε τῇ Τύχῃ συνεπομένους ἅπαντας μὲν
-<lb n="20"/>ἀργοὺς θεάσῃ καὶ τεχνῶν ἀμαθεῖς, ὀχουμένους δ’ ἐπ’
-<lb n="21"/>ἐλπίδων ἀεὶ καὶ θεούσῃ τῇ δαίμονι συνθέοντας, ἐνίους
-<lb n="22"/>μὲν ἐγγὺς ἐνίους δὲ πορρωτέρω, τινὰς δὲ καὶ τῆς χειρὸς
-<lb n="23"/><milestone unit="lineno" n="25"/>αὐτῆς ἐξημμένους. ἐν τούτοις ἅπασι καὶ τὸν Κροῖσον
-<lb n="24"/><milestone unit="kuhn.pb" n="1.6"/>ἐκεῖνον τὸν Λυδὸν ὄψει καὶ τὸν Πολυκράτην τὸν Σάμιον,
-<lb n="25"/>καὶ ἴσως θαυμάσεις τῷ μὲν τὸν Πακτωλὸν ἰδὼν ῥέοντα
-<lb n="26"/>χρυσόν, τῷ δὲ καὶ τοὺς θαλαττίους ὑπηρετοῦντας ἰχθῦς.
+<lb n="21"/>τοὺς δέ γε τῇ Τύχῃ συνεπομένους ἅπαντας μὲν
+<lb n="22"/>ἀργοὺς θεάσῃ καὶ τεχνῶν ἀμαθεῖς, ὀχουμένους δ’ ἐπ’
+<lb n="23"/>ἐλπίδων ἀεὶ καὶ θεούσῃ τῇ δαίμονι συνθέοντας, ἐνίους
+<lb n="24"/>μὲν ἐγγὺς ἐνίους δὲ πορρωτέρω, τινὰς δὲ καὶ τῆς χειρὸς
+<lb n="25"/>αὐτῆς ἐξημμένους. ἐν τούτοις ἅπασι καὶ τὸν Κροῖσον
+<lb n="26"/><milestone unit="kuhn.pb" n="1.6"/>ἐκεῖνον τὸν Λυδὸν ὄψει καὶ τὸν Πολυκράτην τὸν Σάμιον,
+<lb n="27"/>καὶ ἴσως θαυμάσεις τῷ μὲν τὸν Πακτωλὸν ἰδὼν ῥέοντα
+<lb n="28"/>χρυσόν, τῷ δὲ καὶ τοὺς θαλαττίους ὑπηρετοῦντας ἰχθῦς.
 <pb n="4"/>
 <lb n="1"/>μετὰ τούτων δὲ καὶ Κῦρον θεάσῃ καὶ Πρίαμον καὶ
 <lb n="2"/>Διονύσιον. ἀλλὰ τούτων αὐτῶν ὀλίγον ὕστερον ὄψει
@@ -254,20 +344,21 @@
 <lb n="19"/>εἴη <milestone unit="kuhn.pb" n="1.9"/>καὶ πάντων ὧν ἐδεῖτο μεταδιδόντας εὐθέως. ὡς δ’
 <lb n="20"/>εἰς Κυρήνην αὐτοῦ τὴν πατρίδα μέλλοντές τινες πλεῖν
 <lb n="21"/>ἐπυνθάνοντο, μή τι τοῖς οἰκείοις ἐπιστέλλει, κελεύειν
-<lb n="22"/>αὐτοὺς ἔφη ταῦτα κτᾶσθαι τὰ κτήματα ἃ καὶ ναυαγήσαντι συνεκκολυμβήσει.
+<lb n="22"/>αὐτοὺς ἔφη ταῦτα κτᾶσθαι τὰ κτήματα ἃ καὶ ναυαγήσαντι
+<lb n="23"/>συνεκκολυμβήσει.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="6" xml:id="_6">
           <p rend="indent">
-<lb n="23"/>πολλοὶ δὲ τῶν κακοδαιμόνων καὶ πάντα πρὸς
-<lb n="24"/><milestone unit="lineno" n="25"/>τὸν πλοῦτον ἀποβλεπόντων ἐν τοιαύταις πραγμάτων περιστάσεσι
-<lb n="25"/>γενόμενοι χρυσὸν ἢ ἄργυρον ἐξαψάμενοί τε καὶ
-<lb n="26"/>περιθέμενοι τῷ σώματι προσαπώλεσαν αὐτοῖς καὶ τὴν
-<lb n="27"/>ψυχήν, οὐδὲ τοῦτο δυνάμενοι συνιδεῖν ὅτι καὶ τῶν ἀλόγων
-<lb n="28"/>ζῴων αὐτοὶ πρῶτοι τὰ ταῖς τέχναις κεκοσμημένα μᾶλλον
-<lb n="29"/><milestone unit="lineno" n="30"/>ἀσπάζονται. καὶ γὰρ τοὺς πολεμικοὺς ἵππους καὶ τοὺς
-<lb n="30"/>θηρατικοὺς κύνας πρὸ τῶν ἄλλων τιμῶσι καὶ τοὺς μὲν
-<lb n="31"/>οἰκέτας ἐκδιδάσκονται τέχνας, πάμπολυ πολλάκις εἰς ﻿
+<lb n="24"/>πολλοὶ δὲ τῶν κακοδαιμόνων καὶ πάντα πρὸς
+<lb n="25"/>τὸν πλοῦτον ἀποβλεπόντων ἐν τοιαύταις πραγμάτων περιστάσεσι
+<lb n="26"/>γενόμενοι χρυσὸν ἢ ἄργυρον ἐξαψάμενοί τε καὶ
+<lb n="27"/>περιθέμενοι τῷ σώματι προσαπώλεσαν αὐτοῖς καὶ τὴν
+<lb n="28"/>ψυχήν, οὐδὲ τοῦτο δυνάμενοι συνιδεῖν ὅτι καὶ τῶν ἀλόγων
+<lb n="29"/>ζῴων αὐτοὶ πρῶτοι τὰ ταῖς τέχναις κεκοσμημένα μᾶλλον
+<lb n="30"/>ἀσπάζονται. καὶ γὰρ τοὺς πολεμικοὺς ἵππους καὶ τοὺς
+<lb n="31"/>θηρατικοὺς κύνας πρὸ τῶν ἄλλων τιμῶσι καὶ τοὺς μὲν
+<lb n="32"/>οἰκέτας ἐκδιδάσκονται τέχνας, πάμπολυ πολλάκις εἰς ﻿
 <pb n="6"/>
 <lb n="1"/>αὐτοὺς ἀργύριον ἀναλίσκοντες, ἑαυτῶν δ’ ἀμελοῦσι.
 <lb n="2"/>καίτοι <supplied reason="omitted">γ’</supplied> οὐκ αἰσχρὸν τὸν οἰκέτην μὲν ἐνίοτε δραχμῶν
@@ -542,8 +633,6 @@
             <l n="25">οὐδὲν κάκιον ἔστιν ἀθλητῶν γένους·</l>
             <l n="26"><milestone unit="kuhn.pb" n="1.24"/>οἳ πρῶτον οἰκεῖν οὔτε μανθάνουσιν εὖ</l>
             <l n="27">οὔτ’ ἂν δύναιντο. πῶς γὰρ ὅστις ἔστ’ ἀνὴρ</l>
-            <!-- ??? what is this line number for ? -->
-            <milestone unit="lineno" n="5"/>
             <l n="28">γνάθου τε δοῦλος νηδύος θ’ ἡττημένος,</l>
             <l n="29">κτήσαιτ’ ἂν ὄλβον εἰς ὑπεκτροφὴν πάτρας;</l>
             <l n="30">οὐδ’ αὖ πένεσθαι κἀξυπηρετεῖν τύχαις</l>
@@ -564,7 +653,6 @@
 <lb n="8"/>εἰ δὲ καὶ τούτων ἔτι λεπτομερέστερον ἀκούειν ἐθέλεις,
 <lb n="9"/>ἄκουε πάλιν ἅ φησι·
 </p>
-          <milestone unit="lineno" n="5"/>
           <lg>
             <l n="10">πότερα μαχοῦνται πολεμίοισιν ἐν χεροῖν</l>
             <l n="11">δίσκους ἔχοντες ἢ δι’ ἀσπίδων ποσὶ</l>
@@ -690,8 +778,8 @@
 <pb n="18"/>
 <lb n="1"/>κινεῖται. σωματικῆς μὲν οὖν ὑγιείας ἕνεκα φανερὸν ὡς
 <lb n="2"/>οὐδὲν ἄλλο γένος ἀθλιώτερόν ἐστι τῶν ἀθλητῶν. ὥστ’
-<lb n="3"/>εἰκότως ἄν τις εἴποι συγγενῶς ὀνομάζεσθαι, 〈ἢ ἀπὸ τοῦ
-<lb n="4"/>ἀθλίου〉 τῶν ἀθλητῶν προσαγορευθέντων ἢ ἀπὸ τοῦ
+            <lb n="3"/>εἰκότως ἄν τις εἴποι συγγενῶς ὀνομάζεσθαι, <supplied reason="omitted">ἢ ἀπὸ τοῦ
+<lb n="4"/>ἀθλίου</supplied> τῶν ἀθλητῶν προσαγορευθέντων ἢ ἀπὸ τοῦ
 <lb n="5"/>ἀθλητοῦ τὴν προσηγορίαν τῶν ἀθλίων ἐσχηκότων ἢ κοινῶς
 <lb n="6"/>ἀμφοτέρων καθάπερ ἀπὸ πηγῆς μιᾶς τῆς ἀθλιότητος
 <lb n="7"/>ὠνομασμένων.
@@ -800,28 +888,29 @@
 <lb n="9"/><milestone unit="kuhn.pb" n="1.37"/>πάνυ χαριέντως οὗτος ὁ μῦθος ἐπιδείκνυσι τὴν
 <lb n="10"/>ἀθλητικὴν ἰσχὺν οὐ τῶν ἀνθρωπίνων οὖσαν ἀσκημάτων·
 <lb n="11"/>καίτοι γ’ εἰ μηδ’ ἐν ἰσχύι πρωτεύουσι τῶν ζῴων οἱ
-<lb n="12"/>ἀθληταί, τίνος ἂν ἔτι τῶν ἄλλων ἐπήβολοι γενηθεῖεν ἀγαθῶν;
+<lb n="12"/>ἀθληταί, τίνος ἂν ἔτι τῶν ἄλλων ἐπήβολοι γενηθεῖεν
+<lb n="13"/>ἀγαθῶν;
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="14" xml:id="_14">
           <p rend="indent">
-<lb n="13"/>εἰ δὲ καὶ τὴν ἡδονὴν σώματός τις ἀγαθὸν εἶναι
-<lb n="14"/><milestone unit="lineno" n="15"/>φαίη, οὐδ’ αὐτῆς ταύτης αὐτοῖς μέτεστιν οὔτ’ οὖν ἀθλοῦσιν
-<lb n="15"/>οὔτε καταλύσασιν· εἴ γε παρὰ μὲν τὸν τῆς ἀθλήσεως
-<lb n="16"/>χρόνον ἐν πόνοις τε καὶ ταλαιπωρίαις εἰσίν, οὐ γυμναζόμενοι
-<lb n="17"/>μόνον ἀλλὰ καὶ πρὸς ἀνάγκην ἐσθίοντες, ἡνίκα δὲ
-<lb n="18"/>καὶ καταλύσαντες τύχοιεν, ἀνάπηροι τὰ πλεῖστα μέρη
-<lb n="19"/><milestone unit="lineno" n="20"/>τοῦ σώματος γίγνονται.
+<lb n="14"/>εἰ δὲ καὶ τὴν ἡδονὴν σώματός τις ἀγαθὸν εἶναι
+<lb n="15"/>φαίη, οὐδ’ αὐτῆς ταύτης αὐτοῖς μέτεστιν οὔτ’ οὖν ἀθλοῦσιν
+<lb n="16"/>οὔτε καταλύσασιν· εἴ γε παρὰ μὲν τὸν τῆς ἀθλήσεως
+<lb n="17"/>χρόνον ἐν πόνοις τε καὶ ταλαιπωρίαις εἰσίν, οὐ γυμναζόμενοι
+<lb n="18"/>μόνον ἀλλὰ καὶ πρὸς ἀνάγκην ἐσθίοντες, ἡνίκα δὲ
+<lb n="19"/>καὶ καταλύσαντες τύχοιεν, ἀνάπηροι τὰ πλεῖστα μέρη
+<lb n="20"/>τοῦ σώματος γίγνονται.
 </p>
           <p rend="indent">
-<lb n="20"/>τάχ’ οὖν ἐπὶ τῷ χρήματα πάντων ἀθροίζειν πλεῖστα
-<lb n="21"/>σεμνύνονται· καὶ μὴν ἔστιν ὑμῖν θεάσασθαι πάντας
-<lb n="22"/>αὐτοὺς ὀφείλοντας οὐ μόνον ἐκεῖνον τὸν χρόνον καθ’ ὃν
-<lb n="23"/>ἀθλοῦσιν ἀλλὰ καὶ καταλύσαντας τὴν ἄσκησιν, οὐδ’ ἂν
-<lb n="24"/><milestone unit="lineno" n="25"/>εὕροις ἀθλητὴν οὐδένα πλουσιώτερον ἑνὸς τῶν ἐπιτυχόντων
-<lb n="25"/>οἰκονόμων ἀνδρὸς πλουσίου. ἐστὶ δ’ οὐδ’ αὐτὸ <milestone unit="kuhn.pb" n="1.38"/>τὸ
-<lb n="26"/>πλουτεῖν ἐξ ἐπιτηδεύματος ἀξιόλογον ἁπλῶς, ἀλλὰ τὸ
-<lb n="27"/>τοιαύτην ἐπίστασθαι τέχνην ἣ καὶ ναυαγήσασι συνεκκολυμβήσει·
+<lb n="21"/>τάχ’ οὖν ἐπὶ τῷ χρήματα πάντων ἀθροίζειν πλεῖστα
+<lb n="22"/>σεμνύνονται· καὶ μὴν ἔστιν ὑμῖν θεάσασθαι πάντας
+<lb n="23"/>αὐτοὺς ὀφείλοντας οὐ μόνον ἐκεῖνον τὸν χρόνον καθ’ ὃν
+<lb n="24"/>ἀθλοῦσιν ἀλλὰ καὶ καταλύσαντας τὴν ἄσκησιν, οὐδ’ ἂν
+<lb n="25"/>εὕροις ἀθλητὴν οὐδένα πλουσιώτερον ἑνὸς τῶν ἐπιτυχόντων
+<lb n="26"/>οἰκονόμων ἀνδρὸς πλουσίου. ἐστὶ δ’ οὐδ’ αὐτὸ <milestone unit="kuhn.pb" n="1.38"/>τὸ
+<lb n="27"/>πλουτεῖν ἐξ ἐπιτηδεύματος ἀξιόλογον ἁπλῶς, ἀλλὰ τὸ
+<lb n="28"/>τοιαύτην ἐπίστασθαι τέχνην ἣ καὶ ναυαγήσασι συνεκκολυμβήσει·
 <pb n="22"/>
 <lb n="1"/>ὅπερ οὔτε τοῖς διοικοῦσι τὰ τῶν πλουσίων
 <lb n="2"/>οὔτε τοῖς τελώναις ἢ τοῖς ἐμπόροις ὑπάρχει. καίτοι

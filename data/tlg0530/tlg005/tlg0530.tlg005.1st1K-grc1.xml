@@ -8,7 +8,7 @@
       <titleStmt>
         <title xml:lang="lat">De fasciis</title>
         <author xml:lang="lat">Pseudo-Galenus</author>
-        <editor>Kühn, Karl Gottlob</editor>
+        <editor role="editor">Kühn, Karl Gottlob</editor>
         <funder>Andrew W. Mellon Foundation</funder>
         <respStmt>
           <resp>Published original versions of the electronic texts</resp>
@@ -42,7 +42,38 @@
           <persName>Bruce Robertson</persName>
         </respStmt>
       </titleStmt>
-      <publicationStmt>
+<editionStmt resp="#Galenus_verbatim">
+<edition n="1">Revised edition of the originally published versions of the electronic texts.
+<date type="revision" when="2024">2024</date>
+</edition>
+<respStmt>
+<resp>To reuse the Kühn’s edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We added bibliographical references to the previous editions referred to in Kühn’s edition as "Bas." and "Chart.": that of the Γαληνοῦ Ἅπαντα published in Basel (hence referred to as #Basel) and the Operum Hippocratis Coi, et Galeni Pergameni of René Chartier (hence referred to as #Chartier); we changed the naming schemes of the milestones indicating the corresponding Basel and Chartier pages in Kühn’s edition, and added the corresponding Basel and Chartier volume number. The editions other than that of Kühn were given milestones indicating the corresponding Kühn volume and pages when they were missing. Treatises from Kühn’s edition were given line numbers. We also added elements of structuration that were present in Kühn’s edition but were missing in the TEI, mainly the division of chapters into sections in some treatises, as well as the header for those sections. The text of headings containing the name of chapter and numbers of chapters and sections have been restored, as well as the original symbols as they appear within the printed text of Kühn’s edition. The text numbered tlg0057.tlg096 that was separately edited was reinserted in the tlg0057.tlg095 in accordance with its location within Kühn’s edition. For details, see the revisionDesc section.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Editor-in-Chief, Galenus verbatim</resp>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Nathalie Rousseau, Sorbonne Université</persName>
+</respStmt>
+<respStmt>
+<resp>Lead Developer, Optéos</resp>
+<persName>Frédéric Glorieux</persName>
+</respStmt>
+<respStmt>
+<resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<persName>Cahal Taaffe</persName>
+</respStmt>
+<respStmt>
+<resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
+<persName>Lucas Lemperriere, Université de Rouen</persName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+</respStmt>
+<funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
+<funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
+</editionStmt>
+<publicationStmt>
         <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
         <publisher>University of Leipzig</publisher>
         <pubPlace>Germany</pubPlace>
@@ -57,7 +88,7 @@
           <monogr>
             <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
             <author xml:lang="lat">Pseudo-Galenus</author>
-            <editor>Kühn, Karl Gottlob</editor>
+            <editor role="editor">Kühn, Karl Gottlob</editor>
             <imprint>
               <publisher>Cnobloch</publisher>
               <pubPlace>Leipzig</pubPlace>
@@ -92,13 +123,62 @@
       <refsDecl n="CTS">
         <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
-    </encodingDesc>
+<editorialDecl resp="#Galenus_verbatim">
+<correction>
+<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+</correction>
+<hyphenation eol="none">
+<p>End-of-line hyphenation is silently removed where appropriate.</p>
+</hyphenation>
+<interpretation>
+<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type has been systematically specified with a rend value.</p>
+</interpretation>
+<interpretation>
+<p>Titles for books of treatises are marked up by a &lt;head&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Divisions in works, books, chapters, sections are marked up by a &lt;div&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Headings are marked up by a &lt;label&gt; element. Greek numbers in headings of chapters or sections are marked up by a &lt;num&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Verse lines are marked up by an &lt;l&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Linegroups are marked up by an &lt;lg&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>Tables are marked up by a &lt;table&gt; element.</p>
+</interpretation>
+<interpretation>
+<p>In the commentaries, Hippocratic lemmas are marked up by a &lt;quote&gt; element.</p>
+</interpretation>
+<normalization>
+<p>Original symbols are maintained as they appear within the printed text of Kühn’s edition.</p>
+</normalization>
+</editorialDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+<revisionDesc>
+<change who="#Galenus_verbatim" when="2023">First round of revisions for publication on the Galenus verbatim website.</change>
+<change who="#Galenus_verbatim" when="2023">Added bibliographical information on the editions referred to in Kühn’s edition as "Bas." and "Chart."</change>
+<change who="#Galenus_verbatim" when="2023">Corrected and added milestone tags for the missing page changes of both Basel and Chartier editions when they were missing.</change>
+<change who="#Galenus_verbatim" when="2023">Punctual correction to the digitization of Kühn’s text.</change>
+<change who="#Galenus_verbatim" when="2023">Correction and additions of the sections &lt;div&gt; level when they were missing to better reflect the structure of Kühn’s edition.</change>
+<change who="#Galenus_verbatim" when="2023">Modification to the subtype of some &lt;div&gt; to better reflect Kühn’s structure.</change>
+<change who="#Galenus_verbatim" when="2023">Added &lt;label&gt; elements for all headings of chapters and sections.</change>
+<change who="#Galenus_verbatim" when="2023">Added &lt;l&gt; elements for verse lines and &lt;lg&gt; elements for linegroups.</change>
+<change who="#Galenus_verbatim" when="2023">Replaced abbreviations introduced by the initial transcription by the original symbols as they appear within the printed text of Kühn’s edition.</change>
+<change who="#Galenus_verbatim" when="2023">Added line number.</change>
+<change who="#Galenus_verbatim" when="2024">The text of headings containing the name of chapter and numbers of chapters and sections have been restored and marked with &lt;label&gt; and &lt;num&gt; elements.</change>
+<change who="#Galenus_verbatim" when="2024">All the indentations have been restored.</change>
+</revisionDesc>
+</teiHeader>
   <text>
     <body>
       <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0530.tlg005.1st1K-grc1">
@@ -107,8 +187,8 @@
         <head>ΓΑΛΗΝΟΥ ΠΕΡΙ ΤΩΝ ΕΠΙΔΕΣΜΩΝ
 <lb/>ΒΙΒΛΙΟΝ.
 </head>
-          <p rend="indent">
-<lb n="1"/><milestone unit="ed2page" n="12.469"/>Οὐκ ἀσκόπως μοὶ δοκεῖ ὁ παλαιὸς
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="1">Κεφ. αʹ.</num></label> <milestone unit="ed2page" n="12.469"/>Οὐκ ἀσκόπως μοὶ δοκεῖ ὁ παλαιὸς
 <lb n="2"/>Ἱπποκράτης ἐπιβλέψας τὰς ἄλλας τέχνας ἀρχόμενος τῆς ἐν
 <lb n="3"/>τῷ πράττειν καθαριότητος ἐκπεφωνηκέναι. ἐμοὶ δὲ ἁνδάνει
 <lb n="4"/>μὲν πάσῃ τῇ τέχνῃ προσέχειν τὸν νόον· καὶ γὰρ ὁκόσα ἔργα
@@ -193,7 +273,7 @@
         </div>
         <div type="textpart" subtype="chapter" n="2" xml:id="_2">
           <p rend="indent">
-<lb n="3"/>Ἐπανάγωμεν δὲ τὸν λόγον ἐπὶ τὴν τῶν
+            <lb n="3"/><label type="head"><num value="2">Κεφ. βʹ.</num></label> Ἐπανάγωμεν δὲ τὸν λόγον ἐπὶ τὴν τῶν
 <lb n="4"/>ἐπιδέσμων τε καὶ ἐπιδέσεως τεχνολογίαν· καὶ δὴ ἐν τρόποις
 <lb n="5"/>ἴδωμεν τίνι διαφέρουσιν ἀλλήλων οἱ ἐπίδεσμοι, ὕλῃ, σχέσει,
 <lb n="6"/>μήκει, πλάτει κατασκευῇ· ὕλῃ μὲν ἐπεὶ οἱ μὲν αὐτῶν εἰσιν
@@ -232,8 +312,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="3" xml:id="_3">
-          <p rend="indent">
-<lb n="3"/>Ἔστω δὲ κοινὸν μὲν ἐπὶ πάντων παραγγελμάτων
+<p rend="indent">
+<lb n="3"/><label type="head"><num value="3">Κεφ. γʹ.</num></label> Ἔστω δὲ κοινὸν μὲν ἐπὶ πάντων παραγγελμάτων
 <lb n="4"/>ἐπιδεομένων τὸ εὐπόριστον εἶναι καὶ τοῖς παροῦσιν
 <lb n="5"/>ὡς ἀρίστοις δύνασθαι χρῆσθαι. ἐκλογῆς δέ τινος οὔσης τὸ
 <lb n="6"/>αἱρεῖσθαι τοὺς ἐπιδέσμους, ὡς εἶπεν ὁ Ἱπποκράτης· φησὶ γὰρ
@@ -263,8 +343,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="4" xml:id="_4">
-          <p rend="indent">
-<lb n="12"/>Τῶν δὲ ἐπιδέσεων αἱ μὲν, ὡς ἔμπροσθεν
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="4">Κεφ. δʹ.</num></label> Τῶν δὲ ἐπιδέσεων αἱ μὲν, ὡς ἔμπροσθεν
 <lb n="13"/>εἶπον, εἰσὶν ἁπλαῖ, αἱ δὲ ποικίλαι· καὶ τούτων αἱ μὲν ἀπὸ
 <lb n="14"/>τῶν ἐπιδεομένων μερῶν ἔτυχον τῆς προσηγορίας, αἱ δὲ ἀπὸ
 <lb n="15"/>τοῦ συμβεβηκότος, ἄλλαι δὲ κατὰ μεταφορὰν τῆς πρὸς τὰ
@@ -291,8 +371,8 @@
         </div>
         <pb n="18a.778"/>
         <div type="textpart" subtype="chapter" n="5" xml:id="_5">
-          <p rend="indent">
-<lb n="1"/>Ἄξιον ἐπισκέψασθαι πρότερον ὡς ἔτυχε τὴν
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="5">Κεφ. εʹ.</num></label> Ἄξιον ἐπισκέψασθαι πρότερον ὡς ἔτυχε τὴν
 <lb n="2"/>πρώτην τῶν ἐπιδέσμων καταβολὴν ποιεῖσθαι χρὴ καὶ περὶ
 <lb n="3"/>τούτου ζητητέον ἐστίν· οἱ μὲν γὰρ πρὸ ἡμῶν πάντες τόπους
 <lb n="4"/>τινὰς ἀφώρισαν τοῦ σώματος, ἐφ’ ὧν δεῖ τὴν θέσιν
@@ -335,8 +415,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="6" xml:id="_6">
-          <p rend="indent">
-<lb n="6"/>Περὶ δὲ εὐχρησίας τῶν ἐπιδεομένων τάδε
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="6">Κεφ. στʹ.</num></label> Περὶ δὲ εὐχρησίας τῶν ἐπιδεομένων τάδε
 <lb n="7"/>χρὴ εἰδέναι· ὡς τῶν ἐπιδέσεων αἱ μὲν ἰωμένοις τισὶν ὑπηρετοῦσι
 <lb n="8"/>συνοχῆς χάριν παραλαμβανόμεναι, αἱ δὲ οὐκ εἰς
 <lb n="9"/>τοῦτο, εἰς δὲ τὸ αὐτουργῆσαι παραλαμβάνονται, αὗται τὴν
@@ -379,8 +459,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="7" xml:id="_7">
-          <p rend="indent">
-<lb n="11"/>Σύμμετρον ῥάκος λαβόντες ἐπισχίζομεν εἰς
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="7">Κεφ. ζʹ.</num></label> Σύμμετρον ῥάκος λαβόντες ἐπισχίζομεν εἰς
 <lb n="12"/>σκέλη ἓξ τὸ μέσον συνεχὲς ἐῶντες, ὃ καὶ ἐπιβάλλομεν τῇ
 <lb n="13"/>κορυφῇ, τῶν δὲ σκελῶν καὶ τῶν παρειμένων λαβόμενοι τῶν
 <lb n="14"/>μέσων ἐπιῤῥήγνυμεν τὸ κατὰ τὴν ἕξιν τῶν ὤτων μέρος ὑπό
@@ -396,8 +476,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="8" xml:id="_8">
-          <p rend="indent">
-<lb n="6"/>Διαιροῦμεν τὸ ῥάκος εἰς σκέλη τέσσαρα τὸ
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="8">Κεφ. ηʹ.</num></label> Διαιροῦμεν τὸ ῥάκος εἰς σκέλη τέσσαρα τὸ
 <lb n="7"/>μέσον συνεχὲς ἐῶντες, ὃ καὶ ἐπιβάλλομεν τῷ μετώπῳ, τὰς
 <lb n="8"/>ἀρχὰς δὲ τὰς ἐμπροσθίους ἀπάγομεν ἐπὶ ἰνίον κατὰ τῶν
 <lb n="9"/>ὀπισθίων ἀρχῶν κατὰ τῶν παρειμένων κἀκεῖ ἁμματίζομεν,
@@ -408,8 +488,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="9" xml:id="_9">
-          <p rend="indent">
-<lb n="14"/>Διελόντες τὸ ῥάκος εἰς σκέλη ὀκτὼ τοῦ μέσου
+<p rend="indent">
+<lb n="14"/><label type="head"><num value="9">Κεφ. θʹ.</num></label> Διελόντες τὸ ῥάκος εἰς σκέλη ὀκτὼ τοῦ μέσου
 <lb n="15"/>ἀσχίστου καταλειπομένου μεγέθει ὡς ὅλην τὴν κεφαλὴν
 <lb n="16"/>σκεπάσαι ἐπιβάλλοντες ὕλῃ τῇ κεφαλῇ καὶ τῶν σκελῶν παρειμένων
 <lb n="17"/>δύο ἄγομεν ἐπὶ τὸν ἀνθερεῶνα διελόντες αὐτῶν
@@ -430,8 +510,8 @@
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="10" xml:id="_10">
-          <p rend="indent">
-<lb n="14"/>Ἡ μεσότης τῆς καθ’ ὅλης κεφαλῆς
+<p rend="indent">
+<lb n="14"/><label type="head"><num value="10">Κεφ. ιʹ.</num></label> Ἡ μεσότης τῆς καθ’ ὅλης κεφαλῆς
 <lb n="15"/>τῶν ἀρχῶν· αἱ μὲν τέσσαρες κατὰ μετώπου ὑπ’ εὐθείας
 <lb n="16"/>κρεμάσθωσαν, αἱ δὲ ἄλλαι τέσσαρες κατὰ ἰνίου. τῶν δὲ
 <lb n="17"/>κατὰ μετώπου δύο αἱ ἔξωθεν σχισθεῖσαι ἐπὶ ἰνίον ἀπαγέσθωσαν,
@@ -443,8 +523,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="11" xml:id="_11">
-          <p rend="indent">
-<lb n="3"/>Ἁρμόζει μὲν ἐφ’ ὧν ὅλην κεφαλὴν σκεπάσαι
+<p rend="indent">
+<lb n="3"/><label type="head"><num value="11">Κεφ. ιαʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν ὅλην κεφαλὴν σκεπάσαι
 <lb n="4"/>θέλομεν παρασκεπάστρα ἐκλήθη. ὁ δὲ κάτοχός ἐστι
 <lb n="5"/>ταινία ὑπερμήκης ὑπὲρ τὴν σκεπάστραν κατὰ μῆκος κύκλῳ
 <lb n="6"/>τῷ προσώπῳ καὶ τῇ κεφαλῇ περιτιθεμένη εἰς τὴν κατάληψιν
@@ -473,8 +553,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="12" xml:id="_12">
-          <p rend="indent">
-<lb n="11"/>Οὕτως λοιπὸν δ’ ἂν εἴη καὶ περὶ τῶν ποικίλων
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="12">Κεφ. ιβʹ.</num></label> Οὕτως λοιπὸν δ’ ἂν εἴη καὶ περὶ τῶν ποικίλων
 <lb n="12"/>εἰπεῖν, πρότερον ἐμφανίσαντα ὡς τῶν ἐπινεμήσεων ἡ
 <lb n="13"/>μέν τις λέγεται εὐθεῖα, ἡ δὲ πλαγία, ἡ δὲ λοξὴ, ὡς τὰ
 <lb n="14"/>ὀνόματα σημαίνει· ἄλλη δὲ στεφανιαία, ἡ δὲ μετωπιαία, ἡ
@@ -490,8 +570,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="13" xml:id="_13">
-          <p rend="indent">
-<lb n="6"/>Αὕτη ἡ ἐπίδεσις ἁρμόζει κατὰ μέν τινας
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="13">Κεφ. ιγʹ.</num></label> Αὕτη ἡ ἐπίδεσις ἁρμόζει κατὰ μέν τινας
 <lb n="7"/>ἐπὶ τῶν κατὰ τὰς ῥοφὰς διαστάσεων, κατὰ δέ τινας ἐφ’ ὧν
 <lb n="8"/>τραύματος ὄντος τὰ παρακείμενα ἀφέστηκεν εἰς τὴν ἐκείνων
 <lb n="9"/>μὲν κόλλησιν, τῶν δὲ ὑγρῶν διὰ τὸ ἐστεγνῶσθαι τὸ
@@ -507,8 +587,8 @@
         </div>
         <pb n="18a.788"/>
         <div type="textpart" subtype="chapter" n="14" xml:id="_14">
-          <p rend="indent">
-<lb n="1"/>Ἁρμόζει μὲν καὶ ἐφ’ ὧν ὁ θόλος. συντελεῖται
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="14">Κεφ. ιδʹ.</num></label> Ἁρμόζει μὲν καὶ ἐφ’ ὧν ὁ θόλος. συντελεῖται
 <lb n="2"/>δὲ οὕτως· ἡ τοῦ τελαμῶνος ἀρχὴ τάσσεται ὑπὸ ἰνίον,
 <lb n="3"/>εἶτα ἄγεται τὸ σπείραμα ὑπὸ λοβὸν ὠτὸς, εἶτ’ ἐπὶ βρέγμα
 <lb n="4"/>λοξὴ καὶ ἐπὶ ἰνίον. ἀπὸ ἰνίου λοξὴ ἐπὶ βρέγμα ἀντικειμένη
@@ -521,8 +601,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="15" xml:id="_15">
-          <p rend="indent">
-<lb n="11"/>Ἁρμόζει μὲν ἐφ’ ὧν κορυφὴν καὶ βρέγμα
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="15">Κεφ. ιεʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν κορυφὴν καὶ βρέγμα
 <lb n="12"/>συνεπιδῆσαι θέλομεν. συντελεῖται δ’ οὕτω· τάξαντες κατ’
 <lb n="13"/>ἰνίου ἄγομεν τὸ σπείραμα εὐθυτενεῖ κατὰ κορυφῆς ἐπὶ τὸ
 <lb n="14"/>μέτωπον, ἐνταῦθά τε παριστάντες τῷ λιχανῷ τῆς ἀριστερᾶς
@@ -535,8 +615,8 @@
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="16" xml:id="_16">
-          <p rend="indent">
-<lb n="2"/>Εὐθετεῖ μὲν ἐφ’ ὧν καὶ ὁ θόλος.
+<p rend="indent">
+<lb n="2"/><label type="head"><num value="16">Κεφ. ιστʹ.</num></label> Εὐθετεῖ μὲν ἐφ’ ὧν καὶ ὁ θόλος.
 <lb n="3"/>ἔχει δέ τινα μετὰ τῆς εὐχρηστίας καὶ εὐμορφίαν. ἐπὶ
 <lb n="4"/>συντελουμένῳ τῷ θόλῳ στενοῦ τελαμῶνος τὴν ἀρχὴν καὶ
 <lb n="5"/>τάξαι δεῖ ὑπὸ ταῖς ἐπινεμήσεσι ταῖς κατ’ ἰνίου, ἐκεῖθέν τε
@@ -549,8 +629,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="17" xml:id="_17">
-          <p rend="indent">
-<lb n="12"/>Ἐπὶ συντετελεσμένῳ τῷ θόλῳ δακτυλιαίου
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="17">Κεφ. ιζʹ.</num></label> Ἐπὶ συντετελεσμένῳ τῷ θόλῳ δακτυλιαίου
 <lb n="13"/>τελαμῶνος ἢ ἔτι στενοτέρου τὴν ἀρχὴν τάξαντες ἐπὶ ἰνίον
 <lb n="14"/>ἄγομεν τὸ σπείραμα εὐθυτενεῖ ἐπὶ κορυφὴν καὶ βρέγμα μέσον
 <lb n="15"/>καὶ μέτωπον πτύξαντές τε κατὰ μετώπου ἀνάγομεν πάλιν
@@ -570,8 +650,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="18" xml:id="_18">
-          <p rend="indent">
-<lb n="9"/>Ἁρμόζει μὲν ἐφ’ ὧν καὶ ὁ θόλος Γλαυκίου.
+<p rend="indent">
+<lb n="9"/><label type="head"><num value="18">Κεφ. ιηʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν καὶ ὁ θόλος Γλαυκίου.
 <lb n="10"/>συντελεῖται δὲ οὕτως· μέτριόν τι τῆς ταινίας μέρος
 <lb n="11"/>ἐάσας κατὰ τοῦ προσώπου ἀγαγὼν τὸ σπείραμα ἐπὶ βρέγμα,
 <lb n="12"/>ἐπὶ κορυφὴν, ἰνίον ἐκεῖ τε ὑπηρέτῃ κελεύσας διακρατῆσαι
@@ -581,8 +661,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="19" xml:id="_19">
-          <p rend="indent">
-<lb n="16"/>Ἁρμόζει μὲν ἐπὶ πάντων τῶν διὰ ῥευματισμὸν
+<p rend="indent">
+<lb n="16"/><label type="head"><num value="19">Κεφ. ιθʹ.</num></label> Ἁρμόζει μὲν ἐπὶ πάντων τῶν διὰ ῥευματισμὸν
 <lb n="17"/>ὀμμάτων χρόνιον περιεσκυθισμένων πρὸς τὴν συναγωγὴν
 <lb n="18"/>τῶν διῃρημένων καὶ ἄλλως ἔκ τινος αἰτίας ὑπὲρ τὸ
 <pb n="18a.791"/>
@@ -604,8 +684,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="20" xml:id="_20">
-          <p rend="indent">
-<lb n="16"/>Εὐθετεῖ μὲν ἐφ’ ὧν βρέγμα καὶ τὰ παρακείμενα
+<p rend="indent">
+<lb n="16"/><label type="head"><num value="20">Κεφ. κʹ.</num></label> Εὐθετεῖ μὲν ἐφ’ ὧν βρέγμα καὶ τὰ παρακείμενα
 <lb n="17"/>τούτῳ συνεπιδῆσαι θέλομεν, ἐπιτελεῖται δὲ οὕτως·
 <lb n="18"/>ἐπὶ τῷ καλουμένῳ ἡμιῤῥόμβῳ γεγονότι χωρὶς τῆς μετωπιαίας
 <pb n="18a.792"/>
@@ -619,15 +699,15 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="21" xml:id="_21">
-          <p rend="indent">
-<lb n="8"/>Ἁρμόζει μὲν ἐφ’ ὧν καὶ ἡ σπεγκρανίς.
+<p rend="indent">
+<lb n="8"/><label type="head"><num value="21">Κεφ. καʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν καὶ ἡ σπεγκρανίς.
 <lb n="9"/>ἐστὶ δὲ πολὺ ἀσφαλεστέρα· μετὰ γὰρ τὴν σπεγκρανίδα ὁ
 <lb n="10"/>λαγωὸς χωρὶς ὤτων ἐπιπλέκεται, ἵνα μὴ πολυλογῶμεν.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="22" xml:id="_22">
-          <p rend="indent">
-<lb n="11"/>Ἁρμόζει μὲν ἐφ’ ὧν καὶ ἡ ἀδέσποτος Θαὶς,
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="22">Κεφ. κβʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν καὶ ἡ ἀδέσποτος Θαὶς,
 <lb n="12"/>λέγω δὲ ἐπὶ βρέγματος καὶ τῶν πλησίον τόπων. συντελεῖται
 <lb n="13"/>δὲ οὕτω· σύμμετρον μέρος ἐάσας τῆς ταινίας κατὰ
 <lb n="14"/>προσώπου παρειμένον ἕλκε τὸ σπείραμα κατὰ βρέγματος
@@ -643,8 +723,8 @@
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="23" xml:id="_23">
-          <p rend="indent">
-<lb n="6"/>Ἁρμόζει μὲν ἐφ’ ὧν καθ’ ἓν μέρος
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="23">Κεφ. κγʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν καθ’ ἓν μέρος
 <lb n="7"/>ἐπιδῆσαι θέλομεν γένυν ἤτοι τραύματος χάριν ἢ ἐξαρθρήματος
 <lb n="8"/>ἢ τοῦ κυνικοῦ καλουμένου σπασμοῦ ἤ τινος ἄλλου.
 <lb n="9"/>ἀρχὴ κατ’ ἰνίου λοξὴ ἐπὶ κορυφὴν καὶ βρέγμα κρόταφον
@@ -659,8 +739,8 @@
         </div>
         <pb n="18a.794"/>
         <div type="textpart" subtype="chapter" n="24" xml:id="_24">
-          <p rend="indent">
-<lb n="1"/>Ἁρμόζουσα εὑρίσκεται αὕτη ἐφ’ ὧν κατ’
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="24">Κεφ. κδʹ.</num></label> Ἁρμόζουσα εὑρίσκεται αὕτη ἐφ’ ὧν κατ’
 <lb n="2"/>ἀμφότερα τὰ μέρη τῆς γένυος ἢ ἐξαρθρήματα ἤ τι ἄλλο
 <lb n="3"/>μέρος τῆς ἐπὶ τῆς μονομεροῦς εἰρημένον ἐστίν. ἀρχὴ κατ’
 <lb n="4"/>ἰνίου λοξὴ ἐπὶ κορυφὴν, βρέγμα καὶ παρειὰς ὑπὸ γένειον,
@@ -670,16 +750,16 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="25" xml:id="_25">
-          <p rend="indent">
-<lb n="8"/>Ἀρχὴ ὑπὸ ἰνίῳ ὠτὸς καὶ ὑπὸ γενειάδα,
+<p rend="indent">
+<lb n="8"/><label type="head"><num value="25">Κεφ. κεʹ.</num></label> Ἀρχὴ ὑπὸ ἰνίῳ ὠτὸς καὶ ὑπὸ γενειάδα,
 <lb n="9"/>εἶτα παρειὰς καὶ λοξὴ παρὰ κορυφὴν ἐπὶ ἰνίον ὑπὸ λοβὸν
 <lb n="10"/>ὠτὸς ἀντικειμένου ὑπὸ γένειον, ἔπειτα παρειὰς, ἔπειτα λοξὴ
 <lb n="11"/>κατὰ βρέγματος ἐπὶ ἰνίον, εἶτα μετωπιαία.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="26" xml:id="_26">
-          <p rend="indent">
-<lb n="12"/>Ἡ μεσότης τῷ ἰνίῳ ἐντιθέσθω τὰ εἰλήματα,
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="26">Κεφ. κστʹ.</num></label> Ἡ μεσότης τῷ ἰνίῳ ἐντιθέσθω τὰ εἰλήματα,
 <lb n="13"/>ἀπὸ κορυφῆς δὲ λοξῶς ἐπὶ βρέγμα, ἵνα κατ’ αὐτοὺς
 <lb n="14"/>χίασμα γένηται, εἶτ’ ἐπὶ παρειὰς ὑπὸ γένειον ὑπὸ λοβοὺς
 <lb n="15"/>ὤτων ἐπὶ ἰνίον, ἀπὸ ἰνίου κυκλοτερῶς ἐπὶ μέτωπον καὶ ἰνίον·
@@ -688,23 +768,23 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="27" xml:id="_27">
-          <p rend="indent">
-<lb n="2"/>Ἡ μεσότης κατὰ μετώπου τὰ σπειράματα
+<p rend="indent">
+<lb n="2"/><label type="head"><num value="27">Κεφ. κζʹ.</num></label> Ἡ μεσότης κατὰ μετώπου τὰ σπειράματα
 <lb n="3"/>ἐπὶ ἰνίον καὶ κατ’ αὐτοὺς χίασμα· εἶτα ὑπὸ λοβοὺς
 <lb n="4"/><milestone unit="ed2page" n="12.481"/>ὤτων ὑπ’ ἀνθερεῶνα, εἶτα παρειαὶ καὶ ἐπὶ βρέγμα, λοξαὶ
 <lb n="5"/>ἐπὶ ἰνίον, εἶτα γενειὰς καὶ μετωπιαίας.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="28" xml:id="_28">
-          <p rend="indent">
-<lb n="6"/>Μεσότης κατ’ ἰνίου. αἱ ἀρχαὶ ὑπὸ λοβοὺς
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="28">Κεφ. κηʹ.</num></label> Μεσότης κατ’ ἰνίου. αἱ ἀρχαὶ ὑπὸ λοβοὺς
 <lb n="7"/>ὤτων, ὑπὸ γένειον, ἔπειτα παρειὰς καὶ τὰ λοιπὰ ὁμοίως τῇ
 <lb n="8"/>πρὸς ταύτης.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="29" xml:id="_29">
-          <p rend="indent">
-<lb n="9"/>Ἀρχὴ κατ’ ἰνίου τὸ σπείραμα ὑπὸ λοβὸν
+<p rend="indent">
+<lb n="9"/><label type="head"><num value="29">Κεφ. κθʹ.</num></label> Ἀρχὴ κατ’ ἰνίου τὸ σπείραμα ὑπὸ λοβὸν
 <lb n="10"/>ὠτὸς ἐπὶ κρόταφον. ἐπίβρεγμα λοξῶς ἐπὶ ἰνίον καὶ μετωπιαίαν,
 <lb n="11"/>αἱ δ’ ἐπινομαὶ κατὰ τῶν αὐτῶν ἐπὶ πλέον. ἐπιδέοιτο
 <lb n="12"/>οὕτω κάτωθεν ἄνω ἢ ἄνωθεν. συμφέρει οὕτως ἐπιδεόμενα
@@ -713,8 +793,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="30" xml:id="_30">
-          <p rend="indent">
-<lb n="15"/>Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα ὑπὸ λοβὸν
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="30">Κεφ. λʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα ὑπὸ λοβὸν
 <lb n="16"/>ὠτὸς ἐπὶ κρόταφον καὶ βρέγμα, λοξῶς ἐπὶ ἰνίον καὶ μετωπιαία
 <pb n="18a.796"/>
 <lb n="1"/>πρὸς τὸν ἔξω κανθὸν καὶ ἐπὶ βρέγμα. λοξὴ ἐπὶ ἰνίον,
@@ -723,37 +803,37 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="31" xml:id="_31">
-          <p rend="indent">
-<lb n="4"/>Ἡ μεσότης καθ’ ἰνίου. αἱ ἀρχαὶ ἐπὶ κορυφὴν
+<p rend="indent">
+<lb n="4"/><label type="head"><num value="31">Κεφ. λαʹ.</num></label> Ἡ μεσότης καθ’ ἰνίου. αἱ ἀρχαὶ ἐπὶ κορυφὴν
 <lb n="5"/>βρέγμα χίασμα ποιοῦσαι κατ’ αὐτοῦ, εἶθ’ ὑπὸ λοβοὺς
 <lb n="6"/>ὤτων ἐπὶ ἰνίον, εἶτα μετωπιαία.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="32" xml:id="_32">
-          <p rend="indent">
-<lb n="7"/>Ἡ μεσότης κατ’ ἰνίου. αἱ ἀρχαὶ ὑπὸ λοβοὺς
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="32">Κεφ. λβʹ.</num></label> Ἡ μεσότης κατ’ ἰνίου. αἱ ἀρχαὶ ὑπὸ λοβοὺς
 <lb n="8"/>ὤτων ἐπὶ τοὺς ἔξωθεν κανθούς· εἶτ’ ἐπὶ βρέγμα καὶ
 <lb n="9"/>ἰνίον, εἶτα μετωπιαία· τινὲς καὶ γενειάδα προστιθέασι.
 <lb n="10"/><milestone unit="ed2page" n="12.482"/>
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="33" xml:id="_33">
-          <p rend="indent">
-<lb n="11"/>Τὴν εὐθεῖαν διμερῆ φορβέαν ἐπιδήσαντες
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="33">Κεφ. λγʹ.</num></label> Τὴν εὐθεῖαν διμερῆ φορβέαν ἐπιδήσαντες
 <lb n="12"/>χωρὶς τῆς γενειάδος ἐπὶ τέλει ἐπὶ τὸ ὕψωμα τῆς
 <lb n="13"/>ῥινὸς ἀπάγομεν, εἶτ’ ἐπὶ ἰνίον καὶ στεφανιαίαν προσαποδίδομεν.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="34" xml:id="_34">
-          <p rend="indent">
-<lb n="14"/>Ὁμοίως τῷ ἀνεζευγμένῳ ἐπιδεδεμένῳ καὶ
+<p rend="indent">
+<lb n="14"/><label type="head"><num value="34">Κεφ. λδʹ.</num></label> Ὁμοίως τῷ ἀνεζευγμένῳ ἐπιδεδεμένῳ καὶ
 <lb n="15"/>τὴν γενειάδα προσαποδίδομεν.
 </p>
         </div>
         <pb n="18a.797"/>
         <div type="textpart" subtype="chapter" n="35" xml:id="_35">
-          <p rend="indent">
-<lb n="1"/>Αὕτη ἁρμόζει ἐπὶ τῶν κατὰ πολλὰ μέρη
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="35">Κεφ. λεʹ.</num></label> Αὕτη ἁρμόζει ἐπὶ τῶν κατὰ πολλὰ μέρη
 <lb n="2"/>τῆς κεφαλῆς καὶ τῶν παρειῶν ἐχόντων τραῦμα. τῇ λοξῇ
 <lb n="3"/>διμερεῖ φορβέαν συνεπίδησον καὶ μετὰ ταῦτα καὶ Γλαυκίου
 <lb n="4"/>σκάφιον, εἶτα οὕτω τὰς διμερεῖς φορβέας. ἔνιοι θεατρικώτερον
@@ -762,8 +842,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="36" xml:id="_36">
-          <p rend="indent">
-<lb n="7"/>Σύμμετρον μέρος τῆς ταινίας ἐάσας κατὰ
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="36">Κεφ. λστʹ.</num></label> Σύμμετρον μέρος τῆς ταινίας ἐάσας κατὰ
 <lb n="8"/>προσώπου κρέμασθαι, ἕλκε τὸ σπείραμα ἐπ’ εὐθείας ἐπὶ
 <lb n="9"/>ἰνίον κἀκεῖθεν ἐπίδει τὴν εὐθεῖαν φορβέαν μέχρι τοῦ σκεπούσης
 <lb n="10"/>ὅλης παρειὰς καὶ τῆς κεφαλῆς καὶ ἐπὶ τέλει τὴν
@@ -773,8 +853,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="37" xml:id="_37">
-          <p rend="indent">
-<lb n="14"/>Τὸ ἡμιῤῥόμβιον προσλαβὸν τὰ καλούμενα
+<p rend="indent">
+<lb n="14"/><label type="head"><num value="37">Κεφ. λζʹ.</num></label> Τὸ ἡμιῤῥόμβιον προσλαβὸν τὰ καλούμενα
 <lb n="15"/>ὦτα οὕτως ὀνομάζεται. ἐπιδεῖται δ’ ἤτοι εὐπρεπείας χάριν
 <lb n="16"/>ἐν μονομαχίαις ἢ χάριν τοῦ κράτημα γίγνεσθαι τῆς κεφαλῆς
 <lb n="17"/>ἐπὶ προσώπου τινὸς συμπτώματος μεθοδευομένου· ἀλλ’ ﻿
@@ -787,8 +867,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="38" xml:id="_38">
-          <p rend="indent">
-<lb n="6"/>Ἐπιτελεῖται δ’ οὕτως· ὁ βρόχος ὁ καλούμενος
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="38">Κεφ. ληʹ.</num></label> Ἐπιτελεῖται δ’ οὕτως· ὁ βρόχος ὁ καλούμενος
 <lb n="7"/>βουκολικὸς ἢ δι’ ἀγκυλωμάτων, συντόμῳ ἐν τῷ περὶ
 <lb n="8"/>βρόχων ἐκδεδώκαμεν πολλάκις, ἔξ ἑνὸς μέρους τοῦ ἐπιδέσμου
 <lb n="9"/>ἐπὶ μετώπου τάσσεται καὶ ἐπ’ αὐτῷ ἐπιτελεῖται τὸ
@@ -797,23 +877,23 @@
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="39" xml:id="_39">
-          <p rend="indent">
-<lb n="12"/>Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="39">Κεφ. λθʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα
 <lb n="13"/>ἐπὶ κορυφὴν, ἐπὶ βρέγμα μεσόφρυον ὀφθαλμὸν, ὥστε καλύψαι,
 <lb n="14"/>εἶθ’ ὑπὸ λοβὸν ὠτὸς καὶ ἐπὶ ἰνίον, εἶτα μετωπιαία.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="40" xml:id="_40">
-          <p rend="indent">
-<lb n="15"/>Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμά γ’ ἐπὶ κορυφὴν,
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="40">Κεφ. μʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμά γ’ ἐπὶ κορυφὴν,
 <lb n="16"/>βρέγμα, μεσόφρυον ἐπὶ ὀφθαλμὸν, εἶτα οἶμαι παρέλκειν
 <lb n="17"/>ὑπὸ λοβὸν ὠτὸς ἐπὶ ὀφθαλμὸν, ἐπὶ βρέγμα, ἐπὶ ἰνίον, εἶτα μετωπιαία.
 </p>
         </div>
         <pb n="18a.799"/>
         <div type="textpart" subtype="chapter" n="41" xml:id="_41">
-          <p rend="indent">
-<lb n="1"/>Ἀρχὴ κατ’ ἰνίου. τὸ εἴλημα κατὰ κορυφὴν,
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="41">Κεφ. μαʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ εἴλημα κατὰ κορυφὴν,
 <lb n="2"/>βρέγμα, μεσόφρυον ἐπὶ ὀφθαλμόν· εἶθ’ ὑπὸ λοβὸν
 <lb n="3"/>ὠτὸς ἀντικειμένου ἐπ’ ὀφθαλμὸν τὸν ἕτερον, μεσόφρυον,
 <lb n="4"/>βρέγμα καὶ ἐπὶ ἰνίον, εἶτα μετωπιαία. δυνατὸν δὲ καὶ ἀνατρέψαντα
@@ -822,21 +902,21 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="42" xml:id="_42">
-          <p rend="indent">
-<lb n="7"/>Μεσότης κατ’ ἰνίου. ἀρχαὶ ἐπὶ κορυφὴν,
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="42">Κεφ. μβʹ.</num></label> Μεσότης κατ’ ἰνίου. ἀρχαὶ ἐπὶ κορυφὴν,
 <lb n="8"/>ἐπὶ βρέγμα μεσόφρυον καὶ κατ’ αὐτὸ τοῦτο χιάζεσθαι· εἶτα
 <lb n="9"/>ἐπὶ ὀφθαλμοὺς καὶ ὑπὸ λοβοὺς τῶν ὤτων, ἐπὶ ἰνίον καὶ μετωπιαία.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="43" xml:id="_43">
-          <p rend="indent">
-<lb n="10"/>Μεσότης κατὰ μετώπου. αἱ ἀρχαὶ ἐπὶ
+<p rend="indent">
+<lb n="10"/><label type="head"><num value="43">Κεφ. μγʹ.</num></label> Μεσότης κατὰ μετώπου. αἱ ἀρχαὶ ἐπὶ
 <lb n="11"/>ἰνίον, ἀπὸ ἰνίου χιασθεῖσαι καὶ ὁμοίως τῇ πρὸ ταύτης ἐπιδέσει.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="44" xml:id="_44">
-          <p rend="indent">
-<lb n="12"/>Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα ἐπὶ κορυφὴν,
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="44">Κεφ. μδʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα ἐπὶ κορυφὴν,
 <lb n="13"/>βρέγμα, ὀφθαλμὸν ἐπ’ εὐθείας ἐπὶ χαλινὸν ὑπὸ γένειον
 <lb n="14"/>καὶ λοβὸν ὠτὸς, ἐπὶ ἰνίον καὶ μετωπιαία.
 <pb n="18a.800"/>
@@ -844,16 +924,16 @@
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="45" xml:id="_45">
-          <p rend="indent">
-<lb n="2"/>Πρὸ τῆς μετωπιαίας. ἀπὸ ἰνίου
+<p rend="indent">
+<lb n="2"/><label type="head"><num value="45">Κεφ. μεʹ.</num></label> Πρὸ τῆς μετωπιαίας. ἀπὸ ἰνίου
 <lb n="3"/>ἐπὶ ἕτερον ὀφθαλμὸν ἀντικείμενον ἕτερον ἐπάγεται καὶ κατ’
 <lb n="4"/>εὐθείας ἐπὶ χαλινὸν ὑπὸ γένειον ἐπὶ τὸν ἕτερον ὀφθαλμὸν
 <lb n="5"/>καὶ ἐπ’ ἀντικείμενον λοβὸν ἐπὶ ἰνίον καὶ μετωπιαία.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="46" xml:id="_46">
-          <p rend="indent">
-<lb n="6"/>Ἀρχὴ ὑπὸ ἰνίῳ. τὸ εἴλημα ὑπὸ λοβὸν
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="46">Κεφ. μστʹ.</num></label> Ἀρχὴ ὑπὸ ἰνίῳ. τὸ εἴλημα ὑπὸ λοβὸν
 <lb n="7"/>ὠτὸς, εἶθ’ ὑπὸ γένειον ἐπὶ χαλινὸν ὀφθαλμὸν ἐπὶ βρέγμα
 <lb n="8"/>καὶ ἐπὶ ἰνίον, εἶθ’ ὑπὸ λοβὸν καὶ ὑπὸ γένειον ἀντικείμενον
 <lb n="9"/>χαλινὸν, ὀφθαλμὸν μεσόφρυον καὶ αὐτοῦ χίασμα, εἶτα ὑπὸ
@@ -861,15 +941,15 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="47" xml:id="_47">
-          <p rend="indent">
-<lb n="11"/>Ὁμοίως τῷ λοξῷ τῆς τιθεμένης μεσότητος
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="47">Κεφ. μζʹ.</num></label> Ὁμοίως τῷ λοξῷ τῆς τιθεμένης μεσότητος
 <lb n="12"/>κατ’ ἰνίου καὶ ἢ ἄνωθεν ἢ κάτωθεν ἀγομένων τῶν ἀρχῶν,
 <lb n="13"/>τίθεται δὲ ὑπὸ γένειον μεσότης.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="48" xml:id="_48">
-          <p rend="indent">
-<lb n="14"/>Πλάτος ἕκαστος τελαμὼν ὅσῳ σκεπάσαι
+<p rend="indent">
+<lb n="14"/><label type="head"><num value="48">Κεφ. μηʹ.</num></label> Πλάτος ἕκαστος τελαμὼν ὅσῳ σκεπάσαι
 <lb n="15"/>τὴν ῥῖνα, μήκει δὲ ὡς διπλοῦν ἀπὸ ῥινὸς ἐπ’ εὐθείας ἐπὶ
 <lb n="16"/>ἰνίον δύνασθαι χωρίσαι. τὴν ἀρχὴν τάττομεν κατ’ ἰνίου,
 <lb n="17"/>τὸ δὲ λοιπὸν ἄγομεν εὐθείας ἐπὶ κορυφὴν βρέγματος ῥινὸς
@@ -890,8 +970,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="49" xml:id="_49">
-          <p rend="indent">
-<lb n="14"/>Σχίζομεν τὸ ῥάκος σκέλη τέσσαρα τὸ μέσον
+<p rend="indent">
+<lb n="14"/><label type="head"><num value="49">Κεφ. μθʹ.</num></label> Σχίζομεν τὸ ῥάκος σκέλη τέσσαρα τὸ μέσον
 <lb n="15"/>συνεχὲς ἐῶντες ὃ καὶ ὑπὸ τὸ σφαίριον τάξαντες τὰς
 <lb n="16"/>ὑπερκειμένας κάτω παρίεμεν, τὰς δὲ ὑποκειμένας πρώτην
 <lb n="17"/>ἄγομεν <milestone unit="ed2page" n="12.485"/> ἐπὶ τὰ μῆλα καὶ τοὺς ἔξω κανθοὺς ἐπὶ βρέγμα,
@@ -903,8 +983,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="50" xml:id="_50">
-          <p rend="indent">
-<lb n="5"/>Μία ἡ μεσότης ὑπὸ σφαίριον. αἱ δ’ ἀρχαὶ
+<p rend="indent">
+<lb n="5"/><label type="head"><num value="50">Κεφ. νʹ.</num></label> Μία ἡ μεσότης ὑπὸ σφαίριον. αἱ δ’ ἀρχαὶ
 <lb n="6"/>ἐπὶ τοὺς ἔξω κανθοὺς ἐπὶ βρέγμα καὶ χιασθεῖσαι διακρατείσθωσαν,
 <lb n="7"/>ἄλλη δὲ μεσότης ὑπὸ τὸ σφαίριον τῆς ῥινός. αἱ
 <lb n="8"/>δ’ ἀρχαὶ καὶ ὑπὸ λοβοὺς καὶ ἐπὶ ἰνίον ἁμματίζονται, τρίτη
@@ -913,8 +993,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="51" xml:id="_51">
-          <p rend="indent">
-<lb n="11"/>Μία μεσότης ὑπὸ σφαιρίῳ, αἱ δ’ ἀρχαὶ
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="51">Κεφ. ναʹ.</num></label> Μία μεσότης ὑπὸ σφαιρίῳ, αἱ δ’ ἀρχαὶ
 <lb n="12"/>ἐπὶ τοὺς ἔξω κανθοὺς ἐπὶ βρέγμα καὶ χιασθεῖσαι ὁμοίως
 <lb n="13"/>διακρατείσθωσαν, ἑτέρα ἡ μεσότης ὑπὲρ τὸ σφαίριον, αἱ δ’
 <lb n="14"/>ἀρχαὶ ὑπὸ λοβοὺς, ἐπὶ ἰνίον ἀπὸ ἰνίου χιασθεῖσαι περὶ κεφαλὴν,
@@ -923,8 +1003,8 @@
         </div>
         <pb n="18a.803"/>
         <div type="textpart" subtype="chapter" n="52" xml:id="_52">
-          <p rend="indent">
-<lb n="1"/>Τῆς ἑτέρας ἐπ’ εὐθείας τῇ ῥινὶ ἐπικειμένης
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="52">Κεφ. νβʹ.</num></label> Τῆς ἑτέρας ἐπ’ εὐθείας τῇ ῥινὶ ἐπικειμένης
 <lb n="2"/>τὸ μὲν ἥμισυ κατὰ τοῦ προκειμένου μετώπου παρειμένον
 <lb n="3"/>ἐῶμεν. τὸ δὲ ἥμισυ κατὰ τοῦ προσώπου παρειμένον
 <lb n="4"/>ἐπ’ εὐθείας κατὰ κορυφὴν ἐπὶ ἰνίον ἀπάγομεν. τῆς δ’ ἑτέρας
@@ -937,8 +1017,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="53" xml:id="_53">
-          <p rend="indent">
-<lb n="11"/>Ἑνὸς ᾖ μεσότης ὑπὸ σφαιρίῳ. αἱ δ’ ἀρχαὶ
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="53">Κεφ. νγʹ.</num></label> Ἑνὸς ᾖ μεσότης ὑπὸ σφαιρίῳ. αἱ δ’ ἀρχαὶ
 <lb n="12"/>ἐκ πλαγίων τῆς ῥινὸς ἐπὶ μεσόφρυον, ὅπου καὶ χιασθεῖσαι
 <lb n="13"/>ἀπαγέσθωσαν ἐπ’ εὐθείας παρὰ κορυφὴν ἐπὶ ἰνίον κἀκεῖ
 <lb n="14"/>διακρατείσθωσαν. δευτέρου μεσότης τὸ ὑπὲρ τὸ σφαίριον
@@ -951,8 +1031,8 @@
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="54" xml:id="_54">
-          <p rend="indent">
-<lb n="2"/>Τῆς πρώτης ὁμοίως ταινίας διατιθεμένης
+<p rend="indent">
+<lb n="2"/><label type="head"><num value="54">Κεφ. νδʹ.</num></label> Τῆς πρώτης ὁμοίως ταινίας διατιθεμένης
 <lb n="3"/>καὶ τῆς δευτέρας πάλιν ὁμοίως ἐπὶ ἰνίον ἀγάγῃ
 <lb n="4"/>τῆς δευτέρας τὰς ἀρχὰς, χιάσαι δὲ καὶ αὐτῶν μετωπιαίων
 <lb n="5"/>συντελέσαι, τῶν τοῦ πρώτου τελαμῶνος ἀρχῶν ἤτοι κατειλημένων
@@ -961,8 +1041,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="55" xml:id="_55">
-          <p rend="indent">
-<lb n="8"/>Σύμμετρον μέρος ἐπὶ τοῦ ἐπιδέσμου κατὰ
+<p rend="indent">
+<lb n="8"/><label type="head"><num value="55">Κεφ. νεʹ.</num></label> Σύμμετρον μέρος ἐπὶ τοῦ ἐπιδέσμου κατὰ
 <lb n="9"/>τοῦ προσώπου ἐάσαντες κρεμάσαι τοσοῦτον ὅσον ἱκανὸν ἔσται
 <lb n="10"/>ἐπὶ ἰνίον ἐθέλειν· εἶτα ἄγομεν τὸ σπείραμα ἐπ’ εὐθείας
 <lb n="11"/>κατὰ ῥινὸς, μεσοφρύου, βρέγματος, κορυφῆς ἐπὶ ἰνίον, ἀπὸ
@@ -975,8 +1055,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="56" xml:id="_56">
-          <p rend="indent">
-<lb n="18"/>Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα λοξῶς
+<p rend="indent">
+<lb n="18"/><label type="head"><num value="56">Κεφ. νστʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα λοξῶς
 <lb n="19"/>ἐπὶ κορυφὴν καὶ βρέγμα, μικρὸν κανθὸν ἐπὶ μῆλα· εἶθ’
 <pb n="18a.805"/>
 <lb n="1"/>ὑπὸ σφαίριον ῥινὸς καὶ ἐπὶ τὸ ἀντικείμενον μῆλον παρὰ
@@ -986,8 +1066,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="57" xml:id="_57">
-          <p rend="indent">
-<lb n="5"/>Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα λοξῶς παρὰ
+<p rend="indent">
+<lb n="5"/><label type="head"><num value="57">Κεφ. νζʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα λοξῶς παρὰ
 <lb n="6"/>κορυφὴν ἐπὶ κρόταφον καὶ τὸν ἔξω κανθὸν ὑπὸ σφαίριον
 <lb n="7"/>ῥινὸς καὶ ὑπὸ λοβὸν ὠτός· εἶτα ἐπὶ ἰνίον ἀπὸ ἰνίου κλάσαντες
 <lb n="8"/>τὴν ἀρχὴν ἄγομεν ἀντικειμένην τῇ πρώτῃ λοξὴν ἐπὶ
@@ -998,8 +1078,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="58" xml:id="_58">
-          <p rend="indent">
-<lb n="13"/>Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα λοξῶς ἐπὶ
+<p rend="indent">
+<lb n="13"/><label type="head"><num value="58">Κεφ. νηʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα λοξῶς ἐπὶ
 <lb n="14"/>κορυφὴν, βρέγμα, μεσόφρυον, εἶτ’ ἐκ πλαγίων τῆς ῥινὸς
 <lb n="15"/><milestone unit="ed2page" n="12.487"/> παρὰ μέγαν κανθὸν ἐπ’ εὐθείας ἐπὶ παρακείμενον
 <lb n="16"/>πτερύγιον ῥινὸς ἐπὶ χαλινὸν, εἶθ’ ὑπ’ ἀνθερεῶνα καὶ ὑπὸ
@@ -1016,8 +1096,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="59" xml:id="_59">
-          <p rend="indent">
-<lb n="9"/>Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα λοξῶς
+<p rend="indent">
+<lb n="9"/><label type="head"><num value="59">Κεφ. νθʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα λοξῶς
 <lb n="10"/>παρὰ κορυφὴν, βρέγμα, ἐπὶ μεσόφρυον, παρὰ μέγαν κανθὸν,
 <lb n="11"/>ἐπὶ μῆλον, ὑπὸ λοβὸν ὠτός· ἐπὶ ἰνίον ἀντικειμένη τῇ πρώτῃ,
 <lb n="12"/>ὡς χίασμα κατὰ μεσόφρυον γίνεσθαι, καὶ λοξὴ παρὰ βρέγμα
@@ -1031,8 +1111,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="60" xml:id="_60">
-          <p rend="indent">
-<lb n="3"/>Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα ἐπ’ εὐθείας
+<p rend="indent">
+<lb n="3"/><label type="head"><num value="60">Κεφ. ξʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα ἐπ’ εὐθείας
 <lb n="4"/>κατὰ κορυφὴν ἐπὶ μεσόφρυον παρὰ μέγαν κανθὸν ἐκ πλαγίων
 <lb n="5"/>τῆς ῥινὸς ἐπ’ αὐτὸ τὸ σφαίριον ῥινὸς καὶ παρὰ τὸν
 <lb n="6"/>τοῦ ἑτέρου μεγάλου κανθοῦ ἐπὶ μεσόφρυον ὡς χίασμα κατὰ
@@ -1046,8 +1126,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="61" xml:id="_61">
-          <p rend="indent">
-<lb n="14"/>Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα ἐπ’ εὐθείας
+<p rend="indent">
+<lb n="14"/><label type="head"><num value="61">Κεφ. ξαʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα ἐπ’ εὐθείας
 <lb n="15"/>ἐπὶ κορυφὴν, βρέγμα, μεσόφρυον, κανθὸν μέγαν ἐκ
 <lb n="16"/>πλαγίων τῆς ῥινὸς ὑπὸ σφαίριον, εἶθ’ ὑπὸ λοβὸν ὠτὸς ἀντικειμένου ﻿
 <pb n="18a.808"/>
@@ -1057,8 +1137,8 @@
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="62" xml:id="_62">
-          <p rend="indent">
-<lb n="4"/>Ἁρμόζει μὲν ἐφ’ ὧν ἡ πρὸ ταύτης
+<p rend="indent">
+<lb n="4"/><label type="head"><num value="62">Κεφ. ξβʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν ἡ πρὸ ταύτης
 <lb n="5"/>ἐπίδεσις. ἐπιτελεῖται δὲ οὕτω· δέρματος φοινικίνου τὴν
 <lb n="6"/>ἀρχὴν ἐπιμηκεστέρου, κόλλῃ ἢ κόμμι χρίσαντες κατακολλῶμεν
 <lb n="7"/>τῇ ῥινὶ κατ’ ἐκεῖνα καθ’ ἃ διέστραπται, τὴν δὲ ἑτέραν
@@ -1067,8 +1147,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="63" xml:id="_63">
-          <p rend="indent">
-<lb n="10"/>Μεσότης κατὰ τοῦ ὠτός. τῶν δὲ ὑπὸ τὸ
+<p rend="indent">
+<lb n="10"/><label type="head"><num value="63">Κεφ. ξγʹ.</num></label> Μεσότης κατὰ τοῦ ὠτός. τῶν δὲ ὑπὸ τὸ
 <lb n="11"/>οὖς ἀρχῶν χιασθεισῶν, ἡ μὲν ἐπὶ μέτωπον, ἡ δὲ ἐπὶ κορυφὴν,
 <lb n="12"/>ἐπὶ ἰνίον· ἀπὸ ἰνίου ἡ μὲν ἀπὸ μετώπου κατὰ τοῦ
 <lb n="13"/>χιάσματος ἀγέσθω, ἡ δὲ παρὰ κορυφὴν ἐπὶ μέτωπον καὶ
@@ -1077,8 +1157,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="64" xml:id="_64">
-          <p rend="indent">
-<lb n="16"/>Ἀρχὴ ἡ τοῦ ἐπιδέσμου ταττέσθω πλησίον
+<p rend="indent">
+<lb n="16"/><label type="head"><num value="64">Κεφ. ξδʹ.</num></label> Ἀρχὴ ἡ τοῦ ἐπιδέσμου ταττέσθω πλησίον
 <lb n="17"/>ἰνίου, ὄπισθεν τοῦ πεπονθότος ὠτὸς· ἡ δὲ ἐπινομὴ κατ’
 <pb n="18a.809"/>
 <lb n="1"/>αὐτοῦ γιγνέσθω· ὡς εἰ ἐκ μέρους σκεπασθείη τὸ οὖς καὶ
@@ -1090,16 +1170,16 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="65" xml:id="_65">
-          <p rend="indent">
-<lb n="7"/>Ἀρχὴ ἐπὶ ἰνίῳ, τὸ εἴλημα ὑπὸ λοβὸν ὠτὸς
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="65">Κεφ. ξεʹ.</num></label> Ἀρχὴ ἐπὶ ἰνίῳ, τὸ εἴλημα ὑπὸ λοβὸν ὠτὸς
 <lb n="8"/>ἀπαθοῦς ἐπὶ βρέγμα καὶ τὰ ἐμπρόσθια τοῦ πεπονθότος
 <lb n="9"/>ὠτὸς καὶ ὑπὸ γένειον ἀπὸ γενείου ὑπὸ λοβὸν ὠτὸς καὶ ἐπὶ
 <lb n="10"/>ἰνίον, ἀπὸ ἰνίου λοξὸν κατὰ τοῦ ὠτὸς, εἶτα μετωπιαία.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="66" xml:id="_66">
-          <p rend="indent">
-<lb n="11"/>Ἡ μεσότης κατὰ τοῦ ἐπιδεσμένου τῆς ἐπιδέσεως
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="66">Κεφ. ξστʹ.</num></label> Ἡ μεσότης κατὰ τοῦ ἐπιδεσμένου τῆς ἐπιδέσεως
 <lb n="12"/>τῶν ἀρχῶν, ὧν μὲν κατὰ τοῦ τραχήλου κάτω παρειμένων,
 <lb n="13"/>ὧν δὲ ἄνω ὡς ἐπὶ κεφαλήν· τούτων αἱ μὲν ἐμπρόσθιοι
 <lb n="14"/>βρέγμα ἁμματιζέσθωσαν. αἱ δὲ μέσαι ἐπὶ κορυφὴν,
@@ -1111,8 +1191,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="67" xml:id="_67">
-          <p rend="indent">
-<lb n="3"/>Ἑνὸς ἡ μεσότης κατὰ βρέγματος. αἱ δ’
+<p rend="indent">
+<lb n="3"/><label type="head"><num value="67">Κεφ. ξζʹ.</num></label> Ἑνὸς ἡ μεσότης κατὰ βρέγματος. αἱ δ’
 <lb n="4"/>ἀρχαὶ κατὰ παρειῶν ὑπὸ γένειον, ἀπὸ γενείου κατὰ παρειῶν
 <lb n="5"/>ταῖς πρώταις παράλληλοι ἐπὶ βρέγμα, κἀκεῖ ἁμματιζέσθω.
 <lb n="6"/>εἰ δὲ τοὺς ὀφθαλμοὺς ἐθέλομεν ἐπιδῆσαι μὴ περὶ τὰς πρώτας,
@@ -1126,15 +1206,15 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="68" xml:id="_68">
-          <p rend="indent">
-<lb n="14"/>Ἀρχὴ κατ’ ἰνίου ἐπ’ εὐθείας ἐπὶ μέτωπον
+<p rend="indent">
+<lb n="14"/><label type="head"><num value="68">Κεφ. ξηʹ.</num></label> Ἀρχὴ κατ’ ἰνίου ἐπ’ εὐθείας ἐπὶ μέτωπον
 <lb n="15"/>καὶ μεσόφρυον· εἶτ’ ἐπὶ ἰνίον, ἀπὸ ἰνίου μετωπιαία. γίνεται
 <lb n="16"/>δὲ καὶ ἀπὸ δύο ἀρχῶν.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="69" xml:id="_69">
-          <p rend="indent">
-<lb n="17"/>Τὸ μέσον ὃ καὶ συνεχές ἐστι προστίθεμεν
+<p rend="indent">
+<lb n="17"/><label type="head"><num value="69">Κεφ. ξθʹ.</num></label> Τὸ μέσον ὃ καὶ συνεχές ἐστι προστίθεμεν
 <lb n="18"/>τῷ κάτω χείλει. τῶν δ’ ἀρχῶν τὰς ὑπερκειμένας ἄγομεν
 <pb n="18a.811"/>
 <lb n="1"/>ἐπὶ γένειον, ἀπὸ γενείου ἐπὶ ἰνίον, ἀπὸ ἰνίου καὶ χιάσαντες
@@ -1145,29 +1225,29 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="70" xml:id="_70">
-          <p rend="indent">
-<lb n="6"/>Μεσότης κατ’ αὐτοῦ. αἱ δ’ ὑποκείμεναι ἀρχαὶ
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="70">Κεφ. οʹ.</num></label> Μεσότης κατ’ αὐτοῦ. αἱ δ’ ὑποκείμεναι ἀρχαὶ
 <lb n="7"/>παρὰ τοὺς ἔξω κανθοὺς ἐπὶ βρέγμα χιασθεῖσαι ἐπὶ
 <lb n="8"/>ἰνίον ἀπαγέσθωσαν. αἱ δ’ ἄλλαι ἀρχαὶ ὑπὸ λοβοὺς ὤτων
 <lb n="9"/>ἐπὶ ἰνίον καὶ χιασθεῖσαι ἐπὶ μέτωπον καὶ πρὸς ἀλλήλας καταλαμβανέσθωσαν.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="71" xml:id="_71">
-          <p rend="indent">
-<lb n="10"/>Ἡ ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα ὑπὸ
+<p rend="indent">
+<lb n="10"/><label type="head"><num value="71">Κεφ. οαʹ.</num></label> Ἡ ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα ὑπὸ
 <lb n="11"/>λοβὸν ὠτὸς ἐπὶ τὸ κάτω χεῖλος καὶ ὑπὸ λοβὸν ἐπὶ ἰνίον.
 <lb n="12"/><milestone unit="ed2page" n="12.490"/>
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="72" xml:id="_72">
-          <p rend="indent">
-<lb n="13"/>Ἡ μεσότης κατὰ τοῦ χείλους, αἱ
+<p rend="indent">
+<lb n="13"/><label type="head"><num value="72">Κεφ. οβʹ.</num></label> Ἡ μεσότης κατὰ τοῦ χείλους, αἱ
 <lb n="14"/>δ’ ἀρχαὶ ὑπὸ λοβοὺς ἐπὶ ἰνίον τε καὶ μετωπιαία.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="73" xml:id="_73">
-          <p rend="indent">
-<lb n="15"/>Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα κατὰ λοβὸν
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="73">Κεφ. ογʹ.</num></label> Ἀρχὴ κατ’ ἰνίου. τὸ σπείραμα κατὰ λοβὸν
 <lb n="16"/>ὠτὸς ἐπὶ χεῖλος καὶ λοβὸν ἀντικείμενον ἐπὶ ἰνίον· ἀπὸ
 <lb n="17"/>ἰνίου παρὰ κορυφὴν καὶ λοξὴν ἐπὶ βρέγμα, κρόταφον, ἔπειτα
 <lb n="18"/>παρειὰς ὑπὸ γένειον καὶ ἀντικειμένη παρειὰς ἐπὶ βρέγμα,
@@ -1176,8 +1256,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="74" xml:id="_74">
-          <p rend="indent">
-<lb n="2"/>Ἀρχὴ κατ’ ἰνίου, τὸ σπείραμα λοξῶς ἐπὶ
+<p rend="indent">
+<lb n="2"/><label type="head"><num value="74">Κεφ. οδʹ.</num></label> Ἀρχὴ κατ’ ἰνίου, τὸ σπείραμα λοξῶς ἐπὶ
 <lb n="3"/>βρέγμα παρὰ τὸν ἔξω κανθὸν ἐπὶ τὸ ἄνω χεῖλος, εἶτ’ ἐπὶ
 <lb n="4"/>κρόταφον ἀντικείμενον καὶ τὸν ἔξω κανθὸν ἐπὶ βρέγμα ἀντικειμένη
 <lb n="5"/>τῇ πρὸ ταύτης χίασμα ποιοῦσα καὶ βρέγματος,
@@ -1185,16 +1265,16 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="75" xml:id="_75">
-          <p rend="indent">
-<lb n="7"/>Ἡ μεσότης κατὰ τοῦ ἄνω χείλους· αἱ ἀρχαὶ
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="75">Κεφ. οεʹ.</num></label> Ἡ μεσότης κατὰ τοῦ ἄνω χείλους· αἱ ἀρχαὶ
 <lb n="8"/>παρὰ κροτάφους καὶ τοὺς παρακειμένους κανθοὺς ἐπὶ
 <lb n="9"/>βρέγμα καὶ κατ’ αὐτοῦ χίασμα ἐπὶ ἰνίον, ἀπὸ ἰνίου καὶ μετωπιαία
 <lb n="10"/>καὶ ἐπὶ ἰνίον.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="76" xml:id="_76">
-          <p rend="indent">
-<lb n="11"/>Ἡ μεσότης κατ’ ἰνίου. αἱ δὲ ὑποκείμεναι
+<p rend="indent">
+<lb n="11"/><label type="head"><num value="76">Κεφ. οστʹ.</num></label> Ἡ μεσότης κατ’ ἰνίου. αἱ δὲ ὑποκείμεναι
 <lb n="12"/>ἀρχαὶ ἐπὶ παρειὰς παρὰ τοὺς ἔξω κανθοὺς ἐπὶ βρέγμα
 <lb n="13"/>κἀκεῖ ἁμματίζονται, αἱ δ’ ἄλλαι ὑπὸ λοβοὺς ἐπὶ ἰνίον, ἀπὸ
 <lb n="14"/>ἰνίου χιασθεῖσαι. εἰ μὲν βραχύτεραι εἶεν ἐπὶ ἰνίον πρὸς
@@ -1207,8 +1287,8 @@
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="77" xml:id="_77">
-          <p rend="indent">
-<lb n="4"/>Εἴρηται μὲν ἀπὸ τῆς πρὸς τοὺς
+<p rend="indent">
+<lb n="4"/><label type="head"><num value="77">Κεφ. οζʹ.</num></label> Εἴρηται μὲν ἀπὸ τῆς πρὸς τοὺς
 <lb n="5"/>στάχυας ἐμφερείας ἐκ τῆς τῶν ἐπινεμήσεων γινομένης. εὐχρηστεῖ
 <lb n="6"/>τε ἐπὶ τε κλειδὸς καταγείσης καὶ ἐπὶ βραχίονος
 <lb n="7"/>ἐξαρθρήσαντος. ἐπιτελεῖται δὲ τὸν τρόπον τοῦτον· ἔριον
@@ -1228,8 +1308,8 @@
         </div>
         <pb n="18a.814"/>
         <div type="textpart" subtype="chapter" n="78" xml:id="_78">
-          <p rend="indent">
-<lb n="1"/>Ἐπὶ συντετελεσμένῳ τῷ ἀστάχυϊ ἑτέρου
+<p rend="indent">
+<lb n="1"/><label type="head"><num value="78">Κεφ. οηʹ.</num></label> Ἐπὶ συντετελεσμένῳ τῷ ἀστάχυϊ ἑτέρου
 <lb n="2"/>τελαμῶνος ἡ μεσότης μὲν ὑπὸ πῆχυν ἐγγώνιον ἐσχηματισμένον.
 <lb n="3"/>αἱ δ’ ἀρχαὶ ἐπ’ εὐθείας ἐπ’ ἀκρώμιον, κἀκεῖ χιασθεῖσαι
 <lb n="4"/>λοξῶς ἐπὶ μασχάλην ἀπαθῆ, εἶτ’ ἐγκύκλιαι περὶ πλευρὰς
@@ -1238,24 +1318,24 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="79" xml:id="_79">
-          <p rend="indent">
-<lb n="7"/>Ἡ μεσότης ὑπὸ μασχάλην βραχίονος πεπονθότος
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="79">Κεφ. οθʹ.</num></label> Ἡ μεσότης ὑπὸ μασχάλην βραχίονος πεπονθότος
 <lb n="8"/>αἱ ἀρχαὶ ἐπ’ ἀκρώμιον χιασθεῖσαι ἀπαγέσθωσαν
 <lb n="9"/>λοξῶς ἡ μὲν κατὰ νῶτον, ἡ δὲ κατὰ στέρνον ὑπὸ μασχάλην
 <lb n="10"/>ἀπαθῆ, αἱ δὲ ἐπινομαὶ ὁμοίως.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="80" xml:id="_80">
-          <p rend="indent">
-<lb n="11"/>Ἁρμόζει μὲν ἐφ’ ὧν καὶ ὁ στάχυς. ἐπιτελεῖται
+<p rend="indent">
+        <lb n="11"/><label type="head"><num value="80">Κεφ. πʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν καὶ ὁ στάχυς. ἐπιτελεῖται
 <lb n="12"/>δὲ οὕτως· μετὰ τὸ ἑπιδῆσαι τὸν στάχυν, μίαν δεῖ
 <lb n="13"/>ἐγκύκλιον ἐπὶ βραχίονι περιειλῆσαι ἀπὸ βραχίονος· ἀποδόντα
 <lb n="14"/>τὸ εἴλημα ἀπάγειν λοξῶς ἐπὶ μασχάλην ἀπαθῆ κἀκεῖ ἀσφαλίσασθαι.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="81" xml:id="_81">
-          <p rend="indent">
-<lb n="15"/>Ἁρμόζει καὶ ἐφ’ ὧν ἡ γερανίς. ἐπιτελεῖται
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="81">Κεφ. παʹ.</num></label> Ἁρμόζει καὶ ἐφ’ ὧν ἡ γερανίς. ἐπιτελεῖται
 <lb n="16"/>δὲ οὕτως· προεπιδήσαντες τὸν στάχυν, μίαν ἀπὸ ἀκρώμίου
 <lb n="17"/>ἐπινέμησιν<milestone unit="ed2page" n="12.492"/> ἄγομεν ἐπ’ εὐθείας ἐπὶ πῆχυν
 <pb n="18a.815"/>
@@ -1266,16 +1346,16 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="82" xml:id="_82">
-          <p rend="indent">
-<lb n="5"/>Ἡ μεσότης κατὰ τοῦ πεπονθότος ὤμου,
+<p rend="indent">
+<lb n="5"/><label type="head"><num value="82">Κεφ. πβʹ.</num></label> Ἡ μεσότης κατὰ τοῦ πεπονθότος ὤμου,
 <lb n="6"/>αἱ δ’ ἀρχαὶ ἐπ’ εὐθείας ἐπὶ πῆχυν πλησίον ἀγκῶνος ὄρθιοι·
 <lb n="7"/>πάλιν παράλληλοι ταῖς πρώταις κατὰ ἀκρώμιον, ἀπὸ
 <lb n="8"/>ἀκρωμίου ὑπὸ μασχάλην ἀπαθῆ, εἶτα ἐγκύκλια.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="83" xml:id="_83">
-          <p rend="indent">
-<lb n="9"/>Ἡ μεσότης ὑπὸ ἀπαθῆ μασχάλην. αἱ δ’
+<p rend="indent">
+<lb n="9"/><label type="head"><num value="83">Κεφ. πγʹ.</num></label> Ἡ μεσότης ὑπὸ ἀπαθῆ μασχάλην. αἱ δ’
 <lb n="10"/>ἀρχαὶ ἐγκύκλιοι περὶ πλευρὰς καὶ βραχίονος ἐπεγκύκλιοι
 <lb n="11"/>πάλιν ἐπὶ μασχάλην ἀπαθῆ· ἀπὸ μασχάλης λοξαὶ ἐπὶ ἀκρώμιον
 <lb n="12"/>πεπονθός· ἀπὸ ἀκρωμίου ὄρθιοι παρὰ βραχίονα ἐπ’
@@ -1284,8 +1364,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="84" xml:id="_84">
-          <p rend="indent">
-<lb n="15"/>Ἁρμόζει ἐπὶ τῶν κατ’ ἀμφοτέρους ὤμους
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="84">Κεφ. πδʹ.</num></label> Ἁρμόζει ἐπὶ τῶν κατ’ ἀμφοτέρους ὤμους
 <lb n="16"/>ἐχόντων σίνος. ἐπιτελεῖται δ’ οὕτως· ἐπὶ συντετελεσμένῳ
 <lb n="17"/>τῷ ἁπλῷ στάχυϊ μετὰ τὸ ἐπὶ μασχάλην καταντῆσαι τοῦ
 <pb n="18a.816"/>
@@ -1295,8 +1375,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="85" xml:id="_85">
-          <p rend="indent">
-<lb n="4"/>Ὠνόμασται μὲν ἁπλῶς οὕτως ἀπὸ τοῦ ἐμφερὴς
+<p rend="indent">
+<lb n="4"/><label type="head"><num value="85">Κεφ. πεʹ.</num></label> Ὠνόμασται μὲν ἁπλῶς οὕτως ἀπὸ τοῦ ἐμφερὴς
 <lb n="5"/>εἶναι τοῖς παρὰ Ῥωμαίοις θώραξιν, οὓς καταφράκτας
 <lb n="6"/>καλοῦσιν. εὐθετεῖ δὲ ἐφ’ ὧν ἐπιδῆσαι θέλομεν τὰ περὶ τὰς
 <lb n="7"/>κλεῖδας μέρη καὶ ὠμοπλάτην ἢ στέρνον ἢ μετάφρενον ἢ
@@ -1320,8 +1400,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="86" xml:id="_86">
-          <p rend="indent">
-<lb n="7"/>Ἡ μεσότης ὑπὸ μασχάλην. αἱ ἀρχαὶ
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="86">Κεφ. πστʹ.</num></label> Ἡ μεσότης ὑπὸ μασχάλην. αἱ ἀρχαὶ
 <lb n="8"/>κατὰ κλειδὸς παρακειμένης χιαζέσθωσαν πλησίον τραχήλου·
 <lb n="9"/>εἶτα λοξαὶ ὑπ’ ἀντικειμένην μασχάλην, ἀπὸ μασχάλης ἐπὶ
 <lb n="10"/>παρακειμένην κλεῖδα καὶ κατ’ αὐτῆς χίασμα πλησίον τραχήλου
@@ -1329,8 +1409,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="87" xml:id="_87">
-          <p rend="indent">
-<lb n="12"/>Εὐθετεῖ αὕτη ἡ ἐπίδεσις ἐφ’ ὧν στέρνον
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="87">Κεφ. πζʹ.</num></label> Εὐθετεῖ αὕτη ἡ ἐπίδεσις ἐφ’ ὧν στέρνον
 <lb n="13"/>ἢ μετάφρενον ἢ πλευρὰς ἢ θώρακα ἐπιδῆσαι θέλομεν, δύο
 <lb n="14"/>δὲ τελαμώνων μεσότητα σύμμετρον κατὰ τῶν ὤμων θέντες
 <lb n="15"/>τὰς ἀρχὰς ἐπ’ εὐθείας κάτω παρίεμεν. ἔπειτα εἰλητῷ ἐπιδέσμῳ
@@ -1343,15 +1423,15 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="88" xml:id="_88">
-          <p rend="indent">
-<lb n="4"/>Οἱ προλεχθέντες τελαμῶνες οὐκ ἐπ’ εὐθείας
+<p rend="indent">
+<lb n="4"/><label type="head"><num value="88">Κεφ. πηʹ.</num></label> Οἱ προλεχθέντες τελαμῶνες οὐκ ἐπ’ εὐθείας
 <lb n="5"/>κρέμανται, ἀλλὰ λοξοὶ ὥστε κατ’ ἰνίου καὶ τοῦ μεταφρένου
 <lb n="6"/>χίασμα γίγνεσθαι· τά τε λοιπὰ ὅμοια τῷ ὀρθίῳ συντελεῖται.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="89" xml:id="_89">
-          <p rend="indent">
-<lb n="7"/>Ἁρμόζει μὲν ἐφ’ ὧν καὶ ὁ μασχαλιστήρ.
+<p rend="indent">
+<lb n="7"/><label type="head"><num value="89">Κεφ. πθʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν καὶ ὁ μασχαλιστήρ.
 <lb n="8"/>ἐπιτελεῖται δὲ οὕτως· ἐπικλείσαντες τὸν ἀπὸ δύο ἀρχῶν καταφράκτην,
 <lb n="9"/>μετὰ πολλὰς ἐγκυκλίους περιβάλλειν ἐπινεμήσεις
 <lb n="10"/>τῷ θώρακι, ὥστε σκεπάσαι μέχρις ὀμφαλοῦ, τότε τὰς ἀρχὰς
@@ -1365,8 +1445,8 @@
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="90" xml:id="_90">
-          <p rend="indent">
-<lb n="2"/>Ἀρχὴ κατὰ λαγόνος δεξιᾶς. τὸ
+<p rend="indent">
+        <lb n="2"/><label type="head"><num value="90">Κεφ. Ϟʹ.</num></label> Ἀρχὴ κατὰ λαγόνος δεξιᾶς. τὸ
 <lb n="3"/>δὲ ἅμμα λοξῶς ἐπὶ πλευρὰς, στέρνον, ὦμον· εἶθ’ ὑπὸ ὦμον,
 <lb n="4"/>ἵνα κατ’ αὐτοῦ χίασμα γένηται, εἶτα λοξὴ κατὰ μεταφρένου
 <lb n="5"/>ἐπὶ λαγόνα κατὰ τῆς προεμβεβλημένης ἀρχῆς, εἶτ’ ἐγκύκλιοι
@@ -1379,15 +1459,15 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="91" xml:id="_91">
-          <p rend="indent">
-<lb n="12"/>Προσεπιδήσαντες τῷ χιαστῷ θώρακι ἑξῆς
+<p rend="indent">
+<lb n="12"/><label type="head"><num value="91">Κεφ. Ϟαʹ.</num></label> Προσεπιδήσαντες τῷ χιαστῷ θώρακι ἑξῆς
 <lb n="13"/>διὰ στενοῦ τελαμῶνος μίαν ἢ καὶ δευτέραν ἐγκύκλιον περιειλεῖτε
 <lb n="14"/>κατὰ στέρνου καὶ μεταφρένου καὶ τὸ πέρας ἀγκτῆρι καταλαβοῦ.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="92" xml:id="_92">
-          <p rend="indent">
-<lb n="15"/>Ἁρμόζει μὲν ἐφ’ ὧν καὶ ὁ καταφράκτης.
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="92">Κεφ. Ϟβʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν καὶ ὁ καταφράκτης.
 <lb n="16"/>ἐπιτελεῖται δὲ οὕτως· ἀρχὴ κατὰ μεταφρένου τὸ σπείραμα
 <lb n="17"/>λοξῶς ἐπ’ ὠμοπλάτην ἀκρώμιον, ὑπὸ μασχάλην, εἶτ’ ἐπ’
 <pb n="18a.820"/>
@@ -1399,8 +1479,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="93" xml:id="_93">
-          <p rend="indent">
-<lb n="6"/>Ἁρμόζει μὲν ἐφ’ ὧν μετάφρενον ἐπιδῆσαι
+<p rend="indent">
+<lb n="6"/><label type="head"><num value="93">Κεφ. Ϟγʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν μετάφρενον ἐπιδῆσαι
 <lb n="7"/>θέλομεν. ἐπιτελεῖται δὲ οὕτως· ἀρχὴ κατὰ λαγόνος ὡς ἀριστερᾶς
 <lb n="8"/>τὸ εἴλημα κατὰ μεταφρένου ἐπὶ δεξιὸν ὦμον καὶ ἐπὶ
 <lb n="9"/>μασχάλην, ἀπὸ μασχάλης ἐπ’ ὠμοπλάτην ἀριστεράν· εἶθ’
@@ -1413,8 +1493,8 @@
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="94" xml:id="_94">
-          <p rend="indent">
-<lb n="16"/>Ἁρμόζει μὲν ἐφ’ ὧν καὶ ἡ πρὸ
+<p rend="indent">
+<lb n="16"/><label type="head"><num value="94">Κεφ. Ϟδʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν καὶ ἡ πρὸ
 <lb n="17"/>αὐτῆς. τελαμῶνα οὖν λαβόντες σύμμετρον μήκει καὶ πλάτει
 <lb n="18"/>κατὰ τὴν μεσότητα σχίζομεν, ὥστε τὴν κεφαλὴν διελθεῖν.
 <lb n="19"/>τὰ δὲ πέρατα παρίεμεν, ὁ μὲν κατὰ νώτου, ὁ δὲ κατ’
@@ -1425,8 +1505,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="95" xml:id="_95">
-          <p rend="indent">
-<lb n="4"/>Ἁρμόζει μὲν ἐφ’ ὧν τὸ ἕτερον μέρος τοῦ
+<p rend="indent">
+<lb n="4"/><label type="head"><num value="95">Κεφ. Ϟεʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν τὸ ἕτερον μέρος τοῦ
 <lb n="5"/>τραχήλου ἐπιδῆσαι θέλομεν. ἀρχὴ κατὰ μέσον τοῦ πλευροῦ
 <lb n="6"/>τὸ εἴλημα λοξῶς κατὰ μεταφρένου ἐπὶ τράχηλον καὶ
 <lb n="7"/>στέρνον· εἶτ’ ἐπὶ πλευρὰν κατὰ τῆς προεμβεβλημένης ἀρχῆς
@@ -1434,8 +1514,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="96" xml:id="_96">
-          <p rend="indent">
-<lb n="9"/>Ἡ ἀρχὴ ὑπὸ μασχάλην. τὸ εἴλημα λοξῶς
+<p rend="indent">
+<lb n="9"/><label type="head"><num value="96">Κεφ. Ϟστʹ.</num></label> Ἡ ἀρχὴ ὑπὸ μασχάλην. τὸ εἴλημα λοξῶς
 <lb n="10"/>κατὰ μεταφρένου ἐπὶ τράχηλον καὶ ἐπὶ στέρνον, μασχάλην
 <lb n="11"/>καὶ ἐπὶ ἀντικειμένην μασχάλην καὶ λοξὴ ἐπὶ στέρνον
 <lb n="12"/>καὶ τράχηλον, ὡς χίασμα κατ’ αὐτοῦ γενέσθαι καὶ λοξὴ
@@ -1444,8 +1524,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="97" xml:id="_97">
-          <p rend="indent">
-<lb n="15"/>Δύο τελαμῶνες πλάτει διδακτυλιαίων μήκει
+<p rend="indent">
+<lb n="15"/><label type="head"><num value="97">Κεφ. Ϟζʹ.</num></label> Δύο τελαμῶνες πλάτει διδακτυλιαίων μήκει
 <lb n="16"/>σύμμετροι τὰς μεσότητας κατὰ τῶν ὤμων θέντες, ἀρχὰς
 <lb n="17"/>μὲν ἐπ’ ὀμφαλὸν, ἃς δὲ κατὰ νώτου χιάσαντες πρὸς αὐτὰς
 <pb n="18a.822"/>
@@ -1453,15 +1533,15 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="98" xml:id="_98">
-          <p rend="indent">
-<lb n="2"/>Εὐθετεῖ μὲν ἐφ’ ὧν καὶ ἡ πρὸ ταύτης.
+<p rend="indent">
+<lb n="2"/><label type="head"><num value="98">Κεφ. Ϟηʹ.</num></label> Εὐθετεῖ μὲν ἐφ’ ὧν καὶ ἡ πρὸ ταύτης.
 <lb n="3"/>συντελεῖται δὲ ἔκ τε τοῦ διπλοῦ τραχηλιστῆρος καὶ τῆς καλαθοειδοῦς
 <lb n="4"/>γερανίδος προσεπιτελουμένης.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="99" xml:id="_99">
-          <p rend="indent">
-<lb n="5"/>Ἀρχὴ κατὰ λαγόνα. ἡ δὲ ἐπινομὴ λοξῶς
+<p rend="indent">
+<lb n="5"/><label type="head"><num value="99">Κεφ. Ϟθʹ.</num></label> Ἀρχὴ κατὰ λαγόνα. ἡ δὲ ἐπινομὴ λοξῶς
 <lb n="6"/>κατὰ κλειδὸς ἐπ’ ὠμοπλάτην, εἶθ’ ὑπὸ μασχάλην καὶ ἐπὶ
 <lb n="7"/>κλεῖδα, ἵνα χίασμα ὑπὲρ τὸ ἀκρώμιον γένηται· εἶτ’ ἐγκάρσιος
 <lb n="8"/>ἐπ’ αὐχένα καὶ ἐπ’ ἀντικειμένην κλεῖδα ὑπὸ μασχάλην
@@ -1477,8 +1557,8 @@
         </div>
         <pb n="18a.823"/>
         <div type="textpart" subtype="chapter" n="100" xml:id="_100">
-          <p rend="indent">
-<lb n="1"/>Ἁρμόζει μὲν ἐφ’ ὧν καὶ τὸ ὑπὸ στέρνον
+<p rend="indent">
+        <lb/><label type="head"><num value="100">Κεφ. ρʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν καὶ τὸ ὑπὸ στέρνον
 <lb n="2"/>καὶ νῶτον ἐπιδῆσαι θέλομεν. ἐπιτελεῖται δὲ ἔκ τε τῆς ἀκίδος
 <lb n="3"/>καὶ τοῦ ἀστέρος τῶν περάτων ἃ δὴ ἐπὶ τῆς ἀκίδος
 <lb n="4"/>πρὸς ἄλληλα ἠγκτηρίζετο κατὰ τὰς λαγόνας παρηγμένων κἀκεῖ
@@ -1486,15 +1566,15 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="101" xml:id="_101">
-          <p rend="indent">
-<lb n="6"/>Προκαταλαβόμενος κατὰ τῶν ὤμων τοὺς
+<p rend="indent">
+<lb/><label type="head"><num value="101">Κεφ. ραʹ.</num></label> Προκαταλαβόμενος κατὰ τῶν ὤμων τοὺς
 <lb n="7"/>τελαμῶνας οὓς ὑπὸ τῆς ἀκίδος ὑπεδείξαμεν, προσαπόδος
 <lb n="8"/>κατὰ δύο ἤδη τραχηλιστὴρ ὅς ἐστι διπλοῦς, εἶτα τὴν καλαθοειδῆ γερανῖδα.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="102" xml:id="_102">
-          <p rend="indent">
-<lb n="9"/>Θεατρικὴ μὲν ἡ ἐπίδεσις ἐπειδὴ συντελεσθεῖσα
+<p rend="indent">
+<lb/><label type="head"><num value="102">Κεφ. ρβʹ.</num></label> Θεατρικὴ μὲν ἡ ἐπίδεσις ἐπειδὴ συντελεσθεῖσα
 <lb n="10"/>ἐμφερὴς γίγνεται ταῖς ὀρθαῖς γωνίαις τῶν βωμίσκων
 <lb n="11"/>προεπιδεδεμένῳ τῷ καλαθοειδεῖ τραχηλιστῆρι τῇ ὁμοιοσχήμονι
 <lb n="12"/>γερανίδι προσαποδιδομένην τὴν Σωστράτου στηθοδεσμίδα
@@ -1502,22 +1582,22 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="103" xml:id="_103">
-          <p rend="indent">
-<lb n="14"/>Καὶ αὐτὴ θεατρικὴ ἁρμόζει μὲν ἐπὶ τῶν
+<p rend="indent">
+<lb/><label type="head"><num value="103">Κεφ. ργʹ.</num></label> Καὶ αὐτὴ θεατρικὴ ἁρμόζει μὲν ἐπὶ τῶν
 <lb n="15"/>αὐτῶν προσεπιδήσαντες καὶ πάλιν τὴν Σωστράτου ὀρθίαν
 <lb n="16"/>τὴν στηθοδεσμίδα, ἥν τινες τέτρατον καλοῦσι.
 </p>
         </div>
         <pb n="18a.824"/>
         <div type="textpart" subtype="chapter" n="104" xml:id="_104">
-          <p rend="indent">
-<lb n="1"/>Δύο τελαμῶνας κατὰ τῶν νώτων θέντες
+<p rend="indent">
+<lb/><label type="head"><num value="104">Κεφ. ρδʹ.</num></label> Δύο τελαμῶνας κατὰ τῶν νώτων θέντες
 <lb n="2"/>ὡς ἐπὶ τῆς ὀρθίας στηθοδεσμίδος ἐπιπλέκομεν τὸν ἁπλοῦν ῥόμβον.
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="105" xml:id="_105">
-          <p rend="indent">
-<lb n="3"/>Ἀρχὴ κατὰ πλευρᾶς. τὸ εἴλημα λοξῶς κατὰ
+<p rend="indent">
+<lb/><label type="head"><num value="105">Κεφ. ρεʹ.</num></label> Ἀρχὴ κατὰ πλευρᾶς. τὸ εἴλημα λοξῶς κατὰ
 <lb n="4"/>στέρνον ἐπὶ ἀκρώμιον, εἶτ’ ἐγκάρσιον ἐπ’ αὐχένος κατ’ ἀκρώμιον
 <lb n="5"/><milestone unit="ed2page" n="12.497"/> ἀντικείμενον καὶ ὑπὸ μασχάλην ἐκ τῶν ἔμπροσθεν
 <lb n="6"/>εἰς τὰ ὀπίσω καὶ ἐπὶ τὸ αὐτὸ ἀκρώμιον καὶ λοξὴ ἐπὶ
@@ -1527,8 +1607,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="106" xml:id="_106">
-          <p rend="indent">
-<lb n="10"/>Ἁρμόζει μὲν ἐφ’ ὧν πλευραὶ ἐπιδοῦνται.
+<p rend="indent">
+<lb/><label type="head"><num value="106">Κεφ. ρστʹ.</num></label> Ἁρμόζει μὲν ἐφ’ ὧν πλευραὶ ἐπιδοῦνται.
 <lb n="11"/>συντελεῖται δὲ οὕτως· ἡ μεσότης τοῦ ἐπιδέσμου κατ’ αὐχένας,
 <lb n="12"/>αἱ δ’ ἀρχαὶ λοξαὶ κατὰ στέρνον εἰς αὐτὰς ἀγκυλωθεῖσαι
 <lb n="13"/>ὑπὸ μασχάλας ἐπὶ μετάφρενον, κἀκεῖ πάλιν ἀγκυλωθεῖσαι
@@ -1541,8 +1621,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="107" xml:id="_107">
-          <p rend="indent">
-<lb n="3"/>Ἁρμόζει μὲν ἐπὶ βουβῶνος. ἐπιτελεῖται δὲ
+<p rend="indent">
+<lb/><label type="head"><num value="107">Κεφ. ρζʹ.</num></label> Ἁρμόζει μὲν ἐπὶ βουβῶνος. ἐπιτελεῖται δὲ
 <lb n="4"/>οὕτως· ἀρχὴ κατὰ λαγόνος, ἡ ἀντικειμένη δὲ ἐπινέμησις λοξὴ
 <lb n="5"/>κατὰ πυγῆς πλησίον τοῦ πεπονθότος βουβῶνος, εἶτ’ ἐπὶ περίναιον
 <lb n="6"/>κάτωθεν ἄνω καὶ λοξὴ ἐπὶ βουβῶνα, εἶτ’ ἐγκύκλιος
@@ -1551,8 +1631,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="108" xml:id="_108">
-          <p rend="indent">
-<lb n="9"/>Ἀρχὴ κατ’ ἐπιγαστρίου τὸ εἴλημα λοξῶς
+<p rend="indent">
+<lb/><label type="head"><num value="108">Κεφ. ρηʹ.</num></label> Ἀρχὴ κατ’ ἐπιγαστρίου τὸ εἴλημα λοξῶς
 <lb n="10"/>ἐπὶ κοτύλην παρὰ περίναιον ἐπὶ βουβῶνα κάτωθεν ἄνω κατὰ
 <lb n="11"/>τῆς προεμβεβλημένης ἐπὶ ἰσχίον καὶ βουβῶνα παρὰ περίναιον
 <lb n="12"/>καὶ κοτύλην κάτωθεν ἄνω καὶ ἐπὶ ἦτρον, αἱ δ’ ἐπινομαὶ
@@ -1560,8 +1640,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="109" xml:id="_109">
-          <p rend="indent">
-<lb n="14"/>Ἡ μεσότης κατὰ τοῦ βουβῶνος. αἱ δ’ ἀρχαὶ
+<p rend="indent">
+<lb/><label type="head"><num value="109">Κεφ. ρθʹ.</num></label> Ἡ μεσότης κατὰ τοῦ βουβῶνος. αἱ δ’ ἀρχαὶ
 <lb n="15"/>ἐπὶ κοτύλην κἀκεῖ χιασθεῖσαι· ἡ μὲν ἐπὶ βουβῶνος, ἡ δὲ ἔξωθεν.
 <pb n="18a.826"/>
 <lb n="1"/>εἶτα ἐπὶ τῷ αὐτῷ ἀναγέσθωσαν, αἱ δ’ ἐπινομαὶ κατὰ
@@ -1569,8 +1649,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="110" xml:id="_110">
-          <p rend="indent">
-<lb n="3"/><milestone unit="ed2page" n="12.498"/> Τῆς βραχυτέρας ἀρχῆς ὡς ἂν ἢ δύο ἢ
+<p rend="indent">
+        <lb/><label type="head"><num value="110">Κεφ. ριʹ.</num></label> <milestone unit="ed2page" n="12.498"/> Τῆς βραχυτέρας ἀρχῆς ὡς ἂν ἢ δύο ἢ
 <lb n="4"/>τρεῖς τόποι παρίενται κατὰ βουβῶνος. τὸ δὲ εἴλημα ἄγεται
 <lb n="5"/>κατὰ λαγόνος ἐπὶ ἰσχίον καὶ ἐπιγάστριον, εἶτ’ ἐπὶ κοτύλην
 <lb n="6"/>λοξῶς καὶ βουβῶνα κάτωθεν ἄνω καὶ ἐπὶ λαγόνα καὶ
@@ -1584,8 +1664,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="111" xml:id="_111">
-          <p rend="indent">
-<lb n="14"/>Ταινίας ἡ μεσότης κατ’ ὀσφύος. αἱ δ’
+<p rend="indent">
+<lb/><label type="head"><num value="111">Κεφ. ριαʹ.</num></label> Ταινίας ἡ μεσότης κατ’ ὀσφύος. αἱ δ’
 <lb n="15"/>ἀρχαὶ κατὰ βουβῶνα ὡς ἐπὶ τοῦ ἁπλοῦ παριέντες ἑτέρου
 <lb n="16"/>ἐπιδέσμου. ἀρχαὶ κατ’ ἐπιγαστρίου καὶ συντελεῖται διπλοῦς
 <pb n="18a.827"/>
@@ -1594,8 +1674,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="112" xml:id="_112">
-          <p rend="indent">
-<lb n="3"/>Ταινιδίου μεσότης κατ’ ὀσφύος, αἱ δ’
+<p rend="indent">
+<lb/><label type="head"><num value="112">Κεφ. ριβʹ.</num></label> Ταινιδίου μεσότης κατ’ ὀσφύος, αἱ δ’
 <lb n="4"/>ἀρχαὶ κατ’ ἐπιγαστρίου ἁμματίζονται, εἶτ’ ἐπιδέσμου εἰλητοῦ
 <lb n="5"/>ἡ ἀρχὴ ὑπὸ τὴν ζώνην τὸ εἴλημα ὑπὸ καυλὸν, εἶτ’ ἐπὶ τὴν
 <lb n="6"/>ζώνην ἄνωθεν κάτω· εἶθ’ ὑπὸ καυλὸν καὶ περὶ τὴν ζώνην,
@@ -1603,8 +1683,8 @@
 </p>
         </div>
         <div type="textpart" subtype="chapter" n="113" xml:id="_113">
-          <p rend="indent">
-<lb n="8"/>Μετὰ τὸ περιθεῖναι τὴν ταινίαν ἡ ἀρχὴ
+<p rend="indent">
+<lb/><label type="head"><num value="113">Κεφ. ριγʹ.</num></label> Μετὰ τὸ περιθεῖναι τὴν ταινίαν ἡ ἀρχὴ
 <lb n="9"/>τοῦ ἐπιδέσμου ἐπὶ καυλὸν καὶ νομαὶ ἐγκύκλιοι περὶ αὐτὸν
 <lb n="10"/>ἕως σκεπασθῇ· εἶτα περὶ τὴν ζώνην, εἶτα ὑπὸ καυλὸν καὶ
 <lb n="11"/>περὶ τὴν ζώνην, εἶθ’ ὑπὸ διδύμους καὶ ἐπὶ ζώνην.
@@ -1612,8 +1692,8 @@
           </p>
         </div>
         <div type="textpart" subtype="chapter" n="114" xml:id="_114">
-          <p rend="indent">
-<lb n="13"/>Σύμμετρον ῥάκος λαβόντες σχίζομεν
+<p rend="indent">
+<lb/><label type="head"><num value="114">Κεφ. ριδʹ.</num></label> Σύμμετρον ῥάκος λαβόντες σχίζομεν
 <lb n="14"/>εἰς σκέλη τέσσαρα τὸ μέσον συνεχὲς ἐῶντες καὶ ὑποβάλλομεν
 <lb n="15"/>τῷ καυλῷ, τὰς δὲ ἀρχὰς ἀνάγοντες τὰς περὶ τὸ
 <lb n="16"/>ἕτερον μέρος πλησίον καυλοῦ ἐπισχίζομεν, διὰ δὲ αὐτοῦ
