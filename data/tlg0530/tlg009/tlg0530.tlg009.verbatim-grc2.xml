@@ -14,9 +14,13 @@
         <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
         <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
         <respStmt>
-          <resp>Published original versions of the electronic texts. The following text is taken verbatim from Galen’s complete works published by Karl Gottlob Kühn from 1821 to 1830. The text was produced from the image of Kühn's edition digitised by the <orgName ref="https://www.biusante.parisdescartes.fr/histoire/medica/index.php">Bibliothèque numérique Medica</orgName> (BIU Santé médecine, Université Paris Cité) using ABBYY FineReader 15.</resp>
+          <resp>Published original versions of the electronic texts. The following text is taken verbatim from Vigoreus' edition published in 1555. The text was produced from the image of this edition digitised by the <orgName ref="https://www.digitale-sammlungen.de">Bayerische Staatsbibliothek</orgName> using  Transkribus, model NOSCEMUS GM6 </resp>
           <orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
           <persName>Nathalie Rousseau, Sorbonne Université</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Keyboarding</resp>
+          <persName>Paul Demont, Sorbonne Université</persName>
         </respStmt>
         <respStmt>
           <resp>Editor-in-Chief, Galenus verbatim</resp>
@@ -28,25 +32,15 @@
           <persName>Frédéric Glorieux</persName>
         </respStmt>
         <respStmt>
-          <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
-          <persName>Cahal Taaffe</persName>
-          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-        </respStmt>
-        <respStmt>
-          <resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
-          <persName>Lucas Lemperriere, Université de Rouen</persName>
-          <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
-        </respStmt>
-        <respStmt>
-          <resp from="2024-06" to="2024-07">Global text verification and correction, Galenus verbatim</resp>
-          <persName>Fabrice Robert</persName>
+          <resp from="2024-06" to="2024-09">Digital Editor, Galenus verbatim</resp>
+          <persName>Saul Mouveroux</persName>
           <orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
         </respStmt>
         <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
         <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
       </titleStmt>
       <editionStmt resp="#Galenus_verbatim">
-        <edition n="1">Digital edition of the texts printed in Kühn’s edition.
+        <edition n="1">Digital edition of the text printed in Vigoreus' edition.
           <date type="upload" when="2024">2024</date>
         </edition>
       </editionStmt>
@@ -54,7 +48,7 @@
         <authority ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France</authority>
         <publisher>Sorbonne Université</publisher>
         <pubPlace>Paris</pubPlace>
-        <idno>urn:cts:greekLit:tlg0530.tlg009.verbatim-grc1</idno>
+        <idno>urn:cts:greekLit:tlg0530.tlg009.verbatim-grc2</idno>
         <availability>
           <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
         </availability>
@@ -69,11 +63,11 @@
             <imprint>
               <publisher>Vascosan, Michel</publisher>
               <pubPlace>Paris</pubPlace>
-             <!--je ne sais pas s'il faut mettre ici es numéros de pages comme chez Kühn-->
+              <biblScope unit="folio" from="1" to="9">1-9</biblScope>
               <date>1555</date>
             </imprint>
           </monogr>
-          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref>
+          <ref target="https://www.digitale-sammlungen.de/view/bsb10150801?page=11">Bayerische Staatsbibliothek</ref>
         </biblStruct>
         <biblStruct>
           <!-- Est-il nécéssaire de mettre l'édition de Chartier ? je le laisse au cas où mais je pense qu'il faudrait peut-être mettre à place l'édition de Kühn?.-->
@@ -87,9 +81,25 @@
               <biblScope unit="vol">3</biblScope>
               <biblScope unit="pp" from="150" to="153">150-153</biblScope>
               <date>1638</date>
+              <note>Cet exemplaire de la BIU Santé contient le texte latin manuscrit de l'édition de Vigoreus</note>
             </imprint>
           </monogr>
           <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?00013x03">BIU Santé, Medica</ref>
+        </biblStruct>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
+            <author xml:lang="lat">Pseudo-Galenus</author>
+            <editor role="editor">Kühn, Karl Gottlob</editor>
+            <imprint>
+              <publisher>Cnobloch</publisher>
+              <pubPlace>Leipzig</pubPlace>
+              <biblScope unit="vol">19</biblScope>
+              <biblScope unit="pp" from="485" to="496">485-496</biblScope>
+              <date>1830</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.biusante.parisdescartes.fr/histmed/medica/cote?45674x19">BIU Santé, Medica</ref>
         </biblStruct>
       </sourceDesc>
     </fileDesc>
@@ -162,7 +172,7 @@
 <lb/>καὶ αὐτοῖς τοῖς<note place="end">τοῖς om. Kühn.</note> ὀνόμασιν.</p></div>
   
         <div type="textpart" subtype="section" n="2">
-<p> <pb/>2. Αὐτίκα γὰρ στοιχεῖα μὲν ὁ κόσμος, ἐξ ὧν ἀήρ τε, καὶ πῦρ, καὶ ὕδωρ, 
+          <p><pb n="1v"/><label type="head"><num value="2">2.</num></label> Αὐτίκα γὰρ στοιχεῖα μὲν ὁ κόσμος, ἐξ ὧν ἀήρ τε, καὶ πῦρ, καὶ ὕδωρ, 
 <lb/>καὶ γῆ. καιροὶ δὲ δι᾿ὧν ὁ χρόνος, ἔαρ, καὶ θέρος, καὶ χειμὼν, καὶ 
 <lb/>φθινόπωρον. χυμοὶ δὲ χολὴ, καὶ αἷμα, φλέγμα τε <milestone unit="edKpage" n="19.486"/> καὶ ἡ μέλαινα, 
   <lb/>ἐξ ὧν τὰ ζῶα συνέστηκε, καὶ ὁ ἄνθρωπος.</p></div>
@@ -176,7 +186,7 @@
   <lb/>καὶ ὑγρά.</p></div>
   
             <div type="textpart" subtype="section" n="4">
-<p><pb/>4.  ῾Ενοῦται δὲ καὶ πρὸς ἑαυτὰ χυμὸς καὶ στοιχεῖον, καὶ καιρὸς, καὶ διίσταται. 
+<p><pb n="2r"/>4.  ῾Ενοῦται δὲ καὶ πρὸς ἑαυτὰ χυμὸς καὶ στοιχεῖον, καὶ καιρὸς, καὶ διίσταται. 
 <lb/>ἀὴρ γὰρ καὶ πῦρ διενήνοχε τῇ ξηρότητι καὶ ὑγρότητι, ἑνοῦται δὲ τῇ<note place="end">τῇ om. Kühn.</note> 
 <lb/>θερμότητι. πῦρ δὲ καὶ γῆ, τῇ ψυχρότητι καὶ θερμότητι· ξηρὰ δὲ πάντως 
 <lb/>ἀμφότερα. ὥσπερ γῆ καὶ ὕδωρ ψυχρὰ, διίσταται δὲ ξηρότητι καὶ 
@@ -185,7 +195,7 @@
 <p><lb/>5. Οὕτω καὶ χυμοὶ καὶ καιροὶ συνίστανται, καὶ ἀλλήλων διίστανται, καὶ 
 <lb/>τὴν καλουμένην φίλεχθρον μίξιν ἀποτελοῦσιν<note place="end">ἀποτελοῦσιν P3 : ἀποτελεῖ Σ P1 P2.</note>. ἀλλὰ τὰ μὲν στοιχεῖα 
 <lb/>τὰ αὐτὰ πάντως εἰσὶ, καὶ ἐπὶ ᾧ αὐτῷ<note place="end">τῷ αὐτῶ : τῷ ἑαυτοῦ Σ.</note> ἕκαστον μένει τόπῳ. καὶ
-<pb/>τῇ πρὸς ἄλληλα μεταβολῇ τὴν διαμονὴν ἔχει, καὶ <milestone unit="edKpage" n="19.487"/> τῇ ἀναλόγῳ τροφῇ 
+<pb n="2v"/>τῇ πρὸς ἄλληλα μεταβολῇ τὴν διαμονὴν ἔχει, καὶ <milestone unit="edKpage" n="19.487"/> τῇ ἀναλόγῳ τροφῇ 
 <lb/>προνοητικῷ τινὶ λόγῳ τρεφομένων<note place="end">τρεφομένων P1 P3 : τρεφόμενον Σ P2.</note>. καὶ καιρὸς ὡσαύτως ταῖς πρὸς 
 <lb/>νότον καὶ βοῤῥᾶν τοῦ ἡλίου κινήσεσι γίνεταί τε<note place="end">τε om. Kühn.</note> καὶ λέγεται. χυμοὶ 
 <lb/>δὲ οὐχ ὡσαύτως, οὐδ᾿ οἱ αὐτοὶ πάντῃ εἰσίν, ἀλλὰ διενηνόχασιν<note place="end">διενηνόχασιν : διενήνοχεν Σ P1 P2 P3.</note> ἀλλήλων, 
@@ -197,7 +207,7 @@
 <lb/>πυρώδη γίνεται ἡ μεταβολή. ἐνίοις δὲ ἀτάκτως ἀπὸ τοῦ φλέγματος 
   <lb/>εἰς ξανθὴν. καὶ ἀπὸ τοῦ αἵματος εἰς τὴν μέλαιναν.</p></div>
                 <div type="textpart" subtype="section" n="6">
-<p><pb/>6. Μαρτυρία δὲ τοῦ λόγου τὸ γεῶδες αἷμα καὶ μελαγχολικὸν, τὸ ἁλικὸν<note place="end">τὸ ἁλικὸν: τό τε ἁλυκὸν Σ.</note> 
+<p><pb n="3r"/>6. Μαρτυρία δὲ τοῦ λόγου τὸ γεῶδες αἷμα καὶ μελαγχολικὸν, τὸ ἁλικὸν<note place="end">τὸ ἁλικὸν: τό τε ἁλυκὸν Σ.</note> 
 <lb/>φλέγμα, ἐγγύς που τοῦ τῆς ἰσατώδους τυγχάνον χολῆς, καὶ ῥᾳδίως 
 <lb/>εἰς αὐτὴν μεταβαλλόμενον. φαίνεται δὲ καὶ φλεγματώδης χολὴ, 
 <lb/>καὶ μυξώδης, καὶ αἷμα τοιοῦτον. καθά που<note place="end">τοιοῦτον. καθά που Σ P1 P2 P3 : τοιοῦτο, καθάπερ Kühn (et P3 corr. in mg).</note> κᾀπὶ τῶν ὑδαλέων καὶ 
@@ -207,7 +217,7 @@
 <lb/>καὶ ἡ τάξις πρόεισι<note place="end">πρόεισι : πρόισι Σ.</note> τῆς ἐπικρατήσεως, τοὐναντίον δὲ τοῖς κατ᾿ 
   <lb/>αὐτὴν μεταβάλλουσιν.</p></div>
                   <div type="textpart" subtype="section" n="7">
-<p><pb/>7. Αὔξει δὲ ἄλλῳ ἄλλος ἄλλοτε χυμὸς, κράσει, καὶ ὥρᾳ, καὶ χώρᾳ, 
+<p><pb n="3v"/>7. Αὔξει δὲ ἄλλῳ ἄλλος ἄλλοτε χυμὸς, κράσει, καὶ ὥρᾳ, καὶ χώρᾳ, 
 <lb/>καὶ ἡλικίᾳ, καὶ διαίτῃ γεννώμενος, ὥσπερ ἅπασιν ἅπαντες τεταγμέναις 
 <lb/>περιόδοις καὶ καιροῖς τοῖς ἑαυτῶν γεννώμενοί τε καὶ ἐπίδοσιν 
 <lb/>ἔχοντες. θέρει γὰρ αὔξει πικρὰ, ἡλικίᾳ δὲ καὶ κράσει καὶ διαίτῃ παραπλησία 
@@ -221,7 +231,7 @@
 <lb/>τὸν μελαγχολικὸν, ἀλλὰ δὴ καὶ συμπεπλεγμένως. <hi rend="b">[Fol. 33r]</hi> καθὼς καὶ ὅτε συμπεπλεγμέναις 
   <lb/>χρώμεθα ταῖς τροφαῖς, καὶ τὰ ἀκόλουθα ἕπεται.</p></div>
                     <div type="textpart" subtype="section" n="8">
-<p><pb/>8. Αὔξει δὲ μειρακίῳ μὲν τὸ αἷμα, διὸ καὶ χαρίεις<note place="end">χαρίεντες Kühn.</note> οἱ τοιοῦτοι, καὶ 
+<p><pb n="4r"/>8. Αὔξει δὲ μειρακίῳ μὲν τὸ αἷμα, διὸ καὶ χαρίεις<note place="end">χαρίεντες Kühn.</note> οἱ τοιοῦτοι, καὶ 
 <lb/>μανικῶς περὶ τὸ παίζειν διακείμενοι· χολὴ δὲ τῷ νεανίσκῳ, ὀργίλον 
 <lb/>αὐτὸν καὶ θυμώδη, καὶ πικρίαν<note place="end">πικρίαν P1 P2 P3 : πικριδίαν Σ πικρὸν Kühn (et P3 corr. in mg).</note> παρασκευάζουσα. τῷ ὑπερήβῳ δὲ μέλαινα, 
 <lb/>χείριστος οὗτος χυμὸς, καὶ ὅπου<note place="end">ὅπως: ὅπου Σ P1 P2 P3.</note> ἂν ὁρμήσῃ δυσκάθεκτος τυγχάνων, 
@@ -232,13 +242,13 @@
 <lb/>θερμὴ καὶ ξηρὰ, καὶ τῶν νεανίσκων ἡ τοῦ ἀναλογοῦντος χυμοῦ 
   <lb/>καὶ ἀμείνονος.  </p></div>
                       <div type="textpart" subtype="section" n="9">
-<p><pb/>9. Τόποι δὲ αὐτῶν γεννήσεως τε καὶ διαμονῆς καὶ κινήσεως, αἵματος 
+<p><pb n="4v"/>9. Τόποι δὲ αὐτῶν γεννήσεως τε καὶ διαμονῆς καὶ κινήσεως, αἵματος 
 <lb/>μὲν ἧπαρ καὶ φλέβες, καὶ ἀμφότεραι τῶν ῥινῶν· ξανθῆς δὲ 
 <lb/>κύστις ἡ ἰδία, καὶ περὶ τὸ ἧπαρ, καὶ δι᾿<milestone unit="edKpage" n="19.490"/> ὤτων, ὅπερ καὶ φαίνεται. 
 <lb/>φλέγματος δὲ στόμαχος καὶ ψόαι, καὶ διὰ στόματος, ὥσπερ τῆς μελαίνης 
   <lb/>ὑπὸ τὸ ἧπαρ καὶ σπλῆνα, καὶ δι᾿ ὀφθαλμῶν, ὥσπερ λέγεται.</p></div>
                         <div type="textpart" subtype="section" n="10">
-<p><pb/>10. Χροιὰ δὲ αὐτῶν, αἵματος μὲν ἐρυθρὰ, φλέγματος δὲ λευκή· 
+<p><pb n="5r"/>10. Χροιὰ δὲ αὐτῶν, αἵματος μὲν ἐρυθρὰ, φλέγματος δὲ λευκή· 
 <lb/>ξανθῆς δὲ εἴδη ἑπτά· ἡ μὲν γάρ τις ἐστὶ ξανθὴ, ἥ τις καὶ στοιχειώδης λέγεται. 
 <lb/>ἡ δὲ ὠχρὰ, ἡ δὲ ἐρυθρὰ, ἡ δὲ πρασώδης, ἡ δὲ λεκινθώδης, ἡ δὲ 
 <lb/>ἰώδης, ἡ δὲ ἰσατώδης. μελαίνης τὸ ἐλαιῶδες χρῶμα οἰκεῖον, καὶ τοῦθ’ 
@@ -248,7 +258,7 @@
 <lb/>καὶ ὀξεῖα ἡ μέλαινα. τὸ δὲ φλέγμα ἄποιον μὲν πρώτως, εἶθ’ ἁλυκὸν, 
   <lb/>εἶτ᾿ ὀξὺ, καὶ προσέτι γλυκύ.</p></div>
                             <div type="textpart" subtype="section" n="12">
-<p><pb/>12. Εἰσὶ δὲ καὶ τῆς μελαίνης τέσσαρες αἱ διαφοραί· ἡ μὲν γὰρ ἐστιν 
+<p><pb n="5v"/>12. Εἰσὶ δὲ καὶ τῆς μελαίνης τέσσαρες αἱ διαφοραί· ἡ μὲν γὰρ ἐστιν 
 <lb/>ἀπὸ τῆς τρυγίας τοῦ αἵματος· ἡ δὲ ἐξ ὑπεροπτήσεως τῆς ξανθῆς· ἡ δ᾿ 
   <lb/>ἀσφαλτώδης, διὰ τὸ στίλβειν ἀσφάλτου δίκην. ἡ δέ.*<note place="end">Il y a ici une lacune de presque une ligne, avec une présentation similaire, dans Σ P1 et P2. P3 complète la lacune (encore visible) en ajoutant: αἱματώδης ἐκ ὑπεροπλήσεως τοῦ αἵματος.  Kühn ajoute seulement αἱματώδης.</note> </p></div>
                               <div type="textpart" subtype="section" n="13">
@@ -258,7 +268,7 @@
   <lb/>θερμότητος. </p></div>
                                 <div type="textpart" subtype="section" n="14"> 
 <p><lb/>14. Ἔοικε <milestone unit="edKpage" n="19.491"/> δὲ τὴν ὑγείαν χαρακτηρίζεσθαι τῇ τούτων ἰσότητί τε καὶ 
-<pb/>συμμετρότητι. ἐνδεόντων δὲ αὐτῶν ἢ πληθυνόντων παρὰ τὸ δέον, 
+<pb n="6r"/>συμμετρότητι. ἐνδεόντων δὲ αὐτῶν ἢ πληθυνόντων παρὰ τὸ δέον, 
 <lb/>ἢ ποσότητι, ἢ ποιότητι, ἢ τόπων μεταστάσει, ἢ συμπλοκῇ ἀτάκτῳ, 
 <lb/>ἢ σήψει κακωθέντων αἱ νόσοι συμβαίνουσιν, ὥσπερ καὶ λέγεται τοὺς 
 <lb/>νόσους συμβαίνειν τῇ τῶν χυμῶν ἀμετρίᾳ. καθὰ καὶ τὴν ὑγείαν ἐπανέρχεσθαι 
@@ -273,7 +283,7 @@
 <lb/>ὄντες χυμοὶ, παρὰ τὸ χεῖσθαι ἅμα λεγόμενοι. δῆλον γὰρ ὡς εἰ τοῦτο 
   <lb/>ὑγεία, τὸ μὴ τοιοῦτον, νόσος ἂν εἴη, ὥσπερ καὶ δέδεικται. </p></div>
                                   <div type="textpart" subtype="section" n="15"> 
-<p><pb/>15. Ἐπεὶ δὲ ἡ νόσος γένος <milestone unit="edKpage" n="19.492"/> εἰς διάφορα εἴδη διαιρουμένη, ἀνάγκη 
+<p><pb n="6v"/>15. Ἐπεὶ δὲ ἡ νόσος γένος <milestone unit="edKpage" n="19.492"/> εἰς διάφορα εἴδη διαιρουμένη, ἀνάγκη 
 <lb/>τὰς διαφορὰς ἀπό τινων διαφόρων αἰτίων<note place="end">διαφορῶν αἰτιῶν Kühn [sic].</note> προβαίνειν. αἴτια 
 <lb/>δὲ χυμοὶ καὶ συμπτώματα. τὰ μὲν τοῖς ἔξωθεν ἐπισυμβαίνουσιν. 
 <lb/>οἱ δὲ ταῖς αὐξήσεσι καὶ μειώσεσιν, ἐπί τε ἡλικίαις, καὶ καιροῖς, καὶ 
@@ -284,7 +294,7 @@
 <lb/>χυμῶν, καὶ τὰ νοσήματα κατὰ τὴν τοῦ πλεονάζοντος 
   <lb/>χυμοῦ φύσιν πεφυκότα γίγνεσθαι. </p></div>
                                     <div type="textpart" subtype="section" n="16"> 
-<p><pb/>16. Καὶ μὲν δὴ καὶ ἐν προοιμίῳ τοῦ περὶ χυμῶν<note place="end">Cf. <hi rend="italic">Hum.</hi> 1, Littré V, p. 476 (Τὸ χρῶμα τῶν χυμῶν, ὅκου μὴ ἄμπωτίς ἐστι τῶν χυμῶν, ὥσπερ ἀνθέων) et [Gal], t. XVI, p. 4-5 Kühn (voir supra p. XXX).</note>, τὸ χρῶμα, φησὶ, τῶν 
+<p><pb n="7r"/>16. Καὶ μὲν δὴ καὶ ἐν προοιμίῳ τοῦ περὶ χυμῶν<note place="end">Cf. <hi rend="italic">Hum.</hi> 1, Littré V, p. 476 (Τὸ χρῶμα τῶν χυμῶν, ὅκου μὴ ἄμπωτίς ἐστι τῶν χυμῶν, ὥσπερ ἀνθέων) et [Gal], t. XVI, p. 4-5 Kühn (voir supra p. XXX).</note>, τὸ χρῶμα, φησὶ, τῶν 
 <lb/>χυμῶν, ὅπου οὐκ ἔστι ταραχὴ αὐτῶν, ὥσπερ τῶν ἀνθῶν, κατ᾿ ἐπικράτειαν 
 <lb/><hi rend="b">[Fol. 34r]</hi> τῶν χυμῶν εἴωθεν ἐν τῇ διαδοχῇ τῶν ἡλικιῶν ὑπαλλάττεσθαι 
 <lb/>τοῖς ἀνθρώποις, καθάπερ ἄρα καὶ τὰ ἤθη τῆς ψυχῆς· ἠθοποιοῦσι 
@@ -293,7 +303,7 @@
 <lb/>ἀμφότερα. τὸ δὲ φλέγμα ἀργοτέραν, καὶ ἠλιθιωδεστέραν·<milestone unit="edKpage" n="19.493"/> ἡ δὲ μέλαινα, 
   <lb/>ὀργιλωτέραν<note place="end">καὶ ἠλιθιωδεστέραν· ἡ δὲ μέλαινα, ὀργιλωτέραν P1 in mg.</note>, καὶ ἰταμωτέραν. </p></div>
                                       <div type="textpart" subtype="section" n="17"> 
-<p><pb/>17. ῾Υπαλλάττεται δὲ τὸ τῆς ψυχῆς ἦθος καὶ ἐν ταῖς νόσοις, πρὸς τὸ 
+<p><pb n="7v"/>17. ῾Υπαλλάττεται δὲ τὸ τῆς ψυχῆς ἦθος καὶ ἐν ταῖς νόσοις, πρὸς τὸ 
 <lb/>εἶδος τοῦ περιττεύοντος χυμοῦ, ὡς ἐπὶ τῶν παρακοπῶν. ὅσαι γὰρ 
 <lb/>αὐτῶν εἰσὶν ἀφ᾿ αἵματος, μετ᾿ ᾠδῆς προσπίπτουσί τε καὶ γέλωτος· 
 <lb/>ὅσαι δὲ ἀπὸ ξανθῆς, θρασύτεροι καὶ πικρότεροι. Διὰ τοῦτο καὶ 
@@ -304,7 +314,7 @@
   <lb/>καὶ ἀσταταίνοντες<note place="end">ἀσταταίνουσαι Kühn.</note>. </p></div>
                                         <div type="textpart" subtype="section" n="18"> 
 <p><lb/>18. Καὶ ἀλλαχοῦ αὐτὸς μαρτυρεῖ, ὡς ἐν τῷ πρώτῳ τῶν ἐπιδημιῶν 
-<pb/>φησί. Σειλίνου μὲν παρακόψαντος μετ᾿ ὠδῆς καὶ γέλωτος<note place="end">Cf. <hi rend="italic">Epid. I</hi>, 3, 13 (λόγοι πολλοὶ, ᾠδή).</note>. ἐπὶ δὲ Φιλίσκου 
+<pb n="8r"/>φησί. Σειλίνου μὲν παρακόψαντος μετ᾿ ὠδῆς καὶ γέλωτος<note place="end">Cf. <hi rend="italic">Epid. I</hi>, 3, 13 (λόγοι πολλοὶ, ᾠδή).</note>. ἐπὶ δὲ Φιλίσκου 
 <lb/>ἐν τῇ τρίτῃ ἐπιδημίᾳ. γενέσθαι θρασεῖαν τὴν παρακοπὴν<note place="end">Cf. <hi rend="italic">Epid. I</hi>, 3, 13 (Littré t. , p. ), mais le texte hippocratique ne mentionne, "au milieu du jour" (le cinquième jour) que des saignements de nez…</note>· 
 <lb/>ἐξεμάνη γάρ φησι περὶ τὸ μέσον τῆς ἡμέρας· ξανθὴ γὰρ ἦν ἡ πρόφασις 
 <lb/>τῆς νόσου. ἐν Κυζικῷ δὲ τὰς Διδύμου θυγατέρας τεκούσας μανῆναι 
@@ -319,7 +329,7 @@
 <lb/>προσάγειν τῷ σώματι, ἐκ τῶν ἐναντίων ἱστάμενος τῷ νοσήματι. 
 <lb/>καὶ ἐν τῷ περὶ νούσων<note place="end">Cf. </note>, <hi rend="b">[Fol. 34v]</hi> ὅταν περίησιν οὓς ἐθέλοιεν<note place="end">ὅταν περίησιν οὓς ἐθέλοιεν Σ ὅταν περίησιν ὡς ἐθέλοιεν P1 P2: ὅταν περὶ ἰήσεως ἐθέλῃ P3 ὃς ἂν περὶ ἰήσεως οὓς ἐθέλῃ Kühn. Il s’agit encore d’un passage célèbre, cité avec de grosses erreurs, qui le rendent incompréhensible, le début de <hi rend="italic">Mal. I</hi>, 1 (Littré t. , p. ): ΟY ἂν περὶ ἰήYιοY ἐθέλῃ ἐρωτᾷν τε ὀρθῶY, καὶ ἐρωτῶντι ἀποκρίνεYθαι, καὶ ἀντιλέγειν ὀρθῶY, ἐνθυμέεYθαι χρὴ τάδε· πρῶτον μὲν, ἀφ∆ ὧν αἱ νοῦYοι γίνονται πᾶYαι τοῖYιν ἀνθρώποιYιν.</note>, ἐρωτᾶν τε ὀρθῶς, 
 <lb/>καὶ ἐρωτώμενος<note place="end">ἐρωτῶντι Kühn P3 (in mg).</note> ἀποκρίνεσθαι, καὶ ἀντιλέγειν ὀρθῶς, καὶ ἐνθυμέεσθαι 
-  <pb/>χρὴ τῇ μὲν<note place="end">τῇ μὲν : τάδε. πρῶτον Kühn.</note> ἀφ᾿ ὧν αἱ νόσοι γίγνονται τοῖσιν ἀνθρώποις πᾶσι.</p></div>
+  <pb n="8v"/>χρὴ τῇ μὲν<note place="end">τῇ μὲν : τάδε. πρῶτον Kühn.</note> ἀφ᾿ ὧν αἱ νόσοι γίγνονται τοῖσιν ἀνθρώποις πᾶσι.</p></div>
                                             <div type="textpart" subtype="section" n="20"> 
 <p><lb/>20. Γνωρίζονται τοίνυν αἱ τῶν νοσημάτων προφάσεις, πρῶτον μὲν 
 <lb/>ἀπὸ τῆς ἡλικίας· εἰ γὰρ μειράκιον τὸ νοσοῦν, μάλιστα ἂν ἀφ᾿ αἵματος 
@@ -336,12 +346,12 @@
 <lb/>δείκνυσιν<note place="end">Cf. <hi rend="italic">Aphor.</hi> III, 21 (Littré t. IV, p. 496) ? Divers hapax sont employés pour ces "vésicules" (cf. la note de C. Magdelaine <hi rend="italic">ad loc.</hi>). Notre texte en offre un de plus.</note>, ἱδρωτήρια<note place="end">Hapax.</note> ἔαρος καὶ θέρους γενόμενα λέγων, ὡς ἀφ᾿ αἵματος 
   <lb/>καὶ χολῆς ὄντα.</p></div>
                                               <div type="textpart" subtype="section" n="21"> 
-<p><pb/>21. Καὶ μὲν δὴ καὶ ἀπὸ τοῦ χρώματος, ὥσπερ ἐπὶ<note place="end">ἐπὶ : ἡ Σ.</note> τοῦ χυμοῦ ἐπικράτεια, 
+<p><pb n="9r"/>21. Καὶ μὲν δὴ καὶ ἀπὸ τοῦ χρώματος, ὥσπερ ἐπὶ<note place="end">ἐπὶ : ἡ Σ.</note> τοῦ χυμοῦ ἐπικράτεια, 
 <lb/>οὕτω καὶ τοῦ νοσήματος διαγινώσκεται. ἔστι δὲ αὕτη οὐδὲν 
 <lb/>ἧττον τῶν μεγίστων διαγνώσεων ἀκριβεστάτη, καὶ Διογένει, καὶ τοῖς 
   <lb/>κατ᾿ ἐκεῖνο<note place="end">ἐκείνου Kühn.</note> καιροῦ σοφοῖς, ὡς μαντική τις νομιζομένη.</p></div>
                                                 <div type="textpart" subtype="section" n="22"> 
-<p><pb/>22. Πολὺν γὰρ οἱ ἄνδρες ἐκεῖνοι περὶ χρωμάτων ἐποιήσαντο λόγον 
+<p><pb n="9v"/>22. Πολὺν γὰρ οἱ ἄνδρες ἐκεῖνοι περὶ χρωμάτων ἐποιήσαντο λόγον 
 <lb/>ταῖς διαφοραῖς αὐτῶν, καὶ τὰ νοσήματα μεριζόμενοι<note place="end">Vigor signale que le "codex" de l’un de ses amis a le texte: ὅπως τοὺς ἀνθρώπους, οὕτω καὶ τὰ νοσήματα μεριζόμενοι.</note>, ἐρυθρόχρους 
 <lb/>τε τοὺς αἱματώδεις, καὶ πυρόχρους<note place="end">Hapax.</note>, οἷς ὁ πικρὸς πλεονάζει χυμός. καὶ 
 <lb/>μελανόχρους, οἷς μέλαινα, καὶ λευκόχρους τοὺς φλεγματίας<milestone unit="edKpage" n="19.496"/> ἀποκαλοῦντες. 
