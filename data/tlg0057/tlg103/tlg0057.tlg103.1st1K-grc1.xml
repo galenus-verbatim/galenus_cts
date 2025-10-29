@@ -50,14 +50,14 @@
 </edition>
 <respStmt>
 <!-- paragraphe à vérifier pour chaque édition -->
-<resp>To reuse this edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We changed the naming schemes of the milestones indicating the corresponding Kühn pages or added such milestones when they were missing. The layout of the original edition was marked up by &lt;pb&gt; and &lt;lb&gt; elements when they were missing. We also added elements specific to critical editions, that were present in this edition but were missing in the TEI, mainly chevrons and hooks. For details, see the revisionDesc section.</resp>
-<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<resp>To reuse this edition for the Galenus verbatim project, we (silently) corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We changed the naming schemes of the milestones indicating the corresponding Kühn pages or added such milestones when they were missing. The layout of the printed edition was marked up by &lt;pb&gt; and &lt;lb&gt; elements when they were missing. We also added elements specific to critical editions, that were present in this edition but were missing in the TEI, mainly chevrons and hooks. For details, see the revisionDesc section.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France (2019-2024), the Initiative humanités biomédicales de l’Alliance Sorbonne Université (2021-2024) and the Institut des sciences de l’Antiquité de l’Alliance Sorbonne Université (2024-2025)</orgName>
 <persName>Nathalie Rousseau, Sorbonne Université</persName>
 </respStmt>
 <respStmt>
 <resp>Editor-in-Chief, Galenus verbatim</resp>
 <persName>Nathalie Rousseau, Sorbonne Université</persName>
-<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France (2019-2024), the Initiative humanités biomédicales de l’Alliance Sorbonne Université (2021-2024) and the Institut des sciences de l’Antiquité de l’Alliance Sorbonne Université (2024-2025)</orgName>
 </respStmt>
 <respStmt>
 <resp>Lead Developer, Optéos</resp>
@@ -66,19 +66,19 @@
 <respStmt>
 <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
 <persName>Cahal Taaffe</persName>
-<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France (2019-2024), the Initiative humanités biomédicales de l’Alliance Sorbonne Université (2021-2024) and the Institut des sciences de l’Antiquité de l’Alliance Sorbonne Université (2024-2025)</orgName>
 </respStmt>
 <respStmt>
 <resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
 <persName>Lucas Lemperriere, Université de Rouen</persName>
-<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France (2019-2024), the Initiative humanités biomédicales de l’Alliance Sorbonne Université (2021-2024) and the Institut des sciences de l’Antiquité de l’Alliance Sorbonne Université (2024-2025)</orgName>
 </respStmt>
 <!-- à vérifier pour chaque édition -->
 <respStmt>
 <resp from="2023" to="2024">Text verification and correction, Galenus verbatim</resp>
 <persName>
 </persName>
-<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France (2019-2024), the Initiative humanités biomédicales de l’Alliance Sorbonne Université (2021-2024) and the Institut des sciences de l’Antiquité de l’Alliance Sorbonne Université (2024-2025)</orgName>
 </respStmt>
 <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
 <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
@@ -116,14 +116,14 @@
       </refsDecl>
 <editorialDecl resp="#Galenus_verbatim">
 <correction>
-<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+<p>Typographical errors of the printed edition are marked up by a &lt;choice&gt; element.</p>
 </correction>
 <hyphenation eol="none">
 <p>End-of-line hyphenation is silently removed where appropriate.</p>
 </hyphenation>
 <!-- à vérifier pour chaque édition -->
 <interpretation>
-<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type is systematically specified with a rend value.</p>
+<p>The layout of the printed edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type is systematically specified with a rend value.</p>
 </interpretation>
 <!-- à vérifier pour chaque édition -->
 <interpretation>
@@ -151,7 +151,10 @@
 </interpretation>
 <!-- à vérifier pour chaque édition -->
 <normalization>
-<p>Symbols are maintained as they appear within the printed text.</p>
+<p>Symbols are maintained as they appear in the printed edition.</p>
+</normalization>
+<normalization>
+<p>The Unicode character dexia keraia (U+0374) is used to indicate the numeric use of Greek letters.</p>
 </normalization>
 </editorialDecl>
 </encodingDesc>
@@ -164,8 +167,10 @@
       <!-- à vérifier pour chaque édition -->
       <change who="#Galenus_verbatim" when="2024">All the chevrons and hooks have been respectively replaced by &lt;supplied&gt; and &lt;del&gt;.</change>
       <!-- à vérifier pour chaque édition -->
-      <change who="#Galenus_verbatim" when="2024">The layout of the original edition has been marked up by &lt;pb&gt; and &lt;lb&gt; elements.</change>
-    </revisionDesc>
+      <change who="#Galenus_verbatim" when="2024">The layout of the printed edition has been marked up by &lt;pb&gt; and &lt;lb&gt; elements.</change>
+    <change who="#Galenus_verbatim" when="2025">The transcription of the Greek numerals has been verified. The correct Unicode character dexia keraia (U+0374) has been restored to indicate the numeric use of Greek letters in place of the erroneous acute accent (U+0384) that appeared in the initial transcription.</change>
+<change who="#Galenus_verbatim" when="2025">The transcription of the punctuation has been reviewed overall, with line-by-line checks for suspicious character sequences. In particular, numerous spurious punctuation marks (dots, commas, apostrophes) present in the initial transcription but corresponding to print smudges in Kühn’s printed edition have been silently removed; whereas punctuation errors originating in the printed edition have been marked up by a &lt;choice&gt; element, in accordance with the principles stated in the editorialDecl section.</change>
+</revisionDesc>
   </teiHeader>
   <text>
     <body>
@@ -184,7 +189,7 @@
 <lb n="7"/>τοῦ πράγματος ὕπαρξιν ἀνῃρηκέναι, καθάπερ εἴ τις ἁπάσαις ἀντειπὼν ταῖς περὶ τοῦ
 <lb n="8"/>πῶς ὁρῶμεν δόξαις οὐδ’ ὁρᾶν ἡμᾶς συγχωροίη. ὅτι μὲν οὖν μεγίστη μοῖρα πρὸς τὴν
 <lb n="9"/>τῶν ἰαμάτων εὕρεσιν ἡ ἀπὸ τῶν ἐθῶν ἐστιν, ἐναργῶς φαίνεται καὶ διὰ τοῦθ’ <milestone unit="ed1page" n="107"/> Ἱπποκράτης
-<lb n="10"/>μὲν ἐν ἀφορισμοῖς ἔγραψεν ,,οἱ εἰθισμένοι τοὺς ξυνήθεας πόνους φέρειν, κἢν
+<lb n="10"/>μὲν ἐν ἀφορισμοῖς ἔγραψεν „οἱ εἰθισμένοι τοὺς ξυνήθεας πόνους φέρειν, κἢν
 <lb n="11"/>ὦσιν ἀσθενέες ἢ γέροντες, τῶν ἀξυνηθέων ἰσχυρῶν τε καὶ νέων ῥᾷον φέρουσιν“ ἐπὶ
 <lb n="12"/>πλέον τε διῆλθεν ἐν τῷ περὶ διαίτης ὀξέων τάς τ’ ἐκ τῆς ἀήθους διαίτης βλάβας καὶ
 <lb n="13"/>τὰς ἐκ τῆς συνήθους ὠφελείας, Ἐρασίστρατος δ’ ὁμοίως ἐν τῷ δευτέρῳ περὶ παραλύσεως
@@ -227,7 +232,7 @@
 <lb n="10"/>ὥστε πολυχρονίῳ πείρᾳ κεκριμένου τοῦ βοηθήματος ἐπὶ τὴν τῆς αἰτίας ζήτησιν ἰτέον
 <lb n="11"/>ἀναμνήσαντας πρότερον ὦν ἔγραψαν ὁ μὲν Ἱπποκράτης ἐν τῷ περὶ διαίτης ὀξέων, ὁ
 <lb n="12"/>δ’ Ἐρασίστρατος ἐν τῷ δευτέρῳ περὶ παραλύσεως. ἡ μὲν οὖν Ἱπποκράτους ῥῆσις οὕτως
-<lb n="13"/>ἔχει· ,,ἀλλὰ μὴν εὐκαταμάθητόν γε ἐστίν, ὅτι φαύλη δίαιτα βρώσιός τε καὶ πόσιος αὐτὴ
+<lb n="13"/>ἔχει· „ἀλλὰ μὴν εὐκαταμάθητόν γε ἐστίν, ὅτι φαύλη δίαιτα βρώσιός τε καὶ πόσιος αὐτὴ
 <lb n="14"/>ἑωυτῇ ἐμφερὴς αἰεὶ ἀσφαλεστέρη ἐστὶ τὸ ἐπίπαν ἐς ὑγείην ἢ εἴ τις ἐξαπίνης μέγα μεταβάλλοι
 <lb n="15"/>ἐς ἄλλο κρεῖσσον, ἐπεὶ καὶ τοῖσι δὶς σιτεομένοισι τῆς ἡμέρης καὶ τοῖσι μονοσιτέουσιν
 <lb n="16"/>αἱ ἐξαπίναιοι μεταβολαὶ βλάβας καὶ ἀρρωστίην παρέχουσι. καὶ τοὺς μέν γε μὴ
@@ -237,7 +242,7 @@
 <lb n="20"/>καὶ μὴ δὶς διογκοῦσθαι μηδὲ δὶς ἕψειν τὰ σιτία“. εἶτα μεταξὺ παρενθεὶς
 <pb n="8"/>
 <lb n="1"/>ὅπως ἂν τις τὴν βλάβην τούτων ἰάσαιτο, συνάπτων αὖθις ὑπὲρ τῶν παραβάντων τὸ
-<lb n="2"/>ἔθος οὕτω γράφει· ,,ἔτι δὲ μᾶλλον ἂν πονήσειεν ὁ τοιοῦτος, εἰ τρὶς σιτέοιτο τῆς ἡμέρης
+<lb n="2"/>ἔθος οὕτω γράφει· „ἔτι δὲ μᾶλλον ἂν πονήσειεν ὁ τοιοῦτος, εἰ τρὶς σιτέοιτο τῆς ἡμέρης
 <lb n="3"/>ἐς κόρον, ἔτι δὲ μᾶλλον, εἰ πλεονάκις· καίτοι γε πολλοί εἰσιν, οἳ εὐφόρως φέρουσι τρὶς
 <lb n="4"/>σιτεόμενοι τῆς ἡμέρης ἐς πλῆθος, οἳ ἂν οὕτως ἐθισθῶσιν. ἀλλὰ μὴν καὶ οἱ δὶς μεμαθηκότες
 <lb n="5"/>σιτέεσθαι τῆς ἡμέρης, ἢν μὴ ἀριστήσωσιν, ἀσθενέες τε καὶ ἄρρωστοί εἰσι καὶ
@@ -253,7 +258,7 @@
 <lb n="15"/>δὲ τότε βαρὺς ἢν, πολὺ μᾶλλον βαρύνεσθαι· εἰ δέ γε ἐπὶ πλείονα χρόνον κενεαγγήσας
 <lb n="16"/>ἐξαπίνης μεταδειπνήσειεν, ἔτι μᾶλλον ἂν βαρύνοιτο“. Μετὰ ταῦτα δὲ πάλιν ὁ Ἱπποκράτης,
 <lb n="17"/>ὥσπερ καὶ πρόσθεν, ἐπανορθώσεις τινὰς τῆς γινομένης βλάβης ἐπὶ τοῖς κενεαγγήσασι
-<lb n="18"/>παρὰ τὸ ἔθος γράψας ἐφεξῆς πάλιν οὕτω φησί· ,,πολλὰ δὲ ἄν τις ἠδελφισμένα
+<lb n="18"/>παρὰ τὸ ἔθος γράψας ἐφεξῆς πάλιν οὕτω φησί· „πολλὰ δὲ ἄν τις ἠδελφισμένα
 <lb n="19"/>τουτέοισι τῶν ἐς κοιλίην καὶ ἄλλα εἴποι, ὡς εὐφόρως μὲν φέρουσι τὰ βρώματα,
 <lb n="20"/>ἃ εἰθίδαται, ἢν καὶ μὴ ἀγαθὰ ᾖ φύσει, ὡσαύτως δὲ καὶ τὰ ποτά· δυσφόρως δὲ φέρουσι
 <pb n="9"/>
@@ -275,7 +280,7 @@
 <lb n="16"/>ἂν ἑτεροιώσειαν κατὰ τὸ σῶμα, ὡς δὴ γλυκύν τε καὶ οἰνώδεα ᾖσσον ἄν τις φαίη θαυμαστὸν
 <lb n="17"/>εἶναι μὴ τωὐτὸ δύνασθαι ἐξαπίνης μεταβληθέντα“. Παρὰ μὲν Ἱπποκράτους ἀρκεῖ τὰ
 <lb n="18"/>δεῦρο τοῦδε γεγραμμένα παραδείγματα περὶ τῆς τῶν ἐθῶν δυνάμεως, Ἐρασίστρατος
-<lb n="19"/>δ’ ἐν τῷ δευτέρῳ περὶ παραλύσεως ὧδέ πως ἔγραψεν· ,,δεῖ δὲ πολλὴν πάνυ ἐπίσκεψιν
+<lb n="19"/>δ’ ἐν τῷ δευτέρῳ περὶ παραλύσεως ὧδέ πως ἔγραψεν· „δεῖ δὲ πολλὴν πάνυ ἐπίσκεψιν
 <lb n="20"/>ποιήσασθαι περὶ συνηθείας καὶ ἀσυνηθείας καὶ ἀσυνηθείας τὸν μέλλοντα κατὰ τρόπον ἰατρεύειν· λέγω
 <lb n="21"/>δὴ τὸ τοιοῦτο· πόνους τοὺς μὲν συνήθεις πολλοὺς πονοῦντες ἄκοποι διατελοῦσιν ὄντες,
 <lb n="22"/>τοὺς δὲ ἀσυνήθεις ὀλίγους πονήσαντες ὑπόκοποι γίνονται· βρώματά τε ὅσα συνήθη
@@ -325,9 +330,9 @@
 <lb n="10"/>λέγω δ’ ὕλην, ἐφ’ ᾗ συνέστη τὸ ἔθος, οἷον, ὡς ἔφην, ἐδέσματα ἢ πόματα ἢ γυμνάσια
 <lb n="11"/>ἢ ἕτερόν τι τοιοῦτο. καὶ γὰρ τήν γ’ ἀρχὴν ἐπὶ τῶν ἐσθιομένων τε καὶ πινομένων
 <lb n="12"/>ποιησώμεθα. τί δή ποτε γὰρ οἱ τῇ τῶν βοείων κρεῶν ἐδωδῇ συνήθως χρώμενοι τινὲς
-<lb n="13"/>μὲν οὐδ’ ὅλως βλάπτονται, τινὲς δ’ ἧττον ἢ πρόσθεν ; ἢ διὰ τί κατὰ φύσιν τινὲς εὐθὺς
+<lb n="13"/>μὲν οὐδ’ ὅλως βλάπτονται, τινὲς δ’ ἧττον ἢ πρόσθεν; ἢ διὰ τί κατὰ φύσιν τινὲς εὐθὺς
 <lb n="14"/>ἐξ ἀρχῆς, ὡς αὐτὸς Ἐρασίστρατος ἔγραψε, ῥᾷον πέττουσι τὰ βόεια κρέα τῶν πετραίων
-<lb n="15"/>ἰχθύων ; ἀλλὰ τούτου μὲν ἡ αἰτία λέλεκται κατὰ τὴν τῶν φυσικῶν δυνάμεων ἐπίσκεψιν,
+<lb n="15"/>ἰχθύων; ἀλλὰ τούτου μὲν ἡ αἰτία λέλεκται κατὰ τὴν τῶν φυσικῶν δυνάμεων ἐπίσκεψιν,
 <lb n="16"/>εἰρήσεται δὲ καὶ νῦν ὀλίγον ὕστερον ἐν τῇ τοῦ λόγου κοινωνίᾳ· νυνὶ δ’ ἀπὸ τῶν δι’
 <lb n="17"/>ἔθος ἄμεινον πεττόντων ὁτιοῦν ἐδεσμάτων τὴν ἀρχὴν τῆς διδασκαλίας ποιησώμεθα
 <lb n="18"/>κοινὴν ὑπόθεσιν λαβόντες εἰς ταῦτα πάντα τὰ φύσει τισὶν οἰκεῖά τε καὶ οὐκ οἰκεῖα.
@@ -443,13 +448,13 @@
 <lb n="21"/>μένην, μνημονευτικώτεροι δὲ κατὰ τὴν δευτέραν γινόμεθα φύσιν ἐχουσῶν ἁπασῶν τῶν
 <lb n="22"/>δυνάμεων ὑπὸ μὲν τῶν γυμνασίων αὐξάνεσθαί τε καὶ ῥώννυσθαι, βλάπτεσθαι δ’ ὑπὸ
 <lb n="23"/>τῆς ἀργίας, ὥς που καὶ Πλάτων ἐν Τιμαίῳ κατὰ τήνδε τὴν ῥῆσιν ἐδήλωσεν αὐτοῖς
-<lb n="24"/>ὀνόμασιν εἰπὼν ὧδε· ,,καθάπερ εἴπομεν πολλάκις, ὅτι τρία ψυχῆς ἐν ἡμῖν εἴδη κατῴκισται,
+<lb n="24"/>ὀνόμασιν εἰπὼν ὧδε· „καθάπερ εἴπομεν πολλάκις, ὅτι τρία ψυχῆς ἐν ἡμῖν εἴδη κατῴκισται,
 <lb n="25"/>τυγχάνει δ’ ἕκαστον κινήσεις ἔχον, οὕτω κατὰ τὰ αὐτὰ καὶ νῦν ὡς διὰ βραχυτάτων
 <pb n="16"/>
 <lb n="1"/>ῥητέον, <milestone unit="ed1page" n="126"/> ὅτι τὸ μὲν αὐτῶν ἐν ἀργίᾳ διάγον καὶ τῶν ἑαυτοῦ κινήσεων ἡσυχίαν
 <lb n="2"/>ἄγον ἀσθενέστατον ἀνάγκη γίγνεσθαι, τὸ δ’ ἐν γυμνασίοις ἐρρωμενέστατον· διὸ φυλακτέον,
 <lb n="3"/>ὅπως ἂν ἔχωσι τὰς κινήσεις πρὸς ἄλληλα συμμέτρους“. ταῦτα προειπὼν ἐφεξῆς
-<lb n="4"/>φησι ,,τὸ δὲ δὴ περὶ τοῦ κυριωτάτου τοῦ παρ’ ἡμῖν ψυχῆς εἴδους διανοεῖσθαι δεῖ τῇδε,
+<lb n="4"/>φησι „τὸ δὲ δὴ περὶ τοῦ κυριωτάτου τοῦ παρ’ ἡμῖν ψυχῆς εἴδους διανοεῖσθαι δεῖ τῇδε,
 <lb n="5"/>ὡς ἄρα αὐτὸ δαίμονα ὁ θεὸς ἑκάστῳ δέδωκε, τοῦτο ὃ δή φαμεν οἰκεῖν μὲν ἡμῶν ἐπ’
 <lb n="6"/>ἄκρῳ τῷ σώματι, πρὸς δὲ τὴν ἐν οὐρανῷ ξυγγένειαν ἀπὸ γῆς ἡμᾶς αἴρειν ὡς ὄντας
 <lb n="7"/>φυτὸν οὐκ ἔγγειον ἀλλ’ οὐράνιον, ὀρθότατα λέγοντες· ἐκεῖθεν γὰρ ὅθεν ἡ πρώτη τῆς
@@ -466,9 +471,9 @@
 <pb n="17"/>
 <lb n="1"/>ἀποδιδόναι“. ἐν τούτοις τοῖς λόγοις ὁ Πλάτων περὶ τῶν τριῶν τῆς ψυχῆς εἰδῶν ἐδίδαξεν
 <lb n="2"/>ἡμᾶς οὐ μόνον εἰς φιλοσοφίαν τι χρήσιμον ἀλλὰ καὶ τὴν τοῦ σώματος ὑγίειαν
-<lb n="3"/>ἀκολουθήσας Ἱπποκράτει κατὰ τοῦτο καθόλου μὲν εἰπόντι ,,χρῆσις κρατύνει, ἀργίη
-<lb n="4"/>τήκει“, κατ’ εἶδος δ’ ἐπὶ γυμνασίων αὖθις ἐν τῷ φάναι ,,πόνοι σιτίων ἡγείσθωσαν“,
-<lb n="5"/>ἐπὶ δὲ τῶν κατὰ μέρος εἰδῶν ἁπάντων ,,πόνοι, σιτία, ποτά, ὕπνοι, ἀφροδίσια, πάντα
+<lb n="3"/>ἀκολουθήσας Ἱπποκράτει κατὰ τοῦτο καθόλου μὲν εἰπόντι „χρῆσις κρατύνει, ἀργίη
+<lb n="4"/>τήκει“, κατ’ εἶδος δ’ ἐπὶ γυμνασίων αὖθις ἐν τῷ φάναι „πόνοι σιτίων ἡγείσθωσαν“,
+<lb n="5"/>ἐπὶ δὲ τῶν κατὰ μέρος εἰδῶν ἁπάντων „πόνοι, σιτία, ποτά, ὕπνοι, ἀφροδίσια, πάντα
 <lb n="6"/>μέτρια“. διὸ κἀνταῦθα προσέχειν χρὴ τὸν νοῦν ἀκριβῶς τοῖς λεγομένοις· ἔχει γάρ τινα
 <lb n="7"/>παρακοὴν ὁμοίως τοῖς ἄλλοις ἅπασι λόγοις, ἐάν τις ἀμελῶς ἀκούῃ, καθάπερ ἔνιοι.
 <lb n="8"/>γυμνάζεσθαι γὰρ ἑκάστην τῶν δυνάμεων <milestone unit="ed1page" n="128"/> ἀξιοῦμεν, οὐ δήπου χωρὶς ὅρων καὶ μέτρων
@@ -477,7 +482,7 @@
 <lb n="11"/>χρῆσθαι μήτ’ ἐλλείποντι μήτε πλεονάζοντι. αἱ μὲν γὰρ ὑπερβολαὶ καταλύουσί γε
 <lb n="12"/>τὰς δυνάμεις, τὸ δ’ ἐλλιπὲς ἐν ἑκάστῳ κωλύει τοσοῦτον τῆς τελείας ὠφελείας, ὅσον
 <lb n="13"/>αὐτὸ τῆς συμμετρίας ἀπολείπεται. παρήγγελτο τοῦτο καὶ ὑφ’ Ἱπποκράτους ἐφ’ ἑνὸς
-<lb n="14"/>ὡς παραδείγματος, ἔνθα φησίν ,,ἐν πάσῃ κινήσει τοῦ σώματος ὅταν ἄρξηται πονέειν, τὸ
+<lb n="14"/>ὡς παραδείγματος, ἔνθα φησίν „ἐν πάσῃ κινήσει τοῦ σώματος ὅταν ἄρξηται πονέειν, τὸ
 <lb n="15"/>διαναπαύειν εὐθὺς ἄκοπον“. καί πως ὁ λόγος ἤδη κατὰ τὴν οἰκειότητα τῶν πραγμάτων
 <lb n="16"/>ἐδίδαξέ τι καὶ περὶ τῶν τῆς ψυχῆς ἐθῶν ἐν μνήμαις καὶ διαλογισμοῖς καὶ ζητήσεσι
 <lb n="17"/>λογικαῖς, ὧν καὶ αὐτὸς ὁ Ἐρασίστρατος ἐμνημόνευσεν ἐν τῷ περὶ τῶν ἐθῶν λόγῳ μὴ

@@ -50,14 +50,14 @@
 </edition>
 <respStmt>
 <!-- paragraphe à vérifier pour chaque édition -->
-<resp>To reuse this edition for the Galenus verbatim project, we corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We changed the naming schemes of the milestones indicating the corresponding Kühn pages or added such milestones when they were missing. The layout of the original edition was marked up by &lt;pb&gt; and &lt;lb&gt; elements when they were missing. We also added elements specific to critical editions, that were present in this edition but were missing in the TEI, mainly chevrons and hooks. For details, see the revisionDesc section.</resp>
-<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<resp>To reuse this edition for the Galenus verbatim project, we (silently) corrected the texts as found in the <orgName source="https://github.com/OpenGreekAndLatin/First1KGreek">First1KGreek</orgName> repository, whether there were mistakes of transcriptions, errors in the metadata or missing parts of the text. We changed the naming schemes of the milestones indicating the corresponding Kühn pages or added such milestones when they were missing. The layout of the printed edition was marked up by &lt;pb&gt; and &lt;lb&gt; elements when they were missing. We also added elements specific to critical editions, that were present in this edition but were missing in the TEI, mainly chevrons and hooks. For details, see the revisionDesc section.</resp>
+<orgName xml:id="Galenus_verbatim" ref="https://galenus-verbatim.huma-num.fr/">Galenus verbatim, funded by the Institut universitaire de France (2019-2024), the Initiative humanités biomédicales de l’Alliance Sorbonne Université (2021-2024) and the Institut des sciences de l’Antiquité de l’Alliance Sorbonne Université (2024-2025)</orgName>
 <persName>Nathalie Rousseau, Sorbonne Université</persName>
 </respStmt>
 <respStmt>
 <resp>Editor-in-Chief, Galenus verbatim</resp>
 <persName>Nathalie Rousseau, Sorbonne Université</persName>
-<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France (2019-2024), the Initiative humanités biomédicales de l’Alliance Sorbonne Université (2021-2024) and the Institut des sciences de l’Antiquité de l’Alliance Sorbonne Université (2024-2025)</orgName>
 </respStmt>
 <respStmt>
 <resp>Lead Developer, Optéos</resp>
@@ -66,19 +66,19 @@
 <respStmt>
 <resp from="2021-11" to="2023-03">Digital Editor, Galenus verbatim</resp>
 <persName>Cahal Taaffe</persName>
-<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France (2019-2024), the Initiative humanités biomédicales de l’Alliance Sorbonne Université (2021-2024) and the Institut des sciences de l’Antiquité de l’Alliance Sorbonne Université (2024-2025)</orgName>
 </respStmt>
 <respStmt>
 <resp from="2024-02-19" to="2024-07-19">Digital Editor, Galenus verbatim</resp>
 <persName>Lucas Lemperriere, Université de Rouen</persName>
-<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France (2019-2024), the Initiative humanités biomédicales de l’Alliance Sorbonne Université (2021-2024) and the Institut des sciences de l’Antiquité de l’Alliance Sorbonne Université (2024-2025)</orgName>
 </respStmt>
 <!-- à vérifier pour chaque édition -->
 <respStmt>
 <resp from="2023" to="2024">Text verification and correction, Galenus verbatim</resp>
 <persName>
 </persName>
-<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France and the Initiative humanités biomédicales de l’Alliance Sorbonne Université</orgName>
+<orgName ref="#Galenus_verbatim">Galenus verbatim, funded by the Institut universitaire de France (2019-2024), the Initiative humanités biomédicales de l’Alliance Sorbonne Université (2021-2024) and the Institut des sciences de l’Antiquité de l’Alliance Sorbonne Université (2024-2025)</orgName>
 </respStmt>
 <funder ref="https://www.iufrance.fr/">Institut universitaire de France</funder>
 <funder ref="https://www.sorbonne-universite.fr/">Initiative humanités biomédicales de l’Alliance Sorbonne Université</funder>
@@ -117,14 +117,14 @@
       </refsDecl>
 <editorialDecl resp="#Galenus_verbatim">
 <correction>
-<p>Typographical errors are marked up by a &lt;choice&gt; element.</p>
+<p>Typographical errors of the printed edition are marked up by a &lt;choice&gt; element.</p>
 </correction>
 <hyphenation eol="none">
 <p>End-of-line hyphenation is silently removed where appropriate.</p>
 </hyphenation>
 <!-- à vérifier pour chaque édition -->
 <interpretation>
-<p>The layout of the original edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type is systematically specified with a rend value.</p>
+<p>The layout of the printed edition is marked up by &lt;pb&gt; and &lt;lb&gt; elements. The indentation type is systematically specified with a rend value.</p>
 </interpretation>
 <!-- à vérifier pour chaque édition -->
 <interpretation>
@@ -152,7 +152,10 @@
 </interpretation>
 <!-- à vérifier pour chaque édition -->
 <normalization>
-<p>Symbols are maintained as they appear within the printed text.</p>
+<p>Symbols are maintained as they appear in the printed edition.</p>
+</normalization>
+<normalization>
+<p>The Unicode character dexia keraia (U+0374) is used to indicate the numeric use of Greek letters.</p>
 </normalization>
 </editorialDecl>
 </encodingDesc>
@@ -167,8 +170,10 @@
       <!-- à vérifier pour chaque édition -->
       <change who="#Galenus_verbatim" when="2024">All the chevrons and hooks have been respectively replaced by &lt;supplied&gt; and &lt;del&gt;.</change>
       <!-- à vérifier pour chaque édition -->
-      <change who="#Galenus_verbatim" when="2024">The layout of the original edition has been marked up by &lt;pb&gt; and &lt;lb&gt; elements.</change>
-      </revisionDesc>
+      <change who="#Galenus_verbatim" when="2024">The layout of the printed edition has been marked up by &lt;pb&gt; and &lt;lb&gt; elements.</change>
+      <change who="#Galenus_verbatim" when="2025">The transcription of the Greek numerals has been verified. The correct Unicode character dexia keraia (U+0374) has been restored to indicate the numeric use of Greek letters in place of the erroneous acute accent (U+0384) that appeared in the initial transcription.</change>
+<change who="#Galenus_verbatim" when="2025">The transcription of the punctuation has been reviewed overall, with line-by-line checks for suspicious character sequences. In particular, numerous spurious punctuation marks (dots, commas, apostrophes) present in the initial transcription but corresponding to print smudges in Kühn’s printed edition have been silently removed; whereas punctuation errors originating in the printed edition have been marked up by a &lt;choice&gt; element, in accordance with the principles stated in the editorialDecl section.</change>
+</revisionDesc>
   </teiHeader>
   <text>
     <body>
@@ -177,7 +182,7 @@
         <div type="textpart" subtype="work" n="1" xml:id="_1">
           <milestone unit="ms1folio" n="120v"/>
           <p rend="indent">
-<lb n="1"/>... τὸν ζ΄ ἔτι θεάσασθαι περιμενεῖς καὶ τὸν η΄ καὶ ὅλως πάνυ πολλὰ
+<lb n="1"/>... τὸν ζʹ ἔτι θεάσασθαι περιμενεῖς καὶ τὸν ηʹ καὶ ὅλως πάνυ πολλὰ
 <lb n="2"/>ἐφεξῆς. τί ποτ’ οὖν ἔτι συκοφαντήσεις καὶ ἀσύστατον ἐρεῖς τὴν ἐμπειρίαν
 <lb n="3"/>καὶ τὸ πλειστάκις ἀπεριόριστον καὶ ὕποπτον ἀποφανεῖς; ὃ
 <lb n="4"/>πῶς συστήσεται λέγων οὐχ εὑρίσκειν οἴει σὲ μᾶλλον ἡμᾶς ἢ σαυτὸν
