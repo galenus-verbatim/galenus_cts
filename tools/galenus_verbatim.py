@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from feedparser import namespaces
 from lxml import etree
 from pyzotero import zotero
 
@@ -30,15 +31,38 @@ class GVDocument:
         for chapter in self.tree.iterfind(
             ".//tei:div[@subtype='chapter']", namespaces=NAMESPACES
         ):
-            c = {"n": chapter.get("n")}
             p = chapter.find("./tei:p", namespaces=NAMESPACES)
 
-            if p is not None:
-                c["content"] = etree.tostring(p, encoding="unicode")
+            assert (
+                p is not None
+            ), f"p element not defined for chapter {chapter} in {self.urn}"
 
+            children = self.get_children(p)
+
+            c = {"n": chapter.get("n"), "children": children}
             chapters.append(c)
 
         return chapters
+
+    def get_children(self, p):
+        return [self._handle_child(child) for child in p.iterchildren()]
+
+    def _handle_child(self, child):
+        if child.get("n") is not None:
+            return {
+                "attributes": dict(child.attrib),
+                "subtype": child.tag,
+                "content": child.tail,
+                "type": "text_element",
+            }
+
+        else:
+            return {
+                "attributes": dict(child.attrib),
+                "subtype": child.tag,
+                "content": etree.tostring(child, encoding="unicode", with_tail=True),
+                "type": "text_element",
+            }
 
 
 ## Current index page navigation built via
