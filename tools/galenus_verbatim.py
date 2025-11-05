@@ -1,6 +1,5 @@
 from pathlib import Path
 
-from feedparser import namespaces
 from lxml import etree
 from pyzotero import zotero
 
@@ -23,29 +22,46 @@ class GVDocument:
         self.filename = str(filename)
         self.tree = etree.parse(filename)
         self.urn = f"urn:cts:greekLit:{filename.name.replace('.xml', '')}"
-        self.chapters = self.get_chapters()
+        self.levels = self.read_refsDecl()
+        self.text_parts = self.get_textparts()
 
-    def get_chapters(self):
-        chapters = []
+    def get_textparts(self):
+        textparts = []
 
-        for chapter in self.tree.iterfind(
-            ".//tei:div[@subtype='chapter']", namespaces=NAMESPACES
+        for textpart in self.tree.iterfind(
+            ".//tei:div[@type='textpart']", namespaces=NAMESPACES
         ):
-            p = chapter.find("./tei:p", namespaces=NAMESPACES)
+            p = textpart.find("./tei:p", namespaces=NAMESPACES)
 
-            assert (
-                p is not None
-            ), f"p element not defined for chapter {chapter} in {self.urn}"
+            assert p is not None, (
+                f"p element not defined for textpart {textpart} in {self.urn}"
+            )
 
             children = self.get_children(p)
 
-            c = {"n": chapter.get("n"), "children": children}
-            chapters.append(c)
+            c = {"n": textpart.get("n"), "children": children}
+            textparts.append(c)
 
-        return chapters
+        return textparts
 
     def get_children(self, p):
         return [self._handle_child(child) for child in p.iterchildren()]
+
+    def read_refsDecl(self):
+        refsDecl = self.tree.find(".//tei:refsDecl[@n='CTS']", namespaces=NAMESPACES)
+
+        assert refsDecl is not None, f"No refsDecl element found for {self.urn}"
+
+        return list(
+            reversed(
+                [
+                    ref.get("n")
+                    for ref in refsDecl.iterfind(
+                        "./tei:cRefPattern", namespaces=NAMESPACES
+                    )
+                ]
+            )
+        )
 
     def _handle_child(self, child):
         if child.get("n") is not None:

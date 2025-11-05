@@ -97,7 +97,6 @@
     <encodingDesc>
       <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
       <refsDecl n="CTS">
-        <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
 <editorialDecl resp="#Galenus_verbatim">
@@ -155,8 +154,9 @@
 </teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0530.tlg026.verbatim-lat1">
-<pb n="19.629"/>
 <div type="textpart" subtype="work" n="1">
+
+<pb n="19.629"/>
 
 <head>
  GALENI DE PULSIBUS AD ANTONIUM

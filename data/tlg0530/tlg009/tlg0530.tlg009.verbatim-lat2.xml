@@ -36,6 +36,11 @@
         <date when="{date}"/>
       </creation>
     </profileDesc>
+    <encodingDesc>
+        <refsDecl n="CTS">
+          <cRefPattern matchPattern="(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        </refsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body><div type="edition" xml:lang="la" n="urn:cts:greekLit:tlg0530.tlg009.verbatim-lat2">

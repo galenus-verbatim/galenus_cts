@@ -2,7 +2,8 @@ import json
 
 from pathlib import Path
 
-from tools.galenus_verbatim import GVDocument
+# from tools.gv_document import GVDocument
+from tools.gv_sax_parser import GVSaxParser
 
 
 if __name__ == "__main__":
@@ -16,20 +17,11 @@ if __name__ == "__main__":
         for subsubdir in [d for d in subdir.iterdir() if d.is_dir()]:
             for f in subsubdir.iterdir():
                 if f.name.startswith("tlg"):
-                    gv_doc = GVDocument(f)
+                    print(f)
+
                     new_filename = Path(f.name.replace(".xml", ".json"))
 
+                    handler = GVSaxParser(f)
+
                     with open(out_dir / new_filename, "w") as g:
-                        json.dump(
-                            {
-                                "urn": gv_doc.urn,
-                                "filename": gv_doc.filename,
-                                "chapters": gv_doc.chapters,
-                            },
-                            g,
-                            ensure_ascii=False
-                        )
-
-    # gv_doc = GVDocument("./data/tlg0057/tlg001/tlg0057.tlg001.1st1K-grc1.xml")
-
-    # print(gv_doc.chapters)
+                        json.dump(handler.blocks, g, ensure_ascii=False, indent=2)
