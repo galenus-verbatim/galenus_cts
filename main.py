@@ -2,8 +2,11 @@ import json
 
 from pathlib import Path
 
+from tqdm import tqdm
+
 # from tools.gv_document import GVDocument
 from tools.gv_sax_parser import GVSaxParser
+from tools.gv_lemmatizer import lemmatize_grc, lemmatize_lat
 
 
 if __name__ == "__main__":
@@ -14,30 +17,62 @@ if __name__ == "__main__":
         out_dir.mkdir()
 
     unhandled_elements = set()
+    files_to_process = []
+
     for subdir in [d for d in data_dir.iterdir() if d.is_dir()]:
         for subsubdir in [d for d in subdir.iterdir() if d.is_dir()]:
             for f in subsubdir.iterdir():
                 if f.name.startswith("tlg"):
                     print(f)
+                    
+                    files_to_process.append(f)
 
-                    work_urn_stub = f.name.replace(".xml", "")
-                    new_dir = Path(out_dir / work_urn_stub)
 
-                    if not new_dir.exists():
-                        new_dir.mkdir()
+    for f in tqdm(files_to_process):
+        work_urn_stub = f.name.replace(".xml", "")
+        new_dir = Path(out_dir / work_urn_stub)
 
-                    new_filename = Path(f.name.replace(".xml", ".json"))
+        if not new_dir.exists():
+            new_dir.mkdir()
 
-                    handler = GVSaxParser(f)
+        new_filename = Path(f.name.replace(".xml", ".json"))
 
-                    with open(new_dir / new_filename, "w") as g:
-                        json.dump(handler.blocks, g, ensure_ascii=False, indent=2)
+        handler = GVSaxParser(f)
+        blocks = handler.blocks
+        toc = handler.create_table_of_contents()
+        textpart_labels = handler.textpart_labels
 
-                    with open(new_dir / "metadata.json", "w") as g:
-                        json.dump(handler.create_table_of_contents(), g, ensure_ascii=False, indent=2)
+        for block in blocks:
+            if (
+                len(textpart_labels) == 3 and block.get("subtype") == "section"
+            ) or (
+                len(textpart_labels) < 3 and block.get("subtype") == "chapter"
+            ):
+                doc = None
+                if "grc" in work_urn_stub:
+                    doc = lemmatize_grc(block["text"])
+                elif "lat" in work_urn_stub:
+                    doc = lemmatize_lat(block["text"])
+                else:
+                    raise Exception(f"Unknown language for {work_urn_stub}")
 
-                    unhandled_elements.update(handler.unhandled_elements)
+                block["lemmata"] = [t.lemma_ for t in doc]
+                block["tokens"] = [t.text for t in doc]
+                block["pos"] = [t.pos_ for t in doc]
 
+
+        with open(new_dir / new_filename, "w") as g:
+            json.dump(handler.blocks, g, ensure_ascii=False, indent=2)
+
+        with open(new_dir / "metadata.json", "w") as g:
+            metadata = {
+                "textpart_labels": textpart_labels,
+                "table_of_contents": toc,
+            }
+
+            json.dump(metadata, g, ensure_ascii=False, indent=2)
+
+        unhandled_elements.update(handler.unhandled_elements)
 
     with open("unhandled_elements.json", "w") as f:
         json.dump(list(unhandled_elements), f, ensure_ascii=False, indent=2)
