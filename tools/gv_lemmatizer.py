@@ -1,5 +1,7 @@
 import spacy
 
+# FIXME: Use the transformer-based models instead
+# (grc_perseus_lg is making mistakes with the first declension)
 grc_nlp = spacy.load("grc_perseus_lg")
 lat_nlp = spacy.load("la_core_web_lg")
 

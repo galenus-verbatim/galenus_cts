@@ -24,9 +24,8 @@ if __name__ == "__main__":
             for f in subsubdir.iterdir():
                 if f.name.startswith("tlg"):
                     print(f)
-                    
-                    files_to_process.append(f)
 
+                    files_to_process.append(f)
 
     for f in tqdm(files_to_process):
         work_urn_stub = f.name.replace(".xml", "")
@@ -38,31 +37,29 @@ if __name__ == "__main__":
         new_filename = Path(f.name.replace(".xml", ".json"))
 
         handler = GVSaxParser(f)
-        blocks = handler.blocks
         toc = handler.create_table_of_contents()
         textpart_labels = handler.textpart_labels
 
-        for block in blocks:
-            if (
-                len(textpart_labels) == 3 and block.get("subtype") == "section"
-            ) or (
-                len(textpart_labels) < 3 and block.get("subtype") == "chapter"
-            ):
-                doc = None
-                if "grc" in work_urn_stub:
-                    doc = lemmatize_grc(block["text"])
-                elif "lat" in work_urn_stub:
-                    doc = lemmatize_lat(block["text"])
-                else:
-                    raise Exception(f"Unknown language for {work_urn_stub}")
+        for textpart in handler.textparts:
+            lemmatized = []
+            if "grc" in work_urn_stub:
+                lemmatized = lemmatize_grc(textpart["text"])
+            elif "lat" in work_urn_stub:
+                lemmatized = lemmatize_lat(textpart["text"])
+            else:
+                raise Exception(f"Unknown language for {work_urn_stub}")
 
-                block["lemmata"] = [t.lemma_ for t in doc]
-                block["tokens"] = [t.text for t in doc]
-                block["pos"] = [t.pos_ for t in doc]
-
+            textpart["lemmata"] = [t.lemma_ for t in lemmatized]
+            textpart["tokens"] = [t.text for t in lemmatized]
+            textpart["pos"] = [t.pos_ for t in lemmatized]
 
         with open(new_dir / new_filename, "w") as g:
-            json.dump(handler.blocks, g, ensure_ascii=False, indent=2)
+            json.dump(
+                {"elements": handler.elements, "textparts": handler.textparts},
+                g,
+                ensure_ascii=False,
+                indent=2,
+            )
 
         with open(new_dir / "metadata.json", "w") as g:
             metadata = {

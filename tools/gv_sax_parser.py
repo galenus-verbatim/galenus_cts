@@ -1,6 +1,7 @@
 import re
 
 from collections import Counter, deque
+from dataclasses import dataclass
 from pathlib import Path
 from xml.sax import xmlreader
 from xml.sax.handler import ContentHandler
@@ -34,10 +35,11 @@ class GVSaxParser(ContentHandler):
         self.current_text = ""
         self.current_textpart_urn = None
 
-        self.blocks = []
         self.element_stack = deque()
+        self.elements = []
         self.textpart_labels = []
         self.textpart_stack = deque()
+        self.textparts = []
         self.unhandled_elements = set()
 
         # this feels wrong coming from web-development world
@@ -51,7 +53,7 @@ class GVSaxParser(ContentHandler):
                 urn=t["urn"],
                 subtype=t["subtype"],
             )
-            for t in self.blocks
+            for t in self.textparts
             if t.get("type") == "textpart"
         ]
 
@@ -76,7 +78,7 @@ class GVSaxParser(ContentHandler):
                     children.append(stack.pop()[1])
 
                 if children:
-                    item["children"] = list(reversed(children))
+                    item["subpassages"] = list(reversed(children))
 
                 stack.append((level, item))
 
@@ -98,9 +100,9 @@ class GVSaxParser(ContentHandler):
             self.lang = attrs["lang"]
             self.urn = attrs["n"]
         elif attrs["type"] == "textpart":
-            self.textpart_stack.append(attrs)
+            subtype = attrs.get("subtype")
 
-            if attrs["subtype"] not in self.textpart_labels:
+            if subtype is not None and subtype not in self.textpart_labels:
                 self.textpart_labels.append(attrs["subtype"])
 
             citation_fragment = attrs.get("id", attrs.get("n", "")).replace("_", "")
@@ -112,6 +114,14 @@ class GVSaxParser(ContentHandler):
 
             self.current_textpart_urn = f"{self.urn}{citation_fragment}"
             self.current_text = ""
+
+            attrs.update({
+                "location": citation_fragment,
+                "start_offset": len(self.current_text),
+                "urn": self.current_textpart_urn
+            })
+
+            self.textpart_stack.append(attrs)
 
     def handle_element(self, tagname: str, attrs: dict):
         attrs.update(
@@ -140,11 +150,10 @@ class GVSaxParser(ContentHandler):
             textpart.update(
                 {
                     "text": self.current_text.strip(),
-                    "textpart_index": len(self.blocks),
-                    "urn": f"{self.urn}:{textpart.get('id', textpart.get('n', '')).replace('_', '')}",
+                    "index": len(self.textparts),
                 }
             )
-            self.blocks.append(textpart)
+            self.textparts.append(textpart)
             return
 
         if len(self.element_stack) > 0:
@@ -154,14 +163,18 @@ class GVSaxParser(ContentHandler):
                 {
                     "end_char_offset": len(self.current_text),
                     "end_token_offset": self.get_current_token_offset(),
-                    "textpart_index": len(self.blocks),
+                    "index": len(self.elements),
+                    "textpart_index": len(self.textparts),
                 }
             )
 
-            self.blocks.append(el)
+            self.elements.append(el)
 
     def startElementNS(
-        self, name: tuple[str | None, str], qname: str | None, attrs: xmlreader.AttributesNSImpl
+        self,
+        name: tuple[str | None, str],
+        qname: str | None,
+        attrs: xmlreader.AttributesNSImpl,
     ) -> None:
         uri, localname = name
         clean_attrs = remove_ns_from_attrs(attrs)
@@ -177,7 +190,11 @@ class GVSaxParser(ContentHandler):
             # handled this way. By keeping track of elements that we _don't_ handle, we can
             # incrementally add handlers for edge-cases as needed.
             case (
-                "head"
+                "choice"
+                | "del"
+                | "foreign"
+                | "head"
+                | "hi"
                 | "l"
                 | "label"
                 | "lb"
@@ -188,6 +205,7 @@ class GVSaxParser(ContentHandler):
                 | "p"
                 | "pb"
                 | "quote"
+                | "sic"
             ):
                 return self.handle_element(localname, clean_attrs)
             case _:
@@ -199,4 +217,4 @@ class GVSaxParser(ContentHandler):
 if __name__ == "__main__":
     handler = GVSaxParser("./data/tlg0057/tlg008/tlg0057.tlg008.1st1K-grc1.xml")
 
-    print(handler.blocks[:10])
+    print(handler.textparts[:10])
