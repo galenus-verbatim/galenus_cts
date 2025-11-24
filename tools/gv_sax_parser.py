@@ -1,7 +1,6 @@
 import re
 
 from collections import Counter, deque
-from dataclasses import dataclass
 from pathlib import Path
 from xml.sax import xmlreader
 from xml.sax.handler import ContentHandler
@@ -33,6 +32,7 @@ class GVSaxParser(ContentHandler):
         self.urn = None
 
         self.current_text = ""
+        self.current_textpart_location = None
         self.current_textpart_urn = None
 
         self.element_stack = deque()
@@ -109,15 +109,14 @@ class GVSaxParser(ContentHandler):
 
             if len(citation_fragment) == 0:
                 print(f"Incorrectly labeled textpart: {attrs}")
-            else:
-                citation_fragment = f":{citation_fragment}"
 
-            self.current_textpart_urn = f"{self.urn}{citation_fragment}"
+            self.current_textpart_location = citation_fragment.split(".")
+            self.current_textpart_urn = f"{self.urn}:{citation_fragment}"
             self.current_text = ""
 
             attrs.update({
-                "location": citation_fragment,
-                "start_offset": len(self.current_text),
+                "location": self.current_textpart_location,
+                "char_offset": len(self.current_text),
                 "urn": self.current_textpart_urn
             })
 
@@ -164,6 +163,8 @@ class GVSaxParser(ContentHandler):
                     "end_char_offset": len(self.current_text),
                     "end_token_offset": self.get_current_token_offset(),
                     "index": len(self.elements),
+                    "location": self.current_textpart_location,
+                    "text": self.current_text[el["char_offset"]:],
                     "textpart_index": len(self.textparts),
                 }
             )

@@ -49,13 +49,45 @@ if __name__ == "__main__":
             else:
                 raise Exception(f"Unknown language for {work_urn_stub}")
 
-            textpart["lemmata"] = [t.lemma_ for t in lemmatized]
-            textpart["tokens"] = [t.text for t in lemmatized]
-            textpart["pos"] = [t.pos_ for t in lemmatized]
+            textpart["tokens"] = []
+
+            for t in lemmatized:
+                urn_index = [k.text for k in lemmatized[: t.i]].count(t.text) + 1
+                urn = f"{textpart['urn']}@{t.text}[{urn_index}]"
+
+                textpart["tokens"].append(
+                    {
+                        "lemma": t.lemma_,
+                        "offset": t.idx,
+                        "pos": t.pos_,
+                        "text": t.text,
+                        "urn": urn,
+                        "urn_index": urn_index,
+                        "whitespace": t.whitespace_ or "",
+                        "xml_id": f"word_index_{t.i}",
+                    }
+                )
+
+            textpart_elements = [
+                e for e in handler.elements if e["textpart_index"] == textpart["index"]
+            ]
+
+            textpart["elements"] = []
+
+            for el in textpart_elements:
+                el["tokens"] = [
+                    tok
+                    for tok in textpart["tokens"]
+                    if el["char_offset"] <= tok["offset"]
+                    and tok["offset"] < el["end_char_offset"]
+                ]
+                textpart["elements"].append(el)
 
         with open(new_dir / new_filename, "w") as g:
             json.dump(
-                {"elements": handler.elements, "textparts": handler.textparts},
+                {
+                    "textparts": handler.textparts,
+                },
                 g,
                 ensure_ascii=False,
                 indent=2,
