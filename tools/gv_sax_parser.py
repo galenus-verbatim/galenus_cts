@@ -24,6 +24,29 @@ def remove_ns_from_attrs(attrs: xmlreader.AttributesNSImpl):
     return a
 
 
+def nest_textparts(textparts, hierarchy):
+    stack = []
+
+    for item in textparts:
+        level = hierarchy.index(item["subtype"])
+
+        if len(stack) == 0:
+            stack.append((level, item))
+            continue
+
+        children = []
+
+        while stack and stack[-1][0] > level:
+            children.append(stack.pop()[1])
+
+        if children:
+            item["subpassages"] = list(reversed(children))
+
+        stack.append((level, item))
+
+    return [item for level, item in stack]
+
+
 class GVSaxParser(ContentHandler):
     def __init__(self, filename: Path | str):
         tree = etree.parse(filename)
@@ -42,7 +65,6 @@ class GVSaxParser(ContentHandler):
         self.textparts = []
         self.unhandled_elements = set()
 
-        # this feels wrong coming from web-development world
         for body in tree.iterfind(".//tei:body", namespaces=NAMESPACES):
             lxml.sax.saxify(body, self)
 
@@ -62,29 +84,7 @@ class GVSaxParser(ContentHandler):
 
         hierarchy = list(self.textpart_labels)
 
-        def nest_textparts(textparts):
-            stack = []
-
-            for item in textparts:
-                level = hierarchy.index(item["subtype"])
-
-                if len(stack) == 0:
-                    stack.append((level, item))
-                    continue
-
-                children = []
-
-                while stack and stack[-1][0] > level:
-                    children.append(stack.pop()[1])
-
-                if children:
-                    item["subpassages"] = list(reversed(children))
-
-                stack.append((level, item))
-
-            return [item for level, item in stack]
-
-        return nest_textparts(textparts)
+        return nest_textparts(textparts, hierarchy)
 
     def get_current_token_offset(self):
         if len(self.current_text) > 0:
@@ -114,20 +114,24 @@ class GVSaxParser(ContentHandler):
             self.current_textpart_urn = f"{self.urn}:{citation_fragment}"
             self.current_text = ""
 
-            attrs.update({
-                "location": self.current_textpart_location,
-                "char_offset": len(self.current_text),
-                "urn": self.current_textpart_urn
-            })
+            attrs.update(
+                {
+                    "index": len(self.textparts),
+                    "location": self.current_textpart_location,
+                    "offset": len(self.current_text),
+                    "urn": self.current_textpart_urn,
+                }
+            )
 
             self.textpart_stack.append(attrs)
 
     def handle_element(self, tagname: str, attrs: dict):
         attrs.update(
             {
+                "index": len(self.elements),
                 "tagname": tagname,
-                "char_offset": len(self.current_text),
-                "token_offset": self.get_current_token_offset(),
+                "offset": len(self.current_text),
+                "textpart_index": len(self.textparts),
                 "urn": self.current_textpart_urn,
             }
         )
@@ -135,10 +139,7 @@ class GVSaxParser(ContentHandler):
         self.element_stack.append(attrs)
 
     def characters(self, content: str) -> None:
-        if len(content.strip()) == 0:
-            return
-
-        self.current_text += f" {content.strip()}"
+        self.current_text += content
 
     def endElementNS(self, name: tuple[str | None, str], qname: str | None) -> None:
         uri, localname = name
@@ -148,27 +149,20 @@ class GVSaxParser(ContentHandler):
 
             textpart.update(
                 {
-                    "text": self.current_text.strip(),
-                    "index": len(self.textparts),
+                    "end_offset": len(self.current_text),
+                    "text": self.current_text,
                 }
             )
             self.textparts.append(textpart)
-            return
 
-        if len(self.element_stack) > 0:
+        elif len(self.element_stack) > 0:
             el = self.element_stack.pop()
 
             el.update(
                 {
-                    "end_char_offset": len(self.current_text),
-                    "end_token_offset": self.get_current_token_offset(),
-                    "index": len(self.elements),
-                    "location": self.current_textpart_location,
-                    "text": self.current_text[el["char_offset"]:],
-                    "textpart_index": len(self.textparts),
+                    "end_offset": len(self.current_text),
                 }
             )
-
             self.elements.append(el)
 
     def startElementNS(
