@@ -109,7 +109,7 @@ def build_tree(textpart, elements, tokens):
         ]
 
         if len(candidates) == 0:
-            print(f"No suitable parent for element {x}")
+            print(f"No suitable parent for element at index {x['index']}")
             x["parent_index"] = -1
             continue
 
@@ -117,12 +117,13 @@ def build_tree(textpart, elements, tokens):
 
         x["parent_index"] = parent["index"]
 
+        if x.get("urn") is None:
+            x["urn"] = parent["urn"]
+
     return nest(sorted_elements)
 
 
 def read_data_directory(data_dir: Path):
-    return [Path("./data/tlg0057/tlg001/tlg0057.tlg001.1st1K-grc1.xml")]
-
     files_to_process = []
 
     for subdir in [d for d in data_dir.iterdir() if d.is_dir()]:

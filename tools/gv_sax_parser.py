@@ -1,3 +1,6 @@
+## TODO
+# - [ ] Add license and funding statement
+
 import re
 
 from collections import Counter, deque
@@ -161,6 +164,7 @@ class GVSaxParser(ContentHandler):
             el.update(
                 {
                     "end_offset": len(self.current_text),
+                    "urn": el.get("urn", self.current_textpart_urn),
                 }
             )
             self.elements.append(el)
