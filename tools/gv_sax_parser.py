@@ -1,9 +1,7 @@
 ## TODO
 # - [ ] Add license and funding statement
 
-import re
-
-from collections import Counter, deque
+from collections import deque
 from pathlib import Path
 from xml.sax import xmlreader
 from xml.sax.handler import ContentHandler
@@ -89,39 +87,40 @@ class GVSaxParser(ContentHandler):
 
         return nest_textparts(textparts, hierarchy)
 
-    def get_current_token_offset(self):
-        if len(self.current_text) > 0:
-            split = re.split(r"\s+", self.current_text.strip())
-            current_token = split[-1]
-            counts = Counter(split)
-            current_token_index = counts[current_token]
-
-            return f"{current_token}[{current_token_index}]"
-
-    def handle_div(self, attrs):
+    def handle_div(self, attrs: dict):
         if attrs["type"] == "edition":
             self.lang = attrs["lang"]
             self.urn = attrs["n"]
+
         elif attrs["type"] == "textpart":
             subtype = attrs.get("subtype")
 
             if subtype is not None and subtype not in self.textpart_labels:
                 self.textpart_labels.append(attrs["subtype"])
 
-            citation_fragment = attrs.get("id", attrs.get("n", "")).replace("_", "")
+            citation_n = attrs.get("n")
 
-            if len(citation_fragment) == 0:
-                print(f"Incorrectly labeled textpart: {attrs}")
+            if citation_n is None:
+                print(f"Unnumbered textpart: {attrs}")
 
-            self.current_textpart_location = citation_fragment.split(".")
-            self.current_textpart_urn = f"{self.urn}:{citation_fragment}"
+            location = []
+
+            for n in [t.get("n") for t in self.textpart_stack]:
+                if n is not None:
+                    location.append(n)
+
+            if citation_n is not None:
+                location.append(citation_n)
+
+            self.current_textpart_location = location
+            self.current_textpart_urn = f"{self.urn}:{'.'.join(self.current_textpart_location)}"
             self.current_text = ""
 
             attrs.update(
                 {
                     "index": len(self.textparts),
-                    "location": self.current_textpart_location,
-                    "offset": len(self.current_text),
+                    "location": location,
+                    "offset": 0,
                     "urn": self.current_textpart_urn,
                 }
             )
@@ -129,6 +128,8 @@ class GVSaxParser(ContentHandler):
             self.textpart_stack.append(attrs)
 
     def handle_element(self, tagname: str, attrs: dict):
+        self.current_text += " "
+
         attrs.update(
             {
                 "index": len(self.elements),
@@ -157,6 +158,7 @@ class GVSaxParser(ContentHandler):
                 }
             )
             self.textparts.append(textpart)
+            self.current_text = ""
 
         elif len(self.element_stack) > 0:
             el = self.element_stack.pop()
@@ -190,8 +192,10 @@ class GVSaxParser(ContentHandler):
             # incrementally add handlers for edge-cases as needed.
             case (
                 "choice"
+                | "corr"
                 | "del"
                 | "foreign"
+                | "gap"
                 | "head"
                 | "hi"
                 | "l"
@@ -214,6 +218,9 @@ class GVSaxParser(ContentHandler):
 
 
 if __name__ == "__main__":
-    handler = GVSaxParser("./data/tlg0057/tlg008/tlg0057.tlg008.1st1K-grc1.xml")
+    handler = GVSaxParser("./data/tlg0530/tlg029/tlg0530.tlg029.verbatim-lat1.xml")
 
-    print(handler.textparts[:10])
+    for t in handler.textparts:
+        print(
+            f"{t['type']}\t{t['subtype']}\t{t.get('n', '')}\t{t['offset']}\t{t['end_offset']}\t{t['urn']}"
+        )
