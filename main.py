@@ -1,4 +1,5 @@
 import json
+import logging
 
 from pathlib import Path
 
@@ -7,6 +8,8 @@ from tqdm import tqdm
 # from tools.gv_document import GVDocument
 from tools.gv_sax_parser import GVSaxParser
 from tools.gv_lemmatizer import nlp_grc, nlp_lat
+
+logger = logging.getLogger(__name__)
 
 
 class TextToken:
@@ -18,7 +21,7 @@ class TextToken:
         self.urn = f"{textpart_urn}@{token.text}[{urn_index}]"
         self.whitespace = token.whitespace_ or ""
         self.xml_id = f"word_index_{token.i}"
-        self.end_offset = self.offset + len(self.text) + len(self.whitespace)
+        self.end_offset = self.offset + len(self.text)
 
     def to_dict(self):
         return dict(
@@ -48,61 +51,42 @@ def parse_file(f: Path):
     return handler, new_filename
 
 
-def nest(nestable, parent=None, tree=None):
-    if parent is None:
-        parent = {"index": -1}
-
-    if tree is None:
-        tree = []
-
-    children = [c for c in nestable if c["parent_index"] == parent["index"]]
-
-    if parent["index"] == -1:
-        tree = children
-    else:
-        parent["children"] = children  # pyright: ignore
-
-    for child in children:
-        nest(nestable, child, tree)
-
-    return tree
-
-
 def assign_parents(elements):
-    for x in elements:
+    for element in elements:
         candidates = [
             candidate
             for candidate in elements
-            if candidate != x
+            if candidate != element
             # prevent loops
-            and candidate.get("parent_index") != x["index"]
+            and candidate.get("parent_nesting_index") != element["nesting_index"]
             and candidate["offset"] != candidate["end_offset"]
-            and candidate["offset"] <= x["offset"]
-            and candidate["end_offset"] >= x["end_offset"]
+            and candidate["offset"] <= element["offset"]
+            and candidate["end_offset"] >= element["end_offset"]
         ]
 
         if len(candidates) == 0:
             # textparts shouldn't have parents
-            if x.get("tagname") is None and x.get("type") == "textpart":
-                x["parent_index"] = -1
+            if element.get("tagname") is None and element.get("type") == "textpart":
+                element["parent_nesting_index"] = -1
             else:
-                # print(
-                #     f"No suitable parent for element at index {x['index']}, {x.get('tagname')}, {x.get('n')}"
-                # )
-                # but other elements should belong to the textpart
-                x["parent_index"] = 0
+                logger.debug(
+                    f"No suitable parent for element at index {element['index']}, {element.get('tagname')}, {element.get('n')}"
+                )
+                element["parent_nesting_index"] = 0
 
         else:
-            parent = min(candidates, key=lambda y: y["end_offset"] - y["offset"])
+            parent = min(candidates, key=lambda el: el["end_offset"] - el["offset"])
 
-            x["parent_index"] = parent["index"]
+            element["parent_nesting_index"] = parent["nesting_index"]
 
-            if x.get("urn") is None:
-                x["urn"] = parent["urn"]
+            if element.get("urn") is None:
+                element["urn"] = parent["urn"]
 
     return elements
 
 
+# TODO: Token offsets don't line up with element offsets -- is there
+# a reliable way to fix this?
 def assign_tokens(elements, tokens):
     # tokens should always be contained by an element
     # in the textpart, not by the textpart itself
@@ -110,25 +94,35 @@ def assign_tokens(elements, tokens):
         candidates = [
             el
             for el in elements
+            # element is not self-closing
             if el["offset"] != el["end_offset"]
-            and el["offset"] <= token["offset"]
-            and el["end_offset"] >= token["end_offset"]
+            # element begins before token, with skew of 10
+            and el["offset"] - 10 <= token["offset"]
+            # element ends after token, with skew of 10
+            and el["end_offset"] + 10 >= token["end_offset"]
         ]
 
         if len(candidates) == 0:
-            # print(f"Unable to find parent for token: {token}")
-            # print("Finding nearest suitable parent")
-
-            candidates = [
-                el for el in elements if el["offset"] != el["end_offset"]
-            ]
+            candidates = [el for el in elements if el["offset"] != el["end_offset"]]
 
             if len(candidates) == 0:
-                raise Exception(f"No parent found for {token}")
+                logger.error(f"No parent found for {token}")
+                continue
 
             parent = min(candidates, key=lambda x: abs(x["offset"] - token["offset"]))
         else:
-            parent = min(candidates, key=lambda x: abs(x["end_offset"] - x["offset"]))
+            parent = None
+
+            for element in candidates:
+                if element.get("first_token") is not None and token["urn"].endswith(
+                    element.get("first_token")
+                ):
+                    parent = element
+
+            if parent is None:
+                parent = min(
+                    candidates, key=lambda x: abs(x["end_offset"] - x["offset"])
+                )
 
         if parent.get("tokens") is None:
             parent["tokens"] = []
@@ -148,23 +142,37 @@ def build_tree(textpart, elements, lemmatized):
         for t in lemmatized
     ]
 
-    for token in tokens:
-        if token["urn"] == "urn:cts:greekLit:tlg0530.tlg029.verbatim-lat1:1@XVII[1]":
-            print([t["text"] for t in tokens])
-            print(textpart)
-            raise Exception("What the heck is happening?")
-
     sorted_elements = sorted(elements, key=lambda x: x["index"])
 
     for i, x in enumerate(sorted_elements, 1):
-        x["index"] = i
+        x["nesting_index"] = i
 
     sorted_elements = assign_tokens(sorted_elements, tokens)
 
-    textpart["index"] = 0
+    textpart["nesting_index"] = 0
     sorted_elements_with_textpart = assign_parents([textpart] + sorted_elements)
 
     return nest(sorted_elements_with_textpart)
+
+
+def nest(nestable, parent=None, tree=None):
+    if parent is None:
+        parent = {"nesting_index": -1}
+
+    if tree is None:
+        tree = []
+
+    children = [c for c in nestable if c["parent_nesting_index"] == parent["nesting_index"]]
+
+    if parent["nesting_index"] == -1:
+        tree = children
+    else:
+        parent["children"] = children  # pyright: ignore
+
+    for child in children:
+        nest(nestable, child, tree)
+
+    return tree
 
 
 def read_data_directory(data_dir: Path):
@@ -223,10 +231,8 @@ if __name__ == "__main__":
                 e for e in handler.elements if e["textpart_index"] == textpart["index"]
             ]
 
-            del textpart["text"]
-
             tree = build_tree(textpart, elements, lemmatized)
-            textparts.append(tree)
+            textparts += tree
 
         with open(new_dir / new_filename, "w") as g:
             json.dump(
