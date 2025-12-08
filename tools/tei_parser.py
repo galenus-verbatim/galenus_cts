@@ -3,21 +3,36 @@
 
 import logging
 
-import re
-import string
-
 from pathlib import Path
 from xml.sax import xmlreader
 from xml.sax.handler import ContentHandler
 
 import lxml.sax  # pyright: ignore
+import spacy
 
 from lxml import etree
 
 
-NAMESPACES = {"tei": "http://www.tei-c.org/ns/1.0"}
+# FIXME: Use the transformer-based models instead
+# (grc_perseus_lg is making mistakes with the first declension)
+grecy = spacy.load("grc_perseus_lg")
+latincy = spacy.load("la_core_web_lg")
 
-PUNCTUATION_TABLE = str.maketrans("", "", string.punctuation + "·")
+DISABLED_PIPES = ["parser", "ner", "textcat"]
+
+grecy_tokenizer = grecy.tokenizer
+latincy_tokenizer = latincy.tokenizer
+
+
+def nlp_grc(texts: list[str]):
+    return list(grecy.pipe(texts, disable=DISABLED_PIPES))
+
+
+def nlp_lat(texts: list[str]):
+    return list(lat_nlp.pipe(texts, disable=DISABLED_PIPES))
+
+
+NAMESPACES = {"tei": "http://www.tei-c.org/ns/1.0"}
 
 # create logger
 logger = logging.getLogger(__name__)
@@ -37,24 +52,23 @@ logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
 
-def get_first_token(s: str):
-    tokens = [t for t in tokenize(s) if t.strip() != ""]
+def create_table_of_contents(textparts, textpart_labels):
+    textparts = [
+        dict(
+            label=f"{t['subtype'].capitalize()} {t.get('n', '')}".strip(),
+            urn=t["urn"],
+            subtype=t["subtype"],
+        )
+        for t in textparts
+        if t.get("type") == "textpart"
+    ]
 
-    if len(tokens) > 0:
-        return tokens[0]
+    if len(textpart_labels) == 1:
+        return textparts
 
-    return None
+    hierarchy = list(textpart_labels)
 
-
-def remove_ns_from_attrs(attrs: xmlreader.AttributesNSImpl):
-    a = {}
-
-    for k, v in attrs.items():
-        ns, localname = k
-
-        a[localname] = v
-
-    return a
+    return nest_textparts(textparts, hierarchy)
 
 
 def nest_textparts(textparts, hierarchy):
@@ -80,20 +94,25 @@ def nest_textparts(textparts, hierarchy):
     return [item for level, item in stack]
 
 
-def tokenize(s: str):
-    return re.split(r"\s+", s.strip().translate(PUNCTUATION_TABLE))
+def remove_ns_from_attrs(attrs: xmlreader.AttributesNSImpl):
+    a = {}
+
+    for k, v in attrs.items():
+        ns, localname = k
+
+        a[localname] = v
+
+    return a
 
 
 class GVSaxParser(ContentHandler):
     def __init__(self, filename: Path | str):
-        self.logger = logger
-
         tree = etree.parse(filename)
 
         self.lang = None
         self.urn = None
 
-        self.current_text = ""
+        self.current_tokens: list[str] = []
         self.current_textpart_location = None
         self.current_textpart_urn = None
 
@@ -119,77 +138,37 @@ class GVSaxParser(ContentHandler):
         self.current_textpart_urn = (
             f"{self.urn}:{'.'.join(self.current_textpart_location)}"
         )
-        self.current_text = ""
 
         attrs.update(
             {
                 "index": len(self.textpart_stack) + len(self.textparts),
                 "location": location,
-                "offset": 0,
                 "urn": self.current_textpart_urn,
             }
         )
 
         self.textpart_stack.append(attrs)
 
-    def add_text_to_element(self, content: str):
-        most_recent_el = self.element_stack[-1]
-
-        if most_recent_el.get("text") is None:
-            most_recent_el["text"] = content
-        else:
-            most_recent_el["text"] += content
-
-        token = get_first_token(most_recent_el["text"])
-
-        if (
-            token is not None
-            and most_recent_el.get("first_token") is None
-            and most_recent_el["text"].strip() != ""
-        ):
-            count = tokenize(self.current_text).count(token) + 1
-            most_recent_el["first_token"] = f"{token}[{count}]"
-
-    def add_text_to_textpart(self, content: str):
-        most_recent_textpart = self.textpart_stack[-1]
-
-        if most_recent_textpart.get("text") is None:
-            most_recent_textpart["text"] = content
-        else:
-            most_recent_textpart["text"] += content
-
     def characters(self, content: str) -> None:
-        if len(self.element_stack) > 0:
-            self.add_text_to_element(content)
+        if len(self.element_stack) == 0:
+            if content.strip() != "":
+                logger.warning(
+                    "Characters must belong to an element, but no elements are available."
+                )
+                logger.warning(content)
+            return
 
-        if len(self.textpart_stack) > 0:
-            self.add_text_to_textpart(content)
+        parent_element = self.element_stack[-1]
+        tokens = self.tokenize(content)
+        text_run = self.process_tokens(tokens)
 
-        self.current_text += content
-
-    def create_table_of_contents(self):
-        textparts = [
-            dict(
-                label=f"{t['subtype'].capitalize()} {t.get('n', '')}".strip(),
-                urn=t["urn"],
-                subtype=t["subtype"],
-            )
-            for t in self.textparts
-            if t.get("type") == "textpart"
-        ]
-
-        if len(self.textpart_labels) == 1:
-            return textparts
-
-        hierarchy = list(self.textpart_labels)
-
-        return nest_textparts(textparts, hierarchy)
+        parent_element["children"].append(text_run)
 
     def determine_location(self, attrs: dict):
         citation_n = attrs.get("n")
 
         if citation_n is None:
-            self.logger.debug(f"Unnumbered textpart: {attrs}")
+            logger.debug(f"Unnumbered textpart: {attrs}")
 
         location = []
 
@@ -208,37 +187,31 @@ class GVSaxParser(ContentHandler):
         if localname == "div" and len(self.textpart_stack) > 0:
             textpart = self.textpart_stack.pop()
 
-            textpart.update(
-                {
-                    "end_offset": len(self.current_text),
-                }
-            )
             self.textparts.append(textpart)
-            # Reset self.current_text after appending
-            # to self.textparts to prevent leftover
-            # text from being assigned to textparts
-            # higher up in the hierarchy. For example,
-            # if we have a book, chapter, section hierarchy,
-            # the first book will not be closed until after
-            # the last chapter and section. If we don't clear
-            # the text after closing the final section in the book,
-            # the section's text can be added erroneously to
-            # the chapter _and_ the book once we reach their
-            # respective close tags.
-
-            if len(self.textpart_stack) > 0:
-                self.current_text = self.textpart_stack[-1].get("text", "")
 
         elif len(self.element_stack) > 0:
             el = self.element_stack.pop()
 
             el.update(
                 {
-                    "end_offset": len(self.current_text),
                     "urn": el.get("urn", self.current_textpart_urn),
                 }
             )
-            self.elements.append(el)
+
+            if len(self.element_stack) > 0:
+                if (
+                    len(
+                        [
+                            x
+                            for x in self.element_stack[-1]["children"]
+                            if x.get("index") == el["index"]
+                        ]
+                    )
+                    == 0
+                ):
+                    self.elements.append(el)
+            else:
+                self.elements.append(el)
 
     def handle_div(self, attrs: dict):
         if attrs["type"] == "edition":
@@ -249,32 +222,88 @@ class GVSaxParser(ContentHandler):
             self.add_textpart_to_stack(attrs)
 
     def handle_element(self, tagname: str, attrs: dict):
-        textpart_index = 0
+        textpart = None
 
         if len(self.textpart_stack) == 0:
-            logger.warn(f"Elements should not appear outside of textparts. Check {tagname}, {attrs}")
+            logger.warning(
+                f"Elements should not appear outside of textparts: {tagname}, {attrs}"
+            )
 
             if len(self.textparts) > 0:
-                textpart_index = self.textparts[-1]["index"] + 1
+                textpart = self.textparts[-1]
         else:
-            textpart_index = self.textpart_stack[-1]["index"]
+            textpart = self.textpart_stack[-1]
+
+        if textpart is None:
+            logger.warning(
+                f"Orphaned element: {tagname}, {attrs} — no textpart available."
+            )
+            return
+
+        textpart_index = textpart["index"]
+        urn_element_index = sum(
+            [
+                1
+                for el in self.elements + self.element_stack
+                if el["textpart_urn"] == self.current_textpart_urn
+            ]
+        )
 
         attrs.update(
             {
+                "children": [],
                 "index": len(self.element_stack) + len(self.elements),
                 "tagname": tagname,
-                "offset": len(self.current_text),
                 "textpart_index": textpart_index,
-                "urn": self.current_textpart_urn,
+                "textpart_urn": self.current_textpart_urn,
+                "urn": f"{self.current_textpart_urn}@<{tagname}>[{urn_element_index}]",
             }
         )
 
-        # Add a space to the current text
-        # so that adjacent elements don't
-        # share an offset.
-        self.current_text += " "
+        # If there is an unclosed element at the end of the stack,
+        # add this element to its children.
+        if len(self.element_stack) > 0:
+            if self.element_stack[-1]["textpart_index"] != attrs["textpart_index"]:
+                logger.warning(
+                    f"Open element belongs to a different textpart than current element: {self.element_stack[-1]}\n{attrs}"
+                )
+            self.element_stack[-1]["children"].append(attrs)
 
         self.element_stack.append(attrs)
+
+    def process_tokens(self, tokens):
+        text_run = []
+
+        textpart = None
+        if len(self.textpart_stack) > 0:
+            textpart = self.textpart_stack[-1]
+
+        for tok in tokens:
+            if textpart is not None:
+                urn_token_index = (
+                    sum([1 for t, _ in textpart.get("tokens", []) if t == tok.text]) + 1
+                )
+            else:
+                urn_token_index = 1
+
+            token = (
+                f"{tok.text}",
+                {
+                    "text": f"{tok.text}{tok.whitespace_}",
+                    "urn": f"{self.current_textpart_urn}@{tok.text}[{urn_token_index}]",
+                    "whitespace": len(tok.whitespace_) > 0,
+                },
+            )
+
+            if textpart is not None:
+                if textpart.get("tokens") is not None:
+                    textpart["tokens"].append(token)
+                else:
+                    textpart["tokens"] = [token]
+
+            text_run.append(token)
+
+        return {"tagname": "text_run", "tokens": text_run}
 
     def startElementNS(
         self,
@@ -315,17 +344,31 @@ class GVSaxParser(ContentHandler):
             ):
                 return self.handle_element(localname, clean_attrs)
             case _:
-                self.logger.debug(
+                logger.debug(
                     f"Unknown element {localname} in {self.current_textpart_urn}"
                 )
                 self.unhandled_elements.add(localname)
                 self.handle_element(localname, clean_attrs)
 
+    def tokenize(self, s: str):
+        if self.lang == "grc":
+            return grecy_tokenizer(s)
+        elif self.lang == "la":
+            return latincy_tokenizer(s)
+
 
 if __name__ == "__main__":
+    import json
+
     handler = GVSaxParser("./data/tlg0530/tlg029/tlg0530.tlg029.verbatim-lat1.xml")
-    print("type\tsubtype\tn\t\toffset\tend_offset\turn")
-    for t in handler.textparts:
-        print(
-            f"{t['type']}\t{t['subtype']}\t{t.get('n', 'n/a')[0:6]}\t{t['offset']}\t{t['end_offset']}\t{t['urn']}"
+
+    with open("metadata.json", "w") as f:
+        json.dump(
+            create_table_of_contents(handler.textparts, handler.textpart_labels), f
         )
+
+    with open("textparts.json", "w") as f:
+        json.dump(handler.textparts, f, ensure_ascii=False, indent=4)
+
+    with open("elements.json", "w") as f:
+        json.dump(handler.elements, f, ensure_ascii=False, indent=4)
