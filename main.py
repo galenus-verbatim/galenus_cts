@@ -5,7 +5,7 @@ from pathlib import Path
 
 from tqdm import tqdm
 
-from tools.tei_parser import TEIParser, create_table_of_contents, nlp_grc, nlp_lat
+from tools.tei_parser import TEIParser, create_table_of_contents
 
 logger = logging.getLogger(__name__)
 
