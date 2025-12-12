@@ -5,12 +5,13 @@ from pathlib import Path
 
 from tqdm import tqdm
 
-from tools.tei_parser import GVSaxParser, create_table_of_contents, nlp_grc, nlp_lat
+from tools.tei_parser import TEIParser, create_table_of_contents, nlp_grc, nlp_lat
 
 logger = logging.getLogger(__name__)
 
+
 def parse_file(f: Path):
-    handler = GVSaxParser(f)
+    handler = TEIParser(f)
 
     return handler
 
@@ -52,12 +53,7 @@ if __name__ == "__main__":
         textparts_file = Path(new_dir / f.name.replace(".xml", ".textparts.json"))
 
         with open(elements_file, "w") as g:
-            json.dump(
-                handler.elements,
-                g,
-                ensure_ascii=False,
-                indent=2
-            )
+            json.dump(handler.elements, g, ensure_ascii=False, indent=2)
 
         with open(textparts_file, "w") as g:
             json.dump(

@@ -1,35 +1,33 @@
 ## TODO
 # - [ ] Add license and funding statement
+# - [ ] Explore lemmatization options: https://github.com/bowphs/SIGTYP-2024-hierarchical-transformers/issues/1
 
 import logging
-
 from pathlib import Path
 from xml.sax import xmlreader
 from xml.sax.handler import ContentHandler
 
 import lxml.sax  # pyright: ignore
-import spacy
+import stanza
 
 from lxml import etree
 
-
-# FIXME: Use the transformer-based models instead
-# (grc_perseus_lg is making mistakes with the first declension)
-grecy = spacy.load("grc_perseus_lg")
-latincy = spacy.load("la_core_web_lg")
-
 DISABLED_PIPES = ["parser", "ner", "textcat"]
 
-grecy_tokenizer = grecy.tokenizer
-latincy_tokenizer = latincy.tokenizer
-
-
-def nlp_grc(texts: list[str]):
-    return list(grecy.pipe(texts, disable=DISABLED_PIPES))
-
-
-def nlp_lat(texts: list[str]):
-    return list(lat_nlp.pipe(texts, disable=DISABLED_PIPES))
+greek_tokenizer = stanza.Pipeline(
+    "grc",
+    processors="tokenize",
+    package="perseus",
+    model_dir="./stanza_models",
+    download_method=stanza.DownloadMethod.REUSE_RESOURCES,
+)
+latin_tokenizer = stanza.Pipeline(
+    "la",
+    processors="tokenize",
+    package="perseus",
+    model_dir="./stanza_models",
+    download_method=stanza.DownloadMethod.REUSE_RESOURCES,
+)
 
 
 NAMESPACES = {"tei": "http://www.tei-c.org/ns/1.0"}
@@ -105,7 +103,7 @@ def remove_ns_from_attrs(attrs: xmlreader.AttributesNSImpl):
     return a
 
 
-class GVSaxParser(ContentHandler):
+class TEIParser(ContentHandler):
     def __init__(self, filename: Path | str):
         tree = etree.parse(filename)
 
@@ -153,7 +151,7 @@ class GVSaxParser(ContentHandler):
         if len(self.element_stack) == 0:
             if content.strip() != "":
                 logger.warning(
-                    "Characters must belong to an element, but no elements are available."
+                    f"{self.urn}\nCharacters must belong to an element, but no elements are available."
                 )
                 logger.warning(content)
             return
@@ -162,13 +160,14 @@ class GVSaxParser(ContentHandler):
         tokens = self.tokenize(content)
         text_run = self.process_tokens(tokens)
 
-        parent_element["children"].append(text_run)
+        if len(text_run) > 0:
+            parent_element["children"].append(text_run)
 
     def determine_location(self, attrs: dict):
         citation_n = attrs.get("n")
 
         if citation_n is None:
-            logger.debug(f"Unnumbered textpart: {attrs}")
+            logger.debug(f"{self.urn}\nUnnumbered textpart: {attrs}")
 
         location = []
 
@@ -226,7 +225,7 @@ class GVSaxParser(ContentHandler):
 
         if len(self.textpart_stack) == 0:
             logger.warning(
-                f"Elements should not appear outside of textparts: {tagname}, {attrs}"
+                f"{self.urn}\nElements should not appear outside of textparts: {tagname}, {attrs}"
             )
 
             if len(self.textparts) > 0:
@@ -236,7 +235,7 @@ class GVSaxParser(ContentHandler):
 
         if textpart is None:
             logger.warning(
-                f"Orphaned element: {tagname}, {attrs} — no textpart available."
+                f"{self.urn}\nOrphaned element: {tagname}, {attrs} — no textpart available."
             )
             return
 
@@ -265,7 +264,7 @@ class GVSaxParser(ContentHandler):
         if len(self.element_stack) > 0:
             if self.element_stack[-1]["textpart_index"] != attrs["textpart_index"]:
                 logger.warning(
-                    f"Open element belongs to a different textpart than current element: {self.element_stack[-1]}\n{attrs}"
+                    f"{self.urn}\nOpen element belongs to a different textpart than current element: {self.element_stack[-1]}\n{attrs}"
                 )
             self.element_stack[-1]["children"].append(attrs)
 
@@ -279,21 +278,24 @@ class GVSaxParser(ContentHandler):
             textpart = self.textpart_stack[-1]
 
         for tok in tokens:
+            if tok.text.strip() == "":
+                continue
+
             if textpart is not None:
                 urn_token_index = (
-                    sum([1 for t, _ in textpart.get("tokens", []) if t == tok.text]) + 1
+                    sum(
+                        [1 for t in textpart.get("tokens", []) if t["text"] == tok.text]
+                    )
+                    + 1
                 )
             else:
                 urn_token_index = 1
 
-            token = (
-                f"{tok.text}",
-                {
-                    "text": f"{tok.text}{tok.whitespace_}",
-                    "urn": f"{self.current_textpart_urn}@{tok.text}[{urn_token_index}]",
-                    "whitespace": len(tok.whitespace_) > 0,
-                },
-            )
+            token = {
+                "text": tok.text,
+                "urn": f"{self.current_textpart_urn}@{tok.text}[{urn_token_index}]",
+                "whitespace": len(tok.spaces_after) > 0,
+            }
 
             if textpart is not None:
                 if textpart.get("tokens") is not None:
@@ -345,26 +347,42 @@ class GVSaxParser(ContentHandler):
                 return self.handle_element(localname, clean_attrs)
             case _:
                 logger.debug(
-                    f"Unknown element {localname} in {self.current_textpart_urn}"
+                    f"{self.urn}\nUnknown element {localname} in {self.current_textpart_urn}"
                 )
                 self.unhandled_elements.add(localname)
                 self.handle_element(localname, clean_attrs)
 
     def tokenize(self, s: str):
+        doc = None
+
         if self.lang == "grc":
-            return grecy_tokenizer(s)
+            doc = greek_tokenizer(s)
+
         elif self.lang == "la":
-            return latincy_tokenizer(s)
+            doc = latin_tokenizer(s)
+
+        if doc is None:
+            return []
+
+        tokens = []
+        for sentence in doc.sentences:  # pyright: ignore
+            for token in sentence.tokens:
+                tokens.append(token)
+
+        return tokens
 
 
 if __name__ == "__main__":
     import json
 
-    handler = GVSaxParser("./data/tlg0530/tlg029/tlg0530.tlg029.verbatim-lat1.xml")
+    handler = TEIParser("./data/tlg0530/tlg029/tlg0530.tlg029.verbatim-lat1.xml")
 
     with open("metadata.json", "w") as f:
         json.dump(
-            create_table_of_contents(handler.textparts, handler.textpart_labels), f
+            create_table_of_contents(handler.textparts, handler.textpart_labels),
+            f,
+            ensure_ascii=False,
+            indent=4,
         )
 
     with open("textparts.json", "w") as f:
