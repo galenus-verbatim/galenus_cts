@@ -1,0 +1,140 @@
+{% extends "base.html.jinja" %}
+
+{% block title %}Titres — Galenus Verbatim{% endblock %}
+
+{% block tab_opera %}{% endblock %}
+{% block tab_search %}selected{% endblock %}
+
+{% block content %}
+<div class="search-panel">
+  <h1>Sélection des Titres</h1>
+
+  <div class="controls">
+    <div class="controls-row">
+      <div class="control-group">
+        <label for="afficher">Afficher :</label>
+        <select id="afficher" disabled>
+          <option value="sort-cmg" selected>Abbréviation CMG</option>
+          <option value="sort-latin">Titre latin</option>
+          <option value="sort-grec">Titre grec</option>
+          <option value="sort-francais">Titre français</option>
+          <option value="sort-anglais">Titre anglais</option>
+          <option value="sort-cgt">Abbréviation CGT</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="trier">Trier :</label>
+        <select id="trier" disabled>
+          <option value="auteur">Par auteur</option>
+          <option value="titre">Par titre</option>
+          <option value="matiere" selected>Par matière</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <input type="checkbox" id="tout-cocher" disabled />
+        <label for="tout-cocher">Tout cocher/décocher</label>
+      </div>
+
+      <div class="control-group">
+        <input type="checkbox" id="ignorer-doublons" disabled />
+        <label for="ignorer-doublons">Ignorer doublons</label>
+      </div>
+    </div>
+
+    <div class="controls-row">
+      <div class="control-group">
+        <input type="checkbox" id="gal" />
+        <label for="gal">Gal.</label>
+      </div>
+
+      <div class="control-group">
+        <input type="checkbox" id="ps-gal" />
+        <label for="ps-gal">Ps.-Gal.</label>
+      </div>
+
+      <div class="control-group">
+        <span>Gommettes :</span>
+        <div class="gommettes">
+          {%- for tag in all_tags %}
+          <div class="control-group">
+            <input type="checkbox" id="_{{ tag }}" value="_{{ tag }}" class="gommette" />
+            <label for="_{{ tag }}">{{ tag }}.</label>
+          </div>
+          {%- endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="editions-table-wrap">
+    <table id="editions-table" class="editions-table">
+      <thead>
+        <tr>
+          <th>Editeur(s)</th>
+          <th>Titre grec</th>
+          <th>Titre latin</th>
+          <th>Titre français</th>
+          <th>Titre anglais</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for edition in editions %}
+        <tr data-cts="{{ edition.cts }}">
+          <td>{{ (edition.editors or "").split(",")[0] }}</td>
+          <td>
+            <a href="{{ url_for('reading', urn=edition.cts) }}" title="{{ edition.cts }}" class="text-amber-600">
+              {{ edition.greek_title or "" }}
+            </a>
+          </td>
+          <td>{{ edition.latin_title or edition.title or "" }}</td>
+          <td>{{ edition.french_title or "" }}</td>
+          <td>{{ edition.english_title or "" }}</td>
+        </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="module">
+  import { fetchOpera } from "{{ url_for('static', filename='js/zotero.js') }}";
+
+  async function filterEditions() {
+    const gommettes = Array.from(
+      document.querySelectorAll('.gommette:checked')
+    ).map(cb => cb.value);
+
+    const tbody = document.querySelector('#editions-table tbody');
+
+    if (gommettes.length === 0) {
+      tbody.querySelectorAll('tr').forEach(row => { row.hidden = false; });
+      return;
+    }
+
+    const tags = gommettes.join(' || ');
+    const data = await fetchOpera(tags);
+    const urns = data
+      .map(d => {
+        const extra = d.data?.extra;
+        if (!extra) return null;
+        const line = extra.split('\n').find(l => l.startsWith('CTS URN'));
+        if (!line) return null;
+        return line.replace('CTS URN:', '').trim();
+      })
+      .filter(Boolean);
+
+    tbody.querySelectorAll('tr').forEach(row => {
+      const cts = row.dataset.cts;
+      row.hidden = !urns.some(urn => cts.startsWith(urn));
+    });
+  }
+
+  document.querySelectorAll('.gommette').forEach(cb => {
+    cb.addEventListener('change', filterEditions);
+  });
+</script>
+{% endblock %}

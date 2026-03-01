@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{% block title %}Galenus verbatim{% endblock %}</title>
+  <title>{% block title %}Galenus Verbatim{% endblock %}</title>
   <link rel="icon" href="{{ url_for('static', filename='images/favicon.svg') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/galenus.css') }}" />
   {% block head %}{% endblock %}
@@ -13,7 +13,7 @@
     <div class="banner">
       <div class="titles">
         <a href="{{ url_for('index') }}">
-          <div class="title">Galenus verbatim</div>
+          <div class="title">Galenus Verbatim</div>
           <div class="titlesub">Γαληνὸς κατὰ λέξιν</div>
         </a>
       </div>
@@ -39,7 +39,7 @@
           />
         </form>
         <a href="{{ url_for('index') }}" class="tab {% block tab_opera %}selected{% endblock %}">Opera</a>
-        <a href="/titres" class="tab">Titres</a>
+        <a href="{{ url_for('search') }}" class="tab {%block tab_search %}{% endblock %}">Titres</a>
         <a href="/apropos" class="tab">À propos</a>
         <a href="/novitates" class="tab">Actualités</a>
         <a

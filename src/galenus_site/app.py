@@ -73,6 +73,42 @@ def main():
             default_sort="kuehn",
         )
 
+    @app.route("/titres")
+    def search():
+        editions = load_editions()
+        zotero_data = read_zotero_json()
+
+        # Build lookup from work-level CTS URN to multi-language titles
+        cts_to_titles: dict[str, dict] = {}
+        for opus in zotero_data:
+            cts_urn = opus.get("ctsURN")
+            if cts_urn:
+                cts_to_titles[cts_urn] = {
+                    "greek_title": opus.get("greekTitle"),
+                    "latin_title": opus.get("latinTitle"),
+                    "french_title": opus.get("frenchTitle"),
+                    "english_title": opus.get("englishTitle"),
+                }
+
+        # Enrich editions with multi-language titles
+        for edition in editions:
+            edition_cts = edition.get("cts", "")
+            titles = next(
+                (t for cts, t in cts_to_titles.items() if edition_cts.startswith(cts)),
+                None,
+            )
+            if titles:
+                edition.update(titles)
+            else:
+                edition.setdefault("greek_title", None)
+                edition.setdefault("latin_title", edition.get("title"))
+                edition.setdefault("french_title", None)
+                edition.setdefault("english_title", None)
+
+        all_tags = ["gen", "anat", "physiol", "nosol", "therap", "pharm", "Hipp", "phil"]
+
+        return render_template("search.html.jinja", editions=editions, all_tags=all_tags)
+
     @app.route("/<path:urn>")
     def reading(urn):
         """Text reader page for a given CTS URN."""

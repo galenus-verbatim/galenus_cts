@@ -1588,6 +1588,69 @@ div.viewer-toolbar {
   margin: 0.5em 2em;
 }
 
+/* === Search / Titres page === */
+
+.search-panel {
+  background-color: var(--bg);
+  border: 1px solid var(--bglo);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem auto;
+}
+
+.controls {
+  margin-bottom: 2rem;
+}
+
+.controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gommettes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.editions-table-wrap {
+  overflow-x: auto;
+}
+
+.editions-table {
+  width: 100%;
+  border-top: 1px solid #d1d5db;
+}
+
+.editions-table th {
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid #d1d5db;
+}
+
+.editions-table td {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--textlo);
+}
+
+.editions-table tbody tr:nth-child(even) {
+  background-color: var(--bg3);
+}
+
 /* === CTS body mode === */
 
 body.cts #content {
