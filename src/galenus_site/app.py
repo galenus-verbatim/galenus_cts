@@ -1,0 +1,126 @@
+import json
+
+from pathlib import Path
+
+from flask import abort, redirect, render_template, url_for
+
+from kodon_py.config import default_config
+from kodon_py.server import create_app, load_passage_from_urn
+
+from galenus_site.build import (
+    _format_critical_edition,
+    _format_modern_translation,
+    _int_or_zero,
+)
+from galenus_site.reading import (
+    get_iiif_config,
+    load_editions,
+    load_images_config,
+    parse_nav_html,
+)
+from galenus_site.zotero import SORT_ORDERS, read_zotero_json
+
+APP_DIR = Path(__file__).resolve().parent
+
+
+def _extract_cts_urn(extra: str) -> str | None:
+    """Extract a CTS URN from a Zotero item's 'extra' field."""
+    if not isinstance(extra, str):
+        return None
+    for line in extra.split("\n"):
+        if line.startswith("CTS URN: "):
+            return line.split("CTS URN: ", 1)[1].strip()
+    return None
+
+
+def main():
+    """Run the development server."""
+    db_path = APP_DIR / "db" / "kodon-db.sqlite"
+    config = default_config
+
+    config["static_folder"] = (APP_DIR / "static").absolute()
+    config["template_folder"] = (APP_DIR / "templates").absolute()
+
+    app = create_app(db_path=db_path.absolute(), config=config)
+
+    @app.route("/")
+    def index():
+        zotero_data = read_zotero_json()
+
+        for item in zotero_data:
+            for edition in item.get("criticalEditions", []):
+                edition["_formatted"] = _format_critical_edition(edition)
+            for translation in item.get("modernTranslations", []):
+                translation["_formatted"] = _format_modern_translation(translation)
+            for edition in item.get("verbatimEditions", []):
+                cts_urn = _extract_cts_urn(edition.get("extra", ""))
+                edition["_route"] = url_for("reading", urn=cts_urn) if cts_urn else "#"
+
+        items = sorted(
+            [i for i in zotero_data if i.get("callNumber")],
+            key=lambda i: _int_or_zero(i["callNumber"]),
+        )
+
+        sorted_lists: dict[str, list] = {}
+        for key, info in SORT_ORDERS.items():
+            sorted_lists[key] = info["sort_fn"](zotero_data)
+
+        return render_template(
+            "index.html.jinja",
+            items=items,
+            sorted_lists=sorted_lists,
+            sort_orders=SORT_ORDERS,
+            default_sort="kuehn",
+        )
+
+    @app.route("/<path:urn>")
+    def reading(urn):
+        """Text reader page for a given CTS URN."""
+        editions = load_editions()
+        images_data = load_images_config()
+
+        # If this is a document-level CTS URN, redirect to its first chapter
+        for ed in editions:
+            if ed["cts"] == urn:
+                chapters = parse_nav_html(ed.get("nav", ""))
+                if chapters:
+                    return redirect(url_for("reading", urn=chapters[0]["urn"]))
+                abort(404)
+
+        text_containers = load_passage_from_urn(urn)
+        if text_containers is None:
+            abort(404)
+
+        # Find the edition that contains this chapter
+        edition = None
+        chapters: list[dict[str, str]] = []
+        for ed in editions:
+            chs = parse_nav_html(ed.get("nav", ""))
+            if any(ch["urn"] == urn for ch in chs):
+                edition = ed
+                chapters = chs
+                break
+
+        if edition is None:
+            abort(404)
+
+        volume = edition.get("volume")
+        imgkuhn = get_iiif_config(images_data, edition["cts"], volume)
+
+        image_vars = None
+        if imgkuhn:
+            image_vars = f"var imgkuhn = {json.dumps(imgkuhn)};"
+
+        return render_template(
+            "reading.html.jinja",
+            edition_title=edition.get("title", ""),
+            bibl_html=edition.get("bibl", ""),
+            chapters=chapters,
+            current_urn=urn,
+            text_containers=text_containers,
+            image_vars=image_vars,
+        )
+
+    app.run(debug=True)
+
+    return app

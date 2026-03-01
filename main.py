@@ -1,11 +1,12 @@
 import json
 import logging
+import os
 
 from pathlib import Path
 
 from tqdm import tqdm
 
-from tools.tei_parser import TEIParser, create_table_of_contents
+from kodon_py.tei_parser import TEIParser, create_table_of_contents
 
 logger = logging.getLogger(__name__)
 
@@ -16,21 +17,7 @@ def parse_file(f: Path):
     return handler
 
 
-def read_data_directory(data_dir: Path):
-    files_to_process = []
-
-    for subdir in [d for d in data_dir.iterdir() if d.is_dir()]:
-        for subsubdir in [d for d in subdir.iterdir() if d.is_dir()]:
-            for f in subsubdir.iterdir():
-                if f.name.startswith("tlg"):
-                    print(f)
-
-                    files_to_process.append(f)
-
-    return files_to_process
-
-
-if __name__ == "__main__":
+def parse_and_save_tei():
     data_dir = Path("./data")
     out_dir = Path("./out")
 
@@ -70,3 +57,27 @@ if __name__ == "__main__":
             }
 
             json.dump(metadata, g, ensure_ascii=False, indent=2)
+
+
+def read_data_directory(data_dir: Path):
+    files_to_process = []
+
+    for subdir in [d for d in data_dir.iterdir() if d.is_dir()]:
+        for subsubdir in [d for d in subdir.iterdir() if d.is_dir()]:
+            for f in subsubdir.iterdir():
+                if f.name.startswith("tlg"):
+                    print(f)
+
+                    files_to_process.append(f)
+
+    return files_to_process
+
+
+def serve_files():
+    app = create_app()
+
+    app.run(debug=True, port=5000)
+
+
+if __name__ == "__main__":
+    serve_files()

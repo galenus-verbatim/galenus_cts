@@ -1,0 +1,60 @@
+{% extends "base.html.jinja" %}
+
+{% block title %}{{ edition_title }} — Galenus verbatim{% endblock %}
+
+{% block body_class %}cts{% endblock %}
+
+{% block tab_opera %}{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css" />
+{% endblock %}
+
+{% block content %}
+<div class="reader">
+  {# ── Left column: chapter navigation ── #}
+  <nav class="toc" id="navs">
+    {% for ch in chapters %}
+    <a href="{{ url_for('reading', urn=ch.urn) }}"{% if ch.urn == current_urn %} class="selected"{% endif %}>{{ ch.label }}</a>
+    {% endfor %}
+  </nav>
+
+  {# ── Center column: Greek / Latin text ── #}
+  <div class="doc">
+    <div class="bibl">
+      {{ bibl_html | safe }}
+    </div>
+    <div class="text">
+      {% for container in text_containers %}
+        {% with text_container = container %}
+          {% include 'components/ReadableTextContainer.html.jinja' %}
+        {% endwith %}
+      {% endfor %}
+    </div>
+  </div>
+
+  {# ── Right column: IIIF facsimile viewer ── #}
+  <div id="pagimage">
+    <header id="image_nav">
+      <a class="prev" id="image_prev" title="Page précédente">&#9664;</a>
+      <span id="image_title"></span>
+      <a class="next" id="image_next" title="Page suivante">&#9654;</a>
+    </header>
+    <div style="position: relative">
+      <div id="viewcont">
+        <img id="image" src="" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% if image_vars %}
+<script>
+{{ image_vars | safe }}
+</script>
+{% endif %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
+<script src="{{ url_for('static', filename='js/galenus.js') }}"></script>
+{% endblock %}

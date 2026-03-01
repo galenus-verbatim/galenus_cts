@@ -1,0 +1,194 @@
+{% extends "base.html.jinja" %}
+
+{% block content %}
+<div class="flex">
+  <aside id="navs" class="flex-2 max-h-screen overflow-y-scroll">
+    <form class="pt-4">
+      <select name="selnav" id="selnav">
+        {% for key, info in sort_orders.items() %}
+        <option value="{{ key }}"{{ ' selected' if key == default_sort else '' }}>{{ info.label }}</option>
+        {% endfor %}
+      </select>
+    </form>
+
+    {# --- Pre-rendered title lists, one per sort order --- #}
+
+    {# titLat #}
+    <div id="list-titLat" class="title-list"{{ ' hidden' if default_sort != 'titLat' else '' }}>
+      {% for item in sorted_lists.titLat %}
+      <div class="text-zinc-900">
+        <a href="#{{ item.ctsURN }}">
+          <span class="italic text-zinc-500">{{ item.latinTitle or item.title }}</span>
+          <span class="text-sm">[{{ item.callNumber }}]</span>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    {# fichtner #}
+    <div id="list-fichtner" class="title-list"{{ ' hidden' if default_sort != 'fichtner' else '' }}>
+      {% for item in sorted_lists.fichtner %}
+      <div>
+        <a href="#{{ item.ctsURN }}">
+          <span class="font-bold">[{{ item.callNumber }}]</span>
+          <span class="italic text-zinc-500">{{ item.latinTitle }}</span>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    {# kuehn #}
+    <div id="list-kuehn" class="title-list"{{ ' hidden' if default_sort != 'kuehn' else '' }}>
+      {% for item in sorted_lists.kuehn %}
+      <div class="text-zinc-900">
+        <a href="#{{ item.ctsURN }}">
+          <span class="font-bold">{{ item.kuehnEditionVolume }}.{{ (item.kuehnEditionPages or '').split('-')[0] }}</span>
+          <span class="text-sm">[{{ item.callNumber }} Ficht.]</span>
+          <span class="italic text-zinc-500">{{ item.latinTitle }}</span>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    {# titLatAbbr (CMG) #}
+    <div id="list-titLatAbbr" class="title-list"{{ ' hidden' if default_sort != 'titLatAbbr' else '' }}>
+      {% for item in sorted_lists.titLatAbbr %}
+      <div>
+        <a href="#{{ item.ctsURN }}">
+          <span class="italic text-zinc-500">{{ item.latinAbbreviatedTitle }}</span>
+          <span class="text-sm">[{{ item.callNumber }}]</span>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    {# titGrc #}
+    <div id="list-titGrc" class="title-list"{{ ' hidden' if default_sort != 'titGrc' else '' }}>
+      {% for item in sorted_lists.titGrc %}
+      <div>
+        <a href="#{{ item.ctsURN }}">
+          <span class="italic text-zinc-500">{{ item.greekTitle }}</span>
+          <span class="font-bold">[{{ item.callNumber }}]</span>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    {# titFra #}
+    <div id="list-titFra" class="title-list"{{ ' hidden' if default_sort != 'titFra' else '' }}>
+      {% for item in sorted_lists.titFra %}
+      <div>
+        <a href="#{{ item.ctsURN }}">
+          <span class="italic text-zinc-500">{{ item.frenchTitle }}</span>
+          <span>[{{ item.callNumber }}]</span>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    {# titEng #}
+    <div id="list-titEng" class="title-list"{{ ' hidden' if default_sort != 'titEng' else '' }}>
+      {% for item in sorted_lists.titEng %}
+      <div>
+        <a href="#{{ item.ctsURN }}">
+          <span class="italic text-zinc-500">{{ item.englishTitle }}</span>
+          <span class="font-bold">[{{ item.callNumber }}]</span>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    {# titEngAbbr (CGT) #}
+    <div id="list-titEngAbbr" class="title-list"{{ ' hidden' if default_sort != 'titEngAbbr' else '' }}>
+      {% for item in sorted_lists.titEngAbbr %}
+      <div>
+        <a href="#{{ item.ctsURN }}">
+          <span class="italic text-zinc-500">{{ item.englishShortTitle }}</span>
+          <span class="font-bold">[{{ item.callNumber }}]</span>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </aside>
+
+  <div id="biblio" class="biblio ml-4">
+    <main>
+      {% for item in items %}
+      <article id="{{ item.ctsURN }}">
+        <section class="opus">
+          <strong>
+            {{ item.author.name if item.author else '' }}.
+            <em>{{ item.title }} ({{ item.shortTitle }})</em>
+          </strong>
+          <div>
+            <a class="text-amber-600" href="{{ item.fichtnerURL }}">[N&ordm; {{ item.callNumber }} Ficht.]</a>
+            {% if item.galLatURL %}
+            <a class="text-amber-600" href="{{ item.galLatURL }}">[Gal Lat.]</a>
+            {% endif %}
+          </div>
+          <div>
+            <span>{{ item.ctsURN }}</span>
+          </div>
+          <div>
+            <span>{{ item.greekTitle or '' }}</span>
+          </div>
+          <div>
+            <em>{{ item.frenchTitle or '' }}</em>
+          </div>
+          <div>
+            <em>{{ item.englishTitle or '' }}{% if item.englishShortTitle %} ({{ item.englishShortTitle }}){% endif %}</em>
+          </div>
+          <div>
+            {# Verbatim editions, sorted by date #}
+            {% for edition in item.verbatimEditions|sort(attribute='date') %}
+            <div>
+              <a class="text-amber-600" href="{{ edition._route }}">
+                <em>{{ edition.title }}</em>,
+                <span>ed. {{ edition.creators | selectattr('creatorType', 'equalto', 'editor') | map(attribute='lastName') | first | default('') }}</span>,
+                <span>{{ edition.date }}</span>,
+                {% if edition.volume %}
+                <span>vol. {{ edition.volume }}</span>,
+                {% endif %}
+                <span>pp. {{ edition.pages }}</span>.
+                <span>{{ edition.extra.split('CTS URN: ')[1] if edition.extra and 'CTS URN: ' in edition.extra else '' }}</span>
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+          <div>
+            <strong class="text-zinc-600">editio(nes) critica(e):</strong>
+            <span>{{ item.criticalEditions | map(attribute='_formatted') | join('; ') }}</span>
+          </div>
+          {% if item.kuehnEdition %}
+          <div>
+            <strong class="text-zinc-600">translatio Latina:</strong>
+            <span>{{ item.latinTitle }}, {{ item.kuehnEdition.date }}, vol. {{ item.kuehnEdition.volume }}, pp. {{ item.kuehnEdition.pages }}.</span>
+            {% set kuehn_extra = item.kuehnEdition.extra %}
+            {% if kuehn_extra is string %}
+              {% for line in kuehn_extra.split('\n') %}
+                {% if line.startswith('CTS URN: ') %}
+            <span>{{ line.split('CTS URN: ')[1] }}</span>
+                {% endif %}
+              {% endfor %}
+            {% elif kuehn_extra is mapping and kuehn_extra.get('CTS URN') %}
+            <span>{{ kuehn_extra['CTS URN'] }}</span>
+            {% endif %}
+          </div>
+          {% endif %}
+          {% if item.modernTranslations %}
+          <div>
+            <strong class="text-zinc-500">translationes recentiores</strong>
+            <span>{{ item.modernTranslations | map(attribute='_formatted') | join('; ') }}</span>
+          </div>
+          {% endif %}
+        </section>
+      </article>
+      {% endfor %}
+    </main>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/sort.js') }}"></script>
+{% endblock %}
