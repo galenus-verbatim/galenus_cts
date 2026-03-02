@@ -38,8 +38,9 @@
             value=""
           />
         </form>
-        <a href="{{ url_for('index') }}" class="tab {% block tab_opera %}selected{% endblock %}">Opera</a>
-        <a href="{{ url_for('search') }}" class="tab {%block tab_search %}{% endblock %}">Titres</a>
+        <a href="{{ url_for('index') }}" class="tab {% block tab_opera %}{% endblock %}">Opera</a>
+        <a href="{{ url_for('titres') }}" class="tab {%block tab_titres %}{% endblock %}">Titres</a>
+        <a href="{{ url_for('text_search') }}" class="tab {% block tab_text_search %}{% endblock %}">Recherche</a>
         <a href="/apropos" class="tab">À propos</a>
         <a href="/novitates" class="tab">Actualités</a>
         <a

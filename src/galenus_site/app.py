@@ -73,8 +73,12 @@ def main():
             default_sort="kuehn",
         )
 
+    @app.route("/recherche")
+    def text_search():
+        return render_template("text_search.html.jinja")
+
     @app.route("/titres")
-    def search():
+    def titres():
         editions = load_editions()
         zotero_data = read_zotero_json()
 

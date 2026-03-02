@@ -2,8 +2,7 @@
 
 {% block title %}Titres — Galenus Verbatim{% endblock %}
 
-{% block tab_opera %}{% endblock %}
-{% block tab_search %}selected{% endblock %}
+{% block tab_titres %}selected{% endblock %}
 
 {% block content %}
 <div class="search-panel">
@@ -32,13 +31,10 @@
         </select>
       </div>
 
-      <div class="control-group">
-        <input type="checkbox" id="tout-cocher" disabled />
-        <label for="tout-cocher">Tout cocher/décocher</label>
-      </div>
+      <button type="button" id="tout-cocher">Tout cocher/décocher</button>
 
       <div class="control-group">
-        <input type="checkbox" id="ignorer-doublons" disabled />
+        <input type="checkbox" id="ignorer-doublons" />
         <label for="ignorer-doublons">Ignorer doublons</label>
       </div>
     </div>
@@ -101,40 +97,26 @@
 
 {% block scripts %}
 <script type="module">
-  import { fetchOpera } from "{{ url_for('static', filename='js/zotero.js') }}";
-
-  async function filterEditions() {
-    const gommettes = Array.from(
-      document.querySelectorAll('.gommette:checked')
-    ).map(cb => cb.value);
-
-    const tbody = document.querySelector('#editions-table tbody');
-
-    if (gommettes.length === 0) {
-      tbody.querySelectorAll('tr').forEach(row => { row.hidden = false; });
-      return;
-    }
-
-    const tags = gommettes.join(' || ');
-    const data = await fetchOpera(tags);
-    const urns = data
-      .map(d => {
-        const extra = d.data?.extra;
-        if (!extra) return null;
-        const line = extra.split('\n').find(l => l.startsWith('CTS URN'));
-        if (!line) return null;
-        return line.replace('CTS URN:', '').trim();
-      })
-      .filter(Boolean);
-
-    tbody.querySelectorAll('tr').forEach(row => {
-      const cts = row.dataset.cts;
-      row.hidden = !urns.some(urn => cts.startsWith(urn));
-    });
-  }
+  import { filterEditions } from "{{ url_for('static', filename='js/zotero.js') }}";
 
   document.querySelectorAll('.gommette').forEach(cb => {
     cb.addEventListener('change', filterEditions);
+  });
+
+  document.getElementById('tout-cocher').addEventListener('click', () => {
+    const gommettes = document.querySelectorAll(".gommette:checked");
+
+    if (gommettes.length === 0) {
+      document.querySelectorAll('.gommette').forEach(g => g.checked = true);
+    } else {
+      gommettes.forEach(g => g.checked = false);
+    }
+
+    filterEditions();
+  });
+
+  document.getElementById('ignorer-doublons').addEventListener('change', () => {
+    filterEditions(true);
   });
 </script>
 {% endblock %}

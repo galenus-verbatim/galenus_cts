@@ -34,3 +34,56 @@ export async function fetchOpera(tags = []) {
 
   return data;
 }
+
+// ignoreDuplicates is accepted for callers that pass it explicitly, but
+// deduplication is always driven by the ignorer-doublons checkbox so that
+// gommette-triggered re-filters also respect the current setting.
+export async function filterEditions(ignoreDuplicates = false) {
+  const gommettes = Array.from(
+    document.querySelectorAll(".gommette:checked"),
+  ).map((cb) => cb.value);
+
+  const tbody = document.querySelector("#editions-table tbody");
+  if (!tbody) return;
+
+  // First pass: filter visible rows by gommette tags
+  if (gommettes.length === 0) {
+    tbody.querySelectorAll("tr").forEach((row) => {
+      row.hidden = false;
+    });
+  } else {
+    const tags = gommettes.join(" || ");
+    const data = await fetchOpera(tags);
+    const urns = data
+      .map((d) => {
+        const extra = d.data?.extra;
+        if (!extra) return null;
+        const line = extra.split("\n").find((l) => l.startsWith("CTS URN"));
+        if (!line) return null;
+        return line.replace("CTS URN:", "").trim();
+      })
+      .filter(Boolean);
+
+    tbody.querySelectorAll("tr").forEach((row) => {
+      const cts = row.dataset.cts;
+      row.hidden = !urns.some((urn) => cts.startsWith(urn));
+    });
+  }
+
+  // Second pass: hide duplicate works if ignorer-doublons is checked.
+  // The work-level URN (everything before the final ".edition" component)
+  // is used as the deduplication key; only the first row for each work is kept.
+  const shouldDeduplicate =
+    document.getElementById("ignorer-doublons")?.checked ?? false;
+  if (shouldDeduplicate) {
+    const seen = new Set();
+    tbody.querySelectorAll("tr:not([hidden])").forEach((row) => {
+      const workUrn = row.dataset.cts.replace(/\.[^.]+$/, "");
+      if (seen.has(workUrn)) {
+        row.hidden = true;
+      } else {
+        seen.add(workUrn);
+      }
+    });
+  }
+}

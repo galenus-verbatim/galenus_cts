@@ -1,0 +1,36 @@
+{% extends "base.html.jinja" %}
+
+{% block title %}Recherche — Galenus Verbatim{% endblock %}
+
+{% block tab_text_search %}selected{% endblock %}
+
+{% block content %}
+<div class="search-panel">
+  <h1>Recherche plein texte</h1>
+
+  <div class="controls">
+    <div class="controls-row">
+      <div class="control-group search-input-group">
+        <label for="search-input">Rechercher :</label>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="e.g. bilis flava, χυμός…"
+          disabled
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+      <span id="search-status" class="search-status"></span>
+      <span id="search-count" class="search-count"></span>
+    </div>
+  </div>
+
+  <div id="search-results" class="search-results"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/sql.js@1.10.3/dist/sql-wasm.js"></script>
+<script src="{{ url_for('static', filename='js/text_search.js') }}"></script>
+{% endblock %}
