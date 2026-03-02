@@ -120,13 +120,35 @@ def main():
     @app.route("/<path:urn>")
     def reading(urn):
         """Text reader page for a given CTS URN."""
-        images_data = load_images_config()
+
         text_containers = load_passage_from_urn(urn, JSON_DIR)
-        toc = load_toc_from_urn(urn, JSON_DIR)
 
         if text_containers is None:
             abort(404)
 
+        images_data = load_images_config()
+        toc = load_toc_from_urn(urn, JSON_DIR)
+        zotero_data = read_zotero_json()
+
+        zotero_item = None
+
+        for item in zotero_data:
+            item_urn = item.get("ctsURN", "")
+
+            if urn.startswith(item_urn):
+                zotero_item = item
+                break
+
+        if zotero_item is None:
+            print(f"No zotero item found for {urn}")
+
+        for edition in zotero_item.get("criticalEditions", []):
+            edition["_formatted"] = _format_critical_edition(edition)
+        for translation in zotero_item.get("modernTranslations", []):
+            translation["_formatted"] = _format_modern_translation(translation)
+        for edition in zotero_item.get("verbatimEditions", []):
+            cts_urn = _extract_cts_urn(edition.get("extra", ""))
+            edition["_route"] = url_for("reading", urn=cts_urn) if cts_urn else "#"
         # # Find the edition that contains this chapter
         # edition = None
         # chapters: list[dict[str, str]] = []
@@ -155,6 +177,7 @@ def main():
             current_urn=urn,
             text_containers=text_containers,
             image_vars=None,
+            zotero_item=zotero_item,
         )
 
     app.run(debug=True)
