@@ -5,7 +5,7 @@ from pathlib import Path
 from flask import abort, redirect, render_template, url_for
 
 from kodon_py.config import default_config
-from kodon_py.server import create_app, load_passage_from_urn
+from kodon_py.server import create_app, load_passage_from_urn, load_toc_from_urn
 
 from galenus_site.build import (
     _format_critical_edition,
@@ -21,6 +21,8 @@ from galenus_site.reading import (
 from galenus_site.zotero import SORT_ORDERS, read_zotero_json
 
 APP_DIR = Path(__file__).resolve().parent
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+JSON_DIR = (ROOT_DIR / "tei_json").absolute()
 
 
 def _extract_cts_urn(extra: str) -> str | None:
@@ -35,13 +37,15 @@ def _extract_cts_urn(extra: str) -> str | None:
 
 def main():
     """Run the development server."""
-    db_path = APP_DIR / "db" / "kodon-db.sqlite"
     config = default_config
 
     config["static_folder"] = (APP_DIR / "static").absolute()
     config["template_folder"] = (APP_DIR / "templates").absolute()
 
-    app = create_app(db_path=db_path.absolute(), config=config)
+    app = create_app(
+        json_dir=JSON_DIR,
+        config=config,
+    )
 
     @app.route("/")
     def index():
@@ -116,49 +120,41 @@ def main():
     @app.route("/<path:urn>")
     def reading(urn):
         """Text reader page for a given CTS URN."""
-        editions = load_editions()
         images_data = load_images_config()
+        text_containers = load_passage_from_urn(urn, JSON_DIR)
+        toc = load_toc_from_urn(urn, JSON_DIR)
 
-        # If this is a document-level CTS URN, redirect to its first chapter
-        for ed in editions:
-            if ed["cts"] == urn:
-                chapters = parse_nav_html(ed.get("nav", ""))
-                if chapters:
-                    return redirect(url_for("reading", urn=chapters[0]["urn"]))
-                abort(404)
-
-        text_containers = load_passage_from_urn(urn)
         if text_containers is None:
             abort(404)
 
-        # Find the edition that contains this chapter
-        edition = None
-        chapters: list[dict[str, str]] = []
-        for ed in editions:
-            chs = parse_nav_html(ed.get("nav", ""))
-            if any(ch["urn"] == urn for ch in chs):
-                edition = ed
-                chapters = chs
-                break
+        # # Find the edition that contains this chapter
+        # edition = None
+        # chapters: list[dict[str, str]] = []
+        # for ed in editions:
+        #     chs = parse_nav_html(ed.get("nav", ""))
+        #     if any(ch["urn"] == urn for ch in chs):
+        #         edition = ed
+        #         chapters = chs
+        #         break
 
-        if edition is None:
-            abort(404)
+        # if edition is None:
+        #     abort(404)
 
-        volume = edition.get("volume")
-        imgkuhn = get_iiif_config(images_data, edition["cts"], volume)
+        # volume = edition.get("volume")
+        # imgkuhn = get_iiif_config(images_data, edition["cts"], volume)
 
-        image_vars = None
-        if imgkuhn:
-            image_vars = f"var imgkuhn = {json.dumps(imgkuhn)};"
+        # image_vars = None
+        # if imgkuhn:
+        #     image_vars = f"var imgkuhn = {json.dumps(imgkuhn)};"
 
         return render_template(
             "reading.html.jinja",
-            edition_title=edition.get("title", ""),
-            bibl_html=edition.get("bibl", ""),
-            chapters=chapters,
+            edition_title=toc.get("title", ""),
+            # bibl_html=edition.get("bibl", ""),
+            toc=toc,
             current_urn=urn,
             text_containers=text_containers,
-            image_vars=image_vars,
+            image_vars=None,
         )
 
     app.run(debug=True)

@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "kodon-py",
     "lxml>=6.0.0",
     "lxml-stubs>=0.5.1",
     "pyzotero>=1.6.11",
@@ -18,7 +19,7 @@ dev = [
 ]
 
 [tool.uv.sources]
-kodon-py = { path = "../../../ajmc/kodon-py" }
+kodon-py = { path = "../../ajmc/kodon-py", editable = true }
 
 [project.scripts]
 galenus = "galenus_site.build:main"

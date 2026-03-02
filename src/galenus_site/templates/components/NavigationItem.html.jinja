@@ -1,0 +1,18 @@
+<li>
+	{% if item.get("subpassages", [])|length > 0 %}
+		<details>
+			<summary>
+				<span>{{item.get("label")}}</span>
+			</summary>
+			<ul>
+                {% for child in item.get("subpassages") %}
+                    {% with item = child %}
+                        {%- include 'components/NavigationItem.html.jinja' -%}
+                    {% endwith %}
+                {% endfor %}
+			</ul>
+		</details>
+	{% else %}
+    <a href="{{ url_for('reading', urn=item.get("urn")) }}"{% if item.get("urn") == current_urn %} class="selected"{% endif %}>{{ item.get("label") }}</a>
+	{% endif %}
+</li>
