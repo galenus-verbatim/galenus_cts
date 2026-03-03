@@ -1,0 +1,69 @@
+<article id="{{ item.ctsURN }}">
+    <section class="opus">
+        <strong>
+        {{ item.author.name if item.author else '' }}.
+        <em>{{ item.title }} ({{ item.shortTitle }})</em>
+        </strong>
+        <div>
+        <a class="text-amber-600" href="{{ item.fichtnerURL }}">[N&ordm; {{ item.callNumber }} Ficht.]</a>
+        {% if item.galLatURL %}
+        <a class="text-amber-600" href="{{ item.galLatURL }}">[Gal Lat.]</a>
+        {% endif %}
+        </div>
+        <div>
+        <span>{{ item.ctsURN }}</span>
+        </div>
+        <div>
+        <span>{{ item.greekTitle or '' }}</span>
+        </div>
+        <div>
+        <em>{{ item.frenchTitle or '' }}</em>
+        </div>
+        <div>
+        <em>{{ item.englishTitle or '' }}{% if item.englishShortTitle %} ({{ item.englishShortTitle }}){% endif %}</em>
+        </div>
+        <div>
+        {# Verbatim editions, sorted by date #}
+        {% for edition in item.verbatimEditions|sort(attribute='date') %}
+        <div>
+            <a class="text-amber-600" href="{{ edition._route }}">
+            <em>{{ edition.title }}</em>,
+            <span>ed. {{ edition.creators | selectattr('creatorType', 'equalto', 'editor') | map(attribute='lastName') | first | default('') }}</span>,
+            <span>{{ edition.date }}</span>,
+            {% if edition.volume %}
+            <span>vol. {{ edition.volume }}</span>,
+            {% endif %}
+            <span>pp. {{ edition.pages }}</span>.
+            <span>{{ edition.extra.split('CTS URN: ')[1] if edition.extra and 'CTS URN: ' in edition.extra else '' }}</span>
+            </a>
+        </div>
+        {% endfor %}
+        </div>
+        <div>
+        <strong class="text-zinc-600">editio(nes) critica(e):</strong>
+        <span>{{ item.criticalEditions | map(attribute='_formatted') | join('; ') }}</span>
+        </div>
+        {% if item.kuehnEdition %}
+        <div>
+        <strong class="text-zinc-600">translatio Latina:</strong>
+        <span>{{ item.latinTitle }}, {{ item.kuehnEdition.date }}, vol. {{ item.kuehnEdition.volume }}, pp. {{ item.kuehnEdition.pages }}.</span>
+        {% set kuehn_extra = item.kuehnEdition.extra %}
+        {% if kuehn_extra is string %}
+            {% for line in kuehn_extra.split('\n') %}
+            {% if line.startswith('CTS URN: ') %}
+        <span>{{ line.split('CTS URN: ')[1] }}</span>
+            {% endif %}
+            {% endfor %}
+        {% elif kuehn_extra is mapping and kuehn_extra.get('CTS URN') %}
+        <span>{{ kuehn_extra['CTS URN'] }}</span>
+        {% endif %}
+        </div>
+        {% endif %}
+        {% if item.modernTranslations %}
+        <div>
+        <strong class="text-zinc-500">translationes recentiores</strong>
+        <span>{{ item.modernTranslations | map(attribute='_formatted') | join('; ') }}</span>
+        </div>
+        {% endif %}
+    </section>
+    </article>

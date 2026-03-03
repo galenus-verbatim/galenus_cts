@@ -135,7 +135,7 @@ def main():
         for item in zotero_data:
             item_urn = item.get("ctsURN", "")
 
-            if urn.startswith(item_urn):
+            if item_urn is not None and urn.startswith(item_urn):
                 zotero_item = item
                 break
 
@@ -149,34 +149,21 @@ def main():
         for edition in zotero_item.get("verbatimEditions", []):
             cts_urn = _extract_cts_urn(edition.get("extra", ""))
             edition["_route"] = url_for("reading", urn=cts_urn) if cts_urn else "#"
-        # # Find the edition that contains this chapter
-        # edition = None
-        # chapters: list[dict[str, str]] = []
-        # for ed in editions:
-        #     chs = parse_nav_html(ed.get("nav", ""))
-        #     if any(ch["urn"] == urn for ch in chs):
-        #         edition = ed
-        #         chapters = chs
-        #         break
 
-        # if edition is None:
-        #     abort(404)
+        volume = zotero_item.get("volume")
+        imgkuhn = get_iiif_config(images_data, cts_urn, volume)
+        image_vars = None
 
-        # volume = edition.get("volume")
-        # imgkuhn = get_iiif_config(images_data, edition["cts"], volume)
-
-        # image_vars = None
-        # if imgkuhn:
-        #     image_vars = f"var imgkuhn = {json.dumps(imgkuhn)};"
+        if imgkuhn:
+            image_vars = f"var imgkuhn = {json.dumps(imgkuhn)};"
 
         return render_template(
             "reading.html.jinja",
             edition_title=toc.get("title", ""),
-            # bibl_html=edition.get("bibl", ""),
             toc=toc,
             current_urn=urn,
             text_containers=text_containers,
-            image_vars=None,
+            image_vars=image_vars,
             zotero_item=zotero_item,
         )
 
