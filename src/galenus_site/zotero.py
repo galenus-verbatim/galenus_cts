@@ -1,11 +1,19 @@
-"""Port of gv-static/src/lib/zotero.ts — reads and processes Zotero JSON data."""
+"""Fetches, reads, and processes Zotero JSON data."""
 
 from __future__ import annotations
 
 import json
 import locale
+import time
+
 from pathlib import Path
 from typing import Any
+
+from pyzotero import zotero
+
+ZOTERO_LIBRARY_ID = "4571007"
+ZOTERO_LIBRARY_TYPE = "group"
+
 
 COLLECTION_IDS_TO_NAMES: dict[str, str] = {
     "9QP457XQ": "Editiones criticae",
@@ -25,6 +33,24 @@ COLLECTION_NAMES_TO_IDS: dict[str, str] = {
 ZOTERO_JSON_PATH = (
     Path(__file__).resolve().parent / "static" / "json" / "gv_zotero.json"
 )
+
+
+def fetch_opera():
+    now = time.time()
+    yesterday = now - (60 * 60 * 24)
+
+    if ZOTERO_JSON_PATH.exists() and ZOTERO_JSON_PATH.stat().st_mtime > yesterday:
+        print("Not updating Zotero JSON")
+        return None
+
+    print("Fetching latest information from Zotero ... ")
+    zot = zotero.Zotero(ZOTERO_LIBRARY_ID, ZOTERO_LIBRARY_TYPE)
+    zotero_items = zot.everything(zot.items())
+
+    with open(ZOTERO_JSON_PATH, "w") as f:
+        json.dump(zotero_items, f, ensure_ascii=False, indent=2)
+
+    print("Updated Zotero JSON")
 
 
 def _load_raw_items(path: Path | None = None) -> list[dict[str, Any]]:

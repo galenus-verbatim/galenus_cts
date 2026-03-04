@@ -18,7 +18,7 @@ from galenus_site.reading import (
     load_images_config,
     parse_nav_html,
 )
-from galenus_site.zotero import SORT_ORDERS, read_zotero_json
+from galenus_site.zotero import SORT_ORDERS, fetch_opera, read_zotero_json
 
 APP_DIR = Path(__file__).resolve().parent
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
@@ -46,6 +46,8 @@ def main():
         json_dir=JSON_DIR,
         config=config,
     )
+
+    fetch_opera()
 
     @app.route("/")
     def index():
@@ -129,11 +131,11 @@ def main():
         images_data = load_images_config()
         toc = load_toc_from_urn(urn, JSON_DIR)
         zotero_data = read_zotero_json()
-
+        print(len(zotero_data))
         zotero_item = None
 
         for item in zotero_data:
-            item_urn = item.get("ctsURN", "")
+            item_urn = item.get("ctsURN")
 
             if item_urn is not None and urn.startswith(item_urn):
                 zotero_item = item
