@@ -28,6 +28,13 @@ def load_editions(editions_path: str | Path | None = None) -> list[dict]:
     return json.loads(Path(editions_path).read_text(encoding="utf-8"))
 
 
+# Sample URL: https://numerabilis.u-paris.fr/iiif/2/bibnum:00013x02:0201/full/800,/0/default.jpg
+
+
+def make_image_urls(bibnum: str, vol_pg: str):
+    return f"https://numerabilis.u-paris.fr/iiif/2/bibnum:{bibnum}:{vol_pg}/full/800,/0/default.jpg"
+
+
 def load_images_config(images_path: str | Path | None = None) -> dict:
     """Load galenus_images.json with IIIF volume configs."""
     if images_path is None:

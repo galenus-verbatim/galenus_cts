@@ -24,6 +24,7 @@ APP_DIR = Path(__file__).resolve().parent
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 JSON_DIR = (ROOT_DIR / "tei_json").absolute()
 
+IMAGES_DATA = load_images_config()
 
 def _extract_cts_urn(extra: str) -> str | None:
     """Extract a CTS URN from a Zotero item's 'extra' field."""
@@ -125,13 +126,14 @@ def main():
 
         text_containers = load_passage_from_urn(urn, JSON_DIR)
 
+        if text_containers[0]["urn"] != urn:
+            return redirect(f"/{text_containers[0]["urn"]}")
+
         if text_containers is None:
             abort(404)
 
-        images_data = load_images_config()
         toc = load_toc_from_urn(urn, JSON_DIR)
         zotero_data = read_zotero_json()
-        print(len(zotero_data))
         zotero_item = None
 
         for item in zotero_data:
@@ -152,8 +154,12 @@ def main():
             cts_urn = _extract_cts_urn(edition.get("extra", ""))
             edition["_route"] = url_for("reading", urn=cts_urn) if cts_urn else "#"
 
-        volume = zotero_item.get("volume")
-        imgkuhn = get_iiif_config(images_data, cts_urn, volume)
+        volume = zotero_item.get("volume", zotero_item.get("ancientEdition", {}))
+
+        if volume.strip() == "":
+            volume = zotero_item.get("ancientEdition", {}).get("volume")
+
+        imgkuhn = get_iiif_config(IMAGES_DATA, cts_urn, volume)
         image_vars = None
 
         if imgkuhn:
