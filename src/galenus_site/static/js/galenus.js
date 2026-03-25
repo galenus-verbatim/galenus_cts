@@ -1,125 +1,15 @@
-/**
- * Do something with bâle chartier data
- */
-const image = document.getElementById('image');
-const div = document.getElementById('viewcont');
-if (div) {
-    // viewer override of resize
-    Viewer.prototype.resize = function() {
-        var _this3 = this;
-
-        if (!this.isShown || this.hiding) {
-            return;
-        }
-
-        if (this.fulled) {
-            this.close();
-            this.initBody();
-            this.open();
-        }
-
-        this.initContainer();
-        this.initViewer();
-        this.renderViewer();
-        this.renderList();
-
-        if (this.viewed) {
-            // do not resize image
-            /*
-            this.initImage(function() {
-                _this3.renderImage();
-            });
-            _this3.options.viewed();
-            */
-        }
-
-        if (this.played) {
-            if (this.options.fullscreen && this.fulled && !(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement)) {
-                this.stop();
-                return;
-            }
-
-            forEach(this.player.getElementsByTagName('img'), function(image) {
-                addListener(image, EVENT_LOAD, _this3.loadImage.bind(_this3), {
-                    once: true
-                });
-                dispatchEvent(image, EVENT_LOAD);
-            });
-        }
-    };
-
-    /*
-    var onViewed = function onViewed() {
-        var imageData = _this2.imageData;
-        var render = Array.isArray(options.title) ? options.title[1] : options.title;
-        // EDIT 2022-04, keep html in titles
-        title.innerHTML = isFunction(render) ? render.call(_this2, image, imageData) : "".concat(alt, " (").concat(imageData.naturalWidth, " \xD7 ").concat(imageData.naturalHeight, ")");
-    };
-    */
-
-    Viewer.prototype.wheel = function(event) {
-        var _this4 = this;
-        if (!this.viewed) {
-            return;
-        }
-
-        event.preventDefault(); // Limit wheel speed to prevent zoom too fast
-
-        if (this.wheeling) {
-            return;
-        }
-
-        this.wheeling = true;
-        setTimeout(function() {
-            _this4.wheeling = false;
-        }, 50);
-        var ratio = Number(this.options.zoomRatio) || 0.1;
-        var delta = 1;
-
-        if (event.deltaY) {
-            delta = event.deltaY;
-        } else if (event.wheelDelta) {
-            delta = -event.wheelDelta;
-        } else if (event.detail) {
-            delta = event.detail;
-        }
-        this.move(0, -delta);
-    };
-
-    var pageViewer = new Viewer(div, {
-        title: function(image) {
-            // title sould not be html
-            return image.alt;
-        },
-        title: false,
-        transition: false,
-        inline: true,
-        navbar: 0,
-        zIndex: 4,
-        // minWidth: '100%', 
-        toolbar: {
-            width: function() {
-                let cwidth = div.offsetWidth;
-                let iwidth = pageViewer.imageData.naturalWidth;
-                let zoom = cwidth / iwidth;
-                pageViewer.zoomTo(zoom);
-                pageViewer.moveTo(0, pageViewer.imageData.y);
-            },
-            zoomIn: true,
-            zoomOut: true,
-            oneToOne: true,
-            reset: true,
-        },
-        viewed() {
-            // default zoom on load, image width
-            let cwidth = div.offsetWidth;
-            let iwidth = pageViewer.imageData.naturalWidth;
-            let zoom = cwidth / iwidth;
-            pageViewer.zoomTo(zoom);
-            pageViewer.moveTo(0, 0);
-        },
+let osdViewer;
+let currentPage = { pno: null, dat: null, spanLast: null };
+const osdContainer = document.getElementById('osd-viewer');
+if (osdContainer) {
+    osdViewer = OpenSeadragon({
+        id: 'osd-viewer',
+        prefixUrl: 'https://cdn.jsdelivr.net/npm/openseadragon@5.0/build/openseadragon/images/',
+        showNavigationControl: false,
+        animationTime: 0.3,
+        springStiffness: 10,
+        gestureSettingsMouse: { scrollToZoom: true },
     });
-
 }
 (function() {
     // loop on al image <span> to set events
@@ -151,11 +41,10 @@ if (div) {
     /** Click on prev next image */
     function imagoViso(pdiff)
     {
-        if (pageViewer.spanLast) pageViewer.spanLast.classList.remove("selected");
-        image.pno = pad(parseInt(image.pno) + pdiff, 4);
-        image.src = image.dat['url'].replace('%%', image.pno);
-        pageViewer.update();
-        pageViewer.resize();
+        if (currentPage.spanLast) currentPage.spanLast.classList.remove("selected");
+        currentPage.pno = pad(parseInt(currentPage.pno) + pdiff, 4);
+        const url = currentPage.dat['url'].replace('%%', currentPage.pno);
+        osdViewer.open({ type: 'image', url: url });
     }
 
     let but = document.getElementById('image_prev');
@@ -216,19 +105,16 @@ if (div) {
             span.innerText = text;
             span.classList.add("view");
             span.onclick = function() {
-                if (pageViewer.spanLast) pageViewer.spanLast.classList.remove("selected");
+                if (currentPage.spanLast) currentPage.spanLast.classList.remove("selected");
                 this.classList.add("selected");
-                pageViewer.spanLast = this;
-                image.pno = pno;
-                image.dat = dat;
-                image.src = url;
+                currentPage.spanLast = this;
+                currentPage.pno = pno;
+                currentPage.dat = dat;
                 let title = '';
                 if (dat.title) title = text + ' source : ' + dat.title.replace('%%', pno);
-                image.alt = title;
                 const header = document.getElementById('image_title');
                 if (header) header.innerHTML = title;
-                pageViewer.update();
-                pageViewer.resize();
+                osdViewer.open({ type: 'image', url: url });
             }
         }
     }

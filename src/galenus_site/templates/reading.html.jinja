@@ -4,9 +4,6 @@
 
 {% block body_class %}cts{% endblock %}
 
-{% block head %}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css" />
-{% endblock %}
 
 {% block content %}
 <div class="reader">
@@ -45,11 +42,7 @@
         <span id="image_title"></span>
         <a class="next" id="image_next" title="Page suivante">&#9654;</a>
       </header>
-      <div style="position: relative">
-        <div id="viewcont">
-          <img id="image" src="" alt="" />
-        </div>
-      </div>
+      <div id="osd-viewer" style="width:100%; height:600px;"></div>
     </div>
   {% endif %}
 </div>
@@ -61,6 +54,6 @@
 {{ image_vars | safe }}
 </script>
 {% endif %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/openseadragon@5.0/build/openseadragon/openseadragon.min.js"></script>
 <script src="{{ url_for('static', filename='js/galenus.js') }}"></script>
 {% endblock %}

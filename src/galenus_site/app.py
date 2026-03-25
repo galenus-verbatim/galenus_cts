@@ -1,4 +1,5 @@
 import json
+import pprint
 
 from pathlib import Path
 
@@ -154,12 +155,10 @@ def main():
             cts_urn = _extract_cts_urn(edition.get("extra", ""))
             edition["_route"] = url_for("reading", urn=cts_urn) if cts_urn else "#"
 
-        volume = zotero_item.get("volume", zotero_item.get("ancientEdition", {}))
+        kuehn_volume = zotero_item.get("kuehnEditionVolume")
 
-        if volume.strip() == "":
-            volume = zotero_item.get("ancientEdition", {}).get("volume")
-
-        imgkuhn = get_iiif_config(IMAGES_DATA, cts_urn, volume)
+        if kuehn_volume is not None:
+            imgkuhn = get_iiif_config(IMAGES_DATA, cts_urn, kuehn_volume)
         image_vars = None
 
         if imgkuhn:
