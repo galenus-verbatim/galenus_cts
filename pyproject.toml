@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "frozen-flask>=1.0.2",
     "kodon-py",
     "lxml>=6.0.0",
     "lxml-stubs>=0.5.1",
@@ -19,7 +20,7 @@ dev = [
 ]
 
 [tool.uv.sources]
-kodon-py = { path = "../../ajmc/kodon-py", editable = true }
+kodon-py = { git = "https://github.com/pletcher/kodon-py.git" }
 
 [project.scripts]
 galenus = "galenus_site.build:main"

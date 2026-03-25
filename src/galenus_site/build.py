@@ -41,3 +41,21 @@ def _int_or_zero(s: str | None) -> int:
         return int(s)
     except ValueError:
         return 0
+
+
+def main():
+    import os
+    from flask_frozen import Freezer
+
+    from galenus_site.app import setup
+
+    app = setup()
+
+    app.config.update(
+        FREEZER_IGNORE_404_NOT_FOUND=True,
+        FREEZER_BASE_URL=os.getenv("FREEZER_BASE_URL", ""),
+    )
+
+    freezer = Freezer(app)
+
+    freezer.freeze()

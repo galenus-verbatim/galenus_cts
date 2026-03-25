@@ -37,8 +37,7 @@ def _extract_cts_urn(extra: str) -> str | None:
     return None
 
 
-def main():
-    """Run the development server."""
+def setup():
     config = default_config
 
     config["static_folder"] = (APP_DIR / "static").absolute()
@@ -146,6 +145,7 @@ def main():
 
         if zotero_item is None:
             print(f"No zotero item found for {urn}")
+            abort(404)
 
         for edition in zotero_item.get("criticalEditions", []):
             edition["_formatted"] = _format_critical_edition(edition)
@@ -157,11 +157,12 @@ def main():
 
         kuehn_volume = zotero_item.get("kuehnEditionVolume")
 
+        imgkuhn = None
         if kuehn_volume is not None:
             imgkuhn = get_iiif_config(IMAGES_DATA, cts_urn, kuehn_volume)
-        image_vars = None
 
-        if imgkuhn:
+        image_vars = None
+        if imgkuhn is not None:
             image_vars = f"var imgkuhn = {json.dumps(imgkuhn)};"
 
         return render_template(
@@ -173,6 +174,14 @@ def main():
             image_vars=image_vars,
             zotero_item=zotero_item,
         )
+
+    return app
+
+
+def main():
+    """Run the development server."""
+
+    app = setup()
 
     app.run(debug=True)
 
