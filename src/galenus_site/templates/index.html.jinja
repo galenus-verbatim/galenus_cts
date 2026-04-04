@@ -1,12 +1,12 @@
 {% extends "base.html.jinja" %}
 
-{% block tab_opera %}selected{% endblock %}
+{% block tab_opera %}tab-active{% endblock %}
 
 {% block content %}
-<div class="flex">
-  <aside id="navs" class="flex-2 max-h-screen overflow-y-scroll">
-    <form class="pt-4">
-      <select name="selnav" id="selnav">
+<div class="bg-olive-50 flex w-full">
+  <div class="max-h-screen max-w-1/3 min-w-1/3 overflow-y-scroll px-8 pt-4">
+    <form>
+      <select class="select" name="selnav" id="selnav">
         {% for key, info in sort_orders.items() %}
         <option value="{{ key }}"{{ ' selected' if key == default_sort else '' }}>{{ info.label }}</option>
         {% endfor %}
@@ -16,104 +16,98 @@
     {# --- Pre-rendered title lists, one per sort order --- #}
 
     {# titLat #}
-    <div id="list-titLat" class="title-list"{{ ' hidden' if default_sort != 'titLat' else '' }}>
+    <ul id="list-titLat" class="list title-list"{{ ' hidden' if default_sort != 'titLat' else '' }}>
       {% for item in sorted_lists.titLat %}
-      <div class="text-zinc-900">
+      <li class="list-row text-zinc-900">
         <a href="#{{ item.ctsURN }}">
-          <span class="italic text-zinc-500">{{ item.latinTitle or item.title }}</span>
-          <span class="text-sm">[{{ item.callNumber }}]</span>
+          <div class="font-bold">[{{ item.callNumber }}]</div>
+          <p class="italic list-col-wrap text-zinc-600">{{ item.latinTitle or item.title }}</p>
         </a>
-      </div>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
 
     {# fichtner #}
-    <div id="list-fichtner" class="title-list"{{ ' hidden' if default_sort != 'fichtner' else '' }}>
+    <ul id="list-fichtner" class="list title-list"{{ ' hidden' if default_sort != 'fichtner' else '' }}>
       {% for item in sorted_lists.fichtner %}
-      <div>
+      <li class="list-row text-zinc-900">
         <a href="#{{ item.ctsURN }}">
-          <span class="font-bold">[{{ item.callNumber }}]</span>
-          <span class="italic text-zinc-500">{{ item.latinTitle }}</span>
+          <div class="font-bold">[{{ item.callNumber }}]</div>
+          <p class="italic list-col-wrap text-zinc-600">{{ item.latinTitle }}</p>
         </a>
-      </div>
+      </li class="list-row text-zinc-900">
       {% endfor %}
-    </div>
+    </ul>
 
     {# kuehn #}
-    <div id="list-kuehn" class="title-list"{{ ' hidden' if default_sort != 'kuehn' else '' }}>
+    <ul id="list-kuehn" class="list title-list"{{ ' hidden' if default_sort != 'kuehn' else '' }}>
       {% for item in sorted_lists.kuehn %}
-      <div class="text-zinc-900">
+      <li class="list-row text-zinc-900">
         <a href="#{{ item.ctsURN }}">
-          <span class="font-bold">{{ item.kuehnEditionVolume }}.{{ (item.kuehnEditionPages or '').split('-')[0] }}</span>
-          <span class="text-sm">[{{ item.callNumber }} Ficht.]</span>
-          <span class="italic text-zinc-500">{{ item.latinTitle }}</span>
+          <div><span class="font-bold">{{ item.kuehnEditionVolume }}.{{ (item.kuehnEditionPages or '').split('-')[0] }}</span> [{{ item.callNumber }} Ficht.]</div>
+          <p class="italic list-col-wrap text-zinc-600">{{ item.latinTitle }}</p>
         </a>
-      </div>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
 
     {# titLatAbbr (CMG) #}
-    <div id="list-titLatAbbr" class="title-list"{{ ' hidden' if default_sort != 'titLatAbbr' else '' }}>
+    <ul id="list-titLatAbbr" class="list title-list"{{ ' hidden' if default_sort != 'titLatAbbr' else '' }}>
       {% for item in sorted_lists.titLatAbbr %}
-      <div>
+      <li class="list-row text-zinc-900>
         <a href="#{{ item.ctsURN }}">
-          <span class="italic text-zinc-500">{{ item.latinAbbreviatedTitle }}</span>
-          <span class="text-sm">[{{ item.callNumber }}]</span>
+          <div class="italic">{{ item.latinAbbreviatedTitle }} <span class="text-zinc-600">[{{ item.callNumber }}]</span></div>
         </a>
-      </div>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
 
     {# titGrc #}
-    <div id="list-titGrc" class="title-list"{{ ' hidden' if default_sort != 'titGrc' else '' }}>
+    <ul id="list-titGrc" class="list title-list"{{ ' hidden' if default_sort != 'titGrc' else '' }}>
       {% for item in sorted_lists.titGrc %}
-      <div>
+      <li class="list-row text-zinc-900">
         <a href="#{{ item.ctsURN }}">
-          <span class="italic text-zinc-500">{{ item.greekTitle }}</span>
-          <span class="font-bold">[{{ item.callNumber }}]</span>
+          <div class="italic">{{ item.greekTitle }} <span class="text-zinc-600">[{{ item.callNumber }}]</span></div>
         </a>
-      </div>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
 
     {# titFra #}
-    <div id="list-titFra" class="title-list"{{ ' hidden' if default_sort != 'titFra' else '' }}>
+    <ul id="list-titFra" class="list title-list"{{ ' hidden' if default_sort != 'titFra' else '' }}>
       {% for item in sorted_lists.titFra %}
-      <div>
+      <li class="list-row text-zinc-900">
         <a href="#{{ item.ctsURN }}">
-          <span class="italic text-zinc-500">{{ item.frenchTitle }}</span>
-          <span>[{{ item.callNumber }}]</span>
+          <div class="italic">{{ item.frenchTitle }} <span class="text-zinc-600">[{{ item.callNumber }}]</span></div>
         </a>
-      </div>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
 
     {# titEng #}
-    <div id="list-titEng" class="title-list"{{ ' hidden' if default_sort != 'titEng' else '' }}>
+    <ul id="list-titEng" class="list title-list"{{ ' hidden' if default_sort != 'titEng' else '' }}>
       {% for item in sorted_lists.titEng %}
-      <div>
+      <li class="list-row">
         <a href="#{{ item.ctsURN }}">
-          <span class="italic text-zinc-500">{{ item.englishTitle }}</span>
-          <span class="font-bold">[{{ item.callNumber }}]</span>
+          <div class="italic">{{ item.englishTitle }} <span class="text-zinc-600">[{{ item.callNumber }}]</span></div>
         </a>
-      </div>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
 
     {# titEngAbbr (CGT) #}
-    <div id="list-titEngAbbr" class="title-list"{{ ' hidden' if default_sort != 'titEngAbbr' else '' }}>
+    <ul id="list-titEngAbbr" class="list title-list"{{ ' hidden' if default_sort != 'titEngAbbr' else '' }}>
       {% for item in sorted_lists.titEngAbbr %}
-      <div>
+      <li class="list-row">
         <a href="#{{ item.ctsURN }}">
-          <span class="italic text-zinc-500">{{ item.englishShortTitle }}</span>
-          <span class="font-bold">[{{ item.callNumber }}]</span>
+          <div class="italic">{{ item.englishShortTitle }} <span class="text-zinc-600">[{{ item.callNumber }}]</span></div>
         </a>
-      </div>
+      </li>
       {% endfor %}
-    </div>
-  </aside>
+    </ul>
+  </div>
 
-  <div id="biblio" class="biblio ml-4">
+  <div id="biblio" class="max-h-screen max-w-1/2 overflow-y-scroll px-8">
     <main>
       {% for bib_item in items %}
         {% with item = bib_item %}

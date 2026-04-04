@@ -5,86 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{% block title %}Galenus Verbatim{% endblock %}</title>
   <link rel="icon" href="{{ url_for('static', filename='images/favicon.svg') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/galenus.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
   {% block head %}{% endblock %}
 </head>
 <body class="{% block body_class %}{% endblock %}">
-  <header id="header" class="nav-down">
-    <div class="banner">
-      <div class="titles">
-        <a href="{{ url_for('index') }}">
-          <div class="title">Galenus Verbatim</div>
-          <div class="titlesub">Γαληνὸς κατὰ λέξιν</div>
-        </a>
-      </div>
-      <div class="moto">Naviguer dans le texte de Galien de Pergame, éd. Kühn (1821–1833) &amp; al.</div>
-      <img class="banner" src="{{ url_for('static', filename='images/galenus-verbatim.jpg') }}" alt="Galenus Verbatim banner" />
-    </div>
-  </header>
-  <div id="all">
-    <div id="content">
-      <nav id="tabs" class="tabs">
-        <a class="tab" href="/">
-          Galenus<br />Verbatim
-        </a>
-        <form>
-          <label for="cts">Accès rapide</label><br />
-          <input
-            class="h-6"
-            id="cts"
-            name="cts"
-            title="urn:cts ou référérence Kühn brève (ex : 18b.26.4)"
-            placeholder="e.g. XVIII B, 559; 18a.553.3 ; urn:cts:greekLit:tlg0057.tlg001.1st1K-grc1…"
-            value=""
-          />
-        </form>
-        <a href="{{ url_for('index') }}" class="tab {% block tab_opera %}{% endblock %}">Opera</a>
-        <a href="{{ url_for('titres') }}" class="tab {%block tab_titres %}{% endblock %}">Titres</a>
-        <a href="{{ url_for('text_search') }}" class="tab {% block tab_text_search %}{% endblock %}">Recherche</a>
-        <a href="/apropos" class="tab">À propos</a>
-        <a href="/novitates" class="tab">Actualités</a>
-        <a
-          class="tab zotero"
-          target="_blank"
-          rel="noopener"
-          href="https://www.zotero.org/groups/4571007/galenus-verbatim/library"
-        >
-          <span>Ad<br />bibliothecam</span>
-          <img class="h-10" src="{{ url_for('static', filename='images/logo_zotero.png') }}" alt="Zotero logo" />
-        </a>
-      </nav>
-      <div class="container">
-        {% block content %}{% endblock %}
+  <div class="hero" style="background-image: url({{ url_for('static', filename='images/galenus-verbatim.jpg') }})">
+    <div class="hero-overlay"></div>
+    <div class="px-8 text-neutral-content w-full">
+      <div>
+        <h1 class="mb-5 text-5xl font-bold"><a href="{{ url_for('index') }}">Galenus verbatim</a></h1>
+        <h2 class="mb-5 text-4xl font-bold"><a href="{{ url_for('index') }}">Γαληνὸς κατὰ λέξιν</a></h2>
+        <p class="mb-5">
+          Naviguer dans le texte de Galien de Pergame, éd. Kühn (1821–1833) &amp; al.
+        </p>
       </div>
     </div>
-    <footer id="footer">
-      <nav id="logos">
-        <a href="https://www.iufrance.fr/" title="Institut universitaire de France">
-          <img alt="Institut Universitaire de France" src="{{ url_for('static', filename='images/logo_IUF.png') }}" />
-        </a>
-        <a href="http://www.orient-mediterranee.com/spip.php?rubrique314" title="UMR 8167 Orient et Méditerranée">
-          <img alt="UMR 8167 Orient et Méditerranée" src="{{ url_for('static', filename='images/logo_UMR8167.png') }}" />
-        </a>
-        <a href="https://lettres.sorbonne-universite.fr/faculte-des-lettres/ufr/lettres/grec/" title="Faculté des Lettres de Sorbonne Université">
-          <img alt="Faculté des Lettres de Sorbonne Université" src="{{ url_for('static', filename='images/logo_sorbonne-lettres.png') }}" />
-        </a>
-        <a href="https://humanites-biomedicales.sorbonne-universite.fr/" title="Initiative humanités biomédicales de l'Alliance Sorbonne Université">
-          <img alt="Initiative humanités biomédicales de l'Alliance Sorbonne Université" src="{{ url_for('static', filename='images/logo_humabiomed.png') }}" />
-        </a>
-        <a href="https://documentation.huma-num.fr/hebergement-web/" title="Site hébergé par Huma-Num">
-          <img alt="Site hébergé par Huma-Num" src="{{ url_for('static', filename='images/logo_hn.png') }}" />
-        </a>
-        <a
-          aria-label="email-link"
-          href="#"
-          onmouseover="this.href='mai'+'lto:'+'etymologika'+'@gm'+'ail.com'"
-          onfocus="this.href='mai'+'lto:'+'etymologika'+'@gm'+'ail.com'"
-        >
-          <img style="opacity: 0.7;" src="{{ url_for('static', filename='images/enveloppe.png') }}" alt="enveloppe" />
-        </a>
-      </nav>
-    </footer>
   </div>
+  <div class="navbar bg-olive-200 flex justify-between px-8 shadow-sm">
+    <label class="input w-150">
+      <span class="label">Accès rapide</span>
+      <input
+        id="cts"
+        name="cts"
+        placeholder="URN CTS ou référérence Kühn brève (ex : 18b.26.4)"
+        type="text"
+      />
+    </label>
+    <div role="tablist" class="bg-olive-300 tabs tabs-box">
+      <a href="{{ url_for('index') }}" class="tab {% block tab_opera %}{% endblock %}">Opera</a>
+      <a href="{{ url_for('titres') }}" class="tab {%block tab_titres %}{% endblock %}">Titres</a>
+      <a href="{{ url_for('text_search') }}" class="tab {% block tab_text_search %}{% endblock %}">Recherche</a>
+      <a href="/apropos" class="tab">À propos</a>
+      <a href="/novitates" class="tab">Actualités</a>
+    </div>
+    <a
+      class="tab"
+      target="_blank"
+      rel="noopener"
+      href="https://www.zotero.org/groups/4571007/galenus-verbatim/library"
+    >
+      <span>Ad bibliothecam</span>
+      <img class="h-10" src="{{ url_for('static', filename='images/logo_zotero.png') }}" alt="Zotero logo" />
+    </a>
+  </div>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer id="footer" class="bg-olive-200 flex justify-between footer sm:footer-horizontal p-10">
+    <a href="https://www.iufrance.fr/" title="Institut universitaire de France">
+      <img height="64" width="64" alt="Institut Universitaire de France" src="{{ url_for('static', filename='images/logo_IUF.png') }}" />
+    </a>
+    <a href="http://www.orient-mediterranee.com/spip.php?rubrique314" title="UMR 8167 Orient et Méditerranée">
+      <img height="64" width="64" alt="UMR 8167 Orient et Méditerranée" src="{{ url_for('static', filename='images/logo_UMR8167.png') }}" />
+    </a>
+    <a href="https://lettres.sorbonne-universite.fr/faculte-des-lettres/ufr/lettres/grec/" title="Faculté des Lettres de Sorbonne Université">
+      <img height="96" width="96" alt="Faculté des Lettres de Sorbonne Université" src="{{ url_for('static', filename='images/logo_sorbonne-lettres.png') }}" />
+    </a>
+    <a href="https://humanites-biomedicales.sorbonne-universite.fr/" title="Initiative humanités biomédicales de l'Alliance Sorbonne Université">
+      <img height="196" width="196" alt="Initiative humanités biomédicales de l'Alliance Sorbonne Université" src="{{ url_for('static', filename='images/logo_humabiomed.png') }}" />
+    </a>
+    <a href="https://documentation.huma-num.fr/hebergement-web/" title="Site hébergé par Huma-Num">
+      <img height="64" width="64" alt="Site hébergé par Huma-Num" src="{{ url_for('static', filename='images/logo_hn.png') }}" />
+    </a>
+    <a
+      aria-label="email-link"
+      href="#"
+      onmouseover="this.href='mai'+'lto:'+'etymologika'+'@gm'+'ail.com'"
+      onfocus="this.href='mai'+'lto:'+'etymologika'+'@gm'+'ail.com'"
+    >
+      <img height="64" width="64" style="opacity: 0.7;" src="{{ url_for('static', filename='images/enveloppe.png') }}" alt="enveloppe" />
+    </a>
+  </footer>
   {% block scripts %}{% endblock %}
 </body>
 </html>
